@@ -11,7 +11,7 @@ documentation: ug
 This section will explain about working with records and columns in GridGroupingControl.
 
 ## Hiding Records and Columns
-The columns can be hidden from GridGroupingControl by using the [VisibleColumns.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~Remove.html) and [VisibleColumns.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~RemoveAt.html) methods.
+The columns can be hidden from GridGroupingControl by using the [VisibleColumns.Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~Remove.html) and [VisibleColumns.RemoveAt](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~RemoveAt.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -29,7 +29,7 @@ Me.gridGroupingControl1.TableDescriptor.VisibleColumns.Remove("ProductName")
 Me.gridGroupingControl1.TableDescriptor.VisibleColumns.RemoveAt(2)
 {% endhighlight %}
 {% endtabs %}
-The rows can be hidden by adding the [RowHiddenEntries](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowHiddenEntries.html).
+The rows can be hidden by adding the [RowHiddenEntries](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowHiddenEntries.html).
 {% tabs %}
 {% highlight c# %}
 int n = this.gridGroupingControl1.TableControl.TopRowIndex;
@@ -50,7 +50,7 @@ Me.gridGroupingControl1.TableControl.Model.RowHiddenEntries.AddRange(hiddenRows)
 {% endtabs %}
 
 ## Hide Row and Column Header
-The row and  column headers of the GridGroupingControl can be hide by setting the [ShowRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowRowHeaders.html) and [ShowColumnHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowColumnHeaders.html) property to `false`.
+The row and  column headers of the GridGroupingControl can be hide by setting the [ShowRowHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowRowHeaders.html) and [ShowColumnHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowColumnHeaders.html) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ Me.gridGroupingControl1.ShowColumnHeaders = False
 {% endtabs %}
 
 ### Hiding Column Headers of the Groups 
-The column headers of the groups can be hidden by using the [TopLevelGroupOptions.ShowColumnHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowColumnHeaders.html) property.
+The column headers of the groups can be hidden by using the [TopLevelGroupOptions.ShowColumnHeaders](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo~ShowColumnHeaders.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -130,7 +130,7 @@ The hidden row by resizing is showing in the following screen shot
 The hidden columns by resizing can be unhide by performing the double click between the column headers![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
 
 ### Prevent Column from Hiding 
-The columns can be prevent from hiding on resizing by canceling the [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColsHiding_EV.html) event.
+The columns can be prevent from hiding on resizing by canceling the [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColsHiding_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowColumnHeaders = True
 {% endtabs %}
 
 ## Frozen Columns
-The frozen columns can be added to the GridGroupingControl by using the [FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html) collection.
+The frozen columns can be added to the GridGroupingControl by using the [FrozenColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~FrozenColumn.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -202,7 +202,7 @@ The grid after moving the column is shown below
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img7.jpeg)
 
 ### Programmatic Moving of Columns
-The columns visible order can be programmatically changed by using the [VisibleColumns.Move](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~Move.html) method.
+The columns visible order can be programmatically changed by using the [VisibleColumns.Move](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection~Move.html) method.
 
 The columns before moving the column is shown below
  
@@ -213,7 +213,7 @@ The grid after moving the column
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
 
 ## Unbound Columns
-The GridGroupingControl provides the support for adding the unbound columns which are not bounded to the grid's data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
+The GridGroupingControl provides the support for adding the unbound columns which are not bounded to the grid's data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~UnboundFields.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -226,7 +226,7 @@ Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add("UnboundField")
 {% endhighlight %}
 {% endtabs %}
 
-Since the unbound fields are working independently, it has to be manually populated with the [TableDescriptor.QueryValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryValue_EV.html) event and store the edited value by using the [TableDescriptor.SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) events.
+Since the unbound fields are working independently, it has to be manually populated with the [TableDescriptor.QueryValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~QueryValue_EV.html) event and store the edited value by using the [TableDescriptor.SaveValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~SaveValue_EV.html) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ The unbound field added to the GridGroupingControl is shown in the following scr
 The column width and row height of the GridGroupingControl can be set dynamically by resizing using the mouse controller. 
 
 ### Setting Default Row Heights
-Default row heights can be set by using the [DefaultRecordRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase~DefaultRecordRowHeight.html) property
+Default row heights can be set by using the [DefaultRecordRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase~DefaultRecordRowHeight.html) property
 {% tabs %}
 {% highlight c# %}
 //Setting Default row heights.
@@ -296,7 +296,7 @@ Me.gridGroupingControl1.Table.DefaultRecordRowHeight = 150
 {% endtabs %}
 
 ### Setting Default Header Row Heights
-The row heights for the column headers can be changed by using the [DefaultColumnHeaderRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultColumnHeaderRowHeight.html) property. Refer the below code.
+The row heights for the column headers can be changed by using the [DefaultColumnHeaderRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultColumnHeaderRowHeight.html) property. Refer the below code.
 {% tabs %}
 {% highlight c# %}
 //Setting default header row heights.
@@ -309,7 +309,7 @@ Me.gridGroupingControl1.Table.DefaultColumnHeaderRowHeight = 50
 {% endtabs %}
 
 ### Setting Default Caption Row Heights
-The row heights for the caption bar can be changed by using the [DefaultCaptionRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultCaptionRowHeight.html) property. Refer the below code. By default, caption bar will not be visible in grid. To enable the caption bar, make use of the ShowCaption property
+The row heights for the caption bar can be changed by using the [DefaultCaptionRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultCaptionRowHeight.html) property. Refer the below code. By default, caption bar will not be visible in grid. To enable the caption bar, make use of the ShowCaption property
 {% tabs %}
 {% highlight c# %}
 // Displaying the Caption bar in Grid
@@ -328,7 +328,7 @@ Me.gridGroupingControl1.Table.DefaultCaptionRowHeight = 25
 {% endtabs %}
 
 ### Setting Default FilterBar Row Height
-The row height for the filter bar can be changed by using the [DefaultFilterBarRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultFilterBarRowHeight.html) property. 
+The row height for the filter bar can be changed by using the [DefaultFilterBarRowHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultFilterBarRowHeight.html) property. 
 {% tabs %}
 {% highlight c# %}
 //Setting filter bar row heights.
@@ -341,7 +341,7 @@ Me.gridGroupingControl1.Table.DefaultFilterBarRowHeight = 25
 {% endtabs %}
 
 ### Setting Default Row Height for Groups
-Default row heights for group footer, header and preview sections can be changed by using the [DefaultGroupFooterSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupFooterSectionHeight.html), [DefaultGroupHeaderSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupHeaderSectionHeight.html) and [DefaultGroupPreviewSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupPreviewSectionHeight.html) properties respectively.
+Default row heights for group footer, header and preview sections can be changed by using the [DefaultGroupFooterSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupFooterSectionHeight.html), [DefaultGroupHeaderSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupHeaderSectionHeight.html) and [DefaultGroupPreviewSectionHeight](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~DefaultGroupPreviewSectionHeight.html) properties respectively.
 {% tabs %}
 {% highlight c# %}
 //Sets default height for group header sections.
@@ -380,7 +380,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Width = 150
 {% endtabs %}
 
 ### Setting Default Column Width for columns
-The default column width can be assigned for GridGroupingControl columns by setting the [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) property. Please refer the below code,
+The default column width can be assigned for GridGroupingControl columns by setting the [DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~DefaultColumnWidth.html) property. Please refer the below code,
 
 {% tabs %}
 {% highlight c# %}
@@ -393,12 +393,12 @@ Me.gridGroupingControl1.TableOptions.DefaultColumnWidth = 100
 {% endhighlight %}
 {% endtabs %}
 
-N> The `DefaultColumnWidth` can be affected to columns only when set the [AllowCalculateMaxColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) property to false.
+N> The `DefaultColumnWidth` can be affected to columns only when set the [AllowCalculateMaxColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~AllowCalculateMaxColumnWidth.html) property to false.
 
-The column width can be calculated based on [ColumnsMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
+The column width can be calculated based on [ColumnsMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthStrategy.html) property. Below is the list of predefined column sizing options available in[GridColumnMaxLengthStrategy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnsMaxLengthStrategy.html) enumeration.
 `GridColumnsMaxLengthStrategy.None`:The Default column width or defined width set to column. 
 `GridColumnsMaxLengthStrategy.MaxLengthSummary`:Calculates the width of column based on header and cell contents. So that header and cell contents are not truncated.
-`GridColumnsMaxLengthStrategy. FirstNRecords`:Calculates the width of the column based on the number of rows is defined by [ColumnsMaxLengthFirstNRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthFirstNRecords.html) property. Please refer the below code,
+`GridColumnsMaxLengthStrategy. FirstNRecords`:Calculates the width of the column based on the number of rows is defined by [ColumnsMaxLengthFirstNRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ColumnsMaxLengthFirstNRecords.html) property. Please refer the below code,
 
 {% tabs %}
 {% highlight c# %}
@@ -412,7 +412,7 @@ Me.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windo
 {% endtabs %}
 
 ### Setting Column Styles 
-The styles can be applied for the particular column by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) properties of the [TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor_members.html).
+The styles can be applied for the particular column by using the [Appearance](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor~Appearance.html) properties of the [TableDescriptor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor_members.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -429,7 +429,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.AnyRecordFieldCell
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img11.jpeg)
 
 ## Proportional Column Sizing 
-All the columns of the grid can be have the same width that of the equal partition of the total width by setting the [AllowProportionalColumnSizing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AllowProportionalColumnSizing.html) to `true`.
+All the columns of the grid can be have the same width that of the equal partition of the total width by setting the [AllowProportionalColumnSizing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~AllowProportionalColumnSizing.html) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -442,7 +442,7 @@ Me.gridGroupingControl1.AllowProportionalColumnSizing = True
 {% endhighlight %}
 {% endtabs %}
 ## Getting the Record ID of the Current Record
-The record id of the current record can be get by using the [Table.CurrentRecord.Id](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~CurrentRecord.html) property.
+The record id of the current record can be get by using the [Table.CurrentRecord.Id](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTable~CurrentRecord.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -464,7 +464,7 @@ MessageBox.Show("The Current Record ID is :" & record.Id.ToString())
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img12.jpeg)
 
 ## Getting the Value of the Particular Field from the Record
-To get the value of the particular field from the record, use the [Record.GetValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~GetValue.html) method. It will return the value of the given filed.
+To get the value of the particular field from the record, use the [Record.GetValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~GetValue.html) method. It will return the value of the given filed.
 
 {% tabs %}
 {% highlight c# %}
@@ -482,7 +482,7 @@ MessageBox.Show("Product Name is :" & data)
 ![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img13.jpeg)
 
 ## Set the value for the particular Field 
-The value for the particular field can be set by using the [SetValue](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~SetValue.html) method.
+The value for the particular field can be set by using the [SetValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~SetValue.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -496,7 +496,7 @@ Me.gridGroupingControl1.Table.Records(5).SetValue("ProductName", "Hello")
 {% endtabs %}
 
 ## Setting the Current Cell Activation Behavior 
-The activation behavior of the current cell can be set by using the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html) property.
+The activation behavior of the current cell can be set by using the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -510,7 +510,7 @@ Me.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.Dbl
 {% endtabs %}
 
 ## Getting the Row Index from a Record
-The row index of the record can be get by using the [GetRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~GetRowIndex.html) method.
+The row index of the record can be get by using the [GetRowIndex](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridRecord~GetRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}

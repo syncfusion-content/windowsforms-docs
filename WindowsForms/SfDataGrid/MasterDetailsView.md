@@ -1661,7 +1661,7 @@ The GridViewDefinition.DataGrid columns can be generated either automatically or
 
 ### Auto generating columns
 
-Auto generate the GridViewDefinition.DataGrid columns by setting the [GridViewDefinition.DataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html) to `true`. Cancel or customize the column being created for GridViewDefinition.DataGrid by handling the [GridViewDefinition.DataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
+Auto generate the GridViewDefinition.DataGrid columns by setting the [GridViewDefinition.DataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGenerateColumns.html) to `true`. Cancel or customize the column being created for GridViewDefinition.DataGrid by handling the [GridViewDefinition.DataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -2064,11 +2064,11 @@ Here, the sender is `GridViewDefinition.DataGrid`. You can get the `DetailsViewD
 
 ## Column sizing
 
-The SfDataGrid allows you to apply column sizing to the `DetailsViewDataGrid` by setting the [GridViewDefinition.DataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) like parent DataGrid. For more information, refer to the [Column Sizing](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#column-sizing "") section.
+The SfDataGrid allows you to apply column sizing to the `DetailsViewDataGrid` by setting the [GridViewDefinition.DataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) like parent DataGrid. For more information, refer to the [Column Sizing](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#column-sizing "") section.
 
 ### Resizing parent DataGrid and DetailsViewDataGrid simultaneously
 
-By default, the `DetailsViewDataGrid` column width will not be adjusted while resizing the parent DataGrid columns. You can adjust the DetailsViewDataGrid column width simultaneously while resizing the parent DataGrid by handling the `DetailsViewLoading` and [ColumnResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnResizing_EV.html) events.
+By default, the `DetailsViewDataGrid` column width will not be adjusted while resizing the parent DataGrid columns. You can adjust the DetailsViewDataGrid column width simultaneously while resizing the parent DataGrid by handling the `DetailsViewLoading` and [ColumnResizing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ColumnResizing_EV.html) events.
 
 N> It is applicable only when the parent and `DetailsViewDataGrid` having same number of columns.
 
@@ -2275,7 +2275,7 @@ N> To display the parent and DetailsViewDataGrid in the same line, set the Detai
 
 ## Selection
 
-The `DetailsViewDataGrid` allows you to select the rows based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property in its parent DataGrid.
+The `DetailsViewDataGrid` allows you to select the rows based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property in its parent DataGrid.
 
 ### Getting the selected DetailsViewDataGrid
 
@@ -2305,7 +2305,7 @@ Dim detailsViewDataGrid = Me.sfDataGrid.SelectedDetailsViewGrid.SelectedDetailsV
 
 ### Getting the SelectedItem, SelectedItems, and SelectedIndex of DetailsViewDataGrid
 
-You can access the selected record or records and selected record index of the `DetailsViewDataGrid` by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html), [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html), and [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) properties directly.
+You can access the selected record or records and selected record index of the `DetailsViewDataGrid` by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html), [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html), and [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) properties directly.
 
 {% tabs %}
 {% highlight c# %}
@@ -2345,7 +2345,7 @@ Dim selectedItems = Me.sfDataGrid.SelectedDetailsViewGrid.SelectedItems
 
 ### Getting the CurrentCell of DetailsViewDataGrid
 
-You can get the [CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) of `DetailsViewDataGrid` by using the `SelectedDetailsViewGrid` property of the parent DataGrid or [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event of `DetailsViewDataGrid`.
+You can get the [CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) of `DetailsViewDataGrid` by using the `SelectedDetailsViewGrid` property of the parent DataGrid or [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event of `DetailsViewDataGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -2418,7 +2418,7 @@ In `DetailsViewDataGrid`, you can add or remove the selection programmatically l
 
 #### Selecting records
 
-You can select a particular record by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) property.
+You can select a particular record by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -2443,7 +2443,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can also select a particular record by using the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property.
+You can also select a particular record by using the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -2490,7 +2490,7 @@ The appearance of the DetailsViewDataGrid can be customized like parent DataGrid
 
 ### Changing header appearance of DetailsViewDataGrid
 
-You can customize the header appearance of the DetailsViewDataGrid through the [Style.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property of DetailsViewDataGrid.
+You can customize the header appearance of the DetailsViewDataGrid through the [Style.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property of DetailsViewDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -2546,7 +2546,7 @@ End Sub
 
 ### Hiding header row of Master-Details View
 
-You can hide the header row of the `DetailsViewDataGrid` by setting the [HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property.
+You can hide the header row of the `DetailsViewDataGrid` by setting the [HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property.
 
 {% tabs %}
 {% highlight c# %}

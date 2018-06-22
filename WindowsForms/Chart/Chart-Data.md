@@ -13,7 +13,7 @@ documentation: ug
 
 EssentialChart has built-in support for binding to DataTables, DataSets, DataViews or any implementation of IListSource, IBindingList or ITypedList.
 
-The [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) data points and the axis labels are the ones that can be data bound.
+The [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) data points and the axis labels are the ones that can be data bound.
 
 There is however no DESIGN-TIME support for data binding. This has to be setup in code.
 
@@ -25,7 +25,7 @@ N> One important reason you might want to use either of the above two approaches
 
 ## Binding a DataSet to the Chart
 
-The following sample code illustrates how a custom DataSet can be bound to a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to provide data points and to a [ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html) to provide label names. Note that the DataSet can easily be replaced with a DataTable or DataView.
+The following sample code illustrates how a custom DataSet can be bound to a [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) to provide data points and to a [ChartAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis.html) to provide label names. Note that the DataSet can easily be replaced with a DataTable or DataView.
 
 ![](Chart-Data_images/Chart-Data_img2.jpeg)
 
@@ -128,9 +128,9 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 
 ## Implementing Custom Data Binding Interfaces
 
-Note that the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) type in the previous topic implements a simple interface called [IChartSeriesModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html). This interface requires the implementation of one property, two methods and one optional event. So, you can easily provide a custom implementation of this interface instead of using the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html).
+Note that the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) type in the previous topic implements a simple interface called [IChartSeriesModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html). This interface requires the implementation of one property, two methods and one optional event. So, you can easily provide a custom implementation of this interface instead of using the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html).
 
-Shown below is some sample code that implements [IChartSeriesModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html) interface for use with the chart.
+Shown below is some sample code that implements [IChartSeriesModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesModel.html) interface for use with the chart.
 
 {% tabs %}  
 
@@ -282,11 +282,11 @@ Me.chartControl1.Series.Add(series1)
 
 ### Indexed data
 
-Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can implement the [IChartSeriesIndexedModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesIndexedModel.html) interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
+Note that if you have indexed data, which implies that the X values are simply categories and don't carry any cardinal value, then you can implement the [IChartSeriesIndexedModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.IChartSeriesIndexedModel.html) interface and bind it to the ChartSeries.SeriesIndexedModelImpl. The main difference in this interface is that you don't have to implement the GetX method.
 
 ## Chart Data Binding with IEnumerable
 
-Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
+Syncfusion chart provides an option of binding the Chart with IEnumerable, like ArrayList for Indexed or Non Indexed model data through [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) implementation.
 
 {% tabs %}  {% highlight c# %}
 
@@ -360,9 +360,9 @@ Class PopulationData
 {% endhighlight %}
 {% endtabs %}
 
-If you have a class like above, you will have a collection of this class instances, in an ArrayList. To bind with the Chart, you need to create a [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) instance, by supplying the instance of data source (In our case, ArrayList is the data source).
+If you have a class like above, you will have a collection of this class instances, in an ArrayList. To bind with the Chart, you need to create a [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) instance, by supplying the instance of data source (In our case, ArrayList is the data source).
 
-In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class. [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class provides a facility to bind the axis label values through the data source like [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html). 
+In this example, we are binding with a Non Indexed data, with YNames alone and the chart will not be rendered with x-axis values. We need to assign the x-axis values through [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class. [ChartDataBindAxisLabelModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindAxisLabelModel.html) class provides a facility to bind the axis label values through the data source like [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html). 
 
 {% tabs %}  
 
@@ -453,7 +453,7 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel
 
 You can easily implement data binding technique at design-time, using Chart Wizard. 
 
-The below steps lets you bind a database table with the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html).
+The below steps lets you bind a database table with the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html).
 
 1.Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
 
@@ -521,7 +521,7 @@ Follow the steps to bind the Chart with a BindingSource by using the Chart Wizar
 
 **Step-1:**
 
-Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the [Chart control](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
+Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the [Chart control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
 
 ![](Chart-Data_images/Chart-Data_img20.png)
 
@@ -563,11 +563,11 @@ Designer displays default chart with random values but you can see the series bo
 
 ### Bind Chart with a binding source in code behind
 
-Binding Chart with a BindingSource in code behind is similar to binding IEnumerable. Follow the steps to bind the BindingSource with [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
+Binding Chart with a BindingSource in code behind is similar to binding IEnumerable. Follow the steps to bind the BindingSource with [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html).
 
 **Step-1:**
 
-Create a [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object with BindingSource as data source.
+Create a [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object with BindingSource as data source.
 
 {% tabs %}  
 
@@ -590,7 +590,7 @@ Create a [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsf
 
 **Step-2:**
 
-Provide a field name in binding source as value to the [XName](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~XName.html) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. 
+Provide a field name in binding source as value to the [XName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~XName.html) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. 
 
 {% tabs %} 
 
@@ -621,9 +621,9 @@ model.XName = "Field1";
 
 **Step-3:**
 
-Similarly, provide a field name in binding source as value to the [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~YNames.html) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. The [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~YNames.html) property accepts an array of string as value because series types like candle, Gantt, Histogram, etc., require more than one Y Value.
+Similarly, provide a field name in binding source as value to the [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~YNames.html) property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object. The [YNames](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel~YNames.html) property accepts an array of string as value because series types like candle, Gantt, Histogram, etc., require more than one Y Value.
 
-As pie chart is used in this example, it is enough to use one field name for the YNames property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object.
+As pie chart is used in this example, it is enough to use one field name for the YNames property of the [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object.
 
 {% tabs %}  
 
@@ -662,7 +662,7 @@ model.YNames = new string[] { "Field2" };
 
 **Step-4:**
 
-Set [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object as value to the [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) object. This binds the Series with BindingSource.
+Set [ChartDataBindModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartDataBindModel.html) object as value to the [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) object. This binds the Series with BindingSource.
 
 {% tabs %}  
 
@@ -733,7 +733,7 @@ EssentialChart is optimized to deal with real time data. It can work with both h
 
 Essentially, this involves updating the chart's data points list and optionally updating the chart axis ranges if the default ranges are not user-friendly.
 
-While you can use the [ChartSeries.Points](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Points.html) to add new data points to the existing list, for best performance it's recommended to implement your own "model" to store the data points in real-time scenarios.
+While you can use the [ChartSeries.Points](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Points.html) to add new data points to the existing list, for best performance it's recommended to implement your own "model" to store the data points in real-time scenarios.
 
 A sample application that illustrates real time data usage which is distributed along with the EssentialChart installation and can be found at:
 

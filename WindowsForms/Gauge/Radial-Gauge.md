@@ -9,13 +9,11 @@ documentation: ug
 
 # RadialGauge
 
-[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
-
+[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 
 ![](Radial-Gauge_images/Radial-Gauge_img1.png)
 
 ## Key features
-
 
 * **Scales** - Provides support to customize orientation and appearance of the associated scales.
 
@@ -27,11 +25,11 @@ documentation: ug
 
 * **Labels** - Provides support to customize the appearance of gauge values with user-specified colors and alignment.
 
-* **Visual Style** - Supports rich set of visual style to modify look and feel of the RadialGauge
+* **Visual style** - Supports rich set of visual style to modify look and feel of the RadialGauge
 
-* **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
+* **Customization options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
-* **Data Binding** - Support provided to update value using Data Binding concept. 
+* **Data binding** - Support provided to update value using DataBinding concept. 
 
 
 # Getting started
@@ -143,14 +141,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with RadialGauge control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Add control via Form Designer](#adding-control-via-form-designer)
+2. [Add control via designer](#adding-control-via-designer)
 3. [Add control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the RadialGauge with range information.
 
-## Add control via Form Designer
+## Add control via designer
 
 The RadialGauge control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -171,19 +169,19 @@ To add control manually in C#, follow the given steps:
 	* Syncfusion.Gauge.Windows.dll
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Gauge.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Gauge.Windows;
+using Syncfusion.Windows.Forms.Gauge;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Gauge.Windows
+Imports Syncfusion.Windows.Forms.Gauge
 
 {% endhighlight  %}
 
@@ -218,7 +216,7 @@ Me.Controls.Add(radialGauge1)
 ![](Radial-Gauge_images/RadialGauge_img2.png)
 
 
-### Elaborate structure of the control
+## Elaborate structure of the control
 
 The RadialGauge control includes the following elements: Scale Label, Needle, Gauge Value, and Background Frame. All the elements are optional for displaying the Gauge control.
 
@@ -310,16 +308,9 @@ Boolean</td><td>
 Gets or sets the gauge value visibility.</td></tr>
 </table>
 
-
 ![](Radial-Gauge_images/Radial-Gauge_img4.png)
 
-
-
-
-
 ![](Radial-Gauge_images/Radial-Gauge_img5.png)
-
-
 
 {% tabs %}
 
@@ -339,7 +330,6 @@ Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle
 {% endtabs %}
 
 ![](Radial-Gauge_images/Radial-Gauge_img6.png)
-
 
 
 {% tabs %}

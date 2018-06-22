@@ -12,7 +12,7 @@ documentation: ug
 
 ## Accessing the worksheet
 
-A __workbook__ is an excel document in the Spreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Workbook.html) property of Spreadsheet.
+A __workbook__ is an excel document in the Spreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~Workbook.html) property of Spreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
@@ -37,11 +37,11 @@ N> `ActiveGrid` and `ActiveSheet` property can be accessed only after the `Workb
 
 ## Accessing the Grid
 
-Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) in  `Spreadsheet`.
+Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) in  `Spreadsheet`.
 
-When the workbook is loaded in the Spreadsheet, the [WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookLoaded_EV.html) Event is invoked and when the workbook is removed from Spreadsheet, the [WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookUnloaded_EV.html) Event is invoked. 
+When the workbook is loaded in the Spreadsheet, the [WorkbookLoaded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookLoaded_EV.html) Event is invoked and when the workbook is removed from Spreadsheet, the [WorkbookUnloaded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorkbookUnloaded_EV.html) Event is invoked. 
 
-When the worksheet is added into the Spreadsheet, the [WorksheetAdded](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdded_EV.html) Event is invoked and when the worksheet is removed in the Spreadsheet, [WorksheetRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoved_EV.html) Event is invoked.
+When the worksheet is added into the Spreadsheet, the [WorksheetAdded](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetAdded_EV.html) Event is invoked and when the worksheet is removed in the Spreadsheet, [WorksheetRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~WorksheetRemoved_EV.html) Event is invoked.
 
 Hence you can access the `ActiveGrid` either in the `WorkbookLoaded` or `WorksheetAdded` Event.
 
@@ -70,7 +70,7 @@ void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-You can also access the each `SpreadsheetGrid` in the Spreadsheet either by passing the particular sheet name in the [GridCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~GridCollection.html) or by invoking `WorkbookLoaded` Event of Spreadsheet. 
+You can also access the each `SpreadsheetGrid` in the Spreadsheet either by passing the particular sheet name in the [GridCollection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~GridCollection.html) or by invoking `WorkbookLoaded` Event of Spreadsheet. 
 
 ### By using sheet name
 
@@ -115,11 +115,11 @@ void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-N> Spreadsheet supports virtual mode, which lets you dynamically provide data to the grid by handling an event, [QueryRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html), for example. In virtual mode, data will be dynamically loaded into the SpreadsheetGrid on demand or when users need to view the data.
+N> Spreadsheet supports virtual mode, which lets you dynamically provide data to the grid by handling an event, [QueryRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~QueryRange_EV.html), for example. In virtual mode, data will be dynamically loaded into the SpreadsheetGrid on demand or when users need to view the data.
 
 ## Setting the ActiveSheet programmatically
 
-Spreadsheet allows you to set the [ActiveSheet](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ActiveSheet.html) programmatically by specifying the sheet name in the `SetActiveSheet` method of `Spreadsheet`.
+Spreadsheet allows you to set the [ActiveSheet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ActiveSheet.html) programmatically by specifying the sheet name in the `SetActiveSheet` method of `Spreadsheet`.
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ N>  If the user has made any modifications with XlsIO range in Spreadsheet, then
 
 ## Accessing the value of a cell
 
-Spreadsheet allows you to access the value of a cell by using [Value](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~Value.html) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~DisplayText.html) property can be used.
+Spreadsheet allows you to access the value of a cell by using [Value](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~Value.html) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~DisplayText.html) property can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
 
 ## Setting the value or formula to a cell
 
-In Spreadsheet, to update the cell value and formula programmatically, [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+In Spreadsheet, to update the cell value and formula programmatically, [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
 
 {% tabs %}
 {% highlight c# %}
@@ -212,7 +212,7 @@ spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearData
 {% endhighlight %}
 {% endtabs %}
 
-N> [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+N> [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 ## Refreshing the view
 
@@ -245,7 +245,7 @@ spreadsheet.ActiveGrid.InvalidateCellBorders(range);
 
 ## Scrolling the Grid programmatically
 
-Spreadsheet allows the user to scroll the grid into mentioned cell, by using [ScrollInView](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ScrollInView.html) method of `SpreadsheetGrid`.
+Spreadsheet allows the user to scroll the grid into mentioned cell, by using [ScrollInView](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.CellGrid.SfCellGrid~ScrollInView.html) method of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -258,7 +258,7 @@ spreadsheet.ActiveGrid.ScrollInView(new RowColumnIndex(5, 5));
 ## Formula Bar
 
 The Formula Bar is located above the worksheet area of the Spreadsheet. The formula bar displays the data or formula stored in the active cell.
-Users can set the visibility state of Formula Bar using [FormulaBarVisibility](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~FormulaBarVisibility.html) property of `Spreadsheet`.
+Users can set the visibility state of Formula Bar using [FormulaBarVisibility](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~FormulaBarVisibility.html) property of `Spreadsheet`.
 
 {% tabs %}
 {% highlight c# %}
@@ -284,7 +284,7 @@ var value = typeof(WorkbookImpl).GetProperty("IsCellModified", bindFlags).GetVal
 
 ## Suppress message boxes in Spreadsheet
 
-In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DisplayAlerts.html) property to `false`. 
+In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DisplayAlerts.html) property to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -297,7 +297,7 @@ spreadsheet.DisplayAlerts = false;
 
 ## Suspend and resume formula calculation
 
-Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~SuspendFormulaCalculation.html) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ResumeFormulaCalculation.html) method.
+Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~SuspendFormulaCalculation.html) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ResumeFormulaCalculation.html) method.
 
 Resuming formula calculation will recalculate all the formula cells in a workbook. This would be helpful to improve the performance when you are updating the value of more number of cells by skipping the dependent cells recalculation on each cell value changed.
 
@@ -316,7 +316,7 @@ spreadsheet.SuspendFormulaCalculation();
 
 ## Close the popup programmatically 	
 
-In Spreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~ShowHidePopup.html) method of `SpreadsheetGrid`.
+In Spreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~ShowHidePopup.html) method of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,7 +332,7 @@ spreadsheet.ActiveGrid.ShowHidePopup(true);
 
 ## Identify when the active sheet is changed
 
-Spreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~PropertyChanged_EV.html) event of Spreadsheet like below.
+Spreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~PropertyChanged_EV.html) event of Spreadsheet like below.
 
 {% tabs %}
 {% highlight c# %}

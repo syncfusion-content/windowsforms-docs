@@ -9,26 +9,27 @@ documentation: ug
 
 # Overview
 
-## Introduction to Essential HTMLUI
-
-Essential HTMLUI is a .NET Windows Forms control that supports Hyper Text Markup Language (HTML) rendering. HTML elements are exposed as programmatic elements that support standard events. These elements can be custom-painted. HTMLUI can be used as a HTML viewer or to easily lay out and customize rich application interfaces.
-
-This control will benefit those users who want to build flexible applications. Some good examples are applications that need to be localized, themed; interfaces that need to be updated through the network without distributing the whole application, and so on.
-
-HTMLUI is helpful in creating cool UI applications like Chat windows. It can be used to create a multiple dialog application and it can be used as an UI Editor.
+HTMLUIControl helps to render the Hyper Text Markup Language (HTML). Its functionality is similar to a web browser used for display purposes. Like popular web browsers, HTMLUI comes with advanced options to work with web-related functionalities like navigating through a history of documents, selection and much more.
 
 
+## Key features
 
-![](Overview_images/Overview_img1.jpeg)
+* **Loading document** - Provides option to load HTML content from file, resource, URL, string and much more. 
 
+* **Custom controls** - Provides option to load custom controls.
 
-### Key features
+* **Element binding** -  Supports numerous elements in an HTML document for rendering and presenting them.
 
-Some of the key features of Essential HTMLUI are listed below:
+* **Bookmarks** - Supports Bookmarks which helps to switch particular references in the page when the link is clicked
 
+* **Style sheets** - Supports style sheets such as External, Internal and Inline to customize the appearance.
 
+* **HTML table** - Provides options to load Table in required dimensions.
 
-* Essential HTMLUI uses the unique Syncfusion Flex-Layout mechanism to lay out any kind of user interface in a flexible manner. Defining the HTML for the layout renders the display with the rules of HTML layout applied automatically. This flexible approach to layout brings several advantages to applications that need their interfaces to be flexible.
-* HTMLUI is primarily used as an HTML renderer/viewer. The completely managed browser interface provided by HTMLUI is a natural choice for any HTML rendering interfaces such as custom web browsers, HTML help viewers, email readers, and so on.
-* MHTML enables you to send and receive Web pages and other HTML documents using e-mail programs. MHTML enables you to embed images directly into the body of your e-mail messages rather than attaching them to the message. MHTML uses MIME (Multipurpose Internet Mail Extensions) which provides       facilities to allow multiple objects in a single Internet e-mail message; represents formatted multi font text messages; represents non-textual material such as images, and so on.
+* **Exporting** - Provides option to export contents in required formats.
 
+* **Printing** - Provides options to Print preview and Print the loaded contents.
+
+* **Localization** - Provides localization support for all elements into any desired language.
+
+* **Searching** - Provides built-in Find dialog window to search and highlight the required text. 

@@ -9,7 +9,7 @@ documentation: ug
 
 # LinearGauge
 
-[LinearGauge](#https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
+[LinearGauge](#https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
 
 ## Key features
 
@@ -19,11 +19,11 @@ documentation: ug
 
 * **Range** - Provides options to display different ranges in different colors.
 
-* **Customization Options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
+* **Customization options** - Supports color and visibility customization of all elements and its appearance can also be customized in any form.
 
-* **Visual Style** - Supports rich set of visual styles to modify look and feel of the LinearGauge
+* **Visual style** - Supports rich set of visual styles to modify look and feel of the LinearGauge
 
-* **Data Binding** - Support provided to update value using Data Binding concept. 
+* **Data binding** - Support provided to update value using Data Binding concept. 
 
 # Getting started
 
@@ -134,14 +134,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with LinearGauge control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the LinearGauge with basic functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The LinearGauge control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -162,19 +162,19 @@ To add control manually in C#, follow the given steps:
 	* Syncfusion.Gauge.Windows.dll
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Gauge.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Gauge.Windows;
+using Syncfusion.Windows.Forms.Gauge;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Gauge.Windows
+Imports Syncfusion.Windows.Forms.Gauge
 
 {% endhighlight  %}
 
@@ -204,7 +204,7 @@ Me.Controls.Add(linearGauge1)
 
 ![](Linear-Gauge_images/LinearGauge_img2.png)
 
-### Concepts and features
+## Concepts and features
 
 This section illustrates the features of the LinearGauge with images and sample code. It contains the following topics:
 

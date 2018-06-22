@@ -3,22 +3,22 @@ layout: post
 title: Linked-Manager-and-Nested-Docking | WindowsForms | Syncfusion
 description: linked manager and nested docking
 platform: WindowsForms
-control: DockingManager 
+control: DockingManager
 documentation: ug
 ---
 
 
-# Linked DockingManager
+# Linked Docking Manager
 
-The dock panels from one DockingManager cannot be dragged and dropped to another DockingManager by default. But Linked Manager support allows to drag and drop the windows from one DockingManager to another by setting `TargetDockingManager` list.
+The dock panels from a docking manager cannot be dragged and dropped to another docking manager by default. But, the linked manager support allows to drag and drop the windows from one docking manager to another by setting the `TargetDockingManager` list.
 
 ## Enable linked manager
 
-To add TargetManager list in the DockingManager, call [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) function of the DockingManager with the valid DockingManager instance as argument. When only one DockingManager has TargetManagerList, the window drop to TargetManager cannot drag back to Owner DockingManger. 
+To add TargetManager list in the docking manager, call the [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) function with valid docking manager instance as argument. When only one docking manager has TargetManagerList, the window that is dropped to the TargetManager cannot be dragged back to its owner docking manager.
 
-For example: `DockingManager1` and `DockingManager2` are the DockingManager instance and the DockingManager2 is added to TargetManagerList of DockingManager1, but the DockingManager2 is not aware of its TargetManager.
+For example: `DockingManager1` and `DockingManager2` are the docking manager instance and the docking manager2 is added to TargetManagerList of docking manager1, but the docking manager2 is not aware of its TargetManager.
 
-Here, the windows from DockingManager1 are only allowed to be dragged and dropped in DockingManager2,
+Here, the windows from docking manager1 are only allowed to be dragged and dropped in the docking manager2.
 
 
 {% tabs %}
@@ -43,7 +43,7 @@ Dim childWindow As New Form2()
 
 ChildWindow.Show()
 
-'To add ChildForm's DockingManager to the MainForm's TargetManagerList. 
+'To add ChildForm's DockingManager to the MainForm's TargetManagerList.
 
 Me.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager1)
 
@@ -53,7 +53,7 @@ Me.dockingManager1.AddToTargetManagersList(ChildWindow.dockingManager1)
 
 ## Remove linked manager
 
-To remove DockingManager from the TargetManagerList, call [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) of DockingManager with the valid DockingManager instance argument. For example, to remove the DockingManager1 from the TargetManagersList of DockingManager2, follow the below code snippets:
+To remove docking manager from the TargetManagerList, call the [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) function of the docking manager with valid docking manager instance argument. For example, to remove the docking manager1 from the TargetManagersList of docking manager2, use the following code snippets:
 
 {% tabs %}
 
@@ -75,17 +75,17 @@ Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager2);
 
 {% endtabs %}
 
-## Dock child control between two DockingManager
+## Dock child control between two docking managers
 
-Docking Manager supports to dock its child control into another Docking Manager. It can be achieved by using [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) and [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) functions.
+The docking manager supports to dock its child control into another docking manager. It can be achieved by using [AddToTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AddToTargetManagersList.html) and [RemoveFromTargetManagersList](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RemoveFromTargetManagersList.html) functions.
 
 **AddToTargetManagerList**
 
-This function helps to interconnect two Docking Manager, so that its child controls can be docked between two Docking Manager.
+This function helps to interconnect two docking managers, so that its child controls can be docked between two docking managers.
 
 **RemoveFromTargetManagersList**
 
-This function helps to remove interconnection between two Docking Manager.
+This function helps to remove interconnection between two docking managers.
 
 {% tabs %}
 
@@ -136,13 +136,13 @@ Me.dockingManager1.RemoveFromTargetManagersList(ChildWindow.dockingManager1)
 N> A sample that demonstrates LinkedManager behavior is available in the following sample installation path:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\LinkedManager
 
-## Nested DockingManager
+## Nested docking manager
 
-DockingManager provides the NestedDockingManager support, which allows to add DockingManager as a child window to another DockingManager.
+The docking manager provides the NestedDockingManager support, which allows to add docking manager as a child window to another docking manager.
 
-In Nested DockingManager, the whole DockingManager can be dragged and dropped inside the Parent DockingManager and DockWindows inside the DockingManager cannot be dragged and dropped on the owner DockingManager.
+In nested docking manager, the whole docking manager can be dragged and dropped inside the parent docking manager and DockWindows inside the docking manager cannot be dragged and dropped on the owner docking manager.
 
 ![](Images/NestedDocking.png)
 
-N> A sample that demonstrates Nested Docking behavior is available in the following sample installation path:
+N> A sample that demonstrates nested docking behavior is available in the following sample installation path:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\NestedDocking

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization 
+title: Localization
 description: This section explains about the localization support in DockingManager.
 platform: WindowsForms
 control: DockingManager
@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization
 
-Localization is the process of translating the application resources into different language for the specific cultures. `DockingManager` supports complete localization to any desired language of header and context menus of docking child windows. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
+Localization is the process of translating the application resources into different languages for specific cultures. `DockingManager` supports complete localization to any desired language of header and context menus of docking child windows. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
-The following steps helps to localize the header and context menus of docking child windows in DockingManager:
+The following steps help to localize the header and context menus of docking child windows in the docking manager:
 
 **Step 1:** Include the required namespaces at the beginning of the file.
 
@@ -33,7 +33,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 2:** Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface, before the InitializeComponent call in the constructor of an application.
+**Step 2:** Initialize the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface before the InitializeComponent is called in the constructor of an application.
 
 {% tabs %}
 
@@ -51,10 +51,9 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in DockingManager.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class in which the localization content is provided for required components that are used in the docking manager.
 
-For example:
-Here, Header and ContextMenu of docking child windows is localized in Chinese Language.
+For example: Header and ContextMenu of docking child windows are localized in Chinese Language.
 
 **Localize header of child window**
 
@@ -97,7 +96,7 @@ Me.dockingManager.SetDockLabel(panel4, "产量");
 
 **Localize ContextMenu options**
 
-The following code example illustrates how to localize the context menus of docking child windows in DockingManager.
+The following code example illustrates how to localize the context menus of docking child windows in the docking manager.
 
 {% tabs %}
 
@@ -199,5 +198,5 @@ End Function
 
 ![](Localization_images/Localization_img2.png) 
 
-N> Refer to the following sample link that demonstrates the localization support in DockingManager.
+N> Refer to the following sample link that demonstrates the localization support in the docking manager.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Tools.Windows\Samples\Docking manager\Localization

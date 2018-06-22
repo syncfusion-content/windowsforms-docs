@@ -48,7 +48,7 @@ child2.Show()
 
 ## Appearance
 
-Appearance of the MDI child forms can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/core/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~Style.html) property of the child form. It contains all the settings for customizing the child form appearance.
+Appearance of the MDI child forms can be customized by using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~Style.html) property of the child form. It contains all the settings for customizing the child form appearance.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,9 +118,29 @@ When this property is set to true, the form will receive KeyPress, KeyDown, and
 
 {% tabs %}
 {% highlight c# %}
+this.IsMdiContainer = true;
+
+//Creating MDI child
+SfForm child1 = new SfForm();
+Child1.Text = "Child1;
+Child1.MdiParent = this;
+
+//Enabling KeyPreview for the child.
 child1.KeyPreview = true;
+
+Child1.Show();
 {% endhighlight %}
 {% highlight vb %}
+Me.IsMdiContainer = True
+
+'Creating MDI child
+Dim child1 As New SfForm()
+child1.Text = "Child1"
+child1.MdiParent = Me
+
+'Enabling KeyPreview for the child.
 child1.KeyPreview = True
+
+child1.Show()
 {% endhighlight %}
 {% endtabs %}

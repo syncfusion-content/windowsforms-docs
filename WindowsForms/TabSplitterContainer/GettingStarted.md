@@ -147,7 +147,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with TabSplitterContainer control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
@@ -186,19 +186,19 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** :  Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** :  Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 

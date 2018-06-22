@@ -186,19 +186,19 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 

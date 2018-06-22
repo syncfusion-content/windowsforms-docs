@@ -15,21 +15,21 @@ N> Clipboard operations are not supported for the summary rows, add new row and 
 
 ## Copy
 
-Copy operation works based on [CopyOption](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) property.
+Copy operation works based on [CopyOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) property.
 
 CopyOption provides the following options,
 
-[None](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Disables copy in SfDataGrid.
+[None](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Disables copy in SfDataGrid.
 
-[CopyData](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enables copy in SfDataGrid.
+[CopyData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enables copy in SfDataGrid.
 
-[CutData](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enables cut in SfDataGrid.
+[CutData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enables cut in SfDataGrid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Column header also copied along with data.
+[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Column header also copied along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Copies the display text with format instead of actual value.
+[IncludeFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Copies the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Hidden column also copied to clipboard.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Hidden column also copied to clipboard.
 
 `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options should be used along with `CopyData` option.
 
@@ -46,16 +46,16 @@ Me.sfDataGrid1.CopyOption = CopyOptions.CopyData Or CopyOptions.IncludeHeaders
 
 ## Paste
 
-Paste operation works based on [PasteOption](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) property.
+Paste operation works based on [PasteOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) property.
 PasteOption provides the following options,
 
-[None](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Disables paste in SfDataGrid.
+[None](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Disables paste in SfDataGrid.
 
-[PasteData](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Enables paste in SfDataGrid and when an incompatible value is pasted into a record, the pasting operation is skipped for that particular record.
+[PasteData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Enables paste in SfDataGrid and when an incompatible value is pasted into a record, the pasting operation is skipped for that particular record.
 
-[ExcludeFirstLine](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – This can be used when pasting data copied with IncludeHeader copy option.
+[ExcludeFirstLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – This can be used when pasting data copied with IncludeHeader copy option.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Paste the values in hidden columns also.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteOption.html) – Paste the values in hidden columns also.
 
 `ExcludeFirstLine`, `IncludeHiddenColumn` options should be used along with `PasteData` option.
 
@@ -72,19 +72,19 @@ Me.sfDataGrid1.PasteOption = PasteOptions.PasteData Or PasteOptions.ExcludeFirst
 
 ## Cut
 
-Cut operation works based on [CopyOption](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) property.
+Cut operation works based on [CopyOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) property.
 
 `CopyOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Disables cut in SfDataGrid.
+[None](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Disables cut in SfDataGrid.
 
-[CutData](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enabled cut in SfDataGrid.
+[CutData](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Enabled cut in SfDataGrid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Column header also copied along with data.
+[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Column header also copied along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Cut the display text with format instead of actual value.
+[IncludeFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Cut the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Hidden column also cut to clipboard.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyOption.html) – Hidden column also cut to clipboard.
 
 `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options should be used along with `CutData` option.
 
@@ -103,7 +103,7 @@ Me.sfDataGrid1.CopyOption = CopyOptions.CutData Or CopyOptions.IncludeHeaders
 
 ### Rows
 
-Copy operation for any particular row can be canceled by handling the [CopyContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyContent_EV.html) event.
+Copy operation for any particular row can be canceled by handling the [CopyContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyContent_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -130,7 +130,7 @@ End Sub
 
 ### Columns
 
-Copy operation for any particular column can be canceled by handling the [CopyCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyCellContent_EV.html) event.
+Copy operation for any particular column can be canceled by handling the [CopyCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyCellContent_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ End Sub
 
 ### Rows
 
-Paste operation for any particular row can be canceled by handling the [PasteContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteContent_EV.html) event.
+Paste operation for any particular row can be canceled by handling the [PasteContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteContent_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -182,7 +182,7 @@ End Sub
 
 ### Columns
 
-Paste operation for any particular column can be canceled by handling the [PasteCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteCellContent_EV.html) event.
+Paste operation for any particular column can be canceled by handling the [PasteCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteCellContent_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -211,7 +211,7 @@ End Sub
 
 ### Copy
 
-SfDataGrid allows to change the clipboard value while copying the values to the clipboard by handling the [CopyCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyCellContent_EV.html) event.
+SfDataGrid allows to change the clipboard value while copying the values to the clipboard by handling the [CopyCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CopyCellContent_EV.html) event.
 The below code example changes the clipboard value as `100` instead of cell value `10003` in SfDataGrid while copying the record.
 
 {% tabs %}
@@ -237,7 +237,7 @@ End Sub
 
 ### Paste
 
-SfDataGrid allows to change the clipboard value while pasting the values from the clipboard by handling the [PasteCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteCellContent_EV.html) event.
+SfDataGrid allows to change the clipboard value while pasting the values from the clipboard by handling the [PasteCellContent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PasteCellContent_EV.html) event.
 
 The below code example changes the clipboard value as `100` instead of cell value `10003` in SfDataGrid while pasting the record to the SfDataGrid.
 
@@ -266,7 +266,7 @@ End Sub
 
 ### Copy Programmatically	 
 
-Copy the selected records in SfDataGrid by using [Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Copy.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Copy the selected records in SfDataGrid by using [Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Copy.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.ClipboardController.Copy();
@@ -276,7 +276,7 @@ Me.sfDataGrid1.ClipboardController.Copy()
 {% endhighlight %}
 {% endtabs %}
 
-Copy a record by selecting the record using [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method and `Copy` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Copy a record by selecting the record using [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method and `Copy` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,7 +295,7 @@ Me.sfDataGrid1.ClipboardController.Copy()
 {% endhighlight %}
 {% endtabs %}
 
-Copy the multiple records by selecting group of records using [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method and `Copy`method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Copy the multiple records by selecting group of records using [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method and `Copy`method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -310,7 +310,7 @@ Me.sfDataGrid1.ClipboardController.Copy()
 
 ### Copy Rows without Selecting
 
-The records can be copied without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~CopyRowsToClipboard.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+The records can be copied without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~CopyRowsToClipboard.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -323,7 +323,7 @@ Me.sfDataGrid1.ClipboardController.CopyRowsToClipboard(3,5)
 
 ### Cut Programmatically
 
-Cut the selected records in SfDataGrid by using [Cut](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Cut.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Cut the selected records in SfDataGrid by using [Cut](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Cut.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,7 +334,7 @@ Me.sfDataGrid1.ClipboardController.Cut()
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method and `Cut` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method and `Cut` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -349,7 +349,7 @@ Me.sfDataGrid1.ClipboardController.Cut()
 
 ### Paste Programmatically
 
-Paste the clipboard value into SfDataGrid by using [Paste](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Paste.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Paste the clipboard value into SfDataGrid by using [Paste](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.IDataGridClipboardController~Paste.html) method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -360,7 +360,7 @@ Me.sfDataGrid1.ClipboardController.Paste()
 {% endhighlight %}
 {% endtabs %}
 
-Paste the clipboard value into selected record by selecting the record using [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method and `Paste` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
+Paste the clipboard value into selected record by selecting the record using [MoveToCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~MoveToCurrentCell.html) method and `Paste` method in [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html) of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -381,7 +381,7 @@ Me.sfDataGrid1.ClipboardController.Paste()
 
 ## Customizing Copy Paste Behavior
 
-SfDataGrid process the clipboard operations in `DataGridClipboardController` class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and set it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html)  of SfDataGrid.
+SfDataGrid process the clipboard operations in `DataGridClipboardController` class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and set it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html)  of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}

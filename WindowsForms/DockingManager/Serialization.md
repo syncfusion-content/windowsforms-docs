@@ -9,11 +9,11 @@ documentation: ug
 
 # State Persistence 
 
-State persistence is the combined process of serialization and deserialization. DockingManager provides built-in state persistence functionality to save and load layout. Layout of the Dock panels which hold the state, side, position and visibility of each child. This layout information can be stored to isolated storage, an xml or binary file.  
+State persistence is the combined process of serialization and deserialization. Docking manager provides built-in state persistence functionality to save and load the layout. Layout of the dock panels hold the state, side, position, and visibility of each child. This layout information can be stored in isolated storage, an XML, or binary file.  
 
 ## Auto serialization
 
-DockingManager supports AutoSave which allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property as `true`. The default value of the PersistState property is `false`.
+Docking manager supports AutoSave that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property to `true`. The default value of the PersistState property is `false`.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ Me.dockingManager1.PersistState = True
 
 ## Persisting dock state in default storage
 
-DockingManager saves the state of the DockingManager in an isolated storage format while WindowClosing.
+Docking manager saves the dock state in an isolated storage format while WindowClosing.    
 
-### Save State
+### Save state
 
-To save the AutoPersist state of the DockingManager, call the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function of the DockingManager in its closing event.
+To save the AutoPersist state of docking manager, call the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function in its closing event. 
 
 <table>
 <tr>
@@ -47,15 +47,15 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 SaveDockState<br/><br/></td><td>
-Saves the current dock state to Isolated Storage<br/><br/></td></tr>
+Saves the current dock state to isolated storage.<br/><br/></td></tr>
 <tr>
 <td>
 SaveDockState(AppStateSerializer serializer)<br/><br/></td><td>
-Saves the current dock state information to the specified AppStateSerializer. Parameter is,Serializer - An instance of AppStateSerializer class<br/><br/></td></tr>
+Saves the current dock state information to the specified AppStateSerializer. Parameter is serializer that is an instance of AppStateSerializer class.<br/><br/></td></tr>
 <tr>
 <td>
 SaveDockState(AppStateSerializer serializer, Control ctrl)<br/><br/></td><td>
-Saves the dock state information for the specified dockable control. The parameters are, Serializer - An instance of AppStateSerializer class.Control - Indicates the docked control<br/><br/></td></tr>
+Saves the dock state information for the specified dockable control. The parameters are serializer that is an instance of AppStateSerializer class, and control that indicates the docked control.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
@@ -85,9 +85,9 @@ Me.dockingManager1.SaveDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-### Load State
+### Load state
 
-To load the AutoPersist state of the DockingManager, call the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function of the DockingManager in its loaded event.
+To load the AutoPersist state of the docking manager, call the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function in its loaded event.
 
 <table>
 <tr>
@@ -97,21 +97,20 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 LoadDockState<br/><br/></td><td>
-Reads the persisted dock state from the Isolated Storage<br/><br/></td></tr>
+Reads the persisted dock state from the isolated storage.<br/><br/></td></tr>
 <tr>
 <td>
 LoadDockState(AppStateSerializer serializer)<br/><br/></td><td>
-Reads a previously serialized dock state using the AppStateSerializer object. Parameter is, Serializer - An instance of AppStateSerializer class<br/><br/></td></tr>
+Reads a previously serialized dock state using the AppStateSerializer object. The parameter is a serializer, which is an instance of AppStateSerializer class.<br/><br/></td></tr>
 <tr>
 <td>
 LoadDockState(AppStateSerializer serializer, Control ctrl)<br/><br/></td><td>
-Reads a previously serialized dock state for the specified dockable control and applies the new state. The parameters are, Serializer - An instance of AppStateSerializer class.Ctrl - Indicates the docked control<br/><br/></td></tr>
+Reads a previously serialized dock state for the specified dockable control and applies the new state. The parameters are serializer and control. Serializer is an instance of AppStateSerializer class, and control indicates the docked control.<br/><br/></td></tr>
 </table>
 
 {% tabs %}
 
 {% highlight C# %}
-
 
 this.dockingManager1.LoadDockState();
 
@@ -135,9 +134,9 @@ Me.dockingManager1.LoadDockState(serializer, this.listBox1)
 
 {% endtabs %}
 
-## Serialize dock state as xml
+## Serialize dock state as XML
 
-When the DockingManager [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property is set, it will save the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it could be done as follows:
+When the docking manager [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property is set, it saves the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it can be done as follows:
 
 {% tabs %}
 
@@ -146,7 +145,7 @@ When the DockingManager [PersistState](https://help.syncfusion.com/cr/cref_files
 
 using Syncfusion.Runtime.Serialization;
 
-// Persist the dock state into XML File named Dock1.xml. Use this line in the constructor of Control which hosts the docking layout 
+// Persist the dock state into XML File named Dock1.xml. Use this line in the constructor of the control that hosts the docking layout. 
 
 public form1()
 
@@ -163,7 +162,7 @@ AppStateSerializer.InitializeSingleton(SerializeMode.XMLFile,"Dock1");
 
 Imports Syncfusion.Runtime.Serialization
 
-' Persist the dock state into XML File named Dock1.xml.Use this line in the constructor of Control which hosts the docking layout 
+' Persist the dock state into XML File named Dock1.xml. Use this line in the constructor of the control that hosts the docking layout. 
 
 Private Sub New()
 
@@ -177,8 +176,8 @@ End Sub()
 
 ## Serialize dock state in memory stream
 
-To persist docking information in a database, we need to serialize the state into a memory stream. After which the stream is written into the database. The field to where the dock state is saved is binary.
-
+To persist docking information in a database, serialize the state into a memory stream. After serialized, the stream will be written in database. The field where the dock state will be saved is binary.
+  
 *Storing State*
 
 {% tabs %}
@@ -196,7 +195,7 @@ this.dockingManager1.SaveDockState(serializer);
 
 serializer.PersistNow();
 
-//Code to store the memory stream into database. Depends upon the database.
+//Code to store the memory stream into database
 
 {% endhighlight %}
 
@@ -214,7 +213,7 @@ Me.dockingManager1.SaveDockState(serializer)
 
 serializer.PersistNow() 
 
-'Code to store the memory stream into database. Depends upon the database.
+'Code to store the memory stream into database
 
 
 {% endhighlight %}
@@ -262,7 +261,7 @@ Me.dockingManager1.LoadDockState(serializer)
 
 {% highlight C# %}
 
-// To Save
+// To save
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
@@ -271,7 +270,7 @@ this.dockingManager1.SaveDockState(serializer);
 serializer.PersistNow();
 
 
-// To Load
+// To load
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.BinaryFile, "MyFile");
 
@@ -283,7 +282,7 @@ this.dockingManager1.LoadDockState(serializer);
 {% highlight VB %}
 
 
-' To Save
+' To save
 
 Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
@@ -292,7 +291,7 @@ Me.dockingManager1.SaveDockState(serializer)
 serializer.PersistNow()
 
 
-' To Load
+' To load
 
 Dim serializer As New AppStateSerializer(SerializeMode.BinaryFile, "MyFile")
 
@@ -303,14 +302,14 @@ Me.dockingManager1.LoadDockState(serializer)
 {% endtabs %}
 
 
-## Serialization in Isolated Storage medium
+## Serialization in isolated storage medium
 
 {% tabs %}
 
 {% highlight C# %}
 
 
-// To Save
+// To save
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
@@ -319,7 +318,7 @@ this.dockingManager1.SaveDockState(serializer);
 serializer.PersistNow();
 
 
-// To Load
+// To load
 
 AppStateSerializer serializer = new AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile");
 
@@ -331,7 +330,7 @@ this.dockingManager1.LoadDockState(serializer);
 {% highlight VB %}
 
 
-' To Save
+' To save
 
 Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
@@ -340,7 +339,7 @@ Me.dockingManager1.SaveDockState(serializer)
 serializer.PersistNow()
 
 
-' To Load
+' To load
 
 Dim serializer As New AppStateSerializer(SerializeMode.IsolatedStorage, "MyFile")
 
@@ -350,7 +349,7 @@ Me.dockingManager1.LoadDockState(serializer)
 
 {% endtabs %}
 
-Calling the [GetSerializedControls](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetSerializedControls.html) function will return the serialized control collection enumerator in the specified serializer. This can be done through code as follows.
+Calling the [GetSerializedControls](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetSerializedControls.html) function returns the serialized control collection enumerator in the specified serializer. This can be done using the following code.
 
 <table>
 <tr>
@@ -384,21 +383,21 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 {% endtabs %}
 
-## Serialization / de-serialization for a particular control
+## Serialization or de-serialization for a particular control
 
-In the `DockingManager`, you can perform serialization / de-serialization for a particular control by using its functions, [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) and [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html).
+In the `docking manager`, you can perform serialization or de-serialization for a particular control by using its functions such as [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) and [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html).
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Saves DockState for specific controls.
+//Saves DockState for specific controls
 
 this.dockingManager1.SaveDockState(serialize, this.panel1);
 
 serialize.PersistNow();
 
-//Loads the DockState for specific controls.
+//Loads the DockState for specific controls
 
 this.dockingManager1.LoadDockState(serialize, this.panel1);
 
@@ -407,13 +406,13 @@ this.dockingManager1.LoadDockState(serialize, this.panel1);
 
 {% highlight VB %}
 
-'Saves DockState for specific controls.
+'Saves DockState for specific controls
 
 Me.dockingManager1.SaveDockState(serialize, Me.panel1)
 
 serialize.PersistNow()
 
-'Loads the DockState for specific controls.
+'Loads the DockState for specific controls
 
 Me.dockingManager1.LoadDockState(serialize, Me.panel1)
 
@@ -423,7 +422,7 @@ Me.dockingManager1.LoadDockState(serialize, Me.panel1)
 
 ## Restore to initial state
 
-The [LoadDesignerDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDesignerDockState.html) function of DockingManager is used to restore the initial windows form designer state of the docking window. 
+The [LoadDesignerDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDesignerDockState.html) function is used to restore the initial Windows Forms designer state of the docking window.
 
 {% tabs %}
 
@@ -444,9 +443,9 @@ Me.dockingManager1.LoadDesignerDockState()
 
 ## Serialize dynamically added children
 
-By default, DockingManager cannot deserialize its Saved Layout properly, when its child collection is modified after DockState is saved.
+By default, the docking manager cannot deserialize its saved layout properly, when its child collection is modified after the DockState is saved.
 
-Since the DockingManager state persistence feature implemented in such a way that the DockingManager matches the child collection of saved layout with current DockingManager layout internally and loads properly when DockingManager children collection remains same. DockingManager results in improper layout when any child collection changes dynamically.
+Since the docking manager state persistence feature is implemented in such a way that it matches the child collection of saved layout with current layout internally and loads properly when the children collection remains same. It results in improper layout when any child collection changes dynamically.
 
-N> A sample that demonstrates Serialization support is available in the following sample installation path:
+N> Find the sample with serialization support in the following location. 
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\StatePersistence

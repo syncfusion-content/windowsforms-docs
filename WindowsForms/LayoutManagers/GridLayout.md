@@ -8,13 +8,13 @@ documentation: ug
 ---
 # GridLayout
 
-GridLayout is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
+`GridLayout` is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
 
 ![](Overview_images/Overview_img60.jpeg)
 
-## Key Features
+## Key features
 
-**Rows and Columns** - Provides options to customize row and column span of the child controls
+**Rows and columns** - Provides options to customize row and column span of the child controls
 
 **HGap and VGap** - Provides option to set the gaps between child control such as horizontal and vertical direction
 
@@ -119,14 +119,14 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with GridLayout control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
 Create a new Windows Forms project in the Visual Studio to display the GridLayout with basic functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The GridLayout control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -152,19 +152,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -192,7 +192,7 @@ Me.gridLayout1.ContainerControl = Me
 
 {% endtabs %}
 
-**Adding Layout components through code**
+**Adding layout components through code**
 
 The child controls can be added to the layout by adding it to the form and adding them as a layout member using `SetParticipateInLayout` method.
 

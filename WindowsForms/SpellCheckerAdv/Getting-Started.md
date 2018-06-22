@@ -154,7 +154,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with SpellCheckerAdv control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Add control via Form Designer](#add-control-via-form-designer)
+2. [Add control via designer](#add-control-via-designer)
 3. [Add control manually using Code](#add-control-manually-using-code)
 4. [Configuring SpellCheckerAdv into RichTextBox control](#configuring-spellCheckerAdv-into-RichTextBox-control)
 5. [Applying Dictionary](#applying-dictionary)
@@ -165,7 +165,7 @@ You can create the Windows Forms application with SpellCheckerAdv control as fol
 
 Create a new Windows Forms project in the Visual Studio to display the SpellCheckerAdv with basic information.
 
-## Add control via Form Designer
+## Add control via designer
 
 SpellCheckerAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -476,7 +476,7 @@ End Sub
 
 ![](Getting-Started_images/GettingStarted2.png)
 
-## Applying Dictionary
+## Applying dictionary
 
 SpellCheckerAdv provide built-in dictionary whose Path can be set using `DictionaryPath` property in SpellCheckerAdv.
 
@@ -497,7 +497,7 @@ Me.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic"
 {% endtabs %}
 
 
-## Applying Custom Dictionary
+## Applying custom dictionary
 
 SpellCheckerAdv provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. Custom Dictionary can be added using `CustomDictionaryPath` property.
 

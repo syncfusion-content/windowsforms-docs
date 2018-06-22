@@ -7,10 +7,10 @@ control: GridControl
 documentation: ug
 ---
 # Copy and Paste
-All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste_methods.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~CutPaste.html) property. It will provide the list of properties and methods for performing the clipboard operation.
+All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste_methods.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~CutPaste.html) property. It will provide the list of properties and methods for performing the clipboard operation.
 
 ## Copy 
-The selected range of cells or data can be copied to the Clipboard by using the [Copy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~Copy.html) method. The keyboard keys <kbd>Ctrl</kbd> +<kbd> C</kbd> combination is used to perform the Copy operation.
+The selected range of cells or data can be copied to the Clipboard by using the [Copy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~Copy.html) method. The keyboard keys <kbd>Ctrl</kbd> +<kbd> C</kbd> combination is used to perform the Copy operation.
 
 {% tabs %}
 {% highlight c# %}
@@ -23,10 +23,10 @@ Me.gridControl1.CutPaste.Copy()
 {% endhighlight %}
 {% endtabs %}
 
-The [CanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCopy.html) method checks whether there are selected ranges of cells that can be copied to clipboard or if the current cell's contents can be copied. The return type of this method is `Boolean`. If it returns `true`, it indicates that the selected range of cells or the current cell's contents can be copied to the clipboard. If it is false, it indicates that the selected range of cells or the current cell's contents cannot be copied to the clipboard.
+The [CanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCopy.html) method checks whether there are selected ranges of cells that can be copied to clipboard or if the current cell's contents can be copied. The return type of this method is `Boolean`. If it returns `true`, it indicates that the selected range of cells or the current cell's contents can be copied to the clipboard. If it is false, it indicates that the selected range of cells or the current cell's contents cannot be copied to the clipboard.
 
 ### Copying the range of cells to the clipboard
-The range of cells can be programmatically copied to the clipboard by using the [CopyRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyRange.html) method.
+The range of cells can be programmatically copied to the clipboard by using the [CopyRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyRange.html) method.
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Cells(3, 3, 4, 4);
@@ -43,7 +43,7 @@ Me.gridControl1.CutPaste.CopyRange(range)
 {% endtabs %}
 
 ### Copying the formatted text of the cell
-The formatted text of a cell or a range of cells can be copied to the clipboard by using the [CopyTextToClipboard](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyTextToClipboard.html) method.
+The formatted text of a cell or a range of cells can be copied to the clipboard by using the [CopyTextToClipboard](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyTextToClipboard.html) method.
 {% tabs %}
 {% highlight c# %}
 GridCurrentCell cc = this.gridControl1.CurrentCell;
@@ -66,7 +66,7 @@ Me.gridControl1.CutPaste.CopyTextToClipboard(rangeList)
 {% endtabs %}
 
 ### Copying the cells with styles to the clipboard
-The style information of a specified range of cells can be copied to the clipboard by using the [CopyCellsToClipboard](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyCellsToClipboard.html) method.
+The style information of a specified range of cells can be copied to the clipboard by using the [CopyCellsToClipboard](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CopyCellsToClipboard.html) method.
 {% tabs %}
 {% highlight c# %}
 GridRangeInfoList list = new GridRangeInfoList();
@@ -79,7 +79,7 @@ list.Add(GridRangeInfo.Cell(2, 2))
 Me.gridControl1.Model.CutPaste.CopyCellsToClipboard(list, True)
 {% endhighlight %}
 {% endtabs %}
-The copy operation can be restricted by handling the [ClipboardCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCopy_EV.html) event. This event will raise when the `Copy` method is called.
+The copy operation can be restricted by handling the [ClipboardCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCopy_EV.html) event. This event will raise when the `Copy` method is called.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardCopy += gridControl1_ClipboardCopy;
@@ -99,7 +99,7 @@ End Sub
 {% endtabs %}
 
 ## Paste 
-The [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~Paste.html) method is used to insert the entire content of the clipboard to the selected range of cells. The <kbd>Ctrl</kbd>+<kbd>V</kbd> keyboard combination is used to perform the paste operation.  
+The [Paste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~Paste.html) method is used to insert the entire content of the clipboard to the selected range of cells. The <kbd>Ctrl</kbd>+<kbd>V</kbd> keyboard combination is used to perform the paste operation.  
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ this.gridControl1.CutPaste.Paste();
 Me.gridControl1.CutPaste.Paste()
 {% endhighlight %}
 {% endtabs %}
-The pasting operation can be notified by the [ClipboardPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardPaste_EV.html) event. It will be triggered while pasting the clipboard contents. This event can be used to restrict the clipboard paste operation.
+The pasting operation can be notified by the [ClipboardPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardPaste_EV.html) event. It will be triggered while pasting the clipboard contents. This event can be used to restrict the clipboard paste operation.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardPaste += gridControl1_ClipboardPaste;
@@ -133,7 +133,7 @@ End Sub
 N> **ClipboardPasted** - This event is to be handled after a paste operation.
 
 ### Clipboard flags
-When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the GridControl, set the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) as follows,
+When the number of rows/columns copied is greater than the number of rows/columns count of the grid, then the grid will automatically add the additional columns/rows according to the copied content. To avoid the unwanted rows/columns to be appended to the GridControl, set the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) as follows,
 {% tabs %}
 {% highlight c# %}
 // To Do not append additional rows/columns while pasting .
@@ -159,7 +159,7 @@ Me.gridControl1.CutPaste.ClipboardFlags = Me.gridControl1.CutPaste.ClipboardFlag
 {% endtabs %}
 
 ### Fill Paste
-This technique is used to fill the clipboard content to the selected range of cells. It can be done by using the [ClipboardPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardPaste_EV.html) event.
+This technique is used to fill the clipboard content to the selected range of cells. It can be done by using the [ClipboardPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardPaste_EV.html) event.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.ClipboardPaste += gridControl1_ClipboardPaste;
@@ -252,7 +252,7 @@ Me.gridControl1.CutPaste.Cut()
 {% endtabs %}
 
 ### Cutting a range of cells into the clipboard
-A range of cells can be programmatically cut to the clipboard by using the [CutRange](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CutRange.html) method.
+A range of cells can be programmatically cut to the clipboard by using the [CutRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CutRange.html) method.
 {% tabs %}
 {% highlight c# %}
 GridRangeInfo range = GridRangeInfo.Cells(2, 2, 4, 4);
@@ -274,7 +274,7 @@ N> If the cell have integer data type, it will became null during the cut operat
 N> [https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells](https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells) 
 
 ## Disabling Cut, Copy, and Paste
-The Clipboard Cut, Copy and Paste operations of the grid can be disabled by setting the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) value as `GridDragDropFlags.Disabled`.
+The Clipboard Cut, Copy and Paste operations of the grid can be disabled by setting the [ClipboardFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCutPasteEventArgs~ClipboardFlags.html) value as `GridDragDropFlags.Disabled`.
 {% tabs %}
 {% highlight c# %}
 //Completely turns off the Clipboard cut, copy, or paste.
@@ -287,7 +287,7 @@ Me.gridControl1.CutPaste.ClipboardFlags = GridDragDropFlags.Disabled
 {% endtabs %}
 
 ### Prevent Cut or Copy or Paste operations using Events
-To get the clipboard operations can be performed or not for the given range of cells, use the [CanCut](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCut.html), [CanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCopy.html) and [CanPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanPaste.html) methods.
+To get the clipboard operations can be performed or not for the given range of cells, use the [CanCut](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCut.html), [CanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanCopy.html) and [CanPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelCutPaste~CanPaste.html) methods.
 {% tabs %}
 {% highlight c# %}
 //Get the content can be copied to the Clipboard or not.
@@ -310,7 +310,7 @@ Dim allowCut As Boolean = Me.gridControl1.Model.CutPaste.CanCut()
 Dim allowPaste As Boolean = Me.gridControl1.Model.CutPaste.CanPaste()
 {% endhighlight %}
 {% endtabs %}
-To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCanPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanPaste_EV.html), [ClipboardCanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanCopy_EV.html) and [ClipboardCanCut](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanCut_EV.html) events and set the `e.Result` as `false`. 
+To cancel the cut, copy and paste operation of the grid, handle the [ClipboardCanPaste](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanPaste_EV.html), [ClipboardCanCopy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanCopy_EV.html) and [ClipboardCanCut](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ClipboardCanCut_EV.html) events and set the `e.Result` as `false`. 
 {% tabs %}
 {% highlight c# %}
 //Clipboard Events
@@ -370,7 +370,7 @@ End Sub
 GridControl has provide various events to manage the clipboard content while performing cut, paste and copy operations. This section explains on how to customize the clipboard operations using events.
 
 ### Validating the cell value while Pasting
-The cell value can be validated at the time of pasting by using the [PasteCellText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~PasteCellText_EV.html) event. When the content is invalid, set `e.Cancel` to `true`.
+The cell value can be validated at the time of pasting by using the [PasteCellText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~PasteCellText_EV.html) event. When the content is invalid, set `e.Cancel` to `true`.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.Model.PasteCellText += new GridPasteCellTextEventHandler(Model_PasteCellText);
@@ -416,7 +416,7 @@ End Sub
 {% endtabs %}
 
 ### Preventing Paste for a particular Cell
-The pasting operation can be prevented for particular cells by handling the [PasteCellText](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~PasteCellText_EV.html) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html) property to `DoubleClickOnCell`.
+The pasting operation can be prevented for particular cells by handling the [PasteCellText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~PasteCellText_EV.html) event. This event will fire when the cell is not in edit mode at the time of pasting. This can be achieved by setting the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html) property to `DoubleClickOnCell`.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.PasteCellText += new GridPasteCellTextEventHandler(gridControl1_PasteCellText);
@@ -445,7 +445,7 @@ End Sub
 {% endtabs %}
 
 ### Handling the clipboard Paste using Keyboard shortcut
-The pasting using keys <kbd>Ctrl</kbd>+<kbd>V</kbd> can be handled by [CurrentCellControlKeyMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellControlKeyMessage_EV.html) event. Using this event, the pasting can be restricted even though the cell is in edit mode.
+The pasting using keys <kbd>Ctrl</kbd>+<kbd>V</kbd> can be handled by [CurrentCellControlKeyMessage](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellControlKeyMessage_EV.html) event. Using this event, the pasting can be restricted even though the cell is in edit mode.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.CurrentCellControlKeyMessage += new GridCurrentCellControlKeyMessageEventHandler(gridControl1_CurrentCellControlKeyMessage);

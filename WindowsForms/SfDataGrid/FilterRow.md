@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # FilterRow
-SfDataGrid provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterRowPosition.html) property.
+SfDataGrid provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterRowPosition.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -23,7 +23,7 @@ Me.sfDataGrid1.FilterRowPosition = RowPosition.Top
 
 ![](FilterRow_images/FilterRow_Image1.png)
 
-The index of the filter row can be get by using the [GetFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetFilterRowIndex.html) method.
+The index of the filter row can be get by using the [GetFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetFilterRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -36,7 +36,7 @@ Dim filterRowIndex As Integer = Me.sfDataGrid1.GetFilterRowIndex()
 {% endhighlight %}
 {% endtabs %}
 
-You can also check whether the given row index is the filter row index or not by using the [IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) helper method.
+You can also check whether the given row index is the filter row index or not by using the [IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ Dim isFilterRow As Boolean = Me.sfDataGrid1.IsFilterRowIndex(filterRowIndex)
 {% endtabs %}
 
 ## Built-in FilterRow Editor Types
-By default, the filter row loads the editors based on underlying property type to filter the data easily. The default editor of the column can be changed by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterRowEditorType.html) property.
+By default, the filter row loads the editors based on underlying property type to filter the data easily. The default editor of the column can be changed by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterRowEditorType.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ Filters multiple values from the drop-down.
 </table>
 
 ## FilterRow Options
-Based on the editor type, FilterRowCell displays the filter conditions in dropdown where you can easily switch between the conditions to filter the data. The filter options can be disabled by setting [GridColumn.ShowFilterRowOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowFilterRowOptions.html) property to `false`. 
+Based on the editor type, FilterRowCell displays the filter conditions in dropdown where you can easily switch between the conditions to filter the data. The filter options can be disabled by setting [GridColumn.ShowFilterRowOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowFilterRowOptions.html) property to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ Always Equals or Not Equal filter condition will be applied based on the selecte
 ![](FilterRow_images/FilterRow_Image3.png)
 
 ## Filtering null Values 
-The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property of the GridColumn. The default value of this property is `true`.
+The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property of the GridColumn. The default value of this property is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -293,7 +293,7 @@ Me.sfDataGrid1.Columns(1).AllowBlankFilters = False
 ![](FilterRow_images/FilterRow_Image4.png)
 
 ## Immediate Filtering
-By default, filters are applied to the columns when moving to other cells or pressing the enter key. This can be changed to apply the filtering while typing or selecting in editor itself by setting the [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) as true.
+By default, filters are applied to the columns when moving to other cells or pressing the enter key. This can be changed to apply the filtering while typing or selecting in editor itself by setting the [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -309,7 +309,7 @@ Me.sfDataGrid1.Columns(2).ImmediateUpdateColumnFilter = True
 ![](FilterRow_images/FilterRow_Image5.png)
 
 ### Delay Immediate Filtering
-By default, filtering will be applied immediately while entering the character in the filter row when the ` ImmediateUpdateColumnFilter` is enabled. The time delay for applying the filtering can be set by using the [FilterDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterDelay.html) property.
+By default, filtering will be applied immediately while entering the character in the filter row when the ` ImmediateUpdateColumnFilter` is enabled. The time delay for applying the filtering can be set by using the [FilterDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterDelay.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ Me.sfDataGrid.FilterDelay = 1000
 {% endtabs %}
 
 ## Disable the Filtering for Particular FilterRow Cell
-By default the filtering will be applied based on the edited value of the filter row cell. To avoid the filtering through the filter row cell, cancel the editing of the cell using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
+By default the filtering will be applied based on the edited value of the filter row cell. To avoid the filtering through the filter row cell, cancel the editing of the cell using the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -355,7 +355,7 @@ End Sub
 {% endtabs %}
 
 ## Appearance
-The fore color and back color of the filter row can be customized by using the [FilterRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~FilterRowStyle.html) property.
+The fore color and back color of the filter row can be customized by using the [FilterRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~FilterRowStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -374,7 +374,7 @@ Me.sfDataGrid1.Style.FilterRowStyle.Font = New GridFontInfo(New Font("Segoe UI",
 
 ## Customizing FilterRow CellRenderer
 SfDataGrid allows to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. It also provides the support to create a new renderers instead of overriding the existing renderer. 
-The default TextBox editor behavior can be customized by overriding [FilterRowTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowFilter.FilterRowTextBoxCellRenderer.html) class and add the custom renderer to [FilterRowCellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterRowCellRenderers.html) collection.
+The default TextBox editor behavior can be customized by overriding [FilterRowTextBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowFilter.FilterRowTextBoxCellRenderer.html) class and add the custom renderer to [FilterRowCellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterRowCellRenderers.html) collection.
 
 {% tabs %}
 {% highlight c# %}

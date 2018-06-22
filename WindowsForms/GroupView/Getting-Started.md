@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Getting started
 
-This section describes how to add [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) in any application:
+The following list of assemblies should be added as reference to use the [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) in any application:
 
 <table>
 <tr>
@@ -36,11 +36,11 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 
 ## Installing NuGet Packages
 
-To use [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
-<td>{{'**S.No**'| markdownify }}
+<td>{{'**S.no**'| markdownify }}
 </td>
 <td>{{'**Framework version**'| markdownify }}
 </td>
@@ -107,22 +107,22 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with GroupView control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) with basic functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) with basic functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
-The [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
 ![](Overview_images/GroupView_img1.png)
 
-Items can be added to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
+Items can be added to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
 
 ![](Overview_images/GroupView_img2.png)
 
@@ -134,19 +134,19 @@ To add control manually in C#, follow the given steps:
 
 	* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Shared.Base**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Shared.Base;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Shared.Base
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
@@ -174,7 +174,7 @@ Me.Controls.Add(groupView1)
 
 {% endtabs %}
 
-**Step 4** - Items can be added to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
+**Step 4** - Items can be added to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
 
 {% tabs %}
 

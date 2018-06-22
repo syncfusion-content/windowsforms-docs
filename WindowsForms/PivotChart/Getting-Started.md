@@ -22,27 +22,27 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Chart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Windows.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Chart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Chart.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of ChartControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.PivotAnalysis.Windows assembly contains classes that handles UI operations and other fundamentals of PivotGrid control.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotChart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart_namespace.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.PivotChart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart_namespace.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.PivotChart.Windows assembly contains classes that handles UI operations and other fundamentals of PivotChart control.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot analysis/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.PivotAnalysis.Base allows you to easily access, manipulate, and display your data in a variety of configurations.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
 </table>
 
@@ -55,11 +55,11 @@ Optional assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
+{{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
 Syncfusion.PivotConverter.Windows contains classes that provides the functionality of exporting the PivotChart Control to an Excel sheet. <br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
 Syncfusion.XlsIO.Base. contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
 </table>
 
@@ -96,28 +96,26 @@ The PivotChart control can be added through code-behind by following the below s
 * Syncfusion.PivotChart.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-3.Then initialize the PivotChart control by creating an instance and add it to the Form using the code specified below.
+3.Then initialize the PivotChart control by creating an instance and add it to the form using the code specified below.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Initialize a new PivotChart.
-private Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
-// Add required size for the PivotChart control
-this.pivotChart1.Size = new System.Drawing.Size(750, 434);
-// Add the PivotChart control to the parent control.
+//Initialize a new PivotChart. 
+Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
+
+// Add the PivotChart control to the parent control. 
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart.
-Private pivotChart1 As Syncfusion.Windows.Forms.PivotChart.PivotChart = New Syncfusion.Windows.Forms.PivotChart.PivotChart()
-' Add required size for the PivotChart control
-Me.pivotChart1.Size = New System.Drawing.Size(750, 434);
-' Add the PivotChart control to the parent control.
+'Initialize a new PivotChart. 
+Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
+
+' Add the PivotChart control to the parent control. 
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}
@@ -152,22 +150,20 @@ Me.Controls.Add(pivotChart1)
 
 {% highlight c# %}
 
-//Initialize a new PivotChart.
-private Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
-// Add required size for the PivotChart control
-this.pivotChart1.Size = new System.Drawing.Size(750, 434);
-// Add the PivotChart control to the parent control.
+//Initialize a new PivotChart. 
+Syncfusion.Windows.Forms.PivotChart.PivotChart pivotChart1 = new Syncfusion.Windows.Forms.PivotChart.PivotChart();
+
+// Add the PivotChart control to the parent control. 
 this.Controls.Add(pivotChart1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotChart.
-Private pivotChart1 As Syncfusion.Windows.Forms.PivotChart.PivotChart = New Syncfusion.Windows.Forms.PivotChart.PivotChart()
-' Add required size for the PivotChart control
-Me.pivotChart1.Size = New System.Drawing.Size(750, 434);
-' Add the PivotChart control to the parent control.
+'Initialize a new PivotChart. 
+Dim pivotChart1 As New Syncfusion.Windows.Forms.PivotChart.PivotChart()
+
+' Add the PivotChart control to the parent control. 
 Me.Controls.Add(pivotChart1)
 
 {% endhighlight %}
@@ -358,10 +354,10 @@ N>
 
 The PivotChart control requires the following information in order to populate the data from the data source.
 
-* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
-* [PivotAxis](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotAxis.html) - Elements that need to be added in axis of PivotChart control.
-* [PivotLegend](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotLegend.html) - Elements that need to be added in legend of PivotChart control.
-* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotCalculations.html) - Calculation values that need to be added as data points in PivotChart control.
+* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [PivotAxis](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotAxis.html) - Elements that need to be added in axis of PivotChart control.
+* [PivotLegend](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotLegend.html) - Elements that need to be added in legend of PivotChart control.
+* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotCalculations.html) - Calculation values that need to be added as data points in PivotChart control.
 
 The below code snippet illustrates how to add the required information to the PivotChart control.
 
@@ -405,7 +401,7 @@ Finally, run the application to obtain the following output.
 
 ## Real time updates
 
-[PivotChartUpdatingManager](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChartUpdatingManager.html) provides support for updating the series values automatically whenever the data gets changed in its underlying collection. This support can be enabled by setting the [EnableUpdating](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableUpdating.html) property to `true`.
+[PivotChartUpdatingManager](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChartUpdatingManager.html) provides support for updating the series values automatically whenever the data gets changed in its underlying collection. This support can be enabled by setting the [EnableUpdating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableUpdating.html) property to `true`.
 
 {% tabs %}
 
@@ -430,7 +426,7 @@ The default value of `EnableUpdating` property is false.
 
 ### Begin update and end update
 
-When we do bulk changes in the underlying data source, it updates PivotChart for every changes and it degrades the performance. So you can do the bulk changes or bulk operation between the [BeginUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~BeginUpdate.html) and [EndUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20chart/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EndUpdate.html) methods of PivotChart. BeginUpdate method will temporarily freeze the painting or refreshing of the control until EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
+When we do bulk changes in the underlying data source, it updates PivotChart for every changes and it degrades the performance. So you can do the bulk changes or bulk operation between the [BeginUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~BeginUpdate.html) and [EndUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EndUpdate.html) methods of PivotChart. BeginUpdate method will temporarily freeze the painting or refreshing of the control until EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
 
 {% tabs %}
 

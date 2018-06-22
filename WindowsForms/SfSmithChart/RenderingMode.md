@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Rendering Mode
 
-Smith chart provides options for plotting both impedance and admittance by using the [`RenderingMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/sfsmithchart/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.SfSmithChart~RenderingMode.html) property.
+Smith chart provides options for plotting both impedance and admittance by using the [`RenderingMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.SfSmithChart~RenderingMode.html) property.
 
 By using the rendering mode, you can change the type of the Smith chart. The default mode of Smith chart is impedance.
 

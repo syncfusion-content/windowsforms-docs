@@ -928,7 +928,7 @@ The Grid will be loaded with the data looks like the following screenshot,
 *&lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo*
 
 ### Dynamic Object Binding
-The grid can be bounded to the [DynamicObject](https://msdn.microsoft.com/en-in/library/system.dynamic.dynamicobject.aspx) by enabling the [IsDynamicData](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~IsDynamicData.html) property. It will prepare the grid for the dynamic data source. This feature is only available for the .NET Framework 4.0 and above.
+The grid can be bounded to the [DynamicObject](https://msdn.microsoft.com/en-in/library/system.dynamic.dynamicobject.aspx) by enabling the [IsDynamicData](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~IsDynamicData.html) property. It will prepare the grid for the dynamic data source. This feature is only available for the .NET Framework 4.0 and above.
 
 The following steps are used to have the dynamic object binding for the GridGroupingControl.
 

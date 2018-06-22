@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) in any application:
+The following list of assemblies should be added as reference to use the [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) in any application:
 
 <table>
 <tr>
@@ -148,17 +148,17 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with WizardControl control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-in-code)
 4. [Configure WizardPages](#configure-wizardpages)
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) with functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) with functionalities.
 
 ## Adding control via designer
 
-The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -184,25 +184,25 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** : Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
 {% endtabs %} 
 
-**Step 3** : Create [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) control instance and add it to the form.
+**Step 3** : Create [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -230,7 +230,7 @@ Me.Controls.Add(wizardControl1)
 
 **Adding WizardControlPage into WizardControl**
 
-Create an instance of [WizardContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardContainer.html), add it to WizardControl and set it as [WizardPageContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPageContainer.html) of WizardControl. WizardControlPages can be added to using [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPages.html) collection property.
+Create an instance of [WizardContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardContainer.html), add it to WizardControl and set it as [WizardPageContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPageContainer.html) of WizardControl. WizardControlPages can be added to using [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPages.html) collection property.
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ Me.wizardControl1.WizardPages = New WizardControlPage() { Me.wizardControlPage1}
 
 **Adding Controls to BannerPanel** 
 
-Controls can be added to header of the WizardControl using [BannerPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerPanel.html) property where panel containing the desired controls is added. 
+Controls can be added to header of the WizardControl using [BannerPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerPanel.html) property where panel containing the desired controls is added. 
 
 
 {% tabs %}
@@ -331,7 +331,7 @@ Me.wizardControl1.BannerPanel = Me.gradientPanel1
 
 ## Configure WizardPages
 
-Below code demonstrates adding two or more [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage.html) with sequencing details.
+Below code demonstrates adding two or more [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage.html) with sequencing details.
 
 {% tabs %}
 

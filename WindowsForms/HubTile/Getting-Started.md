@@ -148,7 +148,7 @@ Please find more details regarding how to install the nuget packages in windows 
 You can create the Windows Forms application with HubTile control as follows:
 
 1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-form-designer)
+2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 4. [Customize background image](#customize-background-image)
 
@@ -156,7 +156,7 @@ You can create the Windows Forms application with HubTile control as follows:
 
 Create a new Windows Forms project in the Visual Studio to display the HubTile with  functionalities.
 
-## Adding control via Form designer
+## Adding control via designer
 
 The HubTile control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
@@ -184,19 +184,19 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Tools.Windows**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% tabs %}
 
 {% highlight C# %}
 
-using Syncfusion.Tools.Windows;
+using Syncfusion.Windows.Forms.Tools;
 
 {% endhighlight  %}
 
 {% highlight VB %}
 
-Imports Syncfusion.Tools.Windows
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 

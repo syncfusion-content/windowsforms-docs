@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance 
 
-The UI for Dock, Float and AutoHide windows of DockingManager can be changed using different Style. We can customize the appearance of Docked, Float, Tabbed and AutoHide window in the DockingManager.
+The UI for dock, float, and auto hide windows of the docking manager can be changed using different styles. You can customize the appearance of docked, float, tabbed, and auto hide window in the docking manager.
 
-## Visual Styles
+## Visual styles
 
-VisualStyles provides rich and professional look and feel UI for the Dock windows. Some of the available VisualStyles are as follows:
+Visual styles provide rich and professional look and feel UI for the dock windows. Some of the available VisualStyles are as follows:
 
 * Default
 * Office2003
@@ -29,11 +29,11 @@ VisualStyles provides rich and professional look and feel UI for the Dock window
 * Office2016DarkGray
 * Office2016Black
 
-The visual style can be applied for the DockingManager using [VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property. The following code example illustrates how to change the visual style for DockingManager.
+The visual style can be applied for the docking manager using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property. The following code example illustrates how to change the visual style for the docking manager.
 
 **Default**
 
-This option helps to set the Default style.
+This option helps to set the default style.
 
 {% tabs %}
 
@@ -371,7 +371,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 ## Office 2007 color scheme
 
-DockingManager supports all the three-color schemes in Office2007 visual style. This can be controlled using [Office2007Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2007Theme.html) property. 
+The docking manager supports all the three-color schemes in Office2007 visual style. This can be controlled using the [Office2007Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2007Theme.html) property.
 
 {% tabs %}
 
@@ -394,7 +394,7 @@ Me.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Si
 
 ## Office 2010 color scheme
 
-DockingManager supports all the three-color schemes in Office2010 visual style. This can be controlled using [Office2010Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2010Theme.html) property. 
+Th docking manager supports all the three-color schemes in Office2010 visual style. This can be controlled using the [Office2010Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2010Theme.html) property.
 
 {% tabs %}
 
@@ -415,13 +415,13 @@ Me.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Bl
 
 ![](Appearance_images/Appearance_img15.png)
 
-## Custom Color Schemes
+## Custom color schemes
 
-Custom colors can also be applied for `Office2007` and `Office2010` style in DockingManager.
+Custom colors can be applied for `Office2007` and `Office2010` styles in the docking manager.
 
 ### Custom Office 2007 color scheme
 
-Custom colors can also be applied for Office2007 by setting `Managed` style of [Office2007Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2007Theme.html).
+Custom colors can also be applied for Office2007 by setting the `Managed` style of [Office2007Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2007Theme.html).
 
 {% tabs %}
 
@@ -449,7 +449,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 ### Custom Office 2010 color scheme
 
-Custom colors can also be applied for Office2010 by setting `Managed` style of [Office2010Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2010Theme.html).
+Custom colors can be applied for Office2010 by setting the `Managed` style of [Office2010Theme](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~Office2010Theme.html).
 
 {% tabs %}
 
@@ -475,44 +475,44 @@ Office2010Colors.ApplyManagedColors(Me, Color.Green)
 
 ## Customize dock window
 
-In DockingManager, we can customize background, foreground and font of docked or dockable window.
+In docking manager, you can customize the background, foreground, and font of docked or dockable window.
 
 ### Customize caption
 
-The Dock and Float window caption bar BackColor, ForeColor and Font Style can be customized by using the following properties of DockingManager. This customization applies for both active and inactive docked or dockable window.
+The dock and float window caption bar BackColor, ForeColor, and Font Style can be customized by using the following properties of the docking manager. This customization can be applied for both active and inactive docked or dockable window.
 
 <table>
 <tr>
 <th>
-DockingManager Property</th><th>
+Docking manager property</th><th>
 Description</th></tr>
 <tr>
 <td>
 {{ '[ActiveCaptionBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionBackground.html)' | markdownify }}</td><td>
-Sets background for the caption area using BrushInfo object</td></tr>
+Sets background for the caption area using BrushInfo object.</td></tr>
 <tr>
 <td>
 {{ '[InActiveCaptionBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionBackground.html)' | markdownify }}</td><td>
-Sets caption background of the inactive docked control using BrushInfo object</td></tr>
+Sets caption background of the inactive docked control using BrushInfo object.</td></tr>
 <tr>
 <td>
 {{ '[ActiveCaptionForeGround](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionForeGround.html)' | markdownify }}</td><td>
-Indicates the color of the caption text in the active state</td></tr>
+Indicates the color of the caption text in the active state.</td></tr>
 <tr>
 <td>
 {{ '[InActiveCaptionForeGround](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionForeGround.html)' | markdownify }}</td><td>
-Indicates the color of the caption text in inactive state</td></tr>
+Indicates the color of the caption text in inactive state.</td></tr>
 <tr>
 <td>
 {{ '[ActiveCaptionFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveCaptionFont.html)' | markdownify }}</td><td>
-Gets or sets the font for the active caption</td></tr>
+Gets or sets the font for the active caption.</td></tr>
 <tr>
 <td>
 {{ '[InActiveCaptionFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InActiveCaptionFont.html)' | markdownify }}</td><td>
-Gets or sets the font of the inactive caption</td></tr>
+Gets or sets the font of the inactive caption.</td></tr>
 </table>
 
-N> These settings will effect only with [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property set as Default.
+N> These settings will effect only with [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property that is set as default.
 
 {% tabs %}
 
@@ -555,9 +555,9 @@ Me.DockingManager1.InActiveCaptionFont = New System.Drawing.Font("Arial", 11.25!
 
 ### Customize border
 
-Border color of the docked controls can be customized by using [BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~BorderColor.html) property of DockingManager. 
+The border color of the docked controls can be customized by using the [BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~BorderColor.html) property of the docking manager.
 
-N> [PaintBorders](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PaintBorders.html) property must be enabled to effect this setting.
+N> The [PaintBorders](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PaintBorders.html) property must be enabled to effect this setting.
 
 {% tabs %}
 
@@ -588,7 +588,7 @@ Me.dockingManager1.PaintBorders = True
 
 ### HostFormClientBorder
 
-By using [HostFormClientBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~HostFormClientBorder.html) property of DockingManager, we can enable or disable border Which was drawn around the host form's client rectangle. Default value of **HostFormClientBorder** is `true`, to disable the border of HostForm turn its value to `false`.
+By using the [HostFormClientBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~HostFormClientBorder.html) property of the docking manager, you can enable or disable the border that is drawn around the host form's client rectangle. The default value of **HostFormClientBorder** is `true`. To disable the border of HostForm, turn its value to `false`.
 
 {% tabs %}
 
@@ -611,49 +611,49 @@ Me.dockingManager1.HostFormClientBorder = False
 
 ## Customize tabs in dock window
 
-The DockingManager provides tab and label settings for the docked windows. These settings allow you to control the appearance of the dock tabs.
+The docking manager provides tab and label settings for the docked windows. These settings allow you to control the appearance of dock tabs.
 
-### Foreground settings for the dock tabs
+### Foreground settings for dock tabs
 
-The font style and the height of the tab controls in a tabbed docking group can be controlled by using the following properties respectively.
+The font style and height of the tab controls in a tabbed docking group can be controlled by using the following properties respectively.
 
 <table>
 <tr>
 <th>
-DockingManager property</th><th>
+Docking manager property</th><th>
 Description</th></tr>
 <tr>
 <td>
 {{ '[DockTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabFont.html)' | markdownify }} </td><td>
-This property helps to customize the font for the tab control used in the tabbed docking group</td></tr>
+This property helps to customize the font of tab control used in the tabbed docking group.</td></tr>
 <tr>
 <td>
 {{ '[DockTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabHeight.html)' | markdownify }}</td><td>
-This property helps to customize the tab control used in the tabbed docking group</td></tr>
+This property helps to customize the tab control used in the tabbed docking group.</td></tr>
 <tr>
 <td>
 {{ '[DockTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabForeColor.html)' | markdownify }}</td><td>
-This property helps to customize header foreground color of inactive tab item in dock window</td></tr>
+This property helps to customize the header foreground color of inactive tab item in the dock window.</td></tr>
 <tr>
 <td>
 {{ '[ActiveDockTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveDockTabForeColor.html)' | markdownify }}</td><td>
-This property helps to customize header foreground color of active tab item in dock window</td></tr>
+This property helps to customize the header foreground color of active tab item in the dock window.</td></tr>
 <tr>
 <td>
 {{ '[DockTabBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabBackColor.html)' | markdownify }}</td><td>
-This property helps to customize header background color of inactive tab item in dock window</td></tr>
+This property helps to customize the header background color of inactive tab item in the dock window.</td></tr>
 <tr>
 <td>
 {{ '[ActiveDockTabBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ActiveDockTabBackColor.html)' | markdownify }}</td><td>
-This property helps to customize header background color of active tab item in dock window</td></tr>
+This property helps to customize the header background color of active tab item in the dock window.</td></tr>
 <tr>
 <td>
 {{ '[DockTabPanelBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabPanelBackColor.html)' | markdownify }}</td><td>
-This property helps to customize tab panel background color of tabbed dock window</td></tr>
+This property helps to customize the tab panel background color of tabbed dock window.</td></tr>
 <tr>
 <td>
 {{ '[DockTabSeparatorColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabSeparatorColor.html)' | markdownify }}</td><td>
-This property helps to customize separator between the tabs in dock window</td></tr>
+This property helps to customize the separator between tabs in the dock window.</td></tr>
 </table>
 
 {% tabs %}
@@ -804,7 +804,7 @@ Me.dockingManager1.DockTabSeparatorColor = System.Drawing.Color.Red
 ![](Appearance_images/Appearance_img26.png)
  
 
-N> [ResetDockTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabFont.html), [ResetDockTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabHeight.html) and [ResetDockTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabForeColor.html) functions allows you to reset the above settings.
+N> [ResetDockTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabFont.html), [ResetDockTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabHeight.html), and [ResetDockTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabForeColor.html) functions allow you to reset the above settings.
 
 
 {% tabs %}
@@ -837,13 +837,13 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 ## Customize auto hide window
 
-In DockingManager, we can customize the AutoHidden window tabs foreground, font and tab panel background color.
+In docking manager, you can customize the AutoHidden window tabs foreground, font, and tab panel background color.
 
 ### Customize auto hide tab
 
-The Font style for the auto hidden tabs can be customized by using [AutoHideTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabFont.html) property of DockingManager. The height of AutoHidden tab control can be customized by using the [AutoHideTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabHeight.html) property.
+The font style of the auto hidden tabs can be customized by using the [AutoHideTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabFont.html) property of the docking manager. The height of AutoHidden tab control can be customized by using the [AutoHideTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabHeight.html) property.
 
-N> This setting will effect only with [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property set as Default.
+N> This setting will effect only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property is set as default.
 
 {% tabs %}
 
@@ -905,7 +905,7 @@ Me.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Red
 
 ### Customize auto hide panel
 
-The background color of the Auto Hide window can be customized using the property named [TabPanelBackcolor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPanelBackColor.html) in AHTabControl. All the auto hide TabControl can be get from the [GetAHTabControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MainFormController~GetAHTabControl.html) function of MainFormController by specifying side of auto hide TabControl. The following code used to customize the back color.
+The background color of the auto hide window can be customized using the property named [TabPanelBackcolor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPanelBackColor.html) in the AHTabControl. All the auto hide TabControls can be get from the [GetAHTabControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MainFormController~GetAHTabControl.html) function of MainFormController by specifying the side of auto hide TabControl. The following code is used to customize the back color.
 
 {% tabs %}
 
@@ -966,13 +966,13 @@ ahTabCtrlTop.TabPanelBackColor = Color.Gray
 
 ![](Appearance_images/Appearance_img29.png)
 
-## Customization with metro Style
+## Customization with Metro style
 
-In the DockingManager, we can customize default caption color and button color of docked or dockable windows for metro style. 
+In the docking manager, you can customize the default caption color and button color of docked or dockable windows for metro style. 
 
-### Change the metro style floating window border width
+### Changing the Metro style floating window border width
 
-The border width for the floating form can be set according to their user requirement by using [MetroBorderWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroBorderWidth.html) property.
+The border width of the floating form can be set according to the user requirement by using the [MetroBorderWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroBorderWidth.html) property.
 
 {% tabs %}
 
@@ -997,9 +997,9 @@ Me.dockingManager1.MetroBorderWidth = 10
 
 ![](Appearance_images/Appearance_img30.png)
 
-### Show / hide dotted lines metro style caption
+### Show/hide dotted lines Metro style caption
 
-The menu color and button color can be customized by using the properties [MetroCaptionColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroCaptionColor.html) and [MetroButtonColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroButtonColor.html) which are present in the caption bar of the DockingManager. The backcolor of active docked or dockable windows can be customized by [MetroColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroColor.html) property of DockingManager. And also we can enable or disable the dotted lines on the caption bar by using [ShowMetroCaptionDottedLines](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowMetroCaptionDottedLines.html) property.
+The menu color and button color can be customized by using the [MetroCaptionColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroCaptionColor.html) and [MetroButtonColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroButtonColor.html) properties that are present in the caption bar of the docking manager. The backcolor of active docked or dockable windows can be customized by the [MetroColor](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~MetroColor.html) property. You can enable or disable the dotted lines on the caption bar by using the [ShowMetroCaptionDottedLines](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowMetroCaptionDottedLines.html) property.
 
 {% tabs %}
 
@@ -1056,16 +1056,16 @@ Me.dockingManager1.ShowMetroCaptionDottedLines = False
 
 ## Change dock provider styles
 
-While dragging and dropping a docked control, DockingManager guides you through the process, using [DragProviderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragProviderStyle.html) property. On setting this property, you will be able to see arrows on four sides of the form, when a control is dragged. These arrows will guide you where to dock the window. Keeping the mouse point on a particular arrow will display a shadow like appearance based on the side of docking.
+The docking manager control helps to drag a docked control using the [DragProviderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragProviderStyle.html) property. By setting this property, you can see arrows on four sides of the form when the control is dragged. These arrows guide you where the window should be docked. Keeping the mouse pointer on a particular arrow displays a shadow such as an appearance based on the side of docking.
 
-There are various docking provider styles. Some of the available docking provider styles are as follows:
+The following are some of the available docking provider styles:
 
-* Standard (Default value - no arrows appears for this option), 
+* Standard (Default value: no arrows appears for this option)
 * VS2005
 * VS2008
-* VS2010 
+* VS2010
 * VS2012
-* Whidbey 
+* Whidbey
 * Office2016Colorful
 * Office2016DarkGray
 * Office2016Black
@@ -1121,7 +1121,7 @@ Me.dockingManager1.DragProviderStyle = Syncfusion.Windows.Forms.Tools.DragProvid
 
 ## Right-to-left
 
-`DockingManager` control elements can be aligned in right-to-left layout. The DockingManager control is laid out from the right to left when the HostControl [RightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RightToLeft.html) value is set to `Yes`. 
+`Docking manager` control elements can be aligned in right-to-left layout when the HostControl [RightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~RightToLeft.html) value is set to `yes`.
 
 {% tabs %}
 
@@ -1148,4 +1148,4 @@ Me.RightToLeft = RightToLeft.Yes
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img37.png)  
+![](Appearance_images/Appearance_img37.png)

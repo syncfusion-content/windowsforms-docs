@@ -13,7 +13,7 @@ Spreadsheet calculation engine offers automated calculation over a formula, expr
 
 ## Adding formula into cell
 
-To add formulas into a cell programmatically, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+To add formulas into a cell programmatically, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ Named Ranges are the defined names that represents a cell, range of cells, formu
 
 ### Define named ranges at runtime
 
-Spreadsheet allows the user to define/add the named ranges at runtime by using [AddNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AddNamedRange.html) method.
+Spreadsheet allows the user to define/add the named ranges at runtime by using [AddNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AddNamedRange.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,7 +43,7 @@ spreadsheet.AddNamedRange("SampleName", "A3:B3", "Sheet1");
 
 ### Editing or removing named ranges at runtime
 
-Spreadsheet allows the user to edit the named ranges at runtime by [EditNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~EditNamedRange.html) method and remove the named ranges at runtime by [DeleteNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DeleteNamedRange.html) method
+Spreadsheet allows the user to edit the named ranges at runtime by [EditNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~EditNamedRange.html) method and remove the named ranges at runtime by [DeleteNamedRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DeleteNamedRange.html) method
 
 {% tabs %}
 {% highlight c# %}
