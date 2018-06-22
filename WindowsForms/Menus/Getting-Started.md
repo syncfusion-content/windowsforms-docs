@@ -185,7 +185,7 @@ Create a new Windows Forms project in the Visual Studio to display the [MainFram
 
 **Adding BarItem to Bar**
 
-{BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) represents an individual item that can be displayed in a menu structure.
+[BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) represents an individual item that can be displayed in a menu structure.
 
 ![](GettingStarted-images/GettingStarted-img23.png)
 
