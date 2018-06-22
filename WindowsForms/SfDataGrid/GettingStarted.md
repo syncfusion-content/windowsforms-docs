@@ -66,7 +66,7 @@ Syncfusion.SfInput.WinForms contains various editor controls (such as SfNumericT
 Syncfusion.SfListView.WinForms
 </td>
 <td>
-Syncfusion.SfListView.WinForms contains various editor controls (such as SfComboBox and SfListView) which are used in SfDataGrid.
+Syncfusion.SfListView.WinForms contains various list controls (such as SfComboBox and SfListView) which are used in SfDataGrid.
 </td>
 </tr>
 </table>
