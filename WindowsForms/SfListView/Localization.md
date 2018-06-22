@@ -55,7 +55,7 @@ End Sub
  
 ![](Localization_images/Localization_img5.png)
  
-## Editing Default Resource File
+## Editing default resource file
 The default resource file can be edited by adding it to Resources folder of the application where the SfListView reads the static texts here.
 The default resource file can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 

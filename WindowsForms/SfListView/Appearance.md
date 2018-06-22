@@ -10,7 +10,7 @@ documentation: ug
 # Appearance
 SfListView allows to customize the appearance of selected items through the `SfListView.Style` property that contains all the settings for Item and Items Group appearance customizations.
 
-## Customizing Item Appearance
+## Customizing item appearance
 Item appearance can be customized by using the `SfListView.Style.ItemStyle` property that contains all the settings for the item appearance customization.
 
 {% tabs %}
@@ -30,7 +30,7 @@ sfListView1.Style.ItemStyle.Font = New Font("Segoe UI", 10)
          
 ![](Appearance_images/Appearance_img1.png)        
                              
-## Customizing group item appearance
+## Customizing items group appearance
 The items group appearance can be customized by using the `SfListView.Style.GroupItemStyle` property that contains all the settings for the items group appearance customization.
 
 {% tabs %}
@@ -50,7 +50,7 @@ sfListView1.Style.GroupItemStyle.Font = New Font("Segoe UI", 12)
 
 ![](Appearance_images/Appearance_img2.png)
 
-## Conditional Styling
+## Conditional styling
 The SfListView allows the items customization by using `SfListView.DrawItem` event.
 
 {% tabs %}
@@ -78,7 +78,7 @@ End Sub
 
 ![](Appearance_images/Appearance_img3.png)
 
-## Adding Image to an item
+## Adding image to an item
 The SfListView allows adding image to each item by using the `SfListView.DrawItem` event. It also allows you to get actual value of the item by using the `SfListView.ValueMember` property.
 
 {% tabs %}

@@ -10,12 +10,12 @@ documentation: ug
 # Check Box Selection 
 The SfListView supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the `SfListView.ShowCheckBoxes` property to true.
  
-## Check Box Selection Mode
+## Check box selection mode
 The check box provides support to select in the context of state of the check box based on the SfListView.CheckBoxSelectionMode property.                                                                        
 
 SfListView has the following modes for selection based on the check box state.
 
-* Default Mode: don’t want to affect the selection while checking/unchecking the item CheckBox, you need to set `SfListView.CheckBoxSelectionMode` as Default.
+* Default: don’t want to affect the selection while checking/unchecking the item CheckBox, you need to set `SfListView.CheckBoxSelectionMode` as Default.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,7 +69,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img4.png)
 
-## TriStateMode
+## TriState mode
 The SfListView allows you to enable or disable the indeterminate state for item check box by using the `SfListView.AllowTriStateMode` property. The tristate mode can only be supported in the data bound mode i.e. the `SfListView.CheckedMember` property must have the underlying datasource property in type of `CheckState`.
 
 {% tabs %}
@@ -136,13 +136,13 @@ sfListView1.CheckedMember = "CheckedState"
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img5.png)
 
-## Checked Items
+## Checked items
 
-### Get Checked Items
+### Get checked items
 
 The SfListView gets all the checked items through the `SfListView.CheckedItems` property. 
      
-### Clear Checked Items 
+### Clear checked items 
       
 The checked items can be cleared by calling the ‘CheckedItems.Clear()` method.
 
@@ -171,7 +171,7 @@ sfListView1.AllowSelectAll = true
   
  ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img6.png) 
   
-## Recursive Checking
+## Recursive checking
 The SfListView provides support for recursive checking where the checked state of the group header item and group item are changed recursively based on the state of currently changed item.
 
 The recursive checking actions are:
@@ -213,7 +213,7 @@ sfListView1.Style.CheckBoxStyle.CheckedTickColor = Color.White
  
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
  
-## Conditional Styling
+## Conditional styling
 The SfListView allows the item check box customization by using `SfListView.DrawCheckBox` event.
 
 {% tabs %}
@@ -245,7 +245,7 @@ End Sub
 
 ## Events 
 
-### ItemChecking Event
+### ItemChecking event
 
 The `ItemChecking` event is raised while checking an item at the execution time by using ItemChecking event as follows:
 
@@ -278,7 +278,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### ItemCheckedEvent
+### ItemChecked event
 The `ItemChecked` event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
 
 The ItemChecked event used for the following use cases:

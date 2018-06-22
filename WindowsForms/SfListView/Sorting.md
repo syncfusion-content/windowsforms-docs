@@ -34,7 +34,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Co
       
 ![](Sorting_images/Sorting_img1.png)
                
-## Custom Sorting
+## Custom sorting
 Sort the items based on the custom logic. It can be applied to the `SfListView.DataSource.SortComparer` or `SortDescriptor.Comparer` property added to the `DataSource.SortDescriptors` collection.
 
 In custom sort comparer, all the items in `SfListView` is sorted with length of an item.

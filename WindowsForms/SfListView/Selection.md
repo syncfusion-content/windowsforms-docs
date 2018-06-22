@@ -86,7 +86,7 @@ Next item
 
 The SfListView gets all the selected items through the `SfListView.SelectedItems` property and gets single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
 
-### Clear Selected items
+### Clear selected items
 
 The selected items can be cleared by calling the `SelectedItems.Clear()` method.
 
@@ -116,7 +116,7 @@ sfListView1.HotTracking = true
 ## Appearance
 The SfListView allows you to customize the appearance of the selected items or mouse hover items through `SfListView.Style `property.
 
-### Change the Background and Foreground Color for Selection
+### Change the background and foreground colors for selection
 The selection background and foreground color can be changed by using the `SfListView.Style.SelectionStyle` property.
 
 {% tabs %}
@@ -132,7 +132,7 @@ sfListView1.Style.SelectionStyle.SelectionForeColor = Color.DarkBlue
  
 ![](Selection_images/Selection_img6.png)
  
-### Change the Background and Foreground Color for Hover Selection
+### Change the background and foreground color for Hover selection
 The selection background and foreground colors can be changed by using the `SfListView.Style.SelectionStyle` property.
 
 {% tabs %}
@@ -184,6 +184,7 @@ End Sub
 {% endtabs %}
 
 ### SelectionChanged event
+
 The `SelectionChanged` event will occur once the selection process has been completed for the selected item in the SfListView. `ItemSelectionChangedEventArgs` has the following members that provides information for the SelectionChanged event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection has been processed.
@@ -213,7 +214,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Disable Selection on particular item
+## Disables selection on a particular item
 The selection of a particular set of items can be disabled based on the `SfListView.SelectedItems` of the underlying collections.
 
 {% tabs %}

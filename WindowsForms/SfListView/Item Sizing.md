@@ -62,7 +62,7 @@ End Sub
 
 ![](Item Sizing_images/ItemSizing_img2.png)
 
-## AutoFit the items based on content
+## Auto fit the items based on content
 The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the `SfListView.AutoFitMode` property. The control has two types of auto fit modes as listed as follows:
 
 *	`Height`: Auto fits the items based on the content.

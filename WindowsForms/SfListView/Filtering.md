@@ -66,7 +66,7 @@ public Boolean FilterOnMultipleCriteria (Object obj)
 
 ![](Filtering_images/Filtering_img2.png)
 
-## Getting the Filtered Data                                                                                         
+## Getting the filtered data                                                                                         
 You can get the filtered items from the view and modify it in the `SfListView.View.FilterChanged` event. When filter is applied, the filtered items are available in the `SfListView.View.DisplayItems`.
 
 {% tabs %}
@@ -107,7 +107,7 @@ sfListView1.View.RefreshFilter()
 {% endhighlight %}
 {% endtabs %}
 
-## Sort the Filtered Items                  
+## Sort the filtered items                  
 Order of the filtered items can be rearranged in the `FilterChanged` event by adding `SortDescriptor`.
 
 {% tabs %}

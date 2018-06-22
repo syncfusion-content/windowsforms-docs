@@ -29,7 +29,7 @@ sfListView1.ValueMember = "Continent"
 ![](DataBinding_images/DataBinding_img1.png)
 
 ### Limitation
-Data table binding is not supported in the SfListView control.
+Data table binding is not supported.
 			    
 ## Events
 
@@ -57,6 +57,7 @@ End Sub
 {% endtabs %}
 
 ### SourceCollectionChanged
+
 The `SourceCollectionChanged` event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
 
 NotifyCollectionChangedEventArgs has the following properties,

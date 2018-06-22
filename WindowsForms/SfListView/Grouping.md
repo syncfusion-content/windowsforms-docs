@@ -10,7 +10,7 @@ documentation: ug
 # Grouping
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
-## Programmatic Grouping
+## Programmatic grouping
 The SfListView allows programmatic grouping by defining the `GroupDescriptor` object and adding it into the `View.GroupDescriptors` collection. The GroupDescriptor object holds the following properties:
 
 *	`PropertyName`: Describes the name of the property to be grouped.
@@ -31,7 +31,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 
 ![](Grouping_images/Grouping_img1.png)
 
-## Custom Grouping             
+## Custom grouping             
 The SfListView supports grouping the items based on custom logic applied to the `SfListView.DataSource.GroupComparer` or `GroupDescriptor.Comparer` property added to the DataSource.GroupDescriptors collection.
 In the custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
 
@@ -98,7 +98,7 @@ End Class
 
 ![](Grouping_images/Grouping_img2.png)
 
-## Grouping Based on First Character
+## Grouping based on first character
 The SfListView supports grouping the items based on first character of the value assigned to the property name in `GroupDescriptor` by using the `KeySelector`.
 
 {% tabs %}
@@ -159,7 +159,7 @@ End Function
 
 ![](Grouping_images/Grouping_img4.png)
 
-##Grouping by Ignoring Case Sensitivity
+##Grouping by ignoring case sensitivity
 Group the items by ignoring case sensitivity using the `KeySelector` property in the `GroupDescriptor`. While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
 
 {% tabs %}
@@ -184,9 +184,9 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ## Group Expand and Collapse                 
 By default, the groups will be in expanded state in the SfListView. You can expand or collapse the group at runtime by tapping the group header, the group gets collapse if the group is in expand state and vice-versa.
 
-## Programmatic Expand and Collapse  
+## Programmatic expand and collapse  
 
-### Expand or Collapse a Specific Group                             
+### Expand or collapse a specific group                             
 Expand or collapse a specific group by using the `SfListView.ExpandGroup` method and `SfListView.CollapseGroup` method.
 
 {% tabs %}
@@ -202,7 +202,7 @@ sfListView1.CollapseGroup(group)
 {% endhighlight %}
 {% endtabs %}
 
-### Expand or Collapse All the Groups
+### Expand or collapse all the groups
 Expand or collapse all the groups programmatically at runtime by using the `SfListView.ExpandAll` method and `SfListView.CollapseAll` method.
 
 {% tabs %}
@@ -276,7 +276,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Group an item with Sorting
+## Group an item with sorting
 Group the items of underlying collection with sorting by adding the `DataSource.GroupDescriptors` and the `DataSource.SortDescriptors` with required properties.
 
 {% tabs %}
