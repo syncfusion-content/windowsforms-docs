@@ -13,10 +13,11 @@ This section explains how to perform selection and its related operations in the
 ## UI Selection
 The control has different selection modes to perform selection operations as listed as follows:
 
-*	None: Allows disabling selection.
-*	One: Allows selecting single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `SfListView.SelectionMode`.
-*	MultiSimple: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
-*	MultiExtended: Allows selecting more than one item by select and drag items. Also, we can select multiple items by tap and hold Ctrl key and select items.	
+*	None: Disables selection.
+*	One: Selects single item. When clicking the selected item, selection will not be cleared. This is the default value of the `SfListView.SelectionMode`.
+*	MultiSimple: Selects more than one item. Selection is not cleared when selecting more than one item. When clicking the selected item, the selection gets cleared.
+*	MultiExtended: Selects more than one item by dragging the items. You can also select multiple items by holding the Ctrl key.
+	
     
 {% tabs %}
 {% highlight c# %}
@@ -30,9 +31,9 @@ sfListView1.SelectionMode = SelectionMode.MultiSimple
 ![](Selection_images/Selection_img1.png)
  
 ## Programmatic Selection
-When the `SfListView.SelectionMode` is other than None, the item or items in the SfListView can be selected from the code by setting the `SfListView.SelectedItem`, `SfListView.SelectedIndex` or adding items to the `SfListView.SelectedItems` property based on the `SfListView.SelectionMode`.
+When the `SfListView.SelectionMode` is other than None, the item or items in the SfListView can be selected by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property or by adding items to the `SfListView.SelectedItems` property based on the `SfListView.SelectionMode`.
 
-When the selection mode is `One`, programmatically select an item by setting the underlying object to the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.
+When the selection mode is `One`, programmatically selects an item by setting the underlying object to the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +84,7 @@ Next item
 
 ### Get selected items
 
-The SfListView gets all the selected items through the `SfListView.SelectedItems` property and gets the single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
+The SfListView gets all the selected items through the `SfListView.SelectedItems` property and gets single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
 
 ### Clear Selected items
 
@@ -99,7 +100,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ## Hot tracking
-SfListView supports hover selection on item, when mouse pointer moves over an item by setting `SfListView.HotTracking` as true.
+SfListView supports hover selection on item when mouse pointer moves over an item by setting `SfListView.HotTracking` as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,10 +114,10 @@ sfListView1.HotTracking = true
 ![](Selection_images/Selection_img5.png)
  
 ## Appearance
-SfListView allows to customize the appearance of the selected items or mouse hover items through `SfListView.Style `property.
+The SfListView allows you to customize the appearance of the selected items or mouse hover items through `SfListView.Style `property.
 
 ### Change the Background and Foreground Color for Selection
-The selection background and foreground color can be changed of by `SfListView.Style.SelectionStyle` property.
+The selection background and foreground color can be changed by using the `SfListView.Style.SelectionStyle` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,7 +133,7 @@ sfListView1.Style.SelectionStyle.SelectionForeColor = Color.DarkBlue
 ![](Selection_images/Selection_img6.png)
  
 ### Change the Background and Foreground Color for Hover Selection
-The selection background and foreground color can be changed of by `SfListView.Style.SelectionStyle` property.
+The selection background and foreground colors can be changed by using the `SfListView.Style.SelectionStyle` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,12 +152,13 @@ sfListView1.Style.SelectionStyle.HoverForeColor = Color.GreenYellow
 
 ### SelectionChanging event
 
-The `SelectionChanging` event is raised while selecting an item at the execution time. `ItemSelectionChangingEventArgs` has the following members which provides the information for SelectionChanging event:
+The `SelectionChanging` event is raised while selecting an item at the execution time. `ItemSelectionChangingEventArgs` has the following members that provides information for the SelectionChanging event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection is going to process.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection is going to remove.
 
 You can cancel the selection process within this event by setting the ItemSelectionChangingEventArgs.Cancel property to true.
+
 The SelectionChanging event is used for the following use case:
 *	Disable the selection of the particular item based on the underlying data.
 
@@ -182,7 +184,7 @@ End Sub
 {% endtabs %}
 
 ### SelectionChanged event
-The `SelectionChanged` event will occur once selection process has been completed for the selected item in the SfListView. `ItemSelectionChangedEventArgs` has the following members which provides information for SelectionChanged event:
+The `SelectionChanged` event will occur once the selection process has been completed for the selected item in the SfListView. `ItemSelectionChangedEventArgs` has the following members that provides information for the SelectionChanged event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection has been processed.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection has been removed.

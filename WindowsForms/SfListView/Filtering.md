@@ -14,7 +14,6 @@ This section explains how to filter the data and its related operations in the S
 The `SfListView` supports to filter the data by setting the `SfListView.View.Filter` property. You have to call the `SfListView.View.RefreshFilter()` method after assigning the Filter Property for refreshing the view.
 
 The `FilterChanged` event is raised once filtering is applied to the SfListView.                                   
-To apply filtering in the SfListView, follow the code example:
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +40,7 @@ public Boolean CustomFilter(Object obj)
 ![](Filtering_images/Filtering_img1.png)
 
 ## Filter based on multiple criteria
-The `SfListView` allows filtering the items based on multiple criteria. To filter the data using multiple properties, follow the code example:
+The `SfListView` allows filtering the items based on multiple criteria.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +67,7 @@ public Boolean FilterOnMultipleCriteria (Object obj)
 ![](Filtering_images/Filtering_img2.png)
 
 ## Getting the Filtered Data                                                                                         
-You can get filtered items from the view and modify it in the `SfListView.View.FilterChanged` event. When filter is applied, the filtered items are available in the `SfListView.View.DisplayItems`.
+You can get the filtered items from the view and modify it in the `SfListView.View.FilterChanged` event. When filter is applied, the filtered items are available in the `SfListView.View.DisplayItems`.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +94,7 @@ End Sub
 {% endtabs %}
             
 ## Clear filtering
-The SfListView allows clearing the filters by setting the `View.Filter` to null, and call the `View.RefreshFilter` method.
+The SfListView allows clearing the filters by setting the `View.Filter` to null and call the `View.RefreshFilter` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +108,7 @@ sfListView1.View.RefreshFilter()
 {% endtabs %}
 
 ## Sort the Filtered Items                  
-The order of the filtered items can be rearranged in the `FilterChanged` event by adding `SortDescriptor`. To sort the filtered items, follow the code example:
+Order of the filtered items can be rearranged in the `FilterChanged` event by adding `SortDescriptor`.
 
 {% tabs %}
 {% highlight c# %}

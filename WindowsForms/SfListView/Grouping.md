@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Grouping
-A group represents a collection of items belongs to a category. When grouping is applied, the data is organized into different groups based on key values. Each group is identified by its `Key`, by which you can get the underlying data in the group.
+A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic Grouping
-The SfListView allows programmatic grouping by defining the `GroupDescriptor` object, and adding it into the `View.GroupDescriptors` collection. The GroupDescriptor object holds the following properties:
+The SfListView allows programmatic grouping by defining the `GroupDescriptor` object and adding it into the `View.GroupDescriptors` collection. The GroupDescriptor object holds the following properties:
 
 *	`PropertyName`: Describes the name of the property to be grouped.
 *	`KeySelector`: Describes selector to return the group key.
@@ -32,8 +32,8 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ![](Grouping_images/Grouping_img1.png)
 
 ## Custom Grouping             
-The SfListView supports grouping the items based on custom logic applied to either `SfListView.DataSource.GroupComparer` property or `GroupDescriptor.Comparer` added to the DataSource.GroupDescriptors collection.
-In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
+The SfListView supports grouping the items based on custom logic applied to the `SfListView.DataSource.GroupComparer` or `GroupDescriptor.Comparer` property added to the DataSource.GroupDescriptors collection.
+In the custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ End Class
 ![](Grouping_images/Grouping_img2.png)
 
 ## Grouping Based on First Character
-The SfListView supports grouping the items based on first character of the value assigned to the property name in `GroupDescriptor` by using `KeySelector`.
+The SfListView supports grouping the items based on first character of the value assigned to the property name in `GroupDescriptor` by using the `KeySelector`.
 
 {% tabs %}
 {% highlight c# %}
@@ -130,7 +130,7 @@ End Function
 ![](Grouping_images/Grouping_img3.png)
 
 ## Grouping based on more than one property in the data object
-Group the items by binding multiple properties to the property name of `GroupDescriptor` by using `KeySelector` in which the group header items can be created with multiple data model object effectively.
+Group the items by binding multiple properties to the property name of `GroupDescriptor` using `KeySelector` in which the group header items can be created with multiple data model object effectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ End Function
 ![](Grouping_images/Grouping_img4.png)
 
 ##Grouping by Ignoring Case Sensitivity
-Grouping the items by ignoring case sensitive by using the `KeySelector` property in the `GroupDescriptor`. While returning the KeySelector, convert the required property name in the data model to group either as Upper or Lower case. The items will be grouped based on the KeySelector with returned case sensitive.
+Group the items by ignoring case sensitivity using the `KeySelector` property in the `GroupDescriptor`. While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -218,14 +218,16 @@ sfListView1.CollapseAllGroups()
 
 ## Disable expanding of specific group
 The `SfListView.GroupExpanding` event occurs when the group is being expanded.
-The `GroupExpandCollapseChangingEventArgs` of the GroupExpanding event provides the information about the expanding group and it has the following members:
+The `GroupExpandCollapseChangingEventArgs` of the GroupExpanding event provides information about the expanding group and it has the following members:
 
 * `Group`: Gets a list of group being expanded.
 * `Cancel` : Decides whether to cancel the group expansion or not.
 
-The GroupExpanding event used for the following use case.
+The GroupExpanding event used for the following use case:
+
 *	Keeps any one specific group in the expanded state by comparing and collapsing all other groups.
-You can cancel the group expansion by setting GroupExpandCollapseChangingEventArgs.Cancel to true.
+
+You can cancel the group expansion by setting the GroupExpandCollapseChangingEventArgs.Cancel property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -248,12 +250,12 @@ End Sub
 
 ## Disable collapsing of specific group
 The `SfListView.GroupCollapsing` event occurs when the group is being collapsed.
-The `GroupExpandCollapseChangingEventArgs` of the GroupCollapsing event provides the information about the collapsing group and it contains the following members:
+The `GroupExpandCollapseChangingEventArgs` of the GroupCollapsing event provides information about the collapsing group and it contains the following members:
 
 * `Group`: Get a group being collapsed.
 * `Cancel`: Decides whether to cancel the group collapsing or not.
 
-You can cancel the group is being collapsed by using the GroupExpandCollapseChangingEventArgs.Cancel of GroupCollapsing event.
+You can cancel the group is being collapsed by using the GroupExpandCollapseChangingEventArgs.Cancel property of GroupCollapsing event.
 
 {% tabs %}
 {% highlight c# %}
@@ -274,8 +276,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Group an item along with Sorting
-Group the items of underlying collection along with sorting by adding the `DataSource.GroupDescriptors` and the `DataSource.SortDescriptors` with required properties.
+## Group an item with Sorting
+Group the items of underlying collection with sorting by adding the `DataSource.GroupDescriptors` and the `DataSource.SortDescriptors` with required properties.
 
 {% tabs %}
 {% highlight c# %}

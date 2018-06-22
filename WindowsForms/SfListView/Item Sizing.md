@@ -11,7 +11,7 @@ documentation: ug
 This section explains how to customize the item size in the SfListView.
 
 ## Customizing item and group height
-The height of the Item and GroupHeader can be changed by using the `SfListView.ItemHeight` and `SfListView.GroupHeaderHeight` property.
+Height of an item and the group header can be changed by using the `SfListView.ItemHeight` and `SfListView.GroupHeaderHeight` properties respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,13 +27,13 @@ sfListView1.GroupHeaderHeight = 50
 ![](Item Sizing_images/ItemSizing_img1.png)
 
 ## Customize item size of an item on-demand
-The SfListView allows customizing the size of the item on-demand by the `SfListView.QueryItemHeight` event using the item index. This event is raised whenever items come to view and triggered with `QueryItemHeightEventArgs`.
+The SfListView allows customizing the height of an item on-demand by the `SfListView.QueryItemHeight` event using the item index. This event is raised whenever items come to view and triggered with `QueryItemHeightEventArgs`.
 
 The SfListView.QueryItemHeight event provides the following properties in their arguments:
 
 *	`ItemIndex`: Identifies a particular item in the SfListView.
 *	`ItemData`: Identifies the underlying data bound to that item.
-*	`ItemHeight`: Identifies height of the queried item. 
+*	`ItemHeight`: Identifies the height of the queried item. 
 *	`ItemType`: Identifies the item type of the queried item.
 *	`Handled`: Decides whether the specified height can be set to the item or not. The default value is false. When this property is not set, the decided size will not set to the item.
 
@@ -63,10 +63,10 @@ End Sub
 ![](Item Sizing_images/ItemSizing_img2.png)
 
 ## AutoFit the items based on content
-The SfListView allows dynamically adjusting size of items based on the content loaded by defining the `SfListView.AutoFitMode` property. The control has two types of AutoFitMode as listed as follows:
+The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the `SfListView.AutoFitMode` property. The control has two types of auto fit modes as listed as follows:
 
-*	`Height`: AutoFit the items based on the content.
-*	`None`: The SfListView items are layout by `SfListView.ItemHeight`.
+*	`Height`: Auto fits the items based on the content.
+*	`None`: Layouts the items by `SfListView.ItemHeight`.
 
 {% tabs %}
 {% highlight c# %}
