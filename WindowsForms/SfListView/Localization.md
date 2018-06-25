@@ -7,33 +7,33 @@ control: SfListView
 documentation: ug
 ---
 
-#Localization           
+# Localization           
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
-##Localize at sample level
+## Localize at sample level
 To localize the SfListView based on the ` CurrentUICulture ` using resource files, follow the steps:
 
-1)	Create a new folder and name it as Resources in your application.
+1) Create a new folder and name it as Resources in your application.
 
-2)	Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2) Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![](Localization_images/Localization_img1.png)
                      
-3)	Right-click on the Resources folder, select Add and then NewItem.
+3) Right-click on the Resources folder, select Add and then NewItem.
 
-4)	In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.SfListView.WinForms.<culture name>.resx. For example, give name as Syncfusion.SfListView.WinForms.de-DE.resx for German culture.The culture name that indicates the name of language and country.
+4) In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.SfListView.WinForms.<culture name>.resx. For example, give name as Syncfusion.SfListView.WinForms.de-DE.resx for German culture.The culture name that indicates the name of language and country.
 
 ![](Localization_images/Localization_img2.png)	 
 
-5)	Now, select Add option to add the resource file in Resources folder.
+5) Now, select Add option to add the resource file in Resources folder.
 
 ![](Localization_images/Localization_img3.png)
 
-6)  Add the Name/Value pair in Resource Designer of Syncfusion. SfListView.WinForms.de-DE.resx file and change its corresponding value to the corresponding culture.
+6) Add the Name/Value pair in Resource Designer of Syncfusion. SfListView.WinForms.de-DE.resx file and change its corresponding value to the corresponding culture.
  
  ![](Localization_images/Localization_img4.png)
  
-7)	Now, set the CurrentCulture of the Application before the InitializeComponent method and run the sample.
+7) Now, set the CurrentCulture of the Application before the InitializeComponent method and run the sample.
 
 {% tabs %}
 {% highlight c# %}

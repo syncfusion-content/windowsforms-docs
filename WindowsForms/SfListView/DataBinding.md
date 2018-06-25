@@ -7,11 +7,11 @@ control: SfListView
 documentation: ug
 ---
 
-#Data Binding
+# Data Binding
 The data source can be bound by using the `SfListView.DataSource` property. The following members controls data binding:
 
-*	Display Member -  A property of the underlying datasource to display for SfListView. 
-*	Value Member - A property to use as the actual value for the items.
+* Display Member -  A property of the underlying datasource to display for SfListView. 
+* Value Member - A property to use as the actual value for the items.
 
 {% tabs %}
 {% highlight c# %}
