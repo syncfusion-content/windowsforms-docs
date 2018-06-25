@@ -1147,6 +1147,30 @@ Syncfusion.GridConverter.Windows
 </tr>
 </table>
 
+## GridDataBoundGrid(Classic)
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows
+</td>
+<td>
+Syncfusion.Grid.Windows
+</td>
+</tr>
+</table>
+
 
 ## GridGroupingControl
 
