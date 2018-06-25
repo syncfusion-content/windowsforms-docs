@@ -72,11 +72,11 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
 </table>
 In addition to these assemblies there are also other optional assemblies.
@@ -88,19 +88,19 @@ Optional assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.GridHelperClasses.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.GridHelperClasses.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.HelperClasses.Windows contains all the cell types, export properties, features which are in common with GridControl and GridGroupingControl<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.GridConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridConverter.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.GridConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridConverter.Windows.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Grid.Converter.Windows contains static extension classes for exporting GridControl to excel in Syncfusion.GridExcelConverter namespace.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/pdf/webtoc.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base.html#"")'| markdownify }}<br/><br/></td><td>
 Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
 </table>
 
@@ -121,7 +121,7 @@ Grid Control can be added through designer by following the below steps.
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
 * Syncfusion.Grid.Base.dll
-* [Syncfusion.Grid.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows.html#)
+* [Syncfusion.Grid.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#)
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Windows.dll
 
@@ -175,7 +175,7 @@ Me.Controls.Add(Me.gridControl1)
 
 ## Populating Data
 
-GridControl is a cell based control and hence to populate the GridControl, [RowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.IGridVolatileData~RowCount.html#) and [ColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.IGridVolatileData~ColCount.html#) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
+GridControl is a cell based control and hence to populate the GridControl, [RowCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.IGridVolatileData~RowCount.html#) and [ColCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.IGridVolatileData~ColCount.html#) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
 
 1.Populate data by looping through cells in GridControl. 
 
@@ -210,7 +210,7 @@ Next row
 {% endhighlight %}
 {% endtabs %}
 
-2.Populate data by using [PopulateValues](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~PopulateValues.html#) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo_members.html#) and data source of type **object**. 
+2.Populate data by using [PopulateValues](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~PopulateValues.html#) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfo_members.html#) and data source of type **object**. 
 
 {% tabs %}
 {% highlight c# %}
@@ -252,7 +252,7 @@ Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCoun
 {% endhighlight %}	
 {% endtabs %}
 
-3.Populate Data using [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html#) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) section.
+3.Populate Data using [QueryCellInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~QueryCellInfo_EV.html#) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) section.
     
 {% tabs %}
 {% highlight c# %}
@@ -313,7 +313,7 @@ In property grid, there are two tabs mainly.
 
 `Grid Properties` tab consists of all the properties related to the whole grid. The Appearance and style related settings can be changed for the whole grid.
 
-All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html#) property listed under the heading `Appearance` can be used and required color can be chosen.
+All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html#) property listed under the heading `Appearance` can be used and required color can be chosen.
 
 ![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img7.jpeg)
 
@@ -327,7 +327,7 @@ When you need to change the back color for the selected range of cells, then sel
 
 ### Modifying Cell Styles through Code
 
-Values can be entered into the GridControl by using the `GridRangeInfo` class and properties of **GridStyleInfo** class. By using the **GridStyleInfo** class, the appearance of the cell can be customized and by using the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html#) method, the style can be assigned to the desired range of cells.
+Values can be entered into the GridControl by using the `GridRangeInfo` class and properties of **GridStyleInfo** class. By using the **GridStyleInfo** class, the appearance of the cell can be customized and by using the [ChangeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ChangeCells.html#) method, the style can be assigned to the desired range of cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -367,7 +367,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style)
 
 GridControl provides two types of selection namely Range selection and Record selection. Range selection also known as cell based selection is used to select a range of cells, rows and columns in grid. Record selection which is also known as record based selection is used to select a single record or a range of records at a time in a grid.
 
-For selecting single row or multiple range of rows in GridControl, set the [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#) property value as `Single`, `MultiSimple` or `MultiExtended` respectively. By default the value is `None`.
+For selecting single row or multiple range of rows in GridControl, set the [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#) property value as `Single`, `MultiSimple` or `MultiExtended` respectively. By default the value is `None`.
 
 {% tabs %}
 {% highlight c# %}
@@ -378,7 +378,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-For selecting the range of cells in GridControl, set the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) property to the appropriate value from the [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+For selecting the range of cells in GridControl, set the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) property to the appropriate value from the [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
@@ -390,11 +390,11 @@ Me.gridControl1.AllowSelection = Syncfusion.Windows.Forms.Grid.GridSelectionFlag
 {% endhighlight %}
 {% endtabs %}
 
-Selection operation can be handled by using [SelectionChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanging_EV.html#) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanged_EV.html#) events.
+Selection operation can be handled by using [SelectionChanging](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanging_EV.html#) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanged_EV.html#) events.
 
 ## Editing
 
-By default the GridControl is in editable state. [Editing](http://help.syncfusion.com/windowsforms/grid/editing) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
+By default the GridControl is in editable state. [Editing](http://help.syncfusion.com/windowsforms/grid/editing) can be enabled or disabled by using the [ReadOnly](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ReadOnly.html#) property. This property can be applied for whole grid as well as cell by cell basis.
 
 {% tabs %}
 {% highlight c# %}
@@ -418,5 +418,5 @@ style.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-Editing operation can be customized by using [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events. 
+Editing operation can be customized by using [CurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events. 
 

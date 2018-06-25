@@ -12,7 +12,7 @@ The selection is the process of highlighting. This section will explain about th
 
 ## Range Selection
 
-The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowSelection.html#) property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AllowSelection.html#) property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ Me.gridControl1.AllowSelection = GridSelectionFlags.Any
 
 ## Record Selection
 
-The [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ListBoxSelectionMode.html#) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://msdn.microsoft.com/en-us/library/system.windows.forms.selectionmode(v=vs.100).aspx#) enumeration has provide the options to set the type of selection mode. 
+The [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ListBoxSelectionMode.html#) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://msdn.microsoft.com/en-us/library/system.windows.forms.selectionmode(v=vs.100).aspx#) enumeration has provide the options to set the type of selection mode. 
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.MultiSimple
 
 ## Adding Selection
 
-In the GridControl the selections are maintained in the [SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel~SelectedRanges.html#) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
+In the GridControl the selections are maintained in the [SelectedRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel~SelectedRanges.html#) collection. To add the selection for particular range of cells, add the range into the `SelectedRanges` collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ Me.gridControl1.Selections.Add(GridRangeInfo.Cells(2, 2, 5, 4))
 
 ### Adding Multiple Selected Ranges
 
-To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html#) collection. 
+To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html#) collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ The following screen shot shows the grid with multiple selected range,
 
 ## Clearing Selection
 
-To clear all the selections from the grid, use the [Selections.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelSelections~Clear.html#) method.
+To clear all the selections from the grid, use the [Selections.Clear](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelSelections~Clear.html#) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ Me.gridControl1.Selections.Clear()
 
 ### Remove Range from Selection
 
-To clear the particular range of cells from the selection, use the [Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelSelections~Remove.html#) or `RemoveAt` methods.
+To clear the particular range of cells from the selection, use the [Remove](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelSelections~Remove.html#) or `RemoveAt` methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,7 +154,7 @@ Me.gridControl1.Selections.Ranges.Remove(range1)
 
 ### Preventing Selection using event
 
-When the selection is added to the grid, it will be notified by using the [SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanged_EV.html#) event. This event can be used to prevent the selection for the particular range of cells as of follows,
+When the selection is added to the grid, it will be notified by using the [SelectionChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~SelectionChanged_EV.html#) event. This event can be used to prevent the selection for the particular range of cells as of follows,
 
 {% tabs %}
 {% highlight c# %}
@@ -200,7 +200,7 @@ End Sub
 
 ## Selection Colors
 
-The range selection color of the grid can be changed by setting the required color to the [AlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AlphaBlendSelectionColor.html#) property. The default Alpha blend selection color is blue.
+The range selection color of the grid can be changed by setting the required color to the [AlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~AlphaBlendSelectionColor.html#) property. The default Alpha blend selection color is blue.
 
 {% tabs %}
 {% highlight c# %}
@@ -217,7 +217,7 @@ Me.gridControl1.AlphaBlendSelectionColor = Color.Green
 ![](Selection_images/Selection_img5.jpeg)
 
 
-The selection color of the grid can be reset by using the [ResetAlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetAlphaBlendSelectionColor.html#) method. It will reset the default color for selection.
+The selection color of the grid can be reset by using the [ResetAlphaBlendSelectionColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResetAlphaBlendSelectionColor.html#) method. It will reset the default color for selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -233,7 +233,7 @@ gridControl.ResetAlphaBlendSelectionColor()
 
 ### Setting the CurrentCell Back Color Similar to the Back Color of the Remaining Selected Cells
 
-When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CellDrawn_EV.html#) event.
+When the cell is entered into the edit mode, it will not display the selection color. To display the selection color for the editing cell, set the selection color as the back color for the current cell in the [CellDrawn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CellDrawn_EV.html#) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -327,7 +327,7 @@ The selected values are printed in the output screen as of follows,
 
 ## Cell Text Selection
 
-The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html#) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
+The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ActivateCurrentCellBehavior.html#) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
 
 {% tabs %}
 {% highlight c# %}

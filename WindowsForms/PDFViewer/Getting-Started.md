@@ -15,6 +15,8 @@ documentation: ug
 
 Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/nuget-packages) section. 
 
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Windows Forms application to use our components.
+
 ### Adding from the installed location
 
 The PdfViewerControl and dependent assemblies can be found from the below location in your machine. 
@@ -43,7 +45,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
    ![](Getting-Started_images/Getting-Started_img2.png)
    
 
-3) This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/pdf%20viewer/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
+3) This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
 
 {% tabs %}
 {% highlight c# %}

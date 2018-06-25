@@ -9,11 +9,11 @@ documentation: ug
 
 # LoadOnDemand
 
-LoadOnDemand feature is to give a delay in loading a node in a Tree, before the user initiates a node to expand.
+LoadOnDemand feature is to give a delay in loading nodes of the tree before the user initiates a node to expand.
 
-By setting LoadOnDemand property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the BeforeExpand event of the nodes, sub nodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether or not the children are added.
+By setting `LoadOnDemand` property to true, the plus(+) and minus(-) of all the nodes will be visible in the beginning. By handling the `BeforeExpand` event of the nodes, sub nodes can be added to the respective nodes. Now the tree will display or hide the plus or minus based on whether the children are added or not. 
 
-Property Table
+<b>Property Table</b>
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ AddSeparatorAtEnd</td><td>
 Indicates if the TreeNodeAdv.GetPath method adds a separator at the end of the path string returned.</td></tr>
 </table>
 
-Methods Table
+<b>Methods Table</b>
 
 <table>
 <tr>
@@ -45,9 +45,9 @@ Method which is used to derive the path string for a specific node.</td></tr>
 
 ### Retrieving Node Path
 
-In the BeforeExpand event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
+In the `BeforeExpand` event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
 
-The vital thing in this sample is that the TreeViewAdv.AddSeparatorAtEnd property must be set to True to add a "\\" character at the end of the path of the node, when calling the Node.GetPath method.
+The vital thing in this sample is that the `TreeViewAdv.AddSeparatorAtEnd` property must be set to True to add a “\” character at the end of the path of the node, when calling the `Node.GetPath` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,16 +132,3 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-
-![](Concepts-and--Features_images/Concepts-and--Features_img59.jpeg)
-
-A sample demonstrating the LoadOnDemand feature in available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
-
-{% seealso %}
-
-Plus Sign On ExpandMode
-
-{% endseealso %}
-

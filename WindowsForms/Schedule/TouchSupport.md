@@ -8,7 +8,7 @@ documentation: ug
 --- 
 
 # Touch Support
-ScheduleControl provides the swipe scrolling, zooming touch support as like Outlook calendar. The touch support for schedule control can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/schedule/Syncfusion.Schedule.Windows~Syncfusion.Windows.Forms.Schedule.ScheduleControl~EnableTouchMode.html#) property to `true`. This will enable the grid to support the swiping, panning and zooming. The default value of `EnableTouchMode` property is `false`.
+ScheduleControl provides the swipe scrolling, zooming touch support as like Outlook calendar. The touch support for schedule control can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Schedule.Windows~Syncfusion.Windows.Forms.Schedule.ScheduleControl~EnableTouchMode.html#) property to `true`. This will enable the grid to support the swiping, panning and zooming. The default value of `EnableTouchMode` property is `false`.
 {% tabs %}
 {% highlight c# %}
 //Enable the touch mode

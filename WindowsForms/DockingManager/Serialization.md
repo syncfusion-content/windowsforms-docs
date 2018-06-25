@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: State-Persistence | WindowsForms | Syncfusion
 description: state persistence

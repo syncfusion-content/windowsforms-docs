@@ -9,7 +9,7 @@ documentation: ug
 
 # LinearGauge
 
-[LinearGauge](#https://help.syncfusion.com/cr/cref_files/windowsforms/gauge/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
+[LinearGauge](#https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) displays a range of values graphically along the linear scale. It measures the values of the scales and can be presented in the horizontal or vertical sliding or meter.
 
 ## Key features
 

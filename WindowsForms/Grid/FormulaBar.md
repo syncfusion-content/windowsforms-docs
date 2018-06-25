@@ -9,11 +9,11 @@ documentation: ug
 ---
 # Formula Bar
 
-The formula bar is derived from the [TextBox](https://msdn.microsoft.com/en-us/library/system.windows.forms.textbox.aspx#) control which is used to bind to the [CurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl~CurrentCell.html#) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
+The formula bar is derived from the [TextBox](https://msdn.microsoft.com/en-us/library/system.windows.forms.textbox.aspx#) control which is used to bind to the [CurrentCell](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl~CurrentCell.html#) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
 
-To have the formula bar in the form, open the designer and drag and drop the [GridAwareTextBox](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox_members.html#) from the toolbox along with the GridControl.
+To have the formula bar in the form, open the designer and drag and drop the [GridAwareTextBox](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox_members.html#) from the toolbox along with the GridControl.
 
-The `GridAwareTextBox` can be synchronized with GridControl using [WireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~WireGrid.html#) method. 
+The `GridAwareTextBox` can be synchronized with GridControl using [WireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~WireGrid.html#) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ Note: If the cell has formula, `GridAwareTextBox` will display the formula inste
 
 ## Applying Back color 
 
-`GridAwareTextBox` background color can be customized based on the editable state of the current cell. [EnabledBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~EnabledBackColor.html#) property is used to set background color when current cell is editable and [DisabledBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~DisabledBackColor.html#) property is used to set background color when current cell is disabled for editing. 
+`GridAwareTextBox` background color can be customized based on the editable state of the current cell. [EnabledBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~EnabledBackColor.html#) property is used to set background color when current cell is editable and [DisabledBackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~DisabledBackColor.html#) property is used to set background color when current cell is disabled for editing. 
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ Me.gridAwareTextBox1.DisabledBackColor = Color.Orange
 
 ## Auto Suggestion
 
-To enable the auto suggestion of formulas while editing the cell, set the [AutoSuggestFormula](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~AutoSuggestFormula.html#) property to `true` before wiring the formula bar with the grid. 
+To enable the auto suggestion of formulas while editing the cell, set the [AutoSuggestFormula](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~AutoSuggestFormula.html#) property to `true` before wiring the formula bar with the grid. 
 
 {% tabs %}
 {% highlight c# %}
@@ -135,7 +135,7 @@ N> Formula bar supports all the events and methods which are provided by the `Te
 
 ## Unwire Formula Bar
 
-The formula bar can be unwired from the grid by using the [UnwireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~UnwireGrid.html#) method. It will break the connection between the grid and the formula bar.
+The formula bar can be unwired from the grid by using the [UnwireGrid](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridAwareTextBox~UnwireGrid.html#) method. It will break the connection between the grid and the formula bar.
 
 {% tabs %}
 {% highlight c# %}

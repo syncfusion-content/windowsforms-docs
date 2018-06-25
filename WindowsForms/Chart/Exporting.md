@@ -101,7 +101,7 @@ During runtime, the Chart control can be saved as a file using the Chart Toolbar
 
 **Editable Text Support for EPS Images**
 
-The Chart control can export an EPS image with editable text by setting the [EditableText](https://help.syncfusion.com/cr/cref_files/windowsforms/chart/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ToPostScript~EditableText.html) property to true. 
+The Chart control can export an EPS image with editable text by setting the [EditableText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ToPostScript~EditableText.html) property to true. 
 
 {% tabs %}  
 
