@@ -10,7 +10,7 @@ documentation: ug
 
 # Control Dependencies
 
-Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](common/essential-studio/licensing/license-key) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](common/essential-studio/licensing/license-key) for more information.
 
 ## AutoComplete
 
