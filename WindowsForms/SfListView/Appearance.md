@@ -79,7 +79,7 @@ End Sub
 ![](Appearance_images/Appearance_img3.png)
 
 ## Adding image to an item
-The SfListView allows adding image to each item by using the `SfListView.DrawItem` event. It also allows you to get actual value of the item by using the `SfListView.ValueMember` property.
+The SfListView allows adding image to each item by using the `SfListView.DrawItem` event. An image can be set to an item by using the `Image` property.
 
 {% tabs %}
 {% highlight c# %}
