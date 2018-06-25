@@ -17,7 +17,7 @@ SortDescriptor object holds the following three properties:
 
 *	`PropertyName`: Describes the name of the sorted property.
 *	`Direction`: Describes an object of type `ListSortDirection` that defines the sorting direction.
-*	`Comparer`: Describes the comparer to be applied when sorting the items.
+*	`Comparer`: Describes the comparer to be applied when sorting take place.
 
 {% tabs %}
 {% highlight c# %}

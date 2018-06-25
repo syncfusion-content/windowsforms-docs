@@ -139,15 +139,15 @@ End Sub
 ## Themes
 
 The SfListView offers four built-in themes for professional representation as follows:
-*	Office2016Colorful
-*	Office2016White
-*	Office2016DarkGray
-*	Office2016Black
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
 
 Themes can be applied to the SfListView by using the following steps:
 
-1.	`Load theme assembly`
-2.	`Apply theme`
+1. `Load theme assembly`
+2. `Apply theme`
 
 ### Load theme assembly
 The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfListView in any application.
@@ -183,6 +183,7 @@ End Property
 
 ### Apply theme
 Appearance of the SfListView can be changed by using the ThemeName.
+
 #### Office2016Colorful
 This option helps to set the Office2016Colorful Theme.
 
@@ -197,7 +198,7 @@ sfListView1.ThemeName = "Office2016Colorful"
 
 ![](Appearance_images/Appearance_img5.png)
 
-Office2016White
+#### Office2016White
 This option helps to set the Office2016White Theme.
 
 {% tabs %}
@@ -211,7 +212,7 @@ sfListView1.ThemeName = "Office2016White"
 
 ![](Appearance_images/Appearance_img6.png)
  
-Office2016DarkGray
+#### Office2016DarkGray
 This option helps to set the Office2016DarkGray Theme.
 
 {% tabs %}
@@ -225,7 +226,7 @@ sfListView1.ThemeName = "Office2016DarkGray"
 
 ![](Appearance_images/Appearance_img7.png)
 
-Office2016Black
+#### Office2016Black
 This option helps to set the Office2016Black Theme.
 
 {% tabs %}

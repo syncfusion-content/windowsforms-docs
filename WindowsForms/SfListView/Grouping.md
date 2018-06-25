@@ -13,9 +13,9 @@ A group represents collection of items belongs to a category. When grouping is a
 ## Programmatic grouping
 The SfListView allows programmatic grouping by defining the `GroupDescriptor` object and adding it into the `View.GroupDescriptors` collection. The GroupDescriptor object holds the following properties:
 
-*	`PropertyName`: Describes the name of the property to be grouped.
-*	`KeySelector`: Describes selector to return the group key.
-*	`Comparer`: Describes comparer to be applied in when sorting take place.
+* `PropertyName`: Describes the name of the property to be grouped.
+* `KeySelector`: Describes selector to return the group key.
+* `Comparer`: Describes comparer to be applied in when sorting take place.
 
 {% tabs %}
 {% highlight c# %}
@@ -159,7 +159,7 @@ End Function
 
 ![](Grouping_images/Grouping_img4.png)
 
-##Grouping by ignoring case sensitivity
+## Grouping by ignoring case sensitivity
 Group the items by ignoring case sensitivity using the `KeySelector` property in the `GroupDescriptor`. While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
 
 {% tabs %}
@@ -225,7 +225,7 @@ The `GroupExpandCollapseChangingEventArgs` of the GroupExpanding event provides 
 
 The GroupExpanding event used for the following use case:
 
-*	Keeps any one specific group in the expanded state by comparing and collapsing all other groups.
+* Keeps any one specific group in the expanded state by comparing and collapsing all other groups.
 
 You can cancel the group expansion by setting the GroupExpandCollapseChangingEventArgs.Cancel property to true.
 
