@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Getting started
 
-This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) in any application:
+The following list of assemblies should be added as reference to use the [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) in any application:
 
 <table>
 <tr>
@@ -36,7 +36,7 @@ The Syncfusion.Shared.Base contains the class that handles all UI operations and
 
 ## Installing NuGet Packages
 
-To use [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in Windows Forms application via nuget, the following packages should be installed.
+To use [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in Windows Forms application via nuget, the following packages should be installed.
  
 <table>
 <tr>
@@ -114,11 +114,11 @@ You can create the Windows Forms application with ProgressBarAdv control as foll
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) with basic functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) with basic functionalities.
 
 ## Adding control via designer
 
-The [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
@@ -186,7 +186,7 @@ Me.Controls.Add(progressBarAdv1)
 
 ## Configure text format
 
-Text format of the ProgressBarAdv can be customized using [TextStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextStyle.html) property.
+Text format of the ProgressBarAdv can be customized using [TextStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextStyle.html) property.
 
 **Value** - It represents the current value out of maximum value format.
 
@@ -255,7 +255,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom
 
 ## Configure text alignment
 
-Alignment of the foreground text can be modified using [TextAlignment](#https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextAlignment.html) property.
+Alignment of the foreground text can be modified using [TextAlignment](#https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv~TextAlignment.html) property.
 
 **Center** - It represents text aligned to the center.
 

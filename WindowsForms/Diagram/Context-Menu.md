@@ -31,7 +31,7 @@ Data Type </th><th>
 Reference links </th></tr>
 <tr>
 <td>
-{{'[DefaultContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html#"")'| markdownify }}</td><td>
+{{'[DefaultContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html#"")'| markdownify }}</td><td>
 Used to enable default context menu. </td><td>
 NA </td><td>
 Boolean  </td><td>
@@ -41,7 +41,7 @@ NA </td></tr>
 
 Enabling Default Context Menu
 
-You can enable the default context menu using the [_DefaultContextMenuEnabled_](https://help.syncfusion.com/cr/cref_files/windowsforms/diagram/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html#) property.
+You can enable the default context menu using the [_DefaultContextMenuEnabled_](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DiagramProperties~DefaultContextMenuEnabled.html#) property.
 
 The following code illustrates how to enable the default context menu:
 

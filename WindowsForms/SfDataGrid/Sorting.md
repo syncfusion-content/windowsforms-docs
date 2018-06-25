@@ -10,7 +10,7 @@ documentation: ug
 # Sorting
 SfDataGrid allows to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria.
 The data can be sorted by clicking on the column headers that needs to be sorted or it can be performed programmatically. Once sorting is applied, the grid will display a sort icon in the respected column headers showing the sort direction.
-The sorting can be performed by touching or clicking the column header. This can be enabled by setting [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowSorting.html) property to `true`.
+The sorting can be performed by touching or clicking the column header. This can be enabled by setting [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowSorting.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -20,7 +20,7 @@ this.sfDataGrid1.AllowSorting = true;
 Me.sfDataGrid1.AllowSorting = True
 {% endhighlight %}
 {% endtabs %}
-Sorting can be enabled or disabled for the particular column by setting the [GridColumnBase.AllowSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowSorting.html) property.
+Sorting can be enabled or disabled for the particular column by setting the [GridColumnBase.AllowSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowSorting.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderID"].AllowSorting = true;
@@ -39,7 +39,7 @@ End users can sort the column by clicking column header cell. Once the columns g
 
 ### Adding Sort Columns
 
-The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) collection.
+The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnDescriptions.html) collection.
 {% tabs %}
 {% highlight c# %}
 SortColumnDescription sortColumnDescription = new SortColumnDescription();
@@ -103,7 +103,7 @@ Me.sfDataGrid1.AllowSorting = False
 {% endtabs %}
 
 ## Sorting Column in Double Click
-By default, column gets sorted when column header clicked. This behavior can be changed to sort the column on double click by setting the [SfDataGrid.SortClickAction](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortClickAction.html) property to `DoubleClick`.
+By default, column gets sorted when column header clicked. This behavior can be changed to sort the column on double click by setting the [SfDataGrid.SortClickAction](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortClickAction.html) property to `DoubleClick`.
 
 {% tabs %}
 {% highlight c# %}
@@ -115,7 +115,7 @@ Me.sfDataGrid1.SortClickAction = SortClickAction.DoubleClick
 {% endtabs %}
 
 ## Sorting Order
-By default, the data is sorted in ascending or descending order when clicking column header. The data can be rearranged to its initial order from descending on clicking the column header by setting the [SfDataGrid.AllowTriStateSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowTriStateSorting.html) property to `true`.
+By default, the data is sorted in ascending or descending order when clicking column header. The data can be rearranged to its initial order from descending on clicking the column header by setting the [SfDataGrid.AllowTriStateSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowTriStateSorting.html) property to `true`.
 Following are the sequence of sorting orders when clicking column header,
 
 * Sorts the data in ascending order
@@ -128,7 +128,7 @@ In the below screen shot, the OrderID column sorted. Then the ProductName column
 ![](Sorting_images/Sorting_Image6.png)
 
 ### Display Sort Order
-It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowSortNumbers.html) property to `true`.
+It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowSortNumbers.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ Me.sfDataGrid1.ShowSortNumbers = True
 ![](Sorting_images/Sorting_Image7.png)
 
 ## Custom Sort Icon
-The default sort icon can be changed by using the [SortIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~SortIcon.html) property.
+The default sort icon can be changed by using the [SortIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~SortIcon.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,8 +154,8 @@ Me.sfDataGrid1.Columns(0).HeaderStyle.SortIcon = Global.GettingStarted.Propertie
 ![](Sorting_images/Sorting_Image8.png)
 
 ## Custom Sorting
-SfDataGrid allows to sort the columns based on the custom logic. The custom sorting can be applied by adding the `SortComparer` instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortComparers.html).
-You can implement [ISortDirection](https://help.syncfusion.com/cr/cref_files/wpf/data/Syncfusion.Data.WPF~Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending.
+SfDataGrid allows to sort the columns based on the custom logic. The custom sorting can be applied by adding the `SortComparer` instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortComparers.html).
+You can implement [ISortDirection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISortDirection.html) interface in comparer to get the sort direction. So you can apply different custom logics for ascending and descending.
 Follow the below steps to add custom comparer to sort using custom logic,
 
 ### Defining Custom Comparer
@@ -285,7 +285,7 @@ While performing the Sorting, the ProductName column sorts the data using custom
 ![](Sorting_images/Sorting_Image9.png)
 
 ### Canceling Sorting for a Specific Column
-The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event through `Cancel` property.
+The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event through `Cancel` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -313,7 +313,7 @@ End Sub
 ## Customization using Events
 
 ### Canceling Scrolling after Sorting
-The scrolling after the sorting to bring SelectedItem in view can be canceled by using the `SortColumnsChanging` event through [CancelScroll](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.SortColumnsChangingEventArgs~CancelScroll.html) property.
+The scrolling after the sorting to bring SelectedItem in view can be canceled by using the `SortColumnsChanging` event through [CancelScroll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.SortColumnsChangingEventArgs~CancelScroll.html) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SortColumnsChanging += SfDataGrid1_SortColumnsChanging;
@@ -334,8 +334,8 @@ End Sub
 
 ### Sorting the Underlying Collection
 `SfDataGrid` sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection.
-You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.DataGridTopLevelGroup~DisplayElements.html) when grouping in place.
-If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/sfdatagrid/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanged_EV.html) event.
+You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.DataGridTopLevelGroup~DisplayElements.html) when grouping in place.
+If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanged_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}

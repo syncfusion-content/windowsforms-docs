@@ -31,7 +31,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-**Step 2:** Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the ILocalizationProvider interface, before the InitializeComponent call in the constructor of an application.
+**Step 2:** Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the ILocalizationProvider interface, before the InitializeComponent call in the constructor of an application.
 
 {% tabs %}
 
@@ -49,7 +49,7 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endtabs %}  
 
-**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBoxAdv.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBoxAdv.
 
 For example:
 Here, MessageBoxAdv is localized in German Language.

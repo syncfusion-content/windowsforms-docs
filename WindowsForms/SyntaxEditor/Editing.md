@@ -62,19 +62,19 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Copy.html)' | markdownify }}</td><td>
+{{ '[Copy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Copy.html)' | markdownify }}</td><td>
 Copies the selected text content into the clipboard.</td></tr>
 <tr>
 <td>
-{{ '[Cut](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Cut.html)' | markdownify }}</td><td>
+{{ '[Cut](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Cut.html)' | markdownify }}</td><td>
 Cuts the selected text content from the EditControl and maintains it in clipboard.</td></tr>
 <tr>
 <td>
-{{ '[Paste](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Paste.html)' | markdownify }}</td><td>
+{{ '[Paste](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Paste.html)' | markdownify }}</td><td>
 Retrieves the copied content from clipboard and pastes it into the EditControl.</td></tr>
 <tr>
 <td>
-{{ '[ClearClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ClearClipboard.html)' | markdownify }}</td><td>
+{{ '[ClearClipboard](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ClearClipboard.html)' | markdownify }}</td><td>
 Clears all content in the clipboard associated with EditControl. This is generally used immediately after the application loads to clear any junk from the previous clipboard operation.</td></tr>
 </table>
 
@@ -85,15 +85,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CanCopy](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCopy.html)' | markdownify }}</td><td>
+{{ '[CanCopy](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCopy.html)' | markdownify }}</td><td>
 Indicates whether it is possible to perform copy operation or not in the EditControl.</td></tr>
 <tr>
 <td>
-{{ '[CanCut](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCut.html)' | markdownify }}</td><td>
+{{ '[CanCut](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCut.html)' | markdownify }}</td><td>
 Indicates whether it is possible to perform cut operation or not in the EditControl.</td></tr>
 <tr>
 <td>
-{{ '[CanPaste](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCut.html)' | markdownify }}</td><td>
+{{ '[CanPaste](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanCut.html)' | markdownify }}</td><td>
 Indicates whether it is possible to perform paste operation or not in the EditControl.</td></tr>
 </table>
 
@@ -184,7 +184,7 @@ Follow the steps to enable FIPS in your machine:
 
 #### Purpose of EnableMD5 in clipboard operations
 
-When FIPS is enabled, clipboard operations of the EditControl are affected due to the usage MD5 algorithm. To avoid this before enabling FIPS, you must disable the EditControl MD5 algorithm by setting the [EnableMD5](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~EnableMD5.html) property to `false`.
+When FIPS is enabled, clipboard operations of the EditControl are affected due to the usage MD5 algorithm. To avoid this before enabling FIPS, you must disable the EditControl MD5 algorithm by setting the [EnableMD5](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~EnableMD5.html) property to `false`.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ Me.editControl1.EnableMD5 = True
 
 ## Undo and redo
 
-Provides keyboard and context menu support for undo and redo operations that erases last change in a document and reinsert it. The [CanUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanUndo.html) and [CanRedo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanRedo.html) properties gets a flag that determines whether the undo and redo operations can be performed in the EditControl. 
+Provides keyboard and context menu support for undo and redo operations that erases last change in a document and reinsert it. The [CanUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanUndo.html) and [CanRedo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CanRedo.html) properties gets a flag that determines whether the undo and redo operations can be performed in the EditControl. 
 
 <table>
 <tr>
@@ -266,7 +266,7 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[GroupUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GroupUndo.html)' | markdownify }}</td><td>
+{{ '[GroupUndo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GroupUndo.html)' | markdownify }}</td><td>
 Specifies whether grouping should be enabled for undo or redo action or not.</td></tr>
 </table>
 
@@ -277,19 +277,19 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[UndoGroupOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupOpen.html)' | markdownify }}</td><td>
+{{ '[UndoGroupOpen](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupOpen.html)' | markdownify }}</td><td>
 Begins a new action group.</td></tr>
 <tr>
 <td>
-{{ '[Undo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Undo.html)' | markdownify }}</td><td>
+{{ '[Undo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Undo.html)' | markdownify }}</td><td>
 Performs undo operation.</td></tr>
 <tr>
 <td>
-{{ '[Redo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Redo.html)' | markdownify }}</td><td>
+{{ '[Redo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Redo.html)' | markdownify }}</td><td>
 Performs redo operation.</td></tr>
 <tr>
 <td>
-{{ '[UndoGroupClose](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupClose.html)' | markdownify }}</td><td>
+{{ '[UndoGroupClose](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupClose.html)' | markdownify }}</td><td>
 Helps to close the action group.</td></tr>
 </table>
 
@@ -348,7 +348,7 @@ Me.editControl1.UndoGroupClose()
 
 ### Reset undo redo buffer
 
-[ResetUndoInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ResetUndoInfo.html) function in the EditControl helps to reset undo and redo operations. The following table explains this function.
+[ResetUndoInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ResetUndoInfo.html) function in the EditControl helps to reset undo and redo operations. The following table explains this function.
 
 <table>
 <tr>
@@ -386,7 +386,7 @@ Me.editControl1.ResetUndoInfo()
 
 ### Discard undo redo buffer
 
-You can discard an already opened action group by invoking [UndoGroupCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupCancel.html) function in the EditControl.
+You can discard an already opened action group by invoking [UndoGroupCancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UndoGroupCancel.html) function in the EditControl.
 
 {% tabs %}
    
@@ -445,7 +445,7 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 ### Programmatic selection
 
-[SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectAll.html), [StartSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StartSelection.html), and [StopSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StopSelection.html) functions helps to programmatically select text in the EditControl.
+[SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SelectAll.html), [StartSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StartSelection.html), and [StopSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~StopSelection.html) functions helps to programmatically select text in the EditControl.
 
 {% tabs %}
    
@@ -528,7 +528,7 @@ The EditControl offers support for text manipulation operations like appending, 
 
 ### Total number of lines
 
-The [PhysicalLineCount](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PhysicalLineCount.html) property helps to find the total number of lines loaded in the EditControl.
+The [PhysicalLineCount](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~PhysicalLineCount.html) property helps to find the total number of lines loaded in the EditControl.
 
 {% tabs %}
 
@@ -549,7 +549,7 @@ Console.WriteLine(Me.editControl1.PhysicalLineCount)
 
 ### Visible number of lines 
 
-The [VisibleLineCount](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~VisibleLineCount.html) property helps to find visible number of lines in the EditControl. It excludes lines in the collapsed block region. 
+The [VisibleLineCount](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~VisibleLineCount.html) property helps to find visible number of lines in the EditControl. It excludes lines in the collapsed block region. 
 
 {% tabs %}
 
@@ -579,7 +579,7 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AppendText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AppendText.html)' | markdownify }}</td><td>
+{{ '[AppendText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AppendText.html)' | markdownify }}</td><td>
 Appends specified text to the end of the existing contents of the EditControl.</td></tr>
 </table>
 
@@ -606,7 +606,7 @@ Me.editControl1.AppendText(" text to be appended ")
 
 ### Insert text
 
-Insert mode can be enabled in the EditControl by setting the [InsertMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertMode.html) property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the [InsertText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertText.html) function. The mode of the <kbd>INSERT</kbd> key can be toggled by using the [ToggleInsertMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToggleInsertMode.html) function in the EditControl.
+Insert mode can be enabled in the EditControl by setting the [InsertMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertMode.html) property. Its default value is `true`. Text can be inserted anywhere inside the EditControl by using the [InsertText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertText.html) function. The mode of the <kbd>INSERT</kbd> key can be toggled by using the [ToggleInsertMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToggleInsertMode.html) function in the EditControl.
 
 {% tabs %}
 
@@ -639,7 +639,7 @@ Me.editControl1.ToggleInsertMode()
 
 **Insert multiple lines**
 
-Collection of text lines can be inserted by using the [Lines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Lines.html) property. The property is explained as follows.
+Collection of text lines can be inserted by using the [Lines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Lines.html) property. The property is explained as follows.
 
 <table>
 <tr>
@@ -684,23 +684,23 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AllowDrop](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowDrop.html)' | markdownify }}</td><td>
+{{ '[AllowDrop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowDrop.html)' | markdownify }}</td><td>
 Specifies whether drag and drop operations are allowed for the control or not.</td></tr>
 <tr>
 <td>
-{{ '[AllowInsertBeforeReadOnlyNewLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowInsertBeforeReadonlyNewLine.html)' | markdownify }}</td><td>
+{{ '[AllowInsertBeforeReadOnlyNewLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowInsertBeforeReadonlyNewLine.html)' | markdownify }}</td><td>
 Specifies whether inserting text should be allowed at the beginning of the readonly region at the start of new line or not.</td></tr>
 <tr>
 <td>
-{{ '[InsertDroppedFileIntoText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertDroppedFileIntoText.html)' | markdownify }}</td><td>
+{{ '[InsertDroppedFileIntoText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~InsertDroppedFileIntoText.html)' | markdownify }}</td><td>
 Specifies whether the outer file dragged and dropped onto the EditControl should be inserted into the current content. When this property is set to `false`, the current file is closed, and the dropped outer file is opened.</td></tr>
 <tr>
 <td>
-{{ '[RespectTabStopsOnInsertingText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RespectTabStopsOnInsertingText.html)' | markdownify }}</td><td>
+{{ '[RespectTabStopsOnInsertingText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RespectTabStopsOnInsertingText.html)' | markdownify }}</td><td>
 Specifies whether the tab stops should be valued on inserting blocks of the text or not.</td></tr>
 <tr>
 <td>
-{{ '[ShowFileDropNotification](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowFileDropNotification.html)' | markdownify }}</td><td>
+{{ '[ShowFileDropNotification](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowFileDropNotification.html)' | markdownify }}</td><td>
 Specifies whether the notification message is to be displayed when the outer file is dragged and dropped onto the EditControl or not.</td></tr>
 </table>
 
@@ -760,28 +760,28 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[DeleteChar](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteChar.html)' | markdownify }}</td><td>
+{{ '[DeleteChar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteChar.html)' | markdownify }}</td><td>
 Deletes a character to the right of the current cursor position.</td></tr>
 <tr>
 <td>
-{{ '[DeleteCharLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteCharLeft.html)' | markdownify }}
+{{ '[DeleteCharLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteCharLeft.html)' | markdownify }}
 </td><td>
 Deletes a character to the left of the current cursor position.</td></tr>
 <tr>
 <td>
-{{ '[DeleteWord](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteWord.html)' | markdownify }}</td><td>
+{{ '[DeleteWord](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteWord.html)' | markdownify }}</td><td>
 Deletes a word to the right of the current cursor position.</td></tr>
 <tr>
 <td>
-{{ '[DeleteWordLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteWordLeft.html)' | markdownify }}</td><td>
+{{ '[DeleteWordLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteWordLeft.html)' | markdownify }}</td><td>
 Deletes a word to the left of the current cursor position.</td></tr>
 <tr>
 <td>
-{{ '[DeleteAll](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteAll.html)' | markdownify }}</td><td>
+{{ '[DeleteAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteAll.html)' | markdownify }}</td><td>
 Deletes all text in the document.</td></tr>
 <tr>
 <td>
-{{ '[DeleteText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteText.html)' | markdownify }}</td><td>
+{{ '[DeleteText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DeleteText.html)' | markdownify }}</td><td>
 Deletes a specified text.</td></tr>
 </table>
 
@@ -853,7 +853,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 Indentation support helps to format the source code to improve readability. By pressing <kbd>TAB</kbd> or <kbd>SPACE</kbd> key, the appropriate number of tabs or spaces will be added to the beginning of each line in the selected block. Similarly, when the <kbd>SHIFT+TAB</kbd> keys combination is pressed, the added tabs or spaces gets removed.
 
-You can also set the tab size to the desired number of spaces by using the [TabSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabSize.html) property in the EditControl. By default, the TabSize property value is set to 2.
+You can also set the tab size to the desired number of spaces by using the [TabSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabSize.html) property in the EditControl. By default, the TabSize property value is set to 2.
 
 {% tabs %}
 
@@ -885,19 +885,19 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[IndentText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentText.html)' | markdownify }}</td><td>
+{{ '[IndentText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentText.html)' | markdownify }}</td><td>
 Indents the text in a specified range.</td></tr>
 <tr>
 <td>
-{{ '[IndentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl_members.html)' | markdownify }}</td><td>
+{{ '[IndentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl_members.html)' | markdownify }}</td><td>
 Indents the selected text.</td></tr>
 <tr>
 <td>
-{{ '[OutdentText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutdentText.html)' | markdownify }}</td><td>
+{{ '[OutdentText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutdentText.html)' | markdownify }}</td><td>
 Outdent the text in a specified range.</td></tr>
 <tr>
 <td>
-{{ '[OutdentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutdentSelection.html)' | markdownify }}</td><td>
+{{ '[OutdentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~OutdentSelection.html)' | markdownify }}</td><td>
 Outdent the selected text.</td></tr>
 </table>
 
@@ -949,7 +949,7 @@ Me.editControl1.OutdentSelection()
 
 ### Default indentation
 
-Indentation guidelines are vertical lines to connect the matching brackets. This feature can be enabled or disabled by setting the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentationGuidelines.html) property. Its default value is `true`. To hide the indentation guidelines in the EditControl, turned off to `false`. The indent guideline for the current region can also be set by using the [ShowIndentGuideline](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentGuideline.html) function.
+Indentation guidelines are vertical lines to connect the matching brackets. This feature can be enabled or disabled by setting the [ShowIndentationGuidelines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentationGuidelines.html) property. Its default value is `true`. To hide the indentation guidelines in the EditControl, turned off to `false`. The indent guideline for the current region can also be set by using the [ShowIndentGuideline](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentGuideline.html) function.
 
 {% tabs %}
 
@@ -990,7 +990,7 @@ Me.editControl1.ShowIndentGuideline()
 
 **Positioning**
 
-Provides support to position the caret to the beginning or end of the indentation block by using the [JumpToIndentBlockStart](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockStart.html) and [JumpToIndentBlockEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockEnd.html) functions respectively.
+Provides support to position the caret to the beginning or end of the indentation block by using the [JumpToIndentBlockStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockStart.html) and [JumpToIndentBlockEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~JumpToIndentBlockEnd.html) functions respectively.
 
 {% tabs %}
 
@@ -1024,11 +1024,11 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AutoIndentMode](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AutoIndentMode.html)' | markdownify }}</td><td>
+{{ '[AutoIndentMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AutoIndentMode.html)' | markdownify }}</td><td>
 Specifies the mode of auto indentation with None, Block, and Smart options.</td></tr>
 <tr>
 <td>
-{{ '[AutoIndentGuideline](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AutoIndentGuideline.html)' | markdownify }}</td><td>
+{{ '[AutoIndentGuideline](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AutoIndentGuideline.html)' | markdownify }}</td><td>
 Specifies a value that specifies whether the indent guideline should be shown automatically after the cursor repositioning or not.</td></tr>
 </table>
 
@@ -1067,7 +1067,7 @@ When the AutoIndentMode is set to Block, the next line begins at the same column
 
 **Lexem support for AutoIndent block mode**
 
-In the EditControl, the [EnableSmartInBlockIndent](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~EnableSmartInBlockIndent.html) property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
+In the EditControl, the [EnableSmartInBlockIndent](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~EnableSmartInBlockIndent.html) property ensures the AutoIndent Block mode with respect to the lexem’s config.indent. With this property, the Block mode will work like Smart mode for conditional statements.
 
 When this property is enabled, the lines will be aligned to the position of the previous indented line. The lines will begin at the original start position if disabled. The property is explained in the following table.
 
@@ -1122,27 +1122,27 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[IndentLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentLineColor.html)' | markdownify }}</td><td>
+{{ '[IndentLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentLineColor.html)' | markdownify }}</td><td>
 Specifies color of the indent line.</td></tr>
 <tr>
 <td>
-{{ '[IndentBlockHighlightingColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentBlockHighlightingColor.html)' | markdownify }}</td><td>
+{{ '[IndentBlockHighlightingColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentBlockHighlightingColor.html)' | markdownify }}</td><td>
 Specifies color of the indent start and end blocks.</td></tr>
 <tr>
 <td>
-{{ '[IndentationBlockBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBackgroundBrush.html)' | markdownify }}</td><td>
+{{ '[IndentationBlockBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBackgroundBrush.html)' | markdownify }}</td><td>
 Specifies brush for the indentation block background.</td></tr>
 <tr>
 <td>
-{{ '[IndentationBlockBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBorderColor.html)' | markdownify }}</td><td>
+{{ '[IndentationBlockBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBorderColor.html)' | markdownify }}</td><td>
 Specifies color of indentation block border line.</td></tr>
 <tr>
 <td>
-{{ '[IndentationBlockBorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBorderStyle.html)' | markdownify }}</td><td>
+{{ '[IndentationBlockBorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~IndentationBlockBorderStyle.html)' | markdownify }}</td><td>
 Specifies style of the indentation block border line.</td></tr>
 <tr>
 <td>
-{{ '[ShowIndentationBlockBorders](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentationBlockBorders.html)' | markdownify }}</td><td>
+{{ '[ShowIndentationBlockBorders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowIndentationBlockBorders.html)' | markdownify }}</td><td>
 Specifies whether the indentation block borders should be drawn or not.</td></tr>
 </table>
 
@@ -1365,11 +1365,11 @@ Show context choice</td><td>
 CTRL+SPACEBAR</td></tr>
 </table>
 
-The parent form of the EditControl can be closed while pressing Esc key when setting the [AcceptsEscape](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AcceptsEscape.html) property to `false`. Its default is `true`. This operation is performed only when the parent form contains `Cancel` button.
+The parent form of the EditControl can be closed while pressing Esc key when setting the [AcceptsEscape](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AcceptsEscape.html) property to `false`. Its default is `true`. This operation is performed only when the parent form contains `Cancel` button.
 
 ### Performing user-defined action for default command
 
-By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) and [ProcessCommand](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Shared.Utils.KeyBinding.IKeyCommand~ProcessCommand_EV.html) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the EditControl.
+By using the [RegisteringDefaultKeyBindings](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringDefaultKeyBindings_EV.html) and [ProcessCommand](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Shared.Utils.KeyBinding.IKeyCommand~ProcessCommand_EV.html) events, you can perform user-defined action for the default command. The following table contains the default command and respective string to use while adding it to commands in the EditControl.
 
 <table>
 <tr>
@@ -1585,7 +1585,7 @@ End Sub
 
 ### Custom command binding
 
-By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event, you can bind the desired custom keystroke combinations to the desired command.
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event, you can bind the desired custom keystroke combinations to the desired command.
 
 This following code example registers the "File.Open" command and binds a <kbd>Ctrl+Q</kbd> keystroke combination to it.
 
@@ -1625,7 +1625,7 @@ End Sub
 
 ## Accept tab 
 
-Provides support to insert the `TAB` character in the EditControl instead of moving the focus to the next control in the tab order while pressing <kbd>TAB</kbd> key. This functionalities can be enabled only when the [UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html) property is `true`.
+Provides support to insert the `TAB` character in the EditControl instead of moving the focus to the next control in the tab order while pressing <kbd>TAB</kbd> key. This functionalities can be enabled only when the [UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html) property is `true`.
 
 <table>
 <tr>
@@ -1634,15 +1634,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html)' | markdownify }}</td><td>
+{{ '[UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html)' | markdownify }}</td><td>
 Specifies whether the tab symbol is allowed or spaces should be used instead. Setting this property to `true` allows you to insert tabs whereas, setting to `false` allows you to insert spaces.</td></tr>
 <tr>
 <td>
-{{ '[UseTabStops](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabStops.html)' | markdownify }}</td><td>
+{{ '[UseTabStops](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabStops.html)' | markdownify }}</td><td>
 Specifies a value that indicates whether tab stops should be used.</td></tr>
 <tr>
 <td>
-{{ '[TabStopsArray](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabStopsArray.html)' | markdownify }}</td><td>
+{{ '[TabStopsArray](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabStopsArray.html)' | markdownify }}</td><td>
 Specifies an array of tab stops.</td></tr>
 </table>
 
@@ -1682,11 +1682,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AddTabsToSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AddTabsToSelection.html)' | markdownify }}</td><td>
+{{ '[AddTabsToSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AddTabsToSelection.html)' | markdownify }}</td><td>
 Adds leading tab symbol to the selected lines, or just inserts the tab symbol.</td></tr>
 <tr>
 <td>
-{{ '[RemoveTabsFromSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveTabsFromSelection.html)' | markdownify }}</td><td>
+{{ '[RemoveTabsFromSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RemoveTabsFromSelection.html)' | markdownify }}</td><td>
 Removes leading tab symbol (or its spaces equivalent) from the selected lines.</td></tr>
 </table>
 
@@ -1721,7 +1721,7 @@ Me.editControl1.RemoveTabsFromSelection()
 
 ### Keep tab character
 
-The [TransferFocusOnTab](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TransferFocusOnTab.html) property allows you to specify whether the EditControl should process TAB key as a text input or transfer focus to the next control (by the order of TabIndex property value) on the form or the user control that hosts the EditControl.
+The [TransferFocusOnTab](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TransferFocusOnTab.html) property allows you to specify whether the EditControl should process TAB key as a text input or transfer focus to the next control (by the order of TabIndex property value) on the form or the user control that hosts the EditControl.
 
 {% tabs %}
 
@@ -1754,7 +1754,7 @@ this.editControl1.TransferFocusOnTab = True
 
 ### Change tab character size
 
-The [TabSize](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabSize.html) property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when the [UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html) property in the EditControl is `true`.
+The [TabSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~TabSize.html) property helps to insert the number of spaces when pressing the TAB key. This functionality is enabled only when the [UseTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UseTabs.html) property in the EditControl is `true`.
 
 {% tabs %}
 
@@ -1783,7 +1783,7 @@ Provides a built-in context menu options to perform editing operations like undo
 
 ### Default context menu options 
 
-Context menu is enabled by using the [editControl1.ContextMenuManager.Enabled](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.ContextMenuManager~Enabled.html) property. The ContextMenu can be enabled or disabled by using the [ContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextMenuEnabled.html) property in EditControl. Its default value is `true`. 
+Context menu is enabled by using the [editControl1.ContextMenuManager.Enabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.ContextMenuManager~Enabled.html) property. The ContextMenu can be enabled or disabled by using the [ContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextMenuEnabled.html) property in EditControl. Its default value is `true`. 
 
 ![](Editing-Features_images/Editing-Features_img10.png)
 
@@ -1820,7 +1820,7 @@ Me.editControl1.ContextMenuManager.ContextMenuProvider = New Syncfusion.Windows.
 
 ### Remove default context menu
 
-By using the [MenuFill](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MenuFill_EV.html) event in EditControl, you can remove the default context menu items. 
+By using the [MenuFill](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MenuFill_EV.html) event in EditControl, you can remove the default context menu items. 
 
 {% tabs %}
 
@@ -1902,7 +1902,7 @@ Context menu item can be disabled by using the `SetContextMenuItemEnabled` funct
 
 ### Change shortcut key for context menu options
 
-By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event, you can change the shortcut key for context menu options.
+By using the [RegisteringKeyCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~RegisteringKeyCommands_EV.html) event, you can change the shortcut key for context menu options.
 
 This following code example registers the "Clipboard.Cut" command and binds a <kbd>Ctrl+L</kbd> keystroke combination to it.
 
@@ -1944,7 +1944,7 @@ N> Refer to the respective command string in the [Commands](https://help.syncfus
 
 ### Add custom context menu item
 
-EditControl also provides an extensive support to add the custom context menu items. You can handle the [MenuFill](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MenuFill_EV.html) event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
+EditControl also provides an extensive support to add the custom context menu items. You can handle the [MenuFill](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MenuFill_EV.html) event to add Menu Items to the context menu. This is illustrated in the below code snippet. 
 
 {% tabs %}
 
@@ -2052,7 +2052,7 @@ End Sub
 
 ## Line modification marker
 
-The EditControl tracks the changed lines by displaying markers at the beginning of modified or inserted lines after the last file save operation. Changed lines marking feature can be enabled by setting the [MarkChangedLines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkChangedLines.html) property to `true`. To enable this functionality in the EditControl, the [ShowSelectionMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowSelectionMargin.html) property should also be enabled.
+The EditControl tracks the changed lines by displaying markers at the beginning of modified or inserted lines after the last file save operation. Changed lines marking feature can be enabled by setting the [MarkChangedLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~MarkChangedLines.html) property to `true`. To enable this functionality in the EditControl, the [ShowSelectionMargin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowSelectionMargin.html) property should also be enabled.
 
 {% tabs %}
 
@@ -2079,7 +2079,7 @@ Me.editControl1.ShowSelectionMargin = true
 
 ### Modified line marker color
 
-The [ChangedLinesMarkingLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ChangedLinesMarkingLineColor.html) property helps to customize the color for changed lines in the EditControl.
+The [ChangedLinesMarkingLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ChangedLinesMarkingLineColor.html) property helps to customize the color for changed lines in the EditControl.
 
 {% tabs %}
 
@@ -2102,7 +2102,7 @@ Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 ### Saved line marker color
 
-The [SavedLinesMarkingLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SavedLinesMarkingLineColor.html) property helps to customize the color for saved lines in the EditControl.
+The [SavedLinesMarkingLineColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SavedLinesMarkingLineColor.html) property helps to customize the color for saved lines in the EditControl.
 
 {% tabs %}
 
@@ -2134,15 +2134,15 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[CommentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentLine.html)' | markdownify }}</td><td>
+{{ '[CommentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentLine.html)' | markdownify }}</td><td>
 Comments single line.</td></tr>
 <tr>
 <td>
-{{ '[CommentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentSelection.html)' | markdownify }}</td><td>
+{{ '[CommentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentSelection.html)' | markdownify }}</td><td>
 Comments selected text.</td></tr>
 <tr>
 <td>
-{{ '[CommentText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentText.html)' | markdownify }}</td><td>
+{{ '[CommentText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~CommentText.html)' | markdownify }}</td><td>
 Comments text in a specified range.</td></tr>
 </table>
 
@@ -2180,15 +2180,15 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[UnCommentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UnCommentLine.html)' | markdownify }}</td><td>
+{{ '[UnCommentLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UnCommentLine.html)' | markdownify }}</td><td>
 UnComments single line.</td></tr>
 <tr>
 <td>
-{{ '[UnCommentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UncommentSelection.html)' | markdownify }}</td><td>
+{{ '[UnCommentSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UncommentSelection.html)' | markdownify }}</td><td>
 UnComments selected text.</td></tr>
 <tr>
 <td>
-{{ '[UnCommentText](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UncommentText.html)' | markdownify }}</td><td>
+{{ '[UnCommentText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~UncommentText.html)' | markdownify }}</td><td>
 UnComments text in a specified range.</td></tr>
 </table>
 
@@ -2219,9 +2219,9 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 ## New line styles
 
-The EditControl allows you to specify a new line style, or get the currently used new line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetNewLineStyle.html) function sets the current new line style in the EditControl. The SetNewLineStyle function accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix, and Control. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetNewLineStyle.html) function returns a NewLineStyle enumerator value which indicates the currently used new line style in the EditControl.
+The EditControl allows you to specify a new line style, or get the currently used new line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~SetNewLineStyle.html) function sets the current new line style in the EditControl. The SetNewLineStyle function accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix, and Control. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GetNewLineStyle.html) function returns a NewLineStyle enumerator value which indicates the currently used new line style in the EditControl.
 
-The default new line style value is set to 'Control'. This value can be changed according to the needs of the user by using the [DefaultNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DefaultNewLineStyle.html) property.
+The default new line style value is set to 'Control'. This value can be changed according to the needs of the user by using the [DefaultNewLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~DefaultNewLineStyle.html) property.
 
 {% tabs %}
 
@@ -2266,7 +2266,7 @@ The EditControl has the ability to indicate whitespace in its contents with defa
 
 ### Configure the space indicator
 
-You can configure the whitespace indicators by setting the [ShowWhiteSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowWhitespaces.html) property to `true`. By default, this property is set to `false`.
+You can configure the whitespace indicators by setting the [ShowWhiteSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowWhitespaces.html) property to `true`. By default, this property is set to `false`.
 
 <table>
 <tr>
@@ -2279,7 +2279,7 @@ You can configure the whitespace indicators by setting the [ShowWhiteSpaces](htt
 </tr>
 </table>
 
-You can also toggle the visibility of the whitespace indicators by using the [ToggleShowingWhiteSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToggleShowingWhiteSpaces.html) function.
+You can also toggle the visibility of the whitespace indicators by using the [ToggleShowingWhiteSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ToggleShowingWhiteSpaces.html) function.
 
 {% tabs %}
 
@@ -2314,7 +2314,7 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 
 **Showing or hiding indicators**
 
-You can selectively show or hide the whitespace indicators by using the following sub-properties of the [WhiteSpaceIndicators](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WhiteSpaceIndicators.html) property: ShowSpaces, ShowTabs, and ShowNewLines.
+You can selectively show or hide the whitespace indicators by using the following sub-properties of the [WhiteSpaceIndicators](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~WhiteSpaceIndicators.html) property: ShowSpaces, ShowTabs, and ShowNewLines.
 
 <table>
 <tr>
@@ -2323,15 +2323,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ShowSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowSpaces.html)' | markdownify }}</td><td>
+{{ '[ShowSpaces](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowSpaces.html)' | markdownify }}</td><td>
 Indicates whether spaces should be replaced with symbols or not.</td></tr>
 <tr>
 <td>
-{{ '[ShowTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowTabs.html)' | markdownify }}</td><td>
+{{ '[ShowTabs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowTabs.html)' | markdownify }}</td><td>
 Indicates whether tabs should be replaced with symbols or not.</td></tr>
 <tr>
 <td>
-{{ '[ShowNewLines](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowNewLines.html)' | markdownify }}</td><td>
+{{ '[ShowNewLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~ShowNewLines.html)' | markdownify }}</td><td>
 Indicates whether new lines should be replaced with symbols or not.</td></tr>
 </table>
 
@@ -2383,15 +2383,15 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[NewLineString](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~NewLineString.html)' | markdownify }}</td><td>
+{{ '[NewLineString](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~NewLineString.html)' | markdownify }}</td><td>
 Specifies the string that represents line feed in WhiteSpace mode.</td></tr>
 <tr>
 <td>
-{{ '[TabString](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~TabString.html)' | markdownify }}</td><td>
+{{ '[TabString](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~TabString.html)' | markdownify }}</td><td>
 Specifies the string that represents Tab in WhiteSpace mode.</td></tr>
 <tr>
 <td>
-{{ '[SpaceChar](https://help.syncfusion.com/cr/cref_files/windowsforms/edit/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~SpaceChar.html)' | markdownify }}</td><td>
+{{ '[SpaceChar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Utils.ShowWhiteSpaceProperties~SpaceChar.html)' | markdownify }}</td><td>
 Specifies the character that represents line feed in WhiteSpace mode.</td></tr>
 </table>
 

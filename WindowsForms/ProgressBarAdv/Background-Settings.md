@@ -25,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 BackgroundStyle</td><td>
-Determines the style of the background. It includes the options given below.Image,Gradient,VerticalGradient,Tube,MultipleGradient,System andNone.</td></tr>
+Determines the style of the background. It includes the options given below.Image,Gradient,VerticalGradient,Tube,MultipleGradient,System, Office2016Colorful, Office2016White, Office2016DarkGray, Office2016Black and None.</td></tr>
 <tr>
 <td>
 BackgroundFallBackStyle</td><td>
@@ -54,6 +54,94 @@ Me.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.Prog
 {% endtabs %}
 
 ![](Overview_images/Overview_img6.jpeg) 
+
+**Office2016Colorful**
+
+This option helps to set the Office2016Colorful BackgroundStyle.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016Colorful;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img117.png) 
+
+**Office2016White**
+
+This option helps to set the Office2016White BackgroundStyle.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016White;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016White;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img118.png) 
+
+**Office2016DarkGray**
+
+This option helps to set the Office2016DarkGray BackgroundStyle.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img119.png) 
+
+**Office2016Black**
+
+This option helps to set the Office2016Black BackgroundStyle.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarBackgroundStyles.Office2016Black;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview_images/Overview_img120.png) 
 
 
 N> To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used.
