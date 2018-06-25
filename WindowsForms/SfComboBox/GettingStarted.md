@@ -191,15 +191,7 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 
 ![](GettingStarted_images/GettingStarted_img4.png)
 
-## Select all
-This enables you to choose all items in the drop-down list for multi select combo box by setting the `AllowSelectAll` property to `true`.
-{% tabs %}
-{% highlight c# %}
-sfComboBox1.AllowSelectAll = true;
-{% endhighlight %}
-{% highlight vb %}
-sfComboBox1.AllowSelectAll = True
-{% endhighlight %}
-{% endtabs %}
+## Selected Items
 
-![](GettingStarted_images/GettingStarted_img5.png)
+Index of the selected item can be retrieved by using the `SelectedIndex` property. The value of the selected item can be retrieved by using the `SelectedValue` property. It returns the value of the property bound to the `ValueMember` property. If the `ValueMember` is not initialized, it will return the value of the property bound to the `DisplayMember`. The selected item of the SfComboBox can be retrieved by using the `SelectedItem` property.
+
