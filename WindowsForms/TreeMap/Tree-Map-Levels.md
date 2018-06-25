@@ -13,7 +13,7 @@ The levels of the tree map control can be categorized into two types: flat and h
 
 ## Items source
 
-The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsSource.html) set to tree map control must be a flat collection of data. The following code sample shows how to set a data collection as ItemsSource for the tree map control.
+The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMap~ItemsSource.html) set to tree map control must be a flat collection of data. The following code sample shows how to set a data collection as ItemsSource for the tree map control.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ public string StrPopulation { get; set; }
 
 ## Group path
 
-The [`GroupPath`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupPath.html) must be specified for every level of the tree map control. It is a path to a field on the source object that serves as the “Group” for the level specified. The data is grouped in the tree map control based on the GroupPath. If it is not specified, then the items are not grouped and the data will be shown in the order as it is specified in the ItemsSource.
+The [`GroupPath`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupPath.html) must be specified for every level of the tree map control. It is a path to a field on the source object that serves as the “Group” for the level specified. The data is grouped in the tree map control based on the GroupPath. If it is not specified, then the items are not grouped and the data will be shown in the order as it is specified in the ItemsSource.
 
 ### Code sample
 
@@ -142,7 +142,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 ## Group gap
 
-The [`GroupGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/treemap/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupGap.html) can be specified for separating the items of every level. It is used to differentiate the levels in the tree map control.
+The [`GroupGap`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.TreeMap.Windows~Syncfusion.Windows.Forms.TreeMap.TreeMapFlatLevel~GroupGap.html) can be specified for separating the items of every level. It is used to differentiate the levels in the tree map control.
 
 ### Code sample
 

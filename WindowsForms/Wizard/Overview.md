@@ -9,7 +9,7 @@ documentation: ug
 
 # WizardControl
 
-The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) is a rich interactive and customizable interface that holds many pages together that helps to break up a complex task and guides the end user through a set of simple procedures to perform or to obtain data that are categorically divided in every page. It also provides the user, the ability to browse between these pages using the ‘browsing’ buttons.
+The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) is a rich interactive and customizable interface that holds many pages together that helps to break up a complex task and guides the end user through a set of simple procedures to perform or to obtain data that are categorically divided in every page. It also provides the user, the ability to browse between these pages using the ‘browsing’ buttons.
 
 ![](Overview_images/Overview-img1.png)
 

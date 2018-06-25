@@ -13,8 +13,8 @@ Serialization is the process of saving the state of an object into a stream of b
 ## XML Serialization 
 The grid schema information can be saved into the XML file by using the XML serialization. This can be achieved by using the following methods provided by the GridGroupingControl,
 
-* [WriteXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~WriteXmlSchema.html) - It writes the engine settings into an XML stream (Serialization).
-* [ApplyXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ApplyXmlSchema.html) - It loads the engine settings from an XML stream (Deserialization).
+* [WriteXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~WriteXmlSchema.html) - It writes the engine settings into an XML stream (Serialization).
+* [ApplyXmlSchema](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ApplyXmlSchema.html) - It loads the engine settings from an XML stream (Deserialization).
 
 By using this methods all the elements of the grid can be serialized. Not only the data, but also the look and feel of the grid can be serialized/deserialized. 
 
@@ -112,10 +112,10 @@ Me.gridGroupingControl1.ApplyXmlLookAndFeel(xmlReader)
 {% endtabs %}
 
 ## GridExcelFilter Serialization
-[GridExcelFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter.html) settings and the filter collections can be serialized into an XML file and deserialized from an XML file to the `GridExcelFilter`. 
+[GridExcelFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter.html) settings and the filter collections can be serialized into an XML file and deserialized from an XML file to the `GridExcelFilter`. 
 
 ### Serialization
-The settings of the `GridExcelFilter` and its filter collection can be saved into an XML file by using [WriteXml](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~WriteXml.html) method. 
+The settings of the `GridExcelFilter` and its filter collection can be saved into an XML file by using [WriteXml](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~WriteXml.html) method. 
 {% tabs %}
 {% highlight c#%}
 GridExcelFilter excelFilter = new GridExcelFilter();
@@ -143,7 +143,7 @@ xmlExcelFilter.Close()
 
 
 ### Deserialization
-The saved settings of the `GridExcelFilter` from an XML file can be deserialized to `GridExcelFilter` settings by using the [ApplyXml](https://help.syncfusion.com/cr/cref_files/windowsforms/grid/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~ApplyXml.html) method.
+The saved settings of the `GridExcelFilter` from an XML file can be deserialized to `GridExcelFilter` settings by using the [ApplyXml](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~ApplyXml.html) method.
 {% tabs %}
 {% highlight c#%} 
 GridExcelFilter excelFilter = new GridExcelFilter();

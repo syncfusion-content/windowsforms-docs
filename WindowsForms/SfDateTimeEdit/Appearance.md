@@ -15,14 +15,16 @@ The appearance of each and every part in the DateTimeEdit can be customized. The
 
 The BackColor, ForeColor, and BorderColor of the control can be customized by using the following `Style` properties of the SfDateTimeEdit. The up-down and drop-down buttons of the SfDateTimeEdit control can also be customized using the `Style`.
 
-* BackColor: Changes the background color of the DateTimeEdit.
-* ForeColor: Changes the foreground color of date-time text in the DateTimeEdit.
-* BorderColor: Changes the border color of the DateTimeEdit.
-* DisabledBackColor: Changes the border color of DateTimeEdit in disabled or readonly state.
-* DisabledForeColor: Changes the foreground color of date-time text in disabled or readonly state.
-* FocusedBorderColor: Changes the border color of DateTimeEdit in focused state.
-* HoverBorderColor: Changes the border color of DateTimeEdit on mouse hover.
+* BackColor - To change the background color of DateTimeEdit.
+* ForeColor - To change the foreground color of date-time text in DateTimeEdit.
+* WatermarkForeColor - To change the color to draw the Watermark Text that displays in DateTimeEdit when the Value is null.
+* BorderColor - To change the border color of DateTimeEdit.
+* DisabledBackColor - To change the border color of DateTimeEdit in disabled or readonly state.
+* DisabledForeColor - To change the foreground color of date-time text in disabled or readonly state.
+* FocusedBorderColor - To change the border color of DateTimeEdit in focused state.
+* HoverBorderColor - To change the border color of DateTimeEdit in mouse hover state.
 
+The following code snippets illustrates the customization.
 
 {% tabs %}
 
@@ -46,12 +48,65 @@ sfDateTimeEdit1.Style.BorderColor = Color.Red
 
 The BackColor and ForeColor of drop-down icon to open the calendar can be customized by the following `DropDown` style properties. The following `style` properties of `DropDown` are used to change the color of drop-down icon in different states.
 
-* BackColor: Changes the background color of drop-down icon in the DateTimeEdit.
-* ForeColor: Changes the foreground color of drop-down icon in the DateTimeEdit.
-* HoverForeColor: Changes the foreground color of drop-down icon on mouse hover.
-* PressedForeColor: Changes the foreground color of drop-down icon in pressed state.
+* BackColor - To change the background color of dropdown icon in DateTimeEdit.
+* HoverBackColor - To change the background color of dropdown icon in mouse hover state.
+* PressedBackColor - To change the background color of dropdown icon in pressed state.
+* ForeColor - To change the foreground color of dropdown icon in DateTimeEdit.
+* HoverForeColor - To change the foreground color of dropdown icon in mouse hover state.
+* PressedForeColor - To change the foreground color of dropdown icon in pressed state.
 
-### Change visibility of drop-down button
+The following code snippets illustrates the same.
+
+{% tabs %}
+
+{% highlight C# %}
+
+   //Setting the DropDown Fore color
+
+   this.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple;
+
+   this.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow;
+
+   this.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green;
+
+   //Setting the DropDown Back color
+
+    this.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua;
+
+    this.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray;
+
+    this.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+   'Setting the DropDown Fore color
+
+   Me.dateTimeEdit.Style.DropDown.ForeColor = Color.Purple
+
+   Me.dateTimeEdit.Style.DropDown.HoverForeColor = Color.Yellow
+
+   Me.dateTimeEdit.Style.DropDown.PressedForeColor = Color.Green
+
+   'Setting the DropDown Back color
+
+    Me.sfDateTimeEdit1.Style.DropDown.BackColor = Color.Aqua
+
+    Me.sfDateTimeEdit1.Style.DropDown.HoverBackColor = Color.Gray
+
+    Me.sfDateTimeEdit1.Style.DropDown.PressedBackColor = Color.Orange
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![](appearance-images/dropdownforecolor.png)
+
+![](appearance-images/drodownbackcolor.png)
+
+
+### Change visibility of dropdown button
 
 The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the `ShowDropDown` property.
 
@@ -89,8 +144,12 @@ Me.dateTimeEdit.ShowDropDown = false
 
 The ForeColor of up-down icon in the `SfDateTimeEdit` can be customized by the following `Style` properties. The following `style` properties of the SfDateTimeEdit can be used to change the color of up-down icon in different states:
 
-* UpDownForeColor: Changes the foreground color of up-down icon in the DateTimeEdit.
-* UpDownHoverForeColor: Changes the foreground color of up-down icon on mouse hover.
+* UpDownForeColor - To change the foreground color of updown icon in DateTimeEdit.
+* UpDownHoverForeColor - To change the foreground color of updown icon in mouse hover state.
+* UpDownBackColor - To change the background color of updown icon in DateTimeEdit.
+* UpDownHoverBackColor - To change the background color of updown icon in mouse hover state.
+
+The following code snippets illustrates the same.
 
 {% tabs %}
 
@@ -102,6 +161,10 @@ this.dateTimeEdit.Style.UpDownForeColor = Color.HotPink;
 
 this.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue;
 
+this.dateTimeEdit.Style.UpDownBackColor = Color.LightGray;
+
+this.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow;
+
 {% endhighlight  %}
 
 {% highlight VB %}
@@ -111,6 +174,10 @@ this.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue;
 Me.dateTimeEdit.Style.UpDownForeColor = Color.HotPink
 
 Me.dateTimeEdit.Style.UpDownHoverForeColor = Color.Blue
+
+Me.dateTimeEdit.Style.UpDownBackColor = Color.LightGray
+
+Me.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow
 
 {% endhighlight  %}
 
@@ -203,3 +270,174 @@ Me.dateTimeEdit.Width = 294
 {% endtabs %} 
 
 ![](appearance-images/dropdownsize.png)
+
+## Themes
+
+SfDateTimeEdit offers four built in themes for professional representation as follows.
+
+* Office2016Colorful
+* Office2016White
+* Office2016DarkGray
+* Office2016Black
+
+Theme can be applied to SfDateTimeEdit by following the below steps:
+
+1. [Load theme assembly](#load-theme-assembly)
+2. [Apply theme](#apply-theme)
+
+### Load theme assembly
+
+**Syncfusion.Office2016Theme.WinForms** assembly should be added as reference to set theme for SfDateTimeEdit in any application:
+
+Before apply theme to SfDateTimeEdit, required theme assembly should be loaded as follows. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Syncfusion.WinForms.Controls;
+
+         static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        
+        static void Main()
+        {
+            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Imports Syncfusion.WinForms.Controls
+
+ Friend Module Program
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        Sub Main()
+            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+            Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Application.Run(New Form1())
+        End Sub
+    End Module
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+### Apply theme
+
+Appearance of SfDateTimeEdit can be changed by `ThemeName` of SfDateTimeEdit.
+
+#### Office2016Colorful
+
+This option helps to set the Office2016Colorful Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Colorful
+
+ this.dateTimeEdit.ThemeName = "Office2016Colorful";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Colorful 
+
+Me.dateTimeEdit.ThemeName = "Office2016Colorful"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016Colorful.png)
+
+#### Office2016White
+
+This option helps to set the Office2016White Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016White
+
+ this.dateTimeEdit.ThemeName = "Office2016White";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016White 
+
+Me.dateTimeEdit.ThemeName = "Office2016White"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016White.png)
+
+#### Office2016DarkGray
+
+This option helps to set the Office2016DarkGray Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016DarkGray
+
+ this.dateTimeEdit.ThemeName = "Office2016DarkGray";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016DarkGray 
+
+Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016DarkGray.png)
+
+#### Office2016Black
+
+This option helps to set the Office2016Black Theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Office2016Black
+
+ this.dateTimeEdit.ThemeName = "Office2016Black";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+' Office2016Black 
+
+Me.dateTimeEdit.ThemeName = "Office2016Black"
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![](appearance-images/Office2016Black.png)

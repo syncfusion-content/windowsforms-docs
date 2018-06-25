@@ -15,19 +15,19 @@ This section explains about Find and Replace operations in Spreadsheet.
 
 Searches for specific data such as particular number or text according to specified options and returns an IRange representing the cell or null if no cell is found. The various options in Find operation are
 
-* [FindAll](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindAll.html)
-* [FindNext](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindNext.html)
-* [FindConditionalFormatting](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConditionalFormatting.html)
-* [FindConstants](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConstants.html)
-* [FindFormulas](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindFormulas.html)
-* [FindDataValidation](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindDataValidation.html)
+* [FindAll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindAll.html)
+* [FindNext](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindNext.html)
+* [FindConditionalFormatting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConditionalFormatting.html)
+* [FindConstants](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindConstants.html)
+* [FindFormulas](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindFormulas.html)
+* [FindDataValidation](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~FindDataValidation.html)
 
 The common parameters to be passed in Find functions are,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)).
+* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)).
 * The text to be searched.
-* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchBy.html) enum.
-* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelFindType.html) enum.
+* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchBy.html) enum.
+* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelFindType.html) enum.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.
 
@@ -167,9 +167,9 @@ foreach (var cell in list)
 
 Searches and replaces all the texts either in the workbook or worksheet based on the given option.
 
-The parameters to be passed in [ReplaceAll](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~ReplaceAll.html) function is,
+The parameters to be passed in [ReplaceAll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager~ReplaceAll.html) function is,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/cref_files/windowsforms/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)) in Spreadsheet.
+* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet.html)) in Spreadsheet.
 * The text to be searched.
 * The text to be replaced.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
@@ -189,7 +189,7 @@ spreadsheet.SearchManager.ReplaceAll(spreadsheet.Workbook.Worksheets[0], "sample
 
 ## Replace
 
-Searches for the text or numbers that you want to change using `FindNext` method and once the immediate matched cell has been found, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/spreadsheet/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method to replace it with specified text or numbers in `Spreadsheet`.
+Searches for the text or numbers that you want to change using `FindNext` method and once the immediate matched cell has been found, use [SetCellValue](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetCellValue.html) method to replace it with specified text or numbers in `Spreadsheet`.
 
 {% tabs %}
 {% highlight c# %}
