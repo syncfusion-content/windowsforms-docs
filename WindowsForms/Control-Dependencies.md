@@ -10,733 +10,3501 @@ documentation: ug
 
 # Control Dependencies
 
-Table illustrates the Control's assembly and its dependencies.
+Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](common/essential-studio/licensing/license-key) for more information.
+
+## AutoComplete
 
 <table>
 <tr>
-<th>
-Category<br/><br/></th><th>
-Control<br/><br/></th><th>
-Main Assembly<br/><br/></th><th>
-Depended Assemblies<br/><br/></th></tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## AutoLabel
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## BackStageView
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## BannerTextProvider
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## BarCode
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfBarcode.Windows
+</td>
+<td>
+Syncfusion.SfBarcode.Windows
+</td>
+</tr>
+</table>
+
+## BorderLayout
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## BulletGraph
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.BulletGraph.Windows
+</td>
+<td>
+Syncfusion.BulletGraph.Windows
+</td>
+</tr>
+</table>
+
+## ButtonAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ButtonEdit
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Calculate
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Calculate.Base
+</td>
+<td>
+Syncfusion.Calculate.Base
+</td>
+</tr>
+</table>
+
+## Calculator
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## CardLayout
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## Carousel
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Chart
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Chart.Base<br/>
+Syncfusion.Chart.Windows<br/>
+Syncfusion.Shared.Base
+
+</td>
+<td>
+Syncfusion.Chart.Windows
+</td>
+</tr>
+</table>
+
+## CheckBoxAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ChildFrameBarManager
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Clock
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ColorPickerButton
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ColorPickerUIAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ColorUIControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ComboBoxAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ComboBoxAutoComplete
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ComboBoxBase
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ComboDropDown
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## CommandBarController
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ContextMenuStripEx
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## CurrencyEdit
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## CurrencyTextBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## DateTimePickerAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Diagram
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Diagram.Windows<br/>
+Syncfusion.Diagram.Base<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+</td>
+<td>
+Syncfusion.Diagram.Windows<br/>
+Syncfusion.Diagram.Base<br/>
+</td>
+</tr>
+</table>
+
+### Import Visio Files into Diagram
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Diagram.Utility.Windows
+</td>
+<td>
+Syncfusion.Diagram.Utility.Windows
+</td>
+</tr>
+</table>
+
+## Digital Gauge
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Gauge.Windows<br/>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Gauge.Windows
+</td>
+</tr>
+</table>
+
+## DockingClientPanel
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+<br/>Syncfusion.Tools.Windows<br/>Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/>Syncfusion.Tools.Base<br/></td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## DockingManager
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## DomainUpDownExt
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## DoubleTextBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## EditableList
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## EditControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Edit.Windows
+
+</td>
+<td>
+Syncfusion.Edit.Windows
+</td>
+</tr>
+</table>
+
+## FlowLayout
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## FolderBrowser
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## FontComboBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## FontListBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## GradientLabel
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## GradientPanel
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## GradientPanelExt
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## GridBagLayout
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## GridControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows
+</td>
+<td>
+Syncfusion.Grid.Windows
+</td>
+</tr>
+</table>
+
+### Exporting GridControl to Excel, PDF and CSV
+For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.GridConverter.Windows<br/>
+Syncfusion.XlsIO.Base
+</td>
+<td>
+Syncfusion.GridConverter.Windows
+</td>
+</tr>
+</table>
+
+
+## GridGroupingControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Grid.Grouping.Base<br/>
+Syncfusion.Grid.Grouping.Windows<br/>
+Syncfusion.Grouping.Base
+</td>
+<td>
+Syncfusion.Grid.Grouping.Windows
+</td>
+</tr>
+</table>
+
+### Exporting GridGroupingControl to Excel, PDF and CSV
+For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.GridConverter.Windows<br/>
+Syncfusion.XlsIO.Base
+</td>
+<td>
+Syncfusion.GridConverter.Windows
+</td>
+</tr>
+</table>
+
+## GridLayout
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base<br/>
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## GridListControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows
+</td>
+<td>
+Syncfusion.Grid.Windows
+</td>
+</tr>
+</table>
+
+## GridRecordNavigationControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/></td>
+<td>
+Syncfusion.Grid.Windows
+</td>
+</tr>
+</table>
+
+## GroupBar
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## Grouping
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grouping.Base<br/>Syncfusion.Grouping.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/></td>
+<td>
+Syncfusion.Grouping.Windows
+</td>
+</tr>
+</table>
+
+## GroupView
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## HTMLConverter
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Compression.Base<br/>
+Syncfusion.Pdf.Base<br/>
+Syncfusion.HtmlConverter.Base
+
+</td>
+<td>
+Syncfusion.HtmlConverter.Base
+</td>
+</tr>
+</table>
+
+## HTMLUIControl
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.HTMLUI.Base<br/>
+Syncfusion.HTMLUI.Windows<br/>
+Syncfusion.Scripting.Base<br/>
+Syncfusion.Shared.Base
+
+</td>
+<td>
+Syncfusion.HTMLUI.Windows
+</td>
+</tr>
+</table>
+
+## HubTile
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## IntegerTextBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ImageListAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## ImageStreamer
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Linear Gauge
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Gauge.Windows<br/>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Gauge.Windows
+</td>
+</tr>
+</table>
+
+## MainFrameBarManager
+
+<table>
 <tr>
 <td>
-GRIDS<br/><br/></td><td>
-CellGrid<br/><br/></td><td>
-Syncfusion.Grid.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Maps
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Maps.Windows
+
+</td>
+<td>
+Syncfusion.Maps.Windows
+</td>
+</tr>
+</table>
+
+## MaskedEditBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## MessageBoxAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## MetroForm
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## MiniToolBar
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## MonthCalendarAdv
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## MultiColumnComboBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## MultiColumnTreeview
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## MultiSelectionComboBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## NavigationDrawer
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## NavigationView
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## NumericUpDownExt
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## OCR Processor
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Compression.Base<br/>
+Syncfusion.Pdf.Base<br/>
+Syncfusion.OCRProcessor.Base
+
+</td>
+<td>
+Syncfusion.OCRProcessor.Base
+</td>
+</tr>
+</table>
+
+## Office2007Form
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## Office2010Form
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## PDF
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Compression.Base<br/>
+Syncfusion.Pdf.Base
+</td>
+<td>
+Syncfusion.Pdf.Base
+
+</td>
+</tr>
+</table>
+
+## PDF Viewer
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Compression.Base<br/>
+Syncfusion.Pdf.Base<br/>
+Syncfusion.PdfViewer.Windows
+
+</td>
+<td>
+Syncfusion.PdfViewer.Windows
+</td>
+</tr>
+</table>
+
+## PercentTextBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## Pivot Chart
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Chart.Base<br/>
+Syncfusion.Chart.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Linq.Base<br/>
+Syncfusion.PivotAnalysis.Base<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows
+
+</td>
+<td>
+Syncfusion.PivotChart.Windows
+</td>
+</tr>
+</table>
+
+### Exporting PivotChart to Excel, PDF and CSV
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.PivotConverter.Windows<br/>
+Syncfusion.XlsIO.Base
+
+</td>
+<td>
+Syncfusion.PivotConverter.Windows
+</td>
+</tr>
+</table>
+
+## Pivot Grid
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Linq.Base<br/>
+Syncfusion.PivotAnalysis.Base<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Windows
+
+</td>
+<td>
+Syncfusion.PivotAnalysis.Windows
+</td>
+</tr>
+</table>
+
+### Exporting PivotGird to Excel, PDF and CSV
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.PivotConverter.Windows<br/>
+Syncfusion.XlsIO.Base
+
+</td>
+<td>
+Syncfusion.PivotConverter.Windows
+</td>
+</tr>
+</table>
+
+## PopupControlContainer
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-DataGrid<br/><br/></td><td>
-Syncfusion.Grid.Grouping.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Grid.Grouping.Base<br/><br/>Syncfusion.Grouping.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-DATA VISUALIZATION<br/><br/></td><td>
-Radial Gauge<br/><br/></td><td>
-Syncfusion.Gauge.Windows<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## PopupMenu
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Linear Gauge<br/><br/></td><td>
-Syncfusion.Gauge.Windows<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-Digital Gauge<br/><br/></td><td>
-Syncfusion.Gauge.Windows<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ProgressBarAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Diagram<br/><br/></td><td>
-Syncfusion.Diagram.Base<br/><br/>Syncfusion.Diagram.Windows<br/><br/>Syncfusion.Diagram.Utility.Windows<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-BulletGraph<br/><br/></td><td>
-Syncfusion.BulletGraph.Windows<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## RadialGauge
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Maps<br/><br/></td><td>
-Syncfusion.Maps.Windows<br/><td>
-Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Gauge.Windows<br/>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-TreeMap<br/><br/></td><td>
-Syncfusion.TreeMap.Windows<br/><td>
-Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/></td></tr>
+Syncfusion.Gauge.Windows
+</td>
+</tr>
+</table>
+
+## RadialMenu
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Schedule<br/><br/></td><td>
-Syncfusion.Schedule.Windows<br/><br/></td><td>
-Syncfusion.GridHelperClasses.Base<br/><br/>Syncfusion.Schedule.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-LAYOUT<br/><br/></td><td>
-Office2007Form<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RadialSlider
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Office2010Form<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-RibbonControlAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RadioButtonAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-RibbonPanelMergeContainer<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-RibbonForm<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## RangeSlider
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-DockingManager<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-DockingClientPanel<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RatingControl
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Carousel<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
 <td>
-<br/><br/></td><td>
-TabControlAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RecordNavigationBar
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-TabbedMDIManger<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-TabbedGroupedMDIManager<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## RecordNavigationControl
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-TileLayout<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-RangeSlider<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## RibbonControlAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SplitContainerAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/>Syncfusion.Tools.Base</td>
 <td>
-<br/><br/></td><td>
-TabSplitterContainer<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RibbonForm
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-MetroForm<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/>Syncfusion.Tools.Base<br/></td>
 <td>
-<br/><br/></td><td>
-TabBarSplitterControl<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## RibbonPanelMergeContainer
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-RecordNavigationControl<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>Syncfusion.Grid.Base<br/>Syncfusion.Grid.Windows<br/>Syncfusion.Shared.Base<br/>Syncfusion.Shared.Windows<br/>Syncfusion.Tools.Base<br/></td>
 <td>
-<br/><br/></td><td>
-RecordNavigationBar<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Schedule
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-FlowLayout<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Schedule.Base<br/>
+Syncfusion.Schedule.Windows<br/>
+Syncfusion.Tools.Windows
+
+</td>
 <td>
-<br/><br/></td><td>
-CardLayout<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Schedule.Windows
+</td>
+</tr>
+</table>
+
+## ScrollersFrame
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-BorderLayout<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-SplitterControl<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SfButton
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-GradientPanel<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-GradientPanelExt<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SfCalendar
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-GridLayout<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms<br/>
+Syncfusion.SfInput.WinForms
+
+</td>
 <td>
-<br/><br/></td><td>
-GridBagLayout<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.SfInput.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SfDataGrid
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-AutoLabel<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.SfDataGrid.WinForms<br/>
+Syncfusion.Core.WinForms<br/>
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.SfListView.WinForms<br/>
+Syncfusion.Data.WinForms<br/>
+Syncfusion.GridCommon.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-BannerTextProvider<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.SfDataGrid.WinForms
+</td>
+</tr>
+</table>
+
+### Exporting SfDataGrid to Excel, PDF and CSV
+For exporting grid contents to Excel, pdf or CSV, the following references needs to be added in your application.
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ImageListAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.SfDataGridConverter.WinForms<br/>
+Syncfusion.XlsIO.Base<br/>
+Syncfusion.Pdf.Base
+</td>
 <td>
-<br/><br/></td><td>
-TypeLoader<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.SfDataGridConverter.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references to apply theme.
+
+## SfDateTimeEdit
+
+<table>
 <tr>
 <td>
-EDITORS<br/><br/></td><td>
-CurrencyTextBox<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms<br/>
+Syncfusion.SfInput.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-IntegerTextBox<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.SfInput.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SfForm
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-DoubleTextBox<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-PercentTextBox<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
+
+## SfListView
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-MaskedEditBox<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.SfListView.WinForms<br/>Syncfusion.Core.WinForms<br/>Syncfusion.DataSource.WinForms<br/>Syncfusion.GridCommon.WinForms<br/></td>
 <td>
-<br/><br/></td><td>
-TextBoxExt<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.SfListView.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SfScrollFrame
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ButtonAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-EditableList<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SfSkinManager
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SplitButton<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-DomainUpDownExt<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
+
+## SfSmithChart
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-CurrencyEdit<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.SfSmithChart.Windows<br/>Syncfusion.Core.WinForms<br/></td>
 <td>
-<br/><br/></td><td>
-ButtonEdit<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.SfSmithChart.Windows
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references.
+
+## SkinManager
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-AutoComplete<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-Calculator<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SparkLine
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-CheckBoxAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Chart.Base<br/>
+Syncfusion.Chart.Windows<br/>
+Syncfusion.Shared.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-RadioButtonAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Chart.Windows
+</td>
+</tr>
+</table>
+
+## SplashControl
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-RatingControl<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-ComboBoxAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SplashPanel
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ComboBoxBase<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-ComboBoxAutoComplete<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SpellChecker
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-MultiColumnComboBox<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-MultiSelectionComboBox<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SplitButton
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ComboDropDown<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-FontListBox<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## SplitContainerAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-FontComboBox<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-EditControl<br/><br/></td><td>
-Syncfusion.Edit.Windows<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## SplitterControl
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-HTMLUIControl<br/><br/></td><td>
-Syncfusion.HTMLUI.Windows<br/><br/></td><td>
-Syncfusion.HTMLUI.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Scripting.Base<br/><br/>Syncfusion.Scripting.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-RadialSlider<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## SpreadSheet
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-MonthCalendarAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Spreadsheet.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.XlsIO.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-DateTimePickerAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Spreadsheet.Windows
+</td>
+</tr>
+</table>
+
+## StatusBarAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ToggleButton<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-ColorPickerUIAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## StatusBarAdvPanel
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ColorPickerButton<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-ColorUIControl<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## StatusBarExt
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-NumericUpDownExt<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-ImageStreamer<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## StatusStripEx
+
+<table>
 <tr>
 <td>
-NAVIGATION<br/><br/></td><td>
-TreeViewAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-MultiColumnTreeview<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## SuperAccelerator
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-GroupBar<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-GroupView<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## SuperToolTip
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-MainFrameBarManager<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
 <td>
-<br/><br/></td><td>
-ChildFrameBarManager<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
+
+## TreeMap
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-XPTaskBar<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.TreeMap.Windows
+</td>
 <td>
-<br/><br/></td><td>
-XPToolBar<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.TreeMap.Windows
+</td>
+</tr>
+</table>
+
+## TabBarSplitterControl
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-CommandBarController<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-RadialMenu<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## TabControlAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-TreeNavigator<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-BackStageView<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TabbedGroupedMDIManager
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ContextMenuStripEx<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-MiniToolBar<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TabbedMDIManger
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-NavigationView<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-PopupControlContainer<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TabSplitterContainer
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-PopupMenu<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base<br/>
+
+</td>
 <td>
-<br/><br/></td><td>
-GradientLabel<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TextBoxExt
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SuperAccelerator<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-ToolStripEx<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## TileLayout
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-TrackBarEx<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-NOTIFICATION<br/><br/></td><td>
-SplashPanel<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ToggleButton
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SplashControl<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-StatusBarAdv<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## ToolStripEx
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-StatusBarAdvPanel<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-ProgressBarAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TrackBarEx
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-StatusBarExt<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-StatusStripEx<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TreeNavigator
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Clock<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-HubTile<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TreeViewAdv
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SuperToolTip<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-MessageBoxAdv<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## TypeLoader
+
+<table>
 <tr>
 <td>
-MISCELLANEOUS<br/><br/></td><td>
-SkinManager<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Shared.Base
+</td>
 <td>
-<br/><br/></td><td>
-WizardControl<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Shared.Base
+</td>
+</tr>
+</table>
+
+## WizardControl
+
+<table>
 <tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-XPTaskPane<br/><br/></td><td>
-Syncfusion.Tools.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## XPTaskBar
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-ScrollersFrame<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-FolderBrowser<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## XPToolBar
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-SpellChecker<br/><br/></td><td>
-Syncfusion.Shared.Base<br/><br/></td><td>
-<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-<br/><br/></td><td>
-Grouping<br/><br/></td><td>
-Syncfusion.Grouping.Windows<br/><br/></td><td>
-Syncfusion.Grouping.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## XPTaskPane
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Calculate<br/><br/></td><td>
-Syncfusion.Calculate.Windows<br/><br/></td><td>
-Syncfusion.Calculate.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+
+</td>
 <td>
-BUSINESS INTELLIGENCE<br/><br/></td><td>
-Pivot Grid<br/><br/></td><td>
-Syncfusion.PivotAnalysis.Windows<br/><br/></td><td>
-Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.PivotAnalysis.Base<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
+## Themes
+
+
+<table>
 <tr>
 <td>
-<br/><br/></td><td>
-Pivot Chart<br/><br/></td><td>
-Syncfusion.PivotChart.Windows<br/><br/></td><td>
-Syncfusion.Chart.Base<br/><br/>Syncfusion.Chart.Windows<br/><br/>Syncfusion.Grid.Base<br/><br/>Syncfusion.Grid.Windows<br/><br/>Syncfusion.Linq.Base<br/><br/>Syncfusion.PivotAnalysis.Base<br/><br/>Syncfusion.PivotAnalysis.Windows<br/><br/>Syncfusion.Shared.Base<br/><br/>Syncfusion.Shared.Windows<br/><br/>Syncfusion.Tools.Base<br/><br/>Syncfusion.Tools.Windows<br/><br/></td></tr>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
 <tr>
-<td>IO</td>
-<td>PDF Viewer</td>
-<td>Syncfusion.PdfViewer.Windows</td>
-<td>Syncfusion.Compression.Base<br/>Syncfusion.Pdf.Base<br/></td>
+<td>
+Syncfusion.Office2016Theme.WinForms
+</td>
+<td>
+Syncfusion.Office2016Theme.WinForms
+</td>
 </tr>
 </table>
