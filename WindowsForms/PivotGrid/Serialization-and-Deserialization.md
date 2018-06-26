@@ -566,7 +566,7 @@ By default, the pivot grid control allows to deserialize the collection of pivot
 using (FileStream fileStream = File.OpenRead("PivotGrid.xml"))
 {
     DeserializationOptions options = new DeserializationOptions();
-    options.DeserailizePivotRows = false;
+    options.DeserializePivotRows = false;
     options.DeserializePivotColumns = false;
     options.DeserializePivotCalculations = false;
     this.pivotGridControl1.Deserialize(fileStream, options);
@@ -578,7 +578,7 @@ using (FileStream fileStream = File.OpenRead("PivotGrid.xml"))
 
 Using fileStream As FileStream = File.OpenRead("PivotGrid.xml")
     Dim options As New DeserializationOptions()
-    options.DeserailizePivotRows = False
+    options.DeserializePivotRows = False
     options.DeserializePivotColumns = False
     options.DeserializePivotCalculations = False
     Me.pivotGridControl1.Deserialize(fileStream, options)
