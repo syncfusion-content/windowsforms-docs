@@ -9,7 +9,7 @@ documentation: ug
 
 ## Tabbed to Another Window Programmatically
 
-The docking manager provides a [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function that helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
+The docking manager provides a [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function that helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
 The DockingStyle tabbed option is used to tab a panel with another panel. The tabbing windows should be aware of the parent control name. Set the `Output` window parent as `SolutionExplorer` to tab it on the `SolutionExplorer` window.
 
@@ -65,7 +65,7 @@ The docked controls can be tabbed in the designer by dragging into another. The 
 
 ## Tab alignments
 
-The tabs of the docked window are placed at the bottom by default. To place the tabs of docked window at different sides, set the [DockTabAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabAlignment.html) property with desired values such as top, bottom, left, and right.
+The tabs of the docked window are placed at the bottom by default. To place the tabs of docked window at different sides, set the [DockTabAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockTabAlignment.html) property with desired values such as top, bottom, left, and right.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ Me.dockingManager1.DockTabAlignment = Syncfusion.Windows.Forms.Tools.DockTabAlig
 
 ## Prevent tabbing
 
-You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the docking manager. This can be achieved by [SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function. Here, the tabbed, left, right, and bottom ability have been restricted.
+You can restrict the specific [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockAbility.html) of child window when it is moved to the client area in the docking manager. This can be achieved by [SetDockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockAbility.html) function. Here, the tabbed, left, right, and bottom ability have been restricted.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ this.dockingManager1.SetDockAbility(panel1, "Top");
 
 ## Tab reordering
 
-The docking manager allows to reorder the tab by selecting and dragging to the desired index in `DockTabControl`. Tabs reordering behavior can be enabled or disabled by using the [AllowTabsMoving](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AllowTabsMoving.html) property.
+The docking manager allows to reorder the tab by selecting and dragging to the desired index in `DockTabControl`. Tabs reordering behavior can be enabled or disabled by using the [AllowTabsMoving](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AllowTabsMoving.html) property.
 
 {% tabs %}
 
@@ -156,11 +156,11 @@ Me.dockingManager1.AllowTabsMoving = True
 
 ### Restrict reorder tabs
 
-To prevent the tab reorder within the tab group, set the [AllowTabsMoving](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AllowTabsMoving.html) value to `false`.
+To prevent the tab reorder within the tab group, set the [AllowTabsMoving](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AllowTabsMoving.html) value to `false`.
 
 ## Show/hide scroll buttons in tab panel
 
-When the Dock Tabs overflow onto the tab panel, the ScrollButton is added to the tab panel. This scroll button can be enabled or disabled by using the [ShowDockTabScrollButton](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowDockTabScrollButton.html) property.
+When the Dock Tabs overflow onto the tab panel, the ScrollButton is added to the tab panel. This scroll button can be enabled or disabled by using the [ShowDockTabScrollButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowDockTabScrollButton.html) property.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ Me.dockingManager1.ShowDockTabScrollButton = true
 
 ## Change tab index by programmatically
 
-By using the [SetTabPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetTabPosition.html) function of docking manager, you can set the tab position of the control, which is passed as its argument.
+By using the [SetTabPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetTabPosition.html) function of docking manager, you can set the tab position of the control, which is passed as its argument.
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ Me.dockingManager1.SetTabPosition(Panel1, 2)
 
 ### Tab index
 
-By using [GetTabPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetTabPosition.html) function, you can get the tab position of the control, which is passed as its argument.
+By using [GetTabPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetTabPosition.html) function, you can get the tab position of the control, which is passed as its argument.
 
 {% tabs %}
 
@@ -234,7 +234,7 @@ Me.dockingManager1.GetTabPosition(panel1)
 
 ## Identify the tabbed state for control
 
-The [IsTabbed](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsTabbed.html) function of docking manager returns `true` if the control is in tabbed state and returns `false` if the control is in other states.
+The [IsTabbed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsTabbed.html) function of docking manager returns `true` if the control is in tabbed state and returns `false` if the control is in other states.
 
 {% tabs %}
 
@@ -254,7 +254,7 @@ Me.DockingManager1.IsTabbed(this.panel1)
 
 ## Check two controls in same tab group
 
-The [IsSameTabbedGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsSameTabbedGroup.html) function of docking manager is used to determine whether the two tabbed controls are belong to the same tab group.
+The [IsSameTabbedGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsSameTabbedGroup.html) function of docking manager is used to determine whether the two tabbed controls are belong to the same tab group.
 
 {% tabs %}
 
