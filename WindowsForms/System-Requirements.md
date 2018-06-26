@@ -33,4 +33,5 @@ Following IDEs can be used for development that can [compatible](https://www.vis
 * Microsoft Visual Studio 2012
 * Microsoft Visual Studio 2013
 * Microsoft Visual Studio 2015
+* Microsoft Visual Studio 2017
 
