@@ -48,7 +48,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[Cell Grid](https://help.syncfusion.com/windowsforms/grid-control)'| markdownify }}
+{{'[Cell Grid](https://help.syncfusion.com/windowsforms/grid)'| markdownify }}
 </td>
 <td>
 {{'[Chart](https://help.syncfusion.com/windowsforms/chart)'| markdownify }}
@@ -57,12 +57,12 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Predictive Analytics](https://help.syncfusion.com/windowsforms/predictive-analytics)'| markdownify }}
 </td>
 <td>
-{{'[Numeric Text Box (Preview)](https://help.syncfusion.com/windowsforms/sfnumerictextbox)'| markdownify }}
+{{'[Numeric Text Box](https://help.syncfusion.com/windowsforms/sfnumerictextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Data Grid (Preview)](https://help.syncfusion.com/windowsforms/sfdatagrid)'| markdownify }}
+{{'[Data Grid](https://help.syncfusion.com/windowsforms/sfdatagrid)'| markdownify }}
 </td>
 <td>
 {{'[Sparkline](https://help.syncfusion.com/windowsforms/sparkline)'| markdownify }}
@@ -96,7 +96,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Barcode](https://help.syncfusion.com/windowsforms/barcode)'| markdownify }}
 </td>
 <td>
-{{'[Form (Preview)](https://help.syncfusion.com/windowsforms/sfform)'| markdownify }}
+{{'[Form](https://help.syncfusion.com/windowsforms/sfform)'| markdownify }}
 </td>
 <td>
 {{'[Syntax Editor](https://help.syncfusion.com/windowsforms/syntaxeditor)'| markdownify }}
@@ -127,7 +127,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Docking Manager](https://help.syncfusion.com/windowsforms/dockingmanager)'| markdownify }}
 </td>
 <td>
-{{'[Calendar (Preview)](https://help.syncfusion.com/windowsforms/calendar)'| markdownify }}
+{{'[Calendar](https://help.syncfusion.com/windowsforms/calendar)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -194,7 +194,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Digital Gauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)'| markdownify }}
 </td>
 <td>
-{{'[Scroll Frame (Preview)](https://help.syncfusion.com/windowsforms/sfscrollframe)'| markdownify }}
+{{'[Scroll Fram](https://help.syncfusion.com/windowsforms/sfscrollframe)'| markdownify }}
 </td>
 <td>
 {{'[Font Combo Box](https://help.syncfusion.com/windowsforms/fontcombobox)'| markdownify }}
@@ -205,7 +205,7 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Smith Chart (Preview)](https://help.syncfusion.com/windowsforms/sfsmithchart)'| markdownify }}
+{{'[Smith Chart](https://help.syncfusion.com/windowsforms/sfsmithchart)'| markdownify }}
 </td>
 <td>
 {{'[Group Bar](https://help.syncfusion.com/windowsforms/groupbar)'| markdownify }}
@@ -295,7 +295,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[XP Toolbar](https://help.syncfusion.com/windowsforms/xptoolbar)'| markdownify }}
 </td>
 <td>
-{{'[Date-Time Edit (Preview)](https://help.syncfusion.com/windowsforms/sfdatetimeedit)'| markdownify }}
+{{'[Date-Time Edit](https://help.syncfusion.com/windowsforms/sfdatetimeedit)'| markdownify }}
 </td>
 </tr>
 <tr>
