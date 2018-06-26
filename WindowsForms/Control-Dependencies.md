@@ -2687,6 +2687,8 @@ Syncfusion.SfSmithChart.WinForms
 </tr>
 </table>
 
+Refer to [themes section](#themes) for theming assembly references to apply theme.
+
 ## SkinManager
 
 <table>
