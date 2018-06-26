@@ -13,7 +13,7 @@ State persistence is the combined process of serialization and deserialization. 
 
 ## Auto serialization
 
-Docking manager supports AutoSave that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property to `true`. The default value of the PersistState property is `false`.
+Docking manager supports AutoSave that allows to persist its state automatically. To enable this functionality, set the [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property to `true`. The default value of the PersistState property is `false`.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ Docking manager saves the dock state in an isolated storage format while WindowC
 
 ### Save state
 
-To save the AutoPersist state of docking manager, call the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function in its closing event. 
+To save the AutoPersist state of docking manager, call the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function in its closing event. 
 
 <table>
 <tr>
@@ -87,7 +87,7 @@ Me.dockingManager1.SaveDockState(serializer, this.listBox1)
 
 ### Load state
 
-To load the AutoPersist state of the docking manager, call the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function in its loaded event.
+To load the AutoPersist state of the docking manager, call the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function in its loaded event.
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Me.dockingManager1.LoadDockState(serializer, this.listBox1)
 
 ## Serialize dock state as XML
 
-When the docking manager [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property is set, it saves the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it can be done as follows:
+When the docking manager [PersistState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PersistState.html) property is set, it saves the dock state into default persistence medium ‘IsolatedStorage’. To store the dock state to some other medium like XML, it can be done as follows:
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ Me.dockingManager1.LoadDockState(serializer)
 
 {% endtabs %}
 
-Calling the [GetSerializedControls](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetSerializedControls.html) function returns the serialized control collection enumerator in the specified serializer. This can be done using the following code.
+Calling the [GetSerializedControls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetSerializedControls.html) function returns the serialized control collection enumerator in the specified serializer. This can be done using the following code.
 
 <table>
 <tr>
@@ -385,7 +385,7 @@ Console.Write("Serialized controls :" + Me.dockingManager1.GetSerializedControls
 
 ## Serialization or de-serialization for a particular control
 
-In the `docking manager`, you can perform serialization or de-serialization for a particular control by using its functions such as [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) and [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html).
+In the `docking manager`, you can perform serialization or de-serialization for a particular control by using its functions such as [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) and [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html).
 
 {% tabs %}
 
@@ -422,7 +422,7 @@ Me.dockingManager1.LoadDockState(serialize, Me.panel1)
 
 ## Restore to initial state
 
-The [LoadDesignerDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDesignerDockState.html) function is used to restore the initial Windows Forms designer state of the docking window.
+The [LoadDesignerDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDesignerDockState.html) function is used to restore the initial Windows Forms designer state of the docking window.
 
 {% tabs %}
 
