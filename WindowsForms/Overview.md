@@ -32,7 +32,7 @@ In case you are unable to find the information that you are looking for in the s
 ## List of Controls
 
 <table>
-<tr>
+	<tr>
 		<th>
 			Category<br/><br/>
 		</th>
