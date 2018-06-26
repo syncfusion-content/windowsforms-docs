@@ -10,7 +10,7 @@ documentation: ug
 
 # Control Dependencies
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](common/essential-studio/licensing/license-key) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
 ## AutoComplete
 
@@ -2473,7 +2473,7 @@ Syncfusion.Core.WinForms
 </tr>
 </table>
 
-Refer to [themes section](#themes) for theming assembly references.
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfCalendar
 
@@ -2498,7 +2498,7 @@ Syncfusion.SfInput.WinForms
 </tr>
 </table>
 
-Refer to [themes section](#themes) for theming assembly references.
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfDataGrid
 
@@ -2574,7 +2574,7 @@ Syncfusion.SfInput.WinForms
 </tr>
 </table>
 
-Refer to [themes section](#themes) for theming assembly references.
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfForm
 
@@ -2617,7 +2617,7 @@ Syncfusion.SfListView.WinForms
 </tr>
 </table>
 
-Refer to [themes section](#themes) for theming assembly references.
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfScrollFrame
 
@@ -2640,7 +2640,7 @@ Syncfusion.Core.WinForms
 </tr>
 </table>
 
-Refer to [themes section](#themes) for theming assembly references.
+Refer to [themes section](#themes) for theming assembly references to apply theme.
 
 ## SfSkinManager
 
@@ -2676,14 +2676,12 @@ Syncfusion.Core.WinForms
 </tr>
 <tr>
 <td>
-Syncfusion.SfSmithChart.Windows<br/>Syncfusion.Core.WinForms<br/></td>
+Syncfusion.SfSmithChart.WinForms<br/>Syncfusion.Core.WinForms<br/></td>
 <td>
-Syncfusion.SfSmithChart.Windows
+Syncfusion.SfSmithChart.WinForms
 </td>
 </tr>
 </table>
-
-Refer to [themes section](#themes) for theming assembly references.
 
 ## SkinManager
 
