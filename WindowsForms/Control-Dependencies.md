@@ -10,7 +10,9 @@ documentation: ug
 
 # Control Dependencies
 
-This section lists the required assemblies and NuGet packages of all the Windows Forms controls.
+This section lists needed assembly or NuGet references to use any control in application. You can refer [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages) section to know how to add NuGet reference.
+ 
+You can refer [syncfusion controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add syncfusion control.
 
 N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion Windows Forms controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
 
