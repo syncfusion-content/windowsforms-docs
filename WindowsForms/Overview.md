@@ -29,7 +29,7 @@ Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/wind
 
 In case you are unable to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
-## Getting started
+## Getting Started
 
 <table>
 <tr>
