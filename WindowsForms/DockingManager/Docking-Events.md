@@ -20,118 +20,118 @@ Docking events</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AutoHideAnimationStart](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStart_EV.html)' | markdownify }}</td><td>
+{{ '[AutoHideAnimationStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStart_EV.html)' | markdownify }}</td><td>
 The AutoHideAnimationStart event occurs just before the start of an auto hide animation.</td></tr>
 <tr>
 <td>
-{{ '[AutoHideAnimationStop](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStop_EV.html)' | markdownify }}</td><td>
+{{ '[AutoHideAnimationStop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStop_EV.html)' | markdownify }}</td><td>
 The AutoHideAnimationStop event occurs immediately after the end of an auto hide animation.</td></tr>
 <tr>
 <td>
-{{ '[AutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabContextMenu_EV.html)' | markdownify }}</td><td>
+{{ '[AutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabContextMenu_EV.html)' | markdownify }}</td><td>
 This event occurs when the right mouse button is clicked over a AutoHideTabControl.</td></tr>
 <tr>
 <td>
-{{ '[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html)' | markdownify }}</td><td>
+{{ '[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html)' | markdownify }}</td><td>
 This event occurs when the redone context menu item is clicked.</td></tr>
 <tr>
 <td>
-{{ '[ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html)' | markdownify }}
+{{ '[ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html)' | markdownify }}
 </td><td>
 This event occurs after the control is maximized.</td></tr>
 <tr>
 <td>
-{{ '[ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html)' | markdownify }}
+{{ '[ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html)' | markdownify }}
 </td><td>
 This event occurs before the control is going to maximize.</td></tr>
 <tr>
 <td>
-{{ '[ControlMinimized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMinimized_EV.html)' | markdownify }}
+{{ '[ControlMinimized](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMinimized_EV.html)' | markdownify }}
 </td><td>
 This event occurs after the control is minimized.</td></tr>
 <tr>
 <td>
-{{ '[ControlRestored](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlRestored_EV.html)' | markdownify }}</td><td>
+{{ '[ControlRestored](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlRestored_EV.html)' | markdownify }}</td><td>
 This event occurs after the control is restored.</td></tr>
 <tr>
 <td>
-{{ '[DockAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockAllow_EV.html)' | markdownify }}</td><td>
+{{ '[DockAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockAllow_EV.html)' | markdownify }}</td><td>
 The DockAllow event occurs when a docking window is dragged over a potential dock target.</td></tr>
 <tr>
 <td>
-{{ '[DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html)' | markdownify }}</td><td>
+{{ '[DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html)' | markdownify }}</td><td>
 The DockContextMenu event occurs when the right mouse button is clicked over a docking window caption.</td></tr>
 <tr>
 <td>
-{{ '[DockControlActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlActivated_EV.html)' | markdownify }}</td><td>
+{{ '[DockControlActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlActivated_EV.html)' | markdownify }}</td><td>
 The DockControlActivated event occurs when a dockable control gets activated.</td></tr>
 <tr>
 <td>
-{{ '[DockControlDeactivated](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlDeactivated_EV.html)' | markdownify }}</td><td>
+{{ '[DockControlDeactivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlDeactivated_EV.html)' | markdownify }}</td><td>
 The DockControlDeactivated event occurs when a dockable control gets deactivated.</td></tr>
 <tr>
 <td>
-{{ '[DockStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanged_EV.html)' | markdownify }}</td><td>
+{{ '[DockStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanged_EV.html)' | markdownify }}</td><td>
 The DockStateChanged event occurs immediately after a dock operation.</td></tr>
 <tr>
 <td>
-{{ '[DockStateChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanging_EV.html)' | markdownify }}</td><td>
+{{ '[DockStateChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanging_EV.html)' | markdownify }}</td><td>
 The DockStateChanging event occurs just before a dock operation takes place.</td></tr>
 <tr>
 <td>
-{{ '[DockStateUnavailable](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateUnavailable_EV.html)' | markdownify }}</td><td>
+{{ '[DockStateUnavailable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateUnavailable_EV.html)' | markdownify }}</td><td>
 The DockStateUnavailable event occurs if serialized information is not available for a dockable control while loading a persisted dock state.</td></tr>
 <tr>
 <td>
-{{ '[DockVisibilityChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanged_EV.html)' | markdownify }}</td><td>
+{{ '[DockVisibilityChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanged_EV.html)' | markdownify }}</td><td>
 The DockVisibilityChanged event occurs after a control's DockVisibility state is changed.</td></tr>
 <tr>
 <td>
-{{ '[DockVisibilityChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanging_EV.html)' | markdownify }}</td><td>
+{{ '[DockVisibilityChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanging_EV.html)' | markdownify }}</td><td>
 The DockVisibilityChanging event occurs when the DockVisibility state of control is changed.</td></tr>
 <tr>
 <td>
-{{ '[DragAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragAllow_EV.html)' | markdownify }}</td><td>
+{{ '[DragAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragAllow_EV.html)' | markdownify }}</td><td>
 The DragAllow event occurs when a docking window is dragged.</td></tr>
 <tr>
 <td>
-{{ '[DragFeedbackStart](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStart_EV.html)' | markdownify }}</td><td>
+{{ '[DragFeedbackStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStart_EV.html)' | markdownify }}</td><td>
 The DragFeedbackStart event occurs before starting the feedback of drag operation.</td></tr>
 <tr>
 <td>
-{{ '[DragFeedbackStop](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStop_EV.html)' | markdownify }}</td><td>
+{{ '[DragFeedbackStop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStop_EV.html)' | markdownify }}</td><td>
 The DragFeedbackStop event occurs immediately after completing the feedback of drag operation.</td></tr>
 <tr>
 <td>
-{{ '[ImageListChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ImageListChanged_EV.html)' | markdownify }}</td><td>
+{{ '[ImageListChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ImageListChanged_EV.html)' | markdownify }}</td><td>
 Occurs when the ImageList property is changed.</td></tr>
 <tr>
 <td>
-{{ '[InitializeControlOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html)' | markdownify }}</td><td>
+{{ '[InitializeControlOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html)' | markdownify }}</td><td>
 The InitializeControlOnLoad event occurs when the docking manager is not able to locate a control during a LoadDockState call.</td></tr>
 <tr>
 <td>
-{{ '[NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html)' | markdownify }}</td><td>
+{{ '[NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html)' | markdownify }}</td><td>
 The NewDockStateBeginLoad event occurs before loading a new dock state.</td></tr>
 <tr>
 <td>
-{{ '[NewDockStateEndLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateEndLoad_EV.html)' | markdownify }}</td><td>
+{{ '[NewDockStateEndLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateEndLoad_EV.html)' | markdownify }}</td><td>
 The NewDockStateEndLoad event occurs immediately after a new dock state is loaded.</td></tr>
 <tr>
 <td>
-{{ '[ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html)' | markdownify }}</td><td>
+{{ '[ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html)' | markdownify }}</td><td>
 The ProvideGraphicsItems event occurs whenever a dockable control caption needs to be painted.</td></tr>
 <tr>
 <td>
-{{ '[ProvidePersistenceID](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvidePersistenceID_EV.html)' | markdownify }}</td><td>
+{{ '[ProvidePersistenceID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvidePersistenceID_EV.html)' | markdownify }}</td><td>
 Allows you to specify a unique ID that is used to distinguish the persistence information of different instances of the form type.</td></tr>
 <tr>
 <td>
-{{ '[TransferredToManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferredToManager_EV.html)' | markdownify }}</td><td>
+{{ '[TransferredToManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferredToManager_EV.html)' | markdownify }}</td><td>
 The TransferredToManager event occurs after a dockable control that belongs to some other docking manager has been transferred to the docking layout hosted by this docking manager.</td></tr>
 <tr>
 <td>
-{{ '[TransferringFromManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferringFromManager_EV.html)' | markdownify }}</td><td>
+{{ '[TransferringFromManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferringFromManager_EV.html)' | markdownify }}</td><td>
 The TransferringFromManager event occurs when a dockable control hosted by this docking manager is transferred to the docking layout hosted by some other docking manager.</td></tr>
 </table>
 
@@ -141,11 +141,11 @@ This section describes the events that are raised while activating and deactivat
 
 ### DockControlActivated event
 
-The [DockControlActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlActivated_EV.html) event occurs when a dockable control gets activated. When the user clicks the dockable control or the docked control, this event will be triggered. It can display the control name which has been activated currently.
+The [DockControlActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlActivated_EV.html) event occurs when a dockable control gets activated. When the user clicks the dockable control or the docked control, this event will be triggered. It can display the control name which has been activated currently.
 
 #### Event data
 
-The event handler receives a [DockActivationChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
+The event handler receives a [DockActivationChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -154,7 +154,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 The control which has been activated now.</td></tr>
 </table>
 
@@ -198,11 +198,11 @@ End Sub
 
 ### DockControlDeactivated event
 
-The [DockControlDeactivated](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlDeactivated_EV.html) event is occurred whenever a dockable control or a docked control loses its focus. In other words, when a dockable control is deactivated, this event will be fired. This event can display the deactivated control name.
+The [DockControlDeactivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControlDeactivated_EV.html) event is occurred whenever a dockable control or a docked control loses its focus. In other words, when a dockable control is deactivated, this event will be fired. This event can display the deactivated control name.
 
 #### Event data
 
-The event handler receives a [DockedActivationChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
+The event handler receives a [DockedActivationChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockActivationChangedEventArgs.html) argument containing data related to this event. The following DockActivationChangedEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -211,7 +211,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 The control which has been deactivated now.</td></tr>
 </table>
 
@@ -260,7 +260,7 @@ End Sub
 
 ### DockAllow event
 
-The [DockAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockAllow_EV.html) event occurs when a docking window is dragged over a potential dock target. This event helps to cancel the operation that is performed during the docking of windows.
+The [DockAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockAllow_EV.html) event occurs when a docking window is dragged over a potential dock target. This event helps to cancel the operation that is performed during the docking of windows.
 
 {% tabs %}
 
@@ -292,11 +292,11 @@ This section describes events that are raised at starting and ending of auto hid
 
 ### AutoHideAnimationStart event
 
-The [AutoHideAnimationStart](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStart_EV.html) event occurs before starting an auto hide animation. When users try to click the auto hide button to hide the docked control, this event will be triggered.
+The [AutoHideAnimationStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStart_EV.html) event occurs before starting an auto hide animation. When users try to click the auto hide button to hide the docked control, this event will be triggered.
 
 #### Event data
 
-The [AutoHideAnimationEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventHandler.html) receives an argument of [AutoHideAnimationEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs.html) type containing data related to this event. The following AutoHideAnimationEventArgs members provide information specific to this event.
+The [AutoHideAnimationEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventHandler.html) receives an argument of [AutoHideAnimationEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs.html) type containing data related to this event. The following AutoHideAnimationEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -305,11 +305,11 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Bounds](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~Bounds.html)' | markdownify }}</td><td>
+{{ '[Bounds](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~Bounds.html)' | markdownify }}</td><td>
 Displays the bounds of the auto hidden control.</td></tr>
 <tr>
 <td>
-{{ '[DockBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~DockBorder.html)' | markdownify }}</td><td>
+{{ '[DockBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~DockBorder.html)' | markdownify }}</td><td>
 Provides HostForm border along which the AutoHide tab is aligned.</td></tr>
 </table>
 
@@ -374,11 +374,11 @@ End Sub
 
 ### AutoHideAnimationStop event
 
-The [AutoHideAnimationStop](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStop_EV.html) event occurs immediately after the auto hide animation ends. When users click the auto hide button, the docked control will be hidden and this event will be triggered.
+The [AutoHideAnimationStop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideAnimationStop_EV.html) event occurs immediately after the auto hide animation ends. When users click the auto hide button, the docked control will be hidden and this event will be triggered.
 
 #### Event data
 
-The [AutoHideAnimationEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventHandler.html) receives an [AutoHideAnimationEventArgs] (https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs.html) argument containing data related to this event. The following AutoHideAnimationEventArgs members provide information specific to this event.
+The [AutoHideAnimationEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventHandler.html) receives an [AutoHideAnimationEventArgs] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs.html) argument containing data related to this event. The following AutoHideAnimationEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -387,11 +387,11 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Bounds](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~Bounds.html)' | markdownify }}</td><td>
+{{ '[Bounds](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~Bounds.html)' | markdownify }}</td><td>
 Displays the bounds of the auto hidden control.</td></tr>
 <tr>
 <td>
-{{ '[DockBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~DockBorder.html)' | markdownify }}</td><td>
+{{ '[DockBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideAnimationEventArgs~DockBorder.html)' | markdownify }}</td><td>
 Provides HostForm border along which the AutoHide tab is aligned.</td></tr>
 </table>
 
@@ -456,11 +456,11 @@ End Sub
 
 ## Caption double-click
 
-The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~OnCaptionDoubleClick_EV.html) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDoubleClickOnCaption.html) property is set to `false`. It displays the currently active control name.
+The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~OnCaptionDoubleClick_EV.html) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDoubleClickOnCaption.html) property is set to `false`. It displays the currently active control name.
 
 ### Event data
 
-The event handler receives a [DockControlMouseSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlMouseSelection.html) argument that contains data related to this event. The following DockControlMouseSelection members provide information specific to this event.
+The event handler receives a [DockControlMouseSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlMouseSelection.html) argument that contains data related to this event. The following DockControlMouseSelection members provide information specific to this event.
 
 <table>
 <tr>
@@ -469,7 +469,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlMouseSelection~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlMouseSelection~Control.html)' | markdownify }}</td><td>
 Gets the control that is activated.</td></tr>
 </table>
 
@@ -523,11 +523,11 @@ This section discusses the following events that are related to the ContextMenu:
 
 ### AutoHideTabContextMenu event
 
-The [AutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabContextMenu_EV.html) event will be triggered when users click the right mouse button over an auto hidden tab control. The AutoHide window ContextMenu can be enabled or disabled by using the [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableAutoHideTabContextMenu.html) property. Its default value is `true`.
+The [AutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabContextMenu_EV.html) event will be triggered when users click the right mouse button over an auto hidden tab control. The AutoHide window ContextMenu can be enabled or disabled by using the [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableAutoHideTabContextMenu.html) property. Its default value is `true`.
 
 #### Event data
 
-The event handler receives an [AutoHideTabContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs.html) argument containing data related to this event. The following AutoHideTabContextMenuEventArgs members provide information specific to this event.
+The event handler receives an [AutoHideTabContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs.html) argument containing data related to this event. The following AutoHideTabContextMenuEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -536,11 +536,11 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs~ContextMenu.html)' | markdownify }}</td><td>
+{{ '[ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs~ContextMenu.html)' | markdownify }}</td><td>
 Gets/sets the context menu to be displayed.</td></tr>
 <tr>
 <td>
-{{ '[Side](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs~Side.html)' | markdownify }}</td><td>
+{{ '[Side](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoHideTabContextMenuEventArgs~Side.html)' | markdownify }}</td><td>
 Returns the side at which the AutoHideTab is aligned.</td></tr>
 </table>
 
@@ -576,16 +576,16 @@ End Sub
 
 ### DockContextMenu event
 
-The [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event gets fired when the mouse is right-clicked over a docking window caption.
+The [DockContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockContextMenu_EV.html) event gets fired when the mouse is right-clicked over a docking window caption.
 
 #### Event data
 
-The event handler has an argument of [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) type. That argument has two properties such as [ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html) of PopupMenu type and [Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html) of control type. The ContextMenu gives access to the menu that is to be displayed and owner identifies the docked control. So, by checking the owner object, you can remove the context menu for a particular control.
+The event handler has an argument of [DockContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs.html) type. That argument has two properties such as [ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html) of PopupMenu type and [Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html) of control type. The ContextMenu gives access to the menu that is to be displayed and owner identifies the docked control. So, by checking the owner object, you can remove the context menu for a particular control.
 
 The `DockContextMenuEventArgs` allows us to,
 
-* Edit the context menu that appears when right-clicked the caption bar using [DockContextMenuEventArgs.ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html).
-* Retrieve the control that displays the context menu using [DockContextMenuEventArgs.Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html).
+* Edit the context menu that appears when right-clicked the caption bar using [DockContextMenuEventArgs.ContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~ContextMenu.html).
+* Retrieve the control that displays the context menu using [DockContextMenuEventArgs.Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockContextMenuEventArgs~Owner.html).
 
 Create a simple docking window. Add the required namespaces. Declare and initialize the bar items to be placed in the context menu as shown in the following code.
 
@@ -670,11 +670,11 @@ End Sub
 
 ### DockMenuClick event
 
-[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html) event gets fired, when the re-dock context menu item has been clicked. The menu button of docked controls provide options to change the docking position. Whenever users try to re-dock the control to some other position, the DockMenuClick event will be triggered. The provided options are left, top, right, and bottom. These re-dock context menu item option is available only in `VS2008` Docking Style. The re-dock style can be displayed using the below code.
+[DockMenuClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockMenuClick_EV.html) event gets fired, when the re-dock context menu item has been clicked. The menu button of docked controls provide options to change the docking position. Whenever users try to re-dock the control to some other position, the DockMenuClick event will be triggered. The provided options are left, top, right, and bottom. These re-dock context menu item option is available only in `VS2008` Docking Style. The re-dock style can be displayed using the below code.
 
 #### Event data
 
-The [DockMenuClickEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventHandler.html) receives a [DockMenuClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs.html) argument containing data related to this event. The following DockMenuClickEventArgs members provide information specific to this event.
+The [DockMenuClickEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventHandler.html) receives a [DockMenuClickEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs.html) argument containing data related to this event. The following DockMenuClickEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -683,7 +683,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs~DockingStyle.html)' | markdownify }}</td><td>
+{{ '[DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockMenuClickEventArgs~DockingStyle.html)' | markdownify }}</td><td>
 Returns the docking of the window.</td></tr>
 </table>
 
@@ -727,15 +727,15 @@ End Sub
 
 ## Notify maximize dock control
 
-[ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html) and [ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html) events of docking manager get triggered while maximizing the docked control.
+[ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html) and [ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html) events of docking manager get triggered while maximizing the docked control.
 
 ### ControlMaximizing event
 
-The [ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html) event will be raised, when users click the maximize button in the docked controls or when the control will be maximized.
+The [ControlMaximizing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximizing_EV.html) event will be raised, when users click the maximize button in the docked controls or when the control will be maximized.
 
 #### Event data
 
-The event handler receives an argument of [ControlMaximizeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs.html) type containing data related to this event. The following ControlMaximizeEventArgs members provide information specific to this event.
+The event handler receives an argument of [ControlMaximizeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs.html) type containing data related to this event. The following ControlMaximizeEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -744,7 +744,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs~Cancel.html)' | markdownify }}</td><td>
+{{ '[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizeEventArgs~Cancel.html)' | markdownify }}</td><td>
 Gets/sets value that indicates whether to cancel the operation or not.</td></tr>
 </table>
  
@@ -796,11 +796,11 @@ End Sub
 
 ### ControlMaximized event
 
-The docked control gets maximized, when the maximized button of the docked control is clicked. The [ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html) event will be triggered after the control is maximized.
+The docked control gets maximized, when the maximized button of the docked control is clicked. The [ControlMaximized](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMaximized_EV.html) event will be triggered after the control is maximized.
 
 #### Event data
 
-The event handler receives an argument of [ControlMaximizedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizedEventArgs.html) type containing data related to this event.
+The event handler receives an argument of [ControlMaximizedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMaximizedEventArgs.html) type containing data related to this event.
 
 {% tabs %}
 
@@ -851,11 +851,11 @@ End Sub
 
 ## Notify restore
 
-The [ControlRestored](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlRestored_EV.html) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
+The [ControlRestored](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlRestored_EV.html) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
 
 #### Event data
 
-The event handler receives an argument of [ControlRestoredEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs.html) type containing data related to this event. The following ControlRestoredEventArgs members provide information specific to this event.
+The event handler receives an argument of [ControlRestoredEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs.html) type containing data related to this event. The following ControlRestoredEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -864,7 +864,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[PreviousSizeState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs~PreviousSizeState.html)' | markdownify }}</td><td>
+{{ '[PreviousSizeState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlRestoredEventArgs~PreviousSizeState.html)' | markdownify }}</td><td>
 Returns previous size state of changing control.</td></tr>
 </table>
 
@@ -907,7 +907,7 @@ End Sub
 
 ## Notify minimize dock control
 
-The [ControlMinimized](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMinimized_EV.html) event is fired after the control is minimized using the minimize option of the docked control. This event can display the control name using the control parameter in the ControlMinimizedEventArgs(https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMinimizedEventArgs.html).
+The [ControlMinimized](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ControlMinimized_EV.html) event is fired after the control is minimized using the minimize option of the docked control. This event can display the control name using the control parameter in the ControlMinimizedEventArgs(https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlMinimizedEventArgs.html).
 
 <table>
 <tr>
@@ -916,7 +916,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlSizeStateChangedEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlSizeStateChangedEventArgs~Control.html)' | markdownify }}</td><td>
 Specifies the minimized docked control.</td></tr>
 </table>
 
@@ -970,11 +970,11 @@ This section covers the following events:
 
 ### DockStateChanged event
 
-The [DockStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanged_EV.html) event will be raised immediately when the user changes the dock state of the control.
+The [DockStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanged_EV.html) event will be raised immediately when the user changes the dock state of the control.
 
 #### Event data
 
-The event handler receives an argument of [DockStateChangeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs.html) type containing data related to this event. The following DockStateChangeEventArgs members provide information specific to this event.
+The event handler receives an argument of [DockStateChangeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs.html) type containing data related to this event. The following DockStateChangeEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -983,7 +983,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Controls](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Controls.html)' | markdownify }}</td><td>
+{{ '[Controls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Controls.html)' | markdownify }}</td><td>
 Get the collection of controls undergoing the dock state transfer.</td></tr>
 </table>
 
@@ -1058,11 +1058,11 @@ End Sub
 
 ### DockStateChanging event
 
-The [DockStateChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanging_EV.html) event will be triggered before changing the dock state of the particular control.
+The [DockStateChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateChanging_EV.html) event will be triggered before changing the dock state of the particular control.
 
 #### Event data
 
-The event handler receives an argument of [DockStateChangeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs.html) type containing data related to this event. The following DockStateChangeEventArgs members provides information specific to this event.
+The event handler receives an argument of [DockStateChangeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs.html) type containing data related to this event. The following DockStateChangeEventArgs members provides information specific to this event.
 
 <table>
 <tr>
@@ -1071,7 +1071,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Controls](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Controls.html)' | markdownify }}</td><td>
+{{ '[Controls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Controls.html)' | markdownify }}</td><td>
 Get the collection of controls undergoing the dock state transfer.</td></tr>
 </table>
 
@@ -1144,11 +1144,11 @@ End Sub
 
 ### DockStateUnavailable event
 
-The [DockStateUnavailable](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateUnavailable_EV.html) event will be triggered if serialized information is not available for a dockable control while loading a persisted dock state.
+The [DockStateUnavailable](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockStateUnavailable_EV.html) event will be triggered if serialized information is not available for a dockable control while loading a persisted dock state.
 
 #### Event data
 
-The event handler receives an argument of [DockStateUnavailableEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateUnavailableEventArgs.html) type containing data related to this event. The following DockStateUnavailableEventArgs members provide information specific to this event.
+The event handler receives an argument of [DockStateUnavailableEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateUnavailableEventArgs.html) type containing data related to this event. The following DockStateUnavailableEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1157,7 +1157,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 Gets the name of the control.</td></tr>
 </table>
 
@@ -1198,7 +1198,7 @@ End Sub
 
 ### NewDockStateBeginLoad event
 
-The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html) event occurs before loading a new dock state of the particular control. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
+The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateBeginLoad_EV.html) event occurs before loading a new dock state of the particular control. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
 
 {% tabs %}
 
@@ -1243,7 +1243,7 @@ End Sub
 
 ### NewDockStateEndLoad event
 
-The [NewDockStateEndLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateEndLoad_EV.html) event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
+The [NewDockStateEndLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~NewDockStateEndLoad_EV.html) event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
 
 {% tabs %}
 
@@ -1297,11 +1297,11 @@ This section covers the following events:
 
 ### DockVisibilityChanged event
 
-This event occurs after the DockVisibility state of a control has been changed. When users click the close button, the control visibility changes, and the [DockVisibilityChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanged_EV.html) event will be handled. You can also use the [DockingManager.GetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockVisibility.html) function to learn the current status of the docking window.
+This event occurs after the DockVisibility state of a control has been changed. When users click the close button, the control visibility changes, and the [DockVisibilityChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockVisibilityChanged_EV.html) event will be handled. You can also use the [DockingManager.GetDockVisibility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockVisibility.html) function to learn the current status of the docking window.
 
 #### Event data
 
-The event handler receives an argument of [DockVisibilityChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockVisibilityChangedEventArgs.html) type containing data related to this event. The following DockVisibilityChangedEventArgs members provide information specific to this event.
+The event handler receives an argument of [DockVisibilityChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockVisibilityChangedEventArgs.html) type containing data related to this event. The following DockVisibilityChangedEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1310,7 +1310,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 Gets the control undergoing the visibility change.</td></tr>
 </table>
 
@@ -1402,11 +1402,11 @@ This section covers the events which occurs while performing the dragging operat
 
 ### DragAllow event
 
-The [DragAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragAllow_EV.html) event is triggered when a docking window is dragged. If users want to dock a control, drag the control to dock it to a particular target. This event will be triggered, when the dragging process starts.
+The [DragAllow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragAllow_EV.html) event is triggered when a docking window is dragged. If users want to dock a control, drag the control to dock it to a particular target. This event will be triggered, when the dragging process starts.
 
 #### Event data
 
-The [DragAllowEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventHandler.html) receives an argument of [DragAllowEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventArgs.html) type containing data related to this event. The following DragAllowEventArgs members provides information specific to this event.
+The [DragAllowEventHandler](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventHandler.html) receives an argument of [DragAllowEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventArgs.html) type containing data related to this event. The following DragAllowEventArgs members provides information specific to this event.
 
 <table>
 <tr>
@@ -1419,7 +1419,7 @@ Description</th></tr>
 This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DragAllowEventArgs~Control.html)' | markdownify }}</td><td>
 Drags the control.</td></tr>
 </table>
 
@@ -1477,7 +1477,7 @@ End Sub
 
 ### DragFeedbackStart event
 
-The [DragFeedbackStart](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStart_EV.html) event is fired before starting the feedback of a drag operation. When the docked control is dragged from its current position to another position, this event will be raised. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackEventsOnSplitters.html) property. The default value is `true`.
+The [DragFeedbackStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStart_EV.html) event is fired before starting the feedback of a drag operation. When the docked control is dragged from its current position to another position, this event will be raised. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackEventsOnSplitters.html) property. The default value is `true`.
 
 {% tabs %}
 
@@ -1551,7 +1551,7 @@ End Sub
 
 ### DragFeedbackStop event
 
-The [DragFeedbackStop](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStop_EV.html) event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position to another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback will be stopped and the DragFeedbackStop event will be triggered. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackEventsOnSplitters.html) property. The default value of this property is `true`.
+The [DragFeedbackStop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackStop_EV.html) event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position to another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback will be stopped and the DragFeedbackStop event will be triggered. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DragFeedbackEventsOnSplitters.html) property. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -1591,11 +1591,11 @@ This section discusses the following LinkedManager events:
 
 ### TransferredToManager event
 
-The [TransferredToManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferredToManager_EV.html) event occurs when the dockable control that previously belonged to some other docking manager has been transferred to the docking layout hosted by the current docking manager.
+The [TransferredToManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferredToManager_EV.html) event occurs when the dockable control that previously belonged to some other docking manager has been transferred to the docking layout hosted by the current docking manager.
 
 #### Event data
 
-The event handler receives an argument of [TransferManagerEventArgs] (https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TransferManagerEventArgs.html) type containing data related to this event. The following TransferManagerEventArgs members provide information specific to this event.
+The event handler receives an argument of [TransferManagerEventArgs] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TransferManagerEventArgs.html) type containing data related to this event. The following TransferManagerEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1604,7 +1604,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 Gets the control that is undergoing the transfer process.</td></tr>
 </table>
 
@@ -1653,11 +1653,11 @@ End Sub
 
 ### TransferringFromManager event
 
-The [TransferringFromManager](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferringFromManager_EV.html) event will be raised when a dockable control hosted by the docking manager is transferred to the docking layout hosted by some other docking manager.
+The [TransferringFromManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferringFromManager_EV.html) event will be raised when a dockable control hosted by the docking manager is transferred to the docking layout hosted by some other docking manager.
 
 #### Event data
 
-The event handler receives an argument of [TransferManagerEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TransferManagerEventArgs.html) type containing data related to this event. The following TransferManagerEventArgs members provide information specific to this event.
+The event handler receives an argument of [TransferManagerEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TransferManagerEventArgs.html) type containing data related to this event. The following TransferManagerEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1666,7 +1666,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockControlEventArgs~Control.html)' | markdownify }}</td><td>
 Gets the control that is undergoing the transfer process.</td></tr>
 </table>
 
@@ -1715,11 +1715,11 @@ End Sub
 
 ## InitializeControlOnLoad event
 
-The [InitializeControlOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html) event occurs when the docking manager is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) call.
+The [InitializeControlOnLoad](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html) event occurs when the docking manager is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) call.
 
 ### Event data
 
-The event handler receives an argument of [InitializeControlOnLoadEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html) type containing data related to this event. The following InitializeControlOnLoadEventArgs members provides information specific to this event.
+The event handler receives an argument of [InitializeControlOnLoadEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~InitializeControlOnLoad_EV.html) type containing data related to this event. The following InitializeControlOnLoadEventArgs members provides information specific to this event.
 
 <table>
 <tr>
@@ -1728,7 +1728,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ControlName](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.InitializeControlOnLoadEventArgs~ControlName.html)' | markdownify }}</td><td>
+{{ '[ControlName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.InitializeControlOnLoadEventArgs~ControlName.html)' | markdownify }}</td><td>
 Provides name property of the control.</td></tr>
 </table>
 
@@ -1847,7 +1847,7 @@ End Sub
 
 ## ImageListChanged event
 
-When the image list property is changed, the [ImageListChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ImageListChanged_EV.html) event will be raised. Every docked control has [SetDockIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockIcon.html) property to set icons for the control. When this property is changed, the above event will be triggered.
+When the image list property is changed, the [ImageListChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ImageListChanged_EV.html) event will be raised. Every docked control has [SetDockIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockIcon.html) property to set icons for the control. When this property is changed, the above event will be triggered.
 
 {% tabs %}
 
@@ -1893,11 +1893,11 @@ End Sub
 
 ## ProvideGraphicsItems event
 
-The [ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html) event is raised whenever a dockable control caption needs to be painted. The background, foreground, and font of the docked control caption can be customized by using this event. The docked control name, which is to be painted can be displayed using the control property.
+The [ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html) event is raised whenever a dockable control caption needs to be painted. The background, foreground, and font of the docked control caption can be customized by using this event. The docked control name, which is to be painted can be displayed using the control property.
 
 ### Event data
 
-The event handler receives an argument of [ProvideGraphicsItemsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs.html) type containing data related to this event. The following ProvideGraphicsItemsEventArgs members provide information specific to this event.
+The event handler receives an argument of [ProvideGraphicsItemsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs.html) type containing data related to this event. The following ProvideGraphicsItemsEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -1906,31 +1906,31 @@ The event handler receives an argument of [ProvideGraphicsItemsEventArgs](https:
 Description</th></tr>
 <tr>
 <td>
-{{ '[CaptionBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBackground.html)' | markdownify }}</td><td>
+{{ '[CaptionBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBackground.html)' | markdownify }}</td><td>
 Gets or sets the brush to be used for drawing the caption background.</td></tr>
 <tr>
 <td>
-{{ '[CaptionBounds](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBounds.html)' | markdownify }}</td><td>
+{{ '[CaptionBounds](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionBounds.html)' | markdownify }}</td><td>
 Gets the bounds of the caption.</td></tr>
 <tr>
 <td>
-{{ '[CaptionFont](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionFont.html)' | markdownify }}</td><td>
+{{ '[CaptionFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionFont.html)' | markdownify }}</td><td>
 Gets or sets the font to be used for the caption text</td></tr>
 <tr>
 <td>
-{{ '[CaptionForeground](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionForeground.html)' | markdownify }}</td><td>
+{{ '[CaptionForeground](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~CaptionForeground.html)' | markdownify }}</td><td>
 Gets or sets the color to be used for drawing the caption text and buttons.</td></tr>
 <tr>
 <td>
-{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~Control.html)' | markdownify }}</td><td>
+{{ '[Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~Control.html)' | markdownify }}</td><td>
 Gets the dockable control for which the caption is being drawn.</td></tr>
 <tr>
 <td>
-{{ '[IsActiveCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~IsActiveCaption.html)' | markdownify }}</td><td>
+{{ '[IsActiveCaption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ProvideGraphicsItemsEventArgs~IsActiveCaption.html)' | markdownify }}</td><td>
 Gets the active/inactive state of the docking window.</td></tr>
 </table>
 
-N> If the control is in floating state, [DockingManager.ProvideGraphicsItems]([ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html)) the event will not be triggered.
+N> If the control is in floating state, [DockingManager.ProvideGraphicsItems]([ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html)) the event will not be triggered.
 
 {% tabs %}
 
@@ -2013,7 +2013,7 @@ This event allows you to specify a unique ID to distinguish the persistence info
 
 ### Event data
 
-The event handler receives an argument of [ProvidePersistenceIDEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ProvidePersistenceIDEventArgs.html) type containing data related to this event. The following ProvidePersistenceIDEventArgs members provide information specific to this event.
+The event handler receives an argument of [ProvidePersistenceIDEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ProvidePersistenceIDEventArgs.html) type containing data related to this event. The following ProvidePersistenceIDEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -2022,7 +2022,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[PersistenceID](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ProvidePersistenceIDEventArgs~PersistenceID.html)' | markdownify }}</td><td>
+{{ '[PersistenceID](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ProvidePersistenceIDEventArgs~PersistenceID.html)' | markdownify }}</td><td>
 Allows you to specify a unique ID.</td></tr>
 </table>
 
