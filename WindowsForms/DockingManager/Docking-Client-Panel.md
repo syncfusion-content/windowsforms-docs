@@ -38,11 +38,11 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[SizeToFit](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingClientPanel~SizeToFit.html)' | markdownify }}</td><td>
+{{ '[SizeToFit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingClientPanel~SizeToFit.html)' | markdownify }}</td><td>
 Gets or sets a value indicating whether the control is sized to fill the form's area.</td></tr>
 <tr>
 <td>
-{{ '[BorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/tools/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingClientPanel~BorderStyle.html)' | markdownify }}</td><td>
+{{ '[BorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingClientPanel~BorderStyle.html)' | markdownify }}</td><td>
 Indicates the border style of the control.</td></tr>
 </table>
 
