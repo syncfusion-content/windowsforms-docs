@@ -730,7 +730,6 @@ Syncfusion.Shared.Windows<br/>
 </td>
 <td>
 Syncfusion.Diagram.Windows<br/>
-Syncfusion.Diagram.Base<br/>
 </td>
 </tr>
 </table>
