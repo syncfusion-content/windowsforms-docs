@@ -13,55 +13,7 @@ This section provides a quick overview for working with the pivot chart for WinF
 
 ## Assembly deployment
 
-The following list of assemblies need to be added as reference to use PivotChart control in the application.
-
-<table>
-<tr>
-<th>
-Required assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.Chart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Chart.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of ChartControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotAnalysis.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis_namespace.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.PivotAnalysis.Windows assembly contains classes that handles UI operations and other fundamentals of PivotGrid control.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotChart.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart_namespace.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.PivotChart.Windows assembly contains classes that handles UI operations and other fundamentals of PivotChart control.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotAnalysis.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.PivotAnalysis.Base allows you to easily access, manipulate, and display your data in a variety of configurations.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
-</table>
-
-In order to export PivotChart control into Excel, the following assemblies need to be referred.
-
-<table>
-<tr>
-<th>
-Optional assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.PivotConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows.html)'| markdownify }} <br/><br/></td><td>
-Syncfusion.PivotConverter.Windows contains classes that provides the functionality of exporting the PivotChart Control to an Excel sheet. <br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base.html)'| markdownify }}<br/><br/></td><td>
-Syncfusion.XlsIO.Base. contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#pivot-chart) section to get the list of assemblies or NuGet package needs to be added as reference to use the pivot chart control in any application.
 
 ## Creating application with PivotChart
 
