@@ -31,7 +31,7 @@ In case you are unable to find the information that you are looking for in the s
 
 ## Getting Started
 
-<table spacing="2" margin = "0" padding="0" border="0">
+<table>
 <tr>
 <td>
 {{'**GRID**'| markdownify }}
@@ -48,7 +48,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[Cell Grid](https://help.syncfusion.com/windowsforms/grid)'| markdownify }}
+{{'[SfDataGrid](https://help.syncfusion.com/windowsforms/sflistview)'| markdownify }}
 </td>
 <td>
 {{'[Chart](https://help.syncfusion.com/windowsforms/chart)'| markdownify }}
@@ -57,12 +57,12 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Predictive Analytics](https://help.syncfusion.com/windowsforms/predictive-analytics)'| markdownify }}
 </td>
 <td>
-{{'[Numeric Text Box](https://help.syncfusion.com/windowsforms/sfnumerictextbox)'| markdownify }}
+{{'[Autocomplete](https://help.syncfusion.com/windowsforms/autocomplete)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Data Grid](https://help.syncfusion.com/windowsforms/sfdatagrid)'| markdownify }}
+{{'[SfListView](https://help.syncfusion.com/windowsforms/sflistview)'| markdownify }}
 </td>
 <td>
 {{'[Sparkline](https://help.syncfusion.com/windowsforms/sparkline)'| markdownify }}
@@ -71,35 +71,50 @@ In case you are unable to find the information that you are looking for in the s
 {{'**NAVIGATION**'| markdownify }}
 </td>
 <td>
-{{'[Autocomplete](https://help.syncfusion.com/windowsforms/autocomplete)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[Grid Grouping Control](https://help.syncfusion.com/windowsforms/gridgrouping)'| markdownify }}
-</td>
-<td>
-{{'[Diagramming](https://help.syncfusion.com/windowsforms/diagram)'| markdownify }}
-</td>
-<td>
-{{'[Advanced Ribbon Control](https://help.syncfusion.com/windowsforms/ribboncontroladv)'| markdownify }}
-</td>
-<td>
 {{'[Calculator](https://help.syncfusion.com/windowsforms/calculator)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Grid List Control](https://help.syncfusion.com/windowsforms/gridlist)'| markdownify }}
+{{'[GridControl](https://help.syncfusion.com/windowsforms/grid)'| markdownify }}
+</td>
+<td>
+{{'[Diagram](https://help.syncfusion.com/windowsforms/diagram)'| markdownify }}
+</td>
+<td>
+{{'[RibbonControlAdv](https://help.syncfusion.com/windowsforms/ribboncontroladv)'| markdownify }}
+</td>
+<td>
+{{'[SyntaxEditor](https://help.syncfusion.com/windowsforms/syntaxeditor)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping)'| markdownify }}
 </td>
 <td>
 {{'[Barcode](https://help.syncfusion.com/windowsforms/barcode)'| markdownify }}
 </td>
 <td>
-{{'[Form](https://help.syncfusion.com/windowsforms/sfform)'| markdownify }}
+{{'[RibbonPanel MergeContainer](https://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-merging)'| markdownify }}
 </td>
 <td>
-{{'[Syntax Editor](https://help.syncfusion.com/windowsforms/syntaxeditor)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridListControl](https://help.syncfusion.com/windowsforms/gridlist)'| markdownify }}
+
+</td>
+<td>
+{{'[Schedule](https://help.syncfusion.com/windowsforms/schedule)'| markdownify }}
+</td>
+<td>
+{{'[RibbonForm](https://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-form)'| markdownify }}
+</td>
+<td>
+{{'[ComboBox Autocomplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -107,27 +122,27 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Spreadsheet](https://help.syncfusion.com/windowsforms/spreadsheet)'| markdownify }}
 </td>
 <td>
-{{'[Scheduler](https://help.syncfusion.com/windowsforms/schedule)'| markdownify }}
+{{'[BulletGraph](https://help.syncfusion.com/windowsforms/bulletgraph)'| markdownify }}
 </td>
 <td>
-{{'[Office 2007 Form](https://help.syncfusion.com/windowsforms/office2007form)'| markdownify }}
+{{'[SfForm](https://help.syncfusion.com/windowsforms/sfform)'| markdownify }}
 </td>
 <td>
-{{'[ComboBox](https://help.syncfusion.com/windowsforms/sfcombobox)'| markdownify }}
+{{'[ComboBoxBase](https://help.syncfusion.com/windowsforms/comboboxbase)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[ListView](https://help.syncfusion.com/windowsforms/sflistview)'| markdownify }}
+{{'[GridDataBoundGrid (Classic)](https://help.syncfusion.com/windowsforms/databoundgrid)'| markdownify }}
 </td>
 <td>
-{{'[Bullet Graph](https://help.syncfusion.com/windowsforms/bulletgraph)'| markdownify }}
+{{'[Maps](https://help.syncfusion.com/windowsforms/maps)'| markdownify }}
 </td>
 <td>
-{{'[Docking Manager](https://help.syncfusion.com/windowsforms/dockingmanager)'| markdownify }}
+{{'[Office2007Form](https://help.syncfusion.com/windowsforms/office2007form)'| markdownify }}
 </td>
 <td>
-{{'[Combo Box Autocomplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete)'| markdownify }}
+{{'[TrackBarEx](https://help.syncfusion.com/windowsforms/trackbarex)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -135,27 +150,27 @@ In case you are unable to find the information that you are looking for in the s
 {{'**File Formats**'| markdownify }}
 </td>
 <td>
-{{'[Maps](https://help.syncfusion.com/windowsforms/maps)'| markdownify }}
+{{'[TreeMap](https://help.syncfusion.com/windowsforms/treemap)'| markdownify }}
 </td>
 <td>
-{{'[Command Bars Package](https://help.syncfusion.com/windowsforms/commandbar)'| markdownify }}
+{{'[Office2010Form](https://help.syncfusion.com/windowsforms/office2010form)'| markdownify }}
 </td>
 <td>
-{{'[Calendar](https://help.syncfusion.com/windowsforms/sfcalendar)'| markdownify }}
+{{'[SfButton](https://help.syncfusion.com/windowsforms/sfbutton)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Excel](https://help.syncfusion.com/file-formats/xlsio)'| markdownify }}
+{{'[XlsIO](https://help.syncfusion.com/file-formats/xlsio)'| markdownify }}
 </td>
 <td>
-{{'[Tree Map](https://help.syncfusion.com/windowsforms/treemap)'| markdownify }}
+{{'[Radial Gauge](https://help.syncfusion.com/windowsforms/radial-gauge)'| markdownify }}
 </td>
 <td>
-{{'[Group View](https://help.syncfusion.com/windowsforms/groupview)'| markdownify }}
+{{'[DockingManager](https://help.syncfusion.com/windowsforms/dockingmanager)'| markdownify }}
 </td>
 <td>
-{{'[Combo Box Base](https://help.syncfusion.com/windowsforms/comboboxbase)'| markdownify }}
+{{'[ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -163,69 +178,69 @@ In case you are unable to find the information that you are looking for in the s
 {{'[PDF](https://help.syncfusion.com/file-formats/pdf)'| markdownify }}
 </td>
 <td>
-{{'[Radial Gauge](https://help.syncfusion.com/windowsforms/radial-gauge)'| markdownify }}
-</td>
-<td>
-{{'[Multicolumn Tree View](https://help.syncfusion.com/windowsforms/multicolumntreeview)'| markdownify }}
-</td>
-<td>
-{{'[Advanced Track Bar](https://help.syncfusion.com/windowsforms/trackbarex)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[Word](https://help.syncfusion.com/file-formats/docio)'| markdownify }}
-</td>
-<td>
 {{'[Linear Gauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Tree View](https://help.syncfusion.com/windowsforms/treeviewadv)'| markdownify }}
+{{'[CommandBars](https://help.syncfusion.com/windowsforms/commandbar)'| markdownify }}
 </td>
 <td>
-{{'[Button](https://help.syncfusion.com/windowsforms/sfbutton)'| markdownify }}
+{{'[ButtonEdit](https://help.syncfusion.com/windowsforms/buttonedit)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[PDF Viewer](https://help.syncfusion.com/windowsforms/pdfviewer)'| markdownify }}
+{{'[DocIO](https://help.syncfusion.com/file-formats/docio)'| markdownify }}
 </td>
 <td>
 {{'[Digital Gauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)'| markdownify }}
 </td>
 <td>
-{{'[Scroll Frame](https://help.syncfusion.com/windowsforms/sfscrollframe)'| markdownify }}
+{{'[GroupView](https://help.syncfusion.com/windowsforms/groupview)'| markdownify }}
 </td>
 <td>
-{{'[Button Edit](https://help.syncfusion.com/windowsforms/buttonedit)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[PowerPoint](https://help.syncfusion.com/windowsforms/file-formats/presentation)'| markdownify }}
-</td>
-<td>
-{{'[Smith Chart](https://help.syncfusion.com/windowsforms/sfsmithchart)'| markdownify }}
-</td>
-<td>
-{{'[Group Bar](https://help.syncfusion.com/windowsforms/groupbar)'| markdownify }}
-</td>
-<td>
-{{'[Font Combo Box](https://help.syncfusion.com/windowsforms/fontcombobox)'| markdownify }}
+{{'[FontComboBox](https://help.syncfusion.com/windowsforms/fontcombobox)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-
+{{'[DICOM](https://help.syncfusion.com/windowsforms/dicom)'| markdownify }}
 </td>
 <td>
-
+{{'[SfSmithChart](https://help.syncfusion.com/windowsforms/sfsmithchart)'| markdownify }}
 </td>
 <td>
-{{'[XP Taskbar](https://help.syncfusion.com/windowsforms/xptaskbar)'| markdownify }}
+{{'[MulticolumnTreeView](https://help.syncfusion.com/windowsforms/multicolumntreeview)'| markdownify }}
 </td>
 <td>
-{{'[Font List Box](https://help.syncfusion.com/windowsforms/fontlistbox)'| markdownify }}
+{{'[FontListBox](https://help.syncfusion.com/windowsforms/fontlistbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[PDFViewer](https://help.syncfusion.com/windowsforms/pdfviewer)'| markdownify }}
+</td>
+<td>
+{{'**NOTIFICATION**'| markdownify }}
+</td>
+<td>
+{{'[TreeView](https://help.syncfusion.com/windowsforms/treeviewadv)'| markdownify }}
+</td>
+<td>
+{{'[ColorUI](https://help.syncfusion.com/windowsforms/coloruicontrol)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Presentation](https://help.syncfusion.com/windowsforms/file-formats/presentation)'| markdownify }}
+</td>
+<td>
+{{'[SfTooltip](https://help.syncfusion.com/windowsforms/sftooltip)'| markdownify }}
+</td>
+<td>
+{{'[SfScrollFrame](https://help.syncfusion.com/windowsforms/sfscrollframe)'| markdownify }}
+</td>
+<td>
+{{'[BannerText](https://help.syncfusion.com/windowsforms/bannertextprovider)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -233,13 +248,13 @@ In case you are unable to find the information that you are looking for in the s
 {{'**LAYOUT**'| markdownify }}
 </td>
 <td>
-{{'**NOTIFICATION**'| markdownify }}
+{{'[ProgressBarAdv](https://help.syncfusion.com/windowsforms/progressbaradv)'| markdownify }}
 </td>
 <td>
-{{'[XP Task Pane](https://help.syncfusion.com/windowsforms/xptaskpane)'| markdownify }}
+{{'[GroupBar](https://help.syncfusion.com/windowsforms/groupbar)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Image List](https://help.syncfusion.com/windowsforms/imagelistadv)'| markdownify }}
+{{'[EditableList](https://help.syncfusion.com/windowsforms/editablelist)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -247,55 +262,41 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Carousel](https://help.syncfusion.com/windowsforms/carousel)'| markdownify }}
 </td>
 <td>
-{{'[Tooltip](https://help.syncfusion.com/windowsforms/sftooltip)'| markdownify }}
+{{'[StatusBarAdv](https://help.syncfusion.com/windowsforms/statusbaradv)'| markdownify }}
 </td>
 <td>
-{{'[Metro Form](https://help.syncfusion.com/windowsforms/metroform)'| markdownify }}
+{{'[XPTaskbar](https://help.syncfusion.com/windowsforms/xptaskbar)'| markdownify }}
 </td>
 <td>
-{{'[Color UI Control](https://help.syncfusion.com/windowsforms/coloruicontrol)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[Tab Bar Splitter Control](https://help.syncfusion.com/windowsforms/splitter)'| markdownify }}
-</td>
-<td>
-{{'[Advanced Progress Bar](https://help.syncfusion.com/windowsforms/progressbaradv)'| markdownify }}
-</td>
-<td>
-{{'[Mainframe Bar Manager](https://help.syncfusion.com/windowsforms/mainframebarmanager)'| markdownify }}
-</td>
-<td>
-{{'[Banner Text Provider](https://help.syncfusion.com/windowsforms/bannertextprovider)'| markdownify }}
+{{'[CurrencyEdit](https://help.syncfusion.com/windowsforms/currencyedit/)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Tab Splitter Container](https://help.syncfusion.com/windowsforms/tabsplittercontainer)'| markdownify }}
+{{'[TabSplitter Container](https://help.syncfusion.com/windowsforms/tabsplittercontainer)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Status Bar](https://help.syncfusion.com/windowsforms/statusbaradv)'| markdownify }}
+{{'[StatusStripEx](https://help.syncfusion.com/windowsforms/statusstripex)'| markdownify }}
 </td>
 <td>
-{{'[Pop-up Menu](https://help.syncfusion.com/windowsforms/menus)'| markdownify }}
+{{'[XPTaskPane](https://help.syncfusion.com/windowsforms/xptaskpane)'| markdownify }}
 </td>
 <td>
-{{'[Editable List Box](https://help.syncfusion.com/windowsforms/editablelist)'| markdownify }}
+{{'[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Wizard Control](https://help.syncfusion.com/windowsforms/wizard)'| markdownify }}
+{{'[Wizard](https://help.syncfusion.com/windowsforms/wizard)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Status Strip](https://help.syncfusion.com/windowsforms/statusstripex)'| markdownify }}
+{{'[Splash](https://help.syncfusion.com/windowsforms/splash)'| markdownify }}
 </td>
 <td>
-{{'[XP Toolbar](https://help.syncfusion.com/windowsforms/xptoolbar)'| markdownify }}
+{{'[MetroForm](https://help.syncfusion.com/windowsforms/metroform)'| markdownify }}
 </td>
 <td>
-{{'[Currency Text Box](https://help.syncfusion.com/windowsforms/currencytextbox)'| markdownify }}
+{{'[DomainUpdownExt](https://help.syncfusion.com/windowsforms/domainupdownext)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -303,27 +304,27 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Flow Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/flowlayout)'| markdownify }}
 </td>
 <td>
-{{'[Splash Control](https://help.syncfusion.com/windowsforms/splash)'| markdownify }}
+{{'[StatusBarAdvPanel](https://help.syncfusion.com/windowsforms/statusbaradvpanel)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Context Menu Strip](https://help.syncfusion.com/windowsforms/contextmenustripex)'| markdownify }}
+{{'[MainframeBarManager](https://help.syncfusion.com/windowsforms/menus)'| markdownify }}
 </td>
 <td>
-{{'[Date-Time Edit](https://help.syncfusion.com/windowsforms/sfdatetimeedit)'| markdownify }}
+{{'[SfNumeric TextBox](https://help.syncfusion.com/windowsforms/sfnumerictextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Folder Browser](https://help.syncfusion.com/windowsforms/folderbrowser)'| markdownify }}
+{{'[FolderBrowser](https://help.syncfusion.com/windowsforms/folderbrowser)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Status Bar Panel](https://help.syncfusion.com/windowsforms/statusbaradvpanel)'| markdownify }}
+{{'[ToolStripEx](https://help.syncfusion.com/windowsforms/ribboncontroladv/toolstripex)'| markdownify }}
 </td>
 <td>
-{{'[Navigation View](https://help.syncfusion.com/windowsforms/navigationview)'| markdownify }}
+{{'[PopupMenu](https://help.syncfusion.com/windowsforms/menus)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Domain Up-down](https://help.syncfusion.com/windowsforms/domainupdownext)'| markdownify }}
+{{'[DoubleTextBox](https://help.syncfusion.com/windowsforms/doubletextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -331,13 +332,13 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Border Layout](https://help.syncfusion.com/windowsforms/borderlayout)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Tool Strip](https://help.syncfusion.com/windowsforms/toolstripex)'| markdownify }}
+{{'[AutoLabel](https://help.syncfusion.com/windowsforms/autolabel)'| markdownify }}
 </td>
 <td>
-{{'[Tree Navigator](https://help.syncfusion.com/windowsforms/treenavigator)'| markdownify }}
+{{'[XPToolbar](https://help.syncfusion.com/windowsforms/xptoolbar)'| markdownify }}
 </td>
 <td>
-{{'[Double Text Box](https://help.syncfusion.com/windowsforms/doubletextbox)'| markdownify }}
+{{'[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -345,13 +346,13 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Card Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/cardlayout)'| markdownify }}
 </td>
 <td>
-{{'[Autolabel](https://help.syncfusion.com/windowsforms/autolabel)'| markdownify }}
+{{'[SplashPanel](https://help.syncfusion.com/windowsforms/splashpanel)'| markdownify }}
 </td>
 <td>
-{{'[Tab Control](https://help.syncfusion.com/windowsforms/tabcontroladv)'| markdownify }}
+{{'[ContextMenuStripEx](https://help.syncfusion.com/windowsforms/contextmenustripex)'| markdownify }}
 </td>
 <td>
-{{'[Integer Text Box](https://help.syncfusion.com/windowsforms/integertextbox)'| markdownify }}
+{{'[MaskedEditBox](https://help.syncfusion.com/windowsforms/maskededitbox)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -359,13 +360,13 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Grid Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout)'| markdownify }}
 </td>
 <td>
-{{'[Splash Panel](https://help.syncfusion.com/windowsforms/splashpanel)'| markdownify }}
+{{'[GradientPanel](https://help.syncfusion.com/windowsforms/gradientpanel)'| markdownify }}
 </td>
 <td>
-{{'[Child Frame Bar Manager](https://help.syncfusion.com/windowsforms/childframebarmanager)'| markdownify }}
+{{'[NavigationView](https://help.syncfusion.com/windowsforms/navigationview)'| markdownify }}
 </td>
 <td>
-{{'[Masked Text Box](https://help.syncfusion.com/windowsforms/maskededitbox)'| markdownify }}
+{{'[NumericUpDownExt](https://help.syncfusion.com/windowsforms/numericupdownext)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -373,13 +374,13 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Grid Bag Layout](https://help.syncfusion.com/windowsforms/gridbaglayout)'| markdownify }}
 </td>
 <td>
-{{'[Gradient Panel](https://help.syncfusion.com/windowsforms/gradientpanel)'| markdownify }}
+{{'[GradientLabel](https://help.syncfusion.com/windowsforms/gradientlabel)'| markdownify }}
 </td>
 <td>
-{{'[Record Navigation Control](https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol)'| markdownify }}
+{{'[TreeNavigator](https://help.syncfusion.com/windowsforms/treenavigator)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Numeric Up-Down](https://help.syncfusion.com/windowsforms/numericupdownext)'| markdownify }}
+{{'[PercentTextBox](https://help.syncfusion.com/windowsforms/percenttextbox)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -387,69 +388,69 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Image Streamer](https://help.syncfusion.com/windowsforms/tilelayout/hosting-imagestreamer-as-tile-items)'| markdownify }}
 </td>
 <td>
-{{'[Gradient Label](https://help.syncfusion.com/windowsforms/gradientlabel)'| markdownify }}
+{{'[HubTile](https://help.syncfusion.com/windowsforms/hubtile)'| markdownify }}
 </td>
 <td>
-{{'[Radial Menu](https://help.syncfusion.com/windowsforms/radialmenu)'| markdownify }}
+{{'[TabControlAdv](https://help.syncfusion.com/windowsforms/tabcontroladv)'| markdownify }}
 </td>
 <td>
-{{'[Percent Text Box](https://help.syncfusion.com/windowsforms/percenttextbox)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'[Splitter Control](https://help.syncfusion.com/windowsforms/splitter)'| markdownify }}
-</td>
-<td>
-{{'[Hub Tile](https://help.syncfusion.com/windowsforms/hubtile)'| markdownify }}
-</td>
-<td>
-{{'[NavigationDrawer](https://help.syncfusion.com/windowsforms/navigationdrawer)'| markdownify }}
-</td>
-<td>
-{{'[Advanced Text Box](https://help.syncfusion.com/windowsforms/textboxext)'| markdownify }}
+{{'[TextBoxExt](https://help.syncfusion.com/windowsforms/textboxext)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Pop-up Control Container](https://help.syncfusion.com/windowsforms/popupcontrolcontainer)'| markdownify }}
+{{'[Splitter](https://help.syncfusion.com/windowsforms/splitter)'| markdownify }}
 </td>
 <td>
-
+{{'[GradientPanelExt](https://help.syncfusion.com/windowsforms/gradientpanelext)'| markdownify }}
 </td>
 <td>
-
+{{'[ChildFrameBarManager](https://help.syncfusion.com/windowsforms/menus)'| markdownify }}
 </td>
 <td>
-{{'[Multicolumn Combo Box](https://help.syncfusion.com/windowsforms/multicolumncombobox)'| markdownify }}
+{{'[Multicolumn ComboBox](https://help.syncfusion.com/windowsforms/multicolumncombobox)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{'[Tile Layout](https://help.syncfusion.com/windowsforms/tilelayout)'| markdownify }}
+{{'[PopupControlContainer](https://help.syncfusion.com/windowsforms/popupcontrolcontainer)'| markdownify }}
+</td>
+<td>
+{{'[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip)'| markdownify }}
+</td>
+<td>
+{{'[GridRecordNavigationControl](https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol)'| markdownify }}
+</td>
+<td>
+{{'[Multiselection ComboBox](https://help.syncfusion.com/windowsforms/multiselectioncombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[TileLayout](https://help.syncfusion.com/windowsforms/tilelayout)'| markdownify }}
 </td>
 <td>
 {{'**MISCELLANEOUS**'| markdownify }}
 </td>
 <td>
-{{'**BUSINESS INTELLIGENCE**'| markdownify }}
+{{'[RadialMenu](https://help.syncfusion.com/windowsforms/radialmenu)'| markdownify }}
 </td>
 <td>
-{{'[Multiselection Combo Box](https://help.syncfusion.com/windowsforms/multiselectioncombobox)'| markdownify }}
+{{'[RangeSlider](https://help.syncfusion.com/windowsforms/rangeslider)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-
+{{'[TabbedMDI](https://help.syncfusion.com/windowsforms/tabbedmdi)'| markdownify }}
 </td>
 <td>
 {{'[QTP Add-on](https://help.syncfusion.com/windowsforms/testing/uft/)'| markdownify }}
 </td>
 <td>
-{{'[Pivot Grid](https://help.syncfusion.com/windowsforms/pivotgrid)'| markdownify }}
+{{'[MDIChildForms](https://help.syncfusion.com/windowsforms/mdichildforms)'| markdownify }}
 </td>
 <td>
-{{'[Range Slider](https://help.syncfusion.com/windowsforms/rangeslider)'| markdownify }}
+{{'[ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -457,13 +458,13 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Advanced Spell Checker](https://help.syncfusion.com/windowsforms/spellcheckeradv)'| markdownify }}
+{{'[SpellCheckerAdv](https://help.syncfusion.com/windowsforms/spellcheckeradv)'| markdownify }}
 </td>
 <td>
-{{'[Pivot Chart](https://help.syncfusion.com/windowsforms/pivotchart)'| markdownify }}
+{{'[NavigationDrawer](https://help.syncfusion.com/windowsforms/navigationdrawer)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Combo Box](https://help.syncfusion.com/windowsforms/comboboxadv)'| markdownify }}
+{{'[RadioButtonAdv](https://help.syncfusion.com/windowsforms/radiobuttonadv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -474,10 +475,10 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Clock](https://help.syncfusion.com/windowsforms/clock)'| markdownify }}
 </td>
 <td>
-
+{{'[ScrollersFrame](https://help.syncfusion.com/windowsforms/scrollersframe)'| markdownify }}
 </td>
 <td>
-{{'[Advanced Radio Button](https://help.syncfusion.com/windowsforms/radiobuttonadv)'| markdownify }}
+{{'[CheckBoxAdv](https://help.syncfusion.com/windowsforms/checkboxadv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -485,13 +486,13 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[HTML UI](https://help.syncfusion.com/windowsforms/htmlui)'| markdownify }}
+{{'[HTMLUI](https://help.syncfusion.com/windowsforms/htmlui)'| markdownify }}
 </td>
 <td>
-
+{{'**BUSINESS INTELLIGENCE**'| markdownify }}
 </td>
 <td>
-{{'[Advanced Check Box](https://help.syncfusion.com/windowsforms/checkboxadv)'| markdownify }}
+{{'[ComboDropDown](https://help.syncfusion.com/windowsforms/combodropdown)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -502,10 +503,10 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Grouping](https://help.syncfusion.com/windowsforms/grouping)'| markdownify }}
 </td>
 <td>
-
+{{'[PivotGrid](https://help.syncfusion.com/windowsforms/pivotgrid)'| markdownify }}
 </td>
 <td>
-{{'[Combo Box Drop-Down](https://help.syncfusion.com/windowsforms/combodropdown)'| markdownify }}
+{{'[SplitButton](https://help.syncfusion.com/windowsforms/splitbutton)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -516,24 +517,10 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Calculate](https://help.syncfusion.com/windowsforms/calculate)'| markdownify }}
 </td>
 <td>
-
+{{'[PivotChart](https://help.syncfusion.com/windowsforms/pivotchart)'| markdownify }}
 </td>
 <td>
-{{'[Split Button](https://help.syncfusion.com/windowsforms/splitbutton)'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-
-</td>
-<td>
-{{'[Skin Manager](https://help.syncfusion.com/windowsforms/skinmanager)'| markdownify }}
-</td>
-<td>
-
-</td>
-<td>
-{{'[Advanced Split Container](https://help.syncfusion.com/windowsforms/splitcontaineradv)'| markdownify }}
+{{'[SplitContainerAdv](https://help.syncfusion.com/windowsforms/splitcontaineradv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -541,13 +528,13 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Advanced Message Box](https://help.syncfusion.com/windowsforms/messageboxadv)'| markdownify }}
+{{'[SkinManager](https://help.syncfusion.com/windowsforms/skinmanager)'| markdownify }}
 </td>
 <td>
 
 </td>
 <td>
-{{'[Color Picker](https://help.syncfusion.com/windowsforms/colorpickeruiadv)'| markdownify }}
+{{'[ColorPickerUIAdv](https://help.syncfusion.com/windowsforms/colorpickeruiadv)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -555,13 +542,13 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-
+{{'[MessageBoxAdv](https://help.syncfusion.com/windowsforms/messageboxadv)'| markdownify }}
 </td>
 <td>
 
 </td>
 <td>
-{{'[Color Picker Button](https://help.syncfusion.com/windowsforms/colorpickerbutton)'| markdownify }}
+{{'[ColorPicker Button](https://help.syncfusion.com/windowsforms/colorpickerbutton)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -569,13 +556,13 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-
+{{'[SfSkinManager](https://help.syncfusion.com/windowsforms/sfskinmanager)'| markdownify }}
 </td>
 <td>
 
 </td>
 <td>
-{{'[Radial Slider](https://help.syncfusion.com/windowsforms/radialslider)'| markdownify }}
+{{'[RadialSlider](https://help.syncfusion.com/windowsforms/radialslider)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -589,7 +576,7 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Rating Control](https://help.syncfusion.com/windowsforms/ratingcontrol)'| markdownify }}
+{{'[Rating](https://help.syncfusion.com/windowsforms/ratingcontrol)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -603,7 +590,77 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Toggle Button](https://help.syncfusion.com/windowsforms/togglebutton)'| markdownify }}
+{{'[ToggleButton](https://help.syncfusion.com/windowsforms/togglebutton)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[SfCalendar](https://help.syncfusion.com/windowsforms/sfcalendar)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Calendar](https://help.syncfusion.com/windowsforms/calendar)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv)'| markdownify }}
 </td>
 </tr>
 </table>
