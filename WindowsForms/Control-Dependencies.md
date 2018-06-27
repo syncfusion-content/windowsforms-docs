@@ -2063,7 +2063,7 @@ Syncfusion.PivotAnalysis.Windows
 </tr>
 </table>
 
-### Exporting PivotGird to Excel, PDF and CSV
+### Exporting PivotGrid to Excel, PDF and CSV
 
 <table>
 <tr>

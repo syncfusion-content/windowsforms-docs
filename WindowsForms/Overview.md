@@ -29,951 +29,586 @@ Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/wind
 
 In case you are unable to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
-## List of Controls
+## Getting Started
 
-<table>
-	<tr>
-		<th>
-			Category<br/><br/>
-		</th>
-		<th>
-			Control<br/><br/>
-		</th>
-	</tr>
-	<tr>
-		<td>
-			GRIDS<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/grid/getting-started">CellGrid </a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gridgrouping/getting-started">DataGrid</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			DATA VISUALIZATION<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gauge/radial-gauge">Radial Gauge</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gauge/linear-gauge">Linear Gauge</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gauge/digital-gauge">Digital Gauge</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/diagram/overview">Diagram</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/schedule/overview">Schedule</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/bulletgraph/overview">BulletGraph</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/treemap/overview">TreeMap</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			LAYOUT<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/office2007form/overview">Office2010Form</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/office2010form/overview">Office2010Form</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/overview">RibbonControlAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/ribbon-merging">RibbonPanelMergeContainer</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/ribbon-form">RibbonForm</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/dockingmanager/overview">DockingManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/dockingmanager/dockingclientpanel">DockingClientPanel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/carousel/overview">Carousel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tabcontroladv/overview">TabControlAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tabbedmdi/overview">TabbedMDIManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tabbedmdi/tab-groups">TabbedGroupedMDIManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tilelayout/overview">TileLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/rangeslider/overview">RangeSlider</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splitcontaineradv/overview">SplitContainerAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tabsplittercontainer/overview">TabSplitterContainer</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/metroform/overview">MetroForm</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splitter/overview">TabBarSplitterControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gridrecordnavigation/creating-grid-record-navigation-control">RecordNavigationControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/databoundgrid/record-navigation-bar">RecordNavigationBar</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/layoutmanagers/flowlayout">FlowLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/layoutmanagers/cardlayout">CardLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/layoutmanagers/borderlayout">BorderLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splitter/overview">SplitterControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gradientpanel/overview">GradientPanel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gradientpanelext/overview">GradientPanelExt</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/layoutmanagers/gridlayout">GridLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/layoutmanagers/gridbaglayout">GridBagLayout</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/autolabel/overview">AutoLabel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/bannertextprovider/overview">BannerTextProvider</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			EDITORS<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/currencytextbox/overview">CurrencyTextBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/integertextbox/overview">IntegerTextBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/doubletextbox/overview">DoubleTextBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/percenttextbox/overview">PercentTextBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/maskededitbox/overview">MaskedEditBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/textboxext/overview">TextBoxExt</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/buttonadv/overview">ButtonAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/editablelist/overview">EditableList</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splitbutton/overview">SplitButton</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/domainupdownext/overview">DomainUpDownExt</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/currencyedit/overview">CurrencyEdit</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/buttonedit/overview">ButtonEdit</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/autocomplete/overview">AutoComplete</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/calculator/overview">Calculator</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/checkboxadv/overview">CheckBoxAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/radiobuttonadv/overview">RadioButtonAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/rating/overview">RatingControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/comboboxadv/overview">ComboBoxAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/comboboxbase/overview">ComboBoxBase</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/comboboxautocomplete/overview">ComboBoxAutoComplete</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/multicolumncombobox/overview">MultiColumnComboBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/multiselectioncombobox/overview">MultiSelectionComboBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/combodropdown/overview">ComboDropDown</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/fontlistbox/overview">FontListBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/fontcombobox/overview">FontComboBox</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/syntaxeditor/overview">EditControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/htmlui/overview">HTMLUIControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/radialslider/overview">RadialSlider</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/monthcalendaradv/overview">MonthCalendarAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/datetimepickeradv/overview">DateTimePickerAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/togglebutton/overview">ToggleButton</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/colorpickeruiadv/overview">ColorPickerUIAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/colorpickerbutton/overview">ColorPickerButton</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/colorui/overview">ColorUIControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/numericupdownext/overview">NumericUpDownExt</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/tilelayout/hosting-imagestreamer-as-tile-items">ImageStreamer</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			NAVIGATION<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/treeview/overview">TreeViewAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/multicolumntreeview/overview">MultiColumnTreeView</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/groupbar/overview">GroupBar</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/groupview/overview">GroupView</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/menus/overview">MainFrameBarManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/menus/overview">ChildFrameBarManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/xptaskbar/overview">XPTaskBar</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/xptoolbar/overview">XPToolBar</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/commandbar/overview">CommandBarController</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/radialmenu/overview">RadialMenu</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/treenavigator/overview">TreeNavigator</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/navigationdrawer/overview">NavigationDrawer</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/getting-started">BackStageView</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/contextmenustripex/contextmenustripex">ContextMenuStripEx</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/minitoolbar">MiniToolBar</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/navigationview/overview">NavigationView</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/popupcontrolcontainer/overview">PopupControlContainer</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/popupmenu/overview">PopUpMenu</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/gradientlabel/overview">GradientLabel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/super-accelerator">SuperAccelerator</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/ribboncontroladv/toolstripex">ToolStripEx</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/trackbarex/trackbarex">TrackBarEx</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			NOTIFICATION<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splashpanel/overview">SplashPanel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/splash/overview">SplashControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/statusbaradv/overview">StatusBarAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/statusbaradvpanel/overview">StatusBarAdvPanel</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/edit/status-bar">StatusBarExt</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/statusstripex/statusstripex">StatusStripEx</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/progressbaradv/overview">ProgressBarAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/supertooltip/supertooltip">SuperToolTip</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/messageboxadv/messageboxadv">MessageBoxAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/clock/overview">Clock</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/hubtile/overview">HubTile</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			MISCELLANEOUS<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/skinmanager/overview">SkinManager</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/wizard/overview">WizardControl</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/xptaskpane/overview">XpTaskPane</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/scrollersframe/scrollersframe">ScrollersFrame</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/folderbrowser/overview">FolderBrowser</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/spellcheckeradv/overview">SpellCheckerAdv</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/grouping/overview">Grouping</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/calculate/overview">Calculate</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			BUSINESS INTELLIGENCE<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/pivotgrid/overview">Pivot Grid</a><br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<br/><br/>
-		</td>
-		<td>
-			<a href="/windowsforms/pivotchart/overview">Pivot Chart</a><br/><br/>
-		</td>
-	</tr>
+<table spacing="2" margin = "0" padding="0" border="0">
+<tr>
+<td>
+{{'**GRID**'| markdownify }}
+</td>
+<td>
+{{'**DATA VISUALIZATION**'| markdownify }}
+</td>
+<td>
+{{'**DATA SCIENCE**'| markdownify }}
+</td>
+<td>
+{{'**EDITORS**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Cell Grid](https://help.syncfusion.com/windowsforms/grid)'| markdownify }}
+</td>
+<td>
+{{'[Chart](https://help.syncfusion.com/windowsforms/chart)'| markdownify }}
+</td>
+<td>
+{{'[Predictive Analytics](https://help.syncfusion.com/windowsforms/predictive-analytics)'| markdownify }}
+</td>
+<td>
+{{'[Numeric Text Box](https://help.syncfusion.com/windowsforms/sfnumerictextbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Data Grid](https://help.syncfusion.com/windowsforms/sfdatagrid)'| markdownify }}
+</td>
+<td>
+{{'[Sparkline](https://help.syncfusion.com/windowsforms/sparkline)'| markdownify }}
+</td>
+<td>
+{{'**NAVIGATION**'| markdownify }}
+</td>
+<td>
+{{'[Autocomplete](https://help.syncfusion.com/windowsforms/autocomplete)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Grid Grouping Control](https://help.syncfusion.com/windowsforms/gridgrouping)'| markdownify }}
+</td>
+<td>
+{{'[Diagramming](https://help.syncfusion.com/windowsforms/diagram)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Ribbon Control](https://help.syncfusion.com/windowsforms/ribboncontroladv)'| markdownify }}
+</td>
+<td>
+{{'[Calculator](https://help.syncfusion.com/windowsforms/calculator)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Grid List Control](https://help.syncfusion.com/windowsforms/gridlist)'| markdownify }}
+</td>
+<td>
+{{'[Barcode](https://help.syncfusion.com/windowsforms/barcode)'| markdownify }}
+</td>
+<td>
+{{'[Form](https://help.syncfusion.com/windowsforms/sfform)'| markdownify }}
+</td>
+<td>
+{{'[Syntax Editor](https://help.syncfusion.com/windowsforms/syntaxeditor)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Spreadsheet](https://help.syncfusion.com/windowsforms/spreadsheet)'| markdownify }}
+</td>
+<td>
+{{'[Scheduler](https://help.syncfusion.com/windowsforms/schedule)'| markdownify }}
+</td>
+<td>
+{{'[Office 2007 Form](https://help.syncfusion.com/windowsforms/office2007form)'| markdownify }}
+</td>
+<td>
+{{'[ComboBox](https://help.syncfusion.com/windowsforms/sfcombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[ListView](https://help.syncfusion.com/windowsforms/sflistview)'| markdownify }}
+</td>
+<td>
+{{'[Bullet Graph](https://help.syncfusion.com/windowsforms/bulletgraph)'| markdownify }}
+</td>
+<td>
+{{'[Docking Manager](https://help.syncfusion.com/windowsforms/dockingmanager)'| markdownify }}
+</td>
+<td>
+{{'[Combo Box Autocomplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**File Formats**'| markdownify }}
+</td>
+<td>
+{{'[Maps](https://help.syncfusion.com/windowsforms/maps)'| markdownify }}
+</td>
+<td>
+{{'[Command Bars Package](https://help.syncfusion.com/windowsforms/commandbar)'| markdownify }}
+</td>
+<td>
+{{'[Calendar](https://help.syncfusion.com/windowsforms/sfcalendar)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Excel](https://help.syncfusion.com/file-formats/xlsio)'| markdownify }}
+</td>
+<td>
+{{'[Tree Map](https://help.syncfusion.com/windowsforms/treemap)'| markdownify }}
+</td>
+<td>
+{{'[Group View](https://help.syncfusion.com/windowsforms/groupview)'| markdownify }}
+</td>
+<td>
+{{'[Combo Box Base](https://help.syncfusion.com/windowsforms/comboboxbase)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[PDF](https://help.syncfusion.com/file-formats/pdf)'| markdownify }}
+</td>
+<td>
+{{'[Radial Gauge](https://help.syncfusion.com/windowsforms/radial-gauge)'| markdownify }}
+</td>
+<td>
+{{'[Multicolumn Tree View](https://help.syncfusion.com/windowsforms/multicolumntreeview)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Track Bar](https://help.syncfusion.com/windowsforms/trackbarex)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Word](https://help.syncfusion.com/file-formats/docio)'| markdownify }}
+</td>
+<td>
+{{'[Linear Gauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Tree View](https://help.syncfusion.com/windowsforms/treeviewadv)'| markdownify }}
+</td>
+<td>
+{{'[Button](https://help.syncfusion.com/windowsforms/sfbutton)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[PDF Viewer](https://help.syncfusion.com/windowsforms/pdfviewer)'| markdownify }}
+</td>
+<td>
+{{'[Digital Gauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)'| markdownify }}
+</td>
+<td>
+{{'[Scroll Frame](https://help.syncfusion.com/windowsforms/sfscrollframe)'| markdownify }}
+</td>
+<td>
+{{'[Button Edit](https://help.syncfusion.com/windowsforms/buttonedit)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[PowerPoint](https://help.syncfusion.com/windowsforms/file-formats/presentation)'| markdownify }}
+</td>
+<td>
+{{'[Smith Chart](https://help.syncfusion.com/windowsforms/sfsmithchart)'| markdownify }}
+</td>
+<td>
+{{'[Group Bar](https://help.syncfusion.com/windowsforms/groupbar)'| markdownify }}
+</td>
+<td>
+{{'[Font Combo Box](https://help.syncfusion.com/windowsforms/fontcombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[XP Taskbar](https://help.syncfusion.com/windowsforms/xptaskbar)'| markdownify }}
+</td>
+<td>
+{{'[Font List Box](https://help.syncfusion.com/windowsforms/fontlistbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**LAYOUT**'| markdownify }}
+</td>
+<td>
+{{'**NOTIFICATION**'| markdownify }}
+</td>
+<td>
+{{'[XP Task Pane](https://help.syncfusion.com/windowsforms/xptaskpane)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Image List](https://help.syncfusion.com/windowsforms/imagelistadv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Carousel](https://help.syncfusion.com/windowsforms/carousel)'| markdownify }}
+</td>
+<td>
+{{'[Tooltip](https://help.syncfusion.com/windowsforms/sftooltip)'| markdownify }}
+</td>
+<td>
+{{'[Metro Form](https://help.syncfusion.com/windowsforms/metroform)'| markdownify }}
+</td>
+<td>
+{{'[Color UI Control](https://help.syncfusion.com/windowsforms/coloruicontrol)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Tab Bar Splitter Control](https://help.syncfusion.com/windowsforms/splitter)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Progress Bar](https://help.syncfusion.com/windowsforms/progressbaradv)'| markdownify }}
+</td>
+<td>
+{{'[Mainframe Bar Manager](https://help.syncfusion.com/windowsforms/mainframebarmanager)'| markdownify }}
+</td>
+<td>
+{{'[Banner Text Provider](https://help.syncfusion.com/windowsforms/bannertextprovider)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Tab Splitter Container](https://help.syncfusion.com/windowsforms/tabsplittercontainer)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Status Bar](https://help.syncfusion.com/windowsforms/statusbaradv)'| markdownify }}
+</td>
+<td>
+{{'[Pop-up Menu](https://help.syncfusion.com/windowsforms/menus)'| markdownify }}
+</td>
+<td>
+{{'[Editable List Box](https://help.syncfusion.com/windowsforms/editablelist)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Wizard Control](https://help.syncfusion.com/windowsforms/wizard)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Status Strip](https://help.syncfusion.com/windowsforms/statusstripex)'| markdownify }}
+</td>
+<td>
+{{'[XP Toolbar](https://help.syncfusion.com/windowsforms/xptoolbar)'| markdownify }}
+</td>
+<td>
+{{'[Currency Text Box](https://help.syncfusion.com/windowsforms/currencytextbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Flow Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/flowlayout)'| markdownify }}
+</td>
+<td>
+{{'[Splash Control](https://help.syncfusion.com/windowsforms/splash)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Context Menu Strip](https://help.syncfusion.com/windowsforms/contextmenustripex)'| markdownify }}
+</td>
+<td>
+{{'[Date-Time Edit](https://help.syncfusion.com/windowsforms/sfdatetimeedit)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Folder Browser](https://help.syncfusion.com/windowsforms/folderbrowser)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Status Bar Panel](https://help.syncfusion.com/windowsforms/statusbaradvpanel)'| markdownify }}
+</td>
+<td>
+{{'[Navigation View](https://help.syncfusion.com/windowsforms/navigationview)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Domain Up-down](https://help.syncfusion.com/windowsforms/domainupdownext)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Border Layout](https://help.syncfusion.com/windowsforms/borderlayout)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Tool Strip](https://help.syncfusion.com/windowsforms/toolstripex)'| markdownify }}
+</td>
+<td>
+{{'[Tree Navigator](https://help.syncfusion.com/windowsforms/treenavigator)'| markdownify }}
+</td>
+<td>
+{{'[Double Text Box](https://help.syncfusion.com/windowsforms/doubletextbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Card Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/cardlayout)'| markdownify }}
+</td>
+<td>
+{{'[Autolabel](https://help.syncfusion.com/windowsforms/autolabel)'| markdownify }}
+</td>
+<td>
+{{'[Tab Control](https://help.syncfusion.com/windowsforms/tabcontroladv)'| markdownify }}
+</td>
+<td>
+{{'[Integer Text Box](https://help.syncfusion.com/windowsforms/integertextbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Grid Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout)'| markdownify }}
+</td>
+<td>
+{{'[Splash Panel](https://help.syncfusion.com/windowsforms/splashpanel)'| markdownify }}
+</td>
+<td>
+{{'[Child Frame Bar Manager](https://help.syncfusion.com/windowsforms/childframebarmanager)'| markdownify }}
+</td>
+<td>
+{{'[Masked Text Box](https://help.syncfusion.com/windowsforms/maskededitbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Grid Bag Layout](https://help.syncfusion.com/windowsforms/gridbaglayout)'| markdownify }}
+</td>
+<td>
+{{'[Gradient Panel](https://help.syncfusion.com/windowsforms/gradientpanel)'| markdownify }}
+</td>
+<td>
+{{'[Record Navigation Control](https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Numeric Up-Down](https://help.syncfusion.com/windowsforms/numericupdownext)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Image Streamer](https://help.syncfusion.com/windowsforms/tilelayout/hosting-imagestreamer-as-tile-items)'| markdownify }}
+</td>
+<td>
+{{'[Gradient Label](https://help.syncfusion.com/windowsforms/gradientlabel)'| markdownify }}
+</td>
+<td>
+{{'[Radial Menu](https://help.syncfusion.com/windowsforms/radialmenu)'| markdownify }}
+</td>
+<td>
+{{'[Percent Text Box](https://help.syncfusion.com/windowsforms/percenttextbox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Splitter Control](https://help.syncfusion.com/windowsforms/splitter)'| markdownify }}
+</td>
+<td>
+{{'[Hub Tile](https://help.syncfusion.com/windowsforms/hubtile)'| markdownify }}
+</td>
+<td>
+{{'[NavigationDrawer](https://help.syncfusion.com/windowsforms/navigationdrawer)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Text Box](https://help.syncfusion.com/windowsforms/textboxext)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Pop-up Control Container](https://help.syncfusion.com/windowsforms/popupcontrolcontainer)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Multicolumn Combo Box](https://help.syncfusion.com/windowsforms/multicolumncombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'[Tile Layout](https://help.syncfusion.com/windowsforms/tilelayout)'| markdownify }}
+</td>
+<td>
+{{'**MISCELLANEOUS**'| markdownify }}
+</td>
+<td>
+{{'**BUSINESS INTELLIGENCE**'| markdownify }}
+</td>
+<td>
+{{'[Multiselection Combo Box](https://help.syncfusion.com/windowsforms/multiselectioncombobox)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[QTP Add-on](https://help.syncfusion.com/windowsforms/testing/uft/)'| markdownify }}
+</td>
+<td>
+{{'[Pivot Grid](https://help.syncfusion.com/windowsforms/pivotgrid)'| markdownify }}
+</td>
+<td>
+{{'[Range Slider](https://help.syncfusion.com/windowsforms/rangeslider)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Advanced Spell Checker](https://help.syncfusion.com/windowsforms/spellcheckeradv)'| markdownify }}
+</td>
+<td>
+{{'[Pivot Chart](https://help.syncfusion.com/windowsforms/pivotchart)'| markdownify }}
+</td>
+<td>
+{{'[Advanced Combo Box](https://help.syncfusion.com/windowsforms/comboboxadv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Clock](https://help.syncfusion.com/windowsforms/clock)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Advanced Radio Button](https://help.syncfusion.com/windowsforms/radiobuttonadv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[HTML UI](https://help.syncfusion.com/windowsforms/htmlui)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Advanced Check Box](https://help.syncfusion.com/windowsforms/checkboxadv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Grouping](https://help.syncfusion.com/windowsforms/grouping)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Combo Box Drop-Down](https://help.syncfusion.com/windowsforms/combodropdown)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Calculate](https://help.syncfusion.com/windowsforms/calculate)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Split Button](https://help.syncfusion.com/windowsforms/splitbutton)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Skin Manager](https://help.syncfusion.com/windowsforms/skinmanager)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Advanced Split Container](https://help.syncfusion.com/windowsforms/splitcontaineradv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+{{'[Advanced Message Box](https://help.syncfusion.com/windowsforms/messageboxadv)'| markdownify }}
+</td>
+<td>
+
+</td>
+<td>
+{{'[Color Picker](https://help.syncfusion.com/windowsforms/colorpickeruiadv)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Color Picker Button](https://help.syncfusion.com/windowsforms/colorpickerbutton)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Radial Slider](https://help.syncfusion.com/windowsforms/radialslider)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Rating Control](https://help.syncfusion.com/windowsforms/ratingcontrol)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+{{'[Toggle Button](https://help.syncfusion.com/windowsforms/togglebutton)'| markdownify }}
+</td>
+</tr>
 </table>
+<style type="text/css">
+.post .post-content table, .post .post-content table tr td{
+border: 0 none;
+}
+</style>
