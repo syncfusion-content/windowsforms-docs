@@ -224,7 +224,7 @@ public partial class Form1: Form
     Public Form1()
       {
          InitializeComponent();
-         sfListView1.SelectionChanged += new EventHandler<ItemSelectionChangedEventArgs>(SfListView1_SelectionChanged);
+         sfListView1.SelectionChanging += new EventHandler<ItemSelectionChangedEventArgs>(SfListView1_SelectionChanging);
    }
 }
 private void SfListView1_SelectionChanging(object sender, ItemSelectionChangingEventArgs e)

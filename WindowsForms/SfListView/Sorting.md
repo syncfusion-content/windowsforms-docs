@@ -23,7 +23,7 @@ SortDescriptor object holds the following three properties:
 {% highlight c# %}
 listView.View.SortDescriptors.Add(new SortDescriptor()
 {
-    PropertyName = "Continent",
+    PropertyName = "CountryName",
     Direction = ListSortDirection.Ascending,
 });
 {% endhighlight %}
@@ -43,9 +43,9 @@ In custom sort comparer, all the items in `SfListView` is sorted with length of 
 {% highlight c# %}
 sfListView1.View.SortDescriptors.Add(new Syncfusion.DataSource.SortDescriptor()
 {
-    PropertyName = "Continent",
+    PropertyName = "CountryName",
     Direction = Syncfusion.DataSource.ListSortDirection.Descending,
-    Comparer = new CustomGroupComparer()
+    Comparer = new CustomSortComparer()
 });
 public class CustomSortComparer : IComparer<object>, ISortDirection
 {

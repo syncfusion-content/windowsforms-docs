@@ -21,7 +21,7 @@ listView.View.Filter = CustomFilter;
 listView.View.RefreshFilter();
 public bool CustomFilter(object obj)
 {
-   if ((obj as Country).Continent == "Asia" || (obj as Country).Continent == "North America" || (obj as Country).Continent == "Oceania")
+   if ((obj as CountryInfo).Continent == "Asia" || (obj as CountryInfo).Continent == "North America" || (obj as CountryInfo).Continent == "Oceania")
        return true;
    return false;
 }
@@ -30,7 +30,7 @@ public bool CustomFilter(object obj)
 listView.View.Filter = AddressOf CustomFilter
 listView.View.RefreshFilter()
 public Boolean CustomFilter(Object obj)
-   If (TryCast(obj, Country)).Continent = "Asia" OrElse (TryCast(obj, Country)).Continent = "North America" OrElse (TryCast(obj, Country)).Continent = "Oceania" Then
+   If (TryCast(obj, CountryInfo)).Continent = "Asia" OrElse (TryCast(obj, CountryInfo)).Continent = "North America" OrElse (TryCast(obj, CountryInfo)).Continent = "Oceania" Then
 	   Return True
    End If
    Return False
