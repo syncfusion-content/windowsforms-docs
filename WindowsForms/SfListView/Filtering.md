@@ -114,6 +114,8 @@ Order of the filtered items can be rearranged in the `FilterChanged` event by ad
 {% highlight c# %}
 sfListView1.View.FilterChanged += new NotifyCollectionChangedEventHandler(View_FilterChanged);
 
+private void View_FilterChanged(object sender, NotifyCollectionChangedEventArgs e)
+{
 sfListView1.View.GroupDescriptors.Add(new GroupDescriptor()
 {
     PropertyName = "Continent",                
@@ -123,13 +125,23 @@ sfListView1.View.SortDescriptors.Add(new SortDescriptor()
     PropertyName = "Continent",
     Direction = Syncfusion.DataSource.ListSortDirection.Ascending,
 });
+}
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfListView1.View.FilterChanged, AddressOf View_FilterChanged
-
-sfListView1.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = "Continent"})
-sfListView1.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Continent", .Direction = Syncfusion.DataSource.ListSortDirection.Ascending})
-
+Private Sub View_FilterChanged(ByVal sender As Object, ByVal e As NotifyCollectionChangedEventArgs)
+   Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.GroupDescriptors.Add(Shadows
+        .PropertyName = "Continent"
+		
+		End Function
+    )
+    Private Function Syncfusion.DataSource.SortDescriptors() As sfListView1.View.SortDescriptors.Add(Shadows
+        .PropertyName = "Continent",
+        .Direction = Syncfusion.DataSource.ListSortDirection.Ascending,
+		
+		End Function
+    )
+End Sub
 {% endhighlight %}
 {% endtabs %}
 
