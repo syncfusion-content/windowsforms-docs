@@ -730,7 +730,6 @@ Syncfusion.Shared.Windows<br/>
 </td>
 <td>
 Syncfusion.Diagram.Windows<br/>
-Syncfusion.Diagram.Base<br/>
 </td>
 </tr>
 </table>
@@ -2063,7 +2062,7 @@ Syncfusion.PivotAnalysis.Windows
 </tr>
 </table>
 
-### Exporting PivotGird to Excel, PDF and CSV
+### Exporting PivotGrid to Excel, PDF and CSV
 
 <table>
 <tr>
