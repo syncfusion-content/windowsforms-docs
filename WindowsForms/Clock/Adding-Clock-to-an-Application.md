@@ -7,7 +7,17 @@ control: Clock-Control-for-Windows-Forms
 documentation: ug
 ---
 
-# Adding Clock to an application
+# Getting Started
+
+This section describes how to design a `Clock` control in a Windows Forms application and overview of its basic functionalities.
+
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#clock) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+
+Find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 ## Adding through Visual Studio
 
