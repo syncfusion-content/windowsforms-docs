@@ -506,7 +506,7 @@ public class CustomFilterControl : FilterControlBase
                     PredicateType = PredicateType.Or,
                     FilterMode = ColumnFilter.DisplayText,
                     FilterType = FilterType.Contains,
-                    FilterValue = item.ToString(),
+                    FilterValue = (item as FilterElement).DisplayText,
                     IsCaseSensitive = false
                 };
                 column.FilterPredicates.Add(predicate);
@@ -533,7 +533,7 @@ Public Class CustomFilterControl
 			Dim column = grid.Columns(MappingName)
 			column.FilterPredicates.Clear()
 			For Each item In Me.CheckListBox.CheckedItems
-				Dim predicate As FilterPredicate = New FilterPredicate With {.FilterBehavior = Syncfusion.Data.FilterBehavior.StringTyped, .PredicateType = PredicateType.Or, .FilterMode = ColumnFilter.DisplayText, .FilterType = FilterType.Contains, .FilterValue = item.ToString(), .IsCaseSensitive = False}
+				Dim predicate As FilterPredicate = New FilterPredicate With {.FilterBehavior = Syncfusion.Data.FilterBehavior.StringTyped, .PredicateType = PredicateType.Or, .FilterMode = ColumnFilter.DisplayText, .FilterType = FilterType.Contains, .FilterValue = (TryCast(item, FilterElement)).DisplayText, .IsCaseSensitive = False}
 
 				column.FilterPredicates.Add(predicate)
 			Next item
@@ -554,13 +554,14 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
     {
         e.Cancel = true;
         List<string> items = new List<string>();
-        items.Add("MEREP");
-        items.Add("FOLKO");
-        items.Add("ALFKI");
+        items.Add(new FilterElement() { DisplayText = "MEREP" });
+        items.Add(new FilterElement() { DisplayText = "FOLKO" });
+        items.Add(new FilterElement() { DisplayText = "ALFKI" });
         var customFilterControl = new CustomFilterControl(this.sfDataGrid);
-        customFilterControl.DataSource = items;
-        customFilterControl.MappingName = e.Column.MappingName;
         customFilterControl.Show(this.sfDataGrid, e.Location);
+        customFilterControl.CheckListBox.DataSource = items;
+        customFilterControl.CheckListBox.DisplayMember = "DisplayText";
+        customFilterControl.MappingName = e.Column.MappingName;
     }
 }
 {% endhighlight %}
@@ -569,13 +570,14 @@ Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As Fil
 	If e.Column.MappingName = "CustomerID" Then
 		e.Cancel = True
 		Dim items As New List(Of String)()
-		items.Add("MEREP")
-		items.Add("FOLKO")
-		items.Add("ALFKI")
+		items.Add(New FilterElement() With {.DisplayText = "MEREP"})
+		items.Add(New FilterElement() With {.DisplayText = "FOLKO"})
+		items.Add(New FilterElement() With {.DisplayText = "ALFKI"})
 		Dim customFilterControl = New CustomFilterControl(Me.sfDataGrid)
-		customFilterControl.DataSource = items
-		customFilterControl.MappingName = e.Column.MappingName
 		customFilterControl.Show(Me.sfDataGrid, e.Location)
+		customFilterControl.CheckListBox.DataSource = items
+		customFilterControl.CheckListBox.DisplayMember = "DisplayText"
+		customFilterControl.MappingName = e.Column.MappingName
 	End If
 End Sub
 {% endhighlight %}

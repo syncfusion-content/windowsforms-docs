@@ -48,7 +48,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[SfDataGrid](https://help.syncfusion.com/windowsforms/sflistview)'| markdownify }}
+{{'[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid)'| markdownify }}
 </td>
 <td>
 {{'[Chart](https://help.syncfusion.com/windowsforms/chart)'| markdownify }}

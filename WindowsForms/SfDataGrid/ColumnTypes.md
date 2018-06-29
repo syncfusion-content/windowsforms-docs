@@ -98,6 +98,17 @@ Use to display the Uri data
 Use to display button in each row
 </td>
 </tr>
+<tr>
+<td>
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html)'| markdownify }}
+</td>
+<td>
+{{'[GridComboBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridComboBoxCellRenderer.html)'| markdownify }}
+</td>
+<td>
+Use to display combobox in each row
+</td>
+</tr>
 </table>
 
 ## GridColumn
@@ -814,9 +825,9 @@ End Sub
 {% endtabs %}
 
 ## GridComboBoxColumn
-`GridComboBoxColumn` is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the `GridComboBoxColumn.DataSource` property.
+[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html) is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the [GridComboBoxColumn.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DataSource.html) property.
 
-By default, GridComboBoxColumn displays the value by using the `MappingName` property. You can set `DisplayMember` that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set `ValueMember` that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
+By default, GridComboBoxColumn displays the value by using the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property. You can set [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set [ValueMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~ValueMember.html) that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
 
 {% tabs %}
 {% highlight c# %}
@@ -827,10 +838,10 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-The SfDataGrid triggers the `CellComboBoxSelectionChanged` event when the `SelectedValue` is changed. The CellComboBoxSelectionChangedEventArgs of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
+The SfDataGrid triggers the [CellComboBoxSelectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellComboBoxSelectionChanged_EV.html) event when the `SelectedValue` is changed. The [CellComboBoxSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html) of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
 
-*	`SelectedIndex` : Returns the index of selected item.
-*	`SelectedItem`	: Returns the selected item from drop-down list.
+*	[SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedIndex.html) : Returns the index of selected item.
+*	[SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedItem.html)	: Returns the selected item from drop-down list.
 
 ![](ColumnTypes_images/ComboBox_img1.png)
 
@@ -868,7 +879,7 @@ End Class
 {% endtabs %}
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
-By default, the group caption text will be displayed based on the `MappingName` of combo-box column. This can be changed to display the `DisplayMember` by using the `GroupMode` property of the column.
+By default, the group caption text will be displayed based on the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) of combo-box column. This can be changed to display the [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) by using the [GroupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~GroupMode.html) property of the column.
 
 {% tabs %}
 {% highlight c# %}
@@ -882,7 +893,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 ![](ColumnTypes_images/ComboBox_img2.png)
 
 ### Loading different DataSources for each row of GridComboBoxColumn
-Different data sources can be loaded for each row of the `GridComboBoxColumn` by using the `SfDataGrid.DataSourceSelector` property.
+Different data sources can be loaded for each row of the [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html) by using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~IDataSourceSelector.html) property.
 
 ### Implementing IDataSourceSelector
 DataSourceSelector needs to implement IDataSourceSelector interface to implement the GetDataSource method that receives the following parameters,
@@ -953,7 +964,7 @@ Following screenshot illustrates the different `Ship City` DataSource bound to e
 ![](ColumnTypes_images/ComboBox_img4.png)
 
 ### Editing the combo box
-By default, the combo-box column is not allowed to edit the values. This can be changed by setting the `GridComboBoxColumn.DropDownStyle` as `DropDown` to edit the values by using the text box.
+By default, the combo-box column is not allowed to edit the values. This can be changed by setting the [GridComboBoxColumn.DropDownStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DropDownStyle.html) as `DropDown` to edit the values by using the text box.
 
 {% tabs %}
 {% highlight c# %}
@@ -967,7 +978,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 ![](ColumnTypes_images/ComboBox_img5.png)
 
 ### Auto completing on edit mode
-The auto completion on the edit mode can be enabled by using the `GridComboBoxColumn.AutoCompleteMode` property. Default value is `None`. Following types of auto complete modes are available,
+The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoCompleteMode.html) property. Default value is `None`. Following types of auto complete modes are available,
 
 * None
 * Append
@@ -990,7 +1001,7 @@ comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
 ![](ColumnTypes_images/ComboBox_img6.png)
 
 ### Auto suggesting on edit mode
-By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the `AutoSuggestionMode` property. You can also set delay for auto suggestion by using the `AutoSuggestDelay` property.
+By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the [AutoSuggestionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestMode.html) property. You can also set delay for auto suggestion by using the [AutoSuggestDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestDelay.html) property.
 
 {% tabs %}
 {% highlight c# %}
