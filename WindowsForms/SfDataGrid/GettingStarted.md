@@ -415,6 +415,14 @@ Represents SfDataGrid column that hosts CheckBox in its cells.
 </tr>
 <tr>
 <td>
+GridComboBoxColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts ComboBox in its cells.
+</td>
+</tr>
+<tr>
+<td>
 GridButtonColumn
 </td>
 <td>
@@ -427,14 +435,6 @@ GridUnboundColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts textual content which are not actually bound with data object of row.
-</td>
-</tr>
-<tr>
-<td>
-GridComboBoxColumn
-</td>
-<td>
-Represents SfDataGrid column that hosts ComboBox in its cells.
 </td>
 </tr>
 </table>
