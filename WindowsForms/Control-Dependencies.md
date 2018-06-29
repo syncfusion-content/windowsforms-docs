@@ -270,32 +270,6 @@ Syncfusion.Tools.Windows
 </tr>
 </table>
 
-## Calendar
-
-<table>
-<tr>
-<td>
-{{'**Assembly References**'| markdownify }}
-</td>
-<td>
-{{'**NuGet Package**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Tools.Windows<br/>
-Syncfusion.Grid.Base<br/>
-Syncfusion.Grid.Windows<br/>
-Syncfusion.Shared.Base<br/>
-Syncfusion.Shared.Windows<br/>
-Syncfusion.Tools.Base
-</td>
-<td>
-Syncfusion.Tools.Windows
-</td>
-</tr>
-</table>
-
 ## CardLayout
 
 <table>
