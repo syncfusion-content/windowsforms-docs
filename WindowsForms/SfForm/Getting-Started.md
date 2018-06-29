@@ -11,26 +11,7 @@ documentation: ug
 
 ## Assembly Deployment
 
-The following list of assembly should be added as reference to use `SfForm` in any application:
-
-<table>
-<tr>
-<td>
-{{'Required assembly'| markdownify }}
-</td>
-<td>
-{{'Description'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm, SfToolTip and SfScrollControl.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Converting Standard Form into SfForm
 

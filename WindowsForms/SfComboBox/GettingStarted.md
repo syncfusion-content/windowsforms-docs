@@ -11,50 +11,7 @@ documentation: ug
 This section provides a quick overview for working with combo box in WinForms. 
 
 ## Assembly Deployment
-Following assemblies should be added as reference to use the SfComboBox control in any application.
-
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfToolTip.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.DataSource.WinForms
-</td>
-<td>
-Syncfusion.DataSource.WinForms assembly contains fundamental and base classes for view responsible for data processing operations handled in SfComboBox.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfListView.WinForms
-</td>
-<td>
-Syncfusion.SfListView.WinForms assembly contains classes that handles all UI operations of SfComboBox and SfListView. The SfComboBox control is present in Syncfusion.WinForms.ListView namespace.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.GridCommon.WinForms
-</td>
-<td>
-Syncfusion.GridCommon.WinForms assembly contains base classes for scrolling and utilities.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfcombobox) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Creating Application with SfComboBox control
 In this walk through, user will create a WinForms application that contains SfComboBox control.

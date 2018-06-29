@@ -9,7 +9,18 @@ documentation: ug
 
 # Check Box Selection 
 The SfListView supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the `SfListView.ShowCheckBoxes` property to true.
- 
+
+{% tabs %}
+{% highlight c# %}
+sfListView1.ShowCheckBoxes = true;
+{% endhighlight %}
+{% highlight vb %}
+sfListView1.ShowCheckBoxes = True
+{% endhighlight %}
+{% endtabs %}
+
+![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img10.png)
+
 ## Check box selection mode
 The check box provides support to select in the context of state of the check box based on the SfListView.CheckBoxSelectionMode property.                                                                        
 
