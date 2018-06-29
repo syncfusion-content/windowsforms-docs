@@ -13,7 +13,7 @@ This section helps you to understand and quickly get started using Essential Dia
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet package needs to be added as reference to use the pivot grid control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet package needs to be added as reference to use the Diagram control in any application.
 
 ## Structure of Essential Diagram 
 
