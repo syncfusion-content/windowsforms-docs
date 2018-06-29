@@ -9,6 +9,14 @@ documentation: ug
 
 # Getting Started
 
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#maps) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
 ## Key concepts
 
 Maps are visualized through layers. A map can accommodate one or more layers. ShapeFileLayer is one of the layers that can be used to generate map shapes and bind business objects with them.

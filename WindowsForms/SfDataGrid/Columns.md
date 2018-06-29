@@ -53,6 +53,14 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display combobox in each row
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
