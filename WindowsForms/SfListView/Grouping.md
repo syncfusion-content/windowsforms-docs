@@ -77,7 +77,6 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.GroupDescriptors.Add(Shadows
     PropertyName = "Continent",
     Comparer = New CustomGroupComparer()
-
 End Function
 )
 Public Class CustomGroupComparer
@@ -133,7 +132,6 @@ Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.Gro
         Dim item As var = (obj1 as CountryInfo) 
         Return item.Continent(0).ToString()
     }
-,
 End Function
 )
 {% endhighlight %}
