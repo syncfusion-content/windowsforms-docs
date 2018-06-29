@@ -13,7 +13,7 @@ documentation: ug
 
 ## Guide to run the samples
 
-To run the samples, search it from Start by name of “Dashboard”
+To run the samples, search it from Start by name of “Syncfusion Windows Forms”
 
 ![dashboard](featured-samples_images/dashboardsearch.png)
 

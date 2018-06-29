@@ -6,6 +6,14 @@ platform: WindowsForms
 control: SfSmithChart
 documentation: ug
 ---
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfsmithchart) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
 # Configuring a smith chart control
 
 This section explains the steps required to build an application with Smith chart.
