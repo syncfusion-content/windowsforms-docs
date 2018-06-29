@@ -11,26 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-The following assembly should be added as reference to use SfSkinManager in any application.
-
-<table>
-<tr>
-<td>
-{{'Required Assemblies'| markdownify }}
-</td>
-<td>
-{{'Description'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms assembly contains theme related classes for the Syncfusion controls and basic components like {{'SfScrollFrame'| markdownify }}, {{'SfButton'| markdownify }}, {{'SfToolTip '| markdownify }}, and {{'SfForm '| markdownify }}.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfskinmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Creating application with SfSkinManger
 

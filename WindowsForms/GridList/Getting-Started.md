@@ -11,24 +11,8 @@ documentation: ug
 
 This section will explain to create a simple application with GridListControl and its functionalities.
 
-## Assembly deployment
-
-The following list of assemblies needs to be added as reference to use the GridListControl in any application:
-
-<table>
-<tr>
-<th>
-Required assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridListControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridListControl.<br/><br/></td></tr>
-</table>
+## Assembly Deployment
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridlistcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Creating application with GridListControl
 
