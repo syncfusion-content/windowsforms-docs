@@ -26,7 +26,4 @@ Key Features are:
 *	Theme: Supports several built-in Office 2016 themes.
 *	Accessibility:  Supports various accessibility features to make applications available to wide variety of users.
 
-Limitation
-
-*	Data table support is not available in SfListView
 

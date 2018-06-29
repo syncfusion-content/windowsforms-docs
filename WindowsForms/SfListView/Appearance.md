@@ -83,6 +83,7 @@ The SfListView allows adding image to each item by using the `SfListView.DrawIte
 
 {% tabs %}
 {% highlight c# %}
+sfListView1.DrawItem += new EventHandler<Syncfusion.WinForms.ListView.Events.DrawItemEventArgs>(SfListView1_DrawItem);
 private void SfListView1_DrawItem(object sender, Syncfusion.WinForms.ListView.Events.DrawItemEventArgs e)
 {            
     if (e.Text == "Spain" && e.Value.ToString() == "Europe")
@@ -113,6 +114,7 @@ private void SfListView1_DrawItem(object sender, Syncfusion.WinForms.ListView.Ev
 }
 {% endhighlight %}
 {% highlight vb %}
+AddHandler sfListView1.DrawItem, AddressOf SfListView1_DrawItem
 Private Sub SfListView1_DrawItem(ByVal sender As Object, ByVal e As Syncfusion.WinForms.ListView.Events.DrawItemEventArgs)
    If e.Text = "Spain" AndAlso e.Value.ToString() = "Europe" Then
 	   e.Image = Image.FromFile("..\..\Flags\Spain.png")
