@@ -270,6 +270,32 @@ Syncfusion.Tools.Windows
 </tr>
 </table>
 
+## Calendar
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Grid.Base<br/>
+Syncfusion.Grid.Windows<br/>
+Syncfusion.Shared.Base<br/>
+Syncfusion.Shared.Windows<br/>
+Syncfusion.Tools.Base
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
 ## CardLayout
 
 <table>
@@ -2503,6 +2529,28 @@ Syncfusion.SfInput.WinForms
 
 Refer to [themes section](#themes) for theming assembly references to apply theme.
 
+## SfComboBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfListView.WinForms<br/>Syncfusion.Core.WinForms<br/>Syncfusion.DataSource.WinForms<br/>Syncfusion.GridCommon.WinForms<br/></td>
+<td>
+Syncfusion.SfListView.WinForms
+</td>
+</tr>
+</table>
+
+Refer to [themes section](#themes) for theming assembly references to apply theme.
+
 ## SfDataGrid
 
 <table>
@@ -2622,6 +2670,28 @@ Syncfusion.SfListView.WinForms
 
 Refer to [themes section](#themes) for theming assembly references to apply theme.
 
+## SfNumericTextBox
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Core.WinForms<br/>
+Syncfusion.SfInput.WinForms
+</td>
+<td>
+Syncfusion.SfInput.WinForms
+</td>
+</tr>
+</table>
+
 ## SfScrollFrame
 
 <table>
@@ -2687,6 +2757,27 @@ Syncfusion.SfSmithChart.WinForms
 </table>
 
 Refer to [themes section](#themes) for theming assembly references to apply theme.
+
+## SfToolTip
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
+<td>
+Syncfusion.Core.WinForms
+</td>
+</tr>
+</table>
 
 ## SkinManager
 

@@ -63,46 +63,7 @@ If user wants a cell oriented grid that can contain its own data and does not ne
 
 ## Assembly Deployment
 
-The following list of assemblies needs to be added as reference to use GridControl in any application,
-
-<table>
-<tr>
-<th>
-Required assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.<br/><br/></td></tr>
-</table>
-In addition to these assemblies there are also other optional assemblies.
-
-<table>
-<tr>
-<th>
-Optional assemblies<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-{{'[Syncfusion.GridHelperClasses.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.HelperClasses.Windows contains all the cell types, export properties, features which are in common with GridControl and GridGroupingControl<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.GridConverter.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridConverter.Windows.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Grid.Converter.Windows contains static extension classes for exporting GridControl to excel in Syncfusion.GridExcelConverter namespace.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.Pdf.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.<br/><br/></td></tr>
-<tr>
-<td>
-{{'[Syncfusion.XlsIO.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base.html#"")'| markdownify }}<br/><br/></td><td>
-Syncfusion.XlsIO.Base.WPF contains fundamental and base classes for creating and manipulating excel files.<br/><br/></td></tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Configuring a Simple GridControl
 
