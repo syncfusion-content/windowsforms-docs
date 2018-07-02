@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-[!IMPORTANT] Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WindowsForms application to use our components.
+[!IMPORTANT] Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Windows Forms application to use our components.
 
 This section provides a quick overview for working with the pivot chart for WinForms. Walk through the entire process of creating a simple PivotChart.
 
