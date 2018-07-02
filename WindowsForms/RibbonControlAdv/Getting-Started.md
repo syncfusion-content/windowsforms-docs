@@ -992,7 +992,7 @@ this.quickGallery});
 ![](Getting_Started_Images/Getting-Started_img19.jpg)
 
  
- ## Add ToolStripCheckBox
+## Add ToolStripCheckBox
 
  ToolStripCheckBox is used to select or unselect options. It provides similar set of functionalities like normal CheckBox control in Ribbon.It can be added to a ToolStripEx directly or through a panel.
 
