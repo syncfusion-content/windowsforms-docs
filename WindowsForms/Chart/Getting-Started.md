@@ -13,7 +13,7 @@ This section provides the details that you will need to know about getting start
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sparkline) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#chart) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
 
