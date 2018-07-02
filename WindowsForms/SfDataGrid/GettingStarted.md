@@ -13,10 +13,6 @@ This section provides a quick overview for working with the data grid for WinFor
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfDataGrid control in any application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
-
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
-
 ## Creating Application with SfDataGrid
 In this walk through, users will create WinForms application that contains SfDataGrid control.
 
@@ -30,19 +26,7 @@ SfDataGrid control can be added to the application by dragging it from Toolbox a
 ### Adding Control in Code
 In order to add control manually, do the below steps,
 
-1) 	Add the below required assembly references to the project,
-
-* 	Syncfusion.Core.WinForms
-
-* 	Syncfusion.Data.WinForms
-
-* 	Syncfusion.GridCommon.WinForms
-
-* 	Syncfusion.SfDataGrid.WinForms
-
-* 	Syncfusion.SfInput.WinForms
-
-* 	Syncfusion.SfListView.WinForms
+1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project
 
 2)	Create the SfDataGrid control instance and add it to the Form
 
