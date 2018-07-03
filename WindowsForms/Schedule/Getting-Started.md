@@ -7,16 +7,20 @@ control: Schedule
 documentation: ug
 ---
 
-# Getting started
+# Getting Started
+
 This section guides getting started with Windows application, controls, etc.
 
 ## Assembly deployment
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+
+Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or NuGet package that should be added as reference to use the control in any application. 
 
 ## Creating application with the ScheduleControl
-In this walk through, users will create WinForms application that contains the Schedule control.
+
+In this walkthrough, user will create a WinForms application that contains the Schedule control.
 
 ### Creating the project
+
 Create a new Windows Forms project in Visual Studio to display the Schedule control with data objects.
 
 ### Adding control via designer
@@ -30,6 +34,7 @@ Create a new Windows Forms project in Visual Studio to display the Schedule cont
    ![](Getting-Started_images/Getting-Started_img10.png)
 	
 ### Adding control by code
+
 To add the control manually, follow the steps:
 
 1.Add the following required assembly references to the project:
@@ -80,24 +85,27 @@ End Namespace
 {% endtabs %}
 
 ### Binding data to the ScheduleControl
+
 The ScheduleControl is a data bound control. So, the data must be created for an application to generate the appointments.
 
 ### Creating appointment for the ScheduleControl using SimpleScheduleDataProvider
 
-1.Add an existing file to this project, SimpleScheduleDataProvider.cs (add  SimpleScheduleDataProvider.vb if you are using VB.NET).
-This file defines several classes that implements  the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. 
-These interfaces are discussed in detail later in this UserGuide. 
+Follow the steps to create an appointment:
 
-Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample sample. 
-Drill down to this folder and add this file to your project by using the Solution Explorer window.
+1. Add an existing file to the SimpleScheduleDataProvider.cs (add  SimpleScheduleDataProvider.vb if you are using VB.NET) project.
+
+This file defines several classes that implements  the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
+
+Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample sample. Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
 ![](Getting-Started_images/Getting-Started_img12.jpeg)
 
-2.You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
+2. You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
 ![](Getting-Started_images/Getting-Started_img13.jpeg)
 
-3.After adding the `SimpleScheduleDataProvider.cs` code file, add some code to your Form.cs to provide data support to your ScheduleControl.
+3. After adding the `SimpleScheduleDataProvider.cs` code file, add some code to your Form.cs to provide data support to your ScheduleControl.
+
 First, add using statement to refer class names in the `SimpleScheduleDataProvider.cs` file without adding the Namespace used in that file.
 The other is added in the Form_Load code to hook up the data support. 
 In the `Form_Load`, create an instance of the DataProvider and a MasterList to hold the data. 
@@ -169,12 +177,13 @@ End Namespace
 {% endhighlight %}
 {% endtabs %}
 
-4.Press `F5` key to compile and run your application. A screen like this one should appear.
+4. Press `F5` key to compile and run your application. 
 
 ![](Getting-Started_images/Getting-Started_img14.jpeg)
  
 ## Changing views
-The ScheduleControl supports for 5 schedule view types:
+
+The ScheduleControl supports for five schedule view types:
 
 * Month
 * Day
@@ -182,7 +191,7 @@ The ScheduleControl supports for 5 schedule view types:
 * WorkWeek
 * CustomWeek
 
-To change Month view to Day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select a Day.
+To change month view to day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select a day.
 
 ![](Getting-Started_images/Getting-Started_img15.jpeg)
 	
@@ -191,10 +200,12 @@ You can also change to other schedule views using this ContextMenu.
 ![](Getting-Started_images/Getting-Started_img16.jpeg)
 	
 ## Appointments
+
 The Schedule control supports to insert, remove, modify, and save all the appointment details.
 
 ### Insert
-Double-click one of the time slots on the ScheduleGrid. This action will display a new appointment screen where you can enter a new schedule item.
+
+Double-click one of the timeslots on the ScheduleGrid. This action will display a new appointment screen where you can enter a new schedule item.
 
 ![](Getting-Started_images/Getting-Started_img17.jpeg)
 
@@ -203,13 +214,14 @@ Clicking the Save and Close button on the Appointment, the screen will re-displa
 ![](Getting-Started_images/Getting-Started_img18.jpeg)
 
 ### Remove
-Right click on the appointment and select the **Delete Item** from the context menu to remove the selected appointment.
+
+Right click on the appointment and select the Delete Item from the context menu to remove the selected appointment.
 
 ![](Getting-Started_images/Getting-Started_img19.jpeg)
 
-
 ### Modify
-Double-click on the appointment or right-click and choose the **Edit Item** from context menu.
+
+Double-click on the appointment or right-click and choose the Edit Item from context menu.
 
 ![](Getting-Started_images/Getting-Started_img20.jpeg)
 
@@ -217,8 +229,8 @@ This action will display an appointment form with appointment details to modify 
 
 ![](Getting-Started_images/Getting-Started_img21.jpeg)
 
-
 ### Save all the appointment
+
 Click the Close button on the form system menu on the upper-right corner of the form. Because, the data has been modified in this ScheduleControl. A dialog will appear as follows, click Yes to save the changes to a disk file.
 
 ![](Getting-Started_images/Getting-Started_img22.jpg)
@@ -315,9 +327,11 @@ Compile and run the application again. The Month view should reappear but this t
 ![](Getting-Started_images/Getting-Started_img23.jpg)
 
 ### Schedule appointment
+
 The ScheduleData base classes provides the appointments data used by the ScheduleControl. For code details of deriving these ScheduleData base classes to implement a data provider for the ScheduleControl, see the SimpleScheduleDataProvider code file that ships as part of the ScheduleSample sample.
 
 #### ScheduleAppointment class
+
 The ScheduleAppointment class defines the objects that represent the appointments in the Schedule control. This class implements IScheduleAppointment to provide an object to hold the concrete data associated with appointments. You can either derive this class or implement IScheduleAppointment to extend or modify the information managed by the ScheduleAppointment class. The properties exposed in ScheduleAppointment are:
 
 * **UniqueID:** Gets or sets a unique integer associated with the item.
@@ -338,6 +352,7 @@ The ScheduleAppointment class defines the objects that represent the appointment
 * **IgnoreChanges:** Gets or sets the changes to the item affect the Dirty property.
 
 #### ScheduleAppointmentList class
+
 The ScheduleAppointmentList is a collection of IScheduleAppointments that serves as data for the Schedule Control. This class is a wrapper class for an ArrayList and implements IComparer to order this list by the item's StartTime. If two items start at the same time, the EndTime is used as well to determine the order. Longer appointments rank higher. Here are the properties and methods exposed in ScheduleAppointmentList.
 
 {% tabs %}
@@ -418,6 +433,7 @@ Public Overridable Function NewScheduleAppointment() As IScheduleAppointment
 {% endtabs %}
 
 #### ScheduleDataProvider class
+
 The ScheduleDataProvider has two functional roles:
 
 1.Implements IScheduleDataProvider in a virtual manner so that, the derived classes can provide concrete implementations through virtual overrides. The IScheduleDataProvider virtual methods exposed in ScheduleDataProvider that have empty implementations. So, you are required to derive this class to use it. 
@@ -703,9 +719,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 ## Recurrence appointment
-The Schedule control supports creating the recurring appointment. By this recurrence appointment, use can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
+
+The Schedule control supports creating the recurring appointment. By this recurrence appointment, you can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
 
 [Create the recurrence appointment](time-interval)
-
-	
-
