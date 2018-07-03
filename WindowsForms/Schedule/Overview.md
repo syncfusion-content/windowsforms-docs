@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-The Syncfusion Essential Schedule is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. The scheduling support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
+The Syncfusion Essential Schedule is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
 
-The Syncfusion Essential Schedule is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. The scheduling support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
+The scheduling support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
 
 ![](Overview_images/Overview_img1.png)
 
@@ -19,9 +19,7 @@ The Scheduler control finds a wide variety of applications such as Time Tables, 
 
 ## Key features
 
-**Key features:**
-
-* Caption panel: Displays a caption at the top of the Schedule control. There are two button objects in this panel that will navigate Schedule forward and backward. This panel is docked on the top of the ScheduleControl client area. 
+* Caption panel: Displays a caption on the top of the Schedule control. There are two button objects in this panel that will navigate Schedule forward and backward. This panel is docked on the top of the ScheduleControl client area. 
 * Navigation panel: Places additional controls and makes them appear adjacent to the Schedule control. This can be optionally docked to the left or right side of the ScheduleControl. You can also hide this panel. The ScheduleControl.Calendar is a NavigationCalendar object docked at the top of this panel. There is also a splitter docked under the Navigation Calendar to display more or fewer calendars in the NavigationCalendar. The default settings display two such calendars.
 * Navigation Calendar: The GridControl-derived object displays multiple calendars that allows selecting the dates displayed in the Schedule control. This calendar is docked on the top of the NavigationPanel. The number of calendars displayed in the Navigation Calendar is determined by its client height. Enlarging the height of the Navigation Calendar will display more calendars. There is a splitter docked under the Navigation Calendar to facilitate such sizing. 
 * Editing: Supports editing the appointments using Appointment form.
@@ -32,5 +30,3 @@ The Scheduler control finds a wide variety of applications such as Time Tables, 
 * Globalization and localization: Supports localized static text, day, and month names based on the culture.
 * Recurrence appointment: Supports schedule recurring appointments to repeat daily, weekly, monthly, or yearly.
 * Touch support: Completely supports swiping, panning, zooming, and more.
-
-
