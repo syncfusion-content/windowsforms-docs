@@ -21,6 +21,7 @@ Following are the key features of SfDataGrid control
 * Summaries – Extensive support to show brief information about the individual data columns or groups of rows.
 * Filtering – Interactive support for filtering data as like in Excel.
 * Validation – Support to validate the data on errors.
+* Master-Detail View – Support to display relational data using hierarchies.
 * Exporting – Support to export the data to Excel and PDF.
 * Styling – Extensive support for customizing styles of cells and rows in SfDataGrid.
 * Stacked Headers – Extensive support to show multiple headers called stacked headers.
