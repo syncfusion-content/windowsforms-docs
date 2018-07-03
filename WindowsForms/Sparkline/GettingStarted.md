@@ -11,6 +11,15 @@ documentation: ug
 
 This section provides the details that you will need to know about getting started with our Sparkline control. 
 
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sparkline) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+
 ## Adding sparkline to form
 
 To add sparkline to your form, follow the given steps:
