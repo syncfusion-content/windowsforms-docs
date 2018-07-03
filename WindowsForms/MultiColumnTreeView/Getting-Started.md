@@ -153,9 +153,9 @@ this.multiColumnTreeView1.Columns.AddRange(new TreeColumnAdv[] { this.countryCol
 
 ## Adding Node to the control
 
-For adding nodes to the multicolumntreeview follow the steps below
+For adding nodes to the MultiColumnTreeView follow the steps below
 
-*	Click the smart tag of the multicolumntreeview and select the `Edit Nodes Collection` or click the `Nodes Editor…` command in property grid.
+*	Click the smart tag of the MultiColumnTreeView and select the `Edit Nodes Collection` or click the `Nodes Editor…` command in property grid.
 
 ![](Getting-Started_Images/GettingStarted-img4.jpg) 
 
@@ -163,7 +163,7 @@ It can also be opened through Property Window.
 
 ![](Getting-Started_Images/GettingStarted-img5.jpg) 
   
-*	MultiColumnTreeView Node Collection Editor will be opened and click `Add Node` to add a node into multicolumntreeview.
+*	MultiColumnTreeView Node Collection Editor will be opened and click `Add Node` to add a node into MultiColumnTreeView.
 
 ![](Getting-Started_Images/GettingStarted-img6.jpg) 
  
@@ -344,11 +344,11 @@ It can also be opened through Property Window.
 
 ## Adding SubItems
 
-•	For adding subitems to a node, click the SubItem property in node property grid.
+•	For adding SubItems to a node, click the SubItem property in node property grid.
 
 ![](Getting-Started_Images/GettingStarted-img13.jpg) 
  
-•	Then `TreeNodeAdv SubItem Collection Editor` will be opened and click **Add** to add a subitem to the node.
+•	Then `TreeNodeAdv SubItem Collection Editor` will be opened and click **Add** to add a SubItem to the node.
 
 ![](Getting-Started_Images/GettingStarted-img14.jpg) 
 
@@ -492,7 +492,7 @@ Description</th></tr>
 <tr>
 <td>
 ShowRootLines</td><td>
-Indicates if the Rootlines will be shown for the nodes.</td></tr>
+Indicates if the RootLines will be shown for the nodes.</td></tr>
 </table>
 
 *Through code*

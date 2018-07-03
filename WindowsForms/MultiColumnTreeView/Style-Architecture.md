@@ -232,7 +232,7 @@ Specifies the sort type of the node.</td></tr>
 
 ![](Style-Architecture_Images/Style-Architecture_img10.jpg)
 
-Image Showing three Standard styles  for Nodes, Subitem and Column.
+Image Showing three Standard styles  for Nodes, SubItem and Column.
 
 The below image displays a gradient style  for all the columns of the MultiColumnTreeView control by changing the properties of Standard Style 
 

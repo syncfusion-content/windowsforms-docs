@@ -62,10 +62,10 @@ Me.MultiColumnTreeView1.SelectedNode = Me.MultiColumnTreeView1.Nodes(0).Nodes(1)
 
 {% endtabs %}
 
-`SelectedNodes` is used to get the nodes selected in multicolumntreeview, it can be used in all  selection modes .
+`SelectedNodes` is used to get the nodes selected in MultiColumnTreeView, it can be used in all  selection modes .
 
 
-`ActiveNode` is the node that is being active, it allows to get or set a node as ActiveNode at an instantce.
+`ActiveNode` is the node that is being active, it allows to get or set a node as ActiveNode at an instance.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ Me.MultiColumnTreeView1.AllowKeyboardSearch = True
 
 ## Auto Size for columns
 
-MultiColumnTreeView has the support for calculating the width of the Nodes and subitems by calculating the width of Text and images in it and assigns the largest node width to its column.
+MultiColumnTreeView has the support for calculating the width of the Nodes and SubItems by calculating the width of Text and images in it and assigns the largest node width to its column.
 
 It can be done by using the property `AutoSizeMode`, it has two options None and AllCellsExceptHeader.
 
@@ -213,7 +213,7 @@ this.multiColumnTreeView1.HistoryManager.Redo();
 
 ### Help Text
 
-`HelpText` is a popup that appears when hovered on any node or subitem, it will display the information given to that HelpText property.
+`HelpText` is a popup that appears when hovered on any node or SubItem, it will display the information given to that HelpText property.
 
 *Assigning help text to a node* 
 
@@ -233,7 +233,7 @@ Me.multiColumnTreeView1.Nodes(0).Node(0).HelpText = "India and New Delhi"
 
 {% endtabs %}
 
-*Assigning help text to a subitem*
+*Assigning help text to a subItem*
 
 {% tabs %}
 

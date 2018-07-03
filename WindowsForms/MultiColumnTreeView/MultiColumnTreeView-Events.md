@@ -487,7 +487,7 @@ Occurs after a MouseDown is raised.</td></tr>
 <tr>
 <td>
 ScrollControlHandledMouseMove</td><td>
-Occurs after a MouseMovet event is raised and after auto-scrolling.</td></tr>
+Occurs after a MouseMove event is raised and after auto-scrolling.</td></tr>
 <tr>
 <td>
 ScrollControlHandledMouseUp</td><td>

@@ -53,14 +53,14 @@ Find and Replace can be enabled by using the below code
 
 TreeViewFindReplaceDialog dialog = new TreeViewFindReplaceDialog(this.multiColumnTreeView1);
 
-dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.Find("Britain", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
-dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.FindAll("Britain", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
-dialog.Replace("India","Bharath", TreeViewSearchOption.MatchWholeText, 
+dialog.Replace("Britain","United Kingdom", TreeViewSearchOption.MatchWholeText, 
 TreeViewSearchRange.TreeView);
 
-dialog.ReplaceAll("India", "Bharath", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
+dialog.ReplaceAll("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView);
 
 {% endhighlight %}
 
@@ -68,13 +68,13 @@ dialog.ReplaceAll("India", "Bharath", TreeViewSearchOption.MatchWholeText, TreeV
 
     Dim dialog As TreeViewFindReplaceDialog = New TreeViewFindReplaceDialog(Me.multiColumnTreeView1)
 
-    dialog.Find("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+    dialog.Find("Britain", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
-    dialog.FindAll("India", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+    dialog.FindAll("Britain", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
-    dialog.Replace("India", "Bharath", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+    dialog.Replace("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
-    dialog.ReplaceAll("India", "Bharath", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
+    dialog.ReplaceAll("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeText, TreeViewSearchRange.TreeView)
 
 {% endhighlight %}
 
@@ -240,7 +240,7 @@ private void MultiColumnTreeView1_OnNodeReplacing(object sender, TreeNodeAdvOnRe
             TreeNodeAdv MatchedNode = e.Node;
             string ReplacedText = e.ReplaceText;
             string SearchOption = e.TreeViewSearchOption.ToString();
-            string SerachRange = e.TreeViewSearchRange.ToString();
+            string SearchRange = e.TreeViewSearchRange.ToString();
 }
 
 
@@ -254,7 +254,7 @@ Private Sub MultiColumnTreeView1_OnNodeReplacing(ByVal sender As Object, ByVal e
     Dim MatchedNode As TreeNodeAdv = e.Node
     Dim ReplacedText As String = e.ReplaceText
     Dim SearchOption As String = e.TreeViewSearchOption.ToString()
-    Dim SerachRange As String = e.TreeViewSearchRange.ToString()
+    Dim SearchRange As String = e.TreeViewSearchRange.ToString()
 
 End Sub
 

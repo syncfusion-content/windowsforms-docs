@@ -431,7 +431,7 @@ Me.multiColumnTreeView1.Nodes(0).SubItems(1).Background = New Syncfusion.Drawing
 
 #### BorderColor
 
-Border color for the subitem can be set using the property `BorderColor`.
+Border color for the SubItem can be set using the property `BorderColor`.
 
 {% tabs %}
 
@@ -603,7 +603,7 @@ Me.multiColumnTreeView2.ShowPlusMinus = False
 
 ### LeftImageList
 
-The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in LeftImageIndices property of individual nodes, using the MultiColumntreeView Nodes Collection Editor.
+The tree nodes can be set with left images using LeftImageList property in the property window. Left images for the individual nodes can be specified in LeftImageIndices property of individual nodes, using the MultiColumnTreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using LeftImagePadding.
 
@@ -641,7 +641,7 @@ LeftStateImagePadding</td><td>
 It is the space provided between, the LeftStateImage of the node and node.</td></tr>
 </table>
 
-To set the left images for all the nodes in multicolumntreeview follow the below steps
+To set the left images for all the nodes in MultiColumnTreeView follow the below steps
 
 1.	Create image list and add images in it.
 
@@ -653,13 +653,13 @@ Through code:
 
 {% highlight c# %}
 
-this.multiColumnTreeView1.LeftImageList = this.leftimagelist;
+this.multiColumnTreeView1.LeftImageList = this.leftImageList;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.multiColumnTreeView1.LeftImageList = Me.leftimagelist
+Me.multiColumnTreeView1.LeftImageList = Me.leftImageList
 
 {% endhighlight %}
 
@@ -688,7 +688,7 @@ multiColumnTreeView1.LeftImageIndices = New Integer() {1}
 ### RightImageList
 
 
-The tree nodes can be set with right images using RightImageList property in the property window. right images for the individual nodes can be specified in RightImageIndices property of individual nodes, using the MultiColumntreeView Nodes Collection Editor.
+The tree nodes can be set with right images using RightImageList property in the property window. right images for the individual nodes can be specified in RightImageIndices property of individual nodes, using the MultiColumnTreeView Nodes Collection Editor.
 
 The nodes with the images can be given an enhanced appearance using RightImagePadding.
 
@@ -726,7 +726,7 @@ RightStateImagePadding</td><td>
 It is the space provided between, the RightStateImage of the node and node.</td></tr>
 </table>
 
-To set the right images for all the nodes in multicolumntreeview follow the below steps
+To set the right images for all the nodes in MultiColumnTreeView follow the below steps
 
 1.	Create image list and add images in it.
 
@@ -738,13 +738,13 @@ Through code:
 
 {% highlight c# %}
 
-this.multiColumnTreeView1.RightImageList = this.rightimagelist;
+this.multiColumnTreeView1.RightImageList = this.rightImageList;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.multiColumnTreeView1.RightImageList = Me.rightimagelist
+Me.multiColumnTreeView1.RightImageList = Me.rightImageList
 
 {% endhighlight %}
 

@@ -47,7 +47,7 @@ Method which is used to derive the path string for a specific node.</td></tr>
 
 In the BeforeExpand event the user can retrieve the path string for a specific node using the TreeNodeAdv.GetPath method where the user can also specify the separator.
 
-The vital thing in this sample is that the MultiColumntreeView.AddSeparatorAtEnd property must be set to True to add a “\” character at the end of the path of the node, when calling the Node.GetPath method.
+The vital thing in this sample is that the MultiColumnTreeView.AddSeparatorAtEnd property must be set to True to add a “\” character at the end of the path of the node, when calling the Node.GetPath method.
 
 {% tabs %}
 
