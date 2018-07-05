@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly Deployment
 
-The following list of assemblies should be added as reference to use the `SfToolTip` component in any application:
+The following list of assemblies should be added as reference to use the [SfToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip.html) component in any application:
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ The provided ToolTip text will be configured for the control and will be shown w
 #### Setting using ToolTipInfo
 
 1) Drag and drop the `SfToolTip` to the form.
-2) When the `SfToolTip` component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the Ellipse button in the `ToolTipInfo` on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
+2) When the `SfToolTip' component is added to a form, an extended property will be added to the properties of the controls in the form. Clicking the Ellipse button in the [ToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo.html) on sfToolTip1 extended property will show the `SfToolTip` Editor dialog box. 
 
 ![](SfToolTip_images/SfToolTip_img3.jpeg)
 
@@ -120,7 +120,7 @@ The provided `ToolTipInfo` will be configured for the control and will be shown 
 
 #### Setting using Text
 
-The `SfToolTip` can be set to the control with tooltip text by using the `SetToolTip` method. 
+The `SfToolTip` can be set to the control with tooltip text by using the [SetToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~SetToolTip.html) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -135,7 +135,7 @@ sfToolTip1.SetToolTip(this.button1, " The ToolTip information of the Button cont
 
 #### Setting using ToolTipInfo
 
-The `SfToolTip` can be set to the control with set of tooltip information by using the `SetToolTipInfo` method.
+The `SfToolTip` can be set to the control with set of tooltip information by using the [SetToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~SetToolTipInfo.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ### Show Tooltip
 
-The SfToolTip can be shown programmatically using the `Show` method. The various overloads provided to show the tooltip are documented in `Show`.
+The SfToolTip can be shown programmatically using the [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~Show.html) method. The various overloads provided to show the tooltip are documented in `Show`.
 
 **Note**: If the position of tooltip to be shown is not mentioned, the tooltip will be shown in mouse cursor position.
 
@@ -205,7 +205,7 @@ this.sfToolTip1.Show(toolTipInfo);
 
 ### Hide Tooltip
 
-The `SfToolTip` can be hidden using the `Hide` method. 
+The `SfToolTip` can be hidden using the [Hide](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~Hide.html) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -224,7 +224,7 @@ The following properties can be used to set the ToolTip delay time:
 
 ### InitialDelay
 
-The `InitialDelay` property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
+The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~InitialDelay.html) property enables you to shorten or lengthen the time that the `SfToolTip` waits before displaying a ToolTip. Default value is 0.
 
 {% tabs %}
 {% highlight c# %}
@@ -237,7 +237,7 @@ sfToolTip1.InitialDelay = 1000;
 
 ### AutoPopDelay
 
-The `AutoPopDelay` property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
+The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~AutoPopDelay.html) property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. Default value is 5000.
 
 {% tabs %}
 {% highlight c# %}
@@ -250,7 +250,7 @@ sfToolTip1.AutoPopDelay = 10000;
 
 ## Showing ToolTip with Beak
 
-The `SfToolTip` can be shown with the beak by using the `ToolTipStyle` property.
+The `SfToolTip` can be shown with the beak by using the [ToolTipStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~ToolTipStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -273,7 +273,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ### Setting the Beak Back Color
 
-The back color of the balloon beak can be set using the `BeakBackColor` of `ToolTipInfo` property.
+The back color of the balloon beak can be set using the [BeakBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~BeakBackColor.html) of `ToolTipInfo` property.
 
 {% tabs %}
 {% highlight c# %}

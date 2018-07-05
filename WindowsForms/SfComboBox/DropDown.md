@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting maximum drop-down items
 
-Maximum number of items to be shown in the drop-down control can be customized by using the `MaxDropDownItems` property.
+Maximum number of items to be shown in the drop-down control can be customized by using the [MaxDropDownItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~MaxDropDownItems.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ sfComboBox1.MaxDropDownItems = 4
 
 ## Disabling the drop-down resizing
 
-By default, the drop-down control can be resized by mouse clicking and dragging the gripper portion. The drop-down resizing can be disabled by using the `AllowDropDownResize` property.
+By default, the drop-down control can be resized by mouse clicking and dragging the gripper portion. The drop-down resizing can be disabled by using the [AllowDropDownResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AllowDropDownResize.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ sfComboBox1.AllowDropDownResize = False
 
 ## Cancel the drop-down opening
 
-The `DropDownOpening` event can be used to cancel the drop-down opening by setting the `e.Cancel` property to `true`.
+The [DropDownOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DropDownOpeningEventArgs.html) event can be used to cancel the drop-down opening by setting the `e.Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -61,7 +61,7 @@ End Sub
 
 ## Cancel the drop-down closing
 
-The `DropDownClosing` event can be used to cancel the drop-down closing by setting the `e.Cancel` property to `true`.
+The [DropDownClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DropDownClosingEventArgs.html) event can be used to cancel the drop-down closing by setting the `e.Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}

@@ -13,7 +13,7 @@ The SfButton is an advanced button control capable of displaying text and image 
 
 ## Key Features
 
-Following are the key features of the SfButton:
+Following are the key features of the [SfButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton.html):
 
 * Appearance: Supports customizing the appearance in all button states (hover, pressed, focused, and disabled states).
 

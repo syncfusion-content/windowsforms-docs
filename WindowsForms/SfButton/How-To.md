@@ -43,7 +43,7 @@ this.CancelButton = sfButton2;
 
 ## Show the Tooltip on Mouse Hover
 
-The SfToolTip can be shown on the SfButton when the mouse hovering. Follow the steps to perform this feature:
+The [SfToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip.html) can be shown on the SfButton when the mouse hovering. Follow the steps to perform this feature:
 
 1. Create a new instance of SfToolTip.
 2. Initialize the SfToolTip to the SfButton by using the SetToolTip method.

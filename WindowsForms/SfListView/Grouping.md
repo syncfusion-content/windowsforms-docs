@@ -11,7 +11,7 @@ documentation: ug
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic grouping
-The SfListView allows programmatic grouping by defining the `GroupDescriptor` object and adding it into the `View.GroupDescriptors` collection. The GroupDescriptor object holds the following properties:
+The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The GroupDescriptor object holds the following properties:
 
 * `PropertyName`: Describes the name of the property to be grouped.
 * `KeySelector`: Describes selector to return the group key.
@@ -32,7 +32,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ![](Grouping_images/Grouping_img1.png)
 
 ## Custom grouping             
-The SfListView supports grouping the items based on custom logic applied to the `SfListView.DataSource.GroupComparer` or `GroupDescriptor.Comparer` property added to the DataSource.GroupDescriptors collection.
+The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupComparer.html) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~Comparer.html) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
 In the custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
 
 {% tabs %}
@@ -110,7 +110,7 @@ End Class
 ![](Grouping_images/Grouping_img2.png)
 
 ## Grouping based on first character
-The SfListView supports grouping the items based on first character of the value assigned to the property name in `GroupDescriptor` by using the `KeySelector`.
+The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~KeySelector.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -140,7 +140,7 @@ End Function
 ![](Grouping_images/Grouping_img3.png)
 
 ## Grouping based on more than one property in the data object
-Group the items by binding multiple properties to the property name of `GroupDescriptor` using `KeySelector` in which the group header items can be created with multiple data model object effectively.
+Group the items by binding multiple properties to the property name of [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) using [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) in which the group header items can be created with multiple data model object effectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,7 +170,7 @@ End Function
 ![](Grouping_images/Grouping_img4.png)
 
 ## Grouping by ignoring case sensitivity
-Group the items by ignoring case sensitivity using the `KeySelector` property in the `GroupDescriptor`. While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
+Group the items by ignoring case sensitivity using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) property in the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html). While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -197,7 +197,7 @@ By default, the groups will be in expanded state in the SfListView. You can expa
 ## Programmatic expand and collapse  
 
 ### Expand or collapse a specific group                             
-Expand or collapse a specific group by using the `SfListView.ExpandGroup` method and `SfListView.CollapseGroup` method.
+Expand or collapse a specific group by using the [SfListView.ExpandGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ExpandGroup.html) method and [SfListView.CollapseGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CollapseGroup.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -213,7 +213,7 @@ sfListView1.CollapseGroup(group)
 {% endtabs %}
 
 ### Expand or collapse all the groups
-Expand or collapse all the groups programmatically at runtime by using the `SfListView.ExpandAll` method and `SfListView.CollapseAll` method.
+Expand or collapse all the groups programmatically at runtime by using the [SfListView.ExpandAll](//help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ExpandAllGroups.html) method and [SfListView.CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CollapseAllGroups.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -227,8 +227,8 @@ sfListView1.CollapseAllGroups()
 {% endtabs %}
 
 ## Disable expanding of specific group
-The `SfListView.GroupExpanding` event occurs when the group is being expanded.
-The `GroupExpandCollapseChangingEventArgs` of the GroupExpanding event provides information about the expanding group and it has the following members:
+The [SfListView.GroupExpanding](//help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~GroupExpanding_EV.html) event occurs when the group is being expanded.
+The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.GroupExpandCollapseChangingEventArgs.html) of the GroupExpanding event provides information about the expanding group and it has the following members:
 
 * `Group`: Gets a list of group being expanded.
 * `Cancel` : Decides whether to cancel the group expansion or not.
@@ -259,8 +259,8 @@ End Sub
 {% endtabs %}
 
 ## Disable collapsing of specific group
-The `SfListView.GroupCollapsing` event occurs when the group is being collapsed.
-The `GroupExpandCollapseChangingEventArgs` of the GroupCollapsing event provides information about the collapsing group and it contains the following members:
+The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~GroupCollapsing_EV.html) event occurs when the group is being collapsed.
+The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.GroupExpandCollapseChangingEventArgs.html) of the GroupCollapsing event provides information about the collapsing group and it contains the following members:
 
 * `Group`: Get a group being collapsed.
 * `Cancel`: Decides whether to cancel the group collapsing or not.
@@ -287,7 +287,7 @@ End Sub
 {% endtabs %}
 
 ## Group an item with sorting
-Group the items of underlying collection with sorting by adding the `DataSource.GroupDescriptors` and the `DataSource.SortDescriptors` with required properties.
+Group the items of underlying collection with sorting by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required properties.
 
 {% tabs %}
 {% highlight c# %}

@@ -120,7 +120,7 @@ End Namespace
 
 ### Binding to data
 
-To bind the SfComboBox to data, set the `SfComboBox.DataSource` property to `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the `DisplayMember` property and you can bind a property to use as the actual value for the items by using the `ValueMember` property.
+To bind the SfComboBox to data, set the [SfComboBox.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DataSource.html) property to `IEnumerable` implementation. You can bind a property of the underlying data source to display for SfComboBox by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DisplayMember.html) property and you can bind a property to use as the actual value for the items by using the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ValueMember.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -164,7 +164,7 @@ They are,
 
 * SuggestAppend: Both of these.
 
-Auto complete can be set by using the `AutoCompleteMode` property.
+Auto complete can be set by using the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 ![](GettingStarted_images/GettingStarted_img3.png)
 
 ## Multi selection
-This allows you to select multiple values from the drop-down list. The multi selection combo box can be enabled by setting the `ComboBoxMode` property as `MultiSelection`.
+This allows you to select multiple values from the drop-down list. The multi selection combo box can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ComboBoxMode.html) property as `MultiSelection`.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,5 +193,5 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 
 ## Selected Items
 
-Index of the selected item can be retrieved by using the `SelectedIndex` property. The value of the selected item can be retrieved by using the `SelectedValue` property. It returns the value of the property bound to the `ValueMember` property. If the `ValueMember` is not initialized, it will return the value of the property bound to the `DisplayMember`. The selected item of the SfComboBox can be retrieved by using the `SelectedItem` property.
+Index of the selected item can be retrieved by using the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedIndex.html) property. The value of the selected item can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedValue.html) property. It returns the value of the property bound to the `ValueMember` property. If the `ValueMember` is not initialized, it will return the value of the property bound to the `DisplayMember`. The selected item of the SfComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedItem.html) property.
 

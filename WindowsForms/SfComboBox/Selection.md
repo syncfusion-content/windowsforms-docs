@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection
 
-The SfComboBox allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the `ComboBoxMode` property. 
+The SfComboBox allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ComboBoxMode.html) property. 
 
 Combo box has two different modes:
 
@@ -20,21 +20,20 @@ Combo box has two different modes:
 
 ### Getting the selected index
 
-Index of the selected item can be retrieved by using the `SelectedIndex` property.
+Index of the selected item can be retrieved by using the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedIndex.html) property.
 
 ### Getting the selected value
 
-Value of the selected item can be retrieved by using the `SelectedValue` property. It returns the property value bind to the `ValueMember` property. If the `ValueMember` is not initialized, it will return the value of the property bind to `DisplayMember`.
-
+Value of the selected item can be retrieved by using the [SelectedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedValue.html) property. It returns the property value bind to the [ValueMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ValueMember.html) property. If the `ValueMember` is not initialized, it will return the value of the property bind to [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DisplayMember.html).
 ### Getting the selected item of underlying data object
 
-The selected item of the SfComboBox can be retrieved by using the `SelectedItem` property.
+The selected item of the SfComboBox can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedItem.html) property.
 
 ### Events
 
 #### SelectedIndexChanged event
 
-The SelectedIndexChanged event is raised while selecting an item.
+The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedIndexChanged_EV.html) event is raised while selecting an item.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +52,7 @@ private void SfComboBox1_SelectedValueChanged(object sender, EventArgs e)
 
 #### SelectedValueChanged event
 
-The SelectedValueChanged event is raised while selecting an item.
+The [SelectedValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~SelectedValueChanged_EV.html) event is raised while selecting an item.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +70,7 @@ End Sub
 
 ## Multi-selection
 
-The SfComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the `ComboBoxMode` property as `MultiSelection`.
+The SfComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ComboBoxMode.html) property as `MultiSelection`.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +85,7 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 
 ### Select all
 
-The SfComboBox support to choose all items in the drop-down list for multiselect combo box by setting the `AllowSelectAll` property to `true`.
+The SfComboBox support to choose all items in the drop-down list for multiselect combo box by setting the [AllowSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AllowSelectAll.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,7 +100,7 @@ sfComboBox1.AllowSelectAll = True
 
 ### Changing the delimiter character to separate selected items
 
-The SfComboBox supports various delimiter characters to separate multiple selected items in the multi selected combo box. The delimiter character can be set by using the `DelimiterChar` property. The default delimiter character is “,”.
+The SfComboBox supports various delimiter characters to separate multiple selected items in the multi selected combo box. The delimiter character can be set by using the [DelimiterChar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DelimiterChar.html) property. The default delimiter character is “,”.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +130,7 @@ sfComboBox1.DropDownControl.ShowButtons = False
 
 ### Accessing the checked items
 
-The checked items can be retrieved by using the `CheckedItems` property. The items can also be added programmatically by using the `CheckedItems` property.
+The checked items can be retrieved by using the `CheckedItems` property. The items can also be added programmatically by using the [CheckedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~CheckedItems.html) property.
 
 ### Tooltip
 
@@ -204,7 +203,7 @@ sfComboBox1.ToolTipOption.ShadowVisible = False
 
 #### Styling
 
-Appearance of the tooltip can be customized by using the `ToolTipStyle` property.
+Appearance of the tooltip can be customized by using the [ToolTipStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~ToolTipStyle.html ) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -225,7 +224,7 @@ sfComboBox1.Style.ToolTipStyle.BorderThickness = 5
 
 ##### Conditional styling
 
-Appearance of the tooltip can be customized before showing the tooltip based on the control in which it is configured by using the `ToolTipOpening` event.
+Appearance of the tooltip can be customized before showing the tooltip based on the control in which it is configured by using the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ToolTipOpening_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -252,7 +251,7 @@ End Sub
 
 #### Canceling tooltip opening
 
-The `ToolTipOpening` event can be used to cancel the tooltip opening by setting the `e.Cancel` to `true`.
+The [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ToolTipOpening_EV.html) event can be used to cancel the tooltip opening by setting the `e.Cancel` to `true`.
 
 {% tabs %}
 {% highlight c# %}

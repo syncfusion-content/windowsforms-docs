@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Complete
 
-Auto complete can be enabled by using the `SfComboBox.AutoCompleteMode` property. Three different ways to display the suggestions are:
+Auto complete can be enabled by using the [SfComboBox.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteMode.html) property. Three different ways to display the suggestions are:
 
 * Suggest: Displays suggestion in drop-down list.
 * Append: Appends the first suggestion to text.
@@ -19,7 +19,7 @@ Auto complete can be enabled by using the `SfComboBox.AutoCompleteMode` property
 
 ### Suggest
 
-A list of probable matches will be suggested and displayed in the drop-down list by setting the `AutoCompleteMode` property as `Suggest`.
+A list of probable matches will be suggested and displayed in the drop-down list by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteMode.html) property as `Suggest`.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,7 +34,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 ### Append
 
-The closest match will be added to the editor portion of the SfComboBox control with partial string selection in the drop-down list. This mode can be enabled by setting the `AutoCompleteMode` property as `Append`.
+The closest match will be added to the editor portion of the [SfComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox.html) control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteMode.html) property as `Append`.
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +49,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 
 ### Suggest append
 
-The closest match will be added in the editor portion of the SfComboBox control with partial string selection. The list of matched items will be displayed in the drop-down list by setting the `AutoCompleteMode` property as `SuggestAppend`.
+The closest match will be added in the editor portion of the [SfComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox.html) control with partial string selection. The list of matched items will be displayed in the drop-down list by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteMode.html) property as `SuggestAppend`.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +64,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 
 ## Auto complete by case sensitive
 
-By default, auto completion is case in-sensitive. Case sensitivity can be enabled by setting the `AllowCaseSensitiveOnAutoComplete` property to `true`.
+By default, auto completion is case in-sensitive. Case sensitivity can be enabled by setting the [AllowCaseSensitiveOnAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AllowCaseSensitiveOnAutoComplete.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ sfComboBox1.AllowCaseSensitiveOnAutoComplete = True
 
 ## Different modes for suggesting items
 
-StartsWith and Contains modes are used to auto complete the items by using the `AutoCompleteSuggestMode` property. The default value is `StartsWith`.
+StartsWith and Contains modes are used to auto complete the items by using the [AutoCompleteSuggestMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteSuggestMode.html) property. The default value is `StartsWith`.
 
 {% tabs %}
 {% highlight c# %}
@@ -94,7 +94,7 @@ sfComboBox1.AutoCompleteSuggestMode = AutoCompleteSuggestMode.Contains
 
 ## Setting delay for auto complete
 
-The SfComboBox provides support to set delay in milliseconds when suggesting matches on auto completion process by using the `AutoCompleteSuggestDelay` property. The default suggest delay is 0.
+The SfComboBox provides support to set delay in milliseconds when suggesting matches on auto completion process by using the [AutoCompleteSuggestDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AutoCompleteSuggestDelay.html) property. The default suggest delay is 0.
 
 {% tabs %}
 {% highlight c# %}

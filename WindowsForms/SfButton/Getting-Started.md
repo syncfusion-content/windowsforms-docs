@@ -44,7 +44,7 @@ To add the SfButton to form, drag and drop the SfButton from the toolbox to the 
 
 ### Through Code
 
-To programmatically add the SfButton to form, create a new instance of the SfButton and add it to the form the Controls collection.
+To programmatically add the SfButton to form, create a new instance of the [SfButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton.html) and add it to the form the Controls collection.
 
 
 {% tabs %}
