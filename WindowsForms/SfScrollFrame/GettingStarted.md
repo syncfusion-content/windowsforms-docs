@@ -33,7 +33,6 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </table>
 =======
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
->>>>>>> hotfix/hotfix-v16.2.0.41
 
 ## Attaching SfScrollFrame to a control
 
