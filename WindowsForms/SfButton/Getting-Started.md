@@ -11,26 +11,7 @@ documentation: ug
 
 ## Assembly Deployment
 
-The following assembly should be added as reference to use the SfButton control in any application.
-
-<table>
-<tr>
-<td>
-{{'Required Assemblies'| markdownify }}
-</td>
-<td>
-{{'Description'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like {{'SfScrollFrame'| markdownify }}, {{'SfButton'| markdownify }}, {{'SfToolTip '| markdownify }}, and {{'SfForm '| markdownify }}.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfbutton) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Adding SfButton into a Form
 

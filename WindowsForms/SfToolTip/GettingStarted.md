@@ -23,6 +23,9 @@ Description<br/><br/></td></tr>
 Syncfusion.Core.WinForms<br/><br/></td><td>
 Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfSkinManager.<br/><br/></td></tr>
 </table>
+=======
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftooltip) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+>>>>>>> hotfix/hotfix-v16.2.0.41
 
 ## Setting the SfToolTip to a Control
 

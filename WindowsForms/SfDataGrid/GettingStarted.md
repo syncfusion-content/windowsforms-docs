@@ -10,101 +10,8 @@ documentation: ug
 This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
 
 ## Assembly Deployment
-The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfScrollFrame, SfButton, SfForm and SfToolTip.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.GridCommon.WinForms
-</td>
-<td>
-Syncfusion.GridCommon.WinForms assembly contains the base classes for Scrolling, FilterControl and Utilities.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Data.WinForms
-</td>
-<td>
-Syncfusion.Data.WinForms assembly contains fundamental and base classes for `CollectionViewAdv` which is responsible for data processing operations handled in SfDataGrid.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfDataGrid.WinForms
-</td>
-<td>
-Syncfusion.DataGrid.WinForms assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present in Syncfusion.WinForms.DataGrid namespace.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfInput.WinForms
-</td>
-<td>
-Syncfusion.SfInput.WinForms contains various editor controls (such as SfNumericTextBox and SfDateTimeEdit) which are used in SfDataGrid.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfListView.WinForms
-</td>
-<td>
-Syncfusion.SfListView.WinForms contains various list controls (such as SfComboBox and SfListView) which are used in SfDataGrid.
-</td>
-</tr>
-</table>
-In order to use export to Excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
-<table>
-<tr>
-<td>
-{{'**Optional Assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfDataGridConverter.WinForms
-</td>
-<td>
-Syncfusion.SfDataGridConverter.WinForms contains static extension classes for exporting SfDataGrid to excel and PDF in using Syncfusion.WinForms.DataGridConverter namespace.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.XlsIO.Base
-</td>
-<td>
-Syncfusion.XlsIO.Base contains fundamental and base classes for creating and manipulating excel files.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Pdf.Base
-</td>
-<td>
-Syncfusion.Pdf.Base contains fundamental and base classes for creating PDF.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfDataGrid control in any application.
 
 ## Creating Application with SfDataGrid
 In this walk through, users will create WinForms application that contains SfDataGrid control.
@@ -119,19 +26,7 @@ SfDataGrid control can be added to the application by dragging it from Toolbox a
 ### Adding Control in Code
 In order to add control manually, do the below steps,
 
-1) 	Add the below required assembly references to the project,
-
-* 	Syncfusion.Core.WinForms
-
-* 	Syncfusion.Data.WinForms
-
-* 	Syncfusion.GridCommon.WinForms
-
-* 	Syncfusion.SfDataGrid.WinForms
-
-* 	Syncfusion.SfInput.WinForms
-
-* 	Syncfusion.SfListView.WinForms
+1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project
 
 2)	Create the SfDataGrid control instance and add it to the Form
 
@@ -500,6 +395,14 @@ GridCheckBoxColumn
 </td>
 <td>
 Represents SfDataGrid column that hosts CheckBox in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridComboBoxColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts ComboBox in its cells.
 </td>
 </tr>
 <tr>

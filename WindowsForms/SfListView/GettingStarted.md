@@ -11,50 +11,7 @@ documentation: ug
 This section provides a quick overview for getting started with SfListView for WinForms. Walk through the entire process of creating the real world SfListView. 
 
 ## Assembly Deployment
-The following list of assemblies should be added as reference from the Assemblies folder to use the SfListView in the application:
-
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Contains theme related classes for Syncfusion controls and basic components such as SfButton, SfForm, and SfToolTip.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.DataSource.WinForms
-</td>
-<td>
-Contains fundamental and base classes for view, responsible for data processing operations handled in SfListView.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfListView.WinForms
-</td>
-<td>
-Contains classes that handles all UI operations of SfListView. The SfListView control is present in Syncfusion.WinForms.ListView namespace.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.GridCommon.WinForms
-</td>
-<td>
-Contains base classes for scrolling and utilities.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sflistview) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Creating Application with SfListView control
 In this walk through, user will create WinForms application that contains SfListView control.
