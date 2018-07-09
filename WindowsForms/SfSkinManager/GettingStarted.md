@@ -21,7 +21,7 @@ Follow the steps to create an application with SfSkinManager:
 
 	![](GettingStarted_images/GettingStarted_Image1.png)
 
-2. Open the properties window and select value for the `Component` property of SfSkinManager. Select a control or component from the drop-down for which the theme should be applied. The theme will be applied for the selected control and its child controls.
+2. Open the properties window and select value for the [Component](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfSkinManager~Component.html) property of SfSkinManager. Select a control or component from the drop-down for which the theme should be applied. The theme will be applied for the selected control and its child controls.
 
 	![](GettingStarted_images/GettingStarted_Image2.png)
 
@@ -80,7 +80,7 @@ End Class
 
 ### Apply theme
 
-Theme for the controls in an application can be set by using the `ThemeName` property.
+Theme for the controls in an application can be set by using the [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfSkinManager~ThemeName.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ Me.sfSkinManager1.ThemeName = "Office2016Black"
 
 ## Restrict applying theme from SfSkinManager for specific control
 
-It is possible to restrict applying theme from SfSkinManager for a specific control by disabling the `IThemeProvider.CanApplyTheme` property of the corresponding control.
+It is possible to restrict applying theme from SfSkinManager for a specific control by disabling the [IThemeProvider.CanApplyTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~CanApplyTheme.html) property of the corresponding control.
 
 {% tabs %}
 {% highlight c# %}

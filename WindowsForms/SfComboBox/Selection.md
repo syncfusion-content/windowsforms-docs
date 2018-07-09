@@ -115,7 +115,7 @@ sfComboBox1.DelimiterChar = "-"
 
 ### Hiding the buttons in the drop down
 
-Buttons in the drop-down list can be hide by setting the `DropDownControl.ShowButtons` property to `false`. 
+Buttons in the drop-down list can be hide by setting the [DropDownControl.ShowButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.ComboBoxPopup~ShowButtons.html) property to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ sfComboBox1.ShowToolTip = True
 
 ##### Setting tooltip delay
 
-Tooltip support you to set delay when showing the tooltip values by using the `ToolTipOption` property.
+Tooltip support you to set delay when showing the tooltip values by using the [ToolTipOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~ToolTipOption.html) property.
 
 The following properties can be used to set the tooltip delay time:
 
@@ -162,7 +162,7 @@ The following properties can be used to set the tooltip delay time:
 
 ###### InitialDelay
 
-The `InitialDelay` property enables you to shorten or lengthen the time that the tooltip waits before displaying the tooltip values. The default value is 500 milliseconds.
+The [InitialDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~InitialDelay.html) property enables you to shorten or lengthen the time that the tooltip waits before displaying the tooltip values. The default value is 500 milliseconds.
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ sfComboBox1.ToolTipOption.InitialDelay = 3000
 
 ###### AutoPopDelay
 
-The `AutoPopDelay` property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. The default value is 5000 milliseconds.
+The [AutoPopDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~AutoPopDelay.html) property enables you to shorten or lengthen the time duration that the tooltip is displayed when the mouse pointer is on a control. The default value is 5000 milliseconds.
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +188,7 @@ sfComboBox1.ToolTipOption.AutoPopDelay = 2000
 
 ###### ToolTip shadow
 
-Shadow of the tooltip can be enabled or disabled by setting the `ShadowVisible` property. Default value is `true `.
+Shadow of the tooltip can be enabled or disabled by setting the [ShadowVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.ToolTipOptions~ShadowVisible.html) property. Default value is `true `.
 
 {% tabs %}
 {% highlight c# %}
