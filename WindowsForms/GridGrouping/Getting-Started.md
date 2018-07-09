@@ -62,50 +62,7 @@ For binding the different kind of data sources and support for filtering, sortin
 If user wants a cell oriented grid that can contain its own data and does not need to be bound to a data source then `GridControl` is the best choice
 
 ## Assembly Deployment
-The following list of assemblies need to be added as reference to use GridGroupingControl in any application,
-
-<table>
-<tr>
-<th>
-Required assemblies
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Grouping.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows.html)'| markdownify }}
-</td>
-<td>
-Syncfusion.Grid.Grouping.Windows assembly contains classes that handles UI operations, grouping, filtering and other fundamentals of GridGroupingControl.
-</td>
-</tr>
-<tr>
-<td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html)'| markdownify }}
-</td>
-<td>
-Syncfusion.Grid.Windows assembly contains classes that handles all UI operations, fundamentals and base classes of GridControl.
-</td>
-</tr>
-<tr>
-<td>
-{{'[Syncfusion.Grouping.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grouping.Base.html)'| markdownify }}
-</td>
-<td>
-Syncfusion.Grouping.Base allows you to easily access, manipulate, and display your data in a variety of configurations.
-</td>
-</tr>
-<tr>
-<td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html)'| markdownify }}
-</td>
-<td>
-Syncfusion.Shared.Base contains style related properties and various editor controls which are used in GridControl.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridgroupingcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Configuring a simple GridGroupingControl
 This section will explain how to create a simple GridGroupingControl in Windows Forms application and some of the basic functionalities of it.

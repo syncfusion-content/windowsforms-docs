@@ -11,6 +11,10 @@ documentation: ug
 
 This section helps you to understand and quickly get started using Essential Diagram in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#diagram) section to get the list of assemblies or NuGet package needs to be added as reference to use the Diagram control in any application.
+
 ## Structure of Essential Diagram 
 
 The Essential Diagram package is comprised of the following controls:

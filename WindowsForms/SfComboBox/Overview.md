@@ -24,6 +24,3 @@ Key features are:
 * Accessibility:  Supports various accessibility features to make applications available to wide variety of users. 
 * Theme: Supports several built-in Office 2016 themes.
 
-Limitation
-
-* DataTable binding support is not available in SfComboBox.

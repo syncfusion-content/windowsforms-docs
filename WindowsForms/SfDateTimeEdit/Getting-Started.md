@@ -16,34 +16,11 @@ This section briefly describes how to design the `SfDateTimeEdit` control in a W
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the SfDateTimeEdit in any application:
-
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfInput.WinForms
-</td>
-<td>
-The Syncfusion.WinForms.Input contains the class that handles all UI operations and contains helper class of SfDateTimeEdit control.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms contains NativeMethods which are used in SfDateTimeEdit control.
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatetimeedit) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 # Creating simple application with SfDateTimeEdit
 

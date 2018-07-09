@@ -13,9 +13,17 @@ documentation: ug
 
 This section illustrates how to create MDI Child forms using the ChildFrameBarManager.
 
-Follow the steps below to create MDI parent form and MDI child form.
+## Assembly deployment
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#childframebarmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 ## Creating MDI ParentForm
+
+Follow the steps below to create MDI parent form and MDI child form.
 
 1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
 2. Add bar items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. Refer to Creating Menus.

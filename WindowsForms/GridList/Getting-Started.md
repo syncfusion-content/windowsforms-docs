@@ -11,7 +11,8 @@ documentation: ug
 
 This section explains creating a simple application with GridListControl and its functionalities.
 
-## Assembly deployment
+## Assembly Deployment
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridlistcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 The following assemblies should be added as reference to use the GridListControl in any application.
 

@@ -37,6 +37,12 @@ In the custom group comparer, all the items present in a group compares each oth
 
 {% tabs %}
 {% highlight c# %}
+
+sfListView1.View.GroupDescriptors.Add(new Syncfusion.DataSource.GroupDescriptor()
+{
+    PropertyName = "Continent",
+    Comparer = new CustomGroupComparer()
+});
 public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 {
   public CustomGroupComparer()
@@ -68,6 +74,11 @@ public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
 }
 {% endhighlight %}
 {% highlight vb %}
+Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.GroupDescriptors.Add(Shadows
+    PropertyName = "Continent",
+    Comparer = New CustomGroupComparer()
+End Function
+)
 Public Class CustomGroupComparer
 	Implements IComparer(Of GroupResult), ISortDirection
   Public Sub New()
@@ -121,7 +132,6 @@ Private Function Syncfusion.DataSource.GroupDescriptor() As sfListView1.View.Gro
         Dim item As var = (obj1 as CountryInfo) 
         Return item.Continent(0).ToString()
     }
-,
 End Function
 )
 {% endhighlight %}

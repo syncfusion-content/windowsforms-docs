@@ -11,34 +11,7 @@ documentation: ug
 This section guides getting started with Windows application, controls, etc.
 
 ## Assembly deployment
-The following list of assemblies should be added as reference to use the Schedule control in any application.
-
-<table>
-<tr>
-<th>
-Assemblies
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-Syncfusion.Schedule.Base
-</td>
-<td>
-Syncfusion.Schedule.Base assembly contains appointment related details and two types of data provider for the ScheduleControl datasource.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Schedule.Windows
-</td>
-<td>
-Syncfusion.Schedule.Windows assembly contains the types of ScheduleViews(Month, WorkWeek, Week, and Day view)
-</td>
-</tr>
-</table>
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Creating application with the ScheduleControl
 In this walk through, users will create WinForms application that contains the Schedule control.
