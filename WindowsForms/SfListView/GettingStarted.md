@@ -178,8 +178,8 @@ End Function
  
 ### Binding to data
 
-To bind the SfListView to data, set the `SfListView.DataSource` property to an `IEnumerable` implementation.
-You can bind a property of the underlying data source to display the SfListView by using the `DisplayMember` property. 
+To bind the SfListView to data, set the [SfListView.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DataSource.html) property to an `IEnumerable` implementation.
+You can bind a property of the underlying data source to display the SfListView by using the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DisplayMember.html) property. 
  
 
 {% tabs %}
@@ -198,7 +198,7 @@ sfListView1.DisplayMember = "CountryName"
 ![](GettingStarted_images/GettingStarted_img2.png)
 
 ## Grouping
-The SfListView allows displaying the items in a group by using the `SfListView.View.GroupDescriptors` property. Create a `GroupDescriptor` for the property to be grouped and add it in the View.GroupDescriptors collection.
+The SfListView allows displaying the items in a group by using the [SfListView.View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the View.GroupDescriptors collection.
 
 GroupDescriptor object holds the following properties:
 
@@ -224,7 +224,7 @@ listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = â
 ![](GettingStarted_images/GettingStarted_img3.png)
 
 ## Sorting
-The SfListView allows sorting on its data by using the `SfListView.View.SortDescriptors` property. Create a `SortDescriptor` for the property to be sorted and add it into the View.SortDescriptors collection.
+The SfListView allows sorting on its data by using the [SfListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. Create a [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the View.SortDescriptors collection.
 
 SortDescriptor object holds the following three properties:
 
@@ -250,7 +250,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = â€œ
 ![](GettingStarted_images/GettingStarted_img4.png)
 
 ## Filtering
-The SfListView support to filter the records in view by setting predicate to the `SfListView.View.Filter` property. Call the `View.RefreshFilter` method after assigning the Filter property for refreshing the view.
+The SfListView support to filter the records in view by setting predicate to the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) property. Call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter property for refreshing the view.
 To filter the items based on the Continent property of the underlying data, follow the code example.
 
 {% tabs %}
@@ -278,9 +278,9 @@ public Boolean CustomFilter(Object obj)
 ![](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
-SfListView selects an item by setting the` SfListView.SelectionMode` property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the `SfListView.SelectedItem`, `SfListView.SelectedIndex`, and `SfListView.SelectedItems` properties. 
+SfListView selects an item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html), [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html), and [SfListView.SelectedItems]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) properties. 
 
-The selection operations can be handled with the help of `SelectionChanging` and `SelectionChanged` events of the SfListView.
+The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionChanged_EV.html) events of the SfListView.
 
 {% tabs %}
 {% highlight c# %}
