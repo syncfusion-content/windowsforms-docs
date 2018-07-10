@@ -14,7 +14,7 @@ This section explains how to perform selection and its related operations in the
 The control has different selection modes to perform selection operations as listed as follows:
 
 *	None: Disables selection.
-*	One: Selects single item. When clicking the selected item, selection will not be cleared. This is the default value of the `SfListView.SelectionMode`.
+*	One: Selects single item. When clicking the selected item, selection will not be cleared. This is the default value of the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html).
 *	MultiSimple: Selects more than one item. Selection is not cleared when selecting more than one item. When clicking the selected item, the selection gets cleared.
 *	MultiExtended: Selects more than one item by dragging the items. You can also select multiple items by holding the Ctrl key.
 	
@@ -31,9 +31,9 @@ sfListView1.SelectionMode = SelectionMode.MultiSimple
 ![](Selection_images/Selection_img1.png)
  
 ## Programmatic Selection
-When the `SfListView.SelectionMode` is other than None, the item or items in the SfListView can be selected by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property or by adding items to the `SfListView.SelectedItems` property based on the `SfListView.SelectionMode`.
+When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html) is other than None, the item or items in the SfListView can be selected by using the [SfListView.SelectedItem]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html) property or by adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property based on the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html).
 
-When the selection mode is `One`, programmatically selects an item by setting the underlying object to the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.
+When the selection mode is `One`, programmatically selects an item by setting the underlying object to the [SfListView.SelectedItem]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ sfListView1.SelectedIndex = 10
  
  ![](Selection_images/Selection_img3.png)
  
-Multiple items can be selected by adding data objects to `SelectedItems` property.
+Multiple items can be selected by adding data objects to [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -84,7 +84,7 @@ Next item
 
 ### Get selected items
 
-The SfListView gets all the selected items through the `SfListView.SelectedItems` property and gets single item by using the `SfListView.SelectedItem` or `SfListView.SelectedIndex` property.                              
+The SfListView gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property and gets single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html) property.                              
 
 ### Clear selected items
 
@@ -100,7 +100,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ## Hot tracking
-SfListView supports hover selection on item when mouse pointer moves over an item by setting `SfListView.HotTracking` as true.
+SfListView supports hover selection on item when mouse pointer moves over an item by setting [SfListView.HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~HotTracking.html) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ sfListView1.HotTracking = true
 ![](Selection_images/Selection_img5.png)
  
 ## Appearance
-The SfListView allows you to customize the appearance of the selected items or mouse hover items through `SfListView.Style `property.
+The SfListView allows you to customize the appearance of the selected items or mouse hover items through [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~Style.html) property.
 
 ### Change the background and foreground colors for selection
 The selection background and foreground color can be changed by using the `SfListView.Style.SelectionStyle` property.
@@ -152,7 +152,7 @@ sfListView1.Style.SelectionStyle.HoverForeColor = Color.GreenYellow
 
 ### SelectionChanging event
 
-The `SelectionChanging` event is raised while selecting an item at the execution time. `ItemSelectionChangingEventArgs` has the following members that provides information for the SelectionChanging event:
+The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.ItemSelectionChangingEventArgs.html) has the following members that provides information for the SelectionChanging event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection is going to process.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection is going to remove.
@@ -185,7 +185,7 @@ End Sub
 
 ### SelectionChanged event
 
-The `SelectionChanged` event will occur once the selection process has been completed for the selected item in the SfListView. `ItemSelectionChangedEventArgs` has the following members that provides information for the SelectionChanged event:
+The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionChanged_EV.html) event will occur once the selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.ItemSelectionChangedEventArgs.html) has the following members that provides information for the SelectionChanged event:
 
 * `AddedItems`: Gets collection of the underlying data objects where the selection has been processed.
 * `RemovedItems`: Gets collection of the underlying data objects where the selection has been removed.
@@ -215,7 +215,7 @@ End Sub
 {% endtabs %}
 
 ## Disables selection on a particular item
-The selection of a particular set of items can be disabled based on the `SfListView.SelectedItems` of the underlying collections.
+The selection of a particular set of items can be disabled based on the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) of the underlying collections.
 
 {% tabs %}
 {% highlight c# %}
