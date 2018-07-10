@@ -9,7 +9,7 @@ documentation: ug
 
 ## Appearance
 
-This section explains how to customize the default appearance of the scrollbars using the style properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
+This section explains how to customize the default appearance of the scrollbars using the style properties. By default, the SfScrollFrame loads the scrollbars with default appearance. 
 
 ### Scrollbar appearance
 

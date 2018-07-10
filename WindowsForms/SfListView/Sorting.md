@@ -37,7 +37,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Co
 ## Custom sorting
 Sort the items based on the custom logic. It can be applied to the [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortComparer.html) or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.SortDescriptor~Comparer.html) property added to the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
 
-In custom sort comparer, all the items in [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) is sorted with length of an item.
+In custom sort comparer, all the items in SfListView is sorted with length of an item.
 
 {% tabs %}
 {% highlight c# %}

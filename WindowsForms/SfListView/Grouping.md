@@ -11,7 +11,7 @@ documentation: ug
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic grouping
-The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The GroupDescriptor object holds the following properties:
+The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) object and adding it into the [View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The GroupDescriptor object holds the following properties:
 
 * `PropertyName`: Describes the name of the property to be grouped.
 * `KeySelector`: Describes selector to return the group key.
@@ -32,7 +32,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 ![](Grouping_images/Grouping_img1.png)
 
 ## Custom grouping             
-The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupComparer.html) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~Comparer.html) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
+The SfListView supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupComparer.html) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~Comparer.html) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection.
 In the custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
 
 {% tabs %}
@@ -110,7 +110,7 @@ End Class
 ![](Grouping_images/Grouping_img2.png)
 
 ## Grouping based on first character
-The [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView.html) supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~KeySelector.html).
+The SfListView supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor~KeySelector.html).
 
 {% tabs %}
 {% highlight c# %}

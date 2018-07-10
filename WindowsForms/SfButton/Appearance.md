@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-This section describes how to customize the appearance of the [SfButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton.html) control.
+This section describes how to customize the appearance of the SfButton control.
 
 ## Background
 

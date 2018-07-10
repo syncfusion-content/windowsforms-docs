@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly Deployment
 
-The following list of assemblies should be added as reference to use the [SfToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip.html) component in any application:
+The following list of assemblies should be added as reference to use the SfToolTip component in any application:
 
 <table>
 <tr>

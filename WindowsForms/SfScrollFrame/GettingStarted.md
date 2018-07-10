@@ -79,7 +79,7 @@ this.sfScrollFrame1.Control = this.listView1;
 
 ### Through code
 
-To programmatically attach the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) to a control, set the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Control.html) property to the appropriate value. 
+To programmatically attach the SfScrollFrame to a control, set the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Control.html) property to the appropriate value. 
 
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +104,7 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 
 ### Changing the SmallChange value
 
-The scrolling speed of the horizontal and vertical scrollbars of the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) can be customized by setting the [SmallChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollProperties~SmallChange.html) property to increase the scroll speed for the min or max button click of the scrollbar.
+The scrolling speed of the horizontal and vertical scrollbars of the SfScrollFrame can be customized by setting the [SmallChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollProperties~SmallChange.html) property to increase the scroll speed for the min or max button click of the scrollbar.
 
 {% tabs %}
 {% highlight c# %}
