@@ -11,9 +11,7 @@ documentation: ug
 
 ## Data Binding
 
-Data binding is used in Web pages that contain interactive components such as forms, calculators, tutorials, and games. Pages are displayed incrementally so that portions of a page can be used even before the entire page has finished downloading. Data binding helps in populating Grid List control with large amounts of data. This can be achieved by using DataSource property, which allows the system to acquire data from the Data Source Object (DSO).
-
-The following code example illustrates data binding for Grid List control by using DataSource property.
+Data binding used in the web pages that contain interactive components such as forms, calculators, tutorials, and games. Pages are displayed incrementally so that portions of a page can be used even before the entire page has finished downloading. Data binding helps in populating the GridList control with large amounts of data by using the DataSource property that allows the system to acquire data from the Data Source Object (DSO).
 
 {% tabs %}
 {% highlight c# %}
@@ -38,17 +36,13 @@ Me.gridlistControl1.DataSource = array
 {% endhighlight  %}
 {% endtabs %}
 
-## Selection Modes
+## Selection modes
 
-The selection behavior for Grid List control can be specified by using SelectionMode property. There are 3 types of selection behaviors:
+Selection behavior of the GridList control can be specified by using the SelectionMode property. There are three types of selection behaviors:
 
-* One - Allows the user to select only one item.
-* MultiSimple - Allows the user to select multiple items.
-* MultiExtended - Allows the user to select multiple items using SHIFT, CTRL,
-
-arrow keys, etc.
-
-The following code example illustrates setting of various selection behaviors for Grid List control.
+* One: Selects only one item.
+* MultiSimple: Selects multiple items.
+* MultiExtended: Selects multiple items using SHIFT, CTRL, arrow keys, etc.
 
 {% tabs %}
 {% highlight c# %}

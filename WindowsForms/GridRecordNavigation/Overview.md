@@ -9,10 +9,10 @@ documentation: ug
 
 # Overview
 
-The Grid Record Navigation control allows users to navigate between records by using the Microsoft Access-like navigation bar at the bottom of the grid. It provides built-in support to navigate to the first record, last record, previous, and next record.
+The GridRecordNavigation control allows you to navigate between records by using the Microsoft Access-like navigation bar at the bottom of the grid. It provides built-in support to navigate between the first, last, previous, and next record.
 
 ## Key features
 
 * Localization: Supports localizing the content of navigation bar.
-* Navigation: Supports navigating to records dynamically and programmatically.
+* Navigation: Supports navigating to the records dynamically and programmatically.
 

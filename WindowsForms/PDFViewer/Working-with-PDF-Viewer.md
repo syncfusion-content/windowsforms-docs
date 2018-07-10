@@ -502,6 +502,38 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 {%endhighlight%}
 {% endtabs %}
 
+## Text selection
+
+In PDF, text can be selected by clicking the mouse left button and dragging the mouse pointer over the text. 
+
+### Detecting the completion of text selection
+
+When the text selection is completed, the `TextSelectionCompleted` event will be raised. The selected text can be retrieved as string from the `args` parameter of the event handler. 
+
+{%tabs%}
+{%highlight c#%}
+
+private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionCompletedEventArgs args)
+{
+    //Get the whole selected text
+    string selectedText = args.SelectedText;
+
+    //Get the selected text and its rectangular bounds for each page separately if the selection is made on multiple pages
+    Dictionary<int, Dictionary<string, Rectangle>> selectedTextInformation = args.SelectedTextInformation;
+}
+
+
+{%endhighlight%}
+{%endtabs%}
+
+### Copying the selected text
+
+The selected text can be copied by clicking Copy from the context menu, which appears when clicking right mouse button after the text is selected.
+
+![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img3.png)
+
+The selected text can also be copied using the keyboard shortcut Ctrl + C. 
+
 ## Annotations
  
 Essential PdfViewerControl provides support for URI annotations in the PDF document, which enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events which are listed in the events table.
