@@ -11,33 +11,33 @@ documentation: ug
 
 [!IMPORTANT] Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section provides a quick overview for working with the pivot grid for WinForms. Walk through the entire process of creating a simple PivotGrid.
+This section provides a quick overview for working with the pivot grid for WinForms. Walk through the entire process of creating a simple pivot grid.
 
 ## Assembly deployment
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#pivot-grid) section to get the list of assemblies or NuGet package needs to be added as reference to use the pivot grid control in any application.
 
-## Creating application with PivotGrid
+## Creating application with pivot grid
 
-This section explains how to add the PivotGrid control in Windows Forms application.
+This section explains how to add the pivot grid control in Windows Forms application.
 
 ### Adding control via designer
 
-The PivotGrid control can be added through designer by following the below steps.
+The pivot grid control can be added through designer by following the below steps.
 
 1.Create a new **Windows Forms Application** in Visual Studio.
 
-2.Drag and drop the PivotGrid control from the toolbox into the designer page.
+2.Drag and drop the pivot grid control from the toolbox into the designer page.
 
 ![GettingStarted_img1](Getting-Started_images/GettingStarted_img1.png)
 
-3.Then, the PivotGrid control will be successfully added into the application along with the required libraries.
+3.Then, the pivot grid control will be successfully added into the application along with the required libraries.
 
 ![GettingStarted_img2](Getting-Started_images/GettingStarted_img2.png)
 
 ### Adding control via code
 
-The PivotGrid control can be added through code-behind by following the below steps.
+The pivot grid control can be added through code-behind by following the below steps.
 
 1.Create a new **Windows Forms Application** in Visual Studio.
 
@@ -48,32 +48,32 @@ The PivotGrid control can be added through code-behind by following the below st
 * Syncfusion.PivotAnalysis.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-3.Then initialize the PivotGrid control by creating an instance and add it to the form using the code specified below.
+3.Then initialize the pivot grid control by creating an instance and add it to the form using the code specified below.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Initialize a new PivotGrid.
+//Initialize a new pivot grid.
 Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
 
-// Add required size for the PivotGrid control
+// Add required size for the pivot grid control
 pivotGridControl1.Size = new System.Drawing.Size(344, 250);
 
-// Add the PivotGrid control to the parent control.
+// Add the pivot grid control to the parent control.
 this.Controls.Add(pivotGridControl1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotGrid.
+'Initialize a new pivot grid.
 Dim pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
 
-' Add required size for the PivotGrid control
+' Add required size for the pivot grid control
 pivotGridControl1.Size = New System.Drawing.Size(344, 250)
 
-' Add the PivotGrid control to the parent control.
+' Add the pivot grid control to the parent control.
 Me.Controls.Add(pivotGridControl1)
 
 {% endhighlight %}
@@ -82,7 +82,7 @@ Me.Controls.Add(pivotGridControl1)
 
 ### Adding control via Syncfusion reference manager
 
-[Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. PivotGrid control can be added through Syncfusion reference manager by following the below steps.
+[Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. The pivot grid control can be added through Syncfusion reference manager by following the below steps.
 
 1.Create a new **Windows Forms Application** in Visual Studio.
 
@@ -94,7 +94,7 @@ Me.Controls.Add(pivotGridControl1)
 
 ![GettingStarted_img8](Getting-Started_images/GettingStarted_img8.png)
 
-4.Select PivotGrid control by searching it using search box. Then click on done button to add selected PivotGrid control.
+4.Select the pivot grid control by searching it using search box. Then click on done button to add the selected pivot grid control.
 
 ![GettingStarted_img9](Getting-Started_images/GettingStarted_img9.png)
 
@@ -102,32 +102,32 @@ Me.Controls.Add(pivotGridControl1)
 
 ![GettingStarted_img10](Getting-Started_images/GettingStarted_img10.png)
 
-6.Add the following code snippet in code behind to create a simple PivotGrid control.
+6.Add the following code sample in code behind to create a simple pivot grid control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Initialize a new PivotGrid.
+//Initialize a new pivot grid.
 Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl pivotGridControl1 = new Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl();
 
-// Add required size for the PivotGrid control
+// Add required size for the pivot grid control
 pivotGridControl1.Size = new System.Drawing.Size(344, 250);
 
-// Add the PivotGrid control to the parent control.
+// Add the pivot grid control to the parent control.
 this.Controls.Add(pivotGridControl1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Initialize a new PivotGrid.
+'Initialize a new pivot grid.
 Dim pivotGridControl1 As New Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl()
 
-' Add required size for the PivotGrid control
+' Add required size for the pivot grid control
 pivotGridControl1.Size = New System.Drawing.Size(344, 250)
 
-' Add the PivotGrid control to the parent control.
+' Add the pivot grid control to the parent control.
 Me.Controls.Add(pivotGridControl1)
 
 {% endhighlight %}
@@ -139,9 +139,9 @@ Syncfusion reference manager supports for specific framework which is shipped (a
 
 ## Binding data
 
-This section guides you on how to bind data source and its appropriate fields to a PivotGrid control. The data source assigned to PivotGrid control should either be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
+This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
 
-In this example, `IEnumerable` list is used as data source for the PivotGrid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
+In this example, `IEnumerable` list is used as data source for the pivot grid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
 
 {% tabs %}
 
@@ -331,31 +331,86 @@ End Class
 {% endtabs %}
 
 N>
-`ProductSales` is a class which consists of the `IList` data. For more information, refer the *Getting Started* demo sample which is located in the following location.
+`ProductSales` is a class that consists of `IList` data. For more information, refer the *Getting Started* demo sample which is located in the following location.
 &lt;Installed_Location&gt;\Syncfusion\Essential Studio\\&lt;Installed_Version&gt;\Windows\PivotGrid.Windows\Samples\Getting Started\Getting Started Demo
 
-The PivotGrid control requires the following information in order to populate the data from the data source.
+The pivot grid control requires the following information in order to populate the data from the data source.
 
 * [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
-* [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) - Elements that need to be added in rows of PivotGrid control.
-* [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) - Elements that need to be added in columns of PivotGrid control.
-* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html) - Calculation values that need to be added as value cells in PivotGrid control.
+* [PivotRows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotRows.html) - Elements that need to be added in rows of pivot grid control.
+* [PivotColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotColumns.html) - Elements that need to be added in columns of pivot grid control.
+* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotCalculations.html) - Calculation values that need to be added as value cells in pivot grid control.
 
-The below code snippet illustrates how to add the required information to the PivotGrid control.
+The below code sample illustrates how to bind data source to the pivot grid control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Specifying the data source for PivotGrid
 this.pivotGridControl1.ItemSource = ProductSales.GetSalesData();
-// Adding PivotRows data to PivotGrid
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Defining pivot rows
+
+The below code sample illustrates how to define pivot row items for the pivot grid control.
+
+{% tabs %}
+
+{% highlight c# %}
+
 this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
-// Adding PivotColumns data to PivotGrid
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Defining pivot columns
+
+The below code sample illustrates how to define pivot column items for the pivot grid control.
+
+{% tabs %}
+
+{% highlight c# %}
+
 this.pivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 this.pivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
-// Adding PivotCalculations data to PivotGrid
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Defining pivot calculations
+
+The below code sample illustrates how to define pivot calculation information for the pivot grid control.
+
+{% tabs %}
+
+{% highlight c# %}
+
 this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
 this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
 
@@ -363,15 +418,6 @@ this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldNam
 
 {% highlight vb %}
 
-' Specifying the data source for PivotGrid
-Me.pivotGridControl1.ItemSource = ProductSales.GetSalesData()
-' Adding PivotRows data to PivotGrid
-Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
-' Adding PivotColumns data to PivotGrid
-Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
-Me.pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
-' Adding PivotCalculations data to PivotGrid
 Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
 Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
 
@@ -385,7 +431,7 @@ Finally, run the application to obtain the following output.
 
 ## Pivot schema designer
 
-Pivot schema designer is a layout which is designed to perform like as Microsoft Excel's pivot table field list. It allows you to drag-and-drop fields between different areas, including column, row, value and filter. This pivot schema designer can be enabled in PivotGrid control by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
+Pivot schema designer is a layout which is designed to perform like as Microsoft Excel's pivot table field list. It allows you to drag-and-drop fields between different areas, including column, row, value and filter. This pivot schema designer can be enabled in pivot grid control by setting the [ShowPivotTableFieldList](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property to `true`.
 
 {% tabs %}
 
@@ -437,20 +483,20 @@ For more information, refer the [grouping bar](http://help.syncfusion.com/window
 
 ## Filtering
 
-Filtering can be enabled or disabled in PivotGrid control by using the [AllowFiltering](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property. You can apply filters to one or more columns.
+Filtering can be enabled or disabled in pivot grid control by using the [AllowFiltering](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property. You can apply filters to one or more columns.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Enables filtering in PivotGrid control.
+// Enables filtering in pivot grid control.
 this.pivotGridControl1.AllowFiltering = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Enables filtering in PivotGrid control.
+' Enables filtering in pivot grid control.
 Me.pivotGridControl1.AllowFiltering = True
 
 {% endhighlight %}
@@ -461,20 +507,20 @@ Me.pivotGridControl1.AllowFiltering = True
 
 ## Sorting
 
-Sorting can be enabled or disabled by using the [AllowSorting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property. By default, the PivotGrid control populates the data in ascending order.
+Sorting can be enabled or disabled by using the [AllowSorting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property. By default, the pivot grid control populates the data in ascending order.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Enables sorting in PivotGrid control.
+// Enables sorting in pivot grid control.
 this.pivotGridControl1.AllowSorting = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Enables sorting in PivotGrid control.
+' Enables sorting in pivot grid control.
 Me.pivotGridControl1.AllowSorting = True
 
 {% endhighlight %}
