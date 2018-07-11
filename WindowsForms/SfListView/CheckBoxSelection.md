@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Check Box Selection 
-The SfListView supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the `SfListView.ShowCheckBoxes` property to true.
+The SfListView supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowCheckBoxes.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -22,7 +22,7 @@ sfListView1.ShowCheckBoxes = True
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img10.png)
 
 ## Check box selection mode
-The check box provides support to select in the context of state of the check box based on the SfListView.CheckBoxSelectionMode property.                                                                        
+The check box provides support to select in the context of state of the check box based on the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckBoxSelectionMode.html) property.                                                                        
 
 SfListView has the following modes for selection based on the check box state.
 
@@ -39,7 +39,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.Default
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img1.png)
 
-* SelectOnCheck: To select/deselect the items by using the CheckBox alone, set the `SfListView.CheckBoxSelectionMode` as SelectOnCheck. 
+* SelectOnCheck: To select/deselect the items by using the CheckBox alone, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckBoxSelectionMode.html) as SelectOnCheck. 
 Navigation, editing, and programmatic selection are not supported in this mode.
 
 {% tabs %}
@@ -53,7 +53,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img2.png)
 
-* SynchronizeSelection: To synchronize the selection with IsChecked state, set the `SfListView.CheckBoxSelectionMode` as SynchronizeSelection. In this mode, you can select an item by checking the check box or select/deselect the item will check/uncheck the corresponding item checkbox.
+* SynchronizeSelection: To synchronize the selection with IsChecked state, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckBoxSelectionMode.html) as SynchronizeSelection. In this mode, you can select an item by checking the check box or select/deselect the item will check/uncheck the corresponding item checkbox.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection
 
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img3.png)
 
-* CheckOnItemClick: To check or uncheck the item check box state by clicking the item, set the `SfListView.CheckBoxSelectionMode` as CheckOnItemClick.
+* CheckOnItemClick: To check or uncheck the item check box state by clicking the item, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckBoxSelectionMode.html) as CheckOnItemClick.
 `MultiSimple` and `MultiExtended` selection mode were not supported in this mode.
 
 {% tabs %}
@@ -81,7 +81,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img4.png)
 
 ## TriState mode
-The SfListView allows you to enable or disable the indeterminate state for item check box by using the `SfListView.AllowTriStateMode` property. The tristate mode can only be supported in the data bound mode i.e. the `SfListView.CheckedMember` property must have the underlying datasource property in type of `CheckState`.
+The SfListView allows you to enable or disable the indeterminate state for item check box by using the [SfListView.AllowTriStateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~AllowTriStateMode.html) property. The tristate mode can only be supported in the data bound mode i.e. the [SfListView.CheckedMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckedMember.html) property must have the underlying datasource property in type of `CheckState`.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,7 +151,7 @@ sfListView1.CheckedMember = "CheckedState"
 
 ### Get checked items
 
-The SfListView gets all the checked items through the `SfListView.CheckedItems` property. 
+The SfListView gets all the checked items through the [SfListView.CheckedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~CheckedItems.html) property. 
      
 ### Clear checked items 
       
@@ -167,7 +167,7 @@ sfListView1.CheckedItems.Clear()
 {% endtabs %}
 
 ## Select all the items
-The SfListView allows all the items to change the checked state by checking the `SelectAll` item. You can enable select all item by setting the `SfListView.AllowSelectAll` and `SfListView.ShowCheckBoxes` properties to true.
+The SfListView allows all the items to change the checked state by checking the `SelectAll` item. You can enable select all item by setting the [SfListView.AllowSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~AllowSelectAll.html) and [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowCheckBoxes.html) properties to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,7 +191,7 @@ The recursive checking actions are:
 *	The group header item will be unchecked if all its group items are unchecked.
 *	The group header item will be in Indeterminate state in other combinations of its group items.
 
-You can enable recursive checking by setting `SfListView.AllowRecursiveChecking` property and `SfListView.ShowCheckBoxes` property as true.
+You can enable recursive checking by setting [SfListView.AllowRecursiveChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~AllowRecursiveChecking.html) property and [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowCheckBoxes.html) property as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -225,7 +225,7 @@ sfListView1.Style.CheckBoxStyle.CheckedTickColor = Color.White
 ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
  
 ## Conditional styling
-The SfListView allows the item check box customization by using `SfListView.DrawCheckBox` event.
+The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DrawCheckBox_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -258,14 +258,14 @@ End Sub
 
 ### ItemChecking event
 
-The `ItemChecking` event is raised while checking an item at the execution time by using ItemChecking event as follows:
+The [ItemChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ItemChecking_EV.html) event is raised while checking an item at the execution time by using ItemChecking event as follows:
 
 *	`ItemData`: Gets the checked item data object.
 *	`ItemIndex`: Gets an index of checked item.
 *	`NewState`: Gets the new check state of checked item.
 *	`OldState`: Gets the old check state of checked item.
 
-You can cancel the checking process within this event by setting the `ItemCheckingEventArgs.Cancel` property to true.
+You can cancel the checking process within this event by setting the [ItemCheckingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.ItemCheckingEventArgs.html) property to true.
 
 The ItemChecking event is used for the following use case:
 *	Disable the checking process of the particular item based on the underlying data.
@@ -290,7 +290,7 @@ End Sub
 {% endtabs %}
 
 ### ItemChecked event
-The `ItemChecked` event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
+The [ItemChecked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ItemChecked_EV.html) event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
 
 The ItemChecked event used for the following use cases:
 
