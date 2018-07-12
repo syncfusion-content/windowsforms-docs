@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Rows | Windows Forms | Syncfusion
-description: pivot rows
+description: Pivot rows
 platform: windowsforms
 control: PivotGrid
 documentation: ug
@@ -76,7 +76,7 @@ Me.pivotGridControl1.PivotRows.Add(pivotItem)
 
 ## Synchronizing pivot rows
 
-To synchronize the newly added or modified pivot row items with the pivot grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SynchronizePivotItems.html) method will be used. This method will be invoked whenever the collection of pivot row item gets changed.
+To synchronize the newly added or modified pivot row items with the pivot grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SynchronizePivotItems.html) method will be used. This method will be invoked whenever the collection of pivot row items gets changed.
 
 ### Sorting pivot rows
 
@@ -101,8 +101,6 @@ public partial class Form1 : Form
 // Reverse order comparer for sorting the data in descending order
 public class ReverseOrderComparer : IComparer
 {
-   #region IComparer Members
-
    public int Compare(object x, object y)
    {
       if (x == null && y == null)
@@ -114,8 +112,6 @@ public class ReverseOrderComparer : IComparer
       else
          return -x.ToString().CompareTo(y.ToString());
    }
-
-   #endregion
 }
 
 {% endhighlight %}
@@ -147,8 +143,6 @@ Public Class ReverseOrderComparer
         End If
     End Function
 End Class
-
-'   #End Region
 
 {% endhighlight %}
 

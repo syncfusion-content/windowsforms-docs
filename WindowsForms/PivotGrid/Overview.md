@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Windows Forms | Syncfusion
-description: overview
+description: Overview
 platform: windowsforms
 control: PivotGrid
 documentation: ug

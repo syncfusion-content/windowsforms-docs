@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Windows Forms | Syncfusion
-description: getting started
+description: Getting started
 platform: windowsforms
 control: PivotGrid
 documentation: ug
@@ -332,7 +332,7 @@ End Class
 
 N>
 `ProductSales` is a class that consists of `IList` data. For more information, refer the *Getting Started* demo sample which is located in the following location.
-&lt;Installed_Location&gt;\Syncfusion\Essential Studio\\&lt;Installed_Version&gt;\Windows\PivotGrid.Windows\Samples\Getting Started\Getting Started Demo
+&lt;Installed Drive&gt;\Users\Public\Documents\Syncfusion\Windows\\&lt;Version Number&gt;\PivotGrid.Windows\Samples\Getting Started\Getting Started Demo
 
 The pivot grid control requires the following information in order to populate the data from the data source.
 
