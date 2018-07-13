@@ -122,6 +122,24 @@ Following are the sequence of sorting orders when clicking column header,
 * Sorts the data in descending order
 * Clears the sorting and records displayed in its initial order
 
+### Retrieve the records as displayed in the view 
+
+Once the sorting is performed, the records in the view can be retrieved in the same order as displayed in the view by using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html).
+
+{% tabs %}
+{% highlight c# %}
+foreach (var record in sfDataGrid.View.Records)
+{
+    // Do your customizations here.
+}
+{% endhighlight %}
+{% highlight vb %}
+For Each record In sfDataGrid.View.Records
+    ' Do your customizations here.
+Next record
+{% endhighlight %}
+{% endtabs %}
+
 ## Multi Column Sorting
 SfDataGrid control allows to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the `Ctrl` key.
 In the below screen shot, the OrderID column sorted. Then the ProductName column is sorted against the OrderID data by clicking column header by pressing `Ctrl` key. The sorting state of OrderID column is preserved and ProductName column sorted against OrderID column.

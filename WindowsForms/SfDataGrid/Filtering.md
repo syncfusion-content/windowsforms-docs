@@ -103,6 +103,52 @@ sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 {% endhighlight %}
 {% endtabs %}
 
+### Adding multiple FilterPredicates for a column
+
+The [PredicateType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PredicateType.html) property is used to apply multiple FilterPredicate for a column.
+
+* **And** - Does an AND operation on filters.
+
+* **AndAlso** - Does an ANDALSO operation on filters.
+
+* **Or**	- Does an OR operation on filters.
+
+* **OrElse** - Does an ORELSE operation on filters.
+
+{% tabs %}
+{% highlight c# %}
+//Filter the CustomerID column with values "FRANS" or "MEREP"
+sfDataGrid.Columns["CustomerID"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.Equals, FilterValue = "FRANS", PredicateType = PredicateType.Or });
+sfDataGrid.Columns["CustomerID"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.Equals, FilterValue = "MEREP", PredicateType = PredicateType.Or });
+{% endhighlight %}
+{% highlight vb %}
+'Filter the CustomerID column with values "FRANS" or "MEREP"
+sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "FRANS", .PredicateType = PredicateType.Or})
+sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "MEREP", .PredicateType = PredicateType.Or})
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img20.png)
+
+### Filter DateColumn with range between two dates
+
+A GridDateTimeColumn can be filtered with a range between two dates by applying two FilterPredicates for the same column. The [FilterType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterType.html) for the FilterPredicate with start date should be `GreaterThanOrEqual` and the FilterPredicate with end date value should be `LessThanOrEqual`.
+
+{% tabs %}
+{% highlight c# %}
+//Filter the Dates between 8/1/2018 to 8/9/2018
+sfDataGrid.Columns["OrderDate"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.GreaterThanOrEqual, FilterValue = "8/1/2018" });
+sfDataGrid.Columns["OrderDate"].FilterPredicates.Add(new FilterPredicate() { FilterType = FilterType.LessThanOrEqual, FilterValue = "8/9/2018" });
+{% endhighlight %}
+{% highlight vb %}
+'Filter the Dates between 8/1/2018 to 8/9/2018
+sfDataGrid.Columns("OrderDate").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.GreaterThanOrEqual, .FilterValue = "8/1/2018"})
+sfDataGrid.Columns("OrderDate").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.LessThanOrEqual, .FilterValue = "8/9/2018"})
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img21.png)
+
 ## UI Filtering 
 SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
 The filtering can be enabled or disabled for the particular column by setting [GridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFiltering.html) property.
