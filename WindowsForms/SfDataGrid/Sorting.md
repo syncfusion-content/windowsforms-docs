@@ -124,7 +124,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ### Retrieve the records as displayed in the view 
 
-Once the sorting is performed, the records in the view can be retrieved in the same order as displayed in the view by using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html).
+After sorting, the records in the view can be retrieved in the same order as displayed in the view by using the [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection.
 
 {% tabs %}
 {% highlight c# %}
