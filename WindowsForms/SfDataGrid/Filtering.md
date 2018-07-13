@@ -146,6 +146,24 @@ sfDataGrid.Columns("OrderDate").FilterPredicates.Add(New FilterPredicate() With 
 
 ![](Filtering_images/Filtering_img21.png)
 
+### Retrieving the filtered records
+
+After filtering, the records in the view can be retrieved in the same order as displayed in the view by using the [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection.
+
+{% tabs %}
+{% highlight c# %}
+foreach (var record in sfDataGrid.View.Records)
+{
+    // Do your customizations here.
+}
+{% endhighlight %}
+{% highlight vb %}
+For Each record In sfDataGrid.View.Records
+    ' Do your customizations here.
+Next record
+{% endhighlight %}
+{% endtabs %}
+
 ## UI Filtering 
 SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
 The filtering can be enabled or disabled for the particular column by setting [GridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFiltering.html) property.
