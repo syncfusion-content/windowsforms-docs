@@ -105,15 +105,12 @@ sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 
 ### Adding multiple FilterPredicates for a column
 
-The [PredicateType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PredicateType.html) property is used to apply multiple FilterPredicate for a column.
+The [PredicateType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PredicateType.html) property is used to apply multiple FilterPredicates for a column.
 
-* **And** - Does an AND operation on filters.
-
-* **AndAlso** - Does an ANDALSO operation on filters.
-
-* **Or**	- Does an OR operation on filters.
-
-* **OrElse** - Does an ORELSE operation on filters.
+* And: Performs And operation in filters.
+* AndAlso: Performs AndAlso operation in filters.
+* Or: Performs Or operation in filters.
+* OrElse: Performs OrElse operation in filters.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,7 +129,7 @@ sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With
 
 ### Filter DateColumn with range between two dates
 
-A GridDateTimeColumn can be filtered with a range between two dates by applying two FilterPredicates for the same column. The [FilterType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterType.html) for the FilterPredicate with start date should be `GreaterThanOrEqual` and the FilterPredicate with end date value should be `LessThanOrEqual`.
+A GridDateTimeColumn can be filtered with range between two dates by applying two FilterPredicates for the same column. The [FilterType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.FilterType.html) for the FilterPredicate with start date should be `GreaterThanOrEqual` and end date should be `LessThanOrEqual`.
 
 {% tabs %}
 {% highlight c# %}
