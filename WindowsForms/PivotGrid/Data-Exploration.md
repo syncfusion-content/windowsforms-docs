@@ -155,7 +155,7 @@ Me.pivotGridControl1.TableControl.CollapseRow(pivotRows)
 
 #### Collapsing collection of column headers
 
-The collection of column headers can be collapsed by specifying the list of pivot column item's names in the [CollapseRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseRow(List%7BString%7D).html) method.
+The collection of column headers can be collapsed by specifying the list of pivot column item's names in the [CollapseColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseColumn(List%7BString%7D).html) method.
 
 Refer to the below code sample to collapse the pivot column items of 'Canada' and 'Australia'.
 
@@ -184,11 +184,6 @@ Me.pivotGridControl1.TableControl.CollapseColumn(pivotColumns)
 * [Collapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsing_EV.html) event occurs while collapsing the pivot item header. This event receives an argument namely [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html), which contains the information about the collapsing pivot item.
 
 * [Collapsed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsed_EV.html) event occurs when the pivot item header is collapsed. This event receives an argument namely [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html), which contains the information about the expanded pivot item.
-
-While collapsing any header of a pivot item, an event called `Collapsing` will be triggered and the [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html) returns an instance of the`PivotCellInfo`.
-
-When the headers completed the collapsing operation, an event called `Collapsed` will be triggered and the [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html) returns an instance of
-the `PivotCellInfo`.
 
 ## Expanding headers
 
