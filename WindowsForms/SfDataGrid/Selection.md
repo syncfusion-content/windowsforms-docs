@@ -285,6 +285,42 @@ MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & "
 
 ![](Selection_images/selection10.png)
 
+### Getting the cell value by using cell click event
+
+The cell value can be retrieved by using [SfDataGrid.CellClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellClick_EV.html) event. This event raise when the mouse is click on the cell. 
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellClick += OnSfDataGridCellClick;   
+
+private void OnSfDataGridCellClick(object sender, CellClickEventArgs e)
+{
+    // Get the row index value        
+    var rowIndex = e.DataRow.RowIndex;
+    //Get the column index value
+    var columnIndex = e.DataColumn.ColumnIndex;
+    //Get the cell value            
+    var cellValue = this.sfDataGrid.View.GetPropertyAccessProvider().GetValue(e.DataRow.RowData, e.DataColumn.GridColumn.MappingName);
+    MessageBox.Show("Cell Value \t:    " + cellValue + "\n" + "Row Index \t:    " + rowIndex + "\n" + "Column Index \t:    " + columnIndex, "Cell Value");
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.CellClick, AddressOf OnSfDataGridCellClick 
+
+Private Sub OnSfDataGridCellClick(ByVal sender As Object, ByVal e As CellClickEventArgs)
+		 ' Get the row index value        
+		 Dim rowIndex = e.DataRow.RowIndex
+		 'Get the column index value
+		 Dim columnIndex = e.DataColumn.ColumnIndex
+		 'Get the cell value            
+		 Dim cellValue = Me.sfDataGrid.View.GetPropertyAccessProvider().GetValue(e.DataRow.RowData, e.DataColumn.GridColumn.MappingName)
+		 MessageBox.Show("Cell Value " & Constants.vbTab & ":    " & cellValue + Constants.vbLf & "Row Index " & Constants.vbTab & ":    " & rowIndex + Constants.vbLf & "Column Index " & Constants.vbTab & ":    " & columnIndex, "Cell Value")
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection11.png)
+
 ## Scrolling Rows
 
 ### Automatic Scrolling on Drag Selection

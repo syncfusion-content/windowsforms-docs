@@ -9,9 +9,9 @@ documentation: ug
 
 # Filtering
 
-The SfComboBox support you to filter the items by setting the `Filter` property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
+The SfComboBox support you to filter the items by setting the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
 
-N> The RefreshFilter() method should be called after the filter predicate set.
+N> The [RefreshFilter()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~RefreshFilter.html) method should be called after the filter predicate set.
 
 {% tabs %}
 {% highlight c# %}

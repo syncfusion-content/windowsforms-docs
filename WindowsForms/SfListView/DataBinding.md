@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Data Binding
-The data source can be bound by using the `SfListView.DataSource` property. The following members controls data binding:
+The data source can be bound by using the [SfListView.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DataSource.html) property. The following members controls data binding:
 
 * Display Member -  A property of the underlying datasource to display for SfListView. 
 * Value Member - A property to use as the actual value for the items.
@@ -36,8 +36,8 @@ sfListView1.ValueMember = "Continent"
 
 ### SourcePropertyChanged
 
-The `SourcePropertyChanged` event is raised when the CountryInfo property value is changed if the CountryInfo Implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the CountryInfo and `PropertyChangedEventArgs` as object.
-PropertyChangedEventArgs has below property,
+The [SourcePropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SourcePropertyChanged_EV.html) event is raised when the CountryInfo property value is changed if the CountryInfo Implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely, sender that handles the CountryInfo and `PropertyChangedEventArgs` as object.
+[PropertyChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.PropertyChangingEventArgs.html) has below property,
 
 `PropertyName` – Denotes the property name of the changed value.
 
@@ -59,7 +59,7 @@ End Sub
 
 ### SourceCollectionChanged
 
-The `SourceCollectionChanged` event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
+The [SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SourceCollectionChanged_EV.html) event is raised when the source collection is changed, for example, add or remove the collection. The event receives two arguments namely, sender that handles `SfListView.View` object and `NotifyCollectionChangedEventArgs` as object.
 
 NotifyCollectionChangedEventArgs has the following properties,
 
