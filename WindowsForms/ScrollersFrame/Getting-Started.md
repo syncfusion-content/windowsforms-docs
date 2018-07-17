@@ -7,17 +7,28 @@ control: ScrollersFrame
 documentation: ug
 ---
 
-# Getting started
+# Getting Started
 
-This section will explain to attach the ScrollersFrame to controls and its basic functionalities.
+This section explains attaching the ScrollersFrame to the controls and its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#scrollersframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+The following assembly should be added as reference to use the ScrollersFrame in any application.
+
+<table>
+<tr>
+<th>
+Required assembly<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+Contains style related properties and functionalities for the ScrollersFrame. <br/><br/></td></tr>
+</table>
 
 ## Attach ScrollersFrame to control
 
-To the Windows form, add a control, which should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
+Add a control to the Windows Forms that should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
 
 ![](ScrollersFrame_images/ScrollersFrame_img2.jpeg)
 
@@ -32,11 +43,11 @@ Me.scrollersFrame1.AttachedTo = Me.treeViewAdv1
 {% endhighlight %}
 {% endtabs %}
 
-N> This property lists all the controls that are added to the form. User can the select any one control, for which scrolls needs to be attached.
+N> This property lists all the controls added to the form. User can select any one control, for which scrolls should be attached.
 
-## Adding Controls to the ScrollBar
+## Adding controls to the scrollbar
 
-There are two collection properties available for the ScrollersFrame which lets you add controls before or after the scrollbars. They are ControlsAfter and ControlsBefore properties.
+The ControlsAfter and ControlsBefore collection properties are available for the ScrollersFrame that lets you add controls before or after the scrollbars.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,14 +64,11 @@ Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2)
 {% endhighlight %}
 {% endtabs %}
 
-The below images illustrates the controls that are added, before and after the scrolls.
-
 ![](ScrollersFrame_images/ScrollersFrame_img4.jpeg)
 
-## Programmatic Scrolling
+## Programmatic scrolling
 
-The horizontal and vertical scrollers has Value property, which represents the current position of the scroll box on the scroll bar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
-
+The horizontal and vertical scrollers has Value property that represents the current position of the scroll box on the scrollbar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
 
 <table>
 <tr>
@@ -70,11 +78,11 @@ Description</th></tr>
 <tr>
 <td>
 HorizontalSmallChange</td><td>
-Gets / sets a value to be added or subtracted from the Value Property, when horizontal scroll box is moved a small distance. Default value is 1.</td></tr>
+Gets or sets a value to be added or subtracted from the Value Property, when the horizontal scroll box is moved a small distance. Default value is 1.</td></tr>
 <tr>
 <td>
 VerticalSmallChange</td><td>
-Gets / sets a value to be added or subtracted from the Value Property, when vertical scroll box is moved a small distance. Default value is 1.</td></tr>
+Gets or sets a value to be added or subtracted from the Value Property, when the vertical scroll box is moved a small distance. Default value is 1.</td></tr>
 </table>
 
 {% tabs %}
@@ -88,10 +96,9 @@ Me.scrollersFrame2.HorizontalSmallChange  = 25
 {% endhighlight %}
 {% endtabs %}
 
-# VisualStyles
+# Visual Styles
 
-Visual Styles for the ScrollersFrame Control can be edited through VisualStyle property.	
-
+Visual Styles for the ScrollersFrame control can be edited through the VisualStyle property.	
 
 <table>
 <tr>
@@ -105,13 +112,13 @@ Sets the visual style for the scrollbars. Supported visual styles are Classic, W
 <tr>
 <td>
 OfficeColorSchemes</td><td>
-Sets the office color schemes for the scrollbars when VisualStyle is set to Office2007 or Office2007Generic style. The color schemes are,Blue,Silver and Black.</td></tr>
+Sets the Office color schemes for the scrollbars when VisualStyle is set to Office2007 or Office2007Generic style. The color schemes are, blue, silver, and black.</td></tr>
 <tr>
 <td>
 Office2016ColorSchemes
 </td>
 <td>
-Sets the office2016 color schemes for the scrollbars when setting the VisualStyle to Office2016 style. The color schemes are Black, White, Colorful, and DarkGray.
+Sets the Office2016 color schemes for the scrollbars when setting the VisualStyle to Office2016 style. The color schemes are black, white, colorful, and dark gray.
 </td>
 </tr>
 </table>
@@ -138,15 +145,11 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 
 ![](ScrollersFrame_images/ScrollersFrame_img6.jpeg)
 
-
-
 ![](ScrollersFrame_images/ScrollersFrame_img7.jpeg)
 
+## Custom colors
 
-
-## Custom Colors
-
-We can also apply custom colors to the ScrollersFrame by setting OfficeColorScheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+You can also apply custom colors to the ScrollersFrame by setting the OfficeColorScheme to `Managed` and specify the custom color through the ApplyManagedColors method.
 
 {% tabs %}
 {% highlight c# %}

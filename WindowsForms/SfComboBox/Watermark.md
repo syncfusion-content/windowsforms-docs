@@ -11,7 +11,7 @@ documentation: ug
  
 ## Null value
 
-Watermark text can be shown in the SfComboBox control by setting the `AllowNull` property to `true`. If the value is null and the editor portion of the control is empty, the watermark will be displayed as text in the SfComboBox control. The default value of `AllowNull` is `false`.
+Watermark text can be shown in the SfComboBox control by setting the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AllowNull.html) property to `true`. If the value is null and the editor portion of the control is empty, the watermark will be displayed as text in the SfComboBox control. The default value of `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ sfComboBox1.AllowNull = True
 
 ## Appearance
 
-Watermark text can be changed by setting value to the `Watermark` property. Watermark fore color can be changed by setting value to the `WatermarkForeColor` property. The default watermark text is `None`.
+Watermark text can be changed by setting value to the [Watermark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~Watermark.html) property. Watermark fore color can be changed by setting value to the `WatermarkForeColor` property. The default watermark text is `None`.
 
 {% tabs %}
 {% highlight c# %}

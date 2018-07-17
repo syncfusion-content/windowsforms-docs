@@ -13,7 +13,7 @@ This section describes various types of button supported by the SfButton.
 
 ## Text and Image Button
 
-The text and image can be displayed inside the SfButton by initializing the Text and Image properties.
+The text and image can be displayed inside the SfButton by initializing the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Text.html) and [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Image.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 
 ### Positioning Text and Image
 
-The text and image positions can be adjusted by using the TextImageRelation property.
+The text and image positions can be adjusted by using the [TextImageRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~TextImageRelation.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -44,7 +44,7 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 
 ### Spacing between Text and Image
 
-The space between the text and image can be adjusted by using the TextMargin and ImageMargin properties.
+The space between the text and image can be adjusted by using the [TextMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~TextMargin.html) and [ImageMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~ImageMargin.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,13 +59,13 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 ## Image Button
 
-The SfButton can be displayed only with the image by setting the empty string value to the Text property and initialize the image value to the Image property. The size of the image can be changed by using the ImageSize property.
+The SfButton can be displayed only with the image by setting the empty string value to the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Text.html) property and initialize the image value to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Image.html) property. The size of the image can be changed by using the ImageSize property.
 
 ![](SfButton_images/SfButton_img4.jpeg)
 
 ## Icon Button
 
-The SfButton can be displayed only with an icon by setting the empty string value to the Text property and initialize the icon value to Image property. You can show the icon button alone by setting the borders to null, and setting the back color of the button same as the background area.
+The SfButton can be displayed only with an icon by setting the empty string value to the Text property and initialize the icon value to [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Image.html) property. You can show the icon button alone by setting the borders to null, and setting the back color of the button same as the background area.
 
 {% tabs %}
 {% highlight c# %}

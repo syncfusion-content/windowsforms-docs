@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting height for the items
 
-Height of the items in the drop-down list can be customized by using the `ItemHeight` property. The default item height is 20.
+Height of the items in the drop-down list can be customized by using the [ItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ItemHeight.html) property. The default item height is 20.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ sfComboBox1.DropDownListView.ItemHeight = 40
 
 ## Auto fit the items based on content
 
-The SfComboBox allows dynamically adjusting size of the items based on the loaded content by defining the `sfComboBox1.DropDownListView.AutoFitMode` property. The control has two types of `AutoFitMode` as listed as follows:
+The SfComboBox allows dynamically adjusting size of the items based on the loaded content by defining the [sfComboBox1.DropDownListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~AutoFitMode.html) property. The control has two types of `AutoFitMode` as listed as follows:
 
 * Height: Auto fits the items based on the content. It considers height of the item when the orientation is vertical.
 * None: Layouts the items by `ItemHeight`.
@@ -42,7 +42,7 @@ sfComboBox1.DropDownListView.AutoFitMode = AutoFitMode.Height
 
 ## Setting the height conditionally
 
-The SfComboBox allows customizing the size of the drop-down item on-demand by the `sfComboBox1.DropDownListView.QueryItemHeight` event using the item index. This event is raised whenever items come to view and triggered with `QueryItemHeightEventArgs`.
+The SfComboBox allows customizing the size of the drop-down item on-demand by the [sfComboBox1.DropDownListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~QueryItemHeight_EV.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
 
 The `sfComboBox1.DropDownListView.QueryItemHeight` event provides the following properties in their arguments:
 

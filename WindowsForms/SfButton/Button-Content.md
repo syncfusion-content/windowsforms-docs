@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adding Rich Text
 
-The rich text can be displayed inside the SfButton by enabling the AllowRichText property and the proper rich text can be added in the Text property.
+The rich text can be displayed inside the SfButton by enabling the [AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AllowRichText.html) property and the proper rich text can be added in the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Text.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\r
 
 ## Wrapping the Text
 
-The text can be wrapped in the SfButton by setting the AllowWrapText property to true.
+The text can be wrapped in the SfButton by setting the [AllowWrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AllowWrapText.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ sfButton1.AllowWrapText = true;
 
 ## Trimming and Showing Ellipsis Character
 
-The ellipsis character can be shown inside the SfButton by enabling the AllowEllipsis property.
+The ellipsis character can be shown inside the SfButton by enabling the [AllowEllipsis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AutoEllipsis.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ sfButton1.AutoEllipsis = true;
 
 ## Auto Fit the SfButton
 
-The SfButton allows auto fitting the size based on the content by setting the AutoSize property to true.
+The SfButton allows auto fitting the size based on the content by setting the [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AutoSize.html) property to true.
 
 {% tabs %}
 {% highlight c# %}

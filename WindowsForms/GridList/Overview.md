@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The grid list control provides a very rich way to display a list of items in multicolumn list view with headers. It supports displaying single and multiple columns, data binding, single and multiple selection, and style customization at cell level.
+The GridList control provides a very rich way to display a list of items in multi-column list view with headers. It supports displaying single and multiple columns, data binding, single and multiple selection, and style customization at cell level.
 
 ## Key features
 

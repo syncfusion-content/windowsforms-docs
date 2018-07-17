@@ -48,7 +48,7 @@ public partial class Form1 : SfForm
 
 ## Title Bar Customization
 
-By default, the SfForm loads with the default appearance, that  can be customized by using the `TitleBarStyleInfo` property. It contains all the settings for the appearance of the form.
+By default, the SfForm loads with the default appearance, that  can be customized by using the [TitleBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html) property. It contains all the settings for the appearance of the form.
 
 
 {% tabs %}
@@ -79,7 +79,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 
 ## Border Customization
 
-The borders of the form can be customized by using the `Style.Border` and `Style.InactiveBorder` properties.
+The borders of the form can be customized by using the [Style.Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~Border.html) and [Style.InactiveBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~InactiveBorder.html) properties.
 
 
 {% tabs %}
@@ -94,7 +94,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 
 ## Loading User Control to the Title Bar
 
-You can load any user control to the title bar of the SfForm instead of the title bar text by using the `TitleBarTextControl` property.
+You can load any user control to the title bar of the SfForm instead of the title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~TitleBarTextControl.html) property.
 
 
 {% tabs %}

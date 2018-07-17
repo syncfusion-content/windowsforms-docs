@@ -9,13 +9,7 @@ documentation: ug
 
 # Style
 
-RecordNavigationControl supports visual styles such as Default, Metro. The style can be set using Style property. 
-
-* Default
-* Metro
-* Office2016
-
-The following code example allows you to set the style for the RecordNavigationControl.
+The RecordNavigationControl supports Visual Styles like Default, Metro, and Office2016 by using the Style property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -26,8 +20,6 @@ Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 {% endhighlight  %}
 {% endtabs %}
 
-
-
 ![](Style_images/Style_img1.png) 
 
 {% tabs %}
@@ -36,7 +28,7 @@ Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 this.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Office2016;
 this.recordNavigationControl1.GridOfficeScrollBars = OfficeScrollBars.Office2016;
 
-//Applying Color Schemes of Office 2016 Theme
+//Applying color schemes of Office 2016 theme
 this.recordNavigationControl1.Office2016ScrollBarsColorScheme = ScrollBarOffice2016ColorScheme.Black;
 {% endhighlight  %}
 {% highlight vb %}
@@ -50,6 +42,3 @@ Me.recordNavigationControl1.Office2016ScrollBarsColorScheme = ScrollBarOffice201
 {% endtabs %}
 
 ![](Style_images/Style_img2.png) 
-
-
-

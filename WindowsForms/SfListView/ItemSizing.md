@@ -11,7 +11,7 @@ documentation: ug
 This section explains how to customize the item size in the SfListView.
 
 ## Customizing item and group height
-Height of an item and the group header can be changed by using the `SfListView.ItemHeight` and `SfListView.GroupHeaderHeight` properties respectively.
+Height of an item and the group header can be changed by using the [SfListView.ItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ItemHeight.html) and [SfListView.GroupHeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~GroupHeaderHeight.html) properties respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ sfListView1.GroupHeaderHeight = 50
 ![](Item Sizing_images/ItemSizing_img1.png)
 
 ## Customize item size of an item on-demand
-The SfListView allows customizing the height of an item on-demand by the `SfListView.QueryItemHeight` event using the item index. This event is raised whenever items come to view and triggered with `QueryItemHeightEventArgs`.
+The SfListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~QueryItemHeight_EV.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
 
 The SfListView.QueryItemHeight event provides the following properties in their arguments:
 
@@ -63,7 +63,7 @@ End Sub
 ![](Item Sizing_images/ItemSizing_img2.png)
 
 ## Auto fit the items based on content
-The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the `SfListView.AutoFitMode` property. The control has two types of auto fit modes as listed as follows:
+The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~AutoFitMode.html) property. The control has two types of auto fit modes as listed as follows:
 
 *	`Height`: Auto fits the items based on the content.
 *	`None`: Layouts the items by `SfListView.ItemHeight`.

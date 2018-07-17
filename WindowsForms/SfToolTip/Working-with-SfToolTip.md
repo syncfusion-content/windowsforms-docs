@@ -11,7 +11,7 @@ documentation: ug
 
 ## Getting the ToolTip Text of a Control
 
-The tooltip text of a control can be retrieved by using the `GetToolTip` method. 
+The tooltip text of a control can be retrieved by using the [GetToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~GetToolTip.html) method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -23,7 +23,7 @@ string toolTipText = this.sfToolTip1.GetToolTip(this.button1);
 
 ## Setting the ToolTip Text of a Control
 
-The tooltip text for a control can be initialized by using the `SetToolTip` method.
+The tooltip text for a control can be initialized by using the [SetToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~SetToolTip.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ this.sfToolTip1.SetToolTip(this.button1, "Button1 ToolTip Text");
 
 ## Getting the ToolTipInfo of a Control
 
-The `ToolTipInfo` of a control can be retrieved by using the `GetToolTipInfo` method.
+The `ToolTipInfo` of a control can be retrieved by using the [GetToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~GetToolTipInfo.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,7 +47,7 @@ ToolTipInfo toolTipInfo = this.sfToolTip1.GetToolTipInfo(this.button1);
 
 ## Setting the ToolTipInfo of a Control
 
-The `ToolTipInfo` for a control can be initialized by using the `SetToolTipInfo` method.
+The `ToolTipInfo` for a control can be initialized by using the [SetToolTipInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~SetToolTipInfo.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ this.sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo);
 
 ## Disabling Tooltip from Showing
 
-The `ToolTipShowing` event can be used to disable the tooltip window by setting the `e.Cancel` to `true`.
+The [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~ToolTipShowing_EV.html) event can be used to disable the tooltip window by setting the `e.Cancel` to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 
 ## Setting Minimum and Maximum Widths
 
-The minimum width and the maximum width of the tooltip can be changed using the `MinWidth` and `MaxWidth` properties. 
+The minimum width and the maximum width of the tooltip can be changed using the [MinWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~MinWidth.html) and [MaxWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~MaxWidth.html) properties. 
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ toolTipInfo1.MaxWidth = 500;
 
 ## Custom Drawing of ToolTip
 
-The `DrawToolTipItem` event can be used to draw the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, `e.Cancel` property can be used.
+The [DrawToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~DrawToolTipItem_EV.html) event can be used to draw the `ToolTipItem` appearance. To cancel the default drawing of the `ToolTipItem`, `e.Cancel` property can be used.
 
 {% tabs %}
 {% highlight c# %}

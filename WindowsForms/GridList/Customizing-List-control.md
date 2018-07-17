@@ -9,11 +9,9 @@ documentation: ug
 
 # Customizing List control
 
-The appearance Grid List control can be customized by customizing the background color, image, header background color, etc. The following properties can be used for customization:
+Appearance of the GridList control can be customized by using the following properties:
 
-* TransparentBackground - This property can be used to set a transparent background for grid cells. If its value is set to true, no background color is displayed. If its value is set to false, the background is filled with the chosen color. The value is set to False by default. Refer BackColor property for setting the required background color. 
-
-The following code example illustrates setting of a transparent background for grid cells.
+* TransparentBackground: Sets a transparent background for grid cells. If its value is set to true, no background color will be displayed. If its value is set to false, the background will be filled with the chosen color. The value is false by default. Refer to the BackColor property for setting the required background color. 
 
 {% tabs %}
 {% highlight c# %}
@@ -26,13 +24,7 @@ Me.gridListControl1.TransparentBackground = True
 
 ![](Customizing-List-control_images/Customizing-List-control_img1.jpeg) 
 
-
-
-
-
-* DisplayVertLines/DisplayHorzLines - This property can be used to specify the display of vertical/horizontal lines on the grid. This property when set to true ensures display of vertical/horizontal grid lines.
-
-The following code example illustrates usage of the properties to display grid lines.
+* DisplayVertLines or DisplayHorzLines: Specifies the display of vertical or horizontal line on the grid. Ensure the display of vertical or horizontal grid line when setting this true.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,19 +39,9 @@ Me.gridListControl1.Properties.DisplayVertLines = True
 
 ![](Customizing-List-control_images/Customizing-List-control_img2.jpeg) 
 
-
-
-
-
 ![](Customizing-List-control_images/Customizing-List-control_img3.jpeg)
 
-
-
-
-
-* Buttons3D - This property can be used to specify the appearance of row and column headers. This property when set to true, renders three-dimensional header providing the header a raised look. 
-
-The following code example illustrates the usage of the property to render a 3D header.
+* Buttons3D: Specifies appearance of the row and column headers. Render a three-dimensional header that provides a raised look when setting this property to true. 
 
 {% tabs %}
 {% highlight c# %}
@@ -72,11 +54,7 @@ Me.gridListControl1.Properties.Buttons3D = True
 
 ![](Customizing-List-control_images/Customizing-List-control_img4.jpeg) 
 
-
-
-* GridLineColor-This property allows the user to specify a color for grid lines. Its value can be set to the required color.
-
-The following code example illustrates the usage of this property to render blue grid lines.
+* GridLineColor: Allows you to specify a color for grid lines. Its value can be set to the required color.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,13 +67,7 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 
 ![](Customizing-List-control_images/Customizing-List-control_img5.jpeg) 
 
-
-
-
-
-* BackColor - This property allows the user to specify background color for Grid List control. It is mandatory to set TransparentBackground to false to set the background color.
-
-The following code example illustrates the usage of this property to render Beige background color.
+* BackColor: Allows you to specify the background color for the GridList control. It is mandatory to set the TransparentBackground to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,11 +80,7 @@ Me.gridListControl1.BackColor = Color.Beige
 
 ![](Customizing-List-control_images/Customizing-List-control_img6.jpeg) 
 
-
-
-* HeaderBackColor - This property allows the user to specify the background color of headers.
-
-The following code example illustrates usage of this property to render a red background for the headers.
+* HeaderBackColor: Allows you to specify the background color of the headers.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,9 +91,7 @@ Me.gridListControl1.HeaderBackColor = Color.Red
 {% endhighlight  %}
 {% endtabs %}
 
-* HeaderTextColor - This property allows the user to specify header text color. 
-
-The following code example illustrates usage of this property to render a blue header text color.
+* HeaderTextColor: Allows you to specify the header text color. 
 
 {% tabs %}
 {% highlight c# %}
@@ -136,7 +102,7 @@ Me.gridListControl1.HeaderTextColor = Color.Blue;
 {% endhighlight  %}
 {% endtabs %}
 
-* BackgroundImage - This property allows the user to specify the background image used for control.
+* BackgroundImage: Allows you to specify the background image used for the control.
 
 The following code example illustrates usage of this property to set the required image as background of the control.
 
@@ -150,8 +116,3 @@ Me.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg")
 {% endtabs %}
 
 ![](Customizing-List-control_images/Customizing-List-control_img7.jpeg)
-
-
-
-
-

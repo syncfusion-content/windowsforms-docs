@@ -7,72 +7,72 @@ control: GridListControl
 documentation: ug
 ---
 
-# Getting started
+# Getting Started
 
-This section will explain to create a simple application with GridListControl and its functionalities.
+This section explains creating a simple application with GridListControl and its functionalities.
 
 ## Assembly Deployment
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridlistcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
+The following assemblies should be added as reference to use the GridListControl in any application.
+
+<table>
+<tr>
+<th>
+Required assemblies<br/><br/></th><th>
+Description<br/><br/></th></tr>
+<tr>
+<td>
+{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+Contains classes that handles all UI operations, fundamentals, and base classes of the GridListControl.<br/><br/></td></tr>
+<tr>
+<td>
+{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+Contains the style related properties and various editor controls used in the GridListControl.<br/><br/></td></tr>
+</table>
+
 ## Creating application with GridListControl
 
-This section will provide step-by-step procedure to create a Grid List control through designer and through programmatic approach in a .NET application.
+This section provides step-by-step procedure to create a GridList control through designer and programmatic approach in a .NET application.
 
-### Through Designer
+### Through designer
 
-With the designer, all you have to do is drag the control onto the form, size it and then set the desired properties, assuming you have a data source ready. If you do not have data source ready, then create one by using the steps listed below.
+Drag the control onto the form, size it and set the desired properties if the data source is available. If it is not available, create a data source by using the following steps:
 
-To Create a Data Source
-
-1. Drag an SqlDataAdapter from Data tab of the Toolbox onto the form. Follow the steps in the wizard to select database and SQL query used to generate the table.
+1. Drag an SqlDataAdapter from Data tab of the toolbox onto the form. Follow the steps in the wizard to select database and SQL query used to generate the table.
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img1.jpeg)
 
-
-
-2. Click SqlAdapter in the components tray with the right Mouse button and generate a dataset for this adapter by just taking the defaults. 
+2. Click the SqlAdapter in the components tray with the right mouse button and generate a dataset for this adapter by just taking the defaults. 
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img2.jpeg) 
 
-
-
-
-
-3. In the Form_Load event handler, Fill method will be called automatically for this SqlDataAdapter by passing dataset that is generated in the previous step.
+3. In the Form_Load event handler, the Fill method will be called automatically for this SqlDataAdapter by passing dataset generated in the previous step.
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img3.jpeg) 
 
-
-
-4. Drag GridListControl object from your tool box and drop it onto the form.
+4. Drag the GridListControl object from your toolbox and drop it onto the form.
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img4.jpeg) 
 
-
-
 5. Size and position it.
-6. Go to Properties dialog of this Grid List control and set DataSource property of this control to an appropriate object.
+6. Go to the Properties dialog of this GridList control and set the DataSource property of this control to an appropriate object.
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img5.jpeg) 
 
-
-
-7. Run the application. Following is the output.
+7. Run the application. 
 
    ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img6.jpeg) 
 
-   {:.prettyprint}
+This designer-created data source is available to use as the data source member of Grid List control. For a complete step-by-step tutorial on how to use the designer to create data source, see the Grid Data Bound Grid tutorial.
 
-This designer-created data source is now available for use as the data source member of Grid List control. For a complete step-by-step tutorial on how to use the designer to create data source, see the Grid Data Bound Grid tutorial.
+### Through code
 
-### Through Code
+The GridList control sample that ships with Essential Grid does not use the designer. It creates an ArrayList of objects that serves as a data source for the GridList control. Each state object has a LongName, ShortName, and ImageIndex properties that can be displayed in the list control.  
 
-The Grid List control sample that ships with Essential Grid does not use the designer. It creates an ArrayList of objects that serves as a data source for the Grid List control. Each state object has a LongName, ShortName and ImageIndex properties that can be displayed in the list control. Here are some code samples that illustrate assignments of the major properties. 
-
-For the complete implementation details, refer to the sample in the below installation path.
+For the complete implementation details, refer to the sample in the following installation path:
 
 **_<Install Location>\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid List Control_**
-
 
 {% tabs %}
 {% highlight c# %}
@@ -109,4 +109,4 @@ gridListBox1.FillLastColumn = True
 
 ## Selection
 
-Selection for the GridListControl can be enabled by using the SelectionMode property. The `GridListControl` supports three types of selection behaviors based on the [SelectionMode] (https://help.syncfusion.com/windowsforms/gridlist/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to One for selecting single row or MultiSimple to select many rows.
+Selection for the GridListControl can be enabled by using the SelectionMode property. The `GridListControl` supports three types of selection behaviors based on the [SelectionMode](https://help.syncfusion.com/windowsforms/gridlist/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to one for selecting single row or multi-simple to select many rows.

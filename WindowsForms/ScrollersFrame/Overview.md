@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The ScrollersFrame is a component to customize the appearance of scroll bars for any scrollable control. It has built-in support to scroll the UI through context menu like Microsoft scroll bars. The context menu appears when the horizontal or vertical scroll bar is right-clicked. It also supports customizing the appearance of scroll bar and localize the context menu items.
+The ScrollersFrame is a component to customize the appearance of scrollbars for any scrollable control. It has built-in support to scroll the UI through context menu-like Microsoft scroll bars. The context menu appears when the horizontal or vertical scrollbar is right-clicked. It also supports customizing the appearance of scrollbar and localize the context menu items.
 
 ## Key feature
 
