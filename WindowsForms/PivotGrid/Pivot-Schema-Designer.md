@@ -93,7 +93,7 @@ The pivot fields in can be dynamically added to the pivot grid control by checki
 
 The pivot fields can be reordered by doing drag and drop operation as well as using context menu available in the grid list.
 
-#### By drag and drop between grid lists and fields section
+#### By drag and drop between grid list and fields section
 
 Any pivot field can be dragged and dropped from fields section to column or row or value or filter grid list available at the bottom of the pivot schema designer as shown below:
 
@@ -105,9 +105,9 @@ Any pivot field can be dragged and dropped from one grid list to some other grid
 
 ![Pivot-Schema-Designer_img6](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img6.png)
 
-#### By drag and drop between grid list and grouping bar
+#### By drag and drop between pivot schema designer and grouping bar
 
-Any pivot field can be dragged and dropped from any of the pivot schema designer's grid list to the required grouping bar's section as shown below:
+Any pivot field can be dragged and dropped from any of the pivot schema designer's grid list or field section to the required grouping bar's section as shown below:
 
 ![Pivot-Schema-Designer_img7](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img7.png)
 
@@ -134,64 +134,60 @@ The items of the pivot field inside the filter section can only be filtered. The
 N>
 At least, one item should be in the checked state, otherwise the "OK" button will be disabled in the report filter popup to restrict filtering operation.
 
-## Displaying Calculations
-
-PivotGrid provides support to show the calculation values either in column or in row. It can be achieved either using the [ShowCalculationsAsColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowCalculationsAsColumns.html) property of pivot grid control or through simple uncheck/check `ShowCalculations as Columns` option in PivotSchemaDesigner and it can be achieved through the [ShowCalculationsAsColumnCheckBox](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~ShowCalculationsAsColumnCheckBox.html) property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-// Disable ShowCalculationsAsColumns in pivot grid control.
-this.pivotGridControl1.ShowCalculationsAsColumns = false;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-' Disable ShowCalculationsAsColumns in pivot grid control.
-Me.pivotGridControl1.ShowCalculationsAsColumns = False
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img6.png)
-
-Filtering is also supported in pivot schema designer. Filter popup will be opened while clicking on the expander icon in the right corner of each PivotTable Field List items.
-
 ## Defer layout update
 
 By default, the pivot grid control is updated for each and every action happened related to the pivot field. For pivot grid control containing large data source, these actions can take some time to complete. To handle this scenario, pivot grid provides defer layout update support which allows users to control when the pivot grid control is updated.
 
 ### Enabling defer layout update
 
-The "Defer Layout Update" check box present at the bottom left corner of the pivot schema designer should be checked to enable this feature. When this checkbox is checked, the "Update" button next to it will be enabled. Now, any operations can be performed on pivot fields without updating the pivot grid control. The pivot grid control will be updated only if the update button is clicked.
+The "[Defer Layout Update](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateCheckBox.html)" check box present at the bottom left corner of the pivot schema designer should be checked to enable this feature. When this checkbox is checked, the "[Update](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateButton.html)" button next to it will be enabled. Now, any operations can be performed on pivot fields without updating the pivot grid control. The pivot grid control will be updated only if the update button is clicked.
 
-PivotGrid provides support  whether the layout should be updated immediately after the pivot grid info updated or it should wait for a [Refresh()](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Refresh.html) method call.It can be achieved by setting the [DeferLayoutUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~DeferLayoutUpdate.html) property of pivot grid control or through simple uncheck/check `Defer layout Update` option in PivotSchemaDesigner.In PivotSchemaDesigner this option is enabled using the [DeferLayoutUpdateCheckBox](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateCheckBox.html) and [DeferLayoutUpdateButton](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateButton.html) properties.
+This support can also be be achieved programmatically by setting the [DeferLayoutUpdate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~DeferLayoutUpdate.html) property of pivot grid control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Enables Defer Layout Update in pivot grid control.
 this.pivotGridControl1.DeferLayoutUpdate = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' // Enables Defer Layout Update in pivot grid control.
 Me.pivotGridControl1.DeferLayoutUpdate = True
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![Pivot-Schema-Designer_img10](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img10.png)
 
+## Displaying Calculations
+
+PivotGrid provides support to show the calculation values either in column or in row. The "[Show Calculations as Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~ShowCalculationsAsColumnCheckBox.html)" check box present at the bottom left corner of the pivot schema designer should be checked or unchecked based on the requirement.
+
+This support can also be achieved programmatically by using the [ShowCalculationsAsColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowCalculationsAsColumns.html) property of pivot grid control.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.pivotGridControl1.ShowCalculationsAsColumns = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.ShowCalculationsAsColumns = False
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pivot-Schema-Designer_img11](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img11.png)
 
 ## Pivot computation information dialog
 
 The pivot computation information dialog is used to view the information about particular pivot calculation item. It is also used to edit the header, description, value format, summary type and calculation type of the pivot calculation item at run time. While double clicking on a calculation item under the value section, pivot computation information dialog will be displayed as shown below:
 
-![Pivot-Schema-Designer_img4](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png)
+![Pivot-Schema-Designer_img12](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img12.png)
