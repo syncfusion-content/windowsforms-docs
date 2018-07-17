@@ -389,9 +389,9 @@ In code, you can specify constraints through the SetConstraints() method. The Gr
 
 In the code given below, the GridBagLayout constraints can be set for the controls along with the constraint values for Insets, WeightX, WeightY, Anchor, Fill, GridPostX, GridPostY, IPadX and IPadY.
 
-The value of the `GridBagContraints` can be specified on a Child component as the below.
+The value of the `GridBagConstraints` can be specified on a Child component as the below.
 
-**GridBagConstraints(int gridPosX, int gridPosY, int cellSpanX, int cellSpanY, double weightX, double weightY, AnchorTypes anchor, FillType fill, Insets insets, int ipadX, int ipadY, bool isEmpty)** 
+**GridBagConstraints(int gridPosX, int gridPosY, int cellSpanX, int cellSpanY, double weightX, double weightY, AnchorTypes anchor, FillType fill, Insets insets, int IpadX, int IpadY, bool isEmpty)** 
 
 {% tabs %}
 
