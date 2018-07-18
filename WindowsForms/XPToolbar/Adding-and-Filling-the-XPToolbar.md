@@ -9,6 +9,9 @@ documentation: ug
 
 # Getting started
 
+>**Important**
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+
 This section describes how to add `XPToolBar` control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment

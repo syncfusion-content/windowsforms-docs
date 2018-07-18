@@ -9,6 +9,9 @@ documentation: ug
 
 # Getting Started
 
+>**Important**
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+
 Adding a PopupMenu
 
 Drag and drop a PopupMenu from the toolbox onto the designer form. 
