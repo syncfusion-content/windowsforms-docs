@@ -391,7 +391,7 @@ In the code given below, the GridBagLayout constraints can be set for the contro
 
 The value of the `GridBagConstraints` can be specified on a Child component as the below.
 
-**GridBagConstraints(int gridPosX, int gridPosY, int cellSpanX, int cellSpanY, double weightX, double weightY, AnchorTypes anchor, FillType fill, Insets insets, int IpadX, int IpadY, bool isEmpty)** 
+**GridBagConstraints(int gridPosX, int gridPosY, int cellSpanX, int cellSpanY, double weightX, double weightY, AnchorTypes anchor, FillType fill, Insets insets, int IPadX, int IPadY, bool isEmpty)** 
 
 {% tabs %}
 
