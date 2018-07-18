@@ -117,6 +117,41 @@ End Sub
 
 Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellValidating_EV.html) event.
 
+### Prevent adding empty records
+
+Adding empty record using the AddNewRow can be prevented by setting [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs~IsValid.html) to false in [RowValidating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowValidating_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.RowValidating += sfDataGrid_RowValidating;
+
+void sfDataGrid_RowValidating(object sender, Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs e)
+{
+    var data = e.DataRow.RowData as OrderInfo;
+
+    if (string.IsNullOrEmpty(data.CustomerID))
+    {
+        e.ErrorMessage = "Customer ID cannot be null";
+        e.IsValid = false;
+    } 
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.RowValidating, AddressOf sfDataGrid_RowValidating 
+
+Private Sub sfDataGrid_RowValidating(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs)
+	Dim data = TryCast(e.DataRow.RowData, OrderInfo)
+
+	If String.IsNullOrEmpty(data.CustomerID) Then
+		e.ErrorMessage = "Customer ID cannot be null"
+		e.IsValid = False
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](DataManipulation_images/AddNewRow_img8.png)
+
 ### Customizing AddNewRow Text using Default Resource File
 SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
