@@ -129,24 +129,25 @@ void sfDataGrid_RowValidating(object sender, Syncfusion.WinForms.DataGrid.Events
 {
     var data = e.DataRow.RowData as OrderInfo;
 
-    if (string.IsNullOrEmpty(data.CustomerID))
+    if (string.IsNullOrEmpty(data.CustomerID) || string.IsNullOrEmpty(data.ProductName) || string.IsNullOrEmpty(data.ShipCountry))
     {
-        e.ErrorMessage = "Customer ID cannot be null";
+        e.ErrorMessage = "Records cannot be empty";
         e.IsValid = false;
-    } 
+    }
 }
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid.RowValidating, AddressOf sfDataGrid_RowValidating 
 
 Private Sub sfDataGrid_RowValidating(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs)
-	Dim data = TryCast(e.DataRow.RowData, OrderInfo)
+    Dim data = TryCast(e.DataRow.RowData, OrderInfo)
 
-	If String.IsNullOrEmpty(data.CustomerID) Then
-		e.ErrorMessage = "Customer ID cannot be null"
-		e.IsValid = False
-	End If
+    If String.IsNullOrEmpty(data.CustomerID) OrElse String.IsNullOrEmpty(data.ProductName) OrElse String.IsNullOrEmpty(data.ShipCountry) Then
+        e.ErrorMessage = "Records cannot be empty"
+        e.IsValid = False
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
