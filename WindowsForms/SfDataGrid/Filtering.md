@@ -659,15 +659,15 @@ this.sfDataGrid.FilterPopupShown += sfDataGrid_FilterPopupShown;
 
 void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Events.FilterPopupShownEventArgs e)
 {
-    //Check whether the rows freezed in SfDataGrid .
+    //Check whether the rows frozen in SfDataGrid .
     //If it is true means ,the default value loaded in FilterElement .
     if (this.sfDataGrid.FrozenRowCount < 1)
         return;
 
-    //Get the columnname which is going to be applied Filtering
+    //Get the column name which is going to be applied Filtering
     var columnName = e.Column.MappingName;
 
-    //Gets proerty access provider for getting forzen rows display value
+    //Gets property access provider for getting frozen rows display value
     var provider = this.sfDataGrid.View.GetPropertyAccessProvider();
 
     //Get the corresponding FilterElement of the column
@@ -694,7 +694,7 @@ void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Eve
         }
     }
 
-    //If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+    //If Grouping is applied, need to get the records DisplayElements of TopLevelGroup in view
     else
     {
         //Gets the records from DisplayElements
@@ -704,7 +704,7 @@ void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Eve
         {
             if (records[i] is RecordEntry)
             {
-                //Get the value for frozen rows count of corresponding column and remove it from FilterElement col
+                //Get the value for frozen rows count of corresponding column and remove it
                 var value = provider.GetValue((records[i] as RecordEntry).Data, columnName);
                 if (value != null)
                 {
@@ -721,23 +721,23 @@ void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Eve
 AddHandler Me.sfDataGrid.FilterPopupShown, AddressOf sfDataGrid_FilterPopupShown
 
 Private Sub sfDataGrid_FilterPopupShown(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.FilterPopupShownEventArgs)
-	'Check whether the rows freezed in SfDataGrid .
-	'If it is true means ,the default value loaded in FilterElement .
+	'Check whether the rows frozen in SfDataGrid .
+	'If it is true means, the default value loaded in FilterElement.
 	If Me.sfDataGrid.FrozenRowCount < 1 Then
 		Return
 	End If
 
-	'Get the columnname which is going to be applied Filtering
+	'Get the column name which is going to be applied Filtering
 	Dim columnName = e.Column.MappingName
 
-	'Gets proerty access provider for getting forzen rows display value
+	'Gets property access provider for getting frozen rows display value
 	Dim provider = Me.sfDataGrid.View.GetPropertyAccessProvider()
 
 	'Get the corresponding FilterElement of the column
 	Dim dataSource = TryCast(e.Control.CheckListBox.DataSource, List(Of FilterElement))
 
-	'Check whether the Grouping is applied or not .
-	'If Grouping is not applied means ,you can get record directly from View 
+	'Check whether the Grouping is applied or not.
+	'If Grouping is not applied means, you can get record directly from View 
 	If Me.sfDataGrid.GroupColumnDescriptions IsNot Nothing AndAlso Me.sfDataGrid.GroupColumnDescriptions.Count < 1 Then
 		'Get the records from view of SfDataGrid
 		Dim records = Me.sfDataGrid.View.Records
@@ -755,7 +755,7 @@ Private Sub sfDataGrid_FilterPopupShown(ByVal sender As Object, ByVal e As Syncf
 			i += 1
 		Loop
 
-	'If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+	'If Grouping is applied, need to get the records DisplayElements of TopLevelGroup in view
 	Else
 		'Gets the records from DisplayElements
 		Dim records = Me.sfDataGrid.View.TopLevelGroup.DisplayElements
@@ -774,7 +774,6 @@ Private Sub sfDataGrid_FilterPopupShown(ByVal sender As Object, ByVal e As Syncf
 			i += 1
 		Loop
 	End If
-
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -789,15 +788,15 @@ this.sfDataGrid.FilterChanging += sfDataGrid_FilterChanging;
         
 void sfDataGrid_FilterChanging(object sender, Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs e)
 {
-    //Check whether the Filtering is applied and the ForzenRowCount is more than zero 
-    //If it is true means ,the default filtering operation will be performed 
+    //Check whether the Filtering is applied and the FrozenRowCount is more than zero 
+    //If it is true means, the default filtering operation will be performed 
     if (e.FilterPredicates == null || this.sfDataGrid.FrozenRowCount < 1)
         return;
 
-    //Gets proerty access provider for getting forzen rows display value
+    //Gets proerty access provider for getting frozen rows display value
     var provider = this.sfDataGrid.View.GetPropertyAccessProvider();
 
-    //Get the colum name for which the filtering is going to be applied
+    //Get the column name for which the filtering is going to be applied
     var columnName = e.Column.MappingName;
 
     //Check whether the Grouping is applied or not .
@@ -815,7 +814,7 @@ void sfDataGrid_FilterChanging(object sender, Syncfusion.WinForms.DataGrid.Event
         }
     }
 
-    //If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+    //If Grouping is applied, need to get the records DisplayElements of TopLevelGroup in view
     else
     {
         //Gets the records from DisplayElements
@@ -833,7 +832,7 @@ void sfDataGrid_FilterChanging(object sender, Syncfusion.WinForms.DataGrid.Event
     }
 }
 
-//FilerPredicate  added here
+//FilerPredicate added here
 private void AddPredicates(List<FilterPredicate> FilterPredicates, FilterType FilterType, PredicateType predicateType, object value)
 {
     FilterPredicates.Add(new FilterPredicate()
@@ -850,16 +849,16 @@ private void AddPredicates(List<FilterPredicate> FilterPredicates, FilterType Fi
 AddHandler Me.sfDataGrid.FilterChanging, AddressOf sfDataGrid_FilterChanging
 
 Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs)
-	'Check whether the Filtering is applied and the ForzenRowCount is more than zero 
-	'If it is true means ,the default filtering operation will be performed 
+	'Check whether the Filtering is applied and the FrozenRowCount is more than zero 
+	'If it is true means, the default filtering operation will be performed 
 	If e.FilterPredicates Is Nothing OrElse Me.sfDataGrid.FrozenRowCount < 1 Then
 		Return
 	End If
 
-	'Gets proerty access provider for getting forzen rows display value
+	'Gets proerty access provider for getting frozen rows display value
 	Dim provider = Me.sfDataGrid.View.GetPropertyAccessProvider()
 
-	'Get the colum name for which the filtering is going to be applied
+	'Get the column name for which the filtering is going to be applied
 	Dim columnName = e.Column.MappingName
 
 	'Check whether the Grouping is applied or not .
@@ -874,7 +873,7 @@ Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As Syncfus
 			AddPredicates(e.FilterPredicates, FilterType.Equals, PredicateType.Or, value)
 		Next i
 
-	'If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+	'If Grouping is applied, need to get the records DisplayElements of TopLevelGroup in view
 	Else
 		'Gets the records from DisplayElements
 		Dim records = Me.sfDataGrid.View.TopLevelGroup.DisplayElements
@@ -889,7 +888,7 @@ Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As Syncfus
 	End If
 End Sub
 
-'FilerPredicate  added here
+'FilerPredicate added here
 Private Sub AddPredicates(ByVal FilterPredicates As List(Of FilterPredicate), ByVal FilterType As FilterType, ByVal predicateType As PredicateType, ByVal value As Object)
 	FilterPredicates.Add(New FilterPredicate() With {.FilterValue = value, .FilterType = FilterType, .FilterBehavior = FilterBehavior.StronglyTyped, .IsCaseSensitive = True, .PredicateType = predicateType})
 End Sub
