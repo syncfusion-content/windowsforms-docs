@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend
 
-PivotChart, by default, displays a Legend with information on each series that has been plotted on the chart. Legend is a color code that helps differentiate between chart items. Legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on. Legend is made visible in PivotChart by using the property ShowLegend.
+By default, the pivot chart displays a legend with information on each series that has been plotted on the chart. The legend is a color code that helps to differentiate between chart items, and it has labels beside each color to indicate that it applies to information from series 1, series 2, and so on. The legend is made visible in the pivot chart by using the `ShowLegend` property.
 
 {% highlight c# %}
 
@@ -25,7 +25,7 @@ Me.pivotChart1.ShowLegend = True
 {% endhighlight %}
 
 
-The Legends have integral floating support and can be placed anywhere in the chart area as per your requirements.
+The legends having integral floating support can be placed anywhere in the chart area.
 
 {% highlight c# %}
 
@@ -40,7 +40,7 @@ Me.pivotChart1.LegendPosition = Syncfusion.Windows.Forms.Chart.ChartDock.Floatin
 
 {% endhighlight %}
 
-The Legend alignment can be marked within the ChartArea by using the LegendAlignment enumeration.
+The legend alignment can be marked within the chart area by using the LegendAlignment enumeration.
 
 {% highlight c# %}
 
@@ -67,9 +67,14 @@ Description</th></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the position relative to the chart where to render the legend.* Top-above the chart* Left-left of the chart* Right-right of the chart* Bottom-below the chart<br>Floating-is not docked to any specific location(default setting)</td></tr>
+Specifies the position relative to chart where to render the legend.
+* Top-above the chart
+* Left-left of the chart
+* Right-right of the chart
+* Bottom-below the chart
+<br>Floating: Legend is not docked to any specific location(default setting).</td></tr>
 <tr>
 <td>
 LegendAlignment</td><td>
-When docked to a side, this property specifies how the legend should be aligned with respect to the chart boundaries.</td></tr>
+Specifies how the legend should be aligned with respect to the chart boundaries When it is docked to a side.</td></tr>
 </table>

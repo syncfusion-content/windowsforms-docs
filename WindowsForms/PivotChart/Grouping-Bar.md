@@ -9,32 +9,32 @@ documentation: ug
 
 # Grouping Bar
 
-Grouping bar splits the pivot item collection and presents the data in an intuitive way. There are four kinds of grouping sections available in PivotChart.
+The grouping bar splits the pivot item collection and presents the data in an intuitive way. There are four kinds of grouping sections available in the pivot chart.
 
-* Axis Field Section
-* Legend Field Section
-* Value Field Section
-* Filter Field Section
+* Axis field section
+* Legend field section
+* Value field section
+* Filter field section
 
-## Axis Field Section
+## Axis field section
 
-This section allows you to display the collection of FieldHeader values of PivotItems from *PivotAxis* and the items are placed at the bottom of the chart area.
+This section allows you to display the collection of FieldHeader values of PivotItems from *PivotAxis* and items placed at the bottom of the chart area.
 
-## Legend Field Section
+## Legend field section
 
-This section allows you to display the collection of FieldHeader values of PivotItems from *PivotLegend* and items are placed in-between the filter field section and the chart area.
+This section allows you to display the collection of FieldHeader values of PivotItems from *PivotLegend* and items placed in-between the filter field section and the chart area.
 
-## Value Field Section
+## Value field section
 
-This section allows you to display the collection of FieldHeader values of PivotComputationInfo from *PivotCalculations* and items are placed in-between the filter field section and the chart area.
+This section allows you to display the collection of FieldHeader values of PivotComputationInfo from *PivotCalculations* and items placed in-between the filter field section and the chart area.
 
-## Filter Field Section
+## Filter field section
 
-This section allows you to display the collection of DimensionHeader values of filter expression from *PivotFilters* and items are placed at the top of the chart area.
+This section allows you to display the collection of DimensionHeader values of filter expression from *PivotFilters* and items placed at the top of the chart area.
 
-## Defining Grouping Bar
+## Defining grouping bar
 
-The following code snippet shows how to define the grouping bar in PivotChart.
+The following code snippet shows how to define the grouping bar in the pivot chart.
 
 {% tabs %}
 
@@ -62,9 +62,9 @@ Me.pivotChart1.FilterFieldSection.Visible = True
 
 _PivotChart with grouping bar_
 
-## Customizing Grouping Bar
+## Customizing grouping bar
 
-In PivotChart, the grouping bar can be customized by using the following properties:
+In pivot chart, the grouping bar can be customized by using the following properties:
 
 <table>
 <tr>
@@ -86,7 +86,7 @@ Sets the foreground color for the grouping bar section button.</td></tr>
 </th>
 </table>
 
-Please refer the below code snippet to customize the appearance of axis field section by using the above properties.
+Refer to the folowing code snippet to customize the appearance of axis field section by using the above properties.
 
 {% tabs %}
 
