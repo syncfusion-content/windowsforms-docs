@@ -687,7 +687,7 @@ void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Eve
             if (value != null)
             {
                 //Remove from FilterElement collection
-                var removeElement = dataSource.FirstOrDefault(item => (item.ActualValue != null && item.ActualValu
+                var removeElement = dataSource.FirstOrDefault(item => (item.ActualValue != null && item.ActualValue
                 e.Control.CheckListBox.View.Items.Remove(removeElement);
 
             }
@@ -793,7 +793,7 @@ void sfDataGrid_FilterChanging(object sender, Syncfusion.WinForms.DataGrid.Event
     if (e.FilterPredicates == null || this.sfDataGrid.FrozenRowCount < 1)
         return;
 
-    //Gets proerty access provider for getting frozen rows display value
+    //Gets property access provider for getting frozen rows display value
     var provider = this.sfDataGrid.View.GetPropertyAccessProvider();
 
     //Get the column name for which the filtering is going to be applied
@@ -855,7 +855,7 @@ Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As Syncfus
 		Return
 	End If
 
-	'Gets proerty access provider for getting frozen rows display value
+	'Gets property access provider for getting frozen rows display value
 	Dim provider = Me.sfDataGrid.View.GetPropertyAccessProvider()
 
 	'Get the column name for which the filtering is going to be applied
