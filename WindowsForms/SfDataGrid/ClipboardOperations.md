@@ -381,7 +381,7 @@ Me.sfDataGrid1.ClipboardController.Paste()
 
 ## Customizing Copy Paste Behavior
 
-The SfDataGrid performs clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and seting it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html).
+The SfDataGrid performs clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and setting it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html).
 
 {% tabs %}
 {% highlight c# %}
