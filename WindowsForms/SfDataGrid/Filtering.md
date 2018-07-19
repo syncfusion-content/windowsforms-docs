@@ -651,7 +651,7 @@ End Sub
 
 The frozen rows can be skipped from filtering and retained in the view by using the [FilterPopupShown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShown_EV.html) and [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) events.
 
-The [FilterPopupShown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShown_EV.html) event can be used to avoid frozen row data being populated into the filter item list as shown in the following code example.
+The [FilterPopupShown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShown_EV.html) event can be used to avoid frozen row data being populated into the filter item list.
 
 {% tabs %}
 {% highlight c# %}
@@ -780,7 +780,7 @@ End Sub
 
 ![](Filtering_images/Filtering_img22.png)
 
-Retaining the frozen row data in the view can be achieved by managing the [FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs~FilterPredicates.html) collection in the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. In the below code, the frozen row data is added to the filter predicates by using the `FilterPredicates` argument.
+Retain the frozen row data in the view by managing the [FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs~FilterPredicates.html) collection in the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. In the following code, the frozen row data is added to the filter predicates using the `FilterPredicates` argument.
 
 {% tabs %}
 {% highlight c# %}
@@ -899,8 +899,7 @@ End Sub
 
 ![](Filtering_images/Filtering_img24.png)
 
-Download sample from below location,
-[Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1392776176)
+Download [Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1392776176).
 
 
 ## Appearance
