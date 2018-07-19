@@ -712,8 +712,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-[CS Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CS-361404941)
-
-[VB Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VB-303088438)
+Download sample from below location,
+[Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1502467420)
 
 N> The copied row can be pasted only after initiating the AddNewRow by editing.
