@@ -646,6 +646,264 @@ End Sub
 
 ![](Filtering_images/Filtering_img17.png)
 
+
+### Skip the frozen row data from filtering
+
+The frozen rows can be skipped from filtering and retained in the view by using the [FilterPopupShown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShown_EV.html) and [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) events.
+
+The [FilterPopupShown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupShown_EV.html) event can be used to avoid frozen row data being populated into the filter item list as shown in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.FilterPopupShown += sfDataGrid_FilterPopupShown;
+
+void sfDataGrid_FilterPopupShown(object sender, Syncfusion.WinForms.DataGrid.Events.FilterPopupShownEventArgs e)
+{
+    //Check whether the rows freezed in SfDataGrid .
+    //If it is true means ,the default value loaded in FilterElement .
+    if (this.sfDataGrid.FrozenRowCount < 1)
+        return;
+
+    //Get the columnname which is going to be applied Filtering
+    var columnName = e.Column.MappingName;
+
+    //Gets proerty access provider for getting forzen rows display value
+    var provider = this.sfDataGrid.View.GetPropertyAccessProvider();
+
+    //Get the corresponding FilterElement of the column
+    var dataSource = e.Control.CheckListBox.DataSource as List<FilterElement>;
+
+    //Check whether the Grouping is applied or not .
+    //If Grouping is not applied means ,you can get record directly from View 
+    if (this.sfDataGrid.GroupColumnDescriptions != null && this.sfDataGrid.GroupColumnDescriptions.Count < 1)
+    {
+        //Get the records from view of SfDataGrid
+        var records = this.sfDataGrid.View.Records;
+
+        //Get the value for frozen rows count of corresponding column and remove it from FilterElement collection
+        for (int i = 0; i < this.sfDataGrid.FrozenRowCount && i < this.sfDataGrid.View.Records.Count; i++)
+        {
+            var value = provider.GetValue(records[i].Data, columnName);
+            if (value != null)
+            {
+                //Remove from FilterElement collection
+                var removeElement = dataSource.FirstOrDefault(item => (item.ActualValue != null && item.ActualValu
+                e.Control.CheckListBox.View.Items.Remove(removeElement);
+
+            }
+        }
+    }
+
+    //If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+    else
+    {
+        //Gets the records from DisplayElements
+        var records = this.sfDataGrid.View.TopLevelGroup.DisplayElements;
+
+        for (int i = 0; i < this.sfDataGrid.FrozenRowCount && i < this.sfDataGrid.View.TopLevelGroup.DisplayElemen
+        {
+            if (records[i] is RecordEntry)
+            {
+                //Get the value for frozen rows count of corresponding column and remove it from FilterElement col
+                var value = provider.GetValue((records[i] as RecordEntry).Data, columnName);
+                if (value != null)
+                {
+                    //Remove from FilterElement collection
+                    var removeElement = dataSource.FirstOrDefault(item => (item.ActualValue != null && item.Actual
+                    e.Control.CheckListBox.View.Items.Remove(removeElement);
+                }
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.FilterPopupShown, AddressOf sfDataGrid_FilterPopupShown
+
+Private Sub sfDataGrid_FilterPopupShown(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.FilterPopupShownEventArgs)
+	'Check whether the rows freezed in SfDataGrid .
+	'If it is true means ,the default value loaded in FilterElement .
+	If Me.sfDataGrid.FrozenRowCount < 1 Then
+		Return
+	End If
+
+	'Get the columnname which is going to be applied Filtering
+	Dim columnName = e.Column.MappingName
+
+	'Gets proerty access provider for getting forzen rows display value
+	Dim provider = Me.sfDataGrid.View.GetPropertyAccessProvider()
+
+	'Get the corresponding FilterElement of the column
+	Dim dataSource = TryCast(e.Control.CheckListBox.DataSource, List(Of FilterElement))
+
+	'Check whether the Grouping is applied or not .
+	'If Grouping is not applied means ,you can get record directly from View 
+	If Me.sfDataGrid.GroupColumnDescriptions IsNot Nothing AndAlso Me.sfDataGrid.GroupColumnDescriptions.Count < 1 Then
+		'Get the records from view of SfDataGrid
+		Dim records = Me.sfDataGrid.View.Records
+
+		'Get the value for frozen rows count of corresponding column and remove it from FilterElement collection
+		Dim i As Integer = 0
+		Do While i < Me.sfDataGrid.FrozenRowCount AndAlso i < Me.sfDataGrid.View.Records.Count
+			Dim value = provider.GetValue(records(i).Data, columnName)
+			If value IsNot Nothing Then
+				'Remove from FilterElement collection
+				Dim removeElement = dataSource.FirstOrDefault(Function(item) (item.ActualValue IsNot Nothing AndAlso item.ActualValue.Equals(value)) OrElse item.ActualValue Is Nothing)
+				e.Control.CheckListBox.View.Items.Remove(removeElement)
+
+			End If
+			i += 1
+		Loop
+
+	'If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+	Else
+		'Gets the records from DisplayElements
+		Dim records = Me.sfDataGrid.View.TopLevelGroup.DisplayElements
+
+		Dim i As Integer = 0
+		Do While i < Me.sfDataGrid.FrozenRowCount AndAlso i < Me.sfDataGrid.View.TopLevelGroup.DisplayElements.Count
+			If TypeOf records(i) Is RecordEntry Then
+				'Get the value for frozen rows count of corresponding column and remove it from FilterElement collection
+				Dim value = provider.GetValue((TryCast(records(i), RecordEntry)).Data, columnName)
+				If value IsNot Nothing Then
+					'Remove from FilterElement collection
+					Dim removeElement = dataSource.FirstOrDefault(Function(item) (item.ActualValue IsNot Nothing AndAlso item.ActualValue.Equals(value)) OrElse item.ActualValue Is Nothing)
+					e.Control.CheckListBox.View.Items.Remove(removeElement)
+				End If
+			End If
+			i += 1
+		Loop
+	End If
+
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img22.png)
+
+Retaining the frozen row data in the view can be achieved by managing the [FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs~FilterPredicates.html) collection in the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. In the below code, the frozen row data is added to the filter predicates by using the `FilterPredicates` argument.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.FilterChanging += sfDataGrid_FilterChanging;
+        
+void sfDataGrid_FilterChanging(object sender, Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs e)
+{
+    //Check whether the Filtering is applied and the ForzenRowCount is more than zero 
+    //If it is true means ,the default filtering operation will be performed 
+    if (e.FilterPredicates == null || this.sfDataGrid.FrozenRowCount < 1)
+        return;
+
+    //Gets proerty access provider for getting forzen rows display value
+    var provider = this.sfDataGrid.View.GetPropertyAccessProvider();
+
+    //Get the colum name for which the filtering is going to be applied
+    var columnName = e.Column.MappingName;
+
+    //Check whether the Grouping is applied or not .
+    //If Grouping is not applied means ,you can get record directly from View 
+    if (this.sfDataGrid.GroupColumnDescriptions != null && this.sfDataGrid.GroupColumnDescriptions.Count < 1)
+    {
+        //Gets the records from the View
+        var records = this.sfDataGrid.View.Records;
+
+        //Add the FrozenRows filter predicate to view 
+        for (int i = 0; i < this.sfDataGrid.FrozenRowCount; i++)
+        {
+            var value = provider.GetValue(records[i].Data, columnName);
+            AddPredicates(e.FilterPredicates, FilterType.Equals, PredicateType.Or, value);
+        }
+    }
+
+    //If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+    else
+    {
+        //Gets the records from DisplayElements
+        var records = this.sfDataGrid.View.TopLevelGroup.DisplayElements;
+
+        //Get the value for frozen rows count of corresponding column and add it to FilterPredicate collection
+        for (int i = 0; i < this.sfDataGrid.FrozenRowCount; i++)
+        {
+            if (records[i] is RecordEntry)
+            {
+                var value = provider.GetValue((records[i] as RecordEntry).Data, columnName);
+                AddPredicates(e.FilterPredicates, FilterType.Equals, PredicateType.Or, value);
+            }
+        }
+    }
+}
+
+//FilerPredicate  added here
+private void AddPredicates(List<FilterPredicate> FilterPredicates, FilterType FilterType, PredicateType predicateType, object value)
+{
+    FilterPredicates.Add(new FilterPredicate()
+    {
+        FilterValue = value,
+        FilterType = FilterType,
+        FilterBehavior = FilterBehavior.StronglyTyped,
+        IsCaseSensitive = true,
+        PredicateType = predicateType
+    });
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.FilterChanging, AddressOf sfDataGrid_FilterChanging
+
+Private Sub sfDataGrid_FilterChanging(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs)
+	'Check whether the Filtering is applied and the ForzenRowCount is more than zero 
+	'If it is true means ,the default filtering operation will be performed 
+	If e.FilterPredicates Is Nothing OrElse Me.sfDataGrid.FrozenRowCount < 1 Then
+		Return
+	End If
+
+	'Gets proerty access provider for getting forzen rows display value
+	Dim provider = Me.sfDataGrid.View.GetPropertyAccessProvider()
+
+	'Get the colum name for which the filtering is going to be applied
+	Dim columnName = e.Column.MappingName
+
+	'Check whether the Grouping is applied or not .
+	'If Grouping is not applied means ,you can get record directly from View 
+	If Me.sfDataGrid.GroupColumnDescriptions IsNot Nothing AndAlso Me.sfDataGrid.GroupColumnDescriptions.Count < 1 Then
+		'Gets the records from the View
+		Dim records = Me.sfDataGrid.View.Records
+
+		'Add the FrozenRows filter predicate to view 
+		For i As Integer = 0 To Me.sfDataGrid.FrozenRowCount - 1
+			Dim value = provider.GetValue(records(i).Data, columnName)
+			AddPredicates(e.FilterPredicates, FilterType.Equals, PredicateType.Or, value)
+		Next i
+
+	'If Grouping is applied ,need to get the records DisplayElements of TopLevelGroup in view
+	Else
+		'Gets the records from DisplayElements
+		Dim records = Me.sfDataGrid.View.TopLevelGroup.DisplayElements
+
+		'Get the value for frozen rows count of corresponding column and add it to FilterPredicate collection
+		For i As Integer = 0 To Me.sfDataGrid.FrozenRowCount - 1
+			If TypeOf records(i) Is RecordEntry Then
+				Dim value = provider.GetValue((TryCast(records(i), RecordEntry)).Data, columnName)
+				AddPredicates(e.FilterPredicates, FilterType.Equals, PredicateType.Or, value)
+			End If
+		Next i
+	End If
+End Sub
+
+'FilerPredicate  added here
+Private Sub AddPredicates(ByVal FilterPredicates As List(Of FilterPredicate), ByVal FilterType As FilterType, ByVal predicateType As PredicateType, ByVal value As Object)
+	FilterPredicates.Add(New FilterPredicate() With {.FilterValue = value, .FilterType = FilterType, .FilterBehavior = FilterBehavior.StronglyTyped, .IsCaseSensitive = True, .PredicateType = predicateType})
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img23.png)
+
+![](Filtering_images/Filtering_img24.png)
+
+Download sample from below location,
+[Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1392776176)
+
+
 ## Appearance
 
 ### Hiding Sort Options 
