@@ -9,6 +9,9 @@ documentation: ug
 
 # ContextMenuStripEx
 
+>**Important**
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+
 ContextMenuStripEx is a separate control in Essential Tools with advanced features embedded in it. It can be dragged and dropped from the toolbox.
 
 ![](ContextMenuStripEx_images/ContextMenuStripEx_img1.jpeg)
