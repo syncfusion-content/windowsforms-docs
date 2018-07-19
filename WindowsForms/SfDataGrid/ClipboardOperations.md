@@ -381,7 +381,7 @@ Me.sfDataGrid1.ClipboardController.Paste()
 
 ## Customizing Copy Paste Behavior
 
-SfDataGrid process the clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and set it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html)  of SfDataGrid.
+The SfDataGrid performs clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class. The default copy paste behaviors can be customized by overriding `DataGridClipboardController` class and seting it to [ClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClipboardController.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -413,7 +413,7 @@ Me.sfDataGrid.ClipboardController = New CustomClipboardController(Me.sfDataGrid)
 
 ### Paste a Record into Many Rows
 
-By default, one row can be copied and pasted into another row when selection is enabled in SfDataGrid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRow.html) method in the [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
+By default, one row can be copied and pasted into another row when selection is enabled in the SfDataGrid. The following code shows how to copy one row and paste it into all the selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRow.html) method in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -483,7 +483,7 @@ End Class
 
 ### Create New Records while Pasting
 
-By default, while paste the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the [PasteToRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRows.html) method in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
+By default, when pasting the clipboard values to the SfDataGrid, it changes the values of the already existing records. The following code example shows how to add the copied records as new rows to the SfDataGrid by overriding the [PasteToRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRows.html) method in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -552,7 +552,7 @@ End Class
 
 ### Paste the Copied Data by Custom Column Order
 
-By default, SfDataGrid pastes the data only from the first column. The copied data can be pasted anywhere in the SfDataGrid by deriving a new class from [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) and overriding the [PasteToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRow.html) virtual method.
+By default, the SfDataGrid pastes the data only from the first column. The copied data can be pasted anywhere in the SfDataGrid by deriving a new class from [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) and overriding the [PasteToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteToRow.html) virtual method.
 
 {% tabs %}
 {% highlight c# %}
@@ -621,7 +621,7 @@ End Class
 
 ### Paste the copied row in AddNewRow
 
-By default, the copied row cannot be pasted into the AddNewRow. The below code shows how to paste the copied row into the AddNewRow by overriding the [PasteTextToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteTextToRow.html) method in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
+By default, the copied row cannot be pasted in AddNewRow. The following code shows how to paste the copied row in AddNewRow by overriding the [PasteTextToRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController~PasteTextToRow.html) method in [DataGridClipboardController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.DataGridClipboardController.html) class.
 
 {% tabs %}
 {% highlight c# %}
