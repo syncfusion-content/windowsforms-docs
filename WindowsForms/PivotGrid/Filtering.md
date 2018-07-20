@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering | Windows Forms | Syncfusion
+title: Filtering | PivotGrid | Windows Forms | Syncfusion
 description: Filtering support in pivot grid
 platform: windowsforms
 control: Pivot Grid

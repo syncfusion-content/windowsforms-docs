@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell-Selection | Windows Forms | Syncfusion
-description: cell selection
+title: Cell Selection | PivotGrid | Windows Forms | Syncfusion
+description: Cell selection in pivot grid
 platform: windowsforms
 control: PivotGrid
 documentation: ug
@@ -9,126 +9,182 @@ documentation: ug
 
 # Cell Selection
 
-The PivotGrid for Windows Forms supports cell selection where you can select grid value cells similar to Microsoft Excel. On cell selection, an event called PivotGridSelectionChanged will be triggered and the PivotGridSelectionChangedEventArgs will return an IEnumerable collection of column, row and value of the corresponding selected cell.
+The pivot grid supports cell selection where you can select grid value cells similar to Microsoft Excel. Using this support, selected cells can be copied to clipboard or notepad. The custom operations can be performed on cell selection and also any control can be bound to the pivot grid based on its selected cell values.
 
+## Enabling cell selection
 
+The cell selection support can be enabled in the pivot grid by using the property of [AllowSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~AllowSelection.html) property. Also the [AllowSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~AllowSelection.html) property in grid model's options should be set as "Any" to select multiple cells in the pivot grid.
 
-### Use Case Scenarios
+Refer to the below code sample to allow multi cell selection in pivot grid control.
 
-Using the cell selection support, you can select the cells that can be copied to clipboard or notepad. You can perform custom operation on cell selection and also bind any control based on the selected cell values.
-
-
-
-### Adding Cell Selection 
-
-The following code snippets show how to create a PivotGrid and specify cell selection.
-
-{% highlight c# %}
-
-// Instantiating PivotGridControl
-PivotGridControl pivotGridControl1 = new PivotGridControl();
-
-// Adding PivotRows
-pivotGridControl1.PivotRows.Add(new PivotItem { FieldHeader = "Product" });
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Date" });
-
-// Adding PivotColumns
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Country" });
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "State" });
-
-// Adding PivotCalculations
-pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName="Amount" , Format="C"});
-pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
-
-// Enabling cell selection
-this.pivotGridControl1.AllowSelection = false;
-
-{% endhighlight %}
- {% highlight vbnet %}
-
-' Instantiating PivotGridControl
-Dim pivotGridControl1 As PivotGridControl = New PivotGridControl()
-
-' Adding PivotRowspivotGridControl1.PivotRows.Add(New PivotItem With {.FieldHeader = "Product"})
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Date"})
-
-' Adding PivotColumns
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Country"})
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "State"})
-
-' Adding PivotCalculations
-pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName="Amount", .Format="C"})
-pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
-
-' Enabling cell selection
-Me.pivotGridControl1.AllowSelection = False
-
-{% endhighlight %}
-
-![](Cell-Selection_images/Cell-Selection_img1.png)
-
-## Excel 2016 like Selection Frame
-2016 Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeSelectionFrame.html#) and [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeCurrentCell.html#) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html#) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
-
-The `SelectionFrameOption` enumeration has the following types of selection frame options, 
-
- [SelectionFrameOption.Excel2003](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2003 Excel like selection frame for the grid. 
- [SelectionFrameOption.Excel2016](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html#) - It is used the enable the 2016 Excel like selection frame for the grid.
 {% tabs %}
+
 {% highlight c# %}
-//Enable the Excel like selection frame for PivotGridControl
+
+this.pivotGridControl1.TableControl.AllowSelection = true;
+this.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any;
+
+{% endhighlight %}
+
+Me.pivotGridControl1.TableControl.AllowSelection = True
+Me.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Cell-Selection_img1](Cell-Selection_images/Cell-Selection_img1.png)
+
+## Excel like selection frame
+
+Pivot grid provides support for Excel like selection and the Excel like selection frame can be enabled by setting the properties of [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) and [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ExcelLikeCurrentCell.html) to `true`.
+
+{% tabs %}
+
+{% highlight c# %}
+
 this.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
-//Enable the Excel like current cell for PivotGridControl
 this.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = true;
+
 {% endhighlight %}
+
 {% highlight vb %}
-'Enable the Excel like selection frame for PivotGridControl
+
 Me.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = True
-'Enable the Excel like current cell for PivotGridControl
 Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
-{% endhighlight %}
-{% endtabs %}
-![](Cell-Selection_images/PivotGrid_img1.png)
 
-### Setting the 2003 Excel like Selection Frame
-2003 Excel like Selection Frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
+{% endhighlight %}
+
+{% endtabs %}
+
+### Excel 2016 like selection frame
+
+Pivot grid provides support to display the selection frame like Excel 2016 by using the [SelectionFrameOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html) property. By default, the selection frame is set as `Excel2016`.
+
+Refer to the below code sample to set the Excel 2016 like selection frame for selecting cells in the pivot grid.
+
 {% tabs %}
+
 {% highlight c# %}
-//Enable the 2003 Excel like selection frame.
+
+this.pivotGridControl1.TableControl.AllowSelection = true;
+this.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any;
+this.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
+this.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = true;
+this.pivotGridControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2016;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.TableControl.AllowSelection = True
+Me.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any
+Me.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = True
+Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
+Me.pivotGridControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2016
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Cell-Selection_img2](Cell-Selection_images/Cell-Selection_img2.png)
+
+### Excel 2003 like selection frame
+
+Pivot grid provides support to display the selection frame like Excel 2003 by using the [SelectionFrameOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionFrameOption.html) property.
+
+Refer to the below code sample to set the Excel 2003 like selection frame for selecting cells in the pivot grid.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.pivotGridControl1.TableControl.AllowSelection = true;
+this.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any;
+this.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = true;
+this.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = true;
 this.pivotGridControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003;
+
 {% endhighlight %}
+
 {% highlight vb %}
-'Enable the 2003 Excel like selection frame.
+
+Me.pivotGridControl1.TableControl.AllowSelection = True
+Me.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any
+Me.pivotGridControl1.TableModel.Options.ExcelLikeSelectionFrame = True
+Me.pivotGridControl1.TableModel.Options.ExcelLikeCurrentCell = True
 Me.pivotGridControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
-{% endhighlight %}
-{% endtabs %}
-![](Cell-Selection_images/PivotGrid_img2.png)
 
-### Changing the Selection Border Brush
-The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderBrush.html#) property.
-{% tabs %}
-{% highlight c# %}
-//Sets the selection border brush for 2016 Excel-like selection frame.
-this.pivotGridControl1.TableModel.Options.SelectionBorderBrush = new SolidBrush(Color. DarkGreen);
 {% endhighlight %}
+
+{% endtabs %}
+
+![Cell-Selection_img3](Cell-Selection_images/Cell-Selection_img3.png)
+
+## Customizing selection border
+
+The pivot grid control provides support to customize the default appearance of selection border in Excel-2016 like selection frame.
+
+N> The selection border appearance of Excel 2003 like selection frame cannot be modified.
+
+## Changing selection border brush
+
+The selection border brush of Excel 2016 like selection frame can be customized by the [SelectionBorderBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderBrush.html) property.
+
+Refer to the below code sample to change the selection border color.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.pivotGridControl1.TableModel.Options.SelectionBorderBrush = new SolidBrush(Color. DodgerBlue);
+
+{% endhighlight %}
+
 {% highlight vb %}
-'Sets the selection border brush for 2016 Excel-like selection frame.
-Me.pivotGridControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Color. DarkGreen)
-{% endhighlight %}
-{% endtabs %}
-![](Cell-Selection_images/PivotGrid_img3.png)
 
-### Changing the Selection Border Thickness
-The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html#) property.
+Me.pivotGridControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Color. DodgerBlue)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The selection border color of Excel 2003 like selection frame is always black and it cannot be modified.
+
+![Cell-Selection_img4](Cell-Selection_images/Cell-Selection_img4.png)
+
+### Changing selection border thickness
+
+The selection border thickness of Excel 2016 like selection frame can be customized by the [SelectionBorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~SelectionBorderThickness.html) property.
+
 {% tabs %}
+
 {% highlight c# %}
-//Set the selection border thickness for 2016 Excel-like selection frame.
+
 this.pivotGridControl1.TableModel.Options.SelectionBorderThickness = 4;
-{% endhighlight %}
-{% highlight vb %}
-'Set the selection border thickness for 2016 Excel-like selection frame.
-Me.pivotGridControl1.TableModel.Options.SelectionBorderThickness = 4
-{% endhighlight %}
-{% endtabs %}
-![](Cell-Selection_images/PivotGrid_img4.png)
 
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGridControl1.TableModel.Options.SelectionBorderThickness = 4
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Cell-Selection_img5](Cell-Selection_images/Cell-Selection_img5.png)
+
+N> The selection border thickness of Excel 2003 like selection frame is always 2 and it cannot be customized.
+
+## Events
+
+* The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SelectionChanged_EV.html) event occurs when the cells get selected in the pivot grid control. This event receives an argument namely [PivotGridSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridSelectionChangedEventArgs.html), which returns an  IEnumerable collection of selected items. Each selected item contains the information about selected cell like column, row and value details.
+
+* The [SelectionFrameChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanging_EV.html) event occurs while changing the Excel like selection frame.
+
+* The [SelectionFrameChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanged_EV.html) event occurs when the Excel like selection frame gets changed.
+
+A demo sample is available in the following location.
+
+&lt;Installed Drive&gt;\Users\Public\Documents\Syncfusion\Windows\\&lt;Version Number&gt;\PivotGrid.Windows\Samples\Selection\Cell Selection Demo

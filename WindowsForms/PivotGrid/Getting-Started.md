@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Windows Forms | Syncfusion
+title: Getting Started | PivotGrid | Windows Forms | Syncfusion
 description: Getting started
 platform: windowsforms
 control: PivotGrid

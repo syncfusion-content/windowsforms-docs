@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metro-Theme-for-PivotGrid-Control | Windows Forms | Syncfusion
+title: Metro-Theme-for-PivotGrid-Control | PivotGrid | Windows Forms | Syncfusion
 description: metro theme for pivotgrid control
 platform: windowsforms
 control: PivotGrid

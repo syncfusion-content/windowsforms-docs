@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting | Windows Forms | Syncfusion
+title: Sorting | PivotGrid | Windows Forms | Syncfusion
 description: Sorting support in pivot grid
 platform: windowsforms
 control: Pivot Grid

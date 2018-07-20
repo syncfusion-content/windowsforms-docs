@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing Values | Windows Forms | Syncfusion
+title: Editing Values | PivotGrid | Windows Forms | Syncfusion
 description: Editing cell values in pivot grid
 platform: windowsforms
 control: Pivot Grid

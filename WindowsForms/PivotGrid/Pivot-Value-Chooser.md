@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot-Value-Chooser | Windows Forms | Syncfusion
+title: Pivot-Value-Chooser | PivotGrid | Windows Forms | Syncfusion
 description: pivot value chooser
 platform: windowsforms
 control: PivotGrid

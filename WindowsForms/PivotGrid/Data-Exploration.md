@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Exploration | Windows Forms | Syncfusion
+title: Data Exploration | PivotGrid | Windows Forms | Syncfusion
 description: Data exploration
 platform: windowsforms
 control: Pivot Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping bar | Windows Forms | Syncfusion
+title: Grouping bar | PivotGrid | Windows Forms | Syncfusion
 description: Grouping bar support
 platform: windowsforms
 control: Pivot Grid

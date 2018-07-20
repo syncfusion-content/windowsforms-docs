@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Calculations | Windows Forms | Syncfusion
+title: Pivot Calculations | PivotGrid | Windows Forms | Syncfusion
 description: Pivot calculations
 platform: windowsforms
 control: Pivot Grid

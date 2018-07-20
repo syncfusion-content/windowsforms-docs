@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Rows | Windows Forms | Syncfusion
+title: Pivot Rows | PivotGrid | Windows Forms | Syncfusion
 description: Pivot rows
 platform: windowsforms
 control: PivotGrid

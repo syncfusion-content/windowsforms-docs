@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding | Windows Forms | Syncfusion
+title: Data Binding | PivotGrid | Windows Forms | Syncfusion
 description: Data binding
 platform: windowsforms
 control: PivotGrid

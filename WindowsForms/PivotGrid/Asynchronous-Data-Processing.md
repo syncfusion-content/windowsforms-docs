@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asynchronous Data Processing | Windows Forms | Syncfusion
+title: Asynchronous Data Processing | PivotGrid | Windows Forms | Syncfusion
 description: Asynchronous data processing
 platform: windows forms
 control: Pivot Grid

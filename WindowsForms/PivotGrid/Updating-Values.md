@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updating Values | Windows Forms | Syncfusion
+title: Updating Values | PivotGrid | Windows Forms | Syncfusion
 description: Updating cell values in pivot grid
 platform: windowsforms
 control: Pivot Grid

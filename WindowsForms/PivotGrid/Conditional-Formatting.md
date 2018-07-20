@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional-Formatting | Windows Forms | Syncfusion
+title: Conditional-Formatting | PivotGrid | Windows Forms | Syncfusion
 description: Conditional formatting in pivot grid
 platform: windowsforms
 control: Pivot Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview | PivotGrid | Windows Forms | Syncfusion
 description: Overview
 platform: windowsforms
 control: PivotGrid

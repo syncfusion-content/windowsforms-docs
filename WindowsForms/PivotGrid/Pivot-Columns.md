@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Columns | Windows Forms | Syncfusion
+title: Pivot Columns | PivotGrid | Windows Forms | Syncfusion
 description: Pivot columns
 platform: windowsforms
 control: PivotGrid
