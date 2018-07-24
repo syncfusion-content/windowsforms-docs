@@ -60,13 +60,13 @@ The row header area holds the pivot row items of pivot grid control and it is ac
 
 ## Interactive features
 
-Using the gouping bar, the following operations can be performed dynamically in the pivot grid control.
+Using the grouping bar, the following operations can be performed dynamically in the pivot grid control.
 
 ### Filtering values
 
 The grouping bar provides support to display only a subset of data that meets specific criteria and to hide the data that you don’t want to get displayed in the pivot grid with the help of filtering option.
 
-The items present in the header areas except the data header area are supported with the run time filtering option. While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opended by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
+The items present in the header areas except the data header area are supported with the run time filtering option. While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opened by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
 
 ![Grouping-bar_img2](Grouping-Bar_images/Grouping-bar_img2.png)
 

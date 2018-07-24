@@ -33,7 +33,7 @@ Me.pivotGridControl1.EnableUpdating = True
 
 {% endtabs %}
 
-### Throttling update speeed
+### Throttling update speed
 
 While updating the pivot grid control, users can throttle the updating speed by using the [ThrottleUpdateRate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotUpdatingManager~ThrottleUpdateRate.html) property of [update manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~UpdateManager.html). For example, if the throttle update rate is specified as zero milliseconds, then it indicates to refresh the UI without any delay. Throttling the refresh rate can minimize the CPU usage. The update rate values of 300 to 500 milliseconds may give lower CPU usage.
 

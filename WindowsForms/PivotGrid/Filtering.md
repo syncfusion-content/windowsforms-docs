@@ -17,12 +17,12 @@ In the pivot grid control, the filtering operation can be performed by any of th
 
 The [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class is used to encapsulate the information required to define a filter and it contains the following properties.
 
-* **Expression** - Specifies the well-forsmed logical expression that defines the filter.
+* **Expression** - Specifies the well-formed logical expression that defines the filter.
 * **Name** - Specifies the name of the filter expression.
 * **DimensionName** - Specifies the dimension name for filter expression.
 * **DimensionHeader** - Specifies the dimension header for filter expression.
 * **Format** - Specifies the format of filter expression.
-* **Evaluator** - Evaluates the specfied value.
+* **Evaluator** - Evaluates the specified value.
 
 ### Defining filter expressions
 
@@ -66,6 +66,6 @@ pivotGridControl1.Filters.Add(filterExpression1)
 
 The filtering operation can also be performed by using the built-in popup integrated with the filter, row and column header areas of [grouping bar](grouping-bar.md).
 
-While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opended by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
+While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opened by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
 
 ![Filtering_img2](Filtering_images/Filtering_img2.png)

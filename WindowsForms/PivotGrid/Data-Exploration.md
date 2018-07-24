@@ -13,7 +13,7 @@ Pivot grid provides support for drill down and drill up to visualize the pivot i
 
 ## Collapsing headers
 
-By default, the pivot grid control loads the data by expanding all the row headers and column headers. To collapse either all the headers or specific headers, built-in methods are availabe in pivot grid.
+By default, the pivot grid control loads the data by expanding all the row headers and column headers. To collapse either all the headers or specific headers, built-in methods are available in pivot grid.
 
 ### Collapsing all headers
 
@@ -187,7 +187,7 @@ Me.pivotGridControl1.TableControl.CollapseColumn(pivotColumns)
 
 ## Expanding headers
 
-Pivot grid supports to drill down the pivot item with the help of row headers and column headers. To expand either all the headers or specific headers, built-in methoods are available in pivot grid.
+Pivot grid supports to drill down the pivot item with the help of row headers and column headers. To expand either all the headers or specific headers, built-in methods are available in pivot grid.
 
 ### Expanding all headers
 

@@ -18,7 +18,7 @@ Pivot grid allows hyperlinking of cells to retrieve a detailed information about
 
 # Adding hyperlink to cells
 
-To enable the hyperlink in pivot grid cells, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property of required cells should be set as `HyperlinkCell`. If you want to diable the hyperlink, then the cell type should be set as `TextBox`.
+To enable the hyperlink in pivot grid cells, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property of required cells should be set as `HyperlinkCell`. If you want to disable the hyperlink, then the cell type should be set as `TextBox`.
 
 Please refer to the below code sample to enable hyperlink for value cells and summary cells.
 

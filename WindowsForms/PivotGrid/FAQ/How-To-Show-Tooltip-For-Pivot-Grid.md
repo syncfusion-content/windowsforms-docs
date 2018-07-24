@@ -27,8 +27,8 @@ public Form1()
 
 void TableModel_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    PivotCellInfo cellinfo = pivotGridControl1.PivotEngine[e.RowIndex - 1, e.ColIndex - 1];
-    if (cellinfo.CellType == PivotCellType.ValueCell)
+    PivotCellInfo info = pivotGridControl1.PivotEngine[e.RowIndex - 1, e.ColIndex - 1];
+    if (info.CellType == PivotCellType.ValueCell)
         e.Style.CellTipText = e.Style.Text;
 }
 
@@ -41,8 +41,8 @@ Public Sub New()
 End Sub
 
 Private Sub TableModel_QueryCellInfo(ByVal sender As Object, ByVal e As GridQueryCellInfoEventArgs)
-    Dim cellinfo As PivotCellInfo = pivotGridControl1.PivotEngine(e.RowIndex - 1, e.ColIndex - 1)
-    If cellinfo.CellType Is PivotCellType.ValueCell Then
+    Dim info As PivotCellInfo = pivotGridControl1.PivotEngine(e.RowIndex - 1, e.ColIndex - 1)
+    If info.CellType Is PivotCellType.ValueCell Then
         e.Style.CellTipText = e.Style.Text
     End If
 End Sub

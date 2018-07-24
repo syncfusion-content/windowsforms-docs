@@ -11,7 +11,7 @@ documentation: ug
 
 The [Pivot schema designer](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotSchemaDesigner.html) also known as pivot table field list allows to add, rearrange, filter and remove the pivot fields to show the data in pivot grid exactly the way as you desired.
 
-Based on the data source bound to the pivot grid control, the pivot table field list will be automatically populated with the field names. The pivot table field list provides an Excel like appearance and behaviour.
+Based on the data source bound to the pivot grid control, the pivot table field list will be automatically populated with the field names. The pivot table field list provides an Excel like appearance and behavior.
 
 Pivot schema designer consists of two sections such as follows:
 

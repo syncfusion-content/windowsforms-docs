@@ -11,7 +11,7 @@ documentation: ug
 
 Pivot grid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning data sources through [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) property.
 
-## Binding data from IEnumberable list
+## Binding data from IEnumerable list
 
 Pivot grid allows to bind a list based collection as its data source. Refer to the below code sample to bind the list collection to the pivot grid control.
 

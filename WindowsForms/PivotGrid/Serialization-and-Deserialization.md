@@ -93,7 +93,7 @@ Me.pivotGridControl1.Serialize("D:\PivotGrid.xml")
 
 Pivot grid control allows to save its settings into a XML string using the [SerializeToXml()](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~SerializeToXml.html) method.
 
-Refer to the below code sample ot serialize the pivot grid control as xml string.
+Refer to the below code sample to serialize the pivot grid control as xml string.
 
 {% tabs %}
 

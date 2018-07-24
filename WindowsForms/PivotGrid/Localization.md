@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, "en-US" is the culture for english language spoken in United States; en-GB is the culture for english language spoken in Great Britain.
+Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, "en-US" is the culture for English language spoken in United States; en-GB is the culture for English language spoken in Great Britain.
 
 Syncfusion components have their own neutral resources and these resources can be localized as per the customer requirement. Pivot grid control can be localized in any of the following ways.
 
@@ -372,7 +372,7 @@ Rather than using hard coding strings in main application, it is easier to desig
 
 A resource file is required to create a satellite assembly. It can be created by using the tool provided by Microsoft Visual Studio.NET namely [resource editor](https://msdn.microsoft.com/en-us/library/feh4ww6k.aspx), which provides a graphic interface to construct resource files containing bitmaps, icons, and strings.
 
-The resource file can also be created by using an empty text file (SR.txt). Then, enter the following command in the visual studio command prompt for creating resource file from the text file.
+The resource file can also be created by using an empty text file (SR.txt). Then, enter the following command in the Visual Studio command prompt for creating resource file from the text file.
 
 {% highlight text %}
 
@@ -390,7 +390,7 @@ Refer to the following steps to create a satellite assembly.
 
 2.Select File > Save As to save the edited resource file as **Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE** in the desired location.
 
-3.Open the visual studio command prompt and enter the following command. Make sure to keep the sf.publicsnk file in the same location containing the "Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE.resources" file
+3.Open the Visual Studio command prompt and enter the following command. Make sure to keep the sf.publicsnk file in the same location containing the "Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE.resources" file
 
 {% highlight text %}
 
@@ -402,7 +402,7 @@ al /t:lib /culture:de-DE /out:Syncfusion.PivotAnalysis.Windows.resources.dll /v:
 
 7.On successful execution, an assembly file named **Syncfusion.PivotAnalysis.Windows.resources.dll** is generated in the same location.
 
-8.Finally, mark this satellite assembly for verification skipping (since it is not signed with the same strong-name as the product assembly). To do this, enter the following code in the visual studio command prompt
+8.Finally, mark this satellite assembly for verification skipping (since it is not signed with the same strong-name as the product assembly). To do this, enter the following code in the Visual Studio command prompt
 
 {% highlight text %}
 
