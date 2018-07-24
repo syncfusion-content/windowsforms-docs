@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How To Show Calculations As Columns | PivotGrid | Windows Forms | Syncfusion
+title: How to Show Calculations as Columns | PivotGrid | Windows Forms | Syncfusion
 description: How to show calculations as columns in pivot grid
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# How To Show Show Calculations As Columns
+# How to Show Calculations as Columns
 
 The pivot grid control provides support to support to show the calculation values by checking the check box "[Show Calculations as Columns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~ShowCalculationsAsColumnCheckBox.html)" available at the bottom left corner of the pivot schema designer.
 
