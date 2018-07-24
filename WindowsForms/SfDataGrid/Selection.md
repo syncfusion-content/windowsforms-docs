@@ -287,7 +287,7 @@ MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & "
 
 ### Getting the cell value by using cell click event
 
-The cell value can be retrieved by using [SfDataGrid.CellClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellClick_EV.html) event. This event raise when the mouse is click on the cell. 
+The cell value can also be retrieved by using the [SfDataGrid.CellClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellClick_EV.html) event when clicking the cell.
 
 {% tabs %}
 {% highlight c# %}
