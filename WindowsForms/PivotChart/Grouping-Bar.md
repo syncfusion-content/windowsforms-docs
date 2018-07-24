@@ -86,7 +86,7 @@ Sets the foreground color for the grouping bar section button.</td></tr>
 </th>
 </table>
 
-Refer to the folowing code snippet to customize the appearance of axis field section by using the above properties.
+Refer to the following code snippet to customize the appearance of axis field section by using the above properties.
 
 {% tabs %}
 
