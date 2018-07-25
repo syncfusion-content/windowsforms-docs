@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-PivotChart control enables you to retrieve multidimensional data either from IEnumerable list or from any Data table and to present the Pivot information in a meaningful way. For example, IEnumerable data population used in PivotChart. The ItemSource of PivotChart is passed with the IEnumerable list.
+The pivot chart control allows you to retrieve multidimensional data from either IEnumerable list or any data table to present the pivot information in an appropriate way. For example, IEnumerable data population is used in the pivot chart. The ItemSource of pivot chart is passed with the IEnumerable list.
 
 
 {% highlight c# %}
