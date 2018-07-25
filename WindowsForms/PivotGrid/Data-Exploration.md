@@ -181,9 +181,9 @@ Me.pivotGridControl1.TableControl.CollapseColumn(pivotColumns)
 
 ### Events
 
-* [Collapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsing_EV.html) event occurs while collapsing the pivot item header. This event receives an argument namely [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html), which contains the information about the collapsing pivot item.
+* The **[Collapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsing_EV.html)** event occurs while collapsing the pivot item header. This event receives an argument namely [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html), which contains the information about the collapsing pivot item.
 
-* [Collapsed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsed_EV.html) event occurs when the pivot item header is collapsed. This event receives an argument namely [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html), which contains the information about the expanded pivot item.
+* The **[Collapsed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsed_EV.html)** event occurs when the pivot item header is collapsed. This event receives an argument namely [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html), which contains the information about the expanded pivot item.
 
 ## Expanding headers
 
@@ -355,9 +355,9 @@ Me.pivotGridControl1.TableControl.ExpandRow(pivotColumnItems)
 
 ### Events
 
-* [Expanding](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanding_EV.html) event occurs while expanding the pivot item header. This event receives an argument namely [ExpandingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandingEventArgs.html), which contains the information about the expanding pivot item.
+* The **[Expanding](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanding_EV.html)** event occurs while expanding the pivot item header. This event receives an argument namely [ExpandingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandingEventArgs.html), which contains the information about the expanding pivot item.
 
-* [Expanded](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanded_EV.html) event occurs when the pivot item header is expanded. This event receives an argument namely [ExpandedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandedEventArgs.html), which contains the information about the expanded pivot item.
+* The **[Expanded](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanded_EV.html)** event occurs when the pivot item header is expanded. This event receives an argument namely [ExpandedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandedEventArgs.html), which contains the information about the expanded pivot item.
 
 A demo sample is available in the following location.
 

@@ -50,12 +50,12 @@ namespace PivotGridDemo
         {
             // Geography
             string[] countries = { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" };
-            string[] ausStates = { "New South Wales", "Queensland", "South Australia" };
-            string[] canadaStates = { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
-            string[] franceStates = { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers" };
-            string[] germanyStates = { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
-            string[] ukStates = { "England" };
-            string[] ussStates = { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+            string[] state1 = { "New South Wales", "Queensland", "South Australia" };
+            string[] state2 = { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" };
+            string[] state3 = { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers" };
+            string[] state4 = { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" };
+            string[] state5 = { "England" };
+            string[] state6 = { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
 
             // Time
             string[] dates = { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
@@ -80,35 +80,35 @@ namespace PivotGridDemo
                 switch (sales.Country)
                 {
                     case "Australia":
-                    {
-                        sales.State = ausStates[r.Next(ausStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state1[r.Next(state1.GetLength(0))];
+                            break;
+                        }
                     case "Canada":
-                    {
-                        sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state2[r.Next(state2.GetLength(0))];
+                            break;
+                        }
                     case "France":
-                    {
-                        sales.State = franceStates[r.Next(franceStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state3[r.Next(state3.GetLength(0))];
+                            break;
+                        }
                     case "Germany":
-                    {
-                        sales.State = germanyStates[r.Next(germanyStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state4[r.Next(state4.GetLength(0))];
+                            break;
+                        }
                     case "United Kingdom":
-                    {
-                        sales.State = ukStates[r.Next(ukStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state5[r.Next(state5.GetLength(0))];
+                            break;
+                        }
                     case "United States":
-                    {
-                        sales.State = ussStates[r.Next(ussStates.GetLength(0))];
-                        break;
-                    }
+                        {
+                            sales.State = state6[r.Next(state6.GetLength(0))];
+                            break;
+                        }
                 }
                 listOfProductSales.Add(sales);
             }
@@ -165,12 +165,12 @@ Namespace PivotGridDemo
         Public Shared Function GetSalesData() As ProductSalesCollection
             ' Geography
             Dim countries() As String = { "Australia", "Canada", "France", "Germany", "United Kingdom", "United States" }
-            Dim ausStates() As String = { "New South Wales", "Queensland", "South Australia" }
-            Dim canadaStates() As String = { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" }
-            Dim franceStates() As String = { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers" }
-            Dim germanyStates() As String = { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" }
-            Dim ukStates() As String = { "England" }
-            Dim ussStates() As String = { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" }
+            Dim state1() As String = { "New South Wales", "Queensland", "South Australia" }
+            Dim state2() As String = { "Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec" }
+            Dim state3() As String = { "Charente Maritime", "Essonne", "Garonne (Haute)", "Gers" }
+            Dim state4() As String = { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein Westfalen", "Saarland" }
+            Dim state5() As String = { "England" }
+            Dim state6() As String = { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" }
 
             ' Time
             Dim dates() As String = { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" }
@@ -193,23 +193,23 @@ Namespace PivotGridDemo
                 sales.Product = products(r.Next(r.Next(products.GetLength(0) + 1)))
                 Select Case sales.Country
                     Case "Australia"
-                        sales.State = ausStates(r.Next(ausStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state1(r.Next(state1.GetLength(0)))
+                            Exit Select
                     Case "Canada"
-                        sales.State = canadaStates(r.Next(canadaStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state2(r.Next(state2.GetLength(0)))
+                            Exit Select
                     Case "France"
-                        sales.State = franceStates(r.Next(franceStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state3(r.Next(state3.GetLength(0)))
+                            Exit Select
                     Case "Germany"
-                        sales.State = germanyStates(r.Next(germanyStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state4(r.Next(state4.GetLength(0)))
+                            Exit Select
                     Case "United Kingdom"
-                        sales.State = ukStates(r.Next(ukStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state5(r.Next(state5.GetLength(0)))
+                            Exit Select
                     Case "United States"
-                        sales.State = ussStates(r.Next(ussStates.GetLength(0)))
-                        Exit Select
+                            sales.State = state6(r.Next(state6.GetLength(0)))
+                            Exit Select
                 End Select
                 listOfProductSales.Add(sales)
             Next i
@@ -312,14 +312,14 @@ namespace PivotGridDemo
             Random r = new Random(123345345);
             for (int i = 0; i < count; ++i)
             {
-                BusinessObject bo = new BusinessObject()
+                BusinessObject businessObject = new BusinessObject()
                 {
                     Fruit = Fruits[r.Next(Fruits.Count)],
                     Color = Colors[r.Next(Colors.Count)],
                     Weight = (int)(r.NextDouble() * 1000) / 10d,
                     Count = r.Next(4) + 1,
                 };
-                list.Add(bo);
+                list.Add(businessObject);
             }
             return list;
         }
@@ -395,8 +395,8 @@ Namespace PivotGridDemo
 
             Dim r As New Random(123345345)
             For i As Integer = 0 To count - 1
-                Dim bo As New BusinessObject() With {.Fruit = Fruits(r.Next(Fruits.Count)), .Color = Colors(r.Next(Colors.Count)), .Weight = CInt(Fix(r.NextDouble() * 1000)) / 10R, .Count = r.Next(4) + 1}
-                list.Add(bo)
+                Dim businessObject As New BusinessObject() With {.Fruit = Fruits(r.Next(Fruits.Count)), .Color = Colors(r.Next(Colors.Count)), .Weight = CInt(Fix(r.NextDouble() * 1000)) / 10R, .Count = r.Next(4) + 1}
+                list.Add(businessObject)
             Next i
             Return list
         End Function
@@ -418,7 +418,7 @@ End Namespace
 
 ## Refreshing pivot grid
 
-Using the [Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Refresh(Boolean).html) method of [TableControl]() property in pivot grid, the pivot grid control can be refreshed with or without repopulating the pivot engine.
+Using the [Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Refresh(Boolean).html) method of [TableControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~TableControl.html) property in pivot grid, the pivot grid control can be refreshed with or without repopulating the pivot engine.
 
 Refer to the below code sample for refreshing the pivot grid without repopulating the pivot engine.
 
@@ -440,11 +440,11 @@ Me.pivotGridControl1.TableControl.Refresh(False)
 
 ## Events
 
-* **ItemSourceChanged** event occurs when the data source is changed by using the **ItemSource** property of pivot grid. This event receives two arguments namely sender, that handles the pivot grid and [ItemSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html), that contains the event arguments. The ItemSourceChangedEventArgs object contains the following properties:
+* The **[ItemSourceChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ItemSourceChanged_EV.html)** event occurs when the data source is changed by using the **ItemSource** property of pivot grid. This event receives two arguments namely sender, that handles the pivot grid and [ItemSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html), that contains the event arguments. The ItemSourceChangedEventArgs object contains the following properties:
 
-    - [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~OldValue.html) - gets the value of old data source.
-    - [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~NewValue.html) - gets the value of new data source.
+    * [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~OldValue.html) - gets the value of old data source.
+    * [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~NewValue.html) - gets the value of new data source.
 
-* **DataRefreshing** event occurs while starting to refresh the values of pivot grid control. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshingEventArgs.html), that contains the event arguments.
+* The **[DataRefreshing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~DataRefreshing_EV.html)** event occurs while starting to refresh the values of pivot grid control. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshingEventArgs.html), that contains the event arguments.
 
-* **DataRefreshed** event occurs when the refreshing gets completed by populating its values. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshedEventArgs.html), that contains the event arguments.
+* The **[DataRefreshed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~DataRefreshed_EV.html)** event occurs when the refreshing gets completed by populating its values. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshedEventArgs.html), that contains the event arguments.

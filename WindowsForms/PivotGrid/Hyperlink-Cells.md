@@ -20,7 +20,7 @@ Pivot grid allows hyperlinking of cells to retrieve a detailed information about
 
 To enable the hyperlink in pivot grid cells, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property of required cells should be set as `HyperlinkCell`. If you want to disable the hyperlink, then the cell type should be set as `TextBox`.
 
-Please refer to the below code sample to enable hyperlink for value cells and summary cells.
+Refer to the below code sample to enable hyperlink for value cells and summary cells.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ private void TableModel_QueryCellInfo(object sender, Syncfusion.Windows.Forms.Gr
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub New()
     .....
@@ -93,7 +93,7 @@ private void TableModel_QueryCellInfo(object sender, Syncfusion.Windows.Forms.Gr
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
 Public Sub New()
     .....
@@ -111,40 +111,13 @@ Private Sub TableModel_QueryCellInfo(ByVal sender As Object, ByVal e As Syncfusi
     End If
 End Sub
 
-## Events
-
-The hyperlink cells that are clicked can be obtained by subscribing to the event [HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~HyperlinkCellClick_EV.html) event and the specific cell is returned via an instance of [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html). The below code snippet could be used to set the basic information
-
-{% tabs %}
-
-{% highlight c# %}
-
-// Subscribed in the Form()
-this.pivotGridControl1.TableControl.HyperlinkCellClick += TableControl_HyperlinkCellClick;
-
-private void TableControl_HyperlinkCellClick(object sender, Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs e)
-{
-    System.Console.WriteLine("The cell {0},{1} is clicked", e.PivotCellInfo.RowIndex, e.PivotCellInfo.ColIndex);
-}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-' Subscribed in the Form()
-Me.pivotGridControl1.TableControl.HyperlinkCellClick += TableControl_HyperlinkCellClick
-
-Private Sub TableControl_CellClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs)
-    System.Console.WriteLine("The cell {0},{1} is clicked", e.PivotCellInfo.RowIndex, e.PivotCellInfo.ColIndex)
-End Sub
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Events
 
-The [HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~HyperlinkCellClick_EV.html) event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
+The **[HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~HyperlinkCellClick_EV.html)** event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
 
 A demo sample is available in the following location.
 

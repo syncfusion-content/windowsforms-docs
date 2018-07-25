@@ -85,8 +85,8 @@ printPreviewDialog.ShowDialog()
 
 ## Events
 
-* The [DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintHeader_EV.html) event occurs while previewing the pivot grid control. This event helps to customize the default appearance of header added in the printed document.
-* The [DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintFooter_EV.html) event occurs while previewing the pivot grid control. This event helps to customize the default appearance of footer added in the printed document.
+* The **[DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintHeader_EV.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of header added in the printed document.
+* The **[DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintFooter_EV.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of footer added in the printed document.
 
 A demo sample is available in the following location.
 

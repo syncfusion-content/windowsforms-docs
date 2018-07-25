@@ -26,7 +26,7 @@ public partial class Form1 : Form
     public Form1()
     {
         ......
-        this.pivotGridControl1.PivotRows.Add(new PivotItem 
+        this.pivotGridControl1.PivotRows.Add(new PivotItem
         {
             FieldMappingName = "Product",
             TotalHeader = "Total",
@@ -59,7 +59,7 @@ Partial Public Class Form1
     Inherits Form
     Public Sub New()
         ......
-        Me.pivotGridControl1.PivotRows.Add(New PivotItem With 
+        Me.pivotGridControl1.PivotRows.Add(New PivotItem With
         {
             .FieldMappingName = "Product",
             .TotalHeader = "Total",

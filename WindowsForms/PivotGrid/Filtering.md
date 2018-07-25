@@ -28,7 +28,7 @@ The [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Sy
 
 To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Filters.html) collection of pivot grid control.
 
-Please refer the code sample below.
+Refer to the code sample to define filter expressions in the pivot grid control.
 
 {% tabs %}
 
@@ -47,10 +47,10 @@ this.pivotGridControl1.Filters.Add(filterExpression1);
 
 {% highlight vb %}
 
-Dim m_FilterExpression As filterExpression1 = New FilterExpression() With 
+Dim m_FilterExpression As filterExpression1 = New FilterExpression() With
 {
     .DimensionHeader = "Product",
-    .Name = "Product", 
+    .Name = "Product",
     .DimensionName = "Product",
     .Expression = "Product = Bike"
 }

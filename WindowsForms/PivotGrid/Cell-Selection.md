@@ -179,11 +179,11 @@ N> The selection border thickness of Excel 2003 like selection frame is always 2
 
 ## Events
 
-* The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SelectionChanged_EV.html) event occurs when the cells get selected in the pivot grid control. This event receives an argument namely [PivotGridSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridSelectionChangedEventArgs.html), which returns an  IEnumerable collection of selected items. Each selected item contains the information about selected cell like column, row and value details.
+* The **[SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SelectionChanged_EV.html)** event occurs when the cells get selected in the pivot grid control. This event receives an argument namely [PivotGridSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridSelectionChangedEventArgs.html), which returns an  IEnumerable collection of selected items. Each selected item contains the information about selected cell like column, row and value details.
 
-* The [SelectionFrameChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanging_EV.html) event occurs while changing the Excel like selection frame.
+* The **[SelectionFrameChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanging_EV.html)** event occurs while changing the Excel like selection frame.
 
-* The [SelectionFrameChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanged_EV.html) event occurs when the Excel like selection frame gets changed.
+* The **[SelectionFrameChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~SelectionFrameChanged_EV.html)** event occurs when the Excel like selection frame gets changed.
 
 A demo sample is available in the following location.
 
