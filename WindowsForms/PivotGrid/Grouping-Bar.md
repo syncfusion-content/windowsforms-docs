@@ -1,150 +1,148 @@
 ---
 layout: post
-title: Grouping-Bar | Windows Forms | Syncfusion
-description: grouping bar
+title: Grouping bar | PivotGrid | Windows Forms | Syncfusion
+description: Grouping bar support
 platform: windowsforms
-control: PivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
 # Grouping Bar
 
-The PivotGrid Grouping Bar enables the drag and drop feature of fields between different areas such as column, row, value and filter. By using the Grouping Bar, you can add, rearrange, or remove fields to show data in the PivotGrid exactly the way you want.
+The grouping bar allows users to slice and dice the pivot fields between column, row, value and filter header areas. It also allows to add, rearrange or remove the fields to show the data in the pivot grid exactly the way you want.
 
-The Grouping Bar has field headers that identify fields in the pivot grid. One field header contains:
+## Enabling grouping bar
 
-* Caption string - identifies the field's content
-* Sort indicator -  identifies the sort order applied to the field's values 
-* Filter button - end-users can use it to filter field values
+By default, the grouping bar is disabled in the pivot grid control. The [ShowGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html) property of pivot grid should be set as true to enable the grouping bar in the pivot grid control.
 
+Refer to the below code sample to enable the grouping bar in pivot grid.
 
-
-The headers of all visible fields are contained within header areas. The headers of row and column fields are displayed within the row header and column header areas, respectively. The headers of data fields are displayed within the data header area.
-
-
-
-### Use Case Scenarios
-
-At times, you may expect the Grid to perform sorting and filtering at run-time.
-
-
-
-### Adding Grouping Bar 
-
-By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupBar property of PivotGrid to False.
-
-
+{% tabs %}
 
 {% highlight c# %}
 
-// Instantiating PivotGridControl
-
-PivotGridControl pivotGridControl1 = new PivotGridControl();
-
-// Adding PivotRows
-
-pivotGridControl1.PivotRows.Add(new PivotItem { FieldHeader = "Product" });
-
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Date" });
-
-// Adding PivotColumns
-
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "Country" });
-
-pivotGridControl1.PivotColumns.Add(new PivotItem { FieldHeader = "State" });
-
-// Adding PivotCalculations
-
-pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName="Amount" , Format="C"});
-
-pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format = "#,##0" });
+this.pivotGridControl1.ShowGroupBar = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-' Instantiating PivotGridControl
-
-Dim pivotGridControl1 As PivotGridControl = New PivotGridControl()
-
-' Adding PivotRows
-
-pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldHeader = "Product"})
-
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Date"})
-
-' Adding PivotColumns
-
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "Country"})
-
-pivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldHeader = "State"})
-
-' Adding PivotCalculations
-
-pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName="Amount", .Format="C"})
-
-pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##0"})
-
+Me.pivotGridControl1.ShowGroupBar = True
 
 {% endhighlight %}
 
+{% endtabs %}
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Grouping-Bar_images/Grouping-Bar_img1.png)
+N>
+If [row pivots only mode](layouts.md#enabling-flat-layout) is enabled in the pivot grid control, then the grouping bar will be disabled automatically.
 
+![Grouping-bar_img1](Grouping-Bar_images/Grouping-bar_img1.png)
 
+## Grouping bar areas
 
-## Filtering in Grouping Bar
+The grouping bar consists of four header areas. The headers of all visible pivot fields are placed within their corresponding header areas.
 
-Data filtering displays only a subset of data that meets criteria specified by you and hides data that you don’t want to be displayed. The items present in the filter header area, column header area and row header area, provide the option of run-time filtering which is represented as a funnel symbol on it. On clicking the symbol, it opens a filter popup which displays a list of elements through which filtering can be applied. 
+### Filter header area
 
+The filter header area holds the filter items of pivot grid control and it can be accessed by using the property of [FilterArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~FilterArea.html). The headers of pivot filter fields are displayed within the filter header area.
 
+### Data header area
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Grouping-Bar_images/Grouping-Bar_img2.png)
+The data header area holds the calculation items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GroupDropArea.html). The headers of pivot calculation fields are displayed within the data header area.
 
+### Column header area
 
+The column header area holds the pivot column items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GroupDropArea.html). The headers of pivot column fields are displayed within the column header area.
 
+### Row header area
 
+The row header area holds the pivot row items of pivot grid control and it is accessed by using the property of [RowGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControllBase~RowGroupDropArea.html). The headers of pivot row fields are displayed within the row header area.
 
-The following code example illustrates how to disable the filtering in the Grouping Bar.
+## Interactive features
 
+Using the grouping bar, the following operations can be performed dynamically in the pivot grid control.
+
+### Filtering values
+
+The grouping bar provides support to display only a subset of data that meets specific criteria and to hide the data that you don’t want to get displayed in the pivot grid with the help of filtering option.
+
+The items present in the header areas except the data header area are supported with the run time filtering option. While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opened by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
+
+![Grouping-bar_img2](Grouping-Bar_images/Grouping-bar_img2.png)
+
+By default, the filtering option is enabled in the grouping bar. In order to disable the filtering option available in the grouping bar, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property of pivot grid is used.
+
+Refer to the below code sample to disable the filtering option in grouping bar.
+
+{% tabs %}
 
 {% highlight c# %}
 
-// Disabling FilteringpivotGridControl1.AllowFiltering = false;
+this.pivotGridControl1.AllowFiltering = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-// Disabling FilteringpivotGridControl1.AllowFiltering = False
+Me.pivotGridControl1.AllowFiltering = False
 
-{% endhighlight %} 
+{% endhighlight %}
 
-## Sorting Indicator
+{% endtabs %}
 
-The sort indicator in the item represents the sort type such as ascending order or descending order. By default, the PivotGrid will populate the data in ascending order. The sorting order can be changed by clicking on the item present in the row header area and column header area.
+N>
+Filter option is not available for header items present in the data header area of the grouping bar.
 
-The following image illustrates the sort indicator with sort types.
+### Sorting values
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Grouping-Bar_images/Grouping-Bar_img3.png)
+The grouping bar provides support to sort the pivot field values by clicking on the header items present in row header area and column header area.
 
+By default, the pivot field values are sorted in the ascending order. On clicking the same header item once again will reverse the sorting direction. The sort indicator present at the right corner of the header item denotes the type of sorting applied to the pivot field such as ascending order or descending order.
 
+The following screenshot illustrates the "Country" field header which is sorted in descending order.
 
+![Grouping-Bar_img3](Grouping-Bar_images/Grouping-Bar_img3.png)
 
+The following screenshot illustrates the "Country" field header which is sorted in ascending order.
 
-The following code example illustrates how to disable sorting in the Grouping Bar.
+![Grouping-Bar_img4](Grouping-Bar_images/Grouping-Bar_img4.png)
 
+By default, the sorting option is enabled in the grouping bar. In order to disable the sorting option available in the grouping bar, [AllowSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property of pivot grid is used.
+
+{% tabs %}
 
 {% highlight c# %}
 
-// Disabling Sorting
-pivotGridControl1.AllowSorting = false;
+this.pivotGridControl1.AllowSorting = false;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vb %}
 
-' Disabling Sorting
-pivotGridControl1.AllowSorting = False 
+Me.pivotGridControl1.AllowSorting = False
 
 {% endhighlight %}
+
+{% endtabs %}
+
+N>
+Sort option is not available for header items present in the data header area and filter header area of the grouping bar.
+
+### Reordering fields
+
+The grouping bar provides support to reorder or alter its header items at run time. The header items can be dragged and dropped from one header area to other header area. While reordering the header items, the pivot grid control and the pivot schema designer will be updated based on the changes done on grouping bar.
+
+![Grouping-Bar_img5](Grouping-Bar_images/Grouping-Bar_img5.png)
+
+### Removing fields
+
+The grouping bar provides support to remove only the filter items present in the filter header area. Using the remove icon present at the right corner of corresponding header item, the filter field can be removed.
+
+![Grouping-Bar_img6](Grouping-Bar_images/Grouping-Bar_img6.png)
+
+N>
+Remove option is not available for header items present in the column header area, row header area and data header area of the grouping bar.
+
+A demo sample is available in the following location.
+
+&lt;Installed Drive&gt;\Users\Public\Documents\Syncfusion\Windows\\&lt;Version Number&gt;\PivotGrid.Windows\Samples\Group Bar\Group Bar Demo
