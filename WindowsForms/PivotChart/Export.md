@@ -9,7 +9,7 @@ documentation: ug
 
 # Export
 
-You can export pivot data to excel. The exported pivot data has interaction enabled in excel.
+You can export pivot data to Microsoft Excel. The exported data interaction is enabled in the Excel.
 
 {% highlight c# %}
 

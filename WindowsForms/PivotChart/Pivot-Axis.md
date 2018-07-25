@@ -7,20 +7,20 @@ control: PivotChart
 documentation: ug
 ---
 
-# Pivot Axis
+# Pivot axis
 
-Axis is used to locate a data point inside the chart area. Generally, two axes are required along each direction to locate a data point in the chart, i.e., horizontal and vertical. PivotCharts typically have two axes to measure and categorize data.
+Axis is used to locate data points in the chart area. Generally, two axes are required along each direction to locate a data point in the chart, i.e., horizontal and vertical. The pivot charts typically have two axes to measure and categorize data.
 
 * Vertical axis (y-Axis).
 * Horizontal axis (x-Axis).
 
-By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the PivotChart with axis labels, grid lines and tick lines. You can also customize the axis explicitly by adding axis title or removing grid lines, tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
+By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the pivot chart with axis labels, grid lines, and tick lines. You can customize the axis explicitly by adding axis title or removing grid lines and tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
 
 ![](Pivot-Axis_images/PivotAxes_image3.png)
 
-## Axis Title
+## Axis title
 
-PivotChart provides support to set custom title for axis. You can customize the axis by using the following properties.
+The pivot chart supports setting the custom title for axis. You can customize the axis by using the following properties.
 
 <table>
 <tr>
@@ -79,9 +79,9 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 *PivotChart displays the axis with title*
 
-## Grid Line Style
+## Grid line style
 
-The grid lines in the PivotChart defines the intervals in the axes that can be customized by using the following properties.
+The grid lines define the intervals in the axes that can be customized by using the following properties.
 
 <table>
 <tr>
@@ -152,9 +152,9 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 *PivotChart with customized style*
 
-## Show/Hide Axis
+## Show/Hide axis
 
-The visibility of axis in PivotChart can be toggled by setting the property of `IsVisible`. The following code snippet shows how to hide both the axis of PivotChart.
+The visibility of axis in the pivot chart can be toggled by setting the `IsVisible` property. The following code snippet shows how to hide both the axes of the pivot chart.
 
 {% tabs %}
 

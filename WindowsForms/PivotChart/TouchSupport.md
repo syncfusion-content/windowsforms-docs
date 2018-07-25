@@ -8,7 +8,7 @@ documentation: ug
 --- 
 
 # Touch Support
-PivotChart provides swipe scrolling, panning and zooming touch support. The touch support can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableTouchMode.html#) property to `true`. This will enable the pivot chart to support the swiping, panning and zooming. The default value of `EnableTouchMode` property is `false`.
+The pivot chart provides swipe scrolling, panning, and zooming touch support. The touch support can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableTouchMode.html#) property to `true`. This will enable the pivot chart to support the swiping, panning, and zooming. The default value of the `EnableTouchMode` property is `false`.
 {% tabs %}
 {% highlight c# %}
 //Enable the touch mode for PivotChart
@@ -19,12 +19,12 @@ this.pivotChart1.EnableTouchMode = true;
 Me.pivotChart1.EnableTouchMode = True
 {% endhighlight %}
 {% endtabs %}
-## Touch Swiping
-PivotChart provides the swipe scrolling and panning support in horizontal direction.
+## Touch swiping
+The pivot chart provides the swipe scrolling and panning support in horizontal direction.
 ![](TouchSupport_images/PivotChart_img1.png)
 
-## Touch Zooming
-Touch zooming in both X axis and Y axis can be enabled by setting the [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableXZooming.html#) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableYZooming.html#) properties to `true`. The default value of `EnableXZooming` is `true`. And the default value of `EnableYZooming` is `false`.
+## Touch zooming
+Touch zooming in both x-axis and y-axis can be enabled by setting the [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableXZooming.html#) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableYZooming.html#) properties to `true`. The default value of `EnableXZooming` is `true` and the default value of `EnableYZooming` is `false`.
 {% tabs %}
 {% highlight c# %}
 //Enable the X axis zooming
@@ -41,8 +41,8 @@ Me.pivotChart1.EnableYZooming = True
 {% endtabs %}
 ![](TouchSupport_images/PivotChart_img2.png)
 
-### Disabling X and Y axis zooming
-The zooming can be disabled in X axis and Y axis by setting the `EnableXZooming` and `EnableYZooming` properties to `false`.
+### Disabling X and Y axes zooming
+The zooming can be disabled in x-axis and y-axis by setting the `EnableXZooming` and `EnableYZooming` properties to `false`.
 {% tabs %}
 {% highlight c# %}
 //Disable the X axis zooming
