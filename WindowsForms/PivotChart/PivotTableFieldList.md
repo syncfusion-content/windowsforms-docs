@@ -9,7 +9,7 @@ documentation: ug
 
 # PivotTableFieldList
 
-PivotChart can be dynamically built and customized by choosing any available fields to display and choose whether those fields should be displayed as column, row, value or filter fields. The PivotTableFieldList also gives flexibility to wire itself with both PivotChart and PivotGrid. This links the PivotGrid and PivotChart.
+The pivot chart can be dynamically built and customized by choosing any available fields to display and choose whether those fields should be displayed as column, row, value, or filter fields. The PivotTableFieldList also gives flexibility to wire with both pivot chart and pivot grid. This links the pivot chart and pivot grid.
 
 {% highlight c# %}
 

@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Sorting
-PivotChart provides support to sort both `PivotAxis` and `PivotLegends` programmatically in both ascending and descending order. By default, the PivotChart will populate the series in ascending order.
+The pivot chart supports sorting of both `PivotAxis` and `PivotLegends` programmatically in the ascending and descending order. By default, the pivot chart populates the series in ascending order.
 
-## Sort by Pivot Axis 
-PivotAxis can be sorted by adding `PivotSortDescriptor` to the `SortedAxis` collection and `ListSortDirection` is used to specify the sorting order.
+## Sort by pivot axis
+The pivot axis can be sorted by adding `PivotSortDescriptor` to the `SortedAxis` collection and `ListSortDirection` to specify the sorting order.
 
 Here "Gender" is an `PivotAxis` item.
 
@@ -35,10 +35,10 @@ After applying sorting on `PivotAxis` "Gender"
 
 ![](Sorting_images/After_Sorting.png) 
 
-## Sort by Pivot Legends
-`PivotLegends` can be sorted by adding `PivotSortDescriptor` to the `SortedLegends` collection and `ListSortDirection` is used to specify the sorting order.
+## Sort by pivot legends
+`PivotLegends` can be sorted by adding `PivotSortDescriptor` to the `SortedLegends` collection and `ListSortDirection` to specify the sorting order.
 
-Here "State" `FieldMappingName` of `PivotLegends` item and sorting order is ascending. 
+Here, the "State" of `PivotLegends` item is `FieldMappingName` and the sorting order is ascending. 
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 {% endtabs %}
 
 ## Sort by values
-`PivotLegends` can also be sorted based on the values by using `SortByCalculation` method of `PivotEngine`.
+`PivotLegends` can be sorted based on the values by using the `SortByCalculation` method of `PivotEngine`.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ Me.pivotChart1.PivotEngine.SortByCalculation(6, False, ListSortDirection.Descend
 {% endtabs %}
 
 ## Events
-There are two events available in both `SortedAxis` and `SortedLegends` of PivotChart to handle or notify the sorting operation.
+There are two events available in both `SortedAxis` and `SortedLegends` of pivot chart to handle or notify the sorting operation.
 
 <table>
 <tr>

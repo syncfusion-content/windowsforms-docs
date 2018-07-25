@@ -9,23 +9,23 @@ documentation: ug
 
 # Chart Types
 
-PivotChart is rendered through different chart types based on the requirement. You can easily switch between different chart types dynamically. Fields bound to the chart is automatically transformed into target chart types.
+The pivot chart is rendered through different chart types based on the requirement. You can easily switch between different chart types dynamically. Fields bound to the chart is automatically transformed to target chart types.
 
-### Supported chart types are,
+The following are the supported chart types:
 
 * Line
 * Spline
 * Column
 * Area
-* Spline Area
-* Stacking Area
-* Stacking Column
-* Stacking Area 100
-* Stacking Column 100
-* Step Line
-* Step Area
+* Spline area
+* Stacking area
+* Stacking column
+* Stacking area 100
+* Stacking column 100
+* Step line
+* Step area
 
-The PivotChart types are altered by using the ChartTypes enumeration.
+The pivot chart types are altered by using the ChartTypes enumeration.
 
 
 {% highlight c# %}
@@ -43,16 +43,16 @@ Me.pivotChart1.ChartTypes = Syncfusion.Windows.Forms.PivotChart.PivotChartTypes.
 
 {% endhighlight %}
 
-## Line Chart
+## Line chart
 
-The Line Chart joins the data points on a plot by using straight lines that show trends in data at equal intervals.
+The line chart joins the data points on a plot by using straight lines that show trends in data at equal intervals.
 
 ![](Chart-Types_images/Chart-Types_img1.png)
 
 
-## Spline Chart
+## Spline chart
 
-The Spline Chart is similar to line chart except that it connects different data points by using curved lines instead of straight lines.
+The spline chart is similar to line chart except that it connects different data points with curved lines instead of straight lines.
 
 
 
@@ -60,26 +60,26 @@ The Spline Chart is similar to line chart except that it connects different da
 
 
 
-## Step Line Chart
+## Step line chart
 
-Step Line Chart uses horizontal and vertical lines to connect the data points resulting in a step like progression.
+The step line chart uses horizontal and vertical lines to connect data points resulting in a step like progression.
 
 
 ![](Chart-Types_images/Chart-Types_img3.png)
 
 
 
-## Step Area Chart
+## Step area chart
 
-Step AreaChart is similar to the regular area chart except for a straight line tracing the shortest path between data points. The values are connected by continuous vertical and horizontal lines forming a step like progression.
+The step area chart is similar to the regular area chart except for a straight line tracing the shortest path between data points. The values are connected by continuous vertical and horizontal lines to form a step like progression.
 
 ![](Chart-Types_images/Chart-Types_img4.png)
 
 
 
-## Spline Area Chart
+## Spline area chart
 
-Spline AreaChart is similar to Area Chart with the difference of the connected data points of a series. It connects each series of points by a smooth spline curve.
+The spline area chart is similar to the area chart but differs by connecting data points in a series. This connects each series of points by a smooth spline curve.
 
 
 
@@ -87,9 +87,9 @@ Spline AreaChart is similar to Area Chart with the difference of the connected d
 
 
 
-## Stacking Column Chart
+## Stacking column chart
 
-Stacking ColumnChart is similar to column charts except for the Y-values. These Y-values stack on top of each other in a specified series order. This helps visualize the relationship of parts to the whole chart.
+The stacking column chart is similar to column charts except for the Y-values. The Y-values stack on top of each other in a specified series order. This helps to visualize the relationship of parts to the whole chart.
 
 
 
@@ -102,18 +102,18 @@ Stacking ColumnChart is similar to column charts except for the Y-values. These 
 
 
 
-## Stacking Area100 Chart
+## Stacking area 100 chart
 
-Stacking AreaChart is similar to regular area chart except for the Y-values. These Y-values stack on top of each other in the specified series order. This helps visualize the relationship of parts to the whole data. The top range is calculated on the basis of 100.
+The stacking area chart is similar to regular area chart except for the Y-values. The Y-values stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole data. The top range is calculated on the basis of 100.
 
 
 ![](Chart-Types_images/Chart-Types_img7.png)
 
 
 
-## Stacking Area Chart
+## Stacking area chart
 
-Stacking AreaChart is similar to regular area chart except for the Y-values. These Y-values stack on top of each other in the specified series order. This helps visualize the relationship of parts to the whole data.
+The stacking area chart is similar to the regular area chart except for the Y-values. The Y-values stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole data.
 
 
 ![](Chart-Types_images/Chart-Types_img8.png)
