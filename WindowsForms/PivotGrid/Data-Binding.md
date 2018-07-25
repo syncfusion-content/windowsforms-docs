@@ -287,12 +287,12 @@ namespace PivotGridDemo
             BusinessObjectCollection businessObjectCollection = BusinessObjectCollection.GetList();
             foreach (BusinessObject businessObject in businessObjectCollection)
             {
-                DataRow dr = dt.NewRow();
+                DataRow dataRow = dt.NewRow();
                 foreach (PropertyDescriptor propertyDescriptor in propertyDescriptorCollection)
                 {
-                    dr[propertyDescriptor.Name] = propertyDescriptor.GetValue(businessObject);
+                    dataRow[propertyDescriptor.Name] = propertyDescriptor.GetValue(businessObject);
                 }
-                dt.Rows.Add(dr);
+                dt.Rows.Add(dataRow);
             }
             return dt.DefaultView;
         }
@@ -373,11 +373,11 @@ Namespace PivotGridDemo
             Next propertyDescriptor
             Dim businessObjectCollection As BusinessObjectCollection = BusinessObjectCollection.GetList()
             For Each businessObject As BusinessObject In businessObjectCollection
-                Dim dr As DataRow = dt.NewRow()
+                Dim dataRow As DataRow = dt.NewRow()
                 For Each propertyDescriptor As PropertyDescriptor In propertyDescriptorCollection
-                    dr(propertyDescriptor.Name) = propertyDescriptor.GetValue(businessObject)
+                    dataRow(propertyDescriptor.Name) = propertyDescriptor.GetValue(businessObject)
                 Next propertyDescriptor
-                dt.Rows.Add(dr)
+                dt.Rows.Add(dataRow)
             Next businessObject
             Return dt.DefaultView
         End Function
