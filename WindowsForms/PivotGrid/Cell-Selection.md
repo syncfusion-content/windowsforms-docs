@@ -26,6 +26,8 @@ this.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.An
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Me.pivotGridControl1.TableControl.AllowSelection = True
 Me.pivotGridControl1.TableModel.Options.AllowSelection = GridSelectionFlags.Any
 
