@@ -27,6 +27,8 @@ printPreviewDialog.ShowDialog();
 
 {% endhighlight %}
 
+{% highlight vb %}
+
 Dim pivotGridPrintDocumentAdv As New PivotGridPrintDocumentAdv(Me.pivotGridControl1)
 
 Dim printPreviewDialog As New PrintPreviewDialog()
