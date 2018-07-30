@@ -105,6 +105,124 @@ End Sub
 
 ![](Rows_images/img3.png)
 
+### Showing the image in RowHeader
+
+Display the image in [RowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStylesMap~RowHeader.html) can be achieve by using [SfDataGrid.DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event and also by customizing the [GridRowHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer.html).
+
+#### Using DrawCell event 
+
+[RowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBaseStylesMap~RowHeader.html) cell can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event which is raised for each cell. The default column index of the row header cell is zero, the style settings for a row header can be applied by using column index when it is enabled in SfDataGrid. The image can be draw in the row header by using DrawImage.          
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.DrawCell += OnSfDataGridDrawCell;
+
+private void OnSfDataGridDrawCell(object sender, Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs e)
+{
+    if (sfDataGrid.ShowRowHeader && e.RowIndex != 0)
+    {
+        double value = (e.DataRow.RowData as OrderInfo).UnitPrice;
+        if (e.ColumnIndex == 0)
+        {
+            e.Handled = true;
+            Rectangle rect = new Rectangle(e.Bounds.X + 3, e.Bounds.Y + 5, e.Bounds.Width - 3, e.Bounds.Height - 5);
+            e.Graphics.FillRectangle(new SolidBrush(sfDataGrid.Style.RowHeaderStyle.BackColor), new Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1));
+            //Draw the image on RowHeader
+            if (value >= 0 && value < 50)
+                e.Graphics.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Yellow.png")), rect);
+            else if (value > 51 && value < 100)
+                e.Graphics.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Green.png")), rect);
+            else if (value > 101 && value < 600)
+                e.Graphics.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Red.png")), rect);
+            e.Graphics.DrawLine(new Pen(ColorTranslator.FromHtml("#CCCCCC")), e.Bounds.Left, e.Bounds.Bottom, e.Bounds.Right, e.Bounds.Bottom);
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.DrawCell, AddressOf OnSfDataGridDrawCell
+
+Private Sub OnSfDataGridDrawCell(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs)
+	If sfDataGrid.ShowRowHeader AndAlso e.RowIndex <> 0 Then
+		Dim value As Double = (TryCast(e.DataRow.RowData, OrderInfo)).UnitPrice
+		If e.ColumnIndex = 0 Then
+			e.Handled = True
+			Dim rect As New Rectangle(e.Bounds.X + 3, e.Bounds.Y + 5, e.Bounds.Width - 3, e.Bounds.Height - 5)
+			e.Graphics.FillRectangle(New SolidBrush(sfDataGrid.Style.RowHeaderStyle.BackColor), New Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1))
+			'Draw the image on RowHeader
+			If value >= 0 AndAlso value < 50 Then
+				e.Graphics.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Yellow.png")), rect)
+			ElseIf value > 51 AndAlso value < 100 Then
+				e.Graphics.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Green.png")), rect)
+			ElseIf value > 101 AndAlso value < 600 Then
+				e.Graphics.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Red.png")), rect)
+			End If
+			e.Graphics.DrawLine(New Pen(ColorTranslator.FromHtml("#CCCCCC")), e.Bounds.Left, e.Bounds.Bottom, e.Bounds.Right, e.Bounds.Bottom)
+		End If
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+#### Using Custom RowHeaderCellRenderer
+
+The following code shows how to draw the image in row header by overriding the [OnRender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer~OnRender.html) method in [GridRowHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridRowHeaderCellRenderer.html).
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellRenderers["RowHeader"] = new CustomRowHeaderCellRenderer(sfDataGrid);
+
+public class CustomRowHeaderCellRenderer : GridRowHeaderCellRenderer
+{
+    SfDataGrid DataGrid { get; set; }
+    public CustomRowHeaderCellRenderer(SfDataGrid dataGrid)
+    {
+        DataGrid = dataGrid;
+    }
+    protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+    {
+        var rowData = this.DataGrid.View.Records[rowColumnIndex.RowIndex];
+        double value = (rowData.Data as OrderInfo).UnitPrice;
+        //Draw the image on RowHeader
+        if (rowColumnIndex.RowIndex > 0)
+        {
+            if (value > 0 && value < 50)
+                paint.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Yellow.png")), new Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5));
+            else if (value > 51 && value < 100)
+                paint.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Green.png")), new Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5));
+            else if (value > 101 && value < 600)
+                paint.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Red.png")), new Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5));
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomRowHeaderCellRenderer
+	Inherits GridRowHeaderCellRenderer
+	Private Property DataGrid() As SfDataGrid
+	Public Sub New(ByVal dataGrid As SfDataGrid)
+		Me.DataGrid = dataGrid
+	End Sub
+	Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+		Dim rowData = Me.DataGrid.View.Records(rowColumnIndex.RowIndex)
+		Dim value As Double = (TryCast(rowData.Data, OrderInfo)).UnitPrice
+		'Draw the image on RowHeader
+		If rowColumnIndex.RowIndex > 0 Then
+			If value > 0 AndAlso value < 50 Then
+				paint.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Yellow.png")), New Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5))
+			ElseIf value > 51 AndAlso value < 100 Then
+				paint.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Green.png")), New Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5))
+			ElseIf value > 101 AndAlso value < 600 Then
+				paint.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Red.png")), New Rectangle(cellRect.X + 3, cellRect.Y + 5, cellRect.Width - 3, cellRect.Height - 5))
+			End If
+		End If
+	End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+![](Rows_images/img9.png)
+
 ## Header Row
 
 Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
