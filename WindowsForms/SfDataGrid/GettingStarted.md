@@ -513,3 +513,44 @@ sfDataGrid1.AllowFiltering = True
 Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowEditing.html) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key.
 Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html).
 The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) events.
+
+## Handling events of DataGrid
+You cannot handle the Key and Mouse events of the SfDataGrid when raising them, because the TableControl is hosted in the SfDataGrid. So, raise the events for SfDataGrid.TableControl.
+
+{% tabs %}
+{% highlight c# %}
+//KeyDown Event for TableControl
+sfDataGrid.TableControl.KeyDown += OnKeyDown;
+
+void OnKeyDown(object sender, KeyEventArgs e)
+{
+    //Do your customization here
+}
+
+
+//MouseDown Event for TableControl
+sfDataGrid.TableControl.MouseDown += OnMouseDown;
+
+void OnMouseDown(object sender, MouseEventArgs e)
+{
+    //Do your customization here
+}
+{% endhighlight %}
+{% highlight vb %}
+'KeyDown Event for TableControl
+AddHandler sfDataGrid.TableControl.KeyDown, AddressOf OnKeyDown
+
+Private Sub OnKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
+	'Do your customization here
+End Sub
+
+
+'MouseDown Event for TableControl
+AddHandler sfDataGrid.TableControl.MouseDown, AddressOf OnMouseDown
+
+Private Sub OnMouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
+	'Do your customization here
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
