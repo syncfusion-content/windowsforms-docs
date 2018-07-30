@@ -515,7 +515,7 @@ Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/wi
 The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) events.
 
 ## Handling events of DataGrid
-You cannot handle the Key and Mouse events of the SfDataGrid when raising them, because the TableControl is hosted in the SfDataGrid. So, raise the events for SfDataGrid.TableControl.
+You cannot handle the Key and Mouse events of the SfDataGrid when raising them, because the TableControl is hosted in the SfDataGrid. So, raise the events for [SfDataGrid.TableControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~TableControl.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -543,7 +543,6 @@ AddHandler sfDataGrid.TableControl.KeyDown, AddressOf OnKeyDown
 Private Sub OnKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 	'Do your customization here
 End Sub
-
 
 'MouseDown Event for TableControl
 AddHandler sfDataGrid.TableControl.MouseDown, AddressOf OnMouseDown
