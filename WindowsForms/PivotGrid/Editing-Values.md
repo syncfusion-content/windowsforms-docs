@@ -13,7 +13,7 @@ Pivot grid provides support to edit the values of both value cells and total cel
 
 ## Editing value cells
 
-Value cells can be edited by enabling the [EnableValueEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableValueEditing.html) property of pivot grid control. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
+Value cells can be edited by enabling the [EnableValueEditing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableValueEditing.html) property of pivot grid control. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
 
 Refer to the below code sample to enable editing in total cells of pivot grid.
 
@@ -37,7 +37,7 @@ Me.pivotGrid1.EnableValueEditing = True
 
 ## Editing total cells
 
-Values of total cells can also be edited by using the [AllowEditingOfTotalCells](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager~AllowEditingOfTotalCells.html) property of [EditManager](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EditManager.html).
+Values of total cells can also be edited by using the [AllowEditingOfTotalCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager~AllowEditingOfTotalCells.html) property of [EditManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EditManager.html).
 
 Refer to the below code sample to enable editing in total cells of pivot grid.
 
