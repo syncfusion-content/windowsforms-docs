@@ -15,38 +15,11 @@ Pivot rows are defined by using the [PivotItem](https://help.syncfusion.com/cr/c
 
 To define a pivot row item, the following properties of `PivotItem` object are used.
 
-<table>
-<tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th></tr>
-<tr>
-<td>
-{{'[Comparer](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html)'| markdownify }}</td><td>
-Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this field is IComparable.</td><td>
-IComparer</td></tr>
-<tr>
-<td>
-{{'[FieldHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldHeader.html)'| markdownify }}</td><td>
-Gets or sets the title you want to see in the header for this pivot item.</td><td>
-string</td></tr>
-<tr>
-<td>
-{{'[FieldMappingName](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldMappingName.html)'| markdownify }}</td><td>
-Gets or sets the property's mapping name.</td><td>
-string</td></tr>
-<tr>
-<td>
-{{'[Format](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Format.html)'| markdownify }}</td><td>
-Gets or sets the format item for the specified field.</td><td>
-string</td></tr>
-<tr>
-<td>
-{{'[TotalHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~TotalHeader.html)'| markdownify }}</td><td>
-Gets or sets the string you want to append to the pivot item's summary cells.</td><td>
-string</td></tr>
-</table>
+* [Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) - Specifies the IComparer object for sorting the row values. If its value is null, then sorting will be performed under the assumption that the specified field is IComparable.
+* [FieldHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldHeader.html) - Specifies the title that you want to view in the row header.
+* [FieldMappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldMappingName.html) - Specifies the mapping name i.e., property name of the row field.
+* [Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Format.html) - Specifies the format for the row field.
+* [TotalHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~TotalHeader.html) - Specifies the string to append to the row summary cells.
 
 Refer to the below code sample for adding pivot row item in the pivot grid control.
 
@@ -54,7 +27,7 @@ Refer to the below code sample for adding pivot row item in the pivot grid contr
 
 {% highlight c# %}
 
-// Defining pivot item
+// Defining pivot row item
 PivotItem pivotItem = new PivotItem() { FieldHeader = "Product", FieldMappingName = "Product", TotalHeader = "Total" };
 
 // Adding pivot row item to pivot grid
@@ -80,7 +53,7 @@ To synchronize the newly added or modified pivot row items with the pivot grid c
 
 ### Sorting pivot rows
 
-By default, the pivot grid control sorts the row data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of corresponding pivot item.
+By default, the pivot grid control sorts the row data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of corresponding pivot item.
 
 Refer to the below code sample to define comparer for sorting the row data in descending order.
 

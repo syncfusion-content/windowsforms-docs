@@ -13,7 +13,7 @@ Summaries can be defined for the pivot calculation values in the pivot grid. Piv
 
 ## Summary Types
 
-Pivot grid summarizes the data for various data types by using the [SummaryType](http://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.SummaryType.html) enumerator. The SummaryType value should be defined while defining the PivotCalculation items using [PivotComputationInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/pivot%20analysis/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) class to specify the type of the summary. The following summary types can be set to a computation item.
+Pivot grid summarizes the data for various data types by using the [SummaryType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.SummaryType.html) enumerator. The SummaryType value should be defined while defining the PivotCalculation items using [PivotComputationInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) class to specify the type of the summary. The following summary types can be set to a computation item.
 
 <table>
 <tr>
