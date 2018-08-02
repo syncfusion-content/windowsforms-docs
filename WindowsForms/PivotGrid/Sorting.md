@@ -15,7 +15,7 @@ The sorting operation can be performed in the pivot grid control using any of th
 
 ## Using custom comparer programmatically
 
-By default, the pivot grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of pivot item.
+By default, the pivot grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of pivot item.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ End Class
 
 ## Using grouping bar
 
-The sorting operation can also be performed by clicking on the header item of required pivot field present in row and column header areas of [grouping bar](grouping-bar.md).
+The sorting operation can also be performed by clicking on the header item of required pivot field present in row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
 
 By default, the pivot field values are sorted in the ascending order. On clicking the same header item once again will reverse the sorting direction. The sort indicator present at the right corner of the header item denotes the type of sorting applied to the pivot field such as ascending order or descending order.
 
