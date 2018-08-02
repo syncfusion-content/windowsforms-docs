@@ -21,7 +21,7 @@ Following frameworks are supported:
 * Microsoft .NET Framework 4.0
 * Microsoft .NET Framework 4.5
 * Microsoft .NET Framework 4.5.1
-* Microsoft .NET Framework 4.6
+* Microsoft .NET Framework 4.6 & above
 
 ## Development Environments
 

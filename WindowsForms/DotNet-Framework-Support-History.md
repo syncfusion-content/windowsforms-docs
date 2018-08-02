@@ -19,7 +19,7 @@ Syncfusion Version <br/><br/></th><th>
 .NET 4.0<br/><br/></th><th>
 .NET 4.5<br/><br/></th><th>
 .NET 4.5.1<br/><br/></th><th>
-.NET 4.6<br/><br/></th></tr>
+.NET 4.6 & above<br/><br/></th></tr>
 <tr>
 <td>
 Earlier Version<br/><br/></td><td>
@@ -82,7 +82,7 @@ The table represents the .NET Framework versions for Syncfusion controls.
 {{'**.NET 4.5.1**'| markdownify }}
 </td>
 <td>
-{{'**.NET 4.6**'| markdownify }}
+{{'**.NET 4.6 & above**'| markdownify }}
 </td>
 </tr>
 <tr>
