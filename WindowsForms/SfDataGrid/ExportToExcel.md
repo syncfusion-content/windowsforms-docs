@@ -187,7 +187,9 @@ workBook.SaveAs("Sample.xlsx")
 ![](ExportToExcel_images/ExportToExcel_img2.jpeg)
 
 ## Saving Options
+
 ### Save Directly to File
+
 After exporting to excel the exported workbook can be saved directly to the file system by using [SaveAs](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAs.html) method.
 
 {% tabs %}
