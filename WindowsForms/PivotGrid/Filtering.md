@@ -15,7 +15,7 @@ In the pivot grid control, the filtering operation can be performed by any of th
 
 ## Using filter expression programmatically
 
-The [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class is used to encapsulate the information required to define a filter and it contains the following properties.
+The [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class is used to encapsulate the information required to define a filter and it contains the following properties.
 
 * **Expression** - Specifies the well-formed logical expression that defines the filter.
 * **Name** - Specifies the name of the filter expression.
@@ -26,7 +26,7 @@ The [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Sy
 
 ### Defining filter expressions
 
-To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Filters.html) collection of pivot grid control.
+To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Filters.html) collection of pivot grid control.
 
 Refer to the code sample to define filter expressions in the pivot grid control.
 
@@ -64,7 +64,7 @@ pivotGridControl1.Filters.Add(filterExpression1)
 
 ## Using grouping bar's built-in popup
 
-The filtering operation can also be performed by using the built-in popup integrated with the filter, row and column header areas of [grouping bar](grouping-bar.md).
+The filtering operation can also be performed by using the built-in popup integrated with the filter, row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
 
 While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opened by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
 

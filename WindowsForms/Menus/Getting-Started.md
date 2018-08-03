@@ -300,7 +300,7 @@ Me.bar1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { pa
 
 **Adding BarItem to Bar**
 
-To add [BarItem]((https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html)) into Bar, Create instance of required BarItem and add it to `Item` collection of MainFrameBarManager and `Item` collection of the respective Bar.
+To add [BarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) into Bar, Create instance of required BarItem and add it to `Item` collection of MainFrameBarManager and `Item` collection of the respective Bar.
 
 {% tabs %}
 

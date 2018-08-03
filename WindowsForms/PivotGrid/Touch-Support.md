@@ -35,7 +35,7 @@ Me.pivotGridControl1.EnableTouchMode = True
 
 ## Touch gestures
 
-Enabling the touch mode in pivot grid control allows to expand or collapse the header cells. It also allows to drag and drop the pivot items between the [pivot table field list](pivot-schema-designer.md) and the [grouping bar](grouping-bar.md).
+Enabling the touch mode in pivot grid control allows to expand or collapse the header cells. It also allows to drag and drop the pivot items between the [pivot table field list](https://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) and the [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
 
 ## Touch swiping
 
