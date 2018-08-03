@@ -330,7 +330,9 @@ document.Save("Sample.pdf")
 ![](ExportToPDF_images/ExportToPDF_img2.jpeg)
 
 ## Saving Options
+
 ### Save Directly to a File
+
 After exporting to PDF, you can save exported PDF file directly to file system by using [Save](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
 
 {% tabs %}
@@ -391,7 +393,9 @@ if (saveFileDialog.ShowDialog() == DialogResult.OK)
 {% endtabs %}
 
 ## Exporting Customization
+
 ### Styling Cells based on CellType in PDF
+
 The exported cells can be customized based on the cell type by using the Exporting event.
 
 {% tabs %}
