@@ -591,7 +591,7 @@ Me.radialGauge1.Ranges.Add(range1)
 
 ![](Radial-Gauge_images/Radial-Gauge_img12.png)
 
-
+N> EndValue must be defined as first and greater than the StartValue when configuring the Ranges. By default, StartValue and EndValue will be zero and EndValue must be greater than StartValue. Otherwise, StartValue will be reset to zero. 
 
 ### Scaling divisions
 
