@@ -13,31 +13,32 @@ In the previous topic, we saw how to add and fill a popup menu with menu items. 
 
 Drag and Drop a PopupMenusManager control onto the form. Also add a RichTextBox control. When PopupMenusManager class is dragged onto the design surface, it will provide an extended property, XPContextMenu on popupMenusManager1 for all the controls in the form, letting the users to easily associate a popup menu with a control. 
 
-![](Associating-Popup-Menu-to-a-Control_images/Associating-Popup-Menu-to-a-Control_img1.png)
+![Associating-Popup-Menu-to-a-Control_img1](Associating-Popup-Menu-to-a-Control_images/Associating-Popup-Menu-to-a-Control_img1.png)
 
 N> A single PopupMenu can be associated with multiple controls.
 
 {% tabs %}
+
 {% highlight c# %}
 
-    public Form1()
-    {   
-        InitializeComponent();
+public Form1()
+{   
+    InitializeComponent();
 
-        // Create and initialize a ParentBarItem.
-        this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
-        this.parentBarItem1.Items.AddRange(new BarItem[] { this.Files, this.CutItem, this.CopyItem, this.EditItem });
+    // Create and initialize a ParentBarItem.
+    this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
+    this.parentBarItem1.Items.AddRange(new BarItem[] { this.Files, this.CutItem, this.CopyItem, this.EditItem });
 
-        // Associate the ParentBarItem with the PopupMenu.
-        this.popupMenu1 = new Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu();
-        this.popupMenu1.ParentBarItem = this.parentBarItem1;
+    // Associate the ParentBarItem with the PopupMenu.
+    this.popupMenu1 = new Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu();
+    this.popupMenu1.ParentBarItem = this.parentBarItem1;
 
-        // Then associate it with a RichTextBox.
-        this.popupMenusManager1 = new PopupMenusManager();
-        this.popupMenusManager1.SetXPContextMenu(this.richTextBox1, this.popupMenu1);
-    }
+    // Then associate it with a RichTextBox.
+    this.popupMenusManager1 = new PopupMenusManager();
+    this.popupMenusManager1.SetXPContextMenu(this.richTextBox1, this.popupMenu1);
+}
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight vb %}
 
@@ -57,6 +58,8 @@ Public Sub New()
     Me.popupMenusManager1.SetXPContextMenu(Me.richTextBox1, Me.popupMenu1)
 End Sub
 
+{% endhighlight %}
 
-![](Associating-Popup-Menu-to-a-Control_images/Associating-Popup-Menu-to-a-Control_img3.png)
+{% endtabs %}
 
+![Associating-Popup-Menu-to-a-Control_img3](Associating-Popup-Menu-to-a-Control_images/Associating-Popup-Menu-to-a-Control_img3.png)
