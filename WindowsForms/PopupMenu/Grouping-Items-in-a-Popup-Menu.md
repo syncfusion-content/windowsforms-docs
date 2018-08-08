@@ -21,13 +21,4 @@ If the ParentBarItem is not contained within a BarManager, edit the SeparatorInd
 
 ![](Grouping-Items-in-a-Popup-Menu_images/Grouping-Items-in-a-Popup-Menu_img3.jpeg)
 
-We can also group the items using BeginGroupAt and RemoveGroupAt methods. Click here to know more.
 
-{% seealso %}
-
-* [Associating Popup Menu To a Control](http://help.syncfusion.com/windowsforms/popupmenu/associating-popup-menu-to-a-control)
-* [Adding and filling a popup menu](http://help.syncfusion.com/windowsforms/popupmenu/adding-and-filling-a-popupmenu)
-* [How to programmatically begin a group or remove an existing group in a popup menu]
-* [How to programmatically show a Popup Menu]
-
-{% endseealso %}
