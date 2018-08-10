@@ -163,17 +163,10 @@ Location
 </tr>
 <tr>
 <td>
-Readme
+Release Notes
 </td>
 <td>
 {{ '<https://help.syncfusion.com/windowsforms/release-notes/v16.1.0.32>' | markdownify }}
-</td>
-</tr>
-<tr>
-<td>Release Notes
-</td>
-<td>
-{{ '<http://files2.syncfusion.com/Installs/v16.1.0.32/ReadMe/WindowsForms.htmll>' | markdownify }}
 </td>
 </tr>
 <tr>
