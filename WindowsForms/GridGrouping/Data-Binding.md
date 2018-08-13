@@ -40,7 +40,7 @@ This is a suitable object when the user want to only get the stream of data for 
 The following binding methods are available to bind the grid to a database,
 
 * [Binding At Design Time](#binding-at-design-time) 
-* [Binding At Run Time](#binding-at-run-time) 
+* [Binding At Run Time](#binding-at-runtime) 
 
 ## Binding to XML Data
 GridGroupingControl can be bound to data from XML files. This can be achieved by using the `DataSet` object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the grid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
