@@ -2,7 +2,7 @@
 layout: post
 title: Serialization andDeserialization | PivotGrid | Windows Forms | Syncfusion
 description: Serialization and deserialization support in pivot grid
-platform: windows forms
+platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---
