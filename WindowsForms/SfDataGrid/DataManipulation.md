@@ -153,6 +153,39 @@ End Sub
 
 ![](DataManipulation_images/AddNewRow_img8.png)
 
+### Update cell values based on selected value in the GridComboBoxCell
+By default, changes made in the current record of the add new row cell is immediately reflected in the view. The following code shows how to change the other cell value based on selected value in combo box cell in AddNewRow using CellComboBoxSelectionChanged event.
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellComboBoxSelectionChanged += OnSfDataGridCellComboBoxSelectionChanged;
+
+private void OnSfDataGridCellComboBoxSelectionChanged(object sender, Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs e)
+{
+    if (e.GridColumn.MappingName == "ShipCityID")
+    {
+        var shipCityDetails = e.SelectedItem as ShipCityDetails;
+        var row = e.Record as OrderDetails;
+        row.OrderID = shipCityDetails.ShipCityID;
+        if (e.RowIndex == this.sfDataGrid.GetAddNewRowIndex())
+            this.sfDataGrid.TableControl.Invalidate(this.sfDataGrid.TableControl.GetRowRectangle(this.sfDataGrid.GetAddNewRowIndex(), false));
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler CellComboBoxSelectionChanged, AddressOf OnSfDataGridCellComboBoxSelectionChanged
+Private Sub SfDataGridCellComboBoxSelectionChanged(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs)
+	If e.GridColumn.MappingName = "ShipCityID" Then
+		Dim shipCityDetails = TryCast(e.SelectedItem, ShipCityDetails)
+		Dim row = TryCast(e.Record, OrderDetails)
+		row.OrderID = shipCityDetails.ShipCityID
+		If e.RowIndex = Me.sfDataGrid.GetAddNewRowIndex() Then
+			Me.sfDataGrid.TableControl.Invalidate(Me.sfDataGrid.TableControl.GetRowRectangle(Me.sfDataGrid.GetAddNewRowIndex(), False))
+		End If
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ### Customizing AddNewRow Text using Default Resource File
 SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
