@@ -13,7 +13,7 @@ Pivot grid provides support to update the cell values in real time. This support
 
 ## Enabling updating
 
-Cell values can be updated at run time by using the [EnableUpdating]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableUpdating.html)) property of pivot grid.
+Cell values can be updated at run time by using the [EnableUpdating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableUpdating.html) property of pivot grid.
 
 Refer to the below code sample to enable the run time updating in pivot grid control.
 
