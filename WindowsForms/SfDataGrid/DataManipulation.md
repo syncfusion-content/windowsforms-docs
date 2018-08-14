@@ -154,7 +154,9 @@ End Sub
 ![](DataManipulation_images/AddNewRow_img8.png)
 
 ### Update cell values based on selected value in the GridComboBoxCell
-By default, changes made in the current record of the add new row cell is immediately reflected in the view. The following code shows how to change the other cell value based on selected value in combo box cell in AddNewRow using [CellComboBoxSelectionChanged(https://help.syncfusion.com/cr/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellComboBoxSelectionChanged_EV.html/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellComboBoxSelectionChanged_EV.html) event.
+
+By default, changes made in the current record of add new row cell will be immediately reflected in the view. The following code shows how to change other cell value based on the selected value in the combo box cell of AddNewRow by using the [CellComboBoxSelectionChanged(https://help.syncfusion.com/cr/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellComboBoxSelectionChanged_EV.html/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellComboBoxSelectionChanged_EV.html) event.
+
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.CellComboBoxSelectionChanged += OnSfDataGridCellComboBoxSelectionChanged;
