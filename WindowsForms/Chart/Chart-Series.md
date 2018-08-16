@@ -1801,6 +1801,12 @@ Applies to Chart Types</td><td colspan = "2">
 Area Chart, Bar Chart, Scatter Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, StepLine Chart, Candle Chart, HiLo Chart, HiLoOpenClose Chart, Combination Chart, Pie Chart.</td></tr>
 </table>
 
+By using "DisplayTextAndFormat", you can customize the text displayed in the callout.
+
+* {0} - This will display the series name in callout.
+* {1} - This will display the x-value of the corresponding point in callout.
+* {2} - This will display the y-value of the corresponding point the callout. Default format for callout is "{0},{1}".
+
 Here is some sample code.
 
 {% tabs %}  
@@ -1817,7 +1823,7 @@ this.chartControl1.Series[0].Style.Callout.Enable = true;
 
 // Change Position, DisplayText Format and Color
 
-this.chartControl1.Series[0].Style.Callout.DisplayTextAndFormat = "{0}: {2}";
+this.chartControl1.Series[0].Style.Callout.DisplayTextAndFormat = "{1}: {2}";
 
 this.chartControl1.Series[0].Style.Callout.Position = LabelPosition.Top;
 
@@ -1845,7 +1851,7 @@ this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
  
  ' Change Position, DisplayText Format and Color
  
-            Me.chartControl1.Series(0).Style.Call.DisplayTextAndFormat = "{0}: {2}"
+            Me.chartControl1.Series(0).Style.Call.DisplayTextAndFormat = "{1}: {2}"
  
             Me.chartControl1.Series(0).Style.Call.Position = LabelPosition.Top
  
