@@ -1798,16 +1798,16 @@ All series and points</td></tr>
 <tr>
 <td>
 Applies to Chart Types</td><td colspan = "2">
-Area Chart, Bar Chart, Scatter Chart, Bubble Chart, Column Chart, Stacking Column Chart, Stacking Column100 Chart, Line Chart, Spline Chart, Rotated Spline chart, StepLine Chart, Candle Chart, HiLo Chart, HiLoOpenClose Chart, Combination Chart, Pie Chart.</td></tr>
+Area chart, bar chart, scatter chart, bubble chart, column chart, stacking column chart, stacking column100 chart, line chart, spline chart, rotated spline chart, stepLine chart, candle chart, HiLo chart, HiLoOpenClose chart, combination chart, pie chart.</td></tr>
 </table>
 
 By using "DisplayTextAndFormat", you can customize the text displayed in the callout.
 
-* {0} - This will display the series name in callout.
-* {1} - This will display the x-value of the corresponding point in callout.
-* {2} - This will display the y-value of the corresponding point the callout. Default format for callout is "{0},{1}".
+* {0} - displays the series name in callout.
+* {1} - displays the x-value of the corresponding point in callout.
+* {2} - displays the y-value of the corresponding point in callout. Default format for callout is "{0},{1}".
 
-Here is some sample code.
+The following code sample demonstrates how to customize the text displayed in callout.
 
 {% tabs %}  
 
@@ -1821,7 +1821,7 @@ this.chartControl1.Series3D = true;
 
 this.chartControl1.Series[0].Style.Callout.Enable = true;
 
-// Change Position, DisplayText Format and Color
+// Change position, DisplayText format and color
 
 this.chartControl1.Series[0].Style.Callout.DisplayTextAndFormat = "{1}: {2}";
 
@@ -1849,7 +1849,7 @@ this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
  
            Me.chartControl1.Series(0).Style.Call.Enable = True
  
- ' Change Position, DisplayText Format and Color
+ ' Change position, DisplayText format and color
  
             Me.chartControl1.Series(0).Style.Call.DisplayTextAndFormat = "{1}: {2}"
  
