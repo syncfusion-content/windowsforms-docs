@@ -695,7 +695,8 @@ public class CustomSelectionController : RowSelectionController
 Samples Link: [SelectAllRows ](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
 
 ### Change Enter key behavior
-By default, while pressing <kbd>Enter</kbd> key the current cell will be moved to next focused row in the same column. The following code shows how to change the <kbd>Enter</kbd> key behavior by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+
+When pressing the <kbd>Enter</kbd> key, the current cell will be moved to the next focused row of the same column, by default. The following code shows how to change the <kbd>Enter</kbd> key behavior by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
 
 {% tabs %}
 {% highlight c# %}
