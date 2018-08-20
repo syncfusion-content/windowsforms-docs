@@ -94,7 +94,7 @@ End Sub
 
 ### Styling based on Content
 
-The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.The following code shows how to apply the conditional styling for ObseravableCollection.
+The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.The following code shows how to apply the conditional styling for Obseravable Collection.
 
 {% tabs %}
 {% highlight c# %}
