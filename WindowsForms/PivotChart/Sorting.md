@@ -52,21 +52,6 @@ Me.pivotChart1.SortedLegends.Add(New PivotSortDescriptor("State"))
 {% endhighlight %}
 {% endtabs %}
 
-## Sort by values
-`PivotLegends` can be sorted based on the values by using the `SortByCalculation` method of `PivotEngine`.
-
-{% tabs %}
-{% highlight c# %}
-// Sorts the given indexed columns based on values in 
-this.pivotChart1.PivotEngine.SortByCalculation(6, false, ListSortDirection.Descending);
-{% endhighlight %}
-
-{% highlight vb %}
-' Sorts the given indexed columns based on values in 
-Me.pivotChart1.PivotEngine.SortByCalculation(6, False, ListSortDirection.Descending)
-{% endhighlight %}
-{% endtabs %}
-
 ## Events
 There are two events available in both `SortedAxis` and `SortedLegends` of pivot chart to handle or notify the sorting operation.
 
