@@ -94,7 +94,7 @@ End Sub
 
 ### Styling based on Content
 
-The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.
+The appearance of the record rows in SfDataGrid can be customized conditionally based on the content by handling the [SfDataGrid.QueryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowStyle_EV.html) event.The following code shows how to apply the conditional styling for ObseravableCollection.
 
 {% tabs %}
 {% highlight c# %}
@@ -127,6 +127,58 @@ End Sub
 {% endtabs %}
 
 ![](ConditionalStyling_images/ConditonalStyling3.png)
+
+The following code shows how to apply the conditional styling for DataTable.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryCellStyle += SfDataGrid_QueryCellStyle;
+
+private void SfDataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
+{
+    // Get the "Country" column from the RowData   
+    if (e.RowType == RowType.DefaultRow)
+    {
+        var dataRowView = e.RowData as DataRowView;
+        if (dataRowView != null)
+        {
+            var dataRow = dataRowView.Row;
+            var cellValue = dataRow["Country"].ToString();
+
+            if (cellValue == "UK")
+                e.Style.BackColor = Color.PaleTurquoise;
+            else if (cellValue == "US")
+                e.Style.BackColor = Color.CornflowerBlue;
+            else
+                e.Style.BackColor = Color.Wheat;
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.QueryCellStyle, AddressOf SfDataGrid1_QueryCellStyle 
+Private Sub SfDataGrid_QueryRowStyle(ByVal sender As Object, ByVal e As QueryRowStyleEventArgs)
+	' Get the "Country" column from the RowData   
+	If e.RowType = RowType.DefaultRow Then
+		Dim dataRowView = TryCast(e.RowData, DataRowView)
+		If dataRowView IsNot Nothing Then
+			Dim dataRow = dataRowView.Row
+			Dim cellValue = dataRow("Country").ToString()
+
+			If cellValue Is "UK" Then
+				e.Style.BackColor = Color.PaleTurquoise
+			ElseIf cellValue Is "US" Then
+				e.Style.BackColor = Color.CornflowerBlue
+			Else
+				e.Style.BackColor = Color.Wheat
+			End If
+		End If
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](ConditionalStyling_images/ConditonalStyling16.png)
 
 ### Styling Alternate Rows
 
