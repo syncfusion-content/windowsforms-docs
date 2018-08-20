@@ -625,6 +625,114 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing Selection Behavior
+
+### Select all the default rows
+
+By default, [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method is select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) in SfDataGrid. The following code shows how to select all the default rows except other rows by using SelectAll method.
+{% tabs %}
+{% highlight c# %}
+//Using SelectAll method.
+private void SelectAll(object sender, EventArgs e)
+{
+    this.sfDataGrid.SelectAll();
+    this.sfDataGrid.SelectedNodeEntries.Clear();
+}
+{% endhighlight %}
+{% highlight vb %}
+' Using SelectAll event.
+private void SelectAll(Object sender, EventArgs e)
+	Me.sfDataGrid.SelectAll()
+	Me.sfDataGrid.SelectedNodeEntries.Clear()
+{% endhighlight %}
+{% endtabs %}
+
+By default, select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) when press the <kbd>Ctrl+A</kbd> key in SfDataGrid. The following code shows how to select all the default rows except other rows by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+{% tabs %}
+{% highlight c# %}
+//Using the Custom SelectionController.
+sfDataGrid.SelectionController = new CustomSelectionController(this.sfDataGrid);
+
+public class CustomSelectionController : RowSelectionController
+{
+    SfDataGrid sfDataGrid;
+
+    public CustomSelectionController(SfDataGrid sfDataGrid)
+        : base(sfDataGrid)
+    {
+        this.sfDataGrid = sfDataGrid;
+    }
+
+    protected override void HandleKeyOperations(KeyEventArgs args)
+    {
+        base.HandleKeyOperations(args);
+        if ((Control.ModifierKeys == Keys.Control || Control.ModifierKeys == Keys.ControlKey
+            || Control.ModifierKeys == Keys.LControlKey || Control.ModifierKeys == Keys.RControlKey) && args.KeyCode == Keys.A)
+            this.sfDataGrid.SelectedNodeEntries.Clear();
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+'Using the Custom SelectionController.
+sfDataGrid.SelectionController = New CustomSelectionController(Me.sfDataGrid)
+public class CustomSelectionController : RowSelectionController
+	Dim sfDataGrid As SfDataGrid
+
+	public CustomSelectionController(SfDataGrid sfDataGrid)
+		MyBase.New(sfDataGrid)
+		Me.sfDataGrid = sfDataGrid
+
+	protected override void HandleKeyOperations(KeyEventArgs args)
+		MyBase.HandleKeyOperations(args)
+		If (Control.ModifierKeys = Keys.Control OrElse Control.ModifierKeys = Keys.ControlKey OrElse Control.ModifierKeys = Keys.LControlKey OrElse Control.ModifierKeys = Keys.RControlKey) AndAlso args.KeyCode = Keys.A Then
+			Me.sfDataGrid.SelectedNodeEntries.Clear()
+		End If
+{% endhighlight %}
+{% endtabs %}
+
+Samples Link: [SelectAllRows ](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
+
+![](Selection_images/selection12.png)
+
+### Change Enter key behavior
+By default, while pressing <kbd>Enter</kbd> key the current cell will be moved to next focused row in the same column. The following code shows how to change the <kbd>Enter</kbd> key behavior by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.SelectionController = new CustomSelectionController(this.sfDataGrid);
+
+public class CustomSelectionController : RowSelectionController
+{
+    public CustomSelectionController(SfDataGrid dataGrid)
+        : base(dataGrid)
+    {
+    }
+
+    protected override void HandleKeyOperations(KeyEventArgs args)
+    {
+        if (args.KeyCode == Keys.Enter)
+            return;
+
+        base.HandleKeyOperations(args);
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.SelectionController = New CustomSelectionController(Me.sfDataGrid)
+
+public class CustomSelectionController : RowSelectionController
+	public CustomSelectionController(SfDataGrid dataGrid)
+		MyBase.New(dataGrid)
+
+	protected override void HandleKeyOperations(KeyEventArgs args)
+		If args.KeyCode = Keys.Enter Then
+			Return
+		End If
+
+		MyBase.HandleKeyOperations(args)
+{% endhighlight %}
+{% endtabs %}
+
 ### Displaying Message Box on Current Cell Activated
 
 The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivated_EV.html) event provides notification when the current cell is moved from one cell to another.
