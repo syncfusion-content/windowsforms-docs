@@ -87,7 +87,7 @@ Me.bar1.BarStyle = (CType((((((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle
 
 ### Hide the visibility for 'customize' option
 
-The visiblity for customize option in the XPMenusBar control can be disabled by setting the [EnableCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~EnableCustomizing.html) value as false. By default, the customize oprion is enabled in the XPMenus control.
+The visibility for customize option in the XPMenusBar control can be disabled by setting the [EnableCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~EnableCustomizing.html) value as false. By default, the customize option is enabled in the XPMenus control.
 
 Please refer the below code sample.
 
