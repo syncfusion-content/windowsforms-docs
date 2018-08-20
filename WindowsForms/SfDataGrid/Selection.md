@@ -625,11 +625,12 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing Selection Behavior
+## Customizing selection behavior
 
 ### Select all the default rows
 
-By default, [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method is select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) in SfDataGrid. The following code shows how to select all the default rows except other rows by using SelectAll method.
+By default, the [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method and <kbd>Ctrl+A</kbd> key combination selects all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow, and DefaultRow) in SfDataGrid. The following code shows how to select all the default rows except other rows using the SelectAll method.
+
 {% tabs %}
 {% highlight c# %}
 //Using SelectAll method.
@@ -647,7 +648,8 @@ private void SelectAll(Object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-By default, select all the rows (CaptionSummary, GroupSummary, UnboundRows, FilterRow, AddNewRow and DefaultRow) when press the <kbd>Ctrl+A</kbd> key in SfDataGrid. The following code shows how to select all the default rows except other rows by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+The following code shows how to select all the default rows except other rows by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+
 {% tabs %}
 {% highlight c# %}
 //Using the Custom SelectionController.
@@ -695,7 +697,8 @@ Samples Link: [SelectAllRows ](http://www.syncfusion.com/downloads/support/direc
 ![](Selection_images/selection12.png)
 
 ### Change Enter key behavior
-By default, while pressing <kbd>Enter</kbd> key the current cell will be moved to next focused row in the same column. The following code shows how to change the <kbd>Enter</kbd> key behavior by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
+
+When pressing the <kbd>Enter</kbd> key, the current cell will be moved to the next focused row of the same column, by default. The following code shows how to change the <kbd>Enter</kbd> key behavior by overriding the [HandleKeyOperations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController~HandleKeyOperations.html) method in [RowSelectionController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.RowSelectionController.html).
 
 {% tabs %}
 {% highlight c# %}
