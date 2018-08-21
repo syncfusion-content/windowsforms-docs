@@ -507,3 +507,19 @@ End Sub
 
 ![](Rows_images/FreezePanes_img6.png)
 
+## Loop through Records
+
+Loop through the records in the view can be retrieved in the same order as displayed in the view by using the [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection. 
+
+{% tabs %}
+{% highlight c# %}
+foreach (var record in sfDataGrid.View.Records) 
+{// Do your customizations here. }
+{% endhighlight %}
+{% highlight vb %}
+For Each record In sfDataGrid.View.Records
+ ' Do your customizations here. 
+Next record 
+{% endhighlight %}
+{% endtabs %}
+
