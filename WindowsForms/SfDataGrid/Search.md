@@ -45,6 +45,51 @@ Me.sfDataGrid.SearchController.Search("Alice")
 
 ![](Search_images/Search_img2.png)
 
+### Filtering with DataTable
+By default, when binding the DataTable collection to SfDataGrid the filtering is not working in searching operation. So you have to convert the DataTable to Dynamic Collection.
+
+{% tabs %}
+{% highlight c# %}
+public ObservableCollection<ExpandoObject> DynamicOrders
+{
+    get; set;
+}
+
+var collection = GetDataTable();
+var dynamicCollection = new ObservableCollection<ExpandoObject>();
+foreach (System.Data.DataRow row in collection.Rows)
+{
+    ExpandoObject expandoObject = new ExpandoObject();
+    dynamicCollection.Add(expandoObject);
+    foreach (DataColumn column in collection.Columns)
+    {
+        var dictionary = ((IDictionary<string, object>)(expandoObject));
+        dictionary[column.ColumnName] = row[column];
+    }
+}
+
+DynamicOrders = dynamicCollection;
+sfDataGrid1.DataSource = DynamicOrders;
+{% endhighlight %}
+{% highlight vb %}
+public Property DynamicOrders() As ObservableCollection(Of ExpandoObject)
+
+Dim collection = GetDataTable()
+Dim dynamicCollection = New ObservableCollection(Of ExpandoObject)()
+For Each row As System.Data.DataRow In collection.Rows
+	Dim expandoObject As New ExpandoObject()
+	dynamicCollection.Add(expandoObject)
+	For Each column As DataColumn In collection.Columns
+		Dim dictionary = (CType(expandoObject, IDictionary(Of String, Object)))
+		dictionary(column.ColumnName) = row(column)
+	Next column
+Next row
+
+DynamicOrders = dynamicCollection
+sfDataGrid1.DataSource = DynamicOrders
+{% endhighlight %}
+{% endtabs %}
+
 ### Case Sensitive Search
 The data can be searched with the case-sensitivity by setting the [SearchController.AllowCaseSensitiveSearch](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~AllowCaseSensitiveSearch.html) property to `true`.
 
