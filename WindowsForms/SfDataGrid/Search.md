@@ -46,7 +46,8 @@ Me.sfDataGrid.SearchController.Search("Alice")
 ![](Search_images/Search_img2.png)
 
 ### Filtering with DataTable
-By default, when binding the DataTable collection to SfDataGrid the filtering is not working in searching operation. So you have to convert the DataTable to Dynamic Collection.
+
+By default, when binding the DataTable collection to SfDataGrid, filtering will not work in searching operation. So, convert the DataTable to Dynamic collection.
 
 {% tabs %}
 {% highlight c# %}
