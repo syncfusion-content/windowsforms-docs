@@ -509,7 +509,7 @@ End Sub
 
 ## Loop through Records
 
-Records in a view can be loop through by using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection. 
+The records in a view can be looped using  [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection. 
 
 {% tabs %}
 {% highlight c# %}
