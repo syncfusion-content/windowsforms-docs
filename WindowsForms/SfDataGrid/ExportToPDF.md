@@ -479,7 +479,8 @@ End Sub
 Here, new font is created from font file and it is assigned to the Font of[PdfGridCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html).
 
 ### Set the width of the column when enable FitAllColumnsInOnePage option
-By default, all the columns will have the same width when enabling the [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions~FitAllColumnsInOnePage.html) option in [PdfExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).Column width can be changed while exporting the SfDataGrid to PdfGrid using [ExportToPdfGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension~ExportToPdfGrid.html) method. 
+
+By default, all the columns will have same width when enabling the [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions~FitAllColumnsInOnePage.html) option in [PdfExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Column width will be changed when exporting SfDataGrid to PdfGrid using the [ExportToPdfGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension~ExportToPdfGrid.html) method. 
 
 {% tabs %}
 {% highlight c# %}
