@@ -478,6 +478,60 @@ End Sub
 
 Here, new font is created from font file and it is assigned to the Font of[PdfGridCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html).
 
+### Set the width of the column when enable FitAllColumnsInOnePage option
+
+By default, all the columns will have same width when enabling the [FitAllColumnsInOnePage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions~FitAllColumnsInOnePage.html) option in [PdfExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html). Column width will be changed when exporting SfDataGrid to PdfGrid using the [ExportToPdfGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension~ExportToPdfGrid.html) method. 
+
+{% tabs %}
+{% highlight c# %}
+void ExportDataGrid(object sender, System.EventArgs e)
+{
+    var pdfExportingOptions = GetPdfExportOption();
+    var pdfDocument = new PdfDocument();
+    var page = pdfDocument.Pages.Add();
+
+    var pdfGrid = sfDataGrid1.ExportToPdfGrid(this.sfDataGrid1.View, pdfExportingOptions);
+
+    foreach (PdfGridCell headerCell in pdfGrid.Headers[0].Cells)
+    {
+        if (headerCell.Value.ToString() == sfDataGrid1.Columns["OrderID"].HeaderText)
+        {
+            var index = pdfGrid.Headers[0].Cells.IndexOf(headerCell);
+            pdfGrid.Columns[index].Width = 30;
+        }
+    }
+
+    var format = new PdfGridLayoutFormat()
+    {
+        Layout = PdfLayoutType.Paginate,
+        Break = PdfLayoutBreakType.FitPage
+    };
+
+    pdfGrid.Draw(page, new PointF(), format);
+}
+{% endhighlight %}
+{% highlight vb %}
+Private Sub ExportDataGrid(ByVal sender As Object, ByVal e As System.EventArgs)
+	Dim pdfExportingOptions = GetPdfExportOption()
+	Dim pdfDocument = New PdfDocument()
+	Dim page = pdfDocument.Pages.Add()
+
+	Dim pdfGrid = sfDataGrid1.ExportToPdfGrid(Me.sfDataGrid1.View, pdfExportingOptions)
+
+	For Each headerCell As PdfGridCell In pdfGrid.Headers(0).Cells
+		If headerCell.Value.ToString() = sfDataGrid1.Columns("OrderID").HeaderText Then
+			Dim index = pdfGrid.Headers(0).Cells.IndexOf(headerCell)
+			pdfGrid.Columns(index).Width = 30
+		End If
+	Next headerCell
+
+	Dim format = New PdfGridLayoutFormat() With {.Layout = PdfLayoutType.Paginate, .Break = PdfLayoutBreakType.FitPage}
+
+	pdfGrid.Draw(page, New PointF(), format)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ## Cell Customization in PDF while Exporting 
 The exported cells of the PDF document can be customized document by setting [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the `PdfExportingOptions`.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Overview | Barcode | Syncfusion
 description: overview
-platform: windows forms
+platform: windowsforms
 control: SfBarcode
 documentation: ug
 ---

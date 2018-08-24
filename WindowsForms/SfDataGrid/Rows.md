@@ -507,3 +507,18 @@ End Sub
 
 ![](Rows_images/FreezePanes_img6.png)
 
+## Loop through Records
+
+The records in a view can be looped using [SfDataGrid.View.Records](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.CollectionViewAdv~Records.html) collection. 
+
+{% tabs %}
+{% highlight c# %}
+foreach (var record in sfDataGrid.View.Records) 
+{// Do your customizations here. }
+{% endhighlight %}
+{% highlight vb %}
+For Each record In sfDataGrid.View.Records
+ ' Do your customizations here. 
+Next record 
+{% endhighlight %}
+{% endtabs %}
