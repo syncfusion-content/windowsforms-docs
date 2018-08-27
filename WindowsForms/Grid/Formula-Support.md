@@ -1038,14 +1038,17 @@ COUNTIF(range, criteria)
 * **criteria** is the criteria in the form of a number, expression or text that defines which cells will be counted. For example, the criteria can be expressed as “>32”.
 
 ### COUNTIFS
-Counts the number of cells within the specified ranges that meets a set of given criteria.
+
+Counts the number of cells in specified ranges, which meet a set of given criteria.
 
 #### Syntax
+
 COUNTIFS(range1, criteria1, range2, criteria2)
 
-#### Where:
-* **range1** is the range of cells from which you want to count cells.
-* **criteria1** is the criteria in the form of a number, expression or text that defines which cells will be counted. For example, the criteria can be expressed as “>32”.
+#### Where
+
+* range1: Specifies a range of cells from which you want to count the cells.
+* criteria1: Specifies a criteria in the form of number, expression, or text that defines the cells that will be counted. For example, the criteria can be expressed as “>32”.
 * **range2** and **criteria2** are optional.
 
 ### COVAR
