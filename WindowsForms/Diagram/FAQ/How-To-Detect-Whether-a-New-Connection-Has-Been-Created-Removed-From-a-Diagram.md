@@ -48,7 +48,7 @@ MessageBox.Show("Connection created with " + endpoint.Port.Container.Name);
 }
 else if (evtArgs.ChangeType == CollectionExChangeType.Remove)
 {
-//Add your logic here whed removed the connection...
+//Add your logic here when removed the connection...
 MessageBox.Show("Connection has been removed");
 }
 }
@@ -85,7 +85,7 @@ If evtArgs.ChangeType = CollectionExChangeType.Insert Then
 'Add your logic here when created the connection...
 MessageBox.Show("Connection created with " & endpoint.Port.Container.Name)
 ElseIf evtArgs.ChangeType = CollectionExChangeType.Remove Then
-'Add your logic here whed removed the connection...
+'Add your logic here when removed the connection...
 MessageBox.Show("Connection has been removed")
 End If
 End Sub
