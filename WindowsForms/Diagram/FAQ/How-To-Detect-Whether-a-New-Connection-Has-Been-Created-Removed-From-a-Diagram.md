@@ -1,19 +1,20 @@
 ---
 layout: post
-title: How To Detect Whether The Connection Changes Occurs R | Diagram | Windows Forms | Syncfusion
-description: how to detect whether the connection changes occurs in diagram
+title: How To Detect Whether a New Connection Has Been Added  R | Diagram | Windows Forms | Syncfusion
+description: how to detect whether a new connection has been created / removed from a diagram
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Detect Whether The Connection Changes Occurs in Diagram
+# How To Detect Whether a New Connection Has Been Created / Removed From a Diagram
 
-You can use the Diagram.Model.EventSink's ConnectionChanging/ConnectionChanged events to detect whether the connection changes has been occurred between the nodes in diagram.
+You can use the Diagram.Model.EventSink's ConnectionChanging/ConnectionChanged events to detect whether a new connection has been created / removed from a diagram.
 
-The following code examples illustrates to detect a connection changes occurs in diagram,
+The following code snippet illustrates how to detect a new link that has been added to the diagram, and the symbols connected by the new link. It also illustrates how to remove a link that connects symbols of the same type.
 
 {% tabs %}
+
 {% highlight c# %}
 
 ///Registering the ConnectionsChanging and ConnectionsChanged events... 
@@ -52,7 +53,11 @@ MessageBox.Show("Connection has been removed");
 }
 }
 
+
+
+
 {% endhighlight %}
+
 {% highlight vbnet %}
 
 '''Registering the ConnectionsChanging and ConnectionsChanged events... 
@@ -86,4 +91,5 @@ End If
 End Sub
 
 {% endhighlight %}
+
 {% endtabs %}

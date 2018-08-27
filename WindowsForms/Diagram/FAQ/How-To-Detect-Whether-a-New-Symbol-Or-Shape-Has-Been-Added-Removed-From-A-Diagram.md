@@ -1,93 +1,108 @@
 ---
 layout: post
-title: How To Detect Whether a New Connection Has Been Added  R | Diagram | Windows Forms | Syncfusion
-description: how to detect whether a new connection has been created / removed from a diagram
+title: How To Detect Whether a New Symbol Or Shape Has Be | Diagram | Windows Forms | Syncfusion
+description: how to detect whether a new symbol or shape has been added / removed from a diagram
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Detect Whether a New Connection Has Been Created / Removed From a Diagram
+# How To Detect Whether a New Symbol Or Shape Has Been Added / Removed From A Diagram
 
-You can use the Diagram.Model.EventSink's ConnectionChanging/ConnectionChanged events to detect whether a new connection has been created / removed from a diagram.
+You can make use of the Diagram.Model.EventSink.NodeCollectionChanged to detect whether a new node (symbol, shape or link) has been added/removed from a diagram. The event's CollectionExEventArgs argument provides information about the node ensuing the add / remove operation.
 
-The following code snippet illustrates how to detect a new link that has been added to the diagram, and the symbols connected by the new link. It also illustrates how to remove a link that connects symbols of the same type.
+The following code snippet updates a label with information on the type of the node that is added/deleted from the diagram.
 
 {% tabs %}
 
 {% highlight c# %}
 
-///Registering the ConnectionsChanging and ConnectionsChanged events... 
-diagram1.Model.EventSink.ConnectionsChanging += EventSink_ConnectionsChanging;
-diagram1.Model.EventSink.ConnectionsChanged += EventSink_ConnectionsChanged;
+diagram1.Model.EventSink.NodeCollectionChanged += new CollectionExEventHandler(EventSink_NodeCollectionChanged);
 
-void EventSink_ConnectionsChanging(CollectionExEventArgs evtArgs)
-{
-EndPoint endpoint = evtArgs.Element as EndPoint;
-if (evtArgs.ChangeType == CollectionExChangeType.Insert)
-{
-//Add your logic here while creating the connection...
-if (endpoint.Port != null)
-MessageBox.Show("Connection creating from " + endpoint.Port.Container.Name);
-}
-else if (evtArgs.ChangeType == CollectionExChangeType.Remove)
-{
-//Add your logic here while removing the connection...
-if (endpoint.Port != null)
-MessageBox.Show("Connection removing from " + endpoint.Port.Container.Name);
-}
-}
+//ChildrenChangeComplete Event
 
-void EventSink_ConnectionsChanged(CollectionExEventArgs evtArgs)
-{
-EndPoint endpoint = evtArgs.Element as EndPoint;
-if (evtArgs.ChangeType == CollectionExChangeType.Insert)
-{
-//Add your logic here when created the connection...
-MessageBox.Show("Connection created with " + endpoint.Port.Container.Name);
-}
-else if (evtArgs.ChangeType == CollectionExChangeType.Remove)
-{
-//Add your logic here when removed the connection...
-MessageBox.Show("Connection has been removed");
-}
-}
+//Update Label2 depending on whether a Shape is added or deleted from the Diagram
+
+ private void EventSink_NodeCollectionChanged(CollectionExEventArgs evtArgs)
+
+ {
+
+	Node n = evtArgs.Element as Node;
 
 
 
+	//ChangeType specifies whether the Collection change is Insertion/Removal
+
+	if (evtArgs.ChangeType == CollectionExChangeType.Insert)
+
+	{
+
+		this.label2.ForeColor = Color.Blue;
+
+
+
+		//Gets the Name of the inserted element
+
+		this.label2.Text = "Last Node Added : " + n.Name.ToString();
+
+	}
+
+	else if (evtArgs.ChangeType == CollectionExChangeType.Remove)
+
+	{
+
+		this.label2.ForeColor = Color.Red;
+
+
+
+		//Gets the Name of the removed element
+
+		this.label2.Text = "Last Node Removed : " + n.Name.ToString();
+
+	}
+
+ }        
 
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-'''Registering the ConnectionsChanging and ConnectionsChanged events... 
-diagram1.Model.EventSink.ConnectionsChanging += EventSink_ConnectionsChanging
-diagram1.Model.EventSink.ConnectionsChanged += EventSink_ConnectionsChanged
+EventSink.NodeCollectionChanged += new CollectionExEventHandler(EventSink_NodeCollectionChanged)
 
-Private Sub EventSink_ConnectionsChanging(ByVal evtArgs As CollectionExEventArgs)
-Dim endpoint As EndPoint = TryCast(evtArgs.Element, EndPoint)
-If evtArgs.ChangeType = CollectionExChangeType.Insert Then
-'Add your logic here while creating the connection...
-If endpoint.Port IsNot Nothing Then
-MessageBox.Show("Connection creating from " & endpoint.Port.Container.Name)
-End If
-ElseIf evtArgs.ChangeType = CollectionExChangeType.Remove Then
-'Add your logic here while removing the connection...
-If endpoint.Port IsNot Nothing Then
-MessageBox.Show("Connection removing from " & endpoint.Port.Container.Name)
-End If
-End If
-End Sub
+Me.Diagram1.Model.EventSink.NodeCollectionChanged+=New CollectionExEventHandler(EventSink_NodeCollectionChanged)
 
-Private Sub EventSink_ConnectionsChanged(ByVal evtArgs As CollectionExEventArgs)
-Dim endpoint As EndPoint = TryCast(evtArgs.Element, EndPoint)
-If evtArgs.ChangeType = CollectionExChangeType.Insert Then
-'Add your logic here when created the connection...
-MessageBox.Show("Connection created with " & endpoint.Port.Container.Name)
-ElseIf evtArgs.ChangeType = CollectionExChangeType.Remove Then
-'Add your logic here when removed the connection...
-MessageBox.Show("Connection has been removed")
-End If
+ 'ChildrenChangeComplete Event
+
+ 'Update Label2 depending on whether a Shape is added or deleted from the Diagram
+
+ Private Sub Model_ChildrenChangeComplete(ByVal evtArgs As CollectionExEventArgs)
+
+	Dim n As Node = TryCast(evtArgs.Element, Node)
+
+	'ChangeType specifies whether the Collection change is Insertion/Removal
+
+	If evtArgs.ChangeType = CollectionExChangeType.Insert Then
+
+		Me.label2.ForeColor = Color.Blue
+
+
+
+		'Gets the Name of the inserted element
+
+		Me.label2.Text = "Last Node Added: " + n.Name.ToString()
+
+	ElseIf evtArgs.ChangeType = CollectionExChangeType.Remove Then
+
+		Me.label2.ForeColor = Color.Red
+
+
+
+		'Gets the Name of the removed element
+
+		Me.label2.Text = "Last Node Removed: " + n.Name.ToString()
+
+	End If
+
 End Sub
 
 {% endhighlight %}
