@@ -107,9 +107,9 @@ Me.barManager1.EnableCustomizing = False
 
 {% endtabs %}
 
-The "customize" option in the XPMenus.Bar can be hidden by setting the [AllowCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~AllowCustomizing.html) property as false. By default, its value is set as true.
+The "customize" option for individual bar can be hidden by setting the [AllowCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~AllowCustomizing.html) property as false. By default, its value is set as true.
 
-Refer to the below code sample to hide the customize option in the XPMenus.Bar.
+Refer to the below code sample to hide the customize option for individual bar.
 
 {% tabs %}
 
