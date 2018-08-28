@@ -85,7 +85,7 @@ Me.bar1.BarStyle = (CType((((((((Syncfusion.Windows.Forms.Tools.XPMenus.BarStyle
 
 {% endtabs %}
 
-### Hiding the customize option
+### Hiding customize option in bar manager
 
 The "customize" option in the bar manager can be hidden by setting the [EnableCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~EnableCustomizing.html) property as false. By default, its value is set as true.
 
@@ -107,9 +107,11 @@ Me.barManager1.EnableCustomizing = False
 
 {% endtabs %}
 
-The "customize" option for individual bar can be hidden by setting the [AllowCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~AllowCustomizing.html) property as false. By default, its value is set as true.
+### Hiding customize option in individual bar
 
-Refer to the below code sample to hide the customize option for individual bar.
+The "customize" option in the individual bar can be hidden by setting the [AllowCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~AllowCustomizing.html) property as false. By default, its value is set as true.
+
+Refer to the below code sample to hide the customize option in the specific bar.
 
 {% tabs %}
 
@@ -127,7 +129,7 @@ Me.bar1.AllowCustomizing = False
 
 {% endtabs %}
 
-![Overview_img190](Overview_images/Overview_img190.png)
+![Hiding customize option in the individual bar](Overview_images/Overview_img190.png)
 
 ## Colors for menus and toolbars
 
