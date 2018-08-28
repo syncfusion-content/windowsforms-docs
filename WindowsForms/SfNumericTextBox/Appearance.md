@@ -62,11 +62,16 @@ Me.numericTextBox.Style.WatermarkForeColor = Color.IndianRed
 
 ## BorderColor
 
-We can customize the UI of the control by changing border color in different states like Focus and mouse hover. The properties available to customize are
+We can customize the UI of the control by changing border color in different states like Focus, Disabled and mouse hover. The properties available to customize are
 
 *	BorderColor- Assign the border color to the control.
 *	FocusBorderColor  - Assign the border color to the control, when the control gets its focus.
 *	HoverBorderColor - Assign the border color to the control, when the mouse is hover on it.
+*   DisabledBorderColor - Assign the border color to the control, when the control gets disabled.
+
+> Note :
+>
+> BorderColor, FocusBorderColor, DisabledBorderColor and HoverBorderColor will be applied only when BorderStyle property set as “FixedSingle”. 
 
 {% tabs %}
 
