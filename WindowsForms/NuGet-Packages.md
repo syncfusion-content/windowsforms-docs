@@ -22,7 +22,7 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
 2. Click the Copy URL label under Windows Forms platform to copy the Syncfusion Windows Forms platform NuGet feed to clipboard or directly use the following URL: 
 
-    [http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms](http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms) 
+    [https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms](https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms) 
 
     ![](NuGet_Packages_Images/img1.png)
 
@@ -40,7 +40,7 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
     **Name:** Name of the package listed in the available package sources.
     **Source:** Syncfusion Windows Forms NuGet Feed URL      
-    [http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms](http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms).
+    [https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms](https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms).
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
@@ -87,7 +87,7 @@ To reference the Syncfusion Windows Forms component using the Package Manager Co
     Install-Package Syncfusion.Chart.Windows46
 
     #install specified package in default project with specified Package Source
-    Install-Package Syncfusion.Chart.Windows46-Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
+    Install-Package Syncfusion.Chart.Windows46-Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
 
     #install specified package in specified project 
     Install-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
@@ -117,7 +117,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     **For example:**
 
     ~~~
-    nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
+    nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
 ### NuGet installation
@@ -141,7 +141,7 @@ nuget.exe install “Syncfusion.Chart.Windows46”
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with specific Syncfusion Package Source
-nuget.exe install “Syncfusion.Chart.Windows46”  –Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
+nuget.exe install “Syncfusion.Chart.Windows46”  –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
 ~~~
 
 ## Upgrading NuGet packages
@@ -184,7 +184,7 @@ To update the installed Syncfusion Windows Forms NuGet packages using the Packag
     Update-Package Syncfusion.Chart.Windows46
 
     #Update specified package in default project with specified Package Source
-    Update-Package Syncfusion.Chart.Windows46 –Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
+    Update-Package Syncfusion.Chart.Windows46 –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
 
     #Update specified package in specified project 
     Update-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
@@ -221,7 +221,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
 
     #Update all NuGet packages from specified Packages Source
-    nuget update -Source “http://nuget.syncfusion.com/nuget_windowsforms/nuget/getsyncfusionpackages/windows-forms”
+    nuget update -Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
    
