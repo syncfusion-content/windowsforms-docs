@@ -514,7 +514,7 @@ Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfu
 Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) property to enable additional row either Top or Bottom of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html).
 The editing operations can be customized by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) events.
 
-## Handling events of DataGrid
+## Handling events 
 You cannot handle the Key and Mouse events of the SfDataGrid when raising them, because the TableControl is hosted in the SfDataGrid. So, raise the events for [SfDataGrid.TableControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~TableControl.html).
 
 {% tabs %}

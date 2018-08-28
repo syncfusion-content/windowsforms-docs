@@ -447,5 +447,5 @@ By default, the docking manager cannot deserialize its saved layout properly, wh
 
 Since the docking manager state persistence feature is implemented in such a way that it matches the child collection of saved layout with current layout internally and loads properly when the children collection remains same. It results in improper layout when any child collection changes dynamically.
 
-N> Find the sample with serialization support in the following location. 
+N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.<br/> Find the sample with serialization support in the following location. 
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\StatePersistence

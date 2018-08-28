@@ -73,6 +73,10 @@ Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-D
 
 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
 
+// To retrieve Localization resources from target application.
+
+InputLocalizationResource.SetResources(typeof(Form1).Assembly,"GettingStarted_2015.Resources.Syncfusion.SfInput.WinForms");
+
 {% endhighlight  %}
 
 {% highlight VB %}
@@ -82,6 +86,10 @@ Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de
 Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de-DE")
 
 Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de-DE")
+
+' To retrieve Localization resources from target application.
+
+InputLocalizationResource.SetResources(GetType(Form1).Assembly, "GettingStarted_2015.Resources.Syncfusion.SfInput.WinForms")
 
 {% endhighlight  %}
 
