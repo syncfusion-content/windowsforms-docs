@@ -24,3 +24,5 @@ The `SfDateTimeEdit` is a control that allows you to edit the `DateTime` in the 
 * **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
 
 * **Watermark**: Supports to display watermark text when a selected date is null.
+
+* **Testing**: Provides QTP add-in that contains custom libraries, that help [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#essential-tools) to recognize SfDateTimeEdit.
