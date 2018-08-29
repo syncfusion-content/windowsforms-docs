@@ -771,6 +771,33 @@ End Sub
 
 Here, `OrderID` column cells are customized while exporting.
 
+### Changing the border color of cells in Excel document
+The border color of the cell will be customized when exporting to Excel by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the [PdfExportingOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+
+{% tabs %}
+{% highlight c# %}
+ExcelExportingOptions GridExcelExportingOptions = new ExcelExportingOptions();
+GridExcelExportingOptions.CellExporting += OnCellExporting;
+
+private void OnCellExporting(object sender, Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs e)
+{
+    //Set the border color for the excel cell 
+    e.Range.BorderAround(ExcelLineStyle.Medium, ExcelKnownColors.Yellow);
+}  
+{% endhighlight %}
+{% highlight vb %}
+Private GridExcelExportingOptions As New ExcelExportingOptions()
+AddHandler CellExporting, AddressOf OnCellExporting
+
+Private Sub OnCellExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.DataGridCellExcelExportingEventArgs)
+	'Set the border color for the excel cell 
+	e.Range.BorderAround(ExcelLineStyle.Medium, ExcelKnownColors.Yellow)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](ExportToExcel_images/ExportToExcel_img12.png)
+
 ## Customize Exported Workbook and Worksheet
 SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.
 
