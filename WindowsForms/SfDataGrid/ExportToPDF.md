@@ -629,7 +629,9 @@ End Sub
 ![](ExportToPDF_images/ExportToPDF_img5.jpeg)
 
 ### Changing the border color of cells in PDF document
-The border color of the cell can be customized while exporting to PDF by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the [PdfExportingOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+
+The border color of the cell will be customized when exporting to PDF by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of [PdfExportingOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
