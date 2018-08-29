@@ -148,6 +148,14 @@ DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
+{{'[NodeClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeClick_EV.html#"")'| markdownify }}</td><td>
+Triggered when mouse clicked on the node.</td></tr>
+<tr>
+<td>
+{{'[NodeDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeDoubleClick_EV.html#"")'| markdownify }}</td><td>
+Triggered when mouse double clicked on the node.</td></tr>
+<tr>
+<td>
 {{'[NodeMouseEnter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeMouseEnter_EV.html#"")'| markdownify }}</td><td>
 Triggered when mouse enter into the node.</td></tr>
 <tr>
@@ -186,7 +194,9 @@ Actual Nodes gets the exact node. If we click a node from group it will retrieve
 private void Form1_Load(object sender, EventArgs e)
 {
 	this.diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
-	this.diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;       
+	this.diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave; 
+	this.diagram1.EventSink.NodeClick += EventSink_NodeClick;
+    this.diagram1.EventSink.NodeDoubleClick += EventSink_NodeDoubleClick;      
 }
 
 void EventSink_NodeMouseEnter(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
@@ -198,6 +208,15 @@ void EventSink_NodeMouseLeave(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArg
 {    
 	MessageBox.Show("Node: " + evtArgs.Node.Name.ToString() + " , " + "Actual Node: " + evtArgs.ActualNode.Name.ToString());    
 }
+void EventSink_NodeDoubleClick(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
+{
+    MessageBox.Show("Node: " + evtArgs.Node.Name.ToString()); 
+}
+
+void EventSink_NodeClick(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs evtArgs)
+{
+    MessageBox.Show("Node: " + evtArgs.Node.Name.ToString()); 
+}
 
 {% endhighlight %}
 {% highlight vb %}
@@ -205,6 +224,8 @@ void EventSink_NodeMouseLeave(Syncfusion.Windows.Forms.Diagram.NodeMouseEventArg
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
 AddHandler Me.diagram1.EventSink.NodeMouseEnter, AddressOf EventSink_NodeMouseEnter
 AddHandler Me.diagram1.EventSink.NodeMouseLeave, AddressOf EventSink_NodeMouseLeave
+AddHandler Me.diagram1.EventSink.NodeClick, AddressOf EventSink_NodeClick
+AddHandler Me.diagram1.EventSink.NodeDoubleClick, AddressOf EventSink_NodeDoubleClick
 End Sub
 
 Private Sub EventSink_NodeMouseEnter(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
@@ -213,6 +234,14 @@ End Sub
 
 Private Sub EventSink_NodeMouseLeave(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
 MessageBox.Show("Node: " & evtArgs.Node.Name.ToString() & " , " & "Actual Node: " & evtArgs.ActualNode.Name.ToString())
+End Sub
+
+Private Sub EventSink_NodeClick(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
+MessageBox.Show("Node: " & evtArgs.Node.Name.ToString())
+End Sub
+
+Private Sub EventSink_NodeDoubleClick(ByVal evtArgs As Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs)
+MessageBox.Show("Node: " & evtArgs.Node.Name.ToString())
 End Sub
 
 {% endhighlight %}
