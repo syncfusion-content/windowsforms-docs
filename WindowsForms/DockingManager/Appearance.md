@@ -609,6 +609,37 @@ Me.dockingManager1.HostFormClientBorder = False
 
 ![](Appearance_images/Appearance_img19.png)
 
+## Customize Caption Height
+
+The height of dock and float window caption can be customized 
+by using the  `CaptionHeight` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Setting Caption Height
+
+this.dockingManager1.CaptionHeight = 40;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'Setting Caption Height
+
+Me.DockingManager1.CaptionHeight = 40
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearance_images/Appearance_img41.png)
+
+N>  The `CaptionHeight` property will not applicable for Default and VS2005 visual style of docking mananger. The maximum value of `CaptionHeight` is 60.
+
+
 ## Customize tabs in dock window
 
 The docking manager provides tab and label settings for the docked windows. These settings allow you to control the appearance of dock tabs.
