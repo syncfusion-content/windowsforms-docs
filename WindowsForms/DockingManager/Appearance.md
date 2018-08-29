@@ -637,7 +637,7 @@ Me.DockingManager1.CaptionHeight = 40
 
 ![](Appearance_images/Appearance_img41.png)
 
-N>  The `CaptionHeight` property will not applicable for Default and VS2005 visual style of docking mananger. The maximum value of `CaptionHeight` is 60.
+N>  The `CaptionHeight` property will not applicable for Default and VS2005 visual style of docking manager. The maximum value of `CaptionHeight` is 60.
 
 
 ## Customize tabs in dock window
