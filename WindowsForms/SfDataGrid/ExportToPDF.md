@@ -628,6 +628,38 @@ End Sub
 
 ![](ExportToPDF_images/ExportToPDF_img5.jpeg)
 
+### Changing the border color of cells in PDF document
+The border color of the cell can be customized while exporting to PDF by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the [PdfExportingOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html).
+{% tabs %}
+{% highlight c# %}
+PdfExportingOptions options = new PdfExportingOptions();
+options.CellExporting += OnCellExporting;
+
+void OnCellExporting(object sender, DataGridCellPdfExportingEventArgs e)
+{
+    if (e.CellValue == null)
+        e.CellValue = string.Empty;
+
+    //Set the border color for the pdf cell 
+    e.PdfGridCell.Style.Borders.All = new PdfPen(Color.Blue, 0.2f);
+}
+{% endhighlight %}
+{% highlight vb %}
+Private options As New PdfExportingOptions()
+AddHandler CellExporting, AddressOf OnCellExporting
+Private Sub OnCellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
+	If e.CellValue Is Nothing Then
+		e.CellValue = String.Empty
+	End If
+
+	'Set the border color for the pdf cell 
+	e.PdfGridCell.Style.Borders.All = New PdfPen(Color.Blue, 0.2f)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](ExportToPDF_images/ExportToPDF_img7.jpeg)
+
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 By default, Middle Eastern languages (Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat~RightToLeft.html) property in [PdfStringFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html) by using `CellExporting` event.
 {% tabs %}
