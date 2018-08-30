@@ -772,8 +772,7 @@ End Sub
 Here, `OrderID` column cells are customized while exporting.
 
 ### Changing the border color of cells in Excel document
-The border color of the cell will be customized when exporting to Excel by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the [PdfExportingOption](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
-
+The border color of the cell will be customized when exporting to Excel by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the [ExcelExportingOptions.](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
 {% tabs %}
 {% highlight c# %}
 ExcelExportingOptions GridExcelExportingOptions = new ExcelExportingOptions();
