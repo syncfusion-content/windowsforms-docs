@@ -25,4 +25,4 @@ The `SfCalendar` is a control that allows you to select a date from the calendar
 
 * **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
 
-* **Testing**: Provides QTP add-in that contains custom libraries, that help [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#essential-tools) to recognize SfCalendar.
+* **Testing**: Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#essential-tools) to recognize SfCalendar.

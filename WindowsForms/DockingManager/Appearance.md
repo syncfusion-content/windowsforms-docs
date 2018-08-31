@@ -612,7 +612,7 @@ Me.dockingManager1.HostFormClientBorder = False
 ## Customize Caption Height
 
 The height of dock and float window caption can be customized 
-by using the  `CaptionHeight` property.
+using the  `CaptionHeight` property.
 
 {% tabs %}
 
