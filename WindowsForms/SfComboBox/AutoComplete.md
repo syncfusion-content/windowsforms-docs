@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Auto Complete
+title: Auto Complete
 description: This section explains about the auto complete support in SfComboBox.
 platform: windowsforms
 control: SfComboBox
