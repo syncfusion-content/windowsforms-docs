@@ -83,6 +83,41 @@ Me.pivotGridControl1.ShowPivotTableFieldList = True
 
 ![Pivot-Schema-Designer_img4](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img4.png)
 
+## Setting caption in pivot table field list
+
+The pivot grid control in Windows Forms provides support to duplicate a specific field by specifying different names for it. This support can be achieved by using the `FieldCaption` property of row and column pivot item as well as pivot calculation item. Using this support, the pivot grid control allows to define multiple items in same underlying type.
+
+Refer to the below code sample to set field caption for pivot row items and pivot calculation items.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Pivot row items
+this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldCaption = "Product_1", TotalHeader = "Total" });
+this.pivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", FieldCaption = "Product_2", TotalHeader = "Total" });
+
+// Pivot calculation items
+this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", FieldCaption = "Amount($)", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
+this.pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", FieldCaption = "Amount(Units)", Format = "##", SummaryType = SummaryType.IntTotalSum });
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Pivot row items
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .FieldCaption = "Product_1", .TotalHeader = "Total"})
+Me.pivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .FieldCaption = "Product_2", .TotalHeader = "Total"})
+
+'Pivot calculation items
+Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .FieldCaption = "Amount($)", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
+Me.pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .FieldCaption = "Amount(Units)", .Format = "##", .SummaryType = SummaryType.IntTotalSum})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Caption in pivot table field list](Pivot-Schema-Designer_images/FieldCaption.png)
+
 ## Interactive features
 
 ### Adding fields to pivot grid
