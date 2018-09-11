@@ -411,7 +411,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 <kbd>Tab</kbd>
 </td>
 <td>
-Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.If the active current cell is the last cell of the last row, the focus will be moved to next control in the tab order of the parent container.
+Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.
 </td>
 </tr>
 <tr>
