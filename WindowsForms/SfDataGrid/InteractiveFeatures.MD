@@ -415,6 +415,195 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 
 ![](InteractiveFeatures_Images/ContextMenu13.png)
 
+## Column Chooser 
+
+The visibility of the columns in the SfDataGrid can be changed at the run time by using the `ColumnChooserPopup` or `ColumnChooser` control. 
+
+### Load Column Chooser Popup
+
+The ColumnChooser popup can be enabled to the application by creating the instance of the ColumnChooserPopup by passing the SfDataGrid to the constructor. You can display the popup by using the Show method. The columns visibility will be changed while clicking the OK button based on the checked state of checked list box of the column chooser popup.
+
+{% tabs %}
+{% highlight c# %}
+//Attach the column chooser popup to the sfdatagrid.
+ColumnChooserPopup columnChooser = new ColumnChooserPopup(this.sfDataGrid);
+columnChooserPopup.Show();
+{% endhighlight %}
+{% highlight vb %}
+'Attach the column chooser popup to the sfdatagrid.
+Dim columnChooser As New ColumnChooserPopup(Me.sfDataGrid)
+columnChooserPopup.Show()
+{% endhighlight %}
+{% endtabs %}
+
+![](InteractiveFeatures_Images/ColumnChooser1.png)
+
+### Load Column Chooser as Control
+
+The ColumnChooser can also be loaded as the control by creating the instance of the `ColumnChooser` control and add it to the container control of the application.
+
+{% tabs %}
+{% highlight c# %}
+// Add column chooser as control
+ColumnChooser columnChooser = new ColumnChooser(sfDataGrid);
+columnChooser.Location = new Point(500, 10);
+this.Controls.Add(columnChooser);
+{% endhighlight %}
+{% highlight vb %}
+' Add column chooser as control
+Dim columnChooser As New ColumnChooser(sfDataGrid)
+columnChooser.Location = New Point(500, 10)
+Me.Controls.Add(columnChooser)
+{% endhighlight %}
+{% endtabs %}
+
+![](InteractiveFeatures_Images/ColumnChooser2.png)
+
+### Appearance customization
+
+The appearance of the ColumnChooser can be customized by accessing the inner controls of the ColumnChooser such as CheckedListBox, OKButton, CancelButton and SearchTextBox. 
+You can change the selection backcolor of the checked listbox by setting the style properties as follows,
+
+{% tabs %}
+{% highlight c# %}
+//Set the selection backcolor for the checked listbox.
+ColumnChooserPopup columnChooser = new ColumnChooserPopup(this.sfDataGrid);
+columnChooserPopup.ColumnChooser.CheckedListBox.Style.SelectionStyle.SelectionBackColor = Color.LightGreen;
+columnChooserPopup.Show();
+{% endhighlight %}
+{% highlight vb %}
+'Set the selection backcolor for the checked listbox.
+Dim columnChooser As New ColumnChooserPopup(Me.sfDataGrid)
+columnChooserPopup.ColumnChooser.CheckedListBox.Style.SelectionStyle.SelectionBackColor = Color.LightGreen
+columnChooserPopup.Show()
+{% endhighlight %}
+{% endtabs %}
+
+![](InteractiveFeatures_Images/ColumnChooser3.png)
+
+### Loading Custom ColumnChooser
+
+By default column chooser will be loaded with the OK and Cancel button and the visibility of the columns will be applied only on clicking the OK button. This can be changed to apply the visibility on clicking the checked list box item. 
+
+#### Creating custom column chooser control
+
+{% tabs %}
+{% highlight c# %}
+/// <summary>
+/// Represents the class that provides the custom column chooser control.
+/// </summary>
+public class ColumnChooserExt : ColumnChooser
+{
+    /// <summary>
+    /// The grid attached with the column chooser.
+    /// </summary>
+    private SfDataGrid dataGrid;
+
+    /// <summary>
+    /// Initializes a new instance of the sfDataGrid
+    /// </summary>
+    /// <param name="sfDataGrid">The data grid which needs to be attached to the control.</param>
+    public ColumnChooserExt(SfDataGrid sfDataGrid): base(sfDataGrid)
+    {
+        dataGrid = sfDataGrid;
+    }
+
+    /// <summary>
+    /// Overridden to updated the setting of the checked list box.
+    /// </summary>
+    protected override void AddCheckedListBox()
+    {
+        base.AddCheckedListBox();
+        this.CheckedListBox.CheckBoxSelectionMode = Syncfusion.WinForms.ListView.Enums.CheckBoxSelectionMode.CheckOnItemClick;
+        this.CheckedListBox.ItemChecked += CheckedListBox_ItemChecking;
+    }
+
+    /// <summary>
+    /// Change the visibility of the columns on checking the checked list box item.
+    /// </summary>
+    /// <param name="sender">The object of the sender.</param>
+    /// <param name="e">An <see cref=""/></param>
+    void CheckedListBox_ItemChecking(object sender, Syncfusion.WinForms.ListView.Events.ItemCheckedEventArgs e)
+    {
+        dataGrid.Columns[e.ItemData.ToString()].Visible = e.NewState == CheckState.Checked;
+    }
+
+    /// <summary>
+    /// Overridden to cancel the adding of OK button.
+    /// </summary>
+    protected override void AddOKButton()
+    {
+        // Do nothing to avod adding the OK button.
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+''' <summary>
+''' Represents the class that provides the custom column chooser control.
+''' </summary>
+Public Class ColumnChooserExt
+	Inherits ColumnChooser
+	''' <summary>
+	''' The grid attached with the column chooser.
+	''' </summary>
+	Private dataGrid As SfDataGrid
+
+	''' <summary>
+	''' Initializes a new instance of the sfDataGrid
+	''' </summary>
+	''' <param name="sfDataGrid">The data grid which needs to be attached to the control.</param>
+	Public Sub New(ByVal sfDataGrid As SfDataGrid)
+		MyBase.New(sfDataGrid)
+		dataGrid = sfDataGrid
+	End Sub
+
+	''' <summary>
+	''' Overridden to updated the setting of the checked listbox.
+	''' </summary>
+	Protected Overrides Sub AddCheckedListBox()
+		MyBase.AddCheckedListBox()
+		Me.CheckedListBox.CheckBoxSelectionMode = Syncfusion.WinForms.ListView.Enums.CheckBoxSelectionMode.CheckOnItemClick
+		AddHandler Me.CheckedListBox.ItemChecked, AddressOf CheckedListBox_ItemChecking
+	End Sub
+
+	''' <summary>
+	''' Change the visibility of the columns on checking the checked list box item.
+	''' </summary>
+	''' <param name="sender">The object of the sender.</param>
+	''' <param name="e">An <see cref=""/></param>
+	Private Sub CheckedListBox_ItemChecking(ByVal sender As Object, ByVal e As Syncfusion.WinForms.ListView.Events.ItemCheckedEventArgs)
+		dataGrid.Columns(e.ItemData.ToString()).Visible = e.NewState = CheckState.Checked
+	End Sub
+
+	''' <summary>
+	''' Overridden to cancel the adding of OK button.
+	''' </summary>
+	Protected Overrides Sub AddOKButton()
+		' Do nothing to avod adding the OK button.
+	End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+#### Adding Custom ColumnChooser Control
+
+{% tabs %}
+{% highlight c# %}
+// Add column chooser as control
+ColumnChooserExt columnChooser = new ColumnChooserExt(sfDataGrid);
+columnChooser.Location = new Point(500, 10);
+this.Controls.Add(columnChooser);
+{% endhighlight %}
+{% highlight vb %}
+' Add column chooser as control
+Dim columnChooser As New ColumnChooserExt(sfDataGrid)
+columnChooser.Location = New Point(500, 10)
+Me.Controls.Add(columnChooser)
+{% endhighlight %}
+{% endtabs %}
+
+![](InteractiveFeatures_Images/ColumnChooser4.png)
+
 
 ## ToolTip
 

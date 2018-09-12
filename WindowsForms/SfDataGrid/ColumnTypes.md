@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column types
 description: This section explains about the column types in SfDataGrid.
@@ -264,6 +264,10 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 {% endtabs %}
 
 ![](ColumnTypes_images/ColumnTypes_img2.png)
+
+### Disable Column
+
+The column can be disabled by setting the `GridColumnBase.AllowFocus` property. Therefore, that column can’t be selected or edited.
 
 ## GridTextColumn
 
