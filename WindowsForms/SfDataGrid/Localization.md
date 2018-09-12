@@ -57,6 +57,11 @@ End Sub
 
 ![](Localization_images/Localization_img5.png)
 
+To localize the string “Select All“ in the CheckListBox of the FilterControl, the resource file of the SfListView should be included into the sample same as in the steps specified above to add the resource file of the SfDataGrid.
+The default resource file of the SfListView can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291). Please refer to the [localization](https://help.syncfusion.com/windowsforms/sflistview/localization) section in SfListView.
+
+![](Localization_images/Localization_img9.png)
+
 ## Editing Default Resource File
 The default resource file can be edited by adding it to Resources folder of the application where SfDataGrid reads the static texts from here. The default resource file can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms-917181687.zip).
 
