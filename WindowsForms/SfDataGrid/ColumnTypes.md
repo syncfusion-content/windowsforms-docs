@@ -696,6 +696,21 @@ All the checkboxes in a column will be checked/unchecked by clicking on the Chec
 
 ![](ColumnTypes_images/ColumnTypes_img22.png)
 
+By default, enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowCheckBoxOnHeader.html) property will display the checkbox with text on the header cell of [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html). The text in the header cell can be disabled by setting empty value for the [HeaderText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderText.html) property of the column.
+
+{% tabs %}
+{% highlight c# %}
+(this.sfDataGrid1.Columns["IsClosed"] as GridCheckBoxColumn).AllowCheckBoxOnHeader = true;
+this.sfDataGrid1.Columns["IsClosed"].HeaderText = string.Empty;
+{% endhighlight %}
+{% highlight vb %}
+TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnHeader = True
+Me.sfDataGrid1.Columns("IsClosed").HeaderText = String.Empty
+{% endhighlight %}
+{% endtabs %}
+
+![](ColumnTypes_images/ColumnTypes_img23.png)
+
 ### Customizing the Check Box Value
 
 [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) allows to display check box for enumeration type columns also. The corresponding underlying value for the checked, unchecked and intermediate state can be specified by the below properties.
