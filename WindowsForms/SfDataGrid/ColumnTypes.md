@@ -267,7 +267,7 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 
 ### Disable Column
 
-The column can be disabled by setting the `GridColumnBase.AllowFocus` property. Therefore, that column can’t be selected or edited.
+A column can be disabled by setting the `GridColumnBase.AllowFocus` property. Therefore, that column cannot be selected or edited.
 
 ## GridTextColumn
 
