@@ -660,7 +660,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img7.jpeg)
+![](ExportToPDF_images/ExportToPDF_img7.png)
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 By default, Middle Eastern languages (Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat~RightToLeft.html) property in [PdfStringFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html) by using `CellExporting` event.
