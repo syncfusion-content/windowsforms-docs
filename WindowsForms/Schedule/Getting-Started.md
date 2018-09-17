@@ -215,7 +215,7 @@ Double-click on the appointment or right-click and choose the **Edit Item** from
 
 This action will display an appointment form with appointment details to modify the appointment then, click on Save and Close button.
 
-![](Getting-Started_images/Getting-Started_img21.jpeg)
+![](Getting-Started_images/Getting-Started_img21.jpg)
 
 
 ### Save all the appointment
