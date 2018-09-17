@@ -17,7 +17,7 @@ Please refer the below code sample.
 
 {% highlight c# %}
 
-//PivotChartHelper class acts as an interface to bind the datafrom grid to chart.
+//PivotChartHelper class acts as an interface to bind the data from grid to chart.
 PivotGridChartHelper helper = new PivotGridChartHelper();
 helper.WireGrid(this.pivotGridControl1, this.chartControl1);
 
@@ -25,7 +25,7 @@ helper.WireGrid(this.pivotGridControl1, this.chartControl1);
 
 {% highlight vb %}
 
-'PivotChartHelper class acts as an interface to bind the datafrom grid to chart.
+'PivotChartHelper class acts as an interface to bind the data from grid to chart.
 Dim helper As New PivotGridChartHelper()
 helper.WireGrid(Me.pivotGridControl1, Me.chartControl1)
 
@@ -59,13 +59,13 @@ Me.chartControl1.ShowContextMenu = True
 
 ## To persist the Chart series styles
 
-While the pivotgrid cell selection is changed,by default the chart series are rendered newly. But you can persist the chart series types and styles by invoking the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) helper method with 'true' parameter.
+While the pivot grid cell selection is changed,by default the chart series are rendered newly. But you can persist the chart series types and styles by invoking the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) helper method with 'true' parameter.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//PivotChartHelper class acts as an interface to bind the datafrom grid to chart.
+//PivotChartHelper class acts as an interface to bind the data from grid to chart.
 PivotGridChartHelper helper = new PivotGridChartHelper();
 helper.WireGrid(this.pivotGridControl1, this.chartControl1, true);
 
@@ -73,7 +73,7 @@ helper.WireGrid(this.pivotGridControl1, this.chartControl1, true);
 
 {% highlight vb %}
 
-'PivotChartHelper class acts as an interface to bind the datafrom grid to chart.
+'PivotChartHelper class acts as an interface to bind the data from grid to chart.
 Dim helper As New PivotGridChartHelper()
 helper.WireGrid(Me.pivotGridControl1, Me.chartControl1, True)
 
