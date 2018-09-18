@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Bind Pivot Grid with Chart | PivotGrid | Windows Forms | Syncfusion
-description: How to integrate pivot grid and pivot chart
+description: How to bind pivot grid with chart
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
@@ -9,15 +9,14 @@ documentation: ug
 
 # How to Bind Pivot Grid with Chart
 
-PivotChartHelper class is used as an interface to bind the pivot grid control and chart control. This helper class is having the method named as [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl).html) which is used to wire the PivotGrid control into base chart. This helper method is generally render the values into the base chart control based on the selected ranges from PivotGrid. 
+The [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class acts as an interface to bind the values of pivot grid control with chart control. Based on the selected ranges or values of pivot grid control, the chart control is rendered. To achieve this support, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl).html) method of PivotGridChartHelper class should be used.
 
-Please refer the below code sample.
+Please refer to the below code sample to bind the pivot grid control with chart control.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//PivotChartHelper class acts as an interface to bind the data from grid to chart.
 PivotGridChartHelper helper = new PivotGridChartHelper();
 helper.WireGrid(this.pivotGridControl1, this.chartControl1);
 
@@ -25,7 +24,6 @@ helper.WireGrid(this.pivotGridControl1, this.chartControl1);
 
 {% highlight vb %}
 
-'PivotChartHelper class acts as an interface to bind the data from grid to chart.
 Dim helper As New PivotGridChartHelper()
 helper.WireGrid(Me.pivotGridControl1, Me.chartControl1)
 
@@ -33,11 +31,13 @@ helper.WireGrid(Me.pivotGridControl1, Me.chartControl1)
 
 {% endtabs %}
 
-![PivotGrid-with-chart_image1.png](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image1.png)
+![Binding pivot grid with chart control](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image1.png)
 
-### To enable the context menu
+## Customizing style and type of chart series
 
-You can enable the context menu to customize the chart series types and styles by using the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property of chart control.
+The style and type of chart series can be customized at run time by using the context menu of chart control. In order to show the context menu in chart control, the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property of chart control should be set as true.
+
+Please refer to the below code sample to view the context menu of chart control that is integrated with pivot grid control.
 
 {% tabs %}
 
@@ -55,17 +55,18 @@ Me.chartControl1.ShowContextMenu = True
 
 {% endtabs %}
 
-![PivotGrid-with-chart_image2.png](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.png)
+![Customizing chart integrated with pivot grid](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.png)
 
-## To persist the Chart series styles
+## Persisting style and type of chart series
 
-While the pivot grid cell selection is changed,by default the chart series are rendered newly. But you can persist the chart series types and styles by invoking the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) helper method with 'true' parameter.
+By default, the style and type of chart series modified at run time are not peristed in the chart control and the chart control is rendered with default series type and style while selecting the values in the pivot grid control.
+
+In order to perist the series type and style of chart control, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) method of PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class should be invoked with `true` parameter as specified in the below code sample.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//PivotChartHelper class acts as an interface to bind the data from grid to chart.
 PivotGridChartHelper helper = new PivotGridChartHelper();
 helper.WireGrid(this.pivotGridControl1, this.chartControl1, true);
 
@@ -73,7 +74,6 @@ helper.WireGrid(this.pivotGridControl1, this.chartControl1, true);
 
 {% highlight vb %}
 
-'PivotChartHelper class acts as an interface to bind the data from grid to chart.
 Dim helper As New PivotGridChartHelper()
 helper.WireGrid(Me.pivotGridControl1, Me.chartControl1, True)
 
@@ -81,14 +81,14 @@ helper.WireGrid(Me.pivotGridControl1, Me.chartControl1, True)
 
 {% endtabs %}
 
-For example, changing the first series types into the 'Scatter' and also changing the series color to Red.
+For example, the type and color of the first series is changed as scatter and red at run time as shown below.
 
-![PivotGrid-with-chart_image3.png](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image3.png)
+![Customizing style and type of chart series](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image3.png)
 
-After selecting the new ranges in pivot grid, still chart maintains the chart series type(scatter) and series color(Red) for first series.
+Using this support, the type and color of chart series can be maintained in the chart control after selecting the new ranges in the pivot grid control as shown below.
 
 ![PivotGrid-with-chart_image4.png](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image4.png)
 
-A demo sample is available in the following location.
+A demo sample is available at the following location.
 
 &lt;Installed Drive&gt;\Users\Public\Documents\Syncfusion\Windows\\&lt;Version Number&gt;\PivotGrid.Windows\Samples\Product Showcase\Pivotal Chart Demo
