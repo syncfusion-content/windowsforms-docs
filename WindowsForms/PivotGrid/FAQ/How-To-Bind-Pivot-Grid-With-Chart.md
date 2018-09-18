@@ -59,9 +59,9 @@ Me.chartControl1.ShowContextMenu = True
 
 ## Persisting style and type of chart series
 
-By default, the style and type of chart series modified at run time are not peristed in the chart control and the chart control is rendered with default series type and style while selecting the values in the pivot grid control.
+By default, the style and type of chart series modified at run time are not persisted in the chart control and the chart control is rendered with default series type and style while selecting the values in the pivot grid control.
 
-In order to perist the series type and style of chart control, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) method of PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class should be invoked with `true` parameter as specified in the below code sample.
+In order to persist the series type and style of chart control, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) method of PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class should be invoked with `true` parameter as specified in the below code sample.
 
 {% tabs %}
 
