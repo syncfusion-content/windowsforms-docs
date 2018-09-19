@@ -415,13 +415,13 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 
 ![](InteractiveFeatures_Images/ContextMenu13.png)
 
-## Column Chooser 
+## Column chooser 
 
-The visibility of the columns in the SfDataGrid can be changed at the run time by using the `ColumnChooserPopup` or `ColumnChooser` control. 
+Columns visibility in the SfDataGrid can be changed at runtime by using the `ColumnChooserPopup` or `ColumnChooser` control. 
 
-### Load Column Chooser Popup
+### Load column chooser pop-up
 
-The ColumnChooser popup can be enabled to the application by creating the instance of the ColumnChooserPopup by passing the SfDataGrid to the constructor. You can display the popup by using the Show method. The columns visibility will be changed while clicking the OK button based on the checked state of checked list box of the column chooser popup.
+Column chooser pop-up can be enabled in the application by creating an instance of ColumnChooserPopup when passing SfDataGrid to the constructor. You can display the pop-up by using the Show method. Columns visibility will be changed when clicking `OK` based on the checked state of the checked list box of the column chooser pop-up.
 
 {% tabs %}
 {% highlight c# %}
@@ -438,9 +438,9 @@ columnChooserPopup.Show()
 
 ![](InteractiveFeatures_Images/ColumnChooser1.png)
 
-### Load Column Chooser as Control
+### Load column chooser as control
 
-The ColumnChooser can also be loaded as the control by creating the instance of the `ColumnChooser` control and add it to the container control of the application.
+Column chooser can also be loaded as a control by creating an instance of the `ColumnChooser` control and adding it to the container control of the application.
 
 {% tabs %}
 {% highlight c# %}
@@ -461,8 +461,9 @@ Me.Controls.Add(columnChooser)
 
 ### Appearance customization
 
-The appearance of the ColumnChooser can be customized by accessing the inner controls of the ColumnChooser such as CheckedListBox, OKButton, CancelButton and SearchTextBox. 
-You can change the selection backcolor of the checked listbox by setting the style properties as follows,
+Appearance of the column chooser can be customized by accessing the inner controls of the column chooser: CheckedListBox, OKButton, CancelButton, and SearchTextBox. 
+
+You can change the selection backcolor of the checked listbox by setting the style properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -481,9 +482,9 @@ columnChooserPopup.Show()
 
 ![](InteractiveFeatures_Images/ColumnChooser3.png)
 
-### Loading Custom ColumnChooser
+### Loading custom ColumnChooser
 
-By default column chooser will be loaded with the OK and Cancel button and the visibility of the columns will be applied only on clicking the OK button. This can be changed to apply the visibility on clicking the checked list box item. 
+By default, the column chooser will be loaded with OK and Cancel buttons. Columns visibility will be applied only by clicking the OK button. You can also change the visibility by clicking the checked list box item. 
 
 #### Creating custom column chooser control
 
