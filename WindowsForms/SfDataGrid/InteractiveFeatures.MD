@@ -538,11 +538,11 @@ public class ColumnChooserExt : ColumnChooser
     }
     
     /// <summary>
-    /// Overridden to cancel the adding of OK button.
+    /// Overridden to cancel the adding of Cancel button.
     /// </summary>
-    protected override void AddOKButton()
+    protected override void AddCancelButton()
     {
-        // Do nothing to avod adding the OK button.
+        // Do nothing to avod adding the Cancel button.
     }    
 }
 {% endhighlight %}
@@ -592,10 +592,10 @@ Public Class ColumnChooserExt
 	End Sub
 	
 	''' <summary>
-	''' Overridden to cancel the adding of OK button.
+	''' Overridden to cancel the adding of Cancel button.
 	''' </summary>
-	Protected Overrides Sub AddOKButton()
-		' Do nothing to avod adding the OK button.
+	Protected Overrides Sub AddCanceButton()
+		' Do nothing to avod adding the Cancel button.
 	End Sub
 End Class
 {% endhighlight %}
