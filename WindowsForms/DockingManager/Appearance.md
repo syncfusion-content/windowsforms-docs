@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization of DockingManager for Windows Forms
 description: Customize the appearance of Docked, Float, Tabbed and AutoHide window
@@ -608,37 +608,6 @@ Me.dockingManager1.HostFormClientBorder = False
 {% endtabs %}
 
 ![](Appearance_images/Appearance_img19.png)
-
-## Customize Caption Height
-
-The height of dock and float window caption can be customized 
-using the  `CaptionHeight` property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Setting Caption Height
-
-this.dockingManager1.CaptionHeight = 40;
-
-{% endhighlight %}
-
-
-{% highlight VB %}
-
-'Setting Caption Height
-
-Me.DockingManager1.CaptionHeight = 40
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Appearance_images/Appearance_img41.png)
-
-N>  The `CaptionHeight` property will not applicable for Default and VS2005 visual style of docking manager. The maximum value of `CaptionHeight` is 60.
-
 
 ## Customize tabs in dock window
 

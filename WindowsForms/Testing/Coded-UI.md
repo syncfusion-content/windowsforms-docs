@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Steps to perform Coded UI Automation testing for Syncfusion Essential Windows Forms controls  
 description: Getting Started for Coded UI
@@ -157,14 +157,6 @@ RadialMenu<br/><br/></td><td>
 <tr>
 <td>
 TabControlAdv<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfCalendar<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfDateTimeEdit<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
 </table>
 
