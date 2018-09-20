@@ -128,25 +128,25 @@ The pivot fields can be dynamically added to the pivot grid control by checking 
 
 The pivot fields can be reordered by doing the drag-and-drop operation as well as using the context menu available in the grid list.
 
-#### Dragging the pivot field between the grid list and fields section
+#### Dragging fields between grid list and fields section
 
 Any pivot field is dragged from the fields section to the column or row or value or filter grid list available at the bottom of the pivot schema designer as follows.
 
 ![Pivot-Schema-Designer_img5](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img5.png)
 
-#### Dragging the pivot field within grid lists
+#### Dragging fields within grid lists
 
 Any pivot field is dragged from one grid list to another grid list available at the bottom of the pivot schema designer as follows.
 
 ![Pivot-Schema-Designer_img6](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img6.png)
 
-#### Dragging the pivot field between the pivot schema designer and grouping bar
+#### Dragging fields between pivot schema designer and grouping bar
 
 Any pivot field is dragged from any of the pivot schema designer's grid list or field section to the required grouping bar section as follows.
 
 ![Pivot-Schema-Designer_img7](Pivot-Schema-Designer_images/Pivot-Schema-Designer_img7.png)
 
-#### Reordering the pivot filed using the context menu of grid list
+#### Using context menu of grid list
 
 Any pivot field inside the grid lists is reordered by using the context menu, which is opened by clicking the down arrow icon available in each item of grid lists.
 
