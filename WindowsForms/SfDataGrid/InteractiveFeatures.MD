@@ -536,6 +536,14 @@ public class ColumnChooserExt : ColumnChooser
     {
         // Do nothing to avod adding the OK button.
     }
+    
+    /// <summary>
+    /// Overridden to cancel the adding of OK button.
+    /// </summary>
+    protected override void AddOKButton()
+    {
+        // Do nothing to avod adding the OK button.
+    }    
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -576,6 +584,13 @@ Public Class ColumnChooserExt
 		dataGrid.Columns(e.ItemData.ToString()).Visible = e.NewState = CheckState.Checked
 	End Sub
 
+	''' <summary>
+	''' Overridden to cancel the adding of OK button.
+	''' </summary>
+	Protected Overrides Sub AddOKButton()
+		' Do nothing to avod adding the OK button.
+	End Sub
+	
 	''' <summary>
 	''' Overridden to cancel the adding of OK button.
 	''' </summary>
