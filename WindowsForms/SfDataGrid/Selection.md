@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection
 description: This section explains about the Selection support in SfDataGrid.

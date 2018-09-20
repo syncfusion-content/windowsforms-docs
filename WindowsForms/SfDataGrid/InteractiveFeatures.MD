@@ -436,7 +436,7 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ColumnChooser1.png)
+![Column chooser popup](InteractiveFeatures_Images/ColumnChooser1.png)
 
 ### Load column chooser as control
 
@@ -457,7 +457,7 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ColumnChooser2.png)
+![Column chooser control](InteractiveFeatures_Images/ColumnChooser2.png)
 
 ### Appearance customization
 
@@ -480,9 +480,9 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ColumnChooser3.png)
+![Column chooser appearance](InteractiveFeatures_Images/ColumnChooser3.png)
 
-### Loading custom ColumnChooser
+### Loading custom column chooser
 
 By default, the column chooser will be loaded with OK and Cancel buttons. Columns visibility will be applied only by clicking the OK button. You can also change the visibility by clicking the checked list box item. 
 
@@ -536,6 +536,14 @@ public class ColumnChooserExt : ColumnChooser
     {
         // Do nothing to avod adding the OK button.
     }
+    
+    /// <summary>
+    /// Overridden to cancel the adding of OK button.
+    /// </summary>
+    protected override void AddOKButton()
+    {
+        // Do nothing to avod adding the OK button.
+    }    
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -582,11 +590,18 @@ Public Class ColumnChooserExt
 	Protected Overrides Sub AddOKButton()
 		' Do nothing to avod adding the OK button.
 	End Sub
+	
+	''' <summary>
+	''' Overridden to cancel the adding of OK button.
+	''' </summary>
+	Protected Overrides Sub AddOKButton()
+		' Do nothing to avod adding the OK button.
+	End Sub
 End Class
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding Custom ColumnChooser Control
+#### Adding custom column chooser control
 
 {% tabs %}
 {% highlight c# %}
@@ -603,7 +618,7 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ColumnChooser4.png)
+![Custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
 
 ## ToolTip
