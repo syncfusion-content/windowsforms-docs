@@ -35,7 +35,7 @@ helper.WireGrid(Me.pivotGridControl1, Me.chartControl1)
 
 ## Customizing style and type of chart series
 
-The style and type of chart series can be customized at runtime by using the context menu of the chart control. To show the context menu in the chart control, the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property of chart control should be set to true.
+The style and type of chart series can be customized at runtime by using the context menu of the chart control. To show the context menu in the chart control, the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property of chart control should be set to `true`.
 
 Refer to the following code sample to view the context menu of chart control integrated with the pivot grid control.
 
