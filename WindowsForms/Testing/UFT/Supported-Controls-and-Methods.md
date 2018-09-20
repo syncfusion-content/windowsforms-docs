@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: QTP/UFT for Syncfusion Essential WindowsForms
 description: This section explains about the Supported Controls and Methods for QTP/UFT.
