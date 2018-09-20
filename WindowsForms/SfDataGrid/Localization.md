@@ -16,7 +16,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 
 1) Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms-296861260).
+2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms1479320281).
 
 ![](Localization_images/Localization_img1.png) 
 
