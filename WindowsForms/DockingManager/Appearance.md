@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization of DockingManager for Windows Forms
 description: Customize the appearance of Docked, Float, Tabbed and AutoHide window
