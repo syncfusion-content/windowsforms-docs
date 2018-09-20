@@ -434,7 +434,7 @@ Moves the current cell to next to the active current cell. If the active current
 <kbd>Shift</kbd> + <kbd>Tab</kbd>
 </td>
 <td>
-Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.If the active current cell is the first cell of the first row, the focus will be moved to previous control in the tab order of the parent container.
+Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.
 </td>
 </tr>
 <tr>
