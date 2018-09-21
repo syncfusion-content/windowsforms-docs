@@ -417,7 +417,7 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 
 ## Column chooser 
 
-Columns visibility in the SfDataGrid can be changed at runtime by using the `ColumnChooserPopup` or `ColumnChooser` control. 
+Columns visibility in the SfDataGrid can be changed at runtime by using the [ColumnChooserPopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooserPopup.html) or [ColumnChooser](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.ColumnChooser.html) control. 
 
 ### Load column chooser pop-up
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Selection
 description: This section explains about the Selection support in SfDataGrid.
@@ -70,7 +70,7 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 
 Selection on particular row can be disabled by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event.
 
-The column selection and navigation can be disabled by setting the `GridColumnBase.AllowFocus` property to `false`.
+The column selection and navigation can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFocus.html) property to `false`.
 
 {% tabs %}
 {% highlight c# %}
