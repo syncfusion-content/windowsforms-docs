@@ -594,7 +594,7 @@ Public Class ColumnChooserExt
 	''' <summary>
 	''' Overridden to cancel the adding of Cancel button.
 	''' </summary>
-	Protected Overrides Sub AddCanceButton()
+	Protected Overrides Sub AddCancelButton()
 		' Do nothing to avod adding the Cancel button.
 	End Sub
 End Class
