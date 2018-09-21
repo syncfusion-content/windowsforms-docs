@@ -620,6 +620,7 @@ Me.Controls.Add(columnChooser)
 
 ![Custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
+You can download the custom column chooser sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample1073210002).
 
 ## ToolTip
 
