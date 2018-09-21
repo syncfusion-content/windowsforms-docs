@@ -79,12 +79,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Load custom control in drop down
-SfComboBox allows to show the header and footer items in drop-down by enabling [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html) properties.
+## Load custom control in drop-down
 
-You can refer this link to know more about the header and footer items customization in drop down listview.
-
-It allows to load the custom control by using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~HeaderControl.html) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~FooterControl.html) properties.
+SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~HeaderControl.html) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~FooterControl.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -360,6 +357,4 @@ End Class
 
 ![](DropDown_images/DropDown_img3.png)
 
-**Sample Location:**
-
-&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection
+Sample Location: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection
