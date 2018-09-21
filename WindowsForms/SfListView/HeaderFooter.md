@@ -30,7 +30,7 @@ sfListView1.ShowFooter = True
 
 ## Show text in header and footer
 
-SfListView allows you to customize the header and footer items text by using the [DrawItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DrawItem_EV.html) event. A text can be set to an item by using the Text property.
+SfListView allows you to customize the header and footer items text by using the [DrawItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~DrawItem_EV.html) event. A text can be set to an item by using the [Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DrawItemEventArgs~Text.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -344,7 +344,8 @@ End Class
 
 ![](HeaderFooter_images/HeaderCustomControl.png)
 
-Sample location: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfListView\Header Footer
+**Sample location:** 
+&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfListView\Header Footer
 
 ## Header appearance customization
 

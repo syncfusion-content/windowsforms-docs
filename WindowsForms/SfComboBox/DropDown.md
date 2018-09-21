@@ -357,4 +357,5 @@ End Class
 
 ![](DropDown_images/DropDown_img3.png)
 
-Sample Location: &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection
+**Sample location:** 
+&lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection
