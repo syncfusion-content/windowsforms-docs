@@ -238,3 +238,18 @@ Me.sfDataGrid1.ShowBusyIndicator = True
 {% endtabs %}
 
 ![](Styling_images/BusyIndicator_Image1.png)
+
+### Changing the busy indicator image 
+
+The busy indicator image can be changed by using the [SfDataGrid.Style.BusyIndicatorImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~BusyIndicatorImage.html) property. The image should be in GIF file format. 
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile(@"../../BusyIndicator.gif");
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
+{% endhighlight %}
+{% endtabs %}
+
+![](Styling_images/BusyIndicator_Image2.png)
