@@ -186,7 +186,7 @@ Me.sfDataGrid1.MoveToCurrentCell(New RowColumnIndex(3, 3))
 
 #### Get the current cell details
 
-The details of the current cell such as row index, column index and column name can be retrieved using the [SfDataGrid.CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) property. 
+Details of the current cell such as row index, column index, and column name can be retrieved using the [SfDataGrid.CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) property. 
 
 {% tabs %}
 {% highlight c# %}
