@@ -542,8 +542,10 @@ public class ColumnChooserExt : ColumnChooser
     /// </summary>
     protected override void AddCancelButton()
     {
-        // Do nothing to avod adding the Cancel button.
-    }    
+        // Set the height for the checked listbox and column chooser.
+        this.CheckedListBox.Size = new Size(this.CheckedListBox.Size.Width, CheckedListBox.Size.Height + CancelButton.Height + 15);
+        this.MaximumSize = new Size(this.Size.Width, this.Size.Height - (CancelButton.Height + 15));
+    }  
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -595,7 +597,8 @@ Public Class ColumnChooserExt
 	''' Overridden to cancel the adding of Cancel button.
 	''' </summary>
 	Protected Overrides Sub AddCancelButton()
-		' Do nothing to avod adding the Cancel button.
+	    Me.CheckedListBox.Size = New Size(Me.CheckedListBox.Size.Width, CheckedListBox.Size.Height + CancelButton.Height + 15)
+	    Me.MaximumSize = New Size(Me.Size.Width, Me.Size.Height - (CancelButton.Height + 15))
 	End Sub
 End Class
 {% endhighlight %}
@@ -620,7 +623,7 @@ Me.Controls.Add(columnChooser)
 
 ![Custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
-You can download the custom column chooser sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample1073210002).
+You can download the custom column chooser sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample-1194097955).
 
 ## ToolTip
 
