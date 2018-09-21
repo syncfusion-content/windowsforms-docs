@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Selection
 description: This section explains about the Selection support in SfDataGrid.
@@ -69,6 +69,21 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endtabs %}
 
 Selection on particular row can be disabled by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event.
+
+The column selection and navigation can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFocus.html) property to `false`.
+
+{% tabs %}
+{% highlight c# %}
+// Disable the focus for the column.
+sfDataGrid.Columns[2].AllowFocus = false;
+{% endhighlight %}
+{% highlight vb %}
+' Disable the focus for the particular column.
+sfDataGrid.Columns(2).AllowFocus = False
+{% endhighlight %}
+{% endtabs %}
+
+N> You can edit and select the FilterRow and AddNewRow cells though the `AllowFocus` property is set to `false`.
 
 N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid.
 
