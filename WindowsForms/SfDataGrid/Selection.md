@@ -184,6 +184,30 @@ Me.sfDataGrid1.MoveToCurrentCell(New RowColumnIndex(3, 3))
 {% endhighlight %}
 {% endtabs %}
 
+#### Get the current cell details
+
+The details of the current cell such as row index, column index and column name can be retrieved using the [SfDataGrid.CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) property. 
+
+{% tabs %}
+{% highlight c# %}
+if (this.sfDataGrid.CurrentCell != null)
+{
+    var currentCellRowIndex = this.sfDataGrid.CurrentCell.RowIndex;
+    var currentCellColumnIndex = this.sfDataGrid.CurrentCell.ColumnIndex;
+    var currentCellColumn = this.sfDataGrid.CurrentCell.Column;
+}
+{% endhighlight %}
+{% highlight vb %}
+If Me.sfDataGrid.CurrentCell IsNot Nothing Then
+	Dim currentCellRowIndex = Me.sfDataGrid.CurrentCell.RowIndex
+	Dim currentCellColumnIndex = Me.sfDataGrid.CurrentCell.ColumnIndex
+	Dim currentCellColumn = Me.sfDataGrid.CurrentCell.Column
+End If
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection13.png)
+
 ### Clear Selection
 The Selection can be cleared by using the [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearSelection.html) Method. Selection can also be removed by setting null to[SelectionItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) or by clearing the [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) property.
 
