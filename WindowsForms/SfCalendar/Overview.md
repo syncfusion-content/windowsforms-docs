@@ -24,3 +24,5 @@ The `SfCalendar` is a control that allows you to select a date from the calendar
 * **Blackout dates**: Supports for blocking certain dates from selection and user interaction. Separate styles can be applied to blackout dates. 
 
 * **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
+
+* **Testing**: Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfcalendar) to recognize SfCalendar.

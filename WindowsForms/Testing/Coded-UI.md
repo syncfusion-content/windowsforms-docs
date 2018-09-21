@@ -158,6 +158,14 @@ RadialMenu<br/><br/></td><td>
 <td>
 TabControlAdv<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+SfCalendar<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+SfDateTimeEdit<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
 </table>
 
 
