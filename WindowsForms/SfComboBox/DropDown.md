@@ -168,7 +168,7 @@ internal class CustomHeaderUserControl : Panel
 
     private bool FilterItem(object data)
     {
-        if ((data as USState).LongName.ToLower().StartsWith(this.TextBox.Text.ToLower()))
+        if ((data as USState).LongName.ToLower().Contains(this.TextBox.Text.ToLower()))
             return true;
         return false;
     }
@@ -305,7 +305,7 @@ Me.sfComboBox1.DropDownListView.HeaderControl = customTextBox
 	End Sub
 	
 	Private Function FilterItem(ByVal data As Object) As Boolean
-		If (TryCast(data, USState)).LongName.ToLower().StartsWith(Me.TextBox.Text.ToLower()) Then
+		If (TryCast(data, USState)).LongName.ToLower().Contains(Me.TextBox.Text.ToLower()) Then
 			Return True
 		End If
 		Return False
