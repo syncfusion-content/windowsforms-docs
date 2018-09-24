@@ -26,6 +26,7 @@ Essential Grid supports the following controls,
 * GridDataBoundGrid
 * GridGroupingControl
 * GridListControl
+* SfListView
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid,
 
@@ -1961,6 +1962,67 @@ string
 </tr>
 </table>
 
+### SfListView
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void ExpandGroup(int groupIndex)
+</td>
+<td>
+Expands the specified group.
+</td>
+<td>
+int groupindex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void CollapseGroup(int groupIndex)
+</td>
+<td>
+Collapse the specified group.
+</td>
+<td>
+int groupindex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void SelectItem(int index)
+</td>
+<td>
+Selects the specified item.
+</td>
+<td>
+int index
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
 ## Essential Tools
 
 The following controls are supported by Essential Tools.
@@ -1983,8 +2045,6 @@ The following controls are supported by Essential Tools.
 * RadioButtonAdv
 * RibbonControlAdv
 * ScrollerFrame
-* SfCalendar
-* SfDatetimeEdit
 * TabbedMDI
 * TabControlAdv
 * XPTaskBar
@@ -1998,6 +2058,9 @@ The following controls are supported by Essential Tools.
 * TrackBarEx
 * RangeSlider
 * NavigationView
+* SfButton
+* SfComboBox
+* SfScrollFrame
 * TabBarSplitterControl
 
 The following are the recorded methods and their corresponding descriptions for Essential Tools,
@@ -2402,7 +2465,7 @@ void
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -2546,7 +2609,7 @@ System.DateTime
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -3060,256 +3123,6 @@ The position of the scroll to be specified.
 </td>
 <td>
 int value
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfCalendar
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of SfCalendar
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of SfCalendar
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in SfCalendar.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in SfCalendar.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in SfCalendar.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in SfCalendar.
-</td>
-<td>
-string century
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfDateTimeEdit
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetValue(string date)
-</td>
-<td>
-Sets the specified date in SfDateTimeEdit.
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ShowPopup()
-</td>
-<td>
-Show the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void HidePopup()
-</td>
-<td>
-Hide the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of MonthCalendar popup
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of MonthCalendar popup
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
- void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in MonthCalendar popup.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in MonthCalendar popup.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in MonthCalendar popup.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in MonthCalendar popup.
-</td>
-<td>
-string century
 </td>
 <td>
 void
@@ -4436,6 +4249,119 @@ Selects the bar based on the given name.
 </td>
 <td>
 string barName
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfButton
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void Click( string text)
+</td>
+<td>
+Performs click action on the control.
+</td>
+<td>
+string text
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfComboBox
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void ShowDropDown( )
+</td>
+<td>
+Show the dropdown.
+</td>
+<td>
+-
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+Void Select(string text)
+</td>
+<td>
+Select the item in the list.
+</td>
+<td>
+string text
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfScrollFrame
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void SetScrollValue(int value)
+</td>
+<td>
+Sets the scroll position.
+</td>
+<td>
+int value
 </td>
 <td>
 void
