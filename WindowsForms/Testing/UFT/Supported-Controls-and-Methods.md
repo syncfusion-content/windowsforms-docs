@@ -22,12 +22,258 @@ Supported methods denote those methods that are recorded in QTP.
 ## Essential Grid
 Essential Grid supports the following controls,
 
+* SfDataGrid
 * GridControl
 * GridDataBoundGrid
 * GridGroupingControl
 * GridListControl
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid,
+
+### SfDataGrid
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Parameter Explanation**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void SetCurrentCell(int row,int col);
+</td>
+<td>
+ Sets the location of the CurrentCell.
+</td>
+<td>
+int row, int col
+</td>
+<td>
+Passing current row and column index to the SetCurrentCell method
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void GroupColumn(string columnName);
+</td>
+<td>
+ Grouping the specified Column
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passing MappingName for a column
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void UnGroupColumn(string columnName);
+</td>
+<td>
+ Un Grouping the specified column
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passing MappingName for a column
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void SortColumn(string columnName,string state);
+</td>
+<td>
+ Sorts the column
+</td>
+<td>
+string columnName, string state
+</td>
+<td>
+Passing MappingName and state for a column, whether Ascending / Descending
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void BeginEdit(int row,int col);
+</td>
+<td>
+Brings the editing cursor in the specified grid cell.
+</td>
+<td>
+int row,int col
+</td>
+<td>
+Passing current row and column index to the BeginEdit method
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void EndEdit();
+</td>
+<td>
+Finishes the editing mode of the cell specified.
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Void
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Parameter Explanation**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void SetCurrentCell(int row,int col);
+</td>
+<td>
+ Sets the location of the CurrentCell.
+</td>
+<td>
+int row, int col
+</td>
+<td>
+Passing current row and column index to the SetCurrentCell method
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void GroupColumn(string columnName);
+</td>
+<td>
+ Grouping the specified Column
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passing MappingName for a column
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void UnGroupColumn(string columnName);
+</td>
+<td>
+ Un Grouping the specified column
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passing MappingName for a column
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void SortColumn(string columnName,string state);
+</td>
+<td>
+ Sorts the column
+</td>
+<td>
+string columnName, string state
+</td>
+<td>
+Passing MappingName and state for a column, whether Ascending / Descending
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void BeginEdit(int row,int col);
+</td>
+<td>
+Brings the editing cursor in the specified grid cell.
+</td>
+<td>
+int row,int col
+</td>
+<td>
+Passing current row and column index to the BeginEdit method
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void EndEdit();
+</td>
+<td>
+Finishes the editing mode of the cell specified.
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Void
+</td>
+</tr>
+</table>
 
 ### Grid Control
 
@@ -1983,8 +2229,6 @@ The following controls are supported by Essential Tools.
 * RadioButtonAdv
 * RibbonControlAdv
 * ScrollerFrame
-* SfCalendar
-* SfDatetimeEdit
 * TabbedMDI
 * TabControlAdv
 * XPTaskBar
@@ -2402,7 +2646,7 @@ void
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -2546,7 +2790,7 @@ System.DateTime
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -3060,256 +3304,6 @@ The position of the scroll to be specified.
 </td>
 <td>
 int value
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfCalendar
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of SfCalendar
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of SfCalendar
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in SfCalendar.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in SfCalendar.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in SfCalendar.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in SfCalendar.
-</td>
-<td>
-string century
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfDateTimeEdit
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetValue(string date)
-</td>
-<td>
-Sets the specified date in SfDateTimeEdit.
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ShowPopup()
-</td>
-<td>
-Show the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void HidePopup()
-</td>
-<td>
-Hide the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of MonthCalendar popup
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of MonthCalendar popup
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
- void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in MonthCalendar popup.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in MonthCalendar popup.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in MonthCalendar popup.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in MonthCalendar popup.
-</td>
-<td>
-string century
 </td>
 <td>
 void
