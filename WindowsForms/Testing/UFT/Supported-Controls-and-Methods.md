@@ -1987,7 +1987,7 @@ void ExpandGroup(int groupIndex)
 Expands the specified group.
 </td>
 <td>
-int groupindex
+int groupIndex
 </td>
 <td>
 void
@@ -2001,7 +2001,7 @@ void CollapseGroup(int groupIndex)
 Collapse the specified group.
 </td>
 <td>
-int groupindex
+int groupIndex
 </td>
 <td>
 void
@@ -2045,6 +2045,8 @@ The following controls are supported by Essential Tools.
 * RadioButtonAdv
 * RibbonControlAdv
 * ScrollerFrame
+* SfCalendar
+* SfDatetimeEdit
 * TabbedMDI
 * TabControlAdv
 * XPTaskBar
@@ -2465,7 +2467,7 @@ void
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**return Type**'| markdownify }}
+{{'**Return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -2609,7 +2611,7 @@ System.DateTime
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**return Type**'| markdownify }}
+{{'**Return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
