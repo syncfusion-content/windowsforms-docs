@@ -38,7 +38,7 @@ The following image shows for a single mode row selection.
 
 The following image shows for a single mode cell selection.
 
-![](Selection_images/selection13.png)
+![](Selection_images/selection14.png)
 
 N> When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing Space key.
 
@@ -63,7 +63,7 @@ The following image shows for extended mode row selection.
 
 The following image shows for extended mode cell selection.
 
-![](Selection_images/selection14.png)
+![](Selection_images/selection15.png)
 
 N>  When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Multiple`, multiple rows or cells can be selected or deselected by clicking the respective rows or cells. In multiple selection, pressing navigation keys will move the current cell alone. The rows or cells can be selected or deselected by pressing the Space key.
 
@@ -81,7 +81,7 @@ The following image shows for multiple mode row selection.
 
 The following image shows for multiple mode cell selection.
 
-![](Selection_images/selection15.png)
+![](Selection_images/selection16.png)
 
 ### Disable the selection
 
@@ -219,7 +219,7 @@ this.sfDataGrid.SelectCells(sfDataGrid.View.Records[5], sfDataGrid.Columns["Prod
 Me.sfDataGrid.SelectCells(sfDataGrid.View.Records(5), sfDataGrid.Columns("ProductName"), sfDataGrid.View.Records(10), sfDataGrid.Columns("Quantity"))
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection16.png)
+![](Selection_images/selection17.png)
 
 All the rows or cells can be selected by using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method in SfDataGrid.
 
@@ -282,7 +282,7 @@ Me.sfDataGrid.UnselectCell(removeRecord, removeColumn)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection17.png)
+![](Selection_images/selection18.png)
 
 SfDataGrid can clear the selection of a group of cells by using the [UnSelectCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~UnselectCells.html) method.
 
@@ -303,7 +303,7 @@ Me.sfDataGrid.UnselectCells(firstRecord, firstColumn, lastRecord, lastColumn)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection18.png)
+![](Selection_images/selection19.png)
 
 ## Get the  Cell Value
 
