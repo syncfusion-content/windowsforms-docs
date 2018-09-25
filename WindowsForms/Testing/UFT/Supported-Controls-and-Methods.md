@@ -2648,7 +2648,7 @@ void
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**return Type**'| markdownify }}
+{{'**Return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -2792,7 +2792,7 @@ System.DateTime
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**return Type**'| markdownify }}
+{{'**Return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
