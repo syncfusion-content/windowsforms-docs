@@ -231,7 +231,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[Presentation](https://help.syncfusion.com/windowsforms/file-formats/presentation)'| markdownify }}
+{{'[Presentation](https://help.syncfusion.com/file-formats/presentation)'| markdownify }}
 </td>
 <td>
 {{'[SfTooltip](https://help.syncfusion.com/windowsforms/sftooltip)'| markdownify }}
