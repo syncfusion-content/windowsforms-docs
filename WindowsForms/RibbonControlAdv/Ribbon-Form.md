@@ -32,10 +32,6 @@ EnableAeroTheme</td><td>
 Specifies the Aero theme of the Ribbon form. </td></tr>
 <tr>
 <td>
-EnableHighContrastTheme</td><td>
-Specifies whether to use default High Contrast theme color</td></tr>
-<tr>
-<td>
 Font</td><td>
 Gets or sets the RibbonControlAdv Font.</td></tr>
 </table>
