@@ -112,7 +112,7 @@ excelExport.Export("D:\PivotGrid.xlsx")
 
 Pivot grid provides support to export its contents to Word. Users can export the data from the pivot grid control to the Word document for offline verification and/or computation.
 
-The following references need to be added to the application to achieve this support.
+The following reference needs to be added to the application to achieve this support.
 
 * Syncfusion.PivotConverter.Windows
 
@@ -146,7 +146,7 @@ wordExport.pivotGridToWord("D:\PivotGrid.doc")
 
 Pivot grid provides support to export its content to a PDF file. The data in the pivot grid control can be converted to a PDF document for offline verification and/or computation.
 
-The following references need to be added to the application to achieve this support.
+The following reference needs to be added to the application to achieve this support.
 
 * Syncfusion.PivotConverter.Windows
 
