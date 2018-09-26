@@ -21,8 +21,10 @@ Exporting data to an Excel is one of the most commonly preferred features in th
 
 The following references need to be added to the application to achieve this support.
 
-* Syncfusion.PivotGridConverter.Wpf
+* Syncfusion.PivotConverter.Windows
 * Syncfusion.XlsIO.Base
+
+Note: To read the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating a pivot grid control.
 
 The [ExcelExport](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows~Syncfusion.PivotConverter.ExcelExport.html) class provides the support for exporting the data from the pivot grid control to the Excel document.
 
@@ -54,6 +56,8 @@ Pivot grid consists of two exporting modes that are explained below. It is possi
 
 In the cell-by-cell export mode, the contents of pivot grid control are exported cell by cell with all the formats applied on it.
 
+Note: To read the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating a pivot grid control.
+
 Refer to the below code sample to export cell by cell content of pivot grid control.
 
 {% tabs %}
@@ -81,6 +85,8 @@ excelExport.Export("D:\PivotGrid.xlsx")
 #### Pivot table export
 
 In the pivot table export mode, the contents of pivot grid control are exported along with its functionalities such as sorting and filtering. The pivot grid provides support to pivot the data via drag and drop in the pivot table.
+
+Note: To read the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating a pivot grid control.
 
 Refer to the below code sample to export the content of pivot grid control in pivot table mode.
 
@@ -110,7 +116,9 @@ excelExport.Export("D:\PivotGrid.xlsx")
 
 Pivot grid provides support to export its contents to Word. Users can export the data from the pivot grid control to the Word document for offline verification and/or computation.
 
-The "Syncfusion.PivotGridConverter.Wpf" reference needs to be added to the application to achieve this support. The [PivotWordExport](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows~Syncfusion.PivotConverter.PivotWordExport.html) class provides the support for exporting the data from the pivot grid control to the Word document.
+The "Syncfusion.PivotConverter.Windows" reference needs to be added to the application to achieve this support. The [PivotWordExport](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows~Syncfusion.PivotConverter.PivotWordExport.html) class provides the support for exporting the data from the pivot grid control to the Word document.
+
+Note: To read the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating a pivot grid control.
 
 Refer to the below code sample to export the pivot grid contents to a Word document.
 
@@ -138,7 +146,9 @@ wordExport.pivotGridToWord("D:\PivotGrid.doc")
 
 Pivot grid provides support to export its content to a PDF file. The data in the pivot grid control can be converted to a PDF document for offline verification and/or computation.
 
-The "Syncfusion.PivotGridConverter.Wpf" reference needs to be added to the application to achieve this support. The [PivotPdfExport](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows~Syncfusion.PivotConverter.PivotPdfExport.html) class provides the support for exporting the data from the pivot grid control to the PDF document.
+The "Syncfusion.PivotConverter.Windows" reference needs to be added to the application to achieve this support. The [PivotPdfExport](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotConverter.Windows~Syncfusion.PivotConverter.PivotPdfExport.html) class provides the support for exporting the data from the pivot grid control to the PDF document.
+
+Note: To read the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating a pivot grid control.
 
 Refer to the below code sample to export the pivot grid contents to a PDF document.
 
