@@ -44,10 +44,10 @@ The following are the recorded methods and their corresponding descriptions for 
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Parameter Explanation**'| markdownify }}
+{{'**Parameter explanation**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**Return type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -55,13 +55,13 @@ The following are the recorded methods and their corresponding descriptions for 
 void SetCurrentCell(int row,int col);
 </td>
 <td>
- Sets the location of the CurrentCell.
+Sets the location of the current cell.
 </td>
 <td>
-int row, int col
+int row and int col
 </td>
 <td>
-Passing current row and column index to the SetCurrentCell method
+Passes the current row and column index to the SetCurrentCell method.
 </td>
 <td>
 Void
@@ -72,13 +72,13 @@ Void
 void GroupColumn(string columnName);
 </td>
 <td>
- Grouping the specified Column
+Groups the specified column.
 </td>
 <td>
 String columnName
 </td>
 <td>
-Passing MappingName for a column
+Passes the mapping name for a column.
 </td>
 <td>
 Void
@@ -89,13 +89,13 @@ Void
 void UnGroupColumn(string columnName);
 </td>
 <td>
- Un Grouping the specified column
+Ungroup the specified column.
 </td>
 <td>
 String columnName
 </td>
 <td>
-Passing MappingName for a column
+Passes the mapping name for a column.
 </td>
 <td>
 Void
@@ -103,16 +103,16 @@ Void
 </tr>
 <tr>
 <td>
-void SortColumn(string columnName,string state);
+void SortColumn(string columnName, string state);
 </td>
 <td>
- Sorts the column
+Sorts the column.
 </td>
 <td>
 string columnName, string state
 </td>
 <td>
-Passing MappingName and state for a column, whether Ascending / Descending
+Passes the mapping name and state for a column whether ascending or descending.
 </td>
 <td>
 Void
@@ -120,16 +120,16 @@ Void
 </tr>
 <tr>
 <td>
-void BeginEdit(int row,int col);
+void BeginEdit(int row, int col);
 </td>
 <td>
 Brings the editing cursor in the specified grid cell.
 </td>
 <td>
-int row,int col
+int row and int col
 </td>
 <td>
-Passing current row and column index to the BeginEdit method
+Passes the current row and column index for the BeginEdit method.
 </td>
 <td>
 Void
@@ -140,128 +140,7 @@ Void
 void EndEdit();
 </td>
 <td>
-Finishes the editing mode of the cell specified.
-</td>
-<td>
-NA
-</td>
-<td>
--
-</td>
-<td>
-Void
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Parameter Explanation**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetCurrentCell(int row,int col);
-</td>
-<td>
- Sets the location of the CurrentCell.
-</td>
-<td>
-int row, int col
-</td>
-<td>
-Passing current row and column index to the SetCurrentCell method
-</td>
-<td>
-Void
-</td>
-</tr>
-<tr>
-<td>
-void GroupColumn(string columnName);
-</td>
-<td>
- Grouping the specified Column
-</td>
-<td>
-String columnName
-</td>
-<td>
-Passing MappingName for a column
-</td>
-<td>
-Void
-</td>
-</tr>
-<tr>
-<td>
-void UnGroupColumn(string columnName);
-</td>
-<td>
- Un Grouping the specified column
-</td>
-<td>
-String columnName
-</td>
-<td>
-Passing MappingName for a column
-</td>
-<td>
-Void
-</td>
-</tr>
-<tr>
-<td>
-void SortColumn(string columnName,string state);
-</td>
-<td>
- Sorts the column
-</td>
-<td>
-string columnName, string state
-</td>
-<td>
-Passing MappingName and state for a column, whether Ascending / Descending
-</td>
-<td>
-Void
-</td>
-</tr>
-<tr>
-<td>
-void BeginEdit(int row,int col);
-</td>
-<td>
-Brings the editing cursor in the specified grid cell.
-</td>
-<td>
-int row,int col
-</td>
-<td>
-Passing current row and column index to the BeginEdit method
-</td>
-<td>
-Void
-</td>
-</tr>
-<tr>
-<td>
-void EndEdit();
-</td>
-<td>
-Finishes the editing mode of the cell specified.
+Finishes the editing mode of the specified cell.
 </td>
 <td>
 NA
