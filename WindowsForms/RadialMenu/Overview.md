@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: overview
+description: Overview of radial menu control
 platform: WindowsForms
 control: RadialMenu 
 documentation: ug

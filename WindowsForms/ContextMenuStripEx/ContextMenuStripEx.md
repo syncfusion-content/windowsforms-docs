@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ContextMenuStripEx | WindowsForms | Syncfusion
-description: ContextMenuStripEx
+title: Overview | Context Menu Strip | WindowsForms | Syncfusion
+description: Overview of context menu strip
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug

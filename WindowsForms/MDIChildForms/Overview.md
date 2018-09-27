@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview | MDI Child Forms | WindowsForms | Syncfusion
+description: Overview of MDI child forms
 platform: WindowsForms
 control: Control Name undefined
 documentation: ug

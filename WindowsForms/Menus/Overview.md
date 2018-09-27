@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview | Main Frame Bar Manager | Menu | WindowsForms | Syncfusion
+description: Overview of main frame bar manager (a.k.a. menu)
 platform: WindowsForms
 control: Menus Package 
 documentation: ug
