@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | PivotGrid | Windows Forms | Syncfusion
-description: Overview
+title: Overview of Pivot Grid Control | Windows Forms | Syncfusion
+description: The pivot grid control is used to read and visualize the business information in the tabular format.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
