@@ -74,7 +74,7 @@ Below are steps to create a `CodedUITest project` and test the `SfComboBox` appl
 
 ![](CodedUI-Automation-Images/CodedUI_Create.jpg)
 
-3) Create a new Coded UI project, a CUIT file is added automatically and Generate Code dialog box appears. In this, choose `Record actions, edit UI map or add assertions`.
+3)For the new Coded UI project, a CUIT file is added automatically and Generate Code dialog box appears. In this, choose `Record actions, edit UI map or add assertions`.
 
 ![](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
 
