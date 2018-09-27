@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: overview
+description: Overview of command bar control
 platform: WindowsForms
 control: CommandBar
 documentation: ug

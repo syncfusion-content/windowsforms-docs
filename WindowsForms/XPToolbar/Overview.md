@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: overview
+description: Overview of XP toolbar control
 platform: WindowsForms
 control: XPToolbar
 documentation: ug

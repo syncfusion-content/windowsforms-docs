@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Windows Forms | Syncfusion
-description: overview
+description: Overview of pivot chart control
 platform: windowsforms
 control: PivotChart
 documentation: ug

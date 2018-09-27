@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | PivotGrid | Windows Forms | Syncfusion
-description: Overview
+description: Overview of pivot grid control
 platform: windowsforms
 control: PivotGrid
 documentation: ug
