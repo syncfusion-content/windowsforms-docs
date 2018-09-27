@@ -965,7 +965,7 @@ void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
     //Customize the appearance of the Ok and Cancel buttons
     e.Control.OkButton.BackColor =  e.Control.CancelButton.BackColor = ColorTranslator.FromHtml("#029684");
     e.Control.OkButton.ForeColor = e.Control.CancelButton.ForeColor = Color.White;
-    e.Control.OkButton.Font = e.Control.CancelButton.Font = new Font("Segeo UI", 9, FontStyle.Bold);
+    e.Control.OkButton.Font = e.Control.CancelButton.Font = new Font("Segoe UI", 9, FontStyle.Bold);
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -988,7 +988,7 @@ Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As Fil
 	e.Control.OkButton.BackColor = e.Control.CancelButton.BackColor
 	e.Control.CancelButton.ForeColor = Color.White
 	e.Control.OkButton.ForeColor = e.Control.CancelButton.ForeColor
-	e.Control.CancelButton.Font = New Font("Segeo UI", 9, FontStyle.Bold)
+	e.Control.CancelButton.Font = New Font("Segoe UI", 9, FontStyle.Bold)
 	e.Control.OkButton.Font = e.Control.CancelButton.Font
 End Sub
 {% endhighlight %}
