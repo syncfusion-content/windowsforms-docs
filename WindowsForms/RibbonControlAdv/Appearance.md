@@ -1013,6 +1013,24 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 
 ![](Appearance_Images/Appearance_img14.jpg)
 
+## EnableHighContrastTheme
 
+`EnableHighContrastTheme` property used to specify whether to use default high contrast theme color in RibbonControlAdv. By default, EnableHighContrastTheme property is set to True.
 
+{% tabs %}
 
+{% highlight c# %}
+
+// to avoid the default high contrast theme color
+this.ribbonControlAdv1.EnableHighContrastTheme = false; 
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' to avoid the default high contrast theme color
+Me.ribbonControlAdv1.EnableHighContrastTheme = false
+
+{% endhighlight %}
+
+{% endtabs %}
