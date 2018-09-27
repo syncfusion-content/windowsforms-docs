@@ -85,6 +85,10 @@ Uri is the string type property, which retrieves the location of the shape file 
 
 Example :  ShapeFilename.shp
 
+Shape file added should set the properties as specified in the below image.
+
+![](Getting-Started_images/ShapeFile.png)
+
 The following code snippet explains adding shape files in maps control.
 
 #### Code sample:
