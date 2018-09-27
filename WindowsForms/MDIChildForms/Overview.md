@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | MDI Child Forms | WindowsForms | Syncfusion
-description: Overview of MDI child forms
+title: Overview of MDI Child Forms | Windows Forms | Syncfusion
+description: MDI child forms are an essential element of Multiple-Document Interface (MDI) Applications, as these forms are the center of user interaction.
 platform: WindowsForms
-control: Control Name undefined
+control: MDI Child Forms
 documentation: ug
 ---
 

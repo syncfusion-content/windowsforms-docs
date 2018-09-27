@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview of XP toolbar control
+title: Overview of XP ToolBar Control | Windows Forms | Syncfusion
+description: The XP toolbar control is a main frame bar manager that acts like a toolbar and supports all the required bar items.
 platform: WindowsForms
-control: XPToolbar
+control: XPToolBar
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ documentation: ug
 
 ![](Overview_images/Overview_img2.png)
 
-# Key features
+## Key features
 
 **BarItem types** - Provides rich set of built-in controls to be added as a BarItem of the XPToolbar
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | Context Menu Strip | WindowsForms | Syncfusion
-description: Overview of context menu strip
+title: Overview of Context Menu Strip | Windows Forms | Syncfusion
+description: The context menu strip is available in essential tools with advanced features and it can be used from toolbox.
 platform: WindowsForms
-control: RibbonControlAdv 
+control: ContextMenuStripExt
 documentation: ug
 ---
 
