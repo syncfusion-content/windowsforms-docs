@@ -384,3 +384,37 @@ public partial class Form1 : Form
 
 Screenshot:
 ![](Zooming_images/Zooming_img2.png)
+
+## Events
+
+The ShapeSelected event will be triggered when the map shapes are selected. A corresponding model data is passed as an argument. 
+Below code snippet displays the selected country name which is specified in the model data.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public partial class Form1 : Form
+{
+
+    this.mapsControl1.ShapeSelected+=mapsControl1_ShapeSelected;
+
+    private void mapsControl1_ShapeSelected(object sender, ShapeSelectedEventArgs e)
+    {
+        countryListBox.Items.Clear();
+
+        if (e.Data != null)
+        {
+            foreach (Countries shape in e.Data)
+            {
+                countryListBox.Items.Add(shape.Country);
+            }
+        }
+    }
+}       
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Map-Selection_images/Event.png)
