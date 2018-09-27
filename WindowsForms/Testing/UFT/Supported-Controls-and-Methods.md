@@ -89,7 +89,7 @@ Void
 void UnGroupColumn(string columnName);
 </td>
 <td>
-Ungroups the specified column.
+Ungroup the specified column.
 </td>
 <td>
 String columnName
