@@ -87,17 +87,17 @@ Follow the steps to create a `CodedUITest project` and test the `SfDataGrid` app
 
 5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right clicking the `CodedUITestMethod1` in CUIT file and clicking the Generate Code for Coded UI Test. The same `CodedUITestBuilder` appears in the bottom right corner of the window.
 
-![](UIAutomation_images/Coded UI_4.png)
+![](UIAutomation_images/Coded UI_6.png)
 
 6. Drag the crosshairs on to the UI elements in the `SfDataGrid` application. It shows the available properties of the inner UI elements. 
 7. Record the actions made on the UI elements by clicking the `Record` button on `CodedUITestBuilder`.
 
-![](UIAutomation_images/Coded UI_5.png)
+![](UIAutomation_images/Coded UI_4.png)
 
 8. Then, click the `GenerateCode` icon in `CodedUITestBuilder` to generate a test method. Close the `CodedUITestBuilder` and see the generated code for the cell value changed action.
 9. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, the `Assertion` window appears. The properties for the control is now listed in the Assertion dialog box. Add the assertion by clicking the Generate Code button in `CodedUITestBuilder`.
 
-![](UIAutomation_images/Coded UI_6.png)
+![](UIAutomation_images/Coded UI_5.png)
 
 10. After creating all the tests and assertions, right click the Test method. Click `Run Tests` to run the test.
 
