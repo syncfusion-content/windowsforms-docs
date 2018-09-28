@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview of Pivot Chart Control | Windows Forms | Syncfusion
+description: The pivot chart control is used to read and visualize the business information in the graphical format.
 platform: windowsforms
 control: PivotChart
 documentation: ug
