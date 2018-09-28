@@ -98,7 +98,7 @@ Follow the steps to create a `CodedUITest project` and test the `SfListView` app
 
 ![](CodedUI-Automation-Images/SfListView-properties.jpg)
 
-10. After creating all the tests and assertions, right click on the Test method. Click `Run Tests` to run the test.
+10. After creating all the tests and assertions, right click the Test method. Click `Run Tests` to run the test.
 
 ![](CodedUI-Automation-Images/Run test cases.jpg)
 
