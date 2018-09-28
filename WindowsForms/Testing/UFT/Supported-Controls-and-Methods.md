@@ -27,6 +27,7 @@ Essential Grid supports the following controls,
 * GridDataBoundGrid
 * GridGroupingControl
 * GridListControl
+* SfListView
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid,
 
@@ -2086,6 +2087,67 @@ string
 </tr>
 </table>
 
+### SfListView
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void ExpandGroup(int groupIndex)
+</td>
+<td>
+Expands the specified group.
+</td>
+<td>
+int groupIndex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void CollapseGroup(int groupIndex)
+</td>
+<td>
+Collapse the specified group.
+</td>
+<td>
+int groupIndex
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+void SelectItem(int index)
+</td>
+<td>
+Selects the specified item.
+</td>
+<td>
+int index
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
 ## Essential Tools
 
 The following controls are supported by Essential Tools.
@@ -2123,6 +2185,9 @@ The following controls are supported by Essential Tools.
 * TrackBarEx
 * RangeSlider
 * NavigationView
+* SfButton
+* SfComboBox
+* SfScrollFrame
 * TabBarSplitterControl
 
 The following are the recorded methods and their corresponding descriptions for Essential Tools,
@@ -4561,6 +4626,119 @@ Selects the bar based on the given name.
 </td>
 <td>
 string barName
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfButton
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void Click( string text)
+</td>
+<td>
+Performs click action on the control.
+</td>
+<td>
+string text
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfComboBox
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void ShowDropDown( )
+</td>
+<td>
+Show the dropdown.
+</td>
+<td>
+-
+</td>
+<td>
+void
+</td>
+</tr>
+<tr>
+<td>
+Void Select(string text)
+</td>
+<td>
+Select the item in the list.
+</td>
+<td>
+string text
+</td>
+<td>
+void
+</td>
+</tr>
+</table>
+
+### SfScrollFrame
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Return Type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void SetScrollValue(int value)
+</td>
+<td>
+Sets the scroll position.
+</td>
+<td>
+int value
 </td>
 <td>
 void
