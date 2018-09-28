@@ -8,15 +8,20 @@ documentation: ug
 ---
 
 # Selection
-SfDataGrid provides a selection functionality that allows the user to select one or more rows. 
 
-## Selection Modes
+SfDataGrid allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionUnit.html) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any.In SelectionUnit.Any option. A row can be selected by clicking its row header.
 
-The [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property defines the behavior of selection in SfDataGrid. 
+### Current cell navigation
 
-### Single Row Selection
+Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~NavigationMode.html) property. The NavigationMode.Cell allows you to navigate between the cells in a row and between the rows. The NavigationMode.Row allows you to navigate between the rows. It is not possible to set the NavigationMode.Row when the cell selection is enabled (SelectionUnit is cell or any).
 
-If the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Single`, only a single row can be selected. SfDataGrid allows to select or deselect a single row, when the `SelectionMode` is `SingleDeselect`.
+## Selection modes
+
+The [SelectionUnit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionUnit.html) and [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) properties defines the behavior of selection in SfDataGrid. If the SelectionMode is single, a single row or cell can be selected. If the SelectionMode is extended or multiple, multiple rows or cells can be selected. The selection can be disabled by changing the SelectionMode as none.
+
+### Single row or cell selection
+
+If the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Single`, a single row or cell can be selected. SfDataGrid allows you to select or deselect a single row or cell, when the `SelectionMode` is `SingleDeselect`.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,14 +31,22 @@ this.sfDataGrid1.SelectionMode = GridSelectionMode.Single;
 Me.sfDataGrid1.SelectionMode = GridSelectionMode.Single
 {% endhighlight %}
 {% endtabs %}
+
+The following image shows for a single mode row selection.
+
 ![](Selection_images/selection1.png)
 
-N> When the[SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `SingleDeselect`, single row can be selected or deselected by clicking the respective row or  by pressing space key.
+The following image shows for a single mode cell selection.
 
-### Multiple Row Selection
+![](Selection_images/selection14.png)
 
-The SfDataGrid allows to select multiple rows by setting [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property as `Extended` or `Multiple`, where multiple rows can be selected by dragging the mouse on SfDataGrid and also using the key modifiers.
-While using Extended, multiple rows can be selected by pressing the key modifiers Ctrl and Shift.
+N> When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing Space key.
+
+### Multiple row or cell selection
+
+SfDataGrid allows you to select multiple rows or cells by setting the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) property as `Extended` or `Multiple` by dragging the mouse on SfDataGrid and using key modifiers.
+
+When using extended and multiple modes, the rows or cells can be selected by pressing the key modifiers: Ctrl and Shift.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,9 +56,16 @@ this.sfDataGrid1.SelectionMode = GridSelectionMode.Extended;
 Me.sfDataGrid1.SelectionMode = GridSelectionMode.Extended
 {% endhighlight %}
 {% endtabs %}
+
+The following image shows for extended mode row selection.
+
 ![](Selection_images/selection2.png)
 
-N>  When the[SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Multiple`, multiple rows can be selected or deselected by clicking the respective row. Also in multiple selection pressing navigation keys will move only the current cell and the rows can be selected or deselected by pressing space key.
+The following image shows for extended mode cell selection.
+
+![](Selection_images/selection15.png)
+
+N>  When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Multiple`, multiple rows or cells can be selected or deselected by clicking the respective rows or cells. In multiple selection, pressing navigation keys will move the current cell alone. The rows or cells can be selected or deselected by pressing the Space key.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,10 +75,18 @@ this.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple;
 Me.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple
 {% endhighlight %}
 {% endtabs %}
+
+The following image shows for multiple mode row selection.
 ![](Selection_images/selection3.png)
 
-### Disable the Selection
-The selection can be disabled by setting `SelectionMode` property as `None`.
+The following image shows for multiple mode cell selection.
+
+![](Selection_images/selection16.png)
+
+### Disable the selection
+
+The selection can be disabled by setting the `SelectionMode` property as `None`.
+
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.SelectionMode = GridSelectionMode.None;
@@ -68,7 +96,7 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-Selection on particular row can be disabled by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event.
+Selection on a particular row can be disabled by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event.
 
 The column selection and navigation can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFocus.html) property to `false`.
 
@@ -87,21 +115,39 @@ N> You can edit and select the FilterRow and AddNewRow cells though the `AllowFo
 
 N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid.
 
-## Get Selected Rows
+{% tabs %}
+{% highlight c# %}
+// Disable the focus for the column.
+sfDataGrid.Columns[2].AllowFocus = false;
+{% endhighlight %}
+{% highlight vb %}
+' Disable the focus for the particular column.
+sfDataGrid.Columns(2).AllowFocus = False
+{% endhighlight %}
+{% endtabs %}
+
+N> You cannot select the header rows and table summary rows of SfDataGrid. You cannot also select the unbound rows which are above and below the table summary row.
+
+## Get selected rows and cells
 
 The [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) property returns the data object of the selected row and the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property returns the index of the `SelectedItem` in SfDataGrid. `SelectedItem` denotes the first selected row in multiple selection.
 
-All the selected records can be retrieved through [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) property.
+### Row selection
+ 
+Get all the selected records using the [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) property.
+ 
+### Cell selection
+
+Get the selected cells using the [GetSelectedCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GetSelectedCells.html) method of `CellSelectionController` collection.
 
 ### CurrentItem vs SelectedItem
-
 Both [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentItem.html) returns the same data object when there is single row is selected in SfDataGrid. When more than one rows are selected, the record that had been selected initially is maintained in `SelectedItem` and the record that currently have focus is maintained in `CurrentItem`.
 
-## Programmatic Selection
+## Programmatic selection
 
-### Process Selection using Properties
+### Process selection using properties
 
-A single row can be selected by setting [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) property or [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property.
+A single row can be selected by setting the [SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) or [SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedIndex.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,6 +168,21 @@ this.sfDataGrid1.SelectedIndex = recordIndex;
 {% highlight vb %}
 Dim recordIndex = Me.sfDataGrid.TableControl.ResolveToRecordIndex(5)
 Me.sfDataGrid1.SelectedIndex = recordIndex
+{% endhighlight %}
+{% endtabs %}
+
+A single cell can be selected by using the [SelectCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectCell.html) method.
+
+{% tabs %}
+{% highlight c# %}
+var record = this.sfDataGrid.View.Records[5];
+var column = this.sfDataGrid.Columns[2];
+this.sfDataGrid.SelectCell(record, column);
+{% endhighlight %}
+{% highlight vb %}
+Dim record = Me.sfDataGrid.View.Records(5)
+Dim column = Me.sfDataGrid.Columns(2)
+Me.sfDataGrid.SelectCell(record, column)
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,7 +213,6 @@ Next record
 ![](Selection_images/selection4.png)
 
 ### Process Selection using Methods
-
 SfDataGrid Allows to select a range of rows through [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method.
 {% tabs %}
 {% highlight c# %}
@@ -164,7 +224,19 @@ Me.sfDataGrid1.SelectRows(3, 6)
 {% endtabs %}
 ![](Selection_images/selection5.png)
 
-All the rows can be selected by using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method in SfDataGrid.
+SfDataGrid allows you to select a range of cells through the [SelectCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectCells.html) method.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.SelectCells(sfDataGrid.View.Records[5], sfDataGrid.Columns["ProductName"], sfDataGrid.View.Records[10], sfDataGrid.Columns["Quantity"]);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.SelectCells(sfDataGrid.View.Records(5), sfDataGrid.Columns("ProductName"), sfDataGrid.View.Records(10), sfDataGrid.Columns("Quantity"))
+{% endhighlight %}
+{% endtabs %}
+![](Selection_images/selection17.png)
+
+All the rows or cells can be selected by using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +248,6 @@ Me.sfDataGrid1.SelectAll()
 {% endtabs %}
 
 ### Process Current Cell
-
 When a particular record is assigned to the [CurrentItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentItem.html) property, the [CurrentCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCell.html) will be moved to corresponding record when the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Multiple` or `Extended` and the selection will added to the particular record item when the SelectionMode is `Single`.
 
 {% tabs %}
@@ -235,10 +306,47 @@ Me.sfDataGrid1.ClearSelection()
 {% endhighlight %}
 {% endtabs %}
 
+SfDataGrid can clear the selection of a particular cell by using the [UnSelectCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~UnselectCell.html) method.
+
+{% tabs %}
+{% highlight c# %}
+var removeRecord = this.sfDataGrid.View.Records[7];
+var removeColumn = this.sfDataGrid.Columns[3];
+this.sfDataGrid.UnselectCell(removeRecord, removeColumn);
+{% endhighlight %}
+{% highlight vb %}
+Dim removeRecord = Me.sfDataGrid.View.Records(7)
+Dim removeColumn = Me.sfDataGrid.Columns(3)
+Me.sfDataGrid.UnselectCell(removeRecord, removeColumn)
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection18.png)
+
+SfDataGrid can clear the selection of a group of cells by using the [UnSelectCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~UnselectCells.html) method.
+
+{% tabs %}
+{% highlight c# %}
+var firstRecord = this.sfDataGrid.View.Records[7];
+var lastRecord = this.sfDataGrid.View.Records[8];
+var firstColumn = this.sfDataGrid.Columns[2];
+var lastColumn = this.sfDataGrid.Columns[3];
+this.sfDataGrid.UnselectCells(firstRecord, firstColumn, lastRecord, lastColumn);
+{% endhighlight %}
+{% highlight vb %}
+Dim firstRecord = Me.sfDataGrid.View.Records(7)
+Dim lastRecord = Me.sfDataGrid.View.Records(8)
+Dim firstColumn = Me.sfDataGrid.Columns(2)
+Dim lastColumn = Me.sfDataGrid.Columns(3)
+Me.sfDataGrid.UnselectCells(firstRecord, firstColumn, lastRecord, lastColumn)
+{% endhighlight %}
+{% endtabs %}
+
+![](Selection_images/selection19.png)
+
 ## Get the  Cell Value
 
 ### Get the current cell value
-
 The current cell value can be retrieved by using the [GridCellRendererBase.GetControlValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCellRendererBase~GetControlValue.html) method when the `CurrentCell` value is not null.
 
 {% tabs %}
@@ -450,7 +558,7 @@ The SfDataGrid will be scrolled to previous set of rows that are not displayed i
 <kbd>Tab</kbd>
 </td>
 <td>
-Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.
+Moves the current cell to next to the active current cell. If the active current cell is the last cell of the current row, the focus will moved to first cell of the row next to the current row.If the active current cell is the last cell of the last row, the focus will be moved to next control in the tab order of the parent container.
 </td>
 </tr>
 <tr>
@@ -458,7 +566,7 @@ Moves the current cell to next to the active current cell. If the active current
 <kbd>Shift</kbd> + <kbd>Tab</kbd>
 </td>
 <td>
-Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.
+Moves the current cell previous to the active current cell. If the active current cell is the first cell of the current row, the current cell will moved to last cell of the row previous to the current row.If the active current cell is the first cell of the first row, the focus will be moved to previous control in the tab order of the parent container.
 </td>
 </tr>
 <tr>
