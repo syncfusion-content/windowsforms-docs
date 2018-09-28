@@ -945,7 +945,7 @@ sfDataGrid.Columns(0).HeaderStyle.FilteredIcon = New Bitmap(Image.FromFile("..\.
 
 ### Styling the inner controls of the GridFilterControl 
 
-The appearance of the inner controls added to the GridFilterControl can be customized using the [SfDataGrid.FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs.html) event. The [FilterPopupShowingEventArgs.Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs~Control.html) property will provide access to all the controls inside the GridFilterControl which can be used to customize the style of each controls.
+The appearance of the inner controls added to the GridFilterControl can be customized using the [SfDataGrid.FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs.html) event. The [FilterPopupShowingEventArgs.Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs~Control.html) property provides access to all the controls inside the GridFilterControl that can be used to customize the style of each control.
 
 {% tabs %}
 {% highlight c# %}
