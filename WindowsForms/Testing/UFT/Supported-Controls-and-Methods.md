@@ -22,6 +22,7 @@ Supported methods denote those methods that are recorded in QTP.
 ## Essential Grid
 Essential Grid supports the following controls,
 
+* SfDataGrid
 * GridControl
 * GridDataBoundGrid
 * GridGroupingControl
@@ -29,6 +30,130 @@ Essential Grid supports the following controls,
 * SfListView
 
 The following are the recorded methods and their corresponding descriptions for Essential Grid,
+
+### SfDataGrid
+
+<table>
+<tr>
+<td>
+{{'**Method**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+<td>
+{{'**Parameters**'| markdownify }}
+</td>
+<td>
+{{'**Parameter explanation**'| markdownify }}
+</td>
+<td>
+{{'**Return type**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+void SetCurrentCell(int row,int col);
+</td>
+<td>
+Sets the location of the current cell.
+</td>
+<td>
+int row and int col
+</td>
+<td>
+Passes the current row and column index to the SetCurrentCell method.
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void GroupColumn(string columnName);
+</td>
+<td>
+Groups the specified column.
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passes the mapping name for a column.
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void UnGroupColumn(string columnName);
+</td>
+<td>
+Ungroup the specified column.
+</td>
+<td>
+String columnName
+</td>
+<td>
+Passes the mapping name for a column.
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void SortColumn(string columnName, string state);
+</td>
+<td>
+Sorts the column.
+</td>
+<td>
+string columnName, string state
+</td>
+<td>
+Passes the mapping name and state for a column whether ascending or descending.
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void BeginEdit(int row, int col);
+</td>
+<td>
+Brings the editing cursor in the specified grid cell.
+</td>
+<td>
+int row and int col
+</td>
+<td>
+Passes the current row and column index for the BeginEdit method.
+</td>
+<td>
+Void
+</td>
+</tr>
+<tr>
+<td>
+void EndEdit();
+</td>
+<td>
+Finishes the editing mode of the specified cell.
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Void
+</td>
+</tr>
+</table>
 
 ### Grid Control
 

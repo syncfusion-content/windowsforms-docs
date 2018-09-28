@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview for Popup Menu Control | Windows Forms | Syncfusion
+description: The popup menu control is used as a context menu that can be shown when the user right clicks anywhere in application.
 platform: WindowsForms
 control: Popup-Menu
 documentation: ug
