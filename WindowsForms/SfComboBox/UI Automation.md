@@ -65,7 +65,7 @@ Me.sfComboBox1.AccessibilityEnabled = true
 
 ### Getting started
 
-Follw the steps to create a `CodedUITest project` and test the `SfComboBox` application:
+Follow the steps to create a `CodedUITest project` and test the `SfComboBox` application:
 
 1. Create a new application or open an existing application with `SfComboBox`.
 2. Create a Coded UI Test project. A CUIT file will be added automatically.
