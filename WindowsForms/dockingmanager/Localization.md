@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localize the customizable text in DockingManager
 description: This section explains about the localization support in DockingManager.
 platform: WindowsForms
 control: DockingManager

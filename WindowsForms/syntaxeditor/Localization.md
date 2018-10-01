@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization 
-description: This section explains about the localization support in EditControl.
+title: Localize the customizable text in EditControl
+description: This section explains about the localization support in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug

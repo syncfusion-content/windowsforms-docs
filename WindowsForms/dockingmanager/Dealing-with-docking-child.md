@@ -7,6 +7,10 @@ control: DockingManager
 documentation: ug
 ---
 
+# Dealing with docking child
+
+This section explains about resizing of child windows, dock ability and tooltip functionalities in DockingManager control.  And also explains hiding the particular caption button, context menu of docking child window.
+
 ## Docked Children
 
 The docking manager allows you to dock the control on any of the four sides of the container control, and this provides docking hints when dragging the panel over it. This preview explains how the layout looks after dropping the panel to dock.

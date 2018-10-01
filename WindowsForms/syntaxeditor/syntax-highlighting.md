@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syntax Highlighting 
+title: Syntax Highlighting functionalities in EditControl
 description: syntax highlighting
 platform: WindowsForms
 control: SyntaxEditor

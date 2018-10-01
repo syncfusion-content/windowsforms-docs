@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: Overview
+description: Features overview of DateTimePicker control for Windows Form
 platform: WindowsForms
 control: DateTimePicker
 documentation: ug
