@@ -1,6 +1,6 @@
 ---
 layout: post
-title: File operation functionalities in EditControl
+title: File operations in EditControl
 description: This section explains about the file operation functionalities in EditControl
 platform: WindowsForms
 control: SyntaxEditor

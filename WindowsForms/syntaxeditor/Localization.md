@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localize the customizable text in EditControl
+title: Localize the static text in EditControl
 description: This section explains about the localization support in EditControl
 platform: WindowsForms
 control: SyntaxEditor

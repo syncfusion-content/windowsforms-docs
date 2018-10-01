@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: Features overview of Clock control for Windows Form
+description: Features overview of Clock control for Windows Forms
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
 documentation: ug

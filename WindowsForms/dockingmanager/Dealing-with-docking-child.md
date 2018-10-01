@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with docking child
 
-This section explains about resizing of child windows, dock ability and tooltip functionalities in DockingManager control.  And also explains hiding the particular caption button, context menu of docking child window.
+This section explains about resizing and positioning of child windows in DockingManager. And also explains customizing the visibility of caption button and context menu of docking child windows.
 
 ## Docked Children
 
