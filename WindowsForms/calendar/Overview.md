@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | WindowsForms | Syncfusion
-description: Overview
+description: Features overview of Calendar control for Windows Forms
 platform: WindowsForms
 control: Calendar
 documentation: ug
