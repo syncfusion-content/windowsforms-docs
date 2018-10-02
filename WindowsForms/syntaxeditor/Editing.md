@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing 
+title: Editing functionalities in EditControl
 description: This section explains about the editing support in EditControl
 platform: WindowsForms
 control: SyntaxEditor
