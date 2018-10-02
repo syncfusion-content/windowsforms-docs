@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing 
-description: This section explains about the printing support in EditControl.
+title: Printing functionalities in EditControl
+description: This section explains about the printing support in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug

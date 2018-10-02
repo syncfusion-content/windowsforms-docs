@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export 
+title: Export to various type of file format in EditControl
 description: This section explains about the exporting various file formats in EditControl
 platform: WindowsForms
 control: SyntaxEditor
