@@ -243,7 +243,7 @@ It can also be opened through Property Window.
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv britainNode;
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv franceNode;
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv unitedStatesNode;
-        private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv canadaNode;
+        private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv CanadaNode;
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv australiaChildNode;
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv newZealandNode;
         private Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv brazilNode;
@@ -256,7 +256,7 @@ It can also be opened through Property Window.
             this.britainNode = new TreeNodeAdv();
             this.franceNode = new TreeNodeAdv();
             this.unitedStatesNode = new TreeNodeAdv();
-            this.canadaNode = new TreeNodeAdv();
+            this.CanadaNode = new TreeNodeAdv();
             this.australiaChildNode = new TreeNodeAdv();
             this.newZealandNode = new TreeNodeAdv();
             this.brazilNode = new TreeNodeAdv();
@@ -269,7 +269,7 @@ It can also be opened through Property Window.
             this.britainNode.Text = "Britain";
             this.franceNode.Text = "France";
             this.unitedStatesNode.Text = "United States";
-            this.canadaNode.Text = "Canada";
+            this.CanadaNode.Text = "Canada";
             this.australiaChildNode.Text = "Australia";
             this.newZealandNode.Text = "New Zealand";
             this.brazilNode.Text = "Brazil";
@@ -279,7 +279,7 @@ It can also be opened through Property Window.
 
             this.asiaNode.Nodes.AddRange(new TreeNodeAdv[] { this.indiaNode, this.chinaNode });
             this.europeNode.Nodes.AddRange(new TreeNodeAdv[] { this.britainNode, this.franceNode });
-            this.northAmericaNode.Nodes.AddRange(new TreeNodeAdv[] { this.unitedStatesNode, this.canadaNode });
+            this.northAmericaNode.Nodes.AddRange(new TreeNodeAdv[] { this.unitedStatesNode, this.CanadaNode });
             this.australiaNode.Nodes.AddRange(new TreeNodeAdv[] { this.australiaChildNode, this.newZealandNode });
             this.southAmericaNode.Nodes.AddRange(new TreeNodeAdv[] { this.brazilNode, this.argentinaNode });
             this.africaNode.Nodes.AddRange(new TreeNodeAdv[] { this.southAfricaNode, this.zimbabweNode });
@@ -293,7 +293,7 @@ It can also be opened through Property Window.
     Private britainNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
     Private franceNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
     Private unitedStatesNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
-    Private canadaNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
+    Private CanadaNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
     Private australiaChildNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
     Private newZealandNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
     Private brazilNode As Syncfusion.Windows.Forms.Tools.MultiColumnTreeView.TreeNodeAdv
@@ -306,7 +306,7 @@ It can also be opened through Property Window.
         Me.britainNode = New TreeNodeAdv()
         Me.franceNode = New TreeNodeAdv()
         Me.unitedStatesNode = New TreeNodeAdv()
-        Me.canadaNode = New TreeNodeAdv()
+        Me.CanadaNode = New TreeNodeAdv()
         Me.australiaChildNode = New TreeNodeAdv()
         Me.newZealandNode = New TreeNodeAdv()
         Me.brazilNode = New TreeNodeAdv()
@@ -319,7 +319,7 @@ It can also be opened through Property Window.
         Me.britainNode.Text = "Britain"
         Me.franceNode.Text = "France"
         Me.unitedStatesNode.Text = "United States"
-        Me.canadaNode.Text = "Canada"
+        Me.CanadaNode.Text = "Canada"
         Me.australiaChildNode.Text = "Australia"
         Me.newZealandNode.Text = "New Zealand"
         Me.brazilNode.Text = "Brazil"
@@ -329,7 +329,7 @@ It can also be opened through Property Window.
 
         Me.asiaNode.Nodes.AddRange(New TreeNodeAdv() {Me.indiaNode, Me.chinaNode})
         Me.europeNode.Nodes.AddRange(New TreeNodeAdv() {Me.britainNode, Me.franceNode})
-        Me.northAmericaNode.Nodes.AddRange(New TreeNodeAdv() {Me.unitedStatesNode, Me.canadaNode})
+        Me.northAmericaNode.Nodes.AddRange(New TreeNodeAdv() {Me.unitedStatesNode, Me.CanadaNode})
         Me.australiaNode.Nodes.AddRange(New TreeNodeAdv() {Me.australiaChildNode, Me.newZealandNode})
         Me.southAmericaNode.Nodes.AddRange(New TreeNodeAdv() {Me.brazilNode, Me.argentinaNode})
         Me.africaNode.Nodes.AddRange(New TreeNodeAdv() {Me.southAfricaNode, Me.zimbabweNode})
@@ -402,7 +402,7 @@ It can also be opened through Property Window.
             this.britainNode.SubItems.Add(this.londonSubItem);
             this.franceNode.SubItems.Add(this.parisSubItem);
             this.unitedStatesNode.SubItems.Add(this.washingtonSubItem);
-            this.canadaNode.SubItems.Add(this.ottawaSubItem);
+            this.CanadaNode.SubItems.Add(this.ottawaSubItem);
             this.australiaChildNode.SubItems.Add(this.canberraSubItem);
             this.newZealandNode.SubItems.Add(this.wellingtonSubItem);
             this.brazilNode.SubItems.Add(this.brasiliaSubItem);
@@ -458,7 +458,7 @@ It can also be opened through Property Window.
         Me.britainNode.SubItems.Add(Me.londonSubItem)
         Me.franceNode.SubItems.Add(Me.parisSubItem)
         Me.unitedStatesNode.SubItems.Add(Me.washingtonSubItem)
-        Me.canadaNode.SubItems.Add(Me.ottawaSubItem)
+        Me.CanadaNode.SubItems.Add(Me.ottawaSubItem)
         Me.australiaChildNode.SubItems.Add(Me.canberraSubItem)
         Me.newZealandNode.SubItems.Add(Me.wellingtonSubItem)
         Me.brazilNode.SubItems.Add(Me.brasiliaSubItem)
