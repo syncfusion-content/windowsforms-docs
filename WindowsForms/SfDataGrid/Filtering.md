@@ -943,3 +943,55 @@ sfDataGrid.Columns(0).HeaderStyle.FilteredIcon = New Bitmap(Image.FromFile("..\.
 
 ![](Filtering_images/Filtering_img19.png)
 
+### Styling filter control
+
+The appearance of the inner controls added to the GridFilterControl can be customized using the [SfDataGrid.FilterPopupShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs.html) event. The [FilterPopupShowingEventArgs.Control](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterPopupShowingEventArgs~Control.html) property provides access to all the controls inside the GridFilterControl that can be used to customize the style of each control.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.FilterPopupShowing += sfDataGrid_FilterPopupShowing;
+
+void sfDataGrid_FilterPopupShowing(object sender, FilterPopupShowingEventArgs e)
+{
+    e.Control.BackColor = ColorTranslator.FromHtml("#EDF3F3");
+
+    //Customize the appearance of the CheckedListBox
+    e.Control.CheckListBox.Style.CheckBoxStyle.CheckedBorderColor = e.Control.CheckListBox.Style.CheckBoxStyle.CheckedBackColor = ColorTranslator.FromHtml("#029684");
+    e.Control.CheckListBox.Style.CheckBoxStyle.UncheckedBorderColor = ColorTranslator.FromHtml("#029684");
+    e.Control.CheckListBox.Style.CheckBoxStyle.IndeterminateColor = e.Control.CheckListBox.Style.CheckBoxStyle.IndeterminateBorderColor = ColorTranslator.FromHtml("#029684");
+    e.Control.CheckListBox.Style.ItemStyle.BackColor = ColorTranslator.FromHtml("#F9FDFE");
+    e.Control.CheckListBox.Style.SelectionStyle.SelectionBackColor = ColorTranslator.FromHtml("#EDF3F3");
+
+    //Customize the appearance of the Ok and Cancel buttons
+    e.Control.OkButton.BackColor =  e.Control.CancelButton.BackColor = ColorTranslator.FromHtml("#029684");
+    e.Control.OkButton.ForeColor = e.Control.CancelButton.ForeColor = Color.White;
+    e.Control.OkButton.Font = e.Control.CancelButton.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.FilterPopupShowing, AddressOf sfDataGrid_FilterPopupShowing
+
+Private Sub sfDataGrid_FilterPopupShowing(ByVal sender As Object, ByVal e As FilterPopupShowingEventArgs)
+	e.Control.BackColor = ColorTranslator.FromHtml("#EDF3F3")
+
+	'Customize the appearance of the CheckedListBox
+	e.Control.CheckListBox.Style.CheckBoxStyle.CheckedBackColor = ColorTranslator.FromHtml("#029684")
+	e.Control.CheckListBox.Style.CheckBoxStyle.CheckedBorderColor = e.Control.CheckListBox.Style.CheckBoxStyle.CheckedBackColor
+	e.Control.CheckListBox.Style.CheckBoxStyle.UncheckedBorderColor = ColorTranslator.FromHtml("#029684")
+	e.Control.CheckListBox.Style.CheckBoxStyle.IndeterminateBorderColor = ColorTranslator.FromHtml("#029684")
+	e.Control.CheckListBox.Style.CheckBoxStyle.IndeterminateColor = e.Control.CheckListBox.Style.CheckBoxStyle.IndeterminateBorderColor
+	e.Control.CheckListBox.Style.ItemStyle.BackColor = ColorTranslator.FromHtml("#F9FDFE")
+	e.Control.CheckListBox.Style.SelectionStyle.SelectionBackColor = ColorTranslator.FromHtml("#EDF3F3")
+
+	'Customize the appearance of the Ok and Cancel buttons
+	e.Control.CancelButton.BackColor = ColorTranslator.FromHtml("#029684")
+	e.Control.OkButton.BackColor = e.Control.CancelButton.BackColor
+	e.Control.CancelButton.ForeColor = Color.White
+	e.Control.OkButton.ForeColor = e.Control.CancelButton.ForeColor
+	e.Control.CancelButton.Font = New Font("Segoe UI", 9, FontStyle.Bold)
+	e.Control.OkButton.Font = e.Control.CancelButton.Font
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![](Filtering_images/Filtering_img25.png)

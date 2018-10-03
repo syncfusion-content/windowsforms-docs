@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Command Bar | Windows Forms | Syncfusion
+description: The command bar is used to create and host the components such as toolbars, status bars, etc.,
 platform: WindowsForms
 control: CommandBar
 documentation: ug
