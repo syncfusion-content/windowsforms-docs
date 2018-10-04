@@ -11,7 +11,7 @@ documentation: ug
 
 The default appearance of the chart series is as shown in the image below.
 
-![](How-to-get-back-to-the-gradient-appearance-of-the-_images/How-to-get-back-to-the-gradient-appearance-of-the-_img1.jpeg)
+![Chart Gradient](How-to-get-back-to-the-gradient-appearance-of-the-_images/How-to-get-back-to-the-gradient-appearance-of-the-_img1.jpeg)
 
 To get the gradient appearance, we need to set the ChartControl.Model.ColorModel.AllowGradient to true. By default this is set to false.
 
@@ -35,7 +35,7 @@ Me.chartControl1.Model.ColorModel.AllowGradient = True
 
 {% endtabs %}
 
-![](How-to-get-back-to-the-gradient-appearance-of-the-_images/How-to-get-back-to-the-gradient-appearance-of-the-_img2.jpeg)
+![Chart Gradient](How-to-get-back-to-the-gradient-appearance-of-the-_images/How-to-get-back-to-the-gradient-appearance-of-the-_img2.jpeg)
 
 N> We can also use ChartControl.AllowGradientPalette property to enable or disable gradient effect for chart series. By default it set to false.
 

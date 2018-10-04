@@ -1073,7 +1073,7 @@ Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/sivakumard/Desktop/Symbols.PNG](Runtime-Features_images/Runtime-Features_img25.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img25.png)
 
 ## ToolTips
 

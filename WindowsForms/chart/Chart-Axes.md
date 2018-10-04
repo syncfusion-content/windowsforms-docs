@@ -1059,7 +1059,7 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/jananit/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/IntersectingLabels.png](Chart-Axes_images/Chart-Axes_img18.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img18.png)
 
 ## Grouping Labels
 
@@ -1296,7 +1296,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/sivakumard/Desktop/Tooltip.png](Chart-Axes_images/Chart-Axes_img20.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img20.png)
 
 {% seealso %}
 
@@ -1693,7 +1693,7 @@ Me.chartControl1.Style3D=True
 {% endhighlight %}
 {% endtabs %}
 
-![http://www.syncfusion.com/downloads/Support/DirectTrac/93985/clip_image001105907764.png](Chart-Axes_images/Chart-Axes_img30.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img30.png)
 
 ## Chart Grid Lines
 
