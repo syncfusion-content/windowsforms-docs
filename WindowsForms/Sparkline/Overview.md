@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview of Sparkline Control | Windows Forms | Syncfusion
+description: A Sparkline is a tiny chart in a worksheet cell that provides a visual representation of data
 platform: windowsforms
 control: Sparkline
 documentation: ug
