@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Navigation
+title: Navigation functionalities in EditControl
 description: This section explains about the navigation support in EditControl
 platform: WindowsForms
 control: SyntaxEditor
