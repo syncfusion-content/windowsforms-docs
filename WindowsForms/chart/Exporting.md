@@ -147,7 +147,7 @@ End Using
  
 The figure below shows the chart EPS image text editing in Adobe Illustrator.
 
-![](Exporting_images/Exporting_img1.png)
+![Chart Export](Exporting_images/Exporting_img1.png)
 
 N> Chart wrapping and formatting will not be possible in the EPS image by enabling this property.
 
@@ -155,7 +155,7 @@ N> Chart wrapping and formatting will not be possible in the EPS image by enabli
 
 The chart control can be exported to a Word doc file as an image using EssentialDocIO. The chart control provides APIs to convert it to an image, while DocIO lets you insert this image into a Word Document file programmatically.
 
-![](Exporting_images/Exporting_img3.jpeg)
+![Chart Export](Exporting_images/Exporting_img3.jpeg)
 
 Given below are the steps that will guide you through this process.
 
@@ -289,7 +289,7 @@ A sample demonstrating the above is available in our installation at the followi
 
 The chart control can be exported into a grid cell (in Essential Grid) as an image using EssentialGrid. The chart control provides APIs to convert it to an image, while the Grid will let you insert this image into any specific cell.
 
-![](Exporting_images/Exporting_img4.jpeg)
+![Chart Export](Exporting_images/Exporting_img4.jpeg)
 
 The steps that are given below will guide you through the process.
 
@@ -454,7 +454,7 @@ A sample demonstrating the above is available in our installation at the followi
 
 EssentialChart data can be exported into an Excel document and an Excel chart can be created to use the above data using Essential XlsIO. Though there is no built-in support for this, this can be easily implemented with a very intuitive XlsIO API.
 
-![](Exporting_images/Exporting_img5.jpeg)
+![Chart Export](Exporting_images/Exporting_img5.jpeg)
 
 Given below are the steps that will guide you through this process.
 
@@ -628,7 +628,7 @@ A sample demonstrating the above functionality is available in our installation 
 
 The chart control can be exported into a PDF file as an image using EssentialPDF. The chart control provides APIs to convert it to an image, while Essential PDF lets you insert this image into a Word Document file programmatically.
 
-![](Exporting_images/Exporting_img6.jpeg)
+![Chart Export](Exporting_images/Exporting_img6.jpeg)
 
 1.Add the **Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows** assemblies.
 

@@ -294,7 +294,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-control-events_images/Chart-control-events_img1.jpeg)
+![Chart Events](Chart-control-events_images/Chart-control-events_img1.jpeg)
 
 ## SeriesInCompatible Event
 

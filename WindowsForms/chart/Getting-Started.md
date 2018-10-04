@@ -26,21 +26,21 @@ To add chart to your form, follow the given steps:
 
 1.Open your form in designer. Add the Syncfusion controls to your VS.NET toolbox if you have not done it already (the install would have automatically done this unless you selected not to complete toolbox integration during installation). 
 
-![](Getting-Started_images/Toolbox.jpg)
+![Chart Started](Getting-Started_images/Toolbox.jpg)
 
 2.Drag the [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) and drop into the form.
 
-![](Getting-Started_images/Form.jpg)
+![Chart Started](Getting-Started_images/Form.jpg)
 
 3.After dropping the chart, the **ChartWizard** will be opened. You can set up the chart configuration during design-time.
 
-![](Getting-Started_images/ChartWizard.jpg)
+![Chart Started](Getting-Started_images/ChartWizard.jpg)
 
 4.Appearance and behavior-related aspects of chart can be controlled by setting the appropriate properties using the properties grid. 
 
 For example, change the position of the legend to be aligned at the top by changing the **LegendPosition** property.
 
-![](Getting-Started_images/Properties.jpg)
+![Chart Started](Getting-Started_images/Properties.jpg)
 
 ## Populate chart with data
 
@@ -266,7 +266,7 @@ Me.chartControl1.Skins = Skins.Metro
 
 The following screenshot depicts the view when you run the project in your form.
 
-![](Getting-Started_images/Skin.jpg)
+![Chart Started](Getting-Started_images/Skin.jpg)
 
 ## Add chart title
 
@@ -288,7 +288,7 @@ Me.chartControl1.Title.Text = "Product Sales"
 
 {% endtabs %}	
 
-![](Getting-Started_images/Title.jpg)
+![Chart Started](Getting-Started_images/Title.jpg)
 
 ## Enable legend
 
@@ -326,7 +326,7 @@ Me.chartControl1.LegendsPlacement = ChartPlacement.Outside
 
 {% endtabs %}	
 
-![](Getting-Started_images/Legend.jpg)
+![Chart Started](Getting-Started_images/Legend.jpg)
 
 ## Enable data labels
 
@@ -352,7 +352,7 @@ chartSeries1.Style.TextOrientation = ChartTextOrientation.Up
 
 {% endtabs %}	
 
-![](Getting-Started_images/DataLabel.jpg)
+![Chart Started](Getting-Started_images/DataLabel.jpg)
 
 ## Enable tooltip
 
@@ -417,7 +417,7 @@ End Sub
 
 {% endtabs %}	
 
-![](Getting-Started_images/Tooltip.jpg)
+![Chart Started](Getting-Started_images/Tooltip.jpg)
 
 {% seealso %}
 

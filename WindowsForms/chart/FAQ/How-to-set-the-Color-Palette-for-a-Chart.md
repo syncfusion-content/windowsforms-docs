@@ -35,5 +35,5 @@ Me.chartControl1.Palette = ChartColorPalette.Custom
 
 {% endtabs %}
 
-![](How-to-set-the-Color-Palette-for-a-Chart_images/How-to-set-the-Color-Palette-for-a-Chart_img1.jpeg)
+![Chart Color](How-to-set-the-Color-Palette-for-a-Chart_images/How-to-set-the-Color-Palette-for-a-Chart_img1.jpeg)
 

@@ -75,6 +75,6 @@ End If
 
 {% endtabs %}	
 
-![](How-to-add-custom-TrendLine-in-Chart_images/How-to-add-custom-TrendLine-in-Chart_img1.jpeg)
+![Chart Trendline](How-to-add-custom-TrendLine-in-Chart_images/How-to-add-custom-TrendLine-in-Chart_img1.jpeg)
 
 

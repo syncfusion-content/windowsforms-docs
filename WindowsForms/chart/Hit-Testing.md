@@ -19,7 +19,7 @@ Using the [GetValueByPoint](https://help.syncfusion.com/cr/cref_files/windowsfor
 
 The below figure shows a chart where the tooltip text for each point shows the corresponding x, y value at that position. 
 
-![](Hit-Testing_images/Hit-Testing_img1.jpeg)
+![Chart Hittest](Hit-Testing_images/Hit-Testing_img1.jpeg)
 
 Code snippet for the above sample.
 
@@ -119,7 +119,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Hit-Testing_images/Hit-Testing_img2.jpeg)
+![Chart Hittest](Hit-Testing_images/Hit-Testing_img2.jpeg)
 
 ## Chart Area Bounds
 
@@ -165,7 +165,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Hit-Testing_images/Hit-Testing_img3.jpeg)
+![Chart Hittest](Hit-Testing_images/Hit-Testing_img3.jpeg)
 
 ### Chart Plot Area Bounds
 
@@ -208,4 +208,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Hit-Testing_images/Hit-Testing_img4.jpeg)
+![Chart Hittest](Hit-Testing_images/Hit-Testing_img4.jpeg)
