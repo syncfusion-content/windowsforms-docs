@@ -17,7 +17,7 @@ In this section, we will illustrate how the data from certain data stores can be
 
 There is no built-in support in Chart for importing data from CSV (Comma Separated Values) files. But this can be easily accomplished by using the **Microsoft.Jet.OLEDB.4.0** to first convert it into a DataSet and then bind it to the chart. This is illustrated in this sample that is distributed with the installation.
 
-![](Importing_images/Importing_img1.jpeg)
+![Chart Import](Importing_images/Importing_img1.jpeg)
 
 ### Sample Location:
 
@@ -27,7 +27,7 @@ There is no built-in support in Chart for importing data from CSV (Comma Separat
 
 There is no built-in support in Chart for importing data from an XML file. But given a corresponding XSLT file, the XML data can be converted into a DataSet, which can then be bound to the chart easily. This is illustrated in this sample that is distributed with the installation.
 
-![](Importing_images/Importing_img2.jpeg)
+![Chart Import](Importing_images/Importing_img2.jpeg)
 
 ### Sample Location
 
@@ -37,7 +37,7 @@ There is no built-in support in Chart for importing data from an XML file. But g
 
 There is no built-in support in Chart for importing data from XLS (MS Excel) files. But this can be easily accomplished by using the **Microsoft.Jet.OLEDB.4.0** to first convert it into a DataSet and then bind it to the chart. This is illustrated in this sample that is distributed with the installation.
 
-![](Importing_images/Importing_img3.jpeg)
+![Chart Import](Importing_images/Importing_img3.jpeg)
 
 ### Sample Location
 

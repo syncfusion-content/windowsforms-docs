@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
 
 1. **Legend** - The rectangular region that lists one or more legend items.
 2. **Legend Item** - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) in the chart. You can also add custom legend items to a Legend.
@@ -228,7 +228,7 @@ The Legend's look and feel can also be customized during runtime. Double-clickin
 
 N> These settings will be lost when the application is closed.
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img4.jpeg)
 
 {% seealso %}
 
@@ -310,7 +310,7 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img5.jpeg)
 
 ### Customizing items through event
 
@@ -361,7 +361,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img6.jpeg)
 
 ### Legend Item's Look and Feel
 
@@ -576,9 +576,9 @@ Gets / sets the check state of the ChartLegendItem checkbox. By default it is se
 Lets you show / hide the legend item.</td></tr>
 </table>
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img7.jpeg)
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
 
 {% seealso %}
 
@@ -685,7 +685,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Serie
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img9.jpeg)
 
 To do this for specific legend items,
 
@@ -765,7 +765,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)
 
 ### Custom Representation Icon
 
@@ -789,7 +789,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamo
 
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)
 
 To do the above only on specific legend items, use the ChartLegendItem.Type property.
 
@@ -857,7 +857,7 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)
 
 ### Custom Images
 
@@ -906,7 +906,7 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
 
 ### Hiding Icons
 

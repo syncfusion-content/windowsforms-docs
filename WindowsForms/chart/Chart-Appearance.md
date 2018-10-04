@@ -34,7 +34,7 @@ Me.chartControl1.BackInterior = New Syncfusion.Drawing.BrushInfo(System.Drawing.
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img1.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img1.jpeg)
 
 ### Inside the Plot Area
 
@@ -55,7 +55,7 @@ Me.chartControl1.ChartArea.BackInterior = New Syncfusion.Drawing.BrushInfo(Syste
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img2.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img2.jpeg)
 
 ### Inside the Chart Area
 
@@ -77,7 +77,7 @@ this.chartControl1.ChartInterior = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img3.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img3.jpeg)
 
 ## Background Image
 
@@ -118,7 +118,7 @@ Me.ChartControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretc
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img4.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img4.jpeg)
 
 ### ChartArea Background Image
 
@@ -149,7 +149,7 @@ Me.ChartControl1.ChartAreaBackImage = myCustomImage
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img5.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img5.jpeg)
 
 ### Chart Interior Background Image
 
@@ -169,7 +169,7 @@ Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img6.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img6.jpeg)
 
 ## Border and Margins
 
@@ -329,7 +329,7 @@ Me.chartControl1.ShadowWidth = 7
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img7.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img7.png)
 
 ### Chart Area Margins
 
@@ -501,7 +501,7 @@ Me.chartControl1.TextPosition = ChartTextPosition.Top
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img8.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img8.jpeg)
 
 **General Text Related settings**
 
@@ -642,7 +642,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img13.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img13.jpeg)
 
 {% seealso %}
 
@@ -730,7 +730,7 @@ Me.chartControl1.ChartArea.Watermark.ZOrder=ChartWaterMarkOrder.Behind;
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img14.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img14.jpeg)
 
 ## Interlaced Grid Background
 
@@ -762,7 +762,7 @@ Me.chartControl1.PrimaryYAxis.InterlacedGridInterior = new Syncfusion.Drawing.Br
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img15.jpeg)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img15.jpeg)
 
 The preceding image illustrates interlaced grid background for the chart.
 
@@ -841,59 +841,59 @@ Me.chartControl1.Skins = Skins.Office2007Blue
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Black.
 
-![](Chart-Appearance_images/Chart-Appearance_img18.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img18.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Blue.
 
-![](Chart-Appearance_images/Chart-Appearance_img19.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img19.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Office2007 Silver.
 
-![](Chart-Appearance_images/Chart-Appearance_img20.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img20.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Almond.
 
-![](Chart-Appearance_images/Chart-Appearance_img21.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img21.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blend.
 
-![](Chart-Appearance_images/Chart-Appearance_img22.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img22.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Blueberry.
 
-![](Chart-Appearance_images/Chart-Appearance_img23.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img23.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Marble.
 
-![](Chart-Appearance_images/Chart-Appearance_img24.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img24.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Midnight.
 
-![](Chart-Appearance_images/Chart-Appearance_img25.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img25.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Monochrome.
 
-![](Chart-Appearance_images/Chart-Appearance_img26.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img26.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Olive.
 
-![](Chart-Appearance_images/Chart-Appearance_img27.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img27.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Sandune.
 
-![](Chart-Appearance_images/Chart-Appearance_img28.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img28.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Turquoise.
 
-![](Chart-Appearance_images/Chart-Appearance_img29.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img29.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to Vista.
 
-![](Chart-Appearance_images/Chart-Appearance_img30.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img30.png)
 
 The following output is displayed when the [Skins](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Skins.html) value is set to VS2010.
 
-![](Chart-Appearance_images/Chart-Appearance_img31.png)
+![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img31.png)
 
 {% tabs %}
 {% highlight c# %}

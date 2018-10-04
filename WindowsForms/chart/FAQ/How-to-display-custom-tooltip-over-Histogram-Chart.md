@@ -63,7 +63,7 @@ End Sub
 
 {% endtabs %}	
 
-![](How-to-display-custom-tooltip-over-Histogram-Chart_images/How-to-display-custom-tooltip-over-Histogram-Chart_img1.jpeg)
+![Chart Histogram](How-to-display-custom-tooltip-over-Histogram-Chart_images/How-to-display-custom-tooltip-over-Histogram-Chart_img1.jpeg)
 
 {% seealso %}
 

@@ -19,15 +19,15 @@ EssentialChart supports interactive zooming features along the x and y axis. Dur
 
 Enable Zooming via the [EnableXZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableXZooming.html) and [EnableYZooming](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~EnableYZooming.html) properties.
 
-![](Runtime-Features_images/Runtime-Features_img1.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img1.jpeg)
 
-![](Runtime-Features_images/Runtime-Features_img2.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img2.jpeg)
 
 The scrollbar will shift by the amount specified in the [ScrollPrecision](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ScrollPrecision.html) property which is set to 20 by default.
 
 User can zoom out by clicking the "Zoom Out" button in the scrollbar.
 
-![](Runtime-Features_images/Runtime-Features_img3.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img3.jpeg)
 
 [ZoomOutIncrement](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ZoomOutIncrement.html) property specifies the increment by which to zoom out. The default value is 0.2.
 
@@ -175,10 +175,10 @@ Me.chartControl1.ZoomType= ZoomType.Selection
 {% endtabs %}
 
 **Illustrates the Selection of Chart Region for Zooming** 
-![](Runtime-Features_images/Runtime-Features_img30.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img30.png)
 
 **Displays the Zoomed Region of the chart**
-![](Runtime-Features_images/Runtime-Features_img31.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img31.png)
 
 ### Zooming via Mouse Wheel
 
@@ -205,10 +205,10 @@ Me.chartControl1.ZoomType= ZoomType.MouseWheelZooming
 In touch enabled devices, the user can zoom the chart using the spread or pinch gestures.
 
 **Spread**
-![](Runtime-Features_images/Runtime-Features_img32.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img32.png)
 
 **Pinch**
-![](Runtime-Features_images/Runtime-Features_img33.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img33.png)
 
 The spread action  will result in zoom- in of the chart and pinch action will result in zoom-out of the chart. Double tapping on the chart area restores the chart to its original position.
 
@@ -279,7 +279,7 @@ Me.chartControl1.PrimaryXAxis.SmartDateZoomDayLevelLabelFormat = "dd MM/yy HH.00
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img5.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img5.jpeg)
 
 N> The value type of the axis should be **DateTime** for setting the above formatted labels.
 
@@ -311,7 +311,7 @@ The toolbar can be made visible through the ChartControl's [ShowToolbar](https:/
 
 The toolbar looks like the below image.
 
-![](Runtime-Features_images/Runtime-Features_img7.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img7.jpeg)
 
 The toolbar commands and their functionalities are described below.
 
@@ -487,15 +487,15 @@ Me.chartControl1.ToolBar.Items.Add(x1)
 {% endhighlight %}
 {% endtabs %}
   
-![](Runtime-Features_images/Runtime-Features_img8.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img8.jpeg)
 
-![](Runtime-Features_images/Runtime-Features_img9.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img9.jpeg)
 
 ### Toolbar Properties
 
 The chart control provides complete support for customizing the toolbar appearance. Use the [ChartControl.ToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ToolBar.html) property to access the toolbar. At runtime, double-click the toolbar to show the ToolBar Properties dialog box as in the below image, which lists all the properties. For this, you need to set the [ToolBar.ShowDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowDialog.html) property to True. If you do not want to display this dialog box, set this property to False.
 
-![](Runtime-Features_images/Runtime-Features_img10.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img10.jpeg)
 
 Below are the toolbar properties and their description.
 
@@ -607,9 +607,9 @@ Click the Styles icon in the toolbar to open the Chart Series Style dialog box. 
 
 The below image shows how to set the interior properties through **Interior** tab in the Chart Series Style Window. This can be invoked by clicking [Styles](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Styles.html) command.
 
-![](Runtime-Features_images/Runtime-Features_img11.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img11.jpeg)
 
-![](Runtime-Features_images/Runtime-Features_img12.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img12.jpeg)
 
 ### Toolbar Appearance
 
@@ -617,7 +617,7 @@ Toolbar provides an option to set different back color, border style, button bac
 
 User can enable or disable the Border line of Toolbar by using [ShowBorder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarInfo~ShowBorder.html) property in the Toolbar instance.
 
-![](Runtime-Features_images/Runtime-Features_img13.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img13.jpeg)
 
 ### Toolbar Behavior
 
@@ -663,13 +663,13 @@ There are two types of context menus, both of which get shown by default when th
 
 1.Chart Area context menu - This will be displayed when the mouse is over the chart area.
  
-![](Runtime-Features_images/Runtime-Features_img15.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img15.jpeg)
 
 This context menu can be disabled by setting the [DisplayChartContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplayChartContextMenu.html) property to false.
 
 2.Chart Series context menu - This will be displayed when the mouse is over a series.
 
-![](Runtime-Features_images/Runtime-Features_img16.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img16.jpeg)
 
 This context menu can be disabled by setting the [DisplaySeriesContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~DisplaySeriesContextMenu.html) property to false.
 
@@ -677,7 +677,7 @@ This context menu can be disabled by setting the [DisplaySeriesContextMenu](http
 
 This context menu can be enabled by setting the [ShowContextMenuInLegend](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenuInLegend.html) property to true.
 
-![](Runtime-Features_images/Runtime-Features_img17.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img17.jpeg)
 
 ## Interactive Features
 
@@ -722,13 +722,13 @@ cursor1.Color = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img18.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img18.jpeg)
 
 ### Chart AutoHighlight 
 
 The points or the series of the chart can be highlighted when the mouse hovers over them. Use the [AutoHighlight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~AutoHighlight.html) property to enable this feature.
 
-![](Runtime-Features_images/Runtime-Features_img19.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img19.jpeg)
 
 ### Chart Series Highlighting
 
@@ -788,7 +788,7 @@ Me.chartControl1.Series(0).Style.HiddenInterior = New BrushInfo(0, bi
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img21.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img21.jpeg)
 
 ### Drawing Interactive Cursor Separately – Either Horizontally or Vertically or Both 
 
@@ -800,7 +800,7 @@ The purpose of using Chart Interactive Cursor is to indicate the x-axis and y-ax
 
 The following screenshot shows the Interactive cursor, which is drawn in horizontal orientation:
 
-![](Runtime-Features_images/Runtime-Features_img22.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img22.png)
 
 **Properties**
 
@@ -924,7 +924,7 @@ cursor1.HorizontalCursorColor = Color.Red
 
 Now, the default color would be replaced with blue color at both the orientations as it is the parent color.
 
-![](Runtime-Features_images/Runtime-Features_img23.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img23.png)
 
 The following code snippets draw interactive cursor in different colors:
 
@@ -951,7 +951,7 @@ cursor1.HorizontalCursorColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img24.png)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img24.png)
 
 ### ChartInteractiveCursor Support for Chart Area
 
@@ -1116,7 +1116,7 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img27.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img27.jpeg)
 
 You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the [ChartSeries.PrepareStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~PrepareStyle_EV.html) event as shown below.
 
@@ -1179,7 +1179,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img28.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img28.jpeg)
 
 ### Chart Area Tooltip
 
@@ -1292,7 +1292,7 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 {% endhighlight %}
 {% endtabs %}
 
-![](Runtime-Features_images/Runtime-Features_img29.jpeg)
+![Chart Runtime](Runtime-Features_images/Runtime-Features_img29.jpeg)
 
 {% seealso %}
 
@@ -1456,7 +1456,7 @@ Me.chartControl1.Trackball.Visible = True
 
 {% endtabs %}
 
-![](Runtime-Features_images/trackball.jpg)
+![Chart Runtime](Runtime-Features_images/trackball.jpg)
 
 ### Customize trackball marker and trackball line
  
@@ -1502,7 +1502,7 @@ chartControl1.Trackball.Symbol.Size = New Size(20, 20)
 
 {% endtabs %}
 
-![](Runtime-Features_images/trackball1.jpg)
+![Chart Runtime](Runtime-Features_images/trackball1.jpg)
 
 ## Crosshair
 
@@ -1608,7 +1608,7 @@ Me.chartControl1.Crosshair.Visible = True
 
 {% endtabs %}
 
-![](Runtime-Features_images/crosshair.jpg)
+![Chart Runtime](Runtime-Features_images/crosshair.jpg)
 
 ### Customize the crosshair line and crosshair label
 
@@ -1650,4 +1650,4 @@ chartControl1.Crosshair.AxisTooltip.Interior = New BrushInfo(Color.Red)
 
 {% endtabs %}
 
-![](Runtime-Features_images/crosshair1.jpg)
+![Chart Runtime](Runtime-Features_images/crosshair1.jpg)

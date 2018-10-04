@@ -17,7 +17,7 @@ A sparkline can display a trend based on adjacent data in a clear and compact gr
 
 The following screenshot shows three types of sparklines, which are drawn inside the grid control cell, based on row values.
 
-![](Overview_images/Overview_img1.png)
+![Sparkline Overview](Overview_images/Overview_img1.png)
 
 ## Tables for Properties, Methods, and Events
 

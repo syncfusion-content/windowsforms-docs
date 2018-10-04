@@ -45,11 +45,11 @@ NA</td></tr>
 
    N> It is mandatory to follow this naming convention.
 
-   ![](Localization_images/Localization_img2.png)
+   ![Chart Localization](Localization_images/Localization_img2.png)
 
 2. Enter the UI name in the Name column and the equivalent term you want in the Value column of the resource file.
 
-   ![D:/Feature2011_VOL4/English.PNG](Localization_images/Localization_img3.png)
+   ![Chart Localization](Localization_images/Localization_img3.png)
 
     N> It is mandatory to specify equivalent terms for all static element to localize the chart.
 
@@ -71,7 +71,7 @@ Me.chartControl1.Localize=”de-DE”
 
 {% endtabs %}
 
-![](Localization_images/Localization_img5.png)
+![Chart Localization](Localization_images/Localization_img5.png)
 
 ### Sample Link
 

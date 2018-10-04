@@ -295,19 +295,19 @@ Me.chartControl1.Series.Add(series1)
 {% endtabs %}
 
 Data points in chart before sorting
-![](Chart-Series_images/Chart-Series_img173.png)
+![Chart Series](Chart-Series_images/Chart-Series_img173.png)
 
 Data points sorted by x-values in ascending order
-![](Chart-Series_images/Chart-Series_img174.png)
+![Chart Series](Chart-Series_images/Chart-Series_img174.png)
 
 Data points sorted by X-values in descending order
-![](Chart-Series_images/Chart-Series_img175.png)
+![Chart Series](Chart-Series_images/Chart-Series_img175.png)
 
 Data points sorted by y-values in ascending order
-![](Chart-Series_images/Chart-Series_img176.png)
+![Chart Series](Chart-Series_images/Chart-Series_img176.png)
 
 Data points sorted by Y-values in descending order
-![](Chart-Series_images/Chart-Series_img177.png)
+![Chart Series](Chart-Series_images/Chart-Series_img177.png)
 
 ## Series Customization
 
@@ -851,9 +851,9 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.AngleOffset = 45f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img3.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img3.jpeg)
 
-![](Chart-Series_images/Chart-Series_img4.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img4.jpeg)
 
 {% seealso %}
 
@@ -935,7 +935,7 @@ series.Style.ShadowOffset = New Size(3, 3)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img5.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img5.jpeg)
 
 To apply this on specific data points:
 
@@ -974,7 +974,7 @@ series2.Styles(2).Border.Color = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img6.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img6.jpeg)
 
 {% seealso %}
 
@@ -1073,7 +1073,7 @@ Me.chartControl1.Series[0].Styles(1).ImageIndex = 1
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img7.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img7.jpeg)
 
 {% seealso %}
 
@@ -1133,11 +1133,11 @@ Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 [VB.NET]
 
-![](Chart-Series_images/Chart-Series_img8.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img8.jpeg)
 
-![](Chart-Series_images/Chart-Series_img9.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img9.jpeg)
 
-![](Chart-Series_images/Chart-Series_img10.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img10.jpeg)
 
 {% seealso %}
 
@@ -1217,7 +1217,7 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.DefaultWidthMode
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img11.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img11.jpeg)
 
 {% tabs %}  
 
@@ -1262,7 +1262,7 @@ Me.chartControl1.ColumnWidthMode = ChartColumnWidthMode.RelativeWidthMode
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img12.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img12.jpeg)
 
 {% tabs %}  
 
@@ -1305,7 +1305,7 @@ chartControl1.ColumnWidthMode = ChartColumnWidthMode.FixedWidthMode
 
 N> The width of the column can also be specified by ColumnFixedWidth property. If both second Y value and ColumnFixedWidth are specified, second Y value takes higher priority.
 
-![](Chart-Series_images/Chart-Series_img14.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img14.jpeg)
 
 {% seealso %}
 
@@ -1389,7 +1389,7 @@ chartControl1.ColumnFixedWidth = 45
 
 N> The ColumnFixedWidth property can be overridden by specifying a second y value in the data point. See_ ColumnWidthMode _for a sample.
 
-![](Chart-Series_images/Chart-Series_img16.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img16.jpeg)
 
 {% seealso %}
 
@@ -1453,7 +1453,7 @@ Me.chartControl1.Series(1).ConfigItems.ColumnItem.ColumnType = ChartColumnType.B
 
 [VB.NET]
 
-![](Chart-Series_images/Chart-Series_img17.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img17.jpeg)
 
 {% seealso %}
 
@@ -1515,9 +1515,9 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.ColorsMode = ChartFinancial
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img18.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img18.jpeg)
 
-![](Chart-Series_images/Chart-Series_img19.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img19.jpeg)
 
 {% seealso %}
 
@@ -1587,7 +1587,7 @@ Me.chartControl1.Series(0).ConfigItems.FinancialItem.DarkLightPower = 200
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img20.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img20.jpeg)
 
 {% seealso %}
 
@@ -1652,7 +1652,7 @@ series1.Styles(0).DisplayShadow = True
 
 Me.chartControl1.Series(0).Style.DisplayShadow = True
 
-{{ '![](Chart-Series_images/Chart-Series_img21.jpeg)' | markdownify }}
+{{ '![Chart Series](Chart-Series_images/Chart-Series_img21.jpeg)' | markdownify }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -1744,9 +1744,9 @@ Me.chartControl1.Series(0).Style.TextColor = Color.LightSlateGray
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img22.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img22.jpeg)
 
-![](Chart-Series_images/Chart-Series_img23.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img23.jpeg)
 
 ## Callout Labels
 
@@ -1868,7 +1868,7 @@ this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img158.png)
+![Chart Series](Chart-Series_images/Chart-Series_img158.png)
 
 ### Specific Data Point Setting
 
@@ -1954,7 +1954,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient = 0.5f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img24.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img24.jpeg)
 
 {% seealso %}
 
@@ -2012,7 +2012,7 @@ Me.chartControl1.Series(0).DrawColumnSeparatingLines = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img25.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img25.jpeg)
 
 {% seealso %}
 
@@ -2116,9 +2116,9 @@ Private Me.chartControl1.Series(0).DrawErrorBars = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img26.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img26.jpeg)
 
-![](Chart-Series_images/Chart-Series_img27.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img27.jpeg)
 
 ### ErrorBar Orientation
 
@@ -2211,7 +2211,7 @@ Me.chartControl1.Series.Add(s1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img28.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img28.jpeg)
 
 {% seealso %}
 
@@ -2281,7 +2281,7 @@ series2.NumberOfHistogramIntervals = 10
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img29.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img29.jpeg)
 
 {% seealso %}
 
@@ -2371,7 +2371,7 @@ Me.chartControl1.Series(0).DrawSeriesNameInDepth = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img30.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img30.jpeg)
 
 {% seealso %}
 
@@ -2480,7 +2480,7 @@ Me.chartControl1.Series(0).Style.ElementBorders = border
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img31.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img31.jpeg)
 
 ### Specific Data Point Setting
 
@@ -2561,7 +2561,7 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img32.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img32.jpeg)
 
 {% seealso %}
 
@@ -2590,7 +2590,7 @@ Me.chartControl1.Series(0).EnableAreaToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img33.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img33.jpeg)
 
 ### ErrorBarsSymbolShape
 
@@ -2646,7 +2646,7 @@ Me.chartControl1.Series(0).ErrorBarsSymbolShape = ChartSymbolShape.Circle
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img34.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img34.jpeg)
 
 {% seealso %}
 
@@ -2704,7 +2704,7 @@ Me.chartControl1.Series(0).ExplodedAll = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img35.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img35.jpeg)
 
 {% seealso %}
 
@@ -2762,7 +2762,7 @@ Me.chartControl1.Series(0).ExplodedIndex = 0
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img36.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img36.jpeg)
 
 {% seealso %}
 
@@ -2824,7 +2824,7 @@ Me.chartControl1.Series(0).ExplosionOffset = 30f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img37.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img37.jpeg)
 
 {% seealso %}
 
@@ -2894,7 +2894,7 @@ Me.chartControl1.Series(0).FancyToolTip.Visible = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img38.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img38.jpeg)
 
 {% seealso %}
 
@@ -2974,15 +2974,15 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FigureBase = ChartFigureBase.S
 
 ### Pyramid Chart
 
-![](Chart-Series_images/Chart-Series_img39.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img39.jpeg)
 
-![](Chart-Series_images/Chart-Series_img40.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img40.jpeg)
 
 ### Funnel Chart
 
-![](Chart-Series_images/Chart-Series_img41.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img41.jpeg)
 
-![](Chart-Series_images/Chart-Series_img42.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img42.jpeg)
 
 {% seealso %}
 
@@ -3052,9 +3052,9 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.FillMode = ChartPieFillMode.Every
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img43.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img43.jpeg)
 
-![](Chart-Series_images/Chart-Series_img44.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img44.jpeg)
 
 {% seealso %}
 
@@ -3116,9 +3116,9 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.FunnelMode = ChartFunnelMode.Y
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img45.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img45.jpeg)
 
-![](Chart-Series_images/Chart-Series_img46.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img46.jpeg)
 
 {% seealso %}
 
@@ -3215,7 +3215,7 @@ Me.chartControl1.Series(0).Styles(0).Font.Facename = "Arial"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img47.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img47.jpeg)
 
 {% seealso %}
 
@@ -3312,9 +3312,9 @@ Me.chartControl1.Series(1).GanttDrawMode = ChartGanttDrawMode.AutoSizeMode
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img48.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img48.jpeg)
 
-![](Chart-Series_images/Chart-Series_img49.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img49.jpeg)
 
 {% seealso %}
 
@@ -3384,9 +3384,9 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.GapRatio = 0.1f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img50.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img50.jpeg)
 
-![](Chart-Series_images/Chart-Series_img51.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img51.jpeg)
 
 {% seealso %}
 
@@ -3464,7 +3464,7 @@ series.ConfigItems.PieItem.Gradient = color
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img52.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img52.jpeg)
 
 {% seealso %}
 
@@ -3522,9 +3522,9 @@ Me.chartControl1.Series(0).HeightBox = 2f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img53.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img53.jpeg)
 
-![](Chart-Series_images/Chart-Series_img54.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img54.jpeg)
 
 {% seealso %}
 
@@ -3586,9 +3586,9 @@ Me.chartControl1.ChartArea.Depth = 25f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img55.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img55.jpeg)
 
-![](Chart-Series_images/Chart-Series_img56.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img56.jpeg)
 
 {% seealso %}
 
@@ -3650,7 +3650,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoefficient=0.1f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img57.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img57.jpeg)
 
 {% seealso %}
 
@@ -3718,7 +3718,7 @@ series1.Style.HighlightInterior = New BrushInfo(GradientStyle.ForwardDiagonal, C
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img58.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img58.jpeg)
 
 ### Specific Data Point Setting
 
@@ -3841,7 +3841,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img59.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img59.jpeg)
 
 {% seealso %}
 
@@ -3917,7 +3917,7 @@ series1.Style.Symbol.Shape = ChartSymbolShape.Image
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img60.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img60.jpeg)
 
 Specific Data Point Setting
 
@@ -4052,7 +4052,7 @@ Me.chartControl1.Series(0).ConfigItems.BubbleItem.EnablePhongStyle = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img61.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img61.jpeg)
 
 Specific Data Point Setting
 
@@ -4161,7 +4161,7 @@ series1.InSideRadius = 0.5f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img62.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img62.jpeg)
 
 {% seealso %}
 
@@ -4227,7 +4227,7 @@ Me.chartControl1.Series(0).Style.Interior = New BrushInfo(GradientStyle.Horizont
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img63.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img63.jpeg)
 
 Specific Data Point Setting
 
@@ -4299,7 +4299,7 @@ series1.Styles(3).Text = "Server4"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img64.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img64.jpeg)
 
 {% seealso %}
 
@@ -4357,7 +4357,7 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelPlacement = ChartAccumul
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img65.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img65.jpeg)
 
 Here is the code snippet using LabelPlacement in Funnel Chart.
 
@@ -4376,7 +4376,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelPlacement = ChartAccumula
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img66.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img66.jpeg)
 
 {% seealso %}
 
@@ -4434,7 +4434,7 @@ Me.chartControl1.Series(0).ConfigItems.PyramidItem.LabelStyle= ChartAccumulation
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img67.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img67.jpeg)
 
 Here is the code snippet using LabelStyle in Funnel Chart.
 
@@ -4453,7 +4453,7 @@ Me.chartControl1.Series(0).ConfigItems.FunnelItem.LabelStyle= ChartAccumulationL
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img68.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img68.jpeg)
 
 {% seealso %}
 
@@ -4523,9 +4523,9 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightAngle = 45
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img69.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img69.jpeg)
 
-![](Chart-Series_images/Chart-Series_img70.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img70.jpeg)
 
 {% seealso %}
 
@@ -4587,7 +4587,7 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Gre
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img71.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img71.jpeg)
 
 {% seealso %}
 
@@ -4679,7 +4679,7 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img72.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img72.jpeg)
 
 {% seealso %}
 
@@ -4741,7 +4741,7 @@ series.NumberOfHistogramIntervals = 20
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img73.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img73.jpeg)
 
 {% seealso %}
 
@@ -4831,11 +4831,11 @@ Me.chartControl1.Series(0).OpenCloseDrawMode = ChartOpenCloseDrawMode.Open
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img74.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img74.jpeg)
 
-![](Chart-Series_images/Chart-Series_img75.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img75.jpeg)
 
-![](Chart-Series_images/Chart-Series_img76.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img76.jpeg)
 
 {% seealso %}
 
@@ -4933,9 +4933,9 @@ Me.chartControl1.Series.Add(series)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img77.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img77.jpeg)
 
-![](Chart-Series_images/Chart-Series_img78.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img78.jpeg)
 
 {% seealso %}
 
@@ -4993,9 +4993,9 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.PhongAlpha = 2.0
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img79.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img79.jpeg)
 
-![](Chart-Series_images/Chart-Series_img80.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img80.jpeg)
 
 {% seealso %}
 
@@ -5053,15 +5053,15 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.PieType = ChartPieType.Bevel
 
 The following screen shots depict these types.
 
-![](Chart-Series_images/Chart-Series_img81.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img81.jpeg)
 
-![](Chart-Series_images/Chart-Series_img82.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img82.jpeg)
 
-![](Chart-Series_images/Chart-Series_img83.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img83.jpeg)
 
-![](Chart-Series_images/Chart-Series_img84.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img84.jpeg)
 
-![](Chart-Series_images/Chart-Series_img85.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img85.jpeg)
 
 {% seealso %}
 
@@ -5181,9 +5181,9 @@ Private ganttSeries.Style.PointWidth = 0.25f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img86.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img86.jpeg)
 
-![](Chart-Series_images/Chart-Series_img87.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img87.jpeg)
 
 Specific Data Point Setting
 
@@ -5268,7 +5268,7 @@ series7.PriceUpColor = Color.Orange
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img88.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img88.jpeg)
 
 {% seealso %}
 
@@ -5330,7 +5330,7 @@ series.PriceDownColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img89.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img89.jpeg)
 
 {% seealso %}
 
@@ -5388,7 +5388,7 @@ Private Me.chartControl1.Series(0).ConfigItems.PyramidItem.PyramidMode=ChartPyra
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img90.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img90.jpeg)
 
 {% seealso %}
 
@@ -5466,7 +5466,7 @@ Private Me.chartControl1.Series(1).Style.Symbol.Color = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img91.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img91.jpeg)
 
 {% seealso %}
 
@@ -5524,9 +5524,9 @@ Me.chartControl1.RadarStyle = ChartRadarAxisStyle.Circle
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img92.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img92.jpeg)
 
-![](Chart-Series_images/Chart-Series_img93.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img93.jpeg)
 
 {% seealso %}
 
@@ -5645,7 +5645,7 @@ Me.chartControl1.Series(1).Styles(5).RelatedPoints.Width = 3f
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img94.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img94.jpeg)
 
 {% seealso %}
 
@@ -5688,7 +5688,7 @@ Kagi Chart, Three Line Break Chart, Point and Figure Chart, Renko Chart</td></tr
 
 Here is code snippet using ReversalAmount in Renko Chart.
 
-![](Chart-Series_images/Chart-Series_img95.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img95.jpeg)
 
 {% tabs %}  
 
@@ -5705,7 +5705,7 @@ Private series.ReversalAmount = 3
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img96.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img96.jpeg)
 
 {% seealso %}
 
@@ -5763,10 +5763,10 @@ Private Me.chartControl1.Series(0).Rotate = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img97.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img97.jpeg)
 
 
-![](Chart-Series_images/Chart-Series_img98.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img98.jpeg)
 
 {% seealso %}
 
@@ -5826,7 +5826,7 @@ series.ScatterConnectType = ScatterConnectType.Line
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img99.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img99.jpeg)
 
 ### Scatter Spline Chart
 
@@ -5851,7 +5851,7 @@ series.ScatterSplineTension = 1 ' Default is 0
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img100.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img100.jpeg)
 
 {% seealso %}
 
@@ -5912,7 +5912,7 @@ Private Me.chartControl1.Series(i).ScatterSplineTension =3
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img101.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img101.jpeg)
 
 {% seealso %}
 
@@ -5970,7 +5970,7 @@ Private Me.chartControl1.Series(1).SeriesToolTipFormat="{0}"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img102.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img102.jpeg)
 
 {% seealso %}
 
@@ -6028,9 +6028,9 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartCol
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img103.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img103.jpeg)
 
-![](Chart-Series_images/Chart-Series_img104.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img104.jpeg)
 
 {% seealso %}
 
@@ -6098,7 +6098,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img105.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img105.jpeg)
 
 ### Specific Data Point Setting
 
@@ -6201,7 +6201,7 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img106.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img106.jpeg)
 
 Specific Data Point Setting
 
@@ -6308,11 +6308,11 @@ Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img107.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img107.jpeg)
 
-![](Chart-Series_images/Chart-Series_img108.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img108.jpeg)
 
-![](Chart-Series_images/Chart-Series_img109.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img109.jpeg)
 
 {% seealso %}
 
@@ -6370,9 +6370,9 @@ Private Me.chartControl1.Series(0).ShowHistogramDataPoints =True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img110.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img110.jpeg)
 
-![](Chart-Series_images/Chart-Series_img111.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img111.jpeg)
 
 {% seealso %}
 
@@ -6434,9 +6434,9 @@ Private Me.chartControl1.Series(0).ShowTicks = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img112.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img112.jpeg)
 
-![](Chart-Series_images/Chart-Series_img113.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img113.jpeg)
 
 {% seealso %}
 
@@ -6502,9 +6502,9 @@ Private Me.chartControl1.Series(0).SmartLabels = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img114.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img114.jpeg)
 
-![](Chart-Series_images/Chart-Series_img115.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img115.jpeg)
 
 ### Custom borders for smart Labels
 
@@ -6591,7 +6591,7 @@ Me.chartControl1.Spacing = 50
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img116.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img116.jpeg)
 
 {% seealso %}
 
@@ -6651,9 +6651,9 @@ Me.chartControl1.SpacingBetweenSeries = 20
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img117.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img117.jpeg)
 
-![](Chart-Series_images/Chart-Series_img118.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img118.jpeg)
 
 {% seealso %}
 
@@ -6782,9 +6782,9 @@ ser3.StackingGroup = "FirstGroup"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img119.png)
+![Chart Series](Chart-Series_images/Chart-Series_img119.png)
 
-![](Chart-Series_images/Chart-Series_img120.png)
+![Chart Series](Chart-Series_images/Chart-Series_img120.png)
 
 ### StepItem.Inverted
 
@@ -6836,9 +6836,9 @@ Private Me.chartControl1.Series(0).ConfigItems.StepItem.Inverted=True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img121.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img121.jpeg)
 
-![](Chart-Series_images/Chart-Series_img122.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img122.jpeg)
 
 {% seealso %}
 
@@ -6916,7 +6916,7 @@ this.chartControl1.Series[0].Summary.GetYPercentage(1, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img123.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img123.jpeg)
 
 {% seealso %}
 
@@ -7020,7 +7020,7 @@ Private Me.chartControl1.Series(0).Style.Symbol.Border.Alignment = PenAlignment.
 
 Private Me.chartControl1.Series0).Style.Symbol.Border.DashStyle = DashStyle.Solid
 
-![](Chart-Series_images/Chart-Series_img124.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img124.jpeg)
 
 Specific Data Point Setting
 
@@ -7185,7 +7185,7 @@ series2.Text = "JuneSales"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img125.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img125.jpeg)
 
 {% seealso %}
 
@@ -7222,7 +7222,7 @@ chartControl1.Series(0).Style.Text = "Series1 Point"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img126.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img126.jpeg)
 
 Specific Data Point Setting
 
@@ -7259,9 +7259,9 @@ chartControl1.Series(0).Styles(2).Text = "Third Point"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img127.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img127.jpeg)
 
-![](Chart-Series_images/Chart-Series_img128.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img128.jpeg)
 
 {% seealso %}
 
@@ -7333,7 +7333,7 @@ Private Me.chartControl1.Series(2).Style.TextColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img129.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img129.jpeg)
 
 Specific Data Point Setting
 
@@ -7424,7 +7424,7 @@ Me.chartControl1.Series(0).Style.TextFormat = "T = {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img130.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img130.jpeg)
 
 Specific Data Point Setting
 
@@ -7507,7 +7507,7 @@ Me.chartControl1.Series(0).Style.TextOffset = 10.0F
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img131.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img131.jpeg)
 
 Specific Data Point Setting
 
@@ -7618,7 +7618,7 @@ Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img132.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img132.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7754,7 +7754,7 @@ series1.Style.ToolTip = "Tooltip of Series1"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img133.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img133.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7786,7 +7786,7 @@ Loop
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img134.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img134.jpeg)
 
 {% seealso %}
 
@@ -7850,7 +7850,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img135.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img135.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7882,7 +7882,7 @@ Loop
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img136.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img136.jpeg)
 
 {% seealso %}
 
@@ -7948,9 +7948,9 @@ Private Me.chartControl1.Series(1).Visible = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img137.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img137.jpeg)
 
-![](Chart-Series_images/Chart-Series_img138.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img138.jpeg)
 
 {% seealso %}
 
@@ -8012,9 +8012,9 @@ chartControl1.Legend.RowsCount = 3
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img139.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img139.jpeg)
 
-![](Chart-Series_images/Chart-Series_img140.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img140.jpeg)
 
 {% seealso %}
 
@@ -8072,7 +8072,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).XType.ToString()
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img141.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img141.jpeg)
 
 {% seealso %}
 
@@ -8130,7 +8130,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img142.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img142.jpeg)
 
 {% seealso %}
 
@@ -8192,9 +8192,9 @@ Private Me.chartControl1.Series(1).ZOrder = 1
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img143.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img143.jpeg)
 
-![](Chart-Series_images/Chart-Series_img144.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img144.jpeg)
 
 #### Rearranging the Series using ZOrder property
 
@@ -8231,7 +8231,7 @@ Me.chartControl1.EndUpdate()
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img145.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img145.jpeg)
 
 {% seealso %}
 
@@ -8247,7 +8247,7 @@ Data Points in a series can be adorned with text labels as well as custom symbol
 
 Text labels can be rendered at the data points using the [DisplayText](/windowsforms/chart/chart-series#displaytext), [Text](/windowsforms/chart/chart-series#text) and [TextFormat](/windowsforms/chart/chart-series#textformat) settings. They can further be customized using the [TextColor](/windowsforms/chart/chart-series#textcolor), [TextOffset](/windowsforms/chart/chart-series#textoffset) and [TextOrientation](/windowsforms/chart/chart-series#textorientation) settings.
 
-![](Chart-Series_images/Chart-Series_img146.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img146.jpeg)
 
 ### Tooltips
 
@@ -8257,7 +8257,7 @@ Refer the Tooltips topic for more information on this.
 
 Built-in or custom symbols can be rendered at the data points to emphasize importance of certain data points. See Symbol setting for more information.
 
-![](Chart-Series_images/Chart-Series_img147.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img147.jpeg)
 
 ## Custom Points
 
@@ -8267,9 +8267,9 @@ Through Designer the Custom Points can be set using the CustomPoints property. C
 
 You can set the co-ordinates (XValue and the YValue property), symbols and their customization, using the Symbols property, text, using the Text property, alignment of the text, using the Alignment property and so on.
 
-![](Chart-Series_images/Chart-Series_img148.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img148.jpeg)
 
-![](Chart-Series_images/Chart-Series_img149.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img149.jpeg)
 
 #### Programmatically
 
@@ -8418,7 +8418,7 @@ Pixel</td><td>
 The coordinates are specified to be in pixels of the chart area.</td></tr>
 </table>
 
-![](Chart-Series_images/Chart-Series_img151.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img151.jpeg)
 
 The custom point symbols in the above image represents following Custom Types respectively.
 
@@ -8504,7 +8504,7 @@ Me.ChartWebControl1.CustomPoints.Add(cp)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img152.png)
+![Chart Series](Chart-Series_images/Chart-Series_img152.png)
 
 ## Empty Points
 
@@ -8533,15 +8533,15 @@ Me.chartControl1.Series[1].Points[0].IsEmpty = True
 
 The following images illustrate the same. The second image displays after setting Point1 as an empty point.
 
-![](Chart-Series_images/Chart-Series_img153.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img153.jpeg)
 
-![](Chart-Series_images/Chart-Series_img154.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img154.jpeg)
 
 Showing Empty Point without any gap between Data Points
 
 It is possible to set some data point as empty point and still show the chart without any gap between the points. You need to set AllowGapForEmptyPoints property to false to enable this feature. By default it is set to true. 
 
-![](Chart-Series_images/Chart-Series_img155.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img155.jpeg)
 
 N> You need to set ChartControl.Indexed property to true for the above setting to be effective.
 
@@ -8568,7 +8568,7 @@ Me.chartControl1.Series(0).Points(5).IsEmpty = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img156.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img156.jpeg)
 
 {% tabs %}  
 
@@ -8591,7 +8591,7 @@ Me.chartControl1.AllowGapForEmptyPoints = True
 
 [VB.NET]
 
-![](Chart-Series_images/Chart-Series_img157.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img157.jpeg)
 
 ## Trendlines 
 
@@ -8722,7 +8722,7 @@ Me.chartControl1.Series[0].Trendlines.Add(trendline)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img159.png)
+![Chart Series](Chart-Series_images/Chart-Series_img159.png)
 
 ### Trendline Types
 
@@ -8754,7 +8754,7 @@ trendline.Type = TrendlineType.Linear
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img159.png)
+![Chart Series](Chart-Series_images/Chart-Series_img159.png)
 
 ### Exponential Trendline
 
@@ -8775,7 +8775,7 @@ trendline.Type = TrendlineType.Exponential
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img160.png)
+![Chart Series](Chart-Series_images/Chart-Series_img160.png)
 
 N> This trendline cannot be used for negative values and values containing zero
 
@@ -8798,7 +8798,7 @@ trendline.Type = TrendlineType.Power
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img161.png)
+![Chart Series](Chart-Series_images/Chart-Series_img161.png)
 
 ### Logarithmic Trendline
 
@@ -8817,7 +8817,7 @@ trendline.Type = TrendlineType.Logarithmic
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img162.png)
+![Chart Series](Chart-Series_images/Chart-Series_img162.png)
 
 ### Polynomial Trendline
 
@@ -8838,7 +8838,7 @@ trendline.Type = TrendlineType.Polynomial
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img163.png)
+![Chart Series](Chart-Series_images/Chart-Series_img163.png)
 
 ### Polynomial Order
 
@@ -8861,7 +8861,7 @@ trendline.PolynomialOrder = 4
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img164.png)
+![Chart Series](Chart-Series_images/Chart-Series_img164.png)
 
 ### Moving Average Trendline
 
@@ -8882,7 +8882,7 @@ trendline.Type = TrendlineType.MovingAverage
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img165.png)
+![Chart Series](Chart-Series_images/Chart-Series_img165.png)
 
 ### Period
 
@@ -8905,7 +8905,7 @@ trendline.Period = 3
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img166.png)
+![Chart Series](Chart-Series_images/Chart-Series_img166.png)
 
 ### Forecasting 
  
@@ -8936,7 +8936,7 @@ trendline.ForwardForecast = 10
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img167.png)
+![Chart Series](Chart-Series_images/Chart-Series_img167.png)
 
 ### Backward Forecasting
 
@@ -8957,13 +8957,13 @@ trendline.BackwardForecast = 10
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img168.png)
+![Chart Series](Chart-Series_images/Chart-Series_img168.png)
 
 ### Trendline Legends
 
 The visibility of the trendline can also be checked using the checkboxes in the legend. When the legend checkbox is unchecked, the trendline is hidden. 
 
-![](Chart-Series_images/Chart-Series_img169.png)
+![Chart Series](Chart-Series_images/Chart-Series_img169.png)
 
 N> In order to enable the checkboxes in the trendline legend ,**VisibleCheckBox** property should be enabled in the legend.
 
@@ -8990,5 +8990,5 @@ trendline.Color = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Series_images/Chart-Series_img170.png)
+![Chart Series](Chart-Series_images/Chart-Series_img170.png)
 

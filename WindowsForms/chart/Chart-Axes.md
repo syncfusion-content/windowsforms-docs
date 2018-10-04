@@ -45,7 +45,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
 **Chart displaying categorical values in x-axis**
 
-![](Chart-Axes_images/Chart-Axes_img39.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img39.png)
 
 ## Indexed X Values
 
@@ -53,9 +53,9 @@ By default points in a series are plotted against their x and y values. However 
 
 In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed.
 
-![](Chart-Axes_images/Chart-Axes_img1.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img1.jpeg)
 
-![](Chart-Axes_images/Chart-Axes_img2.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img2.jpeg)
 
 N> Indexing is supported only on the x-axis in Essential Chart.
 
@@ -119,7 +119,7 @@ Me.chartControl1.PrimaryYAxis.Inversed = True
 
 The following image shows a chart whose x and y axes have been reversed.
 
-![](Chart-Axes_images/Chart-Axes_img4.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img4.jpeg)
 
 ## Opposed Axis
 
@@ -154,7 +154,7 @@ Me.chartControl1.PrimaryYAxis.OpposedPosition = True
 
 The above code snippet will place both the x and y-axes in the position opposite to their default implied position.
 
-![](Chart-Axes_images/Chart-Axes_img5.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img5.jpeg)
 
 You can similarly set this property on any custom ChartAxis that you might add to the chart. 
 
@@ -201,13 +201,13 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img6.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img6.jpeg)
 
 ### Opposed Position
 
 By default, this additional axis will be rendered right next to the corresponding primary axis as seen above. This might be undesirable and you would instead want it to be rendered at the opposite side of the primary axis. This is done by setting the [OpposedPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~OpposedPosition.html) property to true. 
 
-![](Chart-Axes_images/Chart-Axes_img7.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img7.jpeg)
 
 ### Stacked or SideBySide Position
 
@@ -232,13 +232,13 @@ Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img8.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img8.jpeg)
 
 ### ChartAxesLayouts
 
 You can now combine the stacking and side-by-side chart axes layouts when multiple Axes are used, as shown in the below image. Using this feature, it is possible to position the three Y axis, as one on right side and the second one on the same side and third one on the opposite side. 
 
-![](Chart-Axes_images/Chart-Axes_img9.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img9.jpeg)
 
 {% tabs %}  
 
@@ -581,7 +581,7 @@ Specifies the rectangle that includes the axis and it's labels. This provides gr
 
 ### Illustrating Custom Axis Location
 
-![](Chart-Axes_images/Chart-Axes_img11.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img11.jpeg)
 
 {% tabs %}  
 
@@ -604,9 +604,9 @@ Me.ChartControl1.PrimaryYAxis.Location = New PointF(15, 200)
 
 ### Illustrating Custom Axis Size
 
-![](Chart-Axes_images/Chart-Axes_img12.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img12.jpeg)
 
-![](Chart-Axes_images/Chart-Axes_img13.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img13.jpeg)
 
 {% tabs %}  
 
@@ -683,7 +683,7 @@ Specifies whether or not labels should be rotated. Use the LabelRotateAngle to s
 If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 </table>
 
-![](Chart-Axes_images/Chart-Axes_img14.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img14.jpeg)
 
 {% tabs %}  
 
@@ -909,7 +909,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img15.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img15.jpeg)
 
 Specify a set of custom labels thereby dictating the intervals as well
 
@@ -967,7 +967,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Colo
 
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img16.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img16.jpeg)
 
 2.Using Formatted Text
 
@@ -1007,7 +1007,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, Ne
 
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img17.jpeg)   
+![Chart Axes](Chart-Axes_images/Chart-Axes_img17.jpeg)   
 
 ### Intersecting Labels
 
@@ -1131,7 +1131,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img19.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img19.jpeg)
 
 ### Tooltip Support for ChartAxisLabels
 
@@ -1361,11 +1361,11 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 You can now wrap the axes titles and display them as multiline text. Set multiline title text in [Axis.Title](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~Title.html) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
-![](Chart-Axes_images/Chart-Axes_img21.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img21.jpeg)
 
 The below screenshot illustrates a chart with multiline axes titles.
 
-![](Chart-Axes_images/Chart-Axes_img22.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img22.jpeg)
 
 ### Drawing Mode of Title Text
 
@@ -1411,7 +1411,7 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img23.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img23.png)
 
 ## Axis Ticks
 
@@ -1448,7 +1448,7 @@ The padding between the tick mark in the axis and the label. Default is 5.</td><
 Defines the number of ticks to render while zooming.<ul><li>NumberOfIntervalsFixed - When you zoom, the number of visible intervals will be constant. So, as you zoom in, the total number of intervals will increase.</li><li>IntervalFixed - The number of intervals will be constant. So, as you zoom in, fewer intervals will be visible at a time.</li></ul></td></tr>
 </table>
 
-![](Chart-Axes_images/Chart-Axes_img24.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img24.jpeg)
 
 {% tabs %}  
 
@@ -1495,7 +1495,7 @@ Specifies if and how many minor ticks, which are tick marks drawn on the axis be
 Specifies the size of the tick rectangle.</td></tr>
 </table>
 
-![](Chart-Axes_images/Chart-Axes_img25.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img25.jpeg)
 
 {% tabs %}  
 
@@ -1595,7 +1595,7 @@ Me.chartControl1.Rotation = 60
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img26.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img26.jpeg)
 
 ### Real 3D Mode sample
 
@@ -1630,7 +1630,7 @@ Me.chartControl1.RealMode3D = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img27.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img27.jpeg)
 
 ### Rotating Chart
 
@@ -1657,7 +1657,7 @@ Me.chartControl1.EnableMouseRotation = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img29.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img29.jpeg)
 
 ### Rendering Chart in 3-D Style
 
@@ -1739,7 +1739,7 @@ The PenType to use for drawing the line.</td></tr>
 The thickness of the lines.</td></tr>
 </table>
 
-![](Chart-Axes_images/Chart-Axes_img31.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img31.jpeg)
 
 The following code snippet illustrates how to show the gridlines on both axes and how to customize them.
 
@@ -1993,11 +1993,11 @@ Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img32.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img32.jpeg)
 
 Use an image as StripLine by setting through [StripLine.BackImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartStripLine~BackImage.html) property.
 
-![](Chart-Axes_images/Chart-Axes_img33.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img33.jpeg)
 
 ## Chart Breaks
 
@@ -2017,7 +2017,7 @@ There are three possible modes. They are,
 
 All breaks work only with Cartesian axes.
 
-![](Chart-Axes_images/Chart-Axes_img34.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img34.png)
 
 {% tabs %}  {% highlight c# %}
 
@@ -2072,7 +2072,7 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img35.jpeg)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img35.jpeg)
 
 ## Axis Crossing Support 	
 
@@ -2138,7 +2138,7 @@ Me.chartControl1.Series3D = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img36.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img36.png)
 
 ## Axis Label Placement
 
@@ -2197,7 +2197,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Axes_images/Chart-Axes_img37.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img37.png)
 
 ### Positioning Individual Axis Labels
 
@@ -2364,4 +2364,4 @@ Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e A
 
 The following screenshot illustrates the customization options for individual label positions on the y-axis to the right or left side based on the y value of the data points. If the export value is positive, the label is rendered to the left side of the axis, and if it is negative, the label is rendered on the right side of the axis.
 
-![](Chart-Axes_images/Chart-Axes_img38.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img38.png)

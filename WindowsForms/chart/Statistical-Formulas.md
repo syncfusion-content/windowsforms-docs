@@ -109,11 +109,11 @@ The following assumptions must be satisfied before performing the test.
 
    #### Total Variation
 
-   ![](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)
+   ![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img1.jpeg)
 
    #### Between Variation
 
-   ![](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)
+   ![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img2.jpeg)
 
    Where,
 
@@ -149,15 +149,15 @@ The following assumptions must be satisfied before performing the test.
 
    #### Between Variation
 
-   ![](Statistical-Formulas_images/Statistical-Formulas_img3.png)
+   ![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img3.png)
 
    #### Within Variation
 
-   ![](Statistical-Formulas_images/Statistical-Formulas_img4.png)
+   ![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img4.png)
 
 4. Finally, calculate F Ratio as below and get the F Critical Value.
 
-   ![](Statistical-Formulas_images/Statistical-Formulas_img5.png)
+   ![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img5.png)
 
 5. Make your decision as below.
    * If the between variance is smaller than the within variance, then the means are really close to each other and you will fail to reject the null hypothesis.
@@ -201,7 +201,7 @@ Dim ar As AnovaResult = BasicStatisticalFormulas.Anova(confidenceLevel, New Char
 
 The following image displays the results of an ANOVA test.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img6.jpeg)
 
 ### Correlation
 
@@ -213,7 +213,7 @@ The relationships can be classified into two types, **Positive and Negative**. I
 
 When the measured correlation coefficient is positive, the series values would be positively correlated whereas if the correlation coefficient is negative, then the series values would then be negatively correlated. Below is the formula for calculating correlation coefficient.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img7.jpeg)
 
 where,
 
@@ -701,7 +701,7 @@ If the assumption of 'equal variances' is violated, then we have to compute the 
 
 5.Calculate the degrees of freedom.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img15.png)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img15.png)
 
 6.Calculate the T-statistic as given below.
 
@@ -768,7 +768,7 @@ This formula is used when there is a dependency between the samples. The two pos
 
 4.Get the degrees of freedom.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img16.png)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img16.png)
 
 5.Compute the t-statistic as given below.
 
@@ -890,11 +890,11 @@ This test requires the sample to be random and is taken from a population that i
 
 1.Calculate the standard error (SE) of the mean:
 
-![](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img17.jpeg)
 
 2.Then compute the z-score for the Z-test as below.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img18.jpeg)
 
 3.Finally, the z score is compared to a Z table which contains the percent of area under the normal curve between the mean and the z score. Using this table will indicate whether the calculated z score is within the realm of chance or it is so different from the mean that the sample mean is unlikely to have happened by chance.
 
@@ -1045,7 +1045,7 @@ The Inverse Erf method returns the Inverse Error Function for a given Value.</td
 
 There are two widely used utility functions, the Gamma and Beta functions, which are used in statistics to calculate distribution values. These functions always return a double value and use two double values for input. **The beta function was studied by Euler and Legendre and was named by Jacques Binet**. In mathematics, the beta function (occasionally written as Beta function) which, is also called the Euler integral of the first kind, is a special function defined by:
 
-![](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img20.jpeg)
 
 where G(x) is the gamma function.
 
@@ -1097,7 +1097,7 @@ Dim double as result = UtilityFunctions.Beta(a,b);
 
 The Beta Distribution can be defined as a family of probability distributions differing in the values of **α and β**. The Cumulative distribution function is given below.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img21.jpeg)
 
 where Bx(α, ß) is the incomplete beta function and Ix(α, ß) is the regularized incomplete beta function.
 
@@ -1175,7 +1175,7 @@ Me.ChartControl1.Series.Add(series)
 
 Binomial Coefficient is an utility function used in statistical calculations. This function is used to determine the possible number of combinations of 'k' items that can be selected from a set of 'n' items. The binomial coefficient formula can be explicitly stated as given below.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img22.jpeg)
 
 where n! denotes the factorial of n. 
 
@@ -1276,11 +1276,11 @@ Dim double as result = UtilityFunctions.InverseBetaCumulativeDistribution (a, b,
 
 The Error function, denoted as Erf(x), gives the probability that a measurement under the influence of accidental errors has a distance less than x from the average value at the center. It is the integral of Gauss curve, that is usually normalized to one with a factor of 2/Öp. It is otherwise called as integrated Gauss function or Gauss Error function.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img23.jpeg)
 
 Here is the plot of error function.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img24.jpeg)
 
 #### Using the formula
 
@@ -1330,7 +1330,7 @@ The Factorial function returns the factorial value of a given number. In mathema
 
 The factorial function is defined by the following expression.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img25.jpeg)
 
 which is equivalent to n! = n . (n-1) . ..... . 2 . 1.
 
@@ -1385,7 +1385,7 @@ Dim int as result = UtilityFunctions.Factorial(int n)
 
 This formula returns cumulative F Distribution which can be defined as the ratio of two chi-square distributions. The formula can be expressed as given below.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img26.jpeg)
 
 where,
 
@@ -1441,17 +1441,17 @@ double x = Statistics.UtilityFunctions. FCumulativeDistribution(fValue, firstDeg
 
 The Gamma Function is an attempt to generalize the factorial function to real and complex numbers. It is related to the factorial function by
 
-![](Statistical-Formulas_images/Statistical-Formulas_img27.png)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img27.png)
 
 The Gamma Function
 
 For a complex number x with a positive real part, the function can be given by
 
-![](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img28.jpeg)
 
 Special Values of gamma function
 
-![](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img29.jpeg)
 
 #### Using the Formula
 
@@ -1501,11 +1501,11 @@ double x = Statistics.UtilityFunctions.Gamma( p )
 
 The formula for the cumulative distribution function for the gamma distribution is,
 
-![](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img30.jpeg)
 
 where is the gamma function defined above and is the incomplete gamma function. The incomplete gamma function has the formula.
 
-![](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img31.jpeg)
 
 **Example**
 
@@ -1710,9 +1710,9 @@ This formula yields the value of the standard normal cumulative distribution. No
 
 The normal density function is given by,
 
-![](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img32.jpeg)
 
-![](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img33.jpeg)
 
 Different values of __ and  yield different normal density curves and hence different normal distributions.  All normal density curves satisfy the following property which is often referred to as the__Empirical Rule.
 
@@ -1777,17 +1777,17 @@ A variable might be modeled as log-normal if it can be thought of as the multipl
 
 The log-normal distribution has a probability density function (pdf),
 
-![](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img34.jpeg)
 
 for x > 0, where µ and s are the median and standard deviation of the variable's logarithm. The expected value is,
 
-![](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img35.jpeg)
 
 and the variance is,
 
-![](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img36.jpeg)
 
-![](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img37.jpeg)
 
 #### Using the formula
 
@@ -1883,11 +1883,11 @@ double x= Statistics.UtilityFunctions. InverseTCumulativeDistribution(p, degreeO
 
 This formula will return the T cumulative distribution (student's t-distribution) for a degree of freedom > 0. When there is a need to estimate the mean of a normally distributed population for a given sample, the t-distribution comes into action. It is the basis of the popular t-tests to find out the difference between two sample means.
 
-For a sample with size n drawn from a normal population with mean  and standard deviation . Let {{ '![](Statistical-Formulas_images/Statistical-Formulas_img38.png)' | markdownify }}
+For a sample with size n drawn from a normal population with mean  and standard deviation . Let {{ '![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img38.png)' | markdownify }}
 
  and _s_  denote the sample mean and sample standard deviation respectively. Then the quantity 
 
-![](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)
+![Chart Formulas](Statistical-Formulas_images/Statistical-Formulas_img39.jpeg)
 
 gives the t-distribution for n-1 degrees of freedom.
 

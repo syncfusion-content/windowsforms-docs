@@ -42,7 +42,7 @@ To view the samples, follow the steps below
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Chart Installation](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -56,12 +56,12 @@ To view the samples, follow the steps below
    > * Online Samples - Click to view online samples.
    > * Explore Samples - Explore BI Web samples on disk.
    
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![Chart Installation](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
   
    
 3. Select Chart from bottom-left pane. Chart samples will be displayed.
    
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![Chart Installation](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
    
 
 4. Select any sample and browse through the features.

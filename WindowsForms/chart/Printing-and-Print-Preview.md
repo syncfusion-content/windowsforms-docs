@@ -44,7 +44,7 @@ printPreviewDialog1.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
+![Chart Print](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img1.jpeg)
 
 ## Printing
 
@@ -104,7 +104,7 @@ Me.chartControl1.PrintColorMode = ChartPrintColorMode.GrayScale
 
 Setting GrayScale print mode for the chart lets you print the chart in a gray scale and when multiple series are printed in this case, chart data points are automatically rendered with a patterned brush to differentiate the different series as shown in the image below.
 
-![](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg)
+![Chart Print](Printing-and-Print-Preview_images/Printing-and-Print-Preview_img2.jpeg)
 
 A sample illustrating the printing features is available in the below location.
 
