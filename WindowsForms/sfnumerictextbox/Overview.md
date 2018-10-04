@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfNumericTextBox control for Windows Forms
-description: Features overview of SfNumericTextBox control for Windows Forms
+description: An overview of SfNumericTextBox control for Windows Forms and its key features like inbuilt watermark support, different display modes etc.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug

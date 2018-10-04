@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon-Merge-Support | WindowsForms | Syncfusion
-description: ribbon merge support
+description: Quick guidelines for menu merging in RibbonControlAdv with the option to merge Tabs, ToolstripEx and ToolstripItems with the parent 
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug

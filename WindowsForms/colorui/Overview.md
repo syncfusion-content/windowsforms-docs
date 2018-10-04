@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ColorUIControl for WindowsForms
+description: A quick overview about the ColorUIControl or selecting colors in their Windows Forms applications using palette type visual interface
 platform: WindowsForms
 control: ColorUI 
 documentation: ug

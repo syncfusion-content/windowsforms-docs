@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion Autolabel for Windows Forms
+description: Overview of Autolabel control which allows to pair with any controls and it will be repositioned with the labeled controls
 platform: WindowsForms
 control: AutoLabel
 documentation: ug

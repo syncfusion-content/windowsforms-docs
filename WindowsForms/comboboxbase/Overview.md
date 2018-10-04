@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ComboBoxBase for WindowsForms
+description: A quick overview about ComboBoxBase control in which you can the ListControl-derived class for the drop down area.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ColorPickerButton for WindowsForms
+description: An introduction about ColorPickerButton which display the Color picker dropdown in combination with a button
 platform: WindowsForms
 control: ColorPickerUIAdv 
 documentation: ug

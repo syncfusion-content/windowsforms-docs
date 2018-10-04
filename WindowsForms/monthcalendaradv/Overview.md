@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion MonthCalendarAdv for Windows Forms
+description: An overview about the MonthCalendarAdv and its key features like multiple selection, ContextMenu, Globalization and Visual style
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced-Features | WindowsForms | Syncfusion
-description: advanced features
+description: Advanced features like in-built support of auto-completion of the text entered in the control and can be bound with an external data source
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug

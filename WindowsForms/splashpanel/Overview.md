@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion Splash panel for Windows Forms
+description: An overview about SplashPanel control which allows the user to design a custom notification screen as like message window in the desktop
 platform: WindowsForms
 control: SplashPanel
 documentation: ug

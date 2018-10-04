@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating AutoLabel | WindowsForms | Syncfusion
-description: Creating AutoLabel
+description: Explains about creating autolabel control by using both designer and programatically and assigning it to a control
 platform: WindowsForms
 control: AutoLabel
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion IntegerTextBox for WindowsForms
+description: A quick introduction about the IntergerTextBox which is derived from TextBox with the support to deal only with the integer data type values.
 platform: WindowsForms
 control: Tools
 documentation: ug

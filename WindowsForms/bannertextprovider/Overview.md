@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion BannerTextProvider for Windows Forms
+description: Overview of BannerTextProvider which deals with the water mark support for editor controls with the support to set color to the text
 platform: WindowsForms
 control: BannerTextProviderComponent
 documentation: ug

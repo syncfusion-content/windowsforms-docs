@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion StatusBarAdvPanel for Windows Forms
+description: An overview about StatusBarAdvPanel which is a panel-derived class that can display StatusBar information such as the time and key state
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug

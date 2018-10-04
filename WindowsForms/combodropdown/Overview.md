@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview 
+title: Overview of Syncfusion ComboDropDown for WindowsForms
+description: Overview of Syncfusion ComboDropDown that can host any control in the drop down area with the Themes support
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug

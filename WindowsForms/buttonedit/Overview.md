@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ButtonEdit for WindowsForms
+description: A quick overview about ButtonEdit control which is a combination of TextBox and button control that embeds one or more Child button.
 platform: WindowsForms
 control: Tools
 documentation: ug

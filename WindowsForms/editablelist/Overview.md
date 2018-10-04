@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion EditableList for WindowsForms
+description: Overview of Syncfusion EditableList is a listbox control which is enhanced text box and button on the current row to support editing at runtime 
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

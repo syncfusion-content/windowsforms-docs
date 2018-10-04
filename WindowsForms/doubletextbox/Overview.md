@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion DoubleTextBox for WindowsForms
+description: Overview of Syncfusion DoubleTextBox which deals with the double data type values and support globalization feature
 platform: WindowsForms
 control: DoubleTextBox
 documentation: ug

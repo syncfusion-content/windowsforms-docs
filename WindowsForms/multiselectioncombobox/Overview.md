@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion MultiSelectionComboBox for Windows Forms
+description: An overview about the MultiSelectionComboBox with Multi-select auto suggestion and different modes to display the items.
 platform: WindowsForms
 control: Editors Package
 documentation: ug

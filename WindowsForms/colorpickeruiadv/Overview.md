@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ColorPickerUIAdv for Windows Forms
+description: A quick overview about the ColorPickerUIAdv which has ColorCells for selecting colors in applications and also displaying themed and standard colors
 platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug

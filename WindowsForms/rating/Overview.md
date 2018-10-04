@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion Rating control for Windows Forms
+description: An overview of Rating control for Windows Forms and its key features like precision, tooltip, different shapes with custom renderer. 
 platform: WindowsForms
 control: Rating  
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion Calculator control for WindowsForms
+description: Overview of Calculator control with all functionalities of standard calculator with the Layout modes and Visual styles.
 platform: WindowsForms
 control: Calculator
 documentation: ug

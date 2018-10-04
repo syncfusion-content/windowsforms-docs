@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion DateTimePickerAdv for WindowsForms
+description:Overview of DateTimePickerAdv which is combination of Button and a MonthCalendarAdv as a popup with the customizable UI
 platform: WindowsForms
 control: Calendar
 documentation: ug

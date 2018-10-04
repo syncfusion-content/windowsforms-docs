@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion CheckBoxAdv for Windows forms
+description:  A quick introduction of advanced CheckBox control that supports themes, gradient colors,shadow text with alignment options for text and checkbox
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

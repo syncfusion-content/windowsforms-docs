@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion FontComboBox for WindowsForms
+description: An overview about FontComboBox which is populated with System installed fonts automatically and has Theme support 
 platform: WindowsForms
 control: Editors Package
 documentation: ug

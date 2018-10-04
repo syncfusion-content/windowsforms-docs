@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion DomainUpDownExt for WindowsForms
+description: Overview about an advanced version of the standard DomainUpDown control which supports themes and comes with standard look and feel
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug

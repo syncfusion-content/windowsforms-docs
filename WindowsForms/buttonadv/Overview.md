@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion ButtonAdv for WindowsForms
+description: Overview of advanced button control that is capable of displaying  images with different alignments and various border styles
 platform: WindowsForms
 control: Editors Package
 documentation: ug

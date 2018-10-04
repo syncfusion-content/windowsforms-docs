@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoAppend | WindowsForms | Syncfusion
-description: AutoAppend
+description: AutoAppend provides auto persisting of previously entered items in a ComboBox based on a category and populates the combo box 
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug

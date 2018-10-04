@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion RibbonControlAdv for Windows Forms
+description: An overview of RibbonControlAdv with Ribbon items and Backstage to give a Ribbon like UI appearance with the updated Visual styles
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug

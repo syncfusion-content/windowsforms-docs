@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion The NumericUpDownExt for Windows Forms
+description: An overview of The NumericUpDownExt for Windows Forms and its key features like appearance with theme support and orientation support
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: An overview of RadioButtonAdv for Windows Forms and its key features like appearance with theme support and image setting
 description: overview
 platform: WindowsForms
 control: EditorsPackage

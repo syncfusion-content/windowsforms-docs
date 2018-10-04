@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion MultiColumnComboBox for Windows Forms
+description: An overview about MultiColumnComboBox which supports multiple column in the dropdown and can be bound to a large data sourcee
 platform: WindowsForms
 control: Editors Package
 documentation: ug

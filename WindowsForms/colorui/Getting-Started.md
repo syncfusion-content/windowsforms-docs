@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating coloruicontrol
+description: Gives information about working with ColorUIControl and its basic setting by using designer and programatically
 platform: WindowsForms
 control: ColorUI 
 documentation: ug

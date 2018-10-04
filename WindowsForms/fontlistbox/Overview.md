@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion FontListBox for WindowsForms
+description: Overview of Syncfusion FontListBox which automatically populated with the fonts installed on the user's system
 platform: WindowsForms
 control: Editors Package
 documentation: ug

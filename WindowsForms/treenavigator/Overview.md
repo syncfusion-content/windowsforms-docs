@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion TreeNavigator for Windows Forms
+description: An overview about the TreeNavigator control which provides a hierarchical structure of items which can be expanded and collapsed.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug

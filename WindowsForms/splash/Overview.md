@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion SplashControl for Windows Forms
+description: An overview about SplashControl control which is used to display a notification with the features like Animation and Image support
 platform: WindowsForms
 control: SplashControl
 documentation: ug

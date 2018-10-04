@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon-Form | WindowsForms | Syncfusion
-description: ribbon form
+description: A quick go through of RibbonForm which replaces the default form Title and Control box button to enable different Visual styles to the Ribbon
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
