@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview of Chart Control| Windows Forms | Syncfusion
+description: The chart control is used to represent the data in graphical format.
 platform: windowsforms
 control: Chart
 documentation: ug
