@@ -37,7 +37,7 @@ chartControl1.Title.Font = New System.Drawing.Font("Candara", 9F, System.Drawing
 
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img9.jpeg)
+![Chart Title](Chart-Appearance_images/Chart-Appearance_img9.jpeg)
 
 The above default chart title is simply the first in the list of titles that can be specified for the Chart.
 
@@ -76,7 +76,7 @@ Specifies the docking behavior of the title.<ul><li> Docking - It is dockable on
 
 There are several appearance options that can be applied on the [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) instance as illustrated in this [ChartTitle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle.html) Collection Editor.
 
-![](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
+![Chart Title](Chart-Appearance_images/Chart-Appearance_img10.jpeg)
 
 In code, you can add more titles to this list as follows.
 
@@ -114,10 +114,10 @@ Me.ChartControl1.Titles.Add(title)
 {% endhighlight %}
 {% endtabs %}
 
-![](Chart-Appearance_images/Chart-Appearance_img11.jpeg)
+![Chart Title](Chart-Appearance_images/Chart-Appearance_img11.jpeg)
 
 ## Multiline Chart Title
 
 You can now wrap the Chart titles and display them as multiline text. Set multiline title text in [ChartTitle.Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartTitle~Text.html) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
-![](Chart-Appearance_images/Chart-Appearance_img12.jpeg)
+![Chart Title](Chart-Appearance_images/Chart-Appearance_img12.jpeg)
