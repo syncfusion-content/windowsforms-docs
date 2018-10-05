@@ -7,6 +7,10 @@ control: DockingManager
 documentation: ug
 ---
 
+# Tabbed window
+
+Allows end users to group dock or float windows in tabs. Dock hints let you dock a window over or beside an already docked window. The appearance of tabs and panels in a group of dock or float windows can be fully customized.
+
 ## Tabbed to Another Window Programmatically
 
 The docking manager provides a [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function that helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.

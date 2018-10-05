@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview | PDF viewer | Windows Forms | Syncfusion
+description: Overview of PDF viewer for Windows Forms provides details about features supported and assembly requirements to use PDF viewer WF.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
