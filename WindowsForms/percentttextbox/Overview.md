@@ -12,7 +12,7 @@ documentation: ug
 
 The PercentTextBox is a textbox-derived control that can display double data type values in percentage form.
 
- ![](PercentTextBox-Images/Overview_img461.png) 
+ ![PercentTextBox](PercentTextBox-Images/Overview_img461.png) 
 
 
 

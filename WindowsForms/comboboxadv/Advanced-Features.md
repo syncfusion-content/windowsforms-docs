@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced-Features | WindowsForms | Syncfusion
-description: advanced features
+description: Advanced features like in-built support of auto-completion of the text entered in the control and can be bound with an external data source
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
@@ -51,7 +51,7 @@ Me.comboBoxAdv1.MatchFirstCharacterOnly = True
 {% endhighlight %}
 {% endtabs %}
 
-![C:/Users/ashwini/Desktop/ComboBoxAdv image/Autocomplete true.png](Overview_images/Overview_img305.png)
+![Autocomplete Support](Overview_images/Overview_img305.png)
 
 ## Data Binding
 
@@ -133,5 +133,5 @@ Me.comboBoxAdv1.DisplayMember = "place"
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img306.png) 
+![Data Binding support ](Overview_images/Overview_img306.png) 
 

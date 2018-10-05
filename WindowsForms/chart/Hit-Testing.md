@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hit-Testing | Windows Forms | Syncfusion
-description: hit testing
+description: This section explains about some useful methods in chart
 platform: windowsforms
 control: Chart
 documentation: ug

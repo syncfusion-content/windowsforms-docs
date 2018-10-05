@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Series | Windows Forms | Syncfusion
-description: chart series
+description: This section explains about the series and it's customization
 platform: windowsforms
 control: Chart
 documentation: ug
