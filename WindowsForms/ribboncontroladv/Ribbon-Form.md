@@ -67,11 +67,11 @@ Me.EnableAeroTheme = True
 
 *	Default Theme
 
-![](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
+![IsFormManager enabled](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
 
 *	Aero Theme
 
-![](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
+![Aero Theme enabled](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
 
 
 ## Customization
