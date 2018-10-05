@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion SkinManager for Windows Forms
+description: An overview about SkinManager control which is used to apply the particular themes for an application at one place. 
 platform: WindowsForms
 control: SkinManager 
 documentation: ug
