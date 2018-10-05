@@ -74,7 +74,7 @@ End Sub
 
 ### Set height for default record row
 
-The height for the record rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the default record row. It can be done by checking whether the record corresponding to the row index is a `RecordEntry` or not.
+The height for the record rows can be set in the `QueryRowHeight` event. SfDataGrid does not have any method to check for the default record row. It can be done by checking whether the record corresponding to the row index is `RecordEntry` or not.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,13 +133,13 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img7.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img7.jpeg)
 
-![](RowHeightCustomization_images/RowHeightCustomization_img8.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img8.jpeg)
 
 ### Set height for add new row
 
-The height of the add new row can be set by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html) method within the `QueryRowHeight` event.  
+The height for the add new row can be set by using the [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html) method in the `QueryRowHeight` event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -168,11 +168,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img9.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img9.jpeg)
 
 ### Set height for filter row
 
-The height of the filter row can be set by using [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) method within the `QueryRowHeight` event.  
+The height for the filter row can be set by using the [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) method in the `QueryRowHeight` event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -199,11 +199,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img10.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img10.jpeg)
 
 ### Set height for caption summary row
 
-The height of the caption summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the caption summary row. It can be done by checking whether the record corresponding to the row is a `Group` or not.
+The height for the caption summary rows can be set in the `QueryRowHeight` event. SfDataGrid does not have any method to check for the caption summary row. It can be done by checking whether the record corresponding to the row is `Group` or not.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,11 +251,11 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img11.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img11.jpeg)
 
 ### Set height for group summary row
 
-The height of the group summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the group summary row. It can be done by checking whether the record corresponding to the row index is a `SummaryRecordEntry`or not.  
+The height for the group summary rows can be set in the `QueryRowHeight` event. SfDataGrid does not have any method to check for the group summary row. It can be done by checking whether the record corresponding to the row index is `SummaryRecordEntry`or not.  
 
 {% tabs %}
 {% highlight c# %}
@@ -303,11 +303,11 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img12.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img12.jpeg)
 
 ### Set height for table summary row
 
-The height of the table summary row can be set by using [SfDataGrid.IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method within the `QueryRowHeight` event.  
+The height of the table summary row can be set by using the [SfDataGrid.IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method in the `QueryRowHeight` event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -336,7 +336,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img13.png)
+![](RowHeightCustomization_images/RowHeightCustomization_img13.jpeg)
 
 
 ## Fit Row Height based on its Content
