@@ -17,7 +17,7 @@ The following steps allow you to label a control.
 *  Go to the Property grid and select the LabeledControl property.
 *  Select the control to be labeled, TextBox, from the dropdown box as shown here.
 
-   ![](AutoLabel-Images/Overview_img3.jpg) 
+   ![Steps to label a control](AutoLabel-Images/Overview_img3.jpg) 
 
 {% tabs %}
 {% highlight c# %}
@@ -41,4 +41,4 @@ Me.Controls.Add(Me.autoLabel1)
 
 *  Run the application.
 
-  ![](AutoLabel-Images/Overview_img4.jpg) 
+  ![Labelled a control](AutoLabel-Images/Overview_img4.jpg) 

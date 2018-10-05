@@ -31,4 +31,4 @@ documentation: ug
 •	StatusStripEx -  Provides placing of StatusBar items at the bottom of the form.
 •	Persistence - Support to save and load the state of RibbonControlAdv.
 
-![](OverView_Images/OverView_img1.jpg)
+![Overview of Syncfusion RibbonControlAdv](OverView_Images/OverView_img1.jpg)

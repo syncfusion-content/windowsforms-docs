@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in Editor controls.
 
- ![](Overview_images/Overview_img2.jpeg) 
+ ![Overview of BannerTextProvider](Overview_images/Overview_img2.jpeg) 
 
 
 

@@ -17,6 +17,6 @@ This combo box automatically shows all the fields in the datasource. You can dat
 
 
 
-![](Overview_images/Overview_img323.jpeg) 
+![Overview of MultiColumnComboBox](Overview_images/Overview_img323.jpeg) 
 
 

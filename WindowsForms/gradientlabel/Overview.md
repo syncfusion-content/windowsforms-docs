@@ -16,7 +16,7 @@ The GradientLabel class is fully compatible with the Windows Forms label that it
 
 The GradientLabel.Border3DStyle is another property that can specify the look and feel of the GradientLabel.
 
- ![](GradientLabel-Images/Overview_img598.jpeg) 
+ ![Overview of Syncfusion for GradientLabel](GradientLabel-Images/Overview_img598.jpeg) 
 
 
 The .NET Framework provides a label control typically used to provide descriptive text for a control. The Essential Tools' GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.

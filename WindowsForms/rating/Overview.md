@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools Rating control for Windows Forms provides an intuitive rating experience that allows the end-user to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
 
-![](Overview_images/Overview_img1.png)
+![Overview of Rating control](Overview_images/Overview_img1.png)
 
 ### Key features
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started for Syncfusion ColorUIControl | WindowsForms | Syncfusion
 description: Gives information about working with ColorUIControl and its basic setting by using designer and programatically
 platform: WindowsForms
 control: ColorUI 
@@ -11,7 +11,7 @@ documentation: ug
 
 ColorUIControl can be added through designer by just dragging-and-dropping it from the toolbox onto the Windows Form Designer. 
 
-![](ColorUI_images/Overview_img226.jpeg)
+![Creating control using Designer](ColorUI_images/Overview_img226.jpeg)
 
 It can also be created programmatically as discussed below.
 
@@ -62,4 +62,4 @@ Me.Controls.Add(Me.colorUIControl1)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](ColorUI_images/Overview_img227.jpeg)
+   ![ColorUIControl](ColorUI_images/Overview_img227.jpeg)

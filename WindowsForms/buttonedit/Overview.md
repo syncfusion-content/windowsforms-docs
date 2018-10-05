@@ -13,7 +13,7 @@ The ButtonEdit control embeds a text box control with a collection of button con
 
 The edit control with a browse button extends a regular edit control by adding a button which can display an user-defined "browse" dialog. The ButtonEdit control provides an easy way to create controls with an edit control and any number of associated buttons. 
 
-![](Overview_images/Overview_img78.jpeg) 
+![Overview of ButtonEdit](Overview_images/Overview_img78.jpeg) 
 
 
 

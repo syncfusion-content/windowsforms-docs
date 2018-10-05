@@ -20,7 +20,7 @@ In a Ribbon form, add a RibbonControlAdv control and the required ToolStripTabIt
 
 From the ToolBox, add a RibbonPanelMergeContainer to the ChildForm. ToolStripEx can be added into this by right Clicking on it.
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img1.jpg)
+![Creating Ribbon Panel Merge Container](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img1.jpg)
 
 ## Assign Merge Container to Ribbon
 
@@ -52,15 +52,15 @@ frm.Show()
 
 * Parent Form
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img2.jpg)
+![Parent Form](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img2.jpg)
 
 * Child Form
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img3.jpg)
+![Child Form](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img3.jpg)
 
 * Parent form after merging, the extra tabs from child form (Data and View) are merged with the main form Ribbon control.
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img4.jpg)
+![Parent form after merging](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img4.jpg)
 
 ## Merge ToolStrip with existing Tab
 
@@ -82,11 +82,11 @@ Me.ribbonPanelMergeContainer2.Text = "HOME"
 
 {% endtabs %}
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img5.jpg)
+![Merge ToolStrip with existing Tab](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img5.jpg)
 
 * The new ToolStripEx (Comments and Sheets) from child form are merged with parent form.
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img6.jpg)
+![New ToolStripEx merged with parent form](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img6.jpg)
 
 
 ## Merge ToolStrip Items with existing ToolStrip
@@ -111,11 +111,11 @@ Me.toolStripEx1.Text = "Cells"
 
 {% endtabs %}
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img7.jpg)
+![Merge ToolStrip Items with existing ToolStrip](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img7.jpg)
 
 *	The controls in ToolStripEx with the name **Cells** in child form has been merged with the ToolstripEx with the same name in parent form.
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img8.jpg)
+![Controls in ToolStripEx merged with the ToolstripEx which has same name](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img8.jpg)
 
 ## Tab Positioning
 
@@ -144,6 +144,6 @@ merge.SetTabIndex(Me.ViewToolStripEx.Text, 0)
 
 {% endtabs %}
 
-![](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img9.jpg)
+![Tab Positioning](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img9.jpg)
 
 *	Now the View Tab has been moved to zeroth position as mentioned in the code

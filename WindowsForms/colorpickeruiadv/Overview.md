@@ -10,7 +10,7 @@ documentation: ug
 
 The Essential Tools ColorPickerUIAdv allows.NET developers to provide Microsoft Word 2007 ColorCells for selecting colors in their applications. The ColorPickerUIAdv comprises of a panel displaying themed colors and standard colors. The ColorPickerUIAdv also comes with a More Colors option, in a color dialog, displaying more sub colors for the base colors in the control. 
 
-![](ColorPickerUIAdv_Images/ColorPicker2016Style.jpeg)
+![Overview of ColorPickerUIAdv](ColorPickerUIAdv_Images/ColorPicker2016Style.jpeg)
 
 
 

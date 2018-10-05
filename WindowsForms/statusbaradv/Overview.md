@@ -13,7 +13,7 @@ The StatusBarAdv is an advanced StatusBar control that can display StatusBarPane
 
 Below image shows a StatusBarAdv with controls added to it.
 
-![](Overview_images/Overview_img59.jpeg) 
+![Overview of Syncfusion StatusBarAdv](Overview_images/Overview_img59.jpeg) 
 
 
 

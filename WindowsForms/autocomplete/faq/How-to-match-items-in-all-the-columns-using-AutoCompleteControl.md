@@ -36,7 +36,7 @@ Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
- ![](FAQ_images/Overview_img36.jpeg)
+ ![MultiSuggest mode](FAQ_images/Overview_img36.jpeg)
 
 
 
@@ -61,4 +61,4 @@ Me.autoComplete1.SetAutoComplete(Me.textBoxExt1 , Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 
-![](FAQ_images/Overview_img37.jpeg) 
+![MultiSuggest Extended mode](FAQ_images/Overview_img37.jpeg) 

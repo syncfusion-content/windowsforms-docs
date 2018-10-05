@@ -15,7 +15,7 @@ There is however, a ComboBoxAdv, which is based on the ComboBoxBase and provides
 
 Note that Essential Grid comes with a ListControl-derived GridListControl, which you can place in the drop-down area to get a multi-column drop-down combo.
 
-![](Overview_images/Overview_img314.jpeg) 
+![Overview of ComboBoxBase ](Overview_images/Overview_img314.jpeg) 
 
 With the ComboBoxBase, you can plug in any ListControl-derived class as the list for the list portion of the combo box using the ListControl property.
 
