@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Legend-and-Legend-Items | Windows Forms | Syncfusion
-description: chart legend and legend items
+description: This section explains about legend and it's customization in the chart control
 platform: windowsforms
 control: Chart
 documentation: ug

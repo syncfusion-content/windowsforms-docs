@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Types | Windows Forms | Syncfusion
-description: chart types
+description: This section explains about the different type of series in the chart control
 platform: windowsforms
 control: Chart
 documentation: ug
