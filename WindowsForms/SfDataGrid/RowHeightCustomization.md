@@ -133,9 +133,9 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img7.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img7.png)
 
-![](RowHeightCustomization_images/RowHeightCustomization_img8.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img8.png)
 
 ### Set height for add new row
 
@@ -168,7 +168,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img9.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img9.png)
 
 ### Set height for filter row
 
@@ -199,7 +199,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img10.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img10.png)
 
 ### Set height for caption summary row
 
@@ -251,7 +251,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img11.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img11.png)
 
 ### Set height for group summary row
 
@@ -303,7 +303,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img12.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img12.png)
 
 ### Set height for table summary row
 
@@ -336,7 +336,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img13.jpeg)
+![](RowHeightCustomization_images/RowHeightCustomization_img13.png)
 
 
 ## Fit Row Height based on its Content
