@@ -106,4 +106,4 @@ Follow the steps to create a `CodedUITest project` and test the `SfComboBox` app
 
 ## QTP
 
-Refer to the [UFT/QTP](windowsforms-docs/blob/master/WindowsForms/Testing/UFT/Supported-Controls-and-Methods.md#SfComboBox) testing to test the UI with SfComboBox.
+Refer to the [UFT/QTP](/windowsforms/testing/uft/supported-controls-and-methods#sfcombobox) testing to test the UI with SfComboBox.
