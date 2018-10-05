@@ -11,7 +11,7 @@ documentation: ug
 
 In Office 2007, Microsoft has introduced a SuperToolTip control to display the tooltip. Essential Tools has also come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
-![](SuperToolTip_images/SuperToolTip_img1.jpeg)
+![SuperToolTip](SuperToolTip_images/SuperToolTip_img1.jpeg)
 
 * Header - The Header is used to display text which is used as a header for the tooltip.
 * Body - This is the description part. 
@@ -22,13 +22,13 @@ In Office 2007, Microsoft has introduced a SuperToolTip control to display the t
 1. Drag and drop the SuperToolTip on your form.
 2. When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the tool strip or tab item in the RibbonControlAdv.
 
-   ![](SuperToolTip_images/SuperToolTip_img2.jpeg)
+   ![Creating SuperToolTip through designer](SuperToolTip_images/SuperToolTip_img2.jpeg)
 
    N> You can also get or set a tooltip programmatically. It is discussed here.
 
 3. Clicking the … ellipse button will show the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items.
 
-   ![](SuperToolTip_images/SuperToolTip_img4.jpeg)
+   ![Customize the ToolTip items](SuperToolTip_images/SuperToolTip_img4.jpeg)
 
 
 ### Through code
@@ -95,7 +95,7 @@ Separator</td><td>
 Shows or hides a separator between the Body and the Footer tooltip items.</td></tr>
 </table>
 
-![](SuperToolTip_images/SuperToolTip_img5.jpeg)
+![Appearance settings ](SuperToolTip_images/SuperToolTip_img5.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,7 @@ toolTipInfo2.Separator = True
 {% endhighlight %}
 {% endtabs %}
 
-![](SuperToolTip_images/SuperToolTip_img6.jpeg)
+![Appearance settings ](SuperToolTip_images/SuperToolTip_img6.jpeg)
 
 ### Visual style
 
@@ -139,7 +139,7 @@ Me.superToolTip1.VisualStyle = Syncfusion.Windows.Forms.Tools.SuperToolTip.Appea
 {% endhighlight %}
 {% endtabs %}
 
-![](SuperToolTip_images/SuperToolTip_img17.png)
+![Visual style](SuperToolTip_images/SuperToolTip_img17.png)
 
 ### Behavior settings
 
@@ -206,7 +206,7 @@ Style property is added to set Balloon style for SuperTooltip.  SuperToolTipStyl
 
 Set Style property to Balloon to change the SuperToolTip appearance as balloon.
 
-![](SuperToolTip_images/SuperToolTip_img7.jpeg)
+![Balloon style appearance in SuperToolTip](SuperToolTip_images/SuperToolTip_img7.jpeg)
 
 
 The following code illustrates how to set SuperToolTipStyle.
@@ -277,7 +277,7 @@ toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 {% endhighlight %}
 {% endtabs %}
 
-![](SuperToolTip_images/SuperToolTip_img9.jpeg)
+![Image settings](SuperToolTip_images/SuperToolTip_img9.jpeg)
 
 ### Foreground settings
 
@@ -364,7 +364,7 @@ toolTipInfo1.Header.TextMargin = New System.Windows.Forms.Padding(1, 1, 1, 1)
 {% endhighlight %}
 {% endtabs %}
 
-![](SuperToolTip_images/SuperToolTip_img10.jpeg)
+![Appearance and text settings](SuperToolTip_images/SuperToolTip_img10.jpeg)
 
 N> A SuperToolTip (Body, Header and Footer) can be hidden by calling the SuperToolTip.Hide() method.
 
@@ -376,7 +376,7 @@ Size property sets the size of header, body and footer Item. Size property will 
 
 CSS properties and all the text formatting HTML tags are supported.
 
-![](SuperToolTip_images/SuperToolTip_img12.jpeg)
+![Render Html to SuperToolTip](SuperToolTip_images/SuperToolTip_img12.jpeg)
 
 The following code illustrates setting RenderHtml, Text, Size properties.
 
@@ -490,4 +490,4 @@ SupperTooltip can be displayed in the User Control embedded in the MFC Dialog.
 
 N> Support has been given in source level.
 
-![](SuperToolTip_images/SuperToolTip_img16.jpeg)
+![Supporting SuperTooltip for MFC containers](SuperToolTip_images/SuperToolTip_img16.jpeg)

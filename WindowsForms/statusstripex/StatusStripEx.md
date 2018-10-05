@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
-![](StatusStripEx_images/StatusStripEx_img1.jpeg)
+![StatusStripEx](StatusStripEx_images/StatusStripEx_img1.jpeg)
 
 ## Creating a StatusStripEx
 
@@ -19,7 +19,7 @@ Essential Tools has come up with StatusStripEx control which can be added to the
 
 The StatusStripEx can be added to the form by dragging a StatusStripEx control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
 
-![](StatusStripEx_images/StatusStripEx_img2.jpeg)
+![Creating a StatusStripEx through designer](StatusStripEx_images/StatusStripEx_img2.jpeg)
 
 
 Dock the StatusStripEx control to the bottom using Dock property.
@@ -30,7 +30,7 @@ Dock the StatusStripEx control to the bottom using Dock property.
 
 Access the Items property of the control, to open the Items Collection Editor. Use this editor to add customized StatusControl items. The Editor will let you modify the look and feel of the items using the properties provided on it right side.
 
-![](StatusStripEx_images/StatusStripEx_img4.png) 
+![Adding items to the StatusStripEx](StatusStripEx_images/StatusStripEx_img4.png) 
 
 N> A shortcut to add the ToolStripStatus Items is through Tasks Window. See Smart Tag options to know more.
 
@@ -91,7 +91,7 @@ A sample which demonstrates the creation of StatusStripEx control and adding Too
 
 Clicking the Smart Tag of the StatusStripEx, displays the below Tasks window. This window lets you add ToolStripStatus Items.
 
-![](StatusStripEx_images/StatusStripEx_img6.jpeg)
+![Smart tag options](StatusStripEx_images/StatusStripEx_img6.jpeg)
 
 The options are,
 
@@ -168,11 +168,11 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 {% endhighlight %}
 {% endtabs %}
 
-![](StatusStripEx_images/StatusStripEx_img7.jpeg)
+![ColorSchemes](StatusStripEx_images/StatusStripEx_img7.jpeg)
 
-![](StatusStripEx_images/StatusStripEx_img8.jpeg)
+![ColorSchemes](StatusStripEx_images/StatusStripEx_img8.jpeg)
 
-![](StatusStripEx_images/StatusStripEx_img9.jpeg)
+![ColorSchemes](StatusStripEx_images/StatusStripEx_img9.jpeg)
 
 
 ### Visual style
@@ -195,7 +195,7 @@ Me.statusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyl
 {% endhighlight %}
 {% endtabs %}
 
-![](StatusStripEx_images/StatusStripEx_img11.png)
+![Visual style](StatusStripEx_images/StatusStripEx_img11.png)
 
 
 ### Custom colors
@@ -218,7 +218,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
 
-![](StatusStripEx_images/StatusStripEx_img10.jpeg)
+![Custom colors](StatusStripEx_images/StatusStripEx_img10.jpeg)
 
 ## Custom context mMenu
 
