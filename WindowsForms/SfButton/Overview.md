@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfButton Control Windows Forms | Syncfusion
+title: Overview | Button | Syncfusion
 description: Overview
 platform: WindowsForms
 control: SfButton

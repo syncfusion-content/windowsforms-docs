@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Scheduler Control for Windows Forms | Syncfusion
+title: Overview | Scheduler | Syncfusion
 description: overview
 platform: windowsforms
 control: Schedule

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfListView Control for Windows Forms | Syncfusion
+title: Overview | ListView | Syncfusion
 description: This section explains about the SfListView.
 platform: windowsforms
 control: SfListView

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns | SfDataGrid Control for Windows Forms | Syncfusion
+title: Columns | DataGrid Control for Windows Forms | Syncfusion
 description: This section explains about the columns in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Excel-like Grid Control for Windows Forms | Syncfusion
+title: Overview | Grid Control | Syncfusion
 description: This section explains the GridControl.
 platform: windowsforms
 control: GridControl

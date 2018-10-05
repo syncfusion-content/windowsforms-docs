@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | SfDataGrid Control for Windows Forms | Syncfusion
+title: Getting Started | DataGrid Control for Windows Forms | Syncfusion
 description: This section explains about the SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

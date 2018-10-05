@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfScrollFrame Control for Windows Forms | Syncfusion
+title: Overview | ScrollFrame | Syncfusion
 description: This section explains about the SfScrollFrame and its customization.
 platform: WindowsForms
 control: SfScrollFrame
