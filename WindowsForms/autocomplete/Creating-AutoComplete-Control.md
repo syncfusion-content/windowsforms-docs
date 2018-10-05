@@ -18,19 +18,19 @@ This section explains the usage of the AutoComplete control for TextBox, without
 
 1. Create a new Windows Forms application and open the main form for the application in the Designer. Add the Syncfusion controls to the VS .NET toolbox, if you have not done so already. Drag-and-drop an AutoComplete control onto the form.
 
-   ![](AutoComplete-Controls-Images/Overview_img6.jpeg)
+   ![Creating control through designer](AutoComplete-Controls-Images/Overview_img6.jpeg)
 
 
 
 2. The AutoComplete control appears as a component in the component tray of the design environment. Similarly add a Textbox, two labels and a button to make the form interactive. 
 
-   ![](AutoComplete-Controls-Images/Overview_img7.jpeg)
+   ![AutoComplete appearance](AutoComplete-Controls-Images/Overview_img7.jpeg)
 
 
 
 3. When the AutoComplete control is added to the form, the AutoComplete on autocomplete property is added to the text box control properties. This property specifies the type of autocompletion to be provided by the autoComplete1 control for the comboBox1 control. The default value for AutoComplete on autoComplete1 will be set to AutoCompleteModes.Disabled. Use the drop-down box provided in the property grid to change it to the mode of autocompletion toAutoSuggest. The different modes of autocompletion are detailed in AutoComplete Modes topic. 
 
-   ![](AutoComplete-Controls-Images/Overview_img8.jpeg)
+   ![Setting autocomplete to other controls](AutoComplete-Controls-Images/Overview_img8.jpeg)
 
 
 
@@ -38,7 +38,7 @@ This section explains the usage of the AutoComplete control for TextBox, without
 
 N> The text entered can be saved only when AutoAddItem property is set to True.
 
-  ![](AutoComplete-Controls-Images/Overview_img10.jpeg)
+  ![Autocomplete at Rintime](AutoComplete-Controls-Images/Overview_img10.jpeg)
 
 
 
@@ -120,4 +120,4 @@ N> You can also add a list of AutoComplete items through designer, that can used
    ~~~
    {:.prettyprint }
 
-   ![](AutoComplete-Controls-Images/Overview_img12.jpeg)
+   ![AutoComplete](AutoComplete-Controls-Images/Overview_img12.jpeg)

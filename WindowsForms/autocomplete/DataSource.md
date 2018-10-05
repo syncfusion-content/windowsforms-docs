@@ -106,14 +106,14 @@ Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.History
 
 {% endhighlight %}
 
- ![](AutoComplete-Controls-Images/Overview_img26.jpeg) 
+ ![HistoryList](AutoComplete-Controls-Images/Overview_img26.jpeg) 
 
 
 ### Custom Source
 
 AutoComplete control lets you specify a set of auto completion text using String Collection Editor. This editor is invoked using Control.AutoCompleteCustomSource property. 
 
-![](AutoComplete-Controls-Images/Overview_img27.jpeg) 
+![Custom Source](AutoComplete-Controls-Images/Overview_img27.jpeg) 
 
 
 At runtime when you type the first letter, it automatically displays the auto completion list added through this editor.
@@ -152,7 +152,7 @@ Me.textBox1.AutoCompleteCustomSource.AddRange(New String[] {"Customization Setti
 
 {% endhighlight %}
 
- ![](AutoComplete-Controls-Images/Overview_img29.jpeg) 
+ ![Custom Source](AutoComplete-Controls-Images/Overview_img29.jpeg) 
 
 
 
@@ -195,7 +195,7 @@ Me.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppe
 {% endhighlight %}
 
 
-![](AutoComplete-Controls-Images/Overview_img30.jpeg) 
+![AutoCompletion SuggestAppend mode](AutoComplete-Controls-Images/Overview_img30.jpeg) 
 
 
 ## External Datasource
@@ -280,7 +280,7 @@ You can specify an external datasource for the AutoComplete control to use as th
    ~~~
    {:.prettyprint}
 
- ![](AutoComplete-Controls-Images/Overview_img31.jpeg) 
+ ![External Datasource](AutoComplete-Controls-Images/Overview_img31.jpeg) 
 
 
 Refer to [Multiple Columns](http://docs.syncfusion.com/windowsforms/autocomplete/multiple-columns) section for more information on configuring data sources with multiple columns.

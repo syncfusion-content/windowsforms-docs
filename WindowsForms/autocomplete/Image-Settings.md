@@ -87,7 +87,7 @@ Me.autoComplete1.AddHistoryItem("User Item", 2)
 
 {% endhighlight %}
 
- ![](AutoComplete-Controls-Images/Overview_img35.jpeg) 
+ ![Image Setting](AutoComplete-Controls-Images/Overview_img35.jpeg) 
 
 
 ## Items with Images Through External DataSource
@@ -100,6 +100,6 @@ While using an external datasource, the Columns property can be initially refres
 
 {% seealso %}
  
-[Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns)
+[Images through External DataSource](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns)
 
  {% endseealso %}

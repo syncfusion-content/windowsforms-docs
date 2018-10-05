@@ -31,7 +31,7 @@ Specifies the modes where the AutoCompleteControl fills the history list for the
 </table>
 
 
- ![](AutoComplete-Controls-Images/Overview_img32.jpeg) 
+ ![Multiple Columns](AutoComplete-Controls-Images/Overview_img32.jpeg) 
 
 
 
@@ -111,7 +111,7 @@ Me.autoCompleteDataColumnInfo1.Visible = True
 {% endhighlight %}
 
 
- ![](AutoComplete-Controls-Images/Overview_img33.jpeg) 
+ ![AutoComplete Data Column Properties](AutoComplete-Controls-Images/Overview_img33.jpeg) 
 
 
 Column can be added and matched using external sources also. A sample that demonstrates this feature is available in the following location.

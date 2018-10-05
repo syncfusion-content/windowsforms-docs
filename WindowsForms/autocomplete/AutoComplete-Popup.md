@@ -11,7 +11,7 @@ documentation: ug
 
 When a control is associated with an AutoComplete control, a popup is displayed, based on the source. This section illustrates various components of the AutoComplete Popup with their properties that can control the appearance and behavior of the components.
 
- ![](AutoComplete-Controls-Images/Overview_img13.png) 
+ ![Components of Autocomplete](AutoComplete-Controls-Images/Overview_img13.png) 
 
 
 
@@ -37,7 +37,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 {% endhighlight %}
 
 
- ![](AutoComplete-Controls-Images/Overview_img15.jpeg) 
+ ![Header, Close Button and Gripper](AutoComplete-Controls-Images/Overview_img15.jpeg) 
 
 
 
@@ -173,7 +173,7 @@ Me.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable
 {% endhighlight %}
 
 
- ![](AutoComplete-Controls-Images/Overview_img18.png) 
+ ![Appearance setting](AutoComplete-Controls-Images/Overview_img18.png) 
 
 ### Styles
 
@@ -202,7 +202,7 @@ Me.autoComplete1.Style = AutoCompleteStyle.Office2016Colorful
 
 {%endhighlight%}
 
-![](AutoComplete-Controls-Images/Overview_img37.png)
+![Visual style](AutoComplete-Controls-Images/Overview_img37.png)
 
 ### Header Settings
 
@@ -254,7 +254,7 @@ Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
 {% endhighlight %}
 
 
-![](AutoComplete-Controls-Images/Overview_img20.png) 
+![Header setting](AutoComplete-Controls-Images/Overview_img20.png) 
 
 
 
@@ -362,7 +362,7 @@ Me.autoComplete1.CaseSensitive = True
 
 
 
-![](AutoComplete-Controls-Images/Overview_img23.jpeg) 
+![Casing properties](AutoComplete-Controls-Images/Overview_img23.jpeg) 
 
 
 
@@ -539,5 +539,5 @@ Me.autoComplete1.PreferredWidth = 300
 {% endhighlight %}
 
 
- ![](AutoComplete-Controls-Images/Overview_img24.jpeg)
+ ![Size settings](AutoComplete-Controls-Images/Overview_img24.jpeg)
 
