@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
+title: Overview | GridGrouping Control for Windows Forms | Syncfusion
 description: This section explains the GridGroupingControl.
 platform: windowsforms
 control: GridGroupingControl

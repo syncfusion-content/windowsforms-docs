@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | SfForm Control for WindowsForms | Syncfusion
 description: Overview
 platform: WindowsForms
 control: SfForm

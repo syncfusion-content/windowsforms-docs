@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows
+title: Rows | SfDataGrid Control for Windows Forms | Syncfusion
 description: This section explains about the Rows in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
+title: Overview | Grouping Control Windows Forms | Syncfusion
 description: overview
 platform: WindowsForms
 control: Grouping

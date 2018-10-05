@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
+title: Overview | SfComboBox Control for Windows Forms | Syncfusion
 description: This section explains about the SfComboBox.
 platform: windowsforms
 control: SfComboBox

@@ -7,6 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
+# Styles
 
 ## Styling Record Cell
 

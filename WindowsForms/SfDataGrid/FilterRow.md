@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FilterRow
+title: FilterRow | SfDataGrid Control for Windows Forms | Syncfusion
 description: This section explains about the FilterRow support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

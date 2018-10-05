@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
+title: Overview | GridList Control for Windows Forms | Syncfusion
 description: This section explains about the GridListControl.
 platform: windowsforms
 control: GridListControl

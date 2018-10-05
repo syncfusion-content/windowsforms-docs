@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
+title: Overview | ScrollersFrame Control for Windows Forms | Syncfusion
 description: This section explains about the ScrollersFrame.
 platform: windowsforms
 control: ScrollersFrame

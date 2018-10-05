@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection
+title: Selection | SfDataGrid Control for Windows Forms | Syncfusion
 description: This section explains about the Selection support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
