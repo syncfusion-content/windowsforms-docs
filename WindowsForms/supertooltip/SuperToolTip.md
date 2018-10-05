@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SuperToolTip | WindowsForms | Syncfusion
-description: supertooltip
+description: A tooltip control with customizable appearance and in built themes which enables user to give information using Header, Body and Footer.
 platform: WindowsForms
 control: RibbonControlAdv
 documentation: ug
