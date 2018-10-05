@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intellisense 
+title: Intellisense functionalities in EditControl
 description: This section explains about the intellisense functionalities in EditControl
 platform: WindowsForms
 control: SyntaxEditor
