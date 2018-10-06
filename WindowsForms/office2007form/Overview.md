@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Features overview of Office2007Form for Windows Forms.
+title: Overview of Office2007Form | Windows Forms | Syncfusion
+description: Office2007 Form is Microsoft Office2007 inspired form that supports a wide variety of color schemes, caption bar customization.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The `Office2007Form` is an advanced standard Form that offers Microsoft Office2007 like UI and appearance. It allows the end-user to create Microsoft Office2007 like appealing User Interface in their application. It also supports various built-in Color Schemes and customization options that helps user to control its behavior and appearance.
 
-![](Office2007-Form_images/Office2007Form.png)
+![Microsoft Office2007 inspired form for Windows Forms](Office2007-Form_images/Office2007Form.png)
 
 ## Key features
 

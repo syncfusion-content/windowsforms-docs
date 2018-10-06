@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Wizard control | Windows Forms | Syncfusion
+description: Wizard control provides an interface to create a multi-step wizards like in the installation process. 
 platform: WindowsForms
 control: WizardControl 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl.html) is a rich interactive and customizable interface that holds many pages together that helps to break up a complex task and guides the end user through a set of simple procedures to perform or to obtain data that are categorically divided in every page. It also provides the user, the ability to browse between these pages using the ‘browsing’ buttons.
 
-![](Overview_images/Overview-img1.png)
+![Multiple steps wizard like installation](Overview_images/Overview-img1.png)
 
 
 ## Key features

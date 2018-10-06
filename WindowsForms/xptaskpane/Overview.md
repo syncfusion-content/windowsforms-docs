@@ -1,7 +1,7 @@
 ---
 layout: post
-title: XPTaskPane | WindowsForms | Syncfusion
-description: xptaskpane
+title: Overview of XPTaskPane control | Windows Forms | Syncfusion
+description: XPTaskPane provides an easy access of the commonly used controls in a highly customized format and provides a wide variety of visual style.
 platform: WindowsForms
 control: XPTaskPane 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 [XPTaskPane](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) is an Microsoft Office XP TaskPane inspired container control helps to host a number of [XPTaskPage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPage.html), which the user can browse using a dropdown menu and the arrow buttons in task pane's header portion. 
 
-![](Overview_images/XPtaskPane_img1.png)
+![Microsoft Office XP TaskPane inspired container](Overview_images/XPtaskPane_img1.png)
 
 ## Key features
 

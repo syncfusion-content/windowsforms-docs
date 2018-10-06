@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style  | WindowsForms | Syncfusion
-description: Style 
+description: This section explains about various visual style available in GroupView control for Windows Forms
 platform: WindowsForms
 control: GroupBar
 documentation: ug
@@ -48,7 +48,7 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Default
 
 {% endtabs %}
 
-![](Overview_images/Overview_img133.png)
+![List of items in GroupView](Overview_images/Overview_img133.png)
 
 ## Metro
 
@@ -70,7 +70,7 @@ Me.groupView1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 
 {% endtabs %}
 
-![](Overview_images/Overview_img134.png)
+![Metro style GroupView](Overview_images/Overview_img134.png)
 
 ## Office2016Colorful
 
@@ -98,7 +98,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.Colorful
 
 {% endtabs %}
 
-![](Overview_images/Overview_img136.png)
+![Office2016 Colorful theme GroupView](Overview_images/Overview_img136.png)
 
 ## Office2016White
 
@@ -126,7 +126,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.White
 
 {% endtabs %}
 
-![](Overview_images/Overview_img135.png)
+![Office2016 White theme GroupView](Overview_images/Overview_img135.png)
 
 ## Office2016DarkGray
 
@@ -154,7 +154,7 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.DarkGray
 
 {% endtabs %}
 
-![](Overview_images/Overview_img137.png)
+![Office2016 DarkGray theme GroupView](Overview_images/Overview_img137.png)
 
 ## Office2016Black
 
@@ -182,4 +182,4 @@ Me.groupView1.Office2016ColorScheme = GroupViewOffice2016ColorScheme.Black
 
 {% endtabs %}
 
-![](Overview_images/Overview_img138.png)
+![Office2016 Black theme GroupView](Overview_images/Overview_img138.png)

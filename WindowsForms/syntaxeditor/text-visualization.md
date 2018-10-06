@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Visualization | WindowsForms | Syncfusion
-description: This section explains about the visualization support in EditControl
+description: This section explains about the customizing the lines, collapse and expand the region, bookmark features in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -241,7 +241,7 @@ Me.editControl1.ShowOutliningTooltip = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img1.png)
+![Collapsible region tooltip in syntax editor](Text-Visualization_images/Text-Visualization_img1.png)
 
 The EditControl supports the following outlining tooltip events.
 
@@ -453,7 +453,7 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img15.png)
+![Text wrapped to next line in syntax editor](Text-Visualization_images/Text-Visualization_img15.png)
 
 {% tabs %}
 
@@ -484,7 +484,7 @@ Me.editControl1.WordWrapType = Syncfusion.Windows.Forms.Edit.Enums.WordWrapType.
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img16.png)
+![Word wrapped in syntax editor based on word](Text-Visualization_images/Text-Visualization_img16.png)
 
 **WordWrap margin customization**
 
@@ -554,7 +554,7 @@ Me.editControl1.WordWrapMarginBrush = New Syncfusion.Drawing.BrushInfo(Syncfusio
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img3.png)
+![Margin for word wrap in syntax editor](Text-Visualization_images/Text-Visualization_img3.png)
 
 **Line wrapping images**
 
@@ -610,7 +610,7 @@ Me.editControl1.MarkWrappedLines = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img4.jpeg)
+![Customized line wrapped marker in syntax editor](Text-Visualization_images/Text-Visualization_img4.jpeg)
 
 N> Refer to the following sample link that demonstrates the `WordWrap` functionalities in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Word Wrap
@@ -720,7 +720,7 @@ Me.editControl1.SelectOnLineNumberClick = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img5.jpeg)
+![Display line numbers with customized font in syntax editor](Text-Visualization_images/Text-Visualization_img5.jpeg)
 
 ### Custom draw line number
 
@@ -778,7 +778,7 @@ private Sub EditControl1_BeforeLineNumberPaint(ByVal sender As Object, ByVal e A
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img14.png)
+![Customize line number appearance in syntax editor](Text-Visualization_images/Text-Visualization_img14.png)
 
 #### Line backcolor
 
@@ -879,7 +879,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img25.jpeg)
+![Customized selected text backcolor in syntax editor](Appearance_images/Appearance_img25.jpeg)
 
 ## Remove applied line background color
 
@@ -927,7 +927,7 @@ Me.editControl1.CurrentLineHighlightColor = Color.Orange
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img6.png)
+![Highlight current line in syntax editor](Text-Visualization_images/Text-Visualization_img6.png)
 
 ## Underline
 
@@ -1008,7 +1008,7 @@ Me.editControl1.SetUnderline(New Point(1, 1), New Point(8, 8), format)
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img17.png)
+![Underline text in syntax editor](Text-Visualization_images/Text-Visualization_img17.png)
 
 ### Remove applied underline
 
@@ -1053,7 +1053,7 @@ You can also set the underlining from the configuration file.
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
+![underline error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Strike out
 
@@ -1090,7 +1090,7 @@ Me.editControl1.StrikeThrough(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 To remove the strikethrough line, just call one of the above mentioned functions and specify the Color parameter as Color.Empty.
 
-![](Text-Visualization_images/Text-Visualization_img8.png)
+![Strike out contents in syntax editor](Text-Visualization_images/Text-Visualization_img8.png)
 
 ## Bookmark indicators 
 
@@ -1211,7 +1211,7 @@ Dim bookmark As IBookmark = Me.EditControl1.BookmarkGet(Me.EditControl1.CurrentL
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img18.png)
+![Break points with code editing in syntx editor](Text-Visualization_images/Text-Visualization_img18.png)
 
 ### Custom bookmark indicator
 
@@ -1271,7 +1271,7 @@ Dim customBookmark As ICustomBookmark = Me.editControl1.RemoveCustomBookmark(Me.
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img9.png)
+![Bookmark indicators in syntax editor](Text-Visualization_images/Text-Visualization_img9.png)
 
 **Setting tooltips for bookmarks**
 
@@ -1307,7 +1307,7 @@ End Sub
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img19.png)
+![Tooltip for bookmark indicators in syntax editor](Text-Visualization_images/Text-Visualization_img19.png)
 
 Tooltip background and border color can be customized by using the [BookmarkTooltipBackgroundBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBackgroundBrush.html) and [BookmarkTooltipBorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~BookmarkTooltipBorderColor.html) properties in the EditControl.
 
@@ -1348,7 +1348,7 @@ Me.editControl1.BookmarkTooltipBorderColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img20.png)
+![Customize tooltip background and foreground for bookmark indicator](Text-Visualization_images/Text-Visualization_img20.png)
 
 N> Refer to the following sample link that demonstrates the bookmark functionalities in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Product Showcase\VisualStudioDemo
@@ -1357,7 +1357,7 @@ C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\Windows\
 
 Supports content dividers similar to Visual Studio code editor that clearly distinguish content sections with line dividers to improve the code readability. Content Dividers can be enabled or disabled by using the [ShowContentDividers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowContentDividers.html) property in the EditControl. Its default value is `true`.
 
-![](Text-Visualization_images/Text-Visualization_img11.png)
+![Content dividers in syntax editor](Text-Visualization_images/Text-Visualization_img11.png)
 
 This feature can be enabled for sections of the EditControl contents by setting the `ContentDivider` field to  `true` within its lexem definition in the configuration file. 
 
@@ -1455,7 +1455,7 @@ Me.editControl1.ColumnGuidesMeasuringFont = New Font("Microsoft Sans Serif",12)
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img12.png)
+![Column dividers in syntax editor](Text-Visualization_images/Text-Visualization_img12.png)
 
 ## Bracket highlighting 
 
@@ -1482,4 +1482,4 @@ Me.editControl1.OnlyHighlightMatchingBraces = True
 
 {% endtabs %}
 
-![](Text-Visualization_images/Text-Visualization_img13.png)
+![Bracket highlighting as like visual studio in syntax editor](Text-Visualization_images/Text-Visualization_img13.png)

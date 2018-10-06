@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview  | WindowsForms | Syncfusion
-description: overview 
+title: Overview of Layout control for Windows Forms
+description: Overview section of layout manager explains about various layout controls available in Windows Forms
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug
@@ -32,9 +32,7 @@ This Layout Manager will layout Child controls in the form of a grid containing 
 
 This Layout Manager will layout the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns / rows can be varied and the children may span more than one cell.
 
-![](Overview_images/Overview_img1.jpeg)
-
-
+![Layout manager components for Windows Forms](Overview_images/Overview_img1.jpeg)
 
 ## Container control
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BorderLayout | WindowsForms | Syncfusion
-description: borderlayout
+description: BorderLayout allows user to arrange and layout the child controls along the borders similar to framework’s built-in docking support.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -10,11 +10,11 @@ documentation: ug
 
 `BorderLayout` is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
 
-![](Overview_images/Overview_img15.jpeg)
+![Layout manager to dock controls at different sides](Overview_images/Overview_img15.jpeg)
 
 N> BorderLayout does not arrange the Child components automatically like the other Layout Managers.
 
-# Key features
+## Key features
 
 **Spacing** - Provides option to customize horizontal and vertical gaps between child controls
 
@@ -22,7 +22,7 @@ N> BorderLayout does not arrange the Child components automatically like the oth
 
 **Size** - Provides option to  customize the size of the child controls in BorderLayout.
 
-# Getting started
+**Getting started**
 
 This section describes how to add `BorderLayout` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -34,7 +34,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with BorderLayout
+**Creating simple application with BorderLayout**
 
 You can create the Windows Forms application with BorderLayout control as follows:
 
@@ -42,7 +42,7 @@ You can create the Windows Forms application with BorderLayout control as follow
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the BorderLayout with basic functionalities.
 
@@ -53,19 +53,19 @@ The BorderLayout control can be added to the application by dragging it from the
 * Syncfusion.Shared.Base.dll
 
 
-![](BorderLayout_images/BorderLayout_img3.png)
+![Drag and drop BorderLayout from toolbox](BorderLayout_images/BorderLayout_img3.png)
 
 
 To add the form as a Container control of the BorderLayout, click `Yes` in a popup form which appears automatically before BorderLayout gets added.
 
-![](BorderLayout_images/BorderLayout_img4.png)
+![Alert to add BorderLayout to form](BorderLayout_images/BorderLayout_img4.png)
 
 
 **Adding layout components**
 
 The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
 
-![](BorderLayout_images/BorderLayout_img5.png)
+![Adding controls into BorderLayout](BorderLayout_images/BorderLayout_img5.png)
 
 ## Adding control manually using code
 
@@ -202,7 +202,7 @@ Me.borderLayout1.VGap = 10
 
 {% endtabs %}
 
-![](Overview_images/Overview_img17.jpeg)
+![Aligning with space between child controls](Overview_images/Overview_img17.jpeg)
 
 
 ## Configuring Child controls
@@ -245,12 +245,12 @@ Me.borderLayout1.SetPosition(Me.btnNorth, Syncfusion.Windows.Forms.Tools.BorderP
 
 {% endtabs %}
 
-![](BorderLayout_images/BorderLayout_img1.png)
+![Aligning child control at different position](BorderLayout_images/BorderLayout_img1.png)
  
 Setting the position of button1 on BorderLayout to "North"
 {:.caption}
  
-![](BorderLayout_images/BorderLayout_img2.png)
+![Aligning button at north relative to container](BorderLayout_images/BorderLayout_img2.png)
  
 Layout of all Button Controls using BorderLayout
 {:.caption}

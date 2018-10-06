@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Features overview of TabControlAdv for Windows Forms.
+title: Overview of TabControlAdv control | Windows Forms | Syncfusion
+description: TabControlAdv displays multiple tabs to arrange content in a organized form in less space. It supports tab groups, close button for tabs, re-ordering, etc.,
 platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The `TabControlAdv` is an advanced form of standard TabControl that enables an end-user to arrange visual content in a compacted and organized form in less space. It has many efficient features like standard TabControl, along with plenty of appearance customization and configuration capabilities. 
 
-![](Overview_images/Overview.png)
+![TabControlAdv for Windows Forms with multiline and reorder support](Overview_images/Overview.png)
 
 ## Key features
 

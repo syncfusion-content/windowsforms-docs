@@ -21,7 +21,7 @@ Find more details about how to install the nuget packages in Windows Forms appli
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with docking manager
+**Creating simple application with docking manager**
 
 You can create the Windows Forms application with docking manager control as follows:
 
@@ -34,7 +34,7 @@ You can create the Windows Forms application with docking manager control as fol
 7. [Make MDI child](#make-mdi-child)
 8. [Serialize Dock windows](#serialize-dock-windows)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using the docking manager.
 
@@ -49,7 +49,7 @@ To add the docking manager control to an application, drag it from the toolbox a
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-   ![](GettingStarted_images/gettingstarted.png)
+   ![Drag and drop DockingManager from toolbox](GettingStarted_images/gettingstarted.png)
 
 ## Adding control manually in code
 
@@ -166,7 +166,7 @@ Me.dockingManager1.SetEnableDocking(panel4, True)
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![Dock multiple windows in DockingManager without header](GettingStarted_images/GettingStarted_img1.jpeg)
 
 ### Identify whether the panel is docking or not
 
@@ -225,7 +225,7 @@ Me.dockingManager1.SetDockLabel(panel4, "Output");
 
 {% endtabs %}
 
-![](GettingStarted_images/DockLabel.png)
+![Dock multiple windows in DockingManager with caption](GettingStarted_images/DockLabel.png)
 
 #### Get label of the dock panel
 
@@ -278,7 +278,7 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img5.jpg)
+![Dock window at top side of DockingManager container](GettingStarted_images/GettingStarted_img5.jpg)
 
 To float the control, use the following code snippet.
 
@@ -307,7 +307,7 @@ Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, 
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![Window floating around the form in DockingManager](GettingStarted_images/GettingStarted_img3.jpeg)
 
 To auto hide the control, use the following code snippet.
 
@@ -331,7 +331,7 @@ Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide stat
 
 {% endtabs %}
 
-![](AutoHidden-Window_images/AutoHidden-Window_img3.png)
+![Autohide dock windows to sides relative to container](AutoHidden-Window_images/AutoHidden-Window_img3.png)
 
 ## Change dock side
 
@@ -376,7 +376,7 @@ Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.jpeg)
+![Dock window over another window in DockingManager](GettingStarted_images/GettingStarted_img4.jpeg)
 
 ## Make MDI child
 
@@ -384,7 +384,7 @@ The [SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncf
 
 N> To enable MDI functionalities in the docking manager, the `IsMdIContainer` property of its parent form should be `true`.
 
-![](GettingStarted_images/GettingStarted_img6.png)
+![Option to make MDI forms in DockingManager](GettingStarted_images/GettingStarted_img6.png)
 
 {% tabs %}
 
@@ -411,7 +411,7 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img7.png) 
+![Multiple document interface in DockingManager](GettingStarted_images/GettingStarted_img7.png) 
 
 ## Serialize dock windows
 

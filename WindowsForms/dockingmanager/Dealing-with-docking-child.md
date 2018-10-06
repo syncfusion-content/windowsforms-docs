@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with docking child | WindowsForms | Syncfusion
-description: Dealing with docking child
+description: This section explains about resizing, positioning and customizing the visibility of caption button of docking child windows
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -115,7 +115,7 @@ Me.dockingManager1.DockControl(Me.panel1, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img7.png)
+![Change the width for dock window in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img7.png)
 
 ## Size constraint for dock children
 
@@ -177,7 +177,7 @@ Me.dockingManager1.SetDockAbility(Me.panel1, "Top")
 
 {% endtabs %}  
 
-![](Dock_Window_images/Dock_Window_img6.png)
+![Restrict to dock at right and bottom side in DockingManager](Dock_Window_images/Dock_Window_img6.png)
 
 ### Outer dock ability
  
@@ -200,7 +200,7 @@ Me.dockingManager1.SetOuterDockAbility(panel1, Syncfusion.Windows.Forms.Tools.Do
 
 {% endtabs %}
 
-![](Float_Window_images/Float_Window_img2.png)
+![Restrict dock windows to dock at horizontal orientation in DockingManager](Float_Window_images/Float_Window_img2.png)
 
 ## Tooltip for caption buttons
 
@@ -245,7 +245,7 @@ Me.dockingManager1.GetCloseButtonToolTip()
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img2.png)
+![Close button tooltip of dock windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img2.png)
 
 ### Super tooltip
 
@@ -284,11 +284,11 @@ Me.dockingManager1.SuperToolTip = Me.superToolTip1
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img3.png) 
+![Super tooltip for dock windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img3.png) 
 
 Text for the SuperToolTip and other customizing options can be specified for a particular button by using the CaptionButton Collection Editor.
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img6.png) 
+![Super tooltip customization of dock windows](Dealing-with-Windows_images/Dealing-with-Windows_img6.png) 
 
 ### Change tooltip interval
 
@@ -332,13 +332,13 @@ Me.dockingManager1.UseBalloonStyleToolTip = True
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img4.png) 
+![Ballon tooltip for dock windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img4.png) 
 
 ### Show/hide tooltip
 
 You can show or hide the tooltip in docked, tabbed, and auto hide windows using the [ShowToolTips](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ShowToolTips.html) property. The default value of this property is `true`. To hide the tooltip, set the ShowToolTips property to `false`.
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
+![Tooltip for dock windows in DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img5.png)
 
 N> The [EnableSuperTooltip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableSuperToolTip.html) property should be set to `false` to effect the above default tooltip.
 
@@ -422,7 +422,7 @@ End Sub
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/Dealing-with-Windows_img1.png) 
+![Collapsed close button from dock window caption](Dealing-with-Windows_images/Dealing-with-Windows_img1.png) 
 
 ## Remove context menu for particular control
 
@@ -449,7 +449,7 @@ Me.dockingManager1.GetMenuButtonVisibility(Me.panel1) 'true when button is visib
 
 {% endtabs %}
 
-![](Dealing-with-Windows_images/RemoveMenuButton.png)
+![Hide context menu button from dock windows caption](Dealing-with-Windows_images/RemoveMenuButton.png)
 
 ## Remove particular menu item from context menu
 
@@ -457,6 +457,6 @@ Context menu items in the dock window caption can be customized using the [DockC
 
 {% seealso %}
  
-[Remove particular menu item from context menu.](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#remove-specific-default-menu-item-from-context-menu)
+[Removed menu button from caption in particular dock window](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#remove-specific-default-menu-item-from-context-menu)
 
 {% endseealso %}
