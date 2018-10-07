@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout Manager Settings | WindowsForms | Syncfusion
-description: Layout Manager Settings
+description: This section explains about the layout manager settings common to all layout controls for Windows Forms
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug
@@ -185,7 +185,7 @@ Me.borderLayout1.BottomMargin = 20
 
 {% endtabs %}
 
-![](Overview_images/Overview_img11.jpeg)
+![Child controls arranged with margin in layout manager](Overview_images/Overview_img11.jpeg)
 
 
 
@@ -291,7 +291,7 @@ You can also dynamically provide preferred and minimum size information for a Ch
 * If the above step fails, the Layout Manager fires the ProvideLayoutInformation event, requesting the size information required. If the event is handled and the information provided, that size will be used.
 * If the above step fails, the Layout Manager checks if a preferred size was provided statically during design time using the extended PreferredSize property or in code using the SetPreferredSize() method. If so, that size is used. If not, the current size of the Child control is made the preferred size and that size will be used.
 
-![](Overview_images/Overview_img12.jpeg)
+![Child control arrangement architecture in layout manager](Overview_images/Overview_img12.jpeg)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Child controls alignments
-description: Align the child controls horizontally or vertically
+description: This section explains about aligning the child controls horizontally or vertically using the child constraints
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -30,7 +30,7 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 {% endtabs %}
 
-![](Overview_images/Overview_img46.jpeg)
+![Align the child controls horizontally in single row](Overview_images/Overview_img46.jpeg)
 
 
 
@@ -38,7 +38,7 @@ When the ProportionalRowHeight property is set to 'True', any extra space at the
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
-![](Overview_images/Overview_img47.jpeg)
+![Align the child controls in multiple rows](Overview_images/Overview_img47.jpeg)
 
 
 

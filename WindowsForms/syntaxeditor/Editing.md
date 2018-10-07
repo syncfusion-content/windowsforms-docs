@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing functionalities in EditControl
-description: This section explains about the editing support in EditControl
+title: Editing functionalities in EditControl | Windows Forms | Syncfusion
+description: This section explains about clipboard operations, unicode, comment and uncomment functionalities available in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -166,7 +166,7 @@ Me.editControl1.ClearClipboard()
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img1.png)
+![Editing operation in syntax editor](Editing-Features_images/Editing-Features_img1.png)
 
 ### Cryptography 
 
@@ -253,7 +253,7 @@ Dim canRedo as bool = Me.editControl1.CanRedo
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img2.png)
+![Undo and redo operation in syntax editor](Editing-Features_images/Editing-Features_img2.png)
 
 ### Grouping actions
 
@@ -441,7 +441,7 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Def
 
 {% endtabs %}   
    
-![](Editing-Features_images/Editing-Features_img3.png)
+![Select content in syntax editor](Editing-Features_images/Editing-Features_img3.png)
 
 ### Programmatic selection
 
@@ -468,7 +468,7 @@ Me.editControl1.SelectAll()
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img20.png)
+![Select all the content in syntax editor](Editing-Features_images/Editing-Features_img20.png)
 
 The following code snippet demonstrates how to select the text using `StartSelection` and `StopSelection` functions in the EditControl.
 
@@ -491,7 +491,7 @@ Me.editControl1.StopSelection(20, 20)
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img23.png)
+![Select content from specific row and column position of lines in syntax editor](Editing-Features_images/Editing-Features_img23.png)
      
 ### Block   
 
@@ -518,13 +518,13 @@ Me.editControl1.SelectionMode = Syncfusion.Windows.Forms.Edit.SelectionModes.Blo
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img4.png)
+![Select block of contents in syntax editor](Editing-Features_images/Editing-Features_img4.png)
 
 ## Text handling
 
 The EditControl offers support for text manipulation operations like appending, deleting, and inserting multiple lines of the text.
 
-![](Editing-Features_images/Editing-Features_img5.jpeg)
+![Append text in syntax editor](Editing-Features_images/Editing-Features_img5.jpeg)
 
 ### Total number of lines
 
@@ -1055,15 +1055,15 @@ Me.editControl1.AutoIndentMode = Syncfusion.Windows.Forms.Edit.Enums.AutoIndentM
 
 If Enter is pressed when the AutoIndentMode is set to None, the text is not indented.
 
-![](Editing-Features_images/Editing-Features_img6.png)
+![Create new line with no indent in syntax editor](Editing-Features_images/Editing-Features_img6.png)
 
 When the AutoIndentMode is set to Smart, the next line is indented by one TabSize from the first column of the previous line on pressing Enter.
 
-![](Editing-Features_images/Editing-Features_img7.png)
+![Create new line with tab size indent in syntax editor](Editing-Features_images/Editing-Features_img7.png)
 
 When the AutoIndentMode is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
 
-![](Editing-Features_images/Editing-Features_img8.png)
+![Create new line with indent in previous line](Editing-Features_images/Editing-Features_img8.png)
 
 **Lexem support for AutoIndent block mode**
 
@@ -1183,7 +1183,7 @@ Me.editControl1.ShowIndentationBlockBorders = True
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img9.png)
+![Customized indent borders in syntax editor](Editing-Features_images/Editing-Features_img9.png)
 
 ## Commands
 
@@ -1785,7 +1785,7 @@ Provides a built-in context menu options to perform editing operations like undo
 
 Context menu is enabled by using the [editControl1.ContextMenuManager.Enabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Implementation.ContextMenuManager~Enabled.html) property. The ContextMenu can be enabled or disabled by using the [ContextMenuEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ContextMenuEnabled.html) property in EditControl. Its default value is `true`. 
 
-![](Editing-Features_images/Editing-Features_img10.png)
+![Context menu option for edit and file operation in syntax editor](Editing-Features_images/Editing-Features_img10.png)
 
 Set the appearance of the context menu by specifying the desired ContextMenuProvider.
 
@@ -1898,7 +1898,7 @@ Context menu item can be disabled by using the `SetContextMenuItemEnabled` funct
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img21.png)
+![Disable edit opeartions in context menu of syntax editor](Editing-Features_images/Editing-Features_img21.png)
 
 ### Change shortcut key for context menu options
 
@@ -2048,7 +2048,7 @@ End Sub
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img11.png)
+![Add user defined custom menu item in context menu of syntax editor](Editing-Features_images/Editing-Features_img11.png)
 
 ## Line modification marker
 
@@ -2075,7 +2075,7 @@ Me.editControl1.ShowSelectionMargin = true
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img12.jpg)
+![Modifed lines highlighted with yellow color and green color based saved and unsaved lines](Editing-Features_images/Editing-Features_img12.jpg)
 
 ### Modified line marker color
 
@@ -2098,7 +2098,7 @@ Me.editControl1.ChangedLinesMarkingLineColor = Color.Red
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img18.png)
+![Modified lines marked with red color in syntax editor](Editing-Features_images/Editing-Features_img18.png)
 
 ### Saved line marker color
 
@@ -2121,7 +2121,7 @@ Me.editControl1.SavedLinesMarkingLineColor = Color.Orange
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img19.png)
+![Modified lines which saved already marked with orange color in syntax editor](Editing-Features_images/Editing-Features_img19.png)
 
 ## Comment out lines
 
@@ -2310,7 +2310,7 @@ Me.editControl1.ToggleShowingWhiteSpaces()
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img13.png)
+![Showing white spaces in syntax editor](Editing-Features_images/Editing-Features_img13.png)
 
 **Showing or hiding indicators**
 
@@ -2432,7 +2432,7 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 {% endtabs %}
 
-![](Editing-Features_images/Editing-Features_img22.png)
+![Indicate new line, space, tab with user defined characters in syntax editor](Editing-Features_images/Editing-Features_img22.png)
 
 ## Unicode
 
@@ -2440,7 +2440,7 @@ Me.editControl1.WhiteSpaceIndicators.SpaceChar = "s"
 
 The following screenshot illustrates the use of Chinese, Arabic, Hindi, Russian, and Greek text in the EditControl.
 
-![](Editing-Features_images/Editing-Features_img14.jpeg)
+![Encode the text of syntax editor with unicode](Editing-Features_images/Editing-Features_img14.jpeg)
 
 N> Refer to the following sample link that demonstrates the `Unicode` support in EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Text Operations\Unicode

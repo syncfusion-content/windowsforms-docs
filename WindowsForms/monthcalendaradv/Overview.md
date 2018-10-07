@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion MonthCalendarAdv for Windows Forms
-description: An overview about the MonthCalendarAdv and its key features like multiple selection, ContextMenu, Globalization and Visual style
+title: Overview of MonthCalendarAdv control | Windows Forms | Syncfusion
+description: Overview section of MonthCalendarAdv control for Windows Forms provides details about its essential features
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
  [MonthCalendar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) is a control that allows you to select a date from the calendar and various customization options for the calendar. Supports rich user interface options such as multiple selection, ContextMenu, Globalization and much more.
 
-![Overview of MonthCalendarAdv](CalendarDateTime_images/MonthCalenderAdv-img1.png)
+![Month calendar for Windows forms](CalendarDateTime_images/MonthCalenderAdv-img1.png)
 
 ## Key features
 

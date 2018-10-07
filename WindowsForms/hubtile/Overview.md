@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of HubTile control | Windows Forms | Syncfusion
+description: HubTile control provides notifications to your application similar to windows live tiles with different animation & selection modes.
 platform: WindowsForms
 control: HubTile
 documentation: ug

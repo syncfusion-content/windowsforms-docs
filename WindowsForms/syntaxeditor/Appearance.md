@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of EditControl for Windows Forms
-description: Customize the Text, Margin, Scrollbar and Splitters
+title: Customization of EditControl | Windows Forms | Syncfusion
+description: This section explains about customizing the text, margin, scroll bars and splitters available in EditControl 
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -28,7 +28,7 @@ Me.editControl1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Dr
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.jpg)
+![Gradient background syntax editor](Appearance_images/Appearance_img1.jpg)
 
 The customization features of the [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) are discussed in the following topics.
 
@@ -55,7 +55,7 @@ Me.editControl1.SplitFourQuadrants()
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.jpg)
+![Multiple split view Syntax editor](Appearance_images/Appearance_img2.jpg)
 
 ### Orientation
 
@@ -78,7 +78,7 @@ Me.editControl1.SplitHorizontally()
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img27.png)
+![Horizontal split view syntax editor](Appearance_images/Appearance_img27.png)
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ Me.editControl1.SplitVertically()
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img26.png)
+![Vertical split view syntax editor](Appearance_images/Appearance_img26.png)
 
 
 ## Customize split views
@@ -179,7 +179,7 @@ Me.editControl1.SplitterBackgroundBrush = Brushes.Red
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.jpg)
+![Syntax editor split by horizontal and vertical by red color splitter](Appearance_images/Appearance_img3.jpg)
 
 ### Splitter position
 
@@ -255,7 +255,7 @@ Me.editControl1.SingleLineMode = True
 
 N> The SingleLineMode is intended to use when the EditControl contains small amount of text data in it. Using it in a scenario where the EditControl has huge file loaded into it, may lead to poor performance.
 
-![](Appearance_images/Appearance_img4.jpg)
+![Single line syntax editor](Appearance_images/Appearance_img4.jpg)
 
 N> Refer to the following sample link that demonstrates the `SingleLineMode` behavior of EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Styles\Single Line Mode
@@ -285,7 +285,7 @@ Me.editControl1.RenderRightToLeft = True
 
 With RTL support, you can use the EditControl to render the content in Right-To-left layout for languages such as Arabic.
 
-![](Appearance_images/Appearance_img5.jpg)
+![Right to left syntax editor](Appearance_images/Appearance_img5.jpg)
 
 ### Change Right-to-Left layout by keyboard
 
@@ -320,7 +320,7 @@ Me.editControl1.SetTextColor(New Point(1, 1), New Point(8, 8), Color.Orange)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img24.png)
+![Customized text color in syntax editor](Appearance_images/Appearance_img24.png)
 
 ### Text border
 
@@ -362,7 +362,7 @@ Me.editControl1.SetTextBorder(New Point(1, 1), New Point(3, 3), Color.Red, Frame
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img23.png)
+![Border around text in syntax editor](Appearance_images/Appearance_img23.png)
 
 ## User margin
 
@@ -537,7 +537,7 @@ End Sub
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img6.jpg)
+![Add custom text to left margin of syntax editor](Appearance_images/Appearance_img6.jpg)
 
 ## Selection margin
 
@@ -614,7 +614,7 @@ Me.editControl1.SelectionMarginWidth = 100
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img7.jpg)
+![Customize selection margin of synax editor](Appearance_images/Appearance_img7.jpg)
 
 ## Indicator margin
 
@@ -653,7 +653,7 @@ Me.editControl1.MarkerAreaWidth = 50
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img8.png)
+![Customize the margin width in syntax editor](Appearance_images/Appearance_img8.png)
 
 ### Customize the appearance of indicator margin
 
@@ -676,7 +676,7 @@ Me.editControl1.IndicatorMarginBackColor = Color.Red
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img9.png)
+![Customize margin color of syntax editor](Appearance_images/Appearance_img9.png)
 
 ## Selection color customization
 
@@ -743,7 +743,7 @@ Me.editControl1.SetSelectionBackColor(format)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img25.jpeg)
+![Change backcolor for selected text](Appearance_images/Appearance_img25.jpeg)
 
 #### Remove applied background for individual line or selected block of text
 
@@ -858,7 +858,7 @@ Me.editControl1.StatusBarSettings.GripVisibility = Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img12.png)
+![Status bar in syntax editor](Appearance_images/Appearance_img12.png)
 
 #### Visibility settings
 
@@ -936,7 +936,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img13.png)
+![Status bar for syntax editor](Appearance_images/Appearance_img13.png)
 
 ##### Metro
 
@@ -962,7 +962,7 @@ Me.editControl1.StatusBarSettings.VisualStyle = Syncfusion.Windows.Forms.Tools.C
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img14.png)
+![Metro theme status bar for syntax editor](Appearance_images/Appearance_img14.png)
 
 ##### Office2007Blue
 
@@ -992,7 +992,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Blue
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img15.png)
+![Office2007 blue theme status bar for syntax editor](Appearance_images/Appearance_img15.png)
 
 ##### Office2007Black
 
@@ -1022,7 +1022,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Black
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img16.png)
+![Office2007 black theme status bar for syntax editor](Appearance_images/Appearance_img16.png)
 
 ##### Office2007Silver
 
@@ -1052,7 +1052,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Silver
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img17.png)
+![Office2007 silver theme status bar for syntax editor](Appearance_images/Appearance_img17.png)
 
 ##### Office2007Managed
 
@@ -1082,7 +1082,7 @@ Me.editControl1.StatusBarSettings.Offcie2007ColorScheme = Office2007Theme.Manage
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img18.png)
+![Office2007 theme status bar for syntax editor](Appearance_images/Appearance_img18.png)
 
 ##### Office2010Blue
 
@@ -1112,7 +1112,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Blue
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img19.png)
+![Office2010 blue theme status bar for syntax editor](Appearance_images/Appearance_img19.png)
 
 ##### Office2010Black
 
@@ -1142,7 +1142,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Black
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img20.png)
+![Office2010 black theme status bar for syntax editor](Appearance_images/Appearance_img20.png)
 
 ##### Office2010Silver
 
@@ -1172,7 +1172,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Silver
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img21.png)
+![Office2010 silver theme status bar for syntax editor](Appearance_images/Appearance_img21.png)
 
 ##### Office2010Managed
 
@@ -1202,7 +1202,7 @@ Me.editControl1.StatusBarSettings.Offcie2010ColorScheme = Office2010Theme.Manage
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img22.png)
+![Office2010 customized theme status bar for syntax editor](Appearance_images/Appearance_img22.png)
 
 N> Refer to the following sample link that demonstrates the `StatusBar` functionalities of EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\StatusBar
@@ -1357,7 +1357,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 The following illustration shows the EditControl with custom color (green) set for the scroll bars.
 
-![](Appearance_images/Appearance_img23.jpg)
+![Horizontal and vertical scrollbar for syntax editor](Appearance_images/Appearance_img23.jpg)
 
 ## Append code snippets
 
@@ -1367,7 +1367,7 @@ Supports an advanced feature of VS 2005 like Code Snippets. It is also used to l
 2. Press the CTRL + ' combination.
 3. Select an item from the list.
 
-![](Appearance_images/Appearance_img25.png)
+![Append code snippet in syntax editor from Intellisense](Appearance_images/Appearance_img25.png)
 
 The code snippets allows you to input the data to the highlighted fields.
 

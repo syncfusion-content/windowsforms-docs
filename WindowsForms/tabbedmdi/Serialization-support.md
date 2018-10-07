@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization-support | WindowsForms | Syncfusion
-description: serialization support
+description: This section explains about how to serialize and de-serialize the tab groups in different available formats
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug

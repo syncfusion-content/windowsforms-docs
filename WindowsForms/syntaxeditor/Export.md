@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export to various type of file format in EditControl
-description: This section explains about the exporting various file formats in EditControl
+title: Export to various type of file format in EditControl | Windows Forms | Syncfusion
+description: This section provide details about exporting EditControl content to XML, HTML, and RTF file formats
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -273,4 +273,4 @@ Dim bmp as Bitmap = Me.editControl1.CreateBitmap()
 
 {% endtabs %}
 
-![](Export_images/Export_img1.jpeg)
+![Bitmap of syntax editor](Export_images/Export_img1.jpeg)
