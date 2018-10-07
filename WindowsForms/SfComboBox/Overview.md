@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | ComboBox | Syncfusion
-description: This section explains about the SfComboBox.
+description: This section explains about the advanced combobox control for windows forms and it's important key features
 platform: windowsforms
 control: SfComboBox
 documentation: ug

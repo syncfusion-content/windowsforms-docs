@@ -1,7 +1,7 @@
 ---
 layout: post
 title: QTP/UFT for Syncfusion Essential WindowsForms
-description: This section explains about the UFT/QTP.
+description: This section explains about the how to create a simple test with TreeViewAdv and supported windows forms controls
 platform: WindowsForms
 control: Testing
 documentation: ug

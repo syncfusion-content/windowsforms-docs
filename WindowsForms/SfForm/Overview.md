@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Form | Syncfusion
-description: Overview
+description: This section explains about the form control for windows forms and it's important key features such as title bar and MDI form support
 platform: WindowsForms
 control: SfForm
 documentation: ug

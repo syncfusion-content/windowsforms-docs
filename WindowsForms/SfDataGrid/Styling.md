@@ -1,7 +1,7 @@
 ---
 layout: post
 title: styling
-description: This section explains about the Styling in SfDataGrid.
+description: This section explains about the styling customization of elements in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | ListView | Syncfusion
-description: This section explains about the SfListView.
+description: This section explains about the listview control for windows forms and it's important key features such as data binding, selection and etc
 platform: windowsforms
 control: SfListView
 documentation: ug

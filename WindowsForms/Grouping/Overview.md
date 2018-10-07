@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Grouping | Syncfusion
-description: overview
+description: This section explains about the grouping library for windows forms and it's important key features such as grouping, expression and etc
 platform: WindowsForms
 control: Grouping
 documentation: ug

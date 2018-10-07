@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Spreadsheet
-description: Overview and the features that are supported in Spreadsheet
+description: This section explains about the spreadsheet control for windows forms and it's important key features
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

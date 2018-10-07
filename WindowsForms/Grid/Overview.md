@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Grid Control | Syncfusion
-description: This section explains the GridControl.
+description: This section explains about the excel like grid control for windows forms and it's important key features
 platform: windowsforms
 control: GridControl
 documentation: ug

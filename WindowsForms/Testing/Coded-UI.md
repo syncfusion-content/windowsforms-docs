@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Steps to perform Coded UI Automation testing for Syncfusion Essential Windows Forms controls  
-description: Getting Started for Coded UI
+title: Coded UI Testing | Windows Forms |Syncfusion
+description: This section explains about the spreadsheet control for windows forms and it's important key features
 platform: WindowsForms
 control: Coded UI
 documentation: ug

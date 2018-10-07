@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deployment process for Syncfusion Essential Studio Windows Forms products
+title: Assembly deployment | Windows Forms | Syncfusion
 description: Deployment
 platform: WindowsForms
 control: Deployment

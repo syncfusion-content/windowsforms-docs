@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Scheduler | Syncfusion
-description: overview
+description: This section explains about the how to add schedling support to your applications
 platform: windowsforms
 control: Schedule
 documentation: ug

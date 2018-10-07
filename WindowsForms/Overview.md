@@ -164,7 +164,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[XlsIO](https://help.syncfusion.com/file-formats/xlsio)'| markdownify }}
 </td>
 <td>
-{{'[Radial Gauge](https://help.syncfusion.com/windowsforms/radial-gauge)'| markdownify }}
+{{'[Radial Gauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)'| markdownify }}
 </td>
 <td>
 {{'[DockingManager](https://help.syncfusion.com/windowsforms/dockingmanager)'| markdownify }}
@@ -195,7 +195,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Digital Gauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)'| markdownify }}
 </td>
 <td>
-{{'[GroupView](https://help.syncfusion.com/windowsforms/groupview)'| markdownify }}
+{{'[GroupView](https://help.syncfusion.com/windowsforms/groupview/overview)'| markdownify }}
 </td>
 <td>
 {{'[FontComboBox](https://help.syncfusion.com/windowsforms/fontcombobox)'| markdownify }}
@@ -223,10 +223,10 @@ In case you are unable to find the information that you are looking for in the s
 {{'**NOTIFICATION**'| markdownify }}
 </td>
 <td>
-{{'[TreeView](https://help.syncfusion.com/windowsforms/treeviewadv)'| markdownify }}
+{{'[TreeView](https://help.syncfusion.com/windowsforms/treeview/overview)'| markdownify }}
 </td>
 <td>
-{{'[ColorUI](https://help.syncfusion.com/windowsforms/coloruicontrol)'| markdownify }}
+{{'[ColorUI](https://help.syncfusion.com/windowsforms/colorui/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -251,7 +251,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[ProgressBarAdv](https://help.syncfusion.com/windowsforms/progressbaradv)'| markdownify }}
 </td>
 <td>
-{{'[GroupBar](https://help.syncfusion.com/windowsforms/groupbar)'| markdownify }}
+{{'[GroupBar](https://help.syncfusion.com/windowsforms/groupbar/overview)'| markdownify }}
 </td>
 <td>
 {{'[EditableList](https://help.syncfusion.com/windowsforms/editablelist)'| markdownify }}
@@ -329,7 +329,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[Border Layout](https://help.syncfusion.com/windowsforms/borderlayout)'| markdownify }}
+{{'[Border Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/borderlayout)'| markdownify }}
 </td>
 <td>
 {{'[AutoLabel](https://help.syncfusion.com/windowsforms/autolabel)'| markdownify }}
@@ -371,7 +371,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[Grid Bag Layout](https://help.syncfusion.com/windowsforms/gridbaglayout)'| markdownify }}
+{{'[Grid Bag Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/gridbaglayout)'| markdownify }}
 </td>
 <td>
 {{'[GradientLabel](https://help.syncfusion.com/windowsforms/gradientlabel)'| markdownify }}
@@ -419,7 +419,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip)'| markdownify }}
 </td>
 <td>
-{{'[GridRecordNavigationControl](https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol)'| markdownify }}
+{{'[GridRecordNavigationControl](https://help.syncfusion.com/windowsforms/gridrecordnavigation/overview)'| markdownify }}
 </td>
 <td>
 {{'[Multiselection ComboBox](https://help.syncfusion.com/windowsforms/multiselectioncombobox)'| markdownify }}
@@ -576,7 +576,7 @@ In case you are unable to find the information that you are looking for in the s
 
 </td>
 <td>
-{{'[Rating](https://help.syncfusion.com/windowsforms/ratingcontrol)'| markdownify }}
+{{'[Rating](https://help.syncfusion.com/windowsforms/rating/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

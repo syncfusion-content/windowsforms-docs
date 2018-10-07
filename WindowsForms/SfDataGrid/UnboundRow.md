@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Row
-description: This section explains about the unbound row support in SfDataGrid.
+description: This section explains about the unbound row feature and it's customization in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
