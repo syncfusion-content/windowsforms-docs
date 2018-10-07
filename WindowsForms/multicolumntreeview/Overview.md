@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion MultiColumnTreeView for Windows Forms
+description: An overview about the MultiColumnTreeView and its key features like Styles Architecture, adding Columns and sub items, LabelEdit etc.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug

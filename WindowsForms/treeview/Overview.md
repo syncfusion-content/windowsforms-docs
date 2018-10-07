@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion TreeViewAdv for Windows Forms
+description: An overview about the TreeViewAdv and its features like drag-and-drop, load on demand, context menus, data binding and customizable UI
 platform: WindowsForms
 control: TreeView 
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 TreeView control displays a collection of data in hierarchical tree structure and the data in tree view can be expanded and collapsed. `TreeViewAdv` offers many advanced features like drag-and-drop, load on demand, context menus and data binding that can make the control unique and extraordinary. While the `TreeViewAdv` exposes some global styles that are to be applied for all the nodes, the `TreeNodeAdv` lets the users to specify styles for a specific node. The control comes with complete design time support.
 
-![](Overview_images/Overview_img1.jpg)
+![Overview of Syncfusion TreeViewAdv](Overview_images/Overview_img1.jpg)
 
 ## Key Features
 

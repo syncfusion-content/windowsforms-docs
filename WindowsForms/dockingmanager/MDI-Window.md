@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MDIFunctionality | WindowsForms | Syncfusion
-description: This section explains the MDI-Window functionality in DockingManager
+description: This section explains about displaying each document as a separate window within the client area of DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -19,7 +19,7 @@ To enable MDI functionalities in the docking manager, the `IsMdIContainer` prope
 
 [SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAsMDIChild.html) function helps to set the docking window to the MDIChild window in the docking manager. You can set the docked control as an MDI child by using the `MDI Child` option in the context menu.
 
-![](MDI_Window_images/MDI_Window_img3.png) 
+![Option to make MDI windows in DockingManager](MDI_Window_images/MDI_Window_img3.png) 
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 {% endtabs %}
 
-![](MDI_Window_images/MDI_Window_img4.png) 
+![MDI windows for Windows Forms](MDI_Window_images/MDI_Window_img4.png) 
 
 N> A sample that demonstrates MDI child transition is available in the following sample installation path.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\MDI\CS
@@ -55,7 +55,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 [SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAsMDIChild.html) function helps to set the docking window to the tabbed MDIChild window in the docking manager using the [TabbedMDIManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. You can set the docked control as an MDI child easily by using the `Tabbed document` option in the context menu. To enable this option, attach the parent form of docking manager to MDI container of TabbedMDIManager by using [AttachToMdiContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html).
 
-![](MDI_Window_images/MDI_Window_img2.png) 
+![Option to create tabbed documents in DockingManager](MDI_Window_images/MDI_Window_img2.png) 
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 {% endtabs %}
 
-![](MDI_Window_images/MDI_Window_img1.png) 
+![Tabbed documents in DockingManager](MDI_Window_images/MDI_Window_img1.png) 
 
 N> A sample that demonstrates MDI child transition as tabbed is available in the following sample installation path:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\SDI\CS
@@ -172,7 +172,7 @@ End Function
 
 {% endtabs %}
 
-![](MDI_Window_images/MDI_Window_img6.png) 
+![Add icons in caption of MDI window](MDI_Window_images/MDI_Window_img6.png) 
 
 ## Change MDI window size
 
@@ -198,7 +198,7 @@ Me.dockingManager1.SetAsMDIChild(panel2,True, New Rectangle(200, 400, 250, 250))
 
 {% endtabs %}
 
-![](MDI_Window_images/MDI_Window_img5.png) 
+![Change MDI window size in DockingManager](MDI_Window_images/MDI_Window_img5.png) 
 
 ## Change MDI window to dock window
 
@@ -258,7 +258,7 @@ Me.dockingManager1.Office2007MdiColorScheme = Office2007Theme.Silver
 
 {% endtabs %}
 
-![](MDI_Window_images/MDI_Window_img7.png) 
+![Office 2007 theme MDI window](MDI_Window_images/MDI_Window_img7.png) 
 
 ## Identify control is in MDI mode or not
 

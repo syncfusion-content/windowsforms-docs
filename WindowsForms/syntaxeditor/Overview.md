@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of EditControl for Windows Forms
-description: Features overview of EditControl for Windows Forms
+title: Overview of EditControl | Windows Forms | Syncfusion
+description: EditControl is a code editor similar to Visual Studio Editor, which supports syntax highlighting, code outlining, IntelliSense and etc.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug

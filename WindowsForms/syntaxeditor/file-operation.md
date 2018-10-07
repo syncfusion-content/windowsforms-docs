@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File operations in EditControl
-description: This section explains about the file operation functionalities in EditControl
+title: File operations in EditControl | Windows Forms | Syncfusion
+description: This section explains about the file operations like create, new, open, load, delete etc., in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -314,7 +314,7 @@ Me.editControl1.[New](config)
 
 {% endtabs %}
 
-![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img4.jpg)
+![Import new file content into syntax editor](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img4.jpg)
 
 ## Discard changes
 
@@ -462,7 +462,7 @@ Me.editControl1.SaveOnClose = False
 
 {% endtabs %}
 
-![](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)
+![Dialog window to discard or save modified changes in syntax editor](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)
 
 ### Auto Save file on close
 

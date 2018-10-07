@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoAppend | WindowsForms | Syncfusion
-description: AutoAppend
+description: AutoAppend provides auto persisting of previously entered items in a ComboBox based on a category and populates the combo box 
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
@@ -20,7 +20,7 @@ The AutoAppend class provides this service for any combo box control without the
 
 The following screen shot illustrates the usage of the AutoAppend class to persist items previously entered in a combo box and add them to the items collection of the combo box.
 
- ![](ComboBoxAutoComplete-Images/Overview_img54.jpeg) 
+ ![AutoAppend support](ComboBoxAutoComplete-Images/Overview_img54.jpeg) 
 
 
 
@@ -125,5 +125,5 @@ Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
 {% endhighlight %}
 {% endtabs %}
 
- ![](ComboBoxAutoComplete-Images/Overview_img55.jpeg) 
+ ![Adding New Entries Programmatically](ComboBoxAutoComplete-Images/Overview_img55.jpeg) 
 

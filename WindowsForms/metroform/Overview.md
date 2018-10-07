@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of MetroForm | Windows Forms | Syncfusion
+description: MetroForm provides modern metro UI style with flat appearance to your form. It supports title bar height, appearance customization, etc.,
 platform: WindowsForms
 control: MetroForm
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 [MetroForm](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroForm.html) is used to create customizable window for the end user’s applications. The features offered includes resizing, dragging and moving the window. It also supports various built in skins and let the user to control its behavior and appearance .
 
-![](Overview_images/Overview.png)
+![Metro style form for Windows Forms](Overview_images/Overview.png)
 
 ## Key Features
 

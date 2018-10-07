@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion Rating control for Windows Forms
+description: An overview of Rating control for Windows Forms and its key features like precision, tooltip, different shapes with custom renderer. 
 platform: WindowsForms
 control: Rating  
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools Rating control for Windows Forms provides an intuitive rating experience that allows the end-user to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
 
-![](Overview_images/Overview_img1.png)
+![Overview of Rating control](Overview_images/Overview_img1.png)
 
 ### Key features
 

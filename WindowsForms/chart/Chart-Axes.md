@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Axes | Windows Forms | Syncfusion
-description: chart axes
+description: This section explains all about the axes in the chart and their customization
 platform: windowsforms
 control: Chart
 documentation: ug

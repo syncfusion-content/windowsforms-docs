@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDateTimeEdit control for Windows Forms
-description: Features overview of SfDateTimeEdit control for Windows Forms
+title: Overview of SfDateTimeEdit control | Windows Forms | Syncfusion
+description: SfDateTimeEdit allows user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
