@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of smithchart
-description: This section provides an overview of smith chart.
+title: Overview of Syncfusion SfSmithChart control for WindowsForms
+description: This section explains the key features and quick overview about Syncfusion SmithChart control for WindowsForms
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
