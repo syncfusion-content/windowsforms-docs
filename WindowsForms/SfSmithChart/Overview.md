@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview of smithchart
 description: This section provides an overview of smith chart.
 platform: windowsforms
 control: SfSmithChart
