@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of map
-description: Overview and Key features of Maps control.
+title: Overview of Syncfusion SfMaps control for WindowsForms
+description: This section explains the key features and quick overview about Syncfusion Maps control for WindowsForms
 platform: windowsforms
 control: Maps
 documentation: ug
