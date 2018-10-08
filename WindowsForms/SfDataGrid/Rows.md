@@ -400,7 +400,7 @@ Me.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 {% endhighlight %}
 {% endtabs %}
 
-![](Rows_images/FreezePanes_img3.png)
+![Windows form datagrid showing set the color t freezepaneline](Rows_images/FreezePanes_img3.png)
 
 #### Freeze Line Weight
 Freeze line weight or thickness can be changed by setting the [FreezePaneLineStyle.Weight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.FreezePaneLineStyleInfo~Weight.html) property.

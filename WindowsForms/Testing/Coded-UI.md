@@ -62,7 +62,7 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates performed actions.<br/><br/>
 
 
-![](CodedUI_images/GenerateCodedUIMap.png)
+![Windows form datagrid showing generated uimap](CodedUI_images/GenerateCodedUIMap.png)
 
 7) Choose the required method and description for code generation.<br/><br/>
 
