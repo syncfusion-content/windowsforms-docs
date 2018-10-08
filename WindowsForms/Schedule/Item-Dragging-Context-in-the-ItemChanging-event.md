@@ -9,13 +9,13 @@ documentation: ug
 
 # Item Dragging Context in the ItemChanging Event
 
-This feature provides support to detect the dragging context when an item is dropped in schedule part or calendar part. It also enables to cancel the needed items through ItemChanging event.
+This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel the needed items through the ItemChanging event.
 
 ### Use case scenario
 
 In ItemChanging event, through the ItemDragHitContext enumeration, you can detect the dragging context (Schedule or Calendar) and cancel the needed items.
 
-### Properties
+### Property
 
 <table>
 <tr>
@@ -26,11 +26,11 @@ Data Type </th></tr>
 <tr>
 <td>
 ItemDragHitContext</td><td>
-Specifies where the mouse is during an appointment drag in a Week or Month view.</td><td>
+Specifies where the mouse is during an appointment drag in a week or month view.</td><td>
 enum</td></tr>
 </table>
 
-### Events
+### Event
 
 <table>
 <tr>
@@ -42,12 +42,12 @@ Description</th></tr>
 <td>
 ItemChanging</td><td>
 object sender, ScheduleAppointmentCancelEventArgs e</td><td>
-Occurs after an IScheduleAppointment is modified</td></tr>
+Occurs after an IScheduleAppointment is modified.</td></tr>
 </table>
 
 #### Sample link
 
-You can get the schedule sample from the following online location,
+You can get the schedule sample from the following online location:
 
 [http://samples.syncfusion.com/windowsforms](http://samples.syncfusion.com/windowsforms)
 
@@ -55,9 +55,9 @@ You can get the schedule sample from the following online location,
 
 The following steps help you to get the target part in the Schedule control while dragging:
 
-1. Create a schedule control enabled sample application
-2. Add appointments in that schedule grid
-3. Hook the ‘ItemChanging’ event
+1. Create a Schedule control enabled sample application.
+2. Add appointments in that schedule grid.
+3. Hook the `ItemChanging` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChangin
 {% endhighlight %}
 {% endtabs %}
 
-Get the drag hit context with the below code.
+Get the drag hit context with the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the dropped item using the ItemDragHitContext property as shown below in the following code.
+You can cancel the dropped item using the ItemDragHitContext property.
 
 {% tabs %}
 {% highlight c# %}
