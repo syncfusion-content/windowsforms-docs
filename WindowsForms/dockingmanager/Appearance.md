@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of DockingManager for Windows Forms
-description: Customize the appearance of Docked, Float, Tabbed and AutoHide window
+title: Customization of DockingManager | Windows Forms | Syncfusion
+description: This section explains about customizing the appearance of docking child window and various styles available in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -55,7 +55,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![DockingManager for Windows Forms](Appearance_images/Appearance_img2.png)
 
 **Office2003**
 
@@ -81,7 +81,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![Office 2003 theme DockingManager](Appearance_images/Appearance_img3.png)
 
 **Office2007**
 
@@ -107,7 +107,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![Office 2007 theme DockingManager](Appearance_images/Appearance_img4.png)
 
 **Office2007Outlook**
 
@@ -133,7 +133,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img5.png)
+![Office 2007 Outlook style DockingManager](Appearance_images/Appearance_img5.png)
 
 **Office2010**
 
@@ -159,7 +159,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img6.png)
+![Office 2010 theme DockingManager](Appearance_images/Appearance_img6.png)
 
 **OfficeXP**
 
@@ -185,7 +185,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.OfficeXP
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img7.png)
+![Office XP theme DockingManager](Appearance_images/Appearance_img7.png)
 
 **VS2005**
 
@@ -211,7 +211,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.VS2005
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img8.png)
+![Visual Studio 2005 theme DockingManager](Appearance_images/Appearance_img8.png)
 
 **VS2010**
 
@@ -237,7 +237,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.VS2010
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img9.png)
+![Visual Studio 2010 theme DockingManager](Appearance_images/Appearance_img9.png)
 
 **Metro**
 
@@ -263,7 +263,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Metro theme DockingManager](Appearance_images/Appearance_img1.png)
 
 **Office2016Colorful**
 
@@ -289,7 +289,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img10.png)
+![Office2016 Colorful theme DockingManager](Appearance_images/Appearance_img10.png)
 
 **Office2016White**
 
@@ -315,7 +315,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img11.png)
+![Office2016 white theme DockingManager](Appearance_images/Appearance_img11.png)
 
 **Office2016DarkGray**
 
@@ -341,7 +341,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img12.png)
+![Office2016 DrakGray theme DockingManager](Appearance_images/Appearance_img12.png)
 
 **Office2016Black**
 
@@ -367,7 +367,7 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img13.png)
+![Office2016 Black theme DockingManager](Appearance_images/Appearance_img13.png)
 
 ## Office 2007 color scheme
 
@@ -390,7 +390,7 @@ Me.dockingManager1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Si
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img14.png)
+![Office2007 silver theme DockingManager](Appearance_images/Appearance_img14.png)
 
 ## Office 2010 color scheme
 
@@ -413,7 +413,7 @@ Me.dockingManager1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Bl
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img15.png)
+![Office2010 Black theme DockingManager](Appearance_images/Appearance_img15.png)
 
 ## Custom color schemes
 
@@ -445,7 +445,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img16.png)
+![Office2007 Red theme DockingManager](Appearance_images/Appearance_img16.png)
 
 ### Custom Office 2010 color scheme
 
@@ -551,7 +551,7 @@ Me.DockingManager1.InActiveCaptionFont = New System.Drawing.Font("Arial", 11.25!
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img17.png)
+![DockingManager with different active and inactive caption color](Appearance_images/Appearance_img17.png)
 
 ### Customize border
 
@@ -584,7 +584,7 @@ Me.dockingManager1.PaintBorders = True
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img18.png)
+![Dock windows with red border in DockingManager](Appearance_images/Appearance_img18.png)
 
 ### HostFormClientBorder
 
@@ -607,7 +607,38 @@ Me.dockingManager1.HostFormClientBorder = False
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img19.png)
+![DockingManager without border in empty space](Appearance_images/Appearance_img19.png)
+
+## Customize Caption Height
+
+The height of dock and float window caption can be customized 
+using the  `CaptionHeight` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Setting Caption Height
+
+this.dockingManager1.CaptionHeight = 40;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+'Setting Caption Height
+
+Me.DockingManager1.CaptionHeight = 40
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Increased dock window caption height in DockingManager](Appearance_images/Appearance_img41.png)
+
+N>  The `CaptionHeight` property will not applicable for Default and VS2005 visual style of docking manager. The maximum value of `CaptionHeight` is 60.
+
 
 ## Customize tabs in dock window
 
@@ -677,7 +708,7 @@ Me.DockingManager1.DockTabHeight = 30
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img20.png)
+![Increased tab height of tabbed dock windows](Appearance_images/Appearance_img20.png)
 
 
 {% tabs %}
@@ -701,7 +732,7 @@ Me.dockingManager1.DockTabForeColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img21.png)
+![Customized tab foreground with tabbed dock window](Appearance_images/Appearance_img21.png)
 
 
 {% tabs %}
@@ -721,7 +752,7 @@ Me.dockingManager1.ActiveDockTabForeColor = System.Drawing.Color.Purple
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img22.png)
+![Customized active tab foreground with tabbed dock window](Appearance_images/Appearance_img22.png)
 
 
 {% tabs %}
@@ -741,7 +772,7 @@ Me.dockingManager1.DockTabBackColor = System.Drawing.Color.Yellow
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img23.png)
+![Customized tab background with tabbed dock window](Appearance_images/Appearance_img23.png)
 
 
 {% tabs %}
@@ -761,7 +792,7 @@ Me.dockingManager1.ActiveDockTabBackColor = System.Drawing.Color.Green
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img24.png) 
+![Customized active tab background with tabbed dock window](Appearance_images/Appearance_img24.png) 
 
 
 {% tabs %}
@@ -781,7 +812,7 @@ Me.dockingManager1.DockTabPanelBackColor = System.Drawing.Color.Purple
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img25.png)
+![Customized tab panel background of tabbed dock window](Appearance_images/Appearance_img25.png)
 
 
 {% tabs %}
@@ -801,7 +832,7 @@ Me.dockingManager1.DockTabSeparatorColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img26.png)
+![Customized seperator between the tabs in tabbed dock window](Appearance_images/Appearance_img26.png)
  
 
 N> [ResetDockTabFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabFont.html), [ResetDockTabHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabHeight.html), and [ResetDockTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ResetDockTabForeColor.html) functions allow you to reset the above settings.
@@ -876,7 +907,7 @@ Me.DockingManager1.AutoHideTabHeight = 35
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img27.png)
+![Customized tab height of auto hide windows](Appearance_images/Appearance_img27.png)
 
 The fore color of the auto hidden tabs can be customized by using the [AutoHideTabForeColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AutoHideTabForeColor.html) property.
 
@@ -901,7 +932,7 @@ Me.dockingManager1.AutoHideTabForeColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img28.png)
+![Customized forecolor of tabs in auto hide windows](Appearance_images/Appearance_img28.png)
 
 ### Customize auto hide panel
 
@@ -964,7 +995,7 @@ ahTabCtrlTop.TabPanelBackColor = Color.Gray
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img29.png)
+![Customized auto hide panel backcolor in DockingManager](Appearance_images/Appearance_img29.png)
 
 ## Customization with Metro style
 
@@ -995,7 +1026,7 @@ Me.dockingManager1.MetroBorderWidth = 10
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img30.png)
+![Metro style float window with customized caption height in DockingManager](Appearance_images/Appearance_img30.png)
 
 ### Show/hide dotted lines Metro style caption
 
@@ -1046,7 +1077,7 @@ Me.dockingManager1.ShowMetroCaptionDottedLines = False
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img31.png)
+![Customized dock window caption backcolor in DockingManager](Appearance_images/Appearance_img31.png)
 
 {% seealso %}
  
@@ -1089,35 +1120,35 @@ Me.dockingManager1.DragProviderStyle = Syncfusion.Windows.Forms.Tools.DragProvid
 
 * VS2005 
 
-![](Appearance_images/Appearance_img32.png)
+![Visual Studio 2005 style docking guides in DockingManager](Appearance_images/Appearance_img32.png)
 
 * VS2008
 
-![](Appearance_images/Appearance_img33.png) 
+![Visual Studio 2008 style docking guides in DockingManager](Appearance_images/Appearance_img33.png) 
 
 * VS2010
 
-![](Appearance_images/Appearance_img34.png) 
+![Visual Studio 2010 style docking guides in DockingManager](Appearance_images/Appearance_img34.png) 
 
 * VS2012
 
-![](Appearance_images/Appearance_img35.png)
+![Visual Studio 2012 style docking guides in DockingManager](Appearance_images/Appearance_img35.png)
 
 * Whidbey
 
-![](Appearance_images/Appearance_img36.png) 
+![Customized docking guides in DockingManager](Appearance_images/Appearance_img36.png) 
 
 * Office2016Colorful
 
-![](Appearance_images/Appearance_img38.png) 
+![Office2016 Colorful theme docking guides in DockingManager](Appearance_images/Appearance_img38.png) 
 
 * Office2016DarkGray
 
-![](Appearance_images/Appearance_img39.png)
+![Office2016 DarkGray theme docking guides in DockingManager](Appearance_images/Appearance_img39.png)
 
 * Office2016Black 
 
-![](Appearance_images/Appearance_img40.png)
+![Office2016 Black theme docking guides in DockingManager](Appearance_images/Appearance_img40.png)
 
 ## Right-to-left
 
@@ -1148,4 +1179,4 @@ Me.RightToLeft = RightToLeft.Yes
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img37.png)
+![Right to Left arranged dock windows in DockingManager](Appearance_images/Appearance_img37.png)
