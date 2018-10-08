@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Windows Forms | Syncfusion
-description: overview
+description: Overview and usecase of bullet graph.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
