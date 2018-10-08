@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of bulletgraph
-description: Overview and usecase of bullet graph.
+title: Overview of Syncfusion BulletGraph control for WindowsForms
+description: This section explains the key features and quick overview about Syncfusion Bullet Graph control for WindowsForms
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
