@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview of treemap.
 description: Overview and usecase of treemap.
 platform: windowsforms
 control: TreeMap 
