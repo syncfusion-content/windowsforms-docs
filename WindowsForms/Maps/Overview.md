@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
+title: Overview of map
 description: Overview and Key features of Maps control.
 platform: windowsforms
 control: Maps
