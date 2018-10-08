@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of RadialSlider control | Windows Forms | Syncfusion
+description: RadialSlider control provides intuitive touch interface for selecting a numeric value on a circular display.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 The `RadialSlider` is an advanced control that is capable of calculating the sequence value with the sequence circle sector. It contains additional features like different visual styles, and support to modify minimum and maximum values.
 
-![](Overview_images/Overview_img1.png)
+![Radial slider for Windows Forms to select numeric values](Overview_images/Overview_img1.png)
 
-# Key features
+## Key features
 
 * **Slider style** - Provides option to set Default or Frame slider styles.
 

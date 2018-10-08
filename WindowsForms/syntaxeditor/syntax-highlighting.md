@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syntax Highlighting in EditControl
-description: syntax highlighting
+title: Syntax Highlighting in EditControl | Windows Forms | Syncfusion
+description: This section provide details about syntax highlighting for programming, scripting and markup languages in EditControl
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -62,7 +62,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img3.png)
+![Built-in CSharp syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img3.png)
 
 **Delphi** 
 
@@ -95,7 +95,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img4.png)
+![Built-in delphi syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img4.png)
 
 **XML** 
 
@@ -128,7 +128,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img5.png)
+![XML syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img5.png)
 
 **HTML** 
 
@@ -161,7 +161,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img6.png)
+![HTML syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img6.png)
 
 **VB.NET** 
 
@@ -194,7 +194,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img7.png)
+![Visual Basic syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img7.png)
 
 **SQL** 
 
@@ -227,7 +227,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img8.png)
+![SQL syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img8.png)
 
 **Java** 
 
@@ -260,7 +260,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img9.png)
+![Java syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img9.png)
 
 **VBScript** 
 
@@ -293,7 +293,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img10.png)
+![VB Script syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img10.png)
 
 **JScript** 
 
@@ -326,7 +326,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img11.png)
+![JScript syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img11.png)
 
 **PowerShell** 
 
@@ -359,7 +359,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
+![PowerShell syntax highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img12.png)
 
 N> Refer to the following sample link that demonstrates the `SyntaxHighlighting` functionalities of the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
@@ -406,7 +406,7 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
+![User defined custom code highlighting in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img23.png)
 
 ### Font color
 
@@ -422,7 +422,7 @@ Font color of any format in the specified language can be customized by using th
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img15.png)
+![Customized font color in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img15.png)
 
 
 ### Lexem
@@ -480,7 +480,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in EditControl is `true`.
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
+![Outlining collapsers in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img30.png)
 
 ### Keyword 
 
@@ -498,7 +498,7 @@ Custom keywords can be added or existing keywords can be customized in built-in 
  
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img28.png)
+![Highlight keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img28.png)
 
 ### Operator
 
@@ -516,7 +516,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img29.png)
+![Highlight operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img29.png)
  
 ### Regex
 
@@ -542,7 +542,7 @@ For example, to customize the strings ends with !, set the regex property of `Is
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img32.png)
+![Highlight by regular expression in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img32.png)
 
 #### Error words highlighting
 
@@ -565,7 +565,7 @@ Error lexems can be added to the language by declaring a format names Error. It 
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
+![Highlight error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img16.png)
 
 ### Splits
 
@@ -589,7 +589,7 @@ Splits helps to configure two different words as single. For example, consider #
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img31.png)
+![Highlight regions in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img31.png)
 
 ### Auto replace triggers
 
@@ -628,7 +628,7 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
+![Autocorrect the word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img41.png)
 
 N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
@@ -721,7 +721,7 @@ It contains a list of definitions of the formats that can be used later in lexem
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
+![Custom formatted text in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img24.png)
 
 ### Font color
 
@@ -735,7 +735,7 @@ Font color of any format in the specified language can be customized by using th
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
+![Customized font color in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img33.png)
 
 ### Lexem
 
@@ -757,7 +757,7 @@ Lexem contains rules for parsing the text. `Type` and `FormatName` attributes of
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img34.png)
+![Format the text by user defind language in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img34.png)
 
 For non-complex lexems, you can specify `ContinueBlock` and `EndBlock` attributes.
 
@@ -798,7 +798,7 @@ Collapsible region can be customized by adding the desired lexem with attributes
 
 This code example works only when the [ShowOutliningCollapsers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowOutliningCollapsers.html) property in the EditControl is `true`.
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
+![Collapsible region in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img39.png)
 
 
 ### Keyword 
@@ -817,7 +817,7 @@ Custom keywords can be added or existing keywords can be customized in built-in 
  
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img36.png)
+![Highlight the keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img36.png)
 
 ### Operator
 
@@ -835,7 +835,7 @@ Custom operators can be added or existing operators can be customized in built-i
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img35.png)
+![Highlight the operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img35.png)
  
 ### Regex
 
@@ -861,7 +861,7 @@ For example, to customize the strings that ends with !, set the regex property o
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img37.png)
+![Highlight the words by regular expression in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img37.png)
 
 #### Error words highlighting
 
@@ -881,7 +881,7 @@ Error lexems can be added to the language by declaring a format names Error and 
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img40.png)
+![Highlight the error words in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img40.png)
 
 ### Splits
 
@@ -903,7 +903,7 @@ Splits helps to configure two different words as a single. For example, consider
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
+![Highlight the keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img38.png)
 
 ### Auto replace triggers
 
@@ -940,7 +940,7 @@ Me.editControl1.UseAutoreplaceTriggers = True
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
+![Autocorrect the words in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img42.png)
 
 N> To enable this feature, set the `TriggersActivators` property of ConfigLanguage tag attribute and the `UseAutoreplaceTriggers` property of the EditControl should be set to `true`.
 
@@ -996,7 +996,7 @@ The EditControl supports multiple language configuration helps to configure one 
 
 {% endhighlight %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
+![Highlight words in syntax editor with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
 N> Refer to the following sample link that demonstrates the Custom language configuration in the EditControl:
 C:\Users\&lt;User&gt;\AppData\Syncfusion\EssentialStudio\Version Number\\Windows\Edit.Windows\Samples\Syntax Highlighting\Syntax Coloring
@@ -1134,7 +1134,7 @@ formatMethod.Font = new Font("Garamond", 17)
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
+![Customized font in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img17.png)
 
 ### Lexem configuration
 
@@ -1230,7 +1230,7 @@ Me.editControl1.Language.Lexems.Add(cons)
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img19.png)
+![Highlight keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img19.png)
 
 ### Operators configuration
 
@@ -1293,7 +1293,7 @@ Me.editControl1.Language.Lexems.Add(Symbol)
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
+![Highlight operators in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img20.png)
 
 ### Regex configuration
 
@@ -1336,7 +1336,7 @@ formatMethod.BorderColor = Color.Green
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
+![Highlighting keywords in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img18.png)
 
 #### Error words highlighting
 
@@ -1387,7 +1387,7 @@ Dim Error As ISnippetFormat = Me.editControl1.Language.Add("Error")
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img22.png)
+![Highlighting error words in syntax editor by underline](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img22.png)
 
 ### Splits configuration
 
@@ -1448,7 +1448,7 @@ Me.editControl1.Language.Lexems.Add(region)
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img44.png)
+![Highlight regions in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img44.png)
 
 ### Auto replace triggers
 
@@ -1487,7 +1487,7 @@ language.TriggersActivators = New Char() { "."c }
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img43.png)
+![Autocorrect error word in syntax editor](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img43.png)
 
 N> To enable this feature, we must set the `TriggersActivators` property of ConfigLanguage tag attribute and `UseAutoreplaceTriggers` property of EditControl should be set to `true`.
 
@@ -1759,7 +1759,7 @@ The EditControl supports multiple language configuration helps to configure one 
 
 {% endtabs %}
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
+![Highlight syntax editor content with multiple language](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img25.png)
 
 ### Invoking newly added configuration language
 
@@ -1790,7 +1790,7 @@ Me.editControl1.Language.ResetCaches()
 
 Syntax highlighting and code coloring can be implemented at runtime by using the `Language Coloring Configuration Editor`. It can be customized by using [ConfigurationDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.ConfigurationDialog.html) class and [IConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Interfaces.IConfig.html) interface.
 
-![](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img14.png)
+![Configure syntax highlighting through dialog box](Syntax-Highlighting-and-Code-Coloring_images/Syntax-Highlighting-and-Code-Coloring_img14.png)
 
 {% tabs %}
 

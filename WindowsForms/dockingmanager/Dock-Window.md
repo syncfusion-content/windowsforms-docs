@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking Window | WindowsForms | Syncfusion
-description: This section explains the DockWindow functionality in DockingManager
+description: This section explains about how to configure dock window in different sides of DockingManager and also provides details regarding its customization
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 The docking manager allows you to dock the control on any of the four sides of the container control, and provides docking hints while dragging the panel over it. This preview will provide information about how the layout will look after dropping the panel to dock.
 
-![](Dock_Window_images/Dock_Window_img1.png)
+![Dock window UI architecture in DockingManager](Dock_Window_images/Dock_Window_img1.png)
 
 ## Enable/disable dock functionality
 
@@ -51,7 +51,7 @@ Me.dockingManager1.SetEnableDocking(Me.panel4, True)
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img16.png)
+![Dock multiple windows in DockingManager](Dock_Window_images/Dock_Window_img16.png)
 
 ## Change dock side of children
 
@@ -95,13 +95,13 @@ Me.dockingManager1.DockControl(Me.panel4, Me, Syncfusion.Windows.Forms.Tools.Doc
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img3.png)
+![Dock windows at left, right and  bottom side](Dock_Window_images/Dock_Window_img3.png)
 
 ## Dock window to another window
 
 Provides support to dock a window inside another window with the help of drag providers. This can be done programmatically by using the [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function.
 
-![](Dock_Window_images/Dock_Window_img18.png)
+![Dock one window over another dock window in DockingManager](Dock_Window_images/Dock_Window_img18.png)
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Me.dockingManager1.DockControl(Me.panel4, Me.panel1, Syncfusion.Windows.Forms.To
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img19.png)
+![Tabbed Dock windows in DockingManager](Dock_Window_images/Dock_Window_img19.png)
 
 ## Detect dock style
 
@@ -167,7 +167,7 @@ Me.dockingManager1.SetDockLabel(panel1, "New");
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img2.png)
+![Dock windows header](Dock_Window_images/Dock_Window_img2.png)
 
 ## Change dock window size
 
@@ -205,7 +205,7 @@ Me.dockingManager1.SetControlSize(this.panel1, new Size(200, 200))
 
 {% endtabs %} 
 
-![](Dock_Window_images/Dock_Window_img4.png)
+![Customized dock window size in DockingManager](Dock_Window_images/Dock_Window_img4.png)
 
 ## Add icon in header of dock window
 
@@ -282,7 +282,7 @@ Me.DockingManager1.SetDockIcon(Me.panel1, icon)
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img5.png)
+![Add icons in header of Dock window](Dock_Window_images/Dock_Window_img5.png)
 
 ## Change caption label alignment
 
@@ -304,7 +304,7 @@ Me.dockingManager1.DockLabelAlignment = DockLabelAlignmentStyle.Right
 
 {% endtabs %}  
 
-![](Dock_Window_images/DockLabelAlignment.png)
+![Change label alignment of Dock window](Dock_Window_images/DockLabelAlignment.png)
 
 ## Change visibility of caption buttons
 
@@ -345,7 +345,7 @@ Me.dockingManager1.GetCloseButtonVisibility(Me.panel1) 'true when button is visi
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img7.png)
+![Collapse close button in particular Dock window](Dock_Window_images/Dock_Window_img7.png)
 
 ## Show/hide dock windows
 
@@ -371,17 +371,17 @@ Console.Write("DockWindow Visibility" + Me.dockingManager1.GetDockVisibility(Me.
 
 {% endtabs %}  
 
-![](Dock_Window_images/Dock_Window_img8.png)
+![Collapse particular dock window](Dock_Window_images/Dock_Window_img8.png)
 
 ## Add custom buttons in caption
 
 The Custom Caption Collection Editor can be accessed by using the DockingManager. [CaptionButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CaptionButtons.html) property allows you to customize the default buttons and to add new custom caption buttons. 
 
-![](Dock_Window_images/CustomCaptionButton1.png)
+![Add custom buttons in caption of Dock window](Dock_Window_images/CustomCaptionButton1.png)
 
 In the `CaptionButtons` Collection Editor, you can add the new caption button by clicking Add.
 
-![](Dock_Window_images/Dock_Window_img15.png)
+![Customize behavior of custom buttons in Dock window](Dock_Window_images/Dock_Window_img15.png)
 
 This can also be done programmatically by using the following code examples.
 
@@ -469,7 +469,7 @@ Me.dockingManager1.CaptionButtons.Add(captionButton1)
 
 {% endtabs %}
 
-![](Dock_Window_images/CustomCaptionButton.png)
+![Add custom buttons in caption of Dock window](Dock_Window_images/CustomCaptionButton.png)
 
 N> Refer to the following sample link that demonstrates how to add the Custom Caption Buttons:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Docking Manager\Custom Captions\CS
@@ -499,7 +499,7 @@ Me.dockingManager1.InActiveCaptionButtonForeColor = System.Drawing.Color.Green
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img17.png)
+![Customized caption forecolor of active and inactive dock windows](Dock_Window_images/Dock_Window_img17.png)
 
 ## Change header visibility of dock window
 
@@ -526,7 +526,7 @@ Me.dockingManager1.ShowCaption = False
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img9.png)
+![Collapse header of Dock windows](Dock_Window_images/Dock_Window_img9.png)
 
 ## Maximize and restore
 
@@ -549,7 +549,7 @@ Me.dockingManager1.MaximizeButtonEnabled = True
 
 {% endtabs %}
 
-![](Dock_Window_images/RestoreButtonImage.png)
+![Maximize and restore options in Dock window](Dock_Window_images/RestoreButton.png)
 
 N> The maximize button will be visible only if any other control is docked to the bottom of the former control.
 
@@ -573,7 +573,7 @@ Me.dockingManager1.DockToFill = True;
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img10.png)
+![Full screen Dock window](Dock_Window_images/Dock_Window_img10.png)
 
 ## Enable/disable the context menu
 
@@ -596,11 +596,11 @@ Me.dockingManager1.EnableContextMenu = True
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img11.png) 
+![Disable menu item in caption of Dock window](Dock_Window_images/Dock_Window_img11.png) 
 
 N> If the `MDIContainer` property of the form is set to `true`, then the context menu will include MDI child option.
 
-![](Dock_Window_images/Dock_Window_img12.png) 
+![Enable and disable menu item in caption of Dock window](Dock_Window_images/Dock_Window_img12.png) 
 
 ## Remove specific default menu item from context menu
 
@@ -706,7 +706,7 @@ End If
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img13.png) 
+![Removed specific default menu item from context menu in Dock window](Dock_Window_images/Dock_Window_img13.png) 
 
 ## Restrict resize
 
@@ -777,7 +777,7 @@ The splitter of the dock window can be customized using the [SplitterWidth](http
 
 {% endtabs %}
 
-![](Dock_Window_images/Dock_Window_img14.png) 
+![Red color resize splitter between Dock windows](Dock_Window_images/Dock_Window_img14.png) 
 
 N > The MetroSplitterBackColor property effects only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property is set to Metro.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linear-Gauge | WindowsForms | Syncfusion
-description: linear gauge
+description: Linear Gauge control helps to visualize numerical values on a linear scale. It supports scales, pointers, ranges.
 platform: WindowsForms
 control: Gauge
 documentation: ug
@@ -25,7 +25,7 @@ documentation: ug
 
 * **Data binding** - Support provided to update value using Data Binding concept. 
 
-# Getting started
+**Getting started**
 
 This section describes how to add `LinearGauge` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -38,7 +38,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with LinearGauge
+**Creating simple application with LinearGauge**
 
 You can create the Windows Forms application with LinearGauge control as follows:
 
@@ -46,7 +46,7 @@ You can create the Windows Forms application with LinearGauge control as follows
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the LinearGauge with basic functionalities.
 
@@ -57,9 +57,9 @@ The LinearGauge control can be added to the application by dragging it from the 
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-![](Linear-Gauge_images/LinearGauge_img1.png)
+![Drag and Drop Linear Gauge from Toolbox](Linear-Gauge_images/LinearGauge_img1.png)
 
-![](Linear-Gauge_images/LinearGauge_img3.png)
+![Linera Gauge for Windows Forms with smart tag support for designer](Linear-Gauge_images/LinearGauge_img3.png)
 
 
 ## Adding control manually using code
@@ -111,7 +111,7 @@ Me.Controls.Add(linearGauge1)
 
 {% endtabs %}
 
-![](Linear-Gauge_images/LinearGauge_img2.png)
+![Linear Gauge for Windows Forms](Linear-Gauge_images/LinearGauge_img2.png)
 
 ## Concepts and features
 
@@ -186,16 +186,10 @@ Gets or sets the value indicator color of the gauge.</td></tr>
 </table>
 
 
-![](Linear-Gauge_images/Linear-Gauge_img1.png)
+![Horizontal Linear Gauge for Windows Forms](Linear-Gauge_images/Linear-Gauge_img1.png)
 
 
-
-
-![](Linear-Gauge_images/Linear-Gauge_img2.png)
-
-
-
-
+![Vertical Linear Gauge for Windows Forms](Linear-Gauge_images/Linear-Gauge_img2.png)
 
 
 {% tabs %}
@@ -357,21 +351,13 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img3.png)
+![Pointer placed top relative to ticks in Linear Gauge](Linear-Gauge_images/Linear-Gauge_img3.png)
 
 
+![Pointer placed center relative to ticks in Linear Gauge](Linear-Gauge_images/Linear-Gauge_img4.png)
 
 
-
-![](Linear-Gauge_images/Linear-Gauge_img4.png)
-
-
-
-
-
-![](Linear-Gauge_images/Linear-Gauge_img5.png)
-
-
+![Pointer placed bottom relative to ticks in Linear Gauge](Linear-Gauge_images/Linear-Gauge_img5.png)
 
 #### Ranges
 
@@ -463,9 +449,7 @@ Me.linearGauge1.Ranges.Add(range1)
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img6.png)
-
-
+![Linear Gauge with single range](Linear-Gauge_images/Linear-Gauge_img6.png)
 
 #### Scaling divisions
 
@@ -582,7 +566,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img8.png)
+![Black theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img8.png)
 
 
 **Blue**
@@ -607,7 +591,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img7.png)
+![Blue theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img7.png)
 
 **Silver**
 
@@ -631,7 +615,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img9.png)
+![Silver theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img9.png)
 
 **Metro**
 
@@ -656,7 +640,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 {% endtabs %}
 
 
-![](Linear-Gauge_images/Linear-Gauge_img10.png)
+![Metro theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img10.png)
 
 
 **Office2016 White**
@@ -684,7 +668,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 {% endtabs %}
 
 
- ![](Linear-Gauge_images/Linear-Gauge_img12.png)
+ ![Office2016 White theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img12.png)
 
  **Office2016Colorful**
 
@@ -710,7 +694,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 {% endtabs %}
 
- ![](Linear-Gauge_images/Linear-Gauge_img11.png)
+ ![Office2016 Colorful theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img11.png)
 
 **Office2016DarkGray**
 
@@ -736,7 +720,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 {% endtabs %}
 
-![](Linear-Gauge_images/Linear-Gauge_img13.png)
+![Office2016 Dark Gray theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img13.png)
 
 **Office2016Black**
 
@@ -763,7 +747,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 {% endtabs %}
 
 
- ![](Linear-Gauge_images/Linear-Gauge_img14.png)
+ ![Office2016 Black theme Linear Gauge](Linear-Gauge_images/Linear-Gauge_img14.png)
 
 
 **Custom**
@@ -774,15 +758,15 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
  **Step 1:**  Need to add Linear Gauge control to Form Designer.
 
-![](Linear-Gauge_images/Linear-Gauge_img15.png)
+![Linear Gauge in designer](Linear-Gauge_images/Linear-Gauge_img15.png)
 
  **Step 2:** Set the VisualStyle as Custom.
 
-![](Linear-Gauge_images/Linear-Gauge_img16.png)
+![Customized Linear Gauge with smart tag](Linear-Gauge_images/Linear-Gauge_img16.png)
 
  **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in LinearGauge control.
 
-![](Linear-Gauge_images/Linear-Gauge_img18.png)
+![Customized Linear Gauge in designer](Linear-Gauge_images/Linear-Gauge_img18.png)
 
 {% tabs %}
 
@@ -838,8 +822,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 **Output:**
 
-![](Linear-Gauge_images/Linear-Gauge_img17.png)
-
+![Customized Linear Gauge with gradient background](Linear-Gauge_images/Linear-Gauge_img17.png)
 
 ## Data binding
 
@@ -890,7 +873,7 @@ linearGauge1.Renderer = custom
 
 {% endtabs %}
 
-![](Linear-Gauge_images/custom.jpeg)
+![Linear Gauge with customized style](Linear-Gauge_images/custom.jpeg)
 
 ## Frequently asked questions
 
@@ -1267,8 +1250,4 @@ Public Class CustomRenderer
 
 {% endtabs %}
 
-![](Linear-Gauge_images/HowtocustomizeLinearGaugeappearance_img1.jpeg)
-
-
-
-
+![Vertical Linear Gauge with customized style](Linear-Gauge_images/HowtocustomizeLinearGaugeappearance_img1.jpeg)

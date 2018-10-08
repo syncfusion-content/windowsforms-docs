@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Simple Layout | WindowsForms | Syncfusion
-description: creating a simple layout
+description: This section explains about creating a simple layout using layout controls and configuring child controls inside it
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -24,7 +24,7 @@ This topic discusses how to create a simple layout for aligning Child controls t
 
 * Populate the form with the necessary Child controls (here, we are using Buttons), by dragging and dropping them from the toolbox.
 
-![](Overview_images/Overview_img3.jpeg)
+![Drag and drop the child controls to arrange in layout manager](Overview_images/Overview_img3.jpeg)
 
 
 
@@ -36,7 +36,7 @@ The Layout Manager can be added before or after adding the Child controls to the
 
 
 
-![](Overview_images/Overview_img4.jpeg)
+![Adding layout manager to form](Overview_images/Overview_img4.jpeg)
 
 
 
@@ -51,7 +51,7 @@ N> The FlowLayout, CardLayout and GridLayout controls automatically arrange the 
 
 For BorderLayout and GridBagLayout, it is necessary to configure the Child controls by changing their extended properties via the property grid in the designer so that the Child controls can be aligned properly.
 
-![](Overview_images/Overview_img6.jpeg)
+![Configuring Child controls in GridBagLayout](Overview_images/Overview_img6.jpeg)
 
 
 ### Configuring Layout Manager
@@ -349,9 +349,7 @@ Me.layout.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Cent
 
 {% endtabs %}
 
-![](Overview_images/Overview_img7.jpeg) 
-
-
+![Aligning child controls at different sides](Overview_images/Overview_img7.jpeg) 
 
 {% seealso %}
 

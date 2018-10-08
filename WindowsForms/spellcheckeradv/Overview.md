@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of SpellCheckerAdv control | Windows Forms | Syncfusion
+description: SpellCheckerAdv control provides spell checking functionality to your application and offers built-in features to correct errors & ignores them.
 platform: WindowsForms
 control: SpellCheckerAdv
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 SpellCheckerAdv control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
 
-![](Overview_images/Overview-2.png)
+![Spell Checker dialog to correct error words](Overview_images/Overview-2.png)
 
 ## Key features
 
