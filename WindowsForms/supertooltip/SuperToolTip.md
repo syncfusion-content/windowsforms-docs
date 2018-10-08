@@ -11,7 +11,7 @@ documentation: ug
 
 In Office 2007, Microsoft has introduced a SuperToolTip control to display the tooltip. Essential Tools has also come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
-![SuperToolTip](SuperToolTip_images/SuperToolTip_img1.jpeg)
+![SuperToolTip control for Windows Forms](SuperToolTip_images/SuperToolTip_img1.jpeg)
 
 * Header - The Header is used to display text which is used as a header for the tooltip.
 * Body - This is the description part. 
@@ -95,7 +95,7 @@ Separator</td><td>
 Shows or hides a separator between the Body and the Footer tooltip items.</td></tr>
 </table>
 
-![Appearance settings ](SuperToolTip_images/SuperToolTip_img5.jpeg)
+![Appearance settings for SuperToolTip](SuperToolTip_images/SuperToolTip_img5.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -117,7 +117,7 @@ toolTipInfo2.Separator = True
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance settings ](SuperToolTip_images/SuperToolTip_img6.jpeg)
+![Customized appearance of SuperToolTip ](SuperToolTip_images/SuperToolTip_img6.jpeg)
 
 ### Visual style
 
@@ -139,7 +139,7 @@ Me.superToolTip1.VisualStyle = Syncfusion.Windows.Forms.Tools.SuperToolTip.Appea
 {% endhighlight %}
 {% endtabs %}
 
-![Visual style](SuperToolTip_images/SuperToolTip_img17.png)
+![Visual style for SuperToolTip](SuperToolTip_images/SuperToolTip_img17.png)
 
 ### Behavior settings
 
@@ -277,7 +277,7 @@ toolTipInfo1.Footer.ImageScalingSize = New System.Drawing.Size(16, 16)
 {% endhighlight %}
 {% endtabs %}
 
-![Image settings](SuperToolTip_images/SuperToolTip_img9.jpeg)
+![Settings Images for SuperToolTip](SuperToolTip_images/SuperToolTip_img9.jpeg)
 
 ### Foreground settings
 
@@ -364,7 +364,7 @@ toolTipInfo1.Header.TextMargin = New System.Windows.Forms.Padding(1, 1, 1, 1)
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance and text settings](SuperToolTip_images/SuperToolTip_img10.jpeg)
+![Appearance and text settings of SuperToolTip](SuperToolTip_images/SuperToolTip_img10.jpeg)
 
 N> A SuperToolTip (Body, Header and Footer) can be hidden by calling the SuperToolTip.Hide() method.
 
@@ -376,7 +376,7 @@ Size property sets the size of header, body and footer Item. Size property will 
 
 CSS properties and all the text formatting HTML tags are supported.
 
-![Render Html to SuperToolTip](SuperToolTip_images/SuperToolTip_img12.jpeg)
+![Render Html tags to SuperToolTip](SuperToolTip_images/SuperToolTip_img12.jpeg)
 
 The following code illustrates setting RenderHtml, Text, Size properties.
 

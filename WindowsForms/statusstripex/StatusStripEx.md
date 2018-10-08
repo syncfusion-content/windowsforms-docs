@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
-![StatusStripEx](StatusStripEx_images/StatusStripEx_img1.jpeg)
+![StatusStripEx control for Windows Forms](StatusStripEx_images/StatusStripEx_img1.jpeg)
 
 ## Creating a StatusStripEx
 
@@ -91,7 +91,7 @@ A sample which demonstrates the creation of StatusStripEx control and adding Too
 
 Clicking the Smart Tag of the StatusStripEx, displays the below Tasks window. This window lets you add ToolStripStatus Items.
 
-![Smart tag options](StatusStripEx_images/StatusStripEx_img6.jpeg)
+![Smart tag options available in StatusStripEx](StatusStripEx_images/StatusStripEx_img6.jpeg)
 
 The options are,
 
@@ -168,11 +168,11 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 {% endhighlight %}
 {% endtabs %}
 
-![ColorSchemes](StatusStripEx_images/StatusStripEx_img7.jpeg)
+![Silver color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img7.jpeg)
 
-![ColorSchemes](StatusStripEx_images/StatusStripEx_img8.jpeg)
+![Blue color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img8.jpeg)
 
-![ColorSchemes](StatusStripEx_images/StatusStripEx_img9.jpeg)
+![Black color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img9.jpeg)
 
 
 ### Visual style
@@ -195,7 +195,7 @@ Me.statusStripEx1.VisualStyle = Syncfusion.Windows.Forms.Tools.StatusStripExStyl
 {% endhighlight %}
 {% endtabs %}
 
-![Visual style](StatusStripEx_images/StatusStripEx_img11.png)
+![Visual style for StatusStripEx](StatusStripEx_images/StatusStripEx_img11.png)
 
 
 ### Custom colors
@@ -218,7 +218,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom colors](StatusStripEx_images/StatusStripEx_img10.jpeg)
+![Custom colors for StatusStripEx](StatusStripEx_images/StatusStripEx_img10.jpeg)
 
 ## Custom context mMenu
 
