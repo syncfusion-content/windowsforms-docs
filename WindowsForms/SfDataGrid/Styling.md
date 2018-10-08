@@ -238,7 +238,7 @@ Me.sfDataGrid1.ShowBusyIndicator = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/BusyIndicator_Image1.png)
+![](Styling_images/BusyIndicator_1.png)
 
 ### Changing the busy indicator image 
 
@@ -253,4 +253,4 @@ sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/BusyIndicator_Image2.png)
+![](Styling_images/BusyIndicator_2.png)

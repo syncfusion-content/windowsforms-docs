@@ -54,7 +54,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Chart](https://help.syncfusion.com/windowsforms/chart)'| markdownify }}
 </td>
 <td>
-{{'[Predictive Analytics](https://help.syncfusion.com/windowsforms/predictive-analytics)'| markdownify }}
+{{'[Predictive Analytics](https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview)'| markdownify }}
 </td>
 <td>
 {{'[Autocomplete](https://help.syncfusion.com/windowsforms/autocomplete)'| markdownify }}
