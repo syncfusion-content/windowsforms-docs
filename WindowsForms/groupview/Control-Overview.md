@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Control Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of GroupView control | Windows Forms | Syncfusion
+description: GroupView control provides a rich customizable layout to arrange the items, wide variety of visual theme, image settings and much more.
 platform: WindowsForms
 control: GroupView
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 The various sections of GroupView and their description are given below.
 
- ![](Overview_images/Overview_img50.jpeg)
+ ![GroupView with list of items](Overview_images/Overview_img50.jpeg)
 
 
 ## GroupView control

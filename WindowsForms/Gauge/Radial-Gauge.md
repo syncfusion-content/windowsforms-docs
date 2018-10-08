@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Radial-Gauge | WindowsForms | Syncfusion
-description: radial gauge
+description: Radial Gauge helps to visualize numerical values on a circular scale. It supports pointers, ranges, annotations, etc.
 platform: WindowsForms
 control: Gauge
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 [RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 
-![](Radial-Gauge_images/Radial-Gauge_img1.png)
+![Radial Gauge for Windows Forms](Radial-Gauge_images/Radial-Gauge_img1.png)
 
 ## Key features
 
@@ -32,7 +32,7 @@ documentation: ug
 * **Data binding** - Support provided to update value using DataBinding concept. 
 
 
-# Getting started
+**Getting started**
 
 This section describes how to add `RadialGauge` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -45,7 +45,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with RadialGauge
+**Creating simple application with RadialGauge**
 
 You can create the Windows Forms application with RadialGauge control as follows:
 
@@ -53,7 +53,7 @@ You can create the Windows Forms application with RadialGauge control as follows
 2. [Add control via designer](#adding-control-via-designer)
 3. [Add control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the RadialGauge with range information.
 
@@ -64,10 +64,9 @@ The RadialGauge control can be added to the application by dragging it from the 
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-![](Radial-Gauge_images/RadialGauge_img1.png)
+![Drag and Drop Radial Gauge from Toolbox](Radial-Gauge_images/RadialGauge_img1.png)
 
-![](Radial-Gauge_images/RadialGauge_img3.png) 
-
+![Radial Gauge for Windows Forms with smart tag support for designer](Radial-Gauge_images/RadialGauge_img3.png) 
 
 ## Add control manually using code
 
@@ -122,7 +121,7 @@ Me.Controls.Add(radialGauge1)
 
 {% endtabs %}
 
-![](Radial-Gauge_images/RadialGauge_img2.png)
+![Radial Gauge for Windows Forms](Radial-Gauge_images/RadialGauge_img2.png)
 
 
 ## Elaborate structure of the control
@@ -217,9 +216,9 @@ Boolean</td><td>
 Gets or sets the gauge value visibility.</td></tr>
 </table>
 
-![](Radial-Gauge_images/Radial-Gauge_img4.png)
+![Full circle Radial Gauge](Radial-Gauge_images/Radial-Gauge_img4.png)
 
-![](Radial-Gauge_images/Radial-Gauge_img5.png)
+![Half circle Radial Gauge](Radial-Gauge_images/Radial-Gauge_img5.png)
 
 {% tabs %}
 
@@ -238,7 +237,7 @@ Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img6.png)
+![Radial Gauge without frame](Radial-Gauge_images/Radial-Gauge_img6.png)
 
 
 {% tabs %}
@@ -297,16 +296,10 @@ Gets or sets the text orientation layout. </td></tr>
 </table>
 
 
-![](Radial-Gauge_images/Radial-Gauge_img7.png)
+![Label placed outer relative to ticks in Radial Gauge](Radial-Gauge_images/Radial-Gauge_img7.png)
 
 
-
-
-
-![](Radial-Gauge_images/Radial-Gauge_img8.png)
-
-
-
+![Label placed inner side relative to ticks in Radial Gauge](Radial-Gauge_images/Radial-Gauge_img8.png)
 
 The following code sample illustrates how to place labels in the RadialGauge control.
 
@@ -426,15 +419,10 @@ Me.radialGauge1.MinorInnerLinesHeight = 6
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img9.png)
+![Customized Minor tick height in Radial Gauge](Radial-Gauge_images/Radial-Gauge_img9.png)
 
 
-
-
-
-![](Radial-Gauge_images/Radial-Gauge_img10.png)
-
-
+![Customized Major tick height in Radial Gauge](Radial-Gauge_images/Radial-Gauge_img10.png)
 
 ### Needles
 
@@ -583,13 +571,10 @@ Me.radialGauge1.Ranges.Add(range1)
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img11.png)
+![Radial Gauge with different ranges inside ticks of Radial Gauge](Radial-Gauge_images/Radial-Gauge_img11.png)
 
 
-
-
-
-![](Radial-Gauge_images/Radial-Gauge_img12.png)
+![Radial Gauge with different ranges outside ticks of Radial gauge](Radial-Gauge_images/Radial-Gauge_img12.png)
 
 N> EndValue must be defined as first and greater than the StartValue when configuring the Ranges. By default, StartValue and EndValue will be zero and EndValue must be greater than StartValue. Otherwise, StartValue will be reset to zero. 
 
@@ -659,7 +644,7 @@ Me.radialGauge1.MinorDifference = 2F
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img18.png)
+![Radial Gauge with major and minor ticks](Radial-Gauge_images/Radial-Gauge_img18.png)
 
 ## Visual styles
 
@@ -712,7 +697,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img14.png)
+![Black theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img14.png)
 
 **Blue**
 
@@ -737,7 +722,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img13.png)
+![Blue theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img13.png)
 
 
 **Silver**
@@ -762,7 +747,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silver
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img15.png)
+![Silver theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img15.png)
 
 **Metro**
 
@@ -787,7 +772,7 @@ Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 {% endtabs %}
 
 
-![](Radial-Gauge_images/Radial-Gauge_img16.png)
+![Metro theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img16.png)
 
 
 **Office2016White**
@@ -815,7 +800,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 {% endtabs %}
 
 
- ![](Radial-Gauge_images/Radial-Gauge_img18.jpeg)
+ ![Office2016 White theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img18.jpeg)
 
 
 **Office2016Colorful**
@@ -842,7 +827,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 {% endtabs %}
 
-  ![](Radial-Gauge_images/Radial-Gauge_img19.jpeg)
+  ![Office2016 Colorful theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img19.jpeg)
 
 **Office2016DarkGray**
 
@@ -868,7 +853,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 {% endtabs %}
 
-![](Radial-Gauge_images/Radial-Gauge_img20.jpg)
+![Office2016 DarkGray theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img20.jpg)
 
 
 **Office2016Black**
@@ -896,7 +881,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 {% endtabs %}
 
 
- ![](Radial-Gauge_images/Radial-Gauge_img21.jpg)
+ ![Office2016 Black theme Radial Gauge](Radial-Gauge_images/Radial-Gauge_img21.jpg)
 
 **Custom**
 
@@ -907,15 +892,15 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
  **Step 1:**  Need to add RadialGauge control to Form Designer.
 
 
-![](Radial-Gauge_images/Radial-Gauge_img22.png)
+![Radial Gauge in designer](Radial-Gauge_images/Radial-Gauge_img22.png)
 
  **Step 2:** Set the VisualStyle as Custom.
 
-![](Radial-Gauge_images/Radial-Gauge_img23.png)
+![Customized Radial Gauge with smart tag](Radial-Gauge_images/Radial-Gauge_img23.png)
 
  **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in RadialGauge control.
 
-![](Radial-Gauge_images/Radial-Gauge_img24.png)
+![Customized Radial Gauge in designer](Radial-Gauge_images/Radial-Gauge_img24.png)
 
 {% tabs %}
 
@@ -968,7 +953,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 **Output**
 
-![](Radial-Gauge_images/Radial-Gauge_img25.png)
+![Customized Radial Gauge with gradient background](Radial-Gauge_images/Radial-Gauge_img25.png)
 
 
 ## Data binding
@@ -1016,7 +1001,7 @@ radialGauge1.Renderer = custom
 
 {% endtabs %}
 
-![](Radial-Gauge_images/custom.jpeg)
+![Customized Radial Gauge for Windows Forms](Radial-Gauge_images/custom.jpeg)
 
 ## Frequently asked questions
 
@@ -1028,7 +1013,7 @@ The RadialGauge control can be used for representing a range of values in circ
 
 
 
-![C:/Users/ApoorvahR/Desktop/1.png](Radial-Gauge_images/Radial-Gauge_img17.png)
+![Multiple needle Radial Gauge](Radial-Gauge_images/Radial-Gauge_img17.png)
 
 
 
@@ -1785,7 +1770,7 @@ Public Class CustomRenderer
 
 {% endtabs %}
 
-![](Radial-Gauge_images/custom.jpeg)
+![Customized Radial Gauge with custom style needle and ticks](Radial-Gauge_images/custom.jpeg)
 
 ### How to customize the start angle and sweep angle of the arc in RadialGauge
 
@@ -1819,8 +1804,4 @@ Me.radialGauge1.SweepAngle = 200
 
 {% endtabs %}
 
-![](Radial-Gauge_images/arc.png)
-
-
-
-
+![Radial Gauge with different start and end angle](Radial-Gauge_images/arc.png)

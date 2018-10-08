@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of DockingManager control for Windows Forms
-description: Features overview of DockingManager control for Windows Forms
+title: Overview of DockingManager control | Windows Forms | Syncfusion
+description: DockingManager provides an interface to create visual studio style dock windows. Supports floating panels, dock panels, pin & tabbed groups.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The `DockingManager` control implements an architecture that allows panels to be docked at any part of form. The dock panels containing child elements can be interactively dragged to any area within screen and can be resized at run time. Panels can be docked to form edges or each other panels. Dock panels can also be floated, tabbed, and auto hidden.
 
-![](GettingStarted_images/VisualStudioDemo.png)
+![Visual Style Dock windows in DockingManager](GettingStarted_images/VisualStudioDemo.png)
 
 ## Key features
 

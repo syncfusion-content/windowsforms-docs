@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Gauge control | Windows Forms | Syncfusion
+description: Gauge control is data visualization control used to display data points in a precise and compact area.
 platform: WindowsForms
 control: Gauge
 documentation: ug
@@ -13,7 +13,7 @@ The Gauge control for Windows Forms is a data visualization tool that can be use
 
 The Gauge control is intended for developers who want to use gauges in their Windows Forms applications. It is a very useful control to indicate the current value in a range of values.
 
-# Gauges 
+## Gauges 
 
 Windows Forms supports rich set of gauges to provide an intuitive and attractive way to display information graphically. 
 

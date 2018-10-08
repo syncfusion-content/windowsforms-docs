@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation functionalities in EditControl
-description: This section explains about the navigation support in EditControl
+title: Navigation functionalities in EditControl | Windows Forms | Syncfusion
+description: This section explains about navigating the text in EditControl through keyboard or programmatically
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The EditControl offers extensive support for text navigation. You can perform navigation at the character, word, line, page, or entire document levels. This section briefly explains navigation of text in the EditControl.
 
-![](Text-Navigation_images/Text-Navigation_img1.png)
+![Syntax editor with navigation options by character, word and line](Text-Navigation_images/Text-Navigation_img1.png)
 
 ## Character based navigation
 
@@ -385,7 +385,7 @@ Me.editControl1.AlwaysShowScrollers = True
 
 Supports scroller events that are raised when the scroll arrows are clicked. The scroller events are used to synchronize the scrolling of multiple EditControls.
 
-![](Text-Navigation_images/Text-Navigation_img2.jpg)
+![Horizontal and vertical scrollers in syntax editor](Text-Navigation_images/Text-Navigation_img2.jpg)
 
 ### Scroll position and offsets
 

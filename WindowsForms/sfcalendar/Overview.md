@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfCalendar control for Windows Forms
-description: Features overview of SfCalendar control for Windows Forms
+title: Overview of SfCalendar control | Windows Forms | Syncfusion
+description: SfCalendar control allows user to select a date from the calendar and also provide various customization options.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug

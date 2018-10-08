@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hosting ImageStreamer as Tile Items | WindowsForms | Syncfusion
-description: Hosting ImageStreamer as Tile Items
+description: This section provide details about hosting ImageStreamer as tile items in TileLayout for Windows Forms
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 In TileLayout, ImageStreamer control is used as an Item in LayoutGroup. To add the Images into the ImageStreamer, ImagesCollection property is used.
 
-![](HostingImageStreamerasItems_images/ImagesCollection.png)
+![Bitmap collection editor to display items in image streamer](HostingImageStreamerasItems_images/CollectionEditorWindow.png)
 
-![](HostingImageStreamerasItems_images/ImagesCollection1.png)
+![Bitmap in ImageStreamer](HostingImageStreamerasItems_images/StreamerControl.png)
 
 
 ## InternalBackColor
@@ -42,7 +42,7 @@ this.imageStreamer1.InternalBackColor = System.Drawing.Color.Pink;
 {% endtabs %}
 
 
-![](HostingImageStreamerasItems_images/ImageStreamerColor.png)
+![Customized backcolor of ImageStreamer](HostingImageStreamerasItems_images/Setting-backcolor-for-streamer_control.png)
 
 
 ## SliderSpeed
@@ -99,7 +99,7 @@ this.imageStreamer1.SlideShow = true;
 
 {% endtabs %}
 
-![](HostingImageStreamerasItems_images/Navigator.png)
+![Navigation options in ImageStreamer to move next or previous bitmap](HostingImageStreamerasItems_images/Navigator.png)
 
 ## SlideShow
 
@@ -155,11 +155,11 @@ Me.imageStreamer1.ImageStreamDirection = Syncfusion.Windows.Forms.Tools.ImageStr
 
 {% endtabs %}
 
-![](HostingImageStreamerasItems_images/StreamDirection1.png)
-![](HostingImageStreamerasItems_images/StreamDirection2.png)
-![](HostingImageStreamerasItems_images/StreamDirection3.png)
-![](HostingImageStreamerasItems_images/StreamDirection4.png)
-![](HostingImageStreamerasItems_images/StreamDirection5.png)
+![Slide bitmap left to right](HostingImageStreamerasItems_images/StreamDirection1.png)
+![Slide bitmap right to left](HostingImageStreamerasItems_images/StreamDirection2.png)
+![Slide bitmap top to bottom](HostingImageStreamerasItems_images/StreamDirection3.png)
+![Slide bitmap bottom to top](HostingImageStreamerasItems_images/StreamDirection4.png)
+![Flip bitmap horizontally in ImageStreamer](HostingImageStreamerasItems_images/StreamDirection5.png)
 
 ## ImageStreamerType
 
@@ -194,6 +194,6 @@ Me.imageStreamer1.Type = Syncfusion.Windows.Forms.Tools.ImageStreamer.ImageStrea
 
 {% endtabs %}
 
-![](HostingImageStreamerasItems_images/Properties_img1.jpeg)
+![Dislay one or two image in ImageStreamer](HostingImageStreamerasItems_images/Properties_img1.jpeg)
 
 
