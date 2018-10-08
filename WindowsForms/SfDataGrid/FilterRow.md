@@ -21,7 +21,7 @@ Me.sfDataGrid1.FilterRowPosition = RowPosition.Top
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_1.png)
+![Windows form datagrid showing filterrow position at top](FilterRow_images/FilterRow_1.png)
 
 The index of the filter row can be get by using the [GetFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetFilterRowIndex.html) method.
 
@@ -63,7 +63,7 @@ Me.sfDataGrid1.Columns(2).FilterRowEditorType = "MultiSelectComboBox"
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_8.png)
+![Windows form datagrid showing filterrow editor type](FilterRow_images/FilterRow_8.png)
 
 The following types of default filter row editors are available in the SfDataGrid.
 
@@ -182,7 +182,7 @@ Me.sfDataGrid1.Columns(2).ShowFilterRowOptions = False
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_2.png)
+![Windows form datagrid showing filterrow options](FilterRow_images/FilterRow_2.png)
 
 Below are the filter conditions supported by different filter row editors in SfDataGrid.
 <table>
@@ -274,7 +274,7 @@ Always Equals or Not Equal filter condition will be applied based on the selecte
 </tr>
 </table>
 
-![](FilterRow_images/FilterRow_3.png)
+![Windows form datagrid showing types of filterrow editors](FilterRow_images/FilterRow_3.png)
 
 ## Filtering null Values 
 The null values of the columns can be filtered by using the filter row options such as Null and Not Null. This options is enabled by default for all the filter row editors. To disable the null filter options from the filter options list, use the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property of the GridColumn. The default value of this property is `true`.
@@ -290,7 +290,7 @@ Me.sfDataGrid1.Columns(1).AllowBlankFilters = False
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_4.png)
+![Windows form datagrid showing blank filters](FilterRow_images/FilterRow_4.png)
 
 ## Immediate Filtering
 By default, filters are applied to the columns when moving to other cells or pressing the enter key. This can be changed to apply the filtering while typing or selecting in editor itself by setting the [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) as true.
@@ -306,7 +306,7 @@ Me.sfDataGrid1.Columns(2).ImmediateUpdateColumnFilter = True
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_5.png)
+![Windows form datagrid showing immediate update column filter](FilterRow_images/FilterRow_5.png)
 
 ### Delay Immediate Filtering
 By default, filtering will be applied immediately while entering the character in the filter row when the ` ImmediateUpdateColumnFilter` is enabled. The time delay for applying the filtering can be set by using the [FilterDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterDelay.html) property.
@@ -370,7 +370,7 @@ Me.sfDataGrid1.Style.FilterRowStyle.Font = New GridFontInfo(New Font("Segoe UI",
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_6.png)
+![Windows form datagrid showing color of the filterrow](FilterRow_images/FilterRow_6.png)
 
 ## Customizing FilterRow CellRenderer
 SfDataGrid allows to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. It also provides the support to create a new renderers instead of overriding the existing renderer. 
@@ -434,7 +434,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_7.png)
+![Windows form datagrid showing filterrow based at top](FilterRow_images/FilterRow_7.png)
 
 ### Filter based on numeric interval by using the MultiSelectComboBox filter
 By default, multiple data in the column can be filtered by using the `MultiSelectComboBox` filter row editor type. The following code shows how to filter the data based on the range of numeric values by overriding the `ProcessMultipleFilters` method in the `FilterRowMultiSelectComboBoxCellRenderer` class.
@@ -816,4 +816,4 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_9.png)
+![Windows form datagrid showing filtered with the multipleselection ](FilterRow_images/FilterRow_9.png)

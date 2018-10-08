@@ -24,7 +24,7 @@ Me.sfDataGrid1.Style.CellStyle.TextColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/Styling1.png)
+![Windows form datagrid showing cellstyle](Styling_images/Styling1.png)
 
 Appearance of the record cells of a particular column can be customized by using the [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) property.
 
@@ -39,7 +39,7 @@ Me.sfDataGrid1.Columns("ProductName").CellStyle.TextColor = Color.DarkRed
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/Styling2.png)
+![Windows form datagrid showing styles in particular column](Styling_images/Styling2.png)
 
 Font orientation of the record cells can be set by using the [CellStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html) property.
 
@@ -54,7 +54,7 @@ Me.sfDataGrid1.Style.CellStyle.Font.Orientation = 45
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/Styling5.png)
+![Windows form datagrid showing font style to all cells](Styling_images/Styling5.png)
 
 N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html).
 
@@ -189,7 +189,7 @@ Me.sfDataGrid1.Style.HorizontalScrollBar.ScrollBarBackColor = Color.LightGray
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/Styling3.png)
+![Windows form datagrid showing color of scrollbar](Styling_images/Styling3.png)
 
 ## Styling GroupDropArea
 Appearance of the GroupDropArea can be customized by using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupDropAreaStyle.html)  property.
@@ -221,7 +221,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/Styling4.png)
+![Windows form datagrid showing color and thickness of borders](Styling_images/Styling4.png)
 
 ## Showing busy indicator for the data operations
 
@@ -238,7 +238,7 @@ Me.sfDataGrid1.ShowBusyIndicator = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/BusyIndicator_1.png)
+![Windows form datagrid showing busy indicator](Styling_images/BusyIndicator_1.png)
 
 ### Changing the busy indicator image 
 
@@ -253,4 +253,4 @@ sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
 {% endhighlight %}
 {% endtabs %}
 
-![](Styling_images/BusyIndicator_2.png)
+![Windows form datagrid showing busy indicator image](Styling_images/BusyIndicator_2.png)
