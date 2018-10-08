@@ -24,7 +24,7 @@ The StatusStripEx can be added to the form by dragging a StatusStripEx control f
 
 Dock the StatusStripEx control to the bottom using Dock property.
 
-![](StatusStripEx_images/StatusStripEx_img3.jpeg)
+![Docked the StatusStripEx to bottom](StatusStripEx_images/StatusStripEx_img3.jpeg)
 
 ### Adding items to the StatusStripEx
 
