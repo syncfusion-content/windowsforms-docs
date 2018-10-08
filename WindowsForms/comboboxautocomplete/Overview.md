@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of ComboBoxAutoComplete for WindowsForms
+description: Overview of ComboBoxAutoComplete which is a combination of ComboBox with AutoComplete control which gives an inbuilt support for autocomplete.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion SplitButton for Windows Forms
+description: An overview about SplitButton control which can display dropdown items with fully customizable option using the renderer
 platform: WindowsForms
 control: SplitButton 
 documentation: ug

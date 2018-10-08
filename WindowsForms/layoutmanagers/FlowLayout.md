@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FlowLayout | WindowsForms | Syncfusion
-description: flowlayout
+description: FlowLayout allows user to arranges the items in horizontal or vertical flow direction. Supports reverse flow direction.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as shown below.
 
-![](Overview_images/Overview_img33.jpeg)
+![Arrange child controls in one or more row](Overview_images/Overview_img33.jpeg)
 
 ## Key features
 
@@ -26,7 +26,7 @@ In its simplest form, this Layout Manager can be used to automatically arrange t
 
 **Alignment** - Provides option to customize the alignment such as Center, Near, Far and ChildConstraints.
 
-# Getting started
+**Getting started**
 
 This section describes how to add `FlowLayout` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -40,7 +40,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 
 
-# Creating simple application with FlowLayout
+**Creating simple application with FlowLayout**
 
 You can create the Windows Forms application with FlowLayout control as follows:
 
@@ -50,7 +50,7 @@ You can create the Windows Forms application with FlowLayout control as follows:
 
 
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the FlowLayout with basic functionalities.
 
@@ -62,20 +62,19 @@ The FlowLayout control can be added to the application by dragging it from the t
 * Syncfusion.Shared.Base.dll
 
 
-![](FlowLayout_images/FlowLayout_img28.png)
+![Drag and drop flow layout from toolbox](FlowLayout_images/FlowLayout_img28.png)
 
 
 To add the form as a Container control of the FlowLayout, click `Yes` in a popup form which appears automatically before FlowLayout gets added.
 
-![](FlowLayout_images/FlowLayout_img30.png)
+![Alert message to add Flow layout as container control of form](FlowLayout_images/FlowLayout_img30.png)
 
 
 **Adding layout components**
 
 The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
 
-![](FlowLayout_images/FlowLayout_img29.png)
-
+![Adding child controls to flow layout](FlowLayout_images/FlowLayout_img29.png)
 
 
 ## Adding control manually using code
@@ -172,7 +171,7 @@ Me.Controls.Add(this.buttonAdv4)
 
 {% endtabs %}
 
-![](FlowLayout_images/FlowLayout_img31.png)
+![Adding child controls to flow layout](FlowLayout_images/FlowLayout_img31.png)
 
 ## Configuring FlowLayout
 
@@ -210,7 +209,7 @@ Me.flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertic
 
 {% endtabs %}
 
-![](Overview_images/Overview_img34.jpeg) 
+![Vertical flow layout](Overview_images/Overview_img34.jpeg) 
 
 
 
@@ -304,7 +303,7 @@ Me.flowLayout1.VGap = 20
 
 {% endtabs %}
 
-![](Overview_images/Overview_img35.jpeg) 
+![Horizontal and vertical gap between child controls in flow layout](Overview_images/Overview_img35.jpeg) 
 
 
 
@@ -385,7 +384,7 @@ Me.flowLayout1.ReverseRows = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img36.jpeg) 
+![Child controls arranged in reverse direction](Overview_images/Overview_img36.jpeg) 
 
 
 
@@ -427,8 +426,7 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Near
 
 {% endtabs %}
 
-![](Overview_images/Overview_img38.jpeg) 
-
+![Left aligned child controls in flow layout](Overview_images/Overview_img38.jpeg) 
 
 
 Once you specify the alignment of a FlowLayout as 'ChildConstraints', the Layout Manager will use a constraint-based layout logic based on the constraints specified on each Child component. During design time, the constraints can be specified for each Child control through the following extended property.
@@ -465,7 +463,7 @@ Me.flowLayout1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.ChildCon
 
 {% endtabs %}
 
-![](Overview_images/Overview_img39.jpeg) 
+![Child controls aligned with custom constraints](Overview_images/Overview_img39.jpeg) 
 
 
 
@@ -505,7 +503,7 @@ When the alignment is set to 'Justify', any extra space will be equally distribu
 
 N> The Alignment property should be set to `true` for the above properties to take effect.
 
-![](FlowLayout_images/FlowLayout_img1.png) 
+![Child controls with different horizontal alignment settings](FlowLayout_images/FlowLayout_img1.png) 
 
 Children with different HAlign Settings
 {:.caption}
@@ -572,7 +570,7 @@ Specifies if proportional row heights should be used in the horizontal layout. T
 
 	
 	
-![](FlowLayout_images/FlowLayout_img2.png)
+![Two proportionally aligned rows split the extra horizontal space between them](FlowLayout_images/FlowLayout_img2.png)
  
 Two Proportionally Aligned Rows Split the Extra Horizontal Space Between Them
 {:.caption}
@@ -654,7 +652,7 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 {% endtabs %}
 
-![](FlowLayout_images/FlowLayout_img14.jpeg)
+![Horizontally and vertically centered aligned child controls](FlowLayout_images/FlowLayout_img14.jpeg)
 
 
 
@@ -662,7 +660,7 @@ When the ProportionalRowHeight property is set to `true`, any extra space at the
 
 When resized to a smaller width, two rows are created resulting in the layout shown below.
 
-![](FlowLayout_images/FlowLayout_img15.jpeg)
+![New rows created on demand while resize container](FlowLayout_images/FlowLayout_img15.jpeg)
 
 
 ## Enabling constrained FlowLayout on a container
@@ -1089,18 +1087,18 @@ Steps to achieve the above layout and behavior are described below.
 
 N> During run time, the input controls get resized and repositioned appropriately based on the constraints provided.
 
-![](FlowLayout_images/FlowLayout_img18.jpeg)
+![Child controls repositioned based on container resize](FlowLayout_images/FlowLayout_img18.jpeg)
 
 
 
-![](FlowLayout_images/FlowLayout_img19.jpeg)
+![Multiple rows created to repositioned child controls based on container resize](FlowLayout_images/FlowLayout_img19.jpeg)
 
 
 ### AutoLabel control
 
 The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel will be automatically repositioned as the labeled control's position changes.
 
-![](FlowLayout_images/FlowLayout_img20.jpeg)
+![Auto label control to reposition based on resize](FlowLayout_images/FlowLayout_img20.jpeg)
 
 
 
@@ -1119,13 +1117,13 @@ The FlowLayout manager arranges the controls in the way it gets added into the C
 
 * You can rearrange the controls laid out by FlowLayout by right clicking the control and selecting the Bring To Front or Send To Back verbs in the designer.
 
-![](FlowLayout_images/FlowLayout_img22.jpeg)
+![Rearranging the child controls in designer using context menu](FlowLayout_images/FlowLayout_img22.jpeg)
 
 
 
 * Rearranging of Child controls of the FlowLayout can also be done by dragging and dropping them at design time.
 
-![](FlowLayout_images/FlowLayout_img23.jpeg)
+![Rearranging the child controls in designer by drag and drop child controls](FlowLayout_images/FlowLayout_img23.jpeg)
 
 
 
@@ -1137,13 +1135,13 @@ We can also programmatically change the order of the controls laid out by the Fl
 
 
 
-![](FlowLayout_images/FlowLayout_img24.jpeg)
+![Alert to add Flow Layout as container control to form](FlowLayout_images/FlowLayout_img24.jpeg)
 
 
 
 * Drag another three Panels onto the Panel1. The Flow Layout automatically arranges the Child controls as given below.
 
-![](FlowLayout_images/FlowLayout_img25.jpeg)
+![Arranged child controls in Flow layout](FlowLayout_images/FlowLayout_img25.jpeg)
 
 
 
@@ -1233,14 +1231,12 @@ End Sub
 
 {% endtabs %}
 
-![](FlowLayout_images/FlowLayout_img26.jpeg)
+![Arranged child controls in single row in flow layout](FlowLayout_images/FlowLayout_img26.jpeg)
 
 
 * At run time when you click the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
 
-![](FlowLayout_images/FlowLayout_img27.jpeg)
-
-
+![Reorder child controls in Flow layout](FlowLayout_images/FlowLayout_img27.jpeg)
 
 
 {% seealso %}

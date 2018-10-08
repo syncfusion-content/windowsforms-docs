@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Features overview of TabbedMDIManager for Windows Forms.
+title: Overview of TabbedMDIManager control | Windows Forms | Syncfusion
+description: TabbedMDIManager control allows user to create multiple document interface applications to display one or more tabbed windows in its client area.
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The `TabbedMDIManager` provides a new TabbedMDI layout mode as an alternative to the default Cascade and Tiled modes, like Visual Studio .NET IDE. It offers tabbed groups support that allows the end-user to create multiple document interface (MDI) applications to display one or more tabbed windows in the MDI client area and complete customization option for the control. If an application contains more than one MDI tabbed group, the groups are separated by splitters. With a single function call, you can switch between `TabbedMDI` and `RegularMDI` layout modes.
 
-![](Overview_images/TabbedMDIManager.png)
+![Tabbed MDI forms for Windows Forms](Overview_images/TabbedMDIManager.png)
 
 ## Key features 
 

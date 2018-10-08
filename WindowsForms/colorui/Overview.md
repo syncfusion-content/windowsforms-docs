@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion ColorUIControl for WindowsForms
+description: A quick overview about the ColorUIControl or selecting colors in their Windows Forms applications using palette type visual interface
 platform: WindowsForms
 control: ColorUI 
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 The Essential Tools ColorUIControl allows .NET developers to provide a standard user-interface which, is similar to the Visual Studio .NET color picker drop-down, for selecting colors in their Windows Forms applications. The ColorUIControl implements a palette type visual interface comprising of the System, Standard, Custom and UserColor color groups. The control can be used either as a regular control that is hosted within a parent container or as a drop-down. Refer [ColorPickerButton](/windowsforms/colorpickerbutton/overview) to use ColorUIControl as drop down.
 
-![](ColorUI_images/Overview_img225.jpeg) 
+![Overview of ColorUIControl](ColorUI_images/Overview_img225.jpeg) 
 
 The .NET framework provides a color dialog control which, allows applications to collect color information from users. However, the color dialog control does not provide any way to place a control within the layout of the application in order to collect color information. The Essential Tools ColorUIControl provides an easy to use color palette control that can be placed inline in applications.  
 

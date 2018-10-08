@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of HTMLUI control | Windows Forms | Syncfusion
+description: HTMLUI is a WebBrowser control that displays web pages with support for displaying cascade style sheets, loading custom controls etc.
 platform: WindowsForms
 control: HTML UI
 documentation: ug

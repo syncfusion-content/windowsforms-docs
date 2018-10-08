@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of Syncfusion RadioButtonAdv for Windows Forms
+description: An overview of RadioButtonAdv for Windows Forms and its key features like appearance with theme support and image setting
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 RadioButtonAdv functions similar to the Windows standard RadioButton but it has some additional enhancements. It helps to provide a great look and feel to the RadioButtons. It supports themes, gradient colors, images and shadow text.
 
-![](Overview_images/Overview_img628.jpeg) 
+![Overview of RadioButtonAdv](Overview_images/Overview_img628.jpeg) 
 
 {%seealso%}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Area | Windows Forms | Syncfusion
-description: chart area
+description: This section explain about chart area and it's customization in different ways.
 platform: windowsforms
 control: Chart
 documentation: ug

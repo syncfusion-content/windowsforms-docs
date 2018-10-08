@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features | WindowsForms | Syncfusion
-description: Concepts and Features
+description: This section explains about interactive features like tooltip support available in GroupView control for Windows Forms
 platform: WindowsForms
 control: GroupView
 documentation: ug
@@ -51,7 +51,7 @@ Me.groupView1.ClipSelectionBounds = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img85.png)
+ ![Items listed in GroupView](Overview_images/Overview_img85.png)
  
  ButtonView of the 'Cut' Item
  {:.caption}
@@ -103,4 +103,4 @@ Me.groupView1.ShowToolTips = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img86.jpeg) 
+![Tooltip for list items in GroupView](Overview_images/Overview_img86.jpeg) 

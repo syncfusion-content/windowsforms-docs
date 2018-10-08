@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion PopupControlContainer for Windows Forms
+description: Overview of Syncfusion PopupControlContainer, in which child controls are loaded and then showed like a popup
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -16,13 +16,13 @@ A PopupControlContainer is a panel-derived control that allows users to populate
 
 The PopupControlContainer was implemented to support creating custom control-rich popups and show them beside a popup-parent, such as a context menu. 
 
-![](Container-Control-Images/Overview_img354.jpeg) 
+![Overview of Syncfusion PopupControlContainer](Container-Control-Images/Overview_img354.jpeg) 
 
 
 
 In code, call ShowPopup to show the popup anywhere in an application. It also allows you to align a popup beside a control (like in combo boxes) or popup at any given point (like in context menus). 
 
-![](Container-Control-Images/Overview_img355.jpeg) 
+![PopupControlContainer with TextBox](Container-Control-Images/Overview_img355.jpeg) 
 
 
 

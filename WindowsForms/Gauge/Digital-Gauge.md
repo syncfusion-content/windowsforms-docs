@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Digital-Gauge | WindowsForms | Syncfusion
-description: digital gauge
+description: Digital Gauge is data visualization control used to display alphanumeric characters in digital mode. Supports different segment styles.
 platform: WindowsForms
 control: Gauge
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
 
-# Key features
+## Key features
 
 * **Segment spacing** - Provides option to set user defined spacing between segments through a float value.
 
@@ -23,7 +23,7 @@ documentation: ug
 
 * **Visual style** - Supports rich set of visual styles to customize the look and feel.
 
-# Getting started
+**Getting started**
 
 This section describes how to add [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -36,7 +36,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with DigitalGauge
+**Creating simple application with DigitalGauge**
 
 You can create the Windows Forms application with [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control as follows:
 
@@ -44,7 +44,7 @@ You can create the Windows Forms application with [DigitalGauge](https://help.sy
 2. [Add control via designer](#adding-control-via-designer)
 3. [Add control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the DigitalGauge with basic functionalities.
 
@@ -55,9 +55,9 @@ The [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfu
 * Syncfusion.Gauge.Windows.dll
 * Syncfusion.Shared.Base.dll
 
-![](Digital-Gauge_images/DigitalGauge_img2.png)
+![Drag and Drop Digital Gauge from Toolbox](Digital-Gauge_images/DigitalGauge_img2.png)
 
-![](Digital-Gauge_images/DigitalGauge_img3.png)
+![Digital Gauge for Windows Forms with smart tag support for designer](Digital-Gauge_images/DigitalGauge_img3.png)
 
 
 ## Add control manually using code
@@ -109,7 +109,7 @@ Me.Controls.Add(digitalGauge1)
 
 {% endtabs %}
 
-![](Digital-Gauge_images/DigitalGauge_img1.png)
+![Digital Gauge for Windows Forms](Digital-Gauge_images/DigitalGauge_img1.png)
 
 ##  Concepts and features
 
@@ -172,7 +172,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Black
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img1.png)
+![Digital Gauge with black theme](Digital-Gauge_images/Digital-Gauge_img1.png)
 
 
 **Blue**
@@ -195,7 +195,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Blue
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img2.png)
+![Office style Digital Gauge](Digital-Gauge_images/Digital-Gauge_img2.png)
 
 
 **Silver**
@@ -218,7 +218,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Silve
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img3.png)
+![Digital Gauge with silver background](Digital-Gauge_images/Digital-Gauge_img3.png)
 
 
 **Metro**
@@ -241,7 +241,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Metro
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img4.png)
+![Metro theme digital gauge](Digital-Gauge_images/Digital-Gauge_img4.png)
 
 **Office2016White**
 
@@ -268,7 +268,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 {% endtabs %}
 
 
- ![](Digital-Gauge_images/Digital-Gauge_img13.png)
+ ![Office 2016 white theme digital gauge](Digital-Gauge_images/Digital-Gauge_img13.png)
 
 
 **Office2016Colorful**
@@ -295,7 +295,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 {% endtabs %}
 
- ![](Digital-Gauge_images/Digital-Gauge_img16.png)
+ ![Office 2016 Colorful theme digital gauge](Digital-Gauge_images/Digital-Gauge_img16.png)
 
 **Office2016DarkGray**
 
@@ -321,7 +321,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img14.png)
+![Office 2016 dark gray theme digital gauge](Digital-Gauge_images/Digital-Gauge_img14.png)
 
 **Office2016Black**
 
@@ -347,7 +347,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img15.png)
+![Office 2016 black theme digital gauge](Digital-Gauge_images/Digital-Gauge_img15.png)
 
 **Custom**
 
@@ -358,15 +358,15 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
  **Step 1:**  Need to add DigitalGauge control to Form Designer.
 
 
-![](Digital-Gauge_images/Digital-Gauge_img17.png)
+![Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img17.png)
 
  **Step 2:** Set the VisualStyle as Custom.
 
-![](Digital-Gauge_images/Digital-Gauge_img18.png)
+![Customized Digital Gauge with smart tag](Digital-Gauge_images/Digital-Gauge_img18.png)
 
  **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in DigitalGauge control.
 
-![](Digital-Gauge_images/Digital-Gauge_img19.png)
+![Customized Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img19.png)
 
 {% tabs %}
 
@@ -425,9 +425,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 **Output:**
 
-![](Digital-Gauge_images/Digital-Gauge_img21.png)
-
-
+![Customized Digital Gauge with gradient background](Digital-Gauge_images/Digital-Gauge_img21.png)
 
 ### Character type
 
@@ -479,9 +477,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img5.png)
-
-
+![Digital gauge with dotted character](Digital-Gauge_images/Digital-Gauge_img5.png)
 
 #### Seven segments
 
@@ -503,9 +499,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img6.png)
-
-
+![Digital gauge with seven segment character](Digital-Gauge_images/Digital-Gauge_img6.png)
 
 #### Fourteen segments
 
@@ -527,10 +521,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img7.png)
-
-
-
+![Digital gauge with fourteen segment character](Digital-Gauge_images/Digital-Gauge_img7.png)
 
 
 #### Sixteen segments
@@ -553,9 +544,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img8.png)
-
-
+![Digital gauge with sixteen segment character](Digital-Gauge_images/Digital-Gauge_img8.png)
 
 ### Character count
 
@@ -580,9 +569,7 @@ Me.digitalGauge1.Value = 123456
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img9.png)
-
-
+![Digital gauge with four characters](Digital-Gauge_images/Digital-Gauge_img9.png)
 
 ### Segment spacing
 
@@ -611,9 +598,7 @@ Me.digitalGauge1.Value = 123456
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img10.png)
-
-
+![Digital gauge with space between segments](Digital-Gauge_images/Digital-Gauge_img10.png)
 
 ### Show visible segments
 
@@ -635,9 +620,7 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img11.png)
-
-
+![Digital guage value showing invisible segments](Digital-Gauge_images/Digital-Gauge_img11.png)
 
 ### RoundCornerRadius
 
@@ -659,9 +642,7 @@ Me.digitalGauge1.RoundCornerRadius = 50
 
 {% endtabs %}
 
-![](Digital-Gauge_images/Digital-Gauge_img12.png)
-
-
+![Digital gauge frame with rounder corners](Digital-Gauge_images/Digital-Gauge_img12.png)
 
 ### Data binding
 

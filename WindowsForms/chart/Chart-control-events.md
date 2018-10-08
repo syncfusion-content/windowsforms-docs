@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-control-events | Windows Forms | Syncfusion
-description: chart control events
+description: This section explains about the events in the chart control
 platform: windowsforms
 control: Chart
 documentation: ug

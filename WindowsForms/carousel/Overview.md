@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Features overview of Carousel control for Windows Forms
+title: Overview of Carousel control | Windows Forms | Syncfusion
+description: Overview section of Carousel control for Windows Forms provides details about its essential features
 platform: WindowsForms
 control: Carousel
 documentation: ug

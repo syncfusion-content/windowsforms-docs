@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GridBagLayout | WindowsForms | Syncfusion
-description: gridbaglayout
+description: GridBagLayout allows user to arrange the child controls in row and columns like grid. Supports spanning of child controls to more than one cell.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 `GridBagLayout` is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows can vary and the Child controls may span more than one cell.
 
-![](Overview_images/Overview_img64.jpeg)
+![GridBagLayout for Windows forms allows to arrange child controls in row and columns like grid](Overview_images/Overview_img64.jpeg)
 
 GridBagLayout is also used to layout the following controls:
 
@@ -26,7 +26,7 @@ GridBagLayout is also used to layout the following controls:
 
 **Fill type** - Provides option to set the position of child control such as horizontal, vertical, both or none.
 
-# Getting started
+**Getting started**
 
 This section describes how to add `GridBagLayout` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -39,7 +39,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with GridBagLayout
+**Creating simple application with GridBagLayout**
 
 You can create the Windows Forms application with GridBagLayout control as follows:
 
@@ -48,7 +48,7 @@ You can create the Windows Forms application with GridBagLayout control as follo
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the GridBagLayout with basic functionalities.
 
@@ -58,17 +58,17 @@ The GridBagLayout control can be added to the application by dragging it from th
 
 * Syncfusion.Shared.Base.dll
 
-![](Overview_images/GridBagLayout_img1.png)
+![Drag and drop GridBagLayout from toolbox](Overview_images/GridBagLayout_img1.png)
 
 To add the form as a Container control of the GridBagLayout, a popup will appear automatically before it gets added.
 
-![](Overview_images/GridBagLayout_img2.png)
+![Alert to add GridBagLayout as container control to form](Overview_images/GridBagLayout_img2.png)
 
 **Adding Layout components through designer**
 
 The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
 
-![](Overview_images/GridBagLayout_img3.png)
+![Adding child controls to GridBagLayout](Overview_images/GridBagLayout_img3.png)
 
 ## Adding control manually using code
 
@@ -158,7 +158,7 @@ Me.Controls.Add(this.buttonAdv3)
 
 {% endtabs %}
 
-![](Overview_images/GridBagLayout_img4.png)
+![Adding child controls to GridBagLayout](Overview_images/GridBagLayout_img4.png)
 
 
 
@@ -192,7 +192,7 @@ Specifies the row in the virtual grid, where the component's layout bounds begin
 
 The following screen shot shows four buttons with non-zero weights with the GridPostX and GridPostY setting as follows: (0, 0), (0, 1), (1 ,0), (1, 1), resulting in a 2 x 2 virtual grid.
 
-![](Overview_images/Overview_img66.jpeg)
+![Arranging child controls in two and two column](Overview_images/Overview_img66.jpeg)
 
 
 
@@ -220,7 +220,7 @@ Specifies the weight of this component in containing the extra vertical space. T
 
 By default, the weights are set to 'Null', in which case, the available space is not distributed to the rows and columns at all. The virtual grid will simply be centered to the Container's client area, as shown below.
 
-![](Overview_images/Overview_img67.jpeg)
+![Arranged items with no horizontal vertical space between items](Overview_images/Overview_img67.jpeg)
 
 
 
@@ -228,7 +228,7 @@ Following is another setting when the weights are different (the Child controls 
 
 In this screen shot, the WeightX and WeightY of button1 is (2, 1), button2 is (1, 2), button3 is (1, 1) and button4 is (1, 1). Based on these settings, the horizontal space is distributed between the 1st and 2nd column in the ratio 2:1 and the vertical space is distributed between the 2 rows in the ratio 2:1.
 
- ![](Overview_images/Overview_img68.jpeg)
+ ![Arranged child control with different row span](Overview_images/Overview_img68.jpeg)
 
 
 
@@ -258,7 +258,7 @@ Specifies the number of rows this component should span in the virtual grid. The
 
 The below screen shot shows button1 spanning 2 columns (CellSpanX = 2 and Fill = Horizontal). This also results in button1 overlapping button3, which also occupies the (1, 0) cell.
 
-![](Overview_images/Overview_img70.jpeg)
+![Arranged child control with different column span](Overview_images/Overview_img70.jpeg)
 
 
 
@@ -282,7 +282,7 @@ Specifies the justification of a component within it's available layout bounds (
 
 The following screenshot shows the same four buttons with different anchor settings. Button1 is set to 'NorthEast', button2 is set to 'South', button3 is set to 'East', and button4 is set to 'NorthWest'.
 
-![](Overview_images/Overview_img71.jpeg)
+![Dock child controls at different side](Overview_images/Overview_img71.jpeg)
 
 
 
@@ -308,7 +308,7 @@ Specifies whether to resize a component when the component's layout bounds are l
 
 The following screen shot shows the four buttons with different fill settings. In the following screen shot, button1 is set to 'Horizontal', button2 is set to 'Vertical' (with the Anchor property set to East), button3 is set to 'Both', and button4 is set to 'None'.
 
-![](Overview_images/Overview_img73.jpeg)
+![Child control fill the empty space in container](Overview_images/Overview_img73.jpeg)
 
 
 
@@ -356,7 +356,7 @@ Specifies the extra space that the manager adds around a component's preferred b
 
 The buttons below are all of equal non-zero weights and set to Fill.Both. However, they have an Insets property of (5,5,5,5), giving it a padding of 5 pixels on all sides.
 
-![](Overview_images/Overview_img74.jpeg)
+![Padding between child controls](Overview_images/Overview_img74.jpeg)
 
 
 
@@ -416,7 +416,7 @@ Me.gridBayLayout.SetConstraints(Me.button1, New Syncfusion.Windows.Forms.Tools.G
 
 Similar to the FlowLayout and GridLayout Managers, the Child controls of the GridBagLayout can also be rearranged by dragging and dropping them at design time.
 
-![](Overview_images/Overview_img75.jpeg)
+![Rearranging child control in designer by dragging child controls](Overview_images/Overview_img75.jpeg)
 
 {% seealso %}
 

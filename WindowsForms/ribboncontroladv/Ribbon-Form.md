@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon-Form | WindowsForms | Syncfusion
-description: ribbon form
+description: A quick go through of RibbonForm which replaces the default form Title and Control box button to enable different Visual styles to the Ribbon
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -67,11 +67,11 @@ Me.EnableAeroTheme = True
 
 *	Default Theme
 
-![](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
+![IsFormManager enabled](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
 
 *	Aero Theme
 
-![](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
+![Aero Theme enabled](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
 
 
 ## Customization

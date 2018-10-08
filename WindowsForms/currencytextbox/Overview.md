@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview of Syncfusion CurrencyTextBox for Windows Forms
+description: Overview of Syncfusion CurrencyTextBox which has currency specific behavior in edit controls and supports Culture formatting 
 platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-Essential Tools provides the CurrencyTextBox control for currency specific behavior in edit controls. CurrencyTextBox is derived from System.Windows.Forms.TextBox and implements all the functionality needed for formatting currency input and validation.
+Essential Tools provides control for currency specific behavior in edit controls. CurrencyTextBox is derived from System.Windows.Forms.TextBox and implements all the functionality needed for formatting currency input and validation.
 
-![](Overview_images/Overview_img488.png) 
+![Overview of CurrencyTextBox](Overview_images/Overview_img488.png) 
 
 
 
