@@ -11,11 +11,12 @@ documentation: ug
 
 [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
-## Caption 
+
+## Caption bar text
 
 The text to display in the caption bar of the MessageBoxAdv.
 
-## Text 
+## Text
 
 Represents the text which need to be displayed in the MessageBoxAdv.
 
