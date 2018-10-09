@@ -11,11 +11,12 @@ documentation: ug
 
 [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv~Show.html) function.
 
-## Caption 
+
+## Caption bar text
 
 The text to display in the caption bar of the MessageBoxAdv.
 
-## Text 
+## Text
 
 Represents the text which need to be displayed in the MessageBoxAdv.
 
@@ -54,7 +55,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OK, M
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img20.jpg) 
+![Ok](MessageBoxAdv_images/MessageBoxAdv_img20.jpg) 
  
 ### OkCancel
 
@@ -80,7 +81,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OKCan
 
 {% endtabs %}
  
- ![](MessageBoxAdv_images/MessageBoxAdv_img21.jpg) 
+ ![Ok cancel](MessageBoxAdv_images/MessageBoxAdv_img21.jpg) 
 
 ### YesNo
 
@@ -106,7 +107,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %} 
 
-![](MessageBoxAdv_images/MessageBoxAdv_img22.jpg) 
+![Yes no](MessageBoxAdv_images/MessageBoxAdv_img22.jpg) 
 
 ### YesNoCancel
 
@@ -132,7 +133,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img23.jpg) 
+![Yes no cancel](MessageBoxAdv_images/MessageBoxAdv_img23.jpg) 
  
 ### RetryCancel
 
@@ -158,7 +159,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Retry
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img24.jpg) 
+![Retry cancel](MessageBoxAdv_images/MessageBoxAdv_img24.jpg) 
 
 ### AbortRetryIgnore
 
@@ -184,7 +185,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Abort
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img25.jpg) 
+![Abort retry ignore](MessageBoxAdv_images/MessageBoxAdv_img25.jpg) 
 
 ## Icon 
 
@@ -222,7 +223,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, M
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img33.png)
+![Icon support](MessageBoxAdv_images/MessageBoxAdv_img33.png)
 
 The following code example illustrates adding custom icons in MessageBoxAdv.
 
@@ -246,7 +247,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img26.jpg)
+![Icon support](MessageBoxAdv_images/MessageBoxAdv_img26.jpg)
 
 ## Right to left support
 
@@ -272,7 +273,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img28.jpg)  
+![Right to left support](MessageBoxAdv_images/MessageBoxAdv_img28.jpg)  
 
 ## Details view
 
@@ -296,9 +297,9 @@ MessageBoxAdv.Show(Me, "Save changes?", "Warning", MessageBoxButtons.OKCancel, i
 
 Eg: Detail view 
 
-![](MessageBoxAdv_images/MessageBoxAdv_img18.jpg)
+![Details view support](MessageBoxAdv_images/MessageBoxAdv_img18.jpg)
 
 Eg: Collapsed view
 
-![](MessageBoxAdv_images/MessageBoxAdv_img19.jpg)
+![Collapsed view](MessageBoxAdv_images/MessageBoxAdv_img19.jpg)
 

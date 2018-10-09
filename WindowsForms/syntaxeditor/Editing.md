@@ -190,14 +190,14 @@ When FIPS is enabled, clipboard operations of the EditControl are affected due t
 
 {% highlight C# %}
 
-this.editControl1.EnableMD5 = true;
+this.editControl1.EnableMD5 = false;
 
 {% endhighlight %}
 
 
 {% highlight VB %}
 
-Me.editControl1.EnableMD5 = True
+Me.editControl1.EnableMD5 = False
 
 {% endhighlight %}
 
