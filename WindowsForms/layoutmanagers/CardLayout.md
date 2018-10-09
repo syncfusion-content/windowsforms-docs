@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CardLayout | WindowsForms | Syncfusion
-description: cardlayout
+description: CardLayout is a layout manager that organizes the controls in stack of cards like appearance. It support different image settings and more.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -16,11 +16,11 @@ N> The WizardControl uses the CardLayout component internally in it's implementa
 
 In it's simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as given below.
 
-![](Overview_images/Overview_img23.jpeg)
+![CardLayout for Windows Forms](Overview_images/Overview_img23.jpeg)
 
 N> CardLayout does not arrange the Child components automatically like the other Layout Managers.
 
-# Key Features
+## Key Features
 
 **Card name** - Provides option to set a unique card name for child controls.
 
@@ -30,7 +30,7 @@ N> CardLayout does not arrange the Child components automatically like the other
 
 **Layout mode** - Provides options to set layout modes such as default or fill.
 
-# Getting started
+**Getting started**
 
 This section describes how to add `CardLayout` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -42,7 +42,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with CardLayout
+**Creating simple application with CardLayout**
 
 You can create the Windows Forms application with CardLayout control as follows:
 
@@ -50,7 +50,7 @@ You can create the Windows Forms application with CardLayout control as follows:
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the CardLayout with basic functionalities.
 
@@ -60,17 +60,17 @@ The CardLayout control can be added to the application by dragging it from the t
 
 * Syncfusion.Shared.Base.dll
 
-![](CardLayout_images/CardLayout_img4.png) 
+![Drag and drop CardLayout from toolbox](CardLayout_images/CardLayout_img4.png) 
 
 To add the form as a Container control of the CardLayout, click `Yes` in a popup form which appears automatically before CardLayout gets added.
 
-![](CardLayout_images/CardLayout_img6.png) 
+![Alert to add CardLayout to form](CardLayout_images/CardLayout_img6.png) 
 
 **Adding Layout components through designer**
 
 The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
 
-![](CardLayout_images/CardLayout_img5.png) 
+![Adding controls into CardLayout](CardLayout_images/CardLayout_img5.png) 
 
 
 ## Adding control manually using code
@@ -161,7 +161,7 @@ Me.Controls.Add(this.buttonAdv3)
 
 {% endtabs %}
 
-![](CardLayout_images/CardLayout_img9.png) 
+![Adding child controls to CardLayout](CardLayout_images/CardLayout_img9.png) 
 
 
 ## Configuring CardLayout
@@ -205,9 +205,7 @@ Me.cardLayout1.SetCardName(Me.label1, "Card1")
 
 {% endtabs %}
 
-![](Overview_images/Overview_img24.jpeg) 
-
-
+![Set card name for chid control](Overview_images/Overview_img24.jpeg) 
 
 The methods associated with the above property are given below.
 
@@ -329,7 +327,7 @@ For example, when the CardLayout is added to a form, and a Panel control is adde
 
 In the following screenshot, Panel control acts as the Container control and Label control acts as a card.
 
-![](CardLayout_images/CardLayout_img1.png)
+![Adding child controls as card in CardLayout through designer](CardLayout_images/CardLayout_img1.png)
 
 
 ### Image settings
@@ -369,7 +367,7 @@ Me.label1.Image = DirectCast((resources.GetObject("label1.Image")), System.Drawi
 
 {% endtabs %}
  
- ![](CardLayout_images/CardLayout_img2.png) 
+ ![Background with CardLayout](CardLayout_images/CardLayout_img2.png) 
 
 
 #### Size
@@ -416,7 +414,7 @@ Me.cardLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.CardLayoutMode.Fill
 {% endtabs %}
 
  
- ![](CardLayout_images/CardLayout_img3.png) 
+ ![Card fill the container in CardLayout](CardLayout_images/CardLayout_img3.png) 
 
 
 ## Browsing through cards
@@ -461,7 +459,7 @@ Me.cardLayout1.SelectedCard = "Card1"
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img29.jpeg) 
+ ![Change selected card through smart tag in designer](Overview_images/Overview_img29.jpeg) 
 
 
 
@@ -546,13 +544,13 @@ End Sub
 
 {% endtabs %}
 
-![](Overview_images/Overview_img31.jpeg)
+![Move to next card from collection of cards in CardLayout](Overview_images/Overview_img31.jpeg)
 
 
 
 At run time, cards can be selected using the items in the ComboBox or by Button clicks.
 
-![](Overview_images/Overview_img32.jpeg)
+![Select the card from the collection of cards thorugh drop down list](Overview_images/Overview_img32.jpeg)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GridLayout | WindowsForms | Syncfusion
-description: gridlayout
+description: GridLayout allows user to arrange the child controls in a virtual grid containing rows and columns. 
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 `GridLayout` is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
 
-![](Overview_images/Overview_img60.jpeg)
+![GridLayout for Windows Forms allows to arrange child controls in a grid containing rows and columns](Overview_images/Overview_img60.jpeg)
 
 ## Key features
 
@@ -18,7 +18,7 @@ documentation: ug
 
 **HGap and VGap** - Provides option to set the gaps between child control such as horizontal and vertical direction
 
-# Getting started
+**Getting started**
 
 This section describes how to add `GridLayout` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -31,7 +31,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with GridLayout
+**Creating simple application with GridLayout**
 
 You can create the Windows Forms application with GridLayout control as follows:
 
@@ -39,7 +39,7 @@ You can create the Windows Forms application with GridLayout control as follows:
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code)
 
-### Creating the project
+**Creating the project**
 
 Create a new Windows Forms project in the Visual Studio to display the GridLayout with basic functionalities.
 
@@ -49,17 +49,17 @@ The GridLayout control can be added to the application by dragging it from the t
 
 * Syncfusion.Shared.Base.dll
 
-![](Overview_images/GridLayout_img1.png)
+![Drag and drop GridLayout from toolbox](Overview_images/GridLayout_img1.png)
 
 To add the form as a Container control of the GridLayout, a popup will appear automatically before it gets added.
 
-![](Overview_images/GridLayout_img2.png)
+![Alert message to add GridLayout as Container control to form](Overview_images/GridLayout_img2.png)
 
 **Adding Layout components through designer**
 
 The child controls can be added to the layout by dragging it from the toolbox and dropping it in a designer view.
 
-![](Overview_images/GridLayout_img3.png)
+![Adding child controls in GridLayout](Overview_images/GridLayout_img3.png)
 
 ## Adding control manually using code
 
@@ -165,7 +165,7 @@ Me.gridLayout1.SetParticipateInLayout(Me.button4, true);
 
 {% endtabs %}
 
-![](Overview_images/GridLayout_img4.png)
+![Adding child controls in GridLayout](Overview_images/GridLayout_img4.png)
 
 
 ## Configuring GridLayout
@@ -264,7 +264,7 @@ Me.gridLayout1.VGap=10
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img61.jpeg)
+ ![Horizontal and vertical space between items in GridLayout](Overview_images/Overview_img61.jpeg)
 
 
 
@@ -337,7 +337,7 @@ Me.gridLayout1.SetParticipateInLayout(Me.button1,False)
 
 The Child controls of the GridLayout can be rearranged by dragging-and-dropping them at design time.
 
-![](Overview_images/Overview_img63.jpeg)
+![Rearranging the controls of GridLayout in designer by drag and drop](Overview_images/Overview_img63.jpeg)
 
 
 

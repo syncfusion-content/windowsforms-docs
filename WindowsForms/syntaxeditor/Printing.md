@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing functionalities in EditControl
-description: This section explains about the printing support in EditControl
+title: Printing functionalities in EditControl | Windows Forms | Syncfusion
+description: This section explains about printing the EditControl content by using the print option from the print preview or programmatically
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -32,7 +32,7 @@ Me.editControl1.Print()
 
 {% endtabs %}
 
-![](Printing_images/Printing_img1.jpeg)
+![Print dialog in syntax editor](Printing_images/Printing_img1.jpeg)
 
 In brief, the printing functionality of the EditControl supports the following features:
 
@@ -74,7 +74,7 @@ Me.editControl1.PrintPreview()
 
 {% endtabs %}
 
-![](Printing_images/Printing_img2.jpeg)
+![Print preview of content in syntax editor](Printing_images/Printing_img2.jpeg)
 
 ## Specifying printing options
 
@@ -207,7 +207,7 @@ End Sub
 
 The following image shows a typical page with a header and footer in Print Preview mode.
 
-![](Printing_images/Printing_img3.jpeg)
+![Print preview of content with header and footer in syntax editor](Printing_images/Printing_img3.jpeg)
 
 ### Show or hide page border
 

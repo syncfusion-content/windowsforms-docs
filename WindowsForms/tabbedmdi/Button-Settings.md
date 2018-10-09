@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Button-Settings | WindowsForms | Syncfusion
-description: button settings
+description: This section explains about various buttons available in TabbedMDIManager control and their customization
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
@@ -81,7 +81,7 @@ End Sub
 
 {% endtabs %}
 
-![](Button-Settings_images/Button-Settings_img1.jpeg)
+![Drop down button to display list of tabbed mdi forms](Button-Settings_images/Button-Settings_img1.jpeg)
 
 
 
@@ -139,7 +139,7 @@ Me.tabbedMDIManager.ShowCloseButton = True
 
 {% endtabs %}
 
- ![](Button-Settings_images/Button-Settings_img2.jpeg)
+ ![Tabbed MDI form with separate close button](Button-Settings_images/Button-Settings_img2.jpeg)
 
 
 
@@ -166,7 +166,7 @@ Me.tabbedMDIManager.CloseButtonColor = Color.Red
 
 {% endtabs %}
 
-![](Button-Settings_images/Button-Settings_img3.jpeg)
+![Customized close button color in tabbed mdi forms](Button-Settings_images/Button-Settings_img3.jpeg)
 
 
 

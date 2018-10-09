@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State-Persistence | WindowsForms | Syncfusion
-description: state persistence
+description: This section explains about how to serialize and de-serialize the dock state in different available formats
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview of GroupBar control | Windows Forms | Syncfusion
+description: GroupBar control provides a navigation UI similar to Microsoft outlook taskbar with support to expand and collapse a view using header and outlook style.
 platform: WindowsForms
 control: GroupBar
 documentation: ug

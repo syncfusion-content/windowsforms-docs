@@ -13,9 +13,9 @@ This feature enables you to apply new Metro styles to the Schedule control.
 
 ### Use case scenario
 
-The Metro theme support is useful for commercial applications in order to attract end users with inspiring UI look and feel.
+The Metro theme support is useful for commercial applications to attract end users with inspiring UI look and feel.
 
-### Properties
+### Property
 
 <table>
 <tr>
@@ -25,10 +25,10 @@ Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-This is an enumeration type property. It is used to get or set the visual styles (skins) such as Office2010, Office2007, Office2003, Metro, etc.</td></tr>
+This is an enumeration type property used to get or set the visual styles (skins) such as Office2010, Office2007, Office2003, Metro, etc.</td></tr>
 </table>
 
-### Events
+### Event
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Occurs when the ThemesEnabled property is changed.</td></tr>
 
 ## Applying Metro Theme to the Schedule Control
 
-You can apply the Metro theme to the Schedule control by setting the GridVisualStyles property as Metro. The following code example illustrates this.
+You can apply Metro theme to the Schedule control by setting the GridVisualStyles property as Metro. 
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,5 @@ this.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfu
 Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusion.Windows.Forms.GridVisualStyles.Metro
 {% endhighlight %}
 {% endtabs %}
-
-The following screenshot is a sample output for the previous code.
 
 ![](Metro-Theme-for-Essential-Schedule_images/Metro-Theme-for-Essential-Schedule_img1.png)

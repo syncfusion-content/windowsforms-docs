@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion DateTimePickerAdv for WindowsForms
-description: Overview of DateTimePickerAdv which is combination of Button and a MonthCalendarAdv as a popup with the customizable UI
+title: Overview of Calendar control | Windows Forms | Syncfusion
+description: Calendar control allows users to easily select one or more dates, supports month, year and decade views, date customization etc.
 platform: WindowsForms
 control: Calendar
 documentation: ug
@@ -10,11 +10,7 @@ documentation: ug
 
 DateTimePickerAdv control contains embedded calendar control which pops-up on clicking the dropdown button at the end of the control. The popup calendar is a MonthCalendarAdv control and hence supports all the properties of the MonthCalendarAdv control. These properties of the calendar can be accessed using DateTimePickerAdv.Calendar.TodayButton _(for example)_property. 
 
-![Overview of DateTimePickerAdv](Calendar_Images/Overview_img201.jpeg) 
-
-
-
-
+![Month Calendar for Windows Forms](Calendar_Images/Overview_img201.jpeg) 
 
 Additionally, the calendar popup can be customized using the DateTimePickerAdv properties. Refer Customizing the Calendar topic.
 
