@@ -34,11 +34,11 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.Single
 
 The following image shows for a single mode row selection.
 
-![](Selection_images/selection1.png)
+![Single Row Selection](Selection_images/selection1.png)
 
 The following image shows for a single mode cell selection.
 
-![](Selection_images/selection14.png)
+![Single Cell Selection](Selection_images/selection14.png)
 
 N> When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing Space key.
 
@@ -59,11 +59,11 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.Extended
 
 The following image shows for extended mode row selection.
 
-![](Selection_images/selection2.png)
+![Multiple row selection](Selection_images/selection2.png)
 
 The following image shows for extended mode cell selection.
 
-![](Selection_images/selection15.png)
+![Multiple cell selection](Selection_images/selection15.png)
 
 N>  When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is `Multiple`, multiple rows or cells can be selected or deselected by clicking the respective rows or cells. In multiple selection, pressing navigation keys will move the current cell alone. The rows or cells can be selected or deselected by pressing the Space key.
 
@@ -77,11 +77,11 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.Multiple
 {% endtabs %}
 
 The following image shows for multiple mode row selection.
-![](Selection_images/selection3.png)
+![multiple mode row selection](Selection_images/selection3.png)
 
 The following image shows for multiple mode cell selection.
 
-![](Selection_images/selection16.png)
+![multiple mode cell selection](Selection_images/selection16.png)
 
 ### Disable the selection
 
@@ -195,7 +195,7 @@ For Each record In records
 Next record
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection4.png)
+![Selected Items](Selection_images/selection4.png)
 
 ### Process Selection using Methods
 SfDataGrid Allows to select a range of rows through [SelectRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectRows.html) method.
@@ -207,7 +207,7 @@ this.sfDataGrid1.SelectRows(3, 6);
 Me.sfDataGrid1.SelectRows(3, 6)
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection5.png)
+![SelectRows method](Selection_images/selection5.png)
 
 SfDataGrid allows you to select a range of cells through the [SelectCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectCells.html) method.
 
@@ -219,7 +219,7 @@ this.sfDataGrid.SelectCells(sfDataGrid.View.Records[5], sfDataGrid.Columns["Prod
 Me.sfDataGrid.SelectCells(sfDataGrid.View.Records(5), sfDataGrid.Columns("ProductName"), sfDataGrid.View.Records(10), sfDataGrid.Columns("Quantity"))
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection17.png)
+![SelectCells method](Selection_images/selection17.png)
 
 All the rows or cells can be selected by using [SelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectAll.html) method in SfDataGrid.
 
@@ -277,7 +277,7 @@ End If
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection13.png)
+![Getting current cell](Selection_images/selection13.png)
 
 ### Clear Selection
 The Selection can be cleared by using the [ClearSelection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ClearSelection.html) Method. Selection can also be removed by setting null to[SelectionItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItem.html) or by clearing the [SelectedItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectedItems.html) property.
@@ -306,7 +306,7 @@ Me.sfDataGrid.UnselectCell(removeRecord, removeColumn)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection18.png)
+![Clear selection](Selection_images/selection18.png)
 
 SfDataGrid can clear the selection of a group of cells by using the [UnSelectCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~UnselectCells.html) method.
 
@@ -327,7 +327,7 @@ Me.sfDataGrid.UnselectCells(firstRecord, firstColumn, lastRecord, lastColumn)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection19.png)
+![Clear selection for a group of cells](Selection_images/selection19.png)
 
 ## Get the  Cell Value
 
@@ -352,7 +352,7 @@ End If
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection9.png)
+![Current cell value](Selection_images/selection9.png)
 
 ### Get the value of a cell
 
@@ -415,7 +415,7 @@ MessageBox.Show(cellValue, "Value in cell (" & rowIndex & ", " & columnIndex & "
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection10.png)
+![Value of a cell](Selection_images/selection10.png)
 
 ### Getting the cell value by using cell click event
 
@@ -451,7 +451,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection11.png)
+![etting the cell value by using cell click event](Selection_images/selection11.png)
 
 ## Scrolling Rows
 
@@ -822,7 +822,7 @@ public class CustomSelectionController : RowSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection12.png)
+![Select all the default rows](Selection_images/selection12.png)
 
 Samples Link: [SelectAllRows ](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
 
@@ -962,7 +962,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/selection8.png)
+![Retrieving the Current Item and Display in Message Box](Selection_images/selection8.png)
 
 ## Appearance
 
@@ -984,7 +984,7 @@ Me.sfDataGrid1.Style.SelectionStyle.BackColor = Color.LightSeaGreen
 Me.sfDataGrid1.Style.SelectionStyle.TextColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection6.png)
+![Selection Appearance](Selection_images/selection6.png)
 
 ### CurrentCell
 
@@ -1006,5 +1006,5 @@ Me.sfDataGrid1.Style.CurrentCellStyle.BorderColor = Color.Red
 Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 {% endhighlight %}
 {% endtabs %}
-![](Selection_images/selection7.png)
+![CurrentCell Appearance](Selection_images/selection7.png)
 
