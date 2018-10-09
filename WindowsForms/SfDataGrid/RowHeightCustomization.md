@@ -28,7 +28,7 @@ Me.sfDataGrid.HeaderRowHeight = 70
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img1.jpeg)
+![Row Height Customization](RowHeightCustomization_images/RowHeightCustomization_img1.jpeg)
 
 ## Set Height for the Specific Row
 
@@ -70,274 +70,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img2.jpeg)
-
-### Set height for default record row
-
-The height for the record rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the default record row. It can be done by checking whether the record corresponding to the row index is a `RecordEntry` or not.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-
-    if (this.IsDefaultRow(e.RowIndex))
-    {
-        e.Handled = true;
-        e.Height = 50;
-    }
-}
-
-bool IsDefaultRow(int rowIndex)
-{
-    if (this.sfDataGrid.View.TopLevelGroup != null)
-    {
-        var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
-        var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
-        return record != null && record is RecordEntry;
-    }
-    else
-    {
-        return !(this.sfDataGrid.TableControl.IsTableSummaryIndex(rowIndex) ||
-         this.sfDataGrid.IsAddNewRowIndex(rowIndex) ||
-         this.sfDataGrid.IsFilterRowIndex(rowIndex) ||
-         this.sfDataGrid.TableControl.GetHeaderIndex() == rowIndex);
-    }
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-
-    If Me.IsDefaultRow(e.RowIndex) Then
-        e.Handled = True
-        e.Height = 50
-    End If
-End Sub
-
-Private Function IsDefaultRow(ByVal rowIndex As Integer) As Boolean
-    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
-        Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
-        Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
-        Return record IsNot Nothing AndAlso TypeOf record Is RecordEntry
-    Else
-        Return Not (Me.sfDataGrid.TableControl.IsTableSummaryIndex(rowIndex) OrElse
-                    Me.sfDataGrid.IsAddNewRowIndex(rowIndex) OrElse
-                    Me.sfDataGrid.IsFilterRowIndex(rowIndex) OrElse
-                    Me.sfDataGrid.TableControl.GetHeaderIndex() = rowIndex)
-    End If
-End Function
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img7.png)
-
-![](RowHeightCustomization_images/RowHeightCustomization_img8.png)
-
-### Set height for add new row
-
-The height of the add new row can be set by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html) method within the `QueryRowHeight` event.  
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-
-    if (this.sfDataGrid.IsAddNewRowIndex(e.RowIndex))
-    {
-        e.Handled = true;
-        e.Height = 50;
-    }
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-
-    If Me.sfDataGrid.IsAddNewRowIndex(e.RowIndex) Then
-        e.Handled = True
-        e.Height = 50
-    End If
-End Sub
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img9.png)
-
-### Set height for filter row
-
-The height of the filter row can be set by using [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) method within the `QueryRowHeight` event.  
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-    if (this.sfDataGrid.IsFilterRowIndex(e.RowIndex))
-    {
-        e.Handled = true;
-        e.Height = 50;
-    }
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-	If Me.sfDataGrid.IsFilterRowIndex(e.RowIndex) Then
-		e.Handled = True
-		e.Height = 50
-	End If
-End Sub
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img10.png)
-
-### Set height for caption summary row
-
-The height of the caption summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the caption summary row. It can be done by checking whether the record corresponding to the row is a `Group` or not.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-    if (this.sfDataGrid.View.TopLevelGroup != null)
-    {
-        if (this.IsCaptionSummaryRow(e.RowIndex))
-        {
-            e.Handled = true;
-            e.Height = 50;
-        }
-    }
-}
-
-bool IsCaptionSummaryRow(int rowIndex)
-{
-    var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
-    var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
-
-    return record != null && record is Group;
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-
-    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
-        If Me.IsCaptionSummaryRow(e.RowIndex) Then
-            e.Handled = True
-            e.Height = 50
-        End If
-    End If
-End Sub
-
-Private Function IsCaptionSummaryRow(ByVal rowIndex As Integer) As Boolean
-	Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
-	Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
-
-	Return record IsNot Nothing AndAlso TypeOf record Is Group
-End Function
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img11.png)
-
-### Set height for group summary row
-
-The height of the group summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the group summary row. It can be done by checking whether the record corresponding to the row index is a `SummaryRecordEntry`or not.  
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-    if (this.sfDataGrid.View.TopLevelGroup != null)
-    {
-        if (this.IsGroupSummaryRow(e.RowIndex))
-        {
-            e.Handled = true;
-            e.Height = 50;
-        }
-    }
-}
-
-bool IsGroupSummaryRow(int rowIndex)
-{
-    var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
-    var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
-
-    return record != null && record is SummaryRecordEntry;
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-
-    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
-        If Me.IsGroupSummaryRow(e.RowIndex) Then
-            e.Handled = True
-            e.Height = 50
-        End If
-    End If
-End Sub
-
-Private Function IsGroupSummaryRow(ByVal rowIndex As Integer) As Boolean
-	Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
-	Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
-
-	Return record IsNot Nothing AndAlso TypeOf record Is SummaryRecordEntry
-End Function
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img12.png)
-
-### Set height for table summary row
-
-The height of the table summary row can be set by using [SfDataGrid.IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method within the `QueryRowHeight` event.  
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
-
-void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
-{
-
-    if (this.sfDataGrid.TableControl.IsTableSummaryIndex(e.RowIndex))
-    {
-        e.Handled = true;
-        e.Height = 50;
-    }
-}
-{% endhighlight %}
-{% highlight vb %}
-AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
-
-Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
-
-    If Me.sfDataGrid.TableControl.IsTableSummaryIndex(e.RowIndex) Then
-        e.Handled = True
-        e.Height = 50
-    End If
-End Sub
-{% endhighlight %}
-{% endtabs %}
-
-![](RowHeightCustomization_images/RowHeightCustomization_img13.png)
-
+![Height for the Specific Row](RowHeightCustomization_images/RowHeightCustomization_img2.jpeg)
 
 ## Fit Row Height based on its Content
 The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~GetAutoRowHeight.html) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand.
@@ -379,7 +112,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img3.jpeg)
+![Fit Row Height based on its Content](RowHeightCustomization_images/RowHeightCustomization_img3.jpeg)
 
 Here, row heights are customized based on the large text content.
 
@@ -567,7 +300,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img4.jpeg)
+![Change HeaderRow Height based on its Content](RowHeightCustomization_images/RowHeightCustomization_img4.jpeg)
 
 ## Change StackedHeaderRow Height based on its Content
 By default, auto height is supported for [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) in `QueryRowHeight` event. To specify the auto height for the stacked header row alone, check the row index with `StackedHeaderRows` count in the `QueryRowHeight` event.
@@ -635,7 +368,240 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img5.jpeg)
+![Change StackedHeaderRow Height based on its Content](RowHeightCustomization_images/RowHeightCustomization_img5.jpeg)
+
+## Change default record row height
+
+The height for the record rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the default record row. It can be done by checking whether the record corresponding to the row index is a `RecordEntry` or not.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+
+    if (this.IsDefaultRow(e.RowIndex))
+    {
+        e.Handled = true;
+        e.Height = 50;
+    }
+}
+
+bool IsDefaultRow(int rowIndex)
+{
+    if (this.sfDataGrid.View.TopLevelGroup != null)
+    {
+        var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
+        var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
+        return record != null && record is RecordEntry;
+    }
+    else
+    {
+        return !(this.sfDataGrid.TableControl.IsTableSummaryIndex(rowIndex) ||
+         this.sfDataGrid.IsAddNewRowIndex(rowIndex) ||
+         this.sfDataGrid.IsFilterRowIndex(rowIndex) ||
+         this.sfDataGrid.TableControl.GetHeaderIndex() == rowIndex);
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
+
+Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+
+    If Me.IsDefaultRow(e.RowIndex) Then
+        e.Handled = True
+        e.Height = 50
+    End If
+End Sub
+
+Private Function IsDefaultRow(ByVal rowIndex As Integer) As Boolean
+    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
+        Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
+        Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
+        Return record IsNot Nothing AndAlso TypeOf record Is RecordEntry
+    Else
+        Return Not (Me.sfDataGrid.TableControl.IsTableSummaryIndex(rowIndex) OrElse
+                    Me.sfDataGrid.IsAddNewRowIndex(rowIndex) OrElse
+                    Me.sfDataGrid.IsFilterRowIndex(rowIndex) OrElse
+                    Me.sfDataGrid.TableControl.GetHeaderIndex() = rowIndex)
+    End If
+End Function
+{% endhighlight %}
+{% endtabs %}
+
+![Change default record row height without grouping ](RowHeightCustomization_images/RowHeightCustomization_img7.png)
+
+![Change default record row height with grouping](RowHeightCustomization_images/RowHeightCustomization_img8.png)
+
+## Change add new row height
+
+The height of the add new row can be set by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html) method within the `QueryRowHeight` event.  
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+
+    if (this.sfDataGrid.IsAddNewRowIndex(e.RowIndex))
+    {
+        e.Handled = true;
+        e.Height = 50;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
+
+Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+
+    If Me.sfDataGrid.IsAddNewRowIndex(e.RowIndex) Then
+        e.Handled = True
+        e.Height = 50
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Change add new row height](RowHeightCustomization_images/RowHeightCustomization_img9.png)
+
+## Change filter row height
+
+The height of the filter row can be set by using [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) method within the `QueryRowHeight` event.  
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (this.sfDataGrid.IsFilterRowIndex(e.RowIndex))
+    {
+        e.Handled = true;
+        e.Height = 50;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
+
+Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+	If Me.sfDataGrid.IsFilterRowIndex(e.RowIndex) Then
+		e.Handled = True
+		e.Height = 50
+	End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Change filter row height](RowHeightCustomization_images/RowHeightCustomization_img10.png)
+
+## Change caption summary row height
+
+The height of the caption summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the caption summary row. It can be done by checking whether the record corresponding to the row is a `Group` or not.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (this.sfDataGrid.View.TopLevelGroup != null)
+    {
+        if (this.IsCaptionSummaryRow(e.RowIndex))
+        {
+            e.Handled = true;
+            e.Height = 50;
+        }
+    }
+}
+
+bool IsCaptionSummaryRow(int rowIndex)
+{
+    var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
+    var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
+
+    return record != null && record is Group;
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
+
+Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+
+    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
+        If Me.IsCaptionSummaryRow(e.RowIndex) Then
+            e.Handled = True
+            e.Height = 50
+        End If
+    End If
+End Sub
+
+Private Function IsCaptionSummaryRow(ByVal rowIndex As Integer) As Boolean
+	Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
+	Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
+
+	Return record IsNot Nothing AndAlso TypeOf record Is Group
+End Function
+{% endhighlight %}
+{% endtabs %}
+
+![Change caption summary row height](RowHeightCustomization_images/RowHeightCustomization_img11.png)
+
+## Change group summary row height
+
+The height of the group summary rows can be set within the `QueryRowHeight` event. SfDataGrid doesn’t have any method to check for the group summary row. It can be done by checking whether the record corresponding to the row index is a `SummaryRecordEntry`or not.  
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.QueryRowHeight += sfDataGrid_QueryRowHeight;
+
+void sfDataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
+{
+    if (this.sfDataGrid.View.TopLevelGroup != null)
+    {
+        if (this.IsGroupSummaryRow(e.RowIndex))
+        {
+            e.Handled = true;
+            e.Height = 50;
+        }
+    }
+}
+
+bool IsGroupSummaryRow(int rowIndex)
+{
+    var startIndex = this.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition();
+    var record = this.sfDataGrid.View.TopLevelGroup.DisplayElements[rowIndex - startIndex];
+
+    return record != null && record is SummaryRecordEntry;
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataGrid.QueryRowHeight, AddressOf sfDataGrid_QueryRowHeight
+
+Private Sub sfDataGrid_QueryRowHeight(ByVal sender As Object, ByVal e As QueryRowHeightEventArgs)
+
+    If Me.sfDataGrid.View.TopLevelGroup IsNot Nothing Then
+        If Me.IsGroupSummaryRow(e.RowIndex) Then
+            e.Handled = True
+            e.Height = 50
+        End If
+    End If
+End Sub
+
+Private Function IsGroupSummaryRow(ByVal rowIndex As Integer) As Boolean
+	Dim startIndex = Me.sfDataGrid.TableControl.ResolveStartIndexBasedOnPosition()
+	Dim record = Me.sfDataGrid.View.TopLevelGroup.DisplayElements(rowIndex - startIndex)
+
+	Return record IsNot Nothing AndAlso TypeOf record Is SummaryRecordEntry
+End Function
+{% endhighlight %}
+{% endtabs %}
+
+![Change group summary row height](RowHeightCustomization_images/RowHeightCustomization_img12.png)
 
 ## Change TableSummaryRow Height 
 The row height of the table summary row can be changed in the `QueryRowHeight` event by using the [IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method. This method will check and return `true`, if the given row index is the table summary row otherwise return false.
@@ -669,5 +635,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](RowHeightCustomization_images/RowHeightCustomization_img6.jpeg)
+![Change TableSummaryRow Height](RowHeightCustomization_images/RowHeightCustomization_img6.jpeg)
 
