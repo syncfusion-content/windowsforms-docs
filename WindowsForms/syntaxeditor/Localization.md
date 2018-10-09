@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localize the static text in EditControl
-description: This section explains about the localization support in EditControl
+title: Localize the static text in EditControl | Windows Forms | Syncfusion
+description: This section provide details about localizing the static text available in EditControl for Windows Forms
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
@@ -235,7 +235,7 @@ End Function
 
 {% endtabs %}
 
-![](Localization-and-Globalization_images\Localization-and-Globalization_img5.png)
+![Localized find dialog box in syntax editor](Localization-and-Globalization_images\FindDialogLocalization.png)
 
 **Replace Dialog Box**
 
@@ -321,7 +321,7 @@ End Function
 
 {% endtabs %}
 
-![](Localization-and-Globalization_images\Localization-and-Globalization_img1.png)
+![Localized replace dialog box in syntax editor](Localization-and-Globalization_images\ReplaceDialogLocalization.png)
 
 **GoTo Dialog Box**
 
@@ -383,7 +383,7 @@ End Function
 
 {% endtabs %}
 
-![](Localization-and-Globalization_images\Localization-and-Globalization_img2.png)
+![Localized GoTo dialog box in syntax editor](Localization-and-Globalization_images\GoToDialogLocalization.png)
 
 **Context Menu**
 
@@ -619,7 +619,7 @@ End Function
 
 {% endtabs %}
 
-![](Localization-and-Globalization_images\Localization-and-Globalization_img3.png)
+![Localized context menu in syntax editor](Localization-and-Globalization_images\ContextMenuLocalization.png)
 
 N> Refer to the following sample link that demonstrates the localization support in EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Localization
