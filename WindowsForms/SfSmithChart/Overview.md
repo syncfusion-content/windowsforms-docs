@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: This section provides an overview of smith chart.
+title: Overview of Syncfusion SmithChart control for WindowsForms
+description: This section explains the key features and quick overview about Syncfusion SmithChart control for WindowsForms
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
@@ -21,4 +21,4 @@ Smith chart provides a perfect way to visualize the data with a high level of us
 * Interactive legend.
 * Customizable colors.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/GettingStarted.png](Overview_images/Overview_img1.png)
+![WindowsForms SmithChart Overview Image](Overview_images/Overview_img1.png)
