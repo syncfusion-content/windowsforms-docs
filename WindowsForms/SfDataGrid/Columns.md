@@ -487,7 +487,7 @@ End Property
 {% endhighlight %}
 {% endtabs %}
 The OrderID and CustomerID column rearranged based on specified order.
-![Windows forms datagrid showing specified columns](Columns_images/columns1.png)
+![Windows form datagrid showing columns with specified order](Columns_images/columns1.png)
 
 #### Customizing Data Format
 
@@ -676,7 +676,7 @@ Me.sfDataGrid1.AllowResizingColumns = True
 {% endtabs %}
 
 The column width can be changed by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the line exists between two columns.
-![windows forms datagrid showing column resizing](Columns_images/Resizing1.png)
+![windows forms datagrid showing resize the column](Columns_images/Resizing1.png)
 
 ### Hidden Column Resizing 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowResizingHiddenColumns.html) property to true.
@@ -719,7 +719,7 @@ sfDataGrid.AllowDraggingColumns = true;
 sfDataGrid.AllowDraggingColumns = True
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing the column drag-and-drop](Columns_images/ColumnDragAndDrop_img1.png)
+![Windows form datagrid showing drag-and-drop the column](Columns_images/ColumnDragAndDrop_img1.png)
 
 The drag and drop operation for particular column can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowDragging.html) property.
 {% tabs %}
@@ -940,7 +940,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing stacked header](Columns_images/StackedHeader_img4.png)
+![Windows form datagrid showing stacked header](Columns_images/StackedHeader_img4.png)
 
 ### Adding Child Columns	
 SfDataGrid allows to add the child columns in a particular stacked header directly.
@@ -961,7 +961,7 @@ Dim previousChild As String = Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(
 Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = previousChild & ",CustomerID"
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing child columns within the stacked header](Columns_images/StackedHeader_img5.png)
+![Windows form datagrid showing child columns](Columns_images/StackedHeader_img5.png)
 
 ### Removing Child Columns
 SfDataGrid allows to remove the child columns from particular stacked header directly.
@@ -997,7 +997,7 @@ Me.sfDataGrid.StackedHeaderRows(0).StackedColumns(0).ChildColumns = childColumns
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing removing child columns of stacked headers](Columns_images/StackedHeader_img6.png)
+![Windows form datagrid showing removing child columns](Columns_images/StackedHeader_img6.png)
 
 ### Multi Stacked Headers
 Multiple stacked headers can be added to `SfDataGrid` by adding the required number of `StackedHeaderRow` to `SfDataGrid.StackedHeaderRows`property.
@@ -1039,7 +1039,7 @@ Me.sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing multiple stacked headers](Columns_images/StackedHeader_img7.png)
+![Windows form datagrid showing multi stacked headers](Columns_images/StackedHeader_img7.png)
 
 ### Appearance 
 
@@ -1056,7 +1056,7 @@ Me.sfDataGrid.Style.StackedHeaderStyle.BackColor = Color.DarkCyan
 Me.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing stacked header row appearance customization](Columns_images/StackedHeader_img8.png)
+![Windows form datagrid showing stacked header row appearance](Columns_images/StackedHeader_img8.png)
 
 ### Changing the Stacked Header Appearance based on Column
 An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawCell_EV.html) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of [DrawCellEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
@@ -1107,7 +1107,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing stacked header column appearance customization](Columns_images/StackedHeader_img9.png)
+![Windows form datagrid showing stacked header column appearance](Columns_images/StackedHeader_img9.png)
 
 ### Font orientation for stacked headers
 
@@ -1150,7 +1150,7 @@ Me.sfDataGrid1.Style.StackedHeaderStyle.Font.Orientation = 45
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing stacked header style](Columns_images/StackedHeader_img1.png)
+![Windows form datagrid showing stacked header style](Columns_images/StackedHeader_img1.png)
 
 ## Column Sizing
 SfDataGrid allows to set the column widths based on certain logic using [SfDataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoSizeColumnsMode.html) or [GridColumnBase.AutoSizeColumnsMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AutoSizeColumnsMode.html) property. Below is the list of predefined column sizing options available.
@@ -1238,7 +1238,7 @@ sfDataGrid.DataSource = collection.OrdersListDetails
 sfDataGrid.AutoSizeColumnsMode = AutoSizeColumnsMode.Fill
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing column size](ColumnSizing_images/ColumnSizing_img1.png)
+![Windows form datagrid showing column size](ColumnSizing_images/ColumnSizing_img1.png)
 
 N> The `GridColumnBase.AutoSizeColumnsMode` takes higher priority than the `SfDataGrid.AutoSizeColumnsMode`.
 
