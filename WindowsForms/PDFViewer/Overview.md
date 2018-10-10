@@ -406,7 +406,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online: {{ '<http://help.syncfusion.com/windowsforms/pdfviewer>' | markdownify }} (Navigate to the PdfViewerControl for Windows Forms User Guide.)> 
+Online: {{ '<https://help.syncfusion.com/windowsforms/pdfviewer/overview>' | markdownify }} (Navigate to the PdfViewerControl for Windows Forms User Guide.)> 
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}
 

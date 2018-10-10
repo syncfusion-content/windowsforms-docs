@@ -93,7 +93,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping)'| markdownify }}
 </td>
 <td>
-{{'[Barcode](https://help.syncfusion.com/windowsforms/barcode)'| markdownify }}
+{{'[Barcode](https://help.syncfusion.com/windowsforms/barcode/overview)'| markdownify }}
 </td>
 <td>
 {{'[RibbonPanel MergeContainer](https://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-merging)'| markdownify }}
@@ -175,7 +175,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[PDF](https://help.syncfusion.com/file-formats/pdf)'| markdownify }}
+{{'[PDF](https://help.syncfusion.com/file-formats/pdf/overview)'| markdownify }}
 </td>
 <td>
 {{'[Linear Gauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)'| markdownify }}
@@ -217,7 +217,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[PDFViewer](https://help.syncfusion.com/windowsforms/pdfviewer)'| markdownify }}
+{{'[PDFViewer](https://help.syncfusion.com/windowsforms/pdfviewer/overview)'| markdownify }}
 </td>
 <td>
 {{'**NOTIFICATION**'| markdownify }}
