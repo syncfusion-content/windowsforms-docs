@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
-description: This section explains about the GridListControl.
+title: Overview | Grid List | Syncfusion
+description: This section explains about the multi column listbox control for windows forms and its important key features
 platform: windowsforms
 control: GridListControl
 documentation: ug

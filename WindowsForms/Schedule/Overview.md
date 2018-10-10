@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview | Scheduler | Syncfusion
+description: This section explains about the how to add schedling support to your applications
 platform: windowsforms
 control: Schedule
 documentation: ug
@@ -13,7 +13,7 @@ The Syncfusion Essential Schedule is a Windows Forms class library built around 
 
 The scheduling support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
 
-![](Overview_images/Overview_img1.png)
+![windows forms schedule showing month view](Overview_images/Overview_img1.png)
 
 The Scheduler control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
 

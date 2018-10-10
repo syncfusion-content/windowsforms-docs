@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SfSkinManager| WindowsForms | Overview
-description: Overview
+description: This section explains about the skin manager component for windows forms and it's important key features
 platform: WindowsForms
 control: SfSkinManager
 documentation: ug
