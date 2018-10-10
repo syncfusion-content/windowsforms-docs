@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: Overview
+title: Overview | Button | Syncfusion
+description: This section explains about the advanced button control for windows forms and it's important key features
 platform: WindowsForms
 control: SfButton
 documentation: ug

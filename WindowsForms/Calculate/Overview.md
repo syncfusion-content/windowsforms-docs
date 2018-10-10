@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Calculate | Syncfusion
 description: overview and the features that are supported in calculate
 platform: windowsforms
 control: Calculate
