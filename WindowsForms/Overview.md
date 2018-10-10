@@ -21,9 +21,9 @@ Essential Windows Forms is a comprehensive collection of over 100+ enterprise-gr
 ## Additional help resources
 
 
-The [Knowledge Base](http://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions asked by the customers in the past. This would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](https://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions asked by the customers in the past. This would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the Knowledge Base, the [Forum](http://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+Similar to the Knowledge Base, the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
 
 ## Create a support incident
 
