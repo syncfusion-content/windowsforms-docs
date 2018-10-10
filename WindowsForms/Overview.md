@@ -217,7 +217,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[PDFViewer](https://help.syncfusion.com/windowsforms/pdfviewer)'| markdownify }}
+{{'[PDFViewer](https://help.syncfusion.com/windowsforms/pdfviewer/overview)'| markdownify }}
 </td>
 <td>
 {{'**NOTIFICATION**'| markdownify }}
