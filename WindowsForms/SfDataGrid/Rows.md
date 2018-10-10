@@ -22,7 +22,7 @@ Me.sfDataGrid.ShowRowHeader = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing rowheader](Rows_images/img1.png)
+![Windows forms datagrid showing rowheader](Rows_images/img1.png)
 
 ### Appearance
 
@@ -37,7 +37,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the backcolor to rowheader](Rows_images/img2.png)
+![Row header appearance customization in windows form datagrid](Rows_images/img2.png)
 
 ### Row Indicators and its Description
 
@@ -103,7 +103,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing numbered row header](Rows_images/img3.png)
+![Windows forms datagrid showing numbered row header](Rows_images/img3.png)
 
 ### Showing the image in RowHeader
 
@@ -221,13 +221,13 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set image in rowheader](Rows_images/img9.png)
+![Windows forms datagrid showing image in rowheader](Rows_images/img9.png)
 
 ## Header Row
 
 Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Windows form datagrid showing headerrow at top](Rows_images/img4.png)
+![Windows forms datagrid showing header row](Rows_images/img4.png)
 
 ### Appearance
 
@@ -246,7 +246,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the color to headerrow](Rows_images/img5.png)
+![Header row appearance customization in windows forms datagrid](Rows_images/img5.png)
 
 The appearance of any particular column header can be customized by using 
 [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) property.
@@ -264,7 +264,7 @@ this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the color to particular column header](Rows_images/img6.png)
+![Specific column header appearance customization in windows forms datagrid](Rows_images/img6.png)
 
 ### Font orientation for Header Row
 
@@ -281,7 +281,7 @@ this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the font orientation of headerrow](Rows_images/img8.png)
+![Font orientation customization in header row of Windows forms datagrid](Rows_images/img8.png)
 
 ### Hiding Header Row
 
@@ -295,7 +295,7 @@ Me.sfDataGrid1.HeaderRowHeight = 0
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing hidden headerrow](Rows_images/img7.png)
+![Windows forms datagrid showing hidden headerrow](Rows_images/img7.png)
 
 ## Freeze Panes 
 The rows and column can freeze in view like excel. The rows and columns can be freeze by setting following properties,
@@ -363,7 +363,7 @@ Me.sfDataGrid.FooterRowCount = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing frozen row](Rows_images/FreezePanes_img1.png)
+![Windows forms datagrid showing frozen row and footer row](Rows_images/FreezePanes_img1.png)
 
 ### Freezing Columns
 The columns can be freeze in view at left and right like Excel by setting the `FrozenColumnCount` and `FooterColumnCount` properties.
@@ -384,7 +384,7 @@ Me.sfDataGrid.FrozenColumnCount = 2
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing frozen column](Rows_images/FreezePanes_img2.png)
+![Windows forms datagrid showing frozen column and footer column](Rows_images/FreezePanes_img2.png)
 
 ### Appearance
 
@@ -400,7 +400,7 @@ Me.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the color t freezepaneline](Rows_images/FreezePanes_img3.png)
+![Frozen line appearance customization in windows forms datagrid](Rows_images/FreezePanes_img3.png)
 
 #### Freeze Line Weight
 Freeze line weight or thickness can be changed by setting the [FreezePaneLineStyle.Weight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.FreezePaneLineStyleInfo~Weight.html) property.
@@ -413,7 +413,7 @@ Me.sfDataGrid.Style.FreezePaneLineStyle.Weight = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the color to freezepaneline](Rows_images/FreezePanes_img4.png)
+![Freeze line weight customization in windows forms datagrid](Rows_images/FreezePanes_img4.png)
 
 #### Changing the Freeze Line Style
 An appearance of the freeze pane line can be customized by using [DrawFreezePaneLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawFreezePaneLine_EV.html) event. The freeze pane line type can be check by using [LineType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs~LineType.html) property which indicates freeze pane line type such as `FrozenRow`, `FooterRow`, `FrozenColumn`, `FooterColumn. The `e.Handled` property which is available in the 
@@ -448,7 +448,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the weight to freezepaneline](Rows_images/FreezePanes_img5.png)
+![Windows forms datagrid showing freeze line with dotted style](Rows_images/FreezePanes_img5.png)
 
 #### Changing the Back Color of Freeze Line based on Freeze Line LineType
 By default, the back color of the freeze pane line cannot be changed based on the freeze pane line type. But it can be customized by drawing the line using the `DrawFreezePaneLine` event based on the freeze pane line type. The `e.Handled` property which is available in the `DrawFreezePane​Line​Args` should be enabled to draw the custom line.
@@ -505,7 +505,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the color to freezepaneline](Rows_images/FreezePanes_img6.png)
+![Windows forms datagrid showing conditional freeze line styling](Rows_images/FreezePanes_img6.png)
 
 ## Loop through Records
 
