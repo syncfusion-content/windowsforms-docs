@@ -189,7 +189,7 @@ In case you are unable to find the information that you are looking for in the s
 </tr>
 <tr>
 <td>
-{{'[DocIO](https://help.syncfusion.com/file-formats/docio)'| markdownify }}
+{{'[DocIO](https://help.syncfusion.com/file-formats/docio/overview)'| markdownify }}
 </td>
 <td>
 {{'[Digital Gauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)'| markdownify }}
