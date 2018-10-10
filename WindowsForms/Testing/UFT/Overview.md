@@ -15,7 +15,7 @@ UFT (formerly known as HP Quick Test Professional - QTP) is an automated testing
 Essential QuickTest Professional is an add-on shipped with Essential Studio products offered by Syncfusion. It has been specially designed to meet the requirements of professionals who test the applications designed, using Syncfusion controls with HP QuickTest Professional software.
 Essential QuickTest Professional contains custom libraries, that help HP QuickTest Professional software or UFT software recognize Syncfusion controls. These custom libraries are built with the help of QuickTest Professional .NET add-in extensibility. For more details, refer to HP QuickTest Professional help.
 
-![https://help.syncfusion.com/windowsforms/testing/qtp/Overview_images/Overview_img1.png](QTP_images/QTP_img1.jpeg)
+![essensial studio qtp](QTP_images/QTP_img1.jpeg)
 
 The custom libraries allow Syncfusion controls to be used as a native object inside the QTP testing environment and enable testing of applications in QTP. Essential QuickTest Professional helps you perform regression test on your application containing Syncfusion controls and thereby increase the reliability of the end product. The following chapters demonstrate the usage of the custom library in QTP.
 
