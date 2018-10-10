@@ -36,11 +36,11 @@ Me.sfDataGrid1.Columns("CustomerID").AllowGrouping = True
 
 N> [GridColumn.AllowGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowGrouping.html#) takes higher priority than [SfDataGrid.AllowGrouping.](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowGrouping.html#)
 
-![Windows form datagrid showing allows grouping particular columns](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img1.png)
+![Column is grouped in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img1.png)
 
 The data can be grouped by an unlimited number of columns. To group more than one columns, drag-and-drop the desired columns in to `GroupDropArea`.
 
-![Windows form datagrid showing grouped unlimited columns](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img2.png)
+![More than one column are grouped in windows forms datagrid showing grouped unlimited columns](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img2.png)
 
 Each group is identified by its CaptionSummaryRows and it is used to organize the data into a hierarchical tree structure based on identical values of that column. The underlying records in each caption summary row can be expanded or collapsed by clicking its group caption.
 Each `CaptionSummaryRow` carries information about a particular group like group name, number of items (records) in the group, etc. Refer the `Caption Summaries` section, for more information about `CaptionSummaryRow`.
@@ -81,7 +81,7 @@ Me.sfDataGrid1.GroupColumnDescriptions.RemoveAt(1)
 
 To ungroup the column in UI, click the close button on column header or drag the column header from the GroupDropArea and drop it on the header row.
 
-![Windows form datagrid showing ungroup the column](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img6.png)
+![Removing grouped column from group drop area in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img6.png)
 
 ### Clearing Groups
 All the groups of the `SfDataGrid` can be removed by using `Clear` method.
@@ -104,7 +104,7 @@ The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 * Key - Displays the key value of group.
 * ItemsCount - Displays the number of items in group.
 
-![Windows form datagrid showing group caption of text format ](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img7.png)
+![Group caption format representation in windows form datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img7.png)
 
 The group caption format can be changed to Key and ItemsCount alone by setting [GroupCaptionTextFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~GroupCaptionTextFormat.html#) as below,
 {% tabs %}
@@ -115,7 +115,7 @@ this.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}";
 Me.sfDataGrid1.GroupCaptionTextFormat = "{Key} : {ItemsCount}"
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing group caption of itemscount](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img8.png)
+![Custom group caption text in windows form datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img8.png)
 
 
 ## Expanding or Collapsing the Groups
@@ -189,7 +189,7 @@ this.sfDataGrid1.IndentColumnWidth = 100;
 Me.sfDataGrid1.IndentColumnWidth = 100
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing changed width](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img9.png)
+![Indent column width customization in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img9.png)
 
 ## GroupDropArea Customization
 
@@ -205,7 +205,7 @@ Me.sfDataGrid1.GroupPanel.GroupDropAreaText = "Drag columns here"
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing changed the groupdroparea text](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img10.png)
+![Group drop area default text customization in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img10.png)
 
 ### Customizing GroupDropArea Height
 SfDataGrid allows to customize the appearance and height of GroupDropArea.
@@ -219,7 +219,7 @@ Me.sfDataGrid1.GroupPanel.Height = 100
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing changed the groupdroparea height](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img11.png)
+![Group drop area height customization in windows form datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img11.png)
 
 ### Customizing GroupDropArea Appearance
 The appearance of the GroupDropArea can be customized using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupDropAreaStyle.html# "") property.  The[GroupDropAreaStyleInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaStyleInfo.html# "") contains all the settings that are needed for the GroupDropArea appearance customization.
@@ -233,7 +233,7 @@ Me.sfDataGrid1.Style.GroupDropAreaStyle.BackColor = Color.LightSkyBlue
 Me.sfDataGrid1.Style.GroupDropAreaStyle.TextColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing set the back and text color of groupdroparea](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img12.png)
+![Group drop area appearance customziation in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img12.png)
 
 ### Customizing GroupDropAreaItem Appearance
 The appearance of the grouped items in the GroupDropArea can be customized using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupDropAreaItemStyle.html# "") property. The[GroupDropAreaItemStyleInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.GroupDropAreaItemStyleInfo.html# "") contains all the settings that are needed for the grouped items appearance customization.
@@ -248,7 +248,7 @@ Me.sfDataGrid1.Style.GroupDropAreaItemStyle.BackColor = Color.LightSkyBlue
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing set the back and text color of groupdropareaitem](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img13.png)
+![Group drop area item appearance customziation in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img13.png)
 
 ## Custom Grouping
 SfDataGrid allows to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement.
@@ -327,7 +327,7 @@ End Function
 Private )
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing group the data based on logic](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img14.png)
+![Windows form datagrid showing column grouping with custom logic](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img14.png)
 
 ### Sorting Inner Records
 In custom grouping, all the inner records of each group can be sort by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GroupColumnDescription~SortGroupRecords.html#) sorted based on the column name described in `GroupColumnDescription`.
