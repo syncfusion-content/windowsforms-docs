@@ -23,7 +23,7 @@ N> The underlying data object must be defined with default constructor. Otherwis
  sfDataGrid.AddNewRowPosition = RowPosition.Top
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing addnewrow at top](DataManipulation_images/AddNewRow_img1.png)
+![Windows forms datagrid showing addnewrow at top](DataManipulation_images/AddNewRow_img1.png)
 
 ### Placing AddNewRow at Various Positions
 SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or fixed bottom by setting the `AddNewRowPosition` property.
@@ -35,7 +35,7 @@ SfDataGrid allows to add the AddNewRow at either top or fixed top or bottom or f
  sfDataGrid.AddNewRowPosition = RowPosition.FixedBottom
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing addnewrow at bottom](DataManipulation_images/AddNewRow_img2.png)
+![Windows forms datagrid showing addnewrow at bottom](DataManipulation_images/AddNewRow_img2.png)
 
 SfDataGrid allows to check whether the specified row index is AddNewRow index, by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html)  helper method.
 {% tabs %}
@@ -80,7 +80,7 @@ Private Sub dataGrid_AddNewRowInitiating(ByVal sender As Object, ByVal args As A
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing the values for addnewrow](DataManipulation_images/AddNewRow_img7.png)
+![Windows forms datagrid showing the values for addnewrow](DataManipulation_images/AddNewRow_img7.png)
 
 ### Validating the AddNewRow
 The data in AddNewRow can validate like other data rows through built-in validation or custom validation. Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowValidating_EV.html) event by setting [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs~IsValid.html) to false which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
@@ -116,7 +116,7 @@ Private Sub dataGrid_RowValidating(ByVal sender As Object, ByVal args As RowVali
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing validate the cell in addnewrow](DataManipulation_images/AddNewRow_img3.png)
+![Windows forms datagrid showing validate the cell in addnewrow](DataManipulation_images/AddNewRow_img3.png)
 
 Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellValidating_EV.html) event.
 
@@ -154,7 +154,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing adding empty records](DataManipulation_images/AddNewRow_img8.png)
+![Windows forms datagrid showing adding empty records](DataManipulation_images/AddNewRow_img8.png)
 
 ### Update cell values based on selected value in the GridComboBoxCell
 
@@ -194,9 +194,9 @@ End Sub
 ### Customizing AddNewRow Text using Default Resource File
 SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
-![windows form datagrid showing localization data](DataManipulation_images/AddNewRow_img4.png)
+![Addnewrow resx file customiztion in windows forms datagrid](DataManipulation_images/AddNewRow_img4.png)
 
-![windows form datagrid showing localization data](DataManipulation_images/AddNewRow_img5.png)
+![windows forms datagrid showing lozalized addnewrow string](DataManipulation_images/AddNewRow_img5.png)
 
 ### Appearance
 The appearance of the AddNewRow can be customized by setting the [AddNewRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~AddNewRowStyle.html).
@@ -211,7 +211,7 @@ Me.sfDataGrid.Style.AddNewRowStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Windows form datagrid showing text color](DataManipulation_images/AddNewRow_img6.png)
+![Windows forms datagrid showing customized addnewrow text color and backcolor](DataManipulation_images/AddNewRow_img6.png)
 
 ### Adding a new row programmatically
 
