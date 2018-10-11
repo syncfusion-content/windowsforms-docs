@@ -8259,6 +8259,70 @@ Built-in or custom symbols can be rendered at the data points to emphasize impor
 
 ![Chart Series](Chart-Series_images/Chart-Series_img147.jpeg)
 
+**Shape**:
+
+Data markers are used to provide information about the data points in the series. You can add a shape to adorn each data point.
+
+Markers can be assigned with different shapes such as rectangle, circle, and diamond using the shape property.
+
+The following code sample demonstrates how to add shapes to a marker.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+//Set add shape for chart symbols
+
+series1.Style.Symbol.Shape = ChartSymbolShape.Circle;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+//Set add shape for chart symbols
+
+series1.Style.Symbol.Shape = ChartSymbolShape.Circle;
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates a chart with different chart symbols.
+
+![Chart Series](Chart-Series_images/Chart-Series_img178.jpeg)
+
+**Customization**:
+
+The color and border of a marker can be customized using the color and border properties.
+
+The following code sample demonstrates how to customize the color and border for shapes.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+// set border and color for chart symbols 
+ series1.Style.Symbol.Shape = ChartSymbolShape.Circle;
+ series1.Style.Symbol.Color = Color.Red;
+ series1.Style.Symbol.Border.Color = Color.Green;
+ series1.Style.Symbol.Border.Width = 3;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+// set border and color for chart symbols 
+ series1.Style.Symbol.Shape = ChartSymbolShape.Circle;
+ series1.Style.Symbol.Color = Color.Red;
+ series1.Style.Symbol.Border.Color = Color.Green;
+ series1.Style.Symbol.Border.Width = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates a chart with color and border customization of chart symbols.
+
+![Chart Series](Chart-Series_images/Chart-Series_img179.jpeg)
+
 ## Custom Points
 
 EssentialChart supports plotting of points on the Chart Area even if they don't belong to a series. These are stored in the ChartControl.CustomPoints collection. They can be set at custom coordinates of the Chart Area or be made to follow a certain point or percentage coordinates. A custom point displays a text, background, border, symbol and marker, which is a line that connects the CustomPoint with the point on the chart area when it is offset from it.

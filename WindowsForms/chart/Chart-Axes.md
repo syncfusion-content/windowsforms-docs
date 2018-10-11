@@ -2365,3 +2365,32 @@ Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e A
 The following screenshot illustrates the customization options for individual label positions on the y-axis to the right or left side based on the y value of the data points. If the export value is positive, the label is rendered to the left side of the axis, and if it is negative, the label is rendered on the right side of the axis.
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img38.png)
+
+## ZoomFactor and ZoomPosition
+
+Axes are scaled using zoomFactor. The position of a zoomed axis is specified by zoomPosition. Both values fall between 0 and 1.  When zoomFactor is set to 0.5, the chart is scaled by 200% along with this axis. 
+
+{% tabs %}  
+
+{% highlight c# %}
+
+//Set zoomFactor and zoomPosition for axis
+this.chart.PrimaryXAxis.ZoomFactor = 0.5;
+this.chart.PrimaryXAxis.ZoomPosition = 0.5;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+//Set zoomFactor and zoomPosition for axis
+Me.chart.PrimaryXAxis.ZoomFactor = 0.5;
+Me.chart.PrimaryXAxis.ZoomPosition = 0.5;
+
+{% endhighlight %}
+{% endtabs %}
+
+For example, when zoomFactor and zoomPosition are set to 0.5 for the chart with 6 data points, the last 3 data points in the chart will be shown. Here, the zoomFactor decides the number of points and zoomPosition decides the range of values to display. 
+
+The following screenshot illustrates a chart whose x-axis has been zoomed by setting zoomFactor and zoomPosition.
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img40.png)
