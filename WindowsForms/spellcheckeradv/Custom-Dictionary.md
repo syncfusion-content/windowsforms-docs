@@ -15,12 +15,12 @@ SpellCheckerAdv provides built-in dictionary for English Language and also helps
 
 You can configure custom dictionary by clicking on Custom Dictionary button in the SpellChecker dialog.
 
-![Custom Dictionary](Custom-Dictionary_images/Dictionary.png)
+![open custom dictionary dialog in spellchecker](Custom-Dictionary_images/Dictionary.png)
 
 You can add their own custom dictionary by referring to the dictionary file path in the Custom Dictionary Editor dialog. Word list can also be customized with the Custom Dictionary Editor dialog and you can add or delete words from this dictionary.
 
 
-![Custom Dictionary](Custom-Dictionary_images/CustomDictionary.png)
+![configure custom dictionary in dialog](Custom-Dictionary_images/CustomDictionary.png)
 
 
 ## Configuring custom dictionary via code 
