@@ -142,7 +142,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[Office2007Form](https://help.syncfusion.com/windowsforms/office2007form/overview)'| markdownify }}
 </td>
 <td>
-{{'[TrackBarEx](https://help.syncfusion.com/windowsforms/trackbarex)'| markdownify }}
+{{'[TrackBarEx](https://help.syncfusion.com/windowsforms/trackbarex/trackbarex)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -276,7 +276,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[TabSplitter Container](https://help.syncfusion.com/windowsforms/tabsplittercontainer/overview)'| markdownify }}
 </td>
 <td>
-{{'[StatusStripEx](https://help.syncfusion.com/windowsforms/statusstripex)'| markdownify }}
+{{'[StatusStripEx](https://help.syncfusion.com/windowsforms/statusstripex/statusstripex)'| markdownify }}
 </td>
 <td>
 {{'[XPTaskPane](https://help.syncfusion.com/windowsforms/xptaskpane/overview)'| markdownify }}
@@ -416,7 +416,7 @@ In case you are unable to find the information that you are looking for in the s
 {{'[PopupControlContainer](https://help.syncfusion.com/windowsforms/popupcontrolcontainer/overview)'| markdownify }}
 </td>
 <td>
-{{'[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip)'| markdownify }}
+{{'[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)'| markdownify }}
 </td>
 <td>
 {{'[GridRecordNavigationControl](https://help.syncfusion.com/windowsforms/gridrecordnavigation/overview)'| markdownify }}
