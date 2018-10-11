@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: This section explains about the SfScrollFrame and its customization.
+title: Overview | ScrollFrame | Syncfusion
+description: This section explains about the scroll frame component for windows forms and it's important key features
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
