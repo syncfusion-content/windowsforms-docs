@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfToolTip for syncfusion Essential Windows Forms
-description: This section explains the overview of the SfToolTip.
+description: This section explains about the tooltip component for windows forms and it's important key features such as multiple items, tooltip customization and etc
 platform: windowsforms
 control: SfToolTip
 documentation: ug
