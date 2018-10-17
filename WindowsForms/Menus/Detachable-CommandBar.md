@@ -17,7 +17,7 @@ The command bar can be added via the `DetachedCommandBars` selection from the sm
 
 ![Command bar added to the bar](Detachable-Commandbar-images/adding_CommandBar_Designer.png)
 
-![Form loaded with command bar](Detachable-CommandBar-images/form_with commandbar.png)
+![Form loaded with command bar](Detachable-CommandBar-images/form_with_commandbar.png)
 
 ## Adding command bar via code
 
@@ -49,8 +49,10 @@ Me.mainFrameBarManager1.DetachedCommandBars.Add(Me.commandBar1);
 
 {% endtabs %}
 
-![Form loaded with command bar](Detachable-CommandBar-images/form_with commandbar.png)
+![Form loaded with command bar](Detachable-CommandBar-images/form_with_commandbar.png)
 
-### See also
+{% see also%}
 
 [Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-child-controls)
+
+{% endseealso %}
