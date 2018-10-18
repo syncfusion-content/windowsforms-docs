@@ -164,3 +164,6 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 {% endtabs %}
 
 ![](VisualStyle_images/VisualStyle_img6.png)
+
+
+N> Refer to the following sample [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv-867267771.zip) that demonstrates the Visual Style support in SpellCheckerAdv.
