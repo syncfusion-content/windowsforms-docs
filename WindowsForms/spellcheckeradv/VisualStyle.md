@@ -48,7 +48,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img1.png)
+![Default Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img1.png)
 
 ## Metro
 
@@ -71,7 +71,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img2.png)
+![Metro Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img2.png)
 
 ## Office2016Colorful
 
@@ -94,7 +94,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img3.png)
+![Office2016 Colorful Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img3.png)
 
 ## Office2016White
 
@@ -117,7 +117,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img4.png)
+![Office2016 White Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img4.png)
 
 ## Office2016DarkGray
 
@@ -140,7 +140,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img5.png)
+![Office2016 DarkGray Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img5.png)
 
 ## Office2016Black
 
@@ -163,7 +163,7 @@ Me.spellCheckerAdv1.VisualStyle = Syncfusion.Windows.Forms.Tools.SpellCheckerAdv
 
 {% endtabs %}
 
-![](VisualStyle_images/VisualStyle_img6.png)
+![Office2016 Black Theme appearance in SpellCheckerAdv](VisualStyle_images/VisualStyle_img6.png)
 
 
 N> Refer to the following sample [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpellCheckerAdv-867267771.zip) that demonstrates the Visual Style support in SpellCheckerAdv.
