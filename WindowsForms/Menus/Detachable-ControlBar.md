@@ -23,7 +23,7 @@ The control bar can be added via the designer settings selecting the `Add Detach
 
 ## Adding control var via code
 
-The control bar instance can be created with requied settings and added to the `` collection property of the menu instance. The below code snippet shows the control bar is added to the menu control with top docked position.
+The control bar instance can be created with requied settings and added to the `DetachedCommandBars` collection property of the menu instance. The below code snippet shows the control bar is added to the menu control with top docked position.
 
 The below code snippet shows the control bar it being added to the menu item.
 
@@ -58,7 +58,7 @@ A control bar is capabel of hosting two controls.
 * Caption region
 * Client region
 
-### Caption controls
+### Caption region
 
 The controls added in this region will be loaded on the caption region of the control bar. Controls with single-line structure like text box, combo box, buttons or menu items can be included in this region. The below code snippet shows the text box is being added to the caption region.
 
@@ -88,6 +88,6 @@ Me.controlBar1.CaptionControl = textBox1
 
 ![Control bar with text box](Detachable-Controlbar-images/form_with_Controlbar_Caption_TextBox.png)
 
-### Client controls
+### Client region
 
-This region holds the main control that gets hosted with the control bar. Here the client controls is illustrated with 
+This region holds the main control that gets hosted with the control bar. The contorl bar with tool bar and card layout controls are illustrated in the [Control bars example](github link)
