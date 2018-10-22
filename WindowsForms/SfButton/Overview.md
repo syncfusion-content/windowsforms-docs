@@ -27,42 +27,42 @@ Following are the key features of the SfButton:
 
 * AutoSize: Supports adjusting the size of the button based on the content.
 
-
 ## Choose between different button controls
 
-Syncfusion WF suite comes up with following different button namely,
+Syncfusion WF suite comes up with the following different buttons:
 
-1. [SfButton](https://www.syncfusion.com/products/windows-forms/button)
-2. [ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)
-3. [ButtonEdit](https://www.syncfusion.com/products/windows-forms/buttonedit)
-4. [ToggleButton](https://www.syncfusion.com/products/windows-forms/toggle-button)
-5. [SplitButton](https://www.syncfusion.com/products/windows-forms/split-button)
+* [SfButton](https://www.syncfusion.com/products/windows-forms/button)
+* [ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)
+* [ButtonEdit](https://www.syncfusion.com/products/windows-forms/buttonedit)
+* [ToggleButton](https://www.syncfusion.com/products/windows-forms/toggle-button)
+* [SplitButton](https://www.syncfusion.com/products/windows-forms/split-button)
 
 ### SfButton
 
-The [SfButton](https://help.syncfusion.com/windowsforms/sfbutton/overview) is an advanced button control capable of displaying text and image with various customizations. It provides options to customize the text, image, border, and appearance in all states of the button.
+[SfButton](https://help.syncfusion.com/windowsforms/sfbutton/overview) is an advanced button control capable of displaying text and image with various customizations. This provides options to customize the text, image, border, and appearance in all states of the button.
 
 ### ButtonAdv
 
-The [ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) is an advanced button control capable of displaying images with different alignments and various border styles. It can be configured into any of the predefined [ButtonTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~ButtonType.html) such as Calculator, Up, Down, and so on. Also, it can afford the XP or Office styles.
+[ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) is an advanced button control capable of displaying images with different alignments and various border styles. This can be configured in any predefined [ButtonTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~ButtonType.html) such as Calculator, Up, Down, and so on. This can also afford XP or Office style.
 
 ### ButtonEdit
 
-The [Button Edit](https://help.syncfusion.com/windowsforms/buttonedit/overview) control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file/folder browser or a drop-down text control. You can implement a file picker and folder browser using the ButtonEdit control.
+The [Button Edit](https://help.syncfusion.com/windowsforms/buttonedit/overview) control embeds a text box control with collection of button controls that can be customized to create many commonly used interfaces such as file or folder browser or drop-down text control. You can also implement file picker and folder browser.
 
 ### ToggleButton
 
-The [ToggleButton](https://help.syncfusion.com/windowsforms/togglebutton/overview) control allows you to toggle between two states (Active and Inactive) that are opposite to each other in terms of behavior.
+The [ToggleButton](https://help.syncfusion.com/windowsforms/togglebutton/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
 
 ### SplitButton
 
-The [SplitButton](https://help.syncfusion.com/windowsforms/splitbutton/overview) control allows you to create a drop-down button-like interface that is a combination of a regular button and a drop-down list. You can use this control when you need a single control with a multiple options. For example you can use this control to create a button to set the font and list the available font family in the drop-down list.
+The [SplitButton](https://help.syncfusion.com/windowsforms/splitbutton/overview) control allows you to create drop-down button-like interface that is a combination of regular button and drop-down list. You can use this control when you need a single control with multiple options. For example, you can use this control to create a button to set font and list available in the font family of drop-down list.
 
 ### SfButton vs ButtonAdv
 
-Both SfButton and ButtonAdv controls used for same purpose. But SfButton control offers rich set of features over ButtonAdv. When you want to customize the appearance for all button states, you can use the SfButton control. When you want to use the predefined button types such as Calculator, Up, Down and so on you can use the ButtonAdv control. Comparatively, The performance of SfButton control is better than ButtonAdv control.
+Both SfButton and ButtonAdv controls are used for same purposes. But, the SfButton control offers rich set of features over ButtonAdv. To customize the appearance of all button states, use the SfButton control. To use the predefined button types such as Calculator, Up, Down, and so on, use the ButtonAdv control. Comparatively, the performance of SfButton control is better than ButtonAdv control.
 
-You can see the list of some of the specific API difference between ButtonAdv and SfButton as follows:
+You can see some of the specific API differences between ButtonAdv and SfButton as follows.
+
 <table>
 <tr>
 <td>
@@ -83,7 +83,7 @@ Text
 Text
 </td>
 <td>
-To display the text in to the button.
+Displays the text in the button.
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Image
 Image
 </td>
 <td>
-To display the image in to the button.
+Displays the image in the button.
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ BackgroundImage
 BackgroundImage
 </td>
 <td>
-To set the background image to the button.
+Sets the background image to the button.
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ TextImageRelation
 TextImageRelation
 </td>
 <td>
-To set the position of image and text.
+Sets the position of image and text.
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ TextAlign
 TextAlign
 </td>
 <td>
-To set the alignment of text in to inside the button.
+Sets the alignment of text inside the button.
 </td>
 </tr>
 <tr>
@@ -138,7 +138,7 @@ ImageAlign
 ImageAlign
 </td>
 <td>
-To set the alignment of image in to the button.
+Sets the alignment of image into the button.
 </td>
 </tr>
 <tr>
@@ -149,7 +149,7 @@ FocusRectangleVisible
 KeepFocusRectangle
 </td>
 <td>
-To draw a thin dotted rectangular frame inside the button when it got focus.
+Draws a thin dotted rectangular frame inside the button when it got focus.
 </td>
 </tr>
 <tr>
@@ -160,7 +160,7 @@ Border
 BorderStyleAdv
 </td>
 <td>
-To draw the border around the button.
+Draws the border around the button.
 </td>
 </tr>
 <tr>
@@ -171,11 +171,13 @@ ThemeName
 Appearance
 </td>
 <td>
-To apply visual styles for button.
+Applies visual styles for button.
 </td>
 </tr>
 </table>
-Below are the list of features in SfButton over ButtonAdv,
+
+The following list of features are in SfButton over ButtonAdv.
+
 <table>
 <tr>
 <td>
@@ -188,38 +190,38 @@ Below are the list of features in SfButton over ButtonAdv,
 </tr>
 <tr>
 <td>
-Appearance Customization
+Appearance customization
 </td>
 <td>
-SfButton provides supports to changing the {{'[appearance](https://help.syncfusion.com/windowsforms/sfbutton/appearance#customizing-appearance-based-on-button-state)'| markdownify }} like back color, fore color, border and image in all button states (i.e. hover, pressed, focus and disable states).
+Changes the {{'[appearance](https://help.syncfusion.com/windowsforms/sfbutton/appearance#customizing-appearance-based-on-button-state)'| markdownify }} such as back color, fore color, border, and image in all button states (hover, pressed, focus and disable states).
 
 </td>
 </tr>
 <tr>
 <td>
-Animation Image
+Animation image
 </td>
 <td>
-SfButton provides support to load the {{'[GIF](https://help.syncfusion.com/windowsforms/sfbutton/appearance#animating-the-image)'| markdownify }} image.
+Loads the {{'[GIF](https://help.syncfusion.com/windowsforms/sfbutton/appearance#animating-the-image)'| markdownify }} image.
 
 </td>
 </tr>
 <tr>
 <td>
-Rich Text
+Rich text
 </td>
 <td>
-The rich text can be displayed inside the SfButton by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AllowRichText.html)'| markdownify }} property and the proper rich text can be added in the {{'[Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Text.html)'| markdownify }} property.
+Displays the rich text inside SfButton by enabling the {{'[AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~AllowRichText.html)'| markdownify }} property. This can be added to the {{'[Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfButton~Text.html)'| markdownify }} property.
 
 </td>
 </tr>
 <tr>
 <td>
-Spacing Between Image and Text
+Spacing between image and text
 
 </td>
 <td>
-SfButton provides supports to adjust space between image and text, refer {{'[here](https://help.syncfusion.com/windowsforms/sfbutton/button-types#spacing-between-text-and-image)'| markdownify }}. 
+Adjusts space between image and text. Refer to {{'[here](https://help.syncfusion.com/windowsforms/sfbutton/button-types#spacing-between-text-and-image)'| markdownify }} for details. 
 </td>
 </tr>
 <tr>
@@ -227,7 +229,7 @@ SfButton provides supports to adjust space between image and text, refer {{'[her
 Wrap Text
 </td>
 <td>
-Text can be wrapped by using {{'[WrapText](https://help.syncfusion.com/windowsforms/sfbutton/button-content#wrapping-the-text)'| markdownify }} property in the SfButton.
+Wraps the text by using the {{'[WrapText](https://help.syncfusion.com/windowsforms/sfbutton/button-content#wrapping-the-text)'| markdownify }} property in SfButton.
 
 </td>
 </tr>
@@ -236,7 +238,7 @@ Text can be wrapped by using {{'[WrapText](https://help.syncfusion.com/windowsfo
 Text Trimming
 </td>
 <td>
-SfButton provides support to trim the text by using {{'[AllowEllipse](https://help.syncfusion.com/windowsforms/sfbutton/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
+Trims the text by using the {{'[AllowEllipse](https://help.syncfusion.com/windowsforms/sfbutton/button-content#trimming-and-showing-ellipsis-character)'| markdownify }} property.
 
 </td>
 </tr>
