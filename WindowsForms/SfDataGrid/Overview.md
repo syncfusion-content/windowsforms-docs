@@ -35,7 +35,7 @@ Syncfusion WF suite comes up with following different grid namely,
 
 1. [SfDataGrid](https://www.syncfusion.com/products/windows-forms/datagrid)
 2. [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview)
-3. [Gridcontrol](https://www.syncfusion.com/products/windows-forms/excel-like-grid)
+3. [GridControl](https://www.syncfusion.com/products/windows-forms/excel-like-grid)
 
 ### SfDataGrid
 
