@@ -30,24 +30,25 @@ The `SfCalendar` is a control that allows you to select a date from the calendar
 
 ## Choose between different calendar controls
 
-Syncfusion WF suite comes up with following different calendar’s namely,
+Syncfusion WF suite comes up with following different calendars namely:
 
 * [SfCalendar](https://www.syncfusion.com/products/windows-forms/calendar)
 * [MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview)
 
 ### SfCalendar
 
-[SfCalendar](https://help.syncfusion.com/windowsforms/sfcalendar/overview) control provides multiple views of month, year, decade and century that dates can be selected easily. The SfCalendar control provides easy date selection by using keyboard, mouse and touch interaction. It also supports for multiple date selection and highlighting special dates and complete customization option.
+The [SfCalendar](https://help.syncfusion.com/windowsforms/sfcalendar/overview) control provides multiple views of month, year, decade, and century: the dates will be selected easily. This provides easy date selection using keyboard, mouse, and touch interactions. This also supports selecting multiple date, highlighting special dates, and complete customization options.
 
 ### MonthCalendarAdv 
 
-[MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview) is a control that allows selecting the date at runtime and various customization option for the calendar. It also supports the user interface options such as multiple selection, context menu, globalization and more.
+The [MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview) control allows selecting the date at runtime and various customization options for the calendar. This also supports user interface options such as multiple selection, context menu, globalization, and more.
 
 ### SfCalendar vs MonthCalendarAdv
 
-Both SfCalendar and MonthCalendarAdv controls used for same purpose. But SfCalendar control offers rich set of features over MonthCalendarAdv. When you want customize the cell and easy navigation through year, decade, century view, you can use SfCalendar.
+Both SfCalendar and MonthCalendarAdv controls are used for the same purposes. But, the SfCalendar control offers rich set of features over MonthCalendarAdv. When cell customization and easy navigation through year, decade, and century views are needed, use SfCalendar.
 
-You can see the list of some of the specific API difference between SfCalendar and MonthCalendarAdv as follows:
+You can see some of the specific API differences between SfCalendar and MonthCalendarAdv as follows.
+
 <table>
 <tr>
 <td>
@@ -68,7 +69,7 @@ SelectedDate
 Value
 </td>
 <td>
-To indicates the current date of calendar.
+Indicates the current date of calendar.
 </td>
 </tr>
 <tr>
@@ -79,7 +80,7 @@ MaxDate
 MaxValue
 </td>
 <td>
-To specifies the maximum date selectable by the calendar.
+Specifies the maximum selectable date by the calendar.
 </td>
 </tr>
 <tr>
@@ -90,7 +91,7 @@ MinDate
 MinValue
 </td>
 <td>
-To specifies the minimum date selectable by the calendar.
+Specifies the minimum selectable date by the calendar.
 </td>
 </tr>
 <tr>
@@ -117,7 +118,9 @@ To highlight or customize dates to mention the special date on-demand.
 </td>
 </tr>
 </table>
-Below are the list of features in SfCalendar over MonthCalendarAdv as follows,
+
+The following list of features in SfCalendar over MonthCalendarAdv are as follows.
+
 <table>
 <tr>
 <td>
@@ -132,7 +135,7 @@ Below are the list of features in SfCalendar over MonthCalendarAdv as follows,
 Special dates
 </td>
 <td>
-SfCalendar provides supports to highlight the {{'[special date](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization#special-dates)'| markdownify }} with icons and descriptions. It also supports to customize the position of icon and text.
+Highlights the {{'[special date](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization#special-dates)'| markdownify }} with icons and descriptions. Customizes the position of icon and text.
 
 </td>
 </tr>
@@ -141,7 +144,7 @@ SfCalendar provides supports to highlight the {{'[special date](https://help.syn
 Blackout dates
 </td>
 <td>
-SfCalendar provides support to block the certain dates from selection and user interaction. It also provides support to apply separate style for {{'[Blackout dates](https://help.syncfusion.com/windowsforms/sfcalendar/selection#disable-selection)'| markdownify }}.
+Blocks certain dates from selection and user interaction. Applies separate style for {{'[Blackout dates](https://help.syncfusion.com/windowsforms/sfcalendar/selection#disable-selection)'| markdownify }}.
 
 </td>
 </tr>
@@ -150,7 +153,7 @@ SfCalendar provides support to block the certain dates from selection and user i
 Cell customization
 </td>
 <td>
-Each individual cell appearance in SfCalendar can be {{'[customized](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization)'| markdownify }} by changing the font, background, foreground, and border color.
+Each individual cell appearance in SfCalendar can be {{'[customized](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization)'| markdownify }} by changing font, background, foreground, and border color.
 
 </td>
 </tr>
@@ -159,7 +162,7 @@ Each individual cell appearance in SfCalendar can be {{'[customized](https://hel
 Appearance customization
 </td>
 <td>
-SfCalendar provides support to customize each individual cell {{'[appearance](https://help.syncfusion.com/windowsforms/sfcalendar/appearance)'| markdownify }}. It also allows to change the text and appearance of a date cell on demand.
+Customizes each individual cell {{'[appearance](https://help.syncfusion.com/windowsforms/sfcalendar/appearance)'| markdownify }}. Changes the text and appearance of a date cell on-demand.
 
 </td>
 </tr>
@@ -168,7 +171,7 @@ SfCalendar provides support to customize each individual cell {{'[appearance](ht
 Navigation
 </td>
 <td>
-SfCalendar provides {{'[navigation](https://help.syncfusion.com/windowsforms/sfcalendar/navigation)'| markdownify }} support to different set of dates and different views through scrolling, clicking or touching the calendar header.
+SfCalendar provides {{'[navigation](https://help.syncfusion.com/windowsforms/sfcalendar/navigation)'| markdownify }} support for different set of dates and different views through scrolling, clicking or touching the calendar header.
 
 </td>
 </tr>
