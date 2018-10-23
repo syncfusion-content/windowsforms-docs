@@ -29,7 +29,7 @@ Displays possible matches for the current content of the active edit control in 
 
 {% highlight C# %}
 
-this.autoComplete1.SetAutoComplet(this.textBox1, Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest); 
+this.autoComplete1.SetAutoComplete(this.textBox1, Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest); 
 
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ Me.autoComplete1.SetAutoComplete(Me.textBox1, Syncfusion.Windows.Forms.Tools.Aut
 
 ## MultiSuggest
 
-Displays possible matches of multiple columns for the current content of the active edit control in the form of pop-up window with selectable list of matches. Multisuggest mode is an extended mode of AutoSuggest.
+Displays possible matches of multiple columns for the current content of the active edit control in the form of pop-up window with selectable list of matches. MultiSuggest mode is an extended mode of AutoSuggest.
 
 ![Windows Forms AutoComplete MultiSuggest mode](AutoComplete-Controls-Images/MultiSuggest.png)
 
