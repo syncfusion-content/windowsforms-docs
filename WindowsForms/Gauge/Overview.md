@@ -19,34 +19,19 @@ Windows Forms supports rich set of gauges to provide an intuitive and attractive
 
 <table>
 <tr>
-<td>
-{{'**Name**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
-{{ '[RadialGauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)' | markdownify }}
-</td>
-<td>
-Visualize a range of values in radial scale with circular, helical or half-circular representation.
-</td>
-</tr>
+[RadialGauge](https://help.syncfusion.com/windowsforms/gauge/radial-gauge)</td><td>
+Visualize a range of values in radial scale with circular, helical or half-circular representation.</td></tr>
 <tr>
 <td>
-{{ '[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)' | markdownify }}
-</td>
-<td>
-Visualize a range of values in linear scale with horizontal or vertical representation
-</td>
-</tr>
+[LinearGauge](https://help.syncfusion.com/windowsforms/gauge/linear-gauge)</td><td>
+Visualize a range of values in linear scale with horizontal or vertical representation.</td></tr>
 <tr>
 <td>
-{{ '[DigitalGauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)' | markdownify }}
-<td>
-Visualize alphanumeric values in appearance like LED digital display
-</td>
-</tr>
+[DigitalGauge](https://help.syncfusion.com/windowsforms/gauge/digital-gauge)</td><td>
+Visualize alphanumeric values in appearance like LED digital display.</td></tr>
 </table>
