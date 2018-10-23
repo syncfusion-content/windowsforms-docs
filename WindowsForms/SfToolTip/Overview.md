@@ -19,27 +19,27 @@ Following are the key features of the `SfToolTip`:
 * Adding controls: Supports loading a control in the tooltip item.
 * ToolTip content customization: Supports customizing the appearance of the tooltip item.
 
-
 ## Choose between different tooltip controls
 
-Syncfusion WF suite comes up with following different tooltip namely,
+Syncfusion WF suite comes up with following different tooltips namely:
 
 * [SfToolTip](https://www.syncfusion.com/products/windows-forms/tooltip)
 * [SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)
 
 ### SfToolTip
 
-[SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview) is a component that provides options to display the multiple lines, multiple items and balloon styles. It also provides support to loading images and hosting any custom UI control.
+[SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview) is a component that provides options to display multiple lines, multiple items, and balloon styles. This also provides support to load images and host any custom UI control.
 
 ### SuperToolTip
 
-[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip) component is used to display the text and image with various customization options. It also allows to customize the back color, fore color, separator and html text.
+[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip) component is used to display text and image with various customization options. This also allows you to customize the back color, fore color, separator, and html text.
 
 ### SfToolTip vs SuperToolTip
 
-Both SfToolTip and SuperToolTip controls are used for same purpose. But SfToolTip control offers rich set of features over SuperToolTip. When you want multi items support and customizing each tooltip specifically, you can use SfToolTip. Comparatively, the style customization of SfToolTip control is better than the SuperToolTip.
+Both SfToolTip and SuperToolTip controls are used for the same purposes. But, the SfToolTip control offers rich set of features over SuperToolTip. When multiitems support and specific tooltip customization are needed, use SfToolTip. Comparatively, the style customization of the SfToolTip control is better than SuperToolTip.
 
-You can see the list of some of the specific API difference between SfToolTip and SuperToolTip as follows:
+You can see some of the specific API differences between SfToolTip and SuperToolTip as follows.
+
 <table>
 <tr>
 <td>
@@ -60,7 +60,7 @@ Text
 Text
 </td>
 <td>
-To set the text to be displayed in the tooltip item.
+Sets the text to be displayed in the tooltip item.
 </td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ Image
 Image
 </td>
 <td>
-To set the image to be shown on tooltip
+Sets the image to be shown on the tooltip.
 </td>
 </tr>
 <tr>
@@ -82,7 +82,7 @@ AutoPopDelay
 ToolTipDuration
 </td>
 <td>
-To specify the duration of the tooltip to be visible.
+Specifies the duration of the tooltip to be visible.
 </td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ ToolTipInfo.ToolTipStyle
 Style
 </td>
 <td>
-To specify the style of tooltip. Regular rectangle or balloon style.
+Specifies the style of the tooltip: Regular rectangle or balloon style.
 </td>
 </tr>
 <tr>
@@ -104,11 +104,13 @@ ToolTipInfo.MaxWidth
 MaxWidth
 </td>
 <td>
-To specify the maximum width of the tooltip.
+Specifies the maximum width of the tooltip.
 </td>
 </tr>
 </table>
-Below are the list of features in SfToolTip over SuperToolTip,
+
+The following list of features are in SfToolTip over SuperToolTip.
+
 <table>
 <tr>
 <td>
@@ -123,7 +125,7 @@ Below are the list of features in SfToolTip over SuperToolTip,
 Multiple items
 </td>
 <td>
-SfToolTip provides support to add multiple items as a tooltip. To know more about adding control as a popup information, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-multiple-items-into-a-tooltip)'| markdownify }}.
+Adds multiple items as tooltip. To learn more about adding control as a pop-up information, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-multiple-items-into-a-tooltip)'| markdownify }}.
 
 </td>
 </tr>
@@ -132,7 +134,7 @@ SfToolTip provides support to add multiple items as a tooltip. To know more abou
  custom user control
 </td>
 <td>
-SfToolTip provides support to add control as a popup information. To know more about custom user control, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
+Adds control as pop-up information. To learn more about custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
 
 </td>
 </tr>
@@ -141,7 +143,7 @@ SfToolTip provides support to add control as a popup information. To know more a
 Custom drawing
 </td>
 <td>
-SfToolTip provides support to custom draw the tooltip item appearance. To know more about custom drawing the tooltip, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
+Draws the custom tooltip item appearance. To learn more about drawing custom tooltip, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -149,7 +151,7 @@ SfToolTip provides support to custom draw the tooltip item appearance. To know m
 Appearance customization
 </td>
 <td>
-Appearance of the tooltip item shown using SfToolTip can be customized individually. Whereas all the tooltip item shown using SuperToolTip can have the same appearance only. To know more about appearance customization, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/appearance)'| markdownify }}.
+Individually customizes the appearance of tooltip item shown using SfToolTip, whereas all tooltip items shown using SuperToolTip can have the same appearance. To learn more about appearance customization, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/appearance)'| markdownify }}.
 </td>
 </tr>
 </table>
