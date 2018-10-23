@@ -36,7 +36,7 @@ Syncfusion WF suite comes up with following different tooltips namely:
 
 ### SfToolTip vs SuperToolTip
 
-Both SfToolTip and SuperToolTip controls are used for the same purposes. But, the SfToolTip control offers rich set of features over SuperToolTip. When multiitems support and specific tooltip customization are needed, use SfToolTip. Comparatively, the style customization of the SfToolTip control is better than SuperToolTip.
+Both SfToolTip and SuperToolTip controls are used for the same purposes. But, the SfToolTip control offers rich set of features over SuperToolTip. When multi items support and specific tooltip customization are needed, use SfToolTip. Comparatively, the style customization of the SfToolTip control is better than SuperToolTip.
 
 You can see some of the specific API differences between SfToolTip and SuperToolTip as follows.
 
