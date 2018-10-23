@@ -141,7 +141,7 @@ SfToolTip provides support to add control as a popup information. To know more a
 Custom drawing
 </td>
 <td>
-SfToolTip provides support to custom draw the tooltipitem appearance. To know more about cutom drawing the tooltip, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
+SfToolTip provides support to custom draw the tooltip item appearance. To know more about custom drawing the tooltip, refer {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
 </td>
 </tr>
 <tr>

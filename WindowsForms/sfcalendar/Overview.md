@@ -41,7 +41,7 @@ Syncfusion WF suite comes up with following different calendar’s namely,
 
 ### MonthCalendarAdv 
 
-[MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview) is a control that allows selecting the date at runtime and various customization option for the calendar. It also supports the user interface options such as multiple selection, contextmenu, globalization and more.
+[MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview) is a control that allows selecting the date at runtime and various customization option for the calendar. It also supports the user interface options such as multiple selection, context menu, globalization and more.
 
 ### SfCalendar vs MonthCalendarAdv
 
