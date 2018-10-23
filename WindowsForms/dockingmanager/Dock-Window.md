@@ -779,5 +779,5 @@ The splitter of the dock window can be customized using the [SplitterWidth](http
 
 ![Red color resize splitter between Dock windows](Dock_Window_images/Dock_Window_img14.png) 
 
-N > The MetroSplitterBackColor property effects only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property is set to Metro.
+N> The MetroSplitterBackColor property effects only when the [DockingManager.VisualStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~VisualStyle.html) property is set to Metro.
 
