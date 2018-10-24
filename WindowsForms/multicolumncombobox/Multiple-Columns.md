@@ -37,7 +37,7 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 {% endhighlight %}
 {% endtabs %}
 
-## DropDowWidth
+## DropDownWidth
 
 The DropDownWidth property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
 
