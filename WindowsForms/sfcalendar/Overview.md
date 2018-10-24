@@ -30,7 +30,7 @@ The `SfCalendar` is a control that allows you to select a date from the calendar
 
 ## Choose between different calendar controls
 
-Syncfusion winforms suite comes up with following different calendars namely:
+Syncfusion WinForms suite comes up with following different calendars namely:
 
 * [SfCalendar](https://www.syncfusion.com/products/windows-forms/calendar)
 * [MonthCalendarAdv](https://help.syncfusion.com/windowsforms/monthcalendaradv/overview)
