@@ -23,26 +23,23 @@ This section discusses the various components in the AutoComplete popup.
 
 DropDown item can have a header that is enabled using AutoComplete.ShowColumnHeader property. The AutoAddItem property must be set to "True"
 
+{% tabs %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Me.autoComplete1.AutoAddItem = True
 
 Me.autoComplete2.ShowColumnHeader = True
 
 Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
+
 {% endhighlight %}
 
+{% endtabs %}
 
- ![Header, Close Button and Gripper](AutoComplete-Controls-Images/Overview_img15.jpeg) 
+![Header, Close Button and Gripper](AutoComplete-Controls-Images/Overview_img15.jpeg) 
 
-
-
-
-N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
+N>You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ## Close Button and Gripper Settings
 
@@ -65,12 +62,11 @@ ShowGripper</td><td>
 Specifies whether to show gripper at the bottom right of a DropDownContainer. By default it is true.</td></tr>
 </table>
 
-N> The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
+N>The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
 
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 this.autoComplete1.ShowCloseButton = true;
 
@@ -78,14 +74,15 @@ this.autoComplete1.ShowGripper = true;
 
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.ShowCloseButton = True
 
 Me.autoComplete1.ShowGripper = True
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Appearance Settings
 
@@ -120,9 +117,9 @@ HeaderStyle</td><td>
 Gets or sets the AutoCompletePopup Column Header style.</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight C# %}
-
-
 
 //Specifies the header fore color of the AutoComplete Popup.
 
@@ -146,10 +143,7 @@ this.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'Specifies the header fore color of the AutoComplete Popup.
 
@@ -170,8 +164,10 @@ Me.autoComplete1.ItemFont = New System.Drawing.Font("Mistral", 8.25F)
 'Specifies the style of ColumnHeader in AutoComplete Popup.
 
 Me.autoComplete1.HeaderStyle = ColumnHeaderStyle.Clickable 
+
 {% endhighlight %}
 
+{% endtabs %}
 
  ![Appearance setting](AutoComplete-Controls-Images/Overview_img18.png) 
 
@@ -186,21 +182,21 @@ Visual Styles for the AutoComplete control can be enabled through Style property
 * Metro
 * Default
 
+{% tabs %}
 
-{%highlight c#%}
+{% highlight C# %}
 
 this.autoComplete1.Style = AutoCompleteStyle.Office2016Colorful;
 
-{%endhighlight%}
+{% endhighlight %}
 
-
-
-{%highlight vbnet%}
-
+{% highlight VB %}
 
 Me.autoComplete1.Style = AutoCompleteStyle.Office2016Colorful
 
 {%endhighlight%}
+
+{% endtabs %}
 
 ![Visual style](AutoComplete-Controls-Images/Overview_img37.png)
 
@@ -220,46 +216,37 @@ Description</th></tr>
 AutoAddItem</td><td>
 Specifies whether the current item in the target control is to be automatically added during validation, when the ENTER key is pressed.</td></tr>
 </table>
- 
 
 
-N> The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
+N>The header will be shown only for the text that is saved at run time. Set AutoCompleteMode and AutoCompleteSource properties to None.
 
- 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 this.autoComplete1.AutoAddItem = true;
 
 this.autoComplete2.ShowColumnHeader = true;
 
 this.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents";
+
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Me.autoComplete1.AutoAddItem = True
 
 Me.autoComplete2.ShowColumnHeader = True
 
 Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Contents"
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ![Header setting](AutoComplete-Controls-Images/Overview_img20.png) 
 
-
-
-
-N> You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
+N>You can also set multiple columns. Refer [Multiple Columns](http://help.syncfusion.com/windowsforms/autocomplete/multiple-columns) to know more.
 
 ### Close Button and Gripper Settings
 
@@ -282,16 +269,11 @@ ShowGripper</td><td>
 Specifies whether the gripper should be shown at the bottom right of a DropDownContainer. By default it is true.</td></tr>
 </table>
  
+N>The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
 
-
-N> The AutoComplete dropdown can be closed by calling AutoComplete.CloseDropDown() method.
-
- 
-
-
+{% tabs %}
 
 {% highlight C# %}
-
 
 this.autoComplete1.ShowCloseButton = true;
 
@@ -299,23 +281,21 @@ this.autoComplete1.ShowGripper = true;
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Me.autoComplete1.ShowCloseButton = True
 
 Me.autoComplete1.ShowGripper = True
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Behavior Settings
 
 ### Case Sensitivity
 
 At run time, the string entered in a textbox, for example, can be made case sensitive using the following properties.
-
 
 <table>
 <tr>
@@ -332,12 +312,9 @@ CaseSensitive</td><td>
 Specifies whether the replacement of the matching entry is to be case sensitive.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 this.autoComplete1.IgnoreCase = false;
 
@@ -345,57 +322,41 @@ this.autoComplete1.CaseSensitive = true;
 
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
-
-
-
+{% highlight VB %}
 
 Me.autoComplete1.IgnoreCase = False
 
 Me.autoComplete1.CaseSensitive = True
+
 {% endhighlight %}
 
-
-
+{% endtabs %}
 
 ![Casing properties](AutoComplete-Controls-Images/Overview_img23.jpeg) 
-
-
 
 ### Overriding Combo
 
 The Combobox dropdown can be suppressed and overridden by the AutoComplete control by using the OverrideCombo property.
 
-
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 this.autoComplete1.OverrideCombo = true;
 
 {% endhighlight %}
 
-
-
-
 {% highlight vbnet %}
 
-
-
 Me.autoComplete1.OverrideCombo = True
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ### Sorting
 
 The items in the list can be sorted automatically by setting AutoSortList to True.
-
 
 <table>
 <tr>
@@ -408,28 +369,21 @@ AutoSortList</td><td>
 Specifies whether default sorting is to be performed.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
-
 
 this.autoComplete1.AutoSortList = true;
 
 {% endhighlight %}
 
-
-
-
-
 {% highlight vbnet %}
 
-
-
 Me.autoComplete1.AutoSortList = True
+
 {% endhighlight %}
 
+{% endtabs %}
 
 ### Duplicate values
 
