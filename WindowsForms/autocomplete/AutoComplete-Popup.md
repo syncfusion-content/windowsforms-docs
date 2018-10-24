@@ -13,8 +13,6 @@ When a control is associated with an AutoComplete control, a popup is displayed,
 
  ![Components of Autocomplete](AutoComplete-Controls-Images/Overview_img13.png) 
 
-
-
 This section discusses the various components in the AutoComplete popup.
 
 ## Header, Close Button and Gripper
@@ -346,7 +344,7 @@ this.autoComplete1.OverrideCombo = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.OverrideCombo = True
 
@@ -377,7 +375,7 @@ this.autoComplete1.AutoSortList = true;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.AutoSortList = True
 
@@ -420,6 +418,8 @@ Me.autoComplete1.EnableDuplicateValues = True
 
 {% endhighlight %}
 
+{% endtabs %}
+
 {% seealso %} 
  [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control), [External Datasource](/windowsforms/autocomplete/datasource#external-datasource)
 {% endseealso %}
@@ -450,12 +450,9 @@ PreferredWidth</td><td>
 Specifies preferred width for the dropdown displayed by the AutoComplete control when AdjustHeightToItemCount property is false. Default value is -1.</td></tr>
 </table>
 
-
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 this.autoComplete1.AdjustHeightToItemCount = false;
 
@@ -464,16 +461,10 @@ this.autoComplete1.AutoPersistentDropDownSize = true;
 this.autoComplete1.PreferredHeight = 100;
 
 this.autoComplete1.PreferredWidth = 300;
+
 {% endhighlight %}
 
-
-
-
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 
 Me.autoComplete1.AdjustHeightToItemCount = False
 
@@ -482,8 +473,9 @@ Me.autoComplete1.AutoPersistentDropDownSize = True
 Me.autoComplete1.PreferredHeight = 100
 
 Me.autoComplete1.PreferredWidth = 300
+
 {% endhighlight %}
 
+{% endtabs %}
 
  ![Size settings](AutoComplete-Controls-Images/Overview_img24.jpeg)
-
