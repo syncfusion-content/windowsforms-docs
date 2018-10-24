@@ -402,25 +402,17 @@ EnableDuplicateValues</td><td>
 Gets or sets whether to allow duplicate values in AutoComplete DataSource</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 //To use duplicate values in AutoComplete data source
 
 this.autoComplete1.EnableDuplicateValues = true;
 
-
-
 {% endhighlight %}
 
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 'To use duplicate values in AutoComplete data source
 
