@@ -29,7 +29,7 @@ Following are the key features of the SfButton:
 
 ## Choose between different button controls
 
-Syncfusion WF suite comes up with the following different buttons:
+Syncfusion winforms suite comes up with the following different buttons:
 
 * [SfButton](https://www.syncfusion.com/products/windows-forms/button)
 * [ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)

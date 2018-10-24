@@ -21,7 +21,7 @@ Following are the key features of the `SfToolTip`:
 
 ## Choose between different tooltip controls
 
-Syncfusion WF suite comes up with following different tooltips namely:
+Syncfusion winforms suite comes up with following different tooltips namely:
 
 * [SfToolTip](https://www.syncfusion.com/products/windows-forms/tooltip)
 * [SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)
