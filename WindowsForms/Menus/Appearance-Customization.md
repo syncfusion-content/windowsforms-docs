@@ -33,7 +33,7 @@ barItem1.Image = New ImageExt(Image.FromFile(Application.ExecutablePath & "\..\.
 
 {% endhighlight %}
 
-{% endtabe %}
+{% endtabs %}
 
 #### Properties
 
@@ -83,6 +83,10 @@ The below table discuss the image properties of customizing the disabled state i
 | [`DisabledImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageIndex.html) | Gets or sets the index of the image collections. |
 
 N> By default, the `DisabledImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
+
+![Menu Item before disabled state](Appearance-Customization-images/menuItem_beforeDisabled.png)*Menu item before disabled state*
+
+![Menu Item after disabled state](Appearance-Customization-images/menuItem_afterDisabled.png)*Menu item after disabled state*
 
 ### Adding highlighted state images
 
