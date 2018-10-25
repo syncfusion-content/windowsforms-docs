@@ -15,6 +15,160 @@ In this section the appearance customization of the menu and child menu items is
 
 The images associated with a menu item can be customized depending upon its state either it is enabled, disabled, highlighted or performed an action upon it.
 
+### Adding normal state images
+
+Images can be added to menu items directly via the property [`Image`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Image.html). The following code snippet shows the image added to a bar item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+barItem1.Image = new ImageExt(Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\Copy.ico"));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+barItem1.Image = New ImageExt(Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\Copy.ico"))
+
+{% endhighlight %}
+
+{% endtabe %}
+
+#### Properties
+
+The below table discuss the image properties of customizing the image associated with a menu item.
+
+| Properties | Description |
+|-------------------|-------------------|
+| [`ImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageList.html) | Gets or sets the image list associated with a menu a item instance. |
+| [`ImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageListAdv.html) | Gets or sets the image list associated with a menu item instance. |
+| [`ImageSize`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageSize.html) | Gets or sets the size of an image. |
+| [`LargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~LargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`LargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~LargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`ImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageIndex.html) | Gets or sets the index of the image list collections. |
+
+N> By default, the `ImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
+
+### Adding disabled state images
+
+When a menu item tends to be in a disabled state, a different image can be associated with that menu item via the property [`DisabledImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImage.html). The following code snippet shows the image associated with a disabled state menu item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+barItem1.DisabledImage = new ImageExt(Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\New.ico"));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+barItem1.DisabledImage = New ImageExt(Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\New.ico"))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+#### Properties
+
+The below table discuss the image properties of customizing the disabled state image associated with a menu item.
+
+| Properties | Description |
+|-------------------|-------------------|
+| [`DisabledImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`DisabledImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`DisabledLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`DisabledLargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`DisabledImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageIndex.html) | Gets or sets the index of the image collections. |
+
+N> By default, the `DisabledImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
+
+### Adding highlighted state images
+
+When a menu item is selected or highlighted, the image associated to the menu item can be set via the [`HighlightedImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImage.html) property. The following code snippet shows the image associated with a highlighted state menu item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+barItem1.HighlightedImage = new ImageExt(Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\Cut.ico"));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+barItem1.HighlightedImage = New ImageExt(Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\Cut.ico"))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+#### Properties
+
+The below table discuss the image properties of customizing the selected state image associated with a menu item.
+
+| Properties | Description |
+|-------------------|-------------------|
+| [`HighlightedImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`HighlightedImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`HighlightedLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`HighlightedImageLargeListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`HighlightedImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageIndex.html) | Gets or sets the index of the image collections. |
+
+![Before highlighting the menu item](Appearance-Customization-images\menuItem_non_HighlightedImage.png)*Before highlighting a menu item*
+
+![Before highlighting the menu item](Appearance-Customization-images\menuItem_HighlightedImage.png)*After highlighting a menu item*
+
+N> By default, the `HighlightedImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
+
+### Adding pressed state images
+
+When a menu item is pressed, the image associated to the menu item can be set via the [`PressedImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedImageListAdv.html) property. The following code snippet shows the image associated with a pressed state menu item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ImageListAdv pressedStateImages = new ImageListAdv();
+barItem1.PressedImageIndex = 2;
+pressedStateImages.Images.AddRange(new Image[]
+{
+    Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\Cut.ico"),
+    Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\SaveAll.ico"),
+    Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\New.ico"),
+    Image.FromFile(Application.ExecutablePath + @"\..\..\..\Resources\Save.ico")
+});
+barItem1.PressedImageListAdv = pressedStateImages;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim pressedStateImages As New ImageListAdv()
+barItem1.PressedImageIndex = 2
+pressedStateImages.Images.AddRange(New Image()
+{
+   Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\Cut.ico"),
+   Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\SaveAll.ico"),
+   Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\New.ico"),
+   Image.FromFile(Application.ExecutablePath & "\..\..\..\Resources\Save.ico")
+})
+barItem1.PressedImageListAdv = pressedStateImages
+
+{% endhighlight %}
+
+{% endtabs %}
+
+#### Properties
+
+The below table discuss the image properties of customizing the pressed state image associated with a menu item.
+
+| Properties | Description |
+|-------------------|-------------------|
+| [`PressedLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`PressedLargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+
 ## Customizing bar styles
 
 The menu bar appearance can be customized with the usage scenario depending upon the menu items it holds. The following are the bar styles supported in menu control.
