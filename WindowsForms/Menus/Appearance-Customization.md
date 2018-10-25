@@ -11,9 +11,13 @@ documentation: ug
 
 In this section the appearance customization of the menu and child menu items is discussed.
 
+## Customizing images in menu items
+
+The images associated with a menu item can be customized depending upon its state either it is enabled, disabled, highlighted or performed an action upon it.
+
 ## Customizing bar styles
 
-The menu bar appearance can be customized with the usage scenario depending upon the menu items it holds. The following are the bar styles suppoterd in menu control.
+The menu bar appearance can be customized with the usage scenario depending upon the menu items it holds. The following are the bar styles supported in menu control.
 
 * None
 * AllowQuickCustomizing
@@ -28,7 +32,7 @@ The menu bar appearance can be customized with the usage scenario depending upon
 
 The enum value of `BarStyle` cam also be adjoined to represent the bar with combined applied styles. The below image shows the bar items are combined with the `Visible` value.
 
-![Bar enabled with customzining options](Appearance-Customization-images/barStyle_AllowQuickCustomizing.png)*Allow Quick Customizing*
+![Bar enabled with customizing options](Appearance-Customization-images/barStyle_AllowQuickCustomizing.png)*Allow Quick Customizing*
 
 ![Bar applied with Drag drop border style](Appearance-Customization-images/barStyle_DrawDragBorder.png)*Draw drag-drop border*
 
@@ -65,7 +69,7 @@ The menu items rendering mode can be customized with the `PaintStyle` property. 
 
 ### Default mode
 
-As the name indicated this is the default value of the paint style property. Images are tet are drawn only in the child-menus like drop down menu or from parent menu. Otherwise all the bar will be drawn only with its respective image.
+As the name indicates it is the default rendering mode of `PaintStyle` property. Images are drawn only in the child-menus like drop down menu or from parent menu. Otherwise all the bar will be drawn only with its respective image.
 
 The below image shows that the drop-down menu is rendered with both image and text where as the main menu items are rendered only with images.
 
@@ -95,7 +99,7 @@ barItem1.PaintStyle = PaintStyle.TextOnly
 
 ### Text only in menu mode
 
-The menu items can be represented as text only specific to the child-menu or drop down menu of the menu control. The below code snippet shows the menu items are applied with `TextOnlyInMenus` mode.
+The menu items can be represented as text only specific to the child-menus either from drop down menu or parent menu. The below code snippet shows the menu items are applied with `TextOnlyInMenus` mode.
 
 {% tabs %}
 
@@ -204,3 +208,55 @@ Me.bar1.AllowCustomizing = False
 {% endtabs %}
 
 ![Disbled customize for spcific menu toolbas](Appearance-Customization-images/customizeOptionDisabled_Partially.png)
+
+### Customizing events
+
+There are two events associated while customizing the menu items. The [`CustomizingItem`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizingItem.html) property holds the current customizing item.
+
+* [`CustomizationBegin`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationBegin_EV.html) - Occurs when the custimation of a menu item of a tool bar begins.
+* [`CustomizationDone`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationDone_EV.html) - Occurs when the customization of a menu item gets completed.
+
+## Grouping menu items
+
+The menu items of a tool bar can be grouped togethere using the [`SeparatorIndices`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~SeparatorIndices.html) property. The specific tool bar instance is used to specific the grouping items. The below code snippet shows the menu items are grouped in a tool bar.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.bar1.SeparatorIndices.Add(3);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.bar1.SeparatorIndices.Add(3)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Menu items are grouped in a bar](Appearance-Customization-images/menuItemsGrouped.png)
+
+N> The index value represents the menu items incremental value for grouping. Its not likely to be the bar item index value in a tool bar.
+
+### Grouping methods
+
+| Method | Description |
+|----------|--------------------|
+| [`BeginGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~BeginGroupAt.html) | Begins the grouping of menu items from the bar item instance specified. |
+| [`RemoveGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~RemoveGroupAt.html) | Removes the grouping of menu items from the bar item instance specified. |
+| [`IsGroupBeginning`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~IsGroupBeginning.html) | Returns a boolean value whether the specified bar item instance is at the begining of the grouping or not. |
+| [`ClearSeparators`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~ClearSeparators.html) | Removes every grouping of menu items in a given tool bar. |
+
+## Backward compatibility
+
+The menu control supports to customize the appearance and scale modes similar to the older version of the menu control. This can be used by enabling the [`UseBackwardCompatiblity`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~UseBackwardCompatiblity.html) property.
+
+The color schemes can be modified by applying and customizing the theme colors.
+
+{% seealso %}
+
+[Theming](https://help.syncfusion.com/windowsforms/menus/Theming)
+
+{% endseealso %}
