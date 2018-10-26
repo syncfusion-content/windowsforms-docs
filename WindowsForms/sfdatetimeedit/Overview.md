@@ -144,10 +144,10 @@ SfDateTimeEdit supports to shows error messages on invalid dates or when date-ra
 </tr>
 <tr>
 <td>
-Value change by mousewheel
+Value change by mouse wheel
 </td>
 <td>
-SfDateTimeEdit supports to change the value by mousewheel action. To know more about value change by mousewheel in SfDateTimeEdit, refer {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/navigation#change-value-by-mouse)'| markdownify }}.
+SfDateTimeEdit supports to change the value by mouse wheel action. To know more about value change by mouse wheel in SfDateTimeEdit, refer {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/navigation#change-value-by-mouse)'| markdownify }}.
 </td>
 </tr>
 </table>

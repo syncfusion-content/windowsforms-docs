@@ -37,7 +37,7 @@ Syncfusion WinForms suite comes up with following different combobox namely,
 
 ### SfComboBox
 
-[SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox/overview) is a text box component that allows users to type a value or choose an option from a list of predefined options. It has several out of the box fearures, such as data binding filtering, UI customization, accessibility and more.
+[SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox/overview) is a text box component that allows users to type a value or choose an option from a list of predefined options. It has several out of the box features, such as data binding filtering, UI customization, accessibility and more.
 
 ### ComboBoxAdv
 
