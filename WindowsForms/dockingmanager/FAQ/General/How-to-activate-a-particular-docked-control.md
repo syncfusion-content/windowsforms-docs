@@ -15,7 +15,7 @@ To activate particular docked control, call the `ActivateControl` method inside 
 <table>
 <tr>
 <th>
-Methods</th<th>
+Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -24,40 +24,21 @@ Activates the docked control which is passed as a parameter to this method. This
 </table>
 
 {% tabs %}
-
 {% highlight C# %}
-
-
 //The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
-
 private void dockingManager1_NewDockStateEndLoad(object sender, System.EventArgs e)
-
 {
-
-this.dockingManager1.ActivateControl(this.listBox1);
-
-Console.WriteLine("Listbox is activated");
-
+    this.dockingManager1.ActivateControl(this.listBox1);
+    Console.WriteLine("Listbox is activated");
 }
 {% endhighlight %}
-
-
-
 {% highlight VB %}
-
-
 'The NewDockStateEndLoad event occurs immediately after a new dock state has been loaded.
-
 Private Sub dockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e As System.EventArgs)
-
-Me.dockingManager1.ActivateControl(Me.listBox1)
-
-Console.WriteLine("Listbox is activated")
-
+    Me.dockingManager1.ActivateControl(Me.listBox1)
+    Console.WriteLine("Listbox is activated")
 End Sub
-
 {% endhighlight %}
-
 {% endtabs %}
 
 
