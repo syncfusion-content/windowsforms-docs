@@ -28,9 +28,9 @@ The `SfDateTimeEdit` is a control that allows you to edit the `DateTime` in the 
 * **Testing**: Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfdatetimeedit) to recognize SfDateTimeEdit.
 
 
-## Choose between different datetime controls
+## Choose between different DateTime controls
 
-Syncfusion WinForms suite comes up with following different datetime namely,
+Syncfusion WinForms suite comes up with following different DateTime controls namely,
 
 * [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview)
 * [DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv/overview)
@@ -79,7 +79,7 @@ Watermark
 NullString
 </td>
 <td>
-To Specifies the text visible when there is no date selected.
+To specifies the text visible when there is no date selected.
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ DateTimePattern
 Format
 </td>
 <td>
-To display the format of the datetime.
+To display the format of the date time.
 </td>
 </tr>
 </table>
@@ -131,7 +131,7 @@ Below are the list of features in SfDateTimeEdit over DateTimePickerAdv,
 DateTimeEditingMode
 </td>
 <td>
-SfDateTimeEdit provides support to free style editing with different {{'[mode](https://help.syncfusion.com/windowsforms/sfdatetimeedit/editing-support)'| markdownify }} (Mask and Default Text edit mode).
+SfDateTimeEdit provides support to free style editing with different {{'[mode](https://help.syncfusion.com/windowsforms/sfdatetimeedit/editing-support)'| markdownify }} (mask and default text edit mode).
 </td>
 </tr>
 <tr>

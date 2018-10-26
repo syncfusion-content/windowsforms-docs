@@ -37,11 +37,11 @@ Syncfusion WinForms suite comes up with following different combobox namely,
 
 ### SfComboBox
 
-[SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox/overview) is a text box component that allows users to type a value or choose an option from a list of predefined options. It has several out of the box features, such as data binding filtering, UI customization, accessibility and more.
+[SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox/overview) is a textbox component that allows users to type a value or choose an option from a list of predefined options. It has several out of the box features, such as data binding filtering, UI customization, accessibility and more.
 
 ### ComboBoxAdv
 
-[ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv/overview) is an advanced combo box control that provides a similar object model as the framework of the combobox control, with a lot of additional features. It allows the user to select multiple items and display the default text when none of the item is selected.
+[ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv/overview) is an advanced combobox control that provides a similar object model as the framework of the combobox control, with a lot of additional features. It allows the user to select multiple items and display the default text when none of the item is selected.
 
 ### MultiSelectionComboBox
 
@@ -49,11 +49,11 @@ Syncfusion WinForms suite comes up with following different combobox namely,
 
 ### ComboBoxAutoComplete
 
-[comboBoxAutoComplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete/overview) control combines a combo box control with an AutoComplete control to provide autocompletion for that instance of the combo box. It can be used on a form to provide autocompletion for one or several edit controls (text box and combo box). 
+[comboBoxAutoComplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete/overview) control combines a combobox control with an AutoComplete control to provide autocompletion for that instance of the combobox. It can be used on a form to provide autocompletion for one or several edit controls (textbox and combobox). 
 
 ### MultColumnComboBox
 
-[MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumncombobox/overview) is an advanced combo box control that has the capability to show multiple columns in the drop-down list. You can also provides to display the headers for the multiple columns.
+[MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumncombobox/overview) is an advanced combobox control that has the capability to show multiple columns in the drop-down list. You can also provides to display the headers for the multiple columns.
 
 ### SfComboBox vs MultiSelectionComboBox vs ComboBoxAdv
 
@@ -243,7 +243,7 @@ SfComboBox provides support to set the {{'[watermark](https://help.syncfusion.co
 Sorting
 </td>
 <td>
-SfComboBox provides support to {{'[sort](https://help.syncfusion.com/windowsforms/sfcombobox/sorting)'| markdownify }} the data either in ascending or descending order by using {{'[SfComboBox1.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html)'| markdownify }} property.
+SfComboBox provides support to {{'[sort](https://help.syncfusion.com/windowsforms/sfcombobox/sorting)'| markdownify }} the data either in ascending or descending order by using {{'[SfComboBox.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html)'| markdownify }} property.
 
 </td>
 </tr>

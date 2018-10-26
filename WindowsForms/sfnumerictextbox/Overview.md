@@ -46,7 +46,7 @@ Syncfusion WinForms suite comes up with following different textbox namely,
 
 ### IntegerTextBox
 
-[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview) is derived from the Windows Forms framework TextBox control and can display integer data type values. It supports only integer data type values.
+[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview) is derived from the Windows Forms Framework TextBox control and can display integer data type values. It supports only integer data type values.
 
 ### SfNumericTextBox vs existing numeric textbox controls
 
