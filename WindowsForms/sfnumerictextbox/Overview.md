@@ -25,7 +25,7 @@ The numeric text box control is an advanced textbox which allows you to enter nu
 
 ## Choose between different textbox controls
 
-Syncfusion WinForms suite comes up with following different textbox namely,
+Syncfusion WinForms suite comes up with the following different textboxes:
 
 * [SfNumericTextBox](https://www.syncfusion.com/products/windows-forms/numeric-textbox)
 * [CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox/overview)
@@ -34,11 +34,11 @@ Syncfusion WinForms suite comes up with following different textbox namely,
 
 ### SfNumericTextBox
 
-[SfNumericTextBox](https://help.syncfusion.com/windowsforms/sfnumerictextbox/overview) control is an advanced text box that allows you to enter numeric values in a specific format such as value, currency or percent values can also be displayed with custom units. It supports hiding trailing zeros, display value with custom units.
+The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/sfnumerictextbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
 
 ### CurrencyTextBox
 
-[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox/overview) is a textbox-derived control that implements all the functionality needed for formatting currency input and validation. It provides support for clipboard operations that are compatible with currency data.
+[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox/overview) is a textbox-derived control that implements all functionalities to format currency input and validation. Provides support for clipboard operations that are compatible with currency data.
 
 ### PercentTextBox
 
@@ -46,13 +46,14 @@ Syncfusion WinForms suite comes up with following different textbox namely,
 
 ### IntegerTextBox
 
-[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview) is derived from the Windows Forms Framework TextBox control and can display integer data type values. It supports only integer data type values.
+[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview) is derived from the Windows Forms Framework TextBox control. Displays integer data type values alone.
 
 ### SfNumericTextBox vs existing numeric textbox controls
 
-Both SfNumericTextBox and existing numeric textbox controls(IntegerTextBox, PercentTextBox and CurrencyTextBox) used for same purpose. But SfNumericTextBox control offers rich set of features over existing numeric textbox controls(IntegerTextBox, PercentTextBox, CurrencyTextBox). When you want to hide by trailing zeros, prefix or suffix and watermark text, you can use SfNumericTextBox.
+Both SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) are used for the same purpose. But, the SfNumericTextBox control offers rich set of features over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox). To hide by trailing zeros and prefix or suffix and watermark text, use SfNumericTextBox.
 
-You can see the list of some of the specific API difference between SfNumericTextBox and existing numeric textbox controls(IntegerTextBox, PercentTextBox and CurrencyTextBox) as follows:
+The list of some specific API differences between SfNumericTextBox and existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+
 <table>
 <tr>
 <td>
@@ -73,7 +74,7 @@ Value
 Text
 </td>
 <td>
-To display the value in textbox.
+Displays the values in textbox.
 </td>
 </tr>
 <tr>
@@ -84,7 +85,7 @@ WatermarkText
 AllowNull
 </td>
 <td>
-To set the null value in textbox.
+Sets the null value in textbox.
 </td>
 </tr>
 <tr>
@@ -95,7 +96,7 @@ MaxValue
 MaxValue
 </td>
 <td>
-To set the maximum value in textbox.
+Sets the maximum value in textbox.
 </td>
 </tr>
 <tr>
@@ -106,7 +107,7 @@ MinValue
 MinValue
 </td>
 <td>
-To set the minimum value in textbox.
+Sets the minimum value in textbox.
 </td>
 </tr>
 <tr>
@@ -117,7 +118,7 @@ Style.BorderColor
 BorderColor
 </td>
 <td>
-To apply the color of textbox border
+Applies the color of textbox border.
 </td>
 </tr>
 <tr>
@@ -128,7 +129,7 @@ ThemeName
 Style
 </td>
 <td>
-To apply the visual styles.
+Applies the visual styles.
 </td>
 </tr>
 <tr>
@@ -139,7 +140,7 @@ PositiveForeColor
 PositiveColor
 </td>
 <td>
-To set the color only in positive values.
+sets the color only in positive values.
 </td>
 </tr>
 <tr>
@@ -150,7 +151,7 @@ NegativeForeColor
 NegativeColor
 </td>
 <td>
-To set the color only in negative values.
+sets the color only in negative values.
 </td>
 </tr>
 <tr>
@@ -161,11 +162,13 @@ ZeroForeColor
 ZeroColor
 </td>
 <td>
-To set the color only in zero values.
+sets the color only in zero values.
 </td>
 </tr>
 </table>
-Below are the list of features in SfNumericTextBox over existing numeric textbox controls(IntegerTextBox, PercentTextBox and CurrencyTextBox),
+
+The list of features in SfNumericTextBox over existing numeric textbox controls (IntegerTextBox, PercentTextBox, and CurrencyTextBox) is as follows.
+
 <table>
 <tr>
 <td>
@@ -180,7 +183,7 @@ Below are the list of features in SfNumericTextBox over existing numeric textbox
 Different modes
 </td>
 <td>
-SfNumericTextBox provides supports to specific modes like numeric, currency and percent. To know more about different modes in SfNumericTextBox, refer {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
+Supports specific modes like numeric, currency, and percent. To learn more about different modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -188,7 +191,7 @@ SfNumericTextBox provides supports to specific modes like numeric, currency and 
 Formatting
 </td>
 <td>
-SfNumericTextBox provides supports to format the value based on user needs. To know more about format modes in SfNumericTextBox, refer {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#formatmode)'| markdownify }}.
+Formats the value based on the user needs. To learn more about format modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#formatmode)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -196,7 +199,7 @@ SfNumericTextBox provides supports to format the value based on user needs. To k
 Hide trailing zeros
 </td>
 <td>
-SfNumericTextBox provides supports to hiding trailing zeros. To know more about hiding zeros in SfNumericTextBox, refer {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#hiding-trailing-zeros)'| markdownify }}.
+Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#hiding-trailing-zeros)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -204,7 +207,7 @@ SfNumericTextBox provides supports to hiding trailing zeros. To know more about 
 Custom units
 </td>
 <td>
-SfNumericTextBox provides supports to display values with custom units which can be appended prefix or suffix. To know more about custom units in SfNumericTextBox, refer {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#prefix-and-suffix)'| markdownify }}.
+Displays the values with custom units which can be appended prefix or suffix. To learn more about custom units in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#prefix-and-suffix)'| markdownify }}.
 </td>
 </tr>
 </table>
