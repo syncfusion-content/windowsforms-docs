@@ -27,7 +27,7 @@ Key features are:
 
 ## Choose between different combobox controls
 
-Syncfusion WinForms suite comes up with the following different comboboxes:
+Syncfusion WinForms suite comes up with the following different combobox:
 
 * [SfComboBox](https://www.syncfusion.com/products/windows-forms/combobox)
 * [ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv/overview)
