@@ -9,6 +9,8 @@ documentation: ug
 
 # Getting started
 
+This section provides a quick overview to work with the command bar control in WinForms.
+
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
@@ -16,27 +18,18 @@ This section describes how to add [CommandBar](https://help.syncfusion.com/cr/cr
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) in windows form application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+## Creating application with command bar
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
- 
-# Creating simple application with CommandBar
+You can create the Windows Forms application with CommandBar control as follows:
 
-You can create the Windows Forms application with [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control as follows:
+1. [Adding command bar via designer](#adding-command-bar-via-designer)
+2. [Adding command bar via code](#adding-command-bar-via-code)
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+### Adding control via designer
 
-### Creating the project
-
-Create a new Windows Forms project in the Visual Studio to display the CommandBar with functionalities.
-
-## Adding control via designer
-
-The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it to the designer view. The following required assembly references will be added automatically.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -44,24 +37,22 @@ The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsform
 * Syncfusion.Shared.Windows.dll
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
+* Syncfusion.Licensing.dll
+* Syncfusion.SpellChecked.Base.dll
 
-![](Getting-Started_images/GettingStarted-img1.png)
+![CommandbarController selected in toolbox](Getting-Started_images/commandBarController_ToolBox_Selection.png)
 
-**Adding CommandBar into CommandBarController**
+![CommandBarController added in Designer](Getting-Started_images/commandBarController_Added_in_Designer.png)
 
-[CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) can be added to [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) by clicking on `Add CommandBar` from Smart Tags.
+#### **Adding command bar**
 
-![](Getting-Started_images/GettingStarted-img3.png)
+Commandbar can be added to the commandbar controller by selecting the `Add CommandBar` from the smart tag option.
 
-**Adding XPToolbar into CommandBar** 
+![Form with CommandBar in designer](Getting-Started_images/form_with_CommandBar_in_Designer.png)
 
-The [XPToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) can be added to the application by dragging it from the toolbox and dropping into CommandBar. XPToolBar items can be added it through [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar~Items.html) collection form SmartTags.
+### Adding control via code
 
-![](Getting-Started_images/GettingStarted-img6.png)
-
-## Adding control manually using code
-
-To add control manually in C#, follow the given steps:
+To add commandbar in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
@@ -71,8 +62,10 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Shared.Windows.dll
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
+* Syncfusion.Licensing.dll
+* Syncfusion.SpellChecked.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**
 
 {% tabs %}
 
@@ -80,17 +73,17 @@ To add control manually in C#, follow the given steps:
 
 using Syncfusion.Windows.Forms.Tools;
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
 Imports Syncfusion.Windows.Forms.Tools
 
-{% endhighlight  %}
+{% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
-**Step 3** - Create `CommandBarController` control instance and set the [HostForm](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~HostForm.html) property to be current Form.
+**Step 3** - Create a [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) instance and set the [HostForm](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~HostForm.html) property to be the current form.
 
 {% tabs %}
 
@@ -116,9 +109,9 @@ Me.commandBarController1.HostForm = Me;
 
 {% endtabs %}
 
-**Adding CommandBar into CommandBarController**
+#### **Adding command bar**
 
-Create an instance of [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) .
+Create an instance of [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) and add it to the [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~CommandBars.html) collection property of commandbar controller instance. The below code shows a command bar is being added to the commandbar controller.
 
 {% tabs %}
 
@@ -144,68 +137,4 @@ this.commandBarController1.CommandBars.Add(this.commandBar1);
 
 {% endtabs %}
 
-![](Getting-Started_images/GettingStarted-img4.png)
-
-**Adding XPToolBar into CommandBar** 
-
-To add XPToolBar into CommandBar, Create an instance of [XPToolbar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) and add it CommandBar.
-
-{% tabs %}
-
-{% highlight C# %}
-// Create an instance of XPToolBar
-
-XPToolBar xpToolBar1 = new XPToolBar();
-
-// Create instance of XPToolbar items
-ParentBarItem parentBarItem1 = new ParentBarItem();
-StaticBarItem staticBarItem1 = new StaticBarItem();
-TextBoxBarItem textBoxBarItem1 = new TextBoxBarItem();
-
-this.xpToolBar1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful;
-
-this.parentBarItem1.Text = "File";
-
-this.staticBarItem1.Text = "Search";
-
-// Add items to XPToolBar
-
- this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] {
-            this.parentBarItem1,
-            this.staticBarItem1,
-            this.textBoxBarItem1});
-
-// Add XPToolBar into CommandBar
-this.commandBar1.Controls.Add(this.xpToolBar1);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Create an instance of XPToolBar
-
-Dim xpToolBar1 As New XPToolBar()
-
-' Create instance of XPToolbar items
-Dim parentBarItem1 As New ParentBarItem()
-Dim staticBarItem1 As New StaticBarItem()
-Dim textBoxBarItem1 As New TextBoxBarItem()
-
-Me.xpToolBar1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
-
-Me.parentBarItem1.Text = "File"
-
-Me.staticBarItem1.Text = "Search"
-
-' Add items to XPToolBar
-
- Me.xpToolBar1.Bar.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.parentBarItem1, Me.staticBarItem1, Me.textBoxBarItem1})
-
-' Add XPToolBar into CommandBar
-Me.commandBar1.Controls.Add(Me.xpToolBar1)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/GettingStarted-img5.png)
+![Form with Commandbar](Getting-Started_images/form_with_CommandBar.png)
