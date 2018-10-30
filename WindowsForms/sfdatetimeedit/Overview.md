@@ -24,3 +24,133 @@ The `SfDateTimeEdit` is a control that allows you to edit the `DateTime` in the 
 * **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
 
 * **Watermark**: Supports to display watermark text when a selected date is null.
+
+* **Testing**: Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfdatetimeedit) to recognize SfDateTimeEdit.
+
+
+## Choose between different DateTime controls
+
+Syncfusion WinForms suite comes up with the following different DateTime controls:
+
+* [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview)
+* [DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv/overview)
+
+### SfDateTimeEdit
+
+The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
+
+### DateTimePickerAdv
+
+[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv/overview) is an advanced DateTimePicker control. Provides an easy way to implement a culture based DateTimePicker in an application. Support for a string to be displayed when the user does not want a specific date selected.
+
+### SfDateTimeEdit vs DateTimePickerAdv
+
+Both SfDateTimeEdit and DateTimePickerAdv controls are used for the same purpose. But, the SfDateTimeEdit control offers rich set of features over DateTimePickerAdv. To customize the updown and dropdown buttons, use DateTimePickerAdv. For date range support, watermark, navigation, and date validation, use SfDateTimeEdit.
+
+The list of some of the specific API differences between SfDateTimeEdit and DateTimePickerAdv is as follows.
+
+<table>
+<tr>
+<td>
+{{'**SfDateTimeEdit**'| markdownify }}
+</td>
+<td>
+{{'**DateTimePickerAdv**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+AllowNull
+</td>
+<td>
+EnableNullDate
+</td>
+<td>
+Sets the value to null in mask mode.
+</td>
+</tr>
+<tr>
+<td>
+Watermark
+</td>
+<td>
+NullString
+</td>
+<td>
+Specifies the text visible when the date is not selected.
+</td>
+</tr>
+<tr>
+<td>
+MinDateTime
+</td>
+<td>
+MinValue
+</td>
+<td>
+Sets the time less than specific date-time.
+</td>
+</tr>
+<tr>
+<td>
+MaxDateTime
+</td>
+<td>
+MaxValue
+</td>
+<td>
+Sets the time greater than specific date-time.
+</td>
+</tr>
+<tr>
+<td>
+DateTimePattern
+</td>
+<td>
+Format
+</td>
+<td>
+Displays the format of the date-time.
+</td>
+</tr>
+</table>
+
+The list of features in SfDateTimeEdit over DateTimePickerAdv is as follows.
+
+<table>
+<tr>
+<td>
+{{'**Feature**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+DateTimeEditingMode
+</td>
+<td>
+Support for free style editing with different {{'[mode](https://help.syncfusion.com/windowsforms/sfdatetimeedit/editing-support)'| markdownify }} (mask and default text edit modes).
+</td>
+</tr>
+<tr>
+<td>
+Date validation
+</td>
+<td>
+Shows error messages on the invalid dates or when date-range constraints are met. To learn more about date validation in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/validation)'| markdownify }}.
+</td>
+</tr>
+<tr>
+<td>
+Value change by mouse wheel
+</td>
+<td>
+Changes the value by mouse wheel action. To learn more about value changes by mouse wheel in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/navigation#change-value-by-mouse)'| markdownify }}.
+</td>
+</tr>
+</table>
