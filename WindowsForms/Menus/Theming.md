@@ -22,7 +22,7 @@ In this section, the various themes supported in menu control is discussed. The 
 
 ## Default theme
 
-The `Default` theme is applies the default styles to the visual components of the menu control. When this theme is appled the default color values can be modified based on the desired color values. The below code snippet shows the default theme is applied to the menu control.
+The `Default` theme is applies the default styles to the visual components of the menu control. When this theme is applied the default color values can be modified based on the desired color values. The below code snippet shows the default theme is applied to the menu control.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Default
 
 ![Menu control is applied with default theme](Theming-images/defaultTheme.png)
 
-### Customing default theme
+### Customizing default theme
 
 The `Default` theme color values can be modified using the `MenuColors` class. This provides the set of available properties to customize the color values of the menu components. The below code snippet shows the default theme is applied and are modified with desired color values
 
@@ -134,7 +134,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2003
 
 ## Office 2007 theme
 
-The menu control can be applied with 4 different Office 2007 color values. The color scheme cna be slected via the `Office2007Theme` property is used. This color values can also be customized to required color scheme
+The menu control can be applied with 4 different Office 2007 color values. The color scheme can be selected via the `Office2007Theme` property is used. This color values can also be customized to required color scheme
 
 * Blue
 * Silver
@@ -263,7 +263,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007O
 
 ## Office 2010 theme
 
-The menu control can be applied with 4 different Office 2010 color values. The color scheme cna be slected via the `Office2010Theme` property is used. This color values can also be customized to required color scheme.
+The menu control can be applied with 4 different Office 2010 color values. The color scheme can be selected via the `Office2010Theme` property is used. This color values can also be customized to required color scheme.
 
 * Blue
 * Silver
@@ -371,11 +371,11 @@ Office2010Colors.ApplyManagedColors(this, Color.Brick)
 ## Office 2016 theme
 
 The menu control supports 4 distinct color styles for Office 2016 themes.
- 
+
 * Office 2016 Black
 * Office 2016 White
 * Office 2016 Colorful
-* Office 2016 Darkgray
+* Office 2016 Dark-gray
 
 ### Office 2016 black
 
@@ -445,7 +445,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 
 ### Office 2016 dark gray
 
-The `Office2016DarkGray` applies with Office 2016 dar gray colored styles to the menu control. The below code snippet shows the Office 2016 dark gray theme is applied to the menu control.
+The `Office2016DarkGray` applies with Office 2016 dark gray colored styles to the menu control. The below code snippet shows the Office 2016 dark gray theme is applied to the menu control.
 
 {% tabs %}
 
@@ -464,3 +464,54 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016D
 {% endtabs %}
 
 ![Menu control is applied with Office 2016 black theme](Theming-images/office2016DarkGrayTheme.png)
+
+## Visual studio theme
+
+The menu control supports the VS-like color styles that are applied to the visual components of the menu control. The following are the VS-like theme applicable for menu control.
+
+* VS2005
+* VS2010
+
+### VS2005 theme
+
+The `VS2005` applies with VS 2005 like colored styles to the menu control components. The below code snippet shows the VS2005-theme is applied to the menu control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2005
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Menu control is applied with VS2005 theme](Theming-images/vs2005Theme.png)
+
+### VS2010 theme
+
+The `VS2010` applies with VS 2010 like colored styles to the menu control components. The below code snippet shows the VS2010-theme is applied to the menu control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2010;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.VS2010
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Menu control is applied with VS2010 theme](Theming-images/vs2010Theme.png)

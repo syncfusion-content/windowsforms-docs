@@ -323,7 +323,7 @@ this.mainFrameBarManager1.CustomizationDialog.Font = New Font("Times New Roman",
 
 {% endtabs %}
 
-![The Cutomize dialog with modified styles](Appearance-Customization-images/customizedCustomDialog.png)
+![The Customize dialog with modified styles](Appearance-Customization-images/customizedCustomDialog.png)
 
 ## Customizing menu items
 

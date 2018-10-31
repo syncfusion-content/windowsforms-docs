@@ -9,9 +9,9 @@ documentation: ug
 
 # Detachable Control Bar
 
-Control bars enables application developers to add dockable/floatable controls to their form's toolbar layout. A common example of a control bar is the task pane window found in the Microsoft Office 2003 product suite.
+Control bars enables application developers to add dock-able / floatable controls to their form's toolbar layout. A common example of a control bar is the task pane window found in the Microsoft Office 2003 product suite.
 
-A [`ControlBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlBar.html) is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. Control bars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dockable control.
+A [`ControlBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlBar.html) is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. Control bars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dock-able control.
 
 ## Adding control bar via designer
 
@@ -23,7 +23,7 @@ The control bar can be added via the designer settings selecting the `Add Detach
 
 ## Adding control var via code
 
-The control bar instance can be created with requied settings and added to the `DetachedCommandBars` collection property of the menu instance. The below code snippet shows the control bar is added to the menu control with top docked position.
+The control bar instance can be created with required settings and added to the `DetachedCommandBars` collection property of the menu instance. The below code snippet shows the control bar is added to the menu control with top docked position.
 
 The below code snippet shows the control bar it being added to the menu item.
 
@@ -36,7 +36,7 @@ controlbar1.Dock = DockStyle.Top;
 controlbar1.Text = "Control bar1";
 this.mainFrameBarManager1.DetachedCommandBars.Add(controlbar1);
 
-{% endhighlight  %}
+{% endhighlight %}
 
 {% highlight VB %}
 
@@ -53,7 +53,7 @@ mainFrameBarManager1.DetachedCommandBars.Add(controlbar1)
 
 ## Client controls of control bar
 
-A control bar is capabel of hosting two controls.
+A control bar is capable of hosting two controls.
 
 * Caption region
 * Client region
@@ -90,4 +90,4 @@ Me.controlBar1.CaptionControl = textBox1
 
 ### Client region
 
-This region holds the main control that gets hosted with the control bar. The contorl bar with tool bar and card layout controls are illustrated in the [Control bars example](github link)
+This region holds the main control that gets hosted with the control bar. The control bar with tool bar and card layout controls are illustrated in the [Control bars example](github link)

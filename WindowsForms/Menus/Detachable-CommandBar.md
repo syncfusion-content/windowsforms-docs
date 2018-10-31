@@ -13,7 +13,7 @@ The [`CommandBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfu
 
 ## Adding command bar via designer
 
-The command bar can be added via the `DetachedCommandBars` selection from the smart tags options. The below image show the command bar is added to the menu via the designer settings.
+The command bar can be added via the `DetachedCommandBars` selection from the smart tags options. The below image shows the command bar is added to the menu via the designer settings.
 
 ![Command bar added to the bar](Detachable-Commandbar-images/adding_CommandBar_Designer.png)
 
@@ -51,7 +51,7 @@ Me.mainFrameBarManager1.DetachedCommandBars.Add(Me.commandBar1);
 
 ![Form loaded with command bar](Detachable-CommandBar-images/form_with_commandbar.png)
 
-{% see also%}
+{% seealso %}
 
 [Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-child-controls)
 
