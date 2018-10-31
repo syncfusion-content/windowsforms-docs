@@ -39,15 +39,15 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 ### SfDataGrid
 
-[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns.
+[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (sorting, grouping, filtering and etc) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
 
 ### GridGroupingControl
 
-[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview) is designed based on cell-oriented architecture that provides more control over cells and supports like Excel-like features.
+[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview) is designed based on cell-oriented architecture that provides more control over cells and supports like Excel-like features. It supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It is an unique UI and data virtualization architecture provides instant scrolling capabilities, display millions of records, and handle real-time data updates with less CPU usage.
 
 ### GridControl
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid/overview) is a cell-oriented grid that contains own data and does not need to be bound to the data source. It can be easily customized down to the cell level. It supports frozen rows, columns, Excel-like formulas and covered cells.
+[GridControl](https://help.syncfusion.com/windowsforms/grid/overview) is a cell-oriented grid that contains own data and does not need to be bound to the data source. It can be easily customized down to the cell level. It supports frozen rows, columns, Excel-like formulas and covered cells. It can also be used in a virtual manner such that it can bind to any type of data source.
 
 ### SfDataGrid vs GridGroupingControl
 
