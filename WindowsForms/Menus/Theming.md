@@ -465,7 +465,7 @@ Me.mainFrameBarManager1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016D
 
 ![Menu control is applied with Office 2016 black theme](Theming-images/office2016DarkGrayTheme.png)
 
-## Visual studio theme
+## Visual Studio theme
 
 The menu control supports the VS-like color styles that are applied to the visual components of the menu control. The following are the VS-like theme applicable for menu control.
 

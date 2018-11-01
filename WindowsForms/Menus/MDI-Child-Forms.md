@@ -23,7 +23,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 To create MDI parent form and MDI child form follow the below steps
 
 1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
-2. Add meenu items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
+2. Add menu items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
 
 ![Menu item with simple menu items](MDI-Child-Forms-images/form_with_menu_items.jpeg)
 
@@ -82,7 +82,7 @@ There are three types of MDI merging supported in menu control.
 
 The merge behavior is also controlled by the `MergeType` property, as follows.
 
-| MDI container item merge type | MDI child item merge type | Merge bhavior |
+| MDI container item merge type | MDI child item merge type | Merge behavior |
 |----------------------|-----------------------|------------------------------|
 | Add | Add / MergeItems / Replace | No merging |
 | Add | Remove | Parent item stays visible; child item hidden |

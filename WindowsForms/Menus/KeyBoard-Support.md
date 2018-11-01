@@ -13,7 +13,7 @@ The menu control supports keyboard functionalities for navigation and selection 
 
 ## Displaying shortcut text in menu item
 
-The menu items can be slected and the respective action can be done by specifying the shortcuts via the `Shortcut` property of the menu item. The below code snippet shows a shortcut is being assigned to the menu item.
+The menu items can be selected and the respective action can be done by specifying the shortcuts via the `Shortcut` property of the menu item. The below code snippet shows a shortcut is being assigned to the menu item.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.barItem1.Shortcut = Shortcut.AltDownArrow
 
 ## Displaying Mnemonic in menu items
 
-The menu items suports to add mnemonic text. As usual, the required mnemonic character is appended with `&` symbol in the `Text` property of the menu item. This character can be made visibile all the time using the `ShowMnemonicUnderlinesAlways` property of the menu item.
+The menu items supports to add mnemonic text. As usual, the required mnemonic character is appended with `&` symbol in the `Text` property of the menu item. This character can be made visible all the time using the `ShowMnemonicUnderlinesAlways` property of the menu item.
 
 The below snippet shows the drop down item is applied with the mnemonics.
 

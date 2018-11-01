@@ -371,12 +371,12 @@ Me.bar1.AllowCustomizing = False
 
 There are two events associated while customizing the menu items. The [`CustomizingItem`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizingItem.html) property holds the current customizing item.
 
-* [`CustomizationBegin`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationBegin_EV.html) - Occurs when the custimation of a menu item of a tool bar begins.
+* [`CustomizationBegin`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationBegin_EV.html) - Occurs when the customization of a menu item of a tool bar begins.
 * [`CustomizationDone`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationDone_EV.html) - Occurs when the customization of a menu item gets completed.
 
 ## Grouping menu items
 
-The menu items of a tool bar can be grouped togethere using the [`SeparatorIndices`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~SeparatorIndices.html) property. The specific tool bar instance is used to specific the grouping items. The below code snippet shows the menu items are grouped in a tool bar.
+The menu items of a tool bar can be grouped together using the [`SeparatorIndices`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~SeparatorIndices.html) property. The specific tool bar instance is used to specific the grouping items. The below code snippet shows the menu items are grouped in a tool bar.
 
 {% tabs %}
 

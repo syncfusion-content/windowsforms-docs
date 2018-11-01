@@ -9,7 +9,7 @@ documentation: ug
 
 # State Persistence
 
-The menu control supports serialization persiting the state of the toolbars and menu items state whenever the application is being used. In this topic the serialization of menu control is discussed.
+The menu control supports serialization persisting the state of the toolbars and menu items state whenever the application is being used. In this topic the serialization of menu control is discussed.
 
 ## Enabling state persistence
 
@@ -19,7 +19,7 @@ The below image shows the serialization is being enabled via the designer
 
 ![Enabling Serialization via designer](State-Persistance-images/enablingStatePersistence_Designer.png)
 
-The below code snippet shows the enabling of toolbar state persistence and serilaization of menu item state.
+The below code snippet shows the enabling of toolbar state persistence and serialization of menu item state.
 
 {% tabs %}
 
