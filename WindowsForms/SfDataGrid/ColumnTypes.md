@@ -265,6 +265,10 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 
 ![](ColumnTypes_images/ColumnTypes_img2.png)
 
+### Disable Column
+
+A column can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFocus.html) property. Therefore, that column cannot be selected or edited.
+
 ## GridTextColumn
 
 [GridTextColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTextColumn.html) provides support to display column data as text, which hosts TextBox in edit mode.
