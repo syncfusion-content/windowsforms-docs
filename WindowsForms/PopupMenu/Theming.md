@@ -47,7 +47,7 @@ Me.popupMenu1.ParentBarItem.Style = VisualStyle.Default
 
 {% endtabs %}
 
-![Default theme](Theming/default.png)
+![Default theme](Theming-images/default.png)
 
 ### Customizing theming colors
 
