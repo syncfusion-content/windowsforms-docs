@@ -108,6 +108,4 @@ N> This step is relevant only if your form is an MDI container. (i.e) The `IsMDI
 
 ### Sample Location
 
-The MDI merging is illustrated in the below example.
-
-[MDI child form merging](github link)
+The MDI merging is illustrated in this-example.

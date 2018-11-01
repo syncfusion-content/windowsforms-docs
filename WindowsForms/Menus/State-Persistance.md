@@ -41,6 +41,4 @@ Me.mainFrameBarManager1.AutoPersistCustomization = True
 
 ### Sample Location
 
-The serialization feature is illustrated in the below example.
-
-[Serialization of menu items and toolbar](github link)
+The serialization feature is illustrated in this-example.

@@ -90,4 +90,4 @@ Me.controlBar1.CaptionControl = textBox1
 
 ### Client region
 
-This region holds the main control that gets hosted with the control bar. The control bar with tool bar and card layout controls are illustrated in the [Control bars example](github link)
+This region holds the main control that gets hosted with the control bar. The control bar with tool bar and card layout controls are illustrated in this-example.
