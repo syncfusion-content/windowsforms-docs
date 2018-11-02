@@ -33,7 +33,7 @@ Me.commandBar1.DisableFloating = True
 
 ![Disabled float mode in command bar](Interactive-Features-images/floatMode_Disabled.png)
 
-The float state of the command bar can be retrived from the [Floating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~Floating.html) property.
+The float state of the command bar can be retrieved from the [Floating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~Floating.html) property.
 
 The contents of the float mode can be made to wrap via the [FloatModeWrapping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~FloatModeWrapping.html) property. The below code snippet shows the wrapping is being enabled in float state command bar.
 
@@ -110,7 +110,7 @@ Me.commandBar1.DockState = Syncfusion.Windows.Forms.Tools.CommandBarDockState.Bo
 
 ### Enabling docked borders
 
-The dock stae of the command bar can be restricted to any of the four sides of the form via the [`AllowedDockBorders`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~AllowedDockBorders.html) property. The below code snippet shows the dock style is being restricted only to the left side, whereas to the other sides, the command bar appears as float state.
+The dock state of the command bar can be restricted to any of the four sides of the form via the [`AllowedDockBorders`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~AllowedDockBorders.html) property. The below code snippet shows the dock style is being restricted only to the left side, whereas to the other sides, the command bar appears as float state.
 
 {% tabs %}
 
@@ -201,7 +201,7 @@ End Sub
 
 ### Command bar state changed event
 
-The [CommandBarStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarStateChanged_EV.html) event occurs when the command bar state gets toggled successfully. The below code snippet shows the command bar state chnaged event subscription and the event handler.
+The [CommandBarStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarStateChanged_EV.html) event occurs when the command bar state gets toggled successfully. The below code snippet shows the command bar state changed event subscription and the event handler.
 
 {% tabs %}
 
@@ -230,7 +230,7 @@ End Sub
 
 ## Command bar user closed event
 
-The [`CommandBarUserClosed`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarUserClosed_EV.html) event occurs when the user clicked the close button of the command bar when it is float state. The below code snippet shows the event subsription and the event handler.
+The [`CommandBarUserClosed`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarUserClosed_EV.html) event occurs when the user clicked the close button of the command bar when it is float state. The below code snippet shows the event subscription and the event handler.
 
 {% tabs %}
 
@@ -259,9 +259,9 @@ End Sub
 
 ## Command bar wrapping event
 
-The [`CommandBarWrapping`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarWrapping_EV.html) event occurs when the position of the command bar is being wrapped to new row of the docked broders. The **CommandBarWrappingEventArgs** returns the event data with the following properties.
+The [`CommandBarWrapping`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~CommandBarWrapping_EV.html) event occurs when the position of the command bar is being wrapped to new row of the docked borders. The **CommandBarWrappingEventArgs** returns the event data with the following properties.
 
-* CommandBarResizeType - Gets or sets the new resize poisition of the command bar.
+* CommandBarResizeType - Gets or sets the new resize position of the command bar.
 * ClientSize - Gets or sets the updated size of the resized command bar.
 
 {% tabs %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Theming
 
-The command bar supports various built in themes via the `Style` property of the command bar controler instance that are discussed in this topic.
+The command bar supports various built in themes via the `Style` property of the command bar controller instance that are discussed in this topic.
 
 ## Default theme
 
-The `Default` theme applies the default color styles to the visual componenets of command bar. The following code snippet shows the command bar is applied with default theme.
+The `Default` theme applies the default color styles to the visual components of command bar. The following code snippet shows the command bar is applied with default theme.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Default
 
 ## Office XP theme
 
-The command bar supports XP theme color styles when the style is applied as `OfficeXP`. The below code snippet shows the command bar is being applied with office XP theme.
+The command bar supports XP theme color styles when the style is applied as `OfficeXP`. The below code snippet shows the command bar is being applied with Office XP theme.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ Me.commandBarController1.Style = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 ## Office 2003 theme
 
-The Office 2003 color styles can be applied to the command bar by applying the `Office2003` theme. The below code snippet shows the command bar is being applied with office 2003 theme.
+The Office 2003 color styles can be applied to the command bar by applying the `Office2003` theme. The below code snippet shows the command bar is being applied with Office 2003 theme.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ Me.commandBarController1.Office2007Theme = Office2007Theme.Blue
 
 ![Command bar applied with office 2007 silver theme](Theming-images/office2007SilverTheme.png)
 
-The color schems can also be modified with the `Managed` color style. The below code snippet shows the command bar is being applied with office 2007 theme with custom color via the **Office2007Colors** class.
+The color schemes can also be modified with the `Managed` color style. The below code snippet shows the command bar is being applied with office 2007 theme with custom color via the **Office2007Colors** class.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ Me.commandBarController1.Office2010Theme = Office2010Theme.Blue
 
 ![Command bar applied with office 2010 silver theme](Theming-images/office2010SilverTheme.png)
 
-The color schems can also be modified with the `Managed` color style. The below code snippet shows the command bar is being applied with office 2010 theme with custom color via the **Office2010Colors** class.
+The color schemes can also be modified with the `Managed` color style. The below code snippet shows the command bar is being applied with office 2010 theme with custom color via the **Office2010Colors** class.
 
 {% tabs %}
 

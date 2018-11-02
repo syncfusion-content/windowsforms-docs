@@ -147,7 +147,7 @@ Command bar acts as a container control to host the required control in the tool
 
 ## Adding single control
 
-The controls with single-line visual structure like combo box, text box and button can be added directtly to the command bar instance. This can be done via adding the required control vai the `Controls` property of the command bar. In the below code snippet a text box control with key properties defined is being added to the command bar.
+The controls with single-line visual structure like combo box, text box and button can be added directly to the command bar instance. This can be done via adding the required control via the `Controls` property of the command bar. In the below code snippet a text box control with key properties defined is being added to the command bar.
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ Me.commandBar1.Controls.Add(Me.textBox1)
 
 ## Adding multiple controls
 
-Im order to host more than one control with better alignment and avoid overlapping, a continer control like `Panel` can be used. In the below code snippet, a combo box is added along with a label control.
+In order to host more than one control with better alignment and avoid overlapping, a container control like `Panel` can be used. In the below code snippet, a combo box is added along with a label control.
 
 {% tabs %}
 

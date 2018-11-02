@@ -35,7 +35,7 @@ The below image shows the disabled close button in float state.
 
 ![Close button hidden](Appearance-Customization-images/closeButton_hidden.png)
 
-The close button state can also be retrived from the [`GetCloseButtonState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetCloseButtonState.html) method.
+The close button state can also be retrieved from the [`GetCloseButtonState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetCloseButtonState.html) method.
 
 ## Chevron button
 
@@ -67,9 +67,9 @@ The below image shows the hidden chevron button in the docked state.
 
 ![Chevron button hidden](Appearance-Customization-images/chevronButton_hidden.png)
 
-N> Chevron button is visbible by default only in docked state of the command bar.
+N> Chevron button is visible by default only in docked state of the command bar.
 
-The chevron button state can be retrived via the [IsChevronVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~IsChevronVisible.html) property or the command bar instance.
+The chevron button state can be retrieved via the [IsChevronVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~IsChevronVisible.html) property or the command bar instance.
 
 The color value applied for chevron can be customized with the [`ChevronColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~ChevronColor.html) property. The below code snippet shows a new chevron color is being applied to the chevron button.
 
@@ -101,7 +101,7 @@ The below image shows the disabled close button in float state.
 
 ![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png)*Command bar in docked state*
 
-The drop down button state also can be retrived from the [`GetDropDownState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetDropDownState.html) method.
+The drop down button state also can be retrieved from the [`GetDropDownState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetDropDownState.html) method.
 
 ## Cursor
 
@@ -182,7 +182,7 @@ The default back color of the docked bar can be applied via the [`ResetBackColor
 
 ### Command bar background
 
-The command bar back color can be customized by specifing the required color via the [`BackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~BackColor.html) property of the command bar instance. The below code snippet shows the back color of the command bar is being customized.
+The command bar back color can be customized by specifying the required color via the [`BackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~BackColor.html) property of the command bar instance. The below code snippet shows the back color of the command bar is being customized.
 
 {% tabs %}
 
@@ -232,7 +232,7 @@ The below image shows the command bar with dock state text being disabled wherea
 
 ## Font style
 
-The font of the text displayed in the command bar can be customizied using the `Font` property. The below code snippet sets a specified font family to the command bar.
+The font of the text displayed in the command bar can be customized using the `Font` property. The below code snippet sets a specified font family to the command bar.
 
 {% tabs %}
 
