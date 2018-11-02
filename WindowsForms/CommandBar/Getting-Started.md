@@ -40,19 +40,19 @@ The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsform
 * Syncfusion.Licensing.dll
 * Syncfusion.SpellChecked.Base.dll
 
-![CommandbarController selected in toolbox](Getting-Started_images/commandBarController_ToolBox_Selection.png)
+![Command bar controller selected in toolbox](Getting-Started_images/commandBarController_ToolBox_Selection.png)
 
-![CommandBarController added in Designer](Getting-Started_images/commandBarController_Added_in_Designer.png)
+![Command bar controller added in designer](Getting-Started_images/commandBarController_Added_in_Designer.png)
 
 #### **Adding command bar**
 
-Commandbar can be added to the commandbar controller by selecting the `Add CommandBar` from the smart tag option.
+Command bar can be added to the command bar controller by selecting the `Add CommandBar` from the smart tag option.
 
 ![Form with CommandBar in designer](Getting-Started_images/form_with_CommandBar_in_Designer.png)
 
 ### Adding control via code
 
-To add commandbar in C#, follow the given steps:
+To add command bar in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
@@ -137,4 +137,86 @@ this.commandBarController1.CommandBars.Add(this.commandBar1);
 
 {% endtabs %}
 
-![Form with Commandbar](Getting-Started_images/form_with_CommandBar.png)
+![Form with Command bar](Getting-Started_images/form_with_CommandBar.png)
+
+N> You can find the detailed description of various themes applicable to command bar in [this topic](https://help.syncfusion.com/windowsforms/commandbar/theming)
+
+## Child controls
+
+Command bar acts as a container control to host the required control in the tool bar. In this topic the child controls hosted via command bar is discussed.
+
+## Adding single control
+
+The controls with single-line visual structure like combo box, text box and button can be added directtly to the command bar instance. This can be done via adding the required control vai the `Controls` property of the command bar. In the below code snippet a text box control with key properties defined is being added to the command bar.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.commandBar1.Controls.Add(this.textBox1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.commandBar1.Controls.Add(Me.textBox1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Single child control in command bar](Getting-Started_images/childControl_Single.png)
+
+## Adding multiple controls
+
+Im order to host more than one control with better alignment and avoid overlapping, a continer control like `Panel` can be used. In the below code snippet, a combo box is added along with a label control.
+
+{% tabs %}
+
+{% highlight C# %}
+
+Panel panel1 = new Panel();
+panel1.Dock = DockStyle.Fill;
+
+Label lable1 = new Label();
+lable1.Text = "Combo box text";
+lable1.TextAlign = ContentAlignment.MiddleCenter;
+
+ComboBox combobox1 = new ComboBox();
+combobox1.Location = new Point(lable1.Width + 5, lable1.Location.Y);
+combobox1.Items.AddRange(new string[] { "object1", "object2", "object3", "object4", "object5", });
+combobox1.SelectedIndex = 0;
+panel1.Controls.Add(lable1);
+panel1.Controls.Add(combobox1);
+
+this.commandBar1.Controls.Add(panel1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim panel1 As New Panel()
+panel1.Dock = DockStyle.Fill
+
+Dim lable1 As New Label()
+lable1.Text = "Combo box text"
+lable1.TextAlign = ContentAlignment.MiddleCenter
+
+Dim combobox1 As New ComboBox()
+combobox1.Location = New Point(lable1.Width + 5, lable1.Location.Y)
+combobox1.Items.AddRange(New String() { "object1", "object2", "object3", "object4", "object5" })
+combobox1.SelectedIndex = 0
+panel1.Controls.Add(lable1)
+panel1.Controls.Add(combobox1)
+
+Me.commandBar1.Controls.Add(panel1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multiple controls in command bar](Getting-Started_images/childControl_Multiple.png)
+
+## Adding menu items
+
+Menu items could be added to the command bar only via the [`XpToolBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. Refer [this topic](https://help.syncfusion.com/windowsforms/hosting-controls#integrating-xp-toolbar)

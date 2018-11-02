@@ -11,7 +11,7 @@ documentation: ug
 
 [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) implements a framework for creating and hosting ToolBars, ReBars, and StatusBars similar to those that are found in the Visual Studio .NET and Office XP user interfaces.
 
-![](Overview_images/Overview_img2.png)
+![Command bar sample image](Overview_images/commandbar_Sample.png)
 
 ## Key features
 
@@ -26,6 +26,5 @@ documentation: ug
 * **Visual style** - Provides rich set of Visual Style to customize the look and feel of CommandBar
 
 * **Serialization** - Provides options to save and load the state of the CommandBar.
-
 
 N> The CommandBar Framework should be used directly in an application only when there is no requirement for XP style menus and toolbars. Refer to the Essential Tools Menus Package for implementing XP style menus and toolbars.
