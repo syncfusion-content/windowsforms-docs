@@ -65,7 +65,7 @@ The super tooltip appearance can be customized depending upon the requirement. T
 
 By default, the context menu appears while right-clicking of the desired tool bar in the menu control. This provides the on-demand customization of the menu items in the specified tool bar. The below image shows the context menu being shown while right-clicking the toolbar.
 
-![Menu with conetxt menu](Interactive-Features-images/contextMenu_in_Toolbar)
+![Menu with conetxt menu](Interactive-Features-images/contextMenu_in_Toolbar.png)
 
 {% seealso %}
 
