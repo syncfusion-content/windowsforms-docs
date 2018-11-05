@@ -84,9 +84,9 @@ The below table discuss the image properties of customizing the disabled state i
 
 N> By default, the `DisabledImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
 
-![Menu Item before disabled state](Appearance-Customization-images/menuItem_beforeDisabled.png)*Menu item before disabled state*
+![Menu Item before disabled state](Appearance-Customization-images/menuItem_beforeDisabled.png "Menu item before disabled state")
 
-![Menu Item after disabled state](Appearance-Customization-images/menuItem_afterDisabled.png)*Menu item after disabled state*
+![Menu Item after disabled state](Appearance-Customization-images/menuItem_afterDisabled.png "Menu item after disabled state")
 
 ### Adding highlighted state images
 
@@ -120,9 +120,9 @@ The below table discuss the image properties of customizing the selected state i
 | [`HighlightedImageLargeListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
 | [`HighlightedImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageIndex.html) | Gets or sets the index of the image collections. |
 
-![Before highlighting the menu item](Appearance-Customization-images\menuItem_non_HighlightedImage.png)*Before highlighting a menu item*
+![Before highlighting the menu item](Appearance-Customization-images\menuItem_non_HighlightedImage.png "Before highlighting a menu item")
 
-![Before highlighting the menu item](Appearance-Customization-images\menuItem_HighlightedImage.png)*After highlighting a menu item*
+![Before highlighting the menu item](Appearance-Customization-images\menuItem_HighlightedImage.png "After highlighting a menu item")
 
 N> By default, the `HighlightedImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
 
@@ -190,13 +190,13 @@ The menu bar appearance can be customized with the usage scenario depending upon
 
 The enum value of `BarStyle` cam also be adjoined to represent the bar with combined applied styles. The below image shows the bar items are combined with the `Visible` value.
 
-![Bar enabled with customizing options](Appearance-Customization-images/barStyle_AllowQuickCustomizing.png)*Allow Quick Customizing*
+![Bar enabled with customizing options](Appearance-Customization-images/barStyle_AllowQuickCustomizing.png "Allow Quick Customizing")
 
-![Bar applied with Drag drop border style](Appearance-Customization-images/barStyle_DrawDragBorder.png)*Draw drag-drop border*
+![Bar applied with Drag drop border style](Appearance-Customization-images/barStyle_DrawDragBorder.png "Draw drag-drop border")
 
-![Bar applied with main menu style](Appearance-Customization-images/barStyle_IsMainMenu.png)*Main menu*
+![Bar applied with main menu style](Appearance-Customization-images/barStyle_IsMainMenu.png "Main menu")
 
-![Bar applied with status bar style](Appearance-Customization-images/barStyle_IsStatusBar.png)*Status bar*
+![Bar applied with status bar style](Appearance-Customization-images/barStyle_IsStatusBar.png "Status bar")
 
 The below code snippet shows the bar style is being applied with `IsMainMenu` style.
 
