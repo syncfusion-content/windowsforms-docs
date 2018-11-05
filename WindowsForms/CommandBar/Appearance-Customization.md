@@ -97,9 +97,9 @@ commandBar1.HideDropDownButton = True
 
 The below image shows the disabled close button in float state.
 
-![Drop down button hidden in float state](Appearance-Customization-images/dropDownButton_Float_hidden.png)*Command bar in float state*
+![Drop down button hidden in float state](Appearance-Customization-images/dropDownButton_Float_hidden.png "Command bar in float state")
 
-![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png)*Command bar in docked state*
+![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png "Command bar in docked state")
 
 The drop down button state also can be retrieved from the [`GetDropDownState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetDropDownState.html) method.
 
