@@ -135,7 +135,7 @@ barItem1.Image = New ImageExt(Image.FromFile(Application.ExecutablePath & "\..\.
 
 {% endhighlight %}
 
-{% endtab %}
+{% endtabs %}
 
 #### Properties
 
