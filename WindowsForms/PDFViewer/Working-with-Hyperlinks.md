@@ -74,7 +74,7 @@ Private pdfViewerControl As New PdfViewerControl()
 
 pdfViewerControl.Load("Sample.pdf")
 
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
+AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
@@ -109,7 +109,7 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
+AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
@@ -145,7 +145,7 @@ public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event.
-AddHandler pdfviewer.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
+AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
 
