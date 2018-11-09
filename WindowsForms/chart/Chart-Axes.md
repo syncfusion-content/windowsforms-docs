@@ -2394,3 +2394,107 @@ For example, when zoomFactor and zoomPosition are set to 0.5 for the chart with 
 The following screenshot illustrates a chart whose x-axis has been zoomed by setting zoomFactor and zoomPosition.
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img40.png)
+
+## Exclude Invisible Series Range
+
+The data in the hidden series influencing auto range for both x and y axis can be prevented by setting ExcludeInvisibleSeriesRange property to true  to the corresponding axis.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Set ExcludeInvisibleSeriesRange for axis
+this.chart.PrimaryXAxis.ExcludeInvisibleSeriesRange = true;
+this.chart.PrimaryYAxis.ExcludeInvisibleSeriesRange = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+//Set ExcludeInvisibleSeriesRange for axis
+Me.chart.PrimaryXAxis.ExcludeInvisibleSeriesRange = true;
+Me.chart.PrimaryYAxis.ExcludeInvisibleSeriesRange = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+For example, when hidden the any of the series and set the ExcludeInvisibleSeriesRange as true for corresponding axis, then the axis range will not include the hidden series while calculation ranges for that axis.
+
+The following screenshot illustrates a chart whose x-axis and y-axis range exclude the invisible series by setting ExcludeInvisibleSeriesRange as true for corresponding axis.
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img41.png)
+
+## RoundingPlaces in Axis
+
+Default rounding value for the axis label is 2. If you want to change the rounding value for the axis labels, you can set rounding values in RoundingPlaces property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Set RoundingPlaces for axis
+this.chartControl1.PrimaryYAxis.RoundingPlaces = 3;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+//Set RoundingPlaces for axis
+Me.chartControl1.PrimaryYAxis.RoundingPlaces = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates a chart whose y-axis labels rendered with three decimal places.
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img42.png)
+
+## Custom Labels Parameter
+
+In axis labels, labels can be placed based on the CustomLabelsParameter property.
+
+* Index
+* Position.
+
+Default value for CustomLabelsParameter is Index. By setting the CustomLabelsParameter as Position ,you can bind the custom x names properly in chart. And additionally don’t need to specify the OBJECTID “XName” for SeriesModel but alternatively you should specify the OBJECTID for “PositionName” property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Set CustomLabelsParameter for axis
+series.SeriesModel = new ChartDataBindModel(ShowCompleteInformation, "test1")
+{
+    YNames = new string[] { "YValue" },
+};
+
+chart.Series.Add(series);
+ChartDataBindAxisLabelModel xAxisLabelModel = new ChartDataBindAxisLabelModel(Data, "test1");
+xAxisLabelModel.LabelName = "XValue";
+xAxisLabelModel.PositionName = "ID";
+chart.PrimaryXAxis.LabelsImpl = xAxisLabelModel;
+chart.PrimaryXAxis.CustomLabelsParameter = ChartCustomLabelsParameter.Position;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+//Set CustomLabelsParameter for axis
+series.SeriesModel = new ChartDataBindModel(ShowCompleteInformation, "test1")
+{
+    YNames = new string[] { "YValue" },
+};
+
+chart.Series.Add(series);
+ChartDataBindAxisLabelModel xAxisLabelModel = new ChartDataBindAxisLabelModel(Data, "test1");
+xAxisLabelModel.LabelName = "XValue";
+xAxisLabelModel.PositionName = "ID";
+chart.PrimaryXAxis.LabelsImpl = xAxisLabelModel;
+chart.PrimaryXAxis.CustomLabelsParameter = ChartCustomLabelsParameter.Position;
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates a chart whose x-axis labels rendered with CustomLabelsParameter as position.
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img43.png)
