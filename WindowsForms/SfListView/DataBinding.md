@@ -26,7 +26,7 @@ sfListView1.ValueMember = "Continent"
 {% endhighlight %}
 {% endtabs %}
                
-![](DataBinding_images/DataBinding_img1.png)
+![DataBinding](DataBinding_images/DataBinding_img1.png)
 
 			    
 ## Events
