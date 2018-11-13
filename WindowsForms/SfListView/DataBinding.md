@@ -26,10 +26,7 @@ sfListView1.ValueMember = "Continent"
 {% endhighlight %}
 {% endtabs %}
                
-![](DataBinding_images/DataBinding_img1.png)
-
-### Limitation
-`DataTable` binding is not supported.
+![DataBinding](DataBinding_images/DataBinding_img1.png)
 
 			    
 ## Events
