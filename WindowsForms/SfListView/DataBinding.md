@@ -28,9 +28,6 @@ sfListView1.ValueMember = "Continent"
                
 ![](DataBinding_images/DataBinding_img1.png)
 
-### Limitation
-`DataTable` binding is not supported.
-
 			    
 ## Events
 

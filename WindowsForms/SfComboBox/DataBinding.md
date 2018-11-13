@@ -32,7 +32,3 @@ sfComboBox1.DisplayMember = "LongName"
 sfComboBox1.ValueMember = "ShortName"
 {% endhighlight %}
 {% endtabs %}
-
-## Limitations:
-
-`DataTable` binding is not supported.
