@@ -74,4 +74,4 @@ this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
 {% endhighlight %}
 {% endtabs %}
 
-![Data label](How-to-place-the-datalabel-outside-the-chart-region/Data_Label.png)
+![Data label](How-to-place-the-data-label-outside-the-chart-region/Data_Label.png)

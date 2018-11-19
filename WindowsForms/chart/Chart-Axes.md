@@ -2509,7 +2509,7 @@ Chart provides the following there modes to edge label drawing mode in axis labe
 * Shift.
 * ClippingProtection.
 
-The default value of the `EdgeLabelsDrawingMode` property is Center. By setting this property to Shift, the edge labels will be placed inside the charts. While setting the `EdgeLabelDrawingMode` to ClippingProtection, the partially hided labels will be visible.
+The default value of the `EdgeLabelsDrawingMode` property is Center. By setting this property to Shift, the edge labels will be placed inside the charts. While setting the `EdgeLabelDrawingMode` to ClippingProtection, the partially hidden labels will be visible.
 
 {% tabs %}
 
