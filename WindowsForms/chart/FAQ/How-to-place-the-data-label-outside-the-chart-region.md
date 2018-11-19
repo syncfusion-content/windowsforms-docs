@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-place-the-datalabel-outside-the-chart-region | Windows Forms | Syncfusion
-description: How to place the datalabel outside the chart region
+title: How-to-place-the-data-label-outside-the-chart-region | Windows Forms | Syncfusion
+description: How to place the data label outside the chart region
 platform: windowsforms
 control: chart
 documentation: ug
 ---
 
-# How to place the datalabel outside the chart region
+# How to place the data label outside the chart region
 
 ## Callout Labels
 
