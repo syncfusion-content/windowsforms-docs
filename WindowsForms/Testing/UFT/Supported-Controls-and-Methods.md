@@ -2170,8 +2170,6 @@ The following controls are supported by Essential Tools.
 * RadioButtonAdv
 * RibbonControlAdv
 * ScrollerFrame
-* SfCalendar
-* SfDatetimeEdit
 * TabbedMDI
 * TabControlAdv
 * XPTaskBar
@@ -2592,7 +2590,7 @@ void
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -2736,7 +2734,7 @@ System.DateTime
 {{'**Parameters**'| markdownify }}
 </td>
 <td>
-{{'**Return Type**'| markdownify }}
+{{'**return Type**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -3250,256 +3248,6 @@ The position of the scroll to be specified.
 </td>
 <td>
 int value
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfCalendar
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of SfCalendar
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of SfCalendar
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in SfCalendar.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in SfCalendar.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in SfCalendar.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in SfCalendar.
-</td>
-<td>
-string century
-</td>
-<td>
-void
-</td>
-</tr>
-</table>
-
-### SfDateTimeEdit
-
-<table>
-<tr>
-<td>
-{{'**Method**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-<td>
-{{'**Parameters**'| markdownify }}
-</td>
-<td>
-{{'**Return Type**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-void SetValue(string date)
-</td>
-<td>
-Sets the specified date in SfDateTimeEdit.
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ShowPopup()
-</td>
-<td>
-Show the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void HidePopup()
-</td>
-<td>
-Hide the MonthCalendar popup.
-</td>
-<td>
--
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void SetSelectedDate(string date)
-</td>
-<td>
-Sets the selected date of MonthCalendar popup
-</td>
-<td>
-string date
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void ChangeViewType(String viewtype)
-</td>
-<td>
-Change display mode of MonthCalendar popup
-</td>
-<td>
-string viewtype
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
- void NavigateMonth(String month)
-</td>
-<td>
-Navigate to next or previous month in MonthCalendar popup.
-</td>
-<td>
-string month
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateYear(String year)
-</td>
-<td>
-Navigate to next or previous year in MonthCalendar popup.
-</td>
-<td>
-string year
-</td>
-<td>
-void
-</td>
-</tr>
-</tr>
-<tr>
-<td>
-void NavigateDecade(String decade)
-</td>
-<td>
-Navigate to next or previous decade in MonthCalendar popup.
-</td>
-<td>
-string decade
-</td>
-<td>
-void
-</td>
-</tr>
-<tr>
-<td>
-void NavigateCentury(String century)
-</td>
-<td>
-Navigate to next or previous century in MonthCalendar popup.
-</td>
-<td>
-string century
 </td>
 <td>
 void
