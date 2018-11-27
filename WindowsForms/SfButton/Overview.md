@@ -29,13 +29,13 @@ Following are the key features of the SfButton:
 
 ## Choose between different button controls
 
-Syncfusion WF suite comes up with the following different buttons:
+Syncfusion WinForms suite comes up with the following different buttons:
 
-* [SfButton](https://www.syncfusion.com/products/windows-forms/button)
+* [SfButton](https://www.syncfusion.com/winforms-ui-controls/button)
 * [ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)
-* [ButtonEdit](https://www.syncfusion.com/products/windows-forms/buttonedit)
-* [ToggleButton](https://www.syncfusion.com/products/windows-forms/toggle-button)
-* [SplitButton](https://www.syncfusion.com/products/windows-forms/split-button)
+* [ButtonEdit](https://www.syncfusion.com/winforms-ui-controls/buttonedit)
+* [ToggleButton](https://www.syncfusion.com/winforms-ui-controls/toggle-button)
+* [SplitButton](https://www.syncfusion.com/winforms-ui-controls/split-button)
 
 ### SfButton
 
