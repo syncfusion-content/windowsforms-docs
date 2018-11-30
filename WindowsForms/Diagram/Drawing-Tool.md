@@ -10,7 +10,7 @@ documentation: ug
 
 # Drawing Tool
 
-Diagram control now provides a drawing tool to draw the below list LineConnector dynamically during run time.
+Diagram control now provides a drawing tool to draw different types of connectors dynamically and connector types are listed below.
 
 1. LineConnector
 2. OrthogonalConnector
@@ -37,8 +37,8 @@ diagram1.Controller.ActivateTool("OrgLineConnectorTool")
 {% endhighlight %}
 {% endtabs %}
 
-![](Connectors-or-Links_images/Connectors-or-Links_img4.png)
+![Drawing of Orthogonal Connector](Connectors-or-Links_images/Connectors-or-Links_img4.png)
 
-Please refer to the Connectors sample from Windows Forms control Panel and find naviagtion path for the Connector sample as link.
+Please refer to the Connectors sample from Windows Forms control Panel and find navigation path for the Connector sample as link.
 
 Sample : Windows Forms Control Panel -> Diagram -> Getting Started -> Connectors
