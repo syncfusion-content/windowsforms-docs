@@ -1324,6 +1324,11 @@ Sets the color for the title text of the axis.</td></tr>
 {{'[TitleFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~TitleFont.html)'| markdownify }}
 </td><td>
 Sets the font style for the title text.</td></tr>
+<tr>
+<td>
+'TitleRotationAngle'
+</td><td>
+Sets angle to rotate the title text.</td></tr>
 </table>
 
 {% tabs %}
@@ -1356,6 +1361,36 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Rotating Axis Title
+
+You can now rotate the titles of axes to 0, 90, 180, and 270 degrees using the 'TitleRotationAngle' property of 'ChartAxis'.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+//Rotating x-axis title by 270 degrees
+this.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270;
+
+//Rotating y-axis title by 0 degree
+this.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Rotating x-axis title by 270 degrees
+Me.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270
+
+'Rotating y-axis title by 0 degree
+Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot shows how to rotate x-axis title by 270 degrees without rotating y-axis title
+![Chart Axes](Chart-Axes_images/Chart-Axes_img41_2.png)
 
 ### Multiline Chart Axes Title
 
