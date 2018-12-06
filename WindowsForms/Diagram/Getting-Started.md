@@ -112,7 +112,7 @@ The Diagram control will be added to the designer and its dependent assemblies w
 
 
 
-![Diagram](Getting-Started_images/Getting-Started_img7.png)
+![Diagram](Getting-Started_images/Getting-Started_img7.jpg)
 
 
 
@@ -498,7 +498,7 @@ The PaletteGroupBar control will be added to the designer and its dependent asse
 
 
 
-![PaletteGroupBar](Getting-Started_images/Getting-Started_img12.png)
+![PaletteGroupBar](Getting-Started_images/Getting-Started_img12.jpg)
 
 
 
@@ -597,7 +597,7 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-![PaletteGroupView](Getting-Started_images/Getting-Started_img15.png)
+![PaletteGroupView](Getting-Started_images/Getting-Started_img15.jpg)
 
 
 
@@ -689,7 +689,7 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 
 
-![Overview control](Getting-Started_images/Getting-Started_img18.png)
+![Overview control](Getting-Started_images/Getting-Started_img18.jpg)
 
 
 
@@ -771,7 +771,7 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 
 
-![PropertyEditor Control](Getting-Started_images/Getting-Started_img21.png)
+![PropertyEditor Control](Getting-Started_images/Getting-Started_img21.jpg)
 
 
 
@@ -855,7 +855,7 @@ The DocumentExplorer control will be added to the designer and its dependent ass
 
 
 
-![DocumentExplorer Control](Getting-Started_images/Getting-Started_img24.png)
+![DocumentExplorer Control](Getting-Started_images/Getting-Started_img24.jpg)
 
 
 
