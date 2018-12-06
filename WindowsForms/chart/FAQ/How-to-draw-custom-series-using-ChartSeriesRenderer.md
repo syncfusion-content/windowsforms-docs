@@ -38,7 +38,7 @@ The following code sample demonstrates how to implement a custom series renderer
 {% tabs %}
 
 {% highlight c# %}
-// Custom renderer should extend ChartSeriesRenderer with a parametered constructor and implement the Renderer method
+// Custom renderer should extend ChartSeriesRenderer with a parameterized constructor and implement the Renderer method
     public class CustomScatterRenderer : ChartSeriesRenderer
     {
         public CustomScatterRenderer(ChartSeries series)
@@ -48,7 +48,7 @@ The following code sample demonstrates how to implement a custom series renderer
         public override void Render(ChartRenderArgs2D args)
         {
             IndexRange visibleRange = this.CalculateVisibleRange();
-            ChartStyledPoint[] styledPoints = this.PrepearePoints();
+            ChartStyledPoint[] styledPoints = this.PreparePoints();
 
             Graphics g = (Graphics)args.Graph.GetType().GetProperty("Graphics").GetValue(args.Graph);
 
@@ -64,16 +64,16 @@ The following code sample demonstrates how to implement a custom series renderer
                 {
                     GraphicsPath gp = new GraphicsPath();
                     PointF ptF = args.GetPoint(point.X, point.YValues[0]);
-                    Size sz = point.Style.Symbol.Size;
+                    Size size = point.Style.Symbol.Size;
 
                     //Drawing custom symbol
-                    gp.AddEllipse(ptF.X - sz.Width / 2, ptF.Y - sz.Height / 2, sz.Width, sz.Height);
+                    gp.AddEllipse(ptF.X - size.Width / 2, ptF.Y - size.Height / 2, size.Width, size.Height);
                     g.FillPath(br, gp);
                     g.DrawPath(pen, gp);
 
                     //Drawing custom text
                     Point textPoint = Point.Round(ptF);
-                    textPoint.Offset(-10, sz.Height);
+                    textPoint.Offset(-10, size.Height);
                     g.DrawString(point.YValues[0].ToString(), font, br, textPoint);
 
                     //Tooltip for Scatter symbols
@@ -96,7 +96,7 @@ The following code sample demonstrates how to implement a custom series renderer
 
 {% highlight vb %}
 
-// Custom renderer should extend ChartSeriesRenderer with a parametered constructor and implement the Renderer method
+// Custom renderer should extend ChartSeriesRenderer with a parameterized constructor and implement the Renderer method
    Public Class CustomScatterRenderer Inherits ChartSeriesRenderer
 
     Public Sub New(ByVal series As ChartSeries)
@@ -105,7 +105,7 @@ The following code sample demonstrates how to implement a custom series renderer
 
     Public Overrides Sub Render(ByVal args As ChartRenderArgs2D)
         Dim visibleRange As IndexRange = Me.CalculateVisibleRange()
-        Dim styledPoints As ChartStyledPoint() = Me.PrepearePoints()
+        Dim styledPoints As ChartStyledPoint() = Me.PreparePoints()
         Dim g As Graphics = CType(args.Graph.[GetType]().GetProperty("Graphics").GetValue(args.Graph), Graphics)
         Dim br As Brush = New SolidBrush(Color.BlueViolet)
         Dim pen As Pen = New Pen(Color.Black)
@@ -117,12 +117,12 @@ The following code sample demonstrates how to implement a custom series renderer
             If point.IsVisible Then
                 Dim gp As GraphicsPath = New GraphicsPath()
                 Dim ptF As PointF = args.GetPoint(point.X, point.YValues(0))
-                Dim sz As Size = point.Style.Symbol.Size
-                gp.AddEllipse(ptF.X - sz.Width / 2, ptF.Y - sz.Height / 2, sz.Width, sz.Height)
+                Dim size As Size = point.Style.Symbol.Size
+                gp.AddEllipse(ptF.X - size.Width / 2, ptF.Y - size.Height / 2, size.Width, size.Height)
                 g.FillPath(br, gp)
                 g.DrawPath(pen, gp)
                 Dim textPoint As Point = Point.Round(ptF)
-                textPoint.Offset(-10, sz.Height)
+                textPoint.Offset(-10, size.Height)
                 g.DrawString(point.YValues(0).ToString(), font, br, textPoint)
 
                 If Me.Chart.NeedRegionUpdate Then
