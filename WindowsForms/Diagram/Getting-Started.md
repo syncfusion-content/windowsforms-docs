@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting-Started in Syncfusion Diagram control
 description: getting started
 platform: windowsforms
 control: Diagram
@@ -36,7 +36,7 @@ The model contains the data (node/connector) portion of a diagram. The view is r
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Diagram](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -46,7 +46,7 @@ The Overview control provides a perspective view of a diagram model and allows u
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Overview](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -56,7 +56,7 @@ The PaletteGroupBar control provides a way for users to drag symbols onto a diag
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![PaletteGroupBar](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -72,17 +72,17 @@ The PropertyEditor control displays and edits the properties of diagram models, 
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![PropertyEditor](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 ### DocumentExplorer
 
-The DocumentExplorer control allows you to visualize the details of the various objects that are added onto the diagram model. The layers will be listed under the Layers node, and other objects like shapes, links, lines, and text editors will be listed under the Nodes node. The nodes and layers can be renamed, deleted, and hided, and a new layer can be added through this control.
+The DocumentExplorer control allows you to visualize the details of the various objects that are added onto the diagram model. The layers will be listed under the Layers node, and other objects like shapes, links, lines, and text editors will be listed under the Nodes node. The nodes and layers can be renamed, deleted, and hidden, and a new layer can be added through this control.
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![DocumentExplorer](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -104,7 +104,7 @@ To create a Diagram control using the designer:
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Diagram](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -112,7 +112,7 @@ The Diagram control will be added to the designer and its dependent assemblies w
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Diagram](Getting-Started_images/Getting-Started_img7.jpg)
 
 
 
@@ -219,7 +219,7 @@ Me.Controls.Add(diagram)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Diagram](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -297,7 +297,7 @@ diagram.Model.AppendChild(rectangle)
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Adding Nodes](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -470,7 +470,7 @@ diagram.Model.AppendChild(link)
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Connecting Nodes](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -488,7 +488,7 @@ To create a [PaletteGroupBar](https://help.syncfusion.com/cr/cref_files/windowsf
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![PaletteGroupBar](Getting-Started_images/Getting-Started_img11.png)
 
 
 
@@ -498,7 +498,7 @@ The PaletteGroupBar control will be added to the designer and its dependent asse
 
 
 
-![](Getting-Started_images/Getting-Started_img12.png)
+![PaletteGroupBar](Getting-Started_images/Getting-Started_img12.jpg)
 
 
 
@@ -569,7 +569,7 @@ Me.Controls.Add(paletteBar)
 
 
 
-![](Getting-Started_images/Getting-Started_img13.png)
+![PaletteGroupBar through code](Getting-Started_images/Getting-Started_img13.png)
 
 
 
@@ -587,7 +587,7 @@ To create a [PaletteGroupView](https://help.syncfusion.com/cr/cref_files/windows
 
 
 
-![](Getting-Started_images/Getting-Started_img14.png)
+![PaletteGroupView](Getting-Started_images/Getting-Started_img14.png)
 
 
 
@@ -597,7 +597,7 @@ The PaletteGroupView control will be added to the designer and its dependent ass
 
 
 
-![](Getting-Started_images/Getting-Started_img15.png)
+![PaletteGroupView](Getting-Started_images/Getting-Started_img15.jpg)
 
 
 
@@ -661,7 +661,7 @@ Me.Controls.Add(paletteView)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img16.png)
+![PaletteGroupView Control through Code](Getting-Started_images/Getting-Started_img16.png)
 
 
 
@@ -679,7 +679,7 @@ To create an Overview control using the designer:
 
 
 
-![](Getting-Started_images/Getting-Started_img17.png)
+![Creating an Overview Control through Designer](Getting-Started_images/Getting-Started_img17.png)
 
 
 
@@ -689,7 +689,7 @@ The Overview control will be added to the designer and its dependent assemblies 
 
 
 
-![](Getting-Started_images/Getting-Started_img18.png)
+![Overview control](Getting-Started_images/Getting-Started_img18.jpg)
 
 
 
@@ -743,7 +743,7 @@ Me.Controls.Add(overviewControl)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img19.png)
+![Creating an Overview Control through Code](Getting-Started_images/Getting-Started_img19.png)
 
 
 
@@ -761,7 +761,7 @@ To create a [PropertyEditor](https://help.syncfusion.com/cr/cref_files/windowsfo
 
 
 
-![](Getting-Started_images/Getting-Started_img20.png)
+![PropertyEditor Control through Designer](Getting-Started_images/Getting-Started_img20.png)
 
 
 
@@ -771,7 +771,7 @@ The PropertyEditor control will be added to the designer and its dependent assem
 
 
 
-![](Getting-Started_images/Getting-Started_img21.png)
+![PropertyEditor Control](Getting-Started_images/Getting-Started_img21.jpg)
 
 
 
@@ -827,7 +827,7 @@ Me.Controls.Add(propertyEditor)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img22.png)
+![PropertyEditor Control through Code](Getting-Started_images/Getting-Started_img22.png)
 
 
 
@@ -845,7 +845,7 @@ To create a [DocumentExplorer](https://help.syncfusion.com/cr/cref_files/windows
 
 
 
-![](Getting-Started_images/Getting-Started_img23.png)
+![DocumentExplorer Control through Designer](Getting-Started_images/Getting-Started_img23.png)
 
 
 
@@ -855,7 +855,7 @@ The DocumentExplorer control will be added to the designer and its dependent ass
 
 
 
-![](Getting-Started_images/Getting-Started_img24.png)
+![DocumentExplorer Control](Getting-Started_images/Getting-Started_img24.jpg)
 
 
 
@@ -909,7 +909,7 @@ Me.Controls.Add(documentExplorer)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img25.png)
+![DocumentExplorer Control through Code](Getting-Started_images/Getting-Started_img25.png)
 
 
 
@@ -980,7 +980,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
 
 
 
-![](Getting-Started_images/Getting-Started_img26.jpeg)
+![Diagram Document](Getting-Started_images/Getting-Started_img26.jpeg)
 
 
 
@@ -1013,7 +1013,7 @@ this.diagram1.SaveBinary(this.FileName);
 
 
 
-   ![](Getting-Started_images/Getting-Started_img27.jpeg)
+   ![Save a Diagram Document](Getting-Started_images/Getting-Started_img27.jpeg)
 
 
 
@@ -1049,7 +1049,7 @@ if (dlgPageSetup.ShowDialog() == DialogResult.OK)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img28.jpeg)
+   ![print a Diagram Document](Getting-Started_images/Getting-Started_img28.jpeg)
 
 
 2. Page Borders
@@ -1078,7 +1078,7 @@ if (diagram1 != null && diagram1.Model != null)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img29.jpeg)
+   ![Page Borders](Getting-Started_images/Getting-Started_img29.jpeg)
 
 
 
@@ -1110,7 +1110,7 @@ if (diagram1 != null && diagram1.Model != null)
 {% endtabs %}
 
 
-   ![](Getting-Started_images/Getting-Started_img30.jpeg)
+   ![Header and Footer](Getting-Started_images/Getting-Started_img30.jpeg)
 
 
 4. Print Preview
@@ -1143,7 +1143,7 @@ if (diagram1 != null)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img31.jpeg)
+   ![Print Preview](Getting-Started_images/Getting-Started_img31.jpeg)
 
 
 
@@ -1226,7 +1226,7 @@ The following screenshot illustrates the pan and zoom tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img32.jpeg)
+![Print](Getting-Started_images/Getting-Started_img32.jpeg)
 
 Pan & Zoom Tool
 
@@ -1277,7 +1277,7 @@ The following screen shot illustrates the Alignment tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img33.jpeg)
+![Pan and Zoom Tool](Getting-Started_images/Getting-Started_img33.jpeg)
 
 
 
@@ -1329,7 +1329,7 @@ The following screen shot illustrates the Rotate tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img34.jpeg)
+![Rotate Tools](Getting-Started_images/Getting-Started_img34.jpeg)
 
 Rotate Tools
 
@@ -1368,7 +1368,7 @@ The following screen shot illustrates the Resize tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img35.jpeg)
+![Resize Tool](Getting-Started_images/Getting-Started_img35.jpeg)
 
 
 Resize Tools
@@ -1413,7 +1413,7 @@ The following screen shot illustrates the Nudge tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img36.jpeg)
+![Nudge Tool](Getting-Started_images/Getting-Started_img36.jpeg)
 
 Nudge Tools
 
@@ -1452,7 +1452,7 @@ The following screen shot illustrates the Text Formatting tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img37.jpeg)
+![Text Formatting](Getting-Started_images/Getting-Started_img37.jpeg)
 
  Text Formatting Tools
 
@@ -1541,7 +1541,7 @@ The following screen shot illustrates the Group and Order tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img38.jpeg)
+![Group and Order Tool](Getting-Started_images/Getting-Started_img38.jpeg)
 
 
 
@@ -1592,7 +1592,7 @@ The following screen shot illustrates the drawing tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img39.png)
+![Drawing Tools](Getting-Started_images/Getting-Started_img39.png)
 
 
 <table>
@@ -1690,7 +1690,7 @@ The following screen shot illustrates the Diagram Connector tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img40.jpeg)
+![Diagram Connector Tools](Getting-Started_images/Getting-Started_img40.jpeg)
 
 #### LineConnectorTool  
 
@@ -1899,7 +1899,7 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-   ![](Getting-Started_images/Getting-Started_img41.jpeg)
+   ![PolyLineConnector Tool](Getting-Started_images/Getting-Started_img41.jpeg)
 
 
 
@@ -1911,7 +1911,7 @@ To create your own diagram in the diagram builder, follow the below given proced
 
 
 
-   ![](Getting-Started_images/Getting-Started_img42.jpeg)
+   ![Symbol palette](Getting-Started_images/Getting-Started_img42.jpeg)
 
 
 
@@ -1924,7 +1924,7 @@ A diagram is created using the Diagram Builder. You can use this diagram (.edd) 
 
 
 
-![](Getting-Started_images/Getting-Started_img43.jpeg)
+![Symbol Palette](Getting-Started_images/Getting-Started_img43.jpeg)
 
 
 
@@ -1950,7 +1950,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img44.jpeg)
+![Add new palette](Getting-Started_images/Getting-Started_img44.jpeg)
 
 
 
@@ -1960,7 +1960,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img45.jpeg)
+![palette](Getting-Started_images/Getting-Started_img45.jpeg)
 
 
 
@@ -1970,7 +1970,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img46.png)
+![Add Symbol option](Getting-Started_images/Getting-Started_img46.png)
 
 
 
@@ -1980,13 +1980,13 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img47.jpeg)
+![property window](Getting-Started_images/Getting-Started_img47.jpeg)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img48.jpeg)
+![property window](Getting-Started_images/Getting-Started_img48.jpeg)
 
 
 
@@ -1996,7 +1996,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img49.jpeg)
+![SymbolPalette dialog](Getting-Started_images/Getting-Started_img49.jpeg)
 
 
 
@@ -2007,7 +2007,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img50.jpeg)
+![Custom Symbols](Getting-Started_images/Getting-Started_img50.jpeg)
 
 
 
@@ -2016,7 +2016,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 * Repeat the steps 3 to 7 for creating more symbols.
 * If you create symbols using more than one shapes, you need to group all the shapes into single symbol using the Group option in symbol designer.
 
- ![](Getting-Started_images/Getting-Started_img51.png)
+ ![Group in Symbol Designer](Getting-Started_images/Getting-Started_img51.png)
 
  
 
@@ -2024,7 +2024,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
 
 
-![](Getting-Started_images/Getting-Started_img52.jpeg)
+![Group in Symbol Designer](Getting-Started_images/Getting-Started_img52.jpeg)
 
 
 
@@ -2042,7 +2042,7 @@ To create our own custom symbols in the symbol designer, follow the procedure gi
 
    Drag and Drop the Diagram control from the toolbox into the designer form to create a diagram using Designer.  
 
-   ![](Getting-Started_images/Getting-Started_img53.png)
+   ![Initial Diagram](Getting-Started_images/Getting-Started_img53.png)
 
 
 
@@ -2175,7 +2175,7 @@ The following screenshot displays the organizational flow of diagram.
 
 
 
-![](Getting-Started_images/Getting-Started_img54.png)
+![organizational flow](Getting-Started_images/Getting-Started_img54.png)
 
 
 
