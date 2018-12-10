@@ -881,6 +881,19 @@ public class CustomSelectionController : RowSelectionController
 {% endhighlight %}
 {% endtabs %}
 
+### Tab Key Navigation Support
+The Following code show to Moves the current cell to  next control in the tab order of the parent container using  SfDataGrid.AllowStandardTab property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.AllowStandardTab = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowStandardTab = True
+{% endhighlight %}
+{% endtabs %}
+
+![Tab Key Navigation Support in windows forms datagrid](Selection_images/selection20.png)
 ### Displaying Message Box on Current Cell Activated
 
 The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivated_EV.html) event provides notification when the current cell is moved from one cell to another.

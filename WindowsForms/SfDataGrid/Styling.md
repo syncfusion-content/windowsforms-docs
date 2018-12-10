@@ -223,6 +223,26 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 
 ![Border customization in windows forms datagrid](Styling_images/Styling4.png)
 
+## Changing the Border Color, Border Style, BorderSides,Border3DStyles of the Grid Border Color
+The Border Color, Border Styles, BorderSides, Border3DStyles of the Grid Border can be changed by [SfDataGrid.Style] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Style.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.BorderStyle = BorderStyle.Fixed3D;
+this.sfDataGrid1.Style.BorderSides = Border3DSide.Top;
+this.sfDataGrid1.Style.Border3DStyle = Border3DStyle.Sunken;
+this.sfDataGrid1.Style.BorderColor = Color.Yellow;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.BorderStyle = BorderStyle.Fixed3D
+Me.sfDataGrid1.Style.BorderSides = Border3DSide.Top
+Me.sfDataGrid1.Style.Border3DStyle = Border3DStyle.Sunken
+Me.sfDataGrid1.Style.BorderColor = Color.Yellow
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the Border Color, Border Style, BorderSides,Border3DStyles of the Grid Border Color](Styling_images/Styling6.png)
+
 ## Showing busy indicator for the data operations
 
 Indication of the data operation performed on the SfDataGrid can be showed with the help of `BusyIndicator` by setting the [ShowBusyIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowBusyIndicator.html) property to `true`. This will display an animated busy indicator image while performing the data operations such as loading large data, sorting, grouping, and filtering.
