@@ -885,51 +885,100 @@ Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, 
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 AND<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise.<br/><br/></td><td>
+AND(logical1, logical2, ...)<br/><br/>
+Where:<br/><br/>
+logical1, logical2 ... are multiple conditions to be tested for `true` or `false`.<br/><br/>
+Remarks:<br/><br/>
+The arguments must evaluate to logical values (True or False).<br/><br/>
+When an argument does not evaluate to True or false, those values are ignored.<br/><br/>
+There must be at least one value in the argument list.<br/><br/></td></tr>
 <tr>
 <td>
 OR<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise.<br/><br/></td><td>
+OR(logical1, logical2, ...)<br/><br/>
+Where:<br/><br/>
+logical1, logical2 ... are conditions to test that can be either `True` or `False`.<br/><br/>
+Remarks:<br/><br/>
+The arguments must evaluate to logical values such as `True` or `False` or in arrays or references that contain logical values.<br/><br/></td></tr>
 <tr>
 <td>
 IF<br/><br/></td><td>
-Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE<br/><br/></td></tr>
+Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE.<br/><br/></td><td>
+IF(logical_test, value_if_true, value_if_false)<br/><br/>
+Where:<br/><br/>
+logical_test is any value or expression that can be evaluated to `True` or `False`.<br/><br/>
+value_if_true is the value that is returned if a logical_test is `True`.<br/><br/>
+value_if_false is the value that is returned if a logical_test is `False`.<br/><br/></td></tr>
 <tr>
 <td>
 IFERROR<br/><br/></td><td>
-Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td></tr>
+Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td><td>
+IFERROR (value, value_error)<br/><br/>
+Where:<br/><br/>
+`value` is the required to check the error.<br/><br/>
+`value_error` is the required and returns when the value has an error.<br/><br/>
+When the value_error is an empty cell, then the function takes the error value as empty string.  <br/><br/></td></tr>
 <tr>
 <td>
 FALSE<br/><br/></td><td>
-Simply returns the logical value FALSE<br/><br/></td></tr>
+Simply returns the logical value FALSE.<br/><br/></td><td>
+FALSE(stringvalue)<br/><br/>
+Where:<br/><br/>
+stringvalue is to provide an empty string.<br/><br/></td></tr>
 <tr>
 <td>
 TRUE<br/><br/></td><td>
-Simply returns the logical value TRUE<br/><br/></td></tr>
+Simply returns the logical value TRUE.<br/><br/></td><td>
+TRUE(stringvalue)<br/><br/>
+Where:<br/><br/>
+stringvalue is to provide an empty string.<br/><br/></td></tr>
 <tr>
 <td>
 NOT<br/><br/></td><td>
-Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
+Returns a logical value that is the opposite of a user supplied logical value or expression.<br/><br/></td><td>
+NOT(logical)<br/><br/>
+Where:<br/><br/>
+logical is a value or expression that can be evaluated to `True` or `False`.<br/><br/></td></tr>
 <tr>
 <td>
 IFNA<br/><br/></td><td>
-Tests if an expression returns the #N/A error and if so, returns an alternative specified value; Otherwise the function returns the value of the supplied expression<br/><br/></td></tr>
+Tests if an expression returns the #N/A error and if so, returns an alternative specified value; Otherwise the function returns the value of the supplied expression.<br/><br/></td><td>
+IFNA (Formula_value, value_if_na)<br/><br/>
+Where:<br/><br/>
+`Formula_value`: This value is required and the argument that is checked for the #N/A error value.<br/><br/>
+`value_if_na`: This value is required and the value returned when the formula evaluates to the #N/A error value.<br/><br/></td></tr>
 <tr>
 <td>
 IFS<br/><br/></td><td>
-Tests a number of supplied conditions and returns a result corresponding to the first condition that evaluates to TRUE<br/><br/></td></tr>
+Tests a number of supplied conditions and returns a result corresponding to the first condition that evaluates to TRUE.<br/><br/></td><td>
+IFS( condition1, return1 [,condition2, return2] ... [,condition127, return127] )<br/><br/>
+Where:<br/><br/>
+condition1, condition2, ... condition127 denotes the condition that you want to test. There can be up to 127 conditions entered.<br/><br/>
+return1, return2, ... return127 denotes the <br/><br/></td></tr>
 <tr>
 <td>
 SWITCH<br/><br/></td><td>
-Compares a number of supplied values to a supplied test expression and returns a result corresponding to the first value that matches the test expression<br/><br/></td></tr>
+Compares a number of supplied values to a supplied test expression and returns a result corresponding to the first value that matches the test expression.<br/><br/></td><td>
+SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n [, default] )<br/><br/>
+Where:<br/><br/>
+value1, value2, ... value_n denotes a list of values that are compared to expression. The SWITCH function is looking for the first value that matches the expression.<br/><br/>
+result1, result2, ... result_n denotes a list of results. The SWITCH function returns the corresponding result when a value matches expression.<br/><br/>
+default is return if expression does not match any of the values (value1, value2, ... value_n).<br/><br/></td></tr>
 <tr>
 <td>
 XOR<br/><br/></td><td>
-Returns a logical Exclusive Or of all arguments<br/><br/></td></tr>
+Returns a logical Exclusive Or of all arguments.<br/><br/></td><td>
+XOR (logical_value1, logical_value2…)<br/><br/>
+Where:<br/><br/>
+Logical_value1: This is a required value and can be either `true` or `false`, and can be logical values, arrays, or references.<br/><br/>
+When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.<br/><br/></td></tr>
 </table>
 
 ## Lookup & Reference Functions
