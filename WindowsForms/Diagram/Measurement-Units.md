@@ -63,7 +63,7 @@ The following code example illustrates to set measurement unit for the diagram.
 
 ### Custom Measurement unit
 
-The MeasureUnits contain constant values to apply in our Diagram. So, you can use MeasureUnits.Custom to set the customized unit and specify the Custom Measurement unit value by using the Syncusion.Windows.Forms.Diagram.Model.CustomUnitValue property.   
+The MeasureUnits contain constant values to apply in our Diagram. So, you can use MeasureUnits.Custom to set the customized unit and specify the Custom Measurement unit value by using the Syncfusion.Windows.Forms.Diagram.Model.CustomUnitValue property.   
 The following code example illustrates how to set custom measurement unit for the Diagram control.
  
 {% tabs %}
