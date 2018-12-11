@@ -1,6 +1,6 @@
 ---
 layout: post
-title: High DPI support for Windows Forms
+title: High DPI support | Windows Forms | Syncfusion
 description: This section explains about how the high DPI support provides for our Syncfusion Windows Forms controls
 platform: WindowsForms
 control: General
