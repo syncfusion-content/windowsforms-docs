@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing the appearances of the selection handles
 
-The Diagram control provides an option to customize the selection handles of the nodes or connectors to change the appearance of the handles in the application side by using the Synfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property.
+The Diagram control provides an option to customize the selection handles of the nodes or connectors to change the appearance of the handles in the application side by using the Syncfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property.
 
 ### Customizing the UserHandleRenderer class
 
@@ -24,7 +24,7 @@ public class CustomStyle1HandleRenderer : UserHandleRenderer
 {
 
 /// <summary>
-/// selection outline border customizatiom...
+/// selection outline border customization...
 /// </summary>
 public override void OutlineBoundingRectangle(Graphics gfx, Node node, bool bWithoutRotation)
 {
@@ -56,7 +56,7 @@ Public Class CustomStyle1HandleRenderer
 Inherits UserHandleRenderer
 
 ''' <summary>
-''' selection outline border customizatiom...
+''' selection outline border customization...
 ''' </summary>
 Public Overrides Sub OutlineBoundingRectangle(ByVal gfx As Graphics, ByVal node As Node, ByVal bWithoutRotation As Boolean)
 MyBase.OutlineBoundingRectangle(gfx, node, bWithoutRotation)
@@ -103,7 +103,6 @@ if (node is ConnectorBase && (node as ConnectorBase).LineSegments.Count == 1)
 Matrix matrixTemp = node.GetTransformations();
 RectangleF rcBoundingRectangle = RectangleF.Empty;
 rcBoundingRectangle.Size = ((IUnitIndependent)node).GetSize(MeasureUnits.Pixel);
-float decSize = connector.HeadDecorator.Size.Width + connector.TailDecorator.Size.Width;
 float lineHeight = connector.LineStyle.LineWidth;
 // append flip transforms
 node.AppendFlipTransforms(matrixTemp);
@@ -141,7 +140,6 @@ If TypeOf node Is ConnectorBase AndAlso (TryCast(node, ConnectorBase)).LineSegme
 Dim matrixTemp As Matrix = node.GetTransformations()
 Dim rcBoundingRectangle As RectangleF = RectangleF.Empty
 rcBoundingRectangle.Size = (CType(node, IUnitIndependent)).GetSize(MeasureUnits.Pixel)
-Dim decSize As Single = connector.HeadDecorator.Size.Width + connector.TailDecorator.Size.Width
 Dim lineHeight As Single = connector.LineStyle.LineWidth
 ' append flip transforms
 node.AppendFlipTransforms(matrixTemp)
@@ -244,7 +242,7 @@ End Sub
 {% endtabs %}
 
 
-Finally, initialize the customized class and assign it to the Synfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property to change the appearance of the selection's handles in your application.
+Finally, initialize the customized class and assign it to the Syncfusion.Windows.Forms.Diagram.View.CustomHandleRenderer property to change the appearance of the selection's handles in your application.
 
 {% tabs %}
 

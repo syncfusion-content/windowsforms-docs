@@ -24,7 +24,7 @@ You should customize the DiagramController class in your application. Refer to t
 {% highlight c# %}
 public class CustomController : DiagramController
 {
-private int hitpadding = 20;
+private int hitPadding = 20;
 public CustomController()
 : base()
 {
@@ -45,10 +45,10 @@ foreach (Node node in nodes)
 {
 if (!(node is ConnectorBase))
 {
-double lowdistance = 0;
+double lowDistance = 0;
 int index = 0;
 RectangleF nodeBounds = node.GetNodeBounds(false, true);
-nodeBounds.Inflate(hitpadding, hitpadding);
+nodeBounds.Inflate(hitPadding, hitPadding);
 if (nodeBounds.Contains(ptSnapping))
 {
 //to find the nearest port...
@@ -59,9 +59,9 @@ PointF portPos = port1.GetPosition();
 portPos = node.ConvertToModelCoordinates(portPos);
 //To find lowest distance of port from current point...
 double dis = Geometry.PointDistance(ptSnapping, portPos);
-if (dis < lowdistance || i == 1)
+if (dis < lowDistance || i == 1)
 {
-lowdistance = dis;
+lowDistance = dis;
 index = i;
 }
 }
@@ -77,7 +77,7 @@ return port;
 {% highlight vbnet %}
 Public Class CustomController
 Inherits DiagramController
-Private hitpadding As Integer = 20
+Private hitPadding As Integer = 20
 Public Sub New()
 MyBase.New()
 
@@ -94,10 +94,10 @@ Dim port As ConnectionPoint = MyBase.GetConnectionPointAtPoint(ptSnapping)
 Dim nodes As NodeCollection = Me.Model.Nodes
 For Each node As Node In nodes
 If Not(TypeOf node Is ConnectorBase) Then
-Dim lowdistance As Double = 0
+Dim lowDistance As Double = 0
 Dim index As Integer = 0
 Dim nodeBounds As RectangleF = node.GetNodeBounds(False, True)
-nodeBounds.Inflate(hitpadding, hitpadding)
+nodeBounds.Inflate(hitPadding, hitPadding)
 If nodeBounds.Contains(ptSnapping) Then
 'to find the nearest port...
 For i As Integer = 1 To node.Ports.Count - 1
@@ -106,8 +106,8 @@ Dim portPos As PointF = port1.GetPosition()
 portPos = node.ConvertToModelCoordinates(portPos)
 'To find lowest distance of port from current point...
 Dim dis As Double = Geometry.PointDistance(ptSnapping, portPos)
-If dis < lowdistance OrElse i = 1 Then
-lowdistance = dis
+If dis < lowDistance OrElse i = 1 Then
+lowDistance = dis
 index = i
 End If
 Next i
