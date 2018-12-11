@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing the appearances of the Selection handles | Diagram | Windows Forms | Syncfusion
+title: Customizing the appearances of the Selection handles | Syncfusion
 description: How to Customizing the Appearances of the Selection handles
 platform: WindowsForms
 control: Diagram

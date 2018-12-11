@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find the nearest port when mouse hover on the node | Diagram | Windows Forms | Syncfusion
+title: How to find nearest port when mouse hover on the node | Syncfusion
 description: This page explains about when mouse hover on the node, how to find the nearest port and establish the connection to the port.
 platform: WindowsForms
 control: Diagram
