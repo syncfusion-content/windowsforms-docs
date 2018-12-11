@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Syncfusion Filtering
 description: This section explains about the Filtering support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -125,7 +125,7 @@ sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img20.png)
+![Adding multiple FilterPredicates for a column](Filtering_images/Filtering_img20.png)
 
 ### Filter DateColumn with range between two dates
 
@@ -144,7 +144,7 @@ sfDataGrid.Columns("OrderDate").FilterPredicates.Add(New FilterPredicate() With 
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img21.png)
+![Filter DateColumn with range between two dates](Filtering_images/Filtering_img21.png)
 
 ### Retrieving the filtered records
 
@@ -197,11 +197,11 @@ By default, the filter popup mode of the column is set as `Both`. The checkbox a
 
 **Checkbox Filtering UI**
 
-![](Filtering_images/Filtering_img1.png)
+![Checkbox Filtering UI](Filtering_images/Filtering_img1.png)
 
 **Advanced Filtering UI**
 
-![](Filtering_images/Filtering_img2.png)
+![Advanced Filtering UI](Filtering_images/Filtering_img2.png)
 
 ### Changing Filter UI View for Grid
 The Filter popup mode for the SfDataGrid can be set by using the [SfDataGrid.FilterPopupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterPopupMode.html) property.
@@ -301,9 +301,9 @@ sfDataGrid1.Columns("OrderID").FilterPopupMode = FilterPopupMode.CheckBoxFilter
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img3.png)
+![Checkbox Filtering](Filtering_images/Filtering_img3.png)
 
-![](Filtering_images/Filtering_img4.png)
+![Checkbox Filtering](Filtering_images/Filtering_img4.png)
 
 ### Instant Filtering
 By default, filters are applied to the columns when OK button is clicked in UI filtering. This can be change to update the filters immediately whenever update in filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property as true for the corresponding column.
@@ -319,7 +319,7 @@ Me.sfDataGrid1.Columns("CustomerID").ImmediateUpdateColumnFilter = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img5.png)
+![Instant Filtering](Filtering_images/Filtering_img5.png)
 
 ### Filtering Null Values 
 The null values of the column can be filtered by using the ` (Blanks) ` option of the checked list box. This can be enabled for the column by setting the [AllowBlankFilters](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowBlankFilters.html) property to `true`.
@@ -335,7 +335,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowBlankFilters = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img6.png)
+![Filtering Null Values](Filtering_images/Filtering_img6.png)
 
 N>If there is no null values exist in the column, the `(Blanks)` option will not be listed in the CheckedListBox.
 
@@ -343,19 +343,19 @@ N>If there is no null values exist in the column, the `(Blanks)` option will not
 By default, the filtering is applied based on the actual value of the column. This can be changed to filter based on the display text by setting the [FilterMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterMode.html) value as `ColumnFilter.DisplayText`.
 In the below screenshot, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2232018 12:00:00 AM and 2232018 6:30:00 PM). 
 
-![](Filtering_images/Filtering_img7.png)
+![Filtering Based on Display Text](Filtering_images/Filtering_img7.png)
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![](Filtering_images/Filtering_img8.png)
+![Filtering Based on Display Text](Filtering_images/Filtering_img8.png)
 
 If the `FilterMode` is set as DisplayText, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![](Filtering_images/Filtering_img9.png)
+![Filtering Based on Display Text](Filtering_images/Filtering_img9.png)
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![](Filtering_images/Filtering_img10.png)
+![Filtering Based on Display Text](Filtering_images/Filtering_img10.png)
 
 ## Advanced Filtering
 Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
@@ -452,17 +452,17 @@ N>
 ### Instant Filtering
 By default the advanced filtering will be applied while clicking the OK button after specifying the suitable filter value. This can be changed to update filtering immediately on updating the filter popup by setting the [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ImmediateUpdateColumnFilter.html) property to `true` for the column.
 
-![](Filtering_images/Filtering_img14.png)
+![Instant Filtering](Filtering_images/Filtering_img14.png)
 
 ### Filtering Null Values 
 The null values can be filtered by using the `Null` and `Not Null` filter conditions from the advanced filter. 
 
-![](Filtering_images/Filtering_img15.png)
+![Filtering Null Values](Filtering_images/Filtering_img15.png)
 
 ### Case Sensitive Filtering
 The case sensitive filtering can be enabled for the column by using the casing buttons available in the advanced filter UI. If the button is active the filtering will be applied with the case sensitive with the filter text.
 
-![](Filtering_images/Filtering_img16.png)
+![Case Sensitive Filtering](Filtering_images/Filtering_img16.png)
 
 ## Customization using Events
 
@@ -645,7 +645,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img17.png)
+![Displaying Custom Filter Control for Filtering](Filtering_images/Filtering_img17.png)
 
 
 ### Skip the frozen row data from filtering
@@ -779,7 +779,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img22.png)
+![Skip the frozen row data from filtering](Filtering_images/Filtering_img22.png)
 
 Retain the frozen row data in the view by managing the [FilterPredicates](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.FilterChangingEventArgs~FilterPredicates.html) collection in the [FilterChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FilterChanging_EV.html) event. In the following code, the frozen row data is added to the filter predicates using the `FilterPredicates` argument.
 
@@ -896,9 +896,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img23.png)
+![Retain the frozen row data in the view by managing the FilterPredicates event](Filtering_images/Filtering_img23.png)
 
-![](Filtering_images/Filtering_img24.png)
+![Retain the frozen row data in the view by managing the FilterPredicates event](Filtering_images/Filtering_img24.png)
 
 Download [Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1392776176).
 
@@ -926,7 +926,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img18.png)
+![Hiding Sort Options](Filtering_images/Filtering_img18.png)
 
 ### Setting Custom Filter/Filtered Icons in Column Header
 The custom filter icon or the filtered icons can be set to the column header by using the [HeaderStyle.FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilterIcon.html) and [HeaderStyle.FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~FilteredIcon.html) property.
@@ -942,7 +942,7 @@ sfDataGrid.Columns(0).HeaderStyle.FilteredIcon = New Bitmap(Image.FromFile("..\.
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img19.png)
+![Setting Custom Filtered Icons in Column Header](Filtering_images/Filtering_img19.png)
 
 ### Styling filter control
 
@@ -995,4 +995,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img25.png)
+![Styling filter control](Filtering_images/Filtering_img25.png)

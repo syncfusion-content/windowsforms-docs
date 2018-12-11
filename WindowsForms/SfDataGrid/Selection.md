@@ -882,7 +882,7 @@ public class CustomSelectionController : RowSelectionController
 {% endtabs %}
 
 ### Tab Key Navigation Support
-The Following code show to Moves the current cell to  next control in the tab order of the parent container using  SfDataGrid.AllowStandardTab property.
+The Following code show to Moves the current cell to  next control in the tab order of the parent container using  [SfDataGrid.AllowStandardTab] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowStandardTab.html) property.
 
 {% tabs %}
 {% highlight c# %}
