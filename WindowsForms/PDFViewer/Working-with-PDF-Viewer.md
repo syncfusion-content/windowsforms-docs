@@ -466,7 +466,7 @@ Dim image() As Metafile = pdfViewerControl1.ExportAsMetafile(0, 3)
 
 Essential PdfViewerControl allows end users to search a given text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
-![Text Search](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
+![Text Search in PDF Viewer WinForms](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
 
 ### Enable or disable highlighting all the searched text instances
 PDF Viewer allows you to enable or disable highlighting all the occurrences of the searched text instance in the PDF pages. 
