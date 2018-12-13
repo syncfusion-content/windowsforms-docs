@@ -195,7 +195,7 @@ pdfViewerControl1.Load("Sample.pdf", "password")
 
 PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon clicking the Print button.
 
-![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
+![PrintDialog Window](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
 
 ### Silent Printing
 
@@ -477,7 +477,7 @@ The following code example illustrates how to disable highlighting all the searc
 {%highlight c#%}
 
 //Sets value to disable highlight all the occurrences of the searched text
-pdfViewer.TextSearchSettings.HighlightAllInstance = false
+pdfViewer.TextSearchSettings.HighlightAllInstance = false;
 
 {%endhighlight%}
 
@@ -580,7 +580,7 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 
 The selected text can be copied by clicking Copy from the context menu, which appears when clicking right mouse button after the text is selected.
 
-![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img3.png)
+![Copy Text](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img3.png)
 
 The selected text can also be copied using the keyboard shortcut Ctrl + C. 
 
