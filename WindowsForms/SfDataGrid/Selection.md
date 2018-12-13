@@ -96,7 +96,7 @@ Me.sfDataGrid1.SelectionMode = GridSelectionMode.None
 {% endhighlight %}
 {% endtabs %}
 
-Selection on a particular row can be disabled by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event. You can edit and select the FilterRow and AddNewRow cells through the `AllowFocus` property is set to `false`.
+Selection on a particular row can be disabled by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivating_EV.html) event. FilterRow and AddNewRow cells can be edited and selected even though the `AllowFocus` property is set to `false`.
 
 The column selection and navigation can be disabled by setting the [AllowFocus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowFocus.html) property to `false`.
 
