@@ -521,83 +521,190 @@ Returns the accrued interest for a security that pays interest at maturity<br/><
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 ISERROR<br/><br/></td><td>
-Checks whether the value is an error and returns true or false<br/><br/></td></tr>
+Checks whether the value is an error and returns true or false.<br/><br/></td><td>
+ISERROR(value)<br/><br/>
+Where:<br/><br/>
+value is the value that is to be tested.<br/><br/></td></tr>
 <tr>
 <td>
 ISNUMBER<br/><br/></td><td>
-Checks whether the value is number and returns true or false<br/><br/></td></tr>
+Checks whether the value is number and returns true or false.<br/><br/></td><td>
+ISNUMBER(value)<br/><br/>
+Where:<br/><br/>
+value is the value that is to be tested.If value is a numeric value , this function will return TRUE. Otherwise, it will return FALSE.<br/><br/></td></tr>
 <tr>
 <td>
 ISLOGICAL<br/><br/></td><td>
-Checks whether a value is logical value(TRUE/FALSE) and returns true or false<br/><br/></td></tr>
+Checks whether a value is logical value(TRUE/FALSE) and returns true or false.<br/><br/></td><td>
+ISLOGICAL(value)<br/><br/>
+Where:<br/><br/>
+this value is the value that you want to test. When the value is a true or false value, this function returns true. Otherwise, it returns false.<br/><br/></td></tr>
 <tr>
 <td>
 ISNA<br/><br/></td><td>
-Checks whether a value is #N/A and returns true or false<br/><br/></td></tr>
+Checks whether a value is #N/A and returns true or false.<br/><br/></td><td>
+ISNA(value)<br/><br/>
+Where:<br/><br/>
+value is the function that is tested.<br/><br/></td></tr>
 <tr>
 <td>
 ISERR<br/><br/></td><td>
-Checks whether the value is an error except #N/A and returns true or false<br/><br/></td></tr>
+Checks whether the value is an error except #N/A and returns true or false.<br/><br/></td><td>
+ISERR(value)<br/><br/>
+Where:<br/><br/>
+value is the value that you want to test. When the value is an error value except #N/A, this function returns true/false to indicate whether a value is an error or not.<br/><br/></td></tr>
 <tr>
 <td>
 ISBLANK<br/><br/></td><td>
-Checks whether the reference is to an empty cell and returns true or false<br/><br/></td></tr>
+Checks whether the reference is to an empty cell and returns true or false.<br/><br/></td><td>
+ISBLANK(value)<br/><br/>
+Where:<br/><br/>
+value is the value that you want to test. When the value is blank, this function returns `true`. When the value is not blank, the function returns `false`.<br/><br/></td></tr>
 <tr>
 <td>
 ISTEXT<br/><br/></td><td>
-Checks whether the value is text and returns true or false<br/><br/></td></tr>
+Checks whether the value is text and returns true or false.<br/><br/></td><td>
+ISTEXT(value)<br/><br/>
+Where:<br/><br/>
+the value that you want to test. If value is a text value, this function will return `true`. Otherwise, it will return `false`.<br/><br/></td></tr>
 <tr>
 <td>
 ISNONTEXT<br/><br/></td><td>
-Checks whether the value is not text(blank cells are not text) and returns true or false<br/><br/></td></tr>
+Checks whether the value is not text(blank cells are not text) and returns true or false.<br/><br/></td><td>
+IsNonText(text)<br/><br/>
+Where:<br/><br/>
+text is the value you want to test whether it is a string or not.<br/><br/></td></tr>
 <tr>
 <td>
 ISEVEN<br/><br/></td><td>
-Returns true if number is even<br/><br/></td></tr>
+Returns true if number is even.<br/><br/></td><td>
+ISEVEN(value)<br/><br/>
+Where:<br/><br/>
+value must be a numeric value. If it is non-integer value, the value is rounded down.<br/><br/></td></tr>
 <tr>
 <td>
 LEN<br/><br/></td><td>
-Returns the length of a supplied text string<br/><br/></td></tr>
+Returns the length of a supplied text string.<br/><br/></td><td>
+LEN(text)<br/><br/>
+Where:<br/><br/>
+Text denotes the text whose length you want to find. Spaces count as characters.<br/><br/></td></tr>
 <tr>
 <td>
 FIXED<br/><br/></td><td>
-Rounds a supplied number to a specified number of decimal places, and then converts this into text<br/><br/></td></tr>
+Rounds a supplied number to a specified number of decimal places, and then converts this into text.<br/><br/></td><td>
+FIXED(number, [decimals], [no_commas])<br/><br/>
+Where:<br/><br/>
+Number (Required) denotes the number you want to round and convert to text.<br/><br/>
+Decimals (Optional) denotes the number of digits to the right of the decimal point.<br/><br/>
+No_commas(Optional) denotes the logical value that, if TRUE, prevents FIXED from including commas in the returned text.<br/><br/></td></tr>
 <tr>
 <td>
 ISODD<br/><br/></td><td>
-Returns true if number is odd<br/><br/></td></tr>
+Returns true if number is odd.<br/><br/></td><td>
+ISODD(value)<br/><br/>
+Where:<br/><br/>
+The given value must be a numeric value. When it is a non-integer value, the value is rounded down.<br/><br/></td></tr>
 <tr>
 <td>
 ERROR.TYPE<br/><br/></td><td>
-Tests a supplied value and returns an integer relating to the supplied value's error type<br/><br/></td></tr>
+Tests a supplied value and returns an integer relating to the supplied value's error type.<br/><br/></td><td>
+ERROR.TYPE(value)<br/><br/>
+Where:<br/><br/>
+Value-The given value is required.
+Here is the: 
+Return Value of Function
+<table>
+<tr>
+<th>
+<b>Given Value</b></th><th>
+<b>Return Value Of Function</b></th></tr>
+<tr>
+<td>
+#NULL!</td><td>
+1</td></tr>
+<tr>
+<td>
+#DIV/0!</td><td>
+2</td></tr>
+<tr>
+<td>
+#VALUE!</td><td>
+3</td></tr>
+<tr>
+<td>
+#REF!</td><td>
+4</td></tr>
+<tr>
+<td>
+#NAME?</td><td>
+5</td></tr>
+<tr>
+<td>
+#NUM!</td><td>
+6</td></tr>
+<tr>
+<td>
+#N/A</td><td>
+7</td></tr>
+<tr>
+<td>
+#GETTING_DATA</td><td>
+8</td></tr>
+<tr>
+<td>
+Anything else</td><td>
+#N/A</td></tr>
+</table>
+<br/><br/></td></tr>
 <tr>
 <td>
 N<br/><br/></td><td>
-Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0<br/><br/></td></tr>
+Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0.<br/><br/></td><td>
+N(value)<br/><br/>
+Where:<br/><br/>
+A value is required.<br/><br/>
+Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator `TRUE` returns a value of `1`. The other values are returned as `0`<br/><br/></td></tr>
 <tr>
 <td>
 NA<br/><br/></td><td>
-Returns the Excel #N/A error<br/><br/></td></tr>
+Returns the Excel #N/A error.<br/><br/></td><td>
+NA()<br/><br/>
+Where:<br/><br/>
+The NA function syntax has no arguments.<br/><br/></td></tr>
 <tr>
 <td>
 CELL<br/><br/></td><td>
-Returns information about the contents, formatting or location of a given cell<br/><br/></td></tr>
+Returns information about the contents, formatting or location of a given cell.<br/><br/></td><td>
+CELL(infoType,reference)<br/><br/>
+Where:<br/><br/>
+infoType(Required) argument is a text string that specifies the type of information to be returned.<br/><br/>
+reference( Optional) is the cell for which the information is to be returned. <br/><br/></td></tr>
 <tr>
 <td>
 INFO<br/><br/></td><td>
-Returns information about the the current operating environment<br/><br/></td></tr>
+Returns information about the the current operating environment.<br/><br/></td><td>
+INFO(infoType)<br/><br/>
+Where:<br/><br/>
+infoType argument is a text string that specifies the type of information to be returned.<br/><br/></td></tr>
 <tr>
 <td>
 TYPE<br/><br/></td><td>
-Returns information about the data type of a supplied value<br/><br/></td></tr>
+Returns information about the data type of a supplied value.<br/><br/></td><td>
+TYPE(value)<br/><br/>
+Where:<br/><br/>
+value can be input either directly, as a value returned from a formula, or as a reference to a cell that contains a value.<br/><br/></td></tr>
 <tr>
 <td>
 ISFORMULA<br/><br/></td><td>
-Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE<br/><br/></td></tr>
+Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, returns FALSE.<br/><br/></td><td>
+ISFORMULA (reference)<br/><br/>
+Where:<br/><br/>
+reference is a reference to the cell you want to test.<br/><br/></td></tr>
 </table>
 
 ## Logical Functions
