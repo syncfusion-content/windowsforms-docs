@@ -2529,3 +2529,28 @@ chart.PrimaryXAxis.EdgeLabelsDrawingMode = ChartAxisEdgeLabelsDrawingMode.Shift;
 The following screenshot illustrates the chart whose x-axis labels are rendered with EdgeLabelsDrawingMode as Shift.
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img44.png)
+
+## PointOffset in axis
+
+`PointOffset` is used to leave space between axis and the first point drawn in the chart.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.PointOffset = 0.1;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.PointOffset = 0.1;
+
+{% endhighlight %}
+{% endtabs %}
+
+For example, when you set PointOffset to 1, chart will leave one interval space between axis and the first point.
+
+The following screenshot illustrates the chart whose x-axis labels are rendered with PointOffset as 1.
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img45.png)
