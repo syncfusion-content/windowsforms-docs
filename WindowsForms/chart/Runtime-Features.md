@@ -393,6 +393,31 @@ Splitter</td><td>
 This item provides a logical split between the collection of commands.</td></tr>
 </table>
 
+### Saving chart without toolbar
+
+When clicking the save/copy toolbar item, the toolbar will also be copied along with chart. You can use the 'IncludeInExportedChart' property of the 'Toolbar' to specify whether the toolbar should be saved along with chart control. The default value of this property is *true*.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+//Save chart without toolbar
+this.chartControl1.ToolBar.IncludeInExportedChart = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Save chart without toolbar
+Me.chartControl1.ToolBar.IncludeInExportedChart = false
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart exported with toolbar](Runtime-Features_images/Runtime-Features_img34.jpg)
+
+![Chart exported without toolbar](Runtime-Features_images/Runtime-Features_img35.jpg)
+
 ### Custom Toolbar Commands
 
 You can also add custom toolbar items using [ChartToolBarCommandItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartToolBarCommandItem_members.html) class. The [ChartCommands](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartCommands_members.html) enum lists the commands that can be added. The following table describes those commands.
