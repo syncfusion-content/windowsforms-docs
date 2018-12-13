@@ -1699,19 +1699,30 @@ Returns the number (code point) corresponding to the first character of a suppli
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 ENCODEURL<br/><br/></td><td>
-Returns a URL-encoded string <br/><br/></td></tr>
+Returns a URL-encoded string.<br/><br/></td><td>
+ENCODEURL(name)<br/><br/>
+Where:<br/><br/>
+name denotes a string that is to be URL encoded.<br/><br/></td></tr>
 <tr>
 <td>
 FILTERXML<br/><br/></td><td>
-Returns data from XML content, using a specified XPath<br/><br/></td></tr>
+Returns data from XML content, using a specified XPath.<br/><br/></td><td>
+FILTERXML(xml, xpath)<br/><br/>
+Where:<br/><br/>
+xml denotes a string in valid XML format.<br/><br/>
+Xpath denotes a string in standard XPath format.<br/><br/></td></tr>
 <tr>
 <td>
 WEBSERVICE<br/><br/></td><td>
-Returns data from a web service on the Internet or Intranet<br/><br/></td></tr>
+Returns data from a web service on the Internet or Intranet.<br/><br/></td><td>
+WEBSERVICE(url)<br/><br/>
+Where:<br/><br/>
+url denotes the URL of the web service.<br/><br/></td></tr>
 </table>
 
 
