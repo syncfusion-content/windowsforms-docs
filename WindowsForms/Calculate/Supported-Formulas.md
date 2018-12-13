@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas
+title: Supported Formulas | WindowsForms | Syncfusion
 description: Formulas supported in Essential Calculate
 platform: windowsforms
 control: Calculate
@@ -17,55 +17,161 @@ This section shows the list of formulas supported in Essential Calculate library
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 DCOUNT<br/><br/></td><td>
-Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions<br/><br/></td></tr>
+Returns the number of cells containing numbers in a field of a list or database that satisfy specified conditions<<br/><br/></td><td>
+DCOUNT(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field  indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as the argument includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/></td></tr>
 <tr>
 <td>
 DCOUNTA<br/><br/></td><td>
-Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Returns the number of non-blank cells in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DCOUNTA(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria  denotes the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/></td></tr>
 <tr>
 <td>
 DAVERAGE<br/><br/></td><td>
-Calculates the average of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Calculates the average of values in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DAVERAGE(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column..<br/><br/></td></tr>
 <tr>
 <td>
 DGET<br/><br/></td><td>
-Returns a single value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Returns a single value from a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DGET(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+If no record matches the criteria, DGET returns the #VALUE! error value.<br/><br/>
+If more than one record matches the criteria, DGET returns the #NUM! error value.<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DMAX<br/><br/></td><td>
-Returns the maximum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Returns the maximum value from a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DMAX(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DMIN<br/><br/></td><td>
-Returns the minimum value from a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Returns the minimum value from a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DMIN(database, field, criteria)
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DSTDEVP<br/><br/></td><td>
-Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
+Calculates the standard deviation (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DSTDEVP(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <td>
 DSTEV<br/><br/></td><td>
-Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Calculates the standard deviation (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DSTDEV(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DVARP<br/><br/></td><td>
-Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
-<tr>
+Calculates the variance (based on an entire population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DVARP(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <td>
 DVAR<br/><br/></td><td>
-Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td></tr>
+Calculates the variance (based on a sample of a population) of values in a field of a list or database, that satisfy specified conditions<br/><br/></td><td>
+DVAR(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DSUM<br/><br/></td><td>
-Adds the numbers in the field (column) of records in a list or database that match the conditions you specify<br/><br/></td></tr>
+Adds the numbers in the field (column) of records in a list or database that match the conditions you specify<br/><br/></td><td>
+DSUM(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 <tr>
 <td>
 DPRODUCT<br/><br/></td><td>
-Multiplies the values in the field(column) of records in a list or database that match the conditions you specify<br/><br/></td></tr>
+Multiplies the values in the field(column) of records in a list or database that match the conditions you specify<br/><br/></td><td>
+DPRODUCT(database, field, criteria)<br/><br/>
+Where:<br/><br/>
+Database denotes the  is the range of cells that makes up the list or database. A database is a list of related data in which rows of related information are records, and columns of data are fields. The first row of the list contains labels for each column.<br/><br/>
+Field indicates which column is used in the function. Enter the column label enclosed between double quotation marks, such as "Age" or "Yield," or a number (without quotation marks) that represents the position of the column within the list: 1 for the first column, 2 for the second column, and so on.<br/><br/>
+Criteria is the range of cells that contains the conditions that you specify. You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label in which you specify a condition for the column.<br/><br/>
+Remarks:<br/><br/>
+You can use any range for the criteria argument, as long as it includes at least one column label and at least one cell below the column label for specifying the condition.<br/><br/>
+Although the criteria range can be located anywhere on the worksheet, do not place the criteria range below the list. If you add more information to the list, the new information is added to the first row below the list. If the row below the list is not blank, Microsoft Excel cannot add the new information.<br/><br/>
+Make sure that the criteria range does not overlap the list.<br/><br/>
+To perform an operation on an entire column in a database, enter a blank line below the column labels in the criteria range.<br/><br/></td></tr>
 </table>
 
 ## Date and Time Functions
@@ -74,99 +180,272 @@ Multiplies the values in the field(column) of records in a list or database that
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 DATE<br/><br/></td><td>
-Returns a date, from a user-supplied year, month and day<br/><br/></td></tr>
+Returns a date, from a user-supplied year, month and day.<br/><br/></td><td>
+DATE(year, month, day)<br/><br/>
+Where:<br/><br/>
+year can be one to four digits. Year is interpreted based on 1900.<br/><br/>
+When a year is between 0 (zero) and 1899 (inclusive), the value is added to 1900 to calculate the year. For example, Date (102, 11, 12) returns as November 12, 2002 (1900+102).<br/><br/>
+When a year is between 1900 and 9999 (inclusive), the value is used as it is, for example, Date(2002,11,12) returns as November 12, 2002.<br/><br/>
+month is a number representing the month of the year.<br/><br/>
+day is a number representing the day of the month.<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and November 12, 2002 is serial number 37572 because it is 37572 days after January 1, 1900.<br/><br/></td></tr>
 <tr>
 <td>
 DATEVALUE<br/><br/></td><td>
-Converts a text string showing a date, to an integer that represents the date in Excel's date-time code<br/><br/></td></tr>
+Converts a text string showing a date, to an integer that represents the date in Excel's date-time code.<br/><br/></td><td>
+DATEVALUE(date_text)<br/><br/>
+Where:<br/><br/>
+date_text is the text that represents a date as a formatted string. For example, 11/12/2002 or 12-Nov-2002 are text strings within quotation marks that represent dates. When the year portion of the date_text is omitted, DateValue uses the current year from your computer's built-in clock. The time information in the date_text is ignored.<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1, and November 12, 2002 is serial number 37572 because it is 37572 days after January 1, 1900.<br/><br/>
+Most functions automatically convert date values to serial numbers.<br/><br/></td></tr>
 <tr>
 <td>
 DAY<br/><br/></td><td>
-Returns the day (of the month) from a user-supplied date<br/><br/></td></tr>
+Returns the day (of the month) from a user-supplied date.<br/><br/></td><td>
+DAY(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,4,23) for the 23rd day of April, 2002.<br/><br/></td></tr>
 <tr>
 <td>
 DAYS360<br/><br/></td><td>
-Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months)<br/><br/></td></tr>
+Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months).<br/><br/></td><td>
+DAYS360(start_date, end_date, method)<br/><br/>
+Where:<br/><br/>
+start_date and end_date are the two dates between which you want to know the number of days. When start_date occurs after end_date, `Days360` returns a negative number. Dates should be entered by using the **Date** function or as results of other formulas or functions.<br/><br/>
+method is a logical value that specifies whether to use the U.S. or European method in the calculation. When method is:<br/><br/>
+False or omitted-The calculation uses the U.S. (NASD) method. When the starting date is the 31st of a month, it becomes equal to the 30th of the same month. When the ending date is the 31st of a month and the starting date is earlier than the 30th of a month, the ending date becomes equal to the 1st of the next month, otherwise the ending date becomes equal to the 30th of the same month.<br/><br/>
+True-The calculation uses the European method. Starting dates and ending dates that occur on the 31st of a month become equal to the 30th of the same month.<br/><br/></td></tr>
 <tr>
 <td>
 HOUR<br/><br/></td><td>
-Returns the hour part of a user-supplied time<br/><br/></td></tr>
+Returns the hour part of a user-supplied time.<br/><br/></td><td>
+HOUR(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".<br/><br/></td></tr>
 <tr>
 <td>
 MINUTE<br/><br/></td><td>
-Returns the minute part of a user-supplied time<br/><br/></td></tr>
+Returns the minute part of a user-supplied time.<br/><br/></td><td>
+MINUTE(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the time that contains the minute you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TIMEVALUE ("6:00 PM")).<br/><br/>
+Remarks:<br/><br/>
+Time values are a portion of a date value represented by a decimal number (for example, 12:00 PM is represented as 0.5).<br/><br/></td></tr>
 <tr>
 <td>
 SECOND<br/><br/></td><td>
-Returns the seconds part of a user-supplied time<br/><br/></td></tr>
+Returns the seconds part of a user-supplied time.<br/><br/></td><td>
+SECOND(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the time that contains the seconds you want to find.<br/><br/>
+Remarks:<br/><br/>
+Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).<br/><br/></td></tr>
 <tr>
 <td>
 MONTH<br/><br/></td><td>
-Returns the month from a user-supplied date<br/><br/></td></tr>
+Returns the month from a user-supplied date.<br/><br/></td><td>
+MONTH(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the date of the month you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,11,12) for the 12th day of November, 2002.<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.<br/><br/></td></tr>
 <tr>
 <td>
 NOW<br/><br/></td><td>
-Returns the current date & time<br/><br/></td></tr>
+Returns the current date & time.<br/><br/></td><td>
+NOW( )<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900<br/><br/>
+Numbers to the right of the decimal point in the serial number represent the time; and numbers to the left represent the date. For example, the serial number .5 represents the time 12:00 noon.<br/><br/></td></tr>
 <tr>
 <td>
 TIME<br/><br/></td><td>
-Returns a time, from a user-supplied hour, minute and second<br/><br/></td></tr>
+Returns a time, from a user-supplied hour, minute and second.<br/><br/></td><td>
+TIME(hour, minute, second)<br/><br/>
+Where:<br/><br/>
+hour is a number from 0 (zero) to 23 representing the hour.<br/><br/>
+minute is a number from 0 to 59 representing the minute.<br/><br/>
+second is a number from 0 to 59 representing the second.<br/><br/></td></tr>
 <tr>
 <td>
 TIMEVALUE<br/><br/></td><td>
-Converts a text string showing a time, to a decimal that represents the time in Excel<br/><br/></td></tr>
+Converts a text string showing a time, to a decimal that represents the time in Excel.<br/><br/></td><td>
+TIMEVALUE(time_text)<br/><br/>
+Where:<br/><br/>
+time_text is a text string that represents a time as a formatted string. For example, "6:45 PM" and "18:45" text strings within quotation marks that represent time.<br/><br/>
+Remarks:<br/><br/>
+Date information in time_text is ignored.<br/><br/></td></tr>
 <tr>
 <td>
 TODAY<br/><br/></td><td>
-Returns today's date<br/><br/></td></tr>
+Returns today's date.<br/><br/></td><td>
+TODAY( )<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.<br/><br/></td></tr>
 <tr>
 <td>
 WEEKDAY<br/><br/></td><td>
-Returns an integer representing the day of the week for a supplied date<br/><br/></td></tr>
+Returns an integer representing the day of the week for a supplied date.<br/><br/></td><td>
+WEEKDAY(serial_number,return_type)<br/><br/>
+Where:<br/><br/>
+serial_number is a sequential number that represents the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date (2008, 5, 23) for the 23rd day of May 2008.<br/><br/>
+return_type is a number that determines the type of return value.<br/><br/>
+<table>
+
+<tr>
+
+<th>
+
+<b>Return type  </b></th><th>
+
+<b>Number returned</b></th></tr>
+
+<tr>
+
+<td>
+
+1 or omitted       </td><td>
+
+Numbers 1 (Sunday) through 7 (Saturday).</td></tr>
+
+<tr>
+
+<td>
+
+2</td><td>
+
+Numbers 1 (Monday) through 7 (Sunday).</td></tr>
+
+<tr>
+
+<td>
+
+3</td><td>
+
+Numbers 0 (Monday) through 6 (Sunday).</td></tr>
+
+</table>
+
+<br/><br/></td></tr>
 <tr>
 <td>
 YEAR<br/><br/></td><td>
-Returns the year from a user-supplied date<br/><br/></td></tr>
+Returns the year from a user-supplied date.<br/><br/></td><td>
+YEAR(serial_number)<br/><br/>
+Where:<br/><br/>
+serial_number is the date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002.<br/><br/>
+Remarks:<br/><br/>
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.<br/><br/></td></tr>
 <tr>
 <td>
 DAYS<br/><br/></td><td>
-Calculates the number of days between 2 dates<br/><br/></td></tr>
+Calculates the number of days between 2 dates.<br/><br/></td><td>
+DAYS(endDate, startDate)<br/><br/>
+Where:<br/><br/>
+endDate and startDate are the two dates between which you want to know the number of days.<br/><br/></td></tr>
 <tr>
 <td>
 EDATE<br/><br/></td><td>
-Returns a date that is the specified number of months before or after an initial supplied start date<br/><br/></td></tr>
+Returns a date that is the specified number of months before or after an initial supplied start date.<br/><br/></td><td>
+EDATE( startDate, Months )<br/><br/>
+Where:<br/><br/>
+startDate is the initial date from where to count the number of months.<br/><br/>
+Months is the number of months to add to (or subtract from) the startDate.<br/><br/>
+Remarks:<br/><br/>
+`#VALUE!` occurs when the supplied startDate is not a valid date.<br/><br/>
+`#VALUE!` occurs when the supplied Months argument is non-numeric.<br/><br/></td></tr>
 <tr>
 <td>
 EOMONTH<br/><br/></td><td>
-Returns a date that is the last day of the month which is a specified number of months before or after an initial supplied start date<br/><br/></td></tr>
+Returns a date that is the last day of the month which is a specified number of months before or after an initial supplied start date.<br/><br/></td><td>
+EOMONTH(startDate, Months)<br/><br/>
+Where:<br/><br/>
+startDate is the initial date.<br/><br/>
+Months is the number of months to add to (or subtract from) the startDate before returning the last day of the resulting month. <br/><br/>
+Remarks:<br/><br/>
+`#VALUE!` occurs when any of the supplied argument is not a numeric value. <br/><br/>
+`#NUM!` occurs when the supplied startDate is not a valid date.<br/><br/>
+`#NUM!` occurs when the supplied startDate plus the value of the months argument is not a valid date.<br/><br/></td></tr>
 <tr>
 <td>
 ISOWEEKNUM<br/><br/></td><td>
-Returns the ISO week number of the year for a given date<br/><br/></td></tr>
+Returns the ISO week number of the year for a given date.<br/><br/></td><td>
+ISOWEEKNUM( DateTime)<br/><br/>
+Where:<br/><br/>
+DateTime is used for date and time calculation.<br/><br/>
+Remarks:<br/><br/>
+`#NUM!` occurs when the date argument is not a valid number.<br/><br/>
+`#VALUE!` occurs when the date argument is not a valid date type.<br/><br/></td></tr>
 <tr>
 <td>
 NETWORKDAYS.INTL<br/><br/></td><td>
-Returns the number of whole network days (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
+Returns the number of whole network days (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days.<br/><br/></td><td>
+NETWORKDAYS.INTL(startDate, endDate))<br/><br/>
+Where:<br/><br/>
+startDate is the start of the period where days are counted.<br/><br/>
+endDate is the end of the period where days are counted.<br/><br/>
+Remarks:<br/><br/>
+`#VALUE!` occurs when the supplied startDate and endDate are not valid dates.<br/><br/></td></tr>
 <tr>
 <td>
 WEEKNUM<br/><br/></td><td>
-Returns an integer representing the week number (from 1 to 53) of the year from a user-supplied date<br/><br/></td></tr>
+Returns an integer representing the week number (from 1 to 53) of the year from a user-supplied date.<br/><br/></td><td>
+WEEKNUM( serialNum, [returnType] )<br/><br/>
+Where:<br/><br/>
+serialNum is the date that you want to return the week number for.<br/><br/>
+[returnType] is an optional argument that specifies which numbering system should be used and which weekday should be treated as the start of the week.<br/><br/>
+Remarks:<br/><br/>
+`#VALUE!` occurs when the supplied serialNum cannot be recognized as a numeric value or a date.<br/><br/>
+`#NUM!` occurs when the supplied [returnType] argument is not one of the above listed permitted values. <br/><br/>
+`#NUM!` occurs when the supplied serialNum argument is numeric, but is out of range for the current date base.<br/><br/></td></tr>
 <tr>
 <td>
 WORKDAY<br/><br/></td><td>
-Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date<br/><br/></td></tr>
+Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date.<br/><br/></td><td>
+WORKDAY(startDate, Days, [holidays])<br/><br/>
+Where:<br/><br/>
+startDate is the initial date from which to count the number of workdays.<br/><br/>
+Days are number of workdays to add onto startDate.<br/><br/>
+[holidays] is an optional argument, which specifies an array of dates that are not to be counted as working days.<br/><br/>
+Remarks:<br/><br/>
+`#NUM!` occurs when the supplied startDate plus the supplied days argument results in an invalid date.<br/><br/>
+`#VALUE!` occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates, when the supplied days argument is non-numeric.<br/><br/></td></tr>
 <tr>
 <td>
 WORKDAY.INTL<br/><br/></td><td>
-Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date, using supplied parameters to specify weekend days<br/><br/></td></tr>
+Returns a date that is a supplied number of working days (excluding weekends & holidays) ahead of a given start date, using supplied parameters to specify weekend days.<br/><br/></td><td>
+WORKDAY.INTL (startDate, days, [weekend], [holidays])<br/><br/>
+Where:<br/><br/>
+startDate is the initial date from which to count the number of workdays. <br/><br/>
+days are number of workdays to add onto startDate.<br/><br/>
+[weekend] is an optional argument that specifies the weekdays to be counted as weekends.<br/><br/>
+[holidays] is an optional argument that specifies an array of dates that are not to be counted as working days.<br/><br/>
+Remarks:<br/><br/>
+`#NUM!` occurs when the supplied startDate plus the supplied days argument results in an invalid date.<br/><br/>
+`#NUM!` occurs when the supplied [weekend] argument is invalid (see above explanation of this argument).<br/><br/>
+`#VALUE!` occurs when the supplied startDate or any of the value in the supplied [holidays] array is not valid dates.<br/><br/>
+`#VALUE!` occurs when the supplied days argument is non-numeric.<br/><br/></td></tr>
 <tr>
 <td>
 YEARFRAC<br/><br/></td><td>
-Calculates the fraction of the year represented by the number of whole days between two dates<br/><br/></td></tr>
+Calculates the fraction of the year represented by the number of whole days between two dates.<br/><br/></td><td>
+YEARFRAC(start_date, end_date, [basis])<br/><br/>
+Where:<br/><br/>
+Start_date denotes a date that represents the start date.<br/><br/>
+End_date  denotes a date that represents the end date.<br/><br/>
+Basis  denotes the type of day count basis to use.<br/><br/>
+Remarks:<br/><br/>
+excel stores dates as sequential serial numbers so they can be used in calculations. By default, January 1, 1900 is serial number 1, and January 1, 2018 is serial number 43101 because it is 43,101 days after January 1, 1900.<br/><br/>
+all arguments are truncated to integers.<br/><br/>
+start_date or end_date are not valid dates, it returns the #VALUE! error value.<br/><br/>
+basis < 0 or if basis > 4, it returns the #NUM! error value.<br/><br/></td></tr>
 </table>
 
 ## Engineering Functions
@@ -606,51 +885,100 @@ Tests if a supplied cell contains a formula and if so, returns TRUE; Otherwise, 
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 AND<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise.<br/><br/></td><td>
+AND(logical1, logical2, ...)<br/><br/>
+Where:<br/><br/>
+logical1, logical2 ... are multiple conditions to be tested for `true` or `false`.<br/><br/>
+Remarks:<br/><br/>
+The arguments must evaluate to logical values (True or False).<br/><br/>
+When an argument does not evaluate to True or false, those values are ignored.<br/><br/>
+There must be at least one value in the argument list.<br/><br/></td></tr>
 <tr>
 <td>
 OR<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise.<br/><br/></td><td>
+OR(logical1, logical2, ...)<br/><br/>
+Where:<br/><br/>
+logical1, logical2 ... are conditions to test that can be either `True` or `False`.<br/><br/>
+Remarks:<br/><br/>
+The arguments must evaluate to logical values such as `True` or `False` or in arrays or references that contain logical values.<br/><br/></td></tr>
 <tr>
 <td>
 IF<br/><br/></td><td>
-Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE<br/><br/></td></tr>
+Tests a user-defined condition and returns one result if the condition is TRUE, and another result if the condition is FALSE.<br/><br/></td><td>
+IF(logical_test, value_if_true, value_if_false)<br/><br/>
+Where:<br/><br/>
+logical_test is any value or expression that can be evaluated to `True` or `False`.<br/><br/>
+value_if_true is the value that is returned if a logical_test is `True`.<br/><br/>
+value_if_false is the value that is returned if a logical_test is `False`.<br/><br/></td></tr>
 <tr>
 <td>
 IFERROR<br/><br/></td><td>
-Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td></tr>
+Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td><td>
+IFERROR (value, value_error)<br/><br/>
+Where:<br/><br/>
+`value` is the required to check the error.<br/><br/>
+`value_error` is the required and returns when the value has an error.<br/><br/>
+When the value_error is an empty cell, then the function takes the error value as empty string.  <br/><br/></td></tr>
 <tr>
 <td>
 FALSE<br/><br/></td><td>
-Simply returns the logical value FALSE<br/><br/></td></tr>
+Simply returns the logical value FALSE.<br/><br/></td><td>
+FALSE(stringvalue)<br/><br/>
+Where:<br/><br/>
+stringvalue is to provide an empty string.<br/><br/></td></tr>
 <tr>
 <td>
 TRUE<br/><br/></td><td>
-Simply returns the logical value TRUE<br/><br/></td></tr>
+Simply returns the logical value TRUE.<br/><br/></td><td>
+TRUE(stringvalue)<br/><br/>
+Where:<br/><br/>
+stringvalue is to provide an empty string.<br/><br/></td></tr>
 <tr>
 <td>
 NOT<br/><br/></td><td>
-Returns a logical value that is the opposite of a user supplied logical value or expression<br/><br/></td></tr>
+Returns a logical value that is the opposite of a user supplied logical value or expression.<br/><br/></td><td>
+NOT(logical)<br/><br/>
+Where:<br/><br/>
+logical is a value or expression that can be evaluated to `True` or `False`.<br/><br/></td></tr>
 <tr>
 <td>
 IFNA<br/><br/></td><td>
-Tests if an expression returns the #N/A error and if so, returns an alternative specified value; Otherwise the function returns the value of the supplied expression<br/><br/></td></tr>
+Tests if an expression returns the #N/A error and if so, returns an alternative specified value; Otherwise the function returns the value of the supplied expression.<br/><br/></td><td>
+IFNA (Formula_value, value_if_na)<br/><br/>
+Where:<br/><br/>
+`Formula_value`: This value is required and the argument that is checked for the #N/A error value.<br/><br/>
+`value_if_na`: This value is required and the value returned when the formula evaluates to the #N/A error value.<br/><br/></td></tr>
 <tr>
 <td>
 IFS<br/><br/></td><td>
-Tests a number of supplied conditions and returns a result corresponding to the first condition that evaluates to TRUE<br/><br/></td></tr>
+Tests a number of supplied conditions and returns a result corresponding to the first condition that evaluates to TRUE.<br/><br/></td><td>
+IFS( condition1, return1 [,condition2, return2] ... [,condition127, return127] )<br/><br/>
+Where:<br/><br/>
+condition1, condition2, ... condition127 denotes the condition that you want to test. There can be up to 127 conditions entered.<br/><br/>
+return1, return2, ... return127 denotes the <br/><br/></td></tr>
 <tr>
 <td>
 SWITCH<br/><br/></td><td>
-Compares a number of supplied values to a supplied test expression and returns a result corresponding to the first value that matches the test expression<br/><br/></td></tr>
+Compares a number of supplied values to a supplied test expression and returns a result corresponding to the first value that matches the test expression.<br/><br/></td><td>
+SWITCH ( expression, value1, result1, value2, result2, ... value_n, result_n [, default] )<br/><br/>
+Where:<br/><br/>
+value1, value2, ... value_n denotes a list of values that are compared to expression. The SWITCH function is looking for the first value that matches the expression.<br/><br/>
+result1, result2, ... result_n denotes a list of results. The SWITCH function returns the corresponding result when a value matches expression.<br/><br/>
+default is return if expression does not match any of the values (value1, value2, ... value_n).<br/><br/></td></tr>
 <tr>
 <td>
 XOR<br/><br/></td><td>
-Returns a logical Exclusive Or of all arguments<br/><br/></td></tr>
+Returns a logical Exclusive Or of all arguments.<br/><br/></td><td>
+XOR (logical_value1, logical_value2…)<br/><br/>
+Where:<br/><br/>
+Logical_value1: This is a required value and can be either `true` or `false`, and can be logical values, arrays, or references.<br/><br/>
+When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.<br/><br/></td></tr>
 </table>
 
 ## Lookup & Reference Functions
