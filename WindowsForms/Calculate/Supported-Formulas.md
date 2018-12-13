@@ -1665,139 +1665,272 @@ Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 <tr>
 <th>
 Name<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Description<br/><br/></th><th>
+Syntax<br/><br/></th></tr>
 <tr>
 <td>
 LEFT<br/><br/></td><td>
-Returns a specified number of characters from the start of a supplied text string<br/><br/></td></tr>
+Returns a specified number of characters from the start of a supplied text string<br/><br/></td><td>
+LEFT(text,bytes)<br/><br/>
+Where:<br/><br/>
+text is a string that contains the characters that you want to return.<br/><br/>
+bytes specify the number of characters<br/><br/></td></tr>
 <tr>
 <td>
 BAHTTEXT<br/><br/></td><td>
-Converts a number, plus the suffix "Baht" into Thai text<br/><br/></td></tr>
+Converts a number, plus the suffix "Baht" into Thai text<br/><br/></td><td>
+BAHTTEXT(number)<br/><br/>
+Where:<br/><br/>
+Number denotes a number you want to convert to text, or a reference to a cell containing a number, or a formula that evaluates to a number.<br/><br/></td></tr>
 <tr>
 <td>
 EXACT<br/><br/></td><td>
-Tests if two supplied text strings are exactly the same and if so, returns TRUE; Otherwise, returns FALSE. (case-sensitive)<br/><br/></td></tr>
+Tests if two supplied text strings are exactly the same and if so, returns TRUE; Otherwise, returns FALSE. (case-sensitive).<br/><br/> </td><td>
+EXACT(value1,value2)<br/><br/>
+Where:<br/><br/>
+value1 is the first value you want to compare.<br/><br/>
+value2 is the second value you want to compare.<br/><br/></td></tr>
 <tr>
 <td>
 LEN<br/><br/></td><td>
-Returns the length of a supplied text string<br/><br/></td></tr>
+Returns the length of a supplied text string.<br/><br/></td><td>
+LEN(text)<br/><br/>
+Where:<br/><br/>
+Text denotes the text whose length you want to find. Spaces count as characters.<br/><br/></td></tr>
 <tr>
 <td>
 TRUNC<br/><br/></td><td>
-Truncates a number to an integer removing decimal part or fractional part <br/><br/></td></tr>
+Truncates a number to an integer removing decimal part or fractional part <br/><br/></td><td>
+TRUNC(number, [num_digits])<br/><br/>
+Where:<br/><br/>
+Number denotes the number you want to truncate.<br/><br/>
+Num_digits  denotes a number specifying the precision of the truncation. The default value for num_digits is 0 (zero).<br/><br/></td></tr>
 <tr>
 <td>
 MID<br/><br/></td><td>
-Returns a specified number of characters from the middle of a supplied text string<br/><br/></td></tr>
+Returns a specified number of characters from the middle of a supplied text string.<br/><br/></td><td>
+MID(text,startNum,numBytes)<br/><br/>
+Where:<br/><br/>
+text is a string that contains the characters that you want to return.<br/><br/>
+startNum is the position of the first character that you want to extract in text.<br/><br/>
+numBytes specifies the number of characters you want in bytes.<br/><br/></td></tr>
 <tr>
 <td>
 RIGHT<br/><br/></td><td>
-Returns a specified number of characters from the end of a supplied text string<br/><br/></td></tr>
+Returns a specified number of characters from the end of a supplied text string.<br/><br/></td><td>
+RIGHT(string, num)<br/><br/>
+Where:<br/><br/>
+string contains the characters you want to return. <br/><br/>
+num specifies the number of characters.<br/><br/></td></tr>
 <tr>
 <td>
 VALUE<br/><br/></td><td>
-Converts a text string into a numeric value<br/><br/></td></tr>
+Converts a text string into a numeric value.<br/><br/></td><td>
+VALUE(range)<br/><br/>
+Where:<br/><br/>
+range is the string that contains the date or a number.<br/><br/></td></tr>
 <tr>
 <td>
 DOLLAR<br/><br/></td><td>
-Converts a supplied number into text, using a currency format<br/><br/></td></tr>
+Converts a supplied number into text, using a currency format.<br/><br/></td><td>
+DOLLAR(number, decimal_places)<br/><br/>
+Where:<br/><br/>
+number is the number you want to convert to text.<br/><br/>
+decimal_places is the number of digits in decimal places you want to display. The value is rounded accordingly.<br/><br/></td></tr>
 <tr>
 <td>
 FIXED<br/><br/></td><td>
-Rounds a supplied number to a specified number of decimal places, and then converts this into text<br/><br/></td></tr>
+Rounds a supplied number to a specified number of decimal places, and then converts this into text.<br/><br/></td><td>
+FIXED(number, [decimals], [no_commas])<br/><br/>
+Where:<br/><br/>
+Number (Required) denotes the number you want to round and convert to text.<br/><br/>
+Decimals (Optional) denotes the number of digits to the right of the decimal point.<br/><br/>
+No_commas(Optional) denotes the logical value that, if TRUE, prevents FIXED from including commas in the returned text.<br/><br/></td></tr>
 <tr>
 <td>
 LOWER<br/><br/></td><td>
-Converts all characters in a supplied text string to lower case<br/><br/></td></tr>
+Converts all characters in a supplied text string to lower case.<br/><br/></td><td>
+LOWER(text)<br/><br/>
+Where:<br/><br/>
+text is the string you want to convert to lowercase.<br/><br/></td></tr>
 <tr>
 <td>
 UPPER<br/><br/></td><td>
-Converts all characters in a supplied text string to upper case<br/><br/></td></tr>
+Converts all characters in a supplied text string to upper case.<br/><br/></td><td>
+UPPER(text)<br/><br/>
+Where:<br/><br/>
+text is the string you want to convert to uppercase.<br/><br/></td></tr>
 <tr>
 <td>
 TEXT<br/><br/></td><td>
-Converts a supplied value into text, using a user-specified format<br/><br/></td></tr>
+Converts a supplied value into text, using a user-specified format.<br/><br/></td><td>
+TEXT(value, format_text)<br/><br/>
+Where:<br/><br/>
+value is a numeric value to convert to text.<br/><br/>
+format_text is a format text to apply to the supplied value.<br/><br/></td></tr>
 <tr>
 <td>
 TEXTJOIN<br/><br/></td><td>
-Joins together two or more text strings, separated by a delimiter<br/><br/></td></tr>
+Joins together two or more text strings, separated by a delimiter<br/><br/></td><td>
+TEXTJOIN(delimiter, ignore_empty, text1, [text2], …)<br/><br/>
+Where:<br/><br/>
+delimiter (required)  denotes a text string, either empty, or one or more characters enclosed by double quotes, or a reference to a valid text string. If a number is supplied, it will be treated as text.<br/><br/>
+ignore_empty(required) is TRUE, ignores empty cells.<br/><br/>
+text1 (required) is a text item to be joined. A text string, or array of strings, such as a range of cells.<br/><br/>
+[text2, ...] (optional) is a additional text items to be joined. There can be a maximum of 252 text arguments for the text items, including text1. Each can be a text string, or array of strings, such as a range of cells.<br/><br/>
+Remarks:<br/><br/>
+If the resulting string exceeds 32767 characters (cell limit), TEXTJOIN returns the #VALUE! error.<br/><br/></td></tr>
 <tr>
 <td>
 TRIM<br/><br/></td><td>
-Removes duplicate spaces, and spaces at the start and end of a text string<br/><br/></td></tr>
+Removes duplicate spaces, and spaces at the start and end of a text string.<br/><br/></td><td>
+Where:<br/><br/>
+TRIM(text)<br/><br/>
+text is the text value for which you want to remove the leading and the trailing spaces.<br/><br/></td></tr>
 <tr>
 <td>
 CLEAN<br/><br/></td><td>
-Removes all non-printable characters from a supplied text string<br/><br/></td></tr>
+Removes all non-printable characters from a supplied text string.<br/><br/></td><td>
+CLEAN(Text)<br/><br/>
+Where:<br/><br/>
+Text: Required. String or text from which to remove non-printable characters.<br/><br/></td></tr>
 <tr>
 <td>
 CONCATENATE<br/><br/></td><td>
-Joins together two or more text strings<br/><br/></td></tr>
+Joins together two or more text strings.<br/><br/></td><td>
+CONCATENATE (text1, text2,...)<br/><br/>
+Where:<br/><br/>
+text1, text2 ... are text items to be joined into a single text item. The text items can be text strings, numbers, or single-cell references.<br/><br/></td></tr>
 <tr>
 <td>
 SUBSTITUTE<br/><br/></td><td>
-Substitutes all occurrences of a search text string, within an original text string, with the supplied replacement text<br/><br/></td></tr>
+Substitutes all occurrences of a search text string, within an original text string, with the supplied replacement text.<br/><br/></td><td>
+SUBSTITUTE(text, old_text, new_text, instance_num)<br/><br/>
+Where:<br/><br/>
+Text is the text or the reference to a cell containing text in which you want to substitute characters.<br/><br/>
+Old_text is the text you want to replace.<br/><br/>
+New_text is the text you want to replace old_text with.<br/><br/>
+Instance_num specifies the occurrence of old_text you want to replace with the new_text. When you specify instance_num, only that instance of old_text is replaced. Otherwise, every occurrence of old_text in text is changed to new_text.<br/><br/></td></tr>
 <tr>
 <td>
 T<br/><br/></td><td>
-Tests whether a supplied value is text and if so, returns the supplied text; If not, returns an empty text string.<br/><br/></td></tr>
+Tests whether a supplied value is text and if so, returns the supplied text; If not, returns an empty text string.<br/><br/></td><td>
+T(value)<br/><br/>
+Where:<br/><br/>
+value is a required value to be checked.<br/><br/>
+When the value is not a number or logical value, then the function returns as an empty string.<br/><br/></td></tr>
 <tr>
 <td>
 CODE<br/><br/></td><td>
-Returns the numeric code for the first character of a supplied string<br/><br/></td></tr>
+Returns the numeric code for the first character of a supplied string.<br/><br/></td><td>
+CODE(name)<br/><br/>
+Where:<br/><br/>
+name is the text for which you want the code of the first character.<br/><br/></td></tr>
 <tr>
 <td>
 FINDB<br/><br/></td><td>
-Returns the position of a supplied character or text string from within a supplied text string (case-sensitive)<br/><br/></td></tr>
+Returns the position of a supplied character or text string from within a supplied text string (case-sensitive).<br/><br/></td><td>
+FINDB(find_text, within_text, [start_num])<br/><br/>
+Where:<br/><br/>
+Find_text denotes the text you want to find.<br/><br/>
+Within_text denotes the text containing the text you want to find.<br/><br/>
+Start_num specifies the character at which to start the search. The first character in within_text is character number 1. If you omit start_num, it is assumed to be 1.<br/><br/></td></tr>
 <tr>
 <td>
 LEFTB<br/><br/></td><td>
-Returns a specified number of characters from the start of a supplied text string<br/><br/></td></tr>
+Returns a specified number of characters from the start of a supplied text string.<br/><br/></td><td>
+LEFTB(text, [num_bytes])<br/><br/>
+Where:<br/><br/>
+Text denotes the text string that contains the characters you want to extract.<br/><br/>
+Num_bytes specifies the number of characters you want LEFTB to extract, based on bytes.<br/><br/></td></tr>
 <tr>
 <td>
 LENB<br/><br/></td><td>
-Returns the length of a supplied text string<br/><br/></td></tr>
+Returns the length of a supplied text string.<br/><br/></td><td>
+LENB(text)<br/><br/>
+Where:<br/><br/>
+Text denotes the text whose length you want to find. Spaces count as characters.<br/><br/></td></tr>
 <tr>
 <td>
 MINB<br/><br/></td><td>
-Returns the smallest value in a set of values. does not ignore logical text and values<br/><br/></td></tr>
+Returns the smallest value in a set of values. does not ignore logical text and values.<br/><br/></td><td>
+MIDB(text, start_num, num_bytes)<br/><br/>
+Where:<br/><br/>
+Text denotes the text string containing the characters you want to extract.<br/><br/>
+Start_num denotes the position of the first character you want to extract in text. The first character in text has start_num 1, and so on.<br/><br/>
+Num_bytes specifies the number of characters you want MIDB to return from text, in bytes.<br/><br/></td></tr>
 <tr>
 <td>
 RIGHTB<br/><br/></td><td>
-Returns a specified number of characters from the end of a supplied text string<br/><br/></td></tr>
+Returns a specified number of characters from the end of a supplied text string.<br/><br/></td><td>
+RIGHTB(text,[num_bytes])<br/><br/>
+Where:<br/><br/>
+Text denotes the text string containing the characters you want to extract.<br/><br/>
+Num_bytes specifies the number of characters you want RIGHTB to extract, based on bytes.<br/><br/></td></tr>
 <tr>
 <td>
 NUMBERVALUE<br/><br/></td><td>
-Converts text to a number, in a locale-independent way<br/><br/></td></tr>
+Converts text to a number, in a locale-independent way.<br/><br/></td><td>
+NUMBERVALUE(Text,[Decimal_separator],[Group_separator])<br/><br/>
+Where:<br/><br/>
+Text denotes the text to convert to a number..<br/><br/>
+Decimal_separator denotes the character used to separate the integer and fractional part of the result.<br/><br/>
+Group_separator denotes the character used to separate groupings of numbers, such as thousands from hundreds and millions from thousands.<br/><br/></td></tr>
 <tr>
 <td>
 PROPER<br/><br/></td><td>
-Converts all characters in a supplied text string to proper case (i.e. letters that do not follow another letter are upper case and all other characters are lower case)<br/><br/></td></tr>
+Converts all characters in a supplied text string to proper case (i.e. letters that do not follow another letter are upper case and all other characters are lower case).<br/><br/></td><td>
+PROPER(text)<br/><br/>
+Where:<br/><br/>
+Text denotes the text enclosed in quotation marks, a formula that returns text, or a reference to a cell containing the text you want to partially capitalize.<br/><br/></td></tr>
 <tr>
 <td>
 CHAR<br/><br/></td><td>
-Returns the character that corresponds to a supplied numeric value<br/><br/></td></tr>
+Returns the character that corresponds to a supplied numeric value.<br/><br/></td><td>
+CHAR(number)<br/><br/>
+Where:<br/><br/>
+Number denotes the number between 1 and 255 specifying which character you want. The character is from the character set used by your computer.<br/><br/></td></tr>
 <tr>
 <td>
 REPLACE<br/><br/></td><td>
-Replaces all or part of a text string with another string (from a user supplied position)<br/><br/></td></tr>
+Replaces all or part of a text string with another string (from a user supplied position).<br/><br/></td><td>
+REPLACE(old_text, start_num, num_chars, new_text)<br/><br/>
+Where:<br/><br/>
+oldText is the text that needs to be replaced.<br/><br/>
+startNum is the position of the character in oldText.<br/><br/>
+numChars is the number of characters needs to be replaced.<br/><br/>
+newText is the text that replaces the character in old text.<br/><br/></td></tr>
 <tr>
 <td>
 REPT<br/><br/></td><td>
-Returns a string consisting of a supplied text string, repeated a specified number of times<br/><br/></td></tr>
+Returns a string consisting of a supplied text string, repeated a specified number of times.<br/><br/></td><td>
+REPT(text, number_times)<br/><br/>
+Where:<br/><br/>
+Text denotes the text you want to repeat.<br/><br/>
+Number_times denotes a positive number specifying the number of times to repeat text.<br/><br/></td></tr>
 <tr>
 <td>
 SEARCHB<br/><br/></td><td>
-Returns the position of a supplied character or text string from within a supplied text string (non-case-sensitive)<br/><br/></td></tr>
+Returns the position of a supplied character or text string from within a supplied text string (non-case-sensitive).<br/><br/></td><td>
+SEARCHB(find_text,within_text,[start_num])<br/><br/>
+Where:<br/><br/>
+find_text denotes the text that you want to find.<br/><br/>
+within_text denotes the text in which you want to search for the value of the find_text argument<br/><br/>
+start_num  denotes the character number in the within_text argument at which you want to start searching.<br/><br/></td></tr>
 <tr>
 <td>
 UNICHAR<br/><br/></td><td>
-Returns the Unicode character that is referenced by the given numeric value<br/><br/></td></tr>
+Returns the Unicode character that is referenced by the given numeric value.<br/><br/></td><td>
+UNICHAR(number)<br/><br/>
+Where:<br/><br/>
+Number denotes the number is the Unicode number that represents the character.<br/><br/></td></tr>
 <tr>
 <td>
 UNICODE<br/><br/></td><td>
-Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
+Returns the number (code point) corresponding to the first character of a supplied text string.<br/><br/></td><td>
+UNICODE(text)<br/><br/>
+Where:<br/><br/>
+Text denotes the text is the character for which you want the Unicode value.<br/><br/></td></tr>
 </table>
 
 ## Web Functions
