@@ -1145,7 +1145,7 @@ Syncfusion.GridConverter.Windows<br/>
 Syncfusion.XlsIO.Base
 </td>
 <td>
-Syncfusion.GridConverter.Windows
+Syncfusion.PivotConverter.Windows
 </td>
 </tr>
 </table>
@@ -1220,7 +1220,7 @@ Syncfusion.GridConverter.Windows<br/>
 Syncfusion.XlsIO.Base
 </td>
 <td>
-Syncfusion.GridConverter.Windows
+Syncfusion.PivotConverter.Windows
 </td>
 </tr>
 </table>
@@ -1371,7 +1371,7 @@ Syncfusion.HtmlConverter.Base
 
 </td>
 <td>
-Syncfusion.HtmlConverter.Base
+Syncfusion.HtmlToPdfConverter.IE.WinForms
 </td>
 </tr>
 </table>
@@ -1931,7 +1931,7 @@ Syncfusion.Compression.Base<br/>
 Syncfusion.Pdf.Base
 </td>
 <td>
-Syncfusion.Pdf.Base
+Syncfusion.Pdf.WinForms
 
 </td>
 </tr>
@@ -2029,7 +2029,7 @@ Syncfusion.XlsIO.Base
 
 </td>
 <td>
-Syncfusion.PivotConverter.Windows
+Syncfusion.PivotTableExport.WinForms
 </td>
 </tr>
 </table>
@@ -2057,7 +2057,7 @@ Syncfusion.Tools.Windows
 
 </td>
 <td>
-Syncfusion.PivotAnalysis.Windows
+Syncfusion.PivotTable.WinForms
 </td>
 </tr>
 </table>
@@ -2080,7 +2080,7 @@ Syncfusion.XlsIO.Base
 
 </td>
 <td>
-Syncfusion.PivotConverter.Windows
+Syncfusion.PivotTableExport.WinForms
 </td>
 </tr>
 </table>
@@ -2570,7 +2570,7 @@ Syncfusion.XlsIO.Base<br/>
 Syncfusion.Pdf.Base
 </td>
 <td>
-Syncfusion.SfDataGridConverter.WinForms
+Syncfusion.DataGridExport.WinForms
 </td>
 </tr>
 </table>
