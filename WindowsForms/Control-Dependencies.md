@@ -1145,7 +1145,7 @@ Syncfusion.GridConverter.Windows<br/>
 Syncfusion.XlsIO.Base
 </td>
 <td>
-Syncfusion.PivotConverter.Windows
+Syncfusion.GridExport.WinForms
 </td>
 </tr>
 </table>
@@ -1220,7 +1220,7 @@ Syncfusion.GridConverter.Windows<br/>
 Syncfusion.XlsIO.Base
 </td>
 <td>
-Syncfusion.PivotConverter.Windows
+Syncfusion.GridExport.WinForms
 </td>
 </tr>
 </table>
