@@ -195,7 +195,7 @@ pdfViewerControl1.Load("Sample.pdf", "password")
 
 PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon clicking the Print button.
 
-![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
+![PrintDialog Window](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
 
 ### Silent Printing
 
@@ -466,7 +466,57 @@ Dim image() As Metafile = pdfViewerControl1.ExportAsMetafile(0, 3)
 
 Essential PdfViewerControl allows end users to search a given text in the PDF document. The search box will appear when Ctrl+F is pressed and searches the text in the PDF document as shown in the following figure.
 
-![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
+![Text Search in PDF Viewer WinForms](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img2.png)
+
+### Enable or disable highlighting all the searched text instances
+PDF Viewer allows you to enable or disable highlighting all the occurrences of the searched text instance in the PDF pages. 
+
+The following code example illustrates how to disable highlighting all the searched text instance.
+
+{% tabs %}
+{%highlight c#%}
+
+//Sets value to disable highlight all the occurrences of the searched text
+pdfViewer.TextSearchSettings.HighlightAllInstance = false;
+
+{%endhighlight%}
+
+{%highlight vb%}
+
+'Sets value to disable highlight all the occurrences of the searched text
+pdfViewer.TextSearchSettings.HighlightAllInstance = false
+
+{%endhighlight%}
+{% endtabs %}
+
+N>
+* By default, the PDF Viewer highlights all the occurrences of the searched text instance.
+
+### Customize the highlight color of found text instances
+PDF Viewer allows you to customize the color of the current searched text instance and all other occurrences. Refer to the following code example.
+
+{% tabs %}
+{%highlight c#%}
+
+//Sets color to highlight current occurrence of the searched text
+pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red;
+
+//Sets color to highlight all the occurrences of the searched text
+pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow;
+
+
+{%endhighlight%}
+
+{%highlight vb%}
+
+'Sets color to highlight current occurrence of the searched text
+pdfViewer.TextSearchSettings.CurrentInstanceColor = Color.Red
+
+'Sets color to highlight all the occurrences of the searched text
+pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow
+
+{%endhighlight%}
+{% endtabs %}
 
 The PdfViewerControl control also supports searching text in the PDF document with the help of the [FindText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~FindText.html) method which returns true when the text given is found in the document. The dictionary contains the page indices and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the PdfViewerControl control.
 
@@ -530,7 +580,7 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 
 The selected text can be copied by clicking Copy from the context menu, which appears when clicking right mouse button after the text is selected.
 
-![](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img3.png)
+![Copy Text](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img3.png)
 
 The selected text can also be copied using the keyboard shortcut Ctrl + C. 
 
