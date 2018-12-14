@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion DataManipulation
+title: DataManipulation | DataGrid | WinForms | Syncfusion
 description: This section explains about the data manipulation support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -235,9 +235,9 @@ orderInfoCollection.OrdersListDetails.Add(orderInfo)
 {% endtabs %}
 
 ## AddNewRow Support in Mater-Details View
-
 You can enable the AddNewRow in DetailsViewDataGrid by using the [GridViewDefinition.DataGrid] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridViewDefinition~DataGrid.html) property.
-### When Manually defining relations
+
+### When manually defining relations
 For manually defined relations, the properties can be directly set to the GridViewDefinition.DataGrid
 
 {% tabs %}
@@ -260,15 +260,16 @@ sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 {% endtabs %}
 
 ### When auto generating relations
-When the relation  is auto-generated,  you can get the  GridViewDefinition.DataGrid in the  AutoGeneratingRelations event handler to set the property.
+When the relation  is auto-generated,  you can get the  GridViewDefinition.DataGrid in the  [AutoGeneratingRelations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler to set the property.
 
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingRelations += sfDataGrid1_AutoGeneratingRelations;
+
 private void sfDataGrid1_AutoGeneratingRelations(object sender, Syncfusion.WinForms.DataGrid.Events.AutoGeneratingRelationsEventArgs e)
-        {
-            e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top;
-        }
+{
+   e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top;
+}
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid1. AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations 
