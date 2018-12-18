@@ -1296,7 +1296,7 @@ The `TabGroupCreating` event occurs before creating a new document tab group. Th
 
 * Orientation : Gets the orientation of newly created document tab group.
 
-* Cancel : Helps to cancel the tab group creation.  We can restrict document tab group creation based on orientation or target item.
+* Cancel : Helps to cancel the tab group creation. We can restrict document tab group creation based on orientation or target item.
 
 {% tabs %}
 
@@ -1329,7 +1329,7 @@ Private Sub DockingManager1_TabGroupCreating1(ByVal sender As Object, ByVal arg 
 
 ## TabGroupCreated event
 
-The `TabGroupCreated` event will be triggered after creating a new document tab group. The `TabGroupCreatedEventArgs` provides following event data for the `TabGroupCreated` event of docking manager. We can customize appearance and behavior of document tab groups using tab group instance provided by the `TabGroupCreated` event.
+The `TabGroupCreated` event will be occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides following event data for the `TabGroupCreated` event of docking manager. We can customize appearance and behavior of document tab groups using tab group instance provided by the `TabGroupCreated` event.
 
 * CurrentTabGroup : Gets the current document tab group of tab item which trigger tab group creation.
 
