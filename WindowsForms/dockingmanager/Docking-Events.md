@@ -666,7 +666,7 @@ End Sub
 
 {% endtabs %}
 
-![](Docking-Events_images/Docking-Events_img1.jpeg)
+![Dock window context menu item](Docking-Events_images/Docking-Events_img1.jpeg)
 
 ### DockMenuClick event
 
@@ -1287,6 +1287,110 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+## TabGroupCreating event
+
+The `TabGroupCreating` event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides following event data for the `TabGroupCreating` event of docking manager. 
+
+* TargetItem : Gets the target item which added as new document tab group.
+
+* Orientation : Gets the orientation of newly created document tab group.
+
+* Cancel : Helps to cancel the tab group creation.  We can restrict document tab group creation based on orientation or target item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void DockingManager1_TabGroupCreating(object sender, TabGroupCreatingEventArgs arg)
+{
+   if(arg.Orientation == Orientation.Horizontal)
+            {
+                arg.Cancel = true;
+            }
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_TabGroupCreating1(ByVal sender As Object, ByVal arg As TabGroupCreatingEventArgs)
+			'To cancel the tab group creation for Horizontal orientation
+			If arg.Orientation = Orientation.Horizontal Then
+				arg.Cancel = True
+			End If
+		End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## TabGroupCreated event
+
+The `TabGroupCreated` event will be triggered after creating a new document tab group. The `TabGroupCreatedEventArgs` provides following event data for the `TabGroupCreated` event of docking manager. We can customize appearance and behavior of document tab groups using tab group instance provided by the `TabGroupCreated` event.
+
+* CurrentTabGroup : Gets the current document tab group of tab item which trigger tab group creation.
+
+* PreviousTabGroup : Get the previous document tab group of tab item which trigger tab group creation.
+
+* TabGroups : Gets the collections of document tab groups in docking manager.
+
+* TargetItem : Gets the target item which added as new document tab group.
+
+* Orientation : Gets the orientation of newly created document tab group.
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+        private void DockingManager1_TabGroupCreated(object sender, Syncfusion.Windows.Forms.Tools.TabGroupCreatedEventArgs arg)
+        {
+          foreach(TabHost tab in arg.TabGroups)
+            {
+                if (tab.MDITabPanel == arg.CurrentTabGroup)
+                {
+                  // Customize  background of the active tab item of current tab group
+                    arg.CurrentTabGroup.ActiveTabColor = Color.Purple;
+                }
+
+                if(tab.MDITabPanel == arg.PreviousTabGroup)
+                {
+                   // Customize  background of the active tab item of previous tab group
+                    arg.PreviousTabGroup.ActiveTabColor = Color.Green;
+                }
+            }
+        }
+
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_TabGroupCreated(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.TabGroupCreatedEventArgs)
+		  For Each tab As TabHost In arg.TabGroups
+				If tab.MDITabPanel Is arg.CurrentTabGroup Then
+
+        'Customize  background of the active tab item of current tab group
+					arg.CurrentTabGroup.ActiveTabColor = Color.Purple
+				End If
+
+				If tab.MDITabPanel Is arg.PreviousTabGroup Then
+
+        'Customize  background of the active tab item of previous tab group
+					arg.PreviousTabGroup.ActiveTabColor = Color.Green
+				End If
+		  Next tab
+		End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tab group customization](TDI_Window_images/Tab_group_created.png) 
 
 ## Dock visibility
 
