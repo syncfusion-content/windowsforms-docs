@@ -867,49 +867,57 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 ## Customize document(TDI) window
 
-Document tab appearance can be customized using `DocumentWindowSettings` of docking manager. `DocumentWindowSettings` provides options to change tab background, foreground, font and much more.
+The appearance of document tab can be customized using the `DocumentWindowSettings` property of docking manager. DocumentWindowSettings provides options to change the tab background, foreground, font and much more.
 
 <table>
 <tr>
 <th>
-Docking manager property</th><th>
-Description</th></tr>
+Properties</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
-TabBackColor </td><td>
-This property helps to customize the header background color of inactive tab items in document window.</td></tr>
+{{ '[TabBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabBackColor.html)' | markdownify }}</td><td>
+ Customizes the header background color of inactive tab items in document window.</td></tr>
 <tr>
 <td>
-ActiveTabBackColor</td><td>
-This property helps to customize the header background color of active tab items in document window.</td></tr>
+{{ '[ActiveTabBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabBackColor.html)' | markdownify }}
+</td><td>
+Customizes the header background color of active tab items in document window.</td></tr>
 <tr>
 <td>
-TabForeColor</td><td>
-This property helps to customize the header foreground color of inactive tab items in the document window.</td></tr>
+{{ '[TabForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabForeColor.html)' | markdownify }}
+</td><td>
+ Customizes the header foreground color of inactive tab items in the document window.</td></tr>
 <tr>
 <td>
-ActiveTabForeColor</td><td>
-This property helps to customize the header foreground color of active tab item in the document window.</td></tr>
+{{ '[ActiveTabForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabForeColor.html)' | markdownify }}
+</td><td>
+Customizes the header foreground color of active tab item in the document window.</td></tr>
 <tr>
 <td>
-TabPanelBackColor</td><td>
-This property helps to customize the background color of tab panel in document window.</td></tr>
+{{ '[TabPanelBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabPanelBackColor.html)' | markdownify }}
+</td><td>
+Customizes the background color of tab panel in document window.</td></tr>
 <tr>
 <td>
-TabPanelBorderColor</td><td>
-This property helps to customize the border color of tab panel document window.</td></tr>
+{{ '[TabPanelBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabPanelBorderColor.html)' | markdownify }}
+</td><td>
+ Customizes the border color of tab panel in document window.</td></tr>
 <tr>
 <td>
-ActiveTabFont</td><td>
-This property helps to customize the header font of active tab items in document window.</td></tr>
+{{ '[ActiveTabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabFont.html)' | markdownify }}
+</td><td>
+ Customizes the header font of active tab items in document window.</td></tr>
 <tr>
 <td>
-TabFont</td><td>
-This property helps to customize the header font of inactive tab items in document window.</td></tr>
+{{ '[TabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabFont.html)' | markdownify }}
+</td><td>
+ Customizes the header font of inactive tab items in document window.</td></tr>
 <tr>
 <td>
-TabHeight</td><td>
-This property helps to customize the header height of tab items in document window. Maximum height is 60.</td></tr>
+{{ '[TabHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabHeight.html)' | markdownify }}
+</td><td>
+ Customizes the header height of tab items in document window. The maximum height is 60.</td></tr>
 </table>
 
 
@@ -942,7 +950,7 @@ this.dockingManager1.DocumentWindowSettings.TabPanelBorderColor = Color.Green;
 
 {% endtabs %}
 
-![Document window color customization](Appearance_images/Document_tab_color_customization.png)
+![Document window with color customization](Appearance_images/Document_tab_color_customization.png)
 
 {% tabs %}
 
@@ -964,7 +972,7 @@ Me.dockingManager1.DocumentWindowSettings.ActiveTabFont = New Font("Automatic", 
 
 {% endtabs %}
 
-![Document window font andheight customization](Appearance_images/Document_tab_Font_customization.png)
+![Document window with font and height customization](Appearance_images/Document_tab_Font_customization.png)
 
 
 ## Customize auto hide window
