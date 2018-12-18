@@ -3,7 +3,7 @@ layout: post
 title: End-user Capability
 description: This section explains about the various dialog boxes which are used in EditControl
 platform: WindowsForms
-control: SyntaxEditor
+control: Syntax Editor
 documentation: ug
 ---
 
@@ -24,7 +24,7 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
 
 The [KeyBinder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBinder.html) property is used to get the key binder. The [KeyBindingProcessor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBindingProcessor.html) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked by using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowKeysBindingEditor.html) function in the EditControl.
 
-![](End-user-Capability_images/End-user-Capability_img1.png)
+![Displays Key binding dialog](End-user-Capability_images/End-user-Capability_img1.png)
 
 ## Find
 
@@ -51,7 +51,7 @@ Me.editControl1.ShowFindDialog()
 
 {% endtabs %}
 
-![](End-user-Capability_images/End-user-Capability_img2.png)
+![Displays Find dialog](End-user-Capability_images/End-user-Capability_img2.png)
 
 The EditControl now enables you to create a new Find Dialog by inheriting the Find Dialog by changing the properties. It triggers the events of the buttons such as Find, Mark All, and Close. You can also easily localize the captions of the controls in the Find Dialog.
 
@@ -59,7 +59,7 @@ The EditControl now enables you to create a new Find Dialog by inheriting the Fi
 
 The EditControl Find Dialog is enhanced with an alert message box when find reaches the starting point of the search again. In search option, select Current Selection, click OK in the alert message box, then the search area is selected again automatically as in VS editor.
 
-![](End-user-Capability_images/End-user-Capability_img3.jpeg)
+![Displays Find dialog with alert message box](End-user-Capability_images/End-user-Capability_img3.jpeg)
 
 **Creating a class for own find dialog**
 
@@ -236,7 +236,7 @@ Me.editControl1.FindNext()
 
 {% endtabs %}
 
-![](End-user-Capability_images/End-user-Capability_img4.png)
+![Highlights found text in Syntax Editor](End-user-Capability_images/End-user-Capability_img4.png)
 
 **History properties**
 
@@ -300,7 +300,7 @@ Me.editControl1.FindHistory.Clear()
 
 Provides Microsoft Visual Studio text editor like Find and Replace dialog window with similar options for text search, highlighting, and replace.
 
-![](End-user-Capability_images/End-user-Capability_img5.png)
+![Displays Find and Replace dialog](End-user-Capability_images/End-user-Capability_img5.png)
 
 {% tabs %}
 
@@ -401,7 +401,7 @@ Me.editControl1.ShowGoToDialog()
 
 {% endtabs %}
 
-![](End-user-Capability_images/End-user-Capability_img6.png)
+![Displays Go To Line dialog](End-user-Capability_images/End-user-Capability_img6.png)
 
 ### GoTo line by programmatic
 
@@ -497,7 +497,84 @@ this.editControl1.ShowFormatsCustomizationDialog();
 
 {% endtabs %}
 
-![](End-user-Capability_images/End-user-Capability_img7.jpg)
+![Display Font configuration dialog to customize the font settings](End-user-Capability_images/End-user-Capability_img7.jpg)
 
 N> Refer to the following sample link that demonstrates the customization of font in EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Font Customization
+
+## Zoom in and Zoom out 
+
+This feature enables the user to change the zoom level of the Syntax Editor that brings either more or fewer line items into the view. By zooming, user can get a magnified view of the line item, and by zooming out user can bring more line items in to the view.
+
+### Enable/Disable Zoom in and out functionalities
+[AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is used to enable the zoom in and out support of Syntax Editor. The default value of the property is false. Once the [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is enabled, zooming operations can be done through MouseWheel, Touch interactions and programmatic. 
+
+### Zooming operations using MouseWheel and Modifier key
+Zoom in and out operations can be done with the help of MouseWheel and Modifier key(Ctrl + MouseWheel). For every scrolling of the mouse wheel, 10% of increment/decrement will be in current font. Minimum zoom factor is 10% of default font and Maximum zoom factor is 500% of default font.
+
+### Programmatic Zoom in and Zoom out support
+User can perform zooming operations programmatically without user interactions and with the help of [ZoomFactor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactor.html) property. The default value of the property is 1F (100 in percent). 
+
+### Zoom in and zoom out operation through touch interactions
+Using touch interactions zoom in and out operations can be performed.  For every pinch, 10% of increment/decrement in current font. 
+
+### Notify event for ZoomFactor value changes
+
+ZoomFactorChanged and ZoomFactorChanging events are available in Syntax Editor to notify the value changes of ZoomFactor.
+
+#### ZoomFactorChanged Event
+[ZoomFactorChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanged_EV.html) event will occur when the ZoomFactor value of Syntax Editor is changed. Event arguments will contain Old and New value of ZoomFactor.
+
+{% tabs %}
+{% highlight C# %}
+
+this.editControl1.ZoomFactorChanged += EditControl1_ZoomFactorChanged;
+
+        private void EditControl1_ZoomFactorChanged(object sender, ValueChangedEventArgs e)
+        {
+            Console.WriteLine("Zoom Factor has been changed");
+        }
+
+{% endhighlight %}
+
+{% highlight VB %}
+Me.editControl1.ZoomFactorChanged += EditControl1_ZoomFactorChanged
+
+Private Sub EditControl1_ZoomFactorChanged(ByVal sender As Object, ByVal e As ValueChangedEventArgs)
+ 
+Console.WriteLine("Zoom Factor has been changed")
+    End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+#### ZoomFactorChanging Event
+
+[ZoomFactorChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanging_EV.html) event occurs before the ZoomFactor value of Syntax Editor gets changed. Value changing of ZoomFactor can be handled by setting e.Cancel as true. 
+
+{% tabs %}
+{% highlight C# %}
+
+this.editControl1.ZoomFactorChanging += EditControl1_ZoomFactorChanging;
+
+        private void EditControl1_ZoomFactorChanging(object sender, ValueChangingEventArgs e)
+        {
+           if(e.NewValue >= 2.5F)
+            {
+               e.Cancel = true;
+            }
+        }
+
+{% endhighlight %}
+
+{% highlight VB %}
+Me.editControl1.ZoomFactorChanging += EditControl1_ZoomFactorChanging
+
+Private Sub EditControl1_ZoomFactorChanging(ByVal sender As Object, ByVal e As ValueChangingEventArgs)
+		   If e.NewValue >= 2.5F Then
+			   e.Cancel = True
+		   End If
+		End Sub
+
+{% endhighlight %}
+{% endtabs %}
