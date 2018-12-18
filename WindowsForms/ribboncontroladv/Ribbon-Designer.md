@@ -23,7 +23,7 @@ AutoLayoutToolStrip property enables Standard size and Layout for RibbonControlA
 
 **Small:** ToolStripItem’s DisplayStyle is ImageAndText and TextImageRelation is ImageBeforeText/ ImageAfterText.
 
-**Extra Small:** ToolStripItem’s DisplaySyle is Image. 
+**Extra Small:** ToolStripItem’s DisplayStyle is Image. 
 
 **Margin and Padding:** ToolStripItems Margin and Padding are defined internally by comparing with items in the MS Ribbon so that the ToolStripItems are arranged properly to one another in RibbonControlAdv.
 
