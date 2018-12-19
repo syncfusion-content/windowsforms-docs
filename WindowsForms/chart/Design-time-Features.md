@@ -303,6 +303,48 @@ EssentialChart provides support to load the saved [Chart Template](https://help.
 
 [ChartTemplate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl.html) has static method to load the template data programmatically. We need to pass the ChartControl which will be applied with the loaded template data.
 
+### Saving chart series data
+
+You can save the data points of chart series in a template. The 'StoreAllProperties' and 'StoreSeriesData' static properties of 'ChartTemplate' can be used to specify whether data points of chart series should be stored in template.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+ChartTemplate.StoreSeriesData = true;
+ChartTemplate.Save(this.chartControl1, "TemplateName.xml");
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+ChartTemplate.StoreSeriesData = true
+ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
+
+{% endhighlight %}
+{% endtabs %}
+
+### Saving styles of data points
+
+You can also save the styles of data points such as 'Symbol' and 'Text' in template. The 'StoreAllProperties' and 'StoreSeriesStyle' static properties of 'ChartTemplate' can be used to specify whether the styles of the data points should be stored in template.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+ChartTemplate.StoreSeriesStyle = true;
+ChartTemplate.Save(this.chartControl1, "TemplateName.xml");
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+ChartTemplate.StoreSeriesStyle = true
+ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Reset Template
 
 The [ChartControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html), which when loaded with a template will be applied with the appearance and other settings that were stored in the template. These settings can be reset and the Chart can be reverted back to its original appearance by using the below two methods.
