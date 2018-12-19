@@ -127,6 +127,14 @@ The ProvideGraphicsItems event occurs whenever a dockable control caption needs 
 Allows you to specify a unique ID that is used to distinguish the persistence information of different instances of the form type.</td></tr>
 <tr>
 <td>
+{{ '[TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TabGroupCreating_EV.html)' | markdownify }}</td><td>
+The TabGroupCreating event occurs before creating a new document tab group. </td></tr>
+<tr>
+<td>
+{{ '[TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TabGroupCreated_EV.html)' | markdownify }}</td><td>
+The TabGroupCreated event occurs after creating a new document tab group. </td></tr>
+<tr>
+<td>
 {{ '[TransferredToManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TransferredToManager_EV.html)' | markdownify }}</td><td>
 The TransferredToManager event occurs after a dockable control that belongs to some other docking manager has been transferred to the docking layout hosted by this docking manager.</td></tr>
 <tr>
@@ -666,7 +674,7 @@ End Sub
 
 {% endtabs %}
 
-![](Docking-Events_images/Docking-Events_img1.jpeg)
+![Dock window context menu item](Docking-Events_images/Docking-Events_img1.jpeg)
 
 ### DockMenuClick event
 
@@ -1287,6 +1295,111 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+## TabGroupCreating event
+
+The [TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TabGroupCreating_EV.html) event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides the following event data for the `TabGroupCreating` event of docking manager. 
+
+* TargetItem : Gets the target item which added as new document tab group.
+
+* Orientation : Gets the orientation of newly created document tab group.
+
+* Cancel : Cancels the tab group creation. You can restrict creation of document tab group based on orientation or target item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void DockingManager1_TabGroupCreating(object sender, TabGroupCreatingEventArgs arg)
+{
+  //To cancel the tab group creation for Horizontal orientation
+   if(arg.Orientation == Orientation.Horizontal)
+            {
+                arg.Cancel = true;
+            }
+}
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_TabGroupCreating1(ByVal sender As Object, ByVal arg As TabGroupCreatingEventArgs)
+			'To cancel the tab group creation for Horizontal orientation
+			If arg.Orientation = Orientation.Horizontal Then
+				arg.Cancel = True
+			End If
+		End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## TabGroupCreated event
+
+The [TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~TabGroupCreated_EV.html) event occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides the following event data for the `TabGroupCreated` event of docking manager. You can customize the appearance and behavior of document tab groups using the tab group instance provided by the `TabGroupCreated `event.
+
+* CurrentTabGroup : Gets the current document tab group of tab item that triggers tab group creation.
+
+* PreviousTabGroup : Gets the previous document tab group of tab item that triggers tab group creation.
+
+* TabGroups : Gets the collections of document tab groups in docking manager.
+
+* TargetItem : Gets the target item added as a new document tab group.
+
+* Orientation : Gets the orientation of newly created document tab group.
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+        private void DockingManager1_TabGroupCreated(object sender, Syncfusion.Windows.Forms.Tools.TabGroupCreatedEventArgs arg)
+        {
+          foreach(TabHost tab in arg.TabGroups)
+            {
+                if (tab.MDITabPanel == arg.CurrentTabGroup)
+                {
+                  // Customize  background of the active tab item of current tab group
+                    arg.CurrentTabGroup.ActiveTabColor = Color.Purple;
+                }
+
+                if(tab.MDITabPanel == arg.PreviousTabGroup)
+                {
+                   // Customize  background of the active tab item of previous tab group
+                    arg.PreviousTabGroup.ActiveTabColor = Color.Green;
+                }
+            }
+        }
+
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_TabGroupCreated(ByVal sender As Object, ByVal arg As Syncfusion.Windows.Forms.Tools.TabGroupCreatedEventArgs)
+		  For Each tab As TabHost In arg.TabGroups
+				If tab.MDITabPanel Is arg.CurrentTabGroup Then
+
+        'Customize  background of the active tab item of current tab group
+					arg.CurrentTabGroup.ActiveTabColor = Color.Purple
+				End If
+
+				If tab.MDITabPanel Is arg.PreviousTabGroup Then
+
+        'Customize  background of the active tab item of previous tab group
+					arg.PreviousTabGroup.ActiveTabColor = Color.Green
+				End If
+		  Next tab
+		End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tab group customization](TDI_Window_images/Tab_group_created.png) 
 
 ## Dock visibility
 
