@@ -865,6 +865,116 @@ Me.dockingManager1.ResetDockTabForeColor()
 
 {% endtabs %}
 
+## Customize document(TDI) window
+
+The appearance of document tab can be customized using the `DocumentWindowSettings` property of docking manager. DocumentWindowSettings provides options to change the tab background, foreground, font and much more.
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Descriptions</th></tr>
+<tr>
+<td>
+{{ '[TabBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabBackColor.html)' | markdownify }}</td><td>
+ Customizes the header background color of inactive tab items in document window.</td></tr>
+<tr>
+<td>
+{{ '[ActiveTabBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabBackColor.html)' | markdownify }}
+</td><td>
+Customizes the header background color of active tab items in document window.</td></tr>
+<tr>
+<td>
+{{ '[TabForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabForeColor.html)' | markdownify }}
+</td><td>
+ Customizes the header foreground color of inactive tab items in the document window.</td></tr>
+<tr>
+<td>
+{{ '[ActiveTabForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabForeColor.html)' | markdownify }}
+</td><td>
+Customizes the header foreground color of active tab item in the document window.</td></tr>
+<tr>
+<td>
+{{ '[TabPanelBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabPanelBackColor.html)' | markdownify }}
+</td><td>
+Customizes the background color of tab panel in document window.</td></tr>
+<tr>
+<td>
+{{ '[TabPanelBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabPanelBorderColor.html)' | markdownify }}
+</td><td>
+ Customizes the border color of tab panel in document window.</td></tr>
+<tr>
+<td>
+{{ '[ActiveTabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ActiveTabFont.html)' | markdownify }}
+</td><td>
+ Customizes the header font of active tab items in document window.</td></tr>
+<tr>
+<td>
+{{ '[TabFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabFont.html)' | markdownify }}
+</td><td>
+ Customizes the header font of inactive tab items in document window.</td></tr>
+<tr>
+<td>
+{{ '[TabHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~TabHeight.html)' | markdownify }}
+</td><td>
+ Customizes the header height of tab items in document window. The maximum height is 60.</td></tr>
+</table>
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.DocumentWindowSettings.TabBackColor = Color.SteelBlue;
+this.dockingManager1.DocumentWindowSettings.ActiveTabBackColor = Color.Green;
+this.dockingManager1.DocumentWindowSettings.TabForeColor = Color.SeaShell;
+this.dockingManager1.DocumentWindowSettings.ActiveTabForeColor = Color.Pink;
+this.dockingManager1.DocumentWindowSettings.TabPanelBackColor = Color.Purple;
+this.dockingManager1.DocumentWindowSettings.TabPanelBorderColor = Color.Green;
+
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+ Me.dockingManager1.DocumentWindowSettings.TabBackColor = Color.SteelBlue
+ Me.dockingManager1.DocumentWindowSettings.ActiveTabBackColor = Color.Green
+ Me.dockingManager1.DocumentWindowSettings.TabForeColor = Color.SeaShell
+ Me.dockingManager1.DocumentWindowSettings.ActiveTabForeColor = Color.Pink
+ Me.dockingManager1.DocumentWindowSettings.TabPanelBackColor = Color.Purple
+ Me.dockingManager1.DocumentWindowSettings.TabPanelBorderColor = Color.Green
+            
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Document window with color customization](Appearance_images/Document_tab_color_customization.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.dockingManager1.DocumentWindowSettings.TabHeight = 38;
+this.dockingManager1.DocumentWindowSettings.TabFont = new Font("Arial", 9, FontStyle.Italic);
+this.dockingManager1.DocumentWindowSettings.ActiveTabFont = new Font("Automatic", 9, FontStyle.Bold);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Me.dockingManager1.DocumentWindowSettings.TabHeight = 38 Me.dockingManager1.DocumentWindowSettings.TabFont = New Font("Arial", 9, FontStyle.Italic)
+Me.dockingManager1.DocumentWindowSettings.ActiveTabFont = New Font("Automatic", 9, FontStyle.Bold)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Document window with font and height customization](Appearance_images/Document_tab_Font_customization.png)
+
+
 ## Customize auto hide window
 
 In docking manager, you can customize the AutoHidden window tabs foreground, font, and tab panel background color.
