@@ -1324,6 +1324,11 @@ Sets the color for the title text of the axis.</td></tr>
 {{'[TitleFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~TitleFont.html)'| markdownify }}
 </td><td>
 Sets the font style for the title text.</td></tr>
+<tr>
+<td>
+'TitleRotationAngle'
+</td><td>
+Sets angle to rotate the title text.</td></tr>
 </table>
 
 {% tabs %}
@@ -1356,6 +1361,36 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Rotating Axis Title
+
+You can now rotate the titles of axes to 0, 90, 180, and 270 degrees using the 'TitleRotationAngle' property of 'ChartAxis'.
+
+{% tabs %}  
+
+{% highlight c# %}
+
+//Rotating x-axis title by 270 degrees
+this.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270;
+
+//Rotating y-axis title by 0 degree
+this.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'Rotating x-axis title by 270 degrees
+Me.chartControl1.PrimaryXAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate270
+
+'Rotating y-axis title by 0 degree
+Me.chartControl1.PrimaryYAxis.TitleRotationAngle = AxisTitleRotationAngle.Rotate0
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot shows how to rotate x-axis title by 270 degrees without rotating y-axis title
+![Chart Axes](Chart-Axes_images/Chart-Axes_img41_2.png)
 
 ### Multiline Chart Axes Title
 
@@ -2554,3 +2589,52 @@ For example, when you set PointOffset to 1, chart will leave one interval space 
 The following screenshot illustrates the chart whose x-axis labels are rendered with PointOffset as 1.
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img45.png)
+
+## RangePaddingTypes
+
+Padding can be applied to the minimum and maximum extremes of an axis range using the `RangePaddingType` property. The types of range padding are,
+
+* None
+* Calculate
+
+**None**
+
+When the range padding type is set to None, padding can be applied to the minimum and maximum extremes of an axis range based on data.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.None;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.None;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img46.png)
+
+**Calculate**
+
+When the range padding type is set to Calculate, interval of an axis will be added to the minimum and maximum of the axis range.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img47.png)
