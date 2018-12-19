@@ -63,7 +63,7 @@ pdfViewer.Load(@"input.pdf");
 
 //Gets the file path of loaded PDF document
 
-string filepath = pdfViewer.DocumentInformation.FilePath;
+string filePath = pdfViewer.DocumentInformation.FilePath;
 
 
 {%endhighlight%}
@@ -79,7 +79,7 @@ pdfViewer.Load("../../Data/Barcode.pdf")
 
 'Gets the file path of loaded PDF document
 
-Dim filepath As String = pdfViewer.DocumentInformation.FilePath
+Dim filePath As String = pdfViewer.DocumentInformation.FilePath
 
 {%endhighlight%}
 
