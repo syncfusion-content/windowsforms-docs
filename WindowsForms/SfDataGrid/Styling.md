@@ -223,6 +223,22 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 
 ![Border customization in windows forms datagrid](Styling_images/Styling4.png)
 
+## Disable the Cell Border
+Cell Border can be disable by using the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.HeaderStyle.Borders.All = new GridBorder(GridBorderStyle.None, GridBorderWeight.Thick);
+this.sfDataGrid1.Style.CellStyle.Borders.All = new GridBorder(GridBorderStyle.None, GridBorderWeight.Thick);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(GridBorderStyle.None, GridBorderWeight.Thick)
+Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.None, GridBorderWeight.Thick)
+{% endhighlight %}
+{% endtabs %}
+
+![Cell Border customization in windows forms datagrid](Styling_images/Styling7.png)
+
 ## Changing the Border Color, Border Style, BorderSides,Border3DStyles of the Grid Border Color
 The Border Color, Border Styles, BorderSides, Border3DStyles of the Grid Border can be changed by [SfDataGrid.Style] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~Style.html) property.
 
