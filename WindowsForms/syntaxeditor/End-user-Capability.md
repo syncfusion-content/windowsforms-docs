@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: End-user Capability
 description: This section explains about the various dialog boxes which are used in EditControl
@@ -504,26 +504,30 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 ## Zoom in and Zoom out 
 
-This feature enables the user to change the zoom level of the Syntax Editor that brings either more or fewer line items into the view. By zooming, user can get a magnified view of the line item, and by zooming out user can bring more line items in to the view.
+This feature allows users to change the zoom level of SyntaxEditor, which brings either more or fewer line items into the view. By zooming in, users can get a magnified view of the line items, and by zooming out, users can bring more line items into the view.
 
-### Enable/Disable Zoom in and out functionalities
-[AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is used to enable the zoom in and out support of Syntax Editor. The default value of the property is false. Once the [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is enabled, zooming operations can be done through MouseWheel, Touch interactions and programmatic. 
+### Enable/Disable zoom in and out functionalities
+
+The [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is used to enable the zoom in and out supports of SyntaxEditor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
 
 ### Zooming operations using MouseWheel and Modifier key
-Zoom in and out operations can be done with the help of MouseWheel and Modifier key(Ctrl + MouseWheel). For every scrolling of the mouse wheel, 10% of increment/decrement will be in current font. Minimum zoom factor is 10% of default font and Maximum zoom factor is 500% of default font.
 
-### Programmatic Zoom in and Zoom out support
-User can perform zooming operations programmatically without user interactions and with the help of [ZoomFactor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactor.html) property. The default value of the property is 1F (100 in percent). 
+The zoom in and zoom out operations can be done using mouse wheel and modifier key (Ctrl + MouseWheel). For every scrolling of the mouse wheel, 10% of increment/decrement will be done in the current font. The minimum zoom factor is 10% of the default font, and the maximum zoom factor is 500% of the default font.
 
-### Zoom in and zoom out operation through touch interactions
-Using touch interactions zoom in and out operations can be performed.  For every pinch, 10% of increment/decrement in current font. 
+### Programmatic zoom in and out 
+ 
+Users can perform zooming operations programmatically without user interactions using the [ZoomFactor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactor.html) property. The default value of this property is 1F (100 in percent). 
+
+### Zoom in and out operation through touch interactions
+ 
+Using touch interactions, zoom in and out operations can be performed. For every pinch, 10% of increment/decrement will be done in the current font. 
 
 ### Notify event for ZoomFactor value changes
 
 ZoomFactorChanged and ZoomFactorChanging events are available in Syntax Editor to notify the value changes of ZoomFactor.
 
 #### ZoomFactorChanged Event
-[ZoomFactorChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanged_EV.html) event will occur when the ZoomFactor value of Syntax Editor is changed. Event arguments will contain Old and New value of ZoomFactor.
+[ZoomFactorChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanged_EV.html) event occurs when the ZoomFactor value of SyntaxEditor is changed. The event arguments contain the old and new values of ZoomFactor.
 
 {% tabs %}
 {% highlight C# %}
@@ -550,7 +554,7 @@ Console.WriteLine("Zoom Factor has been changed")
 
 #### ZoomFactorChanging Event
 
-[ZoomFactorChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanging_EV.html) event occurs before the ZoomFactor value of Syntax Editor gets changed. Value changing of ZoomFactor can be handled by setting e.Cancel as true. 
+[ZoomFactorChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanging_EV.html) event occurs before the ZoomFactor value of SyntaxEditor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
 
 {% tabs %}
 {% highlight C# %}
