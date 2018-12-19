@@ -26,7 +26,7 @@ pdfViewer.Load(@"input.pdf");
 
 //Gets the filename of loaded PDF document
 
-string filename = pdfViewer.DocumentInformation.FileName;
+string fileName = pdfViewer.DocumentInformation.FileName;
 
 {%endhighlight%}
 
@@ -42,7 +42,7 @@ pdfViewer.Load("../../Data/Barcode.pdf")
 
 'Gets the filename of loaded PDF document
 
-Dim filename As String = pdfViewer.DocumentInformation.FileName
+Dim fileName As String = pdfViewer.DocumentInformation.FileName
 
 {%endhighlight%}
 {% endtabs %}
