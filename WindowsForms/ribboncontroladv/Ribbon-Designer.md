@@ -25,7 +25,7 @@ AutoLayoutToolStrip property enables Standard size and Layout for RibbonControlA
 
 **Extra Small:** ToolStripItem’s DisplayStyle is Image. 
 
-**Margin and Padding:** ToolStripItems Margin and Padding are defined internally by comparing with items in the MS Ribbon so that the ToolStripItems are arranged properly to one another in RibbonControlAdv.
+**Margin and Padding:** ToolStripItems Margin and Padding are defined unique to maintain the equality for all items either its label is in single line or double line.
 
 **Image Scaling:** Images used inside RibbonControlAdv has been scaled internally for different screen resolution. We have used the below defined image size for the different item size.
 
@@ -45,7 +45,7 @@ Small and Extra Small size form</td><td>
 16*16</td></tr>
 </table>
 
-**RibbonControlAdv Height:** RibbonControlAdv Height is defined internally to accommodate the items, arranged inside with the desired layout by comparing with MS Ribbon. 
+**RibbonControlAdv Height:** RibbonControlAdv Height is defined internally to accommodate the items and to maintain in three rows with standard height in scaling.
 
 {% tabs %}
 
@@ -69,11 +69,11 @@ Me.ribbonControlAdv1.AutoLayoutToolStrip = True
 
 Smart Tag feature allows you to quickly access the most commonly used properties and options, as well as perform tasks without having to leave the control’s design surface. (resembles a right-pointing arrow)
 
-In Ribbon Smart Tag, we have now included the support to change some of the frequently used properties related to the Appearance, Behavior and links to access documentation and support resources of Ribbon.
+In Ribbon Smart Tag, we have included the frequently used properties related to the Appearance, Behavior and links to access documentation and support resources of Ribbon.
 
 ![Smart Tag of RibbonControlAdv](Ribbon_Designer_Images/Ribbon-Designer_img2.jpg)
 
-In ToolStripEx Smart Tag, we can now set the Text for the ToolStripEx and add Horizontal and Vertical Layout ToolStripPanelItem from the Smart Tag. 
+In ToolStripEx Smart Tag, we can set the Text for the ToolStripEx and add Horizontal and Vertical Layout ToolStripPanelItem.
 
 ![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img3.jpg)
 
