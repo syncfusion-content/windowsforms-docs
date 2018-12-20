@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Filtering
+title: Filtering | DataGrid | WinForms | Syncfusion
 description: This section explains about the Filtering support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
