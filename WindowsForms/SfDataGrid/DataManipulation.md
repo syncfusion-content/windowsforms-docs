@@ -191,6 +191,20 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Customizing AddNewRow Text using property
+You can change the add new row text by using [sfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowText.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AddNewRowText = "Click to add new row";
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AddNewRowText = "Click to add new row"
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid showing customized addnewrow text ](DataManipulation_images/AddNewRow_img9.png)
+
 ### Customizing AddNewRow Text using Default Resource File
 SfDataGrid allows to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WinForms.resx` file in **Resources** folder and then customize the value of AddNewRowText.
 
