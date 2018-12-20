@@ -239,7 +239,7 @@ Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.Soli
 
 ![Cell Border customization in windows forms datagrid](Styling_images/Styling8.png)
 
-## Disable gridlines
+## Disable the gridlines
 Cell Border can be disable by using the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
 
 {% tabs %}
