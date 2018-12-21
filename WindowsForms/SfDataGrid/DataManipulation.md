@@ -4,6 +4,7 @@ title: DataManipulation | DataGrid | WinForms | Syncfusion
 description: This section explains about the data manipulation support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
+documentation: ug
 
 ---
 

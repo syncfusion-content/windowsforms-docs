@@ -39,31 +39,23 @@ Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
 
 ![Row header appearance customization in windows form datagrid](Rows_images/img2.png)
 
-### SelectionMarker customization
-Appearance of a selection row header can be customized by using the RowHeaderStyle property.
+### Selection marker customization
+Appearance of the selection marker can be customized using selection marker properties in RowHeaderStyle.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 15;
-this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor =  Color.Black;
+this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4;
+this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red;
+this.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White;
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 15
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Black
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
 ![Row header appearance customization in windows form datagrid](Rows_images/img10.png)
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor =Color.YellowGreen;
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor =Color.YellowGreen
-{% endhighlight %}
-{% endtabs %}
-
-![Row header appearance customization in windows form datagrid](Rows_images/img11.png)
 
 ### Row Indicators and its Description
 
