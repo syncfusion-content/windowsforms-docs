@@ -193,7 +193,7 @@ End Sub
 {% endtabs %}
 
 ### Customizing AddNewRow text programmatically
-You can change the add new row text programmatically by using [sfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowText.html) property.
+You can change the add new row text programmatically using the [sfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowText.html) property.
 
 {% tabs %}
 {% highlight c# %}
