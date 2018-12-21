@@ -224,7 +224,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 ![Border customization in windows forms datagrid](Styling_images/Styling4.png)
 
 ## Changing the style of gridlines
-Style for the cell borders can be changed by initializing [GridBorderStyle] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.GridBorder.html) in [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+Style for the cell borders can be changed by initializing [GridBorderStyle] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) in [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -240,7 +240,7 @@ Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.Dott
 ![Cell Border customization in windows forms datagrid](Styling_images/Styling8.png)
 
 ## Disable the gridlines
-Cell borders can be disabled by initializing `GridBorderStyle` to [GridBorderStyle.None] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) in [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+Cell borders can be disabled by initializing `GridBorderStyle` to `GridBorderStyle.None` in [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
 
 {% tabs %}
 {% highlight c# %}
