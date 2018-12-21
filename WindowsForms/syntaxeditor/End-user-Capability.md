@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: End-user Capability of Syncfusion SyntaxEditor
 description: This section explains about the various dialog boxes which are used in EditControl
