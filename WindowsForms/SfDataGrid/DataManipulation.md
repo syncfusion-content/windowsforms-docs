@@ -265,10 +265,11 @@ When the relation  is auto-generated, you can get the  GridViewDefinition.DataGr
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingRelations += sfDataGrid1_AutoGeneratingRelations;
+
 private void sfDataGrid1_AutoGeneratingRelations(object sender, Syncfusion.WinForms.DataGrid.Events.AutoGeneratingRelationsEventArgs e)
-        {
-            e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top;
-        }
+{
+   e.GridViewDefinition.DataGrid.AddNewRowPosition = RowPosition.Top;
+}
 {% endhighlight %}
 {% highlight vb %}
 AddHandler sfDataGrid1. AutoGeneratingRelations, AddressOf SfDataGrid_AutoGeneratingRelations 
