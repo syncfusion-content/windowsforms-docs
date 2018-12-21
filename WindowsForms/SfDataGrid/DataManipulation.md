@@ -1,10 +1,10 @@
 ---
 layout: post
-title: DataManipulation | SfDataGrid | windowsforms | Syncfusion
+title: DataManipulation | DataGrid | WinForms | Syncfusion
 description: This section explains about the data manipulation support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
-documentation: ug
+
 ---
 
 # Data Manipulation
@@ -191,8 +191,8 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing AddNewRow Text using property
-You can change the add new row text by using [sfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowText.html) property.
+### Customizing AddNewRow text programmatically
+You can change the add new row text programmatically by using [sfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowText.html) property.
 
 {% tabs %}
 {% highlight c# %}

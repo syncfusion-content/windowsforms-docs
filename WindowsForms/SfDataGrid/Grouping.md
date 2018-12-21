@@ -22,7 +22,7 @@ Me.sfDataGrid1.AllowGrouping = True
 {% endhighlight %}
 {% endtabs %}
 
-You can auto fit content for grouped items in GroupDropArea by using [sfDataGrid.AutoFitGroupDropAreaItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoFitGroupDropAreaItem.html) property.
+You can auto fit content for grouped items in 'GroupDropArea' by using [sfDataGrid.AutoFitGroupDropAreaItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoFitGroupDropAreaItem.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,6 +205,18 @@ Me.sfDataGrid1.IndentColumnWidth = 100
 ![Indent column width customization in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img9.png)
 
 ## GroupDropArea Customization
+
+### Auto fit group drop area items
+You can auto fit content for grouped items in 'GroupDropArea' by using [sfDataGrid.AutoFitGroupDropAreaItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoFitGroupDropAreaItem.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.AutoFitGroupDropAreaItem = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.AutoFitGroupDropAreaItem = True
+{% endhighlight %}
+{% endtabs %}
 
 ### Customizing GroupDropArea Text
 
