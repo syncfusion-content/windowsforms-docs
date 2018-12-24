@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging
 
-SfDataGrid provides support to manipulate the data using SfDataPager control.
+SfDataGrid provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
 ##Getting Started
 Follow the below steps to bind SfDataGrid with SfDataPager.
@@ -22,15 +22,22 @@ Follow the below steps to bind SfDataGrid with SfDataPager.
 public partial class OrderInfo 
 {
     private int _OrderID;
-    private DateTime _orderDate;
-    private string _CustomerID;
-    private double _unitPrice;
-    private int _Quantity;
-    private int _contactNumber;
-    private string _product;
-    private string _shipAddress;
 
-       public int OrderID
+    private DateTime _orderDate;
+
+    private string _CustomerID;
+
+    private double _unitPrice;
+
+    private int _Quantity;
+
+    private int _contactNumber;
+
+    private string _product;
+
+    private string _shipaddress; 
+    
+    public int OrderID
     {
         get
         {
@@ -42,8 +49,8 @@ public partial class OrderInfo
             this.OnPropertyChanged("OrderID");
         }
     }
-
-      public string CustomerID
+    
+    public string CustomerID
     {
         get
         {
@@ -55,8 +62,8 @@ public partial class OrderInfo
             this.OnPropertyChanged("CustomerID");
         }
     }
-
-       public string ProductName
+   
+    public string ProductName
     {
         get
         {
@@ -68,8 +75,8 @@ public partial class OrderInfo
             this.OnPropertyChanged("ProductName");
         }
     }
-
-       public DateTime OrderDate
+   
+    public DateTime OrderDate
     {
         get
         {
@@ -81,7 +88,7 @@ public partial class OrderInfo
         }
     }
 
-       public int Quantity
+    public int Quantity
     {
         get
         {
@@ -94,7 +101,7 @@ public partial class OrderInfo
         }
     }
 
-       public double UnitPrice
+    public double UnitPrice
     {
         get
         {
@@ -106,8 +113,8 @@ public partial class OrderInfo
             OnPropertyChanged("UnitPrice");
         }
     }
-
-       public int ContactNumber
+  
+    public int ContactNumber
     {
         get
         {
@@ -119,16 +126,16 @@ public partial class OrderInfo
             OnPropertyChanged("ContactNumber");
         }
     }
-
-        public string ShipCountry
+  
+    public string ShipCountry
     {
         get
         {
-            return this._shipAddress;
+            return this._shipaddress;
         }
         set
         {
-            this._shipAddress = value;
+            this._shipaddress = value;
             this.OnPropertyChanged("ShipCountry");
         }
     }
@@ -140,19 +147,26 @@ public partial class OrderInfo
             this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
     }
 }
-
 {% endhighlight %}
 {% highlight vb %}
 Partial Public Class OrderInfo
 	Private _OrderID As Integer
+
 	Private _orderDate As DateTime
+
 	Private _CustomerID As String
+
 	Private _unitPrice As Double
+
 	Private _Quantity As Integer
+
 	Private _contactNumber As Integer
+
 	Private _product As String
-	Private _shipAddress As String
-	   Public Property OrderID() As Integer
+
+	Private _shipaddress As String
+
+	Public Property OrderID() As Integer
 		Get
 			Return Me._OrderID
 		End Get
@@ -160,9 +174,9 @@ Partial Public Class OrderInfo
 			Me._OrderID = value
 			Me.OnPropertyChanged("OrderID")
 		End Set
-	   End Property
+	End Property
 
-	  Public Property CustomerID() As String
+	Public Property CustomerID() As String
 		Get
 			Return Me._CustomerID
 		End Get
@@ -170,9 +184,9 @@ Partial Public Class OrderInfo
 			Me._CustomerID = value
 			Me.OnPropertyChanged("CustomerID")
 		End Set
-	  End Property
+	End Property
 
-	   Public Property ProductName() As String
+	Public Property ProductName() As String
 		Get
 			Return Me._product
 		End Get
@@ -180,18 +194,18 @@ Partial Public Class OrderInfo
 			Me._product = value
 			Me.OnPropertyChanged("ProductName")
 		End Set
-	   End Property
+	End Property
 
-	   Public Property OrderDate() As DateTime
+	Public Property OrderDate() As DateTime
 		Get
 			Return _orderDate
 		End Get
 		Set(ByVal value As DateTime)
 			_orderDate = value
 		End Set
-	   End Property
+	End Property
 
-	   Public Property Quantity() As Integer
+	Public Property Quantity() As Integer
 		Get
 			Return Me._Quantity
 		End Get
@@ -199,9 +213,9 @@ Partial Public Class OrderInfo
 			_Quantity = value
 			OnPropertyChanged("Quantity")
 		End Set
-	   End Property
+	End Property
 
-	   Public Property UnitPrice() As Double
+	Public Property UnitPrice() As Double
 		Get
 			Return _unitPrice
 		End Get
@@ -209,9 +223,9 @@ Partial Public Class OrderInfo
 			_unitPrice = value
 			OnPropertyChanged("UnitPrice")
 		End Set
-	   End Property
+	End Property
 
-	   Public Property ContactNumber() As Integer
+	Public Property ContactNumber() As Integer
 		Get
 			Return Me._contactNumber
 		End Get
@@ -219,17 +233,17 @@ Partial Public Class OrderInfo
 			_contactNumber = value
 			OnPropertyChanged("ContactNumber")
 		End Set
-	   End Property
+	End Property
 
-		Public Property ShipCountry() As String
+	Public Property ShipCountry() As String
 		Get
-			Return Me._shipAddress
+			Return Me._shipaddress
 		End Get
 		Set(ByVal value As String)
-			Me._shipAddress = value
+			Me._shipaddress = value
 			Me.OnPropertyChanged("ShipCountry")
 		End Set
-		End Property
+	End Property
 
 	Public Event PropertyChanged As PropertyChangedEventHandler
 	Private Sub OnPropertyChanged(ByVal propertyName As String)
@@ -244,58 +258,68 @@ End Class
 {% tabs %}
 {% highlight c# %}
 public class OrderInfoCollection
+{
+    private ObservableCollection<OrderInfo> _orders;
+
+    public ObservableCollection<OrderInfo> Orders
     {
-private ObservableCollection<OrderInfo> _orders;
- public ObservableCollection<OrderInfo> Orders
-{ get { return _orders; } 
-set { _orders = value; }
- }
- public OrderInfoCollection() 
-{ _orders = new ObservableCollection<OrderInfo>(); this.GenerateOrders();
- }
-private void GenerateOrders()
- {
- _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin")); 
-_orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F.")); 
-_orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F.")); 
-_orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
- _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
- _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
- _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
- _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid")); 
-_orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille")); 
-_orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
- } 
-}       
+        get { return _orders; }
+        set { _orders = value; }
+    }
+
+    public OrderInfoCollection()
+    {
+        _orders = new ObservableCollection<OrderInfo>();
+        this.GenerateOrders();
+    }
+
+    private void GenerateOrders()
+    {
+        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
+        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
+        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
+        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+    }
+}
 {% endhighlight %}
 {% highlight vb %}
 Public Class OrderInfoCollection
 	
-Private _orders As ObservableCollection(Of OrderInfo)
- Public Property Orders() As ObservableCollection(Of OrderInfo)
-	Get
-		Return _orders
-	End Get
-Set(ByVal value As ObservableCollection(Of OrderInfo))
-	_orders = value
-End Set
- End Property
- Public Sub New()
-	_orders = New ObservableCollection(Of OrderInfo)()
-	Me.GenerateOrders()
- End Sub
-Private Sub GenerateOrders()
- _orders.Add(New OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"))
-_orders.Add(New OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."))
-_orders.Add(New OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."))
-_orders.Add(New OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"))
- _orders.Add(New OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"))
- _orders.Add(New OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"))
- _orders.Add(New OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"))
- _orders.Add(New OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"))
-_orders.Add(New OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"))
-_orders.Add(New OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"))
-End Sub
+Public Class OrderInfoCollection
+	Private _orders As ObservableCollection(Of OrderInfo)
+
+	Public Property Orders() As ObservableCollection(Of OrderInfo)
+		Get
+			Return _orders
+		End Get
+		Set(ByVal value As ObservableCollection(Of OrderInfo))
+			_orders = value
+		End Set
+	End Property
+
+	Public Sub New()
+		_orders = New ObservableCollection(Of OrderInfo)()
+		Me.GenerateOrders()
+	End Sub
+
+	Private Sub GenerateOrders()
+		_orders.Add(New OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"))
+		_orders.Add(New OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."))
+		_orders.Add(New OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."))
+		_orders.Add(New OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"))
+		_orders.Add(New OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"))
+		_orders.Add(New OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"))
+		_orders.Add(New OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"))
+		_orders.Add(New OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"))
+		_orders.Add(New OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"))
+		_orders.Add(New OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"))
+	End Sub
 End Class
 {% endhighlight %}
 {% endtabs %}
@@ -316,8 +340,8 @@ Follow the below steps to load the ItemsSource for page in on-demand,
 4.	[OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
 
 [OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) has the following members,
-1.	StartIndex - returns the start index based on PageIndex (Number of previous pages * PageSize).
-2.	PageSize - denotes the number of records to be displayed in the page.
+1.	[StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) - returns the start index based on PageIndex (Number of previous pages * PageSize).
+2.	[PageSize]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) ) - denotes the number of records to be displayed in the page.
 
 N> Do not assign SfDataPager.Source property while using on-demand paging.
 
@@ -351,7 +375,7 @@ End Sub
 {% endtabs %}
 
 ### Resetting Cache
-While navigating between the pages, records are loaded through ‘OnDemandLoading’ event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from ‘OnDemandLoading’ event. You can clear the cache by using [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. Once this method is invoked, the ‘OnDemandLoading’ event will be raised while navigating multiple times to the same page.
+While navigating between the pages, records are loaded through `OnDemandLoading` event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from `OnDemandLoading` event. You can clear the cache by using [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. Once this method is invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
 
 {% tabs %}
 {% highlight c# %}
@@ -389,7 +413,7 @@ TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCacheForPage(Me.sfDa
 {% endtabs %}
 
 ### Loading data from database in on-demand
-You can read the data from database in on-demand (here, records are retrieved from Northwind data provider) in ‘OnDemandLoading’ event handler.
+You can read the data from database in on-demand (here, records are retrieved from Northwind data provider) in [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -664,7 +688,7 @@ End Sub
 
 ### Button style
 
-The appearance of the button style can be customized using the NavigationButtonStyle and PageButtonStyle property.
+The appearance of the button style can be customized using the [NavigationButtonStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Style.DataPagerStyle~NavigationButtonStyle.html) and [PageButtonStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Style.DataPagerStyle~PageButtonStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
