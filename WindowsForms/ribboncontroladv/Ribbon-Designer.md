@@ -17,15 +17,15 @@ Image shows toolbox on the left side and designer on the right top and controls 
 
 ## AutoLayoutToolStrip
 
-The AutoLayoutToolStrip property enables standard size and layout for RibbonControlAdv and its items. The default value of the AutoLayoutToolStrip is false. The ToolStripItems can be arranged in the RibbonControlAdv in the following three different sizes:
+The `AutoLayoutToolStrip` property enables standard size and layout for RibbonControlAdv and its items. The default value of the `AutoLayoutToolStrip` is false. The ToolStripItems can be arranged in the RibbonControlAdv in the following three different sizes:
 
-**Large:** ToolStripItem’s DisplayStyle is ImageAndText and TextImageRelation is ImageAboveText/ ImageBelowText.
+**Large:** ToolStripItem’s `DisplayStyle` is ImageAndText and `TextImageRelation` is ImageAboveText/ ImageBelowText.
 
-**Small:** ToolStripItem’s DisplayStyle is ImageAndText and TextImageRelation is ImageBeforeText/ ImageAfterText.
+**Small:** ToolStripItem’s `DisplayStyle` is ImageAndText and `TextImageRelation` is ImageBeforeText/ ImageAfterText.
 
-**Extra Small:** ToolStripItem’s DisplayStyle is Image. 
+**Extra Small:** ToolStripItem’s `DisplayStyle` is Image. 
 
-**Margin and Padding:** ToolStripItem’s Margin and Padding are defined to maintain the equality for all items either its label is in single line or double line.
+**Margin and Padding:** ToolStripItem’s Margin and Padding are defined internally to maintain equal spacing for all items either in single or double line arrangement.
 
 **Image Scaling:** Images used inside RibbonControlAdv have been scaled internally for different screen resolution. The following defined image size has been used for the different item sizes.
 
