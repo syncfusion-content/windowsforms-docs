@@ -250,10 +250,10 @@ orderInfoCollection.OrdersListDetails.Add(orderInfo)
 {% endtabs %}
 
 ## AddNewRow support in Master-Details view
-You can enable the AddNewRow support in DetailsViewDataGrid using the [GridViewDefinition.DataGrid] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridViewDefinition~DataGrid.html) property.
+You can enable the AddNewRow in DetailsViewDataGrid using the [GridViewDefinition.DataGrid] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridViewDefinition~DataGrid.html) property.
 
 ### Manually defining relations
-For manually defined relations, the properties can be directly set to `GridViewDefinition.DataGrid`.
+For manually defined relations, the `AddNewRowPosition` can be directly initialized to the datagrid of the defined `GridViewDefinition`.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +275,7 @@ sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 {% endtabs %}
 
 ### Auto-generating relations
-When relation is auto-generated, you can get `GridViewDefinition.DataGrid` in the [AutoGeneratingRelations] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler to set the property.
+When relation is auto-generated, you can initialize the `AddNewRowPosition` for `GridViewDefinition.DataGrid` in the [AutoGeneratingRelations] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
