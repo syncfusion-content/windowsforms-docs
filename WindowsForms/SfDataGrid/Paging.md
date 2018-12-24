@@ -662,7 +662,7 @@ End Sub
 
 ### Button style
 
-The appearance of the button stylet  can be customized using the NavigationButtonStyle and PageButtonStyle property.
+The appearance of the button style can be customized using the NavigationButtonStyle and PageButtonStyle property.
 
 {% tabs %}
 {% highlight c# %}
@@ -706,7 +706,7 @@ Horizontal
 </td>
 <td>
 This is the default enum value for Orientation. Arranges all the Navigation Buttons and Numeric Buttons Horizontally.
-![Navigation Buttons and Numeric Buttons Horizontal](Paging_images/Paging6.jpeg)
+![Navigation Buttons and Numeric Buttons Horizontal](Paging_images/Paging6.png)
 
 </td>
 </tr>
@@ -716,7 +716,7 @@ Vertical
 </td>
 <td>
 Arranges all the Navigation Buttons and Numeric Buttons Vertically.
-![Navigation Buttons and Numeric Buttons Vertical](Paging_images/Paging7.jpeg)
+![Navigation Buttons and Numeric Buttons Vertical](Paging_images/Paging7.png)
 
 </td>
 </tr>
