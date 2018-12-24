@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows | DataGrid Control for Windows Forms | Syncfusion
+title: Rows | DataGrid | WinForms | Syncfusion
 description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
@@ -38,6 +38,24 @@ Me.sfDataGrid1.Style.RowHeaderStyle.BackColor = Color.CadetBlue
 {% endtabs %}
 
 ![Row header appearance customization in windows form datagrid](Rows_images/img2.png)
+
+### Selection marker customization
+The appearance of the selection marker can be customized using the selection marker properties in 'RowHeaderStyle'.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4;
+this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red;
+this.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red
+Me.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White
+{% endhighlight %}
+{% endtabs %}
+
+![Row header appearance customization in windows form datagrid](Rows_images/img10.png)
 
 ### Row Indicators and its Description
 
