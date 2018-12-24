@@ -35,7 +35,7 @@ public partial class OrderInfo
 
     private string _product;
 
-    private string _shipaddress; 
+    private string _shipAddress; 
     
     public int OrderID
     {
@@ -131,11 +131,11 @@ public partial class OrderInfo
     {
         get
         {
-            return this._shipaddress;
+            return this._shipAddress;
         }
         set
         {
-            this._shipaddress = value;
+            this._shipAddress = value;
             this.OnPropertyChanged("ShipCountry");
         }
     }
@@ -164,7 +164,7 @@ Partial Public Class OrderInfo
 
 	Private _product As String
 
-	Private _shipaddress As String
+	Private _shipAddress As String
 
 	Public Property OrderID() As Integer
 		Get
@@ -237,10 +237,10 @@ Partial Public Class OrderInfo
 
 	Public Property ShipCountry() As String
 		Get
-			Return Me._shipaddress
+			Return Me._shipAddress
 		End Get
 		Set(ByVal value As String)
-			Me._shipaddress = value
+			Me._shipAddress = value
 			Me.OnPropertyChanged("ShipCountry")
 		End Set
 	End Property
