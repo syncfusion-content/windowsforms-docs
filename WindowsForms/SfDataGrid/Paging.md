@@ -28,7 +28,7 @@ private double _unitPrice;
 private int _Quantity;
 private int _contactNumber;
 private string _product;
-private string _shipaddress;
+private string _shipAddress;
 
 
 public int OrderID
@@ -125,11 +125,11 @@ public string ShipCountry
 {
     get
     {
-        return this._shipaddress;
+        return this._shipAddress;
     }
     set
     {
-        this._shipaddress = value;
+        this._shipAddress = value;
         this.OnPropertyChanged("ShipCountry");
     }
 }
@@ -147,7 +147,7 @@ Private _unitPrice As Double
 Private _Quantity As Integer
 Private _contactNumber As Integer
 Private _product As String
-Private _shipaddress As String
+Private _shipAddress As String
 
 Public Property OrderID() As Integer
 	Get
@@ -221,10 +221,10 @@ End Property
 
 Public Property ShipCountry() As String
 	Get
-		Return Me._shipaddress
+		Return Me._shipAddress
 	End Get
 	Set(ByVal value As String)
-		Me._shipaddress = value
+		Me._shipAddress = value
 		Me.OnPropertyChanged("ShipCountry")
 	End Set
 End Property
