@@ -223,6 +223,54 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 
 ![Border customization in windows forms datagrid](Styling_images/Styling4.png)
 
+## Changing the style of gridlines
+The styles for the cell borders can be changed by initializing [GridBorderStyle] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) in the [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.HeaderStyle.Borders.All = new GridBorder(GridBorderStyle.Dotted, Color.Blue, GridBorderWeight.Thin);
+this.sfDataGrid1.Style.CellStyle.Borders.All = new GridBorder(GridBorderStyle.Dotted, Color.Blue, GridBorderWeight.Thin);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(GridBorderStyle.Dotted, Color.Blue, GridBorderWeight.Thin)
+Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.Dotted, Color.Blue, GridBorderWeight.Thin)
+{% endhighlight %}
+{% endtabs %}
+
+![Cell Border customization in windows forms datagrid](Styling_images/Styling8.png)
+
+## Disable the gridlines
+The cell borders can be disabled by setting `GridBorderStyle` to `GridBorderStyle.None` in the [Borders] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.HeaderStyle.Borders.All = new GridBorder(GridBorderStyle.None);
+this.sfDataGrid1.Style.CellStyle.Borders.All = new GridBorder(GridBorderStyle.None);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(GridBorderStyle.None)
+Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.None)
+{% endhighlight %}
+{% endtabs %}
+
+![Cell Border customization in windows forms datagrid](Styling_images/Styling7.png)
+
+## Changing the grid border Color
+The grid border color can be changed by using the [Style.BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~BorderColor.html) property
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.BorderStyle = BorderStyle.FixedSingle;
+this.sfDataGrid1.Style.BorderColor = Color.Red;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.BorderStyle = BorderStyle.FixedSingle
+Me.sfDataGrid1.Style.BorderColor = Color.Red
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the grid border Color](Styling_images/Styling6.png)
+
 ## Showing busy indicator for the data operations
 
 Indication of the data operation performed on the SfDataGrid can be showed with the help of `BusyIndicator` by setting the [ShowBusyIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowBusyIndicator.html) property to `true`. This will display an animated busy indicator image while performing the data operations such as loading large data, sorting, grouping, and filtering.
