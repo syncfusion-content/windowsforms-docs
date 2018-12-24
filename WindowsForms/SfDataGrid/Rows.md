@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows | DataGrid Control for Windows Forms | Syncfusion
+title: Rows | DataGrid | WinForms | Syncfusion
 description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
 platform: windowsforms
 control: SfDataGrid
@@ -55,7 +55,7 @@ Me.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Row header appearance customization in windows form datagrid](Rows_images/img9.png)
+![Row header appearance customization in windows form datagrid](Rows_images/img10.png)
 
 ### Row Indicators and its Description
 
