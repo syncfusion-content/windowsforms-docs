@@ -21,222 +21,223 @@ Follow the below steps to bind SfDataGrid with SfDataPager.
 {% highlight c# %}
 public partial class OrderInfo 
 {
-   private int _OrderID;
-   private DateTime _orderDate;
-   private string _CustomerID;
-   private double _unitPrice;
-   private int _Quantity;
-   private int _contactNumber;
-   private string _product;
-   private string _shipAddress;
+    private int _OrderID;
+    private DateTime _orderDate;
+    private string _CustomerID;
+    private double _unitPrice;
+    private int _Quantity;
+    private int _contactNumber;
+    private string _product;
+    private string _shipAddress;
 
+       public int OrderID
+    {
+        get
+        {
+            return this._OrderID;
+        }
+        set
+        {
+            this._OrderID = value;
+            this.OnPropertyChanged("OrderID");
+        }
+    }
 
-public int OrderID
-{
-    get
+      public string CustomerID
     {
-        return this._OrderID;
+        get
+        {
+            return this._CustomerID;
+        }
+        set
+        {
+            this._CustomerID = value;
+            this.OnPropertyChanged("CustomerID");
+        }
     }
-    set
-    {
-        this._OrderID = value;
-        this.OnPropertyChanged("OrderID");
-    }
-}
 
-public string CustomerID
-{
-    get
+       public string ProductName
     {
-        return this._CustomerID;
+        get
+        {
+            return this._product;
+        }
+        set
+        {
+            this._product = value;
+            this.OnPropertyChanged("ProductName");
+        }
     }
-    set
-    {
-        this._CustomerID = value;
-        this.OnPropertyChanged("CustomerID");
-    }
-}
 
-public string ProductName
-{
-    get
+       public DateTime OrderDate
     {
-        return this._product;
+        get
+        {
+            return _orderDate;
+        }
+        set
+        {
+            _orderDate = value;
+        }
     }
-    set
-    {
-        this._product = value;
-        this.OnPropertyChanged("ProductName");
-    }
-}
 
-public DateTime OrderDate
-{
-    get
+       public int Quantity
     {
-        return _orderDate;
+        get
+        {
+            return this._Quantity;
+        }
+        set
+        {
+            _Quantity = value;
+            OnPropertyChanged("Quantity");
+        }
     }
-    set
-    {
-        _orderDate = value;
-    }
-}
 
-public int Quantity
-{
-    get
+       public double UnitPrice
     {
-        return this._Quantity;
+        get
+        {
+            return _unitPrice;
+        }
+        set
+        {
+            _unitPrice = value;
+            OnPropertyChanged("UnitPrice");
+        }
     }
-    set
-    {
-        _Quantity = value;
-        OnPropertyChanged("Quantity");
-    }
-}
 
-public double UnitPrice
-{
-    get
+       public int ContactNumber
     {
-        return _unitPrice;
+        get
+        {
+            return this._contactNumber;
+        }
+        set
+        {
+            _contactNumber = value;
+            OnPropertyChanged("ContactNumber");
+        }
     }
-    set
-    {
-        _unitPrice = value;
-        OnPropertyChanged("UnitPrice");
-    }
-}
 
-public int ContactNumber
-{
-    get
+        public string ShipCountry
     {
-        return this._contactNumber;
+        get
+        {
+            return this._shipAddress;
+        }
+        set
+        {
+            this._shipAddress = value;
+            this.OnPropertyChanged("ShipCountry");
+        }
     }
-    set
-    {
-        _contactNumber = value;
-        OnPropertyChanged("ContactNumber");
-    }
-}
 
-public string ShipCountry
-{
-    get
+    public event PropertyChangedEventHandler PropertyChanged;
+    private void OnPropertyChanged(string propertyName)
     {
-        return this._shipAddress;
+        if (PropertyChanged != null)
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
     }
-    set
-    {
-        this._shipAddress = value;
-        this.OnPropertyChanged("ShipCountry");
-    }
-}
-}
 }
 
 {% endhighlight %}
 {% highlight vb %}
 Partial Public Class OrderInfo
-	
-   Private _OrderID As Integer
-   Private _orderDate As DateTime
-   Private _CustomerID As String
-   Private _unitPrice As Double
-   Private _Quantity As Integer
-   Private _contactNumber As Integer
-   Private _product As String
-   Private _shipAddress As String
+	Private _OrderID As Integer
+	Private _orderDate As DateTime
+	Private _CustomerID As String
+	Private _unitPrice As Double
+	Private _Quantity As Integer
+	Private _contactNumber As Integer
+	Private _product As String
+	Private _shipAddress As String
+	   Public Property OrderID() As Integer
+		Get
+			Return Me._OrderID
+		End Get
+		Set(ByVal value As Integer)
+			Me._OrderID = value
+			Me.OnPropertyChanged("OrderID")
+		End Set
+	   End Property
 
-Public Property OrderID() As Integer
-	Get
-		Return Me._OrderID
-	End Get
-	Set(ByVal value As Integer)
-		Me._OrderID = value
-		Me.OnPropertyChanged("OrderID")
-	End Set
-End Property
+	  Public Property CustomerID() As String
+		Get
+			Return Me._CustomerID
+		End Get
+		Set(ByVal value As String)
+			Me._CustomerID = value
+			Me.OnPropertyChanged("CustomerID")
+		End Set
+	  End Property
 
-Public Property CustomerID() As String
-	Get
-		Return Me._CustomerID
-	End Get
-	Set(ByVal value As String)
-		Me._CustomerID = value
-		Me.OnPropertyChanged("CustomerID")
-	End Set
-End Property
+	   Public Property ProductName() As String
+		Get
+			Return Me._product
+		End Get
+		Set(ByVal value As String)
+			Me._product = value
+			Me.OnPropertyChanged("ProductName")
+		End Set
+	   End Property
 
-Public Property ProductName() As String
-	Get
-		Return Me._product
-	End Get
-	Set(ByVal value As String)
-		Me._product = value
-		Me.OnPropertyChanged("ProductName")
-	End Set
-End Property
+	   Public Property OrderDate() As DateTime
+		Get
+			Return _orderDate
+		End Get
+		Set(ByVal value As DateTime)
+			_orderDate = value
+		End Set
+	   End Property
 
-Public Property OrderDate() As DateTime
-	Get
-		Return _orderDate
-	End Get
-	Set(ByVal value As DateTime)
-		_orderDate = value
-	End Set
-End Property
-  
-Public Property Quantity() As Integer
-	Get
-		Return Me._Quantity
-	End Get
-	Set(ByVal value As Integer)
-		_Quantity = value
-		OnPropertyChanged("Quantity")
-	End Set
-End Property
+	   Public Property Quantity() As Integer
+		Get
+			Return Me._Quantity
+		End Get
+		Set(ByVal value As Integer)
+			_Quantity = value
+			OnPropertyChanged("Quantity")
+		End Set
+	   End Property
 
-Public Property UnitPrice() As Double
-	Get
-		Return _unitPrice
-	End Get
-	Set(ByVal value As Double)
-		_unitPrice = value
-		OnPropertyChanged("UnitPrice")
-	End Set
-End Property
-   
-<Display(Name := "Contact Number")>
-Public Property ContactNumber() As Integer
-	Get
-		Return Me._contactNumber
-	End Get
-	Set(ByVal value As Integer)
-		_contactNumber = value
-		OnPropertyChanged("ContactNumber")
-	End Set
-End Property
+	   Public Property UnitPrice() As Double
+		Get
+			Return _unitPrice
+		End Get
+		Set(ByVal value As Double)
+			_unitPrice = value
+			OnPropertyChanged("UnitPrice")
+		End Set
+	   End Property
 
-Public Property ShipCountry() As String
-	Get
-		Return Me._shipAddress
-	End Get
-	Set(ByVal value As String)
-		Me._shipAddress = value
-		Me.OnPropertyChanged("ShipCountry")
-	End Set
-End Property
+	   Public Property ContactNumber() As Integer
+		Get
+			Return Me._contactNumber
+		End Get
+		Set(ByVal value As Integer)
+			_contactNumber = value
+			OnPropertyChanged("ContactNumber")
+		End Set
+	   End Property
 
-Public Event PropertyChanged As PropertyChangedEventHandler
-Private Sub OnPropertyChanged(ByVal propertyName As String)
-	If PropertyChangedEvent IsNot Nothing Then
-		RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-	End If
-End Sub
+		Public Property ShipCountry() As String
+		Get
+			Return Me._shipAddress
+		End Get
+		Set(ByVal value As String)
+			Me._shipAddress = value
+			Me.OnPropertyChanged("ShipCountry")
+		End Set
+		End Property
+
+	Public Event PropertyChanged As PropertyChangedEventHandler
+	Private Sub OnPropertyChanged(ByVal propertyName As String)
+		If PropertyChangedEvent IsNot Nothing Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
 End Class
-}
 {% endhighlight %}
 {% endtabs %}
 
