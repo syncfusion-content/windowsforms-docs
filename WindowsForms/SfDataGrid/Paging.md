@@ -9,13 +9,15 @@ documentation: ug
 
 # Paging
 
-SfDataGrid provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager.html) control.
+SfDataGrid provides support to manipulate data using the [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
-##Getting Started
-Follow the below steps to bind SfDataGrid with SfDataPager.
-1.	Create IEnumerable collection that you want to bind and set it to SfDataPager.Source property.
-2.	Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html)  property to specify the number of records to be displayed per page.
-3.	Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PagedSource.html) to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property. So whenever the page is changed, PagedSource will be update based on current page.
+## Getting started
+
+The following steps explain how to bind SfDataGrid with SfDataPager:
+
+1.	Create IEnumerable collection you want to bind, and set it to the SfDataPager.Source property.
+2.	Set the [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) property to specify the number of records to be displayed per page.
+3.	Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PagedSource.html) to the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property. So whenever the page is changed, the PagedSource will be update based on the current page.
 
 {% tabs %}
 {% highlight c# %}
@@ -326,24 +328,28 @@ End Class
 
 ![Getting Started sample](Paging_images/Paging1.png)
 
-### Limitation:
-1.	SfDataPager doesn’t accepts 'DataTable' as Source.
+### Limitations
+
+1. SfDataPager does not accept 'DataTable' as source.
 2. 'AddNewRow' is not supported in SfDataGrid.
 
-## Load Data in on-demand
-SfDataPager allows you to load data for current page alone using on-demand paging instead of loading data for all pages.
+## Load data on-demand
 
-Follow the below steps to load the ItemsSource for page in on-demand,
-1.	Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~AllowOnDemandPaging.html) as true.
-2.	Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) property.
-3.	Use [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event to load the DataSource for current page using [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~LoadDynamicData.html) method.
-4.	[OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
+SfDataPager allows you load data for the current page alone using the on-demand paging instead of loading data for all the pages.
 
-[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) has the following members,
-1.	[StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) - returns the start index based on PageIndex (Number of previous pages * PageSize).
-2.	[PageSize]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) ) - denotes the number of records to be displayed in the page.
+Follow the given steps to load ItemsSource for page on-demand:
 
-N> Do not assign SfDataPager.Source property while using on-demand paging.
+1.	Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~AllowOnDemandPaging.html) to true.
+2.	Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html) based on total number of records and the [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) property.
+3.	Use the [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event to load DataSource to the current page using the [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~LoadDynamicData.html) method.
+4.	The [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event occurs when SfDataPager moves to another page. You can load DataSource for corresponding page through the OnDemandLoading event.
+
+[OnDemandLoadingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) has the following members:
+
+1.	[StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html): Returns the start index based on PageIndex (number of previous pages * PageSize).
+2.	[PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html): Denotes the number of records to be displayed in a page.
+
+N> Do not assign the SfDataPager.Source property while using the on-demand paging.
 
 {% tabs %}
 {% highlight c# %}
@@ -375,7 +381,8 @@ End Sub
 {% endtabs %}
 
 ### Resetting Cache
-While navigating between the pages, records are loaded through `OnDemandLoading` event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from `OnDemandLoading` event. You can clear the cache by using [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. Once this method is invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
+
+While navigating between pages, the records are loaded through the `OnDemandLoading` event, and the records of the navigated pages will be maintained in cache. If you navigate to a already navigated page, the records are loaded from cache instead of loading from the `OnDemandLoading` event. You can clear the cache using the [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. After this method has been invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
 
 {% tabs %}
 {% highlight c# %}
@@ -401,7 +408,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can also clear the cache to particular page by specifying the PageIndex in [PageCollectionView.ResetCacheForPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCacheForPage.html) method.
+You can also clear the cache to a particular page by specifying PageIndex in the [PageCollectionView.ResetCacheForPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCacheForPage.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -412,8 +419,9 @@ TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCacheForPage(Me.sfDa
 {% endhighlight %}
 {% endtabs %}
 
-### Loading data from database in on-demand
-You can read the data from database in on-demand (here, records are retrieved from Northwind data provider) in [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event handler.
+### Loading data from database on-demand
+
+You can read data from database on-demand (the records are retrieved from Northwind data provider) in the [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -461,8 +469,8 @@ End Sub
 {% endtabs %}
 
 ### Changing PageCount at run time while filtering
-You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html)  at runtime based on the records count in ‘on-demand paging’. Here, PageCount are modified by filtering the records in run time.
 
+You can change [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html) at run time based on the records count in ‘on-demand paging’. Here, the PageCount is modified by filtering the records at run time.
 
 {% tabs %}
 {% highlight c# %}
@@ -572,12 +580,11 @@ End Sub
 
 ![Changing page count filtering at run time](Paging_images/Paging2.png)
 
-Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered.
-You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandPaging-1854434929) from here.
+Here, the records are filtered based on the text box text in the clicking event of the filter button. Initially, the PageCount is 5, and it will be changed to 1 after the records have been filtered. Refer to this [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandPaging-1854434929) for more details.
 
 ### Sorting complete collection
-You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event.
-In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
+
+You can sort the complete collection with on-demand paging using the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event. In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 {% tabs %}
 {% highlight c# %}
@@ -679,10 +686,11 @@ End Sub
 ![Sorting complete collection](Paging_images/Paging3.png)
 
 ### Limitations
-1.	UI Filtering is not supported. You can code in application level to filter the data.
-2.	Data processing operations (Sorting, Grouping) are done only in the current page.
+
+1.	UI Filtering is not supported. You can code in application level to filter data.
+2.	Data processing operations (sorting and grouping) are done only in the current page.
 3.	Deleting is not supported. You can code to delete row in application level.
-4.	Only the navigated pages are exported when `on-demand paging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+4.	Only the navigated pages are exported when `on-demand paging’ is enabled. If the navigated page cache is cleared, the corresponding page will not be exported.
 
 ## Appearance
 
@@ -715,7 +723,8 @@ Me.sfDataPager1.Style.PageButtonStyle.FocusedBackColor = Color.Silver
 ![PageButtonStyle](Paging_images/Paging5.png)
 
 Orientation:
-SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the Orientation Property. Orientation is an Enum type. The following table describes the Orientation enum values.
+
+SfDataPager allows you arrange the child elements either horizontally or vertically using the Orientation Property. Orientation is an Enum type. The following table describes the orientation enum values.
 
 <table>
 <tr>
@@ -731,7 +740,7 @@ SfDataPager allows you to arrange the child elements either horizontally or vert
 Horizontal
 </td>
 <td>
-This is the default enum value for Orientation. Arranges all the Navigation Buttons and Numeric Buttons Horizontally.
+This is the default enum value for orientation. It arranges all the navigation buttons and numeric buttons horizontally.
 ![Navigation Buttons and Numeric Buttons Horizontal](Paging_images/Paging6.png)
 
 </td>
@@ -741,7 +750,7 @@ This is the default enum value for Orientation. Arranges all the Navigation Butt
 Vertical
 </td>
 <td>
-Arranges all the Navigation Buttons and Numeric Buttons Vertically.
+Arranges all the navigation buttons and numeric buttons vertically.
 ![Navigation Buttons and Numeric Buttons Vertical](Paging_images/Paging7.png)
 
 </td>
