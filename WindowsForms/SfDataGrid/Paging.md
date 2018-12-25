@@ -374,6 +374,39 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Load data on-demand asynchronously
+
+Loading the data in on demand paging by using the busy indicator.
+
+% tabs %}
+{% highlight c# %}
+this.sfDataPager1.OnDemandLoading += OnDemandLoading;            
+
+private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
+{
+    //Show busy indicator while loading the data.
+    if (sfDataGrid.TableControl.IsHandleCreated)
+    {
+        busyIndicator.Show(this.sfDataGrid.TableControl);
+        Thread.Sleep(1000);
+    }
+    busyIndicator.Hide();
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
+
+private void OnDemandLoading(Object sender, OnDemandLoadingEventArgs e)
+	'Show busy indicator while loading the data.
+	If sfDataGrid.TableControl.IsHandleCreated Then
+		busyIndicator.Show(Me.sfDataGrid.TableControl)
+		Thread.Sleep(1000)
+	End If
+	busyIndicator.Hide()
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
 ### Resetting Cache
 While navigating between the pages, records are loaded through `OnDemandLoading` event and the records of navigated pages will be maintained in cache. If you navigate to already navigated page, the records are loaded from cache instead of loading from `OnDemandLoading` event. You can clear the cache by using [PageCollectionView.ResetCache](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~ResetCache.html) method. Once this method is invoked, the `OnDemandLoading` event will be raised while navigating multiple times to the same page.
 
@@ -573,7 +606,7 @@ End Sub
 ![Changing page count filtering at run time](Paging_images/Paging2.png)
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered.
-You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandPaging-1854434929) from here.
+You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
 
 ### Sorting complete collection
 You can sort the complete collection with on-demand paging by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event.
