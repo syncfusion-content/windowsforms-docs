@@ -866,6 +866,18 @@ public class CustomSelectionController : RowSelectionController
 {% endhighlight %}
 {% endtabs %}
 
+### Tab key navigation
+The current cell navigation can be disabled in `Tab` key using the [AllowStandardTab] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowStandardTab.html) property. If `AllowStandardTab` is enabled, then the focus will be moved to next control in tab order;if else, the current cell will be moved to next cell in order in DataGrid.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.AllowStandardTab = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.AllowStandardTab = True
+{% endhighlight %}
+{% endtabs %}
+
 ### Displaying Message Box on Current Cell Activated
 
 The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellActivated_EV.html) event provides notification when the current cell is moved from one cell to another.
