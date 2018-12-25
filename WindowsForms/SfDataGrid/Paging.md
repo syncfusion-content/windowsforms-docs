@@ -376,7 +376,7 @@ End Sub
 
 ### Load data on-demand asynchronously
 
-Loading the data in on demand paging by using the busy indicator.
+Loading the data in on demand paging by using the busy indicator. 
 
 % tabs %}
 {% highlight c# %}
