@@ -328,7 +328,7 @@ End Class
 
 ![Getting Started sample of paging  in winforms datagrid](Paging_images/Paging1.png)
 
-### Limitation
+### Limitations
 1.	SfDataPager doesn’t accepts `DataTable` as Source.
 2. `AddNewRow` is not supported in SfDataGrid.
 
@@ -337,9 +337,9 @@ End Class
 ## Load Data in on-demand
 SfDataPager allows you to load data for current page alone using on-demand paging instead of loading data for all pages.
 
-Follow the below steps to load the ItemsSource for page in on-demand,
+Follow the below steps to load the DataSource for page in on-demand,
 
-1.	 Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~AllowOnDemandPaging.html) as true.
+1.	 Set [SfDataPager.AllowOnDemandPaging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~AllowOnDemandPaging.html) as `true`.
 2.	 Set [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html) based on total number of records and [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) property.
 3. Use [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html) event to load the DataSource for current page using [LoadDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~LoadDynamicData.html) method.
 4.	 [OnDemandLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~OnDemandLoading_EV.html)  event is raised when SfDataPager moves to another page and you can load the DataSource for corresponding page through OnDemandLoading event.
@@ -500,7 +500,7 @@ End Sub
 {% endtabs %}
 
 ### Changing PageCount at run time while filtering
-You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html)  at runtime based on the records count in `on-demand paging`. Here, PageCount are modified by filtering the records in run time.
+You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html)  at runtime based on the records count in on-demand paging. Here, PageCount are modified by filtering the records in run time.
 
 
 {% tabs %}
@@ -721,7 +721,7 @@ End Sub
 1.	UI Filtering is not supported. You can code in application level to filter the data.
 2.	Data processing operations (Sorting, Grouping) are done only in the current page.
 3.	Deleting is not supported. You can code to delete row in application level.
-4.	Only the navigated pages are exported when `on-demand paging` is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+4.	Only the navigated pages are exported when on-demand paging is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
 
 ## Appearance
 
