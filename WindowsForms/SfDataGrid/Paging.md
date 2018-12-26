@@ -12,6 +12,7 @@ documentation: ug
 SfDataGrid provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
 ##Getting Started
+
 Follow the below steps to bind SfDataGrid with SfDataPager.
 1.	Create IEnumerable collection that you want to bind and set it to SfDataPager.Source property.
 2.	Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html)  property to specify the number of records to be displayed per page.
@@ -324,11 +325,13 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Getting Started sample](Paging_images/Paging1.png)
+![Getting Started sample of paging  in winforms datagrid](Paging_images/Paging1.png)
 
-### Limitation:
-1.	SfDataPager doesn’t accepts 'DataTable' as Source.
-2. 'AddNewRow' is not supported in SfDataGrid.
+### Limitation
+1.	SfDataPager doesn’t accepts `DataTable` as Source.
+2. `AddNewRow` is not supported in SfDataGrid.
+
+
 
 ## Load Data in on-demand
 SfDataPager allows you to load data for current page alone using on-demand paging instead of loading data for all pages.
@@ -343,7 +346,7 @@ Follow the below steps to load the ItemsSource for page in on-demand,
 1.	[StartRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.Events.OnDemandLoadingEventArgs~StartRowIndex.html) - returns the start index based on PageIndex (Number of previous pages * PageSize).
 2.	[PageSize]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.PagedCollectionView~PageSize.html) ) - denotes the number of records to be displayed in the page.
 
-N> Do not assign SfDataPager.Source property while using on-demand paging.
+N>  Do not assign SfDataPager.Source property while using on-demand paging.
 
 {% tabs %}
 {% highlight c# %}
@@ -374,7 +377,7 @@ End Sub
 
 Loading the data in on demand paging by using the busy indicator. 
 
-% tabs %}
+{% tabs %}
 {% highlight c# %}
 this.sfDataPager1.OnDemandLoading += OnDemandLoading;            
 
@@ -389,7 +392,8 @@ private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 
     sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize));
     busyIndicator.Hide();
-}{% endhighlight %}
+}
+{% endhighlight %}
 {% highlight vb %}
 AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
@@ -402,7 +406,8 @@ Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEv
 
 	sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 	busyIndicator.Hide()
-End Sub{% endhighlight %}
+End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ### Resetting Cache
@@ -492,7 +497,7 @@ End Sub
 {% endtabs %}
 
 ### Changing PageCount at run time while filtering
-You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html)  at runtime based on the records count in ‘on-demand paging’. Here, PageCount are modified by filtering the records in run time.
+You can change the [SfDataPager.PageCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager~PageCount.html)  at runtime based on the records count in `on-demand paging`. Here, PageCount are modified by filtering the records in run time.
 
 
 {% tabs %}
@@ -601,7 +606,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Changing page count filtering at run time](Paging_images/Paging2.png)
+![Changing page count filtering at run time  in winforms datagrid](Paging_images/Paging2.png)
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered.
 You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
@@ -707,13 +712,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting complete collection](Paging_images/Paging3.png)
+![Sorting the complete collection of data in winforms datagrid](Paging_images/Paging3.png)
 
 ### Limitations
 1.	UI Filtering is not supported. You can code in application level to filter the data.
 2.	Data processing operations (Sorting, Grouping) are done only in the current page.
 3.	Deleting is not supported. You can code to delete row in application level.
-4.	Only the navigated pages are exported when `on-demand paging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+4.	Only the navigated pages are exported when `on-demand paging` is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
 
 ## Appearance
 
@@ -730,7 +735,7 @@ Me.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color.SeaGreen
 {% endhighlight %}
 {% endtabs %}
 
-![NavigationButtonStyle](Paging_images/Paging4.png)
+![NavigationButtonStyle in winforms datagrid](Paging_images/Paging4.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -743,7 +748,7 @@ Me.sfDataPager1.Style.PageButtonStyle.FocusedBackColor = Color.Silver
 {% endhighlight %}
 {% endtabs %}
 
-![PageButtonStyle](Paging_images/Paging5.png)
+![PageButtonStyle in winforms datagrid](Paging_images/Paging5.png)
 
 ### Orientation
 SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Orientation.html) Property. Orientation is an Enum type. The following table describes the Orientation enum values.
@@ -762,8 +767,9 @@ SfDataPager allows you to arrange the child elements either horizontally or vert
 Horizontal
 </td>
 <td>
-This is the default enum value for Orientation. Arranges all the Navigation Buttons and Numeric Buttons Horizontally.
-![Navigation Buttons and Numeric Buttons Horizontal](Paging_images/Paging6.png)
+This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.
+
+![Navigation Buttons and Numeric Buttons are show Horizontally in winforms datagrid](Paging_images/Paging6.png)
 
 </td>
 </tr>
@@ -772,8 +778,9 @@ This is the default enum value for Orientation. Arranges all the Navigation Butt
 Vertical
 </td>
 <td>
-Arranges all the Navigation Buttons and Numeric Buttons Vertically.
-![Navigation Buttons and Numeric Buttons Vertical](Paging_images/Paging7.png)
+Arranges all the navigation buttons and numeric buttons vertically.
+
+![Navigation Buttons and Numeric Buttons are show vertically in winforms datagrid](Paging_images/Paging7.png)
 
 </td>
 </tr>
