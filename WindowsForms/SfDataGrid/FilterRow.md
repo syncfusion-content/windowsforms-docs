@@ -248,6 +248,7 @@ The default filter condition is Begins With. Following filter conditions are ava
 <li>Begins With</li>
 <li>Ends With</li>
 <li>Contains</li>
+<li>Does Not Contain</li>
 <li>Empty</li>
 <li>Not Empty</li>
 </ol>
