@@ -326,7 +326,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Getting Started sample of paging  in winforms datagrid](Paging_images/Paging1.png)
+![winforms datagrid shown with DataPager](Paging_images/Paging1.png)
 
 ### Limitations
 1.	SfDataPager doesn’t accepts `DataTable` as Source.
@@ -609,7 +609,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Changing page count filtering at run time  in winforms datagrid](Paging_images/Paging2.png)
+![Pagecount of datapager changed at runtime after filtering in winforms datagrid](Paging_images/Paging2.png)
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially PageCount is 5 and it is changed as 1 once the records are filtered.
 You can refer the [sample](https://github.com/SyncfusionExamples/how-to-change-the-PageCount-at-runtime-when-data-loaded-on-demand-is-filtered-in-winforms-datapager) from here.
@@ -715,7 +715,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting the complete collection of data in winforms datagrid](Paging_images/Paging3.png)
+![Complete collection loaded on-demand is sorted in winforms datagrid](Paging_images/Paging3.png)
 
 ### Limitations
 1.	UI Filtering is not supported. You can code in application level to filter the data.
@@ -738,7 +738,7 @@ Me.sfDataPager1.Style.NavigationButtonStyle.BackColor = Color.SeaGreen
 {% endhighlight %}
 {% endtabs %}
 
-![NavigationButtonStyle in winforms datagrid](Paging_images/Paging4.png)
+![Style of navigation buttons changed in winforms datapager](Paging_images/Paging4.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -751,7 +751,7 @@ Me.sfDataPager1.Style.PageButtonStyle.FocusedBackColor = Color.Silver
 {% endhighlight %}
 {% endtabs %}
 
-![PageButtonStyle in winforms datagrid](Paging_images/Paging5.png)
+![Style of page buttons changed in winforms datapager](Paging_images/Paging5.png)
 
 ### Orientation
 SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Orientation.html) Property. Orientation is an Enum type. The following table describes the Orientation enum values.
@@ -765,13 +765,13 @@ Description</th></tr>
 <tr>
 <td>
 Horizontal</td><td>
-This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.{{'![Navigation Buttons and Numeric Buttons are show Horizontally in winforms datagrid](Paging_images/Paging6.png)'|markdownify}}
+This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.{{'![Buttons arranged horizontally in winforms datapager](Paging_images/Paging6.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Vertical</td><td>
-Arranges all the navigation buttons and numeric buttons vertically.{{'![Navigation Buttons and Numeric Buttons are show Vertically in winforms datagrid](Paging_images/Paging7.png)'|markdownify}}
+Arranges all the navigation buttons and numeric buttons vertically.{{'![Buttons arrange vertically in winforms datapager](Paging_images/Paging7.png)'|markdownify}}
 
 </td></tr>
 </table>
