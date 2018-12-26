@@ -294,7 +294,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid showing AddNewRow Support in Mater-Details View](DataManipulation_images/AddNewRow_img9.png)
+![Winforms datagrid showing AddNewRow Support in Mater-Details View](DataManipulation_images/AddNewRow_img9.png)
 
 ## Delete Row
 SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing &lt;kbd&gt;Delete&lt;/kbd&gt; key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to true.
