@@ -356,9 +356,7 @@ this.sfDataPager1.OnDemandLoading += OnDemandLoading;
 }
 private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 {
-
 sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize));
-busyIndicator.Hide();
 }
 {% endhighlight %}
 {% highlight vb %}
@@ -367,9 +365,7 @@ Private employeeCollection As List(Of Employees)
 AddHandler Me.sfDataPager1.OnDemandLoading += AddressOf OnDemandLoading
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
-
 sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
-busyIndicator.Hide()
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -390,21 +386,23 @@ private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
         busyIndicator.Show(this.sfDataGrid.TableControl);
         Thread.Sleep(1000);
     }
+
+    sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize));
     busyIndicator.Hide();
-}
-{% endhighlight %}
+}{% endhighlight %}
 {% highlight vb %}
 AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
-private void OnDemandLoading(Object sender, OnDemandLoadingEventArgs e)
+Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
 	'Show busy indicator while loading the data.
 	If sfDataGrid.TableControl.IsHandleCreated Then
 		busyIndicator.Show(Me.sfDataGrid.TableControl)
 		Thread.Sleep(1000)
 	End If
+
+	sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 	busyIndicator.Hide()
-End Sub
-{% endhighlight %}
+End Sub{% endhighlight %}
 {% endtabs %}
 
 ### Resetting Cache
@@ -747,8 +745,8 @@ Me.sfDataPager1.Style.PageButtonStyle.FocusedBackColor = Color.Silver
 
 ![PageButtonStyle](Paging_images/Paging5.png)
 
-Orientation:
-SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the Orientation Property. Orientation is an Enum type. The following table describes the Orientation enum values.
+### Orientation
+SfDataPager allows you to arrange the child elements either horizontally or vertically. This can be achieved by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Orientation.html) Property. Orientation is an Enum type. The following table describes the Orientation enum values.
 
 <table>
 <tr>
