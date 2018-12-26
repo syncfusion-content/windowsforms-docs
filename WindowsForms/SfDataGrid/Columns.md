@@ -719,7 +719,7 @@ this.sfDataGrid.Columns["ProductName"].Visible = false;
 Me.sfDataGrid.Columns("ProductName").Visible = False
 {% endhighlight %}
 {% endtabs %}
-![Winforms datagrid shows with  hiding columns ](Columns_images/HiddenColumn.png)
+![Winforms datagrid shows with hiding columns](Columns_images/HiddenColumn.png)
 
 ## Column Drag and Drop
 SfDataGrid allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDraggingColumns.html) to true.
