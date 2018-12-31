@@ -376,13 +376,16 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-### Load data on-demand asynchronously
+### Asynchronous data loading
 
 Data to the `SfDataPager` can be loaded asynchronously using the [BusyIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Core.Utils.BusyIndicator.html).
 
 {% tabs %}
 {% highlight c# %}
+// Wire events.
 this.sfDataPager1.OnDemandLoading += OnDemandLoading;            
+
+BusyIndicator busyIndicator = new BusyIndicator();
 
 private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 {
@@ -398,7 +401,10 @@ private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
+' Wire events.
 AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
+
+Dim busyIndicator As New BusyIndicator()
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
 	'Show busy indicator while loading the data.
