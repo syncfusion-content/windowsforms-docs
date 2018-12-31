@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with GridControl for syncfusion Essential Windows Forms
+title: Getting Started | GridControl for Windows Forms | Syncfusion
 description: This section explains on how to add a GridControl in an application and some of the basic functionalities of it.
 platform: windowsforms
 control: Grid
@@ -15,11 +15,13 @@ This section will explain about creating simple GridControl and the overview of 
 
 Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
 
-[GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started) - a high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx#) data source including [ADO.NET](https://msdn.microsoft.com/en-us/library/e80y5yhx.aspx#) [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) and [IBindingList](https://msdn.microsoft.com/en-us/library/system.componentmodel.ibindinglist.aspx#) objects.
+[GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx#) data source including [ADO.NET](https://msdn.microsoft.com/en-us/library/e80y5yhx.aspx#) [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) and [IBindingList](https://msdn.microsoft.com/en-us/library/system.componentmodel.ibindinglist.aspx#) objects.
 
-[GridDataBoundGrid](http://help.syncfusion.com/windowsforms/databoundgrid/getting-started#) - a column oriented grid best suited for use with ADO.NET [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
+[GridDataBoundGrid](http://help.syncfusion.com/windowsforms/databoundgrid/getting-started#): A column oriented grid best suited for use with ADO.NET [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset.aspx#)/[DataTables](https://msdn.microsoft.com/en-US/library/system.data.datatable.aspx#) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](#Getting_Started) - a cell oriented grid that can contain its own data and does not need to be bound to a data source. It has the facility to easily be customized down to the cell level. This grid can also be used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid) such that it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid) such that, it can bind to any type of data source.
+
+[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Used to display collection of data in rows and columns.
 
 <table>
 <tr>
@@ -54,12 +56,22 @@ GC<br/><br/></td><td>
 -<br/><br/></td><td>
 *<br/><br/></td><td>
 Yes<br/><br/></td></tr>
+<tr>
+<td>
+SfDataGrid<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td></tr>
 </table>
 N> The ‘*’ is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454# "") and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control# "") supports can be added to the `GridControl` using the customizations. 
 
 For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
 
 If user wants a cell oriented grid that can contain its own data and does not need to be bound to a data source then `GridControl` is the best choice
+
+If the user wants the support for filtering, sorting, grouping, summary calculation and hierarchical data sources with the blazing performance, the `SfDataGrid` control is one of the best choice.
 
 ## Assembly Deployment
 
@@ -76,7 +88,7 @@ Grid Control can be added through designer by following the below steps.
 1. Create a new **Windows** **Form** **Application**.
 2. Drag and Drop GridControl from the toolbox into the designer page. 
 
-   ![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img1.jpeg)
+   ![windows forms grid control is dragged from toolbox](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img1.jpeg)
 
 
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
@@ -86,7 +98,7 @@ Grid Control can be added through designer by following the below steps.
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Windows.dll
 
-  ![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
+  ![windows forms grid control showing collection of rows and columns](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
 
 
 ### Adding GridControl through Code
@@ -101,7 +113,7 @@ GridControl can be added through code-behind by following the below steps.
 
 * Syncfusion.Shared.Base.dll
 
-   ![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img3.jpeg)
+   ![windows forms grid control showing assemblies](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img3.jpeg)
 
 
 3.Initialize a `GridControl` by using the below code in code behind.
@@ -250,7 +262,7 @@ End If
 
 Final Look of the Grid:
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img4.jpeg)
+![windows forms grid control showing collection of data](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img4.jpeg)
 
 
 ## Cell Styles
@@ -261,10 +273,10 @@ In GridControl, each cell contains distinct style information and can be display
 
 To edit the cell styles in `Designer mode`, the grid has to be selected in the designer mode and `Edit` option has to be clicked. This will allow the grid to be edited in the designer surface. Style settings also can be changed by using the `PropertyGrid` which is visible in the right side.
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img5.jpeg)
+![windows forms grid control showing edit option](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img5.jpeg)
 
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img6.jpeg)
+![windows forms grid control showing edited page](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img6.jpeg)
 
 
 In property grid, there are two tabs mainly.
@@ -276,14 +288,14 @@ In property grid, there are two tabs mainly.
 
 All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~BackColor.html#) property listed under the heading `Appearance` can be used and required color can be chosen.
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img7.jpeg)
+![windows forms grid control applying backcolor of whole grid](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img7.jpeg)
 
 
 `Selected Range` tab consists of all the properties related to a particular cell or selected range of cells. The style and format related properties can be changed for the desired range of cells.
 
 When you need to change the back color for the selected range of cells, then select the required cells and use the `BackColor` property listed under the heading `StyleCategoryAppearance` and required color can be chosen.
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img8.jpeg)
+![windows forms grid control applying backcolor of selected range](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img8.jpeg)
 
 
 ### Modifying Cell Styles through Code
@@ -321,7 +333,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style)
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img9.jpeg)
+![windows forms grid control showing modified cell styles](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img9.jpeg)
 
 
 ## Selection

@@ -27,3 +27,7 @@ documentation: ug
 * **Visual style** - Provides rich set of visual styles to customize the look and feel of MonthCalendarAdv.
 
 * **Accessibility** - Touch, keyboard, and mouse support to make applications available to a wide variety of users.
+
+## Choose between different calendar controls
+
+You can refer to the different calendar controls [here](https://help.syncfusion.com/windowsforms/sfcalendar/overview#choose-between-different-calendar-controls).

@@ -491,3 +491,7 @@ SupperTooltip can be displayed in the User Control embedded in the MFC Dialog.
 N> Support has been given in source level.
 
 ![Supporting SuperTooltip for MFC containers](SuperToolTip_images/SuperToolTip_img16.jpeg)
+
+## Choose between different tooltip controls
+
+You can refer to the different tooltip controls [here](https://help.syncfusion.com/windowsforms/sftooltip/overview#choose-between-different-tooltip-controls).

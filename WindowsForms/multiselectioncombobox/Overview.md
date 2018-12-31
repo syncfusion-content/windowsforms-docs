@@ -27,4 +27,6 @@ The MultiSelectionComboBox is a type of ComboBox Control with multiple item sele
 * Grouping Support: Supports to group its Drop Down items based on its initial character.
 * Multi-Selection: Supports to perform multiple items selection through drop down items, each represented with a checkbox.
 
+## Choose between different combobox controls
 
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
