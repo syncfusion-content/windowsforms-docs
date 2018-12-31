@@ -378,7 +378,7 @@ End Sub
 
 ### Load data on-demand asynchronously
 
-Loading the data in on demand paging by using the busy indicator. 
+Data to the `SfDataPager` can be loaded asynchronously using the [BusyIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Core.Utils.BusyIndicator.html).
 
 {% tabs %}
 {% highlight c# %}
