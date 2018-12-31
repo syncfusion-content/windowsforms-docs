@@ -19,4 +19,6 @@ This combo box automatically shows all the fields in the datasource. You can dat
 
 ![Overview of MultiColumnComboBox](Overview_images/Overview_img323.jpeg) 
 
+## Choose between different combobox controls
 
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).

@@ -20,3 +20,7 @@ The text box control provided with Windows Forms is capable of displaying and ed
 * Keyboard input validation - Intercept user's keyboard input and prevent entry of any keys that shouldn't be present in a currency value.
 * Data type - Provide the text contained in the text box as an appropriate data type (such as decimal) that can be used by the developer.
 * Culture formatting - Ensure that the formatting of the display is culture sensitive.
+
+## Choose between different textbox controls
+
+You can refer to the different textbox controls [here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/overview#choose-between-different-textbox-controls).

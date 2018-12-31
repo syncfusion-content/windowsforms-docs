@@ -15,3 +15,6 @@ DateTimePickerAdv is an advanced DateTimePicker control. It provides an easy way
 
  ![Overview of DateTimePickerAdv](DateTimePicker_images/Overview_img180.jpeg)
 
+## Choose between different DateTime controls
+
+You can refer to the different DateTime controls [here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview#choose-between-different-datetime-controls).

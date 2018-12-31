@@ -51,7 +51,7 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 ### SfDataGrid vs GridGroupingControl
 
-Both SfDataGrid and GridGroupingControl used for same purpose. But SfDataGrid control offers rich set of features over GridGroupingControl. When you want cell level customization and excel-like features, you can use SfDataGrid. Comparatively, the performance of SfDataGrid control is better than the GridGroupingControl.
+Both SfDataGrid and GridGroupingControl used for same purpose. But SfDataGrid control offers rich set of features over GridGroupingControl. When you want the support for filtering, sorting, grouping, summary calculation and hierarchical data sources with the blazing performance, you can use SfDataGrid. Comparatively, the performance of SfDataGrid control is better than the GridGroupingControl.
 
 You can see the list of some of the specific API difference between SfDataGrid and GridGroupingControl as follows:
 <table>

@@ -25,3 +25,6 @@ documentation: ug
 
 * **Caption labels** - Provides support to add Label in desired location on Caption Bar.
  
+## Choose between different form controls
+
+You can refer to the different button controls [here](https://help.syncfusion.com/windowsforms/sfform/overview#choose-between-different-form-controls).
