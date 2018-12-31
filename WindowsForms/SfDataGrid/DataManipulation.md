@@ -252,7 +252,7 @@ orderInfoCollection.OrdersListDetails.Add(orderInfo)
 ### AddNewRow support in Master-Details view
 You can enable the AddNewRow in DetailsViewDataGrid using the [GridViewDefinition.DataGrid] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridViewDefinition~DataGrid.html) property.
 
-#### Enabling AddNewRow Manually defining relations
+#### Enabling AddNewRow when manually defining relations
 For manually defined relations, the `AddNewRowPosition` can be directly initialized to the datagrid of the defined `GridViewDefinition`.
 
 {% tabs %}
@@ -274,7 +274,7 @@ sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 {% endhighlight %}
 {% endtabs %}
 
-#### Enabling AddNewRow Auto-generating relations
+#### Enabling AddNewRow when auto-generating relations
 When relation is auto-generated, you can initialize the `AddNewRowPosition` for `GridViewDefinition.DataGrid` in the [AutoGeneratingRelations] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
 
 {% tabs %}
