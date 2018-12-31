@@ -28,3 +28,7 @@ ComboBoxAdv is an advanced ComboBox control that contains the following feature
 * [AutoComplete](/windowsforms/autocomplete/overview) functionality can be provided.
 * You can bind the ComboBoxAdv to any external datasource. See [DataBinding.](https://help.syncfusion.com/windowsforms/comboboxadv/advanced-features#data-binding)
 * You can set visual styles to enrich your application.
+
+## Choose between different combobox controls
+
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
