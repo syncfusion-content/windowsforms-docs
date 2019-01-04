@@ -2641,7 +2641,7 @@ chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate;
 
 ## Axis line type
 
-The axis line can be customized using the `Linetype` property in axis option. The `Linetype` property has the following options to customize the axis lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
+The axis line can be customized using the `LineType` property in axis option. The `LineType` property has the following options to customize the axis lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
 
 **ForeColor**
 
@@ -2715,7 +2715,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 
 **Backcolor**
 
-When using the `Hatchfill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
+When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
 
 {% tabs %}
 
@@ -2740,7 +2740,7 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 
 ### Axis Gridline LineType
 
-The axis grid lines can be customized using the `Linetype` property in axis option. The `Linetype` property has the following options to customize the axis grid lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
+The axis grid lines can be customized using the `LineType` property in axis option. The `LineType` property has the following options to customize the axis grid lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
 
 **ForeColor**
 
@@ -2814,7 +2814,7 @@ chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.D
 
 **Backcolor**
 
-When using the `Hatchfill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
+When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
 
 {% tabs %}
 

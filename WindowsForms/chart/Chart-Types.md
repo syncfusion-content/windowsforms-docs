@@ -2125,7 +2125,7 @@ The minBounds and maxBounds of bubble series can be changed using the following 
 
 // Change the min and max bounds of bubble series.
 
-chartseries.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       chartseries.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
+series.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       series.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
 
 {% endhighlight %}
 
@@ -2133,7 +2133,7 @@ chartseries.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);    
 
 // Change the min and max bounds of bubble series.
 
-chartseries.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       chartseries.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
+series.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       series.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
 
 {% endhighlight %}
 {% endtabs %}
