@@ -10,6 +10,254 @@ documentation: ug
 
 # Data Manipulation
 
+SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping
+{% endhighlight %}
+{% endtabs %}
+
+
+## LiveDataUpdateMode
+
+### LiveDataUpdateMode – Default 
+
+<table>
+<tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Record added at last
+</td>
+<td>
+Updated
+</td>
+<td>
+Sort order not updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Groups not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Filter not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Not updated
+</td>
+<td>
+Not updated
+</td>
+<td>
+Not updated
+</td>
+</tr>
+</table>
+
+
+### LiveDataUpdateMode – AllowSummaryUpdate
+
+<table>
+<tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Record added at last
+</td>
+<td>
+Updated
+</td>
+<td>
+Sort order not updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Groups not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Filter not refreshed based on change
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+</table>
+
+
+### LiveDataUpdateMode – AllowDataShaping
+
+<table>
+<tr>
+<td>
+{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+</td>
+<td>
+{{'**Add**'| markdownify }}
+</td>
+<td>
+{{'**Remove / delete**'| markdownify }}
+</td>
+<td>
+{{'**Property change**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+{{'**Sorting**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated 
+</td>
+</tr>
+<tr>
+<td>
+{{'**Grouping**'| markdownify }}
+</td>
+<td>
+Updated 
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Filtering**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+<tr>
+<td>
+{{'**Summaries**'| markdownify }}
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+<td>
+Updated
+</td>
+</tr>
+</table>
+
+
+### Limitations
+
+* `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
+* Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
+
+
 ## AddNewRow
 SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AddNewRowPosition.html) property.
 When start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
