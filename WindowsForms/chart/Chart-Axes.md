@@ -2662,7 +2662,7 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img47.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img48.png)
 
 **Width**
 
@@ -2683,7 +2683,7 @@ chart.PrimaryXAxis.LineType.Width = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img49.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img49.jpeg)
 
 **DashStyle**
 
@@ -2711,7 +2711,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img50.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img50.jpeg)
 
 **Backcolor**
 
@@ -2736,7 +2736,7 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img54.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img54.jpeg)
 
 ### Axis Gridline LineType
 
@@ -2761,7 +2761,7 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img51.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img51.jpeg)
 
 **Width**
 
@@ -2782,7 +2782,7 @@ chart.PrimaryXAxis.GridLineType.Width = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img53.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img53.jpeg)
 
 **DashStyle**
 
@@ -2810,7 +2810,7 @@ chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.D
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img52.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img52.jpeg)
 
 **Backcolor**
 
@@ -2835,4 +2835,4 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img55.png)
+![Chart Axes](Chart-Axes_images/Chart-Axes_img55.jpeg)
