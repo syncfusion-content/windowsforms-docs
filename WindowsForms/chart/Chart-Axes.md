@@ -1366,7 +1366,7 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 You can now rotate the titles of axes to 0, 90, 180, and 270 degrees using the 'TitleRotationAngle' property of 'ChartAxis'.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2638,3 +2638,201 @@ chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate;
 {% endtabs %}
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img47.png)
+
+## Axis line type
+
+The axis line can be customized using the `LineType` property in axis option. The `LineType` property has the following options to customize the axis lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
+
+**ForeColor**
+
+You can change the axis line color using the `ForeColor` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img48.png)
+
+**Width**
+
+You can change the axis line width using the `Width` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.Width = 3;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.Width = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img49.jpeg)
+
+**DashStyle**
+
+You can change the axis line dash style using the `DashStyle` property. The `DashStyle` property has the following six dash styles:
+
+* Solid
+* Dash
+* Dot
+* DashDot
+* DashDotDot
+* Custom
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img50.jpeg)
+
+**BackColor**
+
+When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.BackColor = Color.Green;
+chart.PrimaryXAxis.LineType.ForeColor = Color.Red;
+chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGradient;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.BackColor = Color.Green;
+chart.PrimaryXAxis.LineType.ForeColor = Color.Red;
+chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGradient;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img54.jpeg)
+
+### Axis Gridline LineType
+
+The axis grid lines can be customized using the `LineType` property in axis option. The `LineType` property has the following options to customize the axis grid lines: `ForeColor`, `DashStyle`, `Width` and `BackColor`.
+
+**ForeColor**
+
+You can change the axis grid line color using the `ForeColor` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img51.jpeg)
+
+**Width**
+
+You can change the axis grid line width using the `Width` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.GridLineType.Width = 4;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.GridLineType.Width = 4;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img53.jpeg)
+
+**DashStyle**
+
+You can change the axis grid line dash style using the `DashStyle` property. The `DashStyle` property has the following six options:
+
+* Solid
+* Dash
+* Dot
+* DashDot
+* DashDotDot
+* Custom
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img52.jpeg)
+
+**BackColor**
+
+When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.PrimaryXAxis.LineType.BackColor = Color.Green;
+chart.PrimaryXAxis.LineType.ForeColor = Color.Red;
+chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGradient;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.PrimaryXAxis.LineType.BackColor = Color.Green;
+chart.PrimaryXAxis.LineType.ForeColor = Color.Red;
+chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGradient;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img55.jpeg)
