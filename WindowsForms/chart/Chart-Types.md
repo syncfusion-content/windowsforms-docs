@@ -13,7 +13,7 @@ Essential Chart includes a comprehensive set of more than 35 Chart types for all
 
 Chart types are specified on each [ChartSeries](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries.html) through the [Type](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartSeries~Type.html) property. All the chart types are required to have at least one X and one Y value. Certain chart types need more than one Y value.
 
-The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart. 
+The following table narrates the minimum and maximum number of series and number of Y values required by each type of chart supported by Essential Chart.
 
 <table>
 <tr>
@@ -228,7 +228,7 @@ Line Charts join points on a plot using straight lines showing trends in data at
 
 When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as **Ribbon or Strip Charts**.
 
-The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
+The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img1.jpeg)
 
@@ -238,11 +238,11 @@ Number of Y values per point – 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar. 
+Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
-Line series can be added to the chart using the following code. 
+Line series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -268,7 +268,7 @@ this.chartControl1.Series.Add(series);
 
 ' Create chart series and add data points into it.
 
-Dim series As New ChartSeries("Series Name",ChartSeriesType.Line) 
+Dim series As New ChartSeries("Series Name",ChartSeriesType.Line)
 
 series.Points.Add(1, new double[] { 20, 8, 8 })
 
@@ -291,7 +291,7 @@ Spline Chart is similar to a Line Chart except that it connects the different da
 
 When rendered in 3D, the plot looks like a ribbon and hence such types are also referred to as **Ribbon or Strip Charts**.
 
-The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
+The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img2.jpeg)
 
@@ -301,11 +301,11 @@ Number of Y values per point – 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
+Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Spline series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -333,7 +333,7 @@ this.chartControl1.Series.Add (series);
 
 {% highlight vb %}
 
-' Create chart series and add data points into it.   
+' Create chart series and add data points into it.
 
 Dim series As New ChartSeries ("Series Name", ChartSeriesType.Spline)
 
@@ -355,7 +355,7 @@ Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
 {% endtabs %}
- 
+
 ### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Images, Rotate.
@@ -376,15 +376,15 @@ Number of Y values per point – 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
+Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Rotated Spline series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
-// Create chart series and add data points into it.   
+// Create chart series and add data points into it.
 
 ChartSeries series1 = new ChartSeries(" Series 1",ChartSeriesType.RotatedSpline );
 
@@ -441,11 +441,11 @@ Number of Y values per point - 1.
 
 Number of Series - One or More.
 
-Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.        
+Cannot be Combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 StepLine series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -506,7 +506,7 @@ EssentialChart supports these different types of Bar Charts:
 
 Bar Chart is the simplest and most versatile of statistical diagrams. It displays horizontal bars for each point in the series and points from adjacent series are drawn as bars next to each other. It is also available with a 3D visual effect. Bar Charts can be used to compare values across categories, for showing the variations in the value of an item over time or for showing the values of several items at a single point in time.
 
-Another good reason to use bar charts is when you realize that the number of a data series fits better in a horizontal format. If you have long gaps between different values and you also have many items to compare, the bar chart type is the best one to use.  
+Another good reason to use bar charts is when you realize that the number of a data series fits better in a horizontal format. If you have long gaps between different values and you also have many items to compare, the bar chart type is the best one to use.
 
 The following image shows a multi series Bar Chart.
 
@@ -673,7 +673,7 @@ MarkerSupport - No.
 
 Cannot be combined with - Any other chart types.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -729,9 +729,9 @@ Me.chartControl1.Series.Add(series1)
 
 ## Gantt Chart
 
-A Gantt chart is a graphical representation of the duration of tasks against the progression of time. In a Gantt chart, each task takes up one row. The expected time for each task is represented by a horizontal bar whose left end marks the expected beginning of the task and whose right end marks the expected completion of the task. Tasks may run sequentially, in parallel or overlapping. 
+A Gantt chart is a graphical representation of the duration of tasks against the progression of time. In a Gantt chart, each task takes up one row. The expected time for each task is represented by a horizontal bar whose left end marks the expected beginning of the task and whose right end marks the expected completion of the task. Tasks may run sequentially, in parallel or overlapping.
 
-You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date. 
+You could then use another series to represent the completed portion of the different tasks. This new series will then contain data points with their beginning values coinciding with the beginning values of the data points from the previous series and the ending value based on the fraction of the work that has been completed on the task. This way, one can get a quick reading of a project progress by drawing a vertical line through the chart at the current date.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img8.jpeg)
 
@@ -743,9 +743,9 @@ Number of Series - One or More.
 
 Cannot be combined with - Pie, Bar, Polar, Radar.
 
-Gantt series can be added to the chart using the following code. 
+Gantt series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -793,11 +793,11 @@ Histogram is a bar (column) chart of a frequency distribution in which the width
 
 Histograms are useful data summaries that convey the following information:
 
-* The general shape of the frequency distribution. (normal, exponential, etc.) 
+* The general shape of the frequency distribution. (normal, exponential, etc.)
 * Symmetry of the distribution and whether it is skewed.
-* Modality - unimodal, bimodal or multimodal. 
+* Modality - unimodal, bimodal or multimodal.
 
-The shape of the distribution conveys important information such as the probability distribution of the data. 
+The shape of the distribution conveys important information such as the probability distribution of the data.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img9.jpeg)
 
@@ -843,7 +843,7 @@ this.chartControl1.Series.Add(series);
 
 ' Create chart series and add data points into it.
 
-Dim series As ChartSeries =  Me.chartControl1.Model.NewSeries("System 1",ChartSeriesType.Histogram) 
+Dim series As ChartSeries =  Me.chartControl1.Model.NewSeries("System 1",ChartSeriesType.Histogram)
 
 series.Text = series.Name
 
@@ -931,7 +931,7 @@ this.chartControl1.Series.Add(series2);
 
 ' Create chart series and add data points into it.
 
-Dim series As New ChartSeries("Series 0",ChartSeriesType.Tornado) 
+Dim series As New ChartSeries("Series 0",ChartSeriesType.Tornado)
 
 series.Points.Add(1,0, 48)
 
@@ -949,7 +949,7 @@ Me.chartControl1.Series.Add(series)
 
 ' Create chart series and add data points into it.
 
-Dim series2 As New ChartSeries("Series 0",ChartSeriesType.Tornado) 
+Dim series2 As New ChartSeries("Series 0",ChartSeriesType.Tornado)
 
 series2.Points.Add(1,0, -45)
 
@@ -982,7 +982,7 @@ EssentialChart supports these different Column Charts.
 
 ### Column Chart
 
-Column Charts are among the most common chart types that are being used. It uses vertical bars (called columns) to display different values of one or more items. It is similar to a bar chart except that, here the bars are vertical and not horizontal. Points from adjacent series are drawn as bars next to each other.  
+Column Charts are among the most common chart types that are being used. It uses vertical bars (called columns) to display different values of one or more items. It is similar to a bar chart except that, here the bars are vertical and not horizontal. Points from adjacent series are drawn as bars next to each other.
 
 It is used for comparing the frequency, count, total or average of data in different categories. It is ideal for showing the variations in the value of an item over time.
 
@@ -1000,7 +1000,7 @@ Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
 Column series can be added to the chart using the following code.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1048,7 +1048,7 @@ Me.chartControl1.Series.Add(series)
 
 ### Column Range Chart
 
-Column Range Chart is similar to the Column Chart except that each column is rendered over a range. Therefore the user must specify the y-axis starting and Ending values for each point. 
+Column Range Chart is similar to the Column Chart except that each column is rendered over a range. Therefore the user must specify the y-axis starting and Ending values for each point.
 
 The following figure shows a Column Range Chart.
 
@@ -1068,7 +1068,7 @@ The following code snippet illustrates this.
 
 // Create chart series and add data points into it.
 
-ChartSeries series = new ChartSeries("Series 0",ChartSeriesType.ColumnRange);      
+ChartSeries series = new ChartSeries("Series 0",ChartSeriesType.ColumnRange);
 
 series.Points.Add(0,100,400);
 
@@ -1126,9 +1126,9 @@ Number of Series - Two or More (A single series will render just like a bar char
 
 Cannot be combined with - Pie, Bar, Stacked Bar, Polar, Radar.
 
-Stacking column series can be added to the chart using the following code. 
+Stacking column series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1186,7 +1186,7 @@ Me.chartControl1.Series.Add(series2)
 
 {% endhighlight %}
 {% endtabs %}
- 
+
 ### Customization Options
 
 * Border, ColumnWidthMode, ColumnFixedWidth, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images.
@@ -1214,7 +1214,7 @@ SupportMarker – No.
 
 Cannot be combined with - Doughnut, Pie, Bar, Stacked Bar charts, Polar, Radar, Pyramid, or Funnel.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1270,7 +1270,7 @@ Me.chartControl1.Series.Add(series1)
 
 ## Area Charts
 
-Area Charts emphasize the degree of change of the values over a period of time. Instead of rendering data as discreet bars or columns, an Area Chart renders them in a continuous ebb and flow pattern as defined against the y-axis. 
+Area Charts emphasize the degree of change of the values over a period of time. Instead of rendering data as discreet bars or columns, an Area Chart renders them in a continuous ebb and flow pattern as defined against the y-axis.
 
 There is support for alpha-blending multiple series areas. The look and feel is also easily customizable by the user.
 
@@ -1278,7 +1278,7 @@ EssentialChart supports these various types of Area Charts:
 
 ### Area Chart
 
-The Area Chart connects the y points using straight lines and forms an area covered by the above lines and x-axis. This area is then shaded with a specified color or gradient. 
+The Area Chart connects the y points using straight lines and forms an area covered by the above lines and x-axis. This area is then shaded with a specified color or gradient.
 
 Multiple series can be plotted on the same chart and alpha-blended interior color can be used on the exterior chart to make the interior chart show through.
 
@@ -1296,7 +1296,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Gantt, Stacked Bar.
 
 An Area series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1344,16 +1344,16 @@ Me.chartControl1.Series.Add(series)
 ### Customization Options
 
 * Border, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat.
-* Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels. 
+* Spacing Between Series, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels.
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ### Spline Area Chart
 
-Spline Area Chart is similar to an Area Chart with the only difference being the way in which the points of a series are connected. It connects each series of points by a smooth spline curve. The area enclosed by the chart is filled with specified interior brush. 
+Spline Area Chart is similar to an Area Chart with the only difference being the way in which the points of a series are connected. It connects each series of points by a smooth spline curve. The area enclosed by the chart is filled with specified interior brush.
 
 Multiple series can be plotted on the same chart and alpha-blended interior color can be used on the exterior chart to make the interior chart(s) show through.
 
-The following image shows a multi series Spline Area Chart. 
+The following image shows a multi series Spline Area Chart.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img16.jpeg)
 
@@ -1367,7 +1367,7 @@ Cannot be Combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Spline area series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1436,7 +1436,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Stacking area series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1622,7 +1622,7 @@ Me.chartControl1.Series.Add(series3)
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, HighlightInterior, ImageIndex, Rotate, SeriesToolTipFormat, Spacing Between Series.
 
-ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, 
+ZOrder, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels,
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible
 
@@ -1650,7 +1650,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Step Area series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1703,9 +1703,9 @@ Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Rotate, 
 
 ## Range Area Chart
 
-RangeArea chart is similar to the Area charts; the only difference is, we need to give two y values (Start & End). RangeArea chart will be rendered from the start value of the x axis(Lower bounds), to end value of the y axis(upper bounds) above, on the corresponding x axis values. 
+RangeArea chart is similar to the Area charts; the only difference is, we need to give two y values (Start & End). RangeArea chart will be rendered from the start value of the x axis(Lower bounds), to end value of the y axis(upper bounds) above, on the corresponding x axis values.
 
-This chart type gives a clear look and it may be used in cases, where we have to display range of values, per single x point. 
+This chart type gives a clear look and it may be used in cases, where we have to display range of values, per single x point.
 
 For ex: if we have to display the range of temperature per day in a chart, RangeArea Chart will be the most convenient type of chart.
 
@@ -1721,7 +1721,7 @@ Minimum Number of Series - 1.
 
 Step Area series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1743,7 +1743,7 @@ series1.Points.Add(6, 17.7, 54);
 
 series1.Points.Add(7, 19, 52);
 
-this.chartControl1.Series.Add(series1); 
+this.chartControl1.Series.Add(series1);
 
 {% endhighlight %}
 
@@ -1808,7 +1808,7 @@ Number of Series - One.
 
 Cannot be combined with - Any other chart types.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1877,7 +1877,7 @@ Number of Series - One.
 
 Cannot be combined with - Any other chart types.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1924,9 +1924,9 @@ Me.chartControl1.Series.Add(series1)
 
 Border, DisplayText, DrawSeriesNameInDepth, FigureBase, GapRatio, HighlightInterior, LabelPlacement, LabelStyle, PyramidMode, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels, Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, ShowDataBindLabels.
 
-## XY Charts (Bubble and Scatter) 
+## XY Charts (Bubble and Scatter)
 
-Also known as XY Charts, these charts are used to visualize the relationship between two variables that relate to the same event. 
+Also known as XY Charts, these charts are used to visualize the relationship between two variables that relate to the same event.
 
 More details on the corresponding chart types:
 
@@ -1936,7 +1936,7 @@ Scatter Charts, also known as XY Charts, are a plot of x values and y values alo
 
 The scatter graph lets you plot data points based on two independent variables. The variable that we seek to predict is called the **dependent variable or y-variable**. The variable on which it depends is called the independent variable or the x-variable. Scatter graphs can chart multiple data sets, each represented by a different symbol and each having any number of data points.
 
-It is used to display numerical data, either discrete or continuous. Scatter charts are commonly used for visualizing scientific data. 
+It is used to display numerical data, either discrete or continuous. Scatter charts are commonly used for visualizing scientific data.
 
 The following image shows a multi series Scatter Chart.
 
@@ -1952,7 +1952,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Scatter series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1993,7 +1993,7 @@ Me.chartControl1.Series.Add (series)
 
 The symbols can be configured using the ChartSeries.Styles[i].Symbol property as in the following example.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2039,7 +2039,7 @@ series.Styles (2).Symbol = New ChartSymbolInfo()
 
 series.Styles (2).Symbol.Color = Color.Blue
 
-series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross 
+series.Styles (2).Symbol.Shape = ChartSymbolShape.Cross
 
 {% endhighlight %}
 {% endtabs %}
@@ -2068,7 +2068,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Bubble series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2106,10 +2106,41 @@ series.Points.Add (2, 4, 9)
 
 ' Add the series to the chart series collection.
 
-Me.chartControl1.Series.Add (series) 
+Me.chartControl1.Series.Add (series)
 
 {% endhighlight %}
 {% endtabs %}
+
+### MinBounds and MaxBounds
+
+The size of the bubbles depends on MinBounds and MaxBounds of the bubbleItem in series. By default, the minBounds is (20, 20) and MaxBounds is (50, 50), so the width and height of the bubbles lie between 20 and 50.
+
+You can change the minBounds and maxBounds using the `minBounds` and `maxBounds` properties in series options.
+
+The minBounds and maxBounds of bubble series can be changed using the following code.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// Change the min and max bounds of bubble series.
+
+chartseries.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       chartseries.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+// Change the min and max bounds of bubble series.
+
+chartseries.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       chartseries.ConfigItems.BubbleItem.MaxBounds = new RectangleF(0, 0, 25, 25);
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates changing the min and max bounds from the default value.
+
+![Chart Types](Chart-Types_images/Chart-Types_img48.jpeg)
 
 ### Customization Options
 
@@ -2131,7 +2162,7 @@ Financial Chart types are supported in EssentialChart.
 
 A Candle chart displays stock information using the **High, Low, Open and Close values**. The Hi and Lo values are represented by the wick of a candle. The candle represents open and close values.
 
-The following image shows a CandleChart displaying a single series. 
+The following image shows a CandleChart displaying a single series.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img31.jpeg)
 
@@ -2145,7 +2176,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 Candle series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2192,13 +2223,13 @@ Me.chartControl1.Series.Add(series)
 
 Border, DisplayShadow, DisplayText, DrawSeriesNameInDepth, ImageIndex, Images, PhongAlpha, Rotate, Spacing Between Series.
 
-ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels. 
+ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels.
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ### HiLo Chart
 
-HiLo Chart is a special kind of chart that is normally used in stock analysis. They are typically used to display error bars or the trading range of a stock for each period. 
+HiLo Chart is a special kind of chart that is normally used in stock analysis. They are typically used to display error bars or the trading range of a stock for each period.
 
 The Hi Lo Chart expects two y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
@@ -2214,7 +2245,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
 HiLo series can be added to the chart using the following code.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2271,9 +2302,9 @@ Number of Series - One or More.
 
 Cannot be combined with - Pie, Bar, Polar, Radar, Stacked Bar.
 
-HiLo Open Close series can be added to the chart using the following code. 
+HiLo Open Close series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2336,13 +2367,13 @@ Number of Series - One.
 
 Cannot be combined with - Pie, Bar.
 
-Kagi series can be added to the chart using the following code. 
+Kagi series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
-// Create chart series and add data points into it.   
+// Create chart series and add data points into it.
 
 ChartSeries series = new ChartSeries ("Series Name", ChartSeriesType.Kagi);
 
@@ -2433,9 +2464,9 @@ If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the
 
 ### Point and Figure Chart
 
-Point and Figure Chart is used to identify support levels, resistance levels and chart patterns. The chart ignores the time factor and concentrates solely on movements in price - a column of X's or O's may take one day or several weeks to complete. By convention, the first X in a column is plotted one box above the last O in the previous column (and the first O in a column is plotted one box below the highest X).  
+Point and Figure Chart is used to identify support levels, resistance levels and chart patterns. The chart ignores the time factor and concentrates solely on movements in price - a column of X's or O's may take one day or several weeks to complete. By convention, the first X in a column is plotted one box above the last O in the previous column (and the first O in a column is plotted one box below the highest X).
 
-This is a chart that plots the day-to-day increment and decrement in price. It uses a series of X's and O's to determine price trends where the X's represent an upward trend and the O's represent a downward trend. The default value of ReversalAmount is 1. Use the PriceUpColor to specify the color for the X's and PriceDownColor to specify the color for the O's. 
+This is a chart that plots the day-to-day increment and decrement in price. It uses a series of X's and O's to determine price trends where the X's represent an upward trend and the O's represent a downward trend. The default value of ReversalAmount is 1. Use the PriceUpColor to specify the color for the X's and PriceDownColor to specify the color for the O's.
 
 This chart requires two y values, the high value and the low value for the specified period.
 
@@ -2451,7 +2482,7 @@ Cannot be combined with - Pie, Bar.
 
 Point and Figure series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2465,7 +2496,7 @@ series.Points.Add (0, 1, 5);
 
 series.Points.Add (1, 3, 7);
 
-series.Points.Add (2, 4, 8);             
+series.Points.Add (2, 4, 8);
 
 series.ReversalAmount = 1.0;
 
@@ -2477,9 +2508,9 @@ this.chartControl1.Series.Add (series);
 
 {% highlight vb %}
 
-' Create chart series and add data points into it.   
+' Create chart series and add data points into it.
 
-Dim series As New ChartSeries ("Series Name",ChartSeriesType.PointAndFigure) 
+Dim series As New ChartSeries ("Series Name",ChartSeriesType.PointAndFigure)
 
 ' Arguments: X value, low value, high value
 
@@ -2487,9 +2518,9 @@ series.Points.Add (0, 1, 5)
 
 series.Points.Add (1, 3, 7)
 
-series.Points.Add (2, 4, 8)        
+series.Points.Add (2, 4, 8)
 
-series.ReversalAmount = 1.0 
+series.ReversalAmount = 1.0
 
 ' Add the series to the chart series collection.
 
@@ -2510,7 +2541,7 @@ Renko charting method is thought to have acquired its name from **renga** which 
 
 If the new closing price penetrates the previous bricks closing price in the opposite direction a trend reversal highlighted by the change in color of the bricks happens. Use the **PriceUpColor** to indicate bullish trend and **PriceDownColor** to indicate bearish trend.
 
-Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.  
+Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img37.jpeg)
 
@@ -2524,11 +2555,11 @@ Cannot be combined with - Pie, Bar.
 
 Renko series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
-// Create chart series and add data points into it.   
+// Create chart series and add data points into it.
 
 ChartSeries series = new ChartSeries ("Series Name",ChartSeriesType.Renko);
 
@@ -2550,7 +2581,7 @@ this.chartControl1.Series.Add (series);
 
 ' Create chart series and add data points into it.
 
-Dim series As New ChartSeries ("Series Name",ChartSeriesType.Renko) 
+Dim series As New ChartSeries ("Series Name",ChartSeriesType.Renko)
 
 series.Points.Add (0, 1)
 
@@ -2592,11 +2623,11 @@ Cannot be combined with - Pie, Bar.
 
 Three Line Break series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
-// Create chart series and add data points into it.   
+// Create chart series and add data points into it.
 
 ChartSeries series = new ChartSeries ("Series Name",ChartSeriesType.ThreeLineBreak);
 
@@ -2614,7 +2645,7 @@ this.chartControl1.Series.Add (series);
 
 {% highlight vb %}
 
-' Create chart series and add data points into it.   
+' Create chart series and add data points into it.
 
 Dim series As New ChartSeries ("Series Name", ChartSeriesType.ThreeLineBreak)
 
@@ -2634,7 +2665,7 @@ Me.chartControl1.Series.Add (series)
 ### Customization Options
 
 * DisplayShadow, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, PriceDownColor, PriceUpColor, Spacing Between Series.
-* ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels. 
+* ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels.
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ### Box And Whisker Chart
@@ -2652,12 +2683,12 @@ The following is an example of a Box and Whisker plot.
 The Box and Whisker plot is interpreted as follows.
 
 * The box itself contains the middle 50% of the data. The upper edge (hinge) of the box indicates the 75th percentile of the data set and the lower hinge indicates the 25th percentile. The range of the middle two quartiles is known as the inter-quartile range.
-* The line in the box indicates the median value of the data. 
-* Box and Whisker chart has two modes, Normal mode and Percentile mode. 
+* The line in the box indicates the median value of the data.
+* Box and Whisker chart has two modes, Normal mode and Percentile mode.
 * In Normal Mode, if the median line within the box is not equidistant from the hinges, then the data is skewed. The ends of the vertical lines or "whiskers" indicate the minimum and maximum data values, unless outliers are present, in which case the whiskers extend to a maximum of 1.5 times the inter-quartile range.
 * In Percentile Mode: [Set Series1.ConfigItems.BoxAndWhiskerItem.PercentileMode property to _true_], the ends of the vertical lines or "whiskers" will be decided by the Series1.ConfigItems.BoxAndWhiskerItem.Percentile property value. For example, if the 'Percentile' value is 0.15, then the minimum value will be the 15th percentile of the overall data set and the maximum value will be 85th percentile of the overall data set.
 
-N>1.The percentile value should lie between 0.0 and 0.25.  
+N>1.The percentile value should lie between 0.0 and 0.25.
 N>
 N>2.It is not possible to set upper Percentile value. It is calculated automatically based on the Percentile value.
 N>
@@ -2683,7 +2714,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar.
 
 Box and Whisker series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2764,7 +2795,7 @@ Cannot be combined with - Any other chart types.
 
 Pie series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2807,7 +2838,7 @@ Me.chartControl1.Series.Add(series)
 
 * AngleOffset, Border, DisplayShadow, DisplayText, DoughnutCoefficient, DrawSeriesNameInDepth, ElementBorders, ExplodedAll, ExplodedIndex, ExplosionOffset.
 * FillMode, Gradient, HeightByAreaDepth, HeightCoefficient, HighlightInterior, InSideRadius, OptimizePiePointPositions, PieType, ShadowInterior, ShadowOffset.
-* ShowTicks, VisibleAllPies, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels. 
+* ShowTicks, VisibleAllPies, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels.
 * Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible, ShowDataBindLabels.
 
 ### Doughnut Chart
@@ -2816,7 +2847,7 @@ Me.chartControl1.Series.Add(series)
 
 PieCharts specified with a [DoughnutCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~DoughnutCoeficient.html) will be rendered as the Doughnut chart. By default, this value is set to 0.0 and hence the chart will be rendered as a full pie. The [DoughnutCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~DoughnutCoeficient.html) property specifies the fraction of radius occupied by the doughnut whole. Hence the value can range from 0.0 to 0.9.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2837,7 +2868,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 
 When in 3D mode, the relative height of the pie chart can be specified via the [HeightCoefficient](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~HeightCoeficient.html) property. Note that the [HeightByAreaDepth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartPieConfigItem~HeightByAreaDepth.html) property should be set as false for this to take effect. The valid values are 0.1f to 0.5f. This property is set to 0.2f by default.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2892,7 +2923,7 @@ Cannot be combined with - Any other chart types.
 
 Polar series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2904,7 +2935,7 @@ series.Points.Add (0, 1);
 
 series.Points.Add (1, 3);
 
-series.Points.Add (2, 4); 
+series.Points.Add (2, 4);
 
 // Add the series to the chart series collection.
 
@@ -2916,7 +2947,7 @@ this.chartControl1.Series.Add (series);
 
 ' Create chart series and add data points into it.
 
-Dim series As New ChartSeries ("Series Name",ChartSeriesType.Polar) 
+Dim series As New ChartSeries ("Series Name",ChartSeriesType.Polar)
 
 series.Points.Add (0, 1)
 
@@ -2935,19 +2966,19 @@ Me.chartControl1.Series.Add (series)
 
 Border, DisplayText, DrawSeriesNameInDepth, ElementBorders, ImageIndex, Images, LightAngle, LightColor, Radar Type, Rotate.
 
-ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels. 
+ShadingMode, ShadowInterior, ShadowOffset, FancyToolTip, Font, Interior, LegendItem, Name, PointsToolTipFormat, SmartLabels.
 
 Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 ### Radar Chart
 
-Radar Chart is the clock face form of a line chart. It represents each data series as a line around a central point. The category (x) variable is plotted at equally spaced points around the clock. The y variable is plotted as a radius, so each category has its own y-axis radiating from the center. 
+Radar Chart is the clock face form of a line chart. It represents each data series as a line around a central point. The category (x) variable is plotted at equally spaced points around the clock. The y variable is plotted as a radius, so each category has its own y-axis radiating from the center.
 
 Some scenarios where this chart type could be used
 
 * When you want to compare the aggregate values of a number of data series.
-* Graphically display the differences between actual and ideal performance, thereby using this chart to define performance and identifying strengths and weaknesses. 
-* This is also an ideal chart to use when the categories have a natural cyclic order, for example, seasons of the year. 
+* Graphically display the differences between actual and ideal performance, thereby using this chart to define performance and identifying strengths and weaknesses.
+* This is also an ideal chart to use when the categories have a natural cyclic order, for example, seasons of the year.
 * Radar charts supports plotting the axis values in the reverse direction / clockwise direction also, by setting the Inversed property of axis to _true_.
 
 ![Chart Types](Chart-Types_images/Chart-Types_img45.jpeg)
@@ -2962,7 +2993,7 @@ Cannot be combined with - Any other chart types.
 
 Radar series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -2990,7 +3021,7 @@ this.chartControl1.Series.Add (series);
 
 ' Create chart series and add data points into it.
 
-Dim series As New ChartSeries ("Series Name",ChartSeriesType.Radar) 
+Dim series As New ChartSeries ("Series Name",ChartSeriesType.Radar)
 
 series.Points.Add(1, 83)
 
@@ -3021,7 +3052,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 Combination Charts refers to the ability to display multiple data series in the same chart with each series visualized using different chart types. In Essential Chart, Chart types that are compatible with each other may be combined in the same Chart Area.
 
-Typically it is a combination of a Line chart and a Column chart, sharing a common x-axis but with separate y-axes, one on either side of the chart. 
+Typically it is a combination of a Line chart and a Column chart, sharing a common x-axis but with separate y-axes, one on either side of the chart.
 
 One can change an existing chart to a combination chart by selecting the data series you want to change and then changing the chart type for that series.
 
@@ -3035,7 +3066,7 @@ Cannot be combined with - Pie, Bar, Polar, Radar.
 
 Combination series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -3089,7 +3120,7 @@ series2.Points.Add (2, 4)
 
 Me.chartControl1.Series.Add (series)
 
-Me.chartControl1.Series.Add (series2) 
+Me.chartControl1.Series.Add (series2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -3106,7 +3137,7 @@ A heat map chart is a graphical representation of data where the values taken by
 
 #### Chart Details
 
-Number of Y values per point - 2. 
+Number of Y values per point - 2.
 
 Number of Series - One.
 
@@ -3114,7 +3145,7 @@ Cannot be Combined with - Any other chart types.
 
 Combination series can be added to the chart using the following code.
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -3220,7 +3251,7 @@ Sets the middle value color of the heat map chart.</td></tr>
 Sets the margin for the left and right side labels.</td></tr>
 </table>
 
-{% tabs %}  
+{% tabs %}
 
 {% highlight c# %}
 
@@ -3272,7 +3303,7 @@ Me.chartControl1.Series(0).ConfigItems.HeatMapItem.DisplayTitle = True
 
 'Sets the start and end text.
 
-series.ConfigItems.HeatMapItem.StartText = "US"            
+series.ConfigItems.HeatMapItem.StartText = "US"
 
 series.ConfigItems.HeatMapItem.EndText = "Utah"
 
@@ -3306,7 +3337,7 @@ There are different types of stacking charts:
 
 ## Step Charts
 
-Step Charts are similar to regular charts except that the values are drawn continuously, step-by-step without any gaps in-between. 
+Step Charts are similar to regular charts except that the values are drawn continuously, step-by-step without any gaps in-between.
 
 There are two types of step charts.
 
