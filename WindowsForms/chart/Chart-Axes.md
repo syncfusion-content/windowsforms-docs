@@ -2713,7 +2713,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img50.jpeg)
 
-**Backcolor**
+**BackColor**
 
 When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
 
@@ -2812,7 +2812,7 @@ chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.D
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img52.jpeg)
 
-**Backcolor**
+**BackColor**
 
 When using the `HatchFill` or `LinearGradient` pen type, one more color is needed for axis line. You can use either `ForeColor` or `BackColor` for these pen types.
 
