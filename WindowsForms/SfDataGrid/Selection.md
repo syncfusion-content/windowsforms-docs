@@ -867,7 +867,7 @@ public class CustomSelectionController : RowSelectionController
 {% endtabs %}
 
 ### Tab key navigation
-The current cell navigation can be disabled in `Tab` key using the [AllowStandardTab] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowStandardTab.html) property. If `AllowStandardTab` is enabled, then the focus will be moved to next control in tab order;if else, the current cell will be moved to next cell in order in DataGrid.
+The current cell navigation can be disabled in `Tab` key using the [AllowStandardTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowStandardTab.html) property. If `AllowStandardTab` is enabled, then the focus will be moved to next control in tab order;if else, the current cell will be moved to next cell in order in DataGrid.
 
 {% tabs %}
 {% highlight c# %}
