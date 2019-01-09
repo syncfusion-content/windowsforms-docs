@@ -130,3 +130,21 @@ Office12ColorTable.ApplyManagedColors(Me.buttonAdv1,Color.Orange )
 {% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img9.png)
+
+## Apply Themes to Entire Application
+
+Apply themes for all the forms present in entire applicationby setting in single place. This application level support of skinmanager can be enabled by using `ApplicationVisualTheme` property. It can be applied before the main form gets initialized.
+
+{% tabs %}
+{% highlight c# %}
+
+static void Main() 
+    { 
+        Application.EnableVisualStyles(); 
+        Application.SetCompatibleTextRenderingDefault(false); 
+        SkinManager.ApplicationVisualTheme = VisualTheme.Office2016Colourful; 
+        Application.Run(new Form1()); 
+    } 
+
+{% endhighlight c# %}
+{% endtabs %}
