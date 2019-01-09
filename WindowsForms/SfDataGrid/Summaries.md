@@ -728,6 +728,19 @@ Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryR
 {% endtabs %}
 ![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
 
+## On-demand summary calculation for group and caption summary
+
+You can calculate the caption and group summaries on-demand by setting the [sfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SummaryCalculationMode.html) property to ‘CalculationMode.OnDemandCaptionSummary’ or ‘CalculationMode.OnDemandGroupSummary’. You can set this property when loading more number of summary columns on summary row or more number of group summaries to improve loading performance. The on-demand summary calculation calculates summaries for the summary rows that are visible, and summaries for other rows will be calculated only when it comes into view.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary | CalculationMode.OnDemandGroupSummary;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary Or CalculationMode.OnDemandGroupSummary
+{% endhighlight %}
+{% endtabs %}
+
 ## Formatting Summary
 In the below sections, formatting is explained using table summary. In the same way, group and caption summaries can also be formatted.
 
@@ -901,19 +914,6 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endtabs %}
 
 ![Windows forms datagrid showing formatting summary for row](SfDataGrid_Summaries_UG_images/summaries20.png)
-
-### On-demand summary calculation for group and caption summary
-
-You can calculate the caption and group summaries on-demand by setting the [sfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SummaryCalculationMode.html) property to ‘CalculationMode.OnDemandCaptionSummary’ or ‘CalculationMode.OnDemandGroupSummary’. You can set this property when loading more number of summary columns on summary row or more number of group summaries to improve loading performance. The on-demand summary calculation calculates summaries for the summary rows that are visible, and summaries for other rows will be calculated only when it comes into view.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary | CalculationMode.OnDemandGroupSummary;
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary Or CalculationMode.OnDemandGroupSummary
-{% endhighlight %}
-{% endtabs %}
 
 ## Custom Summaries
 SfDataGrid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement.
