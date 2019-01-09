@@ -709,7 +709,7 @@ End Sub
 {% endtabs %}
 
 ### Hiding Columns
-You can hide any column in SfDataGrid by using [GridColumnBase.Visible] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Visible.html) property. Refer to the following code example.
+You can hide any column in SfDataGrid by using [GridColumnBase.Visible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Visible.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
