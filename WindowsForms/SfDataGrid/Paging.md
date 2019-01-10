@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid provides support to manipulate the data using [SfDataPager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataPager.SfDataPager.html) control.
 
-##Getting Started
+## Getting Started
 
 Follow the below steps to bind SfDataGrid with SfDataPager.
 
@@ -771,13 +771,15 @@ Description</th></tr>
 <tr>
 <td>
 Horizontal</td><td>
-This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.{{'![Buttons arranged horizontally in winforms datapager](Paging_images/Paging6.png)'|markdownify}}
+This is the default enum value for Orientation. Arranges all the navigation buttons and numeric buttons horizontally.
+{{'![Buttons arranged horizontally in winforms datapager](Paging_images/Paging6.png)'|markdownify}}
 
 </td></tr>
 <tr>
 <td>
 Vertical</td><td>
-Arranges all the navigation buttons and numeric buttons vertically.{{'![Buttons arrange vertically in winforms datapager](Paging_images/Paging7.png)'|markdownify}}
+Arranges all the navigation buttons and numeric buttons vertically.
+{{'![Buttons arrange vertically in winforms datapager](Paging_images/Paging7.png)'|markdownify}}
 
 </td></tr>
 </table>
