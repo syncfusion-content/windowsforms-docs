@@ -19,7 +19,7 @@ The following are steps to add the Skin Manager control to an application throug
 
 1. Drag the Skin Manager from the Toolbox tab to the designer.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![Windows forms skin manager dragged from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -47,7 +47,7 @@ SkinManager.SetVisualStyle(Me.buttonAdv1, VisualTheme.Office2007Blue)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Calculator control applied with Office2007Blue theme](Getting-Started_images/Getting-Started_img2.png)
 
 To add Skin Manager to the entire form, specify the form as root control. The following code illustrates this: 
 
@@ -65,7 +65,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Calculator control applied with Office2007Blue theme to entire form](Getting-Started_images/Getting-Started_img3.png)
 
 ## Applying theme 
 
@@ -76,9 +76,9 @@ The following are the steps to apply the required skin to the form through desig
 1. Open the Properties Window.
 2. In the Controls field assign the root control for which you want to apply the theme. 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img4.png)
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img5.png)
 
 ## Adding themes to controls with skin manager at designer time
 
@@ -86,9 +86,9 @@ Once the SkinManager is applied to a parent form or container, the new controls 
 
 The following images describe the same in applying the Office2007Black theme to the newly added control [ButtonAdv] after the theme is applied to the form through the SkinManager.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img6.png)
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Calculator control showing to applied Office2007Black theme to newly added control by property window](Getting-Started_images/Getting-Started_img7.png)
 
 ### Through code
 
@@ -110,7 +110,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Calculator control showing how to apply office2007 theme](Getting-Started_images/Getting-Started_img8.png)
 
 
 The following code illustrates how to apply Managed themes:
@@ -129,4 +129,22 @@ Office12ColorTable.ApplyManagedColors(Me.buttonAdv1,Color.Orange )
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Calculator control showing how to apply managed themes](Getting-Started_images/Getting-Started_img9.png)
+
+## Apply Themes to entire application
+
+Apply themes to all the forms present in the application by setting in single place. This application-level support of skin manager can be enabled using the `ApplicationVisualTheme` property. It can be applied before the main form is initialized.
+
+{% tabs %}
+{% highlight c# %}
+
+static void Main() 
+    { 
+        Application.EnableVisualStyles(); 
+        Application.SetCompatibleTextRenderingDefault(false); 
+        SkinManager.ApplicationVisualTheme = VisualTheme.Office2016Colourful; 
+        Application.Run(new Form1()); 
+    } 
+
+{% endhighlight c# %}
+{% endtabs %}
