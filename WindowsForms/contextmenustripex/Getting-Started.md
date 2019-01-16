@@ -20,7 +20,7 @@ Create a new WinForms application by opening Visual Studio IDE and navigate to *
 
 ![Project Initialization](GettingStarted_Images/Project.png)
 
-![Project Initialization](GettingStarted_Images/Project1.jpg)
+![Project Initialization](GettingStarted_Images/Project1.png)
 
 
 ## Dependent Assemblies
