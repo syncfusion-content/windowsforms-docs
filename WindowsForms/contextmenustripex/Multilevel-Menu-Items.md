@@ -15,11 +15,11 @@ Multi level menu items refers adding sub menu items using the **DropDownItems** 
 
 Once items are added, we can add **DropDown** items by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Data > DropDownItems** we need to add sub menu items using **Items Collection Editor**.
 
-![](MultilevelMenuItems_Images/Properties.png)
+![Multi-level Menu Items](MultilevelMenuItems_Images/Properties.png)
 
-![](MultilevelMenuItems_Images/Properties1.png)
+![Multi-level Menu Items](MultilevelMenuItems_Images/Properties1.png)
 
-![](MultilevelMenuItems_Images/Properties2.png)
+![Multi-level Menu Items](MultilevelMenuItems_Images/Properties2.png)
 
 ## Through Code
 
@@ -162,4 +162,4 @@ Me.Text = "Form1"
 {% endhighlight %}
 {% endtabs %}
 
-![](MultilevelMenuItems_Images/Multilevel.png)
+![Multi-level Menu Items](MultilevelMenuItems_Images/Multilevel.png)

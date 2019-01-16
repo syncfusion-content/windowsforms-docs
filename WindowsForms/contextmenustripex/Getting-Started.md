@@ -16,11 +16,11 @@ This section provides a quick overview for working with the **ContextMenuStripEx
 
 ## Project Initialization
 
-Create a new WinForms application by opening Visual Studio IDE and navigate to **File > New > Project > WindowsForms Application (inside Visual C# Templates)** to create a new WinForms application.
+Create a new WinForms application by opening Visual Studio IDE and navigate to **File > New > Project > Windows Forms Application (inside Visual C# Templates)** to create a new WinForms application.
 
-![](GettingStarted_Images/Project.png)
+![Project Initialization](GettingStarted_Images/Project.png)
 
-![](GettingStarted_Images/Project1.jpg)
+![Project Initialization](GettingStarted_Images/Project1.jpg)
 
 
 ## Dependent Assemblies
@@ -42,11 +42,11 @@ The ContextMenuStripEx control can be added through designer by following the be
 
 1. Drag and drop the ContextMenuStripEx control from the toolbox (under the section "Syncfusion Windows **Visual Studio Version** Toolbox **Essential Studio Version**") into the designer page.
 
-![](GettingStarted_Images/ContextMenuStripEx1.png)
+![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx1.png)
 
 2. Now the ContextMenuStripEx control will be successfully added into the application along with the required dependent assemblies.
 
-![](GettingStarted_Images/ContextMenuStripEx2.png)
+![Adding a Context Menu](GettingStarted_Images/ContextMenuStripEx2.png)
 
 ### Through Code
 
@@ -101,27 +101,27 @@ Find more details regarding how to install the NuGet packages in WinForms applic
 
 1. Click **Type Here** for adding the items. On clicking, it will display different type of ToolStripItems, using this user can add the items as per their need.
 
-![](GettingStarted_Images/ContextMenuStripEx3.png)
+![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx3.png)
 
 2. Items can also be added by choosing **Edit Items** under **Property** option and then select the ToolStripItems from the **Items Collection Editor**.
 
-![](GettingStarted_Images/ContextMenuStripEx4.png)
+![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx4.png)
 
-![](GettingStarted_Images/ContextMenuStripEx5.png)
+![Populating Context Menu](GettingStarted_Images/ContextMenuStripEx5.png)
 
 3. Once item is added, we can set the image by right-clicking on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Image** we need to browse the respective image.
 
-![](GettingStarted_Images/ContextMenuStripEx8.png)
+![Image](GettingStarted_Images/ContextMenuStripEx8.png)
 
-![](GettingStarted_Images/ContextMenuStripEx9.png)
+![Image](GettingStarted_Images/ContextMenuStripEx9.png)
 
 4. Similarly, we can set the text for menu item in the **Properties** panel, under **Appearance > Text** section.
 
-![](GettingStarted_Images/ContextMenuStripEx10.png)
+![Text](GettingStarted_Images/ContextMenuStripEx10.png)
 
 5. Finally, we have populated the ContextMenuStripEx control successfully.
 
-![](GettingStarted_Images/Image.png)
+![ContextMenuStripEx](GettingStarted_Images/Image.png)
 
 ### Through Code
 
@@ -191,13 +191,13 @@ Me.contextMenuStripEx.ResumeLayout(False)
 >**NOTE**:
 To associate the ContextMenuStripEx control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
 
-![](GettingStarted_Images/TextBox.png)
+![Associating Context Menu](GettingStarted_Images/TextBox.png)
 
 2. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > ContextMenuStrip** we need to assign the respective context menu.
 
-![](GettingStarted_Images/ContextMenuStripEx6.png)
+![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx6.png)
 
-![](GettingStarted_Images/ContextMenuStripEx7.png)
+![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx7.png)
 
 ### Through Code
 
@@ -267,7 +267,7 @@ Me.Controls.Add(Me.richTextBox1)
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_Images/Associate.png)
+![Associating Context Menu](GettingStarted_Images/Associate.png)
 
 
 

@@ -15,9 +15,9 @@ RTL is used to display the content from right to left by setting the **RightToLe
 
 1. Once ContextMenuStripEx control is added, right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > RightToLeft** we need to set **Yes**.
 
-![](RTL_Images/Properties.png)
+![right-to-left](RTL_Images/Properties.png)
 
-![](RTL_Images/Properties1.png)
+![right-to-left](RTL_Images/Properties1.png)
 
 ## Through Code
 
@@ -37,4 +37,4 @@ Me.contextMenuStripEx.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 {% endhighlight %}
 {% endtabs %}
 
-![](RTL_Images/RTL.png)
+![right-to-left](RTL_Images/RTL.png)

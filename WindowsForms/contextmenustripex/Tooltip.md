@@ -15,17 +15,17 @@ By enabling **ShowItemToolTips** property, the menu items can display tooltips w
 
 1. Once ContextMenuStripEx control is added, right-click on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > ShowItemToolTips** we need to set true.
 
-![](Tooltip_Images/Properties2.png)
+![ShowItemToolTips](Tooltip_Images/Properties2.png)
 
 2. Once items are added, we need to set the tooltip by right-click on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > ToolTipText** we need to set the text.
 
-![](Tooltip_Images/Properties.png)
+![ToolTipText](Tooltip_Images/Properties.png)
 
-![](Tooltip_Images/Properties1.png)
+![ToolTipText](Tooltip_Images/Properties1.png)
 
 3. The below image will shows a context menu with tooltip.
 
-![](Tooltip_Images/Tooltip.png)
+![Tooltip](Tooltip_Images/Tooltip.png)
 
 ### Through Code
 
@@ -51,7 +51,7 @@ Me.toolStripComboBox1.ToolTipText = "Combobox"
 {% endhighlight %}
 {% endtabs %}
 
-![](Tooltip_Images/Tooltip1.png)
+![Tooltip](Tooltip_Images/Tooltip1.png)
 
 ## Auto Tooltip
 
@@ -61,7 +61,7 @@ The **AutoTooltip** property is set to **false** by default. In such case, the c
 
 Once items are added, we can set auto tooltip by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > AutoToolTip** we need to set **true**.
 
-![](Tooltip_Images/Properties3.png)
+![Auto Tooltip](Tooltip_Images/Properties3.png)
 
 ### Through Code
 
@@ -85,4 +85,4 @@ Me.toolStripComboBox1.AutoToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Tooltip_Images/Tooltip2.png)
+![Auto Tooltip](Tooltip_Images/Tooltip2.png)

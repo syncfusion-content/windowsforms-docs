@@ -20,9 +20,9 @@ The menu items are operated through the click event on selection.
 
 2. Or, **Click** event can also be created in the **Properties** panel, under **Action > Click** section.
 
-![](Trigger_Images/Properties.png)
+![Trigger Menu Item](Trigger_Images/Properties.png)
 
-![](Trigger_Images/Properties1.png)
+![Trigger Menu Item](Trigger_Images/Properties1.png)
 
 ## Through Code
 
@@ -46,6 +46,6 @@ AddHandler toolStripComboBox1.Click, AddressOf toolStripComboBox1_Click
 {% endhighlight %}
 {% endtabs %}
 
-![](Trigger_Images/Trigger.png)
+![Trigger Menu Item](Trigger_Images/Trigger.png)
 
 

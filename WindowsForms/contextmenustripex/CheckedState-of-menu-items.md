@@ -19,15 +19,15 @@ The **Checked** property indicates whether a check mark should appear before the
 
 1. Once menu items are added, we can set the check mark by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > Checked** we need to set true.
 
-![](CheckedState_Images/Properties.png)
+![Checked/unchecked menu items](CheckedState_Images/Properties.png)
 
-![](CheckedState_Images/Properties1.png)
+![Checked/unchecked menu items](CheckedState_Images/Properties1.png)
 
-![](CheckedState_Images/ShowCheckMargin.png)
+![Checked/unchecked menu items](CheckedState_Images/ShowCheckMargin.png)
 
 2. Similarly, we can set the checked state of menu item in the **Properties** panel, under **Appearance > CheckedState** section.
 
-![](CheckedState_Images/Properties2.png)
+![CheckedState](CheckedState_Images/Properties2.png)
 
 ## Through Code
 
@@ -67,9 +67,9 @@ Me.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckedState_Images/Checked.png)
+![Checked](CheckedState_Images/Checked.png)
 
-![](CheckedState_Images/Unchecked.png)
+![Unchecked](CheckedState_Images/Unchecked.png)
 
 
 

@@ -26,9 +26,9 @@ The **Style** property is used to set the visual style of ContextMenuStripEx con
 
 Once ContextMenuStripEx control is added, we can set visual style by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > Style** we need to choose visual style.
 
-![](Theme_Images/Properties.png)
+![Office2016Black](Theme_Images/Properties.png)
 
-![](Theme_Images/Properties1.png)
+![Office2016Black](Theme_Images/Properties1.png)
 
 ### Through Code
 
@@ -48,25 +48,25 @@ Me.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
 {% endhighlight %}
 {% endtabs %}
 
-![](Theme_Images/Office2016Black.png)
+![Office2016Black](Theme_Images/Office2016Black.png)
 
 ## Default
 
-![](Theme_Images/Default.png)
+![Default](Theme_Images/Default.png)
 
 ## Metro
 
-![](Theme_Images/Metro.png)
+![Metro](Theme_Images/Metro.png)
 
 ## Office2016Colorful
 
-![](Theme_Images/Office2016Colorful.png)
+![Office2016Colorful](Theme_Images/Office2016Colorful.png)
 
 ## Office2016White
 
-![](Theme_Images/Office2016White.png)
+![Office2016White](Theme_Images/Office2016White.png)
 
 ## Office2016DarkGray
 
-![](Theme_Images/Office2016DarkGray.png)
+![Office2016DarkGray](Theme_Images/Office2016DarkGray.png)
 

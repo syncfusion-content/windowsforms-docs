@@ -15,9 +15,9 @@ ToolStripItems are enabled by default when they are created, but this can be cha
 
 Once items are added, we can disable the item by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > Enabled** we need to set as false.
 
-![](DisableMenuitems_Images/Disable.png)
+![Disable menu items](DisableMenuitems_Images/Disable.png)
 
-![](DisableMenuitems_Images/Disable1.png)
+![Disable menu items](DisableMenuitems_Images/Disable1.png)
 
 ## Through Code
 
@@ -41,4 +41,4 @@ Me.toolStripComboBox1.Enabled = False
 {% endhighlight %}
 {% endtabs %}
 
-![](DisableMenuitems_Images/Disable2.png)
+![Disable menu items](DisableMenuitems_Images/Disable2.png)

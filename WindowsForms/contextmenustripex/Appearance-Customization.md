@@ -17,9 +17,9 @@ The **BackColor** property is to set the background color of ContextMenuStrip co
 
 Once ContextMenuStripEx control is added, right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > BackColor** we need to choose the color.
 
-![](Appearance_Images/Properties.png)
+![Background Color](Appearance_Images/Properties.png)
 
-![](Appearance_Images/Properties1.png)
+![Background Color](Appearance_Images/Properties1.png)
 
 ### Through Code
 
@@ -39,7 +39,7 @@ Me.contextMenuStripEx.BackColor = System.Drawing.Color.SkyBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/BackColor.png)
+![Background Color](Appearance_Images/BackColor.png)
 
 ## Font
 
@@ -49,7 +49,7 @@ The **Font** property is to set the "FontFamily" and "FontStyle" of ContextMenuS
 
 We can set the font for menu item in the **Properties** panel, under **Appearance > Font** section.
 
-![](Appearance_Images/Properties2.png)
+![Font](Appearance_Images/Properties2.png)
 
 ### Through Code
 
@@ -69,7 +69,7 @@ Me.contextMenuStripEx.Font = New System.Drawing.Font("Courier New", 9F, System.D
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/Font.png)
+![Font](Appearance_Images/Font.png)
 
 ## Foreground Color
 
@@ -89,7 +89,7 @@ Me.contextMenuStripEx.ForeColor = System.Drawing.Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/ForeColor.png)
+![Foreground](Appearance_Images/ForeColor.png)
 
 ## Size
 
@@ -102,7 +102,7 @@ In-order to set size for context menu, set **AutoSize** property to false.
 
 We can set the size for menu item in the **Properties** panel, under **Layout > Size** section.
 
-![](Appearance_Images/Properties3.png)
+![Size](Appearance_Images/Properties3.png)
 
 ### Through Code
 
@@ -124,7 +124,7 @@ Me.contextMenuStripEx.Size = New System.Drawing.Size(200, 250)
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/Size.png)
+![Size](Appearance_Images/Size.png)
 
 ## Text
 
@@ -134,7 +134,7 @@ The **Text** property is used to set the caption of ContextMenuStripEx control.
 
 We can set the text in the **Properties** panel, under **Appearance > Text** section.
 
-![](Appearance_Images/Properties4.png)
+![Text](Appearance_Images/Properties4.png)
 
 ### Through Code
 
@@ -154,7 +154,7 @@ Me.contextMenuStripEx.Text = "Context Menu"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/Text.png)
+![Text](Appearance_Images/Text.png)
 
 ## Background Image
 
@@ -164,7 +164,7 @@ The **BackgroundImage** property is to set the background image of ContextMenuSt
 
 We can set background image in the **Properties** panel, under **Appearance > BackgroundImage** section.
 
-![](Appearance_Images/Properties5.png)
+![Background Image](Appearance_Images/Properties5.png)
 
 ### Through Code
 
@@ -184,7 +184,7 @@ The below code snippet is to set the background image of ContextMenu.
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_Images/BackgroundImage.png)
+![Background Image](Appearance_Images/BackgroundImage.png)
 
 
 

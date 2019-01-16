@@ -19,15 +19,15 @@ The menu items can be selected through keyboard operation by specifying the shor
 
 1. The **ShowShortcutKeys** property is used for display the shortcut key on menu items.
 
-![](Shortcut_Images/Properties2.png)
+![Keyboard Shortcuts](Shortcut_Images/Properties2.png)
 
 2. Once menu items are added, we can set the shortcut keys by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > ShortcutKeys** we need to set the shortcut key.
 
-![](Shortcut_Images/Properties.png)
+![ShortcutKeys](Shortcut_Images/Properties.png)
 
-![](Shortcut_Images/Properties1.png)
+![ShortcutKeys](Shortcut_Images/Properties1.png)
 
-![](Shortcut_Images/Shortcut.png)
+![ShortcutKeys](Shortcut_Images/Shortcut.png)
 
 ## Through Code
 
@@ -49,7 +49,7 @@ Me.toolStripMenuItem1.ShortcutKeys = (CType((System.Windows.Forms.Keys.Control O
 {% endhighlight %}
 {% endtabs %}
 
-![](Shortcut_Images/Shortcut.png)
+![ShortcutKeys](Shortcut_Images/Shortcut.png)
 
 **ShortcutKeyDisplayString** : You can modify the "ShortcutKey" string by using the **ShortcutKeyDisplayString** property.
 
@@ -67,5 +67,5 @@ Me.toolStripMenuItem1.ShortcutKeyDisplayString = "Press Ctrl + N"
 {% endhighlight %}
 {% endtabs %}
 
-![](Shortcut_Images/Shortcut1.png)
+![ShortcutKeyDisplayString](Shortcut_Images/Shortcut1.png)
 

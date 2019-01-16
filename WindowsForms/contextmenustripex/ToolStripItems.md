@@ -80,17 +80,17 @@ The TextBox control is used for editable text. It is used to get input from the 
 
 1. Once ContextMenuStripEx control is added, click **Type Here** for adding the TextBox. On clicking, it will display different type of ToolStripItems, using this user can choose **TextBox** option.
 
-![](ToolStripItems_Images/TextBox.png)
+![TextBox](ToolStripItems_Images/TextBox.png)
 
 2. Once item is added, we can set the text by right-click on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
 
-![](ToolStripItems_Images/TextBox1.png)
+![TextBox](ToolStripItems_Images/TextBox1.png)
 
-![](ToolStripItems_Images/TextBox2.png)
+![TextBox](ToolStripItems_Images/TextBox2.png)
 
 3. Finally, we have added the TextBox item in ContextMenuStripEx control successfully.
 
-![](ToolStripItems_Images/TextBox3.png)
+![TextBox](ToolStripItems_Images/TextBox3.png)
 
 ### Add a TextBox through code
 
@@ -130,7 +130,7 @@ Me.contextMenuStripEx1.Items.Add(Me.toolStripTextBox1)
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolStripItems_Images/TextBox3.png)
+![TextBox](ToolStripItems_Images/TextBox3.png)
 
 The below table explains the properties of textbox.
 
@@ -189,23 +189,23 @@ A subset of the hosted control's properties and events are exposed at the ToolSt
 
 1. Once ContextMenuStripEx control is added, click **Type Here** for adding the ComboBox. On clicking, it will display different type of ToolStripItems, in which choose **ComboBox**.
 
-![](ToolStripItems_Images/ComboBox.png)
+![ComboBox](ToolStripItems_Images/ComboBox.png)
 
 2. Once item is added, we can set the text by right-clicking on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we can set the text.
 
-![](ToolStripItems_Images/ComboBox1.png)
+![Text](ToolStripItems_Images/ComboBox1.png)
 
-![](ToolStripItems_Images/ComboBox2.png)
+![Text](ToolStripItems_Images/ComboBox2.png)
 
 3. Similarly, we can add items collections in **properties** panel, under **Data > Items** by using **String Collection Editor**.
 
-![](ToolStripItems_Images/ComboBox3.png)
+![Items](ToolStripItems_Images/ComboBox3.png)
 
-![](ToolStripItems_Images/ComboBox4.png)
+![Items](ToolStripItems_Images/ComboBox4.png)
 
 4. Finally, we have add the ComboBox in ContextMenuStripEx control successfully.
 
-![](ToolStripItems_Images/ComboBox5.png)
+![ComboBox](ToolStripItems_Images/ComboBox5.png)
 
 ### Add a ComboBox through code
 
@@ -247,7 +247,7 @@ Me.toolStripComboBox1.Items.AddRange(New Object() { "Item1", "Item2", "Item3"})
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolStripItems_Images/ComboBox5.png)
+![ComboBox](ToolStripItems_Images/ComboBox5.png)
 
 The below table explains the properties of combobox.
 
@@ -310,7 +310,7 @@ Used for separation of items visually in a form. The ToolStripSeparator is autom
 
 1. Once ContextMenuStripEx control is added, click **Type Here** for adding the Separator. On clicking, it will display different type of ToolStripItems, in which choose Separator.
 
-![](ToolStripItems_Images/Separator.png)
+![Separator](ToolStripItems_Images/Separator.png)
 
 ### Add a Separator through code
 
@@ -387,7 +387,7 @@ Me.contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() { 
 
 Finally, we have added separator in ContextMenuStripEx control successfully.
 
-![](ToolStripItems_Images/Separator1.png)
+![Separator](ToolStripItems_Images/Separator1.png)
 
 The below table explains the properties of Separator.
 

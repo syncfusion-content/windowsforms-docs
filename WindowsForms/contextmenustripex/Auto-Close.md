@@ -15,9 +15,9 @@ When **AutoClose** property of the ContextMenuStrip control is set to **true**, 
 
 Once ContextMenuStripEx control is added, right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > AutoClose** we need to set either true or false.
 
-![](AutoClose_Images/AutoClose.png)
+![Auto Close](AutoClose_Images/AutoClose.png)
 
-![](AutoClose_Images/AutoClose1.png)
+![Auto Close](AutoClose_Images/AutoClose1.png)
 
 ## Through Code
 

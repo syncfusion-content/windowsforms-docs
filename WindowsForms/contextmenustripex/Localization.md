@@ -15,9 +15,9 @@ Localization is the process of making application multilingual by formatting the
 
 Once item is added, we can set the localize text by right-clicking on the particular item in the designer and select **Properties**. Now, in the **Properties** panel, under **Appearance > Text** we need to set localize text.
 
-![](Localization_Images/Properties.png)
+![Localization](Localization_Images/Properties.png)
 
-![](Localization_Images/Properties1.png)
+![Localization](Localization_Images/Properties1.png)
 
 ## Through Code
 
@@ -26,9 +26,9 @@ The below code snippet will explain how to set the localize text in **French** c
 {% tabs %}
 {% highlight c# %}
 
-this.contextMenuStripEx.Text = "Menu contextuel";
+this.contextMenuStripEx.Text = "Menu contextual";
 this.toolStripMenuItem1.Text = "Nouveau";
-this.toolStripMenuItem2.Text = "Copie";
+this.toolStripMenuItem2.Text = "Copier";
 this.toolStripTextBox1.Text = "Zone de texte";
 this.toolStripComboBox1.Text = "Boîte combo";
 
@@ -36,9 +36,9 @@ this.toolStripComboBox1.Text = "Boîte combo";
 
 {% highlight vb %}
 
-Me.contextMenuStripEx.Text = "Menu contextuel"
+Me.contextMenuStripEx.Text = "Menu contextual"
 Me.toolStripMenuItem1.Text = "Nouveau"
-Me.toolStripMenuItem2.Text = "Copie"
+Me.toolStripMenuItem2.Text = "Copier"
 Me.toolStripTextBox1.Text = "Zone de texte"
 Me.toolStripComboBox1.Text = "Boîte combo"
 
@@ -47,8 +47,8 @@ Me.toolStripComboBox1.Text = "Boîte combo"
 
 **French Culture**
 
-![](Localization_Images/FR.png)
+![French Culture](Localization_Images/FR.png)
 
 **German Culture**
 
-![](Localization_Images/GE.png)
+![German Culture](Localization_Images/GE.png)

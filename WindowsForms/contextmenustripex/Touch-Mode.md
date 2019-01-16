@@ -15,9 +15,9 @@ Touch mode is used to access the control easily in touch devices. This option ca
 
 Once ContextMenuStripEx control is added, we can set touch mode by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > EnableTouchMode** we need to set **true**.
 
-![](TouchMode_Images/Properties.png)
+![Touch Mode](TouchMode_Images/Properties.png)
 
-![](TouchMode_Images/Properties1.png)
+![Touch Mode](TouchMode_Images/Properties1.png)
 
 ## Through Code
 

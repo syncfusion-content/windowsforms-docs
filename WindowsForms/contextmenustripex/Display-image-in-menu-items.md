@@ -17,11 +17,11 @@ documentation: ug
 
  Once menu items are added, we can set the image by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > Image** we need to browse and set the respective image.
 
-![](DisplayImage_Images/ShowImageMargin.png)
+![ShowImageMargin](DisplayImage_Images/ShowImageMargin.png)
 
-![](DisplayImage_Images/Properties.png)
+![Display image in menu items](DisplayImage_Images/Properties.png)
 
-![](DisplayImage_Images/Image1.png)
+![Display image in menu items](DisplayImage_Images/Image1.png)
 
 ## Through Code
 
@@ -45,5 +45,5 @@ Me.toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
 {% endhighlight %}
 {% endtabs %}
 
-![](DisplayImage_Images/Image2.png)
+![Display image in menu items](DisplayImage_Images/Image2.png)
 

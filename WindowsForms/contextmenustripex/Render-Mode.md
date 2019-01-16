@@ -20,9 +20,9 @@ The **RenderMode** property provides different painting styles like:
 
 Once ContextMenuStripEx control is added, we can set render mode by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > RenderMode** we need to choose the render mode.
 
-![](RenderMode_Images/Properties.png)
+![Render Mode](RenderMode_Images/Properties.png)
 
-![](RenderMode_Images/Properties1.png)
+![Render Mode](RenderMode_Images/Properties1.png)
 
 ## Through Code
 
@@ -45,7 +45,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Pro
 {% endhighlight %}
 {% endtabs %}
 
-![](RenderMode_Images/Professional.png)
+![Professional](RenderMode_Images/Professional.png)
 
 
 ### System
@@ -66,7 +66,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Sys
 {% endhighlight %}
 {% endtabs %}
 
-![](RenderMode_Images/System.png)
+![System](RenderMode_Images/System.png)
 
 
 ### ManagerRenderMode
@@ -87,7 +87,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Man
 {% endhighlight %}
 {% endtabs %}
 
-![](RenderMode_Images/ManagerRenderMode.png)
+![ManagerRenderMode](RenderMode_Images/ManagerRenderMode.png)
 
 
 ### Custom
@@ -124,9 +124,9 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 {% endhighlight %}
 {% endtabs %}
 
-![](RenderMode_Images/OfficeBlack.png) 
+![Custom](RenderMode_Images/OfficeBlack.png) 
 
-![](RenderMode_Images/OfficeBlue.png) 
+![Custom](RenderMode_Images/OfficeBlue.png) 
   
-![](RenderMode_Images/Office12ColorTable.png)
+![Custom](RenderMode_Images/Office12ColorTable.png)
 

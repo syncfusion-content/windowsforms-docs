@@ -11,7 +11,7 @@ documentation: ug
 
 Context menu is a group of frequently used commands or menu items that can be accessed by right-clicking the target control. For example, Cut, Copy and Paste, frequently used commands are grouped and accessed on simple right-click option. 
 
-# Key Features
+## Key Features
 
 * **ToolStripItems** - ToolStripItems like MenuItem,TextBox,ComboBox and Separator can be added as menu items to the ContextMenuStripEx control.
 
@@ -25,7 +25,7 @@ Context menu is a group of frequently used commands or menu items that can be ac
 
 * **Customization** - We can customize the Text, Image Display, Background Color, Font, Foreground Color, etc..
 
-* **Tooltip** - Provides options to set tooltip for each Menuitem.
+* **Tooltip** - Provides options to set tooltip for each Menu item.
 
 * **Themes** - Supports set of visual styles to customize the look and feel of ContextMenuStripEx control.
 

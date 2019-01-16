@@ -36,17 +36,17 @@ Sets the size of images on items.</td></tr>
 
 1. Once ContextMenuStripEx control is added, we can set the check margin by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > ShowCheckMargin** we need to set either true or false.
 
-![](MarginShadow_Images/Properties.png)
+![ShowCheckMargin](MarginShadow_Images/Properties.png)
 
-![](MarginShadow_Images/ShowCheckMargin.png)
+![ShowCheckMargin](MarginShadow_Images/ShowCheckMargin.png)
 
 2. Similarly, we can set the image margin in the **Properties** panel, under **Appearance > ShowImageMargin** section.
 
-![](MarginShadow_Images/ShowImageMargin.png)
+![ShowImageMargin](MarginShadow_Images/ShowImageMargin.png)
 
-3. Similarly, we can set the image scalling size in the **Properties** panel, under **Appearance > ImageScallingSize** section.
+3. Similarly, we can set the image scaling size in the **Properties** panel, under **Appearance > ImageScalingSize** section.
 
-![](MarginShadow_Images/ImageScallingSize.png)
+![ImageScalingSize](MarginShadow_Images/ImageScallingSize.png)
 
 ### Through Code
 
@@ -70,7 +70,7 @@ Me.contextMenuStripEx.ImageScalingSize = New System.Drawing.Size(24, 24)
 {% endhighlight %}
 {% endtabs %}
 
-![](MarginShadow_Images/Margin.png)
+![Margin Setting](MarginShadow_Images/Margin.png)
 
 >**NOTE**:
 The check functionality can be enabled using the **Checked** property and check state can be provided  by using **CheckedState** property available for individual menu item.
@@ -94,9 +94,9 @@ Shows or hides three dimensional shadow for the context menu.</td></tr>
 
 Once ContextMenuStripEx control is added, we can set the shadow by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > DropShadowEnabled** we need to set true.
 
-![](MarginShadow_Images/Properties.png)
+![DropShadowEnabled](MarginShadow_Images/Properties.png)
 
-![](MarginShadow_Images/DropShadowEnabled.png)
+![DropShadowEnabled](MarginShadow_Images/DropShadowEnabled.png)
 
 ### Through Code
 
@@ -116,5 +116,5 @@ Me.contextMenuStripEx1.DropShadowEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](MarginShadow_Images/Shadow.png)
+![Shadow Setting](MarginShadow_Images/Shadow.png)
 
