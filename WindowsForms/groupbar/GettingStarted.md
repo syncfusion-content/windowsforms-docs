@@ -1,103 +1,72 @@
 ---
 layout: post
-title:  Creating GroupBar | WindowsForms | Syncfusion
-description:  Creating GroupBar
+title:  Getting started | GroupBar | WindowsForms | Syncfusion
+description:  This section describes how to add group bar control into application.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Getting started
 
-This section describes how to add `GroupBar` control in a Windows Forms application and overview of its basic functionalities.
+# Getting started
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#groupbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#groupbar) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
  
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+You can find more details about installing the NuGet package in a Windows Forms application in the following link: 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
+## Create a simple application with GroupBar
 
-# Creating simple application with GroupBar
+You can create a Windows Forms application with the GroupBar control using the following steps:
 
-You can create the Windows Forms application with GroupBar control as follows:
+## Create a project
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+Create a new Windows Forms application in Visual Studio to display the GroupBar with functionalities.
 
-### Creating the project
+## Add control through designer
 
-Create a new Windows Forms project in the Visual Studio to display the GroupBar with  functionalities.
+The GroupBar control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.Base assembly reference will be added automatically.
 
-## Adding control via designer
+![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-added-by-designer.png) 
 
-The GroupBar control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+## Add control manually in code
 
-* Syncfusion.Shared.Base.dll
+To add the control manually in C#, follow the given steps:
 
-![](Overview_images/GroupBar_img1.png)
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-GroupBarItems can be added into the Groupbar container using `GroupBarItems` collections property.
-
-![](Overview_images/GroupBar_img3.png)
-
-
-## Adding control manually using code
-
-To add control manually in C#, follow the given steps:
-
-**Step 1** - Add the following required assembly references to the project:
-
-	* Syncfusion.Shared.Base.dll
-
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+2. Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
 
 {% tabs %}
-
 {% highlight C# %}
-
 using Syncfusion.Windows.Forms.Tools;
-
 {% endhighlight  %}
-
 {% highlight VB %}
-
 Imports Syncfusion.Windows.Forms.Tools
-
 {% endhighlight  %}
-
 {% endtabs %} 
 
-**Step 3** - Create `GroupBar` control instance and add it to the form.
+3. Create a GroupBar control instance, and add it to the form.
 
 {% tabs %}
-
 {% highlight C# %}
-
 GroupBar groupBar1 = new GroupBar();
-
 this.Controls.Add(groupBar1);
-
 {% endhighlight %}
-
 {% highlight VB %}
-
 Dim groupBar1 As GroupBar = New GroupBar()
-
 Me.Controls.Add(groupBar1)
-
 {% endhighlight %}
-
 {% endtabs %}
 
-**Step 4** - GroupBarItems can be added into the Groupbar container using `GroupBarItems` collections property.
+## Add group bar items
+
+You can add the group bar items inside the Groupbar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItems.html) collection property.
 
 {% tabs %}
-
 {% highlight C# %}
-
 GroupBarItem groupBarItem0 = new GroupBarItem();
 GroupBarItem groupBarItem1 = new GroupBarItem();
 GroupBarItem groupBarItem2 = new GroupBarItem();
@@ -119,11 +88,8 @@ this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
             this.groupBarItem3,
             this.groupBarItem4,
             this.groupBarItem5});
-
 {% endhighlight %}
-
 {% highlight VB %}
-
 Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
@@ -145,12 +111,23 @@ Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
             Me.groupBarItem3,
             Me.groupBarItem4,
             Me.groupBarItem5})
-
-
 {% endhighlight %}
-
 {% endtabs %}
 
-![](Overview_images/GroupBar_img2.png)
+![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control.png)
 
+## Display mode
+
+You can change the visual mode of the GroupBar control like stack by enabling the [StackedMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~StackedMode.html) property.
+
+{% tabs %}
+{% highlight C# %}
+this.groupBar1.StackedMode = true;
+{% endhighlight %}
+{% highlight VB %}
+Me.groupBar1.StackedMode = True
+{% endhighlight %}
+{% endtabs %}
+
+![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-display-mode.png)
 
