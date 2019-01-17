@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a Windows Forms 
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Create a simple application with FolderBrowser
+## Create a simple application with FolderBrowser
 
 You can create a Windows Forms application with the FolderBrowser control using the following steps:
 
