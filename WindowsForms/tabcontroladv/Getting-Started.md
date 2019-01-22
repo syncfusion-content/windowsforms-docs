@@ -11,7 +11,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies]((https://help.syncfusion.com/windowsforms/control-dependencies#tabcontroladv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabcontroladv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link:
 
@@ -46,7 +46,7 @@ The tabs can be added to TabControlAdv in the following ways:
 
 ![tabs added using add tab option](GettingStarted_images/AddingTabs.png)
 
-**2:** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) in smart tags of TabControlAdv.
+**2.** Add tabs using [TabPagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) in smart tags of TabControlAdv.
 
 ![tabs added using tab pages collection](GettingStarted_images/wf-tab-page-added-by-designer.png)
 
@@ -60,7 +60,7 @@ You can add any control in tab page.
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project: 
+**1.** Add the following required assembly references to the project: 
 
   * Syncfusion.Grid.Base.dll
   * Syncfusion.Grid.Windows.dll
@@ -69,7 +69,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Base.dll
   * Syncfusion.Tools.Windows.dll
 
-2.	Include the **Syncfusion.Windows.Forms.Tools namespace**.
+**2.** Include the **Syncfusion.Windows.Forms.Tools namespace**.
 
   {% tabs %}
   {% highlight C# %}
@@ -80,7 +80,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %}
 
-3.	Create a TabControlAdv instance, and add it to the window.
+**3.** Create a TabControlAdv instance, and add it to the window.
 
   {% tabs %}
   {% highlight C# %}
