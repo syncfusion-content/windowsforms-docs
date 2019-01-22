@@ -183,11 +183,11 @@ You can arrange the tabs in multiple rows by enabling the [Multiline](https://he
 
 {% tabs %}
 {% highlight C# %}
-//Mulitiline tabs
+//Multiline tabs
 tabControlAdv1.Multiline = true;
 {% endhighlight %}
 {% highlight VB %}
-'Mulitiline tabs
+'Multiline tabs
 tabControlAdv1.Multiline = True
 {% endhighlight %}
 {% endtabs %}
