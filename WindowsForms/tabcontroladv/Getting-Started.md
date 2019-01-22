@@ -104,7 +104,6 @@ this.tabPageAdv1.Text = "tabPageAdv1";
 this.tabControlAdv1.Controls.Add(this.tabPageAdv1);
 {% endhighlight %}
 {% highlight VB %}
-Me.tabControlAdv1.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
 Dim tabPageAdv1 As TabPageAdv = New TabPageAdv()
 Me.tabControlAdv1.Controls.Add(Me.tabPageAdv1)
 Me.tabPageAdv1.Text = "tabPageAdv1"
