@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring CardLayout | CardLayout Control for Windows Forms | Syncfusion
+title: Configuring | CardLayout Control for Windows Forms | Syncfusion
 description: This section explains about the configuring of CardLayout with child controls
 platform: windowsforms
 control: CardLayout
@@ -13,7 +13,7 @@ The configuration settings for `CardLayout` have been given in this section.
 
 ## Card names
 
-By default, when a new child control is added, the `CardLayout` will render a uniqe card name for it. This name can be modified using the following property.
+By default, when a new child control is added, the `CardLayout` will render a unique card name for it. This name can be modified using the following property.
 
 <table>
 <tr>

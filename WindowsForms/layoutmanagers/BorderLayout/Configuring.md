@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring BorderLayout | BorderLayout Control for Windows Forms | Syncfusion
+title: Configuring | BorderLayout Control for Windows Forms | Syncfusion
 description: This section explains about the configuring of BorderLayout with child controls
 platform: windowsforms
 control: BorderLayout
@@ -81,7 +81,7 @@ Description</th></tr>
 <tr>
 <td>
 
-Position on borderlayout<br/></td><td>
+Position on borderLayout<br/></td><td>
 Gets or sets the border position for a child components.<br/></td></tr>
 
 </table>

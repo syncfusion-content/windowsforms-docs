@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of BorderLayout control for Windows Forms
+title: Overview | BorderLayout control for Windows Forms | Syncfusion
 description: Overview section of layout manager explains about BorderLayout controls available in Windows Forms
 platform: windowsforms
 control: BorderLayout

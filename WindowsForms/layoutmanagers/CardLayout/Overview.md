@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of CardLayout control for Windows Forms
+title: Overview | CardLayout control for Windows Forms | Syncfusion
 description: Overview section of layout manager explains about CardLayout controls available in Windows Forms
 platform: windowsforms
 control: CardLayout

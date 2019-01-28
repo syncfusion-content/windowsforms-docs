@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of GridLayout control for Windows Forms
+title: Overview | GridLayout control for Windows Forms | Syncfusion
 description: Overview section of layout manager explains about GridLayout controls available in Windows Forms
 platform: windowsforms
 control: GridLayout

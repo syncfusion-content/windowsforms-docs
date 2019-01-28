@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring Child control | FlowLayout Control for Windows Forms | Syncfusion
+title: Configuring Child | FlowLayout Control for Windows Forms | Syncfusion
 description: This section explains about the configuring of FlowLayout with child controls
 platform: windowsforms
 control: FlowLayout
@@ -65,7 +65,7 @@ You can force a child control to always start at a new row by setting the follow
 <tr>
 <th>
 Child control constraints</th><th>
-Desctiption</th></tr>
+Description</th></tr>
 <tr>
 <td>
 NewLine</td><td>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring child controls | GridBagLayout Control for Windows Forms | Syncfusion
+title: Configuring child | GridBagLayout for Windows Forms | Syncfusion
 description: This section explains about the configuring of GridBagLayout with child controls
 platform: windowsforms
 control: GridBagLayout
@@ -71,7 +71,7 @@ In the following screenshot, the WeightX and WeightY of button 1 is (2,1), butto
 
 N> The GetLayoutWeights() method returns the row and column weights of the current layout.
 
-### CellspanX and CellspanY
+### CellSpanX and CellSpanY
 
 The child controls span a single cell with the properties set to (1,1) by default. However, it can be made to span multiple rows and/or columns by changing the following properties:
 

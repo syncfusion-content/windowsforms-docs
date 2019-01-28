@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring FlowLayout | FlowLayout Control for Windows Forms | Syncfusion
+title: Configuring | FlowLayout Control for Windows Forms | Syncfusion
 description: This section explains about the configuring of FlowLayout with child controls
 platform: windowsforms
 control: FlowLayout
@@ -81,7 +81,7 @@ Me.flowLayout1.SetParticipateInLayout(Me.button1,False)
 
 ## HGap and VGap
 
-The horizontal and vetical gaps between the child controls can be set using the following properties.
+The horizontal and vertical gaps between the child controls can be set using the following properties.
 
 <table>
 <tr>
