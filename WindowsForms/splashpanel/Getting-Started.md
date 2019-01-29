@@ -45,7 +45,7 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 
 **Step 1**: Create a new Visual C# or VB.NET application in Visual Studio .NET.
 
-**Step 2**: Add the required assembliy reference.
+**Step 2**: Add the required assembly reference.
 	
 	1. Syncfusion.Shared.Base.dll
 
