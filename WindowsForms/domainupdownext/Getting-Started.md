@@ -23,7 +23,7 @@ You can create a Windows Forms application with the DomainUpDownExt control usin
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the DomainUpDownExt with functionalities.
+Create a new Windows Forms project in Visual Studio to display the DomainUpDownExt.
 
 ## Add control through designer
 
@@ -44,23 +44,23 @@ To add the control manually in C#, follow the given steps:
 
 1. Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base 
-* Syncfusion.Tools.Windows
+  * Syncfusion.Grid.Base
+  * Syncfusion.Grid.Windows
+  * Syncfusion.Shared.Base
+  * Syncfusion.Shared.Windows
+  * Syncfusion.Tools.Base 
+  * Syncfusion.Tools.Windows
 
 2. Include the DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
 
-{% tabs %}
-{% highlight C# %}
-using Syncfusion.Windows.Forms.Tools;
-{% endhighlight %}
-{% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
-{% endhighlight %}
-{% endtabs %} 
+  {% tabs %}
+  {% highlight C# %}
+  using Syncfusion.Windows.Forms.Tools;
+  {% endhighlight %}
+  {% highlight VB %}
+  Imports Syncfusion.Windows.Forms.Tools
+  {% endhighlight %}
+  {% endtabs %} 
 
 3. Create a DomainUpDownExt control instance, and add it to the form.
 

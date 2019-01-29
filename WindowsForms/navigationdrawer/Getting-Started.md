@@ -22,7 +22,7 @@ You can create a Windows Forms application with NavigationDrawer control using t
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the NavigationDrawer with functionalities.
+Create a new Windows Forms project in Visual Studio to display the NavigationDrawer control with its sliding panel at different sides.
 
 ## Add control through designer
 
@@ -43,73 +43,72 @@ The header and menu items can be added to drawer using the [Items](https://help.
 
 ![wf navigation drawer items added by designer](Getting-Started_images/wf-navigation-drawer-control-items-added-by-designer.png)
 
-
 ## Add control manually using code
 
 To add the control manually in C#, follow the given steps:
 
 1. Add the following required assembly references to the project: 
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+  * Syncfusion.Grid.Base.dll
+  * Syncfusion.Grid.Windows.dll
+  * Syncfusion.Shared.Base.dll
+  * Syncfusion.Shared.Windows.dll
+  * Syncfusion.Tools.Base.dll
+  * Syncfusion.Tools.Windows.dll
 
 2. Include the **Syncfusion.Windows.Forms.Tools** namespace. 
 
-{% tabs %}
-{% highlight C# %}
-using Syncfusion.Windows.Forms.Tools;
-{% endhighlight %}
-{% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
-{% endhighlight %}
-{% endtabs %}
+  {% tabs %}
+  {% highlight C# %}
+  using Syncfusion.Windows.Forms.Tools;
+  {% endhighlight %}
+  {% highlight VB %}
+  Imports Syncfusion.Windows.Forms.Tools
+  {% endhighlight %}
+  {% endtabs %}
 
 3. Create a NavigationDrawer instance, and add it to the window.
 
-{% tabs %}
-{% highlight C# %}
-NavigationDrawer navigationDrawer1 = new NavigationDrawer();
-this.Controls.Add(navigationDrawer1);
-{% endhighlight %}
-{% highlight VB %}
-Dim navigationDrawer1 As NavigationDrawer = New NavigationDrawer
-Me.Controls.Add(navigationDrawer1)
-{% endhighlight %}
-{% endtabs %}
+  {% tabs %}
+  {% highlight C# %}
+  NavigationDrawer navigationDrawer1 = new NavigationDrawer();
+  this.Controls.Add(navigationDrawer1);
+  {% endhighlight %}
+  {% highlight VB %}
+  Dim navigationDrawer1 As NavigationDrawer = New NavigationDrawer
+  Me.Controls.Add(navigationDrawer1)
+  {% endhighlight %}
+  {% endtabs %}
 
 4. Set the width and height to the drawer view.
 
-{% tabs %}
-{% highlight C# %}
-this.navigationDrawer1.DrawerWidth = this.Width/4;
-this.navigationDrawer1.DrawerHeight = this.Height;
-{% endhighlight %}
-{% highlight VB %}
-Me.navigationDrawer1.DrawerWidth = Me.Width/4
-Me.navigationDrawer1.DrawerHeight = Me.Height
-{% endhighlight %}
-{% endtabs %}
+  {% tabs %}
+  {% highlight C# %}
+  this.navigationDrawer1.DrawerWidth = this.Width/4;
+  this.navigationDrawer1.DrawerHeight = this.Height;
+  {% endhighlight %}
+  {% highlight VB %}
+  Me.navigationDrawer1.DrawerWidth = Me.Width/4
+  Me.navigationDrawer1.DrawerHeight = Me.Height
+  {% endhighlight %}
+  {% endtabs %}
 
 5. Add header to the NavigationDrawer.
 
-Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in NavigationDrawer.
+ Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in NavigationDrawer.
 
-{% tabs %}
-{% highlight C# %}
-DrawerHeader drawerHeader1 = new DrawerHeader();
-this.navigationDrawer1.Items.Add(this.drawerHeader1);
-{% endhighlight %}
-{% highlight VB %}
-Dim drawerHeader1 As DrawerHeader = New DrawerHeader
-Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
-{% endhighlight %}
-{% endtabs %}
+  {% tabs %}
+  {% highlight C# %}
+  DrawerHeader drawerHeader1 = new DrawerHeader();
+  this.navigationDrawer1.Items.Add(this.drawerHeader1);
+  {% endhighlight %}
+  {% highlight VB %}
+  Dim drawerHeader1 As DrawerHeader = New DrawerHeader
+  Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
+  {% endhighlight %}
+  {% endtabs %}
 
-![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
+ ![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
 
 6.	Add MenuItems to NavigationDrawer.
 

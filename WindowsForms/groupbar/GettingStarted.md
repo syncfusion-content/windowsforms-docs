@@ -23,7 +23,7 @@ You can create a Windows Forms application with the GroupBar control using the f
 
 ## Create a project
 
-Create a new Windows Forms application in Visual Studio to display the GroupBar with functionalities.
+Create a new Windows Forms project in Visual Studio to display the GroupBar control.
 
 ## Add control through designer
 
@@ -39,14 +39,14 @@ To add the control manually in C#, follow the given steps:
 
 2. Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
 
-{% tabs %}
-{% highlight C# %}
-using Syncfusion.Windows.Forms.Tools;
-{% endhighlight  %}
-{% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
-{% endhighlight  %}
-{% endtabs %} 
+  {% tabs %}
+  {% highlight C# %}
+  using Syncfusion.Windows.Forms.Tools;
+  {% endhighlight  %}
+  {% highlight VB %}
+  Imports Syncfusion.Windows.Forms.Tools
+  {% endhighlight  %}
+  {% endtabs %} 
 
 3. Create a GroupBar control instance, and add it to the form.
 
