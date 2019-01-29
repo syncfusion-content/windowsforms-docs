@@ -9,8 +9,12 @@ documentation: ug
 
 # Overview
 
-The SplashControl provides an easy way to use classes that can be used to display splash screens. The SplashControl can be dragged and dropped onto your form from the controls toolbox. The SplashControl is implemented as a component that is not visible at run time. It is visible in the component area of your form where you can select it and set it's properties.
+The `SplashControl` is a control that makes creating a splash screen easy. You just drag and drop a SplashControl onto your main form and set the image for splash screen. The splash screen will be automatically displayed at run time. The timing, and look feel of the splash control can be modified through the designer itself.
 
-![Overview of Syncfusion SplashControl ](Overview_images/Overview_img30.jpeg) 
+## Splash screen
+
+This is the area over which the splash image is displayed.
+
+![Overview of Syncfusion SplashControl ](Overview_images/Overview_img35.jpeg) 
 
 
