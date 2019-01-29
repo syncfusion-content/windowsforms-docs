@@ -41,7 +41,7 @@ The NavigationView control can be added to an application by dragging it from th
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project: 
+**1.**	Add the following required assembly references to the project: 
 
   * Syncfusion.Grid.Base.dll
   * Syncfusion.Grid.Windows.dll
@@ -50,7 +50,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Base.dll
   * Syncfusion.Tools.Windows.dll
 
-2. Include the **Syncfusion.Windows.Forms.Tools namespace**. 
+**2.** Include the **Syncfusion.Windows.Forms.Tools namespace**. 
 
   {% tabs %}
   {% highlight C# %}
@@ -61,7 +61,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %} 
 
-3. Create a NavigationView instance, and add it to the window.
+**3.** Create a NavigationView instance, and add it to the window.
 
   {% tabs %}
   {% highlight C# %}

@@ -35,9 +35,9 @@ The GroupBar control can be added to an application by dragging it from the tool
 
 To add the control manually in C#, follow the given steps:
 
-1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
+**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-2. Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
+**2.** Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
 
   {% tabs %}
   {% highlight C# %}
@@ -48,7 +48,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight  %}
   {% endtabs %} 
 
-3. Create a GroupBar control instance, and add it to the form.
+**3.** Create a GroupBar control instance, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}

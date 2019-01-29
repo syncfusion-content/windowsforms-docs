@@ -47,7 +47,7 @@ The header and menu items can be added to drawer using the [Items](https://help.
 
 To add the control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project: 
+**1.** Add the following required assembly references to the project: 
 
   * Syncfusion.Grid.Base.dll
   * Syncfusion.Grid.Windows.dll
@@ -56,7 +56,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Base.dll
   * Syncfusion.Tools.Windows.dll
 
-2. Include the **Syncfusion.Windows.Forms.Tools** namespace. 
+**2.** Include the **Syncfusion.Windows.Forms.Tools** namespace. 
 
   {% tabs %}
   {% highlight C# %}
@@ -67,7 +67,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %}
 
-3. Create a NavigationDrawer instance, and add it to the window.
+**3.** Create a NavigationDrawer instance, and add it to the window.
 
   {% tabs %}
   {% highlight C# %}
@@ -80,7 +80,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %}
 
-4. Set the width and height to the drawer view.
+**4.** Set the width and height to the drawer view.
 
   {% tabs %}
   {% highlight C# %}
@@ -93,7 +93,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %}
 
-5. Add header to the NavigationDrawer.
+**5.** Add header to the NavigationDrawer.
 
  Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in NavigationDrawer.
 
@@ -110,7 +110,7 @@ To add the control manually in C#, follow the given steps:
 
  ![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
 
-6.	Add MenuItems to NavigationDrawer.
+**6.** Add MenuItems to NavigationDrawer.
 
 Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in the NavigationDrawer class.
 
