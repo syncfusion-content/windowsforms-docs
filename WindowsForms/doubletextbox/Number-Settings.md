@@ -158,5 +158,25 @@ Me.doubleTextBox1.Text = ""
 
 
 
-![](DoubleTextBox-images/DoubleTextBox_img4.png)
+![Double textbox with banner text](DoubleTextBox-images/DoubleTextBox_img4.png)
 
+## Culture Setting
+
+Users can set the culture of the double text box control using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~Culture.html), [CurrentCultureRefresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~CurrentCultureRefresh.html), [SpecialCultureValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~SpecialCultureValue.html), and [UseUserOverride](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~UseUserOverride.html) properties.
+
+{% tabs %}
+{% highlight C# %}  
+this.doubleTextBox1.Culture = new System.Globalization.CultureInfo("ar-SA");
+this.doubleTextBox1.CurrentCultureRefresh = true;
+this. doubleTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None;
+this.doubleTextBox1.UseUserOverride = true;
+{% endhighlight %}
+{% highlight VB %} 
+Me.doubleTextBox1.Culture = New System.Globalization.CultureInfo("ar-SA")
+Me.doubleTextBox1.CurrentCultureRefresh = True
+Me.doubleTextBox1.SpecialCultureValue = Syncfusion.Windows.Forms.Tools.SpecialCultureValues.None
+Me.doubleTextBox1.UseUserOverride = True
+{% endhighlight %}
+{% endtabs %}
+
+![Double textbox culture](DoubleTextBox-images/DoubleTextBox-Culture.png)
