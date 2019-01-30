@@ -410,7 +410,7 @@ Dim northWindDataContext As New NorthwindDataContext()
 Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endhighlight %}
 {% endtabs %}
-![Image used to display the SfDataGrid with LinQ to SQL in windowsforms](DataBinding_images/DataBinding_img15.jpeg)
+![SfDataGrid with LinQ to SQL in windowsforms](DataBinding_images/DataBinding_img15.jpeg)
 
 ## Binding Data from ADO.NET
 SfDataGrid control supports to load the data using ADO.NET. This walk-through, describe about binding data from ADO.NET service

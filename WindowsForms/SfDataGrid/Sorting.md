@@ -169,7 +169,7 @@ this.sfDataGrid1.Columns[0].HeaderStyle.SortIcon = global::GettingStarted.Proper
 Me.sfDataGrid1.Columns(0).HeaderStyle.SortIcon = Global.GettingStarted.Properties.Resources.SortIcon
 {% endhighlight %}
 {% endtabs %}
-![Image represents the SfDataGrid with custom sort icon in WinForms](Sorting_images/Sorting_Image8.png)
+![SfDataGrid with custom sort icon in windowsforms](Sorting_images/Sorting_Image8.png)
 
 ## Custom Sorting
 SfDataGrid allows to sort the columns based on the custom logic. The custom sorting can be applied by adding the `SortComparer` instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortComparers.html).
@@ -300,7 +300,7 @@ Me.sfDataGrid1.SortComparers.Add(New Syncfusion.Data.SortComparer() With {.Compa
 {% endhighlight %}
 {% endtabs %}
 While performing the Sorting, the ProductName column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
-![Image represents the SfDataGrid sorting with custom compa in WinForms](Sorting_images/Sorting_Image9.png)
+![SfDataGrid sorting with custom compararer in windowsforms](Sorting_images/Sorting_Image9.png)
 
 ### Canceling Sorting for a Specific Column
 The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event through `Cancel` property.
