@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Number Settings | WindowsForms | Syncfusion
-description: number settings
+title: Number Settings | DoubleTextBox | WindowsForms | Syncfusion
+description: This section describes how to set the double text box control value ranges, banner text and its culture support.
 platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
