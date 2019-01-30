@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataBinding support in Syncfusion SfDataGrid
+title: Data Binding | DataGrid | WinForms | Syncfusion
 description: This section explains about the DataBinding support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
