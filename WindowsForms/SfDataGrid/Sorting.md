@@ -35,7 +35,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowSorting = False
 N>The `GridColumn.AllowSorting` takes higher priority than `SfDataGrid.AllowSorting` property.
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![Image represents the UI sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image1.png)
+![UI Sorting in SfDataGrid windowsforms](Sorting_images/Sorting_Image1.png)
 
 ### Adding Sort Columns
 
@@ -57,7 +57,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 {% endhighlight %}
 {% endtabs %}
 
-![Image represents the programmatic sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image5.png)
+![Programmatic sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image5.png)
 
 ### Removing Sort Columns
 The sorted column data can be unsorted by removing the corresponding `SortColumnDescription` from the `SfDataGrid.SortColumnDescriptions` collection.
@@ -143,7 +143,7 @@ Next record
 ## Multi Column Sorting
 SfDataGrid control allows to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the `Ctrl` key.
 In the below screen shot, the OrderID column sorted. Then the ProductName column is sorted against the OrderID data by clicking column header by pressing `Ctrl` key. The sorting state of OrderID column is preserved and ProductName column sorted against OrderID column.
-![Image represents the multic column sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image6.png)
+![Multi column sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image6.png)
 
 ### Display Sort Order
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowSortNumbers.html) property to `true`.
@@ -156,7 +156,7 @@ this.sfDataGrid1.ShowSortNumbers = true;
 Me.sfDataGrid1.ShowSortNumbers = True
 {% endhighlight %}
 {% endtabs %}
-![Image represents to display the SortNumbers in column header of SfDataGrid WinForms](Sorting_images/Sorting_Image7.png)
+![Display the SortNumbers in SfDataGrid column header](Sorting_images/Sorting_Image7.png)
 
 ## Custom Sort Icon
 The default sort icon can be changed by using the [SortIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~SortIcon.html) property.

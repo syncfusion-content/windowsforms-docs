@@ -323,24 +323,24 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 2) The **Add New Item** wizard appears, select “**ADO.NET Entity Data Mode**” from the Data node. 
 
 3) Name the file as **Model1.edmx** and then select **Add** button.  
-![Image represents to choose the the ADO.Net entity model application from visual studio](DataBinding_images/DataBinding_img3.jpeg)
+![Choose the the ADO.Net entity model application from visual studio](DataBinding_images/DataBinding_img3.jpeg)
 
 4) The Entity Data Model Wizard appears. In the **Choose Model Contents**, select **EF Designer from database** option and then click **Next**.
 
-![Image represents to choose the model contents from visual studio](DataBinding_images/DataBinding_img4.jpeg)
+![Choose the model contents from visual studio](DataBinding_images/DataBinding_img4.jpeg)
 
 5) In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://msdn.microsoft.com/en-us/library/s4yys16a.aspx).
 
-![Image represents to choose the Northwind database from visual studio](DataBinding_images/DataBinding_img5.jpeg)
+![Choose the Northwind database from visual studio](DataBinding_images/DataBinding_img5.jpeg)
 
 6) Enable the **Save entity connection settings in App.config** as check box and then click **Next**.
 7) In the **Choose Your Database** Objects and Settings, expand the Tables node and select the **Order Details** table.
 
-![Image represents to choose the database objects and setting from Northwind database through the visual studio](DataBinding_images/DataBinding_img6.jpeg)
+![Choose the database objects and setting from Northwind database through the visual studio](DataBinding_images/DataBinding_img6.jpeg)
 
 8) Click **Finish** button to add the **Model1.edmx** file to the application. The Entity diagram for the **Order Detail** table is opened.
 
-![Image represents to show the entity diagram of database](DataBinding_images/DataBinding_img7.jpeg)
+![To show the entity diagram of database](DataBinding_images/DataBinding_img7.jpeg)
 
 ### Loading Data from Entity Framework Data Service
 The data from the defined entity model can be loaded as a data source to the SfDataGrid by loading the **Order Details** table by the created entity for the **Northwnd** database.
@@ -370,29 +370,29 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 2) The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
 3) Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in the project.
 
-![Image represents to create the data  model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
+![Choose the data  model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
 
 4) Once the **Northwind.dbml** is added in the project, then the design view is opened.
 
-![Image represents to connect the database through the visual studio](DataBinding_images/DataBinding_img10.jpeg)
+![Connect the database through the visual studio](DataBinding_images/DataBinding_img10.jpeg)
 
 5) New Database connection can be added by clicking add icon button in Server Explorer. 
 
 6) The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient**).
 
-![Image represents to connect the database through the visual studio](DataBinding_images/DataBinding_img11.jpeg)
+![Connect the database through the visual studio](DataBinding_images/DataBinding_img11.jpeg)
 
 7) Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
-![Image represents to change the database through the visual studio](DataBinding_images/DataBinding_img12.jpeg)
+![Change the database through the visual studio](DataBinding_images/DataBinding_img12.jpeg)
 
 8) Select the Database file name and click on **Test Connection** to check the connection with the database.
 
-![Image represents to choose the database through the visual studio](DataBinding_images/DataBinding_img13.jpeg)
+![Choose the database through the visual studio](DataBinding_images/DataBinding_img13.jpeg)
 
 9) Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
-![Image represents to shows which database are added in the projects](DataBinding_images/DataBinding_img14.jpeg)
+![Connected databases in the projects](DataBinding_images/DataBinding_img14.jpeg)
 
 10) Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 
@@ -423,19 +423,19 @@ To connect SQL database to WinForms application, refer the below MSDN link or fo
 
 2) The Add Connection wizard appeared with the default data source as Microsoft SQL Server (SqlClient).
 
-![Image represents to add the SqlClient to the prjoect through the visual studio](DataBinding_images/DataBinding_img16.jpeg)
+![Choose the SqlClient to the prjoect through the visual studio](DataBinding_images/DataBinding_img16.jpeg)
 
 3) Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
-![Image represents to change the SqlClient for the prjoect through the visual studio](DataBinding_images/DataBinding_img17.jpeg)
+![Change the SqlClient for the prjoect through the visual studio](DataBinding_images/DataBinding_img17.jpeg)
 
 4) Select the Database file name and click on **Test Connection** to check the connection with the database.
 
-![Image represents to test the database connection through the visual studio](DataBinding_images/DataBinding_img18.jpeg)
+![Test the database connection through the visual studio](DataBinding_images/DataBinding_img18.jpeg)
 
 5) Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
-![Image represents to show which datbases are connected to the datagrid](DataBinding_images/DataBinding_img19.jpeg)
+![Connected databases in the projects](DataBinding_images/DataBinding_img19.jpeg)
 
 6) To get connection string for the database, right-click on the database and then click **Properties** option.
 
@@ -479,19 +479,19 @@ To load the data from Microsoft Access database, follow the below steps.
 
 2) In the **Data Sources** window, click **Add New Data Source**, the DataSource configuration wizard will be opened.
 
-![Image represents to choose the datasource type through the visual studio](DataBinding_images/DataBinding_img21.jpeg)
+![Choose the datasource type through the visual studio](DataBinding_images/DataBinding_img21.jpeg)
 
 3) Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
-![Image represents to choose the datasource model through the visual studio](DataBinding_images/DataBinding_img22.jpeg)
+![Choose the datasource model through the visual studio](DataBinding_images/DataBinding_img22.jpeg)
 
 4) On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection and Change the **Data source** to **.NET Framework Data Provider for OLE DB**.
 
-![Image represents to choose the data connetion through the visual studio](DataBinding_images/DataBinding_img23.jpeg)
+![Choose the data connetion through the visual studio](DataBinding_images/DataBinding_img23.jpeg)
 
 5) In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**. In **Server or file name**, specify the path and name of the .accdb file to which want to connect, and then select **OK**.
 
-![Image represents to choose the data provider through the visual studio](DataBinding_images/DataBinding_img24.jpeg)
+![Choose the data provider through the visual studio](DataBinding_images/DataBinding_img24.jpeg)
 
 6) Select **Next** on the **Choose your Data Connection** page.
 
@@ -499,7 +499,7 @@ To load the data from Microsoft Access database, follow the below steps.
 
 8) Expand the **Tables** node on the **Choose your Database Objects** page.
 
-![Image represents to choose the data base objects through the visual studio](DataBinding_images/DataBinding_img25.jpeg)
+![Choose the data base objects through the visual studio](DataBinding_images/DataBinding_img25.jpeg)
 
 9) Select whatever tables or views in the dataset, and then select **Finish**.
 
