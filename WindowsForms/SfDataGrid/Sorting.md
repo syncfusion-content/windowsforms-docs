@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | DataGrid | WinForms | Syncfusion
 description: This section explains about the sorting support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -35,7 +35,7 @@ Me.sfDataGrid1.Columns("CustomerID").AllowSorting = False
 N>The `GridColumn.AllowSorting` takes higher priority than `SfDataGrid.AllowSorting` property.
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![](Sorting_images/Sorting_Image1.png)
+![UI Sorting in SfDataGrid windowsforms](Sorting_images/Sorting_Image1.png)
 
 ### Adding Sort Columns
 
@@ -57,7 +57,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_Image5.png)
+![Programmatic sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image5.png)
 
 ### Removing Sort Columns
 The sorted column data can be unsorted by removing the corresponding `SortColumnDescription` from the `SfDataGrid.SortColumnDescriptions` collection.
@@ -143,7 +143,7 @@ Next record
 ## Multi Column Sorting
 SfDataGrid control allows to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the `Ctrl` key.
 In the below screen shot, the OrderID column sorted. Then the ProductName column is sorted against the OrderID data by clicking column header by pressing `Ctrl` key. The sorting state of OrderID column is preserved and ProductName column sorted against OrderID column.
-![](Sorting_images/Sorting_Image6.png)
+![Multi column sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image6.png)
 
 ### Display Sort Order
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowSortNumbers.html) property to `true`.
@@ -156,7 +156,7 @@ this.sfDataGrid1.ShowSortNumbers = true;
 Me.sfDataGrid1.ShowSortNumbers = True
 {% endhighlight %}
 {% endtabs %}
-![](Sorting_images/Sorting_Image7.png)
+![Display the SortNumbers in SfDataGrid column header](Sorting_images/Sorting_Image7.png)
 
 ## Custom Sort Icon
 The default sort icon can be changed by using the [SortIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.HeaderStyleInfo~SortIcon.html) property.
@@ -169,7 +169,7 @@ this.sfDataGrid1.Columns[0].HeaderStyle.SortIcon = global::GettingStarted.Proper
 Me.sfDataGrid1.Columns(0).HeaderStyle.SortIcon = Global.GettingStarted.Properties.Resources.SortIcon
 {% endhighlight %}
 {% endtabs %}
-![](Sorting_images/Sorting_Image8.png)
+![SfDataGrid with custom sort icon in windowsforms](Sorting_images/Sorting_Image8.png)
 
 ## Custom Sorting
 SfDataGrid allows to sort the columns based on the custom logic. The custom sorting can be applied by adding the `SortComparer` instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortComparers.html).
@@ -300,7 +300,7 @@ Me.sfDataGrid1.SortComparers.Add(New Syncfusion.Data.SortComparer() With {.Compa
 {% endhighlight %}
 {% endtabs %}
 While performing the Sorting, the ProductName column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
-![](Sorting_images/Sorting_Image9.png)
+![SfDataGrid sorting with custom compararer in windowsforms](Sorting_images/Sorting_Image9.png)
 
 ### Canceling Sorting for a Specific Column
 The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanging_EV.html) event through `Cancel` property.
@@ -352,7 +352,7 @@ End Sub
 
 ### Sorting the Underlying Collection
 `SfDataGrid` sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection.
-You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Data.DataGridTopLevelGroup~DisplayElements.html) when grouping in place.
+You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.WinForms~Syncfusion.Data.TopLevelGroup~DisplayElements.html) when grouping in place.
 If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SortColumnsChanged_EV.html) event.
 
 {% tabs %}
