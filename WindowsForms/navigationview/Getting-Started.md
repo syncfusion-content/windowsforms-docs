@@ -22,7 +22,7 @@ You can create a Windows Forms application with NavigationView control using the
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the NavigationView with functionalities.
+Create a new Windows Forms project in Visual Studio to display the NavigationView control with breadcrumbs nodes.
 
 ## Add control via designer
 
@@ -41,42 +41,42 @@ The NavigationView control can be added to an application by dragging it from th
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project: 
+**1.**	Add the following required assembly references to the project: 
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+  * Syncfusion.Grid.Base.dll
+  * Syncfusion.Grid.Windows.dll
+  * Syncfusion.Shared.Base.dll
+  * Syncfusion.Shared.Windows.dll
+  * Syncfusion.Tools.Base.dll
+  * Syncfusion.Tools.Windows.dll
 
-2. Include the **Syncfusion.Windows.Forms.Tools namespace**. 
+**2.** Include the **Syncfusion.Windows.Forms.Tools namespace**. 
 
-{% tabs %}
-{% highlight C# %}
-using Syncfusion.Windows.Forms.Tools;
-{% endhighlight %}
-{% highlight VB %}
-Imports Syncfusion.Windows.Forms.Tools
-{% endhighlight %}
-{% endtabs %} 
+  {% tabs %}
+  {% highlight C# %}
+  using Syncfusion.Windows.Forms.Tools;
+  {% endhighlight %}
+  {% highlight VB %}
+  Imports Syncfusion.Windows.Forms.Tools
+  {% endhighlight %}
+  {% endtabs %} 
 
-3. Create a NavigationView instance, and add it to the window.
+**3.** Create a NavigationView instance, and add it to the window.
 
-{% tabs %}
-{% highlight C# %}
-NavigationView navigationView1 = new NavigationView();
-navigationView1.Width = 100;
-navigationView1.Height = 20;
-this.Controls.Add(navigationView1);
-{% endhighlight %}
-{% highlight VB %}
-Dim navigationView1 As New NavigationView()
-navigationView1.Width = 100
-navigationView1.Height = 20
-Me.Controls.Add(navigationView1)
-{% endhighlight %}
-{% endtabs %}
+  {% tabs %}
+  {% highlight C# %}
+  NavigationView navigationView1 = new NavigationView();
+  navigationView1.Width = 100;
+  navigationView1.Height = 20;
+  this.Controls.Add(navigationView1);
+  {% endhighlight %}
+  {% highlight VB %}
+  Dim navigationView1 As New NavigationView()
+  navigationView1.Width = 100
+  navigationView1.Height = 20
+  Me.Controls.Add(navigationView1)
+  {% endhighlight %}
+  {% endtabs %}
 
 ![wf navigation view control](Getting-Started_images/wf-navigation-view-control.png)
 
@@ -130,6 +130,6 @@ Me.navigationView1.SelectedBar = bar1
 
 ## Edit mode
 
-You can edit the node path in the navigation view control.
+Selected path of navigation view can be changed by editing the text with valid navigation path.
 
 ![wf navigation path can be edit](Getting-Started_images/wf-navigation-view-control-edit-mode.png)
