@@ -129,11 +129,11 @@ The TabSplitterContainer can be oriented horizontally or vertically using the [O
 
 {% tabs %}
 {% highlight C# %}
-// Tabsplitter control orientation
+// Tab splitter control orientation
 this.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical;
 {% endhighlight  %}
 {% highlight VB %}
-‘ Tabsplitter control orientation
+‘ Tab splitter control orientation
 Me.tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 {% endhighlight  %}
 {% endtabs %} 
