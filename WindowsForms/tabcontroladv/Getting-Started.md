@@ -23,7 +23,7 @@ You can create a Windows Forms application with TabControlAdv using the followin
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the TabControlAdv with its functionalities.
+Create a new Windows Forms project in Visual Studio to display the TabControlAdv control with tab pages.
 
 ## Add control through designer
 
