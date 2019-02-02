@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working-with-PDF-Viewer | Windows Forms | Syncfusion
-description: working with pdf viewer
+description: PDF Viewer Winforms lets users load, view, review, and print PDF files with support for searching and copying text, silent and batch printing, conversion.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
