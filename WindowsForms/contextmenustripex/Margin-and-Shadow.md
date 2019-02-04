@@ -11,44 +11,8 @@ documentation: ug
 
 ## Margin Setting
 
-We can set margins for the context menu using the below properties.
+We can set margin for the context menu to indicates whether a check mark should appear before the text of the menu item by using the [`ShowCheckmargin`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property. Also to show image seperately, use the [`ShowImageMargin`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showimagemargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowImageMargin) property.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowCheckMargin</td><td>
-Shows or hides check margin on the left side of the context menu.</td></tr>
-<tr>
-<td>
-ShowImageMargin</td><td>
-Shows or hides the image margin on the left side of the context menu.</td></tr>
-<tr>
-<td>
-ImageScalingSize</td><td>
-Sets the size of images on items.</td></tr>
-</table>
-
-### Through Designer
-
-1. Once ContextMenuStripEx control is added, we can set the check margin by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > ShowCheckMargin** we need to set either true or false.
-
-![ShowCheckMargin](MarginShadow_Images/Properties.png)
-
-![ShowCheckMargin](MarginShadow_Images/ShowCheckMargin.png)
-
-2. Similarly, we can set the image margin in the **Properties** panel, under **Appearance > ShowImageMargin** section.
-
-![ShowImageMargin](MarginShadow_Images/ShowImageMargin.png)
-
-3. Similarly, we can set the image scaling size in the **Properties** panel, under **Appearance > ImageScalingSize** section.
-
-![ImageScalingSize](MarginShadow_Images/ImageScallingSize.png)
-
-### Through Code
 
 The below code snippet will explain how to set the margin for ContextMenuStripEx control.
 
@@ -57,7 +21,6 @@ The below code snippet will explain how to set the margin for ContextMenuStripEx
 
 this.contextMenuStripEx.ShowCheckMargin = true;
 this.contextMenuStripEx.ShowImageMargin = true;
-this.contextMenuStripEx.ImageScalingSize = new System.Drawing.Size(24, 24);
 
 {% endhighlight %}
 
@@ -65,40 +28,16 @@ this.contextMenuStripEx.ImageScalingSize = new System.Drawing.Size(24, 24);
 
 Me.contextMenuStripEx.ShowCheckMargin = True
 Me.contextMenuStripEx.ShowImageMargin = True
-Me.contextMenuStripEx.ImageScalingSize = New System.Drawing.Size(24, 24)
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Margin Setting](MarginShadow_Images/Margin.png)
 
->**NOTE**:
-The check functionality can be enabled using the **Checked** property and check state can be provided  by using **CheckedState** property available for individual menu item.
-
 ## Shadow Setting
 
-Shadow for the context menu drop down is controlled using the **DropShadowEnabled** property.
+The shadow option for ContextMenuStripEx control refers to shows a three dimensional shadow for the context menu. It can be enabled by using the [`DropShadowEnabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.dropshadowenabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_DropShadowEnabled) property.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-DropShadowEnabled</td><td>
-Shows or hides three dimensional shadow for the context menu.</td></tr>
-</table>
-
-### Through Designer
-
-Once ContextMenuStripEx control is added, we can set the shadow by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > DropShadowEnabled** we need to set true.
-
-![DropShadowEnabled](MarginShadow_Images/Properties.png)
-
-![DropShadowEnabled](MarginShadow_Images/DropShadowEnabled.png)
-
-### Through Code
 
 The below code snippet will explain how to set shadow for ContextMenuStripEx control.
 
@@ -115,6 +54,7 @@ Me.contextMenuStripEx1.DropShadowEnabled = True
 
 {% endhighlight %}
 {% endtabs %}
+
 
 ![Shadow Setting](MarginShadow_Images/Shadow.png)
 
