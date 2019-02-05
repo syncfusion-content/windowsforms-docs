@@ -25,7 +25,7 @@ The following assemblies needs to be added as reference to use the control in an
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
 
-## Adding a contextmenu through designer
+## Adding a context menu through designer
 
 The ContextMenuStripEx control can be added through designer by following the below steps.
 
@@ -74,7 +74,7 @@ The ContextMenuStripEx control can be added through designer by following the be
 
    ![ContextMenuStripEx](GettingStarted_Images/Associate.png)         
 
-## Adding a contextmenu through code
+## Adding a context menu through code
 
 The ContextMenuStripEx control can be added through code by following the below steps.
 
