@@ -1,25 +1,31 @@
 ---
 layout: post
-title: Overview of XP ToolBar Control | Windows Forms | Syncfusion
-description: The XP toolbar control is a main frame bar manager that acts like a toolbar and supports all the required bar items.
+title: Overview of XPToolBar | Windows Forms | Syncfusion
+description: Overview of XPToolBar control
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# XPToolBar
+# Overview
 
-[XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) is an [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) inspired toolbar-like control that supports all required BarItems as loaded in it and it can be used as an individual control.
+The XPToolBar control is a Microsoft Visual Studio-inspired standalone toolbar control that can be used to load shortcut options and place them conveniently anywhere within the application for better access.
 
-![](Overview_images/Overview_img2.png)
+## Key Features
 
-## Key features
+* **BarItem types** - BarItem, ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem, MdiListBarItem, ToolbarListBarItem, TextBoxBarItem and Seperator can be added as a BarItem of the XPToolbar.
 
-**BarItem types** - Provides rich set of built-in controls to be added as a BarItem of the XPToolbar
+* **Multiple toolbar** - We can add different levels of toolbar consecutively.
 
-**Visual style** - Provides options to customize the look and feel of XPToolBar using various built-in styles.
+* **Docking** - We can position the control at top, bottom, right and left.
 
-**Image settings** - Provides option to set large Icons and also to set BackgroundImage
+* **Chevron/Overflow Button** - View other options that may not readily visible at the initial view.
 
-**Separators** - Provides options to set Seperator for particular indices.
+* **Customization** - We can customize the Text, Background Color, Font, Foreground Color, etc...
+
+* **Tooltip** - Provides options to set tooltip for each BarItem.
+
+* **Themes** - Supports set of visual styles to customize the look and feel of XPToolbar control.
+
+* **RTL** - Display the content from right to left.
 
