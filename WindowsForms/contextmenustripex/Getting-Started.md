@@ -25,7 +25,7 @@ The following assemblies needs to be added as reference to use the control in an
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
 
-## Adding a Context Menu via Designer
+## Adding a contextmenu through designer
 
 The ContextMenuStripEx control can be added through designer by following the below steps.
 
@@ -57,144 +57,41 @@ The ContextMenuStripEx control can be added through designer by following the be
 
    ![Text](GettingStarted_Images/ContextMenuStripEx10.png)
 
-7. Finally, we have populated the ContextMenuStripEx control successfully.
+7. To associate the context menu to a control we need to drag and drop any control of your choice to the application. In this illustration, we have used "RichTextBox".
 
-   ![ContextMenuStripEx](GettingStarted_Images/Image.png)   
+   >**NOTE**:
+   To associate the ContextMenuStripEx control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
 
-### Through Code
+   ![Associating Context Menu](GettingStarted_Images/TextBox.png)
+
+8. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > ContextMenuStrip** we need to assign the respective context menu.
+
+   ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx6.png)
+
+   ![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx7.png)
+
+9. Finally, we have populated the ContextMenuStripEx control successfully.
+
+   ![ContextMenuStripEx](GettingStarted_Images/Associate.png)         
+
+## Adding a contextmenu through code
 
 The ContextMenuStripEx control can be added through code by following the below steps.
 
 1. Add the following dependency assembly references to the project.
 
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Licensing.dll
+   * Syncfusion.Tools.Windows.dll
+   * Syncfusion.Grid.Base.dll
+   * Syncfusion.Grid.Windows.dll
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Shared.Windows.dll
+   * Syncfusion.Tools.Base.dll
+   * Syncfusion.Licensing.dll
 
-You can get these assemblies by browsing to the default assembly location.
+   You can get these assemblies by browsing to the default assembly location.
 {System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
 
 2. The below code snippets adds a ContextMenuStripEx control to the application.
-
-{% tabs %}
-{% highlight C# %}
-
-//Declaration - Context Menu 
-private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx;
-
-//Initializing - Context Menu
-this.contextMenuStripEx = new Syncfusion.Windows.Forms.Tools.ContextMenuStripEx();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Declaration - Context Menu 
-Private contextMenuStripEx As Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
-
-'Initializing - Context Menu 
-Me.contextMenuStripEx = New Syncfusion.Windows.Forms.Tools.ContextMenuStripEx()
-
-{% endhighlight %}
-{% endtabs %}
-
-### Through NuGet package
-
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
-
-Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
-
-## Populating Context Menu
-
-### Through Designer
-
-
-
-### Through Code
-
-1. The below code snippets populate a ToolStripItem to the ContextMenuStripEx control directly through code. 
-
-{% tabs %}
-{% highlight C# %}
-
-//Declaration 
-private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx;
-private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-
-//Initializing
-this.contextMenuStripEx = new Syncfusion.Windows.Forms.Tools.ContextMenuStripEx();
-this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-
-//Populate with menu item
-this.toolStripMenuItem1.Image = System.Drawing.Image.FromFile(@"..\..\..\new.png");
-this.toolStripMenuItem2.Image = System.Drawing.Image.FromFile(@"..\..\..\copy.png");
-this.toolStripMenuItem3.Image = System.Drawing.Image.FromFile(@"..\..\..\cut.png");
-this.toolStripMenuItem1.Text = "New";
-this.toolStripMenuItem2.Text = "Copy";
-this.toolStripMenuItem3.Text = "Cut";
-this.contextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.toolStripMenuItem1,this.toolStripMenuItem2,this.toolStripMenuItem3,});
-this.contextMenuStripEx.ResumeLayout(false);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Declaration
-Private contextMenuStripEx As Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
-Private toolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-Private toolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-Private toolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
-
-'Initializing
-Me.contextMenuStripEx = New Syncfusion.Windows.Forms.Tools.ContextMenuStripEx()
-Me.toolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-Me.toolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-Me.toolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-
-
-'Populate with menu item
-Me.toolStripMenuItem1.Image = System.Drawing.Image.FromFile("..\..\..\new.png")
-Me.toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
-Me.toolStripMenuItem3.Image = System.Drawing.Image.FromFile("..\..\..\cut.png")
-Me.toolStripMenuItem1.Text = "New"
-Me.toolStripMenuItem2.Text = "Copy"
-Me.toolStripMenuItem3.Text = "Cut"
-Me.contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1,Me.toolStripMenuItem2,Me.toolStripMenuItem3})
-Me.contextMenuStripEx.ResumeLayout(False)
-
-{% endhighlight %}
-{% endtabs %}
-
-## Associating Context Menu to a control
-
-### Through Designer
-
-1. To associate the context menu to a control we need to drag and drop any control of your choice to the application. In this illustration, we have used "RichTextBox".
-
->**NOTE**:
-To associate the ContextMenuStripEx control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc...
-
-![Associating Context Menu](GettingStarted_Images/TextBox.png)
-
-2. **Right-click** on the RichTextBox control in the designer and select **Properties**. Now, in the **Properties** panel, under **Behavior > ContextMenuStrip** we need to assign the respective context menu.
-
-![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx6.png)
-
-![Associating Context Menu](GettingStarted_Images/ContextMenuStripEx7.png)
-
-### Through Code
-
-1. To associate the ContextMenuStripEx control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc .. In this illustration, we have used RichTextBox.
-
-2. By using the **ContextMenuStrip** property, we can associate the context menu to a RichTextBox control. The below code snippet will the same.
 
 {% tabs %}
 {% highlight C# %}
@@ -258,7 +155,22 @@ Me.Controls.Add(Me.richTextBox1)
 {% endhighlight %}
 {% endtabs %}
 
-![Associating Context Menu](GettingStarted_Images/Associate.png)
+
+![Add a Context Menu](GettingStarted_Images/Associate.png)
+
+## Through NuGet package
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+
+
+
+
+
+
+
+
 
 
 

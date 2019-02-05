@@ -1249,7 +1249,7 @@ Separator is Used for separation of bar items visually in a **XPToolBar**.
 
 ### Through Designer
 
-1. Once XPToolBar control is added, We can add the **Separator** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > SeparatorIndices** set the **Indices** values which the separator have to be placed from the **Int32 Collection Editor**.
+ Once XPToolBar control is added, We can add the **Separator** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > SeparatorIndices** set the **Indices** values which the separator have to be placed from the **Int32 Collection Editor**.
 
    ![Separator](BarItems_Images/Properties.png)
 

@@ -14,14 +14,6 @@ Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup 
 
 This section provides a quick overview for working with the **XPToolbar** control in a WinForms application.
 
-## Project Initialization
-
-Create a new WinForms application by opening Visual Studio IDE and navigate to **File > New > Project > Windows Forms Application (inside Visual C# Templates)** to create a new WinForms application.
-
-![Project Initialization](GettingStarted_Images/Project.png)
-
-![Project Initialization](GettingStarted_Images/Project1.png)
-
 ## Dependent Assemblies
 
 The following assemblies needs to be added as reference to use the control in any application.
@@ -33,9 +25,7 @@ The following assemblies needs to be added as reference to use the control in an
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
 
-## Adding the Toolbar
-
-### Through Designer
+## Adding the toolbar through designer
 
 The XPToolbar control can be added through designer by following the below steps.
 
@@ -47,7 +37,31 @@ The XPToolbar control can be added through designer by following the below steps
 
    ![Adding the Toolbar](GettingStarted_Images/XPToolbar2.png)
 
-### Through Code
+3. For designing, click on the smart tag of XPToolbar control to choose the **Items Collection**.
+
+   ![Designing the Toolbar](GettingStarted_Images/XPToolbar3.png)
+
+4. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
+
+   ![Designing the Toolbar](GettingStarted_Images/XPToolbar4.png)
+
+5. Or, we can also add the bar items by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
+
+   ![Design the Toolbar](GettingStarted_Images/Properties.png)
+
+   ![Design the Toolbar](GettingStarted_Images/Properties1.png)
+
+6. In BarItem Collection Editor window, under **Appearance > Text** we can set the text for particular bar item.
+
+   ![Designing the Toolbar](GettingStarted_Images/Properties2.png)
+
+7. To position the toolbar we need to drag and drop any supportive control of your choice like Label, Panel, GroupBox, TabControl, etc... into the application. In this illustration, we have used "Panel".
+
+   ![Positioning the Toolbar](GettingStarted_Images/Panel.png)
+
+> "Toolbar" control cannot be directly dropped inside "Panel" via designer. Instead, you can place both these controls in the designer and position them through code behind. Appropriate codes are documented in the immediate section.       
+
+## Adding the toolbar through code
 
 The XPToolbar control can be added through code by following the below steps.
 
@@ -65,122 +79,6 @@ The XPToolbar control can be added through code by following the below steps.
    {System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
 
 2. The below code snippets adds a XPToolbar control to the application.
-
-{% tabs %}
-{% highlight C# %}
-
-//Declaration - XPToolbar
-private Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar xpToolBar1;
-
-//Initializing - XPToolbar
-this.xpToolBar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Declaration - XPToolbar
-Private xpToolBar1 As Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar
-
-'Initializing - XPToolbar
-Me.xpToolBar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar()
-
-{% endhighlight %}
-{% endtabs %}
-
-### Through NuGet package
-
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptoolbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
-
-Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
-
-## Designing the Toolbar
-
-### Through Designer
-
-1. Click on the smart tag of XPToolbar control to choose the **Items Collection**.
-
-   ![Designing the Toolbar](GettingStarted_Images/XPToolbar3.png)
-
-2. In BarItem Collection Editor window, click on down arrow of **Add** button. It will display different types of bar items. Using this, user can add appropriate bar items as per their need.
-
-   ![Designing the Toolbar](GettingStarted_Images/XPToolbar4.png)
-
-3. Or, we can also add the bar items by right-clicking on the control in the designer and selecting **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
-
-   ![Design the Toolbar](GettingStarted_Images/Properties.png)
-
-   ![Design the Toolbar](GettingStarted_Images/Properties1.png)
-
-4. In BarItem Collection Editor window, under **Appearance > Text** we can set the text for particular bar item.
-
-   ![Designing the Toolbar](GettingStarted_Images/Properties2.png)
-
-### Through Code
-
-The below code snippets add a bar items to the XPToolbar control.
-
-{% tabs %}
-{% highlight C# %}
-
-//Declaration
-private Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar xpToolBar1;
-private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
-private Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem parentBarItem1;
-private Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem dropDownBarItem1;
-
-//Initializing
-this.xpToolBar1 = new Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar();
-this.barItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
-this.parentBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem();
-this.dropDownBarItem1 = new Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem();
-
-//Add a bar items to the control
-this.barItem1.Text = "File";
-this.parentBarItem1.Text = "Edit";
-this.dropDownBarItem1.Text = "View";
-this.xpToolBar1.Bar.Items.AddRange(new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem[] { this.barItem1, this.parentBarItem1, this.dropDownBarItem1});
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Declaration
-Private xpToolBar1 As Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar
-Private barItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
-Private parentBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem
-Private dropDownBarItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem
-
-'Initializing
-Me.xpToolBar1 = New Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar()
-Me.barItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem()
-Me.parentBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem()
-Me.dropDownBarItem1 = New Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem()
-
-'Add a bar items to the control
-Me.barItem1.Text = "File"
-Me.parentBarItem1.Text = "Edit"
-Me.dropDownBarItem1.Text = "View"
-Me.xpToolBar1.Bar.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { Me.barItem1, Me.parentBarItem1, Me.dropDownBarItem1})
-
-{% endhighlight %}
-{% endtabs %}
-
-![Designing the Toolbar](GettingStarted_Images/XPToolbar5.png)
-
-## Positioning Toolbar in a form
-
-### Through Designer
-
-To position the toolbar we need to drag and drop any supportive control of your choice like Label, Panel, GroupBox, TabControl, etc... into the application. In this illustration, we have used "Panel".
-
-![Positioning the Toolbar](GettingStarted_Images/Panel.png)
-
-> "Toolbar" control cannot be directly dropped inside "Panel" via designer. Instead, you can place both these controls in the designer and position them through code behind. Appropriate codes are documented in the immediate section. 
-
-### Through Code
-
-To positioning the XPToolBar control, you can choose any supportive control of your choice like Label, Panel, GroupBox, TabControl, etc to the application. In this illustration, we have used Panel.
 
 {% tabs %}
 {% highlight C# %}
@@ -236,4 +134,17 @@ Me.Controls.Add(Me.panel1)
 {% endhighlight %}
 {% endtabs %}
 
-![Positioning the Toolbar](GettingStarted_Images/XPToolbar6.png)
+
+![Add the Toolbar](GettingStarted_Images/XPToolbar6.png)
+
+## Through NuGet package
+
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptoolbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+
+
+
+
+
+
