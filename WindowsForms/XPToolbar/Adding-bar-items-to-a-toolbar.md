@@ -45,13 +45,13 @@ ParentBarItems represents the submenu that appears on drop down list. BarItems c
 
    ![ParentBarItem](BarItems_Images/Properties9.png)
 
-3. Smilarly, we can add the sub menu items in **BarItem Collection Editor** window under **Misc > Items**.
+3. Similarly, we can add the sub menu items in **BarItem Collection Editor** window under **Misc > Items**.
 
    ![ParentBarItem](BarItems_Images/Properties10.png)
 
    ![ParentBarItem](BarItems_Images/Properties11.png)
 
-4. Smilarly, we can add the image for sub menu items in **BarItem Collection Editor** window under **Appearance > Image**.
+4. Similarly, we can add the image for sub menu items in **BarItem Collection Editor** window under **Appearance > Image**.
 
    ![ParentBarItem](BarItems_Images/Properties12.png)
 

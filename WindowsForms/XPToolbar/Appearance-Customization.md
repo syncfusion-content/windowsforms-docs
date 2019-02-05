@@ -58,7 +58,7 @@ Me.xpToolBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 
 ## Enable/Disable
 
-XPToolBar is enabled by default when they are created. But its visibility can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Enabled) property. Smilarly, we can disable individual bar items by using the [`Enabled`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Enabled.html) property of each item.
+XPToolBar is enabled by default when they are created. But its visibility can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Enabled) property. Similarly, we can disable individual bar items by using the [`Enabled`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Enabled.html) property of each item.
 
 
 The below code snippet will explain how to disable XPToolBar.
@@ -95,13 +95,13 @@ The below code snippet will explain the procedure to set font for toolbar.
 {% tabs %}
 {% highlight c# %}
 
-this.xpToolBar1.Font = new System.Drawing.Font("Tempus Sans ITC", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))));
+this.xpToolBar1.Font = new System.Drawing.Font("Verdana", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))));
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.xpToolBar1.Font = New System.Drawing.Font("Tempus Sans ITC", 12F, (CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Strikeout), System.Drawing.FontStyle)))
+Me.xpToolBar1.Font = New System.Drawing.Font("Verdana", 12F, (CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Strikeout), System.Drawing.FontStyle)))
 
 {% endhighlight %}
 {% endtabs %}

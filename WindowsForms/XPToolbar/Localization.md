@@ -45,7 +45,7 @@ Me.barItem6.Text = "Hilfe"
 
 **French Culture**
 
-![French Culture**](Localization_Images/FR.png)
+![French Culture](Localization_Images/FR.png)
 
 **Arabic Culture**
 
