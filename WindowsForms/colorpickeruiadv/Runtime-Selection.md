@@ -10,7 +10,7 @@ documentation: ug
 
 The ColorPickerUIAdv control at run time provides a Color dialog, using which we can select and add colors to the color groups.
 
-![](ColorPickerUIAdv_Images/Overview_img274.jpeg) 
+![Adding new color at runtime](ColorPickerUIAdv_Images/ColorPickerUIAdv_img3.jpeg) 
 
 ## Color Selection at Runtime
 
@@ -30,6 +30,6 @@ Me.colorPickerUIAdv1.AutomaticColor = System.Drawing.Color.OrangeRed
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img275.jpeg) 
+![Showing selected colors from automatic color group](ColorPickerUIAdv_Images/ColorPickerUIAdv_img9.jpeg) 
 
 N>  Height of this Automatic button can be specified in ColorPickerUIAdv.ButtonHeight property. Default value is 23.
