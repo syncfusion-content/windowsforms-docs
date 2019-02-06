@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: creating calculator control
+title: Getting Started | Calculator | WindowsForms | Syncfusion
+description: This section describes how to add calculator control into windows forms application.
 platform: WindowsForms
 control: Calculator
 documentation: ug
@@ -9,68 +9,73 @@ documentation: ug
 
 # Getting Started
 
-The Calculator control can be available to the designer by just dragging-and-dropping the Calculator control from the toolbox onto the form. 
+## Assembly deployment
 
-![](Overview_images/Overview_img111.jpeg) 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#calculator) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-It can be created programmatically using the below steps.
+You can find more details about installing the NuGet package in a Windows Forms application in the following link: 
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-1. Include the required namespace.
+## Create a simple application with Calculator
 
-{% tabs %}
-{% highlight c# %}
+You can create a Windows Forms application with the Calculator control using the following steps:
 
-using Syncfusion.Windows.Forms.Tools;
+## Create a project
 
-{% endhighlight %}
+Create a new Windows Forms project in Visual Studio to display the Calculator.
 
-{% highlight vb %}
+## Add control through designer
 
-Imports Syncfusion.Windows.Forms.Tools
+The Calculator control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
 
-{% endhighlight %}
-{% endtabs %}
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base 
+* Syncfusion.Tools.Windows
 
-2. Declare and create an instance of the Calculator control class.
+![wf calculator control added by designer ](Getting-Started_images/wf-calculator-control-added-by-designer.png) 
 
-{% tabs %}
-{% highlight c# %}
+## Add control manually in code
 
-private Syncfusion.Windows.Forms.Tools.CalculatorControl calculatorControl1;
+To add the control manually in C#, follow the given steps:
 
-// Create an instance of the Calculator control
-this.calculatorControl1 = new CalculatorControl();
+**1.** Add the following required assembly references to the project:
+ 
+  * Syncfusion.Grid.Base
+  * Syncfusion.Grid.Windows
+  * Syncfusion.Shared.Base
+  * Syncfusion.Shared.Windows
+  * Syncfusion.Tools.Base 
+  * Syncfusion.Tools.Windows
 
-{% endhighlight %}
+**2.** Include the Calculator control namespace **Syncfusion.Windows.Forms.Tools;**.
 
-{% highlight vb %}
+  {% tabs %}
+  {% highlight C# %}
+  using Syncfusion.Windows.Forms.Tools;
+  {% endhighlight %}
+  {% highlight VB %}
+  Imports Syncfusion.Windows.Forms.Tools
+  {% endhighlight %}
+  {% endtabs %} 
 
-Private calculatorControl1 As Syncfusion.Windows.Forms.Tools.CalculatorControl
+**3.** Create a Calculator control instance, and add it to the form.
 
-' Create an instance of the Calculator control
-Me.calculatorControl1 = New CalculatorControl()
+  {% tabs %}
+  {% highlight C# %}
+  CalculatorControl calculatorControl = new CalculatorControl();
+  calculatorControl1.Size = new Size(300, 250);
+  this.Controls.Add(calculatorControl);
+  {% endhighlight %}
+  {% highlight VB %}
+  Dim calculatorControl As CalculatorControl = New CalculatorControl
+  calculatorControl1.Size = New Size(300, 250)
+  Me.Controls.Add(calculatorControl)
+  {% endhighlight %}
+  {% endtabs %}
 
-{% endhighlight %}
-{% endtabs %}
+![wf calculator control](Overview_images/Overview_img112.jpeg) 
 
-3. As the final step, add the Calculator control to the form as follows.
-
-{% tabs %}
-{% highlight c# %}
-
-// Add the CalculatorControl control to the form.
-this.Controls.Add(this.calculatorControl1);
-this.calculatorControl1.Visible=true;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-' Add the CalculatorControl control to the form.
-Me.Controls.Add(Me.calculatorControl1)
-Me.calculatorControl1.Visible=True
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Overview_images/Overview_img112.jpeg) 
