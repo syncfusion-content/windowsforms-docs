@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider-Value-changed-event | WindowsForms | Syncfusion
+title: Slider-Value-changed-event | RadialSlider | WindowsForms | Syncfusion
 description: slider value changed event
 platform: WindowsForms
 control: RadialSlider 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Slider current value
 
-We can get the current slider value by using the value changed event.
+We can get the current slider value by using the [ValueChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ValueChanged_EV.html).
 
 {% tabs %}
 

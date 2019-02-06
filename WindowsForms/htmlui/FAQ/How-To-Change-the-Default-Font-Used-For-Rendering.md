@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-To-Change-the-Default-Font-Used-For-Rendering- | WindowsForms | Syncfusion
+title: Change-the-Default-Font-Used-For-Rendering | WindowsForms | Syncfusion
 description: how to change the default font used for rendering the html document in the htmlui control?
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
 # How to change the default font used for rendering the HTML document in the HTMLUI control?
 
-HTMLUI uses a default font to render the text from the HTML document, in cases where there are no specifications for the font to be used. You can change this default font by using the DefaultFormat.Font property, written while initializing the HTMLUI control.
+HTMLUI uses a default font to render the text from the HTML document, in cases where there are no specifications for the font to be used. You can change this default font by using the [DefaultFormat.Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~DefaultFormat.html) property, written while initializing the HTMLUI control.
 
 {% tabs %}
 

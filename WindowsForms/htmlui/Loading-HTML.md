@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Loading-HTML | WindowsForms | Syncfusion
+title: Loading-HTML | HTMLUIControl | WindowsForms | Syncfusion
 description: loading html
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
@@ -32,9 +32,9 @@ There may be situations where the HTML document is to be loaded initially at sta
 
 
 
-Using the Properties window involves specifying the location of the Startup HTML file in the StartupDocument property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
+Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~StartupDocument.html) property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
 
-![](Loading-HTML_images/Loading-HTML_img1.png)
+![Set the location of startup html file](Loading-HTML_images/Loading-HTML_img1.png)
 
 
 
@@ -75,7 +75,7 @@ End Sub
 {% endtabs %}
 
 
-![](Loading-HTML_images/Loading-HTML_img2.png)
+![Startup document loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img2.png)
 
 
 
@@ -83,7 +83,7 @@ End Sub
 
 This sample demonstrates the implementation of Startup Document by using HTML file in HTMLUI.
 
-![](Loading-HTML_images/Loading-HTML_img3.jpeg)
+![Startup file loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img3.jpeg)
 
 
 
@@ -139,7 +139,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 {% endtabs %}
 
-![](Loading-HTML_images/Loading-HTML_img4.png)
+![Disk file loaded in HTMLUIContrl](Loading-HTML_images/Loading-HTML_img4.png)
 
 
 
@@ -147,7 +147,7 @@ Me.HtmluiControl1.LoadHTML(path)
 
 This sample demonstrates the implementation of Loading a file from Disk by using HTMLUI.
 
-![](Loading-HTML_images/Loading-HTML_img5.jpeg)
+![Disk document loaded in HTMLUIContrl](Loading-HTML_images/Loading-HTML_img5.jpeg)
 
 
 
@@ -238,7 +238,7 @@ An HTML document containing file links is illustrated by the code given below:
 
 The following image shows file links that link to another HTML Document.
 
-![](Loading-HTML_images/Loading-HTML_img6.png)
+![Link files are loaded in HTMLUIcontrol](Loading-HTML_images/Loading-HTML_img6.png)
 
 
 
@@ -250,7 +250,7 @@ This sample demonstrates how HTML files can be linked from one document to anoth
 
 
 
-![](Loading-HTML_images/Loading-HTML_img7.jpeg)
+![Link files are loaded in HTMLUIControl](Loading-HTML_images/Loading-HTML_img7.jpeg)
 
 
 
@@ -370,7 +370,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 3. Click the Add tab; a sub-menu is displayed.
 
-   ![](Loading-HTML_images/Loading-HTML_img8.png)
+   ![Load the file from resource](Loading-HTML_images/Loading-HTML_img8.png)
 
 
 
@@ -386,7 +386,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 6. You can change the name by using the Name tab given at the bottom of the wizard.
 
-   ![](Loading-HTML_images/Loading-HTML_img9.png)
+   ![Resource file](Loading-HTML_images/Loading-HTML_img9.png)
 
 
 
@@ -398,7 +398,7 @@ The HTML file can be loaded as an Embedded Resource in the HTMLUI control. The p
 
 8. In the properties grid of the resource HTML file, specify its BuildAction as the Embedded Resource.
 
-   ![](Loading-HTML_images/Loading-HTML_img10.png)
+   ![Embedded resource](Loading-HTML_images/Loading-HTML_img10.png)
 
 
 
@@ -444,23 +444,23 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 
 It is necessary to invoke the System.IO and System.Reflection namespaces to use the classes and their methods used in the code above.
 
-The System.Reflection.Assembly.GetExecutingAssembly method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
+The [GetExecutingAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=netframework-4.7.2) method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
 
 The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
 
-N> The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
+N> The string entered inside the [GetManifestResourceStream](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getmanifestresourcestream?view=netframework-4.7.2) method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 The following image shows file loaded from an embedded resource.
 
 
-![](Loading-HTML_images/Loading-HTML_img12.png)
+![File loaded from embedded resource](Loading-HTML_images/Loading-HTML_img12.png)
 
 
 #### Load resource file sample
 
 This sample demonstrates the implementation of Loading Embedded Resource Files by using HTMLUI.
 
-![](Loading-HTML_images/Loading-HTML_img13.jpeg)
+![File loaded from embedded resource](Loading-HTML_images/Loading-HTML_img13.jpeg)
 
 
 
