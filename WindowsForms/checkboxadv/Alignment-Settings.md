@@ -15,6 +15,8 @@ This section discusses the alignment settings of the CheckBoxAdv.
 
 Text in the CheckBoxAdv can be aligned to the desired location as given below.
 
+The `TextContentAlignment` property options included are as follows, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+
 <table>
 <tr>
 <th>
@@ -23,7 +25,7 @@ Description</th></tr>
 <tr>
 <td>
 TextContentAlignment</td><td>
-Indicates the alignment of the text. The default value is set to 'MiddleLeft'.The options included are as follows.{{ 'TopLeft,' | markdownify }}{{ 'TopCenter,' | markdownify }}{{ 'TopRight,' | markdownify }}{{ 'MiddleLeft,' | markdownify }}{{ 'MiddleCenter,' | markdownify }}{{ 'MiddleRight,' | markdownify }}{{ 'BottomLeft,' | markdownify }}{{ '_BottomCenter and_' | markdownify }}{{ 'BottomRight.' | markdownify }}WrapText property must be set to 'False'. Refer Text Settings</td></tr>
+Indicates the alignment of the text.The default value is set to `MiddleLeft`. WrapText property must be set to 'False'. Refer {{'[Text Settings](https://help.syncfusion.com/windowsforms/checkboxadv/text-settings)' | markdownify}}</td></tr>
 </table>
 
 {% tabs %}
@@ -40,11 +42,13 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img614.jpeg)
+![Changed text alignment in CheckBoxAdv](Overview_images/Overview_img614.jpeg)
 
 ## CheckBox Alignment
 
 The CheckBox itself can be aligned to any desired location that can be chosen from the options given in the following property.
+
+The `CheckAlign` property options included are as follows, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
 
 <table>
 <tr>
@@ -54,7 +58,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckAlign</td><td>
-Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.The options included are as follows.{{ 'TopLeft,' | markdownify }}{{ 'TopCenter,' | markdownify }}{{ 'TopRight,' | markdownify }}{{ 'MiddleLeft,' | markdownify }}{{ 'MiddleCenter,' | markdownify }}{{ 'MiddleRight,'| markdownify }}{{ 'BottomLeft,' | markdownify }}{{ 'BottomCenter and' | markdownify }}{{ 'BottomRight.' | markdownify }}</td></tr>
+Indicates the alignment of the CheckBox. The default value is set to 'MiddleLeft'.</td></tr>
 </table>
 
 {% tabs %}
@@ -71,11 +75,8 @@ Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img615.jpeg)
+![Changed the position of CheckBoxAdv ](Overview_images/Overview_img615.jpeg)
 
-A sample which demonstrates the Text and CheckBox Alignment features of CheckBoxAdv is available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
 
 {% seealso %}
 

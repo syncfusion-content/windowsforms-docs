@@ -40,7 +40,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img623.jpeg)
+![Themes appearance for CheckBoxAdv](Overview_images/Overview_img623.jpeg)
 
 ## Visual Styles
 
@@ -54,20 +54,13 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the CheckBoxAdv.The options included are as follows.
+Gets or sets an advanced appearance for the CheckBoxAdv.The options included are as follows, Default, Office2007, Metro, Office2016Colorful, Office2016White, Office2016Black, Office2016DarkGray
 
-* {{ '_Default_' | markdownify }}
-* {{ '_Office2007_' | markdownify }}
-* {{ '_Metro_' | markdownify }}
-* {{ '_Office2016Colorful_' | markdownify }}
-* {{ '_Office2016White_' | markdownify }}
-* {{ '_Office2016Black_' | markdownify }}
-* {{ '_Office2016DarkGray_' | markdownify }}
 </td></tr>
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }}{{ '_Blue,_' | markdownify }}{{ '_Silver and_' | markdownify }}{{ '_Black._' | markdownify }}The Style property should be set to "Office2007".</td></tr>
+Gets or sets Office 2007 color scheme.The options included are as follows, Managed, Blue, Silver and Black. The Style property should be set to "Office2007".</td></tr>
 </table>
 
 {% tabs %}
@@ -84,7 +77,7 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/CheckBoxStyles.jpeg) 
+![Styles of CheckBoxAdv](Overview_images/Overview_img627.jpeg) 
 
 When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
 
@@ -108,4 +101,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Pink)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img626.jpeg)
+![Office2007ColorScheme is set to managed](Overview_images/Overview_img626.jpeg)

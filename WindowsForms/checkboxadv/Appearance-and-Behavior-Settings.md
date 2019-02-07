@@ -42,7 +42,9 @@ Me.checkBoxAdv1.DrawFocusRectangle = True
 {% endhighlight %}
 {% endtabs %}
 
-Behavior Settings
+![DrawFocusRectangle is enabled or diabled in CheckBoxAdv](Overview_images/Overview_img628.jpeg)
+
+## Behavior Settings
 
 The behavior settings of the CheckBoxAdv can be customized using the properties given below.
 
@@ -84,6 +86,3 @@ Me.checkBoxAdv1.Tristate= False
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates the ReadOnlyMode and Tristate properties of CheckBoxAdv is available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

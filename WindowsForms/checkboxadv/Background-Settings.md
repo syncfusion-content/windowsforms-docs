@@ -51,11 +51,8 @@ Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/Overview_img616.jpeg)
+ ![Gradient style applied in background of CheckBoxAdv](Overview_images/Overview_img616.jpeg)
 
 
 N> Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 
-A sample which demonstrates the Background Settings of CheckBoxAdv is available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo

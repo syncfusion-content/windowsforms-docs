@@ -9,9 +9,7 @@ documentation: ug
 
 # CheckBoxAdv Settings
 
-This section discusses the various states of the CheckBoxAdv control and the method of associating values with the states.
-
-It includes the below given topics.
+This section discusses the various states of the `CheckBoxAdv` control and the method of associating values with the states.
 
 ## CheckBoxAdv States
 
@@ -25,11 +23,11 @@ Description</th></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets / sets the check state of the CheckBox.It includes the below given options.{{ 'Unchecked,' | markdownify }}{{ 'Checked and' | markdownify }}{{ 'Indeterminate.' | markdownify }}</td></tr>
+Gets or sets the check state of the CheckBox.It includes the below given options.{{ 'Unchecked,' | markdownify }}{{ 'Checked and' | markdownify }}{{ 'Indeterminate.' | markdownify }}</td></tr>
 <tr>
 <td>
 Checked</td><td>
-Gets / sets the checked state of the CheckBox.</td></tr>
+Gets or sets the checked state of the CheckBox.</td></tr>
 </table>
 
 {% tabs %}
@@ -48,10 +46,7 @@ Me.checkBoxAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img610.jpeg)
-
-![](Overview_images/Overview_img611.jpeg)
-
+![Various states of CheckBoxAdv](Overview_images/Overview_img610.jpeg)
 
 {% seealso %}
 
@@ -103,11 +98,11 @@ Gets or sets the string value.</td></tr>
 <tr>
 <td>
 BoolValue</td><td>
-Gets / sets a value indicating the check state. This property can be set to use bool values for data binding. Refer Frequently Asked Questions section. </td></tr>
+Gets or sets a value indicating the check state. This property can be set to use bool values for data binding. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkboxadv/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-boolean)' | markdownify }}. </td></tr>
 <tr>
 <td>
 IntValue</td><td>
-Gets / sets the int value. Refer Frequently Asked Questions section.</td></tr>
+Gets or sets the int value. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkboxadv/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-a-bit-field)' | markdownify }}</td></tr>
 </table>
 
 {% tabs %}
