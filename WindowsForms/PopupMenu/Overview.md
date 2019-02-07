@@ -15,7 +15,7 @@ Popup menu represents a context menu, that will be hidden by default and shows o
 
 * **BarItems** - BarItems like ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem can be added to the PopupMenu control.
 
-* **Partial Menus** - The popupmenu items can be prioritized to display the bar items that are being used frequently and hide the rest.
+* **Partial Menus** - The popup menu items can be prioritized to display the bar items that are being used frequently and hide the rest.
 
 * **Multi-level Menu Items** - Allows to add submenu items or child items down the level in the popup menu.
 

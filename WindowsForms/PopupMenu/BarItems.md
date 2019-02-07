@@ -54,7 +54,7 @@ The ParentBarItem is a type of bar item which acts a parent control for sub-menu
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem1.png)
 
-5. Smilarly, we can add the sub menu items in **BarItem Collection Editor** window under **Misc > Items** section.
+5. Similarly, we can add the sub menu items in **BarItem Collection Editor** window under **Misc > Items** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem2.png)
 
@@ -62,7 +62,7 @@ The ParentBarItem is a type of bar item which acts a parent control for sub-menu
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem3.png)
 
-7. Smilarly, we can add the image under **Appearance > Image** section.
+7. Similarly, we can add the image under **Appearance > Image** section.
 
    ![ParentBarItem](MenuItems_Images/ParentBarItem4.png)
 

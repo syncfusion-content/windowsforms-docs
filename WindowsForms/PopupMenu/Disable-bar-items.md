@@ -11,7 +11,7 @@ documentation: ug
 
 >**NOTE**       
 1. This feature is not applicable for ListBarItem and StaticBarItem.             
-2. In this illustration we have used **BarItem**. Similarly, we have to set for ParentBarItem, DropDownBarItem,ComboBoxbarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+2. In this illustration we have used **BarItem**. Similarly, we have to set for ParentBarItem, DropDownBarItem,ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
 
 We can disable the unused or unsupported bar items by using this feature. BarItems are enabled by default when they are created, but this can be changed based on user requirement through the [`Enabled`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Enabled.html) property.
 

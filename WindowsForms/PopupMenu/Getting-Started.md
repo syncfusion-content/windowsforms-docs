@@ -54,13 +54,13 @@ The PopupMenu control can be added through designer by following the below steps
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu6.png)
 
-6. In this illustration we have added **BarItem**. Smilarly, we can add ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+6. In this illustration we have added **BarItem**. Similarly, we can add ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
 
 7. Once items are added, we can select particular item in **BarItem Collection Editor** window and set text under **Appearance > Text** section.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu7.png)
 
-   Smilarly, we can add image under **Appearance > Image** section.
+   Similarly, we can add image under **Appearance > Image** section.
 
    ![Adding the PopupMenu](GettingStarted_Images/PopupMenu8.png)
 
@@ -70,7 +70,7 @@ The PopupMenu control can be added through designer by following the below steps
 
    ![Associating the PopupMenu](GettingStarted_Images/PopupMenu14.png)
 
-9. Now we are going to associate the popup menu control with an appropriate control. In this example, we illustarte the scenario with "RichTextBox" control.
+9. Now we are going to associate the popup menu control with an appropriate control. In this example, we illustrate the scenario with "RichTextBox" control.
 
    >**NOTE**:
    To associate the PopupMenu control, you can choose any type of control like RichTextBox, Button, Label, TextBox, MaskedTextBox etc... of your choice.  

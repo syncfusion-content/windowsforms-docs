@@ -12,7 +12,7 @@ documentation: ug
 Displaying an image besides each bar item helps users to easily identify the operation through iconic representation and also to improve the visual appearance of the popup menu. Images can associated with a bar item depending upon its state either it is enabled, disabled, highlighted upon it.
 
 >**NOTE**    
-In this illustration we have set image for **BarItem**. Similarly, we have to set for ParentBarItem, DropDownBarItem, ComboBoxbarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
+In this illustration we have set image for **BarItem**. Similarly, we have to set for ParentBarItem, DropDownBarItem, ComboBoxBarItem, ListBarItem, StaticBarItem and TextBoxBarItem.
 
 
 ## Adding enable state images

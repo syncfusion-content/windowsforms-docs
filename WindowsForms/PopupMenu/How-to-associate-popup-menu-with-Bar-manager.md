@@ -25,7 +25,7 @@ private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem1;
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem2;
 private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem barItem3;
 
-//Intializing
+//Initializing
 this.commandBarController1 = new Syncfusion.Windows.Forms.Tools.CommandBarController(this.components);
 this.commandBar1 = new Syncfusion.Windows.Forms.Tools.CommandBar();
 this.popupMenu1 = new Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu(this.components);
@@ -82,7 +82,7 @@ Private barItem1 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 Private barItem2 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 Private barItem3 As Syncfusion.Windows.Forms.Tools.XPMenus.BarItem
 
-'Intializing
+'Initializing
 Me.commandBarController1 = New Syncfusion.Windows.Forms.Tools.CommandBarController(Me.components)
 Me.commandBar1 = New Syncfusion.Windows.Forms.Tools.CommandBar()
 Me.popupMenu1 = New Syncfusion.Windows.Forms.Tools.XPMenus.PopupMenu(Me.components)

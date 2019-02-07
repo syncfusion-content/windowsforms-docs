@@ -38,7 +38,7 @@ Grouping can also be done by using the below mentioned methods.
 
 * [`RemoveGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~RemoveGroupAt.html) : Ends the categorization (grouping) of items immediately before the BarItem instance specified. 
 
-* [`IsGroupBeginning`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~IsGroupBeginning.html) : Returns a boolean value whether the specified bar item instance is at the begining of the grouping or not. 
+* [`IsGroupBeginning`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~IsGroupBeginning.html) : Returns a boolean value whether the specified bar item instance is at the beginning of the grouping or not. 
 
 The below code snippets will explain how to set grouping by using the methods.
 
