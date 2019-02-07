@@ -9,21 +9,9 @@ documentation: ug
 
 # Multi-level Menu Items
 
-Multi level menu items refers adding sub menu items using the **DropDownItems** property.
+Multi-level menu items refers to adding submenu items or child items to the context menu. The [`DropDownItems`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownitem.dropdownitems?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownItem_DropDownItems) property of menu item is used to add child items.
 
-## Through Designer
-
-Once items are added, we can add **DropDown** items by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Data > DropDownItems** we need to add sub menu items using **Items Collection Editor**.
-
-![Multi-level Menu Items](MultilevelMenuItems_Images/Properties.png)
-
-![Multi-level Menu Items](MultilevelMenuItems_Images/Properties1.png)
-
-![Multi-level Menu Items](MultilevelMenuItems_Images/Properties2.png)
-
-## Through Code
-
-The below code snippet shows how to add sub menu items to the ContextMenuStripEx control.
+The below code snippet shows how to add submenu items to the ContextMenuStripEx control.
 
 {% tabs %}
 {% highlight c# %}

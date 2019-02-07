@@ -9,17 +9,7 @@ documentation: ug
 
 # Disable menu items
 
-ToolStripItems are enabled by default when they are created, but this can be changed based on user requirement through the **Enabled** property. User can set this property at design time through the **Properties** window or programmatically by setting it in code.
-
-## Through Designer
-
-Once items are added, we can disable the item by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > Enabled** we need to set as false.
-
-![Disable menu items](DisableMenuitems_Images/Disable.png)
-
-![Disable menu items](DisableMenuitems_Images/Disable1.png)
-
-## Through Code
+We can disable the unused or unsupported menu items by using this feature. ToolStripItems are enabled by default when they are created, but this can be changed based on user requirement through the [`Enabled`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.enabled?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Enabled) property.
 
 The below code snippet will explain how to disable the ToolStripItems.
 
@@ -41,4 +31,4 @@ Me.toolStripComboBox1.Enabled = False
 {% endhighlight %}
 {% endtabs %}
 
-![Disable menu items](DisableMenuitems_Images/Disable2.png)
+![Disable menu items](DisableMenuitems_Images/Disable.png)

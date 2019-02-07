@@ -9,22 +9,11 @@ documentation: ug
 
 # Trigger Menu Item
 
-The menu items are operated through the click event on selection.
+On selection, the context menu item functionality is handled through the [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event for further operations.
 
-> **Note**     
-> Menu items can also be operated through keyboard shortcuts. The click event will be invoked when pressing the shortcut keys.
+> **NOTE**     
+> Menu items can also be operated through keyboard shortcuts. The [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event will be invoked when pressing the shortcut keys.
 
-## Through Designer
-
-1. The **Click** event can be created by double click on the particular menu items in designer.
-
-2. Or, **Click** event can also be created in the **Properties** panel, under **Action > Click** section.
-
-![Trigger Menu Item](Trigger_Images/Properties.png)
-
-![Trigger Menu Item](Trigger_Images/Properties1.png)
-
-## Through Code
 
 The below code snippet shows how to append click event for menu items through code behind.
 
