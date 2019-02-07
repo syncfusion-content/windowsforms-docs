@@ -137,7 +137,7 @@ Me.Controls.Add(Me.panel1)
 
 ![Add the Toolbar](GettingStarted_Images/XPToolbar6.png)
 
-## Through NuGet package
+## Adding the toolbar through NuGet package
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptoolbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
