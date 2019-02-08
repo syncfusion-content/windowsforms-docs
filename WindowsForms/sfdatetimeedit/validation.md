@@ -1,6 +1,6 @@
 ---
 layout: post
-title: built-in date and time validation | SfDateTimeEdit | WindowsForms | Syncfusion
+title: built-in date and time validation | SfDateTimeEdit | Syncfusion
 description: How to handle date and time validation in SfDateTimeEdit control
 platform: WindowsForms
 control: SfDateTimeEdit

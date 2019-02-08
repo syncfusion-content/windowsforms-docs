@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfDateTimeEdit | WindowsForms | Syncfusion Essential 
+title: Getting started | SfDateTimeEdit | WindowsForms | Syncfusion  
 description: How to add SfDateTimeEdit and enable its basic features.
 platform: WindowsForms
 control: SfDateTimeEdit 
@@ -22,7 +22,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with SfDateTimeEdit
+## Creating simple application with SfDateTimeEdit
 
 You can create the Windows Forms application with SfDateTimEdit control as follows:
 

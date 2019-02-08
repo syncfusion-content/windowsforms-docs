@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime display patterns of SfDateTimeEdit for Windows Forms
+title: DateTime display patterns of SfDateTimeEdit | WindowsForms | Syncfusion
 description: How to change display patterns of DateTime and Custom pattern for SfDateTimeEdit 
 platform: WindowsForms
 control: SfDateTimeEdit

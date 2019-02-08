@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard and Mouse interaction | SfDateTimeEdit | WindowsForms | Syncfusion
+title: Keyboard and Mouse interaction | SfDateTimeEdit | Syncfusion
 description: Keyboard and Mouse interaction with SfDateTimeEdit
 platform: WindowsForms
 control: SfDateTimeEdit

@@ -15,9 +15,9 @@ By default, the calendar displays the month view. You can move from current mont
 
 Calendar supports month, year, decade, and century views and provides intuitive interface through which you can navigate and quickly select dates.
 
-![](navigation-images/allview.png)
+![Navigation view](navigation-images/allview.png)
 
-![](navigation-images/allview1.png)
+![Navigation view](navigation-images/allview1.png)
 
 You can choose the required view options in the calendar by the [ViewMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ViewMode.html) property. The following code illustrates how to show year and decade views in the calendar.
 
