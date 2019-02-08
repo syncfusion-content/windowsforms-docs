@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes
 
-Theming is the process of applying particular appearance settings to visual elements of a control. This control provides the following theming options:
+Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ContextMenuStripEx~Style.html) property is used to set the visual style of ContextMenuStripEx control. This control provides the following theming options:
 
 * Default
 * Metro
@@ -18,35 +18,25 @@ Theming is the process of applying particular appearance settings to visual elem
 * Office2016DarkGray
 * Office2016Black
 
-The **Style** property is used to set the visual style of ContextMenuStripEx control.
-
-## Office2016Black
-
-### Through Designer
-
-Once ContextMenuStripEx control is added, we can set visual style by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > Style** we need to choose visual style.
-
-![Office2016Black](Theme_Images/Properties.png)
-
-![Office2016Black](Theme_Images/Properties1.png)
-
-### Through Code
 
 The below code snippet will sets the visual style as "Office2016Black".
 
-{% tabs %}
-{% highlight c# %}
+   {% tabs %}
+   {% highlight c# %}
 
-this.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Office2016Black;
+   this.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Office2016Black;
 
-{% endhighlight %}
+   {% endhighlight %}
 
-{% highlight vb %}
+   {% highlight vb %}
 
-Me.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Office2016Black
+   Me.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Office2016Black
 
-{% endhighlight %}
-{% endtabs %}
+   {% endhighlight %}
+   {% endtabs %}
+
+
+## Office2016Black
 
 ![Office2016Black](Theme_Images/Office2016Black.png)
 

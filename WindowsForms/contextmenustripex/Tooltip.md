@@ -9,25 +9,8 @@ documentation: ug
 
 # Tooltip
 
-By enabling **ShowItemToolTips** property, the menu items can display tooltips while mouse hovering. The **ToolTipText** property is used to set the text for the tooltip when **AutoToolTip** is set to false.
+Tooltip is nothing but a hint, showing short format or customized text about the menu item, when mouse hover on it. It can be enabled using the [`ShowItemToolTips`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.showitemtooltips?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ShowItemToolTips) property. The [`ToolTipText`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property is used to set the short format or customized text for each menu item.
 
-### Through Designer
-
-1. Once ContextMenuStripEx control is added, right-click on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > ShowItemToolTips** we need to set true.
-
-![ShowItemToolTips](Tooltip_Images/Properties2.png)
-
-2. Once items are added, we need to set the tooltip by right-click on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > ToolTipText** we need to set the text.
-
-![ToolTipText](Tooltip_Images/Properties.png)
-
-![ToolTipText](Tooltip_Images/Properties1.png)
-
-3. The below image will shows a context menu with tooltip.
-
-![Tooltip](Tooltip_Images/Tooltip.png)
-
-### Through Code
 
 The below code snippet will explain how to set tooltip for context menu items.
 
@@ -35,18 +18,18 @@ The below code snippet will explain how to set tooltip for context menu items.
 {% highlight c# %}
 
 this.contextMenuStripEx.ShowItemToolTips = true;
-this.toolStripMenuItem1.ToolTipText = "New";
-this.toolStripTextBox1.ToolTipText = "Textbox";
-this.toolStripComboBox1.ToolTipText = "Combobox";
+this.toolStripMenuItem1.ToolTipText = "Used to create a new file";
+this.toolStripTextBox1.ToolTipText = "Used to provide a editable text";
+this.toolStripComboBox1.ToolTipText = "Used to provide a collection of items";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.contextMenuStripEx.ShowItemToolTips = True
-Me.toolStripMenuItem1.ToolTipText = "New"
-Me.toolStripTextBox1.ToolTipText = "Textbox"
-Me.toolStripComboBox1.ToolTipText = "Combobox"
+Me.toolStripMenuItem1.ToolTipText = "Used to create a new file"
+Me.toolStripTextBox1.ToolTipText = "Used to provide a editable text"
+Me.toolStripComboBox1.ToolTipText = "Used to provide a collection of items"
 
 {% endhighlight %}
 {% endtabs %}
@@ -55,15 +38,8 @@ Me.toolStripComboBox1.ToolTipText = "Combobox"
 
 ## Auto Tooltip
 
-The **AutoTooltip** property is set to **false** by default. In such case, the control will display the text set in the **ToolTipText** property of the menu item. But on setting it to **true**, it will display the exact text set in the **Text** property if and only if **ToolTipText** property remains empty.
+The [`AutoTooltip`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.autotooltip?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_AutoToolTip) property is set to `false` by default. In such case, the control will display the text set in the [`ToolTipText`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property of the menu item as discussed above. But on setting it to `true`, it will display the exact text set in the [`Text`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_Text) property of each menu item if and only if [`ToolTipText`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property remains empty.
 
-### Through Designer
-
-Once items are added, we can set auto tooltip by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Behavior > AutoToolTip** we need to set **true**.
-
-![Auto Tooltip](Tooltip_Images/Properties3.png)
-
-### Through Code
 
 The below code snippet will explain how to set auto tooltip for menu items.
 

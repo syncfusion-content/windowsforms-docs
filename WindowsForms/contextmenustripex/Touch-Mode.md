@@ -9,17 +9,8 @@ documentation: ug
 
 # Touch Mode
 
-Touch mode is used to access the control easily in touch devices. This option can be enabled using the **EnableTouchMode** property in ContextMenuStripEx control.
+Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ContextMenuStripEx~EnableTouchMode.html) property of ContextMenuStripEx control.
 
-## Through Designer
-
-Once ContextMenuStripEx control is added, we can set touch mode by right-clicking on the control in the designer and select **Properties** option. Now, in the **Properties** panel, under **Misc > EnableTouchMode** we need to set **true**.
-
-![Touch Mode](TouchMode_Images/Properties.png)
-
-![Touch Mode](TouchMode_Images/Properties1.png)
-
-## Through Code
 
 The below code snippet shows how touch mode is enabled in ContextMenuStripEx control.
 
