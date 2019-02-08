@@ -2836,3 +2836,44 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endtabs %}
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img55.jpeg)
+
+### Axis GetVisibleValue
+
+The `GetVisibleValue` property of axis gets values on chart area by specifying chart coordinate
+value.
+
+{% tabs %}
+
+{% highlight c# %}
+
+chart.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Chart_ChartRegionMouseMove);
+
+private void Chart_ChartRegionMouseMove(object sender, MouseEventArgs e)
+        {
+            Point mousePoint = new Point(e.X, e.Y);
+            ChartPoint point = chart.ChartArea.GetValueByPoint(new Point(e.X, e.Y));
+            Point pt = chart.ChartArea.GetPointByValue(point);
+            string text = null;
+            text = "Result of method GetVisibleValue : {" + chart.PrimaryXAxis.GetVisibleValue(point.X) + "," + chart.PrimaryYAxis.GetVisibleValue(point.YValues[0]) + "}";
+            toolTip1.SetToolTip(chart, text);
+        }
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+chart.MouseMove += New System.Windows.Forms.MouseEventHandler(AddressOf Me.Chart_ChartRegionMouseMove);
+
+Private Sub Chart_ChartRegionMouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
+            Dim mousePoint As Point = New Point(e.X, e.Y)
+            Dim point As ChartPoint = chart.ChartArea.GetValueByPoint(New Point(e.X, e.Y))
+            Dim pt As Point = chart.ChartArea.GetPointByValue(point)
+            Dim text As String = Nothing
+            text = "Result of method GetVisibleValue : {" & chart.PrimaryXAxis.GetVisibleValue(point.X) & "," + chart.PrimaryYAxis.GetVisibleValue(point.YValues(0)) & "}"
+            toolTip1.SetToolTip(chart, text)
+        End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img56.jpeg)
