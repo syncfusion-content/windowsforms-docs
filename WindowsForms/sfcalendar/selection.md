@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection of SfCalendar control for Windows Forms
+title: Selection dates | SfCalendar | Windows Forms | Syncfusion
 description: Selecting dates through keyboard and programmatically. Also Multiple Dates of SfCalendar control for Windows Forms
 platform: WindowsForms
 control: SfCalendar
@@ -21,7 +21,7 @@ The selected date of the `SfCalendar` control can be changed by the keyboard. `U
 
 ### Change selection programmatically
 
-The selection of the calendar control can be changed programmatically by setting the `SelectedDate` property. The `GoToDate` method is used to validate and move the current view to the view which contains the date value passed as argument for `GoToDate` method. If the date value is not fall between minimum and maximum ranges or blackout dates contains the date, it returns `false`. The following code example illustrates the same:
+The selection of the calendar control can be changed programmatically by setting the [SelectedDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SelectedDate.html) property. The [GoToDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~GoToDate.html) method is used to validate and move the current view to the view which contains the date value passed as argument for [GoToDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~GoToDate.html) method. If the date value is not fall between minimum and maximum ranges or blackout dates contains the date, it returns `false`. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ End If
 
 ## Multiple selection
 
-The `SfCalendar` control allows you to select multiple dates when the `AllowMultipleSelection` property is true. The following code example illustrates how to configure the calendar control to allow multiple date selection:
+The `SfCalendar` control allows you to select multiple dates when the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~AllowMultipleSelection.html) property is true. The following code example illustrates how to configure the calendar control to allow multiple date selection:
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ The `SfCalendar` allows you to select multiple dates through the keyboard by sel
 
 ### Multiple selection programmatically
 
-Multiple dates in the calendar control can be selected programmatically by adding dates to the `SelectedDates` collection. If the date which passed for adding with selected dates is not fall within minimum or maximum ranges or present in blackout dates, it will not be added to selected dates. The following code example illustrates how to add the selected dates programmatically. In the below code example, blackout dates contain the first date that is added to selected dates. So, except that first added date, other dates are added to selected dates.
+Multiple dates in the calendar control can be selected programmatically by adding dates to the [SelectedDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SelectedDates.html) collection. If the date which passed for adding with selected dates is not fall within minimum or maximum ranges or present in blackout dates, it will not be added to selected dates. The following code example illustrates how to add the selected dates programmatically. In the below code example, blackout dates contain the first date that is added to selected dates. So, except that first added date, other dates are added to selected dates.
 
 {% tabs %}
 
@@ -128,11 +128,11 @@ sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 18));
 
 {% endtabs %}
 
-![](selection-images/multiselection.png)
+![Multiple date selection](selection-images/multiselection.png)
 
 ## Disable selection
 
-The `BlackoutDates` refers the disabled dates that restrict the user from selecting it. List of dates can be provided to set the `BlackoutDates` for the SfCalendar. The following code example illustrates how to set the `BlackoutDates`:
+The `BlackoutDates` refers the disabled dates that restrict the user from selecting it. List of dates can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~BlackoutDates.html) for the SfCalendar. The following code example illustrates how to set the `BlackoutDates`:
 
 {% tabs %}
 
@@ -168,15 +168,15 @@ this.sfCalendar.BlackoutDates = time;
 
 {% endtabs %} 
 
-![](getting-started-images/blackoutdates.png)
+![Disable dates](getting-started-images/blackoutdates.png)
 
 ## Minimum datetime
 
-`MinDate` helps you to restrict the `SelectedDate` of calendar falling lesser than the specific date. If the `SelectedDate` of calendar is less than the `MinDate`, then the `SelectedDate` property will be reset to `MinDate`. If the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` will be reset to the `MinDate`.
+[MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MinDate.html) helps you to restrict the `SelectedDate` of calendar falling lesser than the specific date. If the `SelectedDate` of calendar is less than the `MinDate`, then the `SelectedDate` property will be reset to `MinDate`. If the new `MinDate` value is greater than the `MaxDate`, then the `MaxDate` will be reset to the `MinDate`.
 
 ## Maximum datetime
 
-`MaxDate` helps you to restrict the `SelectedDate` of calendar falling greater than the specific date. If the `SelectedDate` of calendar is greater than `MaxDate`, then the `SelectedDate` property will be reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` will be reset to the `MaxDate`. 
+[MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MaxDate.html) helps you to restrict the [SelectedDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SelectedDate.html) of calendar falling greater than the specific date. If the `SelectedDate` of calendar is greater than `MaxDate`, then the `SelectedDate` property will be reset to `MaxDate`. When the `MaxDate` is set, if the `MinDate` property is greater than the new `MaxDate`, then the `MinDate` will be reset to the `MaxDate`. 
 
 Sometimes, the value should be restricted between some date ranges. In that scenario, the `MinDate` and `MaxDate` help you to select only the dates between these range, and dates other than this range will not be displayed in the calendar.
 
@@ -212,18 +212,18 @@ calendar.MaxDate = new DateTime(2018, 1, 25)
 
 {% endtabs %} 
 
-![](appearance-images/minmax.png)
+![Maximum and mimimum datetime](appearance-images/minmax.png)
 
 ## Handle selection change
  
  Restricts setting the selected date to handle on-demand. While changing the selection, user can restrict the selection change based on the new selected date by handling the `SelectionChanging` event.
  
- The `SelectionChanging` event is invoked before the selected date is changed in the calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event:
+ The [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SelectionChanging_EV.html) event is invoked before the selected date is changed in the calendar. The `SelectionChangingEventArgs` provides the following properties for the `SelectionChanging` event:
 
 * OldValue: Old selected date of the SfCalendar.
 * NewValue: New selected date of the SfCalendar.
 
-The `SelectionChanged` event is invoked after the selected date is changed in the calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SelectionChanged_EV.html) event is invoked after the selected date is changed in the calendar. The `SelectionChangedEventArgs` provides the following properties for the `SelectionChanged` event:
 
 * OldValue: Old selected date of the SfCalendar.
 * NewValue: New selected date of the SfCalendar.
@@ -302,7 +302,7 @@ Selected dates of the calendar control will be cleared when the single date is s
 
 ### Clear selected dates programmatically
 
-Selected dates of the calendar control can be removed from the selection by programmatically. The SfCalendar provides `ClearSelection` method that helps to remove already selected dates and also provides options to select the new date. The following code example illustrates how to remove the selected dates and select new date:
+Selected dates of the calendar control can be removed from the selection by programmatically. The SfCalendar provides [ClearSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ClearSelection.html) method that helps to remove already selected dates and also provides options to select the new date. The following code example illustrates how to remove the selected dates and select new date:
 
 {% tabs %}
 
@@ -316,4 +316,4 @@ sfCalendar.ClearSelection(new DateTime(2018, 02, 16));
 
 {% endtabs %} 
 
-![](selection-images/selection.png)
+![Clear selection dates](selection-images/selection.png)
