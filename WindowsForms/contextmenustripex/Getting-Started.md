@@ -158,7 +158,7 @@ Me.Controls.Add(Me.richTextBox1)
 
 ![Add a Context Menu](GettingStarted_Images/Associate.png)
 
-## Through NuGet package
+## Adding a context menu through NuGet package
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#contextmenustripex) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
