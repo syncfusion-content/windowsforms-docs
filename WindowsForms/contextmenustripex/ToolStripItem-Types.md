@@ -7,7 +7,7 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# ToolStripItems
+# ToolStripItem Types
 
 The following are the ToolStripItems which can be added as menu items to the ContextMenuStripEx control.
 

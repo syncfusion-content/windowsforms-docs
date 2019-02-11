@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Adding bar items to a toolbar
+# BarItem Types
 
 The various types of BarItems supported by XPToolBar are,
 
@@ -33,7 +33,7 @@ Please refer ["Getting Started"](https://help.syncfusion.com/windowsforms/xptool
 
 ParentBarItems represents the submenu that appears on drop down list. BarItems can be added to ParentBarItems using Item collection editor.
 
-### Through Designer
+### Adding ParentBarItem through designer
 
 1. Once XPToolBar control is added, we can add the parent bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
@@ -59,7 +59,7 @@ ParentBarItems represents the submenu that appears on drop down list. BarItems c
 
    ![ParentBarItem](BarItems_Images/ParentBarItem.png)
 
-### Through Code
+### Adding ParentBarItem through code
 
 The below code snippets add **ParentBarItem** to the XPToolbar control.
 
@@ -161,7 +161,7 @@ Me.Controls.Add(Me.panel1)
 
 DropDownBarItem represents submenu that will appear as popup when clicked on it.
 
-### Through Designer
+### Adding DropDownBarItem through designer
 
 1. Once XPToolBar control is added, we can add **DropDownBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
@@ -181,7 +181,7 @@ DropDownBarItem represents submenu that will appear as popup when clicked on it.
 
 4. Drag and drop any control like Button, Label, TextBox, etc... to the **PopupControlContainer**. In this illustration, we have used **Button**.
 
-### Through Code
+### Adding DropDownBarItem through code
 
 The below code snippets add **DropDownBarItem** to the XPToolbar control.
 
@@ -317,7 +317,7 @@ Me.Controls.Add(Me.panel1)
 
 ComboBoxBarItem represents a BarItem that provides the combo box functionality in the XPToolbar.
 
-### Through Designer
+### Adding ComboBoxBarItem through designer
 
 1. Once XPToolBar control is added, we can add the combobox bar item by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the items from the **BarItem Collection Editor**.
 
@@ -339,7 +339,7 @@ ComboBoxBarItem represents a BarItem that provides the combo box functionality i
 
    ![ComboBoxBarItem](BarItems_Images/ComboBox.png)
 
-### Through Code
+### Adding ComboBoxBarItem through code
 
 The below code snippets add **ComboBoxBarItem** to the XPToolbar control.
 
@@ -489,7 +489,7 @@ Me.Controls.Add(Me.panel1)
 
 By using ListBarItem, you have to represent a dynamic list of BarItems.
 
-### Through Designer
+### Adding ListBarItem through designer
 
 1. Once XPToolBar control is added, We can add the **ListBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
@@ -511,7 +511,7 @@ By using ListBarItem, you have to represent a dynamic list of BarItems.
 
    ![ListBarItem](BarItems_Images/ListBarItem.png)
 
-### Through Code
+### Adding ListBarItem through code
 
 The below code snippets add a list bar item to the XPToolbar control
 
@@ -679,7 +679,7 @@ Me.Controls.Add(Me.panel1)
 
 StaticBarItem represents a BarItem that could be used as a label for an adjacent BarItem.
 
-### Through Designer
+### Adding StaticBarItem through designer
 
 1. Once XPToolBar control is added, We can add the **StaticBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
@@ -691,7 +691,7 @@ StaticBarItem represents a BarItem that could be used as a label for an adjacent
 
    ![StaticBarItem](BarItems_Images/Properties4.png)
 
-### Through Code
+### Adding StaticBarItem through code
 
 The below code snippets add a static bar item to the XPToolbar control
 
@@ -871,7 +871,7 @@ Me.Controls.Add(Me.panel1)
 
 ToolbarList bar item is used to display the current list of toolbars and their states.
 
-### Through Designer
+### Adding ToolbarListBarItem through designer
 
 1. Once XPToolBar control is added, We can add the **ToolbarListBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
@@ -889,7 +889,7 @@ ToolbarList bar item is used to display the current list of toolbars and their s
 
    ![ToolbarListBarItem](BarItems_Images/Properties18.png)
 
-### Through Code
+### Adding ToolbarListBarItem through code
 
 The below code snippets add a ToolbarListBarItem to the XPToolbar control.
 
@@ -1028,7 +1028,7 @@ Me.Controls.Add(Me.xpToolBar1)
 
 TextBoxBarItem is used to provides the TextBox functionality in the **XPToolBar**.
 
-### Through Designer
+### Adding TextBoxBarItem through designer
 
 1. Once XPToolBar control is added, We can add the **TextBoxBarItem** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > Items** select the item from the **BarItem Collection Editor**.
 
@@ -1040,7 +1040,7 @@ TextBoxBarItem is used to provides the TextBox functionality in the **XPToolBar*
 
    ![TextBoxBarItem](BarItems_Images/Properties6.png)
 
-### Through Code
+### Adding TextBoxBarItem through code
 
 The below code snippets add a TextBoxBarItem to the XPToolbar control.
 
@@ -1247,7 +1247,7 @@ Me.Controls.Add(Me.panel1)
 
 Separator is Used for separation of bar items visually in a **XPToolBar**.
 
-### Through Designer
+### Adding Separator through designer
 
  Once XPToolBar control is added, We can add the **Separator** by right-clicking on the control in the designer and select **Properties**. Now, in the **Properties** panel, under **Misc > SeparatorIndices** set the **Indices** values which the separator have to be placed from the **Int32 Collection Editor**.
 
@@ -1257,7 +1257,7 @@ Separator is Used for separation of bar items visually in a **XPToolBar**.
 
    ![Separator](BarItems_Images/Properties8.png)
 
-### Through Code
+### Adding Separator through code
 
 The below code snippets add a **Separator** to the XPToolbar control.
 
