@@ -7,7 +7,7 @@ control: PopupMenu
 documentation: ug
 ---
 
-# BarItems
+# BarItem Types
 
 The various types of BarItems supported by PopupMenu are,
 
