@@ -1,31 +1,23 @@
 ---
 layout: post
-title: Overview of Syncfusion PopupControlContainer for Windows Forms
-description: Overview of Syncfusion PopupControlContainer, in which child controls are loaded and then showed like a popup
+title: Overview of PopupControlContainer | Windows Forms | Syncfusion
+description: Overview of PopupControlContainer control
 platform: WindowsForms
-control: Editors Package
+control: PopupControlContainer
 documentation: ug
 ---
 
-
-
-
 # Overview
 
-A PopupControlContainer is a panel-derived control that allows users to populate it with child controls in code or during design-time and then insert it in code with a call to PopupControlContainer.ShowPopup. It also provides various options with respect to its border alignment with a popup-parent. 
+A PopupControlContainer is a panel-derived control that allows end-users to populate it with child controls and finally associate the same with a parent control. By default, it’s hidden, and it can be brought into existence when performing events like mouse-down, mouse-up, etc… over the parent control. 
 
-The PopupControlContainer was implemented to support creating custom control-rich popups and show them beside a popup-parent, such as a context menu. 
+## Key Features
 
-![Overview of Syncfusion PopupControlContainer](Container-Control-Images/Overview_img354.jpeg) 
+* **Auto Scroll** - Scrollbar will be automatically shown when its items are populated beyond its default size.
 
+* **Auto Close** - The pop-up will be hidden when user clicks anywhere outside the container.
 
+* **Keyboard Navigation** - By using keyboard dialog keys like Enter, Tab, Esc, etc... we can close the popup.
 
-In code, call ShowPopup to show the popup anywhere in an application. It also allows you to align a popup beside a control (like in combo boxes) or popup at any given point (like in context menus). 
+* **RTL** - RTL is used to display the content from right to left.
 
-![PopupControlContainer with TextBox](Container-Control-Images/Overview_img355.jpeg) 
-
-
-
-The PopupControlContainer also exposes its top-level parent host (a form-derived class) that lets you configure the parent form (to make the parent's borders resizable, for example). 
-
-The Syncfusion XP Menus Framework lets users associate a PopupControlContainer with a menu item and show it from within a menu or toolbar. The Syncfusion CommandBars also let you associate a PopupControlContainer with it to be shown when the user clicks on the command bar drop-down button.
