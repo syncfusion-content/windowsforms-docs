@@ -11,7 +11,7 @@ documentation: ug
 
 Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
 
-![](Toggle-State-Configuration_images/Toggle-State-Configuration_img1.png)
+![different togglestates of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img1.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -39,25 +39,25 @@ In the Toggle Button, active state is represented uniquely through its styling p
 {% highlight c# %}
 
 this.toggleButton1.ActiveState.Text = "ON";
-this.toggleButton1.ActiveState.BackColor = Color.Gray;
-this.toggleButton1.ActiveState.BorderColor = Color.Black; 
-this.toggleButton1.ActiveState.ForeColor = Color.Black; 
-this.toggleButton1.ActiveState.HoverColor = Color.Blue;   
+this.toggleButton1.ActiveState.BackColor = Color.FromArgb(1, 115, 199);
+this.toggleButton1.ActiveState.BorderColor = Color.FromArgb(1, 115, 199);
+this.toggleButton1.ActiveState.ForeColor = Color.White;
+this.toggleButton1.ActiveState.HoverColor = Color.FromArgb(0, 103, 176);   
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.ToggleButton1.ActiveState.Text = "ON"
-Me.ToggleButton1.ActiveState.BackColor = Color.Gray
-Me.ToggleButton1.ActiveState.BorderColor = Color.Black
-Me.ToggleButton1.ActiveState.ForeColor = Color.Black
-Me.ToggleButton1.ActiveState.HoverColor = Color.Blue
+Me.toggleButton1.ActiveState.BackColor = Color.FromArgb(1, 115, 199)
+Me.toggleButton1.ActiveState.BorderColor = Color.FromArgb(1, 115, 199)
+Me.toggleButton1.ActiveState.ForeColor = Color.White
+Me.toggleButton1.ActiveState.HoverColor = Color.FromArgb(0, 103, 176)
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Toggle-State-Configuration_images/Toggle-State-Configuration_img2.png)
+![Active state of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img2.png)
 
 ## Inactive state
 
@@ -67,22 +67,22 @@ Similar to the active state, inactive state is represented uniquely through its 
 {% highlight c# %}
 
 this.toggleButton1.InactiveState.Text = "OFF";
-this.toggleButton1.InactiveState.BackColor = Color.Gray;
-this.toggleButton1.InactiveState.BorderColor = Color.Black;
-this.toggleButton1.InactiveState.ForeColor = Color.Blue;
-this.toggleButton1.InactiveState.HoverColor = Color.Blue;                 
+this.toggleButton1.InactiveState.BackColor = Color.White;
+this.toggleButton1.InactiveState.BorderColor = Color.FromArgb(150, 150, 150);
+this.toggleButton1.InactiveState.ForeColor = Color.FromArgb(80, 80, 80);
+this.toggleButton1.InactiveState.HoverColor = Color.White;     
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 Me.ToggleButton1.InactiveState.Text = "OFF"
-Me.ToggleButton1.InactiveState.BackColor = Color.Gray
-Me.ToggleButton1.InactiveState.BorderColor = Color.Black
-Me.ToggleButton1.InactiveState.ForeColor = Color.Blue
-Me.ToggleButton1.InactiveState.HoverColor = Color.Blue
+Me.toggleButton1.InactiveState.BackColor = Color.White
+Me.toggleButton1.InactiveState.BorderColor = Color.FromArgb(150, 150, 150)
+Me.toggleButton1.InactiveState.ForeColor = Color.FromArgb(80, 80, 80)
+Me.toggleButton1.InactiveState.HoverColor = Color.White
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Toggle-State-Configuration_images/Toggle-State-Configuration_img3.png)
+![Inactive state of togglebutton](Toggle-State-Configuration_images/Toggle-State-Configuration_img3.png)
