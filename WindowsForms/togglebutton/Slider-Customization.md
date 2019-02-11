@@ -14,23 +14,23 @@ In the Toggle Button, the Slider is used to switch between two different states.
 {% tabs %}
 {% highlight c# %}
 
-this.toggleButton1.Slider.BorderColor = Color.Black;
+this.toggleButton1.Slider.BorderColor = Color.Transparent;
 this.toggleButton1.Slider.ForeColor = Color.Blue;
-this.toggleButton1.Slider.HoverColor = Color.Blue;    
-this.toggleButton1.Slider.BackColor = Color.Gray;            
+this.toggleButton1.Slider.HoverColor = Color.White;    
+this.toggleButton1.Slider.BackColor = Color.White;            
 this.toggleButton1.Slider.Width = 30;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.ToggleButton1.Slider.BorderColor = Color.Black
+Me.ToggleButton1.Slider.BorderColor = Color.Transparent
 Me.ToggleButton1.Slider.ForeColor = Color.Blue
-Me.ToggleButton1.Slider.HoverColor = Color.Blue
-Me.ToggleButton1.Slider.BackColor = Color.Gray
+Me.ToggleButton1.Slider.HoverColor = Color.White
+Me.ToggleButton1.Slider.BackColor = Color.White
 Me.ToggleButton1.Slider.Width = 30        
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Slider-Customization_images/Slider-Customization_img1.png)
+![Customization of slider width](Slider-Customization_images/Slider-Customization_img1.png)

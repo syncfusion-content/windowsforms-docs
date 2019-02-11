@@ -17,6 +17,7 @@ Toggle Button is set to display either text or image through its DisplayMode pro
 this.toggleButton1.DisplayMode = DisplayType.Text;
 
 // DisplayType.Image ,for displaying image
+this.toggleButton1.DisplayMode = DisplayType.Image;
 
 {% endhighlight %}
 
@@ -25,8 +26,9 @@ this.toggleButton1.DisplayMode = DisplayType.Text;
 Me.ToggleButton1.DisplayMode = DisplayType.Text
 
 'DisplayType.Image for displaying image
+Me.ToggleButton1.DisplayMode = DisplayType.Image
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Display-Mode-Configuration_images/Display-Mode-Configuration_img1.png)
+![toggleButton set to display with image](Display-Mode-Configuration_images/Display-Mode-Configuration_img1.png)
