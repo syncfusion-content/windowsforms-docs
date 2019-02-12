@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Essential XlsIO
+title: Working with Essential XlsIO | WindowsForms | Syncfusion
 description: Explains about working with CalcWorkbook, CalcSheet
 platform: windowsforms
 control: Calculate
