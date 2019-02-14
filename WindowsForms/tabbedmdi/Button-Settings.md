@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Button-Settings | WindowsForms | Syncfusion
+title: Button-Settings | TabbedMDIManager | WindowsForms | Syncfusion
 description: This section explains about various buttons available in TabbedMDIManager control and their customization
 platform: WindowsForms
-control: TabbedMDIPackage 
+control: TabbedMDIManager 
 documentation: ug
 ---
 
@@ -13,7 +13,7 @@ This section discusses about the various buttons available in TabbedMDIManager c
 
 ## Drop-down button
 
-The MDIChild windows in a TabbedMDI window can be displayed in the form of a drop-down by enabling the DropDownButtonVisible property.
+The MDIChild windows in a TabbedMDI window can be displayed in the form of a drop-down by enabling the [DropDownButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~DropDownButtonVisible.html) property.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.tabbedMDIManager.DropDownButtonVisible = True
 
 {% endtabs %}
 
-The visual drop-down styles can be set by handling the BeforeDropDownPopup event using the below code snippet.
+The visual drop-down styles can be set by handling the [BeforeDropDownPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~BeforeDropDownPopup_EV.html) event using the below code snippet.
 
 {% tabs %}
 
@@ -87,9 +87,9 @@ End Sub
 
 ## Close button
 
-On setting the CloseButtonVisible property, the close button will be either visible or hidden.
+On setting the [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CloseButtonVisible.html) property, the close button will be either visible or hidden.
 
-Enabling the ShowCloseButtonForActiveTabOnly property will display the close button for the active tab only and ShowCloseButton property will display the close button for all the tabs.
+Enabling the ShowCloseButtonForActiveTabOnly property will display the close button for the active tab only and [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~ShowCloseButton.html) property will display the close button for all the tabs.
 
 The close button for individual tabs can also be displayed by implementing the below code snippet.
 
@@ -143,7 +143,7 @@ Me.tabbedMDIManager.ShowCloseButton = True
 
 
 
-The color of the close button at the extreme right of the MDI TabStrip can be changed using the CloseButtonColor property.
+The color of the close button at the extreme right of the MDI TabStrip can be changed using the [CloseButtonColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CloseButtonColor.html) property.
 
 {% tabs %}
 
@@ -172,7 +172,7 @@ Me.tabbedMDIManager.CloseButtonColor = Color.Red
 
 #### Middle mouse button
 
-The tabs can be closed by clicking the middle mouse button on enabling the CloseOnMiddleButtonClick property.
+The tabs can be closed by clicking the middle mouse button on enabling the [CloseOnMiddleButtonClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CloseOnMiddleButtonClick.html) property.
 
 This functionality can also be added using the code snippet given below.
 
@@ -236,7 +236,7 @@ To view a sample:
 
 Showing or hiding the Close Button for Specific Tabs
 
-You can show or hide close button for specific tasks using the _ShowCloseButtonForForm_() method.
+You can show or hide close button for specific tasks using the [ShowCloseButtonForForm](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~ShowCloseButtonForForm.html) method.
 
 {% tabs %}
 

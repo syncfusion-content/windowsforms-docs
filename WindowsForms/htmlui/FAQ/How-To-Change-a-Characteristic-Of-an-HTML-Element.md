@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How-To-Change-a-Characteristic-Of-an-HTML-Element- | WindowsForms | Syncfusion
+title: Change-a-Characteristic-Of-an-HTML-Element | WindowsForms | Syncfusion
 description: how to change a characteristic of an html element before it is displayed?
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 The characteristic of an element can be easily changed in the PreRenderDocument event of the HTMLUI control.
 
-The PreRenderDocument event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
+The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~PreRenderDocument_EV.html) event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
 {% tabs %}
 
@@ -157,5 +157,5 @@ The following figure illustrates this behavior where the oldImage has been repla
 
 
 
-![](FAQ_images/Frequently-Asked-Questions_img1.jpeg)
+![OldImage has been replaced by newImage](FAQ_images/Frequently-Asked-Questions_img1.jpeg)
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-lock-and-unlock-MDIClients-alone-using-TabbedMDIManager | WindowsForms | Syncfusion
+title: How-to-lock-and-unlock-MDIClients | WindowsForms | Syncfusion
 description: how to lock and unlock mdiclients alone using tabbedmdimanager
 platform: WindowsForms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # How to lock and unlock MDIClients alone using TabbedMDIManager
 
-TabbedMDIManager has LockMDIClientUpdate() and UnLockMDIClientUpdate() methods to lock and unlock the MDIClients from updating.
+TabbedMDIManager has [LockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~LockMDIClientUpdate.html) and [UnLockMDIClientUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~UnLockMDIClientUpdate.html) methods to lock and unlock the MDIClients from updating.
 
 Methods table
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Control-Events | WindowsForms | Syncfusion
-description: control events
+title: Control-Events | HTMLUIControl | WindowsForms | Syncfusion
+description: This section describes html ui control events usage.
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
@@ -28,9 +28,9 @@ The events executed by the HTMLUI control are as follows:
 
 
 
-### LinkClicked event
+## LinkClicked event
 
-This event is raised after the hyperlink is clicked and before the hyperlink tries to load a new resource. The event properties associated with the Link Forward Event Arguments are as follows.
+This [LinkClicked event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LinkClicked_EV.html) is raised after the hyperlink is clicked and before the hyperlink tries to load a new resource. The event properties associated with the Link Forward Event Arguments are as follows.
 
 
 
@@ -92,9 +92,9 @@ End Sub
 
 {% endtabs %}
 
-### LoadStarted event
+## LoadStarted event
 
-This event is raised when a new HTML document has started loading into the HTMLUI control from the specified resource.
+This [LoadStarted event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LoadStarted_EV.html) is raised when a new HTML document has started loading into the HTMLUI control from the specified resource.
 
 {% tabs %}
 
@@ -138,9 +138,9 @@ End Sub
 
 {% endtabs %}
 
-### LoadFinished event
+## LoadFinished event
 
-This event is raised after the loading of HTML document inside the HTMLUI control is completed.
+This [LoadFinished event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LoadFinished_EV.html) is raised after the loading of HTML document inside the HTMLUI control is completed.
 
 {% tabs %}
 
@@ -184,9 +184,9 @@ End Sub
 
 {% endtabs %}
 
-### LoadError event
+## LoadError event
 
-This event is raised when an error occurs during loading or rendering an HTML document from the specified resource. The LoadErrorEventArgs contains the following property that defines the data related to the action of this event.
+This [LoadError event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LoadError_EV.html) is raised when an error occurs during loading or rendering an HTML document from the specified resource. The LoadErrorEventArgs contains the following property that defines the data related to the action of this event.
 
 
 
@@ -234,9 +234,9 @@ End Sub
 
 {% endtabs %}
 
-### PreRenderDocument event
+## PreRenderDocument event
 
-This event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
+This [PreRenderDocument event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~PreRenderDocument_EV.html) is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
 {% tabs %}
 
@@ -284,9 +284,9 @@ End Sub
 
 {% endtabs %}
 
-### ShowTitleChanged event
+## ShowTitleChanged event
 
-This event is raised after the ShowTitle property of the HTMLUI control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
+This [ShowTitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~ShowTitleChanged_EV.html) is raised after the ShowTitle property of the HTMLUI control is changed. The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the ShowTitleChanged event handling.
 
 
 
@@ -338,7 +338,7 @@ End Sub
 
 ## TitleChanged event
 
-The TitleChanged event is raised after the Title property of the HTMLUI control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the HTMLUI control.
+The [TitleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~TitleChanged_EV.html) is raised after the Title property of the HTMLUI control is changed. The Title value can be set explicitly by the user or it can be extracted from the title tag of the HTML document that is to be loaded into the HTMLUI control.
 
 The event handler receives its data from the ValueChangedEventArguments. The following properties are associated with the TitleChanged event handling.
 
@@ -389,7 +389,7 @@ End Sub
 
 ## Border3DStyleChanged event
 
-This event is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
+This [Border3DStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~Border3DStyleChanged_EV.html) is handled when the value of the Border3DStyle property is changed. The Border3DStyle property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs.
 
@@ -459,9 +459,9 @@ End Sub
 
 {% endtabs %}
 
-### BorderColorChanged event
+## BorderColorChanged event
 
-This event is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
+This [BorderColorChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~BorderColorChanged_EV.html) is handled when the value of the BorderColor property is changed. The BorderColor property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs.
 
@@ -531,9 +531,9 @@ End Sub
 
 {% endtabs %}
 
-### BorderSingleChanged event
+## BorderSingleChanged event
 
-This event is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
+This [BorderSingleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~BorderSingleChanged_EV.html) is handled, when the value of the BorderSingle property is changed. The BorderSingle property indicates the 2D border style.
 
 The event handler receives an argument of type EventArgs.
 
@@ -603,9 +603,9 @@ End Sub
 
 {% endtabs %}
 
-### BorderSidesChanged event
+## BorderSidesChanged event
 
-This event is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
+This [BorderSidesChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~BorderSidesChanged_EV.html) is fired, when the value of the BorderSides property is changed. The BorderSides property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs.
 
@@ -667,9 +667,9 @@ End Sub
 
 {% endtabs %}
 
-### BorderStyleChanged event
+## BorderStyleChanged event
 
-This event is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
+This [BorderStyleChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~BorderStyleChanged_EV.html) is fired when the value of the BorderStyle property is changed. The BorderStyle property indicates whether the panel should have a border.
 
 The event handler receives an argument of type EventArgs.
 
@@ -737,7 +737,7 @@ This sample illustrates the different events executed by the HTMLUI control.
 
 
 
-![](Control-Events_images/Control-Events_img1.jpeg)
+![HTMUUIControl events](Control-Events_images/Control-Events_img1.jpeg)
 
 
 
