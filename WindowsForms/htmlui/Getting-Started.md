@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started | HTMLUIControl | WindowsForms | Syncfusion
+description: This section describes how to add HTML UI control into winforms application and its basic features.
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) link.
 
-# Creating simple application with HTMLUIControl
+## Creating simple application with HTMLUIControl
 
 You can create Windows Forms application with HTMLUIControl as follows:
 
@@ -39,15 +39,15 @@ The HTMLUIControl can be added to the application by dragging it from the toolbo
    * Syncfusion.Scripting.Base.dll
    * Syncfusion.Shared.Base
 
-![](Getting-Started_images/GettingStarted-img1.png)
+![Search html ui control in toolbox](Getting-Started_images/GettingStarted-img1.png)
 
-![](Getting-Started_images/GettingStarted-img5.png)
+![Drag an drop the html ui control in application](Getting-Started_images/GettingStarted-img5.png)
 
 **Configure Title**
 
 Title text can be set using `Title` property. The visibility of the title can be customized using `ShowTitle` property.
 
-![](Getting-Started_images/GettingStarted-img4.png)
+![Setting tile for html ui control](Getting-Started_images/GettingStarted-img4.png)
 
 ## Adding control manually using code
 
@@ -110,11 +110,11 @@ Me.Controls.Add(Me.htmluiControl1)
 {% endtabs %}
 
 
-![](Getting-Started_images/GettingStarted-img2.png)
+![HTMLUIControl added using code](Getting-Started_images/GettingStarted-img2.png)
 
 **Configure Title**
 
-Title text can be set using `Title` property. The visibility of the title can be customized using `ShowTitle` property.
+Title text can be set using [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~Title.html) property. The visibility of the title can be customized using [ShowTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~ShowTitle.html) property.
 
 {% tabs %}
 
@@ -135,12 +135,12 @@ Me.htmluiControl1.Title = "StartUp Document"
 
 {% endtabs %}
 
-![](Getting-Started_images/GettingStarted-img6.png)
+![Setting title for HTMLUIControl](Getting-Started_images/GettingStarted-img6.png)
 
 
 ## Loading a file into document
 
-File can be added to HTMLUIControl using `LoadHTML` method where the file path given as parameter.
+File can be added to HTMLUIControl using [LoadHTML](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LoadHTML.html) method where the file path given as parameter.
 
 {% tabs %}
 
@@ -159,4 +159,4 @@ Me.htmluiControl1.LoadHTML(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 {% endtabs %}
 
-![](Getting-Started_images/GettingStarted-img3.png)
+![HTMLUI control loads the given input file](Getting-Started_images/GettingStarted-img3.png)

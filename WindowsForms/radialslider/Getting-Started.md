@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started | RadialSlider | WindowsForms | Syncfusion
+description: This section describes how to radial slider control into WindowsForms application
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add a `RadialSlider` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add a [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with RadialSlider
+## Creating simple application with RadialSlider
 
 You can create the Windows Forms application with RadialSlider control as follows:
 
@@ -43,9 +43,9 @@ RadialSlider control can be added to the application by dragging it from the too
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](Getting-Started_images/RadialSlider-img1.png) 
+![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-![](Getting-Started_images/RadialSlider-img4.png) 
+![RadialSlider control added via designer](Getting-Started_images/RadialSlider-img4.png) 
 
 ## Adding control manually using code
 
@@ -104,11 +104,11 @@ Me.Controls.Add(radialSlider1)
 
 {% endtabs %}
 
-![](Getting-Started_images/RadialSlider-img2.png) 
+![RadialSlider Control added in form](Getting-Started_images/RadialSlider-img2.png) 
 
 ## Configure SliderStyle
 
-Slider appearance can be modified using `SliderStyle` property in RadialSlider. It consist of two style such as Default and Frame.
+Slider appearance can be modified using [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderStyle.html) property in RadialSlider. It consist of two style such as Default and Frame.
 
 {% tabs %}
 
@@ -126,4 +126,4 @@ Me.radialSlider1.SliderStyle = SliderStyles.Frame
 
 {% endtabs %}
 
-![](Getting-Started_images/RadialSlider-img3.png) 
+![Slider appearance customized](Getting-Started_images/RadialSlider-img3.png) 
