@@ -12,7 +12,7 @@ This section will help you to get started with using the ColorPickerUIAdv contro
 
 The ColorPickerUIAdv can be easily created in the designer, by dragging-and-dropping from the toolbox on to the windows application form.
 
-![Drag and Drop ColorPickerUIAdv from toolbox](ColorPickerUIAdv_Images/ColorPickerUIAdv_img2.jpeg) 
+![Windows forms ColorPickerUIAdv drag and drop from toolbox](ColorPickerUIAdv_Images/ColorPickerUIAdv_toolbox.jpeg) 
 
 It can be added programmatically by performing the following steps.
 
@@ -58,4 +58,4 @@ Me.Controls.Add(cpa)
 {% endhighlight %}
 {% endtabs %}
 
-   ![ColorPickerUIAdv for Windows Forms](ColorPickerUIAdv_Images/ColorPickerUIAdv_img10.jpeg) 
+   ![ColorPickerUIAdv for Windows Forms](ColorPickerUIAdv_Images/ColorPickerUIAdv.jpeg) 
