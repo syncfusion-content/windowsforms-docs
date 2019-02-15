@@ -57,9 +57,9 @@ Me.checkBoxAdv1.WrapText = True
 {% endhighlight %}
 {% endtabs %}
 
-![TextShadow applied in CheckBoxAdv](Overview_images/Overview_img612.jpeg)
+![Windows forms CheckBoxAdv TextShadow applied](Overview_images/CheckBoxAdv_shadow.jpeg)
 
-![WrapText applied in CheckBoxAdv](Overview_images/Overview_img613.jpeg)
+![Windows forms CheckBoxAdv WrapText applied](Overview_images/CheckBoxAdv_wraptext.jpeg)
 
 
 {% seealso %}

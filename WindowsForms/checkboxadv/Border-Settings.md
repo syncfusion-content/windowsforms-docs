@@ -64,6 +64,6 @@ Me.checkBoxAdv1.HotBorderColor = System.Drawing.Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![Chaging the Border color](Overview_images/Overview_img618.jpeg)
+![Windows forms CheckBoxAdv Changing the Border color](Overview_images/CheckBoxAdv_bordercolor.jpeg)
 
-![Chaging the border color during mouse hover on CheckBoxAdv](Overview_images/Overview_img619.jpeg)
+![Windows forms CheckBoxAdv Changing the border color during mouse hover on control](Overview_images/CheckBoxAdv_changebordercolor.jpeg)

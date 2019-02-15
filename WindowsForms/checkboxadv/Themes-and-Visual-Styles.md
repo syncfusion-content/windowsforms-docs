@@ -40,7 +40,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![Themes appearance for CheckBoxAdv](Overview_images/Overview_img623.jpeg)
+![Windows forms CheckBoxAdv Themes appearance](Overview_images/CheckBoxAdv_themes.jpeg)
 
 ## Visual Styles
 
@@ -77,7 +77,7 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 {% endhighlight %}
 {% endtabs %}
 
-![Styles of CheckBoxAdv](Overview_images/Overview_img627.jpeg) 
+![Windows forms CheckBoxAdv visualstyles](Overview_images/CheckBoxAdv_visualstyle.jpeg) 
 
 When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
 
@@ -101,4 +101,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Pink)
 {% endhighlight %}
 {% endtabs %}
 
-![Office2007ColorScheme is set to managed](Overview_images/Overview_img626.jpeg)
+![Windows forms CheckBoxAdv Office2007ColorScheme is set to managed](Overview_images/CheckBoxAdv_office2007color.jpeg)

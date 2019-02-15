@@ -29,13 +29,13 @@ The following steps illustrate how to create a CheckBoxAdv control through desig
 
 * Syncfusion.Tools.Windows.dll
 
-![Drag and drop CheckBoxAdv from toolbox](Overview_images/Overview_img607.jpeg)
+![Windows forms CheckBoxAdv drag and drop from toolbox](Overview_images/CheckBoxAdv_toolbox.jpeg)
 
 **Step 2**: Set the desired properties for the control through the Property grid.
 
 **Step 3**: Run the application.
 
-![CheckBoxAdv control showing at run time](Overview_images/Overview_img608.jpeg)
+![Windows forms CheckBoxAdv showing at run time](Overview_images/CheckBoxAdv_throughdesign.jpeg)
 
 
 {% seealso %}
@@ -114,7 +114,7 @@ Me.Controls.Add(Me.radioButtonAdv1)
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxAdv control showing at run time](Overview_images/Overview_img609.jpeg)
+![Windows forms CheckBoxAdv showing at run time](Overview_images/CheckBoxAdv_throughcode.jpeg)
 
 
 {% seealso %}

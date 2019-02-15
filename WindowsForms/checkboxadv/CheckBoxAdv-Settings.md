@@ -46,7 +46,7 @@ Me.checkBoxAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
-![Various states of CheckBoxAdv](Overview_images/Overview_img610.jpeg)
+![Windows forms CheckBoxAdv various states](Overview_images/CheckBoxAdv_states.jpeg)
 
 {% seealso %}
 

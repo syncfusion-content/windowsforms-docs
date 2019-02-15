@@ -42,7 +42,7 @@ Me.checkBoxAdv1.DrawFocusRectangle = True
 {% endhighlight %}
 {% endtabs %}
 
-![DrawFocusRectangle is enabled or diabled in CheckBoxAdv](Overview_images/Overview_img628.jpeg)
+![Windows forms CheckBoxAdv drawFocusRectangle is enabled or diabled](Overview_images/CheckBoxAdv_focus.jpeg)
 
 ## Behavior Settings
 

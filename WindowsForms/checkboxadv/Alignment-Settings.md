@@ -42,7 +42,7 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 {% endhighlight %}
 {% endtabs %}
 
-![Changed text alignment in CheckBoxAdv](Overview_images/Overview_img614.jpeg)
+![Windows forms CheckBoxAdv Changed text alignment](Overview_images/CheckBoxAdv_textalign.jpeg)
 
 ## CheckBox Alignment
 
@@ -75,7 +75,7 @@ Me.checkBoxAdv1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
 {% endhighlight %}
 {% endtabs %}
 
-![Changed the position of CheckBoxAdv ](Overview_images/Overview_img615.jpeg)
+![Windows forms CheckBoxAdv Changed the position](Overview_images/CheckBoxAdv_checkalign.jpeg)
 
 
 {% seealso %}
