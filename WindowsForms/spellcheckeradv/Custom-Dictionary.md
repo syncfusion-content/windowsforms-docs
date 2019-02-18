@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Dictionary | WindowsForms | Syncfusion
+title: Custom-Dictionary | SpellCheckerAdv| WindowsForms | Syncfusion
 description: customdictionary
 platform: WindowsForms
 control: SpellCheckerAdv
@@ -25,7 +25,7 @@ You can add their own custom dictionary by referring to the dictionary file path
 
 ## Configuring custom dictionary via code 
 
-Custom Dictionary can be configured using `CustomDictionaryPath` property.
+Custom Dictionary can be configured using [CustomDictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~CustomDictionaryPath.html) property.
 
 {% tabs %}
 

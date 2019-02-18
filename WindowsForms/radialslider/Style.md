@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
+title: Style | RadialSlider | WindowsForms | Syncfusion
 description: Style
 platform: WindowsForms
 control: RadialSlider 
@@ -23,7 +23,7 @@ It has the below themes.
 
 •	Office2016Black
 
-The following code example allows you to set the style for the RadialSlider.
+The following code example allows you to set the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~Style.html) for the RadialSlider.
 
 ## Default
 This option helps to set the Default theme.
@@ -46,7 +46,7 @@ Me.radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Defa
 
 {% endtabs %}
 
-![](Style_images/Style_img_1.png) 
+![RadialSlider default theme](Style_images/Style_img_1.png) 
 
 ## Office2016Colorful
 
@@ -68,7 +68,7 @@ Me.radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Offi
 
 {% endtabs %}
 
-![](Style_images/Style_img_2.png)
+![RadialSlider Office2016Colorful style](Style_images/Style_img_2.png)
 
 ## Office2016White
 
@@ -90,7 +90,7 @@ Me.radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Offi
 
 {% endtabs %}
 
-![](Style_images/Style_img_3.png)
+![RadialSlider Office2016White style](Style_images/Style_img_3.png)
 
 ## Office2016DarkGray
 
@@ -114,7 +114,7 @@ Me.radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Offi
 
 {% endtabs %}
 
-![](Style_images/Style_img_4.png) 
+![RadialSlider Office2016DarkGray style](Style_images/Style_img_4.png) 
 
 ## Office2016Black
 
@@ -136,4 +136,4 @@ Me.radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Offi
 
 {% endtabs %}
 
-![](Style_images/Style_img_5.png) 
+![RadialSlider Office2016Black style](Style_images/Style_img_5.png) 

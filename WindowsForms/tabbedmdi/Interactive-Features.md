@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Interactive-Features | WindowsForms | Syncfusion
+title: Interactive-Features | TabbedMDIManager | WindowsForms | Syncfusion
 description: interactive features
 platform: WindowsForms
-control: TabbedMDIPackage 
+control: TabbedMDIManager 
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ This section discusses the Interactive Features of TabControlAdv.
 
 Tooltip can be enabled for child windows or tabs using the below code snippet, where doc is the new child form that is created.
 
-The GetTooltip method is used to set the Tooltips for the tabs.
+The [GetTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~GetTooltip.html) method is used to set the Tooltips for the tabs.
 
 Methods table
 
@@ -54,18 +54,18 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tab item tooltip](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 ## Context menu
 
 The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.
 
-The ContextMenuItem property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
+The [ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~ContextMenuItem.html) property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
 
 Below image will reproduce the Context Menu feature available in an MDI application in TabbedMDI mode.
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tab item context menu](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 
 
@@ -179,11 +179,11 @@ tabbedMDIManager.ContextMenuItem = contextMenuItem
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Close tab item using context menu item](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Renaming context menu item](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 {% seealso %}
