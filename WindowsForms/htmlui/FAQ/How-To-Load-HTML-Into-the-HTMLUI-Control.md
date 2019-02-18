@@ -3,13 +3,13 @@ layout: post
 title: How-To-Load-HTML-Into-the-HTMLUI-Control | WindowsForms | Syncfusion
 description:  how to load html into the htmlui control?
 platform: WindowsForms
-control: HTML UI
+control: HTMLUIControl
 documentation: ug
 ---
 
 #  How to load HTML into the HTMLUI control?
 
-You can make use of the GetControlByElement() method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
+You can make use of the [GetControlByElement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.InputHTML~GetControlByElement.html) method of the InputHTML Interface to get an object for the control present in an HTML element in the HTMLUI control. If the HTML element does not contain any control in it, it returns a null value, by default.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ An HTML document can be loaded at startup by two ways:
 
 Using the Properties window, involves specifying the location of the startup HTML file by using the StartupDocument property of the HTMLUI control. The link shown at the bottom of the Properties window can also be used for the same purpose.
 
-![](FAQ_images/Frequently-Asked-Questions_img3.jpeg)
+![Startup document](FAQ_images/Frequently-Asked-Questions_img3.jpeg)
 
 
 

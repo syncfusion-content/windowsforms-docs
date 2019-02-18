@@ -1538,9 +1538,9 @@ Public Class CustomGridColumnSizer
 			removedWidth = 0
 			Dim columnsCount = 0
 
-			For Each col As GridColumn In columns
-				AddHandler columnsCount, AddressOf FillRatio.GetColumnRatio(col)
-			Next
+            For Each col As GridColumn In columns
+                columnsCount += FillRatio.GetColumnRatio(col)
+            Next
 
 			Dim fillWidth As Double = Math.Floor((totalRemainingFillValue / columnsCount))
 			Dim column = columns.First()

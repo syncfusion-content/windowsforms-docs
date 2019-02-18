@@ -9,29 +9,14 @@ documentation: ug
 
 # Checked/unchecked menu items
 
-The **Checked** property indicates whether a check mark should appear before the text of the menu item and **CheckedState** property specifies the check state (checked or unchecked) of the menu item.
+This support will help users to easily acknowledge the selected menu item by using the check mark. The [`Checked`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checked?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Checked) property indicates whether a check mark should appear before the text of the menu item or not. The [`CheckState`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checkstate?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_CheckState) property specifies the exact state - checked or unchecked which needs to be set either statically. On runtime, user need to toggle the state manually through the [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event of the menu item.
 
 >**NOTE:**       
 >1. This feature is not applicable for combobox and textbox.       
->2. This feature will be displayed only if **ContextMenuStripEx.ShowCheckMargin** property is set to "true".
+>2. This feature will be applied only if [`ShowCheckMargin`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownmenu.showcheckmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownMenu_ShowCheckMargin) property of ContextMenuStripEx is set to `true`.
 
-## Through Designer
 
-1. Once menu items are added, we can set the check mark by right-clicking on the particular item in the designer and select **Properties** option. Now, in the **Properties** panel, under **Appearance > Checked** we need to set true.
-
-![Checked/unchecked menu items](CheckedState_Images/Properties.png)
-
-![Checked/unchecked menu items](CheckedState_Images/Properties1.png)
-
-![Checked/unchecked menu items](CheckedState_Images/ShowCheckMargin.png)
-
-2. Similarly, we can set the checked state of menu item in the **Properties** panel, under **Appearance > CheckedState** section.
-
-![CheckedState](CheckedState_Images/Properties2.png)
-
-## Through Code
-
-Below code snippet will explain the state of the menu item.
+Below code snippet will explain the check state of the menu item.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,10 +24,12 @@ Below code snippet will explain the state of the menu item.
 //Declaration
 private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx1;
 private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
 
 //Initializing
 this.contextMenuStripEx1 = new Syncfusion.Windows.Forms.Tools.ContextMenuStripEx();
 this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 
 this.contextMenuStripEx1.ShowCheckMargin = true;
 this.toolStripMenuItem1.Checked = true;
@@ -55,10 +42,12 @@ this.toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
 'Declaration
 Private contextMenuStripEx1 As Syncfusion.Windows.Forms.Tools.ContextMenuStripEx
 Private toolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+Private toolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
 
 'Initializing
 Me.contextMenuStripEx1 = New Syncfusion.Windows.Forms.Tools.ContextMenuStripEx()
 Me.toolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+Me.toolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
 
 Me.contextMenuStripEx1.ShowCheckMargin = True
 Me.toolStripMenuItem1.Checked = True

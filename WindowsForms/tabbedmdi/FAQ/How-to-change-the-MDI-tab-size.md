@@ -3,13 +3,13 @@ layout: post
 title: How-to-change-the-MDI-tab-size | WindowsForms | Syncfusion
 description: how to change the mdi tab size
 platform: WindowsForms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # How to change the MDI tab size
 
-You should handle theTabControlAdded event handler and use ItemSize property to change the tab size.
+You should handle theTabControlAdded event handler and use [ItemSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ItemSize.html) property to change the tab size.
 
 {% tabs %}
 

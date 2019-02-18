@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tab-Groups | WindowsForms | Syncfusion
+title: Tab-Groups | TabbedMDIManager | WindowsForms | Syncfusion
 description:  tab groups
 platform: WindowsForms
-control: TabbedMDIPackage 
+control: TabbedMDIManager 
 documentation: ug
 ---
 
@@ -11,7 +11,7 @@ documentation: ug
 
 TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically.
 
-![](Tab-Groups_images/Tab-Groups_img1.jpeg)
+![Tab groups](Tab-Groups_images/Tab-Groups_img1.jpeg)
 
 
 
@@ -57,7 +57,7 @@ Private TabbedGroupedMDIManager As TabbedMDIManager
 
 {% endtabs %}
 
-* Set the form's IsMdiContainer property to `true`.
+* Set the form's [IsMdiContainer](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
 * Initialize the TabbedMDIManager and set the required properties.
 
 {% tabs %}
@@ -236,10 +236,10 @@ End Sub
 {% endtabs %}
 
 
-![](Tab-Groups_images/Tab-Groups_img2.jpeg)
+![Tab groups created by code](Tab-Groups_images/Tab-Groups_img2.jpeg)
 
 
-The AllowTabGroupCustomizing property indicates whether the user can drag and drop tabs (child forms) from one tab group to another.
+The [AllowTabGroupCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AllowTabGroupCustomizing.html) property indicates whether the user can drag and drop tabs (child forms) from one tab group to another.
 
 The below methods can be used for specific functionalities in TabGroups.
 
@@ -276,11 +276,11 @@ CreateNewVerticalGroup</td><td>
 Creates a new vertical tab group, moving the active child form to that group.</td></tr>
 </table>
 
-## Border settings
+### Border settings
 
-### Border color
+## Border color
 
-To set the Border Color of the borders that appear under the MDI tabs, we can use the BottomBorderColor property of TabGroupHosts.
+To set the Border Color of the borders that appear under the MDI tabs, we can use the [BottomBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabHost~BottomBorderColor.html) property of TabGroupHosts.
 
 {% tabs %}
 
@@ -307,12 +307,12 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Green
 {% endtabs %}
 
 
-![](Tab-Groups_images/Tab-Groups_img3.jpeg)
+![tab group items border color](Tab-Groups_images/Tab-Groups_img3.jpeg)
 
 
-### Border height
+## Border height
 
-To set the Border Height of the borders, we can use the BottomBorderHeight property of TabGroupHosts.
+To set the Border Height of the borders, we can use the [BottomBorderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabHost~BottomBorderHeight.html) property of TabGroupHosts.
 
 {% tabs %}
 
@@ -354,7 +354,7 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Black
 
 {% endtabs %}
 
-![](Tab-Groups_images/Tab-Groups_img4.jpeg)
+![Tab groups border height](Tab-Groups_images/Tab-Groups_img4.jpeg)
 
 
 A sample which illustrates this feature is available in the below sample installation location.
