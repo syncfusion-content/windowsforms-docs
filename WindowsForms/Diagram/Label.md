@@ -237,15 +237,15 @@ Position</td><td>
 NA</td></tr>
 <tr>
 <td>
-Constrait</td><td>
-Gets or sets the constraints to enable which interaction you want to interact the label. </td><td>
+Constraints</td><td>
+Gets or sets a constraints to define an interact the label. </td><td>
 enum</td><td>
 LabelConstraints</td><td>
 NA</td></tr>
 <tr>
 <td>
 RotationAngle</td><td>
-Gets or sets the rotation angle for the label where we need to set the label's constraint as `Rotate`. </td><td>
+Gets or sets the rotation angle for the label. </td><td>
 NA</td><td>
 float</td><td>
 NA</td></tr>
@@ -384,7 +384,7 @@ diagram1.Model.AppendChild(node)
 
 
 
-![](Label_images/Label_img1.png)
+![Adding a Label](Label_images/Label_img1.png)
 
 ## Label Orientation
 
@@ -429,13 +429,13 @@ node.Labels.Add(label)
 {% endhighlight %}
 {% endtabs %}
 
-![](Label_images/Label-Orientation_img1.png)
+![Label Orientation](Label_images/Label-Orientation_img1.png)
 
 
 
 
 
-![](Label_images/Label-Orientation_img2.png)
+![Label-Orientation](Label_images/Label-Orientation_img2.png)
 
 ## Interaction
 
@@ -448,7 +448,7 @@ Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Fo
 Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label();
 //To set the label constraint as Interaction...
 label.Constraints = LabelConstraints.Interaction;
-label.Text = "Welcome to Syncfuion";
+label.Text = "Welcome to Syncfusion";
 rectangle.Labels.Add(label);
 
 label = new Syncfusion.Windows.Forms.Diagram.Label();
@@ -475,7 +475,7 @@ Dim rectangle As New Syncfusion.Windows.Forms.Diagram.Rectangle(New RectangleF(1
 Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
 'To set the label constraint as Interaction...
 label.Constraints = LabelConstraints.Interaction
-label.Text = "Welcome to Syncfuion"
+label.Text = "Welcome to Syncfusion"
 rectangle.Labels.Add(label)
 
 label = New Syncfusion.Windows.Forms.Diagram.Label()
