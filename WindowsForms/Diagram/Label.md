@@ -235,6 +235,20 @@ Gets or sets the position of the label. </td><td>
 NA</td><td>
 Position</td><td>
 NA</td></tr>
+<tr>
+<td>
+Constraints</td><td>
+Gets or sets a constraints to define an interact the label. </td><td>
+enum</td><td>
+LabelConstraints</td><td>
+NA</td></tr>
+<tr>
+<td>
+RotationAngle</td><td>
+Gets or sets the rotation angle for the label. </td><td>
+NA</td><td>
+float</td><td>
+NA</td></tr>
 </table>
 
 
@@ -370,7 +384,7 @@ diagram1.Model.AppendChild(node)
 
 
 
-![](Label_images/Label_img1.png)
+![Adding a Label](Label_images/Label_img1.png)
 
 ## Label Orientation
 
@@ -415,14 +429,71 @@ node.Labels.Add(label)
 {% endhighlight %}
 {% endtabs %}
 
-![](Label_images/Label-Orientation_img1.png)
+![Label Orientation](Label_images/Label-Orientation_img1.png)
 
 
 
 
 
-![](Label_images/Label-Orientation_img2.png)
+![Label-Orientation](Label_images/Label-Orientation_img2.png)
 
+## Interaction
 
+Diagram allows label to be interacted by selecting, dragging, rotating, and resizing. By default, the Label interaction is disabled and you can enable this by using the `Constraints` property of the Label. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of the label. The following code illustrates how to enable annotation interaction.
 
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Windows.Forms.Diagram.Rectangle rectangle = new Syncfusion.Windows.Forms.Diagram.Rectangle(new RectangleF(100, 100, 100, 100));
 
+Syncfusion.Windows.Forms.Diagram.Label label = new Syncfusion.Windows.Forms.Diagram.Label();
+//To set the label constraint as Interaction...
+label.Constraints = LabelConstraints.Interaction;
+label.Text = "Welcome to Syncfusion";
+rectangle.Labels.Add(label);
+
+label = new Syncfusion.Windows.Forms.Diagram.Label();
+//To set the label constraint as Resize alone...
+label.Constraints = LabelConstraints.Resize | LabelConstraints.Select;
+label.Position = Position.TopLeft;
+//lbl.UpdatePosition = true;
+label.Text = "Second";
+label.ReadOnly = true;
+rectangle.Labels.Add(label);
+
+label = new Syncfusion.Windows.Forms.Diagram.Label();
+//To set the label constraint as Rotate alone...
+label.Constraints = LabelConstraints.Rotate| LabelConstraints.Select;
+label.Position = Position.MiddleRight;
+label.Text = "Third";
+rectangle.Labels.Add(label);
+diagram1.Model.AppendChild(rectangle);
+
+{% endhighlight %}
+{% highlight vb %}
+Dim rectangle As New Syncfusion.Windows.Forms.Diagram.Rectangle(New RectangleF(100, 100, 100, 100))
+
+Dim label As New Syncfusion.Windows.Forms.Diagram.Label()
+'To set the label constraint as Interaction...
+label.Constraints = LabelConstraints.Interaction
+label.Text = "Welcome to Syncfusion"
+rectangle.Labels.Add(label)
+
+label = New Syncfusion.Windows.Forms.Diagram.Label()
+'To set the label constraint as Resize alone...
+label.Constraints = LabelConstraints.Resize| LabelConstraints.Select
+label.Position = Position.TopLeft
+'lbl.UpdatePosition = true;
+label.Text = "Second"
+label.ReadOnly = True
+rectangle.Labels.Add(label)
+
+label = New Syncfusion.Windows.Forms.Diagram.Label()
+'To set the label constraint as Rotate alone...
+label.Constraints = LabelConstraints.Rotate| LabelConstraints.Select
+label.Position = Position.MiddleRight
+label.Text = "Third"
+rectangle.Labels.Add(label)
+
+diagram1.Model.AppendChild(rectangle)
+{% endhighlight %}
+{% endtabs %}
