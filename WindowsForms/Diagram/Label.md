@@ -439,7 +439,7 @@ node.Labels.Add(label)
 
 ## Interaction
 
-Diagram allows label to be interacted by selecting, dragging, rotating, and resizing. By default, the Label interaction is disabled and you need enable label interaction by using `Constraints` property of the Label. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of label. The following code illustrates how to enable annotation interaction.
+Diagram allows label to be interacted by selecting, dragging, rotating, and resizing. By default, the Label interaction is disabled and you can enable this by using the `Constraints` property of the Label. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective `Constraints` property of the label. The following code illustrates how to enable annotation interaction.
 
 {% tabs %}
 {% highlight c# %}
