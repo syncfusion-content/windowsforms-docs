@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column types
 description: This section explains about the column types in SfDataGrid.
@@ -850,10 +850,12 @@ By default, GridComboBoxColumn displays the value by using the [MappingName](htt
 
 {% tabs %}
 {% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector()});
+this.sfDataGrid.Columns.Add( new GridComboBoxColumn() { MappingName = "ShipCity",HeaderText="Ship City" }); 
+(this.sfDataGrid.Columns["ShipCity"] as GridComboBoxColumn).DataSource = orderInfo.ComboBoxItemsSource; 
 {% endhighlight %}
 {% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector()})
+Me.sfDataGrid.Columns.Add(New GridComboBoxColumn)
+CType(Me.sfDataGrid.Columns("ShipCity"),GridComboBoxColumn).DataSource = orderInfo.ComboBoxItemsSource
 {% endhighlight %}
 {% endtabs %}
 
