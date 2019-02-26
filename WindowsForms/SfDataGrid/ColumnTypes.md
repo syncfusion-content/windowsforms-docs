@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column types | Syncfusion
 description: This section explains about the column types in SfDataGrid.
