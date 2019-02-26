@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Column types
+title: Column types | Syncfusion
 description: This section explains about the column types in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -131,7 +131,7 @@ this.sfDataGrid1.Columns["OrderDate"].Format = "yyyy/mm/dd";
 Me.sfDataGrid1.Columns("OrderDate").Format = "yyyy/mm/dd"
 {% endhighlight %}
 {% endtabs %}
-![](ColumnTypes_images/ColumnTypes_img1.png)
+![Image used to display the formatting value of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img1.png)
 
 N> This property works only for `GridDateTimeColumn`, `GridNumericColumn` and `GridButtonColumn`.
 
@@ -226,7 +226,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img21.png)
+![Image used to display the custom formatting of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img21.png)
 
 N> The custom format will be applied, only when the [GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property is set for the corresponding column.
 
@@ -263,7 +263,7 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img2.png)
+![Image used to apply the cell style to the columns in datagrid windows form](ColumnTypes_images/ColumnTypes_img2.png)
 
 ### Disable Column
 
@@ -352,7 +352,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discoun
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img3.png)
+![Image used to display the percent format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img3.png)
 
 #### Currency
 
@@ -372,7 +372,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img4.png)
+![Image used to display the currency format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img4.png)
 
 N> By default, `GridNumericColumn` displays the record with `Numeric` format.
 
@@ -417,7 +417,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.HeaderText = "Quantity
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img5.png)
+![Image used to display the number format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img5.png)
 
 #### NumberFormatInfo for Percent Formatted Column
 
@@ -458,7 +458,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discoun
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img6.png)
+![Image used to display the percent format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img6.png)
 
 #### NumberFormatInfo for Currency Formatted Column
 
@@ -499,7 +499,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img7.png)
+![Image used to display the currency format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img7.png)
 
 ### Displaying Null Value
 
@@ -664,7 +664,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img8.png)
+![Image used to display the three state of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img8.png)
 
 ### Text on the Check Box Column
 
@@ -679,7 +679,7 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img9.png)
+![Image used to display the text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img9.png)
 
 ### Check Box on Header
 
@@ -694,11 +694,11 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnH
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img10.png)
+![Image used to display the header text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img10.png)
 
 All the checkboxes in a column will be checked/unchecked by clicking on the CheckBox in the header.
 
-![](ColumnTypes_images/ColumnTypes_img22.png)
+![Image used to display the all checked/unchecked by click on the checkbox in the header in datagrid windows form](ColumnTypes_images/ColumnTypes_img22.png)
 
 By default, enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowCheckBoxOnHeader.html) property will display the checkbox with text on the header cell of [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html). The text in the header cell can be disabled by setting empty value for the [HeaderText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderText.html) property of the column.
 
@@ -713,7 +713,7 @@ Me.sfDataGrid1.Columns("IsClosed").HeaderText = String.Empty
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img23.png)
+![Image used to display the header text as disable of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img23.png)
 
 ### Customizing the Check Box Value
 
@@ -744,7 +744,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img11.png)
+![Image used to display the customize the value of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img11.png)
 
 ### Appearance
 
@@ -783,7 +783,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img12.png)
+![Image used to display the changed the appearance  of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img12.png)
 
 #### Conditional Styling
 
@@ -816,7 +816,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img13.png)
+![Image used to display the changed the appearance  of checkbox column based on the condition in datagrid windows form](ColumnTypes_images/ColumnTypes_img13.png)
 
 ### Canceling the check box state change
 
@@ -864,7 +864,7 @@ The SfDataGrid triggers the [CellComboBoxSelectionChanged](https://help.syncfusi
 *	[SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedIndex.html) : Returns the index of selected item.
 *	[SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedItem.html)	: Returns the selected item from drop-down list.
 
-![](ColumnTypes_images/ComboBox_img1.png)
+![Image used to display GridComboBoxColumn in datagrid windows form](ColumnTypes_images/ComboBox_img1.png)
 
 ### Opening drop-down popup on single-click
 Drop-down of the combo-box column can be shown on single click by using the custom combo-box renderer. 
@@ -911,7 +911,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ComboBox_img2.png)
+![Image used to display the customizing groupcaptiontext based on the displaymemberpath in datagrid windows form](ColumnTypes_images/ComboBox_img2.png)
 
 ### Loading different DataSources for each row of GridComboBoxColumn
 Different data sources can be loaded for each row of the [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html) by using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~IDataSourceSelector.html) property.
@@ -980,9 +980,9 @@ End Class
 
 Following screenshot illustrates the different `Ship City` DataSource bound to each row of the ComboBox column based on the `Ship Country` Name.
 
-![](ColumnTypes_images/ComboBox_img3.png)
+![Image used to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img3.png)
 
-![](ColumnTypes_images/ComboBox_img4.png)
+![Image used to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img4.png)
 
 ### Editing the combo box
 By default, the combo-box column is not allowed to edit the values. This can be changed by setting the [GridComboBoxColumn.DropDownStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DropDownStyle.html) as `DropDown` to edit the values by using the text box.
@@ -996,7 +996,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ComboBox_img5.png)
+![Image used to apply the edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img5.png)
 
 ### Auto completing on edit mode
 The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoCompleteMode.html) property. Default value is `None`. Following types of auto complete modes are available,
@@ -1019,7 +1019,7 @@ comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ComboBox_img6.png)
+![Image used to apply the auto completing on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img6.png)
 
 ### Auto suggesting on edit mode
 By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the [AutoSuggestionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestMode.html) property. You can also set delay for auto suggestion by using the [AutoSuggestDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestDelay.html) property.
@@ -1041,7 +1041,7 @@ comboBoxColumn.AutoSuggestDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ComboBox_img7.png)
+![Image used to apply the auto suggesting on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img7.png)
 
 ## GridButtonColumn
 
@@ -1060,7 +1060,7 @@ Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductN
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img14.png)
+![Image used to display the column data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img14.png)
 
 ### Default Text for the Buttons
 
@@ -1077,7 +1077,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).DefaultButtonTe
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img15.png)
+![Image used to display the default data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img15.png)
 
 ### Adding Image for the Button Column
 
@@ -1116,7 +1116,7 @@ The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/
   Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name", .Image = SystemIcons.Information.ToBitmap(), .ImageSize = New Size(16, 16), .TextImageRelation = TextImageRelation.ImageBeforeText})
 {% endhighlight %}
 {% endtabs %}
-![](ColumnTypes_images/ColumnTypes_img16.png)
+![Image used to display the column data and images as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img16.png)
 
 ### Appearance
 
@@ -1137,7 +1137,7 @@ Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img17.png)
+![Image used to display the customize the appearance of button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img17.png)
 
 ### Deleting the selected records by button click
 
@@ -1214,7 +1214,7 @@ Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img18.png)
+![Image used to display the customize the appearance of hyperlink column in datagrid windows form](ColumnTypes_images/ColumnTypes_img18.png)
 
 ### Canceling the Navigation
 
@@ -1397,7 +1397,7 @@ Private Sub SfDataGrid1_QueryImageCellStyle(ByVal sender As Object, ByVal e As Q
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](ColumnTypes_images/ColumnTypes_img19.png)
+![Image used to display the customize the appearance of image column in datagrid windows form](ColumnTypes_images/ColumnTypes_img19.png)
 
 ## Custom Column Support
 
@@ -1607,5 +1607,5 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img20.png)
+![Image used to display the  custom column by using the custom renderer in datagrid windows form](ColumnTypes_images/ColumnTypes_img20.png)
 
