@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to apply Gradient Rendering for the GroupBar | WindowsForms | Syncfusion
+title: How to apply gradient rendering | WindowsForms | Syncfusion
 description: Frequently asked questions
 platform: WindowsForms
 control: GroupBar
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to apply Gradient Rendering for the GroupBar?
 
-The correct way to apply gradient rendering for the GroupBar is to handle the ProvideGroupBarItemBrush Event of GroupBar.
+The correct way to apply gradient rendering for the GroupBar is to handle the [ProvideGroupBarItemBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ProvideGroupBarItemBrush_EV.html) Event of GroupBar.
 
 {% tabs %}
 

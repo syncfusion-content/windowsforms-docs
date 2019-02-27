@@ -16,9 +16,9 @@ This section describes how text alignment can be done for the GroupBar Items.
 
 ### Through designer
 
-The TextAlign property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left, and Right. The default alignment is set to Center.
+The [TextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~TextAlign.html) property specifies the horizontal alignment of the GroupBar Item text. The text can be aligned to the Center, Left, and Right. The default alignment is set to Center.
 
-![](Overview_images/Overview_img17.jpeg)
+![GroupBar text align](Overview_images/Overview_img17.jpeg)
 
 
 ### Through code
@@ -43,7 +43,7 @@ Me.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
 
 ### In-place renaming
 
-Users are allowed to rename GroupBar Items at run-time using the code snippet given below.
+Users are allowed to rename GroupBar Items at run-time using the [InplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~InplaceRenameItem.html) mehod. 
 
 {% tabs %}
 
@@ -67,20 +67,7 @@ Me.groupBar1.InplaceRenameItem(index)
 
 {% endtabs %}
 
-The method associated with this property is given below.
-
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th></tr>
-<tr>
-<td>
-CancelInplaceRenameItem</td><td>
-Cancels an in-place edit that is in progress.</td></tr>
-</table>
-
+The method associated with [CancelInplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~CancelInplaceRenameItem.html) propery. 
 
 ## Image settings
 
@@ -88,22 +75,8 @@ This section describes the image settings available for GroupBar Items.
 
 Large images can be set for GroupBar Items using the following properties.
 
-
-
-<table>
-<tr>
-<th>
-GroupBarItem property</th><th>
-Description</th></tr>
-<tr>
-<td>
-LargeImageMode</td><td>
-Specifies whether large images can be set for the GroupBar Item's client control.</td></tr>
-<tr>
-<td>
-Image</td><td>
-Specifies the image for the GroupBar Item's client control. </td></tr>
-</table>
+* [LargeImageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItem~LargeImageMode.html)
+* [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItem~Image.html)
 
 {% tabs %}
 
@@ -126,10 +99,10 @@ Me.groupBarItem1.Image = (CType(resources.GetObject("groupBarItem1.Image"), Syst
 
 {% endtabs %}
 
-![](Overview_images/Overview_img18.jpeg)
+![GroupBar image support](Overview_images/Overview_img18.jpeg)
 
 
-Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the ShowItemImageInHeader property to `true`.
+Users can also display the selected GroupBar Item's image on the header of the Stacked GroupBar. This can be achieved by setting the [ShowItemImageInHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ShowItemImageInHeader.html) property to `true`.
 
 {% tabs %}
 
@@ -149,7 +122,7 @@ Me.groupBar1.ShowItemImageInHeader = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img19.jpeg) 
+![GroupBar image support](Overview_images/Overview_img19.jpeg) 
 
 
 
@@ -157,22 +130,8 @@ Me.groupBar1.ShowItemImageInHeader = True
 
 The following table lists the properties related to the GroupBar Items.
 
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BarHighlight</td><td>
-Specifies the value which indicates whether to highlight the GroupBar Item when the mouse cursor hovers over it.</td></tr>
-<tr>
-<td>
-FlatLook</td><td>
-Specifies whether to draw GroupBar Items with the control's borders without a 3-dimensional edge.</td></tr>
-</table>
+* [BarHighlight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~BarHighlight.html)
+* [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~FlatLook.html)
 
 {% tabs %}
 
@@ -197,14 +156,14 @@ Me.groupBar1.FlatLook = True
 {% endtabs %}
 
 
-The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the BarHighlight property to `true`.
+The control provides highlighting effect for the GroupBar Item when the mouse is hovered over it by setting the [BarHighlight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~BarHighlight.html) property to `true`.
 
-![](Overview_images/Overview_img20.jpeg)
+![GroupBar item highlight](Overview_images/Overview_img20.jpeg)
 
 
-The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the FlatLook property to `true`.
+The border of the GroupBar Items can be changed by drawing the border without 3-dimensional edge which can be attained by setting the [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~FlatLook.html) property to `true`.
 
-![](Overview_images/Overview_img21.jpeg)
+![GroupBar flat look appearance](Overview_images/Overview_img21.jpeg)
 
 
 ## Integrating child controls to the GroupBar items
@@ -286,10 +245,10 @@ Me.treeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {treeNode2})
 {% endtabs %}
 
 
- ![](Overview_images/Overview_img22.jpeg) 
+ ![GroupBar and TreeViewAdv control](Overview_images/Overview_img22.jpeg) 
 
 
-![](Overview_images/Overview_img23.jpeg) 
+![GroupBarItem accept the TreeViewAdv control](Overview_images/Overview_img23.jpeg) 
 
 
 ### GroupView as child control
@@ -365,7 +324,7 @@ Me.groupView1.GroupViewItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupVi
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img24.jpeg)
+ ![GroupView as child control](Overview_images/Overview_img24.jpeg)
 
 
 
@@ -378,22 +337,22 @@ The following step-by-step procedure helps you to create Nested GroupBars.
 1. Drag and drop the GroupBar1 control from the toolbox onto the form, add GroupBar Items using the GroupBar Item Collection Editor, drag and drop the GroupView control and add GroupView Items using the GroupView Item Collection Editor. Associate the GroupView control inside the client area of the GroupBar Item.
 2. The below screen shot shows the GroupBar with four GroupBar Items named as Windows Forms, Components, General and Nested GroupBar.
 
- ![](Overview_images/Overview_img25.jpeg)
+ ![GroupBar as child control](Overview_images/Overview_img25.jpeg)
 
 
 3. Drag and drop another GroupBar2 control from the toolbox and add the GroupBar Items (Personal, Work and Contacts) using the GroupBar Item Collection Editor and add the GroupView control with GroupView Items (Vendors, Metrics, Trend, Sales and Sales 2 for the GroupBar Item Work) to each GroupBar Item using the GroupView Item Collection Editor.
 
- ![](Overview_images/Overview_img26.jpeg)
+ ![GroupBar control](Overview_images/Overview_img26.jpeg)
 
 
 4. Add GroupBar2 as child control to the GroupBar1 by doing a drag and drop operation.
 
- ![](Overview_images/Overview_img27.jpeg)
+ ![Drag and drop the GroupBar control](Overview_images/Overview_img27.jpeg)
 
 
 The following screenshot shows the Nested GroupBars.
 
- ![](Overview_images/Overview_img28.jpeg)
+ ![Nested GroupBars](Overview_images/Overview_img28.jpeg)
 
 {% tabs %}
 
@@ -468,43 +427,11 @@ Me.groupBar2.GroupBarItems.AddRange(New Syncfusion.Windows.Forms.Tools.GroupBarI
 
 The below properties controls the appearance and behavior of the GroupBarItem pop-up.
 
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-PopupAutoClose</td><td>
-Indicates whether popup is closed after clicking an item.</td></tr>
-<tr>
-<td>
-PopupClientSize</td><td>
-Indicates the initial size of the popup for the GroupBarItem client.</td></tr>
-<tr>
-<td>
-PopupResizeMode</td><td>
-Gets or sets the popup's resize mode. It can be horizontal, vertical, Both or None.</td></tr>
-<tr>
-<td>
-ShowPopupGripper</td><td>
-Specifies whether to show or hide the popup gripper.</td></tr>
-</table>
-
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HidePopup</td><td>
-Calling this method will hide the popup.</td></tr>
-</table>
+* [PopupAutoClose](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~PopupAutoClose.html)
+* [PopupClientSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~PopupClientSize.html)
+* [PopupResizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~PopupResizeMode.html)
+* [ShowPopupGripper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ShowPopupGripper.html)
+* [HidePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~HidePopup().html)
 
 {% tabs %}
 
