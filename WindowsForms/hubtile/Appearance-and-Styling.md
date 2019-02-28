@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Styling | WindowsForms | Syncfusion
+title: Appearance and styling | WindowsForms | Syncfusion
 description: appearance and styling
 platform: WindowsForms
 control: HubTile
