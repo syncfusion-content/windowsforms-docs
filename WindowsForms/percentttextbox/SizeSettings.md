@@ -11,35 +11,18 @@ documentation: ug
 
 The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
 
-<table>
-<tr>
-<th>
-PercentTextBox Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-MaximumSize</td><td>
-Gets / sets the maximum size for the control.</td></tr>
-<tr>
-<td>
-MinimumSize</td><td>
-Gets / sets the minimum size for the control.</td></tr>
-</table>
+* [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html)
+* [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html)
 
 {% tabs %}
 {% highlight C# %}
-
 this.percentTextBox1.MaximumSize = new System.Drawing.Size(100, 25);
 this.percentTextBox1.MinimumSize = new System.Drawing.Size(100, 25);
-
 {% endhighlight %}
-
-{% highlight vb %}
-
+{% highlight VB %}
 Me.percentTextBox1.MaximumSize = New System.Drawing.Size(100, 25)
 Me.percentTextBox1.MinimumSize = New System.Drawing.Size(100, 25)
-
 {% endhighlight %}
 {% endtabs %}
 
- ![](PercentTextBox-Images/Overview_img485.png) 
+![Percent text box size setting](PercentTextBox-Images/Overview_img485.png) 
