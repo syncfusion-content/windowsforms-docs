@@ -20,7 +20,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with WizardControl
+## Creating simple application with WizardControl
 
 You can create the Windows Forms application with WizardControl control as follows:
 
