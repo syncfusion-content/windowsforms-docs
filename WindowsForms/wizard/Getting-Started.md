@@ -271,3 +271,5 @@ Me.wizardControlPage1.HelpVisible = true
 Me.wizardControlPage1.FinishVisible = False
 {% endhighlight  %}
 {% endtabs %} 
+
+![navigation button visibility](Getting-Started_images/GettingStarted-img8.png)
