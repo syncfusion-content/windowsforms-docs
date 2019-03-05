@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to give Flat look to the parent form of TileLayout | WindowsForms | Syncfusion
+title: Flat look to the parent form of TileLayout | WindowsForms | Syncfusion
 description: How to give Flat look to the parent form of TileLayout
 platform: WindowsForms
 control: TileLayout 
@@ -10,7 +10,7 @@ documentation: ug
 
 # How to give flat look to the parent form of TileLayout?
 
-We can give the Flat look to the parent form by using the property named SetParentFormFlat.
+We can give the Flat look to the parent form by using the property named [SetParentFormFlat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout~SetParentFormFlat.html).
 
 {% tabs %}
 
