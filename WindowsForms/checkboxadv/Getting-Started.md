@@ -11,19 +11,31 @@ documentation: ug
 
 The CheckBoxAdv control can be created in the following ways.
 
+## Assembly Deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#checkboxadv) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+
+Find more details about installing the nuget packages in a Windows Forms application in the following link: [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+
+## Creating the project
+
+Create a new Windows Forms Project in Visual Studio to display the `CheckBoxAdv` with basic functionalities.
+
 ## Through Designer
 
 The following steps illustrate how to create a CheckBoxAdv control through designer.
 
-* Create or open a Windows Forms project.
-* Add a CheckBoxAdv Control from the toolbox onto the form by dragging and dropping it on the form or double clicking the control.
+**Step 1**: The `CheckBoxAdv` control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
 
-![](Overview_images/Overview_img607.jpeg)
+* Syncfusion.Tools.Windows.dll
 
-* Set the desired properties for the control through theProperty grid.
-* Run the application.
+![Windows forms CheckBoxAdv drag and drop from toolbox](Overview_images/CheckBoxAdv_toolbox.jpeg)
 
-![](Overview_images/Overview_img608.jpeg)
+**Step 2**: Set the desired properties for the control through the Property grid.
+
+**Step 3**: Run the application.
+
+![Windows forms CheckBoxAdv showing at run time](Overview_images/CheckBoxAdv_throughdesign.jpeg)
 
 
 {% seealso %}
@@ -34,9 +46,13 @@ The following steps illustrate how to create a CheckBoxAdv control through desig
 
 The CheckBoxAdv control can be created programmatically as detailed below:
 
-* Create a C# or VB.NET application though Visual Studio.
-* Add the required assembly references.
-* Include the required namespace.
+**Step 1**: Create a C# or VB.NET application though Visual Studio.
+
+**Step 2**: Include the required assembly references.
+
+	Syncfusion.Tools.Windows.dll
+
+**Step 3**: Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -52,7 +68,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-* Create an instance of the CheckBoxAdv control class.
+**Step 4**: Create an instance of the CheckBoxAdv control class.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +86,7 @@ Me.checkBoxAdv1 = New Syncfusion.Windows.Forms.Tools.CheckBoxAdv()
 {% endhighlight %}
 {% endtabs %}
 
-* Set the properties and add the CheckBoxAdv control to the form.
+**Step 5**: Set the properties and add the CheckBoxAdv control to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,7 +114,7 @@ Me.Controls.Add(Me.radioButtonAdv1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img609.jpeg)
+![Windows forms CheckBoxAdv showing at run time](Overview_images/CheckBoxAdv_throughcode.jpeg)
 
 
 {% seealso %}

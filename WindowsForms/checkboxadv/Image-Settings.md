@@ -25,15 +25,15 @@ Indicates whether the CheckBox will be drawn using the images provided.</td></tr
 <tr>
 <td>
 ImageCheckBoxSize</td><td>
-Gets / sets the size of the ImageCheckBox.ImageCheckbox property must be set to 'True'.</td></tr>
+Gets or sets the size of the ImageCheckBox.ImageCheckbox property must be set to 'True'.</td></tr>
 <tr>
 <td>
 CheckedImage</td><td>
-Gets / sets the image used to draw the CheckBox when checked and mouse not over.</td></tr>
+Gets or sets the image used to draw the CheckBox when checked and mouse not over.</td></tr>
 <tr>
 <td>
 UncheckedImage</td><td>
-Gets / sets the image used to draw the CheckBox when unchecked and mouse not over.</td></tr>
+Gets or sets the image used to draw the CheckBox when unchecked and mouse not over.</td></tr>
 <tr>
 <td>
 IndeterminateImage</td><td>
@@ -41,7 +41,7 @@ The image used to draw the CheckBox when indeterminate and mouse not over.</td><
 <tr>
 <td>
 DisabledImage</td><td>
-Gets / sets the image used to draw the CheckBox when disabled.</td></tr>
+Gets or sets the image used to draw the CheckBox when disabled.</td></tr>
 <tr>
 <td>
 StretchImage</td><td>
@@ -78,7 +78,7 @@ Me.checkBoxAdv1.StretchImage = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img621.jpeg)
+![Windows forms CheckBoxAdv images displayed in control when it is in checked](Overview_images/CheckBoxAdv_image.jpeg)
 
 ## Images Displayed during Mouse Hover
 
@@ -92,15 +92,15 @@ Description</th></tr>
 <tr>
 <td>
 MouseOverCheckedImage</td><td>
-Gets / sets the image used to draw the CheckBox when checked and mouse over.</td></tr>
+Gets or sets the image used to draw the CheckBox when checked and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverDisabledImage</td><td>
-Gets / sets the image used to draw the CheckBox when indeterminate and mouse over.</td></tr>
+Gets or sets the image used to draw the CheckBox when indeterminate and mouse over.</td></tr>
 <tr>
 <td>
 MouseOverUncheckedImage</td><td>
-Gets / sets the image used to draw the CheckBox when unchecked and mouse over.</td></tr>
+Gets or sets the image used to draw the CheckBox when unchecked and mouse over.</td></tr>
 </table>
 
 {% tabs %}
@@ -121,8 +121,5 @@ Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAd
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/Overview_img622.jpeg)
+ ![Windows forms CheckBoxAdv images displayed during Mouse hovered on control](Overview_images/CheckBoxAdv_changeimage.jpeg)
 
-A Sample which demonstrates the ImageCheckBox property of CheckBoxAdv is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

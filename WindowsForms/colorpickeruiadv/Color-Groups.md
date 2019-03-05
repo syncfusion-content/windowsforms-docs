@@ -29,7 +29,7 @@ ThemeGroup</td><td>
 Represents the group of theme colors.</td></tr>
 </table>
 
-![](ColorPickerUIAdv_Images/Overview_img254.jpeg) 
+![Windows forms ColorPickerUIAdv Color groups](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroups.jpeg) 
 
 N>  You can also add custom ColorGroups apart from the above default groups. Refer Custom ColorGroups topic to know more.
 
@@ -37,7 +37,7 @@ N>  You can also add custom ColorGroups apart from the above default groups. Ref
 
 The sections of a color group is illustrated in the below image.
 
-![](ColorPickerUIAdv_Images/Overview_img256.jpeg)
+![Windows forms ColorPickerUIAdv showing sections of a color group](ColorPickerUIAdv_Images/ColorPickerUIAdv_colorgroupsection.jpeg)
 
 {% seealso %}
 
@@ -49,7 +49,7 @@ The sections of a color group is illustrated in the below image.
 
 Custom Color Groups can be added to ColorPickerUIAdv control using CustomGroups property. This property invokes ColorUIAdvGroup Collection Editor and lets you to add custom user groups.
 
-![](ColorPickerUIAdv_Images/Overview_img257.jpeg) 
+![Windows forms ColorPickerUIAdv custom color groups added](ColorPickerUIAdv_Images/ColorPickerUIAdv_customgroups.jpeg) 
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ Me.colorPickerUIAdv1.CustomGroups.Add(colorUIAdvGroup1)
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img258.jpeg) 
+![Windows forms ColorPickerUIAdv colors from custom user color](ColorPickerUIAdv_Images/ColorPickerUIAdv_customusercolor.jpeg) 
 
 N> The properties to customize the color groups are similar to default color groups. 
 See how to Customize the Color Groups in [Customizing the Color Groups](#customizincolor-items) topic.
@@ -113,15 +113,15 @@ Specifies the depth of the sub items, i.e the number of sub items that can be ad
 
 * Opening ColorItem Collection Editor using Items property.
 
-![](ColorPickerUIAdv_Images/Overview_img260.jpeg) 
+![Windows forms ColorPickerUIAdv opening coloritem for RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_opencoloritem.jpeg) 
 
 * Adding GroupColor items.
 
-![](ColorPickerUIAdv_Images/Overview_img261.jpeg) 
+![Windows forms ColorPickerUIAdv adding color items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_addgroupcolor.jpeg) 
 
 * Adding color / sub items to the GroupColor items.
 
-![](ColorPickerUIAdv_Images/Overview_img262.jpeg) 
+![Windows forms ColorPickerUIAdv adding colors from sub items to RecentGroup](ColorPickerUIAdv_Images/ColorPickerUIAdv_subcoloritem.jpeg) 
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ Me.colorPickerUIAdv1.RecentGroup.SubItemsDepth = 1
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img263.jpeg) 
+![Windows forms ColorPickerUIAdv colors from Recent Colors](ColorPickerUIAdv_Images/ColorPickerUIAdv_recentcolors.jpeg) 
 
 N> To know how to customize a color item, refer_ Color Items _topic.
 
@@ -153,7 +153,7 @@ Size of the color items can be set through ColorItemSize property. Default width
 
 N> The colors within the groups are click able at design time and you can change the color using property grid as in the below image.
 
-![](ColorPickerUIAdv_Images/Overview_img266.jpeg)
+![Windows forms ColorPickerUIAdv change the size of color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_customizingcolor.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ Me.colorPickerUIAdv1.ColorItemSize = New System.Drawing.Size(20, 20)
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img267.jpeg) 
+![Windows forms ColorPickerUIAdv showing color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_colors.jpeg) 
 
 ### Spacing Between Color Items
 
@@ -191,7 +191,7 @@ Me.colorPickerUIAdv1.VerticalItemsSpacing = 15
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img268.jpeg) 
+![Windows forms ColorPickerUIAdv sets horizontal and vertical spacing between color items](ColorPickerUIAdv_Images/ColorPickerUIAdv_spacingwithcolors.jpeg) 
 
 {% seealso %}
 
@@ -267,5 +267,5 @@ Me.colorPickerUIAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif",9F, S
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img269.jpeg) 
+![Windows forms ColorPickerUIAdv set alignment of the color group headers](ColorPickerUIAdv_Images/ColorPickerUIAdv_textalign.jpeg) 
 
