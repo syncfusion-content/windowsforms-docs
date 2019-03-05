@@ -43,7 +43,7 @@ Me.groupBar1.TextAlign = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
 
 ### In-place renaming
 
-Users are allowed to rename GroupBar Items at run-time using the [InplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~InplaceRenameItem.html) mehod. 
+Users are allowed to rename GroupBar Items at run-time using the [InplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~InplaceRenameItem.html) method. 
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ Me.groupBar1.InplaceRenameItem(index)
 
 {% endtabs %}
 
-The method associated with [CancelInplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~CancelInplaceRenameItem.html) propery. 
+The method associated with [CancelInplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~CancelInplaceRenameItem.html) property. 
 
 ## Image settings
 
