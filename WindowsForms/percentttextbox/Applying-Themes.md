@@ -22,7 +22,7 @@ Me.percentTextBox1.ThemesEnabled = true
 {% endhighlight %}
 {% endtabs %}
 
-![](PercentTextBox-Images/Overview_img487.png) 
+![Themes](PercentTextBox-Images/Overview_img487.png) 
 
 A Sample which demonstrates the [ThemesEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ThemesEnabled.html) property of the PercentTextBox control is available in the below sample installation path.
 
