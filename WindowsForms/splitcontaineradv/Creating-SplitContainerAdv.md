@@ -13,151 +13,21 @@ This section describes how to add [SplitContainerAdv](https://help.syncfusion.co
 
 ## Assembly deployment
 
-The following list of assemblies should be added as reference to use the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) in any application:
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splitcontaineradv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Grid.Base.dll
-</td>
-<td>
-Syncfusion.Grid.Base contains classes that contains fundamentals and base classes of GridControl.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Grid.Windows.dll
-</td>
-<td>
-Syncfusion.Grid.Windows contains classes that handles all UI operations, fundamentals and base classes of GridControl which are used in the SplitContainerAdv control.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Shared.Base.dll
-</td>
-<td>
-Syncfusion.Shared.Base contains style related properties of SplitContainerAdv and various editor controls.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Shared.Windows.dll
-</td>
-<td>
-Syncfusion.Shared.Windows contains style related properties of SplitContainerAdv and various editor controls.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Tools.Base.dll
-</td>
-<td>
-Syncfusion.Tools.Base contains base class which used for SplitContainerAdv control.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Tools.Windows.dll
-</td>
-<td>
-Syncfusion.Tools.Windows contains the class that handles all UI operations and contains helper class of SplitContainerAdv control.
-</td>
-</tr>
-</table>
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-
-## Installing NuGet Packages
-
-To use [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in Windows Forms application via nuget, the following packages should be installed.
- 
-<table>
-<tr>
-<td>{{'**S.No**'| markdownify }}
-</td>
-<td>{{'**Framework version**'| markdownify }}
-</td>
-<td>{{'**NuGet Packages**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td> 1
-</td>
-<td> 2.0
-</td>
-<td> Syncfusion.Tools.Windows20
-</td>
-</tr>
-<tr>
-<td> 2
-</td>
-<td> 3.5
-</td>
-<td> Syncfusion.Tools.Windows35
-</td>
-</tr>
-<tr>
-<td> 3
-</td>
-<td> 4.0
-</td>
-<td> Syncfusion.Tools.Windows40
-</td>
-</tr>
-<tr>
-<td> 4
-</td>
-<td> 4.5
-</td>
-<td> Syncfusion.Tools.Windows45
-</td>
-</tr>
-<tr>
-<td> 5
-</td>
-<td> 4.5.1
-</td>
-<td>Syncfusion.Tools.Windows451
-</td>
-</tr>
-<tr>
-<td> 6
-</td>
-<td> 4.6
-</td>
-<td>Syncfusion.Tools.Windows46
-</td>
-</tr>
-</table>
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
+## Create a simple application with SplitContainerAdv
 
-# Creating simple application with SplitContainerAdv
+### Create a project
 
-You can create the Windows Forms application with [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control as follows:
+Create a new Windows Forms project in Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html).
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via Form Designer](#adding-control-via-Form-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
+## Adding control via designer
 
-### Creating the project
-
-Create a new Windows Forms project in the Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) with functionalities.
-
-## Adding control via Form designer
-
-The SplitContainerAdv control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The SplitContainerAdv control can be added to the application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -166,11 +36,11 @@ The SplitContainerAdv control can be added to the application by dragging it fro
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](GettingStarted-images/GettingStarted-img1.png)
+![Search SplitContainerAdv in toolbox ](GettingStarted-images/GettingStarted-img1.png)
 
 Child controls can be added to the SplitContainerAdv by dragging it from the toolbox and dropping it in desired panel. Here labels are added into SplitContainerAdv Panels.
 
-![](GettingStarted-images/GettingStarted-img2.png)
+![Drag and drop the SplitContainerAdv to form](GettingStarted-images/GettingStarted-img2.png)
 
 ## Adding control manually using code
 
@@ -233,9 +103,9 @@ Me.Controls.Add(SplitContainerAdv1)
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img4.png)
+![SplitContainerAdv control added by code](GettingStarted-images/GettingStarted-img4.png)
 
-**Adding Controls to SplitContainerAdv**
+**Add controls to SplitContainerAdv**
 
 Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) or [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html) of the SplitContainerAdv.
 
@@ -280,4 +150,27 @@ Me.splitContainerAdv1.Panel2.Controls.Add(Me.label2)
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img3.png)
+![Panels controls added](GettingStarted-images/GettingStarted-img3.png)
+
+## Splitter orientation
+
+The SplitContainerAdv Panels can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Orientation.html) property.
+
+{% tabs %}
+{% highlight C# %}
+//Setting orientation
+this.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical;
+{% endhighlight  %}
+{% highlight VB %}
+‘Setting orientation
+Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
+{% endhighlight  %}
+{% endtabs %} 
+
+* **Horizontal**
+
+![Horizontal orientation](GettingStarted-images/horizontal-orientation.png)
+
+* **Vertical**
+
+![Vertical orientation](GettingStarted-images/vertical-orientation.png)

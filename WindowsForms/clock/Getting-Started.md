@@ -19,15 +19,15 @@ You can find more details about installing the NuGet package in a WF application
 
 ## Create a simple application with Clock
 
-You can create a Windows Forms application with the Clock control using the following steps:
+You can create a Windows Forms application with the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the Clock control with multiple time zones.
+Create a new Windows Forms project in Visual Studio to display the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control with multiple time zones.
 
 ## Add control through designer
 
-The Clock control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Base 
   * Syncfusion.Tools.Windows
 
-**2.** Include the Clock control namespace **Syncfusion.Windows.Forms.Tools;**.
+**2.** Include the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control namespace **Syncfusion.Windows.Forms.Tools;**.
 
   {% tabs %}
   {% highlight C# %}
@@ -62,7 +62,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %} 
 
-**3.** Create a Clock control instance, and add it to the form.
+**3.** Create a [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control instance, and add it to the form.
 
   {% tabs %}
   {% highlight C# %}
@@ -79,12 +79,12 @@ To add the control manually in C#, follow the given steps:
 
 ## Clock type
 
-You can change the analog clock to digital clock by setting the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ClockType.html) property of the Clock control.
+You can change the analog clock to digital clock by setting the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ClockType.html) property of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control.
 
 * **Analog Clock:**
 
-![wf clock control](Getting-Started_images/wf-analog-clock.png)
+![Analog clock](Getting-Started_images/wf-analog-clock.png)
 
 * **Digital Clock:**
 
-![wf clock control](Getting-Started_images/wf-digital-clock.png)
+![Digital clock](Getting-Started_images/wf-digital-clock.png)
