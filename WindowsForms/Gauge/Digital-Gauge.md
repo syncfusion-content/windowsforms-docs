@@ -87,7 +87,7 @@ Imports Syncfusion.Windows.Forms.Gauge
 
 {% endtabs %} 
 
-**Step 3** : Create `DigitalGauge` control instance and add it to the form.
+**Step 3** : Create [DigitalGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ This section illustrates the features of the digital gauge with different visual
 
 ### Visual styles
 
-The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
+The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~VisualStyle.html) property.
 
 The styles are built-in for all gauges.
 
@@ -137,20 +137,6 @@ The styles are built-in for all gauges.
 * Office2016DarkGray
 * Office2016Black
 * Custom
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Enum</td><td>
-Gets or sets the frame type.</td></tr>
-</table>
-
 
 **Black**
 
@@ -351,7 +337,7 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
 **Custom**
 
- Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the VisualStyle property as Custom.
+ Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~VisualStyle.html) property as Custom.
 
  **Steps to customize the theme in design time**
 
@@ -433,23 +419,9 @@ Character types are used to customize the digital segments.
 
 #### Customizing scales
 
-You can customize the segments in the digital gauge using the following property:
+You can customize the segments in the digital gauge using the [CharacterType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~CharacterType.html) property.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-CharacterType</td><td>
-enum</td><td>
-Gets or sets the character type.</td></tr>
-</table>
-
-
-Different segments can be applied using the CharacterType property. The digital gauge control contains four segment types:
+Different segments can be applied using the [CharacterType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~CharacterType.html) property. The digital gauge control contains four segment types:
 
 * Dot matrix
 * Seven segments
@@ -457,7 +429,6 @@ Different segments can be applied using the CharacterType property. The digital 
 * Sixteen segments
 
 #### Dot matrix
-
 
 In a digital gauge, the value can be displayed in dot matrix format by setting the character type as DotMatrixSegment.
 
@@ -548,7 +519,7 @@ Me.digitalGauge1.CharacterType = Syncfusion.Windows.Forms.Gauge.CharacterType.
 
 ### Character count
 
-The CharacterCount property can be used to restrict the number of characters that can be displayed in a digital gauge.
+The [CharacterCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~CharacterCount.html) property can be used to restrict the number of characters that can be displayed in a digital gauge.
 
 {% tabs %}
 
@@ -573,7 +544,7 @@ Me.digitalGauge1.Value = 123456
 
 ### Segment spacing
 
-The SegmentSpacing property is used to determine the spacing between the characters displayed in the digital gauge.
+The [SegmentSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~SegmentSpacing.html) property is used to determine the spacing between the characters displayed in the digital gauge.
 
 {% tabs %}
 
@@ -602,7 +573,7 @@ Me.digitalGauge1.Value = 123456
 
 ### Show visible segments
 
-The ShowInvisibleSegments property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to `false`.
+The [ShowInvisibleSegments](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~ShowInvisibleSegments.html) property can be enabled to make the segments that are not drawn visible. This property can be disabled by setting it to `false`.
 
 {% tabs %}
 
@@ -624,7 +595,7 @@ this.digitalGauge1.ShowInvisibleSegments = true;
 
 ### RoundCornerRadius
 
-The RoundCornerRadius property of the digital gauge is used to draw digital gauge with rounded edges.
+The [RoundCornerRadius](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~RoundCornerRadius.html) property of the digital gauge is used to draw digital gauge with rounded edges.
 
 {% tabs %}
 
@@ -646,15 +617,11 @@ Me.digitalGauge1.RoundCornerRadius = 50
 
 ### Data binding
 
-You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The DisplayMember and DisplayRecordIndex properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
+You can bind any data source to the digital gauge and map an index of a record to represent the actual value in the gauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~DisplayMember.html) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.DigitalGauge~DisplayRecordIndex.html) properties map the DataColumn and DataRow of the bound data source, respectively, to the Gauge control. Data-bound gauges support high frequency data updates.
 
 {% highlight C# %}
-
 this.digitalGauge1.DataSource = dataTable;
-
-            this.digitalGauge1.DisplayRecordIndex = [Row Index];
-
-            this.digitalGauge1.DisplayMember = [column name];
-
+this.digitalGauge1.DisplayRecordIndex = [Row Index];
+this.digitalGauge1.DisplayMember = [column name];
 {% endhighlight %}
 

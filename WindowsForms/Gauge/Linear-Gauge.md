@@ -27,7 +27,7 @@ documentation: ug
 
 **Getting started**
 
-This section describes how to add `LinearGauge` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [LinearGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -89,7 +89,7 @@ Imports Syncfusion.Windows.Forms.Gauge
 
 {% endtabs %} 
 
-**Step 3** - Create `LinearGauge` control instance and add it to the form.
+**Step 3** - Create [LinearGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -127,64 +127,22 @@ This section illustrates the features of the LinearGauge with images and sample 
 ### LinearGauge frame
 
 
-The frame defines the frame types of linear gauges. Frames can be applied using the FrameType property. The LinearGauge control contains two frame types:
+The frame defines the frame types of linear gauges. Frames can be applied using the [LinearFrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~LinearFrameType.html) property. The LinearGauge control contains two frame types:
 
 * Horizontal
 * Vertical
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-LinearFrameType</td><td>
-Enum</td><td>
-Gets or sets the frame type.</td></tr>
-<tr>
-<td>
-BackgroundGradientStartColor </td><td>
-Color</td><td>
-Gets or sets the gradient start color for the gauge background.</td></tr>
-<tr>
-<td>
-BackgroundGradientEndColor</td><td>
-Color</td><td>
-Gets or sets the gradient end color for the gauge background.</td></tr>
-<tr>
-<td>
-FrameBorderStartColor </td><td>
-Color</td><td>
-Gets or sets the gradient start color for the frame border.</td></tr>
-<tr>
-<td>
-FrameBorderEndColor</td><td>
-Color</td><td>
-Gets or sets the gradient end color for the frame border.</td></tr>
-<tr>
-<td>
-OuterFrameStartColor</td><td>
-Color</td><td>
-Gets or sets the gradient end color for the outer frame.</td></tr>
-<tr>
-<td>
-OuterFrameEndColor</td><td>
-Color</td><td>
-Gets or sets the gradient end color for the outer frame.</td></tr>
-<tr>
-<td>
-GaugeBaseColor</td><td>
-Color</td><td>
-Gets or sets the base line color of the gauge.</td></tr>
-<tr>
-<td>
-ValueIndicatorColor</td><td>
-Color</td><td>
-Gets or sets the value indicator color of the gauge.</td></tr>
-</table>
+The following properties used to customize the appearance of LinearGauge control.
 
+* [LinearFrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~LinearFrameType.html)
+* [BackgroundGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~BackgroundGradientStartColor.html)
+* [BackgroundGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~BackgroundGradientEndColor.html)
+* [InnerFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~InnerFrameGradientStartColor.html)
+* [InnerFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~InnerFrameGradientEndColor.html)
+* [OuterFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~OuterFrameGradientStartColor.html)
+* [OuterFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~OuterFrameGradientEndColor.html)
+* [GaugeBaseColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~GaugeBaseColor.html)
+* [ValueIndicatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~ValueIndicatorColor.html)
 
 ![Horizontal Linear Gauge for Windows Forms](Linear-Gauge_images/Linear-Gauge_img1.png)
 
@@ -216,24 +174,8 @@ Scales are used to control element placement and value ranges.
 
 You can customize scales added to the Linear Gauge by using the properties listed in the following table:
 
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowScaleLabel</td><td>
-Boolean</td><td>
-Gets or sets the scale label visibility.</td></tr>
-<tr>
-<td>
-ScaleLabelColor</td><td>
-Color</td><td>
-Gets or sets the scale label color of the gauge.</td></tr>
-</table>
+[ShowScaleLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~ShowScaleLabel.html)
+[ScaleLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~ScaleLabelColor.html)
 
 #### Ticks
 
@@ -241,44 +183,11 @@ Two types of ticks can be added to the LinearGauge control scale. Major tick mar
 
 The following table lists the properties that can be used to customize the linear tick marks. This is done to represent the scale with meaningful markers and labels.
 
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-MajorTickMarkColor</td><td>
-Color</td><td>
-Gets or sets the color of the major tick marks.</td></tr>
-<tr>
-<td>
-MajorTickMarkHeight</td><td>
-Integer</td><td>
-Gets or sets the height of the major tick marks.</td></tr>
-<tr>
-<td>
-MinorTickMarkColor</td><td>
-Color</td><td>
-Gets or sets the color of the minor tic marks.</td></tr>
-<tr>
-<td>
-MinorTickMarkHeight</td><td>
-Integer</td><td>
-Gets or sets the height of the minor tick marks.</td></tr>
-<tr>
-<td>
-Pointer Placement</td><td>
-Enum</td><td>
-Gets or sets the pointer position
-<ul>
-<li> Near</li>
-<li> Far</li>
-<li> Center</li></ul></td></tr>
-</table>
-
+[MajorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MajorTickMarkColor.html)
+[MajorTicksHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MajorTicksHeight.html)
+[MinorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MinorTickMarkColor.html)
+[MinorTickHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MinorTickHeight.html)
+[PointerPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~PointerPlacement.html)
 
 The following code sample demonstrates how to add major and minor ticks to the linear scale.
 
@@ -361,7 +270,7 @@ this.linearGauge1.PointerPlacement = Placement.Center;
 
 #### Ranges
 
-Ranges are objects that highlight a range of values and can display different ranges in different colors. Ranges can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table:
+[Ranges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~Ranges.html) are objects that highlight a range of values and can display different ranges in different colors. [Ranges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~Ranges.html) can be customized using various attributes such as range placement, height, color of the range, and more. All the available attributes are listed in the following table:
 
 
 <table>
@@ -453,36 +362,7 @@ Me.linearGauge1.Ranges.Add(range1)
 
 #### Scaling divisions
 
-The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the Major Difference and MinorTickCount properties. It also provides support to customize the number of tick lines using the MaximumValue and MinimumValue properties.
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-MinimumValue </td><td>
-Float</td><td>
-Gets or sets the minimum value for the linear scale. Default value is set to 0.</td></tr>
-<tr>
-<td>
-MaximumValue </td><td>
-Float</td><td>
-Gets or sets the maximum value for the linear scale. </td></tr>
-<tr>
-<td>
-MajorDifference</td><td>
-Float</td><td>
-Gets or sets the major difference value.</td></tr>
-<tr>
-<td>
-MinorTickCount</td><td>
-Integer</td><td>
-Gets or sets the minor difference value.</td></tr>
-</table>
+The Gauge control for Windows Forms includes support for customizing the number of major tick lines and minor tick lines using the [MajorDifference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MajorDifference.html) and [MinorTickCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MinorTickCount.html) properties. It also provides support to customize the number of tick lines using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MaximumValue.html) and [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~MinimumValue.html) properties.
 
 {% tabs %}
 
@@ -516,7 +396,7 @@ Me.linearGauge1.MinorTickCount = 1
 
 ## Visual styles
 
-The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the built-in visual styles and color schemes.
+The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~VisualStyle.html) property.
 
 The styles are built-in for all gauges.
 
@@ -529,20 +409,6 @@ The styles are built-in for all gauges.
 * Office2016DarkGray
 * Office2016Black
 * Custom
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-VisualStyle</td><td>
-Enum</td><td>
-Gets or sets the frame type.</td></tr>
-</table>
-
 
 **Black**
 
@@ -752,7 +618,7 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 **Custom**
 
- Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the VisualStyle property as Custom.
+ Linear Gauge also provides an option to end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~VisualStyle.html) property as Custom.
 
  **Steps to customize the theme in design time**
 
@@ -826,30 +692,22 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 ## Data binding
 
-You can bind any data source to the LinearGauge control and map an index of a record to represent the actual value in the linear gauge. The DisplayMember and DisplayRecordIndex properties will map the DataColumn and DataRow of the binding source respectively to the LinearGauge control, which will then support high frequency data updates.
-
+You can bind any data source to the LinearGauge control and map an index of a record to represent the actual value in the linear gauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~DisplayMember.html) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~DisplayRecordIndex.html) properties will map the DataColumn and DataRow of the binding source respectively to the LinearGauge control, which will then support high frequency data updates.
 
 {% highlight C# %}
-
-
-
 this.linearGauge1.DataSource = dataTable;
-
-            this.linearGauge1.DisplayRecordIndex = [Row Index];
-
-            this.linearGauge1.DisplayMember = [column name];
-
-
+this.linearGauge1.DisplayRecordIndex = [Row Index];
+this.linearGauge1.DisplayMember = [column name];
 {% endhighlight %}
 
 ## Custom renderer
 
-The appearance of the Linear Gauge can be customized by using the Interface `ILinearGaugeRenderer`. This interface provides few methods to control painting over the Frame, Needle, Major ticks, Minor ticks, Pointers, Ranges etc.
+The appearance of the Linear Gauge can be customized by using the Interface [ILinearGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer.html). This interface provides few methods to control painting over the [Frame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawFrame.html), [Needle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawLines.html), [Major ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawLines.html), [Minor ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawLines.html), [Pointers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawPointer.html), [Ranges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer~DrawRanges.html) etc.
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in ILinearGaugeRenderer.
-2. Assign instance of your custom renderer to the `Renderer` property of Linear Gauge.
+1. Create a new custom renderer class and implement each of the members defined in [ILinearGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer.html).
+2. Assign instance of your custom renderer to the [Renderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.LinearGauge~Renderer.html) property of Linear Gauge.
 
 Note: By default, Linear Gauge is painted by using its default renderer.
 
@@ -879,7 +737,7 @@ linearGauge1.Renderer = custom
 
 ### How to customize Linear Gauge appearance
 
-You can customize the appearance of the Linear Gauge by using its interface named ILinearGaugeRenderer and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
+You can customize the appearance of the Linear Gauge by using its interface named [ILinearGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.ILinearGaugeRenderer.html) and property named Renderer. The following code example illustrates how to customize the appearance of Linear Gauge, based on user requirement. 
 
 {% tabs %}
 
