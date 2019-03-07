@@ -9,35 +9,24 @@ documentation: ug
 
 # Customization
 
-The look and feel of the TabControlAdv can be customized through various properties of the control. These properties are discussed in below topics.
+The look and feel of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be customized through various properties of the control. These properties are discussed in below topics.
 
 ## Renaming TabItems
 
-TabControlAdv comes with the renaming functionality similar to Microsoft Excel. Users can edit TabControlAdv's text at run-time using the `LabelEdit` property which has to be set to `true`.
-
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-LabelEdit</td><td>
-Specifies whether the text of the tab item is editable. Default value is `false`.</td></tr>
-</table>
+TabControlAdv comes with the renaming functionality similar to Microsoft Excel. Users can edit TabControlAdv's text at run-time using the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~LabelEdit.html) property which has to be set to `true`.
 
 To bring the text of the TabItem to the edit mode, the following can be done.
 
 1. Select the text of the TabItem to be edited and right-click on the tab to bring the text to edit mode. The text can now be edited and it can be saved by pressing the Enter key.
 2. Also, double-clicking on a tab makes the text change to edit mode.
 
-   ![](TabControlAdv_images/TabControlAdv_img1.png)
+   ![Renaming tab item](TabControlAdv_images/TabControlAdv_img1.png)
 
 
 
    After editing the text, to come out of the edit mode, press the Enter key or click the Left Mouse button.
 
-3. Programmatically the `LabelEdit` property can be set as follows.
+3. Programmatically the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~LabelEdit.html) property can be set as follows.
 
 {% tabs %}
 
@@ -63,7 +52,7 @@ Me.tabControlAdv.LabelEdit = True
 
 ## Moving TabItems
 
-The order of the tabs within the TabControlAdv can be changed at design-time and also at run-time by simply dragging and dropping the tabs in the required places. This can be enabled using the `UserMoveTabs` property.
+The order of the tabs within the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be changed at design-time and also at run-time by simply dragging and dropping the tabs in the required places. This can be enabled using the [UserMoveTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~UserMoveTabs.html) property.
 
 {% tabs %}
 
@@ -83,7 +72,7 @@ Me.tabControlAdv1.UserMoveTabs = True
 
 ## Padding
 
-Using the `Padding` property, the space around the text/image of the TabItems can be changed by setting the X-axis and Y-axis values.
+Using the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~Padding.html) property, the space around the text/image of the TabItems can be changed by setting the X-axis and Y-axis values.
 
 Code snippets to set the padding
 
@@ -108,34 +97,17 @@ Me.tabControlAdv1.Padding = New Point(12, 12)
 
 {% endtabs %}
 
-![](TabControlAdv_images/TabControlAdv_img3.jpeg)
-
-
-
+![Padding support](TabControlAdv_images/TabControlAdv_img3.jpeg)
 
 ## UseMnemonic
 
-This property specifies whether the TabControlAdv interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to `false`.
-
-
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-UseMnemonic</td><td>
-Gets/sets the value which determines whether the TabControlAdv should interpret the Ampersand character (&) as an Access key prefix character or not.</td></tr>
-</table>
-
-
+This [UseMnemonic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~UseMnemonic.html) property specifies whether the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) interprets the Ampersand character (&) as an Access key prefix character or not. The default value is set to `false`.
 
 ## TabPages
 
 ### Border settings
 
-The `BorderStyle` property of TabControlAdv can be used to set the border styles for the TabPages.
+The [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~BorderStyle.html) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) can be used to set the border styles for the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html).
 
 The three types of border styles are given below.
 
@@ -143,73 +115,30 @@ The three types of border styles are given below.
 * Fixed 3D
 * None
 
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Gets/sets the border styles for the tab pages. It includes the following styles:FixedSingle,Fixed3D and None</td></tr>
-</table>
-
-![](TabControlAdv_images/TabControlAdv_img6.jpeg)
+![Tab border style](TabControlAdv_images/TabControlAdv_img6.jpeg)
 
 #### FixedSingleBorderColor
 
-The `FixedSingleBorderColor` property is used to set the border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
+The [FixedSingleBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~FixedSingleBorderColor.html) property is used to set the border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.
 
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FixedSingleBorderColor</td><td>
-Gets/sets border color of the TabPage in the TabControlAdv when the BorderStyle is set to FixedSingle.</td></tr>
-</table>
+![Border color customization](TabControlAdv_images/TabControlAdv_img7.jpeg)
 
-
-![](TabControlAdv_images/TabControlAdv_img7.jpeg)
-
-N> The TabControlAdv.ResetFixedSingleBorderColor() method resets the border color of the TabPage to the default value.
+N> The [TabControlAdv.ResetFixedSingleBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ResetFixedSingleBorderColor.html) method resets the border color of the TabPage to the default value.
 
  
 ### Image settings
 
-TabControlAdv now supports animation on TabPages. Animated image in GIF can be inserted in a TabPage. The format supports up to 8 bits per pixel with a palette of up to 256 distinct colors chosen from the 24-bit RGB color space. Both 3D and 2D formats are supported.
+TabControlAdv now supports animation on [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html). Animated image in GIF can be inserted in a TabPage. The format supports up to 8 bits per pixel with a palette of up to 256 distinct colors chosen from the 24-bit RGB color space. Both 3D and 2D formats are supported.
 
 Users can insert graphics or logos with solid areas of color, small animations, low-resolution film clips etc. to make the TabPage more interactive and lively. The size of the image can also be adjusted.
 
 There are two major properties which come into picture:
 
-* Image
-* Image size
+* [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv~ImageSize.html)
+* [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv~ImageSize.html)
 
-![](TabControlAdv_images/TabControlAdv_img8.jpeg)
+![Image support](TabControlAdv_images/TabControlAdv_img8.jpeg)
 
-
-The following table lists the properties of the GIF image:
-
-<table>
-<tr>
-<td>
- Property</td><td>
-Description</td><td>
-Type of property</td></tr>
-<tr>
-<td>
-Image</td><td>
-Allows the user to insert the required image using the location where the image is saved.</td><td>
-Image</td></tr>
-<tr>
-<td>
-ImageSize</td><td>
-Allows the users to modify the size of the image.</td><td>
-Size</td></tr>
-</table>
 
 #### Inserting GIF image
 
@@ -246,7 +175,7 @@ N> Only when the ImageIndex property is -1, image from the Image property will b
 
 ### Prevent moving a specific tab in TabControlAdv 
 
-Now, the TabControlAdv allows to prevent a specific tab from being moved on TabControlAdv. This is achieved by using the property named **TabMoving**.
+Now, the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) allows to prevent a specific tab from being moved on [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html). This is achieved by using the property named [TabMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabMoving_EV.html).
 
 {% tabs %}
 

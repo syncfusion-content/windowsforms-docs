@@ -9,123 +9,13 @@ documentation: ug
 
 # Events
 
-The list of events and a detailed explanation about each of them is given in the following sections.
-
-<table>
-<tr>
-<th>
-TabControlAdv events</th><th>
-Description</th></tr>
-<tr>
-<td>
-AfterEdit event</td><td>
-This event occurs after text editing is complete. It is fired even if no changes are made.</td></tr>
-<tr>
-<td>
-BeforeEdit event</td><td>
-This event occurs when the text enters into Edit mode.</td></tr>
-<tr>
-<td>
-BackgroundImageChanged event</td><td>
-This event is fired when the value of the BackgroundImage property is changed.</td></tr>
-<tr>
-<td>
-BackgroundImageLayoutChanged event</td><td>
-This event is fired when the value of the BackgroundImageLayout property is changed.</td></tr>
-<tr>
-<td>
-BackColorChanged event</td><td>
-This event is fired when the value of the BackColor property is changed.</td></tr>
-<tr>
-<td>
-ControlAdded event</td><td>
-This event occurs when a new control is added to the TabControlAdv.</td></tr>
-<tr>
-<td>
-ControlRemoved event</td><td>
-This event occurs when a new control is removed from TabControlAdv.</td></tr>
-<tr>
-<td>
-DrawItem event</td><td>
-This event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.</td></tr>
-<tr>
-<td>
-ForeColorChanged event</td><td>
-This event is raised when the value of the ForeColor property is changed.</td></tr>
-<tr>
-<td>
-LabelEditChanged event</td><td>
-This event is triggered when the LabelEdit property is changed.</td></tr>
-<tr>
-<td>
-LabelEditTextChanged event</td><td>
-This event is triggered when the original text of the tab is changed.</td></tr>
-<tr>
-<td>
-PaddingChanged event</td><td>
-This event occurs when the Padding property is changed.</td></tr>
-<tr>
-<td>
-Paint event</td><td>
-This event occurs when a TabControlAdv needs re-painting.</td></tr>
-<tr>
-<td>
-PreviewKeyDown event</td><td>
-This event occurs before the KeyDown event when a key is pressed, while focus is on the TabControlAdv.</td></tr>
-<tr>
-<td>
-RegionChanged event</td><td>
-This event is raised when the value of the Region property is changed.</td></tr>
-<tr>
-<td>
-TabPrimitiveClick event</td><td>
-This event occurs before the NavigationButton click.</td></tr>
-<tr>
-<td>
-SelectedIndexChanging event</td><td>
-This event occurs when the SelectedIndex of the TabControlAdv is changed.</td></tr>
-<tr>
-<td>
-SelectedIndexChanged event</td><td>
-This event occurs when the SelectedIndex of the TabControlAdv is changed.</td></tr>
-<tr>
-<td>
-TabsOrderChanged event</td><td>
-This event occurs when the order of the tabs is changed.</td></tr>
-<tr>
-<td>
-TextChanged event</td><td>
-This event occurs when value of the Text property is changed.</td></tr>
-<tr>
-<td>
-TabPageAdv.Closed</td><td>
-Handled when the TabPage is closed.</td></tr>
-<tr>
-<td>
-TabPageAdv.Closing</td><td>
-Handled when the TabPage is closing.</td></tr>
-</table>
-
-
 ## AfterEdit event
 
-This event occurs after text editing is completed. It is fired even if no changes are made.
+This [AfterEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~AfterEdit_EV.html) event occurs after text editing is completed. It is fired even if no changes are made.
 
 ### Event data
 
-The Edit Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following EditEventArgs property provides information specific to this event.
-
-
-<table>
-<tr>
-<th>
-Member</th><th>
-Description</th></tr>
-<tr>
-<td>
-EditText</td><td>
-Gets the edited text.</td></tr>
-</table>
+The Edit Event Handler receives an argument of type [EditEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.EditEventArgs.html) containing data related to this event. The [EditEventArgs property](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.EditEventArgs_properties.html) provides information specific to this event.
 
 {% tabs %}
 
@@ -169,11 +59,11 @@ End Sub
 
 ## BeforeEdit event
 
-This event occurs when the text enters into Edit mode.
+This [BeforeEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~BeforeEdit_EV.html) event occurs when the text enters into Edit mode.
 
 ### Event data
 
-This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
+This Event Handler receives an argument of type [EditEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.EditEventArgs.htmls) containing data related to this event. The [EditEventArgs property](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.EditEventArgs_properties.html) provides information specific to this event.
 
 
 <table>
@@ -229,7 +119,7 @@ End Sub
 
 ## BackgroundImageChanged event
 
-This event is fired when the value of the `BackgroundImage` property is changed in the TabControlAdv.
+This [BackgroundImageChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagechanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImage` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -265,7 +155,7 @@ End Sub
 
 ## BackgroundImageLayoutChanged event
 
-This event is fired when the value of the `BackgroundImageLayout` property is changed in the TabControlAdv.
+This [BackgroundImageLayoutChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayoutchanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImageLayout` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -299,7 +189,7 @@ End Sub
 
 ## BackColorChanged event
 
-This event is fired when the value of the `BackColor` property is changed in the TabControlAdv.
+This [BackColorChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?view=netframework-4.7.2) event is fired when the value of the `BackColor` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -358,11 +248,11 @@ End Sub
 
 ## ControlAdded event
 
-This event occurs when a new control is added to the TabControlAdv.
+This [ControlAdded](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controladded?view=netframework-4.7.2) event occurs when a new control is added to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type `ControlEventArgs` containing data related to this event. The following `ControlEventArgs` property provides information specific to this event.
+This Event Handler receives an argument of type [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
 
 
 <table>
@@ -417,11 +307,11 @@ End Sub
 
 ## ControlRemoved event
 
-This event occurs when a new control is removed from this TabControlAdv.
+This [ControlRemoved](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controlremoved?view=netframework-4.7.2) event occurs when a new control is removed from this [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type `ControlEventArgs` containing data related to this event. The following `ControlEventArgs` property provides information specific to this event.
+This Event Handler receives an argument of type [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
 
 <table>
 <tr>
@@ -434,7 +324,7 @@ Control</td><td>
 Gets the control object used by this event.</td></tr>
 </table>
 
-N> The TabControlAdv.RemoveAll() method removes all the TabPages and additional controls from the TabControlAdv.
+N> The [TabControlAdv.RemoveAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~RemoveAll.html) method removes all the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) and additional controls from the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -477,56 +367,13 @@ End Sub
 
 ## DrawItem event
 
-This event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.
+This [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~DrawItem_EV.html) event is triggered whenever a particular item or area needs to be painted. Below is an example which draws the background and the interior by handling this event.
 
 ### Event data
 
-This Event Handler receives an argument of type `DrawTabEventArgs` containing data related to this event. The following `DrawTabEventArgs` properties provide information specific to this event.
+This Event Handler receives an argument of type [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) containing data related to this event. The [DrawTabEventArgs properties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawTabEventArgs_properties.html) provide information specific to this event.
 
-<table>
-<tr>
-<th>
-Members</th><th>
-Description</th></tr>
-<tr>
-<td>
-BackColor</td><td>
-Gets or sets the background color.</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Returns the rectangle that represents the bounds of the item that is being drawn.</td></tr>
-<tr>
-<td>
-BoundsInterior</td><td>
-Represents the interior of the tab minus the borders.</td></tr>
-<tr>
-<td>
-Font</td><td>
-Gets/sets the font assigned to the tab that is being drawn.</td></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Gets/sets the color of the text.</td></tr>
-<tr>
-<td>
-Graphics</td><td>
-Returns the graphics surface on which the item has to be drawn.</td></tr>
-<tr>
-<td>
-Index</td><td>
-Returns the index value of the item that is being drawn.</td></tr>
-<tr>
-<td>
-State</td><td>
-Gets/sets the state of the item that is being drawn.</td></tr>
-<tr>
-<td>
-TextBrush</td><td>
-Gets/sets the text brush to draw text in the tabs.</td></tr>
-</table>
-
-N> The TabControlAdv.OnDrawItem() method raises the DrawItem event.
+N> The [TabControlAdv.OnDrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~OnDrawItem.html) method raises the DrawItem event.
 
 {% tabs %}
 
@@ -594,7 +441,7 @@ End Sub
 
 ## ForeColorChanged event
 
-This event is raised when the value of the `ForeColor` property is changed on the TabControlAdv.
+This [ForeColorChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolorchanged?view=netframework-4.7.2) event is raised when the value of the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property is changed on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -630,7 +477,7 @@ End Sub
 
 ## LabelEditChanged event
 
-This event is triggered when the `LabelEdit` property is changed in the TabControlAdv.
+This [LabelEditChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~LabelEditChanged_EV.html) event is triggered when the [LabelEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~LabelEdit.html) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -684,7 +531,7 @@ End Sub
 
 ## LabelEditTextChanged event
 
-This event is triggered when the original text of the Tab is changed.
+This [LabelEditTextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~LabelEditTextChanged_EV.html) event is triggered when the original text of the Tab is changed.
 
 {% tabs %}
 
@@ -761,7 +608,7 @@ End Sub
 
 ## PaddingChanged event
 
-This event occurs when the `Padding` property is changed in the TabControlAdv.
+This [PaddingChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paddingchanged?view=netframework-4.7.2) event occurs when the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~Padding.html) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -798,27 +645,11 @@ End Sub
 
 ## Paint event
 
-This event occurs when a TabControlAdv needs re-painting.
+This [Paint](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paint?view=netframework-4.7.2) event occurs when a TabControlAdv needs re-painting.
 
 ### Event data
 
-This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` property provides information specific to this event.
-
-
-<table>
-<tr>
-<th>
-Members</th><th>
-Description</th></tr>
-<tr>
-<td>
-ClipRectangle</td><td>
-Gets the rectangle in which to paint.</td></tr>
-<tr>
-<td>
-Graphics</td><td>
-Gets the graphics used to paint.</td></tr>
-</table>
+This Event Handler receives an argument of type [PaintEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2) containing data related to this event. The [PaintEventArgs property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2#properties) provides information specific to this event.
 
 {% tabs %}
 
@@ -862,50 +693,11 @@ End Sub
 
 ## PreviewKeyDown event
 
-This event occurs before the `KeyDown` event when a key is pressed, while focus is on the TabControlAdv.
+This [PreviewKeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.previewkeydown?view=netframework-4.7.2) event occurs before the [KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=netframework-4.7.2) event when a key is pressed, while focus is on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type `EditEventArgs` containing data related to this event. The following `EditEventArgs` properties provide information specific to this event.
-
-<table>
-<tr>
-<th>
-Members</th><th>
-Description</th></tr>
-<tr>
-<td>
-Alt</td><td>
-Gets a value indicating whether ALT key was pressed.</td></tr>
-<tr>
-<td>
-Control</td><td>
-Gets a value indicating whether CTRL key was pressed.</td></tr>
-<tr>
-<td>
-IsInputKey</td><td>
-Gets/sets a value indicating whether a key is a regular input key.</td></tr>
-<tr>
-<td>
-KeyCode</td><td>
-Gets the keyboard code for a System.Windows.Forms.Controls.KeyUp / System.Windows.Forms.Controls.KeyDown event.</td></tr>
-<tr>
-<td>
-KeyData</td><td>
-Gets the key data code for a System.Windows.Forms.Controls.KeyUp / System.Windows.Forms.Controls.KeyDown event.</td></tr>
-<tr>
-<td>
-KeyValue</td><td>
-Gets the keyboard value for a System.Windows.Forms.Controls.KeyUp / System.Windows.Forms.Controls.KeyDown event.</td></tr>
-<tr>
-<td>
-Modifiers</td><td>
-Gets the modifiers flag for a System.Windows.Forms.Controls.KeyUp / System.Windows.Forms.Controls.KeyDown event.</td></tr>
-<tr>
-<td>
-Shift</td><td>
-Gets a value indicating whether SHIFT key was pressed.</td></tr>
-</table>
+This Event Handler receives an argument of type [PreviewKeyDownEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2) containing data related to this event. The following [PreviewKeyDownEventArgs properties](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2#properties) provide information specific to this event.
 
 {% tabs %}
 
@@ -949,7 +741,7 @@ End Sub
 
 ## RegionChanged event
 
-This event is raised when the value of the `Region` property is changed in the TabControlAdv.
+This [RegionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.regionchanged?view=netframework-4.7.2) event is raised when the value of the [Region](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.region?view=netframework-4.7.2#System_Windows_Forms_Control_Region) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -986,27 +778,11 @@ End Sub
 
 ## TabPrimitiveClick event
 
-This event occurs before the `NavigationButton` click.
+This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPrimitiveClick_EV.html) event occurs before the `NavigationButton` click.
 
 ### Event data
 
-This Event Handler receives an argument of type `TabPrimitiveClickEventArgs` containing data related to this event. The following `TabPrimitiveClickEventArgs` properties provide information specific to this event.
-
-
-<table>
-<tr>
-<td>
-Members</td><td>
-Description</td></tr>
-<tr>
-<td>
-Cancel</td><td>
-Gets/sets a value indicating whether the event should be canceled.</td></tr>
-<tr>
-<td>
-TabPrimitive</td><td>
-Gets the primitive that gets clicked.</td></tr>
-</table>
+This Event Handler receives an argument of type [TabPrimitiveClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitiveClickEventArgs.html) containing data related to this event. The following [TabPrimitiveClickEventArgs properties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitiveClickEventArgs_properties.html) provide information specific to this event.
 
 {% tabs %}
 
@@ -1070,7 +846,7 @@ End Sub
 ## SelectedIndexChanging event
 
 
-SelectedIndexChanging event occurs while changing the SelectedIndex or SelectedTab of the TabControlAdv. Tab Selection can be restricted by setting args.Cancel to `true`.
+[SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedIndexChanging_EV.html) event occurs while changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedIndex.html) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedTab.html) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html). Tab Selection can be restricted by setting args.Cancel to `true`.
 
 {% tabs %}
 
@@ -1110,7 +886,7 @@ End Sub
 
 ## SelectedIndexChanged event
 
-SelectedIndexChanged event occurs when the SelectedIndex or SelectedTab of the TabControlAdv is changed. 
+[SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedIndexChanged_EV.html) event occurs when the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedIndex.html) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SelectedTab.html) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) is changed. 
 
 {% tabs %}
 
@@ -1160,7 +936,7 @@ End Sub
 
 ## TabsOrderChanged event
 
-This event occurs when the order of the tabs are changed in the TabControlAdv.
+This [TabsOrderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabsOrderChanged_EV.html) event occurs when the order of the tabs are changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -1220,11 +996,11 @@ End Sub
 
 {% endtabs %}
 
-N> The TabControlAdv.OnTabsOrderChanged() method raises the OnTabsOrderChanged event.
+N> The [TabControlAdv.OnTabsOrderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~OnTabsOrderChanged.html) method raises the OnTabsOrderChanged event.
 
 ## TextChanged event
 
-This event occurs when the value of the `Text` property is changed.
+This [TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.textchanged?view=netframework-4.7.2) event occurs when the value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~Text.html) property is changed.
 
 {% tabs %}
 
@@ -1306,7 +1082,7 @@ End Sub
 
 ## Closing event
 
-The TabPageAdv.Closing event is raised when a Tab page is closed.
+The [Closing](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.closing?view=netframework-4.7.2) event is raised when a Tab page is closed.
 
 {% tabs %}
 
