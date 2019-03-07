@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-create-MultilineText-in-TabPages-ToolTipTex | WindowsForms | Syncfusion
+title: MultilineText in tab page tooltip| WindowsForms | Syncfusion
 description: how to create multilinetext in tabpages tooltiptext
 platform: WindowsForms
 control: TabsPackage
@@ -9,7 +9,7 @@ documentation: ug
 
 # How to create MultilineText in TabPage's ToolTipText?
 
-Setting the `ShowToolTipText` property of TabControlAdv to `true` will wrap the text when using the new line character (\n) in the ToolTipText property of TabPageAdv. The new line character (\n) is not supported at design-time.
+Setting the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ShowToolTips.html) property of [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) to `true` will wrap the text when using the new line character (\n) in the [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv~ToolTipText.html) property of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html). The new line character (\n) is not supported at design-time.
 
 {% tabs %}
 
