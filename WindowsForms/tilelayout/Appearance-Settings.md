@@ -11,7 +11,7 @@ documentation: ug
 
 ## SetParentFormFlat
 
-This property gives flat look for the the parent Form.
+This [SetParentFormFlat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout~SetParentFormFlat.html) property gives flat look for the the parent Form.
 
 {% tabs %}
 
@@ -35,12 +35,12 @@ Me.tileLayout1.SetParentFormFlat = True
 
 {% endtabs %}
 
-![](Appearance_images/ParentFormFlat.png)
+![Tile layout customization](Appearance_images/ParentFormFlat.png)
 
 
 ## ShowGroupTitle
 
-Shows the Group Title while enabling this property.
+Shows the Group Title while enabling this [ShowGroupTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout~ShowGroupTitle.html) property.
 
 {% tabs %}
 
@@ -62,12 +62,12 @@ this.tileLayout1.ShowGroupTitle = true;
 
 {% endtabs %}
 
-![](Appearance_images/LayoutTitle.png)
+![Tile layout group title](Appearance_images/LayoutTitle.png)
 
 
-# IgnoreThemeBackground
+## IgnoreThemeBackground
 
-`IgnoreThemeBackground` indicates whether the control will ignore the theme's background color and draw the BackColor instead. BackColor of the TileLayout will only be applied if the IgnoreThemeBackground property is set to `true`.
+[IgnoreThemeBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Renderers.RendererInfo~IgnoreThemeBackground.html) indicates whether the control will ignore the theme's background color and draw the BackColor instead. BackColor of the [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) will only be applied if the [IgnoreThemeBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Renderers.RendererInfo~IgnoreThemeBackground.html) property is set to `true`.
 
 
 {% tabs %}
@@ -90,4 +90,4 @@ this.tileLayout1.ShowGroupTitle = true;
 
 {% endtabs %}
 
-![](Appearance_images/ThemedBackground.png)
+![TileLayout back color customization](Appearance_images/ThemedBackground.png)
