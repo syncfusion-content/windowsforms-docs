@@ -9,7 +9,7 @@ documentation: ug
 
 # Hosting ImageStreamer as tile items
 
-In TileLayout, ImageStreamer control is used as an Item in LayoutGroup. To add the Images into the ImageStreamer, ImagesCollection property is used.
+In [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html), [ImageStreamer control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html) is used as an Item in [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.LayoutGroup.html). To add the Images into the [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html), [ImagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageCollection.html) property is used.
 
 ![Bitmap collection editor to display items in image streamer](HostingImageStreamerasItems_images/CollectionEditorWindow.png)
 
@@ -18,7 +18,7 @@ In TileLayout, ImageStreamer control is used as an Item in LayoutGroup. To add t
 
 ## InternalBackColor
 
-Sets the BackColor of the ImageStreamer
+Sets the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~BackColor.html) of the [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html).
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ this.imageStreamer1.InternalBackColor = System.Drawing.Color.Pink;
 
 ## SliderSpeed
 
-Specifies the speed of the Slider in the ImageStreamer.
+You can specifies the speed of the Slider using [SliderSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~SliderSpeed.html) properties of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html).
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.imageStreamer1.SliderSpeed = 100;
 
 ## ShowNavigator
 
-Navigator which is used to navigate the slide show direction is shown when the `ShowNavigator` property is `true`. To enable this property SlideShow must be `true`.
+Navigator which is used to navigate the slide show direction is shown when the [ShowNavigator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~ShowNavigator.html) property is `true`. To enable this property [SlideShow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~SlideShow.html) must be `true`.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ this.imageStreamer1.SlideShow = true;
 
 ## SlideShow
 
-This property shows all the Images which is loaded in the ImageStreamer.
+This [SlideShow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~SlideShow.html) property shows all the Images which is loaded in the [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html).
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ Me.imageStreamer1.SlideShow = true
 
 ## ImageStreamDirection
 
-This property gives the ImageStream direction in the SlideShow.
+This [ImageStreamDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~ImageStreamDirection.html) property gives the ImageStream direction in the SlideShow.
 
 * LeftToRight
 * RightToLeft
@@ -163,7 +163,7 @@ Me.imageStreamer1.ImageStreamDirection = Syncfusion.Windows.Forms.Tools.ImageStr
 
 ## ImageStreamerType
 
-ImageStreamer has two types.
+[ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html) has two types.
 
 * Normal
 * DoubleHorizontal
