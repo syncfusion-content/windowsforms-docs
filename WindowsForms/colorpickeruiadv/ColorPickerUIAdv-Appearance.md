@@ -8,32 +8,7 @@ documentation: ug
 ---
 # ColorPickerUIAdv Appearance
 
-## Border Styles
 
-Border for ColorPickerUIAdv control can be Fixed Single, Fixed3D or None, which is set using BorderStyle property. By default the border style is None.
-
-{% tabs %}
-{% highlight c# %}
-
-this.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-
-{% endhighlight  %}
-
-{% highlight vb %}
-
-Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-
-{% endhighlight  %}
-{% endtabs %}
-
-![](ColorPickerUIAdv_Images/Overview_img270.jpeg)
-
-{% seealso %}
-
-[Style Settings](#style-settings)
-
-{% endseealso %}
- 
 ## Style Settings
 
 ### Visual Style
@@ -67,7 +42,7 @@ Me.colorPickerUIAdv1.Style = Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.vis
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/ColorPickerStyle.jpeg)
+![Windows forms ColorPickerUIAdv visualstyle](ColorPickerUIAdv_Images/ColorPickerStyle.jpeg)
 
 ### Office2007 Color Schemes
 
@@ -108,11 +83,11 @@ Private colorPickerUIAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007T
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img271.jpeg) 
+![Windows forms ColorPickerUIAdv applying Office2007Theme](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007theme.jpeg) 
 
 The Office2007 Visual Styles can be turned off by setting the UseOffice2007Style property to false.
 
-![](ColorPickerUIAdv_Images/Overview_img272.jpeg)
+![Windows forms ColorPickerUIAdv sets Office2007Style property is false](ColorPickerUIAdv_Images/ColorPickerUIAdv_office2007visualstyle.jpeg)
 
 ### Custom Colors
 
@@ -134,4 +109,41 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerUIAdv_Images/Overview_img273.jpeg) 
+![Windows forms ColorPickerUIAdv applying custom colors](ColorPickerUIAdv_Images/ColorPickerUIAdv_customcolors.jpeg) 
+
+
+## Border Settings
+
+### Border Styles
+
+Border for ColorPickerUIAdv control can be Fixed Single, Fixed3D or None, which is set using BorderStyle property. By default the border style is None.
+
+{% tabs %}
+{% highlight c# %}
+
+this.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
+{% endhighlight  %}
+
+{% highlight vb %}
+
+Me.colorPickerUIAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Windows forms ColorPickerUIAdv sets borderstyle](ColorPickerUIAdv_Images/ColorPickerUIAdv_borderstyles.jpeg)
+
+### BorderOffset
+
+The below property is used to change the border height.
+
+<table>
+<tr>
+<th>ColorPickerUIAdv Property</th>
+<th>Description</th></tr>
+<tr>
+<td>BorderOffset</td>
+<td>Set the border height for ColorPickerUIAdv control. The default value is 3.</td>
+</tr>
+</table>
