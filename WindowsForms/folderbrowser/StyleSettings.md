@@ -9,36 +9,7 @@ documentation: ug
 
 # Style settings
 
-The style settings that are available for the FolderBrowser Dialog are given below.
-
-
-<table>
-<tr>
-<th>
-FolderBrowser property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Style</td><td>
-Specifies the options for the FolderBrowser Dialog.The options included are as follows.
-RestrictToFilesystem,
-RestrictToSubfolders,
-RestrictToDomain,
-BrowseForComputer,
-BrowseForEverything,
-BrowseForPrinter,
-NewDialogStyle,
-AllowUrls,
-ShowAdministrativeShares,
-ShowShares,
-ShowTextBox,
-StatusText,
-UAHint and
-Validate.</td></tr>
-</table>
-
-
-The various options of the Style property are described below.
+The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~Style.html) property are described below.
 
 * RestrictToFilesystem - Restricts selection to file system directories.
 * RestrictToSubfolders - Returns only file system ancestors.
@@ -77,7 +48,7 @@ Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextB
 
 {% endtabs %}
 
-![](Overview_images/Overview_img411.jpeg) 
+![Style](Overview_images/Overview_img411.jpeg) 
 
 
 

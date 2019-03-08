@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the appearance of the diagonal columns? | WindowsForms | Syncfusion
+title: Customize the appearance of diagonal columns | WindowsForms | Syncfusion
 description: how to customize the appearance of the diagonal columns?
 platform: WindowsForms
 control: CalendarDateTime
@@ -79,13 +79,13 @@ End Sub
 
 {% endtabs %}
 
-![](FAQ_images/Overview_img177.jpeg) 
+![Appearance of the diagonal columns](FAQ_images/Overview_img177.jpeg) 
 
 
 
-Setting Icons for the Data Cells
+**Setting Icons for the Data Cells**
 
-Using DateCellQueryInfo event, we can add icons to the data cells.
+Using [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateCellQueryInfo_EV.html) event, we can add icons to the data cells.
 
 {% tabs %}
 
@@ -142,4 +142,4 @@ End Sub
 
 {% endtabs %}
 
-![](FAQ_images/Overview_img178.jpeg) 
+![Setting Icons for the Data Cells](FAQ_images/Overview_img178.jpeg) 

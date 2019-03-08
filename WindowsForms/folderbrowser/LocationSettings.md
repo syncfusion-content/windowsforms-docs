@@ -13,70 +13,12 @@ This section deals with the location settings of the FolderBrowser control.
 
 The FolderBrowser allows the user to provide the location from which browsing should start. It also provides various options from which the root folder for browsing can be selected. The following properties illustrate this.
 
-<table>
-<tr>
-<th>
-FolderBrowser properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-StartLocation</td><td>
-Specifies the location of the root folder from which to start browsing. It is the functional equivalent of setting the PIDL value.
-Desktop,
-Internet,
-Programs,
-Controls,
-Printers,
-Personal,
-Favorites,
-Startup,
-Recent,
-SendTo,
-BitBucket,
-StartMenu,
-MyDocuments,
-MyMusic,
-MyVideo,
-DesktopDirectory,
-MyComputer,
-NetworkNeighborhood,
-NetHood,
-Fonts,
-Templates,
-MyPictures,
-CommonDocuments,
-CommonAdminTools,
-AdminTools,
-NetAndDialUpConnections,
-CommonMusic,
-CommonPictures,
-CommonVideo,
-Resources,
-ResourcesLocalized,
-CommonOhmLinks,
-CDBurnArea,
-ComputersNearMe,
-CustomStartLocation,
-FlagPerUserInit,
-FlagNoAlias,
-FlagDon'tVerify,
-FlagCreate and
-FlagMask.</td></tr>
-<tr>
-<td>
-CustomStartLocation</td><td>
-Gets/sets custom start location for showing the dialog.</td></tr>
-<tr>
-<td>
-SelectLocation</td><td>
-Gets/sets the selected location for showing the dialog.</td></tr>
-<tr>
-<td>
-DirectoryPath</td><td>
-Retrieves the location of the selected folder.</td></tr>
-</table>
+* [StartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~StartLocation.html)
+* [CustomStartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~CustomStartLocation.html)
+* [SelectLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~SelectLocation.html)
+* [DirectoryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~DirectoryPath.html)
 
-N> For the SelectLocation property to take effect, the StartLocation property must be set to 'CustomStartLocation'.
+N> For the [SelectLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~SelectLocation.html) property to take effect, the [StartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~StartLocation.html) property must be set to [CustomStartLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~CustomStartLocation.html).
 
 {% tabs %}
 
@@ -117,7 +59,7 @@ Me.folderBrowser1.SelectLocation = "C:\\Program Files\\Syncfusion\\Essential Stu
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img410.jpeg) 
+ ![Location settings](Overview_images/Overview_img410.jpeg) 
  
  
 A Sample which demonstrates the Location Settings of FolderBrowser is available in the below sample installation path.
