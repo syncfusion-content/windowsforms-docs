@@ -469,7 +469,7 @@ Me.monthCalendarAdv1.TodayFontColor = System.Drawing.Color.Crimson
 
 The today's date for the below calendar image is "eighteenth".
 
-![Today's date font color](CalendarDateTime_images/Overview_img154.jpeg)
+![Today date font color](CalendarDateTime_images/Overview_img154.jpeg)
 
 ## Text settings
 
