@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance-and-Structure-of-the-Clock-Control | WindowsForms | Syncfusion
+title: Clock control appearance | WindowsForms | Syncfusion
 description: appearance and structure of the clock control
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
@@ -11,11 +11,11 @@ documentation: ug
 
 ## Color setting
 
-Clock control allows you to customize its gradient back color, hands color, minute line color, and border color.
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control allows you to customize its gradient back color, hands color, minute line color, and border color.
 
 ### Customizing color to the Clock
 
-Clock control has individual property to set color for gradient back color, hands color, minutes color, and border color.
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control has individual property to set color for [gradient back color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~StartGradientBackColor.html), [hour hands color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~HourHandColor.html), [minutes color](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~MinuteHandColor.html), and [border color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~BorderColor.html).
 
 {% tabs %}
 
@@ -57,12 +57,12 @@ Me.clock1.StartGradientBackColor
 
 {% endtabs %}
 
-![](Overview_images/Overview_img95.png) 
+![Customizing color to the Clock](Overview_images/Overview_img95.png) 
 
 
 ## Appearance setting
 
-Clock control allows you to customize the thickness of the hands and minute line. It also allows you to enable or disable the AM/PM, borders, minute, and second hand. The Clock control gives a transparent appearance.
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control allows you to customize the thickness of the hand and minute line. It also allows you to enable or disable the AM/PM, borders, minute, and second hand. The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control gives a transparent appearance.
 
 ### Customization of hands thickness
 
@@ -96,13 +96,13 @@ Me.clock1.MinuteThickness = 4
 
 {% endtabs %}
 
-![](Overview_images/Overview_img96.png) 
+![Customization of hands thickness](Overview_images/Overview_img96.png) 
 
 
 
 ### Enable and disable properties
 
-Clock control allows you to enable or disable AM/PM, second hand, minute line, and border.
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control allows you to enable or disable AM/PM, second hand, minute line, and border.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ Me.clock1.ShowSecondHand = False
 
 {% endtabs %}
 
-![](Overview_images/Overview_img97.png) 
+![Enable and disable properties](Overview_images/Overview_img97.png) 
 
 ## Transparent support
 
@@ -154,25 +154,13 @@ Me.clock1.IsTransparent = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img98.png)
+![Transparent support](Overview_images/Overview_img98.png)
 
 
 
 ### How to show a fixed time in the Clock control
 
-The Clock control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property StopTimer can be used. Then, using the Clock control’s Now property, the desired time can be displayed or the default time will be displayed.
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-StopTimer</td><td>
-Gets or sets the value to freeze or unfreeze time in the clock.</td></tr>
-</table>
+The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control usually displays the current time on the machine where it is hosted. To freeze the clock to display a fixed time, the Boolean property [StopTimer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~StopTimer.html) can be used. Then, using the Clock control’s [Now](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~Now.html) property, the desired time can be displayed or the default time will be displayed.
 
 
 {% tabs %}

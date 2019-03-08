@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  GettingStarted | Windows Forms | Syncfusion
-description: GettingStarted of PopupControlContainer control
+title:  Getting Started | Windows Forms | Syncfusion
+description: This section describes how to add popup conrol container added into application and its basic features.
 platform: WindowsForms
 control: PopupControlContainer
 documentation: ug
@@ -9,173 +9,190 @@ documentation: ug
 
 # Getting Started
 
->**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
+## Assembly deployment
 
-This section provides a quick overview for working with the **PopupControlContainer** control in a WinForms application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#popupcontrolcontainer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-## Dependent Assemblies
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-**Syncfusion.Shared.Base** needs to be added as reference to use the control in an application.
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-## Adding PopupControlContainer through designer
+### Create a simple application with TrackBarEx
 
-The PopupControlContainer control can be added through designer by following the below steps.
+You can create a Windows Forms application with [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) using the following steps:
 
-1. Drag and drop the PopupControlContainer control from the toolbox (under the section "Syncfusion Windows **Visual Studio Version** Toolbox **Essential Studio Version**") into the designer page.
+### Create a project
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl.png)
+Create a new Windows Forms project in Visual Studio to display the [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) control.
 
-2. Now the PopupControlContainer control will be successfully added into the application along with the required dependent assemblies.
+## Add control through designer
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl1.png)
+The PopupControlContainer control can be added through designer by following the below steps:
 
-3. We can add child controls like Button, Label, TextBox, ColorPicker, etc... to the PopupControlContainer. In this illustration, we have used Button as child control.
+**1.** Drag the PopupControlContainer control from the toolbox to designer page. The following assembly references are added automatically:
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl2.png)
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Licensing.dll
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl3.png)
+![PopupControlContainer added via designer](GettingStarted_Images/PopupControl.png)
 
-4. Once child control is added, we can associate it as a popup for other controls like RichTextBox, Label, Button, etc... In this illustration, we have used RichTextBox as parent control for mapping the pop-up container. 
+**2.** Add the child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. The following screenshot illustrates adding button as child control.
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
+![Adding button to PopupControlContainer](GettingStarted_Images/PopupControl3.png)
 
-5. Associate the RichTextBox instance in the **Properties** panel of PopupControlContainer under **ParentControl**.
+**3.** After the child control has been added, associate it as a pop-up for other controls like RichTextBox, label, button, etc. The following screenshot illustrates adding RichTextBox as parent control for mapping the pop-up container.
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl5.png)
+![Adding rich text box control to the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl6.png)
+**4.** Associate the [RichTextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ParentControl.html).
 
-6. To display the Popup at a desired location, handle the [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) event of RichTextBox and call [`ShowPopup()`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ShowPopup.html) method of PopupControlContainer. The appropriate code to do the same is explained in the immediate section. 
+![Selecting properties of PopupControlContainer](GettingStarted_Images/PopupControl5.png)
 
-## Adding PopupControlContainer through code
+![Setting rich text box control as parent of PopupControlContainer](GettingStarted_Images/PopupControl6.png)
 
-The PopupControlContainer control can be added through code by following the below steps.
+**5.** Handle the [Click event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ShowPopup.html) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
 
-1. Add the following dependency assembly references to the project.
+## Add control manually in code
 
-   * Syncfusion.Shared.Base.dll
-   * Syncfusion.Licensing.dll
+To add the control manually in C#, follow the given steps:
 
-   >**NOTE**     
-   You can get these assemblies by browsing to the default assembly location.
-{System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
+**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project: 
 
-2. The below code snippets adds a PopupControlContainer control to the application.
-
-   {% tabs %}
-   {% highlight C# %}
-
-   //Declaration 
-   private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
-   private System.Windows.Forms.Button button1;
-   private System.Windows.Forms.RichTextBox richTextBox1;
-
-   //Initializing 
-   this.popupControlContainer1 = new Syncfusion.Windows.Forms.PopupControlContainer();
-   this.button1 = new System.Windows.Forms.Button();
-   this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-
-   // popupControlContainer1
-   this.popupControlContainer1.Controls.Add(this.button1);
-   this.popupControlContainer1.Location = new System.Drawing.Point(33, 58);
-   this.popupControlContainer1.Name = "popupControlContainer2";
-   this.popupControlContainer1.ParentControl = this.richTextBox1;
-   this.popupControlContainer1.Size = new System.Drawing.Size(200, 100);
-
-   // button1
-   this.button1.Location = new System.Drawing.Point(13, 29);
-   this.button1.Name = "button1";
-   this.button1.Size = new System.Drawing.Size(174, 35);
-   this.button1.Text = "PopupControlContainer";
-
-   // richTextBox1
-   this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-   this.richTextBox1.Name = "richTextBox1";
-   this.richTextBox1.Size = new System.Drawing.Size(100, 96);
-   this.richTextBox1.Click += RichTextBox1_Click1;
-
-   // Form1
-   this.ClientSize = new System.Drawing.Size(282, 253);
-   this.Controls.Add(this.richTextBox1);
-   this.Name = "Form1";
-   this.Text = "Form1";   
-
-   private void RichTextBox1_Click1(object sender, EventArgs e)
-   {
-       this.popupControlContainer1.ShowPopup(Point.Empty);
-   }
-
-   {% endhighlight %}
-
-   {% highlight vb %}
-
-   'Declaration 
-   Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
-   Private button1 As System.Windows.Forms.Button
-   Private richTextBox1 As System.Windows.Forms.RichTextBox
-
-   'Initializing 
-   Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
-   Me.button1 = New System.Windows.Forms.Button()
-   Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
-
-   ' popupControlContainer1
-   Me.popupControlContainer1.Controls.Add(Me.button1)
-   Me.popupControlContainer1.Location = New System.Drawing.Point(33, 58)
-   Me.popupControlContainer1.Name = "popupControlContainer2"
-   Me.popupControlContainer1.ParentControl = Me.richTextBox1
-   Me.popupControlContainer1.Size = New System.Drawing.Size(200, 100)
-
-   ' button1
-   Me.button1.Location = New System.Drawing.Point(13, 29)
-   Me.button1.Name = "button1"
-   Me.button1.Size = New System.Drawing.Size(174, 35)
-   Me.button1.Text = "PopupControlContainer"
-
-   ' richTextBox1
-   Me.richTextBox1.Location = New System.Drawing.Point(12, 12)
-   Me.richTextBox1.Name = "richTextBox1"
-   Me.richTextBox1.Size = New System.Drawing.Size(100, 96)
-   Me.richTextBox1.Click += RichTextBox1_Click1
-
-   ' Form1
-   Me.ClientSize = New System.Drawing.Size(282, 253)
-   Me.Controls.Add(Me.richTextBox1)
-   Me.Name = "Form1"
-   Me.Text = "Form1"
-
-   Private Sub RichTextBox1_Click1(ByVal sender As Object, ByVal e As EventArgs)
-	   Me.popupControlContainer1.ShowPopup(Point.Empty)
-   End Sub
-
-   {% endhighlight %}
-   {% endtabs %}
-
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl7.png)
-   
-   
-We can also display the PopupControlContainer as a popup at particular location.
+**2.** Include the **Syncfusion.Windows.Forms** namespace.
 
 {% tabs %}
 {% highlight C# %}
+using Syncfusion.Windows.Forms;
+{% endhighlight  %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms
+{% endhighlight  %}
+{% endtabs %} 
 
-this.popupControlContainer1.ShowPopup(new Point(700, 600));
+**3.** Create a [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) instance, and add it to the window.
 
+{% tabs %}
+{% highlight C# %}
+//Create instance of PopupControlContainer
+PopupControlContainer popupControlContainer1= new PopupControlContainer();
+this.Controls.Add(popupControlContainer1);
 {% endhighlight %}
-
-{% highlight vb %}
-
-Me.popupControlContainer1.ShowPopup(New Point(700, 600))
-
+{% highlight VB %}
+'Create instance of PopupControlContainer
+Dim popupControlContainer1 As PopupControlContainer = New PopupControlContainer
+Me.Controls.Add(popupControlContainer1)
 {% endhighlight %}
 {% endtabs %}
 
+![Adding PopupControlContainer and element via code](GettingStarted_Images/PopupControl7.png)
 
-   ![Adding the PopupControlContainer](GettingStarted_Images/PopupControl8.png)
+**4.** Add child controls like button, label, TextBox, ColorPicker, etc., to the PopupControlContainer. 
 
-## Adding PopupControlContainer through NuGet package
+{% tabs %}
+{% highlight C# %}
+// Declaration 
+private Syncfusion.Windows.Forms.PopupControlContainer popupControlContainer1;
+private System.Windows.Forms.Button button1;
+private System.Windows.Forms.RichTextBox richTextBox1;
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#popupcontrolcontainer) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+// Initializing 
+this.popupControlContainer1 = new Syncfusion.Windows.Forms.PopupControlContainer();
+this.button1 = new System.Windows.Forms.Button();
+this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 
-Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+// popupControlContainer1
+this.popupControlContainer1.Controls.Add(this.button1);
+this.popupControlContainer1.Location = new System.Drawing.Point(33, 58);
+this.popupControlContainer1.Name = "popupControlContainer2";
+this.popupControlContainer1.ParentControl = this.richTextBox1;
+this.popupControlContainer1.Size = new System.Drawing.Size(200, 100);
+
+// button1
+this.button1.Location = new System.Drawing.Point(13, 29);
+this.button1.Name = "button1";
+this.button1.Size = new System.Drawing.Size(174, 35);
+this.button1.Text = "PopupControlContainer";
+
+// richTextBox1
+this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+this.richTextBox1.Name = "richTextBox1";
+this.richTextBox1.Size = new System.Drawing.Size(100, 96);
+this.richTextBox1.Click += RichTextBox1_Click1;
+
+// Form1
+this.ClientSize = new System.Drawing.Size(282, 253);
+this.Controls.Add(this.richTextBox1);
+this.Name = "Form1";
+this.Text = "Form1";   
+
+private void RichTextBox1_Click1(object sender, EventArgs e)
+{
+    this.popupControlContainer1.ShowPopup(Point.Empty);
+}
+
+{% endhighlight %}
+{% highlight VB %}
+'Declaration 
+Private popupControlContainer1 As Syncfusion.Windows.Forms.PopupControlContainer
+Private button1 As System.Windows.Forms.Button
+Private richTextBox1 As System.Windows.Forms.RichTextBox
+
+'Initializing 
+Me.popupControlContainer1 = New Syncfusion.Windows.Forms.PopupControlContainer()
+Me.button1 = New System.Windows.Forms.Button()
+Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
+
+' popupControlContainer1
+Me.popupControlContainer1.Controls.Add(Me.button1)
+Me.popupControlContainer1.Location = New System.Drawing.Point(33, 58)
+Me.popupControlContainer1.Name = "popupControlContainer2"
+Me.popupControlContainer1.ParentControl = Me.richTextBox1
+Me.popupControlContainer1.Size = New System.Drawing.Size(200, 100)
+
+' button1
+Me.button1.Location = New System.Drawing.Point(13, 29)
+Me.button1.Name = "button1"
+Me.button1.Size = New System.Drawing.Size(174, 35)
+Me.button1.Text = "PopupControlContainer"
+
+' richTextBox1
+Me.richTextBox1.Location = New System.Drawing.Point(12, 12)
+Me.richTextBox1.Name = "richTextBox1"
+Me.richTextBox1.Size = New System.Drawing.Size(100, 96)
+Me.richTextBox1.Click += RichTextBox1_Click1
+
+' Form1
+Me.ClientSize = New System.Drawing.Size(282, 253)
+Me.Controls.Add(Me.richTextBox1)
+Me.Name = "Form1"
+Me.Text = "Form1"
+
+Private Sub RichTextBox1_Click1(ByVal sender As Object, ByVal e As EventArgs)
+    Me.popupControlContainer1.ShowPopup(Point.Empty)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+## Show or hide pop-up
+
+You can show or hide the pop-up by calling the [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ShowPopup.html) or [HidePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~HidePopup.html) method of the PopupControlContainer control, respectively.
+
+{% tabs %}
+{% highlight C# %}
+// Show the pop-up
+this.popupControlContainer1.ShowPopup(Point.Empty);
+
+// Hide the pop-up
+this.popupControlContainer1.HidePopup();
+{% endhighlight  %}
+{% highlight VB %}
+'Show the pop-up
+Me.popupControlContainer1.ShowPopup(Point.Empty)
+
+'Hide the pop-up
+Me.popupControlContainer1.HidePopup()
+{% endhighlight  %}
+{% endtabs %} 
+
+![Popup](GettingStarted_Images/show-hide-popup.png)
+

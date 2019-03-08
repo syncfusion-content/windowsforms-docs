@@ -57,14 +57,10 @@ Me.checkBoxAdv1.WrapText = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img612.jpeg)
+![Windows forms CheckBoxAdv TextShadow applied](Overview_images/CheckBoxAdv_shadow.jpeg)
 
-![](Overview_images/Overview_img613.jpeg)
+![Windows forms CheckBoxAdv WrapText applied](Overview_images/CheckBoxAdv_wraptext.jpeg)
 
-
-A sample which demonstrates the TextShadow property of CheckBoxAdv is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 {% seealso %}
 
