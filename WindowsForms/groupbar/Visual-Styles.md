@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Visual styles
 
-The GroupBar control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
+The GroupBar control for Windows Forms Supports for below listed [Visual Styles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~VisualStyle.html). You can easily modify the look using the built-in visual styles.
 
 The styles are built-in for GroupBar.
 
@@ -54,7 +54,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
 {% endtabs %}
 
-![](Overview_images/Overview_img117.jpg) 
+![Default theme](Overview_images/Overview_img117.jpg) 
 
 
 **Office2007**
@@ -81,7 +81,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endtabs %}
 
-![](Overview_images/Overview_img118.jpeg) 
+![Office2007 theme](Overview_images/Overview_img118.jpeg) 
 
 You can also specify the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black, and Managed.
 
@@ -119,7 +119,7 @@ Me.groupBar1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.Blue
 
 {% endtabs %}
 
-![](Overview_images/Overview_img119.jpeg) 
+![Office2007 blue theme](Overview_images/Overview_img119.jpeg) 
 
 **Black**
 
@@ -147,7 +147,7 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Black
 
 {% endtabs %}
 
-![](Overview_images/Overview_img120.jpeg) 
+![Office2007 black theme](Overview_images/Overview_img120.jpeg) 
 
 **Silver**
 
@@ -175,7 +175,7 @@ Me.groupBar1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme.Silver
 
 {% endtabs %}
 
-![](Overview_images/Overview_img121.jpeg) 
+![Office2007 silver theme](Overview_images/Overview_img121.jpeg) 
 
 **Managed**
 
@@ -206,7 +206,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](Overview_images/Overview_img122.jpeg) 
+![Managed theme](Overview_images/Overview_img122.jpeg) 
 
 **Office2010**
 
@@ -232,7 +232,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2010
 
 {% endtabs %}
 
-![](Overview_images/Overview_img123.jpeg) 
+![Office2010 theme](Overview_images/Overview_img123.jpeg) 
 
 It also specifies the color schemes for Office 2010 visual styles. They can be Blue, Silver, Black, and Managed.
 
@@ -271,7 +271,7 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Blue
 
 {% endtabs %}
 
-![](Overview_images/Overview_img124.jpeg) 
+![Office2010 blue theme](Overview_images/Overview_img124.jpeg) 
 
 
 **Black**
@@ -300,7 +300,7 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Black
 
 {% endtabs %}
 
-![](Overview_images/Overview_img125.jpeg) 
+![Office2010 black theme](Overview_images/Overview_img125.jpeg) 
 
 **Silver**
 
@@ -328,7 +328,7 @@ Me.groupBar1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.Silver
 
 {% endtabs %}
 
-![](Overview_images/Overview_img126.jpeg) 
+![Office2010 silver theme](Overview_images/Overview_img126.jpeg) 
 
 **Managed**
 
@@ -358,7 +358,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](Overview_images/Overview_img127.jpeg) 
+![Managed theme](Overview_images/Overview_img127.jpeg) 
 
 **Metro**
 
@@ -385,7 +385,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 {% endtabs %}
 
-![](Overview_images/Overview_img128.jpeg) 
+![Metro theme](Overview_images/Overview_img128.jpeg) 
 
 **Office2016Colorful**
 
@@ -412,7 +412,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorf
 
 {% endtabs %}
 
-![](Overview_images/Overview_img129.jpeg) 
+![Office2016 colorful theme](Overview_images/Overview_img129.jpeg) 
 
 **Office2016DarkGray**
 
@@ -438,7 +438,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGr
 
 {% endtabs %}
 
-![](Overview_images/Overview_img130.jpeg) 
+![Office2016 dark gray theme](Overview_images/Overview_img130.jpeg) 
 
 
 **Office2016Black**
@@ -465,7 +465,7 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
 
 {% endtabs %}
 
-![](Overview_images/Overview_img131.jpeg) 
+![Office2016 black theme](Overview_images/Overview_img131.jpeg) 
 
 **Office2016White**
 
@@ -491,5 +491,5 @@ Me.groupBar1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016Black
 
 {% endtabs %}
 
-![](Overview_images/Overview_img132.jpeg) 
+![Office2016 white theme](Overview_images/Overview_img132.jpeg) 
 
