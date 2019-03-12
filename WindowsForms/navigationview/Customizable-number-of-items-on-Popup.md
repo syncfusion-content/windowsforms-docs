@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizable number of items on pop-up
 
-Navigation View now allows setting the maximum number of items to be displayed on its pop-up and has an option to cancel the pop-up. BarPopUp event can be used to achieve this.
+Navigation View now allows setting the maximum number of items to be displayed on its pop-up and has an option to cancel the pop-up. [BarPopUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationView~BarPopup_EV.html) event can be used to achieve this.
 
 {% tabs %}
 

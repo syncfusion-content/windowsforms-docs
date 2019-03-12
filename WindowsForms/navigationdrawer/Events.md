@@ -11,14 +11,14 @@ documentation: ug
 
 The below four events are implemented in Transition.
 
-* Opening
-* Closing
-* Opened
-* Closed
+* [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opening_EV.html)
+* [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closing_EV.html)
+* [Opened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opened_EV.html)
+* [Closed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closed_EV.html)
 
 ## Opening
 
-Occurs when expand Transition begins.
+This [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opening_EV.html) event occurs when expand Transition begins.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ End Sub
 
 ## Closing
 
-Occurs when collapse Transition begins.
+The [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closing_EV.html) Occurs when collapse Transition begins.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ End Sub
 
 ## Opened
 
-Occurs when expand Transition ends.
+This [Opened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opened_EV.html) event occurs when expand Transition ends.
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ End Sub
 
 ## Closed
 
-Occurs when collapse Transition ends.
+The [Closed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closed_EV.html) event occurs when collapse Transition ends.
 
 {% tabs %}
 

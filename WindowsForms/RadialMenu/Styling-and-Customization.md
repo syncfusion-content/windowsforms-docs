@@ -11,13 +11,13 @@ documentation: ug
 
 ## Drill region
 
-![](Styling-and-Customization_images/Styling-and-Customization_img1.png)
+![Drill region](Styling-and-Customization_images/Styling-and-Customization_img1.png)
 
 
 
 ### Default state
 
-OuterArcColor is used to fill the drill-down region in the normal state.
+[OuterArcColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterArcColor.html) is used to fill the drill-down region in the normal state.
 
 {% tabs %}
 
@@ -37,10 +37,10 @@ Me.RadialMenu1.OuterArcColor = Color.Black
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/Styling-and-Customization_img2.png)
+![Default state](Styling-and-Customization_images/Styling-and-Customization_img2.png)
 
 
-OuterArcHighLightedColor property is used to fill the drilldown region while hovering.
+[OuterArcHighLightedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterArcHighLightedColor.html) property is used to fill the drilldown region while hovering.
 
 {% tabs %}
 
@@ -60,11 +60,11 @@ Me.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)((
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/Styling-and-Customization_img3.png)
+![outer arc color](Styling-and-Customization_images/Styling-and-Customization_img3.png)
 
 ## Outer rim (static region)
 
-Outer edge is customized by using the RimBackground and OuterRimThickness properties.
+Outer edge is customized by using the [RimBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~RimBackground.html) and [OuterRimThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterRimThickness.html) properties.
 
 ### Background
 
@@ -92,7 +92,7 @@ this.radialMenu1.RimBackground = Color.Blue;
 {% endtabs %}
 
 
-![](Styling-and-Customization_images/Styling-and-Customization_img4.png)
+![Outer rim](Styling-and-Customization_images/Styling-and-Customization_img4.png)
 
 
 
@@ -123,7 +123,7 @@ Me.RadialMenu1.OuterRimThickness = 20
 {% endtabs %}
 
 
-![](Styling-and-Customization_images/Styling-and-Customization_img5.png)
+![Thickness](Styling-and-Customization_images/Styling-and-Customization_img5.png)
 
 
 
@@ -154,7 +154,7 @@ Me.RadialMenu1.OuterArcGap = 50
 {% endtabs %}
 
 
-![](Styling-and-Customization_images/Styling-and-Customization_img6.png)
+![Arc gap](Styling-and-Customization_images/Styling-and-Customization_img6.png)
 
 
 
@@ -187,7 +187,7 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 {% endtabs %}
 
 
-![](Styling-and-Customization_images/Styling-and-Customization_img7.png)
+![Display style](Styling-and-Customization_images/Styling-and-Customization_img7.png)
 
 
 
