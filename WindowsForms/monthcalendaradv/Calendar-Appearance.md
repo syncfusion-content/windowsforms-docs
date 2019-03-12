@@ -12,36 +12,13 @@ This section comprises the appearance settings under the following topics:
 
 ## Border styles
 
-The wide variety of border options are available for DateTimePickerAdv control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
+The wide variety of border options are available for [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
 
-
-
-<table>
-<tr>
-<th>
-DateTimePickerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Specifies whether the DateTimePickerAdv should have a border and if it is 2D or 3D border. The options are, {{ '_None_' | markdownify }} {{ '_FixedSingle_'  | markdownify }}{{ '_Fixed3D(Default)_' | markdownify }}</td></tr>
-<tr>
-<td>
-<br>Border3DStyle</td><td>
-Specifies the 3D border style of the DateTimePickerAdv.The options are, {{ '_Raised_' | markdownify }}{{ '_RaisedOuter_'  | markdownify }} {{ '_RaisedInner_'  | markdownify }}{{ '_Sunken(Default)_' | markdownify }}{{ '_SunkenOuter_'  | markdownify }} {{ '_SunkenInner_'  | markdownify }} {{ '_Etched_'  | markdownify }} {{ '_Bump_'  | markdownify }}{{ '_Adjust_'  | markdownify }} {{ '_Flat_' | markdownify }}</td></tr>
-<tr>
-<td>
-<br>BorderSingle</td><td>
-Specifies the 2D border style of the DateTimePickerAdv. The options are,{{ '_None_' | markdownify }}{{ '_Dotted_' | markdownify }}{{ '_Dashed_' | markdownify }}{{ '_Solid (default)_' | markdownify }}{{ '_Inset_'  | markdownify }}{{ '_Outset_' | markdownify }}</td></tr>
-<tr>
-<td>
-<br>BorderSides</td><td>
-Specifies the sides of the control which should have a border. The sides are,{{ '_Left_' | markdownify }}{{ '_Top_' | markdownify }}{{ '_Right_'  | markdownify }}{{ '_Bottom_' | markdownify }}{{ '_Middle_'  | markdownify }}{{ '_All (Default)_' | markdownify }}</td></tr>
-<tr>
-<td>
-<br>BorderColor</td><td>
-Specifies the color of the 2D border when BorderStyle is set FixedSingle.</td></tr>
-</table>
+* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderStyle.html)
+* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~Border3DStyle.html)
+* [BorderSingle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderSingle.html)
+* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderSides.html)
+* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BorderColor.html)
 
 {% tabs %}
 
@@ -110,14 +87,14 @@ Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenI
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img209.png) 
+![Border styles](CalendarDateTime_images/Overview_img209.png) 
 
 
 
 
 ## Background settings
 
-Background image for the MonthCalendarAdv is specified in BackgroundImage property.
+Background image for the MonthCalendarAdv is specified in [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BackgroundImage.html) property.
 
 {% tabs %}
 
@@ -144,7 +121,7 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img138.jpeg)
+![Background settings](CalendarDateTime_images/Overview_img138.jpeg)
 
 
 
@@ -155,26 +132,9 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 
 Some sections of the MonthCalendarAdv control are themed by default. The below table list the properties which controls the themed behavior border, grid and scroll buttons.
 
-
-
-<table>
-<tr>
-<th>
-MonthCalendarAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ThemedBorder</td><td>
-Specifies whether the border of the control is themed. By default it is `true`.</td></tr>
-<tr>
-<td>
-ThemedEnabledGrid</td><td>
-Specifies whether the grid holding the days is themed or not. By default it is `false`.</td></tr>
-<tr>
-<td>
-ThemedEnabledScrollButtons</td><td>
-Specifies whether the scroll buttons are themed. It is set to `true` by default.</td></tr>
-</table>
+[ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedBorder.html)
+[ThemedEnabledGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedEnabledGrid.html)
+[ThemedEnabledScrollButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedEnabledScrollButtons.html)
 
 
 {% tabs %}
@@ -205,13 +165,13 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img139.jpeg)
+![Themes for MonthCalendarAdv](CalendarDateTime_images/Overview_img139.jpeg)
 
 
 
 ### Styles
 
-The MonthCalenderAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
+The MonthCalenderAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Style.html) property.
 
 The styles are built in for MonthCalenderAdv.
 
@@ -232,17 +192,6 @@ The styles are built in for MonthCalenderAdv.
 •	Office2016Black
 
 •	Office2016White
-
-<table>
-<tr>
-<th>
-MonthCalendarAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Style</td><td>
-Gets or Sets the visual style of the MonthCalendarAdv. The default value is 'Default'.</td></tr>
-</table>
 
 **Default**
 
@@ -268,7 +217,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Default
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img213.jpeg) 
+![Default theme](CalendarDateTime_images/Overview_img213.jpeg) 
 
 **Office2007**
 
@@ -294,7 +243,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img214.jpg) 
+![Office2007 theme](CalendarDateTime_images/Overview_img214.jpg) 
 
 It also specifies the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black, and Managed.
 
@@ -332,7 +281,7 @@ Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Blue
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img215.jpeg) 
+![Office2007 blue theme](CalendarDateTime_images/Overview_img215.jpeg) 
 
 **Black**
 
@@ -360,7 +309,7 @@ Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Black
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img217.jpg) 
+![Office2007 black theme](CalendarDateTime_images/Overview_img217.jpg) 
 
 **Silver**
 
@@ -388,7 +337,7 @@ Me. monthCalendarAdv1.Office2007Theme = Office2007Theme.Silver
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img216.jpg) 
+![Office2007 silver theme](CalendarDateTime_images/Overview_img216.jpg) 
 
 **Managed**
 
@@ -418,7 +367,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img218.jpeg) 
+![managed theme](CalendarDateTime_images/Overview_img218.jpeg) 
 
 **Office2007Outlook**
 
@@ -444,7 +393,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img229.jpeg) 
+![Office2007Outlook theme](CalendarDateTime_images/Overview_img229.jpeg) 
 
 **Office2010**
 
@@ -470,7 +419,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img219.jpeg) 
+![Office2010 theme](CalendarDateTime_images/Overview_img219.jpeg) 
 
 It also allows to specify the color schemes for Office 2010 visual styles. They can be blue, silver, black and managed.
 
@@ -508,7 +457,7 @@ Me. monthCalendarAdv1.Office2010Theme = Office2010Theme.Blue
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img220.jpeg) 
+![Office2010 blue theme](CalendarDateTime_images/Overview_img220.jpeg) 
 
 **Black**
 
@@ -536,7 +485,7 @@ Me.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img221.jpeg) 
+![Office2010 black theme](CalendarDateTime_images/Overview_img221.jpeg) 
 
 
 **Silver**
@@ -563,7 +512,7 @@ Me.monthCalendarAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme.
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img222.jpeg) 
+![Office2010 silver theme](CalendarDateTime_images/Overview_img222.jpeg) 
 
 **Managed**
 
@@ -593,7 +542,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img223.jpeg)
+![Managed theme](CalendarDateTime_images/Overview_img223.jpeg)
 
 **Metro**
 
@@ -617,7 +566,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img224.jpeg)
+![Metro theme](CalendarDateTime_images/Overview_img224.jpeg)
 
 **Office2016Colorful**
 
@@ -643,7 +592,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img225.jpeg)
+![Office2016Colorful](CalendarDateTime_images/Overview_img225.jpeg)
 
 **Office2016DarkGray**
 
@@ -670,34 +619,7 @@ Me.monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img226.jpeg)
-
-**Office2016DarkGray**
-
-This option helps to set the Office2016DarkGray theme. theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Office2016DarkGray
-
-this.monthCalendarAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
-
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'office2016DarkGray
-
-Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](CalendarDateTime_images/Overview_img226.jpeg)
+![Office2016DarkGray theme](CalendarDateTime_images/Overview_img226.jpeg)
 
 **Office2016Black**
 
@@ -723,7 +645,7 @@ Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img227.jpeg)
+![Office2016Black theme](CalendarDateTime_images/Overview_img227.jpeg)
 
 **Office2016White**
 
@@ -749,7 +671,7 @@ Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img228.jpeg)
+![Office2016White theme](CalendarDateTime_images/Overview_img228.jpeg)
 
-N> Visual styles of the Today and None button can be overridden by MonthCalendarAdv.TodayButton and MonthCalendarAdv.NoneButton respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
+N> Visual styles of the Today and None button can be overridden by [MonthCalendarAdv.TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~TodayButton.html) and [MonthCalendarAdv.NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~NoneButton.html) respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
 
