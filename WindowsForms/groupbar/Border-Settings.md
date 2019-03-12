@@ -10,20 +10,7 @@ documentation: ug
 
 ## GroupBar settings
 
-The border style of the GroupBar can be set using the below given property.
-
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Gets/sets the border style of the GroupBar control.</td></tr>
-</table>
+The border style of the GroupBar can be set using the [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~BorderStyle.html) property.
 
 {% tabs %}
 
@@ -43,29 +30,15 @@ Me.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img32.jpeg) 
+ ![GroupBar border style](Overview_images/Overview_img32.jpeg) 
 
 
 ## GroupBar item client area border settings
 
 The border of the GroupBar Item client area can be set and customized using the following properties.
 
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-DrawClientBorder</td><td>
-Specifies whether a border is drawn around the GroupBar's client window.</td></tr>
-<tr>
-<td>
-ClientBorderColors</td><td>
-Specifies the value which determines whether the border for the client area of the GroupBar control should be drawn or not.</td></tr>
-</table>
+* [DrawClientBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~DrawClientBorder.html)
+* [ClientBorderColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItem~ClientBorderColors.html)
 
 {% tabs %}
 
@@ -89,5 +62,5 @@ Me.groupBarItem2.ClientBorderColors = New Syncfusion.Windows.Forms.Tools.BorderC
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img33.jpeg)
+ ![GroupBar item client area border](Overview_images/Overview_img33.jpeg)
 

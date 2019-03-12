@@ -8,20 +8,7 @@ documentation: ug
 ---
 # StackedGroupBar
 
-When the GroupBar is in StackedMode, its header height can be controlled by HeaderHeight property.
-
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HeaderHeight</td><td>
-Specifies the height of the GroupBar Header.</td></tr>
-</table>
+When the GroupBar is in StackedMode, its header height can be controlled by [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~HeaderHeight.html) property.
 
 {% tabs %}
 

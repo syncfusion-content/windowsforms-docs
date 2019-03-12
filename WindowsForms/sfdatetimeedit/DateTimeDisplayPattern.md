@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime display patterns of SfDateTimeEdit for Windows Forms
+title: DateTime display patterns of SfDateTimeEdit | Syncfusion
 description: How to change display patterns of DateTime and Custom pattern for SfDateTimeEdit 
 platform: WindowsForms
 control: SfDateTimeEdit
@@ -9,7 +9,7 @@ documentation: ug
 
 # Display patterns
 
-The `DateTimePattern` helps you to specify the date-time display pattern for the SfDateTimeEdit. The display format of the date in the `SfDateTimeEdit` control can be customized by the pattern and custom display pattern properties.
+The [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimePattern.html) helps you to specify the date-time display pattern for the SfDateTimeEdit. The display format of the date in the `SfDateTimeEdit` control can be customized by the pattern and custom display pattern properties.
 
 ## DateTime format
 
@@ -27,9 +27,9 @@ The `SfDateTimeEdit` control supports the following DateTime format:
 * RFC1123
 * YearMonth
 
-![](datetimepattern-images/allpattern.png)
+![date time edit pattern](datetimepattern-images/allpattern.png)
 
-The different display formats of the DateTime can be set by the `DateTimePattern` property. The following code snippet illustrates how to set the format as LongDate:
+The different display formats of the DateTime can be set by the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimePattern.html) property. The following code snippet illustrates how to set the format as LongDate:
 
 {% tabs %}
 
@@ -59,11 +59,11 @@ dateTimeEdit.DateTimePattern = DateTimePattern.LongDate
 
 {% endtabs %} 
 
-![](datetimepattern-images/datetimepattern_longdate.png)
+![DateTimeEdit pattern](datetimepattern-images/datetimepattern_longdate.png)
 
 ## Custom display pattern
 
-The custom pattern can be displayed in the `SfDateTimeEdit` control by using the `Format` property. Refer to the following list to create the custom format for the `SfDateTimeEdit`:
+The custom pattern can be displayed in the `SfDateTimeEdit` control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Format.html) property. Refer to the following list to create the custom format for the `SfDateTimeEdit`:
 
 * d: Day of the month.
 * ddd: Short name of day of the week.
@@ -115,6 +115,6 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 {% endtabs %} 
 
 
-![](datetimepattern-images/datetimepattern_custom.png)
+![Custom date time pattern](datetimepattern-images/datetimepattern_custom.png)
 
 N> The CustomPattern support can be enabled by setting the `DateTimePattern` to the `Custom`.

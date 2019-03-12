@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started for Syncfusion Essential WindowsForms
+title: Getting started | SfNumericTextBox | WindowsForms | Syncfusion  
 description: This section provides the information about how to begin the SfNumericTextBox control.
 platform: WindowsForms
 control: SfNumericTextBox
@@ -13,58 +13,35 @@ This section will give a step-by-step procedure to design a SfNumericTextBox con
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfNumericTextBox in any application,
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfnumerictextbox) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+ 
+Please find more details regarding how to install the nuget packages in windows form application in the below link:
+ 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-<table>
-<tr>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfInput.WinForms
-</td>
-<td>
-Syncfusion.SfInput.WinForms contains the class that handles all UI operations, fundamentals and base class of SfNumericTextBox control.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Core.WinForms
-</td>
-<td>
-Syncfusion.Core.WinForms contains NativeMethods which are used in SfNumericTextBox control.
-</td>
-</tr>
-</table>
-
-# Configuring Numeric TextBox
+## Configuring Numeric TextBox
 
 ## Adding SfNumericTextBox control through Designer
 
 SfNumericTextBox can be added through designer by following the below steps.
-1.	Create a new **Windows Form Application**.
-2.	Drag and Drop SfNumericTextBox from the toolbox into the designer page.
+**1.**	Create a new **Windows Form Application**.
+**2.**	Drag and Drop SfNumericTextBox from the toolbox into the designer page.
 
-![](Gettingstarted_images/SfNumericTextBoxAdd.png)
+![Drag and drop the SfNumericTextBox control to form](Gettingstarted_images/SfNumericTextBoxAdd.png)
 
-3.	Once you drag drop the SfNumericTextBox into the designer page, the SfNumericTextBox will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
+**3.**	Once you drag drop the SfNumericTextBox into the designer page, the SfNumericTextBox will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
     *	Syncfusion.Core.WinForms.dll
     *	Syncfusion.SfInput.WinForms.dll
 
-![](Gettingstarted_images/SfNumericTextBoxDesignerAdd.png)
+![SfNumericTextBox control added by designer](Gettingstarted_images/SfNumericTextBoxDesignerAdd.png)
 
 ## Adding SfNumericTextBox control through code
 
-1.	SfNumericTextBox can be added through code-behind by following the below steps.
-2.	Add the below assemblies into the project file.
+**1.**	SfNumericTextBox can be added through code-behind by following the below steps.
+**2.**	Add the below assemblies into the project file.
     *	Syncfusion.Core.WinForms.dll
     *	Syncfusion.SfInput.WinForms.dll
-3.	Initialize a SfNumericTextBox by using the below code in code behind.
+**3.**	Initialize a SfNumericTextBox by using the below code in code behind.
 
 {% tabs %}
 
@@ -82,7 +59,7 @@ Private numericTextBox As Syncfusion.WinForms.Input.SfNumericTextBox = New Syncf
 
 {% endtabs %}
 
-4.	Use the below code for adding the initialized SfNumericTextBox to the application.
+**4.**	Use the below code for adding the initialized SfNumericTextBox to the application.
 
 {% tabs %}
 
@@ -110,7 +87,7 @@ Me.Controls.Add(Me.numericTextBox)
 
 ## Adding Value to the control
 
-It assigns the value to SfNumericTextBox. It holds the double value which can also hold null value. The “AllowNull” property needs to be set to make the Value nullable. The “Text” property of the control gets formatted from the Value property.
+It assigns the value to SfNumericTextBox. It holds the double value which can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~AllowNull.html) property needs to be set to make the Value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Text.html) property of the control gets formatted from the Value property.
 
 {% tabs %}
 
@@ -130,11 +107,11 @@ Me.numericTextBox.Value = 123.45
 
 {% endtabs %}
 
-![](Gettingstarted_images/Value.png)
+![Value assigned in numeric text box control](Gettingstarted_images/Value.png)
 
 ## Formatting the value
 
-Formatting functionality allows to format the value based on the FormatMode of the control. By default, the value gets parsed from the application’s CurrentUICulture. Custom formatting can also be done using NumberFormatInfo property, which allow to set decimal separator, group separator, negative symbol, number of decimal digit, currency symbol, percent symbol.
+Formatting functionality allows to format the value based on the FormatMode of the control. By default, the value gets parsed from the application’s CurrentUICulture. Custom formatting can also be done using [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~NumberFormatInfo.html) property, which allow to set decimal separator, group separator, negative symbol, number of decimal digit, currency symbol, percent symbol.
 
 {% tabs %}
 
@@ -156,7 +133,7 @@ Me.numericTextBox.NumberFormatInfo.CurrencySymbol = "€"
 
 {% endtabs %}
 
-![](Gettingstarted_images/Formatting.png)
+![Formatting the value](Gettingstarted_images/Formatting.png)
 
 ## Different types of format modes
 
@@ -166,7 +143,7 @@ String formatting is the replacement of string in specified string format. Based
 *	Percent
 *	Currency
 
-This mode can be applied in SfNumericTextBox by using the FormatMode property. By default, the FormatMode is set as Numeric.
+This mode can be applied in SfNumericTextBox by using the [FormatMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~FormatMode.html) property. By default, the FormatMode is set as Numeric.
 
 {% tabs %}
 
@@ -186,11 +163,11 @@ Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Curren
 
 {% endtabs %}
 
-![](Gettingstarted_images/Mode.png)
+![Format mode](Gettingstarted_images/Mode.png)
 
 ## Adding watermark to the control
 
-SfNumericTextBox comes with the in-built watermark support. WatermarkText helps to display the details about what value need to enter. WatermarkText property allows to show the watermark for the control when the value of the control is set to null.
+SfNumericTextBox comes with the in-built watermark support. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~WatermarkText.html) helps to display the details about what value need to enter. [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~WatermarkText.html) property allows to show the watermark for the control when the value of the control is set to null.
 
 {% tabs %}
 
@@ -210,11 +187,11 @@ Me.numericTextBox.WatermarkText = "Enter your age"
 
 {% endtabs %}
 
-![](Gettingstarted_images/Watermark.png)
+![Watermark support](Gettingstarted_images/Watermark.png)
 
 ## Minimum and Maximum value support
 
-We can define the range of value which can be accept by the control. To define this range, we need to provide minimum possible value and maximum possible value using the property “MinValue” and “MaxValue” respectively.
+We can define the range of value which can be accept by the control. To define this range, we need to provide minimum possible value and maximum possible value using the property [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~MaxValue.html) respectively.
 
 {% tabs %}
 
@@ -238,7 +215,7 @@ Me.numericTextBox.MaxValue = 100
 
 ## Hiding the trail zeros in value
 
-The trailing zeros after the decimal digit can be removed by using the property named “HideTrailingZeros”.
+The trailing zeros after the decimal digit can be removed by using the property named [HideTrailingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~HideTrailingZeros.html).
 
 {% tabs %}
 
@@ -258,11 +235,11 @@ Me.numericTextBox.HideTrailingZeros = True
 
 {% endtabs %}
 
-![](Gettingstarted_images/HideZeros.png)
+![Hide the decimal value](Gettingstarted_images/HideZeros.png)
 
 ## Adding custom units to the value
 
-Allows to set the units or custom message at front or end of the text. This can be set using the Prefix and Suffix property.
+Allows to set the units or custom message at front or end of the text. This can be set using the [Prefix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Prefix.html) and [Suffix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Suffix.html) property.
 
 {% tabs %}
 
@@ -282,4 +259,4 @@ Me.numericTextBox.Suffix = "inches";
 
 {% endtabs %}
 
-![](Gettingstarted_images/CustomUnit.png)
+![Custom units added in numeric text box](Gettingstarted_images/CustomUnit.png)
