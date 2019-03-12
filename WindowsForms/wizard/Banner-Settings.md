@@ -15,28 +15,13 @@ The controls inside the Banner Control include Banner Panel, Title, description 
 
 A Banner Panel is a simple gradient panel which holds a Title label, a Description label and a Picture box controls.
 
-Property table
+* **Property**
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Banner</td><td>
-Gets or sets the picture box for the wizard using the Image property.</td></tr>
-<tr>
-<td>
-Description</td><td>
-Sets the label that can describe the current page.</td></tr>
-<tr>
-<td>
-Title</td><td>
-Sets the title of the current page.</td></tr>
-</table>
+* [Banner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Banner.html)
+* [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Description.html)
+* [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html)
 
-N> The Title and Description settings can be set for individual Wizard Pages using WizardPage.Title and WizardPage.Description properties respectively. See _Wizard Page Settings.
+N> The [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html) and [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Description.html) settings can be set for individual Wizard Pages using [WizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage.html).[Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html) and WizardPage.Description properties respectively. See _Wizard Page Settings.
 
 {% tabs %}
 
@@ -78,7 +63,7 @@ Me.gradientPanel1.Controls.Add(Me.label2)
 
 {% endtabs %}
 
-![](Wizard-Package_images/Wizard-Package_img9.jpeg)
+![Banner panel](Wizard-Package_images/Wizard-Package_img9.jpeg)
 
 
 
@@ -88,26 +73,9 @@ N> The appearance of a Banner panel can be customized using the properties of th
 
 The below properties control the layout of the respective banner controls.
 
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-AutoLayoutBanner</td><td>
-When set to `true`, the picture box will be automatically laid out at a specific position, in the banner control. Setting `false` will not layout the picture box automatically.</td></tr>
-<tr>
-<td>
-AutoLayoutDescription</td><td>
-When set to `true`, the description text will be automatically laid out at a specific position, in the Description control. Setting `false` will not layout the text automatically.</td></tr>
-<tr>
-<td>
-AutoLayoutTitle</td><td>
-When set to `true`, the title will be automatically laid out at a specific position, in the banner control. Setting `false` will not layout the title automatically.</td></tr>
-</table>
+* [AutoLayoutBanner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutBanner.html)
+* [AutoLayoutDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutDescription.html)
+* [AutoLayoutTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutTitle.html)
 
 {% tabs %}
 
@@ -141,27 +109,9 @@ Me.wizardControl1.AutoLayoutTitle = True
 
 ### Title text
 
-The font style and the fore color for the Title text can be edited through Label.Font and Label.Font property.
+The font style and the fore color for the Title text can be edited through [Label.Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) and [Label.ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
 
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th	></tr>
-<tr>
-<td>
-Font</td><td>
-Sets the font style for the Page Title in the Wizard Control.</td></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Sets the fore color for the Page Title in the Wizard Control.</td></tr>
-</table>
-
-
-![](Wizard-Package_images/Wizard-Package_img11.jpeg)
+![Title text](Wizard-Package_images/Wizard-Package_img11.jpeg)
 
 {% tabs %}
 
@@ -191,7 +141,7 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 {% endtabs %}
 
-![](Wizard-Package_images/Wizard-Package_img12.jpeg)
+![Font color customization](Wizard-Package_images/Wizard-Package_img12.jpeg)
 
 
 
@@ -199,25 +149,10 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue;
 
 The appearance of the description text for a wizard control can be edited using the description label properties.
 
-Property table
+* [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font)
+* [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2)
 
-<table>
-<tr>
-<td>
-Property</td><td>
-Description</td></tr>
-<tr>
-<td>
-Font</td><td>
-Sets the font style for the Page description in the Wizard Control.</td></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Sets the fore color for the Page description in the Wizard Control.</td></tr>
-</table>
-
-
-![](Wizard-Package_images/Wizard-Package_img13.jpeg)
+![Description text](Wizard-Package_images/Wizard-Package_img13.jpeg)
 
 {% tabs %}
 
@@ -247,9 +182,9 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
 {% endtabs %}
 
-![](Wizard-Package_images/Wizard-Package_img14.jpeg)
+![Description text](Wizard-Package_images/Wizard-Package_img14.jpeg)
 
 
 
-N> A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using WizardPage.Title and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
+N> A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~Title.html) and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
 

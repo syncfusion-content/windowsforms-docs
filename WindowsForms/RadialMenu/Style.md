@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Style
 
-The RadialMenu control has rich set of themes for professional representation. You can easily modify the look and feel of the RadialMenu using the built-in themes.
+The RadialMenu control has rich set of themes for professional representation. You can easily modify the look and feel of the RadialMenu using the built-in themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~Style.html) property of RadialMenu.
 
 It has the below themes.
 
@@ -44,7 +44,7 @@ Me.RadialMenu1.Style = Syncfusion.Windows.Forms.Tools.RadialMenuStyle.Default
 
 {% endtabs %}
 
-![](Style_images/Style_img_1.png)
+![Default theme](Style_images/Style_img_1.png)
 
 ## Office2016Colorful 
 
@@ -66,7 +66,7 @@ Me.RadialMenu1.Style = Syncfusion.Windows.Forms.Tools.RadialMenuStyle.Office2016
 
 {% endtabs %}
 
-![](Style_images/Style_img_2.png)
+![Office2016Colorful theme](Style_images/Style_img_2.png)
 
 ## Office2016White 
 
@@ -88,7 +88,7 @@ Me.RadialMenu1.Style = Syncfusion.Windows.Forms.Tools.RadialMenuStyle.Office2016
 
 {% endtabs %}
 
-![](Style_images/Style_img_3.png)
+![Office2016White theme](Style_images/Style_img_3.png)
 
 ## Office2016DarkGray
 
@@ -110,7 +110,7 @@ Me.RadialMenu1.Style = Syncfusion.Windows.Forms.Tools.RadialMenuStyle.Office2016
 
 {% endtabs %}
 
-![](Style_images/Style_img_4.png)
+![Office2016DarkGray theme](Style_images/Style_img_4.png)
 
 ## Office2016Black
 
@@ -132,4 +132,4 @@ Me.RadialMenu1.Style = Syncfusion.Windows.Forms.Tools.RadialMenuStyle.Office2016
 
 {% endtabs %}
 
-![](Style_images/Style_img_5.png)
+![Office2016Black theme](Style_images/Style_img_5.png)

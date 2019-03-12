@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to identify the current selected date at run time? | WindowsForms | Syncfusion
+title: Identify the current selected date | WindowsForms | Syncfusion
 description: how to identify the current selected date at run time?
 platform: WindowsForms
 control: CalendarDateTime
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to identify the current selected date at run time?
 
-The MonthCalendarAdv gives an array of selected dates. If you want to get only one date, choose the first element from that array. Also, set AllowMultipleSelection property to `false`. The DateSelected Event is fired after the user had completed the selection.
+The MonthCalendarAdv gives an array of selected dates. If you want to get only one date, choose the first element from that array. Also, set [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~AllowMultipleSelection.html) property to `false`. The [DateSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateSelected_EV.html) Event is fired after the user had completed the selection.
 
 {% tabs %}
 
@@ -47,4 +47,4 @@ End Sub
 
 {% endtabs %}
 
-![](FAQ_images/Overview_img179.jpeg)
+![Current selected date identified](FAQ_images/Overview_img179.jpeg)

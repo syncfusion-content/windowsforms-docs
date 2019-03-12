@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Globalization
 
-MonthCalendarAdv supports globalization through MonthCalendarAdv.Culture property.
+MonthCalendarAdv supports globalization through [MonthCalendarAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Culture.html) property.
 
-![](CalendarDateTime_images/Overview_img171.jpeg)
+![Globalization](CalendarDateTime_images/Overview_img171.jpeg)
 
 
 {% tabs %}
@@ -34,4 +34,4 @@ Me.monthCalendarAdv1.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img172.jpeg)
+![Globalization](CalendarDateTime_images/Overview_img172.jpeg)
