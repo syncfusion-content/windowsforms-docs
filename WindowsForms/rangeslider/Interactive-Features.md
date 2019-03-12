@@ -11,26 +11,26 @@ documentation: ug
 
 The following are the key interactive features of the Range Slider:
 
-* Range-Specifies the Range of the control, generally indicated by a Start and End value.
-* TickFrequency-Specifies the frequency at which Ticks are to be placed.
-* Minimum-Specifies the Minimum value of the Range Slider.
-* Maximum-Specifies the Maximum value of the Range Slider.
-* ChannelColor-Specifies the color for the channel.
-* ChannelHeight-Specifies the height for the channel.
-* RangeColor-Specifies the color for the range.
-* RightToLeft-Allows reversal of the RangeSlider.
-* SliderSize- Specifies the size of the slider.
-* ThumbColor- Specifies the color of the thumb.
-* ShowTicks- Specifies the visibility of the thumb.
-* TickFrequency- Specifies the frequency of ticks.
-* Orientation- Specifies the orientation of the RangeSlider.
-* SliderMin and SliderMax- Specifies the position of right and left thumb.
+* [Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Range.html)-Specifies the Range of the control, generally indicated by a Start and End value.
+* [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~TickFrequency.html)-Specifies the frequency at which Ticks are to be placed.
+* [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Minimum.html)-Specifies the Minimum value of the Range Slider.
+* [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Maximum.html)-Specifies the Maximum value of the Range Slider.
+* [ChannelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ChannelColor.html)-Specifies the color for the channel.
+* [ChannelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ChannelHeight.html)-Specifies the height for the channel.
+* [RangeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~RangeColor.html)-Specifies the color for the range.
+* [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft)-Allows reversal of the RangeSlider.
+* [SliderSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderSize.html)- Specifies the size of the slider.
+* [ThumbColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ThumbColor.html)- Specifies the color of the thumb.
+* [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ShowTicks.html)- Specifies the visibility of the thumb.
+* [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~TickFrequency.html)- Specifies the frequency of ticks.
+* [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Orientation.html)- Specifies the orientation of the RangeSlider.
+* [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMin.html) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMax.html)- Specifies the position of right and left thumb.
 
 This section discusses the concepts of Range Slider in the below topics:
 
 ## Setting channel color
 
-You can set the required color for the channel over which the slider moves. It contains the highlight when a range is selected. In the following example, the channel color is set to Gray.
+You can set the required color for the channel over which the slider moves using [ChannelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ChannelColor.html) property. It contains the highlight when a range is selected. In the following example, the channel color is set to Gray.
 
 {% tabs %}
 
@@ -46,19 +46,19 @@ rangeSlider.ChannelColor = Color.DarkGray;
 
 Output
 
-![](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![channel color](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 
 
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![channel color](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 
 
 ## Setting channel height
 
-You can set the required height of the channel over which the slider moves. In the following example illustrates the change in height of the channel from 4 to 6. It is measured in pixels.
+You can set the required height of the channel over which the slider moves using the [ChannelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ChannelHeight.html) property. In the following example illustrates the change in height of the channel from 4 to 6. It is measured in pixels.
 
 1. When the Channel height is set to 4 pixels.
 
@@ -75,10 +75,10 @@ You can set the required height of the channel over which the slider moves. In t
 
 
 
-   ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+   ![channel height](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
  
-   ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+   ![channel height](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 
@@ -97,17 +97,17 @@ You can set the required height of the channel over which the slider moves. In t
    {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![channel height](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![channel height](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
 
 ## Setting range color
 
-You can set the required color for a range in the slider. The selected range is highlighted with color chosen. In the following example, the range color is set to Green.
+You can set the required color for a range in the slider using the [RangeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~RangeColor.html) property. The selected range is highlighted with color chosen. In the following example, the range color is set to Green.
 
 {% tabs %}
 
@@ -119,17 +119,17 @@ rangeSlider.RangeColor = Color.DarkGreen;
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![range color](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![range color](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
 
 ## Reversing RangeSlider
 
-The position of the thumbs on the RangeSlider can be reversed by setting the RighttoLeft property to Yes.
+The position of the thumbs on the RangeSlider can be reversed by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to Yes.
 
 1. When the property is set to No.
 
@@ -144,11 +144,11 @@ The position of the thumbs on the RangeSlider can be reversed by setting the Rig
    {% endtabs %}
 
 
-   ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
+   ![Reversing range slider](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
 
-   ![](Interactive-Features_images/Interactive-Features_img10.jpeg)
+   ![Reversing range slider](Interactive-Features_images/Interactive-Features_img10.jpeg)
 
 
 
@@ -167,17 +167,17 @@ The position of the thumbs on the RangeSlider can be reversed by setting the Rig
    {% endtabs %}
 
 
-    ![](Interactive-Features_images/Interactive-Features_img11.jpeg)
+    ![Reversing range slider](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
 
 
-    ![](Interactive-Features_images/Interactive-Features_img12.jpeg)
+    ![Reversing range slider](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
 
 ## Setting slider size
 
-You can set the required size for the slider. The height and the width of the control can be set.
+You can set the required size for the slider using the [SliderSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderSize.html) property. The height and the width of the control can be set.
 
 1. When the slider is set to 11, 14.
    
@@ -194,11 +194,11 @@ You can set the required size for the slider. The height and the width of the co
    {% endtabs %}
 
 
-   ![](Interactive-Features_images/Interactive-Features_img13.jpeg)
+   ![Slider size](Interactive-Features_images/Interactive-Features_img13.jpeg)
 
 
 
-   ![](Interactive-Features_images/Interactive-Features_img14.jpeg)
+   ![Slider size](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
 
 
@@ -217,17 +217,17 @@ You can set the required size for the slider. The height and the width of the co
    {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img15.jpeg)
+![Slider size](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img16.jpeg)
+![Slider size](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
 
 
 ## Setting thumb color
 
-You can set the required color for the both the thumbs on the Channel.
+You can set the required color for the both the thumbs on the Channel using the [ThumbColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ThumbColor.html) property.
 
 In the following example, the thumb is set to Teal.
 
@@ -243,19 +243,19 @@ In the following example, the thumb is set to Teal.
 
 Background Settings
 
-![](Interactive-Features_images/Interactive-Features_img17.jpeg)
+![thumb color](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img18.jpeg)
+![thumb color](Interactive-Features_images/Interactive-Features_img18.jpeg)
 
 
 
 ## Displaying ticks
 
-Ticks are indicators placed at regular intervals on the slider for a range defined by the maximum and minimum scale. You can display ticks below the channel by setting the ShowTicks property to `true`.
+Ticks are indicators placed at regular intervals on the slider for a range defined by the maximum and minimum scale. You can display ticks below the channel by setting the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ShowTicks.html) property to `true`.
 
-1. When the ShowTicks property is set to `true`.
+1. When the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ShowTicks.html) property is set to `true`.
    
    {% tabs %}
 
@@ -268,17 +268,17 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
    {% endtabs %}
 
 
-   ![](Interactive-Features_images/Interactive-Features_img19.jpeg)
+   ![Show ticks](Interactive-Features_images/Interactive-Features_img19.jpeg)
 
 
 
-   ![](Interactive-Features_images/Interactive-Features_img20.jpeg)
+   ![Show ticks](Interactive-Features_images/Interactive-Features_img20.jpeg)
 
 
 
 
 
-2. When the ShowTicks property is set to `false`.
+2. When the [ShowTicks]([ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ShowTicks.html)) property is set to `false`.
 
    {% tabs %}
 
@@ -293,17 +293,17 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
    {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img21.jpeg)
+![Ticks hidden](Interactive-Features_images/Interactive-Features_img21.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img22.jpeg)
+![Ticks hidden](Interactive-Features_images/Interactive-Features_img22.jpeg)
 
 
 
 ## Setting tick frequency
 
-The ticks can be placed at required intervals by setting the TickFrequency property to required number. For example, if the range is set from 0-100, where minimum is set to 0 and maximum is set to 100, and the TickFrequency is set to 20, then Ticks will be placed at positions 0,20,40,..,100.
+The ticks can be placed at required intervals by setting the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~TickFrequency.html) property to required number. For example, if the range is set from 0-100, where minimum is set to 0 and maximum is set to 100, and the [TickFrequency](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~TickFrequency.html) is set to 20, then Ticks will be placed at positions 0,20,40,..,100.
 
 {% tabs %}
 
@@ -315,17 +315,17 @@ rangeSlider.TickFrequency = 3;
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img23.jpeg)
+![tick frequency](Interactive-Features_images/Interactive-Features_img23.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img24.jpeg)
+![tick frequency](Interactive-Features_images/Interactive-Features_img24.jpeg)
 
 
 
 ## Setting orientation
 
-The layout of the range slider can be defined using the Orientation property. The orientation of the control can either be vertical or horizontal.
+The layout of the range slider can be defined using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Orientation.html) property. The orientation of the control can either be vertical or horizontal.
 
 1. When Orientation is set to Horizontal.
 
@@ -340,11 +340,11 @@ The layout of the range slider can be defined using the Orientation property. Th
    {% endtabs %}
 
 
-   ![](Interactive-Features_images/Interactive-Features_img25.jpeg)
+   ![orientation](Interactive-Features_images/Interactive-Features_img25.jpeg)
 
 
 
-   ![](Interactive-Features_images/Interactive-Features_img26.jpeg)
+   ![Horizontal orientation](Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
 
@@ -364,17 +364,17 @@ The layout of the range slider can be defined using the Orientation property. Th
 
    {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img27.jpeg)
+![Orientation](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img28.jpeg)
+![Vertical orientation](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
 
 
 ## Setting SliderMin and SliderMax
 
-This position of the right and left thumb can be set using the SliderMin and SliderMax properties.
+This position of the right and left thumb can be set using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMin.html) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMax.html) properties.
 
 In the following example, the position of the right and left thumbs is set to 7,2.
 
@@ -393,17 +393,17 @@ rangeSlider.SliderMin = 2;
 {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![Slider value](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img30.jpeg)
+![Slider value](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
 
 
 ## Setting minimum and maximum values
 
-These properties specify the Minimum and Maximum bounds of the RangeSlider control till which the channel extends.
+These properties specify the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Minimum.html) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Maximum.html) bounds of the RangeSlider control till which the channel extends.
 
 In the following example the maximum bound is set to 10.
 
@@ -422,17 +422,17 @@ rangeSlider.Minimum = 0;
 {% endtabs %}
 
 
-![](Interactive-Features_images/Interactive-Features_img31.jpeg)
+![minimum value](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
 
 
-![](Interactive-Features_images/Interactive-Features_img32.jpeg)
+![maximum value](Interactive-Features_images/Interactive-Features_img32.jpeg)
 
 
 
 ## Events
 
-Scroll
+* [Scroll event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Scroll_EV.html)
 
 Occurs when the mouse moves any of the thumb over the channel.
 
@@ -458,7 +458,7 @@ private void rangeSlider1_Scroll(object sender, EventArgs e)
 
 {% endtabs %}
 
-#### ValueChanged
+* [ValueChanged event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~ValueChanged_EV.html)
 
 Occurs when the value of SliderMin or SliderMax changes.
 

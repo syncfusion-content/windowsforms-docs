@@ -15,14 +15,12 @@ For example if the user wants to enter 32000, he just needs to enter 32 and then
 
 {% tabs %}
 {% highlight C# %}
-
 private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
 {
     double v = percentTextBox1.PercentValue;
     switch(e.KeyCode)
     {
-
-// Enter the value as multiples of thousand.
+        // Enter the value as multiples of thousand.
         case Keys.G : v = v * 1000000000;
         break;
         
@@ -34,11 +32,8 @@ private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
     }   
     percentTextBox.PercentValue = v;
 }
-
 {% endhighlight %}
-
-{% highlight vb %}
-
+{% highlight VB %}
 Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 Dim v As Double = percentTextBox1.PercentValue
 Select e.KeyCode
@@ -55,7 +50,6 @@ v = v * 1000
 End Select
 percentTextBox.PercentValue = v
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,11 +61,9 @@ The following implementation will illustrate how this can be achieved. Here we a
 
 {% tabs %}
 {% highlight C# %}
-
 private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
 {
-
-// Increments the PercentTextBoxValue.
+    // Increments the PercentTextBoxValue.
     double v = percentTextBox1.PercentValue;
     switch(e.KeyCode)
     {
@@ -83,11 +75,8 @@ private void percentTextBox1_KeyDown(object sender, KeyEventArgs e)
     }
     percentTextBox1.PercentValue = v;
 }
-
 {% endhighlight %}
-
-{% highlight vb %}
-
+{% highlight VB %}
 Private Sub percentTextBox1_KeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
 
 ' Increments the PercentTextBoxValue.
@@ -102,6 +91,5 @@ v = v-1
 End Select
 percentTextBox1.PercentValue = v
 End Sub
-
 {% endhighlight %}
 {% endtabs %}
