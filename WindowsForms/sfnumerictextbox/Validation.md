@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SfNumericTextBox Validation.
+title: Validation | SfNumericTextBox | WindowsForms | Syncfusion
 description: This section provides the information about the SfNumericTextBox validation.
 platform: WindowsForms
 control: SfNumericTextBox
@@ -13,7 +13,7 @@ SfNumericTextBox allows data validation, which enables user to validate the valu
 
 ## ValidationMode
 
-This property decides whether to validate the entered text on KeyPress or on LostFocus. By default, the validation is done at lost focus.
+This [ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~ValidationMode.html) property decides whether to validate the entered text on KeyPress or on LostFocus. By default, the validation is done at lost focus.
 
 *	KeyPress
     The decimal mask will be maintained while entering value and the MinValue, MaxValue validation will be carried out while entering the value.
@@ -39,7 +39,7 @@ Me. numericTextBox.ValidationMode = Syncfusion.WinForms.Input.Enums.ValidationMo
 
 ## ValueChangeMode
 
-The ValueChangeMode property is used to mention when the value need to update, either in key pressed or in lost focus. When ValueChangeMode is assigned to KeyPress, the value property will get updated for each key press. While in LostFocus, the Value property will get updated only when control lost its focus.
+The [ValueChangeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~ValueChangeMode.html) property is used to mention when the value need to update, either in key pressed or in lost focus. When ValueChangeMode is assigned to KeyPress, the value property will get updated for each key press. While in LostFocus, the Value property will get updated only when control lost its focus.
 
 *	LostFocus
 *	KeyPress
