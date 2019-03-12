@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add ImageCollection to HubTile for Transition Effects | WindowsForms | Syncfusion
+title: How to add ImageCollection to HubTile | WindowsForms | Syncfusion
 description: How to add ImageCollection to HubTile for Transition Effects
 platform: WindowsForms
 control: HubTile
@@ -9,68 +9,29 @@ documentation: ug
 
 # How to add ImageCollection to HubTile for transition effects?
 
-
-
-You can achieve this requirement using HubTile ImageList and ImageListAdv properties.
-
-
-
-<Table>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>ImageListAdv</td>
-<td>This property holds to ImageListAdv instance that holds image collection for HubTile transition effects.</td>
-</tr>
-<tr>
-<td>ImageList</td>
-<td>This property holds to ImageList instance that holds image collection for HubTile transition effects.</td>
-</tr>
-</Table>
- 
+You can achieve this requirement using HubTile [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageList.html) and [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageListAdv.html) properties.
 
 This is configured either through code or form designer.
 
 #### Through code
 
 {% tabs %}
-
 {% highlight C# %}  
-
- 
-
 this.HubTile1.ImageListAdv = this.ImageListAdv;
-
- 
-
 this.HubTile1.ImageList = this.ImageList;
-
- {% endhighlight %}
-
-{% highlight VB %} 
- 
-
-Me.HubTile1.ImageListAdv = Me.ImageListAdv
-
- 
-
-Me.HubTile1.ImageList = Me.ImageList
-
 {% endhighlight %}
-
+{% highlight VB %} 
+Me.HubTile1.ImageListAdv = Me.ImageListAdv
+Me.HubTile1.ImageList = Me.ImageList
+{% endhighlight %}
 {% endtabs %}
 
 #### Through designer
 
-The following screenshot displays the ImageListAdv property.
+The following screenshot displays the [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageListAdv.html) property.
 
-
-![](Frequently-asked-questions-images/FAQ_img1.png)
-
+![Add ImageListAdv](Frequently-asked-questions-images/FAQ_img1.png)
 
 The following screenshot displays the ImageList property.
 
-
-![](Frequently-asked-questions-images/FAQ_img2.png)
+![Add ImageList](Frequently-asked-questions-images/FAQ_img2.png)

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Style
 
- The GroupView control has rich set of themes for professional representation. You can easily modify the look and feel of the GroupView using the built-in themes.
+ The GroupView control has rich set of themes for professional representation. You can easily modify the look and feel of the GroupView using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~Style.html) property.
 
 It has the below themes.
 
