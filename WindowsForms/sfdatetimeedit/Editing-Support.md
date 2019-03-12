@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime Editing Modes of SfDateTimeEdit control for Windows Forms
+title: DateTime Editing Modes | SfDateTimeEdit | Windows Forms | Syncfusion
 description: How to use different editing modes of SfDateTimeEdit control
 platform: WindowsForms
 control: SfDateTimeEdit
@@ -9,14 +9,14 @@ documentation: ug
 
 # DateTime editing
 
-The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. The `DateTimeEditingMode` decides how to insert the input values for the SfDateTimeEdit from the keyboard. The DateTimeText can be edited by two ways as follows:
+The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. The [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) decides how to insert the input values for the SfDateTimeEdit from the keyboard. The DateTimeText can be edited by two ways as follows:
 
 * Default editing
 * Mask editing
 
 ## Default editing
 
-The DateTime can be edited in the textbox of the `SfDateTimeEdit` control when the `DateTimeEditingMode` is default. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the SfDateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
+The DateTime can be edited in the textbox of the `SfDateTimeEdit` control when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) is default. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the SfDateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Default
 
 {% endtabs %} 
 
-![](editing-support-images/default.png)
+![Default editing](editing-support-images/default.png)
 
 ## Mask editing
 
@@ -80,11 +80,11 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %}
 
-![](editing-support-images/mask.png)
+![Mask editing](editing-support-images/mask.png)
 
 ## ReadOnly
 
-This control supports `ReadOnly` which is used to restrict edit date and time fields in the `SfDateTimeEdit`. By setting the ReadOnly to **true**, you can restrict the text editing in the `SfDateTimeEdit` and you can change the value only by clicking up-down buttons or pick the date from the drop-down `SfCalendar`.
+This control supports `ReadOnly` which is used to restrict edit date and time fields in the `SfDateTimeEdit`. By setting the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ReadOnly.html) to **true**, you can restrict the text editing in the `SfDateTimeEdit` and you can change the value only by clicking up-down buttons or pick the date from the drop-down `SfCalendar`.
 
 {% tabs %}
 
@@ -106,4 +106,4 @@ Me.dateTimeEdit.ReadOnly = false
 
 {% endtabs %}
 
-![](editing-support-images/readonly.png)
+![Read only support](editing-support-images/readonly.png)

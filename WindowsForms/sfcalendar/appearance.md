@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance of SfCalendar control for Windows Forms
+title: Appearance of SfCalendar | WindowsForms | Syncfusion
 description: The appearance of header, footer and cells.
 platform: WindowsForms
 control: SfCalendar
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance
 
-This section explains how to customize the appearance of header, footer, and cells in the calendar by using `style`properties.
+This section explains how to customize the appearance of header, footer, and cells in the calendar by using [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~Style.html) properties.
 
 ## Customize header appearance
 
-The BackColor and ForeColor of each part in the calendar header can be customized. The height of the calendar header can be customized by using the `HeaderHeight` property, and the width of header can be updated automatically from the calendar width.
+The BackColor and ForeColor of each part in the calendar header can be customized. The height of the calendar header can be customized by using the [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~HeaderHeight.html) property, and the width of header can be updated automatically from the calendar width.
 
 ### Customize header text
 
@@ -90,7 +90,7 @@ Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.
 
 {% endtabs %} 
 
-![](appearance-images/headercustomizations.png)
+![SfCalendar header customization](appearance-images/headercustomizations.png)
 
 ## Customize navigation buttons
 
@@ -140,11 +140,11 @@ The visibility and alignment of navigation buttons can also be customized.
 
 {% endtabs %} 
 
-![](appearance-images/navigationcolor.png)
+![Navigation button color customization](appearance-images/navigationcolor.png)
 
 ### Visibility of navigation buttons
 
-Navigation buttons are used to move between views in the `SfCalendar`. The visibility of navigation buttons can be customized by the `ShowNavigationButton` property. The following code example illustrates the same:
+Navigation buttons are used to move between views in the `SfCalendar`. The visibility of navigation buttons can be customized by the [ShowNavigationButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowNavigationButton.html) property. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -166,11 +166,11 @@ Me.sfCalendar.ShowNavigationButton = false
 
 {% endtabs %}
 
-![](appearance-images/navigationbuttons.png)
+![Hide the navigation buttons](appearance-images/navigationbuttons.png)
 
 ### Navigation buttons alignment
 
-Navigation buttons can be aligned in different sides relative to the calendar header. The alignment of navigation buttons can be customized by the `NavigationButtonAlignment`. The following code example illustrates the same:
+Navigation buttons can be aligned in different sides relative to the calendar header. The alignment of navigation buttons can be customized by the [NavigationButtonAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~NavigationButtonAlignment.html). The following code example illustrates the same:
 
 {% tabs %}
 
@@ -192,7 +192,7 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 {% endtabs %}
 
-![](appearance-images/navbuttonalignleft.png)
+![Navigation buttons alignment](appearance-images/navbuttonalignleft.png)
 
 {% tabs %}
 
@@ -214,11 +214,11 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 {% endtabs %}
 
-![](appearance-images/navbuttonalignboth.png)
+![Both navigation buttons alignment](appearance-images/navbuttonalignboth.png)
 
 ## Customize footer appearance
 
-The BackColor and ForeColor of each part in the calendar footer can be customized. The height of the calendar footer can be customized by using the `FooterHeight` property, and the width of the footer can be updated automatically from the calendar width. The calendar control footer color can be customized by the following style properties:
+The BackColor and ForeColor of each part in the calendar footer can be customized. The height of the calendar footer can be customized by using the [FooterHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~FooterHeight.html) property, and the width of the footer can be updated automatically from the calendar width. The calendar control footer color can be customized by the following style properties:
 
 * BackColor: Changes the background color of footer in the calendar.
 * ForeColor: Changes the foreground color of footer in the calendar.
@@ -275,7 +275,7 @@ Me.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 {% endtabs %} 
 
-![](appearance-images/footercustomizations.png)
+![Footer customization](appearance-images/footercustomizations.png)
 
 ## Customize cell appearance
 
@@ -414,7 +414,7 @@ Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 1
 
 {% endtabs %} 
 
-![](appearance-images/cellcustomization.png)
+![Cell appearance](appearance-images/cellcustomization.png)
 
 ## Themes
 
@@ -482,7 +482,7 @@ Imports Syncfusion.WinForms.Core.Events
 
 ### Apply theme
 
-Appearance of SfCalendar can be changed by `ThemeName` of SfCalendar.
+Appearance of SfCalendar can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ThemeName.html) of SfCalendar.
 
 #### Office2016Colorful
 
@@ -508,7 +508,7 @@ Me.sfCalendar.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](appearance-images/Office2016Colorful.png)
+![SfCalendar Office2016Colorful theme](appearance-images/Office2016Colorful.png)
 
 #### Office2016White
 
@@ -534,7 +534,7 @@ Me.sfCalendar.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](appearance-images/Office2016White.png)
+![SfCalendar Office2016White theme](appearance-images/Office2016White.png)
 
 #### Office2016DarkGray
 
@@ -560,7 +560,7 @@ Me.sfCalendar.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](appearance-images/Office2016DarkGray.png)
+![SfCalendar Office2016DarkGray theme](appearance-images/Office2016DarkGray.png)
 
 #### Office2016Black
 
@@ -586,11 +586,11 @@ Me.sfCalendar.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](appearance-images/Office2016Black.png)
+![SfCalendar Office2016Black theme](appearance-images/Office2016Black.png)
 
 ## Hide trailing dates   
 
-The `SfCalendar` allows you to hide the days of next month and previous month in the calendar to enhance the appearance of the calendar. This can be achieved by disabling the `TrailingDatesVisible` property. The following code example illustrates how to hide trailing dates in the calendar:
+The `SfCalendar` allows you to hide the days of next month and previous month in the calendar to enhance the appearance of the calendar. This can be achieved by disabling the [TrailingDatesVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~TrailingDatesVisible.html) property. The following code example illustrates how to hide trailing dates in the calendar:
 
 {% tabs %}
 
@@ -612,11 +612,11 @@ this.SfCalendar1.TrailingDatesVisible = False
 
 {% endtabs %}
 
-![](appearance-images/inactivedaysfalse.png)
+![Hide trailing dates](appearance-images/inactivedaysfalse.png)
 
 ## Abbreviating day names
 
-By default, the day names are displayed in an abbreviated form in the calendar control. They can also be displayed in an expanded form by setting the `ShowAbbreviatedDayNames` property to false. This indicates whether the name of day is abbreviated or expanded. The following code example illustrates how to display the day names in an expanded form:
+By default, the day names are displayed in an abbreviated form in the calendar control. They can also be displayed in an expanded form by setting the [ShowAbbreviatedDayNames](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowAbbreviatedDayNames.html) property to false. This indicates whether the name of day is abbreviated or expanded. The following code example illustrates how to display the day names in an expanded form:
 
 {% tabs %}
 
@@ -638,7 +638,7 @@ Me.sfCalendar.ShowAbbreviatedDayNames = false
 
 {% endtabs %}
 
-![](appearance-images/abbreviateddaynames.png)
+![Abbreviating day names](appearance-images/abbreviateddaynames.png)
 
 ## Right-to-left
 
@@ -664,11 +664,11 @@ Me.sfCalendar.RightToLeft = RightToLeft.Yes
 
 {% endtabs %}
 
-![](appearance-images/righttoleft.png)
+![Right to left support](appearance-images/righttoleft.png)
 
 ## Highlight today cell 
 
-The today cell will be highlighted even the selected date differs from today in the `SfCalendar`. The highlight of today cell can be changed by the `HighlightTodayCell` property. The today date cell can also be customized by using the following style properties. The following code snippets illustrates the same:
+The today cell will be highlighted even the selected date differs from today in the `SfCalendar`. The highlight of today cell can be changed by the [HighlightTodayCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~HighlightTodayCell.html) property. The today date cell can also be customized by using the following style properties. The following code snippets illustrates the same:
 
 {% tabs %}
 
@@ -690,7 +690,7 @@ Me.sfCalendar.HighlightTodayCell = true
 
 {% endtabs %}
 
-![](appearance-images/todaycell.png)
+![Highlight today cell](appearance-images/todaycell.png)
 
 ### Customize today cell appearance
 
@@ -703,7 +703,7 @@ The BackColor, ForeColor, and BorderColor of the today cell in the calendar can 
 
 ## Change visibility of the footer
 
-The visibility of the calendar footer can be customized by using the `ShowFooter` property which contains today and none buttons. The visibility of today and none buttons can be represented separately by `ShowToday` and `ShowNone` properties respectively. The following code example illustrates the same:
+The visibility of the calendar footer can be customized by using the [ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowFooter.html) property which contains today and none buttons. The visibility of today and none buttons can be represented separately by [ShowToday](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowToday.html) and [ShowNone](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowNone.html) properties respectively. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -729,7 +729,7 @@ Me.sfCalendar.ShowNone = false
 
 {% endtabs %}
 
-![](appearance-images/showtoday.png)
+![Show today button](appearance-images/showtoday.png)
 
 {% tabs %}
 
@@ -755,11 +755,11 @@ Me.sfCalendar.ShowToday = false
 
 {% endtabs %}
 
-![](appearance-images/shownone.png)
+![show none button](appearance-images/shownone.png)
 
 ## Customize splitter appearance
 
-The visibility of splitters in the calendar control can be customized by setting the `ShowHorizontalSplitter` and `ShowVerticalSplitter` properties. The splitters color for horizontal and vertical splitters can be customized by the `HorizontalSplitterColor` and `VerticalSplitterColor` respectively. The following code example illustrates the same:
+The visibility of splitters in the calendar control can be customized by setting the [ShowHorizontalSplitter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowHorizontalSplitter.html) and [ShowVerticalSplitter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowVerticalSplitter.html) properties. The splitters color for horizontal and vertical splitters can be customized by the [HorizontalSplitterColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Styles.CalendarVisualStyle~HorizontalSplitterColor.html) and [VerticalSplitterColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Styles.CalendarVisualStyle~VerticalSplitterColor.html) respectively. The following code example illustrates the same:
 
 {% tabs %}
 
@@ -805,4 +805,4 @@ Me.sfCalendar.Style.VerticalSplitterColor = Color.Green
 
 {% endtabs %}
 
-![](appearance-images/splittercolor.png)
+![Customize splitter appearance](appearance-images/splittercolor.png)
