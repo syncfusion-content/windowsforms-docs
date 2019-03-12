@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set Layout Group location in TileLayout | WindowsForms | Syncfusion
+title: Layout group location | WindowsForms | Syncfusion
 description: How to set Layout Group location in TileLayout
 platform: WindowsForms
 control: TileLayout 
@@ -9,7 +9,7 @@ documentation: ug
 
 # How to set layout group location in TileLayout?
 
-We can customize the Layout Group location by using the MainLayout property in TileLayout.
+We can customize the Layout Group location by using the [MainLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout~MainLayout.html) property in [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
 The alignment of the Layout can be Near, Center, and Far as shown in the following code snippet.
 
@@ -37,7 +37,7 @@ Me.tileLayout1.MainLayout.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignme
 {% endtabs %}
 
 
-The starting location of the Layout group can be assigned by using the properties named HorzNearMargin, HorzFarMargin, TopMargin, BottomMargin. Following is the Code snippet which demonstrates the same.
+The starting location of the Layout group can be assigned by using the properties named [HorzNearMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzNearMargin.html), [HorzFarMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzFarMargin.html), [TopMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~TopMargin.html), [BottomMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~BottomMargin.html). Following is the Code snippet which demonstrates the same.
 
 {% tabs %}
 

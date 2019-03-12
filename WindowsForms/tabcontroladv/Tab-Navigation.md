@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab navigation
 
-TabPrimitives is a collection of NavigationControls used to navigate through the TabPages of the TabControlAdv. 
+[TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) is a collection of NavigationControls used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
 
 The various TabPrimitives are,
 
@@ -23,43 +23,43 @@ The various TabPrimitives are,
 * Close - This button is used to close the TabControlAdv. It can be set to appear for the whole control or individual tab pages. 
 * Custom - User can add more buttons through Custom TabPrimitive. This helps the user to create/add more buttons and handle their own click events.
 
-![](TabPrimitives_images/TabPrimitives_img1.png)
+![Tab primitives](TabPrimitives_images/TabPrimitives_img1.png)
 
-N> The TabControlAdv.HitTestTabs() method can be used to return the tab at the specified location.
+N> The [TabControlAdv.HitTestTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~HitTestTabs.html) method can be used to return the tab at the specified location.
 
 ## TabPrimitives features
 
-Apart from doing the defined task of Navigation, TabPrimitivesHost provides options to add Images, ToolTips, and to enable the Visible property for each TabPrimitive.
+Apart from doing the defined task of Navigation, [TabPrimitivesHost](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPrimitivesHost.html) provides options to add Images, ToolTips, and to enable the Visible property for each [TabPrimitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitive.html).
 
 
-N> You can set the other properties for adding Images and ToolTips for the TabPrimitives using the TabPrimitives Collection Editor.
+N> You can set the other properties for adding Images and ToolTips for the TabPrimitives using the [TabPrimitives Collection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) Editor.
 
 ## Creating TabPrimitives
 
-The TabPrimitives can be added to the TabControlAdv by using either of the following ways,
+The [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) can be added to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) by using either of the following ways,
 
 * Through designer
 * Through code-behind
 
 ### Through designer
 
-To create TabPrimitives through designer, follow the given steps:
+To create [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) through designer, follow the given steps:
 
-1. After adding a TabControlAdv with a set of TabPages in it, select the TabPrimitivesHost.TabPrimitives property in the Properties window.
+1. After adding a TabControlAdv with a set of [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) in it, select the [TabPrimitivesHost.TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesHost~TabPrimitives.html) property in the Properties window.
 
-   ![](TabPrimitives_images/TabPrimitives_img5.jpeg)
+   ![TabPrimitives added by designer](TabPrimitives_images/TabPrimitives_img5.jpeg)
 
 
 
 2. A TabPrimitives Collection Editor will be opened. Click the Add option in the Editor to add a TabPrimitive.
 
-   ![](TabPrimitives_images/TabPrimitives_img6.jpeg)
+   ![Need to set tab primitive](TabPrimitives_images/TabPrimitives_img6.jpeg)
 
 
 
 3. Set the TabPrimitiveType as required and click OK.
 
-   ![](TabPrimitives_images/TabPrimitives_img7.jpeg)
+   ![Custom primitive type](TabPrimitives_images/TabPrimitives_img7.jpeg)
 
 
 ### Through code
@@ -117,10 +117,10 @@ Private Me.tabControlAdv1.TabPrimitivesHost.Visible = True
 
 {% endtabs %}
 
-N> After adding TabPrimitives, set the TabPrimitiveHost.Visible property to `true`. Now the added TabPrimitives will be visible in the TabControlAdv.
+N> After adding [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html), set the [TabPrimitiveHost.Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitive~Visible.html) property to `true`. Now the added [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) will be visible in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
-`SwitchPagesForDialogKeys` property available for the TabControlAdv specifies if the control should switch TabPages on pressing <kbd>Ctrl+Tab</kbd> or <kbd>Ctrl+Shift+Tab</kbd>.
+[SwitchPagesForDialogKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SwitchPagesForDialogKeys.html) property available for the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) specifies if the control should switch [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) on pressing <kbd>Ctrl+Tab</kbd> or <kbd>Ctrl+Shift+Tab</kbd>.
 
-The `TabPrimitiveHost` property allows to customize the navigation and close buttons by defining it through the `TabPrimitives` property Collection. The TabPrimitives can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First/Previous/Next/LastTab, Next/PreviousPage, and Close/DropDown options.
+The [TabPrimitivesHost](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPrimitivesHost.html) property allows to customize the navigation and close buttons by defining it through the [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) property Collection. The [TabPrimitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitivesCollection.html) can be added and each primitive can be assigned with the type to be used, which includes primitives to traverse to the First/Previous/Next/LastTab, Next/PreviousPage, and Close/DropDown options.
 
-![](TabPrimitives_images/TabPrimitives_img10.png)
+![Tab primitives](TabPrimitives_images/TabPrimitives_img10.png)

@@ -1,55 +1,21 @@
 ---
 layout: post
-title: TrackBarEx | WindowsForms | Syncfusion
+title: Features | WindowsForms | Syncfusion
 description: trackbarex
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# TrackBarEx
+# TrackBarEx Features
 
 The TrackBarEx is a new Office2007 control, which has a track bar or a pointer which slides between the minimum value and maximum value specified. The user can drag the track bar along the line and also, the pointer can be placed at a particular point by clicking a position inside this TrackBar. 
-
-A TrackBarEx can be added to your form by simply dragging-and-dropping the control from the toolbox.
-
-![](TrackBarEx_images/TrackBarEx_img1.jpeg)
-
-
-
-![](TrackBarEx_images/TrackBarEx_img2.jpeg)
-
-
-
-It can be created programmatically using the below code snippets.
-
-{% highlight c# %}
-
-private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx1;
-
-this.trackBarEx1 = new Syncfusion.Windows.Forms.Tools.TrackBarEx();
-
-this.Controls.Add(this.trackBarEx1);
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-
-Private trackBarEx1 As Syncfusion.Windows.Forms.Tools.TrackBarEx
-
-Me.trackBarEx1 = New Syncfusion.Windows.Forms.Tools.TrackBarEx 
-
-Me.Controls.Add(Me.trackBarEx1)
-
-{% endhighlight %}
-
 
 Various Features and Customization options are discussed in the following topics.
 
 ## Button, Slider and Channel Settings 
 
 The properties which controls the size of various components of the TrackBarEx are as follows.
-
 
 <table>
 <tr>
@@ -127,9 +93,9 @@ Me.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed
 
 {% endhighlight %}
 
-![](TrackBarEx_images/TrackBarEx_img3.jpeg)
+![TrackBarEx button color](TrackBarEx_images/TrackBarEx_img3.jpeg)
 
-![](TrackBarEx_images/TrackBarEx_img4.jpeg)
+![TrackBarEx button hover color](TrackBarEx_images/TrackBarEx_img4.jpeg)
 
 ## TrackBar Appearance
 
@@ -137,7 +103,7 @@ Me.trackBarEx1.PushedButtonEndColor = System.Drawing.Color.OrangeRed
 
 A focus rectangle for the TrackBarEx control can be shown or hidden using ShowFocusRect property.
 
-![](TrackBarEx_images/TrackBarEx_img5.jpeg)
+![TrackBarEx focus rectangle](TrackBarEx_images/TrackBarEx_img5.jpeg)
 
 ### Gradient Start and End Color
 
@@ -159,7 +125,7 @@ Me.trackBarEx1.TrackBarGradientStart = System.Drawing.Color.MintCream
 
 {% endhighlight %}
 
-![](TrackBarEx_images/TrackBarEx_img6.jpeg)
+![TrackBarEx gradient color](TrackBarEx_images/TrackBarEx_img6.jpeg)
 
 The control can be given a transparent background by enabling the Transparent property.
 
@@ -175,7 +141,7 @@ Me.trackBarEx1.Transparent = True
 
 {% endhighlight %}
 
-![](TrackBarEx_images/TrackBarEx_img7.jpeg)
+![TrackBarEx transparent](TrackBarEx_images/TrackBarEx_img7.jpeg)
 
 ### TrackBarEx Orientation
 
@@ -205,7 +171,7 @@ Me.trackBarEx1.Orientation = Orientation.Horizontal
 
 {% endhighlight %}
 
-![](TrackBarEx_images/TrackBarEx_img8.jpeg)
+![TrackBarEx orientation](TrackBarEx_images/TrackBarEx_img8.jpeg)
 
 
 ## TrackBar Value
@@ -331,4 +297,4 @@ End Sub
 {% endhighlight %}
 
 
-![](TrackBarEx_images/TrackBarEx_img9.jpeg)
+![TrackBarEx button color customization](TrackBarEx_images/TrackBarEx_img9.jpeg)

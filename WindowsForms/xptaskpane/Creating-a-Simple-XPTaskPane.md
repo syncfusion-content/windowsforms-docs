@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-This section describes how to add `XPTaskPane` control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,9 +19,9 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with XPTaskPane
+## Creating simple application with XPTaskPane
 
-You can create the Windows Forms application with XPTaskPane control as follows:
+You can create the Windows Forms application with [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Form Designer](#adding-control-via-form-designer)
@@ -29,11 +29,11 @@ You can create the Windows Forms application with XPTaskPane control as follows:
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the XPTaskPane with functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) with functionalities.
 
 ## Adding control via Form designer
 
-The XPTaskPane control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -42,13 +42,13 @@ The XPTaskPane control can be added to the application by dragging it from the t
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img1.png)
+![Drag and drop the XPTaskPane control into form](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img1.png)
 
 **Adding TaskPane pages**
 
-To add pages into XPTaskPane, Click on `Add Page` in Smart Tags of XPTaskPane in designer view. On dropping XPTaskPane, WizardContainer will be automatically added as `TaskPanePageContainer`.
+To add pages into XPTaskPane, Click on [Add Page](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~AddPage.html) in Smart Tags of [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) in designer view. On dropping [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html), [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardContainer.html) will be automatically added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane~TaskPanePageContainer.html).
 
-![](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img2.png)
+![Task pages added by designer](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img2.png)
 
 ## Adding control manually using code
 
@@ -81,7 +81,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %} 
 
-**Step 3** - Create `XPTaskPane` control instance and add it to the form.
+**Step 3** - Create [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -103,12 +103,12 @@ Me.Controls.Add(xpTaskPane1)
 
 {% endtabs %}
 
-![](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img3.png)
+![XPTaskPane control added by code](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img3.png)
 
 
 **Adding WizardContainer as TaskPanePageContainer**
 
-To added pages into XPTaskPane, it is necessary to added a Container control for TaskPanePage. Here WizardContainer is added as TaskPanePageContainer.
+To added pages into [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html), it is necessary to added a Container control for TaskPanePage. Here [WizardContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardContainer.html) is added as [TaskPanePageContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane~TaskPanePageContainer.html).
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ Me.xpTaskPane1.TaskPanePageContainer = Me.wizardContainer1;
 
 **Adding XPTaskPage**
 
-Create an instance of XPTaskPage class and add it to `TaskPages` collection in XPTaskPane.
+Create an instance of [XPTaskPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPage.html) class and add it to [TaskPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane~TaskPages.html) collection in [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskPane.html).
 
 {% tabs %}
 
@@ -169,4 +169,4 @@ Me.xpTaskPane1.TaskPages = New XPTaskPage[] {
 
 {% endtabs %}
 
-![](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img4.png)
+![Task pages added by code](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img4.png)
