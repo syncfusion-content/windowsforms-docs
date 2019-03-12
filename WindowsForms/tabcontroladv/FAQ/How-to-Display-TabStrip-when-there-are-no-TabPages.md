@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-Display-TabStrip-when-there-are-no-TabPages | WindowsForms | Syncfusion
+title: TabStrip without tab page | WindowsForms | Syncfusion
 description: how to display tabstrip when there are no tabpages
 platform: WindowsForms
 control: TabsPackage
@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Display TabStrip when there are no TabPages?
 
-The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a `ReserveTabSpace` property which makes the tab strip visible when set to `true`. `ReservedSpace` property is used to specify the height of the tab strip when the above bool property is enabled.
+The TabStrip can be made visible even if there are no TabPages added. The TabControlAdv has a [ReserveTabSpace](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ReserveTabSpace.html) property which makes the tab strip visible when set to `true`. [ReservedSpace](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ReservedSpace.html) property is used to specify the height of the tab strip when the above bool property is enabled.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ Me.tabControlAdv1.ReservedSpace = 25
 
 {% endtabs %}
 
-![](How-to-Display-TabStrip-when-there-are-no-TabPages_images/How-to-Display-TabStrip-when-there-are-no-TabPages_img1.jpeg)
+![Reserved tab space](How-to-Display-TabStrip-when-there-are-no-TabPages_images/How-to-Display-TabStrip-when-there-are-no-TabPages_img1.jpeg)
 
 
 

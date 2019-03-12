@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Customize TabRendering?
 
-The simplest way to customize TabDrawing is to handle the `DrawItem` event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab.
+The simplest way to customize TabDrawing is to handle the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~DrawItem_EV.html) event. A departure from the normal is the TabControlAdv's ability to let you selectively draw portions of the tab. For this purpose, TabDrawing is classified into three portions:Background,Border and Interior (text and image). The event args lets you delegate drawing of one or more portions of the tab to the default drawing code while custom drawing the other portions of the tab.
 
 
 * The following code sample demonstrates how to create Yahoo Messenger-like tabs.
@@ -210,7 +210,7 @@ End Sub
 
 {% endtabs %}
 
-![](How-to-Customize-TabRendering_images/How-to-Customize-TabRendering_img2.jpeg)
+![Tab customization](How-to-Customize-TabRendering_images/How-to-Customize-TabRendering_img2.jpeg)
 
 
 

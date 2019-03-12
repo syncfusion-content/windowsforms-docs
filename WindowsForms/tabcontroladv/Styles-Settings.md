@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-Settings | WindowsForms | Syncfusion
+title: Styles-Settings | TabControlAdv | WindowsForms | Syncfusion
 description: styles settings
 platform: WindowsForms
 control: TabControlAdv
@@ -9,26 +9,15 @@ documentation: ug
 
 # Style settings
 
-This section discusses the various Style Settings available in TabControlAdv.
+This section discusses the various Style Settings available in [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ## TabStyles
 
-TabControlAdv provides options to customize the TabStyle settings. Styles can be set through `TabStyle` property.
-
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-TabStyle</td><td>
-Specifies the look and feel of the TabControlAdv. The options include,2D,3D,Workbook,InternetExplorer7Style,OneNoteStyle,VS2005DockingStyle,Office2007Style,VS2005Style,VS2005DockingStyleBeta,Office2003Style, VS2008Style Metro, Office2016Colorful, Office2016White, Office2016DarkGray and Office2016Black.</td></tr>
-</table>
+[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) provides options to customize the [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabStyle.html) settings. Styles can be set through [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabStyle.html) property.
 
 #### 2D
 
-This option helps to set the 2D theme.
+This option helps to set the [2D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRenderer2D.html) theme.
 
 {% tabs %}
 
@@ -50,12 +39,12 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer2D
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img15.png)
+![TabStyle is 2D](Styles-Settings_images/Styles-Settings_img15.png)
 
 
 #### 3D
 
-This option helps to set the 3D theme.
+This option helps to set the [3D](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRenderer3D.html) theme.
 
 {% tabs %}
 
@@ -77,11 +66,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRenderer3D
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img16.png)
+![TabStyle is 3D](Styles-Settings_images/Styles-Settings_img16.png)
 
 #### Workbook
 
-This option helps to set the Workbook theme.
+This option helps to set the [Workbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererWorkbookMode.html) theme.
 
 {% tabs %}
 
@@ -103,11 +92,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWo
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img17.png)
+![Workbook tab style](Styles-Settings_images/Styles-Settings_img17.png)
 
 #### InternetExplorer7
 
-This option helps to set the InternetExplorer7 theme.
+This option helps to set the [InternetExplorer7](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererIE7.html) theme.
 
 {% tabs %}
 
@@ -129,11 +118,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererIE
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img18.png)
+![Internet explorer tab style](Styles-Settings_images/Styles-Settings_img18.png)
 
 #### OneNoteStyle
 
-This option helps to set the OneNoteStyle theme.
+This option helps to set the [OneNoteStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.OneNoteStyleRenderer.html) theme.
 
 {% tabs %}
 
@@ -155,11 +144,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.OneNoteStyleR
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img19.png)
+![One note tab style](Styles-Settings_images/Styles-Settings_img19.png)
 
 #### VS2005DockingStyle
 
-This option helps to set the VS2005DockingStyle.
+This option helps to set the [VS2005DockingStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbey.html).
 
 {% tabs %}
 
@@ -181,11 +170,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDo
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img20.png)
+![VS2005 docking tab style](Styles-Settings_images/Styles-Settings_img20.png)
 
 #### Office2007Blue
 
-This option helps to set the Office2007Blue theme.
+This option helps to set the [Office2007Blue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2007.html) theme.
 
 {% tabs %}
 
@@ -209,11 +198,11 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Blue
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img21.png)
+![Office2007 blue tab style](Styles-Settings_images/Styles-Settings_img21.png)
 
 #### Office2007Black
 
-This option helps to set the Office2007Black theme.
+This option helps to set the [Office2007Black](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2007.html) theme.
 
 {% tabs %}
 
@@ -237,11 +226,11 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Black
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img22.png)
+![Office2007 black tab style](Styles-Settings_images/Styles-Settings_img22.png)
 
 #### Office2007Silver
 
-This option helps to set the Office2007Silver theme.
+This option helps to set the [Office2007Silver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2007.html) theme.
 
 {% tabs %}
 
@@ -265,11 +254,11 @@ Me.tabControlAdv1.Office2007ColorScheme = Office2007Theme.Silver
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img23.png)
+![Office2007 silver tab style](Styles-Settings_images/Styles-Settings_img23.png)
 
 #### VS2005Style
 
-This option helps to set the VS2005Style.
+This option helps to set the [VS2005Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererWhidbey.html).
 
 {% tabs %}
 
@@ -291,11 +280,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererWh
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img24.png)
+![VS2005 tab style](Styles-Settings_images/Styles-Settings_img24.png)
 
 #### VS2005DockingBetaStyle
 
-This option helps to set the VS2005DockingBetaStyle.
+This option helps to set the [VS2005DockingBetaStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererDockingWhidbeyBeta.html).
 
 {% tabs %}
 
@@ -317,12 +306,12 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererDo
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img25.png)
+![VS2005 docking beta tab style](Styles-Settings_images/Styles-Settings_img25.png)
 
 
 #### Office2003
 
-This option helps to set the Office2003 theme.
+This option helps to set the [Office2003](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2003.html) theme.
 
 {% tabs %}
 
@@ -344,11 +333,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img26.png)
+![Office2003 tab style](Styles-Settings_images/Styles-Settings_img26.png)
 
 #### VS2008
 
-This option helps to set the VS2008 theme.
+This option helps to set the [VS2008](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererVS2008.html) theme.
 
 {% tabs %}
 
@@ -370,11 +359,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererVS
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img27.png)
+![VS2008 tab style](Styles-Settings_images/Styles-Settings_img27.png)
 
 #### VS2010
 
-This option helps to set the VS2010 theme.
+This option helps to set the [VS2010](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererVS2010.html) theme.
 
 {% tabs %}
 
@@ -396,11 +385,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererVS
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img28.png)
+![VS2010 tab style](Styles-Settings_images/Styles-Settings_img28.png)
 
 #### Metro
 
-This option helps to set the Metro theme.
+This option helps to set the [Metro theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererMetro.html).
 
 {% tabs %}
 
@@ -422,11 +411,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererMe
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img29.png)
+![Metro tab style](Styles-Settings_images/Styles-Settings_img29.png)
 
 #### Office2016Colorful
 
-This option helps to set the Office2016Colorful theme.
+This option helps to set the [Office2016Colorful](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful.html) theme.
 
 {% tabs %}
 
@@ -448,11 +437,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img11.png)
+![Office2016 colorful tab style](Styles-Settings_images/Styles-Settings_img11.png)
 
 #### Office2016White
 
-This option helps to set the Office2016White theme.
+This option helps to set the [Office2016White](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2016White.html) theme.
 
 {% tabs %}
 
@@ -474,11 +463,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img12.png)
+![Office2016 white tab style](Styles-Settings_images/Styles-Settings_img12.png)
 
 #### Office2016DarkGray
 
-This option helps to set the Office2016DarkGray theme.
+This option helps to set the [Office2016DarkGray](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2016DarkGray.html) theme.
 
 {% tabs %}
 
@@ -500,11 +489,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img13.png)
+![Office2016 dark gray tab style](Styles-Settings_images/Styles-Settings_img13.png)
 
 #### Office2016Black
 
-This option helps to set the Office2016Black theme.
+This option helps to set the [Office2016Black](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Black.html) theme.
 
 {% tabs %}
 
@@ -526,11 +515,11 @@ Me.tabControlAdv1.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOf
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img14.png)
+![Office2016 black tab style](Styles-Settings_images/Styles-Settings_img14.png)
 
 ## Custom color schemes
 
-Custom colors can also be applied to the TabControlAdv. 
+Custom colors can also be applied to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html). 
 
 {% tabs %}
 
@@ -561,23 +550,12 @@ Office2007Colors.ApplyManagedColors(Me, Color.Green)
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img9.jpeg)
+![Custom color](Styles-Settings_images/Styles-Settings_img9.jpeg)
 
 
 ## SizeMode
 
-The `SizeMode` of the TabStrip allows to position the TabItems according to the selected options.
-
-<table>
-<tr>
-<th>
-TabControlAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SizeMode</td><td>
-Specifies how the tabs should be sized and aligned. The options include:Normal,Fixed,FillToRight,ShrinkToFit.</td></tr>
-</table>
+The [SizeMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~SizeMode.html) of the TabStrip allows to position the TabItems according to the selected options.
 
 
 * In Normal mode, the size of each tab depends on the text and image settings of the tab.
@@ -613,5 +591,5 @@ Me.tabControlAdv1.SizeMode = Syncfusion.Windows.Forms.Tools.TabSizeMode.FillToRi
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img6.jpeg)
+![Size modes](Styles-Settings_images/Styles-Settings_img6.jpeg)
 

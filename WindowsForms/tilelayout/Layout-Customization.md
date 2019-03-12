@@ -12,7 +12,7 @@ documentation: ug
 
 ## Alignment
 
-This property sets the main Layout Group alignment in TileLayout control.
+This [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout~Alignment.html) property sets the [MainLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout_properties.html) group alignment in [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control.
 
 
 {% tabs %}
@@ -37,15 +37,15 @@ Me.tileLayout1.MainLayout.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignme
 {% endtabs %}
 
 
-![](Layout-Customization_images/NearAlignment.png)
+![Near alignment](Layout-Customization_images/NearAlignment.png)
 
-![](Layout-Customization_images/FarAlignment.png)
+![Far alignment](Layout-Customization_images/FarAlignment.png)
 
-![](Layout-Customization_images/CenterAlignment.png)
+![Center alignment](Layout-Customization_images/CenterAlignment.png)
 
 ### HorzNearMargin
 
-It indicates the left margin between the client rectangle and layout rectangle.
+[HorzNearMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzNearMargin.html) indicates the left margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -68,11 +68,11 @@ Me.tileLayout1.MainLayout.HorzNearMargin = 100
 
 {% endtabs %}
 
-![](Layout-Customization_images/HorNearMargin.png)
+![Horizontal near margin](Layout-Customization_images/HorNearMargin.png)
 
 ### HorzFarMargin
 
-It indicates the right margin between the client rectangle and the layout rectangle.
+[HorzFarMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzFarMargin.html) indicates the right margin between the client rectangle and the layout rectangle.
 
 {% tabs %}
 
@@ -95,11 +95,11 @@ Me.tileLayout1.MainLayout.HorzFarMargin = 100
 
 {% endtabs %}
 
-![](Layout-Customization_images/HorFarMargin.png)
+![Horizontal far margin](Layout-Customization_images/HorFarMargin.png)
 
 ### TopMargin
 
-Indicates the Top margin between the client rectangle and layout rectangle.
+[TopMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~TopMargin.html) indicates the Top margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -122,11 +122,11 @@ Me.tileLayout1.MainLayout.TopMargin = 20
 
 {% endtabs %}
 
-![](Layout-Customization_images/TopMargin.png)
+![Top margin](Layout-Customization_images/TopMargin.png)
 
 ### BottomMargin
 
-Indicates the Bottom margin between the client rectangle and layout rectangle.
+[BottomMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~BottomMargin.html) indicates the Bottom margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -151,11 +151,11 @@ Me.tileLayout1.MainLayout.BottomMargin = 100
 
 {% endtabs %}
 
-![](Layout-Customization_images/BottomMargin.png)
+![Bottom margin](Layout-Customization_images/BottomMargin.png)
 
 ### ReverseRows
 
-This property lays out the rows in opposite direction. If the LayoutMode is Horizontal then it lays out rows in Top to Bottom direction. If the LayoutMode is Vertical then it lays out the rows in Left to Right direction.
+This [ReverseRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout~ReverseRows.html) property lays out the rows in opposite direction. If the LayoutMode is Horizontal then it lays out rows in Top to Bottom direction. If the LayoutMode is Vertical then it lays out the rows in Left to Right direction.
 
 {% tabs %}
 
@@ -178,5 +178,5 @@ Me.tileLayout1.MainLayout.ReverseRows = true
 
 {% endtabs %}
 
-![](Layout-Customization_images/ReverseRows.png)
+![Reverse transition](Layout-Customization_images/ReverseRows.png)
 
