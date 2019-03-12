@@ -10,26 +10,9 @@ documentation: ug
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 
-
-
-<table>
-<tr>
-<th>
-GroupBar property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ExpandButtonTooltip</td><td>
-Gets or sets the tooltip text for the collapse button when the control is collapsed.</td></tr>
-<tr>
-<td>
-MinimizeButtonTooltip</td><td>
-Gets or sets the tooltip text for the collapse button when the control is expanded.</td></tr>
-<tr>
-<td>
-NavigationPaneTooltip</td><td>
-Gets or sets the navigation pane tooltip.</td></tr>
-</table>
+[ExpandButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ExpandButtonToolTip.html)
+[MinimizeButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~MinimizeButtonToolTip.html)
+[NavigationPaneTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~NavigationPaneTooltip.html)
 
 {% tabs %}
 
