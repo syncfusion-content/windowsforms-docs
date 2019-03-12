@@ -10,7 +10,7 @@ documentation: ug
 
 This Tile type resembles the Music and Video HubTile in Windows Phone. The image content of HubTile can be zoomed in and out randomly.
 
-![](Concept-and-Features_images/Concept-and-Features_img3.png)
+![PulsingTile](Concept-and-Features_images/Concept-and-Features_img3.png)
 
 
 {% tabs %}
@@ -31,7 +31,7 @@ Me.HubTile1.TileType = HubTileType.PulsingTile
 
 ## Pulse duration
 
-In PulsingTile, the time interval between Zoom In and Zoom Out operations can be modified using PulseDuration property. It decreases on increasing the value to this property and vice-versa.
+In PulsingTile, the time interval between Zoom In and Zoom Out operations can be modified using [PulseDuration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~PulseDuration.html) property. It decreases on increasing the value to this property and vice-versa.
 
 {% tabs %}
 
@@ -52,9 +52,9 @@ Me.HubTile1.PulseDuration = 2
 
 ## Pulse scale
 
-In PulsingTile, the zoom level can be set using PulseScale property.
+In PulsingTile, the zoom level can be set using [PulseScale](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~PulseScale.html) property.
 
-The following code example shows how to set the PulseScale depth.
+The following code example shows how to set the [PulseScale](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~PulseScale.html) depth.
 
 {% tabs %}
 

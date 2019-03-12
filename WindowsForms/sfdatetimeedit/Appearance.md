@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of SfDateTimeEdit control for Windows Forms
+title: Customization of SfDateTimeEdit | Windows Forms | Syncfusion
 description: Customize the visibility of UpDown Button, Key Navigation Support and DropDown Popup alignment
 platform: WindowsForms
 control: SfDateTimeEdit
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization
 
-The appearance of each and every part in the DateTimeEdit can be customized. The SfDateTimeEdit allows you to customize the drop-down icon, calendar, and up-down buttons by using `style` properties.
+The appearance of each and every part in the DateTimeEdit can be customized. The SfDateTimeEdit allows you to customize the drop-down icon, calendar, and up-down buttons by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Style.html) properties.
 
 ## Customize DateTimeEdit appearance
 
-The BackColor, ForeColor, and BorderColor of the control can be customized by using the following `Style` properties of the SfDateTimeEdit. The up-down and drop-down buttons of the SfDateTimeEdit control can also be customized using the `Style`.
+The BackColor, ForeColor, and BorderColor of the control can be customized by using the following [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Style.html) properties of the SfDateTimeEdit. The up-down and drop-down buttons of the SfDateTimeEdit control can also be customized using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Style.html).
 
 * BackColor - To change the background color of DateTimeEdit.
 * ForeColor - To change the foreground color of date-time text in DateTimeEdit.
@@ -42,7 +42,7 @@ sfDateTimeEdit1.Style.BorderColor = Color.Red
 
 {% endtabs %} 
 
-![](appearance-images/bordercolor.png)
+![Border color customization](appearance-images/bordercolor.png)
 
 ## Customize drop-down appearance
 
@@ -101,14 +101,14 @@ The following code snippets illustrates the same.
 
 {% endtabs %} 
 
-![](appearance-images/dropdownforecolor.png)
+![Customize the drop down](appearance-images/dropdownforecolor.png)
 
-![](appearance-images/drodownbackcolor.png)
+![Customize the drop down](appearance-images/drodownbackcolor.png)
 
 
 ### Change visibility of dropdown button
 
-The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the `ShowDropDown` property.
+The drop-down button in the SfDateTimeEdit allows you to open the pop-up calendar by using the mouse interaction. The visibility of drop-down button can be changed by the [ShowDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ShowDropDown.html) property.
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ Me.dateTimeEdit.ShowDropDown = false
 
 {% endtabs %} 
 
-![](appearance-images/showdropdown.png)
+![Hide the dropdown button](appearance-images/showdropdown.png)
 
 ## Customize up-down appearance
 
@@ -183,11 +183,11 @@ Me.dateTimeEdit.Style.UpDownHoverBackColor = Color.Yellow
 
 {% endtabs %} 
 
-![](appearance-images/updowncolor.png)
+![Up down button customization ](appearance-images/updowncolor.png)
 
 ### Change visibility of up-down
 
-The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the `DateTimeEditingMode` is mask. The visibility of up-down buttons can be changed by the `ShowUpDown` property.
+The up-down allows you to change the value by increment or decrement of values of the date, month, and year based on the selected field. The value change by up and down buttons are only applicable when the [DateTimeEditingMode]([DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html)) is mask. The visibility of up-down buttons can be changed by the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ShowUpDown.html) property.
 
 {% tabs %}
 
@@ -217,11 +217,11 @@ Me.dateTimeEdit.ShowUpDown = false
 
 {% endtabs %} 
 
-![](appearance-images/showupdown.png)
+![Customize the visibility of up down](appearance-images/showupdown.png)
 
 ## Customize drop-down calendar appearance
 
-The drop-down calendar of the SfDateTimeEdit can be obtained from the `MonthCalendar` property. All the [customization with calendar](/windowsforms/sfcalendar/appearance) will be reflected in drop-down calendar of the SfDateTimeEdit. The following code snippets illustrates how to change the visibility of footer in the drop-down calendar of the SfDateTimeEdit:
+The drop-down calendar of the SfDateTimeEdit can be obtained from the [MonthCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~MonthCalendar.html) property. All the [customization with calendar](/windowsforms/sfcalendar/appearance) will be reflected in drop-down calendar of the SfDateTimeEdit. The following code snippets illustrates how to change the visibility of footer in the drop-down calendar of the SfDateTimeEdit:
 
 {% tabs %}
 
@@ -239,11 +239,11 @@ dateTimeEdit.MonthCalendar.ShowFooter = false
 
 {% endtabs %} 
 
-![](appearance-images/footer.png)
+![Customize drop-down calendar appearance](appearance-images/footer.png)
 
 ## Drop-down calendar size customization
 
-The size of the drop-down calendar can be customized by using the `DropDownSize` property.
+The size of the drop-down calendar can be customized by using the [DropDownSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DropDownSize.html) property.
 
 {% tabs %}
 
@@ -269,7 +269,7 @@ Me.dateTimeEdit.Width = 294
 
 {% endtabs %} 
 
-![](appearance-images/dropdownsize.png)
+![Drop-down calendar size customization](appearance-images/dropdownsize.png)
 
 ## Themes
 
@@ -336,7 +336,7 @@ Imports Syncfusion.WinForms.Controls
 
 ### Apply theme
 
-Appearance of SfDateTimeEdit can be changed by `ThemeName` of SfDateTimeEdit.
+Appearance of SfDateTimeEdit can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ThemeName.html) of SfDateTimeEdit.
 
 #### Office2016Colorful
 
@@ -362,7 +362,7 @@ Me.dateTimeEdit.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](appearance-images/Office2016Colorful.png)
+![SfDateTimeEdit Office2016Colorful appearance](appearance-images/Office2016Colorful.png)
 
 #### Office2016White
 
@@ -388,7 +388,7 @@ Me.dateTimeEdit.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](appearance-images/Office2016White.png)
+![SfDateTimeEdit Office2016White appearance](appearance-images/Office2016White.png)
 
 #### Office2016DarkGray
 
@@ -414,7 +414,7 @@ Me.dateTimeEdit.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](appearance-images/Office2016DarkGray.png)
+![SfDateTimeEdit Office2016DarkGray appearance](appearance-images/Office2016DarkGray.png)
 
 #### Office2016Black
 
@@ -440,4 +440,4 @@ Me.dateTimeEdit.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](appearance-images/Office2016Black.png)
+![SfDateTimeEdit Office2016Black appearance](appearance-images/Office2016Black.png)
