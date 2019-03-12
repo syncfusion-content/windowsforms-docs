@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-restrict-SlideOnTop-expand-Transition-for-Left-Position | WindowsForms | Syncfusion
-description: how-to-restrict-slideontop-expand-transition-for-left-position?
+title: Restrict transition for left position | WindowsForms | Syncfusion
+description: how to restrict slideontop expand transition for left position?
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 This requirement can be achieved by handling the Opening event.
 
-**Opening** **Event**
+**Opening Event**
 
-This Event occurs before expand Transition initializes.
+This [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opening_EV.html) event occurs before expand Transition initializes.
 
 {% tabs %}
 

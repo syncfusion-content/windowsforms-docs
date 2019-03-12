@@ -7,22 +7,8 @@ control: NavigationView
 documentation: ug
 ---
 
+# Show/hide history button
 
-### Show/hide history button
+History Button is used to access the History page. If enable [ShowHistoryButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationView~ShowHistoryButtons.html), it will be appeared on NavigationView Control.
 
-History Button is used to access the History page. If enable ShowHistoryButtons, it will be appeared on NavigationView Control.
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowHistoryButtons</td><td>
-Indicates whether to show history buttons</td></tr>
-</table>
-
-
-![](Getting-Started_images/NavigationView6.png)
+![Show or hide history button](Getting-Started_images/NavigationView6.png)

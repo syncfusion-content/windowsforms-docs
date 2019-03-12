@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Serialization of layout state
 
-The Layout state of GroupBar can be saved and loaded using the AppStateSerializer class. To achieve this, follow the step-by-step procedure.
+The Layout state of GroupBar can be saved and loaded using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. To achieve this, follow the step-by-step procedure.
 
 1. Include the required namespaces.
 
@@ -38,10 +38,10 @@ The Layout state of GroupBar can be saved and loaded using the AppStateSerialize
 
 2. Drag and drop a GroupBar control from the toolbox onto the form, add GroupBar Items using the GroupBar Item CollectionEditor and add two buttons to the form for 'Load' and 'Save' as shown below.
 
-   ![](Overview_images/Overview_img43.jpeg)
+   ![Serialization](Overview_images/Overview_img43.jpeg)
 
 
-3. Store the layout information of the selected GroupBar Item in an XML file using the AppStateSerializer class. In the Form_Closing and Save_Button click, call the following method,
+3. Store the layout information of the selected GroupBar Item in an XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Closing and Save_Button click, call the following method,
 
    {% tabs %}
 
@@ -121,7 +121,7 @@ The Layout state of GroupBar can be saved and loaded using the AppStateSerialize
 
 	{% endtabs %}
 
-4. Retrieve the persisted layout information from the XML file using the AppStateSerializer class. In the Form_Load event and Load_Button click, call the following method,
+4. Retrieve the persisted layout information from the XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Load event and Load_Button click, call the following method,
 
    {% tabs %}
 
@@ -225,5 +225,5 @@ Again open the same application. You can see the persisted layout state of Group
 
 
 
- ![](Overview_images/Overview_img44.jpeg)
+ ![Serialization](Overview_images/Overview_img44.jpeg)
 
