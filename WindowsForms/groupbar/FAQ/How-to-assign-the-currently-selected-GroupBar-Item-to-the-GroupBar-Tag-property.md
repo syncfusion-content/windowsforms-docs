@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to assign the currently selected GroupBar Item to the GroupBar's Tag property | WindowsForms | Syncfusion
+title: GroupBar's Tag property | WindowsForms | Syncfusion
 description: Frequently asked questions
 platform: WindowsForms
 control: GroupBar
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to assign the currently selected GroupBar Item to the GroupBar's Tag property?
 
-You could do so by handling the GroupBar’s GroupBarItemSelected event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's SelectedItem property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s Tag property.
+You could do so by handling the GroupBar’s [GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelected_EV.html) event. Within this event handler, index into the GroupBar Items Collection using the GroupBar's [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~SelectedItem.html) property value, to get the currently selected GroupBar Item, and then assign it to the GroupBar’s [Tag](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Control.Tag)&rd=true) property.
 
 {% tabs %}
 

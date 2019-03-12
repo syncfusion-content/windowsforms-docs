@@ -12,11 +12,11 @@ This type provides notification through various transition effects.
 
 ## Key properties
 
-* Title - The title can be displayed at the top of the hub tile.
-* Footer - The footer can be displayed at the bottom of the hub tile.
-* ImageSource - An image can be displayed in the background of the hub tile.
+* [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Title.html) - The title can be displayed at the top of the hub tile.
+* [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Footer.html) - The footer can be displayed at the bottom of the hub tile.
+* [ImageSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageSource.html) - An image can be displayed in the background of the hub tile.
 
-The following code example shows the usage of the Title, Footer, and ImageSource properties.
+The following code example shows the usage of the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Title.html), [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Footer.html), and [ImageSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageSource.html) properties.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ Me.HubTile1.ImageSource  = Me.ImageListAdv1.Images(0)
 
 {% endtabs %}
 
- ![](Concept-and-Features_images/Concept-and-Features_img1.png) 
+ ![Default Tile](Concept-and-Features_images/Concept-and-Features_img1.png) 
  
  Default Tile
  {:.caption}
@@ -64,7 +64,7 @@ In HubTile, image transition can be performed at specified intervals and in diff
 * Left-to-Right
 * Right-to-Left
 
-HubTile image transition direction can be modified using the following code example.
+HubTile image transition direction can be modified using the [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SlideTransition.html) property.
 
 
 {% tabs %}
@@ -92,13 +92,13 @@ Me.HubTile1.SlideTransition = TransitionDirection.LeftToRight
 
 {% endtabs %}
 
- ![](Concept-and-Features_images/Concept-and-Features_img2.png)
+ ![Slide tansition](Concept-and-Features_images/Concept-and-Features_img2.png)
  
 
 
 ## Transition speed
 
-In HubTile, image transition speed can be increased or decreased by using ImageTransitionSpeed property.
+In HubTile, image transition speed can be increased or decreased by using [ImageTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageTransitionSpeed.html) property.
 
 {% tabs %}
 
