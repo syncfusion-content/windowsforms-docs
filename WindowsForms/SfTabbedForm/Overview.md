@@ -16,4 +16,4 @@ The `SfTabbedForm` is a window control which provide the tabbed UI like browser 
 Following are the key features of the SfTabbedForm:
 
 * Tabs customization: Customizes the appearance of the tabs and load the tabs into form's title bar.
-* Title Bar customization: Customizes the appearance of the titlebar.
+* TitleBar customization: Customizes the appearance of the title bar.

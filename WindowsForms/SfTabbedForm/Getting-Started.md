@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| WindowsForms | Syncfusion
+title: Getting Started| SfTabbedForm | WindowsForms | Syncfusion
 description: Getting Started
 platform: WindowsForms
 control: SfTabbedForm
@@ -101,7 +101,7 @@ tabbedFormControl.Tabs.Add(tabPageAdv2)
 
 ## Extend Tabs to TitleBar of the Form 
 
-ExtendTabsToTitleBar property specifies whether the tabs should extend to the titlebar of the form.By default ExtendTabsToTitleBar property is set to true.
+ExtendTabsToTitleBar property specifies whether the tabs should extend to the title bar of the form.By default ExtendTabsToTitleBar property is set to true.
 
 {% tabs %}
 {% highlight c# %}
