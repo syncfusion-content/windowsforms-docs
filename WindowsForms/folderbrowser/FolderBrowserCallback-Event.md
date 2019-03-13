@@ -9,9 +9,9 @@ documentation: ug
 
 # FolderBrowserCallback event
 
-The event occurs when an event within the folder browser dialog triggers a call to the validation callback. The event handler receives an argument of type FolderBrowserCallbackEventArgs.
+The [FolderBrowserCallback event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~FolderBrowserCallback_EV.html) occurs when an event within the folder browser dialog triggers a call to the validation callback. The event handler receives an argument of type [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html).
 
-The following FolderBrowserCallbackEventArgs members provide information specific to this event.
+The following [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html) members provide information specific to this event.
 
 
 <table>

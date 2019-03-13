@@ -11,19 +11,7 @@ documentation: ug
 
 The text settings of the FolderBrowser control are described below.
 
-The text for the FolderBrowser can be set using the below given property.
-
-<table>
-<tr>
-<th>
-FolderBrowser property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Description</td><td>
-Gets/sets the text displayed above the tree control in the FolderBrowser Dialog.</td></tr>
-</table>
-The Description property of the FolderBrowser supports the AutoComplete feature that provides options that can be used to complete text even before it is entered.
+The text for the FolderBrowser can be set using the [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~Description.html) property.
 
 {% tabs %}
 
@@ -45,4 +33,4 @@ Me.folderBrowser1.Description = "Recent Documents"
 
 {% endtabs %}
 
-![](Overview_images/Overview_img412.jpeg)
+![Text settings](Overview_images/Overview_img412.jpeg)

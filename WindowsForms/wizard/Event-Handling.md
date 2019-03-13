@@ -15,161 +15,50 @@ This section comprises the below events:
 
 The events available for Wizard control and the methods which raises these events are listed in the below tables.
 
-Events table
+* [Back](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~Back_EV.html)
+* [Next](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~Next_EV.html)
+* [Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Cancel_EV.html)
+* [Finish](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Finish_EV.html)
+* [Help](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Help_EV.html)
+* [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerControlLocationChanging_EV.html)
+* [BeforePageSelect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~BeforePageSelect_EV.html)
+* [BeforeBack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BeforeBack_EV.html)
+* [BeforeFinish](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BeforeFinish_EV.html)
+* [BeforeNext](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BeforeNext_EV.html)
 
-<table>
-<tr>
-<th>
-Wizard control events</th><th>
-Description</th></tr>
-<tr>
-<td>
-Back</td><td>
-This event is handled when the Back button is clicked or when PreviousPage method is called.</td></tr>
-<tr>
-<td>
-Next</td><td>
-This event is handled when the Next button is clicked or when NextPage method is called.</td></tr>
-<tr>
-<td>
-Cancel</td><td>
-This event is handled before the Cancel button is clicked.</td></tr>
-<tr>
-<td>
-Finish</td><td>
-This event is handled before the Finish button is clicked.</td></tr>
-<tr>
-<td>
-Help</td><td>
-This event is handled before the Help button is clicked.</td></tr>
-<tr>
-<td>
-BannerControlLocationChanging</td><td>
-Handled when banner panel controls are laid out.</td></tr>
-<tr>
-<td>
-BeforePageSelect</td><td>
-Handled when the selected page is about to change.</td></tr>
-<tr>
-<td>
-BeforeBack</td><td>
-Handled before the back button is clicked.</td></tr>
-<tr>
-<td>
-BeforeFinish</td><td>
-Handled before the finish button is clicked.</td></tr>
-<tr>
-<td>
-BeforeNext</td><td>
-Handled before the Next button is clicked.</td></tr>
-</table>
+* [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~PreviousPage.html)
+* [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~NextPage.html)
 
-Methods table
+**BannerControlLocationChanging event**
 
-<table>
-<tr>
-<th>
-Wizard control methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-PreviousPage</td><td>
-Selects the previous page.</td></tr>
-<tr>
-<td>
-NextPage</td><td>
-Selects the next page.</td></tr>
-</table>
-BannerControlLocationChanging event
-
-This event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
+This [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerControlLocationChanging_EV.html) event is discussed in How to Cancel the AutoLayout of the Banner panel controls.
 
 #### Wizard page events
 
 The events available for the Wizard Page and the methods which raises these events are listed in the below tables.
 
-Events table
+* [BackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~BackClick_EV.html)
+* [NextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~NextClick_EV.html)
+* [CancelClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~CancelClick_EV.html)
+* [FinishClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FinishClick_EV.html)
+* [HelpClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~HelpClick_EV.html)
+* [PageLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~PageLoad_EV.html)
+* [ValidatePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~ValidatePage_EV.html)
+* [SettingChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~SettingsChanged_EV.html)
 
-<table>
-<tr>
-<th>
-Wizard page events</th><th>
-Description</th></tr>
-<tr>
-<td>
-BackClick</td><td>
-This event is handled to notify that Back button was clicked. It can be raised by calling RaiseBackClick method.</td></tr>
-<tr>
-<td>
-NextClick</td><td>
-This event is handled to notify that Next button was clicked. It can be raised by calling RaiseNextClick method.</td></tr>
-<tr>
-<td>
-CancelClick</td><td>
-This event is handled to notify that Cancel button was clicked. It can be raised by calling RaiseCancelClick method.</td></tr>
-<tr>
-<td>
-FinishClick</td><td>
-This event is handled to notify that Finish button was clicked. It can be raised by calling RaiseFinishClick method.</td></tr>
-<tr>
-<td>
-HelpClick</td><td>
-This event is handled to notify that Help button was clicked. It can be raised by calling RaiseHelpClick method.</td></tr>
-<tr>
-<td>
-PageLoad</td><td>
-This event is handled when the page is selected. It can be raised by calling RaisePageLoad method.</td></tr>
-<tr>
-<td>
-ValidatePage</td><td>
-Handled to validate a page before a new page is selected. It can be raised by calling RaiseValidatePage method.</td></tr>
-<tr>
-<td>
-SettingChanged</td><td>
-Handled when the title and description of a page is changed.</td></tr>
-</table>
+* [RaiseBackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseBackClick.html)
+* [RaiseNextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseNextClick.html)
+* [RaiseCancelClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseCancelClick.html)
+* [RaiseFinishClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseFinishClick.html)
+* [RaiseHelpClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseHelpClick.html)
+* [RaisePageLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~RaisePageLoad.html)
+* [RaiseValidatePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~RaiseValidatePage.html)
 
-Methods table
+**ValidatePage event**
 
-<table>
-<tr>
-<th>
-Wizard page methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-RaiseBackClick</td><td>
-Raises the WizardPage.BackClick event.</td></tr>
-<tr>
-<td>
-RaiseNextClick</td><td>
-Raises the WizardPage.NextClick event.</td></tr>
-<tr>
-<td>
-RaiseCancelClick</td><td>
-Raises the WizardPage.CancelClick event.</td></tr>
-<tr>
-<td>
-RaiseFinishClick</td><td>
-Raises the WizardPage.FinishClick event.</td></tr>
-<tr>
-<td>
-RaiseHelpClick</td><td>
-Raises the WizardPage.HelpClick event.</td></tr>
-<tr>
-<td>
-RaisePageLoad</td><td>
-Raises the WizardPage.PageLoad event.</td></tr>
-<tr>
-<td>
-RaiseValidatePage</td><td>
-Raises the WizardPage.ValidatePage event.</td></tr>
-</table>
-ValidatePage event
+WizardControl Pages can be validated using [ValidatePage event]([ValidatePage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~ValidatePage_EV.html)). In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails.
 
-WizardControl Pages can be validated using ValidatePage event. In this event, data validation can be performed and traversing to the next page can be canceled, if the validation fails.
-
-If the user does not want to validate a page while moving back (pressing BackButton), then it can be done by setting BackButtonCausesValidation property to `false`.
+If the user does not want to validate a page while moving back (pressing BackButton), then it can be done by setting [BackButtonCausesValidation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BackButtonCausesValidation.html) property to `false`.
 
 {% tabs %}
 
