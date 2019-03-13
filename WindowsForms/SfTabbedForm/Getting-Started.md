@@ -97,7 +97,7 @@ tabbedFormControl.Tabs.Add(tabPageAdv2)
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![tabbed form](Getting-Started_images/Getting-Started_img1.png)
 
 ## Extend Tabs to TitleBar of the Form 
 
@@ -113,5 +113,5 @@ Me.ExtendTabsToTitleBar = False
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![tabbed form](Getting-Started_images/Getting-Started_img2.png)
 
