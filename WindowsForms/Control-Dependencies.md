@@ -2622,6 +2622,28 @@ Syncfusion.Core.WinForms
 </tr>
 </table>
 
+## SfTabbedForm
+
+<table>
+<tr>
+<td>
+{{'**Assembly References**'| markdownify }}
+</td>
+<td>
+{{'**NuGet Package**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows<br/>
+Syncfusion.Shared.Base<br/>
+</td>
+<td>
+Syncfusion.Tools.Windows
+</td>
+</tr>
+</table>
+
 ## SfListView
 
 <table>
