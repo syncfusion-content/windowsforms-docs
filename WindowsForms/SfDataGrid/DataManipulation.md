@@ -545,7 +545,7 @@ End Sub
 ![Winforms datagrid showing AddNewRow Support in Master-Details View](DataManipulation_images/AddNewRow_img9.png)
 
 ## Delete Row
-SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing &lt;kbd&gt;Delete&lt;/kbd&gt; key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to true.
+SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to true. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.AllowDeleting = true;
@@ -556,7 +556,7 @@ Me.sfDataGrid.AllowDeleting = True
 {% endtabs %}
 
 ### Delete the Selected Records through Code
-The selected records can be deleted by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in SfDataGrid.
+The selected records can be deleted by using the [DeleteSelectedRecords](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DeleteSelectedRecords.html) method in SfDataGrid. This method is only supported when `SelectionUnit` is `Row`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.DeleteSelectedRecords();
