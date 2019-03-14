@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-set-spacing-between-the-browsing-buttons | WindowsForms | Syncfusion
+title: Spacing between the browsing buttons | WindowsForms | Syncfusion
 description: how to set spacing between the browsing buttons?
 platform: WindowsForms
 control: Wizard
@@ -11,7 +11,7 @@ documentation: ug
 
 The WizardControl internally uses the GridBagLayout to arrange the navigation buttons.
 
-You could insert spaces around the buttons using the Insets property. The GridBagLayout.GetConstraintsRef returns the object containing the constraints for that particular control. Specifying an Insets value as shown below to this, would create padding around this control.
+You could insert spaces around the buttons using the Insets property. The [GridBagLayout.GetConstraintsRef](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GridBagLayout~GetConstraintsRef.html) returns the object containing the constraints for that particular control. Specifying an Insets value as shown below to this, would create padding around this control.
 
 {% tabs %}
 

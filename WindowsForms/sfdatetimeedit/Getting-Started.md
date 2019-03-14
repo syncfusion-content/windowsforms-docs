@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with SfDateTimeEdit for Syncfusion Essential Windows Forms
+title: Getting started | SfDateTimeEdit | WindowsForms | Syncfusion  
 description: How to add SfDateTimeEdit and enable its basic features.
 platform: WindowsForms
 control: SfDateTimeEdit 
@@ -22,7 +22,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with SfDateTimeEdit
+## Creating simple application with SfDateTimeEdit
 
 You can create the Windows Forms application with SfDateTimEdit control as follows:
 
@@ -45,18 +45,21 @@ The `SfDateTimEdit` control can be added to the application by dragging it from 
 
 * Syncfusion.Core.WinForms.dll
 * Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
-![](getting-started-images/toolbox.png)
+![Drag and drop the SfDateTimeEdit control to form](getting-started-images/toolbox.png)
 
 ## Adding control manually in code
 
 To add the control manually in C#, follow the given steps:
 
-1. Add the following required assembly references to the project:
-	* Syncfusion.Core.WinForms.dll
-	* Syncfusion.SfInput.WinForms.dll
+**1.** Add the following required assembly references to the project:
 
-2. Include the namespaces **Syncfusion.WinForms.Input**.
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
+
+**2.** Include the namespaces **Syncfusion.WinForms.Input**.
 
 {% tabs %}
 
@@ -74,7 +77,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-2. Create a `SfDateTimeEdit` control instance and add it to the form.
+**3.** Create a `SfDateTimeEdit` control instance and add it to the form.
 
 {% tabs %}
 
@@ -98,7 +101,7 @@ Me.Controls.Add(sfDateTimeEdit)
 
 ## Configure date range
 
-In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by `MinDateTime` and `MaxDateTime` properties that enables the specified date range in the SfDateTimeEdit control.
+In a real-time appointment scenario, the appointment is open only for a limited number of days. You have to select a date and time within the given range. This can be achieved by [MinDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~MaxDateTime.html) properties that enables the specified date range in the SfDateTimeEdit control.
 
 {% tabs %}
 
@@ -132,7 +135,7 @@ dateTimeEdit.MaxDateTime = New DateTime(2018, 2, 27)
 
 {% endtabs %}
 
-![](getting-started-images/minmax.png)
+![SfDateTimeEdit control](getting-started-images/minmax.png)
 
 ## Configure editing mode
 
@@ -141,7 +144,7 @@ The date-time value in the DateTimeEdit can be edited by two ways as follows:
 * Default Editing 
 * Mask Editing
 
-Editing modes can be changed by `DateTimeEditingMode` of the SfDateTimEdit. The following code example illustrates how to change the date time editing mode:
+Editing modes can be changed by [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) of the SfDateTimEdit. The following code example illustrates how to change the date time editing mode:
 
 {% tabs %}
 
@@ -159,11 +162,11 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 {% endtabs %} 
 
-![](editing-support-images/mask.png)
+![Editing mode](editing-support-images/mask.png)
 
 ## Configure allow null value
 
-The SfDateTimEdit allows you to set the `Value` to null in the mask mode of DateTimeEditing when `AllowNull` is set to true.
+The SfDateTimEdit allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) to null in the mask mode of DateTimeEditing when [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~AllowNull.html) is set to true.
 
 {% tabs %}
 
@@ -185,11 +188,11 @@ dateTimeEdit.AllowNull = true
 
 {% endtabs %}
 
-![](watermark-images/nullvalue.png)
+![SfDateTimEdit allows null value](watermark-images/nullvalue.png)
 
 ## Configure custom format
 
-The custom pattern can be displayed in the `SfDateTimeEdit` control by using the `Format` property when the `DateTimePattern` is set to custom. Refer to the following list to create a custom format for the `SfDateTimeEdit`:
+The custom pattern can be displayed in the `SfDateTimeEdit` control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Format.html) property when the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimePattern.html) is set to custom. Refer to the following list to create a custom format for the `SfDateTimeEdit`:
 
 {% tabs %}
 
@@ -227,11 +230,11 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 {% endtabs %}
 
-![](getting-started-images/customformat.png)
+![Custom format](getting-started-images/customformat.png)
 
 ## Configure up-down DateTimeEdit
 
-To make the DateTimeEdit to up-down control, set the `ShowUpDown` property to `true`. The up-down will appear only when the `DateTimeEditingMode` is set to mask.
+To make the DateTimeEdit to up-down control, set the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ShowUpDown.html) property to `true`. The up-down will appear only when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) is set to mask.
 
 {% tabs %}
 
@@ -253,4 +256,4 @@ Me.dateTimeEdit.ShowUpDown = true
 
 {% endtabs %} 
 
-![](getting-started-images/daterange.png)
+![Up down DateTimeEdit](getting-started-images/daterange.png)

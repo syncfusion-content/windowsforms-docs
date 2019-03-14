@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Abbreviating the Days names of SfCalendar control for Windows Forms
+title: Abbreviating the Days names of SfCalendar | Windows Forms | Syncfusion
 description: Abbreviating the Days names of SfCalendar control for Windows Forms
 platform: WindowsForms
 control: SfCalendar
@@ -13,7 +13,7 @@ The `SfCalendar` control provides globalization support to design and develop a 
 
 ## Change culture
 
-The culture information can be applied to the calendar by using the `Culture` property. The following code example illustrates how to change the culture for the calendar:
+The culture information can be applied to the calendar by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~Culture.html) property. The following code example illustrates how to change the culture for the calendar:
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.sfCalendar.Culture = New CultureInfo("he-IL")
 
 {% endtabs %} 
 
-![](globalization-images/Culture.png)
+![Culture customization](globalization-images/Culture.png)
 
 ## Localization
 
@@ -45,23 +45,23 @@ The `SfCalendar` control allows you to localize the static text used in the cale
 
 * **Step 2**: Add the default resource file of SfCalender into Resources folder. You can download the `Syncfusion.SfInput.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfInput.WinForms-110589688.zip).     
 
-![](globalization-images/Defaultrex.png)  
+![Add resx file in application](globalization-images/Defaultrex.png)  
                                      
 * **Step 3**: Right-click on the Resources folder, select Add and then NewItem.
 
 * **Step 4**: In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.SfInput.WinForms.&lt;culture name&gt;.resx. For example, have to give name as Syncfusion.SfInput.WinForms.de-DE.resx for German culture.
 
-![](globalization-images/NewItem.png)
+![Add resource file in application](globalization-images/NewItem.png)
 
 * **Step 5**: The culture name that indicates the name of language and country.
 
 * **Step 6**: Now, select Add option to add the resource file in Resources folder.
 
-![](globalization-images/resource.png)
+![Add culture resource file in application](globalization-images/resource.png)
 
 * **Step 7**: Add the required text to the `NoneButtonText` and `TodayButtonText`.
 
-![](globalization-images/resxfile.png)
+![Add attribute values](globalization-images/resxfile.png)
 
 {% tabs %}
 
@@ -95,6 +95,6 @@ InputLocalizationResource.SetResources(GetType(Form1).Assembly, "GettingStarted_
 
 {% endtabs %} 
 
-![](globalization-images/localization.png)
+![Globalization](globalization-images/localization.png)
 
 N> Refer to the following sample [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization1520034310.zip) that demonstrates the localization support in SfCalender.

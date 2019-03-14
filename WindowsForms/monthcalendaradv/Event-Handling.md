@@ -10,74 +10,22 @@ documentation: ug
 
 MonthCalendarAdv triggers events whenever the date is selected and changed. The most widely used events are discussed as follows.
 
-
-
-<table>
-<tr>
-<th>
- MonthCalendarAdv events</th><th>
-Description</th></tr>
-<tr>
-<td>
-Border3DStyleChanged</td><td>
-Event is raised when Border3DStyle property is changed.</td></tr>
-<tr>
-<td>
-BorderColorChanged</td><td>
-Event is raised when BorderColor property is changed.</td></tr>
-<tr>
-<td>
-BorderSidesChanged</td><td>
-Event is raised when BorderSides property is changed.</td></tr>
-<tr>
-<td>
-BorderStyleChanged</td><td>
-Event is raised when BorderStyle property is changed.</td></tr>
-<tr>
-<td>
-DateCellQueryInfo</td><td>
-It can be handled to provide custom formatting for calendar cells. The event handler receives an argument of type DateCellQueryInfoEventArgs. The following are the event properties associated with DateCellQueryInfoEventArgs argument.</td></tr>
-<tr>
-<td>
-{{'[DateSelected](/windowsforms/monthcalendaradv/faq/how-to-identify-the-current-selected-date-at-run-time)'|markdownify}}</td><td>
-It occurs when a date is selected from the calendar. It can be handled to retrieve the selected date of the MonthCalendarAdv. The event handler receives an argument of type EventArgs.</td></tr>
-<tr>
-<td>
-DateChanged</td><td>
-Handled when a selected date is changed.</td></tr>
-<tr>
-<td>
-FirstDayOfWeekChanged</td><td>
-Handled when the first day of the week is changed by using FirstDayOfWeek property.</td></tr>
-<tr>
-<td>
-NoneButtonClick </td><td>
-Handled when the None button is clicked.</td></tr>
-<tr>
-<td>
-ShowWeekNumbersChanged</td><td>
-Handled when ShowWeekNumbers property is changed. You can customize the appearance of the week numbers within this handler.</td></tr>
-<tr>
-<td>
-StretchScrollImageChanged</td><td>
-Handled when StretchScrollImage property is changed.</td></tr>
-<tr>
-<td>
-ThemedBorderChanged</td><td>
-Handles when ThemedBorder property is changed.</td></tr>
-<tr>
-<td>
-DateHover</td><td>
-This event is triggered when mouse hover on the date and to assign SuperToolTip for calender cells.</td></tr>
-</table>
-
-
+* [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Border3DStyleChanged_EV.html)
+* [BorderColorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderColorChanged_EV.html)
+* [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderSidesChanged_EV.html)
+* [BorderStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderStyleChanged_EV.html)
+* [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateCellQueryInfo_EV.html)
+* [DateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateChanged_EV.html)
+* [FirstDayOfWeekChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~FirstDayOfWeekChanged_EV.html)
+* [NoneButtonClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~NoneButtonClick_EV.html)
+* [ShowWeekNumbersChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ShowWeekNumbersChanged_EV.html)
+* [StretchScrollImageChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~StretchScrollImageChanged_EV.html)
+* [ThemedBorderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedBorderChanged_EV.html)
+* [DateHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateHover_EV.html)
 
 ## DateCellQueryInfo event
 
-This event is handled to provide custom formatting for calendar cells.
-
-
+The [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateCellQueryInfo_EV.html) event is handled to provide custom formatting for calendar cells.
 
 <table>
 <tr>
@@ -239,18 +187,18 @@ End Sub
 
 N> *  In Fig 1, 18th is identified as the current cell and the tooltip is displayed. Also the background of the current cell is painted with LightSteelBlue.*  Edges of the 4th column cells (ColIndex=4), other than the current cell are set to "Raised" and hence shows a raised appearance. *  In Fig 2, user tries to query the cells outside the range, i.e inactive month dates and the respective tooltip is displayed.
 
-![](CalendarDateTime_images/Overview_img174.jpeg)
+![DateCellQueryInfo event](CalendarDateTime_images/Overview_img174.jpeg)
 
 
 
 
 
-![](CalendarDateTime_images/Overview_img175.jpeg)
+![DateCellQueryInfo event](CalendarDateTime_images/Overview_img175.jpeg)
 
 
 ## DateHover event
 
-This event is handled when mouse hover on the calendar cells and to assign SuperToolTip for calender cells.
+The [DateHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateHover_EV.html) event is handled when mouse hover on the calendar cells and to assign SuperToolTip for calender cells.
 
 
 
@@ -343,6 +291,6 @@ End Sub
 
 {% endtabs %}
 
-The following screenshot illustrates the SuperToolTip when mouse hover on the respective date value by using DateHover event.
+The following screenshot illustrates the SuperToolTip when mouse hover on the respective date value by using [DateHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateHover_EV.html) event.
 
-![](CalendarDateTime_images/Overview_img176.png)
+![DateHover event](CalendarDateTime_images/Overview_img176.png)

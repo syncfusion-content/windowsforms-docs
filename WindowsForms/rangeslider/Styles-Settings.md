@@ -9,7 +9,7 @@ documentation: ug
 
 # Style settings
 
-Range Slider supports different visual styles for its appearance through the enumeration RangeSliderStyle. Some of the available VisualStyles are as follows:
+Range Slider supports different visual styles for its appearance through the enumeration [RangeSliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider+RangeSliderStyle.html). Some of the available [VisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~VisualStyle.html) are as follows:
 
 * Default
 * Metro
@@ -42,7 +42,7 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Default
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img1.png)
+![Default theme](Styles-Settings_images/Styles-Settings_img1.png)
 
 **Metro**
 
@@ -68,7 +68,7 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Metro;
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img2.png)
+![Metro theme](Styles-Settings_images/Styles-Settings_img2.png)
 
 **Office2016Colorful**
 
@@ -94,7 +94,7 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Colorful
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img3.png)
+![Office2016Colorful theme](Styles-Settings_images/Styles-Settings_img3.png)
 
 **Office2016White**
 
@@ -120,7 +120,7 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016White
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img4.png)
+![Office2016White theme](Styles-Settings_images/Styles-Settings_img4.png)
 
 **Office2016DarkGray**
 
@@ -146,7 +146,7 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016DarkGray
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img5.png)
+![Office2016DarkGray theme](Styles-Settings_images/Styles-Settings_img5.png)
 
 **Office2016Black**
 
@@ -172,4 +172,4 @@ Me.rangeSlider.VisualStyle = RangeSlider.RangeSliderStyle.Office2016Black
 
 {% endtabs %}
 
-![](Styles-Settings_images/Styles-Settings_img6.png)
+![Office2016Black theme](Styles-Settings_images/Styles-Settings_img6.png)

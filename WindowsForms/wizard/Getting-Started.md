@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting-Started | WizardControl | WindowsForms | Syncfusion
 description: getting started
 platform: WindowsForms
 control: Wizard Package 
@@ -20,7 +20,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with WizardControl
+## Creating simple application with WizardControl
 
 You can create the Windows Forms application with WizardControl control as follows:
 
@@ -44,9 +44,9 @@ The [WizardControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncf
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](Getting-Started_images/GettingStarted-img1.png)
+![Search wizard control in toolbox](Getting-Started_images/GettingStarted-img1.png)
 
-![](Getting-Started_images/GettingStarted-img2.png)
+![Drag and drop the wizard control to form](Getting-Started_images/GettingStarted-img2.png)
 
 ## Adding control manually in code
 
@@ -105,110 +105,9 @@ Me.Controls.Add(wizardControl1)
 
 {% endtabs %}
 
-**Adding WizardControlPage into WizardControl**
+**Add wizard page into WizardControl**
 
 Create an instance of [WizardContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardContainer.html), add it to WizardControl and set it as [WizardPageContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPageContainer.html) of WizardControl. WizardControlPages can be added to using [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPages.html) collection property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-WizardContainer wizardContainer1 = new WizardContainer();
-
-WizardControlPage wizardControlPage1 = new WizardControlPage();
-
-this.wizardControl1.Controls.Add(this.wizardContainer1);
-
-this.wizardControl1.WizardPageContainer = this.wizardContainer1;
-
-this.wizardContainer1.Controls.Add(this.wizardControlPage1);
-
-this.wizardControl1.WizardPages = new WizardControlPage[] {
-        this.wizardControlPage1};
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim wizardContainer1 As New WizardContainer()
-
-Dim wizardControlPage1 As New WizardControlPage()
-
-Me.wizardControl1.Controls.Add(Me.wizardContainer1)
-
-Me.wizardControl1.WizardPageContainer = Me.wizardContainer1
-
-Me.wizardContainer1.Controls.Add(Me.wizardControlPage1)
-
-Me.wizardControl1.WizardPages = New WizardControlPage() { Me.wizardControlPage1}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Adding Controls to BannerPanel** 
-
-Controls can be added to header of the WizardControl using [BannerPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerPanel.html) property where panel containing the desired controls is added. 
-
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Create instance of controls to be added
-
-GradientPanel gradientPanel1 = new GradientPanel();
-Label label1 = new Label();
-Label label2 = new Label();
-
-this.label1.Text = "Page Title";
-this.label2.Text = "This is the description of the Wizard Page";
-
-this.gradientPanel1.Controls.Add(this.label1);
-this.gradientPanel1.Controls.Add(this.label2);
-
-// Adding it to WizardControl
-
-this.wizardControl1.Controls.Add(this.gradientPanel1);
-
-this.wizardControl1.Title = this.label1;
-this.wizardControl1.Description = this.label2;
-this.wizardControl1.BannerPanel = this.gradientPanel1;
-
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'' Create instance of controls to be added
-
-Dim gradientPanel1 As New GradientPanel()
-Dim label1 As New Label()
-Dim label2 As New Label()
-
-Me.label1.Text = "Page Title"
-Me.label2.Text = "This is the description of the Wizard Page"
-
-Me.gradientPanel1.Controls.Add(Me.label1)
-Me.gradientPanel1.Controls.Add(Me.label2)
- 
-'' Adding it to WizardControl 
-
-Me.wizardControl1.Controls.Add(Me.gradientPanel1)
-
-Me.wizardControl1.Title = Me.label1
-Me.wizardControl1.Description = Me.label2
-Me.wizardControl1.BannerPanel = Me.gradientPanel1
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting-Started_images/GettingStarted-img4.png)
-
-## Configure WizardPages
-
-Below code demonstrates adding two or more [WizardPages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage.html) with sequencing details.
 
 {% tabs %}
 
@@ -278,8 +177,99 @@ Me.wizardControl1.Banner = Me.pictureBox1
 
 {% endtabs %}
 
-![](Getting-Started_images/GettingStarted-img5.png)
+![wizard first page](Getting-Started_images/GettingStarted-img5.png)
 
-![](Getting-Started_images/GettingStarted-img6.png)
+![wizard second page](Getting-Started_images/GettingStarted-img6.png)
 
-![](Getting-Started_images/GettingStarted-img7.png)
+![wizard third page](Getting-Started_images/GettingStarted-img7.png)
+
+**Configure BannerPanel** 
+
+Controls can be added to header of the WizardControl using [BannerPanel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerPanel.html) property where panel containing the desired controls is added. 
+
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Create instance of controls to be added
+
+GradientPanel gradientPanel1 = new GradientPanel();
+Label label1 = new Label();
+Label label2 = new Label();
+
+this.label1.Text = "Page Title";
+this.label2.Text = "This is the description of the Wizard Page";
+
+this.gradientPanel1.Controls.Add(this.label1);
+this.gradientPanel1.Controls.Add(this.label2);
+
+// Adding it to WizardControl
+
+this.wizardControl1.Controls.Add(this.gradientPanel1);
+
+this.wizardControl1.Title = this.label1;
+this.wizardControl1.Description = this.label2;
+this.wizardControl1.BannerPanel = this.gradientPanel1;
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'' Create instance of controls to be added
+
+Dim gradientPanel1 As New GradientPanel()
+Dim label1 As New Label()
+Dim label2 As New Label()
+
+Me.label1.Text = "Page Title"
+Me.label2.Text = "This is the description of the Wizard Page"
+
+Me.gradientPanel1.Controls.Add(Me.label1)
+Me.gradientPanel1.Controls.Add(Me.label2)
+ 
+'' Adding it to WizardControl 
+
+Me.wizardControl1.Controls.Add(Me.gradientPanel1)
+
+Me.wizardControl1.Title = Me.label1
+Me.wizardControl1.Description = Me.label2
+Me.wizardControl1.BannerPanel = Me.gradientPanel1
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![wizard panel](Getting-Started_images/GettingStarted-img4.png)
+
+## Change navigation buttons visibility
+
+You can change the visibility of the Back, Cancel, Next, Help and Finish navigation buttons in the wizard control and wizard page. This is done by using the [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~BackVisible.html), [CancelVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~CancelVisible.html), [NextVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~NextVisible.html), [HelpVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~HelpVisible.html) and [FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FinishVisible.html) properties respectively.
+
+{% tabs %}
+{% highlight C# %}
+this.wizardControlPage1.BackVisible = true;
+
+this.wizardControlPage1.NextVisible = true;
+
+this.wizardControlPage1.CancelVisible = true;
+
+this.wizardControlPage1.HelpVisible = true;
+
+this.wizardControlPage1.FinishVisible =false;
+{% endhighlight  %}
+{% highlight VB %}
+Me.wizardControlPage1.BackVisible = True
+
+Me.wizardControlPage1.NextVisible = true
+
+Me.wizardControlPage1.CancelVisible = True
+
+Me.wizardControlPage1.HelpVisible = true
+
+Me.wizardControlPage1.FinishVisible = False
+{% endhighlight  %}
+{% endtabs %} 
+
+![navigation button visibility](Getting-Started_images/GettingStarted-img8.png)

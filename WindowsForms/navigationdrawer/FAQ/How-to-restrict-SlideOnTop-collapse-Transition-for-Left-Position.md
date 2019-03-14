@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-restrict-SlideOnTop-collapse-Transition-for-Left-Position | WindowsForms | Syncfusion
-description: how-to-restrict-slideontop-collapse-transition-for-left-position?
+title: Restrict transition | WindowsForms | Syncfusion
+description: how to restrict slideontop collapse transition for left position?
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
@@ -11,46 +11,28 @@ documentation: ug
 
 This requirement can be achieved by handling the Closing Event.
 
-**Closing** **Event**
+**Closing event**
 
-This Event occurs before DrawerPanel Collapsing initialized.
+This [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closing_EV.html) event occurs before DrawerPanel Collapsing initialized.
 
 {% tabs %}
-
 {% highlight c# %}
-
 //Disables the SlideOnTop in Left when Transition Collapses begins
-
 void navigationDrawer1_Closing(object sender, CancelEventArgs e)
-
 {
-
 if (this.navigationDrawer1.Transition == Transition.SlideOnTop && this.navigationDrawer1.Position == SlidePosition.Left)
-
 {
-
 e.Cancel = true;
-
 }
-
 }
 {% endhighlight %}
-
 {% highlight VB %}
-
 'Disables the SlideOnTop in Left when Transition Collapses begins
-
 Private Sub navigationDrawer1_Closing(sender As Object, e As CancelEventArgs)
-
 If Me.navigationDrawer1.Transition = Transition.SlideOnTop AndAlso Me.navigationDrawer1.Position = SlidePosition.Left Then
-
 e.Cancel = True
-
 End If
-
 End Sub
-
 {% endhighlight %}
-
 {% endtabs %}
 

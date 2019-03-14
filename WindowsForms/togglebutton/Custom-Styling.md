@@ -32,4 +32,4 @@ toggleButton1.Renderer = renderer
 {% endhighlight %}
 {% endtabs %}
 
-![](Custom-Styling_images/Custom-Styling_img1.png)
+![Customize the togglebutton by using customrenderer](Custom-Styling_images/Custom-Styling_img1.png)

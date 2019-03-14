@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VisualStyle | WindowsForms | Syncfusion
+title: VisualStyle | SpellCheckerAdv | WindowsForms | Syncfusion
 description: VisualStyle
 platform: WindowsForms
 control: SpellCheckerAdv
@@ -25,7 +25,7 @@ It has the below themes.
 
 •	Office2016Black
 
-The following code example allows you to set the style for the SpellCheckerAdv.
+The following code example allows you to set the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~VisualStyle.html) for the SpellCheckerAdv.
 
 ## Default
 

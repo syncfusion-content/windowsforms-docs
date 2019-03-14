@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-add-a-MDI-Child-from-another-MDIChild | WindowsForms | Syncfusion
+title: How-to-add-a-MDI-Child-from | WindowsForms | Syncfusion
 description: how to add a mdi child from another mdichild
 platform: WindowsForms
-control: TabbedMDIPackage
+control: TabbedMDIManager
 documentation: ug
 ---
 
 # How to add a MDI Child from another MDIChild
 
-You should set the MDIParent of the new child form as follows:
+You should set the [MDIParent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~MdiParent.html) of the new child form as follows:
 
 {% tabs %}
 

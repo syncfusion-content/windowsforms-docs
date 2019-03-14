@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started | Carousel | WindowsForms | Syncfusion
+description: This section describes how to add carousel control into windowsforms application and its basic features.
 platform: WindowsForms
 control: Carousel
 documentation: ug
@@ -22,7 +22,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with Carousel
+## Creating simple application with Carousel
 
 You can create the Windows Forms application with Carousel control as follows:
 
@@ -49,9 +49,9 @@ Carousel control can be added to the application by dragging it from the toolbox
 * Syncfusion.Shared.Windows.dll
 * Syncfusion.Tools.Base.dll
 
-![](Getting-Started_images/Carousel_Toolbox1.png) 
+![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
 
-![](Getting-Started_images/Carousel_img6.png) 
+![Carousel control added in designer](Getting-Started_images/Carousel_img6.png) 
 
 
 ## Adding control manually in code
@@ -85,7 +85,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** - Create `Carousel` control instance and add it to the form.
+**Step 3** - Create **Carousel** control instance and add it to the form.
 
 {% tabs %}
 
@@ -118,13 +118,13 @@ Carousel control is a circular conveyor used for displaying and rotating the cus
 
 ### Adding controls through designer
 
- To load custom controls in Carousel, it needs to added into `Items` collection property in designer view.
+ To load custom controls in Carousel, it needs to added into **Items** collection property in designer view.
 
-![](Getting-Started_images/Carousel_img2.png) 
+![Button controls added in Carousel via designer](Getting-Started_images/Carousel_img2.png) 
 
 ### Adding controls manually through code
 
- To load custom controls in Carousel, it needs to added into `Items` collection property in Carousel class.
+ To load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
 
  {% tabs %}
 
@@ -158,7 +158,7 @@ Me.carousel1.Items.Add(this.buttonAdv2)
 
 {% endtabs %}
 
-![](Getting-Started_images/Carousel_img4.png) 
+![Button controls added in Carousel through code](Getting-Started_images/Carousel_img4.png) 
 
 ## Adding images into Carousel
 
@@ -168,11 +168,11 @@ Image objects can be added to carousel via both designer and code.
 
 To load images in Carousel, it needs to added into `ImageListCollection` property in designer view.
 
- ![](Getting-Started_images/Carousel_img3.png) 
+ ![Images are added in Carusel via designer](Getting-Started_images/Carousel_img3.png) 
 
 ### Adding images manually through code
 
- To load images in Carousel,it needs to added into `ImageListCollection` property in Carousel class.
+ To load images in Carousel,it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~ImageListCollection.html) property in Carousel class.
 
 {% tabs %}
 
@@ -210,4 +210,4 @@ Me.carousel1.ImageListCollection.Add(carouselImage2);
 
 {% endtabs %}
 
-![](Getting-Started_images/Carousel_img5.png)
+![Images are added in Carusel via code](Getting-Started_images/Carousel_img5.png)

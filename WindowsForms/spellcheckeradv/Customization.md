@@ -1,9 +1,9 @@
 ---
 layout: post
-title: customization | WindowsForms | Syncfusion
+title: customization | SpellCheckerAdv | WindowsForms | Syncfusion
 description: Customization
 platform: WindowsForms
-control: Editors Package
+control: SpellCheckerAdv
 documentation: ug
 ---
 
@@ -63,18 +63,18 @@ checker.IgnoreAlphaNumericWords = True
 
 These options are accessible at runtime through the Spell Checker Options dialog. This can be invoked by Options button available in the SpellChecker dialog.
 
-![](Customization_images/Options1.png)
+![SpellCheckerAdv dialog window](Customization_images/Options1.png)
  
-![](Customization_images/Options2.png)
+![SpellCheckerAdv spell checker option window](Customization_images/Options2.png)
 
 
-# Getting suggestions for wrong word
+## Getting suggestions for wrong word
 
 SpellCheckerAdv provides support to get suggestion list by passing the wrong word in the below methods.
 
-* GetSuggestions
-* GetPhoneticWords
-* GetAnagrams
+* [GetSuggestions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~GetSuggestions.html)
+* [GetPhoneticWords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~GetPhoneticWords.html)
+* [GetAnagrams](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~GetAnagrams.html)
 
 {% tabs %}
 

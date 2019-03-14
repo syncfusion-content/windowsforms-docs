@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add HubTile using code example | WindowsForms | Syncfusion
+title: Add HubTile using code | WindowsForms | Syncfusion
 description: How to add HubTile using code example
 platform: WindowsForms
 control: HubTile
