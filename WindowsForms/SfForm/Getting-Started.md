@@ -17,10 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 The default form can be changed into SfForm by the following steps:
 
-1) Create a new Windows Forms Application in Visual Studio and refer the following required assembly references to the project:
-
-* Syncfusion.Core.WinForms.dll
-* Syncfusion.Shared.Base.dll
+1) Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
 
 2) Include the following namespace to the directives list.
 
@@ -47,7 +44,7 @@ public partial class Form1 : SfForm
 {% endtabs %}
 
 
-![SfForm application](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Title Bar Customization
 
@@ -78,7 +75,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 {% endtabs %}
 
 
-![Form title customization](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ## Border Customization
 
@@ -93,7 +90,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 {% endtabs %}
 
 
-![Form border customization](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ## Loading User Control to the Title Bar
 
@@ -115,5 +112,5 @@ this.TitleBarTextControl = searchPanel;
 {% endtabs %}
 
 
-![Loading user control to the title bar](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 

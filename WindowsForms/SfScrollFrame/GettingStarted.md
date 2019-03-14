@@ -11,11 +11,28 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+The following list of assembly should be added as reference to use [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) component in any application:
+
+<table>
+<tr>
+<td>
+{{'Required Assembly'| markdownify }}
+</td>
+<td>
+{{'Description'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Core.WinForms
+</td>
+<td>
+Syncfusion.Core.WinForms assembly contains the theme related classes for the Syncfusion controls and basic components like SfToolTip, SfButton, SfForm, and SfSkinManager.
+</td>
+</tr>
+</table>
+=======
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Attaching SfScrollFrame to a control
 
@@ -25,7 +42,7 @@ This section describes how to attach the `SfScrollFrame` to a `ListView` Control
 
 The `SfScrollFrame` can be attached to any control through designer by assigning the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Control.html) property.
 
-![SfScrollFrame added by designer](SfScrollFrame_images/SfScrollFrame_img1.jpg)
+![](SfScrollFrame_images/SfScrollFrame_img1.jpg)
 
 #### Designer generated code
 
@@ -83,7 +100,7 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic scrolling](SfScrollFrame_images/SfScrollFrame_img2.jpg)
+![](SfScrollFrame_images/SfScrollFrame_img2.jpg)
 
 ### Changing the SmallChange value
 

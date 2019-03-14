@@ -17,14 +17,6 @@ In Office 2007, Microsoft has introduced a SuperToolTip control to display the t
 * Body - This is the description part. 
 * Footer - If additional information is needed, it can be entered in the footer part.
 
-## Assembly deployment
-
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#supertooltip) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
-
 ### Creating SuperToolTip through designer
 
 1. Drag and drop the SuperToolTip on your form.
