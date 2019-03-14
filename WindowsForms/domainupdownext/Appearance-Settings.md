@@ -12,37 +12,12 @@ This section discusses the border styles and back color that can be applied for 
 
 The below table lists the appearance properties of DomainUpDownExt control.
 
-
-<table>
-<tr>
-<th>
-DomainUpDownExt Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Specifies the border style for the control. The options includesFixedSingle,Fixed3D, andNone.</td></tr>
-<tr>
-<td>
-Border3DStyle</td><td>
-Specifies the 3D BorderStyle for the control when BorderStyle = Fixed3D.The options are,RaisedInner,RaisedOuter,Raised,Sunken (default),SunkenInner,SunkenOuter,Flat,Bump andAdjust.</td></tr>
-<tr>
-<td>
-BorderSides</td><td>
-Specifies the sides of the control which can have border. The options are,Left,Top,Right,Bottom,Middle andAll (default).</td></tr>
-<tr>
-<td>
-BorderColor</td><td>
-Specifies the color for 2D border. The default color is 'black'.</td></tr>
-<tr>
-<td>
-ThemedBorder</td><td>
-Specifies whether to enable themes for the border around the control. ThemesEnabled must be set to 'True'.</td></tr>
-<tr>
-<td>
-BackColor</td><td>
-Specifies the back color for the control.</td></tr>
-</table>
+* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BorderStyle.html)
+* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~Border3DStyle.html)
+* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BorderSides.html)
+* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BorderColor.html)
+* [ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~ThemesEnabled.html)
+* [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BackColor.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -66,6 +41,6 @@ Me.domainUpDownExt1.BackColor = System.Drawing.Color.AntiqueWhite
 {% endhighlight %}
 {% endtabs %}
 
-![](DomainUpdownExt_images/Overview_img431.png) 
+![DomainUpDownExt appearance](DomainUpdownExt_images/Overview_img431.png) 
 
-![](DomainUpdownExt_images/Overview_img432.png) 
+![DomainUpDownExt appearance](DomainUpdownExt_images/Overview_img432.png) 

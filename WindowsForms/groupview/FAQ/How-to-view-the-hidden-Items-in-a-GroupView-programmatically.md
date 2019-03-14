@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to view the hidden Items in a GroupView programmatically | WindowsForms | Syncfusion
+title: View the hidden group view items | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: GroupView
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to view the hidden items in a GroupView programmatically?
 
-GroupView's BringItemIntoView method can be used to scroll down to a hidden item and bring that item into view.
+GroupView's [BringItemIntoView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~BringItemIntoView.html) method can be used to scroll down to a hidden item and bring that item into view.
 
 {% tabs %}
 

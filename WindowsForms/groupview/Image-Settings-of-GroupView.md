@@ -15,24 +15,9 @@ To add images to the GroupView, ImageList control must be added to the form with
 
 N> If the application requirements deem that the GroupView will always display the same-sized image, then it is sufficient to assign just one ImageList. For the VS.NET toolbox interface, the GroupView will use only a single 16*16-sized small image list.
 
-<table>
-<tr>
-<th>
-GroupView properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-LargeImageList</td><td>
-It contains large images (32*32) to associate with the control.</td></tr>
-<tr>
-<td>
-SmallImageView</td><td>
-In SmallImageView mode, the GroupView items are displayed using the small 16x16 images and are right-aligned with the text drawn alongside the image. When the SmallImageView property is set to `false`, items are displayed using the larger 32x32 images and will be center-aligned with the text drawn below the image. </td></tr>
-<tr>
-<td>
-SmallImageList</td><td>
-It contains small images (16*16) to associate with the control. SmallImageView must be set to `true` to associate small images with the control.</td></tr>
-</table>
+* [LargeImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~LargeImageList.html)
+* [SmallImageView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SmallImageView.html)
+* [SmallImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SmallImageList.html)
 
 {% tabs %}
 
@@ -62,15 +47,15 @@ Me.groupView1.SmallImageList = Me.imageList1
 
 N> Setting Image list component to the above properties will not actually associate the images with the GroupView Item. We need to set the ImageIndex of the images to the GroupView Item through the GroupViewItems Collection editor.
 
- ![](Overview_images/Overview_img79.jpeg) 
+ ![Image settings of GroupView](Overview_images/Overview_img79.jpeg) 
 
 
-![](Overview_images/Overview_img80.jpeg)
+![Image settings of GroupView](Overview_images/Overview_img80.jpeg)
 
 
 ## Highlighting images
 
-We can highlight the image of the GroupView Item when the mouse is moved over it by setting the HighlightImage property to `true`.
+We can highlight the image of the GroupView Item when the mouse is moved over it by setting the [HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightImage.html) property to `true`.
 
 {% tabs %}
 
@@ -90,39 +75,19 @@ Me.groupView1.HighLightImage = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img81.jpeg)
+![Highlighting images](Overview_images/Overview_img81.jpeg)
 
 
 ## Image offset settings
 
 The following properties are used to set the image offset for the GroupView Items.
 
+* [SelectedImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedImageOffset.html)
+* [SelectingImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectingImageOffset.html)
+* [SelectedHighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedHighlightImageOffset.html)
+* [HighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightImageOffset.html)
 
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SelectedImageOffset</td><td>
-Gets/sets the image offset for the selected GroupView Item. </td></tr>
-<tr>
-<td>
-SelectingImageOffset</td><td>
-Gets/sets the image offset for the GroupView Item being selected. </td></tr>
-<tr>
-<td>
-SelectedHighlightImageOffset</td><td>
-Gets/sets the image offset when the mouse is moved over the selected GroupView Item. </td></tr>
-<tr>
-<td>
-HighlightImageOffset</td><td>
-Gets/sets the image offset for the highlighted GroupView Item. </td></tr>
-</table>
-
-N> HighlightImage property must be set to `true` in all the cases.
+N> [HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightImage.html) property must be set to `true` in all the cases.
 
 {% tabs %}
 
@@ -156,36 +121,16 @@ Me.groupView1.SelectedHighlightImageOffset = New System.Drawing.Point(5, 5)
 
 The following table lists the methods related to the above properties.
 
-
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-ResetSelectedImageOffset</td><td>
-Resets the SelectedImageOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetSelectingImageOffset</td><td>
-Resets the SelectingImageOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetSelectedHighlightImageOffset</td><td>
-Resets the SelectedHighlightImageOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetHighlightImageOffset</td><td>
-Resets the HighlightImageOffset property to it's default value.</td></tr>
-</table>
+* [ResetSelectedImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedImageOffset.html)
+* [ResetSelectingImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectingImageOffset.html)
+* [ResetSelectedHighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedHighlightImageOffset.html)
+* [ResetHighlightImageOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetHighlightImageOffset.html)
 
 ## Image spacing
 
-We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the ImageSpacing property to integer values.
+We can provide spacing between the highlighted edge of a GroupView Item and the image by setting the [ImageSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ImageSpacing.html) property to integer values.
 
-HighlightImage property must be set to `true`.
+[HighlightImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightImage.html) property must be set to `true`.
 
 {% tabs %}
 
@@ -205,4 +150,4 @@ Me.groupView1.ImageSpacing = 7
 
 {% endtabs %}
 
-![](Overview_images/Overview_img83.jpeg)
+![Image spacing](Overview_images/Overview_img83.jpeg)

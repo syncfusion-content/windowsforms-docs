@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Applying themes
 
-The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the ThemesEnabled property of GroupView to `true`.
+The Themes Enabled property specifies whether XP Themes should be used for drawing the control. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ThemesEnabled.html) property of GroupView to `true`.
 
 {% tabs %}
 
@@ -28,4 +28,4 @@ Me.groupView1.ThemesEnabled = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img84.jpeg)
+ ![Themes enabled](Overview_images/Overview_img84.jpeg)
