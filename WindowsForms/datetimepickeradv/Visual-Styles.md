@@ -11,7 +11,7 @@ documentation: ug
 
 Styles
 
-The DateTimePickerAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the built-in visual styles.
+The DateTimePickerAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Style.html) property of DateTimePickerAdv.
 
 The styles are built in for DateTimePickerAdv.
 
@@ -33,16 +33,7 @@ The styles are built in for DateTimePickerAdv.
 
 •	Office2016White
 
-<table>
-<tr>
-<th>
-DateTimePickerAdv property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Style</td><td>
-Gets or Sets the visual style of the DateTimePickerAdv. The default value is 'Default'.</td></tr>
-</table>
+
 
 **Default**
 
@@ -69,7 +60,7 @@ Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.default
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img201.jpeg) 
+![Default theme](DateTimePicker_images/Overview_img201.jpeg) 
 
 
 **Office2007**
@@ -96,7 +87,7 @@ Me.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2007
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img202.jpeg) 
+![Office2007 theme](DateTimePicker_images/Overview_img202.jpeg) 
 
 
 It also specifies the color schemes for Office 2007 visual styles. They can be Blue, Silver, Black and Managed.
@@ -137,7 +128,7 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img203.jpeg) 
+![Office2007 blue theme](DateTimePicker_images/Overview_img203.jpeg) 
 
 
 **Black**
@@ -167,7 +158,7 @@ Me.dateTimePickerAdv1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img204.jpeg) 
+![Office2007 black theme](DateTimePicker_images/Overview_img204.jpeg) 
 
 
 **Silver**
@@ -198,7 +189,7 @@ Me.dateTimePickerAdv1.Office2007Theme =Syncfusion.Windows.Forms.Office2007Theme.
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img205.jpeg) 
+![Office2007 silver theme](DateTimePicker_images/Overview_img205.jpeg) 
 
 
 **Managed**
@@ -231,7 +222,7 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img206.jpeg) 
+![Managed theme](DateTimePicker_images/Overview_img206.jpeg) 
 
 
 **Office2007Outlook**
@@ -259,7 +250,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img218.jpeg) 
+![Office2007Outlook theme](DateTimePicker_images/Overview_img218.jpeg) 
 
 
 **Office2010**
@@ -284,7 +275,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img207.jpeg) 
+![Office2010 theme](DateTimePicker_images/Overview_img207.jpeg) 
 
 It also allows to specify the color schemes for Office 2010 visual styles. They can be blue, silver and black and managed
 
@@ -322,7 +313,7 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img208.jpeg) 
+![Office2010 blue theme](DateTimePicker_images/Overview_img208.jpeg) 
 
 **Black**
 
@@ -350,7 +341,7 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img209.jpeg) 
+![Office2010 black theme](DateTimePicker_images/Overview_img209.jpeg) 
 
 
 **Silver**
@@ -379,7 +370,7 @@ Me.dateTimePickerAdv1.Office2010Theme = Syncfusion.Windows.Forms.Office2010Theme
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img210.jpeg) 
+![Office2010 silver theme](DateTimePicker_images/Overview_img210.jpeg) 
 
 **Managed**
 
@@ -409,7 +400,7 @@ Syncfusion.Windows.Forms.Office2010Colors.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img211.jpeg) 
+![Managed theme](DateTimePicker_images/Overview_img211.jpeg) 
 
 **Metro**
 
@@ -433,7 +424,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Metro
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img213.jpeg) 
+![Metro theme](DateTimePicker_images/Overview_img213.jpeg) 
 
 **Office2016Colorful**
 
@@ -459,7 +450,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img212.jpeg) 
+![Office2016Colorful theme](DateTimePicker_images/Overview_img212.jpeg) 
 
 **Office2016DarkGray**
 
@@ -486,34 +477,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img214.jpeg) 
-
-**Office2016DarkGray**
-
-This option helps to set the Office2016DarkGray theme. theme.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// office2016DarkGray
-
-this.dateTimePickerAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray;
-
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-' office2016DarkGray
-
-Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2016DarkGray
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](DateTimePicker_images/Overview_img215.jpeg) 
+![Office2016DarkGray theme](DateTimePicker_images/Overview_img214.jpeg) 
 
 **Office2016Black**
 
@@ -539,7 +503,7 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img216.jpeg) 
+![Office2016Black theme](DateTimePicker_images/Overview_img216.jpeg) 
 
 **Office2016White**
 
@@ -565,4 +529,4 @@ Me.dateTimePickerAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 {% endtabs %}
 
-![](DateTimePicker_images/Overview_img217.jpeg) 
+![Office2016White theme](DateTimePicker_images/Overview_img217.jpeg) 

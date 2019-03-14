@@ -46,7 +46,7 @@ Me.tabSplitterContainer1.Style = Syncfusion.Windows.Forms.Tools.TabSplitterConta
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img5.png) 
+ ![Default](Overview_images/Overview_img5.png) 
 
 
  **Office2016Colorful**
@@ -75,7 +75,7 @@ Me.tabSplitterContainer1.Style = Syncfusion.Windows.Forms.Tools.TabSplitterConta
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img6.png) 
+ ![Office2016Colorful theme](Overview_images/Overview_img6.png) 
 
 
  **Office2016White**
@@ -102,7 +102,7 @@ Me.tabSplitterContainer1.Style = Syncfusion.Windows.Forms.Tools.TabSplitterConta
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img7.png) 
+ ![Office2016White theme](Overview_images/Overview_img7.png) 
 
 
  **Office2016DarkGray**
@@ -129,7 +129,7 @@ Me.tabSplitterContainer1.Style = Syncfusion.Windows.Forms.Tools.TabSplitterConta
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img8.png) 
+ ![Office2016DarkGray theme](Overview_images/Overview_img8.png) 
 
 
  **Office2016Black**
@@ -156,5 +156,5 @@ Me.tabSplitterContainer1.Style = Syncfusion.Windows.Forms.Tools.TabSplitterConta
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img9.png)
+ ![Office2016Black theme](Overview_images/Overview_img9.png)
 
