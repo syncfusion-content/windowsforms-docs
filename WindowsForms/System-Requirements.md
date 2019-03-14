@@ -22,6 +22,7 @@ Following frameworks are supported:
 * Microsoft .NET Framework 4.5
 * Microsoft .NET Framework 4.5.1
 * Microsoft .NET Framework 4.6 & above
+* Microsoft .NET Core 3.0
 
 ## Development Environments
 
@@ -34,4 +35,5 @@ Following IDEs can be used for development that can [compatible](https://www.vis
 * Microsoft Visual Studio 2013
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio 2017
+* Microsoft Visual Studio 2019
 
