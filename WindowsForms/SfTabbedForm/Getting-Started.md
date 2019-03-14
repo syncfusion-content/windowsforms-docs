@@ -101,7 +101,7 @@ tabbedFormControl.Tabs.Add(tabPageAdv2)
 
 ## Avoid Extending Tabs to TitleBar of the Form 
 
-`SfTabbedForm.FormExtendTabsToTitleBar` property specifies whether the tabs should extend to the title bar of the form. By default `SfTabbedForm.ExtendTabsToTitleBar` property is set to true.
+By default, the tabs will be extended to titlebar. To avoid extending the tabs into titlebar, disable the `SfTabbedForm.ExtendTabsToTitleBar` property.
 
 {% tabs %}
 {% highlight c# %}
