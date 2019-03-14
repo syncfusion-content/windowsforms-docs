@@ -2468,7 +2468,8 @@ Syncfusion.Shared.Base
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
@@ -2492,7 +2493,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 
 </td>
 <td>
@@ -2591,7 +2593,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.SfInput.WinForms
@@ -2614,7 +2617,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
@@ -2658,7 +2662,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.SfInput.WinForms
@@ -2679,7 +2684,8 @@ Syncfusion.SfInput.WinForms
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
@@ -2702,7 +2708,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
@@ -2745,7 +2752,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
@@ -3109,7 +3117,8 @@ Syncfusion.Tools.Windows
 </tr>
 <tr>
 <td>
-Syncfusion.Core.WinForms
+Syncfusion.Core.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.Core.WinForms
