@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-## Assembly Deployment
+## Assembly deployment
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sftabbedform) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
-## Converting Standard Form into SfTabbedForm
+## Converting standard form into SfTabbedForm
 
 The default form can be changed into `SfTabbedForm` by the following steps:
 
@@ -73,9 +73,9 @@ Me.TabbedFormControl = tabbedFormControl
 {% endtabs %}
 
 
-## Adding Tabs to TabbedForm
+## Adding tabs to TabbedForm
 
-To add Tabs to the form create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and add it to the Tabs collection of the `TabbedFormControl`.
+To add tabs to the form create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and add it to the tabs collection of the `TabbedFormControl`.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ Me.TabbedFormControl = tabbedFormControl
 
 ![tabbed form](Getting-Started_images/Getting-Started_img1.png)
 
-## Show Tabs below TitleBar of the Form 
+## Show tabs below the title bar
 
 By default, the tabs will be extended to title bar. To avoid extending the tabs into title bar, disable the `SfTabbedForm.ExtendTabsToTitleBar` property.
 

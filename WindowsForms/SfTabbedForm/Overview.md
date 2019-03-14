@@ -11,7 +11,7 @@ documentation: ug
 
 The Tabbed form is used to display tabbed user interface. Users can add any number of tabs and each tab can contain any number of controls. The tabs can be load into form's title bar or displayed just below the title bar.
 
-## Key Features
+## Key features
 
 Following are the key features of the SfTabbedForm:
 
