@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Essential Windows Forms components
+title: System requirements needed to use Syncfusion Windows Forms components
 description: SystemRequirement Details
 platform: WindowsForms
 control: General
