@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | TabbedForm | Syncfusion
+title: Overview | TabbedForm | WindowsForms | Syncfusion
 description: This section explains about the Tabbedform control for windows forms and it's important key features.
 platform: WindowsForms
 control: SfTabbedForm
@@ -9,11 +9,15 @@ documentation: ug
 
 # Overview
 
-The `SfTabbedForm` is a window control which provide the tabbed UI like browser appearance and the tabs can be load into form's title bar or displayed just below the title bar.
+The Tabbed form is used to display tabbed user interface. Users can add any number of tabs and each tab can contain any number of controls. The tabs can be load into form's title bar or displayed just below the title bar.
 
 ## Key Features
 
 Following are the key features of the SfTabbedForm:
 
-* Tabs customization: Customizes the appearance of the tabs and load the tabs into form's title bar.
-* TitleBar customization: Customizes the appearance of the title bar.
+* Easy to navigate through the tabs.
+* Image can be added to the tabs for intuitive user interface.
+* Close the tabs using close button in tab header.
+* Customize the appearance of the tabs.
+* Customizes the appearance of the title bar.
+* Smooth scrolling behavior even when tabs overflow onto the tab panel.

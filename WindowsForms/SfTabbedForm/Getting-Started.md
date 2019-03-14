@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| SfTabbedForm | WindowsForms | Syncfusion
+title: Getting Started| TabbedForm | WindowsForms | Syncfusion
 description: Getting Started
 platform: WindowsForms
 control: SfTabbedForm
@@ -57,7 +57,7 @@ End Class
 
 ## Loading TabbedFormControl to TabbedForm
 
- `TabbedFormControl` represents the form's header which consist of the tabs. The control can be loaded form using the following code.
+`TabbedFormControl` provides the tabbed user interface to the `TabbedForm`. `TabbedFormControl` should be added to the form to have tabbed user interface. The control can be loaded to form using the following code.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,25 +81,31 @@ To add Tabs to the form create an instance of [TabPageAdv](https://help.syncfusi
 {% highlight c# %}
 TabPageAdv tabPageAdv1 = new TabPageAdv();
 TabPageAdv tabPageAdv2 = new TabPageAdv();
+SfTabbedFormControl tabbedFormControl = new SfTabbedFormControl();
 this.tabPageAdv1.Text = "Document1";
 this.tabPageAdv2.Text = "Document2";
 tabbedFormControl.Tabs.Add(tabPageAdv1);
 tabbedFormControl.Tabs.Add(tabPageAdv2);
+this.Controls.Add(tabbedFormControl);
+this.TabbedFormControl = tabbedFormControl;
 {% endhighlight %}
 {% highlight vb %}
 Dim tabPageAdv1 As New TabPageAdv()
 Dim tabPageAdv2 As New TabPageAdv()
+Dim tabbedFormControl As New SfTabbedFormControl()
 Me.tabPageAdv1.Text = "Document1"
 Me.tabPageAdv2.Text = "Document2"
 tabbedFormControl.Tabs.Add(tabPageAdv1)
 tabbedFormControl.Tabs.Add(tabPageAdv2)
+Me.Controls.Add(tabbedFormControl)
+Me.TabbedFormControl = tabbedFormControl
 {% endhighlight %}
 {% endtabs %}
 
 
 ![tabbed form](Getting-Started_images/Getting-Started_img1.png)
 
-## Avoid Extending Tabs to TitleBar of the Form 
+## Show Tabs below TitleBar of the Form 
 
 By default, the tabs will be extended to title bar. To avoid extending the tabs into title bar, disable the `SfTabbedForm.ExtendTabsToTitleBar` property.
 
