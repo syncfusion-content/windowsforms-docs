@@ -2492,7 +2492,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 
 </td>
 <td>
@@ -2591,7 +2592,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.SfInput.WinForms
@@ -2658,7 +2660,8 @@ Refer to [themes section](#themes) for theming assembly references to apply them
 <tr>
 <td>
 Syncfusion.Core.WinForms<br/>
-Syncfusion.SfInput.WinForms
+Syncfusion.SfInput.WinForms<br/>
+Syncfusion.Shared.Base
 </td>
 <td>
 Syncfusion.SfInput.WinForms

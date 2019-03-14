@@ -47,6 +47,7 @@ The SfCalendar control can be added to the application by dragging it from the t
 
 * Syncfusion.Core.WinForms.dll
 * Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
 ![Drag and drop the sfcalendar to form](getting-started-images/gettingstarted.png) 
 
@@ -55,8 +56,10 @@ The SfCalendar control can be added to the application by dragging it from the t
 To add control manually in C#, follow the given steps:
 
 **1.** Add the following required assembly references to the project:
-	* Syncfusion.Core.WinForms.dll
-	* Syncfusion.SfInput.WinForms.dll
+	
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
 **2.** Include the namespaces **Syncfusion.WinForms.Input**.
 
