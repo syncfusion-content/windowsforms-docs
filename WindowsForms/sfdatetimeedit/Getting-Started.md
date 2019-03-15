@@ -45,6 +45,7 @@ The `SfDateTimEdit` control can be added to the application by dragging it from 
 
 * Syncfusion.Core.WinForms.dll
 * Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
 ![Drag and drop the SfDateTimeEdit control to form](getting-started-images/toolbox.png)
 
@@ -53,8 +54,10 @@ The `SfDateTimEdit` control can be added to the application by dragging it from 
 To add the control manually in C#, follow the given steps:
 
 **1.** Add the following required assembly references to the project:
-	* Syncfusion.Core.WinForms.dll
-	* Syncfusion.SfInput.WinForms.dll
+
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
 **2.** Include the namespaces **Syncfusion.WinForms.Input**.
 
