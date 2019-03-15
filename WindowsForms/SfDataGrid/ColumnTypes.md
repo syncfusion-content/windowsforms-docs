@@ -854,8 +854,8 @@ this.sfDataGrid.Columns.Add( new GridComboBoxColumn() { MappingName = "ShipCity"
 (this.sfDataGrid.Columns["ShipCity"] as GridComboBoxColumn).DataSource = orderInfo.ComboBoxItemsSource; 
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Columns.Add(New GridComboBoxColumn)
-CType(Me.sfDataGrid.Columns("ShipCity"),GridComboBoxColumn).DataSource = orderInfo.ComboBoxItemsSource
+Me.sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCity", .HeaderText="Ship City"})
+TryCast(Me.sfDataGrid.Columns("ShipCity"), GridComboBoxColumn).DataSource = orderInfo.ComboBoxItemsSource
 {% endhighlight %}
 {% endtabs %}
 
