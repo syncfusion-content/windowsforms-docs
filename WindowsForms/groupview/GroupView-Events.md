@@ -10,42 +10,16 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-
-
-<table>
-<tr>
-<th>
-GroupView events</th><th>
-Description</th></tr>
-<tr>
-<td>
-GroupViewItemHighlighted</td><td>
-This event occurs when a GroupView Item in the GroupView control is highlighted.</td></tr>
-<tr>
-<td>
-GroupViewItemRenamed</td><td>
-This event occurs when a GroupView Item has been renamed by an in-place edit operation.</td></tr>
-<tr>
-<td>
-GroupViewItemSelected</td><td>
-This event occurs when a GroupView Item in the GroupView control is selected.</td></tr>
-<tr>
-<td>
-GroupViewItemsReordered</td><td>
-This event occurs when a GroupView Item in the GroupView control is reordered.</td></tr>
-<tr>
-<td>
-ShowContextMenu</td><td>
-This event occurs when the right mouse button is clicked over the GroupView control.</td></tr>
-<tr>
-<td>
-GroupViewItemDoubleClick</td><td>
-This event occurs when the GroupViewItem is double-clicked.</td></tr>
-</table>
+* [GroupViewItemHighlighted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemHighlighted_EV.html)
+* [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemRenamed_EV.html)
+* [GroupViewItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemSelected_EV.html)
+* [GroupViewItemsReordered](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemsReordered_EV.html)
+* [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ShowContextMenu_EV.html)
+* [GroupViewItemDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemDoubleClick_EV.html)
 
 ## GroupViewItemHighlighted event
 
-It occurs when a GroupView Item in the GroupView control is highlighted.
+The [GroupViewItemHighlighted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemHighlighted_EV.html) event occurs when a GroupView Item in the GroupView control is highlighted.
 
 The event handler receives an argument of type EventArgs.
 
@@ -93,12 +67,12 @@ End Sub
 
 {% endtabs %}
 
-![](Overview_images/Overview_img88.jpeg) 
+![GroupViewItemHighlighted event usage](Overview_images/Overview_img88.jpeg) 
 
 
 ## GroupViewItemRenamed event
 
-It occurs when a GroupView Item has been renamed by an in-place edit operation.
+The [GroupViewItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemRenamed_EV.html) event occurs when a GroupView Item has been renamed by an in-place edit operation.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs. The event properties associated with the GroupItemRenamedEventArgs are as follows.
 
@@ -162,7 +136,7 @@ End Sub
 
 ## GroupViewItemReordered event
 
-It occurs when a GroupView Item in the GroupView control is reordered.
+The [GroupViewItemsReordered](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemsReordered_EV.html) event occurs when a GroupView Item in the GroupView control is reordered.
 
 The event handler receives an argument of type GroupItemRenamedEventArgs.
 
@@ -205,7 +179,7 @@ End Sub
 
 ## GroupViewItemSelected event
 
-It occurs when a GroupView Item in the GroupView control is selected.
+The [GroupViewItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemSelected_EV.html) event occurs when a GroupView Item in the GroupView control is selected.
 
 Accessing the GroupView.SelectedItem property from within the GroupViewItemSelected event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked.
 
@@ -257,9 +231,9 @@ End Sub
 
 ## ShowContextMenu event
 
-The GroupBar and the GroupView control implement a ShowContextMenu event that is generated when the user right-clicks on the control. Applications can handle this event to create and display a Context Menu for the control. Both controls provide a ContextMenuItem property that returns the index of the GroupBar Item or the GroupView Item over which the mouse click occurred and this can be used to populate the menu with accurate item-specific contextual information.
+The GroupBar and the GroupView control implement a ShowContextMenu event that is generated when the user right-clicks on the control. Applications can handle this event to create and display a Context Menu for the control. Both controls provide a [ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ContextMenuItem.html) property that returns the index of the GroupBar Item or the GroupView Item over which the mouse click occurred and this can be used to populate the menu with accurate item-specific contextual information.
 
-The following code from the GroupBar Demo shows a sample handler for the GroupBar.ShowContextMenu event that uses the EssentialToolsXPMenus.PopupMenu class for the context menu. The handler accesses the control's GroupBar.ContextMenuItem property to ascertain whether the mouse click occurred over a GroupBar Item, and if so, to determine the identity of the particular item.
+The following code from the GroupBar Demo shows a sample handler for the [GroupBar.ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ShowContextMenu_EV.html) event that uses the EssentialToolsXPMenus.PopupMenu class for the context menu. The handler accesses the control's [GroupBar.ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ContextMenuItem.html) property to ascertain whether the mouse click occurred over a GroupBar Item, and if so, to determine the identity of the particular item.
 
 {% tabs %}
 
@@ -481,11 +455,11 @@ End Sub
 
 {% endtabs %}
 
-![](Overview_images/Overview_img89.jpeg) 
+![ShowContextMenu](Overview_images/Overview_img89.jpeg) 
 
 ## GroupViewItemDoubleClick event
 
-It occurs when a GroupView Item in the GroupView control is double-clicked.
+The [GroupViewItemDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItemDoubleClick_EV.html) event occurs when a GroupView Item in the GroupView control is double-clicked.
 
 The event handler receives an argument of type GroupViewItemDoubleClickArgs.
 

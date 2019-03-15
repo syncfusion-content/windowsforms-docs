@@ -10,29 +10,8 @@ documentation: ug
 
 This section describes the events of DomainUpDownExt control.
 
-<table>
-<tr>
-<th>
-DomainUpDownExt Events</th><th>
-Description</th></tr>
-<tr>
-<td>
-ThemeChanged</td><td>
-This event is handled when ThemesEnabled property is changed.</td></tr>
-<tr>
-<td>
-SpinOrientationChanged</td><td>
-This event is handled when orientation of spin button is changed.</td></tr>
-<tr>
-<td>
-BorderSidesChanged</td><td>
-This event is handled when BorderSides property is changed.</td></tr>
-<tr>
-<td>
-BorderColorChanged</td><td>
-This event is handled when BorderColor is changed.</td></tr>
-<tr>
-<td>
-Border3DStyleChanged</td><td>
-This event is handled when Border3DStyle is changed.</td></tr>
-</table>
+* [ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~ThemeChanged_EV.html)
+* [SpinOrientationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~SpinOrientationChanged_EV.html)
+* [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BorderSidesChanged_EV.html)
+* [BorderColorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~BorderColorChanged_EV.html)
+* [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~Border3DStyleChanged_EV.html)
