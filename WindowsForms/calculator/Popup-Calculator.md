@@ -9,12 +9,12 @@ documentation: ug
 
 # Pop-Up CalculatorControl
 
-The PopupCalculator class can be used to display a popup Calculator control. This class can be created programmatically. 
+The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PopupCalculator.html) class can be used to display a popup [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html). This class can be created programmatically. 
 
-The PopupCalculator control lets you embed a Calculator control object to a button for example. Drop the button onto the form and add the following code snippet.
+The [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control lets you embed a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) object to a button for example. Drop the button onto the form and add the following code snippet.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 private Syncfusion.Windows.Forms.Tools.PopupCalculator popupCalculator1;
 private void buttonAdv1_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ private void buttonAdv1_Click(object sender, EventArgs e)
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Private popupCalculator1 As Syncfusion.Windows.Forms.Tools.PopupCalculator
 Private Sub buttonAdv1_Click(ByVal sender As Object, ByVal e As EventArgs)
@@ -62,4 +62,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img126.jpeg)
+![PopupCalculator control created programmatically](Overview_images/Overview_img126.jpeg)

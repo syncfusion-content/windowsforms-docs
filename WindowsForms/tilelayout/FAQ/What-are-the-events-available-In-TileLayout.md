@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What are the events available In TileLayout | WindowsForms | Syncfusion
+title: Events in TileLayout | WindowsForms | Syncfusion
 description: What are the events available In TileLayout
 platform: WindowsForms
 control: TileLayout 
@@ -11,7 +11,7 @@ documentation: ug
 
 ## BeforeSliding
 
-This event is triggered before the Slide is moving.
+This [BeforeSliding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~BeforeSliding_EV.html) event is triggered before the Slide is moving.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ End Sub
 
 ## AfterSlided
 
-This event is triggered after the Side has moved.
+This [AfterSlided](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~AfterSlided_EV.html) event is triggered after the Side has moved.
 
 
 {% tabs %}

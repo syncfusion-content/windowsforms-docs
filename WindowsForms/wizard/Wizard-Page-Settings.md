@@ -15,24 +15,7 @@ Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how 
 
 ## Setting title and description
 
-You can specify the title and description in the Banner Panel, for a particular Wizard Page using the WizardPage.Title and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. See Title and Description Settings for details.
-
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Title</td><td>
-Specifies the title of the page.</td></tr>
-<tr>
-<td>
-Description</td><td>
-Specifies the description for the page.</td></tr>
-</table>
+You can specify the title and description in the Banner Panel, for a particular Wizard Page using the [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~Title.html) and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. 
 
 {% tabs %}
 
@@ -58,7 +41,7 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 {% endtabs %}
 
-![](Wizard-Package_images/Wizard-Package_img16.jpeg)
+![Setting title and description](Wizard-Package_images/Wizard-Package_img16.jpeg)
 
 
 
@@ -66,42 +49,12 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-Property table
+* [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~SelectedWizardPage.html)
+* [WizardPage.LayoutName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~LayoutName.html)
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SelectedWizardPage</td><td>
-Specifies the selected wizard page.</td></tr>
-<tr>
-<td>
-WizardPage.LayoutName</td><td>
-The individual Wizard page is identified using its LayoutName in the SelectedWizardPage property. By default the LayoutName is set as Card1 for the first page added, Card2 for the next page and so on. </td></tr>
-</table>
+![Accessing wizard pages](Wizard-Package_images/Wizard-Package_img17.jpeg)
 
-
-![](Wizard-Package_images/Wizard-Package_img17.jpeg)
-
-
-
-The header section (GradientPanel and its child controls) can be hidden by setting FullPage property to `true`. This makes the page occupy the entire space without the header.
-
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FullPage</td><td>
-Gets/sets the boolean value whether the Banner Panel should  be shown for that page. Default value is `false`.</td></tr>
-</table>
+The header section (GradientPanel and its child controls) can be hidden by setting [FullPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FullPage.html) property to `true`. This makes the page occupy the entire space without the header.
 
 {% tabs %}
 
@@ -119,7 +72,7 @@ Me.wizardControlPage1.FullPage = True
 
 {% endtabs %}
 
-![](Wizard-Package_images/Wizard-Package_img18.jpeg)
+![Accessing wizard pages](Wizard-Package_images/Wizard-Package_img18.jpeg)
 
 
 
@@ -131,36 +84,19 @@ A sample which demonstrates a Wizard Control with interactive Wizard pages is av
 
 By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
 
-* Select the WizardControl and choose WizardPages property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
+* Select the WizardControl and choose [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPages.html) property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
 
-![](Wizard-Package_images/Wizard-Package_img19.jpeg)
+![Reordering wizard pages](Wizard-Package_images/Wizard-Package_img19.jpeg)
 
 
 
 * In the designer, right-click on a page and choose 'Bring To Front' or 'Send To Back' options which will move the page to the beginning or to the end of the collection, respectively.
 
-![](Wizard-Package_images/Wizard-Package_img20.jpeg)
+![Reordering wizard pages](Wizard-Package_images/Wizard-Package_img20.jpeg)
 
 
 
-* The WizardControlPage has the NextPage and PreviousPage properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
-
-Property table
-
-<table>
-<tr>
-<th>
-WizardControlPage property</th><th>
-Description</th></tr>
-<tr>
-<td>
-NextPage</td><td>
-It sets the next page of the wizard.</td></tr>
-<tr>
-<td>
-PreviousPage</td><td>
-It sets the previous page of the wizard.</td></tr>
-</table>
+* The WizardControlPage has the [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~NextPage.html) and [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~PreviousPage.html) properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
 {% tabs %}
 

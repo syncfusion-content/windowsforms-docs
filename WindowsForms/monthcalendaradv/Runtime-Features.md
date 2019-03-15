@@ -12,29 +12,7 @@ documentation: ug
 
 ### Range of selection
 
-The minimum and maximum date selectable by the calendar can be specified using MinValue and MaxValue properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
-
-
-
-<table>
-<tr>
-<th>
-MonthCalendarAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Value</td><td>
-Indicates the current value of the calendar. By default this value will be the current date.</td></tr>
-<tr>
-<td>
-MinValue</td><td>
-Specifies the minimum value selectable by the calendar.</td></tr>
-<tr>
-<td>
-MaxValue</td><td>
-Specifies the maximum value selectable by the calendar.</td></tr>
-</table>
-
+The minimum and maximum date selectable by the calendar can be specified using [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MaxValue.html) properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
 
 {% tabs %}
 
@@ -66,7 +44,7 @@ Me.monthCalendarAdv1.MaxValue = New System.DateTime(2008, 2, 21, 0, 0, 0, 0)
 
 When we drag and drop a MonthCalendarAdv control, current system date, i.e, today's date will be selected by default. To change the selected date, DateTime Collection Editor is used, which is invoked using SelectedDates property.
 
-![](CalendarDateTime_images/Overview_img160.jpeg)
+![Range](CalendarDateTime_images/Overview_img160.jpeg)
 
 
 
@@ -76,22 +54,8 @@ N> It is possible to set color for the highlighted date. See_ Text Settings _top
 
 It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection.
 
-
-
-<table>
-<tr>
-<th>
-MonthCalendarAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-AllowMultipleSelection</td><td>
-Indicates whether multiple selection of dates is allowed. i.e, by holding the Ctrl key and selecting the dates using mouse.</td></tr>
-<tr>
-<td>
-MouseDragMultiSelect</td><td>
-Indicates whether selection of dates are allowed using mouse down and dragging at run time.</td></tr>
-</table>
+* [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~AllowMultipleSelection.html)
+* [MouseDragMultiSelect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MouseDragMultiselect.html)
 
 
 {% tabs %}
@@ -118,13 +82,13 @@ Me.monthCalendarAdv1.MouseDragMultiselect = True
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img162.jpeg) 
+![Multiple selection at run time](CalendarDateTime_images/Overview_img162.jpeg) 
 
 
 
 **Select date range programmatically**
 
-Using the SelectedDates property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list.
+Using the [SelectedDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~SelectedDates.html) property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list.
 
 
 {% tabs %}
@@ -153,7 +117,7 @@ Me.monthCalendarAdv1.SelectedDates = dateTimes
 
 Dates should be specified in the DataTime Array List. Then the DateTime Array list should be declared to the SelectedDates Property. This would select the dates that are in the DateTime Array list.
 
-![](CalendarDateTime_images/Overview_img163.png)
+![Select date range programmatically](CalendarDateTime_images/Overview_img163.png)
 
 
 
@@ -166,7 +130,7 @@ N> Date range should be specified manually in the DateTime Array list.
 
 At run time, you have options to move to the next month or previous month using the left or right scroll buttons and also using the context menu displayed, when you click on the month of the calendar. To specify images for individual months in the menu, use MonthImageList property.
 
-![](CalendarDateTime_images/Overview_img165.jpeg)
+![Navigation at RunTime](CalendarDateTime_images/Overview_img165.jpeg)
 
 
 
@@ -192,27 +156,13 @@ Me.monthCalendarAdv1.MonthImageList = Me.imageList1
 {% endtabs %}
 
 
-![](CalendarDateTime_images/Overview_img166.jpeg)
+![Navigation at RunTime](CalendarDateTime_images/Overview_img166.jpeg)
 
 
 
 ### Foreground color for inactive months
 
-The below property sets the color for the inactive months.
-
-
-
-<table>
-<tr>
-<th>
-MonthCalendarAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-InactiveMonthColor</td><td>
-The previous or next month dates of the current month will be inactive in the MonthCalendarAdv control. This property specifies color of those inactive month dates.</td></tr>
-</table>
-
+The [InactiveMonthColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~InactiveMonthColor.html) property used to sets the color for the inactive months.
 
 {% tabs %}
 
@@ -234,13 +184,13 @@ Me.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionTe
 {% endtabs %}
 
 
-![](CalendarDateTime_images/Overview_img167.jpeg) 
+![Foreground color for inactive months](CalendarDateTime_images/Overview_img167.jpeg) 
 
 
 
 ### First day of the week
 
-MonthCalendarAdv lets you specify the first day to be displayed in a week using FirstDayOfWeek property. Default will be Sunday.
+MonthCalendarAdv lets you specify the first day to be displayed in a week using [FirstDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~FirstDayOfWeek.html) property. Default will be Sunday.
 
 {% tabs %}
 
@@ -261,7 +211,7 @@ Me.monthCalendarAdv1.FirstDayOfWeek = Day.Monday
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img168.jpeg) 
+![First day of the week](CalendarDateTime_images/Overview_img168.jpeg) 
 
 ## Interactive features
 
@@ -271,7 +221,7 @@ This section covers the below topics:
 
 This section deals with replacing MonthCalendarAdv 'Go to Today' ContextMenu with a Custom Context Menu. At run-time, you can right click any calendar date and go to the today date using 'Go to Today' ContextMenu.
 
-![](CalendarDateTime_images/Overview_img169.jpeg)
+![Context menu](CalendarDateTime_images/Overview_img169.jpeg)
 
 
 
@@ -444,7 +394,7 @@ End Class
 
 {% endtabs %}
 
-![](CalendarDateTime_images/Overview_img170.jpeg) 
+![Context menu](CalendarDateTime_images/Overview_img170.jpeg) 
 
 ## ToolTips
 

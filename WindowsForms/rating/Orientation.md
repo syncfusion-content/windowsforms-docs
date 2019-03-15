@@ -9,20 +9,20 @@ documentation: ug
 
 # Orientation
 
-Control rendering can be done either in a vertical or in a horizontal position. 
+Control rendering can be done either in a vertical or in a horizontal position using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Orientation.html) property. 
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 this.ratingControl1.Orientation = Syncfusion.Windows.Forms.Tools.Orientationmode.Vertical;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
 Me.ratingControl1.Orientation = Syncfusion.Windows.Forms.Tools.Orientationmode.Vertical
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Orientation_images/Orientation_img1.png)
+![Orientation](Orientation_images/Orientation_img1.png)

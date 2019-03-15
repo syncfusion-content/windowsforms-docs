@@ -23,7 +23,7 @@ It has the below themes.
 
 •	Office2016Black
 
-The following code example allows you to set the style for the NavigationDrawer.
+The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Style.html) for the NavigationDrawer.
 
 ## Default
 
@@ -45,7 +45,7 @@ Me.navigationDrawer1.Style = Syncfusion.Windows.Forms.Tools.NavigationDrawerStyl
 
 {% endtabs %}
 
-![](Style_images/Style_img1.png)
+![Default theme](Style_images/Style_img1.png)
 
 ## Office2016Colorful
 
@@ -67,7 +67,7 @@ Me.navigationDrawer1.Style = Syncfusion.Windows.Forms.Tools.NavigationDrawerStyl
 
 {% endtabs %}
 
-![](Style_images/Style_img2.png)
+![Office2016Colorful theme](Style_images/Style_img2.png)
 
 ## Office2016White
 
@@ -89,7 +89,7 @@ Me.navigationDrawer1.Style = Syncfusion.Windows.Forms.Tools.NavigationDrawerStyl
 
 {% endtabs %}
 
-![](Style_images/Style_img3.png)
+![Office2016White theme](Style_images/Style_img3.png)
 
 ## Office2016DarkGray
 
@@ -111,7 +111,7 @@ Me.navigationDrawer1.Style = Syncfusion.Windows.Forms.Tools.NavigationDrawerStyl
 
 {% endtabs %}
 
-![](Style_images/Style_img4.png)
+![Office2016DarkGray theme](Style_images/Style_img4.png)
 
 ## Office2016Black
 
@@ -133,4 +133,4 @@ Me.navigationDrawer1.Style = Syncfusion.Windows.Forms.Tools.NavigationDrawerStyl
 
 {% endtabs %}
 
-![](Style_images/Style_img5.png)
+![Office2016Black theme](Style_images/Style_img5.png)

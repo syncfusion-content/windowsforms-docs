@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the Splitter color in the GroupBar | WindowsForms | Syncfusion
+title: How to customize the Splitter color | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: GroupBar
@@ -12,24 +12,9 @@ documentation: ug
 
 The following properties help customize the splitter color in the GroupBar.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-StackedMode</td><td>
-Gets/sets a value indicating whether GroupBarItems are stacked</td></tr>
-<tr>
-<td>
-Splitter color</td><td>
-Gets/sets the color of the splitter in GroupBar, if it is in stacked mode</td></tr>
-<tr>
-<td>
-EnableSplitter colorCustomization</td><td>
-Enable to change the color of the splitter in stacked mode</td></tr>
-</table>
+* [StackedMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~StackedMode.html)
+* [SplitterColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~Splittercolor.html)
+* [EnableSplittercolorCustomization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~EnableSplittercolorCustomization.html)
 
 {% tabs %}
 
@@ -65,4 +50,4 @@ Me.groupBar1.EnableSplittercolorCustomization = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img48.png)
+ ![Splitter color](Overview_images/Overview_img48.png)

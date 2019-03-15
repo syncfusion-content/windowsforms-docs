@@ -13,7 +13,7 @@ NavigationView control provides drop-down selection support.
 
 Each folder that is navigated through, is shown in the Address Bar, separated by a Forward Arrow. Clicking on this arrow, will show a drop-down list, displaying all the folders directly below the one you have opened.
 
-![](Drop-Down-Selection_images/Drop-Down-Selection_img1.jpeg)
+![Drop-down selection](Drop-Down-Selection_images/Drop-Down-Selection_img1.jpeg)
 
 
 
@@ -53,7 +53,7 @@ ChildBar2.ImageIndex = 1
 
 {% endtabs %}
 
-![](Drop-Down-Selection_images/Drop-Down-Selection_img2.jpeg) 
+![Images support](Drop-Down-Selection_images/Drop-Down-Selection_img2.jpeg) 
 
 
 
@@ -61,7 +61,7 @@ ChildBar2.ImageIndex = 1
 
 You can trace the previously selected locations by clicking on the Drop-Down button of the NavigationView.
 
-![](Drop-Down-Selection_images/Drop-Down-Selection_img3.jpeg) 
+![Tracking the previously selected items](Drop-Down-Selection_images/Drop-Down-Selection_img3.jpeg) 
 
 
 
@@ -73,7 +73,7 @@ You can add one or more custom buttons to the NavigationView through designer an
 
   You can add custom buttons to the NavigationView using the CustomButton Collection Editor.
 
-  ![](Drop-Down-Selection_images/Drop-Down-Selection_img4.jpeg)
+  ![Custom button collection](Drop-Down-Selection_images/Drop-Down-Selection_img4.jpeg)
 
 
 
@@ -119,7 +119,5 @@ navigationView4.Controls.Add(customButton)
 
 {% endtabs %}
 
-![](Drop-Down-Selection_images/Drop-Down-Selection_img5.jpeg) 
-
-
+![Custom button collection](Drop-Down-Selection_images/Drop-Down-Selection_img5.jpeg) 
 

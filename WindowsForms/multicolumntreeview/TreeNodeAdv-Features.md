@@ -77,7 +77,7 @@ Me.multiColumnTreeView1.Nodes(0).Optioned = True
 
 {% endtabs %}
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img1.jpg )
+![OptionButton support for the MultiColumnTreeView in TreeNodeAdv Features](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img1.jpg )
 
 ## CheckBox
 
@@ -152,7 +152,7 @@ Me.multiColumnTreeView1.Nodes(0).Checked = True
 
 {% endtabs %}
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img2.jpg )
+![CheckBox support provided for the TreeNodeAdv Features in WindowsForms](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img2.jpg )
 
 **Tristate CheckBox Settings**
 
@@ -188,19 +188,23 @@ EnsureDefaultOptionedChild</td><td>
 This specifies if at least one child of the parent node should be selected always.</td></tr>
 </table>
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img3.jpg )
+![WindowsForms TreeNodeAdv feature given Tristate checkbox support ](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img3.jpg )
 
 ## CustomControls
 
 TreeNodeAdv can hold controls using custom control feature. This increases the functionality of the node, the nodes can hold controls like combo box, calendar etc.
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img4.jpg )
+![TreeNodeAdv feature for the custom controls in MultiColumnTreeView](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img4.jpg )
 
 ## Editing the Node  
 
 ### LabelEdit
 
-Indicates whether the label text of the tree nodes can be edited. By default, it is false . To handle BeforeEdit event and AfterEdit event. LabelEdit property must be set as true.
+Indicates whether the label text of the tree nodes can be edited. By default, it is false . To edit the node,LabelEdit property must be set as true. BeforeEdit event occurs before a node gets into edit node.
+For further details refer [editing event] (https://help.syncfusion.com/windowsforms/multicolumntreeview/multicolumntreeview-events#node-editing). 
+
+
+
 
 {% tabs %}
 
@@ -218,7 +222,7 @@ Me.multiColumnTreeView1.LabelEdit = True
 
 {% endtabs %}
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img5.jpg)
+![LabelEdit support for the TreeNodeAdv feature of the MultiColumnTreeView](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img5.jpg)
 
 ## Primitives
 	
@@ -246,12 +250,12 @@ For adding the Primitives to the nodes, follow the steps below.
 
 1.	Open the Primitives Collection Editor .
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img6.jpg)
+![MultiColumnTreeView control supports a set of primitives](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img6.jpg)
 
 2.	Select the type of primitive in the combo box present at bottom left of the window and click Add.
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img7.jpg)
+![WindowsForms-TreeNodeAdv in multiColumnTreeView provided primitive collection Editor](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img7.jpg)
 
 3.	Now the selected Primitive  is added to that selected node.
 
-![](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img8.jpg)
+![Added Primitive collection to the nodes in the multiColumnTreeView in windowsForms](TreeNodeAdv-Features_Images/TreeNodeAdv-Features_img8.jpg)

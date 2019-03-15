@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically? | WindowsForms | Syncfusion
+title: How to add a wizard page programmatically | WindowsForms | Syncfusion
 description: how to add a wizard page to the wizard control programmatically?
 platform: WindowsForms
 control: Wizard
@@ -9,13 +9,11 @@ documentation: ug
 
 # How to add a wizard page to the Wizard Control programmatically?
 
-You can add a Wizard page to the Wizard Control using AddPage Method.
+You can add a Wizard page to the Wizard Control using [AddPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~AddPage.html) Method.
 
 {% tabs %}
 
 {% highlight C# %}
-
-
 
 private Syncfusion.Windows.Forms.Tools.WizardControlPage NewPage;
 
@@ -47,6 +45,6 @@ NewPage.Description = "Give a Finish Text"
 
 {% endtabs %}
 
-![](How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_images/How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_img1.jpeg)
+![wizard page added to the wizard control programmatically](How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_images/How-to-add-a-wizard-page-to-the-Wizard-Control-programmatically_img1.jpeg)
 
 
