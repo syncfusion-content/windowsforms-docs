@@ -11,20 +11,7 @@ documentation: ug
 
 ## Clipboard Support
 
-The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. TheClipMode property specifies if formatting characters are to be copied to the clipboard.
-
-
-<table>
-<tr>
-<th>
-{{ '**CurrencyTextBox Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-ClipMode</td><td>
-Specifies whether to include or exclude literal characters in input mask while doing copy command. The options are,{{ 'ExcludeFormatting and' | markdownify }} {{ 'IncludeFormatting' | markdownify }}</td></tr>
-</table>
-
+The CurrencyTextBox control also provides support for clipboard operations that are compatible with currency data. The [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~ClipMode.html) property specifies if formatting characters are to be copied to the clipboard.
 
 {% tabs %}
 
@@ -42,13 +29,13 @@ Me.currencyTextBox1.ClipMode = Syncfusion.Windows.Forms.Tools.CurrencyClipModes.
 
 {% endtabs %}
 
-![](Overview_images/Overview_img504.png) 
+![Clipboard Support](Overview_images/Overview_img504.png) 
 
 
 
 ## Overflow Indicator
 
-You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in OverflowIndicatorToolTipText.Set ShowOverflowIndicator property to true to enable this feature. Set ShowOverflowIndicatorToolTip property to true to display the tooltip text.
+You can display an indicator in the textbox, when the currency value is displayed, beyond its boundaries. We can also display tooltip for the overflow indicator. The tooltip text is specified in [OverflowIndicatorToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~OverflowIndicatorToolTipText.html). Set [ShowOverflowIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicator.html) property to true to enable this feature. Set [ShowOverflowIndicatorToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicatorToolTip.html) property to true to display the tooltip text.
 
 {% tabs %}
 
@@ -74,36 +61,18 @@ Me.currencyTextBox1.ShowOverflowIndicatorToolTip = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img505.png) 
-
-
+![Overflow indicator](Overview_images/Overview_img505.png) 
 
 ## Globalization
 
-The CurrencyTextBox class is globalization aware and uses System.Globalization.CultureInfo for locale-specific information. You can set the control's culture to any installed culture through its culture property.
+The CurrencyTextBox class is globalization aware and uses [System.Globalization.CultureInfo](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo?view=netframework-4.7.2) for locale-specific information. You can set the control's culture to any installed culture through its [culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~Culture.html) property.
+
+* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~Culture.html)
+* [CurrentCultureRefresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~CurrentCultureRefresh.html)
+* [SpecialCultureValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~SpecialCultureValue.html)
 
 
-<table>
-<tr>
-<th>
-{{ '**CurrencyTextBox Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
-<tr>
-<td>
-Culture</td><td>
-It sets the culture that is used for formatting the numeric display.</td></tr>
-<tr>
-<td>
-CurrentCultureRefresh</td><td>
-Specifies whether the culture property is to be refreshed when the culture changes.</td></tr>
-<tr>
-<td>
-SpecialCultureValue</td><td>
-It sets the mode for the cultures. The options includes:{{ 'None,' | markdownify }} {{ 'CurrentCulture (default),' | markdownify }} {{ 'InstalledCulture,' | markdownify }} {{ 'UICulture.' | markdownify }}</td></tr>
-</table>
-
-
-![](Overview_images/Overview_img506.png) 
+![Globalization](Overview_images/Overview_img506.png) 
 
 {% tabs %}
 
@@ -236,6 +205,6 @@ Me.label14.Text = Me.currencyTextBox1.Culture.ThreeLetterWindowsLanguageName
 
 {% endtabs %}
 
-![](Overview_images/Overview_img507.png) 
+![Culture name](Overview_images/Overview_img507.png) 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET Framework support History for Syncfusion Essential Studio Windows Forms controls
+title: .NET Framework support History for Syncfusion Windows Forms controls
 description: .Net Framework support History details
 platform: WindowsForms
 control: Introduction
@@ -19,12 +19,14 @@ Syncfusion Version <br/><br/></th><th>
 .NET 4.0<br/><br/></th><th>
 .NET 4.5<br/><br/></th><th>
 .NET 4.5.1<br/><br/></th><th>
-.NET 4.6 & above<br/><br/></th></tr>
+.NET 4.6 & above<br/><br/></th><th>
+.NET Core 3.0<br/><br/></th></tr>
 <tr>
 <td>
 Earlier Version<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
+No<br/><br/></td><td>
 No<br/><br/></td><td>
 No<br/><br/></td><td>
 No<br/><br/></td></tr>
@@ -35,10 +37,21 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 No<br/><br/></td><td>
+No<br/><br/></td><td>
 No<br/><br/></td></tr>
 <tr>
 <td>
-From11.3<br/><br/></td><td>
+From 11.3<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+Yes<br/><br/></td><td>
+No<br/><br/></td><td>
+No<br/><br/></td></tr>
+<tr>
+<td>
+From 13.3<br/><br/></td><td>
+Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
@@ -46,7 +59,8 @@ Yes<br/><br/></td><td>
 No<br/><br/></td></tr>
 <tr>
 <td>
-From.13.3<br/><br/></td><td>
+From 17.1<br/><br/></td><td>
+Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>

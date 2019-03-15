@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add new items to the List when enter key is pressed | WindowsForms | Syncfusion
+title: Add new items to the list | WindowsForms | Syncfusion
 description: how to add new items to the list when enter key is pressed
 platform: WindowsForms
 control: DomainUpdownExt 
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to Add New Items to the List when Enter Key is Pressed
 
-To add the new items which are entered by the user at runtime after the user had pressed the enter key, we need to catch theKeyDown event.
+To add the new items which are entered by the user at runtime after the user had pressed the enter key, we need to catch the [KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?redirectedfrom=MSDN&view=netframework-4.7.2) event.
 
 {% tabs %}
 {% highlight c# %}

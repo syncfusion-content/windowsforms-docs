@@ -16,7 +16,7 @@ This section describes the text alignment options available for GroupView.
 
 ### Text highlighting
 
-The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the HighlightText property to 'True'.
+The GroupView control provides highlighting of text when the mouse is over the GroupView Item. This can be activated by setting the [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightText.html) property to 'True'.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.groupView1.HighlightText = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img60.jpeg)
+ ![Text highlighting](Overview_images/Overview_img60.jpeg)
  
  "My Computer" Item is Highlighted in the GroupView Control
  {:.caption} 
@@ -44,33 +44,12 @@ Me.groupView1.HighlightText = True
 
 The following properties are used to set the text offset for the GroupView Items.
 
+* [HighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightTextOffset.html)
+* [SelectedHighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedHighlightTextOffset.html)
+* [SelectingTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectingTextOffset.html)
+* [SelectedTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedImageOffset.html)
 
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HighlightTextOffset</td><td>
-Sets the text offset for the highlighted GroupView Item.</td></tr>
-<tr>
-<td>
-SelectedHighlightTextOffset</td><td>
-Specifies the offset for the text of the selected GroupView Item when the mouse is moved over it.</td></tr>
-<tr>
-<td>
-SelectingTextOffset</td><td>
-Sets the text offset for the GroupView Item being selected.</td></tr>
-<tr>
-<td>
-SelectedTextOffset</td><td>
-Sets the text offset for the selected GroupView Item.</td></tr>
-</table>
-
-
-N> HighlightText property must be set to 'True' in all the cases.
+N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightText.html) property must be set to 'True' in all the cases.
 
 {% tabs %}
 
@@ -102,75 +81,38 @@ Me.groupView1.SelectingTextOffset = New System.Drawing.Point(40, 8)
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img62.jpeg) 
+ ![GroupView](Overview_images/Overview_img62.jpeg) 
 
 
- ![](Overview_images/Overview_img63.jpeg)
+ ![GroupView](Overview_images/Overview_img63.jpeg)
 
 
-![](Overview_images/Overview_img64.jpeg) 
+![GroupView](Overview_images/Overview_img64.jpeg) 
 
 
- ![](Overview_images/Overview_img65.jpeg) 
+ ![GroupView](Overview_images/Overview_img65.jpeg) 
 
 
 The methods associated with these properties are given below.
 
-
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-ResetHighlightTextOffset</td><td>
-Resets the HighlightTextOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetSelectedHighlightTextOffset</td><td>
-Resets the SelectedHighlightTextOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetSelectingTextOffset</td><td>
-Resets the SelectingTextOffset property to it's default value.</td></tr>
-<tr>
-<td>
-ResetSelectedTextOffset</td><td>
-Resets the SelectedTextOffset property to it's default value.</td></tr>
-</table> 
+* [ResetHighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetHighlightTextOffset.html)
+* [ResetSelectedHighlightTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedHighlightTextOffset.html)
+* [ResetSelectingTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectingTextOffset.html)
+* [ResetSelectedTextOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedTextOffset.html)
 
 ### Text formatting
 
 The following table lists the text formatting properties of GroupView Control.
 
+* [TextSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~TextSpacing.html)
+* [TextUnderline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~TextUnderline.html)
+* [TextWrap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~TextWrap.html)
 
 
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-TextSpacing</td><td>
-Specifies the distance between the GroupView Item's image and text. The default value is 8.</td></tr>
-<tr>
-<td>
-TextUnderline</td><td>
-Specifies whether the control should underline the text when the mouse is moved over the GroupView Item.</td></tr>
-<tr>
-<td>
-TextWrap</td><td>
-Specifies whether the GroupView Item's text should be wrapped when the control width is insufficient to accommodate the entire text.</td></tr>
-</table>
+![Text formatting](Overview_images/Overview_img66.jpeg) 
 
 
-![](Overview_images/Overview_img66.jpeg) 
-
-
- ![](Overview_images/Overview_img67.jpeg) 
+ ![Text formatting](Overview_images/Overview_img67.jpeg) 
 
 {% tabs %}
 
@@ -200,7 +142,7 @@ Me.groupView1.TextWrap = True
 
 ### In-place renaming
 
-It is possible to rename the specified GroupView Item at run-time using the InplaceRenameItem() method.
+It is possible to rename the specified GroupView Item at run-time using the [InplaceRenameItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~InplaceRenameItem.html) method.
 
 {% tabs %}
 
@@ -243,24 +185,10 @@ This section describes the color settings available for GroupView.
 
 The color for highlighting Items and text during mouse hover can be specified using the properties given below.
 
+* [HighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightItemColor.html)
+* [HighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightTextColor.html)
 
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HighlightItemColor</td><td>
-Specifies the color for highlighting the GroupView Items when the mouse is moved over it.</td></tr>
-<tr>
-<td>
-HighlightTextColor</td><td>
-Specifies the color for highlighting the text of the GroupView Items when the mouse is moved over it.</td></tr>
-</table>
-
-N> HighlightText property must be set to 'True' in both the cases.
+N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightText.html) property must be set to 'True' in both the cases.
 
 {% tabs %}
 
@@ -284,67 +212,27 @@ Me.groupView1.HighlightTextColor = System.Drawing.Color.Purple
 
 {% endtabs %}
 
-![](Overview_images/Overview_img69.jpeg) 
+![Color settings](Overview_images/Overview_img69.jpeg) 
 
 
 
 The following table lists the methods related to the above properties.
 
-
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-ResetHighlightItemColor</td><td>
-Resets the HighlightItemColor property to it's default value.</td></tr>
-<tr>
-<td>
-ResetHighlightTextColor</td><td>
-Resets the HighlightTextColor property to it's default value.</td></tr>
-</table>
+* [ResetHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetHighlightItemColor.html)
+* [ResetHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetHighlightTextColor.html)
 
 ### Highlighting selected items and text
 
 The color for highlighting selected Items and text can be specified using the properties given below.
 
+[SelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedHighlightItemColor.html)
+[SelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedHighlightTextColor.html)
+[SelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedItemColor.html)
+[SelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedTextColor.html)
+[SelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectingItemColor.html)
+[SelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectingTextColor.html)
 
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-SelectedHighlightItemColor</td><td>
-Sets the color used to draw the background of the selected GroupView Item when the mouse cursor is moved over it.</td></tr>
-<tr>
-<td>
-SelectedHighlightTextColor</td><td>
-Sets the color used to draw the text of the selected GroupView Item when the mouse cursor is moved over it.</td></tr>
-<tr>
-<td>
-SelectedItemColor</td><td>
-Sets the color used to draw the background of the selected GroupView Item.</td></tr>
-<tr>
-<td>
-SelectedTextColor </td><td>
-Sets the color used to draw the text of the selected GroupView Item</td></tr>
-<tr>
-<td>
-SelectingItemColor</td><td>
-Specifies the color used to draw the background of the GroupView Item being selected.</td></tr>
-<tr>
-<td>
-SelectingTextColor</td><td>
-Specifies the color used to draw the text of the GroupView Item being selected.</td></tr>
-</table>
-
-N> HighlightText property must be set to 'True' in all the cases.
+N> [HighlightText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~HighlightText.html) property must be set to 'True' in all the cases.
 
 {% tabs %}
 
@@ -383,78 +271,32 @@ Me.groupView1.SelectingTextColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Overview_images/Overview_img71.jpeg) 
+![Highlighting selected items and text](Overview_images/Overview_img71.jpeg) 
 
 
-![](Overview_images/Overview_img72.jpeg) 
+![Highlighting selected items and text](Overview_images/Overview_img72.jpeg) 
 
 
- ![](Overview_images/Overview_img73.jpeg) 
+ ![Highlighting selected items and text](Overview_images/Overview_img73.jpeg) 
 
 
 The following table lists the methods related to the above properties.
 
-
-
-<table>
-<tr>
-<th>
-Methods</th><th>
-Description</th></tr>
-<tr>
-<td>
-ResetSelectedHighlightItemColor</td><td>
-Resets the SelectedHighlightItemColor property value to the default value.</td></tr>
-<tr>
-<td>
-ResetSelectedHighlightTextColor</td><td>
-Resets the SelectedHighlightTextColor property to the default value.</td></tr>
-<tr>
-<td>
-ResetSelectedItemColor</td><td>
-Resets the SelectedItemColor property to the default value.</td></tr>
-<tr>
-<td>
-ResetSelectedTextColor </td><td>
-Resets the SelectedTextColor property to the default value.</td></tr>
-<tr>
-<td>
-ResetSelectingItemColor</td><td>
-Resets the SelectingItemColor property to the default value.</td></tr>
-<tr>
-<td>
-ResetSelectingTextColor</td><td>
-Resets the SelectingTextColor property to the default value.</td></tr>
-</table>
+[ResetSelectedHighlightItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedHighlightItemColor.html)
+[ResetSelectedHighlightTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedHighlightTextColor.html)
+[ResetSelectedItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedItemColor.html)
+[ResetSelectedTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectedTextColor.html)
+[ResetSelectingItemColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectingItemColor.html)
+[ResetSelectingTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ResetSelectingTextColor.html)
 
 ## Orientation settings for GroupView item
 
 The following table lists the properties related to the orientation of GroupView Items.
 
-
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FlowView</td><td>
-This is a non-text, image-only display mode where items are arranged in a horizontal layout that increases or decreases with changes in the control width.</td></tr>
-<tr>
-<td>
-FlowViewItemTextLength</td><td>
-Gets/sets the GroupView Item's text length in FlowView mode.</td></tr>
-<tr>
-<td>
-ShowFlowViewItemText</td><td>
-Specifies whether the control should show GroupView Item's text in the FlowView mode.</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Specifies the orientation for the GroupView Items. The options included are as follows.* Horizontal and* Vertical.<br>The default value is 'Vertical'.</td></tr>
-</table>
+* [FlowView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~FlowView.html)
+* [FlowViewItemTextLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~FlowViewItemTextLength.html)
+* [ShowFlowViewItemText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ShowFlowViewItemText.html)
+* [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~Orientation.html)
 
 {% tabs %}
 
@@ -490,12 +332,12 @@ The GroupView Items in the GroupView control can be arranged in the horizontal a
 
 If you want to show the GroupView Item's text in the FlowView mode then set the ShowFlowViewItemText property to 'True'. You can also control the length of the GroupView Item's text in the FlowView mode using the FlowViewItemTextLength property.
 
-![](Overview_images/Overview_img74.jpeg) 
+![Orientation settings for GroupView item](Overview_images/Overview_img74.jpeg) 
 
 
- ![](Overview_images/Overview_img75.jpeg) 
+ ![Orientation settings for GroupView item](Overview_images/Overview_img75.jpeg) 
 
 
-The Orientation property determines the direction of display for the GroupView Items.
+The [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~Orientation.html) property determines the direction of display for the GroupView Items.
 
-![](Overview_images/Overview_img76.jpeg)
+![Orientation settings for GroupView item](Overview_images/Overview_img76.jpeg)
