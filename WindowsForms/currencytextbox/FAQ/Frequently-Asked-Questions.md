@@ -9,25 +9,12 @@ documentation: ug
 
 # Frequently Asked Questions
 
-When the control is set to disabled, we could not make any changes in it. But we can make the text active by setting DrawActiveWhenDisabled to True.
-
-Property Table
-
-<table>
-<tr>
-<td>
-CurrencyTextBox Property</td><td>
-Description</td></tr>
-<tr>
-<td>
-DrawActiveWhenDisabled</td><td>
-Specifies whether the text should be drawn active even when the control is disabled. Enabled property must be set to False.</td></tr>
-</table>
+When the control is set to disabled, we could not make any changes in it. But we can make the text active by setting [DrawActiveWhenDisabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~DrawActiveWhenDisabled.html) to True.
 
 
 The following figure illustrates this.
 
-![](FAQ_images/Overview_img509.png) 
+![DrawActiveWhenDisabled property usage](FAQ_images/Overview_img509.png) 
 
 
 

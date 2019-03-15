@@ -14,21 +14,8 @@ This section discusses the various settings that can be applied to define the lo
 
 The following table describes the properties that enhance the appearance of the GroupView control.
 
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FlatLook</td><td>
-Specifies whether the control is displayed with a flat look.</td></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Gets/sets the border style for the GroupView control. It includes the following options:* None,* FixedSingle and* Fixed3D.</td></tr>
-</table>
+* [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~FlatLook.html)
+* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~BorderStyle.html)
 
 {% tabs %}
 
@@ -52,14 +39,14 @@ Me.groupView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the FlatLook property to `true`.
+The border of the GroupView Items can be changed by drawing the border without the 3-dimensional edge which can be attained by setting the [FlatLook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~FlatLook.html) property to `true`.
 
-![](Overview_images/Overview_img56.jpeg)
+![Flat look](Overview_images/Overview_img56.jpeg)
 
 
-We can specify the border style for the GroupView control using the BorderStyle property.
+We can specify the border style for the GroupView control using the [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~BorderStyle.html) property.
 
- ![](Overview_images/Overview_img57.jpeg) 
+ ![GroupView border style](Overview_images/Overview_img57.jpeg) 
 
 
 ## Behavior settings
@@ -70,22 +57,8 @@ This section discusses the properties that determine the behavior of the GroupVi
 
 This explains the drag-and-drop settings supported by the GroupView control.
 
-
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-AllowDragDrop</td><td>
-The property determines whether the control will permit user-interactive drag-and-drop of GroupView Items.</td></tr>
-<tr>
-<td>
-AllowDragAnyObject</td><td>
-Setting this property permits the user to drag any object inside the GroupView control, provided AllowDragDrop property is set to `true`.</td></tr>
-</table>
+* [AllowDragDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~AllowDragDrop.html)
+* [AllowDragAnyObject](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~AllowDragAnyObject.html)
 
 {% tabs %}
 
@@ -112,22 +85,8 @@ Me.groupView1.AllowDragAnyObject = True
 
 Spacing can be provided between the GroupView Items, and between the GroupView control's left border and the GroupView Items using the properties given below.
 
-
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ItemXSpacing</td><td>
-It sets the horizontal distance between a GroupView Item and the GroupView control's left border.</td></tr>
-<tr>
-<td>
-ItemYSpacing</td><td>
-It sets the height between adjacent GroupView Items.</td></tr>
-</table>
+* [ItemXSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ItemXSpacing.html)
+* [ItemYSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~ItemYSpacing.html)
 
 {% tabs %}
 
@@ -151,27 +110,14 @@ Me.groupView1.ItemYSpacing = 10
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img58.jpeg) 
+ ![Spacing](Overview_images/Overview_img58.jpeg) 
  
  GroupBar with ItemXSpacing = "5" and ItemYSpacing = '"10"
  {:.caption}
  
 ## Scroll settings
 
-We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the IntegratedScrolling property to `true`.
-
-
-
-<table>
-<tr>
-<th>
-GroupView property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Integrated scrolling</td><td>
-Setting this property will delegate the GroupView's scrolling to the Parent GroupBar control. This mode is exclusive to the VS .NET toolbox type interface where the GroupBar provides the scrolling support for it's GroupView Child controls.On disabling this property, scrollbars are set inside the GroupView control to scroll through the GroupView Items.</td></tr>
-</table>
+We can specify scrolling for the GroupBar control to view the set of GroupView Items back and forth. This can be achieved by setting the [IntegratedScrolling](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~IntegratedScrolling.html) property to `true`.
 
 {% tabs %}
 
@@ -191,7 +137,7 @@ Me.groupView1.IntegratedScrolling = False
 
 {% endtabs %}
 
-![](Overview_images/Overview_img59.jpeg) 
+![Scroll support](Overview_images/Overview_img59.jpeg) 
 
 
 

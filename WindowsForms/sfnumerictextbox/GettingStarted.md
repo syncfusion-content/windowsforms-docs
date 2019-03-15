@@ -30,8 +30,10 @@ SfNumericTextBox can be added through designer by following the below steps.
 ![Drag and drop the SfNumericTextBox control to form](Gettingstarted_images/SfNumericTextBoxAdd.png)
 
 **3.**	Once you drag drop the SfNumericTextBox into the designer page, the SfNumericTextBox will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
-    *	Syncfusion.Core.WinForms.dll
-    *	Syncfusion.SfInput.WinForms.dll
+
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
 
 ![SfNumericTextBox control added by designer](Gettingstarted_images/SfNumericTextBoxDesignerAdd.png)
 
@@ -39,8 +41,11 @@ SfNumericTextBox can be added through designer by following the below steps.
 
 **1.**	SfNumericTextBox can be added through code-behind by following the below steps.
 **2.**	Add the below assemblies into the project file.
-    *	Syncfusion.Core.WinForms.dll
-    *	Syncfusion.SfInput.WinForms.dll
+
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.SfInput.WinForms.dll
+* Syncfusion.Shared.Base.dll
+
 **3.**	Initialize a SfNumericTextBox by using the below code in code behind.
 
 {% tabs %}

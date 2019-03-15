@@ -10,11 +10,11 @@ documentation: ug
 
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 
-![](DomainUpdownExt_images/Overview_img424.png) 
+![Spin button](DomainUpdownExt_images/Overview_img424.png) 
 
 ## Orientation
 
-The spin button orientation can be changed to vertical or horizontal using theSpinOrientation property.
+The spin button orientation can be changed to vertical or horizontal using the [SpinOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~SpinOrientation.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -38,11 +38,11 @@ Me.domainUpDownExt1.SpinOrientation = Orientation.Vertical
 {% endhighlight  %}
 {% endtabs %}
 
-![](DomainUpdownExt_images/Overview_img425.png) 
+![Orientation](DomainUpdownExt_images/Overview_img425.png) 
 
 ## Alignment
 
-The spin button alignment can be set throughUpDownAlign property. By default it is set to right.
+The spin button alignment can be set through [UpDownAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~UpDownAlign.html) property. By default it is set to right.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,4 +58,4 @@ Me.domainUpDownExt1.UpDownAlign =LeftRightAlignment.Left
 {% endhighlight %}
 {% endtabs %}
 
-![](DomainUpdownExt_images/Overview_img426.png)
+![Alignment](DomainUpdownExt_images/Overview_img426.png)
