@@ -26,6 +26,8 @@ documentation: ug
 
 •	Office2016Black
 
+You can set the above themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~Style.html) property.
+
 **Default**
 
 This option helps to set the Default appearance.
@@ -52,7 +54,7 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Default
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img119.png) 
+![Default theme](Overview_images/Overview_img119.png) 
 
 
 **Office2007**
@@ -101,7 +103,7 @@ Me.xpTaskBar1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.B
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img111.jpeg) 
+![Office2007 theme](Overview_images/Overview_img111.jpeg) 
 
 
 **Custom colors**
@@ -131,7 +133,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img112.jpeg) 
+![Custom colors](Overview_images/Overview_img112.jpeg) 
 
 **Office2010**
 
@@ -179,7 +181,7 @@ this.xpTaskBar1.Office2010ColorScheme = Syncfusion.Windows.Forms.Office2010Theme
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img124.png) 
+![Office2010](Overview_images/Overview_img124.png) 
 
 
 **Custom colors**
@@ -208,11 +210,11 @@ Office2010Colors.ApplyManagedColors(this, Color.Violet)
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img117.png) 
+![Custom colors](Overview_images/Overview_img117.png) 
 
- **Metro**
+**Metro**
 
- This options helps to set the Metro appearance.
+This options helps to set the Metro appearance.
  
 {% tabs %}
 
@@ -236,11 +238,11 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Metro
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img118.png)
+![Metro](Overview_images/Overview_img118.png)
 
- **Office2016Colorful**
+**Office2016Colorful**
 
- This options helps to set the Office2016Colorful appearance.
+This options helps to set the Office2016Colorful appearance.
  
 {% tabs %}
 
@@ -264,12 +266,12 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2016Co
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img120.png)
+![Office2016Colorful](Overview_images/Overview_img120.png)
  
 
- **Office2016White**
+**Office2016White**
 
- This options helps to set the Office2016White appearance.
+This options helps to set the Office2016White appearance.
  
 {% tabs %}
 
@@ -293,11 +295,11 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2016Wh
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img121.png)
+![Office2016White](Overview_images/Overview_img121.png)
 
 **Office2016DarkGray**
 
- This options helps to set the Office2016DarkGray appearance.
+This options helps to set the Office2016DarkGray appearance.
  
 {% tabs %}
 
@@ -321,12 +323,12 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2016Da
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img122.png)
+![Office2016DarkGray](Overview_images/Overview_img122.png)
 
 
 **Office2016Black**
 
- This options helps to set the Office2016Black appearance.
+This options helps to set the Office2016Black appearance.
  
 {% tabs %}
 
@@ -350,7 +352,7 @@ Me.xpTaskBar1.Style = Syncfusion.Windows.Forms.Tools.XPTaskBarStyle.Office2016Bl
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img123.png) 
+![Office2016Black](Overview_images/Overview_img123.png) 
 
 
 
