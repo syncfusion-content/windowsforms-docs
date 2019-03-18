@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Essential Theme Studio for Windows Forms
-description: Essential Theme Studio for Windows Forms
-platform: Windows Forms
-control: General Topics 
+title: Getting Started| ThemeStudio | WindowsForms | Syncfusion
+description: Getting Started ThemeStudio
+platform: WindowsForms
+control: ThemeStudio
 documentation: ug
 ---
 
@@ -43,7 +43,7 @@ Click the color pickers in the theme customization section to select the desired
 
 The Syncfusion WinForms controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
 
-![Color reflected in control's loaded inside Theme Studio for Windows Forms](ThemeStudio_images/color-reflected-theme-studio.png)
+![Color reflected in controls loaded inside Theme Studio for Windows Forms](ThemeStudio_images/color-reflected-theme-studio.png)
 
 
 ## Export the customized theme
@@ -75,13 +75,13 @@ The download theme will come as an assembly (*.dll) file that contains color cod
 N> You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be custom theme name, when you refer it in your WinForms application. 
 
 
-## Using customized theme in a windows forms application
+## Using customized theme in a Windows Forms application
 
-You can now add the exported assembly in your windows forms application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for SfDataGrid. 
+You can now add the exported assembly in your Windows Forms application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for SfDataGrid. 
 
 **Step 1:**
 
-Attach the exported assembly (*.dll) in your windows forms project.
+Attach the exported assembly (*.dll) in your Windows Forms project.
 
 ![Export dialog in Theme Studio for Windows Forms](ThemeStudio_images/Export-dialog-theme-studio.png)
 
@@ -131,6 +131,6 @@ sfDataGrid1.ThemeName = "VioletTheme"
 
 **Step 3:**
 
-Compile and run the windows forms application and you can now witness the custom theme applied to SfDataGrid control at run-time. 
+Compile and run the Windows Forms application and you can now witness the custom theme applied to SfDataGrid control at run-time. 
 
 ![Theme applied in SfDataGrid](ThemeStudio_images/Theme-applied-SfDataGrid.png)
