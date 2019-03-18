@@ -55,7 +55,7 @@ Me.dateTimePickerAdv1.TabStop = True
 {% endhighlight   %}
 
 
-# Context Menu
+## Context Menu
 
 When you right-click on a DateTimePickerAdv control at run time, a context menu will be displayed like the below image. 
 

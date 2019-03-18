@@ -142,7 +142,7 @@ To bind a DateTimePickerAdv, perform the following steps.
 
 5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
-   ![](Calendar_Images/Overview_img219.jpeg) 
+   ![DateTimePicker calendar](Calendar_Images/Overview_img219.jpeg) 
 
 
 A sample which demonstrates this feature is available in the below sample installation path.
