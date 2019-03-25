@@ -10,81 +10,32 @@ documentation: ug
 
 Following are the events of DateTimePickerAdv control.
 
-Property Table
-
-<table>
-<tr>
-<th>
-DateTimePickerAdv Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-BeforePopup</td><td>
-Handled just before the popup is displayed.</td></tr>
-<tr>
-<td>
-BindableValueChanged</td><td>
-Handled when the BindingValue property is changed.</td></tr>
-<tr>
-<td>
-CheckBoxCheckedChanged</td><td>
-Handled when the checked state of the Checkbox changes.</td></tr>
-<tr>
-<td>
-OnPopup</td><td>
-Handled when the popup is displayed.</td></tr>
-<tr>
-<td>
-PopupClosed</td><td>
-Handled when the popup is closed. It uses PopupClosedEventHandler.</td></tr>
-<tr>
-<td>
-StretchDropDownImageChanged</td><td>
-Handled when the StretchDropDownImage property changes.</td></tr>
-<tr>
-<td>
-ValueChanged</td><td>
-Event is handled when the Value property changes.</td></tr>
-</table>
+* [BeforePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BeforePopup_EV.html)
+* [BindableValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BindableValueChanged_EV.html)
+* [CheckBoxCheckedChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CheckBoxCheckedChanged_EV.html)
+* [OnPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~OnPopup_EV.html)
+* [PopupClosed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~PopupClosed_EV.html)
+* [StretchDropDownImageChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~StretchDropDownImageChanged_EV.html)
+* [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ValueChanged_EV.html)
 
 ## PopupClosed Event
 
-This event is handled when the popup is closed. Using the PopupCloseType member of the PopupClosedEventHandler, we can identify the type of closing.
+The [PopupClosed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~PopupClosed_EV.html) event is handled when the popup is closed. Using the PopupCloseType member of the PopupClosedEventHandler, we can identify the type of closing.
 
-
-
-{% highlight c#  %}
-
+{% highlight C#  %}
 private void dateTimePickerAdv1_PopupClosed(object sender, PopupClosedEventArgs e)
-
 {            
-
     //Canceled - User cancels the updates if any.
-
     //Deactivated - If the user moves the focus to some other window
-
     //Done - If the user wants the changes to be applied to the control
-
     Console.WriteLine(e.PopupCloseType.ToString());
-
 }
-
-
-
-
-
 {% endhighlight   %}
-{% highlight vbnet  %}
-
+{% highlight VB  %}
 Private Sub dateTimePickerAdv1_PopupClosed(ByVal sender As Object, ByVal e As PopupClosedEventArgs)
-
     'Canceled - User cancels the updates if any. 
-
     'Deactivated - If the user moves the focus to some other window 
-
     'Done - If the user wants the changes to be applied to the control 
-
     Console.WriteLine(e.PopupCloseType.ToString())
-
 End Sub
 {% endhighlight   %}
