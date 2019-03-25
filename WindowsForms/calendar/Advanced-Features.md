@@ -12,9 +12,9 @@ This section covers the below topics:
 
 ## Data Binding
 
-Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and BindableValue property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
+Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BindableValue.html) property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-N> Always use BindableValue property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
+N> Always use [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BindableValue.html) property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
 
 To bind a DateTimePickerAdv, perform the following steps.
 
@@ -142,7 +142,7 @@ To bind a DateTimePickerAdv, perform the following steps.
 
 5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
-   ![](Calendar_Images/Overview_img219.jpeg) 
+   ![DateTimePicker calendar](Calendar_Images/Overview_img219.jpeg) 
 
 
 A sample which demonstrates this feature is available in the below sample installation path.
@@ -150,116 +150,63 @@ A sample which demonstrates this feature is available in the below sample instal
 …\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
 
 
-##  Globalization
+## Globalization
 
-DateTimePickerAdv supports globalization through DateTimePickerAdv.Culture property.
-
-<table>
-<tr>
-<th>
-DateTimePickerAdv Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Culture</td><td>
-Gets or sets the current culture of the DateTimePickerAdv control. UseCurrentCulture should be set to false to make this setting effective.</td></tr>
-<tr>
-<td>
-UseCurrentCulture</td><td>
-Specifies whether the current culture of the machine will be used. By default it is false.</td></tr>
-</table>
-
+DateTimePickerAdv supports globalization through [DateTimePickerAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Culture.html) and [UseCurrentCulture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~UseCurrentCulture.html) property.
 
 {% highlight c#  %}
-
-
-
 this.dateTimePickerAdv1.UseCurrentCulture = false;
-
 this.dateTimePickerAdv1.Culture = new System.Globalization.CultureInfo("hi-IN");
-
-
-
 {% endhighlight   %}
 {% highlight vbnet  %}
-
-
-
 Me.dateTimePickerAdv1.UseCurrentCulture = False
-
 Me.dateTimePickerAdv1.Culture = New System.Globalization.CultureInfo("hi-IN")
 {% endhighlight   %}
 
-
-![](Calendar_Images/Overview_img220.jpeg) 
-
+![Globalization](Calendar_Images/Overview_img220.jpeg) 
 
 ## Custom PopupWindow
 
-This section deals with creating a custom popup window for the DateTimePickerAdv control. We can implement IDateTimePickerAdvCalendar interface to drop down a custom window.
+This section deals with creating a custom popup window for the DateTimePickerAdv control. We can implement [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface to drop down a custom window.
 
-IDateTimePickerAdvCalendar Interface Members
+[IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) Interface Members
 
-Member Table
+* [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Active.html)
 
-<table>
-<tr>
-<th>
-IDateTimePickerAdvCalendar Member</th><th>
-Description</th></tr>
-<tr>
-<td>
-Active</td><td>
-Boolean value indicating if the DateTimePickerAdv should consider the interface events fired by this control.</td></tr>
-<tr>
-<td>
-Appearance properties (CalendarFont, CalendarForeColor, CalendarMonthBackground, TitleBackColor, TitleForeColor and TrailingForeColor)</td><td>
-{{ '_CalendarFont_' | markdownify }} - Gets / sets the font used to draw the calendar that implements the interface, {{ '_CalendarForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of calendar that implements the interface, {{ '_CalendarMonthBackground_' | markdownify }} - Gets / sets the color used to draw the month background of calendar that implements the interface, {{ '_TitleBackColor_' | markdownify }} - Gets / sets the color used to draw the title background of calendar that implements the interface,{{ '_TitleForeColor_' | markdownify }} - Gets / sets the color used to draw the foreground of the title of calendar that implements the interface, {{ '_TrailingForeColor_' | markdownify }} - Gets / sets the color used to draw the trailing foreground of calendar that implements the interface.</td></tr>
-<tr>
-<td>
-Value properties (MinDate, MaxDate, Value)</td><td>
-{{ '_MinDate_' | markdownify }} - Gets / sets the minimum date of the calendar that implements the interface,{{ '_MaxDate_' | markdownify }} - Gets / sets the maximum date of the calendar that implements the interface and{{ '_Value_' | markdownify }} - Gets / sets the date of the calendar that implements the interface.</td></tr>
-<tr>
-<td>
-Culture</td><td>
-Gets or set the culture of the calendar that implements this interface.</td></tr>
-</table>
+* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Culture.html)
 
-Events Table
+**Appearance properties**
 
-<table>
-<tr>
-<th>
-IDateTimePickerAdvCalendar Events</th><th>
-Description</th></tr>
-<tr>
-<td>
-NullButtonDown</td><td>
-Event is similar to the DateTimePickerAdv.NullButtonEventHandler. It is handled when the none button is clicked or when the control implementing the interface wants the DateTimePickerAdv to have the NullString displayed. </td></tr>
-<tr>
-<td>
-SelectDate</td><td>
-Event is similar to the DateTimePickerAdv.SelectDateEventHandler. It is handled when the user selects a date on the control implementing the interface or the control wants the popup to close and set the picker's date to the Value member.</td></tr>
-<tr>
-<td>
-DateChange</td><td>
-Event is similar to the DateTimePickerAdv.DateChangedEventHandler. It is handled when the user has changed the date of the control implementing the interface and doesn't want the popup to close, just update the picker's date to the Value member.</td></tr>
-</table>
+* [CalendarFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarFont.html)
+* [CalendarForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarForeColor.html)
+* [CalendarMonthBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarMonthBackground.html)
+* [TitleBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TitleBackColor.html)
+* [TitleForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TitleForeColor.html)
+* [TrailingForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TrailingForeColor.html)
 
+**Value properties** (MinDate, MaxDate, Value)</td><td>
 
+* [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~MinDate.html)
+* [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~MaxDate.html)
+* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Value.html)
 
+**Events**
+
+* [NullButtonDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~NullButtonDown_EV.html)
+* [SelectDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~SelectDate_EV.html)
+* [DateChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~DateChange_EV.html)
 
 ### Creating a Custom Popup Window for DateTimePickerAdv
 
-Follow the below steps to add a Windows MonthCalendar control as the Popup for the DateTimePickerAdv, using PopupControlContainer.
+Follow the below steps to add a Windows [MonthCalendar](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html).
 
 1. Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
-   ![](Calendar_Images/Overview_img221.jpeg) 
+   ![Drag a date time picker and popup control](Calendar_Images/Overview_img221.jpeg) 
 
 
 
-2. Create a control that implements the IDateTimePickerAdvCalendar interface using the below code.
+2. Create a control that implements the [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface using the below code.
 
 
    ~~~ cs
@@ -633,7 +580,7 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
    ~~~
    {:.prettyprint }
 
-3. Set theActive property of the MonthCalendar to True. Set the DateTimePickerAdv's CustomPopupWindow property to the PopupControlContainer control. Set the DateTimePickerAdv's CustomDrop property to theTrue. 
+3. Set the [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Active.html) property of the MonthCalendar to True. Set the DateTimePickerAdv's [CustomPopupWindow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CustomPopupWindow.html) property to the PopupControlContainer control. Set the DateTimePickerAdv's [CustomDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CustomDrop.html) property to theTrue. 
 
 
 
@@ -673,7 +620,7 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
    ~~~
    {:.prettyprint }
 
-4. In the button click event, call the MyCustomCalendar's FireNullEvent method. 
+4. In the button click event, call the MyCustomCalendar's [FireNullEvent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdvCalendarAdapter~FireNullEvent.html) method. 
 
 
 
@@ -709,13 +656,13 @@ Follow the below steps to add a Windows MonthCalendar control as the Popup for t
 
 5. Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
 
-   ![](Calendar_Images/Overview_img222.jpeg) 
+   ![Custom popu up](Calendar_Images/Overview_img222.jpeg) 
 
 
 
-6. When you click the button, the DateTimePickerAdv will display the NullString specified in NullString property.
+6. When you click the button, the DateTimePickerAdv will display the [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html) specified in [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html) property.
 
-   ![](Calendar_Images/Overview_img223.jpeg) 
+   ![Null string](Calendar_Images/Overview_img223.jpeg) 
 
 
 A sample which demonstrates adding a MonthCalendarAdv itself as a custom popup calendar to the DateTimePickerAdv control is available in the below sample installation location.
