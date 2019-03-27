@@ -116,6 +116,32 @@ sfDataGrid.ExpandAllPreviewRow()
 
 The height of the preview rows can be customized by using the `HeightMode` property. The preview row height modes are as follows.
 
+<table>
+<tr>
+<td>
+{{'**Height mode**'| markdownify }}
+</td>
+<td>
+{{'**Definition**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Auto
+</td>
+<td>
+Sets the calculated height based on the actual size of the preview row text.
+</td>
+</tr>
+<tr>
+<td>
+Fixed
+</td>
+<td>
+Sets the default height specified by the PreviewRowHeight property.
+</td>
+</tr>
+
 ## Appearance 
 
 The appearance of the preview rows can be changed by using the [PreviewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~PreviewRowStyle.html) property. 
