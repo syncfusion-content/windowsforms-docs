@@ -211,7 +211,7 @@ private void OnDrawPreviewRow(object sender, DrawPreviewRowEventArgs e)
 {
     if (!string.IsNullOrEmpty(e.Text))
     {
-        var clipbounds = e.Graphics.ClipBounds;
+        var bounds = e.Graphics.ClipBounds;
         e.Graphics.SetClip(e.Bounds);
         var rect = new Rectangle(e.Bounds.X + 50, e.Bounds.Y + 2, 100, 100);
         var image = Image.FromFile(@"..\..\Images\" + e.Text + ".png");
@@ -222,7 +222,7 @@ private void OnDrawPreviewRow(object sender, DrawPreviewRowEventArgs e)
         // To draw the bottom and right border for the preview row.
         e.Graphics.DrawLine(new Pen(e.Style.Borders.Bottom.Color), new Point(e.Bounds.Left, e.Bounds.Bottom - 1), new Point(e.Bounds.Right, e.Bounds.Bottom - 1));
         e.Graphics.DrawLine(new Pen(e.Style.Borders.Right.Color), new Point(e.Bounds.Right - 1, e.Bounds.Top), new Point(e.Bounds.Right - 1, e.Bounds.Bottom - 1));
-        e.Graphics.SetClip(clipbounds);
+        e.Graphics.SetClip(bounds);
         e.Handled = true;
     }
 }
@@ -235,7 +235,7 @@ AddHandler sfDataGrid.DrawPreviewRow, AddressOf OnDrawPreviewRow
 
 private void OnDrawPreviewRow(Object sender, DrawPreviewRowEventArgs e)
 	If Not String.IsNullOrEmpty(e.Text) Then
-		Dim clipbounds = e.Graphics.ClipBounds
+		Dim bounds = e.Graphics.ClipBounds
 		e.Graphics.SetClip(e.Bounds)
 		Dim rect = New Rectangle(e.Bounds.X + 50, e.Bounds.Y + 2, 100, 100)
 		Dim image = Image.FromFile("..\..\Images\" & e.Text & ".png")
@@ -246,7 +246,7 @@ private void OnDrawPreviewRow(Object sender, DrawPreviewRowEventArgs e)
 		' To draw the bottom and right border for the preview row.
 		e.Graphics.DrawLine(New Pen(e.Style.Borders.Bottom.Color), New Point(e.Bounds.Left, e.Bounds.Bottom - 1), New Point(e.Bounds.Right, e.Bounds.Bottom - 1))
 		e.Graphics.DrawLine(New Pen(e.Style.Borders.Right.Color), New Point(e.Bounds.Right - 1, e.Bounds.Top), New Point(e.Bounds.Right - 1, e.Bounds.Bottom - 1))
-		e.Graphics.SetClip(clipbounds)
+		e.Graphics.SetClip(bounds)
 		e.Handled = True
 	End If
 End Sub
