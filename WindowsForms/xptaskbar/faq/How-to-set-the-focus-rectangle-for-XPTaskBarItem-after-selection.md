@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set the focus rectangle for XPTaskBarItem after selection | WindowsForms | Syncfusion
+title: Set the focus rectangle for XPTaskBarItem | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: XPTaskBar
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to set the focus rectangle for XPTaskBarItem after selection
 
-This can be achieved by setting the DrawFocusRect property to `true`.
+This can be achieved by setting the [DrawFocusRect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~DrawFocusRect.html) property to `true`.
 
 {% tabs %}
 

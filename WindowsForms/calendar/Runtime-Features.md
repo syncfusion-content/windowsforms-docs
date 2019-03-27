@@ -12,134 +12,65 @@ This section covers the below topics:
 
 ## Month Images
 
-We can set images for the popup menu of the Calendar using MonthImageList property of DateTimePickerAdv control.
+We can set images for the popup menu of the Calendar using [MonthImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MonthImageList.html) property of DateTimePickerAdv control.
 
 
-{% highlight c#  %}
-
-
+{% highlight C#  %}
 // imageList1
-
 this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-
 this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-
-
-
 // ImageList of the PopupMenu of the Popup Calendar
-
 this.dateTimePickerAdv1.MonthImageList = this.imageList1;
-
-
-
-
 {% endhighlight   %}
-{% highlight vbnet  %}
-
-
+{% highlight VB  %}
 ' imageList1
-
 Me.imageList1.ImageSize = New System.Drawing.Size(16, 16)
-
 Me.imageList1.ImageStream= (CType(resources.GetObject("imageList1.ImageStream"), System.Windows.Forms.ImageListStreamer))
-
-
-
 ' ImageList of the PopupMenu of the Popup Calendar
-
 Me.dateTimePickerAdv1.MonthImageList = Me.imageList1
-
 {% endhighlight %}
 
-![](Calendar_Images/Overview_img210.jpeg) 
+![Month Images](Calendar_Images/Overview_img210.jpeg) 
 
 ## Navigating between fields
 
 At run time, user can easily navigate between values in the text field like date, month, year, time using the TAB key. The below properties settings are necessary for tabbing between the fields.
 
-Property Table
+* [TabStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabStop.html)
+* [TabForwarding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabForwarding.html)
+* [TabIndex](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.tabindex?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_TabIndex)
+* [TabLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabLeave.html)
 
-<table>
-<tr>
-<th>
-DateTimePickerAdv Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-TabStop</td><td>
-Indicates whether the user can use the Tab key, to focus the DateTimePickerAdv control.</td></tr>
-<tr>
-<td>
-TabForwarding</td><td>
-Indicates if the control will moves its focus to the next field when the tab key is pressed.</td></tr>
-<tr>
-<td>
-TabIndex</td><td>
-Indicates the index in the TAB order that this control will occupy.</td></tr>
-<tr>
-<td>
-TabLeave</td><td>
-Indicates whether the focus should be moved away from the control, when there is no fields to tab through.</td></tr>
-</table>
-
-
-
-
-{% highlight c#  %}
-
+{% highlight C#  %}
 this.dateTimePickerAdv1.TabForwarding = true;
-
 this.dateTimePickerAdv1.TabIndex = 1;
-
 this.dateTimePickerAdv1.TabLeave = true;
-
 this.dateTimePickerAdv1.TabStop = true;
-
-
-
-
 {% endhighlight   %}
-{% highlight vbnet  %}
-
-
+{% highlight VB  %}
 Me.dateTimePickerAdv1.TabForwarding = True
-
 Me.dateTimePickerAdv1.TabIndex = 1
-
 Me.dateTimePickerAdv1.TabLeave = True
-
 Me.dateTimePickerAdv1.TabStop = True
 {% endhighlight   %}
 
 
-# Context Menu
+## Context Menu
 
 When you right-click on a DateTimePickerAdv control at run time, a context menu will be displayed like the below image. 
 
-![](Calendar_Images/Overview_img211.jpeg)
+![Context menu](Calendar_Images/Overview_img211.jpeg)
 
+This default context menu can be replaced with Syncfusion XP Menu by setting [UseEnhancedMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~UseEnhancedMenu.html) property to true. By default it is set to false. 
 
-
-This default context menu can be replaced with Syncfusion XP Menu by setting UseEnhancedMenu property to true. By default it is set to false. 
-
-
-{% highlight c# %}
-
+{% highlight C# %}
 this.dateTimePickerAdv1.UseEnhancedMenu = true;
-
 {% endhighlight  %}
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 Me.dateTimePickerAdv1.UseEnhancedMenu = True
-
 {% endhighlight  %}
 
-![](Calendar_Images/Overview_img212.jpeg) 
-
-
+![Context menu](Calendar_Images/Overview_img212.jpeg) 
 
 ## Menu Options
 
@@ -150,41 +81,17 @@ The menu options are:
 * Paste - Pastes the copied date.
 * No Date/Time - Selects no date and displays "No Date is selected".
 
-We can set the text value format that is copied to the clipboard using ClipboardFormat property.
+We can set the text value format that is copied to the clipboard using [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ClipboardFormat.html) property.
 
-Property Table
+* [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ClipboardFormat.html)
+* [CopyFieldsOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CopyFieldsOnly.html)
 
-<table>
-<tr>
-<th>
-DateTimePickerAdv Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ClipboardFormat</td><td>
-While doing copy / paste operation, we can specify the format of the value of the DateTimePickerAdv control that is copied, by using ClipBoardFormat property. The formats are, * {{ '_Long(default)_' | markdownify }}* {{ '_Short_'  | markdownify }}* {{ '_Time_'  | markdownify }}* {{ '_Custom_' | markdownify }}</td></tr>
-<tr>
-<td>
-<br>CopyFieldsOnly</td><td>
-Indicates whether only the selected field will be copied or the whole text field will be copied. </td></tr>
-</table>
-
-
-
-{% highlight c# %}
-
+{% highlight C# %}
 this.dateTimePickerAdv1.CopyFieldsOnly = true;
-
 this.dateTimePickerAdv1.ClipboardFormat = System.Windows.Forms.DateTimePickerFormat.Short;
-
 {% endhighlight  %}
-
-{% highlight vbnet %}
-
-
-
+{% highlight VB %}
 Me.dateTimePickerAdv1.CopyFieldsOnly = True
-
 Me.dateTimePickerAdv1.ClipboardFormat = System.Windows.Forms.DateTimePickerFormat.Short
 {% endhighlight  %}
 
