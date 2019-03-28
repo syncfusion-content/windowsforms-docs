@@ -12,6 +12,6 @@ In the designer, DateTimePickerAdv control has shortcut for some property settin
 
 
 
-![](Calendar_Images/Overview_img206.jpeg) 
+![DesignTime Features](Calendar_Images/Overview_img206.jpeg) 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display DateTimePickerAdv control programmatically? | WindowsForms | Syncfusion
+title: Dispaly the control programmatically | WindowsForms | Syncfusion
 description: how to display datetimepickeradv control programmatically?
 platform: WindowsForms
 control: Calendar 
@@ -8,36 +8,19 @@ documentation: ug
 ---
 # How to display DateTimePickerAdv control programmatically?
 
-We can display the Calendar programmatically on a button click. The DisplayCalendar method should be called from the click event handler in order to show the control. 
+We can display the Calendar programmatically on a button click. The [DisplayCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DisplayCalendar.html) method should be called from the click event handler in order to show the control. 
 
 
-{% highlight c#  %}
-
-
+{% highlight C#  %}
 private void button1_Click(object sender, System.EventArgs e)
-
 {
-
    // Shows the calendar.
-
 this.dateTimePickerAdv1.DisplayCalendar();
-
 }
-
-
-
 {% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
+{% highlight VB  %}
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-
-
-
    ' Shows the calendar.
-
 Me.dateTimePickerAdv1.DisplayCalendar()
-
 End Sub
 {% endhighlight   %}

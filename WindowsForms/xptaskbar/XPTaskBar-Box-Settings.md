@@ -14,43 +14,16 @@ This section discusses the appearance and behavior settings of the XPTaskBar Box
 
 This section lists the properties used for customizing the header of the XPTaskBar Box.
 
-The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the Text property of the XPTaskBar Box. The other properties are discussed below.
+The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~Text.html) property of the XPTaskBar Box. The other properties are discussed below.
 
-Property table
+* [HeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderBackColor.html)
+* [HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderForeColor.html)
+* [HeaderDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderDirection.html)
+* [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderFont.html)
+* [HeaderTextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderTextAlign.html)
+* [ClipHeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ClipHeaderText.html)
 
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HeaderBackColor</td><td>
-Gets/sets the background color with which the header will be drawn.</td></tr>
-<tr>
-<td>
-HeaderForeColor</td><td>
-Gets/sets the foreground color with which the header will be drawn.</td></tr>
-<tr>
-<td>
-HeaderDirection</td><td>
-Gets/sets the header direction. The options are as follows.RightToLeft LeftToRightThe default value is 'LeftToRight'.</td></tr>
-<tr>
-<td>
-HeaderFont</td><td>
-Gets/sets the text font with which the header will be drawn.</td></tr>
-<tr>
-<td>
-HeaderTextAlign</td><td>
-Gets/sets the header text alignment. The options are,NearCenter FarThe default value is 'Near'.The Header text must not be set to Null characters.</td></tr>
-<tr>
-<td>
-ClipHeaderText</td><td>
-Gets/sets a value indicating whether the header text should be clipped.</td></tr>
-</table>
-
-
- ![](Overview_images/Overview_img106.jpeg)
+![Header settings](Overview_images/Overview_img106.jpeg)
 
 {% tabs %}
 
@@ -94,26 +67,9 @@ This section discusses the button settings of the XPTaskBar Box.
 
 The collapsed button is used to expand or collapse the XPTaskBar Items. The following table lists the properties associated with collapsing or expanding the XPTaskBar Box.
 
-Property table
-
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Collapsed</td><td>
-Specifies the collapsed state of the TaskBar Box. The default value is set to `false`.</td></tr>
-<tr>
-<td>
-ShowCollapseButton</td><td>
-Specifies whether to show or hide the collapse button. The default value is set to `true`.</td></tr>
-<tr>
-<td>
-ToggleByButton</td><td>
-Specifies whether the XPTaskBar Box should expand or collapse only when the collapse button is clicked, or always when the header is clicked. The default value is set to `false`.</td></tr>
-</table>
+* [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~Collapsed.html)
+* [ShowCollapseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ShowCollapseButton.html)
+* [ToggleByButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ToggleByButton.html)
 
 {% tabs %}
 
@@ -141,7 +97,7 @@ Me.xpTaskBarBox1.ToggleByButton = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img107.jpeg) 
+![Button settings](Overview_images/Overview_img107.jpeg) 
 
 The methods associated with the above properties are given below.
 
@@ -167,26 +123,9 @@ Saves the expanded child taskbar boxes to the AppStateSerializer.</td></tr>
 Animation during expanding/collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties.
 Animation can also be enabled while adding or removing any TaskBar items.
 
-Property table
-
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-AnimationDelay</td><td>
-Specifies the animation delay during expand/collapse of the  XPTaskBarBox.</td></tr>
-<tr>
-<td>
-AnimationPositionsCount</td><td>
-Specifies the number of animation positions during expand/collapse.</td></tr>
-<tr>
-<td>
-UseAdditionalAnimation</td><td>
-It indicates whether animation is enabled when items are added/removed.</td></tr>
-</table>
+* [AnimationDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AnimationDelay.html)
+* [AnimationPositionsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AnimationPositionsCount.html)
+* [UseAdditionalAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~UseAdditionalAnimation.html)
 
 {% tabs %}
 
@@ -214,7 +153,7 @@ Me.xpTaskBarBox1.UseAdditionalAnimation = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img108.jpeg) 
+ ![Animation settings](Overview_images/Overview_img108.jpeg) 
 
 
 ## Mouse hover settings
@@ -223,22 +162,8 @@ This section discusses the mouse hover settings of the XPTaskBar control.
 
 The position of the mouse with respect to the control can be known using the properties given below.
 
-Property table
-
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-HitTaskBoxArea</td><td>
-Specifies whether the mouse is moved over the TaskBox area.</td></tr>
-<tr>
-<td>
-HeaderHit</td><td>
-Indicates whether the mouse is currently over the header portion.</td></tr>
-</table>
+* [HitTaskBoxArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HitTaskBoxArea.html)
+* [HeaderHit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderHit.html)
 
 {% tabs %}
 
@@ -264,20 +189,7 @@ Me.xpTaskBarBox1.HeaderHit = True
 
 ## Integrating Child controls to the XPTaskBar box
 
-To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the PreferredChildPanelHeight property.
-
-Property table
-
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-PreferredChildPanelHeight</td><td>
-It sets the height of the panel hosted inside the XPTaskBar Boxes.  </td></tr>
-</table>
+To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the [PreferredChildPanelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~PreferredChildPanelHeight.html) property.
 
 {% tabs %}
 
@@ -295,7 +207,7 @@ Me.xpTaskBarBox1.PreferredChildPanelHeight = 35
 
 {% endtabs %}
 
-![](Overview_images/Overview_img109.jpeg) 
+![Integrating Child controls](Overview_images/Overview_img109.jpeg) 
 PreferredChildPanelHeight = "35"
 {:.caption}
 
@@ -303,24 +215,7 @@ PreferredChildPanelHeight = "35"
 
 ToolTips can be provided for the TaskBar Items of the XPTaskBar Box. The interesting part is that tooltips can also be assigned for the disabled TaskBar Items.
 
-The ToolTipText property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed using the ShowToolTip property.
-
-Property table
-
-<table>
-<tr>
-<th>
-XPTaskBar box property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ToolTipText</td><td>
-Gets/sets the text of the tooltip.</td></tr>
-<tr>
-<td>
-ShowToolTip</td><td>
-Sets the visibility of the tooltip. The default value is set to `false`.</td></tr>
-</table>
+The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarItem~ToolTip.html) property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed using the [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ShowToolTip.html) property.
 
 {% tabs %}
 
@@ -349,4 +244,4 @@ Me.xpTaskBarBox1.ShowToolTip = True
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img110.jpeg)
+![ToolTips](Overview_images/Overview_img110.jpeg)

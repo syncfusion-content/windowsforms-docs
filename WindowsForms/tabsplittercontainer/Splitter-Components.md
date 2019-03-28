@@ -11,12 +11,12 @@ documentation: ug
 
 The splitter in the TabSplitterContainer control has in-built options for changing the orientation of the splitter and also to collapse or expand the splitter panes.
 
-![](Splitter-Components_images/Splitter-Components_img1.jpeg)
+![Splitter components](Splitter-Components_images/Splitter-Components_img1.jpeg)
 
 
 
-* Primary Page - We can add primary pages using PrimaryPages property. It invokes TabSplitterPage Collection Editor and lets you add primary pages.
-* Secondary Page - We can add secondary pages using SecondaryPages property. It invokes TabSplitterPage Collection Editor and lets you add secondary pages.
+* Primary Page - We can add primary pages using [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~PrimaryPages.html) property. It invokes TabSplitterPage Collection Editor and lets you add primary pages.
+* Secondary Page - We can add secondary pages using [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SecondaryPages.html) property. It invokes TabSplitterPage Collection Editor and lets you add secondary pages.
 * Swap Button - This button lets you to swap between the primary and secondary pages.
 * Vertical Orientation - Sets the orientation of the splitter to be vertical.
 * Horizontal Orientation - Sets the orientation of the splitter to be horizontal.
@@ -24,49 +24,16 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 
 ## SplitterPage
 
-
 The properties which customizes the Splitter page are as follows.
 
-Property table
-
-<table>
-<tr>
-<th>
-TabSplitterContainer property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BorderStyle</td><td>
-Sets border for the splitter page.</td></tr>
-<tr>
-<td>
-BackgroundImage</td><td>
-Sets the background image for the control.</td></tr>
-<tr>
-<td>
-BackgroundImageLayout</td><td>
-Sets the background image layout for the control.</td></tr>
-<tr>
-<td>
-Image</td><td>
-Lets you set image icons for the tabs.</td></tr>
-<tr>
-<td>
-ImageTransparencyColor</td><td>
-Indicates the transparent color for the tab image.</td></tr>
-<tr>
-<td>
-Text</td><td>
-Sets text for the tab.</td></tr>
-<tr>
-<td>
-Tooltip</td><td>
-Sets tooltip text for the tab.</td></tr>
-<tr>
-<td>
-Visible</td><td>
-Sets the visibility of the tab.</td></tr>
-</table>
+* [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.panel.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Panel_BorderStyle)
+* [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
+* [BackgroundImageLayout](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
+* [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~Image.html)
+* [ImageTransparencyColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~ImageTransparentColor.html)
+* [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~Text.html)
+* [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~ToolTip.html)
+* [Visible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.visible?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Visible)
 
 {% tabs %}
 
@@ -111,7 +78,7 @@ Me.tabSplitterPage1.Visible = True
 
 {% endtabs %}
 
-![](Splitter-Components_images/Splitter-Components_img2.jpeg)
+![Splitter page](Splitter-Components_images/Splitter-Components_img2.jpeg)
 
 
 

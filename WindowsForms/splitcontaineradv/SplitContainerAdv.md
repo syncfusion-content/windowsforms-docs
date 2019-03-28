@@ -13,7 +13,7 @@ The below image illustrates the components of a SplitContainerAdv control. It ha
 
 
 
- ![](SplitContainerAdv-Images/Overview_img395.jpeg)
+ ![SplitContainerAdv overview](SplitContainerAdv-Images/Overview_img395.jpeg)
 
 
 
@@ -27,7 +27,7 @@ This section discusses about various properties available for the SplitContainer
 
 ### Panel orientation
 
-The SplitContainerAdv Panels can be oriented horizontally or vertically using the Orientation property. Default value is horizontal.
+The SplitContainerAdv Panels can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Orientation.html) property. Default value is horizontal.
 
 {% tabs %}
 
@@ -50,13 +50,13 @@ Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 {% endtabs %}
 
- ![](SplitContainerAdv-Images/Overview_img396.jpeg) 
+ ![SplitContainerAdv orientation](SplitContainerAdv-Images/Overview_img396.jpeg) 
 
 
 
 ### Resizing the panels
 
-While resizing the control at design time or at run time, we can make one panel as fixed and resize the other panel alone. Select the panel which needs to be fixed, in FixedPanel property.
+While resizing the control at design time or at run time, we can make one panel as fixed and resize the other panel alone. Select the panel which needs to be fixed, in [FixedPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~FixedPanel.html) property.
 
 {% tabs %}
 
@@ -83,38 +83,12 @@ Me.SplitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPan
 
 We can make any of the panels to be collapsed at run time. The below properties helps you to do that.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Panel1</td><td>
-Gives properties of the panel1 which represents the first panel to the left of the Splitter.</td></tr>
-<tr>
-<td>
-Panel1Collapsed</td><td>
-Indicates if the Panel1 is collapsed or not.</td></tr>
-<tr>
-<td>
-Panel2</td><td>
-Gives properties of the panel2 which represents the last or the second panel to the right of the Splitter.</td></tr>
-<tr>
-<td>
-Panel2Collapsed</td><td>
-Indicates if the Panel2 is collapsed or not.</td></tr>
-<tr>
-<td>
-PanelToBeCollapsed</td><td>
-Sets the panel to be collapsed when a predefined event occurs on it.</td></tr>
-<tr>
-<td>
-TogglePanelOn</td><td>
-A predefined event, which leads to collapsing of the panel specified in PanelToBeCollapsed property. Using TogglePanelOn property, we can decide whether, the panel needs to be collapsed on a single click or a double click.</td></tr>
-</table>
+* [Panel1](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html)
+* [Panel1Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1Collapsed.html)
+* [Panel2](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html)
+* [Panel2Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2Collapsed.html)
+* [PanelToBeCollapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~PanelToBeCollapsed.html)
+* [TogglePanelOn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~TogglePanelOn.html)
 
 {% tabs %}
 
@@ -151,7 +125,7 @@ Me.splitContainerAdv1.TogglePanelOn = Syncfusion.Windows.Forms.Tools.TogglePanel
 
 ### Panel size
 
-We can specify the minimum size for the Panel1 and Panel2 in Panel1MinSize and Panel2MinSize properties. Default value for both the properties is 25.
+We can specify the minimum size for the Panel1 and Panel2 in [Panel1MinSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1MinSize.html) and [Panel2MinSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2MinSize.html) properties. Default value for both the properties is 25.
 
 {% tabs %}
 
@@ -184,30 +158,10 @@ The properties which changes the behavior of the Splitter in a SplitContainerAdv
 
 The below table describes the properties to control the behavior of the splitter.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-IsSplitterFixed</td><td>
-Gets/sets whether the user is allowed to move the splitter or not. Default value is `false`.</td></tr>
-<tr>
-<td>
-SplitterDistance</td><td>
-Indicates the distance from the left top border.</td></tr>
-<tr>
-<td>
-SplitterIncrement</td><td>
-Determines the number of pixels the splitter moves in each increment.</td></tr>
-<tr>
-<td>
-SplitterWidth</td><td>
-Indicates the width of the splitter.</td></tr>
-</table>
+* [IsSplitterFixed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~IsSplitterFixed.html)
+* [SplitterDistance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~SplitterDistance.html)
+* [SplitterIncrement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~SplitterIncrement.html)
+* [SplitterWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~SplitterWidth.html)
 
 {% tabs %}
 
@@ -243,37 +197,17 @@ Me.splitContainerAdv1.SplitterWidth = 20
 
 {% endtabs %}
 
- ![](SplitContainerAdv-Images/Overview_img397.jpeg) 
+ ![Splitter settings](SplitContainerAdv-Images/Overview_img397.jpeg) 
  
  
 ### Thumbnail arrow and grip settings
 
 SplitContainerAdv control supports various appearance settings for the ThumbnailArrow in the control which are discussed in detail below. The properties which control the appearance of the splitter components are as follows.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-ExpandFill</td><td>
-Sets the color for the arrows.</td></tr>
-<tr>
-<td>
-ExpandLine</td><td>
-Sets the outline color for the arrows.</td></tr>
-<tr>
-<td>
-GripDark</td><td>
-Sets color for the grip.</td></tr>
-<tr>
-<td>
-GridLight</td><td>
-Sets the shadow around the grip.</td></tr>
-</table>
+* [ExpandFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~ExpandFill.html)
+* [ExpandLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~ExpandLine.html)
+* [GripDark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~GripDark.html)
+* [GridLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~GripLight.html)
 
 {% tabs %}
 
@@ -308,41 +242,18 @@ Me.splitContainerAdv2.GripLight = New Syncfusion.Drawing.BrushInfo(System.Drawin
 
 {% endtabs %}
 
- ![](SplitContainerAdv-Images/Overview_img398.jpeg)
+ ![Thumbnail arrow and grip settings](SplitContainerAdv-Images/Overview_img398.jpeg)
 
 
 #### RunTime appearance
 
 The properties to control the appearance of the thumbnail arrows, and grip, while mouse hovering at runtime, are as follows.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-HotBackgroundColor</td><td>
-Sets the background color of the Thumbnail while under mouse cursor.</td></tr>
-<tr>
-<td>
-HotExpandFill</td><td>
-Sets the color for the arrows while under mouse cursor.</td></tr>
-<tr>
-<td>
-HotExpandLine</td><td>
-Sets the outline color for the arrows while under mouse cursor.</td></tr>
-<tr>
-<td>
-HotGripDark</td><td>
-Sets color for the grip while under mouse cursor.</td></tr>
-<tr>
-<td>
-HotGridLight</td><td>
-Sets the shadow around the grip while under mouse cursor.</td></tr>
-</table>
+* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~BackgroundColor.html)
+* [HotExpandFill](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~ExpandFill.html)
+* [HotExpandLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~ExpandLine.html)
+* [HotGripDark](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~HotGripDark.html)
+* [HotGridLight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~HotGripLight.html)
 
 {% tabs %}
 
@@ -382,7 +293,7 @@ Me.splitContainerAdv2.HotGripLight = New Syncfusion.Drawing.BrushInfo(System.Dra
 
 {% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img399.jpeg) 
+![SplitContainerAdv appearance](SplitContainerAdv-Images/Overview_img399.jpeg) 
 
 
 
@@ -392,32 +303,12 @@ This section discusses the properties which controls the appearance of the Split
 
 ### Background settings
 
-The below table describes the background settings.
+The below properties describes the background settings.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-BackgroundImage</td><td>
-Sets the background image for the control.</td></tr>
-<tr>
-<td>
-BackgroundImageLayout</td><td>
-Specifies the background image layout.</td></tr>
-<tr>
-<td>
-BackColor</td><td>
-Sets the background color for the control.</td></tr>
-<tr>
-<td>
-BackgroundColor</td><td>
-Sets the solid, gradient or pattern style background for the control. </td></tr>
-</table>
+* [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
+* [BackgroundImageLayout](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
+* [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor)
+* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~BackgroundColor.html)
 
 > Note: The above properties can be overridden by SplitContainerAdv.Panel properties.
 
@@ -451,24 +342,10 @@ Me.splitContainerAdv1.Panel2.BackColor = System.Drawing.Color.AliceBlue
 
 ### Foreground settings
 
-The below table describes the foreground settings.
+The below properties describes the foreground settings.
 
-Property table
-
-<table>
-<tr>
-<th>
-SplitContainerAdv properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Font</td><td>
-Sets the font style for the display text in the control.</td></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Sets the color for the display text in the control.</td></tr>
-</table>
+* [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font)
+* [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_ForeColor)
 
 {% tabs %}
 
@@ -495,13 +372,13 @@ Me.splitContainerAdv1.Panel1.ForeColor = System.Drawing.Color.Black
 
 {% endtabs %}
 
- ![](SplitContainerAdv-Images/Overview_img401.jpeg) 
+ ![Foreground settings](SplitContainerAdv-Images/Overview_img401.jpeg) 
 
 
 
 ## Border settings
 
-BorderStyle property sets 2D or 3D border for the SplitContainerAdv control. The options are FixedSingle or Fixed3D.
+[BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~BorderStyle.html) property sets 2D or 3D border for the SplitContainerAdv control. The options are FixedSingle or Fixed3D.
 
 {% tabs %}
 
@@ -527,7 +404,7 @@ Me.splitContainerAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ## Styles
 
-Visual Styles for the SplitContainerAdv control is set through Style property. The available styles are,
+Visual Styles for the SplitContainerAdv control is set through [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Style.html) property. The available styles are,
 
 * Office2007Black
 * Office2007Blue 
@@ -565,7 +442,7 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endtabs %}
 
- ![](SplitContainerAdv-Images/Overview_img402.png) 
+ ![SplitContainerAdv visual style](SplitContainerAdv-Images/Overview_img402.png) 
 
 **Office2016Colorful**
 
@@ -591,7 +468,7 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img405.png) 
+![Office2016Colorful visual style](SplitContainerAdv-Images/Overview_img405.png) 
 
 **Office2016White**
 
@@ -617,7 +494,7 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img406.png) 
+![Office2016White visual style](SplitContainerAdv-Images/Overview_img406.png) 
 
 **Office2016DarkGray**
 
@@ -643,7 +520,7 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img407.png) 
+![Office2016DarkGray visual style](SplitContainerAdv-Images/Overview_img407.png) 
 
 **Office2016Black**
 
@@ -669,4 +546,4 @@ Me.splitContainerAdv1.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2
 
 {% endtabs %}
 
-![](SplitContainerAdv-Images/Overview_img408.png) 
+![Office2016Black visual style](SplitContainerAdv-Images/Overview_img408.png) 

@@ -10,47 +10,17 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-Events table
-
-<table>
-<tr>
-<th>
-XPTaskBar events</th><th>
-Description</th></tr>
-<tr>
-<td>
-AfterAnimation</td><td>
-This event gets called after the XPTaskBar Box box expands or collapses.</td></tr>
-<tr>
-<td>
-BeforeAnimation</td><td>
-This event gets called before the XPTaskBar Box expands or collapses.</td></tr>
-<tr>
-<td>
-CollapsedStateChanged</td><td>
-This event occurs after the XPTaskBar Box has been collapsed or expanded.</td></tr>
-<tr>
-<td>
-ItemClick</td><td>
-This event occurs when a user clicks on an Item.</td></tr>
-<tr>
-<td>
-MinimumSizeChanged</td><td>
-This event occurs when the MinimumSize property is changed.</td></tr>
-<tr>
-<td>
-ProvideHeaderBackgroundBrush</td><td>
-This event occurs when the header portion of the XPTaskBar Box gets drawn.</td></tr>
-<tr>
-<td>
-ProvideItemsBackgroundBrush</td><td>
-This event occurs when the Items portion of the XPTaskBar Box gets drawn.</td></tr>
-</table>
-
+* [AfterAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AfterAnimation_EV.html)
+* [BeforeAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~BeforeAnimation_EV.html)
+* [CollapsedStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~CollapsedStateChanged_EV.html)
+* [ItemClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ItemClick_EV.html)
+* [MinimumSizeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~MinimumSizeChanged_EV.html)
+* [ProvideHeaderBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ProvideHeaderBackgroundBrush_EV.html)
+* [ProvideItemsBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ProvideItemsBackgroundBrush_EV.html)
 
 ## AfterAnimation event
 
-This event gets called after the XPTaskBar Box box expands or collapses.
+This [AfterAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AfterAnimation_EV.html) event gets called after the XPTaskBar Box box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
 
@@ -92,7 +62,7 @@ End Sub
 
 ## BeforeAnimation event
 
-This event gets called before the XPTaskBar Box expands or collapses.
+This [BeforeAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~BeforeAnimation_EV.html) event gets called before the XPTaskBar Box expands or collapses.
 
 The event handler receives an argument of the type EventArgs.
 
@@ -134,7 +104,7 @@ End Sub
 
 ## CollapsedStateChanged event
 
-This event occurs after the XPTaskBar Box has been collapsed or expanded.
+This [CollapsedStateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~CollapsedStateChanged_EV.html) event occurs after the XPTaskBar Box has been collapsed or expanded.
 
 The event handler receives an argument of the type EventArgs.
 
@@ -176,80 +146,40 @@ End Sub
 
 ## ItemClick event
 
-The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this event, the user should set unique names for the XPTaskBar Items through the Tag property in the Items Collection Editor.
+The XPTaskBar Box uses this event to make an XPTaskBar Item do some task when the user clicks on it. For this [ItemClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ItemClick_EV.html) event, the user should set unique names for the XPTaskBar Items through the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarItem~Tag.html) property in the Items Collection Editor.
 
 The event handler receives an argument of the type XPTaskBarItemClickArgs. The event property associated with the XPTaskBarItemClickArgs is as follows.
 
-Member table
-
-<table>
-<tr>
-<th>
-Member</th><th>
-Description</th></tr>
-<tr>
-<td>
-XPTaskBarItem</td><td>
-Returns the item that was clicked.</td></tr>
-</table>
-
 {% tabs %}
-
 {% highlight C# %}  
-
 private void xpTaskBarBox_ItemClick(object sender, Syncfusion.Windows.Forms.Tools.XPTaskBarItemClickArgs e)
-
 {
-
 switch (e.XPTaskBarItem.Tag as string)
-
 {
-
 case "Desk_top":
-
 // Add code to Do something.
-
 break;
-
 case "Computer":
-
 // Add code to Do something.
-
 break;
-
 }
-
 }
-
 {% endhighlight %}
-
-
-
 {% highlight VB %}
-
 Private Sub xpTaskBarBox_ItemClick(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.XPTaskBarItemClickArgs)
-
 Select Case CType IIf(TypeOf e.XPTaskBarItem.Tag Is String, e.XPTaskBarItem.Tag, Nothing), String
-
 Case "Desk_top"
-
 ' Add code to Do something.
-
 Case "Computer"
-
 ' Add code to Do something.
-
 End Select
-
 End Sub
-
 {% endhighlight %}
-
 {% endtabs %}
 
 ## MinimumSizeChanged event
 
-This event occurs when the MinimumSize property is changed. The MinimumSize property specifies the minimum size with which the XPTaskBar is to be created.
+This [MinimumSizeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~MinimumSizeChanged_EV.html) event occurs when the [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~MinimumSize.html) property is changed. The [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~MinimumSize.html) property specifies the minimum size with which the XPTaskBar is to be created.
 
 The event handler receives an argument of type EventArgs. The event properties associated with the EventArgs are as follows.
 
@@ -311,7 +241,7 @@ End Sub
 
 ## ProvideHeaderBackgroundBrush event
 
-This event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the XPTaskBar Box with different colors.
+This [ProvideHeaderBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ProvideHeaderBackgroundBrush_EV.html) event occurs when the header portion of the XPTaskBar Box gets drawn. Users may custom draw the header portion of the XPTaskBar Box with different colors.
 
 The event handler receives an argument of type ProvideBrushEventArgs. The event properties associated with the ProvideBrushEventArgs are as follows.
 
@@ -437,7 +367,7 @@ End Sub
 
 ## ProvideItemsBackgroundBrush event
 
-This event occurs when the Items portion of the XPTaskBar Box gets drawn. Users may custom draw the Items portion of the XPTaskBar Box with different colors.
+This [ProvideItemsBackgroundBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ProvideItemsBackgroundBrush_EV.html) event occurs when the Items portion of the XPTaskBar Box gets drawn. Users may custom draw the Items portion of the XPTaskBar Box with different colors.
 
 The event handler receives an argument of type ProvideBrushEventArgs.
 
