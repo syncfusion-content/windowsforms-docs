@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Preview Rows
-The SfDataGrid provides support to display additional information of a row. This can be expanded or collapsed by using an expander in a row or programmatically.
+The SfDataGrid provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
 
-## Show Preview Row
+## Show preview row
 
-The preview row can be added to the grid by setting the [ShowPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowPreviewRow.html) property as `true`. By default, preview rows will be loaded as empty in collapsed state. If you want to load the data in the preview rows, set the [PreviewRowMappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowMappingName.html) property as the field name from the data source. It will display the given field data in the preview row.
+The preview row can be added to grid by setting the [ShowPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowPreviewRow.html) property to true. By default, preview rows will be loaded as empty in collapsed state. If you need to load data in preview rows, set the [PreviewRowMappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowMappingName.html) property as field name from data source. It will display the given field data in the preview row.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ sfDataGrid.ExpandAllPreviewRow()
 
 ![Winforms datagrid shows the preview rows in the cell](PreviewRow_images/PreviewRow_img1.png)
 
-To display the custom text for each preview rows, you can use the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event and initialize the [DrawPreviewRowEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawPreviewRowEventArgs.html) property to change the display text of the preview rows.
+To display the custom text for each preview rows, use the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event and initialize the [DrawPreviewRowEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawPreviewRowEventArgs.html) property to change the display text of the preview rows.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,17 +55,13 @@ End Sub
 
 ![Winforms datagrid shows to change text preview rows](PreviewRow_images/PreviewRow_img2.png)
 
-## Expand and Collapse Preview Rows
+## Expand and collapse preview rows
 
 The SfDataGrid allows you to expand or collapse the preview rows programmatically in different ways.
 
 ### Expand or collapse all the preview rows
 
-You can expand or collapse all the preview rows programmatically by using the [ExpandAllPreviewRow](Expand and Collapse Preview Rows
-The SfDataGrid allows you to expand or collapse the preview rows programmatically in different ways.
-Expand or collapse all the preview rows
-You can expand or collapse all the preview rows programmatically by using the ExpandAllPreviewRow and CollapseAllPreviewRow methods.
-) and [CollapseAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapseAllPreviewRow.html) methods.
+You can expand or collapse all the preview rows programmatically using the [ExpandAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandAllPreviewRow.html) and [CollapseAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapseAllPreviewRow.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,9 +89,9 @@ Me.sfDataGrid.CollapsePreviewRowAt(0)
 {% endhighlight %}
 {% endtabs %}
 
-### Hiding Expand/Collapse option 
+### Hide expand/collapse option 
 
-By default, the expander column will be added to each row to expand or collapse the preview row. If you want to hide the expander column for the preview rows to set the [ExpanderColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpanderColumnWidth.html) property as 0.Then you want to expand all preview rows to add the [ExpandAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandAllPreviewRow.html) method programmatically.
+By default, the expander column will be added to each row to expand or collapse the preview row. If you need to hide the expander column for the preview rows, set the [ExpanderColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpanderColumnWidth.html) property to 0, and then you can expand all preview rows to add the [ExpandAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandAllPreviewRow.html) method programmatically.
 
 {% tabs %}
 {% highlight c# %}
@@ -110,7 +106,7 @@ sfDataGrid.ExpandAllPreviewRow()
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid without shows Hiding Expand option of the preview rows](PreviewRow_images/PreviewRow_img7.png)
+![Winforms data grid is shown without Expand option of the preview rows](PreviewRow_images/PreviewRow_img7.png)
 
 #### Height customization
 
@@ -163,7 +159,7 @@ sfDataGrid.Style.PreviewRowStyle.TextColor = Color.White
 
 ### Conditional Styling
 
-The preview rows appearance can be changed based on the conditions by using the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event.
+The appearance of preview rows can be changed based on the conditions using the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -227,7 +223,7 @@ sfDataGrid.PreviewRowPadding = New Padding(100, 5, 5, 5)
 
 ### Display image in preview row using custom drawing
 
-The drawing of the preview rows can be customized by handling the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event. By using graphics of this event argument, you can draw the customized appearance for the preview rows.
+The drawing of the preview rows can be customized by handling the [DrawPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DrawPreviewRow_EV.html) event. By using graphics of this event argument, you can draw the customized appearance of the preview rows.
 
 {% tabs %}
 {% highlight c# %}
@@ -303,8 +299,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, the collapsing operation can be canceled through the [PreviewRowCollapsingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.PreviewRowCollapsingEventArgs.html) property in the
-[PreviewRowCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowCollapsing_EV.html) event handler.
+Similarly, the collapsing operation can be canceled using the [PreviewRowCollapsingEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.PreviewRowCollapsingEventArgs.html) property in the [PreviewRowCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowCollapsing_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -327,6 +322,6 @@ End Sub
 ### Limitations
 
 1.	Does not support both details view and preview rows at same level.
-2. `QueryRowHeight` event is not supported.
-3.  Freeze columns is not supported with the preview rows.
+2.  Does not support the `QueryRowHeight` event.
+3.  Does not support freeze columns with the preview rows.
 
