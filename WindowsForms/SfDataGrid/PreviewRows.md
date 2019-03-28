@@ -18,13 +18,13 @@ The preview row can be added to the grid by setting the [ShowPreviewRow](https:/
 {% highlight c# %}
 //Enable preview row for the SfDataGrid.
 sfDataGrid.ShowPreviewRow = true;
-sfDataGrid.PreviewRowMappingName = "FirstName";
+sfDataGrid.PreviewRowMappingName = "Description";
 sfDataGrid.ExpandAllPreviewRow();
 {% endhighlight %}
 {% highlight vb %}
 'Enable preview row for the SfDataGrid.
 sfDataGrid.ShowPreviewRow = True
-sfDataGrid.PreviewRowMappingName = "FirstName"
+sfDataGrid.PreviewRowMappingName = "Description"
 sfDataGrid.ExpandAllPreviewRow()
 {% endhighlight %}
 {% endtabs %}
