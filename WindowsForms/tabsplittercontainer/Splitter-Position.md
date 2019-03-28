@@ -9,7 +9,7 @@ documentation: ug
 
 # Splitter position
 
-The splitter position can be adjusted manually within the TabSplitterContainer control at design time and also at run time. To specify the position programmatically, use the SplitterPosition property.
+The splitter position can be adjusted manually within the TabSplitterContainer control at design time and also at run time. To specify the position programmatically, use the [SplitterPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SplitterPosition.html) property.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.tabSplitterContainer1.SplitterPosition = 95
 
 {% endtabs %}
 
-![](Splitter-Position_images/Splitter-Position_img1.jpeg)
+![Splitter position](Splitter-Position_images/Splitter-Position_img1.jpeg)
 
 
 
