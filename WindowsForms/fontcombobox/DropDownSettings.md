@@ -60,7 +60,7 @@ Me.fontComboBox2.DropDownHeight = 107
 Me.fontComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 Me.fontComboBox2.DropDownWidth = 154
 Me.fontComboBox2.MaxDropDownItems = 10
-Me.fontComboBox2.ShowSymbolFontPreview = true;
+Me.fontComboBox2.ShowSymbolFontPreview = true
 
 {% endhighlight %}
 {% endtabs %}
