@@ -37,6 +37,10 @@ Specifies the width of the dropdown combo box in pixels.</td></tr>
 <td>
 MaxDropDownItems</td><td>
 Indicates the maximum number of entries to display in the drop down list.</td></tr>
+<tr>
+<td>ShowSymbolFontPreview</td>
+<td>Specifies the symbols can be rendered with its font name.</td>
+</tr>
 </table>
 
 {% tabs %}
@@ -46,6 +50,7 @@ this.fontComboBox2.DropDownHeight = 107;
 this.fontComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 this.fontComboBox2.DropDownWidth = 154;
 this.fontComboBox2.MaxDropDownItems = 10;
+this.fontComboBox2.ShowSymbolFontPreview = true;
 
 {% endhighlight %}
 
@@ -55,6 +60,7 @@ Me.fontComboBox2.DropDownHeight = 107
 Me.fontComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 Me.fontComboBox2.DropDownWidth = 154
 Me.fontComboBox2.MaxDropDownItems = 10
+Me.fontComboBox2.ShowSymbolFontPreview = true
 
 {% endhighlight %}
 {% endtabs %}
