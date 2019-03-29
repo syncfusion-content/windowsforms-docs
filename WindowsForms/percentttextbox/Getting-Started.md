@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: Creating PercentTextBox
+description: This section describes how to add percent tex box control into application
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -9,90 +9,94 @@ documentation: ug
 
 # Getting Started
 
+## Assembly deployment
 
-This section will give a step-by-step procedure to design a PercentTextBox control through designer and also through programming approach.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#percenttextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-## Through Designer
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-1. Create or open a Windows Forms project.
-2. Click on the PercentTextBox Control in the toolbox and add it to the form by dragging-and-dropping it onto the form or double-clicking the control.
-   ![](PercentTextBox-Images/Overview_img462.png)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-3. Run the application. The PercentTextBox will allow you to enter the percent value, which will be displayed as given below.
-   ![](PercentTextBox-Images/Overview_img463.png) 
+### Create a simple application with PercentTextBox
 
-## Through programming approach
+You can create a Windows Forms application with PercentTextBox using the following steps:
 
-1. Declare an instance of the PercentTextBox control.
+### Create a project
+
+Create a new Windows Forms project in Visual Studio to display the PercentTextBox control.
+
+## Add control through designer
+
+The PercentTextBox control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.Base assembly reference will be added automatically:
+
+![PercentTextBox control added by designer](PercentTextBox-Images/wf-percent-text-box-control-designer.png) 
+
+## Add control manually in code
+
+To add the control manually in C#, follow the given steps:
+
+**1.**	Add the **Syncfusion.Shared.Base** assembly reference to the project: 
+ 
+**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
 {% tabs %}
-{% highlight c# %}
-
-private Syncfusion.Windows.Forms.Tools.PercentTextBox percentTextBox1;
-
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
 {% endhighlight %}
-
-{% highlight vb %}
-
-Private percentTextBox1 As Syncfusion.Windows.Forms.Tools.PercentTextBox
-
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-2. Initialize the control.
+**3.**	Create a PercentTextBox instance, and add it to the window.
 
 {% tabs %}
-{% highlight c# %}
-
-this.percentTextBox1 = new Syncfusion.Windows.Forms.Tools.PercentTextBox();
-
+{% highlight C# %}
+PercentTextBox currencyTextBox1= new PercentTextBox();
+this.Controls.Add(currencyTextBox1);
 {% endhighlight %}
+{% highlight VB %}
+Dim currencyTextBox1 As PercentTextBox = New PercentTextBox()
+Me.Controls.Add(currencyTextBox1) 
+{% endhighlight %}
+{% endtabs %}
 
-{% highlight vb %}
+![PercentTextBox control added by code](PercentTextBox-Images/wf-percent-text-box-control.png) 
 
-Me.percentTextBox1 = New Syncfusion.Windows.Forms.Tools.PercentTextBox()
+## Maximum and minimum value constraints
 
+You can set the maximum and minimum percentage values using the [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~MaxValue.html) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~MinValue.html) properties of PercentTextBox.
+
+{% tabs %}
+{% highlight C# %}
+this.percentTextBox1.MaxValue = 6;
+this.percentTextBox1.MinValue = -6;
+{% endhighlight %}
+{% highlight VB %}
+Me.percentTextBox1.MaxValue = 6
+Me.percentTextBox1.MinValue = -6
+{% endhighlight %}
+{% endtabs %}
+
+## Change number format
+
+You can customize the number format using the [PercentDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~PercentDecimalDigits.html), [PercentDecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~PercentDecimalSeparator.html), [PercentGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~PercentGroupSeparator.html), and [PercentGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.PercentTextBox~PercentGroupSizes.html) properties of PercentTextBox.
+
+{% tabs %}
+{% highlight C# %}
+this.percentTextBox1.PercentValue = 12.873;
+this.percentTextBox1.PercentDecimalDigits = 3;
+this.percentTextBox1.PercentDecimalSeparator = ".";
+this.percentTextBox1.PercentGroupSeparator = ",";
+this.percentTextBox1.PercentGroupSizes = new int[] { 2 };
+{% endhighlight %}
+{% highlight VB %}
+Me.percentTextBox1.PercentValue = 12.873
+Me.percentTextBox1.PercentDecimalDigits = 3
+Me.percentTextBox1.PercentDecimalSeparator = "."
+Me.percentTextBox1.PercentGroupSeparator = ","
+Me.percentTextBox1.PercentGroupSizes = new int[] { 2 }
 {% endhighlight %}
 {% endtabs %}
  
-3. Set the properties of the PercentTextBox control.
-
-{% tabs %}
-{% highlight c# %}
-
-this.percentTextBox1.Location = new System.Drawing.Point(65, 29);
-this.percentTextBox1.Name = "percentTextBox1";
-this.percentTextBox1.Size = new System.Drawing.Size(84, 20);
-this.percentTextBox1.PercentValue = 5;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.percentTextBox1.Location = New System.Drawing.Point(65, 29)
-Me.percentTextBox1.Name = "numericUpDownExt1"
-Me.percentTextBox1.Size = New System.Drawing.Size(84, 20)
-Me.percentTextBox1.PercentValue = 5
-
-{% endhighlight %}
-{% endtabs %}
-
-4. Add the control to the form.
-
-{% tabs %}
-{% highlight c# %}
-
-this.Controls.Add(this.percentTextBox1);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.Controls.Add(Me.percentTextBox1)
-
-{% endhighlight %}
-{% endtabs %}
-
-5. Run the application.
-
-   ![](PercentTextBox-Images/Overview_img464.png) 
+![PercentTextBox control added by code](PercentTextBox-Images/number-format.png) 
