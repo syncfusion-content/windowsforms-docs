@@ -184,6 +184,8 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
 ### Add the Syncfusion NuGet feed URL
 
+#### Windows
+ 
 1.	Open your Visual Studio application. 
 
 2.	On the **Tools** menu, select **Options**.
