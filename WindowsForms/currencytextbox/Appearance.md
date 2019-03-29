@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
+title: Appearance | CurrencyTextbox | WindowsForms | Syncfusion
 description: Appearance
 platform: WindowsForms
 control: CurrencyTextbox

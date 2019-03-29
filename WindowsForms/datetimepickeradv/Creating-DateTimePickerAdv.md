@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started | DateTimePickerAdv | WindowsForms | Syncfusion
 description: This section describes how to add date time picker control into application.
 platform: WindowsForms
 control: DateTimePickerAdv

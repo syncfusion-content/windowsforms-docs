@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frequently-Asked-Questions | WindowsForms | Syncfusion
+title: Frequently-Asked-Questions | CurrencyTextbox | WindowsForms | Syncfusion
 description: frequently asked questions
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started | CurrencyEdit | WindowsForms | Syncfusion
 description: This section describes how to add currency edit control into application.
 platform: WindowsForms
 control: CurrencyEdit
