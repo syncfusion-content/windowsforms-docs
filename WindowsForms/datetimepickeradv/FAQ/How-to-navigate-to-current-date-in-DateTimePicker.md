@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigate to current date | DateTimePickerAdv | WindowsForms | Syncfusion
+title: Navigate to date | DateTimePickerAdv | WindowsForms | Syncfusion
 description: Frequently Asked Questions
 platform: WindowsForms
 control: DateTimePickerAdv
