@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating integertextbox
+description: This section describes how to add integer tex box control into application
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,98 +9,90 @@ documentation: ug
 
 # Getting Started
 
-This section will give a step by step procedure to design an IntegerTextBox control through designer and also through programmatic approach.
+## Assembly deployment
 
-## Through designer
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#integertextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-1. Create or open a Windows Forms project.
-2. Click on the IntegerTextBox Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
-   
-   ![](Overview_images/Overview_img439.png) 
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-3. Run the application. The IntegerTextBox that allows you to enter only integer values, will be displayed as given below.
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-   ![](Overview_images/Overview_img440.png) 
-   
-## Through programmatic approach
+### Create a simple application with IntegerTextBox
 
-The IntegerTextBox control can be created programming through code as detailed below.
+You can create a Windows Forms application with IntegerTextBox using the following steps:
 
-1. Include the required namespace.
+### Create a project
 
-{% tabs %}
-{% highlight C# %}
+Create a new Windows Forms project in Visual Studio to display the IntegerTextBox control.
 
-using Syncfusion.Windows.Forms.Tools;
+## Add control through designer
 
-{% endhighlight %}
+The IntegerTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically:
 
-{% highlight VB %}
+![IntegerTextBox control added by designer](Overview_images/wf-integer-text-box-control-added-designer.png) 
 
-Imports Syncfusion.Windows.Forms.Tools
+## Add control manually in code
 
-{% endhighlight %}
+To add the control manually in C#, follow the given steps:
 
-{% endtabs %}
-
-2. Create an instance of the IntegerTextBox control.
-
-{% tabs %}
-
-{% highlight C# %}
-
-// Create IntegerTextBox control.
-private Syncfusion.Windows.Forms.Tools.IntegerTextBox integerTextBox1;
-this.integerTextBox1=new Syncfusion.Windows.Forms.Tools.IntegerTextBox();
-  
-{% endhighlight %}
-
-{% highlight VB %}
-
-' Create IntegerTextBox control.
-Private integerTextBox1 As Syncfusion.Windows.Forms.Tools.IntegerTextBox
-Me.integerTextBox1 = New Syncfusion.Windows.Forms.Tools.IntegerTextBox()
-
-{% endhighlight %}
+**1.**	Add the **Syncfusion.Shared.Base** assembly reference to the project: 
  
-{% endtabs %}
-
-3. Specify its value and size.
+**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
 {% tabs %}
-
 {% highlight C# %}
-
-this.integerTextBox1.IntegerValue = ((long)(7));
-this.integerTextBox1.Size = new System.Drawing.Size(144, 20); 
-
+using Syncfusion.Windows.Forms.Tools;
 {% endhighlight %}
-   
 {% highlight VB %}
-
-Me.integerTextBox1.IntegerValue = (CLng(7))
-Me.integerTextBox1.Size = New System.Drawing.Size(144, 20)
-
+Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
-
 {% endtabs %}
 
-4. Add the IntegerTextBox control to the form.
+**3.** Create an IntegerTextBox instance, and add it to the window.
 
 {% tabs %}
-
 {% highlight C# %}
-
-this.Controls.Add(this.integerTextBox1);
-
+IntegerTextBox integerTextBox1= new IntegerTextBox();
+this.Controls.Add(integerTextBox1);
 {% endhighlight %}
-
 {% highlight VB %}
-   
-Me.Controls.Add(Me.integerTextBox1)
-       
+Dim integerTextBox1As IntegerTextBox = New IntegerTextBox()
+Me.Controls.Add(integerTextBox1) 
 {% endhighlight %}
-
 {% endtabs %}
 
-![](Overview_images/Overview_img441.png) 
+![IntegerTextBox control added by code](Overview_images/wf-integer-text-box-control.png) 
+
+## Maximum and minimum value constraints
+
+You can set the maximum and minimum values using the [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.IntegerTextBox~MaxValue.html) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.IntegerTextBox~MinValue.html) properties of IntegerTextBox.
+
+{% tabs %}
+{% highlight C# %}
+this.integerTextBox1.MaxValue = 9223372036854775807;
+this.integerTextBox1.MinValue = -9223372036854775808;
+{% endhighlight %}
+{% highlight VB %}
+Me.integerTextBox1.MaxValue = 9223372036854775807
+Me.integerTextBox1.MinValue = -9223372036854775808
+{% endhighlight %}
+{% endtabs %}
+
+## Number format
+
+You can display the numbers in custom format using the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberGroupSeparator.html) and [NumberGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberGroupSizes.html) properties of IntegerTextBox.
+
+{% tabs %}
+{% highlight C# %}
+this.integerTextBox1.NumberGroupSeparator = "/";
+integerTextBox1.IntegerValue = 1238761534122;
+this.integerTextBox1.NumberGroupSizes = new int[] { 5 };
+{% endhighlight %}
+{% highlight VB %}
+Me.integerTextBox1.NumberGroupSeparator = "/"
+integerTextBox1.IntegerValue = 1238761534122
+Me.integerTextBox1.NumberGroupSizes = New Integer() { 5 }
+{% endhighlight %}
+{% endtabs %}
+
+![IntegerTextBox format](Overview_images/wf-integer-text-box-control-format.png) 

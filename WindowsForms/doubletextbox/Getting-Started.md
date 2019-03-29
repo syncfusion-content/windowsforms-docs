@@ -1,69 +1,98 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating double textbox
+description: This section describes how to add double text box control into application
 platform: WindowsForms
-control: DoubleTextBox
+control: Tools
 documentation: ug
 ---
+
 # Getting Started
 
-To use a DoubleTextBox control in your application, all you need to do is drag and drop the DoubleTextBox control from the 
-controls toolbox onto your form.
+## Assembly deployment
 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#doubletextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-![](DoubleTextBox-images/DoubleTextBox_img2.png)
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
+
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+
+### Create a simple application with DoubleTextBox
+
+You can create a Windows Forms application with DoubleTextBox using the following steps:
+
+### Create a project
+
+Create a new Windows Forms project in Visual Studio to display the DoubleTextBox control.
+
+## Add control through designer
+
+The DoubleTextBox control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.Base assembly reference will be added automatically:
+
+![DoubleTextBox control added by designer](DoubleTextBox-images/wf-double-text-box-control-designer.png) 
+
+## Add control manually in code
+
+To add the control manually in C#, follow the given steps:
+
+**1.**	Add the **Syncfusion.Shared.Base** assembly reference to the project: 
  
+**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
-It can be created programmatically as follows.
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
 
-1. Add Shared.Base, Shared.Windows, Tools.Base and Tools.Windows assembly references and include the required namespace.
+**3.**	Create a DoubleTextBox instance, and add it to the window.
 
-    {% tabs %}
+{% tabs %}
+{% highlight C# %}
+DoubleTextBox doubleTextBox1= new DoubleTextBox ();
+this.Controls.Add(doubleTextBox1);
+{% endhighlight %}
+{% highlight VB %}
+Dim doubleTextBox1As DoubleTextBox = New DoubleTextBox ()
+Me.Controls.Add(doubleTextBox1)
+{% endhighlight %}
+{% endtabs %}
 
-    {% highlight c# %}
+![DoubleTextBox control added by code](DoubleTextBox-images/wf-double-text-box-control.png) 
 
-	using Syncfusion.Windows.Forms.Tools;
+## The maximum and minimum value constraints
 
-    {% endhighlight %}
+You can set the maximum and minimum values using the [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.DoubleTextBox~MaxValue.html) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.DoubleTextBox~MinValue.html) properties of DoubleTextBox.
 
-    {% highlight vbnet %}
+{% tabs %}
+{% highlight C# %}
+this.doubleTextBox1.MaxValue = 25;
+this.doubleTextBox1.MinValue = 4;
+{% endhighlight %}
+{% highlight VB %}
+Me.doubleTextBox1.MaxValue = 25
+Me.doubleTextBox1.MinValue = 4
+{% endhighlight %}
+{% endtabs %}
 
-	Imports Syncfusion.Windows.Forms.Tools
+## Change number format
 
-    {% endhighlight %}
+You can customize the number format using the [NumberDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberDecimalDigits.html), [NumberDecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberDecimalSeparator.html), [NumberGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberGroupSizes.html), and [NumberNegativePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~NumberNegativePattern.html) properties of DoubleTextBox.
 
-    {% endtabs %}
+C#	this.doubleTextBox1.DoubleValue = 24851343548781;
+this.doubleTextBox1.NumberDecimalDigits = 3;
+this.doubleTextBox1.NumberDecimalSeparator = "-";
+this.doubleTextBox1.NumberGroupSeparator = ";";
+this.doubleTextBox1.NumberGroupSizes = new int[] { 4 };
+this.doubleTextBox1.NumberNegativePattern = 2;
+VB	Me.doubleTextBox1.DoubleValue = 24851343548781
+Me.doubleTextBox1.NumberDecimalDigits = 3
+Me.doubleTextBox1.NumberDecimalSeparator = "-"
+Me.doubleTextBox1.NumberGroupSeparator = ";"
+Me.doubleTextBox1.CurrencyGroupSizes = New Integer() {3}
+Me.doubleTextBox1.NumberNegativePattern = 2
 
- 
-2. Create an instance of the DoubleTextBox. Add that instance to the Form.
-
-    {% tabs %}
-
-    {% highlight c# %}
-
-	this.doubleTextBox1=new Syncfusion.Windows.Forms.Tools.DoubleTextBox();
-
-	this.Controls.Add(this.doubleTextBox1);
-
-    {% endhighlight %}
-
-    {% highlight vbnet %}
-
-	Me.doubleTextBox1 = New Syncfusion.Windows.Forms.Tools.DoubleTextBox()
-
-	Me.Controls.Add(Me.doubleTextBox1)
-
-    {% endhighlight %}
-
-    {% endtabs %}
-
-
- 
-![](DoubleTextBox-images/DoubleTextBox_img3.png)
-
-
-
-
-
-
+![DoubleTextBox control added by code](DoubleTextBox-images/wf-double-text-box-control.png)
