@@ -76,7 +76,7 @@ Me.sfDataGrid.CollapseAllPreviewRow()
 
 ### Expand or collapse preview rows based on record index
 
-You can expand or collapse preview rows based on the record index by using the ExpandPreviewRowAt and CollapsePreviewRowAt methods.
+You can expand or collapse preview rows based on the record index by using the [ExpandPreviewRowAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandPreviewRowAt.html) and [CollapsePreviewRowAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CollapsePreviewRowAt.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ Me.sfDataGrid.CollapsePreviewRowAt(0)
 
 ### Hide expand/collapse option 
 
-By default, the expander column will be added to each row to expand or collapse the preview row. If you need to hide the expander column for the preview rows, set the [ExpanderColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpanderColumnWidth.html) property to 0, and then you can expand all preview rows to add the [ExpandAllPreviewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpandAllPreviewRow.html) method programmatically.
+By default, the expander column will be added to each row to expand or collapse the preview row. If you need to hide the expander column for the preview rows, set the [ExpanderColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExpanderColumnWidth.html) property to 0, and then you can expand all preview rows by using the `ExpandAllPreviewRow` method programmatically.
 
 {% tabs %}
 {% highlight c# %}
