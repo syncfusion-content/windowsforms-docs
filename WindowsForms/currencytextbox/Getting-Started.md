@@ -1,65 +1,119 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating currency textbox
+description: This section describes how to add currency text box control into application.
 platform: WindowsForms
-control: CurrencyTextbox
+control: CurrencyTextBox
 documentation: ug
 ---
 
 # Getting Started
 
+## Assembly deployment
 
-CurrencyTextBox provides full support for the Windows Forms designer. Just drag and drop CurrencyTextBox from the toolbox, onto the form.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#currencytextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-![](Overview_images/Overview_img489.png) 
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
+### Create a simple application with CurrencyTextBox
 
-It can be created programmatically as follows.
+You can create a Windows Forms application with [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) using the following steps:
 
-1. Include the required namespace.
+### Create a project
 
-   {% tabs %}
+Create a new Windows Forms project in Visual Studio to display the [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) control.
 
-   {% highlight c# %}
+## Add control through designer
 
-   using Syncfusion.Windows.Forms.Tools;
+The [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically:
 
-   {% endhighlight %}
-   
-   {% highlight vbnet %}
+![CurrencyTextBox control added by designer](Overview_images/wf-currency-text-box-control-added-designer.png) 
 
-   Imports Syncfusion.Windows.Forms.Tools
+## Add control manually in code
 
-   {% endhighlight %}
+To add the control manually in C#, follow the given steps:
 
-   {% endtabs %}
-   
-   
+**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-2. Create an instance of the CurrencyTextBox. Add that instance to the Form.
+**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
-   {% tabs %}
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
 
-   {% highlight c# %}
+**3.**	Create a [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html) instance, and add it to the window.
 
-    private Syncfusion.Windows.Forms.Tools.CurrencyTextBox currencyTextBox1;
+{% tabs %}
+{% highlight C# %}
+CurrencyEdit currencyEdit1 = new CurrencyEdit();
+this.Controls.Add(currencyEdit1);
+{% endhighlight %}
+{% highlight VB %}
+Dim currencyEdit1 As New CurrencyEdit()
+Me.Controls.Add(currencyEdit1)
+{% endhighlight %}
+{% endtabs %}
 
-	this.currencyTextBox2=new Syncfusion.Windows.Forms.Tools.CurrencyTextBox();
+![CurrencyTextBox control](Overview_images/wf-currency-text-box-control.png) 
 
-	this.Controls.Add(this.currencyTextBox1);
+## Set the maximum and minimum values
 
-   {% endhighlight %}
-   
-    {% highlight vbnet %}  
+You can set the maximum and minimum value of the currency by [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~MaxValue.html) and [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~MinValue.html) properties of [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html).
 
-    Private currencyTextBox1 As Syncfusion.Windows.Forms.Tools.CurrencyTextBox
+{% tabs %}
+{% highlight C# %}
+this.currencyTextBox1.MaxValue=10;
+this.currencyTextBox1.MinValue=5;
+{% endhighlight %}
+{% highlight VB %}
+Me.currencyTextBox1.MaxValue=10
+Me.currencyTextBox1.MinValue=5
+{% endhighlight %}
+{% endtabs %}
 
-	Me.currencyTextBox2 = New Syncfusion.Windows.Forms.Tools.CurrencyTextBox()
+## Set currency symbol
 
-	Me.Controls.Add(Me.currencyTextBox1)
+You can define the custom currency symbol using the [CurrencySymbol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~CurrencySymbol.html) property of [CurrencyTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox.html).
 
-   {% endhighlight %}
-   
-   {% endtabs %}
+{% tabs %}
+{% highlight C# %}
+//Setting custom currency symbol 
+this.currencyTextBox1.CurrencySymbol = "€";
+{% endhighlight %}
+{% highlight VB %}
+'Setting custom currency symbol 
+Me.currencyTextBox1.CurrencySymbol = "€"
+{% endhighlight %}
+{% endtabs %}
+        
+![CurrencyTextBox currency symbol](Overview_images/wf-currency-text-box-control-currency-sympol.png) 
+
+## Number format
+
+You can customize the number format using the [CurrencyDecimalDigits](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~CurrencyDecimalDigits.html), [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~CurrencyDecimalSeparator.html), [CurrencyGroupSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~CurrencyGroupSeparator.html) and [CurrencyGroupSizes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.CurrencyTextBox~CurrencyGroupSizes.html) properties of CurrencyTextBox.
+
+{% tabs %}
+{% highlight C# %}
+this.currencyTextBox1.DecimalValue = 2132423543;
+this.currencyTextBox1.CurrencyDecimalDigits = 3;
+this.currencyTextBox1.CurrencyDecimalSeparator = "/";
+this.currencyTextBox1.CurrencyGroupSeparator = "*";
+this.currencyTextBox1.CurrencyGroupSizes = new int[] { 3 };
+VB	Me.currencyTextBox1.DecimalValue = 2132423543
+{% endhighlight %}
+{% highlight VB %}
+Me.currencyTextBox1.CurrencyDecimalDigits = 3
+Me.currencyTextBox1.CurrencyDecimalSeparator = "."
+Me.currencyTextBox1.CurrencyGroupSeparator = ","
+Me.currencyTextBox1.CurrencyGroupSizes = New Integer() {3}
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox currency symbol](Overview_images/number-format.png) 

@@ -1,75 +1,125 @@
 ---
 layout: post
-title: Creating DateTimePickerAdv | WindowsForms | Syncfusion
-description: creating datetimepickeradv
+title: Getting Started | WindowsForms | Syncfusion
+description: This section describes how to add date time picker control into application.
 platform: WindowsForms
-control: DateTimePicker
+control: DateTimePickerAdv
 documentation: ug
 ---
-# Creating DateTimePickerAdv
 
-DateTimePickerAdv control provides full support for the Windows Forms designer. To use a DateTimePickerAdv control in your application, all you need to do is drag and drop a DateTimePickerAdv control from the controls toolbox onto your form. You can then set any of its properties through the property grid.
+# Getting Started
 
-![](DateTimePicker_images/Overview_img181.jpeg)
+## Assembly deployment
 
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#currencyedit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
+You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-The DateTimePickerAdv can be created programmatically through code as detailed below.
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-1. Include the required namespace.
+### Create a simple application with DateTimePickerAdv
 
+You can create a Windows Forms application with [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) using the following steps:
 
+### Create a project
 
-   {% tabs %}
+Create a new Windows Forms project in Visual Studio to display the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control.
 
-   {% highlight C# %}
+## Add control through designer
 
-             using Syncfusion.Windows.Forms.Tools;
+The [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
-   {% endhighlight %}
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
 
+![DateTimePicker control added by designer](DateTimePicker_images/wf-date-time-picker-added-designer.png) 
 
-   {% highlight VB %}
+## Add control manually in code
 
-              Imports Syncfusion.Windows.Forms.Tools
-   
-   {% endhighlight %}
+To add the control manually in C#, follow the given steps:
 
-   {% endtabs %}
+**1.** Add the following required assembly references to the project: 
 
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
 
-2. Create an instance of DateTimePickerAdv. Add that instance to the Form.
+**2.** Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
 
+**3.** Create a [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) instance, and add it to the window.
 
-   {% tabs %}
+{% tabs %}
+{% highlight C# %}
+CurrencyEdit currencyEdit1 = new CurrencyEdit();
+this.Controls.Add(currencyEdit1);
+{% endhighlight %}
+{% highlight VB %}
+Dim currencyEdit1 As New CurrencyEdit()
+Me.Controls.Add(currencyEdit1)
+{% endhighlight %}
+{% endtabs %}
 
-   {% highlight C# %}
+## Change DateTime format
 
-					private Syncfusion.Windows.Forms.Tools.DateTimePickerAdv dateTimePickerAdv1;
+The DateTimePickerAdv control contains the following built-in formats for displaying the date and time:
 
-					this.dateTimePickerAdv1=new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
+* Long
+* Sort
+* Time
+* Custom
 
-					this.Controls.Add(this.dateTimePickerAdv1);
-   {% endhighlight %}
+You can set the date time format using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Format.html) property of [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html).
 
+{% tabs %}
+{% highlight C# %}
+//Time format for the text field
+this.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+{% endhighlight %}
+{% highlight VB %}
+'Time format for the text field
+Me.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Time
+{% endhighlight %}
+{% endtabs %}
 
-   {% highlight VB %}
+![DateTimePickerAdv date format](DateTimePicker_images/wf-date-time-picker-format.png) 
 
-					Private dateTimePickerAdv1 As Syncfusion.Windows.Forms.Tools.DateTimePickerAdv
+## Editing modes
 
-					Me.dateTimePickerAdv1 = New Syncfusion.Windows.Forms.Tools.DateTimePickerAdv()
+You can edit the date values in the DateTimePickerAdv control directly.
 
-					Me.Controls.Add(Me.dateTimePickerAdv1)
-   {% endhighlight %}
+![DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support.png) 
 
-   {% endtabs %}
+![DateTimePickerAdv date editing option](DateTimePicker_images/Editing-support1.png) 
 
+## Date range constraints
 
-   ![](DateTimePicker_images/Overview_img182.jpeg) 
+You can set the minimum and maximum dates to the DateTimePickerAdv control using the [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MaxValue.html) properties.
 
+{% tabs %}
+{% highlight C# %}
+this.dateTimePickerAdv1.MaxValue = new System.DateTime(2008, 2, 29, 0, 0, 0);
+this.dateTimePickerAdv1.MinValue = new System.DateTime(2007, 2, 1, 0, 0, 0, 0);
+{% endhighlight %}
+{% highlight VB %}
+Me.dateTimePickerAdv1.MaxValue = New System.DateTime(2008, 2, 29, 0, 0, 0)
+Me.dateTimePickerAdv1.MinValue = New System.DateTime(2007, 2, 1, 0, 0, 0, 0)
+{% endhighlight %}
+{% endtabs %}
 
-
-   
-
-
+![DateTimePickerAdv date range](DateTimePicker_images/date-ranges.png)  
