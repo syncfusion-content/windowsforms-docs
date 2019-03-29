@@ -193,11 +193,11 @@ The ScheduleControl supports for five schedule view types:
 
 To change month view to day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select a day.
 
-![View type in schedule](Getting-Started_images/Getting-Started_img15.jpeg)
+![Changing view in Scheduler](Getting-Started_images/Getting-Started_img15.jpeg)
 	
 You can also change to other schedule views using this ContextMenu. 
 
-![View type in schedule using context menu](Getting-Started_images/Getting-Started_img16.jpeg)
+![Changing view in Scheduler](Getting-Started_images/Getting-Started_img16.jpeg)
 	
 ## Appointments
 
@@ -207,11 +207,11 @@ The Schedule control supports to insert, remove, modify, and save all the appoin
 
 Double-click one of the timeslots on the ScheduleGrid. This action will display a new appointment screen where you can enter a new schedule item.
 
-![Adding appointment at run time](Getting-Started_images/Getting-Started_img17.jpeg)
+![Adding appointment in Scheduler](Getting-Started_images/Getting-Started_img17.jpeg)
 
 Clicking the Save and Close button on the Appointment, the screen will re-display the `Day view` ScheduleControl with a new appointment. If you hover over the appointment in the ScheduleGrid, a tooltip will display.
 
-![Adding appointment at run time](Getting-Started_images/Getting-Started_img18.jpeg)
+![Adding appointment in Scheduler](Getting-Started_images/Getting-Started_img18.jpeg)
 
 ### Remove
 
@@ -223,17 +223,17 @@ Right click on the appointment and select the Delete Item from the context menu 
 
 Double-click on the appointment or right-click and choose the Edit Item from context menu.
 
-![Editing appointment](Getting-Started_images/Getting-Started_img20.jpeg)
+![Modifying appointment in Scheduler](Getting-Started_images/Getting-Started_img20.jpeg)
 
 This action will display an appointment form with appointment details to modify the appointment then, click on Save and Close button.
 
-![Editing appointment](Getting-Started_images/Getting-Started_img21.jpg)
+![Modifying appointment in Scheduler](Getting-Started_images/Getting-Started_img21.jpg)
 
 ### Save all the appointment
 
 Click the Close button on the form system menu on the upper-right corner of the form. Because, the data has been modified in this ScheduleControl. A dialog will appear as follows, click Yes to save the changes to a disk file.
 
-![Saving all appointment](Getting-Started_images/Getting-Started_img22.jpg)
+![Saving all appointment in Scheduler](Getting-Started_images/Getting-Started_img22.jpg)
 	
 Then modify our `Form_Load` code to conditionally reload the saved data if the file is present on the disk. Copy this code to your Form1.cs file. Notice that you have added a `using` statement to reference the `System.IO namespace` to the new code in the Form1_Load.
 
@@ -324,7 +324,7 @@ End Namespace
 
 Compile and run the application again. The Month view should reappear but this time the added appointment will appear.
 
-![Saving appointment](Getting-Started_images/Getting-Started_img23.jpg)
+![Saving appointment in Scheduler](Getting-Started_images/Getting-Started_img23.jpg)
 
 ### TextColor
 
@@ -351,7 +351,7 @@ masterList.Add(item)
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing appointment forecolor](Getting-Started_images/Getting-Started_img24.png)
+![Changing appointment forecolor in Scheduler](Getting-Started_images/Getting-Started_img24.png)
 
 ### Schedule appointment
 
