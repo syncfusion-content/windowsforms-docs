@@ -337,7 +337,7 @@ SimpleScheduleAppointmentList masterList = new SimpleScheduleAppointmentList();
 ScheduleAppointment item = masterList.NewScheduleAppointment() as ScheduleAppointment;
 item.StartTime = DateTime.Now;
 item.EndTime = item.StartTime.AddDays(2);
-item.ForeColor = Color.BlueViolet;
+item.ForeColor = Color.Red;
 masterList.Add(item);
 {% endhighlight %}
 {% highlight vb %}
@@ -346,7 +346,7 @@ Dim masterList As New SimpleScheduleAppointmentList()
 Dim item As ScheduleAppointment = TryCast(masterList.NewScheduleAppointment(),ScheduleAppointment)
 item.StartTime = DateTime.Now
 item.EndTime = item.StartTime.AddDays(2)
-item.ForeColor = Color.BlueViolet
+item.ForeColor = Color.Red
 masterList.Add(item)
 {% endhighlight %}
 {% endtabs %}
