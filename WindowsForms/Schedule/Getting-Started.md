@@ -27,11 +27,11 @@ Create a new Windows Forms project in Visual Studio to display the Schedule cont
 
 1. The Schedule control can be added to the application by dragging it from the Toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-   ![Getting-Started_Designer](Getting-Started_images/Getting-Started_img9.jpeg)
+   ![Adding schedule control through designer](Getting-Started_images/Getting-Started_img9.jpeg)
 
 2. The ScheduleControl will be shown on the design surface. Following screenshot is a typical display of this. Notice the Appearance property in the property grid. This object has many properties that affects the appearance of the ScheduleControl.
 
-   ![Getting-Started_Designer](Getting-Started_images/Getting-Started_img10.png)
+   ![Adding schedule control through designer](Getting-Started_images/Getting-Started_img10.png)
 	
 ### Adding control by code
 
@@ -98,11 +98,11 @@ This file defines several classes that implements  the ScheduleControl interface
 
 Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample sample. Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
-![Adding control](Getting-Started_images/Getting-Started_img12.jpeg)
+![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img12.jpeg)
 
 2. You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
-![Adding class file](Getting-Started_images/Getting-Started_img13.jpeg)
+![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img13.jpeg)
 
 3. After adding the `SimpleScheduleDataProvider.cs` code file, add some code to your Form.cs to provide data support to your ScheduleControl.
 
@@ -179,7 +179,7 @@ End Namespace
 
 4. Press `F5` key to compile and run your application. 
 
-![Compiling application](Getting-Started_images/Getting-Started_img14.jpeg)
+![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img14.jpeg)
  
 ## Changing views
 
@@ -193,11 +193,11 @@ The ScheduleControl supports for five schedule view types:
 
 To change month view to day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select a day.
 
-![Schedule-view](Getting-Started_images/Getting-Started_img15.jpeg)
+![View type in schedule](Getting-Started_images/Getting-Started_img15.jpeg)
 	
 You can also change to other schedule views using this ContextMenu. 
 
-![Schedule-view_context menu](Getting-Started_images/Getting-Started_img16.jpeg)
+![View type in schedule using context menu](Getting-Started_images/Getting-Started_img16.jpeg)
 	
 ## Appointments
 
@@ -207,33 +207,33 @@ The Schedule control supports to insert, remove, modify, and save all the appoin
 
 Double-click one of the timeslots on the ScheduleGrid. This action will display a new appointment screen where you can enter a new schedule item.
 
-![Insert appointment](Getting-Started_images/Getting-Started_img17.jpeg)
+![Adding appointment at run time](Getting-Started_images/Getting-Started_img17.jpeg)
 
 Clicking the Save and Close button on the Appointment, the screen will re-display the `Day view` ScheduleControl with a new appointment. If you hover over the appointment in the ScheduleGrid, a tooltip will display.
 
-![Saving appointment](Getting-Started_images/Getting-Started_img18.jpeg)
+![Adding appointment at run time](Getting-Started_images/Getting-Started_img18.jpeg)
 
 ### Remove
 
 Right click on the appointment and select the Delete Item from the context menu to remove the selected appointment.
 
-![Remove appointment](Getting-Started_images/Getting-Started_img19.jpeg)
+![Deleting appointment](Getting-Started_images/Getting-Started_img19.jpeg)
 
 ### Modify
 
 Double-click on the appointment or right-click and choose the Edit Item from context menu.
 
-![Modify appointment](Getting-Started_images/Getting-Started_img20.jpeg)
+![Editing appointment](Getting-Started_images/Getting-Started_img20.jpeg)
 
 This action will display an appointment form with appointment details to modify the appointment then, click on Save and Close button.
 
-![Saving appointment](Getting-Started_images/Getting-Started_img21.jpg)
+![Editing appointment](Getting-Started_images/Getting-Started_img21.jpg)
 
 ### Save all the appointment
 
 Click the Close button on the form system menu on the upper-right corner of the form. Because, the data has been modified in this ScheduleControl. A dialog will appear as follows, click Yes to save the changes to a disk file.
 
-![Save all appointment](Getting-Started_images/Getting-Started_img22.jpg)
+![Saving all appointment](Getting-Started_images/Getting-Started_img22.jpg)
 	
 Then modify our `Form_Load` code to conditionally reload the saved data if the file is present on the disk. Copy this code to your Form1.cs file. Notice that you have added a `using` statement to reference the `System.IO namespace` to the new code in the Form1_Load.
 
@@ -324,7 +324,7 @@ End Namespace
 
 Compile and run the application again. The Month view should reappear but this time the added appointment will appear.
 
-![Save appointment](Getting-Started_images/Getting-Started_img23.jpg)
+![Saving appointment](Getting-Started_images/Getting-Started_img23.jpg)
 
 ### TextColor
 
@@ -351,7 +351,7 @@ masterList.Add(item)
 {% endhighlight %}
 {% endtabs %}
 
-![Schedule-ForeColor](Getting-Started_images/Getting-Started_img24.png)
+![Customizing appointment forecolor](Getting-Started_images/Getting-Started_img24.png)
 
 ### Schedule appointment
 
