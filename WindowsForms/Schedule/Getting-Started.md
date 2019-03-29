@@ -217,7 +217,7 @@ Clicking the Save and Close button on the Appointment, the screen will re-displa
 
 Right click on the appointment and select the Delete Item from the context menu to remove the selected appointment.
 
-![Deleting appointment](Getting-Started_images/Getting-Started_img19.jpeg)
+![Deleting appointment in Schedule Control](Getting-Started_images/Getting-Started_img19.jpeg)
 
 ### Modify
 
