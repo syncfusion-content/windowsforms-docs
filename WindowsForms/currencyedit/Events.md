@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events | WindowsForms | Syncfusion
+title: Events | CurrencyEdit | WindowsForms | Syncfusion
 description: events
 platform: WindowsForms
 control: CurrencyEdit

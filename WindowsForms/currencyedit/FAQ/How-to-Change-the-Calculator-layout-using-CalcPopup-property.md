@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change the Calculator layout | WindowsForms | Syncfusion
+title: Calculator layout | CurrencyEdit | WindowsForms | Syncfusion
 description: This section describes how to change the calculator layout using calcpopup property
 platform: WindowsForms
 control: Editors Package

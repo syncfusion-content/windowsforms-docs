@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text active when the control is disabled | WindowsForms | Syncfusion
+title: Make the control active | CurrencyTextbox | WindowsForms | Syncfusion
 description: How to make the text active when the control is disabled
 platform: WindowsForms
 control: CurrencyEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
+title: Advanced-Features | CurrencyTextbox | WindowsForms | Syncfusion
 description: advanced features
 platform: WindowsForms
 control: CurrencyTextbox

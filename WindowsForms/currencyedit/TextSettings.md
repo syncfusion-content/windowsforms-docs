@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Settings | WindowsForms | Syncfusion
+title: Text Settings | CurrencyEdit | WindowsForms | Syncfusion
 description: text settings
 platform: WindowsForms
 control: CurrencyEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion DateTimePickerAdv for WindowsForms
+title: Overview |  DateTimePickerAdv | WindowsForms | Syncfusion
 description: Overview of advanced DateTimePicker control with a culture-based DateTimePicker with dropping down a custom window.
 platform: WindowsForms
 control: DateTimePicker
