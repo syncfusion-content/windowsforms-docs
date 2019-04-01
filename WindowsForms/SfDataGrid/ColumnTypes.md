@@ -1399,7 +1399,7 @@ End Sub
 {% endtabs %}
 ![Image used to display the customize the appearance of image column in datagrid windows form](ColumnTypes_images/ColumnTypes_img19.png)
 
-## GridMultiSelectComboBox
+## GridMultiSelectComboBoxColumn
 
 [GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html) is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the [GridMultiSelectComboBoxColumn.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~DataSource.html) property.
 By default, GridMultiSelectComboBoxColumn displays the value by using the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property. You can set [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set [ValueMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~ValueMember.html) that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
@@ -1413,11 +1413,11 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img41.png)
+![Winforms datagrid shows that MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img41.png)
 
 ### Opening drop-down popup on single-click
 
-Drop-down of the MultiSelectComboBox column can be shown on single click by enable the `StaysOpenOnEdit`.
+Drop-down of the MultiSelectComboBox column can be shown on single click by enable the [StaysOpenOnEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~StaysOpenOnEdit.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -1441,7 +1441,7 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 {% endhighlight %}
 {% endtabs %}
 
-![Customizing GroupCaptionText based on DisplayMember](ColumnTypes_images/ColumnTypes_img42.png)
+![Winforms datagrid shows to customizing GroupCaptionText based on DisplayMember](ColumnTypes_images/ColumnTypes_img42.png)
 
 ## Loading different DataSources for each row
 
@@ -1449,7 +1449,7 @@ Different data sources can be loaded for each row of the [GridMultiSelectComboBo
 
 ### Implementing IDataSourceSelector
 
-`DataSourceSelector` needs to implement `IDataSourceSelector` interface to implement the GetDataSource method that receives the following parameters,
+`DataSourceSelector` needs to implement [IDataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) interface to implement the GetDataSource method that receives the following parameters,
 •	record – data object associated with row.
 •	dataSource – Data context of data grid.
 In the following code, DataSource of the `Ship City` column is returned based on `ShipCountry` column value by using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
@@ -1508,9 +1508,11 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
+Following screenshot illustrates the different Ship City DataSource bound to each row of the multi select combobox column based on the Ship Country Name.
 
-![Different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
+![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
+
+![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
 
 ## Custom Column Support
 
