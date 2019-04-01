@@ -1509,7 +1509,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates the different `ShipCity` DataSource bound to each row of the multi select combo box column based on the `ShipCountryName`.
+The following screenshot illustrates the different `ShipCity` DataSource bound to each row of the multi select combo box column based on the `ShipCountry` Name.
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
 
