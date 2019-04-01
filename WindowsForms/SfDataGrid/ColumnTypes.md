@@ -1401,8 +1401,8 @@ End Sub
 
 ## GridMultiSelectComboBoxColumn
 
-[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html) is derived from the GridColumn which hosts SfComboBox as edit element. Data source to the combo box can be set by using the [GridMultiSelectComboBoxColumn.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~DataSource.html) property.
-By default, GridMultiSelectComboBoxColumn displays the value by using the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property. You can set [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set [ValueMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~ValueMember.html) that denotes string from the object data source that acts as a value for that cell or to get the SelectedValue from the SelectedItem.
+[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)  is derived from the GridColumn that hosts SfComboBox as an edit element. Data source to the combo box can be set using the [GridMultiSelectComboBoxColumn.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~DataSource.html) property.
+By default, GridMultiSelectComboBoxColumn displays values using the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property. You can set [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set [ValueMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~ValueMember.html) that denotes string from the object data source that acts as a value for that cell to get the SelectedValue from the SelectedItem.
 
 {% tabs %}
 {% highlight c# %}
@@ -1417,7 +1417,7 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 
 ### Opening drop-down popup on single-click
 
-Drop-down of the MultiSelectComboBox column can be shown on single click by enable the [StaysOpenOnEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~StaysOpenOnEdit.html).
+The drop-down of the MultiSelectComboBox column can be shown on single click by enabling [StaysOpenOnEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~StaysOpenOnEdit.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -1430,7 +1430,7 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 
 ### Customizing GroupCaptionText based on DisplayMember
 
-By default, the group caption text will be displayed based on the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) of multi select combo-box column. This can be changed to display the [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) by using the [GroupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~GroupMode.html) property of the column.
+By default, the group caption text will be displayed based on  [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) of multi select combo box column. This can be changed to display the [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) using the [GroupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~GroupMode.html) property of column.
 
 {% tabs %}
 {% highlight c# %}
@@ -1445,14 +1445,15 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 
 ## Loading different DataSources for each row
 
-Different data sources can be loaded for each row of the [GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html) by using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) property.
+Different data sources can be loaded to each row of [GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)  using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) property.
 
 ### Implementing IDataSourceSelector
 
-`DataSourceSelector` needs to implement [IDataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) interface to implement the GetDataSource method that receives the following parameters,
-•	record – data object associated with row.
-•	dataSource – Data context of data grid.
-In the following code, DataSource of the `Ship City` column is returned based on `ShipCountry` column value by using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
+`DataSourceSelector` needs to implement [IDataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) interface to implement the GetDataSource method that receives the following parameters:
+•	Record – Data object associated with row.
+•	DataSource – Data context of data grid.
+
+In the following code, DataSource of the `ShipCity` column is returned based on the`ShipCountry` column value using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1508,7 +1509,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-Following screenshot illustrates the different Ship City DataSource bound to each row of the multi select combobox column based on the Ship Country Name.
+The following screenshot illustrates the different `ShipCity` DataSource bound to each row of the multi select combo box column based on the `ShipCountryName`.
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
 
