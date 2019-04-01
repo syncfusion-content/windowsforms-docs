@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend | Windows Forms | Syncfusion
-description: legend
+title: Legend | PivotChart | Windows Forms | Syncfusion
+description: Legend support in pivot chart control | Syncfusion
 platform: windowsforms
 control: PivotChart
 documentation: ug
