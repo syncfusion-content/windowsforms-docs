@@ -1401,15 +1401,15 @@ End Sub
 
 ## GridProgressBarColumn
 
-[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display and non-editable integer type data.
+[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display non-editable integer type data.
 
-#### Changing boundary values of Progress
+#### Changing boundary values of progress
 
-Changing the ProgressBar boundary values by using `Maximum` and `Minimum` property.
+You can change the boundary values of ProgressBar using the `Maximum` and `Minimum` properties.
 
-Maximum - Specifies the maximum value of the progress bar.
+Maximum - Specifies the maximum value of progress bar.
 
-Minimum - Specifies the minimum value of the progress bar.
+Minimum - Specifies the minimum value of progress bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -1424,7 +1424,7 @@ Me.sfDataGrid.Columns.Add(New GridProgressBarColumn() With {.MappingName = "Soft
 
 #### Changing progress value mode
 
-Changing the ProgressBar [ValueMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn~ValueMode.html) as Value by using property in given below.
+You can change the value mode of ProgressBar using the [ValueMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn~ValueMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1479,11 +1479,11 @@ Me.sfDataGrid.Style.ProgressBarStyle.ForegroundColor = Color.LightGoldenrodYello
 
 #### Gradient background
 
-The color of the background gradient can be changed using the properties given below,
+The color of the background gradient can be changed using the following properties:
 
-[GradientBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundStartColor.html) - Specifies the start color of the background gradient.The [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarInfo~BackgroundStyle.html) property should be set to 'Gradient'.
+[GradientBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundStartColor.html) - Specifies the start color of the background gradient.The [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarInfo~BackgroundStyle.html)  property should be set to `Gradient`.
 
-[GradientBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundEndColor.html) - Specifies the end color of the background gradient.The `BackgroundStyle` property should be set to 'Gradient' .
+[GradientBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundEndColor.html) - Specifies the end color of the background gradient. The `BackgroundStyle` property should be set to 'Gradient' .
 
 {% tabs %}
 {% highlight c# %}
@@ -1502,11 +1502,11 @@ Me.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.DarkGray
 
 #### Gradient foreground
 
-The color of the foreground gradient can be changed by using the properties given below.
+The color of the foreground gradient can be changed by using the following properties:
 
-[GradientForegroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundStartColor.html) - Specifies the start color of the foreground gradient.The [ForegroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~ForegroundStyle.html) property should be set to `Gradient`.
+[GradientForegroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundStartColor.html) -  Specifies the start color of the foreground gradient. The [ForegroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~ForegroundStyle.html) property should be set to `Gradient`.
 
-[GradientForegroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundEndColor.html) - Specifies the end color of the foreground gradient.The `ForegroundStyle` property should be set to `Gradient`.
+[GradientForegroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundEndColor.html) - Specifies the end color of the foreground gradient. The `ForegroundStyle` property should be set to `Gradient`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1525,13 +1525,13 @@ Me.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.Blue
 
 ### Tube appearance
 
-Colors can be set for the background tube of the ProgressBar column.
+Colors can be set to the background tube of the ProgressBar column.
 
 #### Tube background
 
-[TubeBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundStartColor.html) - Specifies the start color of the background tube.The `BackgroundStyle` property should be set to `Tube`.
+[TubeBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundStartColor.html) - Specifies the start color of the background tube. The `BackgroundStyle` property should be set to `Tube`.
 
-[TubeBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundEndColor.html) - Specifies the end color of the background tube.The `BackgroundStyle` property should be set to `Tube`.
+[TubeBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundEndColor.html) - Specifies the end color of the background tube. The`BackgroundStyle` property should be set to `Tube`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1591,7 +1591,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.AllowBackgroundSegments = True
 
 #### Segmented foreground
 
-The foreground of the ProgressBar column can be displayed with a segmented appearance by using the property given below.
+The foreground of the ProgressBar column can be displayed with a segmented appearance by using the [AllowForegroundSegments](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~AllowForegroundSegments.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1606,7 +1606,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.AllowForegroundSegments =True
 
 ### Changing alignment of text
 
-Progressbar allows to change the alignment of text. Below is the list of alignment options available.
+Progressbar allows to change the alignment of text. Progressbar supports the following list of alignment options:
 
 <table>
 <tr>
@@ -1622,7 +1622,7 @@ Progressbar allows to change the alignment of text. Below is the list of alignme
 Center
 </td>
 <td>
-The text on the progress bar can be set to Center by using `TextAlignment` property. This is the default text alignment. The `ValueMode` property should be set to `Percentage` or `Value`.
+The text on the progress bar can be set to Center using the `TextAlignment` property. This is the default text alignment. The `ValueMode` property should be set to `Percentage` or `Value`.
 </td>
 </tr>
 <tr>
@@ -1630,7 +1630,7 @@ The text on the progress bar can be set to Center by using `TextAlignment` prope
 Left
 </td>
 <td>
-The text on the progress bar can be set to left by using `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value.
+The text on the progress bar can be set to left using the `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value.
 </td>
 </tr>
 <tr>
@@ -1638,12 +1638,12 @@ The text on the progress bar can be set to left by using `TextAlignment` propert
 Right
 </td>
 <td>
-The text on the progress bar can be set to right by using `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value`.
+The text on the progress bar can be set to right using the `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value`.
 </td>
 </tr>
 </table>
 
-Below code, applies the text alignment style as left,
+The following code sample demonstrates how to apply the text alignment style to left.
 
 {% tabs %}
 {% highlight c# %}
@@ -1658,7 +1658,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.TextAlignment = Syncfusion.Windows.Forms.To
 
 ### Changing orientation
 
-Progressbar allows to change the orientation of text. Below is the list of orientation options available.
+Progressbar allows to change the orientation of text. Progressbar contains the following list of orientation options:
 
 <table>
 <tr>
@@ -1674,7 +1674,7 @@ Progressbar allows to change the orientation of text. Below is the list of orien
 Horizontal
 </td>
 <td>
-The direction of display of the ProgressBar can be changed as `Horizontal` by using the property given below.In this case,direction of the text also changed.
+The direction of display of the ProgressBar can be changed to `Horizontal` using the following given property. In this case, direction of the text is also changed.
 </td>
 </tr>
 <tr>
@@ -1682,12 +1682,12 @@ The direction of display of the ProgressBar can be changed as `Horizontal` by us
 Vertical
 </td>
 <td>
-The direction of display of the ProgressBar can be changed as `Vertical` by using the property given below. In this case Direction of the text also changed.
+The direction of display of the ProgressBar can be changed to `Vertical` using the following property. In this case, the direction of the text is also changed.
 </td>
 </tr>
 </table>
 
-Below code, applies the progress orientation style as vertical,
+The following code sample demonstrates how to apply the progress orientation style to vertical.
 
 {% tabs %}
 {% highlight c# %}
@@ -1704,7 +1704,7 @@ Me.sfDataGrid.RowHeight = 50
 
 ### Add image in progress bar
 
-The `ForegroundStyle` are set to the `Image` style, then the foreground image can be specified by using the below given property.
+The `ForegroundStyle` is set to `Image` style, then the foreground image can be specified using the following given property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1725,7 +1725,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = false
 
 #### Fit image to progress
 
-Image can be fit in the `ForegroundStyle` to enable the [FitImageToProgressBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~FitImageToProgressBar.html) property.
+Image can be fit to the `ForegroundStyle` to enable the [FitImageToProgressBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~FitImageToProgressBar.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1746,7 +1746,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = true
 
 ### Conditional styling
 
-SfDataGrid allows to customize the appearance of the ProgressBar column based on conditions through [QueryProgressBarCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryProgressBarCellStyle_EV.html) event.
+SfDataGrid allows to customize the appearance of the ProgressBar column based on conditions using the [QueryProgressBarCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryProgressBarCellStyle_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
