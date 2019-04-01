@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion CurrencyEdit for WindowsForms
+title: Overview | CurrencyEdit|  Syncfusion | WindowsForms
 description: An introduction about CurrencyEdit control.
 platform: WindowsForms
 control: CurrencyEdit

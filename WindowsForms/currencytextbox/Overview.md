@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion CurrencyTextBox for Windows Forms
+title: Overview | CurrencyTextBox | Windows Forms | Syncfusion 
 description: Overview of Syncfusion CurrencyTextBox which has currency specific behavior in edit controls and supports Culture formatting 
 platform: WindowsForms
 control: CurrencyTextbox
