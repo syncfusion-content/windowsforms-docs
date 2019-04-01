@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Styles| WindowsForms | Syncfusion
+title: Visual Styles| DateTimePicker | WindowsForms | Syncfusion
 description: visual styles
 platform: WindowsForms
 control: DateTimePicker

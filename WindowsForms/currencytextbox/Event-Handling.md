@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
+title: Event-Handling | CurrencyTextbox | WindowsForms | Syncfusion
 description: event handling
 platform: WindowsForms
 control: CurrencyTextbox
