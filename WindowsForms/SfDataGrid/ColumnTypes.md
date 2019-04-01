@@ -131,7 +131,7 @@ this.sfDataGrid1.Columns["OrderDate"].Format = "yyyy/mm/dd";
 Me.sfDataGrid1.Columns("OrderDate").Format = "yyyy/mm/dd"
 {% endhighlight %}
 {% endtabs %}
-![Image used to display the formatting value of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img1.png)
+![Winforms datagrid shows to display the formatting value of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img1.png)
 
 N> This property works only for `GridDateTimeColumn`, `GridNumericColumn` and `GridButtonColumn`.
 
@@ -226,7 +226,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the custom formatting of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img21.png)
+![Winforms datagrid shows to display the custom formatting of datetime column in datagrid windows form](ColumnTypes_images/ColumnTypes_img21.png)
 
 N> The custom format will be applied, only when the [GridColumnBase.Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Format.html) property is set for the corresponding column.
 
@@ -263,7 +263,7 @@ Me.sfDataGrid.Columns("ProductName").HeaderStyle.TextColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to apply the cell style to the columns in datagrid windows form](ColumnTypes_images/ColumnTypes_img2.png)
+![Winforms datagrid shows to apply the cell style to the columns in datagrid windows form](ColumnTypes_images/ColumnTypes_img2.png)
 
 ### Disable Column
 
@@ -352,7 +352,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discoun
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the percent format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img3.png)
+![Winforms datagrid shows to display the percent format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img3.png)
 
 #### Currency
 
@@ -372,7 +372,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the currency format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img4.png)
+![Winforms datagrid shows to display the currency format mode of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img4.png)
 
 N> By default, `GridNumericColumn` displays the record with `Numeric` format.
 
@@ -417,7 +417,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.HeaderText = "Quantity
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the number format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img5.png)
+![Winforms datagrid shows to display the number format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img5.png)
 
 #### NumberFormatInfo for Percent Formatted Column
 
@@ -458,7 +458,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "Discoun
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the percent format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img6.png)
+![Winforms datagrid shows to display the percent format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img6.png)
 
 #### NumberFormatInfo for Currency Formatted Column
 
@@ -499,7 +499,7 @@ Me.sfDataGrid1.Columns.Add(New GridNumericColumn() With {.MappingName = "UnitPri
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the currency format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img7.png)
+![Winforms datagrid shows to display the currency format of numeric column in datagrid windows form](ColumnTypes_images/ColumnTypes_img7.png)
 
 ### Displaying Null Value
 
@@ -664,7 +664,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the three state of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img8.png)
+![Winforms datagrid shows to display the three state of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img8.png)
 
 ### Text on the Check Box Column
 
@@ -679,7 +679,7 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowText = True
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img9.png)
+![Winforms datagrid shows to display the text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img9.png)
 
 ### Check Box on Header
 
@@ -694,11 +694,11 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnH
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the header text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img10.png)
+![Winforms datagrid shows to display the header text of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img10.png)
 
 All the checkboxes in a column will be checked/unchecked by clicking on the CheckBox in the header.
 
-![Image used to display the all checked/unchecked by click on the checkbox in the header in datagrid windows form](ColumnTypes_images/ColumnTypes_img22.png)
+![Winforms datagrid shows to display the all checked/unchecked by click on the checkbox in the header in datagrid windows form](ColumnTypes_images/ColumnTypes_img22.png)
 
 By default, enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn~AllowCheckBoxOnHeader.html) property will display the checkbox with text on the header cell of [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html). The text in the header cell can be disabled by setting empty value for the [HeaderText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderText.html) property of the column.
 
@@ -713,7 +713,7 @@ Me.sfDataGrid1.Columns("IsClosed").HeaderText = String.Empty
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the header text as disable of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img23.png)
+![Winforms datagrid shows to display the header text as disable of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img23.png)
 
 ### Customizing the Check Box Value
 
@@ -744,7 +744,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxColumn() With {.MappingName = "PaidSt
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the customize the value of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img11.png)
+![Winforms datagrid shows to display the customize the value of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img11.png)
 
 ### Appearance
 
@@ -783,7 +783,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the changed the appearance  of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img12.png)
+![Winforms datagrid shows to display the changed the appearance  of checkbox column in datagrid windows form](ColumnTypes_images/ColumnTypes_img12.png)
 
 #### Conditional Styling
 
@@ -816,7 +816,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the changed the appearance  of checkbox column based on the condition in datagrid windows form](ColumnTypes_images/ColumnTypes_img13.png)
+![Winforms datagrid shows to display the changed the appearance  of checkbox column based on the condition in datagrid windows form](ColumnTypes_images/ColumnTypes_img13.png)
 
 ### Canceling the check box state change
 
@@ -864,7 +864,7 @@ The SfDataGrid triggers the [CellComboBoxSelectionChanged](https://help.syncfusi
 *	[SelectedIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedIndex.html) : Returns the index of selected item.
 *	[SelectedItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs~SelectedItem.html)	: Returns the selected item from drop-down list.
 
-![Image used to display GridComboBoxColumn in datagrid windows form](ColumnTypes_images/ComboBox_img1.png)
+![Winforms datagrid shows to display GridComboBoxColumn in datagrid windows form](ColumnTypes_images/ComboBox_img1.png)
 
 ### Opening drop-down popup on single-click
 Drop-down of the combo-box column can be shown on single click by using the custom combo-box renderer. 
@@ -911,7 +911,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the customizing groupcaptiontext based on the displaymemberpath in datagrid windows form](ColumnTypes_images/ComboBox_img2.png)
+![Winforms datagrid shows to display the customizing groupcaptiontext based on the displaymemberpath in datagrid windows form](ColumnTypes_images/ComboBox_img2.png)
 
 ### Loading different DataSources for each row of GridComboBoxColumn
 Different data sources can be loaded for each row of the [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn.html) by using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~IDataSourceSelector.html) property.
@@ -980,9 +980,9 @@ End Class
 
 Following screenshot illustrates the different `Ship City` DataSource bound to each row of the ComboBox column based on the `Ship Country` Name.
 
-![Image used to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img3.png)
+![Winforms datagrid shows to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img3.png)
 
-![Image used to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img4.png)
+![Winforms datagrid shows to display the different data source in checkbox column in datagrid windows form](ColumnTypes_images/ComboBox_img4.png)
 
 ### Editing the combo box
 By default, the combo-box column is not allowed to edit the values. This can be changed by setting the [GridComboBoxColumn.DropDownStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DropDownStyle.html) as `DropDown` to edit the values by using the text box.
@@ -996,7 +996,7 @@ sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to apply the edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img5.png)
+![Winforms datagrid shows to apply the edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img5.png)
 
 ### Auto completing on edit mode
 The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoCompleteMode.html) property. Default value is `None`. Following types of auto complete modes are available,
@@ -1019,7 +1019,7 @@ comboBoxColumn.AutoCompleteMode = AutoCompleteMode.Suggest
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to apply the auto completing on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img6.png)
+![Winforms datagrid shows to apply the auto completing on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img6.png)
 
 ### Auto suggesting on edit mode
 By default, auto suggestion in the dropdown will display the value based on the `Starts with` filter condition. This can be changed to retrieve the matches with the Contains condition by using the [AutoSuggestionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestMode.html) property. You can also set delay for auto suggestion by using the [AutoSuggestDelay](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~AutoSuggestDelay.html) property.
@@ -1041,7 +1041,7 @@ comboBoxColumn.AutoSuggestDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to apply the auto suggesting on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img7.png)
+![Winforms datagrid shows to apply the auto suggesting on edit mode of combobox column in datagrid windows form](ColumnTypes_images/ComboBox_img7.png)
 
 ## GridButtonColumn
 
@@ -1060,7 +1060,7 @@ Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductN
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the column data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img14.png)
+![Winforms datagrid shows to display the column data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img14.png)
 
 ### Default Text for the Buttons
 
@@ -1077,7 +1077,7 @@ TryCast(Me.sfDataGrid1.Columns("ProductName"), GridButtonColumn).DefaultButtonTe
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the default data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img15.png)
+![Winforms datagrid shows to display the default data as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img15.png)
 
 ### Adding Image for the Button Column
 
@@ -1116,7 +1116,7 @@ The text and image within the [GridButtonColumn](https://help.syncfusion.com/cr/
   Me.sfDataGrid1.Columns.Add(New GridButtonColumn() With {.MappingName = "ProductName", .HeaderText = "Product Name", .Image = SystemIcons.Information.ToBitmap(), .ImageSize = New Size(16, 16), .TextImageRelation = TextImageRelation.ImageBeforeText})
 {% endhighlight %}
 {% endtabs %}
-![Image used to display the column data and images as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img16.png)
+![Winforms datagrid shows to display the column data and images as button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img16.png)
 
 ### Appearance
 
@@ -1137,7 +1137,7 @@ Me.sfDataGrid1.Style.ButtonStyle.BorderColor = Pens.DarkRed
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the customize the appearance of button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img17.png)
+![Winforms datagrid shows to display the customize the appearance of button column in datagrid windows form](ColumnTypes_images/ColumnTypes_img17.png)
 
 ### Deleting the selected records by button click
 
@@ -1214,7 +1214,7 @@ Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the customize the appearance of hyperlink column in datagrid windows form](ColumnTypes_images/ColumnTypes_img18.png)
+![Winforms datagrid shows to display the customize the appearance of hyperlink column in datagrid windows form](ColumnTypes_images/ColumnTypes_img18.png)
 
 ### Canceling the Navigation
 
@@ -1397,7 +1397,385 @@ Private Sub SfDataGrid1_QueryImageCellStyle(ByVal sender As Object, ByVal e As Q
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![Image used to display the customize the appearance of image column in datagrid windows form](ColumnTypes_images/ColumnTypes_img19.png)
+![Winforms datagrid shows to display the customize the appearance of image column in datagrid windows form](ColumnTypes_images/ColumnTypes_img19.png)
+
+## GridProgressBarColumn
+
+[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html) provides support to display non-editable integer type data.
+
+#### Changing boundary values of progress
+
+You can change the boundary values of ProgressBar using the `Maximum` and `Minimum` properties.
+
+Maximum - Specifies the maximum value of progress bar.
+
+Minimum - Specifies the minimum value of progress bar.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Columns.Add(new GridProgressBarColumn() { MappingName = "SoftwareProficiency", HeaderText = "Software Proficiency", Maximum = 100, Minimum = 0, ValueMode = ProgressBarValueMode.Percentage });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Columns.Add(New GridProgressBarColumn() With {.MappingName = "SoftwareProficiency", .HeaderText = "Software Proficiency", .Maximum = 100, .Minimum = 0, .ValueMode = ProgressBarValueMode.Percentage})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows with ProgressBar column](ColumnTypes_images/ColumnTypes_img24.png)
+
+#### Changing progress value mode
+
+You can change the value mode of ProgressBar using the [ValueMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn~ValueMode.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Columns.Add(new GridProgressBarColumn() { MappingName = "SoftwareProficiency", HeaderText = "Software Proficiency", Maximum = 100, Minimum = 0, ValueMode = ProgressBarValueMode.Value });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Columns.Add(New GridProgressBarColumn() With {.MappingName = "SoftwareProficiency", .HeaderText = "Software Proficiency", .Maximum = 100, .Minimum = 0, .ValueMode = ProgressBarValueMode.Value })
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the ProgressBar value mode as Value](ColumnTypes_images/ColumnTypes_img25.png)
+
+### Appearance
+
+#### Background
+
+The background color can be set by using the `BackgroundColor` property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.BackgroundColor = Color.DarkGray;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.BackgroundColor = Color.DarkGray
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the ProgressBar BackgroundColor](ColumnTypes_images/ColumnTypes_img26.png)
+
+#### Foreground
+
+The font color and the foreground color can be set by using the [ForegroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~ForegroundColor.html) property.
+
+ForegroundColor - Specifies the color used to draw the foreground in segment mode and constant mode.
+
+TextColor - Specifies the color of the font used to draw the text of the ProgressBar.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.TextColor = Color.Red;
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundColor = Color.LightGoldenrodYellow;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.TextColor = Color.Red
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundColor = Color.LightGoldenrodYellow
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the ProgressBar ForegroundColor and TextColor](ColumnTypes_images/ColumnTypes_img27.png)
+
+### Gradient appearance
+
+#### Gradient background
+
+The color of the background gradient can be changed using the following properties:
+
+[GradientBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundStartColor.html) - Specifies the start color of the background gradient.The [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarInfo~BackgroundStyle.html)  property should be set to `Gradient`.
+
+[GradientBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientBackgroundEndColor.html) - Specifies the end color of the background gradient. The `BackgroundStyle` property should be set to 'Gradient' .
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.BackgroundStyle =  GridProgressBarStyle.Gradient;
+this.sfDataGrid.Style.ProgressBarStyle.GradientBackgroundStartColor = Color.GreenYellow;
+this.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.DarkGray;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.BackgroundStyle = GridProgressBarStyle.Gradient
+Me.sfDataGrid.Style.ProgressBarStyle.GradientBackgroundStartColor = Color.GreenYellow
+Me.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.DarkGray
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows background gradient appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img28.png)
+
+#### Gradient foreground
+
+The color of the foreground gradient can be changed by using the following properties:
+
+[GradientForegroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundStartColor.html) -  Specifies the start color of the foreground gradient. The [ForegroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~ForegroundStyle.html) property should be set to `Gradient`.
+
+[GradientForegroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~GradientForegroundEndColor.html) - Specifies the end color of the foreground gradient. The `ForegroundStyle` property should be set to `Gradient`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Gradient;
+this.sfDataGrid.Style.ProgressBarStyle.GradientForegroundStartColor = Color.Yellow;
+this.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.Blue;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Gradient
+Me.sfDataGrid.Style.ProgressBarStyle.GradientForegroundStartColor = Color.Yellow
+Me.sfDataGrid.Style.ProgressBarStyle.GradientForegroundEndColor = Color.Blue
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows foreground gradient appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img29.png)
+
+### Tube appearance
+
+Colors can be set to the background tube of the ProgressBar column.
+
+#### Tube background
+
+[TubeBackgroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundStartColor.html) - Specifies the start color of the background tube. The `BackgroundStyle` property should be set to `Tube`.
+
+[TubeBackgroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeBackgroundEndColor.html) - Specifies the end color of the background tube. The`BackgroundStyle` property should be set to `Tube`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.BackgroundStyle =  GridProgressBarStyle.Tube;
+this.sfDataGrid.Style.ProgressBarStyle.TubeBackgroundStartColor = Color.YellowGreen;
+this.sfDataGrid.Style.ProgressBarStyle.TubeBackgroundEndColor = Color.White;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.BackgroundStyle = GridProgressBarStyle.Tube
+Me.sfDataGrid.Style.ProgressBarStyle.TubeBackgroundStartColor = Color.YellowGreen
+Me.sfDataGrid.Style.ProgressBarStyle.TubeBackgroundEndColor = Color.White
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows background tube appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img30.png)
+
+#### Tube foreground
+
+Colors can be set for the foreground tube of the ProgressBar.
+
+[TubeForegroundStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeForegroundStartColor.html) - Specifies the start color of the foreground tube.The `ForegroundStyle` property should be set to `Tube`.
+
+[TubeForegroundEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~TubeForegroundStartColor.html) - Specifies the end color of the foreground tube.The `ForegroundStyle` property should be set to `Tube`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Tube;
+this.sfDataGrid.Style.ProgressBarStyle.TubeForegroundStartColor = Color.LightGray;
+this.sfDataGrid.Style.ProgressBarStyle.TubeForegroundEndColor = Color.Turquoise;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Tube
+Me.sfDataGrid.Style.ProgressBarStyle.TubeForegroundStartColor = Color.LightGray
+Me.sfDataGrid.Style.ProgressBarStyle.TubeForegroundEndColor = Color.Turquoise
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows foreground tube appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img31.png)
+
+
+### Segment appearance
+
+#### Segmented background
+
+The background of the ProgressBar column can be displayed with a segmented appearance by using the property given below.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.AllowBackgroundSegments = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.AllowBackgroundSegments = True
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows background segment appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img32.png)
+
+#### Segmented foreground
+
+The foreground of the ProgressBar column can be displayed with a segmented appearance by using the [AllowForegroundSegments](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~AllowForegroundSegments.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.AllowForegroundSegments =true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.AllowForegroundSegments =True
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows foreground segment appearance of the ProgressBar](ColumnTypes_images/ColumnTypes_img33.png)
+
+### Changing alignment of text
+
+Progressbar allows to change the alignment of text. Progressbar supports the following list of alignment options:
+
+<table>
+<tr>
+<td>
+{{'**Alignment**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Center
+</td>
+<td>
+The text on the progress bar can be set to Center using the `TextAlignment` property. This is the default text alignment. The `ValueMode` property should be set to `Percentage` or `Value`.
+</td>
+</tr>
+<tr>
+<td>
+Left
+</td>
+<td>
+The text on the progress bar can be set to left using the `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value.
+</td>
+</tr>
+<tr>
+<td>
+Right
+</td>
+<td>
+The text on the progress bar can be set to right using the `TextAlignment` property. The `ValueMode` property should be set to `Percentage` or `Value`.
+</td>
+</tr>
+</table>
+
+The following code sample demonstrates how to apply the text alignment style to left.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows TextAlignment as left of the ProgressBar](ColumnTypes_images/ColumnTypes_img34.png)
+
+### Changing orientation
+
+Progressbar allows to change the orientation of text. Progressbar contains the following list of orientation options:
+
+<table>
+<tr>
+<td>
+{{'**Orientation**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Horizontal
+</td>
+<td>
+The direction of display of the ProgressBar can be changed to `Horizontal` using the following given property. In this case, direction of the text is also changed.
+</td>
+</tr>
+<tr>
+<td>
+Vertical
+</td>
+<td>
+The direction of display of the ProgressBar can be changed to `Vertical` using the following property. In this case, the direction of the text is also changed.
+</td>
+</tr>
+</table>
+
+The following code sample demonstrates how to apply the progress orientation style to vertical.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Style.ProgressBarStyle.Orientation = Orientation.Vertical;
+this.sfDataGrid.RowHeight = 50;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Style.ProgressBarStyle.Orientation = Orientation.Vertical
+Me.sfDataGrid.RowHeight = 50
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows progress orientation as Vertical of the ProgressBar](ColumnTypes_images/ColumnTypes_img37.png)
+
+### Add image in progress bar
+
+The `ForegroundStyle` is set to `Image` style, then the foreground image can be specified using the following given property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowHeight = 50;
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Image;
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundImage = (Bitmap)Image.FromFile(@"cloud.jpg");
+this.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = false;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.RowHeight = 50
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Image
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundImage = CType(Image.FromFile("cloud.jpg"), Bitmap)
+Me.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = false
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows progress image of the ProgressBar](ColumnTypes_images/ColumnTypes_img38.png)
+
+#### Fit image to progress
+
+Image can be fit to the `ForegroundStyle` to enable the [FitImageToProgressBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.ProgressBarCellStyleInfo~FitImageToProgressBar.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowHeight = 50;
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Image;
+this.sfDataGrid.Style.ProgressBarStyle.ForegroundImage = (Bitmap)Image.FromFile(@"cloud.jpg");
+this.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = true;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.RowHeight = 50
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundStyle = GridProgressBarStyle.Image
+Me.sfDataGrid.Style.ProgressBarStyle.ForegroundImage = CType(Image.FromFile("cloud.jpg"), Bitmap)
+Me.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = true
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows progress image in fit of the ProgressBar](ColumnTypes_images/ColumnTypes_img39.png)
+
+### Conditional styling
+
+SfDataGrid allows to customize the appearance of the ProgressBar column based on conditions using the [QueryProgressBarCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryProgressBarCellStyle_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.QueryProgressBarCellStyle += SfDataGrid_QueryProgressBarCellStyle;
+
+private void SfDataGrid_QueryProgressBarCellStyle(object sender, QueryProgressBarCellStyleEventArgs e)
+{
+if (e.ColumnIndex == 10 && e.RowIndex % 2 == 0)
+{
+e.Style.TextColor = Color.Blue;
+e.Style.ForegroundColor = Color.Yellow;
+e.Style.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
+}
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.QueryProgressBarCellStyle += AddressOf SfDataGrid_QueryProgressBarCellStyle
+
+Private Sub SfDataGrid_QueryProgressBarCellStyle(ByVal sender As Object, ByVal e As QueryProgressBarCellStyleEventArgs)
+If e.ColumnIndex = 10 AndAlso e.RowIndex Mod 2 = 0 Then
+e.Style.TextColor = Color.Blue
+e.Style.ForegroundColor = Color.Yellow
+e.Style.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
+End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows cell conditional styling of the ProgressBar](ColumnTypes_images/ColumnTypes_img40.png)
 
 ## GridMultiSelectComboBoxColumn
 

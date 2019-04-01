@@ -137,6 +137,7 @@ Fixed
 Sets the default height specified by the PreviewRowHeight property.
 </td>
 </tr>
+</table>
 
 ## Appearance 
 
@@ -324,4 +325,3 @@ End Sub
 1.	Does not support both details view and preview rows at same level.
 2.  Does not support the `QueryRowHeight` event.
 3.  Does not support freeze columns with the preview rows.
-
