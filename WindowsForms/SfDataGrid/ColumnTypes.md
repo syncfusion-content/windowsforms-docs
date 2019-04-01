@@ -1606,6 +1606,8 @@ Me.sfDataGrid.Style.ProgressBarStyle.AllowForegroundSegments =True
 
 ### Changing alignment of text
 
+Progressbar allows to change the alignment of text. Below is the list of alignment options available.
+
 <table>
 <tr>
 <td>
@@ -1641,7 +1643,7 @@ The text on the progress bar can be set to right by using `TextAlignment` proper
 </tr>
 </table>
 
-#### Left Alignment
+Below code, applies the text alignment style as left,
 
 {% tabs %}
 {% highlight c# %}
@@ -1656,6 +1658,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.TextAlignment = Syncfusion.Windows.Forms.To
 
 ### Changing orientation
 
+Progressbar allows to change the orientation of text. Below is the list of orientation options available.
 
 <table>
 <tr>
@@ -1684,7 +1687,7 @@ The direction of display of the ProgressBar can be changed as `Vertical` by usin
 </tr>
 </table>
 
-#### Vertical orientation
+Below code, applies the progress orientation style as vertical,
 
 {% tabs %}
 {% highlight c# %}
