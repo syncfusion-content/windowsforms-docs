@@ -109,6 +109,28 @@ Use to display the Uri data
 Use to display button in each row
 </td>
 </tr>
+<tr>
+<td>
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display progressbar in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display multi select combobox in each row
+</td>
+</tr>
 </table>
 
 ## GridColumn
