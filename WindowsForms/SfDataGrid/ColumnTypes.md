@@ -109,6 +109,28 @@ Use to display the Uri data
 Use to display button in each row
 </td>
 </tr>
+<tr>
+<td>
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display progressbar in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+</td>
+<td>
+{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+</td>
+<td>
+Use to display multi select combobox in each row
+</td>
+</tr>
 </table>
 
 ## GridColumn
@@ -1776,6 +1798,122 @@ End Sub
 {% endtabs %}
 
 ![Winforms datagrid shows cell conditional styling of the ProgressBar](ColumnTypes_images/ColumnTypes_img40.png)
+
+## GridMultiSelectComboBoxColumn
+
+[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)  is derived from the GridColumn that hosts SfComboBox as an edit element. Data source to the combo box can be set using the [GridMultiSelectComboBoxColumn.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~DataSource.html) property.
+By default, GridMultiSelectComboBoxColumn displays values using the [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) property. You can set [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) that denotes the string to be displayed in the cell (to serve as visual representation of object). You can set [ValueMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~ValueMember.html) that denotes string from the object data source that acts as a value for that cell to get the SelectedValue from the SelectedItem.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMultiSelectComboBoxColumn() { MappingName = "Products", HeaderText = "Products", DisplayMember = "ProductName", ValueMember = "ProductName", DataSource = orderInfo.ProductDetails });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingName = "Products", .HeaderText = "Products", .DisplayMember = "ProductName", .ValueMember = "ProductName", .DataSource = orderInfo.ProductDetails})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img41.png)
+
+### Opening drop-down popup on single-click
+
+The drop-down of the MultiSelectComboBox column can be shown on single click by enabling [StaysOpenOnEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~StaysOpenOnEdit.html).
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMultiSelectComboBoxColumn() { MappingName = "Products", HeaderText = "Products", DisplayMember = "ProductName", ValueMember = "ProductName", DataSource = orderInfo.ProductDetails, StaysOpenOnEdit = true });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingName = "Products", .HeaderText = "Products", .DisplayMember = "ProductName", .ValueMember = "ProductName", .DataSource = orderInfo.ProductDetails, .StaysOpenOnEdit = True})
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing GroupCaptionText based on DisplayMember
+
+By default, the group caption text will be displayed based on  [MappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~MappingName.html) of multi select combo box column. This can be changed to display the [DisplayMember](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridComboBoxColumn~DisplayMember.html) using the [GroupMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~GroupMode.html) property of column.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMultiSelectComboBoxColumn() { MappingName = "Products", HeaderText = "Products", DisplayMember = "ProductName", ValueMember = "ProductName", DataSource = orderInfo.ProductDetails, GroupMode = Syncfusion.Data.DataReflectionMode.Display });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingName = "Products", .HeaderText = "Products", .DisplayMember = "ProductName", .ValueMember = "ProductName", .DataSource = orderInfo.ProductDetails, .GroupMode = Syncfusion.Data.DataReflectionMode.Display})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows to customizing GroupCaptionText based on DisplayMember](ColumnTypes_images/ColumnTypes_img42.png)
+
+## Loading different DataSources for each row
+
+Different data sources can be loaded to each row of [GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)  using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) property.
+
+### Implementing IDataSourceSelector
+
+`DataSourceSelector` needs to implement [IDataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) interface to implement the GetDataSource method that receives the following parameters:
+•	Record – Data object associated with row.
+•	DataSource – Data context of data grid.
+
+In the following code, DataSource of the `ShipCity` column is returned based on the`ShipCountry` column value using the record and the data context of SfDataGrid passed to the `GetDataSource` method.
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridMultiSelectComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new DataSourceSelector()});
+
+public class DataSourceSelector : IDataSourceSelector
+{
+    public IEnumerable GetDataSource(object record, object dataSource)
+    {
+        if (record == null)
+            return null;
+
+        var orderInfo = record as OrderDetails;
+        var countryName = orderInfo.ShipCountry;
+
+        var countryDetails = new CountryInfoRepository();
+
+        //Returns ShipCity collection based on ShipCountry.
+        if (countryDetails.ShipCities.ContainsKey(countryName))
+        {
+            ObservableCollection<ShipCityDetails> shipCities = null;
+            countryDetails.ShipCities.TryGetValue(countryName, out shipCities);
+            return shipCities.ToList();
+        }
+        return null;
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New DataSourceSelector()})
+
+Public Class DataSourceSelector
+	Implements IDataSourceSelector
+	Public Function GetDataSource(ByVal record As Object, ByVal dataSource As Object) As IEnumerable
+		If record Is Nothing Then
+			Return Nothing
+		End If
+
+		Dim orderInfo = TryCast(record, OrderDetails)
+		Dim countryName = orderInfo.ShipCountry
+
+		Dim countryDetails = New CountryInfoRepository()
+
+		'Returns ShipCity collection based on ShipCountry.
+		If countryDetails.ShipCities.ContainsKey(countryName) Then
+			Dim shipCities As ObservableCollection(Of ShipCityDetails) = Nothing
+			countryDetails.ShipCities.TryGetValue(countryName, shipCities)
+			Return shipCities.ToList()
+		End If
+		Return Nothing
+	End Function
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the different `ShipCity` DataSource bound to each row of the multi select combo box column based on the `ShipCountry` Name.
+
+![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
+
+![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
 
 ## Custom Column Support
 
