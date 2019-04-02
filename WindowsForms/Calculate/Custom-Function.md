@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Function
+title: Custom Function | Calculate | Syncfusion
 description: Describes how to about add and remove the user defined function 
 platform: windowsforms
 control: Calculate

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Parse and Compute
+title: Parse and Compute | Calculate | Syncfusion
 description: Explains about the parsing and computing methods in Calculate.
 platform: windowsforms
 control: Calculate

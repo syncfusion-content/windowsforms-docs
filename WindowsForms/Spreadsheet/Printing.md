@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing
+title: Printing | Spreadsheet | Syncfusion
 description: How to print the workbook in Spreadsheet
 platform: windowsforms
 control: Spreadsheet

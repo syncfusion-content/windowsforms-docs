@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with CalcEngine
+title: Working with CalcEngine | Calculate | Syncfusion
 description: Description about properties, methods maintained in CalcEngine
 platform: windowsforms
 control: Calculate

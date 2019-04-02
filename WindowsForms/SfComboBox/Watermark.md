@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark
+title: Watermark | SfComboBox | Syncfusion
 description: This section explains about the Watermark support in SfComboBox.
 platform: windowsforms
 control: SfComboBox

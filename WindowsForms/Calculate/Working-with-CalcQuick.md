@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with CalcQuickBase
+title: Working with CalcQuickBase | Calculate | Syncfusion
 description: Explains about the computation with CalcQuickBase
 platform: windowsforms
 control: Calculate

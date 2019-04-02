@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection
+title: Selection | SfComboBox | Syncfusion
 description: This section explains about the selection in SfComboBox.
 platform: windowsforms
 control: SfComboBox

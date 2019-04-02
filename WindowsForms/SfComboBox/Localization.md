@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization | SfComboBox | Syncfusion
 description: This section explains about the Localization support in SfComboBox.
 platform: windowsforms
 control: SfComboBox

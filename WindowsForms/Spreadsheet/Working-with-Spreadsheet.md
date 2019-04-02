@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Spreadsheet
+title: Working with Spreadsheet | Spreadsheet | Syncfusion
 description: How to access the worksheet and grid in Spreadsheet.
 platform: windowsforms
 control: Spreadsheet
