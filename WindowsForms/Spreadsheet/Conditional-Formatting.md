@@ -108,7 +108,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
+![Formatting based on time](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
 
 ## Data Bars
 
@@ -133,7 +133,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
+![Appearance with data bars](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
 ## Color Scales
 
@@ -158,7 +158,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
+![Formatting using color gradient](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 
 ## Icon Sets
@@ -182,4 +182,4 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)
+![Formatting with icons](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)

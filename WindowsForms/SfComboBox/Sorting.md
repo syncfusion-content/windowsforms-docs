@@ -28,4 +28,4 @@ sfComboBox1.DropDownListView.View.SortDescriptors.Add(New Syncfusion.DataSource.
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img1.png)
+![Sorted items of the drop-down](Sorting_images/Sorting_img1.png)

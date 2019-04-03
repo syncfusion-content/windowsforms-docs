@@ -22,7 +22,7 @@ sfComboBox1.MaxDropDownItems = 4
 {% endhighlight %}
 {% endtabs %}
 
-![](DropDown_images/DropDown_img1.png)
+![Maximum number of items in drop-down](DropDown_images/DropDown_img1.png)
 
 ## Disabling the drop-down resizing
 
@@ -37,7 +37,7 @@ sfComboBox1.AllowDropDownResize = False
 {% endhighlight %}
 {% endtabs %}
 
-![](DropDown_images/DropDown_img2.png)
+![Drop-Down size as fixed](DropDown_images/DropDown_img2.png)
 
 ## Cancel the drop-down opening
 
@@ -355,7 +355,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](DropDown_images/DropDown_img3.png)
+![Adding custom control in drop-down](DropDown_images/DropDown_img3.png)
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection

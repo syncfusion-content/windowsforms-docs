@@ -22,7 +22,7 @@ sfComboBox1.DropDownListView.ItemHeight = 40
 {% endhighlight %}
 {% endtabs %}
 
-![](ItemHeight_images/ItemHeight_img1.png)
+![default height for drop-down items](ItemHeight_images/ItemHeight_img1.png)
 
 ## Auto fit the items based on content
 
@@ -75,4 +75,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ItemHeight_images/ItemHeight_img2.png)
+![customizing height for particular items](ItemHeight_images/ItemHeight_img2.png)
