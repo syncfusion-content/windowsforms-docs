@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting | SfComboBox | Syncfusion
-description: This section explains about the sorting support in SfComboBox.
+title: Sorting behaviors | SfComboBox | windowsforms/Syncfusion
+description: This section explains about how the sorting of the drop-down items works in SfComboBox for essential studio windowsforms
 platform: windowsforms
 control: SfComboBox
 documentation: ug

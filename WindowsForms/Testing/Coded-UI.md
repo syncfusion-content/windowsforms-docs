@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coded UI Testing | Windows Forms |Syncfusion
-description: This section explains about the spreadsheet control for windows forms and it's important key features
+description: This section expalins the basic steps to test the controls using CodedUI for Syncfusion Essential Studio windows forms
 platform: WindowsForms
 control: Coded UI
 documentation: ug

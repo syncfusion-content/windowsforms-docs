@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drop-Down | SfComboBox | Syncfusion
-description: This section explains about the Drop-Down in SfComboBox.
+title: Drop Down container of SfComboBox| SfComboBox | Syncfusion
+description: This section explains about the Drop-Down styles of SfComboBox and the options to customize it based on user requirement for windowsforms/Syncfusion
 platform: windowsforms
 control: SfComboBox
 documentation: ug

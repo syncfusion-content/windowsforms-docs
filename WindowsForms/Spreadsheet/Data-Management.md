@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Management in Spreadsheet
-description: How to import and export the data in Spreadsheet
+description: This section explains that how to import and export the data in Spreadsheet for windowsforms/syncfusion
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

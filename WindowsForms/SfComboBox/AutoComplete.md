@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Complete | SfComboBox | Syncfusion
-description: This section explains about the auto complete support in SfComboBox.
+description: This section provides a basic idea that how the auto complete options works in SfComboBox for Syncfusion essential windows forms
 platform: windowsforms
 control: SfComboBox
 documentation: ug

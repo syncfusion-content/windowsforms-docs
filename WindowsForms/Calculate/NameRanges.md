@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Named Ranges
-description: Description about the named ranges support in Essential Calculate
+title: Named Ranges | Calculate | windowsforms/Syncfusion
+description: This section provides the basic idea to use the named ranges for calculate in Syncfusion essential windowsforms
 platform: windowsforms
 control: Calculate
 documentation: ug

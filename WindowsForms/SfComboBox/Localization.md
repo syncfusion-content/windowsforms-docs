@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfComboBox | Syncfusion
-description: This section explains about the Localization support in SfComboBox.
+description: This section provides a basic idea to change the culture/Localize the default strings in SfComboBox for essential windowsforms
 platform: windowsforms
 control: SfComboBox
 documentation: ug
