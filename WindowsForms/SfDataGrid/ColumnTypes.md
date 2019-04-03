@@ -2149,7 +2149,7 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 
 ### Creating new column and renderer
 
-You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html)and new cell renderer by overriding the predefined renderer in SfDataGrid.
+You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer by overriding the predefined renderer in SfDataGrid.
 
 #### Creating custom column
 
