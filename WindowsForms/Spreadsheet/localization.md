@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Spreadsheet
+title: Localization in Spreadsheet | Spreadsheet | Syncfusion
 description: This section explains that how to localize the default strings in Spreadsheet to any language settings for windowsforms/Syncfusion
 platform: windowsforms
 control: Spreadsheet

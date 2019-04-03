@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview of Syncfusion AutoComplete for Windows forms
-description: This section provides an overview and key features of AutoComplete for Syncfusion Essential windows forms
-platform: A quick go through about the AutoComplete which provides the auto complete functionality for all editor controls.
+description: A quick go through about the AutoComplete which provides the auto complete functionality for all editor controls.
+platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---

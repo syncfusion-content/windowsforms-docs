@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in Spreadsheet
+title: Formatting in Spreadsheet | Spreadsheet | Syncfusion
 description: This section explains that how to apply the styles and formats in Spreadsheet for windowsforms/Syncfusion
 platform: windowsforms
 control: Spreadsheet

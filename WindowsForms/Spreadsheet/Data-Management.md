@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Management in Spreadsheet
+title: Data Management in Spreadsheet | Spreadsheet | Syncfusion
 description: This section explains that how to import and export the data in Spreadsheet for windowsforms/syncfusion
 platform: windowsforms
 control: Spreadsheet

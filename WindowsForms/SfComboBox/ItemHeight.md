@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemHeight
+title: ItemHeight | SfComboBox | Syncfusion
 description: This section explains about the customizable options to change the drop-down items height of SfComboBox for windowsforms/Syncfusion
 platform: windowsforms
 control: SfComboBox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Spreadsheet
+title: Overview of Spreadsheet | Spreadsheet | Syncfusion
 description: This section provides an overview about spreadsheet and it's important key features for Syncfusion essential windows forms
 platform: windowsforms
 control: Spreadsheet

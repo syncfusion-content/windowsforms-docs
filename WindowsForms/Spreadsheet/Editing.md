@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Editing behavior in Spreadsheet
+title:  Editing behavior in Spreadsheet | Spreadsheet | Syncfusion
 description: This section provides an basic ideas of Editing behavior in Spreadsheet for windowsforms/Syncfusion.
 platform: windowsforms
 control: Spreadsheet

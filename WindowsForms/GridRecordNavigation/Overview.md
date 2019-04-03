@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms | GridRecordNavigationControl | windowsforms/syncfusion
+title: Overview | GridRecordNavigationControl | Syncfusion
 description: This section provides an overview of GridRecordNavigationControl and it's key features for essential windowsforms/syncfusion.
 platform: windowsforms
 control: GridRecordNavigationControl
