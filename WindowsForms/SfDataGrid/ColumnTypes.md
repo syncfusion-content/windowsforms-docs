@@ -2145,15 +2145,15 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms datagrid shows to display the custom column by using the custom renderer](ColumnTypes_images/ColumnTypes_img20.png)
+![Winforms datagrid displays the custom column using the custom renderer](ColumnTypes_images/ColumnTypes_img20.png)
 
 ### Creating new column and renderer
 
-You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer can be created by overriding the predefined renderer in SfDataGrid.
+You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html)and new cell renderer by overriding the predefined renderer in SfDataGrid.
 
 #### Creating custom column
 
-You can create custom column by overriding a new class from `GridColumn` class.
+You can create a custom column by overriding a new class from the `GridColumn` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -2195,12 +2195,12 @@ End Class
 
 #### Creating renderer
 
-After creating custom column, you need to create renderer for the custom column. You can create custom renderer either by deriving [GridCellRendererBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html) class .
+After creating a custom column, you need to create renderer for the custom column. You can create custom renderer by deriving the [GridCellRendererBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html) class.
 
 {% tabs %}
 {% highlight c# %}
 /// <summary>
-/// Represents the class that used for drawing the spark line cell.
+/// Represents a class that used for drawing the spark line cell.
 /// </summary>
 public class GridSparklineCellRenderer : GridCellRendererBase
 {
@@ -2217,17 +2217,17 @@ public GridSparklineCellRenderer(Syncfusion.Windows.Forms.Chart.SparkLine sparkl
 }
        
 /// <summary>
-/// Gets or Sets to specifies the datagrid.
+/// Gets or sets to specify the datagrid.
 /// </summary>
 protected SfDataGrid DataGrid { get; set; }
 
 /// <summary>
-/// Gets the Sparkline control used to draw the SparkLine.
+/// Gets the sparkline control used to draw the sparkline.
 /// </summary>
 protected SparkLine Sparkline { get; set; }
 
 ///<summary>
-///Renders the line type Sparkline.
+///Renders the line type sparkline.
 ///</summary>
 ///<param name="graphics">The <see cref="System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
 ///<param name="sparkline">The Sparkline.</param>
@@ -2286,7 +2286,7 @@ public void DrawSparkline(Graphics graphics, Syncfusion.Windows.Forms.Chart.Spar
 }
 
 /// <summary>
-/// Overridden to draw the spark line of the cell.
+/// Override to draw the spark line of the cell.
 /// </summary>
 /// <param name="graphics">The <see cref="T:System.Drawing.Graphics"/> that used to draw the spark line.</param>
 /// <param name="cellRect">The cell rectangle.</param>
@@ -2330,7 +2330,7 @@ protected override void OnRender(Graphics graphics, Rectangle cellRect, string c
 }
 
 /// <summary>
-/// Occurs when the key is pressed while the cell has focus.
+/// Occurs when a key is pressed while the cell has focus.
 /// </summary>
 /// <param name="dataColumn">The DataColumnBase of the cell.</param>
 /// <param name="rowColumnIndex">The row and column index of the cell.</param>
@@ -2359,7 +2359,7 @@ protected override void OnKeyDown(DataColumnBase dataColumn, RowColumnIndex rowC
 }
 
 /// <summary>
-/// Get data to the sparkline column.
+/// Gets data to the sparkline column.
 /// </summary>
 /// <param name="mappingName">The mapping name of the column.</param>
 /// <param name="record">Data of the SparkLine.</param>
@@ -2373,7 +2373,7 @@ private double[] GetSparklineSource(string mappingName, object record)
 {% endhighlight %}
 {% highlight vb %}
 ''' <summary>
-''' Represents the class that used for drawing the spark line cell.
+''' Represents a class used for drawing the sparkline cell.
 ''' </summary>
 Public Class GridSparklineCellRenderer
 	Inherits GridCellRendererBase
@@ -2389,17 +2389,17 @@ Public Sub New(ByVal sparkline As Syncfusion.Windows.Forms.Chart.SparkLine, ByVa
 End Sub
 
 ''' <summary>
-''' Gets or Sets to specifies the datagrid.
+''' Gets or sets to specify the datagrid.
 ''' </summary>
 Protected Property DataGrid() As SfDataGrid
 
 ''' <summary>
-''' Gets the Sparkline control used to draw the SparkLine.
+''' Gets the sparkline control used to draw the sparkline.
 ''' </summary>
 Protected Property Sparkline() As SparkLine
 
 '''<summary>
-'''Renders the line type Sparkline.
+'''Renders the line type sparkline.
 '''</summary>
 '''<param name="graphics">The <see cref="System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
 '''<param name="sparkline">The Sparkline.</param>
@@ -2462,7 +2462,7 @@ Public Sub DrawSparkline(ByVal graphics As Graphics, ByVal sparkline As Syncfusi
 End Sub
 
 ''' <summary>
-''' Overridden to draw the spark line of the cell.
+''' Overrides to draw the sparkline of the cell.
 ''' </summary>
 ''' <param name="graphics">The <see cref="T:System.Drawing.Graphics"/> that used to draw the spark line.</param>
 ''' <param name="cellRect">The cell rectangle.</param>
@@ -2523,7 +2523,7 @@ Protected Overrides Sub OnKeyDown(ByVal dataColumn As DataColumnBase, ByVal rowC
 End Sub
 
 ''' <summary>
-''' Get data to the sparkline column.
+''' Gets data to the sparkline column.
 ''' </summary>
 ''' <param name="mappingName">The mapping name of the column.</param>
 ''' <param name="record">Data of the SparkLine.</param>
@@ -2538,7 +2538,7 @@ End Function
 
 #### Adding the custom renderer to CellRenderers collection
 
-By below code, you can add the previous created custom renderer to [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererCollection.html) collection.
+By using the following code, you can add the previous created custom renderer to the [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererCollection.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -2551,7 +2551,7 @@ Me.sfDataGrid1.CellRenderers.Add("Sparkline", New GridSparklineCellRenderer(New 
 
 #### Loading custom column
 
-By below code, you can define the custom column in SfDataGrid.
+By using the following code, you can define the custom column in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
