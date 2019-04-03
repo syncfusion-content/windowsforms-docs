@@ -2149,7 +2149,7 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 
 ### Creating new column and renderer
 
-You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) . New column renderer can be created by overriding the predefined renderer  in SfDataGrid.
+You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer can be created by overriding the predefined renderer in SfDataGrid.
 
 #### Creating custom column
 
@@ -2538,7 +2538,7 @@ End Function
 
 #### Adding the custom renderer to CellRenderers collection
 
-you can add the previous created custom renderer to [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererCollection.html) collection.
+By below code, you can add the previous created custom renderer to [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridCellRendererCollection.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -2563,15 +2563,3 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 {% endtabs %}
 
 ![WinForms datagrid shows to custom column by using the custom renderer](ColumnTypes_images/ColumnTypes_img45.png)
-
-
-
-
-
-
-
-
-
-
-
-
