@@ -2564,4 +2564,4 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 
 ![WinForms datagrid shows to custom column by using the custom renderer](ColumnTypes_images/ColumnTypes_img45.png)
 
-You can refer to the above prepared sparkline column from [here](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn).
+Refer to the above prepared sparkline column in this following link: [Sparkline column](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn)
