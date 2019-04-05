@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This section defines the list of supported formulas of the CalcEngine for Syncfusion Essential Windows Forms
 platform: windowsforms
 control: Calculate
 documentation: ug

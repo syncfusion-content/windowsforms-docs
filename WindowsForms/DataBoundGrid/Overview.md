@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
-description: This section explains the GridDataBoundGrid.
+title: Syncfusion Essential Windows Forms | GridDataBoundGrid | Syncfusion
+description: This section provides an overview of GridDataBoundGrid and it's key features for syncfusion essential Windows Forms.
 platform: windowsforms
 control: GridDataBoundGrid
 documentation: ug
