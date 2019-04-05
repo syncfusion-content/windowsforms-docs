@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto Complete
-description: This section explains about the auto complete support in SfComboBox.
+title: Auto Complete | SfComboBox | Syncfusion
+description: This section provides a basic idea that how the auto complete options works in SfComboBox for Syncfusion essential windows forms
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -30,7 +30,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img1.png)
+![AutoCompleteMode as suggest](AutoComplete_images/AutoComplete_img1.png)
 
 ### Append
 
@@ -45,7 +45,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img2.png)
+![AutoCompleteMode as Append](AutoComplete_images/AutoComplete_img2.png)
 
 ### Suggest append
 
@@ -60,7 +60,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img3.png)
+![AutoCompleteMode as SuggestAppend](AutoComplete_images/AutoComplete_img3.png)
 
 ## Auto complete by case sensitive
 
@@ -75,7 +75,7 @@ sfComboBox1.AllowCaseSensitiveOnAutoComplete = True
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img4.png)
+![Filter drop-down items with case sensitive](AutoComplete_images/AutoComplete_img4.png)
 
 ## Different modes for suggesting items
 
@@ -90,7 +90,7 @@ sfComboBox1.AutoCompleteSuggestMode = AutoCompleteSuggestMode.Contains
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img5.png)
+![AutoCompleteSuggestion option as contains](AutoComplete_images/AutoComplete_img5.png)
 
 ## Setting delay for auto complete
 

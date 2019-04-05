@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ItemHeight
-description: This section explains about the item height in SfComboBox.
+title: ItemHeight | SfComboBox | Syncfusion
+description: This section explains about the customizable options to change the drop-down items height of SfComboBox for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -22,7 +22,7 @@ sfComboBox1.DropDownListView.ItemHeight = 40
 {% endhighlight %}
 {% endtabs %}
 
-![](ItemHeight_images/ItemHeight_img1.png)
+![default height for drop-down items](ItemHeight_images/ItemHeight_img1.png)
 
 ## Auto fit the items based on content
 
@@ -75,4 +75,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ItemHeight_images/ItemHeight_img2.png)
+![customizing height for particular items](ItemHeight_images/ItemHeight_img2.png)

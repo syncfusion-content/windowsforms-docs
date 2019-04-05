@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas in Spreadsheet
-description: List of formulas supported by Spreadsheet
+title: Formulas in Spreadsheet | Spreadsheet | Syncfusion
+description: This section provides the list of formulas supported by Spreadsheet for Syncfusion essential studio windowsforms
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
