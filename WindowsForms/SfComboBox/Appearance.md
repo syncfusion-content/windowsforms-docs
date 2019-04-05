@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance
-description: This section explains about the Appearance in SfComboBox.
+title: Appearance | SfComboBox | WinForms | Syncfusion
+description: This section explains about the UI Appearance and styles of SfComboBox for syncfusion Essential Windows Forms
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -28,7 +28,7 @@ sfComboBox1.Style.EditorStyle.Font = New Font("Arial", 10F, FontStyle.Bold)
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Customizing using EditorStyle](Appearance_images/Appearance_img1.png)
 
 ### Customizing non-editing mode appearance
 
@@ -49,7 +49,7 @@ sfComboBox1.Style.ReadOnlyEditorStyle.Font = New Font("Arial", 10F, FontStyle.Bo
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![Customizing using ReadOnlyEditorStyle](Appearance_images/Appearance_img2.png)
 
 ## Customizing drop-down button appearance
 
@@ -70,7 +70,7 @@ sfComboBox1.Style.DropDownButtonStyle.FocusedBackColor = Color.Pink
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![customization the DropDownButtonStyle](Appearance_images/Appearance_img3.png)
 
 ## Customizing drop-down appearance
 
@@ -87,7 +87,7 @@ sfComboBox1.Style.DropDownStyle.GripperForeColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![customization the DropDownStyle](Appearance_images/Appearance_img4.png)
 
 ### Setting image in drop-down list item
 
@@ -138,7 +138,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img5.png)
+![DropDown item with image](Appearance_images/Appearance_img5.png)
 
 ## Conditional styling
 
@@ -167,7 +167,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img6.png)
+![customization based on conditions](Appearance_images/Appearance_img6.png)
 
 ## Themes
 
@@ -248,7 +248,7 @@ sfComboBox1.ThemeName = "Office2016Colorful"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img7.png)
+![Customization with ThemeName](Appearance_images/Appearance_img7.png)
 
 #### Office2016White
 
@@ -263,7 +263,7 @@ sfComboBox1.ThemeName = "Office2016White"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img8.png)
+![Office2016White theme appearance](Appearance_images/Appearance_img8.png)
 
 #### Office2016DarkGray
 
@@ -278,7 +278,7 @@ sfComboBox1.ThemeName = "Office2016White"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img9.png)
+![Office2016DarkGray theme appearance](Appearance_images/Appearance_img9.png)
 
 #### Office2016Black
 
@@ -293,4 +293,4 @@ sfComboBox1.ThemeName = "Office2016Black"
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img10.png)
+![Office2016Black theme appearance](Appearance_images/Appearance_img10.png)

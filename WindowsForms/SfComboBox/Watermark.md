@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark
-description: This section explains about the Watermark support in SfComboBox.
+title: Watermark appearance | SfComboBox | WinForms  | Syncfusion
+description: This section explains about how the Watermarks works in SfComboBox drop-down container for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -22,7 +22,7 @@ sfComboBox1.AllowNull = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark_images/Watermark_img1.png)
+![Watermark on the ComboTextBox](Watermark_images/Watermark_img1.png)
 
 ## Appearance
 
@@ -39,4 +39,4 @@ sfComboBox1.Style.EditorStyle.WatermarkForeColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark_images/Watermark_img2.png)
+![Watermark text with different color](Watermark_images/Watermark_img2.png)

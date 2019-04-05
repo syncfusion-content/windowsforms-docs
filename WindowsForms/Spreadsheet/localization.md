@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Spreadsheet
-description: How to localize the Spreadsheet to any language settings
+title: Localization in Spreadsheet | Spreadsheet | Syncfusion
+description: This section explains that how to localize the default strings in Spreadsheet to any language settings for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
@@ -43,17 +43,17 @@ The following steps show how to implement the localization in Spreadsheet,
 * Create Resx(resource) file under the 'Resources' folder and name it as Syncfusion.Spreadsheet.Windows.[Culture name].resx. 
   For example, Syncfusion.Spreadsheet.Windows.ja.resx for Japanese culture. 
 
-![](localization_images/Loc_Image1.JPG)
+![Multiple resource files to change the default strings](localization_images/Loc_Image1.JPG)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.Spreadsheet.Windows.ja.resx file.
   For your reference, you can download the Japanese("ja-JP") Resx file [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.Windows991194474)
 
-![](localization_images/Loc_Image2.JPG)
+![Resource file for Japanese culture](localization_images/Loc_Image2.JPG)
 
 
 The following screenshot shows you the localization in Spreadsheet,
 
-![](localization_images/localization_img1.jpg)
+![Localized strings with Japanese culture](localization_images/localization_img1.jpg)
 
 ## Modifying the localized strings in resource file
 
@@ -61,4 +61,4 @@ Users can modify the default localized strings in Resource file by adding the de
 
 Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.Spreadsheet.Windows.resx file.
 
-![](localization_images/Loc_Image3.jpg)
+![Modified default strings of English culture](localization_images/Loc_Image3.jpg)

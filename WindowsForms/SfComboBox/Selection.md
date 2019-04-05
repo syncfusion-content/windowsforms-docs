@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection
-description: This section explains about the selection in SfComboBox.
+title: Selection types | SfComboBox | WinForms  | Syncfusion
+description: This section explains about the different types of selection and the events on selection in SfComboBox for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -81,7 +81,7 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img1.png)
+![Selecting multiple items](Selection_images/Selection_img1.png)
 
 ### Select all
 
@@ -96,7 +96,7 @@ sfComboBox1.AllowSelectAll = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img2.png)
+![Selecting all the items in drop-down](Selection_images/Selection_img2.png)
 
 ### Changing the delimiter character to separate selected items
 
@@ -111,7 +111,7 @@ sfComboBox1.DelimiterChar = "-"
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img3.png)
+![Custom character to separate the items](Selection_images/Selection_img3.png)
 
 ### Hiding the buttons in the drop down
 
@@ -126,7 +126,7 @@ sfComboBox1.DropDownControl.ShowButtons = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img4.png)
+![Drop-Down without buttons](Selection_images/Selection_img4.png)
 
 ### Accessing the checked items
 
@@ -147,7 +147,7 @@ sfComboBox1.ShowToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img5.png)
+![ToolTip for selected items](Selection_images/Selection_img5.png)
 
 #### Tooltip options
 
@@ -199,7 +199,7 @@ sfComboBox1.ToolTipOption.ShadowVisible = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img6.png)
+![ToolTip for the selected items with delay](Selection_images/Selection_img6.png)
 
 #### Styling
 
@@ -220,7 +220,7 @@ sfComboBox1.Style.ToolTipStyle.BorderThickness = 5
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img7.png)
+![BackColor for the tooltip](Selection_images/Selection_img7.png)
 
 ##### Conditional styling
 
@@ -247,7 +247,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img8.png)
+![tooltip style based on condition](Selection_images/Selection_img8.png)
 
 #### Canceling tooltip opening
 

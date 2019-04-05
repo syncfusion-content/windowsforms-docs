@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting
-description: This section explains about the sorting support in SfComboBox.
+title: Sorting behaviors | SfComboBox | WinForms | Syncfusion
+description: This section explains about how the sorting of the drop-down items works in SfComboBox for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
@@ -28,4 +28,4 @@ sfComboBox1.DropDownListView.View.SortDescriptors.Add(New Syncfusion.DataSource.
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img1.png)
+![Sorted items of the drop-down](Sorting_images/Sorting_img1.png)

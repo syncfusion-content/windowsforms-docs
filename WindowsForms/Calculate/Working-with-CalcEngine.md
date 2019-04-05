@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcEngine
-description: Description about properties, methods maintained in CalcEngine
+title: Working with CalcEngine | Calculate | WinForms | Syncfusion
+description: This section describs about properties and methods maintained in CalcEngine for syncfusion essential windowsforms
 platform: windowsforms
 control: Calculate
 documentation: ug
