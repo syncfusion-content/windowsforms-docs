@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance | SfComboBox | windowsforms/Syncfusion
+title: Appearance | SfComboBox | WinForms | Syncfusion
 description: This section explains about the UI Appearance and styles of SfComboBox for syncfusion Essential Windows Forms
 platform: windowsforms
 control: SfComboBox

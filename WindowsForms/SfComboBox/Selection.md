@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection types | SfComboBox | windowsforms/Syncfusion
-description: This section explains about the different types of selection and the events on selection in SfComboBox for syncfusion windowsforms
+title: Selection types | SfComboBox | WinForms  | Syncfusion
+description: This section explains about the different types of selection and the events on selection in SfComboBox for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview for calculate| Calculate | windowsforms/syncfusion
+title: Overview for calculate| Calculate | WinForms | syncfusion
 description: This section provides an overview and the features that are supported in calculate for Syncfusion Essential Windows Forms
 platform: windowsforms
 control: Calculate

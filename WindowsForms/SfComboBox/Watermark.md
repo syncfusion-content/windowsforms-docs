@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark appearance | SfComboBox | windowsforms/Syncfusion
-description: This section explains about how the Watermarks works in SfComboBox drop-down container for syncfusion windowsforms
+title: Watermark appearance | SfComboBox | WinForms  | Syncfusion
+description: This section explains about how the Watermarks works in SfComboBox drop-down container for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug

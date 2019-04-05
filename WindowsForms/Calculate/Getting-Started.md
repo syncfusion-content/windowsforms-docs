@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate | WinForms/Syncfusion
+title: Getting Started with Essential Calculate | WinForms | Syncfusion
 description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
 platform: windowsforms
 control: Calculate

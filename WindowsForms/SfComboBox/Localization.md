@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfComboBox | Syncfusion
-description: This section provides a basic idea to change the culture/Localize the default strings in SfComboBox for essential windowsforms
+description: This section provides a basic idea to change the culture or Localize the default strings in SfComboBox for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Outlines Support in Spreadsheet | spreadsheet | Syncfusion
-description: This section explains that how to group/ungroup the rows and columns in Spreadsheet for windowsforms/Syncfusion
+description: This section explains that how to group/ungroup the rows and columns in Spreadsheet for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

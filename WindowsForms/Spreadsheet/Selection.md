@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection behavior in Spreadsheet | Spreadsheet | Syncfusion
-description: This section explains that how the selection behavior of Spreadsheet works at run time for windowsforms/Syncfusion
+description: This section explains that how the selection behavior of Spreadsheet works at run time for Syncfusion WinForms.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug

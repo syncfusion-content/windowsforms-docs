@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Function | Calculate | windowsforms/Syncfusion
+title: Custom Function | Calculate | WinForms | Syncfusion
 description: This section describes that how to add and remove the user defined function for Syncfusion essential windows forms
 platform: windowsforms
 control: Calculate

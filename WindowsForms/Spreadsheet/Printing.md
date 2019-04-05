@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing | Spreadsheet | Syncfusion
-description: This sections explains that how to print the workbooks and its sheets in Spreadsheet for windowsforms/syncfusion
+description: This sections explains that how to print the workbooks and its sheets in Spreadsheet for Syncfusion Essential WindowsForms.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
