@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | ScrollersFrame | Syncfusion
-description: This section explains about the scroll frame component for windows forms and it's important key features
+description: This section provides an overview of scrollers frame and it's key features in Syncfusion Essential windows forms
 platform: windowsforms
 control: ScrollersFrame
 documentation: ug
