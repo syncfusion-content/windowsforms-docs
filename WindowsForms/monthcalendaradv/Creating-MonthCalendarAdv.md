@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | MonthCalendarAdv | WindowsForms | Syncfusion
-description: creating monthcalendaradv
+description: This section describes how to add MonthCalendarAdv control into application and its basic features.
 platform: WindowsForms
 control: MonthCalendarAdv
 documentation: ug
@@ -18,7 +18,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with MonthCalendarAdv
+## Creating simple application with MonthCalendarAdv
 
 You can create the Windows Forms application with MonthCalendarAdv control as follows:
 
