@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating MonthCalendarAdv | WindowsForms | Syncfusion
+title: Getting started | MonthCalendarAdv | WindowsForms | Syncfusion
 description: creating monthcalendaradv
 platform: WindowsForms
 control: MonthCalendarAdv
@@ -43,9 +43,9 @@ MonthCalendarAdv control can be added to the application by dragging it from the
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](CalendarDateTime_images/MonthCalenderAdv.png) 
+![Search month calendar in toolbox](CalendarDateTime_images/MonthCalenderAdv.png) 
 
-![](CalendarDateTime_images/MonthCalenderAdv-img5.png) 
+![Drag and drop the control to application](CalendarDateTime_images/MonthCalenderAdv-img5.png) 
 
 ## Adding control manually using code
 
@@ -104,7 +104,7 @@ Me.Controls.Add(monthCalendarAdv1)
 
 {% endtabs %}
 
-![](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
+![MonthCalendarAdv control](CalendarDateTime_images/MonthCalenderAdv-img2.png) 
 
 ## Configure to allow multiple selection
 
@@ -126,9 +126,9 @@ Me.monthCalendarAdv1.AllowMultipleSelection = True
 
 {% endtabs %}
 
-![](CalendarDateTime_images/MonthCalenderAdv-img4.png) 
+![Multiple date selection](CalendarDateTime_images/MonthCalenderAdv-img4.png) 
 
-## Selection date range
+## Date range
 
  MonthCalenderAdv prevents users from selecting dates within a specified minimum and maximum range. To specify the range, set the start date and end date to `MinValue` and `MaxValue` properties respectively.
 
@@ -156,4 +156,4 @@ Me.monthCalendarAdv1.MaxValue= New DateTime(2018, 1, 25)
 
 {% endtabs %}
 
-![](CalendarDateTime_images/MonthCalenderAdv-img3.png)
+![Date range specified](CalendarDateTime_images/MonthCalenderAdv-img3.png)

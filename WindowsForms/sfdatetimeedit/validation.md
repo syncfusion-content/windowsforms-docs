@@ -1,7 +1,7 @@
 ---
 layout: post
 title: built-in date and time validation | SfDateTimeEdit | Syncfusion
-description: How to handle date and time validation in SfDateTimeEdit control
+description: This section describes how to handle date and time validation in SfDateTimeEdit control
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug

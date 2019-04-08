@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intellisense functionalities in EditControl | Windows Forms | Syncfusion
+title: Intellisense support | EditControl | Windows Forms | Syncfusion
 description: This section explains about the intellisense pop-up capabilities available in EditControl for Windows Forms
 platform: WindowsForms
 control: SyntaxEditor

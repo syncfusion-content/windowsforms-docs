@@ -42,7 +42,7 @@ The TabSplitterContainer control can be added to an application by dragging it f
 
 Add pages into TabSplitterContainer by clicking **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
 
-![TabSplitterContainer control added by designer](GettingStarted-images/wf-tabsplitter-container-control-added-by-designer.png)
+![TabSplitterContainer control added by designer](GettingStarted-images/wf-tabsplitter-container-tabpage.png)
 
 ## Add control manually in code
 
