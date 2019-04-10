@@ -1843,11 +1843,11 @@ Me.sfDataGrid1.Columns.Add(New GridMultiSelectComboBoxColumn() With {.MappingNam
 
 ![Winforms datagrid shows to customizing GroupCaptionText based on DisplayMember](ColumnTypes_images/ColumnTypes_img42.png)
 
-## Loading different DataSources for each row
+### Loading different DataSources for each row
 
 Different data sources can be loaded to each row of [GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)  using the [DataSourceSelector](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) property.
 
-### Implementing IDataSourceSelector
+#### Implementing IDataSourceSelector
 
 `DataSourceSelector` needs to implement [IDataSourceSelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn~IDataSourceSelector.html) interface to implement the GetDataSource method that receives the following parameters:
 •	Record – Data object associated with row.
@@ -2149,7 +2149,7 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 
 ### Creating new column and renderer
 
-You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer by overriding the predefined renderer in SfDataGrid.
+You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer by overriding the predefined renderer in SfDataGrid. In the below code snippet, how to create the sparkline custom column from predefined Column.
 
 #### Creating custom column
 
@@ -2565,3 +2565,5 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 ![WinForms datagrid shows to custom column by using the custom renderer](ColumnTypes_images/ColumnTypes_img45.png)
 
 Refer to the above prepared sparkline column in this following link: [Sparkline column](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn)
+
+Provided the prepared rating column in this following link: [RatingColumn](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/RatingColumn)
