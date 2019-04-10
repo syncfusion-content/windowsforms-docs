@@ -2149,7 +2149,7 @@ public class GridTextBoxCellRendererExt : GridTextBoxCellRenderer
 
 ### Creating new column and renderer
 
-You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and new cell renderer by overriding the predefined renderer in SfDataGrid. Below steps demonstrates how to create the sparkline column as a custom column.
+You can create a new column by deriving [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumn.html) and create new a cell renderer by overriding the predefined renderer in SfDataGrid. The following steps describe how to create a sparkline column as a custom column.
 
 #### Creating custom column
 
@@ -2566,4 +2566,4 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 
 Refer to the above prepared sparkline column in this following link: [Sparkline column](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn)
 
-We have also created rating column as a custom column and the sample for the same can be downloaded from this following link: [RatingColumn](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/RatingColumn)
+Here, a rating column has been created as a custom column. The sample for this can be downloaded from this following link: [RatingColumn](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/RatingColumn)

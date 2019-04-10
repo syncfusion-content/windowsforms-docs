@@ -110,7 +110,7 @@ sfDataGrid.ExpandAllPreviewRow()
 
 #### Height customization
 
-The height of the preview rows can be customized by using the [PreviewRowHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowHeightMode.html) property. The preview row height modes are as follows.
+The height of the preview rows can be customized using the [PreviewRowHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~PreviewRowHeightMode.html) property. The preview row height modes are as follows.
 
 <table>
 <tr>
@@ -139,7 +139,7 @@ Sets the default height specified by the PreviewRowHeight property.
 </tr>
 </table>
 
-The following code example demonstrates how to auto size height of preview row based on its content.
+The following code example demonstrates how to auto-size the height of preview row based on its content.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,7 +150,7 @@ sfDataGrid.PreviewRowHeightMode = PreviewRowHeightMode.Auto
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms data grid is show to apply the preview row height mode in preview rows.](PreviewRow_images/PreviewRow_img8.png)
+![Winforms data grid is shown to apply the preview row height mode in preview rows.](PreviewRow_images/PreviewRow_img8.png)
 
 ## Appearance 
 
