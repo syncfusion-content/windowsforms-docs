@@ -139,7 +139,7 @@ Sets the default height specified by the PreviewRowHeight property.
 </tr>
 </table>
 
-The following code sample demonstrates how to apply PreviewRowHeight.
+The following code example demonstrates how to auto size height of preview row based on its content.
 
 {% tabs %}
 {% highlight c# %}
