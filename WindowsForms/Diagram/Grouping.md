@@ -148,13 +148,13 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 {% endhighlight %}
 {% endtabs %}
 
-![Positioning Group node’s Child_Relative](Grouping_images/Grouping_img2.png)
+![Positioning Group node’s Child in Relative mode](Grouping_images/Grouping_img2.png)
 
 
 
 
 
-![Positioning Group node’s Child_Absolute](Grouping_images/Grouping_img3.png)
+![Positioning Group node’s Child in Absolute mode](Grouping_images/Grouping_img3.png)
 
 
 
