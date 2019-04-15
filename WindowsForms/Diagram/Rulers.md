@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rulers | Windows Forms | Syncfusion
-description: Rulers
+description: This section explains how to use Diagram's Ruler to measure the distance of nodes and connectors from origin of the page.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -53,7 +53,7 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img1.jpeg)
+![Diagram Rulers](Rulers_images/Rulers_img1.jpeg)
 
 
 
@@ -137,7 +137,7 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img2.jpeg)
+![Change VRuler Minor lines colors](Rulers_images/Rulers_img2.jpeg)
 
 
 
@@ -183,4 +183,4 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img3.jpeg)
+![Change HRuler Minor lines colors](Rulers_images/Rulers_img3.jpeg)
