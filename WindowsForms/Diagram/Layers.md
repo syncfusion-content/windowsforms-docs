@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layers | Windows Forms | Syncfusion
-description: Layers
+description: This section explains about how to Diagram's Layers organize related shapes and its functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug

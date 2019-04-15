@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
-platform: windowsforms
+title: Overview of Diagram Control | Windows Forms | Syncfusion
+description: This section explains how to use the Diagram control for Windows Forms and its important key features
+platform: windowsformsT
 control: Diagram
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guides | Windows Forms | Syncfusion
-description: Guides
+description: This section explains how to use Essential Diagram's guidelines to align the shapes and their functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug

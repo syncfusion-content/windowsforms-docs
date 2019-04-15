@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping | Windows Forms | Syncfusion
-description: Grouping
+description: This section explains about how to use essential Diagram control Grouping functionality and its behavior
 platform: windowsforms
 control: Diagram
 documentation: ug

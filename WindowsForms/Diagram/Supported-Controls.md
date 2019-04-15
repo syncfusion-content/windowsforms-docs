@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported-Controls | Windows Forms | Syncfusion
-description: supported controls  
+description: This section explains about what are the supported controls available in Essential Diagram and its basics functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug

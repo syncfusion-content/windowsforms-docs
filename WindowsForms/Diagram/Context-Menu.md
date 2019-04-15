@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context-Menu | Windows Forms | Syncfusion
-description: Context Menu
+description: This section explains about how to use the Diagram's Context Menu items and their important key features
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Context Menu
 
-### Built-In Context Menu
+### Built-in context menu
 
-Essential Diagram for Windows Forms provides Built-in Context Menu support for Diagram.
+The Essential Diagram of Windows Forms provides built-in context menu support to the Diagram.
 
-All available tools for Diagram control, File options, Edit options, Action options, Layout, Connectors and Shapes will be listed in the Built-in Context Menu. 
+All available tools for the Diagram control such as File options, Edit options, Action options, Layout, Connectors, and Shapes are listed in the built-in context menu. 
 
 Use Case Scenarios
 
