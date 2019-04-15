@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: Overview of Diagram Control | Windows Forms | Syncfusion
+description: This section explains how to use the Diagram control for Windows Forms and its important key features
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -18,7 +18,7 @@ Essential Diagram is an extensible and high-performance .NET Diagramming Framewo
 Essential Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
 
 
-![](Overview_images/Overview_img1.png)
+![Wireless Network Flow Diagram](Overview_images/Overview_img1.png)
 
 
 
@@ -64,7 +64,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+{{ '![Note](Overview_images/Overview_img2.jpeg)' | markdownify }}
 
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
@@ -76,14 +76,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+{{ '![Tip](Overview_images/Overview_img3.jpeg)' | markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
+{{ '![Additional Information](Overview_images/Overview_img4.jpeg)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic</td></tr>
@@ -145,7 +145,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![](Overview_images/Overview_img5.jpeg)
+Online{{ '<http://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

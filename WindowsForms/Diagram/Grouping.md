@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping | Windows Forms | Syncfusion
-description: Grouping
+description: This section explains about how to use essential Diagram control Grouping functionality and its behavior
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -116,7 +116,7 @@ groupNode.RemoveChild(nodeToRemove);
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img1.jpeg)
+![Access, Delete or Remove the child nodes in a Group](Grouping_images/Grouping_img1.jpeg)
 
 ### Positioning Nodes in Group
 
@@ -148,13 +148,13 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img2.png)
+![Positioning the Children in Relative mode](Grouping_images/Grouping_img2.png)
 
 
 
 
 
-![](Grouping_images/Grouping_img3.png)
+![Positioning the Children in Absolute mode](Grouping_images/Grouping_img3.png)
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported-Controls | Windows Forms | Syncfusion
-description: supported controls  
+description: This section explains about what are the supported controls available in Essential Diagram and its basics functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -15,7 +15,7 @@ The controls associated with the Diagram control are illustrated in the followin
 
 
 
-![](Supported-Controls_images/Supported-Controls_img1.png)
+![Overvies of Supported Controls](Supported-Controls_images/Supported-Controls_img1.png)
 
 
 ## Overview Control 
@@ -144,7 +144,7 @@ overviewControl1.TabIndex = 1
 
 {% endhighlight %}
 
-![](Supported-Controls_images/Supported-Controls_img2.jpeg)
+![Pan and Zoom](Supported-Controls_images/Supported-Controls_img2.jpeg)
 
 
 
@@ -602,7 +602,7 @@ if (savePaletteDialog.ShowDialog(this) == DialogResult.OK)
 
 {% endhighlight %}
 
-![](Supported-Controls_images/Supported-Controls_img3.jpeg)
+![Palette Groupbar And GroupView](Supported-Controls_images/Supported-Controls_img3.jpeg)
 
 ### Adding Shapes by Clicking the Diagram Page
 
@@ -653,7 +653,7 @@ paletteGroupBar1.Diagram = diagram1;
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Adding-Shapes_img.png)
+![Adding-Shapes to the diagram from palette](Supported-Controls_images/Adding-Shapes_img.png)
 
 
 N> Click the Diagram page to add the selected node. Click and drag to get the required size. 
@@ -733,7 +733,7 @@ paletteGroupView1.ShowDragNodeCue = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Supported-Controls_images/Symbol-Palette-Items_img1.png)
+![Preview Support in Palette](Supported-Controls_images/Symbol-Palette-Items_img1.png)
 
 The following code illustrates how to disable preview support: 
 
@@ -1007,7 +1007,7 @@ documentExplorer1.ShowNodeToolTips = True
 
 {% endhighlight %}
 
-![](Supported-Controls_images/Supported-Controls_img4.jpeg)
+![Document Explorer](Supported-Controls_images/Supported-Controls_img4.jpeg)
 
 
 
@@ -1048,7 +1048,7 @@ private void documentExplorer1_AfterSelect(object sender,TreeViewEventArgs e)
 
 {% endhighlight %}
 
-![](Supported-Controls_images/Supported-Controls_img5.jpeg)
+![Document Explorer with theme](Supported-Controls_images/Supported-Controls_img5.jpeg)
 
 
 
@@ -1119,7 +1119,7 @@ this.propertyEditor.Diagram = diagram1;
 
 {% endhighlight %}
 
-![](Supported-Controls_images/Supported-Controls_img6.jpeg)
+![Property Editor](Supported-Controls_images/Supported-Controls_img6.jpeg)
 
 
 
