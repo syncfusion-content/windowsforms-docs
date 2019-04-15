@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gridlines | Windows Forms | Syncfusion
-description: Gridlines  
+description: This section explains about how to add Diagram's GridLines behind the shapes and their functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Diagram Grid
 
-Diagram Grid is drawn with evenly spaced points that provides a visual guidance to the user.  
+The Diagram grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 
 #### Behavior
 
@@ -86,7 +86,7 @@ diagram1.View.Grid.SnapToGrid = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
+![Diagram-Gridlines](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
 
 
 
