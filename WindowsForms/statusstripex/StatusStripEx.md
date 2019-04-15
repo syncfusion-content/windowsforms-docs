@@ -1,8 +1,8 @@
 ---
 layout: post
 title: StatusStripEx | WindowsForms | Syncfusion
-description: statusstripex
-platform: StatusStripEx can be added to the bottom of the Ribbon and can hold controls like TrackBarEx, ProgressBar, StatusStripButtons
+description: StatusStripEx can be added to the bottom of the Ribbon and can hold controls like TrackBarEx, ProgressBar, StatusStripButtons
+platform: Windows Forms
 control: RibbonControlAdv 
 documentation: ug
 ---
@@ -120,9 +120,9 @@ The options are,
 <tr><td>Add StatusStripButton</td><td>Represents that adds a Button item.</td></tr>
 <tr><td>Add StatusStripLabel</td><td>Represents that adds status strip label item.</td></tr>
 <tr><td>Add StatusStrip ProgressBar</td><td>Represents that adds progressbar to the status bar</td></tr>
-<tr><td>Add StatusStrip DropDownButton</td><td>Represents that adds dropdownbutton to the status bar.</td></tr>
-<tr><td>Add StatusStrip SplitButton</td><td>Represents that adds splitbutton to the status bar.</td></tr>
-<tr><td>Add StatusStrip PanleItem</td><td>Represents that adds panelitem to the status bar.</td></tr>
+<tr><td>Add StatusStrip DropDownButton</td><td>Represents that adds dropdown button to the status bar.</td></tr>
+<tr><td>Add StatusStrip SplitButton</td><td>Represents that adds split button to the status bar.</td></tr>
+<tr><td>Add StatusStrip PanelItem</td><td>Represents that adds panel item to the status bar.</td></tr>
 </table>
 
 ## StatusStripEx Items
