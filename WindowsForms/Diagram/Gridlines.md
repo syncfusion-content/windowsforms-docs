@@ -86,7 +86,7 @@ diagram1.View.Grid.SnapToGrid = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
+![Diagram-Gridlines](Diagram-Grid_images/Diagram-Grid_img1.jpeg)
 
 
 

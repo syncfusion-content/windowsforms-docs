@@ -53,7 +53,7 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img1.jpeg)
+![Diagram Rulers](Rulers_images/Rulers_img1.jpeg)
 
 
 
@@ -137,7 +137,7 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img2.jpeg)
+![Change VRuler Minor lines colors](Rulers_images/Rulers_img2.jpeg)
 
 
 
@@ -183,4 +183,4 @@ Sample diagram is as follows,
 
 
 
-![](Rulers_images/Rulers_img3.jpeg)
+![Change HRuler Minor lines colors](Rulers_images/Rulers_img3.jpeg)

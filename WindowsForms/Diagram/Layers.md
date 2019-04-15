@@ -13,7 +13,7 @@ Layers are transparent sheets that can be added to the model and the objects are
 
 
 
-![](Layers_images/Layers_img1.png)
+![Diagram layers](Layers_images/Layers_img1.png)
 
 
 ### Sample Layers
@@ -87,7 +87,7 @@ sp.Layers.Add(layer3)
 {% endhighlight %}
 {% endtabs %}
 
-![](Layers_images/Layers_img2.jpeg)
+![Adding Diagram Layers](Layers_images/Layers_img2.jpeg)
 
 
 

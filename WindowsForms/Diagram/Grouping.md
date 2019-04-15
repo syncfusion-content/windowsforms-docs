@@ -116,7 +116,7 @@ groupNode.RemoveChild(nodeToRemove);
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img1.jpeg)
+![Access, Delete or Remove the child nodes in a Group](Grouping_images/Grouping_img1.jpeg)
 
 ### Positioning Nodes in Group
 
@@ -148,13 +148,13 @@ group.GroupNodePosition = GroupNodePositions.Absolute
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img2.png)
+![Positioning Group node’s Child_Relative](Grouping_images/Grouping_img2.png)
 
 
 
 
 
-![](Grouping_images/Grouping_img3.png)
+![Positioning Group node’s Child_Absolute](Grouping_images/Grouping_img3.png)
 
 
 

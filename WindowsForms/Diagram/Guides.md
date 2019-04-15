@@ -87,4 +87,4 @@ diagram1.Controller.Guides.Margin = 50
 {% endtabs %}
 
 
-![](Guides_images/Guides_img1.png)
+![Diagram Guides](Guides_images/Guides_img1.png)

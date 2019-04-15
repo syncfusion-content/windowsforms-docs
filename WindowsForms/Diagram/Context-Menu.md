@@ -60,7 +60,7 @@ diagram1.DefaultContextMenuEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Context-Menu_images/Context-Menu_img1.png)
+![Diagram Context-Menu](Context-Menu_images/Context-Menu_img1.png)
 
 
 The following code illustrates how to disable the default context menu:

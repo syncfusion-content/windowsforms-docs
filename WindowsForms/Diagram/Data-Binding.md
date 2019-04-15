@@ -130,7 +130,7 @@ Sample diagram is as follows.
 
 
 
-![](Data-Binding_images/Diagram-Data-Binding_img1.jpg)
+![Diagram XML Data-Binding](Data-Binding_images/Diagram-Data-Binding_img1.jpg)
 
 
 ## DataBase Binding
@@ -212,4 +212,4 @@ Sample diagram is as follows.
 
 
 
-![](Data-Binding_images/Diagram-Data-Binding_img2.jpg)
+![Diagram DB Data-Binding](Data-Binding_images/Diagram-Data-Binding_img2.jpg)

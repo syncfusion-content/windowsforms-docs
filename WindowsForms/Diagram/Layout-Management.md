@@ -111,13 +111,13 @@ documentExplorer1.ShowNodeToolTips = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Management_images/Layout-Management_img1.jpeg)
+![Table layout](Layout-Management_images/Layout-Management_img1.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img2.jpeg)
+![Table layout](Layout-Management_images/Layout-Management_img2.jpeg)
 
 
 
@@ -183,25 +183,25 @@ Sample Diagrams are as follows.
 
 
 
-![](Layout-Management_images/Layout-Management_img3.jpeg)
+![Directed Tree layout Top-Bottom](Layout-Management_images/Layout-Management_img3.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img4.png)
+![Directed Tree layout Bottom-Top](Layout-Management_images/Layout-Management_img4.png)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img5.jpeg)
+![Directed Tree layout Right-Left](Layout-Management_images/Layout-Management_img5.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img6.jpeg)
+![Directed Tree layout Left-Right](Layout-Management_images/Layout-Management_img6.jpeg)
 
 
 
@@ -262,13 +262,13 @@ Sample Diagram is as follows.
 
 
 
-![](Layout-Management_images/Layout-Management_img7.jpeg)
+![Radial Tree layout_1](Layout-Management_images/Layout-Management_img7.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img8.jpeg)
+![Radial Tree layout_2](Layout-Management_images/Layout-Management_img8.jpeg)
 
 
 
@@ -337,13 +337,13 @@ Sample Diagrams are as follows.
 
 
 
-![](Layout-Management_images/Layout-Management_img9.jpeg)
+![Symmetric Layout Manager_1](Layout-Management_images/Layout-Management_img9.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img10.jpeg)
+![Symmetric Layout Manager_2](Layout-Management_images/Layout-Management_img10.jpeg)
 
 
 
@@ -402,13 +402,13 @@ Sample diagrams are as follows:
 
 
 
-![](Layout-Management_images/Layout-Management_img11.jpeg)
+![Hierarchical Layout Manager Top-Bottom](Layout-Management_images/Layout-Management_img11.jpeg)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img12.jpeg)
+![Hierarchical Layout Manager Bottom-Top](Layout-Management_images/Layout-Management_img12.jpeg)
 
 
 
@@ -478,7 +478,7 @@ The following is a sample Diagram showing GraphLayoutManager:
 
 
 
-![](Layout-Management_images/Layout-Management_img13.jpeg)
+![GraphLayoutManager](Layout-Management_images/Layout-Management_img13.jpeg)
 
 
 ## Subgraph Layout Manager 
@@ -537,7 +537,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Management_images/Layout-Management_img14.png)
+![Subgraph Layout Manager](Layout-Management_images/Layout-Management_img14.png)
 
 
 
@@ -594,13 +594,13 @@ Sample diagram is as follows.
 
 
 
-![](Layout-Management_images/Layout-Management_img15.png)
+![OrgChart Layout Manager Top-Bottom](Layout-Management_images/Layout-Management_img15.png)
 
 
 
 
 
-![](Layout-Management_images/Layout-Management_img16.png)
+![OrgChart Layout Manager Bottom-Top](Layout-Management_images/Layout-Management_img16.png)
 
 
 
