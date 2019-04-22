@@ -3,7 +3,7 @@ layout: post
 title: StatusStripEx | WindowsForms | Syncfusion
 description: StatusStripEx can be added to the bottom of the Ribbon and can hold controls like TrackBarEx, ProgressBar, StatusStripButtons
 platform: windowsforms
-control: RibbonControlAdv 
+control: StatusStripEx 
 documentation: ug
 ---
 
@@ -83,10 +83,33 @@ Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates the creation of StatusStripEx control and adding ToolStripStatus Items are available in the below sample installation location.
+## StatusStripEx Items
 
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+The `StatusStripEx` control has two types of items.
 
+* StatusControl items
+
+* Notification items
+
+### StatusControl items
+
+The StatusControl items is placed to right side of the StatusStripEX when added. The StatusControl items are listed below,
+	
+* StatusLabel
+* ProgressBar
+* DropDownButton
+* SplitButton
+
+### Notification items 
+
+The Notification items is placed to left side of the StatusStripEx when added. The Notification items are listed below,
+
+* StatusStripLabel
+* StatusStripProgressBar
+* StatusStripDropDownButton
+* StatusStripSplitButton
+
+N> The `StatusStripLabel` and `StatusLabel` are same types of control in StatusStrip. If you select StatusStripLabel, it will be added to left side at the StatusStrip. Similarly, If you select StatusLabel, it will be added to right side at the StatusStrip.
 
 ## Smart tag options
 
@@ -125,33 +148,6 @@ The options are,
 <tr><td>Add StatusStrip PanelItem</td><td>Represents that adds panel item to the status bar.</td></tr>
 </table>
 
-## StatusStripEx Items
-
-The `StatusStripEx` control has two types of items.
-
-* StatusControl items
-
-* Notification items
-
-### StatusControl items
-
-The StatusControl items is located in right side of the StatusStrip. The StatusControl items are listed below,
-	
-* StatusLabel
-* ProgressBar
-* DropDownButton
-* SplitButton
-
-### Notification items 
-
-The Notification items is located in left side of the StatusStrip. The Notification items are listed below,
-
-* StatusStripLabel
-* StatusStripProgressBar
-* StatusStripDropDownButton
-* StatusStripSplitButton
-
-N> The `StatusStripLabel` and `StatusLabel` are same types of control in StatusStrip. If you select StatusStripLabel, it will be added to left side at the StatusStrip. Similarly, If you select StatusLabel, it will be added to right side at the StatusStrip.
 
 ## SizingGrip settings
 
