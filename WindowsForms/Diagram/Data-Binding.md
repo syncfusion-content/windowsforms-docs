@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-Binding | Windows Forms | Syncfusion
-description: Data Binding
+title: Data-Binding of Diagram Control | Windows Forms | Syncfusion
+description: This section explains how to populate the local data using Data Binding in the Diagram WinForms Control
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -9,17 +9,17 @@ documentation: ug
 
 # Data Binding
 
-### Populating the Data
+### Populating the data
 
 *	Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
-*	Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+*	Diagram exposes its specific data-related properties, which allow you specify the data source fields from where the node information has to be retrieved.
 
-To explore those properties, see [Data source settings](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding_properties.html)
+To explore those properties, refer to the [Data source settings](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding_properties.html).
 
-## XML Data Binding
+## XML data binding
 
 Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
-To map the user defined XML data with Diagram, you have to configure the fields of [DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding~DataSource.html). The following code example illustrates how to bind XML data with the Diagram.
+To map the user defined XML data with Diagram, you have to configure the [DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding~DataSource.html) fields. The following code example illustrates how to bind XML data with the Diagram.
 
 {% highlight xml %}
 
@@ -126,11 +126,11 @@ diagram1.Binding.DataSource = diagram1.GetDataSourceFromXML("..\..\XML Binding1.
 {% endhighlight %}
 {% endtabs %}
 
-Sample diagram is as follows,
+Sample diagram is as follows.
 
 
 
-![](Data-Binding_images/Diagram-Data-Binding_img1.jpg)
+![Diagram XML Data-Binding](Data-Binding_images/Diagram-Data-Binding_img1.jpg)
 
 
 ## DataBase Binding
@@ -208,8 +208,8 @@ End Using
 {% endtabs %}
 
 
-Sample diagram is as follows,
+Sample diagram is as follows.
 
 
 
-![](Data-Binding_images/Diagram-Data-Binding_img2.jpg)
+![Diagram DB Data-Binding](Data-Binding_images/Diagram-Data-Binding_img2.jpg)
