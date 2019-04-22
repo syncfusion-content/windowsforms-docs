@@ -109,7 +109,7 @@ The Notification items is placed to left side of the StatusStripEx when added. T
 * StatusStripDropDownButton
 * StatusStripSplitButton
 
-N> The `StatusStripLabel` and `StatusLabel` are same types of control in StatusStrip. If you select StatusStripLabel, it will be added to left side at the StatusStrip. Similarly, If you select StatusLabel, it will be added to right side at the StatusStrip.
+N> If you select StatusStripLabel, it will be added to the left side of StatusStripEx. Similarly, if you select StatusLabel, it will be added to the right side of StatusStripEx.
 
 ## Smart tag options
 
