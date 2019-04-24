@@ -83,7 +83,7 @@ gridGroupingControl1.DisplayVerticalLines = True
 
 You can customize grid line color using _GridLineColor_ property. 
 
-The following code illustrates how to display vertical lines in GridControl: 
+The following code illustrates how to customize the grid lines color in GridControl.
 
 {% tabs %}
 {% highlight c# %}
