@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GroupView | WindowsForms | Syncfusion
-description: This section describes the overall features of group view control.
+description: GroupView control provides an easy way to display the items with large or small icons in various combinable styles.
 platform: WindowsForms
 control: GroupView
 documentation: ug
