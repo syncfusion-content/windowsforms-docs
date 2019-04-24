@@ -1,7 +1,7 @@
 ---
 layout: post
 title: built-in date and time validation | SfDateTimeEdit | Syncfusion
-description: How to handle date and time validation in SfDateTimeEdit control
+description: SfDateTimeEdit control provides an support to validation of date and time value when the enter key is pressed.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTime Editing Modes | SfDateTimeEdit | Windows Forms | Syncfusion
-description: How to use different editing modes of SfDateTimeEdit control
+description: Editing mode supports default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
