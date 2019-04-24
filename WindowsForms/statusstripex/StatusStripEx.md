@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | StatusStripEx | WindowsForms | Syncfusion
 description: This section describes how to add StatusStripEx control into application and its basic features.
-platform: WindowsForms
+platform: windowsforms
 control: StatusStripEx 
 documentation: ug
 ---
