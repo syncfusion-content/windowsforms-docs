@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features | WindowsForms | Syncfusion
-description: trackbarex
+description: TrackBar control provides an support for navigating through a large amount of information or for visually adjusting a numeric setting.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug

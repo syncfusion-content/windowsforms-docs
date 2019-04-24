@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard and Mouse interaction | SfDateTimeEdit | Syncfusion
-description: Keyboard and Mouse interaction with SfDateTimeEdit
+description: SfDateTimeEdit control provides an functionality to navigation and value changes through the keyboard and mouse interaction.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
