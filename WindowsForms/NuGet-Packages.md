@@ -9,9 +9,9 @@ documentation: ug
 
 # NuGet Packages
 
-NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to development with the Syncfusion Windows Forms controls. From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-N> You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to implement the Syncfusion Windows Forms controls.
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
@@ -31,7 +31,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
 3.	The NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
@@ -93,7 +93,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     nuget.exe install “Syncfusion.Chart.Windows46”  –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
-N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
