@@ -7,6 +7,8 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
+# Formatting
+
 ## FormatMode
 
 Formatting functionality allows formatting the value based on the FormatString. We can format the value in different mode, in which we picked the specific three formats. They are Numeric, Currency, Percent. In this Currency and Percent mode display the value with its symbol.

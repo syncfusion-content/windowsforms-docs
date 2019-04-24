@@ -21,7 +21,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 ## Configuring Numeric TextBox
 
-## Adding SfNumericTextBox control through Designer
+### Adding SfNumericTextBox control through Designer
 
 SfNumericTextBox can be added through designer by following the below steps.
 **1.**	Create a new **Windows Form Application**.
@@ -37,7 +37,7 @@ SfNumericTextBox can be added through designer by following the below steps.
 
 ![SfNumericTextBox control added by designer](Gettingstarted_images/SfNumericTextBoxDesignerAdd.png)
 
-## Adding SfNumericTextBox control through code
+### Adding SfNumericTextBox control through code
 
 **1.**	SfNumericTextBox can be added through code-behind by following the below steps.
 **2.**	Add the below assemblies into the project file.
