@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTime Editing Modes | SfDateTimeEdit | Windows Forms | Syncfusion
-description: How to use different editing modes of SfDateTimeEdit control
+description: This section describes various editing modes option in the SfDateTimeEdit control and its usage.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
