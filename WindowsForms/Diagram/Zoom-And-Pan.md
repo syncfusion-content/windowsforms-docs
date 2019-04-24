@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zoom-and-Pan | Windows Forms | Syncfusion
-description: Zoom and Pan
+description: This section explains about how to interact the Diagram Zooming/Panning commands and its functionalities.
 platform: windowsforms
 control: Diagram
 documentation: ug
@@ -150,7 +150,7 @@ Me.diagram1.View.ZoomType = ZoomType.Center
 {% endhighlight %}
 {% endtabs %}
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img1.png)
+![Diagram Zooming](Zoom-And-Pan_images/Zoom-And-Pan_img1.png)
 
 
 
@@ -176,7 +176,7 @@ Me.diagram1.View.ZoomType = ZoomType.TopLeft
 {% endhighlight %}
 {% endtabs %}
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img2.png)
+![Diagram Zoom type as Top-Left](Zoom-And-Pan_images/Zoom-And-Pan_img2.png)
 
 
 
@@ -186,7 +186,7 @@ Essential Diagram supports zooming the diagram document to the pointer position 
 
 
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img3.png)
+![Diagram Zoom type as pointer position](Zoom-And-Pan_images/Zoom-And-Pan_img3.png)
 
 
 
@@ -245,13 +245,13 @@ zoomTool.ZoomIncrement = 10
 {% endtabs %}
 
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img4.png)
+![Diagram Zoom Tool](Zoom-And-Pan_images/Zoom-And-Pan_img4.png)
 
 
 
 
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img5.png)
+![Diagram Zooming particular region using Zoom-Tool](Zoom-And-Pan_images/Zoom-And-Pan_img5.png)
 
 ## Panning Support
 
@@ -277,4 +277,4 @@ Sample diagram is as follows.
 
 
 
-![](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)
+![Diagram Panning](Zoom-And-Pan_images/Zoom-And-Pan_img6.jpeg)

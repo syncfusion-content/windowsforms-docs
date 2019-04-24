@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo-or-Redo | Windows Forms | Syncfusion
-description: Undo or Redo
+description: This section explains about how to revert/restore the changes using Undo and Redo commands in Diagram control
 platform: windowsforms
 control: Diagram
 documentation: ug

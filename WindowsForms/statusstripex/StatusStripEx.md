@@ -15,7 +15,7 @@ Essential Tools has come up with StatusStripEx control which can be added to the
 
 ## Creating a StatusStripEx
 
-#### Through designer
+### Through designer
 
 The StatusStripEx can be added to the form by dragging a StatusStripEx control from the Toolbox. It can be docked to the bottom of the RibbonControlAdv. 
 
@@ -83,9 +83,33 @@ Me.statusStripEx1.Dock = Syncfusion.Windows.Forms.Tools.DockStyleEx.Bottom
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates the creation of StatusStripEx control and adding ToolStripStatus Items are available in the below sample installation location.
+## StatusStripEx Items
 
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+The `StatusStripEx` control has two types of items.
+
+* StatusControl items
+
+* Notification items
+
+### StatusControl items
+
+The StatusControl items is placed to right side of the StatusStripEX when added. The StatusControl items are listed below,
+	
+* StatusLabel
+* ProgressBar
+* DropDownButton
+* SplitButton
+
+### Notification items 
+
+The Notification items is placed to left side of the StatusStripEx when added. The Notification items are listed below,
+
+* StatusStripLabel
+* StatusStripProgressBar
+* StatusStripDropDownButton
+* StatusStripSplitButton
+
+N> StatusControl items and Notification items are same type of items. For example, If you select StatusStripLabel, it will be added to the left side of StatusStripEx. Similarly, if you select StatusLabel, it will be added to the right side of StatusStripEx.
 
 ## Smart tag options
 
@@ -99,16 +123,31 @@ The options are,
 
 ### StatusControl items
 
-* Add StatusLabel - Adds a status label item.
-* Add ProgressBar - Adds a ProgressBar item.
-* Add DropDownButton - Adds a dropdown button item.
-* Add SplitButton - Adds a split button item.
-* Add PanelItem - Adds a Panel item.
-* Add TrackBar Item - Adds a TrackBar item.
+<table>
+<th>Methods</th>
+<th>Description</th>
+<tr><td>Add StatusLabel</td><td>Represents that adds a status label item.</td></tr>
+<tr><td>Add ProgressBar</td><td>Represents that adds a ProgressBar item.</td></tr>
+<tr><td>Add DropDownButton</td><td>Represents that adds a dropdown button item.</td></tr>
+<tr><td>Add SplitButton</td><td>Represents that adds a split button item.</td></tr>
+<tr><td>Add PanelItem</td><td>Represents that adds a Panel item.</td></tr>
+<tr><td>Add TrackBarItem</td><td>Represents that adds a TrackBar item.</td></tr>
+</table>
+
 
 ### Notifications items
 
-* Add StatusStripButton - Adds a Button item.
+<table>
+<th>Methods</th>
+<th>Description</th>
+<tr><td>Add StatusStripButton</td><td>Represents that adds a Button item.</td></tr>
+<tr><td>Add StatusStripLabel</td><td>Represents that adds status strip label item.</td></tr>
+<tr><td>Add StatusStrip ProgressBar</td><td>Represents that adds progressbar to the status bar</td></tr>
+<tr><td>Add StatusStrip DropDownButton</td><td>Represents that adds dropdown button to the status bar.</td></tr>
+<tr><td>Add StatusStrip SplitButton</td><td>Represents that adds split button to the status bar.</td></tr>
+<tr><td>Add StatusStrip PanelItem</td><td>Represents that adds panel item to the status bar.</td></tr>
+</table>
+
 
 ## SizingGrip settings
 
@@ -220,7 +259,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 
 ![Custom colors for StatusStripEx](StatusStripEx_images/StatusStripEx_img10.jpeg)
 
-## Custom context mMenu
+## Custom context Menu
 
 It is possible to customize the status bar context menu that displays in StatusStripEx, to look like Word2007. This can be done by setting StatusString property of NotificationItems like StatusStrip Button, StatusStripLabel, so on.
 
