@@ -290,7 +290,7 @@ CalcEngine.ParseDateTimeSeparator = '-';
 
 ### RethrowLibraryComputationExceptions
 
-Gets or sets whether the `CalcEngine` rethrow any exception raised during the computation of a library function. The default value is false.
+Gets or sets whether the `CalcEngine` throws any exception that occurs during the computation of a library function. It throws an error message from FormulaErrorStrings collection. The default value of  of `RethrowLibraryComputationExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
 
 ### SupportLogicalOperators
 
