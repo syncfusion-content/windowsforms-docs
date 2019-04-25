@@ -207,7 +207,7 @@ _FIND(text1,text2, num)_
 
 
 
-The `FindB` function finds one text string (text1) within another text string (text2) and returns the number of the starting position of text1, based on the number of bytes each character uses, from the first character of text2. 
+The `FindB` function finds one text string (text1) within another text string (text2) and returns the number of the starting position of text1 based on the number of bytes each character uses from the first character of text2.
 
 
 
@@ -223,7 +223,7 @@ _FINDB(text1,text2, num)_
 
 
 
-* text1 is the text that is to be found.
+* text1 is the text to be found.
 
 
 
@@ -231,7 +231,7 @@ _FINDB(text1,text2, num)_
 
 
 
-* num specifies the character where to start the search.
+* num specifies a character, from where the search to be started.
 
 
 
