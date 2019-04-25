@@ -101,7 +101,7 @@ Load the Theme assembly in Program.cs of your application and the initialize a S
         static void Main()
         {
 			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
-            SfSkinManager.LoadAssembly(typeof(VioletTheme).Assembly);
+            SkinManager.LoadAssembly(typeof(VioletTheme).Assembly);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
@@ -117,7 +117,7 @@ Module Program
     <STAThread>
     Private Sub Main()
         Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
-        SfSkinManager.LoadAssembly(GetType(VioletTheme).Assembly)
+        SkinManager.LoadAssembly(GetType(VioletTheme).Assembly)
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
