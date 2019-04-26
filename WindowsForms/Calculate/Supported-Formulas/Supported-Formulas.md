@@ -186,6 +186,8 @@ The following are the list of formulas supported in Calculate library,
 
 [FIND](/windowsforms/calculate/supported-formulas/text-formulas#find)
 
+[FINDB](/windowsforms/calculate/supported-formulas/text-formulas#findB)
+
 [FISHER](/windowsforms/calculate/supported-formulas/statistical#fisher)
 
 [FISHERINV](/windowsforms/calculate/supported-formulas/statistical#fisherinv)
