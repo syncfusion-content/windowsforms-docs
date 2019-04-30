@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a Syncfusion References via Syncfusion Reference Manger | windowsforms | Syncfusion
+title: Add a Syncfusion References| windowsforms | Syncfusion
 description: add a syncfusion references via syncfusion reference manger
 platform: windowsforms
 control: Syncfusion Extensions

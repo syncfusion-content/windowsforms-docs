@@ -22,7 +22,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1:**  
-   Open an existing Syncfusion WinFroms Application, Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion WinForms Application, Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Troubleshoot…** in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter.png)
 
@@ -85,7 +85,7 @@ The Syncfusion Troubleshooter deals with the following NuGet package related iss
 
 1. Multiple versions of Syncfusion NuGet Packages are installed. If Syncfusion NuGet Package version is differ from other Syncfusion NuGet Package version, the Syncfusion Troubleshooter will show Syncfusion NuGet package version is mismatched. 
 
-   **For Instance:** Syncfusion Windows Forms platform packages installed multiple version (v16.4.0.54 & v17.1.0.38), Syncfusion Troubleshooter will be shown Syncfusion package version mismatched.
+   **For Instance:** Syncfusion WinForms platform packages installed multiple version (v16.4.0.54 & v17.1.0.38), Syncfusion Troubleshooter will be shown Syncfusion package version mismatched.
  
    ![Syncfusion NuGet Packages version mismatched issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img7.png)
 
