@@ -45,11 +45,11 @@ In Solution Explorer, Right click of the dependencies. Select `Add a reference`.
 
 ![NETcore showing assembly](NETcore_images/NETcore_assembly.jpeg)
 
+N> You can only get assemblies from `netcoreapp3.0` for .NET core application and assembly is placed in this location. **Location**: C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.1.0.38\precompiledassemblies
+
 ### Add NuGet Package
 
 Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
-
-N> You can only get assemblies from `netcoreapp3.0` for .NET core application and assembly is placed in this location. **Location**: C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\17.1.0.38\precompiledassemblies
 
 
 ### Add ButtonAdv control through code
