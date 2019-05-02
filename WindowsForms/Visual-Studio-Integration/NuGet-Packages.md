@@ -29,7 +29,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2.	Select the NuGet.org from the Package source drop-down. . 
+2.	Select the NuGet.org from the Package source drop-down. 
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img4.png)             
 
@@ -57,10 +57,10 @@ To reference the Syncfusion Windows Forms component using the Package Manager Co
 
     ~~~
     #install specified package in default project
-    Install-Package Syncfusion.Chart.Windows46
+    Install-Package Syncfusion.SfChart.Windows
 
     #install specified package in specified project 
-    Install-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
+    Install-Package Syncfusion.SfChart.Windows -ProjectName SyncfusionDemoApplication
     ~~~
 
 ## Managing NuGet package using NuGet CLI
@@ -88,13 +88,10 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
     ~~~
     #install specific package 
-    nuget.exe install “Syncfusion.Chart.Windows46”
+    nuget.exe install “Syncfusion.SfChart.Windows”
 
     #install all package which mention in package.config path 
     nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-    #install specific Syncfusion NuGet package with specific Syncfusion Package Source
-    nuget.exe install “Syncfusion.Chart.Windows46”  –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
 N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
@@ -133,10 +130,10 @@ To update the installed Syncfusion Windows Forms NuGet packages using the Packag
 
     ~~~
     #Update specified Syncfusion Windows Forms NuGet package 
-    Update-Package Syncfusion.Chart.Windows46
+    Update-Package Syncfusion.SfChart.Windows
 
     #Update specified package in specified project 
-    Update-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
+    Update-Package Syncfusion.SfChart.Windows -ProjectName SyncfusionDemoApplication
     ~~~
 
 ### Using NuGet CLI
