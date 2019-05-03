@@ -62,7 +62,7 @@ We are now going to see a demo on how to add **"ButtonAdv"** control in WinForms
 
 * Syncfusion.Shared.Base
 
-**Step 2**: Create an instance of the control. Assign necessary properties with proper values and add the contol instance to the form. 
+**Step 2**: Create an instance of the control. Assign necessary properties with proper values and add the control instance to the form. 
 
 {% tabs %}
 {% highlight c# %}
@@ -353,7 +353,7 @@ RibbonControlAdv<br/><br/></td></tr>
 RibbonForm<br/><br/></td></tr>
 <tr>
 <td>
-RibbonPanelMegeContainer<br/><br/></td></tr>
+RibbonPanelMergeContainer<br/><br/></td></tr>
 <tr>
 <td>
 ScheduleControl<br/><br/></td></tr>
