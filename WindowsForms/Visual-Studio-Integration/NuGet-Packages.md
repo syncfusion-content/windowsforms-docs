@@ -9,7 +9,11 @@ documentation: ug
 
 # NuGet Packages
 
-[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to development with the Syncfusion Windows Forms controls. From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to development with the Syncfusion Windows Forms controls. 
+
+From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WinForms application to use Syncfusion controls.
 
 N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
@@ -17,7 +21,7 @@ N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish N
 
 ### Using NuGet Package Manager
 
-The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
+The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project.
 
 1.	Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
 
@@ -25,17 +29,17 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2.	By default, the NuGet.org package is selected in the **Package source** drop-down. If NuGet.org is not configured in your Visual Studio, refer to the [Microsoft docs](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to configure NuGet.org feed URL in your Visual Studio. 
+2.	Select the NuGet.org from the Package source drop-down. 
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img4.png)             
 
-3.	The NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+3.	All the Syncfusion NuGet Packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
-To reference the Syncfusion Windows Forms component using the Package Manager Console as NuGet packages, follow the below steps. 
+To reference the Syncfusion Windows Forms component using the Package Manager Console as NuGet packages, follow the below steps: 
 
 1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
 
@@ -53,17 +57,17 @@ To reference the Syncfusion Windows Forms component using the Package Manager Co
 
     ~~~
     #install specified package in default project
-    Install-Package Syncfusion.Chart.Windows46
+    Install-Package Syncfusion.SfChart.Windows
 
     #install specified package in specified project 
-    Install-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
+    Install-Package Syncfusion.SfChart.Windows -ProjectName SyncfusionDemoApplication
     ~~~
 
 ## Managing NuGet package using NuGet CLI
 
 The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command.
 
@@ -84,16 +88,13 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
     ~~~
     #install specific package 
-    nuget.exe install “Syncfusion.Chart.Windows46”
+    nuget.exe install “Syncfusion.SfChart.Windows”
 
     #install all package which mention in package.config path 
     nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-    #install specific Syncfusion NuGet package with specific Syncfusion Package Source
-    nuget.exe install “Syncfusion.Chart.Windows46”  –Source “https://nuget.syncfusion.com/nuget_windows-forms/nuget/getsyncfusionpackages/windows-forms”
     ~~~
 
-N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
@@ -129,25 +130,25 @@ To update the installed Syncfusion Windows Forms NuGet packages using the Packag
 
     ~~~
     #Update specified Syncfusion Windows Forms NuGet package 
-    Update-Package Syncfusion.Chart.Windows46
+    Update-Package Syncfusion.SfChart.Windows
 
     #Update specified package in specified project 
-    Update-Package Syncfusion.Chart.Windows46 -ProjectName SyncfusionDemoApplication
+    Update-Package Syncfusion.SfChart.Windows -ProjectName SyncfusionDemoApplication
     ~~~
 
 ### Using NuGet CLI
 
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version. 
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
-    N> To update the existing nuget.exe to latest version use the following command. 
+    N> To update the existing nuget.exe to latest version use the following command: 
 
     ~~~
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Forms NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Windows Forms NuGet packages:
 
     ~~~ 
     #update all NuGet packages from config file
@@ -204,7 +205,7 @@ You should get the private Syncfusion Windows Forms NuGet feed URL to install or
 
 #### NuGet CLI 
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command.
 
