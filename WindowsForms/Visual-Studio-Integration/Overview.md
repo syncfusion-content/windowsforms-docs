@@ -7,8 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Windows Forms Extension
-
+# Overview
 
 The Syncfusion WinForms Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio. The Syncfusion WinForms Extensions supports Microsoft Visual Studio 2013 or higher.
 
@@ -19,9 +18,9 @@ I> The Syncfusion WinForms menu option is available from v17.1.0.32.
 The Syncfusion provides the following supports in Visual Studio:
 
 1.	[Create Project](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Visual-Studio-Extensions/Create-Project): Creates the Syncfusion WinForms application by adding the required Syncfusion assemblies and forms.
-2.	[Item Template](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Visual-Studio-Extensions/Item-Templates): Add predefined Syncfusion items (Forms) and the required Syncfusion assemblies in WinForms Application.
+2.	[Item Template](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Visual-Studio-Extensions/Item-Template): Add predefined Syncfusion items (Forms) and the required Syncfusion assemblies in WinForms Application.
 3.	[Add References](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Visual-Studio-Extensions/Add-References): Add the required Syncfusion assembly to Windows project reference based on the selected control(s).
-4.	[Toolbox](https://help.syncfusion.com/common/essential-studio/utilities#toolbox-configuration): To configure the Syncfusion controls into the Visual Studio .NET toolbox.
+4.	[Toolbox](https://help.syncfusion.com/windowsforms/visual-studio-integration/toolbox-configuration): To configure the Syncfusion controls into the Visual Studio .NET toolbox.
 5.	[Troubleshooting](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/Visual-Studio-Extensions/Troubleshooting): Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
 
 **No project selected in Visual Studio**
