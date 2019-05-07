@@ -96,7 +96,7 @@ Follow the steps to create an appointment:
 
 This file defines several classes that implements  the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
 
-Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample sample. Drill down to this folder and add this file to your project by using the Solution Explorer window.
+Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Schedule sample](https://github.com/syncfusion/winforms-demos/tree/master/Schedule.Windows/Samples/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
 ![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img12.jpeg)
 
@@ -135,7 +135,7 @@ namespace ScheduleSample
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			SimpleScheduleDataProvider data = new SimpleScheduleDataProvider();
-			data.MasterList = new SimpleScheduleItemList();
+			data.MasterList = new SimpleScheduleAppointmentList();
 			data.FileName = "default.schedule";
 			this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
 			this.scheduleControl1.DataSource = data;
@@ -167,7 +167,7 @@ Namespace ScheduleSample
 
         Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
             Dim data As SimpleScheduleDataProvider = New SimpleScheduleDataProvider()
-            data.MasterList = New SimpleScheduleItemList()
+            data.MasterList = New SimpleScheduleAppointmentList()
             data.FileName = "default.schedule"
             Me.scheduleControl1.ScheduleType = ScheduleViewType.Month
             Me.scheduleControl1.DataSource = data
@@ -271,7 +271,7 @@ namespace ScheduleSample
 			else
 			{
     			data = new SimpleScheduleDataProvider();
-				data.MasterList = new SimpleScheduleItemList();
+				data.MasterList = new SimpleScheduleAppointmentList();
 				data.FileName = "default.schedule";
 			}
 				this.scheduleControl1.ScheduleType = ScheduleViewType.Month;
@@ -310,7 +310,7 @@ Namespace ScheduleSample
                 data.FileName = "default.schedule"
             Else
                 data = New SimpleScheduleDataProvider()
-                data.MasterList = New SimpleScheduleItemList()
+                data.MasterList = New SimpleScheduleAppointmentList()
                 data.FileName = "default.schedule"
             End If
 
