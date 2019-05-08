@@ -144,6 +144,39 @@ toolTipInfo1.Separator = True
 
 {% endtabs %}
 
+### Show/Hide
+
+The visibility of the SuperToolTip can be changed by setting `ShowToolTip`. Default value is True.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+ShowToolTip</td><td>
+Gets or sets the value indicating whether to show or hide the SuperToolTip.</td></tr>
+</table>
+
+The following code example illustrates how to set `ShowToolTip` for the SuperToolTip.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.superToolTip1.ShowToolTip = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.superToolTip1.ShowToolTip = true
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Visual style
 
 SuperToolTip control supports Visual styles such as Default, Metro, Office2016Colorful, Office2016White, Office2016Black and Office2016DarkGray.
