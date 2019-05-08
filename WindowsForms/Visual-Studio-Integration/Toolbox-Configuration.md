@@ -18,11 +18,11 @@ Use the following steps to adds the Syncfusion WinForms controls through the Syn
 1. To launch Toolbox configuration utility, follow either one of the options below:
 
    **Option 1:**  
-   Choose **Syncfusion menu** in **Visual Studio**. Then, select corresponding platform menu and click **Toolbox Configuration…**
+   Click **Syncfusion menu** and choose **Essential Studio for WinForms > Toolbox Configuration...** in **Visual Studio**.
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**   
    To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
@@ -46,7 +46,7 @@ Use the following steps to adds the Syncfusion WinForms controls through the Syn
    
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
-3. An Information message is displayed indicating the successful configuration of Toolbox. Click OK.
+3. An Information message is displayed indicating the successful configuration of Toolbox. Click **OK**.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    

@@ -56,14 +56,14 @@ Syncfusion Project Template can also be added from the Visual Studio Item Templa
 
 1. To create a Syncfusion WinForms item template, follow either one of the options below:
    
-   **Option 1:**  
+   **Option 1**  
    Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Add Office2010Form...** or any other Form in **Visual Studio**.
 
    ![Syncfusion Project Template can be also add from the Visual Studio Item Template via Syncfusion Menu](Item-Template-images\Syncfusion_Menu_ItemTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
-   **Option 2:**
+   **Option 2**
    Right-click the Windows Forms Project, select **Add > New Item**, and then navigate to **Visual C# Items or VB Items > Syncfusion > Windows**. Refer to the following screenshot for more information.
    
    ![Syncfusion Project Template can be also add from the Visual Studio Item Template](Item-Template-images\Syncfusion-Add-New-Item-1.png)

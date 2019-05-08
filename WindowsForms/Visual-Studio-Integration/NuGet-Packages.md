@@ -29,11 +29,11 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2.	Select the NuGet.org from the Package source drop-down. 
+2.	Select the NuGet.org from the **Package source** drop-down. 
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img4.png)             
 
-3.	All the Syncfusion NuGet Packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
+3.	All the Syncfusion NuGet packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
 N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/windowsforms/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
@@ -105,7 +105,7 @@ NuGet packages can be updated to their specific version or latest version availa
 1. Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
    Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
+2. Select the **Updates** tab to see the packages available for update. Select the required packages and the specific version from the dropdown, and click the **Update** button.
 
 ### Using Package Manger Console
 
