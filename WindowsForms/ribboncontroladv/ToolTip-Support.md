@@ -46,11 +46,11 @@ Essential Tools has come up with a new control known as the SuperToolTip which, 
 1.	Drag and drop the SuperToolTip on your form.
 2.	When the SuperToolTip component is added to a form, an extended property will be added to the properties of every item in the RibbonControlAdv.
 
-![](ToolTip_Support_Images/ToolTip-Support_img1.jpg)
+![SuperToolTip property window in designer](ToolTip_Support_Images/ToolTip-Support_img1.jpg)
 
 3.	Clicking the … ellipse button will show the ToolTip Editor Dialog Box. This editor lets you customize the ToolTip items.
 
-![](ToolTip_Support_Images/ToolTip-Support_img2.jpg)
+![ToolTip Editor dialog box](ToolTip_Support_Images/ToolTip-Support_img2.jpg)
 
 Through code
 
@@ -93,7 +93,7 @@ Me.superToolTip1.SetToolTip(Me.newMailButton, toolTipInfo1)
 
 {% endtabs %}
 
-![](ToolTip_Support_Images/ToolTip-Support_img3.jpg)
+![SuperToolTip in Ribbon](ToolTip_Support_Images/ToolTip-Support_img3.jpg)
 
 ### Appearance settings
 
