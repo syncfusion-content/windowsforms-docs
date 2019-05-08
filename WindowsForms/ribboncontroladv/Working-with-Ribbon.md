@@ -16,17 +16,17 @@ Auto hide is a state in ribbon in which the ribbon waits for a click, ribbon won
 
 *	Maximized State
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img1.jpg)
+![Ribbon in Show Tabs and Commands mode](Working_with_Ribbon_Images/Working-with-Ribbon_img1.jpg)
 
 *  	Minimized State
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img2.jpg)
+![Ribbon in Show Tabs mode](Working_with_Ribbon_Images/Working-with-Ribbon_img2.jpg)
 
 ### State change through display option button
 
 Ribbon state can be changed by using the Ribbon display option button, which is present at the right top of the window.
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img3.jpg)
+![Changing Ribbon state using Display option button](Working_with_Ribbon_Images/Working-with-Ribbon_img3.jpg)
 
 The visibility of this option button can be changed by using a Boolean property `ShowRibbonDisplayOptionButton`.
 
@@ -113,7 +113,7 @@ Me.ribbonControlAdv1.ShowMinimizeButton = True
 
 {% endtabs %}
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img4.jpg)
+![Ribbon State change using MinimizeButton](Working_with_Ribbon_Images/Working-with-Ribbon_img4.jpg)
 
 ### State change through ContextMenu
 
@@ -159,7 +159,7 @@ By default, the ribbon control dynamically resizes as width of the window decrea
 Same behavior will be continued to every ToolStripEx while minimized continuously. 
 Again, the ToolStripEx will be visible if the spacing between window border and ToolStripEx has enough space to allocate all the items in that ToolStripEx.
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img5.jpg)
+![Ribbon in default Collapse Behavior state](Working_with_Ribbon_Images/Working-with-Ribbon_img5.jpg)
 
 This behavior can be changed with the ribbon property `CollapseBehavior` change the property to 2010, while minimizing, the items in the toolstrip will be converted into small buttons and will be converted to extra small buttons and then finally the toolstrip will be converted to dropdown button.
 
@@ -179,7 +179,7 @@ Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
 
 {% endtabs %}
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img6.jpg)
+![Ribbon in Office2010 Collapse Behavior state](Working_with_Ribbon_Images/Working-with-Ribbon_img6.jpg)
 
 ## Launcher Button
 
@@ -187,7 +187,7 @@ Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
 
 Set the property `ShowLauncher` of that ToolStripEx as true to access the launcher button at the corner of the ToolStripEx.
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img7.jpg)
+![Accessing the Launcher button](Working_with_Ribbon_Images/Working-with-Ribbon_img7.jpg)
 
 ### Hide Launcher Button
 
@@ -214,7 +214,7 @@ Me.ribbonControlAdv1.ShowLauncher = False
 
 Essential Tools has come up with `StatusStripEx` control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
-![](Working_with_Ribbon_Images/Working-with-Ribbon_img8.jpg)
+![Using StatusStripEx in Ribbon](Working_with_Ribbon_Images/Working-with-Ribbon_img8.jpg)
 
 ## Ribbon default Shortcut
 
