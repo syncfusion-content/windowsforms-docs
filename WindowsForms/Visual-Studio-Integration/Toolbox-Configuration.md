@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbox Configuration | windowsforms | Syncfusion
+title: Toolbox Configuration | WinForms | Syncfusion
 description: This section provides information regarding all the Syncfusion Essential Studio utilities and its usage
 platform: windowsforms
 control: Essential Studio

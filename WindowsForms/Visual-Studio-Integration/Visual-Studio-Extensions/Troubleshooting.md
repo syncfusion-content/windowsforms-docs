@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Troubleshooting | windowsforms | Syncfusion
+title: Troubleshooting | WinForms | Syncfusion
 description: Syncfusion Troubleshooter is Visual Studio extension to troubleshoot the configuration issues in Syncfusion assembly reference, webconfig entries in projects.
 platform: windowsforms
 control: Syncfusion Extensions

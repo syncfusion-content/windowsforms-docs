@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | windowsforms | Syncfusion
+title: Overview | WinForms | Syncfusion
 description: The Syncfusion Windows Extensions provides you with quick access to Project Templates to create or configure the Syncfusion Windows Forms Application
 platform: windowsforms
 control: Syncfusion Extensions
