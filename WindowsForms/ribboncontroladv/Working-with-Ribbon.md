@@ -46,6 +46,48 @@ Me.ribbonControlAdv1.ShowRibbonDisplayOptionButton = True
 
 {% endtabs %}
 
+### State change through property RibbonDisplayOption
+
+Ribbon state can be changed programmatically by setting `RibbonDisplayOption`. Default value of `RibbonDisplayOption` is `ShowTabsAndCommands`. The available Ribbon Display Options are:
+
+<table>
+<tr>
+<th>
+Enum</th><th>
+Description</th></tr>
+
+<tr>
+<td>
+AutoHide</td><td>
+Hide the Ribbon. Click at the top of the Ribbon to show it.</td></tr>
+<tr>
+<td>
+ShowTabs</td><td>
+Show Ribbon tabs only. Click a tab to show the commands.</td></tr>
+<tr>
+<td>
+ShowTabsAndCommands</td><td>
+Show Ribbon Tabs and Command all the time.</td></tr>
+</table>
+
+The following code example illustrates how to set `RibbonDisplayOption` for the RibbonControlAdv.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.RibbonDisplayOption = RibbonDisplayOption.ShowTabsAndCommands;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.RibbonDisplayOption = RibbonDisplayOption.ShowTabsAndCommands
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### State change in double click
 
 Ribbon state can be changed by double clicking on any of the ToolStripTabItem, this will minimize the ribbon if ribbon is in maximized state and vice versa.
