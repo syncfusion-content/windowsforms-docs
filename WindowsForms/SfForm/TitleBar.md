@@ -128,7 +128,7 @@ N> Adding rich text to the Text property will have no effect, if the `AllowRichT
 
 ## Loading user control to the title bar
 
-The SfForm allows you to load any user control into the title bar instead of title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfForm~TitleBarTextControl.html) property. Size of the user control should be set properly to fit the control within the title bar.
+The SfForm allows you to load any user control into the title bar instead of title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~TitleBarTextControl.html) property. Size of the user control should be set properly to fit the control within the title bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -168,7 +168,7 @@ The following sample shows how to load user control to the title bar:
 
 ## Appearance
 
-Appearance of the title bar can be customized by using the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) property that contains all the settings for customizing the title bar appearance.
+Appearance of the title bar can be customized by using the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) property that contains all the settings for customizing the title bar appearance.
 
 {% tabs %}
 {% highlight c# %}

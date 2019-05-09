@@ -95,7 +95,7 @@ Appearance of a filter row can be customized by using the [FilterRowStyle](https
 For more details, refer to `Appearance` in [Filter Row](https://help.syncfusion.com/windowsforms/sfdatagrid/filterrow#appearance ) section.
 
 ## Styling Scrollbars
-Appearance of the vertical scrollbar can be customized by using the [VerticalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~VerticalScrollBar.html) property.
+Appearance of the vertical scrollbar can be customized by using the [VerticalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle~VerticalScrollBar.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,7 +142,7 @@ Me.sfDataGrid1.Style.VerticalScrollBar.ScrollBarBackColor = Color.LightGray
 {% endhighlight %}
 {% endtabs %}
 
-Appearance of the horizontal scrollbar can be customized by using the [HorizontalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HorizontalScrollBar.html) property.
+Appearance of the horizontal scrollbar can be customized by using the [HorizontalScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle~HorizontalScrollBar.html) property.
 
 {% tabs %}
 {% highlight c# %}
