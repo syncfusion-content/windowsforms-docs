@@ -88,6 +88,12 @@ Me.ribbonControlAdv1.RibbonDisplayOption = RibbonDisplayOption.ShowTabsAndComman
 
 {% endtabs %}
 
+>NOTE
+
+>
+
+>This property can be used to change the state of the Ribbon at the startup of application by setting in the Form Load.
+
 ### State change in double click
 
 Ribbon state can be changed by double clicking on any of the ToolStripTabItem, this will minimize the ribbon if ribbon is in maximized state and vice versa.
