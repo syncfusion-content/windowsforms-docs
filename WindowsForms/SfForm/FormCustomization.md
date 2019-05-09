@@ -26,7 +26,7 @@ Me.Icon = New Icon("sfIcon.ico")
 {% endhighlight %}
 {% endtabs %}
 
-![](FormCustomization_images/Form_Image1.png)
+![SfForm shows icon](FormCustomization_images/Form_Image1.png)
 
 ### Form icon alignment
 
@@ -43,7 +43,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 {% endhighlight %}
 {% endtabs %}
 
-![](FormCustomization_images/Form_Image2.png)
+![Form icon is aligned in sfform](FormCustomization_images/Form_Image2.png)
 
 ## Form border
 
@@ -66,7 +66,7 @@ Me.Style.InactiveBorder = New Pen(Color.LightGray, 2)
 {% endhighlight %}
 {% endtabs %}
 
-![](FormCustomization_images/Form_Image3.png)
+![SfForm with customized border color](FormCustomization_images/Form_Image3.png)
 
 ## Shadow effect
 
@@ -89,6 +89,6 @@ Me.Style.InactiveShadowOpacity = 100
 {% endhighlight %}
 {% endtabs %}
 
-![](FormCustomization_images/Form_Image4.png)
+![SfForm with shadow effect](FormCustomization_images/Form_Image4.png)
 
 N> Shadow can be disabled by setting the `ShadowOpacity` property as zero.
