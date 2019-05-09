@@ -21,7 +21,7 @@ this.Style.TitleBar.Height = 45;
 Me.Style.TitleBar.Height = 45
 {% endhighlight %}
 {% endtabs %}
-![Form's titlebar shown with custom height](TitleBar_images/TitleBar_Image1.png)
+![Form titlebar shown with custom height](TitleBar_images/TitleBar_Image1.png)
 
 ## Text alignment
 
@@ -37,7 +37,7 @@ Me.Style.TitleBar.TextHorizontalAlignment = HorizontalAlignment.Center
 Me.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top
 {% endhighlight %}
 {% endtabs %}
-![Form's titlebar shown with text alignment](TitleBar_images/TitleBar_Image2.png)
+![Form titlebar shown with text alignment](TitleBar_images/TitleBar_Image2.png)
 
 ## Customization of title bar buttons
 
