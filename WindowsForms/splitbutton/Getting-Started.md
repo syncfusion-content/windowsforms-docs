@@ -9,25 +9,48 @@ documentation: ug
 
 # Getting Started
 
-## Adding SplitButton to an application
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"SplitButton"** with it's basic functionalities.
 
-### Adding through Visual Studio 
+## Assembly deployment
 
-The following are steps to add the SplitButton control to an Application through Visual Studio:
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splitbutton) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-1. Create a new Windows Form application in Visual Studio. 
-2. Drag SplitButton from the Toolbox tab to the designer.
+[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application. 
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+## Adding a SplitButton control through designer
 
-3. SplitButton control is added.
-4. Now customize the properties of SplitButton in the Properties Window. 
+The **"SplitButton"** control can be added through designer by following steps.
 
-###  Through code
+**Step 1**: Create a new Windows Forms application in Visual Studio. 
 
-Following are the steps to add the SplitButton control to an application through code:
+**Step 2**: The **"SplitButton"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
-1. Include the Tools Windows namespace as given in the following code:
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+
+   ![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
+
+**Step 3**: Set the desired properties for **"SplitButton"** control through the **"Properties"** dialog.
+
+**Step 4**: Run the application.
+
+ ![Windows forms SplitButton showing output through designer](Getting-Started_images/SplitButton_throughdesigner.png)
+
+## Adding a SplitButton control through code
+
+**Step 1**: Create a C# or VB application though Visual Studio.
+
+**Step 2**: Add the following assembly reference to the project.
+
+* Syncfusion.Shared.Base
+* Syncfusion.Tools.Windows
+
+**Step 3**: Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,98 +66,73 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-2. Create an instance of  SplitButton  control and add it to the form as given in the following code:
+**Step 4**: Create an instance of **"SplitButton"** control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
 
-Syncfusion.Windows.Forms.Tools.SplitButton splitButton;
-this.splitButton = new Syncfusion.Windows.Forms.Tools.SplitButton();
-this.Controls.Add(splitButton);
+Syncfusion.Windows.Forms.Tools.SplitButton splitButton1;
+splitButton1 = new Syncfusion.Windows.Forms.Tools.SplitButton();
+this.Controls.Add(splitButton1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton
-Me.splitButton = New Syncfusion.Windows.Forms.Tools.SplitButton()
-Me.Controls.Add(splitButton)
+Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton1
+splitButton1 = New Syncfusion.Windows.Forms.Tools.SplitButton()
+Me.Controls.Add(splitButton1)
 
 {% endhighlight %}
 {% endtabs %}
 
-## Appearance and structure of the control
+**Step 5**: Set the following properties for **"SplitButton"** control by through code.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+{% tabs %}
+{% highlight c# %}
 
-## Properties and events tables for SplitButton control
+this.splitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+this.splitButton1.BeforeTouchSize = new System.Drawing.Size(150, 43);
+this.splitButton1.DropDownIconColor = System.Drawing.Color.White;
+this.splitButton1.DropDownPosition = Syncfusion.Windows.Forms.Tools.Position.Bottom;
+this.splitButton1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.splitButton1.ForeColor = System.Drawing.Color.White;
+this.splitButton1.Location = new System.Drawing.Point(60, 33);
+this.splitButton1.MinimumSize = new System.Drawing.Size(75, 23);
+this.splitButton1.Name = "splitButton1";
+this.splitButton1.ShowDropDownOnButtonClick = false;
+this.splitButton1.Size = new System.Drawing.Size(150, 43);
+this.splitButton1.Style = Syncfusion.Windows.Forms.Tools.SplitButtonVisualStyle.Metro;
+this.splitButton1.TabIndex = 3;
+this.splitButton1.Text = "Find";
+this.splitButton1.ThemeName = "Metro";
 
-### Properties
+{% endhighlight %}
 
-Property Table
+{% highlight vb %}
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-ButtonMode </td><td>
-Specifies the mode of the button as normal or toggle.  </td><td>
-Normal </td><td>
-Enum </td><td>
-Button Mode</td></tr>
-<tr>
-<td>
-IsButtonChecked</td><td>
-Specifies the state of the button. This property can be set only when the ButtonMode is set to toggle.</td><td>
-Normal</td><td>
-Boolean</td><td>
-NA</td></tr>
-<tr>
-<td>
-DropDownItems</td><td>
-Sets the item to be added in the drop-down list.</td><td>
-Normal</td><td>
-ToolStripItemCollection</td><td>
-Adding Items to Drop-Down</td></tr>
-</table>
+Me.SplitButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(220, Byte), Integer))
+Me.SplitButton1.BeforeTouchSize = New System.Drawing.Size(150, 43)
+Me.SplitButton1.DropDownIconColor = Color.White
+Me.SplitButton1.DropDownPosition = Syncfusion.Windows.Forms.Tools.Position.Bottom
+Me.SplitButton1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+Me.SplitButton1.ForeColor = System.Drawing.Color.Black
+Me.SplitButton1.Location = New System.Drawing.Point(60, 33)
+Me.SplitButton1.MinimumSize = New System.Drawing.Size(75, 23)
+Me.SplitButton1.Name = "SplitButton1"
+MetroSplitButtonRenderer1.SplitButton = Me.SplitButton1
+Me.SplitButton1.Renderer = MetroSplitButtonRenderer1
+Me.SplitButton1.ShowDropDownOnButtonClick = False
+Me.SplitButton1.Size = New System.Drawing.Size(150, 43)
+Me.SplitButton1.Style = SplitButtonVisualStyle.Metro
+Me.SplitButton1.TabIndex = 3
+Me.SplitButton1.Text = "Find"
+Me.SplitButton1.ThemeName = "Metro"
+		
+{% endhighlight %}		
+{% endtabs %}
 
-### Events
+**Step 6**: Run the application.
 
-Events Table
+![Windows forms SplitButton showing output through code](Getting-Started_images/SplitButton_throughcode.png)
 
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-DropDownItemChecked</td><td>
-Will be triggered when drop-down item is clicked. </td><td>
-ToolStripItemClickedEventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-<tr>
-<td>
-Checked</td><td>
-Will be triggered when the button is checked.This event can be triggered only when the button is in toggle mode. </td><td>
-EventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-<tr>
-<td>
-UnChecked</td><td>
-Will be triggered when the button is unchecked.This event can be triggered only when the button is in toggle mode. </td><td>
-EventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-</table>
