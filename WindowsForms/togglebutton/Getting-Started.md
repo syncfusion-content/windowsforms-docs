@@ -30,15 +30,12 @@ The **"ToggleButton"** control can be added through designer by following steps.
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
 * Syncfusion.Shared.Base
-* Syncfusion.SpellChecker.Base
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
 
 ![Drag and drop togglebutton from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
-**Step 3**: Run the application.
 
-![Windows Forms ToggleButton showing output through designer](Getting-Started_images/ToggleButton_throughdesigner.png)
 
 ## Adding a ToggleButton control through code
 
@@ -86,9 +83,7 @@ Me.Controls.Add(togglebutton1)
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5**: Run the application.
 
-![Windows Forms ToggleButton showing output through designer](Getting-Started_images/ToggleButton_throughcode.png)
 
 ### Configuring the ToggleButton
 
