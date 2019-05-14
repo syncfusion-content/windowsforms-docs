@@ -37,9 +37,6 @@ The **"SplitButton"** control can be added through designer by following steps.
 
 **Step 3**: Set the desired properties for **"SplitButton"** control through the **"Properties"** dialog.
 
-**Step 4**: Run the application.
-
- ![Windows forms SplitButton showing output through designer](Getting-Started_images/SplitButton_throughdesigner.png)
 
 ## Adding a SplitButton control through code
 
@@ -132,7 +129,4 @@ Me.SplitButton1.ThemeName = "Metro"
 {% endhighlight %}		
 {% endtabs %}
 
-**Step 6**: Run the application.
-
-![Windows forms SplitButton showing output through code](Getting-Started_images/SplitButton_throughcode.png)
 
