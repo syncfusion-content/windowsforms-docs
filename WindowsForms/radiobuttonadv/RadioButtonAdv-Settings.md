@@ -3,7 +3,7 @@ layout: post
 title: RadioButtonAdv -Settings | WindowsForms | Syncfusion
 description: radiobuttonAdvsettings
 platform: WindowsForms
-control: EditorsPackage
+control: RadioButtonAdv
 documentation: ug
 ---
 
@@ -11,13 +11,11 @@ documentation: ug
 
 This section discusses the various states of the RadioButtonAdv control and the method of associating values with the states.
 
-It includes the below given topics.
 
 ## RadioButtonAdv states
 
 The RadioButtonAdv can be displayed in two different states which have been described below.
 
-Property Table
 
 <table>
 <tr>
@@ -44,13 +42,8 @@ Me.radioButtonAdv1.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/Overview_img632.jpeg)
+ ![Windows forms RadioButtonAdv shows various states](Overview_images/RadioButtonAdv_states.jpeg)
 
-{%seealso%}
-
-RadioButtonAdv Values, Image Settings, RadioButtonAdv Events
-
-{%endseealso%}
 
 ## RadioButtonAdv values
 
@@ -58,7 +51,6 @@ This section discusses how values can be associated with the various check state
 
 Both integer and string values can be associated with the check states as follows.
 
-Property Table
 
 <table>
 <tr>
@@ -108,9 +100,3 @@ Me.radioButtonAdv1.IntValue = 5
 
 {% endhighlight %}
 {% endtabs %}
-
-{%seealso%}
-
-RadioButtonAdv States, Image Settings
-
-{%endseealso%}

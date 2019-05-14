@@ -3,15 +3,13 @@ layout: post
 title: Border-Settings | WindowsForms | Syncfusion
 description: border settings
 platform: WindowsForms
-control: EditorsPackage
+control: RadioButtonAdv
 documentation: ug
 ---
 
 # Border Settings
 
 Color and Styles can be applied to the border of the RadioButtonAdv as discussed below.
-
-Property Table
 
 <table>
 <tr>
@@ -67,11 +65,7 @@ Me.radioButtonAdv1.HotBorderColor = System.Drawing.Color.DarkOrange
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/Overview_img638.jpeg) 
+ ![Windows forms RadioButtonAdv changing the border color](Overview_images/RadioButtonAdv_border.jpeg) 
 
 
- ![](Overview_images/Overview_img639.jpeg) 
-
-A sample which demonstrates the Border Settings of RadioButtonAdv is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+ ![Windows forms RadioButtonAdv changing the border color during mouse hover on control](Overview_images/RadioButtonAdv_changeborder.jpeg) 
