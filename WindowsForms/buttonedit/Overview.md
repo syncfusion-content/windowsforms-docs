@@ -9,14 +9,19 @@ documentation: ug
 
 # Overview
 
-The ButtonEdit control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file / folder browser or a drop-down text control. We can implement a file picker and folder browser using the ButtonEdit control. Drop-down popup controls can also be shown using the ButtonEdit control and the PopupContainerControl.
+The ButtonEdit control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file / folder browser or a drop-down text control.
 
-The edit control with a browse button extends a regular edit control by adding a button which can display an user-defined "browse" dialog. The ButtonEdit control provides an easy way to create controls with an edit control and any number of associated buttons. 
-
-![Overview of ButtonEdit](Overview_images/Overview_img78.jpeg) 
+![Overview of ButtonEdit](Overview_images/OVerview.png) 
 
 
+## Key Features
 
-The ButtonEdit control derives from Syncfusion.Windows.Forms.ContainerControl and embeds one or more ButtonEditChildButton controls. The ButtonEditChildButton controls derive from Syncfusion.Windows.Forms.Button class and expose the functionality of buttons. 
+**RightToLeft** - Support right to left.
 
-Using an edit control alongside one or more button controls is a very common requirement in graphical user interface programming. Some of the common examples are browse edit controls and drop-down controls. 
+**ButtonTypes** - Provides different set of buttons. The types are, Normal, Calculator, Currency, Up, Down, ComboXPDown, Left, Right and etc..
+
+**Image Settings** - Supports set of an image for the child buttons.
+
+**Appearance** - We can customize the text, image, border sides and button style.
+
+**Themes** - Supports set of visual styles to customize the look and feel of ButtonEdit control.
