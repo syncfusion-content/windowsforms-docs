@@ -37,7 +37,7 @@ The **"ButtonEdit"** control can be added through designer by following steps.
 
 ![Showing control added to the form](Overview_images/Overview_img80.jpeg) 
 
-**Step 3**: We can add child buttons to the control using **"ButtonEditChildButton Collection Editor"** which is invoked by `Buttons` property.
+**Step 3**: We can add child buttons to the control using **"ButtonEditChildButton Collection Editor"** which is displayed by `Buttons` property.
 
    ![Showing add new child buttons in to the control](Overview_images/Overview_addchild.png)
 
@@ -52,9 +52,6 @@ Editor can also be accessed using Smart Tag option.
 
 N> You can also add or remove child buttons through the **"Add"** or **"Remove"** button.
 
-**Step 5**: Run the application.
-
-   ![Windows forms ButtonEdit showing at run time](Overview_images/Overview_throughdesign.png) 
 
 ## Adding a ButtonEdit control through Code
 
@@ -164,27 +161,9 @@ Me.Controls.Add(Me.buttonEdit1)
 {% endhighlight %}
 {% endtabs %}
 
-**Step 8**: Run the application.
-
-   ![Windows forms ButtonEdit showing at run time](Overview_images/Overview_throughcode.png)
 
 
-## Alignement settings for child buttons
-
-### Adding child button through design
-
-**Step 1**: Add child buttons to the control using **"Buttons Collection"**  in **"Property"** dialog. Now, **"ButtonEditChildButton Collection Editor"** dialog will be opened.
-
-**Step 2**: Click **"Add"** for adding child buttons to the control, like in the below screenshot.
-
-![Windows Forms ButtonEdit showing adding child buttons](Overview_images/Overview_childbuttons.png)
-
-**Step 3**: Set the alignment for child buttons, like in below screenshot,
-
-![Windows Forms ButtonEdit showing adding child buttons](Overview_images/Overview_alignment.png)
-
-
-### Adding child button through code
+## Adding child buttons
 
 **Step 1**: Add the child buttons to the control using below code.
 
@@ -218,13 +197,35 @@ Me.buttonEditChildButton3 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildBu
 
 {% endtabs %}
 
-**Step 2**: Set the alignment and text for the buttons.
+**Step 2**: Add child buttons to the **"ButtonEdit"** which then add it to the form.
 
 {% tabs %}
 
 {% highlight c# %}
 
-//Setting Button alignment for Child Button 1
+this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
+this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
+this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
+Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
+Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
+
+{% endhighlight vb %}
+
+{% endtabs %}
+
+**Step 3**: Set the alignment and text for the buttons.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Setting Button alignment for ChildButton1
 
 //By default the alignment for other buttons will be right
 this.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
@@ -251,29 +252,5 @@ Me.buttonEditChildButton3.Text = "E"
 {% endhighlight vb %}
 
 {% endtabs %}
-
-**Step 3**: Add child buttons to the **"ButtonEdit"** which then add it to the form.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
-
-{% endhighlight vb %}
-
-{% endtabs %}
-
-**Step 4**: Run the application.
 
 ![Windows Forms ButtonEdit showing output](Overview_images/Overview_output.png)

@@ -16,12 +16,12 @@ The ButtonEdit control embeds a text box control with a collection of button con
 
 ## Key Features
 
-**RightToLeft** - Support right to left.
+**RightToLeft** - Support right to left layout.
 
 **ButtonTypes** - Provides different set of buttons. The types are, Normal, Calculator, Currency, Up, Down, ComboXPDown, Left, Right and etc..
 
 **Image Settings** - Supports set of an image for the child buttons.
 
-**Appearance** - We can customize the text, image, border sides and button style.
+**Appearance** - Supports wide variety of built-in themes and also has ability to customize all elements in control with respect to control state.
 
 **Themes** - Supports set of visual styles to customize the look and feel of ButtonEdit control.
