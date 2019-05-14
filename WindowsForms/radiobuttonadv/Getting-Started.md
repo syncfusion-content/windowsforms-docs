@@ -30,7 +30,6 @@ The **"RadioButtonAdv"** control can be added through designer by following step
 * Syncfusion.Grid.Windows
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
-* Syncfusion.SpellChecker.Base
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
@@ -38,9 +37,6 @@ The **"RadioButtonAdv"** control can be added through designer by following step
 
 **Step 2**: Set the desired properties for **"RadioButtonAdv"** control through the **"Properties"** dialog.
 
-**Step 3**: Run the application.
-
- ![Windows forms RadioButtonAdv showing at run time](Overview_images/RadioButtonAdv_throughdesign.jpeg) 
 
 
 ## Adding a RadioButtonAdv control through code
@@ -116,6 +112,3 @@ Me.Controls.Add(Me.radioButtonAdv1)
 {% endhighlight %}
 {% endtabs %}
 
-**"Step 6"**: Run the application.
-
- ![Windows forms RadioButtonAdv showing at run time](Overview_images/RadioButtonAdv_throughcode.jpeg)
