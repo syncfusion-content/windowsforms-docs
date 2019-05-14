@@ -37,9 +37,7 @@ The **"ButtonAdv"** control can be added through designer by following steps.
 
 ![Windows forms ButtonAdv showing at run time](Overview_images/ButtonAdv_textimage.png)
 
-**Step 5**: Run the application.
 
-![Windows forms ButtonAdv showing at run time](Overview_images/Buttonadv_outputthroughdesign.png)
 
 ## Adding a ButtonAdv control through code
 
@@ -117,6 +115,3 @@ Me.buttonAdv1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBe
 
 {% endtabs %}
 
-**Step 6**: Run the application.
-
-![Windows forms ButtonAdv showing at run time](Overview_images/Buttonadv_outputthroughcode.png)
