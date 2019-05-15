@@ -9,13 +9,16 @@ documentation: ug
 
 # Overview
 
-New SplitButton control allows you to create a drop-down button-like interface that is a combination of a regular button and a drop-down list. You can use this control to create a button with options. Once the required option is selected the specified button command will be executed. 
+The **"SplitButton"** control allows you to create a drop-down button-like interface that is a combination of a regular button and a drop-down list. You can use this control to create a button with options. Once the required option is selected the specified button command will be executed. 
 
-## IT scenarios
+![Overview of SplitButton](Overview_images/SplitButton_overview.png)
 
-You can use this control when you need a single control with a multiple options. For example you can use this control to create a button to set the font and list the available font family in the drop-down list. 
+## Features
 
-## Feature summary
+**Button Mode** – Provides two types of mode. Normal and Toggle mode.
 
-* Button Mode – Provides Normal and Toggle mode
-* Customization Support -  Customize the appearance of the SplitButton.
+**Appearance** - Supports wide variety of built-in themes and also has ability to customize all items in control with respect to control state.
+
+**DropDown Item** - Provides support to add new items SplitButton drop-down list.
+
+**DropDown Position** - Provides support to change the drop-down list position.

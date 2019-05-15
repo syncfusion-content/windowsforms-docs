@@ -3,7 +3,7 @@ layout: post
 title: Text-Settings | WindowsForms | Syncfusion
 description: text settins
 platform: WindowsForms
-control: EditorsPackage
+control: RadioButtonAdv
 documentation: ug
 ---
 
@@ -12,8 +12,6 @@ documentation: ug
 This section discusses the text settings of the RadioButtonAdv.
 
 Text in the RadioButtonAdv can be shadowed and wrapped as illustrated below.
-
-Property Table
 
 <table>
 <tr>
@@ -56,15 +54,4 @@ Me.radioButtonAdv1.ShadowOffset = New System.Drawing.Point(8, 8)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img633.jpeg)
-
-
-A sample which demonstrates the TextShadow property of RadioButtonAdv is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
-{%seealso%}
-
-Alignment Settings
-
-{%endseealso%}
+![Windows forms RadioButtonAdv TextShadow applied](Overview_images/RadioButtonAdv_textshadow.jpeg)
