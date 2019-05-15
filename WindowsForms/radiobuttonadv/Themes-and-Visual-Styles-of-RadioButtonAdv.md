@@ -3,7 +3,7 @@ layout: post
 title: Themes-and-Visual-Styles-of-RadioButtonAdv | WindowsForms | Syncfusion
 description: themes and visual styles of radioButtonAdv
 platform: WindowsForms
-control: EditorsPackage
+control: RadioButtonAdv
 documentation: ug
 ---
 
@@ -15,7 +15,6 @@ This section discusses the themes and visual style settings that are supported b
 
 The RadioButtonAdv can be provided with a themed appearance using the below given property.
 
-Property Table
 
 <table>
 <tr>
@@ -42,13 +41,11 @@ Me.radioButtonAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/Overview_img643.jpeg)
+ ![Windows forms RadioButtonAdv themes appearance](Overview_images/RadioButtonAdv_themes.jpeg)
 
 ### Visual styles
 
 The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
-
-Property Table
 
 <table>
 <tr>
@@ -58,7 +55,7 @@ Description</th></tr>
 <tr>
 <td>
 Style</td><td>
-Gets / sets an advanced appearance for the RadioButtonAdv.The options included are as follows.
+Gets or sets an advanced appearance for the RadioButtonAdv.The options included are as follows.
 
 * {{ '_Default_' | markdownify }}
 * {{ '_Office2007_' | markdownify }}
@@ -72,7 +69,7 @@ Gets / sets an advanced appearance for the RadioButtonAdv.The options included a
 <tr>
 <td>
 Office2007ColorScheme</td><td>
-Gets / sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }} {{ '_Blue,_' | markdownify }} {{ '_Silver and_' | markdownify }} {{ '_Black._' | markdownify }} The Style property should be set to "Office2007".</td></tr>
+Gets or sets Office 2007 color scheme.The options included are as follows.{{ '_Managed,_' | markdownify }} {{ '_Blue,_' | markdownify }} {{ '_Silver and_' | markdownify }} {{ '_Black._' | markdownify }} The Style property should be set to "Office2007".</td></tr>
 </table>
 
 {% tabs %}
@@ -89,7 +86,7 @@ Me.radioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Of
 {% endhighlight %}
 {% endtabs %}
 
- ![](Overview_images/RadioButtonStyle.jpeg) 
+ ![Windows forms RadioButtonAdv visual styles](Overview_images/RadioButtonAdv_radioButtonStyle.jpeg) 
 
 When the Office2007ColorScheme property is set to 'Managed', the RadioButton in the RadioButtonAdv can be displayed using custom colors supported by the control.
 
@@ -113,4 +110,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Red)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img646.jpeg) 
+![Windows forms RadioButtonAdv Office2007ColorScheme is set to managed](Overview_images/RadioButtonAdv_customcolors.jpeg) 
