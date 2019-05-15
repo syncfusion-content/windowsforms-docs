@@ -36,14 +36,18 @@ The **"ToggleButton"** control can be added through designer by following steps.
 ![Drag and drop togglebutton from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
 
-
 ## Adding a ToggleButton control through code
 
 **Step 1**: Create a C# or VB application through Visual Studio.
 
 **Step 2**: Add the following required assembly reference to the project.
 
-* Syncfusion.Tools.Windows.dll
+* Syncfusion.Tools.Windows
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
 
 **Step 3**: Include the required namespace.
 
@@ -87,8 +91,8 @@ Me.Controls.Add(togglebutton1)
 
 ### Configuring the ToggleButton
 
-The most commonly used settings of the **"ToggleButton"** Control can be configured either through designer via smart tag or through Properties window or through code behind.
+The most commonly used settings of the **"ToggleButton"** control can be configured either through designer via smart tag or through Properties window or through code behind.
 
-The following screenshot illustrates the **"ToggleButton"** Control customization through smart tag.
+The following screenshot illustrates the **"ToggleButton"** control customization through smart tag.
 
 ![togglebutton customization through smart tag](Getting-Started_images/Getting-Started_img2.png)
