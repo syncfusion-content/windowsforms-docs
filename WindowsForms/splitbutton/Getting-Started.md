@@ -9,25 +9,49 @@ documentation: ug
 
 # Getting Started
 
-## Adding SplitButton to an application
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"SplitButton"** with it's basic functionalities.
 
-### Adding through Visual Studio 
+## Assembly deployment
 
-The following are steps to add the SplitButton control to an Application through Visual Studio:
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splitbutton) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-1. Create a new Windows Form application in Visual Studio. 
-2. Drag SplitButton from the Toolbox tab to the designer.
+[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application. 
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+## Adding a SplitButton control through designer
 
-3. SplitButton control is added.
-4. Now customize the properties of SplitButton in the Properties Window. 
+The **"SplitButton"** control can be added through designer by following steps.
 
-###  Through code
+**Step 1**: Create a new Windows Forms application in Visual Studio. 
 
-Following are the steps to add the SplitButton control to an application through code:
+**Step 2**: The **"SplitButton"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
-1. Include the Tools Windows namespace as given in the following code:
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+
+   ![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
+
+**Step 3**: Set the desired properties for **"SplitButton"** control through the **"Properties"** dialog.
+
+
+## Adding a SplitButton control through code
+
+**Step 1**: Create a C# or VB application though Visual Studio.
+
+**Step 2**: Add the following assembly reference to the project.
+
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+**Step 3**: Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,98 +67,24 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-2. Create an instance of  SplitButton  control and add it to the form as given in the following code:
+**Step 4**: Create an instance of **"SplitButton"** control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
 
-Syncfusion.Windows.Forms.Tools.SplitButton splitButton;
-this.splitButton = new Syncfusion.Windows.Forms.Tools.SplitButton();
-this.Controls.Add(splitButton);
+Syncfusion.Windows.Forms.Tools.SplitButton splitButton1;
+splitButton1 = new Syncfusion.Windows.Forms.Tools.SplitButton();
+this.Controls.Add(splitButton1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton
-Me.splitButton = New Syncfusion.Windows.Forms.Tools.SplitButton()
-Me.Controls.Add(splitButton)
+Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton1
+splitButton1 = New Syncfusion.Windows.Forms.Tools.SplitButton()
+Me.Controls.Add(splitButton1)
 
 {% endhighlight %}
 {% endtabs %}
 
-## Appearance and structure of the control
 
-![](Getting-Started_images/Getting-Started_img2.png)
-
-## Properties and events tables for SplitButton control
-
-### Properties
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-ButtonMode </td><td>
-Specifies the mode of the button as normal or toggle.  </td><td>
-Normal </td><td>
-Enum </td><td>
-Button Mode</td></tr>
-<tr>
-<td>
-IsButtonChecked</td><td>
-Specifies the state of the button. This property can be set only when the ButtonMode is set to toggle.</td><td>
-Normal</td><td>
-Boolean</td><td>
-NA</td></tr>
-<tr>
-<td>
-DropDownItems</td><td>
-Sets the item to be added in the drop-down list.</td><td>
-Normal</td><td>
-ToolStripItemCollection</td><td>
-Adding Items to Drop-Down</td></tr>
-</table>
-
-### Events
-
-Events Table
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-DropDownItemChecked</td><td>
-Will be triggered when drop-down item is clicked. </td><td>
-ToolStripItemClickedEventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-<tr>
-<td>
-Checked</td><td>
-Will be triggered when the button is checked.This event can be triggered only when the button is in toggle mode. </td><td>
-EventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-<tr>
-<td>
-UnChecked</td><td>
-Will be triggered when the button is unchecked.This event can be triggered only when the button is in toggle mode. </td><td>
-EventArgs</td><td>
-NA </td><td>
-NA </td></tr>
-</table>
