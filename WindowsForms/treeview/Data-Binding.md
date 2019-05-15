@@ -49,8 +49,16 @@ private void LoadFromXML(XmlNode xmlNode, TreeNodeAdv treeNode)
             LoadFromXML(xNode, tNode);
         }
     }
-    else 
-    treeNode.Text = xmlNode.OuterXml.Trim();
+    else
+    {
+        //Retrieve child nodes of root node
+        string text = GetAttributeText(xmlNode, "name");
+        if (string.IsNullOrEmpty(text))
+                    text = (xmlNode.OuterXml).Trim();
+        if (treeNode.Text != text)
+                    treeNode.Text = text;
+        treeNode.Nodes.Clear();
+    }
 }
        
 /// <summary>
@@ -132,7 +140,10 @@ tNode = treeNode.Nodes(x)
 LoadFromXML(xNode, tNode)
 Next x
 Else
-treeNode.Text = xmlNode.OuterXml.Trim()
+Dim text As String = GetAttributeText(xmlNode, "name")
+If String.IsNullOrEmpty(text) Then text = (xmlNode.OuterXml).Trim()
+If treeNode.Text IsNot text Then treeNode.Text = text
+treeNode.Nodes.Clear()
 End If End Sub
 
 ''' <summary>
@@ -178,3 +189,5 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+You can download the Sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TREEVI~1932187720).
