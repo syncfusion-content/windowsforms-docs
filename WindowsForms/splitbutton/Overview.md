@@ -17,7 +17,7 @@ The **"SplitButton"** control allows you to create a drop-down button-like inter
 
 *Button Mode** – Provides two types of mode. Normal and Toggle mode.
 
-**Customization Support** -  Customize the appearance of the SplitButton and supports different visual styles.
+**Customization Support** -  Supports to set of visual styles to customize the look and feel of SplitButton control.
 
 **DropDown Item** - Provides support to add new items SplitButton drop-down list.
 
