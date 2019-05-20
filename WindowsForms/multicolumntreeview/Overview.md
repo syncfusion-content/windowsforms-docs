@@ -25,7 +25,7 @@ MultiColumnTreeView is an advanced treeview control with multiple columns. This 
 
 **Style Architecture** - Supports a flexible style architecture to let users define the styles for nodes at different levels of the Tree. It helps the users to specify the styles for a specific node.
 
-**Columns** - Supports to add multiple columns and subitems.
+**Columns** - Supports to add multiple columns and sub items.
 
 **CheckBox and OptionButton support** - Interactive check boxes that could be checked or unchecked, which will indicate the check state of the child node’s check boxes. Node can also hold option buttons.
 
