@@ -26,12 +26,12 @@ The **"MultiColumnTreeView"** control can be added through designer by following
 
 **Step 1**: The **"MultiColumnTreeView"** control can be added to an application by dragging it from toolbox to design view. The following dependent assemblies will be added automatically.
 
-*	Syncfusion.Grid.Base
-*	Syncfusion.Grid.Windows
-*	Syncfusion.Shared.Base
-*	Syncfusion.Shared.Windows
-*	Syncfusion.Tools.Base
-*	Syncfusion.Tools.Windows
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
 ![Windows Forms MultiColumnTreeView drag and drop from toolbox](Getting-Started_Images/GettingStarted_toolbox.png) 
 
@@ -44,7 +44,11 @@ The **"MultiColumnTreeView"** control can be added through designer by following
 
 **Step 2**: Add the following reference to the project.
 
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
 * Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
 **Step 3**: Include the required namespace.
@@ -503,13 +507,13 @@ this.multiColumnTreeView1.Nodes[0].InteractiveCheckBox = true;
 
 {% highlight vb %}
 
-    Me.multiColumnTreeView1.ShowCheckBoxes = True
+Me.multiColumnTreeView1.ShowCheckBoxes = True
 
-    Me.multiColumnTreeView1.Nodes(0).ShowCheckBox = True
+Me.multiColumnTreeView1.Nodes(0).ShowCheckBox = True
 
-    Me.multiColumnTreeView1.InteractiveCheckBoxes = True
+Me.multiColumnTreeView1.InteractiveCheckBoxes = True
 
-    Me.multiColumnTreeView1.Nodes(0).InteractiveCheckBox = True
+Me.multiColumnTreeView1.Nodes(0).InteractiveCheckBox = True
 
 {% endhighlight %}
 
@@ -535,9 +539,9 @@ this.multiColumnTreeView1.Nodes[0].ShowOptionButton = true;
 
 {% highlight vb %}
 
-    Me.multiColumnTreeView1.ShowOptionButtons = True
+Me.multiColumnTreeView1.ShowOptionButtons = True
 
-    Me.multiColumnTreeView1.Nodes(0).ShowOptionButton = True
+Me.multiColumnTreeView1.Nodes(0).ShowOptionButton = True
 
 {% endhighlight %}
 
