@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Dates of SfCalendar | Windows Forms | Syncfusion
-description: Customize the Dates of SfCalendar control for Windows Forms
+description: This section explains about customizing the appearance of cells in SfCalendar. The SfCalendar cells can be customized for mentioning some special or important days.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
