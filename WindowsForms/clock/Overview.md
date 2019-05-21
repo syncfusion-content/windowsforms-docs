@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Clock control | Windows Forms | Syncfusion
-description: Clock control is capable of supporting multiple time zones.
+description: The WinForms Clock control capable of supporting multiple time zones. Supports analog and digital clock appearance with different frames, appearance etc.
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
 documentation: ug
