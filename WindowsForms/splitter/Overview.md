@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | WindowsForms | Syncfusion
-description: overview
+title: Overview | Splitter | Windows Forms | Syncfusion
+description: WinForms Splitter is a container control that allows end user to embed Grid and show multiple views of the same grid by using its Splitter.
 platform: WindowsForms
 control: Splitter  
 documentation: ug

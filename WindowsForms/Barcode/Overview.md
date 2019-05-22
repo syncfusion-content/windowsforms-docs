@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Barcode | Syncfusion
-description: overview
+description: WinForms Barcode control or generator helps user to embed the barcodes into their .NET application. It is easily customizable and support all barcode formats.
 platform: windowsforms
 control: SfBarcode
 documentation: ug

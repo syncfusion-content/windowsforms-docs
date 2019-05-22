@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Studio Windows Forms products
-description: Overview
+description: Comprehensive suite of over 100 WinForms (Windows Forms) controls like DataGrid, Charts, Docking, PDF Viewer and much more which can be used to build desktop applictions for many purpose. 
 platform: WindowsForms
 control: Introduction
 documentation: ug
