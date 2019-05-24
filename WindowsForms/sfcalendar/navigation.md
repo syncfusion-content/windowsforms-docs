@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation of SfCalendar | WindowsForms | Syncfusion
-description: This section explains the views and navigations of the `SfCalendar`
+description: The SfCalendar supports month, year, decade, and century views and provides intuitive interface through which you can navigate and quickly select dates.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug

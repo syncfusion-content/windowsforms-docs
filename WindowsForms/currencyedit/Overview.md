@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | CurrencyEdit|  Syncfusion | WindowsForms
-description: An introduction about CurrencyEdit control.
+description: The CurrencyEdit embeds a CurrencyTextBox and a button to provide a drop-down calculator to enable calculations with the contents of the CurrencyTextBox.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug

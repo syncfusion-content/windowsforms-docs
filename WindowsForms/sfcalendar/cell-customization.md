@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Dates of SfCalendar | Windows Forms | Syncfusion
-description: Customize the Dates of SfCalendar control for Windows Forms
+description: This section explains about customizing the appearance of cells in SfCalendar. The cells can be customized for mentioning some special or important days.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
@@ -259,7 +259,7 @@ To customize the dates, use the following code example:
 
 ## ToolTip
 
-This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ToolTipOpening_EV.html) event of the calendar. All the [customization with tooltip](/windowsforms/SfToolTip/Appearance) will be reflected in tooltip of cell in SfCalendar.
+This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ToolTipOpening_EV.html) event of the calendar. All the [customization with tooltip](/windowsforms/sftooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
 
 
 * ToolTipInfo: This option helps to set more information such as text or image about cell in calendar.
