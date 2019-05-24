@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization | Edit Control | Syntax Editor | WinForms
+title: Localization | Edit Control | Syntax Editor | Syncfusion
 description: This section provide details about localizing the static text available in EditControl for Windows Forms
 platform: WindowsForms
 control: SyntaxEditor

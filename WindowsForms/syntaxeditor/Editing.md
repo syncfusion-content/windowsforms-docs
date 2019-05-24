@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing | Edit Control | Syntax Editor | Windows Forms
+title: Editing | Edit Control | Syntax Editor | Syncfusion
 description: This section explains about clipboard operations, unicode, comment and uncomment functionalities available in EditControl
 platform: WindowsForms
 control: SyntaxEditor

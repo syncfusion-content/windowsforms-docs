@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing | Edit Control | Syntax Editor | WinForms
+title: Printing | Edit Control | Syntax Editor | Syncfusion
 description: This section explains about printing the EditControl content by using the print option from the print preview or programmatically
 platform: WindowsForms
 control: SyntaxEditor
