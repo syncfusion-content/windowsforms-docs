@@ -99,4 +99,4 @@ End Sub
 
 {% endhighlight %}
 
-![](Overview_images/Overview_img126.jpeg)
+![Pop up Calculator control](Overview_images/Overview_img126.jpeg)
