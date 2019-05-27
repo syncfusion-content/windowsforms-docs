@@ -99,4 +99,4 @@ End Sub
 
 {% endhighlight %}
 
-![Pop up Calculator control](Overview_images/Overview_img126.jpeg)
+![Windows Forms Pop up Calculator control](Overview_images/Overview_img126.jpeg)
