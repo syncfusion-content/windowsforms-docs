@@ -9,19 +9,15 @@ documentation: ug
 
 # Overview
 
-
 Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in Editor controls.
 
- ![Overview of BannerTextProvider](Overview_images/Overview_img2.jpeg) 
+ ![Overview of BannerTextProvider](Overview_images/overview.png) 
 
 
 
 ## Key Features
 BannerTextProvider contains the following features.
 
-* You can set Mode for BannerText control.
-* You can set color to the BannerText in BannerTextProvider control.
-
-
-
+**Text Mode** - Provides two set of modes. FocusMode and EditMode.
+**Text color** - You can set color to the BannerText in BannerTextProvider control.
 
