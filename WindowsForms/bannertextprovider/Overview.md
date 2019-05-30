@@ -19,5 +19,6 @@ Syncfusion introduces BannerTextProvider class that provides the ability to disp
 BannerTextProvider contains the following features.
 
 **Text Mode** - Provides two set of modes. FocusMode and EditMode.
+
 **Text color** - You can set color to the BannerText in BannerTextProvider control.
 
