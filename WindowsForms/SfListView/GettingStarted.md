@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
-description: This section explains about the SfListView
+title: Getting Started | SfListView | Windows Forms | Syncfusion
+description: This section explains how to add the SfListView control into windows forms application and how to perform grouping, sorting, filtering actions. 
 platform: windowsforms
 control: SfListView
 documentation: ug
@@ -22,7 +22,7 @@ Create a new Windows Forms project in Visual Studio to display the SfListView wi
 ### Adding Control via Designer
 The SfListView control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-![](GettingStarted_images/GettingStarted_img1.png)
+![Drag and drop the SfListView control into WF application](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding Control in Code
 To add control manually, follow the steps:
@@ -195,7 +195,7 @@ sfListView1.DisplayMember = "CountryName"
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img2.png)
+![Date binding in WF SfListView Control](GettingStarted_images/GettingStarted_img2.png)
 
 ## Grouping
 The SfListView allows displaying the items in a group by using the [SfListView.View.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. Create a [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the View.GroupDescriptors collection.
@@ -221,7 +221,7 @@ listView.View.GroupDescriptors.Add(New GroupDescriptor() With {.PropertyName = â
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.png)
+![Grouping in WF SfListView Control](GettingStarted_images/GettingStarted_img3.png)
 
 ## Sorting
 The SfListView allows sorting on its data by using the [SfListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. Create a [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it into the View.SortDescriptors collection.
@@ -247,7 +247,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = â€œ
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.png)
+![Sorting in WF SfListView Control](GettingStarted_images/GettingStarted_img4.png)
 
 ## Filtering
 The SfListView support to filter the records in view by setting predicate to the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~Filter.html) property. Call the [View.RefreshFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter property for refreshing the view.
@@ -275,7 +275,7 @@ public Boolean CustomFilter(Object obj)
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img5.png)
+![Filtering in WF SfListView Control](GettingStarted_images/GettingStarted_img5.png)
 
 ## Selection
 SfListView selects an item by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) property to One, MultiSimple, MultiExtended, and None based on the requirements. Selected item information can be tracked by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html), [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html), and [SfListView.SelectedItems]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) properties. 
@@ -291,4 +291,4 @@ The selection operations can be handled with the help of [SelectionChanging](htt
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img6.png)
+![Item selection in WF SfListView Control](GettingStarted_images/GettingStarted_img6.png)
