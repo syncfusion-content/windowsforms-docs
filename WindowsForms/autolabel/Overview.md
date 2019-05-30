@@ -10,9 +10,9 @@ documentation: ug
 
 # Overview
 
-The AutoLabel control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
+The **"AutoLabel"** control is a label-derived control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
 
-![Overview of Autolabel](AutoLabel-Images/Overview_img7.jpg)
+![Overview of Autolabel](AutoLabel-Images/overview.jpg)
 
 
 
