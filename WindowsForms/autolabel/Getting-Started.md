@@ -9,34 +9,34 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"AutoLabel"** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **"AutoLabel"** control with its basic functionalities.
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autolabel) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autolabel) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-## Adding a AutoLabel control through designer
+## Adding the AutoLabel control through the designer
 
-The following steps illustrate how to create an **"AutoLabel"** control through designer.
+The following steps illustrate how to create an **"AutoLabel"** control through the designer:
 
 **Step 1**: Create a new Windows Forms application in Visual Studio.
 
-**Step 2**: The **"AutoLabel"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+**Step 2**: The **"AutoLabel"** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.Base
 
-  ![Drag and drop AutoLabel from toolbox](AutoLabel-Images/Overview_img5.jpg) 
+  ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/Overview_img5.jpg) 
 
-**Step 3**: Set the desired properties for an **"AutoLabel"** control through the **"Properties"** dialog.
+**Step 3**: Set the desired properties for the **"AutoLabel"** control through the **"Properties"** dialog.
 
 **Step 4**: Run the application.
 
-  ![Windows Forms AutoLabel output through designer](AutoLabel-Images/AutoLabel_throughdesigner.jpg) 
+  ![Windows Forms AutoLabel output through designer.](AutoLabel-Images/AutoLabel_throughdesigner.jpg) 
 
-## Adding a AutoLabel control through code
+## Adding the AutoLabel control through code
 
-The following steps illustrate how to create an **"AutoLabel"** control programmatically.
+The following steps illustrate how to create an **"AutoLabel"** control programmatically:
 
 **Step 1**: Create a C# or VB application though Visual Studio.
 
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4**: Create an instance of **"AutoLabel"** control and add it to the form.
+**Step 4**: Create an instance of the **"AutoLabel"** control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
 {% endtabs %}
 
 
-**Step 5**: Set the following properties for an **"AutoLabel"** control and add it to the form.
+**Step 5**: Set the following properties for the **"AutoLabel"** control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,5 +111,5 @@ Me.Controls.Add(Me.autoLabel1)
 
 **Step 6**: Run the application.
 
-  ![Windows Forms AutoLabel output through code](AutoLabel-Images/AutoLabel_throughcode.jpg)
+  ![Windows Forms AutoLabel output through code.](AutoLabel-Images/AutoLabel_throughcode.jpg)
 
