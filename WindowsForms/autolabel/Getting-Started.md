@@ -212,7 +212,7 @@ Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Side
 {% endhighlight %}
 {% endtabs %}
 
-![](AutoLabel-Images/AutoLabel_position.jpg)
+![Windows Forms AutoLabel showing control position](AutoLabel-Images/AutoLabel_position.jpg)
 
 ## Size
 
