@@ -23,6 +23,8 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 2) The **"ColorPickerButton"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
+* Syncfusion.Shared.Base
+
 ![Drag and drop ColorPickerButton from toolbox](ColorPickerButton_images/Overview_img247.jpeg) 
 
 ## Adding the ColorPickerButton control through code
