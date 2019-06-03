@@ -19,6 +19,6 @@ The ColorPickerButton allows.NET developers to provide a standard user interface
 
 ## Key Features
 
-**Selection** - Provides support to select the colorgroups and colors are initially.
+**Selection** - Provides support to select the color groups and colors are initially.
 
 **ColorGroups** - Provides different types of color groups. The groups are SystemColors, StandardColors, CustomColors and UserColors.
