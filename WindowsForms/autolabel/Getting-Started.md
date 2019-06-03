@@ -181,7 +181,7 @@ Me.autoLabel1.Gap = 10
  ![Windows Forms AutoLabel showing space between the contols](AutoLabel-Images/AutoLabel_spacing.jpg) 
 
 
- ## Position
+## Position
 
  The **"AutoLabel"** control can be positioned relative to the top, left, bottom or right of the labeled control. You can do this using the given property.
 
