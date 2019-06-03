@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **"AutoLabel"** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio, and add the **"AutoLabel"** control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,9 +17,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 [Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-## Adding the AutoLabel control through the designer
+## Adding the AutoLabel control via the designer
 
-The following steps illustrate how to create an **"AutoLabel"** control through the designer:
+The following steps describe how to create an **"AutoLabel"** control via the designer:
 
 1) Create a new Windows Forms application in Visual Studio.
 
@@ -29,13 +29,13 @@ The following steps illustrate how to create an **"AutoLabel"** control through 
 
   ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/Overview_img5.jpg) 
 
-3) Set the desired properties for the **"AutoLabel"** control through the **"Properties"** dialog.
+3) Set the desired properties for the **"AutoLabel"** control using the **"Properties"** dialog.
 
-## Adding the AutoLabel control through code
+## Adding the AutoLabel control via code
 
 The following steps illustrate how to create an **"AutoLabel"** control programmatically:
 
-1) Create a C# or VB application though Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
 2) Add the following assembly reference to the project.
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **"AutoLabel"** control and add it to the form.
+4) Create an instance of the **"AutoLabel"** control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -76,7 +76,7 @@ Me.autoLabel1 = New Syncfusion.Windows.Forms.Tools.AutoLabel()
 {% endtabs %}
 
 
-5) Set the following properties for the **"AutoLabel"** control and add it to the form.
+5) Set the following properties for the **"AutoLabel"** control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ this.autoLabel1.ForeColor = System.Drawing.Color.DarkBlue;
 this.autoLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 this.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-// Add the AutoLabel control to the Form.
+// Add the AutoLabel control to the form.
 this.Controls.Add(this.autoLabel1);
   
 {% endhighlight %}
@@ -100,7 +100,7 @@ Me.autoLabel1.ForeColor = System.Drawing.Color.DarkBlue
 Me.autoLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0)))
 Me.autoLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 
-' Add the AutoLabel control to the Form.
+' Add the AutoLabel control to the form.
 Me.Controls.Add(Me.autoLabel1)
 
 {% endhighlight %}
@@ -110,16 +110,16 @@ Me.Controls.Add(Me.autoLabel1)
 
 The following steps allow you to label a control.
 
-1) Add one control into the form. for example **"TextBoxExt"**.
+1) Add one control to the form. For example, **"TextBoxExt"**.
 
-2) Right-click on **"AutoLabel"** control. Choose **"Properties"**  and select `LabeledControl` property.
+2) Right-click on the **"AutoLabel"** control. Choose **"Properties"**  and select `LabeledControl` property.
 
-3) Select the added control, like in the below screenshot.
+3) Select the added control as shown in the screenshot below.
 
 ![Windows Forms AutoLabel showing add the labeled control](AutoLabel-Images/AutoLabel_addcontrol.jpg)
 
 
-This process also done by following code,
+This process is also done by using the following code,
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ Me.autoLabel1.Gap = 10
 
 ## Position
 
- The **"AutoLabel"** control can be positioned relative to the top, left, bottom or right of the labeled control. You can do this using the given property.
+ The **"AutoLabel"** control can be positioned relative to the top, left, bottom, or right of the labeled control. You can do this using the given property.
 
  <table>
 <tr>
@@ -193,7 +193,7 @@ Description</th></tr>
 <tr>
 <td>
 Position</td><td>
-Specifies the relative position of the control and the AutoLabel.The options included are as follows Custom, Left, Top and Side.</td></tr>
+Specifies the relative position of the control and the AutoLabel. The options included are as follows: Custom, Left, Top, and Side.</td></tr>
 </table>
 
 When the Position property is set to "Custom", you can drag the label to the required position using the mouse.
@@ -216,7 +216,7 @@ Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Side
 
 ## Size
 
-This section illustrates the size settings of the **"AutoLabel"** control.
+This section explains the size settings of the **"AutoLabel"** control.
 
 The **"AutoLabel"** control can be resized using the below given property.
 
@@ -228,7 +228,7 @@ Description</th></tr>
 <tr>
 <td>
 AutoSize</td><td>
-Enables automatic resizing based on font size.</td></tr>
+Enables automatic resizing based on the font size.</td></tr>
 </table>
 
 N> This is valid only for label controls that do not wrap text.
@@ -251,7 +251,7 @@ Me.autoLabel1.AutoSize = True
 
 You can apply the required skin to the form using the `VisualTheme` property.
 
-The following code illustrates how to apply theme.
+The following code shows how to apply the theme.
 
 {% tabs %}
 
@@ -271,4 +271,4 @@ SkinManager.SetVisualStyle(Me.autoLabel1, VisualTheme.Office2016Colorful)
 
 ![Windows Forms AutoLabel showing applied theme](AutoLabel-Images/AutoLabel_themecolor.jpg)
 
-N> This control supports only the following styles using SkinManager. The styles are Office2016Colorful, Office2016Black, Office2016DarkGray and Office2016White.
+N> This control supports only the following styles using SkinManager. The styles are Office2016Colorful, Office2016Black, Office2016DarkGray, and Office2016White.
