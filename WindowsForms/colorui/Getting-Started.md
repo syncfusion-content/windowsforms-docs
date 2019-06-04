@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"ColorUI"** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorUI** with it’s basic functionalities.
 
 
 ## Assembly deployment
@@ -18,21 +18,21 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 [Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
-## Adding the ColorUI control through designer
+## Adding the ColorUI control via designer
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **"ColorUI"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2) The **ColorUI** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.Base
 
 ![Drag and drop ColorUI from toolbox](ColorUI_images/ColorUI_toolbox.png)
 
-## Adding the ColorUI control through code
+## Adding the ColorUI control via code
 
-The following steps illustrate how to create an **"ColorUI"** control programmatically:
+The following steps illustrate how to create an **ColorUI** control programmatically:
 
-1) Create a C# or VB application though Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
 2) Add the following assembly reference to the project.
 
@@ -54,7 +54,7 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **"ColorUIControl"** control. Specify its size and add it to the form.
+4) Create an instance of the **ColorUIControl** control. Specify its size and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,3 +120,5 @@ Me.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelected
 {% endtabs %}
 
 ![Windows Forms ColorUIControl showing selected groups and colors](ColorUI_images/Overview_img238.jpeg)
+
+N> These property settings can be reset using ResetSelectedColorGroup() and ResetSelectedColor() methods.
