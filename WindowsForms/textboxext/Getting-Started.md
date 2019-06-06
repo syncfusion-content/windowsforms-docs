@@ -23,7 +23,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 2) The **TextBoxExt** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
-   ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
+   ![Drag and drop TextBoxExt from toolbox](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
 
 ## Adding the TextBoxExt control via code
 
