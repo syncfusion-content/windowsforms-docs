@@ -30,11 +30,11 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-   ![](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
+   ![Drag and drop NumericUpDownExt from toolbox](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
 
 3) The **NumericUpDownExt** will allow you to display numeric values by clicking on the up and down buttons.
 
-   ![](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
+   ![Windows Forms NumericUpDownExt showing numeric values](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
 
 ## Adding the NumericUpDownExt control via code
 
