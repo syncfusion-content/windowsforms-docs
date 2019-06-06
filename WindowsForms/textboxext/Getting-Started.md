@@ -9,69 +9,123 @@ documentation: ug
 
 # Getting Started
 
-This section will give a step-by-step procedure to design a TextBoxExt control through designer and also through programming approach.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **TextBoxExt** with it’s basic functionalities.
 
-## Through designer
+## Assembly deployment
 
-1. Create or open a Windows Forms project.
-2. Click on the TextBoxExt Control in the toolbox and add it to the form by dragging and dropping it onto the form or double clicking the control.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#textboxext) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+
+[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+
+## Adding the TextBoxExt control via designer
+
+1) Create a new Windows Forms application in Visual Studio.
+
+2) The **TextBoxExt** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
    ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
 
-3. Run the application. The TextBoxExt displayed will allow you to enter text.
+## Adding the TextBoxExt control via code
 
-   ![](Creating-TextBoxExt_images/Creating-TextBoxExt_img2.png)
+1) Create a C# or VB application via Visual Studio.
 
-### Through programming approach
+2) Add the following assembly reference to the project.
 
-1. Declare an instance of the TextBoxExt control.
+* Syncfusion.Shared.Base
+
+3) Include the required namespace.
 
 {% tabs %}
-{% highlight c# %}
+
+{% highlight C# %}
+
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+
+{% endtabs %}
+
+4) Create an instance of **TextBoxExt** control and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
 
 private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-
-{% endhighlight %}
-{% endtabs %}
-
-2. Initialize the control.
-
-{% tabs %}
-{% highlight c# %}
-
 this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-
-{% endhighlight %}
-{% endtabs %}
-
-3. Add the control to the form.
-
-{% tabs %}
-{% highlight c# %}
-
 this.Controls.Add(this.textBoxExt1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
+Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
+Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
 Me.Controls.Add(Me.textBoxExt1)
 
 {% endhighlight %}
+
 {% endtabs %}
 
-4. Run the application. You will be able to see the TextBoxExt control in your form. After creating the TextBoxExt you can use it just like using the Windows Forms' TextBox control.
+## Size
 
-![](Creating-TextBoxExt_images/Creating-TextBoxExt_img3.png)
+The size of the TextBoxExt control can be applied by the following properties.
+
+* MaximumSize
+* MinimumSize
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.MinimumSize = new System.Drawing.Size(150, 50);
+this.textBoxExt1.MaximumSize = new System.Drawing.Size(150, 50);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.textBoxExt1.MaximumSize = New System.Drawing.Size(150, 50)
+Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 50)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows Forms TextBoxExt showing size of the control](Creating-TextBoxExt_images\TextBoxExt_size.png)
+
+## Multiline
+
+The TextBoxExt control can be customized to display multiline text using the following properties.
+
+* Multiline - The text of the edit control can span more than one line.
+* WordWrap - Indicates if lines are automatically word-wrapped for multiline edit controls.
+* ScrollBars - Indicates for multiline controls, which scrollbar will be shown for this control. The options are Horizontal, Vertical, both and None.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.Multiline = true;
+this.textBoxExt1.WordWrap = true;
+this.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.textBoxExt1.Multiline = True
+Me.textBoxExt1.WordWrap = True
+Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows Forms TextBoxExt showing mulitiline text](Creating-TextBoxExt_images\TextBoxExt_multiline.png)

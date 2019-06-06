@@ -15,44 +15,20 @@ TextBoxExt is a textbox derived control that can display different border color
 
 
 
-### Features
+## Key Features
 
 TextBoxExt is an advanced TextBox control and has following features.
 
-Features
+**Text Settings** - Provides option to set the selection, format, clip, alignment of the text. The multiline text can be displayed using the control.
 
-* Text Settings
+**ToolTip** - Provides options to show text overflow indicators and overflow indicator tooltips.
 
-Text can be selected, formatted, clipped, aligned and displayed from right to left using the text settings of the TextBoxExt control.
+**Appearance Settings** - Provides support to set the background and foreground of the control.
 
-Multiline text can be displayed using the control.
+**Behavior Settings** - Provides option to set the maximum length of the text. Text can be displayed in the ReadOnly mode using the ReadOnly property.
 
-Text overflow indicator tooltips can be set using the OverflowIndicatorTooltipText property.
+**Border Settings** - Provides different set of border styles. The styles are Fixed3D, FixedSingle and None. The color of the border can also be set for the control using the BorderColor property.
 
-* Appearance Settings
+**Layout Settings** - Provides option to set the maximum and minimum size of the control.
 
-The background and foreground color of the control can be set.
-
-* Behavior Settings
-
-The maximum length of the text can be set. Text can be displayed in the ReadOnly mode using the ReadOnly property.
-
-* Border Settings
-
-2D and 3D border styles can be applied to the TextBoxExt.
-
-The color of the border can also be set for the control using the BorderColor property.
-
-* Layout Settings
-
-The maximum and minimum size of the control can be set.
-
-* Applying Themes
-
-Themed appearance can be provided for the TextBoxExt control.
-
-### Key features
-
-* Provides different border colors and styles.
-* Provides options to show text overflow indicators and overflow indicator tooltips.
-* Supports themes.
+**Applying Themes** - Provides support to different themes for the control.
