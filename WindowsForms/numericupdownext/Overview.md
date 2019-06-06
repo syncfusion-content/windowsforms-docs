@@ -3,7 +3,7 @@ layout: post
 title: Overview of Syncfusion NumericUpDownExt for Windows Forms
 description: An overview of NumericUpDownExt for Windows Forms and its key features like appearance with theme support and orientation support
 platform: WindowsForms
-control: EditorsPackage
+control: NumericUpDownExt
 documentation: ug
 ---
 
@@ -13,59 +13,24 @@ The NumericUpDownExt control enables XP Themes look and feel for the UpDown co
 
 ![Overview of Syncfusion The NumericUpDownExt](NumericUpDownExt_images/NumericUpDownExt_img1.png)
 
-## Features
+## Key Features
 
 NumericUpDownExt is an advanced NumericUpdown control and has the following features.
 
-Features
+**Value Settings** - Provide options to set the value to be displayed by the NumericUpDownExt control and increment or decrement the value.
 
-* Value Settings
+**Display Settings** - Provide options to set the decimal places with integer to the control.
 
-The value settings provide options to set the value to be displayed by the NumericUpDownExt control and increment / decrement the value.
+**Appearance Settings** - Supports to set the background and foreground color of the control. The foreground color can be set separately for the negative values of the control.
 
-The minimum value of the control can also be set.
+**Behavior Settings** - The InterceptArrowKeys property allows the user to change values using the up and down arrow keys apart from the standard up and down buttons.
 
-* Display Settings
+**Alignment Settings** - Provide options to align the text of the control to the Left, Right and Center. It supports also align the up and down buttons to Left and RIght.
 
-The number of decimal places to be displayed by the NumericUpDownExt control can be set.
+**Border Settings** - Provides different sets of border styles to the control. The styles are FixedSingle, Fixed3D and None. It also have an another unique feature, themed border can be provided for the control using the ThemedBorder property.
 
-* Appearance Settings
+**Layout Settings** - Provide options to set the maximum and minimum size of the control.
 
-The background and foreground color of the control can be set. The foreground color can be set separately for the negative values of the control.
+**Key Support** - Provides support for entering the large values by using keyboard.
 
-* Behavior Settings
-
-The InterceptArrowKeys property allows the user to change values using the up and down arrow keys apart from the standard up and down buttons.
-
-* Alignment Settings
-
-The alignment settings provide options to align the text of the control to the Left, Right and Center.
-
-The up and down buttons can also be aligned using the UpDownAlign property.
-
-* Border Settings
-
-2D and 3D border styles can be applied to the NumericUpDownExt. The color of the border can be set for the control using theBorderColor property.
-
-Another unique feature is that, themed border can be provided for the control using the ThemedBorder property.
-
-* Layout Settings
-
-The maximum and minimum size of the control can be set.
-
-* Key Support
-
-Keyboard support for entering large values is provided.
-
-* Themes and Visual Styles
-
-Themed appearance can be provided for the NumericUpDownExt control.
-
-The appearance of the control can be enhanced by applying the Office2007 visual style. It also comes with the new Office 20007 themes in the blue, silver and black colors.
-
-### Key features
-
-* Provides XP Themes look and feel.
-* Provides themes border.
-* Provides options to show negative values in different color.
-* Provides option to set different visual styles including Office2007.
+**Themes and Visual Styles** - Supports set of visual styles to customize the look and feel of the control.
