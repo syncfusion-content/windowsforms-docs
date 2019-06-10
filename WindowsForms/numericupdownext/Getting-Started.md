@@ -15,7 +15,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#numericupdownext) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
 ## Adding the NumericUpDownExt control via designer
 
@@ -38,7 +38,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding the NumericUpDownExt control via code
 
-The following steps illustrate how to create an **NumericUpDownExt** control programmatically:
+The following steps illustrate how to create an **NumericUpDownExt** control programmatically.
 
 1) Create a C# or VB application via Visual Studio.
 
