@@ -139,14 +139,16 @@ Me.Controls.Add(Me.textBoxExt)
 {% tabs %}
 {% highlight C# %}
 
-BannerTextInfo info = bannerTextProvider1.GetBannerText(this.textBoxExt); // textbox is the control used for example
+// textbox is the control used for example
+BannerTextInfo info = bannerTextProvider1.GetBannerText(this.textBoxExt);
 info.Text = "New Banner Text";
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim info As BannerTextInfo = bannerTextProvider1.GetBannerText(Me.textBoxExt) ' textbox is the control used for example.
+' textbox is the control used for example.
+Dim info As BannerTextInfo = bannerTextProvider1.GetBannerText(Me.textBoxExt)
 info.Text = "New Banner Text"
 
 {% endhighlight %}
