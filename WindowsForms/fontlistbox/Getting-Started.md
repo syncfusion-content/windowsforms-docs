@@ -15,7 +15,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#fontlistbox) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
 ## Adding the FontListBox control via designer
 
@@ -37,7 +37,7 @@ The **FontListBox** control can be added through designer by following steps.
 
 ## Adding the FontListBox control via code
 
-The following steps illustrate how to create an **FontListBox** control programmatically:
+The following steps illustrate how to create an **FontListBox** control programmatically.
 
 1) Create C# or VB application via Visual Studio.
 
