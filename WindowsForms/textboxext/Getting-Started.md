@@ -15,7 +15,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#textboxext) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
 ## Adding the TextBoxExt control via designer
 
@@ -77,7 +77,7 @@ Me.Controls.Add(Me.textBoxExt1)
 
 ## Size
 
-The size of the TextBoxExt control can be applied by the following properties.
+The size of TextBoxExt control can be applied by the following properties.
 
 * MaximumSize
 * MinimumSize
