@@ -3,7 +3,7 @@ layout: post
 title: Overview of Syncfusion GradientPanelExt for WindowsForms
 description: A quick introduction about the panel derived GradientPanelExt controls with the customizable gradient background and rounded borders
 platform: WindowsForms
-control: EditorPackage 
+control: GradientPanelExt
 documentation: ug
 ---
 # Overview
@@ -13,4 +13,10 @@ The GradientPanelExt is an enhanced version of the GradientPanel control. The Gr
 ![Overview of Syncfusion GradientPanelExt](GradientPanelExt_images/Overview_img372.png)
 
 
+## Key Features
 
+**Styles** - Provides different set of styles to the control. The styles are Pattern, Solid, Gradient and None.
+
+**Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle and PathEllipse.
+
+**Primitives** - Provides option to set the different types of primitives in the borders. The types are Collapse, Image, Text and Host.

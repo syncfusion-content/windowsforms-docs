@@ -3,41 +3,50 @@ layout: post
 title: Getting Started | WindowsForms | Syncfusion
 description: creating gradientpanelext
 platform: WindowsForms
-control: EditorPackage 
+control: GradientPanelExt
 documentation: ug
 ---
 # Getting Started
 
-This section will guide you to create a GradientPanelExt through designer and also through programming approach.
+This section briefly describes how to create a new Windows Forms project in Visual Studio, and add the **GradientPanelExt** control with its basic functionalities.
 
-## Through Designer
+## Assembly deployment
 
-The following steps are involved in creating the GradientPanelExt through the designer.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
 
-1. Create a new Windows Application.
-2. Drag the GradientPanelExt from the toolbox on to the windows application form.
+[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-   ![](GradientPanelExt_images/Overview_img373.png)
+## Adding the GradientPanelExt via designer
+
+The following steps describe how to create the **GradientPanelExt** control via the designer:
+
+1) Create a new Windows Forms application in Visual Studio.
+
+2) The **GradientPanelExt** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+
+* Syncfusion.Shared.Base
+
+   ![Drag and drop GradientPanelExt from toolbox](GradientPanelExt_images/Overview_img373.png)
  
-3. Gradient colors for the panel can be set by defining the gradient styles and colors, using the Color Collection Editor.
-4. Primitives can be added to GradientPanelExt 's border using the GradientPanelExt PrimitiveCollection Editor, that can be accessed using the Primitives property.
+3) The Gradient colors for the panel can be set by defining gradient styles and colors.
 
-   ![](GradientPanelExt_images/Overview_img374.png)
+4) We can add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor which is displayed by `Primitive` property. Please refer below screenshot.
 
-5. The primitive alignment and position can be defined here.
-   N> The properties for the primitives can be set individually using the property grid as well.
+   ![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
 
-6. Build and run the application.
+5) Set the primitive alignment and position. 
 
-   ![](GradientPanelExt_images/Overview_img376.png)
+## Adding the GradientPanelExt control through code
 
-## Through Code
+The following steps illustrate how to create an **GradientPanelExt** control programmatically:
 
-The following steps will guide you to create a GradientPanelExt through code.
+1) Create a C# or VB application via Visual Studio.
 
-1. Create a C# or VB.NET application through Visual Studio and switch to the code view.
-2. Add the Syncfusion.Shared.Base, Syncfusion.Shared.Windows, Syncfusion.Tools.Base and Syncfusion.Tools.Windows assembly references.
-3. Include the namespace for the Tools Package.
+2) Add the following reference to the project.
+
+* Syncfusion.Shared.Base
+
+3) Include the required namespace
 
 {% tabs %}
 {% highlight c# %}
@@ -53,87 +62,180 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance GradientPanelExt and add it to the Windows Form, defining its various properties and primitives.
+4) Create an instance of **GradientPanelExt** and add it to the form. 
 
 {% tabs %}
-{% highlight c# %}
 
-//Adding the GradientPanelExt
+{% highlight C# %}
+
 GradientPanelExt gradientPanelExt = new GradientPanelExt();
-gradientPanelExt.Dock = DockStyle.Fill;
-gradientPanelExt1.CornerRadius = 10;
 this.Controls.Add(gradientPanelExt);
-
-//Defining Gradient Colors
-gradientPanelExt.BackColor = System.Drawing.Color.Transparent;
-gradientPanelExt.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, new System.Drawing.Color[] {
-System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon,System.Drawing.Color.LightCoral});
-
-//button1
-Button button1 = new Button();
-button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-button1.Text = "Button";
-
-//hostPrimitive1
-HostPrimitive hostPrimitive1 = new HostPrimitive();
-hostPrimitive1.HostControl = button1;
-
-//progressBarAdv1
-ProgressBarAdv progressBarAdv1= new ProgressBarAdv();
-progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube;
-
-//textPrimitive1
-TextPrimitive textPrimitive1= new TextPrimitive();
-textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
-textPrimitive1.Text = "ProgressbarAdv";
-
-//textPrimitive2
-TextPrimitive textPrimitive2 = new TextPrimitive();
-textPrimitive2.Text = "Windows Forms Button";
-
-//Adding Primitives
-gradientPanelExt.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.Primitive[] { hostPrimitive1, textPrimitive1,  textPrimitive2});
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-'Adding the GradientPanelExt
 Private gradientPanelExt As GradientPanelExt = New GradientPanelExt()
-Private gradientPanelExt.Dock = DockStyle.Fill
-Private gradientPanelExt1.CornerRadius = 10
 Me.Controls.Add(gradientPanelExt)
 
-'Defining Gradient Colors
-Private gradientPanelExt.BackColor = System.Drawing.Color.Transparent
-Private gradientPanelExt.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.PathEllipse, New                           System.Drawing.Color() { System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Color.LightCoral})
+{% endhighlight %}
 
-'button1
-Private button1 As Button = New Button()
-Private button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-Private button1.Text = "Button"
+{% endtabs %}
 
-'hostPrimitive1
-Private hostPrimitive1 As HostPrimitive = New HostPrimitive()
-Private hostPrimitive1.HostControl = button1
+5) Set the following properties and add primitives to the gradient panel.
 
-'progressBarAdv1
-Private progressBarAdv1 As ProgressBarAdv = New ProgressBarAdv()
-Private progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Tube
+{% tabs %}
+{% highlight c# %}
+
+//GradientPanelExt
+GradientPanelExt gradientPanelExt = new GradientPanelExt();
+this.Controls.Add(gradientPanelExt);
+gradientPanelExt.BackColor = System.Drawing.Color.Transparent;
+gradientPanelExt.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.SystemColors.ControlText, System.Drawing.Color.MediumSlateBlue);
+gradientPanelExt.Size = new System.Drawing.Size(343, 128);
+gradientPanelExt.CornerRadius = 10;
+
+//First Label
+Label label1 = new Label();
+label1.Location = new System.Drawing.Point(52, 29);
+label1.BackColor = System.Drawing.Color.Transparent;
+label1.ForeColor = System.Drawing.Color.White;
+label1.Size = new System.Drawing.Size(58, 13);
+label1.Text = "Username:";
+
+//Second Label
+Label label2 = new Label();
+label2.Location = new System.Drawing.Point(52, 60);
+label2.BackColor = System.Drawing.Color.Transparent;
+label2.ForeColor = System.Drawing.Color.White;
+label2.Size = new System.Drawing.Size(58, 13);
+label2.Text = "Password:";
+
+//First TextBoxExt
+TextBoxExt textBoxExt1 = new TextBoxExt();
+textBoxExt1.Location = new System.Drawing.Point(113, 26);
+textBoxExt1.Size = new System.Drawing.Size(100, 20);
+textBoxExt1.Text = "David carter";
+
+//Second TextBoxExt
+TextBoxExt textBoxExt2 = new TextBoxExt();
+textBoxExt2.Location = new System.Drawing.Point(113, 57);
+textBoxExt2.PasswordChar = '*';
+textBoxExt2.Size = new System.Drawing.Size(100, 20);
+textBoxExt2.Text = "Welcome";
+
+//textPrimitive1
+TextPrimitive textPrimitive1 = new TextPrimitive();
+textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Top;
+textPrimitive1.BorderColor = System.Drawing.Color.Transparent;
+textPrimitive1.Size = new System.Drawing.Size(50, 20);
+textPrimitive1.Text = "Login";
+textPrimitive1.TextColor = System.Drawing.Color.White;
+
+// textPrimitive2
+TextPrimitive textPrimitive2 = new TextPrimitive();
+textPrimitive2.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
+textPrimitive2.BackColor = System.Drawing.Color.White;
+textPrimitive2.Position = 104;
+textPrimitive2.Size = new System.Drawing.Size(40, 20);
+textPrimitive2.Text = "Ok";
+textPrimitive2.TextColor = System.Drawing.Color.Black;
+            
+// textPrimitive3
+TextPrimitive textPrimitive3 = new TextPrimitive();
+textPrimitive3.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
+textPrimitive3.BackColor = System.Drawing.Color.White;
+textPrimitive3.Position = 160;
+textPrimitive3.Size = new System.Drawing.Size(40, 20);
+textPrimitive3.Text = "Cancel";
+textPrimitive3.TextColor = System.Drawing.Color.Black;
+
+//Adding primitives
+gradientPanelExt.Primitives.AddRange(new Primitive[] { textPrimitive1, textPrimitive2, textPrimitive3 });
+
+//Add the controls
+gradientPanelExt.Controls.Add(label1);
+gradientPanelExt.Controls.Add(label2);
+gradientPanelExt.Controls.Add(textBoxExt1);
+gradientPanelExt.Controls.Add(textBoxExt2);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+'GradientPanelExt
+Dim gradientPanelExt As New GradientPanelExt()
+Me.Controls.Add(gradientPanelExt)
+gradientPanelExt.BackColor = System.Drawing.Color.Transparent
+gradientPanelExt.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.SystemColors.ControlText, System.Drawing.Color.MediumSlateBlue)
+gradientPanelExt.Size = New System.Drawing.Size(343, 128)
+gradientPanelExt.CornerRadius = 10
+
+'First Label
+Dim label1 As New Label()
+label1.Location = New System.Drawing.Point(52, 29)
+label1.BackColor = System.Drawing.Color.Transparent
+label1.ForeColor = System.Drawing.Color.White
+label1.Size = New System.Drawing.Size(58, 13)
+label1.Text = "Username:"
+
+'Second Label
+Dim label2 As New Label()
+label2.Location = New System.Drawing.Point(52, 60)
+label2.BackColor = System.Drawing.Color.Transparent
+label2.ForeColor = System.Drawing.Color.White
+label2.Size = New System.Drawing.Size(58, 13)
+label2.Text = "Password:"
+
+'First TextBoxExt
+Dim textBoxExt1 As New TextBoxExt()
+textBoxExt1.Location = New System.Drawing.Point(113, 26)
+textBoxExt1.Size = New System.Drawing.Size(100, 20)
+textBoxExt1.Text = "David carter"
+
+'Second TextBoxExt
+Dim textBoxExt2 As New TextBoxExt()
+textBoxExt2.Location = New System.Drawing.Point(113, 57)
+textBoxExt2.PasswordChar = "*"c
+textBoxExt2.Size = New System.Drawing.Size(100, 20)
+textBoxExt2.Text = "Welcome"
 
 'textPrimitive1
-Private textPrimitive1 As TextPrimitive = New TextPrimitive()
-Private textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
-Private textPrimitive1.Text = "ProgressbarAdv"
+Dim textPrimitive1 As New TextPrimitive()
+textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Top
+textPrimitive1.BorderColor = System.Drawing.Color.Transparent
+textPrimitive1.Size = New System.Drawing.Size(50, 20)
+textPrimitive1.Text = "Login"
+textPrimitive1.TextColor = System.Drawing.Color.White
 
-'textPrimitive2
-Private textPrimitive2 As TextPrimitive = New TextPrimitive()
-Private textPrimitive2.Text = "Windows Forms Button"
+' textPrimitive2
+Dim textPrimitive2 As New TextPrimitive()
+textPrimitive2.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
+textPrimitive2.BackColor = System.Drawing.Color.White
+textPrimitive2.Position = 104
+textPrimitive2.Size = New System.Drawing.Size(40, 20)
+textPrimitive2.Text = "Ok"
+textPrimitive2.TextColor = System.Drawing.Color.Black
 
-'Adding Primitives
-gradientPanelExt.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitive() {hostPrimitive1, hostPrimitive2, textPrimitive1,textPrimitive2})
+' textPrimitive3
+Dim textPrimitive3 As New TextPrimitive()
+textPrimitive3.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
+textPrimitive3.BackColor = System.Drawing.Color.White
+textPrimitive3.Position = 160
+textPrimitive3.Size = New System.Drawing.Size(40, 20)
+textPrimitive3.Text = "Cancel"
+textPrimitive3.TextColor = System.Drawing.Color.Black
+
+'Adding primitives
+gradientPanelExt.Primitives.AddRange(New Primitive() { textPrimitive1, textPrimitive2, textPrimitive3 })
+
+'Add the controls
+gradientPanelExt.Controls.Add(label1)
+gradientPanelExt.Controls.Add(label2)
+gradientPanelExt.Controls.Add(textBoxExt1)
+gradientPanelExt.Controls.Add(textBoxExt2)
 
 {% endhighlight %}
 {% endtabs %}
  
-5. Run and build the application to view the output.
+![Windows Forms GradientPanelExt showing added primitives and other controls](GradientPanelExt_images\GradientPanelExt_addcontrols.png)
