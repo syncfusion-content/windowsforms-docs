@@ -14,11 +14,11 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-## Adding the GradientPanelExt via designer
+## Adding the GradientPanelExt control via designer
 
-The following steps describe how to create the **GradientPanelExt** control via the designer:
+The following steps describe how to create the **GradientPanelExt** control via the designer.
 
 1) Create a new Windows Forms application in Visual Studio.
 
@@ -36,9 +36,9 @@ The following steps describe how to create the **GradientPanelExt** control via 
 
 5) Set the primitive alignment and position. 
 
-## Adding the GradientPanelExt control through code
+## Adding the GradientPanelExt control via code
 
-The following steps illustrate how to create an **GradientPanelExt** control programmatically:
+The following steps illustrate how to create an **GradientPanelExt** control programmatically.
 
 1) Create a C# or VB application via Visual Studio.
 
