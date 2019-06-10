@@ -16,7 +16,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#coloruicontrol) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
 ## Adding the ColorUI control via designer
 
@@ -87,7 +87,7 @@ Me.Controls.Add(Me.colorUIControl1)
 
    ![ColorUIControl](ColorUI_images/ColorUI_design.png)
 
-## Selecting color and group
+## Select a color and group
 
 At run time a particular color group tab should be focused or selected by using `SelectedColorGroup` property.
 
