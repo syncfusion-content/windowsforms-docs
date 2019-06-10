@@ -3,36 +3,36 @@ layout: post
 title: Getting-Started | WindowsForms | Syncfusion
 description: Getting Started
 platform: WindowsForms
-control: BannerTextProviderComponent
+control: BannerTextProvider
 documentation: ug
 ---
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **“BannerTextProvider”** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with it’s basic functionalities.
 
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
-## Adding a BannerTextProvider control through designer
+## Adding a BannerTextProvider control via designer
 
-1) The **"BannerTextProvider"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+1) The **BannerTextProvider** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.Base
 
  ![Drag and drop BannerTextProvider from toolbox](Overview_images/Banner_toolbox.png) 
 
-2) Drag one component from toolbox and add to the form. For example, we can choose **"TextBoxExt"** control and gets an extender provider property as shown in the following image. 
+2) Drag one component from toolbox and add to the form. For example, we can choose **TextBoxExt** control and gets an extender provider property as shown in the following image. 
 
  ![Windows Forms BannerTextProvider showing set the banner text to TextBoxExt control](Overview_images/Banner_addtext.png) 
 
-## Adding a BannerTextProvider control through code
+## Adding a BannerTextProvider control via code
 
-1) Create a C# or VB application through Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
 2) Add the following assembly reference to the project.
 
@@ -56,7 +56,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-4) Create an instance of **"BannerTextProvider"** control.
+4) Create an instance of **BannerTextProvider** control.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ Specifies the rendering mode of the banner text. The modes are,<br/>
 
 ## Assign Banner Text to a Control
 
-1) First, Add one control to the form. For Example, we can choose **"TextBoxExt"** control. Create an instance of **TextBoxExt"** and add it to the form.
+1) First, Add one control to the form. For Example, we can choose **TextBoxExt** control. Create an instance of **TextBoxExt** and add it to the form.
 
 {% tabs %}
 
