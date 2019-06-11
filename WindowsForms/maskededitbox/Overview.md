@@ -18,3 +18,10 @@ If you define an input mask using the Mask property, each character position i
 
 MaskedEditBox control exhibits the similar properties of CurrencyTextBox.
 
+## Key Features
+
+**Mode** - Provides support to different set of modes. The modes are ClipMode, InputMode and UsageMode.
+
+**Separator** - Provides different set of separator for the control. The separators are DateSeparator, DecimalSeparator, ThousandSeparator and TimeSeparator.
+
+**DataGroups** - Provides option to set the alignment and split up the text.
