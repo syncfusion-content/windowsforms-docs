@@ -104,7 +104,7 @@ The following steps allow you to label a control.
 
 1) Add one control to the form. For example, **TextBoxExt**.
 
-2) Right-click on the **AutoLabel** control. Choose **Properties**  and select `LabeledControl` property. Now, you can choose added control.
+2) Right-click on the **AutoLabel** control. Choose **Properties**  and select `LabeledControl` property. Now, you can choose newly added **TextBoxExt** control.
 
 {% tabs %}
 
@@ -257,4 +257,4 @@ SkinManager.SetVisualStyle(Me.autoLabel1, VisualTheme.Office2016Colorful)
 
 ![Windows Forms AutoLabel showing applied theme](AutoLabel-Images/AutoLabel_themecolor.jpg)
 
-N> This control supports only the following styles using SkinManager. The styles are Office2016Colorful, Office2016Black, Office2016DarkGray, and Office2016White.
+N> This control supports only Office2016Colorful, Office2016Black, Office2016DarkGray, and Office2016White styles using SkinManager.
