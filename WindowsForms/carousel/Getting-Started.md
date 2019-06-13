@@ -9,65 +9,48 @@ documentation: ug
 
 # Getting started
 
-This section describes how to design a `Carousel` control in a Windows Forms application and overview of its basic functionalities.
-
-* Adding Carousel control 
-* Configuring Carousel
+This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#carousel) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#carousel) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application. 
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in any application.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+## Adding the Carousel control via designer
 
-## Creating simple application with Carousel
+The following steps describe how to create a **Carousel** control via the designer.
 
-You can create the Windows Forms application with Carousel control as follows:
+1) Create a new Windows Forms application in Visual Studio.
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Configuration of Carousel](#Configuration-of-carousel)
-5. [Adding controls into Carousel](#adding-controls-into-carousel)
-5. [Adding images into Carousel](#adding-images-into-carousel)
+2) The **Carousel** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
-
-### Creating the project
-
-Create a new Windows Forms project in the Visual Studio to display the Carousel with basic information.
-
-## Adding control via designer
-
-Carousel control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
-
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
 ![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
 
-![Carousel control added in designer](Getting-Started_images/Carousel_img6.png) 
 
+## Adding the Carousel control via code
 
-## Adding control manually in code
+The following steps illustrate how to create an **Carousel** control programmatically.
 
-To add control manually in C#, follow the given steps:
+1) Create a C# or VB application via Visual Studio.
 
-**Step 1** - Add the following required assembly references to the project:
+2) Add the following assembly reference to the project.
 
- * Syncfusion.Tools.Base.dll
- * Syncfusion.Tools.Windows.dll
- * Syncfusion.Shared.Base.dll
- * Syncfusion.Shared.Windows.dll
- * Syncfusion.Grid.Base.dll
- * Syncfusion.Grid.Windows.dll
+ * Syncfusion.Grid.Base
+ * Syncfusion.Grid.Windows
+ * Syncfusion.Shared.Base
+ * Syncfusion.Shared.Windows
+ * Syncfusion.Tools.Base
+ * Syncfusion.Tools.Windows
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+3) Include the required namespaces.
 
 {% tabs %}
 
@@ -85,14 +68,13 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** - Create **Carousel** control instance and add it to the form.
+4) Create an instance of **Carousel** control and add it to the form.
 
 {% tabs %}
 
 {% highlight C# %}
 
 Carousel carousel = new Carousel();
-
 this.Controls.Add(carousel);
 
 {% endhighlight %}
@@ -100,13 +82,11 @@ this.Controls.Add(carousel);
 {% highlight VB %}
 
 Dim carousel As Carousel = New Carousel
-
 Me.Controls.Add(carousel)
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Configuration of Carousel
  
@@ -114,27 +94,29 @@ Carousel control is a circular conveyor used for displaying and rotating the cus
 
 ## Adding controls into Carousel
 
- Custom controls can be added to carousel via both designer and code.
+To load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
 
-### Adding controls through designer
-
- To load custom controls in Carousel, it needs to added into **Items** collection property in designer view.
-
-![Button controls added in Carousel via designer](Getting-Started_images/Carousel_img2.png) 
-
-### Adding controls manually through code
-
- To load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
-
- {% tabs %}
+{% tabs %}
 
 {% highlight C# %}
+
+//Initialization
 ButtonAdv buttonAdv1 =new ButtonAdv();
 ButtonAdv buttonAdv2 =new ButtonAdv();
 
+//Set the properties for two buttonadv
+buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv1.ForeColor = System.Drawing.Color.White;
+
+
+buttonAdv2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv2.ForeColor = System.Drawing.Color.White;
+
+//Add the custom controls into carousel
 this.carousel1.Controls.Add(this.buttonAdv1);
 this.carousel1.Controls.Add(this.buttonAdv2);
 
+//Add the custom controls into carousel items
 this.carousel1.Items.Add(this.buttonAdv1);
 this.carousel1.Items.Add(this.buttonAdv2);
 
@@ -142,16 +124,23 @@ this.carousel1.Items.Add(this.buttonAdv2);
 
 {% highlight VB %}
 
+'Initialization
 Dim buttonAdv1 As ButtonAdv = New ButtonAdv
-
 Dim buttonAdv2 As ButtonAdv = New ButtonAdv
 
-Me.carousel1.Controls.Add(this.buttonAdv1)
+'Set the properties for two buttonadv
+buttonAdv1.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv1.ForeColor = System.Drawing.Color.White
 
+buttonAdv2.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv2.ForeColor = System.Drawing.Color.White
+
+'Add the custom controls into carousel
+Me.carousel1.Controls.Add(this.buttonAdv1)
 Me.carousel1.Controls.Add(this.buttonAdv2)
 
+'Add the custom controls into carousel items
 Me.carousel1.Items.Add(this.buttonAdv1)
-
 Me.carousel1.Items.Add(this.buttonAdv2)
 
 {% endhighlight %}
@@ -162,52 +151,72 @@ Me.carousel1.Items.Add(this.buttonAdv2)
 
 ## Adding images into Carousel
 
-Image objects can be added to carousel via both designer and code.
-
-### Adding images through designer
-
-To load images in Carousel, it needs to added into `ImageListCollection` property in designer view.
-
- ![Images are added in Carusel via designer](Getting-Started_images/Carousel_img3.png) 
-
-### Adding images manually through code
-
- To load images in Carousel,it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~ImageListCollection.html) property in Carousel class.
+To load images in Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~ImageListCollection.html) property in Carousel class.
 
 {% tabs %}
 
 {% highlight C# %}
 
+//Image slides
+carousel1.ImageSlides = true;
+
+//Initialization
 CarouselImage carouselImage1 = new CarouselImage();
-
 CarouselImage carouselImage2 = new CarouselImage();
+CarouselImage carouselImage3 = new CarouselImage();
+CarouselImage carouselImage4 = new CarouselImage();
+CarouselImage carouselImage5 = new CarouselImage();
+CarouselImage carouselImage6 = new CarouselImage();
 
+// Adding carousel image
 carouselImage1.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage1.ItemImage")));
-
 carouselImage2.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage2.ItemImage")));
+carouselImage3.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage3.ItemImage")));
+carouselImage4.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage4.ItemImage")));
+carouselImage5.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage5.ItemImage")));
+carouselImage6.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage6.ItemImage")));
 
+// Add capture images to imagelistcollection
 this.carousel1.ImageListCollection.Add(carouselImage1);
-
 this.carousel1.ImageListCollection.Add(carouselImage2);
+this.carousel1.ImageListCollection.Add(carouselImage3);
+this.carousel1.ImageListCollection.Add(carouselImage4);
+this.carousel1.ImageListCollection.Add(carouselImage5);
+this.carousel1.ImageListCollection.Add(carouselImage6);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim carouselImage1 As CarouselImage = New CarouselImage
+'Image slides
+carousel1.ImageSlides = True
 
-Dim carouselImage2 As CarouselImage = New CarouselImage
+'Initialization
+Dim carouselImage1 As New CarouselImage()
+Dim carouselImage2 As New CarouselImage()
+Dim carouselImage3 As New CarouselImage()
+Dim carouselImage4 As New CarouselImage()
+Dim carouselImage5 As New CarouselImage()
+Dim carouselImage6 As New CarouselImage()
 
-carouselImage1.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage1.ItemImage")))
+' Adding carousel image
+carouselImage1.ItemImage = (CType(resources.GetObject("carouselImage1.ItemImage"), System.Drawing.Image))
+carouselImage2.ItemImage = (CType(resources.GetObject("carouselImage2.ItemImage"), System.Drawing.Image))
+carouselImage3.ItemImage = (CType(resources.GetObject("carouselImage3.ItemImage"), System.Drawing.Image))
+carouselImage4.ItemImage = (CType(resources.GetObject("carouselImage4.ItemImage"), System.Drawing.Image))
+carouselImage5.ItemImage = (CType(resources.GetObject("carouselImage5.ItemImage"), System.Drawing.Image))
+carouselImage6.ItemImage = (CType(resources.GetObject("carouselImage6.ItemImage"), System.Drawing.Image))
 
-carouselImage2.ItemImage = ((System.Drawing.Image)(resources.GetObject("carouselImage2.ItemImage")))
-
-Me.carousel1.ImageListCollection.Add(carouselImage1);
-
-Me.carousel1.ImageListCollection.Add(carouselImage2);
+' Add capture images to imagelistcollection
+Me.carousel1.ImageListCollection.Add(carouselImage1)
+Me.carousel1.ImageListCollection.Add(carouselImage2)
+Me.carousel1.ImageListCollection.Add(carouselImage3)
+Me.carousel1.ImageListCollection.Add(carouselImage4)
+Me.carousel1.ImageListCollection.Add(carouselImage5)
+Me.carousel1.ImageListCollection.Add(carouselImage6)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Images are added in Carusel via code](Getting-Started_images/Carousel_img5.png)
+![Images are added in Carusel via code](Getting-Started_images/Carousel_image.gif)
