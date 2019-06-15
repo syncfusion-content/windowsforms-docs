@@ -19,8 +19,6 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding the AutoLabel control via designer
 
-The following steps describe how to create an **AutoLabel** control via the designer:
-
 1) Create a new Windows Forms application in Visual Studio.
 
 2) The **AutoLabel** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
@@ -33,7 +31,6 @@ The following steps describe how to create an **AutoLabel** control via the desi
 
 ## Adding the AutoLabel control via code
 
-The following steps illustrate how to create an **AutoLabel** control programmatically:
 
 1) Create a C# or VB application via Visual Studio.
 
@@ -99,8 +96,6 @@ Me.Controls.Add(Me.autoLabel1)
 
 
 ## Labeling a control
-
-The following steps allow you to label a control.
 
 1) Add one control to the form. For example, **TextBoxExt**.
 
@@ -171,7 +166,7 @@ Me.autoLabel1.Gap = 10
 
 ## Position
 
- The **AutoLabel** control can be positioned relative to the top, left, bottom, or right of the labeled control. You can do this using the given property.
+ The **AutoLabel** control can be positioned relative to the top, left, bottom, or right of the labeled control.
 
  <table>
 <tr>
