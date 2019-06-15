@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in Editor controls.
+Syncfusion introduces BannerTextProvider class that provides the ability to display watermark in Editor controls. It can be used as an information when mapped edit control has empty content.
 
  ![Overview of BannerTextProvider](Overview_images/overview.png) 
 
@@ -19,7 +19,7 @@ Syncfusion introduces BannerTextProvider class that provides the ability to disp
 
 BannerTextProvider contains the following features.
 
-**Text Mode** - Provides two set of modes. FocusMode and EditMode.
+**Text Mode** - FocusMode and EditMode helps to control visibility of the banner text.
 
 **Text color** - You can set color to the BannerText in BannerTextProvider control.
 
