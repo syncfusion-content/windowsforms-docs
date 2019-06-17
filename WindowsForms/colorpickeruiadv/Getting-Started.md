@@ -8,20 +8,20 @@ documentation: ug
 ---
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **ColorPickerUIAdv** with its basic functionalities.
 
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#colorpickeruiadv) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#colorpickeruiadv) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
 ## Adding the ColorPickerUIAdv control via designer
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **ColorPickerUIAdv** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2) The **ColorPickerUIAdv** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -40,7 +40,7 @@ It can be added programmatically by performing the following steps.
 
 1) Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project.
+2) Add the following assembly references to the project:
 	
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of **ColorPickerUIAdv** and add it to the form.
+4) Create an instance of **ColorPickerUIAdv**, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,9 +90,9 @@ Me.Controls.Add(cpa)
    ![ColorPickerUIAdv for Windows Forms](ColorPickerUIAdv_Images/ColorPickerUIAdv.jpeg) 
 
 
-## Color Selection
+## Color selection
 
-At runtime a particular color should be focused or selected by using `SelectedColor` property.
+At run time, a particular color should be focused or selected using the `SelectedColor` property.
 
 {% tabs %}
 
