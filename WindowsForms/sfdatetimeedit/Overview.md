@@ -11,7 +11,7 @@ documentation: ug
 
 The **SfDateTimeEdit** is a control that allows you to edit the DateTime in the text or mask format with the support of minimum and maximum value validation, watermark, and globalization. It provides flexible options to display the date-time according to the required format.
 
-![Overview of SfDateTimeEdit]()
+![Overview of SfDateTimeEdit](overview_images/overview.png)
 
 ## Key Features
 
