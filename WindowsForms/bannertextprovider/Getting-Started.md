@@ -77,39 +77,6 @@ Me.bannerTextProvider = New Syncfusion.Windows.Forms.BannerTextProvider(Me.compo
 {% endtabs %}
 
 
-## Customizing the Banner Text
-
-Extender properties allow you to customize the Banner text. They are as follows.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Visible</td><td>
-Indicates whether the banner text should be visible or not.</td></tr>
-<tr>
-<td>
-Text</td><td>
-Sets the banner text.</td></tr>
-<tr>
-<td>
-Color</td><td>
-Sets the banner text color.</td></tr>
-<tr>
-<td>
-Font</td><td>
-Sets the font style for the banner text.</td></tr>
-<tr>
-<td>
-Mode</td><td>
-Specifies the rendering mode of the banner text. The modes are,<br/>
-1. FocusMode - The banner text disappears when the control gets focus.<br/>
-2. EditMode - The banner text disappears only when the control is in Edit Mode or when the associated textbox is not empty.</td></tr>
-</table>
-
 ## Assign Banner Text to a Control
 
 1) First, Add one control to the form. For Example, we can choose **TextBoxExt** control. Create an instance of **TextBoxExt** and add it to the form.
@@ -155,6 +122,37 @@ info.Text = "New Banner Text"
 {% endtabs %}
 
 N> Make sure you clear the default value of the Text property of the controls before setting the banner text.
+
+Extender properties allow you to customize the Banner text. They are as follows.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Visible</td><td>
+Indicates whether the banner text should be visible or not.</td></tr>
+<tr>
+<td>
+Text</td><td>
+Sets the banner text.</td></tr>
+<tr>
+<td>
+Color</td><td>
+Sets the banner text color.</td></tr>
+<tr>
+<td>
+Font</td><td>
+Sets the font style for the banner text.</td></tr>
+<tr>
+<td>
+Mode</td><td>
+Specifies the rendering mode of the banner text. The modes are,<br/>
+1. FocusMode - The banner text disappears when the control gets focus.<br/>
+2. EditMode - The banner text disappears only when the control is in Edit Mode or when the associated textbox is not empty.</td></tr>
+</table>
 
 {% tabs %}
 {% highlight c# %}
