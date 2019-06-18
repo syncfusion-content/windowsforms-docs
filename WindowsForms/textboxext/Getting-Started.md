@@ -86,15 +86,15 @@ The size of TextBoxExt control can be applied by the following properties.
 
 {% highlight C# %}
 
-this.textBoxExt1.MinimumSize = new System.Drawing.Size(150, 50);
-this.textBoxExt1.MaximumSize = new System.Drawing.Size(150, 50);
+this.textBoxExt1.MinimumSize = new System.Drawing.Size(267, 104);
+this.textBoxExt1.MaximumSize = new System.Drawing.Size(267, 104);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.MaximumSize = New System.Drawing.Size(150, 50)
-Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 50)
+Me.textBoxExt1.MaximumSize = New System.Drawing.Size(267, 104)
+Me.textBoxExt1.MinimumSize = New System.Drawing.Size(267, 104)
 
 {% endhighlight %}
 
