@@ -99,6 +99,18 @@ sfListView1.SelectedItems.Clear()
 {% endhighlight %}
 {% endtabs %}
 
+### Getting rowindex
+SfListView allows you to get the item row index based on provided point. You can use `GetRowIndexAtPoint` method to get row index based on the bounds value.
+
+{% tabs %}
+{% highlight c# %}
+int rowIndex = sfListView.GetRowIndexAtPoint(point);
+{% endhighlight %}
+{% highlight vb %}
+Dim rowIndex As Integer = sfListView.GetRowIndexAtPoint(point)
+{% endhighlight %}
+{% endtabs %}
+
 ## Hot tracking
 SfListView supports hover selection on item when mouse pointer moves over an item by setting [SfListView.HotTracking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~HotTracking.html) as true.
 
