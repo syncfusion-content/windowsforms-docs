@@ -94,7 +94,7 @@ The **GradientLabel** control's background can be customized using the various o
 {% highlight C# %}
 
 this.gradientLabel1.Size = new System.Drawing.Size(120, 46);
-this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.Black, System.Drawing.Color.Navy);
+this.gradientLabel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.Red, System.Drawing.Color.MediumBlue);
 this.gradientLabel1.Text = "Syncfusion Control";
 this.gradientLabel1.ForeColor = System.Drawing.Color.SeaShell;
 
@@ -103,8 +103,7 @@ this.gradientLabel1.ForeColor = System.Drawing.Color.SeaShell;
 {% highlight vb %}
 
 Me.gradientLabel1.Size = New System.Drawing.Size(120, 46)
-Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.Black, System.Drawing.Color.Navy)
-Me.gradientLabel1.Size = New System.Drawing.Size(120, 46)
+Me.gradientLabel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.Red, System.Drawing.Color.MediumBlue)
 Me.gradientLabel1.ForeColor = System.Drawing.Color.SeaShell
 
 {% endhighlight %}
