@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of SfNumericTextBox control for Windows Forms
+title: Overview of SfNumericTextBox control | Windows Forms | Syncfusion
 description: An overview of SfNumericTextBox control for Windows Forms and its key features like inbuilt watermark support, different display modes etc.
 platform: WindowsForms
 control: SfNumericTextBox
