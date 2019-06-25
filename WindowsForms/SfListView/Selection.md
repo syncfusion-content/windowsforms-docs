@@ -100,7 +100,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ### Getting row index
-SfListView allows you to get the item row index based on provided point. You can use `GetRowIndexAtPoint` method to get row index based on the bounds value.
+SfListView allows you to get item row index based on provided point. You can use the `GetRowIndexAtPoint` method to get a row index based on the bounds value.
 
 {% tabs %}
 {% highlight c# %}
