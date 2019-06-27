@@ -19,14 +19,22 @@ To populate through DataSource.
 {% highlight c# %}
 
 // Specifies the DataSource.
-editableList1.ListBox.DataSource=DataSource;
+    List<string>  DataSource= new List<string>();
+    DataSource.Add("Winforms");
+    DataSource.Add("WPF");
+    DataSource.Add("UWP");
+    this.editableList1.ListBox.DataSource = DataSource;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 ' Specifies the DataSource.
-editableList1.ListBox.DataSource=DataSource
+   Dim DataSource As List(Of String) = New List(Of String)()
+    DataSource.Add("Winforms")
+    DataSource.Add("WPF")
+    DataSource.Add("UWP")
+    Me.editableList1.ListBox.DataSource = DataSource
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,4 +49,4 @@ The List can be edited in the following way during runtime:
 2.  Click again. There appears a TextBox. Now edit the text.
 3.  After editing change the focus, the list will get updated.
 
-![](Populating-and-Editing-the-List_images/Populating-and-Editing-the-List_img1.png)
+![populating the items in the list](Populating-and-Editing-the-List_images/Populating-and-Editing-the-List_img1.png)
