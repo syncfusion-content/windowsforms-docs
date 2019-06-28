@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SplitContainerAdv control | Windows Forms | Syncfusion
-description: SplitContainerAdv control helps to resize the docked controls and allows to collapse and expand child controls with theme support.
+title: Overview | SplitContainerAdv | Windows Forms | Syncfusion
+description: WinForms SplitContainerAdv is an extension of SplitContainer which allows you to add controls into different panels in a form, separated by splitters.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
