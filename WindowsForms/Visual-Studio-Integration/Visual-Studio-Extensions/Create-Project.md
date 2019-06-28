@@ -44,7 +44,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose the project type in Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-11.png)
 
-   N> Project type selection option will be available only in Visual Studio 2019 Syncfusion Windows Forms Project template configuration. The .NET Core option will be listed in project type only when the Dotnet Core 3.0 setup has been installed.
+   N> Project type selection option will be available only in Visual Studio 2019 Syncfusion Windows Forms Project template configuration. The .NET Core option will be listed in project type only when the Dot net Core 3.0 setup has been installed.
 
    **Language:** Select the language, either C# or VB. 
 
