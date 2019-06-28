@@ -40,7 +40,7 @@ SkinManager present in `Syncfusion.Shared.Base` assembly.
 
 ## Loading theme assemblies
 
-Skin manager loads theme assembly using [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method before applying theme. This is applicable for the themes which are loaded from separatly assembly and not applicable for the themes built-in to the control assembly. 
+Skin manager loads theme assembly using [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method before applying theme. This is applicable for the themes which are loaded from separately assembly and not applicable for the themes built-in to the control assembly. 
 
 {% tabs %}
 
@@ -151,7 +151,7 @@ skinManager1.VisualTheme = VisualTheme.Office2016Black
 
 ## Apply Themes to entire application
 
-Skin manager allows to apply theme for all the controls and forms in an application by setting [ApplicationVisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~ApplicationVisualTheme.html) property. It allows you to theme entier application using single `ApplicationVisualTheme` property. 
+Skin manager allows to apply theme for all the controls and forms in an application by setting [ApplicationVisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~ApplicationVisualTheme.html) property. It allows you to theme entire application using single `ApplicationVisualTheme` property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -223,10 +223,10 @@ FontHelper.FontFamily = New FontFamily("Algerian")
 
 ### Styles
 
-When using theme studio based themes, the appearence of each control or component can be customized using `ThemeStyle` property.
+When using theme studio based themes, the appearance of each control or component can be customized using `ThemeStyle` property.
 
 
-N> If the control name start with **SF**, you can access appearence properties using `Style` property and for remaining controls use `ThemeStyle` property.
+N> If the control name start with **SF**, you can access appearance properties using `Style` property and for remaining controls use `ThemeStyle` property.
 
 For example, In the below code we have change the different style of each control.
 
@@ -258,9 +258,9 @@ Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
 
 ### Overriding user customization when applying theme
 
-You can customize the appearence of control using `Style` or `ThemeStyle` properties when using theme studio based themes. Syncfusion control provides option whether theme can override style settings using `CanOverrideStyle` property.
+You can customize the appearance of control using `Style` or `ThemeStyle` properties when using theme studio based themes. Syncfusion control provides option whether theme can override style settings using `CanOverrideStyle` property.
 
-For example, In the below code TreeView forecolor is customized and theme applied after that line. If you run the applicaiton theme will not override the forecolor settings since default value of `CanOverrideStyle` is `false`. If you set `CanOverrideStyle` property as `true` before setting the theme, then forecolor setting will get overridden by theme.
+For example, In the below code TreeView fore color is customized and theme applied after that line. If you run the application theme will not override the fore color settings since default value of `CanOverrideStyle` is `false`. If you set `CanOverrideStyle` property as `true` before setting the theme, then fore color setting will get overridden by theme.
 
 {% tabs %}
 
