@@ -19,22 +19,22 @@ To populate through DataSource.
 {% highlight c# %}
 
 // Specifies the DataSource.
-    List<string>  DataSource= new List<string>();
-    DataSource.Add("Winforms");
-    DataSource.Add("WPF");
-    DataSource.Add("UWP");
-    this.editableList1.ListBox.DataSource = DataSource;
+    List<string>  dataSource= new List<string>();
+    dataSource.Add("item 1");
+    dataSource.Add("item 2");
+    dataSource.Add("item 3");
+    this.editableList1.ListBox.DataSource = dataSource;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 ' Specifies the DataSource.
-   Dim DataSource As List(Of String) = New List(Of String)()
-    DataSource.Add("Winforms")
-    DataSource.Add("WPF")
-    DataSource.Add("UWP")
-    Me.editableList1.ListBox.DataSource = DataSource
+   Dim dataSource As List(Of String) = New List(Of String)()
+    dataSource.Add("item 1")
+    dataSource.Add("item 2")
+    dataSource.Add("item 3")
+    Me.editableList1.ListBox.DataSource = dataSource
 
 {% endhighlight %}
 {% endtabs %}
