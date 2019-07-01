@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization-support | TabbedMDIManager | WindowsForms | Syncfusion
+title: Serialization | TabbedMDIManager | WinForms | Syncfusion
 description: This section explains about how to serialize and de-serialize the tab groups in different available formats
 platform: WindowsForms
 control: TabbedMDIManager 
