@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of DockingManager control | Windows Forms | Syncfusion
-description: DockingManager provides an interface to create visual studio style dock windows. Supports floating panels, dock panels, pin & tabbed groups.
+description: WinForms Docking Manager provides an interface to create visual studio style dock windows. It supports floating and dock panels, then pin and tabbed groups.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

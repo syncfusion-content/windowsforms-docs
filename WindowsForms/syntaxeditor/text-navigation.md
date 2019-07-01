@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation functionalities in EditControl | Windows Forms | Syncfusion
+title: Text Navigation | Syntax Editor | Syncfusion
 description: This section explains about navigating the text in EditControl through keyboard or programmatically
 platform: WindowsForms
 control: SyntaxEditor
