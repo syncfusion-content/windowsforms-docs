@@ -24,7 +24,7 @@ Me.colorPickerButton1.ColorUISize = New System.Drawing.Size(250, 280)
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerButton_images/Overview_img249.jpeg) 
+![Windows Forms ColorPickerButton showing the dropdown](ColorPickerButton_images/Overview_img249.jpeg) 
 
 ## ColorPicker Appearance
 
@@ -38,11 +38,11 @@ Description</th></tr>
 <tr>
 <td>
 SelectedAsBackColor</td><td>
-Specifies whether ColorPickerButton.SelectedColor is set as the button back color.</td></tr>
+Specifies whether the SelectedColor is set as the button backcolor.</td></tr>
 <tr>
 <td>
 SelectedAsText</td><td>
-Specifies whether ColorPickerButton.SelectedColor is set as the button text value.</td></tr>
+Specifies whether the SelectedColor is set as the button text value.</td></tr>
 </table>
 
 {% tabs %}
@@ -61,13 +61,11 @@ Me.colorPickerButton1.SelectedAsText = True
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerButton_images/Overview_img250.jpeg) 
+![Windows Forms ColorPickerButton showing selected color as in control text](ColorPickerButton_images/Overview_img250.jpeg) 
 
 ## Visual Style
 
-ColorPickerButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
-
-This style can be set using Appearance property
+The ColorPickerButton control supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro. This style can be set using `Appearance` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +81,7 @@ Me.colorPickerButton1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Col
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorPickerButton_images/colorpickerbutton_office2016colorful.png) 
+![Windows Forms ColorPickerButton showing style of Office2016Colorful](ColorPickerButton_images/colorpickerbutton_office2016colorful.png) 
 
  {% seealso %}
  

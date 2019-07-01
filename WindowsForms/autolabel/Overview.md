@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The **"AutoLabel"** control is a Label-inspired control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
+The **AutoLabel** control is a Label-inspired control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
 
 ![Overview of AutoLabel](AutoLabel-Images/overview.jpg)
 
@@ -20,6 +20,6 @@ The FlowLayout layout manager always treats the AutoLabel-labeled control pair a
 
  {% seealso %}
  
- [Labeling a control.](http://help.syncfusion.com/windowsforms/autolabel/labeling-a-control)
+ [Labeling a control](https://help.syncfusion.com/windowsforms/autolabel/getting-started#labeling-a-control)
  
   {% endseealso %}

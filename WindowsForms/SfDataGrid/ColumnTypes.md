@@ -926,10 +926,10 @@ By default, the group caption text will be displayed based on the [MappingName](
 
 {% tabs %}
 {% highlight c# %}
-sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", IDataSourceSelector = new CustomSelector(), GroupMode = Syncfusion.Data.DataReflectionMode.Display });
+sfDataGrid.Columns.Add(new GridComboBoxColumn() { MappingName = "ShipCityID", HeaderText = "Ship City", ValueMember = "ShipCityID", DisplayMember = "ShipCityName", GroupMode = Syncfusion.Data.DataReflectionMode.Display });
 {% endhighlight %}
 {% highlight vb %}
-sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .IDataSourceSelector = New CustomSelector(), .GroupMode = Syncfusion.Data.DataReflectionMode.Display})
+sfDataGrid.Columns.Add(New GridComboBoxColumn() With {.MappingName = "ShipCityID", .HeaderText = "Ship City", .ValueMember = "ShipCityID", .DisplayMember = "ShipCityName", .GroupMode = Syncfusion.Data.DataReflectionMode.Display})
 {% endhighlight %}
 {% endtabs %}
 
