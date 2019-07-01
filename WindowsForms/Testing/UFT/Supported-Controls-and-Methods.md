@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QTP/UFT for Syncfusion Essential WindowsForms
+title: QTP or UFT - Supported Controls and Methods | Syncfusion
 description: This section explains about the Supported Controls and Methods for QTP/UFT.
 platform: WindowsForms
 control: Testing
