@@ -11,7 +11,7 @@ documentation: ug
 
 RangeSlider is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
 
-![Range Slider for Windows Forms](Getting-Started_images/RangeSlider-img3.png) 
+![Range Slider for Windows Forms](Getting-Started_images/Overview.png) 
 
 ## Key features
 

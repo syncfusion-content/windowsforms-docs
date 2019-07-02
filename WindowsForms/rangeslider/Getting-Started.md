@@ -11,69 +11,79 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#rangeslider) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#rangeslider) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+## Add RangeSlider control via designer
 
-## Create a simple application with RangeSlider
+1) Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
 
-You can create a Windows Forms application with the RangeSlider control using the following steps:
+2) The **RangeSlider** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-## Create a project
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
-Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
+![Windows Forms range slider control added by designer](Getting-Started_images/wf-range-slider-control-added-by-designer.png) 
 
-## Add control through designer
-
-The RangeSlider control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project.
-
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
-
-![wf range slider control added by designer](Getting-Started_images/wf-range-slider-control-added-by-designer.png) 
-
-## Add control manually using code
+## Add RangeSlider control via code
 
 To add the control manually in C#, follow the given steps:
 
-**1.**	Add the following required assembly references to the project: 
+1) Create a C# or VB application via Visual Studio.
 
-  * Syncfusion.Grid.Base.dll
-  * Syncfusion.Grid.Windows.dll
-  * Syncfusion.Shared.Base.dll
-  * Syncfusion.Shared.Windows.dll
-  * Syncfusion.Tools.Base.dll
-  * Syncfusion.Tools.Windows.dll
+2) Add the following references to the project: 
 
-**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace. 
+ * Syncfusion.Grid.Base
+ * Syncfusion.Grid.Windows
+ * Syncfusion.Shared.Base
+ * Syncfusion.Shared.Windows
+ * Syncfusion.Tools.Base
+ * Syncfusion.Tools.Windows
 
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight %}
-  {% endtabs %}
+3)	Include the required namespace. 
 
-**3.** Create a RangeSlider instance, and add it to the window.
+{% tabs %}
 
-  {% tabs %}
-  {% highlight C# %}
-  RangeSlider rangeSlider1 = new RangeSlider();
-  this.Controls.Add(rangeSlider1);
-  {% endhighlight %}
-  {% highlight VB %}
-  Dim rangeSlider1 As RangeSlider = New RangeSlider
-  Me.Controls.Add(rangeSlider1)
-  {% endhighlight %}
-  {% endtabs %}
+{% highlight C# %}
+
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+
+{% endtabs %}
+
+4) Create an instance of **RangeSlider**, and add it to the form.
+
+{% tabs %}
+
+{% highlight C# %}
+
+RangeSlider rangeSlider1 = new RangeSlider();
+rangeSlider1.ShowLabels = true;
+this.Controls.Add(rangeSlider1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim rangeSlider1 As RangeSlider = New RangeSlider
+rangeSlider1.ShowLabels = True
+Me.Controls.Add(rangeSlider1)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![wf range slider control value range](Getting-Started_images/wf-range-slider-control.png)
 
@@ -83,12 +93,18 @@ You can set the minimum and maximum values programmatically using the [SliderMin
 
 {% tabs %}
 {% highlight C# %}
-this.rangeSlider1.SliderMin = 4;
-this.rangeSlider1.SliderMax = 7;
+
+rangeSlider1.SliderMin = 4;
+
+rangeSlider1.SliderMax = 7;
+
 {% endhighlight %}
 {% highlight VB %}
-Me.rangeSlider1.SliderMin = 4
-Me.rangeSlider1.SliderMax = 7
+
+rangeSlider1.SliderMin = 4
+
+rangeSlider1.SliderMax = 7
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,17 +116,21 @@ You can change the layout of range slider to horizontal or vertical by setting t
 
 {% tabs %}
 {% highlight C# %}
+
 rangeSlider.Orientation=Orientation.Vertical;
+
 {% endhighlight %}
 {% highlight VB %}
+
 rangeSlider.Orientation=Orientation.Vertical
+
 {% endhighlight %}
 {% endtabs %}
 
-* **Horizontal**
+**Horizontal**
 
 ![wf range slider control horizontal orientation](Getting-Started_images/wf-range-slider-horizontal-orientation.png) 
 
-* **Vertical**
+**Vertical**
 
 ![wf range slider control horizontal orientation](Getting-Started_images/wf-range-slider-vertical-orientation.png) 
