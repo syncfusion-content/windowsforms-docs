@@ -130,7 +130,7 @@ End Sub
 
 ![TabSplitterContainer control](GettingStarted-images/wf-tabsplitter-container-control.png)
 
-6) Add any one of the control, and add it to the tabsplitterpage. For example, TextBoxExt.
+6) Add any one of the control, and add it to the tabSplitterPage. For example, TextBoxExt.
 
 {% tabs %}
 {% highlight C# %}
