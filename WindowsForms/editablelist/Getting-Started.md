@@ -3,85 +3,130 @@ layout: post
 title: Getting Started | WindowsForms | Syncfusion
 description: creating editable list
 platform: WindowsForms
-control: EditorsPackage
+control: EditableList
 documentation: ug
 ---
 
 # Getting Started
 
-To use an EditableList control in your application, all you need to do is drag-and-drop the EditableList control from the controls toolbox onto your form. To add items, expand ListBox node and open String Collection Editor.
+## Assembly deployment
 
-![](Creating-Editable-List_images/Creating-Editable-List_img1.png)
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#editablelist) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-It can be created programmatically as follows.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-1. Include the required namespace.
+## Adding EditableList control via designer
+
+1) Create a new Windows Forms application in Visual Studio.
+
+2) The **EditableList** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+
+* Syncfusion.Shared.Base
+
+![Windows Forms EditableList drag and drop from toolbox](Creating-Editable-List_images/Creating-Editable-List_img1.png)
+
+## Adding EditableList control via code
+
+1) Create a C# or VB application via Visual Studio.
+
+2) Add the following reference to the project:
+
+* Syncfusion.Shared.Base
+
+3) Include the required namespace.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
-using Syncfusion.Windows.Forms.Tools;
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+{% highlight VB %}
+
+Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-Imports Syncfusion.Windows.Forms.Tools
-
-{% endhighlight %}
 {% endtabs %}
 
-2. Declare and create an instance of EditableList control.
+4) Create an instance of **EditableList**, and add it to the form.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
-private Syncfusion.Windows.Forms.Tools.EditableList editableList1;
-this.editableList1=new Syncfusion.Windows.Forms.Tools.EditableList();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private editableList1 As Syncfusion.Windows.Forms.Tools.EditableList
-Me.editableList1 = New Syncfusion.Windows.Forms.Tools.EditableList()
-
-{% endhighlight %}
-{% endtabs %}
- 
-3. Associate Button, TextBox and ListBox with the EditableList control.
-
-{% tabs %}
-{% highlight c# %}
-
-this.editableList1.Controls.Add(this.editableList1.Button);
-this.editableList1.Controls.Add(this.editableList1.ListBox);
-this.editableList1.Controls.Add(this.editableList1.TextBox);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.editableList1.Controls.Add(Me.editableList1.Button)
-Me.editableList1.Controls.Add(Me.editableList1.ListBox)
-Me.editableList1.Controls.Add(Me.editableList1.TextBox)
-
-{% endhighlight %}
-{% endtabs %}
-
-4. Specify the size of EditableList control and add that instance to the Form.
-
-{% tabs %}
-{% highlight c# %}
-
-this.editableList1.Size = new System.Drawing.Size(144, 40);
+EditableList editableList1 = new EditableList();
 this.Controls.Add(this.editableList1);
 
 {% endhighlight %}
+
 {% highlight vb %}
 
-Me.editableList1.Size = New System.Drawing.Size(144, 40)
+EditableList editableList1 = New EditableList()
 Me.Controls.Add(Me.editableList1)
 
 {% endhighlight %}
 {% endtabs %}
+ 
+5) Associate Button, TextBox and ListBox with the EditableList control.
+
+{% tabs %}
+{% highlight c# %}
+
+// Add Button, ListBox and TextBox controls
+editableList1.Controls.Add(this.editableList1.Button);
+editableList1.Controls.Add(this.editableList1.ListBox);
+editableList1.Controls.Add(this.editableList1.TextBox);
+
+// Set size and add items
+this.editableList1.Size = new System.Drawing.Size(144, 40);
+
+editableList.ListBox.Items.AddRange(new object[] { "Button", "Text", "Image", "Font style" });
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Add Button, ListBox and TextBox controls
+editableList1.Controls.Add(Me.editableList1.Button)
+editableList1.Controls.Add(Me.editableList1.ListBox)
+editableList1.Controls.Add(Me.editableList1.TextBox)
+
+' Set size and add items
+Me.editableList1.Size = New System.Drawing.Size(144, 140)
+
+editableList.ListBox.Items.AddRange(New Object() { "Button", "Text", "Image", "Font style" })
+
+{% endhighlight %}
+{% endtabs %}
+
+![Windows Forms EditableList showing added item into the listbox](Creating-Editable-List_images/EditableList_addingitem.png)
+
+## Select and Edit the item
+
+### Selecting the item
+
+At run time, The user can click any item in the collection list and the item will be selected in the list.
+
+This selection process can be achieved by the following code.
+
+{% tabs %}
+{% highlight C# %}
+
+editableList.ListBox.SelectedItem = "Text";
+
+{% endhighlight %}
+{% highlight VB %}
+
+editableList.ListBox.SelectedItem = "Text"
+
+{% endhighlight %}
+{% endtabs %}
+
+![Windows Forms EditableList showing selected item](Creating-Editable-List_images/EditableList_selecteditem.png)
+
+
+### Editing the item
+
+At run time, Select the text and double click on the text or press "F2" button. Now, you can edit the text.
+
+![Windows Forms EditableList showing edited item](Creating-Editable-List_images/EditableList_edititem.png)
