@@ -11,15 +11,15 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#clock) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application. 
+Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#clock) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application. 
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding Clock control through designer
 
-1) Create a new Windows Forms project in Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
-2) The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
+2. The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,9 +34,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 To add the control manually in C#, follow the given steps:
 
-1) Create C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -45,7 +45,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %} 
 
-4) Create an instance of **Clock** control instance, and add it to the form.
+4. Create an instance of the **Clock** control instance, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -99,7 +99,7 @@ clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital
 
 {% endtabs %}
 
-![Windows Forms Clock showing digital clock](Getting-Started_images/wf-digital-clock.png)
+![Windows Forms Clock shows digital clock](Getting-Started_images/wf-digital-clock.png)
 
 For Analog Clock,
 
@@ -119,11 +119,11 @@ clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Analog
 
 {% endtabs %}
 
-![Windows Forms Clock showing analog clock](Getting-Started_images/wf-analog-clock.png)
+![Windows Forms clock shows analog clock](Getting-Started_images/wf-analog-clock.png)
 
 ## Change date and time
 
-To enable custom time, The Clock control should be enabled with the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowCustomTimeClock.html) property set as `true`, and the custom time should be in DateTime format.
+To enable custom time, the Clock control should be enabled by setting the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowCustomTimeClock.html) property to `true`, and the custom time should be in date-time format.
 
 {% tabs %}
 {% highlight C# %}
@@ -140,4 +140,4 @@ clock1.CustomTime = New System.DateTime(2019, 7, 3, 16, 50, 1, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Clock showing customized time](Getting-Started_images/Clock_customtime.png)
+![Windows Forms Clock shows customized time](Getting-Started_images/Clock_customtime.png)
