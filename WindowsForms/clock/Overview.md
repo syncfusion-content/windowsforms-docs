@@ -11,15 +11,14 @@ documentation: ug
 
 Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control in an application. This feature enables you to add customizable analog clocks in the application.
 
-![Overview of Clock control](Overview_images/overview.png)
+![Overview of the Clock control](Overview_images/overview.png)
 
 ## Key features
 
-**Clock Types** - Provides different types of clock. The types are Analog and Digital.
+**Clock types** - Provide different types of clock. The types are Analog and Digital.
 
-**Shapes** - Provides different shapes of clock. The shapes are Rectangle, RoundedRectangle, Circle, Square and RoundedSquare.
+**Shapes** - Provide different shapes of clock. The shapes are Rectangle, RoundedRectangle, Circle, Square, and RoundedSquare.
 
-**Custom Time** - To enable the custom time, the control should be enabled with `ShowCustomTimeClock` property set as `true`.
+**Custom time** - Enables custom time. The control should be enabled by setting the `ShowCustomTimeClock` property to `true`.
 
-**Frames** - Provides different set of frames. The frames are, RectangularFrame, CircleFrame and SquareFrame.
-
+**Frames** - Provide different set of frames. The frames are, RectangularFrame, CircleFrame, and SquareFrame.
