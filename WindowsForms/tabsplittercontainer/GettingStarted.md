@@ -11,15 +11,15 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabsplittercontainer) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabsplittercontainer) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding TabSplitterContainer control via designer
 
-1) Create a new Windows Forms project in Visual Studio to display the TabSplitterContainer control.
+1. Create a new Windows Forms project in Visual Studio to display the TabSplitterContainer control.
 
-2) The **TabSplitterContainer** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The **TabSplitterContainer** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -32,7 +32,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ### Add tab pages
 
-Add pages into TabSplitterContainer by clicking **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
+Add pages to TabSplitterContainer by clicking the **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
 
 ![TabSplitterContainer control added by designer](GettingStarted-images/wf-tabsplitter-container-tabpage.png)
 
@@ -40,9 +40,9 @@ Add pages into TabSplitterContainer by clicking **Add primary page** and **Add s
 
 To add the control manually in C#, follow the given steps:
 
-1) Create C# or VB application via Visual Studio.
+1. Create a C# or VB application using Visual Studio.
 
-2) Add the following assembly references to the project: 
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
@@ -66,7 +66,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of **TabSplitterContainer**, and add it to the form.
+4. Create an instance of **TabSplitterContainer**, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,14 +85,14 @@ Me.Controls.Add(tabSplitterContainer1)
 {% endhighlight %}
 {% endtabs %}
 
-5) Add tab pages
+5. Add tab pages
 
-Create an instance of the required pages, and add primary and secondary pages into TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~PrimaryPages.html) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SecondaryPages.html) collections, respectively.
+Create an instance of the required pages, and add primary and secondary pages to TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~PrimaryPages.html) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SecondaryPages.html) collections, respectively.
 
 {% tabs %}
 {% highlight C# %}
 
-// Create an instance of Tab splitter page
+// Create an instance of the Tab splitter page.
 private TabSplitterPage tabSplitterPage1 = new TabSplitterPage();
 private TabSplitterPage tabSplitterPage2 = new TabSplitterPage();
 public Form1()
@@ -101,7 +101,7 @@ InitializeComponent();
 this.tabSplitterPage1.Text = "XAML";
 this.tabSplitterPage2.Text = "Design";
 
-// Adding it to TabSplitterContainer
+// Add it to TabSplitterContainer.
 tabSplitterContainer1.PrimaryPages.AddRange(new TabSplitterPage[] {this.tabSplitterPage1});
 tabSplitterContainer1.SecondaryPages.AddRange(new TabSplitterPage[] { this.tabSplitterPage2 });
 tabSplitterContainer1.Size = new System.Drawing.Size(443, 315);
@@ -130,12 +130,12 @@ End Sub
 
 ![TabSplitterContainer control](GettingStarted-images/wf-tabsplitter-container-control.png)
 
-6) Add any one of the control, and add it to the tabSplitterPage. For example, AutoLabel.
+6. Add any one of the controls to the tabSplitterPage (e.g., AutoLabel).
 
 {% tabs %}
 {% highlight C# %}
 
-// Initialize an AutoLabel control.
+// Initialize the AutoLabel control.
 AutoLabel autoLabel1 = new AutoLabel();
 autoLabel1.Location = new System.Drawing.Point(167, 111);
 autoLabel1.Size = new System.Drawing.Size(40, 13);
@@ -146,18 +146,18 @@ autoLabel2.Location = new System.Drawing.Point(167, 111);
 autoLabel2.Size = new System.Drawing.Size(30, 13);
 autoLabel2.Text = "Design";
 
-// Set back color
+// Set back color.
 tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
 tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
 
-// Add to tabSplitterPage
+// Add to tabSplitterPage.
 this.tabSplitterPage1.Controls.Add(autoLabel1);
 this.tabSplitterPage1.Controls.Add(autoLabel2);
 
 {% endhighlight %}
 {% highlight VB %}
 
-' Initialize an AutoLabel control.
+' Initialize the AutoLabel control.
 Dim autoLabel1 As New AutoLabel()
 autoLabel1.Location = New System.Drawing.Point(167, 111)
 autoLabel1.Size = New System.Drawing.Size(40, 13)
@@ -168,18 +168,18 @@ autoLabel2.Location = New System.Drawing.Point(167, 111)
 autoLabel2.Size = New System.Drawing.Size(30, 13)
 autoLabel2.Text = "Design"
 
-' Set back color
+' Set back color.
 tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
 tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
 
-' Add to tabSplitterPage
+' Add to tabSplitterPage.
 Me.tabSplitterPage1.Controls.Add(autoLabel1)
 Me.tabSplitterPage1.Controls.Add(autoLabel2)
 
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms TabSplitterContainer showing added new control](GettingStarted-images/TabSplitterContainer_textboxext.png)
+![Windows Forms TabSplitterContainer shows added new control](GettingStarted-images/TabSplitterContainer_textboxext.png)
 
 ## Tab orientation
 
@@ -188,13 +188,13 @@ The TabSplitterContainer can be oriented horizontally or vertically using the [O
 {% tabs %}
 {% highlight C# %}
 
-// Tab splitter control orientation
+// Tab splitter control orientation.
 tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical;
 
 {% endhighlight  %}
 {% highlight VB %}
 
-‘ Tab splitter control orientation
+' Tab splitter control orientation.
 tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 {% endhighlight  %}
@@ -218,12 +218,12 @@ You can easily swap the tab groups programmatically by enabling the [Swapped](ht
 this.tabSplitterContainer1.Swapped = true;
 {% endhighlight  %}
 {% highlight VB %}
-‘ Swapping tab groups
+' Swapping tab groups.
 Me.tabSplitterContainer1. Swapped = True
 {% endhighlight  %}
 {% endtabs %} 
 
-![TabSplitterContainer supports swaps the tab groups](GettingStarted-images/tabsplitter-swap-tab-groups.png)
+![TabSplitterContainer supports swapping the tab groups](GettingStarted-images/tabsplitter-swap-tab-groups.png)
 
 ## Collapse tab groups
 
@@ -231,11 +231,11 @@ You can collapse the tab groups programmatically by enabling the [Collapsed](htt
 
 {% tabs %}
 {% highlight C# %}
-// Collapsing tab groups
+// Collapsing tab groups.
 this.tabSplitterContainer1.Collapsed = true;
 {% endhighlight  %}
 {% highlight VB %}
-‘ Collapsing tab groups
+' Collapsing tab groups.
 Me.tabSplitterContainer1.Collapsed = True
 {% endhighlight  %}
 {% endtabs %} 
