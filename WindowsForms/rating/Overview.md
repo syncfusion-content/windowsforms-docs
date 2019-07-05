@@ -9,16 +9,16 @@ documentation: ug
 
 # Overview
 
-The Rating control for Windows Forms provides an intuitive rating experience that allows the end-user to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
+The Rating Control for Windows Forms provides an intuitive rating experience that allows the end users to select a number of stars that represent a rating. Rating control allows users to rate items based on a specified list of options.
 
-![Overview of Rating control](Overview_images/Overview_img1.png)
+![Overview of the Rating Control](Overview_images/Overview_img1.png)
 
 ### Key features
 
-**Shape** - Allows the end-user to rate items from a predefined list of shapes.
+**Shape** - Allows the end users to rate items from a predefined list of shapes.
 
-**Precision** - Provides option to customize the rating precision. It can be set either Standard or half.
+**Precision** - Provides options to customize the rating precision. It can be set to either Standard or Half.
 
-**Tooltip** - It shows Tooltip when the mouse hovers over the Rating item.
+**Tooltip** - Shows additional information when the mouse hovers over a rating item.
 
-**Orientation** - Provides two different set of orientation. The options are Horizontal and Vertical orientation.
+**Orientation** - Provides two different set of orientations. The options are Horizontal and Vertical orientation.
