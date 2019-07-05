@@ -7,16 +7,15 @@ control: GradientPanel
 documentation: ug
 ---
 
-
 # Overview
 
-GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls and it has the ability to have a custom background gradient using an array of colors. 
+The GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls, and it has the ability to have a custom background gradient using an array of colors. 
 
- ![Overview of Syncfusion GradientPanel](GradientPanel-Images/Overview.png)
+![Overview of Syncfusion GradientPanel](GradientPanel-Images/Overview.png)
 
- ## Key features
+## Key features
 
-**Styles** - Provides different set of styles to the control. The styles are Pattern, Solid, Gradient and None.
+**Styles** - Provide a different set of styles to the control. The styles are Pattern, Solid, Gradient, and None.
 
-**Gradient Style** - Provides different sets of styles to the Gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle and PathEllipse.
+**Gradient styles** - Provide a different set of styles to the gradient. The styles are None, ForwardDiagonal, BackwardDiagonal, Horizontal, Vertical, PathRectangle, and PathEllipse.
 
