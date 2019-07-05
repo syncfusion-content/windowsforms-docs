@@ -130,31 +130,51 @@ End Sub
 
 ![TabSplitterContainer control](GettingStarted-images/wf-tabsplitter-container-control.png)
 
-6) Add any one of the control, and add it to the tabSplitterPage. For example, TextBoxExt.
+6) Add any one of the control, and add it to the tabSplitterPage. For example, AutoLabel.
 
 {% tabs %}
 {% highlight C# %}
 
-// Initialize a TextBoxExt control.
-TextBoxExt textBoxExt1 = new TextBoxExt();
-textBoxExt1.Multiline = true;
-textBoxExt1.Size = new System.Drawing.Size(289, 71);
-textBoxExt1.Text = "The TabSplitterContainer control provides a VS 2008-style, tabbed, split view of " + "tab groups to help easily render different views of the same document." + "The splitter comes with advanced options like swapping of splitter pages, adjustable splitter posiition, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter.";
+// Initialize an AutoLabel control.
+AutoLabel autoLabel1 = new AutoLabel();
+autoLabel1.Location = new System.Drawing.Point(167, 111);
+autoLabel1.Size = new System.Drawing.Size(40, 13);
+autoLabel1.Text = "Xaml";
+
+AutoLabel autoLabel2 = new AutoLabel();
+autoLabel2.Location = new System.Drawing.Point(167, 111);
+autoLabel2.Size = new System.Drawing.Size(30, 13);
+autoLabel2.Text = "Design";
+
+// Set back color
+tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
 
 // Add to tabSplitterPage
-this.tabSplitterPage1.Controls.Add(textBoxExt1);
+this.tabSplitterPage1.Controls.Add(autoLabel1);
+this.tabSplitterPage1.Controls.Add(autoLabel2);
 
 {% endhighlight %}
 {% highlight VB %}
 
-' Initialize a TextBoxExt control.
-Dim textBoxExt1 As New TextBoxExt()
-textBoxExt1.Multiline = True
-textBoxExt1.Size = New System.Drawing.Size(289, 71)
-textBoxExt1.Text = "The TabSplitterContainer control provides a VS 2008-style, tabbed, split view of " & "tab groups to help easily render different views of the same document." & "The splitter comes with advanced options like swapping of splitter pages, adjustable splitter posiition, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter."
+' Initialize an AutoLabel control.
+Dim autoLabel1 As New AutoLabel()
+autoLabel1.Location = New System.Drawing.Point(167, 111)
+autoLabel1.Size = New System.Drawing.Size(40, 13)
+autoLabel1.Text = "Xaml"
+
+Dim autoLabel2 As New AutoLabel()
+autoLabel2.Location = New System.Drawing.Point(167, 111)
+autoLabel2.Size = New System.Drawing.Size(30, 13)
+autoLabel2.Text = "Design"
+
+' Set back color
+tabSplitterPage1.BackColor = System.Drawing.SystemColors.ControlLightLight
+tabSplitterPage2.BackColor = System.Drawing.SystemColors.ControlLightLight
 
 ' Add to tabSplitterPage
-Me.tabSplitterPage1.Controls.Add(textBoxExt1)
+Me.tabSplitterPage1.Controls.Add(autoLabel1)
+Me.tabSplitterPage1.Controls.Add(autoLabel2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -180,13 +200,13 @@ tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 {% endhighlight  %}
 {% endtabs %} 
 
-**Horizontal**
-
-![TabSplitterContainer horizontal orientation](GettingStarted-images/tabsplitter-horizontal-orientation.png)
-
 **Vertical**
 
 ![TabSplitterContainer horizontal orientation](GettingStarted-images/wf-tabsplitter-vertical-orientation.png)
+
+**Horizontal**
+
+![TabSplitterContainer horizontal orientation](GettingStarted-images/tabsplitter-horizontal-orientation.png)
 
 ## Swap tab groups
 
