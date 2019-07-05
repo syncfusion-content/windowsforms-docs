@@ -11,15 +11,15 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#ratingcontrol) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#ratingcontrol) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding Rating control via designer
+## Adding Rating Control via designer
 
-1) Create a new Windows Forms project in Visual Studio to display the Rating control with its different shapes.
+1. Create a new Windows Forms project in Visual Studio to display the Rating Control with different shapes.
 
-2) The **RatingControl** can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The **Rating Control** can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -28,15 +28,15 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-![Search rating control in toolbox](Getting-Started_images/Rating_toolbox.png)
+![Search Rating Control in toolbox](Getting-Started_images/Rating_toolbox.png)
 
-## Adding Rating control via code
+## Adding Rating Control via code
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application using Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -45,7 +45,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespaces.
+3. Include the required namespaces.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of **RatingControl** control, and add it to the form.
+4. Create an instance of the **Rating Control** control, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +79,7 @@ Me.Controls.Add(ratingControl1)
 
 ![Windows Forms showing rating control](Getting-Started_images/Rating_default.png)
 
-5) Set the rating value by using `Value` property.
+5. Set the rating value using the `Value` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -94,11 +94,11 @@ ratingControl2.Value = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Rating control showing rating value](Getting-Started_images/Rating_value.png)
+![Windows Forms Rating control shows rating value](Getting-Started_images/Rating_value.png)
 
 ## Built-in shapes for rating
 
-In RatingControl, there are six predefined shapes available for customization. 
+The following six predefined shapes are available in the Rating Control for customization:
 
 * Star
 * Circle
