@@ -140,17 +140,141 @@ This section illustrates the features of RadialGauge with images and sample code
 * Ranges
 * Scaling Divisions
 
-#### RadialGauge frame
+#### RadialGauge Frames
 
+This section explains the appearance of the RadialGauge. RadialGauge has four types of frame and it can be applied using the [FrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~FrameType.html) property. 
 
-The frame defines the frame types of RadialGauge. Frames can be applied using the [FrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~FrameType.html) property. The RadialGauge control contains two frame types:
+* FullCircle
+* HalfCircle
+* QuarterCircle
+* Fill
 
-* Full Circle
-* Half Circle
+#### FullCircle
+
+Frame of the RadialGauge will be a Full circle. RadialGauge will be rendered based on the value of Start and Sweep Angle. Default value of the Start and Sweep Angles will be 135 and 270 for FullCircle type of Frame. The following code sample illustrates how to set frame for the RadialGauge control,
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.FullCircle;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.FullCircle
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the FullCircle Frame of RadialGauge,
+
+![Full circle Radial Gauge](Radial-Gauge_images/Radial-Gauge-FullCircle.png)
+
+#### HalfCircle
+
+Frame of the RadialGauge will be a Half circle. Start and SweepAngle will be 180 always for HalfCircle type of Frame. The following code sample illustrates how to set frame for the RadialGauge control,
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the HalfCircle Frame of RadialGauge,
+
+![Half circle Radial Gauge](Radial-Gauge_images/Radial-Gauge-HalfCircle.png)
+
+#### QuarterCircle
+
+Frame of the RadialGauge will be a Quarter circle. In this type of frame, RadialGauge will be positioned using StartAngle and the SweepAngle is not changable. By default, Start and SweepAngle will be 180 and 90 for QuarterCircle frame. 
+
+In QuarterCircle frame, background around the RadialGauge will not be shown and `MajorTickMark`, `MinorTickMark`, `MinorInnerLines` height will be zero by default. `ArcThickness` of the RadialGauge will be 5 for this type of Frame. User can change the TickMarks height and ArcThickness to acquire the desired view of the RadialGauge.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.QuarterCircle;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.QuarterCircle
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the HalfCircle Frame of RadialGauge,
+
+![Half circle Radial Gauge](Radial-Gauge_images/Radial-Gauge-QuarterFrame.png)
+
+#### FillCircle
+
+Frame of the RadialGauge will be a Full circle and the color which is specified in the `FillColor` will fill the frame as indication of the current value of the gauge. Start and SweepAngle of the RadialGauge is changeable and the Gauge will be rendered based on the value of Start and SweepAngle. Default value of the Start and SweepAngle will be 0 and 360.  Filling of color towards currentvalue will be start from the angle specified in the `StartAngle`. Font settings of the Value label can be changed using `GaugeValueFont` of RadialGauge. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameType = FrameType.Fill;
+this.radialGauge1.Value = 50;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.Fill
+Me.radialGauge1.Value = 50
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the RadialGauge with Fill FrameType and the value start to fill from angle 0,
+
+![Fill circle Radial Gauge with default start angle](Radial-Gauge_images/Radial-Gauge-Fill.png)
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameType = FrameType.Fill;
+this.radialGauge1.StartAngle = 90;
+this.radialGauge1.Value = 50;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.Fill
+Me.radialGauge1.StartAngle = 90
+Me.radialGauge1.Value = 50
+
+{% endhighlight %}
+
+{% endtabs %}
+           
+The following screenshot illustrates the RadialGauge with Fill FrameType and the value start to fill from angle 90,
+
+![Fill circle Radial Gauge with 90 as start angle](Radial-Gauge_images/Radial-Gauge-Fill-90.png)
 
 The following properties used to customize the appearance of RadialGauge control.
 
-* [FrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~FrameType.html)
 * [ShowBackgroundFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowBackgroundFrame.html)
 * [BackgroundGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~BackgroundGradientStartColor.html)
 * [BackgroundGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~BackgroundGradientEndColor.html)
@@ -162,19 +286,6 @@ The following properties used to customize the appearance of RadialGauge control
 * [GaugeLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~GaugeLableColor.html)
 * [GaugeValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~GaugeValueColor.html)
 * [ShowGaugeValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowGaugeValue.html)
-
-![Full circle Radial Gauge](Radial-Gauge_images/Radial-Gauge_img4.png)
-
-![Half circle Radial Gauge](Radial-Gauge_images/Radial-Gauge_img5.png)
-
-{% tabs %}
-{% highlight C# %}
-this.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle;
-{% endhighlight %}
-{% highlight VB %}
-Me.radialGauge1.FrameType = Syncfusion.Windows.Forms.Gauge.FrameType.HalfCircle
-{% endhighlight %}
-{% endtabs %}
 
 ![Radial Gauge without frame](Radial-Gauge_images/Radial-Gauge_img6.png)
 
