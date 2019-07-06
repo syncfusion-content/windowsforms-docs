@@ -26,7 +26,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ![Windows Forms GroupView drag and drop from toolbox](Overview_images/GroupView_img1.png)
 
-3) Right-click on the control and click **Properties** and select [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add groupviewitems into the control.
+3) Right-click on the control and click **Properties** and select [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items into the control.
 
 ![Windows Forms GroupView showing collection editor of item](GettingStarted_images/GroupView_collectioneditor.png)
 
@@ -110,7 +110,7 @@ Me.groupView1.FlatLook = True
 
 ## Image setting
 
-Before add image into the control, Create an instance of **ImageList**. After that, you can add image into the `Imagelist`.
+Before add image into the control, Create an instance of **ImageList**. After that, you can add image into the `ImageList`.
 
 {% tabs %}
 {% highlight C# %}
