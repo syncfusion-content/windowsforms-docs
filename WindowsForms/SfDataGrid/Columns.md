@@ -1322,21 +1322,21 @@ Me.sfDataGrid1.AutoSizeController.Refresh()
 {% endtabs %}
 
 ### Resetting Column Width to Apply AutoSizeColumnsMode
-When the width of the column is explicitly defined or column is resized, column width is not changed based on `AutoSizeColumnsMode`. You can reset [GridColumnBase.Width](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_Width) by setting 0 to apply column width based on column sizer.
+When the width of the column is explicitly defined or column is resized, column width is not changed based on `AutoSizeColumnsMode`. You can reset [GridColumnBase.Width](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~Width.html) by setting -1 to apply column width based on column sizer.
 
 {% tabs %}
 {% highlight c# %}
 foreach (var column in this.sfDataGrid.Columns)
 {
     if (column.Width != 0)
-        column.Width = 0;
+        column.Width = -1;
 }
 this.sfDataGrid1.ColumnSizer.Refresh();
 {% endhighlight %}
 {% highlight vb %}
 For Each column In Me.sfDataGrid.Columns
 	If column.Width <> 0 Then
-		column.Width = 0
+		column.Width = -1
 	End If
 Next column
 Me.sfDataGrid1.ColumnSizer.Refresh()
