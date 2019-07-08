@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The `TabSplitterContainer` control provides a VS 2008-style, tabbed, split view of tab groups to help easily render different views of the same document. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
+The [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) control provides a VS 2008-style, tabbed, split view of tab groups to help easily render different views of the same document. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
 
 ![Split view of tab groups](Overview_images/Overview_img5.jpeg)
 
