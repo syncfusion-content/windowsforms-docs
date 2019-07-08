@@ -24,6 +24,7 @@ SkinManager presents in the `Syncfusion.Shared.Base` assembly.
 <td>Office2016Theme</td>
 <td>Syncfusion.Office2016Theme.WinForms.dll assembly reference is needed only for the SfDataGrid, SfButton, SfDateTimeEdit, SfNumericTextBox, SfToolTip, and SfSmithChart controls only.
 </td>
+</tr>
 <tr>
 <td>Office2019Theme</td>
 <td>Syncfusion.Office2019Theme.WinForms.dll</td>
@@ -34,7 +35,7 @@ SkinManager presents in the `Syncfusion.Shared.Base` assembly.
 </tr>
 <tr>
 <td>Other Themes</td>
-<td>Themes are included in the control assembly itself. 
+<td>Themes are included in the control assembly itself.</td> 
 </tr>
 </table>
 
@@ -77,9 +78,9 @@ SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2016Theme).Ass
 
 ## Through designer
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. The `SkinManager` component can be added to designer by dragging it from the toolbox to the design view. 
+2) The `SkinManager` component can be added to designer by dragging it from the toolbox to the design view. 
 
 The following dependent assemblies will be added automatically: 
 
@@ -267,17 +268,17 @@ For example, in the following code, TreeView fore color is customized, and theme
 
 {% highlight C# %}
 
+this.treeViewAdv1.CanOverrideStyle = false;
 this.treeViewAdv1.ThemeName = "Office2019Colorful";
 this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red;
-this.treeViewAdv1.CanOverrideStyle = false;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
+Me.treeViewAdv1.CanOverrideStyle = False
 Me.treeViewAdv1.ThemeName = "Office2019Colorful"
 Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
-Me.treeViewAdv1.CanOverrideStyle = False
 
 {% endhighlight %}
 
