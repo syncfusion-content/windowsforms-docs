@@ -21,7 +21,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) The **TrackBarEx** control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
+2) The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -62,7 +62,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of **TrackBarEx** control, and add it to the window.
+4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
