@@ -15,11 +15,11 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-## Adding Clock control through designer
+## Adding Clock control via designer
 
-1. Create a new Windows Forms project in Visual Studio.
+1) Create a new Windows Forms project in Visual Studio.
 
-2. The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,9 +34,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 To add the control manually in C#, follow the given steps:
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following assembly references to the project:
+2) Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -45,7 +45,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %} 
 
-4. Create an instance of the **Clock** control instance, and add it to the form.
+4) Create an instance of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control instance, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
