@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating editable list
+description: How to create an EditableList control in Windows Forms application.
 platform: WindowsForms
 control: EditableList
 documentation: ug
@@ -17,9 +17,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ## Adding EditableList control via designer
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. The **EditableList** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -27,13 +27,13 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ## Adding EditableList control via code
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following reference to the project:
+2) Add the following reference to the project:
 
 * Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
@@ -49,7 +49,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4. Create an instance of **EditableList**, and add it to the form.
+4) Create an instance of [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.EditableList.html), and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -67,7 +67,7 @@ Me.Controls.Add(Me.editableList1)
 {% endhighlight %}
 {% endtabs %}
  
-5. Associate Button, TextBox, and ListBox with the EditableList control.
+5) Associate Button, TextBox, and ListBox with the EditableList control.
 
 {% tabs %}
 {% highlight c# %}
