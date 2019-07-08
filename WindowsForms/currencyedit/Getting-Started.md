@@ -17,9 +17,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ## Adding the CurrencyEdit control via designer
 
-1. Create a new Windows Forms project in Visual Studio.
+1) Create a new Windows Forms project in Visual Studio.
 
-2. The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
@@ -34,9 +34,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 To add the control manually in C#, follow the given steps:
 
-1. Create a C# or VB application using Visual Studio.
+1) Create a C# or VB application using Visual Studio.
 
-2. Add the following assembly references to the project:
+2) Add the following assembly references to the project:
 
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
@@ -45,7 +45,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the **CurrencyEdit** control, and add it to form.
+4) Create an instance of the [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control, and add it to form.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +79,7 @@ Me.Controls.Add(currencyEdit1)
 
 ![CurrencyEdit control](Overview_images/wf-currency-edit-control.png) 
 
-5. Set the currency value using the `Text` property, and change the culture using the `Culture` property of currency symbol.
+5) Set the currency value using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit~Text.html) property, and change the culture using the `Culture` property of currency symbol.
 
 {% tabs %}
 {% highlight C# %}
