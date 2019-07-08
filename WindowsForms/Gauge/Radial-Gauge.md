@@ -199,7 +199,7 @@ The following screenshot illustrates the HalfCircle Frame of RadialGauge,
 
 #### QuarterCircle
 
-Frame of the RadialGauge will be a Quarter circle. In this type of frame, RadialGauge will be positioned using StartAngle and the SweepAngle is not changable. By default, Start and SweepAngle will be 180 and 90 for QuarterCircle frame. 
+Frame of the RadialGauge will be a Quarter circle. In this type of frame, RadialGauge will be positioned using StartAngle and the SweepAngle is not changeable. By default, Start and SweepAngle will be 180 and 90 for QuarterCircle frame. 
 
 In QuarterCircle frame, background around the RadialGauge will not be shown and `MajorTickMark`, `MinorTickMark`, `MinorInnerLines` height will be zero by default. `ArcThickness` of the RadialGauge will be 5 for this type of Frame. User can change the TickMarks height and ArcThickness to acquire the desired view of the RadialGauge.
 
@@ -225,7 +225,7 @@ The following screenshot illustrates the HalfCircle Frame of RadialGauge,
 
 #### FillCircle
 
-Frame of the RadialGauge will be a Full circle and the color which is specified in the `FillColor` will fill the frame as indication of the current value of the gauge. Start and SweepAngle of the RadialGauge is changeable and the Gauge will be rendered based on the value of Start and SweepAngle. Default value of the Start and SweepAngle will be 0 and 360.  Filling of color towards currentvalue will be start from the angle specified in the `StartAngle`. Font settings of the Value label can be changed using `GaugeValueFont` of RadialGauge. 
+Frame of the RadialGauge will be a Full circle and the color which is specified in the `FillColor` will fill the frame as indication of the current value of the gauge. Start and SweepAngle of the RadialGauge is changeable and the Gauge will be rendered based on the value of Start and SweepAngle. Default value of the Start and SweepAngle will be 0 and 360.  Filling of color towards current value will be start from the angle specified in the `StartAngle`. Font settings of the Value label can be changed using `GaugeValueFont` of RadialGauge. 
 
 {% tabs %}
 
