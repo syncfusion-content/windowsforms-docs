@@ -527,6 +527,120 @@ Me.radialGauge1.MinorDifference = 2F
 
 ![Radial Gauge with major and minor ticks](Radial-Gauge_images/Radial-Gauge_img18.png)
 
+### Label customization
+
+This support is used to customize the appearance of Scale labels of `FullCircle`, `HalfCircle` and `QuarterCircle` FrameTypes and `Value` label appearance of `Fill` FrameType.
+
+The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~DrawLabel_EV.html) event of the RadialGauge.
+
+<table>
+<tr>
+<td>
+S.No<br/><br/></td><td>
+Arguments<br/><br/></td><td>
+Description<br/><br/></td></tr>
+<tr>
+<td>
+1<br/><br/></td><td>
+Font<br/><br/></td><td>
+Font settings which is used to draw the customized label.<br/><br/></td></tr>
+<tr>
+<td>
+2<br/><br/></td><td>
+ForeColor<br/><br/></td><td>
+Fore color to draw the customized label.<br/><br/></td></tr>
+<tr>
+<td>
+3<br/><br/></td><td>
+Text<br/><br/></td><td>
+Text which is to be drawn as label <br/><br/></td></tr>
+<tr>
+<td>
+4<br/><br/></td><td>
+VerticalAlignment<br/><br/></td><td>
+Vertical placement of the Value label when the HorizontalAlignment is Center and FrameType is Fill<br/><br/></td></tr>
+<tr>
+<td>
+5<br/><br/></td><td>
+HorizontalAlignment<br/><br/></td><td>
+Horizontal placement of the Value label when the VerticalAlignment is Center and FrameType is Fill<br/><br/></td></tr>
+<tr>
+<td>
+6<br/><br/></td><td>
+Handled<br/><br/></td><td>
+All the above customizations will work only if the argument is true.<br/><br/></td></tr>
+</table>
+
+The following code example used to customize the scale label of FullCircle Gauge, 
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.DrawLabel += RadialGauge1_DrawLabel;
+
+private void RadialGauge1_DrawLabel(object sender, 
+Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs e)
+{
+      e.Handled = true;
+      e.Text += " °C";
+      e.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+AddHandler Me.radialGauge1.DrawLabel, AddressOf RadialGauge1_DrawLabel
+
+Private Sub RadialGauge1_DrawLabel(sender As Object, e As Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs) Handles radialGauge1.DrawLabel
+        e.Handled = True
+        e.Text += " °C"
+        e.Font = New System.Drawing.Font("Segoe UI", 9.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+    End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Scale Label customization in FullCircle Frametype](Radial-Gauge_images/Radial-Gauge-Label-customization.png)
+
+The following code example used to customize the value label and its position for Fill type RadialGauge,
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.DrawLabel += RadialGauge1_DrawLabel;
+
+private void RadialGauge1_DrawLabel(object sender, 
+Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs e)
+{
+      e.Handled = true;
+      e.Text += " %";
+      e.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      e.HorizontalAlignment = HorizontalAlignment.Right;
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+AddHandler Me.radialGauge1.DrawLabel, AddressOf RadialGauge1_DrawLabel
+
+Private Sub RadialGauge1_DrawLabel(sender As Object, e As Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs) Handles radialGauge1.DrawLabel
+      e.Handled = true
+      e.Text += " %"
+      e.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      e.HorizontalAlignment = HorizontalAlignment.Right
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Value Label customization in FillCircle Frametype](Radial-Gauge_images/Radial-Gauge-Fill-DrawLabel.png)
+
 ## Visual styles
 
 The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~VisualStyle.html) property.
