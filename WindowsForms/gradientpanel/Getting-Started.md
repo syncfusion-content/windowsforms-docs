@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: Creating GradientPanel
+description: How to create GradientPanel control in Windows Forms application.
 platform: WindowsForms
 control: GradientPanel
 documentation: ug
@@ -19,9 +19,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ## Adding GradientPanel control  via designer
 
-1. Create a new Windows Forms application in Visual Studio. 
+1) Create a new Windows Forms application in Visual Studio. 
 
-2. The **GradientPanel** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
+2) The [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -35,13 +35,28 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 The following steps guide you how to create a gradient panel programmatically.
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following assembly reference to the project:
+2) Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base
 
-3. Create an instance of **GradientPanel** control, and add it to the form.
+3) Include the required namespace.
+
+{% tabs %}
+{% highlight C# %}
+  
+using Syncfusion.Windows.Forms.Tools;
+
+{% endhighlight %}
+{% highlight VB %}
+
+ImportsÂ Syncfusion.Windows.Forms.Tools
+
+{% endhighlight %}
+{% endtabs %}
+
+4) Create an instance of [GradientPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel.html) control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
