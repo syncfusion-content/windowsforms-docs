@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating checkboxadv
+description: How to create CheckBoxAdv control in Windows Forms application.
 platform: WindowsForms
 control: CheckBoxAdv
 documentation: ug
@@ -23,7 +23,7 @@ The following steps illustrate how to create a CheckBoxAdv control via designer.
 
 1) Create a new Windows Forms Project in Visual Studio.
 
-2) The **CheckBoxAdv** control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
+2) The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
 
 * Syncfusion.Tools.Windows
 
@@ -37,7 +37,7 @@ The CheckBoxAdv control can be created programmatically as detailed below:
 
 2) Include the required assembly references.
 
-* Syncfusion.Tools.Windows.dll
+* Syncfusion.Tools.Windows
 
 3) Include the required namespace.
 
@@ -55,7 +55,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **CheckBoxAdv** control, and add it to the form.
+4) Create an instance of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Windows forms CheckBoxAdv showing control](Overview_images/CheckBoxAdv_control.png)
 
-5) Set the `Checked` property as `true`. The default value is `false`.
+5) Set the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property as `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight c# %}

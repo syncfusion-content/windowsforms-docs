@@ -21,7 +21,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) The **EditControl** control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 * Syncfusion.Tools.Windows
@@ -129,7 +129,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-The EditControl offers mostly used languages like C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure new custom language.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) offers mostly used languages like C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure new custom language.
 
 The EditControl has built-in syntax highlighting support for the following languages:
 
