@@ -32,13 +32,13 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 The following steps describe how to create a **ColorUI** control programmatically:
 
-1) Create a C# or VB application using Visual Studio.
+1. Create a C# or VB application using Visual Studio.
 
-2) Add the following assembly reference to the project:
+2. Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -54,7 +54,7 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **ColorUI** control, specify its size, and add it to the form.
+4. Create an instance of the **ColorUI** control, specify its size, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ Me.Controls.Add(Me.colorUIControl1)
 
 ## Select a color and group
 
-At run time, a particular color group tab should be focused or selected using the [SelectedColorGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~SelectedColorGroup.html) property.
+At runtime, a particular color group tab should be focused or selected using the [SelectedColorGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~SelectedColorGroup.html) property.
 
 The options are as follows,
 
