@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Bind Pivot Grid with Chart | PivotGrid | Windows Forms | Syncfusion
+title: How to bind PivotGrid with chart | Windows Forms | Syncfusion
 description: How to bind pivot grid with chart
 platform: windowsforms
 control: Pivot Grid
