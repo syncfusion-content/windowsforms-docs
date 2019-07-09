@@ -22,7 +22,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **ColorUI** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) The [ColorUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -54,7 +54,7 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **ColorUIControl** control, specify its size, and add it to the form.
+4) Create an instance of the **ColorUI** control, specify its size, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ Me.Controls.Add(Me.colorUIControl1)
 
 ## Select a color and group
 
-At run time, a particular color group tab should be focused or selected using the `SelectedColorGroup` property.
+At run time, a particular color group tab should be focused or selected using the [SelectedColorGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~SelectedColorGroup.html) property.
 
 The options are as follows,
 
@@ -99,7 +99,7 @@ The options are as follows,
 * UserColors
 * None (Default)
 
-Use the `SelectedColor` property to specify the initially selected color.
+Use the [SelectedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~SelectedColor.html) property to specify the initially selected color.
 
 {% tabs %}
 
@@ -121,4 +121,4 @@ Me.colorUIControl1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelected
 
 ![Windows Forms ColorUIControl showing selected groups and colors](ColorUI_images/Overview_img238.jpeg)
 
-N> These property settings can be reset using the ResetSelectedColorGroup() and ResetSelectedColor() methods.
+N> These property settings can be reset using the [ResetSelectedColorGroup()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~ResetSelectedColorGroup.html) and [ResetSelectedColor()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ColorUIControl~ResetSelectedColor.html) methods.
