@@ -23,7 +23,7 @@ The following steps describe how to create an **SfCalendar** control via the des
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **SfCalendar** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2) The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
@@ -61,7 +61,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-4) Create an instance of **SfCalendar** control instance and add it to the form.
+4) Create an instance of [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ Me.Controls.Add(sfCalendar)
 
 ## Date range
 
-The **SfCalendar** prevent users from selecting dates within a specified minimum and maximum range. To specify the range, set the start date and end date to [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MaxDate.html) properties respectively.
+The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) prevent users from selecting dates within a specified minimum and maximum range. To specify the range, set the start date and end date to [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MaxDate.html) properties respectively.
 
 {% tabs %}
 
