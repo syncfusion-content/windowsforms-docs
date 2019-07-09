@@ -23,7 +23,7 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **RadialSlider** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2) The [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,7 +34,7 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 ![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-3) Set the desired properties for **RangeSlider** control using **Properties** dialog.
+3) Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using **Properties** dialog.
 
 ## Adding the RadialSlider control via code
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of **RadialSlider** control and add it to the form.
+4) Create an instance of [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control and add it to the form.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ radialSlider1.Value = 50
 
 ## Division
 
-The division for the **RadialSlider** can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderDivision.html) property. The default slider division is 10.
+The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderDivision.html) property. The default slider division is 10.
 
 {% tabs %}
 
@@ -171,7 +171,7 @@ radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
 
 ![Windows Forms RadialSlider showing different slider styles](Getting-Started_images/RadialSlider_style.png)
 
-The outside circle can be shown by using the `ShowOuterCircle` property. The default value is set as 'True'.
+The outside circle can be shown by using the [ShowOuterCircle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ShowOuterCircle.html) property. The default value is set as 'True'.
 
 {% tabs %}
 

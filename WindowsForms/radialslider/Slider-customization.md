@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slider-customization | RadialSlider |  WindowsForms | Syncfusion
-description: slider customization
+description: This section details about slider customization of the RadialSlider.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -35,7 +35,7 @@ radialSlider1.BackgroundColor = System.Drawing.SystemColors.Navy
 
 ## Circle color
 
-The Circle color of the **RadialSlider** can be customized using the properties [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~InnerCircleColor.html) and OuterCircleColor.
+The Circle color of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the properties [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~InnerCircleColor.html) and [OuterCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~OuterCircleColor.html).
 
 {% tabs %}
 
