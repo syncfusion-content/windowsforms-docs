@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating numericupdownext
+description: How to create NumericUpDownExt control in Windows Forms application.
 platform: WindowsForms
 control: NumericUpDownExt
 documentation: ug
@@ -21,7 +21,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **NumericUpDownExt** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2) The [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -38,7 +38,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding the NumericUpDownExt control via code
 
-The following steps illustrate how to create an **NumericUpDownExt** control programmatically.
+The following steps illustrate how to create an NumericUpDownExt control programmatically.
 
 1) Create a C# or VB application via Visual Studio.
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the **NumericUpDownExt** control and add it to the form.
+4) Create an instance of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ Me.Controls.Add(Me.numericUpDownExt1)
 {% endtabs %}
 
 
-5) Set the following properties of the **NumericUpDownExt** control.
+5) Set the following properties of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
 
 ## Display settings
 
-The **NumericUpDownExt** provides the following properties to set the display characteristics associated with the integer value. The properties are `DecimalPlaces` and `ThousandsSeparator`.
+The **NumericUpDownExt** provides the following properties to set the display characteristics associated with the integer value. The properties are [DecimalPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~DecimalPlaces.html) and [ThousandsSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~ThousandsSeparator.html).
 
 {% tabs %}
 
@@ -138,10 +138,10 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 The **NumericUpDownExt** provides the following properties to set the values with integer value. The properties are Value, Hexadecimal, Minimum and Increment.
 
-* Value - Set the value assigned to the spin box.
-* Hexadecimal - The value indicating whether the spin box should display the value its contains in hexadecimal format.
-* Minimum - Set the minimum allowed value to the spin box.
-* Increment - The value to increment or decrement the spin box when the up or down buttons are clicked. The default value is set to 1.
+* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Value.html) - Set the value assigned to the spin box.
+* [Hexadecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Hexadecimal.html) - The value indicating whether the spin box should display the value its contains in hexadecimal format.
+* [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Minimum.html) - Set the minimum allowed value to the spin box.
+* [Increment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Increment.html) - The value to increment or decrement the spin box when the up or down buttons are clicked. The default value is set to 1.
 
 {% tabs %}
 
