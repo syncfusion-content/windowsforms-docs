@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: creating textboxext
+description: How to create TextBoxExt control in Windows Forms application
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -13,7 +13,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#textboxext) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#textboxext) section to get the list of assemblies or details of NuGet package details which needs to be added as reference to use the control in any application.
 
 [Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
@@ -21,7 +21,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **TextBoxExt** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+2) The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.Base
 
@@ -53,7 +53,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of **TextBoxExt** control and add it to the form.
+4) Create an instance of [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and add it to the form.
 
 {% tabs %}
 
@@ -79,8 +79,8 @@ Me.Controls.Add(Me.textBoxExt1)
 
 The size of TextBoxExt control can be applied by the following properties.
 
-* MaximumSize
-* MinimumSize
+* [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html)
+* [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html)
 
 {% tabs %}
 
