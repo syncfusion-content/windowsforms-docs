@@ -23,7 +23,7 @@ The following steps describe how to create a **SfNumericTextBox** control via th
 
 1) Create a new Windows Forms Application in Visual Studio.
 
-2) The **SfNumericTextBox** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) The [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
@@ -59,7 +59,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %}
 
-4) Create an instance of **SfNumericTextBox**, and add it to the form.
+4) Create an instance of [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox.html), and add it to the form.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ Me.Controls.Add(Me.numericTextBox)
 
 ## Value
 
-It holds the double value which can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~AllowNull.html) property needs to be set to make the Value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Text.html) property of the control gets formatted from the `Value` property.
+It holds the double value which can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~AllowNull.html) property needs to be set to make the Value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Text.html) property of the control gets formatted from the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Value.html) property.
 
 {% tabs %}
 
