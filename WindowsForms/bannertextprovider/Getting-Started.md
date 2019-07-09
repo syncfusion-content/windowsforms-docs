@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: Getting Started
+description: How to Create a banner text and access with other controls.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
@@ -20,13 +20,15 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a BannerTextProvider control via designer
 
-1) The **BannerTextProvider** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+1) Create a new Windows Forms application via Visual Studio.
+
+2) The [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.Base
 
  ![Drag and drop BannerTextProvider from toolbox](Overview_images/Banner_toolbox.png) 
 
-2) Drag one component from toolbox and add to the form. For example, we can choose **TextBoxExt** control and gets an extender provider property as shown in the following image. 
+3) Drag one component from toolbox and add to the form. For example, we can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and gets an extender provider property as shown in the following image. 
 
  ![Windows Forms BannerTextProvider showing set the banner text to TextBoxExt control](Overview_images/Banner_addtext.png) 
 
@@ -56,7 +58,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-4) Create an instance of **BannerTextProvider** control.
+4) Create an instance of [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control.
 
 {% tabs %}
 
@@ -79,7 +81,7 @@ Me.bannerTextProvider = New Syncfusion.Windows.Forms.BannerTextProvider(Me.compo
 
 ## Assign Banner Text to a Control
 
-1) First, Add one control to the form. For Example, we can choose **TextBoxExt** control. Create an instance of **TextBoxExt** and add it to the form.
+1) First, Add one control to the form. For Example, we can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control. Create an instance of **TextBoxExt** and add it to the form.
 
 {% tabs %}
 
@@ -121,7 +123,7 @@ info.Text = "New Banner Text"
 {% endhighlight %}
 {% endtabs %}
 
-N> Make sure you clear the default value of the Text property of the controls before setting the banner text.
+N> Make sure you clear the default value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Text.html) property of the controls before setting the banner text.
 
 Extender properties allow you to customize the Banner text. They are as follows.
 
@@ -132,23 +134,23 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Visible</td><td>
+[Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Visible.html)</td><td>
 Indicates whether the banner text should be visible or not.</td></tr>
 <tr>
 <td>
-Text</td><td>
+[Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Text.html)</td><td>
 Sets the banner text.</td></tr>
 <tr>
 <td>
-Color</td><td>
+[Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Color.html)</td><td>
 Sets the banner text color.</td></tr>
 <tr>
 <td>
-Font</td><td>
+[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Font.html)</td><td>
 Sets the font style for the banner text.</td></tr>
 <tr>
 <td>
-Mode</td><td>
+[Mode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Mode.html)</td><td>
 Specifies the rendering mode of the banner text. The modes are,<br/>
 1. FocusMode - The banner text disappears when the control gets focus.<br/>
 2. EditMode - The banner text disappears only when the control is in Edit Mode or when the associated textbox is not empty.</td></tr>
