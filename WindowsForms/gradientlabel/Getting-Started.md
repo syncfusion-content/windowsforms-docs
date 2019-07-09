@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: Creating GradientLabel
+description: How to create GradientLabel control in Windows Forms application.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug
@@ -23,7 +23,7 @@ The following steps describe how to create an **GradientLabel** control via the 
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **GradientLabel** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2) The [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the **GradientLabel** control and add it to the form.
+4) Create an instance of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ Me.Controls.Add(Me.gradientLabel1)
 
 ## Gradient settings
 
-The **GradientLabel** control's background can be customized using the various options provided by the following properties. The properties are GradientStyle, BackColor and ForeColor.
+The [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control's background can be customized using the various options provided by the following properties. The properties are GradientStyle, BackColor and ForeColor.
 
 {% tabs %}
 
