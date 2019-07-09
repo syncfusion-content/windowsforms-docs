@@ -23,7 +23,7 @@ The following steps describe how to create an **SfDateTimeEdit** control via the
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The **SfDateTimeEdit** control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2) The [SfDateTimeEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
@@ -61,7 +61,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-4) Create an instance of **SfDateTimeEdit** control and add it to the form.
+4) Create an instance of [SfDateTimeEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit.html) control and add it to the form.
 
 {% tabs %}
 
