@@ -55,7 +55,7 @@ Me.chartControl1.ShowContextMenu = True
 
 {% endtabs %}
 
-![Customizing chart integrated with pivot grid](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.png)
+![Customizing chart integrated with pivot grid](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.jpg)
 
 ## Persisting style and type of chart series
 
