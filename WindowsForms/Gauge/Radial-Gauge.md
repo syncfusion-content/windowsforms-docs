@@ -529,7 +529,7 @@ Me.radialGauge1.MinorDifference = 2F
 
 ### Label customization
 
-This support is used to customize the appearance of Scale labels of `FullCircle`, `HalfCircle` and `QuarterCircle` FrameTypes and `Value` label appearance of `Fill` FrameType.
+Appearance and text of Scale labels in `FullCircle`, `HalfCircle` and `QuarterCircle` frame types and Value label of `Fill` frame type can customized using `DrawLabelEventArgs` event.
 
 The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~DrawLabel_EV.html) event of the RadialGauge.
 
