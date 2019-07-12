@@ -80,7 +80,7 @@ This pops-up a list of the available tab pages in the control from which the use
 
 ## Adding Tab Primitives to TabbedForm
 
-The tabprimitives can be added to the `SfTabbedForm` using the `tabbedFormControl.TabPrimitiveMode` property.
+The tab primitives can be added to the `SfTabbedForm` using the `tabbedFormControl.TabPrimitiveMode` property.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-The context menu for the tabbed form can be set by using `tabbedFormControl.TabContextMenu` property.
+The context menu for the `SfTabbedForm` can be set by using `tabbedFormControl.TabContextMenu` property.
 
 ## Customize context menu in tabs like web browser
 
