@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabPrimitives | TabbedForm | WindowsForms | Syncfusion
+title: TabPrimitives| TabbedForm | WindowsForms | Syncfusion
 description: This section explains about the navigation controls in SfTabbedForm.
 platform: WindowsForms
 control: SfTabbedForm

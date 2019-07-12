@@ -134,7 +134,7 @@ Public Sub New()
 	tabbedFormControl = New SfTabbedFormControl()
 
 	For i As Integer = 1 To 15
-		tabbedFormControl.Tabs.Add(New TabPageAdv() With {.Text = "Tab" & i})
+		tabbedFormControl.Tabs.Add(New TabPageAdv() With {.Text = "Document" & i})
 	Next i
 
 	Me.Controls.Add(tabbedFormControl)
