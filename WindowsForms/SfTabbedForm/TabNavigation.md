@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Navigation
 
-TabPrimitives is a collection of NavigationControls used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) of `SfTabbedForm`. The tabprimitives can be added to the sftabbedform using the `TabPrimitiveMode` property.
+Tab Primitives is a collection of NavigationControls used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) of `SfTabbedForm`. The Tab Primitives can be added to the `SfTabbedForm` using the `TabPrimitiveMode` property.
 The various tab primitives used to perform navigation through tabs are,
 <table>
 <tr>
@@ -78,9 +78,9 @@ This pops-up a list of the available tab pages in the control from which the use
 </tr>
 </table>
 
-## Adding tabprimitives to sftabbedform
+## Adding Tab Primitives to TabbedForm
 
-The tabprimitives can be added to the sftabbedform using the `tabbedFormControl.TabPrimitiveMode` property.
+The tabprimitives can be added to the `SfTabbedForm` using the `tabbedFormControl.TabPrimitiveMode` property.
 
 {% tabs %}
 {% highlight c# %}
