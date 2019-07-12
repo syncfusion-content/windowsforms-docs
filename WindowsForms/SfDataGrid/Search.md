@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search
+title: Search in SfDataGrid | Syncfusion
 description: This section explains about the Search support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -117,7 +117,7 @@ Me.sfDataGrid1.SearchController.Search("cr")
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays search applied wrap text in the specific column](Search_images/Search_img12.png)
+![Windows forms datagrid displays search applied wrap text in the specific column](Search_images/Search_img12.jpg)
 
 ### Changing Search Highlight Color
 The highlighting color of the search text can be changed by using the [SearchColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~SearchColor.html) property.

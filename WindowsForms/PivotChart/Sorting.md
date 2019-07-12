@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in PivotChart
+title: Sorting in PivotChart | Syncfusion
 description: Sorting operations in PivotChart
 platform: windowsforms
 control: PivotChart

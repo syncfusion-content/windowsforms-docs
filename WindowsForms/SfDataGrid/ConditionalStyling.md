@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Styling
+title: Conditional Styling in SfDataGrid | Syncfusion
 description: This section explains about the Conditional Styling in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -178,7 +178,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied color based on the text](ConditionalStyling_images/ConditonalStyling16.png)
+![Windows forms datagrid displays applied color based on the text](ConditionalStyling_images/ConditonalStyling16.jpg)
 
 ### Styling Alternate Rows
 

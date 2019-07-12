@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataValidation
+title: DataValidation in SfDataGrid | Syncfusion
 description: This section explains about the data validation support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

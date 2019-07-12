@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ExportToExcel
+title: ExportToExcel in SfDataGrid | Syncfusion
 description: This section explains about the Export to excel support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -795,7 +795,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms datagrid displays applied border color of the cell when exporting to excel](ExportToExcel_images/ExportToExcel_img12.png)
+![Windows forms datagrid displays applied border color of the cell when exporting to excel](ExportToExcel_images/ExportToExcel_img12.jpg)
 
 ## Customize Exported Workbook and Worksheet
 SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.

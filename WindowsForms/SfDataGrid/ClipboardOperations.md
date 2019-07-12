@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard Operations
+title: Clipboard Operations in SfDataGrid | Syncfusion
 description: This section explains about the clipboard operations in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

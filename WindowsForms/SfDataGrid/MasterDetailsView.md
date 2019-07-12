@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details View
+title: Master-Details View in SfDataGird | Syncfusion
 description: This section explains about the Master-Details View in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
