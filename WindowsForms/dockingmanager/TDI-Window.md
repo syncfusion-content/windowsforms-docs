@@ -212,27 +212,7 @@ N> DocumentTab group has been created at left side
 
 ![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Right.png) 
 
-N> Preview for Right Document 
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Right.png)
-
-N> DocumentTab group has been created at right side
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Top.png) 
-
-N> Preview for Top Document
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Top.png)
-
-N> DocumentTab group has been created at top
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Bottom.png) 
-
-N> Preview for Bottom Document 
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Bottom.png)
-
-N> DocumentTab group has been created at bottom
+N> Similarly document tabs can be created in all four directions (Left, Top, Right, Bottom)
 
 ## Disable tab group creation
 
