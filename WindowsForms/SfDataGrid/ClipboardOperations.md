@@ -42,7 +42,7 @@ Me.sfDataGrid1.CopyOption = CopyOptions.CopyData Or CopyOptions.IncludeHeaders
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img1.png)
+![Windows forms datagrid displays copy the data in grid](Clipboard_Operations_images/Clipboard_Operations_img1.png)
 
 ## Paste
 
@@ -68,7 +68,7 @@ Me.sfDataGrid1.PasteOption = PasteOptions.PasteData Or PasteOptions.ExcludeFirst
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img2.png)
+![Windows forms datagrid displays paste the data into grid](Clipboard_Operations_images/Clipboard_Operations_img2.png)
 
 ## Cut
 
@@ -97,7 +97,7 @@ Me.sfDataGrid1.CopyOption = CopyOptions.CutData Or CopyOptions.IncludeHeaders
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img3.png)
+![Windows forms datagrid displays cut the data in grid](Clipboard_Operations_images/Clipboard_Operations_img3.png)
 
 ## Cancel Copy Operation
 
@@ -151,7 +151,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img4.png)
+![Windows forms datagrid displays copied the particular column and row in grid](Clipboard_Operations_images/Clipboard_Operations_img4.png)
 
 ## Cancel Paste Operation
 
@@ -205,7 +205,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img5.png)
+![Windows forms datagrid displays particular column and row paste in grid](Clipboard_Operations_images/Clipboard_Operations_img5.png)
 
 ## Change the Clipboard Text
 
@@ -233,7 +233,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img6.png)
+![Windows forms datagrid displays edit the text while copying data](Clipboard_Operations_images/Clipboard_Operations_img6.png)
 
 ### Paste
 
@@ -260,7 +260,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard_Operations_images/Clipboard_Operations_img7.png)
+![Windows forms datagrid displays editing the text while paste the data](Clipboard_Operations_images/Clipboard_Operations_img7.png)
 
 ## Handling Programmatically
 

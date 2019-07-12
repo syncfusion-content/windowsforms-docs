@@ -76,7 +76,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img1.jpeg)
+![Windows forms datagrid displays export alla group into the excel](ExportToExcel_images/ExportToExcel_img1.jpeg)
 
 ### Exclude Columns while Exporting
 By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. In order  to exclude some columns from exporting, use the [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExcludeColumns.html) field of the [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html).
@@ -184,7 +184,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img2.jpeg)
+![Windows forms datagrid displays changing start row and column while exporting to excel](ExportToExcel_images/ExportToExcel_img2.jpeg)
 
 ## Saving Options
 
@@ -329,7 +329,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img3.jpeg)
+![Windows forms datagrid displays exported the selected item into excel](ExportToExcel_images/ExportToExcel_img3.jpeg)
 
 ## Export to HTML
 The exported workbook can be saved as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
@@ -631,7 +631,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img4.jpeg)
+![Windows forms datagrid displays applied color in exported excel](ExportToExcel_images/ExportToExcel_img4.jpeg)
 
 ## Cell Customization in Excel while Exporting
 The cells can be customized on exporting by using the [CellExporting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~CellExporting_EV.html) event of the `ExcelExportingOptions`.
@@ -682,7 +682,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img5.jpeg)
+![Windows forms datagrid displays customized the cell value while exporting to excel](ExportToExcel_images/ExportToExcel_img5.jpeg)
 
 ### Changing Row style in Excel based on Data
 The rows of the exported excel sheet can be customized based on the record value by using the `CellExporting` event. 
@@ -727,7 +727,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img6.jpeg)
+![Windows forms datagrid displays applied color to specific rows while exporting excel](ExportToExcel_images/ExportToExcel_img6.jpeg)
 
 ### Customize Cells based on Column Name
 The exported cells can be customized based on the column names by using the `CellExporting` event.
@@ -767,7 +767,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img7.jpeg)
+![Windows forms datagrid displays applied color to specific column in exported excel](ExportToExcel_images/ExportToExcel_img7.jpeg)
 
 Here, `OrderID` column cells are customized while exporting.
 
@@ -795,7 +795,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img12.png)
+![Windows forms datagrid displays applied border color of the cell when exporting to excel](ExportToExcel_images/ExportToExcel_img12.png)
 
 ## Customize Exported Workbook and Worksheet
 SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.
@@ -886,7 +886,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img8.jpeg)
+![Windows forms datagrid displays applied filter in exported excel](ExportToExcel_images/ExportToExcel_img8.jpeg)
 
 While using stacked headers, the range can be specified by based on stacked headers count.
 {% tabs %}
@@ -937,7 +937,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img9.jpeg)
+![Windows forms datagrid displays applied colors in specific range to exported excel](ExportToExcel_images/ExportToExcel_img9.jpeg)
 
 #### Exporting Multiple SfDataGrid to Single Excel Sheet
 The multiple grids can also be exported to the same worksheet by using the `UsedRange.CopyTo` method.
@@ -1007,7 +1007,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img10.jpeg)
+![Windows forms datagrid displays format the specific column in exported excel](ExportToExcel_images/ExportToExcel_img10.jpeg)
 
 ### Alternate Row Styling without using the Event
 In the below code snippet, the background color of rows in excel is changed based on row index using conditional formatting for better performance.
@@ -1051,6 +1051,6 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToExcel_images/ExportToExcel_img11.jpeg)
+![Windows forms datagrid displays applied colors based on row index using conditional format](ExportToExcel_images/ExportToExcel_img11.jpeg)
 
 Refer the [XlsIO document](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting) for the conditional customization.

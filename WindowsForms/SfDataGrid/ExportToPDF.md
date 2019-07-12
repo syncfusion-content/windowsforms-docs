@@ -273,7 +273,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img1.jpeg)
+![Windows forms datagrid displays header and footer of the page while exporting to PDF](ExportToPDF_images/ExportToPDF_img1.jpeg)
 
 Here, string is inserted in the header of exported PDF file using `DrawString` method. Similarly, you can insert image, line,etc. using `DrawImage`, `DrawLine` methods respectively.
 
@@ -327,7 +327,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img2.jpeg)
+![Windows forms datagrid displays exported the selected item to PDF](ExportToPDF_images/ExportToPDF_img2.jpeg)
 
 ## Saving Options
 
@@ -438,7 +438,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img3.jpeg)
+![Windows forms datagrid displays applied colors to exported PDF](ExportToPDF_images/ExportToPDF_img3.jpeg)
 
 ### Embedding Fonts in PDF File
 By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html).
@@ -578,7 +578,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img4.jpeg)
+![Windows forms datagrid displays changed cell calue while exporting to PDF](ExportToPDF_images/ExportToPDF_img4.jpeg)
 
 Here, cell values are changed for `OrderID` column based on custom condition.
 
@@ -626,7 +626,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img5.jpeg)
+![Windows forms datagrid displays applied color in specific rows in exported PDF](ExportToPDF_images/ExportToPDF_img5.jpeg)
 
 ### Changing the border color of cells in PDF document
 
@@ -660,7 +660,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img7.png)
+![Windows forms datagrid displays applied color to cell border in exported PDF](ExportToPDF_images/ExportToPDF_img7.png)
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 By default, Middle Eastern languages (Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat~RightToLeft.html) property in [PdfStringFormat](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html) by using `CellExporting` event.
@@ -768,5 +768,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ExportToPDF_images/ExportToPDF_img6.jpeg)
+![Windows forms datagrid displays added image into the column in exported PDF](ExportToPDF_images/ExportToPDF_img6.jpeg)
 

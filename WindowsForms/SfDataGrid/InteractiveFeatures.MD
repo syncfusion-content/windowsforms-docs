@@ -31,7 +31,7 @@ Me.sfDataGrid1.RecordContextMenu.Items.Add("Paste", Nothing, OnPasteClicked)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu1.png)
+![Windows forms datagrid displays context menu for the data row](InteractiveFeatures_Images/ContextMenu1.png)
 
 ### ContextMenu for Column Header
 
@@ -54,7 +54,7 @@ Me.sfDataGrid1.ColumnHeaderContextMenu.Items.Add("Show GroupDropArea", Nothing, 
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu2.png)
+![Windows forms datagrid displays context menu for column header](InteractiveFeatures_Images/ContextMenu2.png)
 
 ### ContextMenu for RowHeader
 The context menu for the row headers can be set by using [SfDataGrid.RowHeaderContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowHeaderContextMenu.html) property.
@@ -69,7 +69,8 @@ Me.sfDataGrid1.RowHeaderContextMenu = New ContextMenuStrip()
 Me.sfDataGrid1.RowHeaderContextMenu.Items.Add("Delete", Nothing, OnDeleteClicked)
 {% endhighlight %}
 {% endtabs %}
-![](InteractiveFeatures_Images/ContextMenu3.png)
+
+![Windows forms datagrid displays context menu for row header](InteractiveFeatures_Images/ContextMenu3.png)
 
 ### ContextMenu for GroupDropArea
 
@@ -92,7 +93,7 @@ Me.sfDataGrid1.GroupDropAreaContextMenu.Items.Add("Clear Groups", Nothing, OnCle
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu4.png)
+![Windows forms datagrid displays context menu for group drop area](InteractiveFeatures_Images/ContextMenu4.png)
 
 ### ContextMenu for GroupDropAreaItem
 
@@ -113,7 +114,7 @@ Me.sfDataGrid1.GroupDropAreaItemContextMenu.Items.Add("Clear Group", Nothing, On
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu5.png)
+![Windows forms datagrid displays context menu for group drop area item](InteractiveFeatures_Images/ContextMenu5.png)
 
 ### ContextMenu for GroupCaptionSummaryRow
 
@@ -131,7 +132,7 @@ Me.sfDataGrid1.GroupCaptionContextMenu.Items.Add("Collapse", Nothing, OnCollapse
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu6.png)
+![Windows forms datagrid displays context menu for group caption](InteractiveFeatures_Images/ContextMenu6.png)
 
 ### ContextMenu for GroupSummaryRow
 
@@ -150,7 +151,7 @@ Me.sfDataGrid1.GroupSummaryContextMenu.Items.Add("Count", Nothing, OnCountClicke
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu7.png)
+![Windows forms datagrid displays context menu for group summary](InteractiveFeatures_Images/ContextMenu7.png)
 
 ### ContextMenu for TableSummaryRow
 
@@ -168,7 +169,7 @@ Me.sfDataGrid1.TableSummaryContextMenu.Items.Add("Count", Nothing, OnCountClicke
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu8.png)
+![Windows forms datagrid displays context menu for table summary](InteractiveFeatures_Images/ContextMenu8.png)
 
 ### Appearance
 
@@ -185,7 +186,7 @@ Me.sfDataGrid1.RecordContextMenu.ForeColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu9.png)
+![Windows forms datagrid displays applied color to context menus](InteractiveFeatures_Images/ContextMenu9.png)
 
 ### Cancel ContextMenu Opening
 
@@ -247,7 +248,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu10.png)
+![Windows forms datagrid displays change the menu items while opening the context menu](InteractiveFeatures_Images/ContextMenu10.png)
 
 #### Create a New Column by using ColumnHeaderContextMenu 
 
@@ -343,9 +344,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu11.png)
+![Windows forms datagrid displays create a new column by using context menu](InteractiveFeatures_Images/ContextMenu11.png)
 
-![](InteractiveFeatures_Images/ContextMenu12.png)
+![Windows forms datagrid displays paste the data into new column by using context menu](InteractiveFeatures_Images/ContextMenu12.png)
 
 #### Clipboard Options by using RecordContextMenu
 
@@ -413,7 +414,7 @@ void OnClearFilteringClicked(Object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ContextMenu13.png)
+![Windows forms datagrid displays clear filtering menu item in context menu](InteractiveFeatures_Images/ContextMenu13.png)
 
 ## Column chooser 
 
@@ -436,7 +437,7 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![Column chooser popup](InteractiveFeatures_Images/ColumnChooser1.png)
+![Windows forms datagrid displays column chooser popup](InteractiveFeatures_Images/ColumnChooser1.png)
 
 ### Load column chooser as control
 
@@ -457,7 +458,7 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![Column chooser control](InteractiveFeatures_Images/ColumnChooser2.png)
+![Windows forms datagrid displays column chooser control](InteractiveFeatures_Images/ColumnChooser2.png)
 
 ### Appearance customization
 
@@ -480,7 +481,7 @@ columnChooserPopup.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![Column chooser appearance](InteractiveFeatures_Images/ColumnChooser3.png)
+![Windows forms datagrid displays column chooser appearance](InteractiveFeatures_Images/ColumnChooser3.png)
 
 ### Loading custom column chooser
 
@@ -621,7 +622,7 @@ Me.Controls.Add(columnChooser)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
+![Windows forms datagrid displays custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
 You can download the custom column chooser sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample-1194097955).
 
@@ -652,7 +653,7 @@ Me.sfDataGrid1.Columns("OrderID").ShowToolTip = True
 N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowToolTip.html) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowToolTip.html).
 
 
-![](InteractiveFeatures_Images/ToolTip1.png)
+![Windows forms datagrid displays tooltip when the mouse hover the cell](InteractiveFeatures_Images/ToolTip1.png)
 
 ### Displaying ToolTip on Header
 
@@ -680,7 +681,7 @@ Me.sfDataGrid1.Columns("OrderID").ShowHeaderToolTip = True
 
 N>[GridColumnBase.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ShowHeaderToolTip.html) takes higher priority than [SfDataGrid.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowHeaderToolTip.html).
 
-![](InteractiveFeatures_Images/ToolTip2.png)
+![Windows forms datagrid displays tootip when the mouse hover the header](InteractiveFeatures_Images/ToolTip2.png)
 
 ### Displaying ToolTip Only for the Trimmed Cells
 
@@ -695,7 +696,7 @@ Me.sfDataGrid1.ToolTipOption.ToolTipMode = ToolTipMode.TrimmedCells
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip3.png)
+![Windows forms datagrid displays tooltip only for the trimmed cells](InteractiveFeatures_Images/ToolTip3.png)
 
 ### Setting ToolTip Delay	
 
@@ -746,7 +747,7 @@ Me.sfDataGrid1.Style.ToolTipStyle.BorderColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip4.png)
+![Windows forms datagrid displays the appearance of tooltip](InteractiveFeatures_Images/ToolTip4.png)
 
 #### Conditional Styling
 
@@ -777,7 +778,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip5.png)
+![Windows forms datagrid displays the appearance of the tooltip based on the condition](InteractiveFeatures_Images/ToolTip5.png)
 
 ### Cancel ToolTip Opening
 
@@ -836,7 +837,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip6.png)
+![Windows forms datagrid displays the tooltip with cell content as the tooltip text](InteractiveFeatures_Images/ToolTip6.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -863,7 +864,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip7.png)
+![Windows forms datagrid displays the tooltip with cell content as the tooltip image](InteractiveFeatures_Images/ToolTip7.png)
 
 #### Display ToolTip with Beak
 
@@ -889,7 +890,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_Images/ToolTip8.png)
+![Windows forms datagrid displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
 
 N> SfToolTip has used for the ToolTip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/sftooltip/overview) of SfToolTip for more customizations options.
 

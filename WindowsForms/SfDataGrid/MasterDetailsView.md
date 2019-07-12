@@ -11,7 +11,7 @@ documentation: ug
 
 The SfDataGrid provides support to represent the hierarchical data in the form of nested tables by using Master-Details view. You can expand or collapse the nested table (DetailsViewDataGrid) by using an expander column in a row. You can also expand or collapse the nested table programmatically. The number of tables nested with relations are unlimited.
 
-![](DetailsView_images/DetailsView_img1.jpg)
+![Windows forms datagrid displays the expand or collapse of nested table](DetailsView_images/DetailsView_img1.jpg)
 
 ## Generating Master-Details view from IEnumerable
 
@@ -1244,7 +1244,7 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, the relation is created from OrderDetails collection property.
 
-![](DetailsView_images/DetailsView_img2.jpg)
+![Windows forms datagrid displays the autogenerate relation is created in order details](DetailsView_images/DetailsView_img2.jpg)
 
 
 #### Manual defining relations
@@ -1275,7 +1275,7 @@ sfDataGrid.DetailsViewDefinitions.Add(gridViewDefinition)
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img3.jpg)
+![Windows forms datagrid displays manual relation is created in order details](DetailsView_images/DetailsView_img3.jpg)
 
 
 ## Generating Master-Details view from DataTable
@@ -1383,7 +1383,7 @@ When the relations are auto-generated, you can handle the SfDataGrid.AutoGenerat
 
 Here, Master-Details view relation is auto generated based on the Supplier_Product relation.
 
-![](DetailsView_images/DetailsView_img4.jpg)
+![Windows forms datagrid displays auto generated relation based on the supplier and product](DetailsView_images/DetailsView_img4.jpg)
 
 
 #### Manual defining relations
@@ -1416,7 +1416,7 @@ sfDataGrid.DetailsViewDefinition.Add(gridViewDefinition)
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img5.jpg)
+![Windows forms datagrid displays manually generated relation based on the supplier and product](DetailsView_images/DetailsView_img5.jpg)
 
 
 ## Populating Master-Details view through events
@@ -1648,7 +1648,7 @@ End Sub
 
 N> When making any change in one DetailsViewDataGrid, that change will be applied to all DetailsViewDataGrid in the same level. For example, when you resize the first column in one DetailsViewDataGrid, the same column width will be applied to all DetailsViewDataGrid at that level. This is applicable for features like filtering, sorting, grouping, and reordering columns.
 
-![](DetailsView_images/DetailsView_img6.jpg)
+![Windows forms datagrid displays sorted the quantity column](DetailsView_images/DetailsView_img6.jpg)
 
 
 Here, `Quantity` column is sorted in all DetailsViewDataGrid at the same level.
@@ -2541,7 +2541,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img7.jpg)
+![Windows forms datagrid displays applied the color in row header in data table](DetailsView_images/DetailsView_img7.jpg)
 
 
 ### Hiding header row of Master-Details View
@@ -2560,7 +2560,7 @@ sfDataGrid.DetailsViewDefinitions[0].DataGrid.HeaderRowHeight = 0
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img8.jpg)
+![Windows forms datagrid displays hidden header row in data table](DetailsView_images/DetailsView_img8.jpg)
 
 
 ### Customizing padding of the DetailsViewDataGrid
@@ -2579,7 +2579,7 @@ sfDataGrid.DetailsViewPadding = New Padding(20)
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img9.jpg)
+![Windows forms datagrid displays customize the padding value in details view table](DetailsView_images/DetailsView_img9.jpg)
 
 
 ### Customize ExpanderColumn width
@@ -2598,7 +2598,7 @@ sfDataGrid.ExpanderColumnWidth = 50
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img10.jpg)
+![Windows forms datagrid displays customie the width of the expander column](DetailsView_images/DetailsView_img10.jpg)
 
 
 ## Expanding and collapsing the DetailsViewDataGrid programmatically
@@ -2655,7 +2655,7 @@ sfDataGrid.HideEmptyGridViewDefinition = True
 {% endhighlight %}
 {% endtabs %}
 
-![](DetailsView_images/DetailsView_img11.jpg)
+![Windows forms datagrid displays hide the expander view](DetailsView_images/DetailsView_img11.jpg)
 
 
 ## Handling events
