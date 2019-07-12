@@ -121,3 +121,28 @@ Me.ExtendTabsToTitleBar = False
 
 ![tabbed form](Getting-Started_images/Getting-Started_img2.png)
 
+## Programmatic Tab Selection
+
+Tab selection can be done programmatically using the `tabbedFormControl.SelectedIndex` and `tabbedFormControl.SelectedTab` property.
+
+{% tabs %}
+{% highlight c# %}
+this.tabbedFormControl.SelectedIndex = 1;
+{% endhighlight %}
+{% highlight vb %}
+Me.tabbedFormControl.SelectedIndex = 1
+{% endhighlight %}
+{% endtabs %}
+
+![tabbed form](Getting-Started_images/Getting-Started_img4.png)
+
+{% tabs %}
+{% highlight c# %}
+this.tabbedFormControl.SelectedTab = tabPageAdv4;
+{% endhighlight %}
+{% highlight vb %}
+Me.tabbedFormControl.SelectedTab = tabPageAdv4
+{% endhighlight %}
+{% endtabs %}
+
+![tabbed form](Getting-Started_images/Getting-Started_img3.png)
