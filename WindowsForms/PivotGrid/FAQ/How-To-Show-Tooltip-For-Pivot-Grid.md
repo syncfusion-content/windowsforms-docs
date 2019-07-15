@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Show Tooltip for Pivot Grid | PivotGrid | Windows Forms | Syncfusion
+title: How to show Tooltip for PivotGrid | Windows Forms | Syncfusion
 description: How to show tooltip for pivot grid
 platform: windowsforms
 control: Pivot Grid
