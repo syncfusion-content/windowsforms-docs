@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+description: This section describes about how to create PdfViewer control in Windows Forms application.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
