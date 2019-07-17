@@ -9,78 +9,7 @@ documentation: ug
 
 # Tab Navigation
 
-Tab Primitives is a collection of NavigationControls used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html) of `SfTabbedForm`. The Tab Primitives can be added to the `SfTabbedForm` using the `TabPrimitiveMode` property.
-The various tab primitives used to perform navigation through tabs are,
-<table>
-<tr>
-<td>
-{{'**TabPrimitives**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-{{'FirstTab'| markdownify }}        
-</td>
-<td>
-Navigate to the first tab.
-</td>
-</tr>
-<tr>
-<td>
-{{'LastTab'| markdownify }}
-</td>
-<td>
-Navigate to the last tab.
-</td>
-</tr>
-<tr>
-<td>
-{{'PreviousTab'| markdownify }}
-</td>
-<td>
-Navigate to the Previous tab.
-</td>
-</tr>
-<tr>
-<td>
-{{'NextTab'| markdownify }}        
-</td>
-<td>
-Navigate to the Next tab.
-</td>
-</tr>
-<tr>
-<td>
-{{'PreviousPage'| markdownify }}
-</td>
-<td>
-Navigate to the previous page.
-</td>
-</tr>
-<tr>
-<td>
-{{'NextPage'| markdownify }}
-</td>
-<td>
-Navigate to the next page.
-</td>
-</tr>
-<tr>
-<td>
-{{'DropDown'| markdownify }}
-</td>
-<td>
-This pops-up a list of the available tab pages in the control from which the user can select the page to be traversed.
-</td>
-</tr>
-</table>
-
-## Adding Tab Primitives to TabbedForm
-
-The tab primitives can be added to the `SfTabbedForm` using the `tabbedFormControl.TabPrimitiveMode` property.
+Tab Navigation consist of the set of inbuild controls such as first tab,last tab,dropdown etc which is used to navigate through the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~TabPages.html). The navigation controls can be added to the tabbed form using the [TabbedFormControl.TabPrimitiveMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPrimitiveMode.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,3 +21,31 @@ tabbedFormControl.TabPrimitiveMode = TabPrimitiveMode.DropDown Or TabPrimitiveMo
 {% endtabs %}  
 
 ![tabbed form](TabPrimitives_images/TabPrimitives_images_img1.gif)
+
+## TabPrimitiveClick event
+
+This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabPrimitiveClick_EV.html) event occurs before the NavigationButton click. The following `TabPrimitiveClickEventArgs` properties provide information specific to this event.
+
+{% tabs %}
+{% highlight c# %}
+
+this.tabbedFormControl.TabPrimitiveClick += TabbedFormControl_TabPrimitiveClick;
+
+private void TabbedFormControl_TabPrimitiveClick(object sender, TabPrimitiveClickEventArgs e)
+{
+    Console.WriteLine("TabPrimitive Type:" + e.TabPrimitive.TabPrimitiveType);
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+Private Me.tabbedFormControl.TabPrimitiveClick += AddressOf TabbedFormControl_TabPrimitiveClick
+
+Private Sub TabbedFormControl_TabPrimitiveClick(ByVal sender As Object, ByVal e As TabPrimitiveClickEventArgs)
+	Console.WriteLine("TabPrimitive Type:" & e.TabPrimitive.TabPrimitiveType)
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+

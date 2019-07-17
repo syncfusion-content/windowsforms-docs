@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop tabs
 
-SfTabbedForm allow drag and drop the tabs within the form by setting `tabbedFormControl.AllowDraggingTabs` property as true.
+Tabbed Form allows move the tabs from one position to another position by dragging and dropping the corresponding tab. This can be done by setting the `TabbedFormControl.AllowDraggingTabs` property as true.
 
 {% tabs %}
 {% highlight c# %}
