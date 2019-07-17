@@ -242,7 +242,7 @@ Me.gridControl1.VerticalScrollTips = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img1.jpeg)
+![Windows forms grid displays scroll tips at dragging horizontal scrollbar](Scrolling_images/Scrolling_img1.jpeg)
 
 The scroll tips text can be changed by setting the [ScrollTipFormat](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ScrollTipFormat.html) property value as of follows,
 {% tabs %}
@@ -256,7 +256,7 @@ Me.gridControl1.ScrollTipFormat = "Cell {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img2.jpeg)
+![Windows forms grid displays scroll tips at dragging vertical scrollbar](Scrolling_images/Scrolling_img2.jpeg)
 
 ### Setting Scroll Behavior for Frozen Cells
 The scrolling behavior of the current cell moves within the frozen range using the arrow keys can be set by enabling the [ScrollFrozen](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~ScrollFrozen.html) property. The default value is set to `true`.
@@ -310,7 +310,7 @@ Me.gridControl1.EnableIntelliMouse = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img3.jpeg)
+![Windows forms grid displays automatic scrolling by drag the mouse](Scrolling_images/Scrolling_img3.jpeg)
 
 ## Hidden Row or Column Scrolling
 The scrolling logic for hidden rows and columns can be applied to the GridControl by enabling [UseOldHiddenScrollLogic](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~UseOldHiddenScrollLogic.html) property.This is a static property, it must be assigned before the ` `InitializeComponent` method.
@@ -333,11 +333,11 @@ N> Consider the case “The grid have 1000 number of rows and the rows in betwee
 
 The following screenshot shows the grid with applied hidden scroll logic,
 
-![](Scrolling_images/Scrolling_img4.jpeg)
+![Windows forms displays grid with applied hidden scroll logic](Scrolling_images/Scrolling_img4.jpeg)
 
 Vertical scrollbar thumb size changed according to the overall row count without using the hidden scroll logic is shows as follows,
 
-![](Scrolling_images/Scrolling_img5.jpeg)
+![Windows forms grid displays row count without using the hidden scroll logic](Scrolling_images/Scrolling_img5.jpeg)
 
 N> The same behavior of the hidden scroll logic can be achieved by enabling the pixel scrolling.
 
@@ -360,7 +360,7 @@ Me.gridControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img6.jpeg)
+![Windows forms grid displays horizontal and vertical scrollbar](Scrolling_images/Scrolling_img6.jpeg)
 
 ### Setting the Color Scheme for Office Scrollbars 
 The themes can be applied for the office scrollbars by setting the appropriate color scheme. Following are the color schemes available for the GridControl.
@@ -378,13 +378,13 @@ this.gridControl1.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Off
 Me.gridControl1.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Black
 {% endhighlight %}
 {% endtabs %}
-![](Scrolling_images/Scrolling_img7.jpeg)
+![Windows forms grid displays applied office2007 color scheme at scrollbars](Scrolling_images/Scrolling_img7.jpeg)
 
 N> There is no color scheme available for metro theme.
 
 ### Scrollbar Context Menu
 Scrollbars have the default context menu strip for setting the scrolling options. It will popup when right click on the scrollbar. The grid will scroll the contents based on the options selected in the context menu.
-![](Scrolling_images/Scrolling_img8.jpeg)
+![Windows forms grid displays scrollbar context menu](Scrolling_images/Scrolling_img8.jpeg)
 
 ### Disabling the Scrollbar Context Menu
 The scrollbar context menu can be disabled by handling the [ShowContextMenu](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollControl~ShowContextMenu_EV.html) event of the GridControl as follows,
@@ -449,7 +449,7 @@ Me.gridControl1.VScrollBar.InnerScrollBar = vScrollBar1
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img9.jpeg)
+![Windows forms grid displays shared scrollbar](Scrolling_images/Scrolling_img9.jpeg)
 
 ### Indicating the Last Row/Column while Scrolling
 To notify the last row/column reached while scrolling the grid, invoke the [Scroll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollBarWrapper~Scroll_EV.html) event of the scroll bars as of follows, 
@@ -591,7 +591,7 @@ this.scrollersFrame1.AttachedTo = this.gridControl1;
 Me.scrollersFrame1.AttachedTo = Me.gridControl1
 {% endhighlight %}
 {% endtabs %}
-![](Scrolling_images/Scrolling_img10.jpeg)
+![Windows forms grid displays applied custom appearance to scrollbar](Scrolling_images/Scrolling_img10.jpeg)
 
 The [ScrollersFrame](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
 
@@ -612,7 +612,7 @@ this.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawS
 Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawStyles.Office2007
 {% endhighlight %}
 {% endtabs %}
-![](Scrolling_images/Scrolling_img11.jpeg)
+![Windows forms grid displays applied Office2007 theme to scrollbar](Scrolling_images/Scrolling_img11.jpeg)
 
 ### Changing the Back Color for the Metro Scrollbars 
 The back color of the metro scrollbars can be customized to the desired color by using [ScrollerBackground](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroColorTable~ScrollerBackground.html) property of the `MetroColorTable`.
@@ -631,5 +631,5 @@ Me.gridControl1.MetroColorTable.ScrollerBackground = Color.Navy
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img12.jpeg)
+![Windows forms grid displays applied Metro theme to scrollbar](Scrolling_images/Scrolling_img12.jpeg)
 
