@@ -229,7 +229,7 @@ Frame of the RadialGauge will be a Full circle and the color which is specified 
 
 `ArcThickness` property is used to specify the thickness of the frame. For Fill type of Frame, default value of the `ArcThickness` is 20.
 
-Needle and Tick marks are not supported for this type of Frame. Also, Appearance of the RadialGauge cannot be changed through the following properties,
+Needle and Tick marks are not supported for this type of Frame. Hence, following properties are not applicable and does not have any effect.
 
 * ShowBackgroundFrame
 * BackgroundGradientStartColor
