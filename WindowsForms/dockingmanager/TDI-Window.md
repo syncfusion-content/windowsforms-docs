@@ -200,19 +200,19 @@ If there is no active document available in the DockingManager, only Center dock
 
 ![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Non-ActiveWindow.png) 
 
-The following screenshot shows how the document windows are created through DragProvider,
+The following screenshot shows the preview of the document which is to be created,
 
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Left.png) 
+![Docking manager displays preview for documenting the window at left side](TDI_Window_images/Tab-Group-Creation-Preview-Left.png) 
 
-N> Preview for Left Document
+The following screenshot shows the document which is documented at left side of the document area,
 
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Left.png)
+![Docking manager displays the document which is documented at left side](TDI_Window_images/Tab-Group-Creation-Left.png)
 
-N> DocumentTab group has been created at left side
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Right.png) 
+DocumentTab group has been created at left side
 
 N> Similarly document tabs can be created in all four directions (Left, Top, Right, Bottom)
+
+User can hide the dock hints by setting `DockAbility` to each docking child. More details about `DockAbility` has been explained in [Dealing with docking child](https://help.syncfusion.com/windowsforms/dockingmanager/dealing-with-docking-child#restrict-to-dock-on-specific-sides) section.
 
 ## Disable tab group creation
 
