@@ -29,6 +29,7 @@ public Form1()
     ContextMenuStrip tabContextMenu = new ContextMenuStrip();
     tabContextMenu.Items.Add("Close", null, OnCloseMenuClicked);
     tabbedFormControl.TabContextMenu = tabContextMenu;
+	#endregion
 
 }
 {% endhighlight %}
@@ -49,6 +50,7 @@ Public Sub New()
 	Dim tabContextMenu As New ContextMenuStrip()
 	tabContextMenu.Items.Add("Close", Nothing, OnCloseMenuClicked)
 	tabbedFormControl.TabContextMenu = tabContextMenu
+	#End Region
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -70,7 +72,7 @@ public Form1()
 
     tabbedFormControl = new SfTabbedFormControl();
 
-    for (int i = 1; i <= 15; i++)
+    for (int i = 1; i <= 3; i++)
         tabbedFormControl.Tabs.Add(new TabPageAdv() { Text = "Document" + i });
 
     this.Controls.Add(tabbedFormControl);
@@ -177,7 +179,7 @@ Public Sub New()
 
 	tabbedFormControl = New SfTabbedFormControl()
 
-	For i As Integer = 1 To 15
+	For i As Integer = 1 To 3
 		tabbedFormControl.Tabs.Add(New TabPageAdv() With {.Text = "Document" & i})
 	Next i
 
@@ -270,3 +272,5 @@ End Sub
 {% endtabs %}
 
 ![tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
+
+You can download the sample from following link : [sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)

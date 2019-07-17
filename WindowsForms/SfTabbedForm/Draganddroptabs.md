@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop tabs
 
-Tabbed Form allows move the tabs from one position to another position by dragging and dropping the corresponding tab. This can be done by setting the `TabbedFormControl.AllowDraggingTabs` property as true.
+Tabbed Form allows move the tabs from one position to another position by dragging and dropping the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~AllowDraggingTabs.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}

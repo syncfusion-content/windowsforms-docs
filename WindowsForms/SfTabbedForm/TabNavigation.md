@@ -24,7 +24,7 @@ tabbedFormControl.TabPrimitiveMode = TabPrimitiveMode.DropDown Or TabPrimitiveMo
 
 ## TabPrimitiveClick event
 
-This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabPrimitiveClick_EV.html) event occurs before the NavigationButton click. The following `TabPrimitiveClickEventArgs` properties provide information specific to this event.
+This [TabPrimitiveClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabPrimitiveClick_EV.html) event occurs before the navigation button click. The following `TabPrimitiveClickEventArgs` properties provide information specific to this event.
 
 {% tabs %}
 {% highlight c# %}
