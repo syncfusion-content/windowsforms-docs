@@ -13,23 +13,21 @@ This section explains how to add the `CardLayout` control in a Windows Forms app
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or details of NuGet package needs to be added as reference to use the control in any application.
 
-Find more details about installing the nuget packages in a Windows Forms application in the following link: [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
-## Creating the project
+## Adding the CardLayout control via designer
 
-Create a new Windows Forms project in Visual Studio to display the `CardLayout` with basic functionalities.
+1) Create a new Windows Forms application in Visual Studio.
 
-## Adding the CardLayout control through designer
+2) The `CardLayout` control can be added to an application by dragging it from the toolbox to design view. The following required dependent assemblies will be added automatically:
 
-The `CardLayout` control can be added to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically.
-
-* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Base
 
 ![Drag and drop CardLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-To add the form as a container control of `CardLayout`, click `Yes` in a pop-up, from which it appears automatically before the CardLayout is added.
+3) To add the form as a container control of `CardLayout`, click `Yes` in a pop-up, from which it appears automatically before the CardLayout is added.
 
 ![Alert to add CardLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -37,19 +35,19 @@ To add the form as a container control of `CardLayout`, click `Yes` in a pop-up,
 
 The child controls can be added to layout by dragging it from the toolbox to designer view.
 
-![Adding controls into CardLayout](GettingStarted_images/GettingStarted_img3.jpeg)
+![Adding controls into CardLayout](GettingStarted_images/CardLayout_panel.png)
 
-## Adding the CardLayout control through code
+## Adding the CardLayout control via code
 
 The `CardLayout` control can be created programmatically using the following steps:
 
-**Step 1**: Create a C# or VB.NET application through Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-**Step 2**: Add the following required assembly reference to the project
+2) Add the following assembly reference to the project:
 
-	Syncfusion.Shared.Base.dll.
+* Syncfusion.Shared.Base.dll.
 
-**Step 3**: Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -67,22 +65,24 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 4**: Create an instance of the `CardLayout` control and set `ContainerControl` as form.
+4) Create an instance of the `CardLayout` control and set `ContainerControl` as form.
 
 {% tabs %}
 
 {% highlight c# %}
 
-CardLayout cardLayout1 = new CardLayout();
-
+private Syncfusion.Windows.Forms.Tools.CardLayout cardLayout1;
+this.cardLayout1 = new Syncfusion.Windows.Forms.Tools.CardLayout(this.components);
+this.components = new System.ComponentModel.Container();
 this.cardLayout1.ContainerControl = this;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim cardLayout1 As CardLayout = New CardLayout()
-
+Private cardLayout1 As Syncfusion.Windows.Forms.Tools.CardLayout
+Me.cardLayout1 = New Syncfusion.Windows.Forms.Tools.CardLayout(Me.components)
+Me.components = New System.ComponentModel.Container()
 Me.cardLayout1.ContainerControl = Me
 
 {% endhighlight %}
@@ -93,54 +93,132 @@ Me.cardLayout1.ContainerControl = Me
 
 The child controls can be added to the layout by simply adding it to the form since the form is its container control.
 
-{% tabs %}
+1) The main panel can be added to the layout by simply adding it to the form since the form is its container control.
 
+{% tabs %}
 {% highlight c# %}
 
-ButtonAdv buttonAdv1 = new ButtonAdv();
-ButtonAdv buttonAdv2 = new ButtonAdv();
-ButtonAdv buttonAdv3 = new ButtonAdv();
+//Add Main Panel
+private System.Windows.Forms.Panel cardLayoutPanel;
+this.cardLayoutPanel = new System.Windows.Forms.Panel();
 
-this.buttonAdv1.Text = "buttonAdv1";
-this.buttonAdv2.Text = "buttonAdv2";
-this.buttonAdv3.Text = "buttonAdv3";
+//Add properties
+this.cardLayoutPanel.BackColor = System.Drawing.Color.White;
+this.cardLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+this.cardLayoutPanel.Size = new System.Drawing.Size(800, 450);
 
-//Set the background image of the form
-
-this.BackgroundImage = Properties.Resources.splash0;
-this.BackgroundImage = Properties.Resources.splash1;
-this.BackgroundImage = Properties.Resources.splash2;
-
-this.Controls.Add(this.buttonAdv1);
-this.Controls.Add(this.buttonAdv2);
-this.Controls.Add(this.buttonAdv3);
+//Add to card layout
+this.cardLayout1.ContainerControl = cardLayoutPanel;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
-Dim buttonAdv1 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
-Dim buttonAdv3 As ButtonAdv = New ButtonAdv()
+'Add Main Panel
+Private cardLayoutPanel As System.Windows.Forms.Panel
+Me.cardLayoutPanel = New System.Windows.Forms.Panel()
 
-Me.buttonAdv1.Text = "buttonAdv1"
-Me.buttonAdv2.Text = "buttonAdv2"
-Me.buttonAdv3.Text = "buttonAdv3"
+'Add properties
+Me.cardLayoutPanel.BackColor = System.Drawing.Color.White
+Me.cardLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill
+Me.cardLayoutPanel.Size = New System.Drawing.Size(800, 450)
 
-'Set the background image of the form
-
-Me.BackgroundImage = My.Resources.splash0
-Me.BackgroundImage = My.Resources.splash1
-Me.BackgroundImage = My.Resources.splash2
-
-Me.Controls.Add(this.buttonAdv1)
-Me.Controls.Add(this.buttonAdv2)
-Me.Controls.Add(this.buttonAdv3)
+'Add to card layout
+Me.cardLayout1.ContainerControl = cardLayoutPanel
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![Adding child controls to CardLayout](GettingStarted_images/GettingStarted_img4.jpeg)
+2) Next, The child panel can be added to the layout by simply adding it to the main panel.
 
+{% tabs %}
+{% highlight c# %}
+
+// Create an instance of three panels
+private System.Windows.Forms.Panel panel1;
+private System.Windows.Forms.Panel panel2;
+private System.Windows.Forms.Panel panel3;
+
+this.panel1 = new System.Windows.Forms.Panel();
+this.panel2 = new System.Windows.Forms.Panel();
+this.panel3 = new System.Windows.Forms.Panel();
+
+//Set the size and image to panel1 
+this.cardLayout1.SetPreferredSize(this.panel1, new System.Drawing.Size(586, 232));
+this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+
+//Set the size and image to panel2
+this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+this.cardLayout1.SetPreferredSize(this.panel2, new System.Drawing.Size(586, 232));
+
+//Set the size and image to panel3
+this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+this.cardLayout1.SetPreferredSize(this.panel3, new System.Drawing.Size(586, 232));
+
+//Add the panels into the main panel
+this.cardLayoutPanel.Controls.Add(this.panel1);
+this.cardLayoutPanel.Controls.Add(this.panel2);
+this.cardLayoutPanel.Controls.Add(this.panel3);
+
+{% endhighlight %}
+{% highlight vb %}
+
+' Create an instance of three panels
+Private panel1 As System.Windows.Forms.Panel
+Private panel2 As System.Windows.Forms.Panel
+Private panel3 As System.Windows.Forms.Panel
+
+Me.panel1 = New System.Windows.Forms.Panel()
+Me.panel2 = New System.Windows.Forms.Panel()
+Me.panel3 = New System.Windows.Forms.Panel()
+
+'Set the size and image to panel1 
+Me.cardLayout1.SetPreferredSize(Me.panel1, New System.Drawing.Size(586, 232))
+Me.panel1.BackgroundImage = (CType(resources.GetObject("panel1.BackgroundImage"), System.Drawing.Image))
+
+'Set the size and image to panel2
+Me.panel2.BackgroundImage = (CType(resources.GetObject("panel2.BackgroundImage"), System.Drawing.Image))
+Me.cardLayout1.SetPreferredSize(Me.panel2, New System.Drawing.Size(586, 232))
+
+'Set the size and image to panel3
+Me.panel3.BackgroundImage = (CType(resources.GetObject("panel3.BackgroundImage"), System.Drawing.Image))
+Me.cardLayout1.SetPreferredSize(Me.panel3, New System.Drawing.Size(586, 232))
+
+'Add the panels into the main panel
+Me.cardLayoutPanel.Controls.Add(Me.panel1)
+Me.cardLayoutPanel.Controls.Add(Me.panel2)
+Me.cardLayoutPanel.Controls.Add(Me.panel3)
+
+{% endhighlight %}
+{% endtabs %}
+
+3) To navigate the next or previous card by using Next and Previous method. At runtime, the particular card should be selected using the `SelectedCard` property.
+
+{% tabs %}
+{% highlight c# %}
+
+//for move the next card
+this.cardLayout1.Next();
+
+//for move the previous card
+this.cardLayout1.Previous();
+
+//for select the card
+this.cardLayout1.SelectedCard = "image1";
+
+{% endhighlight %}
+{% highlight vb %}
+
+'for move the next card
+Me.cardLayout1.Next()
+
+'for move the previous card
+Me.cardLayout1.Previous()
+
+'for select the card
+Me.cardLayout1.SelectedCard = "image1"
+
+{% endhighlight %}
+{% endtabs %}
+
+![Shows the selected card in Windows Forms CardLayout](GettingStarted_images/card.png)
 
