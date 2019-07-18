@@ -19,7 +19,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding the FlowLayout control via designer
 
-1) Create new Windows Forma application via designer.
+1) Create new Windows Forms application via designer.
 
 2) The [FlowLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout.html) control can be added to an application by dragging it from the toolbox to design view. The following assemblies will be added automatically:
 
