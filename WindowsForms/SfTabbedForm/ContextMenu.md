@@ -273,4 +273,4 @@ End Sub
 
 ![tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
 
-You can download the sample from following link : [sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)
+You can download the sample from following link : [Sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)
