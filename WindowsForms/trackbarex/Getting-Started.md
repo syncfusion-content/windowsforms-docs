@@ -13,30 +13,22 @@ This section describes how to add [TrackBarEx](https://help.syncfusion.com/cr/wi
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#trackbarex) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#trackbarex) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+## Adding TrackBarEx control via designer
 
-### Create a simple application with TrackBarEx
+1) Create a new Windows Forms project in Visual Studio.
 
-You can create a Windows Forms application with [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) using the following steps:
+2) The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
 
-### Create a project
-
-Create a new Windows Forms project in Visual Studio to display the [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control.
-
-## Add control through designer
-
-The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
-
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
 ![TrackBarEx control added via designer](TrackBarEx-Getting-Started_images/trackbar-control-added-by-designer.png)
 
@@ -44,38 +36,50 @@ The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Wi
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the following required assembly references to the project: 
+1) Create C# or VB application via Visual Studio.
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+2) Add the following assembly references to the project: 
 
-**2.** Include the **Syncfusion.Windows.Forms.Tools** namespace.
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Forms.Tools;
+
 {% endhighlight  %}
 {% highlight VB %}
+
 Imports Syncfusion.Windows.Forms.Tools
+
 {% endhighlight  %}
 {% endtabs %} 
 
-**3.** Create a [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) instance, and add it to the window.
+4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
+
 //Instance of TrackBarEx
 TrackBarEx trackBarEx1 = new TrackBarEx();
+trackBarEx1.Value = 5;
 this.Controls.Add(trackBarEx1);
+
 {% endhighlight %}
 {% highlight VB %}
+
 'Instance of TrackBarEx
 Dim trackBarEx1 As TrackBarEx = New TrackBarEx
+trackBarEx1.Value = 5
 Me.Controls.Add(tabSplitterContainer1)
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,14 +91,20 @@ You can define the minimum and maximum values by setting the [Minimum](https://h
 
 {% tabs %}
 {% highlight C# %}
+
 this.trackBarEx1.Minimum = 10;
-this.trackBarEx1.Maximum = 25;
+this.trackBarEx1.Maximum = 30;
+
 {% endhighlight %}
 {% highlight VB %}
+
 Me.trackBarEx1.Minimum = 10
 Me.trackBarEx1.Maximum = 30
+
 {% endhighlight %}
 {% endtabs %}
+
+![Windows Forms TrackBarEx showing minimum and maximum value](TrackBarEx-Getting-Started_images/TrackBarEx_minmax.png)
 
 ## Horizontal or vertical track bar
 
@@ -102,18 +112,22 @@ The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Wi
 
 {% tabs %}
 {% highlight C# %}
+
 // To set the control to be vertically oriented.
 this.trackBarEx1.Orientation = Orientation.Vertical;
 
 // To set the control to be horizontally oriented.
 this.trackBarEx1.Orientation = Orientation.Horizontal;
+
 {% endhighlight %}
 {% highlight VB %}
+
 'To set the control to be vertically oriented.
 Me.trackBarEx1.Orientation = Orientation.Vertical
 
 'To set the control to be horizontally oriented.
 Me.trackBarEx1.Orientation = Orientation.Horizontal
+
 {% endhighlight %}
 {% endtabs %}
 
