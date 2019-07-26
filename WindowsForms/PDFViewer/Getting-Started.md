@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+description: This section describes about how to create PdfViewer control in Windows Forms application.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -30,7 +30,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 
 1) Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![Windows forms pdfviewer drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -42,7 +42,7 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 
    Appearance and behavior related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Windows forms pdfviewer displays properties window of control](Getting-Started_images/Getting-Started_img2.png)
    
 
 3) This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
@@ -115,12 +115,12 @@ Controls.Add(pdfViewerControl1)
 
 The following screenshot depicts different sections of the PdfViewerControl.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Windows forms pdfviewer displays different section of control](Getting-Started_images/Getting-Started_img3.png)
 
 
 ### Toolbar
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Windows forms pdfviewer displays the toolbar](Getting-Started_images/Getting-Started_img4.png)
 
 
 

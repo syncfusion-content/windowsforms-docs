@@ -23,4 +23,4 @@ Me.pivotChart1.AllowDrillDown = True
 
 {% endhighlight %}
 
-![](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png)
+![Windows forms pivotchart displays up and down level in chart](Drill-UpDown-Level_images/Drill-UpDown-Level_img1.png)
