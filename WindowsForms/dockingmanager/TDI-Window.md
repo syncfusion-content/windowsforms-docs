@@ -180,11 +180,9 @@ MessageBox.Show(this.dockingManager1.IsFrozenToDocumentState(this.panel1).ToStri
 
 {% endtabs %}
 
-## Create document tab groups
+## Creating Document Tab Group
 
-The DockingManger allows to create document tab groups like Visual Studio. The document tab groups can be grouped by using the options in context menu items.
-
-![Docking manager displays the horizontal document tab group](TDI_Window_images/Horizontal_Tab_group.png) 
+The DockingManger allows to create document tab groups like Visual Studio. The document tab groups can be grouped by drag and Drop and also using the options in context menu items.
 
 ### Create tab group using context menu option
 
@@ -193,6 +191,28 @@ In docking manager, a new tab group can be created at horizontal or vertical sid
 ![Docking manager displays the horizontal document tab group](TDI_Window_images/Document_group_creation.png) 
 
 ![Docking manager displays the vertical document tab group](TDI_Window_images/Vertical_tab_group_creation.png) 
+
+### TabGroup creation through mouse interaction
+
+Like VisualStudio, DockingManager's DragProvider has 8 dock hints to create DocumentTab group through drag provider. Out of 8 dock hints, 4 outer dock hints are used to create a Dock window and 4 inner dock hints are used to create a Document window. A new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. This feature is not supported in `VS2005`, `VS2008` and `Whidbey` styles.  
+
+If there is no active document available in the DockingManager, only Center dock hint will be visible in DragProvider
+
+![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Non-ActiveWindow.png) 
+
+The following screenshot shows how the document windows are created through DragProvider,
+
+![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Left.png) 
+
+N> Preview for Left Document
+
+![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Left.png)
+
+N> DocumentTab group has been created at left side
+
+![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Right.png) 
+
+N> Similarly document tabs can be created in all four directions (Left, Top, Right, Bottom)
 
 ## Disable tab group creation
 

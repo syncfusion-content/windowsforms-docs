@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Bind Pivot Grid with Chart | PivotGrid | Windows Forms | Syncfusion
+title: How to bind PivotGrid with chart | Windows Forms | Syncfusion
 description: How to bind pivot grid with chart
 platform: windowsforms
 control: Pivot Grid
@@ -55,7 +55,7 @@ Me.chartControl1.ShowContextMenu = True
 
 {% endtabs %}
 
-![Customizing chart integrated with pivot grid](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.png)
+![Customizing chart integrated with pivot grid](How-To-Bind-Pivot-Grid-With-Chart_images/PivotGrid-with-chart_image2.jpg)
 
 ## Persisting style and type of chart series
 
