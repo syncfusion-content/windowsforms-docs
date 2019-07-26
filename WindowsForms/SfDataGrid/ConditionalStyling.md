@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Styling
+title: Conditional Styling in SfDataGrid | Syncfusion
 description: This section explains about the Conditional Styling in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -53,7 +53,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling1.png)
+![Windows forms datagrid displays applied style to particular cells in grid](ConditionalStyling_images/ConditonalStyling1.png)
 
 ### Styling Alternate Cells
 
@@ -88,7 +88,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling2.png)
+![Windows forms datagrid displays applied backcolor in particular cell](ConditionalStyling_images/ConditonalStyling2.png)
 
 ## Rows
 
@@ -126,7 +126,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling3.png)
+![Windows forms datagrid displays applied color based on the specific text](ConditionalStyling_images/ConditonalStyling3.png)
 
 The following code shows how to apply conditional styling for the data table.
 
@@ -178,7 +178,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling16.png)
+![Windows forms datagrid displays applied color based on the text](ConditionalStyling_images/ConditonalStyling16.jpg)
 
 ### Styling Alternate Rows
 
@@ -214,7 +214,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling4.png)
+![Windows forms datagrid displays applied specific color in each row](ConditionalStyling_images/ConditonalStyling4.png)
 
 ## Caption Summary
 
@@ -256,7 +256,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling5.png)
+![Windows forms datagrid displays applied color in specific cell](ConditionalStyling_images/ConditonalStyling5.png)
 
 ### Row
 
@@ -297,7 +297,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling6.png)
+![Windows forms displays applied color in specific rows](ConditionalStyling_images/ConditonalStyling6.png)
 
 ## Group Summary
 
@@ -330,7 +330,7 @@ Private Sub SfDataGrid1_DrawCell(ByVal sender As Object, ByVal e As DrawCellEven
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](ConditionalStyling_images/ConditonalStyling7.png)
+![Windows forms datagrid displays applied color in calculated cell](ConditionalStyling_images/ConditonalStyling7.png)
 
 ### Row
 
@@ -368,7 +368,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling8.png)
+![Windows forms datagrid displays applied color in calculated rows](ConditionalStyling_images/ConditonalStyling8.png)
 
 ## Table Summary
 
@@ -402,7 +402,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling9.png)
+![Windows forms datagrid displays applied color in specific calculated column](ConditionalStyling_images/ConditonalStyling9.png)
 
 ### Row
 
@@ -440,7 +440,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling10.png)
+![Windows forms datagrid displays applied different color in different calculated rows](ConditionalStyling_images/ConditonalStyling10.png)
 
 ## Stacked Header
 
@@ -486,7 +486,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling11.png)
+![Windows forms datagrid displays applied colors in header](ConditionalStyling_images/ConditonalStyling11.png)
 
 ## Row Header
 
@@ -524,7 +524,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling12.png)
+![Windows forms datagrid applied colors in row header](ConditionalStyling_images/ConditonalStyling12.png)
 
 ## Adding an Image for a Cell
 
@@ -559,7 +559,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling13.png)
+![Windows forms datagrid displays added image into the cell](ConditionalStyling_images/ConditonalStyling13.png)
 
 ## Highlighting the Newly Added Row 
 
@@ -612,7 +612,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling14.png)
+![Windows forms datagrid displays highlight added new row in grid](ConditionalStyling_images/ConditonalStyling14.png)
 
 ## Alignment Customization based on Column
 
@@ -643,5 +643,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ConditionalStyling_images/ConditonalStyling15.png)
+![Windows forms datagrid displays applied center alignment in particular column](ConditionalStyling_images/ConditonalStyling15.png)
 
