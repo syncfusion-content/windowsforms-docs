@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu
 
-The context menu for the tabbed form can be set by using [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
+The context menu for the tabbed form can be set using the [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ End Sub
 
 ## Customize context menu in tabs like web browser
 
-The context menu can be customized while opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~ContextMenuOpening_EV.html) event. The below code example shows how to provide context menu in tabs like web browser by using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
+The context menu can be customized when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~ContextMenuOpening_EV.html) event. The following code example demonstrates how to provide context menu in tabs like web browser using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ public Form1()
 
 #region ContextMenu events
 /// <summary>
-/// Occurs when context menu on the tab is opening.
+/// Occurs when context menu on the tab is opened.
 /// </summary>
 private void TabbedFormControl_ContextMenuOpening(object sender, ContextMenuOpeningEventArgs e)
 {
@@ -116,7 +116,7 @@ private void TabbedFormControl_ContextMenuOpening(object sender, ContextMenuOpen
 }
 
 /// <summary>
-/// Occurs when Close menu item is clicked.
+/// Occurs when the Close menu item is clicked.
 /// </summary>
 private void OnCloseMenuClicked(object sender, EventArgs e)
 {
@@ -131,7 +131,7 @@ private void OnCloseMenuClicked(object sender, EventArgs e)
 
 /// <summary>
 /// /// <summary>
-/// Occurs when Close all but this menu item is clicked.
+/// Occurs when Close All But This menu item is clicked.
 /// </summary>
 private void OnCloseAllMenuClicked(object sender, EventArgs e)
 {
@@ -151,7 +151,7 @@ private void OnCloseAllMenuClicked(object sender, EventArgs e)
 
 /// <summary>
 /// /// <summary>
-/// Occurs when Close right to this menu item is clicked.
+/// Occurs when Close Right To This menu item is clicked.
 /// </summary>
 private void OnCloseTabsToRightMenuClicked(object sender, EventArgs e)
 {
@@ -234,7 +234,7 @@ End Sub
 
 ''' <summary>
 ''' /// <summary>
-''' Occurs when Close all but this menu item is clicked.
+''' Occurs when Close All But This Menu item is clicked.
 ''' </summary>
 Private Sub OnCloseAllMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
 	Dim tabs = tabbedFormControl.Tabs.OfType(Of TabPageAdv)()
@@ -252,7 +252,7 @@ End Sub
 
 ''' <summary>
 ''' /// <summary>
-''' Occurs when Close right to this menu item is clicked.
+''' Occurs when Close Right To This Menu item is clicked.
 ''' </summary>
 Private Sub OnCloseTabsToRightMenuClicked(ByVal sender As Object, ByVal e As EventArgs)
 	Dim tabs = tabbedFormControl.Tabs.OfType(Of TabPageAdv)()
@@ -273,4 +273,4 @@ End Sub
 
 ![tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
 
-You can download the sample from following link : [Sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)
+You can download the sample from following link: [Sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)
