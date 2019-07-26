@@ -158,9 +158,12 @@ At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windo
 
 The options are,
 
-* One
-* MultiSimple
-* MultiExtended
+| SelectionMode | Description |
+|---|---|
+| None | No items can be selected. |
+| One | Only one item can be selected. |
+| MultiSimple | Multiple items can be selected. |
+| MultiExtended | Multiple items can be selected, and the user can use the SHIFT, CTRL, and arrow keys to make selections. |
 
 {% tabs %}
 
