@@ -58,7 +58,7 @@ Me.pivotChart1.FilterFieldSection.Visible = True
 
 {% endtabs %}
 
-![](Grouping-Bar_images/GroupingBar_image1.png)
+![Windows forms pivotchart displays chart with grouping bar](Grouping-Bar_images/GroupingBar_image1.png)
 
 _PivotChart with grouping bar_
 
@@ -108,7 +108,7 @@ Me.pivotChart1.AxisFieldSection.BackInterior = Color.SkyBlue
 
 {% endtabs %}
 
-![](Grouping-Bar_images/GroupingBar_image2.png)
+![Windows forms pivotchart displays colors applied to grouping bar](Grouping-Bar_images/GroupingBar_image2.png)
 
 _PivotChart with customized grouping bar_
 
