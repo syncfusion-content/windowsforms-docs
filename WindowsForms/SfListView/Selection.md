@@ -28,7 +28,7 @@ sfListView1.SelectionMode = SelectionMode.MultiSimple
 {% endhighlight %}
 {% endtabs %}   
          
-![Multiple selection in ListView control for windoes forms](Selection_images/Selection_img1.png)
+![Multiple selection in ListView control for windows forms](Selection_images/Selection_img1.png)
  
 ## Programmatic Selection
 When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html) is other than None, the item or items in the SfListView can be selected by using the [SfListView.SelectedItem]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html) property or by adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property based on the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html).
