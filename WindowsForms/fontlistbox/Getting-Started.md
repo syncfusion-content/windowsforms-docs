@@ -119,7 +119,7 @@ fontListBox1.SelectedIndexChanged += new System.EventHandler(this.FontListBox1_S
 // Selection event for FontListBox
 private void FontListBox1_SelectedIndexChanged(object sender, System.EventArgs e)
 {
-    this.label2.Font = new System.Drawing.Font(this.fontListBox1.SelectedItem.ToString(), 10, System.Drawing.FontStyle.Regular);    
+    this.label.Font = new System.Drawing.Font(this.fontListBox1.SelectedItem.ToString(), 10, System.Drawing.FontStyle.Regular);    
 }
 
 {% endhighlight %}
@@ -144,7 +144,7 @@ AddHandler fontListBox1.SelectedIndexChanged, AddressOf FontListBox1_SelectedInd
 
 ' Selection event for FontListBox
 private void FontListBox1_SelectedIndexChanged(Object sender, System.EventArgs e)
-	Me.label2.Font = New System.Drawing.Font(Me.fontListBox1.SelectedItem.ToString(), 10, System.Drawing.FontStyle.Regular)
+	Me.label.Font = New System.Drawing.Font(Me.fontListBox1.SelectedItem.ToString(), 10, System.Drawing.FontStyle.Regular)
 
 {% endhighlight %}
 
@@ -152,7 +152,7 @@ private void FontListBox1_SelectedIndexChanged(Object sender, System.EventArgs e
 
 ![Windows Forms FontListBox showing change the text style](Overview_images/FontListBox_selecteditems.png)
 
-## Selection
+## Selection Mode
 
 At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected, based on the selection mode specified in [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse as well as using keyboard.
 
