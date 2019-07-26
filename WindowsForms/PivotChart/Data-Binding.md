@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data-Binding | Windows Forms | Syncfusion
-description: data binding
+description: This section explains about the DataBinding support in PivotChart
 platform: windowsforms
 control: PivotChart
 documentation: ug
