@@ -47,7 +47,7 @@ Me.pivotChart1.ChartTypes = Syncfusion.Windows.Forms.PivotChart.PivotChartTypes.
 
 The line chart joins the data points on a plot by using straight lines that show trends in data at equal intervals.
 
-![](Chart-Types_images/Chart-Types_img1.png)
+![Windows forms pivotchart displays line chart](Chart-Types_images/Chart-Types_img1.png)
 
 
 ## Spline chart
@@ -56,7 +56,7 @@ The spline chart is similar to line chart except that it connects different da
 
 
 
-![](Chart-Types_images/Chart-Types_img2.png)
+![Windows forms pivotchart displays spline chart](Chart-Types_images/Chart-Types_img2.png)
 
 
 
@@ -65,7 +65,7 @@ The spline chart is similar to line chart except that it connects different da
 The step line chart uses horizontal and vertical lines to connect data points resulting in a step like progression.
 
 
-![](Chart-Types_images/Chart-Types_img3.png)
+![Windows forms pivotchart displays step line chart](Chart-Types_images/Chart-Types_img3.png)
 
 
 
@@ -73,7 +73,7 @@ The step line chart uses horizontal and vertical lines to connect data points 
 
 The step area chart is similar to the regular area chart except for a straight line tracing the shortest path between data points. The values are connected by continuous vertical and horizontal lines to form a step like progression.
 
-![](Chart-Types_images/Chart-Types_img4.png)
+![Windows forms pivotchart displays step area chart](Chart-Types_images/Chart-Types_img4.png)
 
 
 
@@ -83,7 +83,7 @@ The spline area chart is similar to the area chart but differs by connecting dat
 
 
 
-![](Chart-Types_images/Chart-Types_img5.png)
+![Windows forms pivotchart displays spline area chart](Chart-Types_images/Chart-Types_img5.png)
 
 
 
@@ -98,7 +98,7 @@ The stacking column chart is similar to column charts except for the Y-values. T
 
 
 
-![](Chart-Types_images/Chart-Types_img6.png)
+![Windows forms pivotchart displays stacking column chart](Chart-Types_images/Chart-Types_img6.png)
 
 
 
@@ -107,7 +107,7 @@ The stacking column chart is similar to column charts except for the Y-values. T
 The stacking area chart is similar to regular area chart except for the Y-values. The Y-values stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole data. The top range is calculated on the basis of 100.
 
 
-![](Chart-Types_images/Chart-Types_img7.png)
+![Windows forms pivotchart displays stacking area 100 chart](Chart-Types_images/Chart-Types_img7.png)
 
 
 
@@ -116,4 +116,4 @@ The stacking area chart is similar to regular area chart except for the Y-values
 The stacking area chart is similar to the regular area chart except for the Y-values. The Y-values stack on top of each other in the specified series order. This helps to visualize the relationship of parts to the whole data.
 
 
-![](Chart-Types_images/Chart-Types_img8.png)
+![Windows forms pivotchart displays stacking area chart](Chart-Types_images/Chart-Types_img8.png)

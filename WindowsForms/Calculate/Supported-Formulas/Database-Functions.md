@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
+title: Supported formulas by Calculation engine | Syncfusion
 description: supported formulas
 platform: windowsforms
 control: Calculate

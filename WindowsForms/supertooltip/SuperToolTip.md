@@ -173,7 +173,7 @@ When set to true, displays the tooltip in RightToLeft fashion. Default value is 
 <tr>
 <td>
 ShowToolTip</td><td>
-Gets/Sets whether the ToolTip should be visible or not. Default value is true.DelayToolTip property should be disabled before disabling the ShowToolTip property</td></tr>
+Gets or sets the value indicating whether to show or hide the SuperToolTip.</td></tr>
 </table>
 
 {% tabs %}
@@ -195,7 +195,7 @@ Me.superToolTip1.MaxWidth = 500
 Me.superToolTip1.ToolTipDuration = 3
 Me.superToolTip1.UseFading = Syncfusion.Windows.Forms.Tools.SuperToolTip.FadingType.System
 Me.superToolTip1.RightToLeft = RightToLeft.Yes
-Me.treeViewAdv1.ShowToolTip = True
+Me.superToolTip1.ShowToolTip = True
 
 {% endhighlight %}
 {% endtabs %}

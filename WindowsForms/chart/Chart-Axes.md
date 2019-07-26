@@ -203,6 +203,55 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 
 ![Chart Axes](Chart-Axes_images/Chart-Axes_img6.jpeg)
 
+And for multiple y axis, you can set the orientation for axis.
+
+The following are the steps to include a new y axis to the chart.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// Create a new instance of the chart axis.
+
+private ChartAxis secYAxis = new ChartAxis();
+
+// Change orientation to the axis
+
+secYAxis.Orientation = ChartOrientation.Vertical;
+
+// Add the secondary axis to the chart axis collection.
+
+this.chartControl1.Axes.Add(this.secYAxis);
+
+// Specify this axis to be the axis for an existing series
+
+this.chartControl1.Series[1].YAxis = this.secYAxis;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Create a new instance of the chart axis.
+
+Private secYAxis As ChartAxis = New ChartAxis()
+
+'Change orientation to the axis
+
+Me.secYAxis.Orientation = ChartOrientation.Vertical
+
+' Add the secondary axis to the chart axis collection.
+
+Me.chartControl1.Axes.Add(Me.secYAxis)
+
+' Specify this axis to be the axis for an existing series
+
+Me.chartControl1.Series(1).YAxis = Me.secYAxis
+
+{% endhighlight %}
+{% endtabs %}
+
+![Chart Axes](Chart-Axes_images/Chart-Axes_img6_1.jpg)
+
 ### Opposed Position
 
 By default, this additional axis will be rendered right next to the corresponding primary axis as seen above. This might be undesirable and you would instead want it to be rendered at the opposite side of the primary axis. This is done by setting the [OpposedPosition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartAxis~OpposedPosition.html) property to true.
