@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection | Syncfusion
+title: Selection | Windows-Forms | Syncfusion
 description: This section explains about the Selection support in SfListView.
 platform: windowsforms
 control: SfListView
@@ -28,7 +28,7 @@ sfListView1.SelectionMode = SelectionMode.MultiSimple
 {% endhighlight %}
 {% endtabs %}   
          
-![Selection_images](Selection_images/Selection_img1.png)
+![Multiple selection in ListView control for windoes forms](Selection_images/Selection_img1.png)
  
 ## Programmatic Selection
 When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html) is other than None, the item or items in the SfListView can be selected by using the [SfListView.SelectedItem]( https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItem.html) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedIndex.html) property or by adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property based on the [SfListView.SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectionMode.html).
@@ -44,7 +44,7 @@ sfListView1.SelectedItem = sfListView1.View.DisplayItems[4];
 {% endhighlight %}
 {% endtabs %}    
  
- ![Selection_images](Selection_images/Selection_img2.png)
+ ![Selecting items using SelectedItems property in ListView](Selection_images/Selection_img2.png)
  
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ sfListView1.SelectedIndex = 10
 {% endhighlight %}
 {% endtabs %} 
  
- ![Selection_images](Selection_images/Selection_img3.png)
+ ![Selecting items using SelectedIndex property in ListView](Selection_images/Selection_img3.png)
  
 Multiple items can be selected by adding data objects to [SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~SelectedItems.html) property.
 
@@ -78,7 +78,7 @@ Next item
 {% endhighlight %}
 {% endtabs %}
 
-![Selection_images](Selection_images/Selection_img4.png)
+![Programtically do multiple selection in ListView control for windows forms](Selection_images/Selection_img4.png)
 
 ## Selected items
 
@@ -123,7 +123,7 @@ sfListView1.HotTracking = true
 {% endhighlight %}
 {% endtabs %}
  
-![Selection_images](Selection_images/Selection_img5.png)
+![Enable mouse over effect for items in ListView control for WPF](Selection_images/Selection_img5.png)
  
 ## Appearance
 The SfListView allows you to customize the appearance of the selected items or mouse hover items through [SfListView.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~Style.html) property.
@@ -142,7 +142,7 @@ sfListView1.Style.SelectionStyle.SelectionForeColor = Color.DarkBlue
 {% endhighlight %}
 {% endtabs %}
  
-![Selection_images](Selection_images/Selection_img6.png)
+![Set back color and fore color for ListView](Selection_images/Selection_img6.png)
  
 ### Change the background and foreground color for Hover selection
 The selection background and foreground colors can be changed by using the `SfListView.Style.SelectionStyle` property.
@@ -158,7 +158,7 @@ sfListView1.Style.SelectionStyle.HoverForeColor = Color.GreenYellow
 {% endhighlight %}
 {% endtabs %}
 
-![Selection_images](Selection_images/Selection_img7.png)
+![Set mouse over color for back color and fore color for ListView](Selection_images/Selection_img7.png)
  
 ## Events
 
