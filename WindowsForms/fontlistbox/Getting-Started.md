@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create FontListBox control using Windows Forms application.
+title: Getting Started with FontListBox | WindowsForms | Syncfusion
+description: How to create and use FontListBox control in Windows Forms application.
 platform: WindowsForms
 control: FontListBox
 documentation: ug
