@@ -1,150 +1,287 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: WinForms Skin Manager | Themes | Windows Forms | Syncfusion
+description: How to apply theme or skin for a control or application using Windows Forms skin manager.
 platform: WindowsForms
-control: SkinManager 
+control: SkinManager
 documentation: ug
 ---
 
-# Getting Started
+# WinForms Skin Manager
 
-## Adding skin manager component to a Windows Forms application
+This section briefly describes how to create a new Windows Forms project in Visual Studio and apply themes using the **SkinManager** component.
 
-### Through Visual Studio
+## Assembly deployment and theme assemblies
 
-The following are steps to add the Skin Manager control to an application through Visual Studio:
+SkinManager presents in the `Syncfusion.Shared.Base` assembly. 
 
- Create a new Windows Form application in Visual Studio. 
+<table>
+<tr>
+<th>Theme name</th>
+<th>Assembly name</th>
+</tr>
+<tr>
+<td>Office2016Theme</td>
+<td>Syncfusion.Office2016Theme.WinForms.dll assembly reference is needed only for the SfDataGrid, SfButton, SfDateTimeEdit, SfNumericTextBox, SfToolTip, and SfSmithChart controls only.
+</td>
+</tr>
+<tr>
+<td>Office2019Theme</td>
+<td>Syncfusion.Office2019Theme.WinForms.dll</td>
+</tr>
+<tr>
+<td>HighContrastTheme</td>
+<td>Syncfusion.HighContrastTheme.WinForms.dll</td>
+</tr>
+<tr>
+<td>Other Themes</td>
+<td>Themes are included in the control assembly itself.</td> 
+</tr>
+</table>
 
-1. Drag the Skin Manager from the Toolbox tab to the designer.
+## Loading theme assemblies
 
-   ![Windows forms skin manager dragged from toolbox](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-2. Skin Manager is added.  
-3. Open the Properties Window to assign parent control and apply skin. 
-
-### Through code
-
-
-You can add Skin Manager to one of the controls in your form or to the entire control as needed by specifying the root control. You can specify the root control using the _Control_ property.
-
-To add Skin Manager to one of the controls, specify the control as root control. The following code illustrates this: 
-
-{% tabs %}
-{% highlight c# %}
-
-SkinManager.SetVisualStyle(this.buttonAdv1, VisualTheme.Office2007Blue );
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-SkinManager.SetVisualStyle(Me.buttonAdv1, VisualTheme.Office2007Blue)
-
-{% endhighlight %}
-{% endtabs %}
-
-![Calculator control applied with Office2007Blue theme](Getting-Started_images/Getting-Started_img2.png)
-
-To add Skin Manager to the entire form, specify the form as root control. The following code illustrates this: 
+Skin manager loads theme assembly using the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method before applying theme. This is applicable for the themes loaded from separate assembly, and not applicable for the themes loaded from built-in assembly.
 
 {% tabs %}
-{% highlight c# %}
 
-SkinManager.SetVisualStyle(this, VisualTheme.Office2007Blue );
+{% highlight C# %}
+
+// Loading Office2019Theme assembly
+SkinManager.LoadAssembly(typeof(Office2019Theme).Assembly);
+
+//Loading HighContrastTheme assembly
+SkinManager.LoadAssembly(typeof(HighContrastTheme).Assembly);
+
+// Loading Office2016Theme assembly
+SkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2016Theme).Assembly);
+
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
-SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
+' Loading Office2019Theme assembly
+SkinManager.LoadAssembly(GetType(Office2019Theme).Assembly)
+
+' Loading HighContrastTheme assembly
+SkinManager.LoadAssembly(GetType(HighContrastTheme).Assembly)
+
+' Loading Office2016Theme assembly
+SkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2016Theme).Assembly)
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![Calculator control applied with Office2007Blue theme to entire form](Getting-Started_images/Getting-Started_img3.png)
+## Adding skin manager component
 
-## Applying theme 
+## Through designer
 
-### Through designer
+1) Create a new Windows Forms application in Visual Studio.
 
-The following are the steps to apply the required skin to the form through designer: 
+2) The `SkinManager` component can be added to designer by dragging it from the toolbox to the design view. 
 
-1. Open the Properties Window.
-2. In the Controls field assign the root control for which you want to apply the theme. 
+The following dependent assemblies will be added automatically: 
 
-![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img4.png)
+* Syncfusion.Shared.Base
 
-![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img5.png)
+![WinForms skin manager from toolbox](Getting-Started_images/SkinManager_toolbox.png)
 
-## Adding themes to controls with skin manager at designer time
+### Applying theme
 
-Once the SkinManager is applied to a parent form or container, the new controls being added to it will also be updated with the theme applied in the SkinManager.
+After the SkinManager component has been added into the designer, select the SkinManager component, and go to properties window. Here, you can apply theme for a control or form using the `Controls` property.
 
-The following images describe the same in applying the Office2007Black theme to the newly added control [ButtonAdv] after the theme is applied to the form through the SkinManager.
+![WinForms skin manager apply theme in designer](Getting-Started_images/SkinManager_root.png)
 
-![Calculator control showing to applied Office2007Black theme by property window](Getting-Started_images/Getting-Started_img6.png)
+### Applying theme to the form
 
-![Calculator control showing to applied Office2007Black theme to newly added control by property window](Getting-Started_images/Getting-Started_img7.png)
+Skin manager supports to apply theme for all the control in the form or a container by applying theme to the form or container. So, you do not need to apply theme for each control.
 
-### Through code
+![WinForms skin manager apply theme to entire form](Getting-Started_images/SkinManager_form.png)
 
-You can apply the required skin to the form using the _VisualTheme_ property. 
+## Through code
 
-The following code illustrates how to apply Office 2007 theme:
+Theme for a control or form can be applied by settings `Controls` property of `SkinManager`. 
 
 {% tabs %}
-{% highlight c# %}
 
-SkinManager.SetVisualStyle(this, VisualTheme.Office2007Blue );
+{% highlight C# %}
+
+using Syncfusion.Windows.Forms;
+
+this.components = new System.ComponentModel.Container();
+SkinManager skinManager1 = new SkinManager(this.components);
+skinManager1.Controls = treeViewAdv1;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
-SkinManager.SetVisualStyle(Me, VisualTheme.Office2007Blue)
+Imports Syncfusion.Windows.Forms
+
+Me.components = New System.ComponentModel.Container()
+Dim skinManager1 As New SkinManager(Me.components)
+skinManager1.Controls = treeViewAdv1
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![Calculator control showing how to apply office2007 theme](Getting-Started_images/Getting-Started_img8.png)
+### Applying theme to the form
 
-
-The following code illustrates how to apply Managed themes:
+Skin manager supports to apply theme for all the control in the form or a container by applying theme to the form or container. So, you do not need to apply theme for each control.
 
 {% tabs %}
-{% highlight c# %}
 
-Office12ColorTable.ApplyManagedColors(this.buttonAdv1,Color. Orange);
+{% highlight C# %}
+
+skinManager1.Controls = this;
+skinManager1.VisualTheme = VisualTheme.Office2016Black;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+skinManager1.Controls = Me
+skinManager1.VisualTheme = VisualTheme.Office2016Black
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-Office12ColorTable.ApplyManagedColors(Me.buttonAdv1,Color.Orange )
-
-{% endhighlight %}
 {% endtabs %}
 
-![Calculator control showing how to apply managed themes](Getting-Started_images/Getting-Started_img9.png)
+![WinForms SkinManager shows theme applied to entire form](Getting-Started_images/SkinManager_form_code.png)
 
 ## Apply Themes to entire application
 
-Apply themes to all the forms present in the application by setting in single place. This application-level support of skin manager can be enabled using the `ApplicationVisualTheme` property. It can be applied before the main form is initialized.
+Skin manager allows to apply theme for all the controls and forms in an application by setting the [ApplicationVisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~ApplicationVisualTheme.html) property. It allows you to theme entire application using single `ApplicationVisualTheme` property. 
 
 {% tabs %}
 {% highlight c# %}
 
 static void Main() 
-    { 
-        Application.EnableVisualStyles(); 
-        Application.SetCompatibleTextRenderingDefault(false); 
-        SkinManager.ApplicationVisualTheme = VisualTheme.Office2016Colourful; 
-        Application.Run(new Form1()); 
-    } 
+{ 
+    SkinManager.ApplicationVisualTheme = "Office2019Colourful";
+    Application.EnableVisualStyles(); 
+    Application.SetCompatibleTextRenderingDefault(false); 
+    Application.Run(new Form1()); 
+} 
 
 {% endhighlight c# %}
 {% endtabs %}
+
+N> Set the `ApplicationVisualTheme` property before main form is initialized.
+
+## Apply theme for individual control
+
+Theme can be applied to individual component using skin manager or by setting the `ThemeName` property. You need to call the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method for required themes when applying using the `ThemeName` property also.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.treeViewAdv1.ThemeName = "Office2019Colorful";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.treeViewAdv1.ThemeName = "Office2019Colorful"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms shows themes applied to a control](Getting-Started_images/SkinManager_theme.png)
+
+## Theme studio based themes
+
+The Office2019Colorful and HighContrastBlack themes can be customized using the WinForms theme studio. Refer to the theme studio documentation to know how to create custom themes.
+
+N> Appearance customization settings done in control level will not take effect when theme studio based theme is applied. So, for customization, refer to the Style section.
+
+### Change font for entire application
+
+When using theme studio based themes, the font for entire application can be customized by setting the [CanOverrideFontFamily](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Theme.FontHelper~CanOverrideFontFamily.html) property to true. This property is used only in constructor.
+
+{% tabs %}
+
+{% highlight C# %}
+
+FontHelper.CanOverrideFontFamily = true;
+FontHelper.FontFamily = new FontFamily("Algerian");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+FontHelper.CanOverrideFontFamily = True
+FontHelper.FontFamily = New FontFamily("Algerian")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms SkinManager shows applied font style to entire application](Getting-Started_images/SkinManager_font.png)
+
+### Styles
+
+When using theme studio based themes, the appearance for each control or component can be customized using the `ThemeStyle` property.
+
+N> If the control name starts with **Sf**, you can access appearance properties using the `Style` property, and for the remaining controls, use the `ThemeStyle` property.
+
+For example, in the following code, different style of each control has been changed.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.treeViewAdv1.ThemeStyle.BackColor = System.Drawing.Color.White;
+this.treeViewAdv1.ThemeStyle.BorderColor = System.Drawing.Color.SteelBlue;
+this.treeViewAdv1.ThemeStyle.LineColor = System.Drawing.Color.DarkBlue;
+this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.ArrowColor = System.Drawing.Color.Aqua;
+this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.treeViewAdv1.ThemeStyle.BackColor = System.Drawing.Color.White
+Me.treeViewAdv1.ThemeStyle.BorderColor = System.Drawing.Color.SteelBlue
+Me.treeViewAdv1.ThemeStyle.LineColor = System.Drawing.Color.DarkBlue
+Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.ArrowColor = System.Drawing.Color.Aqua
+Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms SkinManager showing applied different style to the control](Getting-Started_images/SkinManager_style.png)
+
+### Overriding user customization when applying theme
+
+You can customize the appearance of control using the `Style` or `ThemeStyle` property when using theme studio based themes. Syncfusion control provides option whether theme can override style settings using the `CanOverrideStyle` property.
+
+For example, in the following code, TreeView fore color is customized, and theme is applied after that line. If you run the application, theme will not override the fore color settings since the default value of `CanOverrideStyle` is `false`. If you set the `CanOverrideStyle` property to `true` before setting the theme, then fore color setting will be overridden by theme.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.treeViewAdv1.CanOverrideStyle = false;
+this.treeViewAdv1.ThemeName = "Office2019Colorful";
+this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.treeViewAdv1.CanOverrideStyle = False
+Me.treeViewAdv1.ThemeName = "Office2019Colorful"
+Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms SkinManager shows Office2019 theme applied in control](Getting-Started_images/SkinManager_office2019.png)

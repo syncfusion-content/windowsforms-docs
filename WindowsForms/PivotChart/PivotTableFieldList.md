@@ -37,4 +37,4 @@ Me.panel.Controls.Add(Me.pivotTableFieldList1.PivotGrid
 
 {% endhighlight %}
 
-![](PivotTableFieldList_images/PivotTableFieldList_img1.png)
+![Windows forms pivotchart displays the chart with pivot table fields](PivotTableFieldList_images/PivotTableFieldList_img1.png)

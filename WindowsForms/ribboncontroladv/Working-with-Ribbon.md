@@ -76,21 +76,19 @@ The following code example illustrates how to set `RibbonDisplayOption` for the 
 
 {% highlight c# %}
 
-this.ribbonControlAdv1.RibbonDisplayOption = RibbonDisplayOption.ShowTabsAndCommands;
+this.ribbonControlAdv1.DisplayOption = RibbonDisplayOption.ShowTabsAndCommands;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.ribbonControlAdv1.RibbonDisplayOption = RibbonDisplayOption.ShowTabsAndCommands
+Me.ribbonControlAdv1.DisplayOption = RibbonDisplayOption.ShowTabsAndCommands
 
 {% endhighlight %}
 
 {% endtabs %}
 
 >NOTE
-
->
 
 >This property can be used to change the state of the Ribbon at the startup of application by setting in the Form Load.
 
@@ -186,6 +184,83 @@ Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
 {% endtabs %}
 
 ![Ribbon in Office2010 Collapse Behavior state](Working_with_Ribbon_Images/Working-with-Ribbon_img6.jpg)
+
+### ToolStripItem image support based on its display size
+
+On setting `CollapseBehavior` enumeration property to `Office2010`, initially the items inside the toolstrip will be reduced to small sized buttons. On further re-sizing, the items inside the toolstrip will be reduced to extra small sized buttons and finally the toolstrip will appear like a dropdown button. In-order to maintain the image quality, we support different sized images for different mode (large and small). Please follow the below steps to achieve the same.
+
+* Create an instance for the `ToolStripExImageProvider` which provides the image list for ToolStripItems.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//To add the images based on size mode.
+ToolStripExImageProvider toolStripExImageProvider = new ToolStripExImageProvider(toolStripEx1);
+
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim toolStripExImageProvider As ToolStripExImageProvider = New ToolStripExImageProvider(toolStripEx1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Assign `ImageListAdv` for large and small image list, which holds the images.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Assigning large and small image list for the ToolStripExImageProvider.
+toolStripExImageProvider.LargeImageList = imageListAdv1;
+toolStripExImageProvider.SmallImageList = imageListAdv2;
+
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+toolStripExImageProvider.LargeImageList = imageListAdv1
+toolStripExImageProvider.SmallImageList = imageListAdv2
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* Based on the large and small image list index, images will be assigned to ToolStripItems.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//To add the small icon for ToolStripItem
+toolStripExImageProvider.SetSmallItemImage(this.toolStripButton1, 1);
+
+//To add the large icon for ToolStripItem
+toolStripExImageProvider.SetLargeItemImage(this.toolStripButton1, 1);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+toolStripExImageProvider.SetSmallItemImage(Me.toolStripButton1, 1)
+toolStripExImageProvider.SetLargeItemImage(Me.toolStripButton1, 1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Large Image
+
+![Large image set for the ToolstripItems](Working_with_Ribbon_Images/large.png)
+
+Small Image
+
+![Large image set for the ToolstripItems](Working_with_Ribbon_Images/small.png)
 
 ## Launcher Button
 
