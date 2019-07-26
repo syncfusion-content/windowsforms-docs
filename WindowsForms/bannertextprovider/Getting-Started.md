@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: How to Create a banner text and access with other controls.
+title: Getting-Started with BannerTextProvider | WindowsForms | Syncfusion
+description: How to set banner text for control.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with it’s basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with it's basic functionalities.
 
 
 ## Assembly deployment
