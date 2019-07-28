@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create GradientPanelExt control in Windows Forms applocation.
+title: Getting Started | GradientPanelExt | WindowsForms | Syncfusion
+description: How to add GradientPanelExt control in Windows Forms applocation.
 platform: WindowsForms
 control: GradientPanelExt
 documentation: ug
@@ -95,7 +95,7 @@ gradientPanelExt.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.D
 gradientPanelExt.Size = new System.Drawing.Size(343, 128);
 gradientPanelExt.CornerRadius = 10;
 
-//First Label
+//Username Label
 Label label1 = new Label();
 label1.Location = new System.Drawing.Point(52, 29);
 label1.BackColor = System.Drawing.Color.Transparent;
@@ -103,7 +103,7 @@ label1.ForeColor = System.Drawing.Color.White;
 label1.Size = new System.Drawing.Size(58, 13);
 label1.Text = "Username:";
 
-//Second Label
+//Password Label
 Label label2 = new Label();
 label2.Location = new System.Drawing.Point(52, 60);
 label2.BackColor = System.Drawing.Color.Transparent;
@@ -111,20 +111,20 @@ label2.ForeColor = System.Drawing.Color.White;
 label2.Size = new System.Drawing.Size(58, 13);
 label2.Text = "Password:";
 
-//First TextBoxExt
+//Username TextBoxExt
 TextBoxExt textBoxExt1 = new TextBoxExt();
 textBoxExt1.Location = new System.Drawing.Point(113, 26);
 textBoxExt1.Size = new System.Drawing.Size(100, 20);
 textBoxExt1.Text = "David carter";
 
-//Second TextBoxExt
+//Password TextBoxExt
 TextBoxExt textBoxExt2 = new TextBoxExt();
 textBoxExt2.Location = new System.Drawing.Point(113, 57);
 textBoxExt2.PasswordChar = '*';
 textBoxExt2.Size = new System.Drawing.Size(100, 20);
 textBoxExt2.Text = "Welcome";
 
-//textPrimitive1
+//Login title
 TextPrimitive textPrimitive1 = new TextPrimitive();
 textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Top;
 textPrimitive1.BorderColor = System.Drawing.Color.Transparent;
@@ -132,7 +132,7 @@ textPrimitive1.Size = new System.Drawing.Size(50, 20);
 textPrimitive1.Text = "Login";
 textPrimitive1.TextColor = System.Drawing.Color.White;
 
-// textPrimitive2
+// Ok button
 TextPrimitive textPrimitive2 = new TextPrimitive();
 textPrimitive2.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
 textPrimitive2.BackColor = System.Drawing.Color.White;
@@ -141,7 +141,7 @@ textPrimitive2.Size = new System.Drawing.Size(40, 20);
 textPrimitive2.Text = "Ok";
 textPrimitive2.TextColor = System.Drawing.Color.Black;
             
-// textPrimitive3
+// Cancel button
 TextPrimitive textPrimitive3 = new TextPrimitive();
 textPrimitive3.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom;
 textPrimitive3.BackColor = System.Drawing.Color.White;
@@ -171,7 +171,7 @@ gradientPanelExt.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.D
 gradientPanelExt.Size = New System.Drawing.Size(343, 128)
 gradientPanelExt.CornerRadius = 10
 
-'First Label
+'Username Label
 Dim label1 As New Label()
 label1.Location = New System.Drawing.Point(52, 29)
 label1.BackColor = System.Drawing.Color.Transparent
@@ -179,7 +179,7 @@ label1.ForeColor = System.Drawing.Color.White
 label1.Size = New System.Drawing.Size(58, 13)
 label1.Text = "Username:"
 
-'Second Label
+'Password Label
 Dim label2 As New Label()
 label2.Location = New System.Drawing.Point(52, 60)
 label2.BackColor = System.Drawing.Color.Transparent
@@ -187,20 +187,20 @@ label2.ForeColor = System.Drawing.Color.White
 label2.Size = New System.Drawing.Size(58, 13)
 label2.Text = "Password:"
 
-'First TextBoxExt
+'Username TextBoxExt
 Dim textBoxExt1 As New TextBoxExt()
 textBoxExt1.Location = New System.Drawing.Point(113, 26)
 textBoxExt1.Size = New System.Drawing.Size(100, 20)
 textBoxExt1.Text = "David carter"
 
-'Second TextBoxExt
+'Password TextBoxExt
 Dim textBoxExt2 As New TextBoxExt()
 textBoxExt2.Location = New System.Drawing.Point(113, 57)
 textBoxExt2.PasswordChar = "*"c
 textBoxExt2.Size = New System.Drawing.Size(100, 20)
 textBoxExt2.Text = "Welcome"
 
-'textPrimitive1
+'Title
 Dim textPrimitive1 As New TextPrimitive()
 textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Top
 textPrimitive1.BorderColor = System.Drawing.Color.Transparent
@@ -208,7 +208,7 @@ textPrimitive1.Size = New System.Drawing.Size(50, 20)
 textPrimitive1.Text = "Login"
 textPrimitive1.TextColor = System.Drawing.Color.White
 
-' textPrimitive2
+'Ok button
 Dim textPrimitive2 As New TextPrimitive()
 textPrimitive2.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
 textPrimitive2.BackColor = System.Drawing.Color.White
@@ -217,7 +217,7 @@ textPrimitive2.Size = New System.Drawing.Size(40, 20)
 textPrimitive2.Text = "Ok"
 textPrimitive2.TextColor = System.Drawing.Color.Black
 
-' textPrimitive3
+'Cancel button
 Dim textPrimitive3 As New TextPrimitive()
 textPrimitive3.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Bottom
 textPrimitive3.BackColor = System.Drawing.Color.White
