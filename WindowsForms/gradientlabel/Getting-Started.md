@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create GradientLabel control in Windows Forms application.
+title: Getting Started | GradientLabel | WindowsForms | Syncfusion
+description: How to add GradientLabel control in Windows Forms application.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug
