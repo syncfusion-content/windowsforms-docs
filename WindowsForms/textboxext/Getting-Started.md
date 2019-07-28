@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create TextBoxExt control in Windows Forms application
+title: Getting Started | TextBoxExt | WindowsForms | Syncfusion
+description: How to add TextBoxExt control in Windows Forms application
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -108,7 +108,7 @@ The TextBoxExt control can be customized to display multiline text using the fol
 
 * Multiline - The text of the edit control can span more than one line.
 * WordWrap - Indicates if lines are automatically word-wrapped for multiline edit controls.
-* ScrollBars - Indicates for multiline controls, which scrollbar will be shown for this control. The options are Horizontal, Vertical, both and None.
+* ScrollBars - Enables scrollbars when text overflows the size of the tet box. The options available are Horizontal, Vertical, both and None.
 
 {% tabs %}
 
