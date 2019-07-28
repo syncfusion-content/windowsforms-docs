@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create NumericUpDownExt control in Windows Forms application.
+title: Getting Started | NumericUpDown | WindowsForms | Syncfusion
+description: How to add NumericUpDownExt control in Windows Forms application.
 platform: WindowsForms
 control: NumericUpDownExt
 documentation: ug
@@ -78,23 +78,6 @@ private Syncfusion.Windows.Forms.Tools.NumericUpDownExt numericUpDownExt1;
 this.numericUpDownExt1 = new Syncfusion.Windows.Forms.Tools.NumericUpDownExt();
 this.Controls.Add(this.numericUpDownExt1);
 
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
-Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
-Me.Controls.Add(Me.numericUpDownExt1)
-
-{% endhighlight %}
-{% endtabs %}
-
-
-5) Set the following properties of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control.
-
-{% tabs %}
-{% highlight c# %}
-
 this.numericUpDownExt1.Location = new System.Drawing.Point(70, 29);
 this.numericUpDownExt1.Name = "numericUpDownExt1";
 this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
@@ -102,6 +85,10 @@ this.numericUpDownExt1.Size = new System.Drawing.Size(84, 20);
 {% endhighlight %}
 
 {% highlight vb %}
+
+Private numericUpDownExt1 As Syncfusion.Windows.Forms.Tools.NumericUpDownExt
+Me.numericUpDownExt1 = New Syncfusion.Windows.Forms.Tools.NumericUpDownExt()
+Me.Controls.Add(Me.numericUpDownExt1)
 
 Me.numericUpDownExt1.Location = New System.Drawing.Point(70, 29)
 Me.numericUpDownExt1.Name = "numericUpDownExt1"
@@ -136,7 +123,7 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 ## Value settings
 
-The **NumericUpDownExt** provides the following properties to set the values with integer value. The properties are Value, Hexadecimal, Minimum and Increment.
+The **NumericUpDownExt** provides the following properties to control the integer value.
 
 * [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Value.html) - Set the value assigned to the spin box.
 * [Hexadecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Hexadecimal.html) - The value indicating whether the spin box should display the value its contains in hexadecimal format.
