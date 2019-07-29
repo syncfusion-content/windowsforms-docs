@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MultiColumn Dropdown | AutoComplete Component for Windows Forms | Syncfusion
+title: MultiColumn Dropdown | Syncfusion
 description: This section explains about how to interact with multiple columns.
 platform: WindowsForms
 control: AutoComplete

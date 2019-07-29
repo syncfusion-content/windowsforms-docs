@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with AutoComplete component for Windows Forms | Syncfusion
+title: Getting Started with AutoComplete| Syncfusion
 description: This section explains how to add auto complete functionality to any editor control using the AutoComplete component.
 platform: WindowsForms
 control: AutoComplete

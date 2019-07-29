@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with AutoComplete | AutoComplete component for Windows Forms | Syncfusion
+title: Working with AutoComplete | Syncfusion
 description: This section explains about working with various options in AutoComplete.
 platform: WindowsForms
 control: AutoComplete
@@ -252,7 +252,7 @@ The current selected item can be removed from auto complete popup when the `Dele
 
 ### Deleting history
 
-The history items persisted by the AutoComplete component can be deleted by invoking the [ResetHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ResetHistory.html) method. The entitre history list in the AutoComplete popup will be deleted.
+The history items persisted by the AutoComplete component can be deleted by invoking the [ResetHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ResetHistory.html) method. The entire history list in the AutoComplete popup will be deleted.
 
 {% tabs %}
 
@@ -302,13 +302,13 @@ If MS ComboBox is used as editor control, the Combobox dropdown can be suppresse
 
 The auto-complete functionality can be added to the RichTextBox control. The following steps are used to integrate the RichTextBox with the AutoComplete component:
 
-1. Implement the `IEditControlsEmbed` interface in a CutomRichTextBox class that enables the AutoComplete functionality for the RichTextBox control.
+1. Implement the `IEditControlsEmbed` interface in a CustomRichTextBox class that enables the AutoComplete functionality for the RichTextBox control.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    public class CutomRichTextBox : System.Windows.Forms.RichTextBox, IEditControlsEmbed
+    public class CustomRichTextBox : System.Windows.Forms.RichTextBox, IEditControlsEmbed
 
      {
            // Returns the active RichTextBox control.
@@ -322,7 +322,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 
 {% highlight VB %}
 
-    Public Class CutomRichTextBox Inherits System.Windows.Forms.RichTextBox Implements IEditControlsEmbed
+    Public Class CustomRichTextBox Inherits System.Windows.Forms.RichTextBox Implements IEditControlsEmbed
 
      ' Returns the active RichTextBox control.
      Public Function GetActiveEditControl(ByVal listener As IEditControlsEmbedListener) As Control
@@ -337,7 +337,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 
 {% endtabs %}
 
-2. Create an instance for the CutomRichTextBox class and the AutoComplete component. Then, use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method of AutoComplete component to enable auto-complete support for the RichTextBox control.
+2. Create an instance for the CustomRichTextBox class and the AutoComplete component. Then, use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method of AutoComplete component to enable auto-complete support for the RichTextBox control.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 
     Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1= new Syncfusion.Windows.Forms.Tools.AutoComplete();
 
-    CutomRichTextBox richTextBox1= new CutomRichTextBox();
+    CustomRichTextBox richTextBox1= new CustomRichTextBox();
     
     autoComplete1.SetAutoComplete(richTextBox1, Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
 
@@ -355,7 +355,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 
     Dim autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete = New Syncfusion.Windows.Forms.Tools.AutoComplete 
 
-    Dim richTextBox1 As CutomRichTextBox = New CutomRichTextBox
+    Dim richTextBox1 As CustomRichTextBox = New CustomRichTextBox
 
     autoComplete1.SetAutoComplete(richTextBox1, AutoCompleteModes.AutoSuggest)
 

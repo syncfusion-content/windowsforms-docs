@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataSource | AutoComplete Component for Windows Forms | Syncfusion
+title: DataSource | Syncfusion
 description: This section explains about the datasource in AutoComplete
 platform: WindowsForms
 control: AutoComplete
@@ -60,7 +60,7 @@ The different built-in source (FileSystem, HistoryList, AllUrl, etc) can be set 
 
 <table>
 <tr>
-<th>Inbuilt DataSource Support.</th>
+<th>Built-in DataSource Support.</th>
 <th>Description </th>
 </tr>
 <tr>

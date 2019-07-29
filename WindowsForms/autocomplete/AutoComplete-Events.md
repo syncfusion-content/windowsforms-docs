@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoComplete Events | AutoComplete Component for Windows Forms | Syncfusion
+title: AutoComplete Events | Syncfusion
 description: This section explains about the event in AutoComplete
 platform: WindowsForms
 control: AutoComplete
