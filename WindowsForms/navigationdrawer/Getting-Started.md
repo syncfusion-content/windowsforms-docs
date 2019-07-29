@@ -183,7 +183,7 @@ Me.navigationDrawer1.Position = Position.Left
  
  ## Setting image to an item
 
- The NavigationDrawer allows setting image to each menu item using `Image` property.
+ The `NavigationDrawer` allows setting image to each menu item using `Image` property.
 
 {% tabs %}
 {% highlight C# %}
