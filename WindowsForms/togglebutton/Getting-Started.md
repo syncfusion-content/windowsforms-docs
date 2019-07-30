@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started 
+description: Steps to add ToggleButton in WinForms application
 platform: WindowsForms
 control: ToggleButton 
 documentation: ug
@@ -20,36 +20,38 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a ToggleButton control through designer
 
-The **"ToggleButton"** control can be added through designer by following steps.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ToggleButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
-**Step 1**: Create a new Windows Forms application in Visual Studio.
-
-**Step 2**: The **"ToggleButton"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
-
-* Syncfusion.Tools.Windows
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
-![Drag and drop togglebutton from toolbox](Getting-Started_images/Getting-Started_img1.png)
+![Drag and drop ToggleButton from toolbox](Getting-Started_images/Getting-Started_dragdropimage.png)
+
+![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/Getting-Started_reference.png)
+
+**Step 2**: You can customize the properties of ToggleButton using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the ToggleButton as shown as follows.
+
+![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/ToggleButton_designercustomization.png)
+
+**Step 3**:Run the application and the following output will be shown.
+
+![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButton_throughdesigner1.png)
 
 
 ## Adding a ToggleButton control through code
 
-**Step 1**: Create a C# or VB application through Visual Studio.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.
 
-**Step 2**: Add the following required assembly reference to the project.
-
-* Syncfusion.Tools.Windows
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
 * Syncfusion.Shared.Base
 * Syncfusion.Shared.Windows
 * Syncfusion.Tools.Base
-
-**Step 3**: Include the required namespace.
+* Syncfusion.Tools.Windows
 
 {% tabs %}
 
@@ -66,33 +68,48 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+
+![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
    
-**Step 4**: Create an instance of **"ToggleButton"** control and add it to the Form.
+**Step 2**:  In Form1.cs, create an instance of **"ToggleButton"** control and add in to the form. Also you can customize the ToggleButton properties using the following code.
 
 {% tabs %}
+
 {% highlight c# %}
 
-ToggleButton togglebutton1;
-this.togglebutton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-this.Controls.Add(togglebutton1);
+ public Form1()
+ {
+            
+            InitializeComponent();
+            ToggleButton toggleButton = new ToggleButton();
+            toggleButton.Location = new System.Drawing.Point(283, 178);
+            toggleButton.Name = "toggleButton1";
+            toggleButton.Size = new System.Drawing.Size(100, 40);
+            toggleButton.ThemeName = "Office2019Colorful";
+            this.Controls.Add(toggleButton);
+}
+
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim togglebutton1 As Syncfusion.Windows.Forms.Tools.ToggleButton
-Me.ToggleButton1 = New Syncfusion.Windows.Forms.Tools.ToggleButton()
-Me.Controls.Add(togglebutton1)
+Public Sub New()
+
+    InitializeComponent()
+    Dim toggleButton As ToggleButton = New ToggleButton()
+    toggleButton.Location = New System.Drawing.Point(283, 178)
+    toggleButton.Name = "toggleButton1"
+    toggleButton.Size = New System.Drawing.Size(100, 40)
+    toggleButton.ThemeName = "Office2019Colorful"
+    Me.Controls.Add(toggleButton)
+
+End Sub
 
 {% endhighlight %}
+
 {% endtabs %}
 
+**Step 3**: Run the application and the following output will be shown.
 
-
-### Configuring the ToggleButton
-
-The most commonly used settings of the **"ToggleButton"** control can be configured either through designer via smart tag or through Properties window or through code behind.
-
-The following screenshot illustrates the **"ToggleButton"** control customization through smart tag.
-
-![togglebutton customization through smart tag](Getting-Started_images/Getting-Started_img2.png)
+![Windows form ToggleButton through code](Getting-Started_images/ToggleButton_throughdesigner1.png)
