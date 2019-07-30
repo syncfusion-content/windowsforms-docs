@@ -227,9 +227,9 @@ The following screenshot illustrates the HalfCircle Frame of RadialGauge,
 
 Frame of the RadialGauge will be a Full circle and the color which is specified in the `FillColor` will fill the frame as indication of the current value of the gauge. Start and SweepAngle of the RadialGauge is changeable and the Gauge will be rendered based on the value of Start and SweepAngle. Default value of the Start and SweepAngle will be 0 and 360.  Filling of color towards current value will be start from the angle specified in the `StartAngle`. Font settings of the Value label can be changed using `GaugeValueFont` of RadialGauge. 
 
-`ArcThickness` property is used to specify the thickness of the frame. For Fill type of Frame, default value of the `ArcThickness` is 20.
+The `ArcThickness` property is used to specify the thickness of the frame. For fill type frame, the default value of the `ArcThickness` is 20.
 
-Needle and Tick marks are not supported for this type of Frame. Hence, following properties are not applicable and does not have any effect.
+Needle and tick marks are not supported for fill type frame. Hence, the following properties are not applicable and do not have any effect:
 
 * ShowBackgroundFrame
 * BackgroundGradientStartColor
