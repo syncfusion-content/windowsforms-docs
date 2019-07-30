@@ -99,6 +99,8 @@ The following code snippet shows how to update the AutoComplete modes.
 
 N> The values are filtered from the column which is set as matching column for auto complete. By default, the [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MatchingColumn.html) value is `true` for the first column of binding source.
 
+A sample that demonstrates the AutoComplete mode is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/AutoComplete%20Modes)
+
 ## Case sensitivity
 
 Specifies whether to ignore case for string comparison. It can be enabled by setting the [CaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~CaseSensitive.html) property to `true`. The default value of this property is `true`.
@@ -298,6 +300,8 @@ If MS ComboBox is used as editor control, the Combobox dropdown can be suppresse
 
 ![Windows Forms AutoComplete Integration with MS Combobox](WorkingwithAutoComplete_images/AutoComplete_Overridecombo.png)
 
+A sample that demonstrates the above feature is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/OverrideCombo)
+
 ## Integration with RichTextBox control
 
 The auto-complete functionality can be added to the RichTextBox control. The following steps are used to integrate the RichTextBox with the AutoComplete component:
@@ -364,6 +368,8 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 {% endtabs %}
 
 ![Windows Forms AutoComplete integration with Richtextbox](WorkingwithAutoComplete_images/AutoComplete_Richtextbox.png)
+
+A sample that demonstrates the integration with RichTextBox control is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/RichTextBox%20Integration)
 
 ## Opening the AutoComplete popup programmatically
 

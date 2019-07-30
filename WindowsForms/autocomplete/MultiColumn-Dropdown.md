@@ -71,6 +71,7 @@ this.autoComplete1.Columns.Add(this.autoCompleteDataColumnInfo2);
 this.autoComplete1.Columns.Add(this.autoCompleteDataColumnInfo1);
 
 // Add Images in the image list and set to this property.
+
 this.autoComplete1.ImageList = this.imageList;
 
 this.autoComplete1.AddHistoryItem("USA", 0);
@@ -107,3 +108,4 @@ Me.autoComplete1.AddHistoryItem("China", 1)
 
 ![Winforms AutoComplete setting images in item lost](MultiColumnDropdown_images/AutoComplete_Imagesetting.png)
 
+A sample that demonstrates showing image in a column using data table is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/ImageSettings).

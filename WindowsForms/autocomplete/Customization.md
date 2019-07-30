@@ -527,3 +527,4 @@ Me.autoComplete1.LoadCurrentState(aser)
 
 {% endtabs %}
 
+A sample that demonstrates the Persistence features is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/Persistence)

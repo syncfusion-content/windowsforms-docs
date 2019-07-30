@@ -161,3 +161,4 @@ The different custom collections that can be bound to the [DataSource](https://h
 * Generic Collections
 * DataTable
 
+A sample that demonstrates the binding of various data source is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/DataSourceBinding) 
