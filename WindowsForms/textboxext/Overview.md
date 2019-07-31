@@ -13,22 +13,20 @@ TextBoxExt is a textbox derived control that can display different border color
 
 ![Overview of Syncfusion TextBoxExt](TextBoxExt_images/TextBoxExt_img1.png)
 
+## Key features
 
+The TextBoxExt is an advanced TextBox control, and it contains the following features:
 
-## Key Features
+**Text Settings** - Provides options to set selection, format, clip, and alignment of the text. The multiline text can be displayed using the control.
 
-TextBoxExt is an advanced TextBox control and has following features.
-
-**Text Settings** - Provides option to set the selection, format, clip, alignment of the text. The multiline text can be displayed using the control.
-
-**ToolTip** - Provides options to show text overflow indicators and overflow indicator tooltips.
+**ToolTip** - Provides options to show the text overflow indicators and overflow indicator tooltips.
 
 **Appearance Settings** - Provides support to set the background and foreground of the control.
 
-**Behavior Settings** - Provides option to set the maximum length of the text. Text can be displayed in the ReadOnly mode using the ReadOnly property.
+**Behavior Settings** - Provides options to set the maximum length of the text. The text can be displayed in the ReadOnly mode using the `ReadOnly` property.
 
-**Border Settings** - Provides different set of border styles. The styles are Fixed3D, FixedSingle and None. The color of the border can also be set for the control using the BorderColor property.
+**Border Settings** - Provides different set of border styles. The styles are Fixed3D, FixedSingle, and None. The color of the border can also be set for the control using the `BorderColor` property.
 
-**Layout Settings** - Provides option to set the maximum and minimum size of the control.
+**Layout Settings** - Provides options to set the maximum and minimum sizes of the control.
 
 **Applying Themes** - Provides support to different themes for the control.
