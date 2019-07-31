@@ -59,21 +59,23 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% highlight C# %}
 
-private Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
-this.textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
-this.Controls.Add(this.textBoxExt1);
+TextBoxExt textBoxExt1 = new TextBoxExt();
+textBoxExt1.Text = "textboxext1";
+this.Controls.Add(textBoxExt1);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-Me.textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
-Me.Controls.Add(Me.textBoxExt1)
+Dim textBoxExt1 As New TextBoxExt()
+textBoxExt1.Text = "textboxext1"
+Me.Controls.Add(textBoxExt1)
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Show the text in WPF TextBoxExt](Creating-TextBoxExt_images/TextBoxExt_control.png)
 
 ## Size
 
@@ -86,15 +88,15 @@ The size to the TextBoxExt control can be applied using the following properties
 
 {% highlight C# %}
 
-this.textBoxExt1.MinimumSize = new System.Drawing.Size(267, 104);
-this.textBoxExt1.MaximumSize = new System.Drawing.Size(267, 104);
+textBoxExt1.MinimumSize = new System.Drawing.Size(267, 104);
+textBoxExt1.MaximumSize = new System.Drawing.Size(267, 104);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.MaximumSize = New System.Drawing.Size(267, 104)
-Me.textBoxExt1.MinimumSize = New System.Drawing.Size(267, 104)
+textBoxExt1.MaximumSize = New System.Drawing.Size(267, 104)
+textBoxExt1.MinimumSize = New System.Drawing.Size(267, 104)
 
 {% endhighlight %}
 
@@ -114,17 +116,17 @@ The TextBoxExt control can be customized to display multiline text using the fol
 
 {% highlight C# %}
 
-this.textBoxExt1.Multiline = true;
-this.textBoxExt1.WordWrap = true;
-this.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+textBoxExt1.Multiline = true;
+textBoxExt1.WordWrap = true;
+textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.Multiline = True
-Me.textBoxExt1.WordWrap = True
-Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+textBoxExt1.Multiline = True
+textBoxExt1.WordWrap = True
+textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 {% endhighlight %}
 
