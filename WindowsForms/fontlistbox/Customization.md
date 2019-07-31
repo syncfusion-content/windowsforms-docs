@@ -1,7 +1,7 @@
 ---
 layout: post
 title: customization | FontListBox |  WindowsForms | Syncfusion
-description: How to customize the item selection, scrollbar and sorting in control.
+description: How to customize the item selection, scrollbar, and sorting in control.
 platform: WindowsForms
 control: FontListBox
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 ## Selection Mode
 
-At run time, the items in the FontListBox can be selected, based on the selection mode specified in [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse as well as using keyboard. 
+At run time, the items in the FontListBox can be selected based on the selection mode specified in the [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
 
-The options are,
+The FontListBox contains the following options:
 
 * one
 * MultiSimple 
-* MultiExtended.
+* MultiExtended
 
 {% tabs %}
 {% highlight c# %}
@@ -31,14 +31,13 @@ Me.fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms FontListBox showing different selection modes](Overview_images/FontListBox_selectionmode.jpeg) 
- 
- 
-## ScrollBar Settings
+![Windows Forms FontListBox showing different selection modes](Overview_images/FontListBox_selectionmode.jpeg) 
 
-The [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control by default has a vertical scrollbar. It can also have a horizontal scrollbar. This section will discuss the properties which sets the scrollbar for the control.
+## ScrollBar settings
 
-### Horizontal Scrollbar
+By default, the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control has a vertical scrollbar. It can also contain a horizontal scrollbar. This section explains the properties that sets the scrollbar to the control.
+
+### Horizontal scrollbar
 
 The [HorizontalScrollbar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.horizontalscrollbar?view=netframework-4.8) can be displayed if the items are beyond the right edge of the FontListBox.
 
@@ -54,7 +53,7 @@ Sets the horizontal scrollbar for the control if the item exceeds beyond the rig
 <tr>
 <td>
 HorizontalExtent</td><td>
-Specifies the width of the control, when HorizontalScrollBar property is set to true.</td></tr>
+Specifies the width of the control when the HorizontalScrollBar property is set to true.</td></tr>
 </table>
 
 {% tabs %}
@@ -73,11 +72,11 @@ Me.fontListBox1.HorizontalScrollbar = True
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms FontListBox showing horizontal scrollbar](Customization_images/FontListBox_scrollbar.png) 
+![Windows Forms FontListBox shows horizontal scrollbar](Customization_images/FontListBox_scrollbar.png)
 
 {% seealso %}
 
-[How to display the scrollbars always, irrespective of the number of items?](/windowsforms/fontlistbox/faq/how-to-display-the-scrollbars-always-irrespective-of-the-number-of-items)
+[How to display the scrollbars always irrespective of the number of items?](/windowsforms/fontlistbox/faq/how-to-display-the-scrollbars-always-irrespective-of-the-number-of-items)
 
 {% endseealso %}
 
@@ -101,11 +100,11 @@ Me.fontListBox1.ItemHeight = 20
 {% endhighlight %}
 {% endtabs %} 
 
- ![Windows Forms FontListBox showing reduced height of listbox](Customization_images/FontListBox_height.png) 
+![Windows Forms FontListBox showing reduced height of listbox](Customization_images/FontListBox_height.png) 
 
 ### Sorting
 
-Sorting of the items can be enabled using [Sorted](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.sorted?view=netframework-4.8) property. By default it is false.
+Sorting of the items can be enabled using the [Sorted](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.sorted?view=netframework-4.8) property. By default, the value of this property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,9 +120,9 @@ Me.fontListBox1.Sorted = True
 {% endhighlight %}
 {% endtabs %}
 
-### AutoCompleting the Items
+### AutoCompleting the items
 
-The **FontListBox** control has the ability to auto complete the items as we type in the listbox. This feature is enabled using [UseAutoComplete](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox~UseAutoComplete.html) property to true.
+The **FontListBox** control has the ability to auto complete the items as you type in the list box. This feature is enabled by setting the [UseAutoComplete](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox~UseAutoComplete.html) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -141,9 +140,9 @@ Me.fontListBox1.UseAutoComplete = True
 
 ## Events
 
-SelectedIndexChanged event - This event is raised when the ListBox.SelectedIndex property is changed. 
+The SelectedIndexChanged event occurs when the ListBox.SelectedIndex property is changed.
 
-The below code snippet, lets you set the selected font style, for a label, on selecting through a FontListBox, using [SelectedIndexChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectedindexchanged?redirectedfrom=MSDN&view=netframework-4.8) event.
+The following code snippet allows you to set a selected font style for a label on selecting through a FontListBox using the [SelectedIndexChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectedindexchanged?redirectedfrom=MSDN&view=netframework-4.8) event.
 
 {% tabs %}
 {% highlight c# %}
