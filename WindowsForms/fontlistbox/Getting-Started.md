@@ -21,9 +21,9 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 The FontListBox control can be added via designer using the following steps:
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. Add the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) Add the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -38,9 +38,9 @@ The FontListBox control can be added via designer using the following steps:
 
 The following steps describe how to create a FontListBox control programmatically:
 
-1. Create C# or VB application via Visual Studio.
+1) Create C# or VB application via Visual Studio.
 
-2. Add the following assembly references to the project:
+2) Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -49,7 +49,7 @@ The following steps describe how to create a FontListBox control programmaticall
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form.
+4) Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form.
 
 {% tabs %}
 
