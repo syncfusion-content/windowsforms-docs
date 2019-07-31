@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | NumericUpDown | WindowsForms | Syncfusion
-description: How to add NumericUpDownExt control in Windows Forms application.
+description: How to add the NumericUpDownExt control in a Windows Forms application.
 platform: WindowsForms
 control: NumericUpDownExt
 documentation: ug
@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio, and add the **NumericUpDownExt** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **NumericUpDownExt** control with its basic functionalities.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#numericupdownext) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#numericupdownext) section to get the list of assemblies or the details of NuGet package that need to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
 ## Adding the NumericUpDownExt control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2. Add the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -30,19 +30,19 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-   ![Drag and drop NumericUpDownExt from toolbox](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
+![Drag and drop NumericUpDownExt from toolbox](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img1.png)
 
-3) The **NumericUpDownExt** will allow you to display numeric values by clicking on the up and down buttons.
+The **NumericUpDownExt** allows you to display numeric values by clicking the up and down buttons.
 
-   ![Windows Forms NumericUpDownExt showing numeric values](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
+![Windows Forms NumericUpDownExt showing numeric values](Creating-NumericUpDownExt_images/Creating-NumericUpDownExt_img2.png)
 
 ## Adding the NumericUpDownExt control via code
 
-The following steps illustrate how to create an NumericUpDownExt control programmatically.
+The following steps describe how to create a NumericUpDownExt control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project.
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ The following steps illustrate how to create an NumericUpDownExt control program
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control and add it to the form.
+4. Create an instance of the [NumericUpDownExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExt.html) control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ Me.numericUpDownExt1.Size = New System.Drawing.Size(84, 20)
 
 ## Display settings
 
-The **NumericUpDownExt** provides the following properties to set the display characteristics associated with the integer value. The properties are [DecimalPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~DecimalPlaces.html) and [ThousandsSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~ThousandsSeparator.html).
+The **NumericUpDownExt** provides the [DecimalPlaces](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~DecimalPlaces.html) and [ThousandsSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~ThousandsSeparator.html) properties to set the display characteristics associated with the integer value.
 
 {% tabs %}
 
@@ -119,16 +119,16 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 
 {% endtabs %}
 
-![Windows Forms showing display settings of the control](Display-Settings_images/Display-Settings_img1.png)
+![Windows Forms shows display settings of the control](Display-Settings_images/Display-Settings_img1.png)
 
 ## Value settings
 
-The **NumericUpDownExt** provides the following properties to control the integer value.
+The **NumericUpDownExt** provides the following properties to control the integer value:
 
-* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Value.html) - Set the value assigned to the spin box.
-* [Hexadecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Hexadecimal.html) - The value indicating whether the spin box should display the value its contains in hexadecimal format.
-* [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Minimum.html) - Set the minimum allowed value to the spin box.
-* [Increment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Increment.html) - The value to increment or decrement the spin box when the up or down buttons are clicked. The default value is set to 1.
+* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Value.html) - Sets the value assigned to the spin box.
+* [Hexadecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Hexadecimal.html) - Indicates whether the spin box should display the value it contains in hexadecimal format.
+* [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Minimum.html) - Sets the minimum allowed value to the spin box.
+* [Increment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NumericUpDownExtActionList~Increment.html) - Increments or decrements the spin box when the up and down buttons are clicked. The default value is set to 1.
 
 {% tabs %}
 
