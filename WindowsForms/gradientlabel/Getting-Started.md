@@ -21,9 +21,9 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 The following steps describe how to create a **GradientLabel** control via designer:
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. Add the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
+2) Add the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -38,9 +38,9 @@ The following steps describe how to create a **GradientLabel** control via desig
 
 The following steps describe how to create the **GradientLabel** control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following assembly references to the project:
+2) Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -49,7 +49,7 @@ The following steps describe how to create the **GradientLabel** control program
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control, and add it to the form.
+4) Create an instance of the [GradientLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.GradientLabel.html) control, and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
