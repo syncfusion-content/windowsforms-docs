@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabSelection | TabbedForm | WindowsForms | Syncfusion
+title: Tab Selection | Tabbed Form | WinForms | Syncfusion
 description: This section explains about programmatic selection of tab in SfTabbedForm.
 platform: WindowsForms
 control: SfTabbedForm
