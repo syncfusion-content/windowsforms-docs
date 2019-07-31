@@ -15,22 +15,22 @@ The NumericUpDownExt control enables XP Themes look and feel for the UpDown co
 
 ## Key Features
 
-NumericUpDownExt is an advanced NumericUpdown control and has the following features.
+The NumericUpDownExt is an advanced NumericUpdown control, and it contains the following features:
 
-**Value Settings** - Provide options to set the value to be displayed by the NumericUpDownExt control and increment or decrement the value.
+**Value settings** - Provides options to set the value to be displayed by the NumericUpDownExt control and increments or decrements the value.
 
-**Display Settings** - Provide options to set the decimal places with integer to the control.
+**Display settings** - Provides options to set the decimal places with integer to the control.
 
-**Appearance Settings** - Supports to set the background and foreground color of the control. The foreground color can be set separately for the negative values of the control.
+**Appearance settings** - Supports to set the background and foreground color of the control. The foreground color can be set separately for the negative values of the control.
 
-**Behavior Settings** - The InterceptArrowKeys property allows the user to change values using the up and down arrow keys apart from the standard up and down buttons.
+**Behavior settings** - The `InterceptArrowKeys` property allows users to change values using the up and down arrow key apart from the standard up and down buttons.
 
-**Alignment Settings** - Provide options to align the text of the control to the Left, Right and Center. It supports also align the up and down buttons to Left and RIght.
+**Alignment settings** - Provides options to align the text of the control to the left, right or center. It also supports to align the up and down buttons to the left and right.
 
-**Border Settings** - Provides different sets of border styles to the control. The styles are FixedSingle, Fixed3D and None. It also have an another unique feature, themed border can be provided for the control using the ThemedBorder property.
+**Border settings** - Provides different sets of border styles to the control. The styles are FixedSingle, Fixed3D, and None. Themed border can be provided to the control using the `ThemedBorder` property.
 
-**Layout Settings** - Provide options to set the maximum and minimum size of the control.
+**Layout settings** - Provides options to set the maximum and minimum sizes of the control.
 
-**Key Support** - Provides support for entering the large values by using keyboard.
+**Key support** - Provides support for entering the large values using keyboard.
 
-**Themes and Visual Styles** - Supports set of visual styles to customize the look and feel of the control.
+**Themes and visual styles** - Supports a set of visual styles to customize the look and feel of the control.
