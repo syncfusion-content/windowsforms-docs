@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create MaskedEditBox control in Windows Forms application.
+title: Getting Started | Masked Edit | WindowsForms | Syncfusion
+description: How to add MaskedEditBox control in Windows Forms application.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
