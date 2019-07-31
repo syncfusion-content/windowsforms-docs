@@ -32,7 +32,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ![Windows Forms TabbedMDI drag and drop from toolbox](GettingStarted_images/Search.png)
 
-As soon as the control is dropped, the Form1’s `IsMDIContainer` property will be set to `true` and it changes to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
+As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it changes to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
 
 ![Windows Forms TabbedMDI added into the form](GettingStarted_images/ControlAdded.png)
  
@@ -139,7 +139,7 @@ form1.Show()
 
 The following screenshot illustrates new form will be tabbed inside form1.
 
-![Windows Forms TabbedMDI showing added Tab into the form](GettingStarted_images/TabbedMDIManager.png)
+![Windows Forms TabbedMDI with forms added as its child](GettingStarted_images/TabbedMDIManager.png)
 
 ## Create tab group
 
@@ -186,7 +186,7 @@ Me.tabbedMDIManager.CreateNewHorizontalGroup()
 
 {% endtabs %}
 
-![Horizontal tab group created](GettingStarted_images/TabGroupHorizontal.png)
+![Horizontal tab group created in Tabbed MDI Manager](GettingStarted_images/TabGroupHorizontal.png)
 
 [CreateNewVerticalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CreateNewVerticalGroup.html) function helps to create a new tab group vertically in TabbedMDIManager. 
 
@@ -228,4 +228,4 @@ Me.tabbedMDIManager.CreateNewVerticalGroup()
 
 {% endtabs %}
 
-![Vertical tab group created](GettingStarted_images/TabGroupVertical.png)
+![Vertical tab group created in Tabbed MDI Manager](GettingStarted_images/TabGroupVertical.png)
