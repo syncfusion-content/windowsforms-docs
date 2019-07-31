@@ -1,52 +1,53 @@
 ---
 layout: post
 title: Getting Started | GradientPanelExt | WindowsForms | Syncfusion
-description: How to add GradientPanelExt control in Windows Forms applocation.
+description: How to add GradientPanelExt control in a Windows Forms applocation
 platform: WindowsForms
 control: GradientPanelExt
 documentation: ug
 ---
+
 # Getting Started
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio, and add the **GradientPanelExt** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **GradientPanelExt** control with its basic functionalities.
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gradientpanelext) section to get the list of assemblies or the details of NuGet package that need to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
 ## Adding the GradientPanelExt control via designer
 
-The following steps describe how to create the **GradientPanelExt** control via the designer.
+The following steps describe how to create the **GradientPanelExt** control via designer.
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2. Add the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
 ![Drag and drop GradientPanelExt from toolbox](GradientPanelExt_images/Overview_img373.png)
- 
-3) The Gradient colors for the panel can be set by defining gradient styles and colors.
 
-4) We can add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor** which is displayed by [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt~Primitives.html) property. Please refer below screenshot.
+3. Set the Gradient colors to the panel by defining gradient styles and colors.
 
-   ![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
+4. Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt~Primitives.html) property. Refer to the following screenshot.
 
-5) Set the primitive alignment and position. 
+![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
+
+5. Set the primitive alignment and position.
 
 ## Adding the GradientPanelExt control via code
 
-The following steps illustrate how to create an **GradientPanelExt** control programmatically.
+The following steps describe how to create the **GradientPanelExt** control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following reference to the project.
+2. Add the following reference to the project:
 
 * Syncfusion.Shared.Base
 
-3) Include the required namespace
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) and add it to the form. 
+4. Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
 
 {% tabs %}
 
@@ -82,12 +83,12 @@ Me.Controls.Add(gradientPanelExt)
 
 {% endtabs %}
 
-5) Set the following properties and add primitives to the gradient panel.
+5. Set the following properties and add primitives to the gradient panel.
 
 {% tabs %}
 {% highlight c# %}
 
-//GradientPanelExt
+// GradientPanelExt
 GradientPanelExt gradientPanelExt = new GradientPanelExt();
 this.Controls.Add(gradientPanelExt);
 gradientPanelExt.BackColor = System.Drawing.Color.Transparent;
@@ -95,7 +96,7 @@ gradientPanelExt.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.D
 gradientPanelExt.Size = new System.Drawing.Size(343, 128);
 gradientPanelExt.CornerRadius = 10;
 
-//Username Label
+// Username Label
 Label label1 = new Label();
 label1.Location = new System.Drawing.Point(52, 29);
 label1.BackColor = System.Drawing.Color.Transparent;
@@ -103,7 +104,7 @@ label1.ForeColor = System.Drawing.Color.White;
 label1.Size = new System.Drawing.Size(58, 13);
 label1.Text = "Username:";
 
-//Password Label
+// Password Label
 Label label2 = new Label();
 label2.Location = new System.Drawing.Point(52, 60);
 label2.BackColor = System.Drawing.Color.Transparent;
@@ -111,20 +112,20 @@ label2.ForeColor = System.Drawing.Color.White;
 label2.Size = new System.Drawing.Size(58, 13);
 label2.Text = "Password:";
 
-//Username TextBoxExt
+// Username TextBoxExt
 TextBoxExt textBoxExt1 = new TextBoxExt();
 textBoxExt1.Location = new System.Drawing.Point(113, 26);
 textBoxExt1.Size = new System.Drawing.Size(100, 20);
 textBoxExt1.Text = "David carter";
 
-//Password TextBoxExt
+// Password TextBoxExt
 TextBoxExt textBoxExt2 = new TextBoxExt();
 textBoxExt2.Location = new System.Drawing.Point(113, 57);
 textBoxExt2.PasswordChar = '*';
 textBoxExt2.Size = new System.Drawing.Size(100, 20);
 textBoxExt2.Text = "Welcome";
 
-//Login title
+// Login title
 TextPrimitive textPrimitive1 = new TextPrimitive();
 textPrimitive1.Alignment = Syncfusion.Windows.Forms.Tools.Alignment.Top;
 textPrimitive1.BorderColor = System.Drawing.Color.Transparent;
@@ -150,10 +151,10 @@ textPrimitive3.Size = new System.Drawing.Size(40, 20);
 textPrimitive3.Text = "Cancel";
 textPrimitive3.TextColor = System.Drawing.Color.Black;
 
-//Adding primitives
+// Adding primitives
 gradientPanelExt.Primitives.AddRange(new Primitive[] { textPrimitive1, textPrimitive2, textPrimitive3 });
 
-//Add the controls
+// Add the controls
 gradientPanelExt.Controls.Add(label1);
 gradientPanelExt.Controls.Add(label2);
 gradientPanelExt.Controls.Add(textBoxExt1);
@@ -237,5 +238,5 @@ gradientPanelExt.Controls.Add(textBoxExt2)
 
 {% endhighlight %}
 {% endtabs %}
- 
-![Windows Forms GradientPanelExt showing added primitives and other controls](GradientPanelExt_images\GradientPanelExt_addcontrols.png)
+
+![Windows Forms GradientPanelExt shows added primitives and other controls](GradientPanelExt_images\GradientPanelExt_addcontrols.png)
