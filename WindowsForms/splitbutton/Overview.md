@@ -9,16 +9,16 @@ documentation: ug
 
 # Overview
 
-The **"SplitButton"** control allows you to create a drop-down button-like interface that is a combination of a regular button and a drop-down list. You can use this control to create a button with options. Once the required option is selected the specified button command will be executed. 
+The **"SplitButton"** control is like a combination of control that behaves like a Button and dropdown menu which provide access to create a dropdown button-like interface. Using this control, you can perform different operations with dropdown items as like menu hierarchy. 
 
-![Overview of SplitButton](Overview_images/SplitButton_overview.png)
+![Overview of SplitButton](Overview_images/SplitButton_removeitemthroughcode.png)
 
 ## Features
 
-**Button Mode** – Provides two types of mode. Normal and Toggle mode.
+**Button Mode** – Provides two types of mode: Normal and Toggle mode.
 
-**Appearance** - Supports wide variety of built-in themes and also has ability to customize all items in control with respect to control state.
+**DropDown Item** - Provides support to add new items SplitButton dropdown list.
 
-**DropDown Item** - Provides support to add new items SplitButton drop-down list.
+**DropDown Position** - Provides support to change the dropdown list position.
 
-**DropDown Position** - Provides support to change the drop-down list position.
+**RightToLeft** - Provides support to align the content of button from right to left direction.

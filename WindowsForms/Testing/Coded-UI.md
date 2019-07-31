@@ -158,6 +158,10 @@ RadialMenu<br/><br/></td><td>
 <td>
 TabControlAdv<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+TabSplitterContainer<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
 </table>
 
 
