@@ -19,9 +19,9 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 ## Adding the TextBoxExt control via designer
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. Add the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
+2) Add the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -29,13 +29,13 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 ## Adding the TextBoxExt control via code
 
-1. Create a C# or VB application using Visual Studio.
+1) Create a C# or VB application using Visual Studio.
 
-2. Add the following assembly reference to the project:
+2) Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4. Create an instance of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control, and add it to the form.
+4) Create an instance of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control, and add it to the form.
 
 {% tabs %}
 
