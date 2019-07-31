@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create CheckBoxAdv control in Windows Forms application.
+title: Getting Started | CheckBoxAdv | WindowsForms | Syncfusion
+description: How to add CheckBoxAdv control in Windows Forms application.
 platform: WindowsForms
 control: CheckBoxAdv
 documentation: ug
@@ -97,7 +97,7 @@ Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Windows forms CheckBoxAdv showing control](Overview_images/CheckBoxAdv_control.png)
 
-5) Set the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property as `true`. The default value is `false`.
+5) Get or set the current checked status using [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property. The default value is `false`.
 
 {% tabs %}
 {% highlight c# %}
