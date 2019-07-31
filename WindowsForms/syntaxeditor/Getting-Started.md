@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion 
+title: Getting Started | Syntax Editor | WindowsForms | Syncfusion 
 description: How to add EditControl and and enable its basic features.
 platform: WindowsForms
 control: SyntaxEditor
@@ -166,9 +166,9 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 {% endtabs %}
 
-![Windows Forms EditControl showing added language](Getting-Started_images/Getting-Started_img4.png)
+![Windows Forms EditControl configured for C Sharp language](Getting-Started_images/Getting-Started_img4.png)
 
-**Custom language configuration**
+## Custom language configuration
 
 The EditControl provides supports for custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl by using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
 
@@ -259,4 +259,4 @@ Me.editControl1.ApplyConfiguration("LISP")
 
 {% endtabs %}
 
-![Windows Forms EditControl showing configuration to the control](Getting-Started_images/Getting-Started_img5.png)
+![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
