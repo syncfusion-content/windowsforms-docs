@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with BannerTextProvider | WindowsForms | Syncfusion
-description: How to set banner text for control.
+description: How to set banner text for control into the Windows Forms application.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
@@ -19,27 +19,27 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 ## Adding a BannerTextProvider control via designer
 
-1. Create a new Windows Forms application using Visual Studio.
+1) Create a new Windows Forms application using Visual Studio.
 
-2. Add the the [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
+2) Add the the [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
 ![Drag and drop BannerTextProvider from toolbox](Overview_images/Banner_toolbox.png) 
 
-3. Drag a component from toolbox and add to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and get an extender provider property as illustrated in the following sample.
+3) Drag a component from toolbox and add to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and get an extender provider property as illustrated in the following sample.
 
 ![Windows Forms BannerTextProvider showing set the banner text to TextBoxExt control](Overview_images/Banner_addtext.png) 
 
 ## Adding a BannerTextProvider control via code
 
-1. Create a C# or VB application using Visual Studio.
+1) Create a C# or VB application using Visual Studio.
 
-2. Add the following assembly reference to the project:
+2) Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms
 
 {% endtabs %}
 
-4. Create an instance of the [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control.
+4) Create an instance of the [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ Me.bannerTextProvider = New Syncfusion.Windows.Forms.BannerTextProvider(Me.compo
 
 ## Assigning banner text to a control
 
-1. First, add a control to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control. Create an instance of **TextBoxExt**, and add it to the form.
+1) First, add a control to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control. Create an instance of **TextBoxExt**, and add it to the form.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ Me.Controls.Add(Me.textBoxExt)
 
 {% endtabs %}
 
-2. Assign the banner text to the control.
+2) Assign the banner text to the control.
 
 {% tabs %}
 {% highlight C# %}
