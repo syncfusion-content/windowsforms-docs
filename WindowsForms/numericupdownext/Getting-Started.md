@@ -108,7 +108,7 @@ The **NumericUpDownExt** provides the [DecimalPlaces](https://help.syncfusion.co
 this.numericUpDownExt1.DecimalPlaces = 2;
 this.numericUpDownExt1.ThousandsSeparator = true;
 
-[% endhighlight %]
+{% endhighlight %}
 
 {% highlight vb %}
 
