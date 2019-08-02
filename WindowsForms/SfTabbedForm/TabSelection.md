@@ -9,14 +9,14 @@ documentation: ug
 
 # Tab Selection
 
-Tab selection can be done programmatically using the [TabbedFormControl.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndex.html) and [TabbedFormControl.SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedTab.html) properties.
+Tab selection can be done programmatically using the [TabbedFormControl.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndex.html) or [TabbedFormControl.SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedTab.html) properties.
 
 {% tabs %}
 {% highlight c# %}
 
 this.tabbedFormControl.SelectedIndex = 1;
 
-or
+//or
 
 this.tabbedFormControl.SelectedTab = tabPageAdv2;
 
@@ -25,7 +25,7 @@ this.tabbedFormControl.SelectedTab = tabPageAdv2;
 
 Me.tabbedFormControl.SelectedIndex = 1
 
-or
+'or
 
 Me.tabbedFormControl.SelectedTab = tabPageAdv2
 
