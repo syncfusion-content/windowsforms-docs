@@ -78,3 +78,9 @@ In ToolStripEx Smart Tag, you can set the Text for the ToolStripEx and add Horiz
 
 ![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img3.jpg)
 
+In `RibbonPanel` Smart Tag, we can add `ToolStripEx` to the RibbonPanel and also rearrange them using the `Manage ToolStripEx` collection editor.
+
+![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img5.jpg)
+
+![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img6.jpg)
+
