@@ -135,7 +135,7 @@ this.autoComplete1.MatchMode = AutoCompleteMatchModes.Automatic;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.MatchMode = AutoCompleteMatchModes.Automatic
 

@@ -40,7 +40,7 @@ this.autoComplete1.DataSource = DataTable1;
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.CategoryName = "FTP"
 
@@ -109,7 +109,7 @@ this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.Histo
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList
 
@@ -135,7 +135,7 @@ The AutoComplete component allows you add a set of text using `String Collection
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 
     Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource

@@ -99,7 +99,7 @@ private void autoComplete1_BeforeAddItem(object sender, AutoCompleteAddItemCance
 }
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub autoComplete1_BeforeAddItem(ByVal sender As Object, ByVal e As AutoCompleteAddItemCancelEventArgs)
 
@@ -162,7 +162,7 @@ private void autoComplete1_AutoCompleteItemBrowsed(object sender, Syncfusion.Win
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub autoComplete1_AutoCompleteItemBrowsed(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
 
@@ -218,7 +218,7 @@ private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventAr
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Private Sub autoComplete1_MatchItem(ByVal sender As Object, ByVal args As AutoCompleteMatchItemEventArgs)
 

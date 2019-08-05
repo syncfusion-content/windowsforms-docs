@@ -80,7 +80,7 @@ this.autoComplete1.AddHistoryItem("China", 1);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoCompleteDataColumnInfo1.ColumnHeaderText = "Flag"
 Me.autoCompleteDataColumnInfo1.ImageColumn = True
