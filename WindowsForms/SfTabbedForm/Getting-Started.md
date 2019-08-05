@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| TabbedForm | WindowsForms | Syncfusion
+title: Getting Started | Tabbed Form | WinForms | Syncfusion
 description: Getting Started
 platform: WindowsForms
 control: SfTabbedForm
