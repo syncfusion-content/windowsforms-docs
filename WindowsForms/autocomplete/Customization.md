@@ -45,7 +45,6 @@ Specifies the AutoCompletePopup column header style.</td></tr>
 {% tabs %}
 
 {% highlight C# %}
-
     // Specifies the header fore color of the AutoComplete popup.
     this.autoComplete1.HeaderForeColor = Color.Red;
 
@@ -153,7 +152,8 @@ Specifies preferred width for the dropdown displayed by the AutoComplete compone
 
 {% highlight C# %}
 
-this.autoComplete1.AdjustHeightToItemCount = false;this.autoComplete1.AutoPersistentDropDownSize = true;
+this.autoComplete1.AdjustHeightToItemCount = false;
+this.autoComplete1.AutoPersistentDropDownSize = true;
 this.autoComplete1.PreferredHeight = 100;
 this.autoComplete1.PreferredWidth = 300;
 
