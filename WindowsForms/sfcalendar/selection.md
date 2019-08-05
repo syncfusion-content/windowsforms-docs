@@ -50,6 +50,82 @@ End If
 
 {% endtabs %} 
 
+### CellClick Event
+
+The [CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~CellClick_EV.html) event occurs when clicking on the calendar cell.
+
+#### Event Data:
+
+The event handler receives an argument of [CalendarCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html) type containing data related to this event. The following CalendarCellEventArgs members provides information specific to this event.
+
+<table>
+<tr>
+<th>
+Members</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{ '[IsSpecialDate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsSpecialDate.html)' | markdownify }}</td><td>
+Gets a value indicating whether the date of cell is SpecialDate in SfCalendar.</td></tr>
+<tr>
+<td>
+{{ '[ViewType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~ViewType.html)' | markdownify }}</td><td>
+Gets the CalendarViewType of the cell to draw in SfCalendar, whether it is month, year, decade or century view in SfCalendar.</td></tr>
+<tr>
+<td>
+{{ '[IsBlackoutDate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsBlackoutDate.html)' | markdownify }}</td><td>
+Gets a value indicating whether the date of cell is SpecialDate in SfCalendar.</td></tr>
+<tr>
+<td>
+{{ '[DateRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~DateRange.html)' | markdownify }}</td><td>
+Gets the StartDate and endDate range values of the clicked cell.</td></tr>
+<tr>
+<td>
+{{ '[IsWeekNumber](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsSpecialDate.html)' | markdownify }}</td><td>
+Gets a value indicating whether the date of cell is WeekNumber in SfCalendar.</td></tr>
+<tr>
+<td>
+{{ '[Value](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~Value.html)' | markdownify }}</td><td>
+Gets the value of the clicked cell date value.</td></tr>
+<tr>
+<td>
+{{ '[Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~Text.html)' | markdownify }}</td><td>
+Gets the value of the clicked cell text.</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight C# %}
+
+private void SfCalendar1_CellClick(object sender, Syncfusion.WinForms.Input.Events.CalendarCellEventArgs e)
+{
+  // e.DateRange - Start and end range value of clicked cell
+  // e.IsBlackoutDate - Indicate whether the date cell is BlackoutDate
+  // e.IsSpecialDate - Indicate whether the date cell is SpecialDate
+  // e.IsWeekNumber - Indicate whether the date cell is WeekNumber
+  // e.Text - Value of clicked cell text
+  // e.Value - Clicked cell date value
+  // e.ViewType - Specifies the calendar viewtype
+}
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Private Sub SfCalendar1_CellClick(ByVal sender As Object, ByVal e As Syncfusion.WinForms.Input.Events.CalendarCellEventArgs)
+   ' e.DateRange - Start and end range value of clicked cell
+   ' e.IsBlackoutDate - Indicate whether the date cell is BlackoutDate
+   ' e.IsSpecialDate - Indicate whether the date cell is SpecialDate
+   ' e.IsWeekNumber - Indicate whether the date cell is WeekNumber
+   ' e.Text - Value of clicked cell text
+   ' e.Value - Clicked cell date value
+   ' e.ViewType - Specifies the calendar viewtype
+End Sub
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
 ## Multiple selection
 
 The `SfCalendar` control allows you to select multiple dates when the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~AllowMultipleSelection.html) property is true. The following code example illustrates how to configure the calendar control to allow multiple date selection:
