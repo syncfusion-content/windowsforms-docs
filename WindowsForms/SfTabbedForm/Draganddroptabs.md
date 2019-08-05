@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and Drop Tabs| TabbedForm | WindowsForms | Syncfusion
+title: Drag and Drop Tabs| Tabbed Form | WinForms | Syncfusion
 description: This section explains about the drag and drop the tabs in SfTabbedForm.
 platform: WindowsForms
 control: SfTabbedForm

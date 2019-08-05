@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ContextMenu| TabbedForm | WindowsForms | Syncfusion
+title: Context Menu| Tabbed Form | WinForms | Syncfusion
 description: This section explains about adding context menu in SfTabbedForm.
 platform: WindowsForms
 control: SfTabbedForm
