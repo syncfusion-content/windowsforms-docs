@@ -74,13 +74,15 @@ In Ribbon Smart Tag, the frequently used properties related to the appearance an
 
 ![Smart Tag of RibbonControlAdv](Ribbon_Designer_Images/Ribbon-Designer_img2.jpg)
 
-In ToolStripEx Smart Tag, you can set the Text for the ToolStripEx and add Horizontal and Vertical Layout ToolStripPanelItem.
+In `RibbonPanel` Smart Tag, we can add `ToolStripEx` using `Add ToolStripEx` to the RibbonPanel and also rearrange them using the `Manage ToolStripEx` collection editor.
+
+![Smart Tag of RibbonPanel](Ribbon_Designer_Images/Ribbon-Designer_img5.jpg)
+
+![RibbonPanel Collection Editor](Ribbon_Designer_Images/Ribbon-Designer_img6.jpg)
+
+In `ToolStripEx` Smart Tag, we can set the Text for the ToolStripEx and add Horizontal and Vertical Layout ToolStripPanelItem.
 
 ![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img3.jpg)
 
-In `RibbonPanel` Smart Tag, we can add `ToolStripEx` to the RibbonPanel and also rearrange them using the `Manage ToolStripEx` collection editor.
 
-![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img5.jpg)
-
-![Smart Tag of ToolStripEx](Ribbon_Designer_Images/Ribbon-Designer_img6.jpg)
 
