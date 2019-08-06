@@ -26,16 +26,16 @@ Description</th></tr>
 <td>AutoSuggest</td>
 <td>
 Suggests and displays a list of probable matches in the drop-down list by setting the AutoCompleteMode to AutoSuggest.
-
-![Windows Forms AutoComplete AutoSuggest mode](WorkingwithAutoComplete_images/AutoComplete_Autosuggest.png)
+<br>
+<img src="WorkingwithAutoComplete_images/AutoComplete_Autosuggest.png" alt="Windows Forms AutoComplete AutoSuggest mode"/>
 </td>
 </tr>
 <tr>
 <td> AutoAppend </td>
 <td>
 Appends the most appropriate match for the current content in the editor control automatically.
-
-![Windows Forms AutoComplete AutoAppend mode](WorkingwithAutoComplete_images/AutoComplete_Autoappend.png)
+<br>
+<img src="WorkingwithAutoComplete_images/AutoComplete_Autoappend.png" alt ="Windows Forms AutoComplete AutoAppend mode"/>
 </td>
 </tr>
 
@@ -43,8 +43,8 @@ Appends the most appropriate match for the current content in the editor control
 <td> Both </td>
 <td>
 Activates both AutoAppend and AutoSuggest modes of auto completion for the editor control.
-
-![Windows Forms AutoComplete Both mode](WorkingwithAutoComplete_images/AutoComplete_Both.png)
+<br>
+<img src= "WorkingwithAutoComplete_images/AutoComplete_Both.png" alt ="Windows Forms AutoComplete Both mode" />
 </td>
 </tr>
 
@@ -52,8 +52,8 @@ Activates both AutoAppend and AutoSuggest modes of auto completion for the edito
 <td> Disabled </td>
 <td>
 Disables auto complete support for the editor control.
-
-![Windows Forms AutoComplete Disabled mode](WorkingwithAutoComplete_images/AutoComplete_Disabled.png)
+<br>
+<img src ="WorkingwithAutoComplete_images/AutoComplete_Disabled.png" alt="Windows Forms AutoComplete Disabled mode"/>
 </td>
 </tr>
 
@@ -61,8 +61,8 @@ Disables auto complete support for the editor control.
 <td> MultiSuggest </td>
 <td>
 Checks whether the beginning of items in the list pop up matches with user input string. Then matched cases from various columns are shown as suggestions. The MultiSuggest mode is an extended mode of AutoSuggest.
-
-![Windows Forms AutoComplete Multisuggest mode](WorkingwithAutoComplete_images/AutoComplete_Multisuggest.png)
+<br> 
+ <img src ="WorkingwithAutoComplete_images/AutoComplete_Multisuggest.png" alt="Windows Forms AutoComplete Multisuggest mode" />
 </td>
 </tr>
 
@@ -71,9 +71,8 @@ Checks whether the beginning of items in the list pop up matches with user input
 <td> MultiSuggestExtend </td>
 <td>
 Checks whether the entered character or sequence of character is present in any part of the word in list popup item. Then matched cases from various columns are shown as suggestions.
-
-
-![Windows Forms AutoComplete Multisuggestextended mode](WorkingwithAutoComplete_images/AutoComplete_Multisuggestextended.png)
+<br>
+<img src="WorkingwithAutoComplete_images/AutoComplete_Multisuggestextended.png" alt="Windows Forms AutoComplete Multisuggestextended mode"/>
 </td>
 </tr>
 
@@ -136,7 +135,7 @@ this.autoComplete1.MatchMode = AutoCompleteMatchModes.Automatic;
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Me.autoComplete1.MatchMode = AutoCompleteMatchModes.Automatic
 
@@ -154,8 +153,8 @@ Refresh column before setting MatchingColumn using the [RefreshColumns](https://
 
 {% highlight C# %}
 
-    this.autoComplete1.RefreshColumns();
-    this.autoComplete1.Columns[1].MatchingColumn = true;
+this.autoComplete1.RefreshColumns();
+this.autoComplete1.Columns[1].MatchingColumn = true;
 
 {% endhighlight %}
 
@@ -348,9 +347,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 {% highlight C# %}
 
     Syncfusion.Windows.Forms.Tools.AutoComplete autoComplete1= new Syncfusion.Windows.Forms.Tools.AutoComplete();
-
-    CustomRichTextBox richTextBox1= new CustomRichTextBox();
-    
+    CustomRichTextBox richTextBox1= new CustomRichTextBox();    
     autoComplete1.SetAutoComplete(richTextBox1, Syncfusion.Windows.Forms.Tools.AutoCompleteModes.AutoSuggest);
 
 {% endhighlight %}
@@ -358,9 +355,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 {% highlight VB %}
 
     Dim autoComplete1 As Syncfusion.Windows.Forms.Tools.AutoComplete = New Syncfusion.Windows.Forms.Tools.AutoComplete 
-
     Dim richTextBox1 As CustomRichTextBox = New CustomRichTextBox
-
     autoComplete1.SetAutoComplete(richTextBox1, AutoCompleteModes.AutoSuggest)
 
 {% endhighlight %}
@@ -380,7 +375,6 @@ The AutoComplete popup can be shown programmatically using the [AutoCompletePopu
 {% highlight C# %}
 
     autoComplete1.AutoCompletePopup.ParentControl = textBox1;
-
     this.autoComplete1.AutoCompletePopup.ShowPopup(Point.Empty);
 
 {% endhighlight %}
