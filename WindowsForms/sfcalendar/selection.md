@@ -50,13 +50,13 @@ End If
 
 {% endtabs %} 
 
-### CellClick Event
+### CellClick event
 
-The [CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~CellClick_EV.html) event occurs when clicking on the calendar cell.
+The [CellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~CellClick_EV.html) event occurs when clicking a calendar cell.
 
-#### Event Data:
+#### Event data
 
-The event handler receives an argument of [CalendarCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html) type containing data related to this event. The following CalendarCellEventArgs members provides information specific to this event.
+The event handler receives an argument of [CalendarCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs.html) type that contains data related to this event. The following CalendarCellEventArgs members provide information specific to this event.
 
 <table>
 <tr>
@@ -66,15 +66,15 @@ Description</th></tr>
 <tr>
 <td>
 {{ '[IsSpecialDate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsSpecialDate.html)' | markdownify }}</td><td>
-Gets a value indicating whether the date of cell is SpecialDate in SfCalendar.</td></tr>
+Gets a value that indicates whether the date of cell is SpecialDate in SfCalendar.</td></tr>
 <tr>
 <td>
 {{ '[ViewType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~ViewType.html)' | markdownify }}</td><td>
-Gets the CalendarViewType of the cell to draw in SfCalendar, whether it is month, year, decade or century view in SfCalendar.</td></tr>
+Gets the CalendarViewType of the cell to draw in SfCalendar; whether it is month, year, decade or century view in SfCalendar.</td></tr>
 <tr>
 <td>
 {{ '[IsBlackoutDate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsBlackoutDate.html)' | markdownify }}</td><td>
-Gets a value indicating whether the date of cell is SpecialDate in SfCalendar.</td></tr>
+Gets a value that indicates whether the date of cell is SpecialDate in SfCalendar.</td></tr>
 <tr>
 <td>
 {{ '[DateRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~DateRange.html)' | markdownify }}</td><td>
@@ -82,7 +82,7 @@ Gets the StartDate and endDate range values of the clicked cell.</td></tr>
 <tr>
 <td>
 {{ '[IsWeekNumber](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~IsSpecialDate.html)' | markdownify }}</td><td>
-Gets a value indicating whether the date of cell is WeekNumber in SfCalendar.</td></tr>
+Gets a value that indicates whether the date of cell is WeekNumber in SfCalendar.</td></tr>
 <tr>
 <td>
 {{ '[Value](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.Events.CalendarCellEventArgs~Value.html)' | markdownify }}</td><td>
