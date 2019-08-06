@@ -94,7 +94,7 @@ After the SkinManager component has been added into the designer, select the Ski
 
 ![WinForms skin manager apply theme in designer](Getting-Started_images/SkinManager_root.png)
 
-N> SkinManager does not support the Custom theme ( Themes created through ThemeStudio). It works only with predefined themes.
+N> SkinManager does not support the custom themes ( themes generated using ThemeStudio). It works only with predefined themes.
 
 ### Applying theme to the form
 
