@@ -1186,7 +1186,7 @@ Private Sub dockingManager1_DockStateChanging(ByVal sender As Object, ByVal arg 
 
             
    'arg.OldState indicates the old state of dock child
-   CConsole.WriteLine("Old DockState:" & arg.OldState.ToString())
+   Console.WriteLine("Old DockState:" & arg.OldState.ToString())
 
    'arg.NewValue indicates the new state of dock child.
    Console.WriteLine("New DockState:" & arg.NewState.ToString())
