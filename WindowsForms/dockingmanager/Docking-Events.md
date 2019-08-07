@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking-Events | WindowsForms | Syncfusion
-description: docking events
+description: This sections explains different events available in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
