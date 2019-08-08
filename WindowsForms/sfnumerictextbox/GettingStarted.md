@@ -84,7 +84,7 @@ Me.Controls.Add(Me.numericTextBox)
 
 ## Value
 
-It holds the double value which can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~AllowNull.html) property needs to be set to make the Value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Text.html) property of the control gets formatted from the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Value.html) property.
+SfNumericTextBox holds double value, it can also hold null value. The [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~AllowNull.html) property needs to be set to make the Value nullable. The [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Text.html) property of the control gets formatted from the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Value.html) property.
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ Me.numericTextBox.MaxValue = 150
 
 ## Hiding the trail zeros
 
-The trailing zeros after the decimal digit can be removed by using the property named [HideTrailingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~HideTrailingZeros.html).
+The trailing zeros after the decimal digit can be removed by using the property  [HideTrailingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~HideTrailingZeros.html).
 
 {% tabs %}
 
@@ -251,7 +251,7 @@ Me.numericTextBox.HideTrailingZeros = True
 
 ## Custom units
 
-Allows to set the units or custom message at front or end of the text. This can be set using the [Prefix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Prefix.html) and [Suffix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Suffix.html) property.
+Set units or custom message at front or end of the text, using the [Prefix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Prefix.html) and [Suffix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Suffix.html) property.
 
 {% tabs %}
 
