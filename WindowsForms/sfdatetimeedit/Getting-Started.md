@@ -128,7 +128,7 @@ The date-time value in the DateTimeEdit can be edited by two ways as follows.
 * Default Editing 
 * Mask Editing
 
-Editing modes can be changed by [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) of the SfDateTimEdit. The following code example illustrates how to change the date time editing mode.
+Editing modes can be changed using [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) property of the SfDateTimEdit. The following code example illustrates how to change the date time editing mode.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ dateTimeEdit.DateTimeEditingMode = DateTimeEditingMode.Mask
 
 ## Allow null value
 
-The **SfDateTimEdit** allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) to null in the mask mode of DateTimeEditing when [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~AllowNull.html) is set to true.
+The **SfDateTimEdit** allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) to null in the mask mode of DateTimeEditing, when [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~AllowNull.html) is set to true.
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ dateTimeEdit.Watermark = "Choose a date"
 
 ## Custom format
 
-The custom pattern can be displayed in the **SfDateTimeEdit** control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Format.html) property when the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimePattern.html) is set to custom.
+The custom pattern can be displayed in the **SfDateTimeEdit** control by using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Format.html) property, when the [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimePattern.html) is set to custom.
 
 {% tabs %}
 
@@ -212,9 +212,9 @@ dateTimeEdit.Format = "MM/dd/yy hh:mm:ss"
 
 ![Custom format](getting-started-images/customformat.png)
 
-## Configure up-down DateTimeEdit
+## Configure up-down
 
-To make the DateTimeEdit to up-down control, set the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ShowUpDown.html) property to `true`. The up-down will appear only when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) is set to mask.
+You can edit value of DateTimeEdit using up-down button, by setting the [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ShowUpDown.html) property to `true`. The up-down will appear only when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) is set to mask.
 
 {% tabs %}
 
