@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slider-customization | RadialSlider |  WindowsForms | Syncfusion
-description: This section details about slider customization of the RadialSlider.
+description: This section explains appearence customization for RadialSlider.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -255,65 +255,3 @@ radialSlider1.Style = Syncfusion.Windows.Forms.Tools.RadialSliderStyle.Office2
 {% endtabs %}
 
 ![RadialSlider Office2016Black style](Style_images/Style_img_5.png)
-
-## Values
-
-The **RadialSlider** control has two types of values.
-
-* **MinimumValue** - The slider initial value depends on its minimum value and the default minimum value is 0. The minimum value can be changed by using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MinimumValue.html) property.
-
-* **MaximumValue** - The slider end value depends on its maximum value and the default maximum value is 10. The maximum value can be changed by using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MaximumValue.html) property.
-
-{% tabs %}
-
-{% highlight C# %}
-
-radialSlider1.MinimumValue = 50;
-radialSlider1.MaximumValue = 100;
-radialSlider1.Value = 50;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-radialSlider1.MinimumValue = 50
-radialSlider1.MaximumValue = 100
-radialSlider1.Value = 50
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Windows Forms RadialSlider showing maximum and minimum value](Getting-Started_images/RadialSlider_value.png)
-
-## Slider Value Changed Event
-
-We can get the current slider value by using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ValueChanged_EV.html) event.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.radialSlider1.ValueChanged += new Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventHandler(radialSlider1_ValueChanged);
-
-private void radialSlider1_ValueChanged(object sender, Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs args)
-{
-  this.richTextBox1.SelectionFont = new System.Drawing.Font(Font.Name, (float)this.radialSlider1.Value);
-  this.Refresh();
-}
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueChanged
-
-Private Sub radialSlider1_ValueChanged(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs)
-Me.richTextBox1.SelectionFont = New System.Drawing.Font(Font.Name, CType(Me.radialSlider1.Value,Single))
-Me.Refresh
-End Sub
-
-{% endhighlight %}
-
-{% endtabs %}
-
