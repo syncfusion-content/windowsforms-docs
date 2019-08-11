@@ -126,6 +126,37 @@ radialSlider1.Value = 50
 
 ![Windows Forms RadialSlider showing maximum and minimum value](Getting-Started_images/RadialSlider_value.png)
 
+## Slider Value Changed Event
+
+We can get the current slider value by using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ValueChanged_EV.html) event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialSlider1.ValueChanged += new Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventHandler(radialSlider1_ValueChanged);
+
+private void radialSlider1_ValueChanged(object sender, Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs args)
+{
+  this.richTextBox1.SelectionFont = new System.Drawing.Font(Font.Name, (float)this.radialSlider1.Value);
+  this.Refresh();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueChanged
+
+Private Sub radialSlider1_ValueChanged(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs)
+Me.richTextBox1.SelectionFont = New System.Drawing.Font(Font.Name, CType(Me.radialSlider1.Value,Single))
+Me.Refresh
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Division
 
 The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderDivision.html) property. The default slider division is 10.
