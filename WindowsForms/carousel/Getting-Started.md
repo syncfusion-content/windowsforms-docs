@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities.
+This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities. Carousel control is a circular conveyor used for displaying and rotating the custom controls or images objects
 
 ## Assembly deployment
 
@@ -88,13 +88,9 @@ Me.Controls.Add(carousel)
 
 {% endtabs %}
 
-## Configuration of Carousel
- 
-Carousel control is a circular conveyor used for displaying and rotating the custom controls or images objects
-
 ## Adding controls into Carousel
 
-To load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
+You can load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
 
 {% tabs %}
 
@@ -151,7 +147,7 @@ Me.carousel1.Items.Add(this.buttonAdv2)
 
 ## Adding images into Carousel
 
-To load images in Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~ImageListCollection.html) property in Carousel class.
+You can load images in Carousel, it needs to added into [ImageListCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~ImageListCollection.html) property in Carousel class.
 
 {% tabs %}
 
