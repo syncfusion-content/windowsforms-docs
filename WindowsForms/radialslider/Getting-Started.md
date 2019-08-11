@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | RadialSlider | WindowsForms | Syncfusion
-description: This section describes how to radial slider control into WindowsForms application
+description: This section describes how to add radial slider control into WindowsForms application
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -95,7 +95,7 @@ Me.Controls.Add(radialSlider1)
 
 ## Values
 
-The **RadialSlider** control has two types of values.
+The value of **RadialSlider** control can be restricted within minimum and maximum limit.
 
 * **MinimumValue** - The slider initial value depends on its minimum value and the default minimum value is 0. The minimum value can be changed by using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MinimumValue.html) property.
 
