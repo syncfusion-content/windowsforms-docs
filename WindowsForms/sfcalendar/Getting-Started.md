@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: How to add SfCalendar and enable its basic features.
+title: Getting-Started | Calendar | WindowsForms | Syncfusion
+description: How to add SfCalendar and explore its basic features.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
@@ -94,13 +94,10 @@ The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.
 // Setting the Minimum and Maximum date
 
 Syncfusion.WinForms.Input.SfCalendar calendar = new Syncfusion.WinForms.Input.SfCalendar();
-
 this.Controls.Add(calendar);
 
 calendar.SelectedDate = new DateTime(2018, 1, 17);
-
 calendar.MinDate = new DateTime(2018, 1, 05);
-
 calendar.MaxDate = new DateTime(2018, 1, 25);
 
 {% endhighlight  %}
@@ -110,13 +107,10 @@ calendar.MaxDate = new DateTime(2018, 1, 25);
 ' Setting the Minimum and Maximum date
 
 Dim calendar As Syncfusion.WinForms.Input.SfCalendar = New Syncfusion.WinForms.Input.SfCalendar
-
 Me.Controls.Add(calendar)
 
 calendar.SelectedDate = New DateTime(2018, 1, 17)
-
 calendar.MinDate = New DateTime(2018, 1, 5)
-
 calendar.MaxDate = New DateTime(2018, 1, 25)
 
 {% endhighlight  %}
@@ -221,7 +215,6 @@ The **SfCalendar** control allows you to select multiple dates by setting the [A
 {% highlight C# %}
 
 // Setting to Allow Multiple Selection
-
 calendar.AllowMultipleSelection = true;
 
 {% endhighlight  %}
@@ -229,7 +222,6 @@ calendar.AllowMultipleSelection = true;
 {% highlight VB %}
 
 ' Setting to Allow Multiple Selection
-
 calendar.AllowMultipleSelection = True
 
 {% endhighlight  %}
@@ -247,7 +239,6 @@ The first day of a week can be changed by setting the [FirstDayOfWeek](https://h
 {% highlight C# %}
 
 //Setting the First Day Of Week
-
 this.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday;
 
 {% endhighlight  %}
@@ -255,7 +246,6 @@ this.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday;
 {% highlight VB %}
 
 'Setting the First Day Of Week
-
 Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 {% endhighlight  %}
@@ -273,7 +263,6 @@ The week number of current week in a year can be shown in the calendar control b
 {% highlight C# %}
 
 // Setting the Minimum and Maximum date
-
 calendar.ShowWeekNumber = true;
 
 {% endhighlight  %}
@@ -281,7 +270,6 @@ calendar.ShowWeekNumber = true;
 {% highlight VB %}
 
 ' Setting the Minimum and Maximum date
-
 calendar.ShowWeekNumber = True
 
 {% endhighlight  %}
