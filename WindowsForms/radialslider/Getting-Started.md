@@ -101,6 +101,9 @@ The value of **RadialSlider** control can be restricted within minimum and maxim
 
 * **MaximumValue** - The slider end value depends on its maximum value and the default maximum value is 10. The maximum value can be changed by using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MaximumValue.html) property.
 
+* **Value** - The slider's `Value` property is used to get the currently selected value, or change it to required value.
+
+
 {% tabs %}
 
 {% highlight C# %}
