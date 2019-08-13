@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking-Events | WindowsForms | Syncfusion
-description: docking events
+description: This sections explains different events available in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -1081,6 +1081,18 @@ Description</th></tr>
 <td>
 {{ '[Controls](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Controls.html)' | markdownify }}</td><td>
 Get the collection of controls undergoing the dock state transfer.</td></tr>
+<tr>
+<td>
+{{ '[NewState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~NewState.html)' | markdownify }}</td><td>
+Gets or sets a value that indicates the new state of dock child.</td></tr>
+<tr>
+<td>
+{{ '[OldState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~OldState.html)' | markdownify }}</td><td>
+Gets a value that indicates the old state of dock child.</td></tr>
+<tr>
+<td>
+{{ '[Handled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockStateChangeEventArgs~Handled.html)' | markdownify }}</td><td>
+Gets or sets a value that decides whether to handle the dock state changes in DockingManager.</td></tr>
 </table>
 
 {% tabs %}
@@ -1113,6 +1125,24 @@ private void dockingManager1_DockStateChanging(object sender, Syncfusion.Windows
 
    }
 
+   //handle the dock state changing for Panel1
+    
+   if (this.panel1 == ctrl)
+   {
+      arg.Handled = true;
+   }
+   else
+   {
+      arg.Handled = false;
+   }
+            
+   // arg.OldState indicates the old state of dock child.
+   Console.WriteLine("Old DockState:"+ arg.OldState.ToString());
+
+   // arg.NewValue indicates the new state of dock child.
+   Console.WriteLine("New DockState:" +arg.NewState.ToString());
+
+
 }
 
 {% endhighlight %}
@@ -1143,6 +1173,23 @@ Private Sub dockingManager1_DockStateChanging(ByVal sender As Object, ByVal arg 
      System.Math.Min(System.Threading.Interlocked.Increment(i), i - 1)
 
    Next
+
+   'handle the dock state changing for Panel1
+    
+   If Me.panel1 Is ctrl Then
+      arg.Handled = Truetrue;
+   }
+   Else
+		arg.Handled = False
+	End If
+   Next ctrl
+
+            
+   'arg.OldState indicates the old state of dock child
+   Console.WriteLine("Old DockState:" & arg.OldState.ToString())
+
+   'arg.NewValue indicates the new state of dock child.
+   Console.WriteLine("New DockState:" & arg.NewState.ToString())
 
 End Sub
 
