@@ -80,7 +80,7 @@ Me.Controls.Add(groupView1)
 
 {% endtabs %}
 
-5) The items can be added to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
+5) Add items to GroupView container using [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
 
 {% tabs %}
 
@@ -108,9 +108,9 @@ Me.groupView1.FlatLook = True
 
 ![Windows Forms GroupView showing added items](GettingStarted_images/GroupView_items.png)
 
-## Image setting
+## Adding Images
 
-Before add image into the control, Create an instance of **ImageList**. After that, you can add image into the `ImageList`.
+To add images to the GroupView, ImageList control must be added to the form with images.
 
 {% tabs %}
 {% highlight C# %}
@@ -154,7 +154,7 @@ groupView1.SmallImageView = True
 
 ## Selected item
 
-At run time, a particular item should be selected by using [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedItem.html) property.
+At run time, a particular item can be selected by using [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedItem.html) property.
 
 {% tabs %}
 {% highlight C# %}
