@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Carousel | WindowsForms | Syncfusion
+title: Getting Started with Carousel | WindowsForms | Syncfusion
 description: This section describes how to add carousel control into windowsforms application and its basic features.
 platform: WindowsForms
 control: Carousel
@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 [Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in any application.
 
-## Adding the Carousel control via designer
+## Adding Carousel control via designer
 
 The following steps describe how to create a **Carousel** control via the designer.
 
@@ -35,7 +35,7 @@ The following steps describe how to create a **Carousel** control via the design
 ![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
 
 
-## Adding the Carousel control via code
+## Adding Carousel control via code
 
 The following steps illustrate how to create an **Carousel** control programmatically.
 
@@ -74,15 +74,15 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% highlight C# %}
 
-Carousel carousel = new Carousel();
+Carousel carousel1 = new Carousel();
 this.Controls.Add(carousel);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim carousel As Carousel = New Carousel
-Me.Controls.Add(carousel)
+Dim carousel1 As Carousel = New Carousel
+Me.Controls.Add(carousel1)
 
 {% endhighlight %}
 
@@ -99,51 +99,102 @@ You can load custom controls in Carousel, it needs to added into [Items](https:/
 //Initialization
 ButtonAdv buttonAdv1 =new ButtonAdv();
 ButtonAdv buttonAdv2 =new ButtonAdv();
+ButtonAdv buttonAdv3 =new ButtonAdv();
+ButtonAdv buttonAdv4 =new ButtonAdv();
+ButtonAdv buttonAdv5 =new ButtonAdv();
+ButtonAdv buttonAdv6 =new ButtonAdv();
 
-//Set the properties for two buttonadv
+//Set the properties for all buttonadv controls
 buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
 buttonAdv1.ForeColor = System.Drawing.Color.White;
-
 
 buttonAdv2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
 buttonAdv2.ForeColor = System.Drawing.Color.White;
 
+buttonAdv3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv3.ForeColor = System.Drawing.Color.White;
+
+buttonAdv4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv4.ForeColor = System.Drawing.Color.White;
+
+buttonAdv5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv5.ForeColor = System.Drawing.Color.White;
+
+buttonAdv6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
+buttonAdv6.ForeColor = System.Drawing.Color.White;
+
+
 //Add the custom controls into carousel
-this.carousel1.Controls.Add(this.buttonAdv1);
-this.carousel1.Controls.Add(this.buttonAdv2);
+carousel1.Controls.Add(buttonAdv1);
+carousel1.Controls.Add(buttonAdv2);
+carousel1.Controls.Add(buttonAdv3);
+carousel1.Controls.Add(buttonAdv4);
+carousel1.Controls.Add(buttonAdv5);
+carousel1.Controls.Add(buttonAdv6);
+
 
 //Add the custom controls into carousel items
-this.carousel1.Items.Add(this.buttonAdv1);
-this.carousel1.Items.Add(this.buttonAdv2);
+carousel1.Items.Add(buttonAdv1);
+carousel1.Items.Add(buttonAdv2);
+carousel1.Items.Add(buttonAdv3);
+carousel1.Items.Add(buttonAdv4);
+carousel1.Items.Add(buttonAdv5);
+carousel1.Items.Add(buttonAdv6);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
 'Initialization
-Dim buttonAdv1 As ButtonAdv = New ButtonAdv
-Dim buttonAdv2 As ButtonAdv = New ButtonAdv
+Dim buttonAdv1 As New ButtonAdv()
+Dim buttonAdv2 As New ButtonAdv()
+Dim buttonAdv3 As New ButtonAdv()
+Dim buttonAdv4 As New ButtonAdv()
+Dim buttonAdv5 As New ButtonAdv()
+Dim buttonAdv6 As New ButtonAdv()
 
-'Set the properties for two buttonadv
+'Set the properties for all buttonadv controls
 buttonAdv1.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
 buttonAdv1.ForeColor = System.Drawing.Color.White
 
 buttonAdv2.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
 buttonAdv2.ForeColor = System.Drawing.Color.White
 
+buttonAdv3.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv3.ForeColor = System.Drawing.Color.White
+
+buttonAdv4.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv4.ForeColor = System.Drawing.Color.White
+
+buttonAdv5.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv5.ForeColor = System.Drawing.Color.White
+
+buttonAdv6.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(22))))), (CInt(Fix((CByte(165))))), (CInt(Fix((CByte(220))))))
+buttonAdv6.ForeColor = System.Drawing.Color.White
+
+
 'Add the custom controls into carousel
-Me.carousel1.Controls.Add(this.buttonAdv1)
-Me.carousel1.Controls.Add(this.buttonAdv2)
+carousel1.Controls.Add(buttonAdv1)
+carousel1.Controls.Add(buttonAdv2)
+carousel1.Controls.Add(buttonAdv3)
+carousel1.Controls.Add(buttonAdv4)
+carousel1.Controls.Add(buttonAdv5)
+carousel1.Controls.Add(buttonAdv6)
+
 
 'Add the custom controls into carousel items
-Me.carousel1.Items.Add(this.buttonAdv1)
-Me.carousel1.Items.Add(this.buttonAdv2)
+carousel1.Items.Add(buttonAdv1)
+carousel1.Items.Add(buttonAdv2)
+carousel1.Items.Add(buttonAdv3)
+carousel1.Items.Add(buttonAdv4)
+carousel1.Items.Add(buttonAdv5)
+carousel1.Items.Add(buttonAdv6)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Button controls added in Carousel through code](Getting-Started_images/Carousel_img4.png) 
+![Button controls added in Carousel through code](Getting-Started_images/Carousel_item.gif) 
 
 ## Adding images into Carousel
 
