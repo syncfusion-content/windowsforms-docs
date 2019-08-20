@@ -138,8 +138,6 @@ private void Calendar_SelectionChanged(Syncfusion.WinForms.Input.SfCalendar send
 
 {% highlight VB %}
 
-'INSTANT VB NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level:
-
 ' Invoking selection changing event
 Private calendar.SelectionChanging += AddressOf Calendar_SelectionChanging
 
