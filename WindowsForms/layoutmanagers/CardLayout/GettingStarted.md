@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | CardLayout Control for Windows Forms | Syncfusion
-description: Getting started with the important key features of CardLayout control for windows forms.
+description: Getting started with the important key features of the CardLayout control for Windows Forms.
 platform: windowsforms
 control: CardLayout
 documentation: ug
@@ -13,21 +13,21 @@ This section explains how to add the `CardLayout` control in a Windows Forms app
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or details of NuGet package needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
 [Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
 
 ## Adding the CardLayout control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The `CardLayout` control can be added to an application by dragging it from the toolbox to design view. The following required dependent assemblies will be added automatically:
+2. Add the `CardLayout` control to an application by dragging it from the toolbox to design view. The following required dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
 ![Drag and drop CardLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-3) To add the form as a container control of `CardLayout`, click `Yes` in a pop-up, from which it appears automatically before the CardLayout is added.
+3. To add the form as a container control of `CardLayout`, click `Yes` in a pop-up, from which it appears automatically before the CardLayout is added.
 
 ![Alert to add CardLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -41,13 +41,13 @@ The child controls can be added to layout by dragging it from the toolbox to des
 
 The `CardLayout` control can be created programmatically using the following steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project:
+2. Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base.dll.
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the `CardLayout` control and set `ContainerControl` as form.
+4. Create an instance of the `CardLayout` control, and then set `ContainerControl` as form.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ Me.cardLayout1.ContainerControl = Me
 
 The child controls can be added to the layout by simply adding it to the form since the form is its container control.
 
-1) The main panel can be added to the layout by simply adding it to the form since the form is its container control.
+1. Add the main panel to layout by simply adding it to the form since the form is its container control.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ Me.cardLayout1.ContainerControl = cardLayoutPanel
 {% endhighlight %}
 {% endtabs %}
 
-2) Next, The child panel can be added to the layout by simply adding it to the main panel.
+2. Add the child panel to layout by simply adding it to the main panel.
 
 {% tabs %}
 {% highlight c# %}
@@ -191,7 +191,7 @@ Me.cardLayoutPanel.Controls.Add(Me.panel3)
 {% endhighlight %}
 {% endtabs %}
 
-3) To navigate the next or previous card by using Next and Previous method. At runtime, the particular card should be selected using the `SelectedCard` property.
+3. Navigate to the next or previous card using the Next and Previous methods. At run time, a particular card can be selected using the `SelectedCard` property.
 
 {% tabs %}
 {% highlight c# %}
