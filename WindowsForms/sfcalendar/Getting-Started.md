@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | Calendar | WindowsForms | Syncfusion
+title: Getting Started with SfCalendar | WindowsForms | Syncfusion
 description: How to add SfCalendar and explore its basic features.
 platform: WindowsForms
 control: SfCalendar 
@@ -67,17 +67,98 @@ Imports Syncfusion.WinForms.Input
 
 {% highlight C# %}
 
-SfCalendar sfCalendar = new SfCalendar();
+SfCalendar calendar = new SfCalendar();
 
-this.Controls.Add(sfCalendar);
+this.Controls.Add(calendar);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim sfCalendar As SfCalendar = New SfCalendar
+Dim calendar As SfCalendar = New SfCalendar
 
-Me.Controls.Add(sfCalendar)
+Me.Controls.Add(calendar)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Select a date
+
+At run time, a particular date should be focused or selected by using the `SelectedDate` property. This property is also used to change the current date of SfCalendar.
+
+{% tabs %}
+
+{% highlight C# %}
+
+calendar.SelectedDate = new System.DateTime(2019, 08, 12);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.SelectedDate = New System.DateTime(2019, 08, 12)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Select the date in WF SfCalendar](Getting-Started-images/selecteddate.png)
+
+### Selection change event
+
+The SfCalendar control notifies the date changes through `SelectionChanging` and `SelectionChanged` event. You can use `NewValue` and `OldValue` property to get the old and new date in `SelectionChanged` event. In `SelectionChanging` event, you can use the `Cancel` property in event argument to avoid the date changes or mentioned date in SfCalendar.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Invoking selection changing event
+calendar.SelectionChanging += Calendar_SelectionChanging;
+
+// Invoking selection changed event
+calendar.SelectionChanged += Calendar_SelectionChanged;
+
+// Occurs before the selected date changed in Calendar.
+private void Calendar_SelectionChanging(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.SelectionChangingEventArgs e)
+{
+    var newDate = e.NewValue;
+    if (newDate == new System.DateTime(2019,08,13))
+        e.Cancel = true;            
+}
+
+// Occurs after the selected date changed in Calendar.
+private void Calendar_SelectionChanged(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.SelectionChangedEventArgs e)
+{
+    var newDate = e.NewValue;
+    var oldDate = e.OldValue;
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'INSTANT VB NOTE: This code snippet uses implicit typing. You will need to set 'Option Infer On' in the VB file or set 'Option Infer' at the project level:
+
+' Invoking selection changing event
+Private calendar.SelectionChanging += AddressOf Calendar_SelectionChanging
+
+' Invoking selection changed event
+Private calendar.SelectionChanged += AddressOf Calendar_SelectionChanged
+
+' Occurs before the selected date changed in Calendar.
+Private Sub Calendar_SelectionChanging(ByVal sender As Syncfusion.WinForms.Input.SfCalendar, ByVal e As Syncfusion.WinForms.Input.Events.SelectionChangingEventArgs)
+	Dim newDate = e.NewValue
+	If newDate Is New System.DateTime(2019,08,13) Then
+		e.Cancel = True
+	End If
+End Sub
+
+' Occurs after the selected date changed in Calendar.
+Private Sub Calendar_SelectionChanged(ByVal sender As Syncfusion.WinForms.Input.SfCalendar, ByVal e As Syncfusion.WinForms.Input.Events.SelectionChangedEventArgs)
+	Dim newDate = e.NewValue
+	Dim oldDate = e.OldValue
+End Sub
 
 {% endhighlight %}
 
