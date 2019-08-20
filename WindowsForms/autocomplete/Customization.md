@@ -45,7 +45,6 @@ Specifies the AutoCompletePopup column header style.</td></tr>
 {% tabs %}
 
 {% highlight C# %}
-
     // Specifies the header fore color of the AutoComplete popup.
     this.autoComplete1.HeaderForeColor = Color.Red;
 
@@ -153,7 +152,8 @@ Specifies preferred width for the dropdown displayed by the AutoComplete compone
 
 {% highlight C# %}
 
-this.autoComplete1.AdjustHeightToItemCount = false;this.autoComplete1.AutoPersistentDropDownSize = true;
+this.autoComplete1.AdjustHeightToItemCount = false;
+this.autoComplete1.AutoPersistentDropDownSize = true;
 this.autoComplete1.PreferredHeight = 100;
 this.autoComplete1.PreferredWidth = 300;
 
@@ -385,7 +385,7 @@ this.autoComplete1.LoadCurrentState(aser);
 {% endhighlight %}
 
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Imports Syncfusion.Runtime.Serialization
 
@@ -421,7 +421,7 @@ aser.PersistNow();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 Dim ms As MemoryStream = New MemoryStream()
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.BinaryFmtStream, ms)
@@ -447,7 +447,7 @@ this.autoComplete1.LoadCurrentState(aser);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' Code to retrieve data(stream) from database.
 
@@ -477,7 +477,7 @@ this.autoComplete1.LoadCurrentState(aser);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' To save
 
@@ -512,7 +512,7 @@ this.autoComplete1.LoadCurrentState(aser);
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight VB %}
 
 ' To save
 Private aser As AppStateSerializer = New AppStateSerializer(SerializeMode.IsolatedStorage, "myfile")
