@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting started
 
-This section explains how to design a **TabbedMDIManager** control in a Windows Forms application and overview of its basic functionalities.
+This section explains how to design a **TabbedMDIManager** control in a Windows Forms application and overview its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or details of NuGet package needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding TabbedMDIManger control via designer
 
-1) Create a new Windows Forms project in the Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
-2) The [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. Add the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -32,17 +32,17 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ![Windows Forms TabbedMDI drag and drop from toolbox](GettingStarted_images/Search.png)
 
-As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it changes to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
+As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it is changed to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
 
 ![Windows Forms TabbedMDI added into the form](GettingStarted_images/ControlAdded.png)
  
 ## Adding control manually in code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C#, follow the given steps:
 
-1) Create C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add control manually in C#, follow the given steps:
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager_members.html) control. 
+4. Create an instance of the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager_members.html) control. 
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ We can attach the `Form1` to TabbedMDIManager container by using its [AttachToMd
 
 this.IsMdiContainer = true;
 
-// Use [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html) function only when `AttachedTo` property of TabbedMDIManager is not set to Form1. 
+// Use the [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html) function only when the `AttachedTo` property of TabbedMDIManager is not set to Form1. 
 
 this.tabbedMDIManager.AttachToMdiContainer(this);
 this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful);
