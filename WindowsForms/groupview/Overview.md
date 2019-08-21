@@ -14,12 +14,12 @@ The [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusio
 
 ## Key features 
 
-**Text settings** - Provides options to customize color, underline, text wrap, rename and spacing of the text in runtime.
+**Text settings** - Provides options to customize color, underline, text wrap, rename, and spacing of the text at run time.
 
 **Image settings** - Provides options to add large images or small images and to customize their appearance and user interactive offsets.
 
-**Drag and drop** - Provides option to drag and drop all the objects within GroupView container.
+**Drag and drop** - Provides options to drag and drop all the objects within GroupView container.
 
-**Spacing** - Provides support to set the user-defined image spacing, text spacing, X and Y spacing in between items using int values.
+**Spacing** - Provides support to set the user-defined image spacing, text spacing, and X and Y spacing in between items using int values.
 
-**Visual style** - Supports rich set of visual styles to customize the look and feel of GroupView.
+**Visual style** - Supports a rich set of visual styles to customize the look and feel of GroupView.
