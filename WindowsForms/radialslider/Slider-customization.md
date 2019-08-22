@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slider-customization | RadialSlider |  WindowsForms | Syncfusion
-description: This section explains appearence customization for RadialSlider.
+description: This section explains the appearence customization of RadialSlider.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -31,11 +31,9 @@ radialSlider1.BackgroundColor = System.Drawing.SystemColors.Navy
 
 ![RadialSlider background color](Slider-customization_images/Slider-customization_img1.png)
 
-
-
 ## Circle color
 
-The Circle color of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the properties [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~InnerCircleColor.html) and [OuterCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~OuterCircleColor.html).
+The circle color of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~InnerCircleColor.html) and [OuterCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~OuterCircleColor.html) properties.
 
 {% tabs %}
 
@@ -57,11 +55,9 @@ radialSlider1.OuterCircleColor = System.Drawing.Color.Blue
 
 ![RadialSlider control inner circle color customized](Slider-customization_images/Slider-customization_img2.png)
 
-
-
 ## Needle color
 
-The needle color of the **RadialSlider** can be customized using [SliderNeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderNeedleColor.html).
+The needle color of the **RadialSlider** can be customized using the [SliderNeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderNeedleColor.html) property.
 
 {% tabs %}
 
@@ -81,11 +77,9 @@ radialSlider1.SliderNeedleColor = System.Drawing.Color.DarkViolet
 
 ![Needle color customized](Slider-customization_images/Slider-customization_img3.png)
 
-
-
 ## Fore color
 
-The foreground color of the **RadialSlider** can be customized using [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2).
+The foreground color of the **RadialSlider** can be customized using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property.
 
 {% tabs %}
 
@@ -105,8 +99,6 @@ radialSlider1.ForeColor = System.Drawing.Color.BlueViolet
 {% endtabs %}
 
 ![RadialSlider fore color customized](Slider-customization_images/Slider-customization_img4.png)
-
-
 
 ## Needle type
 
@@ -135,9 +127,9 @@ radialSlider1.NeedleType = Syncfusion.Windows.Forms.Tools.SliderNeedleType.Dot
 
 ## Visual Style
 
-The **RadialSlider** control has rich set of themes for professional representation. You can easily modify the look and feel of the RadialSlider using the built-in themes.
+The **RadialSlider** control contains a rich set of themes for professional representation. You can easily modify the look and feel of the RadialSlider using built-in themes.
 
-It has the below themes.
+The following options are available in RadialSlider:
 
 * Default
 * Office2016Colorful
@@ -145,10 +137,9 @@ It has the below themes.
 * Office2016DarkGray
 * Office2016Black
 
-
 ### Default
 
-This option helps to set the Default theme.
+This option helps to set the default theme.
 
 {% tabs %}
 
