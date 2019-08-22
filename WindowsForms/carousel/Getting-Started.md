@@ -9,21 +9,21 @@ documentation: ug
 
 # Getting started
 
-This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities. Carousel control is a circular conveyor used for displaying and rotating the custom controls or images objects
+This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities. The Carousel control is a circular conveyor used for displaying and rotating the custom controls or image objects.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#carousel) section to get the list of assemblies or NuGet package details that need to be added as reference to use the control in any application. 
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#carousel) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application. 
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in any application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in an application.
 
 ## Adding Carousel control via designer
 
-The following steps describe how to create a **Carousel** control via the designer.
+The following steps describe how to create a **Carousel** control via designer.
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2. Add the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,14 +34,13 @@ The following steps describe how to create a **Carousel** control via the design
 
 ![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
 
-
 ## Adding Carousel control via code
 
-The following steps illustrate how to create an **Carousel** control programmatically.
+The following steps describe how to create a **Carousel** control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project.
+2. Add the following assembly references to the project:
 
  * Syncfusion.Grid.Base
  * Syncfusion.Grid.Windows
@@ -50,7 +49,7 @@ The following steps illustrate how to create an **Carousel** control programmati
  * Syncfusion.Tools.Base
  * Syncfusion.Tools.Windows
 
-3) Include the required namespaces.
+3. Include the required namespaces.
 
 {% tabs %}
 
@@ -68,7 +67,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control and add it to the form.
+4. Create an instance of the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
 
 {% tabs %}
 
@@ -90,7 +89,7 @@ Me.Controls.Add(carousel1)
 
 ## Adding controls into Carousel
 
-You can load custom controls in Carousel, it needs to added into [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
+You can load custom controls in Carousel, and it needs to be added into the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~Items.html) collection property in Carousel class.
 
 {% tabs %}
 
@@ -104,7 +103,7 @@ ButtonAdv buttonAdv4 =new ButtonAdv();
 ButtonAdv buttonAdv5 =new ButtonAdv();
 ButtonAdv buttonAdv6 =new ButtonAdv();
 
-//Set the properties for all buttonadv controls
+//Set the properties for all buttonadv control
 buttonAdv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
 buttonAdv1.ForeColor = System.Drawing.Color.White;
 
