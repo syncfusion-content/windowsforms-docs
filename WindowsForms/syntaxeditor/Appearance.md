@@ -289,7 +289,7 @@ With RTL support, you can use the EditControl to render the content in Right-To-
 
 ### Change Right-to-Left layout by keyboard
 
-Supports rendering the content in Right-To-Left (RTL) layout by pressing <kbd>RShift + ctrl</kbd> and <kbd>LShift + ctrl</kbd> for render back to left side.
+Supports rendering the content in Right-To-Left (RTL) layout by pressing <kbd>RShift + ctrl</kbd> and <kbd>LShift + ctrl</kbd> for render back Left-To-Right (LTR).
 
 ## Customize text appearance
 
