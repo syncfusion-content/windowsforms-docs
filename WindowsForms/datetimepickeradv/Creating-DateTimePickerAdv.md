@@ -99,6 +99,30 @@ Me.dateTimePickerAdv5.Format = System.Windows.Forms.DateTimePickerFormat.Time
 
 ![DateTimePickerAdv date format](DateTimePicker_images/wf-date-time-picker-format.png) 
 
+### Custom format
+
+You can create your own format style using format characters using CustomFormat.
+
+#### To Display the custom format
+
+1.	Set the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Format.html) property to DateTimePickerFormat.Custom.
+2.	Set the CustomFormat property to a format string.
+
+{% tabs %}
+{% highlight C# %}
+// Set the Format type and the CustomFormat string.
+this.dateTimePickerAdv1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+this.dateTimePickerAdv1.CustomFormat = "MMMM/yyyy";
+{% endhighlight %}
+{% highlight VB %}
+'Set the Format type and the CustomFormat string.
+Me.dateTimePickerAdv1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+Me.dateTimePickerAdv1.CustomFormat = "MMMM/yyyy"
+{% endhighlight %}
+{% endtabs %}
+
+![DateTimePickerAdv date format](DateTimePicker_images/CustomFormat.png) 
+
 ## Editing modes
 
 You can edit the date values in the DateTimePickerAdv control directly.
