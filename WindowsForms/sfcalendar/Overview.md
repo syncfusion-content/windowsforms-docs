@@ -9,26 +9,25 @@ documentation: ug
 
 # Overview
 
-The **SfCalendar** is a control that allows you to select a date from the calendar and various customization options for the calendar. This provides multiple views of the month, year, decade, and century, so that dates can be selected easily. The **SfCalendar** supports multiple selection and complete customization option for the control.
+The **SfCalendar** is a control that allows you to select a date from calendar, and it provides various customization options for the calendar. This provides multiple views of the month, year, decade, and century, so that dates can be selected easily. The **SfCalendar** supports multiple selection and provides complete customization options to the control.
 
 ![Overview of SfCalendar](overview_images/overview.png)
 
 ## Key features
 
-**Different views** - Supports for month, year, decade, and century views to quickly select dates.
+**Different views** - Supports month, year, decade, and century views to quickly select a date.
 
-**Date-range support** - Provides maximum and minimum date support to prevent users from selecting dates within a specified range.
+**Date-range support** - Provides maximum and minimum dates support to prevent users from selecting dates within a specified range.
 
-**Globalization and localization** - Supports for localized first day of the week, localized static text, and day names based on the culture.
+**Globalization and localization** - Supports localizing the first day of a week, localizing static text, and day names based on the culture.
 
-**Special dates** - Supports for highlighting special dates with icons and descriptions.
+**Special dates** - Supports highlighting special dates with icons and descriptions.
 
-**Blackout dates** - Supports for blocking certain dates from selection and user interaction. Separate styles can be applied to blackout dates. 
+**Blackout dates** - Supports blocking a certain dates from selection and user interaction. Separate styles can be applied to blackout dates.
 
-**Accessibility** - Touch, keyboard, and mouse support to make applications available to a wide variety of users.
+**Accessibility** - Provides touch, keyboard, and mouse supports to make applications available to a wide variety of users.
 
 **Testing** - Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfcalendar) to recognize SfCalendar.
-
 
 ## Choose between different calendar controls
 
