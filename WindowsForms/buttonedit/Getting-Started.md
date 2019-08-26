@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: Creating ButtonEdit
+description: Steps to add button edit in WinForms application.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -20,9 +20,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a ButtonEdit control through designer
 
-The **"ButtonEdit"** control can be added through designer by following steps.
-
-**Step 1**: The **"ButtonEdit"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ButtonEdit from toolbox into form design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -31,41 +29,35 @@ The **"ButtonEdit"** control can be added through designer by following steps.
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-   ![Drag and drop ButtonEdit from toolbox](Overview_images/Overview_img79.jpeg) 
-
-**Step 2**: When the control is initially added to the form, it appears like an edit control with no buttons.
+![ButtonEdit control from toolbox](Overview_images/Overview_img79.jpeg) 
 
 ![Showing control added to the form](Overview_images/Overview_img80.jpeg) 
 
-**Step 3**: We can add child buttons to the control using **"ButtonEditChildButton Collection Editor"** which is displayed by `Buttons` property.
+![Windows Form ButtonAdv Assembly reference added to application](Overview_images/buttonedit_reference.png) 
 
-   ![Showing add new child buttons in to the control](Overview_images/Overview_addchild.png)
+**Step 2**: When the control is initially added to the form, it appears like an edit control with no buttons. Set the desired properties for **"ButtonEdit"** control using the **"Properties"** dialog window. Similarly you can add the child buttons for the ButtonEdit using **ButtonEditChildButton Collection Editor"** property. Here, we have illustrated how to add child buttons and how to access the ButtonEdit properties.
 
-Editor can also be accessed using Smart Tag option.
+![Showing properties pane customizing ButtonEditi control](Overview_images/Overview_addchild.png)
 
-![Showing add new child through smarttag](Overview_images/Overview_smarttag.png)
+![Showing Button child buttons collection editor](Overview_images/Overview_editchild.png)
 
-**Step 4**: Now, the **"ButtonEditChildButton Collection Editor"** dialog will be opened. Then, click **"Add"** for adding new child buttons to the control.
+**Step 3**: Run the application and the following output will be shown:
 
-   ![Showing add child buttons through the collection editor](Overview_images/Overview_editchild.png)
-
-
-N> You can also add or remove child buttons through the **"Add"** or **"Remove"** button.
-
+![Showing ButtonEdit through desginer](Overview_images/Buttoneditmetro.png)
 
 ## Adding a ButtonEdit control through Code
 
-To create a **"ButtonEdit"** control programmatically, follow the below steps.
+**Step 1**:  Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project. 
 
-**Step 1**: Create a C# or VB application through Visual Studio.
-
-**Step 2**: Add the following assembly reference to the project.
-
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-**Step 3**: Include the required namespace.
-
 {% tabs %}
+
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
@@ -77,180 +69,137 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}   
+
 {% endtabs %}
    
-**Step 4**: Create an instance of **"ButtonEdit"**, **"TextBox"** and **"ButtonEditChildButton"**.
+![Showing ButtonEdit dependency assembly reference](Overview_images/ButtonEdit_imagereference.png)
+
+**Step 2**: In Form1.cs, create an instance of **"ButtonEdit"** control and add in to the form. Also you can customize the ButtonEdit properties using the following code.
 
 {% tabs %}
-{% highlight c# %}
-   
-private Syncfusion.Windows.Forms.Tools.ButtonEdit buttonEdit1;
-private System.Windows.Forms.TextBox textBox1;
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton1;
-this.buttonEdit1=new Syncfusion.Windows.Forms.Tools.ButtonEdit();
-this.textBox1=new TextBox();
-this.buttonEditChildButton1=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
 
+{% highlight c# %}
+
+public Form1()
+{
+            
+            InitializeComponent();
+            ButtonEdit ButtonEdit = new ButtonEdit();
+            ButtonEdit.UseVisualStyle = true;
+            ButtonEdit.ThemeName = "Office2019Colorful";
+            ButtonEdit.Location = new System.Drawing.Point(367, 135);
+            ButtonEdit.Name = "buttonEdit1";
+            ButtonEdit.Size = new System.Drawing.Size(121, 21);
+            this.Controls.Add(ButtonEdit);
+
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private buttonEdit1 As Syncfusion.Windows.Forms.Tools.ButtonEdit
-Private textBox1 As System.Windows.Forms.TextBox
-Private buttonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-Me.buttonEdit1 = New Syncfusion.Windows.Forms.Tools.ButtonEdit()
-Me.textBox1 = New TextBox()
-Me.buttonEditChildButton1 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
+Public Sub New()
+
+    InitializeComponent()
+    Dim ButtonEdit As ButtonEdit = New ButtonEdit()
+    ButtonEdit.UseVisualStyle = True
+    ButtonEdit.ThemeName = "Office2019Colorful"
+    ButtonEdit.Location = New System.Drawing.Point(367, 135)
+    ButtonEdit.Name = "buttonEdit1"
+    ButtonEdit.Size = New System.Drawing.Size(121, 21)
+    Me.Controls.Add(ButtonEdit)
+    
+End Sub
 
 {% endhighlight %}
-{% endtabs %}
- 
-**Step 5**: Embed the textBox1 to the TextBox of **"ButtonEdit"**.
 
-{% tabs %}
-{% highlight c# %}
-   
-//Associating the TextBoxExt control.
-this.buttonEdit1.TextBox=this.textBox1;
-
-{% endhighlight %} 
-
-{% highlight vb %}
-
-'Associating the TextBoxExt control.
-Me.buttonEdit1.TextBox=Me.textBox1
-
-{% endhighlight %}
 {% endtabs %}
 
-**Step 6**: Set the text for the buttons.
+**Step 3**: Run the application and the following output will be shown.
 
-{% tabs %}
-{% highlight c# %}
+![Showing ButtonEdit through code](Overview_images/buttonedit_image.png)
 
-//Setting text for child Buttons.
-this.buttonEditChildButton1.Text = "R";
+## Embed the TextBox and ChildButtons to ButtonEdit control
 
-{% endhighlight %}
-
-{% highlight vb %}
-
-
-'Setting text for child Buttons
-Me.buttonEditChildButton1.Text = "R"
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 7**: Add **"ButtonEditChildButtons"** to the **"ButtonEdit"** which then add it to the form.
-
-{% tabs %}
-{% highlight c# %}
-
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
-this.Controls.Add(this.buttonEdit1);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
-Me.Controls.Add(Me.buttonEdit1)
-
-{% endhighlight %}
-{% endtabs %}
-
-
-
-## Adding child buttons
-
-**Step 1**: Add the child buttons to the control using below code.
+ButtonEdit control is a combination of textbox and buttons. It contains **TextBox** property to embed the instance of the textbox control. Also, we can set different types of textbox such as PercentTextBox, IntegerTextBox, etc. Meanwhile we can add child buttons in **Buttons** collection.
 
 {% tabs %}
 
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.ButtonEdit buttonEdit1;
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton1;
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton2;
-private Syncfusion.Windows.Forms.Tools.ButtonEditChildButton buttonEditChildButton3;
-this.buttonEdit1=new Syncfusion.Windows.Forms.Tools.ButtonEdit();
-this.buttonEditChildButton1=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
-this.buttonEditChildButton2=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
-this.buttonEditChildButton3=new Syncfusion.Windows.Forms.Tools.ButtonEditChildButton();
+public Form1()
+{
+            
+            InitializeComponent();
+            Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
+            Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton1;
+            Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton2;
+            Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton3;
+            ButtonEdit ButtonEdit = new ButtonEdit();
+            ButtonEdit.UseVisualStyle = true;
+            ButtonEdit.ThemeName = "Office2019Colorful";
+            ButtonEdit.Location = new System.Drawing.Point(367, 135);
+            ButtonEdit.Name = "ButtonEdit1";
+            ButtonEdit.Size = new System.Drawing.Size(121, 21);
+            textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            ButtonEditChildButton1 = new ButtonEditChildButton();
+            ButtonEditChildButton2 = new ButtonEditChildButton();
+            ButtonEditChildButton3 = new ButtonEditChildButton();
+            //Embedding text in TextBox
+            ButtonEdit.TextBox = textBoxExt1;
+            ButtonEdit.Controls.Add(this.textBoxExt1);
+            //Aligning the child button
+            ButtonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
+            //Setting text for child buttons
+            ButtonEditChildButton1.Text = "L";
+            ButtonEditChildButton2.Text = "R";
+            ButtonEditChildButton3.Text = "E";
+            //Adding child buttons 
+            ButtonEdit.Buttons.Add(ButtonEditChildButton1);
+            ButtonEdit.Buttons.Add(ButtonEditChildButton2);
+            ButtonEdit.Buttons.Add(ButtonEditChildButton3);
+            this.Controls.Add(ButtonEdit);
+
+}
+
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private buttonEdit1 As Syncfusion.Windows.Forms.Tools.ButtonEdit
-Private buttonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-Private buttonEditChildButton2 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-Private buttonEditChildButton3 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-Me.buttonEdit1 = New Syncfusion.Windows.Forms.Tools.ButtonEdit()
-Me.buttonEditChildButton1 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
-Me.buttonEditChildButton2 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
-Me.buttonEditChildButton3 = New Syncfusion.Windows.Forms.Tools.ButtonEditChildButton()
+Public Sub New()
 
+    InitializeComponent()
+    Dim textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
+    Dim ButtonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+    Dim ButtonEditChildButton2 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+    Dim ButtonEditChildButton3 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+    Dim ButtonEdit As ButtonEdit = New ButtonEdit()
+    ButtonEdit.UseVisualStyle = True
+    ButtonEdit.ThemeName = "Office2019Colorful"
+    ButtonEdit.Location = New System.Drawing.Point(367, 135)
+    ButtonEdit.Name = "ButtonEdit1"
+    ButtonEdit.Size = New System.Drawing.Size(121, 21)
+    textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+    ButtonEditChildButton1 = New ButtonEditChildButton()
+    ButtonEditChildButton2 = New ButtonEditChildButton()
+    ButtonEditChildButton3 = New ButtonEditChildButton()
+    'Embedding text in TextBox
+    ButtonEdit.TextBox = textBoxExt1
+    ButtonEdit.Controls.Add(Me.textBoxExt1)
+    ButtonEditChildButton1.ButtonAlign = ButtonAlignment.Left
+    ButtonEditChildButton1.Text = "L"
+    ButtonEditChildButton2.Text = "R"
+    ButtonEditChildButton3.Text = "E"
+    'Adding child buttons 
+    ButtonEdit.Buttons.Add(ButtonEditChildButton1)
+    ButtonEdit.Buttons.Add(ButtonEditChildButton2)
+    ButtonEdit.Buttons.Add(ButtonEditChildButton3)
+    Me.Controls.Add(ButtonEdit)
+
+End Sub
 {% endhighlight vb %}
 
 {% endtabs %}
 
-**Step 2**: Add child buttons to the **"ButtonEdit"** which then add it to the form.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton1);
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton2);
-this.buttonEdit1.Buttons.Add(this.buttonEditChildButton3);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton1)
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton2)
-Me.buttonEdit1.Buttons.Add(Me.buttonEditChildButton3)
-
-{% endhighlight vb %}
-
-{% endtabs %}
-
-**Step 3**: Set the alignment and text for the buttons.
-
-{% tabs %}
-
-{% highlight c# %}
-
-//Setting Button alignment for ChildButton1
-
-//By default the alignment for other buttons will be right
-this.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left;
-
-//Setting text for child Buttons.
-this.buttonEditChildButton1.Text = "L";
-this.buttonEditChildButton2.Text = "R";
-this.buttonEditChildButton3.Text = "E";
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-'Setting Button alignment for Child Button 1. 
-
-'By default the alignment for other buttons will be right
-Me.buttonEditChildButton1.ButtonAlign = ButtonAlignment.Left
-
-'Setting text for child Buttons
-Me.buttonEditChildButton1.Text = "L"
-Me.buttonEditChildButton2.Text = "R"
-Me.buttonEditChildButton3.Text = "E"
-
-{% endhighlight vb %}
-
-{% endtabs %}
-
-![Windows Forms ButtonEdit showing output](Overview_images/Overview_output.png)
+![Windows Forms ButtonEdit Text and child buttons add through code](Overview_images/Buttoneditembedchildbuttons.png)

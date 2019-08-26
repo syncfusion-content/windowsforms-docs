@@ -19,11 +19,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a SplitButton control through designer
 
-The **"SplitButton"** control can be added through designer by following steps.
-
-**Step 1**: Create a new Windows Forms application in Visual Studio. 
-
-**Step 2**: The **"SplitButton"** control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -32,17 +28,26 @@ The **"SplitButton"** control can be added through designer by following steps.
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
+![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/SplitButton_Images.png)
 
-   ![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
+![Windows forms SplitButton dependency assembly reference](Getting-Started_images/SplitButton_reference.png)
 
-**Step 3**: Set the desired properties for **"SplitButton"** control through the **"Properties"** dialog.
+**Step 2**: Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
+
+![Windows forms SplitButton properties pane](Getting-Started_images/SplitButtonItem_collection2.png)
+
+
+![Windows forms SplitButton toolbox customization](Getting-Started_images/SplitButton_itemeditor.png)
+
+
+**Step 3**: Run the application and the following output will be shown.
+
+![Windows forms SplitButton through designer](Getting-Started_images/SplitButtonitems_throughdesigner.png)
 
 
 ## Adding a SplitButton control through code
 
-**Step 1**: Create a C# or VB application though Visual Studio.
-
-**Step 2**: Add the following assembly reference to the project.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,12 +56,11 @@ The **"SplitButton"** control can be added through designer by following steps.
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-**Step 3**: Include the required namespace.
-
 {% tabs %}
-{% highlight c# %}
 
-using Syncfusion.Windows.Forms.Tools;
+{% highlight C#%}
+
+Using Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 
@@ -65,26 +69,227 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
+
 {% endtabs %}
 
-**Step 4**: Create an instance of **"SplitButton"** control and add it to the form.
+![Windows forms SplitButton](Getting-Started_images/SplitButton_imagereference.png)
+
+
+**Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
 
 {% tabs %}
-{% highlight c# %}
 
-Syncfusion.Windows.Forms.Tools.SplitButton splitButton1;
-splitButton1 = new Syncfusion.Windows.Forms.Tools.SplitButton();
-this.Controls.Add(splitButton1);
+{% highlight C# %}
+
+public Form1()
+{
+            
+            InitializeComponent();
+            SplitButton Splitbutton = new SplitButton();
+            Splitbutton.Location = new System.Drawing.Point(236, 115);         
+            Splitbutton.Name = "splitButton1";
+            Splitbutton.Size = new System.Drawing.Size(154, 61);
+            Splitbutton.Text = "SplitButton";
+            Splitbutton.ThemeName = "Office2019Colorful";
+            this.Controls.Add(Splitbutton);
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Dim splitButton As Syncfusion.Windows.Forms.Tools.SplitButton1
-splitButton1 = New Syncfusion.Windows.Forms.Tools.SplitButton()
-Me.Controls.Add(splitButton1)
+Public Sub New()
+
+    InitializeComponent()
+    Dim Splitbutton As SplitButton = New SplitButton()
+    Splitbutton.Location = New System.Drawing.Point(236, 115)
+    Splitbutton.Name = "splitButton1"
+    Splitbutton.Size = New System.Drawing.Size(154, 61)
+    Splitbutton.Text = "SplitButton"
+    Splitbutton.ThemeName = "Office2019Colorful"
+    Me.Controls.Add(Splitbutton)
+
+End Sub
 
 {% endhighlight %}
+
 {% endtabs %}
 
+**Step 3**: Run the application and the following output will be shown.
 
+![Windows forms SplitButton through code](Getting-Started_images/SplitButton_Imagethroughcode.png)
+
+
+### Adding and removing item to dropdown list
+
+In SplitButton, we can add or remove items using **Add** and **Remove** methods of the **DropDownItems** **SplitButtonItemsCollection** property. The following code illustrates how to add and remove items in SplitButton.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ public partial class Form1 : MetroForm
+ {
+        
+        SplitButton Splitbutton;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem1;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem2;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem3;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem4;
+        private Syncfusion.Windows.Forms.Tools.toolstripitem toolstripitem5;
+
+        public Form1()
+        {
+            InitializeComponent();
+            Splitbutton = new SplitButton();
+            SplitButton Splitbutton = new SplitButton();
+            Splitbutton.Click += Splitbutton_Click;
+            Splitbutton.Location = new System.Drawing.Point(236, 115);         
+            Splitbutton.Name = "splitButton1";
+            Splitbutton.Size = new System.Drawing.Size(154, 61);
+            Splitbutton.Text = "SplitButton";
+            Splitbutton.ThemeName = "Office2019Colorful";
+
+            //// 
+            //// toolstripitem1
+            //// 
+            toolstripitem1 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            toolstripitem1.Name = "toolstripitem1";
+            toolstripitem1.Size = new System.Drawing.Size(23, 23);
+            toolstripitem1.Text = "Australia";
+
+            //// 
+            //// toolstripitem2
+            //// 
+            toolstripitem2 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            toolstripitem2.Name = "toolstripitem2";
+            toolstripitem2.Size = new System.Drawing.Size(23, 23);
+            toolstripitem2.Text = "Europe";
+
+            //// 
+            //// toolstripitem3
+            //// 
+            toolstripitem3 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            toolstripitem3.Name = "toolstripitem3";
+            toolstripitem3.Size = new System.Drawing.Size(23, 23);
+            toolstripitem3.Text = "India";
+
+            //// 
+            //// toolstripitem4
+            //// 
+            toolstripitem4 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            toolstripitem4.Name = "toolstripitem4";
+            toolstripitem4.Size = new System.Drawing.Size(23, 23);
+            toolstripitem4.Text = "USA";
+
+            //// 
+            //// toolstripitem5
+            //// 
+            toolstripitem5 = new Syncfusion.Windows.Forms.Tools.toolstripitem();
+            toolstripitem5.Name = "toolstripitem5";
+            toolstripitem5.Size = new System.Drawing.Size(23, 23);
+            toolstripitem5.Text = "UK";
+
+            //
+            //Adding item to SplitButton DropDown
+            //
+            Splitbutton.DropDownItems.Add(toolstripitem1);
+            Splitbutton.DropDownItems.Add(toolstripitem2);
+            Splitbutton.DropDownItems.Add(toolstripitem3);
+            Splitbutton.DropDownItems.Add(toolstripitem4);
+            Splitbutton.DropDownItems.Add(toolstripitem5);
+            this.Controls.Add(Splitbutton);
+        }
+
+        private void Splitbutton_Click1(object sender, EventArgs e)
+        {
+            // Removing item from SplitButton DropDown
+            Splitbutton.DropDownItems.Remove(this.toolstripitem2);
+        }   
+}
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Public Partial Class Form1
+    Inherits MetroForm
+
+    Private Splitbutton As SplitButton
+    Private toolstripitem1 As Syncfusion.Windows.Forms.Tools.toolstripitem
+    Private toolstripitem2 As Syncfusion.Windows.Forms.Tools.toolstripitem
+    Private toolstripitem3 As Syncfusion.Windows.Forms.Tools.toolstripitem
+    Private toolstripitem4 As Syncfusion.Windows.Forms.Tools.toolstripitem
+    Private toolstripitem5 As Syncfusion.Windows.Forms.Tools.toolstripitem
+
+    Public Sub New()
+        InitializeComponent()
+        Splitbutton = New SplitButton()
+        Dim Splitbutton As SplitButton = New SplitButton()
+        Splitbutton.Click += Splitbutton_Click
+        Splitbutton.Location = New System.Drawing.Point(236, 115)
+        Splitbutton.Name = "splitButton1"
+        Splitbutton.Size = New System.Drawing.Size(154, 61)
+        Splitbutton.Text = "SplitButton"
+        Splitbutton.ThemeName = "Office2019Colorful"
+           
+
+        'toolstripitem1   
+
+        toolstripitem1 = New Syncfusion.Windows.Forms.Tools.toolstripitem()
+        toolstripitem1.Name = "toolstripitem1"
+        toolstripitem1.Size = New System.Drawing.Size(23, 23)
+        toolstripitem1.Text = "Australia"
+ 
+        'toolstripitem2
+
+        toolstripitem2 = New Syncfusion.Windows.Forms.Tools.toolstripitem()
+        toolstripitem2.Name = "toolstripitem2"
+        toolstripitem2.Size = New System.Drawing.Size(23, 23)
+        toolstripitem2.Text = "Europe"
+
+        'toolstripitem3
+
+        toolstripitem3 = New Syncfusion.Windows.Forms.Tools.toolstripitem()
+        toolstripitem3.Name = "toolstripitem3"
+        toolstripitem3.Size = New System.Drawing.Size(23, 23)
+        toolstripitem3.Text = "India"
+
+        'toolstripitem4
+
+        toolstripitem4 = New Syncfusion.Windows.Forms.Tools.toolstripitem()
+        toolstripitem4.Name = "toolstripitem4"
+        toolstripitem4.Size = New System.Drawing.Size(23, 23)
+        toolstripitem4.Text = "USA"
+
+        'toolstripitem5
+        toolstripitem5 = New Syncfusion.Windows.Forms.Tools.toolstripitem()
+        toolstripitem5.Name = "toolstripitem5"
+        toolstripitem5.Size = New System.Drawing.Size(23, 23)
+        toolstripitem5.Text = "UK"
+
+         
+        'Adding item to SplitButton DropDown
+         
+        Splitbutton.DropDownItems.Add(toolstripitem1)
+        Splitbutton.DropDownItems.Add(toolstripitem2)
+        Splitbutton.DropDownItems.Add(toolstripitem3)
+        Splitbutton.DropDownItems.Add(toolstripitem4)
+        Splitbutton.DropDownItems.Add(toolstripitem5)
+        Me.Controls.Add(Splitbutton)
+    End Sub
+
+    Private Sub Splitbutton_Click1(ByVal sender As Object, ByVal e As EventArgs)
+        'Removing item from SplitButton DropDown
+        Splitbutton.DropDownItems.Remove(Me.toolstripitem2)
+    End Sub
+End Class
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows forms SplitButton Adding items](Getting-Started_images/SplitButtonitems_throughdesigner.png)
+
+![Windows forms SplitButton removing items](Getting-Started_images/SplitButton_removeitemthroughcode.png)
