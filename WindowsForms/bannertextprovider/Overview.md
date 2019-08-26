@@ -3,25 +3,21 @@ layout: post
 title: Overview of Syncfusion BannerTextProvider for Windows Forms
 description: Overview of BannerTextProvider which deals with the water mark support for editor controls with the support to set color to the text
 platform: WindowsForms
-control: BannerTextProviderComponent
+control: BannerTextProvider
 documentation: ug
 ---
 
 # Overview
 
+Syncfusion introduces a BannerTextProvider class that allows to display watermark in the Editor controls. It can be used as an information when the mapped edit control contains empty content.
 
-Syncfusion introduces BannerTextProvider class that provides the ability to display banner text in Editor controls.
+![Overview of BannerTextProvider](Overview_images/overview.png) 
 
- ![Overview of BannerTextProvider](Overview_images/Overview_img2.jpeg) 
+## Key features
 
+The BannerTextProvider contains the following features:
 
+**Text Mode** - Allows you to control visibility of the banner text using FocusMode and EditMode.
 
-## Key Features
-BannerTextProvider contains the following features.
-
-* You can set Mode for BannerText control.
-* You can set color to the BannerText in BannerTextProvider control.
-
-
-
+**Text color** - Allows you to set color to the BannerText in the BannerTextProvider control.
 
