@@ -182,7 +182,7 @@ MessageBox.Show(this.dockingManager1.IsFrozenToDocumentState(this.panel1).ToStri
 
 ## Creating Document Tab Group
 
-The DockingManger allows to create document tab groups like Visual Studio. The document tab groups can be grouped by drag and Drop and also using the options in context menu items.
+The DockingManger allows to create document tab groups like Visual Studio. The document tab groups can be grouped using the drag-and-drop operations and also using the options in context menu items.
 
 ### Create tab group using context menu option
 
@@ -194,25 +194,25 @@ In docking manager, a new tab group can be created at horizontal or vertical sid
 
 ### TabGroup creation through mouse interaction
 
-Like VisualStudio, DockingManager's DragProvider has 8 dock hints to create DocumentTab group through drag provider. Out of 8 dock hints, 4 outer dock hints are used to create a Dock window and 4 inner dock hints are used to create a Document window. A new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. This feature is not supported in `VS2005`, `VS2008` and `Whidbey` styles.  
+Like Visual Studio, the DragProvider of DockingManager contains eight dock hints to create DocumentTab group through drag provider. Out of eight dock hints, four outer dock hints are used to create a dock window and four inner dock hints are used to create a document window. A new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. This feature is not supported in `VS2005`, `VS2008`, and `Whidbey` styles.
 
-If there is no active document available in the DockingManager, only Center dock hint will be visible in DragProvider
+If there is no active document available in the DockingManager, only the center dock hint will be visible in DragProvider.
 
 ![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Non-ActiveWindow.png) 
 
-The following screenshot shows how the document windows are created through DragProvider,
+The following screenshot illustrates the preview of the document that is to be created.
 
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Left.png) 
+![Docking manager displays preview for documenting the window at the left](TDI_Window_images/Tab-Group-Creation-Preview-Left.png) 
 
-N> Preview for Left Document
+The following screenshot illustrates the document that is documented at the left of the document area.
 
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Left.png)
+![Docking manager displays the document that is documented at the left](TDI_Window_images/Tab-Group-Creation-Left.png)
 
-N> DocumentTab group has been created at left side
-
-![Docking manager displays center dock hint in DragProvider](TDI_Window_images/Tab-Group-Creation-Preview-Right.png) 
+The DocumentTab group has been created at the left.
 
 N> Similarly document tabs can be created in all four directions (Left, Top, Right, Bottom)
+
+The docking direction (DockHints) can be restricted by setting `DockAbility` to each docking child. More details about `DockAbility` has been explained in [Dealing with docking child](https://help.syncfusion.com/windowsforms/dockingmanager/dealing-with-docking-child#restrict-to-dock-on-specific-sides) section.
 
 ## Disable tab group creation
 

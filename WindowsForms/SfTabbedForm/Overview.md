@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | TabbedForm | WindowsForms | Syncfusion
+title: Overview | Tabbed Form | WinForms | Syncfusion
 description: This section explains about the Tabbedform control for windows forms and it's important key features.
 platform: WindowsForms
 control: SfTabbedForm
