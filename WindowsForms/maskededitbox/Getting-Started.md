@@ -20,17 +20,17 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 The following steps describe how to create the **MaskedEditBox** control via designer:
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. Add the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
+2) Add the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
 ![Drag and drop MaskedEditBox from toolbox](MaskedEditBox-images/MarkedEditBox-img2.png)
 
-3. Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Mask.html) property for the control. This property controls the behavior of control at run time.
+3) Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Mask.html) property for the control. This property controls the behavior of control at run time.
 
-![Windows Forms MaskedEditBox showing mask format](MaskedEditBox-images/MarkedEditBox_mask.png)
+![Mask format of Windows Forms MaskedEditBox](MaskedEditBox-images/MarkedEditBox_mask.png)
 
 If no mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
 
@@ -40,13 +40,13 @@ If no mask is specified, the control will behave the same as a standard Windows 
 
 The following steps describe how to create the **MaskedEditBox** control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following assembly reference to the project:
+2) Add the following assembly reference to the project:
 
 * Syncfusion.Shared.Base
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4. Create an instance of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control, and then add it to the form.
+4) Create an instance of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control, and then add it to the form.
 
 {% tabs %}
 {% highlight C# %}
