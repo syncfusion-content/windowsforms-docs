@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoComplete Events | WindowsForms | Syncfusion
-description: AutoComplete Events
+title: AutoComplete Events | Syncfusion
+description: This section explains about the event in AutoComplete
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
@@ -9,30 +9,29 @@ documentation: ug
 
 # AutoComplete Events
 
-The events of the AutoComplete control are as follows.
-
+The events of the AutoComplete component are as follows.
 
 <table>
 <tr>
 <th>
-AutoComplete Events</th><th>
+AutoComplete events</th><th>
 Description</th></tr>
 <tr>
 <td>
 BeforeAddItem</td><td>
-Handled when a new item is about to be added.</td></tr>
+Handles when a new item is about to be added.</td></tr>
 <tr>
 <td>
 AutoCompleteCustomize</td><td>
-Handled to customize the AutoCompletion.</td></tr>
+Handles to customize the auto completion.</td></tr>
 <tr>
 <td>
 AutoCompleteItemBrowsed</td><td>
-Handled when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest.</td></tr>
+Handles when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest.</td></tr>
 <tr>
 <td>
 AutoCompleteItemSelected Event</td><td>
-Occurs when a new item has been selected by you when the AutoComplete mode is set to AutoSuggest.</td></tr>
+Occurs when a new item is selected when the AutoComplete mode is set to AutoSuggest.</td></tr>
 <tr>
 <td>
 DropDownClosed</td><td>
@@ -44,37 +43,35 @@ Occurs when the AutoComplete dropdown is displayed.</td></tr>
 <tr>
 <td>
 MatchItem</td><td>
-Enables you to provide a custom matching routine for the current value in the Edit control.</td></tr>
+Provides a custom matching routine for the current value in the editor control.</td></tr>
 <tr>
 <td>
 PreMatchItem</td><td>
-Handled before the AutoComplete control performs a matching operation for the current text content of the active Edit control.</td></tr>
+Handles before the AutoComplete component performs a matching operation for the current text content of the active editor control.</td></tr>
 <tr>
 <td> 
 TargetChanging</td><td>
-Occurs when the target control of the AutoComplete control changes.</td></tr>
+Occurs when the editor control of the AutoComplete component changes.</td></tr>
 </table>
 
-## AutoCompleteItemSelected Event
+## AutoCompleteItemSelected event
 
-AutoCompleteItemSelected Event is raised, when you select a new item, when the AutoComplete mode is set to AutoSuggest.
+This event occurs while selecting a new item when the AutoComplete mode is set to AutoSuggest.
 
-This event is discussed in [External Datasource](http://help.syncfusion.com/windowsforms/autocomplete/datasource#external-datasource) topic.
 
 ## BeforeAddItem Event
 
-This event is raised when a new item is about to be added. New items can be added by calling the AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs containing data related to this event. The following are the properties associated with AutoCompleteAddItemCancelEventArgs argument.
-
+This event occurs when a new item is about to be added. New items can be added by calling the AutoComplete.AddHistoryItem() method. The event handler receives an argument of type AutoCompleteAddItemCancelEventArgs that contains data related to this event. The following are the properties associated with the AutoCompleteAddItemCancelEventArgs argument.
 
 <table>
 <tr>
 <th>
- Members</th><th>
+Members</th><th>
 Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets or sets a value indicating whether the event should be canceled.</td></tr>
+Gets or sets a value that indicates whether the event should be canceled.</td></tr>
 <tr>
 <td>
 ImageColumnIndex</td><td>
@@ -85,7 +82,7 @@ RowItem</td><td>
 It is the System.Data.DataRow object that contains the value that is to be added to the history list.</td></tr>
 </table>
 
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -95,23 +92,18 @@ private void autoComplete1_BeforeAddItem(object sender, AutoCompleteAddItemCance
 
 {
 
-//Cancels the item that is going to be added.
+   // Cancels the item that is going to be added.
 
     e.Cancel = true;
 
 }
 {% endhighlight %}
 
-
-
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Private Sub autoComplete1_BeforeAddItem(ByVal sender As Object, ByVal e As AutoCompleteAddItemCancelEventArgs)
 
-'Cancels the item that is going to be added.   
+   'Cancels the item that is going to be added.   
 
    e.Cancel = True
 
@@ -119,10 +111,11 @@ End Sub
 
 {% endhighlight %}
 
-## AutoCompleteItemBrowsed Event
+{% endtabs %}
 
-This event is raised when you select an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
+## AutoCompleteItemBrowsed event
 
+This event occurs when selecting an item from the list of possible matches when the AutoComplete is set to AutoSuggest. The event handler receives an argument of type AutoCompleteItemEventArgs. The event properties associated with the AutoCompleteItemEventArgs are as follows.
 
 <table>
 <tr>
@@ -136,7 +129,7 @@ Gets or sets the value selected.</td></tr>
 <tr>
 <td>
 Handled</td><td>
-Specifies whether SelectedValue should be applied to target control. This can be used only with AutoCompleteItemSelected.</td></tr>
+Specifies whether SelectedValue should be applied to editor control. This can be used only with AutoCompleteItemSelected.</td></tr>
 <tr>
 <td>
 ItemArray</td><td>
@@ -147,33 +140,29 @@ MatchColumnIndex</td><td>
 Returns the index of the item that was used for matching.</td></tr>
 </table>
 
+When you select an item from the list of possible matches when AutoComplete is set to AutoSuggest, you can display the selected URL in a separate TextBox. The following code sample demonstrates this.
 
-When you select an item from the list of possible matches when AutoComplete is set to AutoSuggest, you can display the selected URL in a separate TextBox. The following code illustrates this.
-
+{% tabs %}
 
 {% highlight C# %}
-
-
 
 
 private void autoComplete1_AutoCompleteItemBrowsed(object sender, Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
 
 {
 
-string itemText = args.ItemArray[0].ToString();
+   string itemText = args.ItemArray[0].ToString();
 
-string eventlogmessage = String.Format("Event: {0} Item: {1}\r\n", "AutoCompleteItemSelected", itemText);
+   string eventlogmessage = String.Format("Event: {0} Item: {1}\r\n", "AutoCompleteItemSelected", itemText);
 
-textBox1.Text = textBox1.Text + eventlogmessage;
+   textBox1.Text = textBox1.Text + eventlogmessage;
 
 }
 
 {% endhighlight %}
 
 
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Private Sub autoComplete1_AutoCompleteItemBrowsed(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs)
 
@@ -187,9 +176,11 @@ End Sub
 
 {% endhighlight %}
 
-## MatchItem Event
+{% endtabs %}
 
-You can override the default matching of the current content of the target edit control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
+## MatchItem event
+
+You can override the default matching of the current content of the editor control using this event. The event handler receives an argument of type AutoCompleteMatchItemEventArgs. The following are the properties associated with AutoCompleteMatchItemEventArgs argument.
 
 <table>
 <tr>
@@ -199,7 +190,7 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Gets or sets a value indicating whether the event should be canceled.</td></tr>
+Gets or sets a value that indicates whether the event should be canceled.</td></tr>
 <tr>
 <td>
 CurrentText</td><td>
@@ -210,18 +201,16 @@ PossibleMatch</td><td>
 Returns the possible match value that needs to be compared against AutoCompleteMatchItemEventArgs.CurrentText by the event handler.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight C# %}
-
-
-
 
 
 private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventArgs args)
 
 {
 
-   //Cancels the match operation
+   // Cancels the match operation.
 
    e.Cancel = true;
 
@@ -229,17 +218,16 @@ private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventAr
 
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
-
+{% highlight VB %}
 
 Private Sub autoComplete1_MatchItem(ByVal sender As Object, ByVal args As AutoCompleteMatchItemEventArgs)
 
-   //Cancels the match operation
+   // Cancels the match operation.
 
    e.Cancel = true;
 
 End Sub
 
 {% endhighlight %}
+
+{% endtabs %}
