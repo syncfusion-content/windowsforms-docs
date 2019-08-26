@@ -21,9 +21,9 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 The following steps describe how to create a **Carousel** control via designer.
 
-1. Create a new Windows Forms application in Visual Studio.
+1) Create a new Windows Forms application in Visual Studio.
 
-2. Add the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) Add the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -38,18 +38,18 @@ The following steps describe how to create a **Carousel** control via designer.
 
 The following steps describe how to create a **Carousel** control programmatically:
 
-1. Create a C# or VB application via Visual Studio.
+1) Create a C# or VB application via Visual Studio.
 
-2. Add the following assembly references to the project:
+2) Add the following assembly references to the project:
 
- * Syncfusion.Grid.Base
- * Syncfusion.Grid.Windows
- * Syncfusion.Shared.Base
- * Syncfusion.Shared.Windows
- * Syncfusion.Tools.Base
- * Syncfusion.Tools.Windows
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
-3. Include the required namespaces.
+3) Include the required namespaces.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4. Create an instance of the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
+4) Create an instance of the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
 
 {% tabs %}
 
