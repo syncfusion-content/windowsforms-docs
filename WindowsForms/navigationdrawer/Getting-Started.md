@@ -181,4 +181,38 @@ Me.navigationDrawer1.Position = Position.Left
 
 ![wf naigation drawer bottom view](Getting-Started_images/wf-navigation-drawer-bottom-side-drawer-view.png)
  
+ ## Setting image to an item
 
+ The `NavigationDrawer` allows setting image to each menu item using `Image` property.
+
+{% tabs %}
+{% highlight C# %}
+//Setting image to the menu item 
+this.drawerMenuItem1.Image = Image.FromFile(@"../../Audit-WF.png"); 
+{% endhighlight %}
+{% highlight VB %}
+'Setting side bar position 
+Me.drawerMenuItem1.Image = Image.FromFile(@"../../Audit-WF.png")
+{% endhighlight %}
+{% endtabs %}
+
+![Navigation drawer menu item image](Getting-Started_images/setting_Image_to_an_Item.png)
+
+## Positioning Text and Image
+
+The text and image positions can be adjusted for the menu items using the `TextAlign` and `TextImageRelation` property.
+
+{% tabs %}
+{% highlight C# %}
+//Setting TextImageRelation to an item 
+this.drawerMenuItem1.TextAlign = TextAlignment.Center;
+this.drawerMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage; 
+{% endhighlight %}
+{% highlight VB %}
+'Setting TextImageRelation to an item 
+Me.drawerMenuItem1.TextAlign = TextAlignment.Center
+Me.drawerMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
+{% endhighlight %}
+{% endtabs %}
+
+![Setting TextImageRelation to an item](Getting-Started_images/positioning_text_and_image.png)
