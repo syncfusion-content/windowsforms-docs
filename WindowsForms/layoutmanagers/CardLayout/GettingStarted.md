@@ -15,7 +15,7 @@ This section explains how to add the `CardLayout` control in a Windows Forms app
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#cardlayout) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install NuGet packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
 ## Adding the CardLayout control via designer
 
@@ -27,7 +27,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 ![Drag and drop CardLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
-3. To add the form as a container control of `CardLayout`, click `Yes` in a pop-up, from which it appears automatically before the CardLayout is added.
+3. To add the form as a container control of `CardLayout`, click `Yes` in popup, from which it appears automatically before the CardLayout is added.
 
 ![Alert to add CardLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
 
@@ -91,14 +91,14 @@ Me.cardLayout1.ContainerControl = Me
 
 ### Adding layout components
 
-The child controls can be added to the layout by simply adding it to the form since the form is its container control.
+The child controls can be added to layout by simply adding it to the form since the form is its container control.
 
 1. Add the main panel to layout by simply adding it to the form since the form is its container control.
 
 {% tabs %}
 {% highlight c# %}
 
-//Add Main Panel
+//Add main panel
 private System.Windows.Forms.Panel cardLayoutPanel;
 this.cardLayoutPanel = new System.Windows.Forms.Panel();
 
@@ -113,7 +113,7 @@ this.cardLayout1.ContainerControl = cardLayoutPanel;
 {% endhighlight %}
 {% highlight vb %}
 
-'Add Main Panel
+'Add main panel
 Private cardLayoutPanel As System.Windows.Forms.Panel
 Me.cardLayoutPanel = New System.Windows.Forms.Panel()
 
@@ -196,25 +196,25 @@ Me.cardLayoutPanel.Controls.Add(Me.panel3)
 {% tabs %}
 {% highlight c# %}
 
-//for move the next card
+//For moving the next card
 this.cardLayout1.Next();
 
-//for move the previous card
+//For moving the previous card
 this.cardLayout1.Previous();
 
-//for select the card
+//For selecting a card
 this.cardLayout1.SelectedCard = "image1";
 
 {% endhighlight %}
 {% highlight vb %}
 
-'for move the next card
+'For moving the next card
 Me.cardLayout1.Next()
 
-'for move the previous card
+'For moving the previous card
 Me.cardLayout1.Previous()
 
-'for select the card
+'For selecting a card
 Me.cardLayout1.SelectedCard = "image1"
 
 {% endhighlight %}
