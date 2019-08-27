@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | RadialSlider | WindowsForms | Syncfusion
-description: This section describes how to radial slider control into WindowsForms application
+description: This section describes how to add a radial slider control to a Windows Forms application
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
@@ -9,58 +9,49 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add a [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control in a Windows Forms application and overview of its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **RadialSlider** control with its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radialslider) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
- 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
- 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#radialslider) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-## Creating simple application with RadialSlider
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
-You can create the Windows Forms application with RadialSlider control as follows:
+## Adding the RadialSlider control via designer
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually using code](#adding-control-manually-using-code)
-4. [Configure SliderStyle](#configure-sliderstyle)
+The following steps describe how to create an **RadialSlider** control via the designer.
 
-### Creating the project
+1) Create a new Windows Forms application in Visual Studio.
 
-Create a new Windows Forms project in the Visual Studio to display the RadialSlider with basic information.
+2) Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
-## Adding control via designer
-
-RadialSlider control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
-
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
 ![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-![RadialSlider control added via designer](Getting-Started_images/RadialSlider-img4.png) 
+3) Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
 
-## Adding control manually using code
+## Adding the RadialSlider control via code
 
-To add control manually in C#, follow the given steps:
+The following steps explain how to create a **RadialSlider** control programmatically:
 
-**Step 1:**  Add the following required assembly references to the project:
+1) Create a C# or VB application via Visual Studio.
 
- * Syncfusion.Tools.Base.dll
- * Syncfusion.Tools.Windows.dll
- * Syncfusion.Shared.Base.dll
- * Syncfusion.Shared.Windows.dll
- * Syncfusion.Grid.Base.dll
- * Syncfusion.Grid.Windows.dll
+2) Add the following assembly references to the project:
 
-**Step 2:**  Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -78,16 +69,14 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3:**  Create `RadialSlider` control instance and add it to the form.
+4) Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
 
 {% tabs %}
 
 {% highlight C# %}
 
 RadialSlider radialSlider1 = new RadialSlider();
-
-this.radialSlider1.Size = new System.Drawing.Size(282, 282);
-
+radialSlider1.Size = new System.Drawing.Size(282, 282);
 this.Controls.Add(radialSlider1);
 
 {% endhighlight %}
@@ -95,35 +84,143 @@ this.Controls.Add(radialSlider1);
 {% highlight VB %}
 
 Dim radialSlider1 As RadialSlider = New RadialSlider
-
-Me.radialSlider1.Size = New System.Drawing.Size(282, 282)
-
+radialSlider1.Size = New System.Drawing.Size(282, 282)
 Me.Controls.Add(radialSlider1)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![RadialSlider Control added in form](Getting-Started_images/RadialSlider-img2.png) 
+![RadialSlider Control added in form](Getting-Started_images/RadialSlider-img2.png)
 
-## Configure SliderStyle
+## Values
 
-Slider appearance can be modified using [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderStyle.html) property in RadialSlider. It consist of two style such as Default and Frame.
+The value of **RadialSlider** control can be restricted within the minimum and maximum limits.
+
+* **MinimumValue** - The slider initial value depends on its minimum value, and the default minimum value is 0. The minimum value can be changed using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MinimumValue.html) property.
+
+* **MaximumValue** - The slider end value depends on its maximum value, and the default maximum value is 10. The maximum value can be changed using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MaximumValue.html) property.
+
+* **Value** - The `Value` property of slider is used to get the currently selected value or change it to the required value.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.radialSlider1.SliderStyle = SliderStyles.Frame;
+radialSlider1.MinimumValue = 50;
+radialSlider1.MaximumValue = 100;
+radialSlider1.Value = 50;
 
 {% endhighlight %}
 
-{% highlight VB %}
+{% highlight vb %}
 
-Me.radialSlider1.SliderStyle = SliderStyles.Frame
+radialSlider1.MinimumValue = 50
+radialSlider1.MaximumValue = 100
+radialSlider1.Value = 50
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Slider appearance customized](Getting-Started_images/RadialSlider-img3.png) 
+![Windows Forms RadialSlider showing maximum and minimum value](Getting-Started_images/RadialSlider_value.png)
+
+## Slider Value Changed Event
+
+You can get the current slider value using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ValueChanged_EV.html) event.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialSlider1.ValueChanged += new Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventHandler(radialSlider1_ValueChanged);
+
+private void radialSlider1_ValueChanged(object sender, Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs args)
+{
+  this.richTextBox1.SelectionFont = new System.Drawing.Font(Font.Name, (float)this.radialSlider1.Value);
+  this.Refresh();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+AddHandler Me.radialSlider1.ValueChanged, AddressOf Me.radialSlider1_ValueChanged
+
+Private Sub radialSlider1_ValueChanged(ByVal sender As Object, ByVal args As Syncfusion.Windows.Forms.Tools.RadialSlider.ValueChangedEventArgs)
+Me.richTextBox1.SelectionFont = New System.Drawing.Font(Font.Name, CType(Me.radialSlider1.Value,Single))
+Me.Refresh
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Division
+
+The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderDivision.html) property. The default slider division is 10.
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider1.SliderDivision = 5;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.radialSlider1.SliderDivision = 5
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows Forms RadialSlider showing division between the range](Getting-Started_images/RadialSlider_division.png)
+
+## Slider Style
+
+The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderStyle.html) property.
+
+* **Default** - Renders the slider control with two hollow circles and a small circle as center with its dividend ticks.
+
+* **Frame** - Paints the background of the slider control with an HQ frame.
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows Forms RadialSlider showing different slider styles](Getting-Started_images/RadialSlider_style.png)
+
+The outside circle can be shown using the [ShowOuterCircle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ShowOuterCircle.html) property. The default value of this property is set to 'True'.
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider1.ShowOuterCircle = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.radialSlider1.ShowOuterCircle = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Windows Forms RadialSlider showing outer circle](Getting-Started_images/RadialSlider_outercircle.png)
+
