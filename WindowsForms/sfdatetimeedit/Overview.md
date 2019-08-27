@@ -9,23 +9,25 @@ documentation: ug
 
 # Overview
 
-The `SfDateTimeEdit` is a control that allows you to edit the `DateTime` in the text or mask format with the support of minimum and maximum value validation, watermark, and globalization. It provides flexible options to display the date-time according to the required format.
+The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text or mask format with the support of minimum and maximum values validation, watermark, and globalization. It provides flexible options to display the date-time according to the required format.
 
-## Key features
+![Overview of SfDateTimeEdit](overview_images/overview.png)
 
-* **Editing mode**: Supports default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
+## Key Features
 
-* **Date-range support**: Supports maximum and minimum dates to prevent users from setting a date or time within a specified range.
+**Editing mode** - Supports the default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
 
-* **Globalization**: Supports different date-time formats and patterns based on cultures.
+**Date-range support** - Supports the maximum and minimum dates to prevent users from setting a date or time within a specified range.
 
-* **Date validation**: Supports date validation and error messages due to invalid dates or when date range constraints are met.
+**Globalization** - Supports different date-time formats and patterns based on cultures.
 
-* **Accessibility**: Touch, keyboard, and mouse support to make applications available to a wide variety of users.
+**Date validation** - Supports date validation and error messages due to invalid dates or when date range constraints are met.
 
-* **Watermark**: Supports to display watermark text when a selected date is null.
+**Accessibility** - Provides touch, keyboard, and mouse support to make applications available to a wide variety of users.
 
-* **Testing**: Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfdatetimeedit) to recognize SfDateTimeEdit.
+**Watermark** - Supports to display watermark text when a selected date is null.
+
+**Testing** - Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/windowsforms/testing/uft/supported-controls-and-methods#sfdatetimeedit) to recognize SfDateTimeEdit.
 
 
 ## Choose between different DateTime controls
@@ -51,15 +53,15 @@ The list of some of the specific API differences between SfDateTimeEdit and Date
 
 <table>
 <tr>
-<td>
-{{'**SfDateTimeEdit**'| markdownify }}
-</td>
-<td>
-{{'**DateTimePickerAdv**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
+<th>
+SfDateTimeEdit
+</th>
+<th>
+DateTimePickerAdv
+</th>
+<th>
+Description
+</th>
 </tr>
 <tr>
 <td>
@@ -122,12 +124,12 @@ The list of features in SfDateTimeEdit over DateTimePickerAdv is as follows.
 
 <table>
 <tr>
-<td>
-{{'**Feature**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
+<th>
+Feature
+</th>
+<th>
+Description
+</th>
 </tr>
 <tr>
 <td>
