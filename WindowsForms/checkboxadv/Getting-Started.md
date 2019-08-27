@@ -21,9 +21,9 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 The following steps explain how to create the CheckBoxAdv control via designer.
 
-1. Create a new Windows Forms Project in Visual Studio.
+1) Create a new Windows Forms Project in Visual Studio.
 
-2. Add the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically:
+2) Add the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control to an application by dragging it from the toolbox to designer view. The following required assembly reference will be added automatically:
 
 * Syncfusion.Tools.Windows
 
@@ -33,13 +33,13 @@ The following steps explain how to create the CheckBoxAdv control via designer.
 
 The following steps explain how to create the CheckBoxAdv control programmatically:
 
-1. Create a C# or VB application though Visual Studio.
+1) Create a C# or VB application though Visual Studio.
 
-2. Include the following required assembly reference:
+2) Include the following required assembly reference:
 
 * Syncfusion.Tools.Windows
 
-3. Include the required namespace.
+3) Include the required namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4. Create an instance of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control, and then add it to the form.
+4) Create an instance of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control, and then add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,7 +75,7 @@ Me.Controls.Add(Me.checkBoxAdv1)
 {% endhighlight %}
 {% endtabs %}
 
-5. Set the text and style of the control.
+5) Set the text and style of the control.
 
 {% tabs %}
 {% highlight c# %}
@@ -97,7 +97,7 @@ Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 ![Windows forms CheckBoxAdv showing control](Overview_images/CheckBoxAdv_control.png)
 
-6. Get or set the current checked status using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property. The default value of this property is `false`.
+6) Get or set the current checked status using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property. The default value of this property is `false`.
 
 {% tabs %}
 {% highlight c# %}
