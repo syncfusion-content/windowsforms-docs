@@ -9,61 +9,49 @@ documentation: ug
 
 # Getting started
 
-This section explains how to design a `TabbedMDIManager` control in a Windows Forms application and overview of its basic functionalities.
+This section explains how to design a **TabbedMDIManager** control in a Windows Forms application and overview its basic functionalities.
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Please find more details regarding how to install the nuget packages in windows form application in the below link:
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+## Adding TabbedMDIManger control via designer
 
-## Creating simple application with TabbedMDIManager
+1) Create a new Windows Forms project in Visual Studio.
 
-You can create the Windows Forms application with TabbedMDIManager control as follows:
+2) Add the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-1. [Creating the project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Add Form as Tabbed MDI child](#add-form-as-tabbed-mdi-child)
-5. [Create tab group](#create-tab-group)
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
 
-### Creating the project
+![Windows Forms TabbedMDI drag and drop from toolbox](GettingStarted_images/Search.png)
 
-Create a new Windows Forms project in the Visual Studio to display the TabbedMDIManager.
+As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it is changed to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
 
-## Adding control via designer
-
-The TabbedMDIManager control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
-
-   * Syncfusion.Grid.Base.dll
-   * Syncfusion.Grid.Windows.dll
-   * Syncfusion.Shared.Base.dll
-   * Syncfusion.Shared.Windows.dll
-   * Syncfusion.Tools.Base.dll
-   * Syncfusion.Tools.Windows.dll
-
-![Search TabbedMDI in Toolbox](GettingStarted_images/Search.png)
-
-As soon as the control is dropped, the Form1’s `IsMDIContainer` property will be set to `true` and it changes to an MDIContainer. Also, the `AttachedTo` property of the TabbedMDIManager will be set to Form1.
-
-![TabbedMDIControl added in form](GettingStarted_images/ControlAdded.png)
+![Windows Forms TabbedMDI added into the form](GettingStarted_images/ControlAdded.png)
  
 ## Adding control manually in code
 
-To add control manually in C#, follow the given steps:
+To add the control manually in C#, follow the given steps:
 
-**Step1:** Add the following required assembly references to the project:
+1) Create a C# or VB application via Visual Studio.
 
-   * Syncfusion.Grid.Base.dll
-   * Syncfusion.Grid.Windows.dll
-   * Syncfusion.Shared.Base.dll
-   * Syncfusion.Shared.Windows.dll
-   * Syncfusion.Tools.Base.dll
-   * Syncfusion.Tools.Windows.dll
+2) Add the following assembly references to the project:
 
-**Step2:** Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+* Syncfusion.Grid.Base
+* Syncfusion.Grid.Windows
+* Syncfusion.Shared.Base
+* Syncfusion.Shared.Windows
+* Syncfusion.Tools.Base
+* Syncfusion.Tools.Windows
+
+3) Include the required namespace.
 
 {% tabs %}
 
@@ -81,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step3:** Create the TabbedMDIManager control instance. 
+4) Create an instance of the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager_members.html) control. 
 
 {% tabs %}
 
@@ -109,19 +97,20 @@ We can attach the `Form1` to TabbedMDIManager container by using its [AttachToMd
 
 this.IsMdiContainer = true;
 
-// Use `AttachToMdiContainer` function only when `AttachedTo` property of TabbedMDIManager is not set to Form1. 
+// Use the [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html) function only when the `AttachedTo` property of TabbedMDIManager is not set to Form1. 
 
 this.tabbedMDIManager.AttachToMdiContainer(this);
-
 this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful);
 
 Form form = new Form();
-
 form.MdiParent = this;
-
 form.Text = "Tab1";
-
 form.Show();
+
+Form form1 = new Form();
+form1.Text = "Tab2";
+form1.MdiParent = this;
+form1.Show();
 
 {% endhighlight  %}
 
@@ -132,16 +121,17 @@ Me.IsMdiContainer = True
 ' Use `AttachToMdiContainer` function only when `AttachedTo` property of TabbedMDIManager is not set to Form1. 
 
 Me.tabbedMDIManager.AttachToMdiContainer(Me)
-
 Me.tabbedMDIManager.TabStyle = GetType(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful)
 
 Dim form As Form = New Form
-
 form.MdiParent = Me
-
 form.Text = "Tab1"
-
 form.Show()
+
+Dim form1 As New Form()
+form1.Text = "Tab2"
+form1.MdiParent = Me
+form1.Show()
 
 {% endhighlight  %}
 
@@ -149,7 +139,7 @@ form.Show()
 
 The following screenshot illustrates new form will be tabbed inside form1.
 
-![Tab added](GettingStarted_images/TabbedMDIManager.png)
+![Windows Forms TabbedMDI with forms added as its child](GettingStarted_images/TabbedMDIManager.png)
 
 ## Create tab group
 
@@ -162,20 +152,14 @@ The `TabbedMDIManager` provides support to create a tab group horizontally or ve
 {% highlight C# %}
 
 Form form = new Form();
-
 form.MdiParent = this;
-
 form.Text = "Tab1";
-
 form.Show();
 
 
 Form form1 = new Form();
-
 form1.MdiParent = this;
-
 form1.Text = "Tab2";
-
 form1.Show();
 
 this.tabbedMDIManager.CreateNewHorizontalGroup();
@@ -186,20 +170,14 @@ this.tabbedMDIManager.CreateNewHorizontalGroup();
 {% highlight VB %}
 
 Dim form As Form = New Form
-
 form.MdiParent = Me
-
 form.Text = "Tab1"
-
 form.Show()
 
 
 Dim form1 As Form = New Form
-
 form1.MdiParent = Me
-
 form1.Text = "Tab2"
-
 form1.Show()
 
 Me.tabbedMDIManager.CreateNewHorizontalGroup()
@@ -208,7 +186,7 @@ Me.tabbedMDIManager.CreateNewHorizontalGroup()
 
 {% endtabs %}
 
-![Horizontal tab group created](GettingStarted_images/TabGroupHorizontal.png)
+![Horizontal tab group created in Tabbed MDI Manager](GettingStarted_images/TabGroupHorizontal.png)
 
 [CreateNewVerticalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CreateNewVerticalGroup.html) function helps to create a new tab group vertically in TabbedMDIManager. 
 
@@ -217,20 +195,14 @@ Me.tabbedMDIManager.CreateNewHorizontalGroup()
 {% highlight C# %}
 
 Form form = new Form();
-
 form.MdiParent = this;
-
 form.Text = "Tab1";
-
 form.Show();
 
 
 Form form1 = new Form();
-
 form1.MdiParent = this;
-
 form1.Text = "Tab2";
-
 form1.Show();
 
 this.tabbedMDIManager.CreateNewVerticalGroup();
@@ -241,20 +213,13 @@ this.tabbedMDIManager.CreateNewVerticalGroup();
 {% highlight VB %}
 
 Dim form As Form = New Form
-
 form.MdiParent = Me
-
 form.Text = "Tab1"
-
 form.Show()
 
-
 Dim form1 As Form = New Form
-
 form1.MdiParent = Me
-
 form1.Text = "Tab2"
-
 form1.Show()
 
 Me.tabbedMDIManager.CreateNewVerticalGroup()
@@ -263,4 +228,4 @@ Me.tabbedMDIManager.CreateNewVerticalGroup()
 
 {% endtabs %}
 
-![Vertical tab group created](GettingStarted_images/TabGroupVertical.png)
+![Vertical tab group created in Tabbed MDI Manager](GettingStarted_images/TabGroupVertical.png)
