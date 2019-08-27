@@ -9,14 +9,16 @@ documentation: ug
 
 # Overview
 
-The `Carousel` control is a circular conveyor on which objects are displayed and rotated. It provides a 3D interface for displaying objects with interactive navigation.
+The **Carousel** control is a circular conveyor in which the objects are displayed and rotated. It provides 3-D interface for displaying objects with interactive navigation.
+
+![Overview of Carousel](Getting-Started_images/Carousel_overview.gif)
 
 ## Key features
 
-* **Carousel path** - Provides wide varieties of built-in path to arrange carousel items when animated.
+**Carousel path** - Provides wide varieties of built-in path to arrange carousel items when animated.
 
-* **Perspective** - Provides option to enlarge and shrink the size of the elliptical view using float values.
+**Perspective** - Provides options to enlarge and shrink the size of the elliptical view using float values.
 
-* **Transition speed** - Provides option for setting an user defined speed for the controls to be rotated.
+**Transition speed** - Provides options for setting user-defined speed for the controls to be rotated.
 
-* **Image slides** - Provides options for adding and displaying images in carousel path
+**Image slides** - Provides options for adding and displaying images in carousel path.
