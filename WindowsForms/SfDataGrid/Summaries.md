@@ -123,7 +123,7 @@ Summary information can be displayed in row by setting [GridSummaryRow.ShowSumma
 GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
 tableSummaryRow1.Name = "TableSummary";
 tableSummaryRow1.ShowSummaryInRow = true;
-tableSummaryRow1.Title = " Total Product Count: {ProductName}";
+tableSummaryRow1.Title = " Total Product Count: {TotalProduct}";
 tableSummaryRow1.Position = VerticalPosition.Bottom;
 
 GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
