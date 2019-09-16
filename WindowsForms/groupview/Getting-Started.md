@@ -166,7 +166,7 @@ groupView1.SelectedItem = 1;
 
 groupView1.SelectedItem = 1
 
-{% endhighlight %
+{% endhighlight %}
 {% endtabs %}
 
 ![Windows Forms GroupView showing selected item](GettingStarted_images/GroupView_selectitem.png)
