@@ -1952,7 +1952,8 @@ Syncfusion.Pdf.WinForms
 <td>
 Syncfusion.Compression.Base<br/>
 Syncfusion.Pdf.Base<br/>
-Syncfusion.PdfViewer.Windows
+Syncfusion.PdfViewer.Windows<br/>
+Syncfusion.Shared.Base
 
 </td>
 <td>
