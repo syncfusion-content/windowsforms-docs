@@ -11,6 +11,8 @@ documentation: ug
 
 ## Adding reference to PdfViewerControl and dependent assemblies
 
+Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#pdf-viewer) section to get the list of assemblies.
+
 ### Installing NuGet packages
 
 Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/nuget-packages) section. 
