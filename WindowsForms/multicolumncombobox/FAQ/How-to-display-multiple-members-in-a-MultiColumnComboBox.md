@@ -104,4 +104,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Frequently-Asked-Questions_images/Overview_img332.jpeg)
+   ![Display-multiple-fields](Frequently-Asked-Questions_images/Overview_img332.jpeg)
