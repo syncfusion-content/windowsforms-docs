@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-multiple-members-in-a-MultiColumnComboBox | WindowsForms | Syncfusion
+title: Display-multiple-members | WindowsForms | Syncfusion
 description: how to display multiple members in a multicolumncombobox
 platform: WindowsForms
 control: Editors Package
@@ -11,7 +11,7 @@ documentation: ug
 
 This section deals with displaying multiple members in a MultiColumnComboBox. Follow the steps to achieve the same.
 
-1. Initialization of the MultiColumnComboBox.
+1.Initialization of the MultiColumnComboBox.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,43 +39,24 @@ Me.multiColumnComboBox1.Text = ""
 {% endhighlight %}
 {% endtabs %}
 
-2. Populate the MultiColumnComboBox with data. Refer Data binding topic.
+2. 2.Populate the MultiColumnComboBox with data. Refer [Data Binding]
+(https://help.syncfusion.com/windowsforms/multicolumncombobox/data-binding) topic.
+
+3.In order to display the contents of the entire row in the GridListControl in the MultiColumnComboBox instead of just the DisplayMember, you can handle the MultiColumnComboBox's SelectedIndexChanged and DropDown event as shown below.
 
 {% tabs %}
 {% highlight c# %}
 
+this.multiColumnComboBox1.SelectedIndexChanged += multiColumnComboBox1_SelectedIndexChanged;
+this.multiColumnComboBox1.DropDown += multiColumnComboBox1_DropDown;
+
+
 private void multiColumnComboBox1_DropDown(object sender, System.EventArgs e)
 {
-
-// Hide a column.
-this.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden[1] = true;
-this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[3] = this.multiColumnComboBox1.Bounds.Width/2;
-this.multiColumnComboBox1.ListBox.Grid.Model.ColWidths[4] = this.multiColumnComboBox1.Bounds.Width/2;
 this.afterDropDown = true;
 }
 string str = "";
 
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
-
-' Hide a column.
-Me.multiColumnComboBox1.ListBox.Grid.Model.Cols.Hidden(1) = True
-Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(3) = Me.multiColumnComboBox1.Bounds.Width/2
-Me.multiColumnComboBox1.ListBox.Grid.Model.ColWidths(4) = Me.multiColumnComboBox1.Bounds.Width/2
-Me.afterDropDown = True
-End Sub
-Private str As String = ""
-
-{% endhighlight %}
-{% endtabs %}
-
-3. In order to display the contents of the entire row in the GridListControl in the MultiColumnComboBox instead of just the DisplayMember, you can handle the MultiColumnComboBox's SelectedIndexChanged event as shown below.
-
-{% tabs %}
-{% highlight c# %}
 
 private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
 {
@@ -83,16 +64,9 @@ private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.Eve
 	{
         for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
 		{
-    		if(i==1)
-			{
-
-// do nothing for the hidden columns
-			}
-			else
-			{
-    			str += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
-			}
+    		str += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
 		}
+		
 	    Console.WriteLine(str);
 		this.multiColumnComboBox1.Text = str;
 	}
@@ -104,16 +78,20 @@ private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.Eve
 
 {% highlight vb %}
  
+AddHandler Me.multiColumnComboBox1.SelectedIndexChanged, AddressOf multiColumnComboBox1_SelectedIndexChanged
+AddHandler Me.multiColumnComboBox1.DropDown, AddressOf multiColumnComboBox1_DropDown
+
+Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
+Me.afterDropDown = True
+End Sub
+Private str As String = ""
+
 Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
 If Me.afterDropDown = True Then
 Dim i As Integer =1
 Do While i<=Me.multiColumnComboBox1.ListBox.Grid.ColCount
-If i=1 Then
-
-' do nothing for the hidden columns
-Else
 str += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex+1, i).Text & " "
-End If
+
 i += 1
 Loop
 Console.WriteLine(str)
