@@ -431,6 +431,82 @@ private void MultiColumnTreeView1_NodeHotTrackChanged(object sender, Syncfusion.
 
 {% endtabs %}
 
+## Column Selection
+
+These events will be triggered while performing mouse action on Column Header.
+
+<table>
+<tr>
+<th>
+MultiColumnTreeView Event</th><th>
+Description</th></tr>
+<tr>
+<td>
+ColumnMouseDown</td><td>
+Occurs when the mouse pointer hovers over the column header and a mouse button is pressed.</td></tr>
+<tr>
+<td>
+ColumnMouseUp</td><td>Occurs when the mouse pointer hovers over the column header and a mouse button is released.</td></tr>
+<tr>
+<td>
+ColumnClick.</td><td>
+ColumnClick	Occurs when the column is clicked.</td></tr>
+<tr>
+<td>
+ColumnDoubleClick</td><td>
+Occurs when the column is double clicked.</td></tr>
+
+</table>
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.multiColumnTreeView1.ColumnMouseDown += MultiColumnTreeView1_ColumnMouseDown;
+this.multiColumnTreeView1.ColumnMouseUp += MultiColumnTreeView1_ColumnMouseUp;
+this.multiColumnTreeView1.ColumnClick += MultiColumnTreeView1_ColumnClick;
+this.multiColumnTreeView1.ColumnDoubleClick += MultiColumnTreeView1_ColumnDoubleClick;
+
+private void MultiColumnTreeView1_ColumnMouseUp(object sender, TreeColumnAdvMouseEventArgs e)
+{
+  MessageBox.show("The column selected is "+ e.Column.ToString()); 
+}
+private void MultiColumnTreeView1_ColumnMouseDown(object sender, TreeColumnAdvMouseEventArgs e)
+{
+  MessageBox.show("The column selected is "+ e.Column.ToString()); 
+}
+private void MultiColumnTreeView1_ColumnDoubleClick(object sender, TreeViewColumnSelectedChangedEventArgs e)
+{
+  MessageBox.show("The column selected is "+ e.Column.ToString());
+}
+private void MultiColumnTreeView1_ColumnClick(object sender, TreeViewColumnSelectedChangedEventArgs e)
+{
+   MessageBox.show("The column selected is "+ e.Column.ToString());
+}
+{% endhighlight %}
+
+{% highlight vb %}
+
+Private Sub MultiColumnTreeView1_ColumnMouseUp(ByVal sender As Object, ByVal e As TreeColumnAdvMouseEventArgs)
+        MessageBox.show("The column selected is " & e.Column.ToString())        
+End Sub
+
+private Sub MultiColumnTreeView1_ColumnMouseDown(ByVal sender As Object, ByVal e As TreeColumnAdvMouseEventArgs)
+        MessageBox.show("The column selected is " & e.Column.ToString())
+        End Sub
+
+Private Sub MultiColumnTreeView1_ColumnDoubleClick(ByVal sender As Object, ByVal e As TreeViewColumnSelectedChangedEventArgs)
+        MessageBox.show("The column selected is " & e.Column.ToString())
+End Sub
+
+Private Sub MultiColumnTreeView1_ColumnClick(ByVal sender As Object, ByVal e As TreeViewColumnSelectedChangedEventArgs)
+        MessageBox.show("The column selected is " & e.Column.ToString())
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Mouse Event
 
 Mouse action related events.
