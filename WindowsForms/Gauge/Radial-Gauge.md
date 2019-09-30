@@ -227,8 +227,6 @@ The following screenshot illustrates the HalfCircle Frame of RadialGauge,
 
 Frame of the RadialGauge will be a Full circle and the color which is specified in the `FillColor` will fill the frame as indication of the current value of the gauge. Start and SweepAngle of the RadialGauge is changeable and the Gauge will be rendered based on the value of Start and SweepAngle. Default value of the Start and SweepAngle will be 0 and 360.  Filling of color towards current value will be start from the angle specified in the `StartAngle`. Font settings of the Value label can be changed using `GaugeValueFont` of RadialGauge. 
 
-The `ArcThickness` property is used to specify the thickness of the frame. For fill type frame, the default value of the `ArcThickness` is 20.
-
 Needle and tick marks are not supported for fill type frame. Hence, the following properties are not applicable and do not have any effect:
 
 * ShowBackgroundFrame
@@ -541,6 +539,32 @@ Me.radialGauge1.MinorDifference = 2F
 
 ![Radial Gauge with major and minor ticks](Radial-Gauge_images/Radial-Gauge_img18.png)
 
+### FrameThickness
+
+The `FrameThickness` property of RadialGauge is used to specify the thickness of the frame. By default, the value of this property is 12. For [filltype](https://help.syncfusion.com/windowsforms/gauge/radial-gauge#fillcircle) frame, the default value of the `FrameThickness` is 20.
+
+The following code and screenshot illustrates the RadialGauge with different FrameThickness,
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.radialGauge1.FrameThickness = 18; 
+this.radialGauge1.Value = 60;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.radialGauge1.FrameThickness = 18
+this.radialGauge1.Value = 60
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Scale Label customization in FullCircle Frametype](Radial-Gauge_images/Radial-Gauge-FrameThickness.png)
+
 ### Label customization
 
 Appearance and text of Scale labels in `FullCircle`, `HalfCircle` and `QuarterCircle` frame types and Value label of `Fill` frame type can customized using `DrawLabelEventArgs` event.
@@ -571,16 +595,22 @@ Text which is to be drawn as label <br/><br/></td></tr>
 <tr>
 <td>
 4<br/><br/></td><td>
-VerticalAlignment<br/><br/></td><td>
-Vertical placement of the Value label when the HorizontalAlignment is Center and FrameType is Fill<br/><br/></td></tr>
+LabelType<br/><br/></td><td>
+Type of label that is being drawn in RadialGauge<br/><br/></td></tr>
 <tr>
 <td>
 5<br/><br/></td><td>
-HorizontalAlignment<br/><br/></td><td>
-Horizontal placement of the Value label when the VerticalAlignment is Center and FrameType is Fill<br/><br/></td></tr>
+LabelAlignment<br/><br/></td><td>
+Alignment of the label when the LabelType is Default or Value
+N> Label alignment is not applicable when the LabelType is Scale<br/><br/></td></tr>
 <tr>
 <td>
 6<br/><br/></td><td>
+Offset<br/><br/></td><td>
+Point to adjust the Label horizontally and vertically based on the value specified in X and Y coordinates<br/><br/></td></tr>
+<tr>
+<td>
+7<br/><br/></td><td>
 Handled<br/><br/></td><td>
 All the above customizations will work only if the argument is true.<br/><br/></td></tr>
 </table>
@@ -597,8 +627,15 @@ private void RadialGauge1_DrawLabel(object sender,
 Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs e)
 {
       e.Handled = true;
-      e.Text += " °C";
-      e.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            if (e.LabelType == Syncfusion.Windows.Forms.Gauge.LabelType.Scale)
+                e.Text += " °C";
+            else
+            {
+                e.Text = "Temperature";
+                e.LabelAlignment = Syncfusion.Windows.Forms.Gauge.LabelAlignment.Center;
+                e.Offset = new Point(e.Offset.X + 1, e.Offset.Y + 45);
+            }
+            e.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 }
 
 {% endhighlight %}
@@ -609,8 +646,14 @@ AddHandler Me.radialGauge1.DrawLabel, AddressOf RadialGauge1_DrawLabel
 
 Private Sub RadialGauge1_DrawLabel(sender As Object, e As Syncfusion.Windows.Forms.Gauge.DrawLabelEventArgs) Handles radialGauge1.DrawLabel
         e.Handled = True
-        e.Text += " °C"
-        e.Font = New System.Drawing.Font("Segoe UI", 9.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+			If e.LabelType = Syncfusion.Windows.Forms.Gauge.LabelType.Scale Then
+				e.Text &= " °C"
+			Else
+				e.Text = "Temperature"
+				e.LabelAlignment = Syncfusion.Windows.Forms.Gauge.LabelAlignment.Center
+				e.Offset = New Point(e.Offset.X + 1, e.Offset.Y + 45)
+			End If
+			e.Font = New System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte(0)))
     End Sub
 
 {% endhighlight %}
