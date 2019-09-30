@@ -112,10 +112,10 @@ this.Controls.Add(this.buttonAdv2);
 this.Controls.Add(this.buttonAdv3);
 this.Controls.Add(this.buttonAdv4);
 
-this.gridLayout1.SetParticipateInLayout(this.button1, true);
-this.gridLayout1.SetParticipateInLayout(this.button2, true);
-this.gridLayout1.SetParticipateInLayout(this.button3, true);
-this.gridLayout1.SetParticipateInLayout(this.button4, true);
+this.gridLayout1.SetParticipateInLayout(this.buttonAdv1, true);
+this.gridLayout1.SetParticipateInLayout(this.buttonAdv2, true);
+this.gridLayout1.SetParticipateInLayout(this.buttonAdv3, true);
+this.gridLayout1.SetParticipateInLayout(this.buttonAdv4, true);
 
 {% endhighlight %}
 
@@ -136,10 +136,10 @@ Me.Controls.Add(this.buttonAdv2)
 Me.Controls.Add(this.buttonAdv3)
 Me.Controls.Add(this.buttonAdv4)
 
-Me.gridLayout1.SetParticipateInLayout(Me.button1, true)
-Me.gridLayout1.SetParticipateInLayout(Me.button2, true)
-Me.gridLayout1.SetParticipateInLayout(Me.button3, true)
-Me.gridLayout1.SetParticipateInLayout(Me.button4, true)
+Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv1, true)
+Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv2, true)
+Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv3, true)
+Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv4, true)
 
 {% endhighlight %}
 
