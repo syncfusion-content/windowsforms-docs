@@ -63,6 +63,7 @@ Office2019Colorful
 HighContrastBlack
 </td>
 </tr>
+<table>
 
 Before apply theme to `SfForm`, required theme assembly should be loaded as follows.
 
