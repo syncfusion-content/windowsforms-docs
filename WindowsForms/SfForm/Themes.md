@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes | WinForms | Syncfusion
+title: Customize the form using theme | Syncfusion
 description: This section explains about the themes in SfForm.
 platform: windowsforms
 control: SfForm
@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes
 
-SfForm  offers six built in themes for professional representation as follows.
+SfForm offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White
@@ -30,26 +30,26 @@ To set theme for `SfForm` the following assemblies should be added as reference 
 <table>
 <tr>
 <td>
-{{'**Assembly**'| markdownify }}
+{{'**Assemblies**'| markdownify }}
 </td>
 <td>
-{{'        **ThemeName**'| markdownify }}
+{{'        **Themes**'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-{{`Syncfusion.Office2016Theme.WinForms'| markdownify }}        
+Syncfusion.Office2016Theme.WinForms       
 </td>
 <td>
-Office2016Colorful
-Office2016White
-Office2016DarkGray
+Office2016Colorful<br>
+Office2016White<br>
+Office2016DarkGray<br>
 Office2016Black
 </td>
 </tr>
 <tr>
 <td>
-{{'Syncfusion.Office2019Theme.WinForms'| markdownify }}
+Syncfusion.Office2019Theme.WinForms
 </td>
 <td>
 Office2019Colorful
@@ -57,13 +57,13 @@ Office2019Colorful
 </tr>
 <tr>
 <td>
-{{'Syncfusion.HighContrastTheme.WinForms'| markdownify }}
+Syncfusion.HighContrastTheme.WinForms
 </td>
 <td>
 HighContrastBlack
 </td>
 </tr>
-<table>
+</table>
 
 Before apply theme to `SfForm`, required theme assembly should be loaded as follows.
 
