@@ -129,7 +129,7 @@ This option helps to set the Office2016Colorful theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img1.png)
+![SfForm](Themes_images/Themes_img1.png)
 
 ### Office2016White
 
@@ -144,7 +144,7 @@ This option helps to set the Office2016White theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img2.png)
+![SfForm](Themes_images/Themes_img2.png)
 
 ### Office2016DarkGray
 
@@ -159,7 +159,7 @@ This option helps to set the Office2016DarkGray theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img3.png)
+![SfForm](Themes_images/Themes_img3.png)
 
 ### Office2016Black
 
@@ -174,7 +174,7 @@ This option helps to set the Office2016Black theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img4.png)
+![SfForm](Themes_images/Themes_img4.png)
 
 ### Office2019Colorful
 
@@ -189,7 +189,7 @@ This option helps to set the Office2019Colorful theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img5.png)
+![SfForm](Themes_images/Themes_img5.png)
 
 ### HighContrastBlack
 
@@ -204,7 +204,7 @@ This option helps to set the HighContrastBlack theme.
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes_images/Themes_img6.png)
+![SfForm](Themes_images/Themes_img6.png)
 
 
 
