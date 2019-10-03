@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the form using theme | Syncfusion
+title: Theme appearance in form | Syncfusion
 description: This section explains about the themes in SfForm.
 platform: windowsforms
 control: SfForm
