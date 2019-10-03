@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Styling in SfDataGrid | Syncfusion
+title: Conditional Styling in WinForms DataGrid | Syncfusion
 description: This section explains about the Conditional Styling in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -525,6 +525,57 @@ End Sub
 {% endtabs %}
 
 ![Windows forms datagrid applied colors in row header](ConditionalStyling_images/ConditonalStyling12.png)
+
+## Indent Cell
+
+The appearance of the indent cells in the SfDataGrid can be customized conditionally by overriding the [GridIndentCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridIndentCellRenderer.html) class.
+
+{% tabs %}
+{% highlight c# %}
+public Form1()
+{
+    InitializeComponent();
+    this.sfDataGrid.CellRenderers.Remove("Indent");
+    this.sfDataGrid.CellRenderers.Add("Indent", new CustomIndentCellRenderer());   
+}
+
+public class CustomIndentCellRenderer : GridIndentCellRenderer
+{
+    protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue, CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+    {
+        if (rowColumnIndex.RowIndex % 2 == 0)
+            style.BackColor = Color.Lavender;
+        else
+            style.BackColor = Color.AliceBlue;
+
+        base.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex);   
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+Public Sub New()
+	InitializeComponent()
+	Me.sfDataGrid.CellRenderers.Remove("Indent")
+	Me.sfDataGrid.CellRenderers.Add("Indent", New CustomIndentCellRenderer())
+End Sub
+
+Public Class CustomIndentCellRenderer
+	Inherits GridIndentCellRenderer
+	Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+		If rowColumnIndex.RowIndex Mod 2 = 0 Then
+			style.BackColor = Color.Lavender
+		Else
+			style.BackColor = Color.AliceBlue
+		End If
+
+		MyBase.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex)
+	End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid applied colors in indent cell](ConditionalStyling_images/ConditonalStyling17.png)
+
 
 ## Adding an Image for a Cell
 
