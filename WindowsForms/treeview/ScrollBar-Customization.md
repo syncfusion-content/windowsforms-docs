@@ -33,6 +33,25 @@ Me.treeViewAdv1.VScroll = False
 {% endhighlight %}
 {% endtabs %}
 
+## VScrollPixel
+
+Pixel scrolling allows to perform scrolling operation based on pixels instead of nodes. The `VScrollPixel` property is used to enable the vertical pixel scrolling where scrolling is done using scrollbar thumb. By default, the `VScrollPixel` is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+this.treeViewAdv1.VScrollPixel = True;
+
+{% endhighlight %}
+{% highlight vb %}
+
+Me.treeViewAdv1.HScroll = True
+
+{% endhighlight %}
+{% endtabs %}
+
+![Pixel scrolling behavior](ScrollBarCustomizationImages/ScrollBarCustomization_image1.png)
+
 ## MetroScrollBars
 		
 `TreeViewAdv` provides support for Metro scrollbars.
