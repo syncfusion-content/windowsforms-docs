@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme appearance in datagrid | Syncfusion
-description: This section explains about the themes in SfDataGrid.
+title: Theme in winforms datagrid | Syncfusion
+description: Learn about theme support in Syncfusion WinForms SfDataGrid control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
