@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes
+title: Theme appearance in datagrid | Syncfusion
 description: This section explains about the themes in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid
@@ -13,6 +13,8 @@ SfDataGrid offers four built in themes for professional representation as follow
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
+* Office2019Colorful
+* HighContrastBlack
 
 Theme can be applied to SfDataGrid by following the below steps:
 
@@ -20,8 +22,48 @@ Theme can be applied to SfDataGrid by following the below steps:
 * [Apply theme](#apply-theme)
 
 ### Load theme assembly
-Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for SfDataGrid in any application:
-Before apply theme to SfDataGrid, required theme assembly should be loaded as follows.
+
+To set theme to `SfDataGrid`, the following assemblies should be added as reference in any application.
+
+<table>
+<tr>
+<td>
+{{'**Assemblies**'| markdownify }}
+</td>
+<td>
+{{'        **Themes**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Office2016Theme.WinForms       
+</td>
+<td>
+Office2016Colorful<br>
+Office2016White<br>
+Office2016DarkGray<br>
+Office2016Black
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Office2019Theme.WinForms
+</td>
+<td>
+Office2019Colorful
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.HighContrastTheme.WinForms
+</td>
+<td>
+HighContrastBlack
+</td>
+</tr>
+</table>
+
+Before applying theme to `SfDataGrid`, required theme assembly should be loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +77,10 @@ static class Program
         
         static void Main()
         {
-            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2016Theme).Assembly);
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly);
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
@@ -51,7 +96,10 @@ Friend Module Program
         ''' The main entry point for the application.
         ''' </summary>
         Sub Main()
-            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2016Theme).Assembly)
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2019Theme).Assembly)
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly)
             Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Application.Run(New Form1())
@@ -127,3 +175,34 @@ This option helps to set the Office2016Black Theme.
 
 ![](Themes_images/Themes_img4.png)
 
+### Office2019Colorful
+This option helps to set the Office2019Colorful Theme.
+
+{% tabs %}
+{% highlight c# %}
+// Office2019Colorful
+ this.sfDataGrid.ThemeName = " Office2019Colorful ";
+{% endhighlight %}
+{% highlight vb %}
+' Office2019Colorful
+ this.sfDataGrid.ThemeName = " Office2019Colorful "
+{% endhighlight %}
+{% endtabs %}
+
+![](Themes_images/Themes_img5.png)
+
+### HighContrastBlack
+This option helps to set the HighContrastBlack Theme.
+
+{% tabs %}
+{% highlight c# %}
+// HighContrastBlack
+ this.sfDataGrid.ThemeName = " HighContrastBlack ";
+{% endhighlight %}
+{% highlight vb %}
+' HighContrastBlack
+ this.sfDataGrid.ThemeName = " HighContrastBlack "
+{% endhighlight %}
+{% endtabs %}
+
+![](Themes_images/Themes_img6.png)
