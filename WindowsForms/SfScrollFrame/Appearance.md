@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | Windows Forms | Syncfusion
-description: This section explains how to customize the appearance of the SfScrollFrame.
+title: SfScrollFrame appearance in form | Syncfusion
+description: Learn about theme support and customize the appearance in Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -67,7 +67,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ScrollBarBackColor = Color.LightGray
 {% endhighlight %}
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_img3.jpg)
+![vertical scroll bar appearance customized by using VerticalScrollBar](SfScrollFrame_images/SfScrollFrame_img3.jpg)
 
 ### Changing the Scrollbar thumb width
 
@@ -82,7 +82,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbWidth = 8;
 this.sfScrollFrame1.VerticalScrollBar.Style.ThumbWidth = 8;
 {% endhighlight %}
 {% endtabs %}
-![](SfScrollFrame_images/SfScrollFrame_img4.jpg)
+![Size of the scrollbar thumb changed by using ThumbWidth](SfScrollFrame_images/SfScrollFrame_img4.jpg)
 
 **Note**: This width can be set maximum to the width and height of the vertical and horizontal scrollbars respectively. 
 
@@ -117,7 +117,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ArrowButtonDisabledForeColor = Color
 this.sfScrollFrame1.HorizontalScrollBar.Style.ArrowButtonDisabledForeColor = Color.Gray;
 {% endhighlight %}
 {% endtabs %}
-![](SfScrollFrame_images/SfScrollFrame_img5.jpg)
+![Disable arrow button color specified by using ArrowButtonDisabledBackColor](SfScrollFrame_images/SfScrollFrame_img5.jpg)
 
 ## Disabling the Scrollbar Thumb
 
@@ -141,16 +141,18 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbDisabledColor = Color.Indigo;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_img6.jpg)
+![Disabled state thumb color specified by using ThumbDisabledColor](SfScrollFrame_images/SfScrollFrame_img6.jpg)
 
 ## Themes
 
-The SfScrollFrame offers four built-in themes for professional representation as follows:
+The SfScrollFrame offers six built-in themes for professional representation as follows:
 
 * Office2016Colorful
 * Office2016White
 * Office2016DarkGray
 * Office2016Black
+* Office2019Colorful
+* HighContrastBlack
 
 Themes can be applied to the SfScrollFrame by using the following steps:
 
@@ -159,9 +161,47 @@ Themes can be applied to the SfScrollFrame by using the following steps:
 
 ### Load theme assembly
 
-The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfScrollFrame in any application.
+To set theme to `SfScrollFrame`, the following assemblies should be added as reference in any application.
 
-Before applying theme to the SfScrollFrame, required assembly should be loaded. 
+<table>
+<tr>
+<td>
+{{'**Assemblies**'| markdownify }}
+</td>
+<td>
+{{'        **Themes**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Office2016Theme.WinForms       
+</td>
+<td>
+Office2016Colorful<br>
+Office2016White<br>
+Office2016DarkGray<br>
+Office2016Black
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Office2019Theme.WinForms
+</td>
+<td>
+Office2019Colorful
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.HighContrastTheme.WinForms
+</td>
+<td>
+HighContrastBlack
+</td>
+</tr>
+</table>
+
+Before applying theme to `SfScrollFrame`, required theme assembly should be loaded. 
 
 {% tabs %}
 
@@ -177,7 +217,10 @@ using Syncfusion.WinForms.Controls;
         
         static void Main()
         {
-            SfSkinManager.LoadAssembly(typeof(Office2016Theme).Assembly);
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2016Theme).Assembly);
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.WinForms.Themes.Office2019Theme).Assembly);
+            SfSkinManager.LoadAssembly(typeof(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
@@ -195,7 +238,10 @@ Imports Syncfusion.WinForms.Controls
         ''' The main entry point for the application.
         ''' </summary>
         Sub Main()
-            SfSkinManager.LoadAssembly(GetType(Office2016Theme).Assembly)
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2016Theme).Assembly)
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.WinForms.Themes.Office2019Theme).Assembly)
+            SfSkinManager.LoadAssembly(GetType(Syncfusion.HighContrastTheme.WinForms.HighContrastTheme).Assembly)
             Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Application.Run(New Form1())
@@ -234,7 +280,7 @@ Me.SfScrollFrame.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_colorful16.jpg)
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_colorful16.jpg)
 
 #### Office2016White
 
@@ -260,7 +306,7 @@ Me.SfScrollFrame.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_white16.jpg)
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_white16.jpg)
 
 #### Office2016DarkGray
 
@@ -286,7 +332,7 @@ Me.SfScrollFrame.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_darkGray16.jpg)
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_darkGray16.jpg)
 
 #### Office2016Black
 
@@ -312,4 +358,57 @@ Me.SfScrollFrame.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_black16.jpg)
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_black16.jpg)
+
+### Office2019Colorful
+
+This option helps to set the Office2019Colorful Theme.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// Office2019Colorful
+
+ this.SfScrollFrame.ThemeName = " Office2019Colorful ";
+ 
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Office2019Colorful
+
+ Me.SfScrollFrame.ThemeName = " Office2019Colorful "
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_colorful19.png)
+
+### HighContrastBlack
+
+This option helps to set the HighContrastBlack Theme.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// HighContrastBlack
+
+ this.SfScrollFrame.ThemeName = " HighContrastBlack ";
+ 
+{% endhighlight %}
+
+{% highlight vb %}
+
+' HighContrastBlack
+
+ Me.SfScrollFrame.ThemeName = " HighContrastBlack "
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_highcontrastblack.png)
+
