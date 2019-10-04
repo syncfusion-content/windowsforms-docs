@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 ## Themes
-SfDataGrid offers four built in themes for professional representation as follows.
+SfDataGrid offers six built in themes for professional representation as follows.
 
 * Office2016Colorful
 * Office2016White
