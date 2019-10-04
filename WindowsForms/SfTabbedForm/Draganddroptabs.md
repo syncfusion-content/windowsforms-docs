@@ -37,7 +37,7 @@ private void OnTabDragging(object sender, TabDraggingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.TabbedFormControl.TabDragging += AddressOf OnTabDragging
+AddHandler TabbedFormControl.TabDragging, AddressOf OnTabDragging
 
 Private Sub OnTabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
 	If e.From = 1 AndAlso e.Action = TabDraggingAction.DragStarting Then
@@ -62,7 +62,7 @@ private void OnTabDragging(object sender, TabDraggingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.TabbedFormControl.TabDragging += AddressOf OnTabDragging
+AddHandler TabbedFormControl.TabDragging, AddressOf OnTabDragging
 
 Private Sub OnTabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
 	If e.To = 1 AndAlso e.Action = TabDraggingAction.DragDropping Then
