@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Token support in Winforms ComboBox | Syncfusion
-description: Learn about tokens support in Syncfusion Winforms ComboBox (SfComboBox) control and more details.
+description: Learn about tokens support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug

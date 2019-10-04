@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrollbar-Customization | WindowsForms | Syncfusion
-description: Scrollbar Customization
+description: Learn about enabling and disabling vertical scrollbar, horizontal scrollbar and pixel scrolling and also about scrollbar events in WinForms TreeView control.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
