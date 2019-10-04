@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theme appearance in form | Syncfusion
-description: This section explains about the themes in SfForm.
+description: This section explains about themes in SfForm.
 platform: windowsforms
 control: SfForm
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes
 
-SfForm offers six built in themes for professional representation as follows.
+SfForm offers the following six built-in themes for professional representation:
 
 * Office2016Colorful
 * Office2016White
@@ -18,14 +18,14 @@ SfForm offers six built in themes for professional representation as follows.
 * Office2019Colorful
 * HighContrastBlack
 
-Theme can be applied to `SfForm` by following the below steps:
+Themes can be applied to `SfForm` by following these steps:
 
 * `Load theme assembly`
 * `Apply theme`
 
 ## Load theme assembly
 
-To set theme for `SfForm` the following assemblies should be added as reference in any application:
+To set theme to `SfForm`, the following assemblies should be added as reference in any application.
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ HighContrastBlack
 </tr>
 </table>
 
-Before apply theme to `SfForm`, required theme assembly should be loaded as follows.
+Before applying theme to `SfForm`, required theme assembly should be loaded.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,7 +74,7 @@ using Syncfusion.WinForms.Controls;
 static class Program
 {
     /// <summary>
-    /// The main entry point for the application.
+    /// The main entry point for an application.
     /// </summary>
     [STAThread]
     static void Main()
@@ -114,7 +114,7 @@ End Class
 
 ## Apply theme
 
-Appearance of `SfForm` can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~ThemeName.html) of `SfForm`.
+The appearance of `SfForm` can be changed using [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~ThemeName.html) of `SfForm`.
 
 ### Office2016Colorful
 
@@ -205,6 +205,3 @@ This option helps to set the HighContrastBlack theme.
 {% endtabs %}
 
 ![SfForm](Themes_images/Themes_img6.png)
-
-
-
