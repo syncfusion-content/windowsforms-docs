@@ -10,13 +10,13 @@ documentation: ug
 # Scrollbar Customization
 
 
-## HScroll
+## Enabling horizontal scrollbar
 
-`HScroll` property is used to Show/hide the horizontal scrollbar. By default, `HScroll` will be set as true, when `HScroll` value is false then visibility of horizontal scroll bar will be collapsed.
+`HScroll` property is used to show/hide the horizontal scrollbar. By default, `HScroll` will be set as true, when `HScroll` value is false then visibility of horizontal scroll bar will be collapsed.
 
-## VScroll
+## Enabling vertical scrollbar
 
-`VScroll` property is used to Show/hide the vertical scrollbar. By default, `VScroll` will be set as true, when `VScroll` value is false then visibility of vertical scroll bar will be collapsed.
+`VScroll` property is used to show/hide the vertical scrollbar. By default, `VScroll` will be set as true, when `VScroll` value is false then visibility of vertical scroll bar will be collapsed.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,20 +33,20 @@ Me.treeViewAdv1.VScroll = False
 {% endhighlight %}
 {% endtabs %}
 
-## VScrollPixel
+## Enable pixel scrolling
 
-Pixel scrolling allows to perform scrolling operation based on pixels instead of nodes. The `VScrollPixel` property is used to enable the vertical pixel scrolling where scrolling is done using scrollbar thumb. By default, the `VScrollPixel` is set to false.
-
+Pixel scrolling allows to perform scrolling operation based on pixels instead of nodes. The [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html]) property is used to enable the vertical pixel scrolling where scrolling is done using scrollbar thumb. By default, the [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html) is set to false.
+ 
 {% tabs %}
 {% highlight c# %}
-
-this.treeViewAdv1.VScrollPixel = True;
-
+ 
+this.treeViewAdv1.VScrollPixel = true;
+ 
 {% endhighlight %}
 {% highlight vb %}
-
-Me.treeViewAdv1.HScroll = True
-
+ 
+Me.treeViewAdv1.VScrollPixel = True
+ 
 {% endhighlight %}
 {% endtabs %}
 
