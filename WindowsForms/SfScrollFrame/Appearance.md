@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing appearance of winforms scrollframe | Syncfusion
-description: Learn about theme support and customize the appearance in Syncfusion WinForms SfScrollFrame control and more details.
+description: Learn about changing appearance in Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
