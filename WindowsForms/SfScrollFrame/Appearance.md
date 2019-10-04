@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SfScrollFrame appearance in form | Syncfusion
+title: Changing appearance of winforms scrollframe | Syncfusion
 description: Learn about theme support and customize the appearance in Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
@@ -67,7 +67,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ScrollBarBackColor = Color.LightGray
 {% endhighlight %}
 {% endtabs %}
 
-![vertical scroll bar appearance customized by using VerticalScrollBar](SfScrollFrame_images/SfScrollFrame_img3.jpg)
+![Vertical scroll bar appearance customized in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img3.jpg)
 
 ### Changing the Scrollbar thumb width
 
@@ -82,7 +82,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbWidth = 8;
 this.sfScrollFrame1.VerticalScrollBar.Style.ThumbWidth = 8;
 {% endhighlight %}
 {% endtabs %}
-![Size of the scrollbar thumb changed by using ThumbWidth](SfScrollFrame_images/SfScrollFrame_img4.jpg)
+![Scrollbar thumb  size changed in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img4.jpg)
 
 **Note**: This width can be set maximum to the width and height of the vertical and horizontal scrollbars respectively. 
 
@@ -117,7 +117,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ArrowButtonDisabledForeColor = Color
 this.sfScrollFrame1.HorizontalScrollBar.Style.ArrowButtonDisabledForeColor = Color.Gray;
 {% endhighlight %}
 {% endtabs %}
-![Disable arrow button color specified by using ArrowButtonDisabledBackColor](SfScrollFrame_images/SfScrollFrame_img5.jpg)
+![Disabled the arrow button color in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img5.jpg)
 
 ## Disabling the Scrollbar Thumb
 
@@ -141,7 +141,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ThumbDisabledColor = Color.Indigo;
 {% endhighlight %}
 {% endtabs %}
 
-![Disabled state thumb color specified by using ThumbDisabledColor](SfScrollFrame_images/SfScrollFrame_img6.jpg)
+![Disabled state thumb color in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img6.jpg)
 
 ## Themes
 
@@ -280,7 +280,7 @@ Me.SfScrollFrame.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_colorful16.jpg)
+![Office2016colorful theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_colorful16.jpg)
 
 #### Office2016White
 
@@ -306,7 +306,7 @@ Me.SfScrollFrame.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_white16.jpg)
+![Office2016white theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_white16.jpg)
 
 #### Office2016DarkGray
 
@@ -332,7 +332,7 @@ Me.SfScrollFrame.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_darkGray16.jpg)
+![Office2016darkgray theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_darkGray16.jpg)
 
 #### Office2016Black
 
@@ -358,7 +358,7 @@ Me.SfScrollFrame.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_black16.jpg)
+![Office2016black theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_black16.jpg)
 
 ### Office2019Colorful
 
@@ -384,7 +384,7 @@ This option helps to set the Office2019Colorful Theme.
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_colorful19.png)
+![Office2019colorful theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_colorful19.png)
 
 ### HighContrastBlack
 
@@ -410,5 +410,5 @@ This option helps to set the HighContrastBlack Theme.
 
 {% endtabs %}
 
-![SfScrollFrame](SfScrollFrame_images/SfScrollFrame_highcontrastblack.png)
+![Highcontrastblack theme applied in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_highcontrastblack.png)
 

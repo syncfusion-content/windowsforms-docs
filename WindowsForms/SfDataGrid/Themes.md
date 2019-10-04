@@ -121,11 +121,11 @@ This option helps to set the Office2016Colorful Theme.
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016Colorful
- this.sfDataGrid.ThemeName = "Office2016Colorful"
+ Me.sfDataGrid.ThemeName = "Office2016Colorful"
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img1.png)
+![Office2016colorful theme applied in winforms datagrid](Themes_images/Themes_img1.png)
 
 ### Office2016White
 This option helps to set the Office2016White Theme.
@@ -137,11 +137,11 @@ This option helps to set the Office2016White Theme.
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016White
- this.sfDataGrid.ThemeName = " Office2016White "
+ Me.sfDataGrid.ThemeName = " Office2016White "
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img2.png)
+![Office2016white theme applied in winforms datagrid](Themes_images/Themes_img2.png)
 
 ### Office2016DarkGray
 This option helps to set the Office2016DarkGray Theme.
@@ -153,27 +153,27 @@ This option helps to set the Office2016DarkGray Theme.
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016DarkGray
- this.sfDataGrid.ThemeName = " Office2016DarkGray "
+ Me.sfDataGrid.ThemeName = " Office2016DarkGray "
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img3.png)
+![Office2016darkgray theme applied in winforms datagrid](Themes_images/Themes_img3.png)
 
 ### Office2016Black
 This option helps to set the Office2016Black Theme.
 
 {% tabs %}
 {% highlight c# %}
-// Office2016DarkGray
+// Office2016Black
  this.sfDataGrid.ThemeName = " Office2016Black ";
 {% endhighlight %}
 {% highlight vb %}
-' Office2016DarkGray
- this.sfDataGrid.ThemeName = " Office2016Black "
+' Office2016Black
+ Me.sfDataGrid.ThemeName = " Office2016Black "
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img4.png)
+![Office2016black theme applied in winforms datagrid](Themes_images/Themes_img4.png)
 
 ### Office2019Colorful
 This option helps to set the Office2019Colorful Theme.
@@ -185,11 +185,11 @@ This option helps to set the Office2019Colorful Theme.
 {% endhighlight %}
 {% highlight vb %}
 ' Office2019Colorful
- this.sfDataGrid.ThemeName = " Office2019Colorful "
+ Me.sfDataGrid.ThemeName = " Office2019Colorful "
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img5.png)
+![Office2019colorful theme applied in winforms datagrid](Themes_images/Themes_img5.png)
 
 ### HighContrastBlack
 This option helps to set the HighContrastBlack Theme.
@@ -201,8 +201,8 @@ This option helps to set the HighContrastBlack Theme.
 {% endhighlight %}
 {% highlight vb %}
 ' HighContrastBlack
- this.sfDataGrid.ThemeName = " HighContrastBlack "
+ Me.sfDataGrid.ThemeName = " HighContrastBlack "
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid](Themes_images/Themes_img6.png)
+![Highcontrastblack theme applied in winforms datagrid](Themes_images/Themes_img6.png)
