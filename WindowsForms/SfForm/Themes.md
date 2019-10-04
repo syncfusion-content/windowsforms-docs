@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme appearance in form | Syncfusion
-description: This section explains about themes in SfForm.
+title: Title should be link Theme appearance in winforms form | Syncfusion
+description: Learn about theme support in Syncfusion WinForms Form (SfForm) control and more details.
 platform: windowsforms
 control: SfForm
 documentation: ug
