@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and Drop Tabs| Tabbed Form | WinForms | Syncfusion
-description: This section explains about the drag and drop the tabs in SfTabbedForm.
+title: Drag and drop tabs in WinForms TabbedForm | Syncfusion
+description: Learn about the drag and drop Support in Sycfusion Winforms TabbedForm control and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
@@ -24,22 +24,22 @@ tabbedFormControl.AllowDraggingTabs = True
 
 ## Cancel Tab Dragging
 
-The dragging operation of the particular column can canceled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
+Dragging a particular tab in the `TabbedForm` can be cancelled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
 
 {% tabs %}
 {% highlight c# %}
-this.TabbedFormControl.TabDragging += TabbedFormControl_TabDragging;
+this.TabbedFormControl.TabDragging += OnTabDragging;
 
-private void TabbedFormControl_TabDragging(object sender, TabDraggingEventArgs e)
+private void OnTabDragging(object sender, TabDraggingEventArgs e)
 {
     if (e.From == 1 && e.Action == TabDraggingAction.DragStarting)
         e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.TabbedFormControl.TabDragging += AddressOf TabbedFormControl_TabDragging
+Private Me.TabbedFormControl.TabDragging += AddressOf OnTabDragging
 
-Private Sub TabbedFormControl_TabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
+Private Sub OnTabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
 	If e.From = 1 AndAlso e.Action = TabDraggingAction.DragStarting Then
 		e.Cancel = True
 	End If
@@ -49,22 +49,22 @@ End Sub
 
 ## Cancel Tab Reordering
 
-SfTabbedForm allow to cancel dropping a tab at particular tab by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragDropping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html).
+Re-ordering a tab to a particular position can be cancelled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragDropping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html).
 
 {% tabs %}
 {% highlight c# %}
-this.TabbedFormControl.TabDragging += TabbedFormControl_TabDragging;
+this.TabbedFormControl.TabDragging += OnTabDragging;
 
-private void TabbedFormControl_TabDragging(object sender, TabDraggingEventArgs e)
+private void OnTabDragging(object sender, TabDraggingEventArgs e)
 {
     if (e.To == 1 && e.Action == TabDraggingAction.DragDropping)
         e.Cancel = true;
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.TabbedFormControl.TabDragging += AddressOf TabbedFormControl_TabDragging
+Private Me.TabbedFormControl.TabDragging += AddressOf OnTabDragging
 
-Private Sub TabbedFormControl_TabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
+Private Sub OnTabDragging(ByVal sender As Object, ByVal e As TabDraggingEventArgs)
 	If e.To = 1 AndAlso e.Action = TabDraggingAction.DragDropping Then
 		e.Cancel = True
 	End If
