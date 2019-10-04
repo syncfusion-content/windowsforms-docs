@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and drop tabs in WinForms TabbedForm | Syncfusion
-description: Learn about the drag and drop Support in Syncfusion Winforms TabbedForm control and more details.
+description: Learn about the drag and drop Support in Syncfusion Winforms TabbedForm control and more details.                                                                                                                                                                              
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
