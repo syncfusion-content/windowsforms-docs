@@ -526,9 +526,9 @@ End Sub
 
 ![Windows forms datagrid applied colors in row header](ConditionalStyling_images/ConditonalStyling12.png)
 
-## Indent Cell
+## Indent cell
 
-The appearance of the indent cells in the SfDataGrid can be customized conditionally by overriding the [GridIndentCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridIndentCellRenderer.html) class.
+The appearance of indent cells in SfDataGrid can be customized conditionally by overriding the [GridIndentCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridIndentCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -575,7 +575,6 @@ End Class
 {% endtabs %}
 
 ![Windows forms datagrid applied colors in indent cell](ConditionalStyling_images/ConditonalStyling17.png)
-
 
 ## Adding an Image for a Cell
 
