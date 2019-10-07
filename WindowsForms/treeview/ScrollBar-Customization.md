@@ -35,7 +35,7 @@ Me.treeViewAdv1.VScroll = False
 
 ## Enable pixel scrolling
 
-Pixel scrolling allows to perform scrolling operation based on pixels instead of nodes. The [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html]) property is used to enable the vertical pixel scrolling where scrolling is done using scrollbar thumb. By default, the [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html) is set to false.
+Pixel scrolling allows to perform scrolling operation based on pixels instead of nodes. The [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html) property is used to enable the vertical pixel scrolling where scrolling is done using scrollbar thumb. By default, the [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~VScrollPixel.html) is set to false.
  
 {% tabs %}
 {% highlight c# %}
