@@ -21,6 +21,8 @@ spreadsheet.AllowFiltering = true;
 {% endhighlight %}
 {% endtabs %}
 
+N> Please find the [Filtering Sample](https://github.com/SyncfusionExamples/Spreadsheet_Sort_Filter) for your reference.
+
 ## Programmatic Sorting and Filtering
 
 ### Sorting 
