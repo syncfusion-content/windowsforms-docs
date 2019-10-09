@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WindowsForms products
-description: Learn how to install and deploy the Syncfusion WindowsForms component
+title: Installation and Deployment process for Syncfusion ES Windows products
+description: Learn how to install and deploy the Syncfusion Essential Studio Windows Forms components             
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
