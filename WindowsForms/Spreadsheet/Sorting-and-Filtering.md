@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Sorting and Filtering Operation | Spreadsheet | syncfusion
-description: This section provides an overview of Sorting and Filtering Operation in Spreadsheet for Syncfusion WinForms.
+title:  Sorting and Filtering Operation in WinForms Spreadsheet | syncfusion
+description: This section provides an overview of Sorting and Filtering Operation in WinForms Spreadsheet with examples.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
