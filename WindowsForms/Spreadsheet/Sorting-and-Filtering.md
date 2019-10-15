@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Sorting and Filtering Operation in WinForms Spreadsheet | syncfusion
+title:  Sorting and Filtering operation in WinForms Spreadsheet | syncfusion
 description: This section provides an overview of Sorting and Filtering Operation in WinForms Spreadsheet with examples.
 platform: windowsforms
 control: Spreadsheet
@@ -21,7 +21,7 @@ spreadsheet.AllowFiltering = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> Please find the [Filtering Sample](https://github.com/SyncfusionExamples/Spreadsheet_Sort_Filter) for your reference.
+N> Please find the [Filtering Demo](https://github.com/SyncfusionExamples/Spreadsheet_Sort_Filter) for your reference.
 
 ## Programmatic Sorting and Filtering
 
