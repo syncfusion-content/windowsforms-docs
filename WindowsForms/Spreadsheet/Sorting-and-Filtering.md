@@ -13,7 +13,7 @@ This section explains about sorting and filtering functionalities in the Spreads
 
 ## Filtering
 
-By default, Filtering support will not be enabled in the Spreadsheet, hence if you want to enable the Filtering in Spreadsheet, set the `AllowFiltering` property of the `Spreadsheet` to be true.
+By default, Filtering support will not be enabled in the Spreadsheet, hence if you want to enable the Filtering in Spreadsheet, set the [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowFiltering.html) property of the `Spreadsheet` to be true.
 
 {% tabs %}
 {% highlight c# %}
