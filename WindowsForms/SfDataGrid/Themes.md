@@ -133,11 +133,11 @@ This option helps to set the Office2016White Theme.
 {% tabs %}
 {% highlight c# %}
 // Office2016White
- this.sfDataGrid.ThemeName = " Office2016White ";
+ this.sfDataGrid.ThemeName = "Office2016White";
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016White
- Me.sfDataGrid.ThemeName = " Office2016White "
+ Me.sfDataGrid.ThemeName = "Office2016White"
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,11 +149,11 @@ This option helps to set the Office2016DarkGray Theme.
 {% tabs %}
 {% highlight c# %}
 // Office2016DarkGray
- this.sfDataGrid.ThemeName = " Office2016DarkGray ";
+ this.sfDataGrid.ThemeName = "Office2016DarkGray";
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016DarkGray
- Me.sfDataGrid.ThemeName = " Office2016DarkGray "
+ Me.sfDataGrid.ThemeName = "Office2016DarkGray"
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,11 +165,11 @@ This option helps to set the Office2016Black Theme.
 {% tabs %}
 {% highlight c# %}
 // Office2016Black
- this.sfDataGrid.ThemeName = " Office2016Black ";
+ this.sfDataGrid.ThemeName = "Office2016Black";
 {% endhighlight %}
 {% highlight vb %}
 ' Office2016Black
- Me.sfDataGrid.ThemeName = " Office2016Black "
+ Me.sfDataGrid.ThemeName = "Office2016Black"
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,11 +181,11 @@ This option helps to set the Office2019Colorful Theme.
 {% tabs %}
 {% highlight c# %}
 // Office2019Colorful
- this.sfDataGrid.ThemeName = " Office2019Colorful ";
+ this.sfDataGrid.ThemeName = "Office2019Colorful";
 {% endhighlight %}
 {% highlight vb %}
 ' Office2019Colorful
- Me.sfDataGrid.ThemeName = " Office2019Colorful "
+ Me.sfDataGrid.ThemeName = "Office2019Colorful"
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,11 +197,11 @@ This option helps to set the HighContrastBlack Theme.
 {% tabs %}
 {% highlight c# %}
 // HighContrastBlack
- this.sfDataGrid.ThemeName = " HighContrastBlack ";
+ this.sfDataGrid.ThemeName = "HighContrastBlack";
 {% endhighlight %}
 {% highlight vb %}
 ' HighContrastBlack
- Me.sfDataGrid.ThemeName = " HighContrastBlack "
+ Me.sfDataGrid.ThemeName = "HighContrastBlack"
 {% endhighlight %}
 {% endtabs %}
 

@@ -370,7 +370,7 @@ This option helps to set the Office2019Colorful Theme.
 
 // Office2019Colorful
 
- this.SfScrollFrame.ThemeName = " Office2019Colorful ";
+ this.SfScrollFrame.ThemeName = "Office2019Colorful";
  
 {% endhighlight %}
 
@@ -378,7 +378,7 @@ This option helps to set the Office2019Colorful Theme.
 
 ' Office2019Colorful
 
- Me.SfScrollFrame.ThemeName = " Office2019Colorful "
+ Me.SfScrollFrame.ThemeName = "Office2019Colorful"
  
 {% endhighlight %}
 
@@ -396,7 +396,7 @@ This option helps to set the HighContrastBlack Theme.
 
 // HighContrastBlack
 
- this.SfScrollFrame.ThemeName = " HighContrastBlack ";
+ this.SfScrollFrame.ThemeName = "HighContrastBlack";
  
 {% endhighlight %}
 
@@ -404,7 +404,7 @@ This option helps to set the HighContrastBlack Theme.
 
 ' HighContrastBlack
 
- Me.SfScrollFrame.ThemeName = " HighContrastBlack "
+ Me.SfScrollFrame.ThemeName = "HighContrastBlack"
  
 {% endhighlight %}
 
