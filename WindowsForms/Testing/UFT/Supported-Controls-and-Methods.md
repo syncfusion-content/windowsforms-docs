@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Controls and Methods in WinForms QTP/UFT | Syncfusion
+title: QTP or UFT - Supported Controls and Methods | Syncfusion
 description: This section explains about the supported controls and methods for QTP/UFT in Syncfusion Essential WinForms Controls
 platform: WindowsForms
 control: Testing
@@ -189,7 +189,7 @@ Int
 </tr>
 <tr>
 <td>
-void GetCellValue();
+void GetCellValue(int rowIndex, int columnIndex);
 </td>
 <td>
 To get the value of the cell
