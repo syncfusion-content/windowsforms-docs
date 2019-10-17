@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Controls and Methods in WinForms QTP/UFT | Syncfusion
-description: This section explains about the Supported Controls and Methods for QTP/UFT.
+description: This section explains about the supported controls and methods for QTP/UFT in Syncfusion Essential WinForms Controls
 platform: WindowsForms
 control: Testing
 documentation: ug
