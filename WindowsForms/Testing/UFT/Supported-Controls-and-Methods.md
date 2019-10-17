@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QTP or UFT - Supported Controls and Methods | Syncfusion
+title: Supported Controls and Methods in WinForms QTP/UFT | Syncfusion
 description: This section explains about the Supported Controls and Methods for QTP/UFT.
 platform: WindowsForms
 control: Testing
@@ -151,6 +151,57 @@ NA
 </td>
 <td>
 Void
+</td>
+</tr>
+<tr>
+<td>
+void GetRowCount();
+</td>
+<td>
+To get the row count of the SfDataGrid
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Int
+</td>
+</tr>
+<tr>
+<td>
+void GetColumnCount();
+</td>
+<td>
+To get the column count of the SfDataGrid
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Int
+</td>
+</tr>
+<tr>
+<td>
+void GetCellValue();
+</td>
+<td>
+To get the value of the cell
+</td>
+<td>
+int rowIndex, int columnIndex
+</td>
+<td>
+Passing row and column index for a cell
+</td>
+<td>
+Object
 </td>
 </tr>
 </table>
