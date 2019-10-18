@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Using WinForms Spreadsheet to sort and filter the Microsoft Excel | syncfusion
+title:  Using WinForms Spreadsheet to sort and filter the Microsoft Excel
 description: This section discusses how to use WinForms Spreadsheet with examples to perform sorting and filtering operations in Microsoft Excel. 
 platform: windowsforms
 control: Spreadsheet
@@ -9,11 +9,11 @@ documentation: ug
 
 # Sorting and Filtering
 
-This section explains about sorting and filtering functionalities in the Spreadsheet.
+This section explains the features of sorting and filtering in the Spreadsheet.
 
 ## Filtering
 
-By default, Filtering support will not be enabled in the Spreadsheet, hence if you want to enable the Filtering in Spreadsheet, set the [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowFiltering.html) property of the `Spreadsheet` to be true.
+By default, the Spreadsheet does not allow filtering support, so if you want to enable filtering in Spreadsheet, set the [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~AllowFiltering.html) property to be true.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ N> Please find the [Filtering Demo](https://github.com/SyncfusionExamples/Spread
 
 ### Sorting 
 
-Programmatically sort the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of Spreadsheet.
+Sort the data programmatically when importing the workbook in the `WorkbookLoaded` event of Spreadsheet .
 
 {% tabs %}
 {% highlight c# %}
@@ -48,7 +48,7 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 ### Filtering 
 
-Programmatically filter the data while importing the workbook by using XlsIO in the `WorkbookLoaded` event of Spreadsheet.
+Filter the data programmatically when importing the workbook in the `WorkbookLoaded` event of Spreadsheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,13 +65,13 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-For more reference, please go through the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting) UG documentation.
+For more details, please go through the documentation of the [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-sorting) UG.
 
-N> If sorting or filtering has been applied programmatically at runtime, then [refresh the view](https://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) to update it in `SpreadsheetGrid`. But this changes will not be updated in Filter popup even after refreshing the view. 
-
+N>If you have programmatically applied the sorting or filtering at runtime, [refresh the view](https://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) to change it in `SpreadsheetGrid`. But even after refreshing the view, these changes won't be updated in Filter popup.
+ 
 ## Unsupported Features
 
-Currently Spreadsheet does not have support for following features.
+Spreadsheet currently does not support the following features.
 
 * Advanced filtering
 * Table filtering
@@ -81,9 +81,9 @@ Currently Spreadsheet does not have support for following features.
 
 ### Sorting
 
-* In Microsoft Excel, sorting label should be varied in filter popup based on the type of values in a column (For e.g, "Sort Smallest to Largest" for numeric values, "Sort A to Z" for string values, etc.). But in Spreadsheet, sort label should not be varied based on values due to improve the loading performance of filter popup.
-* Sort Ascending or Sort Descending label is not checked in the filter popup, if the column is sorted in Microsoft Excel. Because currently XlsIO do not have support to fetch the sorted order while importing the workbook.
+* Sorting label in Microsoft Excel should be varied in filter popup depending on the value type in a column (for example, "Sort Smallest to Largest" for numerical values, "Sort A to Z" for string values, etc.). But sort label is not varied in Spreadsheet based on values due to improving filter popup loading efficiency.
+*If the column is sorted in Microsoft Excel, Sort Ascending or Sort Descending is not checked in the filter popup.Since XlsIO currently has no support when importing the workbook to get the sorted order.
 
 ### Filtering
 
-* If the filter applied in Microsoft Excel, then the filter will be cleared from all columns while clearing the filter from any one column Because unable to fetch the filtering order.
+* If the filter is applied in Microsoft Excel, the filter will be cleared from all columns while clearing the filter from any column in Spreadsheet.
