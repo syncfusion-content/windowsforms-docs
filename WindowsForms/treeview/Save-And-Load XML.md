@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Binding | WindowsForms | Syncfusion
-description: data binding
+title:  Save and Load XML in WinForms TreeView control | Syncfusion
+description: Learn about save and load XML data from XML file in Syncfusion WinForms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Data Binding
+# Save and Load File
 
 `TreeViewAdv` does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 
@@ -190,4 +190,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can download the Sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TREEVI~1932187720).
+You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TREEVI~1932187720).
