@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Localization support for Syncfusion Essential Studio Windows Forms controls
-description: Getting Started for Localization
+title: Localization in Windows Forms | Syncfusion
+description: Learn about Localization support in Syncfusion WF UI Contorls using .RESX files and also explains editing default strings of WF controls.
 platform: WindowsForms
-control: General
+control: Localization
 documentation: ug
 ---
 
@@ -49,7 +49,7 @@ N> Consider you are using `SfDataGrid` control in your application. Then you nee
 
 ![adding resource file in Windows Forms control](Localization_images/winforms-adding-resource-file.png)
 
-4) Now, select `Add` and add resource file for german culture in `Resources` folder.
+4) Now, select `Add` and add resource file for German culture in `Resources` folder.
 
 ![Windows Forms control localization using .resx file](Localization_images/winforms-resx-file-to-localize.png)
 
@@ -288,7 +288,7 @@ End Function
 {% endtabs %}
 
 
-![](Localization_images/GettingStarted_img1.png)
+![Assign the localization string](Localization_images/GettingStarted_img1.png)
 
 
 ## Using Satellite Assemblies
@@ -326,7 +326,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
 
 
-![](Localization_images/GettingStarted_img3.png)
+![Resource Editor window of Localization component](Localization_images/GettingStarted_img3.png)
 
 
 5)   By using the Resource Editor, open the resource file, Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.<br/><br/>
@@ -334,7 +334,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 6)   Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ended”.
 
 
-![](Localization_images/GettingStarted_img4.png)
+![String values are changing by German culture](Localization_images/GettingStarted_img4.png)
 
 
 7)   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.<br/><br/>
@@ -342,7 +342,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 8)   Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
 
 
-![](Localization_images/GettingStarted_img5.png)
+![Window Resource Localization Editor with German text](Localization_images/GettingStarted_img5.png)
 
 
 9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name `Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources` is added to the source path.
@@ -412,6 +412,6 @@ Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de
 
 16)  Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
-![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image30_1600.jpg](Localization_images/GettingStarted_img6.png)
+![Customization dialog appears in German culture](Localization_images/GettingStarted_img6.png)
 
 
