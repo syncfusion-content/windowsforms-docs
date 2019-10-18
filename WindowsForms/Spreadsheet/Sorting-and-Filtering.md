@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Using WinForms Spreadsheet to sort and filter the MS Excel | syncfusion
+title:  Sorting and Filtering in Spreadsheet | syncfusion
 description: This section discusses how to use WinForms Spreadsheet with examples to perform sorting and filtering operations in Microsoft Excel. 
 platform: windowsforms
 control: Spreadsheet
