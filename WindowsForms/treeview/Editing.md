@@ -63,7 +63,7 @@ End If
 {% endtabs %}Object-Relational View
 
 <table>
-<tr><th>S.No</th><th>Types of View</th><th>Description</th>
+<tr><th>S.No</th><th>Types of View</th><th>Description</th></tr>
 <tr><td>1</td><td>
 Self-Referencing
 </td><td>
@@ -77,12 +77,12 @@ In this type, you can do insert, delete, edit, drag and drop operations.
 </td></tr>
 </table>
 
-N> 
-1.	For all the types, in order to allow editing in TreeViewAdv control, **TreeViewAdv.LabelEdit** property and **AllowDrop** property must be enabled in TreeViewAdv.
 
-2.	For Self-referencing and Data relation type, you need to call **AcceptChanges()** after adding new rows and before deleting the existing rows to allow the dynamic updates in TreeViewAdv. 
-Editing Object-Relational View
-In this type, you can insert, delete, edit and drag drop the new or existing data. Custom objects must be implemented either with INotifyPropertyChanged or INotifyCollectionChanged interface, so that TreeViewAdv will automatically refresh the UI when any item gets changed, added, removed or the list gets cleared.
+N> 
+1.	For all the types, in order to allow editing in TreeViewAdv control, TreeViewAdv.LabelEdit property and AllowDrop property must be enabled in TreeViewAdv.
+
+2.	For Self-referencing and Data relation type, you need to call AcceptChanges() after adding new rows and before deleting the existing rows to allow the dynamic updates in TreeViewAdv. 
+
 
 ## Editing Object-Relational View
 In this type, you can insert, delete, edit and drag drop the new or existing data. Custom objects must be implemented either with **INotifyPropertyChanged** or **INotifyCollectionChanged** interface, so that TreeViewAdv will automatically refresh the UI when any item gets changed, added, removed or the list gets cleared.
