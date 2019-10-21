@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | Calculate | Xamarin.Forms | Syncfusion
-description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData in Xamarin.Forms Calculate
+description: This session explains that how to calculate the formulasusing CalcQuickBase,CalcEngine and ICalcData in Xamarin.Forms Calculate
 platform: xamarin
 control: Calculate
 documentation: ug
