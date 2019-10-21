@@ -58,7 +58,8 @@ Gets or sets a value indicating the field to populate the state of checkbox of T
 <td>
 SelfRelationRootValue </td><td>
 
-Gets or sets the value that defines the root object in a self-relational mode when data source is used to define the underlying tree data. </td></tr>
+Gets or sets the value that defines the root object in a self-relational mode when data source is used to define the underlying tree data. 
+</td></tr>
 </table>
 
 ![SelfReferencingData](DataBinding_images/SelfReferencingData1.png)
@@ -95,11 +96,11 @@ N>
 In this type, TreeViewAdv are bound to database where levels are created using **DataRelation** class. Each **DataRelation** class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
 
 <table>
-<tr><th>S.No</th><th>Property Name</th><th>Description</th>
+<tr><th>S.No</th><th>Property Name</th><th>Description</th></tr>
 <tr><td>1</td><td>DataRelations</td><td>Contains the collection of DataRelation in TreeViewAdv.</td></tr></table>
 
 <table>
-<tr><th>S.No</th><th>Class Name</th><th>Description</th>
+<tr><th>S.No</th><th>Class Name</th><th>Description</th></tr>
 <tr><td>1</td><td>DataRelation</td><td>Represents a parent/child relationship between two DataTable objects.</td></tr></table>
 
 ![DataRelations](DataBinding_images/DataRelations1.png)
@@ -171,7 +172,7 @@ In this illustration, there are three classes named Continent, Country and State
 You must specify the **DisplayMember**, **ChildMember** property and here you need not define **ParentMember** property. TreeViewAdv must display it in hierarchical view.
 
 <table>
-<tr><th>S.No</th><th>Properties</th><th>Description</th>
+<tr><th>S.No</th><th>Properties</th><th>Description</th></tr>
 <tr><td>1</td><td>DisplayMember</td><td>Defines which property of the class needs to be in node's text.</br> 
 
 Example</br>

@@ -80,7 +80,6 @@ In this type, you can do insert, delete, edit, drag and drop operations.
 
 N> 
 1.	For all the types, in order to allow editing in TreeViewAdv control, TreeViewAdv.LabelEdit property and AllowDrop property must be enabled in TreeViewAdv.
-
 2.	For Self-referencing and Data relation type, you need to call AcceptChanges() after adding new rows and before deleting the existing rows to allow the dynamic updates in TreeViewAdv. 
 
 
