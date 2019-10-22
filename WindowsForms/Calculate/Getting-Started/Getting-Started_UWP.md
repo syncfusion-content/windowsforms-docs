@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate | WinForms | Syncfusion
-description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
-platform: windowsforms
+title: Getting Started with Essential Calculate| Calculate | UWP |Syncfusion
+description: This section explains that how to compute the formulas using CalcQuickBase,CalcEngine and ICalcData for Syncfusion Essential UWP.
+platform: UWP
 control: Calculate
 documentation: ug
 ---
@@ -189,9 +189,9 @@ string result = engine.ParseAndComputeFormula(formula);
  
 The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. But we cannot change the values of the variables at runtime for computation. Also by default, `CalcQuickBase` does not try to track any dependencies among the variables you set, hence to enable automatic recalculation of dependent variables, users need to set the [AutoCalc](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~AutoCalc.html) property to `True`.
 
-For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculate/working-with-calcquick)
+For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/uwp/calculate/working-with-calcquick)
 
-N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
+N> Please find the sample which uses `CalcQuickBase` class for computations, [Calculate](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBase-1285447682)
 
 ### ICalcData
 
@@ -199,9 +199,10 @@ To use Essential Calculate support, we need to derive the class from [ICalcData]
 To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface. Since `GetValueRowCol` and `SetValueRowCol` methods 
 of `ICalcData` interface is used to get and set the values of the variables at runtime for computation. `CalcEngine` listens to the `ValueChanged` event of `ICalcData` interface to tracks the dependencies and compute the formulas.
 
-For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculate/working-with-icalcdata)
+For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/uwp/calculate/working-with-icalcdata)
 
-N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
+
+N> Please find the sample which uses `ICalcData` interface for computations, [Calculate](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataSample328057167)
 
 ## Cross Sheet Reference
 
