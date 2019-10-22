@@ -82,7 +82,7 @@ Spreadsheet currently does not support the following features.
 ### Sorting
 
 * Sorting label in Microsoft Excel should be varied in filter popup depending on the value type in a column (for example, "Sort Smallest to Largest" for numerical values, "Sort A to Z" for string values, etc.). But sort label is not varied in Spreadsheet based on values due to improving filter popup loading efficiency.
-*If the column is sorted in Microsoft Excel, Sort Ascending or Sort Descending is not checked in the filter popup.Since XlsIO currently has no support when importing the workbook to get the sorted order.
+* If the column is sorted in Microsoft Excel, Sort Ascending or Sort Descending is not checked in the filter popup.Since XlsIO currently has no support when importing the workbook to get the sorted order.
 
 ### Filtering
 
