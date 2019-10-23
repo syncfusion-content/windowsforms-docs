@@ -167,26 +167,26 @@ In this type, TreeViewAdv binds to class objects which have collections associat
 
 ![Object-RelationalData](DataBinding_images/Object-RelationalData1.png)
 
-In this illustration, there are three classes named Continent, Country and State. In this case the **Continent** class has a property named ContinentName**, **ContinentID** and **Country_List** which is a collection of **Country** objects. This is the first relation. The second relation is the **State_List** property in the **Country** class, it offers a reference to a collection of **State**. 
+In this illustration, there are three classes named Continent, Country and State. In this case the **Continent** class has a property named **ContinentName**, **ContinentID** and **Country_List** which is a collection of **Country** objects. This is the first relation. The second relation is the **State_List** property in the **Country** class, it offers a reference to a collection of **State**. 
 
 You must specify the **DisplayMember**, **ChildMember** property and here you need not define **ParentMember** property. TreeViewAdv must display it in hierarchical view.
 
 <table>
 <tr><th>S.No</th><th>Properties</th><th>Description</th></tr>
-<tr><td>1</td><td>DisplayMember</td><td>Defines which property of the class needs to be in node's text.</br> 
+<tr><td>1</td><td>DisplayMember</td><td>Defines which property of the class needs to be in node's text. 
 
-Example</br>
-Continent -> ContinentName</br>
-Country -> CountryName</br>
-State -> StateName</br>
+ Example:
+ Continent -> ContinentName,
+Country -> CountryName,
+State -> StateName.
 </td></tr>
 
 <tr><td>2</td><td>ChildMember</td><td>Defines the class order.</br> 
 
-Example</br>
-Continent -> First level</br>
-Country -> Second level</br>
-State -> Third level</br>
+Example:
+Continent -> First level,
+Country -> Second level,
+State -> Third level.
 </td></tr>
 </table>
 
