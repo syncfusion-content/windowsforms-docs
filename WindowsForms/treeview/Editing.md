@@ -60,7 +60,8 @@ If Me.treeViewAdv1.SelectedItem IsNot Nothing Then
   TryCast(treeViewAdv1.SelectedItem, DataRow).Delete()
 End If
 {% endhighlight %}
-{% endtabs %}Object-Relational View
+{% endtabs %}
+
 
 <table>
 <tr><th>S.No</th><th>Types of View</th><th>Description</th></tr>

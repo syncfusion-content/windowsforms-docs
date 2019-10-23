@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Save and Load File
+# Save and Load XML
 
 `TreeViewAdv` does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 
