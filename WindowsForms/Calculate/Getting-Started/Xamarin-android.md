@@ -36,7 +36,7 @@ WPF, Windows Forms, ASP. NET
 Syncfusion.Calculate.Base
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Calculate.Base/
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -47,7 +47,7 @@ Universal Windows Platform
 Syncfusion.Calculate.UWP
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Calculate.UWP/
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.UWP/">[Syncfusion.Calculate.UWP.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Xamarin.Forms
 Syncfusion.Calculate.Portable<br/>
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Xamarin.Android
 Syncfusion.Calculate.Android<br/>
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ Xamarin.iOS
 Syncfusion.Calculate.iOS<br/>
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/
+<a href="https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/">[Syncfusion.Xamarin.Calculate.nupkg]</a>
 </td>
 </tr>
 <tr>
@@ -91,7 +91,7 @@ https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate/
 Syncfusion.Calculate.Portable<br/>
 </td>
 <td>
-https://www.nuget.org/packages/Syncfusion.Calculate.Base/
+<a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
 </td>
 </tr>
 </tbody>
