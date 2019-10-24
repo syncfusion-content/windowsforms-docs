@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of Web functions in CalcEngine.
 platform: windowsforms
 control: Calculate
 documentation: ug
@@ -63,8 +63,7 @@ _WEBSERVICE(url)_
 
 
 
-The `Webservice` function returns data from a web service on the Internet or Intranet.
-
+The `Filterxml` function returns specific data from XML content by using the specified xpath.
 
 
 **Syntax:**
@@ -87,4 +86,4 @@ _FILTERXML(xml, xpath)_
 
 
 
-N> The above formulas wil not be supported for Xamarin.Forms,Xamarin.Android,Xamarin.iOS and .NETCore.
+N> The above formulas will not be supported for Xamarin.Forms,Xamarin.Android,Xamarin.iOS and .NETCore.
