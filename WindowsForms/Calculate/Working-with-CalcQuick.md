@@ -83,6 +83,8 @@ calcQuick["result"] = "=SUM([A],[B])"
 {% endhighlight %}
 {% endtabs %}
 
+Download Calculation with values and variables demo from [GitHub](https://github.com/SyncfusionExamples/calculation-with-variables-and-values-example)
+
 #### Compute using ParseAndCompute method
 
 The [ParseAndCompute](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~ParseAndCompute.html) method of `CalcQuickBase` parses and computes the given formula string and returns the computed value.
