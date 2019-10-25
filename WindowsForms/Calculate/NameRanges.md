@@ -83,3 +83,5 @@ engine.NamedRanges["GROUPCELLS"] = "A3:A8";
 
 {% endhighlight %}
 {% endtabs %}
+
+Download Calculation with NamedRange demo from [GitHub](https://github.com/SyncfusionExamples/calculate-named-ranges-example)
