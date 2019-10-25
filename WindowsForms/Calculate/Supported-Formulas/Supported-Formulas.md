@@ -184,6 +184,8 @@ The following are the list of formulas supported in Calculate library,
 
 [FALSE](/windowsforms/calculate/supported-formulas/logical-formulas#false)
 
+[FILTERXML](/windowsforms/calculate/supported-formulas/web-formulas#filterxml)
+
 [FIND](/windowsforms/calculate/supported-formulas/text-formulas#find)
 
 [FINDB](/windowsforms/calculate/supported-formulas/text-formulas#findB)
@@ -473,6 +475,8 @@ The following are the list of formulas supported in Calculate library,
 [VARPA](/windowsforms/calculate/supported-formulas/statistical#varpa)
 
 [VLOOKUP](/windowsforms/calculate/supported-formulas/lookup-and-reference#vlookup)
+
+[WEBSERVICE](/windowsforms/calculate/supported-formulas/web-formulas#webservice)
 
 [WEEKDAY](/windowsforms/calculate/supported-formulas/date-time#weekday)
 
