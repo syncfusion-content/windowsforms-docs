@@ -88,7 +88,7 @@ Syncfusion.Calculate.iOS<br/>
  .NET Core
 </td>
 <td>
-Syncfusion.Calculate.Portable<br/>
+Syncfusion.Calculate.Base<br/>
 </td>
 <td>
 <a href="https://www.nuget.org/packages/Syncfusion.Calculate.Base/">[Syncfusion.Calculate.Base.nupkg]</a>
