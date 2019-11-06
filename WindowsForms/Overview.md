@@ -229,7 +229,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 <a href="https://help.syncfusion.com/file-formats/pdf/getting-started">PDF</a>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/file-formats/presentation/getting-started">Powerpoint</a>
+<p><a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a>
 <small> - Presentation</small></p>
 </td>
 </tr>
@@ -309,7 +309,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/splitter/getting-started">Excel-like Tabbar Splitter</a>
+<p><a href="https://help.syncfusion.com/windowsforms/splitter/getting-started">Excel-like Tab bar Splitter</a>
 <small> - SplitterControl</small></p>
 </td>
 <td>
