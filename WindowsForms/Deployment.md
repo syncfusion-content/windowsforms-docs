@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assembly deployment | Windows Forms | Syncfusion
-description: Deployment
+description: Learn here about how to install and deploy the Syncfusion Essential Studio Windows Forms components.
 platform: WindowsForms
 control: Deployment
 documentation: ug
@@ -28,24 +28,24 @@ The following table represents Assemblies/ Samples and its installed location
 <table>
 <tr>
 <th>
-Assemblies /  Samples<br/><br/></th><th>
-Installed location<br/><br/></th></tr>
+Assemblies /  Samples</th><th>
+Installed location</th></tr>
 <tr>
 <td>
-GAC<br/><br/></td><td>
-C:\Windows\Microsoft.NET\assembly\GAC_MSIL<br/><br/></td></tr>
+GAC</td><td>
+C:\Windows\Microsoft.NET\assembly\GAC_MSIL</td></tr>
 <tr>
 <td>
-Assemblies<br/><br/></td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\{{ site.releaseversion }}\Assemblies<br/><br/></td></tr>
+Assemblies</td><td>
+C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\{{ site.releaseversion }}\Assemblies</td></tr>
 <tr>
 <td>
-Precompiled Assemblies<br/><br/></td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\{{ site.releaseversion }}\precompiledassemblies<br/><br/></td></tr>
+Precompiled Assemblies</td><td>
+C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\{{ site.releaseversion }}\precompiledassemblies</td></tr>
 <tr>
 <td>
-Samples<br/><br/></td><td>
-C:\Users\Public\Documents\Syncfusion\Windows\{{ site.releaseversion }}<br/><br/></td></tr>
+Samples</td><td>
+C:\Users\Public\Documents\Syncfusion\Windows\{{ site.releaseversion }}</td></tr>
 </table>
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
