@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Named Ranges | Calculate | WinForms | Syncfusion
+title: Named Ranges | Calculate | Syncfusion
 description: This section provides the basic idea to use the named ranges for calculate in Syncfusion essential windowsforms
 platform: windowsforms
 control: Calculate
