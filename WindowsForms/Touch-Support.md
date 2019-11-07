@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch support for Syncfusion Windows Forms controls
-description: Touch Support Overview
+description: Learn here about the touch supports for Syncfusion Essential Studio Windows Forms controls and touch Gestures.
 platform: WindowsForms
 control: General
 documentation: ug
@@ -11,904 +11,905 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/><br/>
+Gestures determine whether a finger or stylus has moved over a control. Syncfusion WinForms controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
 This table shows the gesture mappings for each control.
 
 <table>
 <tr>
-<th>
-Category<br/><br/></th><th>
-Control<br/><br/></th><th>
-Swipe<br/><br/></th><th>
-Pinch<br/><br/></th><th>
-Tap<br/><br/></th><th>
-Hold<br/><br/></th></tr>
-<tr>
-<td>
-Grids<br/><br/></td><td>
-Cell Grid<br/><br/></td><td>
-Selection, Scrolling<br/><br/></td><td>
--<br/><br/></td><td>
-Click and select<br/><br/></td><td>
-Right-Click<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Data Grid<br/><br/></td><td>
-Selection, Scrolling and Drag Drop<br/><br/></td><td>
--<br/><br/></td><td>
-Click and Select<br/><br/></td><td>
-Right-Click<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Pivot Grid<br/><br/></td><td>
-Selection, Scrolling and Drag Drop<br/><br/></td><td>
--<br/><br/></td><td>
-Click and Select<br/><br/></td><td>
-Right-Click<br/><br/></td></tr>
-<tr>
-<td>
-Data Visualization<br/><br/></td><td>
-Diagram<br/><br/></td><td>
-Pan/Rubber band Selection<br/><br/></td><td>
-Zoom<br/><br/></td><td>
-Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Schedule<br/><br/></td><td>
-Drag Drop<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Radial Gauge<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Linear Gauge<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Digital Gauge<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-PivotChart<br/><br/></td><td>
-Zoom<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Chart<br/><br/></td><td>
-Zoom<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Right-click<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-TreeMap<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Maps<br/><br/></td><td>
-Pan<br/><br/></td><td>
-Zoom<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<th>Category</th>
+<th>Control</th>
+<th>Swipe</th>
+<th>Pinch</th>
+<th>Tap</th>
+<th>Hold</th>
+</tr>
+
+<tr>
+<td>
+Grids</td><td>
+Cell Grid</td><td>
+Selection, Scrolling</td><td>
+-</td><td>
+Click and select</td><td>
+Right-Click</td></tr>
+<tr>
+<td>
+</td><td>
+Data Grid</td><td>
+Selection, Scrolling and Drag Drop</td><td>
+-</td><td>
+Click and Select</td><td>
+Right-Click</td></tr>
+<tr>
+<td>
+</td><td>
+Pivot Grid</td><td>
+Selection, Scrolling and Drag Drop</td><td>
+-</td><td>
+Click and Select</td><td>
+Right-Click</td></tr>
+<tr>
+<td>
+Data Visualization</td><td>
+Diagram</td><td>
+Pan/Rubber band Selection</td><td>
+Zoom</td><td>
+Select</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Schedule</td><td>
+Drag Drop</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Radial Gauge</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Linear Gauge</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Digital Gauge</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+PivotChart</td><td>
+Zoom</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+Chart</td><td>
+Zoom</td><td>
+-</td><td>
+Click</td><td>
+Right-click</td></tr>
+<tr>
+<td>
+</td><td>
+TreeMap</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+Maps</td><td>
+Pan</td><td>
+Zoom</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-Layout<br/><br/></td><td>
-Office2007Form<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+Layout</td><td>
+Office2007Form</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Office2010Form<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Office2010Form</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RibbonControlAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RibbonControlAdv</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RibbonForm<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RibbonForm</td><td>
+Move</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RibbonMergeContainer<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RibbonMergeContainer</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Docking Manager<br/><br/></td><td>
-Move<br/><br/></td><td>
-<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Docking Manager</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Carousel<br/><br/></td><td>
-Rotate<br/><br/></td><td>
-Maximize/Minimize circle<br/><br/></td><td>
-Click, Select, Rotate<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Carousel</td><td>
+Rotate</td><td>
+Maximize/Minimize circle</td><td>
+Click, Select, Rotate</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TabControlAdv<br/><br/></td><td>
-TabMove<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TabControlAdv</td><td>
+TabMove</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TabbedMdI Manager<br/><br/></td><td>
-TabMove<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TabbedMdI Manager</td><td>
+TabMove</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Tile Layout<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Tile Layout</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Metro Form<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Metro Form</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SfForm<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+SfForm</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-GradientLabel<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+GradientLabel</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-GradientPanel<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+GradientPanel</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-GradientPanelExt<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+GradientPanelExt</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TabBarSplitterControl<br/><br/></td><td>
-Scroll, Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TabBarSplitterControl</td><td>
+Scroll, Move</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SplitContainerAdv<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+SplitContainerAdv</td><td>
+Move</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-PopupControlContainer<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+PopupControlContainer</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-Editors<br/><br/></td><td>
-CurrencyTextBox<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+Editors</td><td>
+CurrencyTextBox</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-IntegerTextBox<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+IntegerTextBox</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-DoubleTextBox<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+DoubleTextBox</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-PercentTextBox<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+PercentTextBox</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-DomainUpDownExt<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+DomainUpDownExt</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-NumericUpDownExt<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+NumericUpDownExt</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TextBoxExt<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TextBoxExt</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-CurrencyEdit<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+CurrencyEdit</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-EditableList<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+EditableList</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MaskedEdit<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+MaskedEdit</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-AutoComplete<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+AutoComplete</td><td>
+-</td><td>
+-</td><td>
+Select</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-AutoLabel<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+AutoLabel</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ButtonAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ButtonAdv</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ButtonEdit<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ButtonEdit</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SplitButtonAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+SplitButtonAdv</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Calculator<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Calculator</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-CheckBoxAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Select/Unselect<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+CheckBoxAdv</td><td>
+-</td><td>
+-</td><td>
+Select/Unselect</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RadioButtonAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Select/Unselect<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RadioButtonAdv</td><td>
+-</td><td>
+-</td><td>
+Select/Unselect</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Rating<br/><br/></td><td>
-Selection<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Rating</td><td>
+Selection</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ComboBoxAdv<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ComboBoxAdv</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ComboBoxBase<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ComboBoxBase</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ComboBoxAutoComplete<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ComboBoxAutoComplete</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ComboBoxDropDown<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ComboBoxDropDown</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-FontComboBox<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+FontComboBox</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MultiColumnComboBox<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+MultiColumnComboBox</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MultiSelectionComboBox<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+MultiSelectionComboBox</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SfComboBox<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Right-Click<br/><br/></td></tr>
+<td>
+</td><td>
+SfComboBox</td><td>
+Scroll</td><td>
+-</td><td>
+Click</td><td>
+Right-Click</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-FontListBox<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+FontListBox</td><td>
+Scroll</td><td>
+-</td><td>
+Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SfListView<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+SfListView</td><td>
+Scroll</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Syntax Editor<br/><br/></td><td>
-Scroll<br/><br/></td><td>
-<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Syntax Editor</td><td>
+Scroll</td><td>
+</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-HTML Viewer<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+HTML Viewer</td><td>
+Scroll</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RadialSlider<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RadialSlider</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Range Slider<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Range Slider</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MonthCalendarAdv<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+MonthCalendarAdv</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-DateTimePickerAdv<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+DateTimePickerAdv</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ColorPickerUIAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ColorPickerUIAdv</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ColorPickerButton<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ColorPickerButton</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ColorUIControl<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ColorUIControl</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ToggleButton<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ToggleButton</td><td>
+Move</td><td>
+-</td><td>
+Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-Navigation<br/><br/></td><td>
-RadialMenu<br/><br/></td><td>
-Move, Swipe<br/><br/></td><td>
-Zoom<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+Navigation</td><td>
+RadialMenu</td><td>
+Move, Swipe</td><td>
+Zoom</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TreeView<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select, Collapse and expand<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TreeView</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select, Collapse and expand</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MultiColumnTreeView<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select, Collapse and expand<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+MultiColumnTreeView</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select, Collapse and expand</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-GroupBar<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+GroupBar</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-GroupView<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+GroupView</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Menu<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+Menu</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-XPToolBar<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+XPToolBar</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TaskBar<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Collapse and expand<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TaskBar</td><td>
+-</td><td>
+-</td><td>
+Click, Collapse and expand</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MiniToolBar<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+MiniToolBar</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Toolbars<br/><br/></td><td>
-Drag and drop<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Toolbars</td><td>
+Drag and drop</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TreeNavigator<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TreeNavigator</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Navigation View<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click , Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Navigation View</td><td>
+-</td><td>
+-</td><td>
+Click , Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-RecordNavigationControl<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+RecordNavigationControl</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-ToolStripEx<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+ToolStripEx</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-TrackBarEx<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+TrackBarEx</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-File Format<br/><br/></td><td>
-DocIO<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
+<td>
+File Format</td><td>
+DocIO</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-PDF<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+PDF</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-PDF Viewer<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+PDF Viewer</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-XlsIO<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
+<td>
+</td><td>
+XlsIO</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Presentation<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-<br/><br/></td></tr>
+<td>
+</td><td>
+Presentation</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-Notification<br/><br/></td><td>
-SplashPanel<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+Notification</td><td>
+SplashPanel</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-SplashControl<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+SplashControl</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-StatusBarAdv<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+StatusBarAdv</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-StatusBarAdvPanel<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+StatusBarAdvPanel</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-StatusBarExt<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+StatusBarExt</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-StatusStripEx<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+StatusStripEx</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Progressbar<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
+<td>
+</td><td>
+Progressbar</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Super Tooltip<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+Super Tooltip</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-MessageBox Adv<br/><br/></td><td>
-Move<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+MessageBox Adv</td><td>
+Move</td><td>
+-</td><td>
+Click</td><td>
+-</td></tr>
 <tr>
-<td>
-<br/><br/></td><td>
-Clock<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-HubTile<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Tile Layout<br/><br/></td><td>
-Click<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Select<br/><br/></td></tr>
-<tr>
-<td>
-Miscellaneous<br/><br/></td><td>
-Calculate<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Grouping<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Localization<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Skin Manager<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-WizardControl<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-XPTaskPane<br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Select<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Scrollers Frame<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-SfScrollFrame<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click<br/><br/></td><td>
-Context Menu<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Folder Browser<br/><br/></td><td>
-Scroll<br/><br/></td><td>
--<br/><br/></td><td>
-Click, Expand<br/><br/></td><td>
--<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-SpellChecker<br/><br/></td><td>
-Scroll, Move<br/><br/></td><td>
--<br/><br/></td><td>
-Select<br/><br/></td><td>
--<br/><br/></td></tr>
+<td>
+</td><td>
+Clock</td><td>
+-</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+HubTile</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Tile Layout</td><td>
+Click</td><td>
+-</td><td>
+Click</td><td>
+Select</td></tr>
+<tr>
+<td>
+Miscellaneous</td><td>
+Calculate</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+Grouping</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+Localization</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+Skin Manager</td><td>
+-</td><td>
+-</td><td>
+-</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+WizardControl</td><td>
+-</td><td>
+-</td><td>
+Select</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+XPTaskPane</td><td>
+-</td><td>
+-</td><td>
+Click, Select</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Scrollers Frame</td><td>
+Scroll</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+SfScrollFrame</td><td>
+Scroll</td><td>
+-</td><td>
+Click</td><td>
+Context Menu</td></tr>
+<tr>
+<td>
+</td><td>
+Folder Browser</td><td>
+Scroll</td><td>
+-</td><td>
+Click, Expand</td><td>
+-</td></tr>
+<tr>
+<td>
+</td><td>
+SpellChecker</td><td>
+Scroll, Move</td><td>
+-</td><td>
+Select</td><td>
+-</td></tr>
 </table>

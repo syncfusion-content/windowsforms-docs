@@ -1,103 +1,93 @@
 ---
 layout: post
-title: .NET Framework support History for Syncfusion Windows Forms controls
-description: .Net Framework support History details
+title: .NET Framework Compatibility of Syncfusion Windows Forms controls
+description: Learn here about the history of .NET Framework support for the Syncfusion Essential Studio Windows Forms controls
 platform: WindowsForms
-control: Introduction
+control: .NET Framework Compatibility
 documentation: ug
 ---
 
+# .NET Framework Compatibility
+
+Syncfusion Windows Forms Controls are always compatible latest .NET Framework versions.
+
+N> Syncfusion WPF Controls supports `.NET Framework 3.5` and later versions. The controls start with `syn` supports `.NET Framework 4.0` and later versions.
+
 ## Version Compatibility
 
-The table represents the .NET Framework versions for Syncfusion Essential Studio version.
+Below table represents the supported Syncfusion Essential Studio version for .NET Framework versions.
 
 <table>
 <tr>
 <th>
-Syncfusion Version <br/><br/></th><th>
-.NET 3.5<br/><br/></th><th>
-.NET 4.0<br/><br/></th><th>
-.NET 4.5<br/><br/></th><th>
-.NET 4.5.1<br/><br/></th><th>
-.NET 4.6 & above<br/><br/></th><th>
-.NET Core 3.0<br/><br/></th></tr>
+Syncfusion Version </th><th>
+.NET 3.5</th><th>
+.NET 4.0</th><th>
+.NET 4.5</th><th>
+.NET 4.5.1</th><th>
+.NET 4.6 & above</th><th>
+.NET Core 3.0</th></tr>
 <tr>
 <td>
-Earlier Version<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td></tr>
+Earlier Version</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+No</td><td>
+No</td></tr>
 <tr>
 <td>
-From 11.2<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td></tr>
+From 11.2</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td><td>
+No</td><td>
+No</td></tr>
 <tr>
 <td>
-From 11.3<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-No<br/><br/></td><td>
-No<br/><br/></td></tr>
+From 11.3</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td><td>
+No</td></tr>
 <tr>
 <td>
-From 13.3<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-No<br/><br/></td></tr>
+From 13.3</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td></tr>
 <tr>
 <td>
-From 17.1<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td><td>
-Yes<br/><br/></td></tr>
+From 17.1</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td></tr>
 </table>
 
 ## Control Compatibility
 
-The table represents the .NET Framework versions for Syncfusion controls.
+Below table represents the supported Syncfusion Essential Studio controls for .NET Framework versions.
 
 <table>
 <tr>
-<td>
-{{'**Category** '| markdownify }}
-</td>
-<td>
-{{'**Controls**'| markdownify }}
-</td>
-<td>
-{{'**.NET 2.0**'| markdownify }}
-</td>
-<td>
-{{'**.NET 3.5**'| markdownify }}
-</td>
-<td>
-{{'**.NET 4.0**'| markdownify }}
-</td>
-<td>
-{{'**.NET 4.5**'| markdownify }}
-</td>
-<td>
-{{'**.NET 4.5.1**'| markdownify }}
-</td>
-<td>
-{{'**.NET 4.6 & above**'| markdownify }}
-</td>
+<th>Category</th>
+<th>Controls</th>
+<th>.NET 2.0</th>
+<th>.NET 3.5</th>
+<th>.NET 4.0</th>
+<th>.NET 4.5</th>
+<th>.NET 4.5.1</th>
+<th>.NET 4.6 & above</th>
 </tr>
 <tr>
 <td>
