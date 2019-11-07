@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Operators
-description: Explains about the list of operators in Essential calculate
+title: Operators | Calculate | Syncfusion
+description: Learn here about how to work with the arithmatic and logical operators in Syncfusion Essential calculate
 platform: windowsforms
 control: Calculate
 documentation: ug
