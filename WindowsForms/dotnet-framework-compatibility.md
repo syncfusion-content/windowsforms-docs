@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion Windows Forms Controls are always compatible latest .NET Framework versions.
 
-N> Syncfusion WPF Controls supports `.NET Framework 3.5` and later versions. The controls start with `sy` supports `.NET Framework 4.0` and later versions.
+N> Syncfusion WPF Controls supports `.NET Framework 3.5` and later versions. The controls start with `syn` supports `.NET Framework 4.0` and later versions.
 
 ## Version Compatibility
 
