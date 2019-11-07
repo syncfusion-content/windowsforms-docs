@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance and Limitations
-description: Describes how to improve the performance of Essential Calculate and its limitations
+title: Performance and Limitations | Calculate | Syncfusion
+description: Learn here about how to improve the performance of Syncfusion Essential Calculate and its limitations
 platform: windowsforms
 control: Calculate
 documentation: ug
