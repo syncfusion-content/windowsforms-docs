@@ -326,7 +326,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a>
-<small> - XPToolbar</small>
+<small> - XPToolbar</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/wizard/getting-started">Wizard Control</a>
@@ -454,6 +454,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 <tr>
 <td colspan="3">
 <b>DIALOGS AND NOTIFICATION</b>
+</td>
 </tr>
 
 <tr>
@@ -727,7 +728,6 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 </td>
 <td/>
 </tr>
-
 </table>
 
 N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
