@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinForms DataGrid | Syncfusion
-description: Learn about the filtering support in WinForms DataGrid and its available options in more details.
+description: This section explains about the filtering support in WinForms DataGrid and its available options in more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
