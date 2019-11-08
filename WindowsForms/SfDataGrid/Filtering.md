@@ -339,9 +339,9 @@ Me.sfDataGrid1.Columns("CustomerID").AllowBlankFilters = True
 
 N>If there is no null values exist in the column, the `(Blanks)` option will not be listed in the CheckedListBox.
 
-### Filtering Based on Display Text
+### Filtering based on Display Text
 By default, the filtering is applied based on the actual value of the column. This can be changed to filter based on the display text by setting the [FilterMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~FilterMode.html) value as `ColumnFilter.DisplayText`.
-In the below screenshot, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2232018 12:00:00 AM and 2232018 6:30:00 PM). 
+In the below screenshot, first and second records have same display value for OrderDate column but both have different actual value (E.g. 29/06/2018 12:00:00 AM and 29/06/2018 6:30:00 PM). 
 
 ![Filtering Based on Display Text](Filtering_images/Filtering_img7.png)
 
