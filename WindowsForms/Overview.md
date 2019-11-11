@@ -326,7 +326,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a>
-<small> - XPToolbar</small>
+<small> - XPToolbar</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/wizard/getting-started">Wizard Control</a>
@@ -454,6 +454,7 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 <tr>
 <td colspan="3">
 <b>DIALOGS AND NOTIFICATION</b>
+</td>
 </tr>
 
 <tr>
@@ -727,7 +728,6 @@ N> The name of the Visual Studio Toolbox entry provided differs from the common 
 </td>
 <td/>
 </tr>
-
 </table>
 
 N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
@@ -740,9 +740,9 @@ Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/
 
 The [Knowledge Base](https://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the Knowledge Base, the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+Similar to the [Knowledge Base](https://www.syncfusion.com/kb/windowsforms), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
 
-## Create a support incident
+## Support and feedback
 
 If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
