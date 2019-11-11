@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in WinForms DataGrid | Syncfusion
-description: This section explains about the filtering support in WinForms DataGrid and its available options in more details.
+title: Filtering in WinForms DataGrid control | Syncfusion
+description: Learn about filtering the data (Excel-like filter) support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
