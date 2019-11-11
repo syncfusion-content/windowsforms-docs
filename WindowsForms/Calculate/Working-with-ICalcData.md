@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with ICalcData
-description: Explains about the computation in ICalcData
+title: Working with ICalcData | Calculate | Syncfusion
+description: Learn here about how to working with the computation of formulas, methods and events using ICalcData
 platform: windowsforms
 control: Calculate
 documentation: ug
