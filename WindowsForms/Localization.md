@@ -43,9 +43,9 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2)   Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.<br/><br/>
+2)   Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
-3)   Return the localized versions of the strings corresponding to the string identifiers.<br/><br/>
+3)   Return the localized versions of the strings corresponding to the string identifiers.
 
 4)   String identifiers are defined in the `ResourceIdentifiers` and the `EditResourceIdentifiers` classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 
 {% endtabs %}
 
-5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.<br/><br/>
+5)   Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.
 
 6)   Assign this instance to the `Provider` property of the `LocalizationProvider` class before the InitializeComponent call in the constructor of the application.
 
@@ -95,147 +95,79 @@ LocalizationProvider.Provider = New Localizer()
 {% highlight c# %}
 
 public string GetLocalizedString(System.Globalization.CultureInfo culture, string name,object obj)
-
 {
-
-switch (name)
-
-{
-
-case Localizer.EditResourceIdentifiers.FDbtnClose:
-
-return "schließen";
-
-case Localizer.EditResourceIdentifiers.FDbtnFind:
-
-return "finden";
-
-case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
-
-return "markieren Sie alle";              
-
-case Localizer.EditResourceIdentifiers.FDchkCase:
-
-return "übereinstimmen Fall";               
-
-case Localizer.EditResourceIdentifiers.FDchkHidden:
-
-return "Suche hidden";
-
-case Localizer.EditResourceIdentifiers.FDchkRegular:
-
-return "Suche regelmäßige";
-
-case Localizer.EditResourceIdentifiers.FDchkUp:
-
-return "Suche Up";
-
-case Localizer.EditResourceIdentifiers.FDchkWholeWord:
-
-return "Ganzes Wort";
-
-case Localizer.EditResourceIdentifiers.FDchkWrap:
-
-return "Zeilenumbruch";
-
-case Localizer.EditResourceIdentifiers.FDGroupTitle:
-
-return "Suchen";
-
-case Localizer.EditResourceIdentifiers.FDMain:
-
-return "Startseite";
-
-case Localizer.EditResourceIdentifiers.FDrdbDocument:
-
-return "Document";
-
-case Localizer.EditResourceIdentifiers.FDrdbSelection:
-
-return "Auswahl";
-
-case Localizer.EditResourceIdentifiers.FDTitle:
-
-return "Kommentar";
-             
-default:
-
-return string.Empty;
-
-}
-
+    switch (name)
+    {
+        case Localizer.EditResourceIdentifiers.FDbtnClose:
+        return "schließen";
+        case Localizer.EditResourceIdentifiers.FDbtnFind:
+        return "finden";
+        case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
+        return "markieren Sie alle";
+        case Localizer.EditResourceIdentifiers.FDchkCase:
+        return "übereinstimmen Fall";
+        case Localizer.EditResourceIdentifiers.FDchkHidden:
+        return "Suche hidden";
+        case Localizer.EditResourceIdentifiers.FDchkRegular:
+        return "Suche regelmäßige";
+        case Localizer.EditResourceIdentifiers.FDchkUp:
+        return "Suche Up";
+        case Localizer.EditResourceIdentifiers.FDchkWholeWord:
+        return "Ganzes Wort";
+        case Localizer.EditResourceIdentifiers.FDchkWrap:
+        return "Zeilenumbruch";
+        case Localizer.EditResourceIdentifiers.FDGroupTitle:
+        return "Suchen";
+        case Localizer.EditResourceIdentifiers.FDMain:
+        return "Startseite";
+        case Localizer.EditResourceIdentifiers.FDrdbDocument:
+        return "Document";
+        case Localizer.EditResourceIdentifiers.FDrdbSelection:
+        return "Auswahl";
+        case Localizer.EditResourceIdentifiers.FDTitle:
+        return "Kommentar";
+        default:
+        return string.Empty;
+    }
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Public Function GetLocalizedString(ByVal culture AsSystem.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) AsString
-
-Select Case name
-
-Case Localizer.EditResourceIdentifiers.FDbtnClose
-
-Return "schließen"
-
-Case Localizer.EditResourceIdentifiers.FDbtnFind
-
-Return "finden"
-
-Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
-
-Return "markieren Sie alle"
-
-Case Localizer.EditResourceIdentifiers.FDchkCase
-
-Return "übereinstimmen Fall"
-
-Case Localizer.EditResourceIdentifiers.FDchkHidden
-
-Return "Suche hidden"
-
-Case Localizer.EditResourceIdentifiers.FDchkRegular
-
-Return "Suche regelmäßige"
-
-Case Localizer.EditResourceIdentifiers.FDchkUp
-
-Return "Suche Up"
-
-Case Localizer.EditResourceIdentifiers.FDchkWholeWord
-
-Return "Ganzes Wort"
-
-Case Localizer.EditResourceIdentifiers.FDchkWrap
-
-Return "Zeilenumbruch"
-
-Case Localizer.EditResourceIdentifiers.FDGroupTitle
-
-Return "Suchen"
-
-Case Localizer.EditResourceIdentifiers.FDMain
-
-Return "Startseite"
-
-Case Localizer.EditResourceIdentifiers.FDrdbDocument
-
-Return "Document"
-
-Case Localizer.EditResourceIdentifiers.FDrdbSelection
-
-Return "Auswahl"
-
-Case Localizer.EditResourceIdentifiers.FDTitle
-
-Return "Kommentar"
-
-Case Else
-
-Return String.Empty
-
-End Select
-
+Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
+	Select Case name
+		Case Localizer.EditResourceIdentifiers.FDbtnClose
+		Return "schließen"
+		Case Localizer.EditResourceIdentifiers.FDbtnFind
+		Return "finden"
+		Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
+		Return "markieren Sie alle"
+		Case Localizer.EditResourceIdentifiers.FDchkCase
+		Return "übereinstimmen Fall"
+		Case Localizer.EditResourceIdentifiers.FDchkHidden
+		Return "Suche hidden"
+		Case Localizer.EditResourceIdentifiers.FDchkRegular
+		Return "Suche regelmäßige"
+		Case Localizer.EditResourceIdentifiers.FDchkUp
+		Return "Suche Up"
+		Case Localizer.EditResourceIdentifiers.FDchkWholeWord
+		Return "Ganzes Wort"
+		Case Localizer.EditResourceIdentifiers.FDchkWrap
+		Return "Zeilenumbruch"
+		Case Localizer.EditResourceIdentifiers.FDGroupTitle
+		Return "Suchen"
+		Case Localizer.EditResourceIdentifiers.FDMain
+		Return "Startseite"
+		Case Localizer.EditResourceIdentifiers.FDrdbDocument
+		Return "Document"
+		Case Localizer.EditResourceIdentifiers.FDrdbSelection
+		Return "Auswahl"
+		Case Localizer.EditResourceIdentifiers.FDTitle
+		Return "Kommentar"
+		Case Else
+		Return String.Empty
+	End Select
 End Function
 
 {% endhighlight %}
@@ -274,17 +206,17 @@ Syncfusion components have their own neutral resources, and these resources can 
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
-2)   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.<br/><br/>
+2)   Inside the NeutralResources folder, there are four resource files corresponding to the Tools package. These resources contain the string representations for the English culture, both default and neutral.
 
-3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows to construct resource files containing bitmaps, icons, and strings.<br/><br/>
+3)   Microsoft Visual Studio.NET ships with a tool called Resource Editor (ResEditor) that can be used to localize the string resources. It provides a graphical interface that allows to construct resource files containing bitmaps, icons, and strings.
 
-4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.<br/><br/>
+4)   Compile the source code by using the build.bat command in the Microsoft Visual Studio 2008 Command prompt. The following figure shows how the Resource Editor looks when it first opens.
 
 
 ![Resource Editor window of Localization component](Localization_images/GettingStarted_img3.png)
 
 
-5)   By using the Resource Editor, open the resource file, Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.<br/><br/>
+5)   By using the Resource Editor, open the resource file, Syncfusion.Windows.Forms.Tools.SR.resources present in the NeutralResources folder. The previous figure shows all string resources displayed in the tool.
 
 6)   Now, the actual process for localization begins. After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture. In this example, the German language is used. In the following figure, all the English strings are replaced by their German equivalent. For instance, the German equivalent of Close is “Ended”.
 
@@ -292,7 +224,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 ![String values are changing by German culture](Localization_images/GettingStarted_img4.png)
 
 
-7)   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.<br/><br/>
+7)   Open the Visual Studio.NET command prompt and enter WinRes to open the Windows Resource Localization Editor. WinRes is used to work with Windows Forms resources. The Resource Editor tool cannot be used to edit Windows Forms resources. It can only be used to work with images and string-based resources.
 
 8)   Open the other resources by using the WinRes utility and replace the English strings with the German equivalent. The following figure shows the file Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.resources open in the WinRes tool and with German text. The German text has been added to the form by using the Properties window.
 
@@ -302,7 +234,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 9)   Click File -> Save As and select the culture to be localized. In this case, German-Germany. Now, a new resource file with the name `Syncfusion.Windows.Forms.Tools.XPMenus.CustomizationPanel.de-DE.resources` is added to the source path.
 
-10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that sf.public snk file is available from the Localization folder.<br/><br/>
+10)   Repeat the process for other resources and save it. Now, in the Visual Studio.NET Command Prompt, enter the following command and press Enter. Make sure that sf.public snk file is available from the Localization folder.
 
 For **Tools.Windows**
 
@@ -328,9 +260,9 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 {% endtabs %}
 
-11)  The version can be specified for these assemblies in the all command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource assemblies  with a new version, when the `SatelliteContractVersionAttribute` has changed.<br/><br/>
+11)  The version can be specified for these assemblies in the all command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource assemblies  with a new version, when the `SatelliteContractVersionAttribute` has changed.
 
-12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.<br/><br/>
+12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.
 
 13)  Finally, mark this satellite assembly for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
@@ -344,9 +276,9 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 {% endtabs %}
 
-14)  Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.<br/><br/>
+14)  Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.
 
-15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.<br/><br/>
+15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.
 
 {% tabs %}
 

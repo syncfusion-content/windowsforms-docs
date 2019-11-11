@@ -66,8 +66,8 @@ The Application can be tested with the generated CUIT Method.
 
 public void CodedUITestMethod1()
 {
-// Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-this.UIMap.RecordedMethod1();
+    // Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+    this.UIMap.RecordedMethod1();
 }
 
 {% endhighlight %}
@@ -75,8 +75,9 @@ this.UIMap.RecordedMethod1();
 {% highlight vb %}
 
 Public Sub CodedUITestMethod1()
-'Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-Me.UIMap.RecordedMethod1()
+	' Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+	Me.UIMap.RecordedMethod1()
+End Sub
 
 {% endhighlight %}
 
