@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Record and Run the tests for Syncfusion Essential WindowsForms
-description: This section explains about the Record and Run the tests for QTP/UFT.
+description: This section explains about how to Record and Run the tests with QTP/UFT for Syncfusion Windows Forms controls.
 platform: WindowsForms
 control: Testing
 documentation: ug
@@ -54,10 +54,9 @@ N> The Application Details dialog box is displayed.
 
 ![Shows added application details](QTP_images/QTP_img17.jpeg)
 
-8) Browse and select the path of the application that is to be tested by clicking (![Browse and select path of application](QTP_images/QTP_img18.jpeg)) for the Application: label.
+8) Browse and select the path of the application that is to be tested by clicking ![Browse and select path of application](QTP_images/QTP_img18.jpeg) for the Application: label.
 
-9) Browse and select the path of the working folder by clicking![Browse and select path of working folder](QTP_images/QTP_img19.jpeg)
-()for the Working folder: label.
+9) Browse and select the path of the working folder by clicking![Browse and select path of working folder](QTP_images/QTP_img19.jpeg) for the Working folder: label.
 
 N> Selecting the Launch application check box launches the application immediately after clicking OK in the current dialog. The Include descendant processes check box that includes all the processes that are descendant to the current process. Both these check boxes are selected by default.
 
