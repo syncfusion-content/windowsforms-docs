@@ -1,13 +1,13 @@
 ---
 layout: post
 title: .NET Core | Windows Forms | Syncfusion
-description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion Windows Forms controls
+description: Learn here about how to creating the Windows Forms Applications using .NET Core and the Syncfusion Windows Forms controls
 platform: windowsforms
 control: .NET Core
 documentation: ug
 ---
 
-# WPF Applications using .NET Core and Syncfusion Windows Forms Controls
+# Windows Forms Applications using .NET Core and Syncfusion Windows Forms Controls
 
 Syncfusion Essential Studio for Windows Forms suits .NET core assemblies for building Windows Forms .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion Windows Forms controls.
 
@@ -15,11 +15,11 @@ N> All Syncfusion Windows Forms controls supports .NET Core Framework except the
 
 ## Create a .NET Core project
 
-**Step 1**: Open Visual Studio, go to **"File > New > Project..."** and you can now see **"Create a new project"** dialog. Here, select **"Windows Forms App (.NET Core)"** template and click **"Next"**. 
+**Step 1**: Open Visual Studio, go to **File > New > Project...** and you can now see **Create a new project** dialog. Here, select **Windows Forms App (.NET Core)** template and click **Next**. 
 
 ![NETcore showing create the project](NETcore_images/NETcore_createproject.jpeg)
 
-**Step 2**: You will now see **"Configure your new project"** dialog. Here, fill in the necessary details and click **"Create"**.
+**Step 2**: You will now see **Configure your new project** dialog. Here, fill in the necessary details and click **Create**.
 
  ![NETcore showing configure the project](NETcore_images/NETcore_configureproject.jpeg)
 
@@ -34,7 +34,7 @@ N> All Syncfusion Windows Forms controls supports .NET Core Framework except the
 
 N> If you do not remove the default template, you cannot see your control in the output form.
 
-**Step 5**: Now, you can add your controls. To do so, follow the immediate section **"Adding controls in Windows Forms (.NET Core) application"** for more details. 
+**Step 5**: Now, you can add your controls. To do so, follow the immediate section **Adding controls in Windows Forms (.NET Core) application** for more details. 
 
 ## Adding controls in Windows Forms (.NET Core) application
 
@@ -42,11 +42,11 @@ The below section explains how to add your controls in Windows Forms (.NET Core)
 
 ### Through assembly deployment
 
-In **"Solution Explorer"**, right-click on **"Dependencies"** and select **"Add Reference"**. 
+In **Solution Explorer**, right-click on **Dependencies** and select **Add Reference**. 
 
 ![NETcore showing add reference](NETcore_images/NETcore_reference.png)
 
-Now, **"Reference Manager"** dialog will be opened. Here click **"Browse"** and select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **"Add"** and then click **"Ok"**. Now, required assemblies are added in to the project, like in the below screenshot.
+Now, **Reference Manager** dialog will be opened. Here click **Browse** and select the needed assemblies from the location mentioned in below note section. On selecting necessary assemblies, click **Add** and then click **Ok**. Now, required assemblies are added in to the project, like in the below screenshot.
 
 N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `netcoreapp3.0` folder in the following location - C:\Program Files (x86)\Syncfusion\Essential Studio\Windows\x.x.x.x\precompiledassemblies
 
@@ -58,9 +58,9 @@ N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `ne
 
 ### Example: Adding ButtonAdv control through code
 
-We are now going to see a demo on how to add **"ButtonAdv"** control in WinForms .NET Core application.
+We are now going to see a demo on how to add **ButtonAdv** control in WinForms .NET Core application.
 
-**Step 1**:	Add the following dependent assembly for the inclusion of **"ButtonAdv"** control.
+**Step 1**:	Add the following dependent assembly for the inclusion of **ButtonAdv** control.
 
 * Syncfusion.Shared.Base
 
@@ -239,9 +239,7 @@ GridAwareTextBox</td></tr>
 <tr>
 <td>
 {{'[GroupView](https://help.syncfusion.com/windowsforms/groupview/overview)' | markdownify }}</td></tr>
-<tr>
-<td>
-{{'[HTMLUIControl](https://help.syncfusion.com/windowsforms/htmlui/overview)' | markdownify }}</td></tr>
+
 <tr>
 <td>
 {{'[HubTile](https://help.syncfusion.com/windowsforms/hubtile/overview)' | markdownify }}</td></tr>
@@ -436,7 +434,7 @@ PopupMenuManager</td></tr>
 StatusBarExt</td></tr>
 <tr>
 <td>
-StatusStripEx</td></tr>
+{{'[StatusStripEx](http://172.16.0.76/windowsforms/statusstripex/statusstripex)' | markdownify }}</td></tr>
 <tr>
 <td>
 {{'[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)' | markdownify }}</td></tr>
