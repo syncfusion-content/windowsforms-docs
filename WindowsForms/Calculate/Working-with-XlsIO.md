@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Essential XlsIO | Calculate | WindowsForms | Syncfusion
-description: Explains about working with CalcWorkbook, CalcSheet
+title: Working with Essential XlsIO | Calculate | Syncfusion
+description: Learn here about how to work with the CalcWorkbook, CalcSheet and enable or disable the calculations in XlsIo.
 platform: windowsforms
 control: Calculate
 documentation: ug
