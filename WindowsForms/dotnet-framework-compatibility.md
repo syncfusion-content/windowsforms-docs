@@ -128,8 +128,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 </tr>
 
-<tr>
-</tr>
+
 <tr>
 <td>GridGroupingControl</td>
 <td>Yes</td>
@@ -774,7 +773,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<tr>
+</tr>
 
 <tr>
 <td>BackStageView</td>
