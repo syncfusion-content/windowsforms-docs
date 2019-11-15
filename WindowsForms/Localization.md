@@ -99,35 +99,35 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
     switch (name)
     {
         case Localizer.EditResourceIdentifiers.FDbtnClose:
-        return "schließen";
+             return "schließen";
         case Localizer.EditResourceIdentifiers.FDbtnFind:
-        return "finden";
+             return "finden";
         case Localizer.EditResourceIdentifiers.FDbtnMarkAll:
-        return "markieren Sie alle";
+             return "markieren Sie alle";
         case Localizer.EditResourceIdentifiers.FDchkCase:
-        return "übereinstimmen Fall";
+             return "übereinstimmen Fall";
         case Localizer.EditResourceIdentifiers.FDchkHidden:
-        return "Suche hidden";
+             return "Suche hidden";
         case Localizer.EditResourceIdentifiers.FDchkRegular:
-        return "Suche regelmäßige";
+             return "Suche regelmäßige";
         case Localizer.EditResourceIdentifiers.FDchkUp:
-        return "Suche Up";
+             return "Suche Up";
         case Localizer.EditResourceIdentifiers.FDchkWholeWord:
-        return "Ganzes Wort";
+             return "Ganzes Wort";
         case Localizer.EditResourceIdentifiers.FDchkWrap:
-        return "Zeilenumbruch";
+             return "Zeilenumbruch";
         case Localizer.EditResourceIdentifiers.FDGroupTitle:
-        return "Suchen";
+             return "Suchen";
         case Localizer.EditResourceIdentifiers.FDMain:
-        return "Startseite";
+             return "Startseite";
         case Localizer.EditResourceIdentifiers.FDrdbDocument:
-        return "Document";
+             return "Document";
         case Localizer.EditResourceIdentifiers.FDrdbSelection:
-        return "Auswahl";
+             return "Auswahl";
         case Localizer.EditResourceIdentifiers.FDTitle:
-        return "Kommentar";
+             return "Kommentar";
         default:
-        return string.Empty;
+             return string.Empty;
     }
 }
 
@@ -138,35 +138,35 @@ public string GetLocalizedString(System.Globalization.CultureInfo culture, strin
 Public Function GetLocalizedString(ByVal culture As System.Globalization.CultureInfo, ByVal name As String, ByVal obj As Object) As String
 	Select Case name
 		Case Localizer.EditResourceIdentifiers.FDbtnClose
-		Return "schließen"
+		     Return "schließen"
 		Case Localizer.EditResourceIdentifiers.FDbtnFind
-		Return "finden"
+		     Return "finden"
 		Case Localizer.EditResourceIdentifiers.FDbtnMarkAll
-		Return "markieren Sie alle"
+		     Return "markieren Sie alle"
 		Case Localizer.EditResourceIdentifiers.FDchkCase
-		Return "übereinstimmen Fall"
+		     Return "übereinstimmen Fall"
 		Case Localizer.EditResourceIdentifiers.FDchkHidden
-		Return "Suche hidden"
+		     Return "Suche hidden"
 		Case Localizer.EditResourceIdentifiers.FDchkRegular
-		Return "Suche regelmäßige"
+		     Return "Suche regelmäßige"
 		Case Localizer.EditResourceIdentifiers.FDchkUp
-		Return "Suche Up"
+		     Return "Suche Up"
 		Case Localizer.EditResourceIdentifiers.FDchkWholeWord
-		Return "Ganzes Wort"
+		     Return "Ganzes Wort"
 		Case Localizer.EditResourceIdentifiers.FDchkWrap
-		Return "Zeilenumbruch"
+		     Return "Zeilenumbruch"
 		Case Localizer.EditResourceIdentifiers.FDGroupTitle
-		Return "Suchen"
+		     Return "Suchen"
 		Case Localizer.EditResourceIdentifiers.FDMain
-		Return "Startseite"
+		     Return "Startseite"
 		Case Localizer.EditResourceIdentifiers.FDrdbDocument
-		Return "Document"
+		     Return "Document"
 		Case Localizer.EditResourceIdentifiers.FDrdbSelection
-		Return "Auswahl"
+		     Return "Auswahl"
 		Case Localizer.EditResourceIdentifiers.FDTitle
-		Return "Kommentar"
+		     Return "Kommentar"
 		Case Else
-		Return String.Empty
+		     Return String.Empty
 	End Select
 End Function
 

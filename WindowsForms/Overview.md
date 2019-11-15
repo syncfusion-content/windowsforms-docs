@@ -20,7 +20,7 @@ Syncfusion Essential Studio for Windows Forms is a comprehensive collection of o
 
 ## Controls list
 
-N> The name of the Visual Studio Toolbox entry provided differs from the common control name and toolbox name.
+N> The name of the Visual Studio Toolbox entry provided when the common control name and toolbox name differs.
 
 <table>
 <tr>
