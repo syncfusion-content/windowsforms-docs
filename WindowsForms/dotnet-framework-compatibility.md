@@ -86,7 +86,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 
 <table>
 <tr>
-<th>Category and Controls</th>
+<th>Controls</th>
 <th>.NET 2.0</th>
 <th>.NET 3.5</th>
 <th>.NET 4.0</th>
@@ -96,7 +96,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">GRIDS</td>
+<td colspan="7"><b>GRIDS</b></td>
 </tr>
 <tr>
 <td>SfDataGrid</td>
@@ -150,7 +150,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">DATA VISUALIZATION</td>
+<td colspan="7"><b>DATA VISUALIZATION</b></td>
 </tr>
 
 <tr>
@@ -294,7 +294,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">LAYOUT</td>
+<td colspan="7"><b>LAYOUT</b></td>
 </tr>
 
 <tr>
@@ -468,7 +468,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">FILE VIEWERS & EDITORS</td>
+<td colspan="7"><b>FILE VIEWERS & EDITORS</b></td>
 </tr>
 
 <tr>
@@ -522,7 +522,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">NAVIGATION</td>
+<td colspan="7"><b>NAVIGATION</b></td>
 </tr>
 
 <tr>
@@ -826,7 +826,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">INPUT CONTROLS</td>
+<td colspan="7"><b>INPUT CONTROLS</b></td>
 </tr>
 
 <tr>
@@ -1030,7 +1030,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">DIALOGS AND NOTIFICATION</td>
+<td colspan="7"><b>DIALOGS AND NOTIFICATION</b></td>
 </tr>
 
 <tr>
@@ -1204,7 +1204,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">LISTS AND DROPDOWN</td>
+<td colspan="7"><b>LISTS AND DROPDOWN</b></td>
 </tr>
 
 <tr>
@@ -1318,7 +1318,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">BUTTONS</td>
+<td colspan="7"><b>BUTTONS</b></td>
 </tr>
 
 <tr>
@@ -1362,7 +1362,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">CALENDAR</td>
+<td colspan="7"><b>CALENDAR</b></td>
 </tr>
 
 <tr>
@@ -1396,7 +1396,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">MISCELLEANEOUS</td>
+<td colspan="7"><b>MISCELLEANEOUS</b></td>
 </tr>
 
 <tr>
@@ -1450,7 +1450,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 </tr>
 
 <tr>
-<td colspan="7">CLASSIC CONTROLS</td>
+<td colspan="7"><b>CLASSIC CONTROLS</b></td>
 </tr>
 
 <tr>
