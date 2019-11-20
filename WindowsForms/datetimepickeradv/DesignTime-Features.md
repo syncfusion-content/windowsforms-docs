@@ -1,9 +1,9 @@
 ---
 layout: post
 title: DesignTime Features | WindowsForms | Syncfusion
-description: designtime features
+description: Learn here about how to use the design time features in the Windows Forms DateTimePickerAdv control.
 platform: WindowsForms
-control: Calendar 
+control: DateTimePickerAdv 
 documentation: ug
 ---
 # DesignTime Features
