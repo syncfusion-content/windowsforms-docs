@@ -246,7 +246,9 @@ The default filter condition is Begins With. Following filter conditions are ava
 <li>Null</li>
 <li>Not Null</li>
 <li>Begins With</li>
+<li>Does Not Begin With</li>
 <li>Ends With</li>
+<li>Does Not End With</li>
 <li>Contains</li>
 <li>Does Not Contain</li>
 <li>Empty</li>
