@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ExportToPDF in SfDataGrid | Syncfusion
-description: This section explains about the Export to pdf support in SfDataGrid.
+description: Learn about exporting datagrid to PDF support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
