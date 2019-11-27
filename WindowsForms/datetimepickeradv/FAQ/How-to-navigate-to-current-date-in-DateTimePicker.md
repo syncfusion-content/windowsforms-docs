@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigate to date | DateTimePickerAdv | WindowsForms | Syncfusion
-description: Frequently Asked Questions
+description: Learn here about how to navigate or select to current date in the Windows Forms DateTimePickerAdv control.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
@@ -18,15 +18,10 @@ For example, it is possible to select current date on Enter key press and the fo
 {% highlight C# %}
 
 void dateTimePickerAdv1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-
 {
-
-// On pressing Enter key, date time picker navigates to current date.
-
-if(e.KeyData== Keys.Enter)
-
-this.dateTimePickerAdv1.NavigateToCurrentDate(true);
-
+   // On pressing Enter key, date time picker navigates to current date.
+   if(e.KeyData== Keys.Enter)
+    this.dateTimePickerAdv1.NavigateToCurrentDate(true);
 }
 
 {% endhighlight %}
@@ -34,15 +29,10 @@ this.dateTimePickerAdv1.NavigateToCurrentDate(true);
 {% highlight VB %}
 
 Private Sub dateTimePickerAdv1_PreviewKeyDown(ByVal sender As Object, ByVal e As PreviewKeyDownEventArgs)
-
-' On pressing Enter key, date time picker navigates to current date.
-
-If e.KeyData= Keys.Enter Then
-
-Me.dateTimePickerAdv1.NavigateToCurrentDate(True)
-
-End If
-
+   ' On pressing Enter key, date time picker navigates to current date.
+   If e.KeyData= Keys.Enter Then
+    Me.dateTimePickerAdv1.NavigateToCurrentDate(True)
+   End If
 End Sub
 
 {% endhighlight %}

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: DateTimePickerAdv Appearance | WindowsForms | Syncfusion
-description: datetimepickeradv appearance
+description: Learn here about how to change the background and border settings Windows Forms DateTimePickerAdv appearance
 platform: WindowsForms
-control: Calendar
+control: DateTimePickerAdv
 documentation: ug
 ---
 # DateTimePickerAdv Appearance
@@ -18,14 +18,23 @@ DateTimePickerAdv control can have custom back color and background images using
 
 The control's back color can be set using the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BackColor.html) and [BackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BackgroundColor.html) properties of DateTimePickerAdv.
 
-{% highlight C#  %}
+{% tabs %}
+
+{% highlight C# %}
+
 this.dateTimePickerAdv1.BackColor = System.Drawing.Color.Cornsilk;
 this.dateTimePickerAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.Linen, System.Drawing.Color.BurlyWood);
-{% endhighlight  %}
-{% highlight VB  %}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
 Me.dateTimePickerAdv1.BackColor = System.Drawing.Color.Cornsilk 
 Me.dateTimePickerAdv1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.Linen, System.Drawing.Color.BurlyWood) 
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![DateTimePickerAdv back color customization](Calendar_Images/Overview_img207.jpeg) 
 
@@ -36,12 +45,21 @@ Background image for the DateTimePickerAdv is set using the below property.
 * [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
 * [BackgroundImageLayout](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
 
-{% highlight C#  %}
+{% tabs %}
+
+{% highlight C# %}
+
 this.dateTimePickerAdv2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dateTimePickerAdv2.BackgroundImage")));
-{% endhighlight   %}
-{% highlight VB  %}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
 Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTimePickerAdv2.BackgroundImage")), System.Drawing.Image) 
-{% endhighlight   %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Background image](Calendar_Images/Overview_img208.jpeg) 
 
@@ -60,35 +78,52 @@ Border for a MonthCalendarAdv control can be in 2D or 3D modes. The below proper
 * [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderSides.html)
 * [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderColor.html)
 
+{% tabs %}
+
 {% highlight C# %}
+
 //Setting 3D border style 
 this.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 //Setting "SunkenInner" 3D border style
 this.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner;
-{% endhighlight  %}
+
+{% endhighlight %}
+
 {% highlight VB %}
 'Setting 3D border style 
 Me.monthCalendarAdv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 'Setting "SunkenInner" 3D border style
 Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenInner
-{% endhighlight  %}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Border styles](Calendar_Images/Overview_img135.jpeg) 
 
 N> [MonthCalendarAdv.ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedBorder.html) property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
+
+{% tabs %}
  
 {% highlight C# %}
+
 //Setting border to "All" sides
 this.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All;
 //Setting color for 2D border
 this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue;
+
 {% endhighlight %}
+
 {% highlight VB %}
+
 'Setting border to "All" sides
 Me.monthCalendarAdv1.BorderSides = System.Windows.Forms.Border3DSide.All
 'Setting color for 2D border
 this.monthCalendarAdv1.BorderColor = System.Drawing.Color.DodgerBlue
+
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![Border colors](Calendar_Images/Overview_img137.jpeg)
 

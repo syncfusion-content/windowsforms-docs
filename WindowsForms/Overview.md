@@ -712,20 +712,17 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <sup>classic</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/calendar/overview">Calendar</a>
+<a href="https://help.syncfusion.com/windowsforms/monthcalendaradv/creating-monthcalendaradv">MonthCalendarAdv</a>
 <sup>classic</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/monthcalendaradv/creating-monthcalendaradv">MonthCalendarAdv</a>
-<sup>classic</sup>
-</td>
-<td>
 <a href="https://help.syncfusion.com/windowsforms/supertooltip/supertooltip">SuperTooltip</a>
 <sup>classic</sup>
 </td>
+<td/>
 <td/>
 </tr>
 </table>
