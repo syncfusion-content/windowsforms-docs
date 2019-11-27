@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ExportToPDF in SfDataGrid | Syncfusion
-description: This section explains about the Export to pdf support in SfDataGrid.
+description: Learn about exporting datagrid to PDF support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -678,7 +678,8 @@ void options_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
     PdfStringFormat format = new PdfStringFormat();
 
     //format the string from right to left.
-    format.RightToLeft = true;
+    format.TextDirection = PdfTextDirection.RightToLeft;   
+    format.Alignment = PdfTextAlignment.Right; 
     e.PdfGridCell.StringFormat = format;
 }
 
@@ -697,7 +698,8 @@ Private Sub options_CellExporting(ByVal sender As Object, ByVal e As DataGridCel
 	Dim format As New PdfStringFormat()
 
 	'format the string from right to left.
-	format.RightToLeft = True
+	format.TextDirection = PdfTextDirection.RightToLeft
+    format.Alignment = PdfTextAlignment.Right
 	e.PdfGridCell.StringFormat = format
 End Sub
 {% endhighlight %}
