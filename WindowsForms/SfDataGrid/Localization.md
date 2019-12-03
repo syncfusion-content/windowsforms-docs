@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | DataGrid | WinForms | Syncfusion
-description: This section explains about the localization support in SfDataGrid.
+description: Learn about localization support to customize the default strings in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -16,7 +16,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 
 1) Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms-445728776).
+2) Add the default resource file of SfDataGrid into Resources folder. You can download the `Syncfusion.SfDataGrid.WinForms.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
 
 ![Added default resource file of winforms datagrid shown in solution explorer](Localization_images/Localization_img1.png) 
 
@@ -64,7 +64,7 @@ The default resource file of SfListView can be download from [here](http://www.s
 ![Filter control of winforms datagrid localized with modified resources](Localization_images/Localization_img9.png)
 
 ## Editing Default Resource File
-The default resource file can be edited by adding it to Resources folder of the application where SfDataGrid reads the static texts from here. The default resource file can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms580374814).
+The default resource file can be edited by adding it to Resources folder of the application where SfDataGrid reads the static texts from here. The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDataGrid.WinForms53748004.zip).
 
 ![Added default resource file of winforms datagrid shown in solution explorer](Localization_images/Localization_img6.png)
 
