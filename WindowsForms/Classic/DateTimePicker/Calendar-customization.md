@@ -125,7 +125,7 @@ The default size of the popup calendar can be changed using the below properties
 * [CalendarSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CalendarSize.html)
 * [CalendarSizeToFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CalendarSizeToFit.html)
 
-{% tabs %
+{% tabs %}
 
 {% highlight C# %}
 
