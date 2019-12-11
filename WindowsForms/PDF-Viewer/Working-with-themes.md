@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with themes | Windows Forms | Syncfusion
-description: This section describes about how to apply themes to PdfViewer control.
+description: This section describes about how to apply themes to PdfViewer Control using the various built-in themes.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -55,7 +55,7 @@ To set a theme to `PdfViewerControl`, the theme assemblies should be added as a 
 
 ## Office 2016 themes
 
-It provides support for applying office 2016 themes to `PdfViewerControl` and its associated elements. Following are the Office 2016 themes that are supported in the PDF Viewer control:
+It provides support for applying Office 2016 themes to `PdfViewerControl` and its associated elements. Following are the Office 2016 themes that are supported in the PDF Viewer control:
 
 * Office2016Colorful
 * Office2016Black
@@ -85,7 +85,7 @@ N> You can follow a similar step for all the other Office 2016 themes.
 
 ## Office 2019 theme
 
-It provides support for applying office 2019 theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager.html).
+It provides support for applying Office 2019 theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager.html).
 
 {% tabs %}
 {% highlight c# %}
