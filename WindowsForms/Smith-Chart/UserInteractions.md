@@ -124,7 +124,7 @@ TooltipOpening event is called before the rendering of the tooltip. By using the
 **SeriesIndex** – Contains the current series index value of the series collection.
 **PointIndex** – Contains the point index value of the point collection. 
 **Text** – Used to customize the tooltip text displaying on mouse over.
-**Style** – Used to customize tooltip back color, forecolor and its font style.
+**Style** – Used to customize tooltip back color, fore color and its font style.
 
 {% tabs %}
 
