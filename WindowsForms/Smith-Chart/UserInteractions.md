@@ -120,11 +120,11 @@ sfSmithChart1.TooltipOptions.BorderWidth = 1
 
 TooltipOpening event is called before the rendering of the tooltip. By using the below mentioned arguments of this event, we can customize the tooltip text of each point and its styles.
 
-**Data** – Contains the tooltip point ViewModel data or X, Y point.
-**SeriesIndex** – Contains the current series index value of the series collection.
-**PointIndex** – Contains the point index value of the point collection. 
-**Text** – Used to customize the tooltip text displaying on mouse over.
-**Style** – Used to customize tooltip back color, fore color and its font style.
+**Data** - Contains the tooltip point ViewModel data or X, Y point.
+**SeriesIndex** - Contains the current series index value of the series collection.
+**PointIndex** - Contains the point index value of the point collection. 
+**Text** - Used to customize the tooltip text displaying on mouse over.
+**Style** - Used to customize tooltip back color, fore color and its font style.
 
 {% tabs %}
 
