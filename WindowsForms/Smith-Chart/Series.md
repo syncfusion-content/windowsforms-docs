@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smith chart series and customization
+title: Series customization in Syncfusion SfSmithChart control for Windows Forms
 description: This section describes the smith chart series and series line styles, visibility customization options
 platform: windowsforms
 control: SfSmithChart
