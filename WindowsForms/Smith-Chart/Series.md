@@ -48,7 +48,7 @@ sfSmithChart1.Series.Add(series)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Series_markerless.png](Series_images/Series_img1.PNG)
+![Series with datasource](Series_images/Series_img1.PNG)
 
 
 ## Customizing the line series
@@ -79,7 +79,7 @@ series.DashStyle = DashStyle.Dash;
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/seriescustomize.png](Series_images/Series_img2.PNG)
+![Series customization](Series_images/Series_img2.PNG)
 
 
 ## Series visibility
@@ -150,6 +150,6 @@ sfSmithChart1.Series.Add(series1)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Series1.png](Series_images/Series_img3.PNG)
+![Series visibility](Series_images/Series_img3.PNG)
 
 
