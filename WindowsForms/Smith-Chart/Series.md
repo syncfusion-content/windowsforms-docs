@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series
-description: This section describes the series of the smith chart.
+title: Smith chart series and customization
+description: This section describes the smith chart series and series line styles, visibility customization options
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
