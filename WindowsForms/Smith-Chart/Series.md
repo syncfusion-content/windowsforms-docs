@@ -53,7 +53,7 @@ sfSmithChart1.Series.Add(series)
 
 ## Customizing the line series
 
-The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) properties of line series.
+The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html), [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) and *DashStyle* properties of line series.
 
 {% tabs %}
 
@@ -63,6 +63,8 @@ series.Interior = Color.Red;
 
 series.StrokeWidth = 3;
 
+series.DashStyle = DashStyle.Dash;
+
 {% endhighlight %}
 
 {% highlight vb.net %}
@@ -70,6 +72,8 @@ series.StrokeWidth = 3;
 series.Interior = Color.Red
 
 series.StrokeWidth = 3
+
+series.DashStyle = DashStyle.Dash;
 
 {% endhighlight %}
 
