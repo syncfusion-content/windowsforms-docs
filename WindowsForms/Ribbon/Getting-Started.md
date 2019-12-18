@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: This section briefly describes the basic functions of Syncfusion's RibbonControlAdv for Windows Forms.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -15,7 +15,7 @@ This section explains how to implement a similar UI as Microsoft Outlook using R
 
 *	Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
 
-![](Getting_Started_Images/Getting-Started_img1.jpg)
+![Adding RibbonControlAdv from Toolbox](Getting_Started_Images/Getting-Started_img1.jpg)
 
 ## Add RibbonControlAdv in Code
 
@@ -113,17 +113,17 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img2.jpg)
+![VIsual styles in RibbonControlAdv](Getting_Started_Images/Getting-Started_img2.jpg)
 
 ## Add Tabs to Ribbon
 
 RibbonControlAdv lets you to create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
-![](Getting_Started_Images/Getting-Started_img3.jpg)
+![Adding Tabs through designer](Getting_Started_Images/Getting-Started_img3.jpg)
 
 Customize the Tab item using the property grid.
 
-![](Getting_Started_Images/Getting-Started_img4.jpg)
+![Customizing the Tab items](Getting_Started_Images/Getting-Started_img4.jpg)
 
 A new TabItem can be added to the RibbonControlAdv programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the RibbonControlAdv using the below method.
 
@@ -184,13 +184,13 @@ Me.ribbonControlAdv1.Header.AddMainItem(Me.viewTabItem)
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img5.jpg)
+![Adding tabs through code](Getting_Started_Images/Getting-Started_img5.jpg)
 
 ## Adding groups inside Tab
 
 ToolStripEx is used to create groups inside a Tab, it can be added to the Ribbon panel using its smart tag or using `Add ToolStrip` verb in the property grid.
 
-![](Getting_Started_Images/Getting-Started_img6.jpg)
+![Adding tabs through designer](Getting_Started_Images/Getting-Started_img6.jpg)
 
 {% tabs %}
 
@@ -293,9 +293,170 @@ this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentViewToolStripEx,
 
 To add controls to the ToolStripEx, click the button  in it, as in the image below.
 
-![](Getting_Started_Images/Getting-Started_img7.jpg)
+![Adding ToolStripEx inside the tab through code](Getting_Started_Images/Getting-Started_img7.jpg)
 
 ## Add Button Controls
+
+### ToolStripButton
+
+The Button is a control where the user can click to provide input to an application.
+
+#### Adding ToolStripButton
+
+For Adding `ToolStripButton` please refer `Adding ToolStripDropDownButton` and select `Button` from the Controls grid.
+
+**Through Coding**
+
+{% tabs %}
+
+{% highlight c# %}
+
+private System.Windows.Forms.ToolStripButton newMailButton;
+private System.Windows.Forms.ToolStripButton IgnoreButton;
+private System.Windows.Forms.ToolStripButton replyButton;
+private System.Windows.Forms.ToolStripButton replyAllButton;
+private System.Windows.Forms.ToolStripButton forwardButton;
+
+this.newMailButton = new System.Windows.Forms.ToolStripButton();
+this.IgnoreButton = new System.Windows.Forms.ToolStripButton();
+this.replyButton = new System.Windows.Forms.ToolStripButton();
+this.replyAllButton = new System.Windows.Forms.ToolStripButton();
+this.forwardButton = new System.Windows.Forms.ToolStripButton();
+
+this.newMailButton.Text = "New \r\nMail";
+this.newMailButton.Image = Image.FromFile(@"Pictures\NewMail.png");
+
+this.IgnoreButton.Text = "Ignore";
+this.IgnoreButton.Image = Image.FromFile(@"Pictures\ignore.png");
+
+this.replyButton.Text = "Reply";
+this.replyButton.Image = Image.FromFile(@"Pictures\reply.png");
+
+
+this.replyAllButton.Text = "Reply All";
+this.replyAllButton.Image = Image.FromFile(@"Pictures\ReplyAll.png");
+
+this.forwardButton.Text = "Forward";
+this.forwardButton.Image = Image.FromFile(@"Pictures\forward.png");
+
+this.newToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.newMailButton });
+this.deleteToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.IgnoreButton });
+this.respondToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+this.replyButton,
+this.replyAllButton,
+this.forwardButton});
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+    Private newMailButton As System.Windows.Forms.ToolStripButton
+    Private IgnoreButton As System.Windows.Forms.ToolStripButton
+    Private replyButton As System.Windows.Forms.ToolStripButton
+    Private replyAllButton As System.Windows.Forms.ToolStripButton
+    Private forwardButton As System.Windows.Forms.ToolStripButton
+
+    Me.newMailButton = New System.Windows.Forms.ToolStripButton()
+    Me.IgnoreButton = New System.Windows.Forms.ToolStripButton()
+    Me.replyButton = New System.Windows.Forms.ToolStripButton()
+    Me.replyAllButton = New System.Windows.Forms.ToolStripButton()
+    Me.forwardButton = New System.Windows.Forms.ToolStripButton()
+
+    Me.newMailButton.Text = "New " & vbCrLf & "Mail"
+    Me.newMailButton.Image = Image.FromFile("Pictures\NewMail.png")
+    Me.IgnoreButton.Text = "Ignore"
+    Me.IgnoreButton.Image = Image.FromFile("Pictures\ignore.png")
+    Me.replyButton.Text = "Reply"
+    Me.replyButton.Image = Image.FromFile("Pictures\reply.png")
+    Me.replyAllButton.Text = "Reply All"
+    Me.replyAllButton.Image = Image.FromFile("Pictures\ReplyAll.png")
+    Me.forwardButton.Text = "Forward"
+    Me.forwardButton.Image = Image.FromFile("Pictures\forward.png")
+
+    Me.newToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newMailButton})
+    Me.deleteToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IgnoreButton})
+    Me.respondToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.replyButton, Me.replyAllButton, Me.forwardButton})
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripButton](Getting_Started_Images/Getting-Started_img14.jpg)
+
+#### Holding the Selection of ToolStripButton
+
+For holding the selection of ToolstripButton after lost focus, use the property `CheckOnClick`, if true, the ToolStripButton will stay selected even after click and will go unselected after next click on that button, it simply acts as a toggling functionality to that button.
+The default value is false.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.newMailButton.CheckOnClick = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.newMailButton.CheckOnClick = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ToolStripRadioButton
+
+ToolStripRadioButton control is used to select an option like normal RadioButton.
+
+#### Adding ToolStripRadioButton
+
+For Adding `ToolStripRadioButton` please refer `Adding ToolStripDropDownButton` and select `RadioButton` from the Controls grid.
+
+**Through Coding**
+
+{% tabs %}
+
+{% highlight c# %}
+
+Syncfusion.Windows.Forms.Tools.ToolStripRadioButton readRadioButton;
+Syncfusion.Windows.Forms.Tools.ToolStripRadioButton unreadRadioButton;
+Syncfusion.Windows.Forms.Tools.ToolStripPanelItem readUnreadPanel;
+
+this.readRadioButton = new ToolStripRadioButton();
+this.unreadRadioButton = new ToolStripRadioButton();
+this.readUnreadPanel = new ToolStripPanelItem();
+
+this.readRadioButton.Text = "Read";
+this.unreadRadioButton.Text = "Unread";
+
+this.readUnreadPanel.Items.AddRange(new ToolStripItem[] { readRadioButton, unreadRadioButton });
+this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readUnreadPanel });
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+    Dim readRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
+    Dim unreadRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
+    Dim readUnreadPanel As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
+
+    Me.readRadioButton = New ToolStripRadioButton()
+    Me.unreadRadioButton = New ToolStripRadioButton()
+    Me.readUnreadPanel = New ToolStripPanelItem()
+
+    Me.readRadioButton.Text = "Read"
+    Me.unreadRadioButton.Text = "Unread"
+
+    Me.readUnreadPanel.Items.AddRange(New ToolStripItem() {readRadioButton, unreadRadioButton})
+    Me.tagsToolStripEx.Items.AddRange(New ToolStripItem() {readUnreadPanel})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding Radio button in the ToolStripEx](Getting_Started_Images/Getting-Started_img16.jpg)
 
 ### ToolStripDropDownButton
 
@@ -305,7 +466,7 @@ DropDownButton appears like normal button with an extra drop arrow. It accepts D
 
 Click the button inside the ToolStripEx panel and select DropDownButton from the controls grid.
 
-![](Getting_Started_Images/Getting-Started_img8.jpg)
+![Adding ToolStripDropDownButton to the ToolStripEx](Getting_Started_Images/Getting-Started_img8.jpg)
 
 Through code
 
@@ -382,19 +543,19 @@ this.tagsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img9.jpg)
+![Adding ToolStripDropDownButton through code](Getting_Started_Images/Getting-Started_img9.jpg)
 
 #### Adding DropDownMenuItems
 
 DropDownMenuItems can be added through the button property `DropDownItems`, this will invoke an Item Collection editor and items can be added through this editor.
 
-![](Getting_Started_Images/Getting-Started_img10.jpg)
+![Adding menu items through Properties](Getting_Started_Images/Getting-Started_img10.jpg)
 
-![](Getting_Started_Images/Getting-Started_img11.jpg)
+![Adding menu items through collection editor](Getting_Started_Images/Getting-Started_img11.jpg)
 
 Items can also be added to the dropdown by clicking on the dropdown button and click the small arrow as shown in the image
 
-![](Getting_Started_Images/Getting-Started_img12.jpg)
+![Adding menu items through designer](Getting_Started_Images/Getting-Started_img12.jpg)
 
 Through code
 
@@ -450,7 +611,7 @@ Me.toolStripDropDownButton.DropDownItems.AddRange(New System.Windows.Forms.ToolS
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img13.jpg)
+![Adding menu items through code](Getting_Started_Images/Getting-Started_img13.jpg)
 
 #### Properties of ToolStripDropDownButton
 
@@ -596,115 +757,6 @@ ShowDropDownArrow<br/><br/></td><td>
 Gets or sets whether or not to show the drop down arrow on the ToolStripDropDown button.<br/><br/></td></tr>
 </table>
 
-### ToolStripButton
-
-The Button is a control where the user can click to provide input to an application.
-
-#### Adding ToolStripButton
-
-For Adding `ToolStripButton` please refer `Adding ToolStripDropDownButton` and select `Button` from the Controls grid.
-
-**Through Coding**
-
-{% tabs %}
-
-{% highlight c# %}
-
-private System.Windows.Forms.ToolStripButton newMailButton;
-private System.Windows.Forms.ToolStripButton IgnoreButton;
-private System.Windows.Forms.ToolStripButton replyButton;
-private System.Windows.Forms.ToolStripButton replyAllButton;
-private System.Windows.Forms.ToolStripButton forwardButton;
-
-this.newMailButton = new System.Windows.Forms.ToolStripButton();
-this.IgnoreButton = new System.Windows.Forms.ToolStripButton();
-this.replyButton = new System.Windows.Forms.ToolStripButton();
-this.replyAllButton = new System.Windows.Forms.ToolStripButton();
-this.forwardButton = new System.Windows.Forms.ToolStripButton();
-
-this.newMailButton.Text = "New \r\nMail";
-this.newMailButton.Image = Image.FromFile(@"Pictures\NewMail.png");
-
-this.IgnoreButton.Text = "Ignore";
-this.IgnoreButton.Image = Image.FromFile(@"Pictures\ignore.png");
-
-this.replyButton.Text = "Reply";
-this.replyButton.Image = Image.FromFile(@"Pictures\reply.png");
-
-
-this.replyAllButton.Text = "Reply All";
-this.replyAllButton.Image = Image.FromFile(@"Pictures\ReplyAll.png");
-
-this.forwardButton.Text = "Forward";
-this.forwardButton.Image = Image.FromFile(@"Pictures\forward.png");
-
-this.newToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.newMailButton });
-this.deleteToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.IgnoreButton });
-this.respondToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-this.replyButton,
-this.replyAllButton,
-this.forwardButton});
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-    Private newMailButton As System.Windows.Forms.ToolStripButton
-    Private IgnoreButton As System.Windows.Forms.ToolStripButton
-    Private replyButton As System.Windows.Forms.ToolStripButton
-    Private replyAllButton As System.Windows.Forms.ToolStripButton
-    Private forwardButton As System.Windows.Forms.ToolStripButton
-
-    Me.newMailButton = New System.Windows.Forms.ToolStripButton()
-    Me.IgnoreButton = New System.Windows.Forms.ToolStripButton()
-    Me.replyButton = New System.Windows.Forms.ToolStripButton()
-    Me.replyAllButton = New System.Windows.Forms.ToolStripButton()
-    Me.forwardButton = New System.Windows.Forms.ToolStripButton()
-
-    Me.newMailButton.Text = "New " & vbCrLf & "Mail"
-    Me.newMailButton.Image = Image.FromFile("Pictures\NewMail.png")
-    Me.IgnoreButton.Text = "Ignore"
-    Me.IgnoreButton.Image = Image.FromFile("Pictures\ignore.png")
-    Me.replyButton.Text = "Reply"
-    Me.replyButton.Image = Image.FromFile("Pictures\reply.png")
-    Me.replyAllButton.Text = "Reply All"
-    Me.replyAllButton.Image = Image.FromFile("Pictures\ReplyAll.png")
-    Me.forwardButton.Text = "Forward"
-    Me.forwardButton.Image = Image.FromFile("Pictures\forward.png")
-
-    Me.newToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.newMailButton})
-    Me.deleteToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IgnoreButton})
-    Me.respondToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.replyButton, Me.replyAllButton, Me.forwardButton})
-    
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Getting_Started_Images/Getting-Started_img14.jpg)
-
-#### Holding the Selection of ToolStripButton
-
-For holding the selection of ToolstripButton after lost focus, use the property `CheckOnClick`, if true, the ToolStripButton will stay selected even after click and will go unselected after next click on that button, it simply acts as a toggling functionality to that button.
-The default value is false.
-
-{% tabs %}
-
-{% highlight c# %}
-
-this.newMailButton.CheckOnClick = true;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.newMailButton.CheckOnClick = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ### ToolStripSplitButtonEx
 
 SplitButtonEx can perform like both normal Button as well as DropDownButton. It allows to click the button directly by clicking the upper part of the button and also it display list of items while click on the arrow. 
@@ -780,59 +832,43 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.r
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img15.jpg)
+![Adding ToolStripSplitButton](Getting_Started_Images/Getting-Started_img15.jpg)
 
-### ToolStripRadioButton
+#### Text alignment for DropDownMenuItems and SplitButtonMenuItems
 
-ToolStripRadioButton control is used to select an option like normal RadioButton.
+Text alignment for the ToolStripMenuItem can be set using its `TextAlign` property. To enable this alignment, `AllowMenuTextAlignment` of its parent `ToolStripEx` must be set **True** mandatorily. The various options of `TextAlign` are listed below.
 
-#### Adding ToolStripRadioButton
-
-For Adding `ToolStripRadioButton` please refer `Adding ToolStripDropDownButton` and select `RadioButton` from the Controls grid.
-
-**Through Coding**
+* TopLeft
+* TopCenter
+* TopRight
+* MiddleLeft
+* MiddleCenter
+* MiddleRight
+* BottomLeft
+* BottomCenter
+* BottomRight
 
 {% tabs %}
 
 {% highlight c# %}
 
-Syncfusion.Windows.Forms.Tools.ToolStripRadioButton readRadioButton;
-Syncfusion.Windows.Forms.Tools.ToolStripRadioButton unreadRadioButton;
-Syncfusion.Windows.Forms.Tools.ToolStripPanelItem readUnreadPanel;
-
-this.readRadioButton = new ToolStripRadioButton();
-this.unreadRadioButton = new ToolStripRadioButton();
-this.readUnreadPanel = new ToolStripPanelItem();
-
-this.readRadioButton.Text = "Read";
-this.unreadRadioButton.Text = "Unread";
-
-this.readUnreadPanel.Items.AddRange(new ToolStripItem[] { readRadioButton, unreadRadioButton });
-this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readUnreadPanel });
+clipboardToolstrip.AllowMenuTextAlignment = true;
+pasteSpecialToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight;
+setAsToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight;
+setDefaultPasteToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight;
 
 {% endhighlight %}
-
 {% highlight vb %}
 
-    Dim readRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
-    Dim unreadRadioButton As Syncfusion.Windows.Forms.Tools.ToolStripRadioButton
-    Dim readUnreadPanel As Syncfusion.Windows.Forms.Tools.ToolStripPanelItem
-
-    Me.readRadioButton = New ToolStripRadioButton()
-    Me.unreadRadioButton = New ToolStripRadioButton()
-    Me.readUnreadPanel = New ToolStripPanelItem()
-
-    Me.readRadioButton.Text = "Read"
-    Me.unreadRadioButton.Text = "Unread"
-
-    Me.readUnreadPanel.Items.AddRange(New ToolStripItem() {readRadioButton, unreadRadioButton})
-    Me.tagsToolStripEx.Items.AddRange(New ToolStripItem() {readUnreadPanel})
+clipboardToolstrip.AllowMenuTextAlignment = True
+pasteSpecialToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight
+setAsToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight
+setDefaultPasteToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img16.jpg)
+![Text alignmnet of ToolStripMenuItem](Getting_Started_Images/MenuItemTextAlignment.png)
 
 ## Add ToolStripComboBoxEx
 
@@ -877,7 +913,7 @@ this.colorSchemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComb
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img17.jpg)
+![Adding ToolStripComboBoxEx](Getting_Started_Images/Getting-Started_img17.jpg)
 
 ### DropDownStyle
 
@@ -895,7 +931,7 @@ RibbonControlAdv provides options to add a collection of items and store them in
 
 Gallery Items can be added through the Items Collection Editor from the Property grid of ToolStripGallery.
 
-![](Getting_Started_Images/Getting-Started_img18.jpg)
+![Adding ToolStripGallery](Getting_Started_Images/Getting-Started_img18.jpg)
 
 ### Scroller Settings
 
@@ -989,7 +1025,7 @@ this.quickGallery});
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img19.jpg)
+![Adding Gallery to ToolStripEx through code](Getting_Started_Images/Getting-Started_img19.jpg)
 
  
 ## Add ToolStripCheckBox
@@ -1026,7 +1062,7 @@ Me.messagesToolStripEx.Items.Add(showAsConversationCheckBox)
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img20.jpg)
+![Adding ToolStripCheckBox](Getting_Started_Images/Getting-Started_img20.jpg)
 
 ## Add ToolStripTextBox
 
@@ -1073,7 +1109,7 @@ Me.peopleToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me
 
 In the code, the text box will be added to a panel and the panel will be added to the ToolStripEx. (For more details about panel refer `Arrange items using ToolStripPanelItem`)
 
-![](Getting_Started_Images/Getting-Started_img21.jpg)
+![Adding ToolStripTextBox](Getting_Started_Images/Getting-Started_img21.jpg)
 
 
 ## Add ToolStripProgressBar
@@ -1120,7 +1156,7 @@ Me.layoutToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img22.jpg)
+![Adding ToolStripProgressBar](Getting_Started_Images/Getting-Started_img22.jpg)
 
 ## Add ToolStripLabel
 
@@ -1162,7 +1198,7 @@ Me.progressbarPanelItem.Items.Add(Me.loadingToolStripLabel)
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img23.jpg)
+![Adding ToolStripLabel](Getting_Started_Images/Getting-Started_img23.jpg)
 
 ## Add ToolStripSeparator
 
@@ -1195,7 +1231,7 @@ Me.tagsToolStripEx.Items.Add(toolStripSeparator)
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img24.jpg)
+![Adding ToolStripSeparator](Getting_Started_Images/Getting-Started_img24.jpg)
 
 ## Arrange item using ToolStripPanelItem
 
@@ -1203,7 +1239,7 @@ ToolStripPanelItem provides support for aligning the controls in multiple lines.
 
 Using the `RowCount` property of ToolStripPanelItem, controls can be arranged in any number of rows inside a ToolStripPanelItem.
 
-![](Getting_Started_Images/Getting-Started_img25.jpg)
+![Arranging items using ToolStripPanelItem](Getting_Started_Images/Getting-Started_img25.jpg)
 
 ### Adding Controls to Panel Item
 
@@ -1266,7 +1302,7 @@ Me.currentViewToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem(
 
 {% endtabs %}
 
-![](Getting_Started_Images/Getting-Started_img26.jpg)
+![Adding ToolStripItems to the Panel](Getting_Started_Images/Getting-Started_img26.jpg)
 
 ## Add QAT
 
@@ -1279,7 +1315,7 @@ By default, the location of QAT will be above the Ribbon, its location can be ch
 
 QAT item can be added by right clicking the ribbon item and choosing `Add to Quick Access Toolbar` from the context menu.
 
-![](Getting_Started_Images/Getting-Started_img27.jpg)
+![Adding items to QAT](Getting_Started_Images/Getting-Started_img27.jpg)
 
 ## Add BackStage
 
@@ -1289,15 +1325,15 @@ The following are steps to create a BackStageView:
 
 1. Drag and drop the BackStageView from the Toolbox.
 
-![](Getting_Started_Images/Getting-Started_img28.jpg)
+![Adding BackStageView through ToolBox](Getting_Started_Images/Getting-Started_img28.jpg)
 
 2. Select the backStageView control below the designer and click the smart tag from the focus rectangle and then click `ShowBackstage`.
 
-![](Getting_Started_Images/Getting-Started_img29.jpg)
+![Navigating to BackStage](Getting_Started_Images/Getting-Started_img29.jpg)
 
 3. Set BackStageView to RibbonControlAdv
 
-![](Getting_Started_Images/Getting-Started_img30.jpg)
+![Setting BackStageView to the Ribbon](Getting_Started_Images/Getting-Started_img30.jpg)
 
 Set a name to the menu button with the property `MenuButtonText` 
 
@@ -1319,13 +1355,13 @@ Me.ribbonControlAdv1.MenuButtonText = "File"
 
 4. An Empty BackStage will be created. By clicking the File menu button, BackStage will be shown.
 
-![](Getting_Started_Images/Getting-Started_img31.jpg)
+![Creating BackStage](Getting_Started_Images/Getting-Started_img31.jpg)
 
 ### Add BackStage Tab
 
 BackStage Tab can be added through Smart tag of backstage view.
 
-![](Getting_Started_Images/Getting-Started_img32.jpg)
+![Adding Tab in the BackStage through designer](Getting_Started_Images/Getting-Started_img32.jpg)
 
 **Through Coding**
 
@@ -1396,7 +1432,7 @@ this.backStage1.Controls.Add(printBackStageTab);
 
 BackStage Button can be added through Smart tag of backstage view.
 
-![](Getting_Started_Images/Getting-Started_img33.jpg)
+![Adding BackStageButton](Getting_Started_Images/Getting-Started_img33.jpg)
 
 **Through Coding**
 
@@ -1448,14 +1484,14 @@ this.backStage1.Controls.Add(exitBackStageButton);
 `BackStageSeparator` – a thin line that separates the neighboring items.
 Separator can be added through Smart tag as explained in adding backstage button and tab.
 
-![](Getting_Started_Images/Getting-Started_img34.jpg)
+![Addings tabs, button and separator in the BackStage](Getting_Started_Images/Getting-Started_img34.jpg)
 
 
 ## Add ApplicationMenu
 
 The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer.
 
-![](Getting_Started_Images/Getting-Started_img35.jpg)
+![Adding Application Menu](Getting_Started_Images/Getting-Started_img35.jpg)
 
 N> ApplicationMenu can be accessed only when ribbon style is Office2007
 
