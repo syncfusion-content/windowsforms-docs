@@ -22,7 +22,7 @@ RibbonControlAdv comes with serialization support. Using this we can restore the
 
 ### Save Ribbon state
 
-#### Through Isoalted storage
+#### Through Isolated storage
 
 The Ribbon state can be saved in the isolated storage using the `SaveState` function in the Ribbon. The isolated storage can be located in the following location: "C:\Users\<user>\AppData\Local\IsolatedStorage".
 
