@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization-Support | WindowsForms | Syncfusion
-description: serialization support
+description: This section briefly describes the serialization support in Syncfusion's RibbonControlAdv for WinForms
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -20,7 +20,11 @@ RibbonControlAdv comes with serialization support. Using this we can restore the
 
 ## Save state
 
-To save the state of ribbon control, use the below code
+### Save Ribbon state
+
+#### Through Isolated storage
+
+The Ribbon state can be saved in the isolated storage using the `SaveState` function in the Ribbon. The isolated storage can be located in the following location: "C:\Users\<user>\AppData\Local\IsolatedStorage".
 
 {% tabs %}
 
@@ -39,9 +43,93 @@ Me.ribbonControlAdv1.SaveState()
 
 {% endtabs %}
 
+#### Through XML
+
+The Ribbon state can be saved in an xml file and stored in a specific location using the `AppStateSerializer`. The instance of `AppStateSerializer` must be passed as an argument to the `SaveState` function in the Ribbon. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState");
+this.wordribbon.SaveState(serializer);
+serializer.PersistNow();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState")
+Me.wordribbon.SaveState(serializer)
+serializer.PersistNow()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Save QAT state
+
+Ribbon control provides an option to save the state of QAT alone instead of saving all Ribbon states using the `SerializationOptions`. The `SerializationOptions` consists of two boolean properties such as `SerializeQATItems` and `SerializeTabItems` which are set as **True** by default. To serialize only the QAT state, the `SerializeTabItems` property must be set as **False**. This instance of `SerializationOptions` must be passed as an argument to `SaveState` function in addition to the `AppStateSerializer` instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState");
+RibbonControlAdv.SerializationOptions options = new RibbonControlAdv.SerializationOptions();
+options.SerializeTabItems = false;
+this.wordribbon.SaveState(serializer);
+serializer.PersistNow();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState")
+Dim options As RibbonControlAdv.SerializationOptions = New RibbonControlAdv.SerializationOptions()
+options.SerializeTabItems = False
+Me.wordribbon.SaveState(serializer)
+serializer.PersistNow()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Save Tab state
+
+Ribbon control provides an option to save the state of Ribbon Tabs alone instead of saving all Ribbon states using the `SerializationOptions`. The `SerializationOptions` consists of two boolean properties such as `SerializeQATItems` and `SerializeTabItems` which are set as **True** by default. To serialize only the Tab state, the `SerializeQATItems` property must be set as **False**. This instance of `SerializationOptions` must be passed as argument to the `SaveState` in addition to the `AppStateSerializer` instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState");
+RibbonControlAdv.SerializationOptions options = new RibbonControlAdv.SerializationOptions();
+options.SerializeQATItems = false;
+this.wordribbon.SaveState(serializer);
+serializer.PersistNow();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState")
+Dim options As RibbonControlAdv.SerializationOptions = New RibbonControlAdv.SerializationOptions()
+options.SerializeQATItems = False
+Me.wordribbon.SaveState(serializer)
+serializer.PersistNow()
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Load State
 
-To load the saved ribbon state, use the below code
+### Load Ribbon state
+
+#### Through Isolated storage
+
+To load the saved ribbon state from the isolated storage, use the below code
 
 {% tabs %}
 
@@ -55,6 +143,81 @@ this.ribbonControlAdv1.LoadState();
 {% highlight vb %}
 
 Me.ribbonControlAdv1.LoadState()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+#### Through XML
+
+The saved Ribbon state can be loaded from an xml file using the `AppStateSerializer`. The instance of `AppStateSerializer` must be passed as an argument to the `LoadState` function in the Ribbon. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState");
+this.wordribbon.LoadState(serializer);
+
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/RibbonState")
+Me.wordribbon.LoadState(serializer)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Load QAT state
+
+Ribbon control provides an option to load the state of QAT alone instead of loading all Ribbon states using the `DeserializationOptions`. The `DeserializationOptions` consists of two boolean properties such as `DeserializeQATItems` and `DeserializeTabItems` which are set as **True** by default. To deserialize only the QAT state, the `DeserializeTabItems` property must be set as **False**. The instance of `DeserializationOptions` must be passed as argument to the `LoadState` function in addition to the `AppStateSerializer` instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState");
+RibbonControlAdv.DeserializationOptions options = new RibbonControlAdv.DeserializationOptions();
+options.DeserializeTabItems = false;
+this.wordribbon.LoadState(serializer);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/QATState")
+Dim options As RibbonControlAdv.DeserializationOptions = New RibbonControlAdv.DeserializationOptions()
+options.DeserializeTabItems = False
+Me.wordribbon.LoadState(serializer)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Load Tabs state
+
+Ribbon control provides an option to load only the state of Ribbon Tabs instead of all Ribbon states using the `DeserializationOptions`. The `DeserializationOptions` consists of two boolean properties such as `DeserializeQATItems` and `DeserializeTabItems` which are set as **True** by default. To deserialize only the Tab state, the `DeserializeQATItems` property must be set as **False**. This instance of `DeserializationOptions` must then be passed as argument to the `LoadState` function in addition to the `AppStateSerializer` instance.
+
+{% tabs %}
+
+{% highlight c# %}
+
+AppStateSerializer serializer = new AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState");
+RibbonControlAdv.DeserializationOptions options = new RibbonControlAdv.DeserializationOptions();
+options.DeserializeQATItems = false;
+this.wordribbon.LoadState(serializer);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim serializer As AppStateSerializer = New AppStateSerializer(SerializeMode.XMLFile, "D:/Ribbon Serialization/TabState")
+Dim options As RibbonControlAdv.DeserializationOptions = New RibbonControlAdv.DeserializationOptions()
+options.DeserializeQATItems = False
+Me.wordribbon.LoadState(serializer)
 
 {% endhighlight %}
 
