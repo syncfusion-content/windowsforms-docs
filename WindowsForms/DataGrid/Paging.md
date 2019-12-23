@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging | DataGrid | WinForms | Syncfusion
-description: This section explains about the paging support in SfDataGrid.
+title: Paging in WinForms DataGrid control | Syncfusion
+description: Learn about paging support (pagination) in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -39,6 +39,7 @@ public partial class OrderInfo
 
     private string _shipAddress; 
     
+	[Display(Name = "Order ID")]
     public int OrderID
     {
         get
@@ -52,6 +53,7 @@ public partial class OrderInfo
         }
     }
     
+	[Display(Name = "Customer ID")]
     public string CustomerID
     {
         get
@@ -65,6 +67,7 @@ public partial class OrderInfo
         }
     }
    
+    [Display(Name = "Product Name")]
     public string ProductName
     {
         get
@@ -78,6 +81,7 @@ public partial class OrderInfo
         }
     }
    
+    [Display(Name = "Order Date")]
     public DateTime OrderDate
     {
         get
@@ -103,6 +107,8 @@ public partial class OrderInfo
         }
     }
 
+    [DataType(DataType.Currency)]
+    [Display(Name = "Unit Price")]
     public double UnitPrice
     {
         get
@@ -115,7 +121,8 @@ public partial class OrderInfo
             OnPropertyChanged("UnitPrice");
         }
     }
-  
+   
+    [Display(Name = "Contact Number")]
     public int ContactNumber
     {
         get
@@ -129,6 +136,7 @@ public partial class OrderInfo
         }
     }
   
+    [Display(Name = "Ship Address")] 
     public string ShipCountry
     {
         get
@@ -147,6 +155,18 @@ public partial class OrderInfo
     {
         if (PropertyChanged != null)
             this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+    }
+	
+	public OrderInfo(int orderID, string customerId, string productName, DateTime orderDate, int quantity, double unitPrice, double contactNumber,  string shipAddress)
+    {
+        this.OrderID = orderID;
+        this.OrderDate = orderDate;
+        this.CustomerID = customerId;
+        this.UnitPrice = unitPrice;
+        this.Quantity = quantity;
+        this.ContactNumber = contactNumber;
+        this.ProductName = productName;
+        this.ShipCountry = shipAddress;    
     }
 }
 {% endhighlight %}
@@ -168,6 +188,7 @@ Partial Public Class OrderInfo
 
 	Private _shipAddress As String
 
+    <Display(Name := "Order ID")> _
 	Public Property OrderID() As Integer
 		Get
 			Return Me._OrderID
@@ -178,6 +199,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
+    <Display(Name := "Customer ID")> _
 	Public Property CustomerID() As String
 		Get
 			Return Me._CustomerID
@@ -187,7 +209,8 @@ Partial Public Class OrderInfo
 			Me.OnPropertyChanged("CustomerID")
 		End Set
 	End Property
-
+    
+	<Display(Name := "Product Name")> _
 	Public Property ProductName() As String
 		Get
 			Return Me._product
@@ -198,6 +221,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
+    <Display(Name := "Order Date")> _
 	Public Property OrderDate() As DateTime
 		Get
 			Return _orderDate
@@ -217,6 +241,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
+    <DataType(DataType.Currency), Display(Name := "Unit Price")> _
 	Public Property UnitPrice() As Double
 		Get
 			Return _unitPrice
@@ -226,7 +251,8 @@ Partial Public Class OrderInfo
 			OnPropertyChanged("UnitPrice")
 		End Set
 	End Property
-
+    
+	<Display(Name := "Contact Number")> _
 	Public Property ContactNumber() As Integer
 		Get
 			Return Me._contactNumber
@@ -236,7 +262,8 @@ Partial Public Class OrderInfo
 			OnPropertyChanged("ContactNumber")
 		End Set
 	End Property
-
+    
+	<Display(Name := "Ship Address")> _
 	Public Property ShipCountry() As String
 		Get
 			Return Me._shipAddress
@@ -253,6 +280,18 @@ Partial Public Class OrderInfo
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
 	End Sub
+	
+	Public Sub New(ByVal orderID As Integer, ByVal customerId As String, ByVal productName As String, ByVal orderDate As DateTime, ByVal quantity As Integer, ByVal unitPrice As Double, ByVal contactNumber As Double, ByVal shipAddress As String)
+		Me.OrderID = orderID
+		Me.OrderDate = orderDate
+		Me.CustomerID = customerId
+		Me.UnitPrice = unitPrice
+		Me.Quantity = quantity
+		Me.ContactNumber = contactNumber
+		Me.ProductName = productName
+		Me.ShipCountry = shipAddress
+	End Sub
+		
 End Class
 {% endhighlight %}
 {% endtabs %}
@@ -277,16 +316,16 @@ public class OrderInfoCollection
 
     private void GenerateOrders()
     {
-        _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
-        _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."));
-        _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."));
-        _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
-        _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"));
-        _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
-        _orders.Add(new OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"));
-        _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
-        _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
-        _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+       _orders.Add(new OrderInfo(10000, "FRANS", "Raclette Courdavault", new DateTime(2011,6,21), 34,91, 9991212235, "Austria"));
+	   _orders.Add(new OrderInfo(10001, "FRANS", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 8, 1), 59, 19, 9991212236, "Canada"));
+	   _orders.Add(new OrderInfo(10002, "FRANS", "Raclette Courdavault", new DateTime(2012, 4, 17), 57, 42.50, 9991212237, "Brazil"));
+	   _orders.Add(new OrderInfo(10003, "FRANS", "Alice Mutton", new DateTime(2011, 5, 22), 32, 379.90, 9991212238, "Argentina"));
+	   _orders.Add(new OrderInfo(10004, "MEREP", "Raclette Courdavault", new DateTime(2012, 7, 20), 59, 28.50, 9991212239, "Canada"));
+	   _orders.Add(new OrderInfo(10005, "MEREP", "Boston Crab Meat",  new DateTime(2012, 1, 14), 59, 45.10, 9991212240, "Canada"));
+	   _orders.Add(new OrderInfo(10006, "MEREP", "Raclette Courdavault", new DateTime(2011, 5, 19), 29, 32.80, 9991212241, "Brazil"));
+	   _orders.Add(new OrderInfo(10007, "MEREP", "Raclette Courdavault", new DateTime(2012, 2, 10), 26, 23.30, 9991212242, "Austria"));
+	   _orders.Add(new OrderInfo(10008, "FOLKO", "Raclette Courdavault", new DateTime(2011, 11, 14), 24, 336.20, 9991212243, "Canada"));
+	   _orders.Add(new OrderInfo(10009, "FOLKO", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 4, 15), 55, 26.80, 9991212244, "Austria"));
     }
 }
 {% endhighlight %}
@@ -311,18 +350,37 @@ Public Class OrderInfoCollection
 	End Sub
 
 	Private Sub GenerateOrders()
-		_orders.Add(New OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"))
-		_orders.Add(New OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "Mexico D.F."))
-		_orders.Add(New OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "Mexico D.F."))
-		_orders.Add(New OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"))
-		_orders.Add(New OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Lula"))
-		_orders.Add(New OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"))
-		_orders.Add(New OrderInfo(1007, "Frederique Citeaux", "France", "BLONP", "Strasbourg"))
-		_orders.Add(New OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"))
-		_orders.Add(New OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"))
-		_orders.Add(New OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"))
+		_orders.Add(New OrderInfo(10000, "FRANS", "Raclette Courdavault", new DateTime(2011,6,21), 34,91, 9991212235, "Austria"))
+		_orders.Add(New OrderInfo(10001, "FRANS", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 8, 1), 59, 19, 9991212236, "Canada"))
+		_orders.Add(New OrderInfo(10002, "FRANS", "Raclette Courdavault", new DateTime(2012, 4, 17), 57, 42.50, 9991212237, "Brazil"))
+		_orders.Add(New OrderInfo(10003, "FRANS", "Alice Mutton", new DateTime(2011, 5, 22), 32, 379.90, 9991212238, "Argentina"))
+		_orders.Add(New OrderInfo(10004, "MEREP", "Raclette Courdavault", new DateTime(2012, 7, 20), 59, 28.50, 9991212239, "Canada"))
+		_orders.Add(New OrderInfo(10005, "MEREP", "Boston Crab Meat",  new DateTime(2012, 1, 14), 59, 45.10, 9991212240, "Canada"))
+		_orders.Add(New OrderInfo(10006, "MEREP", "Raclette Courdavault", new DateTime(2011, 5, 19), 29, 32.80, 9991212241, "Brazil"))
+		_orders.Add(New OrderInfo(10007, "MEREP", "Raclette Courdavault", new DateTime(2012, 2, 10), 26, 23.30, 9991212242, "Austria"))
+		_orders.Add(New OrderInfo(10008, "FOLKO", "Raclette Courdavault", new DateTime(2011, 11, 14), 24, 336.20, 9991212243, "Canada"))
+		_orders.Add(New OrderInfo(10009, "FOLKO", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 4, 15), 55, 26.80, 9991212244, "Austria"))				
 	End Sub
 End Class
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+    var data = new OrderInfoCollection();
+	
+    // Set the data source for the SfDataPager.
+    sfDataPager1.DataSource = data.Orders;
+    sfDataPager1.PageSize = 10;
+    sfDataGrid.DataSource = sfDataPager1.PagedSource;
+{% endhighlight %}
+{% highlight vb %}
+	Dim data = New OrderInfoCollection()
+
+	' Set the data source for the SfDataPager.
+	sfDataPager1.DataSource = data.Orders
+	sfDataPager1.PageSize = 10
+	sfDataGrid.DataSource = sfDataPager1.PagedSource
 {% endhighlight %}
 {% endtabs %}
 
