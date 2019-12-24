@@ -39,7 +39,7 @@ public partial class OrderInfo
 
     private string _shipAddress; 
     
-	[Display(Name = "Order ID")]
+    [Display(Name = "Order ID")]
     public int OrderID
     {
         get
@@ -53,7 +53,7 @@ public partial class OrderInfo
         }
     }
     
-	[Display(Name = "Customer ID")]
+    [Display(Name = "Customer ID")]
     public string CustomerID
     {
         get
@@ -137,7 +137,7 @@ public partial class OrderInfo
     }
   
     [Display(Name = "Ship Address")] 
-    public string ShipCountry
+    public string ShipAddress
     {
         get
         {
@@ -146,7 +146,7 @@ public partial class OrderInfo
         set
         {
             this._shipAddress = value;
-            this.OnPropertyChanged("ShipCountry");
+            this.OnPropertyChanged("ShipAddress");
         }
     }
 
@@ -166,7 +166,7 @@ public partial class OrderInfo
         this.Quantity = quantity;
         this.ContactNumber = contactNumber;
         this.ProductName = productName;
-        this.ShipCountry = shipAddress;    
+        this.ShipAddress = shipAddress;    
     }
 }
 {% endhighlight %}
@@ -221,7 +221,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
-    <Display(Name := "Order Date")> _
+	<Display(Name := "Order Date")> _
 	Public Property OrderDate() As DateTime
 		Get
 			Return _orderDate
@@ -241,7 +241,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
-    <DataType(DataType.Currency), Display(Name := "Unit Price")> _
+	<DataType(DataType.Currency), Display(Name := "Unit Price")> _
 	Public Property UnitPrice() As Double
 		Get
 			Return _unitPrice
@@ -264,13 +264,13 @@ Partial Public Class OrderInfo
 	End Property
     
 	<Display(Name := "Ship Address")> _
-	Public Property ShipCountry() As String
+	Public Property ShipAddress() As String
 		Get
 			Return Me._shipAddress
 		End Get
 		Set(ByVal value As String)
 			Me._shipAddress = value
-			Me.OnPropertyChanged("ShipCountry")
+			Me.OnPropertyChanged("ShipAddress")
 		End Set
 	End Property
 
@@ -289,7 +289,7 @@ Partial Public Class OrderInfo
 		Me.Quantity = quantity
 		Me.ContactNumber = contactNumber
 		Me.ProductName = productName
-		Me.ShipCountry = shipAddress
+		Me.ShipAddress = shipAddress
 	End Sub
 		
 End Class
@@ -369,7 +369,7 @@ End Class
 {% highlight c# %}
     var data = new OrderInfoCollection();
 	
-    // Set the data source for the SfDataPager.
+    // Set the datasource for the SfDataPager.
     sfDataPager1.DataSource = data.Orders;
     sfDataPager1.PageSize = 10;
     sfDataGrid.DataSource = sfDataPager1.PagedSource;
@@ -377,7 +377,7 @@ End Class
 {% highlight vb %}
 	Dim data = New OrderInfoCollection()
 
-	' Set the data source for the SfDataPager.
+	' Set the datasource for the SfDataPager.
 	sfDataPager1.DataSource = data.Orders
 	sfDataPager1.PageSize = 10
 	sfDataGrid.DataSource = sfDataPager1.PagedSource
