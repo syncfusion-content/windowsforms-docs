@@ -33,7 +33,7 @@ public partial class OrderInfo
 
     private int _Quantity;
 
-    private int _contactNumber;
+    private Int64 _contactNumber;
 
     private string _product;
 
@@ -123,7 +123,7 @@ public partial class OrderInfo
     }
    
     [Display(Name = "Contact Number")]
-    public int ContactNumber
+    public Int64 ContactNumber
     {
         get
         {
@@ -157,7 +157,7 @@ public partial class OrderInfo
             this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
     }
 	
-	public OrderInfo(int orderID, string customerId, string productName, DateTime orderDate, int quantity, double unitPrice, double contactNumber,  string shipAddress)
+	public OrderInfo(int orderID, string customerId, string productName, DateTime orderDate, int quantity, double unitPrice, Int64 contactNumber,  string shipAddress)
     {
         this.OrderID = orderID;
         this.OrderDate = orderDate;
@@ -182,13 +182,13 @@ Partial Public Class OrderInfo
 
 	Private _Quantity As Integer
 
-	Private _contactNumber As Integer
+	Private _contactNumber As Int64
 
 	Private _product As String
 
 	Private _shipAddress As String
 
-    <Display(Name := "Order ID")> _
+	<Display(Name := "Order ID")> _
 	Public Property OrderID() As Integer
 		Get
 			Return Me._OrderID
@@ -199,7 +199,7 @@ Partial Public Class OrderInfo
 		End Set
 	End Property
 
-    <Display(Name := "Customer ID")> _
+	<Display(Name := "Customer ID")> _
 	Public Property CustomerID() As String
 		Get
 			Return Me._CustomerID
@@ -253,11 +253,11 @@ Partial Public Class OrderInfo
 	End Property
     
 	<Display(Name := "Contact Number")> _
-	Public Property ContactNumber() As Integer
+	Public Property ContactNumber() As Int64
 		Get
 			Return Me._contactNumber
 		End Get
-		Set(ByVal value As Integer)
+		Set(ByVal value As Int64)
 			_contactNumber = value
 			OnPropertyChanged("ContactNumber")
 		End Set
@@ -281,7 +281,7 @@ Partial Public Class OrderInfo
 		End If
 	End Sub
 	
-	Public Sub New(ByVal orderID As Integer, ByVal customerId As String, ByVal productName As String, ByVal orderDate As DateTime, ByVal quantity As Integer, ByVal unitPrice As Double, ByVal contactNumber As Double, ByVal shipAddress As String)
+	Public Sub New(ByVal orderID As Integer, ByVal customerId As String, ByVal productName As String, ByVal orderDate As DateTime, ByVal quantity As Integer, ByVal unitPrice As Double, ByVal contactNumber As Int64, ByVal shipAddress As String)
 		Me.OrderID = orderID
 		Me.OrderDate = orderDate
 		Me.CustomerID = customerId
