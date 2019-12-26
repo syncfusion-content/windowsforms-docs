@@ -157,7 +157,7 @@ public partial class OrderInfo
             this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
     }
 	
-	public OrderInfo(int orderID, string customerId, string productName, DateTime orderDate, int quantity, double unitPrice, Int64 contactNumber,  string shipAddress)
+    public OrderInfo(int orderID, string customerId, string productName, DateTime orderDate, int quantity, double unitPrice, Int64 contactNumber,  string shipAddress)
     {
         this.OrderID = orderID;
         this.OrderDate = orderDate;
@@ -350,16 +350,16 @@ Public Class OrderInfoCollection
 	End Sub
 
 	Private Sub GenerateOrders()
-		_orders.Add(New OrderInfo(10000, "FRANS", "Raclette Courdavault", new DateTime(2011,6,21), 34,91, 9991212235, "Austria"))
-		_orders.Add(New OrderInfo(10001, "FRANS", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 8, 1), 59, 19, 9991212236, "Canada"))
-		_orders.Add(New OrderInfo(10002, "FRANS", "Raclette Courdavault", new DateTime(2012, 4, 17), 57, 42.50, 9991212237, "Brazil"))
-		_orders.Add(New OrderInfo(10003, "FRANS", "Alice Mutton", new DateTime(2011, 5, 22), 32, 379.90, 9991212238, "Argentina"))
-		_orders.Add(New OrderInfo(10004, "MEREP", "Raclette Courdavault", new DateTime(2012, 7, 20), 59, 28.50, 9991212239, "Canada"))
-		_orders.Add(New OrderInfo(10005, "MEREP", "Boston Crab Meat",  new DateTime(2012, 1, 14), 59, 45.10, 9991212240, "Canada"))
-		_orders.Add(New OrderInfo(10006, "MEREP", "Raclette Courdavault", new DateTime(2011, 5, 19), 29, 32.80, 9991212241, "Brazil"))
-		_orders.Add(New OrderInfo(10007, "MEREP", "Raclette Courdavault", new DateTime(2012, 2, 10), 26, 23.30, 9991212242, "Austria"))
-		_orders.Add(New OrderInfo(10008, "FOLKO", "Raclette Courdavault", new DateTime(2011, 11, 14), 24, 336.20, 9991212243, "Canada"))
-		_orders.Add(New OrderInfo(10009, "FOLKO", "NuNuCa Nuß-Nougat-Creme", new DateTime(2011, 4, 15), 55, 26.80, 9991212244, "Austria"))				
+		_orders.Add(New OrderInfo(10000, "FRANS", "Raclette Courdavault", New DateTime(2011,6,21), 34,91, 9991212235, "Austria"))
+		_orders.Add(New OrderInfo(10001, "FRANS", "NuNuCa Nuß-Nougat-Creme", New DateTime(2011, 8, 1), 59, 19, 9991212236, "Canada"))
+		_orders.Add(New OrderInfo(10002, "FRANS", "Raclette Courdavault", New DateTime(2012, 4, 17), 57, 42.50, 9991212237, "Brazil"))
+		_orders.Add(New OrderInfo(10003, "FRANS", "Alice Mutton", New DateTime(2011, 5, 22), 32, 379.90, 9991212238, "Argentina"))
+		_orders.Add(New OrderInfo(10004, "MEREP", "Raclette Courdavault", New DateTime(2012, 7, 20), 59, 28.50, 9991212239, "Canada"))
+		_orders.Add(New OrderInfo(10005, "MEREP", "Boston Crab Meat",  New DateTime(2012, 1, 14), 59, 45.10, 9991212240, "Canada"))
+		_orders.Add(New OrderInfo(10006, "MEREP", "Raclette Courdavault", New DateTime(2011, 5, 19), 29, 32.80, 9991212241, "Brazil"))
+		_orders.Add(New OrderInfo(10007, "MEREP", "Raclette Courdavault", New DateTime(2012, 2, 10), 26, 23.30, 9991212242, "Austria"))
+		_orders.Add(New OrderInfo(10008, "FOLKO", "Raclette Courdavault", New DateTime(2011, 11, 14), 24, 336.20, 9991212243, "Canada"))
+		_orders.Add(New OrderInfo(10009, "FOLKO", "NuNuCa Nuß-Nougat-Creme", New DateTime(2011, 4, 15), 55, 26.80, 9991212244, "Austria"))				
 	End Sub
 End Class
 {% endhighlight %}
@@ -375,12 +375,12 @@ End Class
     sfDataGrid.DataSource = sfDataPager1.PagedSource;
 {% endhighlight %}
 {% highlight vb %}
-	Dim data = New OrderInfoCollection()
+    Dim data = New OrderInfoCollection()
 
-	' Set the datasource for the SfDataPager.
-	sfDataPager1.DataSource = data.Orders
-	sfDataPager1.PageSize = 10
-	sfDataGrid.DataSource = sfDataPager1.PagedSource
+    ' Set the datasource for the SfDataPager.
+    sfDataPager1.DataSource = data.Orders
+    sfDataPager1.PageSize = 10
+    sfDataGrid.DataSource = sfDataPager1.PagedSource
 {% endhighlight %}
 {% endtabs %}
 
