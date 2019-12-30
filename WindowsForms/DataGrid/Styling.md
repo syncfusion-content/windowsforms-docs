@@ -63,13 +63,13 @@ The alignment of the text within the record cells can be changed by using [CellS
 {% tabs %}
 {% highlight c# %}
 //Change alignment for the record cells.
-this.sfDataGrid.Columns["CustomerID"].CellStyle.HorizontalAlignment = HorizontalAlignment.Right;
+this.sfDataGrid.Columns["CustomerID"].CellStyle.HorizontalAlignment = HorizontalAlignment.Center;
 this.sfDataGrid1.Columns["CustomerID"].CellStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
 
 {% endhighlight %}
 {% highlight vb %}
 'Change alignment for the record cells.
-Me.sfDataGrid.Columns("CustomerID").CellStyle.HorizontalAlignment = HorizontalAlignment.Right
+Me.sfDataGrid.Columns("CustomerID").CellStyle.HorizontalAlignment = HorizontalAlignment.Center
 Me.sfDataGrid.Columns("CustomerID").CellStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
 
 {% endhighlight %}

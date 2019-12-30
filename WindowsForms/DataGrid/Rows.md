@@ -314,7 +314,7 @@ this.sfDataGrid1.Columns["CustomerID"].HeaderStyle.VerticalAlignment = System.Wi
 {% endhighlight %}
 {% highlight vb %}
 'Change alignment for the header cells.
-Me.sfDataGrid.Columns("CustomerID").HeaderStyle.HorizontalAlignment = HorizontalAlignment.Right
+Me.sfDataGrid.Columns("CustomerID").HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center
 Me.sfDataGrid.Columns("CustomerID").HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
 
 {% endhighlight %}
