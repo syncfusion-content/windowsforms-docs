@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | CurrencyTextbox | WindowsForms | Syncfusion
-description: This section describes how to add currency text box control into application.
+description: This section describes how to add syncfusion currency text box control into a windows forms application.
 platform: WindowsForms
 control: CurrencyTextBox
 documentation: ug
@@ -106,9 +106,9 @@ this.currencyTextBox1.CurrencyDecimalDigits = 3;
 this.currencyTextBox1.CurrencyDecimalSeparator = "/";
 this.currencyTextBox1.CurrencyGroupSeparator = "*";
 this.currencyTextBox1.CurrencyGroupSizes = new int[] { 3 };
-VB	Me.currencyTextBox1.DecimalValue = 2132423543
 {% endhighlight %}
 {% highlight VB %}
+Me.currencyTextBox1.DecimalValue = 2132423543
 Me.currencyTextBox1.CurrencyDecimalDigits = 3
 Me.currencyTextBox1.CurrencyDecimalSeparator = "."
 Me.currencyTextBox1.CurrencyGroupSeparator = ","
