@@ -207,6 +207,31 @@ For more details, refer to `Appearance` in [Freeze Panes](https://help.syncfusio
 Appearance of the selected rows and current cell can be customized by using the [SelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~SelectionStyle.html) property.
 For more details, refer to `Appearance` in [Selection](https://help.syncfusion.com/windowsforms/sfdatagrid/selection#appearance ) section.
 
+## Changing the alignment of the cell text for a column
+
+The alignment of the text within the record cells can be changed by using [CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.  Similarly, the alignment of the text within the header cells can be changed by using [HeaderStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [HeaderStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.
+
+{% tabs %}
+{% highlight c# %}
+//Change alignment for the record cells.
+this.sfDataGrid.Columns["CustomerID"].CellStyle.HorizontalAlignment = HorizontalAlignment.Right;
+
+//Change alignment for the header cells.
+this.sfDataGrid.Columns["CustomerID"].HeaderStyle.HorizontalAlignment = HorizontalAlignment.Right;
+{% endhighlight %}
+{% highlight vb %}
+'Change alignment for the record cells.
+Me.sfDataGrid.Columns("CustomerID").CellStyle.HorizontalAlignment = HorizontalAlignment.Right
+
+'Change alignment for the header cells.
+Me.sfDataGrid.Columns("CustomerID").HeaderStyle.HorizontalAlignment = HorizontalAlignment.Right
+{% endhighlight %}
+{% endtabs %}
+
+![Text alignment customization of columns in windows forms datagrid](Styling_images/Styling9.png)
+
+N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) and  [GridColumnBase.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~HeaderStyle.html) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html) and [SfDataGrid.Style.HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html).
+
 ## Changing the Color and Thickness of the Gridlines
 Color and thickness of the grid lines can be changed by using the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
 
