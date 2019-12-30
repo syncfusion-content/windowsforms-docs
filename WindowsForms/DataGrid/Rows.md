@@ -301,6 +301,28 @@ this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
 
 ![Font orientation customization in header row of Windows forms datagrid](Rows_images/img8.png)
 
+### Text alignment for Header Row
+
+The alignment of the text within the header cells can be changed by using [HeaderStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [HeaderStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.
+
+{% tabs %}
+{% highlight c# %}
+//Change alignment for the header cells.
+this.sfDataGrid1.Columns["CustomerID"].HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center;
+this.sfDataGrid1.Columns["CustomerID"].HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
+
+{% endhighlight %}
+{% highlight vb %}
+'Change alignment for the header cells.
+Me.sfDataGrid.Columns("CustomerID").HeaderStyle.HorizontalAlignment = HorizontalAlignment.Right
+Me.sfDataGrid.Columns("CustomerID").HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
+
+{% endhighlight %}
+{% endtabs %}
+
+![Text alignment customization of header cell in windows forms datagrid](Rows_images/img11.png)
+
+
 ### Hiding Header Row
 
 The header row can be hide by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property as `0` (zero).
