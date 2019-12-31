@@ -303,19 +303,19 @@ this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
 
 ### Text alignment for Header Row
 
-The alignment of the text within the header cells can be changed by using [HeaderStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [HeaderStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.
+The text alignment of the header cells can be changed by using [HeaderStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [HeaderStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.
 
 {% tabs %}
 {% highlight c# %}
 //Change alignment for the header cells.
-this.sfDataGrid1.Columns["CustomerID"].HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center;
-this.sfDataGrid1.Columns["CustomerID"].HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
+this.sfDataGrid1.Style.HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center;
+this.sfDataGrid1.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
 
 {% endhighlight %}
 {% highlight vb %}
 'Change alignment for the header cells.
-Me.sfDataGrid.Columns("CustomerID").HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center
-Me.sfDataGrid.Columns("CustomerID").HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
+Me.sfDataGrid.Style.HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center
+Me.sfDataGrid.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
 
 {% endhighlight %}
 {% endtabs %}
