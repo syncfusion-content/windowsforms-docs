@@ -56,6 +56,27 @@ Me.sfDataGrid1.Style.CellStyle.Font.Orientation = 45
 
 ![Font orientation customization in Windows forms datagrid](Styling_images/Styling5.png)
 
+The text alignment of the record cells can be changed by using [CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.  
+
+{% tabs %}
+{% highlight c# %}
+//Change alignment for the record cells.
+this.sfDataGrid1.Style.CellStyle.HorizontalAlignment = HorizontalAlignment.Left;
+this.sfDataGrid1.Style.CellStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top;
+
+{% endhighlight %}
+{% highlight vb %}
+'Change alignment for the record cells.
+Me.sfDataGrid1.Style.CellStyle.HorizontalAlignment = HorizontalAlignment.Left
+Me.sfDataGrid1.Style.CellStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
+
+{% endhighlight %}
+{% endtabs %}
+
+![Text alignment customization of record cells in windows forms datagrid](Styling_images/Styling9.png)
+
+The text alignment for the record cells in a specific column can be changed by using by using [GridColumnBase.CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [GridColumnBase.CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties.
+
 N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html).
 
 ## Styling Column Header
