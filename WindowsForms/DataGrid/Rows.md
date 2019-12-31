@@ -322,7 +322,6 @@ Me.sfDataGrid.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualS
 
 ![Text alignment customization of header cell in windows forms datagrid](Rows_images/img11.png)
 
-
 ### Hiding Header Row
 
 The header row can be hide by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property as `0` (zero).
