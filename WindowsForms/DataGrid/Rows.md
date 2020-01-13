@@ -324,7 +324,7 @@ Me.sfDataGrid.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualS
 
 ### Text wrapping for Header Row
 
-The text wrapping for the header cell of a specific column can be enabled by using the property [GridColumnBase.AllowHeaderTextWrapping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowHeaderTextWrapping.html).
+The header text of the specific column can be wrapped using the [GridColumnBase.AllowHeaderTextWrapping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowHeaderTextWrapping.html) property.
 
 {% tabs %}
 {% highlight c# %}
