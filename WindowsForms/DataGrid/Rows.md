@@ -276,9 +276,9 @@ this.sfDataGrid1.Columns["OrderID"].HeaderStyle.TextColor = Color.DarkRed;
 this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
 {% endhighlight %}
 {% highlight vb %}
-this.sfDataGrid1.Columns["OrderID"].HeaderStyle.BackColor = Color.LightCoral;
-this.sfDataGrid1.Columns["OrderID"].HeaderStyle.TextColor = Color.DarkRed;
-this.sfDataGrid1.Columns["OrderID"].HeaderStyle.Font.Bold = true;
+Me.sfDataGrid1.Columns("OrderID").HeaderStyle.BackColor = Color.LightCoral
+Me.sfDataGrid1.Columns("OrderID").HeaderStyle.TextColor = Color.DarkRed
+Me.sfDataGrid1.Columns("OrderID").HeaderStyle.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -294,8 +294,8 @@ this.sfDataGrid1.HeaderRowHeight = 80;
 this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
 {% endhighlight %}
 {% highlight vb %}
-this.sfDataGrid1.HeaderRowHeight = 80;
-this.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45;
+Me.sfDataGrid1.HeaderRowHeight = 80
+Me.sfDataGrid1.Style.HeaderStyle.Font.Orientation = 45
 {% endhighlight %}
 {% endtabs %}
 
@@ -321,6 +321,23 @@ Me.sfDataGrid.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualS
 {% endtabs %}
 
 ![Text alignment customization of header cell in windows forms datagrid](Rows_images/img11.png)
+
+### Text wrapping for Header Row
+
+The header text of the specific column can be wrapped using the [GridColumnBase.AllowHeaderTextWrapping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~AllowHeaderTextWrapping.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.Columns["CustomerID"].AllowHeaderTextWrapping = true;   
+
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.Columns("CustomerID").AllowHeaderTextWrapping = True
+
+{% endhighlight %}
+{% endtabs %} 
+
+![Text wrapping for header cell in windows forms datagrid](Rows_images/img12.png)
 
 ### Hiding Header Row
 
