@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WindowsForms products
-description: Learn how to install and deploy the Syncfusion WindowsForms component
+title: Essential Studio Offline Installer | WindowsForms | Syncfusion
+description: this section provides information regarding the Syncfusion Windows Forms Offline installer and steps for installing it
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
@@ -18,7 +18,7 @@ The following procedure illustrates how to install Essential Studio Windows Form
 
 2. Double-click the Syncfusion Windows Forms platform installer file. The installer Wizard opens and extracts the package automatically.
 
-   ![](Platform_images/Step-by-Step-Installation_img1.png)
+   ![Installer extraction wizard](Platform_images/Step-by-Step-Installation_img1.png)
 
    N> The installer wizard extracts the syncfusionessentialwindowsforms_(version).exe dialog, displaying the unzip operation of the package.
 
@@ -35,14 +35,14 @@ The following procedure illustrates how to install Essential Studio Windows Form
    
    You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
 
-   ![](Platform_images/Step-by-Step-Installation_img2.png)   
+   ![Login credentials](Platform_images/Step-by-Step-Installation_img2.png)   
 
 
    **Use Unlock Key**
    
    You should use the Syncfusion License/Trial key. Trial key is valid for 30 days and the installer won't accept the expired trial key. Licensed customer can generate key from [here](https://www.syncfusion.com/kb/2326).
 
-   ![](Platform_images/Step-by-Step-Installation_img3.png)   
+   ![Product key](Platform_images/Step-by-Step-Installation_img3.png)   
 
 
 4. After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
@@ -51,7 +51,7 @@ The following procedure illustrates how to install Essential Studio Windows Form
 5. Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. To install in the displayed default location, click Install
 
 
-    ![](Platform_images/Step-by-Step-Installation_img4.png)
+    ![Advanced options](Platform_images/Step-by-Step-Installation_img4.png)
 
 
     N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
@@ -69,11 +69,11 @@ The following procedure illustrates how to install Essential Studio Windows Form
 6.  Click Install.
 
 
-    ![](Platform_images/Step-by-Step-Installation_img5.png)
+    ![Installing wizard](Platform_images/Step-by-Step-Installation_img5.png)
 
 7. The Completed screen is displayed once the Windows Forms platform is installed.
 
-    ![](Platform_images/Step-by-Step-Installation_img6.png)
+    ![Installation completed](Platform_images/Step-by-Step-Installation_img6.png)
 
 
 8. Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.

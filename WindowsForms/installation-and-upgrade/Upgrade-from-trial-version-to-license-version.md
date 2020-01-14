@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install and Deployment process of Syncfusion WindowsForms products
-description: Learn how to install and deploy the Syncfusion WindowsForms component
+title: Trial Version to license Version| WindowsForms | Syncfusion
+description: This section provides information about upgrading from Trial version of Essential Studio to Licensed version
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug

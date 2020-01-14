@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WindowsForms products
-description: Learn how to install and deploy the Syncfusion WindowsForms component
+title: System Requirements | WindowsForms | Syncfusion
+description: this section provides the information about the system requirements for windows forms platform with supported browsers
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
