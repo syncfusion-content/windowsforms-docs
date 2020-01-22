@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interactions
-description: This section describes about user interactions on smith chart.
+title: User Interactions in Syncfusion SfSmithChart control.
+description: This section describes about user interactions (tooltip and its customization option) on smith chart.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
@@ -36,7 +36,7 @@ sfSmithChart1.Series.Add(series)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/tooltip.png](UserInteractions_images/UserInteractions_img1.jpeg)
+![Tooltip on mouse over](UserInteractions_images/UserInteractions_img1.jpeg)
 
 
 ## Tooltip format
@@ -69,7 +69,7 @@ series.TooltipFormat = "Resistance : {0}" & Environment.NewLine & "Reactance : {
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/tooltipFormat.png](UserInteractions_images/UserInteractions_img2.jpeg)
+![Tooltip format](UserInteractions_images/UserInteractions_img2.jpeg)
 
 
 ## Tooltip customization
@@ -112,6 +112,59 @@ sfSmithChart1.TooltipOptions.BorderWidth = 1
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/tooltip customize.png](UserInteractions_images/UserInteractions_img3.jpeg)
+![Tooltip customization](UserInteractions_images/UserInteractions_img3.jpeg)
 
+## Event
+
+### TooltipOpening event 
+
+TooltipOpening event is called before the rendering of the tooltip. By using the below mentioned arguments of this event, we can customize the tooltip text of each point and its styles.
+
+**Data** - Contains the tooltip point ViewModel data or X, Y point.
+**SeriesIndex** - Contains the current series index value of the series collection.
+**PointIndex** - Contains the point index value of the point collection. 
+**Text** - Used to customize the tooltip text displaying on mouse over.
+**Style** - Used to customize tooltip back color, fore color and its font style.
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Hook the tooltip opening event 
+sfSmithChart1.TooltipOpening += SfSmithChart1_TooltipOpening;
+
+private void SfSmithChart1_TooltipOpening(object sender, TooltipOpeningEventArgs e)
+{
+    var data = e.Data as Model;
+    if(e.PointIndex == 1)
+    {
+        e.Text += Environment.NewLine + "Frequency: " + data.Frequency;
+        e.Style.ForeColor = Color.Red;
+        e.Style.BackColor = Color.Yellow;
+    }
+}
+
+{% endhighlight %}
+
+{% highlight vb.net %}
+
+//Hook the tooltip opening event 
+sfSmithChart1.TooltipOpening += SfSmithChart1_TooltipOpening;
+
+Private Sub SfSmithChart1_TooltipOpening(ByVal sender As Object, ByVal e As TooltipOpeningEventArgs)
+Dim data = TryCast(e.Data, Model)
+
+    If e.PointIndex Is 1 Then
+        e.Text += Environment.NewLine & "Frequency: " + data.Frequency
+        e.Style.ForeColor = Color.Red
+        e.Style.BackColor = Color.Yellow
+    End If
+	
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tooltip customization using event](UserInteractions_images/UserInteractions_img4.jpeg)
 

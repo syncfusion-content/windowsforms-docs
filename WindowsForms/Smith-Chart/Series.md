@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series
-description: This section describes the series of the smith chart.
+title: Series customization in Syncfusion SfSmithChart control
+description: This section describes the smith chart series and series line styles, visibility customization options
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
@@ -48,12 +48,12 @@ sfSmithChart1.Series.Add(series)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Series_markerless.png](Series_images/Series_img1.PNG)
+![Series with datasource](Series_images/Series_img1.PNG)
 
 
 ## Customizing the line series
 
-The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html) and [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) properties of line series.
+The line stroke and width can be customized by using the [`Interior`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~Interior.html), [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.LineSeries~StrokeWidth.html) and *DashStyle* properties of line series.
 
 {% tabs %}
 
@@ -63,6 +63,8 @@ series.Interior = Color.Red;
 
 series.StrokeWidth = 3;
 
+series.DashStyle = DashStyle.Dash;
+
 {% endhighlight %}
 
 {% highlight vb.net %}
@@ -71,11 +73,13 @@ series.Interior = Color.Red
 
 series.StrokeWidth = 3
 
+series.DashStyle = DashStyle.Dash;
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/seriescustomize.png](Series_images/Series_img2.PNG)
+![Series customization](Series_images/Series_img2.PNG)
 
 
 ## Series visibility
@@ -146,6 +150,6 @@ sfSmithChart1.Series.Add(series1)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Series1.png](Series_images/Series_img3.PNG)
+![Series visibility](Series_images/Series_img3.PNG)
 
 
