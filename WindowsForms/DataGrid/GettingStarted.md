@@ -9,6 +9,10 @@ documentation: ug
 # Getting Started 
 This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
 
+To get start quickly with WinForms DataGrid, you can check on this video:
+<style>#WinFormsDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='WinFormsDataGridVideoTutorial' src='https://www.youtube.com/embed/ShhjvfqfrxM'></iframe>
+
 ## Assembly Deployment
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfDataGrid control in any application.
