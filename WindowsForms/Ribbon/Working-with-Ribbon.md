@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working-with-Ribbon | WindowsForms | Syncfusion
-description: working with ribbon
+description: This section briefly explains the functionalities in Syncfusion RibbonControlAdv control
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
