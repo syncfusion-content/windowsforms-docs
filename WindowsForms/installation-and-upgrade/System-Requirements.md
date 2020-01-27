@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WindowsForms products
-description: Learn how to install and deploy the Syncfusion WindowsForms component
+title: System Requirements | WindowsForms | Syncfusion
+description: this section provides the information about the system requirements for windows forms platform with supported browsers
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
@@ -25,7 +25,7 @@ The following topic describes the system requirements for Syncfusion Windows For
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 4 GB of available space may be required. However, 400 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 4 GB of available space may be required. However, 400 MB free space is required in boot drive even if you are installing in other drive.
 
 ### Development Environment
 
