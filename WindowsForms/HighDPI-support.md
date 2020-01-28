@@ -187,3 +187,82 @@ gridListControl1.Grid.DpiAware = True
 
 {% endhighlight %}
 {% endtabs %}
+
+
+
+## Automatically change images based on DPI through ImageListAdv control
+
+ImageListAdv control provides an option to set images with respect to different DPI scaling during application design. It helps the application to automatically switch the image when running on different machines in different DPI scaling. The images for different DPI scaling can be set using [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) which is populated in the [`DPIImages`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) collection in the **ImageListAdv**. The [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) provides the following options.
+
+* **DPI120Image** - This sets the image of the item for 125 scaling and above.
+* **DPI144Image** - This sets the image of the item for 150 scaling and above. 
+* **DPI192Image** - This sets the image of the item for 200 scaling and above.
+* **Index** - Maps the index of the default image obtained from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection bound the ImageListAdv control.
+
+N> If the image for a particular DPI scaling is not set in the [`DPIImages`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) collection, the previous scaling image or the default image from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection will be displayed.
+
+The steps below illustrate the setting of images for our ButtonAdv using ImageListAdv for different DPI scaling.
+
+1. Drag and drop the ImageListAdv from the toolbox to the designer. 
+
+2. Add the required images to the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection of the ImageListAdv. These images will act as default images that will be displayed at all scaling when no DPI image is set.
+
+![Images collection editor](HighDPI_images/ImageListAdv_Properties.png)
+
+![Images collection editor](HighDPI_images/ImagesCollection.png)
+
+3. To set the images for various DPI scaling, open the [`DPIImages`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) collection in the ImageListAdv and add a new [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) item using the Add button.
+
+![Adding a DPIAwareImage item](HighDPI_images/DPIImagesCollection.png)
+
+4. To set image for 125 scaling and above, set the desired image to the [`DPI120Image`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property.
+
+![Setting 125 scaling image](HighDPI_images/Setting_DPI125Image.png)
+
+5. To set image for 150 scaling and above, set the desired image to the [`DPI144Image`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property.
+
+![Setting 150 scaling image](HighDPI_images/Setting_DPI150Image.png)
+
+6. To set image for 200 scaling and above, set the desired image to the [`DPI192Image`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property.
+
+![Setting 175 scaling image](HighDPI_images/Setting_DPI175Image.png)
+
+7. To map this [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) to the ButtonAdv, set the index of the default desired image from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection of the ImageListAdv to the [`Index`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property. 
+
+![Adding images and index](HighDPI_images/Setting_ImagesAndIndex.png)
+
+8. Now map the desired image to the ButtonAdv control by setting the image index from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection to the ButtonAdv Image property.
+
+{% tabs %}
+{% highlight c# %}
+
+buttonAdv1.Image = imageListAdv1.Images[0];
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+buttonAdv1.Image = imageListAdv1.Images(0)
+
+{% endhighlight %}
+{% endtabs %}
+
+9. When the application is run, the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as like below.
+
+#### 100 DPI Scaling
+
+![Adding images and index](HighDPI_images/DPI_100.png)
+
+#### 125 Scaling
+
+![Adding images and index](HighDPI_images/DPI_125.png)
+
+#### 150 Scaling 
+
+![Adding images and index](HighDPI_images/DPI_150.png)
+
+#### 175 Scaling
+
+![Adding images and index](HighDPI_images/DPI_175.png)
+
+

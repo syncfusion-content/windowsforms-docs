@@ -795,7 +795,7 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.m
 
 {% endtabs %}
 
-#### ToolStripSplitButton
+### ToolStripSplitButton
 
 The properties of SplitButton is like SplitButtonEx except DropDownButtonWidth property is available for SplitButton control.
 
@@ -834,9 +834,9 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.r
 
 ![Adding ToolStripSplitButton](Getting_Started_Images/Getting-Started_img15.jpg)
 
-#### Text alignment for DropDownMenuItems and SplitButtonMenuItems
+### Text alignment for DropDownMenuItems and SplitButtonMenuItems
 
-Text alignment for the ToolStripMenuItem can be set using its `TextAlign` property. To enable this alignment, [`AllowMenuTextAlignment`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx~AllowMenuTextAlignment.html) of its parent `ToolStripEx` must be set **"True"** mandatorily. The various options of `TextAlign` are listed below.
+Text alignment for the **"ToolStripMenuItem"** can be set using its [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx_properties.html) property. To enable this alignment, [`AllowMenuTextAlignment`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx~AllowMenuTextAlignment.html) of its parent **"ToolStripEx"** must be set **"True"** mandatorily. The various options of [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx_properties.html) are listed below.
 
 * TopLeft
 * TopCenter
