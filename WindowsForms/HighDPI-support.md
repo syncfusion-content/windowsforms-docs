@@ -199,7 +199,7 @@ ImageListAdv component provides an option to set images with respect to differen
 * **DPI192Image** - This sets the image of the item for 200 scaling and above.
 * **Index** - Maps the index of the default image present in the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection bound the ImageListAdv component. 
 
-N> Note that the image present in the **Images[1]** index can have its relevant DPI scaling images set in the **DPIImages[7]** index (at any dynamic position) and to map them, the [`Index`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property is set to **1** (which is the actual default image position). 
+N> The image present in the **Images[1]** index can have its relevant DPI scaling images set in the **DPIImages[7]** index (at any dynamic position) and to map them, the [`Index`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property is set to **1** (which is the actual default image position). 
 
 N> If the image for a particular DPI scaling is not set in the [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html), either the lower scaling image or the default image from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection will be consumed for display.
 
@@ -231,7 +231,7 @@ The steps below illustrate the setting of image for a ButtonAdv using ImageListA
 
 7. To map this [`DPIAwareImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) to its default image, set the index of the appropriate image from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection to the [`Index`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~DPIImages.html) property. 
 
-![Adding images and index](HighDPI_images/Setting_DPI175Image.png)
+![Adding images and index](HighDPI_images/Setting_DPI200Image.png)
 
 8. Now map the desired image from the [`Images`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv~Images.html) collection to the ButtonAdv control using its [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv_properties.html) property.
 
