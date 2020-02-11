@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | DataGrid | WinForms | Syncfusion
-description: This section explains about the DataBinding support in SfDataGrid.
+description: Learn about data binding (IEnumerable, Complex property, Indexer Property, DataTable and so on) support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~DataSource.html) property.
 
 {% tabs %}
