@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Title Bar| WindowsForms | Syncfusion
-description: Title Bar
+title: Title Bar in Windows Form | Syncfusion
+description: This section explains about the title bar height, alignment, rich text formatting,loading user control to the title bar for windows forms and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
@@ -41,7 +41,7 @@ Me.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top
 
 ## Customization of title bar buttons
 
-Icons on the title bar buttons can be changed by loading any custom icon by using the button image properties in the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) such as [CloseButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonImage.html), [MaximizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonImage.html), and [MinimizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MinimizeButtonImage.html).
+Icons on the title bar buttons can be changed by loading any custom icon by using the button image properties in the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) such as [CloseButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonImage.html), [MaximizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonImage.html) and [MinimizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MinimizeButtonImage.html).
 
 By default, the title bar buttons have the following states:
 
@@ -88,7 +88,7 @@ Me.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico")
 
 ### Hiding the title bar buttons
 
-Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true), and [CloseButtonVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~CloseButtonVisible.html) properties.
+Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true) and [CloseButtonVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~CloseButtonVisible.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -124,7 +124,7 @@ Me.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red150\\green0\\blue20;\\red100\\gr
 {% endtabs %}
 ![Rich text formatting in SfForm](TitleBar_images/TitleBar_Image4.png)
 
-N> Adding rich text to the Text property will have no effect, if the `AllowRichText` property is false.
+N> Adding rich text to the `Text` property will have no effect, if the `AllowRichText` property is `false`.
 
 ## Loading user control to the title bar
 

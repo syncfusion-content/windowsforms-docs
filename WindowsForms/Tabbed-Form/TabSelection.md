@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab Selection | Tabbed Form | WinForms | Syncfusion
-description: This section explains about programmatic selection of tab in SfTabbedForm.
+title: Tab Selection in Tabbed Form for  Windows Form | Syncfusion
+description: This section explains about the Tabbedform control for windows forms and programmatic selection of tab in SfTabbedForm and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
@@ -32,13 +32,13 @@ Me.tabbedFormControl.SelectedTab = tabPageAdv2
 {% endhighlight %}
 {% endtabs %}
 
-![Tabbed form](Tab-Selection-images/Tab-Selection-images_img1.png)
+![Winforms showing applied the selection in  Tabbed form](Tab-Selection-images/Tab-Selection-images_img1.png)
 
 ## Events
 
 ### SelectedIndexChanging event 
 
-The [SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndexChanging_EV.html) event occurs when changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndex.html) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedTab.html) of the [TabbedFormControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedForm~TabbedFormControl.html). The [SelectedIndexChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SelectedIndexChangingEventArgs_properties.html) properties provide information specific to this event. Tab selection can be restricted by setting args.Cancel to `true`.
+The [SelectedIndexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndexChanging_EV.html) event occurs when changing the [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndex.html) or [SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedTab.html) of the [TabbedFormControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedForm~TabbedFormControl.html). The [SelectedIndexChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SelectedIndexChangingEventArgs_properties.html) properties provide information specific to this event. Tab selection can be restricted by setting `args.Cancel` to `true`.
 
 {% tabs %}
 {% highlight c# %}

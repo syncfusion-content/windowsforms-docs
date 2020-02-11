@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: How to Configure Office2007Form.
+title: Getting-Started in Windows Form | Syncfusion
+description: This section explains about the assembly deployment, configure in Office2007Form and more details for windows forms.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with Office2007Form
+## Creating simple application with Office2007Form
 
 You can create the Windows Forms application with Office2007Form control as follows:
 
@@ -30,13 +30,13 @@ You can create the Windows Forms application with Office2007Form control as foll
 
 Create a new Windows Forms project in the Visual Studio to change the standard form into Office2007Form.
 
-## Configure Office2007Form
+### Configure Office2007Form
 
 `Office2007Form` is an advanced standard Form, we can configure it by following the given steps:
 
 **Step 1:** Add the following required assembly references to the project:
 
-	* Syncfusion.Shared.Base.dll	
+* Syncfusion.Shared.Base.dll	
 
 **Step 2:** Include the namespaces **Syncfusion.Windows.Forms**.
 
@@ -90,4 +90,4 @@ End Class
 
 {% endtabs %} 
    
-![](Office2007-Form_images/Office2007Form.png)
+![Winforms showing applied the office2007form](Office2007-Form_images/Office2007Form.png)

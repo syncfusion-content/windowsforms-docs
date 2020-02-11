@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ContextMenu | Windows Forms | Syncfusion
-description: This section explains how to customize the context menu of the SfScrollFrame.
+title: ContextMenu in Windows Forms ScrollFrame Control | Syncfusion
+description: Learn about the explains how to customize the context menu of the Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -10,13 +10,13 @@ documentation: ug
 # Context Menu
 
 The `SfScrollFrame` supports UI scrolling through the context menu like the Microsoft scrollbars. It appears when right clicking on both the horizontal and vertical scrollbars. You can scroll left, right, top, and bottom of the control by clicking the corresponding context menu options. 
-![](SfScrollFrame_images/SfScrollFrame_img7.jpg)
+![Contextmenu shown in scrollbar in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img7.jpg)
 
 ## Disabling the default context menu for ScrollBar
 
 The default context menu of the SfScrollFrame can be restricted by setting the `Cancel` property of the [ContextMenuShowingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs.html) to `true` using the `ContextMenuShowing` event.
 
-**Note**: This is applicable for both the horizontal and vertical scrollbars.
+N> This is applicable for both the horizontal and vertical scrollbars.
 
 {% tabs %}
 {% highlight c# %}
@@ -40,9 +40,9 @@ void VerticalScrollBar_ContextMenuShowing(object sender, Syncfusion.WinForms.Scr
 
 ### Showing the custom context menu in ScrollBar
 
-The custom context menu can be shown by setting the `ContextMenu` property of the ContextMenuShowingEventArgs with custom [ContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs~ContextMenu.html) using the [ContextMenuShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~ContextMenuShowing_EV.html) event.
+The custom context menu can be shown by setting the `ContextMenu` property of the `ContextMenuShowingEventArgs` with custom [ContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs~ContextMenu.html) using the [ContextMenuShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~ContextMenuShowing_EV.html) event.
 
-**Note**: This is applicable for both the horizontal and vertical scrollbars.
+N> This is applicable for both the horizontal and vertical scrollbars.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,13 +69,13 @@ void HorizontalScrollBar_ContextMenuShowing(object sender, Syncfusion.WinForms.S
 {% endhighlight %}
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_img8.jpg)
+![Custom contextmenu shown in scrollbar in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img8.jpg)
 
 ### Adding an additional menu item in default context menu
 
-The custom menu item can be added to the default context menu of the ScrollBars by adding the custom menu items using the [ContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs~ContextMenu.html) property of the ContextMenuShowingEventArgs with custom `ContextMenu` using the [ContextMenuShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~ContextMenuShowing_EV.html) event.
+The custom menu item can be added to the default context menu of the ScrollBars by adding the custom menu items using the [ContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Events.ContextMenuShowingEventArgs~ContextMenu.html) property of the `ContextMenuShowingEventArgs` with custom `ContextMenu` using the [ContextMenuShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~ContextMenuShowing_EV.html) event.
 
-**Note**: This is applicable for both the horizontal and vertical scrollbars.
+N> This is applicable for both the horizontal and vertical scrollbars.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,4 +90,4 @@ void VerticalScrollBar_ContextMenuShowing(object sender, Syncfusion.WinForms.Scr
 {% endhighlight %}
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_img9.jpg)
+![Default contextmenu shown in scrollbar in winform scrollframe](SfScrollFrame_images/SfScrollFrame_img9.jpg)

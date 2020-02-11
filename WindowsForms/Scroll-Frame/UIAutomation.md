@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI Automation with SfScrollFrame for Syncfusion Essential WindowsForms
-description: This section explains on how to test the UI of SfScrollFrame projects.
+title: UI Automation in Windows Forms ScrollFrame Control | Syncfusion
+description: This section explains on how to test the UI automation code UI test and QTP Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -55,36 +55,36 @@ Follow the steps to create a `CodedUITest project` and test the `SfScrollFrame` 
 1. Create a new application or open an existing application with `SfScrollFrame`.
 2. Create a Coded UI Test project. A CUIT file will be added automatically.
 
-![](CodedUI-Automation-Images/CodedUI_Create.jpg)
+![WinForms showing the codeui create in scrollframe](CodedUI-Automation-Images/CodedUI_Create.jpg)
 
 3. Then, the Generate Code dialog box appears, choose `Record actions, edit UI map or add assertions`.
 
-![](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
+![WinForms showing the codedui generatecode in scrollframe](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
 
 4. Now, the Coded UI project Visual Studio gets minimized and `CodedUITestBuilder` appears in the bottom right corner of the window. Record the actions by clicking the Start Recording icon in `CodedUITestBuilder`.
 
-![](CodedUI-Automation-Images/UITestBuilder.jpg)
+![Winforms showing the uitestbuilder in scrollframe](CodedUI-Automation-Images/UITestBuilder.jpg)
 
 5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right clicking the `CodedUITestMethod1` in CUIT file and clicking the Generate Code for Coded UI Test. The same CodedUITestBuilder appears in the bottom right corner of the window.
 
-![](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
+![Winforms showing the codedui generatemethod in scrollframe](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
 
 6. Drag the Crosshairs on to the UI elements in `SfScrollFrame` application. It shows the available properties of the inner UI elements. 
 
-![](CodedUI-Automation-Images/SfScrollFrame_Assertion.jpg)
+![Winforms showing the assertion in scrollframe](CodedUI-Automation-Images/SfScrollFrame_Assertion.jpg)
 
 7. Record the actions made on the UI elements by clicking the `Record` button on `CodedUITestBuilder`.
 8. Then, click the `GenerateCode` icon in `CodedUITestBuilder` to generate a test method. Close the `CodedUITestBuilder` and see the generated code for the scroll actions.
 
-![](CodedUI-Automation-Images/RecordedActions-SfScrollFrame.jpg)
+![WinForms showing the record action in scrollframe](CodedUI-Automation-Images/RecordedActions-SfScrollFrame.jpg)
 
 9. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, the `Assertion` window appears. The properties for control is now listed in the Assertion dialog box. Add the assertion by clicking the Generate Code button in `CodedUITestBuilder`.
 
-![](CodedUI-Automation-Images/SfScrollFrmae-Properties.jpg)
+![WinForms showing the properties in scrollframe](CodedUI-Automation-Images/SfScrollFrmae-Properties.jpg)
 
 10. After creating all the tests and assertions, right click the Test method and click `Run Tests` to run the test.
 
-![](CodedUI-Automation-Images/Run test cases.jpg)
+![Winforms showing the run test cases in scrollframe](CodedUI-Automation-Images/Run test cases.jpg)
 
 ## QTP
 

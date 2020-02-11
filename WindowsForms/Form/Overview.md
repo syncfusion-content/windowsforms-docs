@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Form | Syncfusion
-description: This section explains about the form control for windows forms and it's important key features such as title bar and MDI form support
+title: Overview in Windows Form | Syncfusion
+description: This section explains about the it's important key features such as title bar and MDI form support,border customization for windows forms and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
@@ -15,9 +15,9 @@ The `SfForm` is a window control for completing customization of the appearance 
 
 Following are the key features of the SfForm:
 
-* Title bar customization: Customizes the appearance of the title bar and load the user control as a title bar.
+* `Title bar customization` : Customizes the appearance of the title bar and load the user control as a title bar.
 
-* MDI(Multiple Document Interface) customization: Adds MDI child forms and customizes the appearance of MDI child forms.
+* `MDI(Multiple Document Interface) customization` : Adds MDI child forms and customizes the appearance of MDI child forms.
 
 
 ## Choose between different form controls
@@ -71,7 +71,7 @@ Changes the color of the border.
 </tr>
 <tr>
 <td>
-Style.TitleBarHeight
+Style.TitleBar.Height
 </td>
 <td>
 CaptionBarHeight

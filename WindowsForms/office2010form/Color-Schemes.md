@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Color-Schemes | WindowsForms | Syncfusion
-description: color schemes
+title: Color-Schemes in Windows Form | Syncfusion
+description: This section explains about the color schemes, background color in Office2010Form and more details for windows forms.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
@@ -36,7 +36,7 @@ Me.ColorScheme = Office2010Theme.Blue
 
 {% endtabs %}
 
-  ![](Color-Schemes_images/ColorScheme1.png)
+  ![Winforms showing colorscheme blue applied in office2010form](Color-Schemes_images/ColorScheme1.png)
   
 To apply the Managed color scheme `ApplyManagedColors` function from Office2010Colors is used as in the below code snippet.
 
@@ -64,7 +64,7 @@ Office2010Colors.ApplyManagedColors(this, Color.DarkMagenta);
 
 {% endtabs %}
 
-  ![](Color-Schemes_images/ManagedScheme.png)
+  ![Winforms showing colorscheme managed applied in office2007form](Color-Schemes_images/ManagedScheme.png)
 
 ## Background color for Office2010 Form
 
@@ -86,12 +86,12 @@ Me.UseOffice2010SchemeBackColor = True
 
 {% endtabs %}
 
-![](Color-Schemes_images/ColorScheme2.png)
+![Winforms showing background color applied in office2010form](Color-Schemes_images/ColorScheme2.png)
   
   
 ## Applying color schemes
 
-Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the `ApplyAeroTheme` property.
+Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~ApplyAeroTheme.html) property.
 
 Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form.
 
@@ -101,7 +101,7 @@ Aero theme support is available for Office2010Form when used on Windows Vista ma
 
 // Disables Aero Theme on Office2010 Form.
 
-this. ApplyAeroTheme = false;
+this.ApplyAeroTheme = false;
 
 {% endhighlight %}
 
@@ -109,7 +109,7 @@ this. ApplyAeroTheme = false;
 
 ‘Disables Aero Theme on Office2010 Form.
 
-Me. ApplyAeroTheme = false;
+Me.ApplyAeroTheme = false;
 
 {% endhighlight %}
 

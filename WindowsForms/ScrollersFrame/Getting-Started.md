@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential WindowsForms
-description: This section explains on how to add a ScrollersFrame in an application and some of the basic functionalities of it.
+title: Getting Started in Windows Forms ScrollersFrame Control | Syncfusion 
+description: This section explains on how to add a ScrollersFrame in an application and some of the basic functionalities of it and more details.
 platform: WindowsForms
 control: ScrollersFrame
 documentation: ug
@@ -28,9 +28,9 @@ Contains style related properties and functionalities for the ScrollersFrame. <b
 
 ## Attach ScrollersFrame to control
 
-Add a control to the Windows Forms that should be attached with the Office2007Style scrollbars. Select the control in the ScrollersFrame.AttachedTo property.
+Add a control to the Windows Forms that should be attached with the Office2007Style scrollbars. Select the control in the [ScrollersFrame.AttachedTo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame~AttachedTo.html) property.
 
-![](ScrollersFrame_images/ScrollersFrame_img2.jpeg)
+![Winforms showing the attached office2007style scrollbars in scrollframe](ScrollersFrame_images/ScrollersFrame_img2.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -64,11 +64,11 @@ Me.scrollersFrame2.VerticalScroller.ControlsAfter.Add(buttonAdv2)
 {% endhighlight %}
 {% endtabs %}
 
-![](ScrollersFrame_images/ScrollersFrame_img4.jpeg)
+![Winforms showing the added control in scrollframe](ScrollersFrame_images/ScrollersFrame_img4.jpeg)
 
 ## Programmatic scrolling
 
-The horizontal and vertical scrollers has Value property that represents the current position of the scroll box on the scrollbar control at runtime. This value can be changed using the HorizontalSmallChange and VerticalSmallChange properties.
+The horizontal and vertical scrollers has `Value` property that represents the current position of the scroll box on the scrollbar control at runtime. This value can be changed using the `HorizontalSmallChange` and `VerticalSmallChange` properties.
 
 <table>
 <tr>
@@ -78,11 +78,11 @@ Description</th></tr>
 <tr>
 <td>
 HorizontalSmallChange</td><td>
-Gets or sets a value to be added or subtracted from the Value Property, when the horizontal scroll box is moved a small distance. Default value is 1.</td></tr>
+Gets or sets a value to be added or subtracted from the <code>Value</code> Property, when the horizontal scroll box is moved a small distance. Default value is 1.</td></tr>
 <tr>
 <td>
 VerticalSmallChange</td><td>
-Gets or sets a value to be added or subtracted from the Value Property, when the vertical scroll box is moved a small distance. Default value is 1.</td></tr>
+Gets or sets a value to be added or subtracted from the <code>Value</code> Property, when the vertical scroll box is moved a small distance. Default value is 1.</td></tr>
 </table>
 
 {% tabs %}
@@ -96,9 +96,9 @@ Me.scrollersFrame2.HorizontalSmallChange  = 25
 {% endhighlight %}
 {% endtabs %}
 
-# Visual Styles
+## Visual Styles
 
-Visual Styles for the ScrollersFrame control can be edited through the VisualStyle property.	
+Visual Styles for the ScrollersFrame control can be edited through the `VisualStyle` property.	
 
 <table>
 <tr>
@@ -132,7 +132,7 @@ Me.scrollersFrame1.VisualStyle = Syncfusion.Windows.Forms.ScrollBarCustomDrawSty
 {% endhighlight %}
 {% endtabs %}
 
-![](ScrollersFrame_images/ScrollersFrame_img5.jpeg)
+![Winforms showing the visual style applied the office2007 in scrollframe](ScrollersFrame_images/ScrollersFrame_img5.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -143,13 +143,13 @@ Me.scrollersFrame1.OfficeColorScheme = Syncfusion.Windows.Forms.Office2007ColorS
 {% endhighlight %}
 {% endtabs %}
 
-![](ScrollersFrame_images/ScrollersFrame_img6.jpeg)
+![Winforms showing the visual style applied the office2007colorschem in scrollframe](ScrollersFrame_images/ScrollersFrame_img6.jpeg)
 
-![](ScrollersFrame_images/ScrollersFrame_img7.jpeg)
+![Winforms showing the visual style applied the office2007colorschem in scrollframe](ScrollersFrame_images/ScrollersFrame_img7.jpeg)
 
-## Custom colors
+### Custom colors
 
-You can also apply custom colors to the ScrollersFrame by setting the OfficeColorScheme to `Managed` and specify the custom color through the ApplyManagedColors method.
+You can also apply custom colors to the ScrollersFrame by setting the OfficeColorScheme to `Managed` and specify the custom color through the `ApplyManagedColors` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,4 +162,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.LightSkyBlue)
 {% endhighlight %}
 {% endtabs %}
 
-![](ScrollersFrame_images/ScrollersFrame_img8.jpeg)
+![Winforms showing the custom color in scrollframe](ScrollersFrame_images/ScrollersFrame_img8.jpeg)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: This section explains how to work with SfScrollFrame.
+title: Getting-Started in Windows Forms ScrollFrame Control | Syncfusion
+description: Learn about the assembly deployment, how to attach the SfScrollFrame to a ListView Control in Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
@@ -16,10 +16,10 @@ The following list of assembly should be added as reference to use [SfScrollFram
 <table>
 <tr>
 <td>
-{{'Required Assembly'| markdownify }}
+{{'**Required Assembly**'| markdownify }}
 </td>
 <td>
-{{'Description'| markdownify }}
+{{'**Description**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -31,7 +31,7 @@ Syncfusion.Core.WinForms assembly contains the theme related classes for the Syn
 </td>
 </tr>
 </table>
-=======
+
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfscrollframe) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
 ## Attaching SfScrollFrame to a control
@@ -42,7 +42,7 @@ This section describes how to attach the `SfScrollFrame` to a `ListView` Control
 
 The `SfScrollFrame` can be attached to any control through designer by assigning the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Control.html) property.
 
-![](SfScrollFrame_images/SfScrollFrame_img1.jpg)
+![ScrollFrame to a control attached through designer in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img1.jpg)
 
 #### Designer generated code
 
@@ -100,7 +100,7 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfScrollFrame_images/SfScrollFrame_img2.jpg)
+![ScrollFrame to a control attached through code in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img2.jpg)
 
 ### Changing the SmallChange value
 

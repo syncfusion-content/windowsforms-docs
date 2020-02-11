@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | ScrollersFrame | Syncfusion
-description: This section provides an overview of scrollers frame and it's key features in Syncfusion Essential windows forms
+title: Overview in Windows Forms ScrollersFrame Control | Syncfusion
+description: This section provides an overview of scrollers frame and it's key features in Syncfusion Essential windows forms and more details.
 platform: windowsforms
 control: ScrollersFrame
 documentation: ug
@@ -13,6 +13,6 @@ The ScrollersFrame is a component to customize the appearance of scrollbars for 
 
 ## Key feature
 
-* Styling: Supports customizing the appearance of scroll bar and its visual style.
-* Localization: Supports localizing the menu items of scroll bar context menu.
-* Context menu: Supports scrolling the UI through the context menu.
+* `Styling` : Supports customizing the appearance of scroll bar and its visual style.
+* `Localization` : Supports localizing the menu items of scroll bar context menu.
+* `Context menu` : Supports scrolling the UI through the context menu.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MDI Customization| WindowsForms | Syncfusion
-description: MDI Customization
+title: MDI Customization in Windows Form | Syncfusion
+description: This section explains about the MDI form support and customization, appearance and active mdi child for windows forms and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
@@ -44,7 +44,7 @@ child2.Show()
 {% endhighlight %}
 {% endtabs %}
 
-![](MDICustomization_images/MDI_Image1.png)
+![Winforms showing the added the mdi child form](MDICustomization_images/MDI_Image1.png)
 
 ## Appearance
 
@@ -95,7 +95,7 @@ child2.BackColor = ColorTranslator.FromHtml("#EDF3F3")
 {% endhighlight %}
 {% endtabs %}
 
-![](MDICustomization_images/MDI_Image2.png)
+![Winforms showing the mdi customization form](MDICustomization_images/MDI_Image2.png)
 
 ## Getting active MDI child
 
@@ -114,7 +114,7 @@ Dim activeChild As SfForm = TryCast(Me.ActiveMdiChild, SfForm)
 
 By default, the MDI child form will not receive its key events when any control inside the form has focus. This can be changed by enabling the [KeyPreview](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.KeyPreview)&rd=true) property of the child form.
 
-When this property is set to true, the form will receive KeyPress, KeyDown, and KeyUp events. Once the form event handlers have completed the keystroke processing, the keystroke is then assigned to the control with focus.
+When this property is set to `true`, the form will receive `KeyPress`, `KeyDown` and `KeyUp` events. Once the form event handlers have completed the keystroke processing, the keystroke is then assigned to the control with focus.
 
 {% tabs %}
 {% highlight c# %}

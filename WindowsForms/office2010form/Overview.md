@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Office2010Form | Windows Forms | Syncfusion
+title: Overview in Windows Form | Syncfusion
 description: Office2010 Form is Microsoft Office2010 inspired form that supports a wide variety of color schemes, caption bar customization.
 platform: WindowsForms
 control: Office2010 Form

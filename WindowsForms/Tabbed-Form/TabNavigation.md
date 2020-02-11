@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab Navigation | Tabbed Form | WinForms | Syncfusion
-description: This section explains about the navigation controls in SfTabbedForm.
+title: Tab Navigation in Tabbed Form for  Windows Form | Syncfusion
+description: This section explains about the Tabbedform control for windows forms and navigation control in SfTabbedForm and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
@@ -20,7 +20,7 @@ tabbedFormControl.TabPrimitiveMode = TabPrimitiveMode.DropDown Or TabPrimitiveMo
 {% endhighlight %}
 {% endtabs %}  
 
-![Tabbed form](TabPrimitives_images/TabPrimitives_images_img1.gif)
+![Winforms showing the tab navigation in tabbed form](TabPrimitives_images/TabPrimitives_images_img1.gif)
 
 ## TabPrimitiveClick event
 

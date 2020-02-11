@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu| Tabbed Form | WinForms | Syncfusion
-description: This section explains about adding context menu in SfTabbedForm.
+title: Context Menu in Tabbed Form for  Windows Form | Syncfusion
+description: This section explains about the Tabbedform control for windows forms and adding context menu in SfTabbedForm and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
@@ -55,7 +55,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![tabbed form](ContextMenu_Images/ContextMenu_Images_img2.png)
+![Winforms showing the contextmenu in tabbed form](ContextMenu_Images/ContextMenu_Images_img2.png)
 
 ## Customize context menu in tabs like web browser
 
@@ -271,6 +271,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
+![Winforms showing the contextmenu in tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
 
 You can download the sample from following link: [Sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)

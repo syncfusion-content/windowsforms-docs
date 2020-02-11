@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Tabbed Form | WinForms | Syncfusion
-description: Getting Started
+title: Getting Started in Tabbed Form for  Windows Form | Syncfusion
+description: This section explains about the Tabbedform control for windows forms and assembly deployment, form converted into sftabbedform and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The default form can be changed into `SfTabbedForm` by following the given steps:
 
-1) Create a new Windows Forms application in Visual Studio, and refer to the `Syncfusion.Tools.WinForms` assembly.
+1) Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.WinForms` assembly.
 
 2) Include the following namespaces to the directives list.
 
@@ -75,7 +75,7 @@ Me.TabbedFormControl = tabbedFormControl
 
 ## Adding tabs to TabbedForm
 
-To add tabs to form, create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html), and add it to the tabs collection of the `TabbedFormControl`.
+To add tabs to form, create an instance of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and add it to the tabs collection of the `TabbedFormControl`.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ Me.TabbedFormControl = tabbedFormControl
 {% endtabs %}
 
 
-![tabbed form](Getting-Started_images/Getting-Started_img1.png)
+![Winforms showing the added tabs in tabbed form](Getting-Started_images/Getting-Started_img1.png)
 
 ## Show tabs below the title bar
 
@@ -119,5 +119,5 @@ Me.ExtendTabsToTitleBar = False
 {% endtabs %}
 
 
-![tabbed form](Getting-Started_images/Getting-Started_img2.png)
+![WinForms showing the tabs below the title bar in tabbed form](Getting-Started_images/Getting-Started_img2.png)
 

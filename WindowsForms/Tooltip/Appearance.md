@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance of SfToolTip for syncfusion Essential Windows Forms
-description: This section explains the Appearance of the SfToolTip.
+title: Appearance in ToolTip Control for Windows Forms | Syncfusion
+description: Learn about the Appearance of the SfToolTip in Syncfusion WinForms SfToolTip control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
@@ -26,7 +26,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img15.jpeg)
+![Shown the border color and thickness of the tooltip can be customized in winforms tooltip](SfToolTip_images/SfToolTip_img15.jpeg)
 
 
 ## ToolTip Item
@@ -48,7 +48,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img16.jpeg)
+![Shown the tooltipitems can be customized in winforms tooltip](SfToolTip_images/SfToolTip_img16.jpeg)
 
 
 ### Gradient Color
@@ -67,10 +67,10 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img17.jpeg)
+![Shown the gradient background drawing for the tooltipitems in winforms tooltip](SfToolTip_images/SfToolTip_img17.jpeg)
 
 
-**Note**: The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~GradientBrush.html) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~EnableGradientBackground.html) property is set to true.
+N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~GradientBrush.html) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~EnableGradientBackground.html) property is set to true.
 
 ### ToolTipItem Separator
 
@@ -91,7 +91,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img18.jpeg)
+![Shown the separator of the tooltipitems can be customized in winforms tooltip](SfToolTip_images/SfToolTip_img18.jpeg)
 
 
 ## Customizing Appearance based on Control
@@ -113,12 +113,12 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img19.jpeg)
+![Shown the customization appearance of the tooltipitems in winforms tooltip](SfToolTip_images/SfToolTip_img19.jpeg)
 
 
 ## Enabling the Shadow
 
-The shadow of the tooltip can be enabled by setting the ShadowVisible property to `true`.
+The shadow of the tooltip can be enabled by setting the [ShadowVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SfToolTip~ShadowVisible.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ sfToolTip1.ShadowVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img20.jpeg)
+![Shown the shadow of the tooltip items in winforms tooltip](SfToolTip_images/SfToolTip_img20.jpeg)
 
 
 ## ToolTipItem Separator
@@ -148,10 +148,10 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img21.jpeg)
+![Shown the separator of the tooltipitems can be customized in winforms tooltip ](SfToolTip_images/SfToolTip_img21.jpeg)
 
 
-**Note**: The separator line cannot be drawn for the last `ToolTipItem` in the collection, even the separator is enabled.
+N> The separator line cannot be drawn for the last `ToolTipItem` in the collection, even the separator is enabled.
 
 ## Right to Left
 
@@ -172,7 +172,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img22.jpeg)
+![Shown the tooltip can be aligned in RTL in winforms tooltip](SfToolTip_images/SfToolTip_img22.jpeg)
 
 ## Themes
 
@@ -190,7 +190,7 @@ Themes can be applied to the SfToolTip by using the following steps:
 
 ### Load theme assembly
 
-The Syncfusion.Office2016Theme.WinForms assembly should be added as reference to set theme for the SfToolTip in any application.
+The `Syncfusion.Office2016Theme.WinForms` assembly should be added as reference to set theme for the SfToolTip in any application.
 
 Before applying theme to the SfToolTip, required theme assembly should be loaded. 
 
@@ -265,7 +265,7 @@ Me.SfToolTip.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_colorful16.jpg)
+![Office2016colorful theme applied in winforms tooltip](SfToolTip_images/SfToolTip_colorful16.jpg)
 
 #### Office2016White
 
@@ -291,7 +291,7 @@ Me.SfToolTip.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_white16.jpg)
+![Office2016white theme applied in winforms tooltip](SfToolTip_images/SfToolTip_white16.jpg)
 
 #### Office2016DarkGray
 
@@ -317,7 +317,7 @@ Me.SfToolTip.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_darkgray16.jpg)
+![Office2016darkgray theme applied in winforms tooltip](SfToolTip_images/SfToolTip_darkgray16.jpg)
 
 #### Office2016Black
 
@@ -343,5 +343,5 @@ Me.SfToolTip.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_black16.jpeg)
+![Office2016black theme applied in winforms tooltip](SfToolTip_images/SfToolTip_black16.jpeg)
 

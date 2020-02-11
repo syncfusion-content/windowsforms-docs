@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing appearance of winforms scrollframe | Syncfusion
+title: Appearance in Windows Forms ScrollFrame Control | Syncfusion
 description: Learn about the theme support, load theme assembly and changing appearance in Syncfusion WinForms SfScrollFrame control and more details.
 platform: WindowsForms
 control: SfScrollFrame
@@ -9,13 +9,13 @@ documentation: ug
 
 ## Appearance
 
-This section explains how to customize the default appearance of the scrollbars using the style properties. By default, the SfScrollFrame loads the scrollbars with default appearance. 
+This section explains how to customize the default appearance of the scrollbars using the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Style.html) properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
 
 ### Scrollbar appearance
 
-The inner elements of the scrollbar can be customized by using the ScrollBarStyleInfo property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
+The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo_properties.html) property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
 
-The horizontal scrollbar appearance can be customized by using the HorizontalScrollBar.Style property. The ScrollBarStyleInfo contains all the settings that controls the appearance of the scrollbar.
+The horizontal scrollbar appearance can be customized by using the `HorizontalScrollBar.Style` property. The `ScrollBarStyleInfo` contains all the settings that controls the appearance of the scrollbar.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ScrollBarBackColor = Color.LightGr
 {% endhighlight %}
 {% endtabs %}
 
-The vertical scroll bar appearance can be customized by using the VerticalScrollBar.Style property.
+The vertical scroll bar appearance can be customized by using the `VerticalScrollBar.Style` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ScrollBarBackColor = Color.LightGray
 
 ### Changing the Scrollbar thumb width
 
-The size of the scrollbar thumb can be changed by using the [ThumbWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ThumbWidth.html) property of the corresponding [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Style.html) property.
+The size of the scrollbar thumb can be changed by using the [ThumbWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ThumbWidth.html) property of the corresponding `Style` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -84,7 +84,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ThumbWidth = 8;
 {% endtabs %}
 ![Scrollbar thumb  size changed in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img4.jpg)
 
-**Note**: This width can be set maximum to the width and height of the vertical and horizontal scrollbars respectively. 
+N> This width can be set maximum to the width and height of the vertical and horizontal scrollbars respectively. 
 
 ## Disabling the maximum and minimum buttons
 
