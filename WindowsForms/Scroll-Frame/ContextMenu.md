@@ -7,7 +7,7 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in Windows Forms Scroll Frame (SfScrollFrame)
 
 The `SfScrollFrame` supports UI scrolling through the context menu like the Microsoft scrollbars. It appears when right clicking on both the horizontal and vertical scrollbars. You can scroll left, right, top, and bottom of the control by clicking the corresponding context menu options. 
 ![Contextmenu shown in scrollbar in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img7.jpg)

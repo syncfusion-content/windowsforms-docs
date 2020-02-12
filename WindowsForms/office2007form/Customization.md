@@ -7,7 +7,7 @@ control: Office2007 Form
 documentation: ug
 ---
 
-# Caption alignment
+# Customization in Windows Forms Office2007Form
 
 The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionAlign.html) property.
 

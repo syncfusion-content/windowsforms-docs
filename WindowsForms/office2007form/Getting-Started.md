@@ -7,7 +7,7 @@ control: Office2007 Form
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Office2007Form
 
 This section describes how to configure `Office2007Form` control in a Windows Forms application.
 

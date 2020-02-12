@@ -7,7 +7,7 @@ control: SfTabbedForm
 documentation: ug
 ---
 
-# Drag and Drop Tabs
+# Drag and drop tabs in Windows Forms Tabbed Form (SfTabbedForm)
 
 Tabbed Form allows move the tabs from one position to another position by dragging the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~AllowDraggingTabs.html) property to `true`.
 

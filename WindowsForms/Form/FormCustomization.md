@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Form Customization
+# Form Customization in Windows Forms Form (SfForm)
 
 ## Form icon
 

@@ -7,7 +7,7 @@ control: ScrollersFrame
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms ScrollersFrame
 
 This section explains attaching the ScrollersFrame to the controls and its basic functionalities.
 

@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Form (SfForm) Overview
 
 The `SfForm` is a window control for completing customization of the appearance and loading of custom user interface in the Title bar.
 

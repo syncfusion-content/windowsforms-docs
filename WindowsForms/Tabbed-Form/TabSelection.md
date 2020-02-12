@@ -7,7 +7,7 @@ control: SfTabbedForm
 documentation: ug
 ---
 
-# Tab Selection
+# Tab Selection in Windows Forms Tabbed Form (SfTabbedForm)
 
 Tab selection can be done programmatically using the [TabbedFormControl.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedIndex.html) or [TabbedFormControl.SelectedTab](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~SelectedTab.html) properties.
 

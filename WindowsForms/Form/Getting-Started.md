@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Form (SfForm)
 
 ## Assembly Deployment
 

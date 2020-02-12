@@ -7,7 +7,7 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-# Limitation
+# Limitation in Windows Forms Scroll Frame (SfScrollFrame)
 
 ## Applicable controls for setting the ScrollFrame
 

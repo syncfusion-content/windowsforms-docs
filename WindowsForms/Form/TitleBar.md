@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Title Bar
+# Title Bar in Windows Forms Form (SfForm)
 
 ## Title bar height
 

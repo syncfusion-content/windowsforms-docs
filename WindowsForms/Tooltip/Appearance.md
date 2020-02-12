@@ -7,7 +7,7 @@ control: SfToolTip
 documentation: ug
 
 ---
-# Appearance
+# Appearance in Windows Forms Tooltip (SfToolTip)
 
 ## ToolTip Control
 

@@ -7,7 +7,7 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Scroll Frame (SfScrollFrame)
 
 ## Assembly deployment
 

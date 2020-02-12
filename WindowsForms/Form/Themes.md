@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# Themes
+# Themes in Windows Forms Form (SfForm)
 
 SfForm offers the following six built-in themes for professional representation:
 

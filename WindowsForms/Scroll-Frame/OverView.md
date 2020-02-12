@@ -7,7 +7,7 @@ control: SfScrollFrame
 documentation: ug
 ---
 
-# SfScrollFrame
+# Windows Forms Scroll Frame (SfScrollFrame) Overview
 
 ## Overview
 

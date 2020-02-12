@@ -7,7 +7,7 @@ control: SfForm
 documentation: ug
 ---
 
-# MDI Customization
+# MDI Customization in Windows Forms Form (SfForm)
 
 Multiple Document Interface applications allows displaying multiple documents (or forms) in an application at the same time. MDI parent is a form that contains MDI child windows which are the sub-windows. A form can be changed as MDI parent by enabling the [IsMDIContainer](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.ismdicontainer(v=vs.110).aspx) property.
 

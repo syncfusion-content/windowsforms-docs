@@ -7,7 +7,7 @@ control: Office2007 Form
 documentation: ug
 ---
 
-# Color schemes
+# Color Schemes in Windows Forms Office2007Form
 
 Office2007Form supports following office color schemes which can be edited through the `ColorScheme` property.
 

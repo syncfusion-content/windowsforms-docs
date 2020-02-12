@@ -7,7 +7,7 @@ control: Office2010 Form
 documentation: ug
 ---
 
-# Color schemes
+# Color Schemes in Windows Forms Office2010Form (office2010form)
 
 Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
 

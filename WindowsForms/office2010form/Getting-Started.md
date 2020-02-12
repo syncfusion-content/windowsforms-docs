@@ -7,7 +7,7 @@ control: Office2010 Form
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Office2010Form (office2010form)
 
 This section describes how to configure `Office2010Form` control in a Windows Forms application.
 

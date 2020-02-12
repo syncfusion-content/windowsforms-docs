@@ -7,7 +7,7 @@ control: SfTabbedForm
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Tabbed Form (SfTabbedForm) Overview
 
 The tabbed form is used to display tabbed user interface. Users can add any number of tabs and each tab can contain any number of controls. The tabs can be loaded into form's title bar or the tabs can be displayed below the title bar.
 

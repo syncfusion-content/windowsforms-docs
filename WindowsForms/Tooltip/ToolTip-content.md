@@ -7,7 +7,7 @@ control: SfToolTip
 documentation: ug
 
 ---
-# ToolTip Content
+# ToolTip Content in Windows Forms Tooltip (SfToolTip)
 
 ## Setting ToolTipItem
 
