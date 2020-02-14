@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Overview of SfToolTip for syncfusion Essential Windows Forms
+title: Overview in Tooltip Control for Windows Forms | Syncfusion
 description: This section explains about the tooltip component for windows forms and it's important key features such as multiple items, tooltip customization and etc
 platform: windowsforms
 control: SfToolTip
 documentation: ug
 
 ---
-# Overview
+# Windows Forms Tooltip (SfToolTip) Overview
 
-The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control: when resetting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
+The `SfToolTip` appears automatically as a pop-up and shows the information of purpose of the control when resetting the pointer on the control. The control includes the control adding feature that allows an end user to add the user control to the SfToolTip so, end user can customize any ToolTip item in the `SfToolTip`.
 
 ## Key Features
 
-Following are the key features of the `SfToolTip`:
+Following are the key features of the `SfToolTip` :
 
-* Multiple items: Supports adding more tooltip items.
-* Adding controls: Supports loading a control in the tooltip item.
-* ToolTip content customization: Supports customizing the appearance of the tooltip item.
+* `Multiple items` : Supports adding more tooltip items.
+* `Adding controls` : Supports loading a control in the tooltip item.
+* `ToolTip content customization` : Supports customizing the appearance of the tooltip item.
 
 ## Choose between different tooltip controls
 
-Syncfusion WinForms suite comes up with following different tooltips namely:
+Syncfusion WinForms suite comes up with following different tooltips namely :
 
 * [SfToolTip](https://www.syncfusion.com/products/windows-forms/tooltip)
 * [SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)
@@ -32,7 +32,7 @@ Syncfusion WinForms suite comes up with following different tooltips namely:
 
 ### SuperToolTip
 
-[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip) component is used to display text and image with various customization options. This also allows you to customize the back color, fore color, separator, and html text.
+[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip) component is used to display text and image with various customization options. This also allows you to customize the back color, fore color, separator and html text.
 
 ### SfToolTip vs SuperToolTip
 
