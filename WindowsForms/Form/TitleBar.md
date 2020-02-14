@@ -244,7 +244,7 @@ Me.Style.TitleBar.IconBackColor = Color.Olive
 
 ### Caption image
 
-You can change the caption image in title bar by using the [Style.TitleBar.CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImage.html) property.
+You can change the caption image in title bar by using the [CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImage.html) property.
 
 {% tabs %}
 {% highlight c# %}
