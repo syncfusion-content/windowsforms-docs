@@ -223,7 +223,7 @@ Me.Style.BackColor = Color.DarkGray
 
 ### Icon backcolor
 
-Back color of the icon in title bar can be changed by using the [Style.TitleBar.IconBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconBackColor.html) property.
+You can customize the back color of the icon in title bar using the [IconBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconBackColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -240,11 +240,11 @@ Me.Style.TitleBar.IconBackColor = Color.Olive
 {% endhighlight %}
 {% endtabs %}
 
-![Icon backcolor changed for titlebar in SfFrom](TitleBar_images/TitleBar_Image7.png)
+![Back color of icon in title bar is changed for windows forms SfForm](TitleBar_images/TitleBar_Image7.png)
 
 ### Caption image
 
-You can set the caption image of the title bar by using the [Style.TitleBar.CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImage.html) property.
+You can change the caption image in title bar by using the [Style.TitleBar.CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImage.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -261,11 +261,11 @@ Me.Style.TitleBar.CaptionImage = SystemIcons.Error.ToBitmap()
 {% endhighlight %}
 {% endtabs %}
 
-![Caption image set for titlebar in SfFrom](TitleBar_images/TitleBar_Image8.png)
+![Caption image in titlebar is changed for windows forms SfFrom](TitleBar_images/TitleBar_Image8.png)
 
 ### Caption image location
 
-You can set the caption image location in the title bar by using the [Style.TitleBar.CaptionImageLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImageLocation.html) property.
+You can change the location of the caption image in title bar by using the [CaptionImageLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImageLocation.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -284,7 +284,7 @@ Me.Style.TitleBar.CaptionImageLocation = New Point(40, 5)
 
 ### Padding
 
-Padding of the title bar can be changed by using the [Style.TitleBar.Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~Padding.html) property.
+You can change the padding in title bar by using the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~Padding.html) property.
 
 {% tabs %}
 {% highlight c# %}
