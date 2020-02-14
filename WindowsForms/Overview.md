@@ -112,7 +112,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/skinmanager/getting-started">Skins</a>
+<p><a href="https://help.syncfusion.com/windowsforms/skins/getting-started">Skins</a>
 <small> - SkinManager</small></p>
 </td>
 <td/>
