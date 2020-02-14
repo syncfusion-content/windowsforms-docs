@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| WindowsForms | Syncfusion
-description: Getting Started
+title: Getting Started in Windows Form | Syncfusion
+description: This section explains about the assembly deployment, title bar and border customization, loading user control to title bar for windows forms and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Form (SfForm)
 
 ## Assembly Deployment
 
@@ -44,7 +44,7 @@ public partial class Form1 : SfForm
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Winforms showing the form from the sfform](Getting-Started_images/Getting-Started_img1.png)
 
 ## Title Bar Customization
 
@@ -75,7 +75,7 @@ this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Winforms showing the titlebar customization form](Getting-Started_images/Getting-Started_img2.png)
 
 ## Border Customization
 
@@ -90,7 +90,7 @@ this.Style.InactiveBorder = new Pen(Color.Gray, 5);
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Winforms showing the border customization form](Getting-Started_images/Getting-Started_img3.png)
 
 ## Loading User Control to the Title Bar
 
@@ -112,5 +112,5 @@ this.TitleBarTextControl = searchPanel;
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Winforms showing the loaded user control to the title bar form](Getting-Started_images/Getting-Started_img4.png)
 

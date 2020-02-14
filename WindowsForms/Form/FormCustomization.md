@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Form Customization| WindowsForms | Syncfusion
-description: Form Customization
+title: Form Customization in Windows Form | Syncfusion
+description: This section explains about the form customization like icon, alignment, border and shadow effect for windows forms and more details. 
 platform: WindowsForms
 control: SfForm
 documentation: ug
 ---
 
-# Form Customization
+# Form Customization in Windows Forms Form (SfForm)
 
 ## Form icon
 
