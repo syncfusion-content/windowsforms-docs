@@ -550,48 +550,43 @@ You can add the new row programmatically from a DataTable to the SfDataGrid by c
 {% tabs %}
 {% highlight c# %}
 
-private void button1_Click(object sender, System.EventArgs e)
-		{
-            DataTable gridDataTable = this.sfDataGrid.DataSource as DataTable;
-            if (gridDataTable == null || this.sfDataGrid.View == null)
-                return;
+DataTable gridDataTable = this.sfDataGrid.DataSource as DataTable;
+if (gridDataTable == null || this.sfDataGrid.View == null)
+    return;
 
-            // Creates a new row.
-            System.Data.DataRow addNewRow = sfDataGrid.View.AddNew() as System.Data.DataRow;
+// Creates a new row.
+System.Data.DataRow addNewRow = sfDataGrid.View.AddNew() as System.Data.DataRow;
 
-            // Commits the newly created row.
-            sfDataGrid.View.CommitNew();
+// Commits the newly created row.
+sfDataGrid.View.CommitNew();
 
-            // Initialize the values of first row to the newly added row.
-            addNewRow.SetField(0, gridDataTable.Rows[0][0]);
-            addNewRow.SetField(1, gridDataTable.Rows[0][1]);
-            addNewRow.SetField(2, gridDataTable.Rows[0][2]);
-            addNewRow.SetField(3, gridDataTable.Rows[0][3]);
-            addNewRow.SetField(4, gridDataTable.Rows[0][4]);
-		}		
+// Initialize the values of first row to the newly added row.
+addNewRow.SetField(0, gridDataTable.Rows[0][0]);
+addNewRow.SetField(1, gridDataTable.Rows[0][1]);
+addNewRow.SetField(2, gridDataTable.Rows[0][2]);
+addNewRow.SetField(3, gridDataTable.Rows[0][3]);
+addNewRow.SetField(4, gridDataTable.Rows[0][4]);
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles button1.Click
-			Dim gridDataTable As DataTable = TryCast(Me.sfDataGrid.DataSource, DataTable)
-			If gridDataTable Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
-				Return
-			End If
+Dim gridDataTable As DataTable = TryCast(Me.sfDataGrid.DataSource, DataTable)
+If gridDataTable Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
+	Return
+End If
 
-			' Creates a new row.
-			Dim addNewRow As System.Data.DataRow = TryCast(sfDataGrid.View.AddNew(), System.Data.DataRow)
+' Creates a new row.
+Dim addNewRow As System.Data.DataRow = TryCast(sfDataGrid.View.AddNew(), System.Data.DataRow)
 
-			' Commits the newly created row.
-			sfDataGrid.View.CommitNew()
+' Commits the newly created row.
+sfDataGrid.View.CommitNew()
 
-			' Initialize the values of first row to the newly added row.
-			addNewRow.SetField(0, gridDataTable.Rows(0)(0))
-			addNewRow.SetField(1, gridDataTable.Rows(0)(1))
-			addNewRow.SetField(2, gridDataTable.Rows(0)(2))
-			addNewRow.SetField(3, gridDataTable.Rows(0)(3))
-			addNewRow.SetField(4, gridDataTable.Rows(0)(4))
-		End Sub
+' Initialize the values of first row to the newly added row.
+addNewRow.SetField(0, gridDataTable.Rows(0)(0))
+addNewRow.SetField(1, gridDataTable.Rows(0)(1))
+addNewRow.SetField(2, gridDataTable.Rows(0)(2))
+addNewRow.SetField(3, gridDataTable.Rows(0)(3))
+addNewRow.SetField(4, gridDataTable.Rows(0)(4))
 
 {% endhighlight %}
 {% endtabs %}
