@@ -1,14 +1,14 @@
 ---
 layout: post
 title: DataManipulation | DataGrid | WinForms | Syncfusion
-description: This section explains about the data manipulation support in SfDataGrid.
+description: Learn about data operations to manipulate the data in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 
 ---
 
-# Data Manipulation
+# Data Manipulation in Windows Forms DataGrid (SfDataGrid)
 
 SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) property.
 
@@ -543,6 +543,60 @@ End Sub
 {% endtabs %}
 
 ![Winforms datagrid showing AddNewRow Support in Master-Details View](DataManipulation_images/AddNewRow_img9.png)
+
+### To add the new row programmatically when DataGrid bound to DataTable
+You can add the new row programmatically from a DataTable to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+
+{% tabs %}
+{% highlight c# %}
+
+private void button1_Click(object sender, System.EventArgs e)
+		{
+            DataTable gridDataTable = this.sfDataGrid.DataSource as DataTable;
+            if (gridDataTable == null || this.sfDataGrid.View == null)
+                return;
+
+            // Creates a new row.
+            System.Data.DataRow addNewRow = sfDataGrid.View.AddNew() as System.Data.DataRow;
+
+            // Commits the newly created row.
+            sfDataGrid.View.CommitNew();
+
+            // Initialize the values of first row to the newly added row.
+            addNewRow.SetField(0, gridDataTable.Rows[0][0]);
+            addNewRow.SetField(1, gridDataTable.Rows[0][1]);
+            addNewRow.SetField(2, gridDataTable.Rows[0][2]);
+            addNewRow.SetField(3, gridDataTable.Rows[0][3]);
+            addNewRow.SetField(4, gridDataTable.Rows[0][4]);
+		}		
+
+{% endhighlight %}
+{% highlight vb %}
+
+Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles button1.Click
+			Dim gridDataTable As DataTable = TryCast(Me.sfDataGrid.DataSource, DataTable)
+			If gridDataTable Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
+				Return
+			End If
+
+			' Creates a new row.
+			Dim addNewRow As System.Data.DataRow = TryCast(sfDataGrid.View.AddNew(), System.Data.DataRow)
+
+			' Commits the newly created row.
+			sfDataGrid.View.CommitNew()
+
+			' Initialize the values of first row to the newly added row.
+			addNewRow.SetField(0, gridDataTable.Rows(0)(0))
+			addNewRow.SetField(1, gridDataTable.Rows(0)(1))
+			addNewRow.SetField(2, gridDataTable.Rows(0)(2))
+			addNewRow.SetField(3, gridDataTable.Rows(0)(3))
+			addNewRow.SetField(4, gridDataTable.Rows(0)(4))
+		End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download sample [here](https://github.com/SyncfusionExamples/how-to-add-a-new-row-in-winforms-datagrid-when-datagrid-bound-to-datatable).
 
 ## Delete Row
 SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. The deleting support can be enabled by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~AllowDeleting.html) property to true. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
