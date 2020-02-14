@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WinForms Skin Manager | Themes | Windows Forms | Syncfusion
-description: How to apply theme or skin for a control or application using Windows Forms skin manager.
+description: Learn here about how to apply theme or skin for a control or application using Windows Forms skin manager.
 platform: WindowsForms
 control: SkinManager
 documentation: ug

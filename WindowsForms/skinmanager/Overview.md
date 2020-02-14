@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-# Overview
+# Overview of SkinManager
 
 Essential Tools for Windows Forms provides support to apply Office2007 Style for an application with its child controls. This feature enables you to easily apply uniform style for all the child controls in the application.
 
