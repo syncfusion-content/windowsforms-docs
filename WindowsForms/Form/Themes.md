@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theme in winforms form | Syncfusion
-description: Learn about theme support in Syncfusion WinForms Form (SfForm) control and more details.
+title: Themes in Windows Form | Syncfusion
+description: This section explains about the load theme assembly, different theme support in Syncfusion WinForms Form (SfForm) control and more details.
 platform: windowsforms
 control: SfForm
 documentation: ug
 ---
 
-# Themes
+# Themes in Windows Forms Form (SfForm)
 
 SfForm offers the following six built-in themes for professional representation:
 
@@ -129,7 +129,7 @@ This option helps to set the Office2016Colorful theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img1.png)
+![Office2016Colorful theme applied in winforms sfform](Themes_images/Themes_img1.png)
 
 ### Office2016White
 
@@ -144,7 +144,7 @@ This option helps to set the Office2016White theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img2.png)
+![Office2016White theme applied in winforms sfform](Themes_images/Themes_img2.png)
 
 ### Office2016DarkGray
 
@@ -159,7 +159,7 @@ This option helps to set the Office2016DarkGray theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img3.png)
+![Office2016DarkGray theme applied in winforms sfform](Themes_images/Themes_img3.png)
 
 ### Office2016Black
 
@@ -174,7 +174,7 @@ This option helps to set the Office2016Black theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img4.png)
+![Office2016Black theme applied in winforms sfform](Themes_images/Themes_img4.png)
 
 ### Office2019Colorful
 
@@ -189,7 +189,7 @@ This option helps to set the Office2019Colorful theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img5.png)
+![Office2019Colorful theme applied in winforms sfform](Themes_images/Themes_img5.png)
 
 ### HighContrastBlack
 
@@ -204,4 +204,4 @@ This option helps to set the HighContrastBlack theme.
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm](Themes_images/Themes_img6.png)
+![Highcontrastblack theme applied in winforms sfform](Themes_images/Themes_img6.png)

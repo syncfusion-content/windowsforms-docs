@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag and drop tabs in WinForms TabbedForm | Syncfusion
-description: Learn about the drag-and-drop support of Syncfusion winform TabbedForm control, which is used to rearrange the tabs by dragging the tabs.
+title: Drag and drop tabs in Tabbed Form for  Windows Form | Syncfusion
+description: Learn about the drag-and-drop support of Syncfusion winform TabbedForm control, which is used to rearrange the tabs by dragging the tabs and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug
 ---
 
-# Drag and Drop Tabs
+# Drag and drop tabs in Windows Forms Tabbed Form (SfTabbedForm)
 
 Tabbed Form allows move the tabs from one position to another position by dragging the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~AllowDraggingTabs.html) property to `true`.
 
@@ -20,7 +20,7 @@ tabbedFormControl.AllowDraggingTabs = True
 {% endhighlight %}
 {% endtabs %}
 
-![tabbed form](DragandDroptabs_images/DragandDroptabs_images_img1.gif)
+![Winforms showing the drag and drop in tabbed form](DragandDroptabs_images/DragandDroptabs_images_img1.gif)
 
 ## Cancel tab dragging
 

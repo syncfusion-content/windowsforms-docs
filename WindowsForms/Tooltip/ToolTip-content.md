@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTipItems in SfToolTip for syncfusion Essential Windows Forms
-description: This section explains on how to add the ToolTipItems in SfToolTip.
+title: ToolTipItems in ToolTip Control for Windows Forms | Syncfusion
+description: Learn about the how to add the ToolTipItems in Syncfusion WinForms SfToolTip control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
 
 ---
-# ToolTip Content
+# ToolTip Content in Windows Forms Tooltip (SfToolTip)
 
 ## Setting ToolTipItem
 
@@ -60,7 +60,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img11.jpeg)
+![Shown tooltipitems spacing between items in winforms tooltip](SfToolTip_images/SfToolTip_img11.jpeg)
 
 
 ## Adding Image into a ToolTip
@@ -90,10 +90,10 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img12.jpeg)
+![Shown added images into a tooltip in winforms tooltip](SfToolTip_images/SfToolTip_img12.jpeg)
 
 
-**Note**: The [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~Image.html) property is considered as high priority, when both `Image` and `ImageList` are initialized. 
+N> The [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~Image.html) property is considered as high priority, when both `Image` and `ImageList` are initialized. 
 
 ### Changing Image Alignment of the ToolTipItem
 
@@ -125,10 +125,10 @@ toolTipItem1.Style.ImageSize = new Size(100, 100);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img13.jpeg)
+![Shown images size of the tooltp items in winforms tooltip](SfToolTip_images/SfToolTip_img13.jpeg)
 
 
-**Note**: If the [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~ImageSize.html) property is initialized, default size value (32, 32) will be taken as the image size, and would not consider the Image.Size and ImageList.Size for image size.
+N> If the [ImageSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~ImageSize.html) property is initialized, default size value (32, 32) will be taken as the image size, and would not consider the `Image.Size` and `ImageList.Size` for image size.
 
 ### Setting Spacing between Image and Text
 
@@ -149,7 +149,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img14.jpeg)
+![Shown the distance between text and images in tooltipitems in winforms tooltip](SfToolTip_images/SfToolTip_img14.jpeg)
 
 
 ## Adding Custom User Control into a ToolTip

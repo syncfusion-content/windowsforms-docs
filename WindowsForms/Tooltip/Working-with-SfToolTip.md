@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of SfToolTip for syncfusion Essential Windows Forms
-description: This section explains on how to customize the settings of SfToolTip.
+title: Customization in ToolTip Control for Windows Forms | Syncfusion
+description: Learn about the how to customize the settings in Syncfusion WinForms SfToolTip control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
@@ -90,7 +90,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img23.jpeg)
+![Location of the tooltip to be shown can be customized in winforms tooltip](SfToolTip_images/SfToolTip_img23.jpeg)
 
 
 ## Setting Minimum and Maximum Widths
@@ -107,7 +107,7 @@ toolTipInfo1.MaxWidth = 500;
 {% endhighlight %}
 {% endtabs %}
 
-**Note**: The width of the tooltip will be initialized to `MinWidth`, if the width is lesser than `MinWidth`. The width of the tooltip will be initialized to `MaxWidth`, if the width exceeds the `MaxWidth`.
+N> The width of the tooltip will be initialized to `MinWidth`, if the width is lesser than `MinWidth`. The width of the tooltip will be initialized to `MaxWidth`, if the width exceeds the `MaxWidth`.
 
 ## Custom Drawing of ToolTip
 
@@ -138,6 +138,6 @@ private void SfToolTip1_DrawToolTipItem(object sender, DrawToolTipItemEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![](SfToolTip_images/SfToolTip_img24.jpeg)
+![Custom drawing tooltip shown in winforms tooltip](SfToolTip_images/SfToolTip_img24.jpeg)
 
 

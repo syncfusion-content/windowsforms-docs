@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Offcie2010-Form-Caption-Align | WindowsForms | Syncfusion
-description: offcie2010 form caption align
+title: Caption-Settings in Windows Form | Syncfusion
+description: This section explains about the caption settings in Office2010Form and more details for windows forms.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 ## Caption alignment
 
-The Form caption can be aligned to the left, right, or center by using the `CaptionAlign` property.
+The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~CaptionAlign.html) property.
 
 {% tabs %}
 
@@ -27,11 +27,11 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 {% endtabs %}
 
-![](Caption-Settings_images/CaptionAlignment.png)
+![Winforms showing caption alignment applied in office2010form](Caption-Settings_images/CaptionAlignment.png)
 
 ## Caption font
 
-Office2010Form's caption Font can be customized through `CaptionFont` property.
+Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~CaptionFont.html) property.
 
 {% tabs %}
 
@@ -49,12 +49,12 @@ Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.Fo
 
 {% endtabs %}
 
-![](Caption-Settings_images/CaptionFont.png)
+![Winforms showing caption font applied in office2010form](Caption-Settings_images/CaptionFont.png)
 
 
 ## Caption fore color
 
-The color of the caption text can be customized using the `CaptionForeColor` property.
+The color of the caption text can be customized using the [CaptionForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~CaptionForeColor.html) property.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ Me.CaptionForeColor = Color.Pink
 
 {% endtabs %}
 
-![](Caption-Settings_images/CaptionForeColor.png)
+![Winforms showing caption font color applied in office2010form](Caption-Settings_images/CaptionForeColor.png)
 
 ## Caption bar height
 
@@ -98,13 +98,13 @@ Me. CaptionBarHeight = 50
 
 {% endtabs %}
 
-![](Caption-Settings_images/CaptionBarHeight.png)
+![Winforms showing caption bar height applied in office2010form](Caption-Settings_images/CaptionBarHeight.png)
 
 
 
 ## Help button support
 
-Help Button property is used to show the `HelpButton` in the caption box of the form.
+[HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers+LanguageColoringConfigurationDialog~HelpButton.html) property is used to show the `HelpButton` in the caption box of the form.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ Help Button property is used to show the `HelpButton` in the caption box of the 
 
 {% endtabs %}
 
-![](Caption-Settings_images/HelpButton.png)
+![Winforms showing helpbutton applied in office2010form](Caption-Settings_images/HelpButton.png)
 
 ## Right to left
 
@@ -152,7 +152,7 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 {% endtabs %}
 
-![](Caption-Settings_images/rtlsupport.png)
+![Winforms showing RTL applied in office2010form](Caption-Settings_images/rtlsupport.png)
 
 ## Disabling Office2010Style
 
@@ -176,4 +176,4 @@ Me.DisableOffice2010Style = true
 {% endtabs %}
 
 
-![](Caption-Settings_images/image1.png)
+![Winforms showing disabledoffice2010style in office2007form](Caption-Settings_images/image1.png)
