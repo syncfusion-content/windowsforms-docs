@@ -281,22 +281,3 @@ Me.Style.TitleBar.CaptionImageLocation = New Point(40, 5)
 
 {% endhighlight %}
 {% endtabs %}
-
-### Padding
-
-You can change the padding in title bar by using the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~Padding.html) property.
-
-{% tabs %}
-{% highlight c# %}
-
-//Sets the padding of the title bar.
-this.Style.TitleBar.Padding = new Padding(50);
-
-{% endhighlight %}
-{% highlight vb %}
-
-'Sets the padding of the title bar.
-Me.Style.TitleBar.Padding = New Padding(50)
-
-{% endhighlight %}
-{% endtabs %}
