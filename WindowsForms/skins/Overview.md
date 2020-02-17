@@ -9,14 +9,18 @@ documentation: ug
 
 # Overview of SkinManager
 
-Essential Tools for Windows Forms provides support to apply Office2007 Style for an application with its child controls. This feature enables you to easily apply uniform style for all the child controls in the application.
+The WinForms Skin Manager library provides support to set a theme for all Syncfusion controls in an entire application to maintain a common user interface appearance. It provides support for the following themes.
 
-The Skin Manager provides support for the following themes:
+* Office2007 (Blue, Black, Silver and Managed)
+* Office2010 (Blue, Black, Silver and Managed)
+* Office2013 (White, Dark Gray, Black and Colorful)
+* Office2016 (White, Dark Gray, Black and Colorful)
+* Office2019 (Colorful)
+* Metro
 
-* Office 2007 Blue
-* Office 2007 Black
-* Office 2007 Silver
-* Managed
+This feature enables you to easily apply uniform style for all the child controls in the application.
+
+![Overview of SkinManager](skin_images/overview.png)
 
 ## IT scenarios
 
@@ -25,8 +29,6 @@ When you create an application with multiple controls, you can apply uniform col
 Properties and Methods Tables for Skin Manager 
 
 ### Properties
-
-Property Table
 
 <table>
 <tr>
@@ -51,9 +53,8 @@ NA</td><td>
 Enum  </td><td>
 NA</td></tr>
 </table>
-Methods
 
-Methods Table
+### Methods
 
 <table>
 <tr>
