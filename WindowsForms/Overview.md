@@ -38,7 +38,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <a href="https://help.syncfusion.com/windowsforms/grid/getting-started">Grid Control</a>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/pivotgrid/getting-started">Pivot Grid</a>
+<p><a href="https://help.syncfusion.com/windowsforms/pivot-grid/getting-started">Pivot Grid</a>
 <small> - PivotGridControl</small></p>
 </td>
 </tr>
@@ -48,7 +48,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <a href="https://help.syncfusion.com/windowsforms/gridgrouping/getting-started">GridGroupingControl</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gridlist/getting-started">GridListControl</a>
+<a href="https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started">GridListControl</a>
 </td>
 <td/>
 </tr>
@@ -74,26 +74,26 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfsmithchart/gettingstarted">Smith Chart</a>
+<p><a href="https://help.syncfusion.com/windowsforms/smith-chart/gettingstarted">Smith Chart</a>
 <small> - SfSmithChart</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gauge/radial-gauge">Radial Gauge</a>
+<a href="https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge">Radial Gauge</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gauge/digital-gauge">Digital Gauge</a>
+<a href="https://help.syncfusion.com/windowsforms/radial-gauge/digital-gauge">Digital Gauge</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gauge/linear-gauge">Linear Gauge</a>
+<a href="https://help.syncfusion.com/windowsforms/radial-gauge/linear-gauge">Linear Gauge</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/pivotchart/getting-started">Pivot Chart</a>
+<a href="https://help.syncfusion.com/windowsforms/pivot-chart/getting-started">Pivot Chart</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/bulletgraph/getting-started">Bullet Graph</a>
+<a href="https://help.syncfusion.com/windowsforms/bullet-graph/getting-started">Bullet Graph</a>
 </td>
 </tr>
 
@@ -127,7 +127,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/dockingmanager/getting-started">Docking Manager</a>
+<a href="https://help.syncfusion.com/windowsforms/docking-manager/getting-started">Docking Manager</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/carousel/getting-started">Carousel</a>
@@ -154,20 +154,20 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <a href="https://help.syncfusion.com/windowsforms/layoutmanagers/gridbaglayout/getting-started">Grid Bag Layout</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/tilelayout/getting-started">Tile Layout</a>
+<a href="https://help.syncfusion.com/windowsforms/tile-layout/getting-started">Tile Layout</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gradientpanel/getting-started">GradientPanel</a>
+<a href="https://help.syncfusion.com/windowsforms/gradient-panel/getting-started">GradientPanel</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/popupcontrolcontainer/getting-started">Popup</a>
+<p><a href="https://help.syncfusion.com/windowsforms/popup/getting-started">Popup</a>
 <small> - PopupControlContainer</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gradientlabel/getting-started">Gradient Label</a>
+<a href="https://help.syncfusion.com/windowsforms/gradient-label/getting-started">Gradient Label</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/popupmenu/getting-started">PopupMenu</a>
@@ -176,7 +176,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/splitcontaineradv/creating-splitcontaineradv">SplitContainer</a>
+<p><a href="https://help.syncfusion.com/windowsforms/splitcontainer/creating-splitcontaineradv">SplitContainer</a>
 <small> - SplitContainerAdv</small></p>
 </td>
 <td>
@@ -193,21 +193,21 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/pdfviewer/getting-started">PDF Viewer</a>
+<p><a href="https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started">PDF Viewer</a>
 <small> - PdfViewerControl</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/spreadsheet/getting-started">Spreadsheet</a>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/syntaxeditor/getting-started">Syntax Editor</a>
+<p><a href="https://help.syncfusion.com/windowsforms/syntax-editor/getting-started">Syntax Editor</a>
 <small> - EditControl</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/htmlui/getting-started">HTML Viewer</a>
+<p><a href="https://help.syncfusion.com/windowsforms/html-viewer/getting-started">HTML Viewer</a>
 <small> - HTMLUIControl</small></p>
 </td>
 <td/>
@@ -253,11 +253,11 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/tabcontroladv/getting-started">TabControl</a>
+<p><a href="https://help.syncfusion.com/windowsforms/tabcontrol/getting-started">TabControl</a>
 <small> - TabControlAdv</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/ribboncontroladv/getting-started">Ribbon</a>
+<p><a href="https://help.syncfusion.com/windowsforms/ribbon/getting-started">Ribbon</a>
 <small> - RibbonControlAdv</small></p>
 </td>
 <td>
@@ -272,17 +272,17 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <small> - NavigationView</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/contextmenustripex/getting-started">ContextMenuStrip</a>
+<p><a href="https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started">ContextMenuStrip</a>
 <small> - ContextMenuStripEx</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/navigationdrawer/getting-started">Navigation Drawer</a>
+<a href="https://help.syncfusion.com/windowsforms/navigation-drawer/getting-started">Navigation Drawer</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/menus/getting-started">Menu</a>
+<p><a href="https://help.syncfusion.com/windowsforms/menu/getting-started">Menu</a>
 <small> - MainFrameBarManager</small></p>
 </td>
 <td>
@@ -290,20 +290,20 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <small> - GroupBar</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/multicolumntreeview/getting-started">MultiColumn TreeView</a>
+<a href="https://help.syncfusion.com/windowsforms/multicolumn-treeview/getting-started">MultiColumn TreeView</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfscrollframe/gettingstarted">Scroll Frame</a>
+<p><a href="https://help.syncfusion.com/windowsforms/scroll-frame/gettingstarted">Scroll Frame</a>
 <small> - SfScrollFrame</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/scrollersframe/getting-started">ScrollersFrame</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/gridrecordnavigation/getting-started">Record Navigation Control</a>
+<a href="https://help.syncfusion.com/windowsforms/gridrecordnavigationcontrol/getting-started">Record Navigation Control</a>
 </td>
 </tr>
 
@@ -313,23 +313,23 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <small> - SplitterControl</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/tabsplittercontainer/gettingstarted">Tab Splitter Container</a>
+<a href="https://help.syncfusion.com/windowsforms/tab-splitter-container/gettingstarted">Tab Splitter Container</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/treenavigator/getting-started">Tree Navigator</a>
+<a href="https://help.syncfusion.com/windowsforms/tree-navigator/getting-started">Tree Navigator</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/radialmenu/getting-started">Radial Menu</a>
+<a href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Menu</a>
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a>
 <small> - XPToolbar</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/wizard/getting-started">Wizard Control</a>
+<a href="https://help.syncfusion.com/windowsforms/wizard-control/getting-started">Wizard Control</a>
 </td>
 </tr>
 
@@ -351,25 +351,25 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/maskededitbox/getting-started">MaskedTextBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started">MaskedTextBox</a>
 <small> - MaskedEditBox</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/autocomplete/getting-started">AutoComplete</a>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/checkboxadv/getting-started">CheckBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/checkbox/getting-started">CheckBox</a>
 <small> - CheckBoxAdv</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/colorpickerbutton/getting-started">Color Picker DropDown</a>
+<p><a href="https://help.syncfusion.com/windowsforms/color-picker-dropdown/getting-started">Color Picker DropDown</a>
 <small> - ColorPickerButton</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/colorpickeruiadv/getting-started">Color Picker</a>
+<p><a href="https://help.syncfusion.com/windowsforms/color-picker/getting-started">Color Picker</a>
 <small> - ColorpickerUIAdv</small></p>
 </td>
 <td>
@@ -379,46 +379,46 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/doubletextbox/getting-started">DoubleTextBox</a>
+<a href="https://help.syncfusion.com/windowsforms/double-textbox/getting-started">DoubleTextBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/integertextbox/getting-started">IntegerTextBox</a>
+<a href="https://help.syncfusion.com/windowsforms/integer-textbox/getting-started">IntegerTextBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/percenttextbox/getting-started">PercentTextBox</a>
+<a href="https://help.syncfusion.com/windowsforms/percent-textbox/getting-started">PercentTextBox</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfnumerictextbox/gettingstarted">Numeric TextBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted">Numeric TextBox</a>
 <small>- SfNumericTextBox</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/currencyedit/getting-started">CurrencyEdit</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/currencytextbox/getting-started">CurrencyTextBox</a>
+<a href="https://help.syncfusion.com/windowsforms/currency-textbox/getting-started">CurrencyTextBox</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/radiobuttonadv/getting-started">Radio Button</a>
+<p><a href="https://help.syncfusion.com/windowsforms/radio-button/getting-started">Radio Button</a>
 <small> - RadioButtonAdv</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/numericupdownext/getting-started">NumericUpdown</a>
+<p><a href="https://help.syncfusion.com/windowsforms/numericupdown/getting-started">NumericUpdown</a>
 <small> - NumericUpDownExt</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/domainupdownext/getting-started">DomainUpDownExt</a>
+<a href="https://help.syncfusion.com/windowsforms/domain-updown/getting-started">DomainUpDownExt</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/textboxext/getting-started">TextBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/textbox/getting-started">TextBox</a>
 <small> - TextBoxExt</small></p>
 </td>
 <td>
@@ -426,26 +426,26 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <small> - TrackBarEx</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/spellcheckeradv/getting-started">Spell Checker</a>
+<p><a href="https://help.syncfusion.com/windowsforms/spell-checker/getting-started">Spell Checker</a>
 <small> - SpellCheckerAdv</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/folderbrowser/getting-started">Folder Browser</a>
+<a href="https://help.syncfusion.com/windowsforms/folder-browser/getting-started">Folder Browser</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/radialslider/getting-started">Radial Slider</a>
+<a href="https://help.syncfusion.com/windowsforms/radial-menu/getting-started">Radial Slider</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/rangeslider/getting-started">Range Slider</a>
+<a href="https://help.syncfusion.com/windowsforms/range-slider/getting-started">Range Slider</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/rating/getting-started">Rating Control</a>
+<a href="https://help.syncfusion.com/windowsforms/rating-control/getting-started">Rating Control</a>
 </td>
 <td/>
 <td/>
@@ -459,38 +459,38 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfform/getting-started">Form</a>
+<p><a href="https://help.syncfusion.com/windowsforms/form/getting-started">Form</a>
 <small> - SfForm</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sftabbedform/getting-started">Tabbed Form</a>
+<p><a href="https://help.syncfusion.com/windowsforms/tabbed-form/getting-started">Tabbed Form</a>
 <small> - SfTabbedFormControl</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/hubtile/getting-started">Hub Tile</a>
+<a href="https://help.syncfusion.com/windowsforms/hub-tile/getting-started">Hub Tile</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/messageboxadv/getting-started">MessageBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/messagebox/getting-started">MessageBox</a>
 <small> - MessageBoxAdv</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/metroform/getting-started">Metro Form</a>
+<a href="https://help.syncfusion.com/windowsforms/metro-form/getting-started">Metro Form</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/bannertextprovider/getting-started">BannerTextProvider</a>
+<a href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/splash/getting-started">Splash Screen</a>
+<p><a href="https://help.syncfusion.com/windowsforms/splash-screen/getting-started">Splash Screen</a>
 <small> - SplashControl</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/splashpanel/getting-started">SplashPanel</a>
+<a href="https://help.syncfusion.com/windowsforms/splash-panel/getting-started">SplashPanel</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/office2007form/getting-started">Office 2007 Form</a>
@@ -502,18 +502,18 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <a href="https://help.syncfusion.com/windowsforms/office2010form/getting-started">Office2010Form</a>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/statusstripex/statusstripex">StatusStrip</a>
+<p><a href="https://help.syncfusion.com/windowsforms/statusstrip/statusstripex">StatusStrip</a>
 <small> - StatusStripEx</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sftooltip/gettingstarted">Tooltip</a>
+<p><a href="https://help.syncfusion.com/windowsforms/tooltip/gettingstarted">Tooltip</a>
 <small> - SfTooltip</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/statusbaradv/getting-started">Status Bar</a>
+<p><a href="https://help.syncfusion.com/windowsforms/status-bar/getting-started">Status Bar</a>
 <small> - StatusBarAdv</small></p>
 </td>
 <td>
@@ -526,7 +526,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/progressbaradv/creating-progressbaradv">Progress Bar</a>
+<p><a href="https://help.syncfusion.com/windowsforms/progress-bar/creating-progressbaradv">Progress Bar</a>
 <Small> - ProgressBarAdv</small></p>
 </td>
 <td/>
@@ -541,11 +541,11 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfcombobox/gettingstarted">ComboBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/combobox/gettingstarted">ComboBox</a>
 <small> - SfComboBox</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sflistview/gettingstarted">ListView</a>
+<p><a href="https://help.syncfusion.com/windowsforms/listview/gettingstarted">ListView</a>
 <small> - SfListView</small></p>
 </td>
 <td>
@@ -555,11 +555,11 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/editablelist/getting-started">Editable ListBox</a>
+<p><a href="https://help.syncfusion.com/windowsforms/editable-listbox/getting-started">Editable ListBox</a>
 <small> - EditableList</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/multicolumncombobox/getting-started">Multicolumn ComboBox</a>
+<a href="https://help.syncfusion.com/windowsforms/multicolumn-combobox/getting-started">Multicolumn ComboBox</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/comboboxbase/getting-started">ComboBoxBase</a>
@@ -568,7 +568,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/multiselectioncombobox/getting-started">MultiSelectionComboBox</a>
+<a href="https://help.syncfusion.com/windowsforms/classic/multiselectioncombobox/getting-started">MultiSelectionComboBox</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/fontcombobox/getting-started">FontComboBox</a>
@@ -580,7 +580,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/combodropdown/getting-started">ComboDropDown</a>
+<a href="https://help.syncfusion.com/windowsforms/combobox-dropdown/getting-started">ComboDropDown</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/commandbar/getting-started">CommandBarController</a>
@@ -596,20 +596,20 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfbutton/getting-started">Button</a>
+<p><a href="https://help.syncfusion.com/windowsforms/button/getting-started">Button</a>
 <small> - SfButton</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/buttonedit/getting-started">ButtonEdit</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/splitbutton/getting-started">SplitButton</a>
+<a href="https://help.syncfusion.com/windowsforms/split-button/getting-started">SplitButton</a>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/togglebutton/getting-started">Toggle Button</a>
+<a href="https://help.syncfusion.com/windowsforms/toggle-button/getting-started">Toggle Button</a>
 </td>
 <td/>
 <td/>
@@ -623,15 +623,15 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/sfcalendar/getting-started">Calendar</a>
+<p><a href="https://help.syncfusion.com/windowsforms/calendar/getting-started">Calendar</a>
 <small> - SfCalendar</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/windowsforms/schedule/getting-started">Scheduler</a>
+<p><a href="https://help.syncfusion.com/windowsforms/scheduler/getting-started">Scheduler</a>
 <small> - ScheduleControl</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/sfdatetimeedit/getting-started">SfDateTimeEdit</a>
+<a href="https://help.syncfusion.com/windowsforms/datetimepicker/getting-started">SfDateTimeEdit</a>
 </td>
 </tr>
 
@@ -674,7 +674,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <a href="https://help.syncfusion.com/windowsforms/grouping/getting-started">Grouping</a>
 </td>
 <td>
-<a href="help.syncfusion.com/windowsforms/groupview/getting-started">GroupView</a>
+<a href="https://help.syncfusion.com/windowsforms/groupview/getting-started">GroupView</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/dicom/getting-started">DICOM</a>
@@ -689,37 +689,37 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/buttonadv/getting-started">ButtonAdv</a>
+<a href="https://help.syncfusion.com/windowsforms/classic/button/getting-started">ButtonAdv</a>
 <sup>classic</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/comboboxadv/getting-started">ComboBoxAdv</a>
+<a href="https://help.syncfusion.com/windowsforms/classic/combobox/getting-started">ComboBoxAdv</a>
 <sup>classic</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/comboboxautocomplete/getting-started">ComboBoxAutoComplete</a>
-<sup>classic</sup>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/windowsforms/datetimepickeradv/creating-datetimepickeradv">DateTimePickerAdv</a>
-<sup>classic</sup>
-</td>
-<td>
-<a href="https://help.syncfusion.com/windowsforms/databoundgrid/getting-started">GridDataBoundGrid</a>
-<sup>classic</sup>
-</td>
-<td>
-<a href="https://help.syncfusion.com/windowsforms/monthcalendaradv/creating-monthcalendaradv">MonthCalendarAdv</a>
+<a href="https://help.syncfusion.com/windowsforms/classic/autocomplete/getting-started">ComboBoxAutoComplete</a>
 <sup>classic</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/supertooltip/supertooltip">SuperTooltip</a>
+<a href="https://help.syncfusion.com/windowsforms/classic/datetimepicker/creating-datetimepickeradv">DateTimePickerAdv</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started">GridDataBoundGrid</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/windowsforms/classic/month-calendar/creating-monthcalendaradv">MonthCalendarAdv</a>
+<sup>classic</sup>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip">SuperTooltip</a>
 <sup>classic</sup>
 </td>
 <td/>
