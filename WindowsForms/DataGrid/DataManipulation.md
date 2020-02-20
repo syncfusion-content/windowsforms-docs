@@ -498,7 +498,7 @@ orderInfoCollection.OrdersListDetails.Add(orderInfo)
 {% endtabs %}
 
 #### To add a new row when DataGrid bound to ObservableCollection
-You can add the new row programmatically from a ObservableCollection to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+You can add the new row programmatically from a `ObservableCollection` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
 
 {% tabs %}
 {% highlight c# %}
@@ -545,7 +545,7 @@ orderInfo.ContactNumber = 909093455
 {% endtabs %}
 
 #### To add a new row when DataGrid bound to DataTable
-You can add the new row programmatically from a DataTable to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+You can add the new row programmatically from a `DataTable` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
 
 {% tabs %}
 {% highlight c# %}
