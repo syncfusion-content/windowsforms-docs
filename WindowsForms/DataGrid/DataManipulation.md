@@ -1,14 +1,14 @@
 ---
 layout: post
 title: DataManipulation | DataGrid | WinForms | Syncfusion
-description: This section explains about the data manipulation support in SfDataGrid.
+description: Learn about data operations to manipulate the data in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 
 ---
 
-# Data Manipulation
+# Data Manipulation in Windows Forms DataGrid (SfDataGrid)
 
 SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~LiveDataUpdateMode.html) property.
 
@@ -496,6 +496,102 @@ Dim orderInfo As New OrderInfo() With {.OrderID = 10111, .CustomerID = "FRANS", 
 orderInfoCollection.OrdersListDetails.Add(orderInfo)
 {% endhighlight %}
 {% endtabs %}
+
+#### To add a new row when DataGrid bound to ObservableCollection
+You can add the new row programmatically from a `ObservableCollection` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+
+{% tabs %}
+{% highlight c# %}
+
+var orderData = this.sfDataGrid.DataSource;
+if (orderData == null || this.sfDataGrid.View == null)
+    return;
+            
+// Creates a new row.
+var orderInfo = sfDataGrid.View.AddNew() as OrderInfo;
+            
+// Commits the newly created row.
+sfDataGrid.View.CommitNew();
+
+// Initialize the values of first row to the newly added row.
+orderInfo.OrderID = 1001;
+orderInfo.Quantity = 13;
+orderInfo.OrderDate = new System.DateTime(2020, 3, 2);
+orderInfo.CustomerID = "FRANS";
+orderInfo.ContactNumber = 909093455;     
+
+{% endhighlight %}
+{% highlight vb %}
+
+Dim orderData = Me.sfDataGrid.DataSource
+If orderData Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
+	Return
+End If
+
+' Creates a new row.
+Dim orderInfo = TryCast(sfDataGrid.View.AddNew(), OrderInfo)
+
+' Commits the newly created row.
+sfDataGrid.View.CommitNew()
+
+' Initialize the values of first row to the newly added row.
+orderInfo.OrderID = 1001
+orderInfo.Quantity = 13
+orderInfo.OrderDate = New System.DateTime(2020, 3, 2)
+orderInfo.CustomerID = "FRANS"
+orderInfo.ContactNumber = 909093455
+
+{% endhighlight %}
+{% endtabs %}
+
+#### To add a new row when DataGrid bound to DataTable
+You can add the new row programmatically from a `DataTable` to the SfDataGrid by creating a new row in the `SfDataGrid.View` and set required value for that row.
+
+{% tabs %}
+{% highlight c# %}
+
+DataTable gridDataTable = this.sfDataGrid.DataSource as DataTable;
+if (gridDataTable == null || this.sfDataGrid.View == null)
+    return;
+
+// Creates a new row.
+System.Data.DataRow addNewRow = sfDataGrid.View.AddNew() as System.Data.DataRow;
+
+// Commits the newly created row.
+sfDataGrid.View.CommitNew();
+
+// Initialize the values of first row to the newly added row.
+addNewRow.SetField(0, gridDataTable.Rows[0][0]);
+addNewRow.SetField(1, gridDataTable.Rows[0][1]);
+addNewRow.SetField(2, gridDataTable.Rows[0][2]);
+addNewRow.SetField(3, gridDataTable.Rows[0][3]);
+addNewRow.SetField(4, gridDataTable.Rows[0][4]);
+
+{% endhighlight %}
+{% highlight vb %}
+
+Dim gridDataTable As DataTable = TryCast(Me.sfDataGrid.DataSource, DataTable)
+If gridDataTable Is Nothing OrElse Me.sfDataGrid.View Is Nothing Then
+	Return
+End If
+
+' Creates a new row.
+Dim addNewRow As System.Data.DataRow = TryCast(sfDataGrid.View.AddNew(), System.Data.DataRow)
+
+' Commits the newly created row.
+sfDataGrid.View.CommitNew()
+
+' Initialize the values of first row to the newly added row.
+addNewRow.SetField(0, gridDataTable.Rows(0)(0))
+addNewRow.SetField(1, gridDataTable.Rows(0)(1))
+addNewRow.SetField(2, gridDataTable.Rows(0)(2))
+addNewRow.SetField(3, gridDataTable.Rows(0)(3))
+addNewRow.SetField(4, gridDataTable.Rows(0)(4))
+
+{% endhighlight %}
+{% endtabs %}
+
+You can download sample [here](https://github.com/SyncfusionExamples/how-to-add-a-new-row-in-winforms-datagrid-when-datagrid-bound-to-datatable).
 
 ### AddNewRow support in Master-Details view
 You can enable the AddNewRow in DetailsViewDataGrid using the [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridViewDefinition~DataGrid.html) property.
