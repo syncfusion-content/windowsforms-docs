@@ -7,7 +7,7 @@ control: BannerTextProvider
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Watermark Text Provider (BannerText)
+# Getting Started with Windows Forms Watermark Text Provider(BannerText)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with its basic functionalities.
 
