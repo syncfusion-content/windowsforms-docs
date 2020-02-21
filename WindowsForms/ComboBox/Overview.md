@@ -29,31 +29,31 @@ Key features are:
 
 Syncfusion WinForms suite comes up with the following different combobox:
 
-* [SfComboBox](https://www.syncfusion.com/products/windows-forms/combobox)
-* [ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv/overview)
+* [SfComboBox](https://www.syncfusion.com/products/windows-forms/combobox )
+* [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview )
 * [MultiSelectionComboBox](https://www.syncfusion.com/products/windows-forms/multiselection-combobox)
-* [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete/overview)
+* [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview )
 * [MultiColumnComboBox](https://www.syncfusion.com/products/windows-forms/multicolumn-combobox)
 
 ### SfComboBox
 
-The [SfComboBox](https://help.syncfusion.com/windowsforms/sfcombobox/overview) textbox component allows the users to type a value or choose an option from a list of predefined options. It has several out of box features such as data binding filtering, UI customization, accessibility, and more.
+The [SfComboBox](https://help.syncfusion.com/windowsforms/combobox/overview) textbox component allows the users to type a value or choose an option from a list of predefined options. It has several out of box features such as data binding filtering, UI customization, accessibility, and more.
 
 ### ComboBoxAdv
 
-The [ComboBoxAdv](https://help.syncfusion.com/windowsforms/comboboxadv/overview) is an advanced combobox control that provides similar object model as the framework of the combobox control with additional features. It allows the user to select multiple items and display the default text when none of the item is selected.
+The [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview ) is an advanced combobox control that provides similar object model as the framework of the combobox control with additional features. It allows the user to select multiple items and display the default text when none of the item is selected.
 
 ### MultiSelectionComboBox
 
-[MultiSelectionComboBox](https://help.syncfusion.com/windowsforms/multiselectioncombobox/overview) is a type of combobox control with multiple items selection and auto suggestion capabilities. When you type a character into the text area, the control performs search operation and suggest a list of possible matching results to select.
+[MultiSelectionComboBox](https://help.syncfusion.com/windowsforms/classic/multiselectioncombobox/overview ) is a type of combobox control with multiple items selection and auto suggestion capabilities. When you type a character into the text area, the control performs search operation and suggest a list of possible matching results to select.
 
 ### ComboBoxAutoComplete
 
-The [comboBoxAutoComplete](https://help.syncfusion.com/windowsforms/comboboxautocomplete/overview) control combines the ComboBox control with AutoComplete control for autocompletion to that instance of combobox. It can be used on a form for autocompletion of one or several edit controls (textbox and combobox). 
+The [comboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview ) control combines the ComboBox control with AutoComplete control for autocompletion to that instance of combobox. It can be used on a form for autocompletion of one or several edit controls (textbox and combobox). 
 
 ### MultColumnComboBox
 
-The [MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumncombobox/overview) advanced combobox control has the capability to show multiple columns in the drop-down list. You can also display headers for the multiple columns.
+The [MultiColumnComboBox](https://help.syncfusion.com/windowsforms/multicolumn-combobox/overview ) advanced combobox control has the capability to show multiple columns in the drop-down list. You can also display headers for the multiple columns.
 
 ### SfComboBox vs MultiSelectionComboBox vs ComboBoxAdv
 
@@ -211,7 +211,7 @@ Displays the suggestions in drop-down.<br/>
 2. {{'**Append:**'| markdownify }}Appends the first suggestion to text.<br/>
 3. {{'**SuggestAppend:**'| markdownify }}Performs both ways.<br/>
 
-It also provides support to {{'[autocompletion](https://help.syncfusion.com/windowsforms/sfcombobox/autocomplete)'| markdownify }} based on case sensitivity.
+It also provides support to {{'[autocompletion](https://help.syncfusion.com/windowsforms/combobox/autocomplete )'| markdownify }} based on case sensitivity.
 
 </td>
 </tr>
@@ -220,7 +220,7 @@ It also provides support to {{'[autocompletion](https://help.syncfusion.com/wind
 Multiple items selection
 </td>
 <td>
-Selects {{'[multiple items](https://help.syncfusion.com/windowsforms/sfcombobox/selection#multi-selection)'| markdownify }} using the checkbox selection in drop-down.
+Selects {{'[multiple items](https://help.syncfusion.com/windowsforms/combobox/selection#multi-selection )'| markdownify }} using the checkbox selection in drop-down.
 
 </td>
 </tr>
@@ -229,7 +229,7 @@ Selects {{'[multiple items](https://help.syncfusion.com/windowsforms/sfcombobox/
 Loading custom user control in dropdown
 </td>
 <td>
-Shows the header and footer items in drop-down by enabling the {{'[ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html)'| markdownify }} and {{'[ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html)'| markdownify }} properties. To learn more about loading custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfcombobox/dropdown#load-custom-control-in-drop-down)'| markdownify }}.
+Shows the header and footer items in drop-down by enabling the {{'[ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html)'| markdownify }} and {{'[ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html)'| markdownify }} properties. To learn more about loading custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/combobox/dropdown#load-custom-control-in-drop-down)'| markdownify }}.
 
 </td>
 </tr>
@@ -238,7 +238,7 @@ Shows the header and footer items in drop-down by enabling the {{'[ShowHeader](h
 Watermark
 </td>
 <td>
-Sets the {{'[watermark](https://help.syncfusion.com/windowsforms/sfcombobox/watermark)'| markdownify }} text to display hint in the editor portion when combobox has empty string.
+Sets the {{'[watermark](https://help.syncfusion.com/windowsforms/combobox/watermark )'| markdownify }} text to display hint in the editor portion when combobox has empty string.
 
 </td>
 </tr>
@@ -247,7 +247,7 @@ Sets the {{'[watermark](https://help.syncfusion.com/windowsforms/sfcombobox/wate
 Sorting
 </td>
 <td>
-{{'[Sort](https://help.syncfusion.com/windowsforms/sfcombobox/sorting)'| markdownify }} the data either in ascending or descending order using the {{'[SfComboBox.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html)'| markdownify }} property.
+{{'[Sort](https://help.syncfusion.com/windowsforms/combobox/sorting )'| markdownify }} the data either in ascending or descending order using the {{'[SfComboBox.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html)'| markdownify }} property.
 
 </td>
 </tr>
