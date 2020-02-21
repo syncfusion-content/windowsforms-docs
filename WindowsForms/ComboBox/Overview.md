@@ -7,7 +7,7 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Overview
+# Windows Forms ComboBox (SfComboBox) Overview
 
 Combo box is a text box component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, filtering, UI customization, accessibility, and more.
 

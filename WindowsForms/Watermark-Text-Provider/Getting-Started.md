@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with BannerTextProvider | WindowsForms | Syncfusion
-description: How to set banner text for control into the Windows Forms application.
+description: Learn here about getting started with Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Watermark Text Provider (BannerText)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with its basic functionalities.
 
