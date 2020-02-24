@@ -108,7 +108,7 @@ End Sub
 {% endhighlight  %}
 {% endtabs %} 
 
-N> Download [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ArrayListBinding854674391) demo 
+N> Refer [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ArrayListBinding854674391) demo.
 
 ## ArrayList Class with IBindingList Support
 
