@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with BannerTextProvider | WindowsForms | Syncfusion
-description: How to set banner text for control into the Windows Forms application.
+description: Learn here about getting started with Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Watermark Text Provider(BannerText)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **BannerTextProvider** with its basic functionalities.
 
@@ -173,18 +173,18 @@ Me.bannerTextProvider1.SetBannerText(Me.textBoxExt, New Syncfusion.Windows.Forms
 
 N> BannerText feature can be made available for the following controls only.
 
-* [TextBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
-* [ComboBoxBarItem](/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
-* [TextBox](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-textbox) (ToolStripEx)
-* [ComboBox](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-combobox ) (ToolStripEx)
-* [ComboBoxEx](http://help.syncfusion.com/windowsforms/ribboncontroladv/ribbon-comboboxex)(ToolStripEx)
-* [TextBoxExt](http://help.syncfusion.com/windowsforms/textboxext) (Editor Control)
-* [CurrencyTextBox](http://help.syncfusion.com/windowsforms/currencytextbox)(Editor Control)
-* [ComboBoxAdv](http://help.syncfusion.com/windowsforms/ComboBoxAdv)(Editor Control)
-* [ComboDropDown](http://help.syncfusion.com/windowsforms/ComboDropDown ) (Editor Control)
-* [ComboBoxAutoComplete](http://help.syncfusion.com/windowsforms/comboboxautocomplete) (Editor Control)
-* [Integer TextBox](http://help.syncfusion.com/windowsforms/integertextbox)(Editor Control)
-* [Double TextBox](http://help.syncfusion.com/windowsforms/doubletextbox) (Editor Control)
-* [Percent TextBox](http://help.syncfusion.com/windowsforms/percenttextbox)(Editor Control)
+* [TextBoxBarItem](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
+* [ComboBoxBarItem](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
+* [TextBox](http://help.syncfusion.com/windowsforms/ribbon/getting-started#add-toolstriptextbox ) (ToolStripEx)
+* [ComboBox](http://help.syncfusion.com/windowsforms/ribbon/getting-started#toolstripcombobox ) (ToolStripEx)
+* [ComboBoxEx](http://help.syncfusion.com/windowsforms/ribbon/getting-started#toolstripcomboboxex ) (ToolStripEx)
+* [TextBoxExt](http://help.syncfusion.com/windowsforms/textbox/overview ) (Editor Control)
+* [CurrencyTextBox](http://help.syncfusion.com/windowsforms/currency-textbox/overview ) (Editor Control)
+* [ComboBoxAdv](http://help.syncfusion.com/windowsforms/classic/combobox/overview ) (Editor Control)
+* [ComboDropDown](http://help.syncfusion.com/windowsforms/combobox-dropdown/overview ) (Editor Control)
+* [ComboBoxAutoComplete](http://help.syncfusion.com/windowsforms/classic/autocomplete/overview ) (Editor Control)
+* [Integer TextBox](http://help.syncfusion.com/windowsforms/integer-textbox/overview ) (Editor Control)
+* [Double TextBox](http://help.syncfusion.com/windowsforms/double-textbox/overview ) (Editor Control)
+* [Percent TextBox](http://help.syncfusion.com/windowsforms/percent-textbox/overview )(Editor Control)
 * Other Microsoft Editor Controls
 
