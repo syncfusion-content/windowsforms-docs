@@ -14,7 +14,7 @@ The following assemblies needs to be added for exporting to excel.
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
 * [Syncfusion.XlsIO.Base](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
 
-For NuGet package you have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) packagae for more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
+For NuGet package, have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) package.For more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
 
 The SfDataGrid can be exported to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridExcelExportExtension~ExportToExcel.html) extension method present in the `Syncfusion.WinForms.DataGridConverter` namespace.
 
