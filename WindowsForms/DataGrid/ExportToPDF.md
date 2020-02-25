@@ -14,6 +14,8 @@ The following assemblies needs to be added for exporting to PDF file.
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms.html)
 * [Syncfusion.Pdf.Base](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
 
+For NuGet package you have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) packagae for more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
+
 The SfDataGrid can be exported to the pdf by using the following methods which is available in the `Syncfusion.WinForms.DataGridConverter` namespace.
 
 * [ExportToPdf](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.DataGridPdfExportExtension~ExportToPdf.html)
