@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Export to PDF
+# Export to PDF in WPF DataGrid (SfDataGrid)
 SfDataGrid provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to PDF file.
 
