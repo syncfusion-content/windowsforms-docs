@@ -7,12 +7,14 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Export to PDF
+# Export to PDF in WinForms DataGrid (SfDataGrid)
 SfDataGrid provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, unbound rows and stacked headers while exporting.
 The following assemblies needs to be added for exporting to PDF file.
 
 * [Syncfusion.SfDataGridConverter.WinForms](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms.html)
 * [Syncfusion.Pdf.Base](https://help.syncfusion.com/cr/cref_files/windowsforms/webtoc.html)
+
+For NuGet package, have to install [Syncfusion.DataGridExport.WinForms](https://www.nuget.org/packages/Syncfusion.DataGridExport.WinForms/) package. For more details refer this [UG link](https://help.syncfusion.com/windowsforms/control-dependencies#exporting-sfdatagrid-to-excel-pdf-and-csv)
 
 The SfDataGrid can be exported to the pdf by using the following methods which is available in the `Syncfusion.WinForms.DataGridConverter` namespace.
 
