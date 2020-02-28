@@ -20,13 +20,12 @@ This section deals with displaying multiple members in a MultiColumnComboBox. Fo
 bool dropDownOpened = false;
 private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
 this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
+this.Load += Form1_Load;
 this.Controls.Add(this.multiColumnComboBox1); 
 
 {% endhighlight %}
 
 {% highlight vb %}
-
-Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
 
 ' Set a boolean flag. 
 Private dropDownOpened As Boolean = False
@@ -63,7 +62,7 @@ private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.Eve
 	{
         for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
 		{
-    		str += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
+    		text += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
 		}
 		this.afterDropDown = false;
 		this.multiColumnComboBox1.Text = text;
@@ -75,9 +74,9 @@ private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.Eve
 
 {% highlight vb %}
  
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs)
-    Me.multiColumnComboBox1.SelectedIndexChanged += multiColumnComboBox1_SelectedIndexChanged
-    Me.multiColumnComboBox1.DropDown += multiColumnComboBox1_DropDown
+Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+	AddHandler Me.multiColumnComboBox1.SelectedIndexChanged, AddressOf multiColumnComboBox1_SelectedIndexChanged
+	AddHandler Me.multiColumnComboBox1.DropDown, AddressOf multiColumnComboBox1_DropDown
 End Sub
 
 Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
@@ -89,7 +88,7 @@ Private text As String = ""
 Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
     If Me.afterDropDown = True Then
         For i As Integer = 1 To Me.multiColumnComboBox1.ListBox.Grid.ColCount
-            str += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex + 1, i).Text & " "
+            text += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex + 1, i).Text & " "
         Next
 		Me.afterDropDown = False
         Me.multiColumnComboBox1.Text = text
