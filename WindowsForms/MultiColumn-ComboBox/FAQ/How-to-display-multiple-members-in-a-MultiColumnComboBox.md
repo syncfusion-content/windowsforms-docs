@@ -58,13 +58,13 @@ string text = "";
 
 private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
 {
-	if (this.afterDropDown == true)
+	if (this.dropDownOpened == true)
 	{
         for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
 		{
     		text += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
 		}
-		this.afterDropDown = false;
+		this.dropDownOpened = false;
 		this.multiColumnComboBox1.Text = text;
 	}
 	text = "";
@@ -80,17 +80,17 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 End Sub
 
 Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As System.EventArgs)
-	Me.afterDropDown = True
+	Me.dropDownOpened = True
 End Sub
 
 Private text As String = ""
 
 Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
-    If Me.afterDropDown = True Then
+    If Me.dropDownOpened = True Then
         For i As Integer = 1 To Me.multiColumnComboBox1.ListBox.Grid.ColCount
             text += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex + 1, i).Text & " "
         Next
-		Me.afterDropDown = False
+		Me.dropDownOpened = False
         Me.multiColumnComboBox1.Text = text
     End If   
     text = ""
