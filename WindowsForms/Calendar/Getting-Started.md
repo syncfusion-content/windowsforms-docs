@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Getting started
+# Getting started with SfCalendar
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfCalendar** control with its basic functionalities.
 
