@@ -465,6 +465,22 @@ Me.gridControl1.Properties.PrintColHeader = False
 {% endhighlight %}
 {% endtabs %}
 
+### Column Header on each pag
+Column headers can be printed on each page by enabling the `AllowRepeatHeaders` property of [GridPrintInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintInfo.html).
+
+{% tabs %}
+{% highlight c# %}
+//Show the column headers on all pages of print document.
+this.gridControl1.PrintInfo.AllowRepeatHeaders = true;
+{% endhighlight %}
+{% highlight vb %}
+'Show the column headers on all pages of print document.
+Me.gridControl1.PrintInfo.AllowRepeatHeaders = true
+{% endhighlight %}
+{% endtabs %}
+
+N> The `PrintColHeader` property should be enabled to availe this feature.
+
 ### Printing the Grid with Center Aligned 
 The grid can be centered vertically while printing by setting the [CenterVertical](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~CenterVertical.html) property to `true`. The grid can be printed with centered horizontally by enabling the [CenterHorizontal](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~CenterHorizontal.html) property.
 {% tabs %}
