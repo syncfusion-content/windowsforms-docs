@@ -7,9 +7,9 @@ control: TreeView
 documentation: ug
 ---
 
-# How to Fire Click Event, When a Child Node is Selected
+# How to fire Click Event when a Child Node is Selected
 
-Whenever a TreeViewAdv is selected, AfterSelect event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet. 
+Whenever a TreeViewAdv is selected, AfterSelect event will be raised and  Click event is raised when a child node is selected, by using the following code snippet. 
 
 {% tabs %}
 {% highlight c# %}
