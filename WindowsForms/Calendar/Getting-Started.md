@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with SfCalendar | WindowsForms | Syncfusion
-description: How to add SfCalendar and explore its basic features.
+description: Learn here about how to add the Syncfusion Windows Forms SfCalendar control and explore its basic features.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
 ---
 
-# Getting started
+# Getting started with SfCalendar
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfCalendar** control with its basic functionalities.
 
@@ -208,8 +208,8 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 
 //Setting the blackout dates
 
-calendarBlackoutDates.Add(new System.DateTime(2018, 1, 7));
-calendarBlackoutDates.Add(new System.DateTime(2018, 1, 14));
+calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 7));
+calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 14));
 calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 21));
 calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 6));
 calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 13));
@@ -221,8 +221,8 @@ calendar.BlackoutDates.Add(new System.DateTime(2018, 1, 20));
 
 'Setting the Blackout Dates
 
-calendarBlackoutDates.Add(New System.DateTime(2018, 1, 7))
-calendarBlackoutDates.Add(New System.DateTime(2018, 1, 14))
+calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 7))
+calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 14))
 calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 21))
 calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 6))
 calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 13))
@@ -336,14 +336,14 @@ Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 ## Configure to show week number
 
-The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowWeekNumbers.html) property to true as follows:
+The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowWeekNumbers.html) property to true as follows:
 
 {% tabs %}
 
 {% highlight C# %}
 
 // Setting the Minimum and Maximum date
-calendar.ShowWeekNumber = true;
+calendar.ShowWeekNumbers = true;
 
 {% endhighlight  %}
 
