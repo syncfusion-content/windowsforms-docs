@@ -35,15 +35,15 @@ private void CheckForChildren(TreeNodeAdv node)
     {
 
 // iterate through child nodes in the collection
-        foreach (TreeNodeAdv node in node.Nodes)
+        foreach (TreeNodeAdv childNode in node.Nodes)
         {
-            if (node.IsSelected)
+            if (childNode.IsSelected)
             {
-                Console.WriteLine(node.Text + "is selected");
+                Console.WriteLine(childNode.Text + "is selected");
             }
 
 // Do recursive call
-            CheckForChildren(node);
+            CheckForChildren(childNode);
         }
     }
 }
@@ -68,14 +68,14 @@ Private Sub CheckForChildren(ByVal node As TreeNodeAdv)
 If node.HasChildren AndAlso node.Nodes.Count > 0 Then
 
 ' iterate through child nodes in the collection
-For Each node As TreeNodeAdv In node.Nodes
-If node.IsSelected Then
-Console.WriteLine(node.Text & "is selected")
+For Each childNode As TreeNodeAdv In node.Nodes
+If childNode.IsSelected Then
+Console.WriteLine(childNode.Text & "is selected")
 End If
 
 ' Do recursive call
-CheckForChildren(node)
-Next node
+CheckForChildren(childNode)
+Next childNode
 End If
 End Sub
 
