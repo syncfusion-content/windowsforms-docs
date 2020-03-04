@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Printing for Syncfusion Essential Windows Forms
-description: This section explains on how to print and print preview the contents of GridControl.
+description: This section explains that how to print and print preview the contents of GridControl for Windows Forms.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Printing
+# Printing in Windows Forms GridControl
 The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintDocument_members.html) and pass it to the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx). 
 
 {% tabs %}
@@ -30,7 +30,7 @@ pd.Document = gridPrintDocument
 gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img1.jpeg)
+![Printing grid](Printing_images/Printing_img1.jpeg)
 
 ## Print Preview
 The [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printpreviewdialog.aspx) is used to preview the pages before printing the contents of the grid. 
@@ -60,7 +60,7 @@ printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img2.jpeg)
+![Print preview](Printing_images/Printing_img2.jpeg)
 
 ### Printing using Keyboard shortcut
 There is no direct support for printing the grid using <kbd>Ctrl</kbd>+<kbd>P</kbd> combination but this can be achieved by handling the `KeyDown` event of the grid.
@@ -266,7 +266,7 @@ printDialog.Document = multiGridPrintDocument
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img3.jpeg)
+![Multiple grid printing](Printing_images/Printing_img3.jpeg)
 
 N> The headers and footers can be printed for all the pages by setting the [ShowHeaderFooterOnAllPages](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~ShowHeaderFooterOnAllPages.html) property to `true`. The particular grid can be removed from the printing grid collection by handling the [MultipleGridPrint](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.MultiGridPrintDocument~MultipleGridPrint_EV.html) event.
 
@@ -317,7 +317,7 @@ printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img4.jpeg)
+![Header and Footer](Printing_images/Printing_img4.jpeg)
 
 ## Page Break
 Print Page Layout feature enables viewing page layout on the grid by displaying a segment line and page number with each segment. This helps to analyze page breaks within the grid, and manage them accordingly.
@@ -336,7 +336,7 @@ layoutHelper.LineColor = Color.Blue
 layoutHelper.TextColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img5.jpeg)
+![Page breaks](Printing_images/Printing_img5.jpeg)
 
 To display the layout lines and page number in the grid, set the [ShowLayoutLines](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.LayoutSupportHelper~ShowLayoutLines.html) property to `true`.
 {% tabs %}
@@ -444,11 +444,11 @@ End Sub
 {% endtabs %}
 The grid in normal mode looks like the below screen shot,
 
-![](Printing_images/Printing_img6.jpeg)
+![Normal grid on printing](Printing_images/Printing_img6.jpeg)
 
 The grid headers printed with Pink color on the printing mode,
 
-![](Printing_images/Printing_img7.jpeg)
+![Headers with customized color](Printing_images/Printing_img7.jpeg)
 
 ### Hiding Row and Column Headers 
 To hide the row and column headers while printing or print previewing the grid, set the [PrintRowHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintRowHeader.html) and [PrintColumnHeader](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~PrintColumnHeader.html) property values as `false`.
@@ -465,7 +465,7 @@ Me.gridControl1.Properties.PrintColHeader = False
 {% endhighlight %}
 {% endtabs %}
 
-### Column Header on each pag
+### Column Header on each page
 Column headers can be printed on each page by enabling the `AllowRepeatHeaders` property of [GridPrintInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintInfo.html).
 
 {% tabs %}
@@ -479,7 +479,7 @@ Me.gridControl1.PrintInfo.AllowRepeatHeaders = true
 {% endhighlight %}
 {% endtabs %}
 
-N> The `PrintColHeader` property should be enabled to availe this feature.
+N> The `PrintColHeader` property should be enabled to avail this feature.
 
 ### Printing the Grid with Center Aligned 
 The grid can be centered vertically while printing by setting the [CenterVertical](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~CenterVertical.html) property to `true`. The grid can be printed with centered horizontally by enabling the [CenterHorizontal](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProperties~CenterHorizontal.html) property.
