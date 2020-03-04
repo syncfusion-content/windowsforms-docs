@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Child-node-click-event | WindowsForms | Syncfusion
-description: Whenever a TreeViewAdv is selected, AfterSelect event will be raised and Click event is raised when child node is selected, by using the following code snippet.
+title: Child-node-AfterSelect-event | WindowsForms | Syncfusion
+description: Occurs after a TreeViewAdv node and it's Child Node is selected. IsSelected property can used to check whether the respective node or Child Node is selected. 
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# How to fire Click Event when Child Node is Selected
+# How to fire AfterSelect Event when Child Node is Selected
 
-Whenever a TreeViewAdv is selected, AfterSelect event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet.
+Whenever a TreeViewAdv node and it's Child Node is selected, AfterSelect event will be raised. IsSelected property can be used to check or ensure whether the respective node or Child Node is selected by using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
