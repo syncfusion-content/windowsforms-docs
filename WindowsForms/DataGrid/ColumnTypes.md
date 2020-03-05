@@ -131,6 +131,17 @@ Use to display progressbar in each row
 Use to display multi select combobox in each row
 </td>
 </tr>
+<tr>
+<td>
+GridCheckBoxSelectorColumn
+</td>
+<td>
+GridCheckBoxSelectorCellRenderer
+</td>
+<td>
+Selects or deselects rows based on the check box value, which is not bound with data object.
+</td>
+</tr>
 </table>
 
 ## GridColumn
@@ -1914,6 +1925,75 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
+
+## GridCheckBoxSelectorColumn
+
+`SfDataGrid` allows you to select or deselect individual rows through CheckBox using `GridCheckBoxSelectorColumn`, which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html).
+
+{% tabs %}
+{% highlight c# %}
+ this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = string.Empty, AllowCheckBoxOnHeader = true, Width = 34, CheckBoxSize = new Size(14, 14) });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With {
+            .MappingName = "SelectorColumn",
+            .HeaderText = String.Empty,
+            .AllowCheckBoxOnHeader = True,
+            .Width = 34,
+            .CheckBoxSize = New Size(14, 14)
+        })
+{% endhighlight %}
+{% endtabs %}
+
+By default, check box is displayed in the header of selector column, which is used to select or deselect all the rows in the datagrid.
+
+![Winforms datagrid shows that GridCheckBoxSelector column](ColumnTypes_images/ColumnTypes_img46.png)
+
+### Text on column header
+
+You can display text instead of check box in header of selector column by setting the `AllowCheckBoxOnHeader` property to `False`.
+
+{% tabs %}
+{% highlight c# %}
+  this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = "Selector", AllowCheckBoxOnHeader = false, Width = 100, CheckBoxSize = new Size(14, 14) });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With {
+            .MappingName = "SelectorColumn",
+            .HeaderText = "Selector",
+            .AllowCheckBoxOnHeader = False,
+            .Width = 100,
+            .CheckBoxSize = New Size(14, 14)
+        })
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn header text](ColumnTypes_images/ColumnTypes_img47.png)
+
+### Styling the selector column
+
+The style of checkbox in record cells can be customized using the `CheckBoxStyle` property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.CheckBoxStyle.CheckedBorderColor = Color.DarkViolet;
+this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CheckBoxStyle.CheckedBorderColor = Color.DarkViolet
+Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn styling](ColumnTypes_images/ColumnTypes_img48.png)
+
+### Limitations
+The following are the limitations of `GridCheckBoxSelectorColumn`:
+
+* Selector column does not support cell selection.
+* Selector column does not support data operations such as sorting, filtering and grouping.
+* Selector column will be excluded in operations such as printing and exporting.
+* Selector column does not have filter row support.  
 
 ## Custom Column Support
 
