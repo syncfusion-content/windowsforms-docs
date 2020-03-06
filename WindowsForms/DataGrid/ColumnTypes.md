@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column types | Syncfusion
-description: This section explains about the column types in SfDataGrid.
+title: Column types in WinForms DataGrid control | Syncfusion
+description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column Types 
+# Column types in WinForms DataGrid (SfDataGrid) 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>
@@ -1925,6 +1925,7 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img43.png)
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
+
 
 ## GridCheckBoxSelectorColumn
 
