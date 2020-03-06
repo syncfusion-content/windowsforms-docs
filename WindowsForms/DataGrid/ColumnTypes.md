@@ -1933,39 +1933,38 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 {% tabs %}
 {% highlight c# %}
- this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = string.Empty, AllowCheckBoxOnHeader = true, Width = 34, CheckBoxSize = new Size(14, 14) });
+this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = "Selector", Width = 100, CheckBoxSize = new Size(14, 14) });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With {
-            .MappingName = "SelectorColumn",
-            .HeaderText = String.Empty,
-            .AllowCheckBoxOnHeader = True,
-            .Width = 34,
-            .CheckBoxSize = New Size(14, 14)
-        })
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
+{
+        .MappingName = "SelectorColumn",
+        .HeaderText = "Selector",
+        .Width = 100,
+        .CheckBoxSize = New Size(14, 14)
+})
 {% endhighlight %}
 {% endtabs %}
 
-By default, check box is displayed in the header of selector column, which is used to select or deselect all the rows in the datagrid.
-
 ![Winforms datagrid shows that GridCheckBoxSelector column](ColumnTypes_images/ColumnTypes_img46.png)
 
-### Text on column header
+### CheckBox on column header
 
-You can display text instead of check box in header of selector column by setting the `AllowCheckBoxOnHeader` property to `False`.
+You can display check box instead of text in header of selector column by setting the `AllowCheckBoxOnHeader` property to `True`. Using header check box, you can select or deselect all the rows in the datagrid.
 
 {% tabs %}
 {% highlight c# %}
-  this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = "Selector", AllowCheckBoxOnHeader = false, Width = 100, CheckBoxSize = new Size(14, 14) });
+this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = string.Empty, AllowCheckBoxOnHeader = true, Width = 34, CheckBoxSize = new Size(14, 14) });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With {
-            .MappingName = "SelectorColumn",
-            .HeaderText = "Selector",
-            .AllowCheckBoxOnHeader = False,
-            .Width = 100,
-            .CheckBoxSize = New Size(14, 14)
-        })
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
+{
+        .MappingName = "SelectorColumn",
+        .HeaderText = String.Empty,
+        .AllowCheckBoxOnHeader = True,
+        .Width = 34,
+        .CheckBoxSize = New Size(14, 14)
+})
 {% endhighlight %}
 {% endtabs %}
 
