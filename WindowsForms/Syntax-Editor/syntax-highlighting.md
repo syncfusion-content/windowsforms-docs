@@ -7,7 +7,7 @@ control: SyntaxEditor
 documentation: ug
 ---
 
-# Syntax Highlighting 
+# Syntax Highlighting in EditControl 
 
 Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript, and Delphi.
 
@@ -460,9 +460,9 @@ Sublexems must be skipped if they are found after BeginBlock string and before E
 
 {% endhighlight %}
 
-#### Collapsible region
+#### Collapsable region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`. 
+Collapsable region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`. 
 
 {% highlight xaml %}
 
@@ -778,9 +778,9 @@ Sublexems must be skipped if they are found after BeginBlock string and before E
 
 {% endhighlight %}
 
-#### Collapsible region
+#### Collapsable region
 
-Collapsible region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`.
+Collapsable region can be customized by adding the desired lexem with attributes such as `IsCollapsable` and `CollapseName`.
 
 {% highlight xaml %}
 
