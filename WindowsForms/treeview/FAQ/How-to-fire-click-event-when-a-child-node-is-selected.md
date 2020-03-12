@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How-to-fire-click-event-when-a-child-node-is-selected | WindowsForms | Syncfusion
-description: how to fire click event, when a child node is selected
+title: Child-node-AfterSelect-event | WindowsForms | Syncfusion
+description: Occurs after a TreeViewAdv node and it's Child Node is selected. IsSelected property can used to check whether the respective node or Child Node is selected. 
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Fire Click Event, When a Child Node is Selected
+# How to fire AfterSelect Event when Child Node is Selected
 
-Whenever a TreeViewAdv is selected, AfterSelect event will be raised. You can raise a Click event when a child node is selected, inside this handler using the following code snippet. 
+Whenever a TreeViewAdv node and it's Child Node is selected, AfterSelect event will be raised. IsSelected property can be used to check or ensure whether the respective node or Child Node is selected by using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,15 +35,15 @@ private void CheckForChildren(TreeNodeAdv node)
     {
 
 // iterate through child nodes in the collection
-        foreach (TreeNodeAdv node in node.Nodes)
+        foreach (TreeNodeAdv childNode in node.Nodes)
         {
-            if (node.IsSelected)
+            if (childNode.IsSelected)
             {
-                Console.WriteLine(node.Text + "is selected");
+                Console.WriteLine(childNode.Text + "is selected");
             }
 
 // Do recursive call
-            CheckForChildren(node);
+            CheckForChildren(childNode);
         }
     }
 }
@@ -68,14 +68,14 @@ Private Sub CheckForChildren(ByVal node As TreeNodeAdv)
 If node.HasChildren AndAlso node.Nodes.Count > 0 Then
 
 ' iterate through child nodes in the collection
-For Each node As TreeNodeAdv In node.Nodes
-If node.IsSelected Then
-Console.WriteLine(node.Text & "is selected")
+For Each childNode As TreeNodeAdv In node.Nodes
+If childNode.IsSelected Then
+Console.WriteLine(childNode.Text & "is selected")
 End If
 
 ' Do recursive call
-CheckForChildren(node)
-Next node
+CheckForChildren(childNode)
+Next childNode
 End If
 End Sub
 
