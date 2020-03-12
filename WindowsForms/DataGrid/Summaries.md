@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Summaries
+# Summaries in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
 * **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid.
@@ -914,6 +914,96 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 {% endtabs %}
 
 ![Windows forms datagrid showing formatting summary for row](SfDataGrid_Summaries_UG_images/summaries20.png)
+
+## Calculate summary for selected rows
+
+SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+This is applicable for all type of summary rows such as table, caption and group summary.
+
+In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
+
+{% tabs %}
+{% highlight c# %}
+// Creates the TableSummaryRow1.
+GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
+tableSummaryRow1.ShowSummaryInRow = true;
+tableSummaryRow1.Position = VerticalPosition.Top;
+tableSummaryRow1.CalculationUnit = SummaryCalculationUnit.SelectedRows;
+tableSummaryRow1.Title = "Total price for selected records:  {UnitPrice}";
+
+// Creates the TableSummaryRow2.
+GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow();
+tableSummaryRow2.ShowSummaryInRow = true;
+tableSummaryRow2.Position = VerticalPosition.Bottom;            
+tableSummaryRow2.Title = "Total Price for all records:  {UnitPrice}";
+
+// Creates the GridSummaryColumn1.
+GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
+summaryColumn1.Name = "UnitPrice";
+summaryColumn1.Format = "{Sum:c}";
+summaryColumn1.MappingName = "UnitPrice";
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn2 = new GridSummaryColumn();
+summaryColumn2.Name = "UnitPrice";
+summaryColumn2.Format = "{Sum:c}";
+summaryColumn2.MappingName = "UnitPrice";
+summaryColumn2.SummaryType = SummaryType.DoubleAggregate;
+
+// Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
+tableSummaryRow2.SummaryColumns.Add(summaryColumn2);
+
+// Adds the GridTableSummaryRow in the TableSummaryRows collection.
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1);
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow1.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.ShowSummaryInRow = True
+tableSummaryRow1.Position = VerticalPosition.Top
+tableSummaryRow1.CalculationUnit = SummaryCalculationUnit.SelectedRows
+tableSummaryRow1.Title = "Total price for selected records:  {UnitPrice}"
+
+' Creates the TableSummaryRow2.
+Dim tableSummaryRow2 As New GridTableSummaryRow()
+tableSummaryRow2.ShowSummaryInRow = True
+tableSummaryRow2.Position = VerticalPosition.Bottom
+tableSummaryRow2.Title = "Total Price for all records:  {UnitPrice}"
+
+' Creates the GridSummaryColumn1.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "UnitPrice"
+summaryColumn1.Format = "{Sum:c}"
+summaryColumn1.MappingName = "UnitPrice"
+summaryColumn1.SummaryType = SummaryType.DoubleAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn2 As New GridSummaryColumn()
+summaryColumn2.Name = "UnitPrice"
+summaryColumn2.Format = "{Sum:c}"
+summaryColumn2.MappingName = "UnitPrice"
+summaryColumn2.SummaryType = SummaryType.DoubleAggregate
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+tableSummaryRow2.SummaryColumns.Add(summaryColumn2)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
+Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2)
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid showing Calculate summaries for selected records](SfDataGrid_Summaries_UG_images/summaries22.png)
+
+N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
+
+### Limitation
+
+`SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
 
 ## Custom Summaries
 SfDataGrid allows to implement own aggregate functions, when the built-in aggregate functions don’t meet the requirement.
