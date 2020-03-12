@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Navigation
+# Navigation in Windows Forms Calendar (SfCalendar)
 
 By default, the calendar displays the month view. You can move from current month to previous or next month in the calendar control by clicking navigation buttons in the header, and also you can move from month view to other views (year, decade, century) to select the dates from other year or decade by click the header text of the calendar.
 
@@ -27,7 +27,7 @@ You can choose the required view options in the calendar by the [ViewMode](https
 
 // setting Year and decade mode to display year and decade view
     
-this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
+calendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year | Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade;
 
 {% endhighlight  %}
 
@@ -35,7 +35,7 @@ this.sfCalendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year
 
 ' setting Year and decade mode to display year and decade view
 
-Me.sfCalendar.ViewMode = (Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade)
+calendar.ViewMode = Syncfusion.WinForms.Input.Enums.CalendarViewType.Year Or Syncfusion.WinForms.Input.Enums.CalendarViewType.Decade
 
 {% endhighlight  %}
 
@@ -63,7 +63,7 @@ The [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInpu
 
 // Invoked when the view changed.
 
- this.sfCalendar.ViewChanging += SfCalendar_ViewChanging;
+ calendar.ViewChanging += SfCalendar_ViewChanging;  
 
   private void SfCalendar_ViewChanging(Syncfusion.WinForms.Input.SfCalendar sender, Syncfusion.WinForms.Input.Events.ViewChangingEventArgs args)
   
@@ -85,7 +85,7 @@ The [ViewChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInpu
 
 ' Invoked when the view changed.
 
-Me.sfCalendar.ViewChanging = (Me.sfCalendar.ViewChanging + SfCalendar_ViewChanging)
+calendar.ViewChanging += SfCalendar_ViewChanging
 
     Private Sub SfCalendar_ViewChanging(ByVal sender As 
     Syncfusion.WinForms.Input.SfCalendar, ByVal args As Syncfusion.WinForms.Input.Events.ViewChangingEventArgs)
@@ -163,7 +163,7 @@ The SfCalendar animates the content while navigating between different sets of d
 
 // Disabling the animation
 
-this.sfCalendar.EnableAnimation = false;
+calendar.EnableAnimation = false;
 
 {% endhighlight  %}
 
@@ -171,7 +171,7 @@ this.sfCalendar.EnableAnimation = false;
 
 ' Disabling the animation
 
-Me.sfCalendar.EnableAnimation = false
+calendar.EnableAnimation = False
 
 {% endhighlight  %}
 
