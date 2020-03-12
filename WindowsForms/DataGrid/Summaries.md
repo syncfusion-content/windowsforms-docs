@@ -312,6 +312,122 @@ Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRende
 
 ![Custom table summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries6.png)
 
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Displaying table summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-table-summary-for-column) section to know more about how to display table summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 3 and `GridSummaryRow.Title` is defined along with summary columns.
+
+{% tabs %}
+{% highlight c# %}
+// Creates the TableSummaryRow1.
+GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow();
+tableSummaryRow1.ShowSummaryInRow = false;
+tableSummaryRow1.TitleColumnCount = 3;
+tableSummaryRow1.Position = VerticalPosition.Top;            
+tableSummaryRow1.Title = "Total Price : {PriceAmount} for {ProductCount} products";
+
+// Creates the TableSummaryRow2.
+GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow();
+tableSummaryRow2.ShowSummaryInRow = false;
+tableSummaryRow2.TitleColumnCount = 3;
+tableSummaryRow2.Position = VerticalPosition.Bottom;
+tableSummaryRow2.Title = "Total Price : {PriceAmount} for {ProductCount} products";
+
+// Creates the GridSummaryColumn1.
+GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
+summaryColumn1.Name = "OrderDate";
+summaryColumn1.Format = "{Count:d}";
+summaryColumn1.MappingName = "OrderDate";
+summaryColumn1.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn2 = new GridSummaryColumn();
+summaryColumn2.Name = "ProductCount";
+summaryColumn2.Format = "{Count:d}";
+summaryColumn2.MappingName = "Quantity";
+summaryColumn2.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn3 = new GridSummaryColumn();
+summaryColumn3.Name = "PriceAmount";
+summaryColumn3.Format = "{Sum:c}";
+summaryColumn3.MappingName = "UnitPrice";
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate;
+
+// Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1);
+tableSummaryRow1.SummaryColumns.Add(summaryColumn2);
+tableSummaryRow1.SummaryColumns.Add(summaryColumn3);
+tableSummaryRow2.SummaryColumns.Add(summaryColumn1);
+tableSummaryRow2.SummaryColumns.Add(summaryColumn2);
+tableSummaryRow2.SummaryColumns.Add(summaryColumn3);
+
+// Adds the GridTableSummaryRow in the TableSummaryRows collection.
+this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
+this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2);            
+{% endhighlight %}
+{% highlight vb %}
+' Creates the TableSummaryRow1.
+Dim tableSummaryRow1 As New GridTableSummaryRow()
+tableSummaryRow1.ShowSummaryInRow = False
+tableSummaryRow1.TitleColumnCount = 3
+tableSummaryRow1.Position = VerticalPosition.Top
+tableSummaryRow1.Title = "Total Price : {PriceAmount} for {ProductCount} products"
+
+' Creates the TableSummaryRow2.
+Dim tableSummaryRow2 As New GridTableSummaryRow()
+tableSummaryRow2.ShowSummaryInRow = False
+tableSummaryRow2.TitleColumnCount = 3
+tableSummaryRow2.Position = VerticalPosition.Bottom
+tableSummaryRow2.Title = "Total Price : {PriceAmount} for {ProductCount} products"
+
+' Creates the GridSummaryColumn1.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "OrderDate"
+summaryColumn1.Format = "{Count:d}"
+summaryColumn1.MappingName = "OrderDate"
+summaryColumn1.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn2 As New GridSummaryColumn()
+summaryColumn2.Name = "ProductCount"
+summaryColumn2.Format = "{Count:d}"
+summaryColumn2.MappingName = "Quantity"
+summaryColumn2.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn3 As New GridSummaryColumn()
+summaryColumn3.Name = "PriceAmount"
+summaryColumn3.Format = "{Sum:c}"
+summaryColumn3.MappingName = "UnitPrice"
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate
+
+' Adds the GridSummaryColumn in the SummaryColumns collection.
+tableSummaryRow1.SummaryColumns.Add(summaryColumn1)
+tableSummaryRow1.SummaryColumns.Add(summaryColumn2)
+tableSummaryRow1.SummaryColumns.Add(summaryColumn3)
+tableSummaryRow2.SummaryColumns.Add(summaryColumn1)
+tableSummaryRow2.SummaryColumns.Add(summaryColumn2)
+tableSummaryRow2.SummaryColumns.Add(summaryColumn3)
+
+' Adds the GridTableSummaryRow in the TableSummaryRows collection.
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
+Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
+
+The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
+
+![Table summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries23.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `TableSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
 ## Group Summary
 Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. The group summary row can be viewed by expanding the corresponding group header. SfDataGrid allows to add any number of group summary rows.
 
@@ -501,6 +617,102 @@ Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRende
 {% endtabs %}
 
 ![Custom group summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries10.png)
+
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Displaying group summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-group-summary-for-column) section to know more about how to display group summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 3 and `GridSummaryRow.Title` is defined along with summary columns.
+
+{% tabs %}
+{% highlight c# %}
+// Creates the GridSummaryRow.
+GridSummaryRow groupSummaryRow1 = new GridSummaryRow();
+groupSummaryRow1.Name = "GroupSummary";
+groupSummaryRow1.ShowSummaryInRow = false;
+groupSummaryRow1.TitleColumnCount = 3;
+groupSummaryRow1.Title = "Total Price: {PriceAmount} for {ProductCount} Products";
+
+// Creates the GridSummaryColumn1.
+GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
+summaryColumn1.Name = "OrderDate";
+summaryColumn1.Format = "{Count:d}";
+summaryColumn1.MappingName = "OrderDate";
+summaryColumn1.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn2 = new GridSummaryColumn();
+summaryColumn2.Name = "ProductCount";
+summaryColumn2.Format = "{Count:d}";
+summaryColumn2.MappingName = "Quantity";
+summaryColumn2.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn3 = new GridSummaryColumn();
+summaryColumn3.Name = "PriceAmount";
+summaryColumn3.Format = "{Sum:c}";
+summaryColumn3.MappingName = "UnitPrice";
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate;
+
+// Adds the GridSummaryColumn in SummaryColumns collection.
+groupSummaryRow1.SummaryColumns.Add(summaryColumn1);
+groupSummaryRow1.SummaryColumns.Add(summaryColumn2);
+groupSummaryRow1.SummaryColumns.Add(summaryColumn3);
+
+// Adds the summary row in the GroupSummaryRows collection.
+this.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1);
+{% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim groupSummaryRow1 As New GridSummaryRow()
+groupSummaryRow1.Name = "GroupSummary"
+groupSummaryRow1.ShowSummaryInRow = False
+groupSummaryRow1.TitleColumnCount = 3
+groupSummaryRow1.Title = "Total Price: {PriceAmount} for {ProductCount} Products"
+
+' Creates the GridSummaryColumn1.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "OrderDate"
+summaryColumn1.Format = "{Count:d}"
+summaryColumn1.MappingName = "OrderDate"
+summaryColumn1.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn2 As New GridSummaryColumn()
+summaryColumn2.Name = "ProductCount"
+summaryColumn2.Format = "{Count:d}"
+summaryColumn2.MappingName = "Quantity"
+summaryColumn2.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn3 As New GridSummaryColumn()
+summaryColumn3.Name = "PriceAmount"
+summaryColumn3.Format = "{Sum:c}"
+summaryColumn3.MappingName = "UnitPrice"
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate
+
+' Adds the GridSummaryColumn in SummaryColumns collection.
+groupSummaryRow1.SummaryColumns.Add(summaryColumn1)
+groupSummaryRow1.SummaryColumns.Add(summaryColumn2)
+groupSummaryRow1.SummaryColumns.Add(summaryColumn3)
+
+' Adds the summary row in the GroupSummaryRows collection.
+Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
+
+![Group summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries24.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `GroupSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ## Caption Summary
 SfDataGrid provides built-in support for caption summary. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
@@ -727,6 +939,103 @@ Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryR
 
 {% endtabs %}
 ![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
+
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Displaying caption summary for column](https://help.syncfusion.com/windowsforms/datagrid/summaries#displaying-caption-summary-for-column) section to know more about how to display caption summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 3 and `GridSummaryRow.Title` is defined along with summary columns.
+
+{% tabs %}
+{% highlight c# %}
+// Creates the GridSummaryRow.
+GridSummaryRow captionSummaryRow = new GridSummaryRow();
+captionSummaryRow.Name = "CaptionSummary";
+captionSummaryRow.ShowSummaryInRow = false;
+captionSummaryRow.TitleColumnCount = 3;
+captionSummaryRow.Title = "Total Price: {PriceAmount} for {ProductCount} Products";
+
+// Creates the GridSummaryColumn1.
+GridSummaryColumn summaryColumn1 = new GridSummaryColumn();
+summaryColumn1.Name = "OrderDate";
+summaryColumn1.Format = "{Count:d}";
+summaryColumn1.MappingName = "OrderDate";
+summaryColumn1.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn2 = new GridSummaryColumn();
+summaryColumn2.Name = "ProductCount";
+summaryColumn2.Format = "{Count:d}";
+summaryColumn2.MappingName = "Quantity";
+summaryColumn2.SummaryType = SummaryType.CountAggregate;
+
+// Creates the GridSummaryColumn2.
+GridSummaryColumn summaryColumn3 = new GridSummaryColumn();
+summaryColumn3.Name = "PriceAmount";
+summaryColumn3.Format = "{Sum:c}";
+summaryColumn3.MappingName = "UnitPrice";
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate;
+
+
+// Adds the summary column in the SummaryColumns collection.
+captionSummaryRow.SummaryColumns.Add(summaryColumn1);
+captionSummaryRow.SummaryColumns.Add(summaryColumn2);
+captionSummaryRow.SummaryColumns.Add(summaryColumn3);
+
+// Initializes the caption summary row.
+this.sfDataGrid1.CaptionSummaryRow = captionSummaryRow;
+{% endhighlight %}
+{% highlight vb %}
+' Creates the GridSummaryRow.
+Dim captionSummaryRow As New GridSummaryRow()
+captionSummaryRow.Name = "CaptionSummary"
+captionSummaryRow.ShowSummaryInRow = False
+captionSummaryRow.TitleColumnCount = 3
+captionSummaryRow.Title = "Total Price: {PriceAmount} for {ProductCount} Products"
+
+' Creates the GridSummaryColumn1.
+Dim summaryColumn1 As New GridSummaryColumn()
+summaryColumn1.Name = "OrderDate"
+summaryColumn1.Format = "{Count:d}"
+summaryColumn1.MappingName = "OrderDate"
+summaryColumn1.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn2 As New GridSummaryColumn()
+summaryColumn2.Name = "ProductCount"
+summaryColumn2.Format = "{Count:d}"
+summaryColumn2.MappingName = "Quantity"
+summaryColumn2.SummaryType = SummaryType.CountAggregate
+
+' Creates the GridSummaryColumn2.
+Dim summaryColumn3 As New GridSummaryColumn()
+summaryColumn3.Name = "PriceAmount"
+summaryColumn3.Format = "{Sum:c}"
+summaryColumn3.MappingName = "UnitPrice"
+summaryColumn3.SummaryType = SummaryType.DoubleAggregate
+
+
+' Adds the summary column in the SummaryColumns collection.
+captionSummaryRow.SummaryColumns.Add(summaryColumn1)
+captionSummaryRow.SummaryColumns.Add(summaryColumn2)
+captionSummaryRow.SummaryColumns.Add(summaryColumn3)
+
+' Initializes the caption summary row.
+Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
+{% endhighlight %}
+
+The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
+
+![Caption summary columns with title in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries25.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `CaptionSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ## On-demand summary calculation for group and caption summary
 
