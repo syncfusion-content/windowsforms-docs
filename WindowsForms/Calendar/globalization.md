@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Abbreviating the Days names of SfCalendar | Windows Forms | Syncfusion
-description: Abbreviating the Days names of SfCalendar control for Windows Forms
+description: The SfCalendar control provides globalization support to design and develop a world-ready application that supports localized interfaces in multiple cultures. 
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Globalization
+# Globalization in Windows Forms Calendar (SfCalendar)
 
 The `SfCalendar` control provides globalization support to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
@@ -21,7 +21,7 @@ The culture information can be applied to the calendar by using the [Culture](ht
 
 //Setting the culture
 
-this.sfCalendar.Culture = new CultureInfo("he-IL");
+calendar.Culture = new CultureInfo("he-IL");
 
 {% endhighlight  %}
 
@@ -29,7 +29,7 @@ this.sfCalendar.Culture = new CultureInfo("he-IL");
 
 ' Setting the culture
 
-Me.sfCalendar.Culture = New CultureInfo("he-IL")
+calendar.Culture = New CultureInfo("he-IL")
 
 {% endhighlight  %}
 
