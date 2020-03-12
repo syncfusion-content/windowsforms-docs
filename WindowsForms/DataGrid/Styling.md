@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Styles
+# Styles in Windows Forms DataGrid (SfDataGrid)
 
 ## Styling Record Cell
 
@@ -151,7 +151,7 @@ SfDataGrid helps to provide background pattern for the cells by using `Interior`
 
 The background pattern can be achieved by initializing the `Interior` property using `BrushInfo` object with `PatternStyle` and the necessary colors.
 
-In the below example, background pattern is applied for the header cells by providing the `PattertStyle` as `SmallGrid` and the fore color and back color for the pattern.
+In the below example, background pattern is applied for the header cells by providing the `PatternStyle` as `SmallGrid` and the fore color and back color for the pattern.
 
 {% tabs %}
 {% highlight c# %}
