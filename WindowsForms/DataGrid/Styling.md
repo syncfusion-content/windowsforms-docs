@@ -99,6 +99,71 @@ For more details, refer to `Appearance` in [Group Summary](https://help.syncfusi
 Appearance of the table summary can be customized by using the [TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~TableSummaryRowStyle.html) property.
 For more details, refer to `Appearance` in [Table Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#table-summary ) section.
 
+## Gradient Style
+
+SfDataGrid helps to provide gradient style appearance for the cells by using `Interior` property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+
+The gradient  background can be achieved by initializing the `Interior` property using `BrushInfo` object with `GradientStyle` and the necessary colors.
+
+In the below example, gradient style is applied for the header cells and the record cells by providing the `GradientStyle` as `Horizontal` and the gradient start and end colors.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns["OrderDate"].HeaderStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"));
+this.sfDataGrid1.Columns["Quantity"].HeaderStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"));
+this.sfDataGrid1.Columns["UnitPrice"].HeaderStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#f77891"), ColorTranslator.FromHtml("#ff5862"));
+
+this.sfDataGrid1.Columns["OrderDate"].CellStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"));
+this.sfDataGrid1.Columns["Quantity"].CellStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"));
+this.sfDataGrid1.Columns["UnitPrice"].CellStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#f77891"), ColorTranslator.FromHtml("#ff5862"));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns("OrderDate").HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"))
+Me.sfDataGrid1.Columns("Quantity").HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"))
+Me.sfDataGrid1.Columns("UnitPrice").HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#f77891"), ColorTranslator.FromHtml("#ff5862"))
+
+Me.sfDataGrid1.Columns("OrderDate").CellStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"))
+Me.sfDataGrid1.Columns("Quantity").CellStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"))
+Me.sfDataGrid1.Columns("UnitPrice").CellStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, ColorTranslator.FromHtml("#f77891"), ColorTranslator.FromHtml("#ff5862"))
+{% endhighlight %}
+{% endtabs %}
+
+![Gradient style in windows forms datagrid](Styling_images/Styling10.png)
+
+In the below example, gradient style is applied for the record cells by providing multiple gradient colors using `BrushInfoColorList`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns["OrderID"].CellStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, 
+new Syncfusion.WinForms.Core.BrushInfoColorList(new Color[] { ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"),
+ColorTranslator.FromHtml("#ff5862"),ColorTranslator.FromHtml("#f77891")}));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns("OrderID").CellStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(GradientStyle.Horizontal, New Syncfusion.WinForms.Core.BrushInfoColorList(New Color() { ColorTranslator.FromHtml("#FFDF80"), ColorTranslator.FromHtml("#FFA925"), ColorTranslator.FromHtml("#ff5862"),ColorTranslator.FromHtml("#f77891")}))
+{% endhighlight %}
+{% endtabs %}
+
+![Gradient style using BrushInfoColorList in windows forms datagrid](Styling_images/Styling11.png)
+
+## Pattern Style
+
+SfDataGrid helps to provide pattern style appearance for the cells by using `Interior` property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+
+The background pattern can be achieved by initializing the `Interior` property using `BrushInfo` object with `PatternStyle` and the necessary colors.
+
+In the below example, background pattern is applied for the header cells by providing the `PattertStyle` as `SmallGrid` and the fore color and back color for the pattern.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.HeaderStyle.Interior = new Syncfusion.WinForms.Core.BrushInfo(PatternStyle.SmallGrid, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushInfo(PatternStyle.SmallGrid, ColorTranslator.FromHtml("#5aff8d"), ColorTranslator.FromHtml("#12cb74"))
+{% endhighlight %}
+{% endtabs %}
+
+![Pattern style in windows forms datagrid](Styling_images/Styling12.png)
+
 ## Styling UnboundRows
 Appearance of the unbound rows can be customized by using the [UnboundRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~UnboundRowStyle.html) property.
 For more details, refer to `Appearance` in [Unbound Rows](https://help.syncfusion.com/windowsforms/sfdatagrid/unboundrow) section.
