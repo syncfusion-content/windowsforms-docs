@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Selection
+# Selection in Windows Forms Calendar (SfCalendar)
 
 The SfCalendar allows you to select one or more dates. The selected date in the calendar can be changed by the mouse, keyboard, and touch interaction.
 
@@ -29,9 +29,9 @@ The selection of the calendar control can be changed programmatically by setting
 
 // Move the current view to the date based on given value. Return value as false when the date is not fall within min max range or Blackout dates contains the date.
 
-if (this.sfCalendar.GoToDate(new DateTime(2018,02,02)))
+if (calendar.GoToDate(new DateTime(2018,02,02)))
 {
-    this.sfCalendar.SelectedDate = new DateTime(2018,02,02);
+    calendar.SelectedDate = new DateTime(2018,02,02);
 }
 
 {% endhighlight  %}
@@ -40,9 +40,9 @@ if (this.sfCalendar.GoToDate(new DateTime(2018,02,02)))
 
 ' Move the current view to the date based on given value. Return value as false when the date is not fall within min max range or Blackout dates contains the date.
 
-If Me.sfCalendar.GoToDate(New DateTime(2018, 2, 2)) Then
+If calendar.GoToDate(New DateTime(2018, 2, 2)) Then
 
-    Me.sfCalendar.SelectedDate = New DateTime(2018, 2, 2)
+    calendar.SelectedDate = New DateTime(2018, 2, 2)
 
 End If
 
@@ -136,7 +136,7 @@ The `SfCalendar` control allows you to select multiple dates when the [AllowMult
 
 // Setting to Allow Multiple Selection
 
-this.SfCalendar1.AllowMultipleSelection = true;
+calendar.AllowMultipleSelection = true;
 
 {% endhighlight  %}
 
@@ -144,7 +144,7 @@ this.SfCalendar1.AllowMultipleSelection = true;
 
 ' Setting to Allow Multiple Selection
 
-Me.SfCalendar1.AllowMultipleSelection = true
+calendar.AllowMultipleSelection = true
 
 {% endhighlight  %}
 
@@ -182,23 +182,23 @@ Multiple dates in the calendar control can be selected programmatically by addin
 
 {% highlight C# %}
 
-sfCalendar.AllowMultipleSelection = true;
+calendar.AllowMultipleSelection = true;
 
-sfCalendar.BlackoutDates.Add(new DateTime(2018, 02, 12));
+calendar.BlackoutDates.Add(new DateTime(2018, 02, 12));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 12));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 12));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 13));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 13));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 14));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 14));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 15));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 15));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 16));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 16));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 17));
+calendar.SelectedDates.Add(new DateTime(2018, 02, 17));
 
-sfCalendar.SelectedDates.Add(new DateTime(2018, 02, 18));         
+calendar.SelectedDates.Add(new DateTime(2018, 02, 18));         
 
 {% endhighlight  %}
 
@@ -222,7 +222,7 @@ List<DateTime> time = new List<DateTime>();
 
 time = weekends.ToList();
 
-this.sfCalendar.BlackoutDates = time;
+calendar.BlackoutDates = time;
 
 
 {% endhighlight  %}
@@ -238,7 +238,7 @@ this.sfCalendar.BlackoutDates = time;
 
         time = weekends.ToList
 
-        Me.sfCalendar.BlackoutDates = time
+        calendar.BlackoutDates = time
 
 {% endhighlight  %}
 
@@ -313,11 +313,11 @@ The following code example illustrates how to restrict the selection change on-d
 
 // Invoking selection changing event
 
-this.sfCalendar.SelectionChanging += SfCalendar_SelectionChanging;
+calendar.SelectionChanging += SfCalendar_SelectionChanging;
 
 // Invoking selection changed event
 
-this.sfCalendar.SelectionChanged += SfCalendar_SelectionChanged;
+calendar.SelectionChanged += SfCalendar_SelectionChanged;
 
 // Occurs before the selected date changed in Calendar.
 
@@ -346,11 +346,11 @@ private void SfCalendar_SelectionChanged(object sender, EventArgs e)
 
 ' Invoking selection changing event
 
-Me.sfCalendar.SelectionChanging = (Me.sfCalendar.SelectionChanging + SfCalendar_SelectionChanging)
+calendar.SelectionChanging = (Me.sfCalendar.SelectionChanging + SfCalendar_SelectionChanging)
 
 ' Invoking selection changed event
 
-Me.sfCalendar.SelectionChanged = (Me.sfCalendar.SelectionChanged + SfCalendar_SelectionChanged)
+calendar.SelectionChanged = (Me.sfCalendar.SelectionChanged + SfCalendar_SelectionChanged)
 
 ' Occurs before the selected date changed in Calendar.
 
@@ -386,7 +386,7 @@ Selected dates of the calendar control can be removed from the selection by prog
 
 // Clear the selected dates and set the new date as selected date
 
-sfCalendar.ClearSelection(new DateTime(2018, 02, 16));
+calendar.ClearSelection(new DateTime(2018, 02, 16));
 
 {% endhighlight  %}
 

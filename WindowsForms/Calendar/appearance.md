@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms Calendar (SfCalendar)
 
 This section explains how to customize the appearance of header, footer, and cells in the calendar by using [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~Style.html) properties.
 
@@ -42,23 +42,23 @@ The following code example illustrates how to customize appearances of the calen
 
 // Setting header BackColor
 
-this.sfCalendar.Style.Header.BackColor = Color.Red;
+calendar.Style.Header.BackColor = Color.Red;
 
 // Setting header ForeColor
 
-this.sfCalendar.Style.Header.ForeColor = Color.Yellow;
+calendar.Style.Header.ForeColor = Color.Yellow;
 
 // Setting header DayNames BackColor
 
-this.sfCalendar.Style.Header.DayNamesBackColor = Color.Green;
+calendar.Style.Header.DayNamesBackColor = Color.Green;
 
 // Setting header DayNames ForeColor
 
-this.sfCalendar.Style.Header.DayNamesForeColor = Color.WhiteSmoke;
+calendar.Style.Header.DayNamesForeColor = Color.WhiteSmoke;
 
 // Setting header DayNames Font
 
-this.sfCalendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular);
+calendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular);
 
 {% endhighlight  %}
 
@@ -68,23 +68,23 @@ this.sfCalendar.Style.Header.DayNamesFont = new System.Drawing.Font("Calibri", 1
 
 ' Setting header BackColor
 
-Me.sfCalendar.Style.Header.BackColor = Color.LightGray
+calendar.Style.Header.BackColor = Color.LightGray
 
 ' Setting header ForeColor
 
-Me.sfCalendar.Style.Header.ForeColor = Color.Blue
+calendar.Style.Header.ForeColor = Color.Blue
 
 ' Setting header DayNames BackColor
 
-Me.sfCalendar.Style.Header.DayNamesBackColor = Color.LightSeaGreen
+calendar.Style.Header.DayNamesBackColor = Color.LightSeaGreen
 
 ' Setting header DayNames ForeColor
 
-Me.sfCalendar.Style.Header.DayNamesForeColor = Color.AliceBlue
+calendar.Style.Header.DayNamesForeColor = Color.AliceBlue
 
 ' Setting header DayNames Font
 
-Me.sfCalendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
+calendar.Style.Header.DayNamesFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
 
 {% endhighlight  %}
 
@@ -108,15 +108,15 @@ The following code example illustrates the same:
 
 // set the Navigation Button ForeColor
             
-this.sfCalendar.Style.Header.NavigationButtonForeColor = Color.HotPink;
+calendar.Style.Header.NavigationButtonForeColor = Color.HotPink;
 
 // set the Navigation Button Hover ForeColor
 
-this.sfCalendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo;
+calendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo;
 
 // set the Navigation Button disabled ForeColor
             
-this.sfCalendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray;
+calendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray;
 
 {% endhighlight  %}
 
@@ -124,15 +124,15 @@ this.sfCalendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray
 
 ' set the Navigation Button ForeColor
 
-Me.sfCalendar.Style.Header.NavigationButtonForeColor = Color.HotPink
+calendar.Style.Header.NavigationButtonForeColor = Color.HotPink
 
 ' set the Navigation Button Hover ForeColor
 
-Me.sfCalendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo
+calendar.Style.Header.NavigationButtonHoverForeColor = Color.Indigo
 
 ' set the Navigation Button disabled ForeColor
 
-Me.sfCalendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray
+calendar.Style.Header.NavigationButtonDisabledForeColor = Color.LightGray
 
 The visibility and alignment of navigation buttons can also be customized.
 
@@ -152,7 +152,7 @@ Navigation buttons are used to move between views in the `SfCalendar`. The visib
 
 // Indicating whether show the navigation buttons which used to move between views. 
 
-this.sfCalendar.ShowNavigationButton = false;
+calendar.ShowNavigationButton = false;
 
 {% endhighlight  %}
 
@@ -160,7 +160,7 @@ this.sfCalendar.ShowNavigationButton = false;
 
 ' Indicating whether  show the navigation buttons which used to move between views. 
 
-Me.sfCalendar.ShowNavigationButton = false
+calendar.ShowNavigationButton = false
 
 {% endhighlight  %}
 
@@ -178,7 +178,7 @@ Navigation buttons can be aligned in different sides relative to the calendar he
 
 // Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
 
-this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left;
+calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left;
 
 {% endhighlight  %}
 
@@ -186,7 +186,7 @@ this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Navi
 
 ' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Left alignment. 
 
-Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left
+calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Left
 
 {% endhighlight  %}
 
@@ -200,7 +200,7 @@ Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Naviga
 
 // Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
 
-this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both;
+calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both;
 
 {% endhighlight  %}
 
@@ -208,7 +208,7 @@ this.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.Navi
 
 ' Indicating how the navigation buttons should align relative to the Calendar Header. Setting Both alignment. 
 
-Me.sfCalendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both
+calendar.NavigationButtonAlignment = Syncfusion.WinForms.Input.Enums.NavigationButtonAlignment.Both
 
 {% endhighlight  %}
 
@@ -235,19 +235,19 @@ The following code example illustrates how to change the background and foregrou
 
 // Setting Footer BackColor
 
-this.sfCalendar.Style.Footer.BackColor = Color.LightGreen;
+calendar.Style.Footer.BackColor = Color.LightGreen;
 
 // Setting Footer ForeColor
 
-this.sfCalendar.Style.Footer.ForeColor = Color.Green;
+calendar.Style.Footer.ForeColor = Color.Green;
 
 // Setting Footer HoverBackColor
 
-this.sfCalendar.Style.Footer.HoverBackColor = Color.Yellow;
+calendar.Style.Footer.HoverBackColor = Color.Yellow;
 
 // Setting Footer HoverForeColor
 
-this.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen;
+calendar.Style.Footer.HoverForeColor = Color.SpringGreen;
 
 {% endhighlight  %}
 
@@ -257,19 +257,19 @@ this.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen;
 
 ' Setting Footer BackColor
 
-Me.sfCalendar.Style.Footer.BackColor = Color.LightGreen
+calendar.Style.Footer.BackColor = Color.LightGreen
 
 ' Setting Footer ForeColor
 
-Me.sfCalendar.Style.Footer.ForeColor = Color.Green
+calendar.Style.Footer.ForeColor = Color.Green
 
 ' Setting Footer HoverBackColor
 
-Me.sfCalendar.Style.Footer.HoverBackColor = Color.Yellow
+calendar.Style.Footer.HoverBackColor = Color.Yellow
 
 ' Setting Footer HoverForeColor
 
-Me.sfCalendar.Style.Footer.HoverForeColor = Color.SpringGreen
+calendar.Style.Footer.HoverForeColor = Color.SpringGreen
 
 {% endhighlight  %}
 
@@ -312,51 +312,51 @@ The following code example illustrates the customization of calendar cells:
 
 // Setting CellBackColor
 
-this.sfCalendar.Style.Cell.CellBackColor = Color.LightBlue;
+calendarr.Style.Cell.CellBackColor = Color.LightBlue;
 
 // Setting CellForeColor
 
-this.sfCalendar.Style.Cell.CellForeColor = Color.Red;
+calendar.Style.Cell.CellForeColor = Color.Red;
 
 // Setting CellHoverBorderColor
 
-this.sfCalendar.Style.Cell.CellHoverBorderColor = Color.LightCyan;
+calendar.Style.Cell.CellHoverBorderColor = Color.LightCyan;
 
 // Setting SelectedCellBackColor
 
-this.sfCalendar.Style.Cell.SelectedCellBackColor = Color.Blue;
+calendar.Style.Cell.SelectedCellBackColor = Color.Blue;
 
 // Setting SelectedCellForeColor
 
-this.sfCalendar.Style.Cell.SelectedCellForeColor = Color.White;
+calendar.Style.Cell.SelectedCellForeColor = Color.White;
 
 // Setting SelectedCellBorderColor
 
-this.sfCalendar.Style.Cell.SelectedCellBorderColor = Color.Tomato;
+calendar.Style.Cell.SelectedCellBorderColor = Color.Tomato;
 
 // Setting SelectedCellHoverBorderColor
 
-this.sfCalendar.Style.Cell.SelectedCellHoverBorderColor = Color.Yellow;
+calendar.Style.Cell.SelectedCellHoverBorderColor = Color.Yellow;
 
 // Setting TrailingCellBackColor
 
-this.sfCalendar.Style.Cell.TrailingCellBackColor = Color.LightGray;
+calendar.Style.Cell.TrailingCellBackColor = Color.LightGray;
 
 // Setting TrailingCellForeColor
 
-this.sfCalendar.Style.Cell.TrailingCellForeColor = Color.Black;
+calendar.Style.Cell.TrailingCellForeColor = Color.Black;
 
 // Setting TrailingCellFont
 
-this.sfCalendar.Style.Cell.TrailingCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
+calendar.Style.Cell.TrailingCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
 
 // Setting CellFont
 
-this.sfCalendar.Style.Cell.CellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
+calendar.Style.Cell.CellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold);
 
 // Setting selected CellFont
 
-this.sfCalendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular); 
+calendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular); 
 
 {% endhighlight  %}
 
@@ -364,51 +364,51 @@ this.sfCalendar.Style.Cell.SelectedCellFont = new System.Drawing.Font("Calibri",
 
 ' Setting CellBackColor
 
-Me.sfCalendar.Style.Cell.CellBackColor = Color.LightBlue
+calendar.Style.Cell.CellBackColor = Color.LightBlue
 
 ' Setting CellForeColor
 
-Me.sfCalendar.Style.Cell.CellForeColor = Color.Red
+calendar.Style.Cell.CellForeColor = Color.Red
 
 ' Setting CellHoverBorderColor
 
-Me.sfCalendar.Style.Cell.CellHoverBorderColor = Color.LightCyan
+calendar.Style.Cell.CellHoverBorderColor = Color.LightCyan
 
 ' Setting SelectedCellBackColor
 
-Me.sfCalendar.Style.Cell.SelectedCellBackColor = Color.Blue
+calendar.Style.Cell.SelectedCellBackColor = Color.Blue
 
 ' Setting SelectedCellForeColor
 
-Me.sfCalendar.Style.Cell.SelectedCellForeColor = Color.White
+calendar.Style.Cell.SelectedCellForeColor = Color.White
 
 ' Setting SelectedCellBorderColor
 
-Me.sfCalendar.Style.Cell.SelectedCellBorderColor = Color.Tomato
+calendar.Style.Cell.SelectedCellBorderColor = Color.Tomato
 
 ' Setting SelectedCellHoverBorderColor
 
-Me.sfCalendar.Style.Cell.SelectedCellHoverBorderColor = Color.Yellow
+calendar.Style.Cell.SelectedCellHoverBorderColor = Color.Yellow
 
 ' Setting TrailingCellBackColor
 
-Me.sfCalendar.Style.Cell.TrailingCellBackColor = Color.LightGray
+calendar.Style.Cell.TrailingCellBackColor = Color.LightGray
 
 ' Setting TrailingCellForeColor
 
-Me.sfCalendar.Style.Cell.TrailingCellForeColor = Color.Black
+calendar.Style.Cell.TrailingCellForeColor = Color.Black
 
 ' Setting TrailingCellFont
 
-Me.sfCalendar.Style.Cell.TrailingCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
+calendar.Style.Cell.TrailingCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
 
 ' Setting CellFont
 
-Me.sfCalendar.Style.Cell.CellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
+calendar.Style.Cell.CellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold)
 
 ' Setting selected CellFont
 
-Me.sfCalendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
+calendar.Style.Cell.SelectedCellFont = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular)
 
 {% endhighlight  %}
 
@@ -494,7 +494,7 @@ This option helps to set the Office2016Colorful Theme.
 
 // Office2016Colorful
 
- this.sfCalendar.ThemeName = "Office2016Colorful";
+calendar.ThemeName = "Office2016Colorful";
 
 {% endhighlight  %}
 
@@ -502,7 +502,7 @@ This option helps to set the Office2016Colorful Theme.
 
 ' Office2016Colorful 
 
-Me.sfCalendar.ThemeName = "Office2016Colorful"
+calendar.ThemeName = "Office2016Colorful"
 
 {% endhighlight  %}
 
@@ -520,7 +520,7 @@ This option helps to set the Office2016White Theme.
 
 // Office2016White
 
- this.sfCalendar.ThemeName = "Office2016White";
+ calendar.ThemeName = "Office2016White";
 
 {% endhighlight  %}
 
@@ -528,7 +528,7 @@ This option helps to set the Office2016White Theme.
 
 ' Office2016White 
 
-Me.sfCalendar.ThemeName = "Office2016White"
+calendar.ThemeName = "Office2016White"
 
 {% endhighlight  %}
 
@@ -546,7 +546,7 @@ This option helps to set the Office2016DarkGray Theme.
 
 // Office2016DarkGray
 
- this.sfCalendar.ThemeName = "Office2016DarkGray";
+ calendar.ThemeName = "Office2016DarkGray";
 
 {% endhighlight  %}
 
@@ -554,7 +554,7 @@ This option helps to set the Office2016DarkGray Theme.
 
 ' Office2016DarkGray 
 
-Me.sfCalendar.ThemeName = "Office2016DarkGray"
+calendar.ThemeName = "Office2016DarkGray"
 
 {% endhighlight  %}
 
@@ -572,7 +572,7 @@ This option helps to set the Office2016Black Theme.
 
 // Office2016Black
 
- this.sfCalendar.ThemeName = "Office2016Black";
+ calendar.ThemeName = "Office2016Black";
 
 {% endhighlight  %}
 
@@ -580,7 +580,7 @@ This option helps to set the Office2016Black Theme.
 
 ' Office2016Black 
 
-Me.sfCalendar.ThemeName = "Office2016Black"
+calendar.ThemeName = "Office2016Black"
 
 {% endhighlight  %}
 
@@ -598,7 +598,7 @@ The `SfCalendar` allows you to hide the days of next month and previous month in
 
 // Setting the Next and Previous Months Dates invisible
 
-this.SfCalendar1.TrailingDatesVisible = false;
+calendar.TrailingDatesVisible = false;
 
 {% endhighlight  %}
 
@@ -606,7 +606,7 @@ this.SfCalendar1.TrailingDatesVisible = false;
 
 ' Setting the Next and Previous Months Dates invisible
 
-this.SfCalendar1.TrailingDatesVisible = False
+calendar.TrailingDatesVisible = False
 
 {% endhighlight  %}
 
@@ -624,7 +624,7 @@ By default, the day names are displayed in an abbreviated form in the calendar c
 
 // Setting the Show Abbreviated Day Names
 
-this.sfCalendar.ShowAbbreviatedDayNames = false;
+calendar.ShowAbbreviatedDayNames = false;
 
 {% endhighlight  %}
 
@@ -632,7 +632,7 @@ this.sfCalendar.ShowAbbreviatedDayNames = false;
 
 ' Setting the Show Abbreviated Day Names
 
-Me.sfCalendar.ShowAbbreviatedDayNames = false
+calendar.ShowAbbreviatedDayNames = false
 
 {% endhighlight  %}
 
@@ -650,7 +650,7 @@ Me.sfCalendar.ShowAbbreviatedDayNames = false
 
 //Enable the Right to Left 
 
-this.sfCalendar.RightToLeft = RightToLeft.Yes;
+calendar.RightToLeft = RightToLeft.Yes;
 
 {% endhighlight  %}
 
@@ -658,7 +658,7 @@ this.sfCalendar.RightToLeft = RightToLeft.Yes;
 
 'Enable the Right to Left 
 
-Me.sfCalendar.RightToLeft = RightToLeft.Yes
+calendar.RightToLeft = RightToLeft.Yes
 
 {% endhighlight  %}
 
@@ -676,7 +676,7 @@ The today cell will be highlighted even the selected date differs from today in 
 
 // Indicating whether Today cell highlighted even selected date is different than today
 
-this.sfCalendar.HighlightTodayCell = true;
+calendar.HighlightTodayCell = true;
 
 {% endhighlight  %}
 
@@ -684,7 +684,7 @@ this.sfCalendar.HighlightTodayCell = true;
 
 ' Indicating whether Today cell highlighted even selected date is different than Today
 
-Me.sfCalendar.HighlightTodayCell = true
+calendar.HighlightTodayCell = true
 
 {% endhighlight  %}
 
@@ -711,9 +711,9 @@ The visibility of the calendar footer can be customized by using the [ShowFooter
 
 // Indicating the visibility of none button in footer 
 
-this.sfCalendar.ShowFooter = true;
+calendar.ShowFooter = true;
 
-this.sfCalendar.ShowNone = false;
+calendar.ShowNone = false;
 
 {% endhighlight  %}
 
@@ -721,9 +721,9 @@ this.sfCalendar.ShowNone = false;
 
 ' Indicating the visibility of none button in footer 
 
-Me.sfCalendar.ShowFooter = true
+calendar.ShowFooter = true
 
-Me.sfCalendar.ShowNone = false
+calendar.ShowNone = false
 
 {% endhighlight  %}
 
@@ -737,9 +737,9 @@ Me.sfCalendar.ShowNone = false
 
 // Indicating the visibility of today button in footer 
 
-this.sfCalendar.ShowFooter = true;
+calendar.ShowFooter = true;
 
-this.sfCalendar.ShowToday = false;
+calendar.ShowToday = false;
 
 {% endhighlight  %}
 
@@ -747,9 +747,9 @@ this.sfCalendar.ShowToday = false;
 
 ' Indicating the visibility of today button in footer 
 
-Me.sfCalendar.ShowFooter = true
+calendar.ShowFooter = true
 
-Me.sfCalendar.ShowToday = false
+calendar.ShowToday = false
 
 {% endhighlight  %}
 
@@ -767,19 +767,19 @@ The visibility of splitters in the calendar control can be customized by setting
 
 // Enable Horizontal splitter
 
- this.sfCalendar.ShowHorizontalSplitter = true;
+ calendar.ShowHorizontalSplitter = true;
 
 // Enable Vertical splitter
 
-this.sfCalendar.ShowVerticalSplitter = true;
+calendar.ShowVerticalSplitter = true;
 
 //  color used draw the Horizontal splitter in cell view
 
-this.sfCalendar.Style.HorizontalSplitterColor = Color.Red;
+calendar.Style.HorizontalSplitterColor = Color.Red;
 
 // color used draw the vertical splitter in cell view
 
-this.sfCalendar.Style.VerticalSplitterColor = Color.Green;
+calendar.Style.VerticalSplitterColor = Color.Green;
 
 {% endhighlight  %}
 
@@ -787,19 +787,19 @@ this.sfCalendar.Style.VerticalSplitterColor = Color.Green;
 
 ' Enable Horizontal splitter
 
-Me.sfCalendar.ShowHorizontalSplitter = true
+calendar.ShowHorizontalSplitter = true
 
 ' Enable Vertical splitter
 
-Me.sfCalendar.ShowVerticalSplitter = true
+calendar.ShowVerticalSplitter = true
 
 '  color used draw the Horizontal splitter in cell view
 
-Me.sfCalendar.Style.HorizontalSplitterColor = Color.Red
+calendar.Style.HorizontalSplitterColor = Color.Red
 
 ' color used draw the vertical splitter in cell view
 
-Me.sfCalendar.Style.VerticalSplitterColor = Color.Green
+calendar.Style.VerticalSplitterColor = Color.Green
 
 {% endhighlight  %}
 

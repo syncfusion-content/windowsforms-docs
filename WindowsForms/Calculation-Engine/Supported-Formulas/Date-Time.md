@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+title: Date and Time in Calculate | WindowsForms | Syncfusion
+description: Learn here about the supported formulas of Syncfusion Windows Forms Calculate control and different date time formulas.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Date & Time 
+# Date and Time in Calculate
 
 ## DATE
 
@@ -444,7 +444,7 @@ Dates are stored as sequential serial numbers so that they can be used in calcul
 
 
 
-The `Networkdays` function is used to calculate the number of whole work days between two given dates. This includes all weekdays from Monday to Friday, but excludes a supplied list of holidays.
+The `NETWORKDAYS` function is used to calculate the number of whole work days between two given dates. This includes all weekdays from Monday to Friday, but excludes a supplied list of holidays.
 
 
 
@@ -483,7 +483,7 @@ _NETWORKDAYS( start_date, end_date, [holidays] )_
 
 
 
-`Networkdays.intl` calculates the number of whole work days between two supplied dates.
+`NETWORKDAYS.INTL` calculates the number of whole work days between two supplied dates.
 
 
 
@@ -741,7 +741,7 @@ Numbers 0 (Monday) through 6 (Sunday).</td></tr>
 
 
 
-For a supplied a date, the `Weeknum` function returns an integer representing the week number (from 1 to 53) of the year. 
+For a supplied a date, the `WEEKNUM` function returns an integer representing the week number (from 1 to 53) of the year. 
 
 
 
@@ -785,7 +785,7 @@ _WEEKNUM( serialNum, [returnType] )_
 
 
 
-The `Workday.intl` function returns a date that is a supplied number of working days (excluding weekends and holidays) ahead of a given start date.
+The `WORKDAY.INTL` function returns a date that is a supplied number of working days (excluding weekends and holidays) ahead of a given start date.
 
 
 

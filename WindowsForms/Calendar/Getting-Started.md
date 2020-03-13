@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with SfCalendar | WindowsForms | Syncfusion
-description: Learn here about how to add the Syncfusion Windows Forms SfCalendar control and explore its basic features.
+description: This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfCalendar** control with its basic functionalities.
 platform: WindowsForms
 control: SfCalendar 
 documentation: ug
 ---
 
-# Getting started with SfCalendar
+# Getting started with Windows Forms Calender (SfCalendar)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfCalendar** control with its basic functionalities.
 
@@ -319,7 +319,7 @@ The first day of a week can be changed by setting the [FirstDayOfWeek](https://h
 {% highlight C# %}
 
 //Setting the First Day Of Week
-this.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday;
+calendar.FirstDayOfWeek = DayOfWeek.Monday;
 
 {% endhighlight  %}
 
@@ -336,14 +336,14 @@ Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 ## Configure to show week number
 
-The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowWeekNumbers.html) property to true as follows:
+The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowWeekNumbers.html) property to true as follows:
 
 {% tabs %}
 
 {% highlight C# %}
 
 // Setting the Minimum and Maximum date
-calendar.ShowWeekNumbers = true;
+calendar.ShowWeekNumber = true;
 
 {% endhighlight  %}
 
