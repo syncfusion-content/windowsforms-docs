@@ -1987,6 +1987,38 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red
 
 ![Winforms datagrid shows that GridCheckBoxSelectorColumn styling](ColumnTypes_images/ColumnTypes_img48.png)
 
+The style of the header checkbox can be customized through the [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCheckBoxCellStyle_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.QueryCheckBoxCellStyle += OnSfDataGrid1_QueryCheckBoxCellStyle;
+
+private void OnSfDataGrid1_QueryCheckBoxCellStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryCheckBoxCellStyleEventArgs e)
+{
+    if (e.RowIndex == this.sfDataGrid1.TableControl.GetHeaderIndex() && e.Column.MappingName == "SelectorColumn")
+    {
+        e.Style.IndeterminateBorderColor = Color.Red;
+        e.Style.IndeterminateColor = Color.DarkViolet;
+    }
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+AddHandler sfDataGrid1.QueryCheckBoxCellStyle, AddressOf OnSfDataGrid1_QueryCheckBoxCellStyle
+
+Private Sub OnSfDataGrid1_QueryCheckBoxCellStyle(ByVal sender As Object, ByVal e As QueryCheckBoxCellStyleEventArgs)
+	If e.RowIndex = Me.sfDataGrid1.TableControl.GetHeaderIndex() AndAlso e.Column.MappingName = "SelectorColumn" Then
+		e.Style.IndeterminateBorderColor = Color.Red
+        e.Style.IndeterminateColor = Color.DarkViolet
+	End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn header checkbox styling](ColumnTypes_images/ColumnTypes_img49.png)
+
 ### Limitations
 The following are the limitations of `GridCheckBoxSelectorColumn`:
 
