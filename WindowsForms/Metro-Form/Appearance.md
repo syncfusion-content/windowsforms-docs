@@ -7,7 +7,7 @@ control: MetroForm
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms Metro Form
 
 ## Border thickness
 
