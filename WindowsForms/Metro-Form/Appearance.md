@@ -75,6 +75,26 @@ Me.CaptionBarHeight = 40
 
 ![](Appearance_images/Caption-Bar-Customization_img1.jpeg)
 
+### Retain the caption bar height on maximized mode
+
+By Default, the height of the caption bar will be reduced while form is in maximized state. To retain the height of caption bar, set `SfForm.CaptionBarHeightMode` property as `SameAlwaysOnMaximize`
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Caption bar color
 
 Caption bar color can be customized using `CaptionBarColor` property.
