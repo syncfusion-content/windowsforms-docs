@@ -416,6 +416,8 @@ tableSummaryRow2.SummaryColumns.Add(summaryColumn3)
 ' Adds the GridTableSummaryRow in the TableSummaryRows collection.
 Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1)
 Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
@@ -936,8 +938,8 @@ this.sfDataGrid1.CellRenderers.Add("CaptionSummary", new CustomGridCaptionSummar
 Me.sfDataGrid1.CellRenderers.Remove("CaptionSummary")
 Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryRenderer())
 {% endhighlight %}
-
 {% endtabs %}
+
 ![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
 
 ### Displaying column summary with title
@@ -1025,6 +1027,7 @@ captionSummaryRow.SummaryColumns.Add(summaryColumn3)
 ' Initializes the caption summary row.
 Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 

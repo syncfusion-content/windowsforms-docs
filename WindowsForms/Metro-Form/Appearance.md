@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: appearance
+title: Appearance of the Metro Form | Syncfusion
+description: This section explains about the UI Appearance and styles of MetroForm for syncfusion Essential Windows Forms
 platform: WindowsForms
 control: MetroForm
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms Metro Form
 
 ## Border thickness
 
@@ -50,7 +50,7 @@ Me.BorderThickness = 10
 
 {% endtabs %}
 
-![](Appearance_images/Customization_img1.jpeg)
+![BorderColor changed in winforms metroForm](Appearance_images/Customization_img1.jpeg)
 
 ## Caption bar height
 
@@ -73,7 +73,27 @@ Me.CaptionBarHeight = 40
 
 {% endtabs %}
 
-![](Appearance_images/Caption-Bar-Customization_img1.jpeg)
+![CaptionBarHeight customized in winforms metroForm](Appearance_images/Caption-Bar-Customization_img1.jpeg)
+
+### Retain the caption bar height on maximized mode
+
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroForm~CaptionBarHeightMode.html) as `SameAlwaysOnMaximize`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Caption bar color
 
@@ -96,7 +116,7 @@ Me.CaptionBarColor = Color.Pink
 
 {% endtabs %}
 
-![](Appearance_images/Caption-Bar-Customization_img2.jpeg)
+![Caption Bar Color changed in winforms metroform](Appearance_images/Caption-Bar-Customization_img2.jpeg)
 
 ## Caption alignment
 
@@ -123,7 +143,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 {% endtabs %}
 
-![](Appearance_images/CaptionAlign.png)
+![Caption text aligned in winforms metroform](Appearance_images/CaptionAlign.png)
 
 ## Caption vertical alignment
 
@@ -150,7 +170,7 @@ Me.CaptionVerticalAlignment = Syncfusion.Windows.Forms.VerticalAlignment.Top
 
 {% endtabs %}
 
-![](Appearance_images/CaptionVerticalAlignment.png)
+![Caption aligned vertically in winforms metroform](Appearance_images/CaptionVerticalAlignment.png)
 
 ## Icon alignment support
 
@@ -173,5 +193,5 @@ this.IconAlign = System.Windows.Forms.HorizontalAlignment.Right;
 
 {% endtabs %}
 
-![](Appearance_images/Icon Alignment.png)
+![Caption Icon aligned in winforms metroform](Appearance_images/Icon Alignment.png)
  
