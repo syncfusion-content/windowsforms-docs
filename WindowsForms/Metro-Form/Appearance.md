@@ -50,7 +50,7 @@ Me.BorderThickness = 10
 
 {% endtabs %}
 
-![BorderColor can be changed in winforms metroForm](Appearance_images/Customization_img1.jpeg)
+![BorderColor changed in winforms metroForm](Appearance_images/Customization_img1.jpeg)
 
 ## Caption bar height
 
@@ -73,7 +73,7 @@ Me.CaptionBarHeight = 40
 
 {% endtabs %}
 
-![CaptionBarHeight can be customized in winforms metroForm](Appearance_images/Caption-Bar-Customization_img1.jpeg)
+![CaptionBarHeight customized in winforms metroForm](Appearance_images/Caption-Bar-Customization_img1.jpeg)
 
 ### Retain the caption bar height on maximized mode
 
@@ -116,7 +116,7 @@ Me.CaptionBarColor = Color.Pink
 
 {% endtabs %}
 
-![Caption Bar Color can be changed in winforms metroform](Appearance_images/Caption-Bar-Customization_img2.jpeg)
+![Caption Bar Color changed in winforms metroform](Appearance_images/Caption-Bar-Customization_img2.jpeg)
 
 ## Caption alignment
 
@@ -143,7 +143,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Right
 
 {% endtabs %}
 
-![Caption text can be aligned in winforms metroform](Appearance_images/CaptionAlign.png)
+![Caption text aligned in winforms metroform](Appearance_images/CaptionAlign.png)
 
 ## Caption vertical alignment
 
@@ -170,7 +170,7 @@ Me.CaptionVerticalAlignment = Syncfusion.Windows.Forms.VerticalAlignment.Top
 
 {% endtabs %}
 
-![Caption can be aligned vertically in winforms metroform](Appearance_images/CaptionVerticalAlignment.png)
+![Caption aligned vertically in winforms metroform](Appearance_images/CaptionVerticalAlignment.png)
 
 ## Icon alignment support
 
@@ -193,5 +193,5 @@ this.IconAlign = System.Windows.Forms.HorizontalAlignment.Right;
 
 {% endtabs %}
 
-![Caption Icon can be aligned in winforms metroform](Appearance_images/Icon Alignment.png)
+![Caption Icon aligned in winforms metroform](Appearance_images/Icon Alignment.png)
  
