@@ -77,7 +77,7 @@ Me.CaptionBarHeight = 40
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced while form is in maximized state. To retain the height of caption bar, set [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroForm~CaptionBarHeightMode.html) property as `SameAlwaysOnMaximize`
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [MetroForm.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MetroForm~CaptionBarHeightMode.html) as `SameAlwaysOnMaximize`.
 
 {% tabs %}
 
