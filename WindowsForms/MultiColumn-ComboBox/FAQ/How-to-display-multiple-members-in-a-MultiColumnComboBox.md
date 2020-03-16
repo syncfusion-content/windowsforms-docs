@@ -9,26 +9,21 @@ documentation: ug
 
 # How to Display Multiple Members in a MultiColumnComboBox
 
-This section deals with displaying multiple members in a MultiColumnComboBox. Follow the steps to achieve the same.
+This section deals with displaying multiple members in a [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html). Follow the steps to achieve the same.
 
-1.Initialization of the MultiColumnComboBox.
+1.Initialization of the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html).
 
 {% tabs %}
 {% highlight c# %}
 
-// Set a boolean flag. 
-bool dropDownOpened = false;
 private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
 this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
-this.Load += Form1_Load;
 this.Controls.Add(this.multiColumnComboBox1); 
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' Set a boolean flag. 
-Private dropDownOpened As Boolean = False
 Private multiColumnComboBox1 As Syncfusion.Windows.Forms.Tools.MultiColumnComboBox
 Me.multiColumnComboBox1 = New Syncfusion.Windows.Forms.Tools.MultiColumnComboBox()
 Me.Controls.Add(Me.multiColumnComboBox1)
@@ -38,10 +33,14 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 
 2.Populate the MultiColumnComboBox with data. Refer [Data Binding](https://help.syncfusion.com/windowsforms/multicolumncombobox/data-binding) topic.
 
-3.In order to display the contents of the entire row in the GridListControl in the MultiColumnComboBox instead of just the DisplayMember, you can handle the MultiColumnComboBox's SelectedIndexChanged and DropDown event as shown below.
+3.In order to display the contents of the entire row in the [GridListControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridListControl.html) in the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) instead of just the DisplayMember, you can handle the MultiColumnComboBox's [SelectedIndexChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound~SelectedIndexChanged_EV.html) and DropDown event as shown below.
 
 {% tabs %}
 {% highlight c# %}
+
+bool dropDownOpened = false;
+
+string text = "";
 
 private void Form1_Load(object sender, EventArgs e)
 {
@@ -54,15 +53,13 @@ private void multiColumnComboBox1_DropDown(object sender, System.EventArgs e)
 	this.dropDownOpened = true;
 }
 
-string text = "";
-
 private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
 {
 	if (this.dropDownOpened == true)
 	{
-        for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
+		for(int i =1; i<=this.multiColumnComboBox1.ListBox.Grid.ColCount; i++)
 		{
-    		text += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
+			text += this.multiColumnComboBox1.ListBox.Grid[this.multiColumnComboBox1.SelectedIndex+1, i].Text + " ";
 		}
 		this.dropDownOpened = false;
 		this.multiColumnComboBox1.Text = text;
@@ -74,6 +71,10 @@ private void multiColumnComboBox1_SelectedIndexChanged(object sender, System.Eve
 
 {% highlight vb %}
  
+Private dropDownOpened As Boolean = False
+
+Private text As String = ""
+
 Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 	AddHandler Me.multiColumnComboBox1.SelectedIndexChanged, AddressOf multiColumnComboBox1_SelectedIndexChanged
 	AddHandler Me.multiColumnComboBox1.DropDown, AddressOf multiColumnComboBox1_DropDown
@@ -83,20 +84,20 @@ Private Sub multiColumnComboBox1_DropDown(ByVal sender As Object, ByVal e As Sys
 	Me.dropDownOpened = True
 End Sub
 
-Private text As String = ""
-
 Private Sub multiColumnComboBox1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
-    If Me.dropDownOpened = True Then
-        For i As Integer = 1 To Me.multiColumnComboBox1.ListBox.Grid.ColCount
-            text += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex + 1, i).Text & " "
-        Next
+	If Me.dropDownOpened = True Then
+		For i As Integer = 1 To Me.multiColumnComboBox1.ListBox.Grid.ColCount
+			text += Me.multiColumnComboBox1.ListBox.Grid(Me.multiColumnComboBox1.SelectedIndex + 1, i).Text & " "
+		Next
 		Me.dropDownOpened = False
-        Me.multiColumnComboBox1.Text = text
-    End If   
-    text = ""
+		Me.multiColumnComboBox1.Text = text
+	End If
+	text = ""
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+[View Sample link in GitHub](https://github.com/SyncfusionExamples/How-to-display-multiple-members-in-WinForms-MultiColumnComboBox)
 
    ![Display-multiple-fields](Frequently-Asked-Questions_images/Overview_img332.jpeg)
