@@ -226,92 +226,6 @@ Me.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow2)
 
 ![Windows form datagrid showing table summary row at top and bottom](SfDataGrid_Summaries_UG_images/summaries4.png)
 
-### Appearance
-The appearance of the table summary can be customized by [SfDataGrid.Style.TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~TableSummaryRowStyle.html) property. The `TableSummaryRowStyle` property contains all the settings that are needed for the table summary row appearance customization.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue;
-this.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = new GridBorder(Color.Black, GridBorderWeight.Medium);
-this.sfDataGrid1.Style.TableSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue
-Me.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = New GridBorder(Color.Black, GridBorderWeight.Medium)
-Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
-{% endhighlight %}
-{% endtabs %}
-
-![Table summary row appearance customization in windows form datagrid](SfDataGrid_Summaries_UG_images/summaries5.png)
-
-### Overriding Table Summary Renderer
-[GridTableSummaryCellRender](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRender`.
-
-#### Creating Custom Renderer
-The number format for numeric values displayed on [GridTableSummaryRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTableSummaryRow.html) can be applied by overriding the `OnRender` method in `GridTableSummaryCellRenderer` class.
-
-{% tabs %}
-{% highlight c# %}
-  public class CustomGridTableSummaryRenderer : GridTableSummaryCellRenderer
-    {
-        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
-            CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
-        {
-            if (string.IsNullOrEmpty(cellValue))
-                return;
-            // Creates new number format and apply it to summary value. 
-            NumberFormatInfo format = new NumberFormatInfo();
-            format.NumberDecimalDigits = 3;
-            format.NumberDecimalSeparator = " * ";
-            format.NumberGroupSeparator = ",";
-            //Number format is applied to summary value.
-            cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
-            StringFormat stringFormat = new StringFormat();
-            stringFormat.LineAlignment = StringAlignment.Center;
-            stringFormat.Alignment = StringAlignment.Center;
-            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
-        }
-    }
-{% endhighlight %}
-{% highlight vb %}
-  Public Class CustomGridTableSummaryRenderer
-	  Inherits GridTableSummaryCellRenderer
-		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
-			If String.IsNullOrEmpty(cellValue) Then
-				Return
-			End If
-			' Creates new number format and apply it to summary value. 
-			Dim format As New NumberFormatInfo()
-			format.NumberDecimalDigits = 3
-			format.NumberDecimalSeparator = " * "
-			format.NumberGroupSeparator = ","
-			'Number format is applied to summary value.
-			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
-			Dim stringFormat As New StringFormat()
-			stringFormat.LineAlignment = StringAlignment.Center
-			stringFormat.Alignment = StringAlignment.Center
-			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
-		End Sub
-  End Class
-{% endhighlight %}
-{% endtabs %}
-
-#### Replacing Custom Renderer
-The overridden custom table summary renderer can be replaced with default renderer by replacing the `CustomGridTableSummaryRenderer` to the `TableSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.CellRenderers.Remove("TableSummary");
-this.sfDataGrid1.CellRenderers.Add("TableSummary", new CustomGridTableSummaryRenderer());
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.CellRenderers.Remove("TableSummary")
-Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRenderer())
-{% endhighlight %}
-{% endtabs %}
-
-![Custom table summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries6.png)
-
 ### Displaying column summary with title
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
@@ -430,6 +344,92 @@ The following are the limitations of displaying column summary along with title 
 * If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
 * Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
+### Appearance
+The appearance of the table summary can be customized by [SfDataGrid.Style.TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~TableSummaryRowStyle.html) property. The `TableSummaryRowStyle` property contains all the settings that are needed for the table summary row appearance customization.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue;
+this.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = new GridBorder(Color.Black, GridBorderWeight.Medium);
+this.sfDataGrid1.Style.TableSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.TableSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.TableSummaryRowStyle.Borders.All = New GridBorder(Color.Black, GridBorderWeight.Medium)
+Me.sfDataGrid1.Style.TableSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
+{% endhighlight %}
+{% endtabs %}
+
+![Table summary row appearance customization in windows form datagrid](SfDataGrid_Summaries_UG_images/summaries5.png)
+
+### Overriding Table Summary Renderer
+[GridTableSummaryCellRender](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridTableSummaryCellRenderer.html) is the cell renderer which renders the table summary row. The table summary row appearance and the summary value can be customized with the `GridTableSummaryCellRender`.
+
+#### Creating Custom Renderer
+The number format for numeric values displayed on [GridTableSummaryRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridTableSummaryRow.html) can be applied by overriding the `OnRender` method in `GridTableSummaryCellRenderer` class.
+
+{% tabs %}
+{% highlight c# %}
+  public class CustomGridTableSummaryRenderer : GridTableSummaryCellRenderer
+    {
+        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
+            CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+        {
+            if (string.IsNullOrEmpty(cellValue))
+                return;
+            // Creates new number format and apply it to summary value. 
+            NumberFormatInfo format = new NumberFormatInfo();
+            format.NumberDecimalDigits = 3;
+            format.NumberDecimalSeparator = " * ";
+            format.NumberGroupSeparator = ",";
+            //Number format is applied to summary value.
+            cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.LineAlignment = StringAlignment.Center;
+            stringFormat.Alignment = StringAlignment.Center;
+            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
+        }
+    }
+{% endhighlight %}
+{% highlight vb %}
+  Public Class CustomGridTableSummaryRenderer
+	  Inherits GridTableSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			' Creates new number format and apply it to summary value. 
+			Dim format As New NumberFormatInfo()
+			format.NumberDecimalDigits = 3
+			format.NumberDecimalSeparator = " * "
+			format.NumberGroupSeparator = ","
+			'Number format is applied to summary value.
+			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+  End Class
+{% endhighlight %}
+{% endtabs %}
+
+#### Replacing Custom Renderer
+The overridden custom table summary renderer can be replaced with default renderer by replacing the `CustomGridTableSummaryRenderer` to the `TableSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellRenderers.Remove("TableSummary");
+this.sfDataGrid1.CellRenderers.Add("TableSummary", new CustomGridTableSummaryRenderer());
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("TableSummary")
+Me.sfDataGrid1.CellRenderers.Add("TableSummary", New CustomGridTableSummaryRenderer())
+{% endhighlight %}
+{% endtabs %}
+
+![Custom table summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries6.png)
+
 ## Group Summary
 Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. The group summary row can be viewed by expanding the corresponding group header. SfDataGrid allows to add any number of group summary rows.
 
@@ -536,90 +536,6 @@ Me.sfDataGrid1.GroupSummaryRows.Add(groupSummaryRow1)
 
 N> [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~Title.html) must be specified if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is enabled.
 
-### Appearance
-The appearance of the group summary can be customized by [SfDataGrid.Style.GroupSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupSummaryRowStyle.html#) property. The `GroupSummaryRowStyle` property contains all the settings that are needed for the group summary row appearance customization.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue;
-this.sfDataGrid1.Style.GroupSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue
-Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
-{% endhighlight %}
-{% endtabs %}
-
-![Group summary row Appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries9.png)
-
-### Overriding Group Summary Renderer
-[GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRender`.
-
-#### Creating Custom Renderer
-The number format for numeric values displayed on group summary row can be applied by overriding the `OnRender` method in `GridGroupSummaryCellRenderer` class.
-
-{% tabs %}
-{% highlight c# %}
-public class CustomGridGroupSummaryRenderer : GridGroupSummaryCellRenderer
-    {
-        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
-            CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
-        {
-            if (string.IsNullOrEmpty(cellValue))
-                return;
-            // Creates new number format and apply it to summary value. 
-            NumberFormatInfo format = new NumberFormatInfo();
-            format.NumberDecimalDigits = 3;
-            format.NumberDecimalSeparator = "*";
-            format.NumberGroupSeparator = ",";
-            //Number format is applied to summary value.
-            cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
-            StringFormat stringFormat = new StringFormat();
-            stringFormat.LineAlignment = StringAlignment.Center;
-            stringFormat.Alignment = StringAlignment.Center;
-            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
-        }
-    }
-{% endhighlight %}
-{% highlight vb %}
-Public Class CustomGridGroupSummaryRenderer
-	Inherits GridGroupSummaryCellRenderer
-		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
-			If String.IsNullOrEmpty(cellValue) Then
-				Return
-			End If
-			' Creates new number format and apply it to summary value. 
-			Dim format As New NumberFormatInfo()
-			format.NumberDecimalDigits = 3
-			format.NumberDecimalSeparator = "*"
-			format.NumberGroupSeparator = ","
-			'Number format is applied to summary value.
-			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
-			Dim stringFormat As New StringFormat()
-			stringFormat.LineAlignment = StringAlignment.Center
-			stringFormat.Alignment = StringAlignment.Center
-			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
-		End Sub
-End Class
-{% endhighlight %}
-{% endtabs %}
-
-#### Replacing Custom Renderer
-The overridden custom group summary renderer can be replaced with default renderer by replacing the `CustomGridGroupSummaryRenderer` to the `GroupSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.CellRenderers.Remove("GroupSummary");
-this.sfDataGrid1.CellRenderers.Add("GroupSummary", new CustomGridGroupSummaryRenderer());
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.CellRenderers.Remove("GroupSummary")
-Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRenderer())
-{% endhighlight %}
-{% endtabs %}
-
-![Custom group summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries10.png)
-
 ### Displaying column summary with title
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
@@ -715,6 +631,90 @@ The following are the limitations of displaying column summary along with title 
 
 * If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
 * Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
+### Appearance
+The appearance of the group summary can be customized by [SfDataGrid.Style.GroupSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupSummaryRowStyle.html#) property. The `GroupSummaryRowStyle` property contains all the settings that are needed for the group summary row appearance customization.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue;
+this.sfDataGrid1.Style.GroupSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.GroupSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.GroupSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
+{% endhighlight %}
+{% endtabs %}
+
+![Group summary row Appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries9.png)
+
+### Overriding Group Summary Renderer
+[GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridGroupSummaryCellRenderer.html) is the cell renderer which renders the group summary row. The group summary row appearance and the summary value can be customized with the `GridGroupSummaryCellRender`.
+
+#### Creating Custom Renderer
+The number format for numeric values displayed on group summary row can be applied by overriding the `OnRender` method in `GridGroupSummaryCellRenderer` class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomGridGroupSummaryRenderer : GridGroupSummaryCellRenderer
+    {
+        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
+            CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+        {
+            if (string.IsNullOrEmpty(cellValue))
+                return;
+            // Creates new number format and apply it to summary value. 
+            NumberFormatInfo format = new NumberFormatInfo();
+            format.NumberDecimalDigits = 3;
+            format.NumberDecimalSeparator = "*";
+            format.NumberGroupSeparator = ",";
+            //Number format is applied to summary value.
+            cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.LineAlignment = StringAlignment.Center;
+            stringFormat.Alignment = StringAlignment.Center;
+            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
+        }
+    }
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomGridGroupSummaryRenderer
+	Inherits GridGroupSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			' Creates new number format and apply it to summary value. 
+			Dim format As New NumberFormatInfo()
+			format.NumberDecimalDigits = 3
+			format.NumberDecimalSeparator = "*"
+			format.NumberGroupSeparator = ","
+			'Number format is applied to summary value.
+			cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+#### Replacing Custom Renderer
+The overridden custom group summary renderer can be replaced with default renderer by replacing the `CustomGridGroupSummaryRenderer` to the `GroupSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellRenderers.Remove("GroupSummary");
+this.sfDataGrid1.CellRenderers.Add("GroupSummary", new CustomGridGroupSummaryRenderer());
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("GroupSummary")
+Me.sfDataGrid1.CellRenderers.Add("GroupSummary", New CustomGridGroupSummaryRenderer())
+{% endhighlight %}
+{% endtabs %}
+
+![Custom group summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries10.png)
 
 ## Caption Summary
 SfDataGrid provides built-in support for caption summary. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
@@ -853,95 +853,6 @@ Me.sfDataGrid1.CaptionSummaryRow = captionSummaryRow
 
 ![Windows forms datagrid showing group caption summary for row](SfDataGrid_Summaries_UG_images/summaries14.png)
 
-### Appearance
-The appearance of the caption summary can be customized by [SfDataGrid.Style.CaptionSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CaptionSummaryRowStyle.html) property. The `CaptionSummaryRowStyle` property contains all the settings that are needed for the caption summary row appearance customization.
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue;
-this.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue
-Me.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
-{% endhighlight %}
-{% endtabs %}
-
-![Group caption appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries15.png)
-
-### Overriding Caption Summary Renderer
-[GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCaptionSummaryCellRenderer.html) is the cell renderer which renders the caption summary row. The caption summary row appearance and the summary value can be customized with the `GridCaptionSummaryCellRender`.
-
-#### Creating Custom Renderer
-
-Number format for numeric values displayed on caption summary row can be applied by overriding the `OnRender` method in `GridCaptionSummaryCellRenderer` class.
-
-{% tabs %}
-{% highlight c# %}
-public class CustomGridCaptionSummaryRenderer : GridCaptionSummaryCellRenderer
-    {
-        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
-         CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
-        {
-            if (string.IsNullOrEmpty(cellValue))
-                return;
-            StringFormat stringFormat = new StringFormat();
-            stringFormat.LineAlignment = StringAlignment.Center;
-            stringFormat.Alignment = StringAlignment.Center;
-            if (column.GridColumn.MappingName == "UnitPrice")
-            {
-                // Creates new number format and apply it to summary value. 
-                NumberFormatInfo format = new NumberFormatInfo();
-                format.NumberDecimalDigits = 3;
-                format.NumberDecimalSeparator = "*";
-                format.NumberGroupSeparator = ",";
-                //Number format is applied to summary value.
-                cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
-            }
-            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
-        }
-    }
-{% endhighlight %}
-{% highlight vb %}
-Public Class CustomGridCaptionSummaryRenderer
-	Inherits GridCaptionSummaryCellRenderer
-		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
-			If String.IsNullOrEmpty(cellValue) Then
-				Return
-			End If
-			Dim stringFormat As New StringFormat()
-			stringFormat.LineAlignment = StringAlignment.Center
-			stringFormat.Alignment = StringAlignment.Center
-			If column.GridColumn.MappingName = "UnitPrice" Then
-				' Creates new number format and apply it to summary value. 
-				Dim format As New NumberFormatInfo()
-				format.NumberDecimalDigits = 3
-				format.NumberDecimalSeparator = "*"
-				format.NumberGroupSeparator = ","
-				'Number format is applied to summary value.
-				cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
-			End If
-			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
-		End Sub
-End Class
-{% endhighlight %}
-{% endtabs %}
-
-#### Replacing Custom Renderer
-
-The overridden custom caption summary renderer can be replaced with default renderer by replacing the `CustomGridCaptionSummaryRenderer` to the `CaptionSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.CellRenderers.Remove("CaptionSummary");
-this.sfDataGrid1.CellRenderers.Add("CaptionSummary", new CustomGridCaptionSummaryRenderer());
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.CellRenderers.Remove("CaptionSummary")
-Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryRenderer())
-{% endhighlight %}
-{% endtabs %}
-
-![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
-
 ### Displaying column summary with title
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
@@ -1039,6 +950,95 @@ The following are the limitations of displaying column summary along with title 
 
 * If [FrozenColumnCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to `FrozenColumnCount` range, since spanned range and frozen range cannot be vary.
 * Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
+### Appearance
+The appearance of the caption summary can be customized by [SfDataGrid.Style.CaptionSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CaptionSummaryRowStyle.html) property. The `CaptionSummaryRowStyle` property contains all the settings that are needed for the caption summary row appearance customization.
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue;
+this.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = new GridFontInfo(new Font("Arial", 10f, FontStyle.Bold));
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CaptionSummaryRowStyle.BackColor = Color.LightSkyBlue
+Me.sfDataGrid1.Style.CaptionSummaryRowStyle.Font = New GridFontInfo(New Font("Arial", 10f, FontStyle.Bold))
+{% endhighlight %}
+{% endtabs %}
+
+![Group caption appearance customization in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries15.png)
+
+### Overriding Caption Summary Renderer
+[GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCaptionSummaryCellRenderer.html) is the cell renderer which renders the caption summary row. The caption summary row appearance and the summary value can be customized with the `GridCaptionSummaryCellRender`.
+
+#### Creating Custom Renderer
+
+Number format for numeric values displayed on caption summary row can be applied by overriding the `OnRender` method in `GridCaptionSummaryCellRenderer` class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomGridCaptionSummaryRenderer : GridCaptionSummaryCellRenderer
+    {
+        protected override void OnRender(Graphics paint, Rectangle cellRect, string cellValue,
+         CellStyleInfo style, DataColumnBase column, RowColumnIndex rowColumnIndex)
+        {
+            if (string.IsNullOrEmpty(cellValue))
+                return;
+            StringFormat stringFormat = new StringFormat();
+            stringFormat.LineAlignment = StringAlignment.Center;
+            stringFormat.Alignment = StringAlignment.Center;
+            if (column.GridColumn.MappingName == "UnitPrice")
+            {
+                // Creates new number format and apply it to summary value. 
+                NumberFormatInfo format = new NumberFormatInfo();
+                format.NumberDecimalDigits = 3;
+                format.NumberDecimalSeparator = "*";
+                format.NumberGroupSeparator = ",";
+                //Number format is applied to summary value.
+                cellValue = Convert.ToDouble(double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format);
+            }
+            paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat);
+        }
+    }
+{% endhighlight %}
+{% highlight vb %}
+Public Class CustomGridCaptionSummaryRenderer
+	Inherits GridCaptionSummaryCellRenderer
+		Protected Overrides Sub OnRender(ByVal paint As Graphics, ByVal cellRect As Rectangle, ByVal cellValue As String, ByVal style As CellStyleInfo, ByVal column As DataColumnBase, ByVal rowColumnIndex As RowColumnIndex)
+			If String.IsNullOrEmpty(cellValue) Then
+				Return
+			End If
+			Dim stringFormat As New StringFormat()
+			stringFormat.LineAlignment = StringAlignment.Center
+			stringFormat.Alignment = StringAlignment.Center
+			If column.GridColumn.MappingName = "UnitPrice" Then
+				' Creates new number format and apply it to summary value. 
+				Dim format As New NumberFormatInfo()
+				format.NumberDecimalDigits = 3
+				format.NumberDecimalSeparator = "*"
+				format.NumberGroupSeparator = ","
+				'Number format is applied to summary value.
+				cellValue = Convert.ToDouble(Double.Parse(cellValue, NumberStyles.Currency)).ToString("N", format)
+			End If
+			paint.DrawString(cellValue, style.Font.GetFont(), Brushes.Black, cellRect, stringFormat)
+		End Sub
+End Class
+{% endhighlight %}
+{% endtabs %}
+
+#### Replacing Custom Renderer
+
+The overridden custom caption summary renderer can be replaced with default renderer by replacing the `CustomGridCaptionSummaryRenderer` to the `CaptionSummary` in the [CellRenderers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CellRenderers.html) collection.
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.CellRenderers.Remove("CaptionSummary");
+this.sfDataGrid1.CellRenderers.Add("CaptionSummary", new CustomGridCaptionSummaryRenderer());
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.CellRenderers.Remove("CaptionSummary")
+Me.sfDataGrid1.CellRenderers.Add("CaptionSummary", New CustomGridCaptionSummaryRenderer())
+{% endhighlight %}
+{% endtabs %}
+
+![Custom group caption summary cell renderer in windows forms datagrid](SfDataGrid_Summaries_UG_images/summaries16.png)
 
 ## On-demand summary calculation for group and caption summary
 
