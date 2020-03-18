@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Selection
+# Selection in Windows Forms DataGrid (SfDataGrid)
 
 SfDataGrid allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionUnit.html) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any.In SelectionUnit.Any option. A row can be selected by clicking its row header.
 
@@ -112,6 +112,10 @@ sfDataGrid.Columns(2).AllowFocus = False
 {% endtabs %}
 
 N> You cannot select the header rows and table summary rows of SfDataGrid. You cannot also select the unbound rows which are above and below the table summary row.
+
+## CheckBox column selection
+
+`SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/windowsforms/datagrid/columntypes#gridcheckboxselectorcolumn) documentation for more information.
 
 ## Get selected rows and cells
 
