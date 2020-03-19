@@ -1929,7 +1929,7 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 ## GridCheckBoxSelectorColumn
 
-`SfDataGrid` allows you to select or deselect individual rows through CheckBox using `GridCheckBoxSelectorColumn`, which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html).
+`SfDataGrid` allows you to select or deselect individual rows through CheckBox using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -1950,7 +1950,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
 
 ### CheckBox on column header
 
-You can display check box instead of text in header of selector column by setting the `AllowCheckBoxOnHeader` property to `True`. Using header check box, you can select or deselect all the rows in the datagrid.
+You can display check box instead of text in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `True`. Using header check box, you can select or deselect all the rows in the datagrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -1972,7 +1972,7 @@ Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
 
 ### Styling the selector column
 
-The style of checkbox in record cells can be customized using the `CheckBoxStyle` property.
+The style of checkbox in record cells can be customized using the [CheckBoxStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CheckBoxStyle.html) property.
 
 {% tabs %}
 {% highlight c# %}
