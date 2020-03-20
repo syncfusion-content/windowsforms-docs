@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Search in SfDataGrid | Syncfusion
-description: This section explains about the Search support in SfDataGrid.
+description: This section explains about the Search support in SfDataGrid. This can be achieved by using the SearchController.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Search
+# Search in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid provides the support for search the specific string in the SfDataGrid. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SearchController~Search.html) method. The founded matches will be highlighted in the SfDataGrid.
 
 {% tabs %}
@@ -300,3 +300,6 @@ End Class
 
 ![Windows forms datagrid displays highlight the search text not applied to specific column](Search_images/Search_img11.png)
 
+## See also
+
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)

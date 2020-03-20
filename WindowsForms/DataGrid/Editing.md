@@ -174,3 +174,7 @@ this.sfDataGrid.CurrentCell.CancelEdit();
 Me.sfDataGrid.CurrentCell.CancelEdit()
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to show onscreen keyboard in tablet device while editing a cell in WinForms DataGrid](https://www.syncfusion.com/kb/9906)
