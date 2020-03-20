@@ -648,3 +648,8 @@ N> SfToolTip has used for the validation error  tool tip support in the SfDataGr
 ## Limitations
 * Non editable columns will not support custom validation.
 * CurrentCellValidating event will not triggered for the GridUnboundColumn, AddNewRow and FilterRow.
+
+
+## See also
+
+[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323)
