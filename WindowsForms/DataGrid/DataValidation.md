@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataValidation in SfDataGrid | Syncfusion
-description: This section explains about the data validation support in SfDataGrid.
+description: This section explains about the data validation support in SfDataGrid. Its display hints in case of validation is not passed.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the left corner of cell. When mouse hover the error icon, error information will be displayed in tooltip.
 
 ## Built-in Validations
@@ -648,3 +648,8 @@ N> SfToolTip has used for the validation error  tool tip support in the SfDataGr
 ## Limitations
 * Non editable columns will not support custom validation.
 * CurrentCellValidating event will not triggered for the GridUnboundColumn, AddNewRow and FilterRow.
+
+
+## See also
+
+[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323)
