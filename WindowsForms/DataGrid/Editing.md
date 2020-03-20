@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in Windows Forms DataGrid (SfDataGrid)
-description: This section explains about the editing support in SfDataGrid. SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing].
+title: Editing in Windows Forms DataGrid | Syncfusion
+description: This section explains about the editing support in SfDataGrid. It can be enabled or disabled by setting AllowEditing.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -35,7 +35,7 @@ Me.sfDataGrid.Columns(0).AllowEditing = True
 {% endtabs %}
 
 **Note:**The `GridColumn.AllowEditing` has the high priority than the `SfDataGrid.AllowEditing`.
-![](Editing_images/Editing_Image1.png)
+![Windows forms datagrid Editing](Editing_images/Editing_Image1.png)
 
 ### Entering into Edit Mode
 The current cell can be enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. The edit mode of the cell can be changed to the single click or double click by setting the [EditMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EditMode.html) property.
@@ -70,7 +70,7 @@ Me.sfDataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_Image2.png)
+![Windows forms datagrid Editing select all](Editing_images/Editing_Image2.png)
 
 ## Customization Using Events
 
@@ -121,7 +121,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_Image3.png)
+![Windows forms datagrid Editing CurrentCellEndEdit ](Editing_images/Editing_Image3.png)
 
 ## Programmatic Editing 
 The editing can be handled programmatically by using the [CurrentCellManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager.html) which has the helper methods for handling the editing.
@@ -177,4 +177,4 @@ Me.sfDataGrid.CurrentCell.CancelEdit()
 
 ## See also
 
-[How to show onscreen keyboard in tablet device while editing a cell in WinForms DataGrid](https://www.syncfusion.com/kb/9906)
+[How to show on screen keyboard in tablet device while editing a cell in WinForms DataGrid](https://www.syncfusion.com/kb/9906)
