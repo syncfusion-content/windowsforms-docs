@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 
 ---
-# Getting Started
+# Getting Started with Windows Forms GridControl
 
 This section will explain about creating simple GridControl and the overview of its basic functionalities.
 
