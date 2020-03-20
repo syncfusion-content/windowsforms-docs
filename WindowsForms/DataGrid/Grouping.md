@@ -472,4 +472,5 @@ End Sub
 ## See also
 
 [How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11232/)
+
 [How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
