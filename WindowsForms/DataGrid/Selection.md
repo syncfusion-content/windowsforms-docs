@@ -1024,3 +1024,14 @@ Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 {% endtabs %}
 ![Currentcell appearance customization in Windows forms datagrid](Selection_images/selection7.png)
 
+## See also
+
+[How to select the entire column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9776)
+
+[How to change the Enter key behavior in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9774)
+
+[How to skip selection for summary rows in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9665)
+
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)
+
+[How to scroll to a specific record programmatically in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9605)
