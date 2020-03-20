@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Master-Details View in SfDataGird | Syncfusion
-description: This section explains about the Master-Details View in SfDataGrid.
+description: This section explains about the Master-Details View in SfDataGrid, its represent the hierarchical data in the form of nested tables by using Master-Details view.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Master-Details View
+# Master Details View in Windows Forms DataGrid (SfDataGrid)
 
 The SfDataGrid provides support to represent the hierarchical data in the form of nested tables by using Master-Details view. You can expand or collapse the nested table (DetailsViewDataGrid) by using an expander column in a row. You can also expand or collapse the nested table programmatically. The number of tables nested with relations are unlimited.
 
