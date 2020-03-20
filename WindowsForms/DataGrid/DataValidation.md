@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataValidation in SfDataGrid | Syncfusion
-description: This section explains about the data validation support in SfDataGrid.
+description: This section explains about the data validation support in SfDataGrid. Its display hints in case of validation is not passed.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the left corner of cell. When mouse hover the error icon, error information will be displayed in tooltip.
 
 ## Built-in Validations
