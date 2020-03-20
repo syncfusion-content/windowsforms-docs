@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Grouping
+# Grouping in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
 
 ## UI Grouping
