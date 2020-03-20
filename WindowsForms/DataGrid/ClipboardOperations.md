@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in SfDataGrid | Syncfusion
-description: This section explains about the clipboard operations in SfDataGrid.
+description: This section explains about the clipboard operations such as cut, copy and paste the data within SfDataGrid and between other applications such as Notepad, Excel.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
