@@ -716,3 +716,7 @@ Download sample from below location,
 [Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1502467420)
 
 N> The copied row can be pasted only after initiating the AddNewRow by editing.
+
+## See also
+
+[How to append the new text in clipboard which is not available in DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11243)

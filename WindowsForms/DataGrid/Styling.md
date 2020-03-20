@@ -388,3 +388,7 @@ sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
 {% endtabs %}
 
 ![Windows form datagrid showing custom busy indicator image](Styling_images/BusyIndicator_2.png)
+
+## See also
+
+[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/10221)
