@@ -101,9 +101,9 @@ For more details, refer to `Appearance` in [Table Summary](https://help.syncfusi
 
 ## Gradient Background Style
 
-SfDataGrid helps to provide gradient background appearance for the cells by using `Interior` property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+SfDataGrid helps to provide gradient background appearance for the cells by using [Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Interior.html) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
 
-The gradient  background can be achieved by initializing the `Interior` property using `BrushInfo` object with `GradientStyle` and the necessary colors.
+The gradient  background can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo~_ctor.html) object with [GradientStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.GradientStyle.html) and the necessary colors.
 
 In the below example, gradient background is applied for the header cells and the record cells by providing the `GradientStyle` as `Horizontal` and the gradient start and end colors.
 
@@ -130,7 +130,7 @@ Me.sfDataGrid1.Columns("UnitPrice").CellStyle.Interior = New Syncfusion.WinForms
 
 ![Gradient style in windows forms datagrid](Styling_images/Styling10.png)
 
-In the below example, gradient background is applied for the record cells by providing multiple gradient colors using `BrushInfoColorList`.
+In the below example, gradient background is applied for the record cells by providing multiple gradient colors using [BrushInfoColorList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Core.BrushInfoColorList.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -147,9 +147,9 @@ Me.sfDataGrid1.Columns("OrderID").CellStyle.Interior = New Syncfusion.WinForms.C
 
 ## Pattern Background Style
 
-SfDataGrid helps to provide background pattern for the cells by using `Interior` property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+SfDataGrid helps to provide background pattern for the cells by using [Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Interior.html) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
 
-The background pattern can be achieved by initializing the `Interior` property using `BrushInfo` object with `PatternStyle` and the necessary colors.
+The background pattern can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo~_ctor.html) object with [PatternStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.PatternStyle.html) and the necessary colors.
 
 In the below example, background pattern is applied for the header cells by providing the `PatternStyle` as `SmallGrid` and the fore color and back color for the pattern.
 
