@@ -300,3 +300,6 @@ End Class
 
 ![Windows forms datagrid displays highlight the search text not applied to specific column](Search_images/Search_img11.png)
 
+## See also
+
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)

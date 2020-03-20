@@ -111,10 +111,10 @@ Use to display button in each row
 </tr>
 <tr>
 <td>
-{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarCellRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display progressbar in each row
@@ -122,10 +122,10 @@ Use to display progressbar in each row
 </tr>
 <tr>
 <td>
-{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridMultiSelectComboBoxCellRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display multi select combobox in each row
@@ -133,10 +133,10 @@ Use to display multi select combobox in each row
 </tr>
 <tr>
 <td>
-GridCheckBoxSelectorColumn
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
 </td>
 <td>
-GridCheckBoxSelectorCellRenderer
+{{'[GridCheckBoxSelectorCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxSelectorCellRenderer.html)'| markdownify }}
 </td>
 <td>
 Selects or deselects rows based on the check box value, which is not bound with data object.
@@ -2679,3 +2679,13 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 Refer to the above prepared sparkline column in this following link: [Sparkline column](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn)
 
 Here, a rating column has been created as a custom column. The sample for this can be downloaded from this following link: [RatingColumn](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/RatingColumn)
+
+## See also
+
+[How to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11242)
+
+[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://www.syncfusion.com/kb/10013)
+
+[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978)
+
+[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9775)
