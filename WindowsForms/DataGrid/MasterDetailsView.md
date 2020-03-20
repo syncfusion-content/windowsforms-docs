@@ -2875,3 +2875,10 @@ Limitations are:
 4. Master-Details view does not support freeze pane.
 5. Master-Details view does not support AutoRowHeight.
 6. For DetailsViewDataGrid, properties like SelectionMode, DetailsViewPadding, AllowSelectionOnMouseDown, and RightToLeft are assigned from its parent grid only. So, both parent DataGrid and DetailsViewDataGrid cannot have different values for these properties.
+
+
+## See also
+
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
+
+[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/10221)
