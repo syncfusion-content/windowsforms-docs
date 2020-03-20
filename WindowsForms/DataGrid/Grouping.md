@@ -468,3 +468,8 @@ Private Sub SfDataGrid1_GroupCollapsing(ByVal sender As Object, ByVal e As Group
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11232/)
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
