@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Master-Details View in SfDataGird | Syncfusion
-description: This section explains about the Master-Details View in SfDataGrid, its represent the hierarchical data in the form of nested tables by using Master-Details view.
+description: This section explains about the Master-Details View in SfDataGrid, its represent the hierarchical data in the form of nested table.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
