@@ -1462,3 +1462,7 @@ Me.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1)
 ![Windows forms datagrid showing custom summary](SfDataGrid_Summaries_UG_images/summaries21.png)
 
 You can download the custom summaries demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Summaries-1592567908.zip).
+
+## See also
+
+[How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9604)

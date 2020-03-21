@@ -1056,3 +1056,9 @@ workBook.SaveAs("Sample.xlsx")
 ![Windows forms datagrid displays applied colors based on row index using conditional format](ExportToExcel_images/ExportToExcel_img11.jpeg)
 
 Refer the [XlsIO document](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting) for the conditional customization.
+
+## See also
+
+[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603)
+
+[How to freeze particular column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9396)
