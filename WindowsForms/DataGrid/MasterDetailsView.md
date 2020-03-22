@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Master-Details View in SfDataGird | Syncfusion
-description: This section explains about the Master-Details View in SfDataGrid.
+description: This section explains about the Master-Details View in SfDataGrid, its represent the hierarchical data in the form of nested table.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Master-Details View
+# Master Details View in Windows Forms DataGrid (SfDataGrid)
 
 The SfDataGrid provides support to represent the hierarchical data in the form of nested tables by using Master-Details view. You can expand or collapse the nested table (DetailsViewDataGrid) by using an expander column in a row. You can also expand or collapse the nested table programmatically. The number of tables nested with relations are unlimited.
 
@@ -2875,3 +2875,10 @@ Limitations are:
 4. Master-Details view does not support freeze pane.
 5. Master-Details view does not support AutoRowHeight.
 6. For DetailsViewDataGrid, properties like SelectionMode, DetailsViewPadding, AllowSelectionOnMouseDown, and RightToLeft are assigned from its parent grid only. So, both parent DataGrid and DetailsViewDataGrid cannot have different values for these properties.
+
+
+## See also
+
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
+
+[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/10221)

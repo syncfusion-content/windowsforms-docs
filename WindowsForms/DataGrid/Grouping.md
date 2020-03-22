@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Grouping
+# Grouping in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
 
 ## UI Grouping
@@ -468,3 +468,12 @@ Private Sub SfDataGrid1_GroupCollapsing(ByVal sender As Object, ByVal e As Group
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+
+## See also
+
+[How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11232/)
+
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
+
+[How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9384)

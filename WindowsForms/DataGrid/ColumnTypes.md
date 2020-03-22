@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column types | Syncfusion
-description: This section explains about the column types in SfDataGrid.
+title: Column types in WinForms DataGrid control | Syncfusion
+description: Learn about different column types support (Text, Numeric, DateTime, ComboBox and so on) in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Column Types 
+# Column types in WinForms DataGrid (SfDataGrid) 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 <table>
 <tr>
@@ -111,10 +111,10 @@ Use to display button in each row
 </tr>
 <tr>
 <td>
-{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridProgressBarCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridProgressBarCellRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display progressbar in each row
@@ -122,13 +122,24 @@ Use to display progressbar in each row
 </tr>
 <tr>
 <td>
-{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridButtonColumn.html#"")'| markdownify }}
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridButtonCellRenderer.html#"")'| markdownify }}
+{{'[GridMultiSelectComboBoxCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridMultiSelectComboBoxCellRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display multi select combobox in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+</td>
+<td>
+{{'[GridCheckBoxSelectorCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Renderers.GridCheckBoxSelectorCellRenderer.html)'| markdownify }}
+</td>
+<td>
+Selects or deselects rows based on the check box value, which is not bound with data object.
 </td>
 </tr>
 </table>
@@ -1915,6 +1926,107 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
 
+
+## GridCheckBoxSelectorColumn
+
+`SfDataGrid` allows you to select or deselect individual rows through CheckBox using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html).
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = "Selector", Width = 100, CheckBoxSize = new Size(14, 14) });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
+{
+        .MappingName = "SelectorColumn",
+        .HeaderText = "Selector",
+        .Width = 100,
+        .CheckBoxSize = New Size(14, 14)
+})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelector column](ColumnTypes_images/ColumnTypes_img46.png)
+
+### CheckBox on column header
+
+You can display check box instead of text in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `True`. Using header check box, you can select or deselect all the rows in the datagrid.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridCheckBoxSelectorColumn() { MappingName = "SelectorColumn", HeaderText = string.Empty, AllowCheckBoxOnHeader = true, Width = 34, CheckBoxSize = new Size(14, 14) });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridCheckBoxSelectorColumn() With
+{
+        .MappingName = "SelectorColumn",
+        .HeaderText = String.Empty,
+        .AllowCheckBoxOnHeader = True,
+        .Width = 34,
+        .CheckBoxSize = New Size(14, 14)
+})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn header text](ColumnTypes_images/ColumnTypes_img47.png)
+
+### Styling the selector column
+
+The style of checkbox in record cells can be customized using the [CheckBoxStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CheckBoxStyle.html) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Style.CheckBoxStyle.CheckedBorderColor = Color.DarkViolet;
+this.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red;
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Style.CheckBoxStyle.CheckedBorderColor = Color.DarkViolet
+Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn styling](ColumnTypes_images/ColumnTypes_img48.png)
+
+The style of the header checkbox can be customized through the [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCheckBoxCellStyle_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.QueryCheckBoxCellStyle += OnSfDataGrid1_QueryCheckBoxCellStyle;
+
+private void OnSfDataGrid1_QueryCheckBoxCellStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryCheckBoxCellStyleEventArgs e)
+{
+    if (e.RowIndex == this.sfDataGrid1.TableControl.GetHeaderIndex() && e.Column.MappingName == "SelectorColumn")
+    {
+        e.Style.IndeterminateBorderColor = Color.Red;
+        e.Style.IndeterminateColor = Color.DarkViolet;
+    }
+}
+
+{% endhighlight %}
+{% highlight vb %}
+
+AddHandler sfDataGrid1.QueryCheckBoxCellStyle, AddressOf OnSfDataGrid1_QueryCheckBoxCellStyle
+
+Private Sub OnSfDataGrid1_QueryCheckBoxCellStyle(ByVal sender As Object, ByVal e As QueryCheckBoxCellStyleEventArgs)
+	If e.RowIndex = Me.sfDataGrid1.TableControl.GetHeaderIndex() AndAlso e.Column.MappingName = "SelectorColumn" Then
+		e.Style.IndeterminateBorderColor = Color.Red
+        e.Style.IndeterminateColor = Color.DarkViolet
+	End If
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms datagrid shows that GridCheckBoxSelectorColumn header checkbox styling](ColumnTypes_images/ColumnTypes_img49.png)
+
+### Limitations
+The following are the limitations of `GridCheckBoxSelectorColumn`:
+
+* Selector column does not support cell selection.
+* Selector column does not support data operations such as sorting, filtering and grouping.
+* Selector column will be excluded in operations such as printing and exporting.
+* Selector column does not have filter row support.  
+
 ## Custom Column Support
 
 SfDataGrid allows to create own column by overriding predefined column type and to customize existing column renderer.
@@ -2567,3 +2679,13 @@ Me.sfDataGrid1.Columns.Add(New GridSparklineColumn() With {.MappingName = "Spark
 Refer to the above prepared sparkline column in this following link: [Sparkline column](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/SparklineColumn)
 
 Here, a rating column has been created as a custom column. The sample for this can be downloaded from this following link: [RatingColumn](https://github.com/SyncfusionExamples/how-to-create-custom-column-in-winforms-datagrid/tree/master/RatingColumn)
+
+## See also
+
+[How to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11242)
+
+[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://www.syncfusion.com/kb/10013)
+
+[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978)
+
+[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9775)

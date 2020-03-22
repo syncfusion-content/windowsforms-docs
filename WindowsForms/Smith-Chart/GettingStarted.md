@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started
-description: This section provides a basic information on working with smith chart.
+title: Getting started | WindowsForms | Syncfusion
+description: This section provides a create a simple smith chart through the designer and through code in windowsforms platform.
 platform: WindowsForms
 control: SfSmithChart
 documentation: ug
@@ -25,7 +25,7 @@ Smith chart control can be added through designer by following the below steps.
 * Create a new **Windows** **Form** **Application****.**
 * Drag and drop the smith chart control from the toolbox into the designer.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Toolbox.png](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop the smith chart control from the toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
 * Once you drop the control into the designer page, smith chart control will be added successfully along with the required assemblies. The below mentioned assemblies will be added automatically into the application.
@@ -33,14 +33,14 @@ Smith chart control can be added through designer by following the below steps.
 1. Syncfusion.SfSmithChart.WinForms
 2. Syncfusion.Core.WinForms.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/ChartWithAssembly.png](GettingStarted_images/GettingStarted_img2.jpeg)
+![Assmblies added image](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
 Appearance and behavior related aspects of the smith chart can be controlled by setting the appropriate properties through the properties grid.
 
 For example, in the below image [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartAxis~MinorGridlinesVisible.html) property of radial axis is modified via property grid.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/PropertyGrid.png](GettingStarted_images/GettingStarted_img3.jpeg)
+![Property grid image](GettingStarted_images/GettingStarted_img3.jpeg)
 
 
 ## Creating a simple smith chart through code
@@ -70,16 +70,44 @@ Imports Syncfusion.WinForms.SmithChart
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Assemblies.png](GettingStarted_images/GettingStarted_img4.jpeg)
+![Add the assemblies for render the smith chart control](GettingStarted_images/GettingStarted_img4.jpeg)
 
 
 ## Populating data
 
-The data for the smith chart can be added through code. To add data, switch to code view, and add the data as shown in the following code snippet.
+Data points for the smith chart series can be added in two ways.
+
+* By specifying DataSource.
+* By directly adding points in the series.
+
+### By Specifying DataSource
+
+You can add the data source to series by using the below properties.
+
+* `DataSource` : Used to hold the data source. The data source or data collection can be bound with DataSource.
+* [`ResistanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ResistanceMember.html) : It is a string property that needs to be bound with resistance axis (or HorizontalAxis). 
+* [`ReactanceMember`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfSmithChart.WinForms~Syncfusion.WinForms.SmithChart.ChartSeries~ReactanceMember.html) : It is a string property that needs to be bound with reactance axis (Or RadialAxis).
 
 {% tabs %}
 
 {% highlight c# %}
+
+public partial class SmithChartSample
+{
+public SmithChartSample()
+{
+SmithChartModel model = new SmithChartModel();
+sfSmithChart.BackColor = Color.White;
+series = new LineSeries();
+series.MarkerVisible = true;
+series.TooltipVisible = true;
+series.LegendText = "Transmission";
+series.DataSource = model.Trace1;
+series.ResistanceMember = "Resistance";
+series.ReactanceMember = "Reactance";
+sfSmithChart1.Series.Add(series);
+}
+}
 
 public class TransmissionData
 
@@ -143,105 +171,132 @@ public ObservableCollection<TransmissionData> Trace1 { get; set; }
 
 {% highlight vb.net %}
 
+Public Partial Class SmithChartSample
+    Public Sub New()
+        Dim model As SmithChartModel = New SmithChartModel()
+        sfSmithChart.BackColor = Color.White
+        series = New LineSeries()
+        series.MarkerVisible = True
+        series.TooltipVisible = True
+        series.LegendText = "Transmission"
+        series.DataSource = model.Trace1
+        series.ResistanceMember = "Resistance"
+        series.ReactanceMember = "Reactance"
+        sfSmithChart1.Series.Add(series)
+    End Sub
+End Class
+
 Public Class TransmissionData
-
-Private privateResistance As Double
-
-Public Property Resistance() As Double
-
-Get
-
-Return privateResistance
-
-End Get
-
-Set(ByVal value As Double)
-
-privateResistance = value
-
-End Set
-
-End Property
-
-Private privateReactance As Double
-
-Public Property Reactance() As Double
-
-Get
-
-Return privateReactance
-
-End Get
-
-Set(ByVal value As Double)
-
-privateReactance = value
-
-End Set
-
-End Property
-
+    Public Property Resistance As Double
+    Public Property Reactance As Double
 End Class
 
 Public Class SmithChartModel
+    Public Sub New()
+        Trace1 = New ObservableCollection(Of TransmissionData)()
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 0,
+            .Reactance = 0.05
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 0.3,
+            .Reactance = 0.1
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 0.5,
+            .Reactance = 0.2
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 1.0,
+            .Reactance = 0.4
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 1.5,
+            .Reactance = 0.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 2.0,
+            .Reactance = 0.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 2.5,
+            .Reactance = 0.4
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 3.5,
+            .Reactance = 0.0
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 4.5,
+            .Reactance = -0.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 5,
+            .Reactance = -1.0
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 6,
+            .Reactance = -1.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 7,
+            .Reactance = -2.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 8,
+            .Reactance = -3.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 9,
+            .Reactance = -4.5
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 10,
+            .Reactance = -10
+        })
+        Trace1.Add(New TransmissionData() With {
+            .Resistance = 20,
+            .Reactance = -50
+        })
+    End Sub
 
-Public Sub New()
-
-Trace1 = New ObservableCollection(Of TransmissionData)()
-
-Trace1.Add(New TransmissionData() With {.Resistance = 0, .Reactance = 0.05})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 0.3, .Reactance = 0.1})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 0.5, .Reactance = 0.2})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 1.0, .Reactance = 0.4})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 1.5, .Reactance = 0.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 2.0, .Reactance = 0.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 2.5, .Reactance = 0.4})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 3.5, .Reactance = 0.0})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 4.5, .Reactance = -0.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 5, .Reactance = -1.0})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 6, .Reactance = -1.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 7, .Reactance = -2.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 8, .Reactance = -3.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 9, .Reactance = -4.5})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 10, .Reactance = -10})
-
-Trace1.Add(New TransmissionData() With {.Resistance = 20, .Reactance = -50})
-
-End Sub
-
-Private privateTrace1 As ObservableCollection(Of TransmissionData)
-
-Public Property Trace1() As ObservableCollection(Of TransmissionData)
-
-Get
-
-Return privateTrace1
-
-End Get
-
-Set(ByVal value As ObservableCollection(Of TransmissionData))
-
-privateTrace1 = value
-
-End Set
-
-End Property
-
+    Public Property Trace1 As ObservableCollection(Of TransmissionData)
 End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
+###By directly adding points in the series
+
+You can add the each point in series `Points` collection to render the series.
+
+
+{% tabs %}
+
+{% highlight c# %}
+
+             lineSeries = sfSmithChart.Series[0] as LineSeries;
+             Random random = new Random();
+             for (int i = 0; i < 100; i++)
+             {
+             double val = random.Next(0, 5);
+             double val1 = random.Next(-5, 5);
+             lineSeries.Points.Add(val, val1);
+             }
+ 
+{% endhighlight %}
+
+{% highlight vb.net %}
+
+    lineSeries = TryCast(sfSmithChart.Series(0), LineSeries)
+    Dim random As Random = New Random()
+
+    For i As Integer = 0 To 100 - 1
+        Dim val As Double = random.[Next](0, 5)
+        Dim val1 As Double = random.[Next](-5, 5)
+        lineSeries.Points.Add(val, val1)
+    Next
 
 {% endhighlight %}
 
@@ -273,7 +328,7 @@ Me.Controls.Add(chart)
 
 As a result of above steps, the following output will be reproduced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Chart.png](GettingStarted_images/GettingStarted_img5.PNG)
+![Smith chart image](GettingStarted_images/GettingStarted_img5.PNG)
 
 
 ### Adding header to the smith chart
@@ -324,7 +379,7 @@ chart.RadialAxis.MinorGridlinesVisible = True
 
 As a result of adding text and axes to the control, the following output is produced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Axis.png](GettingStarted_images/GettingStarted_img6.PNG)
+![Adding Axes to the smith chart](GettingStarted_images/GettingStarted_img6.PNG)
 
 ### Adding Series
 
@@ -392,7 +447,7 @@ chart.Series.Add(series)
 
 After adding the series, the following output is produced.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Series1.png](GettingStarted_images/GettingStarted_img7.PNG)
+![Adding Series to the smith chart](GettingStarted_images/GettingStarted_img7.PNG)
 
 
 ### Adding legends to the chart
@@ -433,7 +488,7 @@ series.LegendText = "Transmission1"
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img9.PNG)
+![Adding legends to the smith chart](GettingStarted_images/GettingStarted_img9.PNG)
 
 The following code example demonstrates the complete code for creating a smith chart.
 
@@ -511,6 +566,6 @@ Me.Controls.Add(chart)
 
 Now, run the application to produce the following output.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Full.png](GettingStarted_images/GettingStarted_img8.PNG)
+![Adding legends, series, axes to the smith chart](GettingStarted_images/GettingStarted_img8.PNG)
 
 
