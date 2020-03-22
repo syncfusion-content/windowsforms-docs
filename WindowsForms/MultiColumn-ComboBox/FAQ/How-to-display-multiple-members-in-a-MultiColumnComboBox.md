@@ -17,8 +17,9 @@ This section deals with displaying multiple members in a [MultiColumnComboBox](h
 {% highlight c# %}
 
 private Syncfusion.Windows.Forms.Tools.MultiColumnComboBox multiColumnComboBox1;
-this.multiColumnComboBox1=new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
-this.Controls.Add(this.multiColumnComboBox1); 
+this.multiColumnComboBox1 = new Syncfusion.Windows.Forms.Tools.MultiColumnComboBox();
+this.Controls.Add(this.multiColumnComboBox1);
+this.Load += Form1_Load; 
 
 {% endhighlight %}
 
@@ -33,7 +34,7 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 
 2.Populate the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) with data. Refer [Data Binding](https://help.syncfusion.com/windowsforms/multicolumncombobox/data-binding) topic.
 
-3.In order to display the contents of the entire row in the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) instead of the using DisplayMember property, can achieve by handling the [MultiColumnComboBox.SelectedIndexChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound~SelectedIndexChanged_EV.html) and [MultiColumnComboBox.DropDown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ComboDropDown~DropDown_EV.html) events as shown below.
+3.In order to display the contents of the entire row in the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) instead of the using `DisplayMember` property, can achieve by handling the [MultiColumnComboBox.SelectedIndexChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound~SelectedIndexChanged_EV.html) and [MultiColumnComboBox.DropDown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ComboDropDown~DropDown_EV.html) events as shown below.
 
 {% tabs %}
 {% highlight c# %}
