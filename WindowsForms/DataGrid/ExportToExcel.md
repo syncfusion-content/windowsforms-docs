@@ -1060,5 +1060,3 @@ Refer the [XlsIO document](http://help.syncfusion.com/file-formats/xlsio/working
 ## See also
 
 [How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603)
-
-[How to freeze particular column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9396)
