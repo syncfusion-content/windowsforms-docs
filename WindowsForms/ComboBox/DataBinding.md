@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding
-description: This section explains about the DataBinding support in SfComboBox.
+title: DataBinding | SfComboBox | WinForms | Syncfusion
+description: This section deals with explain about the DataBinding support in SfComboBox control on WinForms platform
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms ComboBox (SfComboBox)
 
 The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DataSource.html) property. The following properties controls the data binding:
 
