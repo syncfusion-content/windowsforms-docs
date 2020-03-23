@@ -156,3 +156,20 @@ The following table shows the default values for the common text used in the [Pd
 The following screenshot shows the [PdfViewerControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) in French language
 
 ![Localization](Localization_images/Localization_image2.png)
+
+## Localize Resource File with Different Assembly or Namespace
+By default, `PdfViewerControl` try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then it can be set to the `PdfViewerControl` by using [LocalizationManager.SetResources](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.LocalizationManager~SetResources.html) method.
+
+{% tabs %}
+{% highlight c# %}
+public Form1()
+{
+	Thread.CurrentThread.CurrentCulture = newSystem.Globalization.CultureInfo("ar-AE");
+	Thread.CurrentThread.CurrentUICulture = newSystem.Globalization.CultureInfo("ar-AE");
+
+	// Set the Custom assembly and namespace for the localization.
+	LocalizationManager.SetResources(typeof(Custom_Form).Assembly, "ClassLibrary");
+	InitializeComponent();
+}        
+{% endhighlight %}
+{% endtabs %}
