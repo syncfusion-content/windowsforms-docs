@@ -578,3 +578,7 @@ For Each record In sfDataGrid.View.Records
 Next record 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to freeze particular column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9396)
