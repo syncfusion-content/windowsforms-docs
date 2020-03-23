@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Rows
+# Rows in Windows Forms DataGrid (SfDataGrid)
 
 ## Row Header
 
