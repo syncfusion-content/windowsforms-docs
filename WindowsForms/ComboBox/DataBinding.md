@@ -32,3 +32,7 @@ sfComboBox1.DisplayMember = "LongName"
 sfComboBox1.ValueMember = "ShortName"
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+
+[How to disable some items WinForms ComboBox dropdown?](https://www.syncfusion.com/kb/11254/how-to-disable-some-items-winforms-combobox-dropdown)
