@@ -1466,3 +1466,5 @@ You can download the custom summaries demo [here](http://www.syncfusion.com/down
 ## See also
 
 [How to show the total summary value in DateTime format using custom aggregate in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9604)
+
+[How to calculate the summary value based on other column summary value in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/8810)
