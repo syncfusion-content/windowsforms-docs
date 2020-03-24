@@ -778,3 +778,7 @@ End Sub
 ## See also
 
 [How to add page numbers to the exported pdf document in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9315)
+
+[How to print the WinForms DataGrid (SfDataGrid) control](https://www.syncfusion.com/kb/9255)
+
+[How to preview WinForms DataGrid (SfDataGrid) control in print preview dialog](https://www.syncfusion.com/kb/9252)
