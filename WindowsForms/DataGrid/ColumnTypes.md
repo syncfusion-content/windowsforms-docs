@@ -2689,3 +2689,5 @@ Here, a rating column has been created as a custom column. The sample for this c
 [How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978)
 
 [How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9775)
+
+[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323)

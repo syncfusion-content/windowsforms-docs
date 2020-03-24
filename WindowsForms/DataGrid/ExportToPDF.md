@@ -774,3 +774,7 @@ End Sub
 
 ![Windows forms datagrid displays added image into the column in exported PDF](ExportToPDF_images/ExportToPDF_img6.jpeg)
 
+
+## See also
+
+[How to add page numbers to the exported pdf document in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9315)
