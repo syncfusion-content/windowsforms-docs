@@ -158,7 +158,7 @@ The following screenshot shows the [PdfViewerControl](https://help.syncfusion.co
 ![Localization](Localization_images/Localization_image2.png)
 
 ## Localize Resource File with Different Assembly or Namespace
-By default, `PdfViewerControl` try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then it can be set to the `PdfViewerControl` by using [LocalizationManager.SetResources](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.LocalizationManager~SetResources.html) method.
+In general, `PdfViewerControl` try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then it can be set to the `PdfViewerControl` by using [LocalizationManager.SetResources](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.LocalizationManager~SetResources.html) method.
 
 {% tabs %}
 {% highlight c# %}
