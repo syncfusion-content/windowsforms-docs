@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Windows Forms MultiColumn ComboBox
 
-Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using `MultiColumnComboBox.Style property`. The various styles are,
+Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using [MultiColumnComboBox.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox~Style.html) property. The various styles are,
 
 * Office2003
 * OfficeXP
