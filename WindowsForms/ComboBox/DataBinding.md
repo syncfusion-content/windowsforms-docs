@@ -17,19 +17,81 @@ The data source can be bound by using the [DataSource](https://help.syncfusion.c
 {% tabs %}
 {% highlight c# %}
 //Bind the data source to combo box control
-List<USState> list = GetData();
+List<State> list = GetData();
 sfComboBox1.DataSource = list;
 //Bind the Display member and Value member to the data source
 sfComboBox1.DisplayMember = "LongName";
-sfComboBox1. ValueMember = "ShortName";
+sfComboBox1.ValueMember = "ShortName";
+
+List<State> GetData()
+{
+    List<State> states = new List<State>();
+    states.Add(new State("Alaska", "AK"));
+    states.Add(new State("Arizona", "AZ"));
+    states.Add(new State("Colorado", "CO"));
+    return states;
+}
+
+public class State
+{
+    private string shortName;
+    private string longName;
+
+    public State(string LongName, string ShortName)
+    {
+        this.longName = LongName;
+        this.shortName = ShortName;
+    }
+
+    public string ShortName
+    {
+        get { return shortName; }
+    }
+
+    public string LongName
+    {
+        get { return longName; }
+    }
+}
+
 {% endhighlight %}
 {% highlight vb %}
 'Bind the data source to combo box control
-Dim list As List(Of USState) = GetData()
+Dim list As List(Of State) = GetData()
 sfComboBox1.DataSource = list
 'Bind the Display member and Value member to the data source
 sfComboBox1.DisplayMember = "LongName"
 sfComboBox1.ValueMember = "ShortName"
+
+Private Function GetData() As List(Of State)
+    Dim states As List(Of State) = New List(Of State)()
+    states.Add(New State("Alaska", "AK"))
+    states.Add(New State("Arizona", "AZ"))
+    states.Add(New State("Colorado", "CO"))
+    Return states
+End Function
+
+Public Class State
+    Private shortName As String
+    Private longName As String
+
+    Public Sub New(ByVal LongName As String, ByVal ShortName As String)
+        Me.longName = LongName
+        Me.shortName = ShortName
+    End Sub
+
+    Public ReadOnly Property ShortName As String
+        Get
+            Return ShortName
+        End Get
+    End Property
+
+    Public ReadOnly Property LongName As String
+        Get
+            Return LongName
+        End Get
+    End Property
+End Class
 {% endhighlight %}
 {% endtabs %}
 
