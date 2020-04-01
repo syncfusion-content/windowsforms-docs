@@ -6,7 +6,7 @@ platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
-# Getting Started 
+# Getting Started with Windows Forms DataGrid (SfDataGrid)
 This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
 
 To get start quickly with WinForms DataGrid, you can check on this video:
@@ -48,7 +48,7 @@ namespace WindowsFormsApplication1
             SfDataGrid sfDataGrid1 = new SfDataGrid();
             sfDataGrid1.Location = new System.Drawing.Point(85, 108);
             sfDataGrid1.Size = new System.Drawing.Size(240, 150); 
-            this.Controls.Add(this.sfDataGrid1);
+            this.Controls.Add(sfDataGrid1);
         }
     }
 }
@@ -64,7 +64,7 @@ Namespace WindowsFormsApplication1
 			Dim sfDataGrid1 As New SfDataGrid()
 			sfDataGrid1.Location = New System.Drawing.Point(85, 108)
 			sfDataGrid1.Size = New System.Drawing.Size(240, 150)
-			Me.Controls.Add(Me.sfDataGrid1)
+			Me.Controls.Add(sfDataGrid1)
 		End Sub
 	End Class
 End Namespace
