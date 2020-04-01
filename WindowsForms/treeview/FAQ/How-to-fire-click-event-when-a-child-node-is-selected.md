@@ -81,3 +81,5 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-get-the-selected-node-using-AfterSelect-event-)
