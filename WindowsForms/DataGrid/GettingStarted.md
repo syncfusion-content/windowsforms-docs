@@ -6,7 +6,7 @@ platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
-# Getting Started 
+# Getting Started with Windows Forms DataGrid (SfDataGrid)
 This section provides a quick overview for working with the data grid for WinForms. Walk through the entire process of creating a real world data grid.
 
 To get start quickly with WinForms DataGrid, you can check on this video:
