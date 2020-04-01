@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Helpers in WindowsForms DataGrid control | Syncfusion
-description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion WindowsForms DataGrid (SfDataGrid) control and more details.
+title: Helpers in WinForms DataGrid control | Syncfusion
+description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
 platform: WindowsForms
 control: SfDataGrid 
 documentation: ug
