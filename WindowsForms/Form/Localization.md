@@ -15,7 +15,7 @@ To localize the SfForm based on `CurrentUICulture` using resource files, follow 
 
 1) Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/tree/master/Syncfusion.Shared.Base).
+2) Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img1.png) 
 
@@ -57,7 +57,7 @@ End Sub
 ![Winforms sfform localized with modified resources](Localization_images/Localization_img5.png)
 
 ## Editing Default Resource File
-The default resource file can be edited by adding it to Resources folder of the application where SfForm reads the static texts from here. The default resource file can be download from [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/tree/master/Syncfusion.Shared.Base).
+The default resource file can be edited by adding it to Resources folder of the application where SfForm reads the static texts from here. The default resource file can be download from [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img6.png)
 
