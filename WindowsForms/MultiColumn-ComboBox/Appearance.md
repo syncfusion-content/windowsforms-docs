@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Appearance | WindowsForms | Syncfusion
-description: appearance
+description: This section deals with explain about the appearance in MultiColumnComboBox control on Windows Forms platform
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms MultiColumnComboBox
 
-Visual styles for the MultiColumnComboBox control can be specified using MultiColumnComboBox.Style property. The various styles are,
+Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox~Style.html) property. The various styles are,
 
 * Office2003
 * OfficeXP
@@ -37,12 +37,12 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img328.jpeg) 
+![Appearance](Overview_images/Overview_img328.jpeg) 
 
 
-![](Overview_images/Overview_img329.jpeg) 
+![Appearance](Overview_images/Overview_img329.jpeg) 
 
-//Sample code for setting "Office2016 Colorful" style for MultiColumnComboBox
+ Code snippet for setting "Office2016Colorful" style for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -60,7 +60,7 @@ Me.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 
 ## Custom colors
 
-We can also apply custom colors to the MultiColumnComboBox control by setting Office2007ColorTheme to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+We can also apply custom colors to the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control by setting `Office2007ColorTheme` to `Managed` and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,4 +78,8 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img330.jpeg)
+![Custom colors](Overview_images/Overview_img330.jpeg)
+
+## See Also
+
+[How to change WinForms MultiColumnComboBox row colors?](https://www.syncfusion.com/forums/152520/how-to-change-winforms-multicolumncombobox-row-colors)
