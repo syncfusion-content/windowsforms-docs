@@ -278,7 +278,3 @@ End Sub
 {% endtabs %}
 
 ![Populating MultiColumnComboBox](Overview_images/Overview_img327.jpeg)
-
-## See Also
-
-[How to change WinForms MultiColumnComboBox row colors?](https://www.syncfusion.com/forums/152520/how-to-change-winforms-multicolumncombobox-row-colors)
