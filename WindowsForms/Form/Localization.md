@@ -15,7 +15,7 @@ To localize the SfForm based on `CurrentUICulture` using resource files, follow 
 
 1) Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Base1822971043).
+2) Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img1.png) 
 
@@ -57,7 +57,7 @@ End Sub
 ![Winforms sfform localized with modified resources](Localization_images/Localization_img5.png)
 
 ## Editing Default Resource File
-The default resource file can be edited by adding it to Resources folder of the application where SfForm reads the static texts from here. The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Base1822971043).
+The default resource file can be edited by adding it to Resources folder of the application where SfForm reads the static texts from here. The default resource file can be download from [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img6.png)
 
@@ -68,7 +68,7 @@ Now, change the Name/Value pair in Resource Designer of `Syncfusion.Shared.Base.
 ![Modifying default resource file of winforms sfform](Localization_images/Localization_img8.png)
 
 ## Localize Resource File with Different Assembly or Namespace
-If resource (.resx) files are added into different assembly other than start up application, call the SetResources method of LocalizationResource follows.
+If resource (.resx) files are added into different assembly other than start up application, call the `SetResources` method of `LocalizationResource` follows.
 
 {% tabs %}
 {% highlight c# %}
