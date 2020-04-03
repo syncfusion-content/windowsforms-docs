@@ -119,6 +119,10 @@ The NewDockStateBeginLoad event occurs before loading a new dock state.</td></tr
 The NewDockStateEndLoad event occurs immediately after a new dock state is loaded.</td></tr>
 <tr>
 <td>
+{{ '[PreviewDockHints](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreviewDockHints_EV.html)' | markdownify }}</td><td>
+The PreviewDockHints event occurs before displaying the dock hints when drag the windows.</td></tr>
+<tr>
+<td>
 {{ '[ProvideGraphicsItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~ProvideGraphicsItems_EV.html)' | markdownify }}</td><td>
 The ProvideGraphicsItems event occurs whenever a dockable control caption needs to be painted.</td></tr>
 <tr>
@@ -975,6 +979,7 @@ This section covers the following events:
 * [DockStateUnavailable event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
 * [NewDockStateBeginLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
 * [NewDockStateEndLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
+* [PreviewDockHints event]()
 
 ### DockStateChanged event
 
@@ -1337,6 +1342,47 @@ Private Sub dockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e 
 
    MessageBox.Show("This is NewDockStateEndLoad Event Message Box")
 
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### PreviewDockHints event
+
+The [PreviewDockHints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PreviewDockHints_EV.html)
+event occurs before displaying the dock hints when drag the windows. The `PreviewDockHintsEventArgs` provides the following event data for the `PreviewDockHints` event of DockingManager.
+
+* DockAbility : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
+
+* DraggingSource : Gets or sets the dragging element of DockingManager that raises the PreviewDockHints event.
+
+* DraggingTarget : Gets or sets the target element in which the dragging window of DockingManager to be docked.  
+
+* OuterDockability : Gets or sets the OuterDockability to decide the visibility of dock hints on edges of DockingManager.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ private void DockingManager1_PreviewDockHints(object sender, Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs e)
+        {
+            if(e.DraggingTarget == panel2)
+            {
+                //Sets the panel 2 to show right dock hint for other windows to dock on right side only.
+                e.DockAbility = Syncfusion.Windows.Forms.Tools.DockAbility.Right;
+            }
+        }
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Private Sub DockingManager1_PreviewDockHints(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs)
+    If e.DraggingTarget = panel2 Then
+        e.DockAbility = Syncfusion.Windows.Forms.Tools.DockAbility.Right
+    End If
 End Sub
 
 {% endhighlight %}
