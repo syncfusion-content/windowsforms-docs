@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docking-Events | WindowsForms | Syncfusion
-description: This sections explains different events available and how they are fired in DockingManager
+description: This sections explains different events available and how they are invoked when an action is performed in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
