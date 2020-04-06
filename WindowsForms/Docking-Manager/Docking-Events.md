@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Docking-Events | WindowsForms | Syncfusion
-description: This sections explains different events available in DockingManager
+description: This sections explains different events available and how they are fired in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# Docking Events
+# Docking Events in DockingManager
 
 The `DockingManager` provides a functionality for creating and working with enhanced docking windows. This supports attaching to a host form border, dragging and docking to different edges within the form, dragged off the host form, and floated as an individual top-level window. The Docking Framework allows any child control to be made on a form in a fully qualified docking window. The docking manager provides programmatic access to create an interaction between these dockable windows and other complex features such as multiple docking levels, nested docking, tabbed docking, tear-off tabs, auto hide mode, state persistence etc., by raising several events.
 
