@@ -1857,3 +1857,6 @@ End If
 
 {% endtabs %}
 
+## See Also
+
+[How to programmatically configure syntax highlighting in WinForms SyntaxEditor?](https://www.syncfusion.com/kb/11105/how-to-programmatically-configure-syntax-highlighting-in-winforms-syntaxeditor)
