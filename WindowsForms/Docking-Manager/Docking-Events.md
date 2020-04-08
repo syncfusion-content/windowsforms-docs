@@ -1365,14 +1365,14 @@ event occurs before displaying the dock hints when drag the windows. The `Previe
 
 {% highlight C# %}
 
- private void DockingManager1_PreviewDockHints(object sender, Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs e)
-        {
-            if(e.DraggingTarget == panel2)
-            {
-                //Sets the panel 2 to show right dock hint for other windows to dock on right side only.
-                e.DockAbility = Syncfusion.Windows.Forms.Tools.DockAbility.Right;
-            }
-        }
+private void DockingManager1_PreviewDockHints(object sender, Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs e)
+{
+   if(e.DraggingTarget == panel2)
+   {
+      //Sets the panel 2 to show right dock hint for other windows to dock on right side only.
+      e.DockAbility = Syncfusion.Windows.Forms.Tools.DockAbility.Right;
+   }
+}
 
 {% endhighlight %}
 
