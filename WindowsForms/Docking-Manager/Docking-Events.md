@@ -979,7 +979,7 @@ This section covers the following events:
 * [DockStateUnavailable event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#dockstateunavailable-event)
 * [NewDockStateBeginLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstatebeginload-event)
 * [NewDockStateEndLoad event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#newdockstateendload-event)
-* [PreviewDockHints event]()
+* [PreviewDockHints event](http://help.syncfusion.com/windowsforms/dockingmanager/docking-events#previewdockhints-event)
 
 ### DockStateChanged event
 
@@ -1350,16 +1350,16 @@ End Sub
 
 ### PreviewDockHints event
 
-The [PreviewDockHints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PreviewDockHints_EV.html)
-event occurs before displaying the dock hints when drag the windows. The `PreviewDockHintsEventArgs` provides the following event data for the `PreviewDockHints` event of DockingManager.
+The [PreviewDockHints](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreViewDockHints_EV.html)
+event occurs before displaying the dock hints when drag the windows. The [`PreviewDockHintsEventArgs`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the [`PreviewDockHints`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreViewDockHints_EV.html) event of DockingManager. This event allows  user to restrict the docking sides of the dragged window and it also enables the target window to restrict the sides  where the dragged window can be docked when dragged over it.
 
-* DockAbility : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
+* [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~DockAbility.html) : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
 
-* DraggingSource : Gets or sets the dragging element of DockingManager that raises the PreviewDockHints event.
+* [DraggingSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~DraggingSource.html) : Gets or sets the dragging element of DockingManager that raises the PreviewDockHints event.
 
-* DraggingTarget : Gets or sets the target element in which the dragging window of DockingManager to be docked.  
+* [DraggingTarget](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~DraggingTarget.html) : Gets or sets the target element in which the dragging window of DockingManager to be docked.  
 
-* OuterDockability : Gets or sets the OuterDockability to decide the visibility of dock hints on edges of DockingManager.
+* [IsOuterDockHints](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~IsOuterDockHints.html) : Gets values that specify PreviewDockHints occurred for inner dockability or outer dockability of dragging child in DockingManager.  
 
 {% tabs %}
 
@@ -1388,6 +1388,10 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![PreviewDockHints](Docking-Events_images/Docking-Events_img7.png)
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/Restrict-window-docking-side-using-DockingPreviewHint-event-in-Winforms)
 
 ## TabGroupCreating event
 
