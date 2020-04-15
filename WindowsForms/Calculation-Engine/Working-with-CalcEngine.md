@@ -294,6 +294,10 @@ CalcEngine.ParseDateTimeSeparator = '-';
 
 Gets or sets whether the `CalcEngine` throws any exception that occurs during the computation of a library function. It throws an error message from FormulaErrorStrings collection. The default value of  of `RethrowLibraryComputationExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
 
+### RethrowParseExceptions
+
+Gets or sets whether the `CalcEngine` throws any exception that occurs during the parsing of a library function. It throws an error message from FormulaErrorStrings collection. The default value of `RethrowParseExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
+
 ### SupportLogicalOperators
 
  If you want to use any logical operators such as AND, OR, XOR,... in a formula, you can set [SupportLogicalOperators](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportLogicalOperators.html) property of `CalcEngine` as true .

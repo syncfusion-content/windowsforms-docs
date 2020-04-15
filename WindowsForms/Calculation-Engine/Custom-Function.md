@@ -7,7 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
-# Custom Function
+# Custom Function of Calculate 
 
 Essential Calculate holds many functions from statistics, finance and mathematics, along with other general purpose functions. There are
 more than 400+ entries in the library. Also, it is easy to add the own calculations with custom functions.
@@ -29,6 +29,11 @@ The method must have the signature specified by the delegate, [LibraryFunction](
 For writing a custom formula method, any convention with respect to passing arguments can be used within the implementation code. Thus, arguments can be a single entry 
 like A1 or 153 or it can be more complex like A1:C15. The computed value will be returned as a string. The arguments can be enhanced with standard items like cell references, 
 numbers, other formulas, etc., using the parsing tools of `CalcEngine` to minimize the amount of code that is required to be written.
+
+Parsing tool is built-in method of `CalcEngine` which is used to parse the formula for computation and it helps easy to compute the formula.
+**See more**
+ [Parse and Compute](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute)
+
 
 Below code example shows implementing the custom function of computing minimum value,
 
@@ -106,6 +111,25 @@ engine.LibraryFunctions.Clear();
 
 {% endhighlight %}
 {% endtabs %}
+
+## Get list of built-in LibraryFunctions
+
+To get the list of  built-in calculation functions, you could use the LibraryFunctions property from CalcEngine.
+
+{% tabs %}
+{% highlight c# %}
+
+//Class derived from ICalcData,
+CalcData calcData = new CalcData();
+
+CalcEngine engine = new CalcEngine(calcData);
+
+//To get the list of build in functions,
+var computationFunctions = engine.LibraryFunctions; 
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Replace Function
 
