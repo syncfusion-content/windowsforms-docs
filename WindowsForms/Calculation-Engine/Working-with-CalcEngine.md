@@ -621,7 +621,7 @@ string val1 = engine.ParseAndComputeFormula("D1");
 
 ## Get list of supported formulas in CalcEngine
 
-To get the list of supported formulas in CalcEngine, you could use the LibraryFunctions property from CalcEngine.
+To get the list of supported formulas in CalcEngine, you could use the [LibraryFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine+LibraryFunction.html) property from CalcEngine.
 
 {% tabs %}
 {% highlight c# %}
