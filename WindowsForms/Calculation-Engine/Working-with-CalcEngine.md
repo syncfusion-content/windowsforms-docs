@@ -296,7 +296,8 @@ Gets or sets whether the `CalcEngine` throws any exception that occurs during th
 
 ### RethrowParseExceptions
 
-Gets or sets whether the `CalcEngine` throws any exception that occurs during the parsing of a library function. It throws an error message from FormulaErrorStrings collection. The default value of `RethrowParseExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
+If the value is set as true,  It throws an error message from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) collection. 
+if the value is set as false, and the parsed formula is not a valid one,  CalcEngine returns with the [ErrorString]((https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages)) message.
 
 ### SupportLogicalOperators
 
@@ -614,6 +615,24 @@ engine.UpdateDependenciesAndCell("D1");
 
 //Computing the formula with latest changes,
 string val1 = engine.ParseAndComputeFormula("D1");
+
+{% endhighlight %}
+{% endtabs %}
+
+## Get list of supported formulas in CalcEngine
+
+To get the list of supported formulas in CalcEngine, you could use the LibraryFunctions property from CalcEngine.
+
+{% tabs %}
+{% highlight c# %}
+
+//Class derived from ICalcData,
+CalcData calcData = new CalcData();
+
+CalcEngine engine = new CalcEngine(calcData);
+
+//To get the list of build in functions,
+var computationFunctions = engine.LibraryFunctions; 
 
 {% endhighlight %}
 {% endtabs %}
