@@ -294,6 +294,10 @@ CalcEngine.ParseDateTimeSeparator = '-';
 
 Gets or sets whether the `CalcEngine` throws any exception that occurs during the computation of a library function. It throws an error message from FormulaErrorStrings collection. The default value of  of `RethrowLibraryComputationExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
 
+### RethrowParseExceptions
+
+The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) collection. Otherwise, it returns error message from [ErrorStrings]((https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages))collection.
+
 ### SupportLogicalOperators
 
  If you want to use any logical operators such as AND, OR, XOR,... in a formula, you can set [SupportLogicalOperators](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~SupportLogicalOperators.html) property of `CalcEngine` as true .
@@ -610,6 +614,24 @@ engine.UpdateDependenciesAndCell("D1");
 
 //Computing the formula with latest changes,
 string val1 = engine.ParseAndComputeFormula("D1");
+
+{% endhighlight %}
+{% endtabs %}
+
+## Get list of supported formulas in CalcEngine
+
+To get the list of supported formulas in CalcEngine, you could use the [LibraryFunctions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine+LibraryFunction.html) property from CalcEngine.
+
+{% tabs %}
+{% highlight c# %}
+
+//Class derived from ICalcData,
+CalcData calcData = new CalcData();
+
+CalcEngine engine = new CalcEngine(calcData);
+
+//To get the list of build in functions,
+var computationFunctions = engine.LibraryFunctions; 
 
 {% endhighlight %}
 {% endtabs %}
