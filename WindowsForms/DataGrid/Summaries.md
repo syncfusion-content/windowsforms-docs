@@ -140,7 +140,7 @@ this.sfDataGrid1.TableSummaryRows.Add(tableSummaryRow1);
 Dim tableSummaryRow1 As New GridTableSummaryRow()
 tableSummaryRow1.Name = "TableSummary"
 tableSummaryRow1.ShowSummaryInRow = True
-tableSummaryRow1.Title = " Total Product Count: {ProductName}"
+tableSummaryRow1.Title = " Total Product Count: {TotalProduct}"
 tableSummaryRow1.Position = VerticalPosition.Bottom
 
 Dim summaryColumn1 As New GridSummaryColumn()
