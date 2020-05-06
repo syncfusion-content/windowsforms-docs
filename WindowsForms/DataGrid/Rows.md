@@ -15,10 +15,10 @@ Row Header is a special column which is placed as first cell of each row. Row he
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.ShowRowHeader = true;
+this.sfDataGrid1.ShowRowHeader = true;
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.ShowRowHeader = True
+Me.sfDataGrid1.ShowRowHeader = True
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,14 +44,14 @@ The appearance of the selection marker can be customized using the selection mar
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4;
-this.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red;
-this.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White;
+this.sfDataGrid1.Style.RowHeaderStyle.SelectionMarkerThickness = 4;
+this.sfDataGrid1.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red;
+this.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White;
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerThickness = 4
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red
-Me.sfDataGrid.Style.RowHeaderStyle.SelectionBackColor = Color.White
+Me.sfDataGrid1.Style.RowHeaderStyle.SelectionMarkerThickness = 4
+Me.sfDataGrid1.Style.RowHeaderStyle.SelectionMarkerColor = Color.Red
+Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,18 +133,18 @@ The [RowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Wind
 
 {% tabs %}
 {% highlight c# %}
-sfDataGrid.DrawCell += OnSfDataGridDrawCell;
+sfDataGrid1.DrawCell += OnSfDataGridDrawCell;
 
 private void OnSfDataGridDrawCell(object sender, Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs e)
 {
-    if (sfDataGrid.ShowRowHeader && e.RowIndex != 0)
+    if (sfDataGrid1.ShowRowHeader && e.RowIndex != 0)
     {
         double value = (e.DataRow.RowData as OrderInfo).UnitPrice;
         if (e.ColumnIndex == 0)
         {
             e.Handled = true;
             Rectangle rect = new Rectangle(e.Bounds.X + 3, e.Bounds.Y + 5, e.Bounds.Width - 3, e.Bounds.Height - 5);
-            e.Graphics.FillRectangle(new SolidBrush(sfDataGrid.Style.RowHeaderStyle.BackColor), new Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1));
+            e.Graphics.FillRectangle(new SolidBrush(sfDataGrid1.Style.RowHeaderStyle.BackColor), new Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1));
             //Draw the image on RowHeader
             if (value >= 0 && value < 50)
                 e.Graphics.DrawImage(new Bitmap(Image.FromFile(@"..\..\Images\Yellow.png")), rect);
@@ -158,15 +158,15 @@ private void OnSfDataGridDrawCell(object sender, Syncfusion.WinForms.DataGrid.Ev
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.DrawCell, AddressOf OnSfDataGridDrawCell
+AddHandler sfDataGrid1.DrawCell, AddressOf OnSfDataGridDrawCell
 
 Private Sub OnSfDataGridDrawCell(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs)
-	If sfDataGrid.ShowRowHeader AndAlso e.RowIndex <> 0 Then
+	If sfDataGrid1.ShowRowHeader AndAlso e.RowIndex <> 0 Then
 		Dim value As Double = (TryCast(e.DataRow.RowData, OrderInfo)).UnitPrice
 		If e.ColumnIndex = 0 Then
 			e.Handled = True
 			Dim rect As New Rectangle(e.Bounds.X + 3, e.Bounds.Y + 5, e.Bounds.Width - 3, e.Bounds.Height - 5)
-			e.Graphics.FillRectangle(New SolidBrush(sfDataGrid.Style.RowHeaderStyle.BackColor), New Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1))
+			e.Graphics.FillRectangle(New SolidBrush(sfDataGrid1.Style.RowHeaderStyle.BackColor), New Rectangle(e.Bounds.X + 1, e.Bounds.Y + 1, e.Bounds.Width - 1, e.Bounds.Height - 1))
 			'Draw the image on RowHeader
 			If value >= 0 AndAlso value < 50 Then
 				e.Graphics.DrawImage(New Bitmap(Image.FromFile("..\..\Images\Yellow.png")), rect)
@@ -188,7 +188,7 @@ The following code shows how to draw an image in the row header by overriding th
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.CellRenderers["RowHeader"] = new CustomRowHeaderCellRenderer(sfDataGrid);
+this.sfDataGrid1.CellRenderers["RowHeader"] = new CustomRowHeaderCellRenderer(sfDataGrid1);
 
 public class CustomRowHeaderCellRenderer : GridRowHeaderCellRenderer
 {
@@ -314,8 +314,8 @@ this.sfDataGrid1.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.Visu
 {% endhighlight %}
 {% highlight vb %}
 'Change alignment for the header cells.
-Me.sfDataGrid.Style.HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center
-Me.sfDataGrid.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
+Me.sfDataGrid1.Style.HeaderStyle.HorizontalAlignment = HorizontalAlignment.Center
+Me.sfDataGrid1.Style.HeaderStyle.VerticalAlignment = System.Windows.Forms.VisualStyles.VerticalAlignment.Top
 
 {% endhighlight %}
 {% endtabs %}
@@ -328,11 +328,11 @@ The header text of the specific column can be wrapped using the [GridColumnBase.
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.Columns["CustomerID"].AllowHeaderTextWrapping = true;   
+this.sfDataGrid1.Columns["CustomerID"].AllowHeaderTextWrapping = true;   
 
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Columns("CustomerID").AllowHeaderTextWrapping = True
+Me.sfDataGrid1.Columns("CustomerID").AllowHeaderTextWrapping = True
 
 {% endhighlight %}
 {% endtabs %} 
@@ -405,17 +405,17 @@ The rows can be freeze in view at top and bottom like Excel by setting the `Froz
 {% tabs %}
 {% highlight c# %}
 // Freeze rows at top
-this.sfDataGrid.FrozenRowCount = 3;
+this.sfDataGrid1.FrozenRowCount = 3;
 
 // Freeze rows at bottom
-this.sfDataGrid.FooterRowCount = 2;
+this.sfDataGrid1.FooterRowCount = 2;
 {% endhighlight %}
 {% highlight vb %}
 ' Freeze rows at top
-Me.sfDataGrid.FrozenRowCount = 3
+Me.sfDataGrid1.FrozenRowCount = 3
 
 ' Freeze rows at bottom
-Me.sfDataGrid.FooterRowCount = 2
+Me.sfDataGrid1.FooterRowCount = 2
 {% endhighlight %}
 {% endtabs %}
 
@@ -426,17 +426,17 @@ The columns can be freeze in view at left and right like Excel by setting the `F
 {% tabs %}
 {% highlight c# %}
 // Freeze columns at left
-this.sfDataGrid.FooterColumnCount = 2;
+this.sfDataGrid1.FooterColumnCount = 2;
 
 // Freeze columns at right
-this.sfDataGrid.FrozenColumnCount = 2;
+this.sfDataGrid1.FrozenColumnCount = 2;
 {% endhighlight %}
 {% highlight vb %}
 ' Freeze columns at left
-Me.sfDataGrid.FooterColumnCount = 2
+Me.sfDataGrid1.FooterColumnCount = 2
 
 ' Freeze columns at right
-Me.sfDataGrid.FrozenColumnCount = 2
+Me.sfDataGrid1.FrozenColumnCount = 2
 {% endhighlight %}
 {% endtabs %}
 
@@ -449,10 +449,10 @@ Me.sfDataGrid.FrozenColumnCount = 2
 The appearance of freeze pane line can be customized by setting the [FreezePaneLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~FreezePaneLineStyle.html) property. The `FreezePaneLineStyle` property contains all the settings that are needed for the freeze pane line appearance customization.
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet;
+this.sfDataGrid1.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet;
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
+Me.sfDataGrid1.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 {% endhighlight %}
 {% endtabs %}
 
@@ -462,10 +462,10 @@ Me.sfDataGrid.Style.FreezePaneLineStyle.Color = System.Drawing.Color.BlueViolet
 Freeze line weight or thickness can be changed by setting the [FreezePaneLineStyle.Weight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.FreezePaneLineStyleInfo~Weight.html) property.
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.Style.FreezePaneLineStyle.Weight = 3;
+this.sfDataGrid1.Style.FreezePaneLineStyle.Weight = 3;
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid.Style.FreezePaneLineStyle.Weight = 3
+Me.sfDataGrid1.Style.FreezePaneLineStyle.Weight = 3
 {% endhighlight %}
 {% endtabs %}
 
@@ -476,7 +476,7 @@ An appearance of the freeze pane line can be customized by using [DrawFreezePane
 [Draw​Freeze​Pane​Line​Args ](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.DrawFreezePaneLineArgs.html) should be enabled to draw the custom line.
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.DrawFreezePaneLine += SfDataGrid_DrawFreezePaneLine;
+this.sfDataGrid1.DrawFreezePaneLine += SfDataGrid_DrawFreezePaneLine;
 
 private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs e)
 {
@@ -490,7 +490,7 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
+AddHandler sfDataGrid1.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
 
 Private Sub SfDataGrid_DrawFreezePaneLine(ByVal sender As Object, ByVal e As DrawFreezePaneLineArgs)
 	Dim pen As New Pen(Color.Red, 2)
@@ -511,7 +511,7 @@ By default, the back color of the freeze pane line cannot be changed based on th
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.DrawFreezePaneLine += SfDataGrid_DrawFreezePaneLine;
+this.sfDataGrid1.DrawFreezePaneLine += SfDataGrid_DrawFreezePaneLine;
 
 private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs e)
 {
@@ -538,7 +538,7 @@ private void SfDataGrid_DrawFreezePaneLine(object sender, DrawFreezePaneLineArgs
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
+AddHandler sfDataGrid1.DrawFreezePaneLine, AddressOf SfDataGrid_DrawFreezePaneLine
 
 Private Sub SfDataGrid_DrawFreezePaneLine(ByVal sender As Object, ByVal e As DrawFreezePaneLineArgs)
 	If e.LineType = LineType.FrozenRow Then
@@ -569,11 +569,11 @@ The records in a view can be looped using [SfDataGrid.View.Records](https://help
 
 {% tabs %}
 {% highlight c# %}
-foreach (var record in sfDataGrid.View.Records) 
+foreach (var record in sfDataGrid1.View.Records) 
 {// Do your customizations here. }
 {% endhighlight %}
 {% highlight vb %}
-For Each record In sfDataGrid.View.Records
+For Each record In sfDataGrid1.View.Records
  ' Do your customizations here. 
 Next record 
 {% endhighlight %}
