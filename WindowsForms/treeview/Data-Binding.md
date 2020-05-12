@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms TreeView
 [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to any table, collection of tables, custom objects, etc. by using the [TreeViewAdv.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~DataSource.html) property. 
 
 The following are the ways to bind various data sources to [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
