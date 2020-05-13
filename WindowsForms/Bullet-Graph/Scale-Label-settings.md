@@ -16,7 +16,7 @@ A quantitative scale label specifies the numeric value according to the major ti
 
 ### Customizing Labels:
 
-The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelSize, the font size of the labels is modified. 
+The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelFontSize property, the font size of the labels is modified. 
 
 {% highlight c# %}
 

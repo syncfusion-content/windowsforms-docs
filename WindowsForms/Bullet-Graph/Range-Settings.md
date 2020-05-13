@@ -41,7 +41,7 @@ this.Controls.Add(bullet);
 
 ### Binding RangeStroke to Ticks and Labels:
 
-By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting BindWithRangeStrokeToTicks, the stroke of the ticks is set related to the stroke of the specified ranges.
+By setting BindRangeStrokeToLabels, the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting BindRangeStrokeToTicks, the stroke of the ticks is set related to the stroke of the specified ranges.
 
 {% highlight c# %}
 
