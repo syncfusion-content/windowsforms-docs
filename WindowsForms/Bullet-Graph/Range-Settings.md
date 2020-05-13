@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: features
+description: Learn how to customize the range and to set range stroke to ticks and labels in Bullet Graph Windows Forms
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Range Settings 
+# Qualitative Range of the Bullet Graph 
 
 Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified RangeEnd at the start of the previous range’s RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
@@ -37,7 +37,7 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Features_images/Features_img7.png)
+![Range customization image](Features_images/Features_img7.png)
 
 ### Binding RangeStroke to Ticks and Labels:
 
@@ -71,4 +71,4 @@ By setting BindRangeStrokeToLabels, the stroke of the labels is set related to t
 
 {% endhighlight %}
 
-![](Features_images/Features_img8.png)
+![Range stroke to ticks and labels image](Features_images/Features_img8.png)

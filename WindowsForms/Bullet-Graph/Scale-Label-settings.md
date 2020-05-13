@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: features
+description: Learn how to customize  and position the scale label in Bullet Graph Windows Forms
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
@@ -48,7 +48,7 @@ this.Controls.Add(bullet);
 
 {% endhighlight %} 
 
-![](Features_images/Features_img11.png)
+![Label customization Image](Features_images/Features_img11.png)
 
 ### Label Position
 
@@ -81,4 +81,4 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Label Position Image](Features_images/Features_img12.png)
