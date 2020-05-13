@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Printing PDF Files 
+# Printing PDF Files in WinForms PdfViewer
 
 PdfViewerControl allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon clicking the Print button.
 
@@ -326,3 +326,6 @@ namespace PrintEventsDemo
 
 {% endhighlight %}
 {% endtabs %}
+
+The complete sample project of the print events can be downloaded from the following GitHub location:
+https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Printing/PrintEventsDemo
