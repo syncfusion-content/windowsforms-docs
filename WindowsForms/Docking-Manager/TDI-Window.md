@@ -305,6 +305,23 @@ Me.dockingManager1.AllowTabsMoving = false
 {% endtabs %}
 
 
+## Closing TDI tabitems using mouse middle click
+
+You can close the tabitems of `DocumentContainer` and tabbed windows in `DockingManager` by clicking the mouse middle button on the tabitem header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CloseTabOnMiddleClick.html) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+ this.dockingManager1.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% highlight VB %}
+
+Me.dockingManager1.CloseTabOnMiddleClick = true
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Show or hide close button 
 
  The visibility of common close button to close the selected tab in document window can be changed by [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ShowCloseButton.html) property. By default, this property is set to `false`.

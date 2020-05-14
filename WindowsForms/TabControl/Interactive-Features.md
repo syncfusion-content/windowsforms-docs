@@ -53,6 +53,22 @@ Me.tabControlAdv1.ShowCloseButtonForActiveTabOnly = True
 
 ![Active tab has close button](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
+### Closing tabitems using mouse middle click
+
+You can close the tabitems of `TabControl` by clicking the mouse middle button on the tabitem header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~CloseTabOnMiddleClick.html) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+this.tabControlAdv1.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% highlight VB %}
+
+Me.tabControlAdv1.CloseTabOnMiddleClick = true
+
+{% endhighlight %}
+{% endtabs %}
 
 N> Close Button can be set for the whole [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) by using [Tab Navigation](/windowsforms/tabcontroladv/tab-navigation).
 
