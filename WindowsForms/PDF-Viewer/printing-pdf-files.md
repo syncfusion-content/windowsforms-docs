@@ -327,4 +327,4 @@ namespace PrintEventsDemo
 {% endhighlight %}
 {% endtabs %}
 
-N> The complete sample project of the print events can be downloaded from the [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Printing/PrintEventsDemo) location.
+N> The complete sample project of the print events can be downloaded from [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Printing/PrintEventsDemo).
