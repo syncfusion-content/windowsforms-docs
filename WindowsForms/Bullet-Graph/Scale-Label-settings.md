@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: features
+description: Learn how to customize the scale label and position the scale label in Syncfusion Bullet Graph Windows Forms
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
@@ -16,7 +16,7 @@ A quantitative scale label specifies the numeric value according to the major ti
 
 ### Customizing Labels:
 
-The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelSize, the font size of the labels is modified. 
+The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelFontSize property, the font size of the labels is modified. 
 
 {% highlight c# %}
 
@@ -48,7 +48,7 @@ this.Controls.Add(bullet);
 
 {% endhighlight %} 
 
-![](Features_images/Features_img11.png)
+![Label customization Image](Features_images/Features_img11.png)
 
 ### Label Position
 
@@ -81,4 +81,4 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Label Position Image](Features_images/Features_img12.png)
