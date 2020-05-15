@@ -7,7 +7,7 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Drop-Down
+# Drop-Down in Windows Forms ComboBox
 
 ## Setting maximum drop-down items
 
@@ -359,3 +359,7 @@ End Class
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection
+
+## See Also
+
+[How to add separator line in WinForms SfComboBox dropdown items?](https://www.syncfusion.com/kb/11498/how-to-add-separator-line-in-winforms-sfcombobox-dropdown-iems)
