@@ -97,4 +97,4 @@ namespace SaveEventsDemo
 {% endhighlight %}
 {% endtabs %}
 
-N> The complete sample project of the save events can be downloaded from [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Save/SaveEventsDemo).
+N> The complete sample project of the Save Events is available in the [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/Save/SaveEventsDemo).
