@@ -1320,7 +1320,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PERMUTATIONA](https://support.office.com/en-us/article/permutationa-function-6c7d7fdc-d657-44e6-aa19-2857b25cae4e)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[POISSON](/windowsforms/calculate/supported-formulas/statistical#poisson'| markdownify }}</td>
+<td>{{'[POISSON](/windowsforms/calculate/supported-formulas/statistical#poisson)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1579,7 +1579,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>{{'[BESSELI](https://support.office.com/en-us/article/besseli-function-8d33855c-9a8d-444b-98e0-852267b1c0df)'| markdownify }}</td><tr>
+<td>{{'[BESSELI](https://support.office.com/en-us/article/besseli-function-8d33855c-9a8d-444b-98e0-852267b1c0df)'| markdownify }}</td></tr>
 <tr>
 <td>{{'[BESSELJ](/windowsforms/calculate/supported-formulas/engineering#besselj)'| markdownify }}</td>
 <td>yes</td>
