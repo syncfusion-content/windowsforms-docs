@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of text functions in CalcEngine
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# TEXT FORMULAS
+# TEXT FORMULAS of Calculate library
 
 
 
@@ -807,3 +807,316 @@ _VALUE(range)_
 
 
 * range is the string that contains the date or a number.
+
+
+
+## TEXTJOIN
+
+
+
+The `TEXTJOIN` function joins the text from multiple ranges and/or strings, and includes a delimiter you specify between each text value that will be combined. It allows you to supply a range of cells, and has a setting to ignore empty values.
+
+
+
+**Syntax:**
+
+
+
+_TEXTJOIN(delimiter, ignore_empty, text1, [text2], …)_
+
+
+
+**where:**
+
+
+
+* delimiter (required): A separator between each text value in the resulting string. Most commonly, you would use a delimiter such as a comma or space character.
+
+
+
+* ignore_empty (required): If it is `TRUE` ignores the empty values, and `FALSE` includes empty values in the result.
+
+
+
+* text1 (required) :First text item to be joined.
+
+
+
+* [text2, ...] (optional): Additional text items to be joined. There can be up to 252 strings that are joined together.
+
+
+
+**Remarks:**
+
+
+
+*  The result string exceeds cell limit (32767 characters), it returns the `#VALUE!` error message.
+
+
+
+## CONCAT
+
+
+
+The `CONCAT` function joins the text from multiple ranges and/or strings, but it doesn't provide delimiter or IgnoreEmpty arguments. 
+
+
+
+**Syntax:**
+
+
+
+_CONCAT(text1, [text2],…)_
+
+
+
+**where:**
+
+
+
+* text1 (required): It is a first text item to be joined. A string, or array of strings, such as a range of cells.
+
+
+
+* [text2, ...] (optional): Additional text items to be joined. There can be upto 253 text arguments for the text items.
+
+
+
+**Remarks:**
+
+
+
+* If the result string exceeds cell limit (32767 characters), TEXTJOIN returns the `#VALUE!` error.
+
+
+
+## LEFTB
+
+
+
+The `LEFTB` function calculates the first character or characters in a text string, based on the number of bytes you specify.
+
+
+
+**Syntax:**
+
+
+
+_LEFTB(text, bytes)_ 
+
+
+
+**where:**
+
+
+
+* text is a string that contains the characters that you want to return.
+
+
+
+* bytes specify the number of characters
+
+
+
+## RIGHTB
+
+
+
+The `RIGHTB` function returns the last character or characters in a text string, based on the number of bytes.
+
+
+
+**Syntax:**
+
+
+
+_RIGHTB(string, num_bytes)_ 
+
+
+
+**where:**
+
+
+
+* string contains the characters you want to return. 
+
+
+
+* num_bytes specifies the number of characters based on the number of bytes.
+
+
+
+## MIDB
+
+
+
+The `MIDB` function returns a specific number of characters from a text string, starting at the position you specify, based on the number of bytes you specify.
+
+
+
+**Syntax:**
+
+
+
+_MIDB(text, startNum, numBytes)_ 
+
+
+
+**where:**
+
+
+
+* text is a string that contains the characters that you want to return.
+
+
+
+* startNum is the position of the first character that you want to extract in text.
+
+
+
+* numBytes specifies the number of characters you want in bytes.
+
+
+
+## LENB
+
+
+
+The `LENB` function returns the number of bytes used to represent the characters in a text string.
+
+
+
+**Syntax:**
+
+
+
+_LENB(name)_ 
+
+
+
+**where:**
+
+
+
+* name is the text whose length you want to find.
+
+
+
+## REPLACEB
+
+
+
+The `REPLACEB` function replaces part of a text string, based on the number of bytes you specify, with a different text string.
+
+
+**Syntax:**
+
+
+
+_REPLACEB(oldText, startNum, num_bytes, newText)_ 
+
+
+
+**where:**
+
+
+
+* oldText is the text that needs to be replaced.
+
+
+
+* startNum is the position of the character in oldText.
+
+
+
+* num_bytes is the number of bytes in old_text that you want REPLACEB to replace with new_text.
+
+
+
+* newText is the text that replaces the character in old text.
+
+
+
+## ASC 
+
+
+
+The `ASC ` function used to converts full-width (double-byte) characters to half-width (single-byte) characters.
+
+
+**Syntax:**
+
+
+
+_ASC(text)_ 
+
+
+
+**where:**
+
+
+
+* The text or a reference to convert to single byte characters. 
+
+
+
+## JIS  
+
+
+
+The `JIS` function converts single byte characters into double byte characters in a text string.
+
+
+**Syntax:**
+
+
+
+_JIS(text)_ 
+
+
+
+**where:**
+
+
+
+* The text or a reference that contains the text you want to change. If text does not contain any half-width English letters, text is not changed.
+
+
+
+## SEARCHB
+
+
+
+The `SEARCHB` function returns the position of a specified character or sub-string within a given text string.
+
+
+
+**Syntax:**
+
+
+
+SEARCHB(findText,withinText, startNum)_ 
+
+
+
+**where:**
+
+
+
+* findText  is the the character or sub-string that you want to find.
+
+
+
+* withinText is the text string that in which you want to search findText.
+
+
+
+* startNum is specifies the position in the within_text string, from which the search should begin.
+
+
+
+Remark:
+
+
+
+* The find text is not found it return `#VALUE!`  error message.
