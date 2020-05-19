@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of  engineering functions in CalcEngine 
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Engineering
+# Engineering formulas of Calculate library
+ 
 
 
 
@@ -803,7 +804,7 @@ inumber denotes a complex number for which you want the cosecant.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMCSC returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, it returns the `#NUM!` error value.
 
 * If inumber is a logical value, IMCSC returns the #VALUE! error value.
 
@@ -851,7 +852,7 @@ inumber denotes a complex number for which you want the tangent.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMTAN returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, IMTAN returns the #NUM! error value.
 
 * If inumber is a logical value, IMTAN returns the #VALUE! error value.
 
@@ -871,7 +872,7 @@ inumber denotes a complex number for which you want the cotangent.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMCOT returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, IMCOT returns the #NUM! error value.
 
 * If inumber is a logical value, IMCOT returns the #VALUE! error value.
 
@@ -891,7 +892,7 @@ inumber denotes a complex number for which you want the hyperbolic sine.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMSINH returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, IMSINH returns the #NUM! error value.
 
 * If inumber is a logical value, IMSINH returns the #VALUE! error value.
 
@@ -909,7 +910,7 @@ inumber denotes a complex number for which you want the hyperbolic cosecant
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMCSCH returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, IMCSCH returns the #NUM! error value.
 
 * If inumber is a logical value, IMCSCH returns the #VALUE! error value.
 
@@ -928,7 +929,7 @@ inumber denotes complex number for which you want the hyperbolic cosine.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMCOSH returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, IMCOSH returns the #NUM! error value.
 
 * If inumber is a logical value, IMCOSH returns the #VALUE! error value.
 
@@ -949,7 +950,7 @@ inumber denotes a complex number for which you want the hyperbolic secant.
 
 * Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
-* If inumber is a value that is not in the `x+yi` or `x+yj` text format, IMSECH returns the #NUM! error value.
+* If inumber is a value that is not in the complex number, it returns the `#NUM!` error value.
 
 * If inumber is a logical value, IMSECH returns the #VALUE! error value.
 
@@ -1125,3 +1126,19 @@ _CONVERT(number,from_unit,to_unit)_
 * from_unit is the units for number.
 
 * to_unit is the units for the result. CONVERT accepts the following text values (in quotation marks) for from_unit and to_unit.
+
+## ERFC
+
+The function `ERFC` returns the complementary Error Function integrated between two supplied limits (x and infinity).
+
+**Syntax:**
+
+_ERFC(x)_
+
+**Where:**
+
+* X : The lower limit for ERFC integration.
+
+**Remarks:**
+
+If x is non-numeric value, it returns the `#VALUE!` error message.

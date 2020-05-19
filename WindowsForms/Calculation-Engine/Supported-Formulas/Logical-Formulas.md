@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of logical functions in CalcEngine 
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Logical Formulas
+# Logical Formulas of Calculate library
 
 
 
@@ -284,3 +284,96 @@ _XOR (logical_value1, logical_value2…)_
 
 
 * When the given arguments do not have the logical values, `XOR` returns the `#VALUE!` error value.
+
+
+
+## IFS
+
+
+
+The `IFS` function runs multiple test, and returns a value that corresponds to the first TRUE condition. `IFS` can take the place of multiple nested IF statements, and is allows shorter, easier to read formulas.It used to test multiple conditions and return first true result.
+
+
+
+**Syntax:**
+
+
+
+_IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], [logical_test3, value_if_true3],…)_
+
+
+
+**where:**
+
+
+
+* logical_test1 (required): This is the first logical test that evaluates to `TRUE` or `FALSE`.
+
+
+
+* value_if_true1 (required): Result to be returned if the first logical test (logical_test1) evaluates to `TRUE`.This Can be empty string.
+
+
+
+* logical_test2…logical_test127 (optional):This is the second logical test that evaluates to `TRUE` or `FALSE`.
+
+
+
+* value_if_true2…value_if_true127 (optional): Result to be returned if logical_testN evaluates to `TRUE`. Each value_if_trueN corresponds with a condition logical_testN.This Can be empty string.
+
+
+**Remarks:**
+
+
+
+* To specify a default result, enter `TRUE` for your final logical_test argument. If none of the other conditions are met `TRUE`, the corresponding value will be returned. 
+
+
+
+* The argument (logical_test) is supplied without a corresponding value_if_true, this function shows a `You've entered too few arguments for this function` error message.
+
+
+
+*  The argument (logical_test) is evaluated and resolves to a value other than `TRUE` or `FALSE`, this function returns a `#VALUE!` error message.
+
+
+
+*  If no `TRUE` value found, this function returns `#N/A` error message.
+
+
+
+## SWITCH
+
+
+
+The `SWITCH` function compares one value against a list of values, and returns the result corresponding to the first match.It return default value when there is no match found.
+
+
+
+**Syntax:**
+
+
+
+_SWITCH(expression, value1, result1, [default or value2, result2],…[default or value3, result3])_
+
+
+
+**where:**
+
+
+
+* expression(required): The value or expression (number, date or some text) that will be compared against list of values.
+
+
+
+* value1…value126: This is a list of values that will be compared against expression.
+
+
+
+* result1…result126: ResultN is the value to be returned when the corresponding list of values matches expression. ResultN and must be supplied for each corresponding valueN argument.
+
+
+
+* default (optional):Default is the value to return in case no matches are found when compare the list of values against expression. The Default argument is identified by having no corresponding resultN expression. Default must be the final argument in the function.
+
+
