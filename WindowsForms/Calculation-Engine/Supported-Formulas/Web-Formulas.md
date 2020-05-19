@@ -7,7 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
-# Web Formulas
+# Web Formulas of Calculate library
 
 
 

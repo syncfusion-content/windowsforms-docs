@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of information functions in CalcEngine 
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Information Formulas
+# Information Formulas of Calculate library
 
 
 
@@ -231,7 +231,7 @@ _ISERROR(value)_
 
 
 
-The `IsLogiacl` function checks whether a value is a logical value and returns `true` or `false`.
+The `IsLogical` function checks whether a value is a logical value and returns `true` or `false`.
 
 
 

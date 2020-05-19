@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of Math & Trigonometry functions in CalcEngine
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Math & Trigonometry
+# Math & Trigonometry formulas of Calculate library
 
 
 
@@ -59,7 +59,7 @@ _ACOT(number) or DEGREES ACOT(number)_
 
 
 
-* number that is to be converted into acotangent.
+* number that is the cotangent of the angle. This must be a real number.
 
 
 
@@ -1850,3 +1850,686 @@ _ISTEXT(text)_
 
 
 * text is the value you want to test if it is a string or not.
+
+
+
+## SIGN
+
+
+
+THe `SINGN` function returns the sign of the supplied numerical argument. Returns 1 if the number is positive, zero (0) if the number is 0, and -1 if the number is negative.
+
+
+
+**Syntax:**
+
+
+
+_SIGN(number)_
+
+
+
+**where:**
+
+
+
+* number is any real number to get the sign.
+
+
+
+## TANH
+
+
+
+THe `TANH` function calculate the hyperbolic tangent of a supplied number.
+
+
+
+**Syntax:**
+
+
+
+_TANH(number)_
+
+
+
+**where:**
+
+
+
+* number is any real number that you want to calculate the hyperbolic tangent. 
+
+
+
+## Sumsq
+
+
+
+THe `Sumsq` function returns the sum of the squares of a series of values.
+
+
+
+**Syntax:**
+
+
+
+_SUMSQ(number1, [number2], ...)_
+
+
+
+**where:**
+
+
+
+* Number1, number2, ...  : Number1 is required, subsequent numbers are optional. A series of numeric values that are to be squared and then summed together.
+
+
+
+**Remarks:**
+
+
+
+* Arguments can either be numbers or names, arrays, or references that contain numbers.
+
+
+* Numbers, logical values, and text representations of numbers that you type directly into the list of arguments are counted.
+
+
+
+* The argument is an array or reference, only numbers in that array or reference are counted. Empty cells, logical values, text, or error values are ignored.
+
+
+
+* Arguments that are error values or text that cannot be translated into numbers cause errors.
+
+
+
+## SUMX2MY2  
+
+
+
+THe `SUMX2MY2` function calculate the sum of the difference of squares between two arrays.
+
+
+
+**Syntax:**
+
+
+
+_SUMX2MY2(array_x, array_y)_
+
+
+
+**where:**
+
+
+
+* Array_x :The first array or range of values used in the calculation.
+
+
+
+* Array_y  :The second array or range of values used in the calculation.
+
+
+
+**Remarks:**
+
+
+
+* The arguments should be numbers or names, arrays, or references that contain numbers.
+
+
+* The argument contains text, logical values, or empty cells, those values are ignored. The cells with the value zero are included.
+
+
+* The arguments (array_x and array_y) have a different lengths(different numbers of values). it returns the `#N/A` error message.
+
+
+
+## Sumx2py2  
+
+
+
+THe `Sumx2py2` function returns the sum of squares of corresponding values in two arrays and returns the sum of the results.
+
+
+
+**Syntax:**
+
+
+
+_SUMX2PY2(array_x, array_y)_
+
+
+
+**where:**
+
+
+
+* Array_x :The first array or range of values used in the calculation.
+
+
+
+* Array_y  :The second array or range of values used in the calculation.
+
+
+
+**Remarks:**
+
+
+
+* The arguments should be numbers or names, arrays, or references that contain numbers.
+
+
+* If argument contains text, logical values, or empty cells, those values are ignored.The cells with the value zero are included.
+
+
+* The argument(array_x and array_y) have a different lengths(number of values), it returns the `#N/A` error message.
+
+
+
+## SUMXMY2  
+
+
+
+THe `SUMXMY2` function returns the sum of squares of differences of corresponding values in two arrays and returns the sum of the results.
+
+
+
+**Syntax:**
+
+
+
+_SUMXMY2(array_x, array_y)_
+
+
+
+**where:**
+
+
+
+* Array_x :The first array or range of values used in the calculation.
+
+
+
+* Array_y  :The second array or range of values used in the calculation.
+
+
+
+**Remarks:**
+
+
+
+* The arguments should be numbers or names, arrays, or references that contain numbers.
+
+
+* The argument contains text, logical values, or empty cells, those values are ignored.The cells with the value zero are included.
+
+
+* The arguments(array_x and array_y) have a different lengths(number of values), it returns the `#N/A` error message.
+
+
+
+## MULTINOMIAL   
+
+
+
+THe `MULTINOMIAL` function calculates the ratio of the factorial of a sum of values to the product of factorials of those values.
+
+
+
+**Syntax:**
+
+
+
+_MULTINOMIAL(number1, [number2], ...)_
+
+
+
+**where:**
+
+
+ 
+* Number1, number2, ... :   Number1 is required, subsequent numbers are optional. This is one or more arguments which you want to calculate the
+multinomial.
+
+
+**Remarks:**
+
+
+
+* The argument is non-numeric, it returns the `#VALUE!` error message
+
+
+* The argument is less than zero, it returns the `#NUM!` error message.
+
+
+
+## MROUND    
+
+
+
+THe `MROUND` function rounds a number up or down, depending on the nearest multiple of given number.
+
+
+
+**Syntax:**
+
+
+
+_MROUND(number, multiple)_
+
+
+
+**where:**
+
+
+
+* Number  :  The value hat should be rounded.
+
+
+
+* Multiple : The multiple to to use when round a number.
+
+
+
+**Remarks:**
+
+
+
+* it rounds up, away from zero, if the remainder of dividing number by multiple is greater than or equal to half the value of multiple.
+
+
+* The arguments (Number and Multiple) must have the same sign. If not, it returns a `#NUM!` error message.
+
+
+
+## RANDBETWEEN    
+
+
+
+THe `RANDBETWEEN` function returns a random integer number between given numbers. A new random integer number is returned each time when worksheet is recalculated.
+
+
+
+**Syntax:**
+
+
+
+_RANDBETWEEN(bottom, top)_
+
+
+
+**where:**
+
+
+
+* Bottom   : The smallest integer value that the function will return.
+
+
+
+* Top   :  The largest integer value that the function will return.
+
+
+
+## SQRTPI     
+
+
+
+THe `SQRTPI` function returns the square root of a given number multiplied by the mathematical constant, π.
+
+
+
+**Syntax:**
+
+
+
+_SQRTPI(number)_
+
+
+
+**where:**
+
+
+  
+* Number : The number is the positive numeric value that you want to multiplied by pi.
+
+
+
+**Remarks:**
+
+
+
+* The argument(number) is greater than 0, it returns the `#NUM!` error message.
+
+
+
+## QUOTIENT      
+
+
+
+THe `QUOTIENT` function calculates the integer portion of a division. This function is used to discard the remainder of a division.
+
+
+
+**Syntax:**
+
+
+
+_QUOTIENT(numerator, denominator)_
+
+
+
+**where:**
+
+
+
+* Numerator     : This is a number.The dividend  value.
+
+
+
+* Denominator   :This is a number.The divisor value.
+
+
+
+**Remarks:**
+
+
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+
+
+## GCD       
+
+
+
+THe `GCD` function returns the greatest common divisor of two or more integers. The greatest common divisor is the largest integer that that goes into all given numbers without a remainder.
+
+
+
+**Syntax:**
+
+
+
+_GCD(number1, [number2], ...)_
+
+
+
+**where:**
+
+
+
+* Number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 values.
+
+
+
+**Remarks:**
+
+
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+
+
+* The argument is less than zero, it returns the `#NUM!` error message.
+
+
+
+* One divides any value evenly.
+
+
+
+* A prime number has only itself and one as even divisors.
+
+
+
+## LCM        
+
+
+
+THe `LCM ` function returns the least common multiple of integers. The least common multiple is the smallest positive integer that is a multiple of all given numbers.
+
+
+
+**Syntax:**
+
+
+
+_LCM(number1, [number2], ...)_
+
+
+
+**where:**
+
+
+
+* Number1, number2, ...    Number1 is required, subsequent numbers are optional. The argument(numbers) are upto 255 numeric values for which you want to calculate the least common multiple. If any value is not an integer, it is truncated.
+
+
+
+**Remarks:**
+
+
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+
+
+* The argument is less than zero, it returns the `#NUM!` error message.
+
+
+
+## ROMAN         
+
+
+
+THe `ROMAN` function converts an Arabic numeral to roman numeral as text.
+
+
+
+**Syntax:**
+
+
+
+_ROMAN(number, [form])_
+
+
+
+**where:**
+
+
+
+* Number :   The Arabic numeral you want to convert to Roman numeral.
+
+
+
+* Form (Optional) :A number specifying the type of roman numeral you want.
+
+
+
+**Remarks:**
+
+
+
+* The argument (number) is negative, it returns the `#VALUE!` error message. 
+
+
+
+* The argument (number) is greater than 3999, it returns the `#VALUE!` error  error message. 
+
+
+
+## SUMIFS          
+
+
+
+THe `SUMIFS` function sum all numbers in a range of cells, based on a single or multiple criteria.
+
+
+
+**Syntax:**
+
+
+
+_SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)_
+
+
+
+**where:**
+
+
+
+* Sum_range     :   The range of cells to sum.
+
+
+
+* Criteria_range1 :The first range(Criteria_range1) to evaluate.
+
+
+
+* Criteria1  : It used to find which cells to add. Criteria1 is applied against Criteria_range1 .  
+
+
+
+Criteria_range2, criteria2, …(optional)::The first range(Criteria_range2) to evaluate.Additional ranges and their associated criteria. 
+
+
+
+## MDETERM           
+
+
+
+THe `MDETERM` function returns the matrix determinant of a given array.
+
+
+
+**Syntax:**
+
+
+
+_MDETERM(array)_
+
+
+
+**where:**
+
+
+
+* Array  : The array argument is an array of numeric values  A numeric array with an equal number of rows and columns.
+
+
+
+## MINVERSE           
+
+
+
+THe `MINVERSE` function calculate the inverse of a square matrix of a given array.
+
+
+
+**Syntax:**
+
+
+
+_MINVERSE(array)_
+
+
+
+**where:**
+
+
+
+* Array  :  the array argument is an array of values representing a square matrix A numeric array with an equal number of rows and columns.
+
+
+
+**Remarks:**
+
+
+
+* The argument(Array) can be given as a cell range, such as A1:C3; as an array constant, such as {1,2,3;4,5,6;7,8,9}; or as a name for either of these.
+
+
+
+* The cells in array are empty or contain text, it returns a `#VALUE!` error message
+
+
+
+* It returns a `#VALUE!` error message if array does not have an equal number of rows and columns.
+
+
+
+## MUNIT           
+
+
+
+THe `MUNIT` function calculates the unit matrix for the specified dimension.
+
+
+
+**Syntax:**
+
+
+
+_MUNIT(dimension)_
+
+
+
+**where:**
+
+
+
+* Dimension is an integer value that specifies the dimension of the unit matrix. It returns an array. The dimension has to be greater than zero.
+
+
+
+**Remarks:**
+
+
+
+* The argument (dimension) is a value that’s equal to or smaller than zero (0), it returns the `#VALUE!` error value.
+
+
+
+## SERIESSUM            
+
+
+
+THe `SERIESSUM` function returns the sum of a power series.
+
+
+
+**Syntax:**
+
+
+
+_SERIESSUM(x, n, m, coefficients)_
+
+
+
+**where:**
+
+
+
+* X :The input value to the power series.
+
+
+
+* N :The first power to which you want to raise x.
+
+
+
+* M:The step by which to increase n for each term in the series.
+
+
+
+* Coefficients : An array of coefficients that multiplied by each successive power of x. The number of values in coefficients determines the number of terms in the power series.   
+
+
+
+**Remarks:**
+
+
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
