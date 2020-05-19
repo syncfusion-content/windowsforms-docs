@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Adding Menu Items via Designer | WindowsForms | Syncfusion
-description: Adding Menu Items via Designer
+description: This section deals with explain about the adding menu items via designer in menu control on WinForms platform
 platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
 
-# Adding Menu Items via Designer
+# Adding menu items via designer in Windows Forms Menu (Menus)
 
 This section provides a quick overview to add the menu items to a [Menu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control through the designer.
 
@@ -36,15 +36,11 @@ The [Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tool
 
 The [ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of [bar item](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), that acts as a parent component for child bar items and sub-menu.
 
-![ParentBarItem selection](Adding-menu-items-via-designer-images/parentBarItem_Selection.png)
-
-![ParentBarItem added in designer](Adding-menu-items-via-designer-images/parentBarItem_CustomizeDialog.png)
-
-![Form with ParentBarItem](Adding-menu-items-via-designer-images/form_with_ParentBarItem.png)
+![ParentBarItem](Adding-menu-items-via-designer-images/parentBarItem.gif)
 
 ## Adding drop down item
 
-The [DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of bar item, which will display a popup menu when clicked. A custom control can also be loaded and displayed when the menu item is clicked. This can be done by assigning the required component to the [`PopupControlContainer`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem~PopupControlContainer.html) property of the drop down bar item.
+The [DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of bar item, which will display a popup menu when clicked. A custom control can also be loaded and displayed when the menu item is clicked. This can be done by assigning the required component to the [PopupControlContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem~PopupControlContainer.html) property of the drop down bar item.
 
 ![DropDownBarItem selection](Adding-menu-items-via-designer-images/dropDownBarItem_Selection.png)
 
@@ -82,7 +78,7 @@ A [ToolBarListBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Sy
 
 ## Adding textbox item
 
-The [TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of bar item, which behaves like text box control. The text edited can be obtained via the [`TextBoxValue`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem~TextBoxValue.html) property.
+The [TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of bar item, which behaves like text box control. The text edited can be obtained via the [TextBoxValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem~TextBoxValue.html) property.
 
 ![TextBoxBarItem selected](Adding-menu-items-via-designer-images/textBoxBarItem_Selected.png)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported formulas by Calculation engine | Syncfusion
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of  database functions in CalcEngine 
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Database Functions
+# Database Functions of Calculate library
 
 
 
