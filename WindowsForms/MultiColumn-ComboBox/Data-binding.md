@@ -281,4 +281,4 @@ End Sub
 
 ## See Also
 
-[How to load item in WinForms MulitColumnComboBox when scrolled to bottom of the list?](https://www.syncfusion.com/forums/154336/how-to-detect-when-user-has-scrolled-to-bottom-of-list-in-order-to-run-query-append-more)
+[How to load items in WinForms MulitColumnComboBox when scrolled to bottom of the list?](https://www.syncfusion.com/forums/154336/how-to-detect-when-user-has-scrolled-to-bottom-of-list-in-order-to-run-query-append-more)
