@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Sorting | WindowsForms | Syncfusion
-description: Sorting
+description: This section deals with explain about the sorting support in TreeView control on Syncfusion Essential WindowsForms
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Sorting
+## Sorting in Windows Forms TreeView
 
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
-The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the `SortWithChildNod`e property should be set to true. The sort function can be done based on the value type which can be specified using SortType to either the option of Checkbox or Tag or Text. The order in which the sort function must be performed can be specified using the `SortOrder` that holds the values of Ascending or Descending.
+The Sort operation sorts only the level 1 nodes. To perform the function on the other levels of nodes, the [SortWithChildNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~SortWithChildNodes.html) property should be set to true. The sort function can be done based on the value type which can be specified using [SortType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~SortType.html) to either the option of [Checkbox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~CheckBox.html) or [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~Tag.html) or [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~Text.html). The order in which the sort function must be performed can be specified using the [SortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~SortOrder.html) that holds the values of Ascending or Descending.
 
 <b>Property Table</b>
 
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 SortOrder</td><td>
-The TSortOrder property indicates the order of the sorting: Ascending,Descending, None.</td></tr>
+The SortOrder property indicates the order of the sorting: Ascending,Descending, None.</td></tr>
 <tr>
 <td>
 SortType</td><td>
@@ -49,7 +49,7 @@ treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
 <b>Comparing Options for Sorting</b>
 
-* The `CompareOptions` property gives additional options of comparing the texts of the nodes.TreeViewAdv provides the following CompareOptions
+* The [CompareOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~CompareOptions.html) property gives additional options of comparing the texts of the nodes.[TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) provides the following CompareOptions
 
     1. IgnoreCase
 
@@ -65,7 +65,7 @@ treeNode.SortType = Syncfusion.Windows.Forms.Tools.TreeNodeAdvSortType.CheckBox
 
     7. StringSort and Ordinal.
 
-* The `Comparer property` is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes. 
+* The [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~Comparer.html) property is an object that implements the IComparer interface. If you need to compare the nodes by some other field, create an object of this type, set it to the node and that node will use the object in comparing the sub nodes. 
 
 <b>Property Table</b>
 
@@ -101,5 +101,9 @@ TreeNodeAdv9.Comparer = Null
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_Images/Sorting_Img1.jpg)
+![Output](Sorting_Images/Sorting_Img1.jpg)
+
+## See Also
+
+[How to sort root node alone (keep child nodes intact) ?](https://www.syncfusion.com/forums/154542/solved-sort-parent-node-question)
 
