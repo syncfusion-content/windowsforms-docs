@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of Statistical functions in CalcEngine
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Statistical
+# Statistical formulas of of Calculate library
 
 ## AVEDEV
 
@@ -2322,7 +2322,7 @@ _VARPA(value1, value2, ...)_
 
 ## VARA
 
-The `VarA` function returns the variance of a population based on a sample of numbers, text, and logical values (ie: TRUE or FALSE).
+The `VarA` function returns the variance of a population based on a sample of numbers, text, and logical values (example: TRUE or FALSE).
 
 **Syntax:**
 
@@ -2382,9 +2382,195 @@ _ZTEST(array,T_value,sigma)_
 
 **where:**
 
-
 * array is an array or range of data.
 
 * T_value is the value to test..
 
 * sigma is the population (known) standard deviation.
+
+## CHITEST 
+
+`CHITEST` function returns the value from the chi-squared (χ2) distribution. 
+
+**Syntax:**
+
+_CHITEST(actual_range,expected_range)_ 
+
+**where:**
+
+* Actual_range : The range of data to test against expected values.
+
+* Expected_range :The range of data that contains the ratio of the product of row and column totals to the grand total. 
+
+## FDIST  
+
+`FDIST` function returns the (right-tailed) F probability distribution (degree of diversity) which measures the degree of diversity for two data sets.
+
+**Syntax:**
+
+_FDIST(x,deg_freedom1,deg_freedom2)_ 
+
+**where:**
+
+* X  : The numeric value at which to evaluate the function.
+
+* Deg_freedom1 : The integer specifying the numerator degrees of freedom.
+
+* Deg_freedom2 :The integer specifying the denominator degrees of freedom.
+
+**Remarks:**
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+* The argument (x) is negative, it returns the `#NUM!` error message.
+
+* The argument (deg_freedom1 or deg_freedom2) is not an integer, it is truncated.
+
+* The argument (deg_freedom1 or deg_freedom2) is less than 1 or  greater than equal to 10^10, it returns the `#NUM!` error message.
+
+## FINV   
+
+`FINV` function returns the inverse of the (right-tailed) F probability distribution for a given probability.
+
+**Syntax:**
+
+_FINV(probability,deg_freedom1,deg_freedom2)_ 
+
+**where:**
+
+* Probability   : A probability  to evaluate the inverse F cumulative distribution.
+
+* Deg_freedom1 : The integer specifying the numerator degrees of freedom.
+
+* Deg_freedom2 :The integer specifying the denominator degrees of freedom.
+
+**Remarks:**
+
+* The argument is non-numeric, it returns the `#VALUE!` error message.
+
+* The argument(probability) < 0 or probability > 1, it returns the `#NUM!` error message.
+
+* The arguments(deg_freedom1 or deg_freedom2) is not an integer, it is truncated.
+
+* The arguments(deg_freedom1 or deg_freedom2) less than 1 or  greater than equal to 10^10, it returns the `#NUM!` error message.
+
+
+## FISHER    
+
+`FISHER` function returns the Fisher transformation of the given value. This transformation produces a function that is normally distributed rather than skewed. Use this function to perform hypothesis testing on the correlation coefficient.
+
+**Syntax:**
+
+_FISHER(x)_ 
+
+**where:**
+
+* X   : A numeric value for which you want calculate the Fisher Transformation.
+
+**Remarks:**
+
+* The argument (x) is non-numeric, it returns the `#VALUE!` error message.
+
+* The argument (x) ≤ -1 or if x ≥ 1, it returns the `#NUM!` error message.
+
+## FISHERINV     
+
+`FISHERINV` function returns the inverse of the Fisher transformation of the given value. Use this transformation when analyzing correlations between ranges or arrays of data.
+
+**Syntax:**
+
+_FISHERINV(y)_ 
+
+**where:**
+
+* Y   : The numeric value for which you want to calculate the inverse of the Fisher transformation.
+
+**Remarks:**
+
+* The argument (y) is non-numeric, it returns the `#VALUE!` error message.
+
+## RANK      
+
+`RANK` function returns the rank of a number when compared to a list of other numbers. The rank of a number is its size relative to other values in a list.
+
+**Syntax:**
+
+_RANK(number,ref,[order])_ 
+
+**where:**
+
+* Number   : The is the number value whose rank you want to find.
+
+* Ref     : It can be a array of, or a reference to, a list of numbers. Non-numeric values in ref are ignored.
+
+* Order    :This is a number that specifies how the ranking will be done.
+
+## Z.TEST      
+
+`Z.TEST` function calculates the one-tailed P-value of a z-test.
+
+**Syntax:**
+
+_Z.TEST(array,x,[sigma])_ 
+
+**where:**
+
+* Array  : The array or range of data against which the hypothesized sample mean is to be tested.
+
+* x  : The hypothesized sample mean.
+
+* Sigma :This represents the population (known) standard deviation. If omitted, the function used the sample standard deviation. 
+
+## BETA.DIST      
+
+`BETA.DIST` function calculates the cumulative beta distribution function or the probability density function of the Beta distribution, for a given set of parameters.
+
+**Syntax:**
+
+_BETA.DIST(x,alpha,beta,cumulative,[A],[B])_ 
+
+**where:**
+
+* X       : The value between A and B at which to evaluate the function
+
+* Alpha   : A parameter of the distribution.
+
+* Beta    : A parameter of the distribution.
+
+* Cumulative :A logical value that determines the form of the function. If cumulative is `TRUE`, it returns the cumulative distribution function. if `FALSE`, it returns the probability density function.
+
+*  A (Optional):It is a lower bound to the interval of x.
+
+*  B (Optional): It is a upper bound to the interval of x.
+
+**Remarks:**
+
+* The argument is non-numeric, it returns the `#VALUE!` error value.
+
+* The argument (alpha) ≤ 0 or beta ≤ 0,it returns the `#NUM!` error value.
+
+* The argument (x) < A, x > B, or A = B, it returns the `#NUM!` error value.
+
+* If you omit values for the arguments (A and B), it uses the standard cumulative beta distribution, so that A = 0 and B = 1.
+
+## LINEST     
+
+`LINEST` function uses the least squares method to calculate the statistics for a straight line and returns an array describing that line.
+
+**Syntax:**
+
+_LINEST(known_y's, [known_x's], [const], [stats]))_ 
+
+**where:**
+
+* known_y's : This is the set of y-values from the line equation. 
+
+* known_x's (Optional). This is a a set of x-values from the line equation.
+
+* const (Optional). This is a logical value specifying whether to force the constant b to equal 0.
+
+* If const is `TRUE` or omitted, b is calculated normally.
+
+*  If const is `FALSE`, b is set equal to 0 
+
+* stats (Optional). This is a logical value specifying whether to return additional regression statistics.

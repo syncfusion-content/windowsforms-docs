@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: supported formulas
+description: This session explains that the supported formulas with syntax and description of financial functions in CalcEngine 
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Financial Formulas
+# Financial formulas of Calculate library
 
 
 
@@ -172,11 +172,11 @@ _IRR(values, [guess])_
 
 * `guess` denotes a number that you guess is close to the result of IRR.
 
-	* Microsoft Excel uses an iterative technique for calculating IRR. Starting with guess, IRR cycles through the calculation until the result is accurate within 0.00001 percent. If IRR can't find a result that works after 20 tries, the #NUM! error value is returned.
+	* Microsoft Excel uses an iterative technique for calculating IRR. Starting with guess, IRR cycles through the calculation until the result is accurate within 0.00001 percent. If IRR can't find a result that works after 20 tries, the `#NUM!` error value is returned.
 
 	* In most cases you do not need to provide guess for the IRR calculation. If guess is omitted, it is assumed to be 0.1 (10 percent).
 
-	* If IRR gives the #NUM! error value, or if the result is not close to what you expected, try again with a different value for guess.
+	* If IRR gives the `#NUM!	 error value, or if the result is not close to what you expected, try again with a different value for guess.
 
 
 
@@ -579,7 +579,7 @@ _RECEIVED(settlement, maturity, investment, discount, [basis])_
 ## ACCRINTM
 
 
-Returns the accrued interest for a security that pays interest at maturity.
+The `ACCRINTM` returns the accrued interest for a security that pays interest at maturity.
 
 
 **Syntax:**
@@ -597,3 +597,150 @@ _ACCRINTM(issue, settlement, rate, par, [basis])_
 * par denotes the security's par value. If you omit par, ACCRINTM uses $1,000.
 
 * basis denotes the type of day count basis to use.
+
+
+
+## IPMT
+
+
+The `IMPT` calculates the interest payment, during a specific period of a loan or investment that is paid in constant periodic payments, with a constant interest rate.
+
+**Syntax:**
+
+_IPMT(rate, per, nper, pv, [fv], [type])_
+
+**where:**
+
+* Rate: The interest rate per period..
+
+* Per : The period for which the interest payment is to be calculated and must be in the range 1 to nper.
+
+* Nper : The total number of payment periods(the loan or investment) in an annuity.
+
+* Pv   :  The present value, of the loan or investment.
+
+* Fv (optional):The future value of the loan or investment. If fv is omitted, it is assumed to be 0.
+
+* Type(optional) :The number 0 or 1 and indicates when payments are due. If type is omitted, it is assumed to be 0.The number is 0 the payment is calculate end of the period.The number is 1 the payment calculate start of the period.
+
+
+
+## XIRR 
+
+
+The `XIRR` returns the internal rate of return for a series of cash flows that is not necessarily periodic. 
+
+
+**Syntax:**
+
+_XIRR(values, dates, [guess])_
+
+**where:**
+
+* Values : Array or reference to cells that represent the series of cash flows.
+
+* Dates  : Array or reference to cells that represent the dates that correspond to the series of cash flows.
+
+* Guess (optional) : A number that you guess is close to the result of XIRR.Default  value is .1 (10%)
+
+**Remarks:**
+
+* Numbers in dates are truncated to integers.
+
+* `XIRR` expects at least one positive cash flow and one negative cash flow; otherwise, It returns the `#NUM!` error message.
+
+* If number in dates is not a valid date, It returns the `#VALUE!` error message.
+
+* If number in dates precedes the starting date, it returns the `#NUM!` error message.
+
+* If values and dates(arguments) contain a different number of values, it returns the `#NUM!` error message.
+
+
+
+## ACCRINT  
+
+
+The `ACCRINT` returns the accrued interest for a security that pays periodic interest on a periodic basis.
+
+
+**Syntax:**
+
+_ACCRINT(issue, first_interest, settlement, rate, par, frequency, [basis], [calc_method])_
+
+**where:**
+
+* issue : The issue date of the security.
+
+* First_interest  :The first interest date of the security.
+
+* Settlement :The settlement date of the security. 
+
+* Rate : Annual coupon rate for the security.
+
+* Par  :The par value of the security .If you omit the par value, par is set to $1,000.
+
+* Frequency :The frequency of the interest payments for the security., frequency = 1; for semiannual, frequency = 2; for quarterly, frequency = 4.   
+
+* Basis  (optional) : The type of day count basis to use.
+
+**Remarks:**
+
+* Issue, first_interest, settlement, frequency, and basis are truncated to integers.
+
+* If issue, first_interest, or settlement is not a valid date format, it returns the `#VALUE!` error message.
+
+* The argument (rate) ≤ 0 or the argument (par) ≤ 0, it returns the `#NUM!` error message.
+
+* The argument (frequency) is any number other than 1, 2, or 4, it returns the `#NUM!` error message.
+
+* The argument (basis) is not equal to 0,1,2,3 or 4 it returns the `#NUM!` error message.
+
+* The argument(issue) ≥ settlement, it returns the `#NUM`! error message.
+
+## EFFECT   
+
+
+The `EFFECT` calculate the effective annual interest rate, given the nominal annual interest rate and the number of compounding periods per year.
+
+
+**Syntax:**
+
+_EFFECT(nominal_rate, npery)_
+
+**where:**
+
+* Nominal_rate  : The nominal interest rate.it must be a numeric value(0 to 1).
+
+* Npery      : The number of compounding periods per year.it must be a positive number.
+
+**Remarks:**
+
+* Npery is truncated to an integer.
+
+* If one or both argument is non-numeric, it returns the `#VALUE!` error message.
+
+* The argument (nominal_rate) ≤ 0 or the argument (npery) < 1, it returns the `#NUM!` error message.
+
+
+
+## INTRATE    
+
+
+The `INTRATE` calculates the interest rate for a fully invested security.
+
+
+**Syntax:**
+
+_INTRATE(settlement, maturity, investment, redemption, [basis])_
+
+**where:**
+
+* Settlement   : The  settlement date of the security.
+
+* Maturity     : The maturity date of the security.. The maturity date is the date when the security expires.
+
+* Investment    : The initial amount invested in the security.
+
+* Redemption    :The amount to be received at maturity.
+
+* Basis    :    The type of specifies the day count basis to used in the calculation.

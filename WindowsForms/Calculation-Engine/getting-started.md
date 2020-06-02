@@ -7,7 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of Calculate
 
 This section helps you to get started with Essential Calculate.
 
@@ -120,6 +120,24 @@ string formula = "SUM(5,5)";
 string result = calcQuick.ParseAndCompute(formula);
 
 {% endhighlight %}
+{% highlight vb %}
+
+    Sub Main()
+
+        'Computing Expressions
+
+        Dim calcQuick As CalcQuickBase = New CalcQuickBase()
+
+        Dim formula As String = "(5+25)*2"
+        Dim result As String = calcQuick.ParseAndCompute(formula)
+
+        'Computing in built formulas
+
+        Dim formula1 As String = "SUM(5,5)"
+        Dim result1 As String = calcQuick.ParseAndCompute(formula)
+
+    End Sub
+{% endhighlight %}
 {% endtabs %}
 
 ## Compute formula using ICalcData
@@ -176,6 +194,43 @@ public class CalcData : ICalcData
 }
 
 {% endhighlight %}
+{% highlight vb %}
+
+    Public Class CalcData
+        Implements ICalcData
+
+        Private values As Dictionary(Of String, Object) = New Dictionary(Of String, Object)()
+        Public Event ValueChanged As ValueChangedEventHandler
+
+        Private Sub OnValueChanged(ByVal row As Integer, ByVal col As Integer, ByVal value As String)
+            RaiseEvent ValueChanged(Me, New ValueChangedEventArgs(row, col, value))
+        End Sub
+
+        Public Function GetValueRowCol1(row As Integer, col As Integer) As Object Implements ICalcData.GetValueRowCol
+            Dim value As Object = Nothing
+            Dim key As String = RangeInfo.GetAlphaLabel(col) + row.ToString()
+            Me.values.TryGetValue(key, value)
+            Return value
+        End Function
+
+        Public Sub SetValueRowCol1(value As Object, row As Integer, col As Integer) Implements ICalcData.SetValueRowCol
+            Dim key = RangeInfo.GetAlphaLabel(col) + row.ToString()
+
+            If Not values.ContainsKey(key) Then
+                values.Add(key, value)
+            ElseIf values.ContainsKey(key) AndAlso values(key) <> value Then
+                values(key) = value
+            End If
+        End Sub
+
+        Public Event ValueChanged1(sender As Object, e As ValueChangedEventArgs) Implements ICalcData.ValueChanged
+
+        Public Sub WireParentObject1() Implements ICalcData.WireParentObject
+
+        End Sub
+    End Class
+
+{% endhighlight %}
 {% endtabs %}
 
 ### Setting Value into ICalcData
@@ -188,6 +243,12 @@ The `SetValueRowCol` method is used to set the value to `ICalcData` object.
 calcData.SetValueRowCol(“10”, 1, 1);
 
 calcData.SetValueRowCol(“20”, 1, 2);
+
+{% endhighlight %}
+{% highlight vb %}
+
+calcData.SetValueRowCol1("10", 1, 1)
+calcData.SetValueRowCol1("20", 1, 2)
 
 {% endhighlight %}
 {% endtabs %}
@@ -210,7 +271,20 @@ string formula = “SUM (A1, B1)”;
 string result = engine.ParseAndComputeFormula(formula);
 
 {% endhighlight %}
+{% highlight vb %}
+
+Dim calcData As CalcData = New CalcData()
+
+Dim engine As CalcEngine = New CalcEngine(calcData)
+            
+Dim formula As String = "SUM (A1,B1)"
+        
+Dim result As String = engine.ParseAndComputeFormula(formula)
+
+{% endhighlight %}
 {% endtabs %}
+
+A sample that demonstrates the computation of formula using ICalcData is available [here](https://github.com/SyncfusionExamples/formula-computation-using-ICalcData-in-vb-.net) 
 
 ## Choosing between CalcQuickBase and ICalcData 
 
