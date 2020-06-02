@@ -212,6 +212,6 @@ treeViewAdv1.ChildMember = "Continent\\Country\\State"
 
 ## See Also
 
-[How to get a ValueMember for CheckedNodes Collection?](https://www.syncfusion.com/forums/154006/get-value-of-nodes-after-checking)
+[How to get value specified by ValueMember path for CheckedNodes?](https://www.syncfusion.com/forums/154006/get-value-of-nodes-after-checking)
 
 
