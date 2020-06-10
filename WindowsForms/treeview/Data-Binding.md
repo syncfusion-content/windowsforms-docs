@@ -7,19 +7,20 @@ control: TreeView
 documentation: ug
 ---
 
-# Data Binding
-TreeViewAdv binds to any table, collection of tables, custom objects, etc. by using the **TreeViewAdv.DataSource** property. 
-The following are the ways to bind various data sources to TreeViewAdv.
+# Data Binding in Windows Forms TreeView
+[TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to any table, collection of tables, custom objects, etc. by using the [TreeViewAdv.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~DataSource.html) property. 
+
+The following are the ways to bind various data sources to [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
 1.	Binding to Self-Referencing Data
 2.	Binding to Data Relations
 3.	Binding to Object-Relational Data
 
 ## Binding to Self-Referencing Data
-In this type, TreeViewAdv binds to self-referencing data where the TreeViewAdv is bound to single table instead of multiple related tables.
+In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to self-referencing data where the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) is bound to single table instead of multiple related tables.
 
-Parent-Child relationship for all the records is defined by setting the **ParentMember** and **ChildMember** properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other records from the table, then that record is considered to have parent. If not, then the record is considered to have no parents and, in such case, it won’t be visible in the TreeViewAdv. 
+Parent-Child relationship for all the records is defined by setting the [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ParentMember.html) and [ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ChildMember.html) properties to the respective fields in the data source. If the Parent ID of one record has the respective value in the Child ID of any other records from the table, then that record is considered to have parent. If not, then the record is considered to have no parents and, in such case, it won’t be visible in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
 
-If the value in **ParentMember** field of some records matches with the **TreeViewAdv.SelfRelationRootValue**, then those records are considered as root nodes of TreeViewAdv.
+If the value in [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ParentMember.html) field of some records matches with the [TreeViewAdv.SelfRelationRootValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~SelfRelationRootValue.html), then those records are considered as root nodes of [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
   
 <table>
 <tr>
@@ -63,28 +64,32 @@ Gets or sets the value that defines the root object in a self-relational mode wh
 </table>
 
 ![SelfReferencingData](DataBinding_images/SelfReferencingData1.png)
-In the above table, **North America** is declared as root node by setting appropriate (or matching) **SelfRelationRootValue**. Here the value is set to empty and so **North America** is added as root node.
+In the above table, **North America** is declared as root node by setting appropriate (or matching) [SelfRelationRootValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~SelfRelationRootValue.html). Here the value is set to empty and so **North America** is added as root node.
 
 **United States** is declared as child of **North America** by setting appropriate ContinentID. Here the value is set to 1 and it matches the CountryID of **North America**. As a result, **United States** is added as child node of **North America**.
 
 {% tabs %}
 {% highlight c# %}
-  treeViewAdv1.SelfRelationRootValue = "";
-  treeViewAdv1.DisplayMember = "Name";
-  treeViewAdv1.ParentMember = "ContinentID";
-  treeViewAdv1.ChildMember = "CountryID";
-  treeViewAdv1.ValueMember = "Capital";
-  treeViewAdv1.CheckedMember = "IsActive";
-  treeViewAdv1.DataSource = Table_1;
+
+treeViewAdv1.SelfRelationRootValue = "";
+treeViewAdv1.DisplayMember = "Name";
+treeViewAdv1.ParentMember = "ContinentID";
+treeViewAdv1.ChildMember = "CountryID";
+treeViewAdv1.ValueMember = "Capital";
+treeViewAdv1.CheckedMember = "IsActive";
+treeViewAdv1.DataSource = Table_1;
+
 {% endhighlight %}
 {% highlight vb %}
-    treeViewAdv1.SelfRelationRootValue = ""
-     treeViewAdv1.DisplayMember = "Name"
-     treeViewAdv1.ParentMember = "ContinentID"
-     treeViewAdv1.ChildMember = "CountryID"
-     treeViewAdv1.ValueMember = "Capital"
-     treeViewAdv1.CheckedMember = "IsActive"
-     treeViewAdv1.DataSource = Table_1
+
+treeViewAdv1.SelfRelationRootValue = ""
+treeViewAdv1.DisplayMember = "Name"
+treeViewAdv1.ParentMember = "ContinentID"
+treeViewAdv1.ChildMember = "CountryID"
+treeViewAdv1.ValueMember = "Capital"
+treeViewAdv1.CheckedMember = "IsActive"
+treeViewAdv1.DataSource = Table_1
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,7 +98,7 @@ N>
 2)	You must specify **TreeViewAdv.DisplayMember**, **TreeViewAdv.ParentMember**, **TreeViewAdv.ChildMember** properties mandatorily to populate the appropriate TreeViewAdv.
 
 ## Binding to Data Relations
-In this type, TreeViewAdv are bound to database where levels are created using **DataRelation** class. Each **DataRelation** class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
+In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) are bound to database where levels are created using [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~DataRelations.html) class. Each [DataRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~DataRelations.html) class object describes the parent data being bound to, the child data being bound to and the data columns used to populate **Text** and selected **Value** properties of the nodes.
 
 <table>
 <tr><th>S.No</th><th>Property Name</th><th>Description</th></tr>
@@ -107,53 +112,54 @@ In this type, TreeViewAdv are bound to database where levels are created using *
 
 {% tabs %}
 {% highlight c# %}
-           
- Syncfusion.Windows.Forms.Tools.DataRelation childRelation1;
- Syncfusion.Windows.Forms.Tools.DataRelation childRelation2;
- Syncfusion.Windows.Forms.Tools.DataRelation childRelation3;
 
-  childRelation1 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "Table_2", "SubFolderName1", "ChildFolder", "SubFolderChild1", "SubFolderName1", "Checked");
+Syncfusion.Windows.Forms.Tools.DataRelation childRelation1;
+Syncfusion.Windows.Forms.Tools.DataRelation childRelation2;
+Syncfusion.Windows.Forms.Tools.DataRelation childRelation3;
 
-  childRelation2 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2");
+childRelation1 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "Table_2", "SubFolderName1", "ChildFolder", "SubFolderChild1", "SubFolderName1", "Checked");
 
-  childRelation3 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "Table_4", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked");
+childRelation2 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2");
 
-  treeViewAdv1.DataRelations.Clear();
+childRelation3 = new Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "Table_4", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked");
 
-  treeViewAdv1.DisplayMember = "FolderName";
-  treeViewAdv1.ParentMember = "ParentFolder";
-  treeViewAdv1.ChildMember = "ChildFolder";
+treeViewAdv1.DataRelations.Clear();
 
-  treeViewAdv1.DataRelations.Add(childRelation1);
-  treeViewAdv1.DataRelations.Add(childRelation2);
-  treeViewAdv1.DataRelations.Add(childRelation3);
+treeViewAdv1.DisplayMember = "FolderName";
+treeViewAdv1.ParentMember = "ParentFolder";
+treeViewAdv1.ChildMember = "ChildFolder";
 
-  treeViewAdv1.DataSource = Table_1;
+treeViewAdv1.DataRelations.Add(childRelation1);
+treeViewAdv1.DataRelations.Add(childRelation2);
+treeViewAdv1.DataRelations.Add(childRelation3);
+
+treeViewAdv1.DataSource = Table_1;           
+
 {% endhighlight %}
 {% highlight vb %}
+
 Dim childRelation1 As Syncfusion.Windows.Forms.Tools.DataRelation
- Dim childRelation2 As Syncfusion.Windows.Forms.Tools.DataRelation
- Dim childRelation3 As Syncfusion.Windows.Forms.Tools.DataRelation
+Dim childRelation2 As Syncfusion.Windows.Forms.Tools.DataRelation
+Dim childRelation3 As Syncfusion.Windows.Forms.Tools.DataRelation
 
-  
-childRelation1 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "SubFolder1", "SubFolderName1", "FolderChild", "SubFolderChild1", "SubFolderName1", "Checked")
+childRelation1 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_2, "SubFolder1", "SubFolderName1", "FolderChild", "SubFolderChild1", "SubFolderName1", "Checked")    
 
-  childRelation2 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2")
+childRelation2 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_3, "SubFolderName2", "SubFolderChild1", "SubFolderChild2")
 
-  childRelation3 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "SubFolder3", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked")
+childRelation3 = New Syncfusion.Windows.Forms.Tools.DataRelation(Table_4, "SubFolder3", "SubFolderName3", "SubFolderChild2", "SubFolderChild3", "SubFolderName3", "Checked")
 
-  treeViewAdv1.DataRelations.Clear()
+treeViewAdv1.DataRelations.Clear()
 
-  treeViewAdv1.DisplayMember = "FolderName"
-  treeViewAdv1.ParentMember = "ParentFolder"
-  treeViewAdv1.ChildMember = "ChildFolder"
+treeViewAdv1.DisplayMember = "FolderName"
+treeViewAdv1.ParentMember = "ParentFolder"
+treeViewAdv1.ChildMember = "ChildFolder"
 
-  treeViewAdv1.DataRelations.Add(childRelation1)
-  treeViewAdv1.DataRelations.Add(childRelation2)
-  treeViewAdv1.DataRelations.Add(childRelation3)
+treeViewAdv1.DataRelations.Add(childRelation1)
+treeViewAdv1.DataRelations.Add(childRelation2)
+treeViewAdv1.DataRelations.Add(childRelation3)
 
+treeViewAdv1.DataSource = Table_1
 
-  treeViewAdv1.DataSource = Table_1
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,13 +169,13 @@ N> 1)	In this type, you must specify **DisplayMember**, **ParentMember**, **Chil
 2)	Here levels are created using **DataRelation**, so if you want to dynamically add new level then you need to create new instance of **DataRelation** and add it to **TreeViewAdv.DataRelations** property with proper relation first.
 
 ## Binding to Object-Relational Data
-In this type, TreeViewAdv binds to class objects which have collections associated with other dependent class objects establishing proper relation.
+In this type, [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) binds to class objects which have collections associated with other dependent class objects establishing proper relation.
 
 ![Object-RelationalData](DataBinding_images/Object-RelationalData1.png)
 
 In this illustration, there are three classes named Continent, Country and State. In this case the **Continent** class has a property named **ContinentName**, **ContinentID** and **Country_List** which is a collection of **Country** objects. This is the first relation. The second relation is the **State_List** property in the **Country** class, it offers a reference to a collection of **State**. 
 
-You must specify the **DisplayMember**, **ChildMember** property and here you need not define **ParentMember** property. TreeViewAdv must display it in hierarchical view.
+You must specify the [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~DisplayMember.html), [ChildMember]([ChildMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ChildMember.html)) property and here you need not define [ParentMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ParentMember.html) property. [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) must display it in hierarchical view.
 
 <table>
 <tr><th>S.No</th><th>Properties</th><th>Description</th></tr>
@@ -181,7 +187,7 @@ Country -> CountryName,
 State -> StateName.
 </td></tr>
 
-<tr><td>2</td><td>ChildMember</td><td>Defines the class order.</br> 
+<tr><td>2</td><td>ChildMember</td><td>Defines the class order.
 
 Example:
 Continent -> First level,
@@ -203,5 +209,9 @@ treeViewAdv1.ChildMember = "Continent\\Country\\State"
 {% endtabs %}
 
 ![Object-RelationalData](DataBinding_images/Object-RelationalData2.png)
+
+## See Also
+
+[How to get value specified by ValueMember path for CheckedNodes?](https://www.syncfusion.com/forums/154006/get-value-of-nodes-after-checking)
 
 

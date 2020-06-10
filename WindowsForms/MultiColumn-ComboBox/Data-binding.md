@@ -278,3 +278,7 @@ End Sub
 {% endtabs %}
 
 ![Populating MultiColumnComboBox](Overview_images/Overview_img327.jpeg)
+
+## See Also
+
+[How to load MultiColumnComboBox dropdown items in on-demand?](https://www.syncfusion.com/forums/154336/how-to-detect-when-user-has-scrolled-to-bottom-of-list-in-order-to-run-query-append-more)

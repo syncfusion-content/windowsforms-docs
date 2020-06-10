@@ -220,5 +220,46 @@ string result = engine.ParseAndComputeFormula(formula);
 {% endhighlight %}
 {% endtabs %}
 
+### How to use custom control with CalcEngine
+
+You can use any of Tools to in our CalcEngine. But it should be derived from ICalcData. 
+
+{% tabs %}
+{% highlight c# %}
+
+this.grid.ItemsSource = dt.DefaultView; 
+engine = new CalcEngine(this.grid); 
+ 
+public class CustomGrid : DataGrid,ICalcData 
+{ 
+    public CustomGrid() 
+    { } 
+ 
+    public event ValueChangedEventHandler ValueChanged; 
+ 
+    public object GetValueRowCol(int row, int col) 
+    { 
+        if (row < 0 || col < 0) 
+            return "Invalid cell"; 
+        string s = (this.Items[row-1] as DataRowView).Row.ItemArray[col-1].ToString(); 
+        return s; 
+    } 
+ 
+    public void SetValueRowCol(object value, int row, int col) 
+    { 
+        //To set the value to specific cell.    
+    } 
+ 
+    public void WireParentObject() 
+    { 
+         //To trigger any of event for parent. This method is called when calcEngine assigned the parent object as CustomDataGrid. 
+    } 
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+A sample that demonstrates using custom control with CalcEngine is available [here](https://github.com/SyncfusionExamples/how-to-use-custom-control-with-calcengine-) 
+
 N> To support cross-references among several `ICalcData` objects, you must register the objects with a single instance of the `CalcEngine`.
 For more reference, refer [here](https://help.syncfusion.com/windowsforms/calculate/getting-started#cross-sheet-reference).
