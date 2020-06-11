@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with ProgressBarAdv
+## Creating simple application with ProgressBarAdv
 
 You can create the Windows Forms application with ProgressBarAdv control as follows:
 

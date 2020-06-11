@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with MetroForm
+## Creating simple application with MetroForm
 
 You can create the Windows Forms application with MetroForm control as follows:
 
