@@ -167,7 +167,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img6.png)
+![Getting Started](GettingStarted-images/GettingStarted-img6.png)
 
 
 ## Configure text alignment
