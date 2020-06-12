@@ -1,12 +1,12 @@
 ---
 layout: post
 title: GettingStarted| WindowsForms | Syncfusion
-description:  getting started
+description:  Learn about Getting Started support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv 
 documentation: ug
 ---
-# Getting started
+# Getting Started in Windows Forms Progress Bar (ProgressBarAdv)
 
 This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -39,9 +39,9 @@ The [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Sync
 
 * Syncfusion.Shared.Base.dll
 
-![](GettingStarted-images/Toolbox.png)
+![Tool Box](GettingStarted-images/Toolbox.png)
 
-![](GettingStarted-images/GettingStarted-img1.png)
+![Getting Started](GettingStarted-images/GettingStarted-img1.png)
 
 ## Adding control manually using code
 
@@ -99,7 +99,7 @@ Me.Controls.Add(progressBarAdv1)
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img2.png)
+![Getting Started](GettingStarted-images/GettingStarted-img2.png)
 
 ## Configure text format
 
@@ -123,7 +123,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Value
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img3.png)
+![Getting Started](GettingStarted-images/GettingStarted-img3.png)
 
 **Percentage** - It represents the percentage format.
 
@@ -144,7 +144,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img5.png)
+![Getting Started](GettingStarted-images/GettingStarted-img5.png)
 
 **Custom** - It represents the other custom format.
 
@@ -192,7 +192,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Center
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img8.png)
+![Getting Started](GettingStarted-images/GettingStarted-img8.png)
 
 **Left** - It represents text aligned to the left.
 
@@ -212,7 +212,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Left
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img4.png)
+![Getting Started](GettingStarted-images/GettingStarted-img4.png)
 
 **Right** - It represents text aligned to the right.
 
@@ -232,7 +232,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Right
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img7.png)
+![Getting Started](GettingStarted-images/GettingStarted-img7.png)
 
 
 

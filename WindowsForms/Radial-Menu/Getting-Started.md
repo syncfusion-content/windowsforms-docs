@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Radial Menu
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
@@ -45,13 +45,13 @@ RadialMenu control can be added to the application by dragging it from the toolb
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](Getting-Started_images/RadialMenu-img1.png) 
+![Radial Menu](Getting-Started_images/RadialMenu-img1.png) 
 
 **Adding Menu Items**
 
 Menu items can be added into RadialMenu using `Items` collection in Smart Tags of RadialMenu in design view.
 
-![](Getting-Started_images/RadialMenu-img3.png) 
+![Radial Menu](Getting-Started_images/RadialMenu-img3.png) 
 
 ## Adding control manually using code
 
@@ -114,7 +114,7 @@ Me.Controls.Add(radialMenu1)
 
 {% endtabs %}
 
-![](Getting-Started_images/RadialMenu-img2.png) 
+![Radial Menu](Getting-Started_images/RadialMenu-img2.png) 
 
 **Adding menu items**
 
@@ -156,4 +156,4 @@ Me.radialMenu3.Items.Add(this.radialMenuItem3)
 
 {% endtabs %}
 
-![](Getting-Started_images/RadialMenu-img4.png) 
+![Radial Menu](Getting-Started_images/RadialMenu-img4.png) 
