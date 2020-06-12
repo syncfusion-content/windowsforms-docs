@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Metro Form control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Metro Form control and more details about it.
 platform: WindowsForms
 control: MetroForm
 documentation: ug
