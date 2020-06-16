@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-You can add auto complete functionality to any editor control using the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component in Windows Forms.
+This section provides a quick overview for working with the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) in Windows Forms.
 
 ## Assembly deployment
 
@@ -17,23 +17,23 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
 
-## Creating an application with AutoComplete
+## Creating Application with AutoComplete
+
+In this walk through, users will create WinForms application that contains [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
+
+### Creating the Project
+
+Create new Windows Forms Project in Visual Studio to display [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
 
 ### Adding control via designer
 
-Create a new Windows Forms application in Visual Studio. Drag the AutoComplete control from toolbox to form design view. The required assemblies will be added automatically. Drag the MS TextBox control or any editor control into form design view.
+[AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 
 ![Windows forms AutoComplete drag and drop from toolbox](GettingStarted_images/AutoComplete_Toolbox.png)
 
 ![Windows forms AutoComplete and Textbox with component tray](GettingStarted_images/AutoComplete_Inform.png)
 
-### Enabling AutoComplete functionality for TextBox control
-
-Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop-down provided in the TextBox properties dialog window. The Default value is `Disabled`.
-
-![Windows forms AutoComplete toolbox customization](GettingStarted_images/Autocomplete_Propertywindow.png)
-
-### Adding control via code
+### Adding control in code
 
 1. Create a new Windows Forms application in Visual Studio. Add the following required assembly references:
 
@@ -45,7 +45,7 @@ Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) and TextBox controls.
+2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) and [TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.HeaderFooterForm~TextBox.html) controls.
 
 {% tabs %}
 
@@ -55,7 +55,6 @@ Using Syncfusion.Windows.Forms.Tools
 
 public Form1()
 {
-
     InitializeComponent();
     AutoComplete autoComplete1 = new AutoComplete();
     TextBox textBox1 = new TextBox();
@@ -83,7 +82,7 @@ End Sub
 
 ### Enabling the AutoComplete functionality for TextBox Control
 
-Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method to add the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component with the TextBox control.
+Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method to add the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component with the [TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.HeaderFooterForm~TextBox.html) control.
 
 {% tabs %}
 
@@ -92,12 +91,11 @@ Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 public Form1()
 
 {
-
-        InitializeComponent();
-        AutoComplete autoComplete1 = new AutoComplete();
-        TextBox textBox1 = new TextBox();
-        autoComplete1.SetAutoComplete(textBox1, AutoCompleteModes.AutoSuggest);
-        this.Controls.Add(textBox1);
+    InitializeComponent();
+    AutoComplete autoComplete1 = new AutoComplete();
+    TextBox textBox1 = new TextBox();
+    autoComplete1.SetAutoComplete(textBox1, AutoCompleteModes.AutoSuggest);
+    this.Controls.Add(textBox1);
 }
 
 {% endhighlight %}
@@ -118,9 +116,9 @@ End Sub
 
 {% endtabs %}
 
-## Datasource
+## Creating Datasource for Sample Application
 
-The AutoComplete component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~DataSource.html) property.
+The [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~DataSource.html) property.
 
 {% tabs %}
 
@@ -128,25 +126,24 @@ The AutoComplete component supports variety of data sources such as DataTables, 
 
 private void Form1_Load(object sender, EventArgs e)
 {
+    //Create a data table
+    DataTable dt = new DataTable("Table1");
+    dt.Columns.Add("Country");
+    dt.Columns.Add("Capital");
 
-            //Create a data table
-            DataTable dt = new DataTable("Table1");
-            dt.Columns.Add("Country");
-            dt.Columns.Add("Capital");
+    // Create a data set
+    DataSet ds = new DataSet();
+    ds.Tables.Add(dt);
+    dt.Rows.Add(new string[] { "United Kingdom ", "London" });
+    dt.Rows.Add(new string[] { "USA", "Washington, D.C." });
+    dt.Rows.Add(new string[] { "Brazil", "Brasilia" });
+    dt.Rows.Add(new string[] { "France", "Paris" });
+    dt.Rows.Add(new string[] { "Russia", "Moscow" });
+    dt.Rows.Add(new string[] { "India", "Delhi" });
+    DataView view = new DataView(dt);
 
-            // Create a data set
-            DataSet ds = new DataSet();
-            ds.Tables.Add(dt);
-            dt.Rows.Add(new string[] { "United Kingdom ", "London" });
-            dt.Rows.Add(new string[] { "USA", "Washington, D.C." });
-            dt.Rows.Add(new string[] { "Brazil", "Brasilia" });
-            dt.Rows.Add(new string[] { "France", "Paris" });
-            dt.Rows.Add(new string[] { "Russia", "Moscow" });
-            dt.Rows.Add(new string[] { "India", "Delhi" });
-            DataView view = new DataView(dt);
-
-            // Setting data source to AutoComplete
-            this.autoComplete1.DataSource = view;
+    // Setting data source to AutoComplete
+    this.autoComplete1.DataSource = view;
 }
 
 {% endhighlight %}
@@ -180,3 +177,9 @@ End Sub
 {% endtabs %}
 
 ![Windows forms AutoComplete with binding data source](GettingStarted_images/AutoComplete_datasourceform.png)
+
+### Enabling AutoComplete functionality for TextBox control
+
+Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop-down provided in the [TextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.HeaderFooterForm~TextBox.html) properties dialog window. The Default value is `Disabled`.
+
+![Windows forms AutoComplete toolbox customization](GettingStarted_images/Autocomplete_Propertywindow.png)
