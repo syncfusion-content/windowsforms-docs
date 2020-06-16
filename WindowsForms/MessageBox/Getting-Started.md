@@ -82,5 +82,5 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 {% endtabs %}
 
-![MessageBoxAdv](MessageBoxAdv_images/MessageBoxAdv_img32.png)
+![MessageBoxAdv in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 

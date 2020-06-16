@@ -76,7 +76,7 @@ Partial Public Class MetroForm Inherits MetroForm
 
 {% endtabs %} 
    
-![MetroForm](Getting-Started_images/MetroForm.png)
+![Metro form in windows forms](Getting-Started_images/MetroForm.png)
 
 ## Add Caption Labels
 
@@ -128,7 +128,7 @@ Me.CaptionLabels.Add(captionLabel1)
 
 {% endtabs %} 
 
-![Caption Label](Getting-Started_images/Captionlabel.png)
+![Caption Label in windows forms metro form](Getting-Started_images/Captionlabel.png)
 
 ## Add Caption Images
 
@@ -179,4 +179,4 @@ Me.CaptionImages.Add(captionImage1)
 
 {% endtabs %} 
 
-![Caption Image](Getting-Started_images/Captionimage.png)
+![Caption Image in windows forms metro form](Getting-Started_images/Captionimage.png)
