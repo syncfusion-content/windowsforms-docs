@@ -45,13 +45,13 @@ RadialMenu control can be added to the application by dragging it from the toolb
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Radial Menu](Getting-Started_images/RadialMenu-img1.png) 
+![Adding control in windows forms radial menu](Getting-Started_images/RadialMenu-img1.png) 
 
 **Adding Menu Items**
 
 Menu items can be added into RadialMenu using `Items` collection in Smart Tags of RadialMenu in design view.
 
-![Radial Menu](Getting-Started_images/RadialMenu-img3.png) 
+![Adding Menu Items in windows forms radial menu](Getting-Started_images/RadialMenu-img3.png) 
 
 ## Adding control manually using code
 
@@ -114,7 +114,7 @@ Me.Controls.Add(radialMenu1)
 
 {% endtabs %}
 
-![Radial Menu](Getting-Started_images/RadialMenu-img2.png) 
+![Adding control manually in windows forms radial menu](Getting-Started_images/RadialMenu-img2.png) 
 
 **Adding menu items**
 
@@ -156,4 +156,4 @@ Me.radialMenu3.Items.Add(this.radialMenuItem3)
 
 {% endtabs %}
 
-![Radial Menu](Getting-Started_images/RadialMenu-img4.png) 
+![Adding Menu Items in windows forms radial menu](Getting-Started_images/RadialMenu-img4.png) 
