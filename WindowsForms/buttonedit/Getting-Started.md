@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: This section gives detailed description about Steps to add button edit in WinForms application.
+description: This section gives detailed description about the steps to add ButtonEdit control in WinForms application.
 platform: WindowsForms
 control: Tools
 documentation: ug
