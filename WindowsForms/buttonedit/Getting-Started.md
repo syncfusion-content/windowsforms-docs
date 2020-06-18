@@ -110,15 +110,15 @@ public Form1()
 {
             
     InitializeComponent();
-    Syncfusion.Windows.Forms.Tools.TextBoxExt textBoxExt1;
-    Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton1;
-    Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton2;
-    Syncfusion.Windows.Forms.Tools.ButtonEditChildButton ButtonEditChildButton3;
+    TextBoxExt textBoxExt1;
+    ButtonEditChildButton ButtonEditChildButton1;
+    ButtonEditChildButton ButtonEditChildButton2;
+    ButtonEditChildButton ButtonEditChildButton3;
     ButtonEdit buttonEdit = new ButtonEdit();
     buttonEdit.Location = new System.Drawing.Point(145, 135);
     buttonEdit.Name = "ButtonEdit1";
     buttonEdit.Size = new System.Drawing.Size(121, 21);
-    textBoxExt1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+    textBoxExt1 = new TextBoxExt();
     ButtonEditChildButton1 = new ButtonEditChildButton();
     ButtonEditChildButton2 = new ButtonEditChildButton();
     ButtonEditChildButton3 = new ButtonEditChildButton();
@@ -150,15 +150,15 @@ public Form1()
 Public Sub New()
 
     InitializeComponent()
-    Dim textBoxExt1 As Syncfusion.Windows.Forms.Tools.TextBoxExt
-    Dim ButtonEditChildButton1 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-    Dim ButtonEditChildButton2 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
-    Dim ButtonEditChildButton3 As Syncfusion.Windows.Forms.Tools.ButtonEditChildButton
+    Dim textBoxExt1 As TextBoxExt
+    Dim ButtonEditChildButton1 As ButtonEditChildButton
+    Dim ButtonEditChildButton2 As ButtonEditChildButton
+    Dim ButtonEditChildButton3 As ButtonEditChildButton
     Dim ButtonEdit As buttonEdit = New ButtonEdit()
     buttonEdit.Location = New System.Drawing.Point(367, 135)
     buttonEdit.Name = "ButtonEdit1"
     buttonEdit.Size = New System.Drawing.Size(121, 21)
-    textBoxExt1 = New Syncfusion.Windows.Forms.Tools.TextBoxExt()
+    textBoxExt1 = New TextBoxExt()
     ButtonEditChildButton1 = New ButtonEditChildButton()
     ButtonEditChildButton2 = New ButtonEditChildButton()
     ButtonEditChildButton3 = New ButtonEditChildButton()
