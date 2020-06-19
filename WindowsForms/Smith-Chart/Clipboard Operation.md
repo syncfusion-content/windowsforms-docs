@@ -13,7 +13,7 @@ The SfSmithChart control provides two ways to copy the smith chart output in to 
 * Pressing `Ctrl+C`
 * Call `CopyToClipboard()` method
 
-N> In Pressing `Ctrl+C` case control is copied when control on focused state.
+N> In pressing `Ctrl+C` case control is copied when control on focused state.
 
 {% tabs %}
 
