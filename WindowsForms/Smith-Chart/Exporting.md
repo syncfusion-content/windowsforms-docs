@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting the Syncfusion SfSmithChart control as a image.
-description: This section explains on how to export SfSmithChart control as an image file in different format.
+title: Exporting the syncfusion SfSmithChart control as a image.
+description: This section explains on how to exporting the syncfusion SfSmithChart control as an image file in different format.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting as an Image
 
-SfSmithChart control provide a support for exporting the smithchart control as an image in the different image format. 
+SfSmithChart control provide a support for exporting the smith chart control as an image in the different image format. 
 
 Based on the filename extension the SfSmithChart has built-in support to save the image in the following formats.
 
@@ -60,7 +60,7 @@ SfSmithChart control provide two ways to call `SaveImage()` method.
 
 ## Call the method with argument
 
-In this case exporting  the smithchart control as an image in the specified image format and saved in the given file path location.
+In this case exporting  the smith chart control as an image in the specified image format and saved in the given file path location.
 
 {% tabs %}
 
