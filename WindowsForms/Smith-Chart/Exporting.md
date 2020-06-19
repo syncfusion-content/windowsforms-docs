@@ -3,7 +3,7 @@ layout: post
 title: Exporting the Syncfusion SfSmithChart control as a image.
 description: This section explains on how to export SfSmithChart control as an image file in different format.
 platform: windowsforms
-control: SfSmithChart
+control: Chart
 documentation: ug
 ---
 
@@ -103,7 +103,6 @@ Public Partial Class SaveImage
     Inherits Form
 
     Private smithchart As SfSmithChart = New SfSmithChart()
-
     Public Sub New()
         InitializeComponent()
         smithchart.Text = "Impedance Transmission"
@@ -177,7 +176,6 @@ Public Partial Class SaveImage
     Inherits Form
 
     Private smithchart As SfSmithChart = New SfSmithChart()
-
     Public Sub New()
         InitializeComponent()
         smithchart.Text = "Impedance Transmission"
