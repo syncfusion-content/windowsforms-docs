@@ -3,7 +3,7 @@ layout: post
 title: Exporting the Syncfusion SfSmithChart control as a image.
 description: This section explains on how to export SfSmithChart control as an image file in different format.
 platform: windowsforms
-control: Chart
+control: SfSmithChart
 documentation: ug
 ---
 
