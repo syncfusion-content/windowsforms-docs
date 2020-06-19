@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Clipboard operation in Syncfusion SfSmithChart control
-description: This section explains on how to copy the syncfusion SfSmithChart control output bitmap image in to clipboard.
+title: Clipboard operation in Syncfusion `SfSmithChart` control
+description: This section explains how to copy the syncfusion `SfSmithChart` control output bitmap image into clipboard.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
 # Clipboard Operations 
 
-The SfSmithChart control provides two ways to copy the smith chart output in to clipboard.
+The SfSmithChart control provides two ways to copy the smith chart output into clipboard.
 
-* Pressing `Ctrl+C`
-* Call `CopyToClipboard()` method
+* Pressing `Ctrl+C`.
+* Call `CopyToClipboard()` method.
 
-N> In pressing `Ctrl+C` case control is copied when control on focused state.
+N> By pressing `Ctrl+C`, case control is copied when control is on focused state.
 
 {% tabs %}
 
