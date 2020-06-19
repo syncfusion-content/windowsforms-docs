@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting the syncfusion SfSmithChart control as a image.
-description: This section explains on how to exporting the syncfusion SfSmithChart control as an image file in different format.
+title: Exporting the syncfusion `SfSmithChart` control as an image.
+description: This section explains how to exporting the syncfusion `SfSmithChart` control as an image file in different formats.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Exporting as an Image
 
-SfSmithChart control provide a support for exporting the smith chart control as an image in the different image format. 
+The `SfSmithChart` control provides a support for exporting the smith chart control as an image in the different image formats. 
 
-Based on the filename extension the SfSmithChart has built-in support to save the image in the following formats.
+Based on the filename extension, the SfSmithChart has built-in support to save the image in the following formats:
 
 <table>
 <tr>
@@ -53,14 +53,14 @@ PNG</td></tr>
 <tr>
 </table>
 
-SfSmithChart control provide two ways to call `SaveImage()` method.
+The `SfSmithChart` control provides two ways to call `SaveImage()` method.
 
-* Call the method with argument
-* Call the method without argument
+* Call the method with argument.
+* Call the method without argument.
 
 ## Call the method with argument
 
-In this case exporting  the smith chart control as an image in the specified image format and saved in the given file path location.
+In this case, exporting the smith chart control as an image in the specified image format and saved in the given file path location.
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ End Class
 
 ## Call the method without argument
 
-In this case the image will be saved in application bin folder with .png image format and the image name is SmithChartImage. 
+In this case, the image will be saved as .png image format in application bin folder and the image name is SmithChartImage. 
 
 {% tabs %}
 
