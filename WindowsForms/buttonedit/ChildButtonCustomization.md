@@ -54,14 +54,14 @@ N> This setting will be effective only for Office2003, OfficeXP and WindowsXP st
 {% highlight c# %}
 
 //Sample code for setting "Bump" Border Style for BorderEdit Child Button
-this.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
+this.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
 'Sample code for setting "Bump" Border Style for BorderEdit Child Button
-Me.buttonEditChildButton4.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump
+Me.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Bump
 
 {% endhighlight %}
 {% endtabs %}
@@ -92,13 +92,13 @@ Specifies whether the child button should be aligned to left or right of the But
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left;
+this.buttonEditChildButton1.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.buttonEditChildButton6.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left
+Me.buttonEditChildButton1.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAlignment.Left
 
 {% endhighlight %}
 {% endtabs %}
@@ -153,23 +153,23 @@ Sets the relative location of the image to the text in the button.</td></tr>
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEditChildButton2.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditChildButton2.Image")));
-this.buttonEditChildButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-this.buttonEditChildButton2.Text = "Browse";
-this.buttonEditChildButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-this.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-this.buttonEditChildButton2.PreferredWidth = 64;
+this.buttonEditChildButton1.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditChildButton2.Image")));
+this.buttonEditChildButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+this.buttonEditChildButton1.Text = "Browse";
+this.buttonEditChildButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+this.buttonEditChildButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+this.buttonEditChildButton1.PreferredWidth = 64;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.buttonEditChildButton2.Image = DirectCast((resources.GetObject("buttonEditChildButton2.Image")), System.Drawing.Image)
-Me.buttonEditChildButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-Me.buttonEditChildButton2.Text = "Browse"
-Me.buttonEditChildButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-Me.buttonEditChildButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-Me.buttonEditChildButton2.PreferredWidth = 64
+Me.buttonEditChildButton1.Image = DirectCast((resources.GetObject("buttonEditChildButton2.Image")), System.Drawing.Image)
+Me.buttonEditChildButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+Me.buttonEditChildButton1.Text = "Browse"
+Me.buttonEditChildButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+Me.buttonEditChildButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+Me.buttonEditChildButton1.PreferredWidth = 64
 
 {% endhighlight %}
 {% endtabs %}
@@ -198,17 +198,17 @@ Specifies the flat style for the button. The options are Flat, Popup, Standard a
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEditChildButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-this.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-this.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
+this.buttonEditChildButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+this.buttonEditChildButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+this.buttonEditChildButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.buttonEditChildButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-Me.buttonEditChildButton5.FlatAppearance.BorderColor = System.Drawing.Color.Crimson
-Me.buttonEditChildButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink
+Me.buttonEditChildButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+Me.buttonEditChildButton1.FlatAppearance.BorderColor = System.Drawing.Color.Crimson
+Me.buttonEditChildButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink
 
 {% endhighlight %}
 {% endtabs %}
@@ -248,18 +248,18 @@ The child buttons can be focused based on the order set by [TabIndex](https://he
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEditChildButton3.KeepFocusRectangle = true;
+this.buttonEditChildButton1.KeepFocusRectangle = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.buttonEditChildButton3.KeepFocusRectangle = True
+Me.buttonEditChildButton1.KeepFocusRectangle = True
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img101.jpeg) 
+![Focusing child button in ButtonEdit](Overview_images/Overview_img101.jpeg) 
 
 {% seealso %}
 
