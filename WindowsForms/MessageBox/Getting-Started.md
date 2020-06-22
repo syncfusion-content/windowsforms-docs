@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: How to Configure MessageBoxAdv.
+description: Learn here about getting started with Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more details.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms MessageBox (MessageBoxAdv)
 
 This section explains how to configure [MessageBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.MessageBoxAdv_members.html) control in a Windows Forms application.
 
@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with MessageBoxAdv
+## Creating simple application with MessageBoxAdv
 
 You can create the Windows Forms application with MessageBoxAdv as follows:
 
@@ -82,5 +82,5 @@ MessageBoxAdv.Show(this,"Save changes?", "File Modified", MessageBoxButtons.YesN
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img32.png)
+![MessageBoxAdv in windows forms messagebox](MessageBoxAdv_images/MessageBoxAdv_img32.png)
 
