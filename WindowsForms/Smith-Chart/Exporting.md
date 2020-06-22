@@ -7,7 +7,7 @@ control: SfSmithChart
 documentation: ug
 ---
 
-# Exporting
+# Exporting the smith chart control
 
 The `SfSmithChart` control provides two ways to exporting the smith chart control output.
 
