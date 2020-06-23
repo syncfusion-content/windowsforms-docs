@@ -74,7 +74,7 @@ Me.buttonEditChildButton1.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBor
 
 {% endseealso %}
 
-### Button Alignment
+## Button Alignment
 
 You can align the child buttons inside the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is set through [ButtonAlign](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton~ButtonAlign.html) property.
 
@@ -105,9 +105,9 @@ Me.buttonEditChildButton1.ButtonAlign = Syncfusion.Windows.Forms.Tools.ButtonAli
 
  ![ButtonAlign of ButtonEdit](Overview_images/Overview_img96.jpeg)
 
-N> You cannot align more than one buttons on the same side. 
+N>  
 
-### Image and Text Settings
+## Image and Text Settings
 
 The image and text of child buttons in [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) can be customized by using [Image](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton~Image.html), [ImageAlign](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#), [ImageIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#), [ImageList](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#), [PreferredWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton~PreferredWidth.html), [Text](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~Text.html), [TextAlign](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#) and [TextImageRelation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#) properties.
 
@@ -176,7 +176,7 @@ Me.buttonEditChildButton1.PreferredWidth = 64
 
 ![Image and Text Customization](Overview_images/Overview_img98.jpeg) 
 
-### Flat Style for the Buttons
+## Flat Style for the Buttons
 
 You can customize the child button for flat style or appearance in [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) using [FlatStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton~FlatStyle.html) and [FlatAppearance](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#) property.
 
@@ -215,7 +215,7 @@ Me.buttonEditChildButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Col
 
  ![Flat style of child button](Overview_images/Overview_img99.jpeg) 
  
-### Style Settings
+## Style Settings
 
 The visual style of child buttons can be set in ButtonEdit using [UseVisualStyleBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#), [Office2007ColorScheme](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~Office2007ColorScheme.html) and [Office2010ColorScheme](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~Office2010ColorScheme.html) properties.
 
@@ -241,7 +241,7 @@ Specifies the office2010 color scheme.</td></tr>
 
 N> Visual style of a child buttons is inherited from the visual style of it's parent [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control. You can override those settings using the above properties.
 
-### Focusing the Child Button at Runtime
+## Focusing the Child Button at Runtime
 
 The child buttons can be focused based on the order set by [TabIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton_members.html#) property set for individual child buttons and [TabStop](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton~TabStop.html) property should be enabled to make this effective. While focusing the button, we can display a focus rectangle, by enabling [KeepFocusRectangle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~KeepFocusRectangle.html) property of [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control. 
 

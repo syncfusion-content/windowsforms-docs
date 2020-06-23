@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-## ButtonEdit Appearance
+# ButtonEdit Appearance
 
 A [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of controls with textbox and buttons. The ButtonEdit control supports properties which controls the appearance and behavior of the control.
 
@@ -171,7 +171,7 @@ this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
 N> The Border styles of the child buttons can be controlled using [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) [BorderStyleAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ButtonAdv~BorderStyleAdv.html) property. SeeSee Button Types and Border Styles topic for details.
 
-### Size Settings
+## Size Settings
 
 You can set the maximum and minimum size for the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control using [MaximumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~MaximumSize.html) and [MinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~MinimumSize.html) properties.
 
@@ -214,12 +214,13 @@ N> Foreground settings for the [ButtonEditChildButton](https://help.syncfusion.c
 
 ![Foreground customization of ButtonEdit](Overview_images/Overview_img92.jpeg)
 
-### Case Settings
+## Case Settings
 
-Using [CharacterCasing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~CharacterCasing.html) property of [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html), we can specify whether the case of the character can be modified as they are typed. The values are Upper, Lower and Normal.
+Using [CharacterCasing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~CharacterCasing.html) property of [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html), we can specify whether the case of the character can be modified as they are typed. The options are Upper, Lower and Normal.
 
 {% tabs %}
 {% highlight c# %}
+
 buttonEdit.Text = "ButtonEdit1";
 buttonEdit.CharacterCasing = CharacterCasing.Lower;
 
