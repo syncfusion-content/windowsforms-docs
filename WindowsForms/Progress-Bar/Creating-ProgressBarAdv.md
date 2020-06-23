@@ -1,12 +1,12 @@
 ---
 layout: post
 title: GettingStarted| WindowsForms | Syncfusion
-description:  getting started
+description:  Learn here about getting started with Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv 
 documentation: ug
 ---
-# Getting started
+# Getting Started in Windows Forms Progress Bar (ProgressBarAdv)
 
 This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 
@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with ProgressBarAdv
+## Creating simple application with ProgressBarAdv
 
 You can create the Windows Forms application with ProgressBarAdv control as follows:
 
@@ -39,9 +39,9 @@ The [ProgressBarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Sync
 
 * Syncfusion.Shared.Base.dll
 
-![](GettingStarted-images/Toolbox.png)
+![Adding control in windows forms progress bar](GettingStarted-images/Toolbox.png)
 
-![](GettingStarted-images/GettingStarted-img1.png)
+![Output of adding control in windows forms progress bar](GettingStarted-images/GettingStarted-img1.png)
 
 ## Adding control manually using code
 
@@ -99,7 +99,7 @@ Me.Controls.Add(progressBarAdv1)
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img2.png)
+![Adding control manually in windows forms progress bar](GettingStarted-images/GettingStarted-img2.png)
 
 ## Configure text format
 
@@ -123,7 +123,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Value
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img3.png)
+![Configure text format using maximum value in windows forms progress bar](GettingStarted-images/GettingStarted-img3.png)
 
 **Percentage** - It represents the percentage format.
 
@@ -144,7 +144,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Percentage
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img5.png)
+![Configure text format using percentage symbol in windows forms progress bar](GettingStarted-images/GettingStarted-img5.png)
 
 **Custom** - It represents the other custom format.
 
@@ -167,7 +167,7 @@ Me.progressBarAdv1.TextStyle = ProgressBarTextStyles.Custom
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img6.png)
+![Customized configure text format using maximum value in windows forms progress bar](GettingStarted-images/GettingStarted-img6.png)
 
 
 ## Configure text alignment
@@ -192,7 +192,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Center
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img8.png)
+![Configure text alignment center in windows forms progress bar](GettingStarted-images/GettingStarted-img8.png)
 
 **Left** - It represents text aligned to the left.
 
@@ -212,7 +212,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Left
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img4.png)
+![Configure text alignment left in windows forms progress bar](GettingStarted-images/GettingStarted-img4.png)
 
 **Right** - It represents text aligned to the right.
 
@@ -232,7 +232,7 @@ Me.progressBarAdv1.TextAlignment = TextAlignment.Right
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img7.png)
+![Configure text alignment right in windows forms progress bar](GettingStarted-images/GettingStarted-img7.png)
 
 
 

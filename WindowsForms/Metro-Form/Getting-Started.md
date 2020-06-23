@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Windows Forms Metro Form control and more details about it.
 platform: WindowsForms
 control: MetroForm
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Metro Form
 
 This section describes how to configure `MetroForm` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
  
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Creating simple application with MetroForm
+## Creating simple application with MetroForm
 
 You can create the Windows Forms application with MetroForm control as follows:
 
@@ -76,7 +76,7 @@ Partial Public Class MetroForm Inherits MetroForm
 
 {% endtabs %} 
    
-![](Getting-Started_images/MetroForm.png)
+![Metro form in windows forms](Getting-Started_images/MetroForm.png)
 
 ## Add Caption Labels
 
@@ -128,7 +128,7 @@ Me.CaptionLabels.Add(captionLabel1)
 
 {% endtabs %} 
 
-![](Getting-Started_images/Captionlabel.png)
+![Caption Label in windows forms metro form](Getting-Started_images/Captionlabel.png)
 
 ## Add Caption Images
 
@@ -179,4 +179,4 @@ Me.CaptionImages.Add(captionImage1)
 
 {% endtabs %} 
 
-![](Getting-Started_images/Captionimage.png)
+![Caption Image in windows forms metro form](Getting-Started_images/Captionimage.png)
