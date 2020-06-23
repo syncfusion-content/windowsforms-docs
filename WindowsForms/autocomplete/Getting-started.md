@@ -85,15 +85,15 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Enabling AutoComplete functionality for TextBox control
+## Enable AutoComplete functionality for TextBox control
 
-### Enabling through designer
+### Enabling via designer
 
 Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop-down provided in the TextBox properties dialog window. The Default value is `Disabled`.
 
 ![Windows forms AutoComplete toolbox customization](GettingStarted_images/Autocomplete_Propertywindow.png)
 
-### Enabling through Code
+### Enabling via Code
 
 Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method to add the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component with the TextBox control.
 
@@ -181,20 +181,3 @@ End Sub
 {% endtabs %}
 
 ![Windows forms AutoComplete with binding data source](GettingStarted_images/AutoComplete_datasourceform.png)
-
-## AutoComplete Purpose
-
-[AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control used for the following purposes:
-* Word prediction. 
-* Improve typing speed. 
-* Reduce the amount of keystrokes required to complete a word or sentence.
-
-## AutoComplete modes
-
-There are six types of AutoComplete Modes:
-* AutoSuggest
-* AutoAppend
-* Both
-* Disabled
-* MultiSuggest
-* MultiSuggestExtend
