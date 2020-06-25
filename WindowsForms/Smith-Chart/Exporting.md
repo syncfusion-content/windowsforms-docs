@@ -18,7 +18,7 @@ The `SfSmithChart` control provides two ways to exporting the smith chart contro
 
 The `SfSmithChart` control provides a support for exporting the smith chart control as an image in the different image formats. 
 
-Based on the filename extension, the SfSmithChart has built-in support to save the image in the following formats:
+SfSmithChart has built-in support to save the image in the following formats:
 
 <table>
 <tr>
