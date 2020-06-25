@@ -74,17 +74,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-Public Sub New()
-
-    InitializeComponent()
-    Dim autoComplete1 As AutoComplete = New AutoComplete()
-    Dim textBox1 As TextBox = New TextBox()
-    autoComplete1.SetAutoComplete(textBox1, AutoCompleteModes.AutoSuggest)
-    Me.Controls.Add(textBox1)
-End Sub
-{% endhighlight %}
-{% endtabs %}
-
 ## Enable AutoComplete functionality for TextBox control
 
 ### Enabling via designer
