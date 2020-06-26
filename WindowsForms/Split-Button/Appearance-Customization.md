@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance-Customization | WindowsForms | Syncfusion
-description: This section explains about the customization appearance of Split Button for syncfusion Essential Windows Forms
+description: This section explains about the appearance customization of Split Button for syncfusion Essential Windows Forms
 platform: WindowsForms
 control: SplitButton 
 documentation: ug
