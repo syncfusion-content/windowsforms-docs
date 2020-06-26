@@ -67,7 +67,7 @@ The `SfSmithChart` control provides two ways to call `SaveImage()` method.
 
 ### Call the method with argument
 
-In this case, pass the argument as method paramenter for exporting an image in the specified image format and saved in the given file path location.
+In this case, pass the argument as method parameter for exporting an image in the specified image format and saved in the given file path location.
 
 {% tabs %}
 
