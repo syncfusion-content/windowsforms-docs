@@ -9,14 +9,14 @@ documentation: ug
 
 # Exporting the smith chart control
 
-The `SfSmithChart` control provides two ways to exporting the smith chart control output.
+The `SfSmithChart` control provides two ways to export the output view.
 
 * Exporting as an Image
 * Copy to clipboard
 
 ## Exporting as an Image
 
-The `SfSmithChart` control provides a support for exporting the smith chart control as an image in the different image formats. 
+The `SfSmithChart` control provides a support for exporting the smith chart as an image in the different image formats. 
 
 SfSmithChart has built-in support to save the image in the following formats:
 
@@ -67,7 +67,7 @@ The `SfSmithChart` control provides two ways to call `SaveImage()` method.
 
 ### Call the method with argument
 
-In this case, exporting the smith chart control as an image in the specified image format and saved in the given file path location.
+In this case, pass the argument as method paramenter for exporting an image in the specified image format and saved in the given file path location.
 
 {% tabs %}
 
