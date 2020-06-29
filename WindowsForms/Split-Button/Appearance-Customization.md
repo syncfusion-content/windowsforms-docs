@@ -29,7 +29,7 @@ Me.splitButton1.Style = Syncfusion.Windows.Forms.Tools.SplitButtonVisualStyle.Of
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Customization_images/splitbutton-colorfultheme.png)
+![splitbutton colorfultheme](Appearance-Customization_images/splitbutton-colorfultheme.png)
 
 ## Customization of SplitButton
 
@@ -196,7 +196,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Customization_images/Appearance-Customization_img1.png)
+![Appearance-Customization1](Appearance-Customization_images/Appearance-Customization_img1.png)
 
 * Customizing the SplitButton DropDownItems appearance
 
@@ -311,7 +311,7 @@ End Class
 
 N> The CustomRenderer class can be inherited from any type of System.Windows.Forms.ToolStripRenderer class.
 
- ![](Appearance-Customization_images/Appearance-Customization_img3.png)
+ ![Appearance-Customization3](Appearance-Customization_images/Appearance-Customization_img3.png)
 
-![](Appearance-Customization_images/Appearance-Customization_img4.png)
+![Appearance-Customization4](Appearance-Customization_images/Appearance-Customization_img4.png)
 _
