@@ -30,7 +30,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose Syncfusion Windows Forms Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery-1.png)
 
-   In Visual Studio 2019 Select File -> New -> Project. Opens a new dialog to create a new project. You can obtain the templates provided by Syncfusion for Winforms  by filtering the project type with Syncfusion or by using the Syncfusion keyword in the search option.
+   In Visual Studio 2019 Select File -> New -> Project. Opens a new dialog to create a new project. You can obtain the templates provided by Syncfusion for WinForms  by filtering the project type with Syncfusion or by using the Syncfusion keyword in the search option.
 
    ![Choose Syncfusion Windows Forms Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery2019-1.png)
 
@@ -42,7 +42,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
   
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-2.png)
 
-   In Visual Studio 2019 Syncfusion Windows Froms Application project configuration wizard.
+   In Visual Studio 2019 Syncfusion Windows Forms Application project configuration wizard.
 
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery2019-2.png)
                                                      
