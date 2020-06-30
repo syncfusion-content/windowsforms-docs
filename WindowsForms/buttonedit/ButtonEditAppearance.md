@@ -161,8 +161,8 @@ this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 {% highlight vb %}
 
 Me.buttonEdit.UseVisualStyle = False
-this.buttonEdit.FlatBorderColor = System.Drawing.Color.Red;
-this.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+Me.buttonEdit.FlatBorderColor = System.Drawing.Color.Red;
+Me.buttonEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 
 {% endhighlight %}
 {% endtabs %}
