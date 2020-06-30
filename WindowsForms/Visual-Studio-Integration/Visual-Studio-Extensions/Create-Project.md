@@ -52,13 +52,13 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose the project type in Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-11.png)
 
-   N> Project type selection option will be available only in Visual Studio 2019 Syncfusion Windows Forms Project template configuration. The .Net Core 3.1 and .Net 5.0 option will be listed in project type only when the .Net Core 3.1 and .Net 5.0 setup has been installed.
+   N> Project type selection option will be available only in Visual Studio 2019 Syncfusion Windows Forms Project template configuration. The .NET Core 3.1 and .NET 5.0 option will be listed in project type only when the .NET Core 3.1 and .NET 5.0 setup has been installed.
 
    **Language:** Select the language, either C# or VB. 
 
    ![Choose the language in Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-3.png)
 
-   N> C# language is available only when you choose .NET 5.0 and .Net Core 3.1 from project type option in Visual Studio 2019.
+   N> C# language is available only when you choose .NET 5.0 and .NET Core 3.1 from project type option in Visual Studio 2019.
 
    ![Choose the language in Syncfusion Windows Forms .NET Core project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-9.png)
 
@@ -66,7 +66,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose the assembly location from where assemblies to be added to the project](Project-Template-images\Syncfusion-Project-Template-Gallery-4.png)
 
-   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 5.0 and .Net Core 3.1 from project type option in Visual Studio 2019.
+   N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 5.0 and .NET Core 3.1 from project type option in Visual Studio 2019.
 
    **Installed ES Build Version:** Choose the build version to add the corresponding version assemblies to the project.
 
