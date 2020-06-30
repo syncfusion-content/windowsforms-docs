@@ -100,6 +100,27 @@ Me. CaptionBarHeight = 50
 
 ![Winforms showing caption bar height applied in office2007form](Caption-Settings_images/CaptionBarHeight.png)
 
+
+### Retain the caption bar height on maximized mode
+
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property `Office2007Form.CaptionBarHeightMode` as `SameAlwaysOnMaximize`
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.SameAlwaysOnMaximize
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Help button support
 
 [HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers+LanguageColoringConfigurationDialog~HelpButton.html) property is used to show the `HelpButton` in the caption box of the Form.
