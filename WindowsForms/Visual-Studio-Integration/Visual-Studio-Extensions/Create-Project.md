@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Create Project
+# Create WinForms project
 
 Syncfusion provides the Visual Studio Project Template for the Syncfusion WinForms platform to create the Syncfusion WinForms Application by adding the required Syncfusion assemblies and forms. 
 
