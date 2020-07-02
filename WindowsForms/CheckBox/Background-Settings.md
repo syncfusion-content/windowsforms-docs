@@ -9,10 +9,7 @@ documentation: ug
 
 # Background Settings
 
-The background settings of the CheckBoxAdv are discussed below.
-
-The CheckBoxAdv can be provided with a gradient background using the properties given below.
-
+The background of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed using the [BackgroundStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BackgroundStyle.html), [GradientStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~GradientStart.html) and [GradientEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~GradientEnd.html) properties.
 
 <table>
 <tr>
@@ -54,5 +51,5 @@ Me.checkBoxAdv1.GradientEnd = System.Drawing.Color.Magenta
  ![Windows forms CheckBoxAdv gradient style applied in background](Overview_images/CheckBoxAdv_backgroundcolor.jpeg)
 
 
-N> Gradient background cannot be applied to the CheckBoxAdv when its BackgroundStyle property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
+N> Gradient background cannot be applied to the CheckBoxAdv when its [BackgroundStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BackgroundStyle.html) property is set to 'Default'. Also, the background image cannot be displayed with gradient settings.
 

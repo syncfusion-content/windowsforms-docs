@@ -13,11 +13,11 @@ The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.W
 
 ![Windows forms CheckBoxAdv Overview](Overview_images/CheckBoxAdv.jpeg)
 
-The CheckBoxAdv control can replace the CheckBox control provided in Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the check box graphic indicates the option selected. In the CheckBoxAdv control, the graphic can be changed to an image that indicates a selected or deselected state.
+The [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can replace the CheckBox control provided in Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the check box graphic indicates the option selected. In the CheckBoxAdv control, the graphic can be changed to an image that indicates a selected or deselected state.
 
 ## Key Features
 
-The CheckBoxAdv is an advanced CheckBox control, and it contains the following features.
+The [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is an advanced CheckBox control, and it contains the following features.
 
 **CheckBoxAdv Settings** - The CheckBoxAdv can be displayed in the checked, unchecked, and indeterminate states using the CheckState property. The integer and string values can be associated with each state of the CheckBoxAdv.
 

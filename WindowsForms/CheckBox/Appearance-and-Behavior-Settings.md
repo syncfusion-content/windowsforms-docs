@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
-description: appearance and behavior settings
+description:  This section gives detailed description about customizing the appearance and behavior of CheckBoxAdv control. 
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance and Behavior Settings
 
-This section discusses the appearance and behavior settings of the CheckBoxAdv control.
+This section discusses the appearance and behavior settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Appearance Settings
 
-### DrawFocusRectangle
+### FocusRectangle in CheckBoxAdv
 
-The focus rectangle can be hidden or made visible using the below given property.
+You can show or hide the focus rectangle of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using  [DrawFocusRectangle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~DrawFocusRectangle.html) property.
 
 <table>
 <tr>
@@ -46,8 +46,7 @@ Me.checkBoxAdv1.DrawFocusRectangle = True
 
 ## Behavior Settings
 
-The behavior settings of the CheckBoxAdv can be customized using the properties given below.
-
+The behavior of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using [AutoHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~AutoHeight.html), [ReadOnlyMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~ReadOnlyMode.html) and [TriState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Tristate.html) properties.
 
 <table>
 <tr>

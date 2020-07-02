@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CheckBoxAdv-Settings | WindowsForms | Syncfusion
-description: checkboxadv settings
+description: This section gives the detailed description about the states and its's associated values of CheckBoxAdv control. 
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # CheckBoxAdv Settings
 
-This section discusses the various states of the `CheckBoxAdv` control and the method of associating values with the states.
+This section discusses the various states of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control and the method of associating values with the states.
 
 ## CheckBoxAdv States
 
-The CheckBoxAdv can be displayed in three different states which have been described below.
+The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) states can be changed by using [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) or [Checked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property.
 
 <table>
 <tr>
@@ -23,7 +23,7 @@ Description</th></tr>
 <tr>
 <td>
 CheckState</td><td>
-Gets or sets the check state of the CheckBox.It includes the below given options.{{ 'Unchecked,' | markdownify }}{{ 'Checked and' | markdownify }}{{ 'Indeterminate.' | markdownify }}</td></tr>
+Gets or sets the check state of the CheckBox. It includes Unchecked,Checked and Indeterminate options. </td></tr>
 <tr>
 <td>
 Checked</td><td>
@@ -50,17 +50,14 @@ Me.checkBoxAdv1.Checked = True
 
 {% seealso %}
 
-[CheckBoxAdv States](http://help.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
+[Image Settings of CheckBoxAdv](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
 
 {% endseealso %}
 
 
 ## CheckBoxAdv Values
 
-This section discusses how values can be associated with the various check states.
-
-Both integer and string values can be associated with the check states as follows.
-
+You can customize the values associated with the various check states of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control. Both integer and string values can be associated with the check states.
 
 <table>
 <tr>
@@ -137,9 +134,5 @@ Me.checkBoxAdv1.BoolValue = True
 {% endhighlight %}
 {% endtabs %}
 
-{% seealso %}
 
-[CheckBoxAdv States](http://help.syncfusion.com/windowsforms/checkboxadv/checkboxadv-settings#checkboxadv-states),  [Image Settings](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
-
-{% endseealso %}
 

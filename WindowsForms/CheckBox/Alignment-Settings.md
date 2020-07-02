@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alignment-Settings | WindowsForms | Syncfusion
-description: alignment settings
+description:  This section gives the detailed description about customizing the alignment of CheckBoxAdv control. 
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,13 +9,11 @@ documentation: ug
 
 # Alignment Settings
 
-This section discusses the alignment settings of the CheckBoxAdv.
+This section discusses the alignment settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Text Alignment
 
-Text in the CheckBoxAdv can be aligned to the desired location as given below.
-
-The `TextContentAlignment` property options included are as follows, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+Text alignment of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed by using the TextContentAlignment property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight  as options.
 
 <table>
 <tr>
@@ -46,9 +44,7 @@ Me.checkBoxAdv1.TextContentAlignment = System.Drawing.ContentAlignment.MiddleCen
 
 ## CheckBox Alignment
 
-The CheckBox itself can be aligned to any desired location that can be chosen from the options given in the following property.
-
-The `CheckAlign` property options included are as follows, TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight.
+The CheckBox alignment of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed to any desired location using [CheckAlign](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~CheckAlign.html) property with TopLeft, TopCenter, TopRight, MiddleLeft, MiddleCenter, MiddleRight, BottomLeft, BottomCenter and BottomRight as options.
 
 <table>
 <tr>
