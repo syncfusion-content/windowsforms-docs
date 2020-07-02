@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Text Settings
+# Text Settings of CheckBoxAdv
 
 This section discusses the text settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
 

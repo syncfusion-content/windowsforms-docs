@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Appearance and Behavior Settings
+# Appearance and Behavior Settings 
 
 This section discusses the appearance and behavior settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

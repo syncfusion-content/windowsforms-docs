@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Image Settings
+# Image Settings of CheckBoxAdv
 
 You can set the images to the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) when it is in the Checked, Unchecked or Indeterminate state using [ImageCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ImageCheckBox.html),[ImageCheckBoxSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ImageCheckBoxSize.html),[CheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~CheckedImage.html),[UncheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~UncheckedImage.html),[IndeterminateImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~IndeterminateImage.html),[DisabledImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~DisabledImage.html) and [StretchImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~StretchImage.html) properties.
 

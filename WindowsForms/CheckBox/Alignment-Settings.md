@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Alignment Settings
+# Alignment Settings of CheckBoxAdv
 
 This section discusses the alignment settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# Background Settings
+# Background Settings of CheckBoxAdv
 
 The background of the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed using the [BackgroundStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BackgroundStyle.html), [GradientStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~GradientStart.html) and [GradientEnd](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~GradientEnd.html) properties.
 

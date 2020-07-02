@@ -7,7 +7,7 @@ control: CheckBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of CheckBoxAdv
 
 This section gives detailed description on Getting Started of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# CheckBoxAdv Settings
+# CheckBoxAdv Settings of CheckBoxAdv
 
 This section discusses the various states of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control and the method of associating values with the states.
 
