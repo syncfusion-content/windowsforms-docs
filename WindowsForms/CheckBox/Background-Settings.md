@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Background-Settings | WindowsForms | Syncfusion
-description: background settings
+description: This section gives the detailed description on customizing the background of the CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

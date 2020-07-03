@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text-Settings | WindowsForms | Syncfusion
-description:  This section gives the detailed description about the customizing the text of CheckBoxAdv control. 
+description:  his section gives the detailed description about customizing the text feature of CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

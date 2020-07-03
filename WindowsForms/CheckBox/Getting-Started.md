@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | CheckBoxAdv | WindowsForms | Syncfusion
-description: This section gives detailed description on Getting Started of CheckBoxAdv control.
+description: This section gives detailed description on Getting Started, customization, check state of CheckBoxAdv control.
 platform: WindowsForms
 control: CheckBoxAdv
 documentation: ug
