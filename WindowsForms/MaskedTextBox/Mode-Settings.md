@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mode Settings | WindowsForms | Syncfusion
-description: Mode Settings
+description: Learn here about how to set the different Mode Settings to the Syncfusion Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 This section discusses the mode settings of the MaskedEditBox control.
 
-MaskedEditBox control uses the following modes.
+The [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control uses the following modes.
 
 
 
@@ -35,27 +35,27 @@ Specifies if the MaskedEditBox control is to behave as a numeric control.</td></
 
 ## Clip mode
 
-At runtime, we can copy / paste the entries of MaskedEditBox. The entries that are copied can be specified whether to include literals using the ClipMode property.
+At runtime, we can copy or paste the entries of MaskedEditBox. The entries that are copied can be specified whether to include literals using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ClipMode.html) property.
 
-Setting the ClipMode property of the MaskedEditBox to 'ExcludeLiterals', will get rid of the literals from the text that is returned by the control. The default value is set to 'IncludeLiterals'.
+Setting the `ClipMode` property of the MaskedEditBox to 'ExcludeLiterals', will get rid of the literals from the text that is returned by the control. The default value is set to 'IncludeLiterals'.
 
 ## InputMode
 
-The different modes of the input can be determined by the InputMode property.
+The different modes of the input can be determined by the [InputMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~InputMode.html) property.
 
-Setting the InputMode to 'Normal', allows the user to work in insert mode and the INSERT key is not allowed. In Over typeOnly mode, the INSERT key will not have any effect.
+Setting the `InputMode` to 'Normal', allows the user to work in insert mode and the INSERT key is not allowed. In Over typeOnly mode, the INSERT key will not have any effect.
 
 ## UsageMode
 
-The UsageMode property modifies the behavior of the MaskedEditBox as detailed below.
+The [UsageMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~UsageMode.html) property modifies the behavior of the MaskedEditBox as detailed below.
 
 ## Normal mode
 
-When the UsageMode is set to 'Normal', there is no change in the behavior. This is the default mode for a MaskedEditBox control.
+When the `UsageMode` is set to 'Normal', there is no change in the behavior. This is the default mode for a MaskedEditBox control.
 
 ## Numeric mode
 
-When the UsageMode is set to 'Numeric', the control creates internally two data groups and one decimal separator character in the mask. These groups are created such that the first group holds the mask value before the decimal separator and the second group holds the mask value after the decimal separator. For example, let us specify the mask as follows:
+When the `UsageMode` is set to 'Numeric', the control creates internally two data groups and one decimal separator character in the mask. These groups are created such that the first group holds the mask value before the decimal separator and the second group holds the mask value after the decimal separator. For example, let us specify the mask as follows:
 
 ###.####
 

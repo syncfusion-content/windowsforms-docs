@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Border Settings | WindowsForms | Syncfusion
-description: Border Settings
+description: Learn here about how to set the different style of border and show the border style in Syncfusion Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
@@ -57,8 +57,5 @@ Me.maskedEditBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img17.png)
+![Set the border style to the WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img17.png)
 
-A Sample which demonstrates the Border Settings of MaskedEditBox control is available in the below sample installation path.
-
-…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

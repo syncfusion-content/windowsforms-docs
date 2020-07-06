@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mask Settings | WindowsForms | Syncfusion
-description: Mask Settings
+description: Learn here about how to set the different Mask settings to the Syncfusion Windows Forms MaskedEditControl.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 This section deals with the mask settings of MaskedEditBox control.
 
-The format / behavior for the MaskedEditBox control is defined through the property given below.
+The format or behavior for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control is defined through the property given below.
 
 
 
@@ -26,7 +26,7 @@ Specifies the mask string for the MaskedEditBox control.</td></tr>
 </table>
 
 
-The Mask is a string that is composed of literal characters and mask characters.
+The [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Mask.html) is a string that is composed of literal characters and mask characters.
 
 Literal characters give visual cues about the type of data being used. Mask characters are the placeholders for the data input. For example, a US telephone number can be represented by the following mask.
 
@@ -121,10 +121,5 @@ Me.maskedEditBox1.Mask = "##-##-####"
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img5.png)
+![Set the mask value to WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img5.png)
 
-
-
-A Sample which demonstrates the Mask Settings of MaskedEditBox control is available in the below sample installation path.
-
-…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
