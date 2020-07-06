@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Text Settings
+# Text Settings in MaskedEditBox
 
 This section discusses the text settings of the MaskedEditBox control.
 

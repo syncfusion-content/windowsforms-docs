@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Getting Started
+# Getting Started with MaskedEditBox control
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the **MaskedEditBox** control with its basic functionalities.
 

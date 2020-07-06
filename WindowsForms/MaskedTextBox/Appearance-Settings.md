@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Appearance Settings
+# Appearance Settings in MaskedEditBox
 
 ## Background settings
 

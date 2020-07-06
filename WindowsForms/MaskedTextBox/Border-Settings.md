@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Border Settings
+# Border Settings in MaskedEditBox
 
 The border settings of the MaskedEditBox control are discussed in this section.
 

@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# MaskedEditBox Events
+# MaskedEditBox Events in MaskedEditBox
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
