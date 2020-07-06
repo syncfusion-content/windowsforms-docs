@@ -14,7 +14,7 @@ The background settings of the MaskedEditBox control are discussed below.
 
 ### Background color
 
-The background color of the control can be set using the properties given below.
+You can set the background color for the MaskedEditBox control by using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~BackColor.html) property.
 
 <table>
 <tr>
@@ -46,8 +46,7 @@ Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 ![Set the background color to WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img15.png)
 
 
-
-The method associated with the above property is given below.
+You can also reset the background color for MaskedEditBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ResetBackColor.html) method.
 
 <table>
 <tr>
@@ -66,7 +65,7 @@ The foreground settings of the MaskedEditBox control are discussed below.
 
 ### Foreground color
 
-The foreground color of the control can be set using the properties given below.
+You can set the foreground color for MaskedEditBox Control by using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 <table>
 <tr>
@@ -100,5 +99,19 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 ## Visual style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
+You can set the visual style to the MaskedEditBox control by using [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Style.html) property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.maskedEditBox1.Style = TextBoxExt.theme.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the visual style to WF MaskedEditBox control](MaskedEditBox-images/WF-maskededitbox-style.png)
+
+N> Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
 

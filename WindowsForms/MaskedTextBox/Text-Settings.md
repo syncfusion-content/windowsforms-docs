@@ -22,7 +22,7 @@ Description</th></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
+Gets or sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -30,7 +30,7 @@ Indicates how the text should be aligned for edit controls.</td></tr>
 <tr>
 <td>
 SelectedText</td><td>
-Gets / sets the selected text in the MaskedEditBox.</td></tr>
+Gets or sets the selected text in the MaskedEditBox.</td></tr>
 <tr>
 <td>
 HideSelection</td><td>
@@ -161,11 +161,11 @@ Specifies the overflow indicator tooltip text.</td></tr>
 <tr>
 <td>
 ShowOverflowIndicator</td><td>
-Gets / sets overflow indicator visibility.</td></tr>
+Gets or sets overflow indicator visibility.</td></tr>
 <tr>
 <td>
 ShowOverflowIndicatorToolTip</td><td>
-Gets / sets can show overflow indicator tooltip.</td></tr>
+Gets or sets can show overflow indicator tooltip.</td></tr>
 </table>
 
 {% tabs %}

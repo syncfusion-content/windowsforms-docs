@@ -12,7 +12,8 @@ This section discusses the display settings of the [MaskedEditBox](https://help.
 
 ## Separators
 
-The user data can be displayed along with separators at run time for specifying date, time, decimals and thousands. It is not required to type separators at run time. Separators can be specified in the mask character itself.
+You can display the data along with separators specifying date, time, decimals and thousands at run time by using [DateSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DateSeparator.html), [TimeSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~TimeSeparator.html), [DecimalSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DecimalSeparator.html) and [ThousandSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ThousandSeparator.html) properties. It is not required to type separators at run time. Separators can be specified in the mask character itself.
+
 
 <table>
 <tr>
@@ -82,7 +83,7 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 ## Cursor position
 
-The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
+You can set the cursor position of the MaskedEditBox control by using [PositionAt](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAt.html) and [PositionAtDecimal](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAtDecimal.html) properties.
 
 <table>
 <tr>

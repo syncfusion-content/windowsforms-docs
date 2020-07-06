@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Layout Settings | WindowsForms | Syncfusion
-description: Layout Settings
+description: Learn here about how to set the minimum and maximum size of the Syncfusion Windows Forms  Layout Settings
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Layout Settings
+# Layout Settings in MaskedEditBox
 
 The layout settings of the MaskedEditBox control are discussed in this section.
 
-The size of the MaskedEditBox control can be set according to the needs of the user using the properties discussed below.
-
+You can set the minimum and maximum size of the MaskedEditBox control by using the [MinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html) and [MaximumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html) properties.
 
 
 <table>
@@ -48,5 +47,5 @@ Me.maskedEditBox1.MinimumSize = New System.Drawing.Size(150, 20)
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img18.png)
+![Set the minimum and maximum size of WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img18.png)
 

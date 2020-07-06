@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior Settings | WindowsForms | Syncfusion
-description: Behavior Settings
+description: Learn here about the Syncfusion Windows Forms MaskedEditBox control behavior settings and its features.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
@@ -12,7 +12,7 @@ The behavior settings of the MaskedEditBox control are discussed below.
 
 ### Prompt and padding character settings
 
-MaskedEditBox control allows you to add prompt characters in the input.
+The [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control allows you to add prompt characters in the input.
 
 <table>
 <tr>
