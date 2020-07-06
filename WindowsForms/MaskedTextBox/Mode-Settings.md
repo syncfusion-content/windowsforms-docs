@@ -41,7 +41,7 @@ Setting the `ClipMode` property of the MaskedEditBox to `ExcludeLiterals`, will 
 
 The different modes of the input can be determined by the [InputMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~InputMode.html) property.
 
-Setting the `InputMode` to `Normal`, allows the user to work in insert mode and the INSERT key is not allowed. In `OvertypeOnly` mode, the INSERT key will not have any effect.
+Setting the `InputMode` to `Normal`, allows the user to work in insert mode and the INSERT key is not allowed. In Over typeOnly mode, the INSERT key will not have any effect.
 
 ## UsageMode
 

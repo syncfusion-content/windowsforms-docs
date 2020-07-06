@@ -6,7 +6,7 @@ platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Behavior Settings
+# Behavior Settings in MaskedEditBox
 
 The behavior settings of the MaskedEditBox control are discussed below.
 
