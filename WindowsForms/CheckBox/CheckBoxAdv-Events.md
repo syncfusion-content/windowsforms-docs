@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-# CheckBoxAdv Events
+# Events of CheckBoxAdv
 
 This section gives detailed explanation about the [CheckStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckStateChanged_EV.html) and [CheckedChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckedChanged_EV.html) events in [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
@@ -31,7 +31,7 @@ This event is raised when the Checked property is changed.</td></tr>
 This event is raised when the [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) property of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is changed and the event handler receives an argument of type EventArgs containing data related to this event.
 
 {% tabs %}
-{% highlight c# }%
+{% highlight c# %}
 
 private void checkBoxAdv1_CheckStateChanged(object sender, EventArgs e)
 {
