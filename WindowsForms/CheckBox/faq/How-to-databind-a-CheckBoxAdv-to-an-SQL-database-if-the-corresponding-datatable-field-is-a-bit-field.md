@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-a-bit-field | WindowsForms | Syncfusion
-description: how to databind a checkboxadv to an sql database if the corresponding datatable field is a bit field
+description: how to databind a checkboxadv to an sql database if the corresponding datatable field is a bit field.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,33 +9,58 @@ documentation: ug
 
 # How to Databind a CheckBoxAdv to an SQL Database if the Corresponding DataTable Field is a Bit Field
 
-The CheckBoxAdv's IntValue property can be used to data bind bit values as illustrated below.
+The [CheckBoxAdv's]([CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html)) [BoolValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~BoolValue.html) property can be used to data bind bit values as illustrated below.
 
 {% tabs %}
 {% highlight c# %}
 
-private void Form1_Load(object sender, System.EventArgs e)
+public partial class Form1 : Form
 {
+    public const string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True";
+    public Form1()
+    {
+        InitializeComponent();
 
-// Using CheckBoxAdv's IntValue property for Data binding.
-this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
+        using (SqlConnection sqlConnection = new SqlConnection(connectString))
+        {
+            sqlConnection.Open();
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM [Table]", sqlConnection);
+
+            DataTable dataTable = new DataTable("Table");
+            dataAdapter.Fill(dataTable);
+
+            dataGridView1.DataSource = dataTable;
+            this.checkBoxAdv1.DataBindings.Add("BoolValue", dataTable, "CheckValue");
+        }
+    }
 }
-this.checkBoxAdv1.DataBindings.Add("IntValue", this.dataSet11.Table1, "BitField");
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+Public Partial Class Form1
+    Inherits Form
 
-' Using CheckBoxAdv's IntValue property for Data binding.
-Me.oleDbDataAdapter1.Fill(Me.dataSet11.Table1)
-End Sub
-Me.checkBoxAdv1.DataBindings.Add("IntValue", Me.dataSet11.Table1, "BitField")
+    Public Const connectString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True"
+
+    Public Sub New()
+        InitializeComponent()
+
+        Using sqlConnection As SqlConnection = New SqlConnection(connectString)
+            sqlConnection.Open()
+            Dim dataAdapter As SqlDataAdapter = New SqlDataAdapter("SELECT * FROM [Table]", sqlConnection)
+            Dim dataTable As DataTable = New DataTable("Table")
+            dataAdapter.Fill(dataTable)
+            dataGridView1.DataSource = dataTable
+            Me.checkBoxAdv1.DataBindings.Add("BoolValue", dataTable, "CheckValue")
+        End Using
+    End Sub
+End Class
 
 {% endhighlight %}
 {% endtabs %}
 
-A sample which demonstrates how bit values are used to set the state of the CheckBoxAdv is available in the below sample installation path.
+![CheckBoxAdv binding to Database](FAQ_images/FAQ_img1.png)
 
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_

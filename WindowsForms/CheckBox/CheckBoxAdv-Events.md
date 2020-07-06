@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CheckBoxAdv-Events | WindowsForms | Syncfusion
-description: checkboxadv events
+description: This section gives detailed explanation about the CheckStateChanged and CheckedChanged events in CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # CheckBoxAdv Events
 
-A detailed explanation about the CheckStateChanged event is given in the following section.
+This section gives detailed explanation about the [CheckStateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckStateChanged_EV.html) and [CheckedChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckedChanged_EV.html) events in [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 <table>
 <tr>
@@ -28,12 +28,10 @@ This event is raised when the Checked property is changed.</td></tr>
 
 ## CheckStateChanged Event
 
-This event occurs when the CheckState property is changed.
-
-The event handler receives an argument of type EventArgs containing data related to this event.
+This event is raised when the [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) property of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is changed and the event handler receives an argument of type EventArgs containing data related to this event.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# }%
 
 private void checkBoxAdv1_CheckStateChanged(object sender, EventArgs e)
 {
@@ -53,14 +51,14 @@ End Sub
 
 ## CheckedChanged Event
 
-This event is raised when the Checked property is changed. Checked property changes automatically when the CheckedState property is changed. Refer to the following code.
+This event is raised when the [Checked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property is changed and this property changes automatically when the [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) property is changed.
 
 {% tabs %}
 {% highlight c# %}
 
-private void checkBoxAdv2_CheckedChanged(object sender, EventArgs e)
+private void checkBoxAdv1_CheckedChanged(object sender, EventArgs e)
 {
-    if (!checkBoxAdv2.Checked)
+    if (!checkBoxAdv1.Checked)
         MessageBox.Show("Checkbox Unchecked");
     else
         MessageBox.Show("Checkbox checked");
@@ -70,8 +68,8 @@ private void checkBoxAdv2_CheckedChanged(object sender, EventArgs e)
 
 {% highlight vb %}
 
-Private Sub checkBoxAdv2_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
-If Not checkBoxAdv2.Checked Then
+Private Sub checkBoxAdv1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs)
+If Not checkBoxAdv1.Checked Then
 MessageBox.Show("Checkbox checked”)
 Else
 MessageBox.Show("Checkbox checked”)

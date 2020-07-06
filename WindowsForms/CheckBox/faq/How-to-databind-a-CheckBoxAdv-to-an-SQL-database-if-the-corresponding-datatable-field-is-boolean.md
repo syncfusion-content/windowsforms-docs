@@ -1,39 +1,68 @@
 ---
 layout: post
-title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-boolean | WindowsForms | Syncfusion
-description: how to databind a checkboxadv to an sql database if the corresponding datatable field is boolean
+title: How-to-databind-a-CheckBoxAdv-to-an-SQL-database-if-the-corresponding-datatable-field-is-integer | WindowsForms | Syncfusion
+description: how to databind a checkboxadv to an sql database if the corresponding datatable field is integer.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# How to Databind a CheckBoxAdv to an SQL Database if the Corresponding DataTable Field is Boolean
+# How to Databind a CheckBoxAdv to an SQL Database if the Corresponding DataTable Field is Integer
 
-The CheckBoxAdv's BoolValue property can be used to data bind bool values as illustrated below.
+The [CheckBoxAdv's]([CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html)) [BoolValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~BoolValue.html) property can be used to data bind integer values as illustrated below.
 
 {% tabs %}
 {% highlight c# %}
 
-private void Form1_Load(object sender, System.EventArgs e)
+public partial class Form1 : Form
 {
-    this.oleDbDataAdapter1.Fill(this.dataSet11.Table1);
+    public const string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True";
+    public Form1()
+    {
+        InitializeComponent();
+
+        using (SqlConnection sqlConnection = new SqlConnection(connectString))
+        {
+            sqlConnection.Open();
+
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT * FROM [Table]", sqlConnection);
+
+            DataTable dataTable = new DataTable("Table");
+            dataAdapter.Fill(dataTable);
+
+            dataGridView1.DataSource = dataTable;
+            this.checkBoxAdv1.DataBindings.Add("IntValue", dataTable, "integerValue");
+        }
+    }
 }
 
-// Using CheckBoxAdv's BoolValue property for Data binding.
-this.checkBoxAdv1.DataBindings.Add("BoolValue", this.dataSet11.Table1, "CheckValue");
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
-Me.oleDbDataAdapter1.Fill(Me.dataSet11.Table1)
-End Sub
+Public Partial Class Form1
+    Inherits Form
 
-' Using CheckBoxAdv's BoolValue property for Data binding.
-Me.checkBoxAdv1.DataBindings.Add("BoolValue", Me.dataSet11.Table1, "CheckValue")
+    Public Const connectString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True"
+
+    Public Sub New()
+        InitializeComponent()
+
+        Using sqlConnection As SqlConnection = New SqlConnection(connectString)
+            sqlConnection.Open()
+            Dim dataAdapter As SqlDataAdapter = New SqlDataAdapter("SELECT * FROM [Table]", sqlConnection)
+            Dim dataTable As DataTable = New DataTable("Table")
+            dataAdapter.Fill(dataTable)
+            dataGridView1.DataSource = dataTable
+            Me.checkBoxAdv1.DataBindings.Add("IntValue", dataTable, "integerValue")
+        End Using
+    End Sub
+End Class
+
 
 {% endhighlight %}
 {% endtabs %}
 
-![](FAQ_images/Overview_img627.jpeg)
+![DataBinding CheckBoxAdv with Database](FAQ_images/FAQ_img2.png)
+
