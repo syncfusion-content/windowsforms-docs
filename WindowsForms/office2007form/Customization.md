@@ -103,7 +103,7 @@ Me. CaptionBarHeight = 50
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property `Office2007Form.CaptionBarHeightMode` as `SameAlwaysOnMaximize`
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [Office2007Form.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionBarHeightMode.html) as `SameAlwaysOnMaximize`
 
 {% tabs %}
 
