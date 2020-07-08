@@ -64,3 +64,4 @@ End Class
 
 ![CheckBoxAdv binding to Database](FAQ_images/FAQ_img1.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-bind-a-winforms-checkboxadv-to-an-sql-database)
