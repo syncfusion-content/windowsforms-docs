@@ -13,7 +13,7 @@ The Ribbon Backstage will appear when the user clicks on Menu button, it allows 
 
 Backstage structure will have two areas, left side which contain all the items in backstage panel and the right side which shows content of the BackstageTab.
 
-There are three items that can be used in Backstage. They are
+There are three items that can be used in Backtage. They are
 
 *	BackStage Button – A clickable item which acts as a simple button.
 *	BackStageTab – A simple tab, as you click on it, displays its content.
