@@ -1348,10 +1348,11 @@ End Sub
 
 {% endtabs %}
 
-### PreviewDockHints event
+### Change docking side of the dragged window using event
 
-The [PreviewDockHints](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreViewDockHints_EV.html)
-event occurs before displaying the dock hints when drag the windows. The [`PreviewDockHintsEventArgs`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the [`PreviewDockHints`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreViewDockHints_EV.html) event of DockingManager. This event allows  user to restrict the docking sides of the dragged window and it also enables the target window to restrict the sides  where the dragged window can be docked when dragged over it.
+You can restrict the docking sides of the dragged window by handling the [PreviewDockHints](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~PreViewDockHints_EV.html) event and setting the dockable sides to the [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~DockAbility.html) property . You can also allow the particular target window to restrict it's sides to dock the dragged window. This event invoked before displaying the dock hints when drag the windows. 
+
+The [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the `PreviewDockHints` event in `DockingManager`.
 
 * [DockAbility](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs~DockAbility.html) : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
 
@@ -1365,18 +1366,16 @@ event occurs before displaying the dock hints when drag the windows. The [`Previ
 
 {% highlight C# %}
 
-private void DockingManager1_PreviewDockHints(object sender, Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs e)
-{
-   if(e.DraggingTarget == panel2)
-   {
+this.dockingManager1.PreviewDockHints += DockingManager1_PreviewDockHints;
+
+private void DockingManager1_PreviewDockHints(object sender, PreviewDockHintsEventArgs e) {
+   if(e.DraggingTarget == panel2) {
       //Sets the panel 2 to show right dock hint for other windows to dock on right side only.
       e.DockAbility = Syncfusion.Windows.Forms.Tools.DockAbility.Right;
    }
 }
 
 {% endhighlight %}
-
-
 {% highlight VB %}
 
 Private Sub DockingManager1_PreviewDockHints(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs)
@@ -1386,7 +1385,6 @@ Private Sub DockingManager1_PreviewDockHints(ByVal sender As Object, ByVal e As 
 End Sub
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![PreviewDockHints](Docking-Events_images/Docking-Events_img7.png)
