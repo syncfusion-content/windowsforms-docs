@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started | Masked Edit | WindowsForms | Syncfusion
-description: How to add the MaskedEditBox control in a Windows Forms application.
+description: Learn here about how to add the Syncfusion Windows Forms MaskedEditBox control via designer and code and its features.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Getting Started
+# Getting Started with MaskedEditBox control
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and how to add the **MaskedEditBox** control with its basic functionalities.
 
@@ -26,7 +26,7 @@ The following steps describe how to create the **MaskedEditBox** control via des
 
 * Syncfusion.Shared.Base
 
-![Drag and drop MaskedEditBox from toolbox](MaskedEditBox-images/MarkedEditBox-img2.png)
+![Drag and drop MaskedEditBox from toolbox](MaskedEditBox-images/WF-maskededitbox-toolbox.png)
 
 3) Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Mask.html) property for the control. This property controls the behavior of control at run time.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Text Settings | WindowsForms | Syncfusion
-description: Text Settings
+description: Learn here about how set the text values to the Syncfusion Windows Forms MaskedEditControl and its features.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Text Settings
+# Text Settings in MaskedEditBox
 
 This section discusses the text settings of the MaskedEditBox control.
 
-The text associated with the MaskedEditBox control can be set and customized using the below given settings.
+The text associated with the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be set and customized using the below given settings.
 
 
 
@@ -22,7 +22,7 @@ Description</th></tr>
 <tr>
 <td>
 CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
+Gets or sets the case of character as they are typed.It includes the below given options:{{ '_Normal,_' | markdownify }}{{ '_Upper and_' | markdownify }}{{ '_Lower._' | markdownify }}</td></tr>
 <tr>
 <td>
 TextAlign</td><td>
@@ -30,7 +30,7 @@ Indicates how the text should be aligned for edit controls.</td></tr>
 <tr>
 <td>
 SelectedText</td><td>
-Gets / sets the selected text in the MaskedEditBox.</td></tr>
+Gets or sets the selected text in the MaskedEditBox.</td></tr>
 <tr>
 <td>
 HideSelection</td><td>
@@ -71,9 +71,9 @@ Me.maskedEditBox1.DrawActiveWhenDisabled = True
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img12.png)
+![Set the upper character casing text to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img12.png)
 
-![](MaskedEditBox-images/MarkedEditBox-img13.png)
+![Set the small character casing text to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img13.png)
 
 
 The methods associated with the above properties are given below.
@@ -161,11 +161,11 @@ Specifies the overflow indicator tooltip text.</td></tr>
 <tr>
 <td>
 ShowOverflowIndicator</td><td>
-Gets / sets overflow indicator visibility.</td></tr>
+Gets or sets overflow indicator visibility.</td></tr>
 <tr>
 <td>
 ShowOverflowIndicatorToolTip</td><td>
-Gets / sets can show overflow indicator tooltip.</td></tr>
+Gets or sets can show overflow indicator tooltip.</td></tr>
 </table>
 
 {% tabs %}
@@ -188,11 +188,5 @@ Me.maskedEditBox1.ShowOverflowIndicatorToolTip = True
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img14.png)
-
-
-
-A Sample which demonstrates the Text Align and Character Casing features of MaskedEditBox control is available in the below sample installation path.
-
-…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
+![Set the tooltip of overflow indicator to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img14.png)
 
