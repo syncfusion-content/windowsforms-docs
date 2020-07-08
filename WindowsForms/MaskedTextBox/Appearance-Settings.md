@@ -14,7 +14,7 @@ The background settings of the MaskedEditBox control are discussed below.
 
 ### Background color
 
-You can set the background color for the MaskedEditBox control by using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~BackColor.html) property.
+You can set the background color for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control by using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~BackColor.html) property.
 
 <table>
 <tr>
@@ -112,6 +112,4 @@ this.maskedEditBox1.Style = TextBoxExt.theme.Office2016DarkGray;
 {% endtabs %}
 
 ![Set the visual style to WF MaskedEditBox control](MaskedEditBox-images/WF-maskededitbox-style.png)
-
-N> Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
 
