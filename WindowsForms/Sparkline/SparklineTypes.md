@@ -19,7 +19,7 @@ SparkLine control supports three types of Sparklines and the sparkline control m
 
 The line type of spark line represents a set of data points, connected by a line. 
 
-Refer to the following code samples to draw  the line sparkline.
+Refer to the following code samples to draw  the line sparline.
 
 {% tabs %}  
 

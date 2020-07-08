@@ -13,7 +13,7 @@ The following topics under this section discusses about various properties that 
 
 ## Background Colors
 
-EssentialChart lets you customize the background colors of different portions of the chart.
+EssentialChart lets you customize the background colors of differnsent portions of the chart.
 
 ### Outside the Chart Area
 

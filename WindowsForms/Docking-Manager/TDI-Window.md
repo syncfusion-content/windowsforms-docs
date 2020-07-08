@@ -1,13 +1,13 @@
 ---
 layout: post
 title: TDIFunctionality | WindowsForms | Syncfusion
-description: This section explains the TDI-Window functionality in DockingManager
+description: This section explains the TDI-Window behavior, tab group items and closing document windows functionality in DockingManager
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# TDI Window
+# TDI Window in DockingManager
 
 Provides support for adding tabbed document windows in the docking manager. To enable the document mode in docking manager, set the [EnableDocumentMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDocumentMode.html) property to true.
 
@@ -304,6 +304,23 @@ Me.dockingManager1.AllowTabsMoving = false
 
 {% endtabs %}
 
+
+## Closing TDI tab item using mouse middle click
+
+You can close the tab items of `DocumentContainer` and tabbed windows in `DockingManager` by clicking the mouse middle button on the tab item header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CloseTabOnMiddleClick.html) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+ this.dockingManager1.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% highlight VB %}
+
+Me.dockingManager1.CloseTabOnMiddleClick = true
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Show or hide close button 
 
