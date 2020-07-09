@@ -21,30 +21,31 @@ using System.Windows.Forms;
 using Syncfusion.Windows.Forms.PdfViewer;
 namespace PageMouseEventsDemo
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         #region Constructor
         public Form1()
         {
-            InitializeComponent();    
+            InitializeComponent();
 
-			//Load the PDF file.
+            //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-			
+
             //Wire the `PageClicked` event.
             pdfViewerControl1.PageClicked += PdfViewer_PageClicked;
         }
         #endregion
-        #region Events
+		
+        #region Event
         void PdfViewer_PageClicked(object sender, PageClickedEventArgs args)
         {
-			//Find the page number in which the mouse clicks occurred.
-			int currentPage = args.PageIndex; 
-			
-			//Find the mouse position on above the document page
-			System.Drawing.PointF mousePosition = args.Position;         
-        }      
-  # endregion
+            //Find the page number in which the mouse clicks occurred.
+            int currentPage = args.PageIndex;
+
+            //Find the mouse position on above the document page
+            System.Drawing.PointF mousePosition = args.Position;
+        }
+        #endregion
     }
 }
 {% endhighlight %}
@@ -60,30 +61,31 @@ using System.Windows.Forms;
 using Syncfusion.Windows.Forms.PdfViewer;
 namespace PageMouseEventsDemo
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         #region Constructor
         public Form1()
         {
-            InitializeComponent();    
-           
-		   `//Load the PDF file.
+            InitializeComponent();
+
+            //Load the PDF file.
             pdfViewerControl1.Load("../../Data/HTTP Succinctly.pdf");
-			
-           `//Wire the `PageMouseMove` event.
+
+            //Wire the `PageMouseMove` event.
             pdfViewerControl1.PageMouseMove += Pdfviewer_PageMouseMove;
         }
         #endregion
-        #region Events
+		
+        #region Event
         void Pdfviewer_PageMouseMove(object sender, PageMouseMoveEventArgs args)
         {
             //Find the page number in which the mouse clicks occurred.
             int currentPage = args.PageIndex;
-			
+
             //Find the mouse position on above the document page
             System.Drawing.PointF mousePosition = args.Position;
-        }      
-  # endregion
+        }
+        #endregion
     }
 }
 {% endhighlight %}
