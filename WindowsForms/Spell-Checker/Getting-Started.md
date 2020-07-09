@@ -7,7 +7,7 @@ control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Getting started
+# Getting started with SpellCheckerAdv
 
 This section describes how to add a [SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 

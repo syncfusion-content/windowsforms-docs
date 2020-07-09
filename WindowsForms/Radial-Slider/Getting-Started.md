@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | RadialSlider | WindowsForms | Syncfusion
-description: This section describes how to add a radial slider control to a Windows Forms application
+description: This section describes about how to created and add a radial slider control to a Windows Forms application
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---
 
-# Getting started
+# Getting started with RadialSlider
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **RadialSlider** control with its basic functionalities.
 
