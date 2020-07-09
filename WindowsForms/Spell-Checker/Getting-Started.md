@@ -366,30 +366,24 @@ Me.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic"
 
 {% endtabs %}
 
+## SpellCheck for any language(culture) 
 
-## Applying custom dictionary
+You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~culture.html) property and add the dictionaries which contains the basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~Dictionaries.html) collection.
 
-SpellCheckerAdv provides built-in dictionary for English Language and also helps to configure based on your own language, using its Custom Dictionary option. Custom Dictionary can be added using [CustomDictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~CustomDictionaryPath.html) property.
+The following dictionary types are used for spell-checking,
 
-{% tabs %}
+ * Hunspell
+ * Ispell
+ * OpenOffice
 
-{% highlight C# %}
+ N> Refer the [Load your own dictionaries for any language]
+(https://help.syncfusion.com/windowsforms/spell-checker/custom-dictionary#load-your-own-dictionaries-for-any-language) page to know more about how to add and use the Dictionary for any culture to an application.
 
-private static String DEF_CUSTOM_DIC_PATH = Application.CommonAppDataPath + Path.DirectorySeparatorChar + "Custom_Dictionary.dic";
+## Add custom words to dictionary
 
-this.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH;
+If you want to add words that is not available in existing dictionary, you can add it using `CustomDictionary`. This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu.
 
-{% endhighlight %}
-
-{% highlight VB %}
-
-Private static DEF_CUSTOM_DIC_PATH As String = Application.CommonAppDataPath + Path.DirectorySeparatorChar & "Custom_Dictionary.dic"
-
-Me.spellCheckerAdv1.CustomDictionaryPath = DEF_CUSTOM_DIC_PATH
-
-{% endhighlight %}
-
-{% endtabs %}
+N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#adding-custom-dictionary) page to know more about how to add and use the custom dictionary to an application.
 
 ## Configuring VisualStyle
 
