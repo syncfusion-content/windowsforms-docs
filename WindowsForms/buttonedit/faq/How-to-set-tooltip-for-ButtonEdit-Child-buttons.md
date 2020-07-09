@@ -9,24 +9,25 @@ documentation: ug
 
 # How to Set Tooltip for ButtonEdit Child Buttons
 
- To set tooltip for a child button in a ButtonEdit control, drag and drop a ToolTip control from the toolbox. Text for tooltip is set using the extender property of the particular child button.
+ To set tooltip for a child button in a [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control, drag and drop a [SfToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SfToolTip.html) control from the toolbox. Text for tooltip is set using the extender property of the particular child button in Properties window.
 
- ![](FAQ_images/Overview_img108.jpeg) 
+ ![Tooltip for ButtonEdit](FAQ_images/FAQ_img4.png) 
 
-We can also set the Tooltip for ButtonEdit control programmatically using its SetToolTip() method.
+You can also set the Tooltip for ButtonEdit control programmatically using its [SetToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SfToolTip~SetToolTip.html) method of SfToolTip control.
 
 {% tabs %}
 {%highlight c#%}
 
-this.toolTip1.SetToolTip(this.buttonEdit1, "Click here to search");
+toolTip.SetToolTip(buttonEdit1, "This is ButtonEdit toolTip");
 
 {%endhighlight%}
 
 {%highlight vb%}
 
-Me.toolTip1.SetToolTip(Me.buttonEdit1, "Click here to search")
+toolTip.SetToolTip(buttonEdit1, "This is ButtonEdit toolTip")
 
 {%endhighlight%}
 {% endtabs %}
 
- ![](FAQ_images/Overview_img109.jpeg) 
+ ![SetTooltip for ButtonEdit](FAQ_images/FAQ_img5.png) 
+

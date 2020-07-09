@@ -9,19 +9,17 @@ documentation: ug
 
 # ButtonEdit Events
 
-The below events are discussed in the event section.
+The [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
 
 ## ButtonClicked Event
 
-This event is handled whenever a child button of a ButtonEdit control is clicked. It gives _ClickedButton_ member which lets you customize the button that is clicked. 
-
-The below code changes the alignment of the button that is clicked at runtime.
+This event is raised whenever a child button of a [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is clicked. It allows you to customize the child button that is clicked. 
 
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEdit2.ButtonClicked +=new ButtonClickedEventHandler(buttonEdit2_ButtonClicked);
-private void buttonEdit2_ButtonClicked(object sender, ButtonClickedEventArgs e)
+this.buttonEdit1.ButtonClicked +=new ButtonClickedEventHandler(buttonEdit1_ButtonClicked);
+private void buttonEdit1_ButtonClicked(object sender, ButtonClickedEventArgs e)
 {
 //Changing the button alignment of the clicked button
     e.ClickedButton.ButtonAlign = ButtonAlignment.Left;
@@ -31,8 +29,8 @@ private void buttonEdit2_ButtonClicked(object sender, ButtonClickedEventArgs e)
 
 {% highlight vb %}
 
-AddHandler Me.buttonEdit2.ButtonClicked, AddressOf buttonEdit2_ButtonClicked 
-Private Sub buttonEdit2_ButtonClicked(ByVal sender As Object, ByVal e As ButtonClickedEventArgs)
+AddHandler Me.buttonEdit1.ButtonClicked, AddressOf buttonEdit1_ButtonClicked 
+Private Sub buttonEdit1_ButtonClicked(ByVal sender As Object, ByVal e As ButtonClickedEventArgs)
 
 'Changing the button alignment of the clicked button 
 e.ClickedButton.ButtonAlign = ButtonAlignment.Left
@@ -43,7 +41,7 @@ End Sub
 
 ## Border Events
 
-The below table list the events that are raised for border changes.
+The [Border3DStyleChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~Border3DStyleChanged_EV.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~BorderSidesChanged_EV.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~Border3DStyle.html) and [BorderSides](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~BorderSides.html) properties values are changed in [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 <table>
 <tr>
@@ -88,7 +86,7 @@ End Sub
 
 ## ButtonEditChildButton Events
 
-The below table list the events that are available for the ButtonEdit Child Buttons control.
+The below table list the events that are available for the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child Buttons control.
 
 <table>
 <tr>
@@ -131,78 +129,91 @@ Raised when BackColor property of the ButtonEdit control is changed. This event 
 
 ## Click Event
 
-Displaying a Calendar Popup in a ButtonEdit Control
+You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
 
-Using ButtonEdit Child button click event, we can display a CalendarPopup at a specified location. It can be done using the below steps.
-
-Using CalendarPopup
-
-1. Create an instance of CalendarPopup control.
-
+1. Drag and drop TableLayoutPanel and add ButtonEdit control on first row and resize to its fit.
+2. Remove unwanted columns in TableLayoutPanel.
+3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
 
 {% tabs %}
 {% highlight c# %}
 
-private Syncfusion.Windows.Forms.Tools.CalendarPopup calendarPop1;
-calendarPop1=new Syncfusion.Windows.Forms.Tools.CalendarPopup ();
+public partial class Form1 : Form
+{
+    ButtonEditChildButton childButton = new ButtonEditChildButton()
+    {
+         Size = new Size(22, 22),
+         Image = Image.FromFile(@"..\..\Images\threeDots.png"),
+    };
+
+    CalendarPopup calendarPopup = new CalendarPopup()
+    {
+        AutoSize = false,
+        Visible = false,
+        Dock = DockStyle.Fill
+    };
+
+    MonthCalendarAdv monthCalendarAdv = new MonthCalendarAdv();
+    public Form1()
+    {
+        InitializeComponent();
+           
+        childButton.Click += ChildButton_Click;
+
+        calendarPopup.Controls.Add(monthCalendarAdv);
+        buttonEdit1.Buttons.Add(childButton);
+        tableLayoutPanel1.Controls.Add(calendarPopup, 0, 1);
+        monthCalendarAdv.DateSelected += MonthCalendarAdv_DateSelected;
+    }
+}
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private calendarPop1 As Syncfusion.Windows.Forms.Tools.CalendarPopup
-Private calendarPop1 = New Syncfusion.Windows.Forms.Tools.CalendarPopup()
+Public Partial Class Form1
+    Inherits Form
 
-{% endhighlight %}
-{% endtabs %}
+    Private childButton As ButtonEditChildButton = New ButtonEditChildButton() With {
+        .Size = New Size(22, 22),
+        .Image = Image.FromFile("..\..\Images\threeDots.png")
+    }
+    Private calendarPopup As CalendarPopup = New CalendarPopup() With {
+        .AutoSize = False,
+        .Visible = False,
+        .Dock = DockStyle.Fill
+    }
+    Private monthCalendarAdv As MonthCalendarAdv = New MonthCalendarAdv()
 
-2. Declare an instance of MonthCalendarAdv control and add it to the CalendarPopup.
-   
+    Public Sub New()
+        InitializeComponent()
+        childButton.Click += ChildButton_Click
+        calendarPopup.Controls.Add(monthCalendarAdv)
+        buttonEdit1.Buttons.Add(childButton)
+        tableLayoutPanel1.Controls.Add(calendarPopup, 0, 1)
+        monthCalendarAdv.DateSelected += MonthCalendarAdv_DateSelected
+    End Sub
+End Class
 
-{% tabs %}
-{% highlight c# %}
-
-private Syncfusion.Windows.Forms.Tools.MonthCalendarAdv MonthCal;
-MonthCal=new Syncfusion.Windows.Forms.Tools.MonthCalendarAdv();
-this.MonthCal.AutoSize = false;
-calendarPop1.AutoSize = false;
-calendarPop1.Size = new Size(200, 200);
-this.MonthCal.Size = new Size(200, 200);
-this.calendarPop1.Controls.Add(MonthCal);
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Private MonthCal As Syncfusion.Windows.Forms.Tools.MonthCalendarAdv
-Private MonthCal = New Syncfusion.Windows.Forms.Tools.MonthCalendarAdv()
-Me.MonthCal.AutoSize = False
-calendarPop1.AutoSize = False
-calendarPop1.Size = New Size(200, 200)
-Me.MonthCal.Size = New Size(200, 200)
-Me.calendarPop1.Controls.Add(MonthCal)
 
 {% endhighlight %}
 {% endtabs %}
 
 3. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
-   
 
 {% tabs %}
 {% highlight c# %}
 
-private void buttonEditChildButton1_Click(object sender, System.EventArgs e)
+private void ChildButton_Click(object sender, EventArgs e)
 {
-   this.calendarPop1.Visible =true;
-   this.calendarPop1.ShowPopup (new Point(200,200));
+    calendarPopup.Visible = true;
 }
 
 {% endhighlight %}
 {% highlight vb %}
 
-Private Sub buttonEditChildButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
-Me.calendarPop1.Visible = True
-Me.calendarPop1.ShowPopup(New Point(200, 200))
+Private Sub ChildButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+    calendarPopup.Visible = True
 End Sub
 
 {% endhighlight %}
@@ -214,22 +225,24 @@ End Sub
 {% tabs %}
 {% highlight c# %}
 
-this.MonthCal.DateSelected+=new EventHandler(MonthCal_DateSelected);
-private void MonthCal_DateSelected(object sender,System.EventArgs e)
+private void MonthCalendarAdv_DateSelected(object sender, EventArgs e)
 {
-   this.buttonEdit1.TextBox.Text= this.MonthCal.Value.ToString();
+    buttonEdit1.TextBox.Text = monthCalendarAdv.Value.ToString();
+    calendarPopup.Visible = false;
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Me.MonthCal.DateSelected+= New EventHandler(MonthCal_DateSelected)
-Private Sub MonthCal_DateSelected(ByVal sender As Object, ByVal e As System.EventArgs)
-Me.buttonEdit1.TextBox.Text = Me.MonthCal.Value.ToString()
+Private Sub MonthCalendarAdv_DateSelected(ByVal sender As Object, ByVal e As EventArgs)
+    buttonEdit1.TextBox.Text = monthCalendarAdv.Value.ToString()
+    calendarPopup.Visible = False
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img104.jpeg) 
+![MonthCalendar in ButtonEdit](ButtonEditEvents_images/ButtonEditEvents_img1.png)
+
+[View Sample in GitHub]()
