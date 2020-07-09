@@ -19,7 +19,7 @@ Please find more details regarding how to install the nuget packages in windows 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
 
-# Creating simple application with XPTaskBar
+## Creating simple application with XPTaskBar
 
 You can create the Windows Forms application with XPTaskBar control as follows:
 
