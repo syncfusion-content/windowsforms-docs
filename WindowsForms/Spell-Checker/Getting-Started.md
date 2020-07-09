@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | SpellCheckerAdv | WindowsForms | Syncfusion
-description: gettingstarted
+title: Getting Started with wpf SpellCheckerAdv control | Syncfusion
+description: This section describes about how to create a WPF SpellCheckerAdv and how to spell check the text using it.
 platform: WindowsForms
 control: SpellCheckerAdv
 documentation: ug
@@ -368,7 +368,7 @@ Me.spellCheckerAdv1.DictionaryPath = "Syncfusion_en_us.dic"
 
 ## SpellCheck for any language(culture) 
 
-You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~culture.html) property and add the dictionaries which contains the basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~Dictionaries.html) collection.
+You can spell check any language(culture) by adding the respective culture to the [SpellCheckerAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~culture.html) property and add the dictionaries which contains the basic word file and grammar file to the [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~Dictionaries.html) collection.
 
 The following dictionary types are used for spell-checking,
 
