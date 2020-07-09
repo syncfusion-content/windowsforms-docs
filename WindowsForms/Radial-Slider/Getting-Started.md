@@ -178,6 +178,52 @@ Me.radialSlider1.SliderDivision = 5
 
 ![Windows Forms RadialSlider showing division between the range](Getting-Started_images/RadialSlider_division.png)
 
+## Text formatting
+
+You can customize the text format for specific or all sliders by handling the [DrawText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~DrawText_EV.html) event. You can change the content, foreground and font of the slider intervals, selected slider or selected value by using the [DrawTextEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~Text.html), [DrawTextEventArgs.ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~ForeColor.html) and [DrawTextEventArgs.Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~Font.html) properties. You can differentiate the slider intervals, selected slider and selected value by using the [DrawTextEventArgs.TextType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~TextType.html) enum property.
+
+{% tabs %}
+{% highlight C# %}
+
+RadialSlider radialSlider = new RadialSlider();
+radialSlider.DrawText += RadialSlider_DrawText;
+radialSlider.MinimumValue = 0;
+radialSlider.MaximumValue = 100;
+
+private void RadialSlider_DrawText(object sender, RadialSlider.DrawTextEventArgs e) {
+    int Value = int.Parse(e.Text);
+    e.Text += "°C";
+    if (e.TextType == TextType.Interval) {                
+        if (Value <= 33) {
+            e.Font = new Font("Arial", 8);
+            e.ForeColor = Brushes.Green;
+        }
+        else if (Value > 33 && Value <= 66) {
+            e.Font = new Font("Courier", 10);
+            e.ForeColor = Brushes.Gold;
+        }
+        else {
+            e.Font = new Font("Georgia", 10);
+            e.ForeColor = Brushes.Red;
+        }
+    }
+    else if(e.TextType== TextType.Pointer) {
+        e.Font = new Font("Segoe UI Black", 8);
+        e.ForeColor = Brushes.Blue;
+    }
+    else if (e.TextType == TextType.Value) {
+        e.Font = new Font("MoolBoran", 12);
+        e.ForeColor = Brushes.DeepPink;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![RadialSlider with custom text formatting](Getting-Started_images/LabelEdit.gif)
+
+N> [View Sample in GitHub]()
+
 ## Slider Style
 
 The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderStyle.html) property.
