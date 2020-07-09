@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Getting started for WindowsForms XPTaskBar
+# Getting started for Windows Forms XPTaskBar
 
 This section describes how to add `XPTaskBar` control in a Windows Forms application and overview of its basic functionalities.
 
@@ -42,19 +42,19 @@ The XPTaskBar control can be added to the application by dragging it from the to
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![](Overview_images/XPTaskBar_Img1.png)
+![Adding control via designer](Overview_images/XPTaskBar_Img1.png)
 
 **Adding XPTaskBarBox**
 
 To add XPTaskBarBox, click on `Add TaskBarBox` in Smart Tag of XPTaskBar in design view.
 
-![](Overview_images/XPTaskBar_Img2.png)
+![Adding XPTaskBarBox](Overview_images/XPTaskBar_Img2.png)
 
 **Adding XPTaskBarItems**
 
 XPTaskBarItems can be added to XPTaskBarBox using `Items` collection, in Smart Tag of XPTaskBarBox in design view.
 
-![](Overview_images/XPTaskBar_Img4.png)
+![Adding XPTaskBarItems](Overview_images/XPTaskBar_Img4.png)
 
 ## Adding control manually using code
 
@@ -149,7 +149,7 @@ Me.xpTaskBar3.Controls.Add(Me.xpTaskBarBox3)
 
 {% endtabs %}
 
-![](Overview_images/XPTaskBar_Img3.png)
+![Adding XPTaskBarBox](Overview_images/XPTaskBar_Img3.png)
 
 **Adding XPTaskBarItems**
 
@@ -175,4 +175,4 @@ Me.xpTaskBarBox1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPTaskBarItem
 
 {% endtabs %}
 
-![](Overview_images/XPTaskBar_Img5.png)
+![Adding XPTaskBarItems](Overview_images/XPTaskBar_Img5.png)
