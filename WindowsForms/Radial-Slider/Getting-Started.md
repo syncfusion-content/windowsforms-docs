@@ -220,9 +220,9 @@ private void RadialSlider_DrawText(object sender, RadialSlider.DrawTextEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![RadialSlider with custom text formatting](Getting-Started_images/LabelEdit.gif)
+![RadialSlider with custom text formatting for sliders](Getting-Started_images/LabelEdit.gif)
 
-N> [View Sample in GitHub]()
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winforms-radial-slider-examples/tree/master/Samples/Text_Formatting)
 
 ## Slider Style
 
