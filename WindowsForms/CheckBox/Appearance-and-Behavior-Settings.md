@@ -13,7 +13,7 @@ This section discusses the appearance and behavior settings of the [CheckBoxAdv]
 
 ## Appearance Settings
 
-### FocusRectangle in CheckBoxAdv
+### DrawFocusRectangle
 
 You can show or hide the focus rectangle of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control using  [DrawFocusRectangle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~DrawFocusRectangle.html) property.
 

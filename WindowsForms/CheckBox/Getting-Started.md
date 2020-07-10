@@ -69,36 +69,9 @@ Me.Controls.Add(checkBoxAdv)
 {% endhighlight %}
 {% endtabs %}
 
+## CheckBox State
 
-## Customizing Text and Border of CheckBoxAdv
-
-You can customize the text and border style of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using [Font](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Font.html) and [BorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BorderStyle.html) properties.
-
-{% tabs %}
-{% highlight c# %}
-
-this.checkBoxAdv1.Text = "checkBoxAdv1";
-this.checkBoxAdv1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-this.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.checkBoxAdv1.Text = "checkBoxAdv1"
-Me.checkBoxAdv1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CByte((0)))
-Me.checkBoxAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-
-{% endhighlight %}
-{% endtabs %}
-
-![Windows forms CheckBoxAdv showing control](Overview_images/CheckBoxAdv_control.png)
-
-N> The [BorderSingle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BorderSingle.html) style property of CheckBoxAdv works only when [BorderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~BorderStyle.html) is FixedSingle.  
-
-## Checked or UnChecked state of CheckBoxAdv
-
-You can get or set the current checked status of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) property. The default value of this property is `false`.
+You can get or set the current checked status of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) or [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) property. The default value of Checked property is `false` and CheckState property is `Unchecked`.
 
 {% tabs %}
 {% highlight c# %}
