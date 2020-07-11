@@ -2,7 +2,7 @@
 layout: post
 title: PDF Rendering Engines | Syncfusion
 description: This section explains about the PDF rendering engines that are used in the PDF Viewer to render the PDF pages and how it works.
-platform: WinForms
+platform: windowsforms
 control: PDF Viewer
 documentation: ug
 ---

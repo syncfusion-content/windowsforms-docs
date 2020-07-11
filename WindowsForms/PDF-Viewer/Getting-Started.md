@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms PDF Viewer
 
 ## Adding reference to PdfViewerControl and dependent assemblies
 
