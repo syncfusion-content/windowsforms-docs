@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: This section describes about how to create PdfViewer control in Windows Forms application.
+title: Getting Started with PDF Viewer | Windows Forms | Syncfusion
+description: This section describes about the steps to create PDF Viewer in WinForms application from designer as well as manually from code.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
@@ -29,24 +29,14 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 
 ### Adding in designer
 
-
 1) Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
    
    ![Windows forms pdfviewer drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
-
-
-
-
-2) Drag the PdfViewerControl from the toolbox onto the form.
-
-
-
-   Appearance and behavior related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
+2) Drag the PdfViewerControl from the toolbox onto the form. Appearance and behavior related aspects of the PdfViewerControl can be controlled by setting the appropriate properties through the properties grid. 
 
    ![Windows forms pdfviewer displays properties window of control](Getting-Started_images/Getting-Started_img2.png)
-   
-
+ 
 3) This will add the instance 'pdfViewerControl1' to the Designer cs file. The PDF can be loaded in the Form cs file using the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. 
 
 {% tabs %}
@@ -80,8 +70,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 
 {% endhighlight %}
 {% endtabs %}
-		
-		
+
 2) Create PdfViewerControl instance and load the PDF
 
 {% tabs %}
@@ -110,8 +99,8 @@ Controls.Add(pdfViewerControl1)
 
 {% endhighlight %}
 {% endtabs %}
-   
-   Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
+
+Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
 
 ## Appearance and Structure of the Control
 
@@ -123,8 +112,6 @@ The following screenshot depicts different sections of the PdfViewerControl.
 ### Toolbar
 
 ![Windows forms pdfviewer displays the toolbar](Getting-Started_images/Getting-Started_img4.png)
-
-
 
 1. Open file
 2. Bookmark 
