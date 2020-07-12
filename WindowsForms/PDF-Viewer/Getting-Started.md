@@ -27,6 +27,8 @@ system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releasever
 
 ## Adding PdfViewerControl to an Application
 
+From v16.2.0x onwards, PDF Viewer uses PDFium as a default rendering engine to render the PDF pages, which is a more robust and promising rendering engine. Refer to this [link](https://help.syncfusion.com/windowsforms/pdf-viewer/pdf-rendering-engines) for more details.
+
 ### Adding in designer
 
 1) Open your form in the designer. Add the Syncfusion controls to your .NET toolbox in Visual Studio if you haven't done so already (the install would have automatically done this unless you selected not to complete toolbox integration during installation).
