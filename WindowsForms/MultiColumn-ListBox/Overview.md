@@ -15,7 +15,7 @@ The GridList control provides a very rich way to display a list of items in mult
 
 **Data populating** - Supports populating data from any kind of the data source.
 
-**Styling** - Provides extensively supports customizing the cell styles of grid.
+**Styling** - Extensive support for customizing the cell style of grid.
 
 **Selection** - Provides support for single and multiple row selections.
 
@@ -26,10 +26,6 @@ The GridList control provides a very rich way to display a list of items in mult
 **Visual styles** - Provides support varies types of visual styles to provide the look and feel for the grid.
 
 **Virtual mode** - Provides support to loading the data on-demand with high performance in grid. 
-
-**Appearance** - Provides support to set the background color and image of the control.
-
-**Line settings** - Provides option to show or hide the horizontal and vertical grid lines of the control and also support to change the horizontal and vertical grid line color.
 
 **Formulas support** - Provides support entering the algebraic, arithmetic expression using formulas.
 
