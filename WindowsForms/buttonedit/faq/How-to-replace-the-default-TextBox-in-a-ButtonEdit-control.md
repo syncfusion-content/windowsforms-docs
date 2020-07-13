@@ -17,6 +17,20 @@ You can replace the default TextBox of the [ButtonEdit](https://help.syncfusion.
 
 2. From the property window of ButtonEdit, select the PercentTextBox to be the TextBox control of the ButtonEdit control. 
 
+{% tabs %}
+{%highlight c#%}
+
+buttonEdit.TextBox = new PercentTextBox();
+
+{%endhighlight%}
+
+{%highlight vb%}
+
+buttonEdit.TextBox = new PercentTextBox()
+
+{%endhighlight%}
+{% endtabs %}
+
 ![Adding PercentageTextBox](FAQ_images/FAQ_img2.png) 
 
 3. From the same properties window, you can set the percent properties for the ButtonEdit control.

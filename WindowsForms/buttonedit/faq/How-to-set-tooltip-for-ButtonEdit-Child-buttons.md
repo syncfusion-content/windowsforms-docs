@@ -18,13 +18,13 @@ You can also set the Tooltip for ButtonEdit control programmatically using its [
 {% tabs %}
 {%highlight c#%}
 
-toolTip.SetToolTip(buttonEdit1, "This is ButtonEdit toolTip");
+toolTip.SetToolTip(childButton, "Child button toolTip");
 
 {%endhighlight%}
 
 {%highlight vb%}
 
-toolTip.SetToolTip(buttonEdit1, "This is ButtonEdit toolTip")
+toolTip.SetToolTip(childButton, "Child button toolTip")
 
 {%endhighlight%}
 {% endtabs %}

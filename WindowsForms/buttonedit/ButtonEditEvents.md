@@ -13,27 +13,24 @@ The [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusi
 
 ## ButtonClicked Event
 
-This event is raised whenever a child button of a [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is clicked. It allows you to customize the child button that is clicked. 
+[ButtonClicked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~ButtonClicked_EV.html) event is raised whenever [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control is clicked. It allows you to get the child button that is clicked. 
 
 {% tabs %}
 {% highlight c# %}
 
-this.buttonEdit1.ButtonClicked +=new ButtonClickedEventHandler(buttonEdit1_ButtonClicked);
-private void buttonEdit1_ButtonClicked(object sender, ButtonClickedEventArgs e)
+buttonEdit.ButtonClicked += ButtonEdit_ButtonClicked;
+private void ButtonEdit_ButtonClicked(object sender, ButtonClickedEventArgs args)
 {
-//Changing the button alignment of the clicked button
-    e.ClickedButton.ButtonAlign = ButtonAlignment.Left;
+    args.ClickedButton.ButtonAlign = ButtonAlignment.Left;
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-AddHandler Me.buttonEdit1.ButtonClicked, AddressOf buttonEdit1_ButtonClicked 
-Private Sub buttonEdit1_ButtonClicked(ByVal sender As Object, ByVal e As ButtonClickedEventArgs)
-
-'Changing the button alignment of the clicked button 
-e.ClickedButton.ButtonAlign = ButtonAlignment.Left
+buttonEdit.ButtonClicked += ButtonEdit_ButtonClicked
+Private Sub ButtonEdit_ButtonClicked(ByVal sender As Object, ByVal args As ButtonClickedEventArgs)
+    args.ClickedButton.ButtonAlign = ButtonAlignment.Left
 End Sub
 
 {% endhighlight %}
@@ -86,7 +83,7 @@ End Sub
 
 ## ButtonEditChildButton Events
 
-The below table list the events that are available for the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child Buttons control.
+The below table list the events that are available for the [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control.
 
 <table>
 <tr>
@@ -134,6 +131,7 @@ You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/cre
 1. Drag and drop TableLayoutPanel and add ButtonEdit control on first row and resize to its fit.
 2. Remove unwanted columns in TableLayoutPanel.
 3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
+4. Add the CalendarPopup control in second row.
 
 {% tabs %}
 {% highlight c# %}

@@ -261,7 +261,7 @@ Me.buttonEditChildButton1.KeepFocusRectangle = True
 
 ## Hide Child Button in ButtonEdit
 
-You can hide the child buttons of [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Control by using [HideButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~HideButton.html) method.
+You can hide the child buttons of [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control by using [HideButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~HideButton.html) method.
 
 <table>
 <tr>
