@@ -1,17 +1,15 @@
 ---
 layout: post
 title: Image-Settings | WindowsForms | Syncfusion
-description: image settings
+description: This section gives the detailed description about how to use the image in CheckBoxAdv control for mouse hover and each CheckBox state. 
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Image Settings
+# Image Settings of CheckBoxAdv
 
-The image settings of the CheckBoxAdv control has been discussed in this section.
-
-Images can be set to the CheckBoxAdv when it is in the Checked, Unchecked or Indeterminate state. The CheckBoxAdv allows us to set the following properties in order to display images.
+You can set the images to the [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) when it is in the Checked, Unchecked or Indeterminate state using [ImageCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ImageCheckBox.html),[ImageCheckBoxSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ImageCheckBoxSize.html),[CheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~CheckedImage.html),[UncheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~UncheckedImage.html),[IndeterminateImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~IndeterminateImage.html),[DisabledImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~DisabledImage.html) and [StretchImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~StretchImage.html) properties.
 
 <table>
 <tr>
@@ -48,7 +46,7 @@ StretchImage</td><td>
 Indicates whether the state images of the CheckBox are stretched.</td></tr>
 </table>
 
-N> Before setting the images, make sure the ImageCheckBox property is set to 'True'.
+N> Before setting the images, make sure the [ImageCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ImageCheckBox.html) property is set to 'True'.
 
 {% tabs %}
 {% highlight c# %}
@@ -80,9 +78,9 @@ Me.checkBoxAdv1.StretchImage = False
 
 ![Windows forms CheckBoxAdv images displayed in control when it is in checked](Overview_images/CheckBoxAdv_image.jpeg)
 
-## Images Displayed during Mouse Hover
+## Images displayed during Mouse Hover
 
-Images can also be set when the mouse is hovered over the CheckBoxAdv control.
+You can set the image in [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control when the mouse is hovered over it using [MouseOverCheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~MouseOverCheckedImage.html),[MouseOverIndetermImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~MouseOverIndetermImage.html) and [MouseOverUncheckedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~MouseOverUncheckedImage.html) properties.
 
 <table>
 <tr>
@@ -95,7 +93,7 @@ MouseOverCheckedImage</td><td>
 Gets or sets the image used to draw the CheckBox when checked and mouse over.</td></tr>
 <tr>
 <td>
-MouseOverDisabledImage</td><td>
+MouseOverIndetermImage</td><td>
 Gets or sets the image used to draw the CheckBox when indeterminate and mouse over.</td></tr>
 <tr>
 <td>
