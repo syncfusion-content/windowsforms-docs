@@ -1,18 +1,17 @@
 ---
 layout: post
 title: Text-Settings | WindowsForms | Syncfusion
-description: text settings
+description: This section gives the detailed description about customizing the text feature of CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Text Settings
+# Text Settings of CheckBoxAdv
 
-This section discusses the text settings of the CheckBoxAdv.
+This section discusses the text settings of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html).
 
-Text in the CheckBoxAdv can be shadowed and wrapped as illustrated below.
-
+Text in the CheckBoxAdv can be shadowed and wrapped by using [TextShadow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~TextShadow.html), [ShadowColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ShadowColor.html), [ShadowOffset](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~ShadowOffset.html) and [WrapText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckRadioBase~WrapText.html) properties.
 
 <table>
 <tr>

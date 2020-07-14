@@ -43,22 +43,21 @@ In that situation, you need to add the following steps to consume the PDFium ren
 
 {% tabs %}
 {% highlight c# %}
-using System.Windows;
+using Syncfusion.Windows.Forms.PdfViewer;
+using System.Windows.Forms;
+
 namespace PdfViewerDemo
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form1 : Form
     {
-        # region Constructor
-        public MainWindow()
+        public Form1()
         {
-            InitializeComponent();
+            //Set the reference path.
             pdfViewer.ReferencePath = @"D:\ThirdPartyBinaries\";
+
+            //Load the PDF.
             pdfViewer.Load("Sample.pdf");
         }
-        #endregion
     }
 }
 {% endhighlight %}
@@ -84,7 +83,7 @@ N> The recommended PDF rendering engine is PDFium.
 using Syncfusion.Windows.Forms.PdfViewer;
 using System.Windows.Forms;
 
-namespace TextExtractionDemo
+namespace PdfViewerDemo
 {
     public partial class Form1 : Form
     {
