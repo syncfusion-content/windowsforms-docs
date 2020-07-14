@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Rendering Engines | Syncfusion
+title: PDF Rendering Engines | Windows Forms | Syncfusion
 description: This section explains about the PDF rendering engines that are used in the PDF Viewer to render the PDF pages and how it works.
 platform: windowsforms
 control: PDF Viewer
@@ -81,24 +81,21 @@ N> The recommended PDF rendering engine is PDFium.
 
 {% tabs %}
 {% highlight c# %}
-using System.Windows;
-using Syncfusion.Windows.PdfViewer;
+using Syncfusion.Windows.Forms.PdfViewer;
+using System.Windows.Forms;
 
-namespace PdfViewerDemo
+namespace TextExtractionDemo
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form1 : Form
     {
-        # region Constructor
-        public MainWindow()
+        public Form1()
         {
-            InitializeComponent();
+            //Set the rendering engine as `SfPdf`.
             pdfViewer.RenderingEngine = PdfRenderingEngine.SfPdf;
+
+            //Load the PDF.
             pdfViewer.Load("Sample.pdf");
         }
-        #endregion
     }
 }
 {% endhighlight %}
