@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Databind a CheckBoxAdv to Integer Field in SQL Database
 
-The [CheckBoxAdv's]([CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html)) [BoolValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~BoolValue.html) property can be used to data bind integer values as illustrated below.
+The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) [IntValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~IntValue.html) property can be used to data bind to integer values as illustrated below.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,6 +65,8 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+
+N > The field binded to IntValue poperty of CheckBoxAdv should contain -1 or 0 or 1 as value. 
 
 ![DataBinding CheckBoxAdv with Database](FAQ_images/FAQ_img2.png)
 
