@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Design Time Features | WindowsForms | Syncfusion
-description: Design Time Features
+description: This section gives detailed description on design time features to customize the settings of ButtonEdit control.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -9,22 +9,14 @@ documentation: ug
 
 # Design Time Features
 
-ButtonAdv control has Smart Tag, which lets you set the properties easily.
+[ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control has Smart Tag, which lets you customize the properties easily.
 
-Smart Tag Options
+![DesignTime features of ButtonEdit](DesignTime_Features_images/DesignTime_Features_img1.png) 
 
-![](Overview_images/Overview_img70.jpeg) 
-
-
-The various settings through this window is as follows.
+The various settings that can be customized by this window are as follows.
 
 * Name - Lets you edit the control text.
 * UseVisualStyle - Enables visual style settings.
-* KeepFocusRectangle - Specifies whether to show focus rectangle or not.
-* Appearance - Lets you to set the Visual style for the control.
-* ButtonType - Lets you to set the button type.
-* BorderStyles - Lets you to set the border styles for the control.
+* BorderStyle - Lets you to set the border styles for the control.
 * Image - Lets you to set the image for the ButtonAdv control.
-* ImageAlign - Sets the image alignment within the control.
-* Text - Sets the text for button.
-* Text Alignment - Sets the alignment of the text.
+* ButtonsCollection - Opens ButtonEditChildButton Collection Editor window to add ButtonEditChildButtons.
