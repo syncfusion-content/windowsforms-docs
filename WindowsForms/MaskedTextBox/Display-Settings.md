@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Display Settings | WindowsForms | Syncfusion
-description: Display Settings
+description: Learn here about how to set the display settings of the Syncfusion Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Display Settings
+# Display Settings in MaskedEditBox
 
-This section discusses the display settings of the MaskedEditBox control.
+This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
 
 ## Separators
 
-The user data can be displayed along with separators at run time for specifying date, time, decimals and thousands. It is not 
-required to type separators at run time. Separators can be specified in the mask character itself.
+You can display the data along with separators specifying date, time, decimals and thousands at run time by using [DateSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DateSeparator.html), [TimeSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~TimeSeparator.html), [DecimalSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DecimalSeparator.html) and [ThousandSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ThousandSeparator.html) properties. It is not required to type separators at run time. Separators can be specified in the mask character itself.
+
 
 <table>
 <tr>
@@ -67,23 +67,23 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img6.png)
+![Set date separator to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img6.png)
 
 
-![](MaskedEditBox-images/MarkedEditBox-img7.png)
+![Set decimal separator to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img7.png)
 
 
-![](MaskedEditBox-images/MarkedEditBox-img8.png)
+![Set thousand separator to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img8.png)
 
 
 
-![](MaskedEditBox-images/MarkedEditBox-img9.png)
+![Set time separator to WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img9.png)
 
 
 
 ## Cursor position
 
-The cursor position of the MaskedEditBox control can be specified using the options provided by the following properties.
+You can set the cursor position of the MaskedEditBox control by using [PositionAt](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAt.html) and [PositionAtDecimal](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAtDecimal.html) properties.
 
 <table>
 <tr>
@@ -136,9 +136,9 @@ Specifies the data groups that can be used for splitting up the text.</td></tr>
 </table>
 
 
-The DataGroups property of the MaskedEditBox defines a virtual grouping of the mask value. Each group is defined by aMaskedEditDataGroupInfo object (the DataGroups property is a collection of these objects).
+The [DataGroups](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DataGroups.html) property of the MaskedEditBox defines a virtual grouping of the mask value. Each group is defined by a [MaskedEditDataGroupInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditDataGroupInfoCollection~Add.html) object (the DataGroups property is a collection of these objects).
 
-A data group is defined by its GroupLength property. For example, if the mask is given as follows,
+A data group is defined by its `GroupLength` property. For example, if the mask is given as follows,
 
 ###.###.###.###
 
@@ -152,7 +152,7 @@ Group3 ###.
 
 Group4 ###
 
-The DataAlignment property of the MaskedEditDataGroupInfo object specifies the type of alignment to be used for the group. The data alignment behavior will be defined as given below:
+The `DataAlignment` property of the `MaskedEditDataGroupInfo` object specifies the type of alignment to be used for the group. The data alignment behavior will be defined as given below:
 
 * Left : All the filled-in mask fields in the group will be grouped to the left-most positions.
 * Right : All the filled-in mask fields in the group will be grouped to the right-most positions.
@@ -160,7 +160,7 @@ The DataAlignment property of the MaskedEditDataGroupInfo object specifies the
 
 The group alignments will only be enforced after the control has lost focus.
 
-The MaskedEditDataGroupInfo.Value property can be used to get the value of a group without any parsing. For example, if the mask is given as follows,
+The `MaskedEditDataGroupInfo.Value` property can be used to get the value of a group without any parsing. For example, if the mask is given as follows,
 
 (###) - ### #### Extent ####
 
@@ -241,7 +241,7 @@ Indicates the character to display for password input for single-line edit contr
 </table>
 
 
-The MaskedEditBox.Sequentially property indicates whether the control can sequentially display mask characters. After setting the Sequentially property to 'True', you can use the PasswordChar property in order to set the character, that is to be displayed as a substitute for the user input.
+The [MaskedEditBox.Sequentially](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Sequentially.html) property indicates whether the control can sequentially display mask characters. After setting the `Sequentially` property to 'True', you can use the [PasswordChar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.passwordchar?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_PasswordChar) property in order to set the character, that is to be displayed as a substitute for the user input.
 
 {% tabs %}
 
@@ -266,10 +266,5 @@ End Sub
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img10.png)
+![Set the character as substitutes in WF MaskedEditBox control](MaskedEditBox-images/MarkedEditBox-img10.png)
 
-
-A Sample which demonstrates the PasswordChar property of MaskedEditBox control is available in the below sample installation 
-path.
-
-…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Appearance Settings | WindowsForms | Syncfusion
-description: Appearance Settings
+description: Learn here about how to set the different appearance of the Syncfusion Windows Forms MaskedEditBox control.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 --- 
-# Appearance Settings
+# Appearance Settings in MaskedEditBox
 
 ## Background settings
 
@@ -14,7 +14,7 @@ The background settings of the MaskedEditBox control are discussed below.
 
 ### Background color
 
-The background color of the control can be set using the properties given below.
+You can set the background color for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control by using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~BackColor.html) property.
 
 <table>
 <tr>
@@ -43,12 +43,10 @@ Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img15.png)
-
-Figure 573: Background Color set for MaskedEditBox
+![Set the background color to WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img15.png)
 
 
-The method associated with the above property is given below.
+You can also reset the background color for MaskedEditBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ResetBackColor.html) method.
 
 <table>
 <tr>
@@ -61,18 +59,13 @@ ResetBackColor</td><td>
 Resets the BackColor property to its default value.</td></tr>
 </table>
 
-
-A sample which demonstrates the Background Settings of MaskedEditBox control is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
-
-##  Foreground settings
+## Foreground settings
 
 The foreground settings of the MaskedEditBox control are discussed below.
 
 ### Foreground color
 
-The foreground color of the control can be set using the properties given below.
+You can set the foreground color for MaskedEditBox Control by using the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 <table>
 <tr>
@@ -102,12 +95,21 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img16.png)
+![Set the fore color to the text of WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img16.png)
 
 ## Visual style
 
-Please refer the [TextBoxExt Visual style](/windowsforms/TextBoxExt/Appearance-Settings) to set themes for CurrencyTextBox.
+You can set the visual style to the MaskedEditBox control by using [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Style.html) property.
 
-A Sample which demonstrates the Foreground Settings of MaskedEditBox control is available in the below sample installation path.
+{% tabs %}
 
-…\System Drive:\Users\Username\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Editor Controls\Editor Controls\CS
+{% highlight C# %}
+
+this.maskedEditBox1.Style = TextBoxExt.theme.Office2016DarkGray;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the visual style to WF MaskedEditBox control](MaskedEditBox-images/WF-maskededitbox-style.png)
+

@@ -259,8 +259,36 @@ Me.buttonEditChildButton1.KeepFocusRectangle = True
 
 ![Focusing child button in ButtonEdit](Overview_images/Overview_img101.jpeg) 
 
-{% seealso %}
+## Hide Child Button in ButtonEdit
 
-[How to hide a child button of a ButtonEdit control?](http://help.syncfusion.com/windowsforms/buttonedit/faq/how-to-hide-a-child-button-of-a-buttonedit-control)
+You can hide the child buttons of [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control by using [HideButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~HideButton.html) method.
 
-{% endseealso %}
+<table>
+<tr>
+<th>
+Method</th><th>
+Description</th></tr>
+<tr>
+<td>
+HideButton</td><td>
+Indicates whether a child button is hidden or visible. The parameters are,
+buttonIndex - Specifies the index of the button.
+visible - Specifies the visibility of the button. 
+It can be true or false. 
+If true, the button will be visible and if false, 
+the button will not be visible.</td></tr>
+</table>
+
+{% tabs %}
+{%highlight c#%}
+
+this.buttonEdit1.HideButton(0, false);
+
+{%endhighlight%}
+
+{%highlight vb%}
+
+Me.buttonEdit1.HideButton(0, False)
+
+{%endhighlight%}
+{% endtabs %}
