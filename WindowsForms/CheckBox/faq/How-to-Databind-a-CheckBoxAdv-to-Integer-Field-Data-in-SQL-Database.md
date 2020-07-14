@@ -16,7 +16,8 @@ The [CheckBoxAdv's]([CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Sy
 
 public partial class Form1 : Form
 {
-    public const string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True";
+    public static string dataBasePath = Path.GetFullPath("..\\..\\Database1.mdf");
+    public  string connectString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + dataBasePath + ";Integrated Security=True";
     public Form1()
     {
         InitializeComponent();
@@ -44,7 +45,8 @@ public partial class Form1 : Form
 Public Partial Class Form1
     Inherits Form
 
-    Public Const connectString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\NiranjanKumarGopalan\source\repos\CheckBoxAdv_DataBinding_Boolean\Database1.mdf;Integrated Security=True"
+    Public Shared dataBasePath As String = Path.GetFullPath("..\..\Database1.mdf")
+    Public connectString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & dataBasePath & ";Integrated Security=True"
 
     Public Sub New()
         InitializeComponent()
