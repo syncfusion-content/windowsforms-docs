@@ -41,7 +41,7 @@ Create new Windows Forms Project in Visual Studio to display [ButtonEdit](https:
 
 In order to add [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control manually, do the below steps,
 
-1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project.
+1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) to the project.
 
 2)	Create the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control instance and add it to the Form.
 
