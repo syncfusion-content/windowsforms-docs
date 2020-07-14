@@ -66,7 +66,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-N > The field binded to IntValue poperty of CheckBoxAdv should contain -1 or 0 or 1 as value. 
+N > The field binded to IntValue property of CheckBoxAdv should contain -1 or 0 or 1 as value. 
 
 ![DataBinding CheckBoxAdv with Database](FAQ_images/FAQ_img2.png)
 
