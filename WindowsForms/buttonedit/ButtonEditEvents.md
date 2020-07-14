@@ -141,7 +141,7 @@ public partial class Form1 : Form
     ButtonEditChildButton childButton = new ButtonEditChildButton()
     {
          Size = new Size(22, 22),
-         Image = Image.FromFile(@"..\..\Images\threeDots.png"),
+         Image = Image.FromFile(@"..\..\Images\Dot.png"),
     };
 
     CalendarPopup calendarPopup = new CalendarPopup()
@@ -174,7 +174,7 @@ Public Partial Class Form1
 
     Private childButton As ButtonEditChildButton = New ButtonEditChildButton() With {
         .Size = New Size(22, 22),
-        .Image = Image.FromFile("..\..\Images\threeDots.png")
+        .Image = Image.FromFile("..\..\Images\Dot.png")
     }
     Private calendarPopup As CalendarPopup = New CalendarPopup() With {
         .AutoSize = False,
@@ -243,4 +243,4 @@ End Sub
 
 ![MonthCalendar in ButtonEdit](ButtonEditEvents_images/ButtonEditEvents_img1.png)
 
-[View Sample in GitHub]()
+N> Download Demo sample from[GitHub](https://github.com/SyncfusionExamples/How-to-create-a-DatePicker-in-Winforms-using-ButtonEdit-and-MonthCalendarAdv)
