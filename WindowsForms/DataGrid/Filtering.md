@@ -391,13 +391,13 @@ When the DateTime type value is bound to the GridColumn, then `Date Filter` is l
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img11.png" alt="Advanced filtering"/>
+<img src="Filtering_images/Filtering_img11.png" alt="Text Filter Dialog"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img12.png" alt="Advanced filtering"/>
+<img src="Filtering_images/Filtering_img12.png" alt="Number Filter Dialog"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img13.png" alt="Advanced filtering"/>
+<img src="Filtering_images/Filtering_img13.png" alt="Date Filter Dialog"/>
 </td>
 </tr>
 <tr>
