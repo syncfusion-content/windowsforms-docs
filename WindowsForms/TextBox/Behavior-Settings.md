@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Behavior-Settings | WindowsForms | Syncfusion
-description: Learn here about how to change the behavior of the Syncfusion Windows Forms TextBoxExt control.
+description: Learn here about how to change the behavior of the Syncfusion Windows Forms TextBoxExt control and its properties.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug

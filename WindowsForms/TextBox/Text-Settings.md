@@ -172,7 +172,7 @@ Selects all text in the TextBox.</td></tr>
 
 ### Multiline text settings
 
-You can display the multiple line text by using the [MultiLine](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Multiline) property. If you want to show the text move to next line, you need to set the [WordWrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_WordWrap) property to `true`. You can also show the horizontal or verical bar in `TextBoxExt` control by using [ScrollBars](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.scrollbars?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_ScrollBars) property.
+You can display the multiple line text by using the [MultiLine](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Multiline) property. If you want to show the text move to next line, you need to set the [WordWrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_WordWrap) property to `true`. You can also show the horizontal or vertical bar in `TextBoxExt` control by using [ScrollBars](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.scrollbars?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_ScrollBars) property.
 
 {% tabs %}
 
