@@ -1,30 +1,18 @@
 ---
 layout: post
 title: Applying-Themes | WindowsForms | Syncfusion
-description: applying themes
+description: Learn here about how to apply the themes in the Syncfusion Windows Forms TextBoxExt and usages of theme.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-## Applying Themes
+## Applying Themes in TextBoxExt
 
-Themes defines the look and feel of the control. This can be enabled using the below given property.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ThemesEnabled</td><td>
-Specifies whether or not to use XP themes, when BorderStyle is set to 'Fixed3D'.</td></tr>
-</table>
+The [ThemesEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ThemesEnabled.html) property specifies whether XPThemes should be used or not when [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) is set to `Fixed3D`.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.ThemesEnabled = true;                          
@@ -36,6 +24,7 @@ this.textBoxExt1.ThemesEnabled = true;                    �
 Me.textBoxExt1.ThemesEnabled = True
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Applying-Themes_images/Applying-Themes_img1.png)
+![Enabled the themes when the border style is set to Fixed3D in WF TextBoxExt](Applying-Themes_images/Applying-Themes_img1.png)

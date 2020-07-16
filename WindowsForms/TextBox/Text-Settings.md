@@ -1,90 +1,131 @@
 ---
 layout: post
 title: Text-Settings | WindowsForms | Syncfusion
-description: text settings
+description: Learn here about how to change the text style and overflow settings of the Syncfusion Windows Forms TextBoxExt.
 platform: WindowsForms
-control: EditorsPackage
+control: TextBoxExt
 documentation: ug
 ---
 
-# Text Settings
+# Text Settings in TextBoxExt
 
 This section discusses the text settings of the TextBoxExt control.
 
-The text associated with the TextBoxExt control can be set and customized using the below given settings.
+## Text
 
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Text</td><td>
-Specifies the text associated with the control.</td></tr>
-<tr>
-<td>
-CharacterCasing</td><td>
-Gets / sets the case of character as they are typed.It includes the below given options:Normal,Upper andLower.</td></tr>
-<tr>
-<td>
-TextAlign</td><td>
-Indicates how the text should be aligned for edit controls.</td></tr>
-<tr>
-<td>
-RightToLeft</td><td>
-Indicates whether the component should draw right to left for RTL languages.</td></tr>
-<tr>
-<td>
-SelectedText</td><td>
-Gets / sets a value indicating the currently selected text in the control.</td></tr>
-<tr>
-<td>
-HideSelection</td><td>
-Indicates that the selection should be hidden, when the edit control loses focus.</td></tr>
-<tr>
-<td>
-DrawActiveWhenDisabled</td><td>
-Specifies if the text should be drawn active, even when disabled.</td></tr>
-</table>
+You can specifies the text in TextBoxExt control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) or [SelectedText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.selectedtext?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_SelectedText) property.
 
 {% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.SelectedText = "textBoxExt1";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.textBoxExt1.SelectedText = "textBoxExt1"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the text to WF TextBoxExt](Text-Settings_images/wf-textboxext-text.png)
+
+## CharacterCasing
+
+You can change the case of character in `TextBoxExt` control by using [CharacterCasing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~CharacterCasing.html) property. The character casing options are Normal, Upper and Lower.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change the character casing of WF TextBoxExt](Text-Settings_images/wf-textboxext-charcasing.png)
+
+## TextAlign
+
+You can the alignment of text for `TextBoxExt` control by using [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change the text align for WF TextBoxExt](Text-Settings_images/wf-textboxext-align.png)
+
+## Right to Left
+
+The TextBoxExt control can be laid out from right to left when the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_Control_RightToLeft) property value is set to `Yes`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Change the WF TextBoxExt control position from right to left](Text-Settings_images/wf-textboxext-rtl.png)
+
+
+## DrawActiveWhenDisabled
+
+The [DrawActiveWhenDisabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~DrawActiveWhenDisabled.html) property specifies whether the text should be drawn active even when the control is disabled.
+
+{% tabs %}
+
 {% highlight c# %}
 
-this.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-this.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-this.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-this.textBoxExt1.SelectedText = "TextBoxExt";
-this.textBoxExt1.HideSelection = true;
+this.textBoxExt1.Enabled = false;
 this.textBoxExt1.DrawActiveWhenDisabled = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
-Me.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-Me.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-Me.textBoxExt1.SelectedText = "TextBoxExt"
-Me.textBoxExt1.HideSelection = True
+Me.textBoxExt1.Enabled = False
 Me.textBoxExt1.DrawActiveWhenDisabled = True
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Text-Settings_images/Text-Settings_img1.png)
 
-![](Text-Settings_images/Text-Settings_img2.png)
+![Decides the text should be drawn when WF TextBoxExt is disabled](Text-Settings_images/Text-Settings_img4.png)
 
-![](Text-Settings_images/Text-Settings_img3.png)
-
-![](Text-Settings_images/Text-Settings_img4.png)
-
-The methods associated with the above properties are given below.
-
-Methods Table
+The following methods are associated with the above properties.
 
 <table>
 <tr>
@@ -131,85 +172,43 @@ Selects all text in the TextBox.</td></tr>
 
 ### Multiline text settings
 
-The text settings of the TextBoxExt control can be customized to display multiline text using the below given properties.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-Multiline</td><td>
-Controls whether the text of the edit control can span more than one line.</td></tr>
-<tr>
-<td>
-Lines</td><td>
-The lines of text in a multiline edit, as an array of string values.</td></tr>
-<tr>
-<td>
-WordWrap</td><td>
-Indicates if lines are automatically word-wrapped for multiline edit controls.</td></tr>
-<tr>
-<td>
-ScrollBars</td><td>
-Indicates for multiline edit controls, which scrollbars will be shown for this control.It includes the below given options.{{ '_None,_' | markdownify }}{{ '_Horizontal,_' | markdownify }}{{ '_Vertical and_' | markdownify }}{{ '_Both._' | markdownify }}</td></tr>
-</table>
+You can display the multiple line text by using the [MultiLine](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Multiline) property. If you want to show the text move to next line, you need to set the [WordWrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_WordWrap) property to `true`. You can also show the horizontal or verical bar in `TextBoxExt` control by using [ScrollBars](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.scrollbars?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_ScrollBars) property.
 
 {% tabs %}
-{% highlight c# %}
 
-this.textBoxExt1.Multiline = true;
-this.textBoxExt1.WordWrap = true;
+{% highlight C# %}
+
+this.textBoxExt1.Multiline = true;
+this.textBoxExt1.WordWrap = true;
 this.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight VB %}
 
-Me.textBoxExt1.Multiline = True
-Me.textBoxExt1.WordWrap = True
+Me.textBoxExt1.Multiline = True
+Me.textBoxExt1.WordWrap = True
 Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Text-Settings_images/Text-Settings_img5.png)
+![Show the multiline text in WF TextBoxExt](Text-Settings_images/wf-textboxext-multiline.png)
 
-![](Text-Settings_images/Text-Settings_img6.png)
+N> The [ScrollToCaret()](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.scrolltocaret?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ScrollToCaret) method can be used to scroll the contents of the control to the current caret position.
 
-![](Text-Settings_images/Text-Settings_img7.png)
+## Tooltip
 
-N> The ScrollToCaret() method can be used to scroll the contents of the control to the current caret position.
+The tooltip that should be displayed when an overflow of text occurs can be set using the following properties.
 
-### OverflowIndicatorToolTipText
+* [OverflowIndicatorToolTipText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~OverflowIndicatorToolTipText.html) - This property specifies the overflow indicator tooltip text.
+* [ShowOverflowIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicator.html) - This property used for show the overflow indicator.
+* [ShowOverflowIndicatorToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicatorToolTip.html) - This property indicates whether to show the overflow indicator tooltip.
 
-The tooltip that should be displayed when an overflow of text occurs can be set using the below given properties.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-OverflowIndicatorToolTipText</td><td>
-Specifies the overflow indicator tooltip text.</td></tr>
-<tr>
-<td>
-ShowOverflowIndicator</td><td>
-Gets / sets overflow indicator visibility.</td></tr>
-<tr>
-<td>
-ShowOverflowIndicatorToolTip</td><td>
-Indicates whether to show the overflow indicator tooltip.</td></tr>
-</table>
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.ShowOverflowIndicator = true;
@@ -225,12 +224,9 @@ Me.textBoxExt1.ShowOverflowIndicatorToolTip = True
 Me.textBoxExt1.OverflowIndicatorToolTipText = "Overflow"
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Text-Settings_images/Text-Settings_img9.png)
+![Show the overflow indicator text in WF TextBoxExt](Text-Settings_images/Text-Settings_img9.png)
 
-N> there is no value set for the OverflowIndicatorToolTipText property, then the value set for the Text property of the TextBoxExt will be displayed as the tooltip.
-
-A sample which demonstrates the Text, Text Align, Character Casing, RightToLeft, Multiline, Word Wrap, ScrollBars and Overflow Indicator ToolTip features of TextBoxExt control is available in the below sample installation path.
-
-…\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo
+N> There is no value set for the `OverflowIndicatorToolTipText` property, then the value set for the `Text` property of the TextBoxExt will be displayed as the tooltip.

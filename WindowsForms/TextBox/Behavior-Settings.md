@@ -1,65 +1,44 @@
 ---
 layout: post
 title: Behavior-Settings | WindowsForms | Syncfusion
-description: behavior settings
+description: Learn here about how to change the behavior of the Syncfusion Windows Forms TextBoxExt control.
 platform: WindowsForms
-control: EditorsPackage
+control: TextBoxExt
 documentation: ug
 ---
 
-# Behavior Settings
+# Behavior Settings in TextBoxExt
 
 The behavior settings of the TextBoxExt control are discussed below.
 
 ## MaxLength
 
-The maximum length of the text can be set using the property given below.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-MaxLength</td><td>
-Specifies the maximum number of characters that can be entered into the edit control. The default value is set to '32767'.</td></tr>
-</table>
+You can specify the maximum number of characters that can be entered into the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [MaxLength](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.maxlength?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_MaxLength) property. The default value is `32767`.
 
 {% tabs %}
+
 {% highlight c# %}
 
-this.textBoxExt1.MaxLength = 32800;               
+this.textBoxExt1.MaxLength = 4;               
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.textBoxExt1.MaxLength = 32800
+Me.textBoxExt1.MaxLength = 4
 
 {% endhighlight %}
+
 {% endtabs %}
+
+![Specify the maximum number character entered into WF TextBoxExt](Behavior-Settings-images/wf-textboxext-maxlength.png)
 
 ### ReadOnly
 
-The ReadOnly mode can be enabled for the TextBoxExt control using the below given property.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ReadOnly</td><td>
-Specifies whether the text in the edit control can be changed or not.</td></tr>
-</table>
+You can specifies whether the text can be changed or not in `TextBoxExt` control by using [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ReadOnly) property.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.ReadOnly = true;
@@ -71,8 +50,7 @@ this.textBoxExt1.ReadOnly = true;
 Me.textBoxExt1.ReadOnly = True
 
 {% endhighlight %}
+
 {% endtabs %}
 
-A sample which demonstrates the ReadOnly mode of TextBoxExt control is available in the below sample installation path.
-
-…\_My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\Advanced Editor Functions\ActionGroupingDemo_
+![Specify whether the text changed or not in WF TextBoxExt](Behavior-Settings-images/wf-textboxext-readonly.png)
