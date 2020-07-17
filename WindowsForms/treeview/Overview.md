@@ -9,9 +9,9 @@ documentation: ug
 
 # Overview
 
-## OverView
+## Overview
 
-TreeView control displays a collection of data in hierarchical tree structure and the data in tree view can be expanded and collapsed. `TreeViewAdv` offers many advanced features like drag-and-drop, load on demand, context menus and data binding that can make the control unique and extraordinary. While the `TreeViewAdv` exposes some global styles that are to be applied for all the nodes, the `TreeNodeAdv` lets the users to specify styles for a specific node. The control comes with complete design time support.
+TreeView control displays a collection of data in hierarchical tree structure and the data in tree view can be expanded and collapsed. [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) offers many advanced features like drag-and-drop, load on demand, context menus and data binding that can make the control unique and extraordinary. While the [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) exposes some global styles that are to be applied for all the nodes, the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html) lets the users to specify styles for a specific node. The control comes with complete design time support.
 
 ![Overview of Syncfusion TreeViewAdv](Overview_images/Overview_img1.jpg)
 
@@ -25,14 +25,16 @@ TreeView control displays a collection of data in hierarchical tree structure an
 
 *	Provides support for advanced drag and drop of the nodes.
 
-*	`TreeViewAdv` can associate the context menus with the option to show and hide wherever necessary
+*   [TreeViewAdv](
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) can associate the context menus with the option to show and hide wherever necessary
 
 *	Provides automatic scrolling support for the TreeViewAdv
 
 *	Customize the complete look and feel of the control.
 
-*	Sort `TreeViewAdv` items at run time.
+*	Sort [TreeViewAdv](
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) items at run time.
 
 *	Add images to expanded and collapsed states of TreeViewAdv.
 
-*	Add images as left, right and state image sources to the `TreeNodeAdv`.
+*	Add images as left, right and state image sources to the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).

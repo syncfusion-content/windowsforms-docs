@@ -7,71 +7,74 @@ control: TreeView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms TreeView (TreeViewAdv)
 
-This section will provide a step-by-step procedure to design a `TreeViewAdv` control by using designer and through programming approach in .NET application.
+This section provides a quick overview for working with the [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) for WinForms. Walk through the entire process of creating a real world TreeView.
 
 ## Assembly Deployment
 
-<b>Namespace</b>: Syncfusion.Windows.Forms.Tools
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) section to get the list of assemblies or NuGet package needs to be added as reference to use the TreeViewAdv control in any application.
 
-<b>Assembly</b>: Syncfusion.Tools.Windows
+## Creating Application with TreeViewAdv
 
-<b>Dependent assembly</b>: Syncfusion.Shared.Base
+In this walk through, users will create WinForms application that contains TreeViewAdv control.
 
+### Creating the Project
 
-<table>
-<tr>
-<th>
-Required Assemblies</th><th>
-Description</th></tr>
-<tr>
-<td>
-Syncfusion.Shared.Base</td><td>
-Contains the base classes for Scrolling and Utilities.</td></tr>
-<tr>
-<td>
-Syncfusion.Tools.Windows </td><td>
-Contains classes that handles all UI operations, fundamentals and base classes of TreeViewAdv.</td></tr>
-</table>
+Create new Windows Forms Project in Visual Studio to display TreeViewAdv with data objects.
 
 ## Adding control via Designer
 
-Create a new Windows Forms application in the Visual Studio and follow the steps given. 
-
-Drag and drop the `TreeViewAdv` control from the toolbox to the designer. It generates the `TreeViewAdv` as shown:
-
+TreeViewAdv control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 ![](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Adding control manually in C#
 
-To create a `TreeViewAdv` control through C#, use the following code.
+In order to add control manually, do the below steps,
 
-1. Add the below required assembly references to the project,
+1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) to the project
 
-    * Syncfusion.Shared.Base
+2)	Create the TreeViewAdv control instance and add it to the Form
+{% tabs %}
+{% highlight c# %}
 
-    * Syncfusion.Tools.Windows
+using Syncfusion.WinForms.DataGrid;
 
-2. Create the TreeViewAdv control instance and add it to the Form
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            TreeViewAdv treeviewadv1 = new TreeViewAdv();
+            treeviewadv1.Location = new System.Drawing.Point(85, 108);
+            treeviewadv1.Size = new System.Drawing.Size(240, 150);
+            this.Controls.Add(treeviewadv1);
+        }
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.WinForms.DataGrid
 
-    {% tabs %}
+Namespace WindowsFormsApp4
+  Public Partial Class Form1
+     Inherits Form
 
-    {% highlight C# %}
+        Public Sub New()
+            InitializeComponent()
+            Dim treeviewadv1 As TreeViewAdv = New TreeViewAdv()
+            treeviewadv1.Location = New System.Drawing.Point(85, 108)
+            treeviewadv1.Size = New System.Drawing.Size(240, 150)
+            Me.Controls.Add(treeviewadv1)
+        End Sub
+  End Class
+End Namespace
 
-    TreeViewAdv treeViewAdv1 = new TreeViewAdv();
-    this.Controls.Add(treeViewAdv1);
+{% endhighlight %}
 
-    {% endhighlight %}
-
-    {% highlight VB %}
-
-    Dim treeViewAdv1 As New TreeViewAdv()
-    Me.Controls.Add(treeViewAdv1)      
-
-    {% endhighlight %}
-
-    {% endtabs %}
+{% endtabs %}
 
 
 ## Adding Node to the control
@@ -80,7 +83,7 @@ To create a `TreeViewAdv` control through C#, use the following code.
 
 Tree nodes can be added to the control at design time as follows.
 
-1. Select the `TreeViewAdv` control in the form. 
+1. Select the [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
 
 2. Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
 
@@ -110,101 +113,117 @@ Tree nodes can be added to the control at design time as follows.
 
 Tree nodes can be added to the control programmatically as follows.
 
-<b>Step 1</b>: Create a new instance of a node.
+Create the TreeViewAdv control instance and add newly created instance of TreeNodeAdv as child of TreeViewAdv control as follows.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-//Creating new instance of node.
-TreeNodeAdv node = new TreeNodeAdv("Asia");
+namespace WindowsFormsApp4
+{
+    public partial class Form1 : Form
+    {
+        //Create instance of TreeViewAdv
+        private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeView1;
+        public Form1()
+        {
 
+            InitializeComponent();
+            //Intialize instance of TreeViewAdv
+            treeView1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
+            treeView1.Location = new System.Drawing.Point(202, 75);
+            treeView1.Name = "treeView1";
+            //Create instance of TreeNodeAdv
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode1 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node1");
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode2 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node0", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
+            treeNode1});
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode3 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node3");
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode4 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node2", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
+            treeNode3});
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode5 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node5");
+            Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode6 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node4", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
+            treeNode5});
+            treeNode1.Name = "Node1";
+            treeNode1.Text = "Node1";
+            treeNode2.Name = "Node0";
+            treeNode2.Text = "Node0";
+            treeNode3.Name = "Node3";
+            treeNode3.Text = "Node3";
+            treeNode4.Name = "Node2";
+            treeNode4.Text = "Node2";
+            treeNode5.Name = "Node5";
+            treeNode5.Text = "Node5";
+            treeNode6.Name = "Node4";
+            treeNode6.Text = "Node4";
+            //Add the nodes in TreeNodeAdv
+            treeView1.Nodes.AddRange(new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
+            treeNode2,
+            treeNode4,
+            treeNode6});
+            treeView1.Size = new System.Drawing.Size(377, 250);
+            this.Controls.Add(treeView1);
+            
+
+        }
+    }
+    
+}
 {% endhighlight %}
 
-{% highlight VB %}
-  
-'Creating new instance of node.
-Dim node As New TreeNodeAdv("Asia")
+{% highlight vb %}
+
+Namespace WindowsFormsApp4
+ Public Partial Class Form1
+    Inherits Form
+        'Create new instance of node.
+        Private treeView1 As Syncfusion.Windows.Forms.Tools.TreeViewAdv
+
+        Public Sub New()
+            InitializeComponent()
+            'Intialize new instance of node.
+            treeView1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv()
+            treeView1.Location = New System.Drawing.Point(202, 75)
+            treeView1.Name = "treeView1"
+            'Create instance of TreeNodeAdv
+            Dim treeNode1 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node1")
+            Dim treeNode2 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node0", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode1})
+            Dim treeNode3 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node3")
+            Dim treeNode4 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node2", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode3})
+            Dim treeNode5 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node5")
+            Dim treeNode6 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node4", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode5})
+            treeNode1.Name = "Node1"
+            treeNode1.Text = "Node1"
+            treeNode2.Name = "Node0"
+            treeNode2.Text = "Node0"
+            treeNode3.Name = "Node3"
+            treeNode3.Text = "Node3"
+            treeNode4.Name = "Node2"
+            treeNode4.Text = "Node2"
+            treeNode5.Name = "Node5"
+            treeNode5.Text = "Node5"
+            treeNode6.Name = "Node4"
+            treeNode6.Text = "Node4"
+            'Add the nodes in TreeNodeAdv
+            treeView1.Nodes.AddRange(New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode2, treeNode4, treeNode6})
+            treeView1.Size = New System.Drawing.Size(377, 250)
+            Me.Controls.Add(treeView1)
+        End Sub
+    End Class
+End Namespace
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-<b>Step 2</b>: Add the created node to the tree control. This will add as a top-level node.
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Add the created nodes to the TreeViewAdv.
-this.treeViewAdv1.Nodes.Add(node);
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'Add the created nodes to the TreeViewAdv.
- Me.treeViewAdv1.Nodes.Add(node)
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-<b>Step 3</b>: We can add a child node to an existing node, using the below code snippet
-
-{% tabs %}
-
-{% highlight C# %}
-
-//Add nodes to the existing nodes.
-node.Nodes.Add(new TreeNodeAdv("India"));
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-'Add nodes to the existing nodes.
-node.Nodes.Add(New TreeNodeAdv("India"))
-
-{% endhighlight %}
-
-{% endtabs %}
-
-<b>Step 4</b>: Repeat steps 1 to 3 to continue adding more top-level nodes and child nodes.
-
-<b>Step 5</b>: Run the application.
-
-<b>Step 6</b>: The resulting form is shown in the below image.
-
-    ![](Getting-Started_images/Getting-Started_img4.jpg)
+![](Getting-Started_images/Getting-Started_img8.jpg)
 
 ## Customize Nodes
 
 ### Root Lines
 
-We can display the Root lines between the root nodes by setting the property `ShowRootLines` to True. Whereas the property `ShowLines` displays connecting line for rest of the nodes in the control except between the root nodes. By default, `ShowRootLines` and `ShowLines` are set as `true`.
+We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) and TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) are set as `true`.
 
-When `ShowLines` is set to `false`, the connecting lines will not be displayed for the entire control
-
-#### Property Table
-
-<table>
-<tr>
-<th>
-TreeViewAdv Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowLines</td><td>
-Indicates if the tree lines are visible.</td></tr>
-<tr>
-<td>
-ShowRootLines</td><td>
-Indicates whether lines are displayed between root nodes.</td></tr>
-</table>
-
+When [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) is set to `false`, the connecting lines will not be displayed for the entire control.
 
 {% tabs %}
 {% highlight c# %}
@@ -226,46 +245,15 @@ Me.treeViewAdv1.ShowLines = False
 
 ### Plus/Minus
 
-We can display Plus/Minus sign for the parent nodes by setting the property `ShowPlusMinus` to True. This will set Plus/Minus sign for all the parent nodes in `TreeViewAdv`. 
-We can also set this for nodes using ShowPlusMinus property in the `TreeNodeAdv`.
+We can display Plus/Minus sign for the parent nodes by setting the property [TreeViewAdv.ShowPlusMinus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowPlusMinus.html) to True. This will set Plus/Minus sign for all the parent nodes in [TreeViewAdv](
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
+We can also set this for nodes using [TreeNodeAdv.ShowPlusMinus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowPlusMinus.html) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
-The nodes in the `TreeViewAdv`, even when it is in the expanded state, can still display the Plus sign using the `ShowPlusOnExpand` property. `LoadOnDemand` property should be set to true for this feature to be effective.
-
-#### Property Table
-
-#### TreeViewAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowPlusMinus</td><td>
-Indicates if the plus or minus sign is visible for the TreeViewAdv.</td></tr>
-</table>
-
-
-#### TreeNodeAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowPlusMinus</td><td>
-Indicates if the plus or minus sign is visible for the individual nodes in TreeNodeAdv.</td></tr>
-<tr>
-<td>
-ShowPlusOnExpand</td><td>
-Indicates if the plus sign is visible for the expanded TreeNodeAdv.</td></tr>
-</table>
-
+The nodes in the [TreeViewAdv](
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html), even when it is in the expanded state, can still display the Plus sign using the [TreeNodeAdv.ShowPlusOnExpand](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowPlusOnExpand.html) property. [TreeViewAdv.LoadOnDemand](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~LoadOnDemand.html) property should be set to true for this feature to be effective.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.treeViewAdv1.ShowPlusMinus = false;
@@ -282,38 +270,7 @@ Me.treeViewAdv1.ShowPlusMinus = False
 
 ### CheckBox
 
-We can display CheckBox for all nodes in `TreeViewAdv` by setting `ShowCheckBoxes`  property to True. The CheckBox for individual nodes can also be shown or hidden using `ShowCheckBox` property in `TreeNodeAdv`.
-
-
-#### Property Table
-
-
-#### TreeViewAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowCheckBoxes</td><td>
-Indicates if the checkboxes are visible for all nodes in TreeViewAdv.</td></tr>
-</table>
-
-
-#### TreeNodeAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowCheckBox</td><td>
-Indicates if the checkbox is visible for individual nodes in TreeNodeAdv.</td></tr>
-</table>
+We can display CheckBox for all nodes in [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) by setting [TreeViewAdv.ShowCheckBoxes](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowCheckBoxes.html)  property to True. The CheckBox for individual nodes can also be shown or hidden using [TreeNodeAdv.ShowCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowCheckBox.html) property in [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -337,35 +294,8 @@ In the above image we can show check box for India and china node.
 
 ### OptionButton
 
-The Option Buttons can be displayed for the nodes in the `TreeViewAdv` using the `ShowOptionButtons` property. We can also show or hide the Option Button for individual nodes using `ShowOptionButton` property in the `TreeNodeAdv`.
-
-#### Property Table
-
-#### TreeViewAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowOptionButtons</td><td>
-Indicates if the option buttons are visible for all nodes in TreeViewAdv.</td></tr>
-</table>
-
-#### TreeNodeAdv Property
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ShowOptionButton</td><td>
-Indicates if the option button is visible for individual nodes in TreeNodeAdv.</td></tr>
-</table>
+The Option Buttons can be displayed for the nodes in the [TreeViewAdv](
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowOptionButtons.html) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowOptionButton.html) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -390,4 +320,4 @@ In the above image we can show option button for India and china node.
 
 ## Assigning Active Nodes
     
-`ActiveNode` holds  a currently selected node. By default, it is null.
+[TreeViewAdv.ActiveNode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ActiveNode.html) holds  a currently selected node. By default, it is null.
