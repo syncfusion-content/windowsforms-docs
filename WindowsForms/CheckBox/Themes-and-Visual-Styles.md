@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Themes-and-Visual-Styles | WindowsForms | Syncfusion
-description: themes and visual styles
+description: This section gives the detailed description about customizing the themes and visual styles of CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Themes and Visual Styles
 
-This section discusses the themes and visual style settings that are supported by the CheckBoxAdv control.
+This section discusses the themes and visual style settings supported by the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Themes
 
-The CheckBoxAdv can be provided with a themed appearance using the below given property.
+Themes can be applied to [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control by enabling the [ThemesEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ThemedControl~ThemesEnabled.html) property.
 
 <table>
 <tr>
@@ -44,7 +44,7 @@ Me.checkBoxAdv1.ThemesEnabled = True
 
 ## Visual Styles
 
-The appearance of the CheckBoxAdv control can be customized using the various options provided by the following properties.
+The appearance of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can be customized using the [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Style.html), [Office2007ColorScheme](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Office2007ColorScheme.html) and [Office2010ColorScheme](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Office2010ColorScheme.html) properties.
 
 <table>
 <tr>
@@ -61,6 +61,10 @@ Gets or sets an advanced appearance for the CheckBoxAdv.The options included are
 <td>
 Office2007ColorScheme</td><td>
 Gets or sets Office 2007 color scheme.The options included are as follows, Managed, Blue, Silver and Black. The Style property should be set to "Office2007".</td></tr>
+<tr>
+<td>
+Office2010ColorScheme</td><td>
+Gets or sets Office 2010 color scheme.The options included are as follows, Managed, Blue, Silver and Black. The Style property should be set to "Office2010".</td></tr>
 </table>
 
 {% tabs %}
@@ -81,24 +85,21 @@ Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office20
 
 When the Office2007ColorScheme property is set to 'Managed', the CheckBox in the CheckBoxAdv can be displayed using custom colors supported by the control.
 
-This can be done programmatically as follows.
-
 {% tabs %}
 {% highlight c# %}
 
-this.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007;
-this.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-Office2007Colors.ApplyManagedColors(this, Color.Pink);
+checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007;
+checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+Office2007Colors.ApplyManagedColors(this, Color.Red);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007
-Me.checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
-Office2007Colors.ApplyManagedColors(Me, Color.Pink)
-
+checkBoxAdv1.Style = Syncfusion.Windows.Forms.Tools.CheckBoxAdvStyle.Office2007
+checkBoxAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed
+Office2007Colors.ApplyManagedColors(Me, Color.Red)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv Office2007ColorScheme is set to managed](Overview_images/CheckBoxAdv_office2007color.jpeg)
+![Windows forms CheckBoxAdv Office2007ColorScheme is set to managed](Themes-And-VisualStyle-images/Theme-And-VisualStyle-img1.png)

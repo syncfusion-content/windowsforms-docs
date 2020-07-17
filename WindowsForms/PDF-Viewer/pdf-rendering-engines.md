@@ -18,7 +18,7 @@ Syncfusion WinForms PDF Viewer renders the PDF pages through 2 different renderi
 
 PDFium is used in Google Chrome for rendering PDF files. It provides accurate and robust PDF rendering. It is the recommended PDF rendering engine. 
 
-N> From v16.2.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WinForms PDF Viewer.
+N> From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WinForms PDF Viewer.
 
 ### How PDFium works with Syncfusion’s PDF Viewer
 
@@ -43,22 +43,21 @@ In that situation, you need to add the following steps to consume the PDFium ren
 
 {% tabs %}
 {% highlight c# %}
-using System.Windows;
+using Syncfusion.Windows.Forms.PdfViewer;
+using System.Windows.Forms;
+
 namespace PdfViewerDemo
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public partial class Form1 : Form
     {
-        # region Constructor
-        public MainWindow()
+        public Form1()
         {
-            InitializeComponent();
+            //Set the reference path.
             pdfViewer.ReferencePath = @"D:\ThirdPartyBinaries\";
+
+            //Load the PDF.
             pdfViewer.Load("Sample.pdf");
         }
-        #endregion
     }
 }
 {% endhighlight %}
@@ -75,7 +74,7 @@ N>			* Pdfium.dll
 
 ## SfPdf
 
-`SfPdf` is the Syncfusion’s own PDF rendering engine. Before v16.2.0.x, PDF Viewer control has used this rendering engine as default to rendering the PDF pages. If you wish to use `SfPdf` rendering engine or face any compatibility issues with `Pdfium` rendering engine in your environment, you may set the [RenderingEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~RenderingEngine.html) property to `SfPdf` as shown in the following code sample.
+`SfPdf` is the Syncfusion’s own PDF rendering engine. Before v16.3.0.x, PDF Viewer control has used this rendering engine as default to rendering the PDF pages. If you wish to use `SfPdf` rendering engine or face any compatibility issues with `Pdfium` rendering engine in your environment, you may set the [RenderingEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~RenderingEngine.html) property to `SfPdf` as shown in the following code sample.
 
 N> The recommended PDF rendering engine is PDFium.
 
@@ -84,7 +83,7 @@ N> The recommended PDF rendering engine is PDFium.
 using Syncfusion.Windows.Forms.PdfViewer;
 using System.Windows.Forms;
 
-namespace TextExtractionDemo
+namespace PdfViewerDemo
 {
     public partial class Form1 : Form
     {
