@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: This section explains about the getting started with the important key features of TreeViewAdv control for windows forms.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
@@ -26,7 +26,7 @@ Create new Windows Forms Project in Visual Studio to display TreeViewAdv with da
 ## Adding control via Designer
 
 TreeViewAdv control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![Windows Forms TreeViewAdv through designer](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Adding control manually in C#
 
@@ -38,7 +38,7 @@ In order to add control manually, do the below steps,
 {% tabs %}
 {% highlight c# %}
 
-using Syncfusion.WinForms.DataGrid;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace WindowsFormsApplication1
 {
@@ -56,7 +56,7 @@ namespace WindowsFormsApplication1
 }
 {% endhighlight %}
 {% highlight vb %}
-Imports Syncfusion.WinForms.DataGrid
+Imports using Syncfusion.Windows.Forms.Tools
 
 Namespace WindowsFormsApp4
   Public Partial Class Form1
@@ -87,11 +87,11 @@ Tree nodes can be added to the control at design time as follows.
 
 2. Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
 
-    ![](Getting-Started_images/Getting-Started_img2.jpg)
+    ![Windows Forms TreeNodeAdv designer](Getting-Started_images/Getting-Started_img2.jpg)
 
     You can also open this editor using task window or by right clicking the control and selecting Nodes Editor.
 
-    ![](Getting-Started_images/Getting-Started_img3.jpg)
+![Windows forms TreeNodeAdv added in designer](Getting-Started_images/Getting-Started_img3.jpg)
 
 3. In the NodeCollection Editor, Click "Add Node" to add a new top-level node. We can also add top level nodes by clicking the Add Node option on right clicking the control.
 
@@ -215,7 +215,7 @@ End Namespace
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img8.jpg)
+![Windows forms TreeNodeAdv achieved through code](Getting-Started_images/Getting-Started_img8.jpg)
 
 ## Customize Nodes
 
@@ -240,7 +240,7 @@ Me.treeViewAdv1.ShowLines = False
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img5.jpg)
+![Windows Forms TreeViewAdv RootLines](Getting-Started_images/Getting-Started_img5.jpg)
 
 
 ### Plus/Minus
@@ -288,7 +288,7 @@ Me.treeNode.ShowCheckBox = True
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img6.jpg)
+![Windows Forms TreeViewAdv checkbox option](Getting-Started_images/Getting-Started_img6.jpg)
 
 In the above image we can show check box for India and china node.
 
@@ -314,7 +314,7 @@ Me.treeNode.ShowOptionButton = True
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img7.jpg)
+![Windows Forms TreeViewAdv option button](Getting-Started_images/Getting-Started_img7.jpg)
 
 In the above image we can show option button for India and china node.
 
