@@ -13,7 +13,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 ## Text
 
-You can specifies the text in TextBoxExt control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) or [SelectedText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.selectedtext?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_SelectedText) property.
+You can specifies the text in TextBoxExt control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
 
 {% tabs %}
 
@@ -32,6 +32,8 @@ Me.textBoxExt1.SelectedText = "textBoxExt1"
 {% endtabs %}
 
 ![Set the text to WF TextBoxExt](Text-Settings_images/wf-textboxext-text.png)
+
+N> You can get the selected text in TextBoxExt control by using [SelectedText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.selectedtext?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_SelectedText) property.
 
 ## CharacterCasing
 

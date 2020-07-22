@@ -318,7 +318,7 @@ End Sub
 
 ## TextAlignChanged 
 
-The [TextAlignChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property is changed. The `TextAlign` property indicates how the text should be aligned for edit controls.
+The [TextAlignChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property is changed. The `TextAlign` property indicates how the text should be aligned in TextBoxExt control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
