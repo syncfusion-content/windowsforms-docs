@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started of BannerTextProvider | WindowsForms | Syncfusion
+title: Getting started with BannerTextProvider | WindowsForms | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
 ---
 
-# Getting Started of Watermark Text Provider(BannerText)
+# Getting Started with Watermark Text Provider(BannerText)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) with its basic functionalities.
 
@@ -16,6 +16,9 @@ This section briefly describes how to create a new Windows Forms project in Visu
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) section to get the list of assemblies or the details of NuGet package that needs to be added as reference to use the control in any application.
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
+
+## Creating Application with BannerTextProvider
+Create new Windows Forms Project in Visual Studio to display watermark for editor controls using [BannerTextProvider](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextProvider.html) control.
 
 ## Adding BannerTextProvider control via designer
 
