@@ -162,8 +162,6 @@ namespace WindowsFormsApp4
             treeNode6});
             treeView1.Size = new System.Drawing.Size(377, 250);
             this.Controls.Add(treeView1);
-            
-
         }
     }
     
