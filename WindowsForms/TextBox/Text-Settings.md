@@ -13,7 +13,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 ## Text
 
-You can specifies the text in TextBoxExt control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
+You can specifies the text in [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
 
 {% tabs %}
 
@@ -81,7 +81,7 @@ Me.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Right to Left
 
-The TextBoxExt control can be laid out from right to left when the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_Control_RightToLeft) property value is set to `Yes`.
+The `TextBoxExt` control can be laid out from right to left when the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_Control_RightToLeft) property value is set to `Yes`.
 
 {% tabs %}
 

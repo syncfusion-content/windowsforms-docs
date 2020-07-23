@@ -31,7 +31,7 @@ Me.textBoxExt1.ThemesEnabled = True
 
 ## Themes
 
-The `TextBoxExt` provides the following themes for professional representation.
+The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) provides the following themes for professional representation.
 
 * Office2016Colorful
 * Office2016White

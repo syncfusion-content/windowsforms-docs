@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with TextBoxExt
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **TextBoxExt** with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) with its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,7 +19,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 ## Creating application with TextBoxExt
 
-In this walk through, users will create new WinForms application that contains TextBoxExt control.
+In this walk through, users will create new WinForms application that contains `TextBoxExt` control.
 
 ### Creating the project
 
