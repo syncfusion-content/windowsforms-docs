@@ -1,36 +1,20 @@
 ---
 layout: post
 title: Layout-Settings | WindowsForms | Syncfusion
-description: layout settings
+description: Learn here about how to set the layout of the Syncfusion Windows Forms TextBoxExt control and its properties.
 platform: WindowsForms
-control: EditorsPackage
+control: TextBoxExt
 documentation: ug
 ---
 
-# Layout Settings
+# Layout Settings in TextBoxExt
 
 The layout settings of the TextBoxExt control are discussed in this section.
 
-The size of the TextBoxExt control can be set according to the needs of the user using the properties discussed below.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-MaximumSize</td><td>
-Gets / sets the maximum size for the control.</td></tr>
-<tr>
-<td>
-MinimumSize</td><td>
-Gets / sets the minimum size for the control.</td></tr>
-</table>
+You can set the maximum or minimum size of WF [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [MaximumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html) and [MinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html) properties.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.MaximumSize = new System.Drawing.Size(150, 20);
@@ -44,6 +28,7 @@ Me.textBoxExt1.MaximumSize = New System.Drawing.Size(150, 20)
 Me.textBoxExt1.MinimumSize = New System.Drawing.Size(150, 20)
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Layout-Settings_images/Layout-Settings_img1.png)
+![Change the layout of WF TextBoxExt control](Layout-Settings_images/Layout-Settings_img1.png)
