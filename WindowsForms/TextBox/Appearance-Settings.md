@@ -1,36 +1,22 @@
 ---
 layout: post
 title: Appearance-Settings | WindowsForms | Syncfusion
-description: appearance settings
+description: Learn here about how to change the background, forecolor of the Syncfusion Windows Forms TextBoxExt control and its style.
 platform: WindowsForms
-control: EditorsPackage
+control: TextBoxExt
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance Settings in TextBoxExt
+
+This section describes about background, foreground and visual style settings.
 
 ## Background settings
 
-The background settings of the TextBoxExt control are discussed below.
-
-### Background color
-
-The background color of the control can be set using the property given below.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BackColor</td><td>
-Specifies the background color of the component.</td></tr>
-</table>
+You can set the background color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using the [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.backcolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BackColor) property.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.BackColor = System.Drawing.Color.Moccasin;
@@ -44,30 +30,14 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img1.png)
+![Set the backcolor of WF TextBoxExt control](Appearance-Settings_images/Appearance-Settings_img1.png)
 
 ## Foreground settings
 
-The foreground settings of the TextBoxExt control are discussed below.
-
-### Foreground color
-
-The foreground color of the control can be set using the property given below.
-
-Property Table
-
-<table>
-<tr>
-<th>
-TextBoxExt Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Gets / sets the foreground color of the spin box (also known as an up-down control).</td></tr>
-</table>
+You can set the foreground color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen;
@@ -81,11 +51,11 @@ Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img2.png)
+![Set the fore ground color of WF TextBoxExt control](Appearance-Settings_images/Appearance-Settings_img2.png)
 
 ## Visual style
 
-Visual styles for the TextBoxExt can be specified using TextBoxExt.Style property. The various styles are,
+You can change the visual style for [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Style.html) property. The various styles are given below,
 
 * Office2016Colorful
 * Office2016White
@@ -97,6 +67,7 @@ Visual styles for the TextBoxExt can be specified using TextBoxExt.Style propert
 * Default
 
 {% tabs %}
+
 {% highlight c# %}
 
 this.textBoxExt1.Style = TextBoxExt.theme.Office2016Colorful;
@@ -108,7 +79,8 @@ this.textBoxExt1.Style = TextBoxExt.theme.Office2016Colorful;
 Me.textBoxExt1.Style = TextBoxExt.theme.Office2016Colorful
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img3.png) 
+![Set the visual style to WF TextBoxExt control](Appearance-Settings_images/Appearance-Settings_img3.png) 
 
