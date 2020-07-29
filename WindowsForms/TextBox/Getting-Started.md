@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Getting Started | TextBoxExt | WindowsForms | Syncfusion
-description: How to add the TextBoxExt control in a Windows Forms application
+description: Learn here about how to add the Syncfusion Windows Forms TextBoxExt control in a simple application.
 platform: WindowsForms
-control: EditorsPackage
+control: TextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with TextBoxExt
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add **TextBoxExt** with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) with its basic functionalities.
 
 ## Assembly deployment
 
@@ -17,25 +17,29 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
 
-## Adding the TextBoxExt control via designer
+## Creating application with TextBoxExt
 
-1) Create a new Windows Forms application in Visual Studio.
+In this walk through, users will create new WinForms application that contains `TextBoxExt` control.
 
-2) Add the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically:
+### Creating the project
 
-* Syncfusion.Shared.Base
+Create new Windows Forms Project in Visual Studio to display TextBoxExt with different text settings.
+
+### Adding the TextBoxExt control via designer
+
+The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
 ![Drag and drop TextBoxExt from toolbox](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
 
 ## Adding the TextBoxExt control via code
 
-1) Create a C# or VB application using Visual Studio.
+In order to add control manually, do the below steps,
 
-2) Add the following assembly reference to the project:
+1) Add the following assembly reference to the project.
 
 * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+2) Include the required namespace.
 
 {% tabs %}
 
@@ -53,7 +57,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control, and add it to the form.
+4) Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
 
 {% tabs %}
 
@@ -79,7 +83,7 @@ Me.Controls.Add(textBoxExt1)
 
 ## Size
 
-The size to the TextBoxExt control can be applied using the following properties:
+The size to the `TextBoxExt` control can be applied using the following properties:
 
 * [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html)
 * [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html)
@@ -106,7 +110,7 @@ textBoxExt1.MinimumSize = New System.Drawing.Size(267, 104)
 
 ## Multiline
 
-The TextBoxExt control can be customized to display multiline text using the following properties:
+The `TextBoxExt` control can be customized to display multiline text using the following properties:
 
 * Multiline - Spans the text of the edit control to more than one line.
 * WordWrap - Indicates whether the lines are automatically word-wrapped for the multiline edit controls.
