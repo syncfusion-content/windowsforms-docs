@@ -38,6 +38,8 @@ In order to add control manually, do the below steps,
 {% tabs %}
 {% highlight c# %}
 
+//Adding Namespace for TreeViewAdv control
+
 using Syncfusion.Windows.Forms.Tools;
 
 namespace WindowsFormsApplication1
@@ -47,6 +49,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            //Intialize new instance of TreeViewAdv
             TreeViewAdv treeviewadv1 = new TreeViewAdv();
             treeviewadv1.Location = new System.Drawing.Point(85, 108);
             treeviewadv1.Size = new System.Drawing.Size(240, 150);
@@ -56,6 +59,9 @@ namespace WindowsFormsApplication1
 }
 {% endhighlight %}
 {% highlight vb %}
+
+'Adding Namespace for TreeViewAdv control
+
 Imports using Syncfusion.Windows.Forms.Tools
 
 Namespace WindowsFormsApp4
@@ -64,6 +70,7 @@ Namespace WindowsFormsApp4
 
         Public Sub New()
             InitializeComponent()
+            'Intialize new instance of TreeViewAdv
             Dim treeviewadv1 As TreeViewAdv = New TreeViewAdv()
             treeviewadv1.Location = New System.Drawing.Point(85, 108)
             treeviewadv1.Size = New System.Drawing.Size(240, 150)
@@ -134,7 +141,7 @@ namespace WindowsFormsApp4
 
             InitializeComponent();
 
-            //Intialize instance of TreeViewAdv
+            //Intialize new instance of TreeViewAdv
             treeView1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
             treeView1.Location = new System.Drawing.Point(202, 75);
             treeView1.Name = "treeView1";
@@ -206,7 +213,7 @@ Namespace WindowsFormsApp4
         Public Sub New()
             InitializeComponent()
 
-            'Intialize instance of TreeViewAdv.
+            'Intialize new instance of TreeViewAdv.
             treeView1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv()
             treeView1.Location = New System.Drawing.Point(202, 75)
             treeView1.Name = "treeView1"
