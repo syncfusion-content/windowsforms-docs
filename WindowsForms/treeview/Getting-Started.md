@@ -21,11 +21,11 @@ In this walk through, users will create WinForms application that contains TreeV
 
 ### Creating the Project
 
-Create new Windows Forms Project in Visual Studio to display TreeViewAdv with data objects.
+Create new Windows Forms Project in Visual Studio to display [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) with data objects.
 
 ## Adding control via Designer
 
-TreeViewAdv control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+[TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 ![Windows Forms TreeViewAdv through designer](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Adding control manually in C#
@@ -119,6 +119,10 @@ Create the TreeViewAdv control instance and add newly created instance of TreeNo
 
 {% highlight c# %}
 
+//Adding Namespace for TreeViewAdv control
+
+using Syncfusion.Windows.Forms.Tools;
+
 namespace WindowsFormsApp4
 {
     public partial class Form1 : Form
@@ -129,20 +133,35 @@ namespace WindowsFormsApp4
         {
 
             InitializeComponent();
+
             //Intialize instance of TreeViewAdv
             treeView1 = new Syncfusion.Windows.Forms.Tools.TreeViewAdv();
             treeView1.Location = new System.Drawing.Point(202, 75);
             treeView1.Name = "treeView1";
-            //Create instance of TreeNodeAdv
+
+            //Create instance of TreeNodeAdv named treeNode1
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode1 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node1");
+
+            //Adding the subnode of [treeNode1] in Root [treeNode2].
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode2 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node0", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
             treeNode1});
+
+            //Create instance of TreeNodeAdv named treeNode3
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode3 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node3");
+
+            //Adding the subnode of [treeNode3 ] in Root [treeNode4].
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode4 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node2", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
             treeNode3});
+
+            // Create instance of TreeNodeAdv named treeNode5
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode5 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node5");
+
+            //Adding the subnode of [treeNode5] in Root [treeNode6].
             Syncfusion.Windows.Forms.Tools.TreeNodeAdv treeNode6 = new Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node4", new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
             treeNode5});
+
+            //Assigning the text and Name
+
             treeNode1.Name = "Node1";
             treeNode1.Text = "Node1";
             treeNode2.Name = "Node0";
@@ -155,12 +174,16 @@ namespace WindowsFormsApp4
             treeNode5.Text = "Node5";
             treeNode6.Name = "Node4";
             treeNode6.Text = "Node4";
-            //Add the nodes in TreeNodeAdv
+
+            //Add the nodes in TreeViewAdv nodes collection
+            
             treeView1.Nodes.AddRange(new Syncfusion.Windows.Forms.Tools.TreeNodeAdv[] {
             treeNode2,
             treeNode4,
             treeNode6});
             treeView1.Size = new System.Drawing.Size(377, 250);
+
+           // Add the TreeViewAdv to the Form controls
             this.Controls.Add(treeView1);
         }
     }
@@ -170,6 +193,10 @@ namespace WindowsFormsApp4
 
 {% highlight vb %}
 
+'Adding Namespace for TreeViewAdv control
+
+Imports using Syncfusion.Windows.Forms.Tools
+
 Namespace WindowsFormsApp4
  Public Partial Class Form1
     Inherits Form
@@ -178,17 +205,32 @@ Namespace WindowsFormsApp4
 
         Public Sub New()
             InitializeComponent()
-            'Intialize new instance of node.
+
+            'Intialize instance of TreeViewAdv.
             treeView1 = New Syncfusion.Windows.Forms.Tools.TreeViewAdv()
             treeView1.Location = New System.Drawing.Point(202, 75)
             treeView1.Name = "treeView1"
-            'Create instance of TreeNodeAdv
+
+            'Create instance of TreeNodeAdv named treenode1
             Dim treeNode1 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node1")
+
+            'Adding the subnode of [treeNode1] in Root [treeNode2]
             Dim treeNode2 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node0", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode1})
+
+            'Create instance of TreeNodeAdv named treeNode3
             Dim treeNode3 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node3")
+
+            'Adding the subnode of [treeNode3] in Root [treeNode4].
             Dim treeNode4 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node2", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode3})
+
+            'Create instance of TreeNodeAdv named treeNode5
             Dim treeNode5 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node5")
+
+            'Adding the subnode of [treeNode5] in Root [treeNode6].
             Dim treeNode6 As Syncfusion.Windows.Forms.Tools.TreeNodeAdv = New Syncfusion.Windows.Forms.Tools.TreeNodeAdv("Node4", New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode5})
+
+            'Assigning the text and Name
+
             treeNode1.Name = "Node1"
             treeNode1.Text = "Node1"
             treeNode2.Name = "Node0"
@@ -201,9 +243,13 @@ Namespace WindowsFormsApp4
             treeNode5.Text = "Node5"
             treeNode6.Name = "Node4"
             treeNode6.Text = "Node4"
-            'Add the nodes in TreeNodeAdv
+
+            'Add the nodes in TreeViewAdv nodes collection
+
             treeView1.Nodes.AddRange(New Syncfusion.Windows.Forms.Tools.TreeNodeAdv() {treeNode2, treeNode4, treeNode6})
             treeView1.Size = New System.Drawing.Size(377, 250)
+
+            'Add the TreeViewAdv to the Form controls
             Me.Controls.Add(treeView1)
         End Sub
     End Class
@@ -219,7 +265,7 @@ End Namespace
 
 ### Root Lines
 
-We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) and TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) are set as `true`.
+We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) and[TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) are set as `true`.
 
 When [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) is set to `false`, the connecting lines will not be displayed for the entire control.
 
