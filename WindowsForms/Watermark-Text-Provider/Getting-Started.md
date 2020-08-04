@@ -137,36 +137,13 @@ bannerTextProvider1.SetBannerText(textBoxExt, bannerTextInfo)
 
 N> Make sure to clear the default value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Text.html) property of the control before setting the banner text.
 
-The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Visible.html), [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Text.html), [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Color.html), [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Font.html) and [Mode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Mode.html) properties allow you to customize the banner text.
+The [Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Visible.html) property allows you to customize visibilty of BannerTextProvider control. [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Text.html) and [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Color.html) properties allows you to set the watermark text and it's forecolor. The [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Font.html) property allows to customize the Font of watermark.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td> Visible
-</td><td>
-Indicates whether the banner text should be visible.</td></tr>
-<tr>
-<td> Text
-</td><td>
-Sets the banner text.</td></tr>
-<tr>
-<td> Color
-</td><td>
-Sets the banner text color.</td></tr>
-<tr>
-<td> Font
-</td><td>
-Sets the font style for the banner text.</td></tr>
-<tr>
-<td> Mode
-</td><td>
-Specifies the rendering mode of the banner text. The modes are,<br/>
-1. FocusMode - The banner text disappears when the control gets focus.<br/>
-2. EditMode - The banner text disappears only when the control is in Edit mode or when the associated text box is not empty.</td></tr>
-</table>
+The rendering mode for disappering the banner text can be customized by using [Mode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.BannerTextInfo~Mode.html) property using the following values,
+
+* FocusMode - The banner text disappears when the control gets focus.
+* EditMode - The banner text disappears only when the control is in Edit mode or when the associated text box is not empty.
+
 
 {% tabs %}
 {% highlight c# %}
