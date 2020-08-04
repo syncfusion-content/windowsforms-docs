@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Filtering
+# Filtering with Windows Forms DataGrid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic Filtering
@@ -391,13 +391,13 @@ When the DateTime type value is bound to the GridColumn, then `Date Filter` is l
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img11.png"/>
+<img src="Filtering_images/Filtering_img11.png" alt="Text Filter Dialog"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img12.png"/>
+<img src="Filtering_images/Filtering_img12.png" alt="Number Filter Dialog"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img13.png"/>
+<img src="Filtering_images/Filtering_img13.png" alt="Date Filter Dialog"/>
 </td>
 </tr>
 <tr>
