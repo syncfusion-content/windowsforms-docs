@@ -23,15 +23,13 @@ TreeView control displays a collection of data in hierarchical tree structure an
 
 *	Provides support for advanced drag and drop of the nodes.
 
-*   [TreeViewAdv](
-https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) can associate the context menus with the option to show and hide wherever necessary
+*   [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) can associate the context menus with the option to show and hide wherever necessary
 
 *	Provides automatic scrolling support for the TreeViewAdv
 
 *	Customize the complete look and feel of the control.
 
-*	Sort [TreeViewAdv](
-https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) items at run time.
+*	Sort [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) items at run time.
 
 *	Add images to expanded and collapsed states of TreeViewAdv.
 
