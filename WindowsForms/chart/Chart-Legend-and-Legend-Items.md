@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart-Legend-and-Legend-Items | Windows Forms | Syncfusion
-description: This section explains about legend and it's customization in the chart control
+description: This help document section explains about the legend and it's customization in the syncfusion windows forms chart control
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Legend
+## Chart Legend
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 
@@ -580,7 +580,7 @@ Lets you show / hide the legend item.</td></tr>
 
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
 
-#### seealso
+#### See Also
 
 [ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend)
 
