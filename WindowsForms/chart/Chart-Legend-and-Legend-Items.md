@@ -580,13 +580,11 @@ Lets you show / hide the legend item.</td></tr>
 
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
 
-{% seealso %}
+#### seealso
 
 [ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend)
 
-{% endseealso %}
-
-## Customizing LegendItem Image
+### Customizing LegendItem Image
 
 There are several options to customize the image rendered in the [Legend](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~Legend.html). The following properties let you do so:
 
@@ -814,7 +812,7 @@ Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.Circle
 {% endtabs %}
 
 
-#### More Symbol Shapes
+### More Symbol Shapes
 
 [ChartLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) has the [Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Symbol.html) property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
 
@@ -908,6 +906,7 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
 
+
 ### Hiding Icons
 
 Icons for legend items can be hidden in any of the following ways:
@@ -945,4 +944,37 @@ Me.chartControl1.Legend.Items(0).ShowIcon = False
 Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.None
 
 {% endhighlight %}
+{% endtabs %}
+
+
+### Custom Legend Item Border Customization 
+
+The ChartLegend items can be customized by using the ItemStyle property. The following properties are used to customize the legendItem.
+
+* ShowSymbol – Used to show the legend item symbol
+* Border – Used to modify the border color, width and etc
+* Symbol – Used to modify the shape, color and etc
+
+{% tabs %}  
+
+{% highlight c# %}
+
+ChartLegendItem legendItem1 = new ChartLegendItem();
+
+legendItem1.ItemStyle.ShowSymbol = true;
+
+legendItem1.ItemStyle.Border.Color = Color.LightBlue;
+
+legendItem1.ItemStyle.Border.Width = 10;
+
+legendItem1.ItemStyle.Symbol.Shape = ChartSymbolShape.Circle;
+
+legendItem1.ItemStyle.Symbol.Color = Color.Yellow;
+
+legendItem1.Text = "Legend Item";
+
+this.chartControl1.Legend.CustomItems = new ChartLegendItem[] { legendItem1 };
+
+{% endhighlight %}
+
 {% endtabs %}
