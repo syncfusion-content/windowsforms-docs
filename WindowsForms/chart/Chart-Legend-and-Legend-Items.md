@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Chart Legend
+## Chart legend
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 
@@ -580,7 +580,7 @@ Lets you show / hide the legend item.</td></tr>
 
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img8.jpeg)
 
-#### See Also
+#### See also
 
 [ChartLegend](/windowsforms/chart/chart-legend-and-legend-items#chartlegend)
 
@@ -812,7 +812,7 @@ Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.Circle
 {% endtabs %}
 
 
-### More Symbol Shapes
+### More symbol shapes
 
 [ChartLegendItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem.html) has the [Symbol](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Chart.Base~Syncfusion.Windows.Forms.Chart.ChartLegendItem~Symbol.html) property, using which we can customize the symbols for particular legend items. This setting overrides the Series [0].Style.Symbol settings. 
 
@@ -907,7 +907,7 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 ![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
 
 
-### Hiding Icons
+### Hiding icons
 
 Icons for legend items can be hidden in any of the following ways:
 
@@ -947,7 +947,7 @@ Me.chartControl1.Legend.Items(0).Type = ChartLegendItemType.None
 {% endtabs %}
 
 
-### Custom Legend Item Border Customization 
+### Customization of custom legend item 
 
 The ChartLegend items can be customized by using the ItemStyle property. The following properties are used to customize the legendItem.
 
@@ -955,9 +955,9 @@ The ChartLegend items can be customized by using the ItemStyle property. The fol
 * Border – Used to modify the border color, width and etc
 * Symbol – Used to modify the shape, color and etc
 
-{% tabs %}  
-
 {% highlight c# %}
+
+[C#]
 
 ChartLegendItem legendItem1 = new ChartLegendItem();
 
@@ -976,5 +976,3 @@ legendItem1.Text = "Legend Item";
 this.chartControl1.Legend.CustomItems = new ChartLegendItem[] { legendItem1 };
 
 {% endhighlight %}
-
-{% endtabs %}
