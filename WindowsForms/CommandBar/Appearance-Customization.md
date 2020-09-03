@@ -13,7 +13,7 @@ In this topic the customization and enhancing the appearance of the command bar 
 
 ## Close button
 
-The close button of command bar gets displayed when it is in the float state. This appearance can be customized done via the [`HideCloseButton`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~HideCloseButton.html) property. By default the property is set to `false` and always be visible whenever the command bar is in float state. The below code snippet shows the close button is being hidden.
+The close button of command bar gets displayed when it is in the float state. This appearance can be customized done via the [`HideCloseButton`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_HideCloseButton) property. By default the property is set to `false` and always be visible whenever the command bar is in float state. The below code snippet shows the close button is being hidden.
 
 {% tabs %}
 
@@ -35,11 +35,11 @@ The below image shows the disabled close button in float state.
 
 ![Close button hidden](Appearance-Customization-images/closeButton_hidden.png)
 
-The close button state can also be retrieved from the [`GetCloseButtonState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetCloseButtonState.html) method.
+The close button state can also be retrieved from the [`GetCloseButtonState`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_GetCloseButtonState) method.
 
 ## Chevron button
 
-The term "chevron" is used for a menu that contains the toolbar icons that do not fit in the space available on the toolbar. The chevron button can be customized via the [`HideChevron`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~HideChevron.html) property.
+The term "chevron" is used for a menu that contains the toolbar icons that do not fit in the space available on the toolbar. The chevron button can be customized via the [`HideChevron`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_HideChevron) property.
 
 The below image shows the default visibility of chevron button.
 
@@ -69,15 +69,15 @@ The below image shows the hidden chevron button in the docked state.
 
 N> Chevron button is visible by default only in docked state of the command bar.
 
-The chevron button state can be retrieved via the [IsChevronVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~IsChevronVisible.html) property or the command bar instance.
+The chevron button state can be retrieved via the [IsChevronVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_IsChevronVisible) property or the command bar instance.
 
-The color value applied for chevron can be customized with the [`ChevronColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~ChevronColor.html) property. The below code snippet shows a new chevron color is being applied to the chevron button.
+The color value applied for chevron can be customized with the [`ChevronColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_ChevronColor) property. The below code snippet shows a new chevron color is being applied to the chevron button.
 
 ![Chevron color modified](Appearance-Customization-images/chevronColor_Red.png)
 
 ## Drop down button
 
-The drop down button of command bar gets displayed either it is in the float state or docked state. This appearance can be customized done via the [`HideDropDownButton`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~HideDropDownButton.html) property. By default the property is set to `false` and always be visible. The below code snippet shows the drop down button is being hidden.
+The drop down button of command bar gets displayed either it is in the float state or docked state. This appearance can be customized done via the [`HideDropDownButton`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_HideDropDownButton) property. By default the property is set to `false` and always be visible. The below code snippet shows the drop down button is being hidden.
 
 {% tabs %}
 
@@ -101,11 +101,11 @@ The below image shows the disabled close button in float state.
 
 ![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png "Command bar in docked state")
 
-The drop down button state also can be retrieved from the [`GetDropDownState`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~GetDropDownState.html) method.
+The drop down button state also can be retrieved from the [`GetDropDownState`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_GetDropDownState) method.
 
 ## Cursor
 
-The mouse cursor settings of the command bar can be customized using the [`Cursor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~Cursor.html) property. The below code snippet shows the command bar is set with `Hand` value whenever the command bar bounds is reached.
+The mouse cursor settings of the command bar can be customized using the [`Cursor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_Cursor) property. The below code snippet shows the command bar is set with `Hand` value whenever the command bar bounds is reached.
 
 {% tabs %}
 
@@ -125,11 +125,11 @@ Me.commandBar1.Cursor = System.Windows.Forms.Cursors.Hand
 
 ![Mouse cursor of command bar had been modified to Hand](Appearance-Customization-images/commandbar_Cursor.png).
 
-Also, the [`ResetCursor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~ResetCursor.html) method can be used to, reset the cursor state to default state.
+Also, the [`ResetCursor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_ResetCursor) method can be used to, reset the cursor state to default state.
 
 ## Gripper
 
-The gripper allows the user to dock / float the command bar dynamically. In order to hide the gripper the [`HideGripper`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~HideGripper.html) property is used. By default it is set to `false`. The below code snippet shows the gripper is being hidden.
+The gripper allows the user to dock / float the command bar dynamically. In order to hide the gripper the [`HideGripper`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_HideGripper) property is used. By default it is set to `false`. The below code snippet shows the gripper is being hidden.
 
 {% tabs %}
 
@@ -178,11 +178,11 @@ Me.commandBarController1.BackColor = Color.Green
 
 ![Dock bar back color customized](Appearance-Customization-images/dockbar_backColor_Modified.png)
 
-The default back color of the docked bar can be applied via the [`ResetBackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~ResetBackColor.html) method of the command bar controller instance.
+The default back color of the docked bar can be applied via the [`ResetBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_ResetBackColor) method of the command bar controller instance.
 
 ### Command bar background
 
-The command bar back color can be customized by specifying the required color via the [`BackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~BackColor.html) property of the command bar instance. The below code snippet shows the back color of the command bar is being customized.
+The command bar back color can be customized by specifying the required color via the [`BackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_BackColor) property of the command bar instance. The below code snippet shows the back color of the command bar is being customized.
 
 {% tabs %}
 
@@ -202,7 +202,7 @@ Me.commandBar1.BackColor = Color.Green
 
 ![Dock bar back color customized](Appearance-Customization-images/commandbar_backColor_Modified.png)
 
-The default back color of the command bar can be applied by reseting the command bar back color via the [`ResetBackColor`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~ResetBackColor.html). Once the default back color gets modified the [`BackColorChanged`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs.
+The default back color of the command bar can be applied by reseting the command bar back color via the [`ResetBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_ResetBackColor). Once the default back color gets modified the [`BackColorChanged`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs.
 
 ## Command bar text
 

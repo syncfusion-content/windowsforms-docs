@@ -9,7 +9,7 @@ documentation: ug
 
 # How to enable shadow of the Office2007Form?
 
-Shadow of the Office2007Form can be enabled or disabled using the [DropShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~DropShadow.html) property.
+Shadow of the Office2007Form can be enabled or disabled using the [DropShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_DropShadow) property.
 
 {% tabs %}
 

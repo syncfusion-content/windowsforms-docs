@@ -13,7 +13,7 @@ Summaries can be defined for the pivot calculation values in the pivot grid. Piv
 
 ## Summary Types
 
-Pivot grid summarizes the data for various data types by using the [SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.SummaryType.html) enumerator. The SummaryType value should be defined while defining the PivotCalculation items using [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) class to specify the type of the summary. The following summary types can be set to a computation item.
+Pivot grid summarizes the data for various data types by using the [SummaryType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.SummaryType.html) enumerator. The SummaryType value should be defined while defining the PivotCalculation items using [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) class to specify the type of the summary. The following summary types can be set to a computation item.
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ Summary type of pivot calculation values can be customized by using the pivot co
 
 ## Custom Summaries
 
-PivotGrid allows to set custom summaries for pivot calculation values by creating a custom [SummaryBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.SummaryBase.html) class. For creating a custom summary, a new class need to be added by inheriting the abstract class `SummaryBase`. Summary logics can be overridden by overriding the following methods: `Combine()`, `CombineSummary()`, `GetResult()`, `GetInstance()` and `Reset()`.
+PivotGrid allows to set custom summaries for pivot calculation values by creating a custom [SummaryBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.SummaryBase.html) class. For creating a custom summary, a new class need to be added by inheriting the abstract class `SummaryBase`. Summary logics can be overridden by overriding the following methods: `Combine()`, `CombineSummary()`, `GetResult()`, `GetInstance()` and `Reset()`.
 
 Refer to the below code sample to define custom summaries for pivot calculation values.
 

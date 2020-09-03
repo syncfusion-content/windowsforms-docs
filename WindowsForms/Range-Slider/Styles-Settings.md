@@ -9,7 +9,7 @@ documentation: ug
 
 # Style settings
 
-Range Slider supports different visual styles for its appearance through the enumeration [RangeSliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider+RangeSliderStyle.html). Some of the available [VisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~VisualStyle.html) are as follows:
+Range Slider supports different visual styles for its appearance through the enumeration [RangeSliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.RangeSliderStyle.html). Some of the available [VisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_VisualStyle) are as follows:
 
 * Default
 * Metro

@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Mode
 
-Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ContextMenuStripEx~EnableTouchMode.html) property of ContextMenuStripEx control.
+Touch mode is used to access the control easily in touch devices. This option can be enabled using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.html#Syncfusion_Windows_Forms_Tools_ContextMenuStripEx_EnableTouchMode) property of ContextMenuStripEx control.
 
 
 The below code snippet shows how touch mode is enabled in ContextMenuStripEx control.

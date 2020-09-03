@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -22,7 +22,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 ## Creating simple application with TileLayout
 
-You can create the Windows Forms application with [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control as follows:
+You can create the Windows Forms application with [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control as follows:
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
@@ -30,11 +30,11 @@ You can create the Windows Forms application with [TileLayout](https://help.sync
 
 ### Creating the project
 
-Create a new Windows Forms project in the Visual Studio to display the [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) with functionalities.
+Create a new Windows Forms project in the Visual Studio to display the [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) with functionalities.
 
 ## Adding control via designer
 
-The [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -47,13 +47,13 @@ The [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusi
 
 **Adding LayoutGroup into TileLayout**
 
-[LayoutGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.LayoutGroup.html) can be added through `Groups Collection` in Smart Tags of [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html).
+[LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) can be added through `Groups Collection` in Smart Tags of [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
 ![TileLayout control added by designer](Getting-Started_images/TileLayout-img2.png)
 
 **Adding ImageStreamer into LayoutGroup**
 
-[ImageStreamer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html) can be added into LayoutGroup through the [Items](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.LayoutGroup~Items.html) collection in PropertyGrid. 
+[ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) can be added into LayoutGroup through the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html#Syncfusion_Windows_Forms_Tools_LayoutGroup_Items) collection in PropertyGrid. 
 
 ![Adding tile images](Getting-Started_images/TileLayout-img3.png)
 
@@ -88,7 +88,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %} 
 
-**Step 3** - Create [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
+**Step 3** - Create [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ Me.Controls.Add(tileLayout1)
 
 **Adding LayoutGroup into TileLayout**
 
-Create an instance of [LayoutGroup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add it to [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html).
+Create an instance of [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html) and add it to [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ Me.tileLayout1.Controls.Add(Me.layoutGroup2)
 
 **Adding ImageStreamer into LayoutGroup**
 
-Create instance of [ImageStreamer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer.html)  and add it the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.LayoutGroup.html).
+Create instance of [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html)  and add it the [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html).
 
 {% tabs %}
 

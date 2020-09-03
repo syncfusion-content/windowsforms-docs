@@ -20,7 +20,7 @@ The three specified formats are explained below
 
 *	**Percent** - The Currency format specifier converts a number to string and it is used for displaying percentage values in percent format. The percentage text may contain percent symbol, percent decimal separator, percent decimal digit and percent group size. This symbol can be customized by using NumberFormatInfo.
 
-N> If [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~NumberFormatInfo.html) is null then the Text will be parsed based on CurrentUICulture.
+N> If [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) is null then the Text will be parsed based on CurrentUICulture.
 
 Numeric FormatMode
 
@@ -80,7 +80,7 @@ Me.numericTextBox.FormatMode = Syncfusion.WinForms.Input.Enums.FormatMode.Curren
 
 ## Format using NumberFormatInfo
 
-The [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~NumberFormatInfo.html) class contains culture-specific information that is used when you format and parse numeric values. This NumberFormatInfo includes
+The [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) class contains culture-specific information that is used when you format and parse numeric values. This NumberFormatInfo includes
  
 *	Currency symbol
 *	Decimal symbol
@@ -88,7 +88,7 @@ The [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Sf
 *	Group separator symbol and 
 *	Symbols for negative signs.
 
-Using this [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~NumberFormatInfo.html), we can define how the values can be formatted and display. We can also format based on culture by specifying in NumberFormatInfo. 
+Using this [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo), we can define how the values can be formatted and display. We can also format based on culture by specifying in NumberFormatInfo. 
 
 {% tabs %}
 
@@ -118,11 +118,11 @@ NumberFormatInfo numberFormat = new NumberFormatInfo();
 
 ![Format using number format info](Formatting_images/NumberFormatInfo.png)
 
-N> The Value in the SfNumericTextBox can be parsed by using the [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~NumberFormatInfo.html) property. If the NumberFormatInfo is not initialized, then the Value will be parsed based on the CurrentUICulture.
+N> The Value in the SfNumericTextBox can be parsed by using the [NumberFormatInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_NumberFormatInfo) property. If the NumberFormatInfo is not initialized, then the Value will be parsed based on the CurrentUICulture.
 
 ## Hiding trailing zeros
 
-Trailing zeros are a sequence of 0 in the decimal representation of a number, after which no other digits follow. Trailing zeros to the right of the decimal point do not affect value of a number, it can be removed by enabling [HideTrailingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~HideTrailingZeros.html) property.
+Trailing zeros are a sequence of 0 in the decimal representation of a number, after which no other digits follow. Trailing zeros to the right of the decimal point do not affect value of a number, it can be removed by enabling [HideTrailingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_HideTrailingZeros) property.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ Me.numericTextBox.HideTrailingZeros = True
 
 ## Prefix and Suffix
 
-Addition details about the value will always improve the meaning of the value. This type of details can be displayed along with Value using [Prefix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Prefix.html) and [Suffix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~Suffix.html) property. For eg: Values for speed, weight, length can be displayed with units as Km/h, Kg, m 
+Addition details about the value will always improve the meaning of the value. This type of details can be displayed along with Value using [Prefix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Prefix) and [Suffix](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_Suffix) property. For eg: Values for speed, weight, length can be displayed with units as Km/h, Kg, m 
 
 {% tabs %}
 
@@ -206,4 +206,4 @@ Me.numericTextBox.WatermarkText = "Enter your age"
 
 ![WatermarkText support](Formatting_images/Watermark.png)
 
-N> The [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~WatermarkText.html) will be visible when value is null and the control doesn’t have the focus.
+N> The [WatermarkText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html#Syncfusion_WinForms_Input_SfNumericTextBox_WatermarkText) will be visible when value is null and the control doesn’t have the focus.

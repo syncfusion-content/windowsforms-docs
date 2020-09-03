@@ -17,13 +17,13 @@ N> You can navigate between the pages at Design Time also. See Page Navigation a
 
 By default, all the buttons are visible for all the Wizard pages. To change their visibility, use the below properties in individual pages.
 
-* [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~BackVisible.html)
-* [CancelVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~CancelVisible.html)
-* [FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FinishVisible.html)
-* [HelpVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~HelpVisible.html)
-* [NextVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~NextVisible.html)
+* [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackVisible)
+* [CancelVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_CancelVisible)
+* [FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FinishVisible)
+* [HelpVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_HelpVisible)
+* [NextVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextVisible)
 
-N> When you use more than one wizard page, you may set the [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~BackVisible.html) property of the first page to `true` to hide the back button.
+N> When you use more than one wizard page, you may set the [BackVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackVisible) property of the first page to `true` to hide the back button.
 
 {% tabs %}
 
@@ -63,15 +63,15 @@ Me.wizardControlPage1.FinishVisible = True
 
 You can enable or disable the buttons using the respective button enabled properties.
 
-* [BackEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~BackEnabled.html)
-* [CancelEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~CancelEnabled.html)
-* [FinishEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FinishEnabled.html)
-* [HelpEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~HelpEnabled.html)
-* [NextEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~NextEnabled.html)
+* [BackEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackEnabled)
+* [CancelEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_CancelEnabled)
+* [FinishEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FinishEnabled)
+* [HelpEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_HelpEnabled)
+* [NextEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextEnabled)
 
 ### Adding finish button
 
-In order to display the Finish button in the last wizard page, user should set [CancelOverFinish](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~CancelOverFinish.html) property in the [WizardControlPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage.html) Collection Editor to `false`. This property determines if the Cancel button is positioned over the Finish button. If this property is set to `true`, it will override the [FinishVisible]([FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FinishVisible.html)) property.
+In order to display the Finish button in the last wizard page, user should set [CancelOverFinish](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_CancelOverFinish) property in the [WizardControlPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) Collection Editor to `false`. This property determines if the Cancel button is positioned over the Finish button. If this property is set to `true`, it will override the [FinishVisible]([FinishVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FinishVisible)) property.
 
 {% tabs %}
 
@@ -300,7 +300,7 @@ this.wizardControl1.CancelButton.FlatAppearance.MouseOverBackColor = System.Draw
 
 
 
-N> You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using [WizardControl.CancelButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~CancelButton.html), [WizardControl.FinishButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~FinishButton.html), [WizardControl.HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~HelpButton.html) and [WizardControl.NextButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~NextButton.html) properties respectively.
+N> You can access the properties of CancelButton, FinishButton, HelpButton and NextButton using [WizardControl.CancelButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_CancelButton), [WizardControl.FinishButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_FinishButton), [WizardControl.HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_HelpButton) and [WizardControl.NextButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_NextButton) properties respectively.
 
 ![Button appearance](Wizard-Package_images/Wizard-Package_img28.jpeg)
 

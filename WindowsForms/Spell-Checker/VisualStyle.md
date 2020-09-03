@@ -25,7 +25,7 @@ It has the below themes.
 
 •	Office2016Black
 
-The following code example allows you to set the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SpellCheckerAdv~VisualStyle.html) for the SpellCheckerAdv.
+The following code example allows you to set the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_VisualStyle) for the SpellCheckerAdv.
 
 ## Default
 

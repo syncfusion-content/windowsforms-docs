@@ -74,7 +74,7 @@ sfComboBox1.Style.DropDownButtonStyle.FocusedBackColor = Color.Pink
 
 ## Customizing drop-down appearance
 
-Appearance of the drop-down control can be customized by setting the [DropDownStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DropDownStyle.html) property.
+Appearance of the drop-down control can be customized by setting the [DropDownStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DropDownStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -91,7 +91,7 @@ sfComboBox1.Style.DropDownStyle.GripperForeColor = Color.Blue
 
 ### Setting image in drop-down list item
 
-Images can be added to the drop-down list items by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html) event.
+Images can be added to the drop-down list items by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -142,7 +142,7 @@ End Sub
 
 ## Conditional styling
 
-Appearance of the drop-down list view items can be customized before opening the drop-down by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html) event.
+Appearance of the drop-down list view items can be customized before opening the drop-down by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html) event.
 
 {% tabs %}
 {% highlight c# %}

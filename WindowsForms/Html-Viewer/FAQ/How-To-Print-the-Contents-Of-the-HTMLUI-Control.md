@@ -9,7 +9,7 @@ documentation: ug
 
 # How to print the contents of the HTMLUI control?
 
-The document available in the HTMLUI control can be printed with the help of the [HTMLUIPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIPrintDocument.html) class. The Print method of this class is used to start the document printing process.
+The document available in the HTMLUI control can be printed with the help of the [HTMLUIPrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIPrintDocument.html) class. The Print method of this class is used to start the document printing process.
 
 {% tabs %}
 

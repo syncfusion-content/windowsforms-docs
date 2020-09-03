@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Sorting
-The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property and by using the custom logic.
+The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property and by using the custom logic.
 
 ## Programmatic sorting
-Sort the data by creating the [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.SortDescriptor.html) with required property name and direction and add it into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property.
+Sort the data by creating the [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html) with required property name and direction and add it into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property.
 
 SortDescriptor object holds the following three properties:
 
@@ -35,7 +35,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Co
 ![](Sorting_images/Sorting_img1.png)
                
 ## Custom sorting
-Sort the items based on the custom logic. It can be applied to the [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortComparer.html) or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.SortDescriptor~Comparer.html) property added to the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
+Sort the items based on the custom logic. It can be applied to the [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortComparer) or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html#Syncfusion_DataSource_SortDescriptor_Comparer) property added to the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) collection.
 
 In custom sort comparer, all the items in SfListView is sorted with length of an item.
 
@@ -104,7 +104,7 @@ public class CustomSortComparer : IComparer(Of Object), ISortDirection
 ![](Sorting_images/Sorting_img2.png)
 
 ## Sort the items with grouping
-The SfListView allows sorting the items with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required property name.
+The SfListView allows sorting the items with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) with required property name.
 
 {% tabs %}
 {% highlight c# %}

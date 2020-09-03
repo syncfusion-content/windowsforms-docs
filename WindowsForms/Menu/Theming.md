@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming
 
-In this section, the various themes supported in menu control is discussed. The required theme can be set via the [`Style`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~Style.html) property of the menu instance. The following are the list of applicable themes to menu control.
+In this section, the various themes supported in menu control is discussed. The required theme can be set via the [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_Style) property of the menu instance. The following are the list of applicable themes to menu control.
 
 * Default theme
 * Metro theme

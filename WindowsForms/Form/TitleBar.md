@@ -11,7 +11,7 @@ documentation: ug
 
 ## Title bar height
 
-Height of the title bar can be changed by using the [Style.TitleBar.Height](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~Height.html) property.
+Height of the title bar can be changed by using the [Style.TitleBar.Height](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_Height) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +25,7 @@ Me.Style.TitleBar.Height = 45
 
 ## Text alignment
 
-Text on the title bar can be aligned horizontally and vertically by using the [Style.TitleBar.TextHorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~TextHorizontalAlignment.html) and [Style.TitleBar.TextVerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~TextVerticalAlignment.html) properties respectively.
+Text on the title bar can be aligned horizontally and vertically by using the [Style.TitleBar.TextHorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_TextHorizontalAlignment) and [Style.TitleBar.TextVerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_TextVerticalAlignment) properties respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ Me.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top
 
 ## Customization of title bar buttons
 
-Icons on the title bar buttons can be changed by loading any custom icon by using the button image properties in the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) such as [CloseButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonImage.html), [MaximizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonImage.html) and [MinimizeButtonImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MinimizeButtonImage.html).
+Icons on the title bar buttons can be changed by loading any custom icon by using the button image properties in the [Style.TitleBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_TitleBar) such as [CloseButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_CloseButtonImage), [MaximizeButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_MaximizeButtonImage) and [MinimizeButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_MinimizeButtonImage).
 
 By default, the title bar buttons have the following states:
 
@@ -49,7 +49,7 @@ By default, the title bar buttons have the following states:
 * Hover state
 * Pressed state
 
-Icons for the title bar buttons can be changed to normal, hovered, and pressed states by using the image properties of the corresponding state such as [CloseButtonHoverImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CloseButtonHoverImage.html) and [MaximizeButtonPressedImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~MaximizeButtonPressedImage.html).
+Icons for the title bar buttons can be changed to normal, hovered, and pressed states by using the image properties of the corresponding state such as [CloseButtonHoverImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_CloseButtonHoverImage) and [MaximizeButtonPressedImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_MaximizeButtonPressedImage).
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ Me.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico")
 
 ### Hiding the title bar buttons
 
-Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true) and [CloseButtonVisible](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~CloseButtonVisible.html) properties.
+Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true) and [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_CloseButtonVisible) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ Me.MaximizeBox = False
 
 ## Rich text formatting
 
-Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~AllowRichText.html) property and adding the proper rich text to the [Text](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.Text)&rd=true) property of the form.
+Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText) property and adding the proper rich text to the [Text](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.Text)&rd=true) property of the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ N> Adding rich text to the `Text` property will have no effect, if the `AllowRic
 
 ## Loading user control to the title bar
 
-The SfForm allows you to load any user control into the title bar instead of title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.SfForm~TitleBarTextControl.html) property. Size of the user control should be set properly to fit the control within the title bar.
+The SfForm allows you to load any user control into the title bar instead of title bar text by using the [TitleBarTextControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_TitleBarTextControl) property. Size of the user control should be set properly to fit the control within the title bar.
 
 {% tabs %}
 {% highlight c# %}
@@ -168,7 +168,7 @@ The following sample shows how to load user control to the title bar:
 
 ## Appearance
 
-Appearance of the title bar can be customized by using the [Style.TitleBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.FormVisualStyle~TitleBar.html) property that contains all the settings for customizing the title bar appearance.
+Appearance of the title bar can be customized by using the [Style.TitleBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.FormVisualStyle.html#Syncfusion_WinForms_Controls_Styles_FormVisualStyle_TitleBar) property that contains all the settings for customizing the title bar appearance.
 
 {% tabs %}
 {% highlight c# %}
@@ -223,7 +223,7 @@ Me.Style.BackColor = Color.DarkGray
 
 ### Icon backcolor
 
-You can customize the back color of the icon in title bar using the [IconBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~IconBackColor.html) property.
+You can customize the back color of the icon in title bar using the [IconBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_IconBackColor) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,7 +244,7 @@ Me.Style.TitleBar.IconBackColor = Color.Olive
 
 ### Caption image
 
-You can change the caption image in title bar by using the [CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImage.html) property.
+You can change the caption image in title bar by using the [CaptionImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_CaptionImage) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -265,7 +265,7 @@ Me.Style.TitleBar.CaptionImage = SystemIcons.Error.ToBitmap()
 
 ### Caption image location
 
-You can change the location of the caption image in title bar by using the [CaptionImageLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo~CaptionImageLocation.html) property.
+You can change the location of the caption image in title bar by using the [CaptionImageLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_CaptionImageLocation) property.
 
 {% tabs %}
 {% highlight c# %}

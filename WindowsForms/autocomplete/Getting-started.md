@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms AutoComplete
 
-This section provides a quick overview for working with the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) in Windows Forms.
+This section provides a quick overview for working with the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) in Windows Forms.
 
 ## Assembly deployment
 
@@ -19,15 +19,15 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/nuget-pac
 
 ## Creating Application with AutoComplete
 
-In this walk through, users will create WinForms application that contains [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
+In this walk through, users will create WinForms application that contains [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
 
 ### Creating the Project
 
-Create new Windows Forms Project in Visual Studio to display [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
+Create new Windows Forms Project in Visual Studio to display [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) control.
 
 ### Adding control via designer
 
-[AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+[AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 
 ![Windows forms AutoComplete drag and drop from toolbox](GettingStarted_images/AutoComplete_Toolbox.png)
 
@@ -45,7 +45,7 @@ Create new Windows Forms Project in Visual Studio to display [AutoComplete](http
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) and TextBox controls.
+2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) and TextBox controls.
 
 {% tabs %}
 {% highlight C# %}
@@ -84,7 +84,7 @@ Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop
 
 ### Enabling via Code
 
-Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method to add the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component with the TextBox control.
+Use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_SetAutoComplete_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_AutoCompleteModes_) method to add the [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) component with the TextBox control.
 
 {% tabs %}
 {% highlight C# %}
@@ -114,7 +114,7 @@ End Sub
 
 ## Creating Datasource for Sample Application
 
-The [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete.html) component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~DataSource.html) property.
+The [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property.
 
 {% tabs %}
 {% highlight C# %}

@@ -12,7 +12,7 @@ The behavior settings of the MaskedEditBox control are discussed below.
 
 ### Prompt and padding character settings
 
-The [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control allows you to add prompt characters in the input.
+The [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control allows you to add prompt characters in the input.
 
 <table>
 <tr>

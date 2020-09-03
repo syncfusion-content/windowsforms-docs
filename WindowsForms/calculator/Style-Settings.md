@@ -13,7 +13,7 @@ This section discusses on the following styles:
 
 ## Button Flat Styles
 
-The flat styles for the button objects in a Calculator control is set using [CalculatorControl.FlatStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~FlatStyle.html) property. The styles are Flat, Popup, Standard (default) and System.
+The flat styles for the button objects in a Calculator control is set using [CalculatorControl.FlatStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_FlatStyle) property. The styles are Flat, Popup, Standard (default) and System.
 
 {% tabs %}
 {% highlight C# %}
@@ -35,7 +35,7 @@ Me.calculatorControl1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 
 ### Themes for the Calculator Control
 
-Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is themed by default. To disable, set [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~ThemesEnabled.html) property to false.
+Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is themed by default. To disable, set [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ThemesEnabled) property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ Me.calculatorControl1.ThemesEnabled = False
 
 ### Button Styles
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports the below button styles. [UseVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~UseVisualStyle.html) property should be set to true to enable button styles for the control.
+The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports the below button styles. [UseVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_UseVisualStyle) property should be set to true to enable button styles for the control.
 
 * Classic (default)
 * Office2000
@@ -89,7 +89,7 @@ Me.calculatorControl1.ButtonStyle = Syncfusion.Windows.Forms.ButtonAppearance.Of
 
 ### OfficeColor Schemes
 
-Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~Office2007Theme.html) property.
+Essential Tools [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) supports all the three OfficeColorSchemes. When the ButtonStyle is set to Office2007 style, the color schemes will be blue by default. It can be modified using [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Office2007Theme) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ Me.calculatorControl1.Office2007Theme = Syncfusion.Windows.Forms.Office2007Theme
 
 ### Custom Colors
 
-We can also apply custom colors to the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by setting [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~Office2007Theme.html) to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
+We can also apply custom colors to the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by setting [Office2007Theme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_Office2007Theme) to "Managed" and specifying the custom color through the ApplyManagedColors method as follows.
 
 {% tabs %}
 {% highlight c# %}

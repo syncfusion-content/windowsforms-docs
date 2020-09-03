@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Serialization of layout state
 
-The Layout state of GroupBar can be saved and loaded using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. To achieve this, follow the step-by-step procedure.
+The Layout state of GroupBar can be saved and loaded using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. To achieve this, follow the step-by-step procedure.
 
 1. Include the required namespaces.
 
@@ -41,7 +41,7 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
    ![Serialization](Overview_images/Overview_img43.jpeg)
 
 
-3. Store the layout information of the selected GroupBar Item in an XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Closing and Save_Button click, call the following method,
+3. Store the layout information of the selected GroupBar Item in an XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Closing and Save_Button click, call the following method,
 
    {% tabs %}
 
@@ -121,7 +121,7 @@ The Layout state of GroupBar can be saved and loaded using the [AppStateSerializ
 
 	{% endtabs %}
 
-4. Retrieve the persisted layout information from the XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Load event and Load_Button click, call the following method,
+4. Retrieve the persisted layout information from the XML file using the [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class. In the Form_Load event and Load_Button click, call the following method,
 
    {% tabs %}
 

@@ -10,20 +10,20 @@ documentation: ug
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 
-* [GroupBarItemAdded](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemAdded_EV.html)
-* [GroupBarItemRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemRemoved_EV.html)
-* [GroupBarItemRenamed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemRenamed_EV.html)
-* [GroupBarItemSelectionChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelectionChanging_EV.html)
-* [GroupBarItemSelected] (https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelected_EV.html)
-* [ShowContextMenu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ShowContextMenu_EV.html)
-* [NavigationPaneDropDownClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~NavigationPaneDropDownClick_EV.html)
-* [ProvideGroupBarItemBrush](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ProvideGroupBarItemBrush_EV.html)
+* [GroupBarItemAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [GroupBarItemRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [GroupBarItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [GroupBarItemSelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [GroupBarItemSelected] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [NavigationPaneDropDownClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
+* [ProvideGroupBarItemBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html)
 
 ## GroupBarItemAdded event
 
-This [GroupBarItemAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemAdded_EV.html) event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
+This [GroupBarItemAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event is handled after a GroupBar Item is added to the GroupBar Items Collection. It is handled to create client controls when new GroupBar Items are added at runtime.
 
-The event handler of this event receives an argument of type [GroupBarItemEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItemEventArgs.html).
+The event handler of this event receives an argument of type [GroupBarItemEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItemEventArgs.html).
 
 {% tabs %}
 
@@ -64,9 +64,9 @@ End Sub
 
 ## GroupBarItemRemoved event
 
-This [GroupBarItemRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemRemoved_EV.html) event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client controls when GroupBar Items are removed at runtime.
+This [GroupBarItemRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event is handled after a GroupBar Item is removed from the GroupBar Items Collection. It is handled to dispose client controls when GroupBar Items are removed at runtime.
 
-The event handler of this event receives an argument of type [GroupBarItemEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItemEventArgs.html).
+The event handler of this event receives an argument of type [GroupBarItemEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItemEventArgs.html).
 
 {% tabs %}
 
@@ -105,9 +105,9 @@ End Sub
 
 ## GroupBarItemRenamed event
 
-This [GroupBarItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemRenamed_EV.html) event is handled after a GroupBar Item is renamed by an in-place edit operation. It is handled when a GroupBar Item is renamed at runtime.
+This [GroupBarItemRenamed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event is handled after a GroupBar Item is renamed by an in-place edit operation. It is handled when a GroupBar Item is renamed at runtime.
 
-The event handler of this event receives an argument of type [GroupItemRenamedEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs.html).
+The event handler of this event receives an argument of type [GroupItemRenamedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupItemRenamedEventArgs.html).
 
 {% tabs %}
 
@@ -146,9 +146,9 @@ End Sub
 
 ## GroupBarItemSelectionChanging event
 
-This [https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelectionChanging_EV.html](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelectionChanging_EV.html) event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at runtime.
+This [https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event occurs when a GroupBar Item is selected in the GroupBar control. It is handled when a GroupBar Item is selected at runtime.
 
-The event handler of this event receives an argument of type [GroupItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItemSelectionChangingEventArgs.html).
+The event handler of this event receives an argument of type [GroupItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItemSelectionChangingEventArgs.html).
 
 {% tabs %}
 
@@ -188,7 +188,7 @@ End Sub
 
 ## GroupBarItemSelected event
 
-[GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelected_EV.html) occurs when a GroupBar Item of the GroupBar control is selected. Accessing the [GroupBar.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~SelectedItem.html) property from within the [GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemSelected_EV.html) event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked.
+[GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) occurs when a GroupBar Item of the GroupBar control is selected. Accessing the [GroupBar.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_SelectedItem) property from within the [GroupBarItemSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) event handler will allow you to determine the item that was clicked. Based on this appropriate command, handling routines can be invoked.
 
 The event handler of this event receives an argument of type EventArgs.
 
@@ -238,7 +238,7 @@ End Sub
 
 ## ShowContextMenu event
 
-[ShowContextMenu event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ShowContextMenu_EV.html) occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
+[ShowContextMenu event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html) occurs on right-clicking the mouse button over the GroupBar control. It is handled when the mouse is right-clicked over the GroupBar control at runtime.
 
 The event handler receives an argument of type EventArgs.
 
@@ -276,9 +276,9 @@ End Sub
 
 ## NavigationPaneDropDownClick event
 
-It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to`true`. The event handler receives an argument of type [NavigationPaneDropDownClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NavigationPaneDropDownClickEventArgs.html) containing data related to this event.
+It occurs when the user clicks on the GroupBar control's Navigation Pane DropDown button. This event is applicable for the Stacked GroupBar i.e. the StackedMode property of the GroupBar should be set to`true`. The event handler receives an argument of type [NavigationPaneDropDownClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationPaneDropDownClickEventArgs.html) containing data related to this event.
 
-The event handler of this event receives an argument of type [NavigationPaneDropDownClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NavigationPaneDropDownClickEventArgs.html).
+The event handler of this event receives an argument of type [NavigationPaneDropDownClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationPaneDropDownClickEventArgs.html).
 
 {% tabs %}
 
@@ -322,9 +322,9 @@ End Sub
 
 ## ProvideGroupBarItemBrush event
 
-It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type [ProvideGroupBarItemBrushEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs.html).
+It occurs when a GroupBar Item is about to be drawn. The event handler receives an argument of type [ProvideGroupBarItemBrushEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs.html).
 
-The event properties associated with the [ProvideGroupBarItemBrushEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs.html) are given below.
+The event properties associated with the [ProvideGroupBarItemBrushEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProvideGroupBarItemBrushEventArgs.html) are given below.
 
 
 

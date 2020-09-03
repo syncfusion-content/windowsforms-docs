@@ -35,7 +35,7 @@ Me.fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
 
 ## ScrollBar settings
 
-By default, the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control has a vertical scrollbar. It can also contain a horizontal scrollbar. This section explains the properties that sets the scrollbar to the control.
+By default, the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control has a vertical scrollbar. It can also contain a horizontal scrollbar. This section explains the properties that sets the scrollbar to the control.
 
 ### Horizontal scrollbar
 
@@ -122,7 +122,7 @@ Me.fontListBox1.Sorted = True
 
 ### AutoCompleting the items
 
-The **FontListBox** control has the ability to auto complete the items as you type in the list box. This feature is enabled by setting the [UseAutoComplete](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox~UseAutoComplete.html) property to true.
+The **FontListBox** control has the ability to auto complete the items as you type in the list box. This feature is enabled by setting the [UseAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html#Syncfusion_Windows_Forms_Tools_FontListBox_UseAutoComplete) property to true.
 
 {% tabs %}
 {% highlight c# %}

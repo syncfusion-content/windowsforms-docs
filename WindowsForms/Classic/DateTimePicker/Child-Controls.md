@@ -20,9 +20,9 @@ This section discusses the properties of DateTimePickerAdv control which customi
 
 The below properties controls the appearance and behavior of the UpDown buttons.
 
-* [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ShowUpDown.html)
-* [ShowUpDownOnFocus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ShowUpDownOnFocus.html)
-* [VSLikeUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~VSLikeUpDown.html)
+* [ShowUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ShowUpDown)
+* [ShowUpDownOnFocus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ShowUpDownOnFocus)
+* [VSLikeUpDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_VSLikeUpDown)
 
 {% tabs %}
 
@@ -63,15 +63,15 @@ In the below image, when focus is on button control, the updown button is hidden
 
 ### DropDown button
 
-DropDown button in the DateTimePickerAdv is visible by default. To hide the dropdown button set [ShowDropButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ShowDropButton.html) property to `false`. The below are the properties available, to change the default appearance of the control.
+DropDown button in the DateTimePickerAdv is visible by default. To hide the dropdown button set [ShowDropButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ShowDropButton) property to `false`. The below are the properties available, to change the default appearance of the control.
 
 ### Color settings
 
 At run time, drop-down button can be in normal mode, pressed mode or in selected mode. Different colors can be set for different modes.
 
-* [DropDownNormalColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DropDownNormalColor.html)
-* [DropDownPressedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DropDownPressedColor.html)
-* [DropDownSelectedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DropDownSelectedColor.html)
+* [DropDownNormalColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_DropDownNormalColor)
+* [DropDownPressedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_DropDownPressedColor)
+* [DropDownSelectedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_DropDownSelectedColor)
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ Me.dateTimePickerAdv2.DropDownSelectedColor = System.Drawing.Color.SteelBlue
 
 {% endtabs %}
 
-N> These settings will be effective only when [DateTimePickerAdv.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Style.html) is Office2003, OfficeXP and VS2005.
+N> These settings will be effective only when [DateTimePickerAdv.Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Style) is Office2003, OfficeXP and VS2005.
 
 ![Drop down colors](DateTimePicker_images/Overview_img188.jpeg)
 
@@ -108,7 +108,7 @@ N> These settings will be effective only when [DateTimePickerAdv.Style](https://
 
 ### Flat appearance
 
-Dropdown can be given flat appearance using [FlatDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~FlatDropButton.html) property. By default it is `false`.
+Dropdown can be given flat appearance using [FlatDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_FlatDropButton) property. By default it is `false`.
 
 
 {% tabs %}
@@ -136,7 +136,7 @@ N> These setting will be effective only when DateTimePickerAdv.Style is Default.
 
 ### Alignment of the DropDown
 
-When the dropdown button is clicked, the calendar pops up, based on the alignment specified in [DropDownAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DropDownAlign.html) property. Default value is Left.
+When the dropdown button is clicked, the calendar pops up, based on the alignment specified in [DropDownAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_DropDownAlign) property. Default value is Left.
 
 {% tabs %}
 
@@ -167,8 +167,8 @@ Me.dateTimePickerAdv1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Ri
 
 The existing dropdown icon can be replaced with a custom image using the below properties.
 
-* [DropDownImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~DropDownImage.html)
-* [StretchDropDownImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~StretchDropDownImage.html)
+* [DropDownImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_DropDownImage)
+* [StretchDropDownImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_StretchDropDownImage)
 
 {% tabs %}
 
@@ -214,7 +214,7 @@ Me.dateTimePickerAdv1.StretchDropDownImage = True
 
 ## CheckBox
 
-By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using [ShowCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ShowCheckBox.html) property and the state can be unchecked through designer, using [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Checked.html) property.
+By default the DateTimePicker control has a checkbox in checked state. This checkbox can be hidden using [ShowCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ShowCheckBox) property and the state can be unchecked through designer, using [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Checked) property.
 
 
 {% tabs %}
@@ -259,7 +259,7 @@ This section discusses the properties related to Checkbox and text field in the 
 
 ### Text field formatting
 
-[Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Format.html) and [CustomFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CustomFormat.html) properties are used to format the text field.
+[Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Format) and [CustomFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomFormat) properties are used to format the text field.
 
 {% tabs %}
 
@@ -331,7 +331,7 @@ Me.dateTimePickerAdv5.CustomFormat = "dd - MM - yyyy"
 
 ### Spacing in TextField
 
-We can specify spacing for the text field in the control, (ex: between month, year and date) using [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Spacing.html) property. Default value is 0.
+We can specify spacing for the text field in the control, (ex: between month, year and date) using [Spacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Spacing) property. Default value is 0.
 
 {% tabs %}
 
@@ -355,7 +355,7 @@ Me.dateTimePickerAdv1.Spacing = 5
 
 
 
-N> The text field can be refreshed programmatically by calling [DateTimePickerAdv.RefreshFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~RefreshFields.html) method.
+N> The text field can be refreshed programmatically by calling [DateTimePickerAdv.RefreshFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_RefreshFields) method.
 
  {% seealso %}
   Navigating between Fields, UpDown and DropDown Buttons
@@ -363,7 +363,7 @@ N> The text field can be refreshed programmatically by calling [DateTimePickerAd
  
 ### Navigation to next field
 
-By default, we have to move the cursor manually, to next field while giving input value in `Value` field of DateTimePickerAdv. Using the property [AutoForwarding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~AutoForwarding.html) of DatePickerAdv, the cursor will move automatically to next field without using navigation keys.
+By default, we have to move the cursor manually, to next field while giving input value in `Value` field of DateTimePickerAdv. Using the property [AutoForwarding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_AutoForwarding) of DatePickerAdv, the cursor will move automatically to next field without using navigation keys.
 
 {% tabs %}
 
@@ -389,13 +389,13 @@ At run time, on clicking the None button of the popup calendar, "No date is sele
 
 
 
-This default string can be changed using [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html) property. Below table describes the properties which controls the Null value behavior.
+This default string can be changed using [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) property. Below table describes the properties which controls the Null value behavior.
 
-* [EnableNullDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~EnableNullDate.html)
-* [EnableNullKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~EnableNullKeys.html)
-* [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html)
-* [NullModeKeyReset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullModeKeyReset.html)
-* [IsNullDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~IsNullDate.html)
+* [EnableNullDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_EnableNullDate)
+* [EnableNullKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_EnableNullKeys)
+* [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString)
+* [NullModeKeyReset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullModeKeyReset)
+* [IsNullDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_IsNullDate)
 
 {% tabs %}
 

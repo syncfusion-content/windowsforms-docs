@@ -22,23 +22,23 @@ AutoComplete properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~HeaderForeColor.html)' || markdownify}} </td><td>
+{{'[HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_HeaderForeColor)' || markdownify}} </td><td>
 Specifies the HeaderForeColor of the AutoCompletePopup.</td></tr>
 <tr>
 <td>
-{{'[HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~HeaderForeColor.html)' || markdownify}} </td><td>
+{{'[HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_HeaderForeColor)' || markdownify}} </td><td>
 Specifies the item text ForeColor of the AutoCompletePopup.</td></tr>
 <tr>
 <td>
-{{'[HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~HeaderFont.html)' || markdownify}} </td><td>
+{{'[HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_HeaderFont)' || markdownify}} </td><td>
 Specifies the header font of the AutoCompletePopup.</td></tr>
 <tr>
 <td>
-{{'[ItemFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ItemFont.html)' || markdownify}} </td><td>
+{{'[ItemFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ItemFont)' || markdownify}} </td><td>
 Specifies the item font of the AutoCompletePopup.</td></tr>
 <tr>
 <td>
-{{'[HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~HeaderStyle.html)' || markdownify}} </td><td>
+{{'[HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_HeaderStyle)' || markdownify}} </td><td>
 Specifies the AutoCompletePopup column header style.</td></tr>
 </table>
 
@@ -88,17 +88,17 @@ Specifies the AutoCompletePopup column header style.</td></tr>
 ## Popup customization
 ### Close button
 
-To show or hide the `CloseButton` at the bottom-left of the DropDownContainer, use the [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ShowCloseButton.html) property. The default value of this property is `true`.
+To show or hide the `CloseButton` at the bottom-left of the DropDownContainer, use the [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ShowCloseButton) property. The default value of this property is `true`.
 
-N> The AutoComplete dropdown can be closed by calling the [CloseDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~CloseDropDown.html) method.
+N> The AutoComplete dropdown can be closed by calling the [CloseDropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_CloseDropDown) method.
 
 ### Resize gripper
 
-To show or hide the resizing gripper at the bottom-right of the DropDownContainer, use the [ShowGripper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ShowGripper.html) property. The default value of this property is `true`.
+To show or hide the resizing gripper at the bottom-right of the DropDownContainer, use the [ShowGripper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ShowGripper) property. The default value of this property is `true`.
 
 ### Column Header
 
-To show or hide the column header, use the [ShowColumnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ShowColumnHeader.html) property.
+To show or hide the column header, use the [ShowColumnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ShowColumnHeader) property.
 
 
 {% tabs %}
@@ -132,19 +132,19 @@ AutoComplete properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[AdjustHeightToItemCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AdjustHeightToItemCount.html)' || markdownify }} </td><td>
+{{ '[AdjustHeightToItemCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AdjustHeightToItemCount)' || markdownify }} </td><td>
 Specifies whether the height of the dropdown should be adjusted automatically based on the number of items.</td></tr>
 <tr>
 <td>
-{{ '[AutoPersistentDropDownSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoPersistentDropDownSize.html)' || markdownify }}</td><td>
+{{ '[AutoPersistentDropDownSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoPersistentDropDownSize)' || markdownify }}</td><td>
 The dropdown size of Autocomplete component is automatically persistent when this property is set to true.</td></tr>
 <tr>
 <td>
-{{ '[PreferredHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~PreferredHeight.html)' || markdownify }}</td><td>
+{{ '[PreferredHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_PreferredHeight)' || markdownify }}</td><td>
 Specifies preferred height for the dropdown displayed by the AutoComplete component when AdjustHeightToItemCount property is false. The default value of this property is 200.</td></tr>
 <tr>
 <td>
-{{ '[PreferredWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~PreferredWidth.html)' || markdownify }}</td><td>
+{{ '[PreferredWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_PreferredWidth)' || markdownify }}</td><td>
 Specifies preferred width for the dropdown displayed by the AutoComplete component when AdjustHeightToItemCount property is false. The default value of this property is -1.</td></tr>
 </table>
 
@@ -347,7 +347,7 @@ The AutoComplete component has a fully built-in serialization feature that provi
 
 ### Persisting AutoComplete's data in the default storage
 
-The data of AutoComplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoSerialize.html) property to `true`. It specifies whether the AutoComplete component can persist its data. This information is stored in the isolated storage.
+The data of AutoComplete component can be persisted by setting the [AutoSerialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSerialize) property to `true`. It specifies whether the AutoComplete component can persist its data. This information is stored in the isolated storage.
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ It serializes the data into a memory stream. The following methods are storing a
 
 #### Storing state
 
-The current internal list information is stored to the persistence medium using the [SaveCurrentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SaveCurrentState(AppStateSerializer).html) method. 
+The current internal list information is stored to the persistence medium using the [SaveCurrentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_SaveCurrentState_Syncfusion_Runtime_Serialization_SerializeMode_System_Object_) method. 
 
 {% tabs %}
 
@@ -434,7 +434,7 @@ aser.PersistNow()
 
 ### Retrieving state
 
-Retrieving state reads the previously serialized internal history list using the [LoadCurrentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~LoadCurrentState(AppStateSerializer).html) method.
+Retrieving state reads the previously serialized internal history list using the [LoadCurrentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_LoadCurrentState_Syncfusion_Runtime_Serialization_SerializeMode_System_Object_) method.
 
 {% tabs %}
 {% highlight C# %}

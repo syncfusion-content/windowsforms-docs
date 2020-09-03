@@ -9,7 +9,7 @@ documentation: ug
 
 # How to display BannerIcon in banner of HubTile?
 
-You can achieve this by using HubTile [ShowBannerTileIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ShowBannerIcon.html) and [BannerIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BannerIcon.html) property.
+You can achieve this by using HubTile [ShowBannerTileIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ShowBannerIcon) and [BannerIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_BannerIcon) property.
 
 {% tabs %}
 {% highlight C# %} 

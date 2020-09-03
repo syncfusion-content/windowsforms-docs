@@ -11,7 +11,7 @@ documentation: ug
 
 ## BeforeSliding
 
-This [BeforeSliding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~BeforeSliding_EV.html) event is triggered before the Slide is moving.
+This [BeforeSliding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) event is triggered before the Slide is moving.
 
 {% tabs %}
 
@@ -42,7 +42,7 @@ End Sub
 
 ## AfterSlided
 
-This [AfterSlided](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~AfterSlided_EV.html) event is triggered after the Side has moved.
+This [AfterSlided](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) event is triggered after the Side has moved.
 
 
 {% tabs %}

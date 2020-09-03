@@ -21,13 +21,13 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<td>{{'[HyperlinkMouseOver](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~HyperlinkMouseOver_EV.html)'| markdownify }}</td>
+<td>{{'[HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html)'| markdownify }}</td>
 <td>This event is triggered when the mouse pointer is placed over the URL.</td>
 <td>N/A</td>
 <td>N/A</td>
 </tr>
 <tr>
-<td>{{'[HyperlinkClicked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~HyperlinkClicked_EV.html)'| markdownify }}</td>
+<td>{{'[HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html)'| markdownify }}</td>
 <td>This event is triggered when the URL in the PDF document is clicked.</td>
 <td>N/A</td>
 <td>N/A</td>
@@ -37,7 +37,7 @@ Type </th></tr>
 
 ## How to disable hyperlink navigation in PDF Viewer?
 
-We can disable the hyperlink navigation in [PdfViewerControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) by wiring the event [HyperlinkClicked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~HyperlinkClicked_EV.html). The below code example illustrates the same.
+We can disable the hyperlink navigation in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) by wiring the event [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html). The below code example illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ End Sub
 
 ## How to retrieve the clicked URL details from PDF Viewer?
 
-We can acquire the details of the URL which is clicked in the PDF file using the the [AnnotEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.AnnotEventArgs.html), which is passed as a parameter of the [HyperlinkClicked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~HyperlinkClicked_EV.html) event. The below code example illustrates the same.
+We can acquire the details of the URL which is clicked in the PDF file using the the [AnnotEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.AnnotEventArgs.html), which is passed as a parameter of the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) event. The below code example illustrates the same.
 
 {% tabs %}
 {% highlight c# %}

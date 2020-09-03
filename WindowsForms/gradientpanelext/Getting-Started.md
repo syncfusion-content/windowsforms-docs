@@ -23,7 +23,7 @@ The following steps describe how to create the **GradientPanelExt** control via 
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) Add the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) Add the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -31,7 +31,7 @@ The following steps describe how to create the **GradientPanelExt** control via 
 
 3) Set the Gradient colors to the panel by defining gradient styles and colors.
 
-4) Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt~Primitives.html) property. Refer to the following screenshot.
+4) Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html#Syncfusion_Windows_Forms_Tools_GradientPanelExt_Primitives) property. Refer to the following screenshot.
 
 ![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
 
@@ -63,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
+4) Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
 
 {% tabs %}
 

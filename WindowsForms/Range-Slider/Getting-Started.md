@@ -19,7 +19,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio to display the RangeSlider control with dual thumb and highlight the selected range.
 
-2) The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -63,7 +63,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
+4) Create an instance of [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html), and add it to the form.
 
 {% tabs %}
 
@@ -89,7 +89,7 @@ Me.Controls.Add(rangeSlider1)
 
 ## Minimum and maximum values
 
-You can set the minimum and maximum values programmatically using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMin.html) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~SliderMax.html) properties of RangeSlider.
+You can set the minimum and maximum values programmatically using the [SliderMin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMin) and [SliderMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_SliderMax) properties of RangeSlider.
 
 {% tabs %}
 {% highlight C# %}
@@ -112,7 +112,7 @@ rangeSlider1.SliderMax = 7
 
 ## Horizontal and vertical orientations
 
-You can change the layout of range slider to horizontal or vertical by setting the [orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider~Orientation.html) property of RangeSlider.
+You can change the layout of range slider to horizontal or vertical by setting the [orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_Orientation) property of RangeSlider.
 
 {% tabs %}
 {% highlight C# %}

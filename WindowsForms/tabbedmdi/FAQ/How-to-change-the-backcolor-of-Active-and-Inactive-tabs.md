@@ -9,7 +9,7 @@ documentation: ug
 
 # How to change the back color of Active and Inactive tabs
 
-You can change the tab back color for active tabs and inactive tabs using [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ActiveTabColor.html) and [InactiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~InactiveTabColor.html) properties. The following code snippet illustrates this.
+You can change the tab back color for active tabs and inactive tabs using [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor) and [InactiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_InactiveTabColor) properties. The following code snippet illustrates this.
 
 {% tabs %}
 
@@ -47,5 +47,5 @@ End Sub
 
 {% endtabs %}
 
-N> [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~ActiveTabColor.html) property work only for 2D, 3D, Workbook Mode, OneNoteStyle and not for other tabStyles.
+N> [ActiveTabColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_ActiveTabColor) property work only for 2D, 3D, Workbook Mode, OneNoteStyle and not for other tabStyles.
 

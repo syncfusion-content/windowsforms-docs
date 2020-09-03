@@ -9,7 +9,7 @@ documentation: ug
 
 # How to set the ImageStreamDirection in TileLayout?
 
-The following [ImageStreamDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ImageStreamer~ImageStreamDirection.html) are available in [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html).
+The following [ImageStreamDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html#Syncfusion_Windows_Forms_Tools_ImageStreamer_ImageStreamDirection) are available in [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html).
 
 * LeftToRight
 * RightToLeft

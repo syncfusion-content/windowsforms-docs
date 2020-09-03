@@ -9,7 +9,7 @@ documentation: ug
 
 # Precision
 
-In Rating, [Precision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Precision.html) can be set either as Standard or as Half, based on user requirement.
+In Rating, [Precision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Precision) can be set either as Standard or as Half, based on user requirement.
 
 {% tabs %}
 {% highlight c# %}

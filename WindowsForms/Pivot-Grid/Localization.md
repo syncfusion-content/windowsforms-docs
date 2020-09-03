@@ -18,7 +18,7 @@ Syncfusion components have their own neutral resources and these resources can b
 
 ## Using ILocalizationProvider interface
 
-To localize the pivot grid control, create a class by inheriting [ILocalizationProvider](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface. The [GetLocalizedString](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider~GetLocalizedString.html) method of this interface need to be implemented to get the equivalent localized strings. The [PivotResourceIdentifiers](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotResourceIdentifiers.html) class contains the resource identifiers specific to the pivot grid control.
+To localize the pivot grid control, create a class by inheriting [ILocalizationProvider](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider.html) interface. The [GetLocalizedString](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ILocalizationProvider~GetLocalizedString.html) method of this interface need to be implemented to get the equivalent localized strings. The [PivotResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotResourceIdentifiers.html) class contains the resource identifiers specific to the pivot grid control.
 
 Refer to the below code sample to localize the pivot grid control using ILocalizationProvider interface.
 

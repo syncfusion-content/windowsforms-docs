@@ -14,14 +14,14 @@ This section discusses the appearance and behavior settings of the XPTaskBar Box
 
 This section lists the properties used for customizing the header of the XPTaskBar Box.
 
-The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~Text.html) property of the XPTaskBar Box. The other properties are discussed below.
+The Header of the XPTaskBar Box contains the Collapse button and text. The header text can be changed using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_Text) property of the XPTaskBar Box. The other properties are discussed below.
 
-* [HeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderBackColor.html)
-* [HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderForeColor.html)
-* [HeaderDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderDirection.html)
-* [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderFont.html)
-* [HeaderTextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderTextAlign.html)
-* [ClipHeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ClipHeaderText.html)
+* [HeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderBackColor)
+* [HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderForeColor)
+* [HeaderDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderDirection)
+* [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderFont)
+* [HeaderTextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderTextAlign)
+* [ClipHeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ClipHeaderText)
 
 ![Header settings](Overview_images/Overview_img106.jpeg)
 
@@ -67,9 +67,9 @@ This section discusses the button settings of the XPTaskBar Box.
 
 The collapsed button is used to expand or collapse the XPTaskBar Items. The following table lists the properties associated with collapsing or expanding the XPTaskBar Box.
 
-* [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~Collapsed.html)
-* [ShowCollapseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ShowCollapseButton.html)
-* [ToggleByButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ToggleByButton.html)
+* [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_Collapsed)
+* [ShowCollapseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ShowCollapseButton)
+* [ToggleByButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ToggleByButton)
 
 {% tabs %}
 
@@ -123,9 +123,9 @@ Saves the expanded child taskbar boxes to the AppStateSerializer.</td></tr>
 Animation during expanding/collapsing of the Taskbar items in an XPTaskBar can be controlled using the following properties.
 Animation can also be enabled while adding or removing any TaskBar items.
 
-* [AnimationDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AnimationDelay.html)
-* [AnimationPositionsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~AnimationPositionsCount.html)
-* [UseAdditionalAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~UseAdditionalAnimation.html)
+* [AnimationDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_AnimationDelay)
+* [AnimationPositionsCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_AnimationPositionsCount)
+* [UseAdditionalAnimation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_UseAdditionalAnimation)
 
 {% tabs %}
 
@@ -162,8 +162,8 @@ This section discusses the mouse hover settings of the XPTaskBar control.
 
 The position of the mouse with respect to the control can be known using the properties given below.
 
-* [HitTaskBoxArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HitTaskBoxArea.html)
-* [HeaderHit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderHit.html)
+* [HitTaskBoxArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HitTaskBoxArea)
+* [HeaderHit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderHit)
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ Me.xpTaskBarBox1.HeaderHit = True
 
 ## Integrating Child controls to the XPTaskBar box
 
-To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the [PreferredChildPanelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~PreferredChildPanelHeight.html) property.
+To host multiple controls inside the XPTaskBar Boxes, we prefer the Panel control. We can set the panel's height using the [PreferredChildPanelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_PreferredChildPanelHeight) property.
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ PreferredChildPanelHeight = "35"
 
 ToolTips can be provided for the TaskBar Items of the XPTaskBar Box. The interesting part is that tooltips can also be assigned for the disabled TaskBar Items.
 
-The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarItem~ToolTip.html) property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed using the [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ShowToolTip.html) property.
+The [ToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html#Syncfusion_Windows_Forms_Tools_XPTaskBarItem_ToolTip) property of the XPTaskBar control can be used to set the text of the tooltip, while the tooltip can be displayed using the [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ShowToolTip) property.
 
 {% tabs %}
 

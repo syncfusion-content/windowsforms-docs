@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Display Settings in MaskedEditBox
 
-This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
+This section discusses the display settings of the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control.
 
 ## Separators
 
-You can display the data along with separators specifying date, time, decimals and thousands at run time by using [DateSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DateSeparator.html), [TimeSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~TimeSeparator.html), [DecimalSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DecimalSeparator.html) and [ThousandSeparator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ThousandSeparator.html) properties. It is not required to type separators at run time. Separators can be specified in the mask character itself.
+You can display the data along with separators specifying date, time, decimals and thousands at run time by using [DateSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_DateSeparator), [TimeSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_TimeSeparator), [DecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_DecimalSeparator) and [ThousandSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ThousandSeparator) properties. It is not required to type separators at run time. Separators can be specified in the mask character itself.
 
 
 <table>
@@ -83,7 +83,7 @@ Me.maskedEditBox1.TimeSeparator = ":"C
 
 ## Cursor position
 
-You can set the cursor position of the MaskedEditBox control by using [PositionAt](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAt.html) and [PositionAtDecimal](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~PositionAtDecimal.html) properties.
+You can set the cursor position of the MaskedEditBox control by using [PositionAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAt) and [PositionAtDecimal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_PositionAtDecimal) properties.
 
 <table>
 <tr>
@@ -136,7 +136,7 @@ Specifies the data groups that can be used for splitting up the text.</td></tr>
 </table>
 
 
-The [DataGroups](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~DataGroups.html) property of the MaskedEditBox defines a virtual grouping of the mask value. Each group is defined by a [MaskedEditDataGroupInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditDataGroupInfoCollection~Add.html) object (the DataGroups property is a collection of these objects).
+The [DataGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_DataGroups) property of the MaskedEditBox defines a virtual grouping of the mask value. Each group is defined by a [MaskedEditDataGroupInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditDataGroupInfoCollection.html#Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfoCollection_Add_Syncfusion_Windows_Forms_Tools_MaskedEditDataGroupInfo_) object (the DataGroups property is a collection of these objects).
 
 A data group is defined by its `GroupLength` property. For example, if the mask is given as follows,
 
@@ -241,7 +241,7 @@ Indicates the character to display for password input for single-line edit contr
 </table>
 
 
-The [MaskedEditBox.Sequentially](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Sequentially.html) property indicates whether the control can sequentially display mask characters. After setting the `Sequentially` property to 'True', you can use the [PasswordChar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.passwordchar?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_PasswordChar) property in order to set the character, that is to be displayed as a substitute for the user input.
+The [MaskedEditBox.Sequentially](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Sequentially) property indicates whether the control can sequentially display mask characters. After setting the `Sequentially` property to 'True', you can use the [PasswordChar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.passwordchar?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_PasswordChar) property in order to set the character, that is to be displayed as a substitute for the user input.
 
 {% tabs %}
 

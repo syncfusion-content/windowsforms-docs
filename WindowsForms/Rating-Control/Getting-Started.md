@@ -19,7 +19,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio to display the Rating Control with different shapes.
 
-2) The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
+4) Create an instance of the [Rating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html) control, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +79,7 @@ Me.Controls.Add(ratingControl1)
 
 ![Windows Forms showing rating control](Getting-Started_images/Rating_default.png)
 
-5) Set the rating value using the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Value.html) property.
+5) Set the rating value using the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Value) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -107,7 +107,7 @@ The following six predefined shapes are available in the Rating Control for cust
 * Diamond
 * Kite
 
-You can customize the shapes of the RatingControl using the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Shape.html) property. 
+You can customize the shapes of the RatingControl using the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property. 
 
 {% tabs %}
 {% highlight C# %}

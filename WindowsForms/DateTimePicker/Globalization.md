@@ -33,7 +33,7 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalizatio
 
 ## Change culture
 
-By default, the `SfDateTimeEdit` supports system's current culture. Based on the usage, the culture of `SfDateTimeEdit` can be changed by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Culture.html) property. The date and time information displayed in the `SfDateTimeEdit` can be changed based on culture changes.
+By default, the `SfDateTimeEdit` supports system's current culture. Based on the usage, the culture of `SfDateTimeEdit` can be changed by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Culture) property. The date and time information displayed in the `SfDateTimeEdit` can be changed based on culture changes.
 
 {% tabs %}
 

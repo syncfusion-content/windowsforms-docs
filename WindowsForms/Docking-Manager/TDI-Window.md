@@ -9,11 +9,11 @@ documentation: ug
 
 # TDI Window in DockingManager
 
-Provides support for adding tabbed document windows in the docking manager. To enable the document mode in docking manager, set the [EnableDocumentMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~EnableDocumentMode.html) property to true.
+Provides support for adding tabbed document windows in the docking manager. To enable the document mode in docking manager, set the [EnableDocumentMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDocumentMode) property to true.
 
 ## Add child view as tabbed document
 
-[DockAsDocument](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockAsDocument.html) function helps to add the child window as a document tab in docking manager. The document window should be added after dock layout has been loaded. The `NewDockStateEndLoad` event is recommended to add tabbed documents in docking manager.
+[DockAsDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockAsDocument_System_Windows_Forms_Control_) function helps to add the child window as a document tab in docking manager. The document window should be added after dock layout has been loaded. The `NewDockStateEndLoad` event is recommended to add tabbed documents in docking manager.
 
 
 {% tabs %}
@@ -56,7 +56,7 @@ Private Sub DockingManager1_NewDockStateEndLoad(ByVal sender As Object, ByVal e 
 
 ## Document window behavior
 
-[SetWindowMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetWindowMode.html) function helps to specify the window mode of docking child that defines dockability for specific child in DockingManager. It decides whether the docking child can be docked as `Tool` window or `Document` window.
+[SetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetWindowMode_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_WindowMode_) function helps to specify the window mode of docking child that defines dockability for specific child in DockingManager. It decides whether the docking child can be docked as `Tool` window or `Document` window.
 
 ### Window mode
 
@@ -114,7 +114,7 @@ this.dockingManager1.SetWindowMode(this.panel2,Syncfusion.Windows.Forms.Tools.Wi
 
 ### Identify whether the control is tool window or document window
 
-The [GetWindowMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetWindowMode.html) function of docking manager is used to determine window mode of docking child. This function takes the control as its argument and returns `WindowMode` whether the specified control is `Tool` or `Document`.
+The [GetWindowMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetWindowMode_System_Windows_Forms_Control_) function of docking manager is used to determine window mode of docking child. This function takes the control as its argument and returns `WindowMode` whether the specified control is `Tool` or `Document`.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ MessageBox.Show(this.dockingManager1.GetWindowMode(this.panel1).ToString());
 
 ## Freeze to document state
 
-The [FreezeToDocumentState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~FreezeToDocumentState.html) function of docking manager helps to freeze the docking window state in Document and docking manager will not allows to move the child window to any other state.
+The [FreezeToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_FreezeToDocumentState_System_Windows_Forms_Control_System_Boolean_) function of docking manager helps to freeze the docking window state in Document and docking manager will not allows to move the child window to any other state.
 
 {% tabs %}
 
@@ -161,7 +161,7 @@ Me.dockingManager1.FreezeToDocumentState(panel2, true)
 
 ### Identify whether the control is frozen to document state
 
-The docking manager [IsFrozenToDocumentState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~IsFrozenToDocumentState.html) function is used to determine the frozen state of a document window. This function takes the control as its argument and returns true if the specified control is frozen to document state. Else, it returns false.
+The docking manager [IsFrozenToDocumentState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_IsFrozenToDocumentState_System_Windows_Forms_Control_) function is used to determine the frozen state of a document window. This function takes the control as its argument and returns true if the specified control is frozen to document state. Else, it returns false.
 
 {% tabs %}
 
@@ -216,7 +216,7 @@ The docking direction (DockHints) can be restricted by setting `DockAbility` to 
 
 ## Disable tab group creation
 
-Tab group creation can be enabled or disabled using the [EnableTabGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~EnableTabGroup.html) property of docking manager. To disable tab group creation, set the `EnableTabGroup` to `False`. So, the docking manager will not display “New Horizontal Tab Group” and “New Vertical Tab Group” context menu items when right-click the document header.
+Tab group creation can be enabled or disabled using the [EnableTabGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_EnableTabGroup) property of docking manager. To disable tab group creation, set the `EnableTabGroup` to `False`. So, the docking manager will not display “New Horizontal Tab Group” and “New Vertical Tab Group” context menu items when right-click the document header.
 
 {% tabs %}
 
@@ -257,7 +257,7 @@ TDI window can be moved to float state by floating menu item in the contextMenu 
 
 ### Restrict dragging document window 
 
-The document tab window of docking manager can moved to the float state while dragging its tab header. This functionality can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~AllowDragging.html) property. By default, this property is set to `true`.
+The document tab window of docking manager can moved to the float state while dragging its tab header. This functionality can be enabled or disabled using the [AllowDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_AllowDragging) property. By default, this property is set to `true`.
 
 {% tabs %}
 
@@ -282,7 +282,7 @@ Me.dockingManager1.DocumentWindowSettings.AllowDragging = false
 
 ## Document tab reordering
 
-The docking manager allows to reorder the document tab by selecting and dragging to the desired index in document tab panel. The re-ordering behavior of document tabs can be enabled or disabled using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~AllowTabsMoving.html) property. By default, this property is set to `true`.
+The docking manager allows to reorder the document tab by selecting and dragging to the desired index in document tab panel. The re-ordering behavior of document tabs can be enabled or disabled using the [AllowTabsMoving](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AllowTabsMoving) property. By default, this property is set to `true`.
 
 {% tabs %}
 
@@ -307,7 +307,7 @@ Me.dockingManager1.AllowTabsMoving = false
 
 ## Closing TDI tab item using mouse middle click
 
-You can close the tab items of `DocumentContainer` and tabbed windows in `DockingManager` by clicking the mouse middle button on the tab item header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~CloseTabOnMiddleClick.html) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
+You can close the tab items of `DocumentContainer` and tabbed windows in `DockingManager` by clicking the mouse middle button on the tab item header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_CloseTabOnMiddleClick) property value as `true`. The default value of  `CloseTabOnMiddleClick` is `false`.
 
 {% tabs %}
 {% highlight C# %}
@@ -324,7 +324,7 @@ Me.dockingManager1.CloseTabOnMiddleClick = true
 
 ## Show or hide close button 
 
- The visibility of common close button to close the selected tab in document window can be changed by [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ShowCloseButton.html) property. By default, this property is set to `false`.
+ The visibility of common close button to close the selected tab in document window can be changed by [ShowCloseButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_ShowCloseButton) property. By default, this property is set to `false`.
 
 {% tabs %}
 
@@ -350,7 +350,7 @@ Me.dockingManager1.CloseTabOnMiddleClick = true
 
 ## Show or hide Tablist
 
-The visibility of menu button that lists all available document tabs in a drop-down list can be changed using the [ShowTablist](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DocumentWindowSettings~ShowTabList.html) property. By default, this property is set to `false`.
+The visibility of menu button that lists all available document tabs in a drop-down list can be changed using the [ShowTablist](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DocumentWindowSettings.html#Syncfusion_Windows_Forms_Tools_DocumentWindowSettings_ShowTabList) property. By default, this property is set to `false`.
 
 {% tabs %}
 

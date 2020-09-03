@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How do I paint the GroupBarItem image without scaling the image?
 
-You can draw the image of GroupBarItem (without scaling it), by overriding the [DrawGroupBarImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~DrawGroupBarImage.html) method of the GroupBar.
+You can draw the image of GroupBarItem (without scaling it), by overriding the [DrawGroupBarImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_DrawGroupBarImage_System_Drawing_Graphics_System_Int32_System_Drawing_Rectangle_) method of the GroupBar.
 
 {% tabs %}
 

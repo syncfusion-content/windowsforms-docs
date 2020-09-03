@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with themes
 
-PDF Viewer provides support for various built-in themes, using which the default appearance of elements that are present in the control can be customized. This can be achieved using the [ThemeName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Core.BaseControl~ThemeName.html) property of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
+PDF Viewer provides support for various built-in themes, using which the default appearance of elements that are present in the control can be customized. This can be achieved using the [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Core.BaseControl.html#Syncfusion_Windows_Forms_Core_BaseControl_ThemeName) property of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
 
 ## Assembly requirements
 
@@ -85,7 +85,7 @@ N> You can follow a similar step for all the other Office 2016 themes.
 
 ## Office 2019 theme
 
-It provides support for applying Office 2019 theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager.html).
+It provides support for applying Office 2019 theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ The following image illustrates the appearance of the control after this theme i
 
 ## High Contrast theme
 
-It provides support for applying high contrast theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager.html).
+It provides support for applying high contrast theme to `PdfViewerControl` and its associated elements. Before applying this theme to the control, the `Office2016Theme` assembly should be loaded in the main entry point of the application. Refer to the following code to load the assembly using [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
 
 {% tabs %}
 {% highlight c# %}

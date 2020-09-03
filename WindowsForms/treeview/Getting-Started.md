@@ -90,7 +90,7 @@ End Namespace
 
 Tree nodes can be added to the control at design time as follows.
 
-1. Select the [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
+1. Select the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
 
 2. Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
 
@@ -272,9 +272,9 @@ End Namespace
 
 ### Root Lines
 
-We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowRootLines.html) and[TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) are set as `true`.
+We can display the Root lines between the root nodes by setting the property [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) to True. Whereas the property [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) displays connecting line for rest of the nodes in the control except between the root nodes. By default, [TreeViewAdv.ShowRootLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowRootLines) and[TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) are set as `true`.
 
-When [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowLines.html) is set to `false`, the connecting lines will not be displayed for the entire control.
+When [TreeViewAdv.ShowLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowLines) is set to `false`, the connecting lines will not be displayed for the entire control.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,10 +296,10 @@ Me.treeViewAdv1.ShowLines = False
 
 ### Plus/Minus
 
-We can display Plus/Minus sign for the parent nodes by setting the property [TreeViewAdv.ShowPlusMinus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowPlusMinus.html) to True. This will set Plus/Minus sign for all the parent nodes in [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
-We can also set this for nodes using [TreeNodeAdv.ShowPlusMinus](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowPlusMinus.html) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+We can display Plus/Minus sign for the parent nodes by setting the property [TreeViewAdv.ShowPlusMinus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowPlusMinus) to True. This will set Plus/Minus sign for all the parent nodes in [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html). 
+We can also set this for nodes using [TreeNodeAdv.ShowPlusMinus](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowPlusMinus) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
-The nodes in the [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html), even when it is in the expanded state, can still display the Plus sign using the [TreeNodeAdv.ShowPlusOnExpand](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowPlusOnExpand.html) property. [TreeViewAdv.LoadOnDemand](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~LoadOnDemand.html) property should be set to true for this feature to be effective.
+The nodes in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html), even when it is in the expanded state, can still display the Plus sign using the [TreeNodeAdv.ShowPlusOnExpand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowPlusOnExpand) property. [TreeViewAdv.LoadOnDemand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_LoadOnDemand) property should be set to true for this feature to be effective.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ Me.treeViewAdv1.ShowPlusMinus = False
 
 ### CheckBox
 
-We can display CheckBox for all nodes in [TreeViewAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) by setting [TreeViewAdv.ShowCheckBoxes](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowCheckBoxes.html)  property to True. The CheckBox for individual nodes can also be shown or hidden using [TreeNodeAdv.ShowCheckBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowCheckBox.html) property in [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+We can display CheckBox for all nodes in [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) by setting [TreeViewAdv.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowCheckBoxes)  property to True. The CheckBox for individual nodes can also be shown or hidden using [TreeNodeAdv.ShowCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowCheckBox) property in [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -344,7 +344,7 @@ In the above image we can show check box for India and china node.
 ### OptionButton
 
 The Option Buttons can be displayed for the nodes in the [TreeViewAdv](
-https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ShowOptionButtons.html) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv~ShowOptionButton.html) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowOptionButtons) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowOptionButton) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -369,4 +369,4 @@ In the above image we can show option button for India and china node.
 
 ## Assigning Active Nodes
     
-[TreeViewAdv.ActiveNode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TreeViewAdv~ActiveNode.html) holds  a currently selected node. By default, it is null.
+[TreeViewAdv.ActiveNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ActiveNode) holds  a currently selected node. By default, it is null.

@@ -39,7 +39,7 @@ The NavigationDrawer control can be added to an application by dragging it from 
 
 **Add items to NavigationDrawer**
 
-The header and menu items can be added to drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in smart tags of NavigationDrawer.
+The header and menu items can be added to drawer using the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in smart tags of NavigationDrawer.
 
 ![wf navigation drawer items added by designer](Getting-Started_images/wf-navigation-drawer-control-items-added-by-designer.png)
 
@@ -95,7 +95,7 @@ To add the control manually in C#, follow the given steps:
 
 **5.** Add header to the NavigationDrawer.
 
- Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in NavigationDrawer.
+ Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer.
 
   {% tabs %}
   {% highlight C# %}
@@ -112,7 +112,7 @@ To add the control manually in C#, follow the given steps:
 
 **6.** Add MenuItems to NavigationDrawer.
 
-Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Items.html) collection in the NavigationDrawer class.
+Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the NavigationDrawer class.
 
 {% tabs %}
 {% highlight C# %}
@@ -152,7 +152,7 @@ Users can specify the following sliding position of the DrawerView:
 * **Top**– Slides from Top direction.
 * **Bottom**– Slides from Bottom direction.
 
-It can be achieved by setting the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Position.html) property of NavigationDrawer.
+It can be achieved by setting the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) property of NavigationDrawer.
 
 {% tabs %}
 {% highlight C# %}

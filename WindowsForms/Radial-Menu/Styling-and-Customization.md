@@ -17,7 +17,7 @@ documentation: ug
 
 ### Default state
 
-[OuterArcColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterArcColor.html) is used to fill the drill-down region in the normal state.
+[OuterArcColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_OuterArcColor) is used to fill the drill-down region in the normal state.
 
 {% tabs %}
 
@@ -40,7 +40,7 @@ Me.RadialMenu1.OuterArcColor = Color.Black
 ![Default state](Styling-and-Customization_images/Styling-and-Customization_img2.png)
 
 
-[OuterArcHighLightedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterArcHighLightedColor.html) property is used to fill the drilldown region while hovering.
+[OuterArcHighLightedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_OuterArcHighLightedColor) property is used to fill the drilldown region while hovering.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Me.radialMenu1.OuterArcHighLightedColor = System.Drawing.Color.FromArgb(((int)((
 
 ## Outer rim (static region)
 
-Outer edge is customized by using the [RimBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~RimBackground.html) and [OuterRimThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialMenu~OuterRimThickness.html) properties.
+Outer edge is customized by using the [RimBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_RimBackground) and [OuterRimThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_OuterRimThickness) properties.
 
 ### Background
 

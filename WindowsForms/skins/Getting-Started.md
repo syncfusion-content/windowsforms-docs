@@ -41,7 +41,7 @@ SkinManager presents in the `Syncfusion.Shared.Base` assembly.
 
 ## Loading theme assemblies
 
-Skin manager loads theme assembly using the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method before applying theme. This is applicable for the themes loaded from separate assembly, and not applicable for the themes loaded from built-in assembly.
+Skin manager loads theme assembly using the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html#Syncfusion_Windows_Forms_SkinManager_LoadAssembly_System_Reflection_Assembly_) method before applying theme. This is applicable for the themes loaded from separate assembly, and not applicable for the themes loaded from built-in assembly.
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ skinManager1.VisualTheme = VisualTheme.Office2016Black
 
 ## Apply Themes to entire application
 
-Skin manager allows to apply theme for all the controls and forms in an application by setting the [ApplicationVisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~ApplicationVisualTheme.html) property. It allows you to theme entire application using single `ApplicationVisualTheme` property. 
+Skin manager allows to apply theme for all the controls and forms in an application by setting the [ApplicationVisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html#Syncfusion_Windows_Forms_SkinManager_ApplicationVisualTheme) property. It allows you to theme entire application using single `ApplicationVisualTheme` property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ N> Set the `ApplicationVisualTheme` property before main form is initialized.
 
 ## Apply theme for individual control
 
-Theme can be applied to individual component using skin manager or by setting the `ThemeName` property. You need to call the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SkinManager~LoadAssembly.html) method for required themes when applying using the `ThemeName` property also.
+Theme can be applied to individual component using skin manager or by setting the `ThemeName` property. You need to call the [LoadAssembly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html#Syncfusion_Windows_Forms_SkinManager_LoadAssembly_System_Reflection_Assembly_) method for required themes when applying using the `ThemeName` property also.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ N> Appearance customization settings done in control level will not take effect 
 
 ### Change font for entire application
 
-When using theme studio based themes, the font for entire application can be customized by setting the [CanOverrideFontFamily](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Theme.FontHelper~CanOverrideFontFamily.html) property to true. This property is used only in constructor.
+When using theme studio based themes, the font for entire application can be customized by setting the [CanOverrideFontFamily](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Theme.FontHelper.html#Syncfusion_WinForms_Theme_FontHelper_CanOverrideFontFamily) property to true. This property is used only in constructor.
 
 {% tabs %}
 

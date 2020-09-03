@@ -284,7 +284,7 @@ var value = typeof(WorkbookImpl).GetProperty("IsCellModified", bindFlags).GetVal
 
 ## Suppress message boxes in Spreadsheet
 
-In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~DisplayAlerts.html) property to `false`. 
+In Spreadsheet, warning messages, error alerts are displayed while performing some actions like Excel. If you want to avoid those alerts, then set the [DisplayAlerts](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_DisplayAlerts) property to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -297,7 +297,7 @@ spreadsheet.DisplayAlerts = false;
 
 ## Suspend and resume formula calculation
 
-Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~SuspendFormulaCalculation.html) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~ResumeFormulaCalculation.html) method.
+Spreadsheet provides support to suspend the formula calculation and resume it whenever needed using the [SuspendFormulaCalculation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_SuspendFormulaCalculation) and [ResumeFormulaCalculation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_ResumeFormulaCalculation) method.
 
 Resuming formula calculation will recalculate all the formula cells in a workbook. This would be helpful to improve the performance when you are updating the value of more number of cells by skipping the dependent cells recalculation on each cell value changed.
 
@@ -316,7 +316,7 @@ spreadsheet.SuspendFormulaCalculation();
 
 ## Close the popup programmatically 	
 
-In Spreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~ShowHidePopup.html) method of `SpreadsheetGrid`.
+In Spreadsheet, popup windows are used to display the options like copy paste option, fill series option, etc. which will be closed automatically on certain actions. However you can also able to close the popup programmatically by using the [ShowHidePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetGrid_ShowHidePopup_System_Boolean_) method of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,7 +332,7 @@ spreadsheet.ActiveGrid.ShowHidePopup(true);
 
 ## Identify when the active sheet is changed
 
-Spreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~PropertyChanged_EV.html) event of Spreadsheet like below.
+Spreadsheet provides support to identify when the active sheet is changed by using [PropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html) event of Spreadsheet like below.
 
 {% tabs %}
 {% highlight c# %}

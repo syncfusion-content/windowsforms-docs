@@ -9,7 +9,7 @@ documentation: ug
 
 # How to find whether the DrawerPanel is showing or not?
 
-This requirement is achieved by using its function named [IsDrawerShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~IsDrawerShowing.html).
+This requirement is achieved by using its function named [IsDrawerShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_IsDrawerShowing).
 
 {% tabs %}
 {% highlight C# %}

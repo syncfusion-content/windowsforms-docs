@@ -229,7 +229,7 @@ Selects {{'[multiple items](https://help.syncfusion.com/windowsforms/combobox/se
 Loading custom user control in dropdown
 </td>
 <td>
-Shows the header and footer items in drop-down by enabling the {{'[ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html)'| markdownify }} and {{'[ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html)'| markdownify }} properties. To learn more about loading custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/combobox/dropdown#load-custom-control-in-drop-down)'| markdownify }}.
+Shows the header and footer items in drop-down by enabling the {{'[ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader)'| markdownify }} and {{'[ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter)'| markdownify }} properties. To learn more about loading custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/combobox/dropdown#load-custom-control-in-drop-down)'| markdownify }}.
 
 </td>
 </tr>
@@ -247,7 +247,7 @@ Sets the {{'[watermark](https://help.syncfusion.com/windowsforms/combobox/waterm
 Sorting
 </td>
 <td>
-{{'[Sort](https://help.syncfusion.com/windowsforms/combobox/sorting )'| markdownify }} the data either in ascending or descending order using the {{'[SfComboBox.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html)'| markdownify }} property.
+{{'[Sort](https://help.syncfusion.com/windowsforms/combobox/sorting )'| markdownify }} the data either in ascending or descending order using the {{'[SfComboBox.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors)'| markdownify }} property.
 
 </td>
 </tr>

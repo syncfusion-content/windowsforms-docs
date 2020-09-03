@@ -26,7 +26,7 @@ documentation: ug
 
 •	Office2016Black
 
-You can set the above themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~Style.html) property.
+You can set the above themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_Style) property.
 
 **Default**
 

@@ -51,7 +51,7 @@ This section will guide you with page selection options at design time.
 
 * Another way to navigate is to access the Next Page or Previous Page option in the context menu or Smart Tag of the Wizard control.
 * See Options to Add Page, Remove Page, Previous page and Next Page topic, to see the Next page and Previous page options in smart tag and context menu.
-* You can also do the page selection using [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~SelectedWizardPage.html) or [CardLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Wizard~CardLayout.html) property.
+* You can also do the page selection using [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_SelectedWizardPage) or [CardLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Wizard.html#Syncfusion_Windows_Forms_Tools_Wizard_CardLayout) property.
 
 ![Page selection at design time](Wizard-Package_images/Wizard-Package_img34.jpeg)
 

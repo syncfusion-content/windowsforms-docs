@@ -10,7 +10,7 @@ documentation: ug
 
 ## Header height and font settings
 
-The [GroupBarItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemHeight.html) and [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) properties can be used to change the height and font of the header of the GroupBar Items.
+The [GroupBarItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemHeight) and [Font](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Font) properties can be used to change the height and font of the header of the GroupBar Items.
 
 {% tabs %}
 
@@ -40,7 +40,7 @@ Me.groupBar1.Font = New System.Drawing.Font("Verdana", 9F, System.Drawing.FontSt
 
 ## Header BackColor and ForeColor settings
 
-You can customize the group bar items header backcolor and fore color by using [HeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~HeaderBackColor.html) and [HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~HeaderForeColor.html) properties.
+You can customize the group bar items header backcolor and fore color by using [HeaderBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_HeaderBackColor) and [HeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_HeaderForeColor) properties.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ GroupBar Items with Background Color = "LavenderBlush" and Foreground Color = "S
 
 The methods given below are used to reset the above properties.
 
-* [ResetHeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ResetHeaderFont.html)
-* [ResetHeaderBackcolor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ResetHeaderBackColor.html)
-* [ResetHeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ResetHeaderForeColor.html)
+* [ResetHeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetHeaderFont)
+* [ResetHeaderBackcolor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetHeaderBackColor)
+* [ResetHeaderForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetHeaderForeColor)
 

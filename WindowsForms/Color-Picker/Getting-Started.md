@@ -21,7 +21,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) The [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
+4) Create an instance of [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ Me.Controls.Add(cpa)
 
 ## Color selection
 
-At run time, a particular color should be focused or selected by using the [SelectedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv~SelectedColor.html) property.
+At run time, a particular color should be focused or selected by using the [SelectedColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html#Syncfusion_Windows_Forms_Tools_ColorPickerUIAdv_SelectedColor) property.
 
 {% tabs %}
 

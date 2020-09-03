@@ -9,7 +9,7 @@ documentation: ug
 
 # How to access all the child elements of an HTML element in the HTMLUI control?
 
-The [IHTMLElement.Children](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.IHTMLElement~Children.html) property of any IHTMLElement, collects all the child elements of a specified HTML element inside an IHTMLElementsCollection. You can access the elements needed for your conditions from this collection.
+The [IHTMLElement.Children](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.IHTMLElement.html#Syncfusion_Windows_Forms_HTMLUI_IHTMLElement_Children) property of any IHTMLElement, collects all the child elements of a specified HTML element inside an IHTMLElementsCollection. You can access the elements needed for your conditions from this collection.
 
 The following code snippet illustrates how the child elements of the Body element in the given HTML document are searched to access elements containing the OnClick attribute and how a Click event is attached to those elements.
 

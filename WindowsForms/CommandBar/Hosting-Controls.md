@@ -17,7 +17,7 @@ Popup menu can be integrated with command bar controller and can be utilized as 
 
 ### Through designer
 
-The popup menu control is drag and dropped from the tool box and then it can be integrated with the command bar via the [`PopupMenu`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~PopupMenu.html) property of the [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) instance. The below code image shows the popup menu being integrated with the command bar.
+The popup menu control is drag and dropped from the tool box and then it can be integrated with the command bar via the [`PopupMenu`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_PopupMenu) property of the [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) instance. The below code image shows the popup menu being integrated with the command bar.
 
 ![Popup menu added to the command bar](Hosting-Controls-images/popupMenu_Integration_CommandBar_Designer.png)
 
@@ -25,7 +25,7 @@ The popup menu control is drag and dropped from the tool box and then it can be 
 
 ### Through code
 
-Th popup menu can be added via code by initializing an instance of [`PopupMenu`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~PopupMenu.html) property of the command bar. The below code snippet shows the popup menu is being integrated with the command bar.
+Th popup menu can be added via code by initializing an instance of [`PopupMenu`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_PopupMenu) property of the command bar. The below code snippet shows the popup menu is being integrated with the command bar.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ Me.commandBar1.PopupMenu = popup_Menu
 
 ## Integrating XP toolbar
 
-The menu items could only be added to command bar is via the [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. It acts itself as a container control hosting the menu items.
+The menu items could only be added to command bar is via the [XPToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. It acts itself as a container control hosting the menu items.
 
 ### Through designer
 
@@ -75,7 +75,7 @@ Now, the required menu items can be added to the created XP tool bar instance.
 
 ### Through code
 
-An instance of [XPToolBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) should be initialized with required properties and added using `Controls` property. The below code snippet shows the XP tool bar is being added to the command bar.
+An instance of [XPToolBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) should be initialized with required properties and added using `Controls` property. The below code snippet shows the XP tool bar is being added to the command bar.
 
 {% tabs %}
 

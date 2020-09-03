@@ -51,7 +51,7 @@ Syncfusion.Windows.Forms.Office2003Colors.GroupBarHeaderColorLight = Color.White
 {% endtabs %}
 
 
-N> In GroupBar, [StackedMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~StackedMode.html) property should be enabled to customize the appearance of the GroupBar header.
+N> In GroupBar, [StackedMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_StackedMode) property should be enabled to customize the appearance of the GroupBar header.
 
 ![Header back color of a stacked group bar](Overview_images/Overview_img47.png)
 

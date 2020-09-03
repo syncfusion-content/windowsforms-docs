@@ -13,7 +13,7 @@ This section comprises the below events:
 
 ## SelectedIndexChanged event of PrimaryPages
 
-The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPagesCollection~SelectedIndexChanged_EV.html) event is handled whenever primary page selection is changed.
+The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPagesCollection.html) event is handled whenever primary page selection is changed.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ End Sub
 
 ## SelectedIndexChanged event of SecondaryPages
 
-The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPagesCollection~SelectedIndexChanged_EV.html) event is handled whenever secondary page selection is changed.
+The [SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPagesCollection.html) event is handled whenever secondary page selection is changed.
 
 {% tabs %}
 

@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Binding in Windows Forms ComboBox (SfComboBox)
 
-The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~DataSource.html) property. The following properties controls the data binding:
+The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property. The following properties controls the data binding:
 
-* `DisplayMember`: To display the underlying datasource for [SfComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox.html).
+* `DisplayMember`: To display the underlying datasource for [SfComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html).
 * `ValueMember`: To use as the actual value for the items. 
 
 {% tabs %}

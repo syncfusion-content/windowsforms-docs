@@ -17,7 +17,7 @@ The images associated with a menu item can be customized depending upon its stat
 
 ### Adding normal state images
 
-Images can be added to menu items directly via the property [`Image`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Image.html). The following code snippet shows the image added to a bar item.
+Images can be added to menu items directly via the property [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Image). The following code snippet shows the image added to a bar item.
 
 {% tabs %}
 
@@ -41,18 +41,18 @@ The below table discuss the image properties of customizing the image associated
 
 | Properties | Description |
 |-------------------|-------------------|
-| [`ImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageList.html) | Gets or sets the image list associated with a menu a item instance. |
-| [`ImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageListAdv.html) | Gets or sets the image list associated with a menu item instance. |
-| [`ImageSize`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageSize.html) | Gets or sets the size of an image. |
-| [`LargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~LargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`LargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~LargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`ImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ImageIndex.html) | Gets or sets the index of the image list collections. |
+| [`ImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ImageList) | Gets or sets the image list associated with a menu a item instance. |
+| [`ImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ImageListAdv) | Gets or sets the image list associated with a menu item instance. |
+| [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ImageSize) | Gets or sets the size of an image. |
+| [`LargeImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_LargeImageList) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`LargeImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_LargeImageListAdv) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`ImageIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ImageIndex) | Gets or sets the index of the image list collections. |
 
 N> By default, the `ImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
 
 ### Adding disabled state images
 
-When a menu item tends to be in a disabled state, a different image can be associated with that menu item via the property [`DisabledImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImage.html). The following code snippet shows the image associated with a disabled state menu item.
+When a menu item tends to be in a disabled state, a different image can be associated with that menu item via the property [`DisabledImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImage). The following code snippet shows the image associated with a disabled state menu item.
 
 {% tabs %}
 
@@ -76,11 +76,11 @@ The below table discuss the image properties of customizing the disabled state i
 
 | Properties | Description |
 |-------------------|-------------------|
-| [`DisabledImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
-| [`DisabledImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
-| [`DisabledLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`DisabledLargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`DisabledImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImageIndex.html) | Gets or sets the index of the image collections. |
+| [`DisabledImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImageList) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`DisabledImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImageListAdv) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`DisabledLargeImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledLargeImageList) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`DisabledLargeImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledLargeImageListAdv) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`DisabledImageIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImageIndex) | Gets or sets the index of the image collections. |
 
 N> By default, the `DisabledImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
 
@@ -90,7 +90,7 @@ N> By default, the `DisabledImageIndex` is set to -1, the corresponding image in
 
 ### Adding highlighted state images
 
-When a menu item is selected or highlighted, the image associated to the menu item can be set via the [`HighlightedImage`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImage.html) property. The following code snippet shows the image associated with a highlighted state menu item.
+When a menu item is selected or highlighted, the image associated to the menu item can be set via the [`HighlightedImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImage) property. The following code snippet shows the image associated with a highlighted state menu item.
 
 {% tabs %}
 
@@ -114,11 +114,11 @@ The below table discuss the image properties of customizing the selected state i
 
 | Properties | Description |
 |-------------------|-------------------|
-| [`HighlightedImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
-| [`HighlightedImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
-| [`HighlightedLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`HighlightedImageLargeListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`HighlightedImageIndex`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImageIndex.html) | Gets or sets the index of the image collections. |
+| [`HighlightedImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`HighlightedImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) | Gets or sets the ImageList that contains the images to display in the disabled menu item. |
+| [`HighlightedLargeImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`HighlightedImageLargeListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`HighlightedImageIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImageIndex) | Gets or sets the index of the image collections. |
 
 ![Before highlighting the menu item](Appearance-Customization-images\menuItem_non_HighlightedImage.png "Before highlighting a menu item")
 
@@ -128,7 +128,7 @@ N> By default, the `HighlightedImageIndex` is set to -1, the corresponding image
 
 ### Adding pressed state images
 
-When a menu item is pressed, the image associated to the menu item can be set via the [`PressedImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedImageListAdv.html) property. The following code snippet shows the image associated with a pressed state menu item.
+When a menu item is pressed, the image associated to the menu item can be set via the [`PressedImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_PressedImageListAdv) property. The following code snippet shows the image associated with a pressed state menu item.
 
 {% tabs %}
 
@@ -170,8 +170,8 @@ The below table discuss the image properties of customizing the pressed state im
 
 | Properties | Description |
 |-------------------|-------------------|
-| [`PressedLargeImageList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedLargeImageList.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
-| [`PressedLargeImageListAdv`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~PressedLargeImageListAdv.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`PressedLargeImageList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_PressedLargeImageList) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
+| [`PressedLargeImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_PressedLargeImageListAdv) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
 
 ## Customizing bar styles
 
@@ -369,14 +369,14 @@ Me.bar1.AllowCustomizing = False
 
 ### Customizing events
 
-There are two events associated while customizing the menu items. The [`CustomizingItem`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizingItem.html) property holds the current customizing item.
+There are two events associated while customizing the menu items. The [`CustomizingItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_CustomizingItem) property holds the current customizing item.
 
-* [`CustomizationBegin`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationBegin_EV.html) - Occurs when the customization of a menu item of a tool bar begins.
-* [`CustomizationDone`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~CustomizationDone_EV.html) - Occurs when the customization of a menu item gets completed.
+* [`CustomizationBegin`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html) - Occurs when the customization of a menu item of a tool bar begins.
+* [`CustomizationDone`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html) - Occurs when the customization of a menu item gets completed.
 
 ## Grouping menu items
 
-The menu items of a tool bar can be grouped together using the [`SeparatorIndices`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~SeparatorIndices.html) property. The specific tool bar instance is used to specific the grouping items. The below code snippet shows the menu items are grouped in a tool bar.
+The menu items of a tool bar can be grouped together using the [`SeparatorIndices`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html#Syncfusion_Windows_Forms_Tools_XPMenus_Bar_SeparatorIndices) property. The specific tool bar instance is used to specific the grouping items. The below code snippet shows the menu items are grouped in a tool bar.
 
 {% tabs %}
 
@@ -402,14 +402,14 @@ N> The index value represents the menu items incremental value for grouping. Its
 
 | Method | Description |
 |----------|--------------------|
-| [`BeginGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~BeginGroupAt.html) | Begins the grouping of menu items from the bar item instance specified. |
-| [`RemoveGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~RemoveGroupAt.html) | Removes the grouping of menu items from the bar item instance specified. |
-| [`IsGroupBeginning`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~IsGroupBeginning.html) | Returns a boolean value whether the specified bar item instance is at the begining of the grouping or not. |
-| [`ClearSeparators`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar~ClearSeparators.html) | Removes every grouping of menu items in a given tool bar. |
+| [`BeginGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html#Syncfusion_Windows_Forms_Tools_XPMenus_Bar_BeginGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) | Begins the grouping of menu items from the bar item instance specified. |
+| [`RemoveGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html#Syncfusion_Windows_Forms_Tools_XPMenus_Bar_RemoveGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) | Removes the grouping of menu items from the bar item instance specified. |
+| [`IsGroupBeginning`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html#Syncfusion_Windows_Forms_Tools_XPMenus_Bar_IsGroupBeginning_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) | Returns a boolean value whether the specified bar item instance is at the begining of the grouping or not. |
+| [`ClearSeparators`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html#Syncfusion_Windows_Forms_Tools_XPMenus_Bar_ClearSeparators) | Removes every grouping of menu items in a given tool bar. |
 
 ## Backward compatibility
 
-The menu control supports to customize the appearance and scale modes similar to the older version of the menu control. This can be used by enabling the [`UseBackwardCompatiblity`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~UseBackwardCompatiblity.html) property.
+The menu control supports to customize the appearance and scale modes similar to the older version of the menu control. This can be used by enabling the [`UseBackwardCompatiblity`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_UseBackwardCompatiblity) property.
 
 The color schemes can be modified by applying and customizing the theme colors.
 

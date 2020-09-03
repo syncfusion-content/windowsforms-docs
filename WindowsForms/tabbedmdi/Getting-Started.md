@@ -21,7 +21,7 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) Add the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) Add the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -32,7 +32,7 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 ![Windows Forms TabbedMDI drag and drop from toolbox](GettingStarted_images/Search.png)
 
-As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it is changed to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachedTo.html) property of the TabbedMDIManager will be set to Form1.
+As soon as the control is dropped, the Form1's `IsMDIContainer` property will be set to `true` and it is changed to an MDIContainer. Also, the [AttachedTo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachedTo) property of the TabbedMDIManager will be set to Form1.
 
 ![Windows Forms TabbedMDI added into the form](GettingStarted_images/ControlAdded.png)
  
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager_members.html) control. 
+4) Create an instance of the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. 
 
 {% tabs %}
 
@@ -89,7 +89,7 @@ Dim tabbedMDIManager As TabbedMDIManager = New TabbedMDIManager()
 
 ## Add Form as Tabbed MDI child
 
-We can attach the `Form1` to TabbedMDIManager container by using its [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html) function. Make sure whether the `IsMdIContainer` property of Form1 is set to `true`. Now the TabbedMDI mode will be turned on and any new MDIChildren created will be grouped as Tabs. Then, create a new Form and displays it in Form1.
+We can attach the `Form1` to TabbedMDIManager container by using its [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_) function. Make sure whether the `IsMdIContainer` property of Form1 is set to `true`. Now the TabbedMDI mode will be turned on and any new MDIChildren created will be grouped as Tabs. Then, create a new Form and displays it in Form1.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ We can attach the `Form1` to TabbedMDIManager container by using its [AttachToMd
 
 this.IsMdiContainer = true;
 
-// Use the [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AttachToMdiContainer.html) function only when the `AttachedTo` property of TabbedMDIManager is not set to Form1. 
+// Use the [AttachToMdiContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AttachToMdiContainer_System_Windows_Forms_Form_) function only when the `AttachedTo` property of TabbedMDIManager is not set to Form1. 
 
 this.tabbedMDIManager.AttachToMdiContainer(this);
 this.tabbedMDIManager.TabStyle = typeof(Syncfusion.Windows.Forms.Tools.TabRendererOffice2016Colorful);
@@ -145,7 +145,7 @@ The following screenshot illustrates new form will be tabbed inside form1.
 
 The `TabbedMDIManager` provides support to create a tab group horizontally or vertically.
 
-[CreateNewHorizontalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CreateNewHorizontalGroup.html) function helps to create a new tab group horizontally in TabbedMDIManager. 
+[CreateNewHorizontalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_CreateNewHorizontalGroup) function helps to create a new tab group horizontally in TabbedMDIManager. 
 
 {% tabs %}
 
@@ -188,7 +188,7 @@ Me.tabbedMDIManager.CreateNewHorizontalGroup()
 
 ![Horizontal tab group created in Tabbed MDI Manager](GettingStarted_images/TabGroupHorizontal.png)
 
-[CreateNewVerticalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~CreateNewVerticalGroup.html) function helps to create a new tab group vertically in TabbedMDIManager. 
+[CreateNewVerticalGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_CreateNewVerticalGroup) function helps to create a new tab group vertically in TabbedMDIManager. 
 
 {% tabs %}
 

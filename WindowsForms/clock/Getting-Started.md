@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with Windows Forms Clock
-This section provides a quick overview for working with the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control for WinForms.
+This section provides a quick overview for working with the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control for WinForms.
 
 ## Assembly deployment
 
@@ -17,16 +17,16 @@ Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/con
 Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Creating Application with Clock
-In this walk through, users will create WinForms application that contains [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control.
+In this walk through, users will create WinForms application that contains [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control.
 
 ### Creating the Project
-Create new Windows Forms Project in Visual Studio to display [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) with data objects.
+Create new Windows Forms Project in Visual Studio to display [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) with data objects.
 
 ### Adding Clock control via designer
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -67,7 +67,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %} 
 
-4) Create an instance of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control instance, and add it to the form.
+4) Create an instance of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control instance, and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -88,7 +88,7 @@ Me.Controls.Add(clock1)
 
 ## Clock type
 
-You can change the analog clock to digital clock by setting the [ClockType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ClockType.html) property of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control.
+You can change the analog clock to digital clock by setting the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ClockType) property of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Analog
 
 ## Change date and time
 
-To enable custom time, the Clock control should be enabled by setting the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowCustomTimeClock.html) property to `true`, and the custom time should be in date-time format.
+To enable custom time, the Clock control should be enabled by setting the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) property to `true`, and the custom time should be in date-time format.
 
 {% tabs %}
 {% highlight C# %}

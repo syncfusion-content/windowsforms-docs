@@ -13,7 +13,7 @@ This section elaborates on the following:
 
 ### Diagram Events
 
-[DiagramViewerEventSink](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the diagram. The various events that can be invoked using this class are discussed in the following topics.
+[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#) class contains the events specific to the diagram. The various events that can be invoked using this class are discussed in the following topics.
 
 #### Node Collection Events
 
@@ -26,15 +26,15 @@ Node Collection Events
 <table>
 <tr>
 <th>
-{{'[DiagramViewerEventSink](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#"")'| markdownify }}</th><th>
+{{'[DiagramViewerEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html#"")'| markdownify }}</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NodeCollectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~NodeCollectionChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html)'| markdownify }}</td><td>
 Triggered after the node collection changes are completed.</td></tr>
 <tr>
 <td>
-{{'[NodeCollectionChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~NodeCollectionChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeCollectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html)'| markdownify }}</td><td>
 Triggered when the node collection is edited.</td></tr>
 </table>
 
@@ -53,31 +53,31 @@ Description</th></tr>
 <tr>
 <td>
 Cancel</td><td>
-Indicates whether the {{'[NodeCollectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~NodeCollectionChanged_EV.html#"")'| markdownify }} event should be canceled.</td></tr>
+Indicates whether the {{'[NodeCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html)'| markdownify }} event should be canceled.</td></tr>
 <tr>
 <td>
-{{'[ChangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs_members.html#"")'| markdownify }}</td><td>
+{{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#"")'| markdownify }}</td><td>
 It returns the following possible values:Insert - whether the node is insertedRemove – whether the node is removed</td></tr>
 <tr>
 <td>
-{{'[Element](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EndPointChangingEventArgs~Element.html#"")'| markdownify }}</td><td>
+{{'[Element](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EndPointChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_EndPointChangingEventArgs_Element)'| markdownify }}</td><td>
 Returns whether the head or tail end is moved.</td></tr>
 <tr>
 <td>
-{{'[Elements](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Elements.html#"")'| markdownify }}</td><td>
+{{'[Elements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Elements)'| markdownify }}</td><td>
 Returns the elements collection on which the event occurs.</td></tr>
 <tr>
 <td>
-{{'[Index](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Index.html#"")'| markdownify }}</td><td>
+{{'[Index](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Index)'| markdownify }}</td><td>
 Returns the zero-based index into the collection on which the event occurred.</td></tr>
 <tr>
 <td>
-{{'[Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionEx~Owner.html#"")'| markdownify }}</td><td>
+{{'[Owner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionEx.html#Syncfusion_Windows_Forms_Diagram_CollectionEx_Owner)'| markdownify }}</td><td>
 Returns the base class onto which the node is added.</td></tr>
 </table>
 
 
-Inside the [NodeCollectionChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~NodeCollectionChanged_EV.html#) event handler, user can identify whether a node is added or removed from the node collection using simple message box as follows.
+Inside the [NodeCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html) event handler, user can identify whether a node is added or removed from the node collection using simple message box as follows.
 
 
 {% tabs %}
@@ -148,19 +148,19 @@ DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NodeClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeClick_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when mouse clicked on the node.</td></tr>
 <tr>
 <td>
-{{'[NodeDoubleClick](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeDoubleClick_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when mouse double clicked on the node.</td></tr>
 <tr>
 <td>
-{{'[NodeMouseEnter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeMouseEnter_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeMouseEnter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when mouse enter into the node.</td></tr>
 <tr>
 <td>
-{{'[NodeMouseLeave](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~NodeMouseLeave_EV.html#"")'| markdownify }}</td><td>
+{{'[NodeMouseLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when mouse leaves the node.</td></tr>
 </table>
 
@@ -179,11 +179,11 @@ NodeMouse EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Node](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs~Node.html#"")'| markdownify }}</td><td>
+{{'[Node](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs.html#Syncfusion_Windows_Forms_Diagram_NodeMouseEventArgs__ctor_Syncfusion_Windows_Forms_Diagram_Node_)'| markdownify }}</td><td>
 Gets the node clicked. If a single node is clicked that node will be returned. If a node is clicked from a group it will return that group as a node.</td></tr>
 <tr>
 <td>
-{{'[Actual Node](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs~ActualNode.html#"")'| markdownify }}</td><td>
+{{'[Actual Node](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.NodeMouseEventArgs.html#Syncfusion_Windows_Forms_Diagram_NodeMouseEventArgs_ActualNode)'| markdownify }}</td><td>
 Actual Nodes gets the exact node. If we click a node from group it will retrieve the exact node clicked.</td></tr>
 </table>
 
@@ -250,7 +250,7 @@ End Sub
 
 #### Tool Events
 
-The below events gets fired while activating or deactivating the UI tools ([Zoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.ZoomTool.html), [Pan](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.PanTool.html), [Select](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.SelectTool.html) etc) in the diagram.
+The below events gets fired while activating or deactivating the UI tools ([Zoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZoomTool.html), [Pan](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PanTool.html), [Select](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.SelectTool.html) etc) in the diagram.
 
 The below table shows all the Tool Events.
 
@@ -265,11 +265,11 @@ DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[ToolActivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink~ToolActivated_EV.html#"")'| markdownify }}</td><td>
+{{'[ToolActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when UI tool is activated.</td></tr>
 <tr>
 <td>
-{{'[ToolDeactivated](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink~ToolDeactivated_EV.html#"")'| markdownify }}</td><td>
+{{'[ToolDeactivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when UI tool is deactivated.</td></tr>
 </table>
 
@@ -350,9 +350,9 @@ Sample diagrams are as follows,
 
 #### Origin Events
 
-The [Origin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Origin.html#) changes when the diagram window is scrolled either horizontally or vertically.
+The [Origin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Origin) changes when the diagram window is scrolled either horizontally or vertically.
 
-[Origin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Origin.html#) events are as follows,
+[Origin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Origin) events are as follows,
 
 
 
@@ -365,7 +365,7 @@ DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[OriginChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~OriginChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[OriginChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Triggered when the origin is changed.</td></tr>
 </table>
 
@@ -383,20 +383,20 @@ Origin EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NewOrigin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs~NewOrigin.html#"")'| markdownify }}</td><td>
+{{'[NewOrigin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs.html#Syncfusion_Windows_Forms_Diagram_ViewOriginEventArgs_NewOrigin)'| markdownify }}</td><td>
 Returns the new X and Y origin values after moving the origin.</td></tr>
 <tr>
 <td>
-{{'[Offset](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs~Offset.html#"")'| markdownify }}</td><td>
+{{'[Offset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs.html#Syncfusion_Windows_Forms_Diagram_ViewOriginEventArgs_Offset)'| markdownify }}</td><td>
 Returns the difference between the old and new origin.</td></tr>
 <tr>
 <td>
-{{'[OriginalOrigin](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs~OriginalOrigin.html#"")'| markdownify }}</td><td>
+{{'[OriginalOrigin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewOriginEventArgs.html#Syncfusion_Windows_Forms_Diagram_ViewOriginEventArgs_OriginalOrigin)'| markdownify }}</td><td>
 Returns the X and Y values before moving the origin.</td></tr>
 </table>
 
 
-In the following code sample, when the [OriginChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~OriginChanged_EV.html#) event is handled, the various member values are listed in a text box as the control is scrolled accordingly.
+In the following code sample, when the [OriginChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html) event is handled, the various member values are listed in a text box as the control is scrolled accordingly.
 
 
 {% tabs %}
@@ -489,7 +489,7 @@ Sample diagrams are as follows.
 
 When the control is zoomed in or out, the magnification events will be fired displaying the old and new magnification factors.
 
-[Magnification](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.View~Magnification.html#) Events are as follows,
+[Magnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.View.html#Syncfusion_Windows_Forms_Diagram_View_Magnification) Events are as follows,
 
 Magnification Events
 
@@ -500,7 +500,7 @@ DiagramViewerEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[MagnificationChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewerEventSink~MagnificationChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[MagnificationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewerEventSink.html)'| markdownify }}</td><td>
 Fired when magnification value is changed.</td></tr>
 </table>
 
@@ -518,11 +518,11 @@ Magnification EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NewMagnification](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewMagnificationEventArgs~NewMagnification.html#"")'| markdownify }}</td><td>
+{{'[NewMagnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewMagnificationEventArgs.html#Syncfusion_Windows_Forms_Diagram_ViewMagnificationEventArgs_NewMagnification)'| markdownify }}</td><td>
 Returns the new magnification value.</td></tr>
 <tr>
 <td>
-{{'[OriginalMagnification](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ViewMagnificationEventArgs~OriginalMagnification.html#"")'| markdownify }}</td><td>
+{{'[OriginalMagnification](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ViewMagnificationEventArgs.html#Syncfusion_Windows_Forms_Diagram_ViewMagnificationEventArgs_OriginalMagnification)'| markdownify }}</td><td>
 Returns the old magnification value before the event occurred.</td></tr>
 </table>
 
@@ -570,7 +570,7 @@ Sample diagrams are as follows,
 
 #### Editor Events
 
-Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.DiagramController~TextEditor.html#) and Label Editor are changed. The following table lists the Editor events associated with Diagram control.
+Diagram control provides support to notify users when the text in the [Text Editor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramController.html#Syncfusion_Windows_Forms_Diagram_DiagramController_TextEditor) and Label Editor are changed. The following table lists the Editor events associated with Diagram control.
 
 
 
@@ -583,25 +583,25 @@ Event Name</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[TextChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~TextChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[TextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html)'| markdownify }}</td><td>
 This event is raised when the text in the text editor is changed. </td></tr>
 <tr>
 <td>
-{{'[LabelTextChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.InPlaceEditor~LabelTextChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[LabelTextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.InPlaceEditor.html)'| markdownify }}</td><td>
 This event is raised when the text in the label editor is changed.</td></tr>
 <tr>
 <td>
-{{'[KeyDown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~KeyDown_EV.html#"")'| markdownify }}</td><td>
+{{'[KeyDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html)'| markdownify }}</td><td>
 This event is raised whenever a key is pressed in the text editor. </td></tr>
 <tr>
 <td>
-{{'[TextEditingCompleted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~TextEditingCompleted_EV.html#"")'| markdownify }}</td><td>
+{{'[TextEditingCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html)'| markdownify }}</td><td>
 This event is raised when the text editing in the text editor is completed. </td></tr>
 </table>
 
 
 
-The following code example illustrates how the [TextChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.TextEditor~TextChanged_EV.html#) and [LabelTextChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.InPlaceEditor~LabelTextChanged_EV.html#) events are raised when the text in the text editor and label editor are changed respectively.
+The following code example illustrates how the [TextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.TextEditor.html) and [LabelTextChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.InPlaceEditor.html) events are raised when the text in the text editor and label editor are changed respectively.
 
 
 {% tabs %}
@@ -666,7 +666,7 @@ End Sub
 
 ### Model Events
 
-[DocumentEventSink](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html#) class contains the events specific to the document. The various events that can be invoked using this class are discussed in the following topics.
+[DocumentEventSink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html#) class contains the events specific to the document. The various events that can be invoked using this class are discussed in the following topics.
 
 #### Vertex Events
 
@@ -681,11 +681,11 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[VertexChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~VertexChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[VertexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Gets fired after the vertex of the node has been changed.</td></tr>
 <tr>
 <td>
-{{'[VertexChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~VertexChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[VertexChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Gets fired when the vertex of the node is changed.</td></tr>
 </table>
 
@@ -703,19 +703,19 @@ Vertex EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.VertexChangingEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangingEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the Vertex Changed event from being fired.</td></tr>
 <tr>
 <td>
-{{'[ChangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs~ChangeType.html#"")'| markdownify }}</td><td>
+{{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_ChangeType)'| markdownify }}</td><td>
 It returns the following possible value:Set - whether the vertex is set for the node.</td></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the node's name by which the node was  affected.</td></tr>
 <tr>
 <td>
-{{'[VertexIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs~VertexIndex.html#"")'| markdownify }}</td><td>
+{{'[VertexIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_VertexIndex)'| markdownify }}</td><td>
 Returns the index of the current vertex.</td></tr>
 <tr>
 <td>
@@ -723,7 +723,7 @@ Vertex EventArgs Member</td><td>
 Description</td></tr>
 <tr>
 <td>
-{{'[VertexLocation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs~VertexLocation.html#"")'| markdownify }}</td><td>
+{{'[VertexLocation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.VertexChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_VertexChangedEventArgs_VertexLocation)'| markdownify }}</td><td>
 Returns the position of the vertex.</td></tr>
 </table>
 
@@ -808,19 +808,19 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[PinOffsetChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~PinOffsetChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[PinOffsetChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered after the offset of the pinpoint is reset.</td></tr>
 <tr>
 <td>
-{{'[PinOffsetChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~PinOffsetChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[PinOffsetChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when the offset of the pinpoint is changed.</td></tr>
 <tr>
 <td>
-{{'[PinPointChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~PinPointChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[PinPointChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered after the pinpoint is repositioned.</td></tr>
 <tr>
 <td>
-{{'[PinPointChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~PinPointChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[PinPointChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when the pinpoint is moved.</td></tr>
 </table>
 
@@ -838,15 +838,15 @@ PinPoint / PinPointOffset EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.OffsetChangingEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OffsetChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_OffsetChangingEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the PinPoint Changing events.</td></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.OffsetChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OffsetChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_OffsetChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the node's name by which the node was affected.</td></tr>
 <tr>
 <td>
-{{'[Offset](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.OffsetChangedEventArgs~Offset.html#"")'| markdownify }}</td><td>
+{{'[Offset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OffsetChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_OffsetChangedEventArgs_Offset)'| markdownify }}</td><td>
 Returns the X and Y values.</td></tr>
 </table>
 
@@ -961,19 +961,19 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[FlipChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~FlipChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[FlipChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered after the node is rotated using Flip property.</td></tr>
 <tr>
 <td>
-{{'[FlipChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~FlipChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[FlipChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when the node is rotated using Flip property.</td></tr>
 <tr>
 <td>
-{{'[RotationChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~RotationChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[RotationChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered after the node is rotated.</td></tr>
 <tr>
 <td>
-{{'[RotationChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~RotationChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[RotationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered on rotating the node in any direction.</td></tr>
 </table>
 
@@ -991,11 +991,11 @@ Rotation EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.RotationChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.RotationChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_RotationChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the node's name by which the node was affected.</td></tr>
 <tr>
 <td>
-{{'[RotationOffset](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.RotationChangedEventArgs~RotationOffset.html#"")'| markdownify }}</td><td>
+{{'[RotationOffset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.RotationChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_RotationChangedEventArgs_RotationOffset)'| markdownify }}</td><td>
 Returns the angle by which the node was rotated.</td></tr>
 </table>
 
@@ -1009,19 +1009,19 @@ Flip EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.FlipChangingEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangingEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the FlipChanging event.</td></tr>
 <tr>
 <td>
-{{'[FlipAxis](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs~FlipAxis.html#"")'| markdownify }}</td><td>
+{{'[FlipAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangedEventArgs__ctor_Syncfusion_Windows_Forms_Diagram_Node_Syncfusion_Windows_Forms_Diagram_FlipAxis_System_Boolean_)'| markdownify }}</td><td>
 Returns the axis around which the node was rotated.</td></tr>
 <tr>
 <td>
-{{'[FlipValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs~FlipValue.html#"")'| markdownify }}</td><td>
+{{'[FlipValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangedEventArgs_FlipValue)'| markdownify }}</td><td>
 Returns the boolean value of the Flip property.</td></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.FlipChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_FlipChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the node's name by which the node was affected.</td></tr>
 </table>
 
@@ -1141,11 +1141,11 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[ZOrderChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~ZOrderChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[ZOrderChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Gets fired after the Z-order value is changed.</td></tr>
 <tr>
 <td>
-{{'[ZOrderChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~ZOrderChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[ZOrderChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Gets fired when the Z-order of the node is changed.</td></tr>
 </table>
 
@@ -1163,19 +1163,19 @@ Z-order EventArgs Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ZOrderChangingEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangingEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the Z-order changing event.</td></tr>
 <tr>
 <td>
-{{'[ChangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs~ChangeType.html#"")'| markdownify }}</td><td>
+{{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangedEventArgs_ChangeType)'| markdownify }}</td><td>
 It returns the following possible values,* Front-whether the controller bring the node to the front* Back-whether the controller send the node to the back</td></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the node's name by which the node was affected.</td></tr>
 <tr>
 <td>
-{{'[Z-order](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs~ZOrder.html#"")'| markdownify }}</td><td>
+{{'[Z-order](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ZOrderChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_ZOrderChangedEventArgs_ZOrder)'| markdownify }}</td><td>
 Returns the current Z-order value.</td></tr>
 </table>
 
@@ -1241,7 +1241,7 @@ Sample diagram are as follows:
 
 The below events gets fired while the connection is created between two nodes.
 
-The below table explains the [Connections](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.ConnectionPoint~Connections.html#) and [Ports](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.Node~Ports.html#) events.
+The below table explains the [Connections](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.ConnectionPoint.html#Syncfusion_Windows_Forms_Diagram_ConnectionPoint_Connections) and [Ports](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Node.html#Syncfusion_Windows_Forms_Diagram_Node_Ports) events.
 
 
 
@@ -1254,11 +1254,11 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[ConnectionsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~ConnectionsChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[ConnectionsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered after the connection is changed.</td></tr>
 <tr>
 <td>
-{{'[PortsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~PortsChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[PortsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when ports are added or changed.</td></tr>
 </table>
 
@@ -1276,27 +1276,27 @@ Connection and Port EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the ConnectionChanging event.</td></tr>
 <tr>
 <td>
-{{'[ChangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~ChangeType.html#"")'| markdownify }}</td><td>
+{{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_ChangeType)'| markdownify }}</td><td>
 It returns the following possible values:Insert-Whether the node is insertedRemove–Whether the node is removed</td></tr>
 <tr>
 <td>
-{{'[Element](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Element.html#"")'| markdownify }}</td><td>
+{{'[Element](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Element)'| markdownify }}</td><td>
 Returns whether the head or tail end is moved.</td></tr>
 <tr>
 <td>
-{{'[Elements](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Elements.html#"")'| markdownify }}</td><td>
+{{'[Elements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Elements)'| markdownify }}</td><td>
 Returns the elements collection on which the event occurs.</td></tr>
 <tr>
 <td>
-{{'[Index](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Index.html#"")'| markdownify }}</td><td>
+{{'[Index](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Index)'| markdownify }}</td><td>
 Returns the zero-based index into the collection on which the event occurred.</td></tr>
 <tr>
 <td>
-{{'[Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Owner.html#"")'| markdownify }}</td><td>
+{{'[Owner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Owner)'| markdownify }}</td><td>
 Returns the owner object. This is a read-only boolean value.</td></tr>
 </table>
 
@@ -1412,11 +1412,11 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[PropertyChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~PropertyChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[PropertyChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html)'| markdownify }}</td><td>
 Triggered after the property of any node is changed.</td></tr>
 <tr>
 <td>
-{{'[PropertyChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.EventSink~PropertyChanging_EV.html#"")'| markdownify }}</td><td>
+{{'[PropertyChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.EventSink.html)'| markdownify }}</td><td>
 Triggered when the property value is changed.</td></tr>
 </table>
 
@@ -1434,19 +1434,19 @@ PropertyChanging EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangingEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the PropertyChanged event.</td></tr>
 <tr>
 <td>
-{{'[NewValue](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs~NewValue.html#"")'| markdownify }}</td><td>
+{{'[NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangingEventArgs_NewValue)'| markdownify }}</td><td>
 Returns the new value assigned to the property.</td></tr>
 <tr>
 <td>
-{{'[PropertyContainer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs~PropertyContainer.html#"")'| markdownify }}</td><td>
+{{'[PropertyContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangingEventArgs_PropertyContainer)'| markdownify }}</td><td>
 Returns the container for the property.</td></tr>
 <tr>
 <td>
-{{'[PropertyName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs~PropertyName.html#"")'| markdownify }}</td><td>
+{{'[PropertyName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangingEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangingEventArgs_PropertyName)'| markdownify }}</td><td>
 Returns name of the property whose value is changed.</td></tr>
 </table>
 
@@ -1460,11 +1460,11 @@ PropertyChanged EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[NodeAffected](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangedEventArgs~NodeAffected.html#"")'| markdownify }}</td><td>
+{{'[NodeAffected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangedEventArgs_NodeAffected)'| markdownify }}</td><td>
 Returns the name of the node whose property is changed.</td></tr>
 <tr>
 <td>
-{{'[PropertyName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.PropertyChangedEventArgs~PropertyName.html#"")'| markdownify }}</td><td>
+{{'[PropertyName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.PropertyChangedEventArgs.html#Syncfusion_Windows_Forms_Diagram_PropertyChangedEventArgs_PropertyName)'| markdownify }}</td><td>
 Returns the name of the property whose value is changed.</td></tr>
 </table>
 
@@ -1542,11 +1542,11 @@ DocumentEventSink</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[LabelsChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~LabelsChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[LabelsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when labels are added.</td></tr>
 <tr>
 <td>
-{{'[LayersChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.DocumentEventSink~LayersChanged_EV.html#"")'| markdownify }}</td><td>
+{{'[LayersChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DocumentEventSink.html)'| markdownify }}</td><td>
 Triggered when layers are added to the model.</td></tr>
 </table>
 
@@ -1560,27 +1560,27 @@ Label / Layers EventArgs Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[Cancel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Cancel.html#"")'| markdownify }}</td><td>
+{{'[Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Cancel)'| markdownify }}</td><td>
 Cancels the LabelChanging event.</td></tr>
 <tr>
 <td>
-{{'[ChangeType](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~ChangeType.html#"")'| markdownify }}</td><td>
+{{'[ChangeType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_ChangeType)'| markdownify }}</td><td>
 It returns the following possible values:Insert-Whether the label is insertedRemove–Whether the label is removed</td></tr>
 <tr>
 <td>
-{{'[Element](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Element.html#"")'| markdownify }}</td><td>
+{{'[Element](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Element)'| markdownify }}</td><td>
 Returns whether the head or tail end is moved.</td></tr>
 <tr>
 <td>
-{{'[Elements](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Elements.html#"")'| markdownify }}</td><td>
+{{'[Elements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Elements)'| markdownify }}</td><td>
 Returns the elements collection on which the event occurs.</td></tr>
 <tr>
 <td>
-{{'[Index](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Index.html#"")'| markdownify }}</td><td>
+{{'[Index](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Index)'| markdownify }}</td><td>
 Returns the zero-based index into the collection on which the event occurred.</td></tr>
 <tr>
 <td>
-{{'[Owner](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base~Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs~Owner.html#"")'| markdownify }}</td><td>
+{{'[Owner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.CollectionExEventArgs.html#Syncfusion_Windows_Forms_Diagram_CollectionExEventArgs_Owner)'| markdownify }}</td><td>
 Returns the owner object.</td></tr>
 </table>
 

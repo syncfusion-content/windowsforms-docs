@@ -22,7 +22,7 @@ This can be done in the designer using the Keys Binding dialog as illustrated in
    3. Press the desired key or key combination.
    4. Now, click the Assign button to assign this keystroke combination as the shortcut for that particular standard command. Click OK.
 
-The [KeyBinder](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBinder.html) property is used to get the key binder. The [KeyBindingProcessor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~KeyBindingProcessor.html) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked by using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ShowKeysBindingEditor.html) function in the EditControl.
+The [KeyBinder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBinder) property is used to get the key binder. The [KeyBindingProcessor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_KeyBindingProcessor) property is used to get or set the key binding processor. The Editor Keys Binding dialog is invoked by using the [ShowKeysBindingEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowKeysBindingEditor) function in the EditControl.
 
 ![Displays Key binding dialog](End-user-Capability_images/End-user-Capability_img1.png)
 
@@ -63,7 +63,7 @@ The EditControl Find Dialog is enhanced with an alert message box when find reac
 
 **Creating a class for own find dialog**
 
-Create a class for own Find Dialog that inherits the [frmFindDialog](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.FrmFindDialog.html) class.
+Create a class for own Find Dialog that inherits the [frmFindDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Dialogs.FrmFindDialog.html) class.
 
 {% tabs %}
 
@@ -162,24 +162,24 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[FindText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindText.html)' | markdownify }}
+{{ '[FindText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindText_System_String_)' | markdownify }}
 </td><td>
 Finds the first occurrence of the specified text as per the conditions specified like match case, match whole word, search hidden text, and search up.</td></tr>
 <tr>
 <td>
-{{ '[FindRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindRange.html)' | markdownify }}</td><td>
+{{ '[FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindRange_System_String_Syncfusion_Windows_Forms_Edit_Utils_CoordinatePoint_)' | markdownify }}</td><td>
 Searches for given string in the text of control and returns text range of the first found occurrence.</td></tr>
 <tr>
 <td>
-{{ '[FindRegex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindRegex(Int32,Int32,String,Boolean,Boolean).html)' | markdownify }}</td><td>
+{{ '[FindRegex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindRegex_System_Int32_System_Int32_System_String_System_Boolean_System_Boolean_)' | markdownify }}</td><td>
 Looks for a specified expression in the text.</td></tr>
 <tr>
 <td>
-{{ '[FindCurrentText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindCurrentText.html)' | markdownify }}</td><td>
+{{ '[FindCurrentText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindCurrentText)' | markdownify }}</td><td>
 Finds the next occurrence of the word on which the cursor is presently on.</td></tr>
 <tr>
 <td>
-{{ '[FindNext](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindNext.html)' | markdownify }}</td><td>
+{{ '[FindNext](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindNext)' | markdownify }}</td><td>
 Finds the next occurrence of the current search text.</td></tr>
 </table>
 
@@ -240,7 +240,7 @@ Me.editControl1.FindNext()
 
 **History properties**
 
-The [FindHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~FindHistory.html) property is used to add or remove the items from find history in the `FindDialog` box. 
+The [FindHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_FindHistory) property is used to add or remove the items from find history in the `FindDialog` box. 
 
 The functions associated with the FindHistory property are used to perform the following operations.
 
@@ -334,11 +334,11 @@ Functions</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ReplaceText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceText.html)' | markdownify }}</td><td>
+{{ '[ReplaceText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceText_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_String_)' | markdownify }}</td><td>
 Replaces the first occurrence of a specified text with the replacement text as per the conditions specified like match case, match whole word, search hidden text, and search up.</td></tr>
 <tr>
 <td>
-{{ '[ReplaceAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceAll.html)' | markdownify }}</td><td>
+{{ '[ReplaceAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceAll_System_String_System_Boolean_System_Boolean_System_Boolean_System_String_)' | markdownify }}</td><td>
 Replaces all occurrences of the search text with the replacement text as per the conditions specified like match case, match whole word, search hidden text, and search up.</td></tr>
 </table>
 
@@ -371,7 +371,7 @@ Me.editControl1.ReplaceAll(" Drag-and-drop", "Drag and drop")
 
 {% endtabs %}
 
-The [ReplaceHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceHistory.html) property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the [ReplaceSearchHistory](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ReplaceSearchHistory.html) property is used to add or remove items from the find history in the Replace dialog box.
+The [ReplaceHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceHistory) property is used to add or remove items from the replace history in the Replace dialog box. Similarly, the [ReplaceSearchHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReplaceSearchHistory) property is used to add or remove items from the find history in the Replace dialog box.
 
 N> Refer to the following sample link that demonstrates the Find and Replace functionalities of EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Interactive Features\Find and Replace
@@ -405,7 +405,7 @@ Me.editControl1.ShowGoToDialog()
 
 ### GoTo line by programmatic
 
-Programmatically offers function named [GoTo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~GoTo.html) to navigate to any line.
+Programmatically offers function named [GoTo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GoTo_System_Int32_) to navigate to any line.
 
 The `linesAbove` argument can be used to specify the number of lines to be displayed above the pointer.
 
@@ -454,7 +454,7 @@ Supports customization of fonts through the configuration file and `FormatsCusto
 
 {% endhighlight %} 
 
-The EditControl supports font customization at runtime through the use of [frmFormatsConfig](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Dialogs.frmFormatsConfig.html) dialog box which consists of three smaller controls like ControlFormatSettings, ControlFormatsList, and ControlLanguageSelector.
+The EditControl supports font customization at runtime through the use of [frmFormatsConfig](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Dialogs.frmFormatsConfig.html) dialog box which consists of three smaller controls like ControlFormatSettings, ControlFormatsList, and ControlLanguageSelector.
 
 * `ControlFormatSettings`: Contains the actual controls to customize all the rendering settings of the selected format including font settings. 
 * `ControlFormatsList`: Consists of the list of currently existing formats in the configuration file. It also provides support to create new formats or delete the existing ones. 
@@ -508,7 +508,7 @@ This feature allows users to change the zoom level of SyntaxEditor, which brings
 
 ### Enable/Disable zoom in and out functionalities
 
-The [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property is used to enable the zoom in and out supports of SyntaxEditor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~AllowZoom.html) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
+The [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property is used to enable the zoom in and out supports of SyntaxEditor. The default value of the property is false. After the [AllowZoom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_AllowZoom) property has been enabled, the zooming operations can be done through mouse wheel, touch interactions, and programmatic. 
 
 ### Zooming operations using MouseWheel and Modifier key
 
@@ -516,7 +516,7 @@ The zoom in and zoom out operations can be done using mouse wheel and modifier k
 
 ### Programmatic zoom in and out 
  
-Users can perform zooming operations programmatically without user interactions using the [ZoomFactor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactor.html) property. The default value of this property is 1F (100 in percent). 
+Users can perform zooming operations programmatically without user interactions using the [ZoomFactor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ZoomFactor) property. The default value of this property is 1F (100 in percent). 
 
 ### Zoom in and out operation through touch interactions
  
@@ -527,7 +527,7 @@ Using touch interactions, zoom in and out operations can be performed. For every
 ZoomFactorChanged and ZoomFactorChanging events are available in Syntax Editor to notify the value changes of ZoomFactor.
 
 #### ZoomFactorChanged Event
-[ZoomFactorChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanged_EV.html) event occurs when the ZoomFactor value of SyntaxEditor is changed. The event arguments contain the old and new values of ZoomFactor.
+[ZoomFactorChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs when the ZoomFactor value of SyntaxEditor is changed. The event arguments contain the old and new values of ZoomFactor.
 
 {% tabs %}
 {% highlight C# %}
@@ -554,7 +554,7 @@ Console.WriteLine("Zoom Factor has been changed")
 
 #### ZoomFactorChanging Event
 
-[ZoomFactorChanging](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ZoomFactorChanging_EV.html) event occurs before the ZoomFactor value of SyntaxEditor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
+[ZoomFactorChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event occurs before the ZoomFactor value of SyntaxEditor is changed. The value changing of ZoomFactor is handled by setting e.Cancel to true. 
 
 {% tabs %}
 {% highlight C# %}

@@ -13,7 +13,7 @@ This section describes about background, foreground and visual style settings.
 
 ## Background settings
 
-You can set the background color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using the [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.backcolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BackColor) property.
+You can set the background color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using the [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.backcolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BackColor) property.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
 ## Foreground settings
 
-You can set the foreground color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
+You can set the foreground color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ Me.textBoxExt1.ForeColor = System.Drawing.Color.LightSeaGreen
 
 ## Visual style
 
-You can change the visual style for [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Style.html) property. The various styles are given below,
+You can change the visual style for [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Style) property. The various styles are given below,
 
 * Office2016Colorful
 * Office2016White

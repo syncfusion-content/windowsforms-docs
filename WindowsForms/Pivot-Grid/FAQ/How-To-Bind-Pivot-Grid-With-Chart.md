@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Bind Pivot Grid with Chart
 
-The [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class acts as an interface to bind the values of pivot grid control with the chart control. Based on selected ranges or values of the pivot grid control, the chart control is rendered. To achieve this support, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl).html) method of the PivotGridChartHelper class should be used.
+The [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class acts as an interface to bind the values of pivot grid control with the chart control. Based on selected ranges or values of the pivot grid control, the chart control is rendered. To achieve this support, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html#Syncfusion_GridHelperClasses_PivotGridChartHelper_WireGrid_Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Syncfusion_Windows_Forms_Chart_ChartControl_) method of the PivotGridChartHelper class should be used.
 
 Refer to the following code sample to bind the pivot grid control with chart control.
 
@@ -35,7 +35,7 @@ helper.WireGrid(Me.pivotGridControl1, Me.chartControl1)
 
 ## Customizing style and type of chart series
 
-The style and type of chart series can be customized at runtime by using the context menu of the chart control. To show the context menu in the chart control, the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Chart.Windows~Syncfusion.Windows.Forms.Chart.ChartControl~ShowContextMenu.html) property of chart control should be set to `true`.
+The style and type of chart series can be customized at runtime by using the context menu of the chart control. To show the context menu in the chart control, the [ShowContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowContextMenu) property of chart control should be set to `true`.
 
 Refer to the following code sample to view the context menu of chart control integrated with the pivot grid control.
 
@@ -61,7 +61,7 @@ Me.chartControl1.ShowContextMenu = True
 
 By default, the style and type of chart series modified at runtime are not persisted in the chart control, and the chart control is rendered with default series type and style while selecting the values in the pivot grid control.
 
-To persist the series type and style of the chart control, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper~WireGrid(PivotGridControl,ChartControl,Boolean).html) method of [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class should be invoked with `true` parameter as specified in the following code sample.
+To persist the series type and style of the chart control, the [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html) method of [PivotGridChartHelper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridChartHelper.html) class should be invoked with `true` parameter as specified in the following code sample.
 
 {% tabs %}
 

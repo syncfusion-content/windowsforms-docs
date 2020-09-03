@@ -13,7 +13,7 @@ The menu control supports serialization persisting the state of the toolbars and
 
 ## Enabling state persistence
 
-The menu control by default, enables the serialization and state persistence of the menu items. This can be done via the [`AutoLoadToolBarPositions`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager~AutoLoadToolBarPositions.html) and [`AutoPersistCustomization`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager~AutoLoadToolBarPositions.html). This can be done either via designer **Smart tag** options or through code.
+The menu control by default, enables the serialization and state persistence of the menu items. This can be done via the [`AutoLoadToolBarPositions`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoLoadToolBarPositions) and [`AutoPersistCustomization`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_MainFrameBarManager_AutoLoadToolBarPositions). This can be done either via designer **Smart tag** options or through code.
 
 The below image shows the serialization is being enabled via the designer
 

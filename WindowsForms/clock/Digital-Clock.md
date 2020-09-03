@@ -9,9 +9,9 @@ documentation: ug
 
 # Digital Clock
 
-The DigitalClock is implemented as an extension to the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
+The DigitalClock is implemented as an extension to the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
-You can use the DigitalClock in your application by simply switching the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ClockType.html) of the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control as described in the following sample code:
+You can use the DigitalClock in your application by simply switching the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ClockType) of the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control as described in the following sample code:
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ The DigitalClock offers a wide range of options to customize its appearance. It 
 
 ### Frames
 
-To enable the background frames, the DigitalClock should be enabled with the property [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowClockFrame.html) set to `true`.
+To enable the background frames, the DigitalClock should be enabled with the property [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) set to `true`.
 
 #### Rectangular frame
 
@@ -110,7 +110,7 @@ Me.clock1.ClockFrame = Syncfusion.Windows.Forms.Tools.ClockFrames.SquareFrame
 
 ### Shapes
 
-To enable background shapes in the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control, the [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowClockFrame.html) property should be disabled so that the control can support rendering the background shapes.
+To enable background shapes in the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control, the [ShowClockFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowClockFrame) property should be disabled so that the control can support rendering the background shapes.
 
 #### Rectangular shape
 
@@ -239,7 +239,7 @@ Me.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedSquar
 
 #### Foreground color
 
-The foreground color for the DigitalClock can be changed using the [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ForeColor.html) property. This color will be reflected in the text of the control.
+The foreground color for the DigitalClock can be changed using the [ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ForeColor) property. This color will be reflected in the text of the control.
 
 {% tabs %}
 
@@ -264,7 +264,7 @@ The foreground color for the DigitalClock can be changed using the [ForeColor](h
 
 #### Background color
 
-The background color for the DigitalClock can be changed using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~BackgroundColor.html) property. This color will be reflected in the background of the control.
+The background color for the DigitalClock can be changed using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_BackgroundColor) property. This color will be reflected in the background of the control.
 
 {% tabs %}
 
@@ -330,7 +330,7 @@ The border color for the control will be reflected only when the control is assi
 
 ### Show or hide days of the week
 
-To display or hide the week days and current date in the DigitalClock, the [DisplayDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~DisplayDates.html) property can be used.
+To display or hide the week days and current date in the DigitalClock, the [DisplayDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_DisplayDates) property can be used.
 
 {% tabs %}
 
@@ -360,7 +360,7 @@ To display or hide the week days and current date in the DigitalClock, the [Disp
 
 ### Show or hide the hour designator
 
-To display or hide the hour designator (AM and PM) in the DigitalClock, the [ShowHourDesignator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowHourDesignator.html) property can be used.
+To display or hide the hour designator (AM and PM) in the DigitalClock, the [ShowHourDesignator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowHourDesignator) property can be used.
 
 {% tabs %}
 
@@ -391,11 +391,11 @@ To display or hide the hour designator (AM and PM) in the DigitalClock, the [Sho
 
 ### Custom time Clock
 
-To enable the custom time, the DigitalClock should be enabled with the property [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowCustomTimeClock.html) set as `true`.
+To enable the custom time, the DigitalClock should be enabled with the property [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) set as `true`.
 
 #### Input formats
 
-To enable the custom time, the clock control should be enabled with the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock~ShowCustomTimeClock.html) property set as `true`, and the custom time should be in DateTime format.
+To enable the custom time, the clock control should be enabled with the [ShowCustomTimeClock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ShowCustomTimeClock) property set as `true`, and the custom time should be in DateTime format.
 
 {% tabs %}
 

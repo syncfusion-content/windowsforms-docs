@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting started
 
-This section describes how to add [GroupView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -20,13 +20,13 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 1) Create a new Windows Forms project in the Visual Studio.
 
-2) Add the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
+2) Add the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
 ![Windows Forms GroupView drag and drop from toolbox](Overview_images/GroupView_img1.png)
 
-3) Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
+3) Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
 
 ![Windows Forms GroupView showing collection editor of item](GettingStarted_images/GroupView_collectioneditor.png)
 
@@ -58,7 +58,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %} 
 
-4) Create an instance of the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView.html) control, and then add it to the form.
+4) Create an instance of the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control, and then add it to the form.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ Me.Controls.Add(groupView1)
 
 {% endtabs %}
 
-5) Add items to GroupView container using the [GroupViewItems](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~GroupViewItems.html) collection property.
+5) Add items to GroupView container using the [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems) collection property.
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ Me.imageList1.Images.SetKeyName(2, "light.png")
 {% endhighlight %}
 {% endtabs %}
 
-After adding images, assign **ImageList** to the [SmallImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SmallImageList.html) property, and then set the [SmallImageView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SmallImageView.html) property to `true` for the **GroupView** control.
+After adding images, assign **ImageList** to the [SmallImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SmallImageList) property, and then set the [SmallImageView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SmallImageView) property to `true` for the **GroupView** control.
 
 {% tabs %}
 {% highlight C# %}
@@ -154,7 +154,7 @@ groupView1.SmallImageView = True
 
 ## Selected item
 
-At run time, a particular item can be selected using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupView~SelectedItem.html) property.
+At run time, a particular item can be selected using the [SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_SelectedItem) property.
 
 {% tabs %}
 {% highlight C# %}

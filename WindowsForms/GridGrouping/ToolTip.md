@@ -216,7 +216,7 @@ N> The [CellToolTip  ](http://help.syncfusion.com/cr/cref_files/windowsforms/S
 
 ### ActivateToolTip event
 
-[ActivateToolTip]( http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~ActivateToolTip_EV.html ) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText]( https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html ) (`CellTipText` should not be empty).
+[ActivateToolTip]( http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~ActivateToolTip_EV.html ) event will be triggered when the mouse hovers on a cell which has the valid [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) (`CellTipText` should not be empty).
 
 {% tabs %}
 {% highlight c# %}

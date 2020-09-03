@@ -9,7 +9,7 @@ documentation: ug
 
 # TextBox Settings For ButtonEdit
 
-The default textbox within the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control can be replaced with any custom textbox like [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview), [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview), and so on. The embedded textbox of a ButtonEdit control can shown by [ShowTextBox](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~ShowTextBox.html) property and customized by [SelectionLength](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~SelectionLength.html) and [SelectionStart](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~SelectionStart.html) properties.
+The default textbox within the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control can be replaced with any custom textbox like [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview), [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview), and so on. The embedded textbox of a ButtonEdit control can shown by [ShowTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_ShowTextBox) property and customized by [SelectionLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_SelectionLength) and [SelectionStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_SelectionStart) properties.
 
 <table>
 <tr>
@@ -48,6 +48,6 @@ Me.buttonEdit1.ShowTexBox = True
 {%endhighlight%}
 {% endtabs %}
 
- N> To increase the height of the [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control, by enabling the Multiline property of `ButtonEdit.TextBox`.
+ N> To increase the height of the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control, by enabling the Multiline property of `ButtonEdit.TextBox`.
 
  ![TextBox setting in ButtonEdit](TextBoxSetting_images/TextBoxSetting_img1.png)

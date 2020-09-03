@@ -14,7 +14,7 @@ This section provides a quick overview to work with the command bar control in W
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.
 
-This section describes how to add [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -29,7 +29,7 @@ You can create the Windows Forms application with CommandBar control as follows:
 
 ### Adding control via designer
 
-The [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it to the designer view. The following required assembly references will be added automatically.
+The [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html) can be added to the application by dragging it from the toolbox and dropping it to the designer view. The following required assembly references will be added automatically.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -83,7 +83,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** - Create a [CommandBarController](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController.html) instance and set the [HostForm](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~HostForm.html) property to be the current form.
+**Step 3** - Create a [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html) instance and set the [HostForm](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_HostForm) property to be the current form.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ Me.commandBarController1.HostForm = Me;
 
 #### **Adding command bar**
 
-Create an instance of [CommandBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) and add it to the [CommandBars](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBarController~CommandBars.html) collection property of commandbar controller instance. The below code shows a command bar is being added to the commandbar controller.
+Create an instance of [CommandBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) and add it to the [CommandBars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_CommandBars) collection property of commandbar controller instance. The below code shows a command bar is being added to the commandbar controller.
 
 {% tabs %}
 
@@ -219,4 +219,4 @@ Me.commandBar1.Controls.Add(panel1)
 
 ## Adding menu items
 
-Menu items could be added to the command bar only via the [`XpToolBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. Refer [this topic](https://help.syncfusion.com/windowsforms/hosting-controls#integrating-xp-toolbar)
+Menu items could be added to the command bar only via the [`XpToolBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. Refer [this topic](https://help.syncfusion.com/windowsforms/hosting-controls#integrating-xp-toolbar)

@@ -13,7 +13,7 @@ This section explains how to work with various options in the AutoComplete compo
 
 ## Setting AutoComplete modes
 
-The AutoComplete component provides the auto-complete support to the editor control based on the input text. It can be done using the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method.
+The AutoComplete component provides the auto-complete support to the editor control based on the input text. It can be done using the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_SetAutoComplete_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_AutoCompleteModes_) method.
 
 The different types of AutoComplete modes are as follows.
 
@@ -96,13 +96,13 @@ The following code snippet shows how to update the AutoComplete modes.
 
 {% endtabs %} 
 
-N> The values are filtered from the column which is set as matching column for auto complete. By default, the [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MatchingColumn.html) value is `true` for the first column of binding source.
+N> The values are filtered from the column which is set as matching column for auto complete. By default, the [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_MatchingColumn) value is `true` for the first column of binding source.
 
 A sample that demonstrates the AutoComplete mode is available [here](https://github.com/SyncfusionExamples/AutoCompleteModes_in_AutoComplete_Component/tree/master/AutoComplete%20Modes)
 
 ## Case sensitivity
 
-Specifies whether to ignore case for string comparison. It can be enabled by setting the [CaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~CaseSensitive.html) property to `true`. The default value of this property is `true`.
+Specifies whether to ignore case for string comparison. It can be enabled by setting the [CaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_CaseSensitive) property to `true`. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ Specifies whether to ignore case for string comparison. It can be enabled by set
 
 ## Match mode
 
-The [MatchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~MatchMode.html) property specifies the mode where the most appropriate match for the current content in the editor control is filled in the AutoComplete history list. The default value is `Automatic`.
+The [MatchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_MatchMode) property specifies the mode where the most appropriate match for the current content in the editor control is filled in the AutoComplete history list. The default value is `Automatic`.
 
 The following code snippet implements column configuration.
 
@@ -145,9 +145,9 @@ Me.autoComplete1.MatchMode = AutoCompleteMatchModes.Automatic
 
 ## Matching column 
 
-The [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MatchingColumn.html) indicates the represented column to be treated as matching column. The default value of this property is `true` for 0th index column.
+The [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_MatchingColumn) indicates the represented column to be treated as matching column. The default value of this property is `true` for 0th index column.
 
-Refresh column before setting MatchingColumn using the [RefreshColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~RefreshColumns.html) method. 
+Refresh column before setting MatchingColumn using the [RefreshColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_RefreshColumns) method. 
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ this.autoComplete1.Columns[1].MatchingColumn = true;
 
 ## Sorting items
 
-Specifies whether sorting needs to be performed in the items present in the AutoComplete popup. It can be done by setting the [AutoSortList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoSortList.html) property to `true`. The default value of this property is `true`.
+Specifies whether sorting needs to be performed in the items present in the AutoComplete popup. It can be done by setting the [AutoSortList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoSortList) property to `true`. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -187,11 +187,11 @@ Specifies whether sorting needs to be performed in the items present in the Auto
 
 {% endtabs %}
 
-N> The items are sorted on the basis of the column whose [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MatchingColumn.html) are set to `true`. 
+N> The items are sorted on the basis of the column whose [MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_MatchingColumn) are set to `true`. 
 
 ## Handling duplicate values
 
-The duplicate values can be used in AutoComplete data source by setting the [EnableDuplicateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~EnableDuplicateValues.html) property to `true`.
+The duplicate values can be used in AutoComplete data source by setting the [EnableDuplicateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_EnableDuplicateValues) property to `true`.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ The duplicate values can be used in AutoComplete data source by setting the [Ena
 
 ### Adding items to history list
 
-The current input text in the editor control can be added to the history list at run time when the Enter key is pressed. This support can be enabled by setting the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoAddItem.html) property to `true`. The default value of this property is `false`.
+The current input text in the editor control can be added to the history list at run time when the Enter key is pressed. This support can be enabled by setting the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoAddItem) property to `true`. The default value of this property is `false`.
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ The current input text in the editor control can be added to the history list at
 
 ### Deleting items from history list
 
-The current selected item can be removed from auto complete popup when the `Delete` key is pressed at run time. This support can be enabled by setting the [AllowListDelete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AllowListDelete.html) property to `true`.
+The current selected item can be removed from auto complete popup when the `Delete` key is pressed at run time. This support can be enabled by setting the [AllowListDelete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AllowListDelete) property to `true`.
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ The current selected item can be removed from auto complete popup when the `Dele
 
 ### Deleting history
 
-The history items persisted by the AutoComplete component can be deleted by invoking the [ResetHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ResetHistory.html) method. The entire history list in the AutoComplete popup will be deleted.
+The history items persisted by the AutoComplete component can be deleted by invoking the [ResetHistory](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ResetHistory) method. The entire history list in the AutoComplete popup will be deleted.
 
 {% tabs %}
 
@@ -273,7 +273,7 @@ The history items persisted by the AutoComplete component can be deleted by invo
 
 ## Setting maximum number of suggestions
 
-You can limit the number of suggestions need to be displayed in the AutoComplete popup using the [MaxNumberofSuggestion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~MaxNumberofSuggestion.html) property.
+You can limit the number of suggestions need to be displayed in the AutoComplete popup using the [MaxNumberofSuggestion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_MaxNumberofSuggestion) property.
 
 ![Windows Forms AutoComplete Maximum number of suggestions](WorkingwithAutoComplete_images/AutoComplete_Maxsuggestions.png)
 
@@ -295,7 +295,7 @@ You can limit the number of suggestions need to be displayed in the AutoComplete
 
 ## Integration with MS ComboBox
 
-If MS ComboBox is used as editor control, the Combobox dropdown can be suppressed and overridden by the AutoComplete component using the [OverrideCombo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~OverrideCombo.html) property.
+If MS ComboBox is used as editor control, the Combobox dropdown can be suppressed and overridden by the AutoComplete component using the [OverrideCombo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_OverrideCombo) property.
 
 ![Windows Forms AutoComplete Integration with MS Combobox](WorkingwithAutoComplete_images/AutoComplete_Overridecombo.png)
 
@@ -340,7 +340,7 @@ The auto-complete functionality can be added to the RichTextBox control. The fol
 
 {% endtabs %}
 
-2. Create an instance for the CustomRichTextBox class and the AutoComplete component. Then, use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~SetAutoComplete.html) method of AutoComplete component to enable auto-complete support for the RichTextBox control.
+2. Create an instance for the CustomRichTextBox class and the AutoComplete component. Then, use the [SetAutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_SetAutoComplete_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_AutoCompleteModes_) method of AutoComplete component to enable auto-complete support for the RichTextBox control.
 
 {% tabs %}
 
@@ -368,7 +368,7 @@ A sample that demonstrates the integration with RichTextBox control is available
 
 ## Opening the AutoComplete popup programmatically
 
-The AutoComplete popup can be shown programmatically using the [AutoCompletePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoCompletePopup.html) method. 
+The AutoComplete popup can be shown programmatically using the [AutoCompletePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoCompletePopup) method. 
 
 {% tabs %}
 

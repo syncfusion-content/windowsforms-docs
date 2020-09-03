@@ -21,7 +21,7 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) Add the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 * Syncfusion.Tools.Windows
@@ -41,7 +41,7 @@ To add the control manually in C#, follow the given steps:
 * Syncfusion.Tools.Windows
 * Syncfusion.Edit.Windows
 
-3) Create an instance of the [EditControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
+3) Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ Me.editControl1.LoadFile(Path.GetDirectoryName(Application.ExecutablePath) + @"\
 
 ## Syntax highlighting
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) offers mostly-used languages such as C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure a new custom language.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) offers mostly-used languages such as C#, VB, XML, HTML, JScript, PowerShell, and SQL as built-in languages. It also provides support to configure a new custom language.
 
 The EditControl has built-in syntax highlighting support for the following languages:
 
@@ -149,7 +149,7 @@ The EditControl has built-in syntax highlighting support for the following langu
 
 {% highlight C# %}
 
-// Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
+// Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
 
 this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
@@ -158,7 +158,7 @@ this.editControl1.ApplyConfiguration(KnownLanguages.CSharp);
 
 {% highlight VB %}
 
-' Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
+' Considering configuration settings for C# as an example. Using the [KnownLanguages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Enums.KnownLanguages.html) enumerator.
 
 Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
@@ -170,7 +170,7 @@ Me.editControl1.ApplyConfiguration(KnownLanguages.CSharp)
 
 ## Custom language configuration
 
-The EditControl provides supports custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl using the [Configurator.Open](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~Configurator.html) and [ApplyConfiguration](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl~ApplyConfiguration.html) functions.
+The EditControl provides supports custom language configuration. You can plug-in an external configuration file that defines a custom language to the EditControl using the [Configurator.Open](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Configurator) and [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) functions.
 
 1) Create a configuration file.
 

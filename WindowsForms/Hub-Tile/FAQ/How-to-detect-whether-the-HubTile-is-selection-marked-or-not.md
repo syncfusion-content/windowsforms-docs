@@ -9,7 +9,7 @@ documentation: ug
 
 # How to detect whether the HubTile is selection marked or not?
 
-You can achieve it by using HubTile [IsSelectionMarked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~IsSelectionMarked.html) property.
+You can achieve it by using HubTile [IsSelectionMarked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_IsSelectionMarked) property.
 
 {% tabs %}
 {% highlight C# %} 

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to enable shadow of the Office2010Form?
 
-Shadow of the Office2010Form can be enabled or disabled using the [DropShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~DropShadow.html) property.
+Shadow of the Office2010Form can be enabled or disabled using the [DropShadow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_DropShadow) property.
 
 {% tabs %}
 
