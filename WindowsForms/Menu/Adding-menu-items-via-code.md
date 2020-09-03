@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Menu Items via Code
 
-This section provides a quick overview to add the menu items to a [Menu](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control through the code.
+This section provides a quick overview to add the menu items to a [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control through the code.
 
 To add control manually in C# or VB, follow the below steps initially.
 
@@ -42,7 +42,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
+**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ Me.mainFrameBarManager1.Form = Me;
 
 ## Adding main bar
 
-The [Bar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) component acts a place holder to the menu items. It can be added to menu using the `Bars` collection property of MainFrameBarManager instance.
+The [Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.Bar.html) component acts a place holder to the menu items. It can be added to menu using the `Bars` collection property of MainFrameBarManager instance.
 
 The below code snippet shows the addition of a bar to the menu.
 
@@ -114,7 +114,7 @@ Me.mainFrameBarManager1.Categories.Add("Menu")
 
 ## Adding parent item
 
-The [ParentBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of [bar item](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), that acts as a parent component for child bar items and sub-menu.
+The [ParentBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html) is a type of [bar item](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), that acts as a parent component for child bar items and sub-menu.
 
 The following code snippet shows the adding of parent bar item to a bar with child items. The sub-menu or the child items can be added via the `Items` property.
 
@@ -208,7 +208,7 @@ Me.bar1.Items.AddRange(New Syncfusion.Windows.Forms.Tools.XPMenus.BarItem() { pa
 
 ## Adding dropdown item
 
-The [DropDownBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of bar item, which will display a popup menu when clicked. A custom control can also be loaded when the menu item is clicked. This can be done by assigning the required component to the [`PopupControlContainer`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem~PopupControlContainer.html) property of the drop down bar item.
+The [DropDownBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html) is a type of bar item, which will display a popup menu when clicked. A custom control can also be loaded when the menu item is clicked. This can be done by assigning the required component to the [`PopupControlContainer`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.DropDownBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_DropDownBarItem_PopupControlContainer) property of the drop down bar item.
 
 The following code snippet shows the drop down item is being added with a color picker control.
 
@@ -266,7 +266,7 @@ Me.bar1.Items.Add(dropDownBarItem1)
 
 ## Adding combo box item
 
-The [ComboBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) is a type of bar item, which behaves like combo box control. The items collection can be specified using the [`ChoiceList`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem~ChoiceList.html) property.
+The [ComboBoxBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html) is a type of bar item, which behaves like combo box control. The items collection can be specified using the [`ChoiceList`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ComboBoxBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ComboBoxBarItem_ChoiceList) property.
 
 The below code snippet shows the combo box is being added with a collection of items via the `ChoiceList` property.
 
@@ -296,7 +296,7 @@ Me.bar1.Items.Add(Me.comboBoxBarItem1)
 
 ## Adding static item
 
-A [StaticBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) is a type of bar item, which behaves like Label control.
+A [StaticBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.StaticBarItem.html) is a type of bar item, which behaves like Label control.
 
 The below code snippet shows the static bar item is added to the menu.
 
@@ -332,7 +332,7 @@ Me.bar1.Items.Add(staticBarItem1)
 
 ## Adding toolbar item
 
-A [ToolBarListBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ToolBarListBarItem.html) is a type of bar item, which behaves like a toolbar menu item. It displays the options to customize the menu items of the parent tool bar to which it gets associated.
+A [ToolBarListBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ToolBarListBarItem.html) is a type of bar item, which behaves like a toolbar menu item. It displays the options to customize the menu items of the parent tool bar to which it gets associated.
 
 The below code shows the toolbar item is added to the menu.
 
@@ -368,7 +368,7 @@ Me.bar1.Items.Add(toolbarListBarItem)
 
 ## Adding textbox item
 
-The [TextBoxBarItem](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of bar item, which behaves like text box control. The text edited can be obtained via the [`TextBoxValue`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem~TextBoxValue.html) property.
+The [TextBoxBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html) is a type of bar item, which behaves like text box control. The text edited can be obtained via the [`TextBoxValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.TextBoxBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_TextBoxBarItem_TextBoxValue) property.
 
 The below code snippet shows the text item is added to the menu.
 

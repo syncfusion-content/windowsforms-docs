@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to clear a date selection programmatically?
 
-This can be done by calling [ClearSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ClearSelection.html) method.
+This can be done by calling [ClearSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ClearSelection) method.
 
 {% tabs %}
 

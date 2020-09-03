@@ -32,7 +32,7 @@ There may be situations where the HTML document is to be loaded initially at sta
 
 
 
-Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~StartupDocument.html) property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
+Using the Properties window involves specifying the location of the Startup HTML file in the [StartupDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_StartupDocument) property available within the properties window for the HTMLUI control or by clicking the link Load from file shown at the bottom of the properties window.
 
 ![Set the location of startup html file](Loading-HTML_images/Loading-HTML_img1.png)
 

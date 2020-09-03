@@ -11,7 +11,7 @@ documentation: ug
 
 Pivot grid provides support for printing that allows users to print the contents of pivot grid on paper and it also provides support to preview the contents before printing. This support is used to print the pivot grid control in both landscape and portrait views.
 
-The "Syncfusion.GridHelperClasses.Windows" reference needs to be added to the application to achieve this support. The [PivotGridPrintDocumentAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.PivotGridPrintDocumentAdv.html) class helps to print the pivot grid content on paper.
+The "Syncfusion.GridHelperClasses.Windows" reference needs to be added to the application to achieve this support. The [PivotGridPrintDocumentAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PivotGridPrintDocumentAdv.html) class helps to print the pivot grid content on paper.
 
 Refer to the below code sample to print the pivot grid control.
 
@@ -43,7 +43,7 @@ printPreviewDialog.ShowDialog()
 
 ## Adding header and footer
 
-Headers and footers can also be added to the printed document by using the [HeaderPrintStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~HeaderPrintStyleInfo.html) and [FooterPrintStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~FooterPrintStyleInfo.html) properties.
+Headers and footers can also be added to the printed document by using the [HeaderPrintStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_HeaderPrintStyleInfo) and [FooterPrintStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_FooterPrintStyleInfo) properties.
 
 Refer to the below code sample to add header and footer while printing the pivot grid control.
 
@@ -87,8 +87,8 @@ printPreviewDialog.ShowDialog()
 
 ## Events
 
-* The **[DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintHeader_EV.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of header added in the printed document.
-* The **[DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridPrintDocumentAdv~DrawGridPrintFooter_EV.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of footer added in the printed document.
+* The **[DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of header added in the printed document.
+* The **[DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html)** event occurs while previewing the pivot grid control. This event helps to customize the default appearance of footer added in the printed document.
 
 A demo sample is available in the following location.
 

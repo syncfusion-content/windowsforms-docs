@@ -9,7 +9,7 @@ documentation: ug
 
 ## Applying Themes in TextBoxExt
 
-The [ThemesEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ThemesEnabled.html) property specifies whether XPThemes should be used or not when [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) is set to `Fixed3D`.
+The [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property specifies whether XPThemes should be used or not when [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) is set to `Fixed3D`.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.textBoxExt1.ThemesEnabled = True
 
 ## Themes
 
-The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) provides the following themes for professional representation.
+The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) provides the following themes for professional representation.
 
 * Office2016Colorful
 * Office2016White
@@ -143,7 +143,7 @@ End Class
 
 ### Apply theme
 
-You can change the appearance of TextBoxExt control by using [ThemeName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ThemeName.html) property.
+You can change the appearance of TextBoxExt control by using [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemeName) property.
 
 {% tabs %}
 

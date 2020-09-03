@@ -13,7 +13,7 @@ The grouping bar allows users to slice and dice the pivot fields between column,
 
 ## Enabling grouping bar
 
-By default, the grouping bar is disabled in the pivot grid control. The [ShowGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowGroupBar.html) property of pivot grid should be set as true to enable the grouping bar in the pivot grid control.
+By default, the grouping bar is disabled in the pivot grid control. The [ShowGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowGroupBar) property of pivot grid should be set as true to enable the grouping bar in the pivot grid control.
 
 Refer to the below code sample to enable the grouping bar in pivot grid.
 
@@ -44,19 +44,19 @@ The grouping bar consists of four header areas. The headers of all visible pivot
 
 ### Filter header area
 
-The filter header area holds the filter items of pivot grid control and it can be accessed by using the property of [FilterArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~FilterArea.html). The headers of pivot filter fields are displayed within the filter header area.
+The filter header area holds the filter items of pivot grid control and it can be accessed by using the property of [FilterArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_FilterArea). The headers of pivot filter fields are displayed within the filter header area.
 
 ### Data header area
 
-The data header area holds the calculation items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GroupDropArea.html). The headers of pivot calculation fields are displayed within the data header area.
+The data header area holds the calculation items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GroupDropArea). The headers of pivot calculation fields are displayed within the data header area.
 
 ### Column header area
 
-The column header area holds the pivot column items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GroupDropArea.html). The headers of pivot column fields are displayed within the column header area.
+The column header area holds the pivot column items of pivot grid control and it can be accessed by using the property of [GroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GroupDropArea). The headers of pivot column fields are displayed within the column header area.
 
 ### Row header area
 
-The row header area holds the pivot row items of pivot grid control and it is accessed by using the property of [RowGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControllBase~RowGroupDropArea.html). The headers of pivot row fields are displayed within the row header area.
+The row header area holds the pivot row items of pivot grid control and it is accessed by using the property of [RowGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_RowGroupDropArea). The headers of pivot row fields are displayed within the row header area.
 
 ## Interactive features
 
@@ -70,7 +70,7 @@ The items present in the header areas except the data header area are supported 
 
 ![Grouping-bar_img2](Grouping-Bar_images/Grouping-bar_img2.png)
 
-By default, the filtering option is enabled in the grouping bar. In order to disable the filtering option available in the grouping bar, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowFiltering.html) property of pivot grid is used.
+By default, the filtering option is enabled in the grouping bar. In order to disable the filtering option available in the grouping bar, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AllowFiltering) property of pivot grid is used.
 
 Refer to the below code sample to disable the filtering option in grouping bar.
 
@@ -107,7 +107,7 @@ The following screenshot illustrates the "Country" field header which is sorted 
 
 ![Grouping-Bar_img4](Grouping-Bar_images/Grouping-Bar_img4.png)
 
-By default, the sorting option is enabled in the grouping bar. In order to disable the sorting option available in the grouping bar, [AllowSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AllowSorting.html) property of pivot grid is used.
+By default, the sorting option is enabled in the grouping bar. In order to disable the sorting option available in the grouping bar, [AllowSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_AllowSorting) property of pivot grid is used.
 
 {% tabs %}
 

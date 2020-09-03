@@ -259,7 +259,7 @@ SfDataGrid control provides support for exporting the data into a PDF file. You 
 Data Virtualization
 </td>
 <td>
-Large amount of data can be loaded in less time by setting {{'[EnableDataVirtualization](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EnableDataVirtualization.html)'| markdownify }} property to true.
+Large amount of data can be loaded in less time by setting {{'[EnableDataVirtualization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EnableDataVirtualization)'| markdownify }} property to true.
 
 </td>
 </tr>

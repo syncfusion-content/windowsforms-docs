@@ -19,15 +19,15 @@ You can find more details about installing the NuGet package in a Windows Forms 
 
 ## Create a simple application with Calculator
 
-You can create a Windows Forms application with the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) using the following steps:
+You can create a Windows Forms application with the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) using the following steps:
 
 ## Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
+Create a new Windows Forms project in Visual Studio to display the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 
 ## Add control through designer
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
+The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,7 +51,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Base 
   * Syncfusion.Tools.Windows
 
-**2.** Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
+**2.** Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
 
   {% tabs %}
   {% highlight C# %}
@@ -62,7 +62,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %} 
 
-**3.** Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
+**3.** Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
 
   {% tabs %}
   {% highlight C# %}

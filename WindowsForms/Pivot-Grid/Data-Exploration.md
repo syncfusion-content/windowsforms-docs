@@ -17,7 +17,7 @@ By default, the pivot grid control loads the data by expanding all the row heade
 
 ### Collapsing all headers
 
-Both the row and column headers can be collapsed simultaneously by using the [CollapseAllGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseAllGroups.html) method.
+Both the row and column headers can be collapsed simultaneously by using the [CollapseAllGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseAllGroups) method.
 
 Refer to the below code sample to collapse all the headers including row headers and column headers.
 
@@ -39,7 +39,7 @@ Me.pivotGridControl1.TableControl.CollapseAllGroups()
 
 #### Collapsing all row headers
 
-All the row headers can be collapsed by using the [CollapseAllRowGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseAllRowGroups.html) method.
+All the row headers can be collapsed by using the [CollapseAllRowGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseAllRowGroups) method.
 
 Refer to the below code sample to collapse all the row headers.
 
@@ -61,7 +61,7 @@ Me.pivotGridControl1.TableControl.CollapseAllRowGroups()
 
 #### Collapsing all column headers
 
-All the column headers can be collapsed by using the [CollapseAllColumnGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseAllRowGroups.html) method.
+All the column headers can be collapsed by using the [CollapseAllColumnGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseAllRowGroups) method.
 
 Refer to the below code sample to collapse all the row headers.
 
@@ -85,7 +85,7 @@ Me.pivotGridControl1.TableControl.CollapseAllColumnGroups()
 
 ### Collapsing specific row header
 
-Specific row header can be collapsed by specifying the name of corresponding pivot row item in the [CollapseRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseRow(String).html) method.
+Specific row header can be collapsed by specifying the name of corresponding pivot row item in the [CollapseRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseRow_System_String_) method.
 
 Refer to the below code sample to collapse the pivot row item which specifies 'Bike'.
 
@@ -107,7 +107,7 @@ Me.pivotGridControl1.TableControl.CollapseRow("Bike")
 
 ### Collapsing specific column header
 
-Specific column header can be collapsed by specifying the name of corresponding pivot column item in the [CollapseColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseColumn(String).html) method.
+Specific column header can be collapsed by specifying the name of corresponding pivot column item in the [CollapseColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseColumn_System_String_) method.
 
 Refer to the below code sample to collapse the pivot column item which specifies 'Canada'.
 
@@ -129,7 +129,7 @@ Me.pivotGridControl1.TableControl.CollapseColumn("Canada")
 
 #### Collapsing collection of row headers
 
-The collection of row headers can be collapsed by specifying the list of pivot row item's names in the [CollapseRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseRow(List%7BString%7D).html) method.
+The collection of row headers can be collapsed by specifying the list of pivot row item's names in the [CollapseRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseRow_System_Collections_Generic_List_System_String__) method.
 
 Refer to the below code sample to collapse the pivot row items of 'Bike' and 'Car'.
 
@@ -155,7 +155,7 @@ Me.pivotGridControl1.TableControl.CollapseRow(pivotRows)
 
 #### Collapsing collection of column headers
 
-The collection of column headers can be collapsed by specifying the list of pivot column item's names in the [CollapseColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~CollapseColumn(List%7BString%7D).html) method.
+The collection of column headers can be collapsed by specifying the list of pivot column item's names in the [CollapseColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_CollapseColumn_System_Collections_Generic_List_System_String__) method.
 
 Refer to the below code sample to collapse the pivot column items of 'Canada' and 'Australia'.
 
@@ -181,9 +181,9 @@ Me.pivotGridControl1.TableControl.CollapseColumn(pivotColumns)
 
 ### Events
 
-* The **[Collapsing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsing_EV.html)** event occurs while collapsing the pivot item header. This event receives an argument namely [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html), which contains the information about the collapsing pivot item.
+* The **[Collapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs while collapsing the pivot item header. This event receives an argument namely [CollapsingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.CollapsingEventArgs.html), which contains the information about the collapsing pivot item.
 
-* The **[Collapsed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Collapsed_EV.html)** event occurs when the pivot item header is collapsed. This event receives an argument namely [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html), which contains the information about the expanded pivot item.
+* The **[Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the pivot item header is collapsed. This event receives an argument namely [CollapsedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.CollapsedEventArgs.html), which contains the information about the expanded pivot item.
 
 ## Expanding headers
 
@@ -191,7 +191,7 @@ Pivot grid supports to drill down the pivot item with the help of row headers an
 
 ### Expanding all headers
 
-Both the row and column headers can be expanded simultaneously by using the [ExpandAllGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandAllGroups.html) method.
+Both the row and column headers can be expanded simultaneously by using the [ExpandAllGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandAllGroups) method.
 
 Refer to the below code sample to expand all the headers including row headers and column headers.
 
@@ -213,7 +213,7 @@ Me.pivotGridControl1.TableControl.ExpandAllGroups()
 
 #### Expanding all row headers
 
-All the row headers can be expanded by using the [ExpandAllRowGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandAllRowGroups.html) method.
+All the row headers can be expanded by using the [ExpandAllRowGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandAllRowGroups) method.
 
 Refer to the below code sample to expand all the row headers.
 
@@ -235,7 +235,7 @@ Me.pivotGridControl1.TableControl.ExpandAllRowGroups()
 
 #### Expanding all column headers
 
-All the column headers can be expanded by using the [ExpandAllColumnGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandAllColumnGroups.html) method.
+All the column headers can be expanded by using the [ExpandAllColumnGroups](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandAllColumnGroups) method.
 
 Refer to the below code sample to expand all the column headers.
 
@@ -259,7 +259,7 @@ Me.pivotGridControl1.TableControl.ExpandAllColumnGroups()
 
 #### Expanding specific row header
 
-Specific row header can be expanded by specifying the name of corresponding pivot row item in the [ExpandRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandRow(String).html) method.
+Specific row header can be expanded by specifying the name of corresponding pivot row item in the [ExpandRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandRow_System_String_) method.
 
 Refer to the below code sample to expand the pivot row item which specifies 'Bike'.
 
@@ -281,7 +281,7 @@ Me.pivotGridControl1.TableControl.ExpandRow("Bike")
 
 #### Expanding specific column header
 
-Specific column header can be expanded by specifying the name of corresponding pivot column item in the [ExpandColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandColumn(String).html) method.
+Specific column header can be expanded by specifying the name of corresponding pivot column item in the [ExpandColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandColumn_System_String_) method.
 
 Refer to the below code sample to expand the pivot column item which specifies 'Canada'.
 
@@ -303,7 +303,7 @@ Me.pivotGridControl1.TableControl.ExpandColumn("Canada")
 
 #### Expanding collection of row headers
 
-The collection of row headers can be expanded by specifying the list of pivot row item's names in the [ExpandRow](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandRow(List%7BString%7D).html) method.
+The collection of row headers can be expanded by specifying the list of pivot row item's names in the [ExpandRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandRow_System_Collections_Generic_List_System_String__) method.
 
 Refer to the below code sample to expand the pivot row items of 'Bike' and 'Car'.
 
@@ -329,7 +329,7 @@ Me.pivotGridControl1.TableControl.ExpandRow(pivotRowItems)
 
 #### Expanding collection of column headers
 
-The collection of column headers can be expanded by specifying the list of pivot column item's names in the [ExpandColumn](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ExpandColumn(List%7BString%7D).html) method.
+The collection of column headers can be expanded by specifying the list of pivot column item's names in the [ExpandColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_ExpandColumn_System_Collections_Generic_List_System_String__) method.
 
 Refer to the below code sample to expand the pivot column items of 'Canada' and 'Australia'.
 
@@ -355,9 +355,9 @@ Me.pivotGridControl1.TableControl.ExpandRow(pivotColumnItems)
 
 ### Events
 
-* The **[Expanding](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanding_EV.html)** event occurs while expanding the pivot item header. This event receives an argument namely [ExpandingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandingEventArgs.html), which contains the information about the expanding pivot item.
+* The **[Expanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs while expanding the pivot item header. This event receives an argument namely [ExpandingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.ExpandingEventArgs.html), which contains the information about the expanding pivot item.
 
-* The **[Expanded](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Expanded_EV.html)** event occurs when the pivot item header is expanded. This event receives an argument namely [ExpandedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ExpandedEventArgs.html), which contains the information about the expanded pivot item.
+* The **[Expanded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the pivot item header is expanded. This event receives an argument namely [ExpandedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.ExpandedEventArgs.html), which contains the information about the expanded pivot item.
 
 A demo sample is available in the following location.
 

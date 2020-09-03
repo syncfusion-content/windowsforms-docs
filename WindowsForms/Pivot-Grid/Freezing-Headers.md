@@ -13,7 +13,7 @@ The pivot grid control provides built-in support for freezing column and row hea
 
 ## Enabling frozen headers
 
-The frozen headers support in pivot grid control can be enabled by setting the [FreezeHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~FreezeHeaders.html) property to `true`. By default, the row and column headers are not frozen. This feature also enables the scrolling through the value cells.
+The frozen headers support in pivot grid control can be enabled by setting the [FreezeHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_FreezeHeaders) property to `true`. By default, the row and column headers are not frozen. This feature also enables the scrolling through the value cells.
 
 Refer to the below code sample to freeze the headers of pivot grid control.
 

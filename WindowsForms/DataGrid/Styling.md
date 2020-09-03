@@ -11,7 +11,7 @@ documentation: ug
 
 ## Styling Record Cell
 
-Appearance of the record cells can be customized by using the [CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html) property.
+Appearance of the record cells can be customized by using the [CellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CellStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ Me.sfDataGrid1.Style.CellStyle.TextColor = Color.DarkBlue
 
 ![Cell style appearance customization in windows forms datagrid](Styling_images/Styling1.png)
 
-Appearance of the record cells of a particular column can be customized by using the [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) property.
+Appearance of the record cells of a particular column can be customized by using the [GridColumnBase.CellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_CellStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ Me.sfDataGrid1.Columns("ProductName").CellStyle.TextColor = Color.DarkRed
 
 ![Specific column style appearance customization in windows forms datagrid](Styling_images/Styling2.png)
 
-Font orientation of the record cells can be set by using the [CellStyle.Font.Orientation](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html) property.
+Font orientation of the record cells can be set by using the [CellStyle.Font.Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CellStyle) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ Me.sfDataGrid1.Style.CellStyle.Font.Orientation = 45
 
 ![Font orientation customization in Windows forms datagrid](Styling_images/Styling5.png)
 
-The text alignment of the record cells can be changed by using [CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties respectively.  
+The text alignment of the record cells can be changed by using [CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_HorizontalAlignment) and [CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_VerticalAlignment) properties respectively.  
 
 {% tabs %}
 {% highlight c# %}
@@ -75,35 +75,35 @@ Me.sfDataGrid1.Style.CellStyle.VerticalAlignment = System.Windows.Forms.VisualSt
 
 ![Text alignment customization of record cells in windows forms datagrid](Styling_images/Styling9.png)
 
-The text alignment for the record cells in a specific column can be changed by using by using [GridColumnBase.CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~HorizontalAlignment.html) and [GridColumnBase.CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~VerticalAlignment.html) properties.
+The text alignment for the record cells in a specific column can be changed by using by using [GridColumnBase.CellStyle.HorizontalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_HorizontalAlignment) and [GridColumnBase.CellStyle.VerticalAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_VerticalAlignment) properties.
 
-N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~CellStyle.html) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CellStyle.html).
+N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_CellStyle) has higher priority than [SfDataGrid.Style.CellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CellStyle).
 
 ## Styling Column Header
-Appearance of the column headers can be customized by using the [HeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~HeaderStyle.html) property.
+Appearance of the column headers can be customized by using the [HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_HeaderStyle) property.
 For more details, refer to `Appearance` in [Header Row](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#header-row ) section.
 
 ## Styling Stacked Header
-Appearance of the stacked headers can be customized by the [StackedHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~StackedHeaderStyle.html) property.
+Appearance of the stacked headers can be customized by the [StackedHeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_StackedHeaderStyle) property.
 For more details, refer to `Appearance` in [Stacked Headers](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#stacked-headers ) section.
 
 ## Styling CaptionSummary
-Appearance of the caption summary can be customized by using the [CaptionSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~CaptionSummaryRowStyle.html) property.
+Appearance of the caption summary can be customized by using the [CaptionSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CaptionSummaryRowStyle) property.
 For more details, refer to `Appearance` in [Caption Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#caption-summary ) section.
 
 ## Styling GroupSummary
-Appearance of the group summary can be customized by using the [GroupSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupSummaryRowStyle.html) property.
+Appearance of the group summary can be customized by using the [GroupSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupSummaryRowStyle) property.
 For more details, refer to `Appearance` in [Group Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#group-summary ) section.
 
 ## Styling TableSummary
-Appearance of the table summary can be customized by using the [TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~TableSummaryRowStyle.html) property.
+Appearance of the table summary can be customized by using the [TableSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_TableSummaryRowStyle) property.
 For more details, refer to `Appearance` in [Table Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#table-summary ) section.
 
 ## Gradient Background Style
 
-SfDataGrid helps to provide gradient background appearance for the cells by using [Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Interior.html) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+SfDataGrid helps to provide gradient background appearance for the cells by using [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Interior) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
 
-The gradient  background can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo~_ctor.html) object with [GradientStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.GradientStyle.html) and the necessary colors.
+The gradient  background can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Drawing.BrushInfo.html#Syncfusion_Drawing_BrushInfo__ctor) object with [GradientStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Drawing.GradientStyle.html) and the necessary colors.
 
 In the below example, gradient background is applied for the header cells and the record cells by providing the `GradientStyle` as `Horizontal` and the gradient start and end colors.
 
@@ -130,7 +130,7 @@ Me.sfDataGrid1.Columns("UnitPrice").CellStyle.Interior = New Syncfusion.WinForms
 
 ![Gradient style in windows forms datagrid](Styling_images/Styling10.png)
 
-In the below example, gradient background is applied for the record cells by providing multiple gradient colors using [BrushInfoColorList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.WinForms.Core.BrushInfoColorList.html).
+In the below example, gradient background is applied for the record cells by providing multiple gradient colors using [BrushInfoColorList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Core.BrushInfoColorList.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -147,9 +147,9 @@ Me.sfDataGrid1.Columns("OrderID").CellStyle.Interior = New Syncfusion.WinForms.C
 
 ## Pattern Background Style
 
-SfDataGrid helps to provide background pattern for the cells by using [Interior](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Interior.html) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
+SfDataGrid helps to provide background pattern for the cells by using [Interior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Interior) property which is available in the StyleInfo properties of all the elements in the SfDataGrid.
 
-The background pattern can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.BrushInfo~_ctor.html) object with [PatternStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Drawing.PatternStyle.html) and the necessary colors.
+The background pattern can be achieved by initializing the `Interior` property using [BrushInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Drawing.BrushInfo.html#Syncfusion_Drawing_BrushInfo__ctor) object with [PatternStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Drawing.PatternStyle.html) and the necessary colors.
 
 In the below example, background pattern is applied for the header cells by providing the `PatternStyle` as `SmallGrid` and the fore color and back color for the pattern.
 
@@ -165,23 +165,23 @@ Me.sfDataGrid1.Style.HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushIn
 ![Pattern style in windows forms datagrid](Styling_images/Styling12.png)
 
 ## Styling UnboundRows
-Appearance of the unbound rows can be customized by using the [UnboundRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~UnboundRowStyle.html) property.
+Appearance of the unbound rows can be customized by using the [UnboundRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_UnboundRowStyle) property.
 For more details, refer to `Appearance` in [Unbound Rows](https://help.syncfusion.com/windowsforms/sfdatagrid/unboundrow) section.
 
 ## Styling AddNewRow
-Appearance of the AddNewRow can be customized by using the [AddNewRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~AddNewRowStyle.html) property.
+Appearance of the AddNewRow can be customized by using the [AddNewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_AddNewRowStyle) property.
 For more details, refer to `Appearance` in [AddNewRow](https://help.syncfusion.com/windowsforms/sfdatagrid/datamanipulation#addnewrow ) section.
 
 ## Styling RowHeader
-Appearance of a row header can be customized by using the [RowHeaderStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~RowHeaderStyle.html) property.
+Appearance of a row header can be customized by using the [RowHeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_RowHeaderStyle) property.
 For more details, refer to `Appearance` in [Row Header](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#row-header ) section.
 
 ## Styling FilterRow
-Appearance of a filter row can be customized by using the [FilterRowStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~FilterRowStyle.html) property.
+Appearance of a filter row can be customized by using the [FilterRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_FilterRowStyle) property.
 For more details, refer to `Appearance` in [Filter Row](https://help.syncfusion.com/windowsforms/sfdatagrid/filterrow#appearance ) section.
 
 ## Styling Scrollbars
-Appearance of the vertical scrollbar can be customized by using the [VerticalScrollBar](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle~VerticalScrollBar.html) property.
+Appearance of the vertical scrollbar can be customized by using the [VerticalScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ScrollerVisualStyle_VerticalScrollBar) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -228,7 +228,7 @@ Me.sfDataGrid1.Style.VerticalScrollBar.ScrollBarBackColor = Color.LightGray
 {% endhighlight %}
 {% endtabs %}
 
-Appearance of the horizontal scrollbar can be customized by using the [HorizontalScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle~HorizontalScrollBar.html) property.
+Appearance of the horizontal scrollbar can be customized by using the [HorizontalScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ScrollerVisualStyle_HorizontalScrollBar) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,23 +278,23 @@ Me.sfDataGrid1.Style.HorizontalScrollBar.ScrollBarBackColor = Color.LightGray
 ![Scrollbar appearance customization in windows forms datagrid](Styling_images/Styling3.png)
 
 ## Styling GroupDropArea
-Appearance of the GroupDropArea can be customized by using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupDropAreaStyle.html)  property.
+Appearance of the GroupDropArea can be customized by using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaStyle)  property.
 For more details, refer to `Customizing GroupDropArea Appearance` in [Grouping](https://help.syncfusion.com/windowsforms/sfdatagrid/grouping#groupdroparea-customization ) section.
 
 ## Styling GroupDropAreaItem
-Appearance of the GroupDropAreaItem can be customized by using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~GroupDropAreaItemStyle.html) property.
+Appearance of the GroupDropAreaItem can be customized by using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaItemStyle) property.
 For more details, refer to `Customizing GroupDropAreaItem` Appearance in [Grouping](https://help.syncfusion.com/windowsforms/sfdatagrid/grouping#groupdroparea-customization ) section.
 
 ## Styling Frozen Rows and Columns
-Appearance of the frozen rows and columns can be customized by using the [FreezePaneLineStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~FreezePaneLineStyle.html) property.
+Appearance of the frozen rows and columns can be customized by using the [FreezePaneLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_FreezePaneLineStyle) property.
 For more details, refer to `Appearance` in [Freeze Panes](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#freeze-panes ) section.
 
 ## Selection	
-Appearance of the selected rows and current cell can be customized by using the [SelectionStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~SelectionStyle.html) property.
+Appearance of the selected rows and current cell can be customized by using the [SelectionStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_SelectionStyle) property.
 For more details, refer to `Appearance` in [Selection](https://help.syncfusion.com/windowsforms/sfdatagrid/selection#appearance ) section.
 
 ## Changing the Color and Thickness of the Gridlines
-Color and thickness of the grid lines can be changed by using the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+Color and thickness of the grid lines can be changed by using the [Borders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Borders) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -310,7 +310,7 @@ Me.sfDataGrid1.Style.HeaderStyle.Borders.All = New GridBorder(Color.DarkBlue, Gr
 ![Border customization in windows forms datagrid](Styling_images/Styling4.png)
 
 ## Changing the style of gridlines
-The styles for the cell borders can be changed by initializing [GridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) in the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+The styles for the cell borders can be changed by initializing [GridBorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBorderStyle.html) in the [Borders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Borders) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -326,7 +326,7 @@ Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.Dott
 ![Cell Border customization in windows forms datagrid](Styling_images/Styling8.png)
 
 ## Disable the gridlines
-The cell borders can be disabled by setting `GridBorderStyle` to `GridBorderStyle.None` in the [Borders](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo~Borders.html) property.
+The cell borders can be disabled by setting `GridBorderStyle` to `GridBorderStyle.None` in the [Borders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Borders) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -342,7 +342,7 @@ Me.sfDataGrid1.Style.CellStyle.Borders.All = New GridBorder(GridBorderStyle.None
 ![Cell Border customization in windows forms datagrid](Styling_images/Styling7.png)
 
 ## Changing the grid border Color
-The grid border color can be changed by using the [Style.BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~BorderColor.html) property
+The grid border color can be changed by using the [Style.BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_BorderColor) property
 
 {% tabs %}
 {% highlight c# %}
@@ -359,7 +359,7 @@ Me.sfDataGrid1.Style.BorderColor = Color.Red
 
 ## Showing busy indicator for the data operations
 
-Indication of the data operation performed on the SfDataGrid can be showed with the help of `BusyIndicator` by setting the [ShowBusyIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ShowBusyIndicator.html) property to `true`. This will display an animated busy indicator image while performing the data operations such as loading large data, sorting, grouping, and filtering.
+Indication of the data operation performed on the SfDataGrid can be showed with the help of `BusyIndicator` by setting the [ShowBusyIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowBusyIndicator) property to `true`. This will display an animated busy indicator image while performing the data operations such as loading large data, sorting, grouping, and filtering.
 
 {% tabs %}
 {% highlight c# %}
@@ -376,7 +376,7 @@ Me.sfDataGrid1.ShowBusyIndicator = True
 
 ### Changing the busy indicator image 
 
-The busy indicator image can be changed by using the [SfDataGrid.Style.BusyIndicatorImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Styles.DataGridStyle~BusyIndicatorImage.html) property. The image should be in GIF file format. 
+The busy indicator image can be changed by using the [SfDataGrid.Style.BusyIndicatorImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_BusyIndicatorImage) property. The image should be in GIF file format. 
 
 {% tabs %}
 {% highlight c# %}

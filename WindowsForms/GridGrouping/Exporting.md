@@ -1095,7 +1095,7 @@ The following events are supported in advanced Excel exporting,
 N> These events should be subscribed before the exporting the grid to Excel.
 
 #### QueryExportCellRange
-This event will be triggered for every cell after the cell exported. By this event, you will get the Excel range for the cell so you can customize the cell while exporting by using [QueryExportCellRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportCellRangeEventHandler.html) event.
+This event will be triggered for every cell after the cell exported. By this event, you will get the Excel range for the cell so you can customize the cell while exporting by using [QueryExportCellRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.QueryExportCellRangeEventHandler.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1135,7 +1135,7 @@ End Sub
 ![](Exporting_images/Advanced_Excel_Exporting_img26.jpeg)
 
 #### QueryExportRowRange
-This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridConverter.Windows~Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl+QueryExportRowRangeEventHandler.html) event.
+This event will be triggered before exporting a row. If you want to avoid specific row while exporting, you can achieve this by handling the [QueryExportRowRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.QueryExportRowRangeEventHandler.html) event.
 
 {% tabs %}
 {% highlight c# %}

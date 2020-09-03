@@ -112,10 +112,10 @@ Me.gridGroupingControl1.ApplyXmlLookAndFeel(xmlReader)
 {% endtabs %}
 
 ## GridExcelFilter Serialization
-[GridExcelFilter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter.html) settings and the filter collections can be serialized into an XML file and deserialized from an XML file to the `GridExcelFilter`. 
+[GridExcelFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) settings and the filter collections can be serialized into an XML file and deserialized from an XML file to the `GridExcelFilter`. 
 
 ### Serialization
-The settings of the `GridExcelFilter` and its filter collection can be saved into an XML file by using [WriteXml](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~WriteXml.html) method. 
+The settings of the `GridExcelFilter` and its filter collection can be saved into an XML file by using [WriteXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_WriteXml_System_Xml_XmlWriter_) method. 
 {% tabs %}
 {% highlight c#%}
 GridExcelFilter excelFilter = new GridExcelFilter();
@@ -143,7 +143,7 @@ xmlExcelFilter.Close()
 
 
 ### Deserialization
-The saved settings of the `GridExcelFilter` from an XML file can be deserialized to `GridExcelFilter` settings by using the [ApplyXml](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilter~ApplyXml.html) method.
+The saved settings of the `GridExcelFilter` from an XML file can be deserialized to `GridExcelFilter` settings by using the [ApplyXml](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_ApplyXml_System_Xml_XmlReader_) method.
 {% tabs %}
 {% highlight c#%} 
 GridExcelFilter excelFilter = new GridExcelFilter();

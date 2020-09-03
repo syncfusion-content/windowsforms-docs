@@ -77,7 +77,7 @@ This event occurs when the ThemesEnabled property is changed.</td></tr>
 
 ## Border3DStyleChanged
 
-This event occurs when the [Border3DStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Border3DStyle.html) property is changed. The `Border3DStyle` property indicates the style of the 3D border.
+This event occurs when the [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Border3DStyle) property is changed. The `Border3DStyle` property indicates the style of the 3D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event. 
 
@@ -104,7 +104,7 @@ End Sub
 
 ## BorderColorChanged
 
-This event occurs when the [BorderColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~BorderColor.html) property is changed. The `BorderColor` property indicates the color of the 2D border.
+This event occurs when the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderColor) property is changed. The `BorderColor` property indicates the color of the 2D border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -131,7 +131,7 @@ End Sub
 
 ## BorderSidesChanged
 
-This event occurs when the [BorderSides](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~BorderSides.html) property is changed. The `BorderSides` property indicates the border sides of the panel.
+This event occurs when the [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_BorderSides) property is changed. The `BorderSides` property indicates the border sides of the panel.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -185,7 +185,7 @@ End Sub
 
 ## CharacterCasingChanged
 
-This event occurs when the [CharacterCasing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~CharacterCasing.html) property is changed. The `CharacterCasing` property gets or sets the case of the characters as they are typed.
+This event occurs when the [CharacterCasing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_CharacterCasing) property is changed. The `CharacterCasing` property gets or sets the case of the characters as they are typed.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -325,7 +325,7 @@ End Sub
 
 ## MaximumSizeChanged
 
-This event occurs when the [MaximumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html) property is changed. The `MaximumSize` property gets or sets the maximum size of the control.
+This event occurs when the [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MaximumSize) property is changed. The `MaximumSize` property gets or sets the maximum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -352,7 +352,7 @@ End Sub
 
 ## MinimumSizeChanged
 
-This event occurs when the [MinimumSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html) property is changed. The MinimumSize property gets or sets the minimum size of the control.
+This event occurs when the [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MinimumSize) property is changed. The MinimumSize property gets or sets the minimum size of the control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -379,7 +379,7 @@ End Sub
 
 ## MultilineChanged
 
-This event occurs when the [Multiline](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Multiline.html) property is changed. The `Multiline` property controls whether the text of the edit control can span more than one line or not.
+This event occurs when the [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Multiline) property is changed. The `Multiline` property controls whether the text of the edit control can span more than one line or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -461,7 +461,7 @@ End Sub
 
 ## ThemesEnabledChanged
 
-This event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ThemesEnabled.html) property is changed. The ThemesEnabled property specifies whether or not to use XP Themes when the `BorderStyle` property is set to 'Fixed3D'.
+This event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property is changed. The ThemesEnabled property specifies whether or not to use XP Themes when the `BorderStyle` property is set to 'Fixed3D'.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 

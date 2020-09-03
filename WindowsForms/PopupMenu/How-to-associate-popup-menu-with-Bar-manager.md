@@ -9,7 +9,7 @@ documentation: ug
 
 # How to associate popup menu with Bar manager
 
-The popup menu instance can be associated with a bar manager through a command bar as dropdown menu. This can be done by associating the popup menu instance with the [`PopupMenu`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar~PopupMenu.html) property of the CommandBar instance of the bar manager.
+The popup menu instance can be associated with a bar manager through a command bar as dropdown menu. This can be done by associating the popup menu instance with the [`PopupMenu`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_PopupMenu) property of the CommandBar instance of the bar manager.
 
 The below code snippet shows the popup menu is being set to the command bar.
 

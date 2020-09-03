@@ -15,7 +15,7 @@ Creating a Basic Wizard topic discussed how to add Wizard Pages. Let us see how 
 
 ## Setting title and description
 
-You can specify the title and description in the Banner Panel, for a particular Wizard Page using the [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~Title.html) and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. 
+You can specify the title and description in the Banner Panel, for a particular Wizard Page using the [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_Title) and WizardPage.Description properties. The appearance of the title and description can be controlled through Label properties. 
 
 {% tabs %}
 
@@ -49,12 +49,12 @@ Me.wizardControlPage1.Description = "Please enter your Details:"
 
 We can also access the properties of a Wizard Page using SelectedWizardPage property of the WizardControl in the Designer.
 
-* [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~SelectedWizardPage.html)
-* [WizardPage.LayoutName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~LayoutName.html)
+* [SelectedWizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_SelectedWizardPage)
+* [WizardPage.LayoutName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_LayoutName)
 
 ![Accessing wizard pages](Wizard-Package_images/Wizard-Package_img17.jpeg)
 
-The header section (GradientPanel and its child controls) can be hidden by setting [FullPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControlPage~FullPage.html) property to `true`. This makes the page occupy the entire space without the header.
+The header section (GradientPanel and its child controls) can be hidden by setting [FullPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_FullPage) property to `true`. This makes the page occupy the entire space without the header.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ A sample which demonstrates a Wizard Control with interactive Wizard pages is av
 
 By default, the WizardControl will use the order in which the pages are added to determine the next/previous pages. To reorder the pages, use any one of the following methods.
 
-* Select the WizardControl and choose [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~WizardPages.html) property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
+* Select the WizardControl and choose [WizardPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_WizardPages) property in the Property Editor. This will bring out the collection editor, where you can reorder the pages using Up and Down arrow keys.
 
 ![Reordering wizard pages](Wizard-Package_images/Wizard-Package_img19.jpeg)
 
@@ -96,7 +96,7 @@ By default, the WizardControl will use the order in which the pages are added to
 
 
 
-* The WizardControlPage has the [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~NextPage.html) and [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~PreviousPage.html) properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
+* The WizardControlPage has the [NextPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_NextPage) and [PreviousPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_PreviousPage) properties with which you can specify the order of page selection. Users may set these properties in the designer for all the pages. If set, the WizardControl will use that as a cue to determine the new page to be selected at run time.
 
 {% tabs %}
 

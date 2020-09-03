@@ -11,7 +11,7 @@ documentation: ug
 
 Styles
 
-The DateTimePickerAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Style.html) property of DateTimePickerAdv.
+The DateTimePickerAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Style) property of DateTimePickerAdv.
 
 The styles are built in for DateTimePickerAdv.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # How to collapse the splitter pane programmatically
 
-This can be done programmatically using [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~Collapsed.html) property.
+This can be done programmatically using [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Collapsed) property.
 
 {% tabs %}
 

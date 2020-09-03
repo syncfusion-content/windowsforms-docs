@@ -9,11 +9,11 @@ documentation: ug
 
 ## Appearance
 
-This section explains how to customize the default appearance of the scrollbars using the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame~Style.html) properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
+This section explains how to customize the default appearance of the scrollbars using the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Style) properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
 
 ### Scrollbar appearance
 
-The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo_properties.html) property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
+The inner elements of the scrollbar can be customized by using the [ScrollBarStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html) property, that allows changing the appearance of the horizontal and vertical scrollbars separately.
 
 The horizontal scrollbar appearance can be customized by using the `HorizontalScrollBar.Style` property. The `ScrollBarStyleInfo` contains all the settings that controls the appearance of the scrollbar.
 
@@ -71,7 +71,7 @@ this.sfScrollFrame1.VerticalScrollBar.Style.ScrollBarBackColor = Color.LightGray
 
 ### Changing the Scrollbar thumb width
 
-The size of the scrollbar thumb can be changed by using the [ThumbWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ThumbWidth.html) property of the corresponding `Style` property.
+The size of the scrollbar thumb can be changed by using the [ThumbWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_ScrollBarStyleInfo_ThumbWidth) property of the corresponding `Style` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +88,7 @@ N> This width can be set maximum to the width and height of the vertical and hor
 
 ## Disabling the maximum and minimum buttons
 
-The minimum and maximum arrow buttons of the scrollbar can be disabled by setting the [EnableMaximumArrow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~EnableMaximumArrow.html) and [EnableMinimumArrow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~EnableMinimumArrow.html) properties to `false`. The default value is `true`. 
+The minimum and maximum arrow buttons of the scrollbar can be disabled by setting the [EnableMaximumArrow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ScrollBarBase.html#Syncfusion_WinForms_Controls_ScrollBarBase_EnableMaximumArrow) and [EnableMinimumArrow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ScrollBarBase.html#Syncfusion_WinForms_Controls_ScrollBarBase_EnableMinimumArrow) properties to `false`. The default value is `true`. 
 
 If you disable the max or min button, the scrollbar cannot be scrolled using those buttons.
 
@@ -104,7 +104,7 @@ this.sfScrollFrame1.HorizontalScrollBar.EnableMinimumArrow = false;
 {% endhighlight %}
 {% endtabs %}
 
-The color of the disabled arrow button can also be specified by using [ArrowButtonDisabledBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ArrowButtonDisabledBackColor.html) and [ArrowButtonDisabledForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ArrowButtonDisabledForeColor.html) of the corresponding scrollbar.
+The color of the disabled arrow button can also be specified by using [ArrowButtonDisabledBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_ScrollBarStyleInfo_ArrowButtonDisabledBackColor) and [ArrowButtonDisabledForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_ScrollBarStyleInfo_ArrowButtonDisabledForeColor) of the corresponding scrollbar.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ this.sfScrollFrame1.HorizontalScrollBar.Style.ArrowButtonDisabledForeColor = Col
 
 ## Disabling the Scrollbar Thumb
 
-The scrollbar thumb can be disabled by setting the [EnableThumb](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ScrollBarBase~EnableThumb.html) property to `false`. The default value is `true`.
+The scrollbar thumb can be disabled by setting the [EnableThumb](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ScrollBarBase.html#Syncfusion_WinForms_Controls_ScrollBarBase_EnableThumb) property to `false`. The default value is `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ this.sfScrollFrame1.VerticalScrollBar.EnableThumb = false;
 {% endhighlight %}
 {% endtabs %}
 
-The disabled state thumb color can also be specified by using the [ThumbDisabledColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo~ThumbDisabledColor.html) property of the corresponding scrollbar style info.
+The disabled state thumb color can also be specified by using the [ThumbDisabledColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_ScrollBarStyleInfo_ThumbDisabledColor) property of the corresponding scrollbar style info.
 
 {% tabs %}
 {% highlight c# %}

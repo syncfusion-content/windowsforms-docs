@@ -9,7 +9,7 @@ documentation: ug
 
 # How to add ImageCollection to HubTile for transition effects?
 
-You can achieve this requirement using HubTile [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageList.html) and [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageListAdv.html) properties.
+You can achieve this requirement using HubTile [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageList) and [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageListAdv) properties.
 
 This is configured either through code or form designer.
 
@@ -28,7 +28,7 @@ Me.HubTile1.ImageList = Me.ImageList
 
 #### Through designer
 
-The following screenshot displays the [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ImageListAdv.html) property.
+The following screenshot displays the [ImageListAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ImageListAdv) property.
 
 ![Add ImageListAdv](Frequently-asked-questions-images/FAQ_img1.png)
 

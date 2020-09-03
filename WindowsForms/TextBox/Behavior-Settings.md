@@ -13,7 +13,7 @@ The behavior settings of the TextBoxExt control are discussed below.
 
 ## MaxLength
 
-You can specify the maximum number of characters that can be entered into the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [MaxLength](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.maxlength?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_MaxLength) property. The default value is `32767`.
+You can specify the maximum number of characters that can be entered into the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [MaxLength](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.maxlength?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_MaxLength) property. The default value is `32767`.
 
 {% tabs %}
 

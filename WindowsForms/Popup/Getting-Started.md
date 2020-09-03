@@ -19,11 +19,11 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ### Create a simple application with TrackBarEx
 
-You can create a Windows Forms application with [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) using the following steps:
+You can create a Windows Forms application with [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) using the following steps:
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) control.
+Create a new Windows Forms project in Visual Studio to display the [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) control.
 
 ## Add control through designer
 
@@ -44,13 +44,13 @@ The PopupControlContainer control can be added through designer by following the
 
 ![Adding rich text box control to the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
 
-**4.** Associate the [RichTextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ParentControl.html).
+**4.** Associate the [RichTextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
 
 ![Selecting properties of PopupControlContainer](GettingStarted_Images/PopupControl5.png)
 
 ![Setting rich text box control as parent of PopupControlContainer](GettingStarted_Images/PopupControl6.png)
 
-**5.** Handle the [Click event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ShowPopup.html) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
+**5.** Handle the [Click event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
 
 ## Add control manually in code
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight  %}
 {% endtabs %} 
 
-**3.** Create a [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html) instance, and add it to the window.
+**3.** Create a [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -175,7 +175,7 @@ End Sub
 
 ## Show or hide pop-up
 
-You can show or hide the pop-up by calling the [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~ShowPopup.html) or [HidePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~HidePopup.html) method of the PopupControlContainer control, respectively.
+You can show or hide the pop-up by calling the [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) or [HidePopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_HidePopup) method of the PopupControlContainer control, respectively.
 
 {% tabs %}
 {% highlight C# %}

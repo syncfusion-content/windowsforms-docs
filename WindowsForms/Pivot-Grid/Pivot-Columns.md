@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot Columns
 
-Pivot columns are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for columns that appear in the pivot grid control.
+Pivot columns are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for columns that appear in the pivot grid control.
 
 ## Defining pivot columns using pivot items
 
@@ -23,27 +23,27 @@ Description</th><th>
 Type</th></tr>
 <tr>
 <td>
-{{'[Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html)'| markdownify }}</td><td>
+{{'[Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer)'| markdownify }}</td><td>
 Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this field is IComparable.</td><td>
 IComparer</td></tr>
 <tr>
 <td>
-{{'[FieldHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldHeader.html)'| markdownify }}</td><td>
+{{'[FieldHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_FieldHeader)'| markdownify }}</td><td>
 Gets or sets the title you want to see in the header for this pivot item.</td><td>
 string</td></tr>
 <tr>
 <td>
-{{'[FieldMappingName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~FieldMappingName.html)'| markdownify }}</td><td>
+{{'[FieldMappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_FieldMappingName)'| markdownify }}</td><td>
 Gets or sets the property's mapping name.</td><td>
 string</td></tr>
 <tr>
 <td>
-{{'[Format](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Format.html)'| markdownify }}</td><td>
+{{'[Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Format)'| markdownify }}</td><td>
 Gets or sets the format item for the specified field.</td><td>
 string</td></tr>
 <tr>
 <td>
-{{'[TotalHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~TotalHeader.html)'| markdownify }}</td><td>
+{{'[TotalHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_TotalHeader)'| markdownify }}</td><td>
 Gets or sets the string you want to append to the pivot item's summary cells.</td><td>
 string</td></tr>
 </table>
@@ -76,11 +76,11 @@ Me.pivotGridControl1.PivotColumns.Add(pivotItem)
 
 ## Synchronizing pivot columns
 
-To synchronize the newly added or modified pivot column items with the pivot grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~SynchronizePivotItems.html) method will be used. This method will be invoked whenever the collection of pivot column items gets changed.
+To synchronize the newly added or modified pivot column items with the pivot grid control, the [SynchronizePivotItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_SynchronizePivotItems_System_Collections_Specialized_NotifyCollectionChangedEventArgs_System_Boolean_) method will be used. This method will be invoked whenever the collection of pivot column items gets changed.
 
 ## Sorting pivot columns
 
-By default, the pivot grid control sorts the column data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of corresponding pivot item.
+By default, the pivot grid control sorts the column data in ascending order. The sorting order can be changed by defining custom comparer and it needs to be assigned using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of corresponding pivot item.
 
 Refer to the below code sample to define comparer for sorting the column data in descending order.
 

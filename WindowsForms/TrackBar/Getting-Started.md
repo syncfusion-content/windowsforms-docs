@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -21,7 +21,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio.
 
-2) The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
+2) The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -62,7 +62,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
+4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -87,7 +87,7 @@ Me.Controls.Add(tabSplitterContainer1)
 
 ## Change value
 
-You can define the minimum and maximum values by setting the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx~Minimum.html) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx~Maximum.html) properties of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html).
+You can define the minimum and maximum values by setting the [Minimum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Minimum) and [Maximum](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Maximum) properties of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -108,7 +108,7 @@ Me.trackBarEx1.Maximum = 30
 
 ## Horizontal or vertical track bar
 
-The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TrackBarEx~Orientation.html) property.
+The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html#Syncfusion_Windows_Forms_Tools_TrackBarEx_Orientation) property.
 
 {% tabs %}
 {% highlight C# %}

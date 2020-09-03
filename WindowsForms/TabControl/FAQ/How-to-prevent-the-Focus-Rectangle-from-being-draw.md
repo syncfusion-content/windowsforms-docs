@@ -9,7 +9,7 @@ documentation: ug
 
 # How to prevent the Focus Rectangle from being drawn in the Tabs?
 
-You can easily do this by handling the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~DrawItem_EV.html) event, adjusting the [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) and delegating drawing to the default drawing logic.
+You can easily do this by handling the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) event, adjusting the [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) and delegating drawing to the default drawing logic.
 
 {% tabs %}
 

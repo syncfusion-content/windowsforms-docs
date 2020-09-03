@@ -9,7 +9,7 @@ documentation: ug
 
 # Style settings
 
-The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~Style.html) property are described below.
+The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) property are described below.
 
 * RestrictToFilesystem - Restricts selection to file system directories.
 * RestrictToSubfolders - Returns only file system ancestors.

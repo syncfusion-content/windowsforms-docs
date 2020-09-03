@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in Windows Forms Office2007Form
 
-The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionAlign.html) property.
+The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionAlign) property.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.CaptionAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Caption font
 
-Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionFont.html) property.
+Office2010Form's caption Font can be customized through [CaptionFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionFont) property.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ Me.CaptionFont = New System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.Fo
 
 ## Caption fore color
 
-The color of the caption text can be customized using the [CaptionForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionForeColor.html) property.
+The color of the caption text can be customized using the [CaptionForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionForeColor) property.
 
 {% tabs %}
 
@@ -103,7 +103,7 @@ Me. CaptionBarHeight = 50
 
 ### Retain the caption bar height on maximized mode
 
-By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [Office2007Form.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Form~CaptionBarHeightMode.html) as `SameAlwaysOnMaximize`
+By Default, the height of the caption bar will be reduced when the form is in maximized state. It can be retained same in both normal and maximized state by setting the property [Office2007Form.CaptionBarHeightMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_CaptionBarHeightMode) as `SameAlwaysOnMaximize`
 
 {% tabs %}
 
@@ -123,7 +123,7 @@ Me.CaptionBarHeightMode = Syncfusion.Windows.Forms.Enums.CaptionBarHeightMode.Sa
 
 ## Help button support
 
-[HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Localization.Localizer+EditResourceIdentifiers+LanguageColoringConfigurationDialog~HelpButton.html) property is used to show the `HelpButton` in the caption box of the Form.
+[HelpButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.LanguageColoringConfigurationDialog.html#Syncfusion_Windows_Forms_Localization_Localizer_EditResourceIdentifiers_LanguageColoringConfigurationDialog_HelpButton) property is used to show the `HelpButton` in the caption box of the Form.
 
 {% tabs %}
 

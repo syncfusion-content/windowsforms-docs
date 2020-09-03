@@ -147,7 +147,7 @@ pdfViewer.TextSearchSettings.OtherInstanceColor = Color.Yellow
 
 ## Find all the instances of a text and its bounds
 
-The `PdfViewerControl` also supports searching text in the PDF document using the [FindText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~FindText.html) method which returns true when the text given is found in the document. The dictionary contains the page indices and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the `PdfViewerControl`.
+The `PdfViewerControl` also supports searching text in the PDF document using the [FindText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method which returns true when the text given is found in the document. The dictionary contains the page indices and the list of rectangular coordinates of the text found in that page. The following code snippet illustrates how text search can be achieved in the `PdfViewerControl`.
 
 {% tabs %}
 {%highlight c#%}
@@ -183,7 +183,7 @@ IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 
 ## Find the total number of instances of a text in the PDF document
 
-PDF viewer allows you to find the total number of instances of a text in the PDF document using the [FindText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~FindText.html) method.
+PDF viewer allows you to find the total number of instances of a text in the PDF document using the [FindText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_FindText_System_String_System_Collections_Generic_Dictionary_System_Int32_System_Collections_Generic_List_System_Drawing_RectangleF____) method.
 
 The following code snippet illustrates how to find the total number of instances of a term “time” present in the PDF document using `PdfViewerControl`.
 

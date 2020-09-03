@@ -30,10 +30,10 @@ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while inserting the rows and columns. 
 
-* [RowsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
-* [ColumnsInserted](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsInserted_EV.html)
+* [RowsInserted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsInserted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -75,10 +75,10 @@ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 ###Events
 
-Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
+Below events of [SpreadsheetGridModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html) are triggered while deleting the rows and columns. 
 
-* [RowsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~RowsRemoved_EV.html)
-* [ColumnsRemoved](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel~ColumnsRemoved_EV.html)
+* [RowsRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
+* [ColumnsRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGridModel.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ spreadsheet.ActiveGrid.FrozenColumns = 1;
 
 Spreadsheet provides support to fit the rows or columns based on its content at run time.
 
-You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitRows.html) and  [AutoFitColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~AutofitColumns.html) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetRowHeight.html) and [SetColumnWidth](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid~SetColumnWidth.html) methods of `SpreadsheetGrid`.
+You can fit the rows/columns by calling [AutoFitRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_AutofitRows) and  [AutoFitColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_AutofitColumns) methods of XlsIO’s `IRange`. Also set the adjusted row height and column width into the grid by using [SetRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetGrid_SetRowHeight_System_Int32_System_Int32_System_Double_) and [SetColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetGrid_SetColumnWidth_System_Int32_System_Int32_System_Double_) methods of `SpreadsheetGrid`.
 
 {% tabs %}
 {% highlight c# %}

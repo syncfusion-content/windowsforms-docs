@@ -11,7 +11,7 @@ documentation: ug
 
 ## Slider background color
 
-The background color for the radial slider can be customized using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~BackgroundColor.html).
+The background color for the radial slider can be customized using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_BackgroundColor).
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ radialSlider1.BackgroundColor = System.Drawing.SystemColors.Navy
 
 ## Circle color
 
-The circle color of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~InnerCircleColor.html) and [OuterCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~OuterCircleColor.html) properties.
+The circle color of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [InnerCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_InnerCircleColor) and [OuterCircleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_OuterCircleColor) properties.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ radialSlider1.OuterCircleColor = System.Drawing.Color.Blue
 
 ## Needle color
 
-The needle color of the **RadialSlider** can be customized using the [SliderNeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderNeedleColor.html) property.
+The needle color of the **RadialSlider** can be customized using the [SliderNeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderNeedleColor) property.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ radialSlider1.ForeColor = System.Drawing.Color.BlueViolet
 
 ## Needle type
 
-The needle type of the **RadialSlider** can be customized using the [NeedleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~NeedleType.html) enumeration. Available needle types in the RadialSlider are:
+The needle type of the **RadialSlider** can be customized using the [NeedleType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_NeedleType) enumeration. Available needle types in the RadialSlider are:
 
 * Straight Line (Default)
 * Dotted Line

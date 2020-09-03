@@ -9,11 +9,11 @@ documentation: ug
 
 # Events of ButtonEdit control
 
-The [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
+The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are discussed in the below sections.
 
 ## ButtonClicked Event
 
-[ButtonClicked](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~ButtonClicked_EV.html) event is raised whenever [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control is clicked. It allows you to get the child button that is clicked. 
+[ButtonClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) event is raised whenever [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control is clicked. It allows you to get the child button that is clicked. 
 
 {% tabs %}
 {% highlight c# %}
@@ -38,7 +38,7 @@ End Sub
 
 ## Border Events
 
-The [Border3DStyleChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~Border3DStyleChanged_EV.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~BorderSidesChanged_EV.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~Border3DStyle.html) and [BorderSides](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit~BorderSides.html) properties values are changed in [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
+The [Border3DStyleChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) and [BorderSidesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) events are raised whenever [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_Border3DStyle) and [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_BorderSides) properties values are changed in [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control.
 
 <table>
 <tr>
@@ -83,7 +83,7 @@ End Sub
 
 ## ButtonEditChildButton Events
 
-The below table list the events that are available for the [ButtonEditChildButton](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control.
+The below table list the events that are available for the [ButtonEditChildButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEditChildButton.html) control.
 
 <table>
 <tr>
@@ -126,11 +126,11 @@ Raised when BackColor property of the ButtonEdit control is changed. This event 
 
 ## Click Event
 
-You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
+You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) Child button click event. It can be done using the below steps.
 
 1. Drag and drop TableLayoutPanel and add ButtonEdit control on first row and resize to its fit.
 2. Remove unwanted columns in TableLayoutPanel.
-3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
+3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
 4. Add the CalendarPopup control in second row.
 
 {% tabs %}

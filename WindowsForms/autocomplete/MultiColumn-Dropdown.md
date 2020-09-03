@@ -13,11 +13,11 @@ The AutoComplete allows you to display multiple columns of information. The colu
 
 ## Columns
 
-The [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~Columns.html) property specifies a collection of columns in the AutoComplete dropdown when the AutoCompleteModes enumerator value is AutoSuggest. Each column is represented by an AutoCompleteDataColumnInfo object. This class includes a definition for specifying whether the column is the matching column or the image column.
+The [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_Columns) property specifies a collection of columns in the AutoComplete dropdown when the AutoCompleteModes enumerator value is AutoSuggest. Each column is represented by an AutoCompleteDataColumnInfo object. This class includes a definition for specifying whether the column is the matching column or the image column.
 
 ### Column configuration
 
-The information needed for setting the attributes of a column in the drop-down list of the AutoComplete is handled using [AutoCompleteDataColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html). It specifies the appearance and behavior of each column that should be visible. The AutoCompleteDataColumnInfo properties are as follows.
+The information needed for setting the attributes of a column in the drop-down list of the AutoComplete is handled using [AutoCompleteDataColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html). It specifies the appearance and behavior of each column that should be visible. The AutoCompleteDataColumnInfo properties are as follows.
 
 <table>
 <tr>
@@ -27,23 +27,23 @@ AutoCompleteDataColumn properties</th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ColumnHeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~ColumnHeaderText.html)' || markdownify }}</td><td>
+{{ '[ColumnHeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_ColumnHeaderText)' || markdownify }}</td><td>
 Represents the text for the column header.</td></tr>
 <tr>
 <td>
-{{ '[MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MatchingColumn.html)' || markdownify }}</td><td>
+{{ '[MatchingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_MatchingColumn)' || markdownify }}</td><td>
 Indicates whether the column that this item represents to be treated as the matching column.</td></tr>
 <tr>
 <td>
-{{ '[ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~ImageColumn.html)' || markdownify }}</td><td>
+{{ '[ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_ImageColumn)' || markdownify }}</td><td>
 Indicates whether the column that this item represents to be treated as the image column.</td></tr>
 <tr>
 <td>
-{{ '[MinColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~MinColumnWidth.html)' || markdownify }}</td><td>
+{{ '[MinColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_MinColumnWidth)' || markdownify }}</td><td>
 Sets minimum width for the column.</td></tr>
 <tr>
 <td>
-{{'[Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~Visible.html)' || markdownify }}</td><td>
+{{'[Visible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_Visible)' || markdownify }}</td><td>
 Shows or hides the column at run time.</td></tr>
 </table>
 
@@ -51,7 +51,7 @@ Shows or hides the column at run time.</td></tr>
 
 You can add a drop-down item with image to the AutoComplete popup.
 
-An image list should be set to the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~ImageList.html) property of AutoComplete component, and the [ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo~ImageColumn.html) property should be set to `true` for displaying images in the column. Specify the item text and the image index in the [AddHistoryItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AddHistoryItem.html) method.
+An image list should be set to the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_ImageList) property of AutoComplete component, and the [ImageColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoCompleteDataColumnInfo.html#Syncfusion_Windows_Forms_Tools_AutoCompleteDataColumnInfo_ImageColumn) property should be set to `true` for displaying images in the column. Specify the item text and the image index in the [AddHistoryItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AddHistoryItem_System_String_) method.
 
 {% tabs %}
 

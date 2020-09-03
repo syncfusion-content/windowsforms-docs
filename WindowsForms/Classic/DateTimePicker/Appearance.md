@@ -16,7 +16,7 @@ DateTimePickerAdv control can have custom back color and background images using
 
 ### Background Color
 
-The control's back color can be set using the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BackColor.html) and [BackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BackgroundColor.html) properties of DateTimePickerAdv.
+The control's back color can be set using the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_BackColor) and [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html#Syncfusion_Windows_Forms_Tools_GradientPanel_BackgroundColor) properties of DateTimePickerAdv.
 
 {% tabs %}
 
@@ -73,10 +73,10 @@ Me.dateTimePickerAdv2.BackgroundImage = DirectCast((resources.GetObject("dateTim
 
 Border for a MonthCalendarAdv control can be in 2D or 3D modes. The below properties controls the border settings for the MonthCalendarAdv control. 
 
-* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderStyle.html)
-* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Border3DStyle.html)
-* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderSides.html)
-* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BorderColor.html)
+* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_BorderStyle)
+* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_Border3DStyle)
+* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_BorderSides)
+* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_BorderColor)
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ Me.monthCalendarAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenIn
 
 ![Border styles](Calendar_Images/Overview_img135.jpeg) 
 
-N> [MonthCalendarAdv.ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedBorder.html) property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
+N> [MonthCalendarAdv.ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ThemedBorder) property should be set to false to make the 3D border setting effective. Refer_ Visual Settings
 
 {% tabs %}
  

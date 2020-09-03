@@ -13,7 +13,7 @@ Menu control supports interactive features like tooltip and context menu associa
 
 ## Super tooltip
 
-The menu control supports [`Super Tooltip`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SuperToolTip.html) support via the super tooltip control. In this topic we discuss about associating a super tooltip control to a bar item.
+The menu control supports [`Super Tooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperToolTip.html) support via the super tooltip control. In this topic we discuss about associating a super tooltip control to a bar item.
 
 ### Adding super tooltip
 
@@ -31,7 +31,7 @@ The content of the super tooltip can be edited via the **ToolTip Editor**. This 
 
 ![Menu item with super tooltip](Interactive-Features-images/toolTipEditor_TextUpdated.png)
 
-By default the tooltip for every menu item is enabled via the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~ShowTooltip.html). This can be disabled so that no overlapping of content gets displayed. The following code snippet shows the tooltip menu item is being disabled.
+By default the tooltip for every menu item is enabled via the [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ShowTooltip). This can be disabled so that no overlapping of content gets displayed. The following code snippet shows the tooltip menu item is being disabled.
 
 {% tabs %}
 

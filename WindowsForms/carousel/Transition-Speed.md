@@ -9,7 +9,7 @@ documentation: ug
 
 # Transition speed
 
-The [TransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Carousel~TransitionSpeed.html) property enables the items in the control to be rotated at a user defined speed.
+The [TransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_TransitionSpeed) property enables the items in the control to be rotated at a user defined speed.
 
 {% tabs %}
 {% highlight C# %}

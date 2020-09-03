@@ -19,7 +19,7 @@ Diagram control now provides a drawing tool to draw different types of connector
 5. Spline
 6. BezierCurve
 
-For Example, The [OrgLineConnectorTool](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.OrgLineConnectorTool.html) is used to draw the Org line connector dynamically.
+For Example, The [OrgLineConnectorTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrgLineConnectorTool.html) is used to draw the Org line connector dynamically.
 
 
 {% tabs %}

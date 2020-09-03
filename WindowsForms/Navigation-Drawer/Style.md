@@ -23,7 +23,7 @@ It has the below themes.
 
 •	Office2016Black
 
-The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Style.html) for the NavigationDrawer.
+The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Style) for the NavigationDrawer.
 
 ## Default
 

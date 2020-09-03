@@ -11,7 +11,7 @@ documentation: ug
 
 ## ValueChanged Event
 
-This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfNumericTextBox~ValueChanged_EV.html) event triggers when the value of the SfNumericTextBox is changed. The Value will be changed according to the ValueChangedMode property.
+This [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) event triggers when the value of the SfNumericTextBox is changed. The Value will be changed according to the ValueChangedMode property.
 
 ## Event Data
 

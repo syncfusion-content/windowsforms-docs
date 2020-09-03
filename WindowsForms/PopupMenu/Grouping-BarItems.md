@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping of BarItems
 
-Grouping allows to add separator between a collection of bar items which are relevant to one another. To group the required bar items, the [`SeparatorIndices`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~SeparatorIndices.html) property of the associated ParentBarItem is used.
+Grouping allows to add separator between a collection of bar items which are relevant to one another. To group the required bar items, the [`SeparatorIndices`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_SeparatorIndices) property of the associated ParentBarItem is used.
 
 
 The below code snippets add a **Separator** to the PopupMenu control.
@@ -34,11 +34,11 @@ Me.parentBarItem1.SeparatorIndices.AddRange(New Integer() { 1, 4})
 Grouping can also be done by using the below mentioned methods.
 
 
-* [`BeginGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~BeginGroupAt.html) : Begins the categorization (grouping) of items immediately before the BarItem instance specified.
+* [`BeginGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_BeginGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Begins the categorization (grouping) of items immediately before the BarItem instance specified.
 
-* [`RemoveGroupAt`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~RemoveGroupAt.html) : Ends the categorization (grouping) of items immediately before the BarItem instance specified. 
+* [`RemoveGroupAt`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_RemoveGroupAt_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Ends the categorization (grouping) of items immediately before the BarItem instance specified. 
 
-* [`IsGroupBeginning`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~IsGroupBeginning.html) : Returns a boolean value whether the specified bar item instance is at the beginning of the grouping or not. 
+* [`IsGroupBeginning`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_IsGroupBeginning_Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_) : Returns a boolean value whether the specified bar item instance is at the beginning of the grouping or not. 
 
 The below code snippets will explain how to set grouping by using the methods.
 

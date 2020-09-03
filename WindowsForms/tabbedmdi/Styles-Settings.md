@@ -13,7 +13,7 @@ This section discusses about the Style Settings available in TabbedMDIManager co
 
 ## Tab styles
 
-TabbedMDI Framework provides the ability to support a number of tab styles. The tabbedMDIManager's [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~TabStyle.html) property lets users specify the required style for the Tabs.
+TabbedMDI Framework provides the ability to support a number of tab styles. The tabbedMDIManager's [TabStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_TabStyle) property lets users specify the required style for the Tabs.
 
 Property table
 

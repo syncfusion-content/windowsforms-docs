@@ -13,7 +13,7 @@ Pivot grid provides support to edit the values of both value cells and total cel
 
 ## Editing value cells
 
-Value cells can be edited by enabling the [EnableValueEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableValueEditing.html) property of pivot grid control. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
+Value cells can be edited by enabling the [EnableValueEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableValueEditing) property of pivot grid control. While handling the editing operations, the modified values will be calculated and automatically reflected in the total cell values.
 
 Refer to the below code sample to enable editing in total cells of pivot grid.
 
@@ -37,7 +37,7 @@ Me.pivotGrid1.EnableValueEditing = True
 
 ## Editing total cells
 
-Values of total cells can also be edited by using the [AllowEditingOfTotalCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager~AllowEditingOfTotalCells.html) property of [EditManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EditManager.html).
+Values of total cells can also be edited by using the [AllowEditingOfTotalCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotEditingManager_AllowEditingOfTotalCells) property of [EditManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EditManager).
 
 Refer to the below code sample to enable editing in total cells of pivot grid.
 
@@ -66,7 +66,7 @@ Me.pivotGrid1.EditManager.AllowEditingOfTotalCells = True
 
 After editing the value, we can further customize the edited value through custom editing manager. The custom editing manager is used to format the value using the pivot cell information.
 
-To customize the default editing, a class need to be created by deriving the [PivotEditingManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager.html) class. Then, override the [ChangeValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager~ChangeValue(Object,Object,Int32,Int32,PivotCellInfo).html) method in the derived class to customize the edited value as per your requirement.
+To customize the default editing, a class need to be created by deriving the [PivotEditingManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager.html) class. Then, override the [ChangeValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotEditingManager.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotEditingManager_ChangeValue_System_Object_System_Object_System_Int32_System_Int32_Syncfusion_PivotAnalysis_Base_PivotCellInfo_) method in the derived class to customize the edited value as per your requirement.
 
 Refer to the below code sample to append * symbol in the end of edited values using custom editing manager.
 

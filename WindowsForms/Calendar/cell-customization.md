@@ -13,7 +13,7 @@ documentation: ug
 
 ## Special dates
 
-The [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SpecialDates.html) helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:]()
+The [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) helps you to hold the special dates collection with icon and description for dates which need to be highlighted. The `SpecialDates` contains the following properties to customize the cells:]()
 
 * **BackColor**: The background color for the special date to fill the cell.
 * **Value**: The value for the special date.
@@ -259,7 +259,7 @@ To customize the dates, use the following code example:
 
 ## ToolTip
 
-This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ToolTipOpening_EV.html) event of the calendar. All the [customization with tooltip](/windowsforms/sftooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
+This support is used to display additional information such as text or image about a cell in calendar in form of tooltip.The `ToolTipOpeningEventArgs` provides the following data for the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar. All the [customization with tooltip](/windowsforms/sftooltip/appearance) will be reflected in tooltip of cell in SfCalendar.
 
 
 * ToolTipInfo: This option helps to set more information such as text or image about cell in calendar.
@@ -347,13 +347,13 @@ This support is used to display additional information such as text or image abo
 
 
 
-* **Note**: This event fires only when [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowToolTip.html) property value is true.
+* **Note**: This event fires only when [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowToolTip) property value is true.
 
 ![Tooltip option](cell-customization-images/ToolTip.png)
 
 ## Render cell on-demand
 
-This support is used to highlight or customize dates to mention some special date on-demand. The `DrawCellEventArgs` provides the following data for the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~DrawCell_EV.html) event of the calendar.
+This support is used to highlight or customize dates to mention some special date on-demand. The `DrawCellEventArgs` provides the following data for the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) event of the calendar.
 
 
 * BackColor: Changes the background color of the date cell to draw in the calendar.

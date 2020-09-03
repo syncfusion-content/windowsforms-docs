@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Themes and animation settings
 
-Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ThemesEnabled.html) property of GroupBar to `true`.
+Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ThemesEnabled) property of GroupBar to `true`.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ Themed look of Office 2007 Style GroupBar
 
 ## Animation settings
 
-Switching between the different GroupBar Items can be animated by setting the [AnimatedSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~AnimatedSelection.html) property to `true`.
+Switching between the different GroupBar Items can be animated by setting the [AnimatedSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_AnimatedSelection) property to `true`.
 
 {% tabs %}
 

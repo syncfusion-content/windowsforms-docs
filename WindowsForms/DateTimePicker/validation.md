@@ -14,7 +14,7 @@ The `SfDateTimeEdit` control validates the DateTime value when the <kbd>Enter</k
 
 ## Validation reset option
 
-The [ValidationOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~ValidationOption.html) that helps you to decide how the value will be changed when the validation is failed. If the validation is failed, the value will reset with previous date-time [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of the SfDateTimeEdit.
+The [ValidationOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_ValidationOption) that helps you to decide how the value will be changed when the validation is failed. If the validation is failed, the value will reset with previous date-time [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) or `MinValue` or `MaxValue`. If the validating event is not handled then the validation will be done based on the `ValidationOption` of the SfDateTimeEdit.
 
 The validation results can be obtained based on the input provided to `Value` or `DateTimeText` of the SfDateTimeEdit. If the provided input has invalid date-time format or value that meets minimum or maximum value constraint, then the validation results will be failed.
 
@@ -65,7 +65,7 @@ The given value can be treated as a date/time value. It can be validated based o
 
 ## Handle validation
 
-The `ValidatingEventArgs` provides data for the [Validating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Validating_EV.html) event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause for validation failure with error message in the `ValidatingEventArgs`.
+The `ValidatingEventArgs` provides data for the [Validating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html) event of the SfDateTimeEdit control. By handling the `Validating` event, it is possible to find the cause for validation failure with error message in the `ValidatingEventArgs`.
 
 * **IsError**: Indicates whether the entered date and time is valid or invalid.
 

@@ -48,7 +48,7 @@ Me.ribbonControlAdv1.ShowRibbonDisplayOptionButton = True
 
 ### State change through property DisplayOption
 
-Ribbon state can be changed programmatically by setting [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RibbonControlAdv~DisplayOption.html). Default value is [`ShowTabsAndCommands`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html). The available Ribbon Display Options are:
+Ribbon state can be changed programmatically by setting [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption). Default value is [`ShowTabsAndCommands`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html). The available Ribbon Display Options are:
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ ShowTabsAndCommands</td><td>
 Show Ribbon Tabs and Command all the time.</td></tr>
 </table>
 
-The following code example illustrates how to set [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RibbonControlAdv~DisplayOption.html) for the RibbonControlAdv.
+The following code example illustrates how to set [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) for the RibbonControlAdv.
 
 {% tabs %}
 
@@ -185,9 +185,9 @@ Me.ribbonControlAdv1.CollapseBehavior = CollapseBehavior.Office2010
 
 ### ToolStripItem image support based on its display size
 
-On setting [`CollapseBehavior`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RibbonControlAdv~CollapseBehavior.html) enumeration property to [`Office2010`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CollapseBehavior.html), initially the items inside the toolstrip will be reduced to small sized buttons. On further re-sizing, the items inside the toolstrip will be reduced to extra small sized buttons and finally the toolstrip will appear like a dropdown button. In-order to maintain the image quality, we support different sized images for different mode (large and small). Please follow the below steps to achieve the same.
+On setting [`CollapseBehavior`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_CollapseBehavior) enumeration property to [`Office2010`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CollapseBehavior.html), initially the items inside the toolstrip will be reduced to small sized buttons. On further re-sizing, the items inside the toolstrip will be reduced to extra small sized buttons and finally the toolstrip will appear like a dropdown button. In-order to maintain the image quality, we support different sized images for different mode (large and small). Please follow the below steps to achieve the same.
 
-* Create an instance for the [`ToolStripExImageProvider`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripExImageProvider.html) which provides the image list for ToolStripItems.
+* Create an instance for the [`ToolStripExImageProvider`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripExImageProvider.html) which provides the image list for ToolStripItems.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ Dim toolStripExImageProvider As ToolStripExImageProvider = New ToolStripExImageP
 
 {% endtabs %}
 
-* Assign [`ImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.ImageListAdv.html) for large and small image list, which holds the images.
+* Assign [`ImageListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html) for large and small image list, which holds the images.
 
 {% tabs %}
 

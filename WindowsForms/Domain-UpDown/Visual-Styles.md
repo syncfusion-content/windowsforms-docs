@@ -92,7 +92,7 @@ Me.domainUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office201
 
 ## Custom Colors
 
-We can also apply custom colors to the DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2007Colors~ApplyManagedColors.html) method as follows.
+We can also apply custom colors to the DomainUpDownExt control by setting ColorScheme to "Managed" and specifying the custom color through the [ApplyManagedColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Colors.html#Syncfusion_Windows_Forms_Office2007Colors_ApplyManagedColors_System_Windows_Forms_Form_System_Drawing_Color_) method as follows.
 
 {% tabs %}
 {% highlight c# %}

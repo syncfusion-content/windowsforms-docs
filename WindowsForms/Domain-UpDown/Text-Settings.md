@@ -12,7 +12,7 @@ The text for the DomainUpDownExt control can be specified in String Collection E
 
 * [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.domainupdown.items?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_DomainUpDown_Items)
 * [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.updownbase.textalign?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_UpDownBase_TextAlign)
-* [MaxLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DomainUpDownExt~MaxLength.html)
+* [MaxLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DomainUpDownExt.html#Syncfusion_Windows_Forms_Tools_DomainUpDownExt_MaxLength)
 
 {% tabs %}
 {% highlight c# %}

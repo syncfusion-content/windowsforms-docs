@@ -62,7 +62,7 @@ Property</th><th>
 Action</th></tr>
 <tr>
 <td>
-{{'[IsBookmarkEnabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~IsBookmarkEnabled.html)'| markdownify }}</td><td>
+{{'[IsBookmarkEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_IsBookmarkEnabled)'| markdownify }}</td><td>
 Enables or disables the bookmark feature.</td></tr>
 </table>
 

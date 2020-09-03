@@ -10,7 +10,7 @@ documentation: ug
 
 This section discusses how to set the different mode to the MaskedEditBox control.
 
-The mode settings for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be customized by using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ClipMode.html), [InputMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~InputMode.html) and [UsageMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~UsageMode.html) properties.
+The mode settings for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be customized by using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ClipMode), [InputMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_InputMode) and [UsageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_UsageMode) properties.
 
 <table>
 <tr>
@@ -33,19 +33,19 @@ Specifies if the MaskedEditBox control is to behave as a numeric control.</td></
 
 ## Clip mode
 
-At runtime, we can copy or paste the entries of MaskedEditBox. The entries that are copied can be specified whether to include literals using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ClipMode.html) property.
+At runtime, we can copy or paste the entries of MaskedEditBox. The entries that are copied can be specified whether to include literals using the [ClipMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ClipMode) property.
 
 Setting the `ClipMode` property of the MaskedEditBox to `ExcludeLiterals`, will get rid of the literals from the text that is returned by the control. The default value is set to `IncludeLiterals`.
 
 ## InputMode
 
-The different modes of the input can be determined by the [InputMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~InputMode.html) property.
+The different modes of the input can be determined by the [InputMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_InputMode) property.
 
 Setting the `InputMode` to `Normal`, allows the user to work in insert mode and the INSERT key is not allowed. In Over typeOnly mode, the INSERT key will not have any effect.
 
 ## UsageMode
 
-The [UsageMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~UsageMode.html) property modifies the behavior of the MaskedEditBox as detailed below.
+The [UsageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_UsageMode) property modifies the behavior of the MaskedEditBox as detailed below.
 
 ## Normal mode
 

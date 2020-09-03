@@ -15,7 +15,7 @@ In the pivot grid control, the filtering operation can be performed by any of th
 
 ## Using filter expression programmatically
 
-The [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class is used to encapsulate the information required to define a filter and it contains the following properties.
+The [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.FilterExpression.html) class is used to encapsulate the information required to define a filter and it contains the following properties.
 
 * **Expression** - Specifies the well-formed logical expression that defines the filter.
 * **Name** - Specifies the name of the filter expression.
@@ -26,7 +26,7 @@ The [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pi
 
 ### Defining filter expressions
 
-To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Filters.html) collection of pivot grid control.
+To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Filters) collection of pivot grid control.
 
 Refer to the code sample to define filter expressions in the pivot grid control.
 

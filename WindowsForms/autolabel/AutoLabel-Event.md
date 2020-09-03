@@ -23,9 +23,9 @@ This event is fired when the LabeledControl, Gap or Position properties change.<
 
 ##  PropertyChanged Event
 
-This event is fired when the LabeledControl, [Gap](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.AutoLabel~Gap.html) or [Position](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.AutoLabel~Position.html) properties of this class change.
+This event is fired when the LabeledControl, [Gap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html#Syncfusion_Windows_Forms_Tools_AutoLabel_Gap) or [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html#Syncfusion_Windows_Forms_Tools_AutoLabel_Position) properties of this class change.
 
-The event handler receives an argument of type [SyncfusionPropertyChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.ComponentModel.SyncfusionPropertyChangedEventArgs.html) containing data related to this event.
+The event handler receives an argument of type [SyncfusionPropertyChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.ComponentModel.SyncfusionPropertyChangedEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
