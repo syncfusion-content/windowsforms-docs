@@ -9,9 +9,9 @@ documentation: ug
 
 # Calculator Appearance
 
-This section will walk you through the different appearance settings for the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
+This section will walk you through the different appearance settings for the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 
-* [Layout Modes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~LayoutType.html) - Layout of the components in a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
+* [Layout Modes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_LayoutType) - Layout of the components in a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 * Background Settings - Background settings for the control.
 * Border Styles - Border for the control.
 * Button Spacing - Spacing between the Calculator buttons.
@@ -19,7 +19,7 @@ This section will walk you through the different appearance settings for the [Ca
 
 ## Layout Modes
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be laid out in the following modes.
+The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) can be laid out in the following modes.
 
 * WindowsStandard Mode - Modeled with windows standard layout(Default) and
 * Financial Mode - Modeled with windows financial layout.
@@ -35,7 +35,7 @@ Me.calculatorControl1.LayoutType = Syncfusion.Windows.Forms.Tools.CalculatorLayo
 
 ![Financial calculator](Overview_images/Overview_img114.jpeg) 
 
-N> We can set different button styles for the Calculator control, using [CalculatorControl.ButtonStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~ButtonStyle.html) property. Refer_ Themes and Button Styles _topic to know more. [ButtonStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~ButtonStyle.html) can be applied to both the [layout modes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~LayoutType.html).
+N> We can set different button styles for the Calculator control, using [CalculatorControl.ButtonStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonStyle) property. Refer_ Themes and Button Styles _topic to know more. [ButtonStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ButtonStyle) can be applied to both the [layout modes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_LayoutType).
 
 ## Background Settings
 
@@ -46,7 +46,7 @@ Background settings for a Calculator control is discussed in this section.
 The background of the Calculator can be painted using the below properties.
 
 * [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor)
-* [BackgroundColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~BackgroundColor.html)
+* [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_BackgroundColor)
 
 {% tabs %}
 {% highlight C# %}
@@ -80,7 +80,7 @@ Me.calculatorControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.C
 
 ## Border Styles
 
-The [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~BorderStyle.html) property used to specify the border style for the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
+The [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_BorderStyle) property used to specify the border style for the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -95,7 +95,7 @@ this.calculatorControl1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
 
 ## Button Spacing
 
-The default spacing between the Calculator buttons can be modified by enabling [UseVerticalAndHorizontalSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~UseVerticalAndHorizontalSpacing.html) property. 
+The default spacing between the Calculator buttons can be modified by enabling [UseVerticalAndHorizontalSpacing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_UseVerticalAndHorizontalSpacing) property. 
 
 {% tabs %}
 {% highlight C# %}
@@ -114,7 +114,7 @@ Me.calculatorControl1.VerticalSpacing = 5
 
 ## Button Foreground
 
-Using [SetButtonFont](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~SetButtonFont.html) and [SetButtonColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~SetButtonColor.html) properties, we can set the font style and color for the button text. The button can be identified using [CalcActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalcActions.html) enumerator.
+Using [SetButtonFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_SetButtonFont_Syncfusion_Windows_Forms_Tools_CalcActions_System_Drawing_Font_) and [SetButtonColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_SetButtonColor_Syncfusion_Windows_Forms_Tools_CalcActions_System_Drawing_Color_) properties, we can set the font style and color for the button text. The button can be identified using [CalcActions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalcActions.html) enumerator.
 
 {% tabs %}
 {% highlight C# %}

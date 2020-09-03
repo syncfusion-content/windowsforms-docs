@@ -10,7 +10,7 @@ documentation: ug
 
 ## Cursor settings for GroupBar
 
-The cursor settings of the GroupBar control can be changed using [Cursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~Cursor.html) property.
+The cursor settings of the GroupBar control can be changed using [Cursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_Cursor) property.
 
 {% tabs %}
 
@@ -36,7 +36,7 @@ Me.groupBar1.Cursor = System.Windows.Forms.Cursors.Cross
 
 #### Cursor settings for GroupBar items
 
-You can set different types of cursors when the mouse pointer is over the GroupBar Items using [GroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~GroupBarItemCursor.html) property. The cursors available are Mouse, Cross, Help, Hand, and so on. The default cursor is 'Arrow'.
+You can set different types of cursors when the mouse pointer is over the GroupBar Items using [GroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItemCursor) property. The cursors available are Mouse, Cross, Help, Hand, and so on. The default cursor is 'Arrow'.
 
 {% tabs %}
 
@@ -58,4 +58,4 @@ Me.groupBar1.GroupBarItemCursor = System.Windows.Forms.Cursors.Hand
  ![GroupBarItem cusrsor](Overview_images/Overview_img35.jpeg)
 
 
-N> The [ResetGroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ResetGroupBarItemCursor.html) method can be used to reset the cursor when it is displayed over a GroupBar Item.
+N> The [ResetGroupBarItemCursor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ResetGroupBarItemCursor) method can be used to reset the cursor when it is displayed over a GroupBar Item.

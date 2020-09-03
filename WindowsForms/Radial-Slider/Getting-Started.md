@@ -23,7 +23,7 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
+2) Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,7 +34,7 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 ![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-3) Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
+3) Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
 
 ## Adding the RadialSlider control via code
 
@@ -69,7 +69,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
+4) Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
 
 {% tabs %}
 
@@ -97,9 +97,9 @@ Me.Controls.Add(radialSlider1)
 
 The value of **RadialSlider** control can be restricted within the minimum and maximum limits.
 
-* **MinimumValue** - The slider initial value depends on its minimum value, and the default minimum value is 0. The minimum value can be changed using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MinimumValue.html) property.
+* **MinimumValue** - The slider initial value depends on its minimum value, and the default minimum value is 0. The minimum value can be changed using the [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_MinimumValue) property.
 
-* **MaximumValue** - The slider end value depends on its maximum value, and the default maximum value is 10. The maximum value can be changed using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~MaximumValue.html) property.
+* **MaximumValue** - The slider end value depends on its maximum value, and the default maximum value is 10. The maximum value can be changed using the [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_MaximumValue) property.
 
 * **Value** - The `Value` property of slider is used to get the currently selected value or change it to the required value.
 
@@ -127,7 +127,7 @@ radialSlider1.Value = 50
 
 ## Slider Value Changed Event
 
-You can get the current slider value using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ValueChanged_EV.html) event.
+You can get the current slider value using the [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) event.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ End Sub
 
 ## Division
 
-The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderDivision.html) property. The default slider division is 10.
+The division for the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) can be customized using the [SliderDivision](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderDivision) property. The default slider division is 10.
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ Me.radialSlider1.SliderDivision = 5
 
 ## Text formatting
 
-You can customize the text format for specific or all sliders by handling the [DrawText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~DrawText_EV.html) event. You can change the content, foreground and font of the slider intervals, selected slider or selected value by using the [DrawTextEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~Text.html), [DrawTextEventArgs.ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~ForeColor.html) and [DrawTextEventArgs.Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~Font.html) properties. You can differentiate the slider intervals, selected slider and selected value by using the [DrawTextEventArgs.TextType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider+DrawTextEventArgs~TextType.html) enum property.
+You can customize the text format for specific or all sliders by handling the [DrawText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) event. You can change the content, foreground and font of the slider intervals, selected slider or selected value by using the [DrawTextEventArgs.Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.DrawTextEventArgs.html#Syncfusion_Windows_Forms_Tools_RadialSlider_DrawTextEventArgs_Text), [DrawTextEventArgs.ForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.DrawTextEventArgs.html#Syncfusion_Windows_Forms_Tools_RadialSlider_DrawTextEventArgs_ForeColor) and [DrawTextEventArgs.Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.DrawTextEventArgs.html#Syncfusion_Windows_Forms_Tools_RadialSlider_DrawTextEventArgs_Font) properties. You can differentiate the slider intervals, selected slider and selected value by using the [DrawTextEventArgs.TextType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.DrawTextEventArgs.html#Syncfusion_Windows_Forms_Tools_RadialSlider_DrawTextEventArgs_TextType) enum property.
 
 {% tabs %}
 {% highlight C# %}
@@ -226,7 +226,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winf
 
 ## Slider Style
 
-The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~SliderStyle.html) property.
+The **RadialSlider** supports two different styles to its appearance using the [SliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_SliderStyle) property.
 
 * **Default** - Renders the slider control with two hollow circles and a small circle as center with its dividend ticks.
 
@@ -250,7 +250,7 @@ radialSlider1.SliderStyle = Syncfusion.Windows.Forms.Tools.SliderStyles.Frame
 
 ![Windows Forms RadialSlider showing different slider styles](Getting-Started_images/RadialSlider_style.png)
 
-The outside circle can be shown using the [ShowOuterCircle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider~ShowOuterCircle.html) property. The default value of this property is set to 'True'.
+The outside circle can be shown using the [ShowOuterCircle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html#Syncfusion_Windows_Forms_Tools_RadialSlider_ShowOuterCircle) property. The default value of this property is set to 'True'.
 
 {% tabs %}
 

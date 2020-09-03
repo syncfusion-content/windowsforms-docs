@@ -85,7 +85,7 @@ End Sub
 
 **Setting Icons for the Data Cells**
 
-Using [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateCellQueryInfo_EV.html) event, we can add icons to the data cells.
+Using [DateCellQueryInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) event, we can add icons to the data cells.
 
 {% tabs %}
 

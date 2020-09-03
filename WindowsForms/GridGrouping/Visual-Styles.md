@@ -157,7 +157,7 @@ N> The scrollbar customization is briefly discussed in the [Scrolling](http://he
 
 ## Modifying Office2016 colors
 
-Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~SetOffice2016ThemeStyle.html) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridGroupingControl.
+Custom colors can be applied to the office2016 theme by using the [SetOffice2016ThemeStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_SetOffice2016ThemeStyle_Syncfusion_Windows_Forms_GridVisualStyles_Syncfusion_Windows_Forms_GridOffice2016ThemeColors_) method. It can be used to change the colors of Mouse hover, pressed, and clicked colors of the headers and the embedded cell controls of the GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}

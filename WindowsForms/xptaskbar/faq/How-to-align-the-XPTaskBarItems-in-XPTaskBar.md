@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to align the XPTaskBarItems in XPTaskBar
 
-You can arrange the XPTaskBarItems horizontally or vertically using [BoxItemsAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~BoxItemsAlignment.html) property. The following code snippet can be 
+You can arrange the XPTaskBarItems horizontally or vertically using [BoxItemsAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_BoxItemsAlignment) property. The following code snippet can be 
 used.
 
 {% tabs %}

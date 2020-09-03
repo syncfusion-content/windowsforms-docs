@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Change Row Height and Column Width
 
-The height of rows and the width of columns in the pivot grid control can be altered with the help of [RowHeights](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~RowHeights.html) and [ColWidths](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModel~ColWidths.html) properties.
+The height of rows and the width of columns in the pivot grid control can be altered with the help of [RowHeights](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_RowHeights) and [ColWidths](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ColWidths) properties.
 
 Refer to the below code sample to change the default height of rows and default width of columns in pivot grid control.
 

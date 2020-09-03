@@ -9,7 +9,7 @@ documentation: ug
 
 # How to highlight the TabPage text using HotTrack property?
 
-The TabPage text can be highlighted using the [HotTrack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~HotTrack.html) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv.html) when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
+The TabPage text can be highlighted using the [HotTrack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_HotTrack) property of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) when the mouse hovers over it. This can be enabled programmatically using the code snippet given below.
 
 {% tabs %}
 

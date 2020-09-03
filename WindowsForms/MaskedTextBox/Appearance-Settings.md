@@ -14,7 +14,7 @@ The background settings of the MaskedEditBox control are discussed below.
 
 ### Background color
 
-You can set the background color for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control by using the [BackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~BackColor.html) property.
+You can set the background color for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control by using the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_BackColor) property.
 
 <table>
 <tr>
@@ -46,7 +46,7 @@ Me.maskedEditBox1.BackColor = System.Drawing.Color.PaleGoldenrod
 ![Set the background color to WF MaskedEditBox](MaskedEditBox-images/MarkedEditBox-img15.png)
 
 
-You can also reset the background color for MaskedEditBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~ResetBackColor.html) method.
+You can also reset the background color for MaskedEditBox control by using the [ResetBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_ResetBackColor) method.
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ Me.maskedEditBox1.ForeColor = System.Drawing.Color.DarkMagenta
 
 ## Visual style
 
-You can set the visual style to the MaskedEditBox control by using [Style](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~Style.html) property.
+You can set the visual style to the MaskedEditBox control by using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_Style) property.
 
 {% tabs %}
 

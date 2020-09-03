@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started of CheckBoxAdv
 
-This section gives detailed description on Getting Started of [CheckBoxAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
+This section gives detailed description on Getting Started of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 
 ## Assembly Deployment
 
@@ -23,7 +23,7 @@ The following steps explain how to create the CheckBoxAdv control via designer.
 
 1) Create a new Windows Forms Project in Visual Studio.
 
-2) Drag and drop the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) from toolbox in Form designer window. 
+2) Drag and drop the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) from toolbox in Form designer window. 
 
 3) The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) will be added automatically.
 
@@ -31,11 +31,11 @@ The following steps explain how to create the CheckBoxAdv control via designer.
 
 ## Adding CheckBoxAdv control via code
 
-In order to add [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control manually, do the below steps,
+In order to add [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control manually, do the below steps,
 
 1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project.
 
-2)	Create the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control instance and add it to the Form.
+2)	Create the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control instance and add it to the Form.
 
 3) Include the required namespace.
 
@@ -71,7 +71,7 @@ Me.Controls.Add(checkBoxAdv)
 
 ## CheckBox State
 
-You can get or set the current checked status of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~Checked.html) or [CheckState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CheckBoxAdv~CheckState.html) property. The default value of Checked property is `false` and CheckState property is `Unchecked`.
+You can get or set the current checked status of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) using the [Checked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_Checked) or [CheckState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_CheckState) property. The default value of Checked property is `false` and CheckState property is `Unchecked`.
 
 {% tabs %}
 {% highlight c# %}

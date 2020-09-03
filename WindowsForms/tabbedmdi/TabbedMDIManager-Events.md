@@ -46,7 +46,7 @@ This event is handled to notify that the locked MDI client area is being unlocke
 
 ## BeforeMDIChildAdded event
 
-This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~BeforeMDIChildAdded_EV.html) occurs before an MDIChild is added to the TabbedMDIManager.
+This [BeforeMDIChildAdded event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) occurs before an MDIChild is added to the TabbedMDIManager.
 
 {% tabs %}
 
@@ -80,15 +80,15 @@ End Sub
 
 ## BeforeDropDownPopup event
 
-This [BeforeDropDownPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~BeforeDropDownPopup_EV.html) events is discussed in [DropDown Button](https://help.syncfusion.com/windowsforms/tabbedmdi/button-settings#drop-down-button) topic.
+This [BeforeDropDownPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) events is discussed in [DropDown Button](https://help.syncfusion.com/windowsforms/tabbedmdi/button-settings#drop-down-button) topic.
 
 ## TabControlAdded event
 
-This [TabControlAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~TabControlAdded_EV.html) event is explained in how to customize the fonts of Active and Inactive Tabs topic under Frequently Asked Questions. 
+This [TabControlAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event is explained in how to customize the fonts of Active and Inactive Tabs topic under Frequently Asked Questions. 
 
 ## TabControlAdding event
 
-This [TabControlAdding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~TabControlAdding_EV.html) event is handled when a tab control is added and it provides options to customize tab controls.
+This [TabControlAdding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event is handled when a tab control is added and it provides options to customize tab controls.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ End Sub
 
 ## TabControlRemoved event
 
-This [TabControlRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~TabControlRemoved_EV.html) event is handled after a tab control is removed from a tab group.
+This [TabControlRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event is handled after a tab control is removed from a tab group.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ End Sub
 
 ## UnLockingMdIClient event
 
-This [UnLockingMdIClient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~UnLockingMdiClient_EV.html) event is handled to notify that the locked MDI client area is being unlocked.
+This [UnLockingMdIClient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event is handled to notify that the locked MDI client area is being unlocked.
 
 {% tabs %}
 

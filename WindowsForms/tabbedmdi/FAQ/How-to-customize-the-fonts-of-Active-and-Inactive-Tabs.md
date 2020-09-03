@@ -9,7 +9,7 @@ documentation: ug
 
 # How to customize the fonts of active and inactive tabs
 
-Using the [TabControlAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~TabControlAdded_EV.html) event, the fonts of active and inactive tabs can be customized.
+Using the [TabControlAdded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event, the fonts of active and inactive tabs can be customized.
 
 {% tabs %}
 

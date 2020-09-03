@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support
 
-The menu control supports to touch mode to the menu items and other visual elements. The components are also scaled automatically to render the menu items. This can be done by using the [`EnableTouchMode`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarManager~EnableTouchMode.html) property or the menu instance. The below code snippet shows the touch mode is being enabled in the menu.
+The menu control supports to touch mode to the menu items and other visual elements. The components are also scaled automatically to render the menu items. This can be done by using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_EnableTouchMode) property or the menu instance. The below code snippet shows the touch mode is being enabled in the menu.
 
 By default, this property is set to `false`.
 

@@ -12,7 +12,7 @@ documentation: ug
 
 ### Range of selection
 
-The minimum and maximum date selectable by the calendar can be specified using [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MaxValue.html) properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
+The minimum and maximum date selectable by the calendar can be specified using [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_MinValue) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_MaxValue) properties. (This is similar to MinDate and MaxDate of windows MonthCalendar control).
 
 {% tabs %}
 
@@ -54,8 +54,8 @@ N> It is possible to set color for the highlighted date. See_ Text Settings _top
 
 It is possible to enable multiple selection of the dates at run time. The below properties enables multiple selection.
 
-* [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~AllowMultipleSelection.html)
-* [MouseDragMultiSelect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~MouseDragMultiselect.html)
+* [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_AllowMultipleSelection)
+* [MouseDragMultiSelect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_MouseDragMultiselect)
 
 
 {% tabs %}
@@ -88,7 +88,7 @@ Me.monthCalendarAdv1.MouseDragMultiselect = True
 
 **Select date range programmatically**
 
-Using the [SelectedDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~SelectedDates.html) property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list.
+Using the [SelectedDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_SelectedDates) property, range of dates can be selected in the MonthCalendarAdv control. The dates should be given in array format using the DateTime Array list.
 
 
 {% tabs %}
@@ -162,7 +162,7 @@ Me.monthCalendarAdv1.MonthImageList = Me.imageList1
 
 ### Foreground color for inactive months
 
-The [InactiveMonthColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~InactiveMonthColor.html) property used to sets the color for the inactive months.
+The [InactiveMonthColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_InactiveMonthColor) property used to sets the color for the inactive months.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ Me.monthCalendarAdv1.InactiveMonthColor = System.Drawing.Color.InactiveCaptionTe
 
 ### First day of the week
 
-MonthCalendarAdv lets you specify the first day to be displayed in a week using [FirstDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~FirstDayOfWeek.html) property. Default will be Sunday.
+MonthCalendarAdv lets you specify the first day to be displayed in a week using [FirstDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_FirstDayOfWeek) property. Default will be Sunday.
 
 {% tabs %}
 

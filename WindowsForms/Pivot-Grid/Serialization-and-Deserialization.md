@@ -16,7 +16,7 @@ Serialization is a process that allows to save the settings of pivot grid contro
 
 ### Serializing using save file dialog
 
-Pivot grid control allows to save its settings to the desired location in _*.xml_ format by using the [Serialize()](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Serialize().html) method.
+Pivot grid control allows to save its settings to the desired location in _*.xml_ format by using the [Serialize()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Serialize().html) method.
 
 Refer to the below code sample to serialize the pivot grid control using save file dialog.
 
@@ -42,7 +42,7 @@ The below screenshot illustrates the serialized content of pivot grid control.
 
 ### Serializing using stream
 
-Pivot grid control allows to save its settings with the help of [Serialize(Stream)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Serialize(Stream).html) method by passing the stream as parameter.
+Pivot grid control allows to save its settings with the help of [Serialize(Stream)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Serialize_System_IO_Stream_) method by passing the stream as parameter.
 
 Refer to the below code sample to serialize the pivot grid control as stream.
 
@@ -69,7 +69,7 @@ End Using
 
 ### Serializing using specific file
 
-Pivot grid control allows to save its settings with the help of [Serialize(String)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Serialize(String).html) method by passing the file path as parameter.
+Pivot grid control allows to save its settings with the help of [Serialize(String)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Serialize_System_String_) method by passing the file path as parameter.
 
 Refer to the below code sample to serialize the pivot grid control as xml file.
 
@@ -91,7 +91,7 @@ Me.pivotGridControl1.Serialize("D:\PivotGrid.xml")
 
 ### Serializing to XML string
 
-Pivot grid control allows to save its settings into a XML string using the [SerializeToXml()](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~SerializeToXml.html) method.
+Pivot grid control allows to save its settings into a XML string using the [SerializeToXml()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_SerializeToXml) method.
 
 Refer to the below code sample to serialize the pivot grid control as xml string.
 
@@ -113,11 +113,11 @@ Dim xmlString As String = Me.pivotGridControl1.SerializeToXml()
 
 ## Customizing serialization using options
 
-The serialization of pivot grid control can be customized by using the instance of [SerializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html). The instance of serialization options needs to be passed as an argument of [Serialize(String,SerializationOptions)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Serialize(String,SerializationOptions).html) or [Serialize(Stream,SerializationOptions)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Serialize(Stream,SerializationOptions).html) method based on the requirement.
+The serialization of pivot grid control can be customized by using the instance of [SerializationOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html). The instance of serialization options needs to be passed as an argument of [Serialize(String,SerializationOptions)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Serialize_System_String_Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_) or [Serialize(Stream,SerializationOptions)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Serialize_System_IO_Stream_Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_) method based on the requirement.
 
 ### Serializing grouping bar items
 
-By default, the pivot grid control allows to serialize the items of grouping bar. The serialization of grouping bar items can be disabled by setting the [SerializeGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializeGrouping.html) property to false.
+By default, the pivot grid control allows to serialize the items of grouping bar. The serialization of grouping bar items can be disabled by setting the [SerializeGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializeGrouping) property to false.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ End Using
 
 ### Serializing sorted items
 
-By default, the pivot grid control allows to serialize the sorted items. The serialization of sorted items can be disabled by setting the [SerializeSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializeSorting.html) property to false.
+By default, the pivot grid control allows to serialize the sorted items. The serialization of sorted items can be disabled by setting the [SerializeSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializeSorting) property to false.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ End Using
 
 ### Serializing filtered items
 
-By default, the pivot grid control allows to serialize the filtered items. The serialization of filtered items can be disabled by setting the [SerializeFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializeFiltering.html) property to false.
+By default, the pivot grid control allows to serialize the filtered items. The serialization of filtered items can be disabled by setting the [SerializeFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializeFiltering) property to false.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ End Using
 
 ### Serializing pivot row items
 
-By default, the pivot grid control allows to serialize the collection of pivot row items. The serialization of pivot row items can be disabled by setting the [SerializePivotRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializePivotRows.html) property to false.
+By default, the pivot grid control allows to serialize the collection of pivot row items. The serialization of pivot row items can be disabled by setting the [SerializePivotRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializePivotRows) property to false.
 
 {% tabs %}
 
@@ -233,7 +233,7 @@ End Using
 
 ### Serializing pivot column items
 
-By default, the pivot grid control allows to serialize the collection of pivot column items. The serialization of pivot column items can be disabled by setting the [SerializePivotColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializePivotColumns.html) property to false.
+By default, the pivot grid control allows to serialize the collection of pivot column items. The serialization of pivot column items can be disabled by setting the [SerializePivotColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializePivotColumns) property to false.
 
 {% tabs %}
 
@@ -262,7 +262,7 @@ End Using
 
 ### Serializing pivot calculation items
 
-By default, the pivot grid control allows to serialize the collection of pivot column items. The serialization of pivot column items can be disabled by setting the [SerializePivotCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializePivotCalculations.html) property to false.
+By default, the pivot grid control allows to serialize the collection of pivot column items. The serialization of pivot column items can be disabled by setting the [SerializePivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializePivotCalculations) property to false.
 
 {% tabs %}
 
@@ -291,7 +291,7 @@ End Using
 
 ### Serializing conditional formats
 
-By default, the pivot grid control allows to serialize the conditional formats applied to it. The serialization of conditional formats can be disabled by setting the [SerializeConditionalFormats](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializeConditionalFormats.html) property to false.
+By default, the pivot grid control allows to serialize the conditional formats applied to it. The serialization of conditional formats can be disabled by setting the [SerializeConditionalFormats](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializeConditionalFormats) property to false.
 
 {% tabs %}
 
@@ -320,7 +320,7 @@ End Using
 
 ### Serializing expand and collapse state
 
-By default, the pivot grid control allows to serialize the expand and collapse state of expanders in row and column headers. The serialization of expand and collapse state of expanders can be disabled by setting the [SerializeExpandCollapseState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions~SerializeExpandCollapseState.html) property to false.
+By default, the pivot grid control allows to serialize the expand and collapse state of expanders in row and column headers. The serialization of expand and collapse state of expanders can be disabled by setting the [SerializeExpandCollapseState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.SerializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_SerializationOptions_SerializeExpandCollapseState) property to false.
 
 {% tabs %}
 
@@ -353,7 +353,7 @@ Deserialization is a process that allows to reconstruct the pivot grid control b
 
 ### Deserializing using open file dialog
 
-The settings of pivot grid control can be deserialized with the help of [Deserialize()](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Deserialize().html) method.
+The settings of pivot grid control can be deserialized with the help of [Deserialize()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Deserialize) method.
 
 Refer to the below code sample to deserialize the pivot grid control using open file dialog.
 
@@ -375,7 +375,7 @@ Me.pivotGridControl1.Deserialize()
 
 ### Deserializing using stream
 
-The settings of pivot grid control can be deserialized with the help of [Deserialize(Stream)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Deserialize(Stream).html) method.
+The settings of pivot grid control can be deserialized with the help of [Deserialize(Stream)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Deserialize_System_IO_Stream_) method.
 
 Refer to the below code sample to deserialize the pivot grid from stream.
 
@@ -402,7 +402,7 @@ End Using
 
 ### Deserializing using specific file
 
-The settings of pivot grid control can be deserialized with the help of [Deserialize(String)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Deserialize(String).html) method by passing the path of the file as parameter.
+The settings of pivot grid control can be deserialized with the help of [Deserialize(String)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Deserialize_System_String_) method by passing the path of the file as parameter.
 
 Refer to the below code sample to deserialize the pivot grid from xml file.
 
@@ -424,7 +424,7 @@ Me.pivotGridControl1.Deserialize("D:\PivotGrid.xml")
 
 ### Deserializing from XML string
 
-Pivot grid control allows to load its settings from the XML string using the  [DeserializeFromXml()](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~DeserializeFromXml.html) method.
+Pivot grid control allows to load its settings from the XML string using the  [DeserializeFromXml()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_DeserializeFromXml_System_String_) method.
 
 Refer to the below code sample to deserialize the pivot grid from xml string.
 
@@ -446,11 +446,11 @@ Me.pivotGridControl1.DeserializeFromXml(xmlString)
 
 ## Customizing deserialization using options
 
-The deserialization of pivot grid control can be customized by using the instance of [DeserializationOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html). The instance of deserialization options needs to be passed as an argument of [Deserialize(String,DeserializationOptions)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Deserialize(String,DeserializationOptions).html) or [Deserialize(Stream,DeserializationOptions)](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~Deserialize(Stream,DeserializationOptions).html) method based on the requirement.
+The deserialization of pivot grid control can be customized by using the instance of [DeserializationOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html). The instance of deserialization options needs to be passed as an argument of [Deserialize(String,DeserializationOptions)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Deserialize_System_String_Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_) or [Deserialize(Stream,DeserializationOptions)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Deserialize_System_IO_Stream_Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_) method based on the requirement.
 
 ### Deserializing grouping bar items
 
-By default, the pivot grid control allows to deserialize the items of grouping bar. The deserialization of grouping bar items can be disabled by setting the [DeserializeGrouping](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializeGrouping.html) property to false.
+By default, the pivot grid control allows to deserialize the items of grouping bar. The deserialization of grouping bar items can be disabled by setting the [DeserializeGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializeGrouping) property to false.
 
 {% tabs %}
 
@@ -479,7 +479,7 @@ End Using
 
 ### Deserializing sorted items
 
-By default, the pivot grid control allows to deserialize the sorting operation. The deserialization of sorted items can be disabled by setting the [DeserializeSorting](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializeSorting.html) property to false.
+By default, the pivot grid control allows to deserialize the sorting operation. The deserialization of sorted items can be disabled by setting the [DeserializeSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializeSorting) property to false.
 
 {% tabs %}
 
@@ -508,7 +508,7 @@ End Using
 
 ### Deserializing filtered items
 
-By default, the pivot grid control allows to deserialize the filtering operation. The deserialization of filtered items can be disabled by setting the [DeserializeFiltering](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializeFiltering.html) property to false.
+By default, the pivot grid control allows to deserialize the filtering operation. The deserialization of filtered items can be disabled by setting the [DeserializeFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializeFiltering) property to false.
 
 {% tabs %}
 
@@ -537,7 +537,7 @@ End Using
 
 ### Deserializing pivot row items
 
-By default, the pivot grid control allows to deserialize the collection of pivot row items. The deserialization of pivot row items can be disabled by setting the [DeserializePivotRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializePivotRows.html) property to false.
+By default, the pivot grid control allows to deserialize the collection of pivot row items. The deserialization of pivot row items can be disabled by setting the [DeserializePivotRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html) property to false.
 
 {% tabs %}
 
@@ -566,7 +566,7 @@ End Using
 
 ### Deserializing pivot column items
 
-By default, the pivot grid control allows to deserialize the collection of pivot column items. The deserialization of pivot column items can be disabled by setting the [DeserializePivotColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializePivotColumns.html) property to false.
+By default, the pivot grid control allows to deserialize the collection of pivot column items. The deserialization of pivot column items can be disabled by setting the [DeserializePivotColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializePivotColumns) property to false.
 
 {% tabs %}
 
@@ -595,7 +595,7 @@ End Using
 
 ### Deserializing pivot calculation items
 
-By default, the pivot grid control allows to deserialize the collection of pivot calculation items. The deserialization of pivot calculation items can be disabled by setting the [DeserializePivotCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializePivotCalculations.html) property to false.
+By default, the pivot grid control allows to deserialize the collection of pivot calculation items. The deserialization of pivot calculation items can be disabled by setting the [DeserializePivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializePivotCalculations) property to false.
 
 {% tabs %}
 
@@ -624,7 +624,7 @@ End Using
 
 ### Deserializing conditional formats
 
-By default, the pivot grid control allows to deserialize the conditional formats applied to the it. The deserialization of conditional formats can be disabled by setting the [DeserializeConditionalFormats](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializeConditionalFormats.html) property to false.
+By default, the pivot grid control allows to deserialize the conditional formats applied to the it. The deserialization of conditional formats can be disabled by setting the [DeserializeConditionalFormats](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializeConditionalFormats) property to false.
 
 {% tabs %}
 
@@ -653,7 +653,7 @@ End Using
 
 ### Deserializing expand and collapse state
 
-By default, the pivot grid control allows to deserialize the expand and collapse state of expanders in column and row headers. The deserialization of expand and collapse state of expanders can be disabled by setting the [DeserializeExpandCollapseState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions~DeserializeExpandCollapseState.html) property to false.
+By default, the pivot grid control allows to deserialize the expand and collapse state of expanders in column and row headers. The deserialization of expand and collapse state of expanders can be disabled by setting the [DeserializeExpandCollapseState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.Serialization.DeserializationOptions.html#Syncfusion_Windows_Forms_PivotAnalysis_Serialization_DeserializationOptions_DeserializeExpandCollapseState) property to false.
 
 {% tabs %}
 

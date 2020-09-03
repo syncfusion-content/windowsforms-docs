@@ -11,7 +11,7 @@ documentation: ug
 
 The WizardControl internally uses the GridBagLayout to arrange the navigation buttons.
 
-You could insert spaces around the buttons using the Insets property. The [GridBagLayout.GetConstraintsRef](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GridBagLayout~GetConstraintsRef.html) returns the object containing the constraints for that particular control. Specifying an Insets value as shown below to this, would create padding around this control.
+You could insert spaces around the buttons using the Insets property. The [GridBagLayout.GetConstraintsRef](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GridBagLayout.html#Syncfusion_Windows_Forms_Tools_GridBagLayout_GetConstraintsRef_System_Windows_Forms_Control_) returns the object containing the constraints for that particular control. Specifying an Insets value as shown below to this, would create padding around this control.
 
 {% tabs %}
 

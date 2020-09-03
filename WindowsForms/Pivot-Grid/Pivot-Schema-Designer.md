@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot Schema Designer
 
-The [Pivot schema designer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotSchemaDesigner.html) also known as pivot table field list allows you to add, rearrange, filter, and remove the pivot fields to show the data in the pivot grid exactly the way you desired.
+The [Pivot schema designer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotSchemaDesigner) also known as pivot table field list allows you to add, rearrange, filter, and remove the pivot fields to show the data in the pivot grid exactly the way you desired.
 
 Based on the data source bound to the pivot grid control, the pivot table field list will be automatically populated with field names. The pivot table field list provides an Excel like appearance and behavior.
 
@@ -22,7 +22,7 @@ The pivot schema designer consists of two sections such as follows:
 
 ## Fields section
 
-The fields section contains the list of pivot items that are present in the data source of pivot grid. The [PivotFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~PivotFields.html) property holds the collection of pivot items available in the fields section.
+The fields section contains the list of pivot items that are present in the data source of pivot grid. The [PivotFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotFields) property holds the collection of pivot items available in the fields section.
 
 Using this fields section, the pivot fields can be dynamically added or removed in the pivot grid. If the pivot field is checked in the fields section, then it will be added to the pivot grid. Simultaneously, if the pivot field is unchecked in the fields section, then it will be removed from the pivot grid.
 
@@ -43,25 +43,25 @@ The layout section is segregated into four sections as follows:
 
 ### Filters section
 
-The filters section is used to filter the items in pivot grid based on items selected in the report filter pop-up and it can be accessed using the [GridFilterList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GridFilterList.html) property available in the pivot grid control's `TableControl` property.
+The filters section is used to filter the items in pivot grid based on items selected in the report filter pop-up and it can be accessed using the [GridFilterList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GridFilterList) property available in the pivot grid control's `TableControl` property.
 
 The report filter pop-up can be launched by clicking the filter icon available in the right corner of each item in the filters section.
 
 ### Columns section
 
-The columns section is used to display the pivot column fields added to the pivot grid control and it can be accessed using the [GridColumnList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GridColumnList.html) property.
+The columns section is used to display the pivot column fields added to the pivot grid control and it can be accessed using the [GridColumnList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GridColumnList) property.
 
 ### Rows section
 
-The rows section is used to display the pivot row fields added to the pivot grid control and it can be accessed using the [GridRowList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GridRowList.html) property.
+The rows section is used to display the pivot row fields added to the pivot grid control and it can be accessed using the [GridRowList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GridRowList) property.
 
 ### Values section
 
-The values section is used to display the summary value fields added to the pivot grid control and it can be accessed using the [GridValueList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~GridValueList.html) property.
+The values section is used to display the summary value fields added to the pivot grid control and it can be accessed using the [GridValueList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_GridValueList) property.
 
 ## Enabling pivot table field list
 
-To show the pivot table field list integrated with the pivot grid control, the [ShowPivotTableFieldList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowPivotTableFieldList.html) property of the pivot grid should be enabled. By default, it is set to false.
+To show the pivot table field list integrated with the pivot grid control, the [ShowPivotTableFieldList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowPivotTableFieldList) property of the pivot grid should be enabled. By default, it is set to false.
 
 Refer to the following code sample to show the pivot table field with pivot grid control.
 
@@ -175,9 +175,9 @@ By default, the pivot grid control is updated for each and every action happened
 
 ### Enabling defer layout update
 
-The "[Defer Layout Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateCheckBox.html)" check box present at the bottom-left corner of the pivot schema designer should be checked to enable this feature. When this checkbox is checked, the "[Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~DeferLayoutUpdateButton.html)" button next to it will be enabled. Now, any operations can be performed on pivot fields without updating the pivot grid control. The pivot grid control will be updated only if the update button is clicked.
+The "[Defer Layout Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotSchemaDesigner_DeferLayoutUpdateCheckBox)" check box present at the bottom-left corner of the pivot schema designer should be checked to enable this feature. When this checkbox is checked, the "[Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotSchemaDesigner_DeferLayoutUpdateButton)" button next to it will be enabled. Now, any operations can be performed on pivot fields without updating the pivot grid control. The pivot grid control will be updated only if the update button is clicked.
 
-This support can also be be achieved programmatically by setting the [DeferLayoutUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~DeferLayoutUpdate.html) property of the pivot grid control.
+This support can also be be achieved programmatically by setting the [DeferLayoutUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_DeferLayoutUpdate) property of the pivot grid control.
 
 {% tabs %}
 
@@ -199,9 +199,9 @@ Me.pivotGridControl1.DeferLayoutUpdate = True
 
 ## Displaying calculations
 
-The pivot grid supports showing the calculation values in column or row. The "[Show Calculations as Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner~ShowCalculationsAsColumnCheckBox.html)" check box present at the bottom-left corner of the pivot schema designer should be checked or unchecked based on the requirement.
+The pivot grid supports showing the calculation values in column or row. The "[Show Calculations as Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotSchemaDesigner.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotSchemaDesigner_ShowCalculationsAsColumnCheckBox)" check box present at the bottom-left corner of the pivot schema designer should be checked or unchecked based on the requirement.
 
-This support can also be achieved programmatically by using the [ShowCalculationsAsColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ShowCalculationsAsColumns.html) property of the pivot grid control.
+This support can also be achieved programmatically by using the [ShowCalculationsAsColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ShowCalculationsAsColumns) property of the pivot grid control.
 
 {% tabs %}
 

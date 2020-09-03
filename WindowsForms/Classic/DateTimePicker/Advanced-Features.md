@@ -12,9 +12,9 @@ This section covers the below topics:
 
 ## Data Binding
 
-Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BindableValue.html) property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
+Essential Tools supports extensive DataBinding in DateTimePickerAdv using the Value and [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_BindableValue) property. The following example illustrates the DataBinding of the DataSet belonging to a DataGrid. 
 
-N> Always use [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BindableValue.html) property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
+N> Always use [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_BindableValue) property if dataset contains Null value. In cases where no Null value exists in the dataset, Value property can be used.
 
 To bind a DateTimePickerAdv, perform the following steps.
 
@@ -116,7 +116,7 @@ A sample which demonstrates this feature is available in the below sample instal
 
 ## Globalization
 
-DateTimePickerAdv supports globalization through [DateTimePickerAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Culture.html) and [UseCurrentCulture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~UseCurrentCulture.html) property.
+DateTimePickerAdv supports globalization through [DateTimePickerAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Culture) and [UseCurrentCulture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_UseCurrentCulture) property.
 
 
 {% tabs %}
@@ -141,44 +141,44 @@ Me.dateTimePickerAdv1.Culture = New System.Globalization.CultureInfo("hi-IN")
 
 ## Custom PopupWindow
 
-This section deals with creating a custom popup window for the DateTimePickerAdv control. We can implement [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface to drop down a custom window.
+This section deals with creating a custom popup window for the DateTimePickerAdv control. We can implement [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface to drop down a custom window.
 
-[IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) Interface Members
+[IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) Interface Members
 
-* [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Active.html)
+* [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Active)
 
-* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Culture.html)
+* [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Culture)
 
 **Appearance properties**
 
-* [CalendarFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarFont.html)
-* [CalendarForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarForeColor.html)
-* [CalendarMonthBackground](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~CalendarMonthBackground.html)
-* [TitleBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TitleBackColor.html)
-* [TitleForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TitleForeColor.html)
-* [TrailingForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~TrailingForeColor.html)
+* [CalendarFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_CalendarFont)
+* [CalendarForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_CalendarForeColor)
+* [CalendarMonthBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_CalendarMonthBackground)
+* [TitleBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_TitleBackColor)
+* [TitleForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_TitleForeColor)
+* [TrailingForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_TrailingForeColor)
 
 **Value properties** (MinDate, MaxDate, Value)</td><td>
 
-* [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~MinDate.html)
-* [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~MaxDate.html)
-* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Value.html)
+* [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_MinDate)
+* [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_MaxDate)
+* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Value)
 
 **Events**
 
-* [NullButtonDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~NullButtonDown_EV.html)
-* [SelectDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~SelectDate_EV.html)
-* [DateChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~DateChange_EV.html)
+* [NullButtonDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html)
+* [SelectDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html)
+* [DateChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html)
 
 ### Creating a Custom Popup Window for DateTimePickerAdv
 
-Follow the below steps to add a Windows [MonthCalendar](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer.html).
+Follow the below steps to add a Windows [MonthCalendar](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html).
 
 1) Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
 ![Drag a date time picker and popup control](Calendar_Images/Overview_img221.jpeg) 
 
-2) Create a control that implements the [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface using the below code.
+2) Create a control that implements the [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface using the below code.
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ End Class
 
 {% endtabs %}
 
-3) Set the [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar~Active.html) property of the MonthCalendar to True. Set the DateTimePickerAdv's [CustomPopupWindow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CustomPopupWindow.html) property to the PopupControlContainer control. Set the DateTimePickerAdv's [CustomDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CustomDrop.html) property to theTrue. 
+3) Set the [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Active) property of the MonthCalendar to True. Set the DateTimePickerAdv's [CustomPopupWindow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomPopupWindow) property to the PopupControlContainer control. Set the DateTimePickerAdv's [CustomDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomDrop) property to theTrue. 
 
 {% tabs %}
 
@@ -381,7 +381,7 @@ Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
 
 {% endtabs %}
 
-4) In the button click event, call the MyCustomCalendar's [FireNullEvent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdvCalendarAdapter~FireNullEvent.html) method. 
+4) In the button click event, call the MyCustomCalendar's [FireNullEvent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdvCalendarAdapter.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdvCalendarAdapter_FireNullEvent) method. 
 
 {% tabs %}
 
@@ -410,7 +410,7 @@ End Sub
 
 ![Custom popu up](Calendar_Images/Overview_img222.jpeg) 
 
-6) When you click the button, the DateTimePickerAdv will display the [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html) specified in [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~NullString.html) property.
+6) When you click the button, the DateTimePickerAdv will display the [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) specified in [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) property.
 
 ![Null string](Calendar_Images/Overview_img223.jpeg) 
 

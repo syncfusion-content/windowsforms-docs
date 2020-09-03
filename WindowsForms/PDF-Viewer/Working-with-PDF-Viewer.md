@@ -134,7 +134,7 @@ N/A</td></tr>
 
 ## Viewing PDF Files 
 
-A PDF can be loaded into the PdfViewerControl either through the open file button available in the toolbar or through the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String).html) method. It also requests passwords to open encrypted documents.
+A PDF can be loaded into the PdfViewerControl either through the open file button available in the toolbar or through the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_) method. It also requests passwords to open encrypted documents.
 
 {% tabs %}
 {%highlight c#%}
@@ -163,7 +163,7 @@ pdfViewerControl1.Load("Sample.pdf")
 {%endhighlight%}
 {% endtabs %}
 
-You can load an encrypted document by using the overload in the [Load](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~Load(String,String).html) method.
+You can load an encrypted document by using the overload in the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_System_String_) method.
 
 {% tabs %}
 {%highlight c#%}
@@ -195,7 +195,7 @@ pdfViewerControl1.Load("Sample.pdf", "password")
 
 ### Exporting pages of PDF document as raster images
 
-Essential PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~ExportAsImage(Int32).html) method. This option helps to convert a PDF into an image.
+Essential PdfViewerControl allows selected pages to be exported as raster images. Exporting can be done using the [ExportAsImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsImage_System_Int32_) method. This option helps to convert a PDF into an image.
 
 {% tabs %}
 {%highlight c#%}
@@ -238,7 +238,7 @@ Dim image() As Bitmap = pdfViewerControl1.ExportAsImage(0, 3)
 
 ### Exporting pages of PDF document as Vector Images
 
-Exporting pages of PDF document as vector images can be done using the [ExportAsMetafile](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl~ExportAsMetafile(Int32).html) method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
+Exporting pages of PDF document as vector images can be done using the [ExportAsMetafile](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_ExportAsMetafile_System_Int32_) method. The following code sample demonstrates how a PDF document can be exported as a Metafile.
 
 {% tabs %}
 {%highlight c#%}

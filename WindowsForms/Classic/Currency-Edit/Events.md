@@ -11,7 +11,7 @@ documentation: ug
 
 ## CalculatorClosing Event
 
-[CalculatorClosing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit~CalculatorClosing_EV.html) event is handled when the calculator is closing after the specified button is clicked.
+[CalculatorClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is handled when the calculator is closing after the specified button is clicked.
 
 {% tabs %}
 {% highlight C# %}
@@ -31,7 +31,7 @@ End Sub
 
 ## CalculatorShowing Event
 
-This [CalculatorShowing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit~CalculatorShowing_EV.html) event is raised before the calculator popup is displayed. The Cancel property of this [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=netframework-4.7.2) lets  you to cancel the popup display as follows.
+This [CalculatorShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is raised before the calculator popup is displayed. The Cancel property of this [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=netframework-4.7.2) lets  you to cancel the popup display as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,7 +51,7 @@ End Sub
 
 ## DecimalValueChanged Event
 
-This [DecimalValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit~DecimalValueChanged_EV.html) event is raised when [DecimalValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CurrencyEdit~DecimalValue.html) property is changed.
+This [DecimalValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) event is raised when [DecimalValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_DecimalValue) property is changed.
 
 {% tabs %}
 {% highlight C# %}

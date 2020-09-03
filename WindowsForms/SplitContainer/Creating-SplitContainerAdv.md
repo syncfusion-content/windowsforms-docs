@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
+This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -23,7 +23,7 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html).
+Create a new Windows Forms project in Visual Studio to display the [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html).
 
 ## Adding control via designer
 
@@ -107,7 +107,7 @@ Me.Controls.Add(SplitContainerAdv1)
 
 **Add controls to SplitContainerAdv**
 
-Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel1.html) or [Panel2](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Panel2.html) of the SplitContainerAdv.
+Create instance of the required Controls and add it to panels such as [Panel1](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel1) or [Panel2](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel2) of the SplitContainerAdv.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ Me.splitContainerAdv1.Panel2.Controls.Add(Me.label2)
 
 ## Splitter orientation
 
-The SplitContainerAdv Panels can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SplitContainerAdv~Orientation.html) property.
+The SplitContainerAdv Panels can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Orientation) property.
 
 {% tabs %}
 {% highlight C# %}

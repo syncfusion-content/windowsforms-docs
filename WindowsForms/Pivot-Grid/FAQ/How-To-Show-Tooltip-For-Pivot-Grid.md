@@ -11,7 +11,7 @@ documentation: ug
 
 The pivot grid control provides support to enable or disable the tooltip for individual cells that include column header cells, row header cells, value cell cells, summary cells and summary header cells.
 
-To enable the tooltip for pivot grid cells, the [CellTipText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellTipText.html) property of required cell's style need to be assigned. 
+To enable the tooltip for pivot grid cells, the [CellTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellTipText) property of required cell's style need to be assigned. 
 
 Refer to the below code sample to enable tooltip for value cells in the pivot grid control.
 

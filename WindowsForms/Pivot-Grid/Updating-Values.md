@@ -13,7 +13,7 @@ Pivot grid provides support to update the cell values in real time. This support
 
 ## Enabling updating
 
-Cell values can be updated at run time by using the [EnableUpdating](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableUpdating.html) property of pivot grid.
+Cell values can be updated at run time by using the [EnableUpdating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableUpdating) property of pivot grid.
 
 Refer to the below code sample to enable the run time updating in pivot grid control.
 
@@ -35,7 +35,7 @@ Me.pivotGridControl1.EnableUpdating = True
 
 ### Throttling update speed
 
-While updating the pivot grid control, users can throttle the updating speed by using the [ThrottleUpdateRate](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotUpdatingManager~ThrottleUpdateRate.html) property of [update manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~UpdateManager.html). For example, if the throttle update rate is specified as zero milliseconds, then it indicates to refresh the UI without any delay. Throttling the refresh rate can minimize the CPU usage. The update rate values of 300 to 500 milliseconds may give lower CPU usage.
+While updating the pivot grid control, users can throttle the updating speed by using the [ThrottleUpdateRate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotUpdatingManager.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotUpdatingManager_ThrottleUpdateRate) property of [update manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_UpdateManager). For example, if the throttle update rate is specified as zero milliseconds, then it indicates to refresh the UI without any delay. Throttling the refresh rate can minimize the CPU usage. The update rate values of 300 to 500 milliseconds may give lower CPU usage.
 
 Refer to the below code sample to set the update rate as 300 milliseconds through update manager.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Calendar Value
 
-In the Popup calendar, today's date will be selected by default, at run time. This default date can be changed using [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Value.html) property. You can also specify the range of values / dates that can be selected at run time using the [MaxValue] and [MinValue]() properties of DateTimePickerAdv. 
+In the Popup calendar, today's date will be selected by default, at run time. This default date can be changed using [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Value) property. You can also specify the range of values / dates that can be selected at run time using the [MaxValue] and [MinValue]() properties of DateTimePickerAdv. 
 
 {% tabs %}
 

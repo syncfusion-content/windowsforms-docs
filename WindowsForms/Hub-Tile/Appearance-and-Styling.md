@@ -44,7 +44,7 @@ Me.HubTile1.Banner.TextColor  = Color.White
 {% endtabs %}
 
 
-N> Banner [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Text.html) properties are applicable only for DefaultTile and RotateTile types.
+N> Banner [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Text) properties are applicable only for DefaultTile and RotateTile types.
 
 
 ## Banner icon
@@ -64,11 +64,11 @@ Me.HubTile1.BannerIcon = Me.ImageListAdv1.Images[0]
 {% endhighlight %}
 {% endtabs %}
 
-N> [BannerIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BannerIcon.html) customization is applicable only for DefaultTile type.
+N> [BannerIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_BannerIcon) customization is applicable only for DefaultTile type.
 
 ## Banner color
 
-HubTileBanner color can be changed using the [BannerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BannerColor.html) property.
+HubTileBanner color can be changed using the [BannerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_BannerColor) property.
 
 ![Banner color](Concept-and-Features_images/Concept-and-Features_img11.png)
 
@@ -84,7 +84,7 @@ Me.HubTile1.BannerColor= Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-N> [BannerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BannerColor.html) is applicable only for DefaultTile and RotateTile types.
+N> [BannerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_BannerColor) is applicable only for DefaultTile and RotateTile types.
 
 
 ## Selection marker
@@ -108,7 +108,7 @@ N> Selection Marker is applicable only for DefaultTile type.
 
 ## Selection marker border color
 
-In HubTile, Selection Marker Border color can be customized using the [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SelectionMarkerColor.html).
+In HubTile, Selection Marker Border color can be customized using the [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SelectionMarkerColor).
 
 {% tabs %}
 {% highlight C# %} 
@@ -119,11 +119,11 @@ Me.HubTile1.SelectionMarkerColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-N> [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SelectionMarkerColor.html) is applicable only for DefaultTile type.
+N> [SelectionMarkerColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SelectionMarkerColor) is applicable only for DefaultTile type.
 
 ## Hovered border color
 
-In HubTile, border highlight is rendered once it is focused. Its appearance can be customized using the [HoveredBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~HoveredBorderColor.html) property.
+In HubTile, border highlight is rendered once it is focused. Its appearance can be customized using the [HoveredBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_HoveredBorderColor) property.
 
 The following code example demonstrates how you can customize the border color of HubTile on mouse hovering.
 
@@ -149,7 +149,7 @@ Me.HubTile1.EnableHoverColor= True
 
 ## Expand on hover
 
-HubTile can be expanded once it is focused. It can be enabled by using the [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ExpandOnHover.html) property.
+HubTile can be expanded once it is focused. It can be enabled by using the [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ExpandOnHover) property.
 
 {% tabs %}
 {% highlight C# %} 
@@ -160,12 +160,12 @@ Me.HubTile1.ExpandOnHover= True
 {% endhighlight %}
 {% endtabs %}
 
-N> [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ExpandOnHover.html) is applicable only for DefaultTile type.
+N> [ExpandOnHover](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_ExpandOnHover) is applicable only for DefaultTile type.
 
 
 ## Tile press behavior
 
-Tile sliding effect occurs on mouse click and based on the position of the mouse pointer. The [EnableTileSlideEffect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~EnableTileSlideEffect.html) property allows you to enable or disable the sliding effect in HubTile.
+Tile sliding effect occurs on mouse click and based on the position of the mouse pointer. The [EnableTileSlideEffect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_EnableTileSlideEffect) property allows you to enable or disable the sliding effect in HubTile.
 
 {% tabs %}
 {% highlight C# %} 
@@ -176,6 +176,6 @@ Me.HubTile1.EnableTileSlideEffect = True
 {% endhighlight %}
 {% endtabs %}
 
-N> [EnableTileSlideEffect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~EnableTileSlideEffect.html) is applicable only for DefaultTile and PulsingTile types.
+N> [EnableTileSlideEffect](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_EnableTileSlideEffect) is applicable only for DefaultTile and PulsingTile types.
 
 ![Tile press behavior](Concept-and-Features_images/Concept-and-Features_img19.png)

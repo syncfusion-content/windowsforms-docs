@@ -111,7 +111,7 @@ RotateTile – This tile rotates itself in transition and direction.
 
 PulsingTile – This tile zooms in and out and translates its image.
 
-You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~TileType.html) property of HubTileControl.
+You can customize the types of tile using [TileType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_TileType) property of HubTileControl.
 
 {% tabs %}
 {% highlight C# %}
@@ -150,7 +150,7 @@ Me.HubTile3.TileType = HubTileType.RotateTile
 
 ## Set header and footer
 
-You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Title.html) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~Footer.html) property of HubTile.
+You can define the header and footer for tile by setting the [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Title) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_Footer) property of HubTile.
 
 {% tabs %}
 {% highlight C# %}
@@ -222,7 +222,7 @@ In HubTile, image transition can be performed at specified intervals and in diff
 *	Left to Right
 *	Right to Left
 
-You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SlideTransition.html) properties of HubTile. 
+You can customize the transition direction by setting [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) properties of HubTile. 
 
 {% tabs %}
 {% highlight C# %}

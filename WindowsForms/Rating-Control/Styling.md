@@ -13,7 +13,7 @@ Styling of shapes can be done either by using predefined visual styles or by [Ba
 
 ## Built-in
 
-Rating control supports predefined visual styles such as Default, Office2007, Office2010, Metro, Office2016ColorFul, Office2016DarkGray, Office2016White, Office2016Black  for Office Styles. The style can be set by the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Style.html) property.
+Rating control supports predefined visual styles such as Default, Office2007, Office2010, Metro, Office2016ColorFul, Office2016DarkGray, Office2016White, Office2016Black  for Office Styles. The style can be set by the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Style) property.
 
 {% highlight C# %}
 
@@ -51,7 +51,7 @@ Me.ratingControl1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.OfficeColor
 
 ## Custom
 
-The properties [ItemHighlightStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemHighlightColor.html), [ItemHighlightEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemHighlightEndColor.html), [ItemSelectionStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemSelectionStartColor.html), [ItemSelectionEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemSelectionEndColor.html) are applied only if the [ApplyGradientColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ApplyGradientColors.html) property is enabled.
+The properties [ItemHighlightStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemHighlightColor), [ItemHighlightEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemHighlightEndColor), [ItemSelectionStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemSelectionStartColor), [ItemSelectionEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemSelectionEndColor) are applied only if the [ApplyGradientColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ApplyGradientColors) property is enabled.
 
 {% highlight C# %}
 

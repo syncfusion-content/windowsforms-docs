@@ -11,7 +11,7 @@ documentation: ug
 
 ## Setting maximum drop-down items
 
-Maximum number of items to be shown in the drop-down control can be customized by using the [MaxDropDownItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~MaxDropDownItems.html) property.
+Maximum number of items to be shown in the drop-down control can be customized by using the [MaxDropDownItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_MaxDropDownItems) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ sfComboBox1.MaxDropDownItems = 4
 
 ## Disabling the drop-down resizing
 
-By default, the drop-down control can be resized by mouse clicking and dragging the gripper portion. The drop-down resizing can be disabled by using the [AllowDropDownResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfComboBox~AllowDropDownResize.html) property.
+By default, the drop-down control can be resized by mouse clicking and dragging the gripper portion. The drop-down resizing can be disabled by using the [AllowDropDownResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AllowDropDownResize) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ sfComboBox1.AllowDropDownResize = False
 
 ## Cancel the drop-down opening
 
-The [DropDownOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DropDownOpeningEventArgs.html) event can be used to cancel the drop-down opening by setting the `e.Cancel` property to `true`.
+The [DropDownOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DropDownOpeningEventArgs.html) event can be used to cancel the drop-down opening by setting the `e.Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -61,7 +61,7 @@ End Sub
 
 ## Cancel the drop-down closing
 
-The [DropDownClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.Events.DropDownClosingEventArgs.html) event can be used to cancel the drop-down closing by setting the `e.Cancel` property to `true`.
+The [DropDownClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DropDownClosingEventArgs.html) event can be used to cancel the drop-down closing by setting the `e.Cancel` property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ End Sub
 
 ## Load custom control in drop-down
 
-SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowHeader.html) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~ShowFooter.html) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~HeaderControl.html) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfListView.WinForms~Syncfusion.WinForms.ListView.SfListView~FooterControl.html) properties.
+SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.
 
 {% tabs %}
 {% highlight c# %}

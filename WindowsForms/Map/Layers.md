@@ -142,7 +142,7 @@ MultiLayer
 
 ## Layout type
 
-[`LayoutType`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~LayoutType.html) defines the way to project the map. This can be categorized into the following types:
+[`LayoutType`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_LayoutType) defines the way to project the map. This can be categorized into the following types:
 
 1. Default
 2. Tile
@@ -206,7 +206,7 @@ In `Tile` layout, maps scale value is maintained in every direction around a poi
 
 ## ItemSource
 
-The [`ItemSource`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~ItemSource.html) property accepts collection values as input. For example, the list of objects can be provided as input.
+The [`ItemSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ItemSource) property accepts collection values as input. For example, the list of objects can be provided as input.
 
 {% tabs %}
 
@@ -348,7 +348,7 @@ public class Country : INotifyPropertyChanged
 
 ## ShapeIDPath
 
-[`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~ShapeIDPath.html) is the string type property that is used to refer to the ID of a shape from the ItemSource. The ItemSource property must have a property with name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
+[`ShapeIDPath`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ShapeIDPath) is the string type property that is used to refer to the ID of a shape from the ItemSource. The ItemSource property must have a property with name of the ShapeIDPath. The ShapeIDPath and the ShapeIDTableField properties are related to each other (refer to ShapeIDTableField for more details).
 
 {% tabs %}
 

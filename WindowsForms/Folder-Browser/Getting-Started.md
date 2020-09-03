@@ -48,7 +48,7 @@ To add the control manually in C#, follow the given steps:
   {% endhighlight %}
   {% endtabs %} 
 
-**3.** Create a FolderBrowser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~ShowDialog().html) method to display the FolderBrowser dialog.
+**3.** Create a FolderBrowser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_ShowDialog().html) method to display the FolderBrowser dialog.
 
 {% tabs %}
 {% highlight C# %}
@@ -87,7 +87,7 @@ Me.folderBrowser1.ShowDialog()
 
 ## Auto complete file path
 
-The FolderBrowser control supports editing folder location and auto-complete, which displays available folder paths in a drop-down list to choose by setting the folder browser [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.FolderBrowser~Style.html) to ShowTextBox.
+The FolderBrowser control supports editing folder location and auto-complete, which displays available folder paths in a drop-down list to choose by setting the folder browser [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) to ShowTextBox.
 
 {% tabs %}
 {% highlight C# %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Which event will raise when the date in the DateTimePickerAdv is changed?
 
-Calendar [DateChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DateChanged_EV.html) event is raised when a date in the DateTimePickerAdv is changed using the keys, or using the mouse.
+Calendar [DateChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) event is raised when a date in the DateTimePickerAdv is changed using the keys, or using the mouse.
 
 {% tabs %}
 

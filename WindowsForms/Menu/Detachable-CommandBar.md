@@ -9,7 +9,7 @@ documentation: ug
 
 # Detachable Command Bar
 
-The [`CommandBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CommandBar.html) instance can be added to the menu bar and can be set to detach from the parent menu bar.
+The [`CommandBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) instance can be added to the menu bar and can be set to detach from the parent menu bar.
 
 ## Adding command bar via designer
 

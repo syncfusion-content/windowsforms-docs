@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Edit.Windows~Syncfusion.Windows.Forms.Edit.EditControl.html) is a powerful text editor control to create interactive code editor applications with its unique feature set. It has many efficient features such as editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, and custom language configuration as in Microsoft Visual Studio Editor.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) is a powerful text editor control to create interactive code editor applications with its unique feature set. It has many efficient features such as editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, and custom language configuration as in Microsoft Visual Studio Editor.
 
 ## Key features 
 

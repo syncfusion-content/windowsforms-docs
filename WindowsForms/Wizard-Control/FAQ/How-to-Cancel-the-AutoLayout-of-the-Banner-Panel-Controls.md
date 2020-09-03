@@ -9,7 +9,7 @@ documentation: ug
 
 # How to cancel the AutoLayout of the banner panel controls
 
-Wizard Control automatically repositions child controls parts by itself. The AutoLayout of controls in the banner (gradient panel) can be canceled using [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~BannerControlLocationChanging_EV.html) event. You could change the title and description label control to a desired location and handle this event to cancel the auto layout of those controls as follows.
+Wizard Control automatically repositions child controls parts by itself. The AutoLayout of controls in the banner (gradient panel) can be canceled using [BannerControlLocationChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) event. You could change the title and description label control to a desired location and handle this event to cancel the auto layout of those controls as follows.
 
 {% tabs %}
 

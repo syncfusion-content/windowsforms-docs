@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RadialSlider.html) control is an advanced control, and it is capable of calculating the sequence value with the sequence circle sector. It contains additional features such as different visual styles, and it supports to modify the minimum and maximum values.
+The [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control is an advanced control, and it is capable of calculating the sequence value with the sequence circle sector. It contains additional features such as different visual styles, and it supports to modify the minimum and maximum values.
 
 ![Radial slider for Windows Forms to select numeric values](Overview_images/Overview_img1.png)
 

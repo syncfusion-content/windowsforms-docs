@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Globalization
 
-MonthCalendarAdv supports globalization through [MonthCalendarAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Culture.html) property.
+MonthCalendarAdv supports globalization through [MonthCalendarAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_Culture) property.
 
 ![Globalization](CalendarDateTime_images/Overview_img171.jpeg)
 

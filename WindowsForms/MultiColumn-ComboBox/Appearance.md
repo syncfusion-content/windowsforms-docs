@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Windows Forms MultiColumnComboBox
 
-Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox~Style.html) property. The various styles are,
+Visual styles for the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control can be specified using [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_Style) property. The various styles are,
 
 * Office2003
 * OfficeXP
@@ -42,7 +42,7 @@ Me.multiColumnComboBox1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office20
 
 ![Appearance](Overview_images/Overview_img329.jpeg) 
 
- Code snippet for setting "Office2016Colorful" style for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html)
+ Code snippet for setting "Office2016Colorful" style for [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html)
 
 {% tabs %}
 {% highlight c# %}
@@ -60,7 +60,7 @@ Me.multiColumnComboBox1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016C
 
 ## Custom colors
 
-We can also apply custom colors to the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control by setting `Office2007ColorTheme` to `Managed` and specifying the custom color through the `ApplyManagedColors` method as follows.
+We can also apply custom colors to the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) control by setting `Office2007ColorTheme` to `Managed` and specifying the custom color through the `ApplyManagedColors` method as follows.
 
 {% tabs %}
 {% highlight c# %}

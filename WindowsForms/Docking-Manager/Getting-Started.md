@@ -63,7 +63,7 @@ To add control manually in C#, follow the given steps:
    * Syncfusion.Tools.Base.dll
    * Syncfusion.Tools.Windows.dll
 
-2. Create [DockingManager](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
+2. Create [DockingManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) control instance and add it to the component list.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ Me.dockingManager1.HostControl = Me
 
 ## Add dock child window
 
-Docking can be enabled to any controls by invoking [SetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetEnableDocking.html) with the corresponding docking manager. Here, four panels are added to the form and transformed to a docking window.
+Docking can be enabled to any controls by invoking [SetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetEnableDocking_System_Windows_Forms_Control_System_Boolean_) with the corresponding docking manager. Here, four panels are added to the form and transformed to a docking window.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ Me.dockingManager1.SetEnableDocking(panel4, True)
 
 ### Identify whether the panel is docking or not
 
-The [GetEnableDocking](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetEnableDocking.html) function of docking manager helps to determine whether the child window is docking or not.
+The [GetEnableDocking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetEnableDocking_System_Windows_Forms_Control_) function of docking manager helps to determine whether the child window is docking or not.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ Console.Write("DockWindow Header:" + Me.dockingManager1.GetEnableDocking(panel1)
 
 ### Change header of child window
 
-The [SetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetDockLabel.html) function helps to set the label for a child window.
+The [SetDockLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockLabel_System_Windows_Forms_Control_System_String_) function helps to set the label for a child window.
 
 {% tabs %}
 
@@ -229,7 +229,7 @@ Me.dockingManager1.SetDockLabel(panel4, "Output");
 
 #### Get label of the dock panel
 
-The [GetDockLabel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~GetDockLabel.html) function helps to get the label of the child window.
+The [GetDockLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetDockLabel_System_Windows_Forms_Control_) function helps to get the label of the child window.
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide stat
 
 ## Change dock side
 
-The [DockControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~DockControl.html) function helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
+The [DockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControl_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockingStyle_System_Int32_) function helps to dock a panel at the required side using the [DockingStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingStyle.html) argument.
 
 Set the `DockingStyle` value to right for docking the “Solution Explorer” panel on the right.
 
@@ -380,7 +380,7 @@ Me.dockingManager1.DockControl(Me.panel4, panel1, Syncfusion.Windows.Forms.Tools
 
 ## Make MDI child
 
-The [SetAsMDIChild](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SetAsMDIChild.html) function helps to set the docking window to the MDIChild window in the docking manager. Also, you can set the docked control as an MDI child in an easy method by using the `MDI Child` option in the context menu.
+The [SetAsMDIChild](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetAsMDIChild_System_Windows_Forms_Control_System_Boolean_) function helps to set the docking window to the MDIChild window in the docking manager. Also, you can set the docked control as an MDI child in an easy method by using the `MDI Child` option in the context menu.
 
 N> To enable MDI functionalities in the docking manager, the `IsMdIContainer` property of its parent form should be `true`.
 
@@ -415,7 +415,7 @@ Me.dockingManager1.SetAsMDIChild(panel2, True)
 
 ## Serialize dock windows
 
-The PersistState feature helps to save the current layout of the docking manager automatically to isolated storage while closing the form. The dock state can also be saved by calling the [SaveDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~SaveDockState.html) function.
+The PersistState feature helps to save the current layout of the docking manager automatically to isolated storage while closing the form. The dock state can also be saved by calling the [SaveDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SaveDockState) function.
 
 {% tabs %}
 
@@ -455,7 +455,7 @@ Me.dockingManager.SaveDockState(serializer, this.listBox1)
 {% endtabs %}
 
 
-The saved state can be reloaded by calling the [LoadDockState](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DockingManager~LoadDockState.html) function, whenever it is required to load the states.
+The saved state can be reloaded by calling the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) function, whenever it is required to load the states.
 
 {% tabs %}
 

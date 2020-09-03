@@ -23,7 +23,7 @@ The FontListBox control can be added via designer using the following steps:
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) Add the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) Add the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form.
+4) Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ private void FontListBox1_SelectedIndexChanged(Object sender, System.EventArgs e
 
 ## Selection mode
 
-At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected based on the selection mode specified in the [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
+At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected based on the selection mode specified in the [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
 
 The following options are available in the FontListBox control.
 

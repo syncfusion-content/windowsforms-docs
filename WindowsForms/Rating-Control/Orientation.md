@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-Control rendering can be done either in a vertical or in a horizontal position using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Orientation.html) property. 
+Control rendering can be done either in a vertical or in a horizontal position using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Orientation) property. 
 
 {% tabs %}
 {% highlight C# %}

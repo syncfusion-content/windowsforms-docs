@@ -47,7 +47,7 @@ spreadsheet.UnhideSheet("Sheet 2");
 
 ## Rename a sheet programmatically
 
-Spreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RenameSheet.html) method.
+Spreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_RenameSheet_System_String_System_String_) method.
 
 {% tabs %}
 	

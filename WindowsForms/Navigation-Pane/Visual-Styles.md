@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Visual styles
 
-The GroupBar control for Windows Forms Supports for below listed [Visual Styles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~VisualStyle.html). You can easily modify the look using the built-in visual styles.
+The GroupBar control for Windows Forms Supports for below listed [Visual Styles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_VisualStyle). You can easily modify the look using the built-in visual styles.
 
 The styles are built-in for GroupBar.
 

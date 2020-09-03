@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-Pivot grid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning data sources through [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~ItemSource.html) property.
+Pivot grid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning data sources through [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) property.
 
 ## Binding data from IEnumerable list
 
@@ -418,7 +418,7 @@ End Namespace
 
 ## Refreshing pivot grid
 
-Using the [Refresh](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~Refresh(Boolean).html) method of [TableControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~TableControl.html) property in pivot grid, the pivot grid control can be refreshed with or without repopulating the pivot engine.
+Using the [Refresh](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControlBase_Refresh_System_Boolean_) method of [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_TableControl) property in pivot grid, the pivot grid control can be refreshed with or without repopulating the pivot engine.
 
 Refer to the below code sample for refreshing the pivot grid without repopulating the pivot engine.
 
@@ -440,11 +440,11 @@ Me.pivotGridControl1.TableControl.Refresh(False)
 
 ## Events
 
-* The **[ItemSourceChanged](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~ItemSourceChanged_EV.html)** event occurs when the data source is changed by using the **ItemSource** property of pivot grid. This event receives two arguments namely sender, that handles the pivot grid and [ItemSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html), that contains the event arguments. The ItemSourceChangedEventArgs object contains the following properties:
+* The **[ItemSourceChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the data source is changed by using the **ItemSource** property of pivot grid. This event receives two arguments namely sender, that handles the pivot grid and [ItemSourceChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html), that contains the event arguments. The ItemSourceChangedEventArgs object contains the following properties:
 
-    * [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~OldValue.html) - gets the value of old data source.
-    * [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs~NewValue.html) - gets the value of new data source.
+    * [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html#Syncfusion_Windows_Forms_PivotAnalysis_ItemSourceChangedEventArgs_OldValue) - gets the value of old data source.
+    * [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.ItemSourceChangedEventArgs.html#Syncfusion_Windows_Forms_PivotAnalysis_ItemSourceChangedEventArgs_NewValue) - gets the value of new data source.
 
-* The **[DataRefreshing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~DataRefreshing_EV.html)** event occurs while starting to refresh the values of pivot grid control. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshingEventArgs.html), that contains the event arguments.
+* The **[DataRefreshing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs while starting to refresh the values of pivot grid control. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshingEventArgs.html), that contains the event arguments.
 
-* The **[DataRefreshed](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~DataRefreshed_EV.html)** event occurs when the refreshing gets completed by populating its values. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshedEventArgs.html), that contains the event arguments.
+* The **[DataRefreshed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the refreshing gets completed by populating its values. This event receives two arguments namely sender, that handles the pivot grid and [DataRefreshedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.DataRefreshedEventArgs.html), that contains the event arguments.

@@ -13,7 +13,7 @@ The `SfCalendar` control provides globalization support to design and develop a 
 
 ## Change culture
 
-The culture information can be applied to the calendar by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~Culture.html) property. The following code example illustrates how to change the culture for the calendar:
+The culture information can be applied to the calendar by using the [Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_Culture) property. The following code example illustrates how to change the culture for the calendar:
 
 {% tabs %}
 

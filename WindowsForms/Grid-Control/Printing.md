@@ -466,7 +466,7 @@ Me.gridControl1.Properties.PrintColHeader = False
 {% endtabs %}
 
 ### Column Header on each page
-Column headers can be printed on each page by enabling the `AllowRepeatHeaders` property of [GridPrintInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridPrintInfo.html).
+Column headers can be printed on each page by enabling the `AllowRepeatHeaders` property of [GridPrintInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintInfo.html).
 
 {% tabs %}
 {% highlight c# %}

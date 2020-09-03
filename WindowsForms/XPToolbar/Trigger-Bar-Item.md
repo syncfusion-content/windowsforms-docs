@@ -9,10 +9,10 @@ documentation: ug
 
 # Trigger Bar Items
 
-On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Click_EV.html) event for further operations.
+On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event for further operations.
 
 > **NOTE**          
-> Bar items can also be operated through keyboard shortcuts. The [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Click_EV.html) event will be invoked when pressing the shortcut keys.   
+> Bar items can also be operated through keyboard shortcuts. The [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event will be invoked when pressing the shortcut keys.   
 
 
 The below code snippet shows how to append click event for bar items through code behind.

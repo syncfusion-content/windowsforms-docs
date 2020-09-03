@@ -9,7 +9,7 @@ documentation: ug
 
 # RadialGauge
 
-[RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
+[RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 
 ![Radial Gauge for Windows Forms](Radial-Gauge_images/Radial-Gauge_img1.png)
 
@@ -34,7 +34,7 @@ documentation: ug
 
 **Getting started**
 
-This section describes how to add [RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -95,7 +95,7 @@ Imports Syncfusion.Windows.Forms.Gauge
 
 {% endtabs %} 
 
-**Step 3** - Create [RadialGauge](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control instance and add it to the form.
+**Step 3** - Create [RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control instance and add it to the form.
 
 {% tabs %}
 
@@ -142,7 +142,7 @@ This section illustrates the features of RadialGauge with images and sample code
 
 #### RadialGauge Frames
 
-This section explains the appearance of the RadialGauge. RadialGauge has four types of frame and it can be applied using the [FrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~FrameType.html) property. 
+This section explains the appearance of the RadialGauge. RadialGauge has four types of frame and it can be applied using the [FrameType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_FrameType) property. 
 
 * FullCircle
 * HalfCircle
@@ -287,17 +287,17 @@ The following screenshot illustrates the RadialGauge with Fill FrameType and the
 
 The following properties used to customize the appearance of RadialGauge control.
 
-* [ShowBackgroundFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowBackgroundFrame.html)
-* [BackgroundGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~BackgroundGradientStartColor.html)
-* [BackgroundGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~BackgroundGradientEndColor.html)
-* [InnerFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~InnerFrameGradientStartColor.html)
-* [InnerFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~InnerFrameGradientEndColor.html)
-* [OuterFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~OuterFrameGradientStartColor.html)
-* [OuterFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~OuterFrameGradientEndColor.html)
-* [GaugeArcColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~GaugeArcColor.html)
-* [GaugeLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~GaugeLableColor.html)
-* [GaugeValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~GaugeValueColor.html)
-* [ShowGaugeValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowGaugeValue.html)
+* [ShowBackgroundFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_ShowBackgroundFrame)
+* [BackgroundGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_BackgroundGradientStartColor)
+* [BackgroundGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_BackgroundGradientEndColor)
+* [InnerFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_InnerFrameGradientStartColor)
+* [InnerFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_InnerFrameGradientEndColor)
+* [OuterFrameGradientStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_OuterFrameGradientStartColor)
+* [OuterFrameGradientEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_OuterFrameGradientEndColor)
+* [GaugeArcColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_GaugeArcColor)
+* [GaugeLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_GaugeLableColor)
+* [GaugeValueColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_GaugeValueColor)
+* [ShowGaugeValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_ShowGaugeValue)
 
 ![Radial Gauge without frame](Radial-Gauge_images/Radial-Gauge_img6.png)
 
@@ -318,10 +318,10 @@ Scales are used to control element placement and value ranges.
 
 You can customize scales added to the RadialGauge using the properties listed in the following table:
 
-* [ShowScaleLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowScaleLabel.html)
-* [ScaleLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ScaleLabelColor.html)
-* [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~LabelPlacement.html)
-* [TextOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~TextOrientation.html)
+* [ShowScaleLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_ShowScaleLabel)
+* [ScaleLabelColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_ScaleLabelColor)
+* [LabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_LabelPlacement)
+* [TextOrientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_TextOrientation)
 
 ![Label placed outer relative to ticks in Radial Gauge](Radial-Gauge_images/Radial-Gauge_img7.png)
 
@@ -342,17 +342,17 @@ Me.radialGauge1.TextOrientation = Syncfusion.Windows.Forms.Gauge.TextOrientation
 
 ### Ticks
 
-Two types of ticks can be added to the RadialGauge control scale. Major tick marks are the primary scale indicators. Minor tick marks and Inter tick marks are the secondary scale indicators that fall between the major ticks. The ticks can be placed by setting the [TickPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~TickPlacement.html) property. Ticks can be placed inside or outside the arc.
+Two types of ticks can be added to the RadialGauge control scale. Major tick marks are the primary scale indicators. Minor tick marks and Inter tick marks are the secondary scale indicators that fall between the major ticks. The ticks can be placed by setting the [TickPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_TickPlacement) property. Ticks can be placed inside or outside the arc.
 
 The following table lists the important properties that can be used to customize the radial tick marks. This is done to represent the scale with meaningful markers and labels.
 
-* [TickPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~TickPlacement.html)
-* [MajorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MajorTickMarkColor.html)
-* [MajorTickMarkHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MajorTickMarkHeight.html)
-* [MinorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MinorTickMarkColor.html)
-* [MinorTickMarkHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MinorTickMarkHeight.html)
-* [InterLinesColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~InterLinesColor.html)
-* [MinorInnerLinesHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MinorInnerLinesHeight.html)
+* [TickPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_TickPlacement)
+* [MajorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MajorTickMarkColor)
+* [MajorTickMarkHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MajorTickMarkHeight)
+* [MinorTickMarkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MinorTickMarkColor)
+* [MinorTickMarkHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MinorTickMarkHeight)
+* [InterLinesColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_InterLinesColor)
+* [MinorInnerLinesHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MinorInnerLinesHeight)
 
 The following code example illustrates how to add major and minor ticks to the radial scale.
 
@@ -386,9 +386,9 @@ Me.radialGauge1.MinorInnerLinesHeight = 6
 
 You can easily customize the style of the needle and the positions of the sub elements within the RadialGauge through the following enumerations.
 
-* [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~NeedleColor.html)
-* [NeedleStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~NeedleStyle.html)
-* [ShowNeedle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~ShowNeedle.html)
+* [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_NeedleColor)
+* [NeedleStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_NeedleStyle)
+* [ShowNeedle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_ShowNeedle)
 
 {% tabs %}
 {% highlight C# %}
@@ -505,7 +505,7 @@ N> EndValue must be defined as first and greater than the StartValue when config
 
 ### Scaling divisions
 
-The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the [MajorDifference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MajorDifference.html) and [MinorDifference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MinorDifference.html). It also provides support to customize the number of tick lines using [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MaximumValue.html) and [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~MinimumValue.html).
+The Gauge control for Windows Forms includes support for customizing the number of major tick lines and number of minor tick lines using the [MajorDifference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MajorDifference) and [MinorDifference](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MinorDifference). It also provides support to customize the number of tick lines using [MaximumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MaximumValue) and [MinimumValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_MinimumValue).
 
 The following code sample illustrates how to use the above properties in the RadialGauge:
 
@@ -569,7 +569,7 @@ this.radialGauge1.Value = 60
 
 Appearance and text of Scale labels in `FullCircle`, `HalfCircle` and `QuarterCircle` frame types and Value label of `Fill` frame type can customized using `DrawLabelEventArgs` event.
 
-The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~DrawLabel_EV.html) event of the RadialGauge.
+The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) event of the RadialGauge.
 
 <table>
 <tr>
@@ -700,7 +700,7 @@ End Sub
 
 ## Visual styles
 
-The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~VisualStyle.html) property.
+The Gauge control for Windows Forms includes four stunning skins for professional representation of gauges. You can easily modify the look and feel of the gauge component using the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_VisualStyle) property.
 
 The styles are built-in for all gauges.
 
@@ -924,7 +924,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
 **Custom**
 
- RadialGauge provides an option to end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~VisualStyle.html) as **Custom**.
+ RadialGauge provides an option to end user to create their own custom theme based on the requirement by setting the [VisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_VisualStyle) as **Custom**.
 
  Steps to Customize the theme in Design time.
 
@@ -997,7 +997,7 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Custom
 
 ## Data binding
 
-You can bind any data source to the RadialGauge and map an index of a record to represent the actual value in RadialGauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~DisplayMember.html) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~DisplayRecordIndex.html) properties will map the DataColumn and DataRow of the binding source respectively to the Gauge control, which will then support high frequency data updates.
+You can bind any data source to the RadialGauge and map an index of a record to represent the actual value in RadialGauge. The [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_DisplayMember) and [DisplayRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_DisplayRecordIndex) properties will map the DataColumn and DataRow of the binding source respectively to the Gauge control, which will then support high frequency data updates.
 
 ### Example
 
@@ -1013,12 +1013,12 @@ this.radialGauge1.DisplayMember = [column name];
 
 ## Custom renderer
 
-The appearance of the RadialGauge is customized by using the [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html). This interface provides few methods to control painting over the [OuterArc](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawOuterArc.html), [Needle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawNeedle.html), [Major ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawTickMarks.html), [Minor ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawTickMarks.html), [Label](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawGaugeLabel.html), [Ranges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer~DrawRanges.html) etc.
+The appearance of the RadialGauge is customized by using the [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html). This interface provides few methods to control painting over the [OuterArc](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawOuterArc_System_Drawing_Graphics_System_Int32_System_Int32_System_Drawing_Point_System_Int32_), [Needle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawNeedle_System_Drawing_Graphics_System_Int32_System_Int32_System_Int32_System_Int32_System_Drawing_Point_), [Major ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawTickMarks_System_Drawing_Graphics_System_Drawing_Drawing2D_GraphicsPath_System_Int32_System_Int32_System_Int32_System_Int32_System_Drawing_Point_System_Int32_), [Minor ticks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawTickMarks_System_Drawing_Graphics_System_Drawing_Drawing2D_GraphicsPath_System_Int32_System_Int32_System_Int32_System_Int32_System_Drawing_Point_System_Int32_), [Label](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawGaugeLabel_System_Drawing_Graphics_System_Drawing_Point_System_Int32_), [Ranges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html#Syncfusion_Windows_Forms_Gauge_IRadialGaugeRenderer_DrawRanges_System_Drawing_Graphics_System_Drawing_Drawing2D_GraphicsPath_System_Int32_System_Int32_System_Int32_System_Drawing_Point_) etc.
 
 To customize the appearance,
 
-1. Create a new custom renderer class and implement each of the members defined in [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html).
-2. Assign instance of your custom renderer to the [Renderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~Renderer.html) property of RadialGauge. By default, RadialGauge is painted by using its default renderer.
+1. Create a new custom renderer class and implement each of the members defined in [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html).
+2. Assign instance of your custom renderer to the [Renderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_Renderer) property of RadialGauge. By default, RadialGauge is painted by using its default renderer.
 
 {% tabs %}
 
@@ -1104,7 +1104,7 @@ RadialGauge supports three needle style. They are
 
 ##### Needle color
 
-You can customize the needle color by using the [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~NeedleColor.html) property.
+You can customize the needle color by using the [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_NeedleColor) property.
 
 ##### Needle values
 
@@ -1112,9 +1112,9 @@ The Needle values can be assigned using Values property in Needle.
 
 You can customize the needles in RadialGauge by using the following properties.
 
-* [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~NeedleColor.html)
-* [NeedleStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~NeedleStyle.html)
-* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~Value.html)
+* [NeedleColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_NeedleColor)
+* [NeedleStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_NeedleStyle)
+* [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_Value)
 
 {% tabs %}
 {% highlight C# %}
@@ -1131,7 +1131,7 @@ Me.RadialGauge1.NeedleCollection(0).Value = 5
 
 ### How to customize RadialGauge appearance
 
-You can customize the appearance of the RadialGauge by using the [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html).
+You can customize the appearance of the RadialGauge by using the [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html).
 
 {% tabs %}
 
@@ -1805,7 +1805,7 @@ Public Class CustomRenderer
 
 ### How to customize the start angle and sweep angle of the arc in RadialGauge
 
-It can be customized by using its properties named [StartAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~StartAngle.html) and [SweepAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Gauge.Windows~Syncfusion.Windows.Forms.Gauge.RadialGauge~SweepAngle.html).
+It can be customized by using its properties named [StartAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_StartAngle) and [SweepAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_SweepAngle).
 
 {% tabs %}
 

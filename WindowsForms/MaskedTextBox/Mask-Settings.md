@@ -10,7 +10,7 @@ documentation: ug
 
 This section deals with the mask settings of MaskedEditBox control.
 
-The format or behavior for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control is defined through the property given below.
+The format or behavior for the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control is defined through the property given below.
 
 
 
@@ -26,7 +26,7 @@ Specifies the mask string for the MaskedEditBox control.</td></tr>
 </table>
 
 
-The [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox~Mask.html) is a string that is composed of literal characters and mask characters.
+The [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) is a string that is composed of literal characters and mask characters.
 
 Literal characters give visual cues about the type of data being used. Mask characters are the placeholders for the data input. For example, a US telephone number can be represented by the following mask.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Watermark
 
-The `SfDateTimeEdit` control allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) to null in the default mode of the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html). The watermark can be shown on null value.
+The `SfDateTimeEdit` control allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) to null in the default mode of the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode). The watermark can be shown on null value.
 
 ## Null value
 
-The `SfDateTimeEdit` control accepts null values only when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DateTimeEditingMode.html) is default. The NullValue support in the `SfDateTimeEdit` control can be enabled by setting the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~AllowNull.html) property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in the `SfDateTimeEdit` control.
+The `SfDateTimeEdit` control accepts null values only when the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) is default. The NullValue support in the `SfDateTimeEdit` control can be enabled by setting the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowNull) property to true. If the value is null and the editing text box is empty then the `Watermark` will be displayed as the text in the `SfDateTimeEdit` control.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ dateTimeEdit.Value = Nothing
 
 ## Change watermark
 
-The watermark is a help content that is used to display in the `SfDateTimeEdit` control when the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~AllowNull.html) property is true and the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~Value.html) property is set to null. The `Watermark` text will be displayed only when the control lost its focus. The context of the watermark text can be assigned by setting the `Watermark` of the SfDateTimeEdit.
+The watermark is a help content that is used to display in the `SfDateTimeEdit` control when the [AllowNull](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_AllowNull) property is true and the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) property is set to null. The `Watermark` text will be displayed only when the control lost its focus. The context of the watermark text can be assigned by setting the `Watermark` of the SfDateTimeEdit.
 
 {% tabs %}
 
