@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RangeSlider.html) is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
+The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
 
 ![Range Slider for Windows Forms](Getting-Started_images/Overview.png) 
 

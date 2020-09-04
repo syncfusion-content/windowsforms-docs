@@ -11,7 +11,7 @@ documentation: ug
 
 The characteristic of an element can be easily changed in the PreRenderDocument event of the HTMLUI control.
 
-The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~PreRenderDocument_EV.html) event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
+The [PreRenderDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) event is raised when the elements in the HTML document are created in the HTMLUI control, but their size and location are not calculated yet.
 
 {% tabs %}
 

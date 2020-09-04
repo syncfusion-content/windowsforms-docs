@@ -9,7 +9,7 @@ documentation: ug
 
 # MDI list
 
-By using the TabbedMDIManager Framework, you can make your MDI container form's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~MdiChildren.html) property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~MdiChildren.html) property to get a list of the MDIChild forms.
+By using the TabbedMDIManager Framework, you can make your MDI container form's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property to get a list of the MDIChild forms.
 
 Property table
 
@@ -84,9 +84,9 @@ End Sub
 
 ## MDI list in menus
 
-If you want an MDI List in your menus, use the TabbedMDIManager's [MDIListMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~MdiListMenuItem.html) property. This will duplicate the exact functionality that the MDIList property of the MenuItem class provides. This menu item will then be managed by the TabbedMDIManager, even when it is not attached to your container form.
+If you want an MDI List in your menus, use the TabbedMDIManager's [MDIListMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiListMenuItem) property. This will duplicate the exact functionality that the MDIList property of the MenuItem class provides. This menu item will then be managed by the TabbedMDIManager, even when it is not attached to your container form.
 
-Also, you can add an MDI List to your tool strip menus, using the TabbedMDIManager's [MDIListToolStripItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~MdiListToolStripItem.html) property. This will duplicate the exact functionality that the MDI List property of the ToolStripItem class provides.
+Also, you can add an MDI List to your tool strip menus, using the TabbedMDIManager's [MDIListToolStripItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiListToolStripItem) property. This will duplicate the exact functionality that the MDI List property of the ToolStripItem class provides.
 
 Property table
 
@@ -156,7 +156,7 @@ End Sub
 
 ## MDI list in XP menus
 
-When using XP Menus in Essential Tools as the MDIContainer's Main Menu, this property need not be set. Instead, use the [MDIListBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.MdiListBarItem.html) in XP Menus to represent the MDIChild windows list.
+When using XP Menus in Essential Tools as the MDIContainer's Main Menu, this property need not be set. Instead, use the [MDIListBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MdiListBarItem.html) in XP Menus to represent the MDIChild windows list.
 
 The XP Menus Framework automatically handles the case when the MDIChild windows layout is managed by the TabbedMDIManager.
 

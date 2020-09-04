@@ -12,7 +12,7 @@ documentation: ug
 
 ## Grid settings
 
-In the MonthCalendarAdv control, the dates of a month is placed inside a grid and the dates are separated using [GridLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~GridLines.html).
+In the MonthCalendarAdv control, the dates of a month is placed inside a grid and the dates are separated using [GridLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_GridLines).
 
 ![Grid settings](CalendarDateTime_images/Overview_img144.jpeg)
 
@@ -20,8 +20,8 @@ In the MonthCalendarAdv control, the dates of a month is placed inside a grid an
 
 The below properties lets you to change the default appearance of the grid in the MonthCalendarAdv.
 
-* [GridBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~GridBackColor.html)
-* [GridLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~GridLines.html)
+* [GridBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_GridBackColor)
+* [GridLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_GridLines)
 
 {% tabs %}
 
@@ -59,10 +59,10 @@ This section will walk you through the different properties used to customize th
 
 Gradient background can be set for the header using the below properties.
 
-* [HeadGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeadGradient.html)
-* [HeaderStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderStartColor.html)
-* [HeaderEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderEndColor.html)
-* [HeaderVerticalGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderVerticalGradient.html)
+* [HeadGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeadGradient)
+* [HeaderStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderStartColor)
+* [HeaderEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderEndColor)
+* [HeaderVerticalGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderVerticalGradient)
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
 ### Foreground settings
 
-The font style and fore color of the header text can be specified through [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderFont.html) and [HeadForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeadForeColor.html) properties.
+The font style and fore color of the header text can be specified through [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderFont) and [HeadForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeadForeColor) properties.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
 ### Height and image for header
 
-The height of the header can be increased or decreased using [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderHeight.html) property. Header can also host an image in its background using [HeaderImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderImage.html) property.
+The height of the header can be increased or decreased using [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderHeight) property. Header can also host an image in its background using [HeaderImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderImage) property.
 
 {% highlight C# %}
 
@@ -161,10 +161,10 @@ This section will walk you through the different properties used to customize th
 
 Gradient background can be set for the header using the below properties.
 
-* [HeadGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeadGradient.html)
-* [HeaderStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderStartColor.html)
-* [HeaderEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderEndColor.html)
-* [HeaderVerticalGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderVerticalGradient.html)
+* [HeadGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeadGradient)
+* [HeaderStartColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderStartColor)
+* [HeaderEndColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderEndColor)
+* [HeaderVerticalGradient](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderVerticalGradient)
 
 {% tabs %}
 
@@ -203,7 +203,7 @@ Me.monthCalendarAdv1.HeaderStartColor = System.Drawing.Color.AliceBlue
 
 ### Foreground settings
 
-The font style and fore color of the header text can be specified through [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderFont.html) and [HeadForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeadForeColor.html) properties.
+The font style and fore color of the header text can be specified through [HeaderFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderFont) and [HeadForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeadForeColor) properties.
 
 {% tabs %}
 
@@ -235,7 +235,7 @@ Me.monthCalendarAdv1.HeadForeColor = System.Drawing.Color.Navy
 
 ### Height and image for header
 
-The height of the header can be increased or decreased using [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderHeight.html) property. Header can also host an image in its background using [HeaderImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HeaderImage.html) property.
+The height of the header can be increased or decreased using [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderHeight) property. Header can also host an image in its background using [HeaderImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HeaderImage) property.
 
 
 {% tabs %}
@@ -271,10 +271,10 @@ MonthCalendarAdv control can display unique [week numbers](/windowsforms/monthca
 
 ### Foreground settings
 
-By default, week numbers will not be shown in the calendar. [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ShowWeekNumbers.html) property should be set to `true` to display the week numbers. The font and fore color can be set using the below properties.
+By default, week numbers will not be shown in the calendar. [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ShowWeekNumbers) property should be set to `true` to display the week numbers. The font and fore color can be set using the below properties.
 
-* [WeekFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~WeekFont.html)
-* [WeekTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~WeekTextColor.html)
+* [WeekFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_WeekFont)
+* [WeekTextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_WeekTextColor)
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ Me.monthCalendarAdv1.WeekTextColor = System.Drawing.Color.Blue
 
 ### Gradient background
 
-By default the week numbers column has a gradient background. To customize the background manually, use [WeekInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~WeekInterior.html) property.
+By default the week numbers column has a gradient background. To customize the background manually, use [WeekInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_WeekInterior) property.
 
 {% tabs %}
 
@@ -344,10 +344,10 @@ MonthCalendarAdv has properties to customize the days displayed in the calendar.
 
 The below properties deals with the foreground appearance of the dates.
 
-* [DayNamesColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DayNamesColor.html)
-* [DayNamesFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DayNamesFont.html)
-* [DaysFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DaysFont.html)
-* [DaysColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DaysColor.html)
+* [DayNamesColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DayNamesColor)
+* [DayNamesFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DayNamesFont)
+* [DaysFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DaysFont)
+* [DaysColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DaysColor)
 
 {% tabs %}
 
@@ -386,8 +386,8 @@ Me.monthCalendarAdv1.DaysFont = New System.Drawing.Font("Courier New", 8.25F, Sy
 
 The height of the day header and the day name formats are specified using below properties.
 
-* [DayNamesHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DayNamesHeight.html)
-* [UseShortestDayNames](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~UseShortestDayNames.html)
+* [DayNamesHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DayNamesHeight)
+* [UseShortestDayNames](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_UseShortestDayNames)
 
 
 {% tabs %}
@@ -420,7 +420,7 @@ Me.monthCalendarAdv1.UseShortestDayNames = False
 
 ### Gradient background for day header
 
-By default the day's header has a gradient background. We can change the default background style using [DaysHeaderInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~DaysHeaderInterior.html) property.
+By default the day's header has a gradient background. We can change the default background style using [DaysHeaderInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_DaysHeaderInterior) property.
 
 {% tabs %}
 
@@ -444,7 +444,7 @@ Me.monthCalendarAdv1.DaysHeaderInterior = New Syncfusion.Drawing.BrushInfo(Syncf
 
 ## Today's date
 
-The fore color for Today's date is set using [TodayFontColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~TodayFontColor.html) property. Using Today button at the bottom of the control, today's date can be focused. See Buttons for details.
+The fore color for Today's date is set using [TodayFontColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_TodayFontColor) property. Using Today button at the bottom of the control, today's date can be focused. See Buttons for details.
 
 {% tabs %}
 
@@ -477,7 +477,7 @@ This section discusses the properties which controls the appearance and behavior
 
 ### Highlighting the dates
 
-We can highlight the selected date using [HighlightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~HighlightColor.html) property.
+We can highlight the selected date using [HighlightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_HighlightColor) property.
 
 {% tabs %}
 
@@ -508,9 +508,9 @@ To know about the placement of these buttons in the control, refer [MonthCalenda
 
 Today and None buttons are displayed at the bottom of the calendar and they can be customized to set background image and font styles. This section will discuss the properties which controls the appearance and behavior of the MonthCalendarAdv.
 
-* [TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~TodayButton.html)
-* [NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~NoneButton.html)
-* [BottomHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BottomHeight.html)
+* [TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_TodayButton)
+* [NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_NoneButton)
+* [BottomHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_BottomHeight)
 
 ### Customizing today and none buttons
 
@@ -560,12 +560,12 @@ monthCalendarAdv1.NoneButton.Visible=False
 
 ### Scroll button images
 
-The default scroll button images can be replaced with custom images using the [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~LeftScrollButtonImage.html) and [RightScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~RightScrollButtonImage.html) properties. The properties related to scroll buttons are as follows.
+The default scroll button images can be replaced with custom images using the [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_LeftScrollButtonImage) and [RightScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_RightScrollButtonImage) properties. The properties related to scroll buttons are as follows.
 
-* [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~LeftScrollButtonImage.html)
-* [RightScrollButtonImage]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~RightScrollButtonImage.html)
-* [StretchScrollImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~StretchScrollImage.html)
-* [ScrollButtonSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ScrollButtonSize.html)
+* [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_LeftScrollButtonImage)
+* [RightScrollButtonImage]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_RightScrollButtonImage)
+* [StretchScrollImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_StretchScrollImage)
+* [ScrollButtonSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ScrollButtonSize)
 
 {% tabs %}
 

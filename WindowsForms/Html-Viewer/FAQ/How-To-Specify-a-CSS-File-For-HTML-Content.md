@@ -19,7 +19,7 @@ Style sheets contain the styles to be applied for the elements in the HTML docum
 
 
 
-The HTMLUI control supports formatting the HTML document with style sheets at run time. The [LoadCSS](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Windows~Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl~LoadCSS.html) method of the HTMLUI control loads the styles from the specified CSS and refreshes the current document on the HTMLUI control with the applied styles.
+The HTMLUI control supports formatting the HTML document with style sheets at run time. The [LoadCSS](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html#Syncfusion_Windows_Forms_HTMLUI_HTMLUIControl_LoadCSS_System_IO_Stream_) method of the HTMLUI control loads the styles from the specified CSS and refreshes the current document on the HTMLUI control with the applied styles.
 
 {% tabs %}
 

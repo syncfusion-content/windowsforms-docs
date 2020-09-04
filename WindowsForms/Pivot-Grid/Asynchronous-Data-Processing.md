@@ -13,7 +13,7 @@ Pivot grid control provides support for loading the data in a unique UI thread i
 
 ## Enabling asynchronous loading
 
-To enable the asynchronous loading support, the [EnableAsyncLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~EnableAsyncLoading.html) property of pivot grid control is used.
+To enable the asynchronous loading support, the [EnableAsyncLoading](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_EnableAsyncLoading) property of pivot grid control is used.
 
 Refer to the below code sample to enable the asynchronous loading support in pivot grid.
 
@@ -33,7 +33,7 @@ Me.pivotGridControl1.EnableAsyncLoading = True
 
 {% endtabs %}
 
-N> It is possible to find whether the pivot grid control is in asynchronous mode or not by using the [InAsyncMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~InAsyncMode.html) property of pivot grid.
+N> It is possible to find whether the pivot grid control is in asynchronous mode or not by using the [InAsyncMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_InAsyncMode) property of pivot grid.
 
 ## Asynchronous operations
 
@@ -45,7 +45,7 @@ The below screenshot illustrates the asynchronous data processing while sorting 
 
 ## Customizing loading icon
 
-The loading icon can be customized by using the [BusyAnimationIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~BusyAnimationIcon.html) property of pivot grid control.
+The loading icon can be customized by using the [BusyAnimationIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_BusyAnimationIcon) property of pivot grid control.
 
 Refer to the below code sample to change the default loading icon that is used to denote asynchronous loading.
 
@@ -69,7 +69,7 @@ Me.pivotGridControl1.BusyAnimationIcon = Image.FromFile("Loading.gif")
 
 ## Disabling loading icon
 
-During asynchronous loading, an icon will be displayed at the center of the grid by default. This can be disabled by setting the [BusyAnimationIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~BusyAnimationIcon.html) property as null.
+During asynchronous loading, an icon will be displayed at the center of the grid by default. This can be disabled by setting the [BusyAnimationIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_BusyAnimationIcon) property as null.
 
 {% tabs %}
 
@@ -91,8 +91,8 @@ Me.pivotGridControl1.BusyAnimationIcon = Nothing
 
 Following are the events that are available to indicate the status of asynchronous loading operations in pivot grid control.
 
-* The **[AsyncLoadStarted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AsyncLoadStarted_EV.html)** event will be fired whenever the asynchronous operation gets started.
-* The **[AsyncLoadCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~AsyncLoadCompleted_EV.html)** event will be fired whenever the asynchronous operation gets completed.
+* The **[AsyncLoadStarted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html)** event will be fired whenever the asynchronous operation gets started.
+* The **[AsyncLoadCompleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html)** event will be fired whenever the asynchronous operation gets completed.
 
 Refer to the following code sample for handling asynchronous events.
 

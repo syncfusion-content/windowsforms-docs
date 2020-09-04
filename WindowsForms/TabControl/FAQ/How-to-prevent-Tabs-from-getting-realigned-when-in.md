@@ -11,7 +11,7 @@ documentation: ug
 
 We will be making this a property based feature in a future version. For now, derive from our base TabControlExt class and do the following.
 
-This code will not move the selected Tab to the front row when in [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabControlAdv~Multiline.html) mode.
+This code will not move the selected Tab to the front row when in [Multiline](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Multiline) mode.
 
 {% tabs %}
 

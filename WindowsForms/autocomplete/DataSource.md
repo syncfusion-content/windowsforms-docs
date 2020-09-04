@@ -9,7 +9,7 @@ documentation: ug
 
 # DataSource
 
-The AutoComplete component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces such as IList, IBindingList, ITypedList, and IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~DataSource.html) property. This section explains about the different types of data binding mechanisms and data settings supported by the AutoComplete component.
+The AutoComplete component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces such as IList, IBindingList, ITypedList, and IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains about the different types of data binding mechanisms and data settings supported by the AutoComplete component.
 
 ## Data settings
 
@@ -52,7 +52,7 @@ Me.autoComplete1.DataSource = DataTable1
 
 ## Dynamic source at run time
 
-Enabling the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~AutoAddItem.html) property allows you to save your entries at run time, and pressing the `Enter` key saves your entry.
+Enabling the [AutoAddItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_AutoAddItem) property allows you to save your entries at run time, and pressing the `Enter` key saves your entry.
 
 ## Built-in source
 
@@ -152,7 +152,7 @@ The AutoComplete component allows you add a set of text using `String Collection
 
 ## Binding custom collections 
 
-The different custom collections that can be bound to the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.AutoComplete~DataSource.html) property of the AutoComplete component are listed as follows.
+The different custom collections that can be bound to the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property of the AutoComplete component are listed as follows.
 
 * BindingList Collection
 * ArrayList Collection

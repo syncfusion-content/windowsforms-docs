@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-SfDataGrid has [DataGridIndexResolver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html) static class present in [Syncfusion.WinForms.DataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid_namespace.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
+SfDataGrid has [DataGridIndexResolver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html) static class present in [Syncfusion.WinForms.DataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.html) namespace that has some extension methods used to Resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 

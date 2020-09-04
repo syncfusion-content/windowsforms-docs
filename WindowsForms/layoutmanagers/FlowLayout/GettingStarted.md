@@ -21,7 +21,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 1) Create a new Windows Forms application via designer.
 
-2) Add the [FlowLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout.html) control to an application by dragging it from the toolbox to design view. The following assembly will be added automatically:
+2) Add the [FlowLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html) control to an application by dragging it from the toolbox to design view. The following assembly will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -137,7 +137,7 @@ Me.Controls.Add(this.buttonAdv4)
 
 ## Layout mode
 
-To change the layout of child controls either horizontally or vertically, use the [LayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout~LayoutMode.html) property.
+To change the layout of child controls either horizontally or vertically, use the [LayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html#Syncfusion_Windows_Forms_Tools_FlowLayout_LayoutMode) property.
 
 * Horizontal
 

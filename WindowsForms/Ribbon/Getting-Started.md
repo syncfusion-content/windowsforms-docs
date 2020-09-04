@@ -836,7 +836,7 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.r
 
 ### Text alignment for DropDownMenuItems and SplitButtonMenuItems
 
-Text alignment for the **"ToolStripMenuItem"** can be set using its [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx_properties.html) property. To enable this alignment, [`AllowMenuTextAlignment`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx~AllowMenuTextAlignment.html) of its parent **"ToolStripEx"** must be set **"True"** mandatorily. The various options of [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ToolStripEx_properties.html) are listed below.
+Text alignment for the **"ToolStripMenuItem"** can be set using its [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) property. To enable this alignment, [`AllowMenuTextAlignment`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html#Syncfusion_Windows_Forms_Tools_ToolStripEx_AllowMenuTextAlignment) of its parent **"ToolStripEx"** must be set **"True"** mandatorily. The various options of [`TextAlign`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) are listed below.
 
 * TopLeft
 * TopCenter

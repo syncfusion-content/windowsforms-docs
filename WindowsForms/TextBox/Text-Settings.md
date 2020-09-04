@@ -13,7 +13,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 ## Text
 
-You can specifies the text in [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
+You can specifies the text in [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ N> You can get the selected text in TextBoxExt control by using [SelectedText](h
 
 ## CharacterCasing
 
-You can change the case of character in `TextBoxExt` control by using [CharacterCasing](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~CharacterCasing.html) property. The character casing options are Normal, Upper and Lower.
+You can change the case of character in `TextBoxExt` control by using [CharacterCasing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_CharacterCasing) property. The character casing options are Normal, Upper and Lower.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ Me.textBoxExt1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ## DrawActiveWhenDisabled
 
-The [DrawActiveWhenDisabled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~DrawActiveWhenDisabled.html) property specifies whether the text should be drawn active even when the control is disabled.
+The [DrawActiveWhenDisabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_DrawActiveWhenDisabled) property specifies whether the text should be drawn active even when the control is disabled.
 
 {% tabs %}
 
@@ -204,9 +204,9 @@ N> The [ScrollToCaret()](https://docs.microsoft.com/en-us/dotnet/api/system.win
 
 The tooltip that should be displayed when an overflow of text occurs can be set using the following properties.
 
-* [OverflowIndicatorToolTipText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~OverflowIndicatorToolTipText.html) - This property specifies the overflow indicator tooltip text.
-* [ShowOverflowIndicator](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicator.html) - This property used for show the overflow indicator.
-* [ShowOverflowIndicatorToolTip](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~ShowOverflowIndicatorToolTip.html) - This property indicates whether to show the overflow indicator tooltip.
+* [OverflowIndicatorToolTipText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_OverflowIndicatorToolTipText) - This property specifies the overflow indicator tooltip text.
+* [ShowOverflowIndicator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ShowOverflowIndicator) - This property used for show the overflow indicator.
+* [ShowOverflowIndicatorToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ShowOverflowIndicatorToolTip) - This property indicates whether to show the overflow indicator tooltip.
 
 
 {% tabs %}

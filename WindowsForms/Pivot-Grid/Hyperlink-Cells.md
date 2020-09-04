@@ -18,7 +18,7 @@ Pivot grid allows hyperlinking of cells to retrieve a detailed information about
 
 # Adding hyperlink to cells
 
-To enable the hyperlink in pivot grid cells, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~CellType.html) property of required cells should be set as `HyperlinkCell`. If you want to disable the hyperlink, then the cell type should be set as `TextBox`.
+To enable the hyperlink in pivot grid cells, the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellType) property of required cells should be set as `HyperlinkCell`. If you want to disable the hyperlink, then the cell type should be set as `TextBox`.
 
 Refer to the below code sample to enable hyperlink for value cells and summary cells.
 
@@ -71,7 +71,7 @@ _Pivot grid containing hyperlinked summary cells_
 
 ## Setting hyperlink information to cells
 
-Using the [Tag](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~Tag.html) property of particular cell style, the hyperlink information can be set to the required cells of pivot grid control.
+Using the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of particular cell style, the hyperlink information can be set to the required cells of pivot grid control.
 
 Refer to the below code sample to set hyperlink information to row header cells.
 
@@ -117,7 +117,7 @@ End Sub
 
 ## Events
 
-The **[HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase~HyperlinkCellClick_EV.html)** event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
+The **[HyperlinkCellClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControlBase.html)** event occurs when the hyperlink cell gets clicked in the pivot grid control. This event receives an argument namely [HyperlinkCellClickEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.HyperlinkCellClickEventArgs.html), that contains the information about the hyperlink cell which is clicked.
 
 A demo sample is available in the following location.
 

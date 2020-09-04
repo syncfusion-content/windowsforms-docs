@@ -11,7 +11,7 @@ documentation: ug
 
 ## ToolTip Control
 
-The border color and its thickness of the `SfToolTip` can be customized by using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~BorderColor.html) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~BorderThickness.html) properties.
+The border color and its thickness of the `SfToolTip` can be customized by using the [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderColor) and [BorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_BorderThickness) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ## ToolTip Item
 
-The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The `ToolTipStyleInfo` property contains all the settings for the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem.html) appearance customization.
+The appearance of `ToolTipItem` can be customized by setting the `ToolTipStyleInfo` property. The `ToolTipStyleInfo` property contains all the settings for the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) appearance customization.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ sfToolTip1.SetToolTipInfo(this.button1, toolTipInfo1);
 
 ### Gradient Color
 
-Gradient background drawing for the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem.html) can be done by enabling the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~EnableGradientBackground.html) property and initializing a [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~GradientBrush.html) property for the `ToolTipItem`. 
+Gradient background drawing for the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) can be done by enabling the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableGradientBackground) property and initializing a [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_GradientBrush) property for the `ToolTipItem`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -70,11 +70,11 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 ![Shown the gradient background drawing for the tooltipitems in winforms tooltip](SfToolTip_images/SfToolTip_img17.jpeg)
 
 
-N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~GradientBrush.html) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~EnableGradientBackground.html) property is set to true.
+N> The [GradientBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_GradientBrush) property will be considered only when the [EnableGradientBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableGradientBackground) property is set to true.
 
 ### ToolTipItem Separator
 
-The separator of the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem.html) can be customized using the [SeparatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~SeparatorColor.html) and [SeparatorStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle~SeparatorStyle.html) properties.
+The separator of the [ToolTipItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html) can be customized using the [SeparatorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorColor) and [SeparatorStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ToolTipVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ToolTipVisualStyle_SeparatorStyle) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -96,7 +96,7 @@ sfToolTip1.SetToolTipInfo(this.button2, toolTipInfo1);
 
 ## Customizing Appearance based on Control
 
-The appearance of the `ToolTipItem` can be customized before showing the tooltip based on the control in which it is configured using the [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.SfToolTip~ToolTipShowing_EV.html) event.
+The appearance of the `ToolTipItem` can be customized before showing the tooltip based on the control in which it is configured using the [ToolTipShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_ToolTipShowing) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ private void SfToolTip1_ToolTipShowing(object sender, ToolTipShowingEventsArgs e
 
 ## Enabling the Shadow
 
-The shadow of the tooltip can be enabled by setting the [ShadowVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.SfToolTip~ShadowVisible.html) property to `true`.
+The shadow of the tooltip can be enabled by setting the [ShadowVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SfToolTip.html#Syncfusion_Windows_Forms_SfToolTip_ShadowVisible) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ sfToolTip1.ShadowVisible = true;
 
 ## ToolTipItem Separator
 
-The enabled separator of the `ToolTipItem` can be customized by setting the [EnableSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipItem~EnableSeparator.html) property to `true`.
+The enabled separator of the `ToolTipItem` can be customized by setting the [EnableSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipItem.html#Syncfusion_WinForms_Controls_ToolTipItem_EnableSeparator) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,7 +155,7 @@ N> The separator line cannot be drawn for the last `ToolTipItem` in the collecti
 
 ## Right to Left
 
-The elements of the tooltip can be aligned from right to left and vice versa using the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Core.WinForms~Syncfusion.WinForms.Controls.ToolTipInfo~RightToLeft.html) property. 
+The elements of the tooltip can be aligned from right to left and vice versa using the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.ToolTipInfo.html#Syncfusion_WinForms_Controls_ToolTipInfo_RightToLeft) property. 
 
 {% tabs %}
 {% highlight c# %}

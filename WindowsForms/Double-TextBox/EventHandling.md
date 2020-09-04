@@ -10,7 +10,7 @@ documentation: ug
 
 ## DoubleValueChanged Event
 
-This [DoubleValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.DoubleTextBox~DoubleValueChanged_EV.html) event is handled when the double value in the text field is changed.
+This [DoubleValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DoubleTextBox.html) event is handled when the double value in the text field is changed.
 
 {% tabs %}
 {% highlight C# %}  

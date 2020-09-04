@@ -17,11 +17,11 @@ A Banner Panel is a simple gradient panel which holds a Title label, a Descripti
 
 * **Property**
 
-* [Banner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Banner.html)
-* [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Description.html)
-* [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html)
+* [Banner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Banner)
+* [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Description)
+* [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Title)
 
-N> The [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html) and [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Description.html) settings can be set for individual Wizard Pages using [WizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage.html).[Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~Title.html) and WizardPage.Description properties respectively. See _Wizard Page Settings.
+N> The [Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Title) and [Description](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Description) settings can be set for individual Wizard Pages using [WizardPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html).[Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_Title) and WizardPage.Description properties respectively. See _Wizard Page Settings.
 
 {% tabs %}
 
@@ -73,9 +73,9 @@ N> The appearance of a Banner panel can be customized using the properties of th
 
 The below properties control the layout of the respective banner controls.
 
-* [AutoLayoutBanner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutBanner.html)
-* [AutoLayoutDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutDescription.html)
-* [AutoLayoutTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardControl~AutoLayoutTitle.html)
+* [AutoLayoutBanner](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_AutoLayoutBanner)
+* [AutoLayoutDescription](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_AutoLayoutDescription)
+* [AutoLayoutTitle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_AutoLayoutTitle)
 
 {% tabs %}
 
@@ -186,5 +186,5 @@ this.label1.ForeColor = System.Drawing.Color.DarkBlue
 
 
 
-N> A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.WizardPage~Title.html) and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
+N> A WizardControl can have only one page title label and one page description label. We can change only the text of these two labels for individual pages using [WizardPage.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardPage.html#Syncfusion_Windows_Forms_Tools_WizardPage_Title) and WizardPage.Description properties and not their appearance. Hence Font and ForeColor settings will be similar in all the page.
 

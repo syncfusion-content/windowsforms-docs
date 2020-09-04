@@ -9,7 +9,7 @@ documentation: ug
 
 # How to draw Gradient Tabs?
 
-You can handle the DrawItem Event of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and then set the gradient by using the [LinearGradientBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.lineargradientbrush?view=netframework-4.7.2).
+You can handle the DrawItem Event of [TabPageAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabPageAdv.html) and then set the gradient by using the [LinearGradientBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.lineargradientbrush?view=netframework-4.7.2).
 
 This can be done programmatically using the code snippet given below.
 

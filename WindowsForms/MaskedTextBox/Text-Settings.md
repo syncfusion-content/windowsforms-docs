@@ -10,7 +10,7 @@ documentation: ug
 
 This section discusses the text settings of the MaskedEditBox control.
 
-The text associated with the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be set and customized using the below given settings.
+The text associated with the [MaskedEditBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html) control can be set and customized using the below given settings.
 
 
 

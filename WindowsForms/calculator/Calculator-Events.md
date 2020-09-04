@@ -9,15 +9,15 @@ documentation: ug
 
 # Calculator Events
 
-The event for [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control are discussed in this section.
+The event for [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control are discussed in this section.
 
 ## ValueCalculated Event
 
-The [ValueCalculated event](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~ValueCalculated_EV.html) fires each time the value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is changed. That is, even if you just press any digit, this event will be handled. 
+The [ValueCalculated event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) fires each time the value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) is changed. That is, even if you just press any digit, this event will be handled. 
 
-The event  handler receives an argument of type [CalculatorValueCalculatedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs.html). To get the final result, use [LastAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs~LastAction.html) property of the [CalculatorValueCalculatedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs.html) in the [ValueCalculated event](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl~ValueCalculated_EV.html). 
+The event  handler receives an argument of type [CalculatorValueCalculatedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs.html). To get the final result, use [LastAction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs.html#Syncfusion_Windows_Forms_Tools_CalculatorValueCalculatedEventArgs_LastAction) property of the [CalculatorValueCalculatedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorValueCalculatedEventArgs.html) in the [ValueCalculated event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html). 
 
-We can retrieve the value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) after '=' button is pressed using the following code snippet.
+We can retrieve the value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) after '=' button is pressed using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,7 +51,7 @@ End Sub
 
 ### Closing Event of the PopupCalculator Control
 
-This [PopupCalculator closing event](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PopupCalculator~Closing_EV.html) will be raised by [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.PopupCalculator.html) when closing after "=" button was clicked. We can implement this event to display the final value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) as follows.
+This [PopupCalculator closing event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) will be raised by [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) when closing after "=" button was clicked. We can implement this event to display the final value of the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) as follows.
 
 {% tabs %}
 {% highlight c# %}

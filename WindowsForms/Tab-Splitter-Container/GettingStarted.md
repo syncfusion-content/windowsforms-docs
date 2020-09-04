@@ -19,7 +19,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms project in Visual Studio to display the TabSplitterContainer control.
 
-2) The [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -32,7 +32,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 ### Add tab pages
 
-Add pages to [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) by clicking the **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
+Add pages to [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) by clicking the **Add primary page** and **Add secondary page** from Smart Tags of TabSplitterContainer.
 
 ![TabSplitterContainer control added by designer](GettingStarted-images/wf-tabsplitter-container-tabpage.png)
 
@@ -66,7 +66,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %} 
 
-4) Create an instance of [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html), and add it to the form.
+4) Create an instance of [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html), and add it to the form.
 
 {% tabs %}
 {% highlight C# %}
@@ -85,7 +85,7 @@ Me.Controls.Add(tabSplitterContainer1)
 {% endhighlight %}
 {% endtabs %}
 
-5) Add tab pages into the control. First, create an instance of the required pages, and add primary and secondary pages to TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~PrimaryPages.html) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SecondaryPages.html) collections, respectively.
+5) Add tab pages into the control. First, create an instance of the required pages, and add primary and secondary pages to TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_PrimaryPages) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SecondaryPages) collections, respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -187,7 +187,7 @@ Me.tabSplitterPage1.Controls.Add(autoLabel2)
 
 ## Tab orientation
 
-The TabSplitterContainer can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~Orientation.html) property.
+The TabSplitterContainer can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Orientation) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -214,7 +214,7 @@ tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 ## Swap tab groups
 
-You can easily swap the tab groups programmatically by enabling the [Swapped](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~Swapped.html) property of TabSplitterContainer.
+You can easily swap the tab groups programmatically by enabling the [Swapped](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Swapped) property of TabSplitterContainer.
 
 {% tabs %}
 {% highlight C# %}
@@ -231,7 +231,7 @@ Me.tabSplitterContainer1. Swapped = True
 
 ## Collapse tab groups
 
-You can collapse the tab groups programmatically by enabling the [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~Collapsed.html) property of TabSplitterContainer.
+You can collapse the tab groups programmatically by enabling the [Collapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_Collapsed) property of TabSplitterContainer.
 
 {% tabs %}
 {% highlight C# %}

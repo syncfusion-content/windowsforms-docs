@@ -19,15 +19,15 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ### Create a simple application with DateTimePickerAdv
 
-You can create a Windows Forms application with [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) using the following steps:
+You can create a Windows Forms application with [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) using the following steps:
 
 ### Create a project
 
-Create a new Windows Forms project in Visual Studio to display the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control.
+Create a new Windows Forms project in Visual Studio to display the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control.
 
 ## Add control through designer
 
-The [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
@@ -62,7 +62,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-**3.** Create a [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) instance, and add it to the window.
+**3.** Create a [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -84,7 +84,7 @@ The DateTimePickerAdv control contains the following built-in formats for displa
 * Time
 * Custom
 
-You can set the date time format using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~Format.html) property of [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html).
+You can set the date time format using the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_Format) property of [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -130,7 +130,7 @@ You can edit the date values in the DateTimePickerAdv control directly.
 
 ## Date range constraints
 
-You can set the minimum and maximum dates to the DateTimePickerAdv control using the [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MaxValue.html) properties.
+You can set the minimum and maximum dates to the DateTimePickerAdv control using the [MinValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_MinValue) and [MaxValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_MaxValue) properties.
 
 {% tabs %}
 {% highlight C# %}

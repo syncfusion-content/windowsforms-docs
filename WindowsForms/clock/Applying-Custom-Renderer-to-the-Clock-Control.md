@@ -11,7 +11,7 @@ documentation: ug
 
 ## Customization of rendering by overriding the method
 
-[Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control enables you to customize the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control by applying the custom renderer.
+[Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control enables you to customize the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control by applying the custom renderer.
 
 {% tabs %}
 {% highlight C# %}

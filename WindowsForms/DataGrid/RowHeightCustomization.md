@@ -9,7 +9,7 @@ documentation: ug
 
 # Row Height Customization
 
-The height of the default row and Header row can be changed by using the [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~RowHeight.html) and [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HeaderRowHeight.html) property.
+The height of the default row and Header row can be changed by using the [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowHeight) and [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HeaderRowHeight) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,7 +32,7 @@ Me.sfDataGrid.HeaderRowHeight = 70
 
 ## Set Height for the Specific Row
 
-The row height of the particular row can be set by using the [RowHeights](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.TableControl~RowHeights.html) property.
+The row height of the particular row can be set by using the [RowHeights](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.TableControl.html#Syncfusion_WinForms_DataGrid_TableControl_RowHeights) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ Me.sfDataGrid.TableControl.Invalidate()
 {% endhighlight %}
 {% endtabs %}
 
-The row height of particular row can also be set by using the [QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event.
+The row height of particular row can also be set by using the [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,8 +73,8 @@ End Sub
 ![Height for the Specific Row](RowHeightCustomization_images/RowHeightCustomization_img2.jpeg)
 
 ## Fit Row Height based on its Content
-The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryRowHeight_EV.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.AutoSizeController~GetAutoRowHeight.html) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand.
-`GetAutoRowHeight` method returns true when the row height is calculated for record & header rows and returns false for other rows. Calculated height based on content set to the out parameter and you can assign the calculated height to the Height property of[QueryRowHeightEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryRowHeightEventArgs.html).
+The row height can be fit based on its content in [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event using [GetAutoRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.AutoSizeController.html#Syncfusion_WinForms_DataGrid_AutoSizeController_GetAutoRowHeight_System_Int32_Syncfusion_WinForms_DataGrid_RowAutoFitOptions_System_Int32__) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand.
+`GetAutoRowHeight` method returns true when the row height is calculated for record & header rows and returns false for other rows. Calculated height based on content set to the out parameter and you can assign the calculated height to the Height property of[QueryRowHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryRowHeightEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -117,11 +117,11 @@ End Sub
 Here, row heights are customized based on the large text content.
 
 ### Auto-Fit Row Height Options
-[RowAutoFitOptions](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions.html) have the following properties,
+[RowAutoFitOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.RowAutoFitOptions.html) have the following properties,
 
-1. [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions~ExcludeColumns.html) – By default, `GetAutoRowHeight` method calculates the row height based on all columns. To skip the specific columns from the row height calculation, add that columns to the `ExcludeColumns` property. 
+1. [ExcludeColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.RowAutoFitOptions.html#Syncfusion_WinForms_DataGrid_RowAutoFitOptions_ExcludeColumns) – By default, `GetAutoRowHeight` method calculates the row height based on all columns. To skip the specific columns from the row height calculation, add that columns to the `ExcludeColumns` property. 
 
-2. [CanIncludeHiddenColumns](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowAutoFitOptions~CanIncludeHiddenColumns.html) – The hidden columns can also be consider for the row height calculation by setting the `CanIncludeHiddenColumns` as `true`.
+2. [CanIncludeHiddenColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.RowAutoFitOptions.html#Syncfusion_WinForms_DataGrid_RowAutoFitOptions_CanIncludeHiddenColumns) – The hidden columns can also be consider for the row height calculation by setting the `CanIncludeHiddenColumns` as `true`.
 
 ## Calculate Height based on Certain Columns
 The row height can be calculated based on the particular columns by using the `ExcludeColumns` of the `RowAutoFitOptions` in the `QueryRowHeight` event.
@@ -172,7 +172,7 @@ End Sub
 {% endtabs %}
 
 ## Reset the RowHeight at Runtime
-The row height of particular or all rows in View can be reset at runtime to get the updated height from `QueryRowHeight` event handler by using the [InvalidateRowHeight](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~InvalidateRowHeight.html) and [Reset](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.RowHeightManager~Reset.html) methods.
+The row height of particular or all rows in View can be reset at runtime to get the updated height from `QueryRowHeight` event handler by using the [InvalidateRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_InvalidateRowHeight_System_Int32_) and [Reset](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.RowHeightManager.html#Syncfusion_WinForms_DataGrid_RowHeightManager_Reset) methods.
 
 `InvalidateRowHeight` – Resets the height of particular row.
 `RowHeightManager.Reset` – Resets the height for all rows in View.
@@ -199,8 +199,8 @@ Me.sfDataGrid.TableControl.Invalidate()
 {% endtabs %}
 
 ### Update RowHeight while Editing 
-The row height of the currently edited row can be updated based on its content by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event.
-In this event call the `InvalidateRowHeight` to reset the current row height. Then call the `Invalidate` method of [TableControl](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.TableControl.html) to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
+The row height of the currently edited row can be updated based on its content by using the [CurrentCellEndEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+In this event call the `InvalidateRowHeight` to reset the current row height. Then call the `Invalidate` method of [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.TableControl.html) to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,7 +251,7 @@ End Sub
 {% endtabs %}
 
 ## Change HeaderRow Height based on its Content
-By default, auto height is supported for the headers is `QueryRowHeight` event. The auto row height can only set for the header row by using the [GetHeaderIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~GetHeaderIndex.html) method to decide whether the row index is header or not in `QueryRowHeight` event.
+By default, auto height is supported for the headers is `QueryRowHeight` event. The auto row height can only set for the header row by using the [GetHeaderIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_GetHeaderIndex_Syncfusion_WinForms_DataGrid_TableControl_) method to decide whether the row index is header or not in `QueryRowHeight` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -303,7 +303,7 @@ End Sub
 ![Change HeaderRow Height based on its Content](RowHeightCustomization_images/RowHeightCustomization_img4.jpeg)
 
 ## Change StackedHeaderRow Height based on its Content
-By default, auto height is supported for [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) in `QueryRowHeight` event. To specify the auto height for the stacked header row alone, check the row index with `StackedHeaderRows` count in the `QueryRowHeight` event.
+By default, auto height is supported for [StackedHeaderRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.StackedHeaderRows.html) in `QueryRowHeight` event. To specify the auto height for the stacked header row alone, check the row index with `StackedHeaderRows` count in the `QueryRowHeight` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -437,7 +437,7 @@ End Function
 
 ## Change add new row height
 
-The height of the add new row can be set by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsAddNewRowIndex.html) method within the `QueryRowHeight` event.  
+The height of the add new row can be set by using [SfDataGrid.IsAddNewRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsAddNewRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_) method within the `QueryRowHeight` event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -470,7 +470,7 @@ End Sub
 
 ## Change filter row height
 
-The height of the filter row can be set by using [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsFilterRowIndex.html) method within the `QueryRowHeight` event.  
+The height of the filter row can be set by using [SfDataGrid.IsFilterRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsFilterRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_) method within the `QueryRowHeight` event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -604,7 +604,7 @@ End Function
 ![Change group summary row height](RowHeightCustomization_images/RowHeightCustomization_img12.png)
 
 ## Change TableSummaryRow Height 
-The row height of the table summary row can be changed in the `QueryRowHeight` event by using the [IsTableSummaryIndex](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DataGridIndexResolver~IsTableSummaryIndex.html) method. This method will check and return `true`, if the given row index is the table summary row otherwise return false.
+The row height of the table summary row can be changed in the `QueryRowHeight` event by using the [IsTableSummaryIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsTableSummaryIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method. This method will check and return `true`, if the given row index is the table summary row otherwise return false.
 
 {% tabs %}
 {% highlight c# %}

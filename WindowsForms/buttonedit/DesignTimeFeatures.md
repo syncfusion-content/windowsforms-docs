@@ -9,7 +9,7 @@ documentation: ug
 
 # Design Time Features
 
-[ButtonEdit](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control has Smart Tag, which lets you customize the properties easily.
+[ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control has Smart Tag, which lets you customize the properties easily.
 
 ![DesignTime features of ButtonEdit](DesignTime_Features_images/DesignTime_Features_img1.png) 
 

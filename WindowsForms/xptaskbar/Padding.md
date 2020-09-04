@@ -12,7 +12,7 @@ documentation: ug
 
 The interior spacing of the XPTaskBar control can be specified by setting the DockPadding property to integer values.
 
-The horizontal and vertical padding can be specified using the [HorizontalPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~HorizontalPadding.html) and [VerticalPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBar~VerticalPadding.html) properties. The default value of the both is 'Zero'.
+The horizontal and vertical padding can be specified using the [HorizontalPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_HorizontalPadding) and [VerticalPadding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html#Syncfusion_Windows_Forms_Tools_XPTaskBar_VerticalPadding) properties. The default value of the both is 'Zero'.
 
 {% tabs %}
 {% highlight C# %}
@@ -31,7 +31,7 @@ Me.xpTaskBar1.VerticalPadding = 3
 
 ### Padding settings for XPTaskBar box header
 
-Padding provides spacing between the text of the header and it's borders. Horizontal and vertical padding can be set using the [PADX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~PADX.html) and [PADY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~PADY.html) properties.
+Padding provides spacing between the text of the header and it's borders. Horizontal and vertical padding can be set using the [PADX](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_PADX) and [PADY](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_PADY) properties.
 
 {% tabs %}
 {% highlight C# %}  

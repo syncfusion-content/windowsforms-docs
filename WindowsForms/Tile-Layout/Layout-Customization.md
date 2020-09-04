@@ -12,7 +12,7 @@ documentation: ug
 
 ## Alignment
 
-This [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout~Alignment.html) property sets the [MainLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout_properties.html) group alignment in [TileLayout](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TileLayout.html) control.
+This [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html#Syncfusion_Windows_Forms_Tools_FlowLayout_Alignment) property sets the [MainLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) group alignment in [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control.
 
 
 {% tabs %}
@@ -45,7 +45,7 @@ Me.tileLayout1.MainLayout.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignme
 
 ### HorzNearMargin
 
-[HorzNearMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzNearMargin.html) indicates the left margin between the client rectangle and layout rectangle.
+[HorzNearMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutManager.html#Syncfusion_Windows_Forms_Tools_LayoutManager_HorzNearMargin) indicates the left margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ Me.tileLayout1.MainLayout.HorzNearMargin = 100
 
 ### HorzFarMargin
 
-[HorzFarMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~HorzFarMargin.html) indicates the right margin between the client rectangle and the layout rectangle.
+[HorzFarMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutManager.html#Syncfusion_Windows_Forms_Tools_LayoutManager_HorzFarMargin) indicates the right margin between the client rectangle and the layout rectangle.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ Me.tileLayout1.MainLayout.HorzFarMargin = 100
 
 ### TopMargin
 
-[TopMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~TopMargin.html) indicates the Top margin between the client rectangle and layout rectangle.
+[TopMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutManager.html#Syncfusion_Windows_Forms_Tools_LayoutManager_TopMargin) indicates the Top margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ Me.tileLayout1.MainLayout.TopMargin = 20
 
 ### BottomMargin
 
-[BottomMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.LayoutManager~BottomMargin.html) indicates the Bottom margin between the client rectangle and layout rectangle.
+[BottomMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutManager.html#Syncfusion_Windows_Forms_Tools_LayoutManager_BottomMargin) indicates the Bottom margin between the client rectangle and layout rectangle.
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ Me.tileLayout1.MainLayout.BottomMargin = 100
 
 ### ReverseRows
 
-This [ReverseRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.FlowLayout~ReverseRows.html) property lays out the rows in opposite direction. If the LayoutMode is Horizontal then it lays out rows in Top to Bottom direction. If the LayoutMode is Vertical then it lays out the rows in Left to Right direction.
+This [ReverseRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FlowLayout.html#Syncfusion_Windows_Forms_Tools_FlowLayout_ReverseRows) property lays out the rows in opposite direction. If the LayoutMode is Horizontal then it lays out rows in Top to Bottom direction. If the LayoutMode is Vertical then it lays out the rows in Left to Right direction.
 
 {% tabs %}
 

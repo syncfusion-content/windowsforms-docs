@@ -9,13 +9,13 @@ documentation: ug
 
 # Extract Text from PDF Files
 
-PDF Viewer allows you to extract the text from a particular page or from the entire PDF file using the [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView~ExtractText.html) methods of [PdfDocumentView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html). 
+PDF Viewer allows you to extract the text from a particular page or from the entire PDF file using the [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_Forms_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) methods of [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html). 
 
 N> PDF Viewer uses PDFium as a default rendering engine to extract text from PDF files. Refer to this [link](https://help.syncfusion.com/windowsforms/pdf-viewer/pdf-rendering-engines) for more details about the PDF rendering engines.
 
 ## Extract text from a particular page
 
-You can extract the text from a page using [ExtractText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method in [PdfDocumentView](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) class. The following code sample explains how to extract the text from the first page.
+You can extract the text from a page using [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_Forms_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) method in [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) class. The following code sample explains how to extract the text from the first page.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ namespace TextExtractionDemo
 
 ### Extract lines
 
-You can get the text line by line along with the bounds using the [TextLines](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLines.html) property from the [ExtractText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perform the same.
+You can get the text line by line along with the bounds using the [TextLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.TextLines.html) property from the [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_Forms_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) method. Refer to the following code sample to perform the same.
 
 {% tabs %}
 {% highlight C# %}
@@ -128,7 +128,7 @@ namespace TextExtractionDemo
 
 ### Extract words
  
-You can get the words in a line along with the bounds using the [WordCollection](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine~WordCollection.html) property of the [TextLine](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine_members.html) using [ExtractText](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perform the same.
+You can get the words in a line along with the bounds using the [WordCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.TextLine.html#Syncfusion_Pdf_TextLine_WordCollection) property of the [TextLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.TextLine.html) using [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_Forms_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) method. Refer to the following code sample to perform the same.
 
 {% tabs %}
 {% highlight C# %}

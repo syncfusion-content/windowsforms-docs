@@ -9,7 +9,7 @@ documentation: ug
 
 # How to modify HubTile image transition direction in runtime?
 
-You can set HubTile [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SlideTransition.html) property to achieve this.
+You can set HubTile [SlideTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_SlideTransition) property to achieve this.
 
 {% tabs %}
 {% highlight C# %} 

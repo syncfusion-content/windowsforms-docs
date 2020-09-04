@@ -239,7 +239,7 @@ End Sub
 ![Tab groups created by code](Tab-Groups_images/Tab-Groups_img2.jpeg)
 
 
-The [AllowTabGroupCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~AllowTabGroupCustomizing.html) property indicates whether the user can drag and drop tabs (child forms) from one tab group to another.
+The [AllowTabGroupCustomizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_AllowTabGroupCustomizing) property indicates whether the user can drag and drop tabs (child forms) from one tab group to another.
 
 The below methods can be used for specific functionalities in TabGroups.
 
@@ -280,7 +280,7 @@ Creates a new vertical tab group, moving the active child form to that group.</t
 
 ## Border color
 
-To set the Border Color of the borders that appear under the MDI tabs, we can use the [BottomBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabHost~BottomBorderColor.html) property of TabGroupHosts.
+To set the Border Color of the borders that appear under the MDI tabs, we can use the [BottomBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabHost.html#Syncfusion_Windows_Forms_Tools_TabHost_BottomBorderColor) property of TabGroupHosts.
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ tabbedMDIManager.TabGroupHosts(1).BottomBorderColor = Color.Green
 
 ## Border height
 
-To set the Border Height of the borders, we can use the [BottomBorderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabHost~BottomBorderHeight.html) property of TabGroupHosts.
+To set the Border Height of the borders, we can use the [BottomBorderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabHost.html#Syncfusion_Windows_Forms_Tools_TabHost_BottomBorderHeight) property of TabGroupHosts.
 
 {% tabs %}
 

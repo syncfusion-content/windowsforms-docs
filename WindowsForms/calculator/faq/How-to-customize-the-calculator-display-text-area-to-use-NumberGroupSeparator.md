@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Customize the Calculator Display Text Area to Use NumberGroupSeparator
 
-The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
+The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) by default does not allow the use of NumberGroupSeparator like in DoubleTextBox. 
 
 ![Number group](Overview_images/Overview_img129.jpeg) 
 
-So to achieve this we need to derive the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and override the CreateCalculatorDisplayBox() method.
+So to achieve this we need to derive the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and override the CreateCalculatorDisplayBox() method.
 
 {% tabs %}
 {% highlight c# %}

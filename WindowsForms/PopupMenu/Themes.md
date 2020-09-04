@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes 
 
-Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem~Style.html) property is used to set the visual style of PopupMenu control. This control provides the following theming options:
+Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_Style) property is used to set the visual style of PopupMenu control. This control provides the following theming options:
 
 * Default
 * Metro

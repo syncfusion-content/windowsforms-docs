@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Get Around this Behavior
 
-In order to work around this behavior, you can set a Boolean flag and cancel the [`BeforeCloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.PopupControlContainer~BeforeCloseUp_EV.html) event as shown below.
+In order to work around this behavior, you can set a Boolean flag and cancel the [`BeforeCloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event as shown below.
 
 {% tabs %}
 {% highlight c# %}

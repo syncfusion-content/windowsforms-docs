@@ -23,7 +23,7 @@ The following steps describe how to create an **SfCalendar** control via designe
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) Add the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2) Add the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
@@ -61,7 +61,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-4) Create an instance of the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) control instance, and then add it to the form.
+4) Create an instance of the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control instance, and then add it to the form.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ End Sub
 
 ## Date range
 
-The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar.html) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~MaxDate.html) properties, respectively.
+The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
 
 {% tabs %}
 
@@ -200,7 +200,7 @@ calendar.MaxDate = New DateTime(2018, 1, 25)
 
 ## Blackout dates
 
-[BlackoutDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict users from selecting it. A date collection can be provided to set the `BlackoutDates` for this control.
+[BlackoutDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_BlackoutDates) refers the disabled dates that restrict users from selecting it. A date collection can be provided to set the `BlackoutDates` for this control.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 20))
 
 ## Special dates
 
-The **SfCalendar** allows you to highlight special dates with icons and descriptions. Special dates can be added to the calendar using the [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~SpecialDates.html) collection.
+The **SfCalendar** allows you to highlight special dates with icons and descriptions. Special dates can be added to the calendar using the [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) collection.
 
 The following code sample demonstrates how to add special dates to the calendar.
 
@@ -288,7 +288,7 @@ calendar.SpecialDates = SpecialDates
 
 ## Allow multiple selection
 
-The **SfCalendar** control allows you to select multiple dates by setting the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~AllowMultipleSelection.html) property to true.
+The **SfCalendar** control allows you to select multiple dates by setting the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_AllowMultipleSelection) property to true.
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ calendar.AllowMultipleSelection = True
 
 ## Configure first day of week
 
-The first day of a week can be changed by setting the [FirstDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~FirstDayOfWeek.html) property. 
+The first day of a week can be changed by setting the [FirstDayOfWeek](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_FirstDayOfWeek) property. 
 
 {% tabs %}
 
@@ -336,7 +336,7 @@ Me.SfCalendar1.FirstDayOfWeek = DayOfWeek.Monday
 
 ## Configure to show week number
 
-The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfCalendar~ShowWeekNumbers.html) property to true as follows:
+The week number of current week in a year can be shown in the calendar control by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowWeekNumbers) property to true as follows:
 
 {% tabs %}
 

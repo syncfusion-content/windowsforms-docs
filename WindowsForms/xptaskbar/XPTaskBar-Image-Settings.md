@@ -12,12 +12,12 @@ This section discusses the image settings available in XPTaskBar.
 
 ## Adding images to the XPTaskBar box header
 
-We can add images to the header of the XPTaskBar Box using the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ImageList.html) control and some properties that are discussed below.
+We can add images to the header of the XPTaskBar Box using the [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ImageList) control and some properties that are discussed below.
 
-* [HeaderImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderImageList.html)
-* [HeaderImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderImageIndex.html)
+* [HeaderImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderImageList)
+* [HeaderImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderImageIndex)
 
-Drag and drop the ImageList control onto the form and add images to it using the Image Collection Editor. To include an image in the header, set the [HeaderImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderImageList.html) property to an ImageList containing the image and also set the [HeaderImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~HeaderImageIndex.html) property to refer to a specific image within the above list.
+Drag and drop the ImageList control onto the form and add images to it using the Image Collection Editor. To include an image in the header, set the [HeaderImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderImageList) property to an ImageList containing the image and also set the [HeaderImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_HeaderImageIndex) property to refer to a specific image within the above list.
 
 {% tabs %}
 
@@ -52,8 +52,8 @@ Image added to the TaskBar Box Header
 
 Images can be easily associated with the ImageIndex property of the XPTaskBar Items.
 
-* [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarBox~ImageList.html)
-* [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPTaskBarItem~ImageIndex.html)
+* [ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html#Syncfusion_Windows_Forms_Tools_XPTaskBarBox_ImageList)
+* [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html#Syncfusion_Windows_Forms_Tools_XPTaskBarItem_ImageIndex)
 
 The ImageIndex of the XPTaskBar Items can be specified in the XPTaskBarItem Collection Editor.
 

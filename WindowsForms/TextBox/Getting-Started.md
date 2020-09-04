@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with TextBoxExt
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) with its basic functionalities.
 
 ## Assembly deployment
 
@@ -27,7 +27,7 @@ Create new Windows Forms Project in Visual Studio to display TextBoxExt with dif
 
 ### Adding the TextBoxExt control via designer
 
-The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
+The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
 ![Drag and drop TextBoxExt from toolbox](Creating-TextBoxExt_images/Creating-TextBoxExt_img1.png)
 
@@ -57,7 +57,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
+4) Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
 
 {% tabs %}
 
@@ -85,8 +85,8 @@ Me.Controls.Add(textBoxExt1)
 
 The size to the `TextBoxExt` control can be applied using the following properties:
 
-* [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MaximumSize.html)
-* [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.TextBoxExt~MinimumSize.html)
+* [MaximumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MaximumSize)
+* [MinimumSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_MinimumSize)
 
 {% tabs %}
 

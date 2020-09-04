@@ -19,7 +19,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-in
 
 1) Create a new Windows Forms application in Visual Studio.
 
-2) The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2) The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -49,7 +49,7 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-4) Create an instance of [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.EditableList.html), and add it to the form.
+4) Create an instance of [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html), and add it to the form.
 
 {% tabs %}
 {% highlight C# %}

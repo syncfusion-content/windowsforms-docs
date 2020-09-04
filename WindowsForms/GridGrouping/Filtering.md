@@ -751,11 +751,11 @@ filter.WireGrid(Me.gridGroupingControl1)
 The default icons of `GridExcelFilter` can be customized for column headers and stacked headers. To set the filter icon, custom cell renderer and cell model needs to be created. 
 
 ### Customizing Filter Icon for Column Headers
-To customize the filter icon for column headers, the cell model and cell renderer of [GridExcelFilterCellModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellModel.html) and [GridExcelFilterCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html) should be overridden. The icons for the column headers can be customized using the below properties,
+To customize the filter icon for column headers, the cell model and cell renderer of [GridExcelFilterCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilterCellModel.html) and [GridExcelFilterCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html) should be overridden. The icons for the column headers can be customized using the below properties,
 
- * [FilterIconSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilterIconSize.html) - Sets the size of the `GridExcelFilter` filter icon.
- * [FilterIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilterIcon.html) - Sets the Bitmap of the Filter icon.
- * [FilteredIcon](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer~FilteredIcon.html) - Sets the Bitmap of the Filtered icon.
+ * [FilterIconSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html#Syncfusion_GridHelperClasses_GridExcelFilterCellRenderer_FilterIconSize) - Sets the size of the `GridExcelFilter` filter icon.
+ * [FilterIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html#Syncfusion_GridHelperClasses_GridExcelFilterCellRenderer_FilterIcon) - Sets the Bitmap of the Filter icon.
+ * [FilteredIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilterCellRenderer.html#Syncfusion_GridHelperClasses_GridExcelFilterCellRenderer_FilteredIcon) - Sets the Bitmap of the Filtered icon.
 
 The following is the process of creating cell model and cell renderer for customizing the column headers filter icon,
 
@@ -847,11 +847,11 @@ gridGroupingControl1.TableControl.CellRenderers("ColumnHeaderCell") = New GridEx
 ![Customizing Filter Icon for Column Headers](Filtering_images/Filtering_img27.png)
  
 ### Customizing Filter Icon for StackedHeaders
-To customize the filter icon for stacked headers, the cell model and cell renderer of [StackedHeaderCellModel](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellModel.html) and [StackedHeaderCellRenderer](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html) should be overridden. The icons for the stacked headers can be customized using the below properties.
+To customize the filter icon for stacked headers, the cell model and cell renderer of [StackedHeaderCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.StackedHeaderCellModel.html) and [StackedHeaderCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html) should be overridden. The icons for the stacked headers can be customized using the below properties.
 
- *  [FilterIconSize](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilterIconSize.html)- Sets the size of the `GridExcelFilter` filter icon.
- * [FilterIconImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilterIconImage.html)- Sets the Bitmap of the Filter icon.
- * [FilteredIconImage](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.StackedHeaderCellRenderer~FilteredIconImage.html)- Sets the Bitmap of the Filtered icon.
+ *  [FilterIconSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html#Syncfusion_GridHelperClasses_StackedHeaderCellRenderer_FilterIconSize)- Sets the size of the `GridExcelFilter` filter icon.
+ * [FilterIconImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html#Syncfusion_GridHelperClasses_StackedHeaderCellRenderer_FilterIconImage)- Sets the Bitmap of the Filter icon.
+ * [FilteredIconImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.StackedHeaderCellRenderer.html#Syncfusion_GridHelperClasses_StackedHeaderCellRenderer_FilteredIconImage)- Sets the Bitmap of the Filtered icon.
  
 The following is the process of creating custom cell model and cell renderer for customizing the stacked headers filter icon,
 

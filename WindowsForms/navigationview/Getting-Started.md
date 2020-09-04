@@ -83,7 +83,7 @@ To add the control manually in C#, follow the given steps:
 
 ## Add breadcrumb nodes
 
-To add root bar, create a new instance to bar, and add it to the [Bars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationView~Bars.html) collection property in NavigationView. To add child bar, create an instance, and add it to the Bars collection property in its root bar.
+To add root bar, create a new instance to bar, and add it to the [Bars](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationView.html#Syncfusion_Windows_Forms_Tools_NavigationView_Bars) collection property in NavigationView. To add child bar, create an instance, and add it to the Bars collection property in its root bar.
 
 {% tabs %}
 {% highlight C# %}

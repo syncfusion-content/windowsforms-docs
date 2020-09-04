@@ -19,7 +19,7 @@ To explore those properties, refer to the [Data source settings](http://help.syn
 ## XML data binding
 
 Diagram can be populated based on the user defined XML data by mapping the relevant data source fields.
-To map the user defined XML data with Diagram, you have to configure the [DataSource](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows~Syncfusion.Windows.Forms.Diagram.Binding~DataSource.html) fields. The following code example illustrates how to bind XML data with the Diagram.
+To map the user defined XML data with Diagram, you have to configure the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Binding.html#Syncfusion_Windows_Forms_Diagram_Binding_DataSource) fields. The following code example illustrates how to bind XML data with the Diagram.
 
 {% highlight xml %}
 

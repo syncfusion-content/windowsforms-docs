@@ -15,7 +15,7 @@ The sorting operation can be performed in the pivot grid control using any of th
 
 ## Using custom comparer programmatically
 
-By default, the pivot grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotItem~Comparer.html) property of pivot item.
+By default, the pivot grid control populates the data in the ascending order. This sorting order can be changed by using the [Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html#Syncfusion_PivotAnalysis_Base_PivotItem_Comparer) property of pivot item.
 
 {% tabs %}
 

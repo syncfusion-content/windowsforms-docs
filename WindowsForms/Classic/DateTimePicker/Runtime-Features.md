@@ -12,7 +12,7 @@ This section covers the below topics:
 
 ## Month Images
 
-We can set images for the popup menu of the Calendar using [MonthImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~MonthImageList.html) property of DateTimePickerAdv control.
+We can set images for the popup menu of the Calendar using [MonthImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_MonthImageList) property of DateTimePickerAdv control.
 
 {% tabs %}
 
@@ -44,10 +44,10 @@ Me.dateTimePickerAdv1.MonthImageList = Me.imageList1
 
 At run time, user can easily navigate between values in the text field like date, month, year, time using the TAB key. The below properties settings are necessary for tabbing between the fields.
 
-* [TabStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabStop.html)
-* [TabForwarding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabForwarding.html)
+* [TabStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_TabStop)
+* [TabForwarding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_TabForwarding)
 * [TabIndex](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.tabindex?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_TabIndex)
-* [TabLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~TabLeave.html)
+* [TabLeave](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_TabLeave)
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ When you right-click on a DateTimePickerAdv control at run time, a context menu 
 
 ![Context menu](Calendar_Images/Overview_img211.jpeg)
 
-This default context menu can be replaced with Syncfusion XP Menu by setting [UseEnhancedMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~UseEnhancedMenu.html) property to true. By default it is set to false. 
+This default context menu can be replaced with Syncfusion XP Menu by setting [UseEnhancedMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_UseEnhancedMenu) property to true. By default it is set to false. 
 
 {% tabs %}
 
@@ -106,10 +106,10 @@ The menu options are:
 * Paste - Pastes the copied date.
 * No Date/Time - Selects no date and displays "No Date is selected".
 
-We can set the text value format that is copied to the clipboard using [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ClipboardFormat.html) property.
+We can set the text value format that is copied to the clipboard using [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ClipboardFormat) property.
 
-* [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~ClipboardFormat.html)
-* [CopyFieldsOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~CopyFieldsOnly.html)
+* [ClipboardFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ClipboardFormat)
+* [CopyFieldsOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CopyFieldsOnly)
 
 {% tabs %}
 

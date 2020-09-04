@@ -15,7 +15,7 @@ This section discusses the Interactive Features of TabControlAdv.
 
 Tooltip can be enabled for child windows or tabs using the below code snippet, where doc is the new child form that is created.
 
-The [GetTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~GetTooltip.html) method is used to set the Tooltips for the tabs.
+The [GetTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_GetTooltip_System_Windows_Forms_Form_) method is used to set the Tooltips for the tabs.
 
 Methods table
 
@@ -61,7 +61,7 @@ Me.TabbedMDIManager.GetTooltip(doc, "Tooltip for " + doc.Text)
 
 The TabbedMDI Layout mode enables the default Context Menu that pops-up whenever the user right-clicks on any of the tabs.
 
-The [ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabbedMDIManager~ContextMenuItem.html) property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
+The [ContextMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_ContextMenuItem) property is used to select the context menu that should be used along with the default tab context menu when the user right-clicks on a tab.
 
 Below image will reproduce the Context Menu feature available in an MDI application in TabbedMDI mode.
 

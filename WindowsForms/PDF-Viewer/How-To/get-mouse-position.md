@@ -9,11 +9,11 @@ documentation: ug
 
 # Get a mouse position to the page
 
-The [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) notifies, you when performing the mouse click and mouse move operations in the PDF pages through the `PageClicked` and `PageMouseMove` events respectively. It also provides information such as the page index and mouse position to the page.
+The [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) notifies, you when performing the mouse click and mouse move operations in the PDF pages through the `PageClicked` and `PageMouseMove` events respectively. It also provides information such as the page index and mouse position to the page.
 
 ## Page clicked event
 
-The `PageClicked` event occurs when performing the mouse click operation on a PDF page, which is being displayed in the viewer. It provides the page index and the mouse position information through the `PageClickedEventArgs`. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
+The `PageClicked` event occurs when performing the mouse click operation on a PDF page, which is being displayed in the viewer. It provides the page index and the mouse position information through the `PageClickedEventArgs`. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ namespace PageMouseEventsDemo
 
 ## Page mouse move event
 
-The `PageMouseMove` event occurs when the mouse moves over a PDF page that is being displayed in the viewer. It provides the page index and the mouse position information through the `PageMouseMoveEventArgs`. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PdfViewer.Windows~Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
+The `PageMouseMove` event occurs when the mouse moves over a PDF page that is being displayed in the viewer. It provides the page index and the mouse position information through the `PageMouseMoveEventArgs`. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
 
 {% tabs %}
 {% highlight c# %}

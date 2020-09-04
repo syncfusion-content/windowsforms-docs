@@ -15,8 +15,8 @@ The splitter in the TabSplitterContainer control has in-built options for changi
 
 
 
-* Primary Page - We can add primary pages using [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~PrimaryPages.html) property. It invokes TabSplitterPage Collection Editor and lets you add primary pages.
-* Secondary Page - We can add secondary pages using [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterContainer~SecondaryPages.html) property. It invokes TabSplitterPage Collection Editor and lets you add secondary pages.
+* Primary Page - We can add primary pages using [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_PrimaryPages) property. It invokes TabSplitterPage Collection Editor and lets you add primary pages.
+* Secondary Page - We can add secondary pages using [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SecondaryPages) property. It invokes TabSplitterPage Collection Editor and lets you add secondary pages.
 * Swap Button - This button lets you to swap between the primary and secondary pages.
 * Vertical Orientation - Sets the orientation of the splitter to be vertical.
 * Horizontal Orientation - Sets the orientation of the splitter to be horizontal.
@@ -29,10 +29,10 @@ The properties which customizes the Splitter page are as follows.
 * [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.panel.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Panel_BorderStyle)
 * [BackgroundImage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage)
 * [BackgroundImageLayout](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayout?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImageLayout)
-* [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~Image.html)
-* [ImageTransparencyColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~ImageTransparentColor.html)
-* [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~Text.html)
-* [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabSplitterPage~ToolTip.html)
+* [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_Image)
+* [ImageTransparencyColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_ImageTransparentColor)
+* [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_Text)
+* [Tooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterPage.html#Syncfusion_Windows_Forms_Tools_TabSplitterPage_ToolTip)
 * [Visible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.visible?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Visible)
 
 {% tabs %}

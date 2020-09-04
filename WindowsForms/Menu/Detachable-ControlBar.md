@@ -11,7 +11,7 @@ documentation: ug
 
 Control bars enables application developers to add dock-able / floatable controls to their form's toolbar layout. A common example of a control bar is the task pane window found in the Microsoft Office 2003 product suite.
 
-A [`ControlBar`](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ControlBar.html) is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. Control bars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dock-able control.
+A [`ControlBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ControlBar.html) is a full-featured docking container that can host any control and be docked along the border of the host form or floated as a top-level window. Control bars, however, differ from traditional docking windows by adopting the characteristic layout behavior of a toolbar rather than that of a classic dock-able control.
 
 ## Adding control bar via designer
 

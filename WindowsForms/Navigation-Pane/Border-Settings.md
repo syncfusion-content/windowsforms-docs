@@ -10,7 +10,7 @@ documentation: ug
 
 ## GroupBar settings
 
-The border style of the GroupBar can be set using the [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~BorderStyle.html) property.
+The border style of the GroupBar can be set using the [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_BorderStyle) property.
 
 {% tabs %}
 
@@ -37,8 +37,8 @@ Me.groupBar1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
 
 The border of the GroupBar Item client area can be set and customized using the following properties.
 
-* [DrawClientBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~DrawClientBorder.html)
-* [ClientBorderColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBarItem~ClientBorderColors.html)
+* [DrawClientBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_DrawClientBorder)
+* [ClientBorderColors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBarItem.html#Syncfusion_Windows_Forms_Tools_GroupBarItem_ClientBorderColors)
 
 {% tabs %}
 

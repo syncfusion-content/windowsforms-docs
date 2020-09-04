@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and drop tabs in Windows Forms Tabbed Form (SfTabbedForm)
 
-Tabbed Form allows move the tabs from one position to another position by dragging the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~AllowDraggingTabs.html) property to `true`.
+Tabbed Form allows move the tabs from one position to another position by dragging the corresponding tab. This can be done by setting the [TabbedFormControl.AllowDraggingTabs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_AllowDraggingTabs) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ tabbedFormControl.AllowDraggingTabs = True
 
 ## Cancel tab dragging
 
-Dragging a particular tab in `TabbedForm` can be canceled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
+Dragging a particular tab in `TabbedForm` can be canceled by handling the [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs.html#Syncfusion_Windows_Forms_Tools_TabDraggingEventArgs_Action) is [TabDraggingAction.DragStarting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingAction.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -49,7 +49,7 @@ End Sub
 
 ## Cancel tab reordering
 
-Re-ordering a tab to a particular position can be canceled by handling [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabDragging_EV.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs~Action.html) is [TabDraggingAction.DragDropping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TabDraggingAction.html).
+Re-ordering a tab to a particular position can be canceled by handling [TabDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event by setting `e.Cancel` to `true` when [e.Action](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingEventArgs.html#Syncfusion_Windows_Forms_Tools_TabDraggingEventArgs_Action) is [TabDraggingAction.DragDropping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabDraggingAction.html).
 
 {% tabs %}
 {% highlight c# %}

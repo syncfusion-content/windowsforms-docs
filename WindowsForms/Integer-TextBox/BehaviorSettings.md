@@ -15,8 +15,8 @@ The behavior settings of the IntegerTextBox control are discussed below.
 
 The integer value of the IntegerTextBox can be reset or changed to a negative value using the properties given below.
 
-* [DeleteSelectionOnNegative](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumericTextBox~DeleteSelectionOnNegative.html)
-* [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.NumberTextBoxBase~NegativeInputPendingOnSelectAll.html)
+* [DeleteSelectionOnNegative](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumericTextBox.html#Syncfusion_Windows_Forms_Tools_NumericTextBox_DeleteSelectionOnNegative)
+* [NegativeInputPendingOnSelectAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NumberTextBoxBase.html#Syncfusion_Windows_Forms_Tools_NumberTextBoxBase_NegativeInputPendingOnSelectAll)
 
 {% tabs %}
 {% highlight C# %}
@@ -31,7 +31,7 @@ Me.integerTextBox1.NegativeInputPendingOnSelectAll = True
 
 ## AllowLeadingZeros
 
-The [AllowLeadingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.IntegerTextBox~AllowLeadingZeros.html) property can be used to include zeros before the beginning value of the integer value of the control.
+The [AllowLeadingZeros](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IntegerTextBox.html#Syncfusion_Windows_Forms_Tools_IntegerTextBox_AllowLeadingZeros) property can be used to include zeros before the beginning value of the integer value of the control.
 
 {% tabs %}
 {% highlight C# %}

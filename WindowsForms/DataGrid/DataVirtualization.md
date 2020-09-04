@@ -8,8 +8,8 @@ documentation: ug
 ---
 
 # Data Virtualization
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data.
-The large amount of data can be loaded in less time by setting [SfDataGrid.EnableDataVirtualization](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~EnableDataVirtualization.html) property to `true`.
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data.
+The large amount of data can be loaded in less time by setting [SfDataGrid.EnableDataVirtualization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EnableDataVirtualization) property to `true`.
 
 {% tabs %}
 {% highlight c# %}

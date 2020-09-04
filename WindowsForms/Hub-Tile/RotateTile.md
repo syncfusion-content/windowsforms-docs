@@ -30,7 +30,7 @@ Me.HubTile1.TileType = HubTileType.RotateTile
 
 ## Horizontal transition
 
-You can rotate the tile is horizontally or vertically using [RotationTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~RotationTransition.html) property.
+You can rotate the tile is horizontally or vertically using [RotationTransition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_RotationTransition) property.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ Me.HubTile1.RotationTransition = TileFlipDirection.Vertical
 
 ## Transition speed
 
-In HubTile, rotation speed can be increased or decreased by the [RotationTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~RotationTransitionSpeed.html) property.
+In HubTile, rotation speed can be increased or decreased by the [RotationTransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_RotationTransitionSpeed) property.
 
 {% tabs %}
 

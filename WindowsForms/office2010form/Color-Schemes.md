@@ -91,7 +91,7 @@ Me.UseOffice2010SchemeBackColor = True
   
 ## Applying color schemes
 
-Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Office2010Form~ApplyAeroTheme.html) property.
+Office2010Form now have the option to apply the Aero theme on forms, which provides a glassy effect. This can be done through the [ApplyAeroTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_ApplyAeroTheme) property.
 
 Aero theme support is available for Office2010Form when used on Windows Vista machines. Previously, ColorSchemes could not be applied to the Office2010Form when the Aero theme was enabled. Now, ColorSchemes can be applied by disabling the Aero theme on Office2010Form.
 

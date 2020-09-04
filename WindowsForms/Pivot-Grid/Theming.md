@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming
 
-Pivot grid provides support for various built-in themes, using which the default look of visual elements in the pivot grid control can be customized. This support can be achieved by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Windows~Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl~GridVisualStyles.html) property of pivot grid control.
+Pivot grid provides support for various built-in themes, using which the default look of visual elements in the pivot grid control can be customized. This support can be achieved by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_GridVisualStyles) property of pivot grid control.
 
 ## Metro theme
 
@@ -120,7 +120,7 @@ Me.pivotGridControl1.GridVisualStyles = GridVisualStyles.Office2007Silver
 
 ## Events
 
-The **[ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~ThemeChanged_EV.html)** event occurs when the default theme of pivot grid control gets changed.
+The **[ThemeChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html)** event occurs when the default theme of pivot grid control gets changed.
 
 A demo sample is available in the following location.
 

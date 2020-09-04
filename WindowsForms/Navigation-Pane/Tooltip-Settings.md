@@ -10,9 +10,9 @@ documentation: ug
 
 The tooltips for the buttons and the navigation pane are set through the below properties.
 
-[ExpandButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~ExpandButtonToolTip.html)
-[MinimizeButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~MinimizeButtonToolTip.html)
-[NavigationPaneTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GroupBar~NavigationPaneTooltip.html)
+[ExpandButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ExpandButtonToolTip)
+[MinimizeButtonTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_MinimizeButtonToolTip)
+[NavigationPaneTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_NavigationPaneTooltip)
 
 {% tabs %}
 

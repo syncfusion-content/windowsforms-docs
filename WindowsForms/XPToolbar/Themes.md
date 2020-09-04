@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes
 
-Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarControlInternal~Style.html) property is used to set the visual style of the XPToolBar control. This control provides the following theming options:
+Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/) property is used to set the visual style of the XPToolBar control. This control provides the following theming options:
 
 * Default
 * Metro

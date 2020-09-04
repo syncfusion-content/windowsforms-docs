@@ -11,19 +11,19 @@ documentation: ug
 
 The Events available in HubTile are as follows,
 
-* [BeforeTransition Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BeforeTransition_EV.html)
-* [TransitionCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~TransitionCompleted_EV.html)
-* [SelectionMarked Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SelectionMarked_EV.html)
-* [ZoomCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ZoomCompleted_EV.html)
-* [TextChanged Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~TextChanged_EV.html)
+* [BeforeTransition Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html)
+* [TransitionCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html)
+* [SelectionMarked Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html)
+* [ZoomCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html)
+* [TextChanged Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html)
 
 ## BeforeTransition event
 
-This [BeforeTransition Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~BeforeTransition_EV.html) is triggered before the Image and Rotation Transition occur in HubTile.
+This [BeforeTransition Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html) is triggered before the Image and Rotation Transition occur in HubTile.
 
 ### Event data
 
-[BeforeTransitionEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.BeforeTransitionEventArgs.html) contain the members that provide information specific to this Event.
+[BeforeTransitionEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.BeforeTransitionEventArgs.html) contain the members that provide information specific to this Event.
 
 {% tabs %}
 {% highlight C# %}  
@@ -47,11 +47,11 @@ End Sub
 
 ## TransitionCompleted event
 
-This [TransitionCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~TransitionCompleted_EV.html) is triggered after the image Transition and Rotation Transition are completed in HubTile.
+This [TransitionCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html) is triggered after the image Transition and Rotation Transition are completed in HubTile.
 
 ### Event data
 
-[TransitionCompletedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.TransitionCompletedEventArgs.html) contain the members that provide information specific to this Event.
+[TransitionCompletedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TransitionCompletedEventArgs.html) contain the members that provide information specific to this Event.
 
 {% tabs %}
 {% highlight C# %}  
@@ -74,11 +74,11 @@ End Sub
 
 ## SelectionMarked event
 
-This [SelectionMarked Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~SelectionMarked_EV.html) is triggered once the HubTile is Selection marked.
+This [SelectionMarked Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html) is triggered once the HubTile is Selection marked.
 
 ### Event data
 
-The event handler of this event receives an argument of type [SelectionMarkedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SelectionMarkedEventArgs.html).
+The event handler of this event receives an argument of type [SelectionMarkedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SelectionMarkedEventArgs.html).
 
 {% tabs %}
 {% highlight C# %}  
@@ -96,11 +96,11 @@ End Sub
 
 ## ZoomCompleted event
 
-This [ZoomCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~ZoomCompleted_EV.html) is triggered after the HubTile image content is Zoomed In and Out.
+This [ZoomCompleted Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html) is triggered after the HubTile image content is Zoomed In and Out.
 
 ### Event data
 
-The event handler of this event receives an argument of type [ZoomCompletedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.ZoomCompletedEventArgs.html).
+The event handler of this event receives an argument of type [ZoomCompletedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ZoomCompletedEventArgs.html).
 	
 {% tabs %}
 {% highlight C# %}  
@@ -120,7 +120,7 @@ End Sub
 
 #### TextChanged event
 
-This [TextChanged Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.HubTile~TextChanged_EV.html) raises when HubTile Title, Body, Footer, Banner Text are changed.
+This [TextChanged Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html) raises when HubTile Title, Body, Footer, Banner Text are changed.
 
 {% tabs %}
 {% highlight C# %}  

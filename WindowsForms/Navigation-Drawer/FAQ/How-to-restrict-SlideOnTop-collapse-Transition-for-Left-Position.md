@@ -13,7 +13,7 @@ This requirement can be achieved by handling the Closing Event.
 
 **Closing event**
 
-This [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Closing_EV.html) event occurs before DrawerPanel Collapsing initialized.
+This [Closing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) event occurs before DrawerPanel Collapsing initialized.
 
 {% tabs %}
 {% highlight c# %}

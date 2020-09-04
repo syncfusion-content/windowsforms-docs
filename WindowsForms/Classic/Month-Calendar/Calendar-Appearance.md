@@ -12,13 +12,13 @@ This section comprises the appearance settings under the following topics:
 
 ## Border styles
 
-The wide variety of border options are available for [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
+The wide variety of border options are available for [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html) control when they are in 2D or in 3D mode. The properties in the below table illustrates the border settings.
 
-* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderStyle.html)
-* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~Border3DStyle.html)
-* [BorderSingle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderSingle.html)
-* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.Tools.GradientPanel~BorderSides.html)
-* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.DateTimePickerAdv~BorderColor.html)
+* [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html#Syncfusion_Windows_Forms_Tools_GradientPanel_BorderStyle)
+* [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html#Syncfusion_Windows_Forms_Tools_GradientPanel_Border3DStyle)
+* [BorderSingle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html#Syncfusion_Windows_Forms_Tools_GradientPanel_BorderSingle)
+* [BorderSides](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanel.html#Syncfusion_Windows_Forms_Tools_GradientPanel_BorderSides)
+* [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_BorderColor)
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ Me.dateTimePickerAdv1.Border3DStyle = System.Windows.Forms.Border3DStyle.SunkenI
 
 ## Background settings
 
-Background image for the MonthCalendarAdv is specified in [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~BackgroundImage.html) property.
+Background image for the MonthCalendarAdv is specified in [BackgroundImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_BackgroundImage) property.
 
 {% tabs %}
 
@@ -132,9 +132,9 @@ Me.monthCalendarAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.St
 
 Some sections of the MonthCalendarAdv control are themed by default. The below table list the properties which controls the themed behavior border, grid and scroll buttons.
 
-[ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedBorder.html)
-[ThemedEnabledGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedEnabledGrid.html)
-[ThemedEnabledScrollButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~ThemedEnabledScrollButtons.html)
+[ThemedBorder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ThemedBorder)
+[ThemedEnabledGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ThemedEnabledGrid)
+[ThemedEnabledScrollButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ThemedEnabledScrollButtons)
 
 
 {% tabs %}
@@ -171,7 +171,7 @@ Me.monthCalendarAdv1.ThemedEnabledScrollButtons = True
 
 ### Styles
 
-The MonthCalenderAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~Style.html) property.
+The MonthCalenderAdv control for Windows Forms Supports for below listed Visual Styles. You can easily modify the look using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_Style) property.
 
 The styles are built in for MonthCalenderAdv.
 
@@ -673,5 +673,5 @@ Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 ![Office2016White theme](CalendarDateTime_images/Overview_img228.jpeg)
 
-N> Visual styles of the Today and None button can be overridden by [MonthCalendarAdv.TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~TodayButton.html) and [MonthCalendarAdv.NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.MonthCalendarAdv~NoneButton.html) respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
+N> Visual styles of the Today and None button can be overridden by [MonthCalendarAdv.TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_TodayButton) and [MonthCalendarAdv.NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_NoneButton) respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
 

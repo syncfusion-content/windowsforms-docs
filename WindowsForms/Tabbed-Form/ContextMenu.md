@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Menu in Windows Forms Tabbed Form (SfTabbedForm)
 
-The context menu for the tabbed form can be set using the [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
+The context menu for the tabbed form can be set using the [TabbedFormControl.TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,7 @@ End Sub
 
 ## Customize context menu in tabs like web browser
 
-The context menu can be customized when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~ContextMenuOpening_EV.html) event. The following code example demonstrates how to provide context menu in tabs like web browser using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.SfTabbedFormControl~TabContextMenu.html) property.
+The context menu can be customized when opening the context menu by handling the [ContextMenuOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html) event. The following code example demonstrates how to provide context menu in tabs like web browser using the [TabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SfTabbedFormControl.html#Syncfusion_Windows_Forms_Tools_SfTabbedFormControl_TabContextMenu) property.
 
 {% tabs %}
 {% highlight c# %}

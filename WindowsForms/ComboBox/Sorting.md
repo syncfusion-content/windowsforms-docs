@@ -9,9 +9,9 @@ documentation: ug
 
 # Sorting
 
-The SfComboBox supports sorting the data either in ascending or descending order by using the [sfComboBox1.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. 
+The SfComboBox supports sorting the data either in ascending or descending order by using the [sfComboBox1.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. 
 
-You can sort the data by creating the `SortDescriptor` with required name and direction and add it to the [SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~SortDescriptors.html) property.
+You can sort the data by creating the `SortDescriptor` with required name and direction and add it to the [SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property.
 
 `SortDescriptor` object holds the following three properties:
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Right-to-left
 
-`SfDateTimeEdit` control elements can be aligned in right-to-left layout. This control can be laid out from right to left when the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~RightToLeft.html) value is set to `Yes`.
+`SfDateTimeEdit` control elements can be aligned in right-to-left layout. This control can be laid out from right to left when the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_RightToLeft) value is set to `Yes`.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ Me.dateTimeEdit.RightToLeft = RightToLeft.Yes
 
 ## Change drop-down calendar alignment
 
-The `SfDateTimeEdit` allows you to change the drop-down opening side of the calendar relative to the control. The [DropDownPopupAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfInput.WinForms~Syncfusion.WinForms.Input.SfDateTimeEdit~DropDownPopupAlignment.html) of the SfDateTimeEdit can be used to change the alignment of calendar.
+The `SfDateTimeEdit` allows you to change the drop-down opening side of the calendar relative to the control. The [DropDownPopupAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DropDownPopupAlignment) of the SfDateTimeEdit can be used to change the alignment of calendar.
 
 {% tabs %}
 

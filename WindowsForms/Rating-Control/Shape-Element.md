@@ -61,6 +61,6 @@ Me.ratingControl1.Images = customImageCollection1
 
 In Rating control, the working is based on the following criteria for CustomImages.
 
-* If the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~Shape.html) property is set to CustomImages and the images are null, then Rating control resets the shape as Star.
-* If the HoverImage and SelectedImage are null, Rating control makes use of the [ItemHighlightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemHighlightColor.html) and [ItemSelectionColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.RatingControl~ItemSelectionColor.html) for Hover and Selected state.
+* If the [Shape](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_Shape) property is set to CustomImages and the images are null, then Rating control resets the shape as Star.
+* If the HoverImage and SelectedImage are null, Rating control makes use of the [ItemHighlightColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemHighlightColor) and [ItemSelectionColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RatingControl.html#Syncfusion_Windows_Forms_Tools_RatingControl_ItemSelectionColor) for Hover and Selected state.
 * If the HoverHalfImage and SelectedHalfImage are null, Rating control Precision is set to Standard.

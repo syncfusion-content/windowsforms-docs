@@ -109,7 +109,7 @@ End Module
 {% endtabs %}
 
 ### Apply theme
-Appearance of SfDataGrid can be changed by [ThemeName](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ThemeName.html) of SfDataGrid.
+Appearance of SfDataGrid can be changed by [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) of SfDataGrid.
 
 ### Office2016Colorful
 This option helps to set the Office2016Colorful Theme.

@@ -28,7 +28,7 @@ Contains style related properties and functionalities for the ScrollersFrame. <b
 
 ## Attach ScrollersFrame to control
 
-Add a control to the Windows Forms that should be attached with the Office2007Style scrollbars. Select the control in the [ScrollersFrame.AttachedTo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Shared.Base~Syncfusion.Windows.Forms.ScrollersFrame~AttachedTo.html) property.
+Add a control to the Windows Forms that should be attached with the Office2007Style scrollbars. Select the control in the [ScrollersFrame.AttachedTo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html#Syncfusion_Windows_Forms_ScrollersFrame_AttachedTo) property.
 
 ![Winforms showing the attached office2007style scrollbars in scrollframe](ScrollersFrame_images/ScrollersFrame_img2.jpeg)
 

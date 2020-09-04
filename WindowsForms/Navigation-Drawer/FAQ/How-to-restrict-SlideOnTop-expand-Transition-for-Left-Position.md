@@ -13,7 +13,7 @@ This requirement can be achieved by handling the Opening event.
 
 **Opening Event**
 
-This [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.NavigationDrawer~Opening_EV.html) event occurs before expand Transition initializes.
+This [Opening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) event occurs before expand Transition initializes.
 
 {% tabs %}
 

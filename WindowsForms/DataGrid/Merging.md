@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Merge Cells
-The SfDataGrid allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCoveredRange_EV.html) event. The merged cells can be exported and printed.
+The SfDataGrid allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The merged cells can be exported and printed.
 
 `QueryCoveredRange` event is not fired for the cells that are not visible and also for the cells that are already in covered range. When scrolling the grid, the merged range will be added for newly added rows and columns through this event and removed for the rows and columns which are out of view.
 
-The [QueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCoveredRange_EV.html) of the QueryCoveredRange event provides information about the cell which triggered this event. The [QueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GridEventArgs~OriginalSender.html) returns the `SfDataGrid` which fired this event for `DetailsView`. By using the [QueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs~Range.html) property, the adjacent cells can be merged.
+The [QueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) of the QueryCoveredRange event provides information about the cell which triggered this event. The [QueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridEventArgs.html#Syncfusion_WinForms_DataGrid_Events_GridEventArgs_OriginalSender) returns the `SfDataGrid` which fired this event for `DetailsView`. By using the [QueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryCoveredRangeEventArgs_Range) property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,10 +33,10 @@ End Sub
 {% endtabs %}
 
 ## Merging cells
-The range of cells can be merged by setting [CoveredCellInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo.html) (by defining left, right, top & bottom) to [QueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs~Range.html) and handling this event.
+The range of cells can be merged by setting [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html) (by defining left, right, top & bottom) to [QueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryCoveredRangeEventArgs.html#Syncfusion_WinForms_DataGrid_Events_QueryCoveredRangeEventArgs_Range) and handling this event.
 
 ### Merging cells horizontally by fixed range
-The columns in a row can be merged by setting the column range using the [Left](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Left.html) and [Right](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Right.html) properties of `CoveredCellInfo`.
+The columns in a row can be merged by setting the column range using the [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Left) and [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Right) properties of `CoveredCellInfo`.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ End Sub
 ![](Merging_images/Merging1.png)
 
 ### Merging cells vertically by fixed range
-A range of rows for a particular column can be merged by setting the row range using the [Top](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Top.html) and [Bottom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Bottom.html) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
+A range of rows for a particular column can be merged by setting the row range using the [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ End Sub
 ![](Merging_images/Merging2.png)
 
 ### Merging range of cells
-A range of rows and columns can be merged by using the [Left](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Left.html), [Right](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Right.html), [Top](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Top.html) and [Bottom](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo~Bottom.html) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
+A range of rows and columns can be merged by using the [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Left), [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Right), [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -141,7 +141,7 @@ End Sub
 ![](Merging_images/Merging3.png)
 
 ## Merging cells based on the content
-The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCoveredRange_EV.html) event.
+The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 In the following code, the `GetRange` method returns the range of a cell based on the adjacent cells content. 
 
 {% tabs %}
@@ -426,7 +426,7 @@ End Function
 ![](Merging_images/Merging4.png)
 
 ## Merge cells in Master-Details View
-Master- Details view allows merging the range of cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~QueryCoveredRange_EV.html) event of details view DataGrid. The [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html) triggered event can be get from the [QueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.GridEventArgs~OriginalSender.html) of the `QueryCoveredRange` event.
+Master- Details view allows merging the range of cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of details view DataGrid. The [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html) triggered event can be get from the [QueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridEventArgs.html#Syncfusion_WinForms_DataGrid_Events_GridEventArgs_OriginalSender) of the `QueryCoveredRange` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -465,7 +465,7 @@ End Sub
 ## Exporting Merged Cells
 
 ### Export merged cells to Excel
-The merged cells can be exported to Excel by setting the [ExcelExportingOptions.ExportMergedCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions~ExportMergedCells.html) property.
+The merged cells can be exported to Excel by setting the [ExcelExportingOptions.ExportMergedCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html#Syncfusion_WinForms_DataGridConverter_ExcelExportingOptions_ExportMergedCells) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -479,7 +479,7 @@ excelExportingOption.ExportMergedCells = True
 {% endtabs %}
 
 ### Export merged cells to PDF
-The merged cells can be exported to PDF by setting the [PdfExportingOptions.ExportMergedCells](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGridConverter.WinForms~Syncfusion.WinForms.DataGridConverter.PdfExportingOptions~ExportMergedCells.html) property.
+The merged cells can be exported to PDF by setting the [PdfExportingOptions.ExportMergedCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.PdfExportingOptions.html#Syncfusion_WinForms_DataGridConverter_PdfExportingOptions_ExportMergedCells) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -498,10 +498,10 @@ Limitations when using cell merging in the SfDataGrid are:
 * Row selection is not supported.
 * Heterogeneous rows cannot be merged.
 * Freeze panes are not supported.
-* With `DetailsViewDefinition`, cell merging is not supported if [HideEmptyGridViewDefinition](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~HideEmptyGridViewDefinition.html) is false or record has [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html).
+* With `DetailsViewDefinition`, cell merging is not supported if [HideEmptyGridViewDefinition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HideEmptyGridViewDefinition) is false or record has [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html).
 
 ## How to enable merging with selection
-The SfDataGrid does not allow cell merging when the [SelectionMode](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~SelectionMode.html) is set other than `None`. This behavior can be overcome by setting the [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.Events.ExternalExceptionThrownEventArgs~Handled.html) to true by using the [ExternalExceptionThrown](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ExternalExceptionThrown_EV.html) event.
+The SfDataGrid does not allow cell merging when the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode) is set other than `None`. This behavior can be overcome by setting the [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ExternalExceptionThrownEventArgs.html#Syncfusion_WinForms_DataGrid_Events_ExternalExceptionThrownEventArgs_Handled) to true by using the [ExternalExceptionThrown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}

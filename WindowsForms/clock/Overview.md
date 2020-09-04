@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.Clock.html) control in an application. This feature enables you to add customizable analog clocks in the application.
+Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control in an application. This feature enables you to add customizable analog clocks in the application.
 
 ![Overview of the Clock control](Overview_images/overview.png)
 

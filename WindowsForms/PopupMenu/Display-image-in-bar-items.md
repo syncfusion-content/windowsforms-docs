@@ -17,7 +17,7 @@ In this illustration we have set image for **BarItem**. Similarly, we have to se
 
 ## Adding enable state images
 
-Images can be added to bar items directly via the [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~Image.html) property. The following code snippet illustrates the same.
+Images can be added to bar items directly via the [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Image) property. The following code snippet illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,7 +39,7 @@ Me.barItem4.Image = New ImageExt(System.Drawing.Image.FromFile("..\..\..\PasteIc
 
 ## Adding disabled state images
 
-When a bar item is in disabled state, it's appropriate image can be also be disabled using the [`DisabledImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~DisabledImage.html) property.
+When a bar item is in disabled state, it's appropriate image can be also be disabled using the [`DisabledImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_DisabledImage) property.
 
 
 The following code snippet illustrates how to add disabled image for bar item.
@@ -63,7 +63,7 @@ Me.barItem4.DisabledImage = New ImageExt(System.Drawing.Image.FromFile("..\..\..
 
 ## Adding highlighted state images
 
-When a bar item is selected or highlighted, it's appropriate image can also be highlighted using the [`HighlightedImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Tools.Windows~Syncfusion.Windows.Forms.Tools.XPMenus.BarItem~HighlightedImage.html) property. 
+When a bar item is selected or highlighted, it's appropriate image can also be highlighted using the [`HighlightedImage`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImage) property. 
 
 The following code snippet illustrates how to set highlighted image for a bar item.
 
