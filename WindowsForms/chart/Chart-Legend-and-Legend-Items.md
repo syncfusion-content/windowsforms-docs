@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Chart legend
+# Chart legend
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 

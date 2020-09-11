@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-## Load PDF without Toolbar
+# Load PDF without Toolbar
 
 In order to view PDF without the toolbar, make use of PdfDocumentView control instead of PdfViewerControl. Other features and options are similar to PdfViewerControl.
 

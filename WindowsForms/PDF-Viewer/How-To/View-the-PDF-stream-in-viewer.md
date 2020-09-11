@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-## View the PDF stream
+# View the PDF stream
 
 PDF files as stream can be viewed in Essential PdfViewerControl using the overload available in the Load method. Following are the code snippets.
 

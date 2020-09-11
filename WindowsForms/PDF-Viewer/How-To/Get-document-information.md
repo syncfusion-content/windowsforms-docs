@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-## Get document information
+# Get document information
 The PDF Viewer allows you to access the filename and file path of the loaded PDF document.
 
 Refer to the following code example to access the filename.

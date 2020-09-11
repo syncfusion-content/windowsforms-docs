@@ -7,7 +7,7 @@ control: Tools
 documentation: ug
 ---
 
-## Getting Started of ButtonEdit
+# Getting Started of ButtonEdit
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with it's basic functionalities.
 
