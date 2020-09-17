@@ -7,13 +7,13 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Appearance
+# Chart Appearance in Windows Forms Chart
 
 The following topics under this section discusses about various properties that are used to customize the appearance of the chart.
 
 ## Background Colors
 
-EssentialChart lets you customize the background colors of differnsent portions of the chart.
+EssentialChart lets you customize the background colors of different portions of the chart.
 
 ### Outside the Chart Area
 
