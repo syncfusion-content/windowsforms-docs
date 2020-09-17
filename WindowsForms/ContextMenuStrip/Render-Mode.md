@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Render Mode | Windows Forms | Syncfusion
-description: Represents the painting style applied to the control.
+description: Represents the rendering mode of control.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Render Mode
+# Render Mode to customize appearance of ContextMenuStrip
 
 Render mode is used to customize the appearance of the ContextMenu either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems needs to use. The [`RenderMode`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property is used to provides different painting styles like:
 
@@ -119,4 +119,8 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 ![Custom](RenderMode_Images/OfficeBlue.png) 
   
 ![Custom](RenderMode_Images/Office12ColorTable.png)
+
+## See also
+
+[How to add an icon in a header of WinForms ContextMenuStripEx using CustomRenderer class](https://www.syncfusion.com/kb/11927)
 
