@@ -192,11 +192,13 @@ Description</th></tr>
 Indicates the border color of the chart area.</td></tr>
 <tr>
 <td>
-{{'[BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderStyle)'| markdownify }}
+
+{{'[BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderStyle)'| markdownify }}
 </td><td>
 Indicates the border style.</td></tr>
 <tr>
 <td>
+
 {{'[BorderWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderWidth)'| markdownify }}
 </td><td>
 Specifies the width of the border.</td></tr>
@@ -464,7 +466,6 @@ Specifies the position of the chart. Possible values are,<ul><li>Top</li><li>Bot
 Specifies the alignment of the title with respect to the chart borders. Possible values:<ul><li>Near</li><li>Center</li><li>Far</li></ul></td></tr>
 <tr>
 <td>
-<br>
 {{'[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#)'| markdownify }}
 </td><td>
 Indicates the font style of the title.</td></tr>
