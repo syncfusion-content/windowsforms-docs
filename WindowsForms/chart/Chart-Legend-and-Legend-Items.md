@@ -689,7 +689,7 @@ Description</th></tr>
 <tr>
 <td>
 
-[DrawSeriesIcon]()
+{{'[DrawSeriesIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeriesLegendItem.html#Syncfusion_Windows_Forms_Chart_ChartSeriesLegendItem_DrawSeriesIcon)'| markdownify }}
 </td><td>
 Specifies if an icon representing the series type should be rendered for this legend item.</td></tr>
 <tr>
