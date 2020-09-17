@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart-Appearance | Windows Forms | Syncfusion
-description: This section explains about how to change the appearance of the chart in various scenarios.
+description: This section explains about how to change the appearance of the syncfusion windows forms chart in various scenarios.
 platform: windowsforms
 control: Chart
 documentation: ug
