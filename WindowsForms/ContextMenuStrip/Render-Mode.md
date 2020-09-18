@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render Mode | Windows Forms | Syncfusion
-description: Represents the rendering mode of control.
+description: Represents the rendering mode.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
