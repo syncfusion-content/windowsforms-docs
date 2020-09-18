@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render Mode | Windows Forms | Syncfusion
-description: Represents the rendering mode.
+description: Learn about Rendering mode (Predefined and custom) support in Syncfusion WinForms ContextMenu (ContextMenuStripEx) control and more details.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
