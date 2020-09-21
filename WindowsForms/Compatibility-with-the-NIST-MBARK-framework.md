@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Compatibility with the NIST MBARK Framework
-description: Compatibility with the NIST MBARK Framework
+title: Syncfusion Component Compatibility with the NIST MBARK Framework
+description: Syncfusion components has the Compatibility with the NIST MBARK Framework. It helps to develop a large database of face, fingerprint and iris images.
 platform: WindowsForms
 control: Introduction
 documentation: ug
