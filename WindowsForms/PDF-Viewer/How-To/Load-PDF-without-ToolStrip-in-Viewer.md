@@ -30,7 +30,7 @@ pdfDocumentView1.Load("Sample.pdf")
 
 The following is the image of a PDF document viewed in PdfDocumentView.
 
-![](Load-PDF-without-ToolStrip-in-Viewer_images/Load-PDF-without-ToolStrip-in-Viewer_img1.png)
+![Load PDF Without Toolstrip in Windows PDF Viewer](Load-PDF-without-ToolStrip-in-Viewer_images/Load-PDF-without-ToolStrip-in-Viewer_img1.png)
 
 
 
