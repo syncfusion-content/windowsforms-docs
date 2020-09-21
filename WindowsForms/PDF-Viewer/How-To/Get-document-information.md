@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Get-document-information-using-PDF-Viewer WinForms | Syncfusion
-description: Get the information of the PDF document loaded in Syncfusion PDF Viewer WinForms
+description: Get the information like filename and file path of the loaded PDF document in Syncfusion PDF Viewer WinForms.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-## Get document information
+# Get document information
 The PDF Viewer allows you to access the filename and file path of the loaded PDF document.
 
 Refer to the following code example to access the filename.
