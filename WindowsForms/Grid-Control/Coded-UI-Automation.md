@@ -135,7 +135,7 @@ Premium, Ultimate, Enterprise editions of
 </table>
 
 ### Enabling Coded UI support
-The Coded UI support for grid can be enabled using [AccessibilityEnabled](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBaseImp~AccessibilityEnabled.html) property.
+The Coded UI support for grid can be enabled using [AccessibilityEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBaseImp.html#Syncfusion_Windows_Forms_Grid_GridControlBaseImp_AccessibilityEnabled) property.
 {% tabs %}
 {% highlight c# %}
 this.gridControl1.AccessibilityEnabled = true;
