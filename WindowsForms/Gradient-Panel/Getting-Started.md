@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with WinForms Gradient Panel control | Syncfusion
 description: How to create GradientPanel control in Windows Forms application.
 platform: WindowsForms
 control: GradientPanel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with CardLayout Control | Windows Forms | Syncfusion
+title: Getting Started with Windows Forms LayoutManagers | Syncfusion
 description: Getting started with the important key features of the CardLayout control for Windows Forms.
 platform: windowsforms
 control: CardLayout

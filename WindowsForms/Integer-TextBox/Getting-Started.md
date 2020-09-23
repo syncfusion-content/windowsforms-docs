@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Integer TextBox | Syncfusion
 description: This section describes how to add integer tex box control into application
 platform: WindowsForms
 control: Tools

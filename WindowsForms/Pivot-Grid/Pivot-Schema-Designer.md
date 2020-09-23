@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pivot Schema Designer | PivotGrid | Windows Forms | Syncfusion
+title: Pivot Schema Designer in Windows Forms Pivot Grid | Syncfusion
 description: Pivot schema designer
 platform: windowsforms
 control: Pivot Grid

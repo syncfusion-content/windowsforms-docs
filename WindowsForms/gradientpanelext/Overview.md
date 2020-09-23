@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion GradientPanelExt for WindowsForms
+title: Getting Started in Windows Forms GradientPanelExt | Syncfusion
 description: A quick introduction about the panel derived GradientPanelExt controls with the customizable gradient background and rounded borders
 platform: WindowsForms
 control: GradientPanelExt

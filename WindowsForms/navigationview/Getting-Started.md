@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| NavigationView | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms NavigationView | Syncfusion
 description: This section describes how to add navigation view control into winforms application.
 platform: WindowsForms
 control: NavigationView 

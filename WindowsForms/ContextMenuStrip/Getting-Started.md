@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GettingStarted | Windows Forms | Syncfusion
+title: Getting Started in Windows Forms ContextMenuStrip | Syncfusion
 description: GettingStarted of ContextMenuStripEx control
 platform: WindowsForms
 control: ContextMenuStripEx

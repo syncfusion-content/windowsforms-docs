@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms CommandBar control | Syncfusion
 description: getting started
 platform: WindowsForms
 control: CommandBar

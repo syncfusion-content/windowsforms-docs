@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Styles in GridControl for Syncfusion Essential Windows Forms
+title: Cell Style Architecture in WinForms Grid Control | Syncfusion
 description: This section explains on the architecture of a cell and its properties in GridControl.
 platform: windowsforms
 control: GridControl

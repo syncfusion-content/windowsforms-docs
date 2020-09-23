@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms ComboBox DropDown | Syncfusion
 description: creating combodropdown
 platform: WindowsForms
 control: Editors Package

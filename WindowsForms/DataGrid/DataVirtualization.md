@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataVirtualization
+title: Data Virtualization in WinForms DataGrid control | Syncfusion
 description: This section explains about the data virutalization support in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

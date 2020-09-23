@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms ComboBoxBase | Syncfusion
 description: creating comboboxbase
 platform: WindowsForms
 control: ComboBoxBase

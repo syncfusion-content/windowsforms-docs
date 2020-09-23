@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | Windows Forms | Syncfusion
+title: Getting Started with Windows Forms Pivot Chart | Syncfusion
 description: getting started
 platform: windowsforms
 control: PivotChart

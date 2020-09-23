@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting started | GroupBar | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Navigation Pane | Syncfusion
 description:  This section describes how to add group bar control into application.
 platform: WindowsForms
 control: GroupBar

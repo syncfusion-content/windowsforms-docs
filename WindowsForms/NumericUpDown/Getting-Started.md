@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | NumericUpDown | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms NumericUpDown | Syncfusion
 description: How to add the NumericUpDownExt control in a Windows Forms application.
 platform: WindowsForms
 control: NumericUpDownExt

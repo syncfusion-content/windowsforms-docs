@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms FontComboBox | Syncfusion
 description: overview
 platform: WindowsForms
 control: Editors Package

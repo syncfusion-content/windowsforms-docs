@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | PivotGrid | Windows Forms | Syncfusion
+title: Getting Started with Windows Forms Pivot Grid | Syncfusion
 description: Getting started
 platform: windowsforms
 control: PivotGrid

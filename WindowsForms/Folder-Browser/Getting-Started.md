@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | FolderBrowser | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Folder Browser | Syncfusion
 description: This section describes how to add folder browser control into windows forms application.
 platform: WindowsForms
 control: Tools

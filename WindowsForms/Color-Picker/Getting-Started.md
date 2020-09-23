@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms Color Picker | Syncfusion
 description: How to create ColorPickerUIAdv control in Windows Forms application
 platform: WindowsForms
 control: ColorPickerUIAdv

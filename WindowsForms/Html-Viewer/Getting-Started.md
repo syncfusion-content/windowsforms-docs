@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | HTMLUIControl | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms Html Viewer control | Syncfusion
 description: This section describes how to add HTML UI control into winforms application and its basic features.
 platform: WindowsForms
 control: HTMLUIControl

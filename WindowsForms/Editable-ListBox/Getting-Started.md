@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Double TextBox | Syncfusion
 description: How to create an EditableList control in Windows Forms application.
 platform: WindowsForms
 control: EditableList

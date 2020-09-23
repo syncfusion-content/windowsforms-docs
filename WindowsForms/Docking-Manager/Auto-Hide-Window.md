@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoHide Window
+title: Auto Hide Window in WinForms Docking Manager | Syncfusion
 description: Explain the AutoHidden functionalities in DockingManager
 platform: WindowsForms
 control: DockingManager 

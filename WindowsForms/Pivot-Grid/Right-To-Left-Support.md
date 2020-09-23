@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Right To Left Support | PivotGrid | Windows Forms | Syncfusion
+title: Right to Left Support in Windows Forms Pivot Grid | Syncfusion
 description: Right to left support in pivot grid control
 platform: windowsforms
 control: PivotGrid

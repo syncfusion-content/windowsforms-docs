@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in WinForms MultiColumn TreeView | Syncfusion
 description: Creating a MultiColumnTreeView
 platform: WindowsForms
 control: MultiColumnTreeView

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features in SfDataGrid | Syncfusion
+title: Interactive Features in WinForms DataGrid control | Syncfusion
 description: This section explains about the Interactive Features in SfDataGrid.
 platform: windowsforms
 control: SfDataGrid

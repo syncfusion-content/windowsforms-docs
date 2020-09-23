@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ports-And-Connections | Windows Forms | Syncfusion
+title: Ports And Connections in Windows Forms Diagram | Syncfusion
 description: Ports And Connections
 platform: windowsforms
 control: Diagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming-and-Scrolling | Windows Forms | Syncfusion
+title: Zooming and Scrolling in Windows Forms Pivot Chart | Syncfusion
 description: zooming and scrolling
 platform: windowsforms
 control: PivotChart

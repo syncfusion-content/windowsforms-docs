@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Bookmark Navigation | PDF Viewer | Windows Forms | Syncfusion
+title: Bookmark Navigation in Windows Forms PDF Viewer | Syncfusion
 description: Bookmark navigation allows users to view the bookmarks and navigate to the destination saved in the bookmarks in PDF Viewer Windows Forms Application.
 platform: windowsforms
 control: PdfViewerControl

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with WinForms MultiColumn ComboBox | Syncfusion
 description: creating multicolumncombobox
 platform: WindowsForms
 control: Editors Package
