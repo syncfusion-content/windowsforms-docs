@@ -309,10 +309,10 @@ N>
 
 The pivot chart control requires the following information to populate the data from the data source.
 
-* [ItemSource](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~ItemSource.html): The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
-* [PivotAxis](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotAxis.html): Elements that should be added to the axis of pivot chart control.
-* [PivotLegend](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotLegend.html): Elements that should be added to legend of pivot chart control.
-* [PivotCalculations](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~PivotCalculations.html): Calculation values that should be added as data points to the pivot chart control.
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis): Elements that should be added to the axis of pivot chart control.
+* [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend): Elements that should be added to legend of pivot chart control.
+* [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotCalculations): Calculation values that should be added as data points to the pivot chart control.
 
 The following code snippet illustrates how to add the required information to the pivot chart control.
 
@@ -356,7 +356,7 @@ Finally, run the application to obtain the following output.
 
 ## Real time updates
 
-[PivotChartUpdatingManager](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChartUpdatingManager.html) provides support for updating the series values automatically whenever the data gets changed in its underlying collection. This support can be enabled by setting the [EnableUpdating](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EnableUpdating.html) property to `true`.
+[PivotChartUpdatingManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChartUpdatingManager.html) provides support for updating the series values automatically whenever the data gets changed in its underlying collection. This support can be enabled by setting the [EnableUpdating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_EnableUpdating) property to `true`.
 
 {% tabs %}
 
@@ -381,7 +381,7 @@ The default value of the `EnableUpdating` property is false.
 
 ### Begin update and end update
 
-When you do more changes in the underlying data source, the pivot chart will be updated for every changes and performance will be degraded. So, to do more changes or more operations, do them between the [BeginUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~BeginUpdate.html) and [EndUpdate](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.PivotChart.Windows~Syncfusion.Windows.Forms.PivotChart.PivotChart~EndUpdate.html) methods of pivot chart. The BeginUpdate method will temporarily freeze the painting or refreshing of the control until the EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
+When you do more changes in the underlying data source, the pivot chart will be updated for every changes and performance will be degraded. So, to do more changes or more operations, do them between the [BeginUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_BeginUpdate) and [EndUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_EndUpdate) methods of pivot chart. The BeginUpdate method will temporarily freeze the painting or refreshing of the control until the EndUpdate method is called. After all the changes have been made, invoke the EndUpdate method to resume painting of the control.
 
 {% tabs %}
 

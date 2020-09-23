@@ -103,7 +103,7 @@ void Model_ColumnsRemoved(object sender, GridRangeInsertedEventArgs e)
 
 ## Hiding rows and columns
 
-Spreadsheet provides support to hide rows/columns and this can be done by [HideRow](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideRow.html) and [HideColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~HideColumn.html) method
+Spreadsheet provides support to hide rows/columns and this can be done by [HideRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_HideRow_System_Int32_) and [HideColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_HideColumn_System_Int32_) method
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ spreadsheet.ActiveGrid.ColumnWidths.SetHidden(4, 4, true);
 
 ## Unhiding rows and columns
 
-Unhide the rows/columns in Spreadsheet can be done by [ShowRow](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowRow.html) and [ShowColumn](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorksheet~ShowColumn.html) methods.
+Unhide the rows/columns in Spreadsheet can be done by [ShowRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ShowRow_System_Int32_System_Boolean_) and [ShowColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html#Syncfusion_XlsIO_IWorksheet_ShowColumn_System_Int32_System_Boolean_) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -156,7 +156,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(5), true);
 {% endhighlight %}
 {% endtabs %}
 
-N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Spreadsheet.Windows~Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet~RefreshOutlines.html) method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, [RefreshOutlines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_RefreshOutlines_System_Boolean_System_Boolean_) method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freezing rows and columns
 

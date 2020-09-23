@@ -23,7 +23,7 @@ Required assemblies<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Grid.Windows](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Grid.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)'| markdownify }}<br/><br/></td><td>
 Contains classes that handles all UI operations, fundamentals, and base classes of the GridListControl.<br/><br/></td></tr>
 <tr>
 <td>
