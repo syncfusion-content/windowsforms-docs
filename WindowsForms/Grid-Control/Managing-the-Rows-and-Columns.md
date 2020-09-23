@@ -11,7 +11,7 @@ documentation: ug
 This section will explain about the properties and methods available for customizing the rows and columns in GridControl. 
 
 ## Hiding Rows and Columns
-To hide the range of rows and columns in a GridControl, use the [Hidden](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~Hidden.html) Property. The following code is used to hide the rows and columns by using the index.
+To hide the range of rows and columns in a GridControl, use the [Hidden](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_Hidden) Property. The following code is used to hide the rows and columns by using the index.
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ Me.gridControl1.Rows.Hidden(3) = True
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img1.png)
 
 ### Hiding range of Rows and Columns 
-The range of rows and columns can be hide by using the [SetRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelHideRowColsIndexer~SetRange.html) method of the `Hidden` property.
+The range of rows and columns can be hide by using the [SetRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelHideRowColsIndexer.html#Syncfusion_Windows_Forms_Grid_GridModelHideRowColsIndexer_SetRange_System_Int32_System_Int32_System_Boolean_) method of the `Hidden` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ The following example shows the column `C` is returned to view while double clic
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img7.png)
 
 ### Prevent Hiding of Rows and Column using Events
-To avoid hiding the particular row or column in GridControl, set the `e.Cancel` to `true` in the [RowsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowsHiding_EV.html) and [ColsHiding](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColsHiding_EV.html)  event.
+To avoid hiding the particular row or column in GridControl, set the `e.Cancel` to `true` in the [RowsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) and [ColsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html)  event.
 
 {% tabs %}
 {% highlight c# %}
@@ -163,7 +163,7 @@ End Sub
 {% endtabs %}
 
 ## Header Rows and Columns 
-The grid can be displayed with more than one row/column header by setting the [HeaderCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~HeaderCount.html) value. The `HeaderCount` property is also used to get the last index of header rows and columns.
+The grid can be displayed with more than one row/column header by setting the [HeaderCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_HeaderCount) value. The `HeaderCount` property is also used to get the last index of header rows and columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -184,10 +184,10 @@ Me.gridControl.Rows.HeaderCount = 2
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img8.png)
 
-N> The headers added to the GridControl can be notified by using the [HeaderColCountChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HeaderColCountChanged_EV.html)  /[HeaderRowCountChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~HeaderRowCountChanged_EV.html) event.
+N> The headers added to the GridControl can be notified by using the [HeaderColCountChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html)  /[HeaderRowCountChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.
 
 ## Frozen Rows and Columns
-A frozen row is one that cannot be scrolled. The column headers and row headers are always frozen in GridControl. Frozen rows are displayed at the top of Grid and frozen columns are displayed at the left side of the Grid. To set the number of frozen rows/column, set the [FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) property value as specific count. 
+A frozen row is one that cannot be scrolled. The column headers and row headers are always frozen in GridControl. Frozen rows are displayed at the top of Grid and frozen columns are displayed at the left side of the Grid. To set the number of frozen rows/column, set the [FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property value as specific count. 
 
 {% tabs %}
 {% highlight c# %}
@@ -207,7 +207,7 @@ Me.gridControl1.Cols.FrozenCount = 3
 N> The more details about the changing of frozen lines colors is explained in the [freezing](/windowsforms/grid/ms-excel-like-features) section of the Excel-Like features.
 
 ### Freeze Range of Rows and Columns
-There is possible to freeze an interior range of rows or columns. It can be done by using the [FreezeRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FreezeRange.html) method. The `FreezeRange` method will move the requested rows /columns to the top /left and then it will set the[FrozenCount](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~FrozenCount.html) value to perform the actual process of freezing.
+There is possible to freeze an interior range of rows or columns. It can be done by using the [FreezeRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FreezeRange_System_Int32_System_Int32_) method. The `FreezeRange` method will move the requested rows /columns to the top /left and then it will set the[FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) value to perform the actual process of freezing.
 
 {% tabs %}
 {% highlight c# %}
@@ -222,10 +222,10 @@ Me.gridControl.Rows.FreezeRange(5,7)
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img10.png)
 
-N> The adding of frozen rows and columns can be notified by using the [FrozenColCountChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~FrozenColCountChanged_EV.html) and [FrozenRowCountChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~FrozenRowCountChanged_EV.html) events.
+N> The adding of frozen rows and columns can be notified by using the [FrozenColCountChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) and [FrozenRowCountChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) events.
 
 ## Moving Rows and Columns
-The rows and columns can be moved to another place by using `GridControl.Rows.MoveRange` and `GridControl.Cols.MoveRange` methods. The [MoveRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~MoveRange.html) method takes three parameters that is initial position, number of rows/columns and target position.
+The rows and columns can be moved to another place by using `GridControl.Rows.MoveRange` and `GridControl.Cols.MoveRange` methods. The [MoveRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_MoveRange_System_Int32_System_Int32_) method takes three parameters that is initial position, number of rows/columns and target position.
 
 {% tabs %}
 {% highlight c# %}
@@ -247,7 +247,7 @@ Me.gridControl.Rows.MoveRange(7, 2, 4)
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img11.png)
 
 ### Getting the Count of Moved Rows and Columns
-The moved rows and columns count can be get by using the [RowsMoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowsMoved_EV.html) and [ColsMoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColsMoved_EV.html) events.
+The moved rows and columns count can be get by using the [RowsMoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) and [ColsMoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -266,7 +266,7 @@ End Sub
 {% endtabs %}
 
 ## Inserting Rows and Columns 
-More than one row or column can be added to GridControl by using `GridControl.Rows.InsertRange` and `GridControl.Cols.InsertRange` methods. The [InsertRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~InsertRange.html) method will move the rows according to the index given in its parameter.
+More than one row or column can be added to GridControl by using `GridControl.Rows.InsertRange` and `GridControl.Cols.InsertRange` methods. The [InsertRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_InsertRange_System_Int32_System_Int32_) method will move the rows according to the index given in its parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -290,7 +290,7 @@ The below screenshot shows the grid after insert the rows and columns,
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img12.png)
 
 ### Restrict the Inserting of Rows and Columns 
-The inserting of rows/columns can be avoided by using the [ColsInserting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColsInserting_EV.html) /[RowsInserting](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowsInserting_EV.html) event. It can also provide the number of inserted row/columns count to the grid.
+The inserting of rows/columns can be avoided by using the [ColsInserting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) /[RowsInserting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event. It can also provide the number of inserted row/columns count to the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ End Sub
 {% endtabs %}
 
 ## Deleting Rows and Columns
-To remove the rows and columns from the GridControl, use the [RemoveRange](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColOperations~RemoveRange.html) method. It will remove the rows according to the index given in its parameter.
+To remove the rows and columns from the GridControl, use the [RemoveRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_RemoveRange_System_Int32_System_Int32_) method. It will remove the rows according to the index given in its parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -352,10 +352,10 @@ The below screenshot shows the grid after delete the rows and columns,
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img13.png)
 
-N> The removing of rows/columns can be notified by using the [RowsRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowsRemoved_EV.html) and [ColsRemoved](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColsRemoved_EV.html) event.
+N> The removing of rows/columns can be notified by using the [RowsRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) and [ColsRemoved](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.
 
 ## Setting the Column Widths and Row Heights
-By default GridControl provides the support for resizing the rows and column using the mouse controller. The size of the rows/columns can be programmatically set by using the [RowHeights](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowHeights.html) and [ColWidths](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColWidths.html) as of follows.
+By default GridControl provides the support for resizing the rows and column using the mouse controller. The size of the rows/columns can be programmatically set by using the [RowHeights](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_RowHeights) and [ColWidths](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ColWidths) as of follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -376,10 +376,10 @@ Me.gridControl.RowHeights(3) = 70
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img14.png)
 
-N> The change of col width and row height of the grid can be notified by using the [ColWidthsChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColWidthsChanged_EV.html) and [RowHeightsChanged](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~RowHeightsChanged_EV.html) event.
+N> The change of col width and row height of the grid can be notified by using the [ColWidthsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) and [RowHeightsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.
 
 ### Setting Columns Styles and Row Styles
-The GridControl provides the support for styling the rows and columns separately by using the [RowStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridNewVolatileData~RowStyles.html) and [ColStyles](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ColStyles.html) properties.
+The GridControl provides the support for styling the rows and columns separately by using the [RowStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridNewVolatileData.html#Syncfusion_Windows_Forms_Grid_GridNewVolatileData_RowStyles) and [ColStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ColStyles) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -415,7 +415,7 @@ Me.gridControl.RowStyles(3).Font.Italic= True
 N> The same row or column styles can also be set using [QueryCellInfo](/windowsforms/grid/appearance-and-formatting#querycellinfo-event) event.
 
 ## Controlling the Resize Behavior
-The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeColsBehavior.html) and [ResizeRowsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ResizeRowsBehavior.html) properties. The [GridResizeCellsBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
+The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeColsBehavior) and [ResizeRowsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeRowsBehavior) properties. The [GridResizeCellsBehavior](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
 
 * **AllowDragOutside** - Allows the user to drag the cell boundary outside the grid client area and resize specific row or column.
 * **IgnoreHeaders** –Do not allow the users to resize the rows or columns by moving the divider between rows or column headers.
@@ -438,7 +438,7 @@ Me.gridControl.ResizeRowsBehavior = GridResizeCellsBehavior.IgnoreHeaders
 {% endtabs %}
 
 ## Resize To Fit
-GridControl provides the supports for enable the resizing rows and columns based on the content of cells. It can be done by using the [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html) method.
+GridControl provides the supports for enable the resizing rows and columns based on the content of cells. It can be done by using the [ResizeToFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer.html#Syncfusion_Windows_Forms_Grid_GridModelRowColSizeIndexer_ResizeToFit_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -465,7 +465,7 @@ The parameter passed to `ResizeToFit` method is of type `GridRangeInfo`, which m
 &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Grid Layout\Resize To Fit Demo
 
 ## ResizeToFitOptimized
-The rows/columns can be resized to make the entire cell value visible in the grid by using the [ResizeToFitOptimized](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFitOptimized.html) method. It can to display the entire cell with resized columns and rows even when the grid cells has special characters such as tab, newline, etc.
+The rows/columns can be resized to make the entire cell value visible in the grid by using the [ResizeToFitOptimized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer.html#Syncfusion_Windows_Forms_Grid_GridModelRowColSizeIndexer_ResizeToFitOptimized_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method. It can to display the entire cell with resized columns and rows even when the grid cells has special characters such as tab, newline, etc.
 
 {% tabs %}
 {% highlight c# %}
@@ -484,12 +484,12 @@ Me.gridControl.RowHeights.ResizeToFitOptimized(GridRangeInfo.Rows(1, 8), GridRes
 {% endhighlight %}
 {% endtabs %}
 
-N> The [ResizeToFitOption](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridResizeToFitOptions.html) enumeration has provided the options to resize the grid cells such as IncludeHeaders, None and NoShrinkSize.
+N> The [ResizeToFitOption](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeToFitOptions.html) enumeration has provided the options to resize the grid cells such as IncludeHeaders, None and NoShrinkSize.
 
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img17.png)
 
 ## ResizeToFit Behavior in AutoSize
-The height and width of the cell can be increased based on the entered text by setting the [AutoSize](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~AutoSize.html) property to `true`. When the [WrapText](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~WrapText.html) is set to false `AutoSize` will affect the column width else it will increase the row height. It does not have the functionality of resizing the rows or columns after text has been entered like the [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html) method.
+The height and width of the cell can be increased based on the entered text by setting the [AutoSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_AutoSize) property to `true`. When the [WrapText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_WrapText) is set to false `AutoSize` will affect the column width else it will increase the row height. It does not have the functionality of resizing the rows or columns after text has been entered like the [ResizeToFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer.html#Syncfusion_Windows_Forms_Grid_GridModelRowColSizeIndexer_ResizeToFit_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -504,7 +504,7 @@ Me.gridControl.TableStyle.AutoSize = True
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img18.png)  
 
 ## Auto Sizing Custom Cells
-When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the `OnQueryPreferredClientSize` method in the model class. The [ResizeToFit](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer~ResizeToFit.html)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPreferredClientSize` method.
+When custom controls are placed in the Grid, the corresponding cell can be automatically resized to fit the controls. It can be achieved by overriding the `OnQueryPreferredClientSize` method in the model class. The [ResizeToFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColSizeIndexer.html#Syncfusion_Windows_Forms_Grid_GridModelRowColSizeIndexer_ResizeToFit_Syncfusion_Windows_Forms_Grid_GridRangeInfo_)  method is used to resize the cells while enter the text, but it will not work for Custom controls. The `ResizeToFit` method will resize the cell to the size returned by the `OnQueryPreferredClientSize` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -554,7 +554,7 @@ The below screenshot shows how the cell resizes itself automatically to the size
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img19.png)
 
 ## Enter Key behavior 
-The moving of cell selection using the <kbd>Enter</kbd> key can be changed by using the [EnterKeyBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~EnterKeyBehavior.html) property. It provides support for the following navigation options to move the cell selection when Enter is pressed.
+The moving of cell selection using the <kbd>Enter</kbd> key can be changed by using the [EnterKeyBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_EnterKeyBehavior) property. It provides support for the following navigation options to move the cell selection when Enter is pressed.
 
 * Bottom
 * BottomRight
@@ -582,9 +582,9 @@ Me.gridControl1.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionTy
 {% endtabs %}
 
 ## Setting the Wrap Cell Behavior 
-The `EnterKeyBehavior` is worked based on the [WrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelOptions~WrapCellBehavior.html). Go to first column in next row or last column in previous row when at end or beginning of a row and moving based on Enter key behavior.
+The `EnterKeyBehavior` is worked based on the [WrapCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_WrapCellBehavior). Go to first column in next row or last column in previous row when at end or beginning of a row and moving based on Enter key behavior.
 
-The [GridWrapCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) has the following list of options,
+The [GridWrapCellBehavior](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) has the following list of options,
 
 * **WrapRow** – It will move the cell selection to the leftmost cell of the next row or right most cell of the previous row according to the `EnterKeyBehavior`.
 * **WrapGrid** – It includes the WrapRow behavior additionally it will navigate the selection to the topmost left cell when it reaches the bottommost right cell.
@@ -611,7 +611,7 @@ Me.gridControl1.Model.Options.WrapCellBehavior = Syncfusion.Windows.Forms.Grid.G
 {% endtabs %}
 
 ## Proportional Sizing
-To auto resizing the columns when grid is resized, set [AllowProportionalColumnSizing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~AllowProportionalColumnSizing.html) property to `true`. That is column width and content of cells are resized based on the grid size.
+To auto resizing the columns when grid is resized, set [AllowProportionalColumnSizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_AllowProportionalColumnSizing) property to `true`. That is column width and content of cells are resized based on the grid size.
 
 {% tabs %}
 {% highlight c# %}
@@ -633,7 +633,7 @@ The below screenshot shows column width after using `AllowProportionalColumnSizi
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img21.png)
 
 ## Getting the Size of the Range of Cells
-To calculate the display area for a given range of cells, use the [RangeInfoToRectangle](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RangeInfoToRectangle.html) method. This method takes two argument such as range and [GridRangeOptions](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridRangeOptions.html).
+To calculate the display area for a given range of cells, use the [RangeInfoToRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_RangeInfoToRectangle_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method. This method takes two argument such as range and [GridRangeOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -649,7 +649,7 @@ Me.gridControl.RangeInfoToRectangle(GridRangeInfo.Col(2), GridRangeOptions.None)
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img22.png)
 
 ## Getting the Range of the Given Size
-To calculate a range of cells that is displayed at the specified area, use [RectangleToRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~RectangleToRangeInfo.html) method. This method takes rectangle as a parameter and calculate the ranges.
+To calculate a range of cells that is displayed at the specified area, use [RectangleToRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_RectangleToRangeInfo_System_Drawing_Rectangle_) method. This method takes rectangle as a parameter and calculate the ranges.
 
 {% tabs %}
 {% highlight c# %}
@@ -665,7 +665,7 @@ Me.gridControl.RectangleToRangeInfo(New Rectangle(100, 0, 65, 229))
 ![](working-with-rows-and-columns_images/working-with-rows-and-columns_img23.png)
 
 ## Getting the Row and Column Index from a Point
-The row and column index of a cell that is displayed at a specified point can be calculated by using the [PointToRowCol](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~PointToRowCol.html) method. It will return row and column index of mentioned point through the out variables.
+The row and column index of a cell that is displayed at a specified point can be calculated by using the [PointToRowCol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PointToRowCol_System_Drawing_Point_System_Int32__System_Int32__) method. It will return row and column index of mentioned point through the out variables.
 
 {% tabs %}
 {% highlight c# %}
@@ -681,7 +681,7 @@ Me.gridControl1.PointToRowCol(New Point(100, 100),a,b)
 N> The row and column indexes can be calculated based on the given point with respect to the grid view layout by using the [PointToClientRowCol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridViewLayout.html#Syncfusion_Windows_Forms_Grid_GridViewLayout_PointToClientRowCol_System_Drawing_Point_System_Int32__System_Int32__System_Boolean_) method. It will return row and column position of mentioned point through the `out` variables.
 
 ## Finding Covered range, Floating range or Merged range of a cell
-The [CoveredRanges](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~CoveredRanges.html) , [FloatingCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~FloatingCells.html), and [MergeCells](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html)  range collection have the separate `FindRange` method to find the range of covered or floated range. These ranges can be get using [GetSpannedRangeInfo](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~GetSpannedRangeInfo.html) method.
+The [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CoveredRanges) , [FloatingCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_FloatingCells), and [MergeCells](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html)  range collection have the separate `FindRange` method to find the range of covered or floated range. These ranges can be get using [GetSpannedRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GetSpannedRangeInfo_System_Int32_System_Int32_Syncfusion_Windows_Forms_Grid_GridRangeInfo__) method.
 
 This method is a Boolean method, so it will return `true` if the specified cell is inside the `CoveredRange` , `FloatingCell` or `MergeCell`otherwise it will return `false`. 
 

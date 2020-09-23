@@ -272,7 +272,7 @@ Me.gridDataBoundGrid1.Model.ColWidths(2) = 50
 
 ## Editing
 
-By default, the GridDataBoundGrid is in editable state. Editing can be enabled or disabled by using the [ReadOnly] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridStyleInfo~ReadOnly.html) property. It can be used for entire grid or particular cells. Moreover, editing can be customized by using the [CurrentCellStartEditing] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.GridHelperClasses.Windows~Syncfusion.GridHelperClasses.GridCardView~CurrentCellStartEditing_EV.html#) and [CurrentCellEditingComplete] (http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControlBase~CurrentCellEditingComplete_EV.html#) events.
+By default, the GridDataBoundGrid is in editable state. Editing can be enabled or disabled by using the [ReadOnly] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ReadOnly) property. It can be used for entire grid or particular cells. Moreover, editing can be customized by using the [CurrentCellStartEditing] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) and [CurrentCellEditingComplete] (https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -298,11 +298,11 @@ style.ReadOnly = False
 
 ## Selection
 
-The GridDataBoundGrid supports two types of selections. They are [AllowSelection](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSelection.html#) and [ListBoxSelectionMode](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~ListBoxSelectionMode.html#). 
+The GridDataBoundGrid supports two types of selections. They are [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) and [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode). 
 
 ### AllowSelection
 
-A particular range of cells, rows, columns, or table in the grid can be selected by setting the `AllowSelection` property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration.
+A particular range of cells, rows, columns, or table in the grid can be selected by setting the `AllowSelection` property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration.
 
 {% tabs %}
 {% highlight c# %}
