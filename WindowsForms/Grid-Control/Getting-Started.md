@@ -94,7 +94,7 @@ Grid Control can be added through designer by following the below steps.
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
 * Syncfusion.Grid.Base.dll
-* [Syncfusion.Grid.Windows.dll](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows.html#)
+* [Syncfusion.Grid.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)
 * Syncfusion.Shared.Base.dll
 * Syncfusion.Shared.Windows.dll
 
