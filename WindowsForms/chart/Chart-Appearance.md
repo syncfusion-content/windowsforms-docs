@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Chart-Appearance | Windows Forms | Syncfusion
-description: This section explains about how to change the appearance of the chart in various scenarios.
+description: This section explains about how to change the appearance of the syncfusion windows forms chart in various scenarios.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Appearance
+# Chart Appearance in Windows Forms Chart
 
 The following topics under this section discusses about various properties that are used to customize the appearance of the chart.
 
 ## Background Colors
 
-EssentialChart lets you customize the background colors of differnsent portions of the chart.
+EssentialChart lets you customize the background colors of different portions of the chart.
 
 ### Outside the Chart Area
 
@@ -192,11 +192,13 @@ Description</th></tr>
 Indicates the border color of the chart area.</td></tr>
 <tr>
 <td>
-{{'[BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderStyle)'| markdownify }}
+
+{{'[BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderStyle)'| markdownify }}
 </td><td>
 Indicates the border style.</td></tr>
 <tr>
 <td>
+
 {{'[BorderWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_BorderWidth)'| markdownify }}
 </td><td>
 Specifies the width of the border.</td></tr>
@@ -464,7 +466,6 @@ Specifies the position of the chart. Possible values are,<ul><li>Top</li><li>Bot
 Specifies the alignment of the title with respect to the chart borders. Possible values:<ul><li>Near</li><li>Center</li><li>Far</li></ul></td></tr>
 <tr>
 <td>
-<br>
 {{'[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#)'| markdownify }}
 </td><td>
 Indicates the font style of the title.</td></tr>
