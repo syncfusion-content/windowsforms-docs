@@ -141,7 +141,7 @@ Me.Controls.Add(Me. gridGroupingControl1)
 {% endtabs %}
 
 ## Populating Data
-GridGroupingControl supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. For assigning the data source to GridGroupingControl, [DataSource](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~DataSource.html) property needs to be used.
+GridGroupingControl supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. For assigning the data source to GridGroupingControl, [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_DataSource) property needs to be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ Me.gridGroupingControl1.DataSource = Me.dataset11.Employees
 Refer the [Data Binding](http://help.syncfusion.com/windowsforms/gridgrouping/data-binding) topic for more detailed explanation on how to bind data source to GridGroupingControl.
 
 ## Editing
-By default, GridGroupingControl is in editable state. Editing can be enabled/disabled by using the [ActivateCurrentCellBehavior](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Windows~Syncfusion.Windows.Forms.Grid.GridControl~ActivateCurrentCellBehavior.html) property.
+By default, GridGroupingControl is in editable state. Editing can be enabled/disabled by using the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,12 +170,12 @@ Me.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.Non
 {% endhighlight %}
 {% endtabs %}
 
-Editing operations can be customized by using the [TableControlCurrentCellStartEditing](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellStartEditing_EV.html) and [TableControlCurrentCellEditingComplete](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~TableControlCurrentCellEditingComplete_EV.html) events. Check the[Editing](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for more information on methods and properties related to it.
+Editing operations can be customized by using the [TableControlCurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [TableControlCurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) events. Check the[Editing](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for more information on methods and properties related to it.
 
 ## Grouping
 GridGroupingControl allows to group data by one or more columns. Data will be organized into a hierarchical structure based on the matching field values. 
 
-If grouping is enabled in GridGroupingControl then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GridGroupDropArea](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl~GroupDropArea.html). `GridGroupDropArea` is made up of collection of grid controls packed in a panel named [GroupDropPanel](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~GroupDropPanel.html). `GridGroupDropArea` can be enabled by using the [ShowGroupDropArea](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl~ShowGroupDropArea.html) property.
+If grouping is enabled in GridGroupingControl then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GridGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_GroupDropArea). `GridGroupDropArea` is made up of collection of grid controls packed in a panel named [GroupDropPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropPanel). `GridGroupDropArea` can be enabled by using the [ShowGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ShowGroupDropArea) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,7 +193,7 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 Check the [Grouping](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic, to know more information regarding grouping.
 
 ## Sorting
-Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo~AllowSortColumns.html) property. By default, sorting will be enabled in GridGroupingControl. Refer the [Sorting](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSortColumns) property. By default, sorting will be enabled in GridGroupingControl. Refer the [Sorting](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ Me.gridGroupingControl1.TableOptions.AllowSortColumns = True
 ![windows forms gridgroupingcontrol showing sorting options](Getting-Started_images/Getting-Started_img4.png)
 
 ## Filtering
-GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Grid.Grouping.Windows~Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor~AllowFilter.html) property. Refer the [Filtering](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowFilter) property. Refer the [Filtering](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}
