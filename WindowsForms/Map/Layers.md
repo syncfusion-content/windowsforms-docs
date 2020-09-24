@@ -417,7 +417,7 @@ public partial class Form1 : Form
 
 ## ShapeIDTableField
 
-The `ShapeIDTableField`[https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Maps.Windows~Syncfusion.Windows.Forms.Maps.ShapeFileLayer~ShapeIDTableField.html] property is similar to the ShapeIDPath. It is a string type property that refers to the column name in the dbf file to identify the shape. When the values of the ShapeIDPath property in the ItemSource and the value of ShapeIDTableField in the .dbf file match, then the associated objects from the ItemSource are bound to the corresponding shape.
+The `ShapeIDTableField`[https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Maps.ShapeFileLayer.html#Syncfusion_Windows_Forms_Maps_ShapeFileLayer_ShapeIDTableField] property is similar to the ShapeIDPath. It is a string type property that refers to the column name in the dbf file to identify the shape. When the values of the ShapeIDPath property in the ItemSource and the value of ShapeIDTableField in the .dbf file match, then the associated objects from the ItemSource are bound to the corresponding shape.
 
 
 {% tabs %}

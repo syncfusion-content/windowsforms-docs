@@ -868,8 +868,8 @@ To create a DocumentExplorer control using code:
 1. Create a new Windows Forms application.
 2. Add the following basic dependent Syncfusion assemblies to the project:
    * Syncfusion.Core.dll
-   * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Base.html#)
-   * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Diagram.Windows.html#)
+   * [Syncfusion.Diagram.Base.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Diagram.Base.Wizard.html)
+   * [Syncfusion.Diagram.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DiagramWindowsAssembly.html)
    * Syncfusion.Shared.Base.dll
 3. Create a DocumentExplorer control using the following code.
 
