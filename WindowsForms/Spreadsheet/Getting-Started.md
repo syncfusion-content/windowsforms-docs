@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Spreadsheet
+title: Getting Started with Windows Forms Spreadsheet | Syncfusion
 description: How to create, open and save the workbook in Spreadsheet
 platform: windowsforms
 control: Spreadsheet

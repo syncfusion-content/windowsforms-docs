@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Features in Spreadsheet
+title: Interactive Features in WinForms Spreadsheet control | Syncfusion
 description: How to use the clipboard operations, undo/redo and other functionalities in Spreadsheet
 platform: windowsforms
 control: Spreadsheet

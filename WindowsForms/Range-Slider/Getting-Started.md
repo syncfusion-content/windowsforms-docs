@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | RangeSlider | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Range Slider | Syncfusion
 description: This section describes how to add range slider control into winforms application.
 platform: WindowsForms
 control: RangeSlider 

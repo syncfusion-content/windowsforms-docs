@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms Tile Layout control | Syncfusion
 description: Getting Started
 platform: WindowsForms
 control: TileLayout 

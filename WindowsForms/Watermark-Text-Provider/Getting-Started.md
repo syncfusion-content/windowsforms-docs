@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with BannerTextProvider | WindowsForms | Syncfusion
+title: Getting Started in WinForms Watermark Text Provider | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider

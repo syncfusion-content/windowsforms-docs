@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WizardControl | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Wizard control | Syncfusion
 description: getting started
 platform: WindowsForms
 control: Wizard Package 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating SplitContainerAdv | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms SplitContainer | Syncfusion
 description: Creating SplitContainerAdv
 platform: WindowsForms
 control: Editors Package

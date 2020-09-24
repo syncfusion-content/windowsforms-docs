@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Windows Forms ScrollersFrame Control | Syncfusion 
+title: Getting Started in Windows Forms ScrollersFrame | Syncfusion
 description: This section explains on how to add a ScrollersFrame in an application and some of the basic functionalities of it and more details.
 platform: WindowsForms
 control: ScrollersFrame

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | TabControlAdv | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms TabControl | Syncfusion
 description: How to add TabControlAdv and enable its basic features.
 platform: WindowsForms
 control: TabControlAdv 

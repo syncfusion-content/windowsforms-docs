@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms statusbaradvpanel | Syncfusion
 description: creating statusbaradvpanel
 platform: WindowsForms
 control: StatusBarAdvPanel

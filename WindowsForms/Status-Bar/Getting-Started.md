@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms Status Bar control | Syncfusion
 description: creating statusbaradv
 platform: WindowsForms
 control: StatusBarAdv

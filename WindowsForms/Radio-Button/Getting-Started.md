@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Radio Button | Syncfusion
 description: creating radiobuttonadv
 platform: WindowsForms
 control: RadioButtonAdv

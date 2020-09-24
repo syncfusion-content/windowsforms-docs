@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with WinForms Spreadsheet rows and columns | Syncfusion
+title: Rows and Columns in WinForms Spreadsheet control | Syncfusion
 description: This section explains that the operations involved with rows and columns in Spreadsheet for Syncfusion WinForms.
 platform: windowsforms
 control: Spreadsheet

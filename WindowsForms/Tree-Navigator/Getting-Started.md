@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Tree Navigator | Syncfusion
 description: getting started
 platform: WindowsForms
 control: TreeNavigator 

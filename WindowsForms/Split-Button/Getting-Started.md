@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started with Windows Forms Split Button | Syncfusion
 description: getting started
 platform: WindowsForms
 control: SplitButton 
