@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Multiple-Columns | WindowsForms | Syncfusion
-description: multiple columns
+description: This section explains about the multi columns support and its selection color, dropdownwidth and filtering options.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Multiple Columns
+# Multiple Columns Support
 
 MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set MultiColumn property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
-![](Overview_images/Overview_img325.jpeg) 
+![Multiple Columns](Overview_images/Overview_img325.jpeg) 
 
 We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding) topic to know more.
 
@@ -58,7 +58,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
 {% endtabs %}
 
-![](Overview_images/Dropdownimage.png) 
+![DropDownWidth](Overview_images/Dropdownimage.png) 
 
  Fig 1: This screenshot shows the width sets for the DropDown popup of MultiColumnComboBox
 
@@ -175,4 +175,4 @@ The custom filtering can be applied by setting the MultiColumnComboBox.Filter de
 
 {% endtabs %}
 
-![](Overview_images/Overview_img353.jpg) 
+![Custom Filtering](Overview_images/Overview_img353.jpg) 
