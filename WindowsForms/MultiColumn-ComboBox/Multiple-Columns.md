@@ -64,7 +64,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
  ## Custom Filtering
 
- Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In this MultiColumnComboBox, the filtering can be applied through the custom filters. Filtering can be enabled by setting the AllowFiltering property to true.
+ Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In this [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html), the filtering can be applied through the custom filters. Filtering can be enabled by setting the AllowFiltering property to true.
  
  {% tabs %}
 
@@ -82,7 +82,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
 {% endtabs %}
 
-The custom filtering can be applied by setting the MultiColumnComboBox.Filter delegate. The FilterRecords delegate is assigned to MultiColumnComboBox.Filter delegate to filter items based on the column provided and conditions under which the data should be filtered. If the record satisfies the condition, returns true, otherwise it returns false.
+The custom filtering can be applied by setting the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html).Filter delegate. The `FilterRecords` delegate is assigned to [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html).Filter delegate to filter items based on the column provided and conditions under which the data should be filtered. If the record satisfies the condition, returns true, otherwise it returns false.
 
 {% tabs %}
 
