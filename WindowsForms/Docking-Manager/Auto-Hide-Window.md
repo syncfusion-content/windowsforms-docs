@@ -17,7 +17,7 @@ When mouse is moved over it, the auto hidden control will be displayed. When the
 
 The docked controls will be placed at anywhere such as left, right, top, or bottom using the [DockingStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingStyle.html) of the particular control. If the control is docked to the left, when clicking the auto hide button, the control will be hidden to the left.
 
-![](AutoHidden-Window_images/AutoHidden-Window_img1.png)
+![DockingStyle in WinForms DockingManager](AutoHidden-Window_images/AutoHidden-Window_img1.png)
 
 ## Enabling/disabling the auto hide functionality
 
@@ -44,7 +44,7 @@ The pin button that performs auto hide functionality can be visible by default. 
 
 {% endtabs %}
 
-![](AutoHidden-Window_images/AutoHidden-Window_img2.png)
+![Enable & disable Auto Hide Functionality](AutoHidden-Window_images/AutoHidden-Window_img2.png)
 
 ## Auto hide programmatically
 
@@ -70,7 +70,7 @@ Me.dockingManager1.SetAutoHideMode(panel1, True) 'false to remove auto hide stat
 
 {% endtabs %}
 
-![](AutoHidden-Window_images/AutoHidden-Window_img3.png)
+![Auto hide programmatically in DockingManager](AutoHidden-Window_images/AutoHidden-Window_img3.png)
 
 By using the [GetAutoHideMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetAutoHideMode_System_Windows_Forms_Control_) function, you can know whether the control is in auto hidden state or not.
 
@@ -112,7 +112,7 @@ Me.dockingManager1.DockControlInAutoHideMode(panel1, Syncfusion.Windows.Forms.To
 
 {% endtabs %}
 
-![](AutoHidden-Window_images/AutoHidden-Window_img4.png)
+![Change Auto Hide Side in DockingManager](AutoHidden-Window_images/AutoHidden-Window_img4.png)
 
 ## Auto hide all dock windows on loading
 
@@ -142,7 +142,7 @@ Me.dockingManager1.SetAutoHideOnLoad(this.panel3, True);
 
 When the AutoHidden Tabs overflow onto the side panel, the ScrollButton is added to the side panel. In other words, the scroll bar will be visible in AutoHide tab panel, only when child bounds exceeded to auto hide tab panel bounds. Using the scrollbar, you can select the tabs in auto hide panel by navigating the scroll buttons.
 
-![](AutoHidden-Window_images/AutoHidden-Window_img5.png)
+![Scroll Auto Hidden Tabs in DockingManager](AutoHidden-Window_images/AutoHidden-Window_img5.png)
 
 ## Display full caption in auto hidden tab
 
@@ -169,7 +169,7 @@ Me.dockingManager1.FullCaptionsInAutoHideMode = True
 
 {% endtabs %}
 
-![](AutoHidden-Window_images/AutoHidden-Window_img7.png)
+![Display Full Caption in Auto Hidden Tab](AutoHidden-Window_images/AutoHidden-Window_img7.png)
 
 ## Re-order auto hidden tabs
 
@@ -358,4 +358,4 @@ Me.dockingManager1.EnableAutoHideTabContextMenu = True
 
 The following image illustrates the context menu features.
 
-![](AutoHidden-Window_images/AutoHidden-Window_img6.png)
+![Enable Or Disable Animation in DockingManager](AutoHidden-Window_images/AutoHidden-Window_img6.png)

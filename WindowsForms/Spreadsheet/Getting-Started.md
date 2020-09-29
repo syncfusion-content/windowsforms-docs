@@ -80,7 +80,7 @@ Spreadsheet control can be added into the application either via designer or via
 
 2.Open the Visual Studio **Tool** **box**. Navigate to Syncfusion Controls tab, and find the  Spreadsheet/SpreadsheetRibbon toolbox items 
 
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![Tool box in Spreadsheet](Getting-Started_images/Getting-Started_img1.jpg)
 
 3.Drag `Spreadsheet` and drop in the Designer area from the Toolbox
 
@@ -113,7 +113,7 @@ this.Controls.Add(ribbon);
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
-![](Getting-Started_images/Getting-Started_img2.PNG)
+![Adding Control Via Coding](Getting-Started_images/Getting-Started_img2.PNG)
 
 ## Creating a new Excel Workbook
 
@@ -154,7 +154,7 @@ spreadsheet.Open (@"..\..\Data\Outline.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.PNG)
+![Opening an existing Excel Workbook](Getting-Started_images/Getting-Started_img3.PNG)
 
 
 Opening Excel File in Spreadsheet

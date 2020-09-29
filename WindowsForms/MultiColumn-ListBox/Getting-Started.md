@@ -41,28 +41,28 @@ Drag the control onto the form, size it and set the desired properties if the da
 
 1. Drag an SqlDataAdapter from Data tab of the toolbox onto the form. Follow the steps in the wizard to select database and SQL query used to generate the table.
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img1.jpeg)
+   ![Dragging SqlDataAdapter from Data tab of the toolbox](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img1.jpeg)
 
 2. Click the SqlAdapter in the components tray with the right mouse button and generate a dataset for this adapter by just taking the defaults. 
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img2.jpeg) 
+   ![Click the SqlAdapter in the Components Tray](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img2.jpeg) 
 
 3. In the Form_Load event handler, the Fill method will be called automatically for this SqlDataAdapter by passing dataset generated in the previous step.
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img3.jpeg) 
+   ![Form_Load event handler](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img3.jpeg) 
 
 4. Drag the GridListControl object from your toolbox and drop it onto the form.
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img4.jpeg) 
+   ![Drag the GridListControl Object from Toolbox](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img4.jpeg) 
 
 5. Size and position it.
 6. Go to the Properties dialog of this GridList control and set the DataSource property of this control to an appropriate object.
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img5.jpeg) 
+   ![set the DataSource property](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img5.jpeg) 
 
 7. Run the application. 
 
-   ![](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img6.jpeg) 
+   ![Run the Application](Creating-Grid-List-Control_images/Creating-Grid-List-Control_img6.jpeg) 
 
 This designer-created data source is available to use as the data source member of Grid List control. For a complete step-by-step tutorial on how to use the designer to create data source, see the Grid Data Bound Grid tutorial.
 

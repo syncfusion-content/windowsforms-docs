@@ -12,21 +12,21 @@ documentation: ug
 
 ComboBoxBase can be created easily through designer, by just dragging and dropping the ComboBoxBase control from the Toolbox.
 
-![](Overview_images/Overview_img315.png) 
+![Drag and Drop ComboBoxBase control from the Toolbox ](Overview_images/Overview_img315.png) 
 
 
 
-![](Overview_images/Overview_img316.png) 
+![ComboBoxBase in Form](Overview_images/Overview_img316.png) 
 
 
 
 To add data for the popup, add a listbox control to the form and select it in ListControl property.
 
-![](Overview_images/Overview_img317.png) 
+![Add Data for the Popup](Overview_images/Overview_img317.png) 
 
 
 
-![](Overview_images/Overview_img318.png) 
+![Add a Listbox control](Overview_images/Overview_img318.png) 
 
 
 It can be created through code by following the below steps.
@@ -133,7 +133,7 @@ Me.Controls.Add(Me.comboBoxBase1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img319.png) 
+![Add ComboBoxBase and Listbox to Form](Overview_images/Overview_img319.png) 
 
 
 

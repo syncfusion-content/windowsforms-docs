@@ -58,7 +58,7 @@ Sample diagram is as follows:
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img1.jpeg)
+![CentralPort in Diagram](Ports-And-Connections_images/Ports-And-Connections_img1.jpeg)
 
 
 ### Custom ports
@@ -109,7 +109,7 @@ Sample diagram is as follows.
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img2.jpeg)
+![Custom Ports in Diagram](Ports-And-Connections_images/Ports-And-Connections_img2.jpeg)
 
 
 
@@ -157,7 +157,7 @@ Sample diagram is as follows,
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img3.jpeg)
+![Port shapes in Diagram](Ports-And-Connections_images/Ports-And-Connections_img3.jpeg)
 
 
 ## Connection Point Properties
@@ -213,7 +213,7 @@ cp.AllowConnectOnDrag = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Ports-And-Connections_images/Ports-And-Connections_img4.jpeg)
+![Connection Point Properties in Diagram](Ports-And-Connections_images/Ports-And-Connections_img4.jpeg)
 
 
 
@@ -222,7 +222,7 @@ Sample diagram  is as follows:
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img5.jpeg)
+![Connection Point Properties Sample in Diagram](Ports-And-Connections_images/Ports-And-Connections_img5.jpeg)
 
 
 
@@ -257,7 +257,7 @@ The following image illustrates the above settings.
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img6.jpeg)
+![FillStyle in Diagram](Ports-And-Connections_images/Ports-And-Connections_img6.jpeg)
 
 
 
@@ -267,7 +267,7 @@ This property in turn has customization properties to set the style for the Conn
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img7.jpeg)
+![LineStyle in Diagram](Ports-And-Connections_images/Ports-And-Connections_img7.jpeg)
 
 
 
@@ -295,7 +295,7 @@ The below images illustrates the above settings.
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img8.jpeg)
+![LineStyle in Diagram](Ports-And-Connections_images/Ports-And-Connections_img8.jpeg)
 
 
 
@@ -362,21 +362,21 @@ Sample diagram is as follows,
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img9.jpeg)
+![BottomLeft in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img9.jpeg)
 
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img10.jpeg)
+![TopCenter in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img10.jpeg)
 
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img11.jpeg)
+![MiddleRight in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img11.jpeg)
 
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img12.jpeg)
+![Custom in ConnectionPointSize](Ports-And-Connections_images/Ports-And-Connections_img12.jpeg)
 
 
 ### Reject Connections
@@ -410,4 +410,4 @@ rect1.Ports.Add(port)
 {% endtabs %}
 
 
-![](Ports-And-Connections_images/Ports-And-Connections_img13.png)
+![Reject Connections in Diagram](Ports-And-Connections_images/Ports-And-Connections_img13.png)
