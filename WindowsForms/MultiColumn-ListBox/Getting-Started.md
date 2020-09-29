@@ -7,7 +7,7 @@ control: GridListControl
 documentation: ug
 ---
 
-# Getting Started with Windows Forms MultiColumn ListBox (GridListControl)
+# Getting Started in Windows Forms MultiColumn ListBox (GridListControl)
 
 This section explains creating a simple application with GridListControl and its functionalities.
 

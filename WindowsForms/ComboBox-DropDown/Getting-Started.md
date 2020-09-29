@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started in Windows Forms ComboBox DropDown | Syncfusion
-description: creating combodropdown
+description: Learn here about getting started with Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms ComboBox DropDown (ComboDropDown)
 
 In this section, ComboDropDown is used to host TreeView control and this can be achieved in the following ways.
 

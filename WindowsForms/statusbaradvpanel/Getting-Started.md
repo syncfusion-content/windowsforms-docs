@@ -7,7 +7,7 @@ control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Getting Started with Windows Forms statusbaradvpanel (StatusBarAdvPanel)
+# Getting Started in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
 
 This section will give a step by step procedure to design a StatusBarAdvPanel control through designer and also through programming approach.
 
