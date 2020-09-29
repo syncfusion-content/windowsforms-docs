@@ -27,7 +27,7 @@ Description<br/><br/></th></tr>
 Contains classes that handles all UI operations, fundamentals, and base classes of the GridListControl.<br/><br/></td></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.html)'| markdownify }}<br/><br/></td><td>
 Contains the style related properties and various editor controls used in the GridListControl.<br/><br/></td></tr>
 </table>
 

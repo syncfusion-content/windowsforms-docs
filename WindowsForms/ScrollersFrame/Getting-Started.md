@@ -22,7 +22,7 @@ Required assembly<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-{{'[Syncfusion.Shared.Base](http://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Shared.Base.html#"")'| markdownify }}<br/><br/></td><td>
+{{'[Syncfusion.Shared.Base](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.html)'| markdownify }}<br/><br/></td><td>
 Contains style related properties and functionalities for the ScrollersFrame. <br/><br/></td></tr>
 </table>
 
