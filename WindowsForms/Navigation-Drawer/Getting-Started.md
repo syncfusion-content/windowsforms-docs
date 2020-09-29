@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Navigation Drawer | Syncfusion
-description: This section describes how to add navigation drawer control into winforms application.
+description: Learn here about getting started with Syncfusion Windows Forms Navigation Drawer control and more details.
 platform: WindowsForms
 control: NavigationDrawer
 documentation: ug
 ---
-# Getting started
+# Getting Started with Windows Forms Navigation Drawer
 
 ## Assembly deployment
 

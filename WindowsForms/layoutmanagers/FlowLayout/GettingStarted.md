@@ -7,7 +7,7 @@ control: FlowLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms LayoutManagers
 
 This section explains how to add the FlowLayout control in a Windows Forms application and overview its basic functionalities.
 

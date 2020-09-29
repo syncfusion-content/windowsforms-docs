@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Wizard control | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion Windows Forms Wizard Control (Wizard) control and more details. 
 platform: WindowsForms
 control: Wizard Package 
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Wizard Control (Wizard)
 
 This section describes how to add [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) in a Windows Forms application and overview of its basic functionalities.
 

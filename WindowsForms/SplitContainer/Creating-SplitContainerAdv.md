@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started in Windows Forms SplitContainer | Syncfusion
-description: Creating SplitContainerAdv
+description: Learn about Getting Started support in Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting started
+# Getting Started in Windows Forms SplitContainer (SplitContainerAdv)
 
 This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
 

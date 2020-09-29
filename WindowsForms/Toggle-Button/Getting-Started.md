@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Toggle Button | Syncfusion
-description: Steps to add ToggleButton in WinForms application
+description: Learn here about getting started with Syncfusion Windows Forms Toggle Button control and more details.
 platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Windows Forms Toggle Button
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"ToggleButton"** with it's basic functionalities.
 

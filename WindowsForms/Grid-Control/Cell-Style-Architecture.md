@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Cell Style Architecture in WinForms Grid Control | Syncfusion
-description: This section explains on the architecture of a cell and its properties in GridControl.
+description: Learn about Cell Style Architecture support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Cell Style Architecture
+# Cell Style Architecture in Windows Forms Grid Control
 
 GridControl can be thought of as a rectangular table of grid cells. Each cell contains distinct information and can be displayed independently of other cells. 
 GridControl uses [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) objects to store state information about the appearance of a grid cell. So attributes like Font, BackColor, CellValue and CellType are all reflected in a single GridStyleInfo object. This section explains how to access and use the GridStyleInfo objects.

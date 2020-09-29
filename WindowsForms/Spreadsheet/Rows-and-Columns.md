@@ -7,7 +7,7 @@ control: Spreadsheet
 documentation: ug
 ---
 
-# Rows and Columns
+# Rows and Columns in Windows Forms Spreadsheet
 This section explains about the operations related with rows and columns in Spreadsheet
 
 ## Inserting rows and columns

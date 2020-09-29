@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-# Bookmark Navigation
+# Bookmark Navigation in Windows Forms PDF Viewer (PdfViewerControl)
 
 PDF Viewer control allows users to navigate to the bookmarks present in the loaded PDF document at the UI level. 
 

@@ -7,7 +7,7 @@ control: SyntaxEditor
 documentation: ug
 ---
 
-# Text Visualization
+# Text Visualization in Windows Forms Syntax Editor
 
 Various text visualization features of EditControl is elaborated under the following topics.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Numeric TextBox | Syncfusion
-description: This section provides the information about how to begin the SfNumericTextBox control.
+description: Learn here about getting started with Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Numeric TextBox (SfNumericTextBox)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **SfNumericTextBox** with its basic functionalities.
 

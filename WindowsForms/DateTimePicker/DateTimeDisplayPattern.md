@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display Pattern in Windows Forms DateTimePicker | Syncfusion
-description: How to change display patterns of DateTime and Custom pattern for SfDateTimeEdit 
+description: Learn about Display Pattern support in Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more details.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Display patterns
+# Display Pattern in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 The [DateTimePattern](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimePattern) helps you to specify the date-time display pattern for the SfDateTimeEdit. The display format of the date in the `SfDateTimeEdit` control can be customized by the pattern and custom display pattern properties.
 

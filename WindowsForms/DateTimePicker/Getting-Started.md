@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms DateTimePicker | Syncfusion
-description: How to add SfDateTimeEdit and enable its basic features.
+description: Learn here about getting started with Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more details.
 platform: WindowsForms
 control: SfDateTimeEdit 
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms DateTimePicker (SfDateTimeEdit)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfDateTimeEdit** control with its basic functionalities.
 

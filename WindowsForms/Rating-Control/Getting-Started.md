@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Rating control | Syncfusion
-description: This section describes how to add rating control into windowsforms application
+description: Learn here about getting started with Syncfusion Windows Forms Rating Control (Rating) control and more details.
 platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Windows Forms Rating Control (Rating)
 
 ## Assembly deployment
 

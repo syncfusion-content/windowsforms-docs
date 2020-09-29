@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started in Windows Forms Status Bar control | Syncfusion
-description: creating statusbaradv
+description: Learn here about getting started with Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Status Bar (StatusBarAdv)
 
 This section will give a step-by-step procedure to design a StatusBarAdv control through designer and also through programming approach.
 

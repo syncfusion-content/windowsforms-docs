@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Auto Hide Window in WinForms Docking Manager | Syncfusion
-description: Explain the AutoHidden functionalities in DockingManager
+description: Learn about Auto Hide Window support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# Auto Hide Window
+# Auto Hide Window in Windows Forms Docking Manager
 
 The docking manager provides auto hide facility to the docked control. When the auto hide button (pin) is clicked, the docked controls will be hidden and placed along the side of the container control where it was placed.
 

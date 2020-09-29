@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Worksheet Management in Windows Forms Spreadsheet | Syncfusion
-description: How to perform worksheet related operations(insert, delete, hide, etc.) in Spreadsheet
+description: Learn about Worksheet Management support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Worksheet Management
+# Worksheet Management in Windows Forms Spreadsheet
 This section explains about the operations that are performed with the worksheet.
 
 ## Insert and Delete

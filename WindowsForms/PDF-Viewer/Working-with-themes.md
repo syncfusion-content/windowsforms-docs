@@ -7,7 +7,7 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-# Working with themes
+# Working with themes in Windows Forms PDF Viewer (PdfViewerControl)
 
 PDF Viewer provides support for various built-in themes, using which the default appearance of elements that are present in the control can be customized. This can be achieved using the [ThemeName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Core.BaseControl.html#Syncfusion_Windows_Forms_Core_BaseControl_ThemeName) property of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html).
 

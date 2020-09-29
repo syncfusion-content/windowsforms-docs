@@ -7,7 +7,7 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# DateTime editing
+# DateTime Editing in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 The DateTime value of the `SfDateTimeEdit` control can be updated by editing the text in the control. The [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode) decides how to insert the input values for the SfDateTimeEdit from the keyboard. The DateTimeText can be edited by two ways as follows:
 

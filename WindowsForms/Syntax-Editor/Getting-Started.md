@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Syntax Editor | Syncfusion
-description: How to add EditControl and and enable its basic features.
+description: Learn here about getting started with Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Syntax Editor
 
 This section explains how to create an interactive code editor application like Microsoft Visual Studio Editor by using the EditControl.
 

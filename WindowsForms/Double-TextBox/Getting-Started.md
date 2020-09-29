@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Double TextBox | Syncfusion
-description: This section describes how to add double text box control into application
+description: Learn here about getting started with Syncfusion Windows Forms Double TextBox control and more details. 
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Double TextBox
 
 ## Assembly deployment
 

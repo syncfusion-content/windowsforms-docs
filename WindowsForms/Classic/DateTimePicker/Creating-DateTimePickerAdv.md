@@ -7,7 +7,7 @@ control: DateTimePickerAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in DateTimePickerAdv
 
 ## Assembly deployment
 
