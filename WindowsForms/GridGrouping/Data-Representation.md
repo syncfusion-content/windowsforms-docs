@@ -2814,7 +2814,7 @@ End Function
 {% endtabs %}
 
 
-![C:/Users/Giftline/Desktop/localization in DF.png](Data-Representation_images/Data-Representation_img64.png)
+![Localization support in Grid Grouping](Data-Representation_images/Data-Representation_img64.png)
 
 
 
@@ -3162,7 +3162,7 @@ ForeignKey DropDown showing Edit Button (button with Pencil Icon) clicking which
 
 The image below shows the state after clicking Edit button.
 
- ![Shows=ing the State After Clicking Edit Button](Data-Representation_images/Data-Representation_img69.jpeg) 
+ ![Showing the State After Clicking Edit Button](Data-Representation_images/Data-Representation_img69.jpeg) 
 
 
 

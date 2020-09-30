@@ -165,4 +165,4 @@ The following steps allows you to add TreeMenuItem to the TreeNavigator through 
    
 ![Adding the Items](Getting-Started_images/ThroughDesigner2.png)
 
-![TreeNavigator Output screenshot](Getting-Started_images/Adding_TreeMenuitems.png)
+![TreeNavigator Output](Getting-Started_images/Adding_TreeMenuitems.png)

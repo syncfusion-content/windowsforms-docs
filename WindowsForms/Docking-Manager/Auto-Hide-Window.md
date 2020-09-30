@@ -44,7 +44,7 @@ The pin button that performs auto hide functionality can be visible by default. 
 
 {% endtabs %}
 
-![Enable & disable Auto Hide Functionality](AutoHidden-Window_images/AutoHidden-Window_img2.png)
+![Enable and disable Auto Hide Functionality](AutoHidden-Window_images/AutoHidden-Window_img2.png)
 
 ## Auto hide programmatically
 

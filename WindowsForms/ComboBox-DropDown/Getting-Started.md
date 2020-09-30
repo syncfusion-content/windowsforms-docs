@@ -19,7 +19,7 @@ The below steps will guide you with this.
 
 1. Create a new Visual C# application or VB.NET application in Visual Studio .NET. 
 
-   ![Create new Visual C# or VB.NET application](Overview_images/Overview_img278.jpeg) 
+   ![Create new application](Overview_images/Overview_img278.jpeg) 
 
 
 
@@ -37,7 +37,7 @@ The below steps will guide you with this.
 
 4. Now set the ComboDropDown's PopupControl property to be the above TreeView instance. 
 
-   ![set the ComboDropDown's PopupControl property](Overview_images/Overview_img281.jpeg) 
+   ![set the ComboDropDowns PopupControl property](Overview_images/Overview_img281.jpeg) 
 
 
 
