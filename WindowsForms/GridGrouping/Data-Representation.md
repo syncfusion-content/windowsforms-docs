@@ -1333,13 +1333,13 @@ Me.gridGroupingControl.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
 
-![Caption cell text can be changed & Freeze Caption Row](Data-Representation_images/Data-Representation_img26.png) 
+![Caption cell text can be changed and Freeze Caption Row](Data-Representation_images/Data-Representation_img26.png) 
 
 
 
 
 
- ![Caption cell text can be changed & UnFreeze Caption Row](Data-Representation_images/Data-Representation_img27.png) 
+ ![Caption cell text can be changed and UnFreeze Caption Row](Data-Representation_images/Data-Representation_img27.png) 
 
 
 
