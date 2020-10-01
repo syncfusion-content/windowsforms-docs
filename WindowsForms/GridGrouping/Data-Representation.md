@@ -179,23 +179,23 @@ Here are runtime screens showing the effect of setting ShowGroupDropArea propert
 
 
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img8.jpeg) 
+ ![Drag and Drop the column header with Drop Panelin GridGrouping Control](Data-Representation_images/Data-Representation_img8.jpeg) 
 
 
 
 
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img9.jpeg) 
+ ![visibility control by ShowGroupDropArea property GridGrouping Control](Data-Representation_images/Data-Representation_img9.jpeg) 
 
 
 
 
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img10.jpeg) 
+ ![Drop Panel will be added at the top of Grouping Grid](Data-Representation_images/Data-Representation_img10.jpeg) 
 
 
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img11.jpeg) 
+ ![Drop Panel Enabled Grid Grouping ](Data-Representation_images/Data-Representation_img11.jpeg) 
 
 
 
@@ -1333,13 +1333,13 @@ Me.gridGroupingControl.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing the Caption Row](Data-Representation_images/Data-Representation_img26.png) 
+![Caption cell text can be changed & Freeze Caption Row](Data-Representation_images/Data-Representation_img26.png) 
 
 
 
 
 
- ![Freezing the Caption Row](Data-Representation_images/Data-Representation_img27.png) 
+ ![Caption cell text can be changed & UnFreeze Caption Row](Data-Representation_images/Data-Representation_img27.png) 
 
 
 
@@ -1365,7 +1365,7 @@ There are multiple ways to sort table data. A simple one is to click the desired
 
 At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of Grid Grouping control. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
 
- ![Through Designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img28.jpeg) 
+ ![Sorting through designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img28.jpeg) 
 
 
 
@@ -1645,7 +1645,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 4.Run the sample. The grid will look like this.
 
- ![Through Code in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img37.jpeg) 
+ ![Summaries features through code in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img37.jpeg) 
 
 
 
@@ -2500,11 +2500,11 @@ Loop
 
 A filter bar can also be added at design time by setting the above properties through property window of the grouping grid. The designer settings shown below adds the filter for columns CompanyName and ContactTitle.
 
-![Filter Bar Through Designer](Data-Representation_images/Data-Representation_img57.jpeg) 
+![Set ShowFilterBar in GridGrouping control through designer](Data-Representation_images/Data-Representation_img57.jpeg) 
 
 
 
-![Filter Bar Through Designer](Data-Representation_images/Data-Representation_img58.jpeg) 
+![Set Filter to the CompanyName column through designer](Data-Representation_images/Data-Representation_img58.jpeg) 
 
 
 
