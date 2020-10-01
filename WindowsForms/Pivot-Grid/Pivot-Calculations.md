@@ -73,8 +73,7 @@ Currency</td></tr>
 #,##0</td><td>
 Thousand Separator</td></tr>
 <tr>
-<td>
-# ' degrees'</td><td>
+<td># ' degrees'</td><td>
 Literal String Specifier</td></tr>
 <tr>
 <td>
