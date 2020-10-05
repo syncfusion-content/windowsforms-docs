@@ -64,7 +64,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
  ## Custom Filtering
 
-[MultiColumCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, `AlloWFiltering` property should be set to true.
+[MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, `AllowFiltering` property should be set to true.
  
  {% tabs %}
 
