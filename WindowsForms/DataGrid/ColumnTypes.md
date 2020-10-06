@@ -133,6 +133,17 @@ Use to display multi select combobox in each row
 </tr>
 <tr>
 <td>
+<tr>
+<td>
+{{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
+</td>
+<td>
+{{'[GridCellMaskEditBoxRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellMaskEditBoxRenderer.html)'| markdownify }}
+</td>
+<td>
+Use to display the data to be masked.
+</td>
+</tr>
 {{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
 </td>
 <td>
@@ -1926,6 +1937,46 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 ![Winforms datagrid shows that different dataSource for each row in MultiSelectComboBox column](ColumnTypes_images/ColumnTypes_img44.png)
 
+## GridMaskColumn
+
+`GridMaskColumn` provides the support to display column data with the specified mask pattern. You can set the input mask at runtime by setting `GridMaskColumn.Mask` property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() {MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)99999999"});
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)99999999"})
+{% endhighlight %}
+{% endtabs %}
+
+![GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.png)
+
+### Specifying prompt character
+
+By default, an underscore (_) is displayed when the user input is absent. This can be changed by setting `GridMaskColumn.PromptCharacter` property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)9999", PromptCharacter = '^' });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)9999", .PromptCharacter = "^"})
+{% endhighlight %}
+{% endtabs %}
+
+### Setting mask format
+
+By default `GridMaskColumn.MaskFormat` is set to `clipModes.IncludeLiterals`, To exclude the literals in the formatted string you can set `GridMaskColumn.MaskFormat` as `clipModes.ExcludeLiterals`.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)9999", MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)9999", .MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals})
+{% endhighlight %}
+{% endtabs %}
 
 ## GridCheckBoxSelectorColumn
 
