@@ -138,7 +138,7 @@ Use to display multi select combobox in each row
 {{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
 </td>
 <td>
-{{'[GridCellMaskEditBoxRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellMaskEditBoxRenderer.html)'| markdownify }}
+{{'[GridCellMaskEditBoxRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridCellMaskEditBoxRenderer.html)'| markdownify }}
 </td>
 <td>
 Use to display the data to be masked.
@@ -1939,7 +1939,7 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 ## GridMaskColumn
 
-`GridMaskColumn` provides the support to display column data with the specified mask pattern. You can set the input mask at runtime by setting `GridMaskColumn.Mask` property.
+[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html) provides the support to display column data with the specified mask pattern. You can set the input mask at runtime by setting [GridMaskColumn.Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_Mask) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1954,7 +1954,7 @@ Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumbe
 
 ### Specifying prompt character
 
-By default, an underscore (_) is displayed when the user input is absent. This can be changed by setting `GridMaskColumn.PromptCharacter` property.
+By default, an underscore (_) is displayed when the user input is absent. This can be changed by setting [GridMaskColumn.PromptCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_PromptCharacter) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1967,7 +1967,7 @@ Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumbe
 
 ### Setting mask format
 
-By default `GridMaskColumn.MaskFormat` is set to `clipModes.IncludeLiterals`, To exclude the literals in the formatted string you can set `GridMaskColumn.MaskFormat` as `clipModes.ExcludeLiterals`.
+By default `GridMaskColumn.MaskFormat` is set to `clipModes.IncludeLiterals`, To exclude the literals in the formatted string you can set [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) as `clipModes.ExcludeLiterals`.
 
 {% tabs %}
 {% highlight c# %}
