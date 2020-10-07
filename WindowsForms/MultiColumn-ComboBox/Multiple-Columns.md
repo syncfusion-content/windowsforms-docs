@@ -9,7 +9,7 @@ documentation: ug
 
 # Multiple Columns Support
 
-MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set MultiColumn property to false. We can display the headers for the columns using ShowColumnHeader property. 
+MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
 ![Multiple Columns](Overview_images/Overview_img325.jpeg) 
 
@@ -17,7 +17,7 @@ We can bind external data to the MultiColumnComboBox control. Refer [DataBinding
 
 ## Selection color
 
-We can specify the color for the alpha blended selections using AlphaBlendSelectionColor property.
+We can specify the color for the alpha blended selections using [AlphaBlendSelectionColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AlphaBlendSelectionColor) property.
 
 {% tabs %}
 {% highlight c# %}
