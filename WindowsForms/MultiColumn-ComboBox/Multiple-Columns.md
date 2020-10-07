@@ -64,7 +64,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
  ## Custom Filtering
 
-[MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, `AllowFiltering` property should be set to true.
+[MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
  
  {% tabs %}
 
@@ -88,20 +88,89 @@ The custom filtering can be applied by assigning a predicate to the `Filter` pro
 
 {% highlight C# %}
 
-    private void OnFilterChanged()
+private void OnFilterChanged()
+{
+    // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
+    this.multiColumnComboBox1.Filter = FilterRecords;
+}   
+
+public bool FilterRecords(object o)
+{
+    var item = o as OrderInfo;
+    if (item != null && FilterText.Equals(""))
     {
-        // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
-        this.multiColumnComboBox1.Filter = FilterRecords;
-    }   
+        return true;
+    }
+    else
+    {
+        if (item != null)
+        {
+            if (FilterProperty.Equals("All Columns"))
+            {
+                if (item.OrderID.ToString().Contains(FilterText) ||
+                    item.CustomerID.ToLower().Contains(FilterText.ToLower()) || item.ContactNumber.ToString().Contains(FilterText.ToLower()) ||
+                    item.ProductName.ToString().ToLower().Contains(FilterText.ToLower()) || item.Quantity.ToString().ToLower().Contains(FilterText.ToLower()) ||
+                    item.ShipCountry.ToString().ToLower().Contains(FilterText.ToLower()) ||
+                    item.OrderDate.ToString().ToLower().Contains(FilterText.ToLower()))
+                    return true;
+                return false;
+            }
+            else
+            {
+                if (FilterColumn == null || FilterColumn.Equals("Contains"))
+                    FilterColumn = "Contains";
+                else if (FilterColumn.Equals("StartsWith"))
+                    FilterColumn = "StartsWith";
+                else if (FilterColumn.Equals("EndsWith"))
+                    FilterColumn = "EndsWith";
+                bool result = MakeStringFilter(item, FilterProperty, FilterColumn);
+                return result;
+            }
+        }
+    }
+
+    return false;
+}
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-    Private Sub OnFilterChanged()
-        // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
-        Me.multiColumnComboBox1.Filter = FilterRecords
-    End Sub
+Private Sub OnFilterChanged()
+    // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
+    Me.multiColumnComboBox1.Filter = FilterRecords
+End Sub
+
+Public Function FilterRecords(ByVal o As Object) As Boolean
+    Dim item = TryCast(o, OrderInfo)
+
+    If item IsNot Nothing AndAlso FilterText.Equals("") Then
+        Return True
+    Else
+
+        If item IsNot Nothing Then
+
+            If FilterProperty.Equals("All Columns") Then
+                If item.OrderID.ToString().Contains(FilterText) OrElse item.CustomerID.ToLower().Contains(FilterText.ToLower()) OrElse item.ContactNumber.ToString().Contains(FilterText.ToLower()) OrElse item.ProductName.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.Quantity.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.ShipCountry.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.OrderDate.ToString().ToLower().Contains(FilterText.ToLower()) Then Return True
+                Return False
+            Else
+
+                If FilterColumn Is Nothing OrElse FilterColumn.Equals("Contains") Then
+                    FilterColumn = "Contains"
+                ElseIf FilterColumn.Equals("StartsWith") Then
+                    FilterColumn = "StartsWith"
+                ElseIf FilterColumn.Equals("EndsWith") Then
+                    FilterColumn = "EndsWith"
+                End If
+
+                Dim result As Boolean = MakeStringFilter(item, FilterProperty, FilterColumn)
+                Return result
+            End If
+        End If
+    End If
+
+    Return False
+End Function
 
 {% endhighlight %}
 
