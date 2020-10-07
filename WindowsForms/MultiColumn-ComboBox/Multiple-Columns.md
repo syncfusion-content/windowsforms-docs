@@ -82,7 +82,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
 {% endtabs %}
 
-The custom filtering can be applied by assigning a predicate to the `Filter` property. Based on the filtering condition given, items are filtered and displayed in the dropdown.
+The custom filtering can be applied by assigning a predicate to the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_Filter) property. Based on the filtering condition given, items are filtered and displayed in the dropdown.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ End Function
 {% endtabs %}
 
 N> If AllowFiltering is enabled and the filtering is not set or it is set to null, the default filtering will be applied.
-Default filtering uses DisplayMember as Column with `StartWith` condition.
+Default filtering uses [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.html#Syncfusion_Windows_Forms_Tools_ComboBoxBaseDataBound_DisplayMember) as Column with `StartWith` condition.
 
 
 ![Custom Filtering](Overview_images/Overview_img353.jpg) 
