@@ -2010,6 +2010,21 @@ Specifies the character to use when a time separator position is specified.The d
 </tr>
 </table>
 
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "ShippingDate", HeaderText = "Shipping Date", Mask = "##/##/####", DateSeparator = '-' });
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "Freight", HeaderText = "Freight", Mask = "##.###", DecimalSeparator = '.' });
+this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "ShippingTime", HeaderText = "Shipping Time", Mask = "##:##:##", TimeSeparator=':' });
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingDate", .HeaderText = "Shipping Date", .Mask = "##/##/####", .DateSeparator = "-"c})
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "Freight", .HeaderText = "Freight", .Mask = "##.###", .DecimalSeparator = "."c})
+Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingTime", .HeaderText = "Shipping Time", .Mask = "##:##:##", .TimeSeparator=":"c})
+{% endhighlight %}
+{% endtabs %}
+
+![Winforms DataGrid specifies the separators in  GridMaskColumn](ColumnTypes_images/ColumnTypes_img51.png)
+
 ## GridCheckBoxSelectorColumn
 
 `SfDataGrid` allows you to select or deselect individual rows through CheckBox using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode).
