@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: creating radiobuttonadv
+title: Getting Started with Windows Forms Radio Button | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Radio Button (RadioButtonAdv)
 
 The section briefly describes how to create a new Windows Forms project in Visual Studio and add **"RadioButtonAdv"** with it's functionalities.
 

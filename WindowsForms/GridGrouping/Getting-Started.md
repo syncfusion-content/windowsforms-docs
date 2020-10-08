@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential WindowsForms
+title: Getting Started with WinForms GridGrouping control | Syncfusion
 description: This section explains on how to add a GridGroupingControl in an application and some of the basic functionalities of it.
 platform: WindowsForms
 control: GridGrouping

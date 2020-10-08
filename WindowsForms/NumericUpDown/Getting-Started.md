@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | NumericUpDown | WindowsForms | Syncfusion
-description: How to add the NumericUpDownExt control in a Windows Forms application.
+title: Getting Started with Windows Forms NumericUpDown | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: NumericUpDownExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms NumericUpDown (NumericUpDownExt)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **NumericUpDownExt** control with its basic functionalities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: creating combodropdown
+title: Getting Started in Windows Forms ComboBox DropDown | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms ComboBox DropDown (ComboDropDown)
 
 In this section, ComboDropDown is used to host TreeView control and this can be achieved in the following ways.
 
@@ -19,25 +19,25 @@ The below steps will guide you with this.
 
 1. Create a new Visual C# application or VB.NET application in Visual Studio .NET. 
 
-   ![](Overview_images/Overview_img278.jpeg) 
+   ![Create new application](Overview_images/Overview_img278.jpeg) 
 
 
 
 2. Drag and drop a ComboDropDown control, TreeView control from the toolbox onto the form.
 
-   ![](Overview_images/Overview_img279.jpeg) 
+   ![Drag and drop ComboDropDown control](Overview_images/Overview_img279.jpeg) 
 
 
 
 3. Add nodes to the TreeView control and set HideSelection property to false. The HideSelection property specifies whether the selected tree node remains highlighted even when the tree view has lost the focus.
 
-   ![](Overview_images/Overview_img280.jpeg) 
+   ![set HideSelection property to false](Overview_images/Overview_img280.jpeg) 
 
 
 
 4. Now set the ComboDropDown's PopupControl property to be the above TreeView instance. 
 
-   ![](Overview_images/Overview_img281.jpeg) 
+   ![set the ComboDropDowns PopupControl property](Overview_images/Overview_img281.jpeg) 
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | WindowsForms | Syncfusion
+title: Getting Started in Windows Forms Smith Chart control | Syncfusion
 description: This section provides a create a simple smith chart through the designer and through code in windowsforms platform.
 platform: WindowsForms
 control: SfSmithChart

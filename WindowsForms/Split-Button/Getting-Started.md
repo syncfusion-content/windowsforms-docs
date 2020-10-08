@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms Split Button | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Split Button control and more details.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Split Button
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add **"SplitButton"** with it's basic functionalities.
 

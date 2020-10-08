@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right To Left Support | PivotGrid | Windows Forms | Syncfusion
-description: Right to left support in pivot grid control
+title: Right to Left Support in Windows Forms Pivot Grid | Syncfusion
+description: Learn about Right to Left Support support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---
 
-# Right To Left
+# Right to Left Support in Windows Forms Pivot Grid
 
 The elements of pivot grid control can be aligned in right-to-left (RTL) layout. This support is useful when the pivot grid control is localized in Middle Eastern languages, such as Hebrew and Arabic, which are written predominantly from right to left.
 
