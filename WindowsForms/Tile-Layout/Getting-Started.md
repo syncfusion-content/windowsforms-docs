@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: Getting Started
+title: Getting Started in Windows Forms Tile Layout control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Tile Layout control and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Tile Layout
 
 This section describes how to add [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control in a Windows Forms application and overview of its basic functionalities.
 
