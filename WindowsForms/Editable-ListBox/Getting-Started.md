@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: How to create an EditableList control in Windows Forms application.
+title: Getting Started with Windows Forms Editable ListBox | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Editable ListBox (EditableList) control and more details. 
 platform: WindowsForms
 control: EditableList
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Editable ListBox (EditableList)
 
 ## Assembly deployment
 

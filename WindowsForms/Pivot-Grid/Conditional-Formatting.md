@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional-Formatting | PivotGrid | Windows Forms | Syncfusion
-description: Conditional formatting in pivot grid
+title: Conditional Formatting in Windows Forms Pivot Grid | Syncfusion
+description: Learn about Conditional Formatting support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Conditional Formatting
+# Conditional Formatting in Windows Forms Pivot Grid
 
 Conditional formatting is a process of applying customized styles to the cells of pivot grid based on conditions specified by the users.
 
