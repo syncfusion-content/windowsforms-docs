@@ -7,7 +7,7 @@ control: GradientPanel
 documentation: ug
 ---
 
-# 	Getting Started with Windows Forms Gradient Panel
+# Getting Started with Windows Forms Gradient Panel
 
 This section will guide you to create a Gradient Panel via designer and also programming approach.
 
