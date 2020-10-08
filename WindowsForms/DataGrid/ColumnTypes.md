@@ -133,8 +133,6 @@ Use to display multi select combobox in each row
 </tr>
 <tr>
 <td>
-<tr>
-<td>
 {{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
 </td>
 <td>
@@ -144,6 +142,8 @@ Use to display multi select combobox in each row
 Use to display the data to be masked.
 </td>
 </tr>
+<tr>
+<td>
 {{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
 </td>
 <td>
