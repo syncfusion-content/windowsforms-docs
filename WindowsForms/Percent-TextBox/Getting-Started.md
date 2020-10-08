@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | PercentTextBox | WindowsForms | Syncfusion
-description: This section describes how to add percent tex box control into application
+title: Getting Started with Windows Forms Percent TextBox | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: PercentTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Percent TextBox
 
 ## Assembly deployment
 

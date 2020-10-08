@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill-UpDown-Level | Windows Forms | Syncfusion
-description: drill up/down level
+title: Drill Operations in Windows Forms Pivot Chart | Syncfusion
+description: Learn about Drill Operations support in Syncfusion Windows Forms Pivot Chart control and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Drill Up/Down Level
+# Drill Operations in Windows Forms Pivot Chart
 
 Through expanders, you can drill down to the next level of hierarchy and drill up to the previous level. The pivot chart has built-in support to drill up and down the PivotSeries population. This behavior can be achieved by enabling the `AllowDrillDown` property.
 
