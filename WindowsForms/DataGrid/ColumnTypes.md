@@ -1978,7 +1978,7 @@ Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumbe
 {% endhighlight %}
 {% endtabs %}
 
-### Specifing separators
+### Specifying separators
 
 You can display the data along with separators specifying date, time and decimals at runtime using the [GridMaskColumn.DateSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DateSeparator), [GridMaskColumn.TimeSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_TimeSeparator) and [GridMaskColumn.DecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DecimalSeparator) properties. Separators can be specified in the mask character itself.
 
