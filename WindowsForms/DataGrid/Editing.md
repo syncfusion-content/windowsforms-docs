@@ -123,6 +123,12 @@ End Sub
 
 ![Windows forms datagrid Editing CurrentCellEndEdit ](Editing_images/Editing_Image3.png)
 
+### Change style of editor control
+
+The style of editor control can be changed while editing the current cell using the [sfDataGrid.EditingControlShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditingControlShowing) event.
+
+![Windows forms datagrid Editing changing style of editor control](Editing_images/Editing_Image4.png)
+
 ## Programmatic Editing 
 The editing can be handled programmatically by using the [CurrentCellManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Interactivity.CurrentCellManager.html) which has the helper methods for handling the editing.
 
