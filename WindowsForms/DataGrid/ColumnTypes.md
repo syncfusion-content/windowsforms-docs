@@ -1950,7 +1950,7 @@ Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumbe
 {% endhighlight %}
 {% endtabs %}
 
-![GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.png)
+![Winforms DataGrid shows with GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.png)
 
 ### Specifying prompt character
 
@@ -1977,6 +1977,38 @@ this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "PhoneNumber",
 Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)9999", .MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals})
 {% endhighlight %}
 {% endtabs %}
+
+### Specifing separators
+
+You can display the data along with separators specifying date, time and decimals at runtime using the [GridMaskColumn.DateSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DateSeparator), [GridMaskColumn.TimeSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_TimeSeparator) and [GridMaskColumn.DecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DecimalSeparator) properties. Separators can be specified in the mask character itself.
+
+For example, if you want to display the user data in date time format say 'mm/dd/yy', the mask character should be '##/##/##’.
+If you want to display the date time as ‘mm-dd-yy’, change the `GridMaskColumn.DateSeparator` property from ‘/’ to ‘-‘.
+
+<table>
+<tr>
+<th>
+Separators</th><th>
+Description</th></tr>
+<tr>
+<td>
+DateSeparator</td><td>
+Specifies the character to use when a date separator position is specified.The default separator is '/'.
+</td>
+</tr>
+<tr>
+<td>
+DecimalSeparator</td><td>
+Specifies the character to use when a decimal separator position is specified.The default separator is '.'.
+</td>
+</tr>
+<tr>
+<td>
+TimeSeparator</td><td>
+Specifies the character to use when a time separator position is specified.The default separator is ':'.
+</td>
+</tr>
+</table>
 
 ## GridCheckBoxSelectorColumn
 
