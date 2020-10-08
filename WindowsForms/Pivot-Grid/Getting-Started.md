@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | PivotGrid | Windows Forms | Syncfusion
-description: Getting started
+title: Getting Started with Windows Forms Pivot Grid | Syncfusion
+description: Learn here about getting started with the Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Pivot Grid
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.

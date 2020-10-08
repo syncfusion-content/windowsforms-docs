@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Calculator | WindowsForms | Syncfusion
-description: This section describes how to add calculator control into windows forms application.
+title: Getting Started in Windows Forms Calculator control | Syncfusion
+description: Learn here about getting started with the Syncfusion Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Calculator
 
 ## Assembly deployment
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Calculations | PivotGrid | Windows Forms | Syncfusion
-description: Pivot calculations
+title: Pivot Calculations in Windows Forms Pivot Grid | Syncfusion
+description: Learn about Pivot Calculations support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Pivot Calculations
+# Pivot Calculations in Windows Forms Pivot Grid
 
 Pivot calculations are defined by using the [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) object which holds the information required for defining calculations that appear in the pivot grid control.
 
@@ -73,8 +73,7 @@ Currency</td></tr>
 #,##0</td><td>
 Thousand Separator</td></tr>
 <tr>
-<td>
-# ' degrees'</td><td>
+<td># ' degrees'</td><td>
 Literal String Specifier</td></tr>
 <tr>
 <td>

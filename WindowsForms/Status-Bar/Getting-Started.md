@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: creating statusbaradv
+title: Getting Started in Windows Forms Status Bar control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Status Bar (StatusBarAdv)
 
 This section will give a step-by-step procedure to design a StatusBarAdv control through designer and also through programming approach.
 
@@ -17,13 +17,13 @@ To create a StatusBarAdv control through designer,
 
 1. Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
-   ![](Overview_images/Overview_img60.jpeg) 
+   ![Create Status Bar Through designer](Overview_images/Overview_img60.jpeg) 
 
 2. Set the desired background for the StatusBarAdv control by setting the desired values for properties that control the background in the properties window.
 3. Drag and drop controls onto the StatusBarAdv control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
-   ![](Overview_images/Overview_img61.jpeg) 
+   ![Run the Application](Overview_images/Overview_img61.jpeg) 
    
    
 ## Through code
@@ -126,4 +126,4 @@ Me.Controls.Add(Me.statusBarAdv1)
    
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
-   ![](Overview_images/Overview_img62.jpeg) 
+   ![Create Status Bar Through Code](Overview_images/Overview_img62.jpeg) 

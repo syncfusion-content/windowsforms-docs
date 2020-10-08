@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms Tree Navigator | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Tree Navigator control and more detail
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Tree Navigator
 
 This section briefly describes how to design a TreeNavigator Control in a Windows Forms Application.
 
@@ -46,13 +46,13 @@ We can Implement Tree navigator in Two ways they are,
 2.	Then Drag and Drop the TreeNavigator control from the toolbox into the designer page.
 
 
-![](Getting-Started_images/DragDrop.png)
+![Adding Tree Navigator Control Via Designer](Getting-Started_images/DragDrop.png)
 
 
 3.	Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application with the required libraries.
 
 
-![](Getting-Started_images/AfterDragDrop.png)
+![Drag Drop the TreeNavigator](Getting-Started_images/AfterDragDrop.png)
 
 
 
@@ -159,10 +159,10 @@ The following steps allows you to add TreeMenuItem to the TreeNavigator through 
 
 2.	Click the Smart Tag button and select the items property from the listed properties.
 
-![](Getting-Started_images/ThroughDesigner.png)
+![Click Smart Tag button](Getting-Started_images/ThroughDesigner.png)
 
 3.	Then add  items as shown below.
    
-![](Getting-Started_images/ThroughDesigner2.png)
+![Adding the Items](Getting-Started_images/ThroughDesigner2.png)
 
-![](Getting-Started_images/Adding_TreeMenuitems.png)
+![TreeNavigator Output](Getting-Started_images/Adding_TreeMenuitems.png)

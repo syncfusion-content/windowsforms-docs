@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  GettingStarted | Windows Forms | Syncfusion
-description: GettingStarted of ContextMenuStripEx control
+title: Getting Started in Windows Forms ContextMenuStrip | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more details.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in Windows Forms ContextMenuStrip (ContextMenuStripEx)
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Windows Forms application to use our components.

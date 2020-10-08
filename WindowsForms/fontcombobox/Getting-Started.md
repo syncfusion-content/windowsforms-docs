@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: overview
+title: Getting Started with Windows Forms FontComboBox | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms FontComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms FontComboBox
 
 To use a FontComboBox control in your application, all you need to do is drag and drop the FontComboBox control from the controls toolbox onto your form. 
 
-![](Overview_images/Overview_img583.jpeg)
+![Drag and Drop the FontComboBox control](Overview_images/Overview_img583.jpeg)
 
 It can be created programmatically as follows.
 
@@ -53,4 +53,4 @@ Me.Controls.Add(Me.fontComboBox1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img584.jpeg) 
+![Creating an instance of FontComboBox control](Overview_images/Overview_img584.jpeg) 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started with WinForms MessageBox control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more details.
 platform: WindowsForms
 control: MessageBoxAdv
