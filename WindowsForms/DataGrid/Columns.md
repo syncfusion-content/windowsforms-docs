@@ -85,10 +85,34 @@ Use to display button in each row
 </tr>
 <tr>
 <td>
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display progressbar in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display multi select combobox in each row
+</td>
+</tr>
+<tr>
+<td>
 {{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the masked value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+</td>
+<td>
+Selects or deselects rows based on the check box value, which is not bound with data object.
 </td>
 </tr>
 </table>

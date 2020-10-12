@@ -1993,19 +1993,19 @@ Description</th></tr>
 <tr>
 <td>
 DateSeparator</td><td>
-Specifies the character to use when a date separator position is specified.The default separator is '/'.
+Specifies the character to use when a date separator position is specified. The default separator is '/'.
 </td>
 </tr>
 <tr>
 <td>
 DecimalSeparator</td><td>
-Specifies the character to use when a decimal separator position is specified.The default separator is '.'.
+Specifies the character to use when a decimal separator position is specified. The default separator is '.'.
 </td>
 </tr>
 <tr>
 <td>
 TimeSeparator</td><td>
-Specifies the character to use when a time separator position is specified.The default separator is ':'.
+Specifies the character to use when a time separator position is specified. The default separator is ':'.
 </td>
 </tr>
 </table>
