@@ -1954,7 +1954,7 @@ sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber"
 
 ### Setting mask format
 
-At runtime, we can copy or paste the entries of `GridMaskColumn`. The entries that are copied can be specified whether to include literals using the [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) property. By default `GridMaskColumn.MaskFormat` is set to `ClipModes.IncludeLiterals`, To get rid off the literals in the formatted string you can set [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) as `ClipModes.ExcludeLiterals`. 
+At runtime, you can copy or paste the entries of `GridMaskColumn`. The entries that are copied can be specified whether to include literals using the [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) property. By default `GridMaskColumn.MaskFormat` is set to `ClipModes.IncludeLiterals`, To get rid of the literals in the formatted string you can set [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) as `ClipModes.ExcludeLiterals`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1965,7 +1965,7 @@ sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber"
 {% endhighlight %}
 {% endtabs %}
 
-### Specifying prompt character
+### Setting prompt character
 
 By default, an underscore (_) is displayed when the user input is absent. This can be changed by setting [GridMaskColumn.PromptCharacter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_PromptCharacter) property.
 
@@ -1978,7 +1978,7 @@ sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber"
 {% endhighlight %}
 {% endtabs %}
 
-### Specifying separators
+### Setting separators
 
 You can display the data along with separators specifying date, time and decimals at runtime using the [GridMaskColumn.DateSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DateSeparator), [GridMaskColumn.TimeSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_TimeSeparator) and [GridMaskColumn.DecimalSeparator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_DecimalSeparator) properties. Separators can be specified in the mask character itself.
 
