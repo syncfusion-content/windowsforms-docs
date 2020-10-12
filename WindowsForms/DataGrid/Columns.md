@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Columns in winforms datagrid (SfDataGrid)
+# Columns in WinForms DataGrid (SfDataGrid)
 SfDataGrid allows to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Columns) property. The columns to be added can be chosen from built-in column types or own column can be created and add to the `SfDataGrid.Columns`.
 Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
 <table>
