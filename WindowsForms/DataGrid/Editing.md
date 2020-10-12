@@ -125,16 +125,16 @@ End Sub
 
 ### Change style of editor control
 
-The style of editor control can be changed while editing the current cell using the [sfDataGrid.EditingControlShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditingControlShowing) event.
+The style of editor control shown while editing the current cell can be modified using the [sfDataGrid.EditingControlShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_EditingControlShowing) event.
 
 {% tabs %}
 {% highlight c# %}
-sfDataGrid.EditingControlShowing += SfDataGrid1_EditingControlShowing;
+sfDataGrid.EditingControlShowing += SfDataGrid_EditingControlShowing;
 
 private void SfDataGrid_EditingControlShowing(object sender, DataGridEditingControlShowingEventArgs e)
 {
-    e.Style.BackColor = Color.Orange;
-    e.Style.TextColor = Color.DarkBlue;
+    e.Style.BackColor = Color.LightBlue;
+    e.Style.TextColor = Color.White;
 }
 
 {% endhighlight %}
@@ -142,8 +142,8 @@ private void SfDataGrid_EditingControlShowing(object sender, DataGridEditingCont
 AddHandler sfDataGrid.EditingControlShowing, AddressOf SfDataGrid_EditingControlShowing
 
 Private Sub SfDataGrid_EditingControlShowing(ByVal sender As Object, ByVal e As DataGridEditingControlShowingEventArgs)
-	e.Style.BackColor = Color.Orange
-	e.Style.TextColor = Color.DarkBlue
+	e.Style.BackColor = Color.LightBlue
+	e.Style.TextColor = Color.White
 End Sub
 
 {% endhighlight %}

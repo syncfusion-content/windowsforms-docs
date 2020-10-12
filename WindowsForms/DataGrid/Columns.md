@@ -83,6 +83,14 @@ Use to display the Uri data
 Use to display button in each row
 </td>
 </tr>
+<tr>
+<td>
+{{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the masked value.
+</td>
+</tr>
 </table>
 
 ## Defining Columns

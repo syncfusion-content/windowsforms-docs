@@ -139,7 +139,7 @@ Use to display multi select combobox in each row
 {{'[GridCellMaskEditBoxRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Renderers.GridCellMaskEditBoxRenderer.html)'| markdownify }}
 </td>
 <td>
-Use to display the data to be masked.
+Use to display the masked value.
 </td>
 </tr>
 <tr>
@@ -1943,14 +1943,27 @@ The following screenshot illustrates the different `ShipCity` DataSource bound t
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() {MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)99999999"});
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "ContactNumber", HeaderText = "Contact Number", Mask = "(999) 999-9999" });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)99999999"})
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber", .HeaderText = "Contact Number", .Mask = "(999) 999-9999"})
 {% endhighlight %}
 {% endtabs %}
 
 ![Winforms DataGrid shows with GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.png)
+
+### Setting mask format
+
+At runtime, we can copy or paste the entries of `GridMaskColumn`. The entries that are copied can be specified whether to include literals using the [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) property. By default `GridMaskColumn.MaskFormat` is set to `ClipModes.IncludeLiterals`, To get rid off the literals in the formatted string you can set [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) as `ClipModes.ExcludeLiterals`. 
+
+{% tabs %}
+{% highlight c# %}
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "ContactNumber", HeaderText = "Contact Number", Mask = "(999) 999-9999", MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals });
+{% endhighlight %}
+{% highlight vb %}
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber", .HeaderText = "Contact Number", .Mask = "(999) 999-9999", .MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals})
+{% endhighlight %}
+{% endtabs %}
 
 ### Specifying prompt character
 
@@ -1958,23 +1971,10 @@ By default, an underscore (_) is displayed when the user input is absent. This c
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)9999", PromptCharacter = '^' });
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "ContactNumber", HeaderText = "Contact Number", Mask = "(999) 999-9999", PromptCharacter = '^' });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)9999", .PromptCharacter = "^"})
-{% endhighlight %}
-{% endtabs %}
-
-### Setting mask format
-
-By default `GridMaskColumn.MaskFormat` is set to `clipModes.IncludeLiterals`, To exclude the literals in the formatted string you can set [GridMaskColumn.MaskFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html#Syncfusion_WinForms_DataGrid_GridMaskColumn_MaskFormat) as `clipModes.ExcludeLiterals`.
-
-{% tabs %}
-{% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "PhoneNumber", HeaderText = "Phone Number", Mask = "(99)9999", MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals });
-{% endhighlight %}
-{% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "PhoneNumber", .HeaderText = "Phone Number", .Mask = "(99)9999", .MaskFormat = Syncfusion.Windows.Forms.Tools.ClipModes.ExcludeLiterals})
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber", .HeaderText = "Contact Number", .Mask = "(999) 999-9999", .PromptCharacter = "^"c})
 {% endhighlight %}
 {% endtabs %}
 
@@ -2012,18 +2012,16 @@ Specifies the character to use when a time separator position is specified.The d
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "ShippingDate", HeaderText = "Shipping Date", Mask = "##/##/####", DateSeparator = '-' });
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "Freight", HeaderText = "Freight", Mask = "##.###", DecimalSeparator = '.' });
-this.sfDataGrid1.Columns.Add(new GridMaskColumn() { MappingName = "ShippingTime", HeaderText = "Shipping Time", Mask = "##:##:##", TimeSeparator=':' });
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "ShippingDate", HeaderText = "Shipping Date", Mask = "##/##/####", DateSeparator = '-' });
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "Freight", HeaderText = "Freight", Mask = "##.###", DecimalSeparator = '.' });
+sfDataGrid.Columns.Add(new GridMaskColumn() { MappingName = "ShippingTime", HeaderText = "Shipping Time", Mask = "##:##:##", TimeSeparator=':' });
 {% endhighlight %}
 {% highlight vb %}
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingDate", .HeaderText = "Shipping Date", .Mask = "##/##/####", .DateSeparator = "-"c})
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "Freight", .HeaderText = "Freight", .Mask = "##.###", .DecimalSeparator = "."c})
-Me.sfDataGrid1.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingTime", .HeaderText = "Shipping Time", .Mask = "##:##:##", .TimeSeparator=":"c})
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingDate", .HeaderText = "Shipping Date", .Mask = "##/##/####", .DateSeparator = "-"c})
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "Freight", .HeaderText = "Freight", .Mask = "##.###", .DecimalSeparator = "."c})
+sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ShippingTime", .HeaderText = "Shipping Time", .Mask = "##:##:##", .TimeSeparator=":"c})
 {% endhighlight %}
 {% endtabs %}
-
-![Winforms DataGrid specifies the separators in  GridMaskColumn](ColumnTypes_images/ColumnTypes_img51.png)
 
 ## GridCheckBoxSelectorColumn
 
