@@ -1950,7 +1950,7 @@ sfDataGrid.Columns.Add(New GridMaskColumn() With {.MappingName = "ContactNumber"
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms DataGrid shows with GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.png)
+![Winforms DataGrid shows with GridMaskColumn](ColumnTypes_images/ColumnTypes_img50.gif)
 
 ### Setting mask format
 
