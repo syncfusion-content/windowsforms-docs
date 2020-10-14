@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Application-Menu | WindowsForms | Syncfusion
-description: application menu
+title: Application-Menu | WindowsForms RibbonControlAdv| Syncfusion
+description: Learn here abouut how to add the item in application menu and minimize the menu bar panel in Windows Forms RibbonControlAdv.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -22,17 +22,17 @@ The panels are:
 *	Main Panel
 *	System Panel
 
-![](Application_Menu_Images/Application-Menu_img1.jpg)
+![Open the application menu in WF Ribbon](Application_Menu_Images/Application-Menu_img1.jpg)
 
 ### Adding Items to Aux panel
 
 Items to Aux panel can be added through Items property which invokes Item Collection Editor and items can be added to the panel.
 
-![](Application_Menu_Images/Application-Menu_img2.jpg)
+![Add menu item to panel in WF Ribbon](Application_Menu_Images/Application-Menu_img2.jpg)
 
 
 
-![](Application_Menu_Images/Application-Menu_img3.jpg)
+![Show the item collection editor in WF Ribbon](Application_Menu_Images/Application-Menu_img3.jpg)
 
 ### Adding Items to Main Panel
 
@@ -61,3 +61,25 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 {% endhighlight %}
 
 {% endtabs %}
+
+## Minimize the menu bar panel
+
+You can hide or minimize the menu bar panel by setting the [MinimizePanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MinimizePanel) property to `true` in RibbonControlAdv. The default value is `false`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.ribbonControlAdv1.MinimizePanel = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The below image indicates when set the `MinimizePanel` property as `true`.
+
+![Minimize the menu bar panel in WF Ribbon](Application_Menu_Images/wf-ribbon-minimizemenubar.png)
+
+The below image indicates when set the `MinimizePanel` property as `false`.
+
+![Maximize the menu bar panel in WF Ribbon](Application_Menu_Images/wf-ribbon-maximizemenubar.png)
