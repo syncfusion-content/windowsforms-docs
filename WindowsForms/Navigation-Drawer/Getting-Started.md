@@ -145,24 +145,31 @@ Me.navigationDrawer1.Items.Add(Me.drawerMenuItem4)
 
 ## Sidebar placement
 
-Users can specify the following sliding position of the DrawerView:
+You can change the sliding position of the NavigationDrawer control by using [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) control.
+
+The sliding position options of the NavigationDrawer is given below,
  
 * **Left**– Slides from left direction.
 * **Right**– Slides from right direction.
 * **Top**– Slides from Top direction.
 * **Bottom**– Slides from Bottom direction.
 
-It can be achieved by setting the [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) property of NavigationDrawer.
-
 {% tabs %}
+
 {% highlight C# %}
+
 //Setting side bar position 
-this.navigationDrawer1.Position = Position.Left;
+this.navigationDrawer1.Position = SlidePosition.Left;
+
 {% endhighlight %}
+
 {% highlight VB %}
+
 'Setting side bar position 
-Me.navigationDrawer1.Position = Position.Left
+Me.navigationDrawer1.Position = SlidePosition.Left
+
 {% endhighlight %}
+
 {% endtabs %}
 
 * **Left**
@@ -181,9 +188,9 @@ Me.navigationDrawer1.Position = Position.Left
 
 ![wf naigation drawer bottom view](Getting-Started_images/wf-navigation-drawer-bottom-side-drawer-view.png)
  
- ## Setting image to an item
+## Setting image to an item
 
- The `NavigationDrawer` allows setting image to each menu item using `Image` property.
+The `NavigationDrawer` allows setting image to each menu item using `Image` property.
 
 {% tabs %}
 {% highlight C# %}
