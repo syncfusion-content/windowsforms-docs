@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion RibbonControlAdv for Windows Forms
+title: Overview of Syncfusion Windows Forms RibbonControlAdv
 description: An overview of RibbonControlAdv with Ribbon items and Backstage to give a Ribbon like UI appearance with the updated Visual styles
 platform: WindowsForms
 control: RibbonControlAdv 
@@ -8,27 +8,29 @@ documentation: ug
 ---
 
 # Overview
-`RibbonControlAdv` illustrates the implementation of Ribbon like UI with Ribbon items and Backstage. Also, RibbonForm has been implemented for giving a themed Office UI look and feel for a complete window. The ribbon user interface (UI) increases discoverability of features, enables quicker learning of the application and makes user feel more in control of their experience with the application.
 
-## Components of RibbonControlAdv
+The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface similar to Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help organize an application. It provides an application UI similar to Microsoft Office with a 2007 style that contains an application menu and a 2016 style that contains a backstage view.
 
-•	Ribbon Form
-•	Menu Button
-•	BackStageView
-•	RibbonPanel
-•	ToolStripTabItem
-•	ToolStripEx
-•	ToolStripItems
+![Overview of Syncfusion RibbonControlAdv](OverView_Images/OverView_img1.jpg)
 
 ## Key Features
 
-•	RibbonForm - An extension that replaces the default form to enable different Visual styles to ribbon. 
-•	QuickAccessToolbar - Provides placing of frequently used items.
-•	ToolStripTabItem - Support to add different Tabs to show the features of application like in Microsoft Outlook.
-•	RibbonPanel – Allows to structure the layouts.
-•	DropDownButton – Collapses the Ribbon, which provides more space and tab names will appear.
-•	KeyTips – Interactive support through keyboard navigation.
-•	StatusStripEx -  Provides placing of StatusBar items at the bottom of the form.
-•	Persistence - Support to save and load the state of RibbonControlAdv.
+**RibbonForm** - Provides support to replaces the default form to enable different visual styles to the ribbon.
 
-![Overview of Syncfusion RibbonControlAdv](OverView_Images/OverView_img1.jpg)
+**QuickAccessToolbar** - Provides support to customize the placing of frequently used items.
+
+**Tabs** - Support to add different Tabs to show the features of application like in Microsoft Outlook.
+
+**Merge support** - Allows merging of RibbonPanel in a child form to RibbonPanel of the parent form.
+
+**Keyboard support** – support key tips for ribbon items and quickly access a command in few keystrokes.
+
+**Status Bar** -  Provides placing of StatusBar items at the bottom of the form.
+
+**Serialization** - Support to save and load the state of RibbonControlAdv.
+
+**ToolTip** - Supports to display the information about specific element and also support SuperTooltip, which are used to customize the default look and feel of all tooltips.
+
+**Touch support** - Supports a touch UI with plenty of interaction space. 
+
+**Localization** - Provides support to localize the content in Ribbon control can be formatted according to culture.
