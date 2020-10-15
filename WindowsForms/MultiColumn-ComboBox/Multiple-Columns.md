@@ -62,7 +62,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
  Fig 1: This screenshot shows the width sets for the DropDown popup of MultiColumnComboBox
 
- ## Custom Filtering
+## Custom filtering
 
 The [MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
  
