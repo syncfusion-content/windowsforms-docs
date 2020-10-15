@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Overview
+# Overview of WF RibbonControlAdv
 
 The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface similar to Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help organize an application. It provides an application UI similar to Microsoft Office with a 2007 style that contains an application menu and a 2016 style that contains a backstage view.
 
