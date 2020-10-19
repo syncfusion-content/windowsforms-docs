@@ -21,7 +21,7 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ## Creating Application with FontComboBox
 
-In this walk through, You will create Windows Forms Application that contains FontComboBox control.
+In this walk through, users will create WinForms Application that contains `FontComboBox` control.
 
 ### Creating the Project
 
