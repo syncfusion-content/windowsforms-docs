@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms FontComboBox
 
-This section provides a quick overview for working with the WF [FontComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontComboBox.html) control.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [FontComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontComboBox.html) control with its functionalities.
 
 ## Assembly Deployment
 
@@ -52,6 +52,15 @@ this.Controls.Add(fontComboBox);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim fontComboBox As New FontComboBox()
+fontComboBox.Size = New Size(150, 40)
+fontComboBox.Location = New Point(100, 100)
+Me.Controls.Add(fontComboBox)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![Default initialization of WF FontComboBox control](GettingStarted_images/wf-fontcombobox-control.png)
@@ -65,6 +74,12 @@ The default font items in the FontComboBox control can be loaded by using the [U
 {% highlight C# %}
 
 fontComboBox.UseAutoComplete = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+fontComboBox.UseAutoComplete = True
 
 {% endhighlight %}
 
@@ -88,6 +103,16 @@ fontComboBox.SelectedIndex = 1;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+'Select the item using SelectedItem property.
+fontComboBox.SelectedItem = "Arial"
+
+'Select the index using SelectedIndex property.
+fontComboBox.SelectedIndex = 1
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![Select the item using selection property](GettingStarted_images/wf-fontcombobox-selection.png)
@@ -96,13 +121,19 @@ N> View sample in GitHub
 
 ## RTL support
 
-The `FontComboBox` control items can be aligned in right-to-left layout. This control can be laid out from right to left when the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=netcore-3.1) property value is set to `Yes`.
+RTL is used to display the content from right to left by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=netcore-3.1) property to `Yes`.
 
 {% tabs %}
 
 {% highlight C# %}
 
 fontComboBox.RightToLeft = RightToLeft.Yes;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+fontComboBox.RightToLeft = RightToLeft.Yes
 
 {% endhighlight %}
 
