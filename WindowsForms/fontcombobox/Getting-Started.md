@@ -117,7 +117,7 @@ fontComboBox.SelectedIndex = 1
 
 ![Select the item using selection property](GettingStarted_images/wf-fontcombobox-selection.png)
 
-N> View sample in GitHub
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-WF-FontComboBox)
 
 ## RTL support
 
