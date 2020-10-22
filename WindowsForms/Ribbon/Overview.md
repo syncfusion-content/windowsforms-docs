@@ -9,28 +9,28 @@ documentation: ug
 
 # Overview of WF RibbonControlAdv
 
-The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface similar to Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help organize an application. It provides an application UI similar to Microsoft Office with a 2007 style that contains an application menu and a 2016 style that contains a backstage view.
+The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface like Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help to organize an application. It provides an application UI like Microsoft Office with a 2007 style that contains an application menu and 2016 style that contains a backstage view.
 
 ![Overview of Syncfusion RibbonControlAdv](OverView_Images/OverView_img1.jpg)
 
 ## Key Features
 
-**RibbonForm** - Provides support to replaces the default form to enable different visual styles to the ribbon.
+**RibbonForm** : Provides the support to replace the default form to enable different visual styles to the ribbon.
 
-**QuickAccessToolbar** - Provides support to customize the placing of frequently used items.
+**QuickAccessToolbar** : Provides support to customize the placing of frequently used items.
 
-**Tabs** - Support to add different Tabs to show the features of application like in Microsoft Outlook.
+**Tabs** : Support to add different tabs to show the features of an application like in Microsoft Outlook.
 
-**Merge support** - Allows merging of RibbonPanel in a child form to RibbonPanel of the parent form.
+**Merge support** : Allows the merging of RibbonPanel in a child form to RibbonPanel of the parent form.
 
-**Keyboard support** – support key tips for ribbon items and quickly access a command in few keystrokes.
+**Keyboard support** : supports key tips for ribbon items and quickly access command in a few keystrokes.
 
-**Status Bar** -  Provides placing of StatusBar items at the bottom of the form.
+**Status Bar** :  Supports placing of StatusBar items at the bottom of the form.
 
-**Serialization** - Support to save and load the state of RibbonControlAdv.
+**Serialization** :  Provides the support to save and load the state of RibbonControlAdv.
 
-**ToolTip** - Supports to display the information about specific element and also support SuperTooltip, which are used to customize the default look and feel of all tooltips.
+**ToolTip** : Supports displaying the information about the specific element and also supports the SuperTooltip, which are used to customize the default look and feel of all tooltips.
 
-**Touch support** - Supports a touch UI with plenty of interaction space. 
+**Touch support** : Supports a touch UI with plenty of interaction space. 
 
-**Localization** - Provides support to localize the content in Ribbon control can be formatted according to culture.
+**Localization** : Provides the support to localize the content in the Ribbon control which can be formatted according to culture.
