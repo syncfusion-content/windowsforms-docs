@@ -15,7 +15,7 @@ The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Sync
 
 ## Key Features
 
-**RibbonForm** : Provides the support to replace the default form to enable different visual styles to the ribbon.
+**RibbonForm** : Provides the support to replace the default form for enabling different visual styles to the ribbon.
 
 **QuickAccessToolbar** : Provides support to customize the placing of frequently used items.
 
@@ -23,7 +23,7 @@ The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Sync
 
 **Merge support** : Allows the merging of RibbonPanel in a child form to RibbonPanel of the parent form.
 
-**Keyboard support** : supports key tips for ribbon items and quickly access command in a few keystrokes.
+**Keyboard support** : Supports key tips for ribbon items and quickly access command in a few keystrokes.
 
 **Status Bar** :  Supports placing of StatusBar items at the bottom of the form.
 
