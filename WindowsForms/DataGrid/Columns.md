@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Columns
+# Columns in WinForms DataGrid (SfDataGrid)
 SfDataGrid allows to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Columns) property. The columns to be added can be chosen from built-in column types or own column can be created and add to the `SfDataGrid.Columns`.
 Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
 <table>
@@ -81,6 +81,38 @@ Use to display the Uri data
 </td>
 <td>
 Use to display button in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridProgressBarColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridProgressBarColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display progressbar in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridMultiSelectComboBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMultiSelectComboBoxColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display multi select combobox in each row
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridMaskColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridMaskColumn.html)'| markdownify }}
+</td>
+<td>
+Use to display the masked value.
+</td>
+</tr>
+<tr>
+<td>
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+</td>
+<td>
+Selects or deselects rows based on the check box value, which is not bound with data object.
 </td>
 </tr>
 </table>
