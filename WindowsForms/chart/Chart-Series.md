@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart-Series | Windows Forms | Syncfusion
-description: This section explains about the series and it's customization
+description: This section explains about what chart series and trendlines is and how to customize it in different ways.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Series
+# Chart Series in Windows Forms Chart
 
 Provide data for the chart through the ChartSeries. ChartSeries acts as a wrapper around data that is to be displayed, and associates styles with the data. The data that is to be displayed is contained in either the IChartSeriesModel or the IEditableChartSeriesModel implementation. The style used to display the points is stored in a contained implementation of IChartSeriesStylesModel.
 
@@ -404,7 +404,7 @@ Series</td><td>
 Column Chart, Line Chart and HiLo Chart.</td></tr>
 <tr>
 <td>
-{{ '[DrawHistogramNormalDistribution](/windowsforms/chart/chart-series#drawhistogramnormaldistribution)' | markdownify }}</td><td>
+{{ '[ShowNormalDistribution](/windowsforms/chart/chart-series#shownormaldistribution)' | markdownify }}</td><td>
 Series</td><td>
 Histogram chart.</td></tr>
 <tr>
@@ -424,7 +424,7 @@ Series</td><td>
 Bubble Chart.</td></tr>
 <tr>
 <td>
-{{ '[ErrorBarsSymbolShape](/windowsforms/chart/chart-series#errorbarssymbolshape)' | markdownify }}</td><td>
+{{ '[SymbolShape](/windowsforms/chart/chart-series#symbolshape)' | markdownify }}</td><td>
 Series</td><td>
 Column Chart, Line Chart and HiLo Chart.</td></tr>
 <tr>
@@ -559,12 +559,12 @@ Series</td><td>
 All chart types.</td></tr>
 <tr>
 <td>
-{{ '[NumberOfHistogramIntervals](/windowsforms/chart/chart-series#numberofhistogramintervals)' | markdownify }}</td><td>
+{{ '[NumberOfIntervals](/windowsforms/chart/chart-series#numberofintervals)' | markdownify }}</td><td>
 Series</td><td>
 Histogram Chart.</td></tr>
 <tr>
 <td>
-{{ '[OpenCloseDrawMode](/windowsforms/chart/chart-series#openclosedrawmode)' | markdownify }}</td><td>
+{{ '[DrawMode](/windowsforms/chart/chart-series#drawmode)' | markdownify }}</td><td>
 Series</td><td>
 HiLo OpenClose chart.</td></tr>
 <tr>
@@ -2107,13 +2107,13 @@ series.Points.Add(4, new double[] { 40, 6 });
 
 series.Text = series.Name;
 
-// Adding Series to the Chart
+// Specifies the error bar in the column chart.
+
+series.ConfigItems.ErrorBars.Enabled = true;
+
+// Adding the series to the chart
 
 this.chartControl1.Series.Add(series);
-
-// Specifies the Error Bar in Column chart.
-
-this.chartControl1.Series[0].DrawErrorBars = true;
 
 {% endhighlight %}
 
@@ -2135,13 +2135,14 @@ series.Points.Add(4, New Double() { 40, 6 })
 
 series.Text = series.Name
 
-' Adding Series to the Chart
+' Specifies the error bar in the column chart.
+
+series.ConfigItems.ErrorBars.Enabled = True
+
+
+' Adding the series to the chart
 
 Me.chartControl1.Series.Add(series)
-
-' Specifies the Error Bar in Column chart.
-
-Private Me.chartControl1.Series(0).DrawErrorBars = True
 
 {% endhighlight %}
 {% endtabs %}
@@ -2245,11 +2246,11 @@ Me.chartControl1.Series.Add(s1)
 
 {% seealso %}
 
-[Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [HiLo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [ErrorBarsSymbolShape](/windowsforms/chart/chart-series#errorbarssymbolshape)
+[Line Charts](/windowsforms/chart/chart-types#line-charts), [Column Charts](/windowsforms/chart/chart-types#column-charts),  [HiLo Charts](/windowsforms/chart/chart-types#hi-lo-chart), [SymbolShape](/windowsforms/chart/chart-series#symbolshape)
 
 {% endseealso %}
 
-### DrawHistogramNormalDistribution
+### ShowNormalDistribution
 
 The normal distribution curve is drawn by setting this property of the ChartSeries class to true.
 
@@ -2290,11 +2291,11 @@ Here is some sample code.
 
 // This draws the normal distribution curve for the histogram chart.
 
-series2.DrawHistogramNormalDistribution = true;
+series2.ConfigItems.HistogramItem.ShowNormalDistribution = true;
 
 // Set the desired number of intervals required for the histogram chart.
 
-series2.NumberOfHistogramIntervals = 10;
+series2.ConfigItems.HistogramItem.NumberOfIntervals = 10;
 
 {% endhighlight %}
 
@@ -2302,11 +2303,11 @@ series2.NumberOfHistogramIntervals = 10;
 
 ' This draws the normal distribution curve for the histogram chart.
 
-series2.DrawHistogramNormalDistribution = True
+series2.ConfigItems.HistogramItem.ShowNormalDistribution = True
 
 ' Set the desired number of intervals required for the histogram chart.
 
-series2.NumberOfHistogramIntervals = 10
+series2.ConfigItems.HistogramItem.NumberOfIntervals = 10
 
 {% endhighlight %}
 {% endtabs %}
@@ -2622,7 +2623,7 @@ Me.chartControl1.Series(0).EnableAreaToolTip = True
 
 ![Chart Series](Chart-Series_images/Chart-Series_img33.jpeg)
 
-### ErrorBarsSymbolShape
+### SymbolShape
 
 This property determines the shape of the error bar symbol when DrawErrorBars is true.
 
@@ -2661,17 +2662,17 @@ Here is some sample code.
 
 {% highlight c# %}
 
-this.chartControl1.Series[0].DrawErrorBars = true;
+series.ConfigItems.ErrorBars.Enabled = true;
 
-this.chartControl1.Series[0].ErrorBarsSymbolShape = ChartSymbolShape.Circle;
+series.ConfigItems.ErrorBars.SymbolShape = ChartSymbolShape.Circle;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.chartControl1.Series(0).DrawErrorBars = true
+Me.series.ConfigItems.ErrorBars.Enabled = true
 
-Me.chartControl1.Series(0).ErrorBarsSymbolShape = ChartSymbolShape.Circle
+Me.series.ConfigItems.ErrorBars.SymbolShape = ChartSymbolShape.Circle
 
 {% endhighlight %}
 {% endtabs %}
@@ -4717,7 +4718,7 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red
 
 {% endseealso %}
 
-### NumberOfHistogramIntervals
+### NumberOfIntervals
 
 Gets or sets the number of Histogram intervals.
 
@@ -4758,7 +4759,7 @@ Here is a code sample.
 
 // Set the desired number of intervals required for the histogram chart.
 
-series.NumberOfHistogramIntervals = 20;
+series.ConfigItems.HistogramItem.NumberOfIntervals = 20;
 
 {% endhighlight %}
 
@@ -4766,7 +4767,7 @@ series.NumberOfHistogramIntervals = 20;
 
 ' Set the desired number of intervals required for the histogram chart.
 
-series.NumberOfHistogramIntervals = 20
+series.ConfigItems.HistogramItem.NumberOfIntervals = 20
 
 {% endhighlight %}
 {% endtabs %}
@@ -4779,7 +4780,7 @@ series.NumberOfHistogramIntervals = 20
 
 {% endseealso %}
 
-### OpenCloseDrawMode
+### DrawMode
 
 Gets or sets the open, close draw mode to the HiLoOpenClose chart.
 
@@ -4812,7 +4813,7 @@ Applies to Chart Types</td><td colspan = "2">
 HiLoOpenClose Chart</td></tr>
 </table>
 
-Here is the code snippet using OpenCloseDrawMode.
+Here is the code snippet using DrawMode.
 
 {% tabs %}
 
@@ -4832,9 +4833,9 @@ CS1.Points.Add(date.AddDays(4),421,223,317,367);
 
 CS1.Points.Add(date.AddDays(5),434,263,339,385);
 
-this.chartControl1.Series.Add(CS1);
+CS1.ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Open;
 
-this.chartControl1.Series[0].OpenCloseDrawMode = ChartOpenCloseDrawMode.Open;
+this.chartControl1.Series.Add(CS1);
 
 {% endhighlight %}
 
@@ -4856,7 +4857,7 @@ CS1.Points.Add(date.AddDays(5),434,263,339,385)
 
 Me.chartControl1.Series.Add(CS1)
 
-Me.chartControl1.Series(0).OpenCloseDrawMode = ChartOpenCloseDrawMode.Open
+CS1.ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Open
 
 {% endhighlight %}
 {% endtabs %}
