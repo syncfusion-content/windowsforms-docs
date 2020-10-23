@@ -2107,11 +2107,11 @@ series.Points.Add(4, new double[] { 40, 6 });
 
 series.Text = series.Name;
 
-// Specifies the Error Bar in Column chart.
+// Specifies the error bar in the column chart.
 
 series.ConfigItems.ErrorBars.Enabled = true;
 
-// Adding Series to the Chart
+// Adding the series to the chart
 
 this.chartControl1.Series.Add(series);
 
@@ -2135,12 +2135,12 @@ series.Points.Add(4, New Double() { 40, 6 })
 
 series.Text = series.Name
 
-' Specifies the Error Bar in Column chart.
+' Specifies the error bar in the column chart.
 
 series.ConfigItems.ErrorBars.Enabled = True
 
 
-' Adding Series to the Chart
+' Adding the series to the chart
 
 Me.chartControl1.Series.Add(series)
 
