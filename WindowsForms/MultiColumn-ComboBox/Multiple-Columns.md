@@ -97,83 +97,25 @@ public Filtering()
 
     // Event triggered while MultiColumnCombobox's Text changed
     this.multiColumnComboBox1.TextChanged += MultiColumnComboboxTextBox_TextChanged;
-    
-    // Event triggered while Filter condition changed
-    this.FilterConditioncombobox.SelectedIndexChanged += FilterConditioncombobox_SelectedIndexChanged;
 }
  
 private void MultiColumnComboboxTextBox_TextChanged(object sender, EventArgs e)
 {
     FilterText = this.multiColumnComboBox1.TextBox.Text;
-    OnFilterChanged();
-}
-
-private void FilterConditioncombobox_SelectedIndexChanged(object sender, EventArgs e)
-{
-    FilterColumn = FilterConditioncombobox.SelectedValue.ToString();
-    OnFilterChanged();
-}
-
-private void OnFilterChanged()
-{
     // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
     this.multiColumnComboBox1.Filter = FilterRecords;
-}   
+}
 
 public bool FilterRecords(object o)
 {
     var item = o as OrderInfo;
-    if (item != null && FilterText.Equals(""))
+    if (item != null)
     {
-        return true;
+        if(item.ProductName.Equals(FilterText))
+            return true;
     }
-    else
-    {
-        if (item != null)
-        {
-            if (FilterProperty.Equals("All Columns"))
-            {
-                if (item.OrderID.ToString().Contains(FilterText) ||
-                    item.CustomerID.ToLower().Contains(FilterText.ToLower()) || item.ContactNumber.ToString().Contains(FilterText.ToLower()) ||
-                    item.ProductName.ToString().ToLower().Contains(FilterText.ToLower()) || item.Quantity.ToString().ToLower().Contains(FilterText.ToLower()) ||
-                    item.ShipCountry.ToString().ToLower().Contains(FilterText.ToLower()) ||
-                    item.OrderDate.ToString().ToLower().Contains(FilterText.ToLower()))
-                    return true;
-                return false;
-            }
-            else
-            {
-                if (FilterColumn == null || FilterColumn.Equals("Contains"))
-                    FilterColumn = "Contains";
-                else if (FilterColumn.Equals("StartsWith"))
-                    FilterColumn = "StartsWith";
-                else if (FilterColumn.Equals("EndsWith"))
-                    FilterColumn = "EndsWith";
-
-                // Perform filter with filteroption for particular column   
-                bool result = MakeStringFilter(item, FilterProperty, FilterColumn);
-                return result;
-            }
-        }
-    }
-
+     
     return false;
-}
-
-private bool MakeStringFilter(OrderInfo item, string filterOption, string filterProperty)
-{
-    var value = item.GetType().GetProperty(filterOption);
-    var exactValue = value.GetValue(item, null).ToString().ToLower();
-    string text = FilterText.ToLower();
-    var methods = typeof(string).GetMethods();
-    if (methods.Count() != 0)
-    {
-        var methodInfo = methods.FirstOrDefault(method => method.Name == filterProperty);
-        bool result = (bool)methodInfo.Invoke(exactValue, new object[] { text });
-        return result;
-    }
-    else
-        return false;
 }
 
 {% endhighlight %}
@@ -186,22 +128,10 @@ Public Sub New()
 
     // Event triggered while MultiColumnCombobox's Text changed
     Me.multiColumnComboBox1.TextChanged += MultiColumnComboboxTextBox_TextChanged
-
-    // Event triggered while Filter condition changed
-    Me.FilterConditioncombobox.SelectedIndexChanged += FilterConditioncombobox_SelectedIndexChanged
 End Sub
 
 Private Sub MultiColumnComboboxTextBox_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
     FilterText = Me.multiColumnComboBox1.TextBox.Text
-    OnFilterChanged()
-End Sub
-
-Private Sub FilterConditioncombobox_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
-    FilterColumn = FilterConditioncombobox.SelectedValue.ToString()
-    OnFilterChanged()
-End Sub
-
-Private Sub OnFilterChanged()
     // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
     Me.multiColumnComboBox1.Filter = FilterRecords
 End Sub
@@ -209,48 +139,11 @@ End Sub
 Public Function FilterRecords(ByVal o As Object) As Boolean
     Dim item = TryCast(o, OrderInfo)
 
-    If item IsNot Nothing AndAlso FilterText.Equals("") Then
-        Return True
-    Else
-
-        If item IsNot Nothing Then
-
-            If FilterProperty.Equals("All Columns") Then
-                If item.OrderID.ToString().Contains(FilterText) OrElse item.CustomerID.ToLower().Contains(FilterText.ToLower()) OrElse item.ContactNumber.ToString().Contains(FilterText.ToLower()) OrElse item.ProductName.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.Quantity.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.ShipCountry.ToString().ToLower().Contains(FilterText.ToLower()) OrElse item.OrderDate.ToString().ToLower().Contains(FilterText.ToLower()) Then Return True
-                Return False
-            Else
-
-                If FilterColumn Is Nothing OrElse FilterColumn.Equals("Contains") Then
-                    FilterColumn = "Contains"
-                ElseIf FilterColumn.Equals("StartsWith") Then
-                    FilterColumn = "StartsWith"
-                ElseIf FilterColumn.Equals("EndsWith") Then
-                    FilterColumn = "EndsWith"
-                End If
-                
-                 // Perform filter with filteroption for particular column
-                Dim result As Boolean = MakeStringFilter(item, FilterProperty, FilterColumn)
-                Return result
-            End If
-        End If
+    If item IsNot Nothing Then
+        If item.ProductName.Equals(FilterText) Then Return True
     End If
 
     Return False
-End Function
-
-Private Function MakeStringFilter(ByVal item As OrderInfo, ByVal filterOption As String, ByVal filterProperty As String) As Boolean
-    Dim value = item.[GetType]().GetProperty(filterOption)
-    Dim exactValue = value.GetValue(item, Nothing).ToString().ToLower()
-    Dim text As String = FilterText.ToLower()
-    Dim methods = GetType(String).GetMethods()
-
-    If methods.Count() <> 0 Then
-        Dim methodInfo = methods.FirstOrDefault(Function(method) method.Name = filterProperty)
-        Dim result As Boolean = CBool(methodInfo.Invoke(exactValue, New Object() {text}))
-        Return result
-    Else
-        Return False
-    End If
 End Function
 
 {% endhighlight %}
