@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart-Series | Windows Forms | Syncfusion
-description: This section explains about the series and it's customization
+description: This section explains about what chart series and trendlines is and how to customize it in different ways.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Series
+# Chart Series in Windows Forms Chart
 
 Provide data for the chart through the ChartSeries. ChartSeries acts as a wrapper around data that is to be displayed, and associates styles with the data. The data that is to be displayed is contained in either the IChartSeriesModel or the IEditableChartSeriesModel implementation. The style used to display the points is stored in a contained implementation of IChartSeriesStylesModel.
 
