@@ -101,7 +101,6 @@ public Filtering()
  
 private void MultiColumnComboboxTextBox_TextChanged(object sender, EventArgs e)
 {
-    FilterText = this.multiColumnComboBox1.TextBox.Text;
     // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
     this.multiColumnComboBox1.Filter = FilterRecords;
 }
@@ -111,7 +110,7 @@ public bool FilterRecords(object o)
     var item = o as OrderInfo;
     if (item != null)
     {
-        if(item.ProductName.Equals(FilterText))
+        if(item.ProductName.Equals(this.multiColumnComboBox1.TextBox.Text))
             return true;
     }
      
@@ -131,7 +130,6 @@ Public Sub New()
 End Sub
 
 Private Sub MultiColumnComboboxTextBox_TextChanged(ByVal sender As Object, ByVal e As EventArgs)
-    FilterText = Me.multiColumnComboBox1.TextBox.Text
     // The filter criteria can be given in the FilterRecords method which can be assigned to Filter property.
     Me.multiColumnComboBox1.Filter = FilterRecords
 End Sub
@@ -140,7 +138,7 @@ Public Function FilterRecords(ByVal o As Object) As Boolean
     Dim item = TryCast(o, OrderInfo)
 
     If item IsNot Nothing Then
-        If item.ProductName.Equals(FilterText) Then Return True
+        If item.ProductName.Equals(Me.multiColumnComboBox1.TextBox.Text) Then Return True
     End If
 
     Return False
