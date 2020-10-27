@@ -74,6 +74,12 @@ this.ribbonControlAdv1.MinimizePanel = true;
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MinimizePanel = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 The below image indicates when set the `MinimizePanel` property as `true`.
