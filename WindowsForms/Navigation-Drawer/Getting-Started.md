@@ -6,7 +6,6 @@ platform: WindowsForms
 control: NavigationDrawer
 documentation: ug
 ---
-
 # Getting Started with Windows Forms Navigation Drawer
 
 This section explains how to display the items and adjust the image positions using Windows Forms NavigationDrawer control.
