@@ -6,7 +6,10 @@ platform: WindowsForms
 control: NavigationDrawer
 documentation: ug
 ---
+
 # Getting Started with Windows Forms Navigation Drawer
+
+This section explains how to display the items and adjust the image positions using Windows Forms NavigationDrawer control.
 
 ## Assembly deployment
 
@@ -18,15 +21,15 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ## Create a simple application with NavigationDrawer
 
-You can create a Windows Forms application with NavigationDrawer control using the following steps:
+In this walk through, user will create a Windows Forms application that contains [NavigationDrawer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html) control.
 
 ## Create a project
 
 Create a new Windows Forms project in Visual Studio to display the NavigationDrawer control with its sliding panel at different sides.
 
-## Add control through designer
+## Adding control via designer
 
-The NavigationDrawer control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically.
+The `NavigationDrawer` control can be added to an application by dragging it from the toolbox and dropping it in designer. The following assembly references will be added automatically.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
@@ -43,7 +46,7 @@ The header and menu items can be added to drawer using the [Items](https://help.
 
 ![wf navigation drawer items added by designer](Getting-Started_images/wf-navigation-drawer-control-items-added-by-designer.png)
 
-## Add control manually using code
+## Adding control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
@@ -190,7 +193,7 @@ Me.navigationDrawer1.Position = SlidePosition.Left
  
 ## Setting image to an item
 
-The `NavigationDrawer` allows setting image to each menu item using `Image` property.
+The `NavigationDrawer` allows setting image to each menu item using [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_Image) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -207,7 +210,7 @@ Me.drawerMenuItem1.Image = Image.FromFile(@"../../Audit-WF.png")
 
 ## Positioning Text and Image
 
-The text and image positions can be adjusted for the menu items using the `TextAlign` and `TextImageRelation` property.
+The text and image positions can be adjusted for the menu items using the [TextAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextAlign) and [TextImageRelation](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html#Syncfusion_Windows_Forms_Tools_DrawerMenuItem_TextImageRelation) property.
 
 {% tabs %}
 {% highlight C# %}
