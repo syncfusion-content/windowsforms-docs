@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application-Menu | WindowsForms RibbonControlAdv| Syncfusion
-description: Learn here abouut how to add the item in application menu and minimize the menu bar panel in Windows Forms RibbonControlAdv.
+description: Learn here abouut how to add the item in the application menu and minimize the menu bar panel in Windows Forms RibbonControlAdv.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -44,7 +44,7 @@ System panel will be located below the Aux and Main panel and items can be added
 
 ## Restrict Application Menu Opening
 
-To restrict application menu from opening, set the ribbon property `MenuButtonEnabled` as false.
+To restrict application menu from opening, set the ribbon property [MenuButtonEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MenuButtonEnabled) as `false`.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 
 ## Minimize the menu bar panel
 
-You can hide or minimize the menu bar panel by setting the [MinimizePanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MinimizePanel) property to `true` in RibbonControlAdv. The default value is `false`.
+You can hide or minimize the menu bar panel by setting the [MinimizePanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_MinimizePanel) property to `true` in the RibbonControlAdv. The default value is `false`.
 
 {% tabs %}
 
@@ -82,10 +82,10 @@ Me.ribbonControlAdv1.MinimizePanel = True
 
 {% endtabs %}
 
-The below image indicates when set the `MinimizePanel` property as `true`.
+When setting the `MinimizePanel` property as `true`, the image will be displayed as follows,
 
 ![Minimize the menu bar panel in WF Ribbon](Application_Menu_Images/wf-ribbon-minimizemenubar.png)
 
-The below image indicates when set the `MinimizePanel` property as `false`.
+When setting the `MinimizePanel` property as `false`, the image will be displayed as follows,
 
 ![Maximize the menu bar panel in WF Ribbon](Application_Menu_Images/wf-ribbon-maximizemenubar.png)
