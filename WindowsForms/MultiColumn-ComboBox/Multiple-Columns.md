@@ -9,11 +9,11 @@ documentation: ug
 
 # Multiple Columns Support
 
-The MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to `false`. We can display the headers for the columns using [ShowColumnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_ShowColumnHeader) property. 
+MultiColumnComboBox control is a [ComboBoxAdv](/windowsforms/comboboxadv/overview) control with multiple columns. Multiple columns will be enabled by default. To disable this, set [MultiColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_MultiColumn) property to false. We can display the headers for the columns using ShowColumnHeader property. 
 
 ![Multiple Columns](Overview_images/Overview_img325.jpeg) 
 
-N> We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding) topic to know more.
+We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding) topic to know more.
 
 ## Selection color
 
@@ -39,7 +39,7 @@ Me.multiColumnComboBox1.AlphaBlendSelectionColor = Color.LightBlue
 
 ## DropDownWidth
 
-The [DropDownWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBoxActionList.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBoxActionList_DropDownWidth) property is used to set the width for the DropDown popup of MultiColumnComboBox. Please find the code for the same:
+The [DropDownWidth]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_ShowColumnHeader)) property is used to set the width for the DropDown Popup of MultiColumnComboBox. Please find the code for the same:
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ Me.multiColumnComboBox1.DropDownWidth = 240
 
 ## Custom filtering
 
-The [MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
+[MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) supports custom filtering through which filter can be applied to all columns. To enable filtering support, [AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_AllowFiltering) property should be set to true.
  
  {% tabs %}
 
@@ -83,8 +83,6 @@ The [MultiColumnCombobox](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 {% endtabs %}
 
 The custom filtering can be applied by assigning a predicate to the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html#Syncfusion_Windows_Forms_Tools_MultiColumnComboBox_Filter) property. Based on the filtering condition given, items are filtered and displayed in the dropdown.
-
-N> If `AllowFiltering` is enabled and the filter predicate is not set or it is set to null, the default filtering will be applied. The default filtering uses [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.html#Syncfusion_Windows_Forms_Tools_ComboBoxBaseDataBound_DisplayMember) as column to filter with `StartWith` condition.
 
 {% tabs %}
 
@@ -177,5 +175,9 @@ End Function
 {% endhighlight %}
 
 {% endtabs %}
+
+N> If AllowFiltering is enabled and the filtering is not set or it is set to null, the default filtering will be applied.
+Default filtering uses [DisplayMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.html#Syncfusion_Windows_Forms_Tools_ComboBoxBaseDataBound_DisplayMember) as Column with `StartWith` condition.
+
 
 ![Custom Filtering](Overview_images/Overview_img353.jpg) 
