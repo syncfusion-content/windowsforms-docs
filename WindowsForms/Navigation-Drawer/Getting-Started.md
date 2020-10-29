@@ -147,7 +147,7 @@ Me.navigationDrawer1.Items.Add(Me.drawerMenuItem4)
 
 ## Sidebar placement
 
-You can change the sliding position of the NavigationDrawer control by using [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) control.
+You can change the sliding position of the NavigationDrawer control by using [Position](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Position) property.
 
 The sliding position options of the NavigationDrawer is given below,
  
