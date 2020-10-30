@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Overview
+# Overview of Windowsforms DataGrid(SfDataGrid)
 
 The SfDataGrid control is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
 Following are the key features of SfDataGrid control
