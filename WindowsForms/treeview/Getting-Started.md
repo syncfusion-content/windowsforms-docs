@@ -26,20 +26,21 @@ Create new Windows Forms Project in Visual Studio to display [TreeViewAdv](https
 ## Adding control via Designer
 
 [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+
 ![Windows Forms TreeViewAdv through designer](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Adding control manually in C#
 
 In order to add control manually, do the below steps,
 
-1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) to the project
+1.Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) to the project.
 
-2)	Create the TreeViewAdv control instance and add it to the Form
+2.Create the `TreeViewAdv` control instance and add it to the Form.
+
 {% tabs %}
 {% highlight c# %}
 
 //Adding Namespace for TreeViewAdv control
-
 using Syncfusion.Windows.Forms.Tools;
 
 namespace WindowsFormsApplication1
@@ -90,31 +91,31 @@ End Namespace
 
 Tree nodes can be added to the control at design time as follows.
 
-1. Select the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
+1.Select the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control in the form. 
 
-2. Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
+2.Click the smart tag of the TreeViewAdv and click Edit Node Collection to open the TreeNodeAdv NodeCollection Editor.
 
-    ![Windows Forms TreeNodeAdv designer](Getting-Started_images/Getting-Started_img2.jpg)
+![Windows Forms TreeNodeAdv designer](Getting-Started_images/wf-treeviewadv-nodecollection.png)
 
-    You can also open this editor using task window or by right clicking the control and selecting Nodes Editor.
+You can also open this editor using task window or by right clicking the control and selecting Nodes Editor.
 
 ![Windows forms TreeNodeAdv added in designer](Getting-Started_images/Getting-Started_img3.jpg)
 
-3. In the NodeCollection Editor, Click "Add Node" to add a new top-level node. We can also add top level nodes by clicking the Add Node option on right clicking the control.
+3.In the NodeCollection Editor, Click "Add Node" to add a new top-level node. We can also add top level nodes by clicking the Add Node option on right clicking the control.
 
-4. The Nodes can be customized using the properties displayed in the NodeCollection Editor. Specify a custom label for the node by changing its text property as shown in the below image. 
+4.The Nodes can be customized using the properties displayed in the NodeCollection Editor. Specify a custom label for the node by changing its text property as shown in the below image. 
 
-5. Click "Add Node" to add another sibling to the selected node.
+5.Click "Add Node" to add another sibling to the selected node.
 
-6. Click "Add Child" to add a child node to the selected node.
+6.Click "Add Child" to add a child node to the selected node.
 
-7. Repeat steps 5 and 6 as required in the application.
+7.Repeat steps 5 and 6 as required in the application.
 
-8. Click "Remove" to delete a selected node.
+8.Click "Remove" to delete a selected node.
 
-9. To move a node to a different parent, just drag-and-drop that node over the parent or besides the desired sibling.
+9.To move a node to a different parent, just drag-and-drop that node over the parent or besides the desired sibling.
 
-10. Click "OK" to save changes.
+10.Click "OK" to save changes.
 
 ### Through Code
 
@@ -138,7 +139,6 @@ namespace WindowsFormsApp4
         private Syncfusion.Windows.Forms.Tools.TreeViewAdv treeView1;
         public Form1()
         {
-
             InitializeComponent();
 
             //Intialize new instance of TreeViewAdv
@@ -170,17 +170,17 @@ namespace WindowsFormsApp4
             //Assigning the text and Name
 
             treeNode1.Name = "Node1";
-            treeNode1.Text = "Node1";
+            treeNode1.Text = "Child1";
             treeNode2.Name = "Node0";
-            treeNode2.Text = "Node0";
+            treeNode2.Text = "Parent";
             treeNode3.Name = "Node3";
-            treeNode3.Text = "Node3";
+            treeNode3.Text = "Child1";
             treeNode4.Name = "Node2";
-            treeNode4.Text = "Node2";
+            treeNode4.Text = "Parent1";
             treeNode5.Name = "Node5";
-            treeNode5.Text = "Node5";
+            treeNode5.Text = "Child1";
             treeNode6.Name = "Node4";
-            treeNode6.Text = "Node4";
+            treeNode6.Text = "Parent2";
 
             //Add the nodes in TreeViewAdv nodes collection
             
@@ -239,17 +239,17 @@ Namespace WindowsFormsApp4
             'Assigning the text and Name
 
             treeNode1.Name = "Node1"
-            treeNode1.Text = "Node1"
+            treeNode1.Text = "Child1"
             treeNode2.Name = "Node0"
-            treeNode2.Text = "Node0"
+            treeNode2.Text = "Parent"
             treeNode3.Name = "Node3"
-            treeNode3.Text = "Node3"
+            treeNode3.Text = "Child1"
             treeNode4.Name = "Node2"
-            treeNode4.Text = "Node2"
+            treeNode4.Text = "Parent1"
             treeNode5.Name = "Node5"
-            treeNode5.Text = "Node5"
+            treeNode5.Text = "Child1"
             treeNode6.Name = "Node4"
-            treeNode6.Text = "Node4"
+            treeNode6.Text = "Parent2"
 
             'Add the nodes in TreeViewAdv nodes collection
 
@@ -266,7 +266,7 @@ End Namespace
 
 {% endtabs %}
 
-![Windows forms TreeNodeAdv achieved through code](Getting-Started_images/Getting-Started_img8.jpg)
+![Windows forms TreeNodeAdv achieved through code](Getting-Started_images/wf-treeviewadv-node.png)
 
 ## Customize Nodes
 
