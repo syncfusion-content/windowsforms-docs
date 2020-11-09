@@ -1,3 +1,11 @@
 WindowsForms-coverTemplate.docx
 WindowsForms-logFile.txt
 ~$verTemplate.docx
+.npmrc
+dist/
+.vscode/
+coverage/
+index.js
+index.d.ts
+gulpfile.js
+node_modules/
