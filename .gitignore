@@ -9,3 +9,5 @@ index.js
 index.d.ts
 gulpfile.js
 node_modules/
+.gitlab/
+Jenkinsfile
