@@ -1,4 +1,4 @@
----
+--- 
 layout: post
 title: Array and Table Formulas in Essential Calculate
 description: Explains about the support of array and table formulas in Essential Calculate
