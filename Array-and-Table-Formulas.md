@@ -1,7 +1,7 @@
 --- 
 layout: post
-title: Array and Table Formulas in Essential Calculate
-description: Explains about the support of array and table formulas in Essential Calculate
+title: Array and Table Formulas in Syncfusion Essential Calculate
+description: Explains about the support of array and table formulas in the Syncfusion Essential Calculate control
 platform: windowsforms
 control: Calculate
 documentation: ug
