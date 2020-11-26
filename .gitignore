@@ -1,3 +1,10 @@
 WindowsForms-coverTemplate.docx
 WindowsForms-logFile.txt
 ~$verTemplate.docx
+node_modules
+.vscode
+yarn.lock
+package-lock.json
+cireports
+package.json
+gulpfile.js
