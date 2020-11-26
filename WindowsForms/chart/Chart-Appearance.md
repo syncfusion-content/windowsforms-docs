@@ -238,7 +238,7 @@ Me.chartControl1.Palette = ChartColorPalette.GreenYellowStyle
 
 ### Applying custom color to segment
 
-The following code example shows you how to set the custom color for the chart series.
+You can set the individual color for each segment of the series by using series Styles collection Interior property. The following code example shows you how to set the custom color for the chart series.
 
 {% highlight c# %}
 
