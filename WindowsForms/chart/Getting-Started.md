@@ -425,4 +425,4 @@ End Sub
 
 {% endseealso %}
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WindowsFormsApplication1216656233).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/winforms-chart-getting-started).
