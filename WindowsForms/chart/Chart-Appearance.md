@@ -240,6 +240,7 @@ Me.chartControl1.Palette = ChartColorPalette.GreenYellowStyle
 
 You can set the individual color for each segment of the series by using series Styles collection Interior property. The following code example shows you how to set the custom color for the chart series.
 
+ViewModel:
 {% highlight c# %}
 
     public class SalesData
@@ -280,6 +281,10 @@ You can set the individual color for each segment of the series by using series 
             this.segmentColor = color;
         }
     }
+	
+{% endhighlight %}
+	
+{% highlight c# %}
 	
 	BindingList<SalesData> dataSource = new BindingList<SalesData>();
 	dataSource.Add(new SalesData("1999", 23, Color.Navy));
