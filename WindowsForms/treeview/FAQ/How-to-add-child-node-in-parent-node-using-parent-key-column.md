@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# How to add the childnode in parent node using the parent key column
+# How to add the child node in parent node using the parent key column
 
 This can be done by below code as shown below,
 
