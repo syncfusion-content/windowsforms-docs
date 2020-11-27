@@ -173,7 +173,7 @@ Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 
 ## Palettes
 
-Chart control provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Palette) for the entire chart.
+Chart control provides options to apply different kinds of themes or palettes to your chart. You can define the custom or predefined [`Palette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Palette) for the entire chart or series..
 
 There are some predefined palettes such as:
 * Default
@@ -214,10 +214,10 @@ Me.chartControl1.Palette = ChartColorPalette.Metro
 {% endhighlight %}
 {% endtabs %}
 
-![Predefined palettes in Winforms Chart](Chart-Appearance_images/Chart-Appearance_Metro.PNG)
+![Predefined Metro palette with Winforms Chart](Chart-Appearance_images/Chart-Appearance_Metro.PNG)
 
 
-The following code example defined palette as [`GreenYellowStyle`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#fields).
+The following code example shows chart with [`GreenYellowStyle`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#fields) palette.
 
 {% tabs %}
 {% highlight c# %}
@@ -238,7 +238,7 @@ Me.chartControl1.Palette = ChartColorPalette.GreenYellowStyle
 
 ### Applying custom color to segment
 
-You can set the individual color for each segment of the series by using the Series Styles Collection Interior property. The following code example shows you how to set the custom color for the chart series.
+You can set the individual color for each segment of the series by using the Interior property of series styles collection. The following code example shows you how to set the custom color for the chart series.
 
 ViewModel:
 {% highlight c# %}
@@ -315,7 +315,7 @@ ViewModel:
 
 ## Custom Palette
 
-SfChart provides option which enables you to define your own color with your preferred order for the palette, using [`CustomPalette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CustomPalette) as shown in the following code example.
+Chart control provides option which enables you to define your own color with your preferred order for the palette, using [`CustomPalette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CustomPalette) as shown in the following code example.
 
 {% tabs %}
 {% highlight c# %}
