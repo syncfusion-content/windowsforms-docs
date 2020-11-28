@@ -171,6 +171,170 @@ Me.ChartControl1.ChartInteriorBackImage = myCustomImage
 
 ![Chart Appearance](Chart-Appearance_images/Chart-Appearance_img6.jpeg)
 
+## Palettes
+
+Chart control provides options to apply different kinds of themes or palettes to your chart. You can define the custom or predefined [`Palette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Palette) for the entire chart or series.
+
+There are some predefined palettes such as:
+* Default
+* DefaultAlpha
+* DefaultOld
+* DefaultOldAlpha
+* EarthTone
+* Analog
+* Colorful
+* Nature
+* Pastel
+* Triad
+* WarmCold
+* GrayScale
+* SkyBlueStyle
+* RedYellowStyle
+* GreenYellowStyle
+* PinkVioletStyle
+* Metro
+* Office2016
+* Custom
+
+### Applying palette to series
+
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
+
+{% tabs %}
+{% highlight c# %}
+
+this.chartControl1.Palette = ChartColorPalette.Metro;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Palette = ChartColorPalette.Metro
+
+{% endhighlight %}
+{% endtabs %}
+
+![Predefined Metro palette with Winforms Chart](Chart-Appearance_images/Chart-Appearance_Metro.PNG)
+
+
+The following code example shows chart with [`GreenYellowStyle`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartColorPalette.html#fields) palette.
+
+{% tabs %}
+{% highlight c# %}
+
+this.chartControl1.Palette = ChartColorPalette.GreenYellowStyle;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Palette = ChartColorPalette.GreenYellowStyle
+
+{% endhighlight %}
+{% endtabs %}
+
+![Predefined palettes in Winforms Chart](Chart-Appearance_images/Chart-Appearance_GreenYellowStyle.PNG)
+
+
+### Applying custom color to segment
+
+You can set the individual color for each segment of the series by using the Interior property of series styles collection. The following code example shows you how to set the custom color for the chart series.
+
+{% highlight c# %}
+
+    public class SalesData
+    {
+        private string year;
+
+        private double sales;
+
+        private Color segmentColor;
+
+        public string Year
+        {
+            get { return year; }
+
+            set { year = value; }
+        }
+
+        public double Sales
+        {
+            get { return sales; }
+
+            set { sales = value; }
+        }
+
+        public Color SegmentColor
+        {
+            get { return segmentColor; }
+
+            set { segmentColor = value; }
+        }
+
+        public SalesData(string year, double sales, Color color)
+        {
+            this.year = year;
+
+            this.sales = sales;
+
+            this.segmentColor = color;
+        }
+    }
+	
+{% endhighlight %}
+	
+{% highlight c# %}
+	
+	BindingList<SalesData> dataSource = new BindingList<SalesData>();
+	dataSource.Add(new SalesData("1999", 23, Color.Navy));
+	dataSource.Add(new SalesData("2000", 17, Color.Yellow));
+	dataSource.Add(new SalesData("2001", 22, Color.Cyan));
+	dataSource.Add(new SalesData("2002", 18, Color.Brown));
+	dataSource.Add(new SalesData("2003", 22, Color.LimeGreen));
+	dataSource.Add(new SalesData("2004", 30, Color.Orange));
+	
+	CategoryAxisDataBindModel dataSeriesModel = new CategoryAxisDataBindModel(dataSource);
+	dataSeriesModel.CategoryName = "Year";
+	dataSeriesModel.YNames = new string[] { "Sales" };
+	
+	ChartSeries chartSeries = new ChartSeries("Sales");
+	chartSeries.CategoryModel = dataSeriesModel;	
+	
+	for(int i = 0; i<dataSource.Count; i++)
+	{
+	    chartSeries.Styles[i].Interior = new BrushInfo((dataSource[i] as SalesData).SegmentColor);
+	}
+	
+	this.chartControl1.Series.Add(chartSeries);
+
+{% endhighlight %}
+
+![Predefined palettes in Winforms Chart series](Chart-Appearance_images/Series_Palette.PNG)
+
+
+## Custom Palette
+
+Chart control provides option which enables you to define your own color with your preferred order for the palette, using [`CustomPalette`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_CustomPalette) as shown in the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+this.chartControl1.Palette = ChartColorPalette.Custom;
+this.chartControl1.CustomPalette = new Color[] { Color.LightGreen, Color.LightBlue, Color.Aqua, Color.YellowGreen};
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.Palette = ChartColorPalette.Custom
+Me.chartControl1.CustomPalette = new Color[] { Color.LightGreen, Color.LightBlue, Color.Aqua, Color.YellowGreen}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom palette in Winforms Chart](Chart-Appearance_images/Chart-Appearance_CustomPalatte.PNG)
+
+
 ## Border and Margins
 
 ### Chart Area Border
