@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+description: This section explains about the getting started of essential chart control in Windows Forms platform
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Getting Started
+# Chart Control for Windows Forms
 
 This section provides the details that you will need to know about getting started with our Chart control. 
 
@@ -425,4 +425,4 @@ End Sub
 
 {% endseealso %}
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WindowsFormsApplication1216656233).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/winforms-chart-getting-started).
