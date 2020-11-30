@@ -9,7 +9,11 @@ documentation: ug
 
 # How to add the child node in parent node using the parent key column
 
-This can be done by below code as shown below,
+You can add the child node in parent node using parent key column in TreeViewAdv control by using Add() method. This can be done by the following below steps,
+
+1.Initialize the DataTable with required data in combination of rows and columns.
+2.Integrate the DataTable in DataSet and define the parent child relation.
+3.Create the TreeNodeAdv in iteration process from DataTable and load it in TreeViewAdv control.
 
 {% tabs %}
 
