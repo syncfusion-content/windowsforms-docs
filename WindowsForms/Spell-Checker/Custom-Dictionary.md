@@ -19,9 +19,9 @@ You can use a default and custom dictionaries to spell check the document based 
 
 You can add your own dictionary to [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_Dictionaries) collection. `SpellCheckerAdv` support 3 standard dictionary file format:
 
- * 1.Hunspell
- * 2.Ispell
- * 3.OpenOffice
+* Hunspell
+* Ispell
+* OpenOffice
  
 ## SpellCheck using Hunspell dictionary
 
@@ -32,15 +32,15 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 ### Adding Hunspell Dictionary
 
-1. Add your [HunspellDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1.Add your [HunspellDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Custom-Dictionary_images/HunspellAdding.png)
 
-2. Create a `HunspellDictionary` instance and add the basic word & grammar file path to the [HunspellDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html#Syncfusion_Windows_Forms_Tools_HunspellDictionary_DictionaryPath) & [HunspellDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html#Syncfusion_Windows_Forms_Tools_HunspellDictionary_GrammarPath) properties and add the culture to the [HunspellDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html) property.
+2.Create a `HunspellDictionary` instance and add the basic word & grammar file path to the [HunspellDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html#Syncfusion_Windows_Forms_Tools_HunspellDictionary_DictionaryPath) & [HunspellDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html#Syncfusion_Windows_Forms_Tools_HunspellDictionary_GrammarPath) properties and add the culture to the [HunspellDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HunspellDictionary.html) property.
 
-3. Add the  `HunspellDictionary` into the [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_Culture) collection
+3.Add the  `HunspellDictionary` into the [SpellCheckerAdv.Dictionaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_Culture) collection
 
-4. Setting the required culture to the `SpellCheckerAdv.Culture` property.
+4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
 N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) to know how to configure SpellCheckerAdv.
 
@@ -60,8 +60,8 @@ SpellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = culture,
-        GrammarPath = @"\FrenchDictionary\french.aff",
-        DictionaryPath = @"\FrenchDictionary\french.dic"
+        GrammarPath = @"FrenchDictionary\french.aff",
+        DictionaryPath = @"FrenchDictionary\french.dic"
     }
 );
 
@@ -86,15 +86,15 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 ### Adding Ispell Dictionary
 
-1. Add your [IspellDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1.Add your [IspellDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Custom-Dictionary_images/IspellAdding.png)
 
-2. Create a `IspellDictionary` instance and add the basic word & grammar file path to the [IspellDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html#Syncfusion_Windows_Forms_Tools_IspellDictionary_DictionaryPath) & [IspellDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html#Syncfusion_Windows_Forms_Tools_IspellDictionary_GrammarPath) properties and add the culture to the [IspellDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html) property.
+2.Create a `IspellDictionary` instance and add the basic word & grammar file path to the [IspellDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html#Syncfusion_Windows_Forms_Tools_IspellDictionary_DictionaryPath) & [IspellDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html#Syncfusion_Windows_Forms_Tools_IspellDictionary_GrammarPath) properties and add the culture to the [IspellDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IspellDictionary.html) property.
 
-3. Add the  `IspellDictionary` into the `SpellCheckerAdv.Dictionaries` collection
+3.Add the  `IspellDictionary` into the `SpellCheckerAdv.Dictionaries` collection
 
-4. Setting the required culture to the `SpellCheckerAdv.Culture` property.
+4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
 N> The following code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
@@ -114,8 +114,8 @@ SpellChecker.Dictionaries.Add(
     new IspellDictionary()
     {
         Culture = culture,
-        GrammarPath = @"\SpanishDictionary\spanish.aff",
-        DictionaryPath = @"\SpanishDictionary\spanish.dic"
+        GrammarPath = @"SpanishDictionary\spanish.aff",
+        DictionaryPath = @"SpanishDictionary\spanish.dic"
     }
 );
 
@@ -140,15 +140,15 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 ### Adding OpenOffice Dictionary
 
-1. Add your [OpenOfficeDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1.Add your [OpenOfficeDictionary](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Custom-Dictionary_images/OpenOfficeAdding.png)
 
-2. Create a `OpenOfficeDictionary` instance and add the basic word & grammar file path to the [OpenOfficeDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) & [OpenOfficeDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) properties and add the culture to the [OpenOfficeDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) property.
+2.Create a `OpenOfficeDictionary` instance and add the basic word & grammar file path to the [OpenOfficeDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) & [OpenOfficeDictionary.GrammarPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) properties and add the culture to the [OpenOfficeDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.OpenOfficeDictionary.html) property.
 
-3. Add the  `OpenOfficeDictionary` into the `SpellCheckerAdv.Dictionaries` collection
+3.Add the  `OpenOfficeDictionary` into the `SpellCheckerAdv.Dictionaries` collection
 
-4. Setting the required culture to the `SpellCheckerAdv.Culture` property.
+4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
 N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
@@ -168,8 +168,8 @@ SpellChecker.Dictionaries.Add(
     new OpenOfficeDictionary()
     {
         Culture = culture,
-        GrammarPath = @"\SpanishDictionary\spanish.aff",
-        DictionaryPath = @"\SpanishDictionary\spanish.dic"
+        GrammarPath = @"SpanishDictionary\spanish.aff",
+        DictionaryPath = @"SpanishDictionary\spanish.dic"
     }
 );
 
@@ -189,15 +189,15 @@ If you want to add words that is not available in dictionary, you can add it usi
 
 ### Adding Custom Dictionary
 
-1. Create a custom dictionary text file as `Resource` into the application
+1.Create a custom dictionary text file as `Resource` into the application
 
 ![Adding custom word files as resource into the application](Custom-Dictionary_images/CustomDictionaryAdding.png)
 
-2. Create a `CustomDictionary` instance and add the custom word file path to the [CustomDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CustomDictionary.html#Syncfusion_Windows_Forms_Tools_CustomDictionary_DictionaryPath) property and add the culture to the [CustomDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CustomDictionary.html) property.
+2.Create a `CustomDictionary` instance and add the custom word file path to the [CustomDictionary.DictionaryPath](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CustomDictionary.html#Syncfusion_Windows_Forms_Tools_CustomDictionary_DictionaryPath) property and add the culture to the [CustomDictionary.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CustomDictionary.html) property.
 
-3. Add the  `CustomDictionary` into the `SpellCheckerAdv.Dictionaries` collection
+3.Add the  `CustomDictionary` into the `SpellCheckerAdv.Dictionaries` collection
 
-4. Setting the required culture to the `SpellCheckerAdv.Culture` property.
+4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
 N> The following code snippets only explain the insertion of the custom dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
@@ -223,8 +223,8 @@ SpellChecker.Dictionaries.Add(
     new OpenOfficeDictionary()
     {
         Culture = culture,
-        GrammarPath = @"\USDictionary\en-US.aff",
-        DictionaryPath = @"\USDictionary\en-US.dic"
+        GrammarPath = @"USDictionary\en-US.aff",
+        DictionaryPath = @"USDictionary\en-US.dic"
     }
 );
 
@@ -260,8 +260,8 @@ SpellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = culture,
-        GrammarPath = @"\FrenchDictionary\fr-FR.aff",
-        DictionaryPath = @"\FrenchDictionary\fr-FR.dic"
+        GrammarPath = @"FrenchDictionary\fr-FR.aff",
+        DictionaryPath = @"FrenchDictionary\fr-FR.dic"
     }
 );
 
@@ -270,8 +270,8 @@ SpellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("es-ES"),
-        GrammarPath = @"\SpanishDictionary\es-ES.aff",
-        DictionaryPath = @"\SpanishDictionary\es-ES.dic"
+        GrammarPath = @"SpanishDictionary\es-ES.aff",
+        DictionaryPath = @"SpanishDictionary\es-ES.dic"
     }
 );
 
@@ -280,8 +280,8 @@ SpellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("en-US"),
-        GrammarPath =  @"\USDictionary\en-US.aff",
-        DictionaryPath =  @"\USDictionary\/en-US.dic"
+        GrammarPath =  @"USDictionary\en-US.aff",
+        DictionaryPath =  @"USDictionary\/en-US.dic"
     }
 );
 
