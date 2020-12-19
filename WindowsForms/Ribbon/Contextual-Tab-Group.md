@@ -27,6 +27,12 @@ Use a contextual tab to display a collection of commands that are relevant only 
 
 ![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img3.jpg)
 
+## ContextTabGroup in simplified layout
+
+When the simplified layout is enabled, the ContextTabGroup will display its items in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+![ContextTabGroup in simplified layout](Contextual_Tab_Group_Images/ContextTabGroup_SimplifiedLayout.png)
+
 ## Tab Arrangement
 
 If tabs are placed consecutively and both tabs are assigned with same tag group, the tab group portion will be combined.
