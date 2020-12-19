@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Customization Support
+# Customization Support in WinForms RibbonControlAdv
 
 RibbonControlAdv allows to customize the Ribbon and quick access toolbar with the support to add and remove different items to QAT and to add new tabs and change the location of existing tabs and items in ribbon.
 
@@ -21,35 +21,35 @@ For customization of QAT, please refer `Quick Access Toolbar`.
 
 RibbonControlAdv Tab and TabItems can customized in run time using Ribbon Customization window. Ribbon Customization window can be opened by right clicking on the Ribbon or by clicking the dropdown button in Quick Access Toolbar and selecting `Customize the Ribbon`.
 
-![](Customization_Support_iImages/Customization-Support_img1.jpg)
+![Accessing Customize Ribbon Window](Customization_Support_iImages/Customization-Support_img1.jpg)
 
 ### Create New Tab
 
 Add New `ToolStripTabItem`
 
-![](Customization_Support_iImages/Customization-Support_img2.jpg)
+![Adding new tab](Customization_Support_iImages/Customization-Support_img2.jpg)
 
 ### Create New Group	
 
 Add New ToolStripEx
 
-![](Customization_Support_iImages/Customization-Support_img3.jpg)
+![Creating new ToolStripEx](Customization_Support_iImages/Customization-Support_img3.jpg)
 
 Add Items to the ToolStripEx
 
-![](Customization_Support_iImages/Customization-Support_img4.jpg)
+![Adding items to the ToolStripEx](Customization_Support_iImages/Customization-Support_img4.jpg)
 
 ### Reset Customization
 
 Resets the customization and the default view will be applied.
 
-![](Customization_Support_iImages/Customization-Support_img5.jpg)
+![Resetting the customizations](Customization_Support_iImages/Customization-Support_img5.jpg)
 
 ### Rename Tab and Group
 
 Rename Existing tab or group
 
-![](Customization_Support_iImages/Customization-Support_img6.jpg)
+![Rename tab and toolstrip](Customization_Support_iImages/Customization-Support_img6.jpg)
 
 ### Hide Ribbon Customization Window
 
@@ -165,7 +165,7 @@ Me.ribbonControlAdv1.CloseButton = button4
 
 {% endtabs %}
 
-![](Customization_Support_iImages/Customization-Support_img7.jpg)
+![Customizing system buttons](Customization_Support_iImages/Customization-Support_img7.jpg)
 
 The size of the System button can be customized using the following code snippet.
 

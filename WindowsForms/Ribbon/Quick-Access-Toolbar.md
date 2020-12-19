@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Quick Access Toolbar
+# Quick Access Toolbar in WinForms RibbonControlAdv
 
 `QuickAccessToolBar`**(QAT)** is a customizable bar that provides one click access to the most important and frequently used items.
 

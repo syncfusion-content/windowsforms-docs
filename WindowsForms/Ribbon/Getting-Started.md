@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinForms RibbonControlAdv
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
 
