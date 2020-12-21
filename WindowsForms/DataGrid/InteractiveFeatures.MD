@@ -892,5 +892,34 @@ End Sub
 
 ![Windows forms datagrid displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
 
+#### Display ToolTip for Empty Cell
+
+By default, SfDataGrid not displays the ToolTip for a empty cells. The ToolTip for any empty cell can be shown by handling the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid1.ToolTipOpening += SfDataGrid1_ToolTipOpening;
+
+private void SfDataGrid1_ToolTipOpening(object sender, ToolTipOpeningEventArgs e)
+{
+    if (string.IsNullOrEmpty(e.DisplayText))
+    {
+        e.ToolTipInfo.Items[0].Text = "CurrentCell value is Empty";
+    }
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid1.ToolTipOpening, AddressOf SfDataGrid1_ToolTipOpening
+
+Private Sub SfDataGrid1_ToolTipOpening(ByVal sender As Object, ByVal e As ToolTipOpeningEventArgs)
+    If String.IsNullOrEmpty(e.DisplayText) Then
+        e.ToolTipInfo.Items(0).Text = "CurrentCell value is Empty"
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid displays the tooltip for a empty cell](InteractiveFeatures_Images/ToolTip9.png)
+
 N> SfToolTip has used for the ToolTip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/sftooltip/overview) of SfToolTip for more customizations options.
 
