@@ -207,6 +207,21 @@ Me.sfDataGrid.AutoFitGroupDropAreaItem = True
 
 ![AutoFit is enabled for grouping  in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img15.png)
 
+### Customizing group drop area items position
+
+The group drop area items position can be adjusted using the [sfDataGrid.GroupPanel.Margin](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.margin?view=net-5.0) property.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.GroupPanel.Margin = new Padding(12);
+{% endhighlight %}
+{% highlight vb %}
+Me.sfDataGrid.GroupPanel.Margin = New Padding(12)
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing group drop area items position in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img16.png)
+
 ### Customizing GroupDropArea Text
 
 The GroupDropArea’ s text can be changed by setting [SfDataGrid.GroupPanel.GroupDropAreaText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GroupPanel.html#Syncfusion_WinForms_DataGrid_GroupPanel_GroupDropAreaText) property.
