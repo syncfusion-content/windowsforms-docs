@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick-Access-Toolbar | WindowsForms | Syncfusion
-description: quick access toolbar
+description: This section briefly describes the functions of Quick Access ToolBar in Syncfusion's RibbonControlAdv for Windows Forms.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -128,6 +128,10 @@ Me.ribbonControlAdv1.Header.AddQuickItem(New ProgressbarReflectable(toolStripPro
 Added the boldButton and fontColorSplitButton in QAT 
 
 ![Shows the boldButton and fontColorSplitButton on QAT](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img13.jpg)
+
+## Add items to QAT in simplified layout
+
+The RibbonControlAdv allows to add items to the Quick Access Toolbar (QAT) with the help of the QAT window or through the context menu shortcut. Items added during normal or simplified layout will always be visible even when switching between layouts. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 ## Removing QAT Item
 
