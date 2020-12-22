@@ -220,7 +220,7 @@ Me.sfDataGrid.GroupPanel.Margin = New Padding(12)
 {% endhighlight %}
 {% endtabs %}
 
-![Adjusting group drop area items position in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img16.png)
+![Customizing group drop area items position in windows forms datagrid](SfDataGrid_Grouping_UG_images/SfDataGrid_Grouping_UG_img16.png)
 
 ### Customizing GroupDropArea Text
 
