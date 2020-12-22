@@ -751,7 +751,7 @@ Me.sfDataGrid1.Style.ToolTipStyle.BorderColor = Color.DarkBlue
 
 #### Conditional Styling
 
-SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+SfDataGrid allows to customize the appearance of the ToolTip based on conditions through [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ToolTipOpening) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -782,7 +782,7 @@ End Sub
 
 ### Cancel ToolTip Opening
 
-SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+SfDataGrid allows to cancel displaying the ToolTip for any particular cell/row or column by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -806,13 +806,13 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[ToolTipOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when ToolTip for any cell is displayed. This will not occur if the `ToolTipOpening` event is canceled.
+[ToolTipOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ToolTipOpened) event occurs when ToolTip for any cell is displayed. This will not occur if the `ToolTipOpening` event is canceled.
 
 ### Customization of ToolTip
 
 #### Change the Display Text for a Cell
 
-By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+By default, SfDataGrid displays the ToolTip with the cell content as the ToolTip text. The ToolTip text for any particular cell can be changed by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -868,7 +868,7 @@ End Sub
 
 #### Display ToolTip with Beak
 
-ToolTip can be displayed with beak by handling the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+ToolTip can be displayed with beak by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -892,9 +892,9 @@ End Sub
 
 ![Windows forms datagrid displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
 
-#### Display ToolTip for Empty Cell
+#### Showing tooltip for empty cell
 
-By default, SfDataGrid not displays the ToolTip for a empty cells. The ToolTip for any empty cell can be shown by handling the [ToolTipOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+By default, DataGrid do not show tooltip for empty cells. You can show tooltip for empty cells by handling the `ToolTipOpening` event.
 
 {% tabs %}
 {% highlight c# %}
