@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Contextual-Tab-Group | WindowsForms | Syncfusion
-description: contextual tab group
+description: This section briefly describes the Contextual Tab Group support in Syncfusion's RibbonControlAdv for Windows Forms.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -17,24 +17,30 @@ Use a contextual tab to display a collection of commands that are relevant only 
 
 *	Click the `TabGroup` property of the RibbonControlAdv, TabGroup collection editor is opened. Add the tab group using the editor
 
-![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img1.jpg)
+![Creating Context Tab Group through designer](Contextual_Tab_Group_Images/Contextual-Tab-Group_img1.jpg)
 
 *	Now create a ToolStripTabItem using the smart tag of the Ribbon.
 
 *	Click the `TabGroup` property in the ToolStripTabItem and select the tab group from the available list.
 
-![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img2.jpg)
+![Set TabGroup name through designer](Contextual_Tab_Group_Images/Contextual-Tab-Group_img2.jpg)
 
-![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img3.jpg)
+![Context Tab group in normal layout](Contextual_Tab_Group_Images/Contextual-Tab-Group_img3.jpg)
+
+## ContextTabGroup in simplified layout
+
+When the simplified layout is enabled, the ContextTabGroup will display its items in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+![ContextTabGroup in simplified layout](Contextual_Tab_Group_Images/ContextTabGroup_SimplifiedLayout.png)
 
 ## Tab Arrangement
 
 If tabs are placed consecutively and both tabs are assigned with same tag group, the tab group portion will be combined.
 
-![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img4.jpg)
+![Arrangement of context tabs](Contextual_Tab_Group_Images/Contextual-Tab-Group_img4.jpg)
 
 ## Arrange more Contextual Tab Group
 
 More contextual tab groups can be created by creating more tab groups and assigning those tab groups to the ToolStripTab items.
 
-![](Contextual_Tab_Group_Images/Contextual-Tab-Group_img5.jpg)
+![Arranging context tab groups](Contextual_Tab_Group_Images/Contextual-Tab-Group_img5.jpg)
