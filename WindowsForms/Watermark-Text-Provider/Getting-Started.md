@@ -166,8 +166,8 @@ bannerTextProvider1.SetBannerText(textBoxExt, New Syncfusion.Windows.Forms.Banne
 
  [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) feature can only be used for the following controls only.
 
-* [TextBoxBarItem](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
-* [ComboBoxBarItem](http://help.syncfusion.com/windowsforms/popupmenu/popup-menucontext-menuxpmenu-bars#bar-items) (XPMenus)
+* [TextBoxBarItem](https://help.syncfusion.com/windowsforms/popupmenu/baritem-types#textboxbaritem ) (XPMenus)
+* [ComboBoxBarItem](https://help.syncfusion.com/windowsforms/popupmenu/baritem-types#comboboxbaritem ) (XPMenus)
 * [TextBox](http://help.syncfusion.com/windowsforms/ribbon/getting-started#add-toolstriptextbox ) (ToolStripEx)
 * [ComboBox](http://help.syncfusion.com/windowsforms/ribbon/getting-started#toolstripcombobox ) (ToolStripEx)
 * [ComboBoxEx](http://help.syncfusion.com/windowsforms/ribbon/getting-started#toolstripcomboboxex ) (ToolStripEx)
