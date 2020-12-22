@@ -892,7 +892,7 @@ End Sub
 
 ![Windows forms datagrid displays the tooltip with beak](InteractiveFeatures_Images/ToolTip8.png)
 
-#### Showing tooltip for empty cell
+#### Showing ToolTip for empty cell
 
 By default, DataGrid do not show tooltip for empty cells. You can show tooltip for empty cells by handling the `ToolTipOpening` event.
 
