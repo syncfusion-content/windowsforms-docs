@@ -124,7 +124,7 @@ documentation: ug
 
  ![Setting item location using DisplayMode for Simplified layout](SimplifiedLayout_images/RibbonSimplifiedLayout.png)
  
- N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-WinForms-RibbonControlAdv) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-WinForms-RibbonControlAdv) in GitHub.
 
 ## Customizing the Ribbon during runtime through the QAT window
 
