@@ -209,7 +209,7 @@ Me.sfDataGrid.AutoFitGroupDropAreaItem = True
 
 ### Adjusting group drop area items position.
 
-The Group drop area items position can be adjusted using the [sfDataGrid.GroupPanel.Margin](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.margin?view=net-5.0) property.
+The group drop area items position can be adjusted using the [sfDataGrid.GroupPanel.Margin](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.margin?view=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
