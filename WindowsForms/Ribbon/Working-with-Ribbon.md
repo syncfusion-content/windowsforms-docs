@@ -122,6 +122,13 @@ Me.ribbonControlAdv1.ShowMinimizeButton = True
 Ribbon state can also be changed through an option in context menu.
 Open the context menu with right click on `ToolStripItem` or `ToolStripTabItem` and select the option `Collapse the Ribbon` which minimizes the ribbon.
 
+### Display option changed event
+
+[`RibbonControlAdv.DisplayOptionChanged`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOptionChanged) event occurs when [`DisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_DisplayOption) property is changed in RibbonControlAdv. This event receives two arguments namely sender that handles RibbonControlAdv and [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html) as objects.
+The [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html) object contains the following properties:
+
+* [`OldValue `](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_OldValue- Gets the new [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value assigned to the RibbonControlAdv.
+* [`NewValue`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DisplayOptionChangedEventArgs.html#Syncfusion_Windows_Forms_Tools_DisplayOptionChangedEventArgs_NewValue) - Gets the old [`RibbonDisplayOption`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonDisplayOption.html) value of the RibbonControlAdv.
 
 ## Options Available in Ribbon ContextMenu
 
