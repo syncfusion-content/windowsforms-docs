@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization-Support | WindowsForms | Syncfusion
-description: customization support
+description: This section briefly describes the customization support in Syncfusion's RibbonControlAdv for Windows Forms.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
@@ -21,35 +21,35 @@ For customization of QAT, please refer `Quick Access Toolbar`.
 
 RibbonControlAdv Tab and TabItems can customized in run time using Ribbon Customization window. Ribbon Customization window can be opened by right clicking on the Ribbon or by clicking the dropdown button in Quick Access Toolbar and selecting `Customize the Ribbon`.
 
-![](Customization_Support_iImages/Customization-Support_img1.jpg)
+![Accessing Customize Ribbon Window](Customization_Support_iImages/Customization-Support_img1.jpg)
 
 ### Create New Tab
 
 Add New `ToolStripTabItem`
 
-![](Customization_Support_iImages/Customization-Support_img2.jpg)
+![Adding new tab](Customization_Support_iImages/Customization-Support_img2.jpg)
 
 ### Create New Group	
 
 Add New ToolStripEx
 
-![](Customization_Support_iImages/Customization-Support_img3.jpg)
+![Creating new ToolStripEx](Customization_Support_iImages/Customization-Support_img3.jpg)
 
 Add Items to the ToolStripEx
 
-![](Customization_Support_iImages/Customization-Support_img4.jpg)
+![Adding items to the ToolStripEx](Customization_Support_iImages/Customization-Support_img4.jpg)
 
 ### Reset Customization
 
 Resets the customization and the default view will be applied.
 
-![](Customization_Support_iImages/Customization-Support_img5.jpg)
+![Resetting the customizations](Customization_Support_iImages/Customization-Support_img5.jpg)
 
 ### Rename Tab and Group
 
 Rename Existing tab or group
 
-![](Customization_Support_iImages/Customization-Support_img6.jpg)
+![Rename tab and toolstrip](Customization_Support_iImages/Customization-Support_img6.jpg)
 
 ### Hide Ribbon Customization Window
 
@@ -73,6 +73,10 @@ Me.ribbonControlAdv1.EnableRibbonCustomization = False
 {% endhighlight %}
 
 {% endtabs %}
+
+## Customizing Ribbon in simplified layout
+
+The RibbonControlAdv allows to customize the Ribbon and Ribbon items through the QAT window, where user can add the Ribbon items to a new [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html). The newly added [`ToolStripTabItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripTabItem.html) or [`ToolStripEx`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ToolStripEx.html) will only be visible in the respective layout in which items were added originally. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 ## Customize System Button
 
@@ -161,7 +165,7 @@ Me.ribbonControlAdv1.CloseButton = button4
 
 {% endtabs %}
 
-![](Customization_Support_iImages/Customization-Support_img7.jpg)
+![Customizing system buttons](Customization_Support_iImages/Customization-Support_img7.jpg)
 
 The size of the System button can be customized using the following code snippet.
 
