@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Working with Ribbon
+# Working with WPF Ribbon
 
 ## Ribbon State
 
