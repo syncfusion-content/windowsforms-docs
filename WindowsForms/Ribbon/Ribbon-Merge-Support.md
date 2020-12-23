@@ -147,3 +147,9 @@ merge.SetTabIndex(Me.ViewToolStripEx.Text, 0)
 ![Tab Positioning](Ribbon_Merge_Support_Images/Ribbon-Merge-Support_img9.jpg)
 
 *	Now the View Tab has been moved to zeroth position as mentioned in the code
+
+## Merged items in simplified layout
+
+When the simplified layout is enabled in the Ribbon control, the merged items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+![Merged items in simplified layout](Ribbon_Merge_Support_Images/RibbonMerge_SimplifiedLayout.png)

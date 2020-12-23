@@ -17,6 +17,8 @@ The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Sync
 
 **RibbonForm** : Provides the support to replace the default form for enabling different visual styles to the ribbon.
 
+**RibbonControlAdv** : It is available in both normal and simplified layouts.
+
 **QuickAccessToolbar** : Provides support to customize the placing of frequently used items.
 
 **Tabs** : Support to add different tabs to show the features of an application like in Microsoft Outlook.
