@@ -7,7 +7,7 @@ control: RibbonControlAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinForms RibbonControlAdv
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
 
@@ -385,6 +385,45 @@ this.forwardButton});
 
 ![Adding ToolStripButton](Getting_Started_Images/Getting-Started_img14.jpg)
 
+#### Adding ToolStripButton to simplified layout
+
+When the simplified layout is enabled, the ToolStripButton can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripButton cutButton = new System.Windows.Forms.ToolStripButton();
+cutButton.Text = "Cut";
+toolStripEx1.Items.Add(cutButton);
+
+ToolStripButton copyButton = new System.Windows.Forms.ToolStripButton();
+copyButton.Text = "Copy";
+toolStripEx1.Items.Add(copyButton);
+
+ToolStripButton formatButton = new System.Windows.Forms.ToolStripButton();
+formatButton.Text = "Format Painter";
+toolStripEx1.Items.Add(formatButton);
+
+// Add image for the items in simplified layout to image list.
+ImageListAdv imageListAdv1 = new ImageListAdv(this.components);
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Cut20.png"));
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Copy20.png"));
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/FormatPainter20.png"));
+
+ToolStripExImageProvider toolStripExImageProvider1 = new ToolStripExImageProvider(toolStripEx1);
+// Setting image list to the MediumImageList for the toolStripEx1.
+toolStripExImageProvider1.MediumImageList = imageListAdv1;
+toolStripExImageProvider1.SetMediumItemImage(cutButton, 0);
+toolStripExImageProvider1.SetMediumItemImage(copyButton, 1);
+toolStripExImageProvider1.SetMediumItemImage(formatButton, 2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripButton to simplified layout](Getting_Started_Images/ToolStripButton_SimplifiedLayout.png)
+
 #### Holding the Selection of ToolStripButton
 
 For holding the selection of ToolstripButton after lost focus, use the property `CheckOnClick`, if true, the ToolStripButton will stay selected even after click and will go unselected after next click on that button, it simply acts as a toggling functionality to that button.
@@ -457,6 +496,25 @@ this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readUnreadPanel });
 {% endtabs %}
 
 ![Adding Radio button in the ToolStripEx](Getting_Started_Images/Getting-Started_img16.jpg)
+
+#### Adding ToolStripRadioButton to simplified layout
+
+When the simplified layout is enabled, the ToolStripRadioButton can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripRadioButton radioButton = new ToolStripRadioButton();
+radioButton.Text = "Custom System Button";
+
+toolStripEx1.Items.Add(radioButton);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripRadioButton to simplified layout](Getting_Started_Images/ToolStripRadioButton_SimplifiedLayout.png)
 
 ### ToolStripDropDownButton
 
@@ -544,6 +602,33 @@ this.tagsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 {% endtabs %}
 
 ![Adding ToolStripDropDownButton through code](Getting_Started_Images/Getting-Started_img9.jpg)
+
+#### Adding ToolStripDropDownButton to simplified layout
+
+When the simplified layout is enabled, the ToolStripDropDownButton can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripDropDownButton pasteButton = new System.Windows.Forms.ToolStripDropDownButton();
+pasteButton.Text = "Paste";
+toolStripEx1.Items.Add(pasteButton);
+
+// Add image for the items in simplified layout to image list.
+ImageListAdv imageListAdv1 = new ImageListAdv(this.components);
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Paste20.png"));
+
+ToolStripExImageProvider toolStripExImageProvider1 = new ToolStripExImageProvider(toolStripEx1);
+// Setting image list to the MediumImageList for the toolStripEx1.
+toolStripExImageProvider1.MediumImageList = imageListAdv1;
+toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripDropDownButton to simplified layout](Getting_Started_Images/ToolStripDropDownButton_SimplifiedLayout.png)
 
 #### Adding DropDownMenuItems
 
@@ -795,6 +880,33 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.m
 
 {% endtabs %}
 
+#### Adding ToolStripSplitButtonEx to simplified layout
+
+When the simplified layout is enabled, the ToolStripSplitButtonEx can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripSplitButtonEx pasteButton = new ToolStripSplitButtonEx();
+pasteButton.Text = "Paste";
+toolStripEx1.Items.Add(pasteButton);
+
+// Add image for the items in simplified layout to image list.
+ImageListAdv imageListAdv1 = new ImageListAdv(this.components);
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Paste20.png"));
+
+ToolStripExImageProvider toolStripExImageProvider1 = new ToolStripExImageProvider(toolStripEx1);
+// Setting image list to the MediumImageList for the toolStripEx1.
+toolStripExImageProvider1.MediumImageList = imageListAdv1;
+toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripSplitButtonEx to simplified layout](Getting_Started_Images/ToolStripSplitButtonEx_SimplifiedLayout.png)
+
 ### ToolStripSplitButton
 
 The properties of SplitButton is like SplitButtonEx except DropDownButtonWidth property is available for SplitButton control.
@@ -833,6 +945,33 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.r
 {% endtabs %}
 
 ![Adding ToolStripSplitButton](Getting_Started_Images/Getting-Started_img15.jpg)
+
+#### Adding ToolStripSplitButton to simplified layout
+
+When the simplified layout is enabled, the ToolStripSplitButton can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripSplitButton pasteButton = new ToolStripSplitButton();
+pasteButton.Text = "Paste";
+toolStripEx1.Items.Add(pasteButton);
+
+// Add image for the items in simplified layout to image list.
+ImageListAdv imageListAdv1 = new ImageListAdv(this.components);
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Paste20.png"));
+
+ToolStripExImageProvider toolStripExImageProvider1 = new ToolStripExImageProvider(toolStripEx1);
+// Setting image list to the MediumImageList for the toolStripEx1.
+toolStripExImageProvider1.MediumImageList = imageListAdv1;
+toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripSplitButton to simplified layout](Getting_Started_Images/ToolStripSplitButton_SimplifiedLayout.png)
 
 ### Text alignment for DropDownMenuItems and SplitButtonMenuItems
 
@@ -920,6 +1059,26 @@ this.colorSchemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComb
 *	Simple – There will be no dropdown button, all the items will be shown below the control.
 *	DropDown – Contains a dropdown button and the text in ToolStripComboBoxEx can be edited.
 *	DropDownList – Contains a dropdown button and restricts the editing of text in ToolStripComboBoxEx
+
+### Adding ToolStripComboBoxEx to simplified layout
+
+When the simplified layout is enabled, the ToolStripComboBoxEx can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [`here`](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripComboBoxEx comboBoxEx = new ToolStripComboBoxEx();
+comboBoxEx.Items.AddRange(new object[] { "Office 2019 Style", "Office 2016 Style",
+                                        "Touch Style", "Office 2013 Style", "Office 2010 Style"});
+
+toolStripEx1.Items.Add(comboBoxEx);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripComboBoxEx to simplified layout](Getting_Started_Images/ToolStripComboBoxEx_SimplifiedLayout.png)
 
 ### ToolStripComboBox
 
@@ -1027,6 +1186,39 @@ this.quickGallery});
 
 ![Adding Gallery to ToolStripEx through code](Getting_Started_Images/Getting-Started_img19.jpg)
 
+### Adding ToolStripGallery to simplified layout
+
+When the simplified layout is enabled, the ToolStripGallery can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+//Creating an instance of the control
+this.quickGallery = new Syncfusion.Windows.Forms.Tools.ToolStripGallery();
+
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem movetoGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem toManagerGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem teamEmailGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem replyAndDeleteGalleryItem = new Syncfusion.Windows.Forms.Tools.ToolStripGalleryItem();
+
+movetoGalleryItem.Text = " Move to : ?";
+toManagerGalleryItem.Text = "To Manager";
+teamEmailGalleryItem.Text = "Team Email";
+replyAndDeleteGalleryItem.Text = "Reply and Delete";
+
+//Adding items to the gallery
+this.quickGallery.Items.Add(movetoGalleryItem);
+this.quickGallery.Items.Add(toManagerGalleryItem);
+this.quickGallery.Items.Add(teamEmailGalleryItem);
+this.quickGallery.Items.Add(replyAndDeleteGalleryItem);
+toolStripEx1.Items.Add(quickGallery);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripGallery to simplified layout](Getting_Started_Images/ToolStripGallery_SimplifiedLayout.png)
  
 ## Add ToolStripCheckBox
 
@@ -1063,6 +1255,25 @@ Me.messagesToolStripEx.Items.Add(showAsConversationCheckBox)
 {% endtabs %}
 
 ![Adding ToolStripCheckBox](Getting_Started_Images/Getting-Started_img20.jpg)
+
+### Adding ToolStripCheckBox to simplified layout
+
+When the simplified layout is enabled, the ToolStripCheckBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripCheckBox checkBox = new ToolStripCheckBox();
+checkBox.Text = "Enable Context Tab";
+
+toolStripEx1.Items.Add(checkBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripCheckBox to simplified layout](Getting_Started_Images/ToolStripCheckBox_SimplifiedLayout.png)
 
 ## Add ToolStripTextBox
 
@@ -1111,6 +1322,24 @@ In the code, the text box will be added to a panel and the panel will be added t
 
 ![Adding ToolStripTextBox](Getting_Started_Images/Getting-Started_img21.jpg)
 
+### Adding ToolStripTextBox to simplified layout
+
+When the simplified layout is enabled, the ToolStripTextBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripTextBox textBox = new ToolStripTextBox();
+textBox.Text = "Enter Text";
+
+toolStripEx1.Items.Add(textBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripTextBox to simplified layout](Getting_Started_Images/ToolStripTextBox_SimplifiedLayout.png)
 
 ## Add ToolStripProgressBar
 
@@ -1158,6 +1387,25 @@ Me.layoutToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me
 
 ![Adding ToolStripProgressBar](Getting_Started_Images/Getting-Started_img22.jpg)
 
+### Adding ToolStripProgressBar to simplified layout
+
+When the simplified layout is enabled, the ToolStripProgressBar can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripProgressBar progressBar = new ToolStripProgressBar();
+progressBar.Value = 50;
+
+toolStripEx1.Items.Add(progressBar);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripProgressBar to simplified layout](Getting_Started_Images/ToolStripProgressBar_SimplifiedLayout.png)
+
 ## Add ToolStripLabel
 
 ToolStripLabel can be added to a ToolStripEx directly or through a panel. 
@@ -1200,6 +1448,25 @@ Me.progressbarPanelItem.Items.Add(Me.loadingToolStripLabel)
 
 ![Adding ToolStripLabel](Getting_Started_Images/Getting-Started_img23.jpg)
 
+### Adding ToolStripLabel to simplified layout
+
+When the simplified layout is enabled, the ToolStripLabel can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripLabel toolStripLabel = new ToolStripLabel();
+toolStripLabel.Text = "Loading Attachments";
+
+toolStripEx1.Items.Add(toolStripLabel);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripLabel to simplified layout](Getting_Started_Images/ToolStripLabel_SimplifiedLayout.png)
+
 ## Add ToolStripSeparator
 
 Ribbon Separator is used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose and it can be added to a ToolStripEx directly or through a panel.
@@ -1232,6 +1499,42 @@ Me.tagsToolStripEx.Items.Add(toolStripSeparator)
 {% endtabs %}
 
 ![Adding ToolStripSeparator](Getting_Started_Images/Getting-Started_img24.jpg)
+
+### Adding ToolStripSeparator to simplified layout
+
+When the simplified layout is enabled, the ToolStripSeparator can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight c# %}
+
+ToolStripButton cutButton = new System.Windows.Forms.ToolStripButton();
+cutButton.Text = "Cut";
+toolStripEx1.Items.Add(cutButton);
+
+ToolStripSeparator toolStripSeparator = new ToolStripSeparator();
+toolStripEx1.Items.Add(toolStripSeparator);
+
+ToolStripButton copyButton = new System.Windows.Forms.ToolStripButton();
+copyButton.Text = "Copy";
+toolStripEx1.Items.Add(copyButton);
+
+// Add image for the items in simplified layout to image list.
+ImageListAdv imageListAdv1 = new ImageListAdv(this.components);
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Cut20.png"));
+imageListAdv1.Images.Add(Image.FromFile("..//..//Images/Medium Icons/Copy20.png"));
+
+ToolStripExImageProvider toolStripExImageProvider1 = new ToolStripExImageProvider(toolStripEx1);
+// Setting image list to the MediumImageList for the toolStripEx1.
+toolStripExImageProvider1.MediumImageList = imageListAdv1;
+toolStripExImageProvider1.SetMediumItemImage(cutButton, 0);
+toolStripExImageProvider1.SetMediumItemImage(copyButton, 1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding ToolStripSeparator to simplified layout](Getting_Started_Images/ToolStripSeparator_SimplifiedLayout.png)
 
 ## Arrange item using ToolStripPanelItem
 
@@ -1494,5 +1797,9 @@ The RibbonControlAdv has the office menu button at the top left corner of the fo
 ![Adding Application Menu](Getting_Started_Images/Getting-Started_img35.jpg)
 
 N> ApplicationMenu can be accessed only when ribbon style is Office2007
+
+## Set simplified layout
+
+The simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact content viewing, while other commands are placed inside the overflow menu. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
 
