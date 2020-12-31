@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Runtime-Features | Windows Forms | Syncfusion
-description: runtime features
+description: How to enable the runtime features and customize the trackball, tooltip, crosshair behavior in Windows Forms Chart runtime features
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in Windows Forms Chart
 
 The following topics under this section elaborates on the runtime features of Chart control.
 
