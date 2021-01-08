@@ -1,21 +1,19 @@
 ---
 layout: post
-title: .NET Framework Compatibility of Syncfusion Windows Forms controls
-description: Learn here about the history of .NET Framework support for the Syncfusion Essential Studio Windows Forms controls
+title: .NET Framework and .NET Core Compatibility of Syncfusion Windows Forms controls
+description: Learn here about the history of .NET Framework and .NET Core support for the Syncfusion Essential Studio Windows Forms controls
 platform: WindowsForms
 control: .NET Framework Compatibility
 documentation: ug
 ---
 
-# .NET Framework Compatibility
+# .NET Framework and .NET Core Compatibility
 
-Syncfusion Windows Forms Controls are always compatible latest .NET Framework versions.
-
-N> Syncfusion Windows Forms Controls supports `.NET Framework 2.0` and later versions. The controls start with `syn` supports `.NET Framework 4.0` and later versions.
+Syncfusion Windows Forms Controls are always compatible latest .NET Framework and .NET Core versions.
 
 ## Version Compatibility
 
-Below table represents the supported Syncfusion Essential Studio version for .NET Framework versions.
+Below table represents the supported Syncfusion Essential Studio version for .NET Framework and .NET Core versions.
 
 <table>
 <tr>
@@ -25,9 +23,10 @@ Syncfusion Version </th>
 .NET 3.5</th><th>
 .NET 4.0</th><th>
 .NET 4.5</th><th>
-.NET 4.5.1</th><th>
 .NET 4.6 & above</th><th>
-.NET Core 3.0</th></tr>
+.NET Core 3.1</th><th>
+.NET 5.0</th></tr>
+
 <tr>
 <td>
 Earlier Version</td><td>
@@ -38,9 +37,10 @@ No</td><td>
 No</td><td>
 No</td><td>
 No</td></tr>
+
 <tr>
 <td>
-From 11.2</td><td>
+From 11.2 (2013 Vol2)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -48,9 +48,10 @@ Yes</td><td>
 No</td><td>
 No</td><td>
 No</td></tr>
+
 <tr>
 <td>
-From 11.3</td><td>
+From 13.3 (2015 Vol3)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -58,9 +59,10 @@ Yes</td><td>
 Yes</td><td>
 No</td><td>
 No</td></tr>
+
 <tr>
 <td>
-From 13.3</td><td>
+From 17.2 (2019 Vol2)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -68,9 +70,10 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 No</td></tr>
+
 <tr>
 <td>
-From 17.1</td><td>
+From 18.4 (2020 Vol4)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -78,11 +81,12 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td></tr>
+
 </table>
 
 ## Control Compatibility
 
-Below table represents the supported Syncfusion Essential Studio controls for .NET Framework versions.
+Below table represents the supported Syncfusion Essential Studio controls for .NET Framework and .NET Core versions.
 
 <table>
 <tr>
@@ -92,7 +96,7 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <th>.NET 4.0</th>
 <th>.NET 4.5</th>
 <th>.NET 4.5.1</th>
-<th>.NET 4.6 & above</th>
+<th>.NET 4.6 & above</br>.NET Core 3.1 </br> .NET 5.0</th>
 </tr>
 
 <tr>
