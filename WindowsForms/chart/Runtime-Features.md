@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Runtime-Features | Windows Forms | Syncfusion
-description: runtime features
+description: How to enable the runtime features and customize the trackball, tooltip, crosshair behavior in Windows Forms Chart runtime features
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in Windows Forms Chart
 
 The following topics under this section elaborates on the runtime features of Chart control.
 
@@ -1105,6 +1105,34 @@ Me.chartControl1.ChartArea.InteractiveCursors(0).YInterval = 50
 Essential Chart supports ToolTips in different areas of the chart which comes with multiple customization options.
 
 The different tooltips in the chart can be turned off using the control's [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property.
+
+{% tabs %}
+
+{% highlight c# %}
+  
+this.chartControl1.ShowToolTips = true;
+
+this.chartControl1.Tooltip.BackgroundColor = new BrushInfo(Color.White);
+
+this.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle;
+
+this.chartControl1.Tooltip.Font = new Font("Segoe UI", 10);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.chartControl1.ShowToolTips = true
+
+Me.chartControl1.Tooltip.BackgroundColor = New BrushInfo(Color.White)
+
+Me.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle
+
+Me.chartControl1.Tooltip.Font = New Font("Segoe UI", 10)
+
+{% endhighlight %}
+
+{% endtabs %}	
 
 N> The [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property in the chart is false by default, so remember to turn this on, before setting tooltips in the different chart areas.
 
