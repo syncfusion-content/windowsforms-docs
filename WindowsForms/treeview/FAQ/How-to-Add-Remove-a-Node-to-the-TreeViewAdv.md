@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Add--Remove-a-Node-to-the-TreeViewAdv | WindowsForms | Syncfusion
-description: how to add / remove a node to the treeviewadv
+title: How-to-Add--Remove-a-Node| WindowsForms | Syncfusion
+description: This section explains about how to add / remove a node to the treeviewadv in Syncfusion Windows Forms TreeViewAdv control.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
@@ -106,7 +106,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Removing a node from the TreeViewAdv](Frequenty-Asked-Questions_images/TreeView_Remove.gif)
+![Removing a node from the TreeViewAdv](Frequenty-Asked-Questions_images/TreeView-Remove.gif)
 
 {% seealso %}
 
