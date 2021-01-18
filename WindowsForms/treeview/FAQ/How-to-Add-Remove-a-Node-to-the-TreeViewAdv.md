@@ -13,7 +13,7 @@ Nodes in the TreeViewAdv can be added by specifying the index and also they can 
 
 Adding nodes into the TreeViewAdv at a specific index
 
-By declaring the new node object outside the control and by using the Insert method, a new node can be either added to a parent node or child node of TreeViewAdv at the specific index.
+By declaring the new node object outside the control and by using the `Insert` method, a new node can be either added to a parent node or child node of TreeViewAdv at the specific index.
 
 ## Adding a parent node to the TreeViewAdv
 
