@@ -40,14 +40,33 @@ The central port for a diagram node can be enabled by using the following code s
 {% tabs %}
 {% highlight c# %}
 
-Ellipse ellipse = new Ellipse(100, 100, 200, 100);
-ellipse.EnableCentralPort = true;
+Rectangle rect = new Rectangle(100, 100, 200, 100);
+//To enable the central port for the node...
+rectangle.EnableCentralPort = true;
+diagram1.Model.AppendChild(rect);
+RoundRect roundRect = new RoundRect(200, 200, 200, 100, MeasureUnits.Pixel);
+//To enable the central port for the node...
+roundRect.EnableCentralPort = true;
+diagram1.Model.AppendChild(roundRect);
+//Create a connection between the nodes...
+OrgLineConnector line = new OrgLineConnector(Point.Empty, new PointF(100, 100));
+diagram1.Model.AppendChild(line);
+rect.CentralPort.Connect(line.HeadEndPoint);
+roundRect.CentralPort.Connect(line.TailEndPoint);
 
 {% endhighlight %}
 {% highlight vb %}
 
-Dim ellipse As New Ellipse(100, 100, 200, 100)
-ellipse.EnableCentralPort = True
+Dim rect As Rectangle = New Rectangle(100, 100, 200, 100)
+rectangle.EnableCentralPort = True
+diagram1.Model.AppendChild(rect)
+Dim roundRect As RoundRect = New RoundRect(200, 200, 200, 100, MeasureUnits.Pixel)
+roundRect.EnableCentralPort = True
+diagram1.Model.AppendChild(roundRect)
+Dim line As OrgLineConnector = New OrgLineConnector(Point.Empty, New PointF(100, 100))
+diagram1.Model.AppendChild(line)
+rect.CentralPort.Connect(line.HeadEndPoint)
+roundRect.CentralPort.Connect(line.TailEndPoint)
 
 {% endhighlight %}
 {% endtabs %}
