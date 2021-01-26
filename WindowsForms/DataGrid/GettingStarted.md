@@ -298,7 +298,7 @@ Property of type Int, Double, Float, Decimal.
 </tr>
 <tr>
 <td>
-GridDataTimeColumn
+GridDateTimeColumn
 </td>
 <td>
 Property of type DateTime.
