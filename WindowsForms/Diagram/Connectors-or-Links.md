@@ -237,6 +237,8 @@ this.diagram1.Model.LineBridgeSize = 5;
 //enabling for model
 this.diagram1.Model.LineBridgingEnabled = true;
 
+LineConnector link = new LineConnector(PointF.Empty, new PointF(200,200));
+
 //enabling for link object
 link.LineBridgingEnabled = true;
 
@@ -249,6 +251,8 @@ Me.diagram1.Model.LineBridgeSize = 5
 
 'enabling for model
 Me.diagram1.Model.LineBridgingEnabled = True
+
+Dim link As LineConnector = New LineConnector(PointF.Empty, New PointF(200, 200))
 
 'enabling for link object
 link.LineBridgingEnabled = True
@@ -286,6 +290,7 @@ Programmatically it can be set as follows:
 //enabling for model
 this.diagram1.Model.LineRoutingEnabled = true;
 
+LineConnector link = new LineConnector(PointF.Empty, new PointF(200,200));
 //enabling for link object
 link.LineRoutingEnabled = true;
 
@@ -295,6 +300,7 @@ link.LineRoutingEnabled = true;
 'enabling for model
 Me.diagram1.Model.LineRoutingEnabled = True
 
+Dim link As LineConnector = New LineConnector(PointF.Empty, New PointF(200, 200))
 'enabling for link object
 link.LineRoutingEnabled = True
 
