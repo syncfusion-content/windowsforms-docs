@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Connectors-or-Links | Windows Forms | Syncfusion
-description: connectors or links
+description: This section explains about how to use the Diagram's connectors or links items and their important key features.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Connectors or Links
+# Diagram Connectors or Links
 
 Connectors and lines have the following decorators:
 
@@ -75,7 +75,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)
+![Connecting Two Nodes with Line Connector](Connectors-or-Links_images/Connectors-or-Links_img1.jpeg)
 
 
 
@@ -125,7 +125,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)
+![Connecting Two Nodes with Line Connector](Connectors-or-Links_images/Connectors-or-Links_img2.jpeg)
 
 
 ## Rounded Corner
@@ -190,7 +190,7 @@ diagram1.Model.AppendChild(orthogonal)
 {% endhighlight %}
 {% endtabs %}
 
-![](Connectors-or-Links_images/Connectors-or-Links_img3.png)
+![Connectors or Links images](Connectors-or-Links_images/Connectors-or-Links_img3.png)
 
 
 ## Line Bridging
@@ -199,7 +199,7 @@ Line bridging provides the visual effect such that the links jump over other lin
 
 
 
-![](Connectors-or-Links_images/Line-Bridging_img1.jpeg)
+![Line-Bridging image](Connectors-or-Links_images/Line-Bridging_img1.jpeg)
 
 
 
