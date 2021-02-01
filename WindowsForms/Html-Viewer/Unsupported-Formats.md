@@ -11,7 +11,7 @@ documentation: ug
 
 The [HTMLUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.HTMLUI.HTMLUIControl.html) control is a classic control that allows you to load basic html or htm pages.
  
-Unlike web browsers, the following cannot be loaded into web pages,
+Unlike web browsers, the following cannot be loaded into web pages using `HTMLUI` control,
  
  * Images
  * Complex objects
