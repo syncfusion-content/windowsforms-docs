@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Item Template
+# Item Template Extension
 
 The Syncfusion Item Templates extensions provides a predefined form for the Windows Forms. 
 
