@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Item Template
+# Item Template Extension
 
 The Syncfusion Item Templates extensions provides a predefined form for the Windows Forms. 
 
@@ -16,6 +16,8 @@ I> The Syncfusion Windows Forms item templates are available from v13.1.0.21.
 ## Using Syncfusion Item Template Gallery
 
 Follow the given steps to add the Syncfusion item in Visual Studio.
+
+> Before use the Syncfusion WinForms Item Template, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
 
 1. Open a new or existing **WinForms** application.
 2. Right-click the WinForms Project from the Solution Explorer. Select the Add Syncfusion Item New Item… option.
