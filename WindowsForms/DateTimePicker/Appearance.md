@@ -271,6 +271,24 @@ Me.dateTimeEdit.Width = 294
 
 ![Drop-down calendar size customization](appearance-images/dropdownsize.png)
 
+## Show Week Numbers
+
+The Week Numbers of calendar can be displayed by enabling the [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowWeekNumbers) property as true.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Setting ShowWeekNumbers
+
+sfDateTimeEdit1.MonthCalendar.ShowWeekNumbers = true;
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![Display Week Numbers](appearance-images/showweeknumbers.png)
+
 ## Themes
 
 SfDateTimeEdit offers four built in themes for professional representation as follows.
