@@ -273,14 +273,13 @@ Me.dateTimeEdit.Width = 294
 
 ## Show Week Numbers
 
-The Week Numbers of calendar can be displayed by enabling the [ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowWeekNumbers) property as true.
+Week numbers can be displayed by setting `[ShowWeekNumbers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowWeekNumbers) property as `true`.
 
 {% tabs %}
 
 {% highlight C# %}
 
 //Setting ShowWeekNumbers
-
 sfDateTimeEdit1.MonthCalendar.ShowWeekNumbers = true;
 
 {% endhighlight  %}
