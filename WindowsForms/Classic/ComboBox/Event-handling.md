@@ -97,7 +97,7 @@ No</td><td>
 No</td></tr>
 <tr>
 <td>
-Drop-Down Close by Click</td><td>
+Drop-Down Close by clicking</td><td>
 Yes:1</td><td>
 Yes:2</td><td>
 Yes:3</td><td>
