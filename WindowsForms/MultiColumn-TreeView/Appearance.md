@@ -288,7 +288,7 @@ Apart from the Standard styles, you can create custom base styles for nodes, col
 
 For creating base styles follow the below steps,
 
-1.	Open the Base Style Collection Editor by click the BaseStyles property in property window.
+1.	Open the Base Style Collection Editor by clicking the BaseStyles property in property window.
 
 ![](Appearance_Images/Appearance_img7.jpg)
 

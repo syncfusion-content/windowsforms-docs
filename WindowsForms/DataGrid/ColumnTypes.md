@@ -742,7 +742,7 @@ TryCast(Me.sfDataGrid1.Columns("IsClosed"), GridCheckBoxColumn).AllowCheckBoxOnH
 
 All the checkboxes in a column will be checked/unchecked by clicking on the CheckBox in the header.
 
-![Winforms datagrid shows to display the all checked/unchecked by click on the checkbox in the header in datagrid windows form](ColumnTypes_images/ColumnTypes_img22.png)
+![Winforms datagrid shows to display the all checked/unchecked by clicking on the checkbox in the header in datagrid windows form](ColumnTypes_images/ColumnTypes_img22.png)
 
 By default, enabling the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html#Syncfusion_WinForms_DataGrid_GridCheckBoxColumn_AllowCheckBoxOnHeader) property will display the checkbox with text on the header cell of [GridCheckBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html). The text in the header cell can be disabled by setting empty value for the [HeaderText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_HeaderText) property of the column.
 
