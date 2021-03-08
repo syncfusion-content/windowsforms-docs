@@ -393,3 +393,27 @@ calendar.ClearSelection(new DateTime(2018, 02, 16));
 {% endtabs %} 
 
 ![Clear selection dates](selection-images/selection.png)
+
+## Disable weekends from selection
+
+Weekends of the calendar can be disabled by providing the Date collection to [BlackoutDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_BlackoutDates). The following code snippet illustrates how to disable weekends from selection:
+
+{% tabs %}
+
+{% highlight C# %}
+
+// disabling the weekends
+
+sfCalendar1.MinDate = new DateTime(2000, 1, 05);
+sfCalendar1.MaxDate = new DateTime(2500, 1, 25);
+for (var date = sfCalendar1.MinDate; date <= sfCalendar1.MaxDate; date = date.AddDays(1))
+            {
+                if (date.DayOfWeek == DayOfWeek.Sunday || date.DayOfWeek == DayOfWeek.Saturday)
+                sfCalendar1.BlackoutDates.Add(date);
+            }
+
+{% endhighlight  %}
+
+{% endtabs %} 
+
+![Disable WeekEnds](selection-images/disable_Weekends.png)
