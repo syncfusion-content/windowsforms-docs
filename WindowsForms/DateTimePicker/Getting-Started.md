@@ -237,3 +237,29 @@ Me.dateTimeEdit.ShowUpDown = true
 {% endtabs %} 
 
 ![Up down DateTimeEdit](getting-started-images/daterange.png)
+
+## Configure the calculation of week number based on culture
+
+You can get the current day week number in `SfDateTimeEdit` based on the culture set by changing the `CalendarWeekRule` value of date time format.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfDateTimeEdit sfdateTimeEdit1 = new SfDateTimeEdit();
+CultureInfo info = new CultureInfo("en-EN");
+info.DateTimeFormat.CalendarWeekRule = CalendarWeekRule.FirstFullWeek;
+sfdateTimeEdit1.Culture = info;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Dim sfdateTimeEdit1 As SfDateTimeEdit = New SfDateTimeEdit()
+Dim info As CultureInfo = New CultureInfo("en-EN")
+info.DateTimeFormat.CalendarWeekRule = CalendarWeekRule.FirstFullWeek
+sfdateTimeEdit1.Culture = info
+
+{% endhighlight  %}
+
+{% endtabs %} 
