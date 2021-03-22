@@ -240,7 +240,7 @@ Me.dateTimeEdit.ShowUpDown = true
 
 ## Configure the calculation of week number based on culture
 
-You can get the current day week number in `SfDateTimeEdit` based on the culture set by changing the `CalendarWeekRule` value of date time format.
+You can get the current week number in `SfDateTimeEdit` control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
 
 {% tabs %}
 
