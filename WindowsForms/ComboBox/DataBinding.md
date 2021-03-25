@@ -97,10 +97,6 @@ End Class
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-bind-the-data-in-WinForms-SfComboBox)
 
-## See Also
-
-[How to disable some items WinForms ComboBox dropdown?](https://www.syncfusion.com/kb/11254/how-to-disable-some-items-winforms-combobox-dropdown)
-
 
 ## Binding Data from Microsoft Access
 
@@ -206,3 +202,8 @@ The data from the defined data model of the LINQ to SQL classes can be loaded as
 3) Based on the **DataSource** binding with the SfComboBox control, the items can be displayed by using **DisplayMember** and **ValueMember** properties. 
 
 ![Displayed the items using data source binding through the visual studio](DataBinding_images/DataBinding_img9.jpg)
+
+
+## See Also
+
+[How to disable some items WinForms ComboBox dropdown?](https://www.syncfusion.com/kb/11254/how-to-disable-some-items-winforms-combobox-dropdown)
