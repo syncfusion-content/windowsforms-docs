@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering | WindowsForms | Syncfusion
-description: Describes how filtering can be achieved in all level of MultiColumnTreeView nodes.
+title: Filtering support in Winforms MultiColumnTreeView  | WindowsForms | Syncfusion
+description: Learn about filtering support in Syncfusion Windows Forms  MultiColumnTreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
