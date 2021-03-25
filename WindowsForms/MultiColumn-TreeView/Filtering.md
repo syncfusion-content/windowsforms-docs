@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering support in Winforms MultiColumnTreeView  | WindowsForms | Syncfusion
+title: Filtering support | WindowsForms | Syncfusion
 description: Learn about filtering support in Syncfusion Windows Forms  MultiColumnTreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
