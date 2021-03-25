@@ -357,3 +357,29 @@ calendar.ShowWeekNumber = True
 {% endtabs %} 
 
 ![SfCalendar shows week number](appearance-images/showweeknumber.png)
+
+## Configure the calculation of week number based on culture
+
+You can get the current week number in `SfCalendar` control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfCalendar sfCalendar1 = new SfCalendar();
+CultureInfo info = new CultureInfo("en-EN");
+info.DateTimeFormat.CalendarWeekRule = CalendarWeekRule.FirstFullWeek;
+sfCalendar1.Culture = info;
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+Dim sfCalendar1 As SfCalendar = New SfCalendar()
+Dim info As CultureInfo = New CultureInfo("en-EN")
+info.DateTimeFormat.CalendarWeekRule = CalendarWeekRule.FirstFullWeek
+sfCalendar1.Culture = info
+
+{% endhighlight  %}
+
+{% endtabs %} 
