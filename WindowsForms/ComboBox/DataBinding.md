@@ -188,7 +188,6 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 
 10) Drag **Employees** table in to design view of **Northwind.dbml**. The Entity model diagram for **Employees** table is generated once it is dropped in to design view.
 
-![Displayed the employees table details from the databases](DataBinding_images/DataBinding_img16.jpg)
 
 ### Loading Data from LINQ to SQL Classes
 
