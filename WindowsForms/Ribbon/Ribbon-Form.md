@@ -226,4 +226,4 @@ public partial class Form1 : RibbonForm
 
 ![HeaderItem image](Ribbon_Form_Images/Ribbon-Form_img3.jpg)
 
-N>[View sample in GitHub]()
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-user-control-to-titlebar-of-RibbonForm)
