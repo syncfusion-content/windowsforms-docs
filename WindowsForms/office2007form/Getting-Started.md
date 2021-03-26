@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Office2007Form | Syncfusion
+title: Getting Started with WinForms Office2007Form | Syncfusion
 description: This section explains about the assembly deployment, configure in Office2007Form and more details for windows forms.
 platform: WindowsForms
 control: Office2007 Form

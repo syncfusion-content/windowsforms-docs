@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Calculation Engine | Syncfusion
+title: Getting Started in WinForms Calculation Engine | Syncfusion
 description: This session explains that how to calculate the formulas using CalcQuickBase,CalcEngine and ICalcData
 platform: windowsforms
 control: Calculate

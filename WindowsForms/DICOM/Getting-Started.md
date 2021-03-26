@@ -17,7 +17,7 @@ The following image shows the converted DICOM Image using Essential DICOM.
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WindowsForms DICOM Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
 
 
 

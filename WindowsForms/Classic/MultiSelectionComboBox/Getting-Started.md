@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started with WinForms MultiColumn TreeView | Syncfusion
 description: getting started
 platform: WindowsForms
 control: Editors Package
@@ -20,7 +20,7 @@ This section briefly describes you on how to design a MultiSelectionComboBox con
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drop a MultiSelectionComboBox control on the Form. The MultiSelectionComboBox is loaded in the form as illustrated in the following screenshot.
 
-  ![](Overview_images/Overview_img335.png) 
+  ![WindowsForms Editors Package Overview Image335](Overview_images/Overview_img335.png) 
 
 ## Configuring the MultiSelectionComboBox control
 

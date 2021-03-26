@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in Windows Forms Spreadsheet | Syncfusion
+title: Conditional Formatting in WinForms Spreadsheet | Syncfusion
 description: This section explains that how to apply conditional formatting rules at run time in Spreadsheet for Syncfusion WinForms.
 platform: windowsforms
 control: Spreadsheet

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Spreadsheet | Syncfusion
+title: Getting Started with WinForms Spreadsheet | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet

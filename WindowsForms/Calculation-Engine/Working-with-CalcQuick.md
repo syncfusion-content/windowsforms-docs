@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with CalcQuickBase | Calculate | Syncfusion
+title: Working with CalcQuickBase in WinForms Calculation Engine | Syncfusion
 description: This section provides a basic idea with computation by using the CalcQuickBase for Syncfusion essential windowsforms
 platform: windowsforms
 control: Calculate

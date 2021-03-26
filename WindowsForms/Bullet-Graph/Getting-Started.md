@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting Started with Windows Forms Bullet Graph | Syncfusion
 description: getting started
 platform: windowsforms
 control: Bullet Graph
@@ -37,7 +37,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 1. Create a new Windows Forms application project in Visual Studio.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![Windows Forms BulletGraph Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
    
 2. Add references to Syncfusion.BulletGraph.Windows.
 3. Add the Bullet Graph control in code behind as follows.
@@ -93,11 +93,11 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 1. Create a simple Windows Forms application using Visual Studio.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![Windows Forms BulletGraph Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![Windows Forms BulletGraph Getting-Started Image4](Getting-Started_images/Getting-Started_img4.png)
 
 3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
 
@@ -105,11 +105,11 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 4. Search for Bullet Graph using SearchBox and select Bullet Graph Control.  Click on Done to add selected Bullet Graph Control.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![Windows Forms BulletGraph Getting-Started Image6](Getting-Started_images/Getting-Started_img6.png)
 
 5. The Bullet Graph assemblies are automatically added to the Project after Clicking OK
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![Windows Forms BulletGraph Getting-Started Image7](Getting-Started_images/Getting-Started_img7.png)
 
 6. Add the following code example in code behind to create a simple Bullet Graph control.
 
@@ -154,7 +154,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 7. The simple Bullet Graph control is created as shown in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![Windows Forms BulletGraph Getting-Started Image8](Getting-Started_images/Getting-Started_img8.png)
 
    N> 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
    N>

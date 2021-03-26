@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime Editing in Windows Forms DateTimePicker | Syncfusion
+title: DateTime Editing in WinForms DateTimePicker | Syncfusion
 description: Editing mode supports default text editing and mask mode that helps to restrict the date input in formatted values based on a date-time pattern.
 platform: WindowsForms
 control: SfDateTimeEdit

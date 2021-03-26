@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
+title: Getting Started in WinForms ButtonAdv Control | Syncfusion
 description: Steps to add button in WinForms application.
 platform: WindowsForms
 control: ButtonAdv

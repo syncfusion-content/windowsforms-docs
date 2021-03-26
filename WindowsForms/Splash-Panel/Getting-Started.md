@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Splash Panel | Syncfusion
+title: Getting Started with WinForms Splash Panel | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Splash Panel control and more details.
 platform: WindowsForms
 control: SplashPanel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Tree Navigator | Syncfusion
+title: Getting Started with WinForms Tree Navigator | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Tree Navigator control and more detail
 platform: WindowsForms
 control: TreeNavigator 

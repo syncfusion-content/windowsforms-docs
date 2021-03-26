@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
+title: Getting Started in WinForms DataBoundGrid Control | Syncfusion
 description: getting started
 platform: windowsforms
 control: DataBoundGrid

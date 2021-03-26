@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GridLayout | Syncfusion
+title: Getting Started with WinForms GridLayout Control | Syncfusion
 description: This section explains about the getting started with the important key features of GridLayout control for windows forms.
 platform: windowsforms
 control: GridLayout

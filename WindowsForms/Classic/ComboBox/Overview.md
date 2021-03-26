@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBoxAdv | WindowsForms | Syncfusion
+title: About Windows Forms ComboBoxAdv control | Syncfusion
 description: ComboBoxAdv is an advanced combo box control with the additional features like Visual style, Autocomplete, Border style 
 platform: windowsforms
 control: ComboBoxAdv

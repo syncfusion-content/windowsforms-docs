@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | GradientPanelExt | WindowsForms | Syncfusion
+title: Getting Started with WinForms GradientPanelExt | Syncfusion
 description: How to add GradientPanelExt control in a Windows Forms applocation
 platform: WindowsForms
 control: GradientPanelExt

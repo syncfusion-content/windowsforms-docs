@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
+title: Logical Formulas in Windows Forms Calculation Engine | Syncfusion
 description: This session explains that the supported formulas with syntax and description of logical functions in CalcEngine 
 platform: windowsforms
 control: Calculate

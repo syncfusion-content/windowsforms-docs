@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Editable ListBox | Syncfusion
+title: Getting Started with WinForms Editable ListBox | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Editable ListBox (EditableList) control and more details. 
 platform: WindowsForms
 control: EditableList

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  GettingStarted | Windows Forms | Syncfusion
+title:  Getting Started in Windows Forms xptoolbar control | Syncfusion
 description: GettingStarted of XPToolbar control
 platform: WindowsForms
 control: XPToolBar

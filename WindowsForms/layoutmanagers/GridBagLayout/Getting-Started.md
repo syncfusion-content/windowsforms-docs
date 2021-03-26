@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms GridBagLayout | Syncfusion
+title: Getting Started with WinForms GridBagLayout Control | Syncfusion
 description: This section explains about the getting started with the important key features of GridBagLayout control for windows forms.
 platform: windowsforms
 control: GridBagLayout

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Pattern in Windows Forms DateTimePicker | Syncfusion
+title: Display Pattern in WinForms DateTimePicker | Syncfusion
 description: Learn about Display Pattern support in Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more details.
 platform: WindowsForms
 control: SfDateTimeEdit

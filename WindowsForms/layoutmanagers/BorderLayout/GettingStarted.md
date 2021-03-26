@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Border Layout | Syncfusion
+title: Getting Started with WinForms BorderLayout Control | Syncfusion
 description: This section explains about the getting started with the important key features of BorderLayout control for windows forms.
 platform: windowsforms
 control: BorderLayout

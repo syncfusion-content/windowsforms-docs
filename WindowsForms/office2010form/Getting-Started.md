@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Office2010Form | Syncfusion
+title: Getting Started with WinForms Office2010Form | Syncfusion
 description: This section explains about the assembly deployment, configure in Office2010Form and more details for windows forms.
 platform: WindowsForms
 control: Office2010 Form

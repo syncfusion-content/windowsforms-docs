@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms NavigationView | Syncfusion
+title: Getting Started with WinForms NavigationView | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: NavigationView 

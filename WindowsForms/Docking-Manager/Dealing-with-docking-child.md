@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with docking child | WindowsForms | Syncfusion
+title: Dealing with docking child in WinForms Docking Manager | Syncfusion
 description: This section explains about resizing, positioning and customizing the visibility of caption button of docking child windows
 platform: WindowsForms
 control: DockingManager 

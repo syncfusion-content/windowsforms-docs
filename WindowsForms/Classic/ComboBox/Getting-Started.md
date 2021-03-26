@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
+title: Getting Started in WinForms ComboBoxAdv Control | Syncfusion
 description: getting started
 platform: WindowsForms
 control: ComboBoxAdv

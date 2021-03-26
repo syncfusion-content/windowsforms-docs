@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | CurrencyEdit | WindowsForms | Syncfusion
+title: Getting Started with WinForms ContextMenuStrip | Syncfusion
 description: This section describes how to add currency edit control into application.
 platform: WindowsForms
 control: CurrencyEdit

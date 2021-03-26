@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating DateTimePickerAdv in Windows Forms Classic | Syncfusion
+title: Creating DateTimePickerAdv in WinForms xptoolbar | Syncfusion
 description: This section of the documentation describes how to add the date time picker control into an application.
 platform: WindowsForms
 control: DateTimePickerAdv

@@ -17,7 +17,7 @@ To localize the SfListView based on the  [CurrentUICulture](https://msdn.microso
 
 2) Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
-![](Localization_images/Localization_img1.png)
+![WindowsForms SfListView Localization Image1](Localization_images/Localization_img1.png)
                      
 3) Right-click on the Resources folder, select Add and then NewItem.
 
