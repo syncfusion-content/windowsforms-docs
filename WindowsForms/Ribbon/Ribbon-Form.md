@@ -121,7 +121,7 @@ Me.TopLeftRadius = 20
 
 ## Adding user control to the title bar
 
-The `RibbonForm` allows you to load any user control into the title bar using the `HeaderItem` property. 
+The `RibbonForm` allows to load any user control into the right side of the title bar by using the `HeaderItem` property.
 
 The following code example illustrates how to add the header item in title bar of the RibbonForm.
 
