@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Backstage | WindowsForms | Syncfusion
-description: backstage
-platform: This section briefly describes the basic functions of BackStage in RibbonControlAdv for Windows Forms.
+description: This section briefly describes the basic functions of BackStage in RibbonControlAdv for Windows Forms.
+platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
