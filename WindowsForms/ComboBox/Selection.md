@@ -274,7 +274,7 @@ End Sub
 
 The `SfComboBox` allows to show or hide the clear button by using the `ShowClearButton` property. When pressing the clear button it will clear the selected items and editor portion.
 
-N>This clear button will be visible only when the selection or editing takes place inside the SfComboBox.
+N> This clear button will be visible only when the selection or editing takes place inside the SfComboBox.
 
 {% tabs %}
 
