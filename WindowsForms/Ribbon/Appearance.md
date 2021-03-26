@@ -260,6 +260,12 @@ color.BackStageItemSelectionColor = Color.FromArgb(62, 109, 181);
 // To set the BackStageButton ForeColor
 color.BackStageItemForeColor = Color.White;
 
+// To set the hover fore color for BackStage items.
+color.BackStageItemHoverForeColor = Color.White;
+
+// To set the selection fore color for BackStage items.
+color.BackStageItemSelectionForeColor = Color.White;
+
 // To set the Backstage title fore color
 color.BackStageTitleColor = ColorTranslator.FromHtml("#3a3a3a");
 
@@ -417,6 +423,10 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
     color.BackStageItemSelectionColor = Color.FromArgb(62, 109, 181)
 
     color.BackStageItemForeColor = Color.White
+
+    color.BackStageItemHoverForeColor = Color.White
+
+    color.BackStageItemSelectionForeColor = Color.White
 
     color.BackStageTitleColor = ColorTranslator.FromHtml("#3a3a3a")
 
@@ -899,6 +909,14 @@ _touchColorTable.ToolStripSpliterColor = Color.Red;
 
 _touchColorTable.ToolstripTabItemForeColor = Color.White;
 
+// To set the hover fore color for BackStage items.
+
+_touchColorTable.BackStageItemHoverForeColor = Color.White;
+
+// To set the selection fore color for BackStage items.
+
+_touchColorTable.BackStageItemSelectionForeColor = Color.White;
+
 //To apply TouchStyleColorTable for RibbonControlAdv
 
 this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
@@ -1004,6 +1022,14 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
     _touchColorTable.ToolStripSpliterColor = Color.Red
 
     _touchColorTable.ToolstripTabItemForeColor = Color.White
+
+    // To set the hover fore color for BackStage items.
+
+    _touchColorTable.BackStageItemHoverForeColor = Color.White
+
+    // To set the selection fore color for BackStage items.
+
+    _touchColorTable.BackStageItemSelectionForeColor = Color.White
 
     Me.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable)
 
