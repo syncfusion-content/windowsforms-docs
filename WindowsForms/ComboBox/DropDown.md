@@ -79,9 +79,9 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing drop-down positions
+## Customizing drop-down position
 
-The `SfComboBox` allows you to change the position of dropdown list. The positions can be customized by using the `DropDownPosition` property. The default value is center.
+The `SfComboBox` allows to change the position of the dropdown list by using the `DropDownPosition` property. The default value is `PopupRelativeAlignment.Center`.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         Syncfusion.WinForms.ListView.SfComboBox sfComboBox1 = new Syncfusion.WinForms.ListView.SfComboBox();
-        sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.TopLeft;
+        sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.RightTop;
         sfComboBox1.Location = new Point(300, 180);
         sfComboBox1.Size = new Size(120, 30);
         sfComboBox1.ThemeName = "Office2016Colorful";
