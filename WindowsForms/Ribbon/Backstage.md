@@ -2,42 +2,42 @@
 layout: post
 title: Backstage | WindowsForms | Syncfusion
 description: backstage
-platform: WindowsForms
+platform: This section briefly describes the basic functions of BackStage in RibbonControlAdv for Windows Forms.
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Backstage
+# BackStage settings in Ribbon
 
 The Ribbon Backstage will appear when the user clicks on Menu button, it allows to make actions for the whole document such as Save, Save As and print. It can be used to show the recent changes in the document and even closing the application.
 
 Backstage structure will have two areas, left side which contain all the items in backstage panel and the right side which shows content of the BackstageTab.
 
-There are three items that can be used in Backtage. They are
+There are three items that can be used in BackStage. They are
 
 *	BackStage Button – A clickable item which acts as a simple button.
 *	BackStageTab – A simple tab, as you click on it, displays its content.
 *	BackStageSeparator – A simple line which separates neighboring items and can be used to differentiate different set of items to improve readability.  
 
-![](BackStage_Images/Backstage_img1.jpg)
+![BackStage image](BackStage_Images/Backstage_img1.jpg)
 
 ## Open BackStage
 
 In designer backstage can be opened by using smart tag of the backstage control below the designer and select `ShowBackstage`.
 
-![](BackStage_Images/Backstage_img2.jpg)
+![ShowBackStage image](BackStage_Images/Backstage_img2.jpg)
 
 Or backstage can be accessed by going into BackStage property grid and changing `IsVisible` as true.
 
 In run time BackStage can be opened by right clicking on the `MenuButton`.
 
-![](BackStage_Images/Backstage_img3.jpg)
+![MenuButton image](BackStage_Images/Backstage_img3.jpg)
 
 ## Create BackStage Button
 
 BackStage Button can be added through Smart tag of backstage view and it can be customized using property grid of that button.
 
-![](BackStage_Images/Backstage_img4.jpg)
+![BackStage button image](BackStage_Images/Backstage_img4.jpg)
 
 Through coding
 
@@ -91,7 +91,7 @@ Me.backStage1.Controls.Add(exitBackStageButton)
 
 BackStage Tab can be added through smart tag of backstage view and it can be customized using the property grid.
 
-![](BackStage_Images/Backstage_img5.jpg)
+![BackStage tab image](BackStage_Images/Backstage_img5.jpg)
 
 Through coding
 
@@ -153,19 +153,19 @@ Me.backStage1.Controls.Add(printBackStageTab)
 
 {% endtabs %}
 
-![](BackStage_Images/Backstage_img6.jpg)
+![BackStage with items](BackStage_Images/Backstage_img6.jpg)
 
 ### Adding Controls into BackStageTab
 
 If backstage view is visible on the designer, select the tab and on left side empty space is available to add the controls for that tab, you can add the controls in that area from toolbox.
 
-![](BackStage_Images/Backstage_img7.jpg)
+![Controls with BackStageTab](BackStage_Images/Backstage_img7.jpg)
 
 ## Add Separator
 
 Separator can be added through Smart tag as explained in adding backstage button and tab.
 
-![](BackStage_Images/Backstage_img8.jpg)
+![BackStage Separator image](BackStage_Images/Backstage_img8.jpg)
 
 ## Add Header Image
 
@@ -187,9 +187,9 @@ Me.ribbonControlAdv1.RibbonHeaderImage = RibbonHeaderImage.Lines
 
 {% endtabs %}
 
-![](BackStage_Images/Backstage_img9.jpg)
+![Header image with Ribbon](BackStage_Images/Backstage_img9.jpg)
 
-![](BackStage_Images/Backstage_img10.jpg)
+![Header image with BackStage](BackStage_Images/Backstage_img10.jpg)
 
 To set custom image to the Ribbon header, set an image to the property `CustomRibbonHeaderImage`.
 
@@ -259,7 +259,7 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 
 The file tab located at left end of the ribbon is the menu button, it is used to open backstage at run time.
 
-![](BackStage_Images/Backstage_img11.jpg)
+![MenuButton image](BackStage_Images/Backstage_img11.jpg)
 
 ### Menu Button Text
 
