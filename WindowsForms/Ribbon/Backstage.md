@@ -420,5 +420,5 @@ public partial class Form1 : RibbonForm
 
 ![BackStage placement image](BackStage_Images/Backstage_img12.jpg)
 
-N>[View sample in GitHub]()
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-backstage-items-placement)
 
