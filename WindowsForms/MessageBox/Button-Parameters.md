@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Button-Parameters | WindowsForms | Syncfusion
-description: Button Parameters
+description: This section describes the various features implemented in Windows Forms MessageBoxAdv
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Parameters
+# Button Parameters in Windows Forms MessageBox (MessageBoxAdv)
 
 [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
 

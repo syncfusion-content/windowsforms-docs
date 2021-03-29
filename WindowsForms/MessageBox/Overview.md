@@ -7,7 +7,7 @@ control: MessageBoxAdv
 documentation: ug
 ---
 
-# Overview
+# Windows Forms MessageBox (MessageBoxAdv) Overview
 
 The [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) is an advanced MessageBox control that can be used to display a message to the end-user. It provides icons, buttons support and complete customization option for the control.
 
