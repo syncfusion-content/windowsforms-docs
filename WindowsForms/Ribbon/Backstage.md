@@ -1,43 +1,43 @@
 ---
 layout: post
 title: Backstage | WindowsForms | Syncfusion
-description: backstage
+description: This section briefly describes the basic functions of BackStage in RibbonControlAdv for Windows Forms.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Backstage
+# BackStage settings in Ribbon
 
 The Ribbon Backstage will appear when the user clicks on Menu button, it allows to make actions for the whole document such as Save, Save As and print. It can be used to show the recent changes in the document and even closing the application.
 
 Backstage structure will have two areas, left side which contain all the items in backstage panel and the right side which shows content of the BackstageTab.
 
-There are three items that can be used in Backtage. They are
+There are three items that can be used in BackStage. They are
 
 *	BackStage Button – A clickable item which acts as a simple button.
 *	BackStageTab – A simple tab, as you click on it, displays its content.
 *	BackStageSeparator – A simple line which separates neighboring items and can be used to differentiate different set of items to improve readability.  
 
-![](BackStage_Images/Backstage_img1.jpg)
+![BackStage image](BackStage_Images/Backstage_img1.jpg)
 
 ## Open BackStage
 
 In designer backstage can be opened by using smart tag of the backstage control below the designer and select `ShowBackstage`.
 
-![](BackStage_Images/Backstage_img2.jpg)
+![ShowBackStage image](BackStage_Images/Backstage_img2.jpg)
 
 Or backstage can be accessed by going into BackStage property grid and changing `IsVisible` as true.
 
 In run time BackStage can be opened by right clicking on the `MenuButton`.
 
-![](BackStage_Images/Backstage_img3.jpg)
+![MenuButton image](BackStage_Images/Backstage_img3.jpg)
 
 ## Create BackStage Button
 
 BackStage Button can be added through Smart tag of backstage view and it can be customized using property grid of that button.
 
-![](BackStage_Images/Backstage_img4.jpg)
+![BackStage button image](BackStage_Images/Backstage_img4.jpg)
 
 Through coding
 
@@ -91,7 +91,7 @@ Me.backStage1.Controls.Add(exitBackStageButton)
 
 BackStage Tab can be added through smart tag of backstage view and it can be customized using the property grid.
 
-![](BackStage_Images/Backstage_img5.jpg)
+![BackStage tab image](BackStage_Images/Backstage_img5.jpg)
 
 Through coding
 
@@ -153,19 +153,19 @@ Me.backStage1.Controls.Add(printBackStageTab)
 
 {% endtabs %}
 
-![](BackStage_Images/Backstage_img6.jpg)
+![BackStage with items](BackStage_Images/Backstage_img6.jpg)
 
 ### Adding Controls into BackStageTab
 
 If backstage view is visible on the designer, select the tab and on left side empty space is available to add the controls for that tab, you can add the controls in that area from toolbox.
 
-![](BackStage_Images/Backstage_img7.jpg)
+![Controls with BackStageTab](BackStage_Images/Backstage_img7.jpg)
 
 ## Add Separator
 
 Separator can be added through Smart tag as explained in adding backstage button and tab.
 
-![](BackStage_Images/Backstage_img8.jpg)
+![BackStage Separator image](BackStage_Images/Backstage_img8.jpg)
 
 ## Add Header Image
 
@@ -187,9 +187,9 @@ Me.ribbonControlAdv1.RibbonHeaderImage = RibbonHeaderImage.Lines
 
 {% endtabs %}
 
-![](BackStage_Images/Backstage_img9.jpg)
+![Header image with Ribbon](BackStage_Images/Backstage_img9.jpg)
 
-![](BackStage_Images/Backstage_img10.jpg)
+![Header image with BackStage](BackStage_Images/Backstage_img10.jpg)
 
 To set custom image to the Ribbon header, set an image to the property `CustomRibbonHeaderImage`.
 
@@ -259,7 +259,7 @@ Me.ribbonControlAdv1.MenuButtonEnabled = False
 
 The file tab located at left end of the ribbon is the menu button, it is used to open backstage at run time.
 
-![](BackStage_Images/Backstage_img11.jpg)
+![MenuButton image](BackStage_Images/Backstage_img11.jpg)
 
 ### Menu Button Text
 
@@ -320,3 +320,105 @@ Me.ribbonControlAdv1.MenuColor = Color.Red
 {% endhighlight %}
 
 {% endtabs %}
+
+## BackStage items placement
+
+The `BackStage` items listed below can be positioned either at top or bottom by using the `Placement` property.
+
+*	BackStageButton
+*	BackStageTab
+*	BackStageSeparator
+
+The following code example illustrates how to position the BackStage items either at top or bottom.
+
+{% tabs %}
+
+{% highlight c# %}
+
+using Syncfusion.Windows.Forms.Tools;
+
+public partial class Form1 : RibbonForm
+{
+    private Syncfusion.Windows.Forms.Tools.RibbonControlAdv ribbonControlAdv1;
+    private Syncfusion.Windows.Forms.Tools.ToolStripTabItem homeTabItem;
+    private Syncfusion.Windows.Forms.Tools.ToolStripTabItem sendTabItem;
+    private Syncfusion.Windows.Forms.Tools.ToolStripTabItem folderTabItem;
+    private Syncfusion.Windows.Forms.Tools.ToolStripEx newToolStripEx;
+    private Syncfusion.Windows.Forms.BackStageView backStageView1;
+    private Syncfusion.Windows.Forms.BackStage backStage1;
+    private Syncfusion.Windows.Forms.BackStageTab openExportBackStageTab;
+    private Syncfusion.Windows.Forms.BackStageTab saveAttachmentsBackStageTab;
+    private Syncfusion.Windows.Forms.BackStageTab openBackStageTab;
+    private Syncfusion.Windows.Forms.BackStageTab officeAccountsBackStageTab;
+    private Syncfusion.Windows.Forms.BackStageSeparator backStageSeparator;
+    private Syncfusion.Windows.Forms.BackStageTab printBackStageTab;
+    private Syncfusion.Windows.Forms.BackStageButton closeBackStageButton;
+
+    public Form1()
+    {
+        InitializeComponent();
+        this.ribbonControlAdv1 = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
+        this.homeTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+        this.sendTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+        this.folderTabItem = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
+        this.newToolStripEx = new Syncfusion.Windows.Forms.Tools.ToolStripEx();
+        this.backStageView1 = new Syncfusion.Windows.Forms.BackStageView(this.components);
+        this.backStage1 = new Syncfusion.Windows.Forms.BackStage();
+        this.openExportBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+        this.saveAttachmentsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+        this.openBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+        this.officeAccountsBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+        this.backStageSeparator = new Syncfusion.Windows.Forms.BackStageSeparator();
+        this.printBackStageTab = new Syncfusion.Windows.Forms.BackStageTab();
+        this.closeBackStageButton = new Syncfusion.Windows.Forms.BackStageButton();
+
+        this.ribbonControlAdv1.BackStageView = this.backStageView1;
+        this.ribbonControlAdv1.MenuButtonText = "File";
+        this.ribbonControlAdv1.Size = new System.Drawing.Size(1036, 160);
+        this.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016;
+        this.Controls.Add(ribbonControlAdv1);
+
+        this.homeTabItem.Text = "Home";
+        this.sendTabItem.Text = "Send";
+        this.folderTabItem.Text = "Folder";
+
+        this.ribbonControlAdv1.Header.AddMainItem(this.homeTabItem);
+        this.ribbonControlAdv1.Header.AddMainItem(this.sendTabItem);
+        this.ribbonControlAdv1.Header.AddMainItem(this.folderTabItem);
+
+        this.newToolStripEx.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+        this.homeTabItem.Panel.Controls.Add(newToolStripEx);
+
+        this.backStageView1.BackStage = this.backStage1;
+        this.backStageView1.HostControl = null;
+        this.backStageView1.HostForm = this;
+            
+        this.openExportBackStageTab.Text = "Open/Export";
+        this.saveAttachmentsBackStageTab.Text = "Save Attachments";
+        this.openBackStageTab.Text = "Open";
+        this.officeAccountsBackStageTab.Text = "Office Accounts";
+        this.printBackStageTab.Text = "Print";
+        this.closeBackStageButton.Text = "Close";
+
+        this.backStageSeparator.Placement = Syncfusion.Windows.Forms.BackStageItemPlacement.Bottom;
+        this.printBackStageTab.Placement = Syncfusion.Windows.Forms.BackStageItemPlacement.Bottom;
+        this.closeBackStageButton.Placement = Syncfusion.Windows.Forms.BackStageItemPlacement.Bottom;
+
+        this.backStage1.Controls.Add(openExportBackStageTab);
+        this.backStage1.Controls.Add(saveAttachmentsBackStageTab);
+        this.backStage1.Controls.Add(openBackStageTab);
+        this.backStage1.Controls.Add(officeAccountsBackStageTab);
+        this.backStage1.Controls.Add(backStageSeparator);
+        this.backStage1.Controls.Add(printBackStageTab);
+        this.backStage1.Controls.Add(closeBackStageButton);
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BackStage placement image](BackStage_Images/Backstage_img12.jpg)
+
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-backstage-items-placement)
+
