@@ -303,3 +303,26 @@ Eg: Collapsed view
 
 ![Collapsed view](MessageBoxAdv_images/MessageBoxAdv_img19.jpg)
 
+## Resizing support
+
+MessageBoxAdv allows you to adjust the size of the control at run time by dragging the gripper at bottom right. It can be achieved by using the [CanResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_CanResize) property.Its default value is false.
+
+{% tabs %}
+
+{% highlight C# %}
+
+MessageBoxAdv.CanResize = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+MessageBoxAdv.CanResize = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Resizing support](MessageBoxAdv_images/MessageBoxAdv_img34.png)
+
+You can download the sample from [here](https://github.com/SyncfusionExamples/Messageboxadv-resize-support-in-Winforms)

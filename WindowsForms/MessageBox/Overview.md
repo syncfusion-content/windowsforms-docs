@@ -22,4 +22,4 @@ The [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 * **Visual Styles** - Provides rich set of VisualStyle to customize the look and feel of MessageBoxAdv.
 * **Icons** - Supports to display wide variety of built-in icons and also empowered with loading custom icons.
 * **Right-to-left support** - Supports to align all the control elements in right-to-left layout.
- 
+* **Resizing support** - Supports to adjust the size of the control at run time.
