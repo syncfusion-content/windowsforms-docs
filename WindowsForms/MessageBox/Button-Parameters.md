@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Button-Parameters | WindowsForms | Syncfusion
-description: This section describes the various features implemented in Windows Forms MessageBoxAdv
+description: Learn about various button parameters, Right to Left, Details view and Resizing support in Windows Forms MessageBoxAdv
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
