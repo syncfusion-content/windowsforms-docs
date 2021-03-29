@@ -122,3 +122,5 @@ multiColumnTreeView1.RefreshFilter()
 
 {% endhighlight %}
 {% endtabs %}
+
+You can download the sample from [here](https://github.com/SyncfusionExamples/Filtering-support-in-MultiColumnTreeView).
