@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add picture to a chart area | Windows Forms | Syncfusion
+title: Add picture/image to a Chart area | Windows Forms | Syncfusion
 description: You can enhance a chart by inserting a picture (such as a business logo) anywhere in the chart area.
 platform: windowsforms
 control: chart
@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # How to add an image on Chart area
+
 You can add an image anywhere on Chart area to represent the details with pictorial format. It has been achieved by using [ChartDockControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartDockControl.html) with adding image on dock control with position changes.
 
 {% tabs %}
@@ -60,10 +61,9 @@ ChartSeries chartSeries;
     ...
     private void ChartControl_Paint(object sender, PaintEventArgs e)
     {
-    var yPosition = this.chartControl.ChartArea.GetPointByValue(this.chartControl.Series[0].Points[0]);
-    var xPosition = this.chartControl.ChartArea.GetPointByValue(this.chartControl.Series[0].Points[4]);
+    var position = this.chartControl.ChartArea.GetPointByValue(this.chartControl.Series[0].Points[5]);
     //Position the dock control
-    dockControl.Location = new Point(xPosition.X - 20, yPosition.Y + dockControl.Width);
+     dockControl.Location = new Point(position.X-(dockControl.Height-20),position.Y - dockControl.Height);
     }
     ...
 {% endhighlight %}
@@ -74,7 +74,6 @@ ChartSeries chartSeries;
         Private pictureBox As PictureBox
         Private chartSeries As ChartSeries
         Private xPosition As Point
-        Private yPosition As Point
         ...
 
          Private Sub InitializeComponent()
@@ -126,9 +125,8 @@ ChartSeries chartSeries;
             Me.ResumeLayout(False)
         End Sub
         Private Sub chartControl1_Paint(ByVal sender As Object, ByVal e As PaintEventArgs)
-            yPosition = Me.chartControl.ChartArea.GetPointByValue(Me.chartControl.Series(0).Points(0))
-            xPosition = Me.chartControl.ChartArea.GetPointByValue(Me.chartControl.Series(0).Points(4))
-            dockControl.Location = New Point(xPosition.X - 20, yPosition.Y + dockControl.Width)
+            xPosition = Me.chartControl.ChartArea.GetPointByValue(Me.chartControl.Series(0).Points(5))
+            dockControl.Location = New Point(xPosition.X - 20, xPosition.Y - dockControl.Height)
         End Sub
 {% endhighlight %}
 
