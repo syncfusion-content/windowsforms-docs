@@ -260,11 +260,9 @@ al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /d
 
 {% endtabs %}
 
-11)  The version can be specified for these assemblies in the all command should be based on the `SatelliteContractVersionAttribute` setting in the productAssemblyInfo. This also means that when a new version of the product is released with a newer assembly version that needs to be recreated by adding new and necessary resources. Recompile the resource assemblies  with a new version, when the `SatelliteContractVersionAttribute` has changed.
+11)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.
 
-12)  On successful execution, an assembly file, Syncfusion.Tools.Windows.resources.dll is created.
-
-13)  Finally, mark this satellite assembly for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
+12)  Finally, mark this satellite assembly for verification skipping since, it is not signed with the same strong-name as the product assembly as follows:
 
 {% tabs %}
 
@@ -276,9 +274,9 @@ sn –Vr Syncfusion.Tools.Windows.resources.dll
 
 {% endtabs %}
 
-14)  Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.
+13)  Drop this assembly into an appropriate sub-directory under .EXE’s directory (bin\Debug), based on the naming conventions enforced in .NET. and it can placed in the `de-DE` sub-directory when this assembly contains resources from the German (Germany) culture.
 
-15)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.
+14)  Finally, application can refer German resources during runtime by using the following code example. To change the UI culture of the current thread, add this code in the Forms constructor before the `InitializeComponent()`.
 
 {% tabs %}
 
@@ -297,7 +295,7 @@ Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de
 {% endtabs %} 
 
 
-16)  Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
+15)  Now, Run the application that contains the Syncfusion Toolbar and Menu controls and open the Customization dialog. The dialog appears in German as shown in the following figure:
 
 ![Customization dialog appears in German culture](Localization_images/GettingStarted_img6.png)
 
@@ -366,7 +364,156 @@ N> Consider you are using `SfDataGrid` control in your application. Then you nee
 
 ![Windows Forms datagrid localized .resx file](Localization_images/winforms-localized-resx-file.png)
 
+![Windows Form datagrid localized](Localization_Images/DataGrid.png)
+
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/winforms-datagrid-localization).
+
+### Localize when resource file is present in different namespaces or assemblies
+
+The below table represents that how the resource file need to set if we using our syncfusion controls from different assembly or namespace,
+
+<table>
+<tr>
+<th>
+Control Namespace
+</th>
+<th>
+Code Snippet
+</th>
+</tr>
+<tr>
+<td>
+Tools Windows
+</td>
+<td>
+ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
+</td>
+</tr>
+<tr>
+<td>
+Shared Base
+</td>
+<td>
+SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
+</td>
+</tr>
+<tr>
+<td>
+Datagrid Winforms
+</td>
+<td>
+DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
+</td>
+</tr>
+</table>
+
+And below steps helps you to show how localization can be done at different assemblies or namespaces,
+
+1) Create a [.resx files](https://help.syncfusion.com/windowsforms/localization?cs-save-lang=1&cs-lang=csharp#creating-resx-files).
+
+2) And add the below code in windows form constructor.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
+        Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
+        DataGridLocalizationResourceAccessor.Instance.SetResources(GetType().Assembly, "Localization");
+        InitializeComponent();
+    }
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Partial Public Class Form1
+	Inherits Form
+	Public Sub New()
+		Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de-DE")
+		Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("de-DE")
+        DataGridLocalizationResourceAccessor.Instance.SetResources([GetType]().Assembly, "Localization")
+		InitializeComponent()
+	End Sub
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3) Then right click the project and create another windows form project named as **WindowsFormsApp1**.
+
+4) In that project add the button and show the Localization Form in button click event as given below,
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Localization;
+using System;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form2 : Form
+    {
+         public Form2()
+         {
+            Button button = new Button();
+            button.Click += button1_Click;
+            this.Controls.Add(button);
+            InitializeComponent();
+         }
+
+         private void button1_Click(object sender, EventArgs e)
+         {
+            Form1 form1 = new Form1();
+            form1.Show();
+         }
+    }
+}
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Imports Localization
+Imports System
+Imports System.Windows.Forms
+
+Namespace WindowsFormsApp1
+    Public Partial Class Form2
+        Inherits Form
+
+        Public Sub New()
+            Dim button As Button = New Button()
+            button.Click += AddressOf button1_Click
+            Me.Controls.Add(button)
+            InitializeComponent()
+        End Sub
+
+        Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+            Dim form1 As Form1 = New Form1()
+            form1.Show()
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
+5) Now, set startup project as **WindowsFormsApp1** and run the project.
+
+6) Then click the button Appeared in Form. Now, you can see that the text in SfDatagrid gets localized.
+
+![Windows Form Localization done at different assemblies](Localization_images/DataGrid_diff_assembly.png)
 
 ### Editing default culture settings
 
