@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date and Time in Calculate | WindowsForms | Syncfusion
+title: Date Time in Windows Forms Calculation Engine | Syncfusion
 description: This session explains that the supported formulas with syntax and description of  Date and Time functions in CalcEngine 
 platform: windowsforms
 control: Calculate

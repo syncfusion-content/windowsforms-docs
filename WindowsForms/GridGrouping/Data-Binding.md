@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding for Syncfusion Essential WindowsForms
-description: This section explains about the data binding and its types available for GridGroupingControl.
+description: This section explains about the data binding and its types available for GridGroupingControl and explain configuration and key features in WindowsForms.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Data Binding 
+# Data Binding for Essential Windows Forms
 To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx), [DataSets](https://msdn.microsoft.com/en-in/library/system.data.dataset.aspx), or any component that implements interface [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx), [IBindingList](https://msdn.microsoft.com/en-us/library/ms132679.aspx), [ITypedList](https://msdn.microsoft.com/en-us/library/system.componentmodel.itypedlist.aspx), or [IListSource](https://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
 
 ## Data binding using ADO.NET
@@ -254,7 +254,7 @@ Me.gridGroupingControl1.DataSource = al
 
 The Grid will be populated as follows,
 
-![](Data-Binding_images/Data-Binding_img1.jpeg)
+![WindowsForms GridGrouping Data-Binding Image1](Data-Binding_images/Data-Binding_img1.jpeg)
 
 **Sample Link:**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo
@@ -422,7 +422,7 @@ Me.gridGroupingControl1.DataSource = MyBooks
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img2.jpeg)
+![WindowsForms GridGrouping Data-Binding Image2](Data-Binding_images/Data-Binding_img2.jpeg)
 
 **Sample Link:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Array List Demo
@@ -634,7 +634,7 @@ this.gridGroupingControl1.DataSource = MyProducts;
 Me.gridGroupingControl1.DataSource = MyProducts
 {% endhighlight %}
 {% endtabs %}
-![](Data-Binding_images/Data-Binding_img3.jpeg)
+![WindowsForms GridGrouping Data-Binding Image3](Data-Binding_images/Data-Binding_img3.jpeg)
 
 **Sample Location:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Collection Base Demo
@@ -922,7 +922,7 @@ Me.gridGroupingControl1.DataSource = bl
 
 The Grid will be loaded with the data looks like the following screenshot,
 
-![](Data-Binding_images/Data-Binding_img4.jpeg)
+![WindowsForms GridGrouping Data-Binding Image4](Data-Binding_images/Data-Binding_img4.jpeg)
 
 **Sample Link:**
 *&lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo*
@@ -2095,7 +2095,7 @@ End Sub
 
 After finishing the above steps run the sample, the Grid will be loaded with the unbound column as shown in the following screenshot,
 
-![](Data-Binding_images/Data-Binding_img5.jpeg)
+![WindowsForms GridGrouping Data-Binding Image5](Data-Binding_images/Data-Binding_img5.jpeg)
 
 ## Binding at Design Time 
 The GridGroupingControl can be bound to the data source through the designer. It will bind the given data source without a single line of code written manually. 
@@ -2109,41 +2109,41 @@ The following steps are to be used with Visual Studio 2005 and .NET 2.0. Smart T
 1.From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto the form.
 2.In the GridGroupingControl smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
 
-![](Data-Binding_images/Data-Binding_img6.jpeg)
+![WindowsForms GridGrouping Data-Binding Image6](Data-Binding_images/Data-Binding_img6.jpeg)
 
 In the Data Source Configuration Wizard that appears, select DataBase and click Next.
 
-![](Data-Binding_images/Data-Binding_img7.jpeg)
+![WindowsForms GridGrouping Data-Binding Image7](Data-Binding_images/Data-Binding_img7.jpeg)
 
 Click New Connection then the Add Connection dialog box will be displayed.
 
-![](Data-Binding_images/Data-Binding_img8.jpeg)
+![WindowsForms GridGrouping Data-Binding Image8](Data-Binding_images/Data-Binding_img8.jpeg)
 
 In the Change Source dialog box, select the Microsoft Access DataBase File option, and then click OK.
 
-![](Data-Binding_images/Data-Binding_img9.jpeg)
+![WindowsForms GridGrouping Data-Binding Image9](Data-Binding_images/Data-Binding_img9.jpeg)
 
 The Add Connection dialog box will be opened without the DataBase file name entry set. Click Browse button and browse to the following path: C:\Syncfusion\EssentialStudio[Version Number]\Windows\Data\NWIND.mdb (this path will vary according to the Essential Studio installation location). Click OK.
 
-![](Data-Binding_images/Data-Binding_img10.jpeg)
+![WindowsForms GridGrouping Data-Binding Image10](Data-Binding_images/Data-Binding_img10.jpeg)
 
 Click No to indicate that do not want to save the MDB in the project.
 
-![](Data-Binding_images/Data-Binding_img11.jpeg)
+![WindowsForms GridGrouping Data-Binding Image11](Data-Binding_images/Data-Binding_img11.jpeg)
 
 The below screen will appear, Click Next to choose your Database Objects.
 
-![](Data-Binding_images/Data-Binding_img12.jpeg)
+![WindowsForms GridGrouping Data-Binding Image12](Data-Binding_images/Data-Binding_img12.jpeg)
 
 Select the Tables that are need to bind. Click Finish.
 
-![](Data-Binding_images/Data-Binding_img13.jpeg)
+![WindowsForms GridGrouping Data-Binding Image13](Data-Binding_images/Data-Binding_img13.jpeg)
 
-![](Data-Binding_images/Data-Binding_img14.jpeg)
+![WindowsForms GridGrouping Data-Binding Image14](Data-Binding_images/Data-Binding_img14.jpeg)
 
 Run the application to see the GridGroupingControl display the data from the MDB file (without having written a single line of code). The form should look similar to the one in the following screen shot.
 
-![](Data-Binding_images/Data-Binding_img15.jpeg)
+![WindowsForms GridGrouping Data-Binding Image15](Data-Binding_images/Data-Binding_img15.jpeg)
 
 **Sample Location:**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\GettingStarted\
@@ -2154,116 +2154,116 @@ The following steps are to be used with Visual Studio 2008 and .NET 3.5. Smart T
 
 1. From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form. In the Grid Grouping control smart tag, click Choose DataSource list, and then click Add Project Data Source. Data Source Configuration Wizard dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img16.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image16](Data-Binding_images/Data-Binding_img16.jpeg)
 
 2. In the Choose a Data Source Type window, click Database, and then click Next.
 
-   ![](Data-Binding_images/Data-Binding_img17.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image17](Data-Binding_images/Data-Binding_img17.jpeg)
 
 3. In the Choose Your Data Connection window, click New Connection.
 
-   ![](Data-Binding_images/Data-Binding_img18.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image18](Data-Binding_images/Data-Binding_img18.jpeg)
 
 4. The Change Data Source dialog box appears. Click Microsoft Access Database File, and then click Continue.
 
-   ![](Data-Binding_images/Data-Binding_img19.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image19](Data-Binding_images/Data-Binding_img19.jpeg)
 
 5. The Add Connection dialog box appears without the Database file name entry set. Click Browse to choose the Data Source: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to the Essential Studio installation location).
 
-   ![](Data-Binding_images/Data-Binding_img20.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image20](Data-Binding_images/Data-Binding_img20.jpeg)
 
 6. The connection string is displayed in the Data Source Configuration Wizard dialog box. Click Next,
 
-   ![](Data-Binding_images/Data-Binding_img21.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image21](Data-Binding_images/Data-Binding_img21.jpeg)
 
 7. In the Microsoft Visual Studio message box that opens, click No to indicate that you do not want to save the MDB in the project.
 
-   ![](Data-Binding_images/Data-Binding_img22.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image22](Data-Binding_images/Data-Binding_img22.jpeg)
 
 8. The Save the Connection String to the Application Configuration File window opens.
 
-   ![](Data-Binding_images/Data-Binding_img23.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image23](Data-Binding_images/Data-Binding_img23.jpeg)
 
 9. The Choose your Database Objects window will open, select the required tables need to be bind to the grid.
 10. Click **Finish**. The columns in the GridGroupingControl will get populated as shown in the following window shot.
 
-    ![](Data-Binding_images/Data-Binding_img24.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image24](Data-Binding_images/Data-Binding_img24.jpeg)
 
 11. Run the application to view the MDB file data displayed by the Grid Grouping control (without having written a single line of code). Your form should look similar to the one in the following window shot.
 
-    ![](Data-Binding_images/Data-Binding_img25.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image25](Data-Binding_images/Data-Binding_img25.jpeg)
 
 #### Binding MDB File by using Visual Studio 2010
 The steps in this lesson are for use with Visual Studio 2010 and .NET 4.0. You can use **Smart Tags** available in the .NET 4.5.1 Designer to hook into your MDB file. This tutorial is strictly a designer tutorial. You do not have to write even a single line of code.
 
 1. From the **Syncfusion** tab in the toolbox, drag a **Grid Grouping control** onto your form. In the Grid Grouping control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. **Data Source Configuration Wizard** dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img26.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image26](Data-Binding_images/Data-Binding_img26.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click **Next**.
 
-   ![](Data-Binding_images/Data-Binding_img27.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image27](Data-Binding_images/Data-Binding_img27.jpeg)
 
 3. In the **Choose a Database Model** window, click **Dataset**, and then click **Next**.
 
-   ![](Data-Binding_images/Data-Binding_img28.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image28](Data-Binding_images/Data-Binding_img28.jpeg)
 
 4. In the **Choose Your Data Connection** window, click **New Connection**.
 
-   ![](Data-Binding_images/Data-Binding_img29.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image29](Data-Binding_images/Data-Binding_img29.jpeg)
 
    The **Choose** **Data Source** dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img30.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image30](Data-Binding_images/Data-Binding_img30.jpeg)
 
 5. Click **Microsoft Access Database File**, and then click **Continue**.
 
-   ![](Data-Binding_images/Data-Binding_img31.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image31](Data-Binding_images/Data-Binding_img31.jpeg)
 
    The **Add Connection** dialog box appears without the Database file name entry set.
 
 6. Click **Browse** to choose the Data Source: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\ &lt;Version number&gt;\ Common\Data\NWIND.mdb (this path will vary according to your installation location).
 7. Click **OK**.
 
-   ![](Data-Binding_images/Data-Binding_img32.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image32](Data-Binding_images/Data-Binding_img32.jpeg)
 
    The connection string is displayed in the **Data Source Configuration Wizard** dialog box.
 
 8. Click **Next**.
 
-   ![](Data-Binding_images/Data-Binding_img33.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image33](Data-Binding_images/Data-Binding_img33.jpeg)
 
 9. In the **Microsoft Visual Studio** message box that opens, click **No** to indicate that you do not want to save the MDB in the project.
 
-   ![](Data-Binding_images/Data-Binding_img34.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image34](Data-Binding_images/Data-Binding_img34.jpeg)
 
    The **Save the Connection String to the Application Configuration File** window opens.
 
-   ![](Data-Binding_images/Data-Binding_img35.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image35](Data-Binding_images/Data-Binding_img35.jpeg)
 
 10. Click **Next**.
 
 11. In the **Choose** **your Database Objects** window that opens, select the required tables.
 
-   ![](Data-Binding_images/Data-Binding_img36.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image36](Data-Binding_images/Data-Binding_img36.jpeg)
 
 12. Click **Finish**.
 
     The columns in the Grid Grouping control will get populated as shown in the following window shot.
 
-    ![](Data-Binding_images/Data-Binding_img37.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image37](Data-Binding_images/Data-Binding_img37.jpeg)
 
 13. Finally, set the **Anchor** property of Grid Grouping control to *all*, so that Grid Grouping control can be easily sized with the form. This is depicted in the following screen shot.
 
-    ![](Data-Binding_images/Data-Binding_img38.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image38](Data-Binding_images/Data-Binding_img38.jpeg)
 
 14. You can group columns at run time by dragging column headers of the columns to be grouped to GroupDropArea of Grid Grouping control. To display GroupDropArea of Grid Grouping control, set **ShowGroupDropArea** property to *True*.
 
-    ![](Data-Binding_images/Data-Binding_img39.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image39](Data-Binding_images/Data-Binding_img39.jpeg)
 
 15. Run the application to view the MDB file data displayed by the Grid Grouping control (without having written a single line of code). Your form should look similar to the one in the following window shot.
 
-    ![](Data-Binding_images/Data-Binding_img40.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image40](Data-Binding_images/Data-Binding_img40.jpeg)
 
 #### Binding MDB File by using Visual Studio 2012
 The following steps are intended for use with Visual Studio 2012 and .NET 4.5. You can use **Smart Tags** that are available in the .NET 4.5 designer to hook into your MDB file. This tutorial is strictly a designer tutorial. You do not have to write a single line of code. 
@@ -2271,160 +2271,160 @@ The following steps are intended for use with Visual Studio 2012 and .NET 4.5. Y
 1.From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form.
 2.In the Grid Grouping control smart tag, click Choose Data Source drop-down list. Then click Add Project Data Source link.
 
-![](Data-Binding_images/Data-Binding_img41.jpeg)
+![WindowsForms GridGrouping Data-Binding Image41](Data-Binding_images/Data-Binding_img41.jpeg)
 
 In the Data Source Configuration Wizard that appears, select Database and click Next.
 
-![](Data-Binding_images/Data-Binding_img42.jpeg)
+![WindowsForms GridGrouping Data-Binding Image42](Data-Binding_images/Data-Binding_img42.jpeg)
 
 Select Dataset from Data Source Configuration Wizard dialog and click Next.
 
-![](Data-Binding_images/Data-Binding_img43.jpeg)
+![WindowsForms GridGrouping Data-Binding Image43](Data-Binding_images/Data-Binding_img43.jpeg)
 
 The following screen will appear:
 
-![](Data-Binding_images/Data-Binding_img44.jpeg)
+![WindowsForms GridGrouping Data-Binding Image44](Data-Binding_images/Data-Binding_img44.jpeg)
 
 Click **New Connection**. **Choose** **Data Source** dialog box will be displayed.
 
-![](Data-Binding_images/Data-Binding_img45.jpeg)
+![WindowsForms GridGrouping Data-Binding Image45](Data-Binding_images/Data-Binding_img45.jpeg)
 
 3.In the Change Data Source dialog box, select the Microsoft Access Database File option, and then click Continue. Add Connection dialog box will be displayed.
 
-![](Data-Binding_images/Data-Binding_img46.jpeg)
+![WindowsForms GridGrouping Data-Binding Image46](Data-Binding_images/Data-Binding_img46.jpeg)
 
 4.Add Connection dialog box will be opened without the Database file name entry set. Click Browse and browse to the following path: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to your installation location). Click OK.
 
-![](Data-Binding_images/Data-Binding_img47.jpeg)
+![WindowsForms GridGrouping Data-Binding Image47](Data-Binding_images/Data-Binding_img47.jpeg)
 
 Now the **Data Source Configuration Wizard** will open, along with the connection string also shown in this dialog. Click **Next**.
 
-![](Data-Binding_images/Data-Binding_img48.jpeg)
+![WindowsForms GridGrouping Data-Binding Image48](Data-Binding_images/Data-Binding_img48.jpeg)
 
 5.Click **No** to indicate that you do not want to save the MDB in the project.
 
-![](Data-Binding_images/Data-Binding_img49.jpeg)
+![WindowsForms GridGrouping Data-Binding Image49](Data-Binding_images/Data-Binding_img49.jpeg)
 
 The following screen will appear:
 
-![](Data-Binding_images/Data-Binding_img50.jpeg)
+![WindowsForms GridGrouping Data-Binding Image50](Data-Binding_images/Data-Binding_img50.jpeg)
 
 6.Click Next to choose your Database Objects. Select the tables that you want. Click Finish.
 
-![](Data-Binding_images/Data-Binding_img51.jpeg)
+![WindowsForms GridGrouping Data-Binding Image51](Data-Binding_images/Data-Binding_img51.jpeg)
 
 The columns in the GridGroupingControl will now be populated as depicted in the following screenshot,
 
-![](Data-Binding_images/Data-Binding_img52.jpeg)
+![WindowsForms GridGrouping Data-Binding Image52](Data-Binding_images/Data-Binding_img52.jpeg)
 
 Finally, set the **Anchor** property of the GridGroupingControl to All, so that the it can be easily sized with the form.
 
-![](Data-Binding_images/Data-Binding_img53.jpeg)
+![WindowsForms GridGrouping Data-Binding Image53](Data-Binding_images/Data-Binding_img53.jpeg)
 
 To allow grouping at run time, the GridGroupingControl displays a drop panel onto which the user can drag columns to be grouped. To display this drop panel, set the **ShowGroupDropArea** property to true as shown in the following screenshot:
 
-![](Data-Binding_images/Data-Binding_img54.jpeg)
+![WindowsForms GridGrouping Data-Binding Image54](Data-Binding_images/Data-Binding_img54.jpeg)
 
 Run the application to see the Grid Grouping control display the data from the MDB file without having written a single line of code. Your form should look similar to the one in the following screenshot:
 
-![](Data-Binding_images/Data-Binding_img55.jpeg)
+![WindowsForms GridGrouping Data-Binding Image55](Data-Binding_images/Data-Binding_img55.jpeg)
 
 #### Binding MDB File by using Visual Studio 2013
 The following steps used to binding the data source to the Grid grouping control using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. This process is fully based on the designer. User do not need to write even a single line of code for binding the data source.
 
 1. From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form. In the Grid Grouping control smart tag, click Choose DataSource list, and then click Add Project Data Source. Data Source Configuration Wizard dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img56.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image56](Data-Binding_images/Data-Binding_img56.jpeg)
 
 2. In the Choose a Data Source Type window, click Database, and then click Next
 
-   ![](Data-Binding_images/Data-Binding_img57.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image57](Data-Binding_images/Data-Binding_img57.jpeg)
 
 3. Then, in the Choose a Database Model window, click Dataset, and then click Next.
 
-   ![](Data-Binding_images/Data-Binding_img58.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image58](Data-Binding_images/Data-Binding_img58.jpeg)
 
 4. In the Choose Your Data Connection window, click New Connection.
 
-   ![](Data-Binding_images/Data-Binding_img59.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image59](Data-Binding_images/Data-Binding_img59.jpeg)
 
 5. Choose Data Source dialog will be open, Select the Microsoft Access Database file from the Data source list. Click on Continue.
 
-   ![](Data-Binding_images/Data-Binding_img60.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image60](Data-Binding_images/Data-Binding_img60.jpeg)
 
 6. Choose the Database file name by clicking the Browse button, and then click the OK Button.
 
-   ![](Data-Binding_images/Data-Binding_img61.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image61](Data-Binding_images/Data-Binding_img61.jpeg)
 
 7. The Data Source configuration Wizard will show the connection string as of follows, Click Next.
 
-   ![](Data-Binding_images/Data-Binding_img62.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image62](Data-Binding_images/Data-Binding_img62.jpeg)
 
 8. A message box will open like the below screenshot, click No to indicate that do not want to save the MDB in the project.
 
-   ![](Data-Binding_images/Data-Binding_img63.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image63](Data-Binding_images/Data-Binding_img63.jpeg)
 
 9. Save the Connection String to the Application Configuration file as of follows, then click Next.
 
-   ![](Data-Binding_images/Data-Binding_img64.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image64](Data-Binding_images/Data-Binding_img64.jpeg)
 
 10. Select the data tables which are need to be bind to the GridGroupingControl from the Choose Your Database Objects, Click Finish
 
-    ![](Data-Binding_images/Data-Binding_img65.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image65](Data-Binding_images/Data-Binding_img65.jpeg)
 
 11. The GridGroupingControl will populate the columns from the bonded source like below,
 
-    ![](Data-Binding_images/Data-Binding_img66.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image66](Data-Binding_images/Data-Binding_img66.jpeg)
 
 12. The GroupDropArea can be shown by enabling the ShowGroupDropArea using the property window of GridGroupingControl,
 
-    ![](Data-Binding_images/Data-Binding_img67.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image67](Data-Binding_images/Data-Binding_img67.jpeg)
 
 13. Run the application to view the MDB file data displayed by the GridGroupingControl (without having written a single line of code). The grid will loaded with the data as shown in the below screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img68.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image68](Data-Binding_images/Data-Binding_img68.jpeg)
 
 #### Binding MDB File by using Visual Studio 2015
 The following steps are used to binding the data source to the GridGroupingControl using the designer. User can make use of the Smart Tags that are available in the Designer to hook into the MDB file. 
 
 1. From the Syncfusion tab in the toolbox and drag and drop GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. Data Source Configuration Wizard dialog box appears.
    
-   ![](Data-Binding_images/Data-Binding_img69.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image69](Data-Binding_images/Data-Binding_img69.jpeg)
 
 2. In the Choose a Data Source Type window, click Database, and then click Next.
    
-   ![](Data-Binding_images/Data-Binding_img70.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image70](Data-Binding_images/Data-Binding_img70.jpeg)
 
 3. Choose Data Source dialog will be open, Select the Microsoft Access Database file from the Data source list. Click on Continue.
    
-   ![](Data-Binding_images/Data-Binding_img71.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image71](Data-Binding_images/Data-Binding_img71.jpeg)
 
 4.  Choose the Database file name by clicking the Browse button, and then click the OK Button.
     
-    ![](Data-Binding_images/Data-Binding_img72.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image72](Data-Binding_images/Data-Binding_img72.jpeg)
 
 5. The Data Source configuration Wizard will show the connection string as of follows, Click Next.
    
-   ![](Data-Binding_images/Data-Binding_img73.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image73](Data-Binding_images/Data-Binding_img73.jpeg)
 
 6. A message box will open like the below screenshot, click No to indicate that do not want to save the MDB in the project.
    
-   ![](Data-Binding_images/Data-Binding_img74.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image74](Data-Binding_images/Data-Binding_img74.jpeg)
 
 7.  Save the Connection String to the Application Configuration file then click Next.
 8. Select the data tables which are need to be bind to the GridGroupingControl from the Choose Your Database Objects, Click Finish.
 
-   ![](Data-Binding_images/Data-Binding_img75.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image75](Data-Binding_images/Data-Binding_img75.jpeg)
 
-9. The GridGroupingControl will populate the columns from the bonded source like below, ![](Data-Binding_images/Data-Binding_img76.jpeg)
+9. The GridGroupingControl will populate the columns from the bonded source like below, ![WindowsForms GridGrouping Data-Binding Image76](Data-Binding_images/Data-Binding_img76.jpeg)
 
 10. The GroupDropArea can be shown by enabling the `ShowGroupDropArea` using the property window of GridGroupingControl,
     
-    ![](Data-Binding_images/Data-Binding_img77.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image77](Data-Binding_images/Data-Binding_img77.jpeg)
 
 11. Run the application to view the MDB file data displayed by the GridGroupingControl (without having written a single line of code). The grid will loaded with the data as shown in the below screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img78.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image78](Data-Binding_images/Data-Binding_img78.jpeg)
 
 ### Binding SQL Server 
 This section explains on bounding of GridGroupingControl to the SQL server database using Visual Studio designer.
@@ -2435,23 +2435,23 @@ The steps given below is used to bind the SQL server database with Visual Studio
 1. From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto your form.
 2. In the Grid Grouping control smart tag, click the `Choose Data Source` drop down. Then click the `Add Project Data Source` link in the drop down.
    
-   ![](Data-Binding_images/Data-Binding_img79.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image79](Data-Binding_images/Data-Binding_img79.jpeg)
 
 3. In the Data Source Configuration Wizard that appears, select `DataBase` and click `Next`.
    
-   ![](Data-Binding_images/Data-Binding_img80.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image80](Data-Binding_images/Data-Binding_img80.jpeg)
 
 4. Click `New Connection`. The `Add Connection` dialog box will be displayed.
 
-   ![](Data-Binding_images/Data-Binding_img81.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image81](Data-Binding_images/Data-Binding_img81.jpeg)
 
    The ChooseData Source dialog box appears.
    
-   ![](Data-Binding_images/Data-Binding_img82.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image82](Data-Binding_images/Data-Binding_img82.jpeg)
 
 5. Click **Microsoft SQL Server**, and then click **OK**.
    
-   ![](Data-Binding_images/Data-Binding_img83.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image83](Data-Binding_images/Data-Binding_img83.jpeg)
 
  The **Add Connection** dialog box appears without the Database file name entry set
 
@@ -2459,58 +2459,58 @@ The steps given below is used to bind the SQL server database with Visual Studio
 7. Choose Database Name or Click **Browse** to choose the Data Source:C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.sdf (this path will vary according to your installation location).
 8. Select either windows authentication or SQL server authentication option. You are required to give SQL server credentials when you Authenticate with SQL server.  
 
-   ![](Data-Binding_images/Data-Binding_img84.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image84](Data-Binding_images/Data-Binding_img84.jpeg)
 
 9. Click **OK**. The connection string is displayed in the `Data Source Configuration Wizard` dialog box.
 
-   ![](Data-Binding_images/Data-Binding_img85.jpeg)
+   ![WindowsForms GridGrouping Data-Binding 85](Data-Binding_images/Data-Binding_img85.jpeg)
 
 10. Click **Next**.
 
-    ![](Data-Binding_images/Data-Binding_img86.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image86](Data-Binding_images/Data-Binding_img86.jpeg)
 
 11. Select the **DataBase Object** file from the listed database files.
     
-    ![](Data-Binding_images/Data-Binding_img87.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image87](Data-Binding_images/Data-Binding_img87.jpeg)
 
     The columns in GridGroupingControl get populated, as depicted in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img88.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image88](Data-Binding_images/Data-Binding_img88.jpeg)
 
 12. Finally, set the `Anchor` property of GridGroupingControl to `All`, so that the control can be sized easily with the form. This is depicted in the following screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img89.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image89](Data-Binding_images/Data-Binding_img89.jpeg)
 
 13. To allow grouping at run time, the user can drag columns to be grouped onto a drop panel that the GridGroupingControl displays. To display this drop panel, set the**ShowGroupDropArea** property to “True” as shown in the following screenshot. 
 
-    ![](Data-Binding_images/Data-Binding_img90.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image90](Data-Binding_images/Data-Binding_img90.jpeg)
 
 14. Run the application to see the GridGroupingControl display the data from the SQL Server database. Your form should look similar to the one in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img91.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image91](Data-Binding_images/Data-Binding_img91.jpeg)
 
 #### Binding SQL server by using VS 2008
 The steps given below is used to bind the SQL server database with Visual Studio 2008 and .NET 3.5. The `Smart Tags` are used to hook into the SQL Server Database that are available in the **.NET 3.5 Designer**. 
 
 1. From the Syncfusion tab in the Toolbox, drag a GridGroupingControl onto the form. In the GridGroupingControl smart tag, click `Choose DataSource` list, and then click `Add Project Data Source`. The Data Source Configuration Wizard dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img92.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image92](Data-Binding_images/Data-Binding_img92.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click `Next`.
    
-   ![](Data-Binding_images/Data-Binding_img93.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image93](Data-Binding_images/Data-Binding_img93.jpeg)
 
 3. In the Choose Your Data Connection window, click New Connection.
    
-   ![](Data-Binding_images/Data-Binding_img94.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image94](Data-Binding_images/Data-Binding_img94.jpeg)
 
    The **ChooseData Source** dialog box appears.
    
-   ![](Data-Binding_images/Data-Binding_img95.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image95](Data-Binding_images/Data-Binding_img95.jpeg)
 
 4. Click **Microsoft SQL Server**, and then click **OK**.
    
-   ![](Data-Binding_images/Data-Binding_img96.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image96](Data-Binding_images/Data-Binding_img96.jpeg)
 
    The **Add Connection** dialog box appears without the Database file name entry set.
 
@@ -2518,36 +2518,36 @@ The steps given below is used to bind the SQL server database with Visual Studio
 6. Choose Database Name or click **Browse** to choose the data source: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.sdf. This path varies according to your installation location.
 7. Select either the Windows Authentication option or the SQL Server Authentication option. If you want to authenticate SQL server, give your credentials for the SQL server.
    
-   ![](Data-Binding_images/Data-Binding_img97.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image97](Data-Binding_images/Data-Binding_img97.jpeg)
 
 8. Click **OK**. The connection string is displayed in the **Data Source Configuration Wizard** dialog box.
 
 
-   ![](Data-Binding_images/Data-Binding_img98.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image98](Data-Binding_images/Data-Binding_img98.jpeg)
 
 9. Click **Next**.
    
-   ![](Data-Binding_images/Data-Binding_img99.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image99](Data-Binding_images/Data-Binding_img99.jpeg)
 
 10. Select **DataBase Object** file from listed database files.
     
-    ![](Data-Binding_images/Data-Binding_img100.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image100](Data-Binding_images/Data-Binding_img100.jpeg)
 
 11. Click **Finish**. The columns in the GridGroupingControl get populated as shown in the following screenshot,
     
-    ![](Data-Binding_images/Data-Binding_img101.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image101](Data-Binding_images/Data-Binding_img101.jpeg)
 
 12. Finally, set the `Anchor` property of the GridGroupingControl to `All`, so that the control can be sized easily with the form, as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img102.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image102](Data-Binding_images/Data-Binding_img102.jpeg)
 
 13. The columns can be grouped at run time by dragging the column headers of the columns to be grouped to the GroupDropArea of the GridGroupingControl. To display the GroupDropArea of the GridGroupingControl, set the `ShowGroupDropArea**`** property to `True`, as shown in the following screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img103.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image103](Data-Binding_images/Data-Binding_img103.jpeg)
 
 14. Run the application to view the **SQL Server Database** data displayed by the GridGroupingControl. Your form should look similar to the one in the following screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img104.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image104](Data-Binding_images/Data-Binding_img104.jpeg)
 
 #### Binding SQL server by using VS 2010
 The steps given below is used to bind the SQL server database with Visual Studio 2010 and .NET 4.0. The **Smart Tags** are used to hook up the SQL Server Database. 
@@ -2556,27 +2556,27 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
    In the Grid Grouping control smart tag, click Choose DataSource list, and then click Add Project Data Source. The Data Source Configuration Wizard dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img105.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image105](Data-Binding_images/Data-Binding_img105.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click `Next`.
 
-   ![](Data-Binding_images/Data-Binding_img106.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image106](Data-Binding_images/Data-Binding_img106.jpeg)
 
 3. In the **Choose a Database Model** window, click**Dataset**, and then click **Next**.
 
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_47.jpg](Data-Binding_images/Data-Binding_img107.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image107](Data-Binding_images/Data-Binding_img107.jpeg)
 
 4. In the **Choose Your Data Connection** window, click **New Connection**.
 
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Data-Binding_images/Data-Binding_img108.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image108](Data-Binding_images/Data-Binding_img108.jpeg)
 
    The **ChooseData Source** dialog box appears.
    
-   ![](Data-Binding_images/Data-Binding_img109.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image109](Data-Binding_images/Data-Binding_img109.jpeg)
 
 5. Click **Microsoft SQL Server**, and then click **OK**.
    
-   ![](Data-Binding_images/Data-Binding_img110.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image110](Data-Binding_images/Data-Binding_img110.jpeg)
 
    The **Add Connection** dialog box appears without the Database file name entry set
 6. Choose Server Name.
@@ -2584,28 +2584,28 @@ The steps given below is used to bind the SQL server database with Visual Studio
    This path varies according to your installation location.
 8. Select either the Windows Authentication option or the SQL server authentication option. If you want to authenticate with SQL server, give your SQL server credentials.
 
-   ![](Data-Binding_images/Data-Binding_img111.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image111](Data-Binding_images/Data-Binding_img111.jpeg)
 
 9. Click **OK**. The connection string is displayed in the **Data Source Configuration Wizard** dialog box.
 
-   ![](Data-Binding_images/Data-Binding_img112.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image112](Data-Binding_images/Data-Binding_img112.jpeg)
 
 
 10. Click **Next**.
     
-    ![](Data-Binding_images/Data-Binding_img113.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image113](Data-Binding_images/Data-Binding_img113.jpeg)
 
 11. Select **DataBase Object** file from listed database files.
 
-    ![](Data-Binding_images/Data-Binding_img114.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image114](Data-Binding_images/Data-Binding_img114.jpeg)
 
 12. Click **Finish**.The columns in theGridGroupingControl get populated, as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img115.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image115](Data-Binding_images/Data-Binding_img115.jpeg)
 
 13. Finally, set the `Anchor` property of the GridGroupingControl to `All`, so that the**it** can be easily sized with the form. This is depicted in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img116.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image116](Data-Binding_images/Data-Binding_img116.jpeg)
 
 
 14. You can group columns at run time by dragging the columns headers of the columns to be grouped to the GroupDropArea of the GridGroupingControl. To display the GroupDropArea of the GridGroupingControl, set the `ShowGroupDropArea` property to “True”, as shown in the following screenshot.
@@ -2642,23 +2642,23 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
 12. Select **DataBase Object** file from listed database files.
     
-    ![](Data-Binding_images/Data-Binding_img117.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image117](Data-Binding_images/Data-Binding_img117.jpeg)
 
 13. Click **Finish**. The columns in the GridGroupingControl get populated, as depicted in the following screenshot:
 
-    ![](Data-Binding_images/Data-Binding_img118.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image118](Data-Binding_images/Data-Binding_img118.jpeg)
 
 14. Finally, set the `Anchor` property of the GridGroupingControl to `All`, so that it can be sized easily with the form. This is depicted in the following screenshot:
 
-    ![](Data-Binding_images/Data-Binding_img119.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image119](Data-Binding_images/Data-Binding_img119.jpeg)
 
 15. The columns can be grouped at run time by dragging the columns headers to the GroupDropArea of the GridGroupingControl. To display this drop panel, set the `ShowGroupDropArea` property to “True”, as shown in the following screenshot:
 
-    ![](Data-Binding_images/Data-Binding_img120.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image120](Data-Binding_images/Data-Binding_img120.jpeg)
 
 16. Run the application to see the GridGroupingControl display the data from the **SQL Server Database,** without having written a single line of code. 
 
-    ![](Data-Binding_images/Data-Binding_img121.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image121](Data-Binding_images/Data-Binding_img121.jpeg)
 
 #### Binding SQL server by using VS 2013
 The steps given below is used to bind the SQL server database with Visual Studio 2013 and .NET 4.5.1. The **Smart** Tags which are available in the **.NET 4.5.1 Designer**can be used to hook into the SQL server database.
@@ -2667,27 +2667,27 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
    In the **Grid Grouping** control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. The Data Source Configuration Wizard dialog box appears.
    
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_74.jpg](Data-Binding_images/Data-Binding_img122.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image122](Data-Binding_images/Data-Binding_img122.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click **Next**.
    
-   ![](Data-Binding_images/Data-Binding_img123.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image123](Data-Binding_images/Data-Binding_img123.jpeg)
 
 3. Then, in the**Choose a Database Model** window, click**Dataset**, and then click **Next**.
 
-   ![](Data-Binding_images/Data-Binding_img124.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image124](Data-Binding_images/Data-Binding_img124.jpeg)
 
 4. In the **Choose Your Data Connection** window, click **New Connection**.
 
-   ![](Data-Binding_images/Data-Binding_img125.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image125](Data-Binding_images/Data-Binding_img125.jpeg)
 
    The **ChooseData Source** dialog box appears.
 
-   ![](Data-Binding_images/Data-Binding_img126.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image126](Data-Binding_images/Data-Binding_img126.jpeg)
 
 5. In the **Change Data Source** dialog box, select the **SQL Server** option, and then click **Continue**. The **Add Connection** dialog box is displayed.
 
-   ![](Data-Binding_images/Data-Binding_img127.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image127](Data-Binding_images/Data-Binding_img127.jpeg)
 
 6. Choose Server Name.
 7. Choose Database Name or Click **Browse** to choose the Data Source: 
@@ -2698,56 +2698,56 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
 8. Select either the Windows Authentication option or the SQL Server Authentication option. If you want to authenticate with SQL server, give your SQL server credentials.   
    
-   ![](Data-Binding_images/Data-Binding_img128.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image128](Data-Binding_images/Data-Binding_img128.jpeg)
 
 9. Click **OK**. The connection string is displayed in the **Data Source Configuration Wizard** dialog box.
    
-   ![](Data-Binding_images/Data-Binding_img129.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image129](Data-Binding_images/Data-Binding_img129.jpeg)
 
 10. Click **Next**.
     
-    ![](Data-Binding_images/Data-Binding_img130.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image130](Data-Binding_images/Data-Binding_img130.jpeg)
 
 11. In the **Choose your Database Objects** window that opens, select the required tables.
 
-     ![](Data-Binding_images/Data-Binding_img131.jpeg)
+     ![WindowsForms GridGrouping Data-Binding Image131](Data-Binding_images/Data-Binding_img131.jpeg)
 
 12. Click **Finish**. The columns in the GridGroupingControl get populated, as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img132.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image132](Data-Binding_images/Data-Binding_img132.jpeg)
 
 13. Finally, set the `Anchor` property of the GridGroupingControl to `All`, so that it can be easily sized with the form as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img133.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image133](Data-Binding_images/Data-Binding_img133.jpeg)
 
 14. The columns can be grouped at run time by dragging columns headers to the **GroupDropArea** of the GridGroupingControl. To display the GroupDropArea of the GridGroupingControl, set the `ShowGroupDropArea` property to `True`, as shown in the following screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img134.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image134](Data-Binding_images/Data-Binding_img134.jpeg)
 
 15. Run the application to view the **SQL Server database** data displayed by the GridGroupingControl. Your form should look similar to the one in the following screenshot.
     
-    ![](Data-Binding_images/Data-Binding_img135.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image135](Data-Binding_images/Data-Binding_img135.jpeg)
 
 #### Binding SQL server by using VS 2015
 The steps given below is used to bind the SQL server database with Visual Studio 2013 and .NET 4.6. The **Smart** Tags which are available in the **.NET 4.6 Designer**can be used to hook into the SQL server database.
 
 1. From the **Syncfusion** tab in the **Toolbox**, drag a **Grid Grouping** control onto your form. In the **Grid Grouping** control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. The Data Source Configuration Wizard dialog box appears.
    
-   ![](Data-Binding_images/Data-Binding_img136.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image136](Data-Binding_images/Data-Binding_img136.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click **Next**.
    
-   ![](Data-Binding_images/Data-Binding_img137.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image137](Data-Binding_images/Data-Binding_img137.jpeg)
 
 3. Then, in the**Choose a Database Model** window, click**Dataset**, and then click **Next**.
    
-   ![](Data-Binding_images/Data-Binding_img138.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image138](Data-Binding_images/Data-Binding_img138.jpeg)
 
 4. In the **Choose Your Data Connection** window, click **New Connection**.
 
 5. In the **Change Data Source** dialog box, select the **SQL Server** option, and then click **Continue**. The **Add Connection** dialog box is displayed.
 
-   ![](Data-Binding_images/Data-Binding_img139.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image139](Data-Binding_images/Data-Binding_img139.jpeg)
 
 6. Choose Server Name.
 7. Choose Database Name or Click **Browse** to choose the Data Source: 
@@ -2756,31 +2756,31 @@ The steps given below is used to bind the SQL server database with Visual Studio
    This path varies according to your installation location.
 8. Select either the Windows Authentication option or the SQL Server Authentication option. If you want to authenticate with SQL server, give your SQL server credentials.   
 
-   ![](Data-Binding_images/Data-Binding_img140.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image140](Data-Binding_images/Data-Binding_img140.jpeg)
 
 9. Click **OK**. The connection string is displayed in the **Data Source Configuration Wizard** dialog box.
    
-   ![](Data-Binding_images/Data-Binding_img141.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image141](Data-Binding_images/Data-Binding_img141.jpeg)
 
 10. Click **Next**. In the**Choose your Database Objects** window that opens, select the required tables.
     
-    ![](Data-Binding_images/Data-Binding_img142.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image142](Data-Binding_images/Data-Binding_img142.jpeg)
 
 11. Click **Finish**. The columns in the GridGroupingControl get populated, as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img143.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image143](Data-Binding_images/Data-Binding_img143.jpeg)
 
 12. Finally, set the `Anchor` property of the GridGroupingControl to `All`, so that it can be easily sized with the form as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img144.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image144](Data-Binding_images/Data-Binding_img144.jpeg)
 
 13. The columns can be grouped at run time by dragging columns headers to the **GroupDropArea** of the GridGroupingControl. To display the GroupDropArea of the GridGroupingControl, set the `ShowGroupDropArea` property to `True`, as shown in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img145.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image145](Data-Binding_images/Data-Binding_img145.jpeg)
 
 14. Run the application to view the **SQL Server database** data displayed by the GridGroupingControl. Your form should look similar to the one in the following screenshot.
 
-    ![](Data-Binding_images/Data-Binding_img146.jpeg)
+    ![WindowsForms GridGrouping Data-Binding Image146](Data-Binding_images/Data-Binding_img146.jpeg)
 
 ## Binding at Runtime 
 This section explains about the programmatic binding of GridGroupingControl to the MDB file and a manual data source. 
@@ -2869,7 +2869,7 @@ Me.Controls.Add(Me.gridGroupingControl1)
 
 The GridGroupingControl will be populated with the table specified in the dataset as of follows,
 
-![](Data-Binding_images/Data-Binding_img147.jpeg)
+![WindowsForms GridGrouping Data-Binding Image147](Data-Binding_images/Data-Binding_img147.jpeg)
 
 ### Binding Manual Data Source
 The `DataTable` can be created manually and bounded to the GridGroupingControl. Once the `DataTable` object is populated, it can be bounded to grid by using the `DataSource` property.
@@ -2996,5 +2996,5 @@ Me.Controls.Add(Me.gridGroupingControl1)
 
 The grid will be populated with the data present in the data table as of follows,
 
-![](Data-Binding_images/Data-Binding_img148.jpeg)
+![WindowsForms GridGrouping Data-Binding Image148](Data-Binding_images/Data-Binding_img148.jpeg)
 

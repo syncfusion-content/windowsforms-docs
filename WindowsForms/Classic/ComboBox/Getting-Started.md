@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started in WinForms ComboBoxAdv Control | Syncfusion
+description: Getting started in WinForms ComboBoxAdv Control and this section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in WinForms ComboBoxAdv
 
 
 This section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.
@@ -23,7 +23,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 
 
 
-![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv in toolbox.png](Overview_images/Overview_img296.png) 
+![Windows Forms ComboBoxAdv Getting-Started Image296](Overview_images/Overview_img296.png) 
 
 
 
@@ -33,7 +33,7 @@ The most commonly used settings of the ComboBoxAdv control can be configured eit
 
 
 
-![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv smart tag.png](Overview_images/Overview_img297.png) 
+![Windows Forms ComboBoxAdv Getting-Started Image297](Overview_images/Overview_img297.png) 
 
 
 
@@ -130,5 +130,5 @@ Me.Controls.Add(Me.comboBoxAdv1)
 {% endtabs %}
 
 
-![C:/Users/ashwini/Desktop/ComboBoxAdv image/ComboBoxAdv items.png](Overview_images/Overview_img298.png)
+![Windows Forms ComboBoxAdv Getting-Started Image298](Overview_images/Overview_img298.png)
 

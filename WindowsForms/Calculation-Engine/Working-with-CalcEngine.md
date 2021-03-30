@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with CalcEngine | Calculate | Syncfusion
+title: Working with CalcEngine in WinForms Calculation Engine | Syncfusion
 description: This section describs about properties and methods maintained in CalcEngine for syncfusion essential windowsforms
 platform: windowsforms
 control: Calculate

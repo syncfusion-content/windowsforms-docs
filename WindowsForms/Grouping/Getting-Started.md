@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: Getting started with WindowsForms Grouping and this section illustrates the step-by-step procedure to create the following platform applications.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Grouping
 
 This section will show you how easy it is to get started using Essential Grouping. It will give you a basic introduction to the concepts you need to know before getting started with the product and some tips and ideas on how to implement Grouping into your projects to improve customization and increase efficiency. It shows how to create an IList data source and use it with Grouping. The datasource is an ArrayList of custom objects. As part of this lesson, you will see how to iterate through the data in the GroupingEngine.
 
@@ -21,7 +21,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![WindowsForms Grouping Getting-Started Image1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -41,7 +41,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![WindowsForms Grouping Getting-Started Image2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -55,7 +55,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![WindowsForms Grouping Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer Windows / WPF topic for detailed info.
