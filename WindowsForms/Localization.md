@@ -364,52 +364,46 @@ N> Consider you are using `SfDataGrid` control in your application. Then you nee
 
 ![Windows Forms datagrid localized .resx file](Localization_images/winforms-localized-resx-file.png)
 
-![Windows Form datagrid localized](Localization_Images/DataGrid.png)
-
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/winforms-datagrid-localization).
 
 ### Localize when resource file is present in different namespaces or assemblies
 
-The below table represents that how the resource file need to set if we using our syncfusion controls from different assembly or namespace,
+The below snippet represents that how the resource file need to set if we using our syncfusion controls from Tools Windows assembly or namespace,
 
-<table>
-<tr>
-<th>
-Control Namespace
-</th>
-<th>
-Code Snippet
-</th>
-</tr>
-<tr>
-<td>
-Tools Windows
-</td>
-<td>
-ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
-</td>
-</tr>
-<tr>
-<td>
-Shared Base
-</td>
-<td>
-SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
-</td>
-</tr>
-<tr>
-<td>
-Datagrid Winforms
-</td>
-<td>
-DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
-</td>
-</tr>
-</table>
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
+        ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
+        InitializeComponent();
+    }
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Partial Public Class Form1
+	Inherits Form
+	Public Sub New()
+		Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de-DE")
+          ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace")
+		InitializeComponent()
+	End Sub
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 And below steps helps you to show how localization can be done at different assemblies or namespaces,
 
-1) Create a [.resx files](https://help.syncfusion.com/windowsforms/localization?cs-save-lang=1&cs-lang=csharp#creating-resx-files).
+1) Create a [.resx files](https://help.syncfusion.com/windowsforms/localization#creating-resx-files).
 
 2) And add the below code in windows form constructor.
 
