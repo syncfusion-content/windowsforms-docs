@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Button-Parameters | WindowsForms | Syncfusion
-description: Button Parameters
+description: Learn about various button parameters, Right to Left, Details view and Resizing support in Windows Forms MessageBoxAdv
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Parameters
+# Button Parameters in Windows Forms MessageBox (MessageBoxAdv)
 
 [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function helps to display a MessageBoxAdv. This section explains regarding the parameters available in [Show](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_Show_System_String_) function.
 
@@ -303,3 +303,26 @@ Eg: Collapsed view
 
 ![Collapsed view](MessageBoxAdv_images/MessageBoxAdv_img19.jpg)
 
+## Resizing support
+
+MessageBoxAdv allows you to adjust the size of the control at run time by dragging the gripper at bottom right. It can be achieved by using the [CanResize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html#Syncfusion_Windows_Forms_MessageBoxAdv_CanResize) property.Its default value is false.
+
+{% tabs %}
+
+{% highlight C# %}
+
+MessageBoxAdv.CanResize = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+MessageBoxAdv.CanResize = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Resizing support](MessageBoxAdv_images/MessageBoxAdv_img34.png)
+
+You can download the sample from [here](https://github.com/SyncfusionExamples/Messageboxadv-resize-support-in-Winforms)
