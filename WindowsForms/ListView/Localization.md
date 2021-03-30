@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Localization in WindowsForms SfListView       
+# Localization in Windows Forms SfListView       
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 ## Localize at sample level
