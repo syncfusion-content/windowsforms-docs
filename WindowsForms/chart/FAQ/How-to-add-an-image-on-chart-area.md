@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add a picture to the chart area | Windows Forms | Chart | Syncfusion
-description: You can enhance a chart by inserting a picture (such as a business logo) anywhere in the chart area.
+description: You can enhance a chart by inserting a picture/image (such as a business logo) anywhere in the chart area.
 platform: windowsforms
 control: chart
 documentation: ug
@@ -57,8 +57,8 @@ ChartSeries chartSeries;
     chartSeries.Points.Add(new ChartPoint(2008, 30));
     this.chartControl.Series.Add(chartSeries);
     this.Controls.Add(this.chartControl);
-    }
     ...
+    
     private void ChartControl_Paint(object sender, PaintEventArgs e)
     {
     var position = this.chartControl.ChartArea.GetPointByValue(this.chartControl.Series[0].Points[5]);
@@ -66,6 +66,7 @@ ChartSeries chartSeries;
      dockControl.Location = new Point(position.X-(dockControl.Height-20),position.Y - dockControl.Height);
     }
     ...
+    
 {% endhighlight %}
 
 {% highlight vb %}
@@ -128,6 +129,7 @@ ChartSeries chartSeries;
             xPosition = Me.chartControl.ChartArea.GetPointByValue(Me.chartControl.Series(0).Points(5))
             dockControl.Location = New Point(xPosition.X - 20, xPosition.Y - dockControl.Height)
         End Sub
+        
 {% endhighlight %}
 
 {% endtabs %}	
