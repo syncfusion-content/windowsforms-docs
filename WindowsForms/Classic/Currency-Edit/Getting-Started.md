@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with WinForms ContextMenuStrip | Syncfusion
-description: This section describes how to add currency edit control into application.
+description: This section describes how to add currency edit control into application and getting Started with WinForms ContextMenuStrip.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinForms ContextMenuStrip
 
 ## Assembly deployment
 

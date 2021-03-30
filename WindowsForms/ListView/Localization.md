@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization
-description: This section explains about the Localization support in SfListView.
+title: Localization in WindowsForms SfListView Control | Syncfusion
+description: This section explains about the Localization support in SfListView and explains localization in sfListView control in WindowsForms.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Localization           
+# Localization in WindowsForms SfListView       
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 ## Localize at sample level
@@ -23,15 +23,15 @@ To localize the SfListView based on the  [CurrentUICulture](https://msdn.microso
 
 4) In Add New Item wizard, select the Resource File option and name the filename as Syncfusion.SfListView.WinForms.<culture name>.resx. For example, give name as Syncfusion.SfListView.WinForms.de-DE.resx for German culture.The culture name that indicates the name of language and country.
 
-![](Localization_images/Localization_img2.png)	 
+![WindowsForms SfListView Localization Image2](Localization_images/Localization_img2.png)	 
 
 5) Now, select Add option to add the resource file in Resources folder.
 
-![](Localization_images/Localization_img3.png)
+![WindowsForms SfListView Localization Image3](Localization_images/Localization_img3.png)
 
 6) Add the Name/Value pair in Resource Designer of Syncfusion. SfListView.WinForms.de-DE.resx file and change its corresponding value to the corresponding culture.
  
- ![](Localization_images/Localization_img4.png)
+ ![WindowsForms SfListView Localization Image4](Localization_images/Localization_img4.png)
  
 7) Now, set the CurrentCulture of the Application before the InitializeComponent method and run the sample.
 
@@ -53,21 +53,21 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
  
-![](Localization_images/Localization_img5.png)
+![WindowsForms SfListView Localization Image5](Localization_images/Localization_img5.png)
  
 ## Editing default resource file
 The default resource file can be edited by adding it to Resources folder of the application where the SfListView reads the static texts here.
 The default resource file can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
-![](Localization_images/Localization_img6.png)
+![WindowsForms SfListView Localization Image6](Localization_images/Localization_img6.png)
 
 Now, change the Name and Value pair in Resource Designer of Syncfusion.SfListView.WinForms.resx file.
 
-![](Localization_images/Localization_img7.png)
+![WindowsForms SfListView Localization Image7](Localization_images/Localization_img7.png)
 
 Run the sample.
 
-![](Localization_images/Localization_img8.png) 
+![WindowsForms SfListView Localization Image8](Localization_images/Localization_img8.png) 
  
 ## Localize resource file with different assembly or namespace
 By default, the SfListView tries to read the resource file from executing assembly and its default namespace by using the `Assembly.GetExecuteAssembly` method. When the resource file is located at different assembly or namespace, it can be set to the SfListView by using the `SR.SetResources` method.
@@ -104,4 +104,4 @@ sfListView1.RightToLeft = RightToLeft.Yes
 {% endhighlight %}
 {% endtabs %}
 
-![](Localization_images/Localization_img9.png)
+![WindowsForms SfListView Localization Image9](Localization_images/Localization_img9.png)

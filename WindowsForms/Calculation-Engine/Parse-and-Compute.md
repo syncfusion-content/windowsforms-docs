@@ -7,7 +7,7 @@ control: Calculate
 documentation: ug
 ---
 
-# Parse and Compute
+# Parse and Compute in WinForms Calculation Engine
 
  This section describes about the parse and compute functions in Essential Calculate.
 

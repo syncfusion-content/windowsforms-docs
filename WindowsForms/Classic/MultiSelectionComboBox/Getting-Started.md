@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with WinForms MultiColumn TreeView | Syncfusion
-description: getting started
+description: Getting started with WinForms MultiColumn TreeView and explain how to design a MultiSelectionComboBox control in a Windows Forms Application.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinForms MultiColumn TreeView
 
 
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
@@ -26,7 +26,7 @@ This section briefly describes you on how to design a MultiSelectionComboBox con
 
 The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
 
-![](Overview_images/Overview_img336.png)
+![Windows Forms Editors Package Getting-Started Image336](Overview_images/Overview_img336.png)
 
 
 To add MultiSelectionComboBox control to a Windows Forms application through code behind,

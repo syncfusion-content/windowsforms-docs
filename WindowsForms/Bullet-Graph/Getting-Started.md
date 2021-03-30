@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Bullet Graph | Syncfusion
-description: getting started
+description: Getting started with Windows Forms Bullet Graph and explain how to create a simple Bullet Graph control in windowsforms.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Bullet Graph
 
 The Bullet Graph is composed of quantitative scale, qualitative ranges, featured measure and Comparative Measure. The main purpose of the Bullet Graph is described by making use of the Caption. The quantitative scale of the Bullet Graph includes ticks and labels. The view of the Bullet Graph is changed by setting the Orientation property.
 
@@ -83,7 +83,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 4. Run the application to view the Bullet Graph.
 
-   ![D:/Help UGs/BulletGraph/WF/BG_Elements.png](Getting-Started_images/Getting-Started_img2.png)
+   ![Windows Forms BulletGraph Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
 
 ## Create the Bullet Graph using Syncfusion Reference Manager
 
@@ -101,7 +101,7 @@ Namespace: Syncfusion.Windows.Forms.BulletGraph
 
 3. The Syncfusion Reference Manager Wizard is opened as shown in the following screenshot.
 
-   ![D:/Help UGs/BulletGraph/WF/Ref_Manager.bmp](Getting-Started_images/Getting-Started_img5.png)
+   ![Windows Forms BulletGraph Getting-Started Image5](Getting-Started_images/Getting-Started_img5.png)
 
 4. Search for Bullet Graph using SearchBox and select Bullet Graph Control.  Click on Done to add selected Bullet Graph Control.
 

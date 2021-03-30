@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview of Windows Forms ComboBoxAutoComplete control
 
 The ComboBoxAutoComplete control combines a combo box control with an AutoComplete control to provide autocompletion for that instance of the combo box. 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started with WinForms ComboBoxAutoComplete | Syncfusion
-description: Creating-ComboBoxAutoComplete
+description: Creating-ComboBoxAutoComplete and illustrates the usage of the ComboBoxAutoComplete control without any external datasource.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with WinForms ComboBoxAutoComplete
 
 
 Implementing a simple ComboBoxAutoComplete can be done in the following ways.
