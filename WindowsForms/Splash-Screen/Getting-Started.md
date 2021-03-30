@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Splash Screen | Syncfusion
+title: Getting Started with Windows Forms Splash Screen | Syncfusion
 description: This section explains about getting started with Syncfusion Windows Forms Splash Screen control and more details. 
 platform: WindowsForms
 control: SplashControl

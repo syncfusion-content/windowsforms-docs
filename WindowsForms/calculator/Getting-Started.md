@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in WinForms Calculator control | Syncfusion
+title: Getting Started in Windows Forms Calculator control | Syncfusion
 description: Learn here about getting started with the Syncfusion Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator

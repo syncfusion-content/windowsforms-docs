@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms FontComboBox | Syncfusion
+title: Getting Started with Windows Forms FontComboBox | Syncfusion
 description: Learn here about how to add the syncfusion Windows Forms FontComboBox control and its functionalities.
 platform: WindowsForms
 control: FontComboBox

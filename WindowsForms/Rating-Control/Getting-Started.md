@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Rating control | Syncfusion
+title: Getting Started with Windows Forms Rating control | Syncfusion
 description: This section explains about the getting started with Syncfusion Windows Forms Rating Control and more details.
 platform: WindowsForms
 control: Rating  

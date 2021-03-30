@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syntax Highlighting in WinForms Syntax Editor | Syncfusion
+title: Syntax Highlighting in Windows Forms Syntax Editor | Syncfusion
 description: This section provide details about syntax highlighting for programming, scripting and markup languages in EditControl
 platform: WindowsForms
 control: SyntaxEditor

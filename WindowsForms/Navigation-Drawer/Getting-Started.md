@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Navigation Drawer | Syncfusion
+title: Getting Started with Windows Forms Navigation Drawer | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Navigation Drawer control and more details.
 platform: WindowsForms
 control: NavigationDrawer

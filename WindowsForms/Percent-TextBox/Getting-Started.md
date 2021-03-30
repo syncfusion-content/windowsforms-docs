@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Percent TextBox | Syncfusion
+title: Getting Started with Windows Forms Percent TextBox | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: PercentTextBox

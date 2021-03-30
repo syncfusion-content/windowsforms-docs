@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms Folder Browser | Syncfusion
+title: Getting Started with Windows Forms Folder Browser | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Folder Browser control and more details.
 platform: WindowsForms
 control: Tools

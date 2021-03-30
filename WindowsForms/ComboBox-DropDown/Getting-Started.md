@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinForms ComboBox DropDown | Syncfusion
+title: Getting Started in Windows Forms ComboBox DropDown | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more details.
 platform: WindowsForms
 control: Editors Package
