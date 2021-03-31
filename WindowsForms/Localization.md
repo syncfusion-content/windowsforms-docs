@@ -373,7 +373,7 @@ The below table represents that how the resource file need to set if we using ou
 <table>
 <tr>
 <th>
-Control Namespace
+Control Assembly
 </th>
 <th>
 Code Snippet
@@ -417,6 +417,14 @@ SmithChart WinForms
 </td>
 <td>
 <p>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+<tr>
+<td>
+Grid Windows
+</td>
+<td>
+<p>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
 </td>
 </tr>
 </table>
