@@ -384,9 +384,7 @@ Code Snippet
 Syncfusion.Diagram.Windows
 </td>
 <td>
-<body contenteditable spellcheck="false">
 DiagramLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
-</body>
 </td>
 </tr>
 <tr>
