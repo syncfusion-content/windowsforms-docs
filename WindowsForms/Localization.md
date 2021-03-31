@@ -384,7 +384,9 @@ Code Snippet
 Syncfusion.Diagram.Windows
 </td>
 <td>
-<b>DiagramLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+<body spellcheck="false">
+DiagramLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
+</body>
 </td>
 </tr>
 <tr>
@@ -392,7 +394,7 @@ Syncfusion.Diagram.Windows
 Syncfusion.Edit.Windows
 </td>
 <td>
-<b>EditLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+EditLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -400,7 +402,7 @@ Syncfusion.Edit.Windows
 Syncfusion.Grid.Windows
 </td>
 <td>
-<b>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -408,7 +410,7 @@ Syncfusion.Grid.Windows
 Syncfusion.Grid.Grouping.Windows
 </td>
 <td>
-<b>GridGroupingLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+GridGroupingLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -416,7 +418,7 @@ Syncfusion.Grid.Grouping.Windows
 Syncfusion.HTMLUI.Windows
 </td>
 <td>
-<b>HtmlUILocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+HtmlUILocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -424,7 +426,7 @@ Syncfusion.HTMLUI.Windows
 Syncfusion.PdfViewer.Windows
 </td>
 <td>
-<b>PdfViewerLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+PdfViewerLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -432,7 +434,7 @@ Syncfusion.PdfViewer.Windows
 Syncfusion.PivotAnalysis.Windows.
 </td>
 <td>
-<b>PivotAnalysisLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+PivotAnalysisLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -440,7 +442,7 @@ Syncfusion.PivotAnalysis.Windows.
 Syncfusion.PivotChart.Windows
 </td>
 <td>
-<b>PivotChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+PivotChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -448,7 +450,7 @@ Syncfusion.PivotChart.Windows
 Syncfusion.SfDataGrid.WinForms
 </td>
 <td>
-<b>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -456,7 +458,7 @@ Syncfusion.SfDataGrid.WinForms
 Syncfusion.SfListView.WinForms
 </td>
 <td>
-<b>ListViewLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+ListViewLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -464,7 +466,7 @@ Syncfusion.SfListView.WinForms
 Syncfusion.SfSmithChart.WinForms
 </td>
 <td>
-<b>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -472,7 +474,7 @@ Syncfusion.SfSmithChart.WinForms
 Syncfusion.Spreadsheet.Windows
 </td>
 <td>
-<b>SpreadsheetLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+SpreadsheetLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -480,7 +482,7 @@ Syncfusion.Spreadsheet.Windows
 Syncfusion.Shared.Base
 </td>
 <td>
-<b>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 <tr>
@@ -488,11 +490,10 @@ Syncfusion.Shared.Base
 Syncfusion.Tools.Windows
 </td>
 <td>
-<b>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
 </td>
 </tr>
 </table>
-
 
 And below steps helps you to show how localization can be done at different assemblies or namespaces,
 
