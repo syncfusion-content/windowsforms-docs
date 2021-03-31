@@ -254,7 +254,7 @@ For **Shared.Base**
 
 {% highlight Console %}
 
-al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:1.1.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
+al /t:lib /culture:de-DE /out:Syncfusion.Shared.Base.resources.dll /v:2.0.0.0 /delay+ /keyf:sf.publicsnk /embed: Syncfusion.Windows.Forms.Localization.SR.de-DE
 
 {% endhighlight %}
 
@@ -368,38 +368,59 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/winforms-da
 
 ### Localize when resource file is present in different namespaces or assemblies
 
-The below snippet represents that how the resource file need to set if we using our syncfusion controls from Tools Windows assembly or namespace,
+The below table represents that how the resource file need to set if we using our syncfusion controls from different assembly or namespace,
 
-{% tabs %}
+<table>
+<tr>
+<th>
+Control Namespace
+</th>
+<th>
+Code Snippet
+</th>
+</tr>
+<tr>
+<td>
+Tools Windows
+</td>
+<td>
+<p>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+<tr>
+<td>
+Shared Base
+</td>
+<td>
+<p>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+<tr>
+<td>
+Datagrid WinForms
+</td>
+<td>
+<p>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+<tr>
+<td>
+ListView WinForms
+</td>
+<td>
+<p>ListViewLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+<tr>
+<td>
+SmithChart WinForms
+</td>
+<td>
+<p>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+</td>
+</tr>
+</table>
 
-{% highlight C# %}
-
-public partial class Form1 : Form
-{
-    public Form1()
-    {
-        Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
-        ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");
-        InitializeComponent();
-    }
-}
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Partial Public Class Form1
-	Inherits Form
-	Public Sub New()
-		Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("de-DE")
-          ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace")
-		InitializeComponent()
-	End Sub
-End Class
-
-{% endhighlight %}
-
-{% endtabs %}
 
 And below steps helps you to show how localization can be done at different assemblies or namespaces,
 
