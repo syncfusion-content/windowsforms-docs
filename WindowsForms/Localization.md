@@ -381,50 +381,114 @@ Code Snippet
 </tr>
 <tr>
 <td>
-Tools Windows
+Syncfusion.Diagram.Windows
 </td>
 <td>
-<body>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
-</td>
-</tr>
-<tr>
-<td>
-Shared Base
-</td>
-<td>
-<body>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
+<b>DiagramLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
 </td>
 </tr>
 <tr>
 <td>
-Datagrid WinForms
+Syncfusion.Edit.Windows
 </td>
 <td>
-<body>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
-</td>
-</tr>
-<tr>
-<td>
-ListView WinForms
-</td>
-<td>
-<p>ListViewLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<b>EditLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
 </td>
 </tr>
 <tr>
 <td>
-SmithChart WinForms
+Syncfusion.Grid.Windows
 </td>
 <td>
-<body>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
+<b>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
 </td>
 </tr>
 <tr>
 <td>
-Grid Windows
+Syncfusion.Grid.Grouping.Windows
 </td>
 <td>
-<body>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
+<b>GridGroupingLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.HTMLUI.Windows
+</td>
+<td>
+<b>HtmlUILocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.PdfViewer.Windows
+</td>
+<td>
+<b>PdfViewerLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.PivotAnalysis.Windows.
+</td>
+<td>
+<b>PivotAnalysisLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.PivotChart.Windows
+</td>
+<td>
+<b>PivotChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfDataGrid.WinForms
+</td>
+<td>
+<b>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfListView.WinForms
+</td>
+<td>
+<b>ListViewLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfSmithChart.WinForms
+</td>
+<td>
+<b>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Spreadsheet.Windows
+</td>
+<td>
+<b>SpreadsheetLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Shared.Base
+</td>
+<td>
+<b>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Tools.Windows
+</td>
+<td>
+<b>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</b>
 </td>
 </tr>
 </table>
