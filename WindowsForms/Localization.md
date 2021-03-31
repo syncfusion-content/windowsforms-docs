@@ -384,7 +384,7 @@ Code Snippet
 Tools Windows
 </td>
 <td>
-<p>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<body>ToolsLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
 </td>
 </tr>
 <tr>
@@ -392,7 +392,7 @@ Tools Windows
 Shared Base
 </td>
 <td>
-<p>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<body>SharedLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
 </td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ Shared Base
 Datagrid WinForms
 </td>
 <td>
-<p>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<body>DataGridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
 </td>
 </tr>
 <tr>
@@ -416,7 +416,7 @@ ListView WinForms
 SmithChart WinForms
 </td>
 <td>
-<p>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<body>SmithChartLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
 </td>
 </tr>
 <tr>
@@ -424,7 +424,7 @@ SmithChart WinForms
 Grid Windows
 </td>
 <td>
-<p>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</p>
+<body>GridLocalizationResourceAccessor.Instance.SetResources(assembly, "namespace");</body>
 </td>
 </tr>
 </table>
