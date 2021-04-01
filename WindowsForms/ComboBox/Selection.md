@@ -7,7 +7,7 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Selection
+# Selection in SfComboBox
 
 The SfComboBox allows you to select single or multiple items in the drop-down list. The selection mode can be set by using the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property. 
 
@@ -268,3 +268,95 @@ Private Sub SfComboBox1_ToolTipOpening(ByVal sender As Object, ByVal e As ComboB
 End Sub
 {% endhighlight %}
 {% endtabs %}
+
+
+## Clear selection
+
+The `SfComboBox` allows to show or hide the clear button by using the `ShowClearButton` property. When pressing the clear button it will clear the selected items and editor portion.
+
+N> This clear button will be visible only when the selection or editing takes place inside the SfComboBox.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        InitializeComponent();
+        Syncfusion.WinForms.ListView.SfComboBox sfComboBox1 = new Syncfusion.WinForms.ListView.SfComboBox();
+        sfComboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+        sfComboBox1.Location = new Point(300, 180);
+        sfComboBox1.Size = new Size(120, 30);
+        sfComboBox1.ShowClearButton = true;
+        sfComboBox1.ThemeName = "Office2016Colorful";
+
+        List<string> usStates = new List<string>();
+        usStates.Add("Alaska");
+        usStates.Add("Arizona");
+        usStates.Add("Arkansas");
+        usStates.Add("California");
+        usStates.Add("Colorado");
+        usStates.Add("Connecticut");
+        usStates.Add("Delaware");
+        usStates.Add("Florida");
+        usStates.Add("Georgia");
+        sfComboBox1.DataSource = usStates;
+
+        this.Controls.Add(sfComboBox1);
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ClearButton image](Selection_images/Selection_img9.png)
+
+### Clear button appearance
+
+Appearance of the clear button can be customized by setting the `ClearButtonStyle` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        InitializeComponent();
+        Syncfusion.WinForms.ListView.SfComboBox sfComboBox1 = new Syncfusion.WinForms.ListView.SfComboBox();
+        sfComboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+        sfComboBox1.Location = new Point(300, 180);
+        sfComboBox1.Size = new Size(120, 30);
+        sfComboBox1.ShowClearButton = true;
+        sfComboBox1.ThemeName = "Office2016Colorful";
+
+        List<string> usStates = new List<string>();
+        usStates.Add("Alaska");
+        usStates.Add("Arizona");
+        usStates.Add("Arkansas");
+        usStates.Add("California");
+        usStates.Add("Colorado");
+        usStates.Add("Connecticut");
+        usStates.Add("Delaware");
+        usStates.Add("Florida");
+        usStates.Add("Georgia");
+        sfComboBox1.DataSource = usStates;
+
+        sfComboBox1.Style.ClearButtonStyle.BackColor = Color.Yellow;
+        sfComboBox1.Style.ClearButtonStyle.ForeColor = Color.Red;
+        sfComboBox1.Style.ClearButtonStyle.HoverBackColor = Color.OrangeRed;
+        sfComboBox1.Style.ClearButtonStyle.HoverForeColor = Color.Yellow;
+
+        this.Controls.Add(sfComboBox1);
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ClearButton with appearance](Selection_images/Selection_img10.png)

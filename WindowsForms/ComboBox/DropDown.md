@@ -79,6 +79,47 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing drop-down position
+
+The `SfComboBox` allows to change the position of the dropdown list by using the `DropDownPosition` property. The default value is `PopupRelativeAlignment.Center`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        InitializeComponent();
+        Syncfusion.WinForms.ListView.SfComboBox sfComboBox1 = new Syncfusion.WinForms.ListView.SfComboBox();
+        sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.RightTop;
+        sfComboBox1.Location = new Point(300, 180);
+        sfComboBox1.Size = new Size(120, 30);
+        sfComboBox1.ThemeName = "Office2016Colorful";
+
+        List<string> usStates = new List<string>();
+        usStates.Add("Alaska");
+        usStates.Add("Arizona");
+        usStates.Add("Arkansas");
+        usStates.Add("California");
+        usStates.Add("Colorado");
+        usStates.Add("Connecticut");
+        usStates.Add("Delaware");
+        usStates.Add("Florida");
+        usStates.Add("Georgia");
+        sfComboBox1.DataSource = usStates;
+
+        this.Controls.Add(sfComboBox1);
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown with position](DropDown_images/DropDown_img4.png)
+
 ## Load custom control in drop-down
 
 SfComboBox allows you to show the header and footer items in drop-down by enabling the [SfComboBox.DropDownListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfComboBox.DropDownListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. This also allows you to load a custom control using the [SfComboBox.DropDownListView.HeaderControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_HeaderControl) and [SfComboBox.DropDownListView.FooterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_FooterControl) properties.

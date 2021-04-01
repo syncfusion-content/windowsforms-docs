@@ -229,7 +229,7 @@ It defines the style for the Nodes. BaseStylePairs property is a collection prop
 
 Apart from the Standard style, we can also create custom Base styles using the following steps in Base Styles Collection Editor 
 
-1. Open the Base Style Collection Editor by click the BaseStyles property in property window.
+1. Open the Base Style Collection Editor by clicking the BaseStyles property in property window.
 
 2. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
 
