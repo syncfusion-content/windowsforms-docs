@@ -36,23 +36,23 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 *	Office 2016 Style
 
-![Office 2016 style](Appearance_Images/Appearance_img1.jpg)
+![WindowsForms Ribbon Office 2016 style](Appearance_Images/WindowsForms-Ribbon-Office-2016-style.jpg)
 
 *	Touch Style
 
-![Touch style](Appearance_Images/Appearance_img2.jpg)
+![WindowsForms Ribbon Touch style](Appearance_Images/WindowsForms-Ribbon-Touch-style.jpg)
 
 *	Office 2013 Style
 
-![Office 2013 Style](Appearance_Images/Appearance_img3.jpg)
+![WindowsForms Ribbon Office 2013 Style](Appearance_Images/WindowsForms-Ribbon-Office-2013-Style.jpg)
 
 *	Office 2010 Style
 
-![Office 2010 Style](Appearance_Images/Appearance_img4.jpg)
+![WindowsForms Ribbon Office 2010 Style](Appearance_Images/WindowsForms-Ribbon-Office-2010-Style.jpg)
 
 *	Office 2007 Style
 
-![Office 2007 Style](Appearance_Images/Appearance_img5.jpg)
+![WindowsForms Ribbon Office 2007 Style](Appearance_Images/WindowsForms-Ribbon-Office-2007-Style.jpg)
 
 ## Style through SkinManager
 
@@ -99,7 +99,7 @@ The RibbonControlAdv includes new color schemes as available in the Office 2016 
 *	DarkGray
 *	Black
 
-![Various Office 2016 Color Schemes](Appearance_Images/Appearance_img6.jpg)
+![WindowsForms Ribbon Various Office 2016 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2016-Color-Schemes.jpg)
 
 The following code sample illustrates how to set the Colorful theme for the Office 2016 style RibbonControlAdv.
 
@@ -131,7 +131,7 @@ Office 2013 theme now supports three color schemes:
 *	DarkGray
 *	Managed
 
-![Various Office 2013 Color Schemes](Appearance_Images/Appearance_img7.jpg)
+![WindowsForms Ribbon Various Office 2013 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2013-Color-Schemes.jpg)
 
 The following code sample illustrates how to set the scheme for the Office 2013 style RibbonControlAdv.
 
@@ -164,7 +164,7 @@ The Ribbon Control Adv has come up with the same visual style of Office 2007. Th
 
 It can be set through the `OfficeColorScheme` property of the RibbonControlAdv class.
 
-![Various Office 2007 Color Schemes](Appearance_Images/Appearance_img8.jpg)
+![WindowsForms Ribbon Various Office 2007 Color Schemes](Appearance_Images/WindowsForms-Ribbon-Various-Office-2007-Color-Schemes.jpg)
 
 {% tabs %}
 
@@ -211,7 +211,7 @@ Office12ColorTable.ApplyManagedColors(Me, Color.Red)
 
 {% endtabs %}
 
-![Custom Color Schemes](Appearance_Images/Appearance_img9.jpg)
+![WindowsForms Ribbon Custom Color Schemes](Appearance_Images/WindowsForms-Ribbon-Custom-Color-Schemes.jpg)
 
 ## Color Table
 
@@ -223,11 +223,11 @@ RibbonControlAdv can now be fully customized in Office2016 style under Colorful 
 
 In the property window of the Ribbon, click the Office2016ColorTable property. The following window will be shown
 
-![Office 2016 Color Table Editor](Appearance_Images/Appearance_img10.jpg)
+![WindowsForms Ribbon Office 2016 Color Table Editor](Appearance_Images/WindowsForms-Ribbon-Office-2016-Color-Table-Editor.jpg)
 
 Click Add button to customize the RibbonControlAdv with the Office2016ColorTable property.
 
-![Adding Office 2016 Color Table](Appearance_Images/Appearance_img11.jpg)
+![WindowsForms Ribbon Adding Office 2016 Color Table](Appearance_Images/WindowsForms-Ribbon-Adding-Office-2016-Color-Table.jpg)
 
 To achieve the above customization through code behind
 
@@ -510,7 +510,7 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
 {% endtabs %}
 
-![Ribbon customized wth Office2016ColorTable](Appearance_Images/Appearance_img12.jpg)
+![WindowsForms Ribbon customized with Office2016ColorTable](Appearance_Images/WindowsForms-Ribbon-customized-with-Office2016ColorTable.jpg)
 
 **Offcie2013 Style Color Table**
 
@@ -703,7 +703,7 @@ Dim color As Office2013ColorTable = New Office2013ColorTable()
 
 {% endtabs %}
 
-![Ribbon customized wth Office2013ColorTable](Appearance_Images/Appearance_img13.jpg)
+![WindowsForms Ribbon customized with Office2013ColorTable](Appearance_Images/WindowsForms-Ribbon-customized-with-Office2013ColorTable.jpg)
 
 **Touch Style Color Table**
 
@@ -1037,7 +1037,7 @@ this.ribbonControlAdv1.ApplyTouchStyleColorTable(_touchColorTable);
 
 {% endtabs %}
 
-![Ribbon customized wth TouchStyleColorTable](Appearance_Images/Appearance_img14.jpg)
+![WindowsForms Ribbon customized with TouchStyleColorTable](Appearance_Images/WindowsForms-Ribbon-customized-with-TouchStyleColorTable.jpg)
 
 ## EnableHighContrastTheme
 
