@@ -57,7 +57,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OK, M
 
 ![WindowsForms MessageBoxAdv Ok](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok.jpg) 
  
-### OkCancel
+### Ok Cancel
 
 This option helps to show the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) with combination of Ok and Cancel buttons.
 
@@ -83,7 +83,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.OKCan
  
  ![WindowsForms MessageBoxAdv Ok Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Ok-Cancel.jpg) 
 
-### YesNo
+### Yes No
 
 This option helps to show the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) with combination of Yes and No buttons.
 
@@ -109,7 +109,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 ![WindowsForms MessageBoxAdv Yes No](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No.jpg) 
 
-### YesNoCancel
+### Yes No Cancel
 
 This option helps to show the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) with combination of Yes, No, and Cancel buttons.
 
@@ -135,7 +135,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.YesNo
 
 ![WindowsForms MessageBoxAdv Yes No Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Yes-No-Cancel.jpg) 
  
-### RetryCancel
+### Retry Cancel
 
 This option helps to show the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) with combination of Retry and Cancel buttons.
 
@@ -161,7 +161,7 @@ MessageBoxAdv.Show(Me, "Save changes?", "File Modified", MessageBoxButtons.Retry
 
 ![WindowsForms MessageBoxAdv Retry Cancel](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Retry-Cancel.jpg) 
 
-### AbortRetryIgnore
+### Abort Retry Ignore
 
 This option helps to show the [MessageBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MessageBoxAdv.html) with combination of Abort, Retry, and Ignore buttons.
 
