@@ -325,4 +325,4 @@ MessageBoxAdv.CanResize = True
 
 ![WindowsForms MessageBoxAdv Resizing support](MessageBoxAdv_images/WindowsForms-MessageBoxAdv-Resizing-support.png)
 
-N>[View sample in GitHub](https://github.com/SyncfusionExamples/Messageboxadv-resize-support-in-Winforms)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/Messageboxadv-resize-support-in-Winforms)
