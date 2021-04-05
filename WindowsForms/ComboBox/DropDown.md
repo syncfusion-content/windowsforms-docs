@@ -81,44 +81,19 @@ End Sub
 
 ## Customizing drop-down position
 
-The `SfComboBox` allows to change the position of the dropdown list by using the `DropDownPosition` property. The default value is `PopupRelativeAlignment.Center`.
+The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) allows to change the position of the dropdown list by using the [`DropDownPosition`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DropDownPosition) property. The default value is [`PopupRelativeAlignment.Center`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.html).
 
 {% tabs %}
 
 {% highlight c# %}
 
-public partial class Form1 : Form
-{
-    public Form1()
-    {
-        InitializeComponent();
-        Syncfusion.WinForms.ListView.SfComboBox sfComboBox1 = new Syncfusion.WinForms.ListView.SfComboBox();
-        sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.RightTop;
-        sfComboBox1.Location = new Point(300, 180);
-        sfComboBox1.Size = new Size(120, 30);
-        sfComboBox1.ThemeName = "Office2016Colorful";
-
-        List<string> usStates = new List<string>();
-        usStates.Add("Alaska");
-        usStates.Add("Arizona");
-        usStates.Add("Arkansas");
-        usStates.Add("California");
-        usStates.Add("Colorado");
-        usStates.Add("Connecticut");
-        usStates.Add("Delaware");
-        usStates.Add("Florida");
-        usStates.Add("Georgia");
-        sfComboBox1.DataSource = usStates;
-
-        this.Controls.Add(sfComboBox1);
-    }
-}
+sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlignment.RightTop;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Dropdown with position](DropDown_images/DropDown_img4.png)
+![WinForms SfComboBox Dropdown position](DropDown_images/WinForms-SfComboBox-Dropdown-position.png)
 
 ## Load custom control in drop-down
 
