@@ -227,7 +227,7 @@ In the property window of the Ribbon, click the Office2016ColorTable property. T
 
 Click Add button to customize the RibbonControlAdv with the Office2016ColorTable property.
 
-![WindowsForms Ribbon Adding Office 2016 Color Table](Appearance_Images/WindowsForms-Ribbon-Adding-Office-2016-Color-Table.jpg)
+![WindowsForms Ribbon Office 2016 Color Table adding](Appearance_Images/WindowsForms-Ribbon-Office-2016-Color-Table-adding.jpg)
 
 To achieve the above customization through code behind
 
