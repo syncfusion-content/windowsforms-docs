@@ -15,30 +15,18 @@ PdfViewerControl allows printing loaded PDFs using the Print button in the toolb
 
 ## Silent Printing
 
-The [PrintDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_PrintDocument) property of PdfViewerControl returns System.Drawing.Printing.PrintDocument that helps to complete printing using PrintDialog. The following code sample demonstrates this:
+The [Print](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Print_System_Boolean_) method of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) and [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) allows you to print PDF files silently to the system’s default printer, without any user interaction. You can enable the preferred settings for silent printing using the [PrinterSettings](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_PrinterSettings) property. The following code example shows how to perform silent printing in WinForms PDF Viewer.
 
 {% tabs %}
 {%highlight c#%}
 
-PrintDialog dialog = new PrintDialog();
-
-dialog.AllowPrintToFile =true;
-
-dialog.Document = pdfViewerControl1.PrintDocument;
-
-dialog.Document.Print();
+pdfviewer1.Print(false);
 
 {%endhighlight%}
 
 {%highlight vb%}
 
-Dim dialog As New PrintDialog()
-
-dialog.AllowPrintToFile = True
-
-dialog.Document = pdfViewerControl1.PrintDocument
-
-dialog.Document.Print()
+pdfviewer1.Print(False)
 
 {%endhighlight%}
 {% endtabs %}
