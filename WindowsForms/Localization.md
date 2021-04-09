@@ -14,7 +14,7 @@ Localization is the process of making application multilingual by formatting the
 
 Syncfusion components support localization and have their own neutral resources. These resources can be localized as per the customer requirement and they can be localized in three ways are, 
 
-* Using `ILocalizationProvider`
+* Using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html)
 * Using Satellite Assemblies
 * Using .resx file
  
@@ -43,7 +43,7 @@ Imports Syncfusion.Windows.Forms.Edit
 
 {% endtabs %}
 
-2) Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
+2) Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
 3) Return the localized versions of the strings corresponding to the string identifiers.
 
