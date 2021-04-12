@@ -203,7 +203,7 @@ Me.sfDataGrid.CurrentCell.CancelEdit()
 {% endhighlight %}
 {% endtabs %}
 
-### Change a cell value programmatically
+## Change a cell value programmatically
 
 The value exists in a particular cell can be changed programmatically by using the row column index of the cell. 
 
