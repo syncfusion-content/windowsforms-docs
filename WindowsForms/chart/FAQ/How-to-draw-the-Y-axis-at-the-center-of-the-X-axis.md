@@ -34,3 +34,5 @@ Me.chartControl1.PrimaryYAxis.Location = New PointF(300, 352)
 {% endhighlight %}
 
 {% endtabs %}	
+
+![Chart Trendline](How-to-draw-the-Y-axis-at-the-center-of-the-X-axis_images/How-to-draw-the-Y-axis-at-the-center-of-the-X-axis-image.png)
