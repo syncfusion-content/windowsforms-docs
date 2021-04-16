@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project | Windows Forms | Syncfusion
-description: This section illustrates how to work with Projects in Windows Forms projio using Syncfusion ProjIO library (Essential ProjIO)
+description: This section illustrates how to work with Projects in Windows Forms using Syncfusion ProjIO library (Essential ProjIO)
 platform: windowsforms
 control: ProjIO
 documentation: ug
