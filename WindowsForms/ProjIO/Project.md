@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Project | Windows Forms | Syncfusion
-description: project
+description: This section illustrates how to work with Projects in Windows Forms projio using Syncfusion ProjIO library (Essential ProjIO)
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Project
+# Working with Project
 
 You can open, modify and create Project files using the Project Class. Project class has a structure similar to the MS Project document. Project class is useful in creating MS Projects in XML format. It can also be used to open or modify the existing Project files in XML format.
 
@@ -327,7 +327,7 @@ Calendars</td><td>
 Gets or sets the collection of calendars that are associated with the project.</td></tr>
 <tr>
 <td>
-Tasks</td><td>
+RootTask</td><td>
 Gets or sets the collection of tasks that make up the project.</td></tr>
 <tr>
 <td>
@@ -416,7 +416,7 @@ project.Save("Empty Project.xml")
 
 The XML project file can be viewed in Microsoft Project using the option File – Open and then selecting the XML format (*.xml) option from the file types. Select ‘Project Information’ option from the Projects menu and the options will look as follows:
 
-![](Project_images/Project_img1.jpeg)
+![Screenshot of Project Information option](Project_images/Project_img1.jpeg)
 
 
 
@@ -804,7 +804,7 @@ project.Save("Empty Project.xml")
 
 The project summary information added through the above code can be viewed by checking the Project Information – Advanced Properties in the File menu.
 
-![](Project_images/Project_img2.jpeg)
+![Screenshot of project summary information](Project_images/Project_img2.jpeg)
 
 
 
