@@ -416,7 +416,7 @@ project.Save("Empty Project.xml")
 
 The XML project file can be viewed in Microsoft Project using the option File – Open and then selecting the XML format (*.xml) option from the file types. Select ‘Project Information’ option from the Projects menu and the options will look as follows:
 
-![Screenshot of Project Information option](Project_images/Project_img1.jpeg)
+![Project Information option](Project_images/Project_img1.jpeg)
 
 
 
@@ -804,7 +804,7 @@ project.Save("Empty Project.xml")
 
 The project summary information added through the above code can be viewed by checking the Project Information – Advanced Properties in the File menu.
 
-![Screenshot of project summary information](Project_images/Project_img2.jpeg)
+![Project summary information](Project_images/Project_img2.jpeg)
 
 
 
