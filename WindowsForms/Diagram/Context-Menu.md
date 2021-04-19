@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Windows Forms Context Menu
+# Documentation for Context Menu
 
 ### Built-in context menu
 
@@ -100,14 +100,18 @@ The following code example illustrates how to define those in events.
 
  private void Diagram1_MouseClick(object sender, MouseEventArgs e)
         {
+            //condition to allow only on Right click
             if(e.Button== MouseButtons.Right)
             {
+                //Used to get items on the mouse location
                 Node node = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);             
                 if (node != null)
                 {
                     if(node is ConnectorBase)
                     {
+                        //first subitem in context menu is shown
                         contextMenuStrip1.Items[0].Enabled = false;
+                        //Second subitem in context menu is disabled
                         contextMenuStrip1.Items[1].Enabled = true;
                     }
                     else
@@ -115,6 +119,7 @@ The following code example illustrates how to define those in events.
                         contextMenuStrip1.Items[0].Enabled = true;
                         contextMenuStrip1.Items[1].Enabled = false;
                     }
+                    //used for postioning the contextmenu 
                     contextMenuStrip1.Show(diagram1, e.Location);
                 }
             }
