@@ -87,3 +87,40 @@ To view a sample:
 1. Open the Syncfusion Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
+
+### Show or Hide Custom Context Menu
+
+You can make a context menu to show or hide by the 'MouseDown' event. this event you can set display property for the context menu.
+
+The following code example illustrates how to define those in events.
+
+{% tabs %}
+{% highlight c# %}
+
+private void Diagram1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            Node nodes = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);
+            switch (e.Button)
+            {
+                case MouseButtons.Left:
+                    if (nodes != null)
+                    {
+
+                        this.diagram1.DefaultContextMenuEnabled = true;
+
+                    }
+                    break;
+
+                case MouseButtons.Right:
+                    if (nodes != null)
+                    {
+
+                        this.diagram1.DefaultContextMenuEnabled = false;
+
+                    }
+                    break;
+            }
+        }
+
+{% endhighlight %}
+{% endtabs %}
