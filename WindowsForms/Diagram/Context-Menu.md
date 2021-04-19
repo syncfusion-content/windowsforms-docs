@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Documentation for Context Menu
+# Documentation For Context Menu
 
 ### Built-in context menu
 
