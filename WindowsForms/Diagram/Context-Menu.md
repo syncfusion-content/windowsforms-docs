@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Context Menu Built-in context
+# Windows Forms Context Menu
 
 ### Built-in context menu
 
