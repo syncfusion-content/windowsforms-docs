@@ -90,38 +90,68 @@ To view a sample:
 
 ## Conditionally show or hide context menu items at run time
 
-You can conditionally show or hide context menu items at run time by using MouseClick event. This event will trigger while clicking mouse button you can make custom context menu based on what was selected. The following code example illustrates how to control the visibility of the context menu item based on diagram elements selection.
+You can conditionally show or hide context menu items at run time.In this you can make custom context menu by clearing the deafualt context menu items. The following code example illustrates how to create the context menu item based on diagram elements selection.
 
-
-The following code example illustrates how to define those in events.
+The following code example illustrates how to define those.
 
 {% tabs %}
 {% highlight c# %}
 
- private void Diagram1_MouseClick(object sender, MouseEventArgs e)
+ public Form1()
         {
-            //condition to allow only on Right click
-            if(e.Button== MouseButtons.Right)
+            InitializeComponent();
+
+            //Used to clear the default contextmenu items
+            diagram1.ContextMenuStrip.Items.Clear();
+
+            // creating the new context menu items
+            System.Windows.Forms.ToolStripMenuItem fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.Windows.Forms.ToolStripMenuItem strokeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+
+            fillToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            blueToolStripMenuItem});
+
+            //adding properties to the items
+            fillToolStripMenuItem.Name = "fillToolStripMenuItem";
+            fillToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            fillToolStripMenuItem.Text = "Fill";
+            blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            blueToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+            blueToolStripMenuItem.Text = "Blue";
+            blueToolStripMenuItem.Click += new System.EventHandler(blueToolStripMenuItem_Click);
+            blueToolStripMenuItem1.Name = "blueToolStripMenuItem1";
+            blueToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+            blueToolStripMenuItem1.Text = "Blue";
+            blueToolStripMenuItem1.Click += new System.EventHandler(blueToolStripMenuItem1_Click);
+            strokeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            blueToolStripMenuItem1});
+            strokeToolStripMenuItem.Name = "strokeToolStripMenuItem";
+            strokeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            strokeToolStripMenuItem.Text = "Stroke";
+            this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            fillToolStripMenuItem,
+            strokeToolStripMenuItem});
+
+            diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
+            diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;
+        }
+
+        private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
+        {          
+            //condition for checking node or connector
+            if(evtArgs.Node  is Node)
             {
-                //Used to get items on the mouse location
-                Node node = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);             
-                if (node != null)
-                {
-                    if(node is ConnectorBase)
-                    {
-                        //first subitem in context menu is shown
-                        contextMenuStrip1.Items[0].Enabled = false;
-                        //Second subitem in context menu is disabled
-                        contextMenuStrip1.Items[1].Enabled = true;
-                    }
-                    else
-                    {
-                        contextMenuStrip1.Items[0].Enabled = true;
-                        contextMenuStrip1.Items[1].Enabled = false;
-                    }
-                    //used for postioning the contextmenu 
-                    contextMenuStrip1.Show(diagram1, e.Location);
-                }
+                //enabling or disabling the contextmenu items
+                diagram1.ContextMenuStrip.Items[0].Visible = true;
+                diagram1.ContextMenuStrip.Items[1].Visible = false;
+            }
+            if(evtArgs.Node is ConnectorBase)
+            {
+                diagram1.ContextMenuStrip.Items[0].Visible = false;
+                diagram1.ContextMenuStrip.Items[1].Visible = true;
+
             }
         }
 
