@@ -88,24 +88,36 @@ To view a sample:
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
 
-### Show or Hide Custom Context Menu
+## Conditionally show or hide context menu items at run time
 
-You can make a context menu to show or hide by the 'MouseDown' event. this event you can set display property for the context menu.
+You can conditionally show or hide context menu items at run time by using MouseClick event. This event will trigger while clicking mouse button you can make custom context menu based on what was selected. The following code example illustrates how to control the visibility of the context menu item based on diagram elements selection.
+
 
 The following code example illustrates how to define those in events.
 
 {% tabs %}
 {% highlight c# %}
 
-private void Diagram1_MouseClick(object sender, MouseEventArgs e)
+ private void Diagram1_MouseClick(object sender, MouseEventArgs e)
         {
-            Node nodes = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);            
-            if (e.Button == MouseButtons.Right && nodes != null)
+            if(e.Button== MouseButtons.Right)
             {
-
-                this.diagram1.DefaultContextMenuEnabled = false;
-
-            }            
+                Node node = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);             
+                if (node != null)
+                {
+                    if(node is ConnectorBase)
+                    {
+                        contextMenuStrip1.Items[0].Enabled = false;
+                        contextMenuStrip1.Items[1].Enabled = true;
+                    }
+                    else
+                    {
+                        contextMenuStrip1.Items[0].Enabled = true;
+                        contextMenuStrip1.Items[1].Enabled = false;
+                    }
+                    contextMenuStrip1.Show(diagram1, e.Location);
+                }
+            }
         }
 
 {% endhighlight %}
