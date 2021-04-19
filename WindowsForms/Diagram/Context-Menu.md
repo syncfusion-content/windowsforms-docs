@@ -97,63 +97,52 @@ The following code example illustrates how to define those.
 {% tabs %}
 {% highlight c# %}
 
- public Form1()
-        {
-            InitializeComponent();
+//Used to clear the default contextmenu items
+diagram1.ContextMenuStrip.Items.Clear();
 
-            //Used to clear the default contextmenu items
-            diagram1.ContextMenuStrip.Items.Clear();
+//To initalize custom menus for diagram context menu items
+System.Windows.Forms.ToolStripMenuItem fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem strokeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 
-            // creating the new context menu items
-            System.Windows.Forms.ToolStripMenuItem fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            System.Windows.Forms.ToolStripMenuItem strokeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+fillToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {blueToolStripMenuItem});
 
-            fillToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            blueToolStripMenuItem});
+//adding properties to the items
+fillToolStripMenuItem.Name = "fillToolStripMenuItem";
+fillToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+fillToolStripMenuItem.Text = "Fill";
+blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+blueToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+blueToolStripMenuItem.Text = "Blue";
+blueToolStripMenuItem.Click += new System.EventHandler(blueToolStripMenuItem_Click);
+blueToolStripMenuItem1.Name = "blueToolStripMenuItem1";
+blueToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+blueToolStripMenuItem1.Text = "Blue";
+blueToolStripMenuItem1.Click += new System.EventHandler(blueToolStripMenuItem1_Click);
+strokeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {blueToolStripMenuItem1});
+strokeToolStripMenuItem.Name = "strokeToolStripMenuItem";
+strokeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+strokeToolStripMenuItem.Text = "Stroke";
+this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {fillToolStripMenuItem,        strokeToolStripMenuItem});
 
-            //adding properties to the items
-            fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            fillToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            fillToolStripMenuItem.Text = "Fill";
-            blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            blueToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
-            blueToolStripMenuItem.Text = "Blue";
-            blueToolStripMenuItem.Click += new System.EventHandler(blueToolStripMenuItem_Click);
-            blueToolStripMenuItem1.Name = "blueToolStripMenuItem1";
-            blueToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
-            blueToolStripMenuItem1.Text = "Blue";
-            blueToolStripMenuItem1.Click += new System.EventHandler(blueToolStripMenuItem1_Click);
-            strokeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            blueToolStripMenuItem1});
-            strokeToolStripMenuItem.Name = "strokeToolStripMenuItem";
-            strokeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            strokeToolStripMenuItem.Text = "Stroke";
-            this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            fillToolStripMenuItem,
-            strokeToolStripMenuItem});
+//To register NodeMouseEnter event to diagram controller
+diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
 
-            diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
-            diagram1.EventSink.NodeMouseLeave += EventSink_NodeMouseLeave;
-        }
+private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
+{
+    //To show/hide context menu item based on selected objects in diagram
+    if (evtArgs.Node is Node)
+    {
+        diagram1.ContextMenuStrip.Items[0].Visible = true;
+        diagram1.ContextMenuStrip.Items[1].Visible = false;
+    }
+    if (evtArgs.Node is ConnectorBase)
+    {
+        diagram1.ContextMenuStrip.Items[0].Visible = false;
+        diagram1.ContextMenuStrip.Items[1].Visible = true;
 
-        private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
-        {          
-            //condition for checking node or connector
-            if(evtArgs.Node  is Node)
-            {
-                //enabling or disabling the contextmenu items
-                diagram1.ContextMenuStrip.Items[0].Visible = true;
-                diagram1.ContextMenuStrip.Items[1].Visible = false;
-            }
-            if(evtArgs.Node is ConnectorBase)
-            {
-                diagram1.ContextMenuStrip.Items[0].Visible = false;
-                diagram1.ContextMenuStrip.Items[1].Visible = true;
-
-            }
-        }
-
+    }
+        
 {% endhighlight %}
 {% endtabs %}
