@@ -97,29 +97,15 @@ The following code example illustrates how to define those in events.
 {% tabs %}
 {% highlight c# %}
 
-private void Diagram1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+private void Diagram1_MouseClick(object sender, MouseEventArgs e)
         {
-            Node nodes = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);
-            switch (e.Button)
+            Node nodes = diagram1.Controller.GetNodeAtPoint(diagram1.Controller.MouseLocation);            
+            if (e.Button == MouseButtons.Right && nodes != null)
             {
-                case MouseButtons.Left:
-                    if (nodes != null)
-                    {
 
-                        this.diagram1.DefaultContextMenuEnabled = true;
+                this.diagram1.DefaultContextMenuEnabled = false;
 
-                    }
-                    break;
-
-                case MouseButtons.Right:
-                    if (nodes != null)
-                    {
-
-                        this.diagram1.DefaultContextMenuEnabled = false;
-
-                    }
-                    break;
-            }
+            }            
         }
 
 {% endhighlight %}
