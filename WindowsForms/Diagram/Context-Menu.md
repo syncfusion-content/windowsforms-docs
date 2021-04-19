@@ -7,9 +7,9 @@ control: Diagram
 documentation: ug
 ---
 
-# Documentation For Context Menu
+# Built-in Diagram context menu
 
-### Built-in Diagram context menu 
+### Built-in context menu
 
 The Essential Diagram of Windows Forms provides built-in context menu support to the Diagram.
 
