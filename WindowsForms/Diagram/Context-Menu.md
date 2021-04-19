@@ -9,7 +9,7 @@ documentation: ug
 
 # Documentation For Context Menu
 
-### Built-in context menu
+### Built-in Diagram context menu 
 
 The Essential Diagram of Windows Forms provides built-in context menu support to the Diagram.
 
@@ -90,7 +90,7 @@ To view a sample:
 
 ## Conditionally show or hide context menu items at run time
 
-You can conditionally show or hide context menu items at run time.In this you can make custom context menu by clearing the deafualt context menu items. The following code example illustrates how to create the context menu item based on diagram elements selection.
+You can conditionally show or hide context menu items at run time. In this, you can make a custom context menu by clearing the default context menu items.The following code example illustrates how to create the context menu item based on diagram elements selection.
 
 The following code example illustrates how to define those.
 
