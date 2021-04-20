@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-draw-the-Y-axis-at-the-center-of-the-X-axis | Windows Forms | Syncfusion
-description: how to draw the y-axis at the center of the x-axis
+title: Draw-the-Y-axis-at-the-center-of-X-axis | Windows Forms | Syncfusion
+description: This section explains how to draw the y-axis at the center of the x-axis or any custom position on the chart axis.
 platform: windowsforms
 control: chart
 documentation: ug
@@ -27,10 +27,20 @@ this.chartControl1.PrimaryYAxis.Location = new PointF(300, 352);
 
 // Drawing Y-axis at the center of the X-axis.
 
+Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
+
 Me.chartControl1.PrimaryYAxis.LocationType=ChartAxisLocationType.Set
 
-Me.chartControl1.PrimaryYAxis.Location = New PointF(300, 352)
+Me.chartControl1.PrimaryYAxis.Location = New PointF(255, 352)
+
+ChartSeries chartSeries = new ChartSeries("Sales",ChartSeriesType.Scatter)
+
+Me.chartControl1.Series.Add(chartSeries)
+
+Me.chartControl1.Size = new System.Drawing.Size(750, 500)   
 
 {% endhighlight %}
 
 {% endtabs %}	
+
+![Chart Axes](How-to-draw-the-Y-axis-at-the-center-of-the-X-axis_images/How-to-draw-the-Y-axis-at-the-center-of-the-X-axis-image.png)
