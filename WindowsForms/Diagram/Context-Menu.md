@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# Context Menu
+# Built-in Diagram Context Menu
 
 ### Built-in context menu
 
@@ -87,3 +87,63 @@ To view a sample:
 1. Open the Syncfusion Dashboard.
 2. Click the Windows Forms drop-down list and select Run Locally Installed Samples.
 3. Navigate to Diagram Samples > Product Showcase > Diagram Builder.
+
+## Conditionally show or hide context menu items at run time
+
+You can conditionally show or hide context menu items at run time. In this, you can make a custom context menu by clearing the default context menu items.The following code example illustrates how to create the context menu item based on diagram elements selection.
+
+The following code example illustrates how to define those.
+
+{% tabs %}
+{% highlight c# %}
+
+//Used to clear the default contextmenu items
+diagram1.ContextMenuStrip.Items.Clear();
+
+//To initalize custom menus for diagram context menu items
+System.Windows.Forms.ToolStripMenuItem fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem strokeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+
+fillToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {blueToolStripMenuItem});
+
+//adding properties to the items
+fillToolStripMenuItem.Name = "fillToolStripMenuItem";
+fillToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+fillToolStripMenuItem.Text = "Fill";
+blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+blueToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
+blueToolStripMenuItem.Text = "Blue";
+blueToolStripMenuItem.Click += new System.EventHandler(blueToolStripMenuItem_Click);
+blueToolStripMenuItem1.Name = "blueToolStripMenuItem1";
+blueToolStripMenuItem1.Size = new System.Drawing.Size(121, 26);
+blueToolStripMenuItem1.Text = "Blue";
+blueToolStripMenuItem1.Click += new System.EventHandler(blueToolStripMenuItem1_Click);
+strokeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {blueToolStripMenuItem1});
+strokeToolStripMenuItem.Name = "strokeToolStripMenuItem";
+strokeToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+strokeToolStripMenuItem.Text = "Stroke";
+this.diagram1.ContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {fillToolStripMenuItem,        strokeToolStripMenuItem});
+
+//To register NodeMouseEnter event to diagram controller
+diagram1.EventSink.NodeMouseEnter += EventSink_NodeMouseEnter;
+
+private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
+{
+    //To show/hide context menu item based on selected objects in diagram
+    if (evtArgs.Node is Node)
+    {
+        diagram1.ContextMenuStrip.Items[0].Visible = true;
+        diagram1.ContextMenuStrip.Items[1].Visible = false;
+    }
+    if (evtArgs.Node is ConnectorBase)
+    {
+        diagram1.ContextMenuStrip.Items[0].Visible = false;
+        diagram1.ContextMenuStrip.Items[1].Visible = true;
+
+    }
+}
+        
+{% endhighlight %}
+{% endtabs %}

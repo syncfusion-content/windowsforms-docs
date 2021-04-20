@@ -7,65 +7,23 @@ control: PdfViewerControl
 documentation: ug
 ---
 
-# Windows Forms PDF Viewer Overview
+# WinForms PDF Viewer Overview
 
-## Introduction to PdfViewerControl
+The WinForms PDF Viewer control supports viewing and printing PDF files in WinForms applications. The hyperlink and table of contents support provides easy navigation within and outside the PDF files.
 
-Essential PdfViewerControl for .NET is a 100% managed .NET component that will have the ability to view and print PDF files from your .NET applications.  
+![Overview of PDF Viewer control](Overview_images/pdfviewer_overview.png)
 
-## Prerequisites and Compatibility
+## Key features
 
-This section covers the requirements that are mandatory for using Syncfusion Essential PdfViewerControl. It also lists operating systems and browsers that are compatible with the product.
-
-### Prerequisites
-
-<table>
-<tr>
-<td>
- Development Environments</td><td>
-<ul><li> Visual Studio 2017 (Community, Professional and Enterprise)</li><li> Visual Studio 2015 (Community, Professional and Enterprise)</li><li> Visual Studio 2013 (Ultimate, Premium, Professional and Express)</li><li> Visual Studio 2012 (Ultimate, Premium, Professional and Express)</li><li> Visual Studio 2010 (Ultimate, Premium, Professional and Express)</li><li>Visual Studio 2008 (Team System, Professional, Standard & Express)</li><li> Visual Studio 2005 (Professional, Standard & Express)</li><li> Microsoft Expression Blend</li></ul><br></td></tr>
-<tr>
-<td>
-.NET Framework versions</td><td>
-<ul><li>  .NET Framework version 4.6</li><li>  .NET Framework version 4.5.1</li><li>  .NET Framework version 4.5</li><li>  .NET Framework version 4.0</li><li> .NET Framework version 3.5 with Service Pack 1</li><li> .NET Framework version 3.5</li><li> .NET Framework version 2.0</li></ul></td></tr>
-</table>
-
-### Compatibility
-
-<table>
-<tr>
-<td>
- Operating Systems</td><td>
-<ul><li>Windows 10 (32 bit and 64 bit)</li><li>Windows 8.1 (32 bit and 64 bit)</li><li>Windows 8 (32 bit and 64 bit)</li><li>Windows Server 2013 (32 bit and 64 bit)</li><li>Windows Server 2012 (32 bit and 64 bit)</li><li>Windows Server 2008 (32 bit and 64 bit)</li><li> Windows Vista (32 bit and 64 bit)</li><li> Windows XP</li><li> Windows 2003</li><li> Windows 7 </li></ul></td></tr>
-</table>
-
-## Documentation
-
-<table>
-<tr>
-<td>
-{{ '**Type of Documentation**' | markdownify }}</td><td>
-{{ '**Location**' | markdownify }}</td></tr>
-<tr>
-<td>
-Readme</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Read Me\Reporting_Windows.html</td></tr>
-<tr>
-<td>
-Release Notes</td><td>
-[drive:]\Program Files\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Release Notes\Reporting.html# Windows-PdfViewer</td></tr>
-<tr>
-<td>
-User Guide (this document)</td><td>
-Online: {{ '<https://help.syncfusion.com/windowsforms/pdfviewer/overview>' | markdownify }} (Navigate to the PdfViewerControl for Windows Forms User Guide.)> 
-
-{{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}
-
-Installed Documentation: Dashboard -> Documentation -> Installed Documentation. </td></tr>
-<tr>
-<td>
-Class Reference</td><td>
-Online: {{ '<http://help.syncfusion.com/windowsforms>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_PdfViewerControl_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)
-
-Installed Documentation: Dashboard -> Documentation -> Installed Documentation.</td></tr>
-</table>
+* **Open PDF files**: Open and display PDF files, both normal and protected, with AES and RC4 encryption algorithms (password protected). Open PDF files from stream, file path, and PdfLoadedDocument objects.
+* **Instant loading**: Loads PDF files with thousands of pages instantly.
+* **Less runtime memory**: On-demand loading and virtualization mean the control holds only the minimum required pages at runtime to reduce memory consumption.
+* **Virtualized pages**: Render pages on demand to help reduce initial load time when working with large documents.
+* **Printing**: Supports both the silent printing as well as printing using the print dialog.
+* **Select and copy text**: Allows you to select and copy text from the PDF files.
+* **Search text**: Allows you to locate a word or phrase easily in a PDF file.
+* **Navigations**: Supports many types of internal and external navigations such as bookmarks, hyperlinks, and table of contents navigations.
+* **Exporting**: Supports exporting the PDF pages to image and exporting form data.
+* **Customization**: Supports various built-in themes and allows user to create a custom toolbar with all the options that can be performed using the built-in toolbar.
+* **Localization**: Supports localization for all the static text used in the PDF Viewer.
+* **Right to left (RTL)**: Supports RTL direction rendering for users working in right-to-left languages.
