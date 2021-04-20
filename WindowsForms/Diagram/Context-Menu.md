@@ -143,6 +143,7 @@ private void EventSink_NodeMouseEnter(NodeMouseEventArgs evtArgs)
         diagram1.ContextMenuStrip.Items[1].Visible = true;
 
     }
+}
         
 {% endhighlight %}
 {% endtabs %}
