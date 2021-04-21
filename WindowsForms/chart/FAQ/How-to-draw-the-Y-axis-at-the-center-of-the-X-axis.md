@@ -33,7 +33,7 @@ this.chartControl1.Size = new System.Drawing.Size(750, 500);
 
 {% highlight vb %}
 
-// Drawing Y-axis at the center of the X-axis.
+' Drawing Y-axis at the center of the X-axis.
 
 Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
