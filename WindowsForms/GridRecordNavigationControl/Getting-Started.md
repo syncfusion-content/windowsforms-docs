@@ -7,7 +7,7 @@ control: GridRecordNavigationControl
 documentation: ug
 ---
 
-# Getting started with WindowsForms GridRecordNavigationControl
+# Getting started with Windows Forms GridRecordNavigationControl
 
 This section explains creating a simple application with GridRecordNavigationControl and its functionalities.
 
