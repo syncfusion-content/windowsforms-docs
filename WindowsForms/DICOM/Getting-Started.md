@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: Getting started with Windows Forms DICOM and explain how to create platform applications in Windows Forms DICOM control.
+title: Getting-Started with Windows Forms DICOM Control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms DICOM Control, its elements, and more details.
 platform: windowsforms
 control: DICOM 
 documentation: ug

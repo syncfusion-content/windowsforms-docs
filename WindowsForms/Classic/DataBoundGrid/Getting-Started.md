@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: Getting started in WinForms DataBoundGrid Control and learn how to use Forms Designer to create an Essential DataBound Grid.
+title: Getting-Started with Windows Forms DataBoundGrid | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms DataBoundGrid Control, its elements, and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Getting Started in WinForms DataBoundGrid
+# Getting Started with Windows Forms DataBoundGrid
 
 This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
 

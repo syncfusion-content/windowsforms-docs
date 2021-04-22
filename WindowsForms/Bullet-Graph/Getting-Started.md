@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Bullet Graph | Syncfusion
-description: Getting started with Windows Forms Bullet Graph and explain how to create a simple Bullet Graph control in windowsforms.
+title: Getting Started with Windows Forms Bullet Graph Control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Bullet Graph Control, its elements, and more.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug

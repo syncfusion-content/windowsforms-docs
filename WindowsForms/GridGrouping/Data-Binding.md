@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding for Syncfusion Essential WindowsForms
-description: This section explains about the data binding and its types available for GridGroupingControl and explain configuration and key features in WindowsForms.
+description: This section explains about the data binding and its types available for GridGroupingControl and explain configuration and key features in Windows Forms.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug

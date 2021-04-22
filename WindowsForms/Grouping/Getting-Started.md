@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: Getting started with WindowsForms Grouping and this section illustrates the step-by-step procedure to create the following platform applications.
+title: Getting-Started with Windows Forms Grouping Control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Grouping control, its elements, and more.
 platform: WindowsForms
 control: Grouping
 documentation: ug
