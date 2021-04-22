@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding for Syncfusion Essential WindowsForms
-description: This section explains about the data binding and its types available for GridGroupingControl.
+description: This section explains about the data binding and its types available for GridGroupingControl and explain configuration and key features in WindowsForms.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Data Binding 
+# Data Binding for Essential Windows Forms
 To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx), [DataSets](https://msdn.microsoft.com/en-in/library/system.data.dataset.aspx), or any component that implements interface [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx), [IBindingList](https://msdn.microsoft.com/en-us/library/ms132679.aspx), [ITypedList](https://msdn.microsoft.com/en-us/library/system.componentmodel.itypedlist.aspx), or [IListSource](https://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
 
 ## Data binding using ADO.NET
@@ -2564,11 +2564,11 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
 3. In the **Choose a Database Model** window, click**Dataset**, and then click **Next**.
 
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_47.jpg](Data-Binding_images/Data-Binding_img107.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image107](Data-Binding_images/Data-Binding_img107.jpeg)
 
 4. In the **Choose Your Data Connection** window, click **New Connection**.
 
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_48.jpg](Data-Binding_images/Data-Binding_img108.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image108](Data-Binding_images/Data-Binding_img108.jpeg)
 
    The **ChooseData Source** dialog box appears.
    
@@ -2667,7 +2667,7 @@ The steps given below is used to bind the SQL server database with Visual Studio
 
    In the **Grid Grouping** control smart tag, click **Choose DataSource** list, and then click**Add Project Data Source**. The Data Source Configuration Wizard dialog box appears.
    
-   ![http://help.syncfusion.com/ug/windows%20forms/ImagesExt/image520_74.jpg](Data-Binding_images/Data-Binding_img122.jpeg)
+   ![WindowsForms GridGrouping Data-Binding Image122](Data-Binding_images/Data-Binding_img122.jpeg)
 
 2. In the **Choose a Data Source Type** window, click**Database**, and then click **Next**.
    

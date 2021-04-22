@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+description: Getting started with WinForms Editors Package and explain how to design a MultiSelectionComboBox control in a Windows Forms Application.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WinForms Editors Package
 
 
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
