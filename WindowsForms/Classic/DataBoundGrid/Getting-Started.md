@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+title: Getting-Started with Windows Forms DataBoundGrid | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms DataBoundGrid Control, its elements, and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms DataBoundGrid
 
 This section will provide step-by-step procedure to create Grid DataBound Grid through designer and through programmatic approach in a .NET application.
 
@@ -27,7 +27,7 @@ In this part, you will learn how to use the designer to place DataBound Grid on 
 
 1. In Visual Studio .NET, use the File -> Menu option to create a new Windows Application project, naming it DBGridTutorial.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![WindowsForms DataBoundGrid Getting-Started Image1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -37,7 +37,7 @@ Use the wizard to create a connection to the Northwind database. This DataBase i
 
 
 
-![](Getting-Started_images/Getting-Started_img2.jpeg) 
+![WindowsForms DataBoundGrid Getting-Started Image2](Getting-Started_images/Getting-Started_img2.jpeg) 
 
 
 
@@ -45,7 +45,7 @@ Use the wizard to create a connection to the Northwind database. This DataBase i
 
 Select use SQL statements.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![WindowsForms DataBoundGrid Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 
@@ -53,7 +53,7 @@ Select use SQL statements.
 
 To generate SQL statement, click Query Builder button.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![WindowsForms DataBoundGrid Getting-Started Image4](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 
@@ -61,7 +61,7 @@ To generate SQL statement, click Query Builder button.
 
 In the Add Table dialog, select Products table and click Add, then Close.
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![WindowsForms DataBoundGrid Getting-Started Image5](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 
@@ -69,7 +69,7 @@ In the Add Table dialog, select Products table and click Add, then Close.
 
 In this Query Build window, select ProductName, ProductID, QuantityPerUnit and UnitPrice. Then press OK.
 
-![](Getting-Started_images/Getting-Started_img6.jpeg) 
+![WindowsForms DataBoundGrid Getting-Started Image6](Getting-Started_images/Getting-Started_img6.jpeg) 
 
 
 
@@ -77,7 +77,7 @@ In this Query Build window, select ProductName, ProductID, QuantityPerUnit and U
 
 Click Next to confirm the Query you selected.
 
-![](Getting-Started_images/Getting-Started_img7.jpeg) 
+![WindowsForms DataBoundGrid Getting-Started Image7](Getting-Started_images/Getting-Started_img7.jpeg) 
 
 
 
@@ -85,13 +85,13 @@ Click Next to confirm the Query you selected.
 
 Click Finish. Your design surface will look similar to this.
 
- ![](Getting-Started_images/Getting-Started_img8.jpeg) 
+ ![WindowsForms DataBoundGrid Getting-Started Image8](Getting-Started_images/Getting-Started_img8.jpeg) 
 
 
 
 Next you will need to generate a dataset from the SQLDataAdapter. Right-click sqlDataAdapter1 under the design surface and select Generate DataSet. You will then see this window.
 
-![](Getting-Started_images/Getting-Started_img9.jpeg) 
+![WindowsForms DataBoundGrid Getting-Started Image9](Getting-Started_images/Getting-Started_img9.jpeg) 
 
 
 
@@ -101,7 +101,7 @@ Press OK to add DataSet11 object next to sqlConnection1 under the design surface
 
 From the toolbox, drag Grid Data Bound Grid control to your form. Size and position it and add a button labeled Update to your form.
 
- ![](Getting-Started_images/Getting-Started_img10.jpeg) 
+ ![WindowsForms DataBoundGrid Getting-Started Image10](Getting-Started_images/Getting-Started_img10.jpeg) 
 
 
 
@@ -155,7 +155,7 @@ Now when you click Update button, it will post the changes made back to your dat
 
 GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
- ![](Getting-Started_images/Getting-Started_img11.jpeg) 
+ ![WindowsForms DataBoundGrid Getting-Started Image11](Getting-Started_images/Getting-Started_img11.jpeg) 
 
 
 
@@ -167,7 +167,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Click Add button to add a grid bound column, and then set MappingName property of that grid bound column to _ProductName_.
 
-   ![](Getting-Started_images/Getting-Started_img12.jpeg) 
+   ![WindowsForms DataBoundGrid Getting-Started Image12](Getting-Started_images/Getting-Started_img12.jpeg) 
 
 
 
@@ -175,7 +175,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Select StyleInfo property and set BackColor for the column as shown in the following screen shot.
 
-   ![](Getting-Started_images/Getting-Started_img13.jpeg) 
+   ![WindowsForms DataBoundGrid Getting-Started Image13](Getting-Started_images/Getting-Started_img13.jpeg) 
 
 
 
@@ -183,13 +183,13 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Repeat the above steps to add Grid Bound Columns for 'UnitPrice' and 'UnitsInStock'. For the 'UnitPrice' Grid Bound Column, set StyleInfo.Format to _C_.
 
-![](Getting-Started_images/Getting-Started_img14.jpeg)
+![WindowsForms DataBoundGrid Getting-Started Image14](Getting-Started_images/Getting-Started_img14.jpeg)
 
 
 
 Compile and run the project to see formatted Grid Data Bound Grid. In the following screen shot, you will be able to see the grid with columns specified and in the order that you specified them. Notice that the 'UnitPrice' column shows the price in specified currency format.
 
-![](Getting-Started_images/Getting-Started_img15.jpeg) 
+![WindowsForms DataBoundGrid Getting-Started Image15](Getting-Started_images/Getting-Started_img15.jpeg) 
 
 
 
