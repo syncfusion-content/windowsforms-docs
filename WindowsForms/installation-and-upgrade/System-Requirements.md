@@ -29,5 +29,7 @@ The following topic describes the system requirements for Syncfusion Windows For
 
 ### Development Environment
 
-* Microsoft Visual Studio 2008/2010/2012/2013/2015/2017
+* Microsoft Visual Studio 2008/2010/2012/2013/2015/2017/2019
 * .NET Framework 2.0/3.5/4.0/4.5/4.5.1/4.6
+* .NET Core 3.1
+* .NET 5.0
