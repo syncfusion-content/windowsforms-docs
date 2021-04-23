@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting-Started with Windows Forms Editors Package | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Editors Package Control, its elements, and more.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Editors Package
 
 
 This section briefly describes you on how to design a MultiSelectionComboBox control in a Windows Forms Application.
@@ -20,13 +20,13 @@ This section briefly describes you on how to design a MultiSelectionComboBox con
 * Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
 * Drop a MultiSelectionComboBox control on the Form. The MultiSelectionComboBox is loaded in the form as illustrated in the following screenshot.
 
-  ![](Overview_images/Overview_img335.png) 
+  ![WindowsForms MultiSelectionComboBox Overview Image335](Overview_images/Overview_img335.png) 
 
 ## Configuring the MultiSelectionComboBox control
 
 The commonly used settings of the MultiSelectionComboBox control can be configured either through Designer using the Smart tag or through the Properties window or through code. 
 
-![](Overview_images/Overview_img336.png)
+![WindowsForms MultiSelectionComboBox Overview Image336](Overview_images/Overview_img336.png)
 
 
 To add MultiSelectionComboBox control to a Windows Forms application through code behind,
