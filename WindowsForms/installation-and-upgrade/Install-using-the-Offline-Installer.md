@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Windows Forms products
+title: Installation for Syncfusion Windows Forms products
 description: this section provides information regarding the Syncfusion Windows Forms Offline installer and steps for installing it
-platform: Windows Forms
+platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 

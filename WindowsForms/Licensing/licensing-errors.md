@@ -2,12 +2,12 @@
 layout: post
 title: License Key Errors of Essential Studio | Syncfusion 
 description: Learn here some information about how to fix Syncfusion license key related errors and more details.
-platform: common
+platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Licensing Errors
+# Common Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

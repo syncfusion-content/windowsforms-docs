@@ -2,7 +2,7 @@
 layout: post
 title: Installation and Deployment for Syncfusion Windows Forms products
 description: Learn here about how to install and deploy the trial or license version of Syncfusion Windows Forms components
-platform: Windows Forms
+platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 

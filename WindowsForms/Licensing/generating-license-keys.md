@@ -2,7 +2,7 @@
 layout: post
 title: About Essential Studio Windows Forms Licensing | Syncfusion
 description: Learn here about Syncfusion Essential Studio Windows Forms license key, how to generate the license key, how to register the license key, and more details.
-platform: Windows Forms
+platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---

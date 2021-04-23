@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion ES Windows Forms products
+title: Installation for Syncfusion ES Windows Forms products
 description: This section provides information regarding learn how to install and deploy the Syncfusion Windows Forms component
-platform: Windows Forms
+platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Major Version to Service Pack Version| Windows Forms | Syncfusion
 description: this section provides the information about upgrading the Windows Forms projects from major version to service pack version
-platform: Windows Forms
+platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
