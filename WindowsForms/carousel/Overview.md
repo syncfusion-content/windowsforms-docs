@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Carousel control | Windows Forms | Syncfusion
-description: Overview section of Carousel control for Windows Forms provides details about its essential features
+title: About Windows Forms Carousel control | Syncfusion
+description: Learn about introduction of Syncfusion Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Carousel Overview
 
 The **Carousel** control is a circular conveyor in which the objects are displayed and rotated. It provides 3-D interface for displaying objects with interactive navigation.
 

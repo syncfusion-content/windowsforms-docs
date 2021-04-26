@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Chart Control| Windows Forms | Syncfusion
-description: The chart control is used to represent the data in graphical format.
+title: About Windows Forms Chart control | Syncfusion
+description: Learn about introduction of Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Chart Overview
 
 This section covers information on EssentialChart control, its key features, prerequisites to use the control, its compatibility with various OS and browsers and finally the documentation details complimentary with the product. It comprises the following sub sections:
 

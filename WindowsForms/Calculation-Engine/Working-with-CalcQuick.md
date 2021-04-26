@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with CalcQuickBase | Calculate | Syncfusion
-description: This section provides a basic idea with computation by using the CalcQuickBase for Syncfusion essential windowsforms
+title: Working with CalcQuickBase in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Working with CalcQuickBase support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Working with CalcQuickBase
+# Working with CalcQuickBase in Windows Forms Calculation Engine (Calculate)
 
 The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. 
 After registering the variables,it provides options to perform manual or automatic calculations. `CalcQuickBase` is predefined derived class from `ICalcData` interface.

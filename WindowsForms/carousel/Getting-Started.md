@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Carousel | WindowsForms | Syncfusion
-description: This section describes how to add carousel control into windowsforms application and its basic features.
+title: Getting Started with Windows Forms Carousel control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Carousel
 
 This section briefly describes how to create a Windows Forms project in Visual Studio and add the **Carousel** control with its basic functionalities. The Carousel control is a circular conveyor used for displaying and rotating the custom controls or image objects.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This section defines the list of supported formulas of the CalcEngine for Syncfusion Essential Windows Forms
+title: Supported Formulas in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Supported Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Supported Formulas of Calculate library
+# Supported Formulas in Windows Forms Calculation Engine (Calculate)
 The following are the list of formulas supported in Calculate library,
 
 ## Database Function

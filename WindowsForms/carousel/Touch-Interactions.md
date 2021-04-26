@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch-Interactions | WindowsForms | Syncfusion
-description: touch interactions
+title: Touch Interactions in Windows Forms Carousel control | Syncfusion
+description: Learn about Touch Interactions support in Syncfusion Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Touch interactions
+# Touch Interactions in Windows Forms Carousel
 
 The Carousel control will respond to default touch interactions that substitute the standard mouse operations. Additionally, the pan, flick, pinch, and stretch operations are supported.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transition Speed | WindowsForms | Syncfusion
-description: This section describes how to set transition speed of carusel control. 
+title: Transition Speed in Windows Forms Carousel control | Syncfusion
+description: Learn about Transition Speed support in Syncfusion Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Transition speed
+# Transition Speed in Windows Forms Carousel
 
 The [TransitionSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_TransitionSpeed) property enables the items in the control to be rotated at a user defined speed.
 

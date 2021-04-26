@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing-and-Print-Preview | Windows Forms | Syncfusion
-description: printing and print preview 
+title: Printing in Windows Forms Chart control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Printing
+# Printing in Windows Forms Chart
 
 ## Print Preview
 

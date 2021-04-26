@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Essential XlsIO | Calculate | Syncfusion
-description: Learn here about how to work with the CalcWorkbook, CalcSheet and enable or disable the calculations in XlsIo.
+title: Working with XlsIO in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Working with XlsIO support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Working with Essential XlsIO
+# Working with XlsIO in Windows Forms Calculation Engine (Calculate)
 
 Essential XIsIO provides an Excel-like Automation-type support without having Microsoft Excel installed on the host system.This means that you can use this library 
 to read and write an XLS file and hold its contents in memory. But you cannot perform actual computations on the contents of the XLS file. Hence Essential Calculate

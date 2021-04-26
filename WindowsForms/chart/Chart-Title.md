@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title | Windows Forms | Syncfusion
-description: chart title
+title: Chart Title in Windows Forms Chart control | Syncfusion
+description: Learn about Chart Title support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Title
+# Chart Title in Windows Forms Chart
 
 ## Default Title
 

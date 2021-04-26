@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This session explains that the supported formulas with syntax and description of lookup and reference functions in CalcEngine 
+title: Lookup and Reference in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Lookup and Reference support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Lookup and Reference formulas of Calculate library
+# Lookup and Reference in Windows Forms Calculation Engine (Calculate)
 
 
 

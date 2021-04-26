@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart-Data | Windows Forms | Syncfusion
-description: chart data
+title: Populating Data in Windows Forms Chart control | Syncfusion
+description: Learn about Populating Data support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Populating Data
+# Populating Data in Windows Forms Chart
 
 ### Built-in Support for data-binding
 

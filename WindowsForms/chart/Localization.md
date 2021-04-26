@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | Windows Forms | Syncfusion
-description: localization 
+title: Localization in Windows Forms Chart control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Localization 
+# Localization in Windows Forms Chart
 
 [Localization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) allows chart to display data according to the language and culture specific to a particular country or region.
 

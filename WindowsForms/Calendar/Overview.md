@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfCalendar control | Windows Forms | Syncfusion
-description: SfCalendar control allows user to select a date from the calendar and also provide various customization options.
+title: About Windows Forms Calendar control | Syncfusion
+description: Learn about Overview support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Calendar (SfCalendar) Overview
 
 The **SfCalendar** is a control that allows you to select a date from calendar, and it provides various customization options for the calendar. This provides multiple views of the month, year, decade, and century, so that dates can be selected easily. The **SfCalendar** supports multiple selection and provides complete customization options to the control.
 

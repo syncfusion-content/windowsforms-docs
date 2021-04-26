@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Importing | Windows Forms | Syncfusion
-description: importing
+title: Importing in Windows Forms Chart control | Syncfusion
+description: Learn about Importing support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Importing
+# Importing in Windows Forms Chart
 
 The Chart provides a simple API to let you populate it with any kind of data, provided, you bring that data from the data store at the runtime. You can then either populate the chart with that data, or bind the chart to the DataTable or DataSet, in which the data is contained. See ChartData for more information on Data Binding.
 

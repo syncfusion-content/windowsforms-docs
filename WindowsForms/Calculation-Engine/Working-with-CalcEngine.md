@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with CalcEngine | Calculate | Syncfusion
-description: This section describs about properties and methods maintained in CalcEngine for syncfusion essential windowsforms
+title: Working with CalcEngine in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Working with CalcEngine support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Working with CalcEngine 
+# Working with CalcEngine in Windows Forms Calculation Engine (Calculate)
 
 [CalcEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html) encapsulates the code required to parse and compute the formulas. It manages several library functions, hash tables for Essential Calculate.  
 All the data's in `CalcEngine` is assumed to be part of a rectangular array reference through cell coordinates.

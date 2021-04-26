@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Design-time-Features | Windows Forms | Syncfusion
-description: design time features
+title: Design Time Features in Windows Forms Chart control | Syncfusion
+description: Learn about Design Time Features support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Design Time Features
+# Design Time Features in Windows Forms Chart
 
 The design time features are discussed in the below topics:
 

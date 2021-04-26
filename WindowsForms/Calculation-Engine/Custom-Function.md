@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Function in Windows Forms Calculation Engine | Syncfusion
-description: This section describes that how to add and remove the user defined function for Syncfusion essential windows forms
+title: Custom Function in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Custom Function support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Custom Function of Calculate 
+# Custom Function in Windows Forms Calculation Engine (Calculate)
 
 Essential Calculate holds many functions from statistics, finance and mathematics, along with other general purpose functions. There are
 more than 400+ entries in the library. Also, it is easy to add the own calculations with custom functions.

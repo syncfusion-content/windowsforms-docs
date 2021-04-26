@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hit-Testing | Windows Forms | Syncfusion
-description: This section explains about some useful methods in chart
+title: Hit Testing in Windows Forms Chart control | Syncfusion
+description: Learn about Hit Testing support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Hit Testing
+# Hit Testing in Windows Forms Chart
 
 The section covers the below topics:
 

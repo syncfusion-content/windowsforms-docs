@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This session explains that the supported formulas with syntax and description of financial functions in CalcEngine 
+title: Financial Formulas in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Financial Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Financial formulas of Calculate library
+# Financial Formulas in Windows Forms Calculation Engine (Calculate)
 
 
 

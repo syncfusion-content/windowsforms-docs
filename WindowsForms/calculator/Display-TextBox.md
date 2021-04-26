@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display-TextBox | WindowsForms | Syncfusion
-description: display textbox
+title: Display TextBox in Windows Forms Calculator control | Syncfusion
+description: Learn about Display TextBox support in Syncfusion Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
 
-# Display TextBox
+# Display TextBox in Windows Forms Calculator
 
 The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) has a display text area on its top corner, which displays all the digits and the calculations performed on the calculator. This display area is displayed by default. To hide this display area, set the [ShowDisplayArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html#Syncfusion_Windows_Forms_Tools_CalculatorControl_ShowDisplayArea) property to false. 
 

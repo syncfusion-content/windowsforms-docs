@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with ICalcData | Calculate | Syncfusion
-description: Learn here about how to working with the computation of formulas, methods and events using ICalcData
+title: Working with ICalcData in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Working with ICalcData support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Working with ICalcData
+# Working with ICalcData in Windows Forms Calculation Engine (Calculate)
 
 Essential Calculate provides calculation support to arbitrary business objects through [ICalcData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html) interface. To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface.
 
