@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Symbology Settings | SfBarcode | wpf | Syncfusion
-description: symbology settings
+title: Symbology settings in Windows Forms Barcode control | Syncfusion
+description: Learn about Symbology settings support in Syncfusion Windows Forms Barcode control and more details.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Symbology Settings
+# Symbology settings in Windows Forms Barcode
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
 

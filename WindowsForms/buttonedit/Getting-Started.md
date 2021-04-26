@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ButtonEdit | Syncfusion
-description: This section gives detailed description about the steps to add ButtonEdit control in WinForms application.
+title: Getting Started with Windows Forms ButtonEdit control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Getting Started of ButtonEdit
+# Getting Started with Windows Forms ButtonEdit
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) with it's basic functionalities.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: features
+title: Measure Settings (Featured / Comparative Measure) in Windows Forms Bullet Graph control | Syncfusion
+description: Learn about Measure Settings (Featured / Comparative Measure) support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
 
-# Measure Settings (Featured / Comparative Measure)
+# Measure Settings (Featured / Comparative Measure) in Windows Forms Bullet Graph
 
 ### Featured Measure:
 
@@ -39,7 +39,7 @@ The value of the Featured Measure of the BulletGraph is set by the FeaturedMeasu
 
 {% endhighlight %}
 
-![](Features_images/Features_img5.png)
+![Features_img5](Features_images/Features_img5.png)
 
 ### Comparative Measure:
 
@@ -69,4 +69,4 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![](Features_images/Features_img6.png)
+![Features_img6](Features_images/Features_img6.png)

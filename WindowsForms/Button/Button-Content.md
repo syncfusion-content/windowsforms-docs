@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button Content| WindowsForms | Syncfusion
-description: Button Content
+title: Button Content in Windows Forms Button control | Syncfusion
+description: Learn about Button Content support in Syncfusion Windows Forms Button (SfButton) control and more details.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# Button Content
+# Button Content in Windows Forms Button (SfButton)
 
 ## Adding Rich Text
 
@@ -25,7 +25,7 @@ this.sfButton1.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red0\\green0\\blue0;\\r
 {% endhighlight %}
 {% endtabs %}
 
-![](SfButton_images/SfButton_img6.jpeg)
+![SfButton_img6](SfButton_images/SfButton_img6.jpeg)
 
 **Note**: When the AllowRichText property is false, even if you add the rich text to the Text property, it will draw as normal text inside the button.
 
@@ -44,7 +44,7 @@ sfButton1.AllowWrapText = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfButton_images/SfButton_img7.jpeg)
+![SfButton_img7](SfButton_images/SfButton_img7.jpeg)
 
 **Note**: If the AutoSize property is enabled, the SfButton does not allow you to wrap the text.
 
@@ -60,7 +60,7 @@ sfButton1.AutoEllipsis = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfButton_images/SfButton_img8.jpeg)
+![SfButton_img8](SfButton_images/SfButton_img8.jpeg)
 
 **Note**: The SfButton will trim the characters only when disabling the AutoSize property and text length should be greater than the button width.
 

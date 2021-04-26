@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with AutoComplete | Syncfusion
-description: This section explains about working with various options in AutoComplete.
+title: Working with AutoComplete in Windows Forms AutoComplete control | Syncfusion
+description: Learn about Working with AutoComplete support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# Working with AutoComplete
+# Working with AutoComplete in Windows Forms AutoComplete
 
 This section explains how to work with various options in the AutoComplete component.
 

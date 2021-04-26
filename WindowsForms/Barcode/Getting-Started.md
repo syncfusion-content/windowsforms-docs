@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
-description: This section explains about the SfBarcode.
+title: Getting Started with Windows Forms Barcode control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Barcode control and more details.
 platform: windowsforms
 control: SfBarcode
 documentation: ug
 ---
-# Getting Started 
+# Getting Started with Windows Forms Barcode
 This section provides a quick overview for working with the barcode for WinForms.
 
 ## Assembly deployment
@@ -28,7 +28,7 @@ Create new Windows Forms Project in Visual Studio to display SfBarcode.
 
 ### Adding control via Designer
 SfBarcode control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
 
 ### Adding control in Code
 In order to add control manually, do the below steps,

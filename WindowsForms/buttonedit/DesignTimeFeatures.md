@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Design Time Features | WindowsForms | Syncfusion
-description: This section gives detailed description on design time features to customize the settings of ButtonEdit control.
+title: DesignTimeFeatures in Windows Forms ButtonEdit control | Syncfusion
+description: Learn about DesignTimeFeatures support in Syncfusion Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Design Time Features
+# DesignTimeFeatures in Windows Forms ButtonEdit
 
 [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control has Smart Tag, which lets you customize the properties easily.
 

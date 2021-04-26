@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataSource | Syncfusion
-description: This section explains about the datasource in AutoComplete
+title: DataSource in Windows Forms AutoComplete control | Syncfusion
+description: Learn about DataSource support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# DataSource
+# DataSource in Windows Forms AutoComplete
 
 The AutoComplete component supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces such as IList, IBindingList, ITypedList, and IListSource. For assigning data source to AutoComplete, use the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html#Syncfusion_Windows_Forms_Tools_AutoComplete_DataSource) property. This section explains about the different types of data binding mechanisms and data settings supported by the AutoComplete component.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TextBox Settings For ButtonEdit | WindowsForms | Syncfusion
-description: This section gives detailed description on how to customize the TextBox settings of ButtonEdit control.
+title: TextBoxSettingsForButtonEdit in Windows Forms ButtonEdit control | Syncfusion
+description: Learn about TextBoxSettingsForButtonEdit support in Syncfusion Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# TextBox Settings For ButtonEdit
+# TextBoxSettingsForButtonEdit in Windows Forms ButtonEdit
 
 The default textbox within the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control can be replaced with any custom textbox like [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview), [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview), and so on. The embedded textbox of a ButtonEdit control can shown by [ShowTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_ShowTextBox) property and customized by [SelectionLength](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_SelectionLength) and [SelectionStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html#Syncfusion_Windows_Forms_Tools_ButtonEdit_SelectionStart) properties.
 

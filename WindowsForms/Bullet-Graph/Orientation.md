@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: features
+title: Orientation in Windows Forms Bullet Graph control | Syncfusion
+description: Learn about Orientation support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Orientation
+# Orientation in Windows Forms Bullet Graph
 
 The view of the Bullet Graph is changed by setting the Orientation property. Quantitative scale contains two major components: Ticks and Labels. The length of the quantitative scale is customized by using the QuantitativeScaleLength property. The direction of the quantitative scale is personalized by making use of the FlowDirection property it’s either Forward or Backward.
 
