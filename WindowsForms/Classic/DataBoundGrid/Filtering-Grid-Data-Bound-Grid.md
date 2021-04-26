@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering Grid Data Bound Grid in Windows Forms xptoolbar control | Syncfusion
+title: Filtering GridDataBound Grid in WinForms xptoolbar | Syncfusion
 description: Learn about Filtering Grid Data Bound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Filtering Grid Data Bound Grid in Windows Forms GridDataBoundGrid(Classic)
+# Filtering Grid Data Bound Grid in Windows Forms GridDataBoundGrid
 
 We will use an example to illustrate filtering procedure for the grid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Field Chooser for Databound Grid in Windows Forms xptoolbar control | Syncfusion
+title: Databound Grid in Windows Forms xptoolbar | Syncfusion
 description: Learn about Field Chooser for Databound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Field Chooser for Data bound Grid in Windows Forms GridDataBoundGrid(Classic)
+# Field Chooser for Data bound Grid in Windows Forms GridDataBoundGrid
 
 This feature enables you to customize the view of the grid without modifying the database.The _FieldChooser_ class of _GridDataBoundGrid_ has been implemented to add or remove columns from a grid. 
 

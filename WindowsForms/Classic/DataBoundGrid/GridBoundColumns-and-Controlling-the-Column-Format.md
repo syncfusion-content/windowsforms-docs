@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridboundcolumns and Controlling the Column Format in Windows Forms xptoolbar control | Syncfusion
+title: Gridboundcolumns in Windows Forms xptoolbar | Syncfusion
 description: Learn about Gridboundcolumns and Controlling the Column Format support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Grid bound columns and Controlling the Column Format in Windows Forms GridDataBoundGrid(Classic)
+# Gridboundcolumns in Windows Forms xptoolbar
 
 To control properties of a column in your Grid DataBound Grid, you must use GridBoundColumn class object. You can also explicitly add GridBoundColumn object to GridDataBoundGrid.GridBoundColumns collection for each column that you want to see in the grid or you can let GridDataBoundGrid.Binder class generate these columns for you. 
 

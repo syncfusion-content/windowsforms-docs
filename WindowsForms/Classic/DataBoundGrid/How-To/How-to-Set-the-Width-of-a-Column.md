@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Set the Width of a Column in Windows Forms GridDataBoundGrid(Classic)
+# How to Set the Width of a Column in Windows Forms GridDataBoundGrid
 
 In order to change the width of columns in GridDataBoundGrid, you must do the following.
 

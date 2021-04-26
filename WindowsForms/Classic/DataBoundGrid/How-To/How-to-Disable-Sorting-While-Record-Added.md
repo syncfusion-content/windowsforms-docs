@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Disable Sorting While Record Added in Windows Forms GridDataBoundGrid(Classic)
+# Record Added in Windows Forms GridDataBoundGrid(Classic)
 
 
 

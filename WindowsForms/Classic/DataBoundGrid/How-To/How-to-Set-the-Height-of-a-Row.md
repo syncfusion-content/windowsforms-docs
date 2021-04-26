@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Set the Height of a Row in Windows Forms GridDataBoundGrid(Classic)
+# How to Set the Height of a Row in Windows Forms GridDataBoundGrid
 
 To explicitly set the height of a particular row, use the Model.RowHeights collection.
 

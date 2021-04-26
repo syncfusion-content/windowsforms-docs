@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessing Values in the Grid Data Bound Grid and in the Data Source in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Accessing Values in the Grid Data Bound Grid and in the Data Source support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: About DataBoundGrid in Windows Forms xptoolbar | Syncfusion
+description: Learn about Accessing Values in the Grid Data Bound Grid and in the Data Source support in Syncfusion Windows Forms GridDataBoundGrid and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Accessing Values in the Grid Data Bound Grid and in the Data Source in Windows Forms GridDataBoundGrid(Classic)
+# DataBoundGrid in Windows Forms xptoolbar
 
 To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
 

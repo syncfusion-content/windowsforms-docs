@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Include-an-Icon-in-the-Column-Header | Windows Forms | Syncfusion
+title: Column-Header in Windows Forms DataBoundGrid | Syncfusion
 description: Learn about How to Include an Icon in The Column Header support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Include an Icon in The Column Header in Windows Forms GridDataBoundGrid(Classic)
+# Column Header in Windows Forms GridDataBoundGrid(Classic)
 
 You can place images in cells by specifying style.ImageIndex and style.ImageList values for the cell, provided the style.CellType is either "Static" or "text box". To make your header cell hold an icon, you can make it "Static" and set these properties appropriately. For GridDataBoundGrid, setting such properties on a single cell will require the use of PrepareViewStyleInfo event.
 

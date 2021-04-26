@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How To Get The Selected Text From a Textbox Cell in Windows Forms GridDataBoundGrid(Classic)
+# Textbox Cell in Windows Forms GridDataBoundGrid(Classic)
 
 To get the selected text from a TextBox cell, the TextBox renderer should be acquired inside the CurrentCellStartEditing event. MouseUp event should be hooked to get the selected text from the TextBox cell.
 

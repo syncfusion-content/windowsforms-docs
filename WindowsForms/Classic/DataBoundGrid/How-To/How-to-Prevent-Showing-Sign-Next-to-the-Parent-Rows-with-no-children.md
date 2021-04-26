@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Prevent-Showing--Sign-Next-to-the-Parent-Rows-with-no-children | Windows Forms | Syncfusion
+title: Sign-Next-to-the-Parent-Rows in DataBoundGrid | Syncfusion
 description: Learn about How to Prevent Showing Sign Next to the Parent Rows with no Children support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Prevent Showing Sign Next to the Parent Rows with no Children in Windows Forms GridDataBoundGrid(Classic)
+# Sign Next to the Parent Rows in WinForms GridDataBoundGrid
 
 To hide expansion indicator that reflects that no children are present at the parent row in a hierarchical grid, you will need to handle CellDrawn and CellButtonClick Event. 
 

@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Column Header Text in Windows Forms GridDataBoundGrid(Classic)
+# Change the Column Header Text in WinForms GridDataBoundGrid
 
 GridDataBoundGrid by default uses the property name of the content of the columns as the header text. For DataTable, this is the DataColumn.ColumnName property.
 

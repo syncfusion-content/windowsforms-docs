@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-QueryCellFormattedText-and-SaveCellFormattedText | Windows Forms | Syncfusion
+title: Format the Text in Windows Forms GridDataBoundGrid | Syncfusion
 description: Learn about How to Format the Text support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid

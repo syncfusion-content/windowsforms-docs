@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to use Combo Box in a Column in Windows Forms GridDataBoundGrid(Classic)
+# How to use Combo Box in a Column in WinForms GridDataBoundGrid
 
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 

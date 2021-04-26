@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Apply-Filtering-on-GridDataBound-Grid-based-on-a-node-selected-in-tree-view | Windows Forms | Syncfusion
-description: Learn about How to Apply Filtering on Griddatabound Grid Based on a Node Selected in Tree View support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: How-to-Apply-Filtering-on-GridDataBound Control | Syncfusion
+description: Learn about How to Apply Filtering on Griddatabound Grid Based on a Node Selected in Tree View in Windows Forms GridDataBoundGridand more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Apply Filtering on Grid data bound Grid Based on a Node Selected in Tree View in Windows Forms GridDataBoundGrid(Classic)
+# Apply Filtering on Grid In Windows Forms GridDataBoundGrid
 
 GridDataBound grid is designed to bind data sources such as data table, string collection, data set, and data view. The filter bar can be enabled and hidden in the grid. Before selecting a node in the Tree view, the grid will load all the data from the data source. TreeView_AfterSelect event is used to determine the tree view node and perform filter operation on the grid control corresponding to the node that you selected in the Tree view. The following code example illustrates how to apply filtering on GridDataBound grid based on a node selected in the Tree view.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms CurrencyEdit control and more details.
+description: Learn about Events support in Syncfusion Essential Studio Windows Forms CurrencyEdit control and more details.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug

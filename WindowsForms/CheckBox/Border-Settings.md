@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings in Windows Forms CheckBox control | Syncfusion
-description: Learn about Border Settings support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: Border-Settings | WindowsForms | Syncfusion
+description:  This section gives the detailed description about customizing the color and styles of CheckBoxAdv control border.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Border Settings in Windows Forms CheckBox (CheckBoxAdv)
+# Border Settings of CheckBoxAdv
 
 You can change the color and styles of [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control border using [Border3DStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_Border3DStyle), [BorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BorderColor), [BorderSingle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BorderSingle), [BorderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BorderStyle) and [HotBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_HotBorderColor) properties.
 

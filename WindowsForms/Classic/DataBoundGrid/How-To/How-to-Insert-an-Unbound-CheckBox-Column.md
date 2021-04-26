@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Insert an Unbound Checkbox Column in Windows Forms GridDataBoundGrid(Classic)
+# Unbound Checkbox in WinForms GridDataBoundGrid(Classic)
 
 There are three steps needed to have an unbound checkbox column in GridDataBoundGrid.
 

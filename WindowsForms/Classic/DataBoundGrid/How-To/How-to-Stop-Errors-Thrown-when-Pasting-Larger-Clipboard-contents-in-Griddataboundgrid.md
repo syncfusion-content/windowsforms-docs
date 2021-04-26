@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Stop-Errors-Thrown-when-Pasting-Larger-Clipboard-contents-in-Griddataboundgrid | Windows Forms | Syncfusion
-description: Learn about How to Stop Errors Thrown When Pasting Larger Clipboard Contents in Griddataboundgrid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: Clipboard-contents-in-Griddataboundgrid | Windows Forms | Syncfusion
+description: Learn about How to Stop Errors Thrown When Pasting Larger Clipboard Contents in Griddataboundgrid support in Windows Forms GridDataBoundGrid and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Stop Errors Thrown When Pasting Larger Clipboard Contents in Grid data bound grid in Windows Forms GridDataBoundGrid(Classic)
+# Grid data bound in Windows Forms GridDataBoundGrid(Classic)
 
 IndexOutOfRangeException is thrown when trying to paste clipboard contents that are greater than the number of columns and rows that are available to accommodate the contents. To stop the exception, a condition check at Model.PasteCellText handler will do good.
 

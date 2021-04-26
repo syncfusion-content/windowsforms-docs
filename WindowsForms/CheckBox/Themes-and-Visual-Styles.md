@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes and Visual Styles in Windows Forms CheckBox control | Syncfusion
-description: Learn about Themes and Visual Styles support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
+title: Themes-and-Visual-Styles | WindowsForms | Syncfusion
+description: This section gives the detailed description about customizing the themes and visual styles of CheckBoxAdv control.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Themes and Visual Styles in Windows Forms CheckBox (CheckBoxAdv)
+# Themes and Visual Styles
 
 This section discusses the themes and visual style settings supported by the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control.
 

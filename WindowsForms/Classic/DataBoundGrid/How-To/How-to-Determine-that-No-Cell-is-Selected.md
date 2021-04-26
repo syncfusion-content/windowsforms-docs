@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Determine that no Cell is Selected in Windows Forms GridDataBoundGrid(Classic)
+# No Cell is Selected in WinForms GridDataBoundGrid
 
 To determine whether the cell is selected or not, use GetSelectedRange method. It returns the list with selected range. If it returns the range as zero, then no cell is selected.
 

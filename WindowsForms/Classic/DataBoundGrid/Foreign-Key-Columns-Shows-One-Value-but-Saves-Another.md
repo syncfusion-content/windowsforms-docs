@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Foreign Key Columns Shows one Value but Saves Another in Windows Forms xptoolbar control | Syncfusion
+title: Foreign Key Columns Value in Windows Forms xptoolbar | Syncfusion
 description: Learn about Foreign Key Columns Shows one Value but Saves Another support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Foreign Key Columns Shows one Value but Saves Another in Windows Forms GridDataBoundGrid(Classic)
+# Windows Forms DataBoundGrid xptoolbar Control
 
 Very often a table will have a column that displays an ID key defined in another table. In your grid, you may like to have this foreign key mapped to some meaningful value, which is referenced from a different column in this other table. The key column in the foreign table is referred as ValueMember and the meaningful column is referred as DisplayMember. 
 

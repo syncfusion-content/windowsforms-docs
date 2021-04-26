@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-#  Event Handling
+#  Event Handling in Windows Forms xptoolbar
 
 ## Selection Events
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculator Settings in Windows Forms ContextMenuStrip control | Syncfusion
+title: Calculator Settings in Windows Forms ContextMenuStrip | Syncfusion
 description: Learn about Calculator Settings support in Syncfusion Windows Forms CurrencyEdit control and more details.
 platform: WindowsForms
 control: CurrencyEdit

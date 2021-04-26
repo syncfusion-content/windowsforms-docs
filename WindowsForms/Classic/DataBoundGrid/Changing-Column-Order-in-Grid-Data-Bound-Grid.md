@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Changing Column Order in Grid Data Bound Grid in Windows Forms xptoolbar control | Syncfusion
+title: ABout DataBoundGrid in Windows Forms xptoolbar | Syncfusion
 description: Learn about Changing Column Order in Grid Data Bound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Changing Column Order in Grid Data Bound Grid in Windows Forms GridDataBoundGrid(Classic)
+# DataBoundGrid in Windows Forms xptoolbar
 
 The simplest way to change the column order in a Grid Data Bound Grid is to use the GridDataBoundGrid.Model.Cols.MoveRange method. This method will rearrange columns that are based on from and to and counts the parameters passed into it. 
 

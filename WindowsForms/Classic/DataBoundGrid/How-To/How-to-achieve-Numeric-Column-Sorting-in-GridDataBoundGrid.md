@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-achieve-Numeric-Column-Sorting-in-GridDataBoundGrid | Windows Forms | Syncfusion
+title: GridDataBoundGrid | Windows Forms | Syncfusion
 description: Learn about How to Achieve Numeric Column Sorting in Griddataboundgrid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Achieve Numeric Column Sorting in Grid data bound grid in Windows Forms GridDataBoundGrid(Classic)
+# Grid data bound in Windows Forms GridDataBoundGrid(Classic)
 
 
 To perform a custom sort through DataView, the object in the column should implement IComparer interface. Once this is done, DataView will use IComparer interface implementation to sort the column instead of using default sort of control.

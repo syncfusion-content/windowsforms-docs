@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding to an Arraylist in Windows Forms xptoolbar control | Syncfusion
+title: Binding to an Arraylist in Windows Forms xptoolbar | Syncfusion
 description: Learn about Binding to an Arraylist support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Paste-Clipboard-Contents-Bigger-than-GridDataBoundGrid-row-and-column-count | Windows Forms | Syncfusion
-description: Learn about How to Paste Clipboard Contents Bigger Than Griddataboundgrid Row and Column Count support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: GridDataBoundGrid-row-and-column-count | Windows Forms | Syncfusion
+description: Learn about How to Paste Clipboard Contents Bigger Than Griddataboundgrid Row and Column Count support in Windows Forms GridDataBoundGrid and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Paste Clipboard Contents Bigger Than Grid data bound grid Row and Column Count in Windows Forms GridDataBoundGrid(Classic)
+# Grid data bound Row and Column Count in WinForms GridDataBoundGrid
 
 GridDataBoundGrid does not increment row and column count as GridControl. The reason for this is that GridDataBoundGrid does not have its own DataSource, and it has to store these in the relevant DataTable. To add rows and columns in the DataTable, Model.ClipboardPaste handler must be used.
 
