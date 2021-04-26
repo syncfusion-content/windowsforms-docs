@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Button | Syncfusion
-description: This section explains about the advanced button control for windows forms and it's important key features
+title: About Windows Forms Button control | Syncfusion
+description: Learn here about introduction of Syncfusion Windows Forms Button (SfButton) control and more details.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Button (SfButton) Overview
 
 The SfButton is an advanced button control capable of displaying text and image with various customizations. It provide options to customize the text, image, border, and appearance in all states of the button.
 

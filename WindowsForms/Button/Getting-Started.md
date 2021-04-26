@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started| WindowsForms | Syncfusion
-description: Getting Started
+title: Getting Started with Windows Forms Button control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Button (SfButton) control and more details.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Button (SfButton)
 
 ## Assembly Deployment
 
@@ -21,7 +21,7 @@ This section describes how to add the SfButton to a form.
 
 To add the SfButton to form, drag and drop the SfButton from the toolbox to the surface of the form designer.
 
-![](SfButton_images/SfButton_img1.jpeg)
+![SfButton_img1](SfButton_images/SfButton_img1.jpeg)
 
 ### Through Code
 

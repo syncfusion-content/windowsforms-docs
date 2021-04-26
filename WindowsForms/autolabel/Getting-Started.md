@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | AutoLabel Control for Windows Forms | Syncfusion
-description: This section explains about the getting started with the important key features of AutoLabel control for windows forms.
+title: Getting Started with Windows Forms AutoLabel control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
 platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
 
-# Getting Started with Windows Forms AutoLabel Control
+# Getting Started with Windows Forms AutoLabel
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio, and add the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control with its basic functionalities.
 
