@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This session explains that the supported formulas with syntax and description of Web functions in CalcEngine.
+title: Web Formulas in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Web Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Web Formulas of Calculate library
+# Web Formulas in Windows Forms Calculation Engine (Calculate)
 
 
 

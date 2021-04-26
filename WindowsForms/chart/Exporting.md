@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | Windows Forms | Syncfusion
-description: exporting
+title: Exporting in Windows Forms Chart control | Syncfusion
+description: Learn about Exporting support in Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Exporting
+# Exporting in Windows Forms Chart
 
 EssentialChart has built-in support for exporting the chart control into various image formats. Also, using our complementary products like Essential **XlsIO, DocIO and PDF** you can also export the chart image into **Excel, Word Doc and PDF** documents.
 

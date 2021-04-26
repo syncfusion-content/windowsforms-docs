@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date and Time in Calculate | WindowsForms | Syncfusion
-description: This session explains that the supported formulas with syntax and description of  Date and Time functions in CalcEngine 
+title: Date Time in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Date Time support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Date and Time in Calculate
+# Date Time in Windows Forms Calculation Engine (Calculate)
 
 ## DATE
 

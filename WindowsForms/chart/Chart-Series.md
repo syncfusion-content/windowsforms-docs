@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Series | Windows Forms | Syncfusion
-description: This section explains about what chart series and trendlines is and how to customize it in different ways.
+title: Chart Series in Windows Forms Chart control | Syncfusion
+description: Learn about Chart Series support in Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

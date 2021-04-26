@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection dates | SfCalendar | Windows Forms | Syncfusion
-description: Selecting dates through keyboard and programmatically. Also Multiple Dates of SfCalendar control for Windows Forms
+title: Selection in Windows Forms Calendar control | Syncfusion
+description: Learn about Selection support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug
