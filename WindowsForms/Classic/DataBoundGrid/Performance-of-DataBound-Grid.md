@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Performance of Databound Grid in Windows Forms GridDataBoundGrid(Classic)
+# Performance of Data bound Grid in Windows Forms GridDataBoundGrid(Classic)
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 

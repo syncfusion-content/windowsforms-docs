@@ -18,7 +18,7 @@ The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 5. Create a name for your DataSet object and select the table(s) to include. 
 6. Enter the following code in the Load event of your form to fill the DataSet with data from the database.
 
-   ![](ComboBoxAutoComplete-Images/Overview_img48.jpeg)
+   ![Windows Forms ComboBoxAutoComplete Image48](ComboBoxAutoComplete-Images/Overview_img48.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -40,7 +40,7 @@ Me.oleDbDataAdapter1.Fill(Me.dataSet11);
 
 Add columns through designer using ComboBoxAutoComplete.AutoCompleteControl.Columns property. Set the first column as the matching column.
 
- ![](ComboBoxAutoComplete-Images/Overview_img49.jpeg) 
+ ![Windows Forms ComboBoxAutoComplete Image49](ComboBoxAutoComplete-Images/Overview_img49.jpeg) 
 
 
 

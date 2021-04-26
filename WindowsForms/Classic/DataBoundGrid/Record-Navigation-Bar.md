@@ -31,7 +31,7 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 2. Step 2: Drag Grid Record Navigation control onto the form.
 
-   ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img4.png) 
+   ![Windows Forms Record-Navigation-Bar Image4](Record-Navigation-Bar_images/Record-Navigation-Bar_img4.png) 
 
 
 
@@ -39,13 +39,13 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
 3. Step 3: Drag Grid DataBound Grid onto the Grid Record Navigation control.
 
-   ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img5.png) 
+   ![Windows Forms Record-Navigation-Bar Image5](Record-Navigation-Bar_images/Record-Navigation-Bar_img5.png) 
 
 
 
    N> Records can be displayed by typing in the NavigationBar.
 
-   ![](Record-Navigation-Bar_images/Record-Navigation-Bar_img7.jpeg) 
+   ![Windows Forms Record-Navigation-Bar Image7](Record-Navigation-Bar_images/Record-Navigation-Bar_img7.jpeg) 
 
 
 DataBound Grid is displayed within Grid Record Navigation control.

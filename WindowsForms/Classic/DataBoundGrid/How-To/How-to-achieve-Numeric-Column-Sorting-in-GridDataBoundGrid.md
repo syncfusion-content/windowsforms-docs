@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Achieve Numeric Column Sorting in Griddataboundgrid in Windows Forms GridDataBoundGrid(Classic)
+# How to Achieve Numeric Column Sorting in Grid data bound grid in Windows Forms GridDataBoundGrid(Classic)
 
 
 To perform a custom sort through DataView, the object in the column should implement IComparer interface. Once this is done, DataView will use IComparer interface implementation to sort the column instead of using default sort of control.

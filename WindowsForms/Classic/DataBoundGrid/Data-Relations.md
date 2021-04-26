@@ -142,7 +142,7 @@ Me.gridDataBoundGrid1.ExpandAll()
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Data-Relations_images/Data-Relations_img4.jpeg)
+   ![Windows Forms Data-Relations Image4](Data-Relations_images/Data-Relations_img4.jpeg)
 
 
 
@@ -159,4 +159,4 @@ Me.gridDataBoundGrid1.ExpandAll()
 Me.gridDataBoundGrid1.CollapseAll()
 {% endhighlight %}
 {% endtabs %}
-   ![](Data-Relations_images/Data-Relations_img5.jpeg) 
+   ![Windows Forms Data-Relations Image5](Data-Relations_images/Data-Relations_img5.jpeg) 

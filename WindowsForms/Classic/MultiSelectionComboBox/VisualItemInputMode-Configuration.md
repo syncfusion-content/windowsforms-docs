@@ -7,7 +7,7 @@ control: Editors Package
 documentation: ug
 ---
 
-# VisualItemInputmode Configuration in Windows Forms MultiSelectionComboBox
+# VisualItemInput mode Configuration in Windows Forms MultiSelectionComboBox
 
 The property named VisualItemInputMode helps to define the Visual Items in Text Input.
 

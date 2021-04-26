@@ -15,7 +15,7 @@ documentation: ug
 
 Checkboxes in drop down list can be enabled for multiple items selection through the ShowCheckBox property. 
 
-![7](Overview_images/Overview_img344.png) 
+![Windows Forms Editors Package Overview Image7](Overview_images/Overview_img344.png) 
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ Me.MultiSelectionComboBox1.ShowCheckBox = True
 
 Grouping Header background color can be customized using GroupHeaderBackColor property.
 
-![8](Overview_images/Overview_img345.png) 
+![Windows Forms Editors Package Overview Image8](Overview_images/Overview_img345.png) 
 
 The following code sample illustrates you on how to customize Group Header background color.
 
@@ -57,7 +57,7 @@ Me.MultiSelectionComboBox1.GroupHeaderBackColor = Color.White
 
 Grouping Header text color can be customized using GroupHeaderForeColor property.
 
-![9](Overview_images/Overview_img346.png) 
+![Windows Forms Editors Package Overview Image9](Overview_images/Overview_img346.png) 
 
 The following code sample illustrates you on how to customize Group Header ForeColor.
 
@@ -79,7 +79,7 @@ Me.MultiSelectionComboBox1.GroupHeaderForeColor = Color.White
 
 Grouping Header Separator Color can be customized using GroupHeaderSeparatorColor property.
 
-![10](Overview_images/Overview_img347.png) 
+![Windows Forms Editors Package Overview Image10](Overview_images/Overview_img347.png) 
 
 The following code sample illustrates you on how to customize Group Header Separator Color.
 
@@ -183,7 +183,7 @@ Me.MultiSelectionComboBox1.MaxDropDownItems = 5
 
 Visual Item background color can be customized using VisualItemBackColor property.
 
-![11](Overview_images/Overview_img348.png) 
+![Windows Forms Editors Package Overview Image11](Overview_images/Overview_img348.png) 
 
 The following code sample illustrates you on how to customize Visual Item Back Color.
 
@@ -205,7 +205,7 @@ Me.MultiSelectionComboBox1.VisualItemBackColor = Color.White
 
 Visual Item Fore Color can be customized using VisualItemForeColor property.
 
-![12](Overview_images/Overview_img349.png) 
+![Windows Forms Editors Package Overview Image12](Overview_images/Overview_img349.png) 
 
 The following code sample illustrates you on how to customize Visual Item Fore Color.
 
@@ -227,7 +227,7 @@ Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
 
 Visual Item Back Color upon selection can be customized using VisualItemSelectionColor property.
 
-![13](Overview_images/Overview_img350.png) 
+![Windows Forms Editors Package Overview Image13](Overview_images/Overview_img350.png) 
 
 The following code sample illustrates you on how to customize Visual Item Back Color upon selection.
 
@@ -249,7 +249,7 @@ Me.MultiSelectionComboBox1.VisualItemForeColor = Color.Black
 
 Visual Item Border Color can be customized using VisualItemBorderColor property.
 
-![14](Overview_images/Overview_img351.png)
+![Windows Forms Editors Package Overview Image14](Overview_images/Overview_img351.png)
 
 The following code sample illustrates you on how to customize Visual Item Border Color.
 
@@ -271,7 +271,7 @@ Me.MultiSelectionComboBox1.VisualItemBorderColor = Color.Black
 
 Upon selecting multiple items from its drop down list, each selected item is separated by user defined delimiter character.
 
-![15](Overview_images/Overview_img352.png) 
+![Windows Forms Editors Package Overview Image15](Overview_images/Overview_img352.png) 
 
 The following code sample illustrates you on how to set delimiter character.
 

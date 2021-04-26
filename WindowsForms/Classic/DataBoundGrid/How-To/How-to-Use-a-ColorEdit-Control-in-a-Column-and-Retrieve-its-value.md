@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Use a Coloredit Control in a Column and Retrieve its Value in Windows Forms GridDataBoundGrid(Classic)
+# How to Use a Colored it Control in a Column and Retrieve its Value in Windows Forms GridDataBoundGrid(Classic)
 
 Set the CellType property in the cell style to "ColorEdit" and the text property to the appropriate value. To access a column's style, use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added the GridBoundColumns or not.
 

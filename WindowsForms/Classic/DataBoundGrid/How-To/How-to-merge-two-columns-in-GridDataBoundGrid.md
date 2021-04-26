@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How To Merge Two Columns in Griddataboundgrid in Windows Forms GridDataBoundGrid(Classic)
+# How To Merge Two Columns in Grid data bound grid in Windows Forms GridDataBoundGrid(Classic)
 
 You can make use of CoveredRanges property to merge two or more columns in GridDataBoundGrid.
 

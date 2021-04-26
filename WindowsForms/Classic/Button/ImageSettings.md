@@ -17,7 +17,7 @@ ButtonAdv supports two types of images. They are,
 
 BackgroundImage is the image used as the Background for the control, which is set using the BackgroundImage property. This BackgroundImage can be laid in various manner with the BackgroundImageLayout property.
 
- ![](Overview_images/Overview_img71.jpeg)
+ ![Windows Forms Tools Overview Image71](Overview_images/Overview_img71.jpeg)
 
 ## Image
 

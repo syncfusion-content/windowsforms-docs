@@ -22,20 +22,20 @@ N> This is applicable only for VS2005.
 
 1. Drag-and-drop a ComboBoxAutoComplete control from the toolbox onto the form.
 
-   ![](ComboBoxAutoComplete-Images/Overview_img39.jpeg) 
+   ![Windows Forms ComboBoxAutoComplete Image39](ComboBoxAutoComplete-Images/Overview_img39.jpeg) 
 
 
 
 2. Add items to ComboBoxAutoComplete using AutoCompleteCustomSource collection editor as shown below.
 
-   ![](ComboBoxAutoComplete-Images/Overview_img40.jpeg)
+   ![Windows Forms ComboBoxAutoComplete Image40](ComboBoxAutoComplete-Images/Overview_img40.jpeg)
 
 
 
 3. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. See [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoCompleteModes. 
 4. Set AutoCompleteSource to CustomSource as shown below. See  [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoComplete sources.
 
-    ![](ComboBoxAutoComplete-Images/Overview_img41.jpeg) 
+    ![Windows Forms ComboBoxAutoComplete Image41](ComboBoxAutoComplete-Images/Overview_img41.jpeg) 
 
 
 
@@ -110,7 +110,7 @@ Me.Controls.Add(Me.comboBoxAutoComplete1)
 
 4. Run the application.
 
-   ![](ComboBoxAutoComplete-Images/Overview_img43.jpeg)
+   ![Windows Forms ComboBoxAutoComplete Image43](ComboBoxAutoComplete-Images/Overview_img43.jpeg)
 
 
 

@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Support Tri State Sorting in a Griddataboundgridcontrol in Windows Forms GridDataBoundGrid(Classic)
+# How to Support Tri State Sorting in a Grid data bound grid control in Windows Forms GridDataBoundGrid(Classic)
 
 The standard sorting never removes sorting from a column; so once a column is sorted it will either be in ascending or descending order. By using GridDataBoundGridControl'sCellClick event, it is possible to alter this behavior so that when a column is clicked once, it will be sorted in an ascending order; when it is clicked a second time, the column will be sorted in a descending order; and when the column is clicked a third time, its sorting will be removed.
 

@@ -85,7 +85,7 @@ Click Next to confirm the Query you selected.
 
 Click Finish. Your design surface will look similar to this.
 
- ![](Getting-Started_images/Getting-Started_img8.jpeg) 
+ ![Windows Forms Getting-Started Image8](Getting-Started_images/Getting-Started_img8.jpeg) 
 
 
 
@@ -101,7 +101,7 @@ Press OK to add DataSet11 object next to sqlConnection1 under the design surface
 
 From the toolbox, drag Grid Data Bound Grid control to your form. Size and position it and add a button labeled Update to your form.
 
- ![](Getting-Started_images/Getting-Started_img10.jpeg) 
+ ![Windows Forms Getting-Started Image10](Getting-Started_images/Getting-Started_img10.jpeg) 
 
 
 
@@ -155,7 +155,7 @@ Now when you click Update button, it will post the changes made back to your dat
 
 GridBoundColumn collection property of DataBound Grid is used to set column properties. This collection will let you control columns displayed and their order. For each column that you want displayed, add a Grid Bound Column. In this Grid Bound Column, you must set MappingName property; the other properties such as HeaderText and Style are optional. Under the Style property, you will have access to normal GridStyleInfo properties that you can apply to this column such as BackColor, CellType and Font.
 
- ![](Getting-Started_images/Getting-Started_img11.jpeg) 
+ ![Windows Forms Getting-Started Image11](Getting-Started_images/Getting-Started_img11.jpeg) 
 
 
 
@@ -167,7 +167,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Click Add button to add a grid bound column, and then set MappingName property of that grid bound column to _ProductName_.
 
-   ![](Getting-Started_images/Getting-Started_img12.jpeg) 
+   ![Windows Forms Getting-Started Image12](Getting-Started_images/Getting-Started_img12.jpeg) 
 
 
 
@@ -175,7 +175,7 @@ GridBoundColumn collection property of DataBound Grid is used to set column prop
 
    Select StyleInfo property and set BackColor for the column as shown in the following screen shot.
 
-   ![](Getting-Started_images/Getting-Started_img13.jpeg) 
+   ![Windows Forms Getting-Started Image13](Getting-Started_images/Getting-Started_img13.jpeg) 
 
 
 

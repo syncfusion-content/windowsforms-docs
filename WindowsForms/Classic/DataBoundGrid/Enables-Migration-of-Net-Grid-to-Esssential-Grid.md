@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Enables Migration of Net Grid to Esssential Grid in Windows Forms GridDataBoundGrid(Classic)
+# Enables Migration of Net Grid to Essential Grid in Windows Forms GridDataBoundGrid(Classic)
 
 Look-up table that Enables Migration of .NET Grid to Essential Grid
 

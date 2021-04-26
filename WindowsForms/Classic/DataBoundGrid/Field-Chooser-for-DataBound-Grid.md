@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Field Chooser for Databound Grid in Windows Forms GridDataBoundGrid(Classic)
+# Field Chooser for Data bound Grid in Windows Forms GridDataBoundGrid(Classic)
 
 This feature enables you to customize the view of the grid without modifying the database.The _FieldChooser_ class of _GridDataBoundGrid_ has been implemented to add or remove columns from a grid. 
 
@@ -75,17 +75,17 @@ fChooser.WireGrid(Me.GridDataBoundGrid1)
 2. When the code runs, the entire grid will open.
 3. Right click on a column header and select the Field Chooser menu item to view _Field Chooser_ dialog.
 
-   ![](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img1.png) 
+   ![Windows Forms DataBoundGrid Image1](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img1.png) 
 
 
 
 4. This dialog will list all the column names with check boxes adjacent to them.
 
-   ![](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img2.png) 
+   ![Windows Forms DataBoundGrid Image2](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img2.png) 
 
 
 
 5. Select the checkboxes of the columns you want to be displayed in the grid.
 6. The grid will have only the columns which are selected in the _Field Chooser_ dialog.
 
-   ![](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 
+   ![Windows Forms DataBoundGrid Image3](Field-Chooser-for-DataBound-Grid_images/Field-Chooser-for-DataBound-Grid_img3.png) 

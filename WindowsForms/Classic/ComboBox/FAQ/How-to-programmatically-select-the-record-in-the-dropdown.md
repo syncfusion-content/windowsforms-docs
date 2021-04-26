@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-# How to Programmatically Select the Record in the Dropdown that Matches the Text Typed in Comboboxadv in Windows Forms ComboBoxAdv(Classic)
+# How to Programmatically Select the Record in the Dropdown that Matches the Text Typed in Combobox adv in Windows Forms ComboBoxAdv(Classic)
 
 You can handle the DropDown event of the ComboBoxAdv control and set it as shown in the following code example.
 

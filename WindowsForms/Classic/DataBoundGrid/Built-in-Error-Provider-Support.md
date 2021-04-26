@@ -128,7 +128,7 @@ Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 {% endhighlight %}
 {% endtabs %}
 
- ![](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img2.png) 
+ ![Windows Forms Grid Image2](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img2.png) 
 
 
 ## Specifying Error Content

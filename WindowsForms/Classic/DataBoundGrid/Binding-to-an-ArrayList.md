@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Binding to an Arraylist in Windows Forms GridDataBoundGrid(Classic)
+# Binding to an Array list in Windows Forms GridDataBoundGrid(Classic)
 
 You can bind an ArrayList that holds objects with public properties. Given below is an example, which substantiates this point.
 

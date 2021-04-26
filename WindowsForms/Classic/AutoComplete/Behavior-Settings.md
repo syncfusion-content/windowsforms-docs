@@ -84,7 +84,7 @@ N> When DisplayMember is defined, you can assign DisplayMember column value as s
 
 When the datasource of the AutoComplete control is set to a valid datasource through the designer, the "Refresh Columns" verb can be clicked to automatically populate the Columns collection. This option is available in the context menu of the ComboBoxAutoComplete control and also as property grid command.
 
- ![](ComboBoxAutoComplete-Images/Overview_img45.jpeg) 
+ ![Windows Forms ComboBoxAutoComplete Image45](ComboBoxAutoComplete-Images/Overview_img45.jpeg) 
 
 
 
@@ -92,4 +92,4 @@ When the datasource of the AutoComplete control is set to a valid datasource thr
 
 We can set banner text for the ComboBoxAutoComplete control. Refer [BannerTextProvider](/windowsforms/bannertextprovider/overview) Component topic for more details.
 
- ![](ComboBoxAutoComplete-Images/Overview_img46.jpeg)
+ ![Windows Forms ComboBoxAutoComplete Image46](ComboBoxAutoComplete-Images/Overview_img46.jpeg)

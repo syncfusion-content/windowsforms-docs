@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Retrieve Datarow From Griddataboundgrid with Rowindex in Windows Forms GridDataBoundGrid(Classic)
+# How to Retrieve Data row From Grid data bound grid with Row index in Windows Forms GridDataBoundGrid(Classic)
 
 {% tabs %}
 {% highlight c# %}

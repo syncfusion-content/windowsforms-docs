@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ButtonAdvAppearnce in Windows Forms xptoolbar control | Syncfusion
-description: Learn about ButtonAdvAppearnce support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
+title: ButtonAdvAppearance in Windows Forms xptoolbar control | Syncfusion
+description: Learn about ButtonAdvAppearance support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# ButtonAdvAppearnce in Windows Forms ButtonAdv(Classic)
+# ButtonAdvAppearance in Windows Forms ButtonAdv(Classic)
 
 This section will walk you through the below topics which discusses the properties that controls the appearance of the ButtonAdv.
 

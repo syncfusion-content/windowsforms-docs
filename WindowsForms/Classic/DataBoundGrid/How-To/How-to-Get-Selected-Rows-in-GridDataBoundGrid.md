@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to get Selected Rows in Griddataboundgrid in Windows Forms GridDataBoundGrid(Classic)
+# How to get Selected Rows in Grid data bound grid in Windows Forms GridDataBoundGrid(Classic)
 
 To get the selected row use GetSelectedRows method. It returns GridRangeInfoList object, an array of GridRangeInfo objects. This method has two arguments,
 

@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Sort by Displaymember in Windows Forms GridDataBoundGrid(Classic)
+# Sort by Display member in Windows Forms GridDataBoundGrid(Classic)
 
 By default, sorting is done in DataBound Grid through IBindingList.
 
