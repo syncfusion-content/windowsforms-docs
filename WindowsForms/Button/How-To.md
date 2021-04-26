@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How To | WindowsForms | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio Windows Forms SfButton control and more details.
+description: Learn here about How To questions of Syncfusion Essential Studio Windows Forms SfButton control, its elements and more.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# Windows Forms SfButton control
+# How To Questions of Windows Forms SfButton
 
 ## Set the SfButton as Accept or Cancel Button to the Form
 
