@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: features
+title: Caption Settings in Windows Forms Bullet Graph control | Syncfusion
+description: Learn about Caption Settings support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
 
-# Caption Settings
+# Caption Settings in Windows Forms Bullet Graph
 
 The Caption for a Bullet Graph specifies a unique label describing the value represented in the BulletGraph. 
 
@@ -30,7 +30,7 @@ The Caption for a Bullet Graph specifies a unique label describing the value rep
 
 {% endhighlight %}
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 ### Caption Position
 
@@ -57,4 +57,4 @@ The caption in the Bullet Graph is placed at the start or end of the quantitativ
 
 {% endhighlight %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)

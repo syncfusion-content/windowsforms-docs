@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart-Area | Windows Forms | Syncfusion
-description: This section explain about chart area and it's customization in different ways.
+title: Chart Area in Windows Forms Chart control | Syncfusion
+description: Learn about Chart Area support in Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Chart Area
+# Chart Area in Windows Forms Chart
 
 EssentialChart comes with chart divide area support, wherein a single [ChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html) can be divided into equal squares to display more than one chart **(pie, funnel or pyramid)**. To enable this [ChartArea.DivideArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_DivideArea) property should be set to true.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Barcode Customization | SfBarcode | wpf | Syncfusion
-description: barcode customization
+title: Barcode Customization in Windows Forms Barcode control | Syncfusion
+description: Learn about Barcode Customization support in Syncfusion Windows Forms Barcode control and more details.
 platform: wpf
 control: SfBarcode
 documentation: ug
 ---
 
-# Barcode Customization
+# Barcode Customization in Windows Forms Barcode
 
 The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control. 
 
@@ -28,13 +28,13 @@ Me.SfBarcode1.LightBarColor = System.Drawing.Color.FromArgb(255, 0, 0)
 
 The DarkBarBrush represents the color of the dark bar (Black color usually) and the LightBarBrush represents the color of the gap between two adjacent black bars (White color usually).
 
-![](Barcode-Customization_images/Barcode-Customization_img1.png)
+![Barcode-Customization_img1](Barcode-Customization_images/Barcode-Customization_img1.png)
 
 Barcode color combinations- Red
 {:.caption}
 
 
-![](Barcode-Customization_images/Barcode-Customization_img2.png)
+![Barcode-Customization_img2](Barcode-Customization_images/Barcode-Customization_img2.png)
 
 Barcode color combinations- Blue
 {:.caption}

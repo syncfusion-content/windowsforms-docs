@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Perspective | Carousel  | WindowsForms | Syncfusion
-description: This section describes how to increase or decrease the size of the elliptical view.
+title: Perspective in Windows Forms Carousel control | Syncfusion
+description: Learn about Perspective support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Perspective
+# Perspective in Windows Forms Carousel
 
 The [Perspective](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_Perspective) property is used to increase or decrease the size of the elliptical view of the control. It accepts float values, so the users can enlarge or shrink the elliptical view with respect to small values too.
 

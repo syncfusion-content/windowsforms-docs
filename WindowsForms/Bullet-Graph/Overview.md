@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion BulletGraph control for WindowsForms
-description: This section explains the key features and quick overview about Syncfusion Bullet Graph control for WindowsForms
+title: About Windows Forms Bullet Graph control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Bullet Graph Overview
 
 Bullet Graph is a variation of the bar graph that is developed as a replacement for the dashboard gauges and meters. The Bullet Graph features a single, primary measure (for example, current year-to-date revenue), and compares that measure to one or more other measures to enrich its meaning (for example, compared to a target). It displays the measures in the context of the qualitative range of performance, such as poor, satisfactory, and good.
 

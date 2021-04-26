@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Statistical-Formulas | Windows Forms | Syncfusion
-description: statistical formulas
+title: Statistical Formulas in Windows Forms Chart control | Syncfusion
+description: Learn about Statistical Formulas support in Syncfusion Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Statistical Formulas
+# Statistical Formulas in Windows Forms Chart
 
 Essential Chart comes with support for several Statistical formulas that will let you apply formulas on data points in one or more series and will help you analyze and arrive at meaningful information from those data points.
 

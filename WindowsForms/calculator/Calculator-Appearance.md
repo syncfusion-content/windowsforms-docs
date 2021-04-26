@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculator-Appearance | WindowsForms | Syncfusion
-description: calculator appearance
+title: Calculator Appearance in Windows Forms Calculator control | Syncfusion
+description: Learn about Calculator Appearance support in Syncfusion Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
 
-# Calculator Appearance
+# Calculator Appearance in Windows Forms Calculator
 
 This section will walk you through the different appearance settings for the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html).
 

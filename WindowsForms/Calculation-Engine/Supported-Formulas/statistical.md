@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This session explains that the supported formulas with syntax and description of Statistical functions in CalcEngine
+title: Statistical in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Statistical support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Statistical formulas of of Calculate library
+# Statistical in Windows Forms Calculation Engine (Calculate)
 
 ## AVEDEV
 

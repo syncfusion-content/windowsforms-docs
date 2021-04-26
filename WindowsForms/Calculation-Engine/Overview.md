@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview for calculate| Calculate | syncfusion
-description: This section provides an overview and the features that are supported in calculate for Syncfusion Essential Windows Forms
+title: About Windows Forms Calculation Engine control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Calculation Engine (Calculate) Overview
 
 Essential Calculate is a native .NET class library which enables to parse and compute the expression or formulas with 400+ predefined functions. It can be used in any .NET environment, including C#, VB.NET and managed C++ code.
 It is a non-UI component which provides a full-fledged object model that facilitates formula calculation support without any dependency of Microsoft Office COM libraries & Microsoft Office. This library can be used in Windows Forms, WPF, ASP.NET, Xamarin and UWP application.

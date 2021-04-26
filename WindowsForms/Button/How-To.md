@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How To | WindowsForms | Syncfusion
-description: How To
+description: Learn here about How To questions of Syncfusion Essential Studio Windows Forms SfButton control, its elements and more.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# How To
+# How To Questions of Windows Forms SfButton
 
 ## Set the SfButton as Accept or Cancel Button to the Form
 
@@ -59,4 +59,4 @@ sfToolTip1.SetToolTip(this.sfButton1, " The ToolTip information of the Button co
 {% endtabs %}
 
 
-![](SfButton_images/SfButton_img18.jpeg)
+![SfButton_img18](SfButton_images/SfButton_img18.jpeg)

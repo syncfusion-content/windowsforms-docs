@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Parse and Compute | Calculate | Syncfusion
-description: This section explains the role and functionalty of parsing and computing methods in Calculate for Syncfusion essential windowsforms
+title: Parse and Compute in Windows Forms Calculation Engine | Syncfusion
+description: Learn about Parse and Compute support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Parse and Compute
+# Parse and Compute in Windows Forms Calculation Engine (Calculate)
 
  This section describes about the parse and compute functions in Essential Calculate.
 

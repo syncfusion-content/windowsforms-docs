@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: Learn how to customize the scale label and position the scale label in Syncfusion Bullet Graph Windows Forms
+title: Scale Label settings in Windows Forms Bullet Graph | Syncfusion
+description: Learn about Scale Label settings support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
 
-# Scale Label settings
+# Scale Label settings in Windows Forms Bullet Graph
 
 ### Labels:
 
