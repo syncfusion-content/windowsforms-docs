@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms ButtonEdit control | Syncfusion
-description: Learn about introduction of Syncfusion Windows Forms ButtonEdit control and more details.
+description: Learn about introduction of Syncfusion Essential Studio Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure Settings (Featured / Comparative Measure) in Windows Forms Bullet Graph control | Syncfusion
+title: Measure Settings in Windows Forms Bullet Graph control | Syncfusion
 description: Learn about Measure Settings (Featured / Comparative Measure) support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Measure Settings (Featured / Comparative Measure) in Windows Forms Bullet Graph
+# Measure Settings in Windows Forms Bullet Graph
 
 ### Featured Measure:
 

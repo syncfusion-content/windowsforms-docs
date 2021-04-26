@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoLabel Event in Windows Forms AutoLabel control | Syncfusion
-description: Learn about AutoLabel Event support in Syncfusion Windows Forms AutoLabel control and more details.
+description: Learn about AutoLabel Event support in Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
 platform: WindowsForms
 control: AutoLabel
 documentation: ug

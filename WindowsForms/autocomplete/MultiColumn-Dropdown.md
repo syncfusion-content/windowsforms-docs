@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MultiColumn Dropdown in Windows Forms AutoComplete control | Syncfusion
+title: About Windows Forms AutoComplete control | Syncfusion
 description: Learn about MultiColumn Dropdown support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete

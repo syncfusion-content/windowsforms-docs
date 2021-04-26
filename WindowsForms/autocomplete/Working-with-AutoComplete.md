@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with AutoComplete in Windows Forms AutoComplete control | Syncfusion
+title: Working with Windows Forms AutoComplete control | Syncfusion
 description: Learn about Working with AutoComplete support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete

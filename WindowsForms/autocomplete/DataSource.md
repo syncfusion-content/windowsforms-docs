@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataSource in Windows Forms AutoComplete control | Syncfusion
-description: Learn about DataSource support in Syncfusion Windows Forms AutoComplete control and more details.
+description: Learn about DataSource support in Syncfusion Essential Studio Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
