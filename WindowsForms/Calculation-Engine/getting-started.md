@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Calculation Engine control | Syncfusion
+title: Getting Started with Windows Forms Calculation Engine | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

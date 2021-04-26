@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logical Formulas in Windows Forms Calculation Engine control | Syncfusion
+title: Logical Formulas in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Logical Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with XlsIO in Windows Forms Calculation Engine control | Syncfusion
+title: Working with XlsIO in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Working with XlsIO support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

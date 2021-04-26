@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perspective in Windows Forms Carousel control | Syncfusion
-description: Learn about Perspective support in Syncfusion Windows Forms Carousel control and more details.
+description: Learn about Perspective support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug

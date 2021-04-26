@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types in Windows Forms Chart control | Syncfusion
-description: Learn about Chart Types support in Syncfusion Windows Forms Chart control and more details.
+description: Learn about Chart Types support in Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

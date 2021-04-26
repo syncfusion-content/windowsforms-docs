@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with ICalcData in Windows Forms Calculation Engine control | Syncfusion
+title: Working with ICalcData in WinForms Calculation Engine | Syncfusion
 description: Learn about Working with ICalcData support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

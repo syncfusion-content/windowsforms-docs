@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Chart control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Chart control and more details.
+description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug

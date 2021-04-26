@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Calculator control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Calculator control and more details.
+description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug

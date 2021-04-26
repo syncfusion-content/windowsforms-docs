@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Database Functions in Windows Forms Calculation Engine control | Syncfusion
+title: Database Functions in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Database Functions support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

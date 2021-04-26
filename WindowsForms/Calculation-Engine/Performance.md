@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance and Limitations in Windows Forms Calculation Engine control | Syncfusion
+title: Performance & Limitations in WinForms Calculation Engine | Syncfusion
 description: Learn about Performance and Limitations support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Performance and Limitations in Windows Forms Calculation Engine (Calculate)
+# Performance and Limitations in Windows Forms Calculation Engine
 
 This section explains about the performance and limitations of Essential Calculate.
 

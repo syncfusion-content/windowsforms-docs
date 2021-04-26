@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Information Formulas in Windows Forms Calculation Engine control | Syncfusion
+title: Information Formulas in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Information Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

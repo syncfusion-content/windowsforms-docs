@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Function in Windows Forms Calculation Engine control | Syncfusion
+title: Custom Function in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Custom Function support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

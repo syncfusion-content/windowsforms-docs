@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style Settings in Windows Forms Calculator control | Syncfusion
-description: Learn about Style Settings support in Syncfusion Windows Forms Calculator control and more details.
+description: Learn about Style Settings support in Syncfusion Essential Studio Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug

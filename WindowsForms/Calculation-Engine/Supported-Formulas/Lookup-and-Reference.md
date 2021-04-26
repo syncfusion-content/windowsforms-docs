@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lookup and Reference in Windows Forms Calculation Engine control | Syncfusion
+title: Lookup and Reference in WinForms Calculation Engine | Syncfusion
 description: Learn about Lookup and Reference support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
