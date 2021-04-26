@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Automatic-Control-Sizing | WindowsForms | Syncfusion
-description: automatic control sizing
+title: Automatic Control Sizing in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Automatic Control Sizing support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Automatic Control Sizing
+# Automatic Control Sizing in Windows Forms MultiSelectionComboBox
 
 ## Vertical
 
 The control size is increased with respect to its height upon adding Visual Item, from its dropdown list. 
 
-![](Overview_images/Overview_img340.png) 
+![Overview_img340](Overview_images/Overview_img340.png) 
 
 
 The following code sample illustrates you on how to set AutoSizeMode as Vertical.
@@ -36,7 +36,7 @@ Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Vertical
 
 The control size is increased with respect to its width upon adding Visual Item, from its dropdown list. 
 
-![](Overview_images/Overview_img341.png) 
+![Overview_img341](Overview_images/Overview_img341.png) 
 
 
 The following code sample illustrates you on how to set AutoSizeMode as Horizontal.
@@ -59,7 +59,7 @@ Me.MultiSelectionComboBox1.AutoSizeMode = AutoSizeModes.Horizontal
 
 The control size is only increased up to pre-defined size and once VisualItem size exceeds it, Scrollbar is displayed to navigate between its items.
 
-![](Overview_images/Overview_img342.png)
+![Overview_img342](Overview_images/Overview_img342.png)
 
 
 The following code sample illustrates you on how to set AutoSizeMode as None.

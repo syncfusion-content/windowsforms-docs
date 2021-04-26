@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Change-the-Backcolor-of-a-Single-Cell | Windows Forms | Syncfusion
-description: how to change the backcolor of a single cell
+description: Learn about How to Change the Backcolor of a Single Cell support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the BackColor of a Single Cell
+# How to Change the Backcolor of a Single Cell in Windows Forms GridDataBoundGrid(Classic)
 
 In GridDataBoundGrid, you cannot set cell specific properties like BackColor (other than CellValue or text) using an indexer. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource, which only holds a single value per cell. It does not hold TextColor, BackColor, or any of the other many cell specific properties that are found in GridStyleInfo object. 
 

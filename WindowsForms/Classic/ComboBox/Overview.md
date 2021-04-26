@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxAdv | WindowsForms | Syncfusion
-description: ComboBoxAdv is an advanced combo box control with the additional features like Visual style, Autocomplete, Border style 
+title: About Windows Forms xptoolbar control | Syncfusion
+description: Learn about Overview support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Overview
+# Overview in Windows Forms ComboBoxAdv(Classic)
 
 ComboBoxAdv is an advanced combo box control that provides a similar object model as the Framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](/windowsforms/comboboxbase/overview) control.
 

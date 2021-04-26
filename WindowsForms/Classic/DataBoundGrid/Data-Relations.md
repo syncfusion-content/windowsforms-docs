@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Relations | Windows Forms | Syncfusion
-description: data relations
+title: Data Relations in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Data Relations support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Data Relations
+# Data Relations in Windows Forms GridDataBoundGrid(Classic)
 
 
 
@@ -69,7 +69,7 @@ End Sub
 {% endhighlight  %}
 {% endtabs %}
 
-![](Data-Relations_images/Data-Relations_img1.jpeg)
+![Data-Relations_img1](Data-Relations_images/Data-Relations_img1.jpeg)
 
 
 
@@ -96,7 +96,7 @@ Dim hierarchyLevelProducts_OrderDetails As GridHierarchyLevel = gridBinder.AddRe
 {% endhighlight  %}
 {% endtabs %}
 
-![](Data-Relations_images/Data-Relations_img2.jpeg) 
+![Data-Relations_img2](Data-Relations_images/Data-Relations_img2.jpeg) 
 
 
 A sample demonstrating this feature is available under the following sample installation path.
@@ -118,7 +118,7 @@ Me.gridDataBoundGrid1.ShowTreeLines = True
 
 With ShowTreeLines property set to true, there is no separate column allotted for plus or minus buttons, instead the indented text in the first column can be seen. 
 
-![](Data-Relations_images/Data-Relations_img3.jpeg) 
+![Data-Relations_img3](Data-Relations_images/Data-Relations_img3.jpeg) 
 
 
 

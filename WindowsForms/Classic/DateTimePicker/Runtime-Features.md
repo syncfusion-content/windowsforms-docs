@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Runtime Features | WindowsForms | Syncfusion
-description: Learn here about how to set the images for popup menu of calendar in Windows Forms DateTimePickerAdv.
+title: Runtime Features in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Runtime Features support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Runtime Features
+# Runtime Features in Windows Forms DateTimePickerAdv(Classic)
 
 This section covers the below topics:
 

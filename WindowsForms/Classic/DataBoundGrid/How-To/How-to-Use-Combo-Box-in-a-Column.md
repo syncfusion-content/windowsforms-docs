@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Use-Combo-Box-in-a-Column | Windows Forms | Syncfusion
-description: how to use combo box in a column
+description: Learn about How to use Combo Box in a Column support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Use Combo Box in a Column
+# How to use Combo Box in a Column in Windows Forms GridDataBoundGrid(Classic)
 
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 

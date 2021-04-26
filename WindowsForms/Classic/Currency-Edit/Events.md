@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | CurrencyEdit | WindowsForms | Syncfusion
-description: events
+title: Events in Windows Forms ContextMenuStrip control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms CurrencyEdit control and more details.
 platform: WindowsForms
 control: CurrencyEdit
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms CurrencyEdit
 
 ## CalculatorClosing Event
 

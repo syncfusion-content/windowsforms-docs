@@ -1,12 +1,12 @@
 ---
 layout: post
-title: DateTimePickerAdv Appearance | WindowsForms | Syncfusion
-description: Learn here about how to change the background and border settings Windows Forms DateTimePickerAdv appearance
+title: Appearance in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# DateTimePickerAdv Appearance
+# Appearance in Windows Forms DateTimePickerAdv(Classic)
 
 This below topics discusses the background and border settings for the DateTimePickerAdv control.
 

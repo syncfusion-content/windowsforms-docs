@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Change-the-Column-Header-Text | Windows Forms | Syncfusion
-description: how to change the column header text
+description: Learn about How to Change the Column Header Text support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Column Header Text
+# How to Change the Column Header Text in Windows Forms GridDataBoundGrid(Classic)
 
 GridDataBoundGrid by default uses the property name of the content of the columns as the header text. For DataTable, this is the DataColumn.ColumnName property.
 

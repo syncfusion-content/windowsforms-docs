@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Make-GridFilterBar-Use-Autocomplete-Combo-Box | Windows Forms | Syncfusion
-description: how to make gridfilterbar use autocomplete combo box
+description: Learn about How to Make Gridfilterbar use Autocomplete Combo Box support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Make GridFilterBar Use Autocomplete Combo Box
+# How to Make Gridfilterbar use Autocomplete Combo Box in Windows Forms GridDataBoundGrid(Classic)
 
 To get autocomplete using standard GridFilterBar, try the following code.
 

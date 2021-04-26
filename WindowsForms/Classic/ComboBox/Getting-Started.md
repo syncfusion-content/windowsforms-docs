@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms xptoolbar control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms ComboBoxAdv(Classic)
 
 
 This section briefly describes how to design a ComboBoxAdv Control in a Windows Forms Application.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-resolveObject-reference-not-set-to-an-instance of an object | Windows Forms | Syncfusion
-description: how to resolve object reference not set to an instance of an object error generation in griddataboundgrid designer
+description: Learn about How to Resolveobject Reference not set to an Instance of an object error Generation in GridDataBoundGrid Designer support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug

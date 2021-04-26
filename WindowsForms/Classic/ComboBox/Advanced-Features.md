@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
-description: Advanced features like in-built support of auto-completion of the text entered in the control and can be bound with an external data source
+title: Advanced Features in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Advanced Features support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Advanced Features
+# Advanced Features in Windows Forms ComboBoxAdv(Classic)
 
 This section will discuss the auto complete support available for the ComboBoxAdv control and data binding using external source.
 

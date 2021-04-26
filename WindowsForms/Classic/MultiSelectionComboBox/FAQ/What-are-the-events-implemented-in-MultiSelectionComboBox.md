@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What-are-the-events-implemented-in-MultiSelectionComboBox | WindowsForms | Syncfusion
-description: what are the events implemented in multiselectioncombobox
+title: What are the Events Implemented in MultiSelectionCombobox in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about What are the Events Implemented in MultiSelectionCombobox support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# What are the Events Implemented in MultiSelectionComboBox
+# What are the Events Implemented in MultiSelectionCombobox in Windows Forms MultiSelectionComboBox
 
 ### SelectedItemCollectionChanged
 

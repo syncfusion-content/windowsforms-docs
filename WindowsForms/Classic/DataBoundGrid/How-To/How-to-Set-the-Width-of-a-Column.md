@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Set-the-Width-of-a-Column | Windows Forms | Syncfusion
-description: how to set the width of a column
+description: Learn about How to Set the Width of a Column support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Set the Width of a Column
+# How to Set the Width of a Column in Windows Forms GridDataBoundGrid(Classic)
 
 In order to change the width of columns in GridDataBoundGrid, you must do the following.
 

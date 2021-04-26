@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ButtonAdv Appearance | WindowsForms | Syncfusion
-description: ButtonAdv Appearance
+title: ButtonAdvAppearnce in Windows Forms xptoolbar control | Syncfusion
+description: Learn about ButtonAdvAppearnce support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# ButtonAdv Appearance
+# ButtonAdvAppearnce in Windows Forms ButtonAdv(Classic)
 
 This section will walk you through the below topics which discusses the properties that controls the appearance of the ButtonAdv.
 
@@ -58,13 +58,13 @@ Me.ButtonAdvControl.ButtonType = Syncfusion.Windows.Forms.Tools.ButtonTypes.Calc
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img59.jpeg) 
+![Overview_img59](Overview_images/Overview_img59.jpeg) 
 
 N> The ButtonTypes are only provided for ease of use and do not in any way change the functionality of the buttons.
 
 Example - A sample image which uses most of the button types in a single application is as follows. User will have to add respective functionalities for each button type.
 
-![](Overview_images/Overview_img61.jpeg) 
+![Overview_img61](Overview_images/Overview_img61.jpeg) 
 
 ## Border Styles
 
@@ -115,7 +115,7 @@ Me.buttonAdv13.BorderStyleAdv = Syncfusion.Windows.Forms.ButtonAdvBorderStyle.Su
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img63.jpeg) 
+![Overview_img63](Overview_images/Overview_img63.jpeg) 
 
 {% seealso %}
 
@@ -164,7 +164,7 @@ Me.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Office2016C
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Office_2016.png)
+![Office_2016](Overview_images/Office_2016.png)
 
 ### Custom Colors
 
@@ -186,7 +186,7 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img68.jpeg) 
+![Overview_img68](Overview_images/Overview_img68.jpeg) 
 
 {% seealso %}
 
@@ -262,4 +262,4 @@ Me.buttonAdv1.ForeColor = System.Drawing.Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img69.jpeg) 
+![Overview_img69](Overview_images/Overview_img69.jpeg) 

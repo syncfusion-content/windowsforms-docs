@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Binding | WindowsForms | Syncfusion
-description: data binding
+title: Data Binding in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms MultiSelectionComboBox
 
 MultiSelectionComboBox control can be bound with external data source. Objects that can acts as Datasource to MultiSelectionComboBox are
 

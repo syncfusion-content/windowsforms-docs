@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Event-handling | WindowsForms | Syncfusion
-description: event handling
+title: Event Handling in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Event Handling support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
@@ -257,7 +257,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img313.jpeg) 
+![Overview_img313](Overview_images/Overview_img313.jpeg) 
 
 
 

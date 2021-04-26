@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-select-all-the-contents-in-a-cell-after-double-clicking-the-contents | Windows Forms | Syncfusion
-description: how to select all the contents in a cell after double clicking the contents
+description: Learn about How to Select all the Contents in a Cell After Double Clicking the Contents support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Select All the Contents in a Cell After Double-Clicking the Contents
+# How to Select all the Contents in a Cell After Double Clicking the Contents in Windows Forms GridDataBoundGrid(Classic)
 
 CurrentCellControlDoubleClick event can be used to select the contents of a cell by double-clicking it. The current cell is selected by using gridControl1.CurrentCell.Renderer.The length of the content is measured and the contents are selected using Select() method of the inner textbox cell, if it is a textbox cell type.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced-Features | WindowsForms | Syncfusion
-description: advanced features
+title: Advanced Features in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Advanced Features support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Advanced Features
+# Advanced Features in Windows Forms MultiSelectionComboBox
 
 ## Auto suggestion
 
@@ -75,7 +75,7 @@ Me.MultiSelectionComboBox1.AutoCompleteMatchMode = AutoCompleteMatchMode.Disable
 
 MultiSelectionComboBox contains support to group its drop down items based on initial character. You can enable or disable this support using its ShowGroups property.
 
-![](Overview_images/Overview_img343.png) 
+![Overview_img343](Overview_images/Overview_img343.png) 
 
 
 The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.

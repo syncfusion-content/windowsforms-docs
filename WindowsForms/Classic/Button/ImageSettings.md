@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Image Settings | WindowsForms | Syncfusion
-description: Image Settings
+title: ImageSettings in Windows Forms xptoolbar control | Syncfusion
+description: Learn about ImageSettings support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
-# Image Settings
+# ImageSettings in Windows Forms ButtonAdv(Classic)
 
 ButtonAdv supports two types of images. They are,
 
@@ -23,7 +23,7 @@ BackgroundImage is the image used as the Background for the control, which is se
 
 Image that will be displayed on the control.
 
-![](Overview_images/Overview_img73.jpeg) 
+![Overview_img73](Overview_images/Overview_img73.jpeg) 
 
 
 The Images can be added to the ButtonAdv control in two ways. Either Image property can be used or the below properties.
@@ -82,7 +82,7 @@ ImageAboveText and<br/>
 TextAboveImage.</td></tr>
 </table>
 
-![](Overview_images/Overview_img73.jpeg) 
+![Overview_img73](Overview_images/Overview_img73.jpeg) 
 
 N> The Image settings will be effective only when [ButtonType](http://help.syncfusion.com/windowsforms/buttonadv/buttonadvappearnce#button-types) is set to Normal.
 
@@ -106,4 +106,4 @@ Me.btnAlignment.ImageList = Me.imageList1
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img75.jpeg) 
+![Overview_img75](Overview_images/Overview_img75.jpeg) 

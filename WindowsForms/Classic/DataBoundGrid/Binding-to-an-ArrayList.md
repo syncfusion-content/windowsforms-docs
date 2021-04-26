@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding-to-an-ArrayList | Windows Forms | Syncfusion
-description: binding to an arraylist
+title: Binding to an Arraylist in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Binding to an Arraylist support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Binding to an ArrayList
+# Binding to an Arraylist in Windows Forms GridDataBoundGrid(Classic)
 
 You can bind an ArrayList that holds objects with public properties. Given below is an example, which substantiates this point.
 
@@ -114,7 +114,7 @@ N> Download sample demo from [here](https://www.syncfusion.com/downloads/support
 
 Any change that you make to the grid will be posted back to the ArrayList. Keep in mind that you cannot add new items to the ArrayList through the grid. Instead, make sure that your data source supports the IBindingList interface and that it implements an appropriate AddNew method. The IBindingList support determines whether you can add new items and sort items as well as do searching for other basic aspects of list behavior. 
 
-![](Binding-to-an-ArrayList_images/Binding-to-an-ArrayList_img1.jpeg) 
+![Binding-to-an-ArrayList_img1](Binding-to-an-ArrayList_images/Binding-to-an-ArrayList_img1.jpeg) 
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multi Columns | WindowsForms | Syncfusion
-description: Multi Columns
+title: Datasource in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Datasource support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
-# Datasource
+# Datasource in Windows Forms ComboBoxAutoComplete(Classic)
 
 The following steps sets a DataView as the DataSource of ComboBoxAutoComplete.
 
@@ -78,5 +78,5 @@ Me.autoCompleteDataColumnInfo2.ColumnHeaderText = "ID"
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAutoComplete-Images/Overview_img50.jpeg) 
+![Overview_img50](ComboBoxAutoComplete-Images/Overview_img50.jpeg) 
 

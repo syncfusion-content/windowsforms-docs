@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-Get-the-New-Value-and-Old-Value-when-an-Ite | Windows Forms | Syncfusion
-description: how to get the new value and old value when an item is selected in a combobox cell
+description: Learn about How To Get The New Value And Old Value When an Item is Selected in a Combobox Cell support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell
+# How To Get The New Value And Old Value When an Item is Selected in a Combobox Cell in Windows Forms GridDataBoundGrid(Classic)
 
 CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
 

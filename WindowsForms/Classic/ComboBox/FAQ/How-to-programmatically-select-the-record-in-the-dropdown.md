@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How-to-programmatically-select-the-record-in-the-d | WindowsForms | Syncfusion
-description: how to programmatically select the record in the dropdown that matches the text typed in comboboxadv?
+description: Learn about How to Programmatically Select the Record in the Dropdown that Matches the Text Typed in Comboboxadv support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# How to Programmatically Select the Record in the Dropdown that matches the Text Typed in ComboBoxAdv
+# How to Programmatically Select the Record in the Dropdown that Matches the Text Typed in Comboboxadv in Windows Forms ComboBoxAdv(Classic)
 
 You can handle the DropDown event of the ComboBoxAdv control and set it as shown in the following code example.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior Settings | WindowsForms | Syncfusion
-description: Behavior Settings
+title: Behavior Settings in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Behavior Settings support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
-# Behavior Settings
+# Behavior Settings in Windows Forms ComboBoxAutoComplete(Classic)
 
 The behavior settings of a ComboBoxAutoComplete control includes the below properties.
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Performance-of-DataBound-Grid | Windows Forms | Syncfusion
-description: performance of databound grid 
+title: Performance of Databound Grid in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Performance of Databound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Performance
+# Performance of Databound Grid in Windows Forms GridDataBoundGrid(Classic)
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 
-![](Performance-of-DataBound-Grid_images/Performance-of-DataBound-Grid_img1.png) 
+![Performance-of-DataBound-Grid_img1](Performance-of-DataBound-Grid_images/Performance-of-DataBound-Grid_img1.png) 
 
 
 
@@ -35,7 +35,7 @@ In the Manipulate Grid group box
 * Selecting Use ScrollWindow check box invalidates only the inserted or removed rows instead of invalidating the whole Grid.
 * Insert Records, Remove Records and Change Records buttons let you check the performance when inserting, removing, or changing records in the underlying data table. Once the data is loaded after the batch update, you will be able to see the performance and memory usage in a text box, as shown below.
 
-![](Performance-of-DataBound-Grid_images/Performance-of-DataBound-Grid_img2.jpeg) 
+![Performance-of-DataBound-Grid_img2](Performance-of-DataBound-Grid_images/Performance-of-DataBound-Grid_img2.jpeg) 
 
 
 

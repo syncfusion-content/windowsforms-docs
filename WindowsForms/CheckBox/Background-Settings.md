@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Background-Settings | WindowsForms | Syncfusion
-description: This section gives the detailed description on customizing the background of the CheckBoxAdv control.
+title: Background Settings in Windows Forms CheckBox control | Syncfusion
+description: Learn about Background Settings support in Syncfusion Windows Forms CheckBox (CheckBoxAdv) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Background Settings of CheckBoxAdv
+# Background Settings in Windows Forms CheckBox (CheckBoxAdv)
 
 The background of the [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) can be changed using the [BackgroundStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_BackgroundStyle), [GradientStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_GradientStart) and [GradientEnd](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckRadioBase.html#Syncfusion_Windows_Forms_Tools_CheckRadioBase_GradientEnd) properties.
 
