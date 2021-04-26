@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Button control | Syncfusion
-description: Learn about Overview support in Syncfusion Windows Forms Button (SfButton) control and more details.
+description: Learn here about introduction of Syncfusion Windows Forms Button (SfButton) control and more details.
 platform: WindowsForms
 control: SfButton
 documentation: ug
