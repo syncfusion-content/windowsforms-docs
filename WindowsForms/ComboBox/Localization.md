@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfComboBox | Syncfusion
-description: This section provides a basic idea to change the culture or Localize the default strings in SfComboBox for Syncfusion Essential WindowsForms.
+title: Localization in Windows Forms ComboBox control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Localization
+# Localization in Windows Forms ComboBox (SfComboBox)
 
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfComboBox can be localized by adding the `resource` file. Application culture can be changed by setting the `CurrentUICulture` before `InitializeComponent` method.
 
