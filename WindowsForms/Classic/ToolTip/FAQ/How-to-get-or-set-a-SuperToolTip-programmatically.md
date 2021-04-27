@@ -1,15 +1,19 @@
 ---
 layout: post
-title: SuperToolTip-programmatically | WindowsForms | Syncfusion
-description: Learn about How to get or set a SuperToolTip programmatically support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
+title: SuperToolTip programmatically | WindowsForms | Syncfusion
+description: Learn about How to get or set a programmatically support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
 
-# SuperToolTip programmatically in Windows Forms SuperToolTip
+# SuperToolTip programmatically in Windows Forms
 
 We can get or set the SuperToolTip programmatically using the below two methods.
+
+## How to Get or Set a SuperToolTip Programmatically
+
+This page explains about How to Get or Set a SuperToolTip Programmatically and more details.
 
 
 <table>

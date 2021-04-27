@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GridDataBoundGrid | Windows Forms | Syncfusion
-description: Learn about How to Change the Row Header to Display Line Numbers Instead of the Black Triangle in Griddataboundgrid in Windows Forms GridDataBoundGrid and more.
+description: Learn about How to Change the Row Header to Display Line Numbers Instead of the Black Triangle in Windows Forms GridDataBoundGrid and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
@@ -10,6 +10,10 @@ documentation: ug
 # Grid data bound in WinForms GridDataBoundGrid(Classic)
 
 You can achieve this by setting the row header base style to Header, and handling PrepareViewStyleInfo event handler to set the line numbers. Refer to the code snippet below, which illustrates this.
+
+## How To Change the Row Header to Display Line Numbers instead of the Black Triangle in GridDataBoundGrid
+
+This page explains about How To Change the Row Header to Display Line Numbers instead of the Black Triangle in GridDataBoundGrid and more details.
 
 {% tabs %}
 {% highlight c# %}

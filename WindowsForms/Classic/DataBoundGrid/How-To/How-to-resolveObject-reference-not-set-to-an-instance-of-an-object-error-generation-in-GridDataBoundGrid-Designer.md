@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-resolveObject-reference in DataBoundGrid | Syncfusion
+title: How to resolveObject reference in DataBoundGrid | Syncfusion
 description: Learn about How to Resolveobject Reference not set to an Instance of an object error Generation in GridDataBoundGrid Designer in Windows Forms and more.
 platform: windowsforms
 control: DataBoundGrid

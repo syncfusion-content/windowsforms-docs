@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GridDataBoundGrid | Windows Forms | Syncfusion
-description: Learn about How To Merge Two Columns in Griddataboundgrid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+description: Learn about How To Merge Two Columns in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
@@ -10,6 +10,10 @@ documentation: ug
 # Grid data bound grid in Windows Forms GridDataBoundGrid
 
 You can make use of CoveredRanges property to merge two or more columns in GridDataBoundGrid.
+
+## How to Merge Two Columns in GridDataBoundGrid
+
+This page explains about How to Merge Two Columns in GridDataBoundGrid and more details.
 
 {% tabs %}
 {% highlight c# %}

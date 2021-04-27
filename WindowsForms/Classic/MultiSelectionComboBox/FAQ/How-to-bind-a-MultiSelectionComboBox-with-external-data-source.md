@@ -1,16 +1,20 @@
 ---
 layout: post
 title: MultiSelectionCombobox in Windows Forms | Syncfusion
-description: Learn about How to Bind a MultiSelectionCombobox with External Data Source support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+description: Learn about How to Bind a External Data Source support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
-# MultiSelectionCombobox with External Data Source in Windows Forms
+# MultiSelectionCombobox in Windows Forms
 
 You can achieve this by using DataSource and DisplayMember properties in MultiSelectionComboBox. 
 
 The following code sample defines how to bind MultiSelectionComboBox with datasource.
+
+## How to Bind a MultiSelectionComboBox with External Data Source
+
+This page explains about How to Bind a MultiSelectionComboBox with External Data Source and more details.
 
 {% tabs %}
 {% highlight c# %}

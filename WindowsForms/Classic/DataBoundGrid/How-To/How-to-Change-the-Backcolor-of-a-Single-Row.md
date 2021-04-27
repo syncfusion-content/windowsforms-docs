@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Backcolor-of-a-Single-Row in DataBoundGrid | Syncfusion
+title: Backcolor of a Single Row in DataBoundGrid | Syncfusion
 description: Learn about How to Change the Backcolor of a Single Row support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Backcolor of a Single Row in WinForms GridDataBoundGrid
+# Backcolor of a Single Row in DataBoundGrid
 
 In GridDataBoundGrid, you cannot set row specific properties like BackColor using Model.RowStyles member. The reason is that in GridDataBoundGrid, the only data storage is the bound datasource. There is no row specific storage allocated. 
+
+## How to Change the BackColor of a Single Row
+
+This page explains about How to Change the BackColor of a Single Row and more details.
 
 This code does not work.
 

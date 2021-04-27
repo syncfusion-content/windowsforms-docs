@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-Selected-Rows-in-GridDataBoundGrid | Syncfusion
-description: Learn about How to get Selected Rows in Griddataboundgrid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+title: How to Get Selected Rows in GridDataBoundGrid | Syncfusion
+description: Learn about How to get Selected Rows in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Selected data bound grid in WinForms GridDataBoundGrid(Classic)
+# How to Get Selected Rows in GridDataBoundGrid
 
 To get the selected row use GetSelectedRows method. It returns GridRangeInfoList object, an array of GridRangeInfo objects. This method has two arguments,
 
@@ -20,6 +20,10 @@ False - If you want to treat single range selection as a full row selection.
 * ConsiderCurrentCell 
 
 True - If current cell should be returned as selected range.
+
+## How to Get Selected Rows in GridDataBoundGrid 
+
+This page explains about How to Get Selected Rows in GridDataBoundGrid and more details.
 
 {% tabs %}
 {% highlight c# %}

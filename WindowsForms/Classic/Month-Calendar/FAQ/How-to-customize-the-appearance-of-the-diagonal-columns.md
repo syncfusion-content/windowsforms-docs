@@ -6,9 +6,13 @@ platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# Diagonal Columns in Windows Forms MonthCalendarAdv(Classic)
+# Customize the diagonal columns
 
 The appearance of diagonal columns can be customized using the below code.
+
+## How to customize the appearance of the diagonal columns?
+
+This page explains about How to customize the appearance of the diagonal columns and more details.
 
 {% tabs %}
 

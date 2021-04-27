@@ -1,15 +1,19 @@
 ---
 layout: post
-title: How-to-Set-the-Height-of-a-Row | Windows Forms | Syncfusion
+title: How to Set the Height of a Row | Windows Forms | Syncfusion
 description: Learn about How to Set the Height of a Row support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Set the Height of a Row in Windows Forms GridDataBoundGrid
+# How to Set the Height of a Row in Windows Forms
 
 To explicitly set the height of a particular row, use the Model.RowHeights collection.
+
+## How to Set the Height of a Row
+
+This page explains about How to Set the Height of a Row and more details.
 
 {% tabs %}
 {% highlight c# %}

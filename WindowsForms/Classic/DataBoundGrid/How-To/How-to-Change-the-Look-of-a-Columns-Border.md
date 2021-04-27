@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Look-of-a-Columns-Border in DataBoundGrid | Syncfusion
+title: Look of a Columns Border in DataBoundGrid | Syncfusion
 description: Learn about How to Change the Look of a Columns Border support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Look of a Columns Border in WinForms GridDataBoundGrid
+# Look of a Columns Border in DataBoundGrid
 
 You can use the Borders property of GridStyleInfo to change the style and appearance of grid cell's border. Each border side of the cell can be configured individually with GridBorder value. There is BorderMargins property to control the margins on all four sides. In GridDataBoundGrid, you can set style properties column by column using GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumns depending upon whether you had explicitly added GridBoundColumns or not. 
+
+## How to Change the Look of a Column's Border
+
+This page explains about How to Change the Look of a Column's Border and more details.
 
 {% tabs %}
 {% highlight c# %}
