@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Abbreviating the Days names of SfCalendar | Windows Forms | Syncfusion
-description: The SfCalendar control provides globalization support to design and develop a world-ready application that supports localized interfaces in multiple cultures. 
+title: Globalization in Windows Forms Calendar control | Syncfusion
+description: Learn about Globalization support in Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
 platform: WindowsForms
 control: SfCalendar
 documentation: ug

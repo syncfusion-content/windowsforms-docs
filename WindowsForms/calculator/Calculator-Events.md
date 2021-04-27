@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculator-Events | WindowsForms | Syncfusion
-description: calculator events
+title: Calculator Events in Windows Forms Calculator control | Syncfusion
+description: Learn about Calculator Events support in Syncfusion Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator
 documentation: ug
 ---
 
-# Calculator Events
+# Calculator Events in Windows Forms Calculator
 
 The event for [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) and [PopupCalculator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PopupCalculator.html) control are discussed in this section.
 

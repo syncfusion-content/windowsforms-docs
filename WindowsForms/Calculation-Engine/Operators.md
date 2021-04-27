@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Operators | Calculate | Syncfusion
-description: Learn here about how to work with the arithmatic and logical operators in Syncfusion Essential calculate
+title: Operators in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Operators support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Operators
+# Operators in Windows Forms Calculation Engine (Calculate)
 
 The calculation type of an equation will be specified by operators. These operators will be prioritized 
 in a default order for calculating the equation.

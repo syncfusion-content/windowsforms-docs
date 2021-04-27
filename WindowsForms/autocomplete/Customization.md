@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization | AutoComplete Component for Windows Forms | Syncfusion
-description: This section explains about the customization of AutoComplete.
+title: Customization in Windows Forms AutoComplete control | Syncfusion
+description: Learn about Customization support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# Customization
+# Customization in Windows Forms AutoComplete
 
 This section explains about the customization of the AutoComplete component.
 

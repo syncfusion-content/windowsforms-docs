@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AutoLabel Event | AutoLabel Control for Windows Forms | Syncfusion
-description: This section explains about the AutoLabel Event with the important key features of AutoLabel control for windows forms.
+title: AutoLabel Event in Windows Forms AutoLabel control | Syncfusion
+description: Learn about AutoLabel Event support in Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
 platform: WindowsForms
 control: AutoLabel
 documentation: ug
 ---
-# AutoLabel Event with Windows Forms
+# AutoLabel Event in Windows Forms AutoLabel
 
 A detailed explanation about the PropertyChanged event is given in the following section.
 

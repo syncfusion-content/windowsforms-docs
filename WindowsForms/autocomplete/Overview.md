@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion AutoComplete for Windows forms
-description: A quick go through about the AutoComplete which provides the auto complete functionality for all editor controls.
+title: About Windows Forms AutoComplete control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio Windows Forms AutoComplete control and more details.
 platform: windowsforms
 control: AutoComplete
 documentation: ug
 ---
 
-# Overview
+# Windows Forms AutoComplete Overview
 
 The AutoComplete control is an extender control that provides AutoCompletion services to any edit control on the same form as the AutoComplete control.
 

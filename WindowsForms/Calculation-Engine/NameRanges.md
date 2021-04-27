@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Named Ranges in Windows Forms Calculation Engine | Syncfusion
-description: This section provides the basic idea to use the named ranges for calculate in Syncfusion essential windowsforms
+title: Named Ranges in Windows Forms Calculation Engine control | Syncfusion
+description: Learn about Named Ranges support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Named Ranges Support in Essential Calculate
+# Named Ranges in Windows Forms Calculation Engine (Calculate)
 
 Defining a name for cell, range of cells, formulas, constants or tables is called Named Ranges. By using names, users can easily identify the purpose of cell references 
 also make the formulas much easier to understand and maintain.

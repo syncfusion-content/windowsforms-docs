@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button Types| WindowsForms | Syncfusion
-description: Button Types
+title: Button Types in Windows Forms Button control | Syncfusion
+description: Learn about Button Types support in Syncfusion Windows Forms Button (SfButton) control and more details.
 platform: WindowsForms
 control: SfButton
 documentation: ug
 ---
 
-# Button Types
+# Button Types in Windows Forms Button (SfButton)
 
 This section describes various types of button supported by the SfButton.
 
@@ -26,7 +26,7 @@ this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 {% endhighlight %}
 {% endtabs %}
 
-![](SfButton_images/SfButton_img2.jpeg)
+![SfButton_img2](SfButton_images/SfButton_img2.jpeg)
 
 ### Positioning Text and Image
 
@@ -40,7 +40,7 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfButton_images/SfButton_img3.jpeg)
+![SfButton_img3](SfButton_images/SfButton_img3.jpeg)
 
 ### Spacing between Text and Image
 
@@ -61,7 +61,7 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 The SfButton can be displayed only with the image by setting the empty string value to the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property and initialize the image value to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. The size of the image can be changed by using the ImageSize property.
 
-![](SfButton_images/SfButton_img4.jpeg)
+![SfButton_img4](SfButton_images/SfButton_img4.jpeg)
 
 ## Icon Button
 
@@ -84,4 +84,4 @@ IconButton2.Style.PressedBorder = null;
 
 {% endhighlight %}
 {% endtabs %}
-![](SfButton_images/SfButton_img5.jpeg)
+![SfButton_img5](SfButton_images/SfButton_img5.jpeg)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: features
+title: Scale Tick Mark in Windows Forms Bullet Graph control | Syncfusion
+description: Learn about Scale Tick Mark Settings support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Scale Tick Mark Settings
+# Scale Tick Mark Settings in Windows Forms Bullet Graph
 
 Quantitative scale is displayed with two types of ticks: 
 
@@ -51,7 +51,7 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![](Features_images/Features_img9.png)
+![Features_img9](Features_images/Features_img9.png)
 
 ### TickPosition:
 
@@ -89,4 +89,4 @@ this.Controls.Add(bullet);
 
 {% endhighlight %}
 
-![](Features_images/Features_img10.png)
+![Features_img10](Features_images/Features_img10.png)

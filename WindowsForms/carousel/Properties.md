@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Properties  | WindowsForms | Syncfusion
-description: Properties 
+title: Properties in Windows Forms Carousel control | Syncfusion
+description: Learn about Properties support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Properties
+# Properties in Windows Forms Carousel
 
 
 <table>

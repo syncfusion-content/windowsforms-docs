@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rotate Always | Carousel | WindowsForms | Syncfusion
-description: This section describes carousel rotation.
+title: Rotate Always in Windows Forms Carousel control | Syncfusion
+description: Learn about Rotate Always support in Syncfusion Essential Studio Windows Forms Carousel control and more details.
 platform: WindowsForms
 control: Carousel
 documentation: ug
 ---
 
-# Rotate always
+# Rotate Always in Windows Forms Carousel
 
 The [RotateAlways](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html#Syncfusion_Windows_Forms_Tools_Carousel_RotateAlways) property enables the items in the control to rotate continuously.
 
