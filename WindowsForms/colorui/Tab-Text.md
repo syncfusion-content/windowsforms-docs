@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Tab Text | WindowsForms | Syncfusion
-description: tab text
+title: Tab Text in Windows Forms ColorUI control | Syncfusion
+description: Learn about Tab Text support in Syncfusion Windows Forms ColorUI control, its features, and more details.
 platform: WindowsForms
 control: ColorUI 
 documentation: ug
 ---
-# Tab Text
+# Tab Text in Windows Forms ColorUI
 
 The default tab text of the ColorGroups can be set using the below properties.
 
@@ -53,6 +53,6 @@ Me.colorUIControl1.CustomTabName = "Palettes"
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorUI_images/Overview_img234.jpeg)
+![Overview_img234](ColorUI_images/Overview_img234.jpeg)
 
 N> We can also change the font style of the tab text using ColorUIControl.Font property.

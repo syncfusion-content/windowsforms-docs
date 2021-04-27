@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering
-description: This section explains about the filtering support in SfComboBox.
+title: Filtering in Windows Forms ComboBox control | Syncfusion
+description: Learn about Filtering support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Filtering
+# Filtering in Windows Forms ComboBox (SfComboBox)
 
 The SfComboBox support you to filter the items by setting the [Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property of `DropDownListView` to a predicate that will be called for every data item to determine whether the item is visible or not.
 
@@ -41,4 +41,4 @@ private Boolean FilterItem(Object data)
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img1.png)
+![Filtering_img1](Filtering_images/Filtering_img1.png)
