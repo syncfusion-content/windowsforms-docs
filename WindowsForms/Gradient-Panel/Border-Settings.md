@@ -66,9 +66,9 @@ Me.gradientPanel1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
- ![](GradientPanel-Images/Overview_img370.jpeg) 
+ ![Windows Forms GradientPanel Image370](GradientPanel-Images/Overview_img370.jpeg) 
 
- ![](GradientPanel-Images/Overview_img371.jpeg) 
+ ![Windows Forms GradientPanel Image371](GradientPanel-Images/Overview_img371.jpeg) 
 
  {% seealso %}
  

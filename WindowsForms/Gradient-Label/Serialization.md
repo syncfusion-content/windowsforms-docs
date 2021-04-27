@@ -66,4 +66,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
- ![](GradientLabel-Images/Overview_img605.jpeg) 
+ ![Windows Forms GradientLabel Image605](GradientLabel-Images/Overview_img605.jpeg) 

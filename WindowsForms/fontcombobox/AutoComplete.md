@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autocomplete in Windows Forms FontComboBox control | Syncfusion
-description: Learn about Autocomplete support in Syncfusion Windows Forms FontComboBox control and more details.
+description: Learn about Autocomplete support in Syncfusion Windows Forms FontComboBox control, its elements and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug

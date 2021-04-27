@@ -55,4 +55,4 @@ Me.gradientLabel1.BorderColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
- ![](GradientLabel-Images/Overview_img603.jpeg)
+ ![Windows Forms GradientLabel Image603](GradientLabel-Images/Overview_img603.jpeg)

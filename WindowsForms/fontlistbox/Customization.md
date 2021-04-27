@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Windows Forms FontListBox control | Syncfusion
-description: Learn about Customization support in Syncfusion Windows Forms FontListBox control and more details.
+description: Learn about Customization support in Syncfusion Windows Forms FontListBox control, its elements and more details.
 platform: WindowsForms
 control: FontListBox
 documentation: ug
