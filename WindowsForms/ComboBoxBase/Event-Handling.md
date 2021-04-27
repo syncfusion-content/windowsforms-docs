@@ -93,12 +93,12 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 1. Create a CheckedListBox and populate it.
 
-   ![](Overview_images/Overview_img320.jpeg) 
+   ![Overview_img320](Overview_images/Overview_img320.jpeg) 
 
 
 2. Associate it with the ComboBoxBase control.
 
-   ![](Overview_images/Overview_img321.jpeg) 
+   ![Overview_img321](Overview_images/Overview_img321.jpeg) 
 
 
 
