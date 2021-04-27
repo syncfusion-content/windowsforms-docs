@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# DataBoundGrid in Windows Forms xptoolbar
+# DataBoundGrid in Windows Forms xp toolbar
 
 To access values in the Grid Data Bound Grid, use the indexer and retrieve the value from the GridStyleInfo object. 
 

@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# Windows Forms DataBoundGrid xptoolbar Control
+# Windows Forms DataBoundGrid xp toolbar Control
 
 Very often a table will have a column that displays an ID key defined in another table. In your grid, you may like to have this foreign key mapped to some meaningful value, which is referenced from a different column in this other table. The key column in the foreign table is referred as ValueMember and the meaningful column is referred as DisplayMember. 
 
