@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout-Management | Windows Forms | Syncfusion
-description: This section explains how to Layout the nodes and connectors in an organized structure Diagram control.
+title: Layout Management in Windows Forms Diagram control | Syncfusion
+description: Learn about Layout Management support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Layout Management
+# Layout Management in Windows Forms Diagram
 
 Different Layout Manager are discussed under the following section:
 

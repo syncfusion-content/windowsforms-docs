@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Binding of Diagram Control | Windows Forms | Syncfusion
-description: This section explains how to populate the local data using Data Binding in the Diagram WinForms Control
+title: Data Binding in Windows Forms Diagram control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms Diagram
 
 ### Populating the data
 

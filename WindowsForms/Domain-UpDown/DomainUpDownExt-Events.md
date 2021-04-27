@@ -1,12 +1,12 @@
 ---
 layout: post
-title: DomainUpDownExt Events | WindowsForms | Syncfusion
-description: domainupdownext events
+title: Domainupdownext Events in Windows Forms Domain UpDown control | Syncfusion
+description: Learn about Domainupdownext Events support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# DomainUpDownExt Events
+# Domainupdownext Events in Windows Forms Domain UpDown (DomainUpdownExt)
 
 This section describes the events of DomainUpDownExt control.
 

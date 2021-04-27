@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridlines | Windows Forms | Syncfusion
-description: This section explains about how to add Diagram's GridLines behind the shapes and their functionalities.
+title: Diagram Grid in Windows Forms Diagram control | Syncfusion
+description: Learn about Diagram Grid support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Diagram Grid
+# Diagram Grid in Windows Forms Diagram
 
 The Diagram grid is drawn with evenly spaced points that provides a visual guidance to the user.  
 

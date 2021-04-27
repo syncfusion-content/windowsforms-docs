@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label | Windows Forms | Syncfusion
-description: Label
+title: Label in Windows Forms Diagram control | Syncfusion
+description: Learn about Label support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Label
+# Label in Windows Forms Diagram
 
 A label is a text object that is attached to a node and is positioned relative to node coordinates. This enables you to format the label text.  You can also customize the appearance of the label. You can bind the node name to the label so that the name will be displayed as the label text. This can be achieved using the _PropertyBinding_ property.
 

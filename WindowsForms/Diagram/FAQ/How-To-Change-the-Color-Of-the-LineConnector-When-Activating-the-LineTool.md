@@ -1,15 +1,19 @@
 ---
 layout: post
-title: How To Change the Color Of the LineConnector When  | Diagram | Windows Forms | Syncfusion
+title: How To Change the Color Of the LineConnector Diagram | Syncfusion
 description: how to change the color of the lineconnector when activating the linetool
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Change the Color Of the LineConnector When Activating the LineTool
+# How To Change the Color Of the LineConnector Diagram
 
 We can change the color of the LineConnector while activating the LineTool using the LineTool and LineBase class. In the Mouse up event of the LineTool class, change the color of the link. 
+
+## How To Change the Color Of the LineConnector When Activating the LineTool
+
+This page explains about How To Change the Color Of the LineConnector When Activating the LineTool and more details.
 
 Refer to the following code snippet in CustomLineConnector class.
 
@@ -74,7 +78,7 @@ Me.diagram1.Controller.ActivateTool(linetool)
 
 {% endtabs %}
 
-![](How-To-Change-the-Color-Of-the-LineConnector-When-_images/How-To-Change-the-Color-Of-the-LineConnector-When-_img1.jpeg)
+![How-To-Change-the-Color-Of-the-LineConnector-When-_img1](How-To-Change-the-Color-Of-the-LineConnector-When-_images/How-To-Change-the-Color-Of-the-LineConnector-When-_img1.jpeg)
 
 LineColor = &#34;Red&#34;
 {:.captiontext}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Linked-Manager-and-Nested-Docking | WindowsForms | Syncfusion
-description: This section explains about how to add docking manager as a child window to another docking manager
+title: Linked and Nested DockingManager in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Linked and Nested DockingManager support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
 
-# Linked Docking Manager
+# Linked and Nested DockingManager in Windows Forms Docking Manager
 
 The dock panels from a docking manager cannot be dragged and dropped to another docking manager by default. But, the linked manager support allows to drag and drop the windows from one docking manager to another by setting the `TargetDockingManager` list.
 

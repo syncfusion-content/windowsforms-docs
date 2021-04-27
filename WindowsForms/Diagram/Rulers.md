@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rulers | Windows Forms | Syncfusion
-description: This section explains how to use Diagram's Ruler to measure the distance of nodes and connectors from origin of the page.
+title: Rulers in Windows Forms Diagram control | Syncfusion
+description: Learn about Rulers support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Rulers
+# Rulers in Windows Forms Diagram
 
 Rulers can be enabled by setting the ShowRulers property for the diagram control. The rulers will automatically inherit the MeasurementUnit set for the diagram model and get converted accordingly.
 

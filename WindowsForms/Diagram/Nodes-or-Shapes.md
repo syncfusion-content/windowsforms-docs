@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Nodes-or-Shapes | Windows Forms | Syncfusion
-description: nodes or shapes
+title: Nodes or Shapes in Windows Forms Diagram control | Syncfusion
+description: Learn about Nodes or Shapes support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Nodes or Shapes
+# Nodes or Shapes in Windows Forms Diagram
 
 The Diagram control supports different kinds of nodes. The following are the nodes that are supported by the Diagram control:
 
@@ -72,7 +72,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)
+![Nodes-or-Shapes_img1](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)
 
 
 
@@ -135,7 +135,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)
+![Nodes-or-Shapes_img2](Nodes-or-Shapes_images/Nodes-or-Shapes_img2.jpeg)
 
 
 
@@ -174,7 +174,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg)
+![Nodes-or-Shapes_img3](Nodes-or-Shapes_images/Nodes-or-Shapes_img3.jpeg)
 
 
 ### Node Selections 
@@ -322,23 +322,23 @@ In the above code snippets, the properties are set to the Rectangular node (rect
 
 
 
-![](Nodes-or-Shapes_images/Node-Selections_img1.jpeg)
+![Node-Selections_img1](Nodes-or-Shapes_images/Node-Selections_img1.jpeg)
 
 
 
 
 
-![](Nodes-or-Shapes_images/Node-Selections_img2.jpeg)
+![Node-Selections_img2](Nodes-or-Shapes_images/Node-Selections_img2.jpeg)
 
 
 
-![](Nodes-or-Shapes_images/Node-Selections_img3.jpeg)
+![Node-Selections_img3](Nodes-or-Shapes_images/Node-Selections_img3.jpeg)
 
 
 
 
 
-![](Nodes-or-Shapes_images/Node-Selections_img4.jpeg)
+![Node-Selections_img4](Nodes-or-Shapes_images/Node-Selections_img4.jpeg)
 
 
 
@@ -401,4 +401,4 @@ diagram1.Controller.RotatingStyle = RenderingHelperStyle.DashedOutline
 
 
 
-![](Nodes-or-Shapes_images/Node-Selections_img5.png)
+![Node-Selections_img5](Nodes-or-Shapes_images/Node-Selections_img5.png)

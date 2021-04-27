@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
-description: appearance and behavior settings
+title: Appearance and Behavior Settings in Windows Forms Editable ListBox control | Syncfusion
+description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
-# Appearance and Behavior Settings
+# Appearance and Behavior Settings in Windows Forms Editable ListBox (EditableList)
 
 This section discusses the complete Appearance and behavior settings of EditableList control.
 
@@ -91,7 +91,7 @@ Gets the dock padding for all edges of the control.</td></tr>
 
 The following image displays the EditableList control with the dock padding for all the edges set to 5.
 
-![](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img1.png)
+![Appearance-and-Behavior-Settings_img1](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img1.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ WantButton</td><td>
 Specifies whether to show button to the right while editing.</td></tr>
 </table>
 
-![](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img2.png)
+![Appearance-and-Behavior-Settings_img2](Appearance-and-Behavior-Settings_images/Appearance-and-Behavior-Settings_img2.png)
 
 {% tabs %}
 {% highlight c# %}

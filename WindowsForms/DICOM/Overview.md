@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: DICOM supports distribution and viewing of medical images from CT, MRI and other medical modalities. DICOM format is an extension of the older NEMA standard.
+title: About Windows Forms dicom control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms dicom (DICOM) control, its elements, and more details.
 platform: windowsforms
 control: DICOM 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms dicom (DICOM) Overview
 
 ## Introduction to DICOM
 

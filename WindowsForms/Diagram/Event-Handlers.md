@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event-Handlers | Windows Forms | Syncfusion
-description: Event Handlers
+title: Event Handlers in Windows Forms Diagram control | Syncfusion
+description: Learn about Event Handlers support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Event Handlers
+# Event Handlers in Windows Forms Diagram
 
 This section elaborates on the following:
 
@@ -123,13 +123,13 @@ Sample diagrams are as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img1.jpeg)
+![Event-Handlers_img1](Event-Handlers_images/Event-Handlers_img1.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img2.jpeg)
+![Event-Handlers_img2](Event-Handlers_images/Event-Handlers_img2.jpeg)
 
 
 
@@ -338,13 +338,13 @@ Sample diagrams are as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img3.jpeg)
+![Event-Handlers_img3](Event-Handlers_images/Event-Handlers_img3.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img4.jpeg)
+![Event-Handlers_img4](Event-Handlers_images/Event-Handlers_img4.jpeg)
 
 
 
@@ -478,11 +478,11 @@ Sample diagrams are as follows.
 
 
 
-![](Event-Handlers_images/Event-Handlers_img5.jpeg)
+![Event-Handlers_img5](Event-Handlers_images/Event-Handlers_img5.jpeg)
 
 
 
-![](Event-Handlers_images/Event-Handlers_img6.jpeg)
+![Event-Handlers_img6](Event-Handlers_images/Event-Handlers_img6.jpeg)
 
 
 #### Magnification Event 
@@ -558,13 +558,13 @@ Sample diagrams are as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img7.jpeg)
+![Event-Handlers_img7](Event-Handlers_images/Event-Handlers_img7.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img8.jpeg)
+![Event-Handlers_img8](Event-Handlers_images/Event-Handlers_img8.jpeg)
 
 
 
@@ -783,13 +783,13 @@ Sample diagrams are as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img9.jpeg)
+![Event-Handlers_img9](Event-Handlers_images/Event-Handlers_img9.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img10.jpeg)
+![Event-Handlers_img10](Event-Handlers_images/Event-Handlers_img10.jpeg)
 
 
 
@@ -934,13 +934,13 @@ Sample diagrams are as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img11.jpeg)
+![Event-Handlers_img11](Event-Handlers_images/Event-Handlers_img11.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img12.jpeg)
+![Event-Handlers_img12](Event-Handlers_images/Event-Handlers_img12.jpeg)
 
 
 
@@ -1104,25 +1104,25 @@ Sample diagrams are as follows:
 
 
 
-![](Event-Handlers_images/Event-Handlers_img13.jpeg)
+![Event-Handlers_img13](Event-Handlers_images/Event-Handlers_img13.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img14.jpeg)
+![Event-Handlers_img14](Event-Handlers_images/Event-Handlers_img14.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img15.jpeg)
+![Event-Handlers_img15](Event-Handlers_images/Event-Handlers_img15.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img16.jpeg)
+![Event-Handlers_img16](Event-Handlers_images/Event-Handlers_img16.jpeg)
 
 
 
@@ -1227,13 +1227,13 @@ Sample diagram are as follows:
 
 
 
-![](Event-Handlers_images/Event-Handlers_img17.jpeg)
+![Event-Handlers_img17](Event-Handlers_images/Event-Handlers_img17.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img18.jpeg)
+![Event-Handlers_img18](Event-Handlers_images/Event-Handlers_img18.jpeg)
 
 
 
@@ -1347,7 +1347,7 @@ Sample diagram is as follows.
 
 
 
-![](Event-Handlers_images/Event-Handlers_img19.jpeg)
+![Event-Handlers_img19](Event-Handlers_images/Event-Handlers_img19.jpeg)
 
 
 
@@ -1391,7 +1391,7 @@ Sample diagram is as follows.
 
 
 
-![](Event-Handlers_images/Event-Handlers_img20.jpeg)
+![Event-Handlers_img20](Event-Handlers_images/Event-Handlers_img20.jpeg)
 
 
 
@@ -1515,13 +1515,13 @@ Sample diagrams are as follows.
 
 
 
-![](Event-Handlers_images/Event-Handlers_img21.jpeg)
+![Event-Handlers_img21](Event-Handlers_images/Event-Handlers_img21.jpeg)
 
 
 
 
 
-![](Event-Handlers_images/Event-Handlers_img22.jpeg)
+![Event-Handlers_img22](Event-Handlers_images/Event-Handlers_img22.jpeg)
 
 
 
@@ -1662,5 +1662,5 @@ Sample diagram is as follows,
 
 
 
-![](Event-Handlers_images/Event-Handlers_img23.jpeg)
+![Event-Handlers_img23](Event-Handlers_images/Event-Handlers_img23.jpeg)
 

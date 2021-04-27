@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tabbed-Window | WindowsForms | Syncfusion
-description: This section explains the TabbedWindow functionality in DockingManager
+title: Tabbed Window in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Tabbed Window support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
-# Tabbed window
+# Tabbed Window in Windows Forms Docking Manager
 
 Allows end users to group dock or float windows in tabs. Dock hints let you dock a window over or beside an already docked window. The appearance of tabs and panels in a group of dock or float windows can be fully customized.
 
@@ -46,7 +46,7 @@ Me.dockingManager1.DockControl(Me.panel2, panel1, Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 
-![](Tabbed_Window_images/Tabbed_Window_img6.png)
+![Tabbed_Window_img6](Tabbed_Window_images/Tabbed_Window_img6.png)
 
 ## Tabbed to another window by user interaction
 
@@ -59,13 +59,13 @@ The child window can be arranged as tabbed windows by using either of the follow
 
 The docking manager allows you to drag and drop the docked controls at run time using different DragProviderStyle. This style displays a dock hint, which allows to decide whether you can drop the control in that location.
 
-![](Tabbed_Window_images/Tabbed_Window_img1.png)
+![Tabbed_Window_img1](Tabbed_Window_images/Tabbed_Window_img1.png)
 
 ### Tabbed at design time
 
 The docked controls can be tabbed in the designer by dragging into another. The docking manager allows to tab the controls using different `DragProviderStyle`.
 
-![](Tabbed_Window_images/Tabbed_Window_img8.png)
+![Tabbed_Window_img8](Tabbed_Window_images/Tabbed_Window_img8.png)
 
 ## Tab alignments
 
@@ -94,22 +94,22 @@ Me.dockingManager1.DockTabAlignment = Syncfusion.Windows.Forms.Tools.DockTabAlig
 
 * Setting DockTabAlignment as bottom.
 
-![](Tabbed_Window_images/Tabbed_Window_img5.png)
+![Tabbed_Window_img5](Tabbed_Window_images/Tabbed_Window_img5.png)
 
 
 * Setting DockTabAlignment as left.
 
-![](Tabbed_Window_images/Tabbed_Window_img3.png)
+![Tabbed_Window_img3](Tabbed_Window_images/Tabbed_Window_img3.png)
 
 
 * Setting DockTabAlignment as right.
 
-![](Tabbed_Window_images/Tabbed_Window_img2.png)
+![Tabbed_Window_img2](Tabbed_Window_images/Tabbed_Window_img2.png)
 
 
 * Setting DockTabAlignment as top.
 
-![](Tabbed_Window_images/Tabbed_Window_img4.png)
+![Tabbed_Window_img4](Tabbed_Window_images/Tabbed_Window_img4.png)
 
 ## Prevent tabbing
 
@@ -132,7 +132,7 @@ this.dockingManager1.SetDockAbility(panel1, "Top");
 
 {% endtabs %}
 
-![](Float_Window_images/Float_Window_img2.png)
+![Float_Window_img2](Float_Window_images/Float_Window_img2.png)
 
 ## Tab reordering
 
@@ -186,7 +186,7 @@ Me.dockingManager1.ShowDockTabScrollButton = true
 
 {% endtabs %}
 
-![](Tabbed_Window_images/Tabbed_Window_img7.png)
+![Tabbed_Window_img7](Tabbed_Window_images/Tabbed_Window_img7.png)
 
 ## Change tab index by programmatically
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DockingClientPanel | WindowsForms | Syncfusion
-description: dockingclientpanel
+title: Docking Client Panel in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Docking Client Panel support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# Docking Client Panel
+# Docking Client Panel in Windows Forms Docking Manager
 
 A docking window is inherited from the client window but the layout of docking window is varied from client window at run-time, since the window is set in dock or float state. This paradigm is extremely well suited for MDI type forms where the MDIClient window gets resized/relocated in synchronization with changes in the docking windows layout.
 
@@ -144,7 +144,7 @@ Me.dockingClientPanel1.ResumeLayout(False)
 
 {% endtabs %}
 
-![](DockingClientPanel_images/DockingClientPanel1.png) 
+![DockingClientPanel1](DockingClientPanel_images/DockingClientPanel1.png) 
 
 ## Customize client panel
 
@@ -239,7 +239,7 @@ Me.dockingClientPanel1.ForeColor = System.Drawing.Color.RoyalBlue
 
 The following image illustrates a docking client panel in which the foreground and background properties has been set.
 
-![](DockingClientPanel_images/DockingClientPanelCustomization.png) 
+![DockingClientPanelCustomization](DockingClientPanel_images/DockingClientPanelCustomization.png) 
 
 ## Auto sizing
 
