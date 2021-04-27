@@ -1,14 +1,14 @@
 ---
 layout: post
 title: About Windows Forms xptoolbar control | Syncfusion
-description: Learn about Overview support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
+description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
 
-# Overview in Windows Forms ComboBoxAutoComplete(Classic)
+# Windows Forms ComboBoxAutoComplete(Classic) Overview
 
 The ComboBoxAutoComplete control combines a combo box control with an AutoComplete control to provide autocompletion for that instance of the combo box. 
 

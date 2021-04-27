@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-# Overview in Windows Forms ComboBoxAdv(Classic)
+# Windows Forms ComboBoxAdv(Classic) Overview
 
 ComboBoxAdv is an advanced combo box control that provides a similar object model as the Framework of the ComboBox control, with a lot of additional features. ComboBoxAdv is inherited from ComboBoxBaseDataBound, derived from [ComboBoxBase](/windowsforms/comboboxbase/overview) control.
 
