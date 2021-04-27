@@ -7,7 +7,7 @@ control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Make Grid filter bar use Autocomplete Combo Box in Windows Forms GridDataBoundGrid(Classic)
+# Autocomplete Combo Box in Windows Forms GridDataBoundGrid(Classic)
 
 To get autocomplete using standard GridFilterBar, try the following code.
 

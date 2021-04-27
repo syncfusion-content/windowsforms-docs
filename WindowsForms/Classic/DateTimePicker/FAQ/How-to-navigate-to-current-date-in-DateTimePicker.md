@@ -7,7 +7,7 @@ control: DateTimePickerAdv
 documentation: ug
 ---
 
-# How to navigate to current date in DateTimePickerAdv ? in Windows Forms DateTimePickerAdv(Classic)
+# Current date in DateTimePickerAdv in Windows Forms
 
 In DateTimePicker, we can navigate to current date by using the [NavigateToCurrentDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NavigateToCurrentDate_System_Boolean_) method.
 

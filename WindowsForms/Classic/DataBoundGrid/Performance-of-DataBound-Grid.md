@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance of Databound Grid in Windows Forms xptoolbar control | Syncfusion
+title: Performance of Databound Grid in WinForms xptoolbar | Syncfusion
 description: Learn about Performance of Databound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Performance of Data bound Grid in Windows Forms GridDataBoundGrid(Classic)
+# Performance of Data bound Grid in WinForms GridDataBoundGrid
 
 Essential DataBound Grid can handle large amount of data without a performance hit.
 

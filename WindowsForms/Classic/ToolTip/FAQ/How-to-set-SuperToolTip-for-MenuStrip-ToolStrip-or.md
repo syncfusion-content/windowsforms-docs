@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-set-SuperToolTip-for-MenuStrip-ToolStrip-or | WindowsForms | Syncfusion
-description: Learn about How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
+title: SuperToolTip-for-MenuStrip-ToolStrip | WindowsForms | Syncfusion
+description: Learn about How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl support in Syncfusion Windows Forms SuperToolTip and more.
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to set SuperToolTip for MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl in Windows Forms SuperToolTip(Classic)
+# SuperToolTip for MenuStrip, ToolStrip and etc in Windows Forms
 
 Few Controls like MenuStrip, ToolStrip or ToolStripEx and RibbonTabControl already have the feature of showing Tooltip. 
 

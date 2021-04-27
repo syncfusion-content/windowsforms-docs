@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-get-the-selected-text-from-a-TextBox-cell | Windows Forms | Syncfusion
+title: TextBox-cell in Windows Forms Grid | Syncfusion
 description: Learn about How To Get The Selected Text From a Textbox Cell support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Customization in Windows Forms MultiColumn TreeView control | Syncfusion
+title: Customization in Windows Forms MultiColumn TreeView | Syncfusion
 description: Learn about Styling and Customization support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms MultiColumn TreeView control | Syncfusion
+title: Getting Started with Windows Forms MultiColumn TreeView | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sign-Next-to-the-Parent-Rows in DataBoundGrid | Syncfusion
-description: Learn about How to Prevent Showing Sign Next to the Parent Rows with no Children support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
+description: Learn about How to Prevent Showing Sign Next to the Parent Rows with no Children support in Syncfusion Windows Forms GridDataBoundGrid control and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug

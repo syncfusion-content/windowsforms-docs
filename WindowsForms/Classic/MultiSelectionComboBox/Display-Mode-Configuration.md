@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Mode Configuration in Windows Forms MultiColumn TreeView control | Syncfusion
+title: Display Mode Configuration in MultiColumn TreeView | Syncfusion
 description: Learn about Display Mode Configuration support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package

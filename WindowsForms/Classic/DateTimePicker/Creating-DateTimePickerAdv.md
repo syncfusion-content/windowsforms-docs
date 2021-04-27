@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating DateTimePickerAdv in Windows Forms xptoolbar control | Syncfusion
+title: DateTimePickerAdv in Windows Forms xptoolbar | Syncfusion
 description: Learn about Creating DateTimePickerAdv support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv

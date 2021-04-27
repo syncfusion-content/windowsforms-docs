@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-display-a-SuperToolTip-at-a-specified-locat | WindowsForms | Syncfusion
+title: SuperToolTip-at-a-specified-locat | WindowsForms | Syncfusion
 description: Learn about How to display a SuperToolTip at a specified location support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
 platform: WindowsForms
 control: Frequently Asked Questions
 documentation: ug
 ---
 
-# How to display a SuperToolTip at a specified location in Windows Forms SuperToolTip(Classic)
+# SuperToolTip at a specified location in Windows Forms SuperToolTip
 
 The Show method can be used if the ToolTip is to be displayed at a specified location and for a particular time.
 

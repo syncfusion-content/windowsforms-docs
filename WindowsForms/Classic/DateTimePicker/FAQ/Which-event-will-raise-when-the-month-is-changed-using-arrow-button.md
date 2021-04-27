@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Which Event will Raise when the Month is Changed using Arrow Button in Windows Forms xptoolbar control | Syncfusion
-description: Learn about Which Event will Raise when the Month is Changed using Arrow Button support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: Arrow Button in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Which Event will Raise when the Month is Changed using Arrow Button support in Syncfusion Windows Forms DateTimePickerAdv control and more.
 platform: WindowsForms
 control: Calendar 
 documentation: ug
 ---
-# Which Event will Raise when the Month is Changed using Arrow Button in Windows Forms DateTimePickerAdv(Classic)
+# Arrow Button in Windows Forms DateTimePickerAdv(Classic)
 
 When the month in the DateTimePickerAdv is changed using Arrow button, ValueChanged event is raised.
 

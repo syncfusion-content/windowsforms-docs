@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customizing Sections of Calendar in Windows Forms xptoolbar control | Syncfusion
+title: Customizing Sections in Windows Forms xptoolbar | Syncfusion
 description: Learn about Customizing Sections of Calendar support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
 platform: WindowsForms
 control: CalendarDateTime 
 documentation: ug
 ---
-# Customizing Sections of Calendar in Windows Forms MonthCalendarAdv(Classic)
+# Customizing Sections in Windows Forms MonthCalendarAdv
 
 
 

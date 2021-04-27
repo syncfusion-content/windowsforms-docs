@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automatic Control Sizing in Windows Forms MultiColumn TreeView control | Syncfusion
+title: Automatic Control Sizing in WinForms MultiColumn TreeView | Syncfusion
 description: Learn about Automatic Control Sizing support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package

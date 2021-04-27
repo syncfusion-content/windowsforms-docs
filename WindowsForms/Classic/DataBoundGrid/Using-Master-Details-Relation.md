@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Master Details Relation in Windows Forms xptoolbar control | Syncfusion
+title: Mater Relation in Windows Forms xptoolbar | Syncfusion
 description: Learn about Using Master Details Relation support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Using Master Details Relation in Windows Forms GridDataBoundGrid(Classic)
+# Details Relation in Windows Forms GridDataBoundGrid
 
 To define simple Master-Details relation, you must have two tables. The first is a Master table that has a column whose values are also included in a second table, referred to as the Details table. You must display these two tables in two grids, which are called Master grid and Details grid. As you click a row in the Master grid, the rows displayed in the Details Grid will be restricted to only those rows whose common value matches the value in the selected Master grid row. 
 

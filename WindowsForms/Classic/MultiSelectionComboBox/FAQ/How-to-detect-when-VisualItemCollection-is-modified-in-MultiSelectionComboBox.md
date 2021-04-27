@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-detect-when-VisualItemCollection-is-modified-in-MultiSelectionComboBox | WindowsForms | Syncfusion
-description: Learn about How to Detect When VisualItemCollection is Modified in MultiSelectionCombobox support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
+title: VisualItem in MultiSelectionCombobox in Windows Forms | Syncfusion
+description: Learn about How to Detect When VisualItemCollection is Modified in MultiSelectionCombobox in Syncfusion Windows Forms MultiSelectionComboBox control and more.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# How to Detect When VisualItemCollection is Modified in MultiSelectionCombobox in Windows Forms MultiSelectionComboBox
+# VisualItemCollection in MultiSelectionCombobox in Windows Forms
 
 The following code explains you on how to detect the VisualItemCollection modification using VisualItemCollectionChanged event. This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
 
