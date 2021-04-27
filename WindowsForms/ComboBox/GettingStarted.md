@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Essential Windows Forms
-description: This section explains about the SfComboBox
+title: Getting Started with Windows Forms ComboBox control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Windows Forms ComboBox (SfComboBox)
 This section provides a quick overview for working with combo box in WinForms. 
 
 ## Assembly Deployment
@@ -22,7 +22,7 @@ Create a new Windows Forms Project in Visual Studio to display the SfCombobox co
 ### Adding Control via Designer
 The SfCombobox control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-![](GettingStarted_images/GettingStarted_img1.png)
+![GettingStarted_img1](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding Control in Code
 To add control manually, follow the steps:
@@ -108,7 +108,7 @@ sfComboBox1.DataSource = usStates
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img2.png)
+![GettingStarted_img2](GettingStarted_images/GettingStarted_img2.png)
 
 ## Auto complete
 Auto complete provides three different ways to display suggestions in drop-down list.
@@ -132,7 +132,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.png)
+![GettingStarted_img3](GettingStarted_images/GettingStarted_img3.png)
 
 ## Multi selection
 This allows you to select multiple values from the drop-down list. The multi selection combo box can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property as `MultiSelection`.
@@ -146,7 +146,7 @@ sfComboBox1.ComboBoxMode = ComboBoxMode.MultiSelection
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.png)
+![GettingStarted_img4](GettingStarted_images/GettingStarted_img4.png)
 
 ## Selected Items
 

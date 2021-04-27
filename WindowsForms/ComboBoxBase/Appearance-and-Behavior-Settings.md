@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
-description: appearance and behavior settings
+title: Appearance and Behavior Settings in Windows Forms ComboBoxBase control | Syncfusion
+description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms ComboBoxBase control and more details.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-# Appearance and Behavior Settings
+# Appearance and Behavior Settings in Windows Forms ComboBoxBase
 
 This section includes the discussion of Appearance and Behavior Settings of ComboBoxBase.
 

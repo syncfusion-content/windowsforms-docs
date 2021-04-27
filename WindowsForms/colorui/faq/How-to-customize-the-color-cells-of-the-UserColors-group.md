@@ -49,4 +49,4 @@ Me.colorUIControl1.UserColorsStretchOnResize = True
 
 N> UserGroups should be selected in ColorGroups property to effect the above settings.
 
-![](FAQ_images/Overview_img245.jpeg) 
+![Overview_img245](FAQ_images/Overview_img245.jpeg) 
