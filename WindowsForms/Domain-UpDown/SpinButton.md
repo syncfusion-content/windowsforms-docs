@@ -6,7 +6,7 @@ platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Spin button in Windows Forms Domain UpDown (DomainUpdownnext)
+# Spin button in Windows Forms Domain UpDown (DomainUpdown next)
 
 This section will discuss the properties which controls the alignment and orientation of the spin button in a DomainUpDownExt control.
 
