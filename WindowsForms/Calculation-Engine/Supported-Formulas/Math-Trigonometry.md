@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Formulas of Calculate for Syncfusion Essential windowsforms
-description: This session explains that the supported formulas with syntax and description of Math & Trigonometry functions in CalcEngine
+title: Math Trigonometry in Windows Forms Calculation Engine | Syncfusion
+description: Learn about Math Trigonometry support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Math & Trigonometry formulas of Calculate library
+# Math Trigonometry in Windows Forms Calculation Engine (Calculate)
 
 
 

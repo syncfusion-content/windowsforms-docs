@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoComplete Events | Syncfusion
-description: This section explains about the event in AutoComplete
+title: Autocomplete Events in Windows Forms AutoComplete control | Syncfusion
+description: Learn about Autocomplete Events support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# AutoComplete Events
+# Autocomplete Events in Windows Forms AutoComplete
 
 The events of the AutoComplete component are as follows.
 

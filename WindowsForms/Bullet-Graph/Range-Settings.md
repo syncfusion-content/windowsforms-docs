@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | Windows Forms | Syncfusion
-description: Learn how to customize the range and to set range stroke to ticks and labels in Bullet Graph Windows Forms
+title: Range Settings in Windows Forms Bullet Graph control | Syncfusion
+description: Learn about Range Settings support in Syncfusion Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
 ---
 
-# Qualitative Range of the Bullet Graph 
+# Range Settings in Windows Forms Bullet Graph
 
 Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative range is a visual element that ends at a specified RangeEnd at the start of the previous range’s RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 

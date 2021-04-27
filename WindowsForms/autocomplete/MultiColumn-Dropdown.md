@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MultiColumn Dropdown | Syncfusion
-description: This section explains about how to interact with multiple columns.
+title: About Windows Forms AutoComplete control | Syncfusion
+description: Learn about MultiColumn Dropdown support in Syncfusion Windows Forms AutoComplete control and more details.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
 ---
 
-# Multiple Columns
+# MultiColumn Dropdown in Windows Forms AutoComplete
 
 The AutoComplete allows you to display multiple columns of information. The columns can be configured using the following properties:
 

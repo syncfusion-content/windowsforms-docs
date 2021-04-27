@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart-control-events | Windows Forms | Syncfusion
-description: This section explains about the events in the chart control
+title: Events in Windows Forms Chart control | Syncfusion
+description: Learn about Events support in Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms Chart
 
 The following events are discussed in this section:
 

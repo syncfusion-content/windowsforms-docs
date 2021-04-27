@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ButtonEdit Appearance | WindowsForms | Syncfusion
-description: This section gives detailed description on customizing the ButtonEdit control appearance using Style, Foreground and Case settings.
+title: ButtonEditAppearance in Windows Forms ButtonEdit control | Syncfusion
+description: Learn about ButtonEditAppearance support in Syncfusion Windows Forms ButtonEdit control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# ButtonEdit Appearance
+# ButtonEditAppearance in Windows Forms ButtonEdit
 
 A [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control is a combination of controls with textbox and buttons. The ButtonEdit control supports properties which controls the appearance and behavior of the control.
 
