@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in WinForms Gradient Label control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Gradient Label control and more details.
+title: Getting Started with Windows Forms Gradient Label | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Gradient Label control, its elements, and more details.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug

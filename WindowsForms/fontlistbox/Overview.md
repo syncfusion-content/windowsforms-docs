@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion FontListBox for WindowsForms
-description: Overview of Syncfusion FontListBox which automatically populated with the fonts installed on the user's system
+title: About Windows Forms FontListBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms FontListBox control, its elements, and more details.
 platform: WindowsForms
 control: FontListBox
 documentation: ug
 ---
 
-# Overview
+# Windows Forms FontListBox Overview
 
 The **FontListBox** is a list box derived control that can be populated automatically with the fonts installed on the user's system. It provides an easy way to fill a list box with system fonts.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: FolderBrowserCallback Event | WindowsForms | Syncfusion
-description: folderbrowsercallback event
+title: Folderbrowser Callback Event in Windows Forms Folder Browser control | Syncfusion
+description: Learn about Folderbrowser Callback Event support in Syncfusion Windows Forms Folder Browser control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# FolderBrowserCallback event
+# Folderbrowser Callback Event in Windows Forms Folder Browser
 
 The [FolderBrowserCallback event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html) occurs when an event within the folder browser dialog triggers a call to the validation callback. The event handler receives an argument of type [FolderBrowserCallbackEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowserCallbackEventArgs.html).
 
