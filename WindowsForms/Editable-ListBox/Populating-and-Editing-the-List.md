@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating and Editing the List in Windows Forms Editable ListBox control | Syncfusion
+title: Populating and Editing the List in Editable ListBox | Syncfusion
 description: Learn about Populating and Editing the List support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Populating and Editing the List in Windows Forms Editable ListBox (EditableList)
+# Populating and Editing the List in WinForms Editable ListBox
 
 ## Populate the list
 

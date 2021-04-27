@@ -7,7 +7,7 @@ control: DICOM
 documentation: ug
 ---
 
-# DICOM Format in Windows Forms dicom (DICOM)
+# DICOM Format in Windows Forms DICOM
 
 Essential DICOM is a 100% native .NET library that converts the standard image formats to the DICOM format (DCM). Essential DICOM is a solution for users who need to convert the ordinary image formats to the DICOM format. It requires a DICOM viewer or an equivalent viewer to view the converted DICOM image. The following are the list of image formats that are supported for conversion.
 

@@ -7,7 +7,7 @@ control: DICOM
 documentation: ug
 ---
 
-# Windows Forms dicom (DICOM) Overview
+# Windows Forms DICOM Overview
 
 ## Introduction to DICOM
 

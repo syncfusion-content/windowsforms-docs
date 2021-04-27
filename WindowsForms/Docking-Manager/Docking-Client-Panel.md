@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking Client Panel in Windows Forms Docking Manager control | Syncfusion
+title: Docking Client Panel in WinForms Docking Manager | Syncfusion
 description: Learn about Docking Client Panel support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 

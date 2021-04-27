@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance and Behavior Settings in Windows Forms Editable ListBox control | Syncfusion
+title: Appearance and Behavior Settings in Editable ListBox | Syncfusion
 description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
-# Appearance and Behavior Settings in Windows Forms Editable ListBox (EditableList)
+# Appearance and Behavior Settings in WinForms Editable ListBox
 
 This section discusses the complete Appearance and behavior settings of EditableList control.
 

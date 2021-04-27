@@ -7,7 +7,7 @@ control: DICOM
 documentation: ug
 ---
 
-# Getting Started with Windows Forms dicom (DICOM)
+# Getting Started with Windows Forms DICOM
 
 ## Feature Summary
 
@@ -57,7 +57,7 @@ A windows application is created.
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.png)
    A new WPF application is created.
 
 2. Open the main form of the application in the designer. 
