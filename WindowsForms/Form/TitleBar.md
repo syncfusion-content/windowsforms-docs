@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Title Bar in Windows Form | Syncfusion
-description: This section explains about the title bar height, alignment, rich text formatting,loading user control to the title bar for windows forms and more details.
+title: Title Bar in Windows Forms Form control | Syncfusion
+description: Learn about Title Bar support in Syncfusion Windows Forms Form (SfForm) control, its elements and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug

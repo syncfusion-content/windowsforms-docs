@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of FolderBrowser control | Windows Forms | Syncfusion
-description: FolderBrowser dialog is a Windows Explorer inspired control helps to browsing the folder and files with different location settings.
+title: About Windows Forms Folder Browser control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Folder Browser control, its elements, and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Folder Browser Overview
 
 The Essential Tools FolderBrowser component provides a convenient and easy to use object oriented wrapper for the Win32 Shell Folder Browser API. This class completely abstracts the intricacies involved in using the various complex Shell API functions, structures and callback routines required for working with the Windows Folder Selection Dialog and allows Windows Forms developers to work with.NET-centric properties, events and methods.
 
