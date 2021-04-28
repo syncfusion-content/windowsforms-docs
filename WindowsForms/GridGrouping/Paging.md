@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Paging in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Paging support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Paging support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Paging in Windows Forms GridGrouping (GridGroupingControl)
+# Paging in Windows Forms GridGrouping control
 Paging is the process of splitting up of large records into a separate segments to view and manipulate the data. It is used to improve the performance of the grid. The paging support can be enabled to the GridGroupingControl by using the [Pager.Wire](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Pager.html#Syncfusion_GridHelperClasses_Pager_Wire_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_) method.
 
 {% tabs %}

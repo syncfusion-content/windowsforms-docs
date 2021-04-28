@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Zooming in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Zooming support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Zooming support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Zooming in Windows Forms GridGrouping (GridGroupingControl)
+# Zooming in Windows Forms GridGrouping control
 GridGroupingControl supports zooming functionality by magnifying the image of grid for better visualization. Zooming can be enabled by initializing [ZoomGroupingGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly provides this support. 
 
 {% tabs %}

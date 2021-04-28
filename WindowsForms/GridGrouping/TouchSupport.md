@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Touch Support in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Touch Support support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Touch Support support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# Touch Support in Windows Forms GridGrouping (GridGroupingControl)
+# Touch Support in Windows Forms GridGrouping control
 GridGroupingControl provides the swipe scrolling, panning, zooming and touch selection (bubble selection) touch supports. The touch support for grid can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_EnableTouchMode) property to `true`. This will enable the grid to support the swiping, panning, touch selection (bubble selection) and zooming. The default value of `EnableTouchMode` property is `false`.
 {% tabs %}
 {% highlight c# %}

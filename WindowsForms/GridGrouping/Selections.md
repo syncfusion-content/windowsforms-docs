@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selections in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Selections support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Selections support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Selections in Windows Forms GridGrouping (GridGroupingControl)
+# Selections in Windows Forms GridGrouping control
 
 There are two type of selection architectures in a Grid Grouping control. One is designed specifically for Grid Grouping control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. 
 

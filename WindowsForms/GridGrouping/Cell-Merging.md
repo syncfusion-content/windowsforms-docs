@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Cell Merging in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Cell Merging support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Cell Merging support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Cell Merging in Windows Forms GridGrouping (GridGroupingControl)
+# Cell Merging in Windows Forms GridGrouping Control
 Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_MergeCell), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
 
 {% tabs %}

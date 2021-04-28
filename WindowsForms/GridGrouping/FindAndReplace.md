@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Find and Replace in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Find and Replace support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Find and Replace support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Find and Replace in Windows Forms GridGrouping (GridGroupingControl)
+# Find and Replace in Windows Forms GridGrouping control
 The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridGroupingControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the Find and Replace technique in GridGroupingControl.
 
 * [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html#)

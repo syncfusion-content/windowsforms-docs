@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Scrolling in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Scrolling support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Scrolling support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Scrolling in Windows Forms GridGrouping (GridGroupingControl)
+# Scrolling in Windows Forms GridGrouping control
 GridGroupingControl provides the built in support for scrolling. Scrolling can be enabled or disabled in GridGroupingControl by using the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_VScrollBehavior) properties respectively.
 
 {% tabs %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Helper Classes in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Grid Helper Classes support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Grid Helper Classes support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Filtering support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Filtering support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Filtering in Windows Forms GridGrouping (GridGroupingControl)
+# Filtering in Windows Forms GridGrouping control
 The GridGroupingControl has the filtering support and it is specially designed for filtering the records based on the conditions. The followings are the various kinds of filtering support that are provided for the GridGroupingControl.
  
 * [Record filter](#record-filters) (programmatic filtering)

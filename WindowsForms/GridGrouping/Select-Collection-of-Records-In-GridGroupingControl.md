@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Select Collection of Records In GridGrouping Control | Syncfusion
-description: Learn about Select Collection of Records In GridGroupingControl support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Select Collection of Records In GridGroupingControl support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

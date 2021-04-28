@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sorting in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Sorting support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Sorting support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Sorting in Windows Forms GridGrouping (GridGroupingControl)
+# Sorting in Windows Forms GridGrouping control
 GridGroupingControl allows users to sort table data against one or more columns. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
 There are multiple ways to sort table data. A simple one is to click the desired column headers that needs to be sorted. Also sorting can be performed programmatically. Once sorting is applied, the grid will display a sort icon in the respective column headers showing sort direction. 

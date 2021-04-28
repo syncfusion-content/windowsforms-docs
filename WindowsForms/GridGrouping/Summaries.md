@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Summaries in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Summaries support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Summaries support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Summaries in Windows Forms GridGrouping (GridGroupingControl)
+# Summaries in Windows Forms GridGrouping control
 Summaries are used to derive additional information from the data like average, maximums, summations, count, and so on. The GridGroupingControl provides default support for adding the summaries. It has the built-in support for following summary types,
 
 * Int32Aggregate, DoubleAggregate (Count, Min, Max, Sum)

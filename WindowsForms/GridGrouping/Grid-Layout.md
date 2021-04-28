@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grid Layout in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Grid Layout support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Grid Layout support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grid Layout in Windows Forms GridGrouping (GridGroupingControl)
+# Grid Layout in Windows Forms GridGrouping control
 GridGroupingControl offers different layouts to organize the display of data. This section will discuss some of the features offered by GridGroupingControl for layout customization.
 
 1. [Stacked Headers](#stacked-headers)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Editing in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Editing support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Editing support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Editing in Windows Forms GridGrouping (GridGroupingControl)
+# Editing in Windows Forms GridGrouping control
 The GridGroupingControl lets you control the editing behavior of cells. For changing the editing behavior, make use of the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. This property will decide whether to edit the cells using single click or double click or disable editing.
 
 {% tabs %}

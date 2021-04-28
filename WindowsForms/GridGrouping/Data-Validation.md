@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Validation in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Data Validation support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Data Validation support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Data Validation in Windows Forms GridGrouping (GridGroupingControl)
+# Data Validation in Windows Forms GridGrouping control
 The GridGroupingControl lets you define restrictions on what data can or should be entered in a cell. When an incorrect data is entered in the cell, it will display an error icon and an error message.  It is also possible to display error icon in row header.
 
 ## Built-in Validation

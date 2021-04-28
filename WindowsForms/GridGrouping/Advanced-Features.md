@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Advanced Features in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Advanced Features support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Advanced Features support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Advanced Features in Windows Forms GridGrouping (GridGroupingControl)
+# Advanced Features in Windows Forms GridGrouping Control
 
 ## Custom Grouping
 

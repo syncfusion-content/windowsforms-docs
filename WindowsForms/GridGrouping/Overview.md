@@ -1,13 +1,13 @@
 ---
 layout: post
 title: About Windows Forms GridGrouping control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms GridGrouping (GridGroupingControl) control, its elements, and more details.
+description: Learn here all about introduction of Syncfusion Windows Forms GridGrouping control, its elements, its elements, and more details.
 platform: windowsforms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# Windows Forms GridGrouping (GridGroupingControl) Overview
+# Windows Forms GridGrouping control Overview
 
 The grid grouping control is a very powerful data grid with built-in support for hierarchical grouping, filtering, multicolumn sorting, summaries, and binding various data source types. Its unique UI and data virtualization architecture provides instant scrolling capabilities, display millions of records, and handle real-time data updates with less CPU usage.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Real-Time Applications in Windows Forms Grid Control | Syncfusion
-description: Learn about Real-Time Applications support in Syncfusion Windows Forms Grid Control control and more details.
+description: Learn about Real-Time Applications support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug

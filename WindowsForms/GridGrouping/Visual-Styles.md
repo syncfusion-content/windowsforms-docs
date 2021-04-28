@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Visual Styles in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Visual Styles support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Visual Styles support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Visual Styles in Windows Forms GridGrouping (GridGroupingControl)
+# Visual Styles in Windows Forms GridGrouping control
 The GridGroupingControl can be displayed with the different themes by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) property. The following themes are available for GridGroupingControl,
 
 * Office2003

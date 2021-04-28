@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Grouping support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+description: Learn about Grouping support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grouping in Windows Forms GridGrouping (GridGroupingControl)
+# Grouping in Windows Forms GridGrouping control
 GridGroupingControl lets you group the data by one or more columns. Data will be organized into a hierarchical structure based on the matching field values. This section will explain about the architecture and what are the possible ways to achieve the Grouping.
 
 If Grouping is enabled in GridGroupingControl, then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GroupDropArea](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). `GroupDropArea` is made up of a collection of GridControls packed in a panel named [GroupDropPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropPanel). The functions and properties of `GroupDropArea`, `GroupDropPanel` and other options related to it will be explained in the upcoming sections.
