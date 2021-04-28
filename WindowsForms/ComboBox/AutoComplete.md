@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto Complete | SfComboBox | Syncfusion
-description: This section provides a basic idea that how the auto complete options works in SfComboBox for Syncfusion essential windows forms
+title: Auto Complete in Windows Forms ComboBox control | Syncfusion
+description: Learn about Auto Complete support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Auto Complete
+# Auto Complete in Windows Forms ComboBox (SfComboBox)
 
 Auto complete can be enabled by using the [SfComboBox.AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property. Three different ways to display the suggestions are:
 

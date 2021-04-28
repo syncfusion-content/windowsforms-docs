@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataBinding | SfComboBox | WinForms | Syncfusion
-description: This section deals with explain about the DataBinding support in SfComboBox control on WinForms platform
+title: Data Binding in Windows Forms ComboBox control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug

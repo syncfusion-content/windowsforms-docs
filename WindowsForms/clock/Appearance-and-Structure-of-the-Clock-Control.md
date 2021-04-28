@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clock control appearance | WindowsForms | Syncfusion
-description: appearance and structure of the clock control
+title: Appearance and Structure of the Clock in Windows Forms | Syncfusion
+description: Learn about Appearance and Structure of the Clock Control support in Syncfusion Windows Forms Clock control and more details.
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
 documentation: ug

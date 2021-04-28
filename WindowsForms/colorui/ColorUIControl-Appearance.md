@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ColorUIControl Appearance | WindowsForms | Syncfusion
-description: coloruicontrol appearance
+title: ColorUIControl Appearance in Windows Forms ColorUI | Syncfusion
+description: Learn about ColorUIControl Appearance support in Syncfusion Windows Forms ColorUI control, its elements and more details.
 platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---
-# ColorUIControl Appearance
+# ColorUIControl Appearance in Windows Forms ColorUI
 
 This section discusses the appearance, border styles and size settings of the ColorUIControl.
 
@@ -39,7 +39,7 @@ Me.colorUIControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorUI_images/Overview_img236.jpeg) 
+![Overview_img236](ColorUI_images/Overview_img236.jpeg) 
 
 ## Panel Sizing
 
@@ -76,7 +76,7 @@ Me.colorUIControl1.UserColorsStretchOnResize = True
 {% endhighlight  %}
 {% endtabs %}
 
-![](ColorUI_images/Overview_img237.jpeg)
+![Overview_img237](ColorUI_images/Overview_img237.jpeg)
 
 ## VisualStyle
 
@@ -108,4 +108,4 @@ Me.colorUIControl1.VisualStyle = Syncfusion.Windows.Forms.ColorUIStyle.Office201
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorUI_images/Office2016Colorful.jpeg)
+![Office2016Colorful](ColorUI_images/Office2016Colorful.jpeg)
