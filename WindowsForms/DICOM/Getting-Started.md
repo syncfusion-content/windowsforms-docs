@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started with Windows Forms DICOM Control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms DICOM Control, its elements, and more details.
+title: Getting Started with Windows Forms dicom control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms dicom (DICOM) control, its elements, and more details.
 platform: windowsforms
 control: DICOM 
 documentation: ug
@@ -17,7 +17,7 @@ The following image shows the converted DICOM Image using Essential DICOM.
 
 
 
-![WindowsForms DICOM Getting-Started Image1](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -36,7 +36,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select Windows Forms Application template, name the project and click OK. 
 
-![WindowsForms DICOM Getting-Started Image2](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -57,7 +57,7 @@ A windows application is created.
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-   ![WindowsForms DICOM Getting-Started Image3](Getting-Started_images/Getting-Started_img3.png)
+   ![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.png)
    A new WPF application is created.
 
 2. Open the main form of the application in the designer. 

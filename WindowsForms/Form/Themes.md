@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Themes in Windows Form | Syncfusion
-description: This section explains about the load theme assembly, different theme support in Syncfusion WinForms Form (SfForm) control and more details.
+title: Themes in Windows Forms Form control | Syncfusion
+description: Learn about Themes support in Syncfusion Windows Forms Form (SfForm) control, its elements and more details.
 platform: windowsforms
 control: SfForm
 documentation: ug

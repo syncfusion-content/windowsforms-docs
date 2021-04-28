@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Keyboard Support | WindowsForms | Syncfusion
-description: keyboard support
+title: Keyboard Support in Windows Forms Domain UpDown control | Syncfusion
+description: Learn about Keyboard Support support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Keyboard Support
+# Keyboard Support in Windows Forms Domain UpDown (DomainUpdownExt)
 
 Using Up and Down arrow keys we can increment and decrement the value of DomainUpDownExt control by setting InterceptArrowKeys to true.
 

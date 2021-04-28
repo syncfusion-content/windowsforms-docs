@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Windows Form | Syncfusion
-description: This section explains about the assembly deployment, title bar and border customization, loading user control to title bar for windows forms and more details.
+title: Getting Started with Windows Forms Form control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Form (SfForm) control, its elements, and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug

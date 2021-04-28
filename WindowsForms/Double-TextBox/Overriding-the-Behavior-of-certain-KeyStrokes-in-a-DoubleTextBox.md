@@ -1,12 +1,12 @@
 ---
 layout: post
-title: KeyStrokes in a DoubleTextBox | WindowsForms | Syncfusion
-description: Overriding the Behavior of certain KeyStrokes in a DoubleTextBox
+title: Overriding the Behavior in WinForms Double TextBox | Syncfusion
+description: Learn about Overriding the Behavior of certain Keystrokes in a Doubletextbox support in Syncfusion Windows Forms Double TextBox control and more details.
 platform: WindowsForms
 control: DoubleTextBox
 documentation: ug
 ---
-# Overriding the Behavior of certain KeyStrokes in a DoubleTextBox
+# Overriding the Behavior in a Double text box in Windows Forms
 
 This can be done by overriding the HandleSubtractKey(). Given below is the code snippet which shows an example of how to clear the text when the NegativeSign is changed.
 

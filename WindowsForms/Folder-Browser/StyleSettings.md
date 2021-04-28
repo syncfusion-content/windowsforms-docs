@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style Settings | WindowsForms | Syncfusion
-description: style settings
+title: Style Settings in Windows Forms Folder Browser control | Syncfusion
+description: Learn about Style Settings support in Syncfusion Windows Forms Folder Browser control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Style settings
+# Style Settings in Windows Forms Folder Browser
 
 The various options of the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_Style) property are described below.
 

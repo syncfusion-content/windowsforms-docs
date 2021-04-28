@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo-or-Redo | Windows Forms | Syncfusion
-description: This section explains about how to revert/restore the changes using Undo and Redo commands in Diagram control
+title: Undo / Redo in Windows Forms Diagram control | Syncfusion
+description: Learn about Undo / Redo support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Undo / Redo
+# Undo / Redo in Windows Forms Diagram
 
 The actions can be recorded into the history manager such that the undo and redo operations can be performed. The recording can be controlled and the undo and redo actions can be performed using the following tools.
 

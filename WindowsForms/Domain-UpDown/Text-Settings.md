@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Text Settings | WindowsForms | Syncfusion
-description: text settings
+title: Text Settings in Windows Forms Domain UpDown control | Syncfusion
+description: Learn about Text Settings support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Text Settings
+# Text Settings in Windows Forms Domain UpDown (DomainUpdownExt)
 
 The text for the DomainUpDownExt control can be specified in String Collection Editor. This section discusses the properties which deals with this text.
 

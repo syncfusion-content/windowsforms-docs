@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Styles | WindowsForms | Syncfusion
-description: Visual Styles
+title: Visual Styles in Windows Forms FontComboBox control | Syncfusion
+description: Learn about Visual Styles support in Syncfusion Windows Forms FontComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Visual Styles
+# Visual Styles in Windows Forms FontComboBox
 
 Visual Styles for the FontComboBox control can be enabled through below properties.
 
@@ -40,7 +40,7 @@ Me.fontComboBox2.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComboBoxStyl
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img582.jpeg) 
+![Overview_img582](Overview_images/Overview_img582.jpeg) 
 
 ## Custom Colors
 
@@ -62,4 +62,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img587.jpeg) 
+![Overview_img587](Overview_images/Overview_img587.jpeg) 

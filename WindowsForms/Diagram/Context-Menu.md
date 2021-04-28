@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context-Menu | Windows Forms | Syncfusion
-description: This section explains about how to use the Diagram's Context Menu items and their important key features
+title: Context Menu in Windows Forms Diagram control | Syncfusion
+description: Learn about Context Menu support in Syncfusion Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Built-in Diagram Context Menu
+# Context Menu in Windows Forms Diagram
 
 ### Built-in context menu
 
