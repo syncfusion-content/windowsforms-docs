@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | GroupView | WindowsForms | Syncfusion
-description: How to create the GroupView control in a Windows Forms application.
+title: Getting Started with Windows Forms GroupView control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GroupView control, its elements and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Getting started
+# Getting Started with Windows Forms GroupView
 
 This section describes how to add [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control in a Windows Forms application and overview of its basic functionalities.
 

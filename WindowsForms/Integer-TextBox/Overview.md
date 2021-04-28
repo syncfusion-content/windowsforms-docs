@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion IntegerTextBox for WindowsForms
-description: A quick introduction about the IntergerTextBox which is derived from TextBox with the support to deal only with the integer data type values.
+title: About Windows Forms Integer TextBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Integer TextBox (Integertextbox) control, its elements and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Integer TextBox (Integertextbox) Overview
 
 The IntegerTextBox is derived from the Windows Forms Framework TextBox control and can display integer data type values. It exhibits properties similar to that of the CurrencyTextBox.
 

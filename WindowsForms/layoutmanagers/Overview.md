@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview of Layout control for Windows Forms
-description: Overview section of layout manager explains about various layout controls available in Windows Forms
+title: About Windows Forms LayoutManagers control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: Layout Managers Package
 documentation: ug
 ---
-# Overview
+# Windows Forms LayoutManagers Overview
 
 ## Layout Manager
 

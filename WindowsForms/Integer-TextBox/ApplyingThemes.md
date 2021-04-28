@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying Themes | WindowsForms | Syncfusion
-description: applying themes
+title: Applying Themes in Windows Forms Integer TextBox control | Syncfusion
+description: Learn about Applying Themes support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Applying Themes
+# Applying Themes in Windows Forms Integer TextBox (Integertextbox)
 
 Themes can be applied to the IntegerTextBox control using the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property given below.
 

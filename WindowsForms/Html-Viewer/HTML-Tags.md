@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Tags | WindowsForms | Syncfusion
-description:  html tags
+title: HTML Tags in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Tags support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-#  HTML tags
+#  HTML tags in Windows Forms Html Viewer control
 
 This sections details the HTML tags supported by HTMLUI. Most of the tags conform to the XHTML standard. Some of the tags support additional functionality implemented through custom attributes. Since HTMLUI considers each HTML tag as an XML element, it is recommended to use closing tags for each HTML element at the end. These tags and attributes are also marked and explained in this section.
 
@@ -2068,7 +2068,7 @@ This sample shows the various Tags supported in HTMLUI.
 
 
 
-![](HTML-Tags_images/HTML-Tags_img1.jpeg)
+![HTML-Tags_img1](HTML-Tags_images/HTML-Tags_img1.jpeg)
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Tables | WindowsForms | Syncfusion
-description: html tables
+title: HTML Tables in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Tables support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-# HTML tables
+# HTML Tables in Windows Forms Html Viewer (HTMLUI)
 
 HTMLUI has a rich table support that lets the user to decide the table's dimensions and design. The HTMLUI table support also comes with different alignments of text within the table. This helps the user in creating advanced and highly structured HTML applications.
 
@@ -41,7 +41,7 @@ This sample illustrates how to implement Tables using HTMLUI.
 
 
 
-![](HTML-Tables_images/HTML-Tables_img1.jpeg)
+![HTML-Tables_img1](HTML-Tables_images/HTML-Tables_img1.jpeg)
 
 
 

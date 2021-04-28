@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | CardLayout control for Windows Forms | Syncfusion
-description: Overview section of layout manager explains about CardLayout controls available in Windows Forms
+title: About Windows Forms LayoutManagers control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: CardLayout
 documentation: ug
 ---
 
-# Overview
+# Windows Forms LayoutManagers Overview
 
 The `CardLayout` is a layout manager applied to a container. The components are added to a layout in a particular form and not in different forms. It treats each component in the container as a card. Only one card is visible at a time, and the container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the container is displayed first.
 

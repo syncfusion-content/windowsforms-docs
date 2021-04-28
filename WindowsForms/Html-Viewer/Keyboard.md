@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard | WindowsForms | Syncfusion
-description:  keyboard
+title: Keyboard in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Keyboard support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-#  Keyboard
+#  Keyboard in Windows Forms Html Viewer control
 
 The HTMLUI control also supports usage of keyboards for navigating through the links inside a HTML document. Like in popular browsers, HTMLUI control uses the TAB key for shifting the focus on the links.
 
@@ -15,7 +15,7 @@ The HTMLUI control also supports usage of keyboards for navigating through the l
 
 This sample shows how elements in the document can be focused by using the Keyboard support in HTMLUI.
 
-![](Keyboard_images/Keyboard_img1.jpeg)
+![Keyboard_img1](Keyboard_images/Keyboard_img1.jpeg)
 
 
 
