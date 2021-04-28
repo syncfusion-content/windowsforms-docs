@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Border Settings | WindowsForms | Syncfusion
-description: Border Settings
+title: Border Settings in Windows Forms Gradient Label control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms Gradient Label control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
-# Border Settings
+# Border Settings in Windows Forms Gradient Label
 
 This section discusses the border settings of the GradientLabel control.
 
@@ -55,4 +55,4 @@ Me.gradientLabel1.BorderColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
- ![](GradientLabel-Images/Overview_img603.jpeg)
+ ![Windows Forms GradientLabel Image603](GradientLabel-Images/Overview_img603.jpeg)

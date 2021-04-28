@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in Windows Form | Syncfusion
-description: This section explains about the it's important key features such as title bar and MDI form support,border customization for windows forms and more details.
+title: About Windows Forms Form control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Form (SfForm) control, its elements, and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MDI Customization in Windows Form | Syncfusion
-description: This section explains about the MDI form support and customization, appearance and active mdi child for windows forms and more details.
+title: MDI Customization in Windows Forms Form control | Syncfusion
+description: Learn about MDI Customization support in Syncfusion Windows Forms Form (SfForm) control and more details.
 platform: WindowsForms
 control: SfForm
 documentation: ug
