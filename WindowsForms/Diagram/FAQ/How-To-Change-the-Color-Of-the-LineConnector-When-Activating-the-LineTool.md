@@ -7,13 +7,13 @@ control: Diagram
 documentation: ug
 ---
 
-# How To Change the Color Of the LineConnector Diagram
-
-We can change the color of the LineConnector while activating the LineTool using the LineTool and LineBase class. In the Mouse up event of the LineTool class, change the color of the link. 
-
-## How To Change the Color Of the LineConnector When Activating the LineTool
+# How To Change the Color Of the LineConnector When Activating the LineTool
 
 This page explains about How To Change the Color Of the LineConnector When Activating the LineTool and more details.
+
+## How To Change the Color Of the LineConnector Diagram
+
+We can change the color of the LineConnector while activating the LineTool using the LineTool and LineBase class. In the Mouse up event of the LineTool class, change the color of the link. 
 
 Refer to the following code snippet in CustomLineConnector class.
 
