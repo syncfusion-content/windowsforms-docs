@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show/Hide History Button in Windows Forms NavigationView control | Syncfusion
+title: Show/Hide History Button in Windows Forms NavigationView | Syncfusion
 description: Learn about Show/Hide History Button support in Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: NavigationView 

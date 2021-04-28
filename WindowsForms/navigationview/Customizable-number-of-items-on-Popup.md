@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizable number of Items on Popup in Windows Forms NavigationView control | Syncfusion
+title: Customizable number of Items on Popup in NavigationView | Syncfusion
 description: Learn about Customizable number of Items on Popup support in Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: Navigation View 

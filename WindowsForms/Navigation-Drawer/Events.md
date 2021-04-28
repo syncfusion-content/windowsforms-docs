@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms Navigation Drawer control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms Navigation Drawer control and more details.
+description: Learn about Events support in Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug

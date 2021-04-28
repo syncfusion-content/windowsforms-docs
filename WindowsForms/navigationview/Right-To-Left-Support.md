@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Right to Left Support in Windows Forms NavigationView control | Syncfusion
+title: Right to Left Support in Windows Forms NavigationView | Syncfusion
 description: Learn about Right to Left Support support in Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: Navigation View 

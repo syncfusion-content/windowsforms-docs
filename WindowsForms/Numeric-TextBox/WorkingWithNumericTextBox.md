@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with NumericTextBox in Windows Forms Numeric TextBox control | Syncfusion
+title: Working with NumericTextBox in WinForms Numeric TextBox | Syncfusion
 description: Learn about Working with NumericTextBox support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Working with NumericTextBox in Windows Forms Numeric TextBox (SfNumericTextBox)
+# Working with NumericTextBox in Windows Forms Numeric TextBox
 
 ## ValueChanged Event
 

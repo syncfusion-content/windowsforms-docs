@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in Windows Forms Navigation Drawer control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Navigation Drawer control and more details.
+description: Learn about Style support in Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug
