@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms NumericUpDown control | Syncfusion
+title: Appearance Settings in Windows Forms NumericUpDown | Syncfusion
 description: Learn about Appearance Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage

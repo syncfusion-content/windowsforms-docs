@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with PdfViewerControl in Windows Forms PDF Viewer control | Syncfusion
+title: Working with PdfViewerControl in WinForms PDF Viewer | Syncfusion
 description: Learn about Working with PdfViewerControl support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-# Working with PdfViewerControl in Windows Forms PDF Viewer (PdfViewerControl)
+# Working with PdfViewerControl in Windows Forms PDF Viewer
 
 Essential PdfViewerControl can display and print PDF files and export the pages as raster images and meta files.
 

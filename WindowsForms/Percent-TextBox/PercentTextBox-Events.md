@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PercentTextBox Events in Windows Forms Percent TextBox control | Syncfusion
+title: PercentTextBox Events in Windows Forms Percent TextBox | Syncfusion
 description: Learn about PercentTextBox Events support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
