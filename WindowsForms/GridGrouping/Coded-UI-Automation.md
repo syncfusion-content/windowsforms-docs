@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Coded UI Automation for Syncfusion Essential WindowsForms
-description: This section explains the testing the DataGrid with Coded UI automation test
+title: Coded UI Automation in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Coded UI Automation support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Coded UI Automation
+# Coded UI Automation in Windows Forms GridGrouping
 The GridGroupingControl can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridGroupingControl. The validation can be done at grid level or cell level.
 
 Levels of Microsoft Coded UI Test (CUIT) support,
@@ -24,15 +24,15 @@ A `Coded UI Test Project` needs to be created for testing the application. The f
 
 1. Create Coded UI Test Project ,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img1.jpeg)
+   ![Coded-UI-Automation_img1](Coded-UI-Automation_images/Coded-UI-Automation_img1.jpeg)
 
 2. A `Generate Code for Coded UI test` dialog box will be opened. Click `OK` button,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img2.jpeg)
+   ![Coded-UI-Automation_img2](Coded-UI-Automation_images/Coded-UI-Automation_img2.jpeg)
 
 3. The Coded UI Test Builder will be displayed above the notification bar,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img3.jpeg)
+   ![Coded-UI-Automation_img3](Coded-UI-Automation_images/Coded-UI-Automation_img3.jpeg)
 
 4. Then run the sample application which needs to be automated.
 
@@ -47,31 +47,31 @@ The **Coded UI Test** performs action on the user interface (UI) controls and ve
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#getting-started) section.
 2. In the **Coded UI Test Builder** dialog, select and drag the assertion button to the UI element which needs to be tested,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img4.jpeg)
+   ![Coded-UI-Automation_img4](Coded-UI-Automation_images/Coded-UI-Automation_img4.jpeg)
 
 3. The GridGroupingControl or Cell will be highlighted with a rectangular bounds like below,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img5.jpeg)
+   ![Coded-UI-Automation_img5](Coded-UI-Automation_images/Coded-UI-Automation_img5.jpeg)
 
 ### Assertion of GridGroupingControl
 For asserting the GridGroupingControl, the whole grid will be highlighted with that rectangular bounds.  After assertion, the properties related to GridGroupingControl will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img6.jpeg)
+![Coded-UI-Automation_img6](Coded-UI-Automation_images/Coded-UI-Automation_img6.jpeg)
 
 ### Assertion of a Cell
 For asserting a particular cell, the cell will be highlighted with that rectangular bounds.  After assertion, the properties related to that particular cell will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img7.jpeg)
+![Coded-UI-Automation_img7](Coded-UI-Automation_images/Coded-UI-Automation_img7.jpeg)
 
 ### Assertion of Merged Cells
 For asserting the merged cell, the merged range will be treated as a single cell and it will be highlighted with rectangular bounds.  After assertion, the properties related to the merged cell will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img8.jpeg)
+![Coded-UI-Automation_img8](Coded-UI-Automation_images/Coded-UI-Automation_img8.jpeg)
 
 ### Assertion of GridGroupDropArea
 The GridGroupDropArea of the GridGroupingControl can also be asserted. For asserting the GridGroupDropArea, the GridGroupDropArea will be highlighted with that rectangular bounds.  After assertion, the properties related to that GridGroupDropArea will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img9.jpeg)
+![Coded-UI-Automation_img9](Coded-UI-Automation_images/Coded-UI-Automation_img9.jpeg)
 
 ## Record and Playback
 The GridGroupingControl lets you record the automation and play back those automated actions whenever application needs to be tested. 
@@ -82,23 +82,23 @@ The following steps are used to record and playback the application,
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#getting-started) section,
 2. Select the `Start Recording` button as follows,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img10.jpeg)
+   ![Coded-UI-Automation_img10](Coded-UI-Automation_images/Coded-UI-Automation_img10.jpeg)
 
 3. Perform the needed actions in the application. Ensure that a notification is displaying for each and every actions performed in the application like below,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img11.jpeg)
+   ![Coded-UI-Automation_img11](Coded-UI-Automation_images/Coded-UI-Automation_img11.jpeg)
 
 4. Then Click the `Generate Code` button as follows,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img12.jpeg)
+   ![Coded-UI-Automation_img12](Coded-UI-Automation_images/Coded-UI-Automation_img12.jpeg)
 
 5. The Coded UI test code will be generated in Coded UI Test Project as follows,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img13.jpeg)
+   ![Coded-UI-Automation_img13](Coded-UI-Automation_images/Coded-UI-Automation_img13.jpeg)
 
 6. The each and every recorded actions will be generated in Coded UI like below,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
+   ![Coded-UI-Automation_img14](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
 ### Playback
 The recorded automation codes can be played back. The following steps are used to playback the automated methods,
@@ -108,7 +108,7 @@ The recorded automation codes can be played back. The following steps are used t
 3. Right Click on the `CodedUITestMethod1` method.
 4. Select the `Run Tests` option.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img15.jpeg)
+![Coded-UI-Automation_img15](Coded-UI-Automation_images/Coded-UI-Automation_img15.jpeg)
 
 ## In-built Support
 The GridGroupingControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
@@ -230,7 +230,7 @@ WinSpinner
 
 The below example shows the properties that are displayed in the Coded UI test builder,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
+![Coded-UI-Automation_img16](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
 
 N> The properties will be displayed based on the respective MSAA control properties. 
 
@@ -239,7 +239,7 @@ As GridGroupingControl and cell are asserted like MSAA control, a value of a cel
 
 The below example shows the checkbox is asserted and the checked state of the check box is displayed in `HelpText` property,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
+![Coded-UI-Automation_img17](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
 
 ### Finding a cell and getting the cell value
 To find a cell in the GridGroupingControl, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
@@ -276,7 +276,7 @@ End Sub
 
 The below example shows the getting of a cell value from grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
+![Coded-UI-Automation_img18](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
 
 ### Highlighting a cell
 To highlight a cell in GridGroupingControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -314,7 +314,7 @@ End Sub
 
 The below example shows the highlighting of a cell,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
+![Coded-UI-Automation_img19](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
 ### Highlighting a grid
 To highlight a GridGroupingControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -348,7 +348,7 @@ End Sub
 
 The below example shows the highlighting of grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
+![Coded-UI-Automation_img20](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
 
 ## External Plugin
 The GridGroupingControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
@@ -629,7 +629,7 @@ End Sub
 
 The below example shows the getting of a cell value from grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
+![Coded-UI-Automation_img21](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
 
 ### Highlighting a cell
 To highlight a cell in GridGroupingControl, the GridGroupingControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -670,5 +670,5 @@ End Sub
 {% endtabs %}
 The below example shows the highlighting of a cell,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
+![Coded-UI-Automation_img22](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
 

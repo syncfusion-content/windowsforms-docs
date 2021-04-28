@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Records and Columns for Syncfusion Essential WindowsForms
-description: This section explains on how to working with records and columns in the GridGroupingControl.
+title: Managing Records and Columns in WinForms GridGrouping | Syncfusion
+description: Learn about Managing Records and Columns support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Managing Records and Columns 
+# Managing Records and Columns in Windows Forms GridGrouping
 This section will explain about working with records and columns in GridGroupingControl.
 
 ## Hiding Records and Columns
@@ -98,11 +98,11 @@ The columns of the GridGroupingControl can be hide by resizing it to the minimum
 
 The following image shows the column `CategoryID` is resized to the minimum size over the other column,
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img1.jpeg)
+![Managing-Records-and-Columns_img1](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img1.jpeg)
 
 The below screenshot shows the grid displaying the columns after hiding the `CategoryID`,
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img2.jpeg)
+![Managing-Records-and-Columns_img2](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img2.jpeg)
 
 The rows cannot be hidden by resizing to the minimum positions as mentioned in the above procedure. In GridGroupingControl, it will resize all the records of the grid when resizing a single row. If the row is resized to the minimum size (`zero`), it will hide all the records of the grid.  This restriction can be removed by creating a `GridEngineFactory` before the `InitializeComponent` method of the GridGroupingControl.
 
@@ -120,14 +120,14 @@ InitializeComponent()
 {% endtabs %}
 The following screen shot shows the resizing of the row `6` to the minimum size,
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img3.jpeg)
+![Managing-Records-and-Columns_img3](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img3.jpeg)
 
 The hidden row by resizing is showing in the following screen shot
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img4.jpeg)
+![Managing-Records-and-Columns_img4](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img4.jpeg)
 
 ## Unhide Columns Using Double Click
-The hidden columns by resizing can be unhide by performing the double click between the column headers![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
+The hidden columns by resizing can be unhide by performing the double click between the column headers![Managing-Records-and-Columns_images5](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
 
 ### Prevent Column from Hiding 
 The columns can be prevent from hiding on resizing by canceling the [ColsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event.
@@ -195,22 +195,22 @@ Me.gridGroupingControl1.TableModel.Cols.FrozenCount = 3
 N> The GridGroupingControl does not have the support for the frozen rows option.
 
 ## Moving Columns
-The columns can be moved from one position to other by using the drag and drop. The column `CategoryID` is moving by using the drag and drop is shown in the following screenshot![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img6.jpeg)
+The columns can be moved from one position to other by using the drag and drop. The column `CategoryID` is moving by using the drag and drop is shown in the following screenshot![Managing-Records-and-Columns_images6](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img6.jpeg)
 
 The grid after moving the column is shown below
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img7.jpeg)
+![Managing-Records-and-Columns_img7](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img7.jpeg)
 
 ### Programmatic Moving of Columns
 The columns visible order can be programmatically changed by using the [VisibleColumns.Move](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridVisibleColumnDescriptorCollection.html#Syncfusion_Windows_Forms_Grid_Grouping_GridVisibleColumnDescriptorCollection_Move_System_Int32_System_Int32_) method.
 
 The columns before moving the column is shown below
  
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img8.jpeg)
+![Managing-Records-and-Columns_img8](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img8.jpeg)
 
 The grid after moving the column
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
+![Managing-Records-and-Columns_img9](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img9.jpeg)
 
 ## Unbound Columns
 The GridGroupingControl provides the support for adding the unbound columns which are not bounded to the grid's data source. This can be achieved by creating the field descriptor and adding to the [UnboundFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) collection.
@@ -277,7 +277,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-The unbound field added to the GridGroupingControl is shown in the following screenshot![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img10.jpeg)
+The unbound field added to the GridGroupingControl is shown in the following screenshot![Managing-Records-and-Columns_images10](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img10.jpeg)
 
 ## Setting the Column Widths and Row Heights 
 The column width and row height of the GridGroupingControl can be set dynamically by resizing using the mouse controller. 
@@ -426,7 +426,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.AnyRecordFieldCell
 Me.gridGroupingControl1.TableDescriptor.Columns(1).Appearance.AnyRecordFieldCell.Font.Bold = True
 {% endhighlight %}
 {% endtabs %}
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img11.jpeg)
+![Managing-Records-and-Columns_img11](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img11.jpeg)
 
 ## Proportional Column Sizing 
 All the columns of the grid can be have the same width that of the equal partition of the total width by setting the [AllowProportionalColumnSizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_AllowProportionalColumnSizing) to `true`.
@@ -461,7 +461,7 @@ MessageBox.Show("The Current Record ID is :" & record.Id.ToString())
 {% endhighlight %}
 {% endtabs %}
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img12.jpeg)
+![Managing-Records-and-Columns_img12](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img12.jpeg)
 
 ## Getting the Value of the Particular Field from the Record
 To get the value of the particular field from the record, use the [Record.GetValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRecord.html#Syncfusion_Windows_Forms_Grid_Grouping_GridRecord_GetValue_Syncfusion_Grouping_FieldDescriptor_) method. It will return the value of the given filed.
@@ -479,7 +479,7 @@ MessageBox.Show("Product Name is :" & data)
 {% endhighlight %}
 {% endtabs %}
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img13.jpeg)
+![Managing-Records-and-Columns_img13](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img13.jpeg)
 
 ## Set the value for the particular Field 
 The value for the particular field can be set by using the [SetValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRecord.html) method.
@@ -529,5 +529,5 @@ MessageBox.Show("The Current Record row index is :" & index.ToString())
 {% endhighlight %}
 {% endtabs %}
 
-![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img14.jpeg)
+![Managing-Records-and-Columns_img14](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img14.jpeg)
 

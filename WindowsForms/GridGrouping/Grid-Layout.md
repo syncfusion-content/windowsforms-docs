@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layout for Syncfusion Essential WindowsForms
-description: This section explains the different kinds of layout customization available in GridGroupingControl
+title: Grid Layout in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Grid Layout support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grid Layout
+# Grid Layout in Windows Forms GridGrouping control
 GridGroupingControl offers different layouts to organize the display of data. This section will discuss some of the features offered by GridGroupingControl for layout customization.
 
 1. [Stacked Headers](#stacked-headers)
@@ -69,19 +69,19 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
 
 1. Open **GridStackedHeaderRowDescriptor Collection Editor** by using the `StackedHeaderRows` property which is available under the `TableDescriptor` property. Using this collection editor, user can add header rows by specifying different attributes like HeaderText, VisibleColumns, Appearance and so on. 
    
-   ![](Grid-Layout_images/Grid-Layout_img1.png)
+   ![Grid-Layout_images1](Grid-Layout_images/Grid-Layout_img1.png)
 
 2. Enable the [ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) property to display the stacked headers for the table and groups.
    
-   ![](Grid-Layout_images/Grid-Layout_img2.png)
+   ![Grid-Layout_images2](Grid-Layout_images/Grid-Layout_img2.png)
 
    The below screen shot shows the grid with stacked headers.
    
-   ![](Grid-Layout_images/Grid-Layout_img3.png)
+   ![Grid-Layout_images3](Grid-Layout_images/Grid-Layout_img3.png)
 
 3. Visible columns gets affected automatically while rearranging stacked headers as of follows,
    
-   ![](Grid-Layout_images/Grid-Layout_img4.png)
+   ![Grid-Layout_images4](Grid-Layout_images/Grid-Layout_img4.png)
 
  N> The stacked headers will be generated if the added columns in the stacked headers are presented in the [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Columns) collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
  
@@ -155,7 +155,7 @@ Me.gridGroupingControl1.TopLevelGroupOptions.ShowStackedHeaders = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img5.png)
+![Grid-Layout_img5](Grid-Layout_images/Grid-Layout_img5.png)
 
 ### Stacked Headers in Nested Table
 Users can also display the stacked headers for the child groups as well as the nested child groups. For enabling the stacked headers in child and nested child table, you have to use the [ChildGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) and [NestedTableGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) properties respectively. 
@@ -220,7 +220,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowStackedHeaders = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img6.png)
+![Grid-Layout_img6](Grid-Layout_images/Grid-Layout_img6.png)
 
 ### Appearance
 The user can change the appearance of the `StackedHeader` in couple of ways. For changing the appearance of the whole stacked header, you can make use of the `Appearance.StackedHeaderCell` property. If you want to change the individual stacked headers in each StackedHeader row, then change the appearance settings through `GridStackedHeaderRow` Descriptor.
@@ -228,7 +228,7 @@ The user can change the appearance of the `StackedHeader` in couple of ways. For
 #### Making changes for all stacked headers
 For changing all the stacked header style properties then make use of the `Appearance.StackedHeaderCell` property. This property acts as `GridTableCellStyleInfo` class hence it contains all the style properties. 
 
-![](Grid-Layout_images/Grid-Layout_img7.png)
+![Grid-Layout_img7](Grid-Layout_images/Grid-Layout_img7.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -244,12 +244,12 @@ Me.gridGroupingControl1.TableDescriptor.Appearance.StackedHeaderCell.BackColor =
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img8.png)
+![Grid-Layout_img8](Grid-Layout_images/Grid-Layout_img8.png)
 
 #### Making changes for individual stacked headers
 For changing the individual stacked headers then make use of the `GridStackedHeaderRow` descriptor and change the color for individual stack header cells. This can be done in designer as well as in code behind.
 
-![](Grid-Layout_images/Grid-Layout_img9.png)
+![Grid-Layout_img9](Grid-Layout_images/Grid-Layout_img9.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -301,12 +301,12 @@ gridStackedHeaderRowDescriptor1.Headers.Add(gridStackedHeaderDescriptor1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img10.png)
+![Grid-Layout_img10](Grid-Layout_images/Grid-Layout_img10.png)
 
 ### Multi-Stacked Headers
 Multiple stacked headers can be achieved in GridGroupingControl by just adding the required number of rows using the `TableDescriptor.StackedHeaderRows` property. 
 
-![](Grid-Layout_images/Grid-Layout_img11.png)
+![Grid-Layout_img11](Grid-Layout_images/Grid-Layout_img11.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -357,7 +357,7 @@ Me.gridGroupingControl1.TableDescriptor.StackedHeaderRows.Add(stackedHeaderRowDe
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img12.png)
+![Grid-Layout_img12](Grid-Layout_images/Grid-Layout_img12.png)
 
 ### FieldChooser for StackedHeaders
 User can show or hide the columns of a stacked header in a grid by using the [FieldChooser](#field-chooser) functionality.
@@ -375,9 +375,9 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 
 N> For more information, refer the dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Stacked Headers Demo\CS
 
-![](Grid-Layout_images/Grid-Layout_img13.png)
+![Grid-Layout_img13](Grid-Layout_images/Grid-Layout_img13.png)
 
-![](Grid-Layout_images/Grid-Layout_img14.png)
+![Grid-Layout_img14](Grid-Layout_images/Grid-Layout_img14.png)
 
 #### Displaying only Stacked Header Columns 
 By default, `FieldChooser Dialog` will be loaded with the inner columns along with the stacked headers. To display only the stacked headers make us of the [EnableColumnsInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FieldChooser.html#Syncfusion_GridHelperClasses_FieldChooser_EnableColumnsInView) property.
@@ -394,7 +394,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 fieldChooser.EnableColumnsInView = False
 {% endhighlight %}
 {% endtabs %}
-![](Grid-Layout_images/Grid-Layout_img15.png)
+![Grid-Layout_img15](Grid-Layout_images/Grid-Layout_img15.png)
 
 ### Hiding Stacked Headers
 The display of stacked headers can be hidden by setting the [ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) property to `false`. This can be achieved for parent table, child table and nested child table by using the properties [TopLevelGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders), [ChildGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) and [NestedTableGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) respectively.
@@ -463,7 +463,7 @@ GridGroupingControl offers built-in support for Multi-Row Records. Using this su
 ### Adding Column Spans through Designer
 To create `ColumnSets` that defines [ColumnSpans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnSetDescriptor_ColumnSpans) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
 
-![](Grid-Layout_images/Grid-Layout_img16.png)
+![Grid-Layout_img16](Grid-Layout_images/Grid-Layout_img16.png)
 
 ### Adding Column Spans through Code
 The below steps needs to be followed for spanning the records across multiple rows.
@@ -541,7 +541,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.Add(columnSetDescriptor)
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img17.png)
+![Grid-Layout_img17](Grid-Layout_images/Grid-Layout_img17.png)
 
 N> For more information regarding the Multi-Row record, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Record Customization Demo\
 
@@ -590,7 +590,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img19.png)
+![Grid-Layout_img19](Grid-Layout_images/Grid-Layout_img19.png)
 
 ### Changing caption text for FieldChooser dialog
 FieldChooser events are used to customize FieldChooser dialog box. For changing the caption text of the `FieldChooser dialog box`, make use of the [FieldChooserShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event. In this event, you can make use of the[e.Caption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.FieldChooserShowingEventArgs.html#Syncfusion_Windows_Forms_Grid_FieldChooserShowingEventArgs_Caption) property to change the text.
@@ -618,7 +618,7 @@ Private Sub Grid_FieldChooserShowing(ByVal sender As Object, ByVal e As Syncfusi
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Grid-Layout_images/Grid-Layout_img20.png)
+![Grid-Layout_img20](Grid-Layout_images/Grid-Layout_img20.png)
 
 FieldChooser events are used to customize FieldChooser dialog box. It allows the user to modify control of the FieldChooser dialog and change its caption name. It has events to perform operations in FieldChooser dialog box such as [FieldChooserShowing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html), [FieldChooserShown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html), [FieldChooserClosing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [FieldChooserClosed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) events.
 
@@ -701,7 +701,7 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Grid-Layout_images/Grid-Layout_img21.png)
+![Grid-Layout_img21](Grid-Layout_images/Grid-Layout_img21.png)
 
 N> FieldChooser support can also be added in [StackedHeaders](#stacked-headers). 
 
@@ -778,7 +778,7 @@ gridGroupingControl1.TableDescriptor.FrozenColumn = "ParentName"
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img22.png)
+![Grid-Layout_img22](Grid-Layout_images/Grid-Layout_img22.png)
 
 ### Freezing Columns in Nested Table
 It is also possible to freeze columns of nested table in a GridGroupingControl by using the [TableDescriptor.FrozenColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_FrozenColumn). First you have to get the `TableDescriptor` of the required child table and then have to access the `FrozenColumn` property.
@@ -802,7 +802,7 @@ Me.gridGroupingControl1.GetTableDescriptor("MyGrandChildTable").FrozenColumn = "
 {% endhighlight %}
 {% endtabs %}
 
-![](Grid-Layout_images/Grid-Layout_img23.png)
+![Grid-Layout_img23](Grid-Layout_images/Grid-Layout_img23.png)
 
 N> For more information on Freezing columns, refer the dashboard sample located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Layout Customization\Frozen Column Demo\
 
@@ -835,7 +835,7 @@ Me.gridGroupingControl.FreezeCaption = True
 
 N> To view a sample on Freezing the Caption Row, refer the dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Events Demo
 
-![](Grid-Layout_images/Grid-Layout_img24.png)
+![Grid-Layout_img24](Grid-Layout_images/Grid-Layout_img24.png)
 
 ### Enabling ScrollBar when the Freeze Columns exceeds the Client Area
 In GridGroupingControl, if freeze columns exceed client area then the horizontal scroll bar will become invisible. To overcome this some of the customizations has to be done. You have to make use of the [ResizeEnd](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.resizeend(v=vs.110).aspx) and [HScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events and need to check certain conditions in it.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard Operations for Syncfusion Essential WindowsForms
-description: This section explains on how to perform the clipboard operations such as cut, copy and paste in GridGroupingControl.
+title: Clipboard Operations in Windows Forms GridGrouping | Syncfusion
+description: Learn about Clipboard Operations support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Clipboard Operations 
+# Clipboard Operations in Windows Forms GridGrouping
 The GridGroupingControls provides the default support for clipboard operations such as Cut, Copy and Paste. The [TableModel.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_CutPaste) property is used to handle the programmatic clipboard operations of the grid. 
 
 ## Copy 

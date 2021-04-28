@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Expression Fields for Syncfusion Essential WindowsForms
-description: This section discusses the advantages of Expression fields and its usages.
+title: Expression Fields in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Expression Fields support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Expression Fields
+# Expression Fields in Windows Forms GridGrouping control
 The GridGroupingControl lets column to display the calculation results based on other fields in the same record. The calculation result can be displayed in a separate column i.e. unbound column. These expression columns can be visible or invisible, used in grouping and sorting, and may be employed as summary fields for summary rows.
 
 The [ExpressionFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) are maintained in the [ExpressionFieldsDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptorCollection.html) in which each entry termed as [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) defines one expression field. 
 
 The below example shows the behavior of the ExpressionFields in the GridGroupingControl,
 
-![](Expression-Fields_images/Expression-Fields_img1.png)
+![Expression-Fields_img1](Expression-Fields_images/Expression-Fields_img1.png)
 
 The ExpressionFields can be added to GridGroupingControl at design time by using the `ExpressionFields` property which is listed under the `TableDescriptor` category of the property window. The `ExpressionFieldDescriptor Collection Editor` is used to manage the `ExpressionFieldDescriptor`. 
 
-![](Expression-Fields_images/Expression-Fields_img2.png)
+![Expression-Fields_img2](Expression-Fields_images/Expression-Fields_img2.png)
 
-![](Expression-Fields_images/Expression-Fields_img3.png)
+![Expression-Fields_img3](Expression-Fields_images/Expression-Fields_img3.png)
 
 The [ExpressionFieldDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class has the following properties. 
 
@@ -100,7 +100,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Winning %").Appearance.AnyRecor
 {% endhighlight %}
 {% endtabs %}
 
-![](Expression-Fields_images/Expression-Fields_img4.png)
+![Expression-Fields_img4](Expression-Fields_images/Expression-Fields_img4.png)
 
 ## List of Expressions
 Expressions may be any well-formed algebraic combination of column mapping names enclosed with brackets `[]`, numerical constants and literals, and the algebraic and logical operators are listed below.
@@ -381,7 +381,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("Losing %
 {% endhighlight %}
 {% endtabs %}
 
-![](Expression-Fields_images/Expression-Fields_img5.png)
+![Expression-Fields_img5](Expression-Fields_images/Expression-Fields_img5.png)
 
 ## Adding Custom Function
 The custom functions which can be any mathematical formulas or calculation method can be used in the ExpressionFields. The can be done by using the [ExpressionFieldEvaluator](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldDescriptor.html) class.
@@ -479,7 +479,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 {% endhighlight %}
 {% endtabs %}
 
-![](Expression-Fields_images/Expression-Fields_img6.png)
+![Expression-Fields_img6](Expression-Fields_images/Expression-Fields_img6.png)
 
 ## Adding Calculate Engine Formulas
 The [Essential Calculate formula](http://help.syncfusion.com/windowsforms/calculate/calculate-functions) functions can also be used as custom function for the calculation of Expression Fields. The **Syncfusion.Calculate.Base.dll**provides the accessible to use the calculate engine. 
@@ -533,7 +533,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 {% endhighlight %}
 {% endtabs %}
 
-![](Expression-Fields_images/Expression-Fields_img7.png)
+![Expression-Fields_img7](Expression-Fields_images/Expression-Fields_img7.png)
 
 ## Nested Functions
 The Nested functions can also be used as expression for `ExpressionFields` so that any of the methods can be used inside another method for calculations. For example,
@@ -592,7 +592,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Expression
 {% endhighlight %}
 {% endtabs %}
 
-![](Expression-Fields_images/Expression-Fields_img8.png)
+![Expression-Fields_img8](Expression-Fields_images/Expression-Fields_img8.png)
 
 ## Validating Expression
 The expressions can be validated using the [IsExpressionValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_IsExpressionValid_System_String_System_String_Syncfusion_Grouping_Record_System_String__) method. When an invalid expression is added to the ExpressionField, the error message will be displayed in `ExpressionFields` rows.

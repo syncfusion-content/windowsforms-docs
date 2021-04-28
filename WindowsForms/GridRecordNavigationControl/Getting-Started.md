@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion GridRecordNavigation Control
-description: Learn here about getting started with Syncfusion Windows Forms GridRecordNavigation control, its elements, and more.
+title: Getting Started with Windows Forms GridRecordNavigation | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GridRecordNavigationControl, its elements, and more details.
 platform: WindowsForms
 control: GridRecordNavigationControl
 documentation: ug
 ---
 
-# Getting started with Windows Forms GridRecordNavigationControl
+# Getting Started with Windows Forms GridRecordNavigationControl
 
 This section explains creating a simple application with GridRecordNavigationControl and its functionalities.
 
@@ -40,20 +40,20 @@ You can drag both Grid Record Navigation control and Grid control (either Grid c
 
 1. Drag the GridRecordNavigationControl object from your toolbox and drop it on the form.
 
-   ![WindowsForms GridRecordNavigationControl Image1](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img1.jpeg)
+   ![Grid-Record-Navigation-Control_images1](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img1.jpeg)
 
 2. Size and position it.
 3. Drag the GridDataBoundGrid object from your toolbox and drop it on Grid Record Navigation control (and not the form itself).
 
-   ![WindowsForms GridRecordNavigationControl Image2](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img2.jpeg)
+   ![Grid-Record-Navigation-Control_images2](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img2.jpeg)
 
 4. Set the GridDataBoundGrid.DataSource property to an appropriate object.
 
-   ![WindowsForms GridRecordNavigationControl Image3](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img3.jpeg)
+   ![Grid-Record-Navigation-Control_images3](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img3.jpeg)
 
 5. Run the application. A GridRecordNavigation control will be created.
 
-   ![WindowsForms GridRecordNavigationControl Image4](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img4.jpeg)
+   ![Grid-Record-Navigation-Control_images4](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img4.jpeg)
 
 ### Through code
 

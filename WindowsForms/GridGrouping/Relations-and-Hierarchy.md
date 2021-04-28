@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Relations and Hierarchy for Syncfusion Essential WindowsForms
-description: This section explains about the relation and hierarchy of the GridGroupingControl.
+title: Relations and Hierarchy in Windows Forms GridGrouping | Syncfusion
+description: Learn about Relations and Hierarchy support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Relations and Hierarchy
+# Relations and Hierarchy in Windows Forms GridGrouping
 GridGroupingControl can display nested tables in a hierarchy using master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: `1:1`, `1:n`, `n:1` or `n:n`.
 
 A GridGroupingControl can automatically detect [DataRelations](https://msdn.microsoft.com/en-us/library/ay82azad.aspx) in a [dataset](https://msdn.microsoft.com/en-in/library/system.data.dataset.aspx) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
@@ -23,7 +23,7 @@ The relations of the table can be defined by adding it to the [TableDescriptor.R
 ### Adding Relations through Designer
 After binding the hierarchical dataset to the grid, user could find that [TableDescriptor.Relations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Relations) collection is populated with values. These values represent the relationship between the parent and child tables.
 
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img1.png)
+![Relations-and-Hierarchy_img1](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img1.png)
 
 The following [GridRelationDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) properties are used to set up the relations in GridGroupingControl.
 
@@ -262,7 +262,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 
 While running the sample the tables are connected with Master-Details relation as of follows,
 
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img2.png)
+![Relations-and-Hierarchy_img2](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img2.png)
 
 **Sample Location:**
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Windows\Grid.Grouping.Windows\Samples\
@@ -579,7 +579,7 @@ mainTd.Name = "ForeignKeyReference"
 {% endhighlight %}
 {% endtabs %}
 
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img3.png)
+![Relations-and-Hierarchy_img3](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img3.png)
 
 **Sample Location:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Foreign-Key Reference Demo
@@ -744,7 +744,7 @@ childRelation.ChildTableDescriptor.AllowNew = True
 Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 {% endhighlight %}
 {% endtabs %}
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img4.png)
+![Relations-and-Hierarchy_img4](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img4.png)
 
 **Sample Location:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\Employee Territory Order Demo
@@ -1050,7 +1050,7 @@ mainTd.Name = "ListItemReference"
 {% endhighlight %}
 {% endtabs %}
 
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img5.png)
+![Relations-and-Hierarchy_img5](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img5.png)
 
 **Sample Location:**
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Relation And Hierarchy\List Item Reference Demo
@@ -1414,7 +1414,7 @@ childTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 The following screenshot will be the outcome of the above steps,
 
-![](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img6.png)
+![Relations-and-Hierarchy_img6](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img6.png)
 
 ## Generate Auto Relations 
 The [AutoPopulateRelations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_AutoPopulateRelations) property is used to specify, whether the relations should be automatically generated when the DataSource assigned to a `DataTable` with constraints or a `DataSet` with relations defined. This will be enabled by default.

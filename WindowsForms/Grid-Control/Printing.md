@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing for Syncfusion Essential Windows Forms
-description: This section explains that how to print and print preview the contents of GridControl for Windows Forms.
+title: Printing in Windows Forms Grid Control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Printing in Windows Forms GridControl
+# Printing in Windows Forms Grid Control
 The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx). 
 
 {% tabs %}

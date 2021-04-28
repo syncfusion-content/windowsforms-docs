@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formula Bar of GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to add formula bar(GridAwareTextBox) in applicaation and its usablilities
+title: Formula Bar in Windows Forms Grid Control | Syncfusion
+description: Learn about Formula Bar support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 
 ---
-# Formula Bar
+# Formula Bar in Windows Forms Grid Control
 
 The formula bar is derived from the [TextBox](https://msdn.microsoft.com/en-us/library/system.windows.forms.textbox.aspx#) control which is used to bind to the [CurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridNestedTableControl_CurrentCell) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
 
@@ -27,12 +27,12 @@ Me.gridAwareTextBox1.WireGrid(Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img1.jpeg)
+![CellGrid_FormulaBar_img1](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img1.jpeg)
 
 
 Note: If the cell has formula, `GridAwareTextBox` will display the formula instead of calculated value.
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img2.jpeg)
+![CellGrid_FormulaBar_img2](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img2.jpeg)
 
 
 ## Applying Back color 
@@ -58,9 +58,9 @@ Me.gridAwareTextBox1.DisabledBackColor = Color.Orange
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img3.jpeg)
+![CellGrid_FormulaBar_img3](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img3.jpeg)
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img4.jpeg)
+![CellGrid_FormulaBar_img4](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img4.jpeg)
 
 
 ## Auto Suggestion
@@ -109,7 +109,7 @@ Me.gridAwareTextBox1.AutoCompleteCustomSource.AddRange(items)
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img5.jpeg)
+![CellGrid_FormulaBar_img5](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img5.jpeg)
 
 
 ## Multi-line Support
@@ -128,7 +128,7 @@ Me.gridAwareTextBox1.Multiline = True
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img6.jpeg)
+![CellGrid_FormulaBar_img6](CellGrid_FormulaBar_images/CellGrid_FormulaBar_img6.jpeg)
 
 
 N> Formula bar supports all the events and methods which are provided by the `TextBox` control.
