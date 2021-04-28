@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  HTML tags
+#  HTML tags in Windows Forms Html Viewer control
 
 This sections details the HTML tags supported by HTMLUI. Most of the tags conform to the XHTML standard. Some of the tags support additional functionality implemented through custom attributes. Since HTMLUI considers each HTML tag as an XML element, it is recommended to use closing tags for each HTML element at the end. These tags and attributes are also marked and explained in this section.
 

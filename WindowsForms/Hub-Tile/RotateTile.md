@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RotateTile in Windows Forms Hub Tile control | Syncfusion
-description: Learn about RotateTile support in Syncfusion Windows Forms Hub Tile control and more details.
+description: Learn about RotateTile support in Syncfusion Windows Forms Hub Tile control, its elements and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug

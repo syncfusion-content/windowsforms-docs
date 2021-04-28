@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Style Sheets CSS
+#  Style Sheets CSS in Windows Forms Html Viewer control
 
 The support for style sheets is enabled in HTMLUI. This lets the user to define styles for HTML elements and decide the appearance of the HTML elements in the application. HTMLUI supports three types of style sheets.
 

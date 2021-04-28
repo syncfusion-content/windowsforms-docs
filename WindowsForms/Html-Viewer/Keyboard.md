@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Keyboard
+#  Keyboard in Windows Forms Html Viewer control
 
 The HTMLUI control also supports usage of keyboards for navigating through the links inside a HTML document. Like in popular browsers, HTMLUI control uses the TAB key for shifting the focus on the links.
 

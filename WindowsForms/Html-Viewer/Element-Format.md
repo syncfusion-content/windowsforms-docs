@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Element format
+#  Element format  in Windows Forms Html Viewer control
 
 Essential HTMLUI supports formatting of not only the entire HTML document as a whole, but also the individual elements. With HTMLUI, the user can replace any HTML element into some other format before displaying, in a view to develop advanced user interactivity.
 

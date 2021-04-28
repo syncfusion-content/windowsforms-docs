@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Settings of GroupView in Windows Forms GroupView control | Syncfusion
+title: Image Settings of GroupView in Windows Forms GroupView | Syncfusion
 description: Learn about Image Settings of GroupView support in Syncfusion Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView

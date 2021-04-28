@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding GroupView to GroupBar in Windows Forms GroupView control | Syncfusion
-description: Learn about Adding GroupView to GroupBar support in Syncfusion Windows Forms GroupView control and more details.
+title: Adding GroupView to GroupBar in Windows Forms GroupView | Syncfusion
+description: Learn about Adding GroupView to GroupBar support in Syncfusion Windows Forms GroupView control, its elements and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
@@ -84,5 +84,5 @@ Me.groupViewItem3.Text = "Desktop"
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img87.jpeg) 
+ ![Overview_images87](Overview_images/Overview_img87.jpeg) 
 

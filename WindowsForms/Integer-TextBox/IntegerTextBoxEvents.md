@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Integertextbox Events in Windows Forms Integer TextBox control | Syncfusion
-description: Learn about Integertextbox Events support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
+title: Integertextbox Events in Windows Forms Integer TextBox | Syncfusion
+description: Learn about Integertextbox Events support in Syncfusion Windows Forms Integer TextBox control, its elements and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Integertextbox Events in Windows Forms Integer TextBox (Integertextbox)
+# Integertextbox Events in Windows Forms Integer TextBox
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

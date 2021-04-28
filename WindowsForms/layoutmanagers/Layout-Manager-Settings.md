@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Manager Settings in Windows Forms LayoutManagers control | Syncfusion
+title: Layout Manager Settings in Windows Forms LayoutManagers | Syncfusion
 description: Learn about Layout Manager Settings support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: Layout Managers Package

@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Printing
+#  Printing in Windows Forms Html Viewer control
 
 The HTMLUI control supports printing that helps the user in developing a hard copy of the document displayed in the HTMLUI control. Also the Print Preview feature lets the user to preview the page before being printed, and change the page according to the requirements.
 

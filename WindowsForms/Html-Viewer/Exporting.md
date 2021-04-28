@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Exporting
+#  Exporting in Windows Forms Html Viewer control
 
 Essential HTMLUI supports the export of HTML documents. These documents that are available in the HTMLUI control can be exported as images. The HTMLUI control uses the InputHTML class to render the HTML document and then converts the available document to Bitmaps.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Applying Themes in Windows Forms GroupView control | Syncfusion
-description: Learn about Applying Themes support in Syncfusion Windows Forms GroupView control and more details.
+description: Learn about Applying Themes support in Syncfusion Windows Forms GroupView control, its elements and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug

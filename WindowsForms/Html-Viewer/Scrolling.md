@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Scrolling
+#  Scrolling in Windows Forms Html Viewer control
 
 The Scroll property of the HTMLUI control helps in loading large HTML documents. This scroll property can be set as per the application. Also the HTMLUI control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
 

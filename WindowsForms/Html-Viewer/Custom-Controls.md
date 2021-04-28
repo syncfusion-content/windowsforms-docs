@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  Custom controls
+#  Custom controls in Windows Forms Html Viewer control
 
 The Custom Controls are not standard HTML elements but user-defined controls that are created for improving the application's richness and productivity.
 

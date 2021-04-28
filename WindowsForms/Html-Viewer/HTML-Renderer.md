@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  HTML renderer
+#  HTML renderer in Windows Forms Html Viewer control
 
 As the HTMLUI control supports rendering of web pages, it can be used like a light-weight web browser for compact applications that include links to references.
 

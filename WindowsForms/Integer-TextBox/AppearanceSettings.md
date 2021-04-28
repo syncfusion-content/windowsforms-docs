@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms Integer TextBox control | Syncfusion
-description: Learn about Appearance Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
+title: Appearance Settings in Windows Forms Integer TextBox | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms Integer TextBox control, its elements and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms Integer TextBox (Integertextbox)
+# Appearance Settings in Windows Forms Integer TextBox
 
 ## Background settings
 

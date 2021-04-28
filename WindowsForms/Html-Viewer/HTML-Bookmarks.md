@@ -7,7 +7,7 @@ control: HTML UI
 documentation: ug
 ---
 
-#  HTML bookmarks
+#  HTML bookmarks in Windows Forms Html Viewer control
 
 Bookmarks feature is enabled in the HTMLUI control. This allows the user to switch to particular references in the page when the link is clicked. The HTMLUI control has another functionality of referring bookmarks which is, referring them not only in the same page, but also in other pages.
 
