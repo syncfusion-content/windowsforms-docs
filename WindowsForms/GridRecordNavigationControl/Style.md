@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in Windows Forms GridRecordNavigationControl control | Syncfusion
+title: Style in Windows Forms GridRecordNavigationControl | Syncfusion
 description: Learn about Style support in Syncfusion Windows Forms GridRecordNavigationControl control and more details.
 platform: windowsforms
 control: GridRecordNavigation

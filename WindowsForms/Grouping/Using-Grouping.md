@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Grouping in Windows Forms Grouping control | Syncfusion
-description: Learn about Using Grouping support in Syncfusion Windows Forms Grouping control and more details.
+description: Learn about Using Grouping support in Syncfusion Windows Forms Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -211,7 +211,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Using-Grouping_images/Using-Grouping_img3.png)
+   ![Using-Grouping_images3](Using-Grouping_images/Using-Grouping_img3.png)
 
 
 

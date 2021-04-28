@@ -15,13 +15,13 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
- ![](Feature-Summary_images/Feature-Summary_img1.jpeg) 
+ ![Feature-Summary_images1](Feature-Summary_images/Feature-Summary_img1.jpeg) 
 
 
 
 
 
- ![](Feature-Summary_images/Feature-Summary_img2.jpeg) 
+ ![Feature-Summary_images2](Feature-Summary_images/Feature-Summary_img2.jpeg) 
 
 
 
@@ -29,7 +29,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Data Binding: The grid grouping control supports variety of data sources used to automatically populate the grid with data. It has full ADO+ support and also allows any component that implements IList, IBindingList, ITypedList, or IListSource interface. It also supports unbound mode.
 
- ![](Feature-Summary_images/Feature-Summary_img3.jpeg) 
+ ![Feature-Summary_images3](Feature-Summary_images/Feature-Summary_img3.jpeg) 
 
 
 
@@ -39,7 +39,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
- ![](Feature-Summary_images/Feature-Summary_img4.jpeg) 
+ ![Feature-Summary_images4](Feature-Summary_images/Feature-Summary_img4.jpeg) 
 
 
 
@@ -47,7 +47,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Grouping: Grid data can be arranged based on matching field values to form groups. Essential Grid supports nested grouping by hierarchically combining the groups in different levels. The number of levels of grouping is unlimited.
 
- ![](Feature-Summary_images/Feature-Summary_img5.jpeg) 
+ ![Feature-Summary_images5](Feature-Summary_images/Feature-Summary_img5.jpeg) 
 
 
 
@@ -55,7 +55,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Summaries: The grid allows you to add summary rows that is used to display brief information about groups or specific columns. It is also possible to add user defined summaries.
 
- ![](Feature-Summary_images/Feature-Summary_img6.jpeg) 
+ ![Feature-Summary_images6](Feature-Summary_images/Feature-Summary_img6.jpeg) 
 
 
 
@@ -63,14 +63,14 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Filters: The grid grouping control has in-built support for FilterBar. The filter bar can be used to display a subset of records that satisfies user-defined criteria.
 
- ![](Feature-Summary_images/Feature-Summary_img7.jpeg) 
+ ![Feature-Summary_images7](Feature-Summary_images/Feature-Summary_img7.jpeg) 
 
 
 
 
 * Sorting: Grid Grouping control allows you to sort the data against an unlimited number of columns either in ascending or in descending order. When editing is done, the record values will be adjusted automatically to maintain the sorting order.
 
- ![](Feature-Summary_images/Feature-Summary_img8.jpeg) 
+ ![Feature-Summary_images8](Feature-Summary_images/Feature-Summary_img8.jpeg) 
 
 
 
@@ -78,7 +78,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Expression Fields: Expression fields facilitate inclusion of columns with formula expressions.
 
- ![](Feature-Summary_images/Feature-Summary_img9.jpeg) 
+ ![Feature-Summary_images9](Feature-Summary_images/Feature-Summary_img9.jpeg) 
 
 
 
@@ -94,7 +94,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Preview Rows: It is possible to add preview section for each group or record. The preview rows can be enabled when you want to display memo fields or some notes for a given group or record.
 
- ![](Feature-Summary_images/Feature-Summary_img11.jpeg) 
+ ![Feature-Summary_images11](Feature-Summary_images/Feature-Summary_img11.jpeg) 
 
 
 
@@ -102,7 +102,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Frozen Columns: This feature will allow you to lock specific columns so that they will always be visible on the screen no matter how far you scroll to the right or down.
 
- ![](Feature-Summary_images/Feature-Summary_img12.jpeg) 
+ ![Feature-Summary_images12](Feature-Summary_images/Feature-Summary_img12.jpeg) 
 
 
 
@@ -110,7 +110,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Stacked MultiHeaders: This feature allows you to create additional header rows that span across visible grid columns. You can group columns under each header row. It also supports drag and drop of these header rows.
 
- ![](Feature-Summary_images/Feature-Summary_img13.jpeg) 
+ ![Feature-Summary_images13](Feature-Summary_images/Feature-Summary_img13.jpeg) 
 
 
 
@@ -125,14 +125,14 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Designer Support: The Grid Grouping control offers rich design time support to customize the appearance and behavior of various grid elements.
 
- ![](Feature-Summary_images/Feature-Summary_img15.jpeg) 
+ ![Feature-Summary_images15](Feature-Summary_images/Feature-Summary_img15.jpeg) 
 
 
 
 
 * Appearance: The grid provides design time and run time options to customize the appearance of its elements. The appearance settings include various options such as background color, font, text color, alignment, and so on.
 
- ![](Feature-Summary_images/Feature-Summary_img16.jpeg) 
+ ![Feature-Summary_images16](Feature-Summary_images/Feature-Summary_img16.jpeg) 
 
 
 
@@ -143,7 +143,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Navigation: Grid Grouping control includes built-in Navigation and Page Bars that allows users to navigate records with ease.
 
- ![](Feature-Summary_images/Feature-Summary_img17.jpeg) 
+ ![Feature-Summary_images17](Feature-Summary_images/Feature-Summary_img17.jpeg) 
 
 
 
@@ -153,7 +153,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 
 
- ![](Feature-Summary_images/Feature-Summary_img18.jpeg) 
+ ![Feature-Summary_images18](Feature-Summary_images/Feature-Summary_img18.jpeg) 
 
 
 
@@ -161,7 +161,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Serialization: The grid schema information can be serialized and deserialized. Grid Grouping control supports several serialization formats such as XML and XLS.
 
- ![](Feature-Summary_images/Feature-Summary_img19.png) 
+ ![Feature-Summary_images19](Feature-Summary_images/Feature-Summary_img19.png) 
 
 
 

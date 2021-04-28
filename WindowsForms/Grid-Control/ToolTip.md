@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in Windows Forms Grid Control control | Syncfusion
-description: Learn about ToolTip support in Syncfusion Windows Forms Grid Control control and more details.
+description: Learn here about ToolTip support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug

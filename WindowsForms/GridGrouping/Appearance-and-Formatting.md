@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Formatting in Windows Forms GridGrouping control | Syncfusion
+title: Appearance and Formatting in Windows Forms GridGrouping | Syncfusion
 description: Learn about Appearance and Formatting support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Appearance and Formatting in Windows Forms GridGrouping (GridGroupingControl)
+# Appearance and Formatting in Windows Forms GridGrouping
 This section will explain how to control the appearance and formatting of GridGroupingControl at design time as well as at run time. The overall appearance and also the appearance of each element of the grid can be changed by using the [Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Appearance) property.
 
 [Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Appearance) contains a list of [GridTableCellAppearance](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html) properties. Each of `GridTableCellAppearance` contains the [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) properties such as back color, Font and cell type, which defines the look and behavior of a grid cell. Each of these properties identifies a particular set of cells that make up GridGroupingControl. 

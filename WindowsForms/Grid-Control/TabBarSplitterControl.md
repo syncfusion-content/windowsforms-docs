@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabBarSplitterControl in Windows Forms Grid Control control | Syncfusion
+title: TabBarSplitterControl in Windows Forms Grid Control | Syncfusion
 description: Learn about TabBarSplitterControl support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl

@@ -69,19 +69,19 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
 
 1. Open **GridStackedHeaderRowDescriptor Collection Editor** by using the `StackedHeaderRows` property which is available under the `TableDescriptor` property. Using this collection editor, user can add header rows by specifying different attributes like HeaderText, VisibleColumns, Appearance and so on. 
    
-   ![](Grid-Layout_images/Grid-Layout_img1.png)
+   ![Grid-Layout_images1](Grid-Layout_images/Grid-Layout_img1.png)
 
 2. Enable the [ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) property to display the stacked headers for the table and groups.
    
-   ![](Grid-Layout_images/Grid-Layout_img2.png)
+   ![Grid-Layout_images2](Grid-Layout_images/Grid-Layout_img2.png)
 
    The below screen shot shows the grid with stacked headers.
    
-   ![](Grid-Layout_images/Grid-Layout_img3.png)
+   ![Grid-Layout_images3](Grid-Layout_images/Grid-Layout_img3.png)
 
 3. Visible columns gets affected automatically while rearranging stacked headers as of follows,
    
-   ![](Grid-Layout_images/Grid-Layout_img4.png)
+   ![Grid-Layout_images4](Grid-Layout_images/Grid-Layout_img4.png)
 
  N> The stacked headers will be generated if the added columns in the stacked headers are presented in the [Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Columns) collection. So the stacked headers are depending upon the `Column` collection. Before adding stacked headers, make sure that those columns are available in `Columns` collection or underlying datasource of the grid.
  

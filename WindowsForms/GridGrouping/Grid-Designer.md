@@ -18,11 +18,11 @@ The GridGroupingControl can be previewed and edited at design time by following 
 1. Open the `Designer` of application form which has GridGroupingControl.
 2. Click the `Smart tag` button which is available in the top right corner and following dialog box will be opened,
 
-   ![](Grid-Designer_images/Grid-Designer_img1.png)
+   ![Grid-Designer_images1](Grid-Designer_images/Grid-Designer_img1.png)
 
 3. Select the Preview and Edit option and following dialog will be opened,
 
-   ![](Grid-Designer_images/Grid-Designer_img2.png)
+   ![Grid-Designer_images2](Grid-Designer_images/Grid-Designer_img2.png)
 
 It also displays help description for the properties that are being selected. The user can use the property grid to change GridGroupingControl's properties and see the effect immediately on the populated control. When you close the preview, you will have the option of saving any changed properties to the property grid in the designer.
 

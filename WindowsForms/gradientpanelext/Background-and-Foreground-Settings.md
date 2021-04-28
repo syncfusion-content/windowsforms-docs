@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Background and Foreground Settings in Windows Forms GradientPanelExt control | Syncfusion
+title: Background and Foreground Settings in GradientPanelExt | Syncfusion
 description: Learn about Background and Foreground Settings support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
 control: EditorPackage 

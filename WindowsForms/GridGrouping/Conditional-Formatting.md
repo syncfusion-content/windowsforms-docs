@@ -1,30 +1,30 @@
 ---
 layout: post
-title: Conditional Formatting in Windows Forms GridGrouping control | Syncfusion
+title: Conditional Formatting in Windows Forms GridGrouping | Syncfusion
 description: Learn about Conditional Formatting support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Conditional Formatting in Windows Forms GridGrouping (GridGroupingControl)
+# Conditional Formatting in Windows Forms GridGrouping
 GridGroupingControl provides built-in support for Conditional Formatting. It is used to format grid cells based on a certain conditions. The conditional formatting can be added to the GridGroupingControl by defining the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). This descriptor is used to specify the filter criteria for the cells and the style to be applied for filtered cells.  
 
 The following steps are used to add the conditional formatting through the editor,
 
 1. Navigate the Property window of GridGroupingControl to the **TableDescriptor -> ConditionalFormats** and click the browse button to open the `GridConditionalColumnDescriptor` collection editor,
   
-  ![](Conditional-Formatting_images/Conditional-Formatting_img1.png)
+  ![Conditional-Formatting_img1](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
-2. Click the `Add` button of the editor. It will add a new conditional format to the collection![](Conditional-Formatting_images/Conditional-Formatting_img2.png)
+2. Click the `Add` button of the editor. It will add a new conditional format to the collection![Conditional-Formatting_img2](Conditional-Formatting_images/Conditional-Formatting_img2.png)
 
-3. Add the expression to the Expression filed option. (Ex: [ColumnName] like ‘A*’) ![](Conditional-Formatting_images/Conditional-Formatting_img3.png)
+3. Add the expression to the Expression filed option. (Ex: [ColumnName] like ‘A*’) ![Conditional-Formatting_img3](Conditional-Formatting_images/Conditional-Formatting_img3.png)
 
-4. Set the style for the records that satisfies the filter criteria by using the Appearance option![](Conditional-Formatting_images/Conditional-Formatting_img4.png)
+4. Set the style for the records that satisfies the filter criteria by using the Appearance option![Conditional-Formatting_img4](Conditional-Formatting_images/Conditional-Formatting_img4.png)
 
 5.  Click the `OK` button and run the application. The conditional formatting will be applied to the records as of follows,
 
-    ![](Conditional-Formatting_images/Conditional-Formatting_img5.png)
+    ![Conditional-Formatting_img5](Conditional-Formatting_images/Conditional-Formatting_img5.png)
 
 ## Programmatic Conditional Formatting 
 The conditional formatting can be programmatically added to the GridGroupingControl by defining the `GridConditionalFormatDescriptor` collection. It can be used to add the number of formatters to set the filter criteria and appearance. The filter criteria can be specified either by adding [RecordFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridConditionalFormatDescriptor_RecordFilters) or by an [Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridConditionalFormatDescriptor_Expression). 

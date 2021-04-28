@@ -7,7 +7,7 @@ control: GridGrouping
 documentation: ug
 ---
 
-# Coded UI Automation in Windows Forms GridGrouping (GridGroupingControl)
+# Coded UI Automation in Windows Forms GridGrouping
 The GridGroupingControl can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridGroupingControl. The validation can be done at grid level or cell level.
 
 Levels of Microsoft Coded UI Test (CUIT) support,
@@ -24,15 +24,15 @@ A `Coded UI Test Project` needs to be created for testing the application. The f
 
 1. Create Coded UI Test Project ,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img1.jpeg)
+   ![Coded-UI-Automation_img1](Coded-UI-Automation_images/Coded-UI-Automation_img1.jpeg)
 
 2. A `Generate Code for Coded UI test` dialog box will be opened. Click `OK` button,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img2.jpeg)
+   ![Coded-UI-Automation_img2](Coded-UI-Automation_images/Coded-UI-Automation_img2.jpeg)
 
 3. The Coded UI Test Builder will be displayed above the notification bar,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img3.jpeg)
+   ![Coded-UI-Automation_img3](Coded-UI-Automation_images/Coded-UI-Automation_img3.jpeg)
 
 4. Then run the sample application which needs to be automated.
 
@@ -47,11 +47,11 @@ The **Coded UI Test** performs action on the user interface (UI) controls and ve
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#getting-started) section.
 2. In the **Coded UI Test Builder** dialog, select and drag the assertion button to the UI element which needs to be tested,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img4.jpeg)
+   ![Coded-UI-Automation_img4](Coded-UI-Automation_images/Coded-UI-Automation_img4.jpeg)
 
 3. The GridGroupingControl or Cell will be highlighted with a rectangular bounds like below,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img5.jpeg)
+   ![Coded-UI-Automation_img5](Coded-UI-Automation_images/Coded-UI-Automation_img5.jpeg)
 
 ### Assertion of GridGroupingControl
 For asserting the GridGroupingControl, the whole grid will be highlighted with that rectangular bounds.  After assertion, the properties related to GridGroupingControl will be displayed in **Coded UI Test Builder**.
@@ -82,23 +82,23 @@ The following steps are used to record and playback the application,
 1. Create the **Coded UI Test Project** as explained in the [Getting Started](#getting-started) section,
 2. Select the `Start Recording` button as follows,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img10.jpeg)
+   ![Coded-UI-Automation_img10](Coded-UI-Automation_images/Coded-UI-Automation_img10.jpeg)
 
 3. Perform the needed actions in the application. Ensure that a notification is displaying for each and every actions performed in the application like below,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img11.jpeg)
+   ![Coded-UI-Automation_img11](Coded-UI-Automation_images/Coded-UI-Automation_img11.jpeg)
 
 4. Then Click the `Generate Code` button as follows,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img12.jpeg)
+   ![Coded-UI-Automation_img12](Coded-UI-Automation_images/Coded-UI-Automation_img12.jpeg)
 
 5. The Coded UI test code will be generated in Coded UI Test Project as follows,
 
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img13.jpeg)
+   ![Coded-UI-Automation_img13](Coded-UI-Automation_images/Coded-UI-Automation_img13.jpeg)
 
 6. The each and every recorded actions will be generated in Coded UI like below,
    
-   ![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
+   ![Coded-UI-Automation_img14](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
 ### Playback
 The recorded automation codes can be played back. The following steps are used to playback the automated methods,

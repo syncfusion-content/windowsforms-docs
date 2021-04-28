@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Managing Records and Columns in Windows Forms GridGrouping control | Syncfusion
+title: Managing Records and Columns in WinForms GridGrouping | Syncfusion
 description: Learn about Managing Records and Columns support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Managing Records and Columns in Windows Forms GridGrouping (GridGroupingControl)
+# Managing Records and Columns in Windows Forms GridGrouping
 This section will explain about working with records and columns in GridGroupingControl.
 
 ## Hiding Records and Columns
@@ -127,7 +127,7 @@ The hidden row by resizing is showing in the following screen shot
 ![Managing-Records-and-Columns_img4](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img4.jpeg)
 
 ## Unhide Columns Using Double Click
-The hidden columns by resizing can be unhide by performing the double click between the column headers![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
+The hidden columns by resizing can be unhide by performing the double click between the column headers![Managing-Records-and-Columns_images5](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
 
 ### Prevent Column from Hiding 
 The columns can be prevent from hiding on resizing by canceling the [ColsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event.
@@ -195,7 +195,7 @@ Me.gridGroupingControl1.TableModel.Cols.FrozenCount = 3
 N> The GridGroupingControl does not have the support for the frozen rows option.
 
 ## Moving Columns
-The columns can be moved from one position to other by using the drag and drop. The column `CategoryID` is moving by using the drag and drop is shown in the following screenshot![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img6.jpeg)
+The columns can be moved from one position to other by using the drag and drop. The column `CategoryID` is moving by using the drag and drop is shown in the following screenshot![Managing-Records-and-Columns_images6](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img6.jpeg)
 
 The grid after moving the column is shown below
 
@@ -277,7 +277,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-The unbound field added to the GridGroupingControl is shown in the following screenshot![](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img10.jpeg)
+The unbound field added to the GridGroupingControl is shown in the following screenshot![Managing-Records-and-Columns_images10](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img10.jpeg)
 
 ## Setting the Column Widths and Row Heights 
 The column width and row height of the GridGroupingControl can be set dynamically by resizing using the mouse controller. 

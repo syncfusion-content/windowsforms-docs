@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-use-OLD-Metro-Style-in-Grid | Windows Forms | Syncfusion
-description: how to use old metro style in grid?
+description: how to use old metro style in Syncfusion Essential Studio Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

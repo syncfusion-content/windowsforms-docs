@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Real Time Applications in Windows Forms GridGrouping control | Syncfusion
+title: Real Time Applications in Windows Forms GridGrouping | Syncfusion
 description: Learn about Real Time Applications support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Real Time Applications in Windows Forms GridGrouping (GridGroupingControl)
+# Real Time Applications in Windows Forms GridGrouping
 The GridGroupingControl can be used in any of the `Real Time application` which needs the database maintenance or other kind of data representations. The GridGroupingControl can be used at any level to represent the data. 
 
 ## Portfolio Grid

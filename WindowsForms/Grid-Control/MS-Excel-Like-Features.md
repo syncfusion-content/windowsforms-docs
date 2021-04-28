@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MS Excel Like Features in Windows Forms Grid Control control | Syncfusion
+title: MS Excel Like Features in Windows Forms Grid Control | Syncfusion
 description: Learn about MS Excel Like Features support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# MS Excel Like Features in Windows Forms Grid Control
+# Microsoft Excel Like Features in Windows Forms Grid Control
 The GridControl provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame
@@ -340,19 +340,19 @@ The following examples are showing the difference between the Copy and Fill seri
 
 1. The following example shows the Fill series is selected,
    
-   ![](Excel-Like-Features_images/Excel-Like-Features_img9.jpeg)
+   ![Excel-Like-Features_img9](Excel-Like-Features_images/Excel-Like-Features_img9.jpeg)
 
 2. The range of cells are filled with the series,
    
-   ![](Excel-Like-Features_images/Excel-Like-Features_img10.jpeg)
+   ![Excel-Like-Features_img10](Excel-Like-Features_images/Excel-Like-Features_img10.jpeg)
 
 3. The following example shows the `Copy Series` is selected for January cell,
    
-   ![](Excel-Like-Features_images/Excel-Like-Features_img11.jpeg)
+   ![Excel-Like-Features_img11](Excel-Like-Features_images/Excel-Like-Features_img11.jpeg)
 
 4. The range of cells are copied and filled with the January,
    
-   ![](Excel-Like-Features_images/Excel-Like-Features_img12.jpeg)
+   ![Excel-Like-Features_img12](Excel-Like-Features_images/Excel-Like-Features_img12.jpeg)
 
 ## Highlighting Row/Column Header
 This feature is used to highlight the corresponding row and column headers of one or more selected cells. It can be enabled by setting the [MarkRowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_MarkRowHeader) and [MarkColHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_MarkColHeader)  property value as `true`.

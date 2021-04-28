@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select Collection of Records In GridGroupingControl in Windows Forms GridGrouping control | Syncfusion
+title: Select Collection of Records In GridGrouping Control | Syncfusion
 description: Learn about Select Collection of Records In GridGroupingControl support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Select Collection of Records In GridGroupingControl in Windows Forms GridGrouping (GridGroupingControl)
+# Select Collection of Records In GridGroupingControl in Windows Forms
 
 Essential GridGroupingControl now supports two methods for selecting records in grid table. 
 
@@ -30,7 +30,7 @@ this.gridGroupingControl1.Table.Records.SelectAll();
 
 When the code runs, selecting all record is bound to Select All button.
 
- ![](Select-Collection-of-Records-In-GridGroupingControl_images/Select-Collection-of-Records-In-GridGroupingControl_img1.png)
+ ![Select-Collection-of-Records-In-GridGroupingControl_images1](Select-Collection-of-Records-In-GridGroupingControl_images/Select-Collection-of-Records-In-GridGroupingControl_img1.png)
 
 
 
@@ -63,7 +63,7 @@ this.gridGroupingControl1.Table.SelectedRecords.AddRange(recordCollection);
 
 When the code runs, selecting specified records is bound to Select Specified Records button. 
 
- ![](Select-Collection-of-Records-In-GridGroupingControl_images/Select-Collection-of-Records-In-GridGroupingControl_img3.png) 
+ ![Select-Collection-of-Records-In-GridGroupingControl_images3](Select-Collection-of-Records-In-GridGroupingControl_images/Select-Collection-of-Records-In-GridGroupingControl_img3.png) 
 
 
 

@@ -155,7 +155,7 @@ Console.ReadLine()
  
 
 
-   ![](Data-Manipulation_images/Data-Manipulation_img2.png)
+   ![Data-Manipulation_images2](Data-Manipulation_images/Data-Manipulation_img2.png)
 6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
 {% tabs %}
@@ -201,7 +201,7 @@ Console.ReadLine()
 {% endtabs %}
 
 
-   ![](Data-Manipulation_images/Data-Manipulation_img3.png)
+   ![Data-Manipulation_images3](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 
 Filtering is applied to the data displayed in the console.
@@ -312,7 +312,7 @@ Next rec
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Data-Manipulation_images/Data-Manipulation_img4.png)
+   ![Data-Manipulation_images4](Data-Manipulation_images/Data-Manipulation_img4.png)
 
 
 
@@ -651,7 +651,7 @@ Console.ReadLine()
 {% endhighlight %}   
 {% endtabs %}
 
-   ![](Data-Manipulation_images/Data-Manipulation_img7.png)
+   ![Data-Manipulation_images7](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
 

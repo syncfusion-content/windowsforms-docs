@@ -548,7 +548,7 @@ End Sub
 
 
 
- ![](Advanced-Features_images/Advanced-Features_img3.jpeg) 
+ ![Advanced-Features_img3](Advanced-Features_images/Advanced-Features_img3.jpeg) 
 
 
 ## Custom Summary
@@ -1116,13 +1116,13 @@ Me.gridGroupingControl1.Appearance.FilterBarCell.CellType = "MyFilterCell"
 
 6.When you run the sample, click the filter drop down and then select custom option to show up our filter dialog. This is shown in the screenshots below.
 
- ![](Advanced-Features_images/Advanced-Features_img5.jpeg) 
+ ![Advanced-Features_img5](Advanced-Features_images/Advanced-Features_img5.jpeg) 
 
 
 
 
 
- ![](Advanced-Features_images/Advanced-Features_img6.jpeg) 
+ ![Advanced-Features_img6](Advanced-Features_images/Advanced-Features_img6.jpeg) 
 
 
 
@@ -1161,7 +1161,7 @@ You can filter StackedColumnHeader by choosing any one of the columns from the c
 
 The following screenshot displays the Filter Dialog.
 
- ![](Advanced-Features_images/Advanced-Features_img8.png) 
+ ![Advanced-Features_img8](Advanced-Features_images/Advanced-Features_img8.png) 
 
 
 

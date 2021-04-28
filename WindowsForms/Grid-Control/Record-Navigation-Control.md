@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Record Navigation Control in Windows Forms Grid Control control | Syncfusion
+title: Record Navigation in Windows Forms Grid Control | Syncfusion
 description: Learn about Record Navigation Control support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
@@ -20,19 +20,19 @@ It can be drag and drop from the Toolbox window from the designer along with the
 1. Drag and drop the GridRecordNavigationControl from the toolbox on the form.
 2. Size and position in the proper place.
    
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img1.jpeg)
+   ![Record-Navigation-Control_img1](Record-Navigation-Control_images/Record-Navigation-Control_img1.jpeg)
 
 3. Drag the GridControl from toolbox and drop it on the GridRecordNavigationControl properly which was shown in below screenshot.
    
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img2.jpeg)
+   ![Record-Navigation-Control_img2](Record-Navigation-Control_images/Record-Navigation-Control_img2.jpeg)
 
 4. Populate the GridControl with data.
 
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img3.jpeg)
+   ![Record-Navigation-Control_img3](Record-Navigation-Control_images/Record-Navigation-Control_img3.jpeg)
 
 5. Run the application and get the following screenshot as an Output.
 
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img4.jpeg)
+   ![Record-Navigation-Control_img4](Record-Navigation-Control_images/Record-Navigation-Control_img4.jpeg)
 
 ### Through Code
 The GridRecordNavigationControl can also be programmatically added to the GridControl.

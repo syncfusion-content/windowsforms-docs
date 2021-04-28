@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Floating in Windows Forms Grid Control control | Syncfusion
-description: Learn about Floating support in Syncfusion Windows Forms Grid Control control and more details.
+description: Learn about Floating support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug

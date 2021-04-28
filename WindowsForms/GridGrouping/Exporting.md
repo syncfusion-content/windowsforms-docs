@@ -1469,7 +1469,7 @@ wordConverter.GroupingGridToWord("FileName.doc", Me.gridGroupingControl1)
 
 ![Exporting_img16](Exporting_images/Exporting_img16.png)
 
-The exported grid with the styles in the word documents is shown below![](Exporting_images/Exporting_img17.png)
+The exported grid with the styles in the word documents is shown below![Exporting_images17](Exporting_images/Exporting_img17.png)
 
 ### Exporting with Header and Footer
 The GridGroupingControl can be exported to the word with the headers and footers by enabling the `ShowHeader` and `ShowFooter` properties of the word converter. The desired text can be placed on the header and footer by handling the `DrawHeader` and `DrawFooter` events.

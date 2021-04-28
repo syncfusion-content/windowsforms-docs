@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Rows and Columns in Windows Forms Grid Control control | Syncfusion
+title: Managing Rows and Columns in Windows Forms Grid Control | Syncfusion
 description: Learn about Managing Rows and Columns support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl

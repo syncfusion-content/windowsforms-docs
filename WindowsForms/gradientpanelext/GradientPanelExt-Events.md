@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Gradientpanelext Events in Windows Forms GradientPanelExt control | Syncfusion
+title: Gradientpanelext Events in WinForms GradientPanelExt | Syncfusion
 description: Learn about Gradientpanelext Events support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Gradientpanelext Events in Windows Forms GradientPanelExt
+# Gradient panel next Events in Windows Forms Gradient Panel next
 
 The GradientPanelExt offers the following unique events, to make it more flexible to work with.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Formatting in Windows Forms Grid Control control | Syncfusion
+title: Appearance and Formatting in Windows Forms Grid Control | Syncfusion
 description: Learn about Appearance and Formatting support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
@@ -18,11 +18,11 @@ Following is the step-by-step procedure to save the GridControl into an XML form
 1. Right click the Grid control. A context menu is displayed.
 2. Select `Edit` from the context menu drop-down. 
 
-   ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img1.jpeg)
+   ![Appearance-and-Formatting_img1](Appearance-and-Formatting_images/Appearance-and-Formatting_img1.jpeg)
 
 3. GridControl Designer window will be opened. In that select the File -> Save to XML option.
    
-   ![](Appearance-and-Formatting_images/Appearance-and-Formatting_img2.jpeg)
+   ![Appearance-and-Formatting_img2](Appearance-and-Formatting_images/Appearance-and-Formatting_img2.jpeg)
 
    N> Editor opens up on the right hand side of the page and Grid Properties tab is highlighted by default. The cell content, styles and general grid properties can be modified under Grid Properties tab. 
 
