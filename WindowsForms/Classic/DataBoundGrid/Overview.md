@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | DataBoundGrid | WindowsForms | Syncfusion
-description: This section provides an overview for DataBoundGrid and explains its key features.
+title: About Windows Forms xptoolbar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: GridDataBoundGrid
 documentation: ug
 ---
 
-# Overview
+# Windows Forms GridDataBoundGrid(Classic) Overview
 
 The GridDataBoundGrid is a bound grid to display data from the binding source. The GridDataBoundGrid has built-in support to bind any type of data source to the grid. It can be customized at cell level as the GridControl. The GridDataBoundGrid control supports sorting, frozen rows and columns, Excel-like formulas, covered cells, various cell-control types, clipboard operations, zooming cells, and hidden rows and columns.
 

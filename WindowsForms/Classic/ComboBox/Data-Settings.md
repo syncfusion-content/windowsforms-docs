@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Data-Settings | WindowsForms | Syncfusion
-description: data settings
+title: Data Settings in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Data Settings support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# Data Settings
+# Data Settings in Windows Forms ComboBoxAdv(Classic)
 
 Data for the ComboBoxAdv is added through String Collection Editor, invoked through the ComboBoxAdv.Items property.
 
-![](Overview_images/Overview_img302.png) 
+![Overview_img302](Overview_images/Overview_img302.png) 
 
 {% tabs %}
 {% highlight c# %}
@@ -33,8 +33,8 @@ Me.comboBoxAdv1.Items.AddRange(New Object() {"Currency", "DateTimePicker", "Comb
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img303.png)
+![Overview_img303](Overview_images/Overview_img303.png)
 
 
 N> ComboBoxAdv can also be bound to an external Data source like Data Table. 
-Refer [Data binding](/windowsforms/ComboBoxAdv/Advanced-Features.html#data-binding) _topic. To set image for dropdown items refer_ [Image settings](/windowsforms/ComboBoxAdv/ComboBoxAdv-appearance.html#image-settings)_._
+Refer [Data binding](/windowsforms/ComboBoxAdv/Advanced-Featureshtml#data-binding) _topic To set image for dropdown items refer_ [Image settings](/windowsforms/ComboBoxAdv/ComboBoxAdv-appearancehtml#image-settings)

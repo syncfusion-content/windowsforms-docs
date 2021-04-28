@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-Support-Tri-State-Sorting-in-a-GridDataBoundGridControl | Windows Forms | Syncfusion
-description: how to support tri-state sorting in a griddataboundgridcontrol
+title: GridDataBoundGridControl | Windows Forms | Syncfusion
+description: Learn about How to Support Tri State Sorting in a Griddataboundgridcontrol support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Support Tri-State Sorting in a GridDataBoundGridControl
+# Grid data bound grid control in Windows Forms
+
+This page explains How to Support Tri-State Sorting in a GridDataBoundGridControl and more details.
+
+## How to Support Tri-State Sorting in a GridDataBoundGridControl
 
 The standard sorting never removes sorting from a column; so once a column is sorted it will either be in ascending or descending order. By using GridDataBoundGridControl'sCellClick event, it is possible to alter this behavior so that when a column is clicked once, it will be sorted in an ascending order; when it is clicked a second time, the column will be sorted in a descending order; and when the column is clicked a third time, its sorting will be removed.
 

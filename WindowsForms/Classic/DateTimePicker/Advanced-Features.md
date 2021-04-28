@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Advanced Features | WindowsForms | Syncfusion
-description: Learn here about how to bind the Windows Forms DateTimePickerAdv and DataGrid properties and methods.
+title: Advanced features in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Advanced features support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
-# Advanced Features
+# Advanced features in Windows Forms DateTimePickerAdv(Classic)
 
 This section covers the below topics:
 
