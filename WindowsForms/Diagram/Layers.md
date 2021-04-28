@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layers | Windows Forms | Syncfusion
-description: This section explains about how to Diagram's Layers organize related shapes and its functionalities.
+title: Layers in Windows Forms Diagram control | Syncfusion
+description: Learn about Layers support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Layers
+# Layers in Windows Forms Diagram
 
 Layers are transparent sheets that can be added to the model and the objects are added to it. Layers allow to categorically arrange a set of nodes onto the diagram.
 

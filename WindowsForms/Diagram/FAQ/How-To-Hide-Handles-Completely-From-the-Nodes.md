@@ -1,13 +1,16 @@
 ---
 layout: post
-title: How To Hide Handles Completely From the Nodes | Diagram | Windows Forms | Syncfusion
-description: how to hide handles completely from the nodes
+title: Hide Handles Completely From the Nodes Diagram | Syncfusion
+description: how to hide handles completely from the nodes in Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
+# Hide Handles Completely From the Nodes Diagram
 
-# How To Hide Handles Completely From the Nodes
+This page explains about How To Hide Handles Completely From the Nodes and more details.
+
+## How To Hide Handles Completely From the Nodes
 
 We can hide the handles completely by setting the HandleColor and HandleOutlineColor properties to 'Transparent' as follows.
 
@@ -32,7 +35,7 @@ Me.diagram1.View.HandleOutlineColor = Color.Transparent
 {% endtabs %}
 
 
-![](How-To-Hide-Handles-Completely-From-the-Nodes_images/How-To-Hide-Handles-Completely-From-the-Nodes_img1.jpeg)
+![How-To-Hide-Handles-Completely-From-the-Nodes_img1](How-To-Hide-Handles-Completely-From-the-Nodes_images/How-To-Hide-Handles-Completely-From-the-Nodes_img1.jpeg)
 
 Illustrates Hiding Handles
 {:.captionttext }

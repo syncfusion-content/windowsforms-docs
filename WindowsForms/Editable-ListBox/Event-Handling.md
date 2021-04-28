@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
-description: event handling
+title: Event Handling in Windows Forms Editable ListBox control | Syncfusion
+description: Learn about Event Handling support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling in Windows Forms Editable ListBox (EditableList)
 
 EditableList controls contains events present in the Windows Button, TextBox and ListBox.
 
