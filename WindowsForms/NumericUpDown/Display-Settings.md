@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display-Settings | WindowsForms | Syncfusion
-description: display settings
+title: Display Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Display Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Display Settings
+# Display Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 This section discusses the Display settings of the NumericUpDownExt control.
 
@@ -44,4 +44,4 @@ Me.numericUpDownExt1.ThousandsSeparator = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Display-Settings_images/Display-Settings_img1.png)
+![Display-Settings_img1](Display-Settings_images/Display-Settings_img1.png)

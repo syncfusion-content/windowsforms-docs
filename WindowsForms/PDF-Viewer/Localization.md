@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | Windows Forms | Syncfusion
-description: All static texts used as tooltip and context menu contents within the PDF Viewer WPF can be localized to any desired language.
+title: Localization in Windows Forms PDF Viewer control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug

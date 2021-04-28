@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment-Settings | WindowsForms | Syncfusion
-description: alignment settings
+title: Alignment Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Alignment Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Alignment Settings
+# Alignment Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 This section discusses the Alignment settings of the NumericUpDownExt control.
 
@@ -40,7 +40,7 @@ Me.numericUpDownExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 {% endhighlight %}
 {% endtabs %}
 
-![](Alignment-Settings_images/Alignment-Settings_img1.png)
+![Alignment-Settings_img1](Alignment-Settings_images/Alignment-Settings_img1.png)
 
 ## UpDownAlign
 

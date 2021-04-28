@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in Windows Forms PDF Viewer control | Syncfusion
-description: This section describes about the steps to create PDF Viewer in WinForms application from designer as well as manually from code.
+title: Getting Started with Windows Forms PDF Viewer | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms PDF Viewer control, its elements and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-# Getting Started with Windows Forms PDF Viewer
+# Getting Started with Windows Forms PDF Viewer (PdfViewerControl)
 
 ## Adding reference to PdfViewerControl and dependent assemblies
 

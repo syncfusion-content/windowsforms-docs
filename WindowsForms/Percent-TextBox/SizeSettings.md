@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Size Settings | WindowsForms | Syncfusion
-description: Size Settings
+title: Size Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Size Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Size Settings
+# Size Settings in Windows Forms Percent TextBox
 
 The size of the PercentTextBox control can be set according to the needs of the user using the properties discussed below.
 

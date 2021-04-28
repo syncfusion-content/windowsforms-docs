@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Caption-Settings in Windows Form | Syncfusion
-description: This section explains about the caption settings, helpbutton support in Office2007Form and more details for windows forms.
+title: Customization in Windows Forms Office2007Form control | Syncfusion
+description: Learn about Customization support in Syncfusion Windows Forms Office2007Form control and more details.
 platform: WindowsForms
 control: Office2007 Form
 documentation: ug
