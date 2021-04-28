@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Format | WindowsForms | Syncfusion
-description: html format
+title: HTML Format in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-# HTML format
+# HTML Format in Windows Forms Html Viewer (HTMLUI)
 
 HTMLUI allows the user to apply formats to the elements at run time. The HTMLFormat class creates a format for the HTML elements displayed in the HTMLUI control. The user can apply the format on the execution of some events based on the necessity of the application.
 
@@ -100,7 +100,7 @@ Private endPoint = New Point(beginPoint.X + element.Size.Width, beginPoint.Y + e
 
 This sample shows how the styles are applied by using the HTML Format object.
 
-![](HTML-Format_images/HTML-Format_img1.jpeg)
+![HTML-Format_img1](HTML-Format_images/HTML-Format_img1.jpeg)
 
 
 

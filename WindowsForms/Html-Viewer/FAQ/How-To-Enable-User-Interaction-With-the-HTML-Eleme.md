@@ -181,7 +181,7 @@ The button and the div elements are obtained. Events are declared for both the e
 
 
 
-![](FAQ_images/Frequently-Asked-Questions_img2.jpeg)
+![Frequently-Asked-Questions_img2](FAQ_images/Frequently-Asked-Questions_img2.jpeg)
 
 
 

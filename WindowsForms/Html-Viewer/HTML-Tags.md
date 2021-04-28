@@ -1,7 +1,7 @@
 ---
 layout: post
-title: HTML-Tags | WindowsForms | Syncfusion
-description:  html tags
+title: HTML Tags in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Tags support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -2068,7 +2068,7 @@ This sample shows the various Tags supported in HTMLUI.
 
 
 
-![](HTML-Tags_images/HTML-Tags_img1.jpeg)
+![HTML-Tags_img1](HTML-Tags_images/HTML-Tags_img1.jpeg)
 
 
 

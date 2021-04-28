@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Browsing | CardLayout Control for Windows Forms | Syncfusion
-description: This section explains about the browse through the cards of CardLayout with child controls
+title: Browsing Through Cards in Windows Forms LayoutManagers control | Syncfusion
+description: Learn about Browsing Through Cards support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: CardLayout
 documentation: ug
 ---
 
-# Browsing through cards
+# Browsing Through Cards in Windows Forms LayoutManagers
 
 This section explains how to browse through the cards (child controls) that have been added to the CardLayout manager.
 

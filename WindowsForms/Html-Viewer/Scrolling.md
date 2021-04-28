@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling | WindowsForms | Syncfusion
-description:  scrolling
+title: Scrolling in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Scrolling support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -45,7 +45,7 @@ This sample illustrates the Scrolling feature supported in HTMLUI.
 
 
 
-![](Scrolling_images/Scrolling_img1.jpeg)
+![Scrolling_img1](Scrolling_images/Scrolling_img1.jpeg)
 
 
 

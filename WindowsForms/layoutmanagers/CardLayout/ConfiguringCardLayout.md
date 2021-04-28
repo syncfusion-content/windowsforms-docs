@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring | CardLayout Control for Windows Forms | Syncfusion
-description: This section explains about the configuring of CardLayout with child controls
+title: Configuring CardLayout in Windows Forms LayoutManagers control | Syncfusion
+description: Learn about Configuring CardLayout support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: CardLayout
 documentation: ug
 ---
 
-# Configuring CardLayout
+# Configuring CardLayout in Windows Forms LayoutManagers
 
 The configuration settings for `CardLayout` have been given in this section.
 

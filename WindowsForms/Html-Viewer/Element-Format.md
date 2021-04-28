@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Element-Format | WindowsForms | Syncfusion
-description:  element format
+title: Element Format in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Element Format support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -81,7 +81,7 @@ End Sub
 
 The following image shows the text element Time replaced by an image when displayed using HTMLUI.
 
-![](Element-Format_images/Element-Format_img1.png)
+![Element-Format_img1](Element-Format_images/Element-Format_img1.png)
 
 
 
@@ -91,7 +91,7 @@ This sample illustrates Element Formatting in HTMLUI.
 
 
 
-![](Element-Format_images/Element-Format_img2.jpeg)
+![Element-Format_img2](Element-Format_images/Element-Format_img2.jpeg)
 
 
 

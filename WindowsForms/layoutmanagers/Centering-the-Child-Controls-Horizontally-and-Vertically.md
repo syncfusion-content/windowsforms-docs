@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Child controls alignments
-description: This section explains about aligning the child controls horizontally or vertically using the child constraints
+title: Centering the Child Controls Horizontally and Vertically in Windows Forms LayoutManagers control | Syncfusion
+description: Learn about Centering the Child Controls Horizontally and Vertically support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
 
-# Centering the Child controls horizontally and vertically
+# Centering the Child Controls Horizontally and Vertically in Windows Forms LayoutManagers
 
 This topic illustrates how to center the Child controls both vertically and horizontally using the Child constraints.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scripting | WindowsForms | Syncfusion
-description:  scripting
+title: Scripting in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Scripting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -105,7 +105,7 @@ script.UserControl.CustomControl.Text = "This is a sample for scripting";
 
 This sample illustrates the support of self-contained HTML documents in HTMLUI.
 
-![](Scripting_images/Scripting_img1.jpeg)
+![Scripting_img1](Scripting_images/Scripting_img1.jpeg)
 
 
 

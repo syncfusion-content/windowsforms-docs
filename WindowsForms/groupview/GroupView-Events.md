@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroupView Events | WindowsForms | Syncfusion
-description: Concepts and Features
+title: GroupView Events in Windows Forms GroupView control | Syncfusion
+description: Learn about GroupView Events support in Syncfusion Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# GroupView events
+# GroupView Events in Windows Forms GroupView
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

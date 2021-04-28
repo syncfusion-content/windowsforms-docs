@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroupView Items Settings | WindowsForms | Syncfusion
-description: Concepts and Features
+title: GroupView Items Settings in Windows Forms GroupView control | Syncfusion
+description: Learn about GroupView Items Settings support in Syncfusion Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# GroupView items settings
+# GroupView Items Settings in Windows Forms GroupView
 
 This section discusses the various settings that can be applied to the GroupView Items of the GroupView control.
 

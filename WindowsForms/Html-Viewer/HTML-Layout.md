@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Layout | WindowsForms | Syncfusion
-description: html layout
+title: HTML Layout in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Layout support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-# HTML layout
+# HTML Layout in Windows Forms Html Viewer (HTMLUI)
 
 HTMLUI can be used as a HTML viewer in two ways.
 
@@ -26,7 +26,7 @@ The following figure shows a form based dialog that illustrates HTMLUI as a Layo
 
 
 
-![](HTML-Layout_images/HTML-Layout_img1.png)
+![HTML-Layout_img1](HTML-Layout_images/HTML-Layout_img1.png)
 
 
 
@@ -34,7 +34,7 @@ The following figure shows a form based dialog that illustrates HTMLUI as a Layo
 
 This sample illustrates how a Chat application can be implemented using HTMLUI.
 
-![](HTML-Layout_images/HTML-Layout_img2.jpeg)
+![HTML-Layout_img2](HTML-Layout_images/HTML-Layout_img2.jpeg)
 
 
 

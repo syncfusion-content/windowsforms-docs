@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring | GridLayout Control for Windows Forms | Syncfusion
-description: This section explains about the configuring of GridLayout with child controls
+title: Configuring GridLayout in Windows Forms LayoutManagers control | Syncfusion
+description: Learn about Configuring GridLayout support in Syncfusion Windows Forms LayoutManagers control and more details.
 platform: windowsforms
 control: GridLayout
 documentation: ug
 ---
 
-# Configuring GridLayout
+# Configuring GridLayout in Windows Forms LayoutManagers
 
 The configuration settings for `GridLayout` have been given in this section.
 

@@ -12,7 +12,7 @@ It is possible to layout the Child controls programmatically using Multiple Layo
 
 * Set up a form with Buttons and Panels as shown in the below screenshot.
 
-![](Overview_images/Overview_img77.jpeg)
+![Overview_img77](Overview_images/Overview_img77.jpeg)
 
 
 
@@ -178,4 +178,4 @@ End Sub
 {% endtabs %}
 
 
-![](Overview_images/Overview_img78.jpeg)
+![Overview_img78](Overview_images/Overview_img78.jpeg)

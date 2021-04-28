@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Loading-HTML | HTMLUIControl | WindowsForms | Syncfusion
-description: loading html
+title: Loading HTML in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Loading HTML support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# Loading HTML
+# Loading HTML in Windows Forms Html Viewer (HTMLUI)
 
 HTML documents available at various resources can be easily loaded into the HTMLUI control. Some of the resources from where the HTML documents can be loaded are as follows.
 

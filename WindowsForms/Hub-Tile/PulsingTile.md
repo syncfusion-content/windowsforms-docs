@@ -1,12 +1,12 @@
 ---
 layout: post
-title: PulsingTile | WindowsForms | Syncfusion
-description: pulsingtile
+title: PulsingTile in Windows Forms Hub Tile control | Syncfusion
+description: Learn about PulsingTile support in Syncfusion Windows Forms Hub Tile control and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
-# PulsingTile
+# PulsingTile in Windows Forms Hub Tile
 
 This Tile type resembles the Music and Video HubTile in Windows Phone. The image content of HubTile can be zoomed in and out randomly.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Searching | HTMLUIControl | WindowsForms | Syncfusion
-description:  searching
+title: Searching in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Searching support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTMLUIControl
 documentation: ug

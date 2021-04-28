@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom-Controls | WindowsForms | Syncfusion
-description:  custom controls
+title: Custom Controls in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Custom Controls support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -125,7 +125,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 
 
-![](Custom-Controls_images/Custom-Controls_img1.png)
+![Custom-Controls_img1](Custom-Controls_images/Custom-Controls_img1.png)
 
 
 
@@ -133,7 +133,7 @@ The following image illustrates three custom controls created using HTMLUI.
 
 This sample demonstrates the implementation of Custom Controls by using HTMLUI.
 
-![](Custom-Controls_images/Custom-Controls_img2.jpeg)
+![Custom-Controls_img2](Custom-Controls_images/Custom-Controls_img2.jpeg)
 
 
 

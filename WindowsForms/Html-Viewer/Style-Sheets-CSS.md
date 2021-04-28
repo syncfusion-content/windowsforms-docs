@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style-Sheets-CSS | WindowsForms | Syncfusion
-description:  style sheets css
+title: Style Sheets CSS in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Style Sheets CSS support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -1109,7 +1109,7 @@ The following sample shows how different properties can be set for the hyperlink
 
 This sample demonstrates the implementation of External Style Sheets in HTMLUI.
 
-![](Style-Sheets-CSS_images/Style-Sheets-CSS_img1.png)
+![Style-Sheets-CSS_img1](Style-Sheets-CSS_images/Style-Sheets-CSS_img1.png)
 
 
 
@@ -1123,7 +1123,7 @@ By default, this sample can be found under the following location:
 
 This sample demonstrates the implementation of Internal Style Sheets on HTML Elements.
 
-![](Style-Sheets-CSS_images/Style-Sheets-CSS_img2.jpeg)
+![Style-Sheets-CSS_img2](Style-Sheets-CSS_images/Style-Sheets-CSS_img2.jpeg)
 
 
 
@@ -1182,7 +1182,7 @@ The following figure shows the back color of the HTML document customized by usi
 
 
 
-![](Style-Sheets-CSS_images/Style-Sheets-CSS_img3.png)
+![Style-Sheets-CSS_img3](Style-Sheets-CSS_images/Style-Sheets-CSS_img3.png)
 
 
 
@@ -1194,7 +1194,7 @@ This sample illustrates the customization of HTMLUI Appearance.
 
 
 
-![](Style-Sheets-CSS_images/Style-Sheets-CSS_img4.jpeg)
+![Style-Sheets-CSS_img4](Style-Sheets-CSS_images/Style-Sheets-CSS_img4.jpeg)
 
 
 HTMLUIBackColor Sample

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting | WindowsForms | Syncfusion
-description:  exporting
+title: Exporting in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Exporting support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
@@ -141,7 +141,7 @@ End Function
 
 This sample illustrates the export of HTML documents loaded into the HTMLUI to images.
 
-![](Exporting_images/Exporting_img1.jpeg)
+![Exporting_img1](Exporting_images/Exporting_img1.jpeg)
 
 
 
