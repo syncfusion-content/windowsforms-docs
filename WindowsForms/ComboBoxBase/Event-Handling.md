@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
-description: event handling
+title: Event Handling in Windows Forms ComboBoxBase control | Syncfusion
+description: Learn about Event Handling support in Syncfusion Windows Forms ComboBoxBase control and more details.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling in Windows Forms ComboBoxBase
 
 ## Selection Events
 
@@ -93,12 +93,12 @@ This section deals with associating a CheckedListBox and handling the events. Af
 
 1. Create a CheckedListBox and populate it.
 
-   ![](Overview_images/Overview_img320.jpeg) 
+   ![Overview_img320](Overview_images/Overview_img320.jpeg) 
 
 
 2. Associate it with the ComboBoxBase control.
 
-   ![](Overview_images/Overview_img321.jpeg) 
+   ![Overview_img321](Overview_images/Overview_img321.jpeg) 
 
 
 
@@ -154,7 +154,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img322.jpeg) 
+![Overview_img322](Overview_images/Overview_img322.jpeg) 
 
 ## DropDown Event
 

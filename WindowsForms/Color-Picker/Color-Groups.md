@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Color Groups | WindowsForms | Syncfusion
-description: Color Groups
+title: Color Groups in Windows Forms Color Picker control | Syncfusion
+description: Learn about Color Groups support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug
 ---
-# Color Groups
+# Color Groups in Windows Forms Color Picker (ColorPickerUIAdv)
 
 The default color groups available for ColorPickerUIAdv control are listed in the below table.
 

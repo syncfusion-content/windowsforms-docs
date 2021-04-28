@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events | WindowsForms | Syncfusion
-description: events
+title: Events in Windows Forms Color Picker control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: WindowsForms
 control: ColorPickerUIAdv 
 documentation: ug
 ---
-# Events
+# Events in Windows Forms Color Picker (ColorPickerUIAdv)
 
 ## Picked Event
 

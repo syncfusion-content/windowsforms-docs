@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting behaviors | SfComboBox | WinForms | Syncfusion
-description: This section explains about how the sorting of the drop-down items works in SfComboBox for Syncfusion Essential WindowsForms.
+title: Sorting in Windows Forms ComboBox control | Syncfusion
+description: Learn about Sorting support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms ComboBox (SfComboBox)
 
 The SfComboBox supports sorting the data either in ascending or descending order by using the [sfComboBox1.DropDownListView.View.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Automation with SfComboBox for Syncfusion Essential WindowsForms
-description: This section explains on how to test the UI of SfComboBox projects.
+title: UI Automation in Windows Forms ComboBox control | Syncfusion
+description: Learn about UI Automation support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: WindowsForms
 control: SfComboBox
 documentation: ug
 ---
 
-# UI Automation
+# UI Automation in Windows Forms ComboBox (SfComboBox)
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI automation, refer to the [MSDN page](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
@@ -70,39 +70,39 @@ Follow the steps to create a `CodedUITest project` and test the `SfComboBox` app
 1. Create a new application or open an existing application with `SfComboBox`.
 2. Create a Coded UI Test project. A CUIT file will be added automatically.
 
-![](CodedUI-Automation-Images/CodedUI_Create.jpg)
+![CodedUI_Create](CodedUI-Automation-Images/CodedUI_Create.jpg)
 
 3. Then. the Generate Code dialog box appears, choose `Record actions, edit UI map or add assertions`.
 
-![](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
+![CodedUI_GenerateCode](CodedUI-Automation-Images/CodedUI_GenerateCode.jpg)
 
 4. Now, the Coded UI project Visual Studio gets minimized and `CodedUITestBuilder` appears in the bottom right corner of the window. Record the actions by clicking the Start Recording icon in `CodedUITestBuilder`.
 
-![](CodedUI-Automation-Images/UITestBuilder.jpg)
+![UITestBuilder](CodedUI-Automation-Images/UITestBuilder.jpg)
 
 5. You can also open the `CodedUITestBuilder` from the existing Coded UI project by right clicking the `CodedUITestMethod1` in CUIT file and clicking the Generate Code for Coded UI Test. The same `CodedUITestBuilder` appears in the bottom right corner of the window.
 
-![](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
+![CodedUI_GenerateMethod](CodedUI-Automation-Images/CodedUI_GenerateMethod.jpg)
 
 6. Drag the Crosshairs on to the UI elements in `SfComboBox` application. It shows the available properties of the inner UI elements. 
 
-![](CodedUI-Automation-Images/SfComboBox_Assertion.jpg)
+![SfComboBox_Assertion](CodedUI-Automation-Images/SfComboBox_Assertion.jpg)
 
 7. Record the actions made on UI elements by clicking the `Record` button on `CodedUITestBuilder`.
 
-![](CodedUI-Automation-Images/SfComboBox_RecordAction.jpg)
+![SfComboBox_RecordAction](CodedUI-Automation-Images/SfComboBox_RecordAction.jpg)
 
 8. Then, click the `GenerateCode` icon in `CodedUITestBuilder` to generate a test method. Close the `CodedUITestBuilder` and see the generated code for the ComboBox item changed action.
 
-![](CodedUI-Automation-Images/Recorded-Actions.jpg)
+![Recorded-Actions](CodedUI-Automation-Images/Recorded-Actions.jpg)
 
 9. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, the `Assertion` window appears. The properties for the control is now listed in the Assertion dialog box. Add the assertion by clicking the Generate Code button in `CodedUITestBuilder`.
 
-![](CodedUI-Automation-Images/SfComboBox_Properties.jpg)
+![SfComboBox_Properties](CodedUI-Automation-Images/SfComboBox_Properties.jpg)
 
 10. After creating all the tests and assertions, right click on the Test method. Click `Run Tests` to run the test.
 
-![](CodedUI-Automation-Images/Run test cases.jpg)
+![Run test cases](CodedUI-Automation-Images/Run test cases.jpg)
 
 ## QTP
 

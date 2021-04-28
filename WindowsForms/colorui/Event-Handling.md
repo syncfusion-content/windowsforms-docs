@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Event Handling | WindowsForms | Syncfusion
-description: event handling
+title: Event Handling in Windows Forms ColorUI control | Syncfusion
+description: Learn about Event Handling support in Syncfusion Windows Forms ColorUI control, its elements and more details.
 platform: WindowsForms
 control: ColorUI
 documentation: ug
 ---
-# Event Handling
+# Event Handling in Windows Forms ColorUI
 
 ## ColorSelected Event
 
