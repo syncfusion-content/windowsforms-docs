@@ -10,7 +10,7 @@ documentation: ug
 
 # System Requirements for Windows Forms
 
-The following topic describes the system requirements for Syncfusion Windows Forms platform.
+The system requirements for using our Syncfusion Windows Forms platform are as follows
 
 ### Operating Systems
 
