@@ -9,11 +9,11 @@ documentation: ug
 
 # User clicking in Windows Forms DataBoundGrid
 
-Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either [GridDataBoundGrid.GridBoundColumns](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format) or [GridDataBoundGrid.Binder.InternalColumn](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format#using-the-griddataboundgridbinder-class) depending upon whether you have explicitly added the GridBoundColumns or not.
+This page explains How to Use PushButton in a Column and Catch the User Clicking it and more details.
 
 ## How to Use PushButton in a Column and Catch the User Clicking it
 
-This page explains about How to Use PushButton in a Column and Catch the User Clicking it and more details.
+Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either [GridDataBoundGrid.GridBoundColumns](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format) or [GridDataBoundGrid.Binder.InternalColumn](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format#using-the-griddataboundgridbinder-class) depending upon whether you have explicitly added the GridBoundColumns or not.
 
 {% tabs %}
 {% highlight c# %}

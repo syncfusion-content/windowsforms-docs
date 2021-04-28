@@ -9,11 +9,11 @@ documentation: ug
 
 # How to identify ButtonAdv is in pressed state or not
 
-When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
+This page explains How to Identify whether a ButtonAdv Control is in Pressed State or Not and more details.
 
 ## How to Identify whether a ButtonAdv Control is in Pressed State or Not
 
-This page explains about How to Identify whether a ButtonAdv Control is in Pressed State or Not and more details.
+When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
 
 Property Table
 

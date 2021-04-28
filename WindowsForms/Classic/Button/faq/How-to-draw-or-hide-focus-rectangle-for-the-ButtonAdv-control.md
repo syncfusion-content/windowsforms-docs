@@ -9,11 +9,11 @@ documentation: ug
 
 # How to draw or hide focus rectangle for the ButtonAdv
 
-ButtonControl shows some special features which the user interacts with the control. Those properties are discussed in this section.
+This page explains How to Draw or Hide Focus Rectangle for the ButtonAdv Control and more details.
 
 ## How to Draw or Hide Focus Rectangle for the ButtonAdv Control
 
-This page explains about How to Draw or Hide Focus Rectangle for the ButtonAdv Control and more details.
+ButtonControl shows some special features which the user interacts with the control. Those properties are discussed in this section.
 
 <table>
 <tr>

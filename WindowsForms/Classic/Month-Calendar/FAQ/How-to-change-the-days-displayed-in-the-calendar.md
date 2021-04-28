@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Days Displayed in the Calendar in Windows Forms MonthCalendarAdv
 
-To change the days displayed in the calendar, you need to handle the [PrepareViewStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event of the Grid control, which is embedded in the MonthCalendarAdv control and change its cell value as follows.
+This page about How to change the days displayed in the calendar and more details.
 
 ## How to change the days displayed in the calendar?
 
-This page explains about How to change the days displayed in the calendar and more details.
+To change the days displayed in the calendar, you need to handle the [PrepareViewStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event of the Grid control, which is embedded in the MonthCalendarAdv control and change its cell value as follows.
 
 
 {% tabs %}

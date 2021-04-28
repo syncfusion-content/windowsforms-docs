@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Change the Mouse Cursor for a GridControl
 
-The simplest way is to derive the grid and override OnSetCursor. You can add additional checks to narrow down where to set the cursor.
+This page explains How to Change the Mouse Cursor for a GridControl and more details.
 
 ## How to Change the Mouse Cursor for a GridControl
 
-This page explains about How to Change the Mouse Cursor for a GridControl and more details.
+The simplest way is to derive the grid and override OnSetCursor. You can add additional checks to narrow down where to set the cursor.
 
 {% tabs %}
 {% highlight c# %}

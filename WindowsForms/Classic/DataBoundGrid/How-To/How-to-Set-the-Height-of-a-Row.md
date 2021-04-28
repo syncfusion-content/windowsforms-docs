@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Set the Height of a Row in Windows Forms
 
-To explicitly set the height of a particular row, use the Model.RowHeights collection.
+This page explains How to Set the Height of a Row and more details.
 
 ## How to Set the Height of a Row
 
-This page explains about How to Set the Height of a Row and more details.
+To explicitly set the height of a particular row, use the Model.RowHeights collection.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,13 +9,11 @@ documentation: ug
 
 # How to Disable Sorting While Record Added
 
-
-
-When GridDataBoundGrid’s data source is BindingList, you can perform sorting only using WrapperClasses. In the following example CellClick event is used to customize sorting with WrapperClasses:
+This page explains How to Disable Sorting while Record Added and more details.
 
 ## How to Disable Sorting while Record Added
 
-This page explains about How to Disable Sorting while Record Added and more details.
+When GridDataBoundGrid’s data source is BindingList, you can perform sorting only using WrapperClasses. In the following example CellClick event is used to customize sorting with WrapperClasses:
 
 {% tabs %}
 {% highlight c# %}

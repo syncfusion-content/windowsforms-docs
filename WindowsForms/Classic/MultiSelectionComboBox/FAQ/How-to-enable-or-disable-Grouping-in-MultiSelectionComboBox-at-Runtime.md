@@ -9,13 +9,13 @@ documentation: ug
 
 # MultiSelectionCombobox at Runtime in Windows Forms
 
-In MultiSelectionComboBox, grouping based on initial character can be enabled or disabled at runtime using the following code sample.
-
-The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.
+This page explains How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime and more details.
 
 ## How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime
 
-This page explains about How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime and more details.
+In MultiSelectionComboBox, grouping based on initial character can be enabled or disabled at runtime using the following code sample.
+
+The following code sample illustrates you on how to enable Grouping in MultiSelectionComboBox Dropdown.
 
 {% tabs %}
 {% highlight c# %}

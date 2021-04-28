@@ -9,11 +9,11 @@ documentation: ug
 
 # Format the Text in Windows Forms GridDataBoundGrid
 
-The purpose of QueryCellFormattedText is to take data, which is present in the Total Marks and convert it to Percentage for display. The SaveCellFormattedText takes the units that are entered by the user in Percentage and converts them to Total Marks so that they can be saved as Total Marks.
+This page explains How to Format the Text in Windows Forms and more details.
 
 ## How to Format the Text in Windows Forms
 
-This page explains about How to Format the Text in Windows Forms and more details.
+The purpose of QueryCellFormattedText is to take data, which is present in the Total Marks and convert it to Percentage for display. The SaveCellFormattedText takes the units that are entered by the user in Percentage and converts them to Total Marks so that they can be saved as Total Marks.
 
 {% tabs %}
 {% highlight c# %}

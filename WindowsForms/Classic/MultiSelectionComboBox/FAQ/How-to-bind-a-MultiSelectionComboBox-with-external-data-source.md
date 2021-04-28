@@ -8,13 +8,13 @@ documentation: ug
 ---
 # MultiSelectionCombobox in Windows Forms
 
-You can achieve this by using DataSource and DisplayMember properties in MultiSelectionComboBox. 
-
-The following code sample defines how to bind MultiSelectionComboBox with datasource.
+This page explains How to Bind a MultiSelectionComboBox with External Data Source and more details.
 
 ## How to Bind a MultiSelectionComboBox with External Data Source
 
-This page explains about How to Bind a MultiSelectionComboBox with External Data Source and more details.
+You can achieve this by using DataSource and DisplayMember properties in MultiSelectionComboBox. 
+
+The following code sample defines how to bind MultiSelectionComboBox with datasource.
 
 {% tabs %}
 {% highlight c# %}

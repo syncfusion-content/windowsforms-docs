@@ -9,14 +9,14 @@ documentation: ug
 
 # How to Set the Width of a Column in Windows Forms
 
+This page explains How to Set the Width of a Column and more details.
+
+## How to Set the Width of a Column
+
 In order to change the width of columns in GridDataBoundGrid, you must do the following.
 
 * Set the property grid.AllowResizeToFit to False. This can be done once in the forms constructor or Form.Load event. It will turn off the grids default sizing behavior so that your explicit sizing will work. Otherwise, the default sizing will take precedence. The default sizing uses the width of the header text to size the columns. 
 * Then, explicitly set the width of the particular columns by using Model.ColWidths collection.
-
-## How to Set the Width of a Column
-
-This page explains about How to Set the Width of a Column and more details.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,16 +9,16 @@ documentation: ug
 
 # How to Get Selected Ranges in GridDataBoundGrid
 
+This page explains How to Get Selected Ranges in GridDataBoundGrid and more details.
+
+## How to Get Selected Ranges in GridDataBoundGrid
+
 To get selected range of cells, use GetSelectedRanges method. It returns the list with selected cells. This method has two arguments,
 
 * ranges - It gets the range of cells to be selected.
 * ConsiderCurrentCell 
 
 True -  If current cell should be treated as selected range.
-
-## How to Get Selected Ranges in GridDataBoundGrid
-
-This page explains about How to Get Selected Ranges in GridDataBoundGrid and more details.
 
 {% tabs %}
 {% highlight c# %}

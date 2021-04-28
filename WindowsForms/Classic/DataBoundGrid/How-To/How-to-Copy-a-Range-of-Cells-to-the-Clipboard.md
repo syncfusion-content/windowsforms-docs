@@ -9,11 +9,11 @@ documentation: ug
 
 # Range of Cells to the Clipboard in DataBoundGrid
 
-You can use CopyTextToClipboard method to copy text from a selected range of cells to the clipboard. 
+This page explains How to Copy a Range of Cells to the Clipboard and more details.
 
 ## How to Copy a Range of Cells to the Clipboard
 
-This page explains about How to Copy a Range of Cells to the Clipboard and more details.
+You can use CopyTextToClipboard method to copy text from a selected range of cells to the clipboard. 
 
 {% tabs %} 
 {% highlight c# %}

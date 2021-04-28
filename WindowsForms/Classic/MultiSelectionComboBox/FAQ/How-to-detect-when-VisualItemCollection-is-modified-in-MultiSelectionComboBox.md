@@ -9,11 +9,11 @@ documentation: ug
 
 # VisualItem in MultiSelectionCombobox in Windows Forms
 
-The following code explains you on how to detect the VisualItemCollection modification using VisualItemCollectionChanged event. This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
+This page explains How to Detect when VisualItemCollection is Modified in MultiSelectionComboBox and more details.
 
 ## How to Detect when VisualItemCollection is Modified in MultiSelectionComboBox
 
-This page explains about How to Detect when VisualItemCollection is Modified in MultiSelectionComboBox and more details.
+The following code explains you on how to detect the VisualItemCollection modification using VisualItemCollectionChanged event. This event is triggered once VisualItem collection is modified in MultiSelectionComboBox.
 
 {% tabs %}
 {% highlight c# %}

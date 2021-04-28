@@ -9,15 +9,15 @@ documentation: ug
 
 # How to Insert an Unbound CheckBox Column
 
+This page explains How to Insert an Unbound CheckBox Column and more details.
+
+## How to Insert an Unbound CheckBox Column
+
 There are three steps needed to have an unbound checkbox column in GridDataBoundGrid.
 
 1. Add the unbound column to GridDataBoundGrid.
 2. A bounded column has it own DataSource to store values that are entered in it. But, in an unbound column there is no DataSource present in it; so it has to be handled manually by adding any collection like a hashtable. To make an unbound column work together with sort, assign a key as the corresponding primary key value in the row in the Key/Value pair of the external collection.
 3. Then Model.QueryCellInfo event is used to display values in the checkbox. The Model.SaveCellInfo event is used to save changes that are made by the user in the checkbox.
-
-## How to Insert an Unbound CheckBox Column
-
-This page explains about How to Insert an Unbound CheckBox Column and more details.
 
 {% tabs %}
 {% highlight c# %}

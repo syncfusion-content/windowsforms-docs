@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Make Particular Cells ReadOnly in Windows Forms
 
-In general, cell specific style settings (other than CellValue or text) in GridDataBoundGrid need to be done through an event like PrepareViewStyleInfo. Functional properties like Read-only that are used to determine cell's functionality need to be set in Model.QueryCellInfo. But, visual properties like Font and BackColor can be set in either PrepareViewStyleInfo or the Model.QueryCellInfo.
+This page explains How to Make Particular Cells ReadOnly and more details.
 
 ## How to Make Particular Cells ReadOnly
 
-This page explains about How to Make Particular Cells ReadOnly and more details.
+In general, cell specific style settings (other than CellValue or text) in GridDataBoundGrid need to be done through an event like PrepareViewStyleInfo. Functional properties like Read-only that are used to determine cell's functionality need to be set in Model.QueryCellInfo. But, visual properties like Font and BackColor can be set in either PrepareViewStyleInfo or the Model.QueryCellInfo.
 
 {% tabs %}
 {% highlight c# %}

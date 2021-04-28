@@ -9,11 +9,11 @@ documentation: ug
 
 # Use of GridFilterBar in Windows Forms DataBoundGrid
 
-To get autocomplete using standard GridFilterBar, try the following code.
+This page explains How to Make GridFilterBar Use Autocomplete Combo Box and more details.
 
 ## How to Make GridFilterBar Use Autocomplete Combo Box
 
-This page explains about How to Make GridFilterBar Use Autocomplete Combo Box and more details.
+To get autocomplete using standard GridFilterBar, try the following code.
 
 {% tabs %}
 {% highlight c# %}

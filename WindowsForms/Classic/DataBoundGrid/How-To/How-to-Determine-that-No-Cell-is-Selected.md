@@ -9,16 +9,16 @@ documentation: ug
 
 # How to Determine that No Cell is Selected
 
+This page explains How to Determine that No Cell is Selected and more details.
+
+## How to Determine that No Cell is Selected
+
 To determine whether the cell is selected or not, use GetSelectedRange method. It returns the list with selected range. If it returns the range as zero, then no cell is selected.
 
 * ranges - It sets the range of cells to be selected.
 * ConsiderCurrentCell
 
 True - If the current cell should be treated as selected range.
-
-## How to Determine that No Cell is Selected
-
-This page explains about How to Determine that No Cell is Selected and more details.
 
 {% tabs %}
 {% highlight c# %}

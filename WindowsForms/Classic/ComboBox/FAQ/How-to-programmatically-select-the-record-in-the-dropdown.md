@@ -8,11 +8,11 @@ documentation: ug
 ---
 # How to programmatically select the record in the Dropdown
 
-You can handle the DropDown event of the ComboBoxAdv control and set it as shown in the following code example.
+This page explains How to Programmatically Select the Record in the Dropdown that matches the Text Typed in ComboBoxAdv and more details.
 
 ## How to Programmatically Select the Record in the Dropdown that matches the Text Typed in ComboBoxAdv
 
-This page explains about How to Programmatically Select the Record in the Dropdown that matches the Text Typed in ComboBoxAdv and more details.
+You can handle the DropDown event of the ComboBoxAdv control and set it as shown in the following code example.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Get New and Old Value in WinForms GridDataBoundGrid
 
-CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
+This page explains How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell and more details.
 
 ## How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell
 
-This page explains about How to Get the New Value and Old Value when an Item is Selected in a Combobox Cell and more details.
+CurrentCellCloseDropDown event gets triggered when a dropdown is closed in a grid cell. The new value of ComboBox can be obtained from CurrentCell's Renderer property and old value can be obtained from the grid.
 
 {% tabs %}
 {% highlight c# %}

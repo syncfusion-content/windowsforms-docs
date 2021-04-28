@@ -9,9 +9,9 @@ documentation: ug
 
 # Retrieve GridDataBoundGrid in DataBoundGrid
 
-## How to Retrieve DataRow from GridDataBoundGrid with RowIndex
+This page explains How to Retrieve DataRow from GridDataBoundGrid with RowIndex and more details.
 
-This page explains about How to Retrieve DataRow from GridDataBoundGrid with RowIndex and more details.
+## How to Retrieve DataRow from GridDataBoundGrid with RowIndex
 
 {% tabs %}
 {% highlight c# %}

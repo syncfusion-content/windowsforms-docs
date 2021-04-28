@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Customize the diagonal columns
 
-The appearance of diagonal columns can be customized using the below code.
+This page explains How to customize the appearance of the diagonal columns and more details.
 
 ## How to customize the appearance of the diagonal columns?
 
-This page explains about How to customize the appearance of the diagonal columns and more details.
+The appearance of diagonal columns can be customized using the below code.
 
 {% tabs %}
 

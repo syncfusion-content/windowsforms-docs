@@ -9,6 +9,10 @@ documentation: ug
 
 # How to use Combo Box in a Column in WinForms
 
+This page explains How to Use Combo Box in a Column and more details.
+
+## How to Use Combo Box in a Column
+
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 
 * Create StringCollection object that will hold your choices and then set this StringCollection in GridStyleInfo.ChoiceList property for the cell. 
@@ -17,10 +21,6 @@ The control type of a cell is part of the cell style and is determined by GridSt
 In the second case, use GridStyleInfo.DataSource, DisplayMember, and ValueMember properties to set datasource for the drop list. In addition to setting the cell type, ChoiceList, datasource, DisplayMember, and ValueMember, the DropDownStyle property of GridStyleInfo controls editing behavior of the combobox cell. You can also use GridStyleInfo.ShowButton property to control when the combo box button is visible. 
 
 Here is the code that sets column 2 to be a combo box with drop down list being set through the styles ChoiceList property. To access a column's style, you must use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added GridBoundColumns or not.
-
-## How to Use Combo Box in a Column
-
-This page explains about How to Use Combo Box in a Column and more details.
 
 {% tabs %}
 {% highlight c# %}

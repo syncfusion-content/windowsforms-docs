@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Change the date in a DateTimePickerAdv
 
-We can make the control read only by setting [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ReadOnly) property to true. DateTimePickerAdv control have an option to change the date, even in ReadOnly mode using Arrow keys. Set [ReadOnlyValueChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ReadOnlyValueChange) property to true to effect this setting.
+This page explains How to navigate to current date in DateTimePickerAdv and more details.
 
 ## How to navigate to current date in DateTimePickerAdv ?
 
-This page explains about How to navigate to current date in DateTimePickerAdv and more details.
+We can make the control read only by setting [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ReadOnly) property to true. DateTimePickerAdv control have an option to change the date, even in ReadOnly mode using Arrow keys. Set [ReadOnlyValueChange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_ReadOnlyValueChange) property to true to effect this setting.
 
 {% tabs %}
 

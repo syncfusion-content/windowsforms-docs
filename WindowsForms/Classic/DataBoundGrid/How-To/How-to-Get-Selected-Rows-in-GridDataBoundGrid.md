@@ -9,6 +9,10 @@ documentation: ug
 
 # How to Get Selected Rows in GridDataBoundGrid
 
+This page explains How to Get Selected Rows in GridDataBoundGrid and more details.
+
+## How to Get Selected Rows in GridDataBoundGrid 
+
 To get the selected row use GetSelectedRows method. It returns GridRangeInfoList object, an array of GridRangeInfo objects. This method has two arguments,
 
 * bRangeRowsOnly 
@@ -20,10 +24,6 @@ False - If you want to treat single range selection as a full row selection.
 * ConsiderCurrentCell 
 
 True - If current cell should be returned as selected range.
-
-## How to Get Selected Rows in GridDataBoundGrid 
-
-This page explains about How to Get Selected Rows in GridDataBoundGrid and more details.
 
 {% tabs %}
 {% highlight c# %}

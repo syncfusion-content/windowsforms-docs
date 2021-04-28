@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance of a Single Header Cell DataBoundGrid
 
-To make changes to individual cells (header cells or otherwise), you must implement PrepareViewStyleInfo event.
+This page explains How to Change the Appearance of a Single Header Cell and more details.
 
 ## How to Change the Appearance of a Single Header Cell
 
-This page explains about How to Change the Appearance of a Single Header Cell and more details.
+To make changes to individual cells (header cells or otherwise), you must implement PrepareViewStyleInfo event.
 
 {% tabs %}
 {% highlight c# %}

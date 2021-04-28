@@ -9,11 +9,11 @@ documentation: ug
 
 # Grid data bound in WinForms GridDataBoundGrid(Classic)
 
-You can achieve this by setting the row header base style to Header, and handling PrepareViewStyleInfo event handler to set the line numbers. Refer to the code snippet below, which illustrates this.
+This page explains How To Change the Row Header to Display Line Numbers instead of the Black Triangle in GridDataBoundGrid and more details.
 
 ## How To Change the Row Header to Display Line Numbers instead of the Black Triangle in GridDataBoundGrid
 
-This page explains about How To Change the Row Header to Display Line Numbers instead of the Black Triangle in GridDataBoundGrid and more details.
+You can achieve this by setting the row header base style to Header, and handling PrepareViewStyleInfo event handler to set the line numbers. Refer to the code snippet below, which illustrates this.
 
 {% tabs %}
 {% highlight c# %}

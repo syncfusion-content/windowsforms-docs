@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Apply Filtering on GridDataBound Control
 
-GridDataBound grid is designed to bind data sources such as data table, string collection, data set, and data view. The filter bar can be enabled and hidden in the grid. Before selecting a node in the Tree view, the grid will load all the data from the data source. TreeView_AfterSelect event is used to determine the tree view node and perform filter operation on the grid control corresponding to the node that you selected in the Tree view. The following code example illustrates how to apply filtering on GridDataBound grid based on a node selected in the Tree view.
+This page explains how to apply filter to GridDataBoundGrid based on Tree View selected node and more details.
 
 ## How to Apply Filtering on GridDataBound Grid based on a Node Selected in Tree View?
 
-This page explains how to apply filter to GridDataBoundGrid based on Tree View selected node and more details.
+GridDataBound grid is designed to bind data sources such as data table, string collection, data set, and data view. The filter bar can be enabled and hidden in the grid. Before selecting a node in the Tree view, the grid will load all the data from the data source. TreeView_AfterSelect event is used to determine the tree view node and perform filter operation on the grid control corresponding to the node that you selected in the Tree view. The following code example illustrates how to apply filtering on GridDataBound grid based on a node selected in the Tree view.
 
 {% tabs %}
 {% highlight c# %}

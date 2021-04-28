@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Identify the current selected date
 
-The MonthCalendarAdv gives an array of selected dates. If you want to get only one date, choose the first element from that array. Also, set [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_AllowMultipleSelection) property to `false`. The [DateSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) Event is fired after the user had completed the selection.
+This page explains How to identify the current selected date at run time and more details.
 
 ## How to identify the current selected date at run time?
 
-This page explains about How to identify the current selected date at run time and more details.
+The MonthCalendarAdv gives an array of selected dates. If you want to get only one date, choose the first element from that array. Also, set [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_AllowMultipleSelection) property to `false`. The [DateSelected](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) Event is fired after the user had completed the selection.
 
 {% tabs %}
 

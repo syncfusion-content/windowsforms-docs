@@ -8,13 +8,13 @@ documentation: ug
 ---
 # How to change the BackColor for a disabled ComboBo
 
-Previously, once the ComboBoxAdv control was disabled, the BackColor property of the control could not be changed. This was due to the fact that, by default, all the properties of the control were disabled once the control was disabled.
-
-Now, you can set the BackColor for the ComboBoxAdv control even in its disabled state by using the UseBackColor property.
+This page explains How to Change the BackColor for a Disabled ComboBoxAdv Control and more details.
 
 ##  How to Change the BackColor for a Disabled ComboBoxAdv Control
 
-This page explains about How to Change the BackColor for a Disabled ComboBoxAdv Control and more details.
+Previously, once the ComboBoxAdv control was disabled, the BackColor property of the control could not be changed. This was due to the fact that, by default, all the properties of the control were disabled once the control was disabled.
+
+Now, you can set the BackColor for the ComboBoxAdv control even in its disabled state by using the UseBackColor property.
 
 {% tabs %}
 {% highlight c# %}

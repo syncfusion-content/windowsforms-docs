@@ -9,11 +9,11 @@ documentation: ug
 
 # Colored it Control in Windows Forms DataBoundGrid
 
-Set the CellType property in the cell style to "ColorEdit" and the text property to the appropriate value. To access a column's style, use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added the GridBoundColumns or not.
+This page explains How to Use a ColorEdit Control in a Column and Retrieve its Value and more details.
 
 ## How to Use a ColorEdit Control in a Column and Retrieve its Value
 
-This page explains about How to Use a ColorEdit Control in a Column and Retrieve its Value and more details.
+Set the CellType property in the cell style to "ColorEdit" and the text property to the appropriate value. To access a column's style, use either GridDataBoundGrid.GridBoundColumns or GridDataBoundGrid.Binder.InternalColumn depending upon whether you have explicitly added the GridBoundColumns or not.
 
 {% tabs %}
 {% highlight c# %}

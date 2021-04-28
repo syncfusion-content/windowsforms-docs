@@ -9,11 +9,11 @@ documentation: ug
 
 # Double clicking the contents in DataBoundGrid
 
-CurrentCellControlDoubleClick event can be used to select the contents of a cell by double-clicking it. The current cell is selected by using gridControl1.CurrentCell.Renderer.The length of the content is measured and the contents are selected using Select() method of the inner textbox cell, if it is a textbox cell type.
+This page explains How to Select All the Contents in a Cell After Double-Clicking the Contents and more details.
 
 ## How to Select All the Contents in a Cell After Double-Clicking the Contents
 
-This page explains about How to Select All the Contents in a Cell After Double-Clicking the Contents and more details.
+CurrentCellControlDoubleClick event can be used to select the contents of a cell by double-clicking it. The current cell is selected by using gridControl1.CurrentCell.Renderer.The length of the content is measured and the contents are selected using Select() method of the inner textbox cell, if it is a textbox cell type.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Column Header in Windows Forms DataBoundGrid
 
-You can place images in cells by specifying style.ImageIndex and style.ImageList values for the cell, provided the style.CellType is either "Static" or "text box". To make your header cell hold an icon, you can make it "Static" and set these properties appropriately. For GridDataBoundGrid, setting such properties on a single cell will require the use of PrepareViewStyleInfo event.
+This page explains How to Include an Icon in the Column Header and more details.
 
 ## How to Include an Icon in the Column Header
 
-This page explains about How to Include an Icon in the Column Header and more details.
+You can place images in cells by specifying style.ImageIndex and style.ImageList values for the cell, provided the style.CellType is either "Static" or "text box". To make your header cell hold an icon, you can make it "Static" and set these properties appropriately. For GridDataBoundGrid, setting such properties on a single cell will require the use of PrepareViewStyleInfo event.
 
 {% tabs %}
 {% highlight c# %}

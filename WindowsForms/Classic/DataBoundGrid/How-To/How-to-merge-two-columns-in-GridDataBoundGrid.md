@@ -9,11 +9,11 @@ documentation: ug
 
 # Grid data bound grid in Windows Forms GridDataBoundGrid
 
-You can make use of CoveredRanges property to merge two or more columns in GridDataBoundGrid.
+This page explains How to Merge Two Columns in GridDataBoundGrid and more details.
 
 ## How to Merge Two Columns in GridDataBoundGrid
 
-This page explains about How to Merge Two Columns in GridDataBoundGrid and more details.
+You can make use of CoveredRanges property to merge two or more columns in GridDataBoundGrid.
 
 {% tabs %}
 {% highlight c# %}

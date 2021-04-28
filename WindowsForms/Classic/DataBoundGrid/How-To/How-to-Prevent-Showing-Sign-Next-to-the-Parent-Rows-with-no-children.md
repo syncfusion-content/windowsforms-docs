@@ -9,15 +9,15 @@ documentation: ug
 
 # Sign Next to the Parent Rows in DataBoundGrid
 
+This page explains How to Prevent Showing '+' Sign Next to the Parent Rows with No Children and more details.
+
+## How to Prevent Showing '+' Sign Next to the Parent Rows with No Children
+
 To hide expansion indicator that reflects that no children are present at the parent row in a hierarchical grid, you will need to handle CellDrawn and CellButtonClick Event. 
 
 Follow the steps given below.
 
 1. In the CellDrawn Event Handler, to assign the number of children in the parent row, to count, and to paint the current cell with BackgroundColor if count equals zero.
-
-## How to Prevent Showing '+' Sign Next to the Parent Rows with No Children
-
-This page explains about How to Prevent Showing '+' Sign Next to the Parent Rows with No Children and more details.
 
 {% tabs %}
 {% highlight c# %}

@@ -9,13 +9,13 @@ documentation: ug
 
 # GridDataBoundGrid row and column count in Windows Forms
 
-GridDataBoundGrid does not increment row and column count as GridControl. The reason for this is that GridDataBoundGrid does not have its own DataSource, and it has to store these in the relevant DataTable. To add rows and columns in the DataTable, Model.ClipboardPaste handler must be used.
-
-In this handler, the clipboard contents that are stored in text format of DataObject will be single string. This has to be split with '\n' and '\t' to refer the rows and columns fashion and this count is compared with the existing row and column count. The necessary extra rows are added then and makes pasting possible.
+This page explains How to Paste Clipboard Contents Bigger than GridDataBoundGrid Row and Column Count and more details.
 
 ## How to Paste Clipboard Contents Bigger than GridDataBoundGrid Row and Column Count
 
-This page explains about How to Paste Clipboard Contents Bigger than GridDataBoundGrid Row and Column Count and more details.
+GridDataBoundGrid does not increment row and column count as GridControl. The reason for this is that GridDataBoundGrid does not have its own DataSource, and it has to store these in the relevant DataTable. To add rows and columns in the DataTable, Model.ClipboardPaste handler must be used.
+
+In this handler, the clipboard contents that are stored in text format of DataObject will be single string. This has to be split with '\n' and '\t' to refer the rows and columns fashion and this count is compared with the existing row and column count. The necessary extra rows are added then and makes pasting possible.
 
 {% tabs %}
 {% highlight c# %}

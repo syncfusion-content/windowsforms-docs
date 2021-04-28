@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTimePickeradv is Changed in Windows Forms xptoolbar | Syncfusion
-description: Learn about Which Event will Raise When the Date in the DateTimePickeradv is Changed support in Syncfusion Windows Forms DateTimePickerAdv control and more.
+description: Learn about Which Event will Raise When the Date in Syncfusion Windows Forms DateTimePickerAdv control and more.
 platform: WindowsForms
 control: Calendar
 documentation: ug
