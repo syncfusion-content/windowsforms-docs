@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation | SfNumericTextBox | WindowsForms | Syncfusion
-description: This section provides the information about the SfNumericTextBox validation.
+title: Validation in Windows Forms Numeric TextBox control | Syncfusion
+description: Learn about Validation support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Validation
+# Validation in Windows Forms Numeric TextBox (SfNumericTextBox)
 
 SfNumericTextBox allows data validation, which enables user to validate the values and notify the errors using the Validating event.
 

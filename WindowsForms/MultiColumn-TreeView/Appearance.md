@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: Appearance
+title: Appearance in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms MultiColumn TreeView
 
 ## Border
 
@@ -142,7 +142,7 @@ Me.multiColumnTreeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSing
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img1.jpg)
+![Appearance_img1](Appearance_Images/Appearance_img1.jpg)
 
 **To customize the 3D border of MultiColumnTreeView, set the below property as follows**
 
@@ -199,7 +199,7 @@ Me.multiColumnTreeView1.BorderColor = Color.SteelBlue
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img2.jpg)
+![Appearance_img2](Appearance_Images/Appearance_img2.jpg)
 
 ## Color Customization
 
@@ -225,13 +225,13 @@ Me.multiColumnTreeView1.BackColor = Color.LightBlue
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img3.jpg)
+![Appearance_img3](Appearance_Images/Appearance_img3.jpg)
 
 ### BackgroundColor
 
 Indicates the background color of the control. It provides options to set style, back color, fore color, gradient color and gradient styles.
 
-![](Appearance_Images/Appearance_img4.jpg)
+![Appearance_img4](Appearance_Images/Appearance_img4.jpg)
 
 N> Both BackColor and Background color sets the background color of the control. If we set background color, backcolor property overridden by background color and we can set gradient color and gradient styles through background color property rather than backcolor.
 
@@ -251,7 +251,7 @@ Me.multiColumnTreeView1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Color
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img5.jpg)
+![Appearance_img5](Appearance_Images/Appearance_img5.jpg)
 
 ### Header Customization
 
@@ -280,7 +280,7 @@ this.multiColumnTreeView1.Columns[1].TextColor = Color.White ;
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img6.jpg)
+![Appearance_img6](Appearance_Images/Appearance_img6.jpg)
 
 ### BaseStyles
 
@@ -290,14 +290,14 @@ For creating base styles follow the below steps,
 
 1.	Open the Base Style Collection Editor by clicking the BaseStyles property in property window.
 
-![](Appearance_Images/Appearance_img7.jpg)
+![Appearance_img7](Appearance_Images/Appearance_img7.jpg)
 
 2.	By default, there will be three standard styles, for applying new base styles select for which you need to apply the styles in dropdown arrow and click the Add button .
 
-![](Appearance_Images/Appearance_img8.jpg)
+![Appearance_img8](Appearance_Images/Appearance_img8.jpg)
 In the image Node Level 1, Node Level 2 and SubItem Style Base style has been added.
 
-![](Appearance_Images/Appearance_img9.jpg)
+![Appearance_img9](Appearance_Images/Appearance_img9.jpg)
 
 ### LineColor
 
@@ -319,7 +319,7 @@ Me.multiColumnTreeView1.LineColor = Color.Red
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img10.jpg)
+![Appearance_img10](Appearance_Images/Appearance_img10.jpg)
 
 ### SelectedNodeBackground
 
@@ -361,7 +361,7 @@ Me.multiColumnTreeView1.SelectedNodeForeColor = Color.White
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img11.jpg)
+![Appearance_img11](Appearance_Images/Appearance_img11.jpg)
 
 ### InactiveSelectedNodeBackground
 
@@ -425,7 +425,7 @@ Me.multiColumnTreeView1.Nodes(0).SubItems(1).Background = New Syncfusion.Drawing
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img12.jpg)
+![Appearance_img12](Appearance_Images/Appearance_img12.jpg)
 
 ### Border
 
@@ -493,7 +493,7 @@ Me.MultiColumnTreeView1.Nodes(0).Nodes(0).Nodes(2).SubItems(1).LeftImage = Image
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img13.jpg)
+![Appearance_img13](Appearance_Images/Appearance_img13.jpg)
 
 ## Style
 
@@ -515,7 +515,7 @@ Me.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016Colorful
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img14.jpg)
+![Appearance_img14](Appearance_Images/Appearance_img14.jpg)
 
 ### Office2016White
 
@@ -535,7 +535,7 @@ Me.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016White
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img15.jpg)
+![Appearance_img15](Appearance_Images/Appearance_img15.jpg)
 
 ### Office2016Black
 
@@ -555,7 +555,7 @@ Me.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016Black
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img16.jpg)
+![Appearance_img16](Appearance_Images/Appearance_img16.jpg)
 
 ### Office2016DarkGray
 
@@ -575,7 +575,7 @@ Me.multiColumnTreeView1.Style = MultiColumnVisualStyle.Office2016DarkGray
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img17.jpg)
+![Appearance_img17](Appearance_Images/Appearance_img17.jpg)
 
 ## PlusMinus
 
@@ -597,7 +597,7 @@ Me.multiColumnTreeView2.ShowPlusMinus = False
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img21.jpg)
+![Appearance_img21](Appearance_Images/Appearance_img21.jpg)
 
 ## Image Customization
 
@@ -683,7 +683,7 @@ multiColumnTreeView1.LeftImageIndices = New Integer() {1}
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img18.jpg)
+![Appearance_img18](Appearance_Images/Appearance_img18.jpg)
 
 ### RightImageList
 
@@ -768,7 +768,7 @@ multiColumnTreeView1.RightImageIndices = New Integer() {1}
 
 {% endtabs %}
 
-![](Appearance_Images/Appearance_img19.jpg)
+![Appearance_img19](Appearance_Images/Appearance_img19.jpg)
 
 ### StateImageList
 		
@@ -872,4 +872,4 @@ treeNodeAdv1.CloseImgIndex = 2
 
 4.	Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in MultiColumnTreeView.
 
-![](Appearance_Images/Appearance_img20.jpg)
+![Appearance_img20](Appearance_Images/Appearance_img20.jpg)

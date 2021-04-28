@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion MultiColumnTreeView for Windows Forms
-description: An overview about the MultiColumnTreeView and its key features like Styles Architecture, adding Columns and sub items, LabelEdit etc.
+title: About Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms MultiColumn TreeView control, its elements and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Overview
+# Windows Forms MultiColumn TreeView Overview
 
 MultiColumnTreeView is an advanced treeview control with multiple columns. This control displays the contents in the form of tree with additional columns displaying related data for the tree nodes and with its robust features, it gives a visually appealing tree structure. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TreeNode-Features | WindowsForms | Syncfusion
-description: Concepts and Features
+title: TreeNodeAdv Features in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about TreeNodeAdv Features support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
-# TreeNode Features
+# TreeNodeAdv Features in Windows Forms MultiColumn TreeView
 
 This section discusses the following topics.
 

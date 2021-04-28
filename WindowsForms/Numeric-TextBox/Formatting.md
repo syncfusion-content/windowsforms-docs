@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting | SfNumericTextBox | WindowsForms | Syncfusion
-description: This section provides the information about the value formatting in SfNumericTextBox.
+title: Formatting in Windows Forms Numeric TextBox control | Syncfusion
+description: Learn about Formatting support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Formatting
+# Formatting in Windows Forms Numeric TextBox (SfNumericTextBox)
 
 ## FormatMode
 

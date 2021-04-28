@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Find and Replace | WindowsForms | Syncfusion
-description: Find and Replace
+title: Find and Replace in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Find and Replace support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Node Find and Replace  
+# Find and Replace in Windows Forms MultiColumn TreeView
 
 ## TreeViewFindReplaceDialog
 
@@ -80,11 +80,11 @@ dialog.ReplaceAll("Britain", "United Kingdom", TreeViewSearchOption.MatchWholeTe
 
 {% endtabs %}
 
-![](Find-and-Replace_Images/FindAndReplace_img1.jpg)
+![FindAndReplace_img1](Find-and-Replace_Images/FindAndReplace_img1.jpg)
 
 * Image after Find text and replacing with other text.
 
-![](Find-and-Replace_Images/FindAndReplace_img2.jpg)
+![FindAndReplace_img2](Find-and-Replace_Images/FindAndReplace_img2.jpg)
 
 
 ## OnNodeBeforeFind Event

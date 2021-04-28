@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance | WindowsForms | Syncfusion
-description: Performance of MultiColumnTreeView
+title: Performance in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Performance support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Performance 
+# Performance in Windows Forms MultiColumn TreeView
 
 The performance of the MultiColumnTreeView can be improved by using the following properties and methods.
 

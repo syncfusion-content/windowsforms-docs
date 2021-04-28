@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Concepts-And-Features| WindowsForms | Syncfusion
-description:  concepts and features
+title: Concepts and Features in Windows Forms Navigation Drawer control | Syncfusion
+description: Learn about Concepts and Features support in Syncfusion Windows Forms Navigation Drawer control and more details.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug
 ---
 
-# Concepts and features
+# Concepts and Features in Windows Forms Navigation Drawer
 
 ## ContentView
 

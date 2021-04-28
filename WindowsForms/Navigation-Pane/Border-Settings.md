@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Border Settings  | WindowsForms | Syncfusion
-description: Border Settings
+title: Border Settings in Windows Forms Navigation Pane control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Border settings
+# Border Settings in Windows Forms Navigation Pane (GroupBar)
 
 ## GroupBar settings
 

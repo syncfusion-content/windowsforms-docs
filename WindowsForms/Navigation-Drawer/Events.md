@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events| WindowsForms | Syncfusion
-description:  events
+title: Events in Windows Forms Navigation Drawer control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms Navigation Drawer control and more details.
 platform: WindowsForms
 control: NavigationDrawer 
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms Navigation Drawer
 
 The below four events are implemented in Transition.
 

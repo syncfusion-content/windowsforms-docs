@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizable-number-of-items-on-Popup | WindowsForms | Syncfusion
-description: customizable number of items on popup
+title: Customizable number of Items on Popup in Windows Forms NavigationView control | Syncfusion
+description: Learn about Customizable number of Items on Popup support in Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---
 
-# Customizable number of items on pop-up
+# Customizable number of Items on Popup in Windows Forms NavigationView
 
 Navigation View now allows setting the maximum number of items to be displayed on its pop-up and has an option to cancel the pop-up. [BarPopUp](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationView.html) event can be used to achieve this.
 

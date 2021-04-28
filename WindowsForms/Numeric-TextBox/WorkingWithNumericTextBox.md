@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | SfNumericTextBox | WindowsForms | Syncfusion 
-description: This section provides the information about the events in SfNumericTextBox
+title: Working with NumericTextBox in Windows Forms Numeric TextBox control | Syncfusion
+description: Learn about Working with NumericTextBox support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Working with NumericTextBox
+# Working with NumericTextBox in Windows Forms Numeric TextBox (SfNumericTextBox)
 
 ## ValueChanged Event
 
