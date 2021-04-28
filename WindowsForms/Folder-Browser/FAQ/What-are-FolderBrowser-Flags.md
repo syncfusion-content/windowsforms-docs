@@ -7,11 +7,11 @@ control: Tools
 documentation: ug
 ---
 
-# What are folder browser flags in Windows Forms Folder Browser
+# Folder browser flags in Windows Forms Folder Browser
 
 This page explains about What are folder browser flags in Windows Forms Folder Browser and more details.
 
-## Folder browser flags in Windows Forms Folder Browser
+## What are folder browser flags in Windows Forms Folder Browser
 
 Flags can be used to set various styles for the FolderBrowser Dialog. Each style has it's own behavior and these styles can be added or removed to get the desired style for the FolderBrowser Dialog.
 
