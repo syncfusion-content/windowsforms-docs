@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drawing-Tool | Windows Forms | Syncfusion
-description: Drawing Tool
+title: Drawing Tool in Windows Forms Diagram control | Syncfusion
+description: Learn about Drawing Tool support in Syncfusion Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Drawing Tool
+# Drawing Tool in Windows Forms Diagram
 
 Diagram control now provides a drawing tool to draw different types of connectors dynamically and connector types are listed below.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started of Diagram Control | Windows Forms | Syncfusion
-description: This section explains how to add the DiagramControl in an application and some of the basic functionalities of it.
+title: Getting Started with Windows Forms Diagram control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Diagram control, its elements, and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Diagram
 
 This section helps you understand and quickly get started using Essential Diagram in your Windows Forms applications. Control appearance and structure are defined, and the relevant classes are depicted.
 

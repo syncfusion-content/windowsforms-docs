@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion for GradientLabel for WindowsForms
-description: GradientLabel control provides an easy way to display labels with attractive shades and backgrounds.
+title: About Windows Forms Gradient Label control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Gradient Label control, its elements, and more details.
 platform: WindowsForms
 control: GradientLabel
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Gradient Label Overview
 
 The GradientLabel class provides a way to create fancy and appealing labels in your forms.
 

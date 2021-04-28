@@ -1,17 +1,21 @@
 ---
 layout: post
-title: How To Draw Custom Handles For Nodes Using the Cus | Diagram | Windows Forms | Syncfusion
-description: how to draw custom handles for nodes using the customhandlerenderer property
+title: Custom Handles For Nodes Using the Custom Diagram | Syncfusion
+description: how to draw custom handles for nodes using the customhandlerenderer property in Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-# How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property
+# Custom Handles For Nodes Using the Custom Diagram
+
+This page explains about How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property and more details.
+
+## How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property
 
 Syncfusion Diagram provides users with the facility to draw their own handles for nodes using the CustomHandleRenderer property which is available in the View class. This property accepts the instances of the UserHandleRenderer class which acts as a base class for the custom Handle Renderer. By using this class, we can derive a class to create our own Handle Renderer and assign it to the View.CustomHandleRenderer property. If this property is assigned as 'Null', it will render the default style of the Handle.
 
-![](How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_images/How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img1.jpeg)
+![How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img1](How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_images/How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img1.jpeg)
 
 Default Appearance
 {:.captiontext }
@@ -316,7 +320,7 @@ End Class
 {% endtabs %}
 
 
-![](How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_images/How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img2.jpeg)
+![How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img2](How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_images/How-To-Draw-Custom-Handles-For-Nodes-Using-the-Cus_img2.jpeg)
 
 Customized Appearance
 {:.captiontext }

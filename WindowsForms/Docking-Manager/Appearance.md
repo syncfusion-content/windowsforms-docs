@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of DockingManager | Windows Forms | Syncfusion
-description: This section explains about customizing the appearance of docking child window and various styles available in DockingManager
+title: Appearance in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# Appearance 
+# Appearance in Windows Forms Docking Manager
 
 The UI for dock, float, and auto hide windows of the docking manager can be changed using different styles. You can customize the appearance of docked, float, tabbed, and auto hide window in the docking manager.
 

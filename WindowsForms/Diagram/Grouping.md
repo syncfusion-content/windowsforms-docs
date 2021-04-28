@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping | Windows Forms | Syncfusion
-description: This section explains about how to use essential Diagram control Grouping functionality and its behavior
+title: Grouping in Windows Forms Diagram control | Syncfusion
+description: Learn about Grouping support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Grouping
+# Grouping in Windows Forms Diagram
 
 A group is a node that acts as a transparent container for other nodes. A group is a composite node that controls a set of child nodes. The bounding rectangle of a group is the union of the bounds of its children. The group renders itself by iterating through its children and rendering them. Child nodes cannot be selected or manipulated individually. Members of the group are added and removed through the ICompositeNode interface.
 

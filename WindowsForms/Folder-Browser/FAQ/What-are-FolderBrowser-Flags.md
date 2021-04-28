@@ -1,13 +1,17 @@
 ---
 layout: post
-title: What are FolderBrowser Flags | WindowsForms | Syncfusion
-description: what are folderbrowser flags
+title: Folderbrowser flags in Windows Forms Folder Browser | Syncfusion
+description: Learn about What are folderbrowser flags support in Syncfusion Windows Forms Folder Browser control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# What are FolderBrowser flags?
+# Folder browser flags in Windows Forms Folder Browser
+
+This page explains about What are folder browser flags in Windows Forms Folder Browser and more details.
+
+## What are folder browser flags in Windows Forms Folder Browser
 
 Flags can be used to set various styles for the FolderBrowser Dialog. Each style has it's own behavior and these styles can be added or removed to get the desired style for the FolderBrowser Dialog.
 

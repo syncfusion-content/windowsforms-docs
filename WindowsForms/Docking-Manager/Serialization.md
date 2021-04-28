@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State-Persistence | WindowsForms | Syncfusion
-description: This section explains about how to serialize and de-serialize the dock state in different available formats
+title: Serialization in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Serialization support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# State Persistence 
+# Serialization in Windows Forms Docking Manager
 
 State persistence is the combined process of serialization and deserialization. Docking manager provides built-in state persistence functionality to save and load the layout. Layout of the dock panels hold the state, side, position, and visibility of each child. This layout information can be stored in isolated storage, an XML, or binary file.  
 

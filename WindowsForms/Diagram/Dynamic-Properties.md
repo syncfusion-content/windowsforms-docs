@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamic-Properties | Windows Forms | Syncfusion
-description: Dynamic Properties
+title: Dynamic Properties in Windows Forms Diagram control | Syncfusion
+description: Learn about Dynamic Properties support in Syncfusion Windows Forms Diagram control and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Dynamic Properties
+# Dynamic Properties in Windows Forms Diagram
 
 This feature lets the user add additional properties or data to the nodes and connectors. Any type of data can be added as additional data or properties.
 
@@ -58,6 +58,6 @@ node.PropertyBag.Add("Designation", employee.Designation)
 {% endhighlight %}
 {% endtabs %}
 
-![](Dynamic-Properties_images/Dynamic-Properties_img1.png)
+![Dynamic-Properties_img1](Dynamic-Properties_images/Dynamic-Properties_img1.png)
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Floating-Window | WindowsForms | Syncfusion
-description: This section explains the Floating functionalities in DockingManager
+title: Floating Window in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Floating Window support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
-# Floating Window
+# Floating Window in Windows Forms Docking Manager
 
 DockPanels can be floated by clicking and dragging the the panel header using mouse interaction. Floating window can be dragged over any place in the screen. Docking hints will be displayed while dragging the floating window over the docking manager or any other dock panels.
 
@@ -90,7 +90,7 @@ Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, 
 
 {% endtabs %}
 
-![](Float_Window_images/Float_Window_img1.png)
+![Float_Window_img1](Float_Window_images/Float_Window_img1.png)
 
 ## Float by user interaction
 
@@ -254,7 +254,7 @@ Me.dockingManager1.SetOuterDockAbility(panel1, Syncfusion.Windows.Forms.Tools.Do
 
 {% endtabs %}
 
-![](Float_Window_images/Float_Window_img2.png)
+![Float_Window_img2](Float_Window_images/Float_Window_img2.png)
 
 ## Show custom buttons in float window
 
@@ -277,7 +277,7 @@ me.dockingManager1.ShowCustomButtonsInFloating = True
 
 {% endtabs %}
 
-![](Float_Window_images/CustomCaptionButton.png) 
+![CustomCaptionButton](Float_Window_images/CustomCaptionButton.png) 
 
 N> This feature is not applicable for VS2005 (default) Visual Style.
 
@@ -302,7 +302,7 @@ Me.dockingManager1.MetroBorderWidth = 4
 
 {% endtabs %}
 
-![](Float_Window_images/Float_Window_img3.png)
+![Float_Window_img3](Float_Window_images/Float_Window_img3.png)
 
 ## Change float window location
 
@@ -337,7 +337,7 @@ Me.dockingManager1.FloatControl(Me.panel3, New Rectangle(rectangle.Right - 300, 
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![GettingStarted_img3](GettingStarted_images/GettingStarted_img3.jpeg)
 
 ## Listen to keyboard events
 

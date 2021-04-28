@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Zoom-and-Pan | Windows Forms | Syncfusion
-description: This section explains about how to interact the Diagram Zooming/Panning commands and its functionalities.
+title: Zoom-And-Pan in Windows Forms Diagram control | Syncfusion
+description: Learn about Zoom-And-Pan support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Zoom and Pan
+# Zoom-And-Pan in Windows Forms Diagram
 
 ## Zooming Support
 

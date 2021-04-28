@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Windows Form | Syncfusion
-description: Learn about localization support to customize the default strings in Syncfusion WinForms Form (SfForm) control and more details.
+title: Localization in Windows Forms Form control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms Form (SfForm) control and more details.
 platform: windowsforms
 control: SfForm
 documentation: ug
 ---
 
-# Localization in Windows Forms Form (SfForm) 
+# Localization in Windows Forms Form (SfForm)
 Localization is the process of translating the application resources into different language for the specific cultures. The SfForm can be localized by adding [resource](https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture ](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture(v=vs.110).aspx)before `InitializeComponent` method.
 
 ## Localize at Sample Level
