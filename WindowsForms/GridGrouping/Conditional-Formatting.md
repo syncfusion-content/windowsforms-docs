@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting for Syncfusion Essential WindowsForms
-description: This section explains on how to change the appearance of the records using conditional formatting in GridGroupingControl.
+title: Conditional Formatting in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Conditional Formatting support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Conditional Formatting
+# Conditional Formatting in Windows Forms GridGrouping (GridGroupingControl)
 GridGroupingControl provides built-in support for Conditional Formatting. It is used to format grid cells based on a certain conditions. The conditional formatting can be added to the GridGroupingControl by defining the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). This descriptor is used to specify the filter criteria for the cells and the style to be applied for filtered cells.  
 
 The following steps are used to add the conditional formatting through the editor,
@@ -77,7 +77,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format2)
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Formatting_images/Conditional-Formatting_img6.png)
+![Conditional-Formatting_img6](Conditional-Formatting_images/Conditional-Formatting_img6.png)
 
 N> The conditional formatting is implemented in the following dashboard sample,
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting Demo
@@ -120,7 +120,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalFormat
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Formatting_images/Conditional-Formatting_img7.png)
+![Conditional-Formatting_img7](Conditional-Formatting_images/Conditional-Formatting_img7.png)
 
 ## Formatting Based on Checkbox Value
 The back color of the record can be changed dynamically based on the checkbox value of the particular column. The following code snippet is demonstrates how to add the filter criteria for check box column,
@@ -156,7 +156,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(format1)
 
 After applying the conditional formatting the color will be changed for the records which are checked in the check box field.
 
-![](Conditional-Formatting_images/Conditional-Formatting_img8.png)
+![Conditional-Formatting_img8](Conditional-Formatting_images/Conditional-Formatting_img8.png)
 
 ## Dynamic Formatting
 The cells can be formatted dynamically based on the given condition by using the [QueryCellStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) event. The appearance of the cells can be changed dynamically by using this formatting.
@@ -184,33 +184,33 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Conditional-Formatting_images/Conditional-Formatting_img9.png)
+![Conditional-Formatting_img9](Conditional-Formatting_images/Conditional-Formatting_img9.png)
 
 ## Data Bar
 Data bar is an Excel Inspired Data bar which is used to visualize the negative and positive values of the column in a different range of colors. The data bars will be drawn based on the criteria given in the expression of the [ConditionalFormats](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_ConditionalFormats).
 
-![](Data-Bar_images/Data-Bar_img1.png)
+![Data-Bar_img1](Data-Bar_images/Data-Bar_img1.png)
 
 The following steps can be followed to add the data bar through the editor,
 1.Navigate the Property window of GridGroupingControl to the **TableDescriptor** -> **ConditionalFormats** and click the browse button to open the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) collection editor.
 
-![](Data-Bar_images/Data-Bar_img2.png)
+![Data-Bar_img2](Data-Bar_images/Data-Bar_img2.png)
 
 2.In the `GridConditionalFormatDescriptor` Collection Editor, any expression can be added to the `Expression` field for drawing the data bars within that criteria. (Ex: [UnitPrice] < ‘80’) With this expression, no data bar will be drawn in the record if the cell value of the `UnitPrice` column will be greater than `80`.
 
 Then, Navigate into the `GridConditionalFormatDescriptor` collection editor window and select the [Rules](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridConditionalFormatDescriptor_Rules) property to open the Rule Collection Editor window.  
 
-![](Data-Bar_images/Data-Bar_img3.png)
+![Data-Bar_img3](Data-Bar_images/Data-Bar_img3.png)
 
 N> Data bar can also be drawn without expression.
 
 3.Choose the rule type as `DataBar` and click `Add` button, it will add a new[ConditionalFormatDataBarRule](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html) to the [ConditionalFormatRuleBaseCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatRuleBaseCollection.html). Set the column name and style for data bar rule.
 
-![](Data-Bar_images/Data-Bar_img4.png)
+![Data-Bar_img4](Data-Bar_images/Data-Bar_img4.png)
 
 Click the `OK` button to add the `ConditionalFormatDataBarRule` to the conditional format collection. And, the data bar for the `Unit Price` column will be displayed as follows,
 
-![](Data-Bar_images/Data-Bar_img5.png)
+![Data-Bar_img5](Data-Bar_images/Data-Bar_img5.png)
 
 ### Programmatically Adding Data bar
 The data bar rule can be added programmatically by defining `ConditionalFormatDataBarRule` and assigning it to the `GridConditionalFormatDescriptor`. 
@@ -250,7 +250,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(conditionalDescri
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img6.png)
+![Data-Bar_img6](Data-Bar_images/Data-Bar_img6.png)
 
 ### Calculating Minimum and Maximum values
 The length of the data bar will be drawn based on the minimum and maximum value of the column. These minimum and maximum values can be calculated automatically if the [ConditionalFormatDataBarRule.AutoCalculateMinMax](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html#Syncfusion_Windows_Forms_Grid_Grouping_ConditionalFormatDataBarRule_AutoCalculateMinMax) is set to `true`. This is the default value.
@@ -282,7 +282,7 @@ dataBarRule.Minimum = -10
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img7.png)
+![Data-Bar_img7](Data-Bar_images/Data-Bar_img7.png)
 
 ### Default Colors of Positive and Negative bars
 If no colors assigned for positive and negative bars, it will take the below default color values. 
@@ -319,7 +319,7 @@ dataBarRule.NegativeBar.GradientFillColor2 = Color.FromArgb(255, 255, 255)
 dataBarRule.NegativeBar.BorderColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
-![](Data-Bar_images/Data-Bar_img8.png)
+![Data-Bar_img8](Data-Bar_images/Data-Bar_img8.png)
 
 ### Setting Positive and Negative bar Colors
 The border color, fill color and fill style can be changed for positive and negative bars. The fill style can be `Solid` or `Gradient`.
@@ -372,7 +372,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescri
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img9.png)
+![Data-Bar_img9](Data-Bar_images/Data-Bar_img9.png)
 
 #### Applying Gradient Fill Colors
 Choose `FillStyle` as `Gradient` to apply gradient colors for both positive and negative bars.
@@ -426,7 +426,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(ConditionalDescri
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img10.png)
+![Data-Bar_img10](Data-Bar_images/Data-Bar_img10.png)
 
 ### Filling Negative bar Color as Same as Positive bar
 When the [ConditionalFormatDataBarRule.FillNegativeColorAsPositive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html#Syncfusion_Windows_Forms_Grid_Grouping_ConditionalFormatDataBarRule_FillNegativeColorSameAsPositive) is enabled, then the positive bar `FillStyle`, `SolidFillColor`, `GradientColors`, `BorderColor` are copied to negative bar.
@@ -441,7 +441,7 @@ dataBarRule.FillNegativeColorSameAsPositive = true;
 dataBarRule.FillNegativeColorSameAsPositive = True
 {% endhighlight %}
 {% endtabs %}
-![](Data-Bar_images/Data-Bar_img11.png)
+![Data-Bar_img11](Data-Bar_images/Data-Bar_img11.png)
 
 ### Disabling Axis
 The axis between positive and negative bars can be disabled or enabled by using [ConditionalFormatDataBarRule.AxisPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html#Syncfusion_Windows_Forms_Grid_Grouping_ConditionalFormatDataBarRule_AxisPosition) property.
@@ -460,7 +460,7 @@ dataBarRule.AxisPosition = AxisPosition.None;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img12.png)
+![Data-Bar_img12](Data-Bar_images/Data-Bar_img12.png)
 
 ### Applying Axis Color
 Axis color can be changed by using [ConditionalFormatDataBarRule.AxisColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html#Syncfusion_Windows_Forms_Grid_Grouping_ConditionalFormatDataBarRule_AxisColor) property. Default color is `Black`.
@@ -476,7 +476,7 @@ conditionDataBarRule1.AxisColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Bar_images/Data-Bar_img14.png)
+![Data-Bar_img14](Data-Bar_images/Data-Bar_img14.png)
 
 ### Getting Rule through Column Name
 The rule applied for the specific column can be retrieved by using the [GridConditionalFormatDescriptor.GetRule](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridConditionalFormatDescriptor_GetRule_System_String_) method.
@@ -529,7 +529,7 @@ Me.gridGroupingControl1.TableDescriptor.ConditionalFormats.Add(gridConditionalFo
 {% endtabs %}
 Data bar is drawn based on the expression `[UnitPrice] > '0' AND [UnitPrice] < '70'`
 
-![](Data-Bar_images/Data-Bar_img13.png)
+![Data-Bar_img13](Data-Bar_images/Data-Bar_img13.png)
 
 ### Removing Data Bar
 Data Bar can be cleared by removing `ConditionalFormatDataBarRule` objects from `ConditionalFormatRuleBaseCollection`.

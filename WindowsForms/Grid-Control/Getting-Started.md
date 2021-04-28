@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Grid control | Syncfusion
-description: This section explains on how to add a GridControl in an application and some of the basic functionalities of it.
+title: Getting Started with Windows Forms Grid Control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Grid Control, its elements, and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 
 ---
-# Getting Started with Windows Forms GridControl
+# Getting Started with Windows Forms Grid Control
 
 This section will explain about creating simple GridControl and the overview of its basic functionalities.
 

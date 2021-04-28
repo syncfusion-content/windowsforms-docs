@@ -1,17 +1,17 @@
 ---
 layout: post
-title: ToolTip of GridControl for Syncfusion Essential WindowsForms
-description: The ToolTip of GridControl is explained in the following topic.
+title: ToolTip in Windows Forms Grid Control control | Syncfusion
+description: Learn about ToolTip support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in Windows Forms Grid Control
 
 ToolTip can be added to the individual cells. This allows a user to show more information about the particular cell on mouse hover.
 
-![](ToolTip_images/ToolTip_img1.png)
+![ToolTip_img1](ToolTip_images/ToolTip_img1.png)
 
 
 ## Adding ToolTip
@@ -29,7 +29,7 @@ Me.gridControl1(2, 2).CellTipText = "Hello"
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img2.png)
+![ToolTip_img2](ToolTip_images/ToolTip_img2.png)
 
 
 ### Adding ToolTip to Column
@@ -47,7 +47,7 @@ Me.gridControl1.ColStyles(1).CellTipText = "Hello"
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img3.png)
+![ToolTip_img3](ToolTip_images/ToolTip_img3.png)
 
 
 ### Adding ToolTip to Row
@@ -65,7 +65,7 @@ Me.gridControl1.RowStyles(2).CellTipText = "Hello"
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img4.png)
+![ToolTip_img4](ToolTip_images/ToolTip_img4.png)
 
 
 ### Adding ToolTip using QueryCellInfo Event
@@ -114,7 +114,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img5.png)
+![ToolTip_img5](ToolTip_images/ToolTip_img5.png)
 
 N> The ToolTip will not be enabled for a cell if the `CellTipText` property of the cell is empty.
 
@@ -265,7 +265,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img6.png)
+![ToolTip_img6](ToolTip_images/ToolTip_img6.png)
 
 
 ## Disabling the ToolTip for particular cell
@@ -334,6 +334,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img7.png)
+![ToolTip_img7](ToolTip_images/ToolTip_img7.png)
 
 

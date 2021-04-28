@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Comment Tip in GridGroupingControl for Syncfusion Essential Windows Forms 
-description: This sections explains about how to add Excel-like comment tip to the GridGroupingControl.
+title: Comment Tip in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Comment Tip support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Comment Tip 
+# Comment Tip in Windows Forms GridGrouping (GridGroupingControl)
 The Excel-like comment tip can be added to the individual cells. This allows a user to show more information about the particular cell on mouse hover. 
 A user can customize an appearance of the comment tip window and comment indicator of the individual cells. The user can also add the images to the comment tip window.
 
-![](CommentTip_images/CommentTip_img1.png)
+![CommentTip_img1](CommentTip_images/CommentTip_img1.png)
 
 ## Adding comment tip
 The `CommentTip` property provides the various options to customize the comment tip of the cells. The comment tip can be added to the particular cell by setting the `CommentText` property in the `QueryCellStyleInfo` event. The comment text will be displayed in the comment tip window.
@@ -50,7 +50,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img2.png)
+![CommentTip_img2](CommentTip_images/CommentTip_img2.png)
 
 ### Adding image to comment tip
 The comment tip for the cells can also be added by setting the `CommentImage` property. The given image will be displayed as the comment tip for the cells.
@@ -83,7 +83,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img3.png)
+![CommentTip_img3](CommentTip_images/CommentTip_img3.png)
 
 N> The comment tip can be added to the particular cell by either setting the `CommentText` property or `CommentImage` property.
 
@@ -101,7 +101,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName").Appearance.AnyReco
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img4.png)
+![CommentTip_img4](CommentTip_images/CommentTip_img4.png)
 
 ### Adding comment tip to nested table
 The comment tip can be added for the nested tables by getting the table descriptor using the [GetTableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GetTableDescriptor_System_String_) method and setting the `CommentTip.CommentText` to the column that you want. 
@@ -117,7 +117,7 @@ Me.gridGroupingControl1.GetTableDescriptor("Orders").Columns("Freight").Appearan
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img15.png)
+![CommentTip_img15](CommentTip_images/CommentTip_img15.png)
 
 N> The comment tip events for the nested table can be accessed by getting the specific nested table's table control using the [GetTableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GetTableControl_System_String_) method.
 
@@ -152,7 +152,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName").Appearance.AnyReco
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img5.png)
+![CommentTip_img5](CommentTip_images/CommentTip_img5.png)
 
 ### Comment arrow
 The size and color of the comment arrow can be customized by using the `CommentArrowSize` and `CommentArrowColor` property. 
@@ -169,7 +169,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ColumnName").Appearance.AnyReco
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img6.png)
+![CommentTip_img6](CommentTip_images/CommentTip_img6.png)
 
 ### Hiding the comment arrow
 The comment arrow can be hidden by setting the width of the `CommentArrowSize` property to zero. 
@@ -186,7 +186,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("FirstName").Appearance.AnyRecor
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img7.png)
+![CommentTip_img7](CommentTip_images/CommentTip_img7.png)
 
 N> If the height of the `CommentArrowSize` is set to zero, the comment arrow will be hidden and the comment tip window will be shown near to the top-right corner of a cell.
 
@@ -230,7 +230,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img8.png)
+![CommentTip_img8](CommentTip_images/CommentTip_img8.png)
 
 ## Events
 The following events are used to customize an appearance of the comment tip,
@@ -328,7 +328,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img9.png)
+![CommentTip_img9](CommentTip_images/CommentTip_img9.png)
 
 ### Changing the shape of the comment indicator
 By default, the comment indicator will be drawn in a triangle shape at the top right corner of the cell. The default shape of the comment indicator can be changed by using the `DrawCommentIndicator` event. 
@@ -363,7 +363,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img10.png)
+![CommentTip_img10](CommentTip_images/CommentTip_img10.png)
 
 ### Disabling the comment indicator 
 The `DrawCommentIndicator` event is used to avoid displaying the comment indicator by setting the `e.Cancel` to true.
@@ -388,7 +388,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img11.png)
+![CommentTip_img11](CommentTip_images/CommentTip_img11.png)
 
 ### Disabling the comment tip window 
 The displaying of comment tip window on mouse hover at the comment tip cell can be restricted by canceling the `CommentTipShowing` event.
@@ -438,7 +438,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img12.png)
+![CommentTip_img12](CommentTip_images/CommentTip_img12.png)
 
 ### Setting custom comment text 
 The text displayed on the comment tip window can be customized by using the `CommentTipShowing` event.
@@ -461,7 +461,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img13.png)
+![CommentTip_img13](CommentTip_images/CommentTip_img13.png)
 
 ## Highlighting the comment tip cell
 To highlight the cells or customize the cells if that cell has comment tip, check whether the `CommentText` and `CommentImage` properties are changed in the `PrepareViewStyleInfo` event. 
@@ -495,5 +495,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CommentTip_images/CommentTip_img14.png)
+![CommentTip_img14](CommentTip_images/CommentTip_img14.png)
 

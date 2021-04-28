@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to localize the GridControl.
+title: Localization in Windows Forms Grid Control control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Localization
+# Localization in Windows Forms Grid Control
 
 Localization support allows to set the content according to the language or culture of a specific country or region. 
 
@@ -91,7 +91,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Localization_images/Localization_img1.png)
+![Localization_img1](Localization_images/Localization_img1.png)
 
 ## Satellite Assemblies 
 
@@ -113,11 +113,11 @@ The following steps illustrate on creating a Satellite Assembly:
 Resgen Text_file.txt Resource_File.resources
 {% endhighlight %}
 
-![](Localization_images/Localization_img2.png)
+![Localization_img2](Localization_images/Localization_img2.png)
 
 2.By using the [Resource Editor](https://msdn.microsoft.com/en-us/library/feh4ww6k.aspx), open the resource file that is been created. It provides a graphic interface that allows to construct resource files containing bitmaps, icons, and strings. 
 
-![](Localization_images/Localization_img3.png)
+![Localization_img3](Localization_images/Localization_img3.png)
 
 3.After opening the resource file in the Resource Editor, start entering the equivalent strings for the required culture.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selections | Windows Forms | Syncfusion
-description: selections
+title: Selections in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Selections support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Selections
+# Selections in Windows Forms GridGrouping (GridGroupingControl)
 
 There are two type of selection architectures in a Grid Grouping control. One is designed specifically for Grid Grouping control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. 
 
@@ -881,7 +881,7 @@ Next range
 
 3.Here is a sample screenshot.
 
-![](Selections_images/Selections_img21.jpeg)
+![Selections_img21](Selections_images/Selections_img21.jpeg)
 
 
 ## Excel like Selection Frame
@@ -907,7 +907,7 @@ Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img1.png)
+![DataGrid_img1](Selections_images/DataGrid_img1.png)
 
 ### Setting the 2003 Excel like selection frame
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
@@ -921,7 +921,7 @@ this.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFra
 Me.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img2.png)
+![DataGrid_img2](Selections_images/DataGrid_img2.png)
 
 ### Changing the Selection Border Brush
 The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderBrush) property.
@@ -935,7 +935,7 @@ this.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = new SolidBru
 Me.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img3.png)
+![DataGrid_img3](Selections_images/DataGrid_img3.png)
 
 ### Changing the Selection Border Thickness
 The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderThickness) property.
@@ -949,4 +949,4 @@ this.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4;
 Me.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img4.png)
+![DataGrid_img4](Selections_images/DataGrid_img4.png)

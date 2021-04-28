@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started with Windows Forms Grouping Control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Grouping control, its elements, and more.
+title: Getting Started with Windows Forms Grouping control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Grouping control, its elements, and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
@@ -21,7 +21,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-   ![WindowsForms Grouping Getting-Started Image1](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -41,7 +41,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-   ![WindowsForms Grouping Getting-Started Image2](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -55,7 +55,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-   ![WindowsForms Grouping Getting-Started Image3](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer Windows / WPF topic for detailed info.

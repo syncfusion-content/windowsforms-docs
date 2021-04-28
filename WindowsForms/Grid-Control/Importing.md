@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Importing of GridControl for Syncfusion Essential Windows Forms
-description: This section explains the importing functionalities of the GridControl
+title: Importing in Windows Forms Grid Control control | Syncfusion
+description: Learn about Importing support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Importing
+# Importing in Windows Forms Grid Control
 The [GridExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to GridControl. 
 
 The following assembly files should be added to the application reference folder,
@@ -45,7 +45,7 @@ Dim excelConverter As New GridExcelConverterControl()
 excelConverter.ExcelToGrid("Sample.xls", Me.gridControl1.Model)
 {% endhighlight %}
 {% endtabs %}
-![](Importing_images/Importing_img1.jpeg)
+![Importing_img1](Importing_images/Importing_img1.jpeg)
 
 ## Customization using Events
 The `GridExcelConverterControl` provides support to customize the grid content styles while exporting to Excel. This class provides the following event,
@@ -113,7 +113,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Importing_images/Importing_img2.jpeg)
+![Importing_img2](Importing_images/Importing_img2.jpeg)
 
 ## Virtual Importing
 To increase the performance of importing, the data of GridControl can be imported virtually (On-Demand mode) from the Excel sheet. This technique is the efficient way to import the Excel sheet to GridControl when it is needed. 
@@ -217,7 +217,7 @@ void gridModel_SaveCellInfo(Object sender, GridSaveCellInfoEventArgs e)
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Importing_images/Importing_img3.jpeg)
+![Importing_img3](Importing_images/Importing_img3.jpeg)
 
 N> Please refer to the following dashboard sample for more details about Virtual importing.
 N> &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\[Version_No]\Windows\Grid.Windows\Samples\Importing\Virtual Importing\CS

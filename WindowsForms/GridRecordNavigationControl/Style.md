@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | Windows Forms | Syncfusion
-description: style
+title: Style in Windows Forms GridRecordNavigationControl control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms GridRecordNavigationControl control and more details.
 platform: windowsforms
 control: GridRecordNavigation
 documentation: ug
 ---
 
-# Style
+# Style in Windows Forms GridRecordNavigationControl
 
 The RecordNavigationControl supports Visual Styles like Default, Metro, and Office2016 by using the Style property. 
 
@@ -20,7 +20,7 @@ Me.recordNavigationControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 {% endhighlight  %}
 {% endtabs %}
 
-![](Style_images/Style_img1.png) 
+![Style_img1](Style_images/Style_img1.png) 
 
 {% tabs %}
 {% highlight c# %}
@@ -41,4 +41,4 @@ Me.recordNavigationControl1.Office2016ScrollBarsColorScheme = ScrollBarOffice201
 {% endhighlight  %}
 {% endtabs %}
 
-![](Style_images/Style_img2.png) 
+![Style_img2](Style_images/Style_img2.png) 

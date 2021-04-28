@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Delete Collection of Records in GridGroupingControl | Windows Forms | Syncfusion
-description: Delete Collection of Records in GridGroupingControl
+title: Delete Collection of Records in GridGroupingControl in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Delete Collection of Records in GridGroupingControl support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
-# Delete Collection of Records in GridGroupingControl
+# Delete Collection of Records in GridGroupingControl in Windows Forms GridGrouping (GridGroupingControl)
 
 
 

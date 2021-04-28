@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling of GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to enable scrolling and custom scrollbars in GridControl.
+title: Scrolling in Windows Forms Grid Control control | Syncfusion
+description: Learn about Scrolling support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Scrolling
+# Scrolling in Windows Forms Grid Control
 GridControl has provide the built in support for scrolling. This section will explain about types of scrolling and different types of scrollbars available for GridControl.
 
 ## Enable Auto Scrolling 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formula Support for Syncfusion Essential WindowsForms
-description: This section explains the list of formulas available in GridControl.
+title: Formula Support in Windows Forms Grid Control control | Syncfusion
+description: Learn about Formula Support support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: Grid
 documentation: ug
 ---
 
-# Formula Support
+# Formula Support in Windows Forms Grid Control
 Setting cell type of a cell to **FormulaCell** will allow to enter algebraic expressions using formulas and cell references. Formula cells can be used for every cell in a grid or just for a few cells. If the cell value starts with an equal sign, then the cell is considered as a formula cell and its contents are treated as such.
 {% tabs %}
 {% highlight c# %}
@@ -5027,7 +5027,7 @@ Me.gridControl1(4, 1).Text = "Salary2"
 Me.gridControl1(4, 2).Text = "1,500"
 {% endhighlight %}
 {% endtabs %}
-![](Formula-Support_images/Formula-Support_img_1.jpg)
+![Formula-Support_img_1](Formula-Support_images/Formula-Support_img_1.jpg)
 
 Now compute the values for the `grid2` by using the values in the `grid1` by using the below code.
 {% tabs %}
@@ -5081,7 +5081,7 @@ Me.gridControl2(5, 3).Text = "=" & Me.gridControl1.Text & "!C3 + C4"
 {% endhighlight %}
 {% endtabs %}
 
-![](Formula-Support_images/Formula-Support_img1_2.png)
+![Formula-Support_img1_2](Formula-Support_images/Formula-Support_img1_2.png)
 
 
 ## Named Ranges
@@ -5106,13 +5106,13 @@ Me.gridControl1(3, 3).CellType = GridCellTypeName.FormulaCell
 
 After using the above code, the formula `A1:A3` can be accessed in anywhere in a formula cell by just using the text `Total`.
 
-![](Formula-Support_images/Formula-Support_img1_3.png)
+![Formula-Support_img1_3](Formula-Support_images/Formula-Support_img1_3.png)
 
-![](Formula-Support_images/Formula-Support_img1_4.png)
+![Formula-Support_img1_4](Formula-Support_images/Formula-Support_img1_4.png)
 
 N> The following sample illustrates the use of Cross Sheet References and Named Ranges with Grid Formula Engine.  &lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Formula Support\Named Range Demo
 
-![](Formula-Support_images/Formula-Support_img1_5.png)
+![Formula-Support_img1_5](Formula-Support_images/Formula-Support_img1_5.png)
 
 ### Named Range Collection Editor
 GridControl provides **Named Range Collection Editor**, in which it is possible to edit the named ranges. To display the **Named Range Collection Editor** make use of the method.
@@ -5127,11 +5127,11 @@ GridFormulaNamedRangesEditHelper.ShowNamedRangesDialog(cellModel.Engine)
 {% endhighlight %}
 {% endtabs %}
 
-![](Formula-Support_images/Formula-Support_img76.jpg)
+![Formula-Support_img76](Formula-Support_images/Formula-Support_img76.jpg)
 
 In the dialog box all the named range members will be displayed in the left pane and their corresponding properties in the right pane. Previously a named range `Total` has been added and hence the named range dialog box shows the value `Total` by default. It is possible to add or remove the existing or custom ranges using this **Named Range Collection Editor**.
 
-![](Formula-Support_images/Formula-Support_img77.jpg)
+![Formula-Support_img77](Formula-Support_images/Formula-Support_img77.jpg)
 
 It is possible to edit the title of this editor by handling [ShowingNamedRangesDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaNamedRangesEditHelper.html) event.
 {% tabs %}
@@ -5165,4 +5165,4 @@ Private Sub GridFormulaNamedRangesEditHelper_ShowingNamedRangesDialog(ByVal send
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Formula-Support_images/Formula-Support_img78.jpg)
+![Formula-Support_img78](Formula-Support_images/Formula-Support_img78.jpg)

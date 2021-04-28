@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Class Structure for Syncfusion Essential WindowsForms
-description: This section explains the class structure of GridGroupingControl
+title: Class Structure in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Class Structure support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Class Structure
+# Class Structure in Windows Forms GridGrouping (GridGroupingControl)
 This walkthrough will explain the classes that are available in GridGroupingControl which plays a major role for the creation of GridGroupingControl.
 
 ## GridGroupingControl

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid-Helper-Classes | Windows Forms | Syncfusion
-description: grid helper classes
+title: Grid Helper Classes in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Grid Helper Classes support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grid Helper Classes
+# Grid Helper Classes in Windows Forms GridGrouping (GridGroupingControl)
 
 ## Resizing Heights of Individual Rows in Grid
 
@@ -255,7 +255,7 @@ The feature has multiple selections of values to filter.
 
 You can specify the value of the column that has to filter in the check box of tree view inside the drop down container.
 
-![](Grid-Helper-Classes_images/Grid-Helper-Classes_img11.jpeg) 
+![Grid-Helper-Classes_img11](Grid-Helper-Classes_images/Grid-Helper-Classes_img11.jpeg) 
 
 
 
@@ -384,7 +384,7 @@ The following screen shots show the list of available colors when FilerByColor p
 
 
 
-![](Grid-Helper-Classes_images/Grid-Helper-Classes_img14.png) 
+![Grid-Helper-Classes_img14](Grid-Helper-Classes_images/Grid-Helper-Classes_img14.png) 
 
 
 AllowResize

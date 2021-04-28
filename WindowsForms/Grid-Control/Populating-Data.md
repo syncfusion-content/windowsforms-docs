@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Data in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to populate data in GridControl
+title: Populating Data in Windows Forms Grid Control control | Syncfusion
+description: Learn about Populating Data support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 
 ---
-# Populating Data
+# Populating Data in Windows Forms Grid Control
 
 There are two ways to populate data into a GridControl. One way is to move the data directly into the GridControl and let the underlying grid manage the data. Another method is to use GridControl in a virtual mode whereby need to handle certain events to provide data to the grid whenever it is in demand.
 
@@ -51,7 +51,7 @@ Next row
 
 N> The Undo/Redo support of the grid needs to be turned off so that initial population of the grid cannot be undone. 
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img1.jpeg)
+![CellGrid_PopulatingData_img1](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img1.jpeg)
 
 
 ## PopulateValues Method
@@ -95,7 +95,7 @@ Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCoun
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img2.jpeg)
+![CellGrid_PopulatingData_img2](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img2.jpeg)
 
 
 ## Using Cell Style
@@ -108,15 +108,15 @@ The appearance of a cell can be changed and displayed using the [GridStyleInfo](
 
 To edit the cell styles in designer mode, the grid has to be selected in the designer mode and `Edit` option has to be clicked. This will allow the grid to be edited in the designer surface. Style settings also can be changed by using the `PropertyGrid` which is visible in the right side of the designer window.
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img3.jpeg)
+![CellGrid_PopulatingData_img3](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img3.jpeg)
 
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img4.jpeg)
+![CellGrid_PopulatingData_img4](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img4.jpeg)
 
 
 N> The values can be directly entered for the desired cells through the designer mode.
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img5.jpeg)
+![CellGrid_PopulatingData_img5](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img5.jpeg)
 
 
 For changing the appearance of the cells, the property grid in the right side can be used. In property grid there are two tabs mainly.
@@ -128,14 +128,14 @@ For changing the appearance of the cells, the property grid in the right side ca
 
 All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BackColor) property listed below the heading `Appearance` can be used and required color can be chosen.
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img6.jpeg)
+![CellGrid_PopulatingData_img6](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img6.jpeg)
 
 
 `Selected Range` tab consists of all the properties related to a particular cell or selected range of cells. The style and format related properties can be changed for the desired range of cells.
 
 All the style related changes will be displayed under the `StyleCategoryAppearance`. If font style of a particular range needs to be changed, the [Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Font) property listed under the `StyleCategoryAppearance` can be used and required color can be chosen.
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img7.jpeg)
+![CellGrid_PopulatingData_img7](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img7.jpeg)
 
 
 ### Modifying Cell Styles through Code
@@ -186,7 +186,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style)
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img8.jpeg)
+![CellGrid_PopulatingData_img8](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img8.jpeg)
 
 
 The styles of the whole grid, for a particular column and for a particular row can be changed by using the [TableStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridData.html#Syncfusion_Windows_Forms_Grid_GridData_TableStyle), [RowStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridData.html#Syncfusion_Windows_Forms_Grid_GridData_RowStyles) and [ColStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridData.html#Syncfusion_Windows_Forms_Grid_GridData_ColStyles) properties respectively. 
@@ -203,7 +203,7 @@ Me.gridControl1.TableStyle.BackColor = Color.MediumAquamarine
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img9.jpeg)
+![CellGrid_PopulatingData_img9](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img9.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -237,4 +237,4 @@ Me.gridControl1.ColStyles(3).CellValue = "Red"
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img10.jpeg)
+![CellGrid_PopulatingData_img10](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img10.jpeg)

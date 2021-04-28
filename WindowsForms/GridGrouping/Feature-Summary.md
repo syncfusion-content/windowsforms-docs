@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Feature-Summary | Windows Forms | Syncfusion
-description: feature summary
+title: Feature Summary in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Feature Summary support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Feature Summary
+# Feature Summary in Windows Forms GridGrouping (GridGroupingControl)
 
 Essential Grid Grouping control possesses advanced features such as Outlook style grouping and is highly optimized to handle large amount of data. This section lists various features of grid grouping control in brief.
 
@@ -86,7 +86,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Unbound Fields: Grid Grouping control can have unbound fields with custom values using which you can evaluate the field values at runtime similar to Expression Fields.
 
-![](Feature-Summary_images/Feature-Summary_img10.jpeg) 
+![Feature-Summary_img10](Feature-Summary_images/Feature-Summary_img10.jpeg) 
 
 
 
@@ -117,7 +117,7 @@ Essential Grid Grouping control possesses advanced features such as Outlook styl
 
 * Multi Row Record: With Grid Grouping control, you can make a single record to span across several rows.
 
-![](Feature-Summary_images/Feature-Summary_img14.jpeg)
+![Feature-Summary_img14](Feature-Summary_images/Feature-Summary_img14.jpeg)
 
 
 

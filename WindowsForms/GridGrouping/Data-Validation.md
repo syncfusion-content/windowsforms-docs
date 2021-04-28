@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Data Validation for Syncfusion Essential WindowsForms
-description: This section provides the information about the validation options for current cell in GridGroupingControl
+title: Data Validation in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Data Validation support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in Windows Forms GridGrouping (GridGroupingControl)
 The GridGroupingControl lets you define restrictions on what data can or should be entered in a cell. When an incorrect data is entered in the cell, it will display an error icon and an error message.  It is also possible to display error icon in row header.
 
 ## Built-in Validation
 The GridGroupingControl has the built-in support to throw the validation error message when the data is not valid for specific column. For example, if the string value is entered in the numeric value type column, it will throw the error message.
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
 
 The visibility of the error icon can be changed by setting the setting [ShowErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorIcon) and [ShowRowHeaderErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowRowHeaderErroricon) property.
 
@@ -36,7 +36,7 @@ Me.gridGroupingControl1.TableControl.ShowRowHeaderErroricon = True
 
 GridGroupingControl validates the cell based on the [CellValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValueType) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
 
 By default, the error provider will show a popup while the exception is occurred. When you want to disable this popup, set the [ShowErrorMessageBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorMessageBox) property to `false`.
 
@@ -54,7 +54,7 @@ this.gridGroupingControl1.TableControl.CurrentCell.ShowErrorMessageBox = false
 ### Error tips support
 The Error provider will also show the error message in the comment tips while moving the mouse over the error cell.
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
 
 N> When the error is occurred, the current cell will not leave from the edit mode. So that the grid will not allow to perform other actions like moving the current cells, clicking, etc. The <kbd>Esc</kbd> key is used to get out from the exception with the old value of the cell
 
@@ -111,7 +111,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
 
 ## Customizing Error Text 
 The validation error message can be changed by using the [ValidationErrorText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ValidationErrorText) property.
@@ -127,7 +127,7 @@ Me.gridGroupingControl1.TableControl.CurrentCell.ValidationErrorText = "The ente
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
 
 ## Events
 The GridGroupingControl has various events to customize the validation process for the cells. The validation can be handled by following events,

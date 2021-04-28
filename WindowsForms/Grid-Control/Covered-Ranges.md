@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Covered Ranges of GridControl for Syncfusion Essential WindowsForms
-description: This section explains covered ranges and its functionalities
+title: Covered Ranges in Windows Forms Grid Control control | Syncfusion
+description: Learn about Covered Ranges support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Covered Ranges
+# Covered Ranges in Windows Forms Grid Control
 The range of cells can be covered like Excel merging functionality. In this technique, range of cells which has different data or same data can be covered. The range of cells can be covered by adding the [GridRangeInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html) to the [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CoveredRanges) collection. The range can be cell, range of cells, table, row or column.
 
 The CoveredRanges will be maintained in the [GridModelCoveredRanges](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges.html) collection.
@@ -23,7 +23,7 @@ Me.gridControl1.Model.CoveredRanges.Add(GridRangeInfo.Cells(2, 2, 5, 5))
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img1.jpeg)
+![Covered-Ranges_img1](Covered-Ranges_images/Covered-Ranges_img1.jpeg)
 
 ## Adding CoveredRanges using Event
 The GridControl lets you define the `CoveredRanges` using [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event.  This event will be raised for all the cells and range can be set using[e.Range](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridQueryCoveredRangeEventArgs.html#Syncfusion_Windows_Forms_Grid_GridQueryCoveredRangeEventArgs_Range) property.
@@ -68,7 +68,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img2.jpeg)
+![Covered-Ranges_img2](Covered-Ranges_images/Covered-Ranges_img2.jpeg)
 
 ## Removing Particular Range from CoveredRanges
 To remove the particular covered range from the GridControl, [CoveredRanges.Remove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges.html#Syncfusion_Windows_Forms_Grid_GridModelCoveredRanges_Remove_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method can be used. 
@@ -111,7 +111,7 @@ MessageBox.Show("CoveredRange for cell(2,3) is " & coveredRange.Info.ToString() 
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img3.jpeg)
+![Covered-Ranges_img3](Covered-Ranges_images/Covered-Ranges_img3.jpeg)
 
 N> The `CoveredRange` of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 

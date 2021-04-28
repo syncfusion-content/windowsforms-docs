@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Background and Foreground Settings | WindowsForms | Syncfusion
-description: background and foreground settings
+title: Background and Foreground Settings in Windows Forms GradientPanelExt control | Syncfusion
+description: Learn about Background and Foreground Settings support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Background and Foreground Settings
+# Background and Foreground Settings in Windows Forms GradientPanelExt
 
 By setting the background properties, the user can create a GradientPanelExt according to his requirements. The properties and styles for the GradientPanelExt have been listed and discussed below.
 
@@ -14,7 +14,7 @@ By setting the background properties, the user can create a GradientPanelExt acc
 
 BackColor represents the background color used to display the text or the graphics in the control.
 
-![](GradientPanelExt_images/Overview_img382.jpeg)
+![Overview_img382](GradientPanelExt_images/Overview_img382.jpeg)
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ Private gradientPanelExt1.BackColor = System.Drawing.Color.Transparent
 {% endhighlight %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img383.jpeg)
+![Overview_img383](GradientPanelExt_images/Overview_img383.jpeg)
 
 The colors and styles of the GradientPanelExt control can be set using the BackgroundColor properties, which have been explained below:
 
@@ -71,7 +71,7 @@ BackgroundImage</td><td>
 Specifies the background image for the control.</td></tr>
 </table>
 
-![](GradientPanelExt_images/Overview_img384.jpeg)
+![Overview_img384](GradientPanelExt_images/Overview_img384.jpeg)
 
 Alternatively, the BackgroundColor for the control can also be set using the following code snippet.
 
@@ -93,7 +93,7 @@ System.Drawing.Color.Bisque, System.Drawing.Color.LightSalmon, System.Drawing.Co
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img385.jpeg)
+![Overview_img385](GradientPanelExt_images/Overview_img385.jpeg)
 
 ## Image Settings
 
@@ -115,7 +115,7 @@ Private Me.gradientPanelExt1.BackgroundImageLayout = System.Windows.Forms.ImageL
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img386.jpeg)
+![Overview_img386](GradientPanelExt_images/Overview_img386.jpeg)
 
 ## Foreground
 
@@ -137,4 +137,4 @@ Private Me.gradientPanelExt1.ForeColor = System.Drawing.Color.DarkGreen
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img387.jpeg)
+![Overview_img387](GradientPanelExt_images/Overview_img387.jpeg)

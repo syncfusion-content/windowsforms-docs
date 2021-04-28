@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization of GridControl | WinForms | Syncfusion
-description: This section explains on how to serialize and deserialize GridControl.
+title: Serialization in Windows Forms Grid Control control | Syncfusion
+description: Learn about Serialization support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Serialization
+# Serialization in Windows Forms Grid Control
 
 GridControl provide the support for [serialization](https://msdn.microsoft.com/en-us/library/ms233843.aspx#) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://msdn.microsoft.com/en-us/library/fa420a9y.aspx#).
 

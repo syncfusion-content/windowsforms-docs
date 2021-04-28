@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CopyPaste of GridControl for Syncfusion Essential Windows Forms
-description: This section explains oh how to perform the Cut, Copy and Paste operations in GridControl.
+title: Clipboard Support in Windows Forms Grid Control control | Syncfusion
+description: Learn about Clipboard Support support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Copy and Paste
+# Clipboard Support in Windows Forms Grid Control
 All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste_methods.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CutPaste) property. It will provide the list of properties and methods for performing the clipboard operation.
 
 ## Copy 
@@ -236,7 +236,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CopyPaste_images/CopyPaste_img1.png)
+![CopyPaste_img1](CopyPaste_images/CopyPaste_img1.png)
 
 ## Cut
 The <kbd>Ctrl</kbd>+<kbd>X</kbd> keyboard combination is used to cut the data from the grid. It is used to remove the selected data from the source and add it to the Clipboard. 
@@ -268,7 +268,7 @@ Me.gridControl1.CutPaste.CutRange(range, False)
 {% endhighlight %}
 {% endtabs %}
 
-![](CopyPaste_images/CopyPaste_img2.jpeg)
+![CopyPaste_img2](CopyPaste_images/CopyPaste_img2.jpeg)
 
 N> If the cell have integer data type, it will became null during the cut operation. The integer data type does not accept the null values therefore it will throws the “InvalidOperationException was unhandled, Rollback without BeginTrans” exception. This exception can be avoided by setting the nullable data type to the cells. For example, The `int` data type is need to be changed to `int?`.
 N> [https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells](https://www.syncfusion.com/kb/5198/why-does-cut-operation-throw-an-exception-on-the-number-datatype-such-as-integer-cells) 

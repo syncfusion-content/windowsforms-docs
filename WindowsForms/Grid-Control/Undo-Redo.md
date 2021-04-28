@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo/Redo operation of GridControl for syncfusion Essential Windows Forms
-description: This section explains on how to make the Undo/Redo operations in GridControl
+title: Undo Redo in Windows Forms Grid Control control | Syncfusion
+description: Learn about Undo Redo support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 
 ---
-# Undo/Redo
+# Undo Redo in Windows Forms Grid Control
 
 GridControl gives support for Undo/Redo functionality. GridControl keeps a track on all the operations undergone, in a particular class [GridModelCommandManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#). The Undo/Redo operations can be done by using commands, methods and keyboard shortcuts. 
 

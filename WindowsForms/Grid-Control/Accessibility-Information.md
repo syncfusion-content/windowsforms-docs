@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Accessibility information of GridControl for Syncfusion Essential Windows Forms
-description: The accessibility information of the GridControl is listed in the following topic.
+title: Accessibility Information in Windows Forms Grid Control control | Syncfusion
+description: Learn about Accessibility Information support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Accessibility Information
+# Accessibility Information in Windows Forms Grid Control
 
 ## Technical standards
 

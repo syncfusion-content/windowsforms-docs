@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing for Syncfusion Essential WindowsForms
-description: This section provides information about various cell editing features available in the DataGrid
+title: Editing in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Editing support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Editing
+# Editing in Windows Forms GridGrouping (GridGroupingControl)
 The GridGroupingControl lets you control the editing behavior of cells. For changing the editing behavior, make use of the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. This property will decide whether to edit the cells using single click or double click or disable editing.
 
 {% tabs %}
@@ -251,11 +251,11 @@ The difference between `ReadOnly` and `BrowseOnly` is that current cell will be 
 
 The below example shows the grid is enabled with `BrowseOnly` mode,
 
-![](Editing_images/Editing_img1.png)
+![Editing_img1](Editing_images/Editing_img1.png)
 
 The below example shows the grid is enabled with `ReadOnly` mode,
 
-![](Editing_images/Editing_img2.png)
+![Editing_img2](Editing_images/Editing_img2.png)
 
 ### Prevent Editing for particular range of Cells
 It is possible to prevent a particular cell or range of cells by using the [TableControlCurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event. The `Cancel` property is used to restrict the editing.
@@ -423,7 +423,7 @@ this.gridGroupingControl1.TableDescriptor.Columns["CustomerID"].Appearance.AnyRe
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_img3.png)
+![Editing_img3](Editing_images/Editing_img3.png)
 
 ### Applying Trimming when cell content exceed its size 
 While the content of the cell exceeds to the cells size then the text is automatically wrapped in to the next line. To show the Ellipsis word like the `…` at the end of the text, set the [Trimming](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Trimming) option for the cell as `EllipsisWord`.
@@ -438,7 +438,7 @@ this.gridGroupingControl1.TableDescriptor.Columns["CustomerID"].Appearance.AnyRe
 Me.gridGroupingControl1.TableDescriptor.Columns("CustomerID").Appearance.AnyRecordFieldCell.Trimming = StringTrimming.EllipsisWord
 {% endhighlight %}
 {% endtabs %}
-![](Editing_images/Editing_img4.png)
+![Editing_img4](Editing_images/Editing_img4.png)
 
 N> For applying the trimming functionality, make sure that the `WrapText` property is set to `false`.
 

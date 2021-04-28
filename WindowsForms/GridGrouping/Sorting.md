@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting for Syncfusion Essential WindowsForms
-description: This section provides the information about the Sorting and its behavior.
+title: Sorting in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Sorting support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms GridGrouping (GridGroupingControl)
 GridGroupingControl allows users to sort table data against one or more columns. When sorting is applied, grid will rearrange data to match the current sort criteria.
 
 There are multiple ways to sort table data. A simple one is to click the desired column headers that needs to be sorted. Also sorting can be performed programmatically. Once sorting is applied, the grid will display a sort icon in the respective column headers showing sort direction. 
@@ -16,7 +16,7 @@ At design time, data can be sorted by accessing [SortedColumns](http://help.sync
 
 In that Editor, clicking `Add` button will add existing columns into the collection. [Name](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_Name) and [SortDirection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SortDirection) in the property window of the editor will let user specify their desired field name to sort and the sort order.
 
-![](Sorting_images/Sorting_img1.jpeg)
+![Sorting_img1](Sorting_images/Sorting_img1.jpeg)
 
 ## Programmatic Sorting
 The [SortedColumns](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) collection is used to define the sort order for records with groups. Multiple entries can be added with the first entry having precedence while sorting records. The properties and methods in this collection lets users manage elements in the collection.
@@ -34,7 +34,7 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("CustomerID")
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img2.jpeg)
+![Sorting_img2](Sorting_images/Sorting_img2.jpeg)
 
 ## Removing Sorting
 Sorting can be removed for a particular or range of columns by specifying the desired column name in the [SortedColumns.Remove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Remove_Syncfusion_Grouping_SortColumnDescriptor_) method or by specifying the particular column index in the [SortedColumns.RemoveAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_RemoveAt_System_Int32_) method.
@@ -145,7 +145,7 @@ Me.gridGroupingControl1.SortIconPlacement = SortIconPlacement.Left
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img3.jpeg)
+![Sorting_img3](Sorting_images/Sorting_img3.jpeg)
 
 ### Sort Icon at Top
 {% tabs %}
@@ -159,12 +159,12 @@ Me.gridGroupingControl1.SortIconPlacement = SortIconPlacement.Top
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img4.jpeg)
+![Sorting_img4](Sorting_images/Sorting_img4.jpeg)
 
 ## Multi Column Sorting
 The multiple columns can be sorted by clicking each column with pressing the &lt;kbd&gt;CTRL&lt;kbd&gt; key by default. 
 
-![](Sorting_images/Sorting_img5.jpeg)
+![Sorting_img5](Sorting_images/Sorting_img5.jpeg)
 
 ### Programmatic Multi Column Sorting
 The multiple columns can be sorted by adding the field names into [SortedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) property and optionally specifying sort direction.
@@ -182,7 +182,7 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("ContactTitle")
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img6.jpeg)
+![Sorting_img6](Sorting_images/Sorting_img6.jpeg)
 
 ### Disabling Multi Column Sorting
 To disable the multi column sorting, the [TableOptions.AllowMultiColumnSort](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowMultiColumnSort) property can be set to `false`. 
@@ -201,7 +201,7 @@ When grouping is applied, the grid will sort the records based on the values of 
 
 The grouped column can be sorted by clicking on the grouped column in `GridGroupDropArea`. 
 
-![](Sorting_images/Sorting_img7.jpeg)
+![Sorting_img7](Sorting_images/Sorting_img7.jpeg)
 
 The following events will be raised when sorting the grouped columns in `GroupDropArea`,
 
@@ -370,7 +370,7 @@ Dim foreignCustomerColInMainTable As String = rd.Name & "_" & "CustomerName"
 td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 {% endhighlight %}
 {% endtabs %}
-![](Sorting_images/Sorting_img8.jpeg)
+![Sorting_img8](Sorting_images/Sorting_img8.jpeg)
 
 **Sample Location**<br/>
 &lt;Installation Location&gt;\Syncfusion\EssentialStudio\[Version_ Number]\Windows\Grid.Grouping.Windows\Samples\Sorting\Sort By Display Member Demo
@@ -621,5 +621,5 @@ public class CustomSortComparer : IComparer
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img9.jpeg)
+![Sorting_img9](Sorting_images/Sorting_img9.jpeg)
 

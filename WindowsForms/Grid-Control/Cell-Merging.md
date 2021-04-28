@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Cell Merging of GridControl for Syncfusion Essential WindowsForms
-description: This section explains the merging of cells and its functionalities
+title: Cell Merging in Windows Forms Grid Control control | Syncfusion
+description: Learn about Cell Merging support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
-# Cell Merging
+# Cell Merging in Windows Forms Grid Control
 The cell merging is also one of the technique to merge the range of cells in the GridControl. The range of cells will be merged based on the data. The cells which has same data will be merged in row wise in same column or column wise in same row. To enable the merging support in grid, the [MergeCell](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties can be used.
 
 The following code snippet is used to enable the merging in GridControl,
@@ -33,7 +33,7 @@ Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Merging_images/Cell-Merging_img1.jpeg)
+![Cell-Merging_img1](Cell-Merging_images/Cell-Merging_img1.jpeg)
 
 N> Any range of cells cannot be merged like the covered ranges. Because merging has different functionality than the covered ranges, which allows only to merge the adjacent cells with the same data. 
 
@@ -114,7 +114,7 @@ MessageBox.Show("MergedRange for cell(4,3) is " & mergedRange.Info.ToString() & 
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Merging_images/Cell-Merging_img2.jpeg)
+![Cell-Merging_img2](Cell-Merging_images/Cell-Merging_img2.jpeg)
 
 N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 
@@ -188,5 +188,5 @@ Private Sub gridControl1_QueryCanMergeCells(ByVal sender As Object, ByVal e As G
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Merging_images/Cell-Merging_img3.jpeg)
+![Cell-Merging_img3](Cell-Merging_images/Cell-Merging_img3.jpeg)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Find and Replace of GridControl for Syncfusion Essential WindowsForms
-description: This section explains how to Find and Replace the text in GridControl
+title: Find and Replace in Windows Forms Grid Control control | Syncfusion
+description: Learn about Find and Replace support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Find and Replace
+# Find and Replace in Windows Forms Grid Control
 The searching and replacing of text and numbers can be done as like the Find and Replace functionality in the Excel. This can be done by using dialog or programmatically. This feature can be added to the GridControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
 
 * [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html)<br/>
@@ -42,7 +42,7 @@ findReplaceDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
+![Find-and-Replace_img1](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
 
 ## Finding Options
 The finding options are used to set certain conditions for search the text and number using the [GridFindTextOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindTextOptions.html) enumeration property. It has the following finding options,
@@ -128,7 +128,7 @@ Private Sub gridControl1_CurrentCellKeyDown(ByVal sender As Object, ByVal e As K
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Find-and-Replace_images/Find-and-Replace_img2.jpeg)
+![Find-and-Replace_img2](Find-and-Replace_images/Find-and-Replace_img2.jpeg)
 
 ## Programmatic Searching
 The `Find and Replace` of the text in GridControl can be customized or can be used other than the `GridFindReplaceDialog`. The [GridFindReplaceEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceEventArgs.html) class provides the options to the `GridFindReplaceDialogSink` to perform the `Find and Replace` programmatically without having dialog.
@@ -268,7 +268,7 @@ frDialog.ReplaceAll(frEvents)
 {% endhighlight %}
 {% endtabs %}
 
-![](Find-and-Replace_images/Find-and-Replace_img3.jpeg)
+![Find-and-Replace_img3](Find-and-Replace_images/Find-and-Replace_img3.jpeg)
 
 For more details about the programmatically adding a `Find and Replace`, refer the below dashboard sample,<br/>
 **&lt;Install Location&gt;Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Editing\Find-Replace Demo**
@@ -305,5 +305,5 @@ highlightText.HighlightColor = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
 
-![](Find-and-Replace_images/Find-and-Replace_img4.jpeg)
+![Find-and-Replace_img4](Find-and-Replace_images/Find-and-Replace_img4.jpeg)
 

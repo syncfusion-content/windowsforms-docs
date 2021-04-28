@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Merging for Syncfusion Essential WindowsForms
-description: This section explains on how to enable conditional formatting in GridGroupingControl.
+title: Cell Merging in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Cell Merging support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Cell Merging
+# Cell Merging in Windows Forms GridGrouping (GridGroupingControl)
 Merging is the process of combining two or more adjacent cells with the same data into a single cell. The merge cells can be enabled in the GridGroupingControl by setting the [MergeCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_MergeCell), [MergeCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_MergeCellsMode) and [MergeCellsLayout](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsLayout.html) properties.
 
 {% tabs %}
@@ -30,7 +30,7 @@ Me.gridGroupingControl1.TableModel.Options.MergeCellsMode = GridMergeCellsMode.O
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Merging_images/Cell-Merging_img1.png)
+![Cell-Merging_img1](Cell-Merging_images/Cell-Merging_img1.png)
 
 ## Setting Merge Cells Behavior 
 The calculating behavior of the merge cells can be set by using the `MergeCellsMode` property. It is used to set whether the merge cells need to be calculated at the time of loading grid or calculate on demand basis. It can also be used to set the behavior of the merging such as rows in columns, columns in rows and hidden range of cells using the [GridMergeCellsMode](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridMergeCellsMode.html) enumeration.
@@ -38,12 +38,12 @@ The calculating behavior of the merge cells can be set by using the `MergeCellsM
 ### Merging Rows in Columns
 The adjacent rows with the same data can be merged into the single column by using the `MergeRowsInColumns` option.
 
-![](Cell-Merging_images/Cell-Merging_img2.png)
+![Cell-Merging_img2](Cell-Merging_images/Cell-Merging_img2.png)
 
 ### Merging Columns in Rows
 The adjacent columns with the same data can be merged into the single row by setting the `MergeColumnsInRows` option to the `MergeCellsMode`.
 
-![](Cell-Merging_images/Cell-Merging_img3.png)
+![Cell-Merging_img3](Cell-Merging_images/Cell-Merging_img3.png)
 
 N> The hidden rows and columns can be ignored when comparing the values and merge across them by using the `SkipHiddencells` option.
 
@@ -119,7 +119,7 @@ MessageBox.Show("MergedRange for cell(5,2) is " & range1.Info.ToString() & Const
 
 N> The merged range of a cell can also be get by using [GetSpannedRangeInfo](http://help.syncfusion.com/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method.
 
-![](Cell-Merging_images/Cell-Merging_img4.png)
+![Cell-Merging_img4](Cell-Merging_images/Cell-Merging_img4.png)
 
 ## Custom Cell Merging
 The cell merging can be customized by handling the [QueryCanMergeCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event. This event will be raised when grid compares the content of the two cells to determine if they should be merged. It can merge the cells when the `e.Result` and `e.Handled` is set to `true`.
@@ -162,5 +162,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Merging_images/Cell-Merging_img5.png)
+![Cell-Merging_img5](Cell-Merging_images/Cell-Merging_img5.png)
 

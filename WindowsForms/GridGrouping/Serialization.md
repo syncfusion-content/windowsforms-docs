@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization for Syncfusion Essential WindowsForms
-description: This section explains about the xml serialization and deserialization of the GridGroupingControl.
+title: Serialization in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Serialization support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Serialization
+# Serialization in Windows Forms GridGrouping (GridGroupingControl)
 Serialization is the process of saving the state of an object into a stream of bytes for further use. The reverse of this process called Deserialization. This section will explain about the different types of serialization techniques available for the GridGroupingControl. 
 
 ## XML Serialization 
@@ -95,7 +95,7 @@ The look and feel of the grid can be stored in XML format. This is used to desig
 ### Through Verbs
 The verbs `Save Look and Feel` and `Choose Look and Feel` that are found at the bottom of the property-grid of GridGroupingControl. Using this verbs the look and feel of the grid can be saved.
 
-![](Serialization_images/Serialization_img1.png)
+![Serialization_img1](Serialization_images/Serialization_img1.png)
 
 ### Through Code 
 To save the look and feel of the grid, use the following code snippet,

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enhanced Cell Types for GridControl
-description: This section explains on different kinds of enhanced cell types available in GridControl.
+title: Enhanced Cell Types in Windows Forms Grid Control control | Syncfusion
+description: Learn about Enhanced Cell Types support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: Grid
 documentation: ug
 ---
 
-# Enhanced Cell Types
+# Enhanced Cell Types in Windows Forms Grid Control
 GridControl supports more than 10 built in custom cell types. All the related cell types will be found in the [CustomCellTypes](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html) enum which can be found in [Syncfusion.GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
 
 ## Registering custom cell types
@@ -36,7 +36,7 @@ RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.ButtonEdit)
 Me.gridControl1(2, 2).CellType = CustomCellTypes.ButtonEdit.ToString()
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img32.png)
+![Cell-Types_img32](Cell-Types_images/Cell-Types_img32.png)
 
 ### ButtonEdit Style properties 
 The style properties related to the `ButtonEdit` are maintained in [ButtonEditStyleProperties](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditStyleProperties.html) class. This class consists of two main properties [ButtonEditInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditInfo.html) and `StyleInfo`.
@@ -130,7 +130,7 @@ sp.ButtonEditInfo.ForceBackColor = True
 
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img33.png)
+![Cell-Types_img33](Cell-Types_images/Cell-Types_img33.png)
 
 N> For more details on the ButtonEdit cell type property make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\EssentialStudio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
 
@@ -156,7 +156,7 @@ Me.gridControl1(2, 2).Description = GetIconFile("common\Data\DocIO\SalesInvoiceD
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img34.png)
+![Cell-Types_img34](Cell-Types_images/Cell-Types_img34.png)
 
 N> For more details on the OLEContainer cell type property make use of the following dashboard sample &lt;Installed Location&gt;\Syncfusion\ Studio\&lt;Installed Version&gt;\Windows\Grid.Windows\Samples\Custom Cell Types\Interactive Cell Demo\
 
@@ -182,7 +182,7 @@ Me.gridControl1(2, 2).Control = c2
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img35.png)
+![Cell-Types_img35](Cell-Types_images/Cell-Types_img35.png)
 
 ## Calendar cell type
 Calendar control can be added to a cell by setting the cell type as `CustomCellTypes.Calendar`. After setting the cell type we need to add the Calendar control to the cell by using the `Control` property. Refer the following code for better explanation.
@@ -205,7 +205,7 @@ Me.gridControl1(2, 2).Control = calendar
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img36.png)
+![Cell-Types_img36](Cell-Types_images/Cell-Types_img36.png)
 
 ## DateTimePicker cell type
 Date Time Picker cell type can be embedded into a cell as a drop-down container where date and time picker will be added in the drop-down. The [CellValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValue) of the corresponding cell has to be specified as date value. Various formats of the date and time can be provided in the [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Format) style property. 
@@ -227,7 +227,7 @@ Me.gridControl1(2, 2).Format = "MM/dd/yyyy hh:mm"
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img37.png)
+![Cell-Types_img37](Cell-Types_images/Cell-Types_img37.png)
 
 ## NumericUpDown cell type
 
@@ -388,7 +388,7 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img38.png)
+![Cell-Types_img38](Cell-Types_images/Cell-Types_img38.png)
 
 ## GridInCell cell type
 `GridInCell` cell type provide covered range of cells which embeds a GridControl i.e.., a GridControl within a cell of a GridControl.
@@ -428,7 +428,7 @@ grid(1, 1).Text = "This is a 4x4 Grid"
 Me.gridControl1(3, 2).Control = grid
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img39.png)
+![Cell-Types_img39](Cell-Types_images/Cell-Types_img39.png)
 
 ## LinkLabel cell type
 For a cell to act as a hyperlink cell, make use of the `LinkLabelCell` cell type. The link for the `LinkLabelCell` will be assigned in the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of that cell. This cell displays the ordinary text, but on click it will relocate to the link given in the `Tag`.
@@ -450,7 +450,7 @@ gridControl1(2, 2).Tag = "http://www.syncfusion.com"
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img40.png)
+![Cell-Types_img40](Cell-Types_images/Cell-Types_img40.png)
 
 ### Changing the color of the link while mouse hovering
 It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html#Syncfusion_GridHelperClasses_LinkLabelCellRenderer_ActiveLinkColor) property. This property can be accessed from the [LinkLabelCellRenderer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
@@ -489,7 +489,7 @@ sp = New PictureBoxStyleProperties(style)
 sp.Image = New Bitmap(SystemIcons.Asterisk.ToBitmap())
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img41.png)
+![Cell-Types_img41](Cell-Types_images/Cell-Types_img41.png)
 
 ### XHTML cell type
 An XHTML page can be displayed in a grid cell by using `XhtmlCell` cell type. Following code will explain how to display XHTML page in a grid cell.
@@ -523,7 +523,7 @@ gridControl1(2, 2).Text = xhtml1
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img42.png)
+![Cell-Types_img42](Cell-Types_images/Cell-Types_img42.png)
 
 ## IntegerTextBox cell type
 Integer text box is used to display integer data-type values in the grid cells. It can be done by assigning the cell type as CustomCellTypes.IntegerTextBox**.**
@@ -538,7 +538,7 @@ RegisterCellModel.GridCellType(Me.gridControl1, CustomCellTypes.IntegerTextBox)
 Me.gridControl1(4, 2).CellType = CustomCellTypes.IntegerTextBox.ToString()
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img43.png)
+![Cell-Types_img43](Cell-Types_images/Cell-Types_img43.png)
 
 ## DoubleTextBox cell type
 Double text box is used to display double data-type values in the grid cells. It can be done by assigning the cell type as `CustomCellTypes.DoubleTextBox`.
@@ -557,7 +557,7 @@ Me.gridControl1(3, 2).CellType = CustomCellTypes.DoubleTextBox.ToString()
 Me.gridControl1(2, 2).CellType = CustomCellTypes.DoubleTextBox.ToString()
 {% endhighlight %}
 {% endtabs %}
-![](Cell-Types_images/Cell-Types_img44.png)
+![Cell-Types_img44](Cell-Types_images/Cell-Types_img44.png)
 
 ## PercentTextBox cell type
 Percent text box is used to display percentage values in the grid cell. It can be done by assigning the cell type as `CustomCellTypes.PercentTextBox`.
@@ -577,4 +577,4 @@ Me.gridControl1(2, 2).CellType = CustomCellTypes.PercentTextBox.ToString()
 {% endhighlight %}
 {% endtabs %}
 
-![](Cell-Types_images/Cell-Types_img45.png)
+![Cell-Types_img45](Cell-Types_images/Cell-Types_img45.png)

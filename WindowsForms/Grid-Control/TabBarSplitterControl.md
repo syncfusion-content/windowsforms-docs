@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabBarSplitterControl in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to integrate TabBarSplitterControl in GridControl.
+title: TabBarSplitterControl in Windows Forms Grid Control control | Syncfusion
+description: Learn about TabBarSplitterControl support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
@@ -16,23 +16,23 @@ The following steps will explain on how to integrate a GridControl with the TabB
 
 1.Drag and Drop the TabBarSplitterControl from the toolbox.
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img1.png)
+![TabBarSplitterControl_img1](TabBarSplitterControl_images/TabBarSplitterControl_img1.png)
 
 2.Drag the GridControl from toolbox and drop it on the TabBarSplitterControl.
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img2.png)
+![TabBarSplitterControl_img2](TabBarSplitterControl_images/TabBarSplitterControl_img2.png)
 
 3.It is also possible to add or remove `TabBarPage` through designer by using the `Edit` option in designer mode.
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img3.png)
+![TabBarSplitterControl_img3](TabBarSplitterControl_images/TabBarSplitterControl_img3.png)
 
 It can also be added or removed through the **TabBarPageCollectionEditor** which can be accessed through the `TabBarPage` property in the property window.
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img4.png)
+![TabBarSplitterControl_img4](TabBarSplitterControl_images/TabBarSplitterControl_img4.png)
 
 4.After adding `TabBarPage`, GridControl can be added in these pages by just drag and drop the control over them.
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img5.png)
+![TabBarSplitterControl_img5](TabBarSplitterControl_images/TabBarSplitterControl_img5.png)
 
 ## Adding via Code
 
@@ -79,7 +79,7 @@ tabBarSplitterControl1.Controls.Add(Me.Spent)
 {% endhighlight %}
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img6.png)
+![TabBarSplitterControl_img6](TabBarSplitterControl_images/TabBarSplitterControl_img6.png)
 
 N> To know about TabBarSplitterControl properties and methods, please check the link over [here](http://help.syncfusion.com/windowsforms/splitter/overview).
 
@@ -101,7 +101,7 @@ gridControl1.GridVisualStyles = GridVisualStyles.SystemTheme
 {% endhighlight %}
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img7.png)
+![TabBarSplitterControl_img7](TabBarSplitterControl_images/TabBarSplitterControl_img7.png)
 
 For setting the Office 2007 styles theme, make use of the [Office2007ColorScheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_Office2007ColorScheme) property and change the theme to blue, black or silver accordingly.
 
@@ -121,7 +121,7 @@ tabBarSplitterControl1.Office2007ColorScheme = Office2007Theme.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img8.png)
+![TabBarSplitterControl_img8](TabBarSplitterControl_images/TabBarSplitterControl_img8.png)
 
 For setting the Metro theme, set the `Style` property as `Metro` style appearance.
 
@@ -139,7 +139,7 @@ tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.Metr
 {% endhighlight %}
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img9.png)
+![TabBarSplitterControl_img9](TabBarSplitterControl_images/TabBarSplitterControl_img9.png)
 
 For setting the Office 2013 styles theme, make sure to set the [EnableOffice2013Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html#Syncfusion_Windows_Forms_TabBarSplitterControl_EnableOffice2013Style) property to `true` and set the TabBarSplitterControl `Style` as `Metro`.
 
@@ -159,7 +159,7 @@ tabBarSplitterControl1.Style = TabBarSplitterStyle.Metro
 {% endhighlight %}
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img10.png)
+![TabBarSplitterControl_img10](TabBarSplitterControl_images/TabBarSplitterControl_img10.png)
 
 **Office2016Colorful**
 
@@ -187,7 +187,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img12.png)
+![TabBarSplitterControl_img12](TabBarSplitterControl_images/TabBarSplitterControl_img12.png)
 
 **Office2016White**
 
@@ -215,7 +215,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img13.png)
+![TabBarSplitterControl_img13](TabBarSplitterControl_images/TabBarSplitterControl_img13.png)
 
 **Office2016DarkGray**
 
@@ -243,7 +243,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img14.png)
+![TabBarSplitterControl_img14](TabBarSplitterControl_images/TabBarSplitterControl_img14.png)
 
 **Office2016Black**
 
@@ -271,7 +271,7 @@ Me.tabBarSplitterControl1.Style = Syncfusion.Windows.Forms.TabBarSplitterStyle.O
 
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img15.png)
+![TabBarSplitterControl_img15](TabBarSplitterControl_images/TabBarSplitterControl_img15.png)
 
 ##Custom Styles
 
@@ -294,4 +294,4 @@ Syncfusion.Windows.Forms.Office2007Colors.ApplyManagedColors(Me, Color.Aquamarin
 
 {% endtabs %}
 
-![](TabBarSplitterControl_images/TabBarSplitterControl_img11.png)
+![TabBarSplitterControl_img11](TabBarSplitterControl_images/TabBarSplitterControl_img11.png)

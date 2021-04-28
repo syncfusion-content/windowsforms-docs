@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Performance for Syncfusion Essential WindowsForms
-description: This section explains various kinds of performance technique related to GridGroupingControl
+title: Performance in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Performance support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Performance 
+# Performance in Windows Forms GridGrouping (GridGroupingControl)
 GridGroupingControl has an extremely high performance standard. It can handle very high frequency updates and refresh scenarios. It also offers complete support for Virtual Mode wherein data will be loaded only on demand. Using some of the optimization properties, user can have the grid work with large amounts of data without a performance hit.
 
 All the properties that affects grid performance are wrapped into a category named `Optimization`.
 
-![](Performance_images/Performance_img1.png)
+![Performance_img1](Performance_images/Performance_img1.png)
 
 ## Optimization Properties
 In this section you will learn a brief explanation of the optimization properties available in GridGroupingControl. In the upcoming [topics](#memory-performance) you will learn the usage of these properties in application.
@@ -619,7 +619,7 @@ End Class
 {% endtabs %}
 
 3.Add a button and ListBox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein user will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. The form will be look like the one below at design time.
-![](Performance_images/Performance_img2.png)
+![Performance_img2](Performance_images/Performance_img2.png)
 
 4.Set up a new engine and specify the optimizations settings required.
 
@@ -828,7 +828,7 @@ Private Sub t_Tick(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Performance_images/Performance_img3.png)
+![Performance_img3](Performance_images/Performance_img3.png)
 
 ## Record ListChanged Performance
 When `ListChanged` is detected, the grouping engine has to update the grid records accordingly. Every record change may affect its sort position, group dependency, and summaries. The engine should take care of all these things and should also invalidate counters that are being affected with respect to `ListChanged`. The easiest way to accomplish this would be invalidating the whole display and repainting all the rows. But this will have a big impact on grid performance in worst cases. For example, in case only one record is really changed and this change does not affect sort order and summaries, it requires to repaint only one record. Instead the engine will repaint the whole display.
@@ -1723,7 +1723,7 @@ gridGroupingControl1.TableDescriptor.UnboundFields("ShipVia_CompanyName").Refere
 {% endhighlight %}
 {% endtabs %}
 The grid will be looks like the following while updating.
-![](Performance_images/Performance_img4.png)
+![Performance_img4](Performance_images/Performance_img4.png)
 
 ## High Frequency Updates
 This section discusses an example that will use to make high frequency updates in an efficient manner. It shows sort position changes, inserting and removing of records from a timer event. At start up, the GridGroupingControl is sorted by Column 1 and changes to fields in that column affects the sort position of a record. The background colors of the cells in records are also dependent on the value in column 1. This dependency is specified with [ReferencedFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FieldDescriptor.html#Syncfusion_Grouping_FieldDescriptor_ReferencedFields) property. The changes are highlighted for a short period of time after a change is detected.
@@ -2301,7 +2301,7 @@ End Sub
 {% endtabs %}
 Given below is a sample screen shot. While running the sample, apply grouping, sorting and filtering, and then check for the CPU time usage in TaskManager to detect grid performance.
 
-![](Performance_images/Performance_img5.png)
+![Performance_img5](Performance_images/Performance_img5.png)
 
 ## Grouping Performance
 This section focuses on a sample that lets you check the performance of the grid grouping control by toggling various options that can affect the speed of the grid. The different options include Sort and Categorize the records, calculating maximum column width, custom sorting and multi-threading (in case if a multiprocessor system is available).

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Coded UI Support in GridControl for Syncfusion Essential Windows Forms
-description: This section explains the testing the cell grid with Coded UI automation test
+title: Coded UI Automation in Windows Forms Grid Control control | Syncfusion
+description: Learn about Coded UI Automation support in Syncfusion Windows Forms Grid Control control and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Coded UI Automation
+# Coded UI Automation in Windows Forms Grid Control
 The GridControl can be automated with Coded UI testing automation. Using Visual Studio Premium, Visual Studio Ultimate or Visual Studio Enterprise, user can create a coded UI Test Project which will be used to test and automate the UI of the GridControl. The validation can be done at grid level or cell level.
 
 Levels of Microsoft Coded UI Test (CUIT) support,
@@ -56,17 +56,17 @@ The **Coded UI Test** performs action on the user interface (UI) controls and ve
 ### Assertion of GridControl
 For asserting the GridControl, the whole grid will be highlighted with that rectangular bounds.  After assertion, the properties related to GridControl will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img6.jpeg)
+![Coded-UI-Automation_img6](Coded-UI-Automation_images/Coded-UI-Automation_img6.jpeg)
 
 ### Assertion of a Cell
 For asserting a particular cell, the cell will be highlighted with that rectangular bounds.  After assertion, the properties related to that particular cell will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img7.jpeg)
+![Coded-UI-Automation_img7](Coded-UI-Automation_images/Coded-UI-Automation_img7.jpeg)
 
 ### Assertion of Merged Cells
 For asserting the merged cell, the merged range will be treated as a single cell and it will be highlighted with rectangular bounds.  After assertion, the properties related to the merged cell will be displayed in **Coded UI Test Builder**.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img8.jpeg)
+![Coded-UI-Automation_img8](Coded-UI-Automation_images/Coded-UI-Automation_img8.jpeg)
 
 ## Record and Playback
 The GridControl lets you record the automation and play back those automated actions whenever application needs to be tested. 
@@ -103,7 +103,7 @@ The recorded automation codes can be played back. The following steps are used t
 3. Right Click on the `CodedUITestMethod1` method.
 4. Select the `Run Tests` option.
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
+![Coded-UI-Automation_img14](Coded-UI-Automation_images/Coded-UI-Automation_img14.jpeg)
 
 ## In-built support
 The GridControl supports automated UI testing with Coded UI technology without any external plugin. In this technique, the grid will be detected as an **MSAA** object and the automation code will be generated based on MSAA technology element.  
@@ -221,7 +221,7 @@ WinSpinner
 </table>
 The below example shows the properties that are displayed in the Coded UI test builder,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img15.jpeg)
+![Coded-UI-Automation_img15](Coded-UI-Automation_images/Coded-UI-Automation_img15.jpeg)
 
 N> The properties will be displayed based on the respective **MSAA** control properties. 
 
@@ -230,7 +230,7 @@ As GridControl and cell are asserted like **MSAA** control, a value of a cell wi
 
 The below example shows the checkbox is asserted and the checked state of the check box is displayed in `HelpText` property,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
+![Coded-UI-Automation_img16](Coded-UI-Automation_images/Coded-UI-Automation_img16.jpeg)
 
 ### Finding a Cell and Getting the Cell Value
 To find a cell in the GridControl, `SearchProperties` property can be used and to get the cell value, `GetPropertyValue` method can be used. The corresponding cell name has to be given for searching the control. 
@@ -262,7 +262,7 @@ End Sub
 {% endtabs %}
 The below example shows the getting of a cell value from grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
+![Coded-UI-Automation_img17](Coded-UI-Automation_images/Coded-UI-Automation_img17.jpeg)
 
 ### Highlighting a Cell
 To highlight a cell in GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -294,7 +294,7 @@ End Sub
 {% endtabs %}
 The below example shows the highlighting of a cell,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
+![Coded-UI-Automation_img18](Coded-UI-Automation_images/Coded-UI-Automation_img18.jpeg)
 
 ### Highlighting a Grid
 To highlight a GridControl, `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -322,7 +322,7 @@ End Sub
 {% endtabs %}
 The below example shows the highlighting of grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
+![Coded-UI-Automation_img19](Coded-UI-Automation_images/Coded-UI-Automation_img19.jpeg)
 
 ## External Plugin
 The GridControl also provides Coded UI support via external plugin. In this technique, the grid will be detected as `SyncControl` technology instead of detecting as `MSAA` object. The properties will be displayed based on the inner control of the asserted cell or grid. 
@@ -472,7 +472,7 @@ Indicates the range of selected cells in the GridControl
 
 The following example shows the property that displayed in the Coded UI test builder,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
+![Coded-UI-Automation_img20](Coded-UI-Automation_images/Coded-UI-Automation_img20.jpeg)
 
 #### Asserting a cell
 <table>
@@ -657,7 +657,7 @@ End Sub
 
 The below example shows the getting of a cell value from grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
+![Coded-UI-Automation_img21](Coded-UI-Automation_images/Coded-UI-Automation_img21.jpeg)
 
 ### Highlighting a Cell
 To highlight a cell in GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used.
@@ -694,7 +694,7 @@ End Sub
 
 The below example shows the highlighting of a cell,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
+![Coded-UI-Automation_img22](Coded-UI-Automation_images/Coded-UI-Automation_img22.jpeg)
 
 ### Highlighting a Grid
 To highlight a GridControl, the GridControl has to be searched with the needed searching properties and `DrawHighlight` method of corresponding `UITestControl` can be used. 
@@ -729,5 +729,5 @@ End Sub
 
 The below example shows the highlighting of grid,
 
-![](Coded-UI-Automation_images/Coded-UI-Automation_img23.jpeg)
+![Coded-UI-Automation_img23](Coded-UI-Automation_images/Coded-UI-Automation_img23.jpeg)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging for Syncfusion Essential WindowsForms
-description: This section explains on how to enable paging support in GridGroupingControl.
+title: Paging in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Paging support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Paging
+# Paging in Windows Forms GridGrouping (GridGroupingControl)
 Paging is the process of splitting up of large records into a separate segments to view and manipulate the data. It is used to improve the performance of the grid. The paging support can be enabled to the GridGroupingControl by using the [Pager.Wire](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Pager.html#Syncfusion_GridHelperClasses_Pager_Wire_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_) method.
 
 {% tabs %}
@@ -27,7 +27,7 @@ pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable obje
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img1.png)
+![Paging_img1](Paging_images/Paging_img1.png)
 
 N> The paging is not supported for the nested grids.
 
@@ -58,12 +58,12 @@ pager.Wire(Me.gridGroupingControl1, dataTable) ' dataTable is the DataTable obje
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img2.png)
+![Paging_img2](Paging_images/Paging_img2.png)
 
 ## Page Navigation
 The current page can be moved to the first, last, previous and next by using the arrow buttons of the navigation bar. The current page of the grid will be displayed at the label of the navigation bar along with the total number of pages.
 
-![](Paging_images/Paging_img3.png)
+![Paging_img3](Paging_images/Paging_img3.png)
 
 The page navigation through the arrow buttons can be notified by using the ArrowButtonClicked event. The button clicks can be differentiate by using the ArrowType enumeration.  
 {% tabs %}
@@ -99,7 +99,7 @@ End Sub
 ## Sorting
 The paging is allows to sort the columns ascending and descending order. It will sort the records that are belong to the particular page. The sorting will be enabled while navigating the pages and applied individually for each page. 
 
-![](Paging_images/Paging_img4.png)
+![Paging_img4](Paging_images/Paging_img4.png)
 
 ## Grouping
 The paging is also provides the support for grouping the column using the GroupDropArea. The grouping can be applied only to the records belongs to the current page. It will be remain same for each page while navigating.
@@ -115,7 +115,7 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img5.png)
+![Paging_img5](Paging_images/Paging_img5.png)
 
 ## Filtering 
 The filtering can be applied to the GridGroupingControl when the paging is enabled. The filter can be applied to the records which are bound to the page. However, this restriction can be overcome by wiring the view to a temporary table. 
@@ -142,7 +142,7 @@ Next column
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img6.png)
+![Paging_img6](Paging_images/Paging_img6.png)
 
 ## Unwire Paging
 The paging can be removed from the grid by using the [Pager.Unwire](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Pager.html#Syncfusion_GridHelperClasses_Pager_Unwire_Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_) method. It will remove the pager from the grid and display as all the records.

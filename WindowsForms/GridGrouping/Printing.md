@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing for Syncfusion Essential WindowsForms
-description: This section provides the information about various printing options of GridGroupingControl
+title: Printing in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Printing
+# Printing in Windows Forms GridGrouping (GridGroupingControl)
 GridGroupingControl supports printing and previewing the printing document in dialog box. A derived [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html), which represents the print document is passed to these classes. This `GridPrintDocument` implements printing logic that is needed to print multi page grids. 
 
 For printing the grid make use of the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx) class. For printing the document get the grid as document with the help of `GridPrintDocument` class, then assign this document to the property[Document](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.document.aspx) of the `PrintDialog` object. It also supports hierarchical grid printing.
@@ -31,7 +31,7 @@ pd.Print()
 End If
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img1.png)
+![Printing_img1](Printing_images/Printing_img1.png)
 
 ## Print Preview
 Printing gives support for showing a print preview dialog. To access it, [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printpreviewdialog.aspx) class has to be used and [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) has to be assigned to Document property of its object.
@@ -50,7 +50,7 @@ printPreviewDialog.Document = pd
 printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img2.png)
+![Printing_img2](Printing_images/Printing_img2.png)
 
 ### Printing using Keyboard shortcut
 There is no direct support for printing the grid using <kbd>Ctrl</kbd>+<kbd>P</kbd> key combination but this can be achieved by handling the [TableControl.KeyDown](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Windows.Forms.Control.KeyDown)&rd=true) event of the grid.
@@ -147,7 +147,7 @@ gridPrintDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img3.png)
+![Printing_img3](Printing_images/Printing_img3.png)
 
 ### Printing All the Contents into a Single Page
 The grid data will be fit to a single page or the minimal number of pages using [PagesToFit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_PagesToFit) property and this option will be enabled only when the [PrintColumnToFitPage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_PrintColumnToFitPage) is set to `true`.
@@ -195,7 +195,7 @@ Me.gridGroupingControl1.TableModel.Properties.PrintFrame = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img4.png)
+![Printing_img4](Printing_images/Printing_img4.png)
 
 ### Page Orientation
 The orientation of the printing layout can be changed to landscape by setting [LandScape](https://msdn.microsoft.com/en-us/library/system.drawing.printing.pagesettings.landscape.aspx) property to `true`.
@@ -239,7 +239,7 @@ this.gridGroupingControl1.TableModel.Properties.BlackWhite = true;
 Me.gridGroupingControl1.TableModel.Properties.BlackWhite = True
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img5.png)
+![Printing_img5](Printing_images/Printing_img5.png)
 
 ## Multiple Grid Printing
 Multiple GridGroupingControl can be printed across various pages using helper class [MultipleGridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.MultiGridPrintDocument.html). This is achieved by drawing full-size grid to a large bitmap and then scaling this bitmap to fit the output page.
@@ -342,7 +342,7 @@ printPreviewDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img6.png)
+![Printing_img6](Printing_images/Printing_img6.png)
 
 ## Customizing Header and Footer
 The header and footer can be customized as per user need by handling the [DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) and [DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) event.
@@ -502,7 +502,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img7.png)
+![Printing_img7](Printing_images/Printing_img7.png)
 
 ## Printing with Application Form
 The printing with application forms can be done in the following ways by handling the [PrintDocument](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printdocument%28v=vs.110%29.aspx) class.
@@ -564,7 +564,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img8.png)
+![Printing_img8](Printing_images/Printing_img8.png)
 
 ### Printing the Client Area in Form
 The GridGroupingControl does not have built-in support for printing the client application form. It can be done by using the `PrintDocument` class and following customization,
@@ -632,7 +632,7 @@ void printDocument_PrintPage(Object sender, PrintPageEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img9.png)
+![Printing_img9](Printing_images/Printing_img9.png)
 
 ## Print Layout Helper
 The Print Page Layout feature enables viewing page layout on the grid by displaying a segment line and page number with each segment. This helps to analyze page breaks within the grid, and manage them accordingly.
@@ -674,7 +674,7 @@ helper.LineColor = Color.Blue
 helper.TextColor = Color.Blue
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img10.png)
+![Printing_img10](Printing_images/Printing_img10.png)
 
 ### Customizing Layout Lines and Text
 The page layout line and text can be changed by using the [LineColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_LineColor), [TextColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_TextColor), [LineWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_LineWidth) and [PageTextFormat](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_PageTextFormat) properties.
@@ -696,7 +696,7 @@ helper.TextColor = Color.DeepPink
 helper.PageTextFormat = "Paper"
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img11.png)
+![Printing_img11](Printing_images/Printing_img11.png)
 
 ### Customizing Page Flow
 The page number will be considered based on the horizontally by default. This can be handled by using the [PageFlow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_PageFlow) property.
@@ -712,7 +712,7 @@ helper.ShowLayoutLines = true
 helper.PageFlow = PageFlowDirection.Vertical
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img12.png)
+![Printing_img12](Printing_images/Printing_img12.png)
 
 ### Customizing Page Break Rows and Columns
 The below example shows the number of rows and number of columns are provided for `PageBreaks`,
@@ -757,7 +757,7 @@ helper.ShowLayoutLines = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img13.png)
+![Printing_img13](Printing_images/Printing_img13.png)
 
 ### Customizing Page Breaks
 The row breaks and column breaks for each pages can be customized by using the [PrintInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PrintInfo) property. This will provide the list of first row index and first column index of each pages while printing.
@@ -804,7 +804,7 @@ Private Sub pd_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Print
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img14.png)
+![Printing_img14](Printing_images/Printing_img14.png)
 
 ### Preventing Page Number Being Displayed
 To prevent the page number is being displayed from the print page layout, the [DrawPageNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html) event can be used. 
@@ -840,7 +840,7 @@ Private Sub helper_DrawPageNumber(ByVal grid As GridControlBase, ByVal e As Draw
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img15.png)
+![Printing_img15](Printing_images/Printing_img15.png)
 
 ## Printing Customizations
 The printing options of the grid can be customized by using the following methods.
@@ -883,7 +883,7 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img16.png)
+![Printing_img16](Printing_images/Printing_img16.png)
 
 ### Hiding Row and Column Headers 
 To hide the row and column headers while printing or print previewing the grid, set the [PrintRowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_PrintRowHeader) and [PrintColumnHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_PrintColumnHeader) property values as `false` which are available in the [TableModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_TableModel) property.
@@ -936,7 +936,7 @@ previewDialog.Document = printDocument
 previewDialog.Show()
 {% endhighlight %}
 {% endtabs %}
-![](Printing_images/Printing_img17.png)
+![Printing_img17](Printing_images/Printing_img17.png)
 
 ### Hiding Grid Lines While Printing
 The horizontal and the vertical lines can be hidden in the printed document by setting the following code snippet,

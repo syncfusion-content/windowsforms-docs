@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | GradientPanelExt | WindowsForms | Syncfusion
-description: How to add GradientPanelExt control in a Windows Forms applocation
+title: Getting Started with Windows Forms GradientPanelExt | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GradientPanelExt control, its elements, and more details.
 platform: WindowsForms
 control: GradientPanelExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms GradientPanelExt
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **GradientPanelExt** control with its basic functionalities.
 

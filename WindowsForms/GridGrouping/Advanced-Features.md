@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced-Features | Windows Forms | Syncfusion
-description: advanced features
+title: Advanced Features in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Advanced Features support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Advanced Features
+# Advanced Features in Windows Forms GridGrouping (GridGroupingControl)
 
 ## Custom Grouping
 
@@ -334,7 +334,7 @@ Given below is a sample screen shot.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img1.jpeg) 
+![Advanced-Features_img1](Advanced-Features_images/Advanced-Features_img1.jpeg) 
 
 
 
@@ -544,7 +544,7 @@ End Sub
 
 
 
-![](Advanced-Features_images/Advanced-Features_img2.jpeg) 
+![Advanced-Features_img2](Advanced-Features_images/Advanced-Features_img2.jpeg) 
 
 
 
@@ -823,7 +823,7 @@ Loop
 
 2.Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two combo boxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
 
-![](Advanced-Features_images/Advanced-Features_img4.jpeg) 
+![Advanced-Features_img4](Advanced-Features_images/Advanced-Features_img4.jpeg) 
 
 
 
@@ -1151,7 +1151,7 @@ The following code illustrates how to optimize the filter.
 {% endtabs %}
 
 
-![](Advanced-Features_images/Advanced-Features_img7.jpeg) 
+![Advanced-Features_img7](Advanced-Features_images/Advanced-Features_img7.jpeg) 
 
 
 

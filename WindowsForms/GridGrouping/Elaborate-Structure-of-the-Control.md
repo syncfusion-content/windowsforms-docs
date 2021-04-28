@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Elaborate Structure of the GridGroupingControl for Syncfusion Essential Windows Forms
-description: elaborate structure of the control
+title: Elaborate Structure of the Control in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Elaborate Structure of the Control support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Elaborate Structure of the Control
+# Elaborate Structure of the Control in Windows Forms GridGrouping (GridGroupingControl)
 
 This section lists the important elements that are used by the grouping grid to organize data. These grid elements can have specific appearance and behavior. The following screen shot points out the various grid elements.
 
-![](Elaborate-Structure-of-the-Control_images/Elaborate-Structure-of-the-Control_img1.png)
+![Elaborate-Structure-of-the-Control_img1](Elaborate-Structure-of-the-Control_images/Elaborate-Structure-of-the-Control_img1.png)
 
 ## Elements of GridGroupingControl
 

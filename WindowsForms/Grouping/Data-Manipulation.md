@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Manipulation | WindowsForms | Syncfusion
-description: data manipulation
+title: Data Manipulation in Windows Forms Grouping control | Syncfusion
+description: Learn about Data Manipulation support in Syncfusion Windows Forms Grouping control and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Data Manipulation
+# Data Manipulation in Windows Forms Grouping
 
 In addition to grouping data, you may want to filter it for some special criteria. For example, you may want to see the total monthly sales due to orders under some value. Essential Grouping gives you the flexibility to add calculated values to the data, and then use these values to produce other information like total monthly sales due for respective order etc. 
 
@@ -420,7 +420,7 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img5.png)
+![Data-Manipulation_img5](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 
 

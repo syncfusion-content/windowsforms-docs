@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel-Like Features of GridControl for Syncfusion Essential WindowsForms
-description: This sections provides information about the various features like Excel
+title: MS Excel Like Features in Windows Forms Grid Control control | Syncfusion
+description: Learn about MS Excel Like Features support in Syncfusion Windows Forms Grid Control control and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Excel-Like Features
+# MS Excel Like Features in Windows Forms Grid Control
 The GridControl provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame
@@ -24,7 +24,7 @@ Me.gridControl1.ExcelLikeSelectionFrame = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/CellGrid_img1.png)
+![CellGrid_img1](Excel-Like-Features_images/CellGrid_img1.png)
 
 ## 2016 Excel like Selection Frame 
 2016 Excel like selection frame can be enabled by setting the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ExcelLikeSelectionFrame) and [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ExcelLikeCurrentCell) properties to `true`. The [SelectionFrameOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionFrameOption) property can be used to enable the 2016 Excel like selection frame or 2003 Excel like selection fame by using [SelectionFrameOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.SelectionFrameOption.html# ) enumeration. The default value of the `SelectionFrameOption` property is `SelectionFrameOption.Excel2016`.
@@ -49,7 +49,7 @@ Me.gridControl1.ExcelLikeSelectionFrame = True
 Me.gridControl1.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/CellGrid_img1.png)
+![CellGrid_img1](Excel-Like-Features_images/CellGrid_img1.png)
 
 ### Changing the Selection Border Brush 
 The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderBrush) property.
@@ -63,7 +63,7 @@ this.gridControl1.Model.Options.SelectionBorderBrush = new SolidBrush(Color.Dark
 Me.gridControl1.Model.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/CellGrid_img2.png)
+![CellGrid_img2](Excel-Like-Features_images/CellGrid_img2.png)
 
 ### Changing the Selection Border Thickness 
 The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderThickness) property.
@@ -77,7 +77,7 @@ this.gridControl1.Model.Options.SelectionBorderThickness = 4;
 Me.gridControl1.Model.Options.SelectionBorderThickness = 4
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/CellGrid_img3.png)
+![CellGrid_img3](Excel-Like-Features_images/CellGrid_img3.png)
 
 ### Setting the 2003 Excel like Selection Frame 
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
@@ -91,7 +91,7 @@ this.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Exce
 Me.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/CellGrid_img4.png)
+![CellGrid_img4](Excel-Like-Features_images/CellGrid_img4.png)
 
 ## Excel-like Current Cell
 To have the Excel-Like current cell in the GridControl, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ExcelLikeCurrentCell) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
@@ -107,7 +107,7 @@ this.gridControl1.ExcelLikeCurrentCell = true;
 Me.gridControl1.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/Excel-Like-Features_img2.jpeg)
+![Excel-Like-Features_img2](Excel-Like-Features_images/Excel-Like-Features_img2.jpeg)
 
 ## Excel-like Alignments
 In Excel, by default the strings are aligned to left and the integer, double or decimal values are aligned to the right side of the cell. The text alignments in grid cells can be similar to text alignment in Excel cells by setting the [ExcelLikeAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ExcelLikeAlignment) property to `true`. 
@@ -122,7 +122,7 @@ this.gridControl1.ExcelLikeAlignment = true;
 Me.gridControl1.ExcelLikeAlignment = True
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/Excel-Like-Features_img3.jpeg)
+![Excel-Like-Features_img3](Excel-Like-Features_images/Excel-Like-Features_img3.jpeg)
 
 ## Work Book
 The GridControl can be used like workbook in Excel. This can be achieved by adding the [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html) to the form. In this control, add the number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) (work sheets) to be shown in the workbook. Fill each page with the GridControl to look like the work sheets in excel. The following code snippet will perform the above process,
@@ -159,7 +159,7 @@ Me.tabBarPage2.Controls.Add(gridControl2)
 Me.tabBarPage3.Controls.Add(gridControl3)
 {% endhighlight %}
 {% endtabs %}
-![](Excel-Like-Features_images/Excel-Like-Features_img4.jpeg)
+![Excel-Like-Features_img4](Excel-Like-Features_images/Excel-Like-Features_img4.jpeg)
 
 ## Excel-like Comment Tip
 Excel-like cell comment tips can be included in the GridControl by implementing the[IMouseController](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IMouseController.html) interface. The `GridExcelTipStyleProperties` class is used to define the `Excel-Like comment tip` for the cell. To add, delete or modify the comment, right-click on the cell or left-click the red corner.
@@ -202,7 +202,7 @@ style.ExcelTipText = "Comment for cell 2,2."
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img5.jpeg)
+![Excel-Like-Features_img5](Excel-Like-Features_images/Excel-Like-Features_img5.jpeg)
 
 For more details about the Excel-Like comment tip, refer the following dashboard sample,<br/>
 **&lt;Install Location&gt; \Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\ToolTip\Cell Comment Tip Demo**
@@ -250,7 +250,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
+![Excel-Like-Features_img6](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
 
 ## Freeze Pane
 The GridControl supports Microsoft Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property.
@@ -289,7 +289,7 @@ Me.gridControl1.HighlightFrozenLine = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img7.jpeg)
+![Excel-Like-Features_img7](Excel-Like-Features_images/Excel-Like-Features_img7.jpeg)
 
 The frozen line color can be changed by using [FixedLinesColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_FixedLinesColor) property. This frozen line color will be changed only when the `HighlightFrozenLine` property is enabled.
 
@@ -304,7 +304,7 @@ Me.gridControl1.Model.Properties.FixedLinesColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img8.jpeg)
+![Excel-Like-Features_img8](Excel-Like-Features_images/Excel-Like-Features_img8.jpeg)
 
 ## Copy/Fill Series
 The GridControl can have the copy/fill series like Excel. The copy series is used to copy the content of the current cell to the entire selection whereas the fill series is used to fill the selection with the increment of the current cell. 
@@ -370,7 +370,7 @@ Me.gridControl1.MarkColHeader = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img13.jpeg)
+![Excel-Like-Features_img13](Excel-Like-Features_images/Excel-Like-Features_img13.jpeg)
 
 ## Unhide Columns Using Double Click
 The hidden columns can be shown by double clicking on the column headers as like Excel. This behavior can be determined by using the [UnHideColsOnDblClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_UnHideColsOnDblClick) property. The default value of this property is `true`. So the unhide behavior can be disabled by setting this property as `false`.
@@ -406,7 +406,7 @@ formatCellDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img14.jpeg)
+![Excel-Like-Features_img14](Excel-Like-Features_images/Excel-Like-Features_img14.jpeg)
 
 N> You can refer the [FormatCellDialog](#formatcell-dialog) section for detailed information. 
 
@@ -427,7 +427,7 @@ Me.gridControl1.Model.CoveredRanges.Add(GridRangeInfo.Cells(2, 2, 5, 5))
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img15.jpeg)
+![Excel-Like-Features_img15](Excel-Like-Features_images/Excel-Like-Features_img15.jpeg)
 
 N> For more information about `CoveredRanges`, see the link over [here](/windowsforms/grid/covered-ranges).
 
@@ -456,7 +456,7 @@ Me.gridControl1.Model.Options.MergeCellsLayout = GridMergeCellsLayout.Grid
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img16.jpeg)
+![Excel-Like-Features_img16](Excel-Like-Features_images/Excel-Like-Features_img16.jpeg)
 
 N> Any range of cells cannot be merged like the covered ranges because merging has different functionality than the covered ranges, which allows only to merge the adjacent cells with same data. 
 
@@ -484,7 +484,7 @@ Me.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img17.jpeg)
+![Excel-Like-Features_img17](Excel-Like-Features_images/Excel-Like-Features_img17.jpeg)
 
 For more information about this section, refer the link over [here](/windowsforms/grid/floating).
 
@@ -551,6 +551,6 @@ findReplaceDialog.ShowDialog()
 {% endhighlight %}
 {% endtabs %}
 
-![](Excel-Like-Features_images/Excel-Like-Features_img18.jpeg)
+![Excel-Like-Features_img18](Excel-Like-Features_images/Excel-Like-Features_img18.jpeg)
 
 N> This section has been explained briefly in [Find and Replace](/windowsforms/grid/find-and-replace) section.

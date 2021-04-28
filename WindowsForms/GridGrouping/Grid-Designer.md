@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Designer for Syncfusion Essential WindowsForms
-description: This section provides the information about various options of designer setting for GridGroupingControl
+title: Grid Designer in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Grid Designer support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grid Designer
+# Grid Designer in Windows Forms GridGrouping (GridGroupingControl)
 The GridGroupingControl has strong designer support. The user can control all aspects of grid's appearance through the designer. Additional commands (verbs) will let you save layouts and restore them. 
 
 The user can also use preview feature that will allow you load data into your control and then further set the GridGroupingControl properties that can be persisted as design-time properties.
@@ -31,65 +31,65 @@ Designer provides full drag and drop capability so that the user can group the r
 
 The below example shows the `Sport` column is dragged for grouping,
 
-![](Grid-Designer_images/Grid-Designer_img3.png)
+![Grid-Designer_img3](Grid-Designer_images/Grid-Designer_img3.png)
 
 The below example shows the `Sport` column is grouped in the Grid,
 
-![](Grid-Designer_images/Grid-Designer_img4.png)
+![Grid-Designer_img4](Grid-Designer_images/Grid-Designer_img4.png)
 
 ### Grouping Columns using Property window
 The column can be grouped in the grid by using the [TableDescriptor.GroupedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) property.
 
-![](Grid-Designer_images/Grid-Designer_img5.png)
+![Grid-Designer_img5](Grid-Designer_images/Grid-Designer_img5.png)
 
 The detailed information about `Grouping` has been discussed in this [Grouping](/windowsforms/gridgrouping/) section.
 
 ## Sorting
 Sorting can be done on the table data by simply clicking the desired column header by which the values need to be sorted. Once sorting is done, the grouping grid displays `Sort Icon` in the respective column header to indicate Sort Direction. 
 
-![](Grid-Designer_images/Grid-Designer_img6.png)
+![Grid-Designer_img6](Grid-Designer_images/Grid-Designer_img6.png)
 
 ### Column sorting using Property window
 The user can also make use of the [TableDescriptor.SortedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) property to sort table data wherein you need to provide the column to be sorted and sort order.
 
-![](Grid-Designer_images/Grid-Designer_img7.png)
+![Grid-Designer_img7](Grid-Designer_images/Grid-Designer_img7.png)
 
 The detailed information about `Sorting` has been discussed in this [Sorting](/windowsforms/gridgrouping/) section.
 
 ## Summaries
 Summaries can be added in the designer itself by accessing [TableDescriptor.SummaryRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_SummaryRows) property. The user can add as many summary rows as you need, each with a desired number of summary columns specifying the type of summary, summary format, the column based on whose values the summary has to be calculated and the like for each of the summary columns.
 
-![](Grid-Designer_images/Grid-Designer_img8.png)
+![Grid-Designer_img8](Grid-Designer_images/Grid-Designer_img8.png)
 
 The below example shows the summary is added to the Grid,
 
-![](Grid-Designer_images/Grid-Designer_img9.png)
+![Grid-Designer_img9](Grid-Designer_images/Grid-Designer_img9.png)
 
 The detailed information about `Summaries` has been discussed in this [Summaries](/windowsforms/gridgrouping/) section.
 
 ## Record Filters
 By using the [TableDescriptor.RecordFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) property, you can add row filters for your grid table. Once you have specified filter criteria and column name whose values have to be checked against the given criteria, the grouping grid will display only the subset of records that satisfies the given criteria.
 
-![](Grid-Designer_images/Grid-Designer_img10.png)
+![Grid-Designer_img10](Grid-Designer_images/Grid-Designer_img10.png)
 
 The below example shows the `Sport` column is filtered based on the text `Baseball`,
 
-![](Grid-Designer_images/Grid-Designer_img11.png)
+![Grid-Designer_img11](Grid-Designer_images/Grid-Designer_img11.png)
 
 ### Filter bar
 GridGroupingControl provides `AutoFilterRow`, which can be enabled by setting [ShowFilterBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowFilterBar) property to `true`. Once that is done, the user must enable [AllowFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowFilter) property for the desired columns to enable filtering on those columns.
 
 The following example shows the `ShowFilterBar` property is enabled,
 
-![](Grid-Designer_images/Grid-Designer_img12.png)
+![Grid-Designer_img12](Grid-Designer_images/Grid-Designer_img12.png)
 
 The following example shows the `AllowFilter` property is enabled for `Sport` column,
 
-![](Grid-Designer_images/Grid-Designer_img13.png)
+![Grid-Designer_img13](Grid-Designer_images/Grid-Designer_img13.png)
 
 The following example shows the filter bar drop down showing filtering options for the column `Sport`,
 
-![](Grid-Designer_images/Grid-Designer_img14.png)
+![Grid-Designer_img14](Grid-Designer_images/Grid-Designer_img14.png)
 
 The detailed information about `Filtering` has been discussed in this [Filtering](/windowsforms/gridgrouping/) section.
 
@@ -98,18 +98,18 @@ When there is a need to display calculated values based on the values on other f
 
 The following example shows the Expression field is added for `Winning %` column,
 
-![](Grid-Designer_images/Grid-Designer_img15.png)
+![Grid-Designer_img15](Grid-Designer_images/Grid-Designer_img15.png)
 
 The following example shows the `Winning %` column shows the calculation result,
 
-![](Grid-Designer_images/Grid-Designer_img16.png)
+![Grid-Designer_img16](Grid-Designer_images/Grid-Designer_img16.png)
 
 The detailed information about `ExpressionFields` has been discussed in this [ExpressionFields](/windowsforms/gridgrouping/) section.
 
 ## Relations
 It is possible to specify the relation to be used across the tables in case multiple tables are used. It can be done by accessing [TableDescriptor.Relations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Relations) property wherein the user can specify the relation type, name of the child table, relation keys consisting of the keys in parent and child tables and other information necessary to setup the relation.
 
-![](Grid-Designer_images/Grid-Designer_img17.png)
+![Grid-Designer_img17](Grid-Designer_images/Grid-Designer_img17.png)
 
 The detailed information about `Relations` has been discussed in this [Relation and Hierarchy](/windowsforms/gridgrouping/) section.
 
@@ -118,7 +118,7 @@ The appearance of every grid element can be customized by accessing [Appearance]
 
 To change the appearance of the summary cells, [Appearance.SummaryFieldCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellAppearance.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableCellAppearance_SummaryFieldCell) or related property can be used.
 
-![](Grid-Designer_images/Grid-Designer_img18.png)
+![Grid-Designer_img18](Grid-Designer_images/Grid-Designer_img18.png)
 
 The detailed information about `Appearance` has been discussed in this [Appearance](/windowsforms/gridgrouping/) section.
 
@@ -135,6 +135,6 @@ The GridGroupingControl has the following skins,
 
 To set a skin, [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GridVisualStyles) property can be used. It lists possible skin options in a drop down, which will make the entire grid redrawn with the chosen style.
 
-![](Grid-Designer_images/Grid-Designer_img19.png)
+![Grid-Designer_img19](Grid-Designer_images/Grid-Designer_img19.png)
 
 The detailed information about `Skins` has been discussed in this [Visual Styles](/windowsforms/gridgrouping/) section.

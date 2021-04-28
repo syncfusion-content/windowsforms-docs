@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export-Summary-as-Caption | Windows Forms | Syncfusion
-description: export summary as caption 
+title: Export Summary as Caption in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Export Summary as Caption support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Export Summary as Caption 
+# Export Summary as Caption in Windows Forms GridGrouping (GridGroupingControl)
 
 This feature enables you to export the summary as caption while exporting GridGroupingControl to Excel. 
 

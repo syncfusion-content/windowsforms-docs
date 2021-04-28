@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in GridGroupingControl for Syncfusion Essential Windows Forms
-description: This section explains on how to localize the GridGroupingControl.
+title: Localization Support in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Localization Support support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Localization Support
+# Localization Support in Windows Forms GridGrouping (GridGroupingControl)
 
 Localization support allows you to set the content according to the language or culture of a specific country or region. Essential Grid provides localization support for all controls.
 
@@ -173,7 +173,7 @@ Cannot change part of a merged cell</td></tr>
 
 This will generate the following output.
 
-![](Localization-Support_images/Localization-Support_img1.png)
+![Localization-Support_img1](Localization-Support_images/Localization-Support_img1.png)
 
 
 
@@ -247,7 +247,7 @@ End Function
 {% endhighlight   %}
 {% endtabs %}
 
-![](Localization-Support_images/Localization-Support_img2.png)
+![Localization-Support_img2](Localization-Support_images/Localization-Support_img2.png)
 
 
 

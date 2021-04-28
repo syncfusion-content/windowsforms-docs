@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinForms GridGrouping control | Syncfusion
-description: This section explains on how to add a GridGroupingControl in an application and some of the basic functionalities of it.
+title: Getting Started with Windows Forms GridGrouping control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GridGrouping (GridGroupingControl) control, its elements, and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Getting Started with Windows Forms GridGrouping control
+# Getting Started with Windows Forms GridGrouping
 This section will explain about creating simple GridGroupingControl and the overview of its basic functionalities.
 
 ## Choosing the Best Grid 
