@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Header Customization Settings | WindowsForms | Syncfusion
-description: Header Customization Settings
+title: Header Customization Settings in Navigation Pane | Syncfusion
+description: Learn about Header Customization Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Header customization settings
+# Header Customization Settings in Windows Forms Navigation Pane
 
 ## Header height and font settings
 

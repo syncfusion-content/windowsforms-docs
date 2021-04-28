@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of NavigationView control | Windows Forms | Syncfusion
-description: NavigationView control helps user to navigate through different views by keep tracking of the navigation path.
+title: About Windows Forms NavigationView control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms NavigationView control, its elements and more details.
 platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms NavigationView Overview
 
  `NavigationView` provides a unique interface that can expand a menu structure, that uses the Breadcrumbs technique to keep track of locations and folders.Its enables users to keep track of their location within programs or documents. Breadcrumbs provides a trail for the user to get back to the starting/entry point of a folder.
 

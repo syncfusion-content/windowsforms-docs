@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of NavigationDrawer control | Windows Forms | Syncfusion
-description: NavigationDrawer provides a sliding panel to display menus vertically at the left or right of the view.
+title: About Windows Forms Navigation Drawer control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
 platform: WindowsForms
 control: NavigtaionDrawer 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Navigation Drawer Overview
 
 `NavigationDrawer` is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
 

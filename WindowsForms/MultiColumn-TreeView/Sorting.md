@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting | WindowsForms | Syncfusion
-description: Sorting
+title: Sorting in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Sorting support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms MultiColumn TreeView
 	
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
@@ -83,11 +83,11 @@ Me.MultiColumnTreeView1.Nodes(0).SortOrder = SortOrder.Descending
 
 * Sort in Ascending 
 
-![](Sorting_Images/Sorting_img1.jpg)
+![Sorting_img1](Sorting_Images/Sorting_img1.jpg)
 
 * Sort in Descending
 
-![](Sorting_Images/Sorting_img2.jpg)
+![Sorting_img2](Sorting_Images/Sorting_img2.jpg)
 
 ## Comparing Options for Sorting
 

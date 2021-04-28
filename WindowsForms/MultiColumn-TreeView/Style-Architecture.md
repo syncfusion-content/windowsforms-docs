@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style Architecture | WindowsForms | Syncfusion
-description: Style Architecture
+title: Style Architecture in Windows Forms MultiColumn TreeView | Syncfusion
+description: Learn about Style Architecture support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Style Architecture
+# Style Architecture in Windows Forms MultiColumn TreeView
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a MultiColumnTreeView.TreeNodeAdvStyleInfo. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree’s BaseStyles hatch table.
 
@@ -230,13 +230,13 @@ SortType</td><td>
 Specifies the sort type of the node.</td></tr>
 </table>
 
-![](Style-Architecture_Images/Style-Architecture_img10.jpg)
+![Style-Architecture_img10](Style-Architecture_Images/Style-Architecture_img10.jpg)
 
 Image Showing three Standard styles  for Nodes, SubItem and Column.
 
 The below image displays a gradient style  for all the columns of the MultiColumnTreeView control by changing the properties of Standard Style 
 
-![](Style-Architecture_Images/Style-Architecture_img9.jpg)
+![Style-Architecture_img9](Style-Architecture_Images/Style-Architecture_img9.jpg)
 
 
 ## Node Custom Style
@@ -248,7 +248,7 @@ This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseSt
 
 This overrides the Standard Style settings for the specified nodes and displays the image as follows.
 
-![](Style-Architecture_Images/Style-Architecture_img1.jpg)
+![Style-Architecture_img1](Style-Architecture_Images/Style-Architecture_img1.jpg)
 
 ### Style Settings
 
@@ -406,7 +406,7 @@ SortType</td><td>
 Specifies the sort type of the node.</td></tr>
 </table>
 
-![](Style-Architecture_Images/Style-Architecture_img2.jpg)
+![Style-Architecture_img2](Style-Architecture_Images/Style-Architecture_img2.jpg)
 
 ## Node Level Style
 	
@@ -414,9 +414,9 @@ Setting a Common Style for all the Nodes in a Level
 MultiColumnTreeView lets you add node level styles using the BaseStyles Collection Editor. By default, this style will be applied to all the nodes in the Level1 for NodeLevel1 style, Level2 for NodeLevel2 style and so on.
 You can apply this style to any of the node by using TreeNodeAdv.BaseStyle property for a node. Refer to Style Settings table in Node Specific Style.
 
-![](Style-Architecture_Images/Style-Architecture_img3.jpg)
+![Style-Architecture_img3](Style-Architecture_Images/Style-Architecture_img3.jpg)
 
-![](Style-Architecture_Images/Style-Architecture_img4.jpg)
+![Style-Architecture_img4](Style-Architecture_Images/Style-Architecture_img4.jpg)
 
 ## Column Style
 
@@ -494,11 +494,11 @@ Specifies the 2D border style for the columns, when BorderStyle is set to Fixed 
 ### Adding ColumnStyle
 The editor also lets you add user defined column styles like other styles as follows.
 
-![](Style-Architecture_Images/Style-Architecture_img5.jpg)
+![Style-Architecture_img5](Style-Architecture_Images/Style-Architecture_img5.jpg)
 
 The user-defined column style can be applied to any of the columns, using Columns Editor. This setting overrides the default settings.
 
-![](Style-Architecture_Images/Style-Architecture_img6.jpg)
+![Style-Architecture_img6](Style-Architecture_Images/Style-Architecture_img6.jpg)
 
 ## SubItem Styles
 
@@ -559,6 +559,6 @@ Sets the border style, either FixedSingle or Fixed 3D</td></tr>
 
 User can add and define a SubItem style using the BaseStyles Collection Editor as follows.
 
-![](Style-Architecture_Images/Style-Architecture_img7.jpg)
+![Style-Architecture_img7](Style-Architecture_Images/Style-Architecture_img7.jpg)
 
-![](Style-Architecture_Images/Style-Architecture_img8.jpg)
+![Style-Architecture_img8](Style-Architecture_Images/Style-Architecture_img8.jpg)
