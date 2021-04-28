@@ -1,13 +1,17 @@
 ---
 layout: post
-title: HubTile events | WindowsForms | Syncfusion
-description: What are the Events available in HubTile and purpose of the Events
+title: HubTile and purpose of the Events in WinForms Hub Tile | Syncfusion
+description: Learn about What are the Events available in HubTile and purpose of the Events support in Syncfusion Windows Forms Hub Tile control and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# What are the events available in HubTile and purpose of the events?
+# HubTile and purpose of the Events in WinForms Hub Tile
+
+This page explains HubTile and purpose of the Events in WinForms Hub Tile and more details.
+
+## What are the Events available in HubTile and purpose of the Events in Windows Forms Hub Tile
 
 The Events available in HubTile are as follows,
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion
-description: appearance settings
+title: Appearance Settings in WinForms Domain UpDown | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control and more details.
 platform: WindowsForms
 control: DomainUpdownExt 
 documentation: ug
 ---
-# Appearance Settings
+# Appearance Settings in Windows Forms Domain UpDown (DomainUpdownExt)
 
 This section discusses the border styles and back color that can be applied for DomainUpDownExt control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Navigation in GridControl for Syncfusion Essential Windows Forms
-description: This section explains about the navigation of the current cell in GridControl.
+title: Cell Navigation in Windows Forms Grid Control | Syncfusion
+description: Learn about Cell Navigation support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Cell Navigation
+# Cell Navigation in Windows Forms Grid Control
 This section explains about the cell navigation in GridControl using <kbd>Tab</kbd>, <kbd>Enter</kbd>, arrow keys and other combination of keys. 
 
 The navigation of cells can be identified through the selection of the [CurrentCell](http://help.syncfusion.com/windowsforms/grid/editing) or the range of cells. The [selection](http://help.syncfusion.com/windowsforms/grid/selection) will be changed according to the selection mode set for the GridControl such as [range selection](http://help.syncfusion.com/windowsforms/grid/selection#range-selection) and [record selection](http://help.syncfusion.com/windowsforms/grid/selection#record-selection). 

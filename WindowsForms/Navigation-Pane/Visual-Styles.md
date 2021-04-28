@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Visual Styles | WindowsForms | Syncfusion
-description: Visual Styles
+title: Visual Styles in Windows Forms Navigation Pane control | Syncfusion
+description: Learn about Visual Styles support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Visual styles
+# Visual Styles in Windows Forms Navigation Pane (GroupBar)
 
 The GroupBar control for Windows Forms Supports for below listed [Visual Styles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_VisualStyle). You can easily modify the look using the built-in visual styles.
 

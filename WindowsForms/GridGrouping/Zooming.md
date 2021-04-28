@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming for Syncfusion Essential WindowsForms
-description: This section gives all the information related to zooming functionality in GridGroupingControl
+title: Zooming in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Zooming support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Zooming
+# Zooming in Windows Forms GridGrouping control
 GridGroupingControl supports zooming functionality by magnifying the image of grid for better visualization. Zooming can be enabled by initializing [ZoomGroupingGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly provides this support. 
 
 {% tabs %}
@@ -46,7 +46,7 @@ zoom.zoomGrid("150")
 {% endhighlight %}
 {% endtabs %}
 
-![](Zooming_images/Zooming_img1.png)
+![Zooming_img1](Zooming_images/Zooming_img1.png)
 
 ## Cell Level Zooming
 GridGroupingControl can be zoomed in cell by cell basis by just clicking over the cell. To achieve this functionality, set the [zoomCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_zoomCell) property to `true`.
@@ -68,7 +68,7 @@ ZoomGroupingGrid.zoomCell = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Zooming_images/Zooming_img2.png)
+![Zooming_img2](Zooming_images/Zooming_img2.png)
 
 ## Customize Zooming
 
@@ -92,7 +92,7 @@ zoom.ZoomSize = New Size(250, 400)
 {% endhighlight %}
 {% endtabs %}
 
-![](Zooming_images/Zooming_img3.png)
+![Zooming_img3](Zooming_images/Zooming_img3.png)
 
 ### Zooming in Rectangle Mode
 To enable the rectangle shape zooming, set the [ZoomImageMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_ZoomImageMode)  property to `ImageMode.Rectangle`. The display of the rectangle shape can be controlled by using the [ZoomSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_ZoomSize) property in which you can set the height and width of the rectangle. The default height and width is `150`. The default value of the zoom factor is `1.5`.
@@ -113,7 +113,7 @@ zoom.ZoomImageMode = ZoomGroupingGrid.ImageMode.Rectangle
 zoom.ZoomSize = New Size(250, 400)
 {% endhighlight %}
 {% endtabs %}
-![](Zooming_images/Zooming_img4.png)
+![Zooming_img4](Zooming_images/Zooming_img4.png)
 
 ### Changing Border Color
 The border color can be changed of a cell (which is zoomed) by using the [ZoomBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_ZoomBorderColor) property. By default, no color is set.
@@ -128,7 +128,7 @@ zoom.ZoomBorderColor = Color.ForestGreen;
 zoom.ZoomBorderColor = Color.ForestGreen
 {% endhighlight %}
 {% endtabs %}
-![](Zooming_images/Zooming_img5.png)
+![Zooming_img5](Zooming_images/Zooming_img5.png)
 
 ### Changing Border Size
 The size of the border also can be changed by using the [ZoomBorderSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_ZoomBorderSize) property. By default, the value is `One`. The border value can be reached up to 50, after that the border value will be considered as 50 automatically.
@@ -144,7 +144,7 @@ zoom.ZoomBorderSize = 50
 {% endhighlight %}
 {% endtabs %}
 
-![](Zooming_images/Zooming_img6.png)
+![Zooming_img6](Zooming_images/Zooming_img6.png)
 
 ### Zoom Factor
 In cell level zooming, the zooming factor can be controlled for the zoomed cell by using the [ZoomFactor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#Syncfusion_GridHelperClasses_Zoom_ZoomGroupingGrid_ZoomFactor) property. The default value is `1.5`. The value of the zoom factor should not be greater than `4.0`.
@@ -160,5 +160,5 @@ zoom.ZoomFactor = 2.5f
 {% endhighlight %}
 {% endtabs %}
 
-![](Zooming_images/Zooming_img7.png)
+![Zooming_img7](Zooming_images/Zooming_img7.png)
 

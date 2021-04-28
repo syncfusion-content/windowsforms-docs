@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Primitives | WindowsForms | Syncfusion
-description: primitives
+title: Primitives in Windows Forms GradientPanelExt control | Syncfusion
+description: Learn about Primitives support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Primitives
+# Primitives in Windows Forms GradientPanelExt
 
 One of the most sophisticated features provided by the GradientPanelExt is its ability to include primitives in the borders. 
 
@@ -19,7 +19,7 @@ The primitives that can be included in the GradientPanelExt are,
 
 The primitives for the GradientPanelExt can be included using the GradientPanelExt PrimitiveCollection Editor, which can be opened using the primitives property.
 
-![](GradientPanelExt_images/Overview_img377.jpeg)
+![Overview_img377](GradientPanelExt_images/Overview_img377.jpeg)
 
 The primitive type to be included should be chosen from the Types of Primitives available in the GradientPanelExt Collection Editor, and added to the control. The properties for the primitive can be set in the property grid available at the right side.
 
@@ -57,9 +57,9 @@ Private collapsePrimitive1.Size = New System.Drawing.Size(40, 40)
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img378.jpeg)
+![Overview_img378](GradientPanelExt_images/Overview_img378.jpeg)
 
-![](GradientPanelExt_images/Overview_img379.jpeg)
+![Overview_img379](GradientPanelExt_images/Overview_img379.jpeg)
 
 {% seealso %}
 
@@ -189,7 +189,7 @@ Private Me.imagePrimitive4.PrimitiveBorderStyle = Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img380.jpeg)
+![Overview_img380](GradientPanelExt_images/Overview_img380.jpeg)
 
 {% seealso %} 
 
@@ -268,7 +268,7 @@ gradientPanelExt.Primitives.AddRange(New Syncfusion.Windows.Forms.Tools.Primitiv
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img381.jpeg)
+![Overview_img381](GradientPanelExt_images/Overview_img381.jpeg)
 
 {% seealso %}
 

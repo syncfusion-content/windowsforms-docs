@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Record Navigation Control of GridControl for Syncfusion Essential WindowsForms
-description: This section explains on how to have GridRecordNavigationControl in GridControl.
+title: Record Navigation in Windows Forms Grid Control | Syncfusion
+description: Learn about Record Navigation Control support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Record Navigation Control
+# Record Navigation Control in Windows Forms Grid Control
 The [GridRecordNavigationControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html) is used to navigate between records using a navigation bar at the bottom of the grid. 
 ## Adding Record Navigation
 The record navigation control can be added throw the designer as well as the code. 
@@ -20,19 +20,19 @@ It can be drag and drop from the Toolbox window from the designer along with the
 1. Drag and drop the GridRecordNavigationControl from the toolbox on the form.
 2. Size and position in the proper place.
    
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img1.jpeg)
+   ![Record-Navigation-Control_img1](Record-Navigation-Control_images/Record-Navigation-Control_img1.jpeg)
 
 3. Drag the GridControl from toolbox and drop it on the GridRecordNavigationControl properly which was shown in below screenshot.
    
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img2.jpeg)
+   ![Record-Navigation-Control_img2](Record-Navigation-Control_images/Record-Navigation-Control_img2.jpeg)
 
 4. Populate the GridControl with data.
 
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img3.jpeg)
+   ![Record-Navigation-Control_img3](Record-Navigation-Control_images/Record-Navigation-Control_img3.jpeg)
 
 5. Run the application and get the following screenshot as an Output.
 
-   ![](Record-Navigation-Control_images/Record-Navigation-Control_img4.jpeg)
+   ![Record-Navigation-Control_img4](Record-Navigation-Control_images/Record-Navigation-Control_img4.jpeg)
 
 ### Through Code
 The GridRecordNavigationControl can also be programmatically added to the GridControl.
@@ -88,7 +88,7 @@ Me.Controls.Add(Me.recordNavigationControl1)
 {% endhighlight %}
 {% endtabs %}
 
-![](Record-Navigation-Control_images/Record-Navigation-Control_img5.jpeg)
+![Record-Navigation-Control_img5](Record-Navigation-Control_images/Record-Navigation-Control_img5.jpeg)
 
 ## Customizing Record Navigation Control
 The GridRecordNavigationControl provides the following list of properties for customization,
@@ -120,7 +120,7 @@ this.recordNavigationControl.MaxLabel = "of 1000";
 Me.recordNavigationControl.MaxLabel = "of 1000"
 {% endhighlight %}
 {% endtabs %}
-![](Record-Navigation-Control_images/Record-Navigation-Control_img6.jpeg)
+![Record-Navigation-Control_img6](Record-Navigation-Control_images/Record-Navigation-Control_img6.jpeg)
 
 ### Setting the Maximum Record Count
 The maximum number of record position can be set by using [MaxRecord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_MaxRecord) property.
@@ -186,7 +186,7 @@ Me.recordNavigationControl.NavigationBarWidth = 600
 {% endhighlight %}
 {% endtabs %}
 
-![](Record-Navigation-Control_images/Record-Navigation-Control_img7.jpeg)
+![Record-Navigation-Control_img7](Record-Navigation-Control_images/Record-Navigation-Control_img7.jpeg)
 
 ### Changing the Back Color for the Navigation Bar
 To set back color for the record navigation bar, use the [NavigationBarBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_NavigationBarBackColor) property as of follows.
@@ -202,7 +202,7 @@ Me.recordNavigationControl.NavigationBarBackColor = Color.LightGreen
 {% endhighlight %}
 {% endtabs %}
 
-![](Record-Navigation-Control_images/Record-Navigation-Control_img8.jpeg)
+![Record-Navigation-Control_img8](Record-Navigation-Control_images/Record-Navigation-Control_img8.jpeg)
 
 ### Resetting the Arrow Color
 The disable arrow back color can be reset to default by using the [ResetDisabledArrowColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.RecordNavigationControl.html#Syncfusion_Windows_Forms_RecordNavigationControl_ResetDisabledArrowColor) method.
@@ -289,7 +289,7 @@ this.gridRecordNavigationControl1.NavigationButtons = Syncfusion.Windows.Forms.D
 Me.gridRecordNavigationControl1.NavigationButtons = Syncfusion.Windows.Forms.DisplayArrowButtons.Single
 {% endhighlight %}
 {% endtabs %}
-![](Record-Navigation-Control_images/Record-Navigation-Control_img9.jpeg)
+![Record-Navigation-Control_img9](Record-Navigation-Control_images/Record-Navigation-Control_img9.jpeg)
 
 ## Applying Visual Style
 The GridRecordNavigationControl can be displayed with Metro and Default theme. It can be applied by setting the `Style` property as of follows,

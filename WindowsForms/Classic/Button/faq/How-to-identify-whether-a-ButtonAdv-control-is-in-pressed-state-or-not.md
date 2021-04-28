@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How to identify whether a ButtonAdv control is in pressed state or not | WindowsForms | Syncfusion
-description: How to identify whether a ButtonAdv control is in pressed state or not
+title: How to identify ButtonAdv is in pressed state or not | Syncfusion
+description: Learn about How to Identify a ButtonAdv Control is in Pressed State or Not in Syncfusion Windows Forms ButtonAdv control and more.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# How to Identify whether a ButtonAdv Control is in Pressed State or Not
+# How to identify ButtonAdv is in pressed state or not
+
+This page explains How to Identify whether a ButtonAdv Control is in Pressed State or Not and more details.
+
+## How to Identify whether a ButtonAdv Control is in Pressed State or Not
 
 When ButtonAdv.PushButton property is enabled, the button will remain in its pressed state, when clicked. The state of the button will be present in the property State. So by examining the state property, we can conclude whether the button is in the Pressed state or not. Using the Office2007 visual styles will help better understanding of this feature.
 
@@ -48,4 +52,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](FAQ_images/Overview_img77.jpeg)
+![Overview_img77](FAQ_images/Overview_img77.jpeg)

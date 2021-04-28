@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: style   
+title: Style in Windows Forms Editable ListBox control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Style   
+# Style in Windows Forms Editable ListBox (EditableList)
 
 EditableList supports visual styles such as Default, Metro, Office2016. The style can be set using Style property. 
 
@@ -25,7 +25,7 @@ Me.editableList1.Style = Syncfusion.Windows.Forms.Appearance.Office2016
 
 {% endhighlight %}
 
-![](Style_images/Style_img3.png)
+![Style_img3](Style_images/Style_img3.png)
 
 The Office2016 Style has following Color Schemes
 
@@ -49,7 +49,7 @@ Me.editableList1.Office2016ColorScheme = ScrollBarOffice2016ColorScheme.Colorful
 {% endhighlight %}
 
 
-![](Style_images/Style_img2.png)
+![Style_img2](Style_images/Style_img2.png)
 
 
 

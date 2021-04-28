@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ComboBoxAutoComplete | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ComboBoxAutoComplete Control, its elements, and more.
+title: Getting Started with Windows Forms xptoolbar control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
 
-# Getting Started with Windows Forms ComboBoxAutoComplete
+# Getting Started with Windows Forms ComboBoxAutoComplete(Classic)
 
 
 Implementing a simple ComboBoxAutoComplete can be done in the following ways.
@@ -22,20 +22,20 @@ N> This is applicable only for VS2005.
 
 1. Drag-and-drop a ComboBoxAutoComplete control from the toolbox onto the form.
 
-   ![WindowsForms ComboBoxAutoComplete Overview Image39](ComboBoxAutoComplete-Images/Overview_img39.jpeg) 
+   ![Windows Forms ComboBoxAutoComplete Image39](ComboBoxAutoComplete-Images/Overview_img39.jpeg) 
 
 
 
 2. Add items to ComboBoxAutoComplete using AutoCompleteCustomSource collection editor as shown below.
 
-   ![WindowsForms ComboBoxAutoComplete Overview Image40](ComboBoxAutoComplete-Images/Overview_img40.jpeg)
+   ![Windows Forms ComboBoxAutoComplete Image40](ComboBoxAutoComplete-Images/Overview_img40.jpeg)
 
 
 
 3. Specify the text completion behavior of the control using ComboBoxAutoComplete.AutoCompleteMode. The value of AutoCompleteMode should not be none in this case. See [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoCompleteModes. 
 4. Set AutoCompleteSource to CustomSource as shown below. See  [Source for AutoComplete Control](/windowsforms/autocomplete/datasource#source-for-autocomplete-control) to know the different AutoComplete sources.
 
-    ![WindowsForms ComboBoxAutoComplete Overview Image41](ComboBoxAutoComplete-Images/Overview_img41.jpeg) 
+    ![Windows Forms ComboBoxAutoComplete Image41](ComboBoxAutoComplete-Images/Overview_img41.jpeg) 
 
 
 
@@ -43,7 +43,7 @@ Output
 
 At runtime, type 'C' in the display area of ComboBoxAutoComplete, you will see the autocompletion behavior as shown below.
 
-![WindowsForms ComboBoxAutoComplete Overview Image42](ComboBoxAutoComplete-Images/Overview_img42.jpeg)
+![Overview_img42](ComboBoxAutoComplete-Images/Overview_img42.jpeg)
 
 
 
@@ -110,7 +110,7 @@ Me.Controls.Add(Me.comboBoxAutoComplete1)
 
 4. Run the application.
 
-   ![WindowsForms ComboBoxAutoComplete Overview Image43](ComboBoxAutoComplete-Images/Overview_img43.jpeg)
+   ![Windows Forms ComboBoxAutoComplete Image43](ComboBoxAutoComplete-Images/Overview_img43.jpeg)
 
 
 

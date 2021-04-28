@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data-Binding | WindowsForms | Syncfusion
-description: data binding
+title: Data Binding in Windows Forms Grouping control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Windows Forms Grouping control, its elements and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in Windows Forms Grouping
 
 Essential Grouping lets you sort, group and summarize data. The data needs to be an IList object. For this lesson, we will use an ArrayList of custom objects which have four public properties: A, B, C, and D.
 
@@ -25,7 +25,7 @@ The first thing you need to do is to derive a class that will serve as your cust
 
 
 
-   ![](Data-Binding_images/Data-Binding_img1.png)
+   ![Data-Binding_images1](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -203,7 +203,7 @@ End Sub
 {% endhighlight %} 
 {% endtabs %} 
 
-   ![](Data-Binding_images/Data-Binding_img2.png)
+   ![Data-Binding_images2](Data-Binding_images/Data-Binding_img2.png)
 
 
 
@@ -308,4 +308,4 @@ Console.ReadLine()
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img6.png)
+![Data-Binding_img6](Data-Binding_images/Data-Binding_img6.png)

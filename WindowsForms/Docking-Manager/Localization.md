@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localize the static text in DockingManager
-description: This section explains about the localization support in DockingManager.
+title: Localization in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
-# Localization
+# Localization in Windows Forms Docking Manager
 
 Localization is the process of translating the application resources into different languages for specific cultures. `DockingManager` supports complete localization to any desired language of header and context menus of docking child windows. It can be localized by using [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html).
 
@@ -92,7 +92,7 @@ Me.dockingManager.SetDockLabel(panel4, "产量");
 
 {% endtabs %}
 
-![](Localization_images/Localization_img1.png) 
+![Localization_img1](Localization_images/Localization_img1.png) 
 
 **Localize ContextMenu options**
 
@@ -196,7 +196,7 @@ End Function
 
 {% endtabs %}
 
-![](Localization_images/Localization_img2.png) 
+![Localization_img2](Localization_images/Localization_img2.png) 
 
 N> Refer to the following sample link that demonstrates the localization support in the docking manager.
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\Essential Studio\Version Number\Windows\Tools.Windows\Samples\Docking manager\Localization

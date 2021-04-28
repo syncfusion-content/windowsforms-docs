@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Guides | Windows Forms | Syncfusion
-description: This section explains how to use Essential Diagram's guidelines to align the shapes and their functionalities.
+title: Guides in Windows Forms Diagram control | Syncfusion
+description: Learn about Guides support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Guides
+# Guides in Windows Forms Diagram
 
 Guides for the Diagram control are viewable, non printing guidelines used to align a diagram node with other nodes. They provide support to align a diagram node with the boundary, center, or margin of other nodes.
 

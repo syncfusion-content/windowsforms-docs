@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Design Time Features | WindowsForms | Syncfusion
-description: Design Time Features
+title: DesignTime in Windows Forms xptoolbar control | Syncfusion
+description: Learn about DesignTime support in Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Design Time Features
+# DesignTime in Windows Forms ButtonAdv(Classic)
 
 ButtonEdit control has Smart Tag, which lets you set the properties easily.
 
 Smart Tag Options
 
-![](Overview_images/Overview_img103.jpeg)
+![Overview_img103](Overview_images/Overview_img103.jpeg)
 
 
 The Options are as follows.

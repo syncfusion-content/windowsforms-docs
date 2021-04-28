@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Renderer | WindowsForms | Syncfusion
-description:  html renderer
+title: HTML Renderer in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Renderer support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-#  HTML renderer
+#  HTML renderer in Windows Forms Html Viewer control
 
 As the HTMLUI control supports rendering of web pages, it can be used like a light-weight web browser for compact applications that include links to references.
 
@@ -83,7 +83,7 @@ The following figure shows an HTML Editor rendered using HTMLUI.
 
 
 
-![](HTML-Renderer_images/HTML-Renderer_img1.png)
+![HTML-Renderer_img1](HTML-Renderer_images/HTML-Renderer_img1.png)
 
 
 
@@ -93,7 +93,7 @@ This sample demonstrates the implementation of a Web Browser in HTMLUI.
 
 
 
-![](HTML-Renderer_images/HTML-Renderer_img2.jpeg)
+![HTML-Renderer_img2](HTML-Renderer_images/HTML-Renderer_img2.jpeg)
 
 
 
@@ -111,7 +111,7 @@ This sample demonstrates the implementation of HTML Editors in HTMLUI.
 
 
 
-![](HTML-Renderer_images/HTML-Renderer_img3.jpeg)
+![HTML-Renderer_img3](HTML-Renderer_images/HTML-Renderer_img3.jpeg)
 
 
 

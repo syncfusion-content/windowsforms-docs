@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Docking Window | WindowsForms | Syncfusion
-description: This section explains about how to configure dock window in different sides of DockingManager and also provides details regarding its customization
+title: Dock Window in Windows Forms Docking Manager control | Syncfusion
+description: Learn about Dock Window support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
 
-# Docking Window
+# Dock Window in Windows Forms Docking Manager
 
 The docking manager allows you to dock the control on any of the four sides of the container control, and provides docking hints while dragging the panel over it. This preview will provide information about how the layout will look after dropping the panel to dock.
 

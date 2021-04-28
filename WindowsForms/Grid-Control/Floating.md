@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Floating of GridControl for Syncfusion Essential WindowsForms
-description: This section explains how to add the floating functionality
+title: Floating in Windows Forms Grid Control | Syncfusion
+description: Learn about Floating support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Floating
+# Floating in Windows Forms Grid Control
 Floating cells are those cells whose content floats over empty, adjacent cells. The floating cells can be enabled by setting [GridControl.FloatCellsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_FloatCellsMode) property. The `FloatCellsMode` property has the following enumerations,
 
 * [GridFloatCellsMode.BeforeDisplayCalculation](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFloatCellsMode.html) – This is used to force the floating cells to always be calculated just prior to being displayed. <br/>
@@ -29,7 +29,7 @@ Me.gridControl1.TableStyle.FloatCell = True
 Me.gridControl1.FloatCellsMode = GridFloatCellsMode.OnDemandCalculation
 {% endhighlight %}
 {% endtabs %}
-![](Floating_images/Floating_img1.jpeg)
+![Floating_img1](Floating_images/Floating_img1.jpeg)
 
 ## Preventing Cells from Being Flooded
 To prevent the specific cell from being flooded by another cell, [FloodCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_FloodCell) can be disabled for that cell. 
@@ -64,7 +64,7 @@ Me.gridControl1(6, 4).FloodCell = False
 {% endhighlight %}
 {% endtabs %}
 
-![](Floating_images/Floating_img2.jpeg)
+![Floating_img2](Floating_images/Floating_img2.jpeg)
 
 ## Finding a Floating Range of a Cell
 The [FloatingCells](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html) collection maintains the all the floating ranges of a GridControl. To find a floating range of a cell, [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelFloatingCells.html#Syncfusion_Windows_Forms_Grid_GridModelFloatingCells_FindRange_System_Int32_System_Int32_) method can be used. If the specified cell with row index and column index is inside a floating range, a range will be returned. Otherwise it will return the empty range.
@@ -90,7 +90,7 @@ MessageBox.Show("Float range for cell(4,4) is " & floatRange.Info.ToString() & C
 {% endhighlight %}
 {% endtabs %}
 
-![](Floating_images/Floating_img3.jpeg)
+![Floating_img3](Floating_images/Floating_img3.jpeg)
 
 N> The merged range of a cell can also be determined by using [GetSpannedRangeInfo](/windowsforms/grid/managing-the-rows-and-columns#finding-covered-range-floating-range-or-merged-range-of-a-cell) method instead of using `FindRange` method. 
 

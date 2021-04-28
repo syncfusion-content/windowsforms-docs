@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Support in GridGroupingControl for Syncfusion Essential Windows Forms
-description: This section explains about the touch support in GridGroupingControl
+title: Touch Support in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Touch Support support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support in Windows Forms GridGrouping control
 GridGroupingControl provides the swipe scrolling, panning, zooming and touch selection (bubble selection) touch supports. The touch support for grid can be enabled by setting the [EnableTouchMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_EnableTouchMode) property to `true`. This will enable the grid to support the swiping, panning, touch selection (bubble selection) and zooming. The default value of `EnableTouchMode` property is `false`.
 {% tabs %}
 {% highlight c# %}
@@ -22,7 +22,7 @@ Me.gridGroupingControl1.EnableTouchMode = True
 
 ## Touch Swiping
 GridGroupingControl provides the swipe scrolling support in both horizontal and vertical directions.
-![](TouchSupport_images/DataGrid_img1.png)
+![DataGrid_img1](TouchSupport_images/DataGrid_img1.png)
 
 N> To have the proper horizontal and vertical pixel touch scrolling, the [HScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixel) and [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixel) properties should be set to `true`. By default the `HScrollPixel` and `VScrollPixel` properties is `true`. 
 
@@ -39,7 +39,7 @@ ZoomGroupingGrid zoom = new ZoomGroupingGrid(this.gridGroupingControl1);
 Dim zoom As New ZoomGroupingGrid(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
-![](TouchSupport_images/DataGrid_img2.png)
+![DataGrid_img2](TouchSupport_images/DataGrid_img2.png)
 
 N> The GridGroupingControl does not allow to perform the touch zoom in or out operations when current cell is in editing mode.
 
@@ -62,7 +62,7 @@ Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
-![](TouchSupport_images/DataGrid_img3.png)
+![DataGrid_img3](TouchSupport_images/DataGrid_img3.png)
 
 N> GridGroupingControl does not allow to perform the touch selection operation in 2003 Excel like selection frame. And also grid does not allow to perform the touch selection operations when current cell is in editing mode. This can be avoid by setting the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property to `GridCellActivateAction.DblClickOnCell` or `GridCellActivateAction .None` option.
 
@@ -78,5 +78,5 @@ this.gridGroupingControl1.TableControl.ShowTouchIndicator = false;
 Me.gridGroupingControl1.TableControl.ShowTouchIndicator = False
 {% endhighlight %}
 {% endtabs %}
-![](TouchSupport_images/DataGrid_img4.png)
+![DataGrid_img4](TouchSupport_images/DataGrid_img4.png)
 

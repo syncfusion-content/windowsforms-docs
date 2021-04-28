@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming support in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to add the zooming support in GridControl
+title: Zooming in Windows Forms Grid Control | Syncfusion
+description: Learn about Zooming support in Syncfusion Essential Studio Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 
 ---
-# Zooming 
+# Zooming in Windows Forms Grid Control
 
 The GridControl allows the user to zoom in or out to the entire grid as well as the individual cells. To have this zooming support in grid, the [Syncfusion.GridHelperClasses.Windows.dll](http://help.syncfusion.com/cr/windowsforms) assembly needs to be added into the assembly reference.
 
@@ -39,7 +39,7 @@ Dim size As Integer = zoom.GetCurrentZoomSize(Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_Zooming_images/CellGrid_Zooming_img1.jpeg)
+![CellGrid_Zooming_img1](CellGrid_Zooming_images/CellGrid_Zooming_img1.jpeg)
 
 
 ## Cell Level Zooming
@@ -58,7 +58,7 @@ ZoomGrid.ZoomGridControlCell = True
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_Zooming_images/CellGrid_Zooming_img2.jpeg)
+![CellGrid_Zooming_img2](CellGrid_Zooming_images/CellGrid_Zooming_img2.jpeg)
 
 
 N> The cell level zooming should be enabled for the grid only when the zooming percentage is `100`. 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Border Settings | WindowsForms | Syncfusion
-description: border settings
+title: Border Settings in Windows Forms GradientPanelExt control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms GradientPanelExt control and more details.
 platform: WindowsForms
 control: EditorPackage 
 documentation: ug
 ---
-# Border Settings
+# Border Settings in Windows Forms GradientPanelExt
 
 ## Corner Radius 
 
@@ -39,7 +39,7 @@ Private gradientPanelExt1.CornerRadius = 14
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img388.jpeg)
+![Overview_img388](GradientPanelExt_images/Overview_img388.jpeg)
 
 The CornerRadius can be turned off by giving a value of zero for it.
 
@@ -56,7 +56,7 @@ Private gradientPanelExt1.CornerRadius = 0
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img389.jpeg)
+![Overview_img389](GradientPanelExt_images/Overview_img389.jpeg)
 
 ## Border Gap
 
@@ -90,4 +90,4 @@ Private gradientPanelExt1.BorderGap = 40
 {% endhighlight  %}
 {% endtabs %}
 
-![](GradientPanelExt_images/Overview_img390.jpeg)
+![Overview_img390](GradientPanelExt_images/Overview_img390.jpeg)

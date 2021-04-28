@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Freezing | WindowsForms | Syncfusion
-description: freezing
+title: Freezing in Windows Forms Hub Tile control | Syncfusion
+description: Learn about Freezing support in Syncfusion Windows Forms Hub Tile control, its elements and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# Freezing
+# Freezing in Windows Forms Hub Tile
 
 The Notification and animation of a HubTile can be frozen by enabling the [IsFrozen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.HubTile.html#Syncfusion_Windows_Forms_Tools_HubTile_IsFrozen) property.
 

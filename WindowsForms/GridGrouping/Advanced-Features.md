@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced-Features | Windows Forms | Syncfusion
-description: advanced features
+title: Advanced Features in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Advanced Features support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Advanced Features
+# Advanced Features in Windows Forms GridGrouping Control
 
 ## Custom Grouping
 
@@ -334,7 +334,7 @@ Given below is a sample screen shot.
 
 
 
-![](Advanced-Features_images/Advanced-Features_img1.jpeg) 
+![Advanced-Features_img1](Advanced-Features_images/Advanced-Features_img1.jpeg) 
 
 
 
@@ -544,11 +544,11 @@ End Sub
 
 
 
-![](Advanced-Features_images/Advanced-Features_img2.jpeg) 
+![Advanced-Features_img2](Advanced-Features_images/Advanced-Features_img2.jpeg) 
 
 
 
- ![](Advanced-Features_images/Advanced-Features_img3.jpeg) 
+ ![Advanced-Features_img3](Advanced-Features_images/Advanced-Features_img3.jpeg) 
 
 
 ## Custom Summary
@@ -823,7 +823,7 @@ Loop
 
 2.Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two combo boxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
 
-![](Advanced-Features_images/Advanced-Features_img4.jpeg) 
+![Advanced-Features_img4](Advanced-Features_images/Advanced-Features_img4.jpeg) 
 
 
 
@@ -1116,13 +1116,13 @@ Me.gridGroupingControl1.Appearance.FilterBarCell.CellType = "MyFilterCell"
 
 6.When you run the sample, click the filter drop down and then select custom option to show up our filter dialog. This is shown in the screenshots below.
 
- ![](Advanced-Features_images/Advanced-Features_img5.jpeg) 
+ ![Advanced-Features_img5](Advanced-Features_images/Advanced-Features_img5.jpeg) 
 
 
 
 
 
- ![](Advanced-Features_images/Advanced-Features_img6.jpeg) 
+ ![Advanced-Features_img6](Advanced-Features_images/Advanced-Features_img6.jpeg) 
 
 
 
@@ -1151,7 +1151,7 @@ The following code illustrates how to optimize the filter.
 {% endtabs %}
 
 
-![](Advanced-Features_images/Advanced-Features_img7.jpeg) 
+![Advanced-Features_img7](Advanced-Features_images/Advanced-Features_img7.jpeg) 
 
 
 
@@ -1161,7 +1161,7 @@ You can filter StackedColumnHeader by choosing any one of the columns from the c
 
 The following screenshot displays the Filter Dialog.
 
- ![](Advanced-Features_images/Advanced-Features_img8.png) 
+ ![Advanced-Features_img8](Advanced-Features_images/Advanced-Features_img8.png) 
 
 
 

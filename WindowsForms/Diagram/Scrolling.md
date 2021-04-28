@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrolling | Windows Forms | Syncfusion
-description: Scrolling
+title: Scrolling in Windows Forms Diagram control | Syncfusion
+description: Learn about Scrolling support in Syncfusion Windows Forms Diagram control, its elements and more details.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
 
-# Scrolling
+# Scrolling in Windows Forms Diagram
 
 The interactive features like scrolling, zooming and panning support are discussed in this section:
 
@@ -56,7 +56,7 @@ Sample diagram is as follows,
 
 
 
-![](Scrolling_images/Scrolling_img1.jpeg)
+![Scrolling_img1](Scrolling_images/Scrolling_img1.jpeg)
 
 
 ScrollGranularity determines the level of granularity for scrolling. The value of this property must be greater than 0. This value is multiplied by virtual size of the view in order to get the scroll range. For example, if the virtual size of the view is 100x50 and this property is set to 0.5f, then the horizontal scroll range is set to 0.50 and the vertical scroll range is set to 0.25.
@@ -114,7 +114,7 @@ Me.diagram1.HScrollBar.SmallChange = 200
 {% endtabs %}
 
 
-![](Scrolling_images/Scrolling_img2.jpeg)
+![Scrolling_img2](Scrolling_images/Scrolling_img2.jpeg)
 
 
 
@@ -138,7 +138,7 @@ Diagram has ScrollVirtualBounds property, which determines the bounds of the scr
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img3.jpeg)
+![Scrolling_img3](Scrolling_images/Scrolling_img3.jpeg)
 
 
 
@@ -310,4 +310,4 @@ Programmatically these properties can be set as follows.
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img4.png)
+![Scrolling_img4](Scrolling_images/Scrolling_img4.png)

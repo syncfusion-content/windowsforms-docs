@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | SfNumericTextBox | WindowsForms | Syncfusion
-description: This section provides the information about customizing the appearnce of SfNumericTextBox.
+title: Appearance in Windows Forms Numeric TextBox control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox
 documentation: ug

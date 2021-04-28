@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Grouping for Syncfusion Essential WindowsForms
-description: This section provides the information about the grouping of columns in GridGroupingControl and its functionalities.
+title: Grouping in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Grouping support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grouping
+# Grouping in Windows Forms GridGrouping control
 GridGroupingControl lets you group the data by one or more columns. Data will be organized into a hierarchical structure based on the matching field values. This section will explain about the architecture and what are the possible ways to achieve the Grouping.
 
 If Grouping is enabled in GridGroupingControl, then there will be a specific area at the top of the Grid which shows the grouping options. This area is known as the [GroupDropArea](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html). `GroupDropArea` is made up of a collection of GridControls packed in a panel named [GroupDropPanel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropPanel). The functions and properties of `GroupDropArea`, `GroupDropPanel` and other options related to it will be explained in the upcoming sections.
 
-![](Grouping_images/Grouping_img1.jpeg)
+![Grouping_img1](Grouping_images/Grouping_img1.jpeg)
 
 The grouped columns are maintained by the [GroupedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_GroupedColumns) collection. This collection defines the field to group and the sort. The collection can have multiple entries resulting in nested groups.
 
@@ -45,7 +45,7 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 ### Adding Groups Through Designer
 Grouping can also be done at design time. After binding dataset to the grouping grid, open [TableDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) section in property grid of GridGroupingControl. In that, accessing `GroupedColumns` property will open [SortColumnDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) Editor.
 
-![](Grouping_images/Grouping_img2.jpeg)
+![Grouping_img2](Grouping_images/Grouping_img2.jpeg)
 
 ### Programmatic Grouping
 The data can be grouped by adding the column name to [GroupedColumns.Add](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Add_Syncfusion_Grouping_SortColumnDescriptor_) method.
@@ -61,7 +61,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img3.jpeg)
+![Grouping_img3](Grouping_images/Grouping_img3.jpeg)
 
 By default, the grouping of a column sorts records in the ascending order of their `GroupedColumns` values. It is possible to specify the sort order while grouping. The code below arranges the data in the descending order of their Title field values.
 
@@ -76,7 +76,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img4.jpeg)
+![Grouping_img4](Grouping_images/Grouping_img4.jpeg)
 
 It is also possible to group columns in multiple tables which are used in nested manner. By getting access to the [GroupedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) property of the [ChildTableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RelationDescriptor.html#Syncfusion_Grouping_RelationDescriptor_ChildTableDescriptor) the desired child table can be grouped. 
 
@@ -89,7 +89,7 @@ Me.gridGroupingControl1.TableDescriptor.Relations(0).ChildTableDescriptor.Groupe
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img5.jpeg)
+![Grouping_img5](Grouping_images/Grouping_img5.jpeg)
 
 ## Removing Data Groups
 Grouped Columns provide two methods to remove a specific group from the collection. [Remove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Remove_Syncfusion_Grouping_SortColumnDescriptor_) method deletes the column with a given name from `GroupedColumns` collection. [RemoveAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_RemoveAt_System_Int32_) method deletes the element at the specified index from the collection. As a result of both methods, the table data is ungrouped by that specified column. 
@@ -188,7 +188,7 @@ this.gridGroupingControl1.ShowGroupDropArea = true;
 Me.gridGroupingControl1.ShowGroupDropArea = True
 {% endhighlight %}
 {% endtabs %}
-![](Grouping_images/Grouping_img6.jpeg)
+![Grouping_img6](Grouping_images/Grouping_img6.jpeg)
 
 ### Adding GroupDropArea
 **`ShowGroupDropArea`** property will enable `GroupDropArea` only for the table at the top level. When nested tables are used, drop areas for the child tables need to be added at run time. It is achieved by calling [AddGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_AddGroupDropArea_Syncfusion_Windows_Forms_Grid_Grouping_GridTable_) method, by specifying the respective child table name in its parameter.
@@ -230,7 +230,7 @@ Me.gridGroupingControl1.AddGroupDropArea(CType(orderDetailsTable, GridTable))
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img7.jpeg)
+![Grouping_img7](Grouping_images/Grouping_img7.jpeg)
 
 ### Customizing GroupDropArea
 `GroupDropArea` is made up of a collection of Grid controls packed in a panel named `GroupDropPanel`. A Splitter provides the insulation between `GroupDropPanel` and Grid Table Panel by using the size of Drop Panel that can be adjusted at run time.
@@ -250,7 +250,7 @@ Me.gridGroupingControl1.Splitter.BackColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img8.jpeg)
+![Grouping_img8](Grouping_images/Grouping_img8.jpeg)
 
 Below code can be used to change the BackColor of the `GroupDropArea`.
 
@@ -413,7 +413,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img9.jpeg)
+![Grouping_img9](Grouping_images/Grouping_img9.jpeg)
 
 ### GroupDropArea Position
 By default, GroupDropArea is displayed at the top of the GridGroupingControl. With [GroupDropAreaAlignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupDropAreaAlignment) property, you can align it at the bottom, left, or right of the GridGroupingControl.
@@ -449,19 +449,19 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Righ
 
 The following screen shot shows GroupDropArea positioned at the top of GridGroupingControl.
 
-![](Grouping_images/Grouping_img10.jpeg)
+![Grouping_img10](Grouping_images/Grouping_img10.jpeg)
 
 The following screen shot shows GroupDropArea positioned at the left of GridGroupingControl.
 
-![](Grouping_images/Grouping_img11.jpeg)
+![Grouping_img11](Grouping_images/Grouping_img11.jpeg)
 
 The following screen shot shows GroupDropArea positioned at the bottom of GridGroupingControl.
 
-![](Grouping_images/Grouping_img12.jpeg)
+![Grouping_img12](Grouping_images/Grouping_img12.jpeg)
 
 The following screen shot shows GroupDropArea positioned at the right of GridGroupingControl.
 
-![](Grouping_images/Grouping_img13.jpeg)
+![Grouping_img13](Grouping_images/Grouping_img13.jpeg)
 
 ### Hierarchical GroupDropArea
 To display the data groups in hierarchical mode, [HierarchicalGroupDropArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_HierarchicalGroupDropArea) property needs to be set to true.
@@ -477,7 +477,7 @@ Me.gridGroupingControl1.HierarchicalGroupDropArea = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img14.jpeg)
+![Grouping_img14](Grouping_images/Grouping_img14.jpeg)
 
 Few features supported with `HierarchicalGroupDropArea` are [Dynamic Resizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_DynamicResizing), [Tree Line Placement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_TreeLinePlacement) and [Dynamic removal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_AllowRemove) of the column from being grouped.
 
@@ -512,7 +512,7 @@ Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img15.jpeg)
+![Grouping_img15](Grouping_images/Grouping_img15.jpeg)
 
 **Sample Location**
 &lt;installed Location\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Grouping\Grouping Demo
@@ -533,7 +533,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.AddRange(New Syncfusion.G
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img16.jpeg)
+![Grouping_img16](Grouping_images/Grouping_img16.jpeg)
 
 ## Custom Grouping
 Custom Grouping can be done in GridGroupingControl by using an own custom categorizer object to compare the records and then group them according to the condition given by the user. Create a custom comparer and categorizer using the [IComparer](https://msdn.microsoft.com/en-us/library/system.collections.icomparer%28v=vs.110%29.aspx) and [IGroupByColumnCategorizer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.IGroupByColumnCategorizer.html) interfaces and then assign them to the `SortColumnDescriptor`.
@@ -775,7 +775,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img17.jpeg)
+![Grouping_img17](Grouping_images/Grouping_img17.jpeg)
 
 ## GroupBy-Options
 GridGroupingControl provides a number of options that allows you to control the look and behavior of the groups. AddNewRow, Captions, Headers, Footers and Group Preview rows can be managed. This section will list out the options that allows you to change the behavior of the groups.
@@ -817,7 +817,7 @@ Me.gridGroupingControl1.TableOptions.GroupFooterSectionHeight = 20
 
 Group headers and footers can be populated by handling `QueryCellStyleInfo` event wherein you can check Header and Footer cell types and provide the data. For changing the header and footer text using the `QueryCellStyleInfo`, make use of the KB [link](https://www.syncfusion.com/kb/5697/how-to-change-the-text-in-groupheader-and-groupfooter) over here for reference. 
 
-![](Grouping_images/Grouping_img18.jpeg)
+![Grouping_img18](Grouping_images/Grouping_img18.jpeg)
 
 ### GroupPreviewRows
 [GroupPreviewSection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.GroupPreviewSection.html) is an appropriate place for displaying the memo fields or add custom notes for a given group. It can be enabled by using the **`ShowGroupPreview`** property. The size of the preview row can also be adjusted by using the [GroupPreviewSectionHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_GroupPreviewSectionHeight) property. For populating the preview rows `QueryCellStyleInfo` event can be used.
@@ -838,7 +838,7 @@ Me.gridGroupingControl1.TopLevelGroupOptions.ShowGroupPreview = True
 Me.gridGroupingControl1.TableOptions.GroupPreviewSectionHeight = 50
 {% endhighlight %}
 {% endtabs %}
-![](Grouping_images/Grouping_img19.jpeg)
+![Grouping_img19](Grouping_images/Grouping_img19.jpeg)
 
 ### AddNew Records in Groups
 Each group can optionally have an AddNew row where you can provide the values for a new record. Once a new record is entered, the record will be sorted into the existing record set and will be assigned a group's category automatically. The visibility of the [AddNewRecord](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridAddNewRecord.html) can be controlled by using the [AllowNew](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_AllowNew) property.
@@ -868,7 +868,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowAddNewRecordBeforeDetails = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img20.jpeg)
+![Grouping_img20](Grouping_images/Grouping_img20.jpeg)
 
 ## GroupCaptionSection
 This is the first section within a group that provides a caption bar above column headers. GroupCaptionRows are unbound rows that are created only to combine records into a group. By default, they display group category and the number of items in that group. The following properties can be used to control CaptionSection display.
@@ -876,7 +876,7 @@ This is the first section within a group that provides a caption bar above colum
 * **&lt;GroupOptions&gt;.ShowCaption**- enables the display of caption section; True by default. 
 * **&lt;GroupOptions&gt;.CaptionText**- used to get and set caption text.
 
-![](Grouping_images/Grouping_img21.jpeg)
+![Grouping_img21](Grouping_images/Grouping_img21.jpeg)
 
 ### CaptionText Tokens
 The caption text which is displayed in the GroupCaptionSection can be customized. This can be done by using `CaptionText` property of `GroupOptions`. The followings are the tokens format for caption text customization.
@@ -999,7 +999,7 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img22.jpeg)
+![Grouping_img22](Grouping_images/Grouping_img22.jpeg)
 
 ## Working with Groups
 Grouping Grid architecture can be viewed as a binary where different grid elements like group rows, summary rows, filter rows, etc. form the nodes of the tree having data records at the bottom as leaf nodes. A group can be a final node with records or it can be a node with nested groups rooting a sub tree.
@@ -1113,7 +1113,7 @@ System.Diagnostics.Trace.WriteLine(Me.gridGroupingControl1.Table.Records(3).Pare
 ## Grouped Columns Sorting
 When grouping is applied, the grid will sort the records based on the values of grouped column by default. The sort icon will be also displayed in the grouped column of `GridGroupDropArea`. 
 
-![](Grouping_images/Grouping_img23.jpeg)
+![Grouping_img23](Grouping_images/Grouping_img23.jpeg)
 
 The sorting behavior of the columns when columns are grouped in `GridGroupDropArea` can be changed programmatically by adding the column in the `GroupedColumns` collection with [ListSortDirection](https://msdn.microsoft.com/en-us/library/system.componentmodel.listsortdirection%28v=vs.110%29.aspx).
 

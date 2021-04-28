@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TDIFunctionality | WindowsForms | Syncfusion
-description: This section explains the TDI-Window behavior, tab group items and closing document windows functionality in DockingManager
+title: TDI Window in Windows Forms Docking Manager control | Syncfusion
+description: Learn about TDI Window support in Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
 ---
 
-# TDI Window in DockingManager
+# TDI Window in Windows Forms Docking Manager
 
 Provides support for adding tabbed document windows in the docking manager. To enable the document mode in docking manager, set the [EnableDocumentMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDocumentMode) property to true.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Validation in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to add data validation using the default error provider in GridControl
+title: Data Validation in Windows Forms Grid Control | Syncfusion
+description: Learn about Data Validation support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Data Validation
+# Data Validation in Windows Forms Grid Control
 
 GridControl provides support to validate the cell while editing. When an incorrect data is entered in the cell, it will display an error icon and an error message.  It is also possible to display error icon in row header.
 
@@ -34,7 +34,7 @@ Me.gridControl1.ShowRowHeaderErroricon = True
 
 N> The default value for the [ShowErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCurrentCell.html#Syncfusion_Windows_Forms_Grid_GridCurrentCell_ShowErrorIcon) property value is `true` and the [ShowRowHeaderErrorIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_ShowRowHeaderErroricon)` property value is false`.
 
-![](DataValidation_images/DataValidation_img1.jpeg)
+![DataValidation_img1](DataValidation_images/DataValidation_img1.jpeg)
 
 
 GridControl validates the cell based on the [CellValueType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValueType) property and shows the error message. If `CellValueType` is `int` type and user enters `string` value, then the grid will automatically throw the error message like “Value(x) is not a valid value for Int32” in a message box. Whereas, `x` denotes the entered cell value.
@@ -53,14 +53,14 @@ Me.gridControl1.CurrentCell.ShowErrorMessageBox = False
 {% endhighlight %}
 {% endtabs %}
 
-![](DataValidation_images/DataValidation_img2.jpeg)
+![DataValidation_img2](DataValidation_images/DataValidation_img2.jpeg)
 
 
 ### Error Tips Support
 
 The Error provider will also show the error message in the comment tips while moving the mouse over the error cell.
 
-![](DataValidation_images/DataValidation_img3.jpeg)
+![DataValidation_img3](DataValidation_images/DataValidation_img3.jpeg)
 
 
 N> While the error is occurred, the current cell will not leave from the edit mode. So that the grid will not allow to perform other actions like moving the current cells, clicking, etc. The `Esc` key is used to get out from the exception with the old value of the cell.
@@ -150,7 +150,7 @@ Me.gridControl1.CurrentCell.ValidationErrorText = "This is a String"
 {% endhighlight %}
 {% endtabs %}
 
-![](DataValidation_images/DataValidation_img4.jpeg)
+![DataValidation_img4](DataValidation_images/DataValidation_img4.jpeg)
 
 
 ## Custom validation
@@ -205,7 +205,7 @@ End Sub
 
 When the validation is failed at the `CurrentCellValidating` event, the custom error provider will pop up the error message as of follows,
 
-![](DataValidation_images/DataValidation_img5.jpeg)
+![DataValidation_img5](DataValidation_images/DataValidation_img5.jpeg)
 
 
 ### Handling error message using events

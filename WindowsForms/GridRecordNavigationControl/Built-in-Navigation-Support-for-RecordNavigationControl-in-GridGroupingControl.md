@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Built-in-Navigation-Support-for-RecordNavigationControl-in-GridGroupingControl | Windows Forms | Syncfusion
-description: built-in navigation support for recordnavigationcontrol in gridgroupingcontrol
+title: Built in Navigation in WinForms GridRecordNavigation | Syncfusion
+description: Learn about Built in Navigation Support for RecordNavigationControl in Syncfusion Essential Studio Windows Forms and more details.
 platform: windowsforms
 control: GridRecordNavigation
 documentation: ug
 ---
 
-# Built-in Navigation Support for RecordNavigationControl in GridGroupingControl
+# Built in Navigation in Windows Forms GridRecordNavigationControl
 
 The GridGrouping control provides four types of built-in navigation support to navigate between the first, last, previous, and next records. 
 
@@ -109,4 +109,4 @@ Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
 {% endhighlight %}
 {% endtabs %}
    
-   ![](Builtin_images/Builtin_img1.png)
+   ![Builtin_images1](Builtin_images/Builtin_img1.png)

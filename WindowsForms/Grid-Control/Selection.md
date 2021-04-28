@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Selection of GridControl for Syncfusion Essential Windows Forms
-description: This section explains about what are the selection modes available for GridControl and its usabilities.
+title: Selection in Windows Forms Grid Control | Syncfusion
+description: Learn about Selection support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Selection 
+# Selection in Windows Forms Grid Control
 
 The selection is the process of highlighting. This section will explain about the types of selection available for GridControl and its usability’s. 
 
@@ -26,7 +26,7 @@ Me.gridControl1.AllowSelection = GridSelectionFlags.Any
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img1.jpeg)
+![Selection_img1](Selection_images/Selection_img1.jpeg)
 
 
 ## Record Selection
@@ -45,7 +45,7 @@ Me.gridControl1.ListBoxSelectionMode = SelectionMode.MultiSimple
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img2.jpeg)
+![Selection_img2](Selection_images/Selection_img2.jpeg)
 
 
 ## Adding Selection
@@ -78,7 +78,7 @@ Me.gridControl1.Selections.Add(GridRangeInfo.Cells(2, 2, 5, 4))
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img3.jpeg)
+![Selection_img3](Selection_images/Selection_img3.jpeg)
 
 
 ### Adding Multiple Selected Ranges
@@ -107,7 +107,7 @@ Me.gridControl1.Model.SelectedRanges.Add(GridRangeInfo.Row(5))
 
 The following screen shot shows the grid with multiple selected range,
 
-![](Selection_images/Selection_img4.jpeg)
+![Selection_img4](Selection_images/Selection_img4.jpeg)
 
 
 ## Clearing Selection
@@ -214,7 +214,7 @@ Me.gridControl1.AlphaBlendSelectionColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img5.jpeg)
+![Selection_img5](Selection_images/Selection_img5.jpeg)
 
 
 The selection color of the grid can be reset by using the [ResetAlphaBlendSelectionColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResetAlphaBlendSelectionColor) method. It will reset the default color for selection.
@@ -275,7 +275,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img6.jpeg)
+![Selection_img6](Selection_images/Selection_img6.jpeg)
 
 ## Retrieving Selected Values
 
@@ -317,12 +317,12 @@ Next range
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img7.jpeg)
+![Selection_img7](Selection_images/Selection_img7.jpeg)
 
 
 The selected values are printed in the output screen as of follows,
 
-![](Selection_images/Selection_img8.jpeg)
+![Selection_img8](Selection_images/Selection_img8.jpeg)
 
 
 ## Cell Text Selection
@@ -341,6 +341,6 @@ Me.gridControl1.ActivateCurrentCellBehavior = GridCellActivateAction.SelectAll
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img9.jpeg)
+![Selection_img9](Selection_images/Selection_img9.jpeg)
 
 

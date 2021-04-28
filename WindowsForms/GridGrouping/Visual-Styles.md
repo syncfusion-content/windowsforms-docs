@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting for Syncfusion Essential WindowsForms
-description: This section explains on how to apply visual styles and custom themes in GridGroupingControl.
+title: Visual Styles in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Visual Styles support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Visual Styles
+# Visual Styles in Windows Forms GridGrouping control
 The GridGroupingControl can be displayed with the different themes by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) property. The following themes are available for GridGroupingControl,
 
 * Office2003
@@ -35,7 +35,7 @@ Me.gridGroupingControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualSt
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img1.jpeg)
+![Visual-Style_img1](Visual-Style_images/Visual-Style_img1.jpeg)
 
 N> To apply the enhanced themes to the GridGroupingControl, set [EnableLegacyStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableModel_EnableLegacyStyle) property to `false`. 
 
@@ -52,7 +52,7 @@ GridSkins.ApplySkin(Me.gridGroupingControl1.TableModel, Skins.Vista)
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img2.jpeg)
+![Visual-Style_img2](Visual-Style_images/Visual-Style_img2.jpeg)
 
 The change of visual styles can be handled by using the [ThemesChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event. It will be fired while changing the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GridVisualStyles) of the GridGroupingControl.
 
@@ -132,7 +132,7 @@ Me.gridGroupingControl1.SetMetroStyle(metroColor)
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img3.jpeg)
+![Visual-Style_img3](Visual-Style_images/Visual-Style_img3.jpeg)
 
 ## Modifying Metro Scrollbar Colors
 The scrollbars of the metro visual style can be customized by setting the [MetroColorTable](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroColorTable.html) property as of follows. 
@@ -151,7 +151,7 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ArrowNormalBackGround = Col
 Me.gridGroupingControl1.TableControl.MetroColorTable.ThumbNormal = Color.ForestGreen
 {% endhighlight %}
 {% endtabs %}
-![](Visual-Style_images/Visual-Style_img4.jpeg)
+![Visual-Style_img4](Visual-Style_images/Visual-Style_img4.jpeg)
 
 N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
 
@@ -193,7 +193,7 @@ Me.gridGroupingControl1.SetOffice2016ThemeStyle(GridVisualStyles.Office2016Color
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img7.jpeg)
+![Visual-Style_img7](Visual-Style_images/Visual-Style_img7.jpeg)
 
 ## Modifying Office2016 scrollbar colors
 
@@ -219,7 +219,7 @@ Me.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ThumbNormal = 
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img8.jpeg)
+![Visual-Style_img8](Visual-Style_images/Visual-Style_img8.jpeg)
 
 ## Skin Manager
 Theme can also be applied to the GridGroupingControl by using [SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IContextMenuProvider.html#Syncfusion_Windows_Forms_IContextMenuProvider_SetVisualStyle_Syncfusion_Windows_Forms_VisualStyle_) method of [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
@@ -246,7 +246,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img5.jpeg)
+![Visual-Style_img5](Visual-Style_images/Visual-Style_img5.jpeg)
 
 ## Customizing Visual Styles
 All the elements of the GridGroupingControl appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
@@ -363,5 +363,5 @@ Me.gridGroupingControl1.TableOptions.GridVisualStylesDrawing = New CustomTheme(M
 {% endhighlight %}
 {% endtabs %}
 
-![](Visual-Style_images/Visual-Style_img6.jpeg)
+![Visual-Style_img6](Visual-Style_images/Visual-Style_img6.jpeg)
 

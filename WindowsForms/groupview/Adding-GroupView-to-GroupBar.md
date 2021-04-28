@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Adding GroupView to GroupBar | WindowsForms | Syncfusion
-description: Concepts and Features
+title: Adding GroupView to GroupBar in Windows Forms GroupView | Syncfusion
+description: Learn about Adding GroupView to GroupBar support in Syncfusion Windows Forms GroupView control, its elements and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Adding GroupView to GroupBar
+# Adding GroupView to GroupBar in Windows Forms GroupView
 
 GroupView controls can be created for each of the groups in the GroupBar and initialized with the appropriate set of property values that endow the control with the VS.NET toolbox list type of interface. The GroupView control can be added to the GroupBar by activating each GroupBar Item in turn and dropping the GroupView onto the GroupBar Item's client surface. This will add the GroupView control to the GroupBar Parent and associate it with the particular GroupBar Item.
 
@@ -84,5 +84,5 @@ Me.groupViewItem3.Text = "Desktop"
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img87.jpeg) 
+ ![Overview_images87](Overview_images/Overview_img87.jpeg) 
 

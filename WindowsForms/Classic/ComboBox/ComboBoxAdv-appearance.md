@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxAdv-appearance | WindowsForms | Syncfusion
-description: Customizable features like Border3D Style, Flat BorderColor, Visual style, Color schemes, Image setting and customizable combobox item height.
+title: ComboBoxAdv Appearance in Windows Forms xptoolbar control | Syncfusion
+description: Learn about ComboBoxAdv Appearance support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv Appearance
+# ComboBoxAdv Appearance in Windows Forms ComboBoxAdv(Classic)
 
 This section discusses the below topics. 
 
