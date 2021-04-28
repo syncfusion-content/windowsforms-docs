@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Axis | Windows Forms | Syncfusion
-description: pivot axis
+title: Pivot Axis in Windows Forms Pivot Chart control | Syncfusion
+description: Learn about Pivot Axis support in Syncfusion Windows Forms Pivot Chart control and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Pivot axis
+# Pivot Axis in Windows Forms Pivot Chart
 
 Axis is used to locate data points in the chart area. Generally, two axes are required along each direction to locate a data point in the chart, i.e., horizontal and vertical. The pivot charts typically have two axes to measure and categorize data.
 
@@ -16,7 +16,7 @@ Axis is used to locate data points in the chart area. Generally, two axes are re
 
 By default, horizontal axis (PrimaryXAxis) and vertical axis (PrimaryYAxis) are added to the pivot chart with axis labels, grid lines, and tick lines. You can customize the axis explicitly by adding axis title or removing grid lines and tick lines that are added to the axis. The following screenshot displays the _PivotChart with Axis_
 
-![](Pivot-Axis_images/PivotAxes_image3.png)
+![PivotAxes_image3](Pivot-Axis_images/PivotAxes_image3.png)
 
 ## Axis title
 
@@ -75,7 +75,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.TitleFont = New Font("Arial", 14)
 
 {% endtabs %}
 
-![](Pivot-Axis_images/PivotAxes_image1.png)
+![PivotAxes_image1](Pivot-Axis_images/PivotAxes_image1.png)
 
 *PivotChart displays the axis with title*
 
@@ -148,7 +148,7 @@ Me.chartControl1.PrimaryYAxis.GridLineType.Width = 2F
 
 {% endtabs %}
 
-![](Pivot-Axis_images/PivotAxes_image2.png)
+![PivotAxes_image2](Pivot-Axis_images/PivotAxes_image2.png)
 
 *PivotChart with customized style*
 
@@ -174,7 +174,7 @@ Me.pivotChart1.ChartControl.PrimaryYAxis.IsVisible = False
 
 {% endtabs %}
 
-![](Pivot-Axis_images/PivotAxes_image4.png)
+![PivotAxes_image4](Pivot-Axis_images/PivotAxes_image4.png)
 
 _PivotChart without axis_
 

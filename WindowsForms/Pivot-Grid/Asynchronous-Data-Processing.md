@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Asynchronous Data Processing | PivotGrid | Windows Forms | Syncfusion
-description: Asynchronous data processing
+title: Asynchronous Data Processing in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Asynchronous Data Processing support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Asynchronous Data Processing
+# Asynchronous Data Processing in Windows Forms Pivot Grid
 
 Pivot grid control provides support for loading the data in a unique UI thread i.e., the pivot grid control can perform long running operations asynchronously on a background thread. It also loads the data asynchronously for every layout related operation in the pivot grid.
 

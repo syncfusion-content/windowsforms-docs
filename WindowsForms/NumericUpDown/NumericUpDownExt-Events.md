@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NumericUpDownExt-Events | WindowsForms | Syncfusion
-description: numericupdownext events
+title: NumericUpDownExt Events in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about NumericUpDownExt Events support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# NumericUpDownExt Events
+# NumericUpDownExt Events in Windows Forms NumericUpDown (NumericUpDownExt)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion
-description: Appearance Settings
+title: Appearance Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance Settings in Windows Forms Percent TextBox
 
 ## Background settings
 

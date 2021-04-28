@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering | PivotGrid | Windows Forms | Syncfusion
-description: Filtering support in pivot grid
+title: Filtering in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Filtering support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Filtering
+# Filtering in Windows Forms Pivot Grid
 
 The filtered data displays only a subset of data that meets a specific criteria and hides the data that you do not want to display. The filters are automatically re-applied every time when the pivot grid is refreshed or updated until you remove those filters. In the pivot grid, filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. At a time, 'n' number of filtering conditions can be applied to the pivot grid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summaries | PivotGrid | Windows Forms | Syncfusion
-description: Summaries
+title: Summaries in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Summaries support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Summaries
+# Summaries in Windows Forms Pivot Grid
 
 Summaries can be defined for the pivot calculation values in the pivot grid. Pivot grid control supports 19 built-in summary types to customize the summaries.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior-Settings | WindowsForms | Syncfusion
-description: behavior settings
+title: Behavior Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Behavior Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Behavior Settings
+# Behavior Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 The behavior settings of the NumericUpDownExt control are discussed below.
 

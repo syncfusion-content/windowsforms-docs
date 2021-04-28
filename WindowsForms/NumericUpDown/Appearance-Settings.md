@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
-description: appearance settings
+title: Appearance Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 ## Background settings
 
@@ -42,7 +42,7 @@ Me.numericUpDownExt1.BackColor = System.Drawing.Color.Aquamarine
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img1.png)
+![Appearance-Settings_img1](Appearance-Settings_images/Appearance-Settings_img1.png)
 
 ## Foreground settings
 
@@ -77,13 +77,13 @@ Me.numericUpDownExt1.ForeColor = System.Drawing.Color.DodgerBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img2.png)
+![Appearance-Settings_img2](Appearance-Settings_images/Appearance-Settings_img2.png)
 
 ### Applying foreground color to negative values
 
 It is a good behavior in a NumericUpDownExt control to indicate negative values using a separate color. The IntegerTextBox and DoubleTextBox controls also exhibit the same behavior.
 
-![](Appearance-Settings_images/Appearance-Settings_img3.png)
+![Appearance-Settings_img3](Appearance-Settings_images/Appearance-Settings_img3.png)
 
 To add this feature to the NumericUpdown control, we need to derive the control. For this, we need to include the below given code snippet in the derived class.
 
