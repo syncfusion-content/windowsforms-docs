@@ -7,11 +7,11 @@ control: Diagram
 documentation: ug
 ---
 
-# How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property
+# Custom Handles For Nodes Using the Custom Diagram
 
 This page explains about How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property and more details.
 
-## Custom Handles For Nodes Using the Custom Diagram
+## How To Draw Custom Handles For Nodes Using the CustomHandleRenderer Property
 
 Syncfusion Diagram provides users with the facility to draw their own handles for nodes using the CustomHandleRenderer property which is available in the View class. This property accepts the instances of the UserHandleRenderer class which acts as a base class for the custom Handle Renderer. By using this class, we can derive a class to create our own Handle Renderer and assign it to the View.CustomHandleRenderer property. If this property is assigned as 'Null', it will render the default style of the Handle.
 

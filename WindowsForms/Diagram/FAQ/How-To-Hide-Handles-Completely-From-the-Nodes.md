@@ -6,11 +6,11 @@ platform: windowsforms
 control: Diagram
 documentation: ug
 ---
-# How To Hide Handles Completely From the Nodes
+# Hide Handles Completely From the Nodes Diagram
 
 This page explains about How To Hide Handles Completely From the Nodes and more details.
 
-## Hide Handles Completely From the Nodes Diagram
+## How To Hide Handles Completely From the Nodes
 
 We can hide the handles completely by setting the HandleColor and HandleOutlineColor properties to 'Transparent' as follows.
 
