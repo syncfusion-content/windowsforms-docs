@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource | Windows Forms | Syncfusion
-description: resource
+title: Resource in Windows Forms projio control | Syncfusion
+description: Learn about Resource support in Syncfusion Windows Forms projio (ProjIO) control and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Resource
+# Resource in Windows Forms projio (ProjIO)
 
 Resources class can be used to create resources and add them to Projects. However, creating resources do not assign them to tasks. One has to explicitly assign the resources to tasks using Assignment class (4.4).Using the Resources class, one can create, add, and modify resources to projects. It can also be used to retrieve resource information.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip | Windows Forms | Syncfusion
-description: Provides options to set tooltip for each bar item.
+title: Tooltip in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Tooltip support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Windows Forms PopupMenu
 
 Tooltip is nothing but a hint, showing short format or customized text about the bar item, when mouse hover on it. By enabling [`ShowToolTipInPopUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_ShowToolTipInPopUp) property of bar items, we can display tooltips while mouse hovering. The [`Tooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_Tooltip) property is used to set short format or customized text for each bar item.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms projio control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms projio (ProjIO)
 
 ## Feature Summary
 

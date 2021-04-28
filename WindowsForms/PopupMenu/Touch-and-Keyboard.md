@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Touch and Keyboard | Windows Forms | Syncfusion
-description: The bar items can be selected and the respective action can be done by specifying the shortcuts
+title: Touch and Keyboard in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Touch and Keyboard support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Touch and Keyboard
+# Touch and Keyboard in Windows Forms PopupMenu
 
 ## Touch
 

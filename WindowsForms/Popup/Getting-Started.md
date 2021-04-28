@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Getting Started | Windows Forms | Syncfusion
-description: This section describes how to add popup conrol container added into application and its basic features.
+title: Getting Started with Windows Forms Popup control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Popup (PopupControlContainer) control, its elements and more details.
 platform: WindowsForms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Popup (PopupControlContainer)
 
 ## Assembly deployment
 

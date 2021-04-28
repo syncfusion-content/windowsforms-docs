@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Foreground-Settings | WindowsForms | Syncfusion
-description: foreground settings
+title: Foreground Settings in Windows Forms Progress Bar control | Syncfusion
+description: Learn about Foreground Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Foreground settings
+# Foreground Settings in Windows Forms Progress Bar (ProgressBarAdv)
 
 This section discusses the foreground settings of the ProgressBarAdv control.
 
@@ -49,7 +49,7 @@ Me.progressBarAdv1.ForeSegments = False
 
 {% endtabs %}
 
-![](Overview_images/Overview_img12.jpeg) 
+![Overview_img12](Overview_images/Overview_img12.jpeg) 
 
 ### Segment width
 
@@ -84,7 +84,7 @@ Me.progressBarAdv1.SegmentWidth = 20
 
 {% endtabs %}
 
-![](Overview_images/Overview_img13.jpeg)
+![Overview_img13](Overview_images/Overview_img13.jpeg)
 
 
 
@@ -133,7 +133,7 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Turquoise
 
 {% endtabs %}
 
-![](Overview_images/Overview_img14.jpeg) 
+![Overview_img14](Overview_images/Overview_img14.jpeg) 
 
 
 ### Gradient color settings
@@ -177,7 +177,7 @@ Me.progressBarAdv1.GradientStartColor = System.Drawing.Color.OrangeRed
 
 {% endtabs %}
 
-![](Overview_images/Overview_img15.jpeg) 
+![Overview_img15](Overview_images/Overview_img15.jpeg) 
 
 
 The foreground can be displayed with multiple colors using the property given below.
@@ -223,7 +223,7 @@ Me.progressBarAdv1.StretchMultGrad = False
 
 {% endtabs %}
 
-![](Overview_images/Overview_img16.jpeg) 
+![Overview_img16](Overview_images/Overview_img16.jpeg) 
 
 
 ### Tube color settings
@@ -267,7 +267,7 @@ Me.progressBarAdv1.TubeStartColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Overview_images/Overview_img17.jpeg) 
+![Overview_img17](Overview_images/Overview_img17.jpeg) 
 
 
 
@@ -314,7 +314,7 @@ Me.progressBarAdv1.StretchImage = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img18.jpeg) 
+![Overview_img18](Overview_images/Overview_img18.jpeg) 
 
 
 ## Foreground style settings
@@ -358,7 +358,7 @@ Me.progressBarAdv1.ProgressFallbackStyle = Syncfusion.Windows.Forms.Tools.Progre
 
 {% endtabs %}
 
-![](Overview_images/Overview_img19.jpeg) 
+![Overview_img19](Overview_images/Overview_img19.jpeg) 
 
 
 The Waiting Gradient Style of the ProgressBarAdv consists of the following properties that can be used to change the appearance and behavior of the style.
@@ -420,7 +420,7 @@ Me.progressBarAdv1.ForeColor = System.Drawing.Color.Crimson
 
 {% endtabs %}
 
-![](Overview_images/Overview_img20.jpeg)
+![Overview_img20](Overview_images/Overview_img20.jpeg)
 
 **Metro**
 
@@ -442,7 +442,7 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 {% endtabs %}
 
-![](Overview_images/Overview_img121.png)
+![Overview_img121](Overview_images/Overview_img121.png)
 
 
 **Office2016Colorful**
@@ -465,7 +465,7 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 {% endtabs %}
 
-![](Overview_images/Overview_img117.png)
+![Overview_img117](Overview_images/Overview_img117.png)
 
 **Office2016White**
 
@@ -487,7 +487,7 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 {% endtabs %}
 
-![](Overview_images/Overview_img118.png)
+![Overview_img118](Overview_images/Overview_img118.png)
 
 
 **Office2016DarkGray**
@@ -510,7 +510,7 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 {% endtabs %}
 
-![](Overview_images/Overview_img119.png)
+![Overview_img119](Overview_images/Overview_img119.png)
 
 
 **Office2016Black**
@@ -533,6 +533,6 @@ Me.progressBarAdv1.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarSty
 
 {% endtabs %}
 
-![](Overview_images/Overview_img120.png)
+![Overview_img120](Overview_images/Overview_img120.png)
 
 

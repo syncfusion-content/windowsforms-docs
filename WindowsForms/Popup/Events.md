@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Events | Windows Forms | Syncfusion
-description:  Events
+title: Events in Windows Forms Popup control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
 platform: WindowsForms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms Popup (PopupControlContainer)
 
 PopupControlContainer handles events before and after the Popup is shown.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: Style
+title: Style in Windows Forms Radial Menu control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms Radial Menu control and more details.
 platform: WindowsForms
 control: RadialMenu 
 documentation: ug
 ---
-# Style
+# Style in Windows Forms Radial Menu
 
 The RadialMenu control has rich set of themes for professional representation. You can easily modify the look and feel of the RadialMenu using the built-in themes using the [Style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_Style) property of RadialMenu.
 

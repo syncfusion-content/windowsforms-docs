@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Themes | Windows Forms | Syncfusion
-description: Supports set of visual styles to customize the look and feel of PopupMenu control
+title: Themes in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Themes support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Themes 
+# Themes in Windows Forms PopupMenu
 
 Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_Style) property is used to set the visual style of PopupMenu control. This control provides the following theming options:
 

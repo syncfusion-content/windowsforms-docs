@@ -48,4 +48,4 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 {% endtabs %}
 
-![](Overview_images/Overview_img29.png)
+![Overview_img29](Overview_images/Overview_img29.png)
