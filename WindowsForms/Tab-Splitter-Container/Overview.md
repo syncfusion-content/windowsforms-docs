@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | TabSplitterContainer | WinForms | Syncfusion
-description: WinForms Tab Splitter Container provides visual studio like split view for tab groups to display the same document in different views from a form.
+title: About Windows Forms Tab Splitter Container control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Tab Splitter Container control, its elements and more details.
 platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Tab Splitter Container Overview
 
 The [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html) control provides a VS 2008-style, tabbed, split view of tab groups to help easily render different views of the same document. The splitter comes with advanced options like swapping of splitter pages, adjustable splitter position, both at design time and run time, collapsing of the splitter panes and supports horizontal and vertical orientation of the splitter. This user guide will easily guide you with the features of TabSplitterContainer control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: End-user Capability of Syncfusion SyntaxEditor
-description: This section explains about the various dialog boxes which are used in EditControl
+title: End User Capability in Windows Forms Syntax Editor | Syncfusion
+description: Learn about End User Capability support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
 platform: WindowsForms
 control: Syntax Editor
 documentation: ug
 ---
 
-# End-User Capability
+# End User Capability in Windows Forms Syntax Editor
 
 Supports various built-in dialog windows alike Microsoft Visual Studio text editor.
 

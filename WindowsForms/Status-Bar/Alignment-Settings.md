@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment-Settings | WindowsForms | Syncfusion
-description: alignment settings
+title: Alignment Settings in Windows Forms Status Bar control | Syncfusion
+description: Learn about Alignment Settings support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Alignment Settings
+# Alignment Settings in Windows Forms Status Bar (StatusBarAdv)
 
 The panels and child controls that are added to the StatusBarAdv control can be aligned according to the needs of the user using the property given below.
 
@@ -38,7 +38,7 @@ Me.statusBarAdv1.Alignment = Syncfusion.Windows.Forms.Tools.FlowAlignment.Center
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img73.jpeg) 
+![Overview_img73](Overview_images/Overview_img73.jpeg) 
 
 If the Alignment property is set to 'ChildConstraints', the positioning and resizing of the panels and child controls can be set by calling the SetHAlign() method.
 
@@ -94,6 +94,6 @@ Me.statusBarAdv1.SetHAlign(Me.statusBarAdvPanel1, Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img74.jpeg) 
+![Overview_img74](Overview_images/Overview_img74.jpeg) 
 
 N> The panels can be aligned using the HAlign property of the StatusBarAdvPanel control. See Alignment Settings topic under StatusBarAdvPanel.
