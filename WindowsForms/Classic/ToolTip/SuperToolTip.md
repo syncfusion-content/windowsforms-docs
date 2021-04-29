@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SuperToolTip | WindowsForms | Syncfusion
-description: A tooltip control with customizable appearance and in built themes which enables user to give information using Header, Body and Footer.
+title: SuperToolTip in Windows Forms xptoolbar control | Syncfusion
+description: Learn about SuperToolTip support in Syncfusion Windows Forms SuperToolTip(Classic) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv
 documentation: ug
 ---
 
-# SuperToolTip
+# SuperToolTip in Windows Forms SuperToolTip(Classic)
 
 In Office 2007, Microsoft has introduced a SuperToolTip control to display the tooltip. Essential Tools has also come up with a new control known as the SuperToolTip which, enables the user to give tooltip information.
 
@@ -398,7 +398,7 @@ Me.toolTipInfo2.Footer.Text = "<ul><li>List Item</li></ul>"
 {% endhighlight %}
 {% endtabs %}
 
-## SuperToolTip events
+## SuperToolTip in Windows Forms SuperToolTip(Classic) events
 
 Below are the events for the SuperToolTip control.
 

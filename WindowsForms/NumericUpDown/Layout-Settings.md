@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout-Settings | WindowsForms | Syncfusion
-description: layout settings
+title: Layout Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Layout Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Layout Settings
+# Layout Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 The layout settings of the NumericUpDownExt control are discussed in this section.
 
@@ -44,4 +44,4 @@ Me.numericUpDownExt1.MinimumSize = New System.Drawing.Size(60, 50)
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Settings_images/Layout-Settings_img1.png)
+![Layout-Settings_img1](Layout-Settings_images/Layout-Settings_img1.png)

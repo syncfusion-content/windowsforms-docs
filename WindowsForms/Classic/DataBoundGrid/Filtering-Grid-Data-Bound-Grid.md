@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering-Grid-Data-Bound-Grid | Windows Forms | Syncfusion
-description: filtering grid data bound grid
+title: Filtering GridDataBound Grid in WinForms xptoolbar | Syncfusion
+description: Learn about Filtering Grid Data Bound Grid support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Filtering 
+# Filtering Grid Data Bound Grid in Windows Forms GridDataBoundGrid
 
 We will use an example to illustrate filtering procedure for the grid.
 
@@ -40,7 +40,7 @@ Name LIKE *a</td><td>
 Shows only rows where the Name column ends with *a.</td></tr>
 </table>
 
-![](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img1.jpeg)
+![Filtering-Grid-Data-Bound-Grid_img1](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img1.jpeg)
 
 
 
@@ -77,7 +77,7 @@ filterBar.WireGrid(GridDataBoundGrid1)
 {% endhighlight  %}
 {% endtabs %}
 
-![](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img2.jpeg)
+![Filtering-Grid-Data-Bound-Grid_img2](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img2.jpeg)
 
 
 
@@ -100,7 +100,7 @@ filterBar.WireGrid(gridDataBoundGrid1)
 {% endhighlight  %}
 {% endtabs %}
 
-![](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img3.jpeg) 
+![Filtering-Grid-Data-Bound-Grid_img3](Filtering-Grid-Data-Bound-Grid_images/Filtering-Grid-Data-Bound-Grid_img3.jpeg) 
 
 
 

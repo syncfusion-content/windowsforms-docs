@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Pivot Chart Control | Windows Forms | Syncfusion
-description: The pivot chart control is used to read and visualize the business information in the graphical format.
+title: About Windows Forms Pivot Chart control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Pivot Chart Overview
 
 The pivot chart control for Windows Forms is a lightweight control that reads pivot information and visualizes it in graphical format with the ability to drill up and down. It is easy to use, and includes common chart types ranging from line charts to specialized charts. The pivot chart control is a visually stunning charting component that provides a perfect solution for developers to add advanced, rich, and visually appealing charts to their applications with pivotal data.
 

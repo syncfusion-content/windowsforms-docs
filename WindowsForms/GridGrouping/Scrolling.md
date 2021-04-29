@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling for Syncfusion Essential WindowsForms
-description: This section explains about the scrolling functionality in GridGroupingControl.
+title: Scrolling in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Scrolling support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Scrolling
+# Scrolling in Windows Forms GridGrouping control
 GridGroupingControl provides the built in support for scrolling. Scrolling can be enabled or disabled in GridGroupingControl by using the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupDropArea.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupDropArea_VScrollBehavior) properties respectively.
 
 {% tabs %}
@@ -47,7 +47,7 @@ Me.gridGroupingControl1.TableControl.VScrollBehavior = GridScrollbarMode.Disable
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img1.png)
+![Scrolling_img1](Scrolling_images/Scrolling_img1.png)
 
 Properties and methods related to scrolling has been already explained in our GridControl topic under the section [Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling). You can check that link for more information on Scrolling.
 
@@ -84,7 +84,7 @@ Me.gridGroupingControl1.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeSc
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img2.png)
+![Scrolling_img2](Scrolling_images/Scrolling_img2.png)
 
 ### Setting the Color Scheme for Office Scrollbars 
 The themes can be applied for the office scrollbars by setting the appropriate color scheme. Following are the color schemes available for the GridGroupingControl.
@@ -109,7 +109,7 @@ Me.gridGroupingControl1.Office2010ScrollBarsColorScheme = Syncfusion.Windows.For
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img3.png)
+![Scrolling_img3](Scrolling_images/Scrolling_img3.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ Me.gridGroupingControl1.Office2007ScrollBarsColorScheme = Syncfusion.Windows.For
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img4.png)
+![Scrolling_img4](Scrolling_images/Scrolling_img4.png)
 
 ### Changing the Back Color for the Metro Scrollbars 
 The back color of the metro scrollbars can be customized to the desired color by using [ScrollerBackground](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroColorTable.html#Syncfusion_Windows_Forms_MetroColorTable_ScrollerBackground) property of the `MetroColorTable`.
@@ -150,7 +150,7 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ScrollerBackground = Color.
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img5.png)
+![Scrolling_img5](Scrolling_images/Scrolling_img5.png)
 
 ## Intelligence Mouse Scrolling 
 The contents of the GridGroupingControl can be automatically scrolled by setting the [EnableIntelliMouse](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ISupportIntelliMouse.html#Syncfusion_Windows_Forms_ISupportIntelliMouse_EnableIntelliMouse) property to `true`. 
@@ -166,7 +166,7 @@ Me. gridGroupingControl1.EnableIntelliMouse = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img6.png)
+![Scrolling_img6](Scrolling_images/Scrolling_img6.png)
 
 ## Shared Scrollbars
 The GridGroupingControl can share the scroll bars with other controls by setting the [HScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollBehavior) and [VScrollBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollBehavior)  property value as `GridScrollbarMode.Shared`. This can be used to synchronize the scrolling of multiple grids. 
@@ -198,7 +198,7 @@ Me.gridGroupingControl1.TableControl.VScrollBar.InnerScrollBar = vScrollBar1
 {% endhighlight %}
 {% endtabs %}
 
-![](Scrolling_images/Scrolling_img7.png)
+![Scrolling_img7](Scrolling_images/Scrolling_img7.png)
 
 ## Scrolling Events
 [HorizontalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) and [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) are the events that gets fired each time when scroll bar is moved respectively. The [e.NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) will get the value of the scroll bar for each changes done in the Horizontal and Vertical scroll bar respectively. To know more on events, check the [Scrolling Events](http://help.syncfusion.com/windowsforms/grid/scrolling#scrolling-events ) topic in GridControl.
@@ -258,4 +258,4 @@ Me.scrollersFrame1.AttachedTo = Me. gridGroupingControl1.TableControl
 {% endtabs %}
 N> For more information regarding the custom scrolling and its styles, refer the GridControl topic under the section [Custom Scrolling](http://help.syncfusion.com/windowsforms/grid/scrolling#custom-scrollbar). 
 
-![](Scrolling_images/Scrolling_img8.png)
+![Scrolling_img8](Scrolling_images/Scrolling_img8.png)

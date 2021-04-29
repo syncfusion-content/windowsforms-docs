@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling | WindowsForms | Syncfusion
-description:  scrolling
+title: Scrolling in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Scrolling support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-#  Scrolling
+#  Scrolling in Windows Forms Html Viewer control
 
 The Scroll property of the HTMLUI control helps in loading large HTML documents. This scroll property can be set as per the application. Also the HTMLUI control allows programmatic scrolling to a particular location or element with its extensive scroll properties support.
 
@@ -45,7 +45,7 @@ This sample illustrates the Scrolling feature supported in HTMLUI.
 
 
 
-![](Scrolling_images/Scrolling_img1.jpeg)
+![Scrolling_img1](Scrolling_images/Scrolling_img1.jpeg)
 
 
 

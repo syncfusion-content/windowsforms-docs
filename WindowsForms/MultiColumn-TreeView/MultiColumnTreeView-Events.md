@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MultiColumnTreeView Events | WindowsForms | Syncfusion
-description: Events in MultiColumnTreeView
+title: Events in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# MultiColumnTreeView Events
+# Events in Windows Forms MultiColumn TreeView
 
 ## Node Painting Events
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Editing of GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to edit cells and cell types in GridControl.
+title: Editing in Windows Forms Grid Control | Syncfusion
+description: Learn about Editing support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Editing
+# Editing in Windows Forms Grid Control
 
 GridControl provides editing support for normal cells and also for all the cell types that are existing in it accordingly. For changing the editing behavior make use of the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property. This property will decide whether to edit the cells using single click or double click or disable editing.
 
@@ -513,7 +513,7 @@ Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_img1.jpeg)
+![Editing_img1](Editing_images/Editing_img1.jpeg)
 
 
 ### Applying trimming when cell content exceed its size	
@@ -532,7 +532,7 @@ Me.gridControl1.ColStyles[2].Trimming = StringTrimming.EllipsisWord
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_img2.jpeg)
+![Editing_img2](Editing_images/Editing_img2.jpeg)
 
 
 N> For applying the trimming functionality, make sure that the `WrapText` property is set to `false`.

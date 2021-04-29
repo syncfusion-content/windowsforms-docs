@@ -1,17 +1,17 @@
 ---
 layout: post
-title: ToolTip of GridGroupingControl for Syncfusion Essential WindowsForms
-description: The ToolTip of GridGroupingControl is explained in the following topic.
+title: ToolTip in Windows Forms GridGrouping control | Syncfusion
+description: Learn about ToolTip support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGroupingControl
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in Windows Forms GridGrouping control
 
 The ToolTip can be added to the individual cells. This allows a user to show more information about the particular cell on mouse hover.
 
-![](ToolTip_images/ToolTip_img1.jpeg)
+![ToolTip_img1](ToolTip_images/ToolTip_img1.jpeg)
 
 
 ## Adding ToolTip
@@ -48,7 +48,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img2.jpeg)
+![ToolTip_img2](ToolTip_images/ToolTip_img2.jpeg)
 
 ### Adding ToolTip to Column
 
@@ -65,7 +65,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("City").Appearance.AnyRecordFiel
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img3.jpeg)
+![ToolTip_img3](ToolTip_images/ToolTip_img3.jpeg)
 
 
 ### Adding ToolTip to Nested table
@@ -83,7 +83,7 @@ Me.gridGroupingControl1.GetTableDescriptor("Orders").Columns("Freight").Appearan
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img4.jpeg)
+![ToolTip_img4](ToolTip_images/ToolTip_img4.jpeg)
 
 
 N> The ToolTip will not be enabled for a cell if the `CellTipText` property of the cell is empty.
@@ -236,7 +236,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img5.jpeg)
+![ToolTip_img5](ToolTip_images/ToolTip_img5.jpeg)
 
 
 ## Disabling the ToolTip for particular cell
@@ -308,6 +308,6 @@ Private Sub gridGroupingControl1_QueryCellStyleInfo(ByVal sender As Object, ByVa
 End Sub {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img6.jpeg)
+![ToolTip_img6](ToolTip_images/ToolTip_img6.jpeg)
 
 

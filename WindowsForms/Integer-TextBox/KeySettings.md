@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editors-Package | WindowsForms | Syncfusion
-description: editors package
+title: Key Settings in Windows Forms Integer TextBox control | Syncfusion
+description: Learn about Key Settings support in Syncfusion Windows Forms Integer TextBox (Integertextbox) control and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Key Settings
+# Key Settings in Windows Forms Integer TextBox (Integertextbox)
 
 Sometimes there may be some situation for entering large values, like in Mega, Kilo etc., In such situations, if we add some sort of keyboard support, it will be very much useful for the users.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in Windows Forms GradientPanelExt | Syncfusion
-description: A quick introduction about the panel derived GradientPanelExt controls with the customizable gradient background and rounded borders
+title: About Windows Forms GradientPanelExt control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms GradientPanelExt control, its elements, and more details.
 platform: WindowsForms
 control: GradientPanelExt
 documentation: ug
 ---
 
-# Overview in Windows Forms GradientPanelExt
+# Windows Forms GradientPanelExt Overview
 
 The [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) is an enhanced version of the GradientPanel control. The GradientPanelExt borders can be rounded to any extent as needed. The control also supports hosting of primitives in any of the panel borders. These primitives cover a wide range from text to any .NET control. The gradient colors applied to the GradientPanelExt can be applied to the primitives also. These are no limitations on the number of these primitives.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: VisualItemInputMode-Configuration | WindowsForms | Syncfusion
-description: visualiteminputmode configuration
+title: VisualItemInputmode in Windows Forms MultiColumn TreeView | Syncfusion
+description: Learn about VisualItemInputmode Configuration support in Syncfusion Windows Forms MultiSelectionComboBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# VisualItemInputMode Configuration
+# VisualItemInput mode Configuration in WinForms MultiSelectionComboBox
 
 The property named VisualItemInputMode helps to define the Visual Items in Text Input.
 

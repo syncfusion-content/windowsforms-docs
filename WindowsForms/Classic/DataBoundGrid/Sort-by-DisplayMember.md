@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sort-by-DisplayMember | Windows Forms | Syncfusion
-description: sort by displaymember
+title: Sort by Displaymember in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Sort by Displaymember support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# Sort by DisplayMember
+# Sort by Display member in Windows Forms GridDataBoundGrid(Classic)
 
 By default, sorting is done in DataBound Grid through IBindingList.
 
@@ -99,7 +99,7 @@ End If
 {% endhighlight  %}
 {% endtabs %}
 
-![](Sort-by-DisplayMember_images/Sort-by-DisplayMember_img3.jpeg)
+![Sort-by-DisplayMember_img3](Sort-by-DisplayMember_images/Sort-by-DisplayMember_img3.jpeg)
 
 
 A sample demonstrating this feature is available under the following sample installation path.

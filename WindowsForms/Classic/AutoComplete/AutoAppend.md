@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AutoAppend | WindowsForms | Syncfusion
-description: AutoAppend provides auto persisting of previously entered items in a ComboBox based on a category and populates the combo box 
+title: AutoAppend in Windows Forms xptoolbar control | Syncfusion
+description: Learn about AutoAppend support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
 
-# AutoAppend
+# AutoAppend in Windows Forms ComboBoxAutoComplete(Classic)
 
 Combo box controls are commonly used to select from a particular value from a list of items. In several instances, the developer is not aware of the contents of the combo box before the application is being used. 
 

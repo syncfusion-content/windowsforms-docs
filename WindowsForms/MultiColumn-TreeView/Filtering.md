@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering support | WindowsForms | Syncfusion
-description: Learn about filtering support in Syncfusion Windows Forms  MultiColumnTreeView control and more details.
+title: Filtering in Windows Forms MultiColumn TreeView control | Syncfusion
+description: Learn about Filtering support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# Filtering in MulticolumnTreeView
+# Filtering in Windows Forms MultiColumn TreeView
 
 Filtering is the process of retrieving the values from a collection that satisfies the specified condition.
 
@@ -111,4 +111,4 @@ multiColumnTreeView1.RefreshFilter()
 {% endhighlight %}
 {% endtabs %}
 
-N>[View sample in GitHub](https://github.com/SyncfusionExamples/Filtering-support-in-MultiColumnTreeView).
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/Filtering-support-in-MultiColumnTreeView).

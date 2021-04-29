@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selections | Windows Forms | Syncfusion
-description: selections
+title: Selections in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Selections support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Selections
+# Selections in Windows Forms GridGrouping control
 
 There are two type of selection architectures in a Grid Grouping control. One is designed specifically for Grid Grouping control referred as Record-Based Selection and the other is inherited from GridControlBase named as Model-Based Selection. 
 
@@ -90,7 +90,7 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img1.jpeg) 
+ ![Selections_images1](Selections_images/Selections_img1.jpeg) 
 
 
 
@@ -111,7 +111,7 @@ Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img2.jpeg) 
+ ![Selections_images2](Selections_images/Selections_img2.jpeg) 
 
 
 
@@ -143,7 +143,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.One
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img4.jpeg) 
+ ![Selections_images4](Selections_images/Selections_img4.jpeg) 
 
 
 
@@ -163,7 +163,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiS
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img5.jpeg) 
+ ![Selections_images5](Selections_images/Selections_img5.jpeg) 
 
 
 
@@ -183,7 +183,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionMode = SelectionMode.MultiE
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img6.jpeg) 
+ ![Selections_images6](Selections_images/Selections_img6.jpeg) 
 
 
 
@@ -217,7 +217,7 @@ Me.gridGroupingControl1.TableOptions.SelectionTextColor = Color.Green
 
 Here is the effect of the above settings.
 
- ![](Selections_images/Selections_img7.jpeg) 
+ ![Selections_images7](Selections_images/Selections_img7.jpeg) 
 
 
 
@@ -236,7 +236,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img8.jpeg) 
+ ![Selections_images8](Selections_images/Selections_img8.jpeg) 
 
 
 
@@ -256,7 +256,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img9.jpeg) 
+ ![Selections_images9](Selections_images/Selections_img9.jpeg) 
 
 
 
@@ -276,7 +276,7 @@ Me.gridGroupingControl1.TableOptions.ListBoxSelectionColorOptions = GridListBoxS
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img10.jpeg) 
+ ![Selections_images10](Selections_images/Selections_img10.jpeg) 
 
 
 
@@ -291,7 +291,7 @@ When ListBoxSelection mode is set, you can control the appearance and behavior o
 
 Do not select a current cell in the current row.
 
- ![](Selections_images/Selections_img11.jpeg) 
+ ![Selections_images11](Selections_images/Selections_img11.jpeg) 
 
 
 
@@ -303,7 +303,7 @@ When a current cell is in current row, it is drawn with the original cell backgr
 
 
 
- ![](Selections_images/Selections_img12.jpeg) 
+ ![Selections_images12](Selections_images/Selections_img12.jpeg) 
 
 
 
@@ -315,7 +315,7 @@ When a current cell is in current row, it is drawn with the same color used for 
 
 
 
- ![](Selections_images/Selections_img13.jpeg) 
+ ![Selections_images13](Selections_images/Selections_img13.jpeg) 
 
 
 
@@ -325,7 +325,7 @@ When a current cell is in current row, it is drawn with the same color used for 
 
 Used only with SelectionMode.MultiExtended. Moves current cell when user extends the selection with mouse. The image below illustrates this mode well. Here, the selection started with the cell {R2:C1} and has extended up to Row4 through a mouse drag that made the current cell to shift to the cell {R4:C1} by following the mouse.
 
- ![](Selections_images/Selections_img14.jpeg) 
+ ![Selections_images14](Selections_images/Selections_img14.jpeg) 
 
 
 
@@ -668,7 +668,7 @@ Here is a sample output that focuses the current row and column.
 
 
 
- ![](Selections_images/Selections_img16.jpeg) 
+ ![Selections_images16](Selections_images/Selections_img16.jpeg) 
 
 
 
@@ -701,7 +701,7 @@ t.SelectedRecords.Add(r3)
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img17.jpeg) 
+ ![Selections_images17](Selections_images/Selections_img17.jpeg) 
 
 
 
@@ -749,7 +749,7 @@ Me.gridGroupingControl1.GetTable("Orders").SelectedRecords.Add(or2)
 {% endhighlight %}
 {% endtabs %}
 
- ![](Selections_images/Selections_img19.png) 
+ ![Selections_images19](Selections_images/Selections_img19.png) 
 
 
 Record Search
@@ -881,7 +881,7 @@ Next range
 
 3.Here is a sample screenshot.
 
-![](Selections_images/Selections_img21.jpeg)
+![Selections_img21](Selections_images/Selections_img21.jpeg)
 
 
 ## Excel like Selection Frame
@@ -907,7 +907,7 @@ Me.gridGroupingControl1.TableModel.Options.ExcelLikeSelectionFrame = True
 Me.gridGroupingControl1.TableModel.Options.ExcelLikeCurrentCell = True
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img1.png)
+![DataGrid_img1](Selections_images/DataGrid_img1.png)
 
 ### Setting the 2003 Excel like selection frame
 2003 Excel like selection frame can be enabled by setting the `SelectionFrameOption` property to `SelectionFrameOption.Excel2003`.
@@ -921,7 +921,7 @@ this.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFra
 Me.gridGroupingControl1.TableModel.Options.SelectionFrameOption = SelectionFrameOption.Excel2003
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img2.png)
+![DataGrid_img2](Selections_images/DataGrid_img2.png)
 
 ### Changing the Selection Border Brush
 The selection border brush for 2016 Excel like selection frame can be changed by using the [SelectionBorderBrush](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderBrush) property.
@@ -935,7 +935,7 @@ this.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = new SolidBru
 Me.gridGroupingControl1.TableModel.Options.SelectionBorderBrush = New SolidBrush(Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img3.png)
+![DataGrid_img3](Selections_images/DataGrid_img3.png)
 
 ### Changing the Selection Border Thickness
 The selection border thickness for 2016 Excel like selection frame can be changed by using the [SelectionBorderThickness](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_SelectionBorderThickness) property.
@@ -949,4 +949,4 @@ this.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4;
 Me.gridGroupingControl1.TableModel.Options.SelectionBorderThickness = 4
 {% endhighlight %}
 {% endtabs %}
-![](Selections_images/DataGrid_img4.png)
+![DataGrid_img4](Selections_images/DataGrid_img4.png)

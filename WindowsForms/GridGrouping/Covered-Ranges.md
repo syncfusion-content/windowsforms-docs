@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Covered Ranges for Syncfusion Essential WindowsForms
-description: This sections explains on how to add covered ranges in GridGroupingControl.
+title: Covered Ranges in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Covered Ranges support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Covered Ranges
+# Covered Ranges in Windows Forms GridGrouping Control
 The GridGroupingControl supports the options for adding the covered ranges. It is the process of combining two or more adjacent cells, rows or columns and displayed with in a single cell. This can be achieved by adding the range of cells to the [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_CoveredRanges) collection.
 
 {% tabs %}
@@ -21,7 +21,7 @@ Me.gridGroupingControl1.TableModel.CoveredRanges.Add(GridRangeInfo.Cells(5, 3, 4
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img1.png)
+![Covered-Ranges_img1](Covered-Ranges_images/Covered-Ranges_img1.png)
 
 N> When the sorting is applied on the columns, the covered ranges will not move according to the record index. It will remain covered for the previous range of cells.
 
@@ -64,7 +64,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img2.png)
+![Covered-Ranges_img2](Covered-Ranges_images/Covered-Ranges_img2.png)
 
 ## Finding the Covered Range of a Cell
 The covered range for the given cell can be found by using the [Find](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges.html#Syncfusion_Windows_Forms_Grid_GridModelCoveredRanges_Find_System_Int32_System_Int32_Syncfusion_Windows_Forms_Grid_GridRangeInfo__) and [FindRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCoveredRanges.html#Syncfusion_Windows_Forms_Grid_GridModelCoveredRanges_FindRange_System_Int32_System_Int32_) methods.
@@ -97,7 +97,7 @@ MessageBox.Show("The covered range of the cell[5,3] is :" & range1.ToString() & 
 {% endhighlight %}
 {% endtabs %}
 
-![](Covered-Ranges_images/Covered-Ranges_img3.png)
+![Covered-Ranges_img3](Covered-Ranges_images/Covered-Ranges_img3.png)
 
 N> The `CoveredRange` of a cell can also be determined by using [GetSpannedRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_GetSpannedRangeInfo_System_Int32_System_Int32_Syncfusion_Windows_Forms_Grid_GridRangeInfo__) method instead of using `FindRange` method. 
 

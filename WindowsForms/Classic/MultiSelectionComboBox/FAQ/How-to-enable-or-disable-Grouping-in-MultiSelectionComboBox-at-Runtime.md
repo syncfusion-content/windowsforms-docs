@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-enable-or-disable-Grouping-in-MultiSelectionComboBox-at-Runtime | WindowsForms | Syncfusion
-description: how to enable or disable grouping in multiselectioncombobox at runtime
+title: MultiSelectionComboBox at Runtime | WindowsForms | Syncfusion
+description: Learn about How to Enable or Disable Grouping in Syncfusion Windows Forms MultiSelectionComboBox control and more.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime
+# MultiSelectionCombobox at Runtime in Windows Forms
+
+This page explains How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime and more details.
+
+## How to Enable or Disable Grouping in MultiSelectionComboBox at Runtime
 
 In MultiSelectionComboBox, grouping based on initial character can be enabled or disabled at runtime using the following code sample.
 

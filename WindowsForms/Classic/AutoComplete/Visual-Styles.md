@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Styles | WindowsForms | Syncfusion
-description: Visual Styles
+title: Visual Styles in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Visual Styles support in Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
 ---
 
-# Visual Styles
+# Visual Styles in Windows Forms ComboBoxAutoComplete(Classic)
 
 Visual Styles for the ComboBoxAutoComplete control can be set using VisualStyle property. The styles are,
 
@@ -34,7 +34,7 @@ Me.comboBoxAutoComplete1.VisualStyle = Syncfusion.Windows.Forms.Tools.ThemedComb
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAutoComplete-Images/Overview_img51.jpeg)
+![Overview_img51](ComboBoxAutoComplete-Images/Overview_img51.jpeg)
 
 
 
@@ -61,4 +61,4 @@ Office2007Colors.ApplyManagedColors(this, Color.LightGreen)
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAutoComplete-Images/Overview_img53.jpeg)
+![Overview_img53](ComboBoxAutoComplete-Images/Overview_img53.jpeg)

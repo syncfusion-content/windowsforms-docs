@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border-Settings | WindowsForms | Syncfusion
-description: border settings
+title: Border Settings in Windows Forms NumericUpDown control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Border Settings
+# Border Settings in Windows Forms NumericUpDown (NumericUpDownExt)
 
 This section discusses the Border Settings of the NumericUpDownExt control.
 
@@ -56,7 +56,7 @@ Me.numericUpDownExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![](Border-Settings_images/Border-Settings_img1.png)
+![Border-Settings_img1](Border-Settings_images/Border-Settings_img1.png)
 
 We can display a themed border around the NumericUpDownExt control. This can be done using the property given below.
 
@@ -89,7 +89,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Border-Settings_images/Border-Settings_img3.png)
+![Border-Settings_img3](Border-Settings_images/Border-Settings_img3.png)
 
 A sample which demonstrates the Border Settings of NumericUpDownExt control is available in the below sample installation path.
 

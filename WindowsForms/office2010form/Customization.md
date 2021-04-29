@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Caption-Settings in Windows Form | Syncfusion
-description: This section explains about the caption settings in Office2010Form and more details for windows forms.
+title: Customization in Windows Forms Office2010Form control | Syncfusion
+description: Learn about Customization support in Syncfusion Windows Forms Office2010Form control and more details.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug

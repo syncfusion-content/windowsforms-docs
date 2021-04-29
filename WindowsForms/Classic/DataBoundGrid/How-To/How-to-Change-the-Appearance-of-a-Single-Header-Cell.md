@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-Change-the-Appearance-of-a-Single-Header-Cell | Windows Forms | Syncfusion
-description: how to change the appearance of a single header cell
+title: Appearance of a Single Header Cell DataBoundGrid | Syncfusion
+description: Learn about How to Change the Appearance of a Single Header Cell support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Change the Appearance of a Single Header Cell
+# Appearance of a Single Header Cell DataBoundGrid
+
+This page explains How to Change the Appearance of a Single Header Cell and more details.
+
+## How to Change the Appearance of a Single Header Cell
 
 To make changes to individual cells (header cells or otherwise), you must implement PrepareViewStyleInfo event.
 

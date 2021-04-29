@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Performance of GridControl for Syncfusion Essential WindowsForms
-description: This section summarizes the performance information of GridControl.
+title: Performance in Windows Forms Grid Control | Syncfusion
+description: Learn about Performance support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: WindowsForms
 control: GridControl
 documentation: ug
 ---
 
-# Performance
+# Performance in Windows Forms Grid Control
 GridControl has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without its performance being affected.
 
 ## High Frequency Real Time Updates
 GridControl supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.
 
 Let’s consider an example, in which a timer, changes the value of cells in short intervals. This example draws cell changes directly to the graphics context instead of performing an Invalidate. It shows user text using GDI instead of GDI+ and also shows how to optimize updates for inserting and removing rows. User can start multiple instances without slowing down the machine and can confirm the same by viewing Task Manager CPU usage while the sample runs. 
-![](Performance_images/Performance_img1.png)
+![Performance_img1](Performance_images/Performance_img1.png)
 
 A sample demonstrating this feature is available under the following sample installation path. <br/>
 **&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Performance\Trader Grid Test Demo**
@@ -127,7 +127,7 @@ End Sub
 
 N> To know about the Virtual mode in GridControl, refer the link over [here](http://help.syncfusion.com/windowsforms/grid/virtual-grid).
 
-![](Performance_images/Performance_img2.png)
+![Performance_img2](Performance_images/Performance_img2.png)
 
 A sample demonstrating this feature is available under the following sample installation path.<br/>
 ***&lt;Install Location&gt;\Syncfusion\EssentialStudio\[Version Number]\Windows\Grid.Windows\Samples\Virtual Grid\Grid Population Demo\\***

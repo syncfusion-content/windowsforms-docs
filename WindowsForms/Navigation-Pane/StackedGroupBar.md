@@ -1,12 +1,12 @@
 ---
 layout: post
-title: StackedGroupBar  | WindowsForms | Syncfusion
-description: StackedGroupBar 
+title: StackedGroupBar in Windows Forms Navigation Pane control | Syncfusion
+description: Learn about StackedGroupBar support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# StackedGroupBar
+# StackedGroupBar in Windows Forms Navigation Pane (GroupBar)
 
 When the GroupBar is in StackedMode, its header height can be controlled by [HeaderHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_HeaderHeight) property.
 

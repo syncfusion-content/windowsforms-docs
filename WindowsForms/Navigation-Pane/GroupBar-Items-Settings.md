@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroupBar Items Settings | WindowsForms | Syncfusion
-description: GroupBar Items Settings
+title: GroupBar Items Settings in Windows Forms Navigation Pane | Syncfusion
+description: Learn about GroupBar Items Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar items settings
+# GroupBar Items Settings in Windows Forms Navigation Pane (GroupBar)
 
 This section discusses the various settings that can be applied to the GroupBar Items of the GroupBar control.
 

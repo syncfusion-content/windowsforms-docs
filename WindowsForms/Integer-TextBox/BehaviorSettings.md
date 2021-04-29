@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Behavior Settings | WindowsForms | Syncfusion
-description: behavior settings
+title: Behavior Settings in Windows Forms Integer TextBox | Syncfusion
+description: Learn about Behavior Settings support in Syncfusion Windows Forms Integer TextBox control, its elements and more details.
 platform: WindowsForms
 control: Tools
 documentation: ug
 ---
 
-# Behavior Settings
+# Behavior Settings in Windows Forms Integer TextBox
 
 The behavior settings of the IntegerTextBox control are discussed below.
 

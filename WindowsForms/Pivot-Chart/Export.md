@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export | Windows Forms | Syncfusion
-description: export
+title: Exporting in Windows Forms Pivot Chart control | Syncfusion
+description: Learn about Exporting support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Export
+# Exporting in Windows Forms Pivot Chart
 
 You can export pivot data to Microsoft Excel. The exported data interaction is enabled in the Excel.
 

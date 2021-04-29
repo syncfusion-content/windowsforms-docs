@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Grouping | Syncfusion
-description: This section explains about the grouping library for windows forms and it's important key features such as grouping, expression and etc
+title: About Windows Forms Grouping control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Grouping control, its elements, and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Grouping Overview
 
 Essential Grouping is a 100% Native .NET library that provides you with support for managing and manipulating tabular information without dependencies on any particular UI component. Our grouping Framework can be used in any .NET environment, including C#, VB.NET, and managed C++.
 

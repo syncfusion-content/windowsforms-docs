@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | WindowsForms | Syncfusion
-description: Steps to add button in WinForms application.
+title: Getting Started with Windows Forms xptoolbar control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: ButtonAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms ButtonAdv(Classic)
 
 This section explains how to create a new Windows Forms project in Visual Studio and add **ButtonAdv"** with it's basic functionalities.
 

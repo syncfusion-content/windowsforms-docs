@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Color-Schemes in Windows Form | Syncfusion
-description: This section explains about the color schemes, background color in Office2010Form and more details for windows forms.
+title: Color Schemes in Windows Forms Office2010Form control | Syncfusion
+description: Learn about Color Schemes support in Syncfusion Windows Forms Office2010Form control and more details.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---
 
-# Color Schemes in Windows Forms Office2010Form (office2010form)
+# Color Schemes in Windows Forms Office2010Form
 
 Office2010Form supports following office color schemes which can be edited through `ColorScheme` property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting of GridControl for Syncfusion Essential Windows Forms
-description: This section explains about the exporting of GridControl to the Excel, Pdf, Word, Html and CSV format.
+title: Exporting in Windows Forms Grid Control | Syncfusion
+description: Learn about Exporting support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
 
-# Exporting
+# Exporting in Windows Forms Grid Control
 The columns and rows of the grid can be exported to the Excel, PDF and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
 
 ## Excel Export
@@ -35,7 +35,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-![](Exporting_images/Exporting_img1.png)
+![Exporting_img1](Exporting_images/Exporting_img1.png)
 
 ### Exporting Options
 There are several options available for customizing the exporting. 
@@ -66,7 +66,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "SampleExcel.xlsx", ConverterO
 {% endhighlight %}
 {% endtabs %}
 
-![](Exporting_images/Exporting_img2.jpeg)
+![Exporting_img2](Exporting_images/Exporting_img2.jpeg)
 
 ### Exporting Borders and Images
 The borders and Images of the GridControl can be exported to the Excel by using the [ExportBorders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_ExportBorders) and [ExportImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_ExportImage) properties.
@@ -92,7 +92,7 @@ excelConverter.ExportImage = True
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img3.jpeg)
+![Exporting_img3](Exporting_images/Exporting_img3.jpeg)
 
 N> The `ExportBorders` lets you decide whether borders can be exported to Excel. If this property is `false`, the default border style of the Excel will be set. The `GridLines` of the Excel sheet can be enabled or disabled by using [ShowGridLines](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ShowGridLines) property.
 
@@ -123,7 +123,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptio
 {% endhighlight %}
 {% endtabs %}
 
-![](Exporting_images/Exporting_img4.jpeg)
+![Exporting_img4](Exporting_images/Exporting_img4.jpeg)
 
 ### Setting Default Row Height and Column Width
 By default, the `GridExcelConverterControl` provides support to export the content with its corresponding row height and column width. The default row height and column width can be set by using [DefaultColumnWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_DefaultColumnWidth) and [DefaultRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_DefaultRowHeight) property.
@@ -172,7 +172,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptio
 {% endhighlight %}
 {% endtabs %}
 
-![](Exporting_images/Exporting_img5.jpeg)
+![Exporting_img5](Exporting_images/Exporting_img5.jpeg)
 
 ### Exporting the Range of Cells
 The `GridExcelConverterControl` lets you export a particular range of cells to Excel. The range can be a cell, a range of cells, a row or a column. 
@@ -194,7 +194,7 @@ Dim converter As New GridExcelConverterControl()
 converter.ExportRange(GridRangeInfo.Rows(4, 6), Me.gridControl1.Model, "FileName", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img6.jpeg)
+![Exporting_img6](Exporting_images/Exporting_img6.jpeg)
 
 ### Exporting the Selected Ranges
 The `GridExcelConverterControl` provides support to export the ranges which are all selected in the GridControl. To export the selected ranges to Excel, the [SelectedExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_SelectedExport_Syncfusion_Windows_Forms_Grid_GridModel_System_String_Syncfusion_GridExcelConverter_ConverterOptions_) method can be used.
@@ -214,7 +214,7 @@ Dim converter As New GridExcelConverterControl()
 converter. SelectedExport(Me.gridControl1.Model, "FileName", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img7.jpeg)
+![Exporting_img7](Exporting_images/Exporting_img7.jpeg)
 
 ### Exporting without Styling
 The GridControl will be exported to Excel with styles including font, back color, text color, number formats, images, borders, alignments etc., by default. The exporting of styles can be disabled by using [ExportStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html#Syncfusion_GridExcelConverter_GridExcelConverterBase_ExportStyle) property. This can be used to increase the exporting performance.
@@ -233,7 +233,7 @@ Dim excelConverter As New GridExcelConverterControl()
 excelConverter.ExportStyle = true excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xls", ConverterOptions.Default)
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img8.jpeg)
+![Exporting_img8](Exporting_images/Exporting_img8.jpeg)
 
 ### Handling Hidden Rows and Columns Exporting
 By default, the entire grid data can be exported to Excel even the grid has hidden columns and rows. The exporting of hidden rows and columns can be handled by using [ExportHiddenRowsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ExportHiddenRowsMode) and [ExportHiddenColumnsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ExportHiddenColumnsMode) properties.
@@ -264,7 +264,7 @@ excelConverter.ExportHiddenRowsMode = GridExcelConverterControl.ExportHiddenRows
 excelConverter.GridToExcel(Me.gridControl1.Model, "FileName.xlsx")
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img9.jpeg)
+![Exporting_img9](Exporting_images/Exporting_img9.jpeg)
 
 ### Exporting the GridControl to Specific Excel version 
 The GridControl can be exported to the specific Excel version (like Excel 2010). The [ExcelVersion](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_ExcelVersion) property can be used to export the GridControl to specific Excel version.
@@ -385,7 +385,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 The following example shows the row back color is changed to pink color in Excel sheet,
-![](Exporting_images/Exporting_img10.jpeg)
+![Exporting_img10](Exporting_images/Exporting_img10.jpeg)
 
 ## PDF Exporting
 To Export the contents of the grid to PDF file, use the [GridPDFConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To have this class, refer the `Syncfusion.PDF.Base.dll` and `GridHelperClasses.Windows.dll` to the application. The[ExportToPDF](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdf_Syncfusion_Pdf_PdfDocument_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of this converter is used to export the content of grid to the PDF. 
@@ -407,7 +407,7 @@ Dim pdfConverter As New GridPDFConverter()
 pdfConverter.ExportToPdf("Sample.pdf", Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img11.jpeg)
+![Exporting_img11](Exporting_images/Exporting_img11.jpeg)
 
 ### Adding Header/Footer 
 The PDF converter provides the options to export the contents of the grid with header/footer. This can be achieved by enabling the [ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ShowHeader) and [ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ShowFooter) properties of the converter. 
@@ -650,7 +650,7 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
-![](Exporting_images/Exporting_img12.jpeg)
+![Exporting_img12](Exporting_images/Exporting_img12.jpeg)
 
 N> For more information about the `DrawPDFHeader` and `DrawPDFFooter` events, please refer the below dashboard sample,
 N>
@@ -710,7 +710,7 @@ void converter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Exporting_images/Exporting_img13.jpg)
+![Exporting_img13](Exporting_images/Exporting_img13.jpg)
  
 ## CSV Exporting
 The [GridCSVConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html) lets you export the GridControl content to `CSV` format by using [GridToCSV](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_GridToCSV_Syncfusion_Windows_Forms_Grid_GridControlBase_System_String_) method. In this technique, the content only will be exported without any styles.

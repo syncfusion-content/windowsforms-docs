@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Settings | WindowsForms | Syncfusion
-description: Key Settings
+title: Key Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Key Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Key Settings
+# Key Settings in Windows Forms Percent TextBox
 
 Sometimes there may occur some situations for entering large values, like in Mega, Kilo etc. In such situations if we add some sort of keyboard support, it will be very much useful for the users.
 

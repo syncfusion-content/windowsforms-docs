@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Working with Hyperlinks in Windows Forms PDF Viewer | Syncfusion
-description: Hyperlink navigation support in PDF Viewer WinForms detects hyperlinks present in PDF and on tapping it, will open the URL in the browser. 
+description: Learn about Working with Hyperlinks support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-# Working with Hyperlinks 
+# Working with Hyperlinks in Windows Forms PDF Viewer (PdfViewerControl)
 
 PDF Viewer provides support for URLs (hyperlinks) in the PDF document that enables the navigation to the destination by opening it in the default browser just by clicking on it. This also supports a few events that are listed in the below table.
 

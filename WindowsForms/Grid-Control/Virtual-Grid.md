@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtual Grid of GridControl for Syncfusion Essential Windows Forms
-description: Explain about how to create and features of Virtual Grid
+title: Virtual Grid in Windows Forms Grid Control | Syncfusion
+description: Learn about Virtual Grid support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 
 ---
-# Virtual Grid
+# Virtual Grid in Windows Forms Grid Control
 
 Virtual Grid is designed to display very large amount of data extremely fast. In a virtual grid, no cell data is stored in [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) objects or any other internal grid storage. All information is provided on demand through handled events. This walkthrough will explain how to create a virtual grid and all the events that are required to accomplish it, in `GridControl`.
 
@@ -238,7 +238,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img1.jpeg)
+![CellGrid_VirtualGrid_img1](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img1.jpeg)
 
 
 ## Editing and Updating
@@ -311,7 +311,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img2.jpeg)
+![CellGrid_VirtualGrid_img2](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img2.jpeg)
 
 
 ## Column Width
@@ -352,7 +352,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img3.jpeg)
+![CellGrid_VirtualGrid_img3](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img3.jpeg)
 
 
 ## Covered Ranges
@@ -389,7 +389,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img4.jpeg)
+![CellGrid_VirtualGrid_img4](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img4.jpeg)
 
 ## Refreshing the Grid
 

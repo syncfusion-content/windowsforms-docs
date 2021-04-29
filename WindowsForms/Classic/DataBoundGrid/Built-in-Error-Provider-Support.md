@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Built-in-Error-Provider-Support | Windows Forms | Syncfusion
-description: built-in error provider support
+title: Built in Error Provider Support in WinForms xptoolbar | Syncfusion
+description: Learn about Built in Error Provider Support support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Built-in Error Provider Support
+# Built in Error Provider Support in Windows Forms GridDataBoundGrid
 
 Essential Grid for Windows Forms now provides a built-in error provider for error alerts. This feature enables you to display an error icon in a specific cell and row header when incorrect data is entered in a cell. This also enables you to specify the error conditions.
 
@@ -107,7 +107,7 @@ Me.gridDataBoundGrid1.ShowRowHeaderErrorIcon = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img1.png) 
+![Built-in-Error-Provider-Support_img1](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img1.png) 
 
 
 
@@ -128,7 +128,7 @@ Me.gridDataBoundGrid1.CurrentCell.ValidationErrorText = "this is the text"
 {% endhighlight %}
 {% endtabs %}
 
- ![](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img2.png) 
+ ![Windows Forms Grid Image2](Built-in-Error-Provider-Support_images/Built-in-Error-Provider-Support_img2.png) 
 
 
 ## Specifying Error Content
