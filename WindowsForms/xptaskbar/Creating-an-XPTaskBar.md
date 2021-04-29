@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Creating an XPTaskBar | WindowsForms | Syncfusion
-description: Learn here about how to getting started with Syncfusion Windows Forms XPTaskBar control and more details.
+title: Getting Started in Windows Forms xptaskbar control | Syncfusion
+description: Learn about Getting Started support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Getting started with Windows Forms XPTaskBar
+# Getting Started in Windows Forms xptaskbar (XPTaskBar)
 
 This section describes how to add `XPTaskBar` control in a Windows Forms application and overview of its basic functionalities.
 

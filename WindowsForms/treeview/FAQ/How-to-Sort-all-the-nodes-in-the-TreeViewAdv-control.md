@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-Sort-all-the-nodes-in-the-TreeViewAdv-control | WindowsForms | Syncfusion
+title: How to Sort all the Nodes in the TreeViewAdv | Syncfusion
 description: how to sort all the nodes in the treeviewadv control
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Sort all the Nodes in the TreeViewAdv Control
+# How to Sort all the Nodes in the TreeViewAdv
+
+This page exlains How to Sort all the Nodes in the TreeViewAdv and more details.
+
+## How to Sort all the Nodes in the TreeViewAdv Control
 
 This can be done by setting the SortWithChildNodes property to true.
 
@@ -67,7 +71,7 @@ End Sub
 
 Given below is a screen shot of sorting the nodes in ascending order.
 
-![](How-to-Sort-all-the-nodes-in-the-TreeViewAdv-contr_images/How-to-Sort-all-the-nodes-in-the-TreeViewAdv-contr_img1.jpeg)
+![How-to-Sort-all-the-nodes-in-the-TreeViewAdv-contr_img1](How-to-Sort-all-the-nodes-in-the-TreeViewAdv-contr_images/How-to-Sort-all-the-nodes-in-the-TreeViewAdv-contr_img1.jpeg)
 
 {% seealso %}
 Sorting

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Wizard-Control-Appearance | WindowsForms | Syncfusion
-description: wizard control appearance
+title: Wizard Control Appearance in Windows Forms Wizard | Syncfusion
+description: Learn about Wizard Control Appearance support in Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: windowsforms
 control: Wizard Package 
 documentation: ug
 ---
 
-# Wizard control appearance
+# Wizard Control Appearance in Windows Forms Wizard
 
 This section discusses the various appearance settings of the Wizard controls.
 

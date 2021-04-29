@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Printing | WindowsForms | Syncfusion
-description: Printing
+title: Printing in Windows Forms TreeView control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Printing
+# Printing in Windows Forms TreeView
 
 The TreeView Control has in-built support for printing. To print the content of treeview, convert the treeview into the printable document using TreeViewPrintDocument.
 
@@ -27,10 +27,10 @@ printDocument.Print()
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_Images/Printing_img1.jpg)
+![Printing_img1](Printing_Images/Printing_img1.jpg)
 
 ## Print Preview
 
 PrepareTreeImage is used to gets an image that shows the entire tree, not just what is visible on the form.
 
-![](Printing_Images/Printing_img2.jpg)	
+![Printing_img2](Printing_Images/Printing_img2.jpg)	

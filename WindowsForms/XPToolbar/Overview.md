@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of XPToolBar | Windows Forms | Syncfusion
-description: Overview of XPToolBar control
+title: About Windows Forms xptoolbar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms xptoolbar (XPToolbar) control, its elements and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Overview
+# Windows Forms xptoolbar (XPToolbar) Overview
 
 The XPToolBar control is a Microsoft Visual Studio-inspired standalone toolbar control that can be used to load shortcut options and place them conveniently anywhere within the application for better access.
 

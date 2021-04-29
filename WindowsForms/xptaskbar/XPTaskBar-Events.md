@@ -1,12 +1,12 @@
 ---
 layout: post
-title: XPTaskBar Events | WindowsForms | Syncfusion
-description: Concepts and Features
+title: XPTaskBar Events in Windows Forms xptaskbar control | Syncfusion
+description: Learn about XPTaskBar Events support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar events
+# XPTaskBar Events in Windows Forms xptaskbar (XPTaskBar)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

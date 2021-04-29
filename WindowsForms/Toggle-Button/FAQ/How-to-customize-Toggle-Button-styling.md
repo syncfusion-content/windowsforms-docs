@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-customize-Toggle-Button-styling | WindowsForms | Syncfusion
-description: how to customize toggle button styling?
+title: How to customize Toggle Button styling | WindowsForms | Syncfusion
+description: how to customize toggle button styling in Syncfusion Windows Forms HubTile control, its elements and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# How to Customize Toggle Button Styling
+# How to customize Toggle Button styling
+
+This page explains How to customize Toggle Button styling and more details.
+
+## How to Customize Toggle Button Styling
 
 You can customize the appearance of the Toggle Button by using the IToggleButtonRenderer. The following code example illustrates how to achieve iOS platform look-alike Toggle Button.
 
@@ -208,4 +212,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-customize-Toggle-Button-styling_images/How-to-customize-Toggle-Button-styling_img1.png)
+![How-to-customize-Toggle-Button-styling_img1](How-to-customize-Toggle-Button-styling_images/How-to-customize-Toggle-Button-styling_img1.png)

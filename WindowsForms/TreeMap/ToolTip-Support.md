@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip-Support | Windows Forms | Syncfusion
-description: tooltip support
+title: ToolTip Support in Windows Forms TreeMap control | Syncfusion
+description: Learn about ToolTip Support support in Syncfusion Windows Forms TreeMap control and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Tooltip Support
+# ToolTip Support in Windows Forms TreeMap
 
 Tooltip shows additional information on the tree map control. Visibility of tooltip can be controlled using the [`IsToolTipVisible`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_IsTootTipVisible) property. The format of the tooltip header and item can be customized using the [`HeaderToolTipInfo`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_HeaderToolTipInfo) and [`ItemToolTipInfo`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ItemToolTipInfo) properties.
 
@@ -37,4 +37,4 @@ TreeMap1.ItemToolTipInfo = itemInfo;
 
 {% endtabs %}
 
-![](Features_images/Features_img13.png)
+![Features_img13](Features_images/Features_img13.png)

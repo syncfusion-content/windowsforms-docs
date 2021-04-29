@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tree-Map-Legend | Windows Forms | Syncfusion
-description: tree map legend
+title: Tree Map Legend in Windows Forms TreeMap control | Syncfusion
+description: Learn about Tree Map Legend support in Syncfusion Windows Forms TreeMap control and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Tree Map Legend
+# Tree Map Legend in Windows Forms TreeMap
 
 The tree map legend is used to demonstrate the color value of the leaf nodes. This legend may be appropriate only for tree maps whose leaf nodes are colored by using the RangeBrushColorMapping. 
 
@@ -76,4 +76,4 @@ Color = System.Drawing.ColorTranslator.FromHtml("#77D8D8"), From = 0, To = 1, Le
 
 {% endtabs %}
 
-![](Features_images/Features_img11.png)
+![Features_img11](Features_images/Features_img11.png)

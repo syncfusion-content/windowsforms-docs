@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-select-all-the-nodes-in-a-TreeViewAdv-Control | WindowsForms | Syncfusion
-description: how to select all the nodes in a treeviewadv control
+title: How to select all the nodes in a TreeViewAdv | Syncfusion
+description: how to select all the nodes in a treeviewadv control in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# How to Select all the Nodes in a TreeViewAdv Control
+# How to select all the nodes in a TreeViewAdv
+
+This page explains How to select all the nodes in a TreeViewAdv and more details.
+
+## How to Select all the Nodes in a TreeViewAdv Control
 
 You could select all the nodes in the TreeViewAdv control by recursively traversing through all the child nodes under each of the parent nodes at the top level as shown in the code below.
 
@@ -49,4 +53,4 @@ Next node
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_images/How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1.jpeg)
+![How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1](How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_images/How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1.jpeg)

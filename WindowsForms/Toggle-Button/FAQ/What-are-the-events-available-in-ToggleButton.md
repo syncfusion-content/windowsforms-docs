@@ -1,13 +1,17 @@
 ---
 layout: post
-title: What-are-the-events-available-in-ToggleButton | WindowsForms | Syncfusion
-description: what are the events available in togglebutton
+title: What are the events available in WinForms Toggle Button | Syncfusion
+description: Learn about What are the events available in Syncfusion Windows Forms Toggle Button control, its elements and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# What are the Events available in ToggleButton
+# What are the events available in WinForms Toggle Button
+
+This page explains What are the events available in WinForms Toggle Button and more details.
+
+## What are the events available in ToggleButton in Windows Forms Toggle Button
 
 The following listed events are available in Toggle Button.
 

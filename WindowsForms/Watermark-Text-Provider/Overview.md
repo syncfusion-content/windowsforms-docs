@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of BannerTextProvider | WindowsForms | Syncfusion
-description: This section gives detailed description about the basic watermark support provided by BannerTextProvider control. 
+title: About Windows Forms Watermark Text Provider control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider
 documentation: ug
 ---
 
-# Overview of BannerTextProvider
+# Windows Forms Watermark Text Provider (BannerText) Overview
 
 Syncfusion introduces a [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) class that allows to display watermark in the Editor controls. It can be used as an information when the mapped edit control contains empty content.
 

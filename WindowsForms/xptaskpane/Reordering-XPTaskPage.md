@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Reordering-XPTaskPage | WindowsForms | Syncfusion
-description: reordering xptaskpage
+title: Reordering-XPTaskPage in Windows Forms xptaskpane control | Syncfusion
+description: Learn about Reordering-XPTaskPage support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
 platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
 
-# Reordering XPTaskPage
+# Reordering-XPTaskPage in Windows Forms xptaskpane (XPTaskPane)
 
 When the end user adds a page to the XPTaskPane control, the order of the page is decided, as the page is added. They can be reordered using any one of the below methods in the designer.
 
 * Through XPTaskPage Collection Editor.
 
-![](XPTaskPane-Control_images/XPTaskPane_img4.jpeg)
+![XPTaskPane_img4](XPTaskPane-Control_images/XPTaskPane_img4.jpeg)
 
 
 
 * Select a page in the designer and choose the 'Bring To Front' or 'Send To Back' verb which will move the page to the beginning of the collection or to the end of the collection, respectively.
 
-![](XPTaskPane-Control_images/XPTaskPane_img5.jpeg)
+![XPTaskPane_img5](XPTaskPane-Control_images/XPTaskPane_img5.jpeg)
 
 
 
@@ -27,7 +27,7 @@ When the end user adds a page to the XPTaskPane control, the order of the page i
 
 * Right-click a page in the designer and choose the 'Previous Page' or 'Next Page' verb which will show you the page, which is before the current page or the page which is after the current page. These options can also be accessed through smart tag and property grid commands.
 
-![](XPTaskPane-Control_images/XPTaskPane_img6.jpeg)
+![XPTaskPane_img6](XPTaskPane-Control_images/XPTaskPane_img6.jpeg)
 
 
 

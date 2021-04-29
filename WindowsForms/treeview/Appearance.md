@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: treeview appearance
+title: Appearance in Windows Forms TreeView control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Appearance
+# Appearance in Windows Forms TreeView
 
 This section deals with the appearance of TreeViewAdv control
 
@@ -134,7 +134,7 @@ Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img1.jpg)
+![Appearence_img1](Appearence_images/Appearence_img1.jpg)
 
 To customize the 3D border of TreeViewAdv, set the below property as follows
 
@@ -172,7 +172,7 @@ Me.treeViewAdv1.BorderColor = Color.SteelBlue;
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img2.jpg)
+![Appearence_img2](Appearence_images/Appearence_img2.jpg)
 
 ## ColorCustomization
 
@@ -194,13 +194,13 @@ Me.treeViewAdv1.BackColor = Color.LightBlue;
 {% endtabs %}
 
 
-![](Appearence_images/Appearence_img3.jpg)
+![Appearence_img3](Appearence_images/Appearence_img3.jpg)
 
 ### BackgroundColor
 
 Indicates the background color of the control. It provides options to set style, back color, fore color, gradient color and gradient styles. 
 
-![](Appearence_images/Appearence_img3.png)
+![Appearence_img3](Appearence_images/Appearence_img3.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -215,7 +215,7 @@ Me.treeViewAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Color.LightSt
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img4.jpg)
+![Appearence_img4](Appearence_images/Appearence_img4.jpg)
 
 >Note
 >
@@ -266,7 +266,7 @@ Me.treeViewAdv1.LineColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img5.jpg)
+![Appearence_img5](Appearence_images/Appearence_img5.jpg)
 
 ### SelectedNodeBackground
 
@@ -325,7 +325,7 @@ Some of the available Styles are as follows:
 
 By default, TreeViewAdv has `Default` visual style.
 
-![](Appearence_images/Appearence_img6.jpg)
+![Appearence_img6](Appearence_images/Appearence_img6.jpg)
 
 ### Office2007
 
@@ -364,7 +364,7 @@ TreeViewAdv has following color tables
 *	Office2007SilverColors
 *	Office2007BlackColors
 
-![](Appearence_images/Appearence_img7.jpg)
+![Appearence_img7](Appearence_images/Appearence_img7.jpg)
 
 ### Office2010
 
@@ -429,7 +429,7 @@ Me.treeViewAdv1.MetroArrowColorTable.ArrowNormal = Color.LightBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img9.jpg)
+![Appearence_img9](Appearence_images/Appearence_img9.jpg)
 
 ### Office2016Colorful
 
@@ -446,7 +446,7 @@ Me.treeViewAdv1.Style = TreeStyle.Office2016Colorful
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img10.jpg)
+![Appearence_img10](Appearence_images/Appearence_img10.jpg)
 
 ###  Office2016White
 
@@ -463,7 +463,7 @@ Me.treeViewAdv1.Style = TreeStyle.Office2016White
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img11.jpg)
+![Appearence_img11](Appearence_images/Appearence_img11.jpg)
 
 ### Office2016Black
 
@@ -480,7 +480,7 @@ Me.treeViewAdv1.Style = TreeStyle.Office2016Black
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img12.jpg)
+![Appearence_img12](Appearence_images/Appearence_img12.jpg)
 
 
 ### Office2016DarkGray
@@ -498,7 +498,7 @@ Me.treeViewAdv1.Style = TreeStyle.Office2016DarkGray
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img13.jpg)
+![Appearence_img13](Appearence_images/Appearence_img13.jpg)
 
 
 ## Gradient Background
@@ -650,7 +650,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearence_images/Appearence_img14.jpg)
+![Appearence_img14](Appearence_images/Appearence_img14.jpg)
 
 ### AfterNodePaint Event
 

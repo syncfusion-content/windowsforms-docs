@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview of XPTaskBar control | Windows Forms | Syncfusion
-description: XPTaskBar control arranges the progress information in a highly customizable layout and offers a wide variety of theme support, image settings, etc.,
+title: About Windows Forms xptaskbar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms xptaskbar (XPTaskBar) control, its elements and more details.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Overview
+# Windows Forms xptaskbar (XPTaskBar) Overview
 
 [XPTaskBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html) represents a Windows XP like task menu panel. It helps display a set of command items ([XPTaskBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html)) or frequently used features (like "Search", "Advanced Search", etc) in panels, that can be classified, contained and displayed within one or more command boxes ([XPTaskBarBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)). 
 

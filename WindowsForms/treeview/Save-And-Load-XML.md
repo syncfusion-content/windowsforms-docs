@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Save and Load XML in WinForms TreeView control | Syncfusion
-description: Learn about save and load XML data from XML file in Syncfusion WinForms TreeView control and more details.
+title: Save and Load XML in Windows Forms TreeView control | Syncfusion
+description: Learn about Save and Load XML support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Save and Load XML
+# Save and Load XML in Windows Forms TreeView
 
 `TreeViewAdv` does not have direct option to load/save from XML file. This below section will help to load/save TreeViewAdv from XML.
 

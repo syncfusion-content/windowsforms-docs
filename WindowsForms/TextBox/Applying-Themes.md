@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Applying-Themes | WindowsForms | Syncfusion
-description: Learn here about how to apply the themes in the Syncfusion Windows Forms TextBoxExt and usages of theme.
+title: Applying Themes in Windows Forms TextBox control | Syncfusion
+description: Learn about Applying Themes support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

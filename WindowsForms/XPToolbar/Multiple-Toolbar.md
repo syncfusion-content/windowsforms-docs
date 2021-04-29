@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple Toolbar | Windows Forms | Syncfusion
-description: We can add different levels of toolbar consecutively.
+title: Multiple Toolbar in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Multiple Toolbar support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Multiple Toolbar
+# Multiple Toolbar in Windows Forms xptoolbar (XPToolbar)
 
 We can add different layers of toolbar either on-after-the-other or one-below-the-other. The below code snippet will explain how to add multiple toolbar in an application.
 

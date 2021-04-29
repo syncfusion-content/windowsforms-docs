@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Browse-Buttons | WindowsForms | Syncfusion
-description: browse buttons
+title: Browse Buttons in Windows Forms Wizard | Syncfusion
+description: Learn about Browse Buttons support in Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
 
-# Browse buttons
+# Browse Buttons in Windows Forms Wizard
 
 The default buttons which are available for the Wizard control are Back, Next, Cancel, and Help. The Next and the Back buttons facilitate users to navigate between wizard pages.
 

@@ -1,12 +1,17 @@
 ---
 layout: post
-title: Is it possible to sort the XPTaskBarItems of an XPTaskBarBox | WindowsForms | Syncfusion
-description: Frequently Asked Questions
+title: Is it possible to sort XPTaskBarItems of an XPTaskBarBox | Syncfusion
+description: Learn about Is it possible to sort the XPTaskBarItems of an XPTaskBarBox support in Syncfusion Windows Forms xptaskbar (XPTaskBar) control and more details.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Is it possible to sort the XPTaskBarItems of an XPTaskBarBox?
+
+# Is it possible to sort XPTaskBarItems of an XPTaskBarBox
+
+This page explains Is it possible to sort XPTaskBarItems of an XPTaskBarBox and more details.
+
+## Is it possible to sort the XPTaskBarItems of an XPTaskBarBox in Windows Forms xptaskbar (XPTaskBar)
 
 Yes. It is possible to sort the XPTaskBarItems of an XPTaskBarBox control, by calling the Sort() method as follows.
 

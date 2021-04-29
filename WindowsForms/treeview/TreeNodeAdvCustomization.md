@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TreeNodeAdv-Customization | WindowsForms | Syncfusion
-description: TreeNodeAdv Customization
+title: TreeNodeAdv Customization in Windows Forms TreeView control | Syncfusion
+description: Learn about TreeNodeAdv Customization support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# TreeNodeAdv Customization
+# TreeNodeAdv Customization in Windows Forms TreeView
 
 
 ## OptionButton
@@ -57,7 +57,7 @@ treeNode.Optioned = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
+![TreeNodeAdv_Customization_Img1](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
 
 
 ## CheckBox
@@ -156,7 +156,7 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
+![TreeNodeAdv_Customization_Img2](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
 
 ### Find CheckState changed
 
@@ -291,7 +291,7 @@ treeNode.CustomControl = this.comboBoxAdv;
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img3.jpg)
+![TreeNodeAdv_Customization_Img3](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img3.jpg)
 
 ## Primitives
 
@@ -323,7 +323,7 @@ To set the LabelPrimitive for an individual node follow the given steps.
 
 4. To save changes click the `OK` button.
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img7.jpg)
+![TreeNodeAdv_Customization_Img7](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img7.jpg)
 
 In the above image "Asia" node has label primitive. You can see the difference between "Asia" node and other parent nodes.
 
@@ -479,7 +479,7 @@ Me.treeViewAdv1.ExpanderType = ExpanderType.Classic
 {% endhighlight %}		
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img20.jpg)
+![TreeNodeAdv_Customization_Img20](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img20.jpg)
 
 
 ### Detect Node Collapse/Expand
@@ -667,7 +667,7 @@ treeNodeAdv1.LeftImageIndices = new int[] {1};
 
 <b>Step 4</b>:. Repeat step 3 until  set `LeftImageIndices` for all the nodes in treeview
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
+![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Right Image
 
@@ -735,7 +735,7 @@ treeNodeAdv1.RightImageIndices = new int[] {1};
 
 <b>Step 4</b>: Repeat step 3 until  set `RightImageIndices` for all the nodes in treeview
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
+![TreeNodeAdv_Customization_Img22](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
 
 ### State Image
 
@@ -822,7 +822,7 @@ treeNodeAdv1.CloseImgIndex = 1;
 
 <b>Step 4</b>: Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in treeview
 			 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
+![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Customizing the Image Size
 
@@ -926,7 +926,7 @@ treeNodeAdv1. CollapseImageIndex = 0;
 
 <b>Step 4</b>: Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in treeview
 			 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
+![TreeNodeAdv_Customization_Img23](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
 
 ### Line Images
 
@@ -986,7 +986,7 @@ Me.treeViewAdv1.ShowRootLines = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img24.jpg)
+![TreeNodeAdv_Customization_Img24](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img24.jpg)
 
 >NOTE
 >
@@ -1045,7 +1045,7 @@ Me.treeViewadv1.LabelEdit = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img25.jpg)
+![TreeNodeAdv_Customization_Img25](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img25.jpg)
 
 ### Detect Node Editing
 
@@ -1464,7 +1464,7 @@ Me.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectSameLevel
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img26.jpg)
+![TreeNodeAdv_Customization_Img26](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img26.jpg)
 
 <b>Extending the Selection</b>
 
@@ -2131,4 +2131,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img27.jpg)
+![TreeNodeAdv_Customization_Img27](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img27.jpg)

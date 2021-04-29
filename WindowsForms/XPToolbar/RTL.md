@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL | Windows Forms | Syncfusion
-description: Display the content from right to left
+title: RTL in Windows Forms xptoolbar control | Syncfusion
+description: Learn about RTL support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# RTL
+# RTL in Windows Forms xptoolbar (XPToolbar)
 
 RTL is used to display the content from right to left by setting the [`RightToLeft`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to `Yes`.
 

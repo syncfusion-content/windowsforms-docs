@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Style-Architecture | WindowsForms | Syncfusion
-description: styles architecture
+title: Styles Architecture in Windows Forms TreeView control | Syncfusion
+description: Learn about Styles Architecture support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Style Architecture
+# Styles Architecture in Windows Forms TreeView
 
 The tree control employs an extensive Styles Architecture, that let users specify node styles globally, specifically for a class of nodes. This is possible by using a style information instance for each class of nodes, represented by a `TreeNodeAdvStyleInfo`. Users will notice that for some of these classes of nodes, the style needs to be declared with a name at the tree level and stored in the tree's BaseStyles hatch table. 
 
 As illustrated below, implicit style inheritance is enforced by the Framework while explicit style inheritance can be setup by the programmer. For all styles, explicit inheritance precedes implicit inheritance.
 
-![](StyleArchitecture_images/StyleArchitecture_img1.jpeg)
+![StyleArchitecture_img1](StyleArchitecture_images/StyleArchitecture_img1.jpeg)
 
 
 ### Implicit Style Inheritance
@@ -54,12 +54,12 @@ Setting a Common Style for All the Nodes in the TreeViewAdv
 
 We can modify the background for all the children of a parent node by editing the `StandardStyle` property. 
 
-![](StyleArchitecture_images/StyleArchitecture_img1.jpg)
+![StyleArchitecture_img1](StyleArchitecture_images/StyleArchitecture_img1.jpg)
 
 
 The below image displays a gradient style for all the nodes of the TreeView control.
 
-![](StyleArchitecture_images/StyleArchitecture_img2.jpg)
+![StyleArchitecture_img2](StyleArchitecture_images/StyleArchitecture_img2.jpg)
 
 ## Node Custom Style
 
@@ -93,10 +93,10 @@ This topic illustrates how the appearance of all the children of a particular no
 
 In the Node Collection Editor, modify the settings in the `TreeNodeAdv.ChildStyle` property. These changes will be reflected in the child node of this node.
 
-![](StyleArchitecture_images/StyleArchitecture_img6.jpg)
+![StyleArchitecture_img6](StyleArchitecture_images/StyleArchitecture_img6.jpg)
 
 
-![](StyleArchitecture_images/StyleArchitecture_img7.jpg)
+![StyleArchitecture_img7](StyleArchitecture_images/StyleArchitecture_img7.jpg)
 
 
 ## Node Level Style
@@ -105,12 +105,12 @@ Setting a Common Style for all the Nodes in a Level
 
 TreeView lets you add node level styles using the BaseStyles Collection Editor.
 
-![](StyleArchitecture_images/StyleArchitecture_img8.jpg)
+![StyleArchitecture_img8](StyleArchitecture_images/StyleArchitecture_img8.jpg)
 
 By default this style will be applied to the first level nodes as shown in the image below.
 
-![](StyleArchitecture_images/StyleArchitecture_img9.jpg)
+![StyleArchitecture_img9](StyleArchitecture_images/StyleArchitecture_img9.jpg)
 
 You can also apply this style to any of the node by using `TreeNodeAdv.BaseStyle` property for a particular node.
 
-![](StyleArchitecture_images/StyleArchitecture_img10.jpg)
+![StyleArchitecture_img10](StyleArchitecture_images/StyleArchitecture_img10.jpg)

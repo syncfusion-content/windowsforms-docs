@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes | Windows Forms | Syncfusion
-description: Supports set of visual styles to customize the look and feel of XPToolBar control
+title: Themes in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Themes support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Themes
+# Themes in Windows Forms xptoolbar (XPToolbar)
 
 Theming is the process of applying rich look and feel to visual elements of a control. The [`Style`](https://help.syncfusion.com/cr/windowsforms/) property is used to set the visual style of the XPToolBar control. This control provides the following theming options:
 

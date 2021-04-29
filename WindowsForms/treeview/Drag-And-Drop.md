@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drag-And-Drop | WindowsForms | Syncfusion
-description: drag and drop
+title: Drag and Drop in Windows Forms TreeView control | Syncfusion
+description: Learn about Drag and Drop support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Drag and Drop
+# Drag and Drop in Windows Forms TreeView
 
 The drag and drop functionality is fully supported through the various drag drop events.
 
@@ -251,7 +251,7 @@ End Sub
 
 The below image indicates dragging of "Brazil" node.
 
-![](DargandDrop_images/DargandDrop_img1.jpg)
+![DargandDrop_img1](DargandDrop_images/DargandDrop_img1.jpg)
 
 ## Selection Settings While Drag Drop
 
@@ -444,7 +444,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DargandDrop_images/DargandDrop_img2.jpg)
+![DargandDrop_img2](DargandDrop_images/DargandDrop_img2.jpg)
 
 > Note: We can also prevent drawing highlight for some nodes using QueryAllowedPositionForNode event.
 

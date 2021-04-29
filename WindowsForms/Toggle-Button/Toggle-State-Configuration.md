@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toggle-State-Configuration | WindowsForms | Syncfusion
-description: toggle state configuration
+title: Toggle State Configuration in Windows Forms Toggle Button control | Syncfusion
+description: Learn about Toggle State Configuration support in Syncfusion Windows Forms Toggle Button control and more details.
 platform: WindowsForms
 control: ToggleButton 
 documentation: ug
 ---
 
-# Toggle State Configuration
+# Toggle State Configuration in Windows Forms Toggle Button
 
 Toggle Button is configured with two states (Active and Inactive) contrasting each other. Toggling can be handled at runtime either through mouse click or through space key.
 
