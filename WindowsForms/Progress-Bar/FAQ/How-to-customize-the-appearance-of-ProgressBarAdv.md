@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to customize the appearance of ProgressBarAdv | Syncfusion
-description: how to customize the appearance of progressbaradv
+description: How to customize the appearance of progressbaradv in Syncfusion Essential Studio ProgressBarAdv control and more details.
 platform: WindowsForms
 control: Notification Package 
 documentation: ug
