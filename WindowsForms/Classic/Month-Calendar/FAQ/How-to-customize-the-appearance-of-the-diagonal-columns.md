@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Customize the diagonal columns | WindowsForms | Syncfusion
-description: how to customize the appearance of the diagonal columns?
+description: Learn about How to Customize the Appearance of the Diagonal Columns support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
 platform: WindowsForms
 control: CalendarDateTime
 documentation: ug
 ---
-# How to customize the appearance of the diagonal columns?
+# Customize the diagonal columns
+
+This page explains How to customize the appearance of the diagonal columns and more details.
+
+## How to customize the appearance of the diagonal columns?
 
 The appearance of diagonal columns can be customized using the below code.
 

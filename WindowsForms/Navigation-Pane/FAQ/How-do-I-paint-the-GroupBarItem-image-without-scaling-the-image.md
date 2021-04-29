@@ -1,12 +1,17 @@
 ---
 layout: post
-title: How do paint the GroupBarItem image | WindowsForms | Syncfusion
-description: Frequently Asked Questions
+title: GroupBarItem image in Windows Forms Navigation Pane | Syncfusion
+description: Learn about How do I paint the GroupBarItem image without scaling the image support in Syncfusion Windows Forms Navigation Pane control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# How do I paint the GroupBarItem image without scaling the image?
+
+# GroupBarItem image in Windows Forms Navigation Pane
+
+This page explains GroupBarItem image in Windows Forms Navigation Pane and more details.
+
+## How do I paint the GroupBarItem image without scaling the image in Windows Forms Navigation Pane (GroupBar)
 
 You can draw the image of GroupBarItem (without scaling it), by overriding the [DrawGroupBarImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_DrawGroupBarImage_System_Drawing_Graphics_System_Int32_System_Drawing_Rectangle_) method of the GroupBar.
 

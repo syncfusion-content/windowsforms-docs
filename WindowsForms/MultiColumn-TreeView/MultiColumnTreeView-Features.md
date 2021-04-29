@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MultiColumnTreeView-Features | WindowsForms | Syncfusion
-description: MultiColumnTreeView Features
+title: MultiColumnTreeView Features in MultiColumn TreeView | Syncfusion
+description: Learn about MultiColumnTreeView Features support in Syncfusion Windows Forms MultiColumn TreeView control and more details.
 platform: WindowsForms
 control: MultiColumnTreeView
 documentation: ug
 ---
 
-# MultiColumnTreeView Features
+# MultiColumnTreeView Features in Windows Forms MultiColumn TreeView
 
 MultiColumnTreeView contains following features,
 
@@ -39,7 +39,7 @@ Me.MultiColumnTreeView1.SelectionMode = Syncfusion.Windows.Forms.Tools.MultiColu
 
 {% endtabs %}
 
-![](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img1.jpg)
+![MultiColumnTreeView-Features_img1](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img1.jpg)
 
 `SelectedNode` property gets the node value when the user selects a node in the MulticolumnTreeView.
 This property will be useful when the Selection Mode is Single.
@@ -104,7 +104,7 @@ Me.MultiColumnTreeView1.AllowMouseBasedSelection = True
 
 {% endtabs %}
 
-![](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img2.jpg)
+![MultiColumnTreeView-Features_img2](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img2.jpg)
 
 MultiColumnTreeView supports to search the nodes with the keyboard buttons. Simply tap any alphabet in keyboard and MultiColumnTreeView will show the node starting with that alphabet and keep tapping the button to show all the nodes starting with that alphabet.
 
@@ -150,7 +150,7 @@ Me.multiColumnTreeView1.AutoSizeMode = Syncfusion.Windows.Forms.Tools.MultiColum
 
 {% endtabs %}
 
-![](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img3.jpg)
+![MultiColumnTreeView-Features_img3](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img3.jpg)
 
 ## Undo & Redo
 
@@ -251,13 +251,13 @@ Me.multiColumnTreeView1.Nodes(0).Node(0).SubItems(1).HelpText = "Capital of Indi
 
 {% endtabs %}
 
-![](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img4.jpg)
+![MultiColumnTreeView-Features_img4](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img4.jpg)
 
 ### ToolTip
 
 ToolTip is a special control which automatically appears as a popup when a node is partially visible. It displays the total text of the node.
 
-![](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img5.jpg)
+![MultiColumnTreeView-Features_img5](MultiColumntreeView-Features_Images/MultiColumnTreeView-Features_img5.jpg)
 
 ## Performance
 

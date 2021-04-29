@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control-Events | HTMLUIControl | WindowsForms | Syncfusion
-description: This section describes html ui control events usage.
+title: Control Events in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Control Events support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# Control events
+# Control Events in Windows Forms Html Viewer (HTMLUI)
 
 HTMLUI control comes with a rich set of events to help the application developer in keeping track of the execution. These events are programmed based on the Event arguments containing data related to the event.
 

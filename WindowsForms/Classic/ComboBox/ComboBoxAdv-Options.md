@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ComboBoxAdv-Concepts-and-features | WindowsForms | Syncfusion
-description: comboboxadv concepts and features
+title: ComboBoxAdv Options in Windows Forms xptoolbar control | Syncfusion
+description: Learn about ComboBoxAdv Options support in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
 
-# ComboBoxAdv
+# ComboBoxAdv Options in Windows Forms ComboBoxAdv(Classic)
 
 ComboBoxAdv control has a textbox, that is the edit portion of the control, and a dropdown.
 
@@ -209,7 +209,7 @@ You can set banner text for the ComboBoxAdv control. Refer to [BannerTextProvid
 
 
 
-![](Overview_images/Overview_img299.png)
+![Overview_img299](Overview_images/Overview_img299.png)
 
 
 
@@ -263,7 +263,7 @@ Me.comboBoxAdv1.Sorted = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img300.png) 
+![Overview_img300](Overview_images/Overview_img300.png) 
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | PivotChart | Windows Forms | Syncfusion
-description: Legend support in pivot chart control | Syncfusion
+title: Legend in Windows Forms Pivot Chart control | Syncfusion
+description: Learn about Legend support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Legend
+# Legend in Windows Forms Pivot Chart
 
 By default, the pivot chart displays a legend with information on each series that has been plotted on the chart. The legend is a color code that helps to differentiate between chart items, and it has labels beside each color to indicate that it applies to information from series 1, series 2, and so on. The legend is made visible in the pivot chart by using the `ShowLegend` property.
 

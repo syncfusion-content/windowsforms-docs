@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Extract Text from PDF Files | Windows Forms | Syncfusion
-description: This section explains how to extract text and its bounds from a particular page or the entire PDF file.
+title: Extract Text from PDF Files in Windows Forms PDF Viewer | Syncfusion
+description: Learn about Extract Text from PDF Files support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
 documentation: ug
 ---
 
-# Extract Text from PDF Files
+# Extract Text from PDF Files in Windows Forms PDF Viewer
 
 PDF Viewer allows you to extract the text from a particular page or from the entire PDF file using the [ExtractText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html#Syncfusion_Windows_Forms_PdfViewer_PdfDocumentView_ExtractText_System_Int32_Syncfusion_Pdf_TextLines__) methods of [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html). 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: DateTimePicker Events | WindowsForms | Syncfusion
-description: Learn here about how to handle the Windows Forms events of the DateTimePickerAdv control and members.
+title: Events in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePickerAdv 
 documentation: ug
 ---
-# DateTimePicker Events
+# Events in Windows Forms DateTimePickerAdv(Classic)
 
 Following are the events of DateTimePickerAdv control.
 

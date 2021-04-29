@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes-and-Visual-Styles | WindowsForms | Syncfusion
-description: themes and visual styles
+title: Themes and Visual Styles in Windows Forms NumericUpDown | Syncfusion
+description: Learn about Themes and Visual Styles support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Themes and Visual Styles
+# Themes and Visual Styles in Windows Forms NumericUpDown
 
 This section discusses themes and visual styles settings of the NumericUpDownExt control.
 
@@ -40,7 +40,7 @@ Me.numericUpDownExt1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img1.png)
+![Themes-and-Visual-Styles_img1](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img1.png)
 
 ## Visual styles
 
@@ -77,9 +77,9 @@ Me.numericUpDownExt1.ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Blue
 {% endhighlight %}
 {% endtabs %}
     
-![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img2.png)
+![Themes-and-Visual-Styles_img2](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img2.png)
 
-![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
+![Themes-and-Visual-Styles_img3](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img3.png)
 
 When the ColorScheme property is set to 'Managed', the NumericUpDownExt control can be displayed using custom colors supported by the control.
 
@@ -103,7 +103,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orange)
 {% endhighlight %}
 {% endtabs %}
 
-![](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
+![Themes-and-Visual-Styles_img4](Themes-and-Visual-Styles_images/Themes-and-Visual-Styles_img4.png)
 
 ## Office2016 theme
 
@@ -125,7 +125,7 @@ Me.numericUpDownExt1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office20
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img4.png)
+![Appearance-Settings_img4](Appearance-Settings_images/Appearance-Settings_img4.png)
 
 N> The ThemesEnabled property should be set to 'True' for the above settings to take effect.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border Settings | WindowsForms | Syncfusion
-description: Border Settings
+title: Border Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Border Settings
+# Border Settings in Windows Forms Percent TextBox
 
 Color and Styles can be applied to the Border of the PercentTextBox control as discussed below.
 

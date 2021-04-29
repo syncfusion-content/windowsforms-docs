@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-QueryCellFormattedText-and-SaveCellFormattedText | Windows Forms | Syncfusion
-description: how to querycellformattedtext and savecellformattedtext
+title: Format the Text in Windows Forms GridDataBoundGrid | Syncfusion
+description: Learn about How to Format the Text support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Format the Text
+# Format the Text in Windows Forms GridDataBoundGrid
+
+This page explains How to Format the Text in Windows Forms and more details.
+
+## How to Format the Text in Windows Forms
 
 The purpose of QueryCellFormattedText is to take data, which is present in the Total Marks and convert it to Percentage for display. The SaveCellFormattedText takes the units that are entered by the user in Percentage and converts them to Total Marks so that they can be saved as Total Marks.
 

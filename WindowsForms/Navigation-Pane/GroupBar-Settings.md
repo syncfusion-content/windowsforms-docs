@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroupBar Settings | WindowsForms | Syncfusion
-description: GroupBar Settings
+title: GroupBar Settings in Windows Forms Navigation Pane | Syncfusion
+description: Learn about GroupBar Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar settings
+# GroupBar Settings in Windows Forms Navigation Pane (GroupBar)
 
 The look and feel of the GroupBar can be controlled through the appearance properties of the control. These properties are discussed in detail in the below topics.
 

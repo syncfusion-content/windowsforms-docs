@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Algebra-Supported-In-Expressions--Filters | WindowsForms | Syncfusion
-description: algebra supported in expressions / filters
+title: Algebra Supported In Expressions Filters in Grouping | Syncfusion
+description: Learn about Algebra Supported In Expressions  Filters support in Syncfusion Windows Forms Grouping control and more details.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
 
-# Algebra Supported in Expressions/Filters
+# Algebra Supported In Expressions  Filters in Windows Forms Grouping
 
 Expressions can be any well-formed algebraic combination of the following: 
 

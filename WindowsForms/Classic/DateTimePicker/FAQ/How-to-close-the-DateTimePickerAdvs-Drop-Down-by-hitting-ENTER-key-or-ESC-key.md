@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Close the DateTimePickerAdv | WindowsForms | Syncfusion
-description: Learn here about how to close the Windows Forms datetimepickeradv drop-down by hitting enter key or esc key.
+description: Learn about How to Close the DateTimePickerAdvs Drop Down by Hitting ENTER key or ESC key support in Syncfusion Windows Forms and more.
 platform: WindowsForms
 control: DateTimePickerAdv 
 documentation: ug
 ---
-# How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key
+# ESC key in Windows Forms DateTimePickerAdv(Classic)
+
+This page explains How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key and more details.
+
+## How to close the DateTimePickerAdv's Drop-Down by hitting ENTER key or ESC key
 
 If you want to close the DateTimePickerAdv's drop-down, when you hit the ENTER key or the ESC key, you need to set [DateTimePickerAdv.WantEnterKey](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_WantEnterKey) property to _false_.
 

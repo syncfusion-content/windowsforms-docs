@@ -1,13 +1,16 @@
 ---
 layout: post
-title: How-to-change-the-BackColor-for-a-disabled-ComboBo | WindowsForms | Syncfusion
-description:  how to change the backcolor for a disabled comboboxadv control?
+title: How to change the BackColor for a disabled ComboBo | Syncfusion
+description: Learn about How to Change the BackColor for a Disabled in Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAdv
 documentation: ug
 ---
+# How to change the BackColor for a disabled ComboBo
 
-#  How to Change the BackColor for a Disabled ComboBoxAdv Control
+This page explains How to Change the BackColor for a Disabled ComboBoxAdv Control and more details.
+
+##  How to Change the BackColor for a Disabled ComboBoxAdv Control
 
 Previously, once the ComboBoxAdv control was disabled, the BackColor property of the control could not be changed. This was due to the fact that, by default, all the properties of the control were disabled once the control was disabled.
 

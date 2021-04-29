@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HTML-Elements | HTMLUIControl | WindowsForms | Syncfusion
-description: html elements
+title: HTML Elements in Windows Forms Html Viewer control | Syncfusion
+description: Learn about HTML Elements support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTMLUIControl
 documentation: ug
 ---
 
-# HTML elements
+# HTML Elements in Windows Forms Html Viewer (HTMLUI)
 
 HTMLUI supports various elements in an HTML document for rendering and presenting them to the user and also allows the user to dynamically access the elements to produce rich, customized user interfaces. Each HTML element defines properties and methods which can be used for customization.
 

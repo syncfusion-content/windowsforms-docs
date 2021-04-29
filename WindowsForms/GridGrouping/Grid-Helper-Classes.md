@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid-Helper-Classes | Windows Forms | Syncfusion
-description: grid helper classes
+title: Grid Helper Classes in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Grid Helper Classes support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Grid Helper Classes
+# Grid Helper Classes in Windows Forms GridGrouping
 
 ## Resizing Heights of Individual Rows in Grid
 
@@ -26,7 +26,7 @@ You can make use of AllowResizingIndividualRows class by adding dependent assemb
 
 The following screen shot illustrates how the heights of individual rows in the grid have been resized.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img1.jpeg) 
+ ![Grid-Helper-Classes_images1](Grid-Helper-Classes_images/Grid-Helper-Classes_img1.jpeg) 
 
 
 
@@ -49,7 +49,7 @@ GridEngineFactory.Factory = New Syncfusion.GridHelperClasses.AllowResizingIndivi
 
 The following screen shot illustrates Grid Grouping control with filter drop down.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img2.jpeg) 
+ ![Grid-Helper-Classes_images2](Grid-Helper-Classes_images/Grid-Helper-Classes_img2.jpeg) 
 
 
 
@@ -65,7 +65,7 @@ GridDynamicFilter in GridGroupingControl is now an enhanced functionality to ser
 
 When the code runs, the following output displays.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img3.jpeg) 
+ ![Grid-Helper-Classes_images3](Grid-Helper-Classes_images/Grid-Helper-Classes_img3.jpeg) 
 
 
 
@@ -85,7 +85,7 @@ filter.ApplyFilterOnlyOnCellLoseFocus= true;
 
 When the code runs, the following output displays.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img4.jpeg) 
+ ![Grid-Helper-Classes_images4](Grid-Helper-Classes_images/Grid-Helper-Classes_img4.jpeg) 
 
 
 
@@ -108,7 +108,7 @@ N> * The first argument in this method is an instance of Grid Grouping control.*
 
 The following screen shot illustrates Foreign Key Relations in the Grid Grouping control.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img6.jpeg) 
+ ![Grid-Helper-Classes_images6](Grid-Helper-Classes_images/Grid-Helper-Classes_img6.jpeg) 
 
 
 
@@ -127,7 +127,7 @@ Dim fieldChooser As New FieldChooser(Me.gridGroupingControl1)
 
 Following screen shot shows Grid Grouping control with the Field dialog box.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img7.jpeg) 
+ ![Grid-Helper-Classes_images7](Grid-Helper-Classes_images/Grid-Helper-Classes_img7.jpeg) 
 
 
 
@@ -166,7 +166,7 @@ filterBar.WireGrid(Me.gridDataBoundGrid1)
 
 Following screen shot illustrates how to filter a column in the Grid Data Bound Grid by its display member.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img8.jpeg) 
+ ![Grid-Helper-Classes_images8](Grid-Helper-Classes_images/Grid-Helper-Classes_img8.jpeg) 
 
 
 
@@ -194,7 +194,7 @@ Me.gGCFilter.WireGrid(Me.gridGroupingControl1)
 {% endtabs %}
 
 Following screen shot illustrates how to filter a column in the Grid Grouping control by its display member.
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img9.jpeg) 
+ ![Grid-Helper-Classes_images9](Grid-Helper-Classes_images/Grid-Helper-Classes_img9.jpeg) 
 
 
 
@@ -255,7 +255,7 @@ The feature has multiple selections of values to filter.
 
 You can specify the value of the column that has to filter in the check box of tree view inside the drop down container.
 
-![](Grid-Helper-Classes_images/Grid-Helper-Classes_img11.jpeg) 
+![Grid-Helper-Classes_img11](Grid-Helper-Classes_images/Grid-Helper-Classes_img11.jpeg) 
 
 
 
@@ -348,7 +348,7 @@ GridExcelFilter’s FilterByColor functionality is used to filter GridGroupingCo
 The following screenshot shows the result of setting FilterByColor property in GridGroupingControl.
 
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img12.png) 
+ ![Grid-Helper-Classes_images12](Grid-Helper-Classes_images/Grid-Helper-Classes_img12.png) 
 
 
 
@@ -378,13 +378,13 @@ The following screen shots show the list of available colors when FilerByColor p
 
 
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img13.png) 
+ ![Grid-Helper-Classes_images13](Grid-Helper-Classes_images/Grid-Helper-Classes_img13.png) 
 
 
 
 
 
-![](Grid-Helper-Classes_images/Grid-Helper-Classes_img14.png) 
+![Grid-Helper-Classes_img14](Grid-Helper-Classes_images/Grid-Helper-Classes_img14.png) 
 
 
 AllowResize
@@ -402,7 +402,7 @@ Option to Filter Empty values in Application
 
 The option to filter empty values (Blanks) will automatically be included in filter choices when there are one or more empty values in the grid. No property is needed to enable this feature.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img15.png) 
+ ![Grid-Helper-Classes_images15](Grid-Helper-Classes_images/Grid-Helper-Classes_img15.png) 
 
 
 
@@ -412,7 +412,7 @@ The option to filter empty values (Blanks) will automatically be included in fil
 
 You can use EnableDateFilter property in GridExcelFilter to search and filter the dates quickly. The following screenshot shows the values that are filtered by years in a filter Drop-down box. 
  
- ![C:/Users/Giftline/Desktop/a.png](Grid-Helper-Classes_images/Grid-Helper-Classes_img16.png) 
+ ![Grid-Helper-Classes_images16](Grid-Helper-Classes_images/Grid-Helper-Classes_img16.png) 
 
 
 
@@ -456,7 +456,7 @@ You can use EnableNumberFilter property in GridExcelFilter to filter the numbers
 
 You can filter the top selected values or percentage of values using the Top 10 Filter option in EnableNumberFilter property. The following image shows an example of the Top 10 Filter option in EnableNumberFilter property.
 
- ![](Grid-Helper-Classes_images/Grid-Helper-Classes_img17.png) 
+ ![Grid-Helper-Classes_images17](Grid-Helper-Classes_images/Grid-Helper-Classes_img17.png) 
 
 
 

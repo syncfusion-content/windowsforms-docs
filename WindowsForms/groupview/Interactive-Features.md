@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Interactive Features | WindowsForms | Syncfusion
-description: This section explains about interactive features like tooltip support available in GroupView control for Windows Forms
+title: Interactive Features in Windows Forms GroupView control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Windows Forms GroupView control and more details.
 platform: WindowsForms
 control: GroupView
 documentation: ug
 ---
-# Interactive features
+# Interactive Features in Windows Forms GroupView
 
 User can determine whether the particular GroupView Item is selected or not using the ButtonView and [ClipSelectionBounds](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ClipSelectionBounds) properties. [ButtonView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_ButtonView) displays the selected GroupView Item in the pressed state.
 

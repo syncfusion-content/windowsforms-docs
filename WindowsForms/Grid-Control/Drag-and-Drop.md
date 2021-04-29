@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Drag and Drop in GridControl for Syncfusion Essential Windows Forms
-description: This section explains on how to use drag and drop functionality in GridControl
+title: Drag and Drop in Windows Forms Grid Control | Syncfusion
+description: Learn about Drag and Drop support in Syncfusion Windows Forms Grid Control, its elements and more details.
 platform: windowsforms
 control: GridControl
 documentation: ug
 ---
-# Drag and Drop
+# Drag and Drop in Windows Forms Grid Control
 
 GridControl supports drag and drop functionality, which allows to drag and drop values from range of cells within a grid or multiple grids. It is required to set the [AllowDrop](https://msdn.microsoft.com/en-in/library/system.windows.uielement.allowdrop.aspx#) property to `true` for achieving this support. 
 
@@ -22,10 +22,10 @@ Me.gridControl1.AllowDrop = True
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img1.jpeg)
+![DragandDrop_img1](DragandDrop_images/DragandDrop_img1.jpeg)
 
 
-![](DragandDrop_images/DragandDrop_img2.jpeg)
+![DragandDrop_img2](DragandDrop_images/DragandDrop_img2.jpeg)
 
 
 ## Drag and Drop between Multiple Grids
@@ -50,13 +50,13 @@ Me.gridControl2.AllowDrop = True
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img3.jpeg)
+![DragandDrop_img3](DragandDrop_images/DragandDrop_img3.jpeg)
 
 
-![](DragandDrop_images/DragandDrop_img4.jpeg)
+![DragandDrop_img4](DragandDrop_images/DragandDrop_img4.jpeg)
 
 
-![](DragandDrop_images/DragandDrop_img5.jpeg)
+![DragandDrop_img5](DragandDrop_images/DragandDrop_img5.jpeg)
 
 
 N> OLE Drag Drop operation is also possible between GridControl and any other text editors.
@@ -75,7 +75,7 @@ Me.gridControl1.ControllerOptions = GridControllerOptions.DragColumnHeader
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img6.jpeg)
+![DragandDrop_img6](DragandDrop_images/DragandDrop_img6.jpeg)
 
 
 N> It is also possible to stop the drag drop functionality between columns by using the below code,
@@ -135,7 +135,7 @@ gridControl2.Model.Options.DragDropDropTargetFlags = GridDragDropFlags.Text
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img7.jpeg)
+![DragandDrop_img7](DragandDrop_images/DragandDrop_img7.jpeg)
 
 
 {% tabs %}
@@ -150,7 +150,7 @@ gridControl2.Model.Options.DragDropDropTargetFlags = GridDragDropFlags.Text Or G
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img8.jpeg)
+![DragandDrop_img8](DragandDrop_images/DragandDrop_img8.jpeg)
 
 
 ## Drag-Drop Events
@@ -185,7 +185,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img9.jpeg)
+![DragandDrop_img9](DragandDrop_images/DragandDrop_img9.jpeg)
 
 
 ### Preventing drag and drop
@@ -213,7 +213,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img10.jpeg)
+![DragandDrop_img10](DragandDrop_images/DragandDrop_img10.jpeg)
 
 
 ### Blocking the Data before Dragging
@@ -267,10 +267,10 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img11.jpeg)
+![DragandDrop_img11](DragandDrop_images/DragandDrop_img11.jpeg)
 
 
-![](DragandDrop_images/DragandDrop_img12.jpeg)
+![DragandDrop_img12](DragandDrop_images/DragandDrop_img12.jpeg)
 
 
 For more info regarding the Drag Drop related queries please refer our KB articles which can be viewed over [here](https://www.syncfusion.com/kb/windowsforms/gridcontrol?sortId=0&tags=drag-and-drop#).
@@ -326,7 +326,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img13.jpeg)
+![DragandDrop_img13](DragandDrop_images/DragandDrop_img13.jpeg)
 
 
 ### Finding the Row Index and Column Index of the Dropped Grid
@@ -352,4 +352,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](DragandDrop_images/DragandDrop_img14.jpeg)
+![DragandDrop_img14](DragandDrop_images/DragandDrop_img14.jpeg)

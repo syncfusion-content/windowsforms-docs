@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Globalization | WindowsForms | Syncfusion
-description: Globalization
+title: Globalization in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Globalization support in Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
 platform: WindowsForms
 control: CalendarDateTime 
 documentation: ug
 ---
-# Globalization
+# Globalization in Windows Forms MonthCalendarAdv(Classic)
 
 MonthCalendarAdv supports globalization through [MonthCalendarAdv.Culture](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_Culture) property.
 

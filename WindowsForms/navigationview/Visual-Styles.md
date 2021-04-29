@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual-Styles | WindowsForms | Syncfusion
-description: visual styles
+title: Visual Styles in Windows Forms NavigationView control | Syncfusion
+description: Learn about Visual Styles support in Syncfusion Windows Forms NavigationView control and more details.
 platform: WindowsForms
 control: Navigation View 
 documentation: ug
 ---
 
-# Visual styles
+# Visual Styles in Windows Forms NavigationView
 
 Visual Styles enhance the appearance of the NavigationView control. NavigationView supports the following visual styles: Office 2007 and Vista.
 

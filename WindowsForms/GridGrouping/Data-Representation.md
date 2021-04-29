@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Representation in WinForms GridGrouping control | Syncfusion
-description: Learn about Data Representation support in Syncfusion Windows Forms GridGrouping (GridGroupingControl) control and more details.
+title: Data Representation in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Data Representation support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# Data Representation in Windows Forms GridGrouping(GridGroupingControl)
+# Data Representation in Windows Forms GridGrouping
 
 This section deals with different layouts supported by grid grouping control. These layouts help grouping grid to organize data display. For example, if you want to view the data arranged based on values of a specific field, then you can group data columns by the required field.
 

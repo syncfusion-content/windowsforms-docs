@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-Copy-a-Range-of-Cells-to-the-Clipboard | Windows Forms | Syncfusion
-description: how to copy a range of cells to the clipboard
+title: Range of Cells to the Clipboard in DataBoundGrid | Syncfusion
+description: Learn about How to Copy a Range of Cells to the Clipboard support in Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: DataBoundGrid
 documentation: ug
 ---
 
-# How to Copy a Range of Cells to the Clipboard
+# Range of Cells to the Clipboard in DataBoundGrid
+
+This page explains How to Copy a Range of Cells to the Clipboard and more details.
+
+## How to Copy a Range of Cells to the Clipboard
 
 You can use CopyTextToClipboard method to copy text from a selected range of cells to the clipboard. 
 

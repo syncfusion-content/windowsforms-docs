@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Themes and Animation Settings | WindowsForms | Syncfusion
-description: Themes and Animation Settings
+title: Themes and Animation Settings in Navigation Pane | Syncfusion
+description: Learn about Themes and Animation Settings support in Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Themes and animation settings
+# Themes and Animation Settings in Windows Forms Navigation Pane
 
 Themes define the look and feel of the whole GroupBar. It also changes the behavior of the GroupBar completely. Themes can be enabled by setting the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_ThemesEnabled) property of GroupBar to `true`.
 

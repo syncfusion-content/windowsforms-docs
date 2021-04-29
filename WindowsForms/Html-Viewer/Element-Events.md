@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Element-Events | WindowsForms | Syncfusion
-description: element events
+title: Element Events in Windows Forms Html Viewer control | Syncfusion
+description: Learn about Element Events support in Syncfusion Windows Forms Html Viewer (HTMLUI) control and more details.
 platform: WindowsForms
 control: HTML UI
 documentation: ug
 ---
 
-# Element events
+# Element Events in Windows Forms Html Viewer (HTMLUI)
 
 Each HTML element in an HTML document is made to support events, such asClick, DoubleClick, MouseMove, KeyPress, and so on just like the Windows Forms controls.
 
@@ -289,7 +289,7 @@ End Sub
 
 This sample demonstrates the implementation of Bubbling Event architecture in HTMLUI.
 
-![](Element-Events_images/Element-Events_img1.jpeg)
+![Element-Events_img1](Element-Events_images/Element-Events_img1.jpeg)
 
 
 
@@ -307,7 +307,7 @@ This sample shows how element events are handled for creating effective user int
 
 
 
-![](Element-Events_images/Element-Events_img2.jpeg)
+![Element-Events_img2](Element-Events_images/Element-Events_img2.jpeg)
 
 
 

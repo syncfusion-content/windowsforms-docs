@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in GridGroupingControl for Syncfusion Essential Windows Forms 
-description: This sections explains about built in cell types and how to add custom cell types to the GridGroupingControl.
+title: Cell Types in Windows Forms GridGrouping control | Syncfusion
+description: Learn about Cell Types support in Syncfusion Windows Forms GridGrouping control, its elements and more details.
 platform: WindowsForms
 control: GridGrouping
 documentation: ug
 ---
 
-# Cell Types
+# Cell Types in Windows Forms GridGrouping Control
 GridGroupingControl allows the inclusion of some special controls in the grid cells. This attribute of a grid cell is referred to as its Cell Type. This section explains about the built in cell types and how to create a custom cell types in GridGroupingControl.
 In grid each cell has been created by using [GridCellModelBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellModelBase.html#) and [GridCellRendererBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellRendererBase.html#) class. `GridCellModelBase` defines the data or model part of a cell type. It holds all the data information of a cell. Rendering generally refers to the process of creating a visual representation on a user's screen. `GridCellRendererBase` acts a base class for all the renderer part of the cell type.
 
@@ -34,7 +34,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns(2).Appearance.AnyRecordFieldCell
 {% endhighlight %}
 {% endtabs %}
 
-![](CellTypes_images/CellTypes_img1.png)
+![CellTypes_img1](CellTypes_images/CellTypes_img1.png)
 
 ## Enhanced cell types 
 GridGroupingControl supports more than 10 enhanced cell types. These enhanced cell types are listed in the [CustomCellTypes](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html#) enumerator which can be found in `Syncfusion.GridHelperClasses.Windows` library.
@@ -54,7 +54,7 @@ RegisterCellModel.GridGroupingCellType(Me.gridGroupingControl1, CustomCellTypes.
 {% endhighlight %}
 {% endtabs %}
 
-![](CellTypes_images/CellTypes_img2.png)
+![CellTypes_img2](CellTypes_images/CellTypes_img2.png)
 
 N> The above code shows how to register a `PercentTextBox` custom cell type to a GridGroupingControl.
  
@@ -421,6 +421,6 @@ Me.gridGroupingControl1.TableDescriptor.Columns(2).Appearance.AnyRecordFieldCell
 {% endhighlight %}
 {% endtabs %}
 
-![](CellTypes_images/CellTypes_img3.png)
+![CellTypes_img3](CellTypes_images/CellTypes_img3.png)
 
 
