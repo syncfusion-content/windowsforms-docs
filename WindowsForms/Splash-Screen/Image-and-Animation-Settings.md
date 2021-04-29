@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Image-and-Animation-Settings | WindowsForms | Syncfusion
-description: image and animation settings
+title: Image and Animation Settings in Windows Forms Splash Screen control | Syncfusion
+description: Learn about Image and Animation Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# Image and Animation Settings
+# Image and Animation Settings in Windows Forms Splash Screen (Splash)
 
 This section demonstrates how to set a splash image and how to display it with animation.
 
@@ -42,7 +42,7 @@ Me.splashControl1.SplashImage = CType((resources.GetObject("splashControl1.Splas
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img39.jpeg) 
+![Overview_img39](Overview_images/Overview_img39.jpeg) 
 
 ## Animation
 

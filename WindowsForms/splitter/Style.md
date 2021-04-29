@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: Style
+title: Style in Windows Forms Splitter control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms Splitter control and more details.
 platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---
 
-# Style
+# Style in Windows Forms Splitter
 
 SplitterControl supports visual styles such as Default and Metro. The styles can be set by using Style property.
 

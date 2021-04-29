@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Customization | WindowsForms | Syncfusion
-description: appearance customization.SplitButton supports visual style such as Office2016White,Office2016Black,Office2016DarkGray,Office2016Colorful,Default and Metro
+title: Appearance Customization in Windows Forms Split Button control | Syncfusion
+description: Learn about Appearance Customization support in Syncfusion Windows Forms Split Button control and more details.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
 
-# Appearance Customization
+# Appearance Customization in Windows Forms Split Button
 
 ## Visual style
 

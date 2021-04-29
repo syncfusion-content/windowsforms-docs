@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formulas in Spreadsheet | Spreadsheet | Syncfusion
-description: This section provides the list of formulas supported by Spreadsheet for Syncfusion essential studio windowsforms
+title: Formulas in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Formulas support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Formulas
+# Formulas in Windows Forms Spreadsheet
 
 Spreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. Spreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 

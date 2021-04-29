@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashScreen-Settings | WindowsForms | Syncfusion
-description: splashscreen settings
+title: SplashScreen Settings in Windows Forms Splash Screen control | Syncfusion
+description: Learn about SplashScreen Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# SplashScreen Settings
+# SplashScreen Settings in Windows Forms Splash Screen (Splash)
 
 The following are the splash settings available for the SplashControl.
 

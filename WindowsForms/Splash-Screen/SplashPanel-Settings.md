@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashPanel-Settings | WindowsForms | Syncfusion
-description: splashpanel settings
+title: SplashPanel Settings in Windows Forms Splash Screen control | Syncfusion
+description: Learn about SplashPanel Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# SplashPanel Settings
+# SplashPanel Settings in Windows Forms Splash Screen (Splash)
 
 This section discusses how a SplashPanel control can be displayed as a SplashScreen for the SplashControl.
 
@@ -50,7 +50,7 @@ Me.splashControl1.FormIcon = DirectCast((resources.GetObject("splashControl1.For
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img36.jpeg) 
+![Overview_img36](Overview_images/Overview_img36.jpeg) 
 
 
 ## Integrating SplashPanel to SplashControl

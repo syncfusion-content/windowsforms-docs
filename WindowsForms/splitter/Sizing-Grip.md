@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sizing-Grip | WindowsForms | Syncfusion
-description: sizing grip
+title: Sizing Grip in Windows Forms Splitter control | Syncfusion
+description: Learn about Sizing Grip support in Syncfusion Windows Forms Splitter control and more details.
 platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---
 
-# Sizing grip
+# Sizing Grip in Windows Forms Splitter
 
 The Sizing Grip appearance is customized by using ShowSizeGrip property in SplitterControl.
 

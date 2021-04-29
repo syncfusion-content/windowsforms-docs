@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conversion in Spreadsheet | Spreadsheet | Syncfusion
-description: This section explains that how to convert the workbook in Spreadsheet to image, pdf and html for Syncfusion Essential WindowsForms.
+title: Conversion in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Conversion support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Conversion
+# Conversion in Windows Forms Spreadsheet
 This section explains about the conversion of workbook in Spreadsheet into image, PDF and HTML
 
 ## Convert into Image

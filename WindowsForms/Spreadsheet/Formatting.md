@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting in Spreadsheet | Spreadsheet | Syncfusion
-description: This section explains that how to apply the styles and formats in Spreadsheet for Syncfusion Essential WindowsForms.
+title: Formatting in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Formatting support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Formatting
+# Formatting in Windows Forms Spreadsheet
 
 This section explains about the formatting options similar to excel in Spreadsheet.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button-Caption | WindowsForms | Syncfusion
-description: button caption
+title: Button Caption in Windows Forms Split Button control | Syncfusion
+description: Learn about Button Caption support in Syncfusion Windows Forms Split Button control and more details.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
 
-# Button Caption
+# Button Caption in Windows Forms Split Button
 
 This feature enables you to name your SplitButton as needed.
 
@@ -31,7 +31,7 @@ splitButton1.Text = "Click"
 {% endhighlight %}
 {% endtabs %}
 
-![](Button-Caption_images/Button-Caption_img1.png)
+![Button-Caption_img1](Button-Caption_images/Button-Caption_img1.png)
 
 
 The following code illustrates how to set the selected item from the dropdown as the caption:
@@ -55,4 +55,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Button-Caption_images/Button-Caption_img2.png)
+![Button-Caption_img2](Button-Caption_images/Button-Caption_img2.png)

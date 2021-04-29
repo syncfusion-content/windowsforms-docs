@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Spreadsheet | Spreadsheet | Syncfusion
-description: This section explains that how to localize the default strings in Spreadsheet to any language settings for Syncfusion Essential WindowsForms.
+title: Localization in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Localization support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Localization
+# Localization in Windows Forms Spreadsheet
 
 Localization is the process of configuring the application to a specific language. Spreadsheet provides support to localize all the static text in a Ribbon and all dialogs to any desired language. Localization can be done by adding resource file and setting the specific culture in the application.
 

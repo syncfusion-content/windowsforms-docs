@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms Splitter control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Splitter control, its elements and more details.
 platform: WindowsForms
 control: Splitter
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms Splitter
 
 This section briefly describes how to design the SplitterControl in the Windows Forms application.
 
@@ -19,7 +19,7 @@ This section briefly describes how to design the SplitterControl in the Windows 
 1. Create a new Windows Forms Application Project in VS IDE through the New Project Wizard.
 2. Drag and drop the SplitterControl in the Form from the Toolbox.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
 
 
 

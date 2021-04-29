@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button-Mode | WindowsForms | Syncfusion
-description: button mode
+title: Button Mode in Windows Forms Split Button control | Syncfusion
+description: Learn about Button Mode support in Syncfusion Windows Forms Split Button control and more details.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug
 ---
 
-# Button Mode
+# Button Mode in Windows Forms Split Button
 
 This feature enables you to set the button in normal or toggle mode.
 

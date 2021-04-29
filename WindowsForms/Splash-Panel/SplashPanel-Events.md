@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplashPanel-Events | WindowsForms | Syncfusion
-description: splashpanel events
+title: SplashPanel Events in Windows Forms Splash Panel control | Syncfusion
+description: Learn about SplashPanel Events support in Syncfusion Windows Forms Splash Panel control and more details.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# SplashPanel Events
+# SplashPanel Events in Windows Forms Splash Panel
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

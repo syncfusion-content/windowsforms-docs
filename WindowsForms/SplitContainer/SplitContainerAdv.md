@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SplitContainerAdv | WindowsForms | Syncfusion
-description: SplitContainerAdv
+title: Customization in Windows Forms SplitContainer control | Syncfusion
+description: Learn about Customization support in Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# SplitContainerAdv
+# Customization in Windows Forms SplitContainer (SplitContainerAdv)
 
 The below image illustrates the components of a SplitContainerAdv control. It has two panels separated by a splitter, which has arrows and a grip for the splitter.
 

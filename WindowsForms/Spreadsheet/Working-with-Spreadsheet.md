@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working With Spreadsheet in WinForms Spreadsheet | Syncfusion
-description: This section explains that how to access the worksheets and grids in Spreadsheet for Syncfusion Essential WindowsForms.
+title: Working With Spreadsheet in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Working With Spreadsheet support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Working with Spreadsheet
+# Working With Spreadsheet in Windows Forms Spreadsheet
  This section explains about accessing the Worksheet, Grid and the events associated with it.
 
 ## Accessing the worksheet

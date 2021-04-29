@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes in Spreadsheet
-description: How to import charts, sparklines, pictures and textboxes in Spreadsheet
+title: Shapes in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Shapes support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Shapes
+# Shapes in Windows Forms Spreadsheet
  This section explains how to import charts, sparklines, pictures and textboxes in Spreadsheet.
 
 ## Charts
