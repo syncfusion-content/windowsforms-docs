@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | TabbedMDIManager | Windows Forms | Syncfusion  
-description: How to add TabbedMDIManager and enable its basic features.
+title: Getting Started with Windows Forms TabbedMDI control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIManager 
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms TabbedMDI
 
 This section explains how to design a **TabbedMDIManager** control in a Windows Forms application and overview its basic functionalities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Alignment-Settings | WindowsForms | Syncfusion
-description: alignment settings
+title: Alignment Settings in Windows Forms statusbaradvpanel control | Syncfusion
+description: Learn about Alignment Settings support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Alignment Settings
+# Alignment Settings in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
 
 This section discusses the alignment settings of the StatusBarAdvPanel control.
 
@@ -40,7 +40,7 @@ Me.statusBarAdvPanel1.Alignment = System.Windows.Forms.HorizontalAlignment.Left
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img91.jpeg) 
+![Overview_img91](Overview_images/Overview_img91.jpeg) 
 
 
 ## HAlign
@@ -74,4 +74,4 @@ Me.statusBarAdvPanel1.HAlign = Syncfusion.Windows.Forms.Tools.HorzFlowAlign.Left
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img92.jpeg) 
+![Overview_img92](Overview_images/Overview_img92.jpeg) 

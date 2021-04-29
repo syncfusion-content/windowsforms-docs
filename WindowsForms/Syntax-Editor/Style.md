@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: Style
+title: Style in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Style
+# Style in Windows Forms Syntax Editor
 
 The EditControl control has rich set of themes for professional representation. You can easily modify the look and feel of the EditControl using the built-in themes.
 
@@ -48,7 +48,7 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Default
 
 {% endtabs %}
 
-![](Style_images/Style_img1.png)
+![Style_img1](Style_images/Style_img1.png)
 
 ## WindowsXP
 
@@ -71,7 +71,7 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.WindowsXP
 
 {% endtabs %}
 
-![](Style_images/Style_img2.png)
+![Style_img2](Style_images/Style_img2.png)
 
 ## Office2016Colorful
 
@@ -94,7 +94,7 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office201
 
 {% endtabs %}
 
-![](Style_images/Style_img3.png)
+![Style_img3](Style_images/Style_img3.png)
 
 ## Office2016White
 
@@ -117,7 +117,7 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office201
 
 {% endtabs %}
 
-![](Style_images/Style_img4.png)
+![Style_img4](Style_images/Style_img4.png)
 
 ## Office2016DarkGray
 
@@ -140,7 +140,7 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office201
 
 {% endtabs %}
 
-![](Style_images/Style_img5.png)
+![Style_img5](Style_images/Style_img5.png)
 
 ## Office2016Black
 
@@ -163,4 +163,4 @@ Me.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office201
 
 {% endtabs %}
 
-![](Style_images/Style_img6.png)
+![Style_img6](Style_images/Style_img6.png)

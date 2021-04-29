@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Splitter-Position | WindowsForms | Syncfusion
-description: splitter position
+title: Splitter Position in Windows Forms Tab Splitter Container control | Syncfusion
+description: Learn about Splitter Position support in Syncfusion Windows Forms Tab Splitter Container control and more details.
 platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---
 
-# Splitter position
+# Splitter Position in Windows Forms Tab Splitter Container
 
 The splitter position can be adjusted manually within the TabSplitterContainer control at design time and also at run time. To specify the position programmatically, use the [SplitterPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SplitterPosition) property.
 

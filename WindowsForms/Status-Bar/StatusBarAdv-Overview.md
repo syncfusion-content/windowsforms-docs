@@ -1,17 +1,17 @@
 ---
 layout: post
-title: StatusBarAdv-Overview | WindowsForms | Syncfusion
-description: statusbaradv overview
+title: About Windows Forms Status Bar control | Syncfusion
+description: Learn about StatusBarAdv Overview support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# StatusBarAdv Overview
+# Windows Forms Status Bar (StatusBarAdv) Overview
 
 The various sections of StatusBarAdv and their descriptions are given below.
 
-![](Overview_images/Overview_img63.jpeg) 
+![Overview_img63](Overview_images/Overview_img63.jpeg) 
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization | TabbedMDIManager | WinForms | Syncfusion
-description: This section explains about how to serialize and de-serialize the tab groups in different available formats
+title: Serialization Support in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about Serialization Support support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIManager 
 documentation: ug
 ---
 
-# Serialization support
+# Serialization Support in Windows Forms TabbedMDI
 
 The [AppStateSerializer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Runtime.Serialization.AppStateSerializer.html) class is a serialization utility that allows multiple components in an application to access a common disk I/O medium for state persistence. Using the same storage medium for persisting the state information across components, without overlying them together, helps avoid the file clutter that is bound to occur by components using distinct files.
 

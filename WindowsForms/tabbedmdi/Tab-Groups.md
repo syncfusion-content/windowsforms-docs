@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab-Groups | TabbedMDIManager | WindowsForms | Syncfusion
-description:  tab groups
+title: Tab Groups in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about Tab Groups support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIManager 
 documentation: ug

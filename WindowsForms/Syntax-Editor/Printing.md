@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing | Edit Control | Syntax Editor | Syncfusion
-description: This section explains about printing the EditControl content by using the print option from the print preview or programmatically
+title: Printing in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Printing
+# Printing in Windows Forms Syntax Editor
 
 Support to print the data displayed in the EditControl by using the [Print](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_Print) function. It also provides support to display print preview window by calling the [PrintPreview](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_PrintPreview) function.
 

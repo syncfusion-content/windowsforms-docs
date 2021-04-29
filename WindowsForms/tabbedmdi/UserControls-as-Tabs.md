@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UserControls-as-Tabs | WindowsForms | Syncfusion
-description: usercontrols as tabs
+title: UserControls as Tabs in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about UserControls as Tabs support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
 
-# UserControls as tabs
+# UserControls as Tabs in Windows Forms TabbedMDI
 
 Normally TabbedMDI is used in MDI applications where the Child forms are the children that get tabbed. But, we can also use TabbedMDI with User Controls as children that are dockable.
 
@@ -53,7 +53,7 @@ Me.dockingManager1.SetAsMDIChild(userControl, True)
 {% endtabs %}
 
 
-![](UserControls-as-Tabs_images/UserControls-as-Tabs_img1.jpeg)
+![UserControls-as-Tabs_img1](UserControls-as-Tabs_images/UserControls-as-Tabs_img1.jpeg)
 
 
 {% seealso %}

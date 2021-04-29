@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of EditControl | Windows Forms | Syncfusion
-description: This section explains about customizing the text, margin, scroll bars and splitters available in EditControl 
+title: Appearance in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms Syntax Editor
 
 Provides exclusive support to customize the background color, text, margin, split views, scrollbar, etc. User can change the background color of the control. It also supports gradient effects by using the [BackgroundColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_BackgroundColor) property.
 

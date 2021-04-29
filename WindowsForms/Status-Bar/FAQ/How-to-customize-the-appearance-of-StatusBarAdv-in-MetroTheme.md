@@ -39,4 +39,4 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Metro
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img78.png) 
+![Overview_img78](Overview_images/Overview_img78.png) 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TabControlAdv-Events | WindowsForms | Syncfusion
-description: tabcontroladv events
+title: Events in Windows Forms TabControl control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms TabControl (TabControlAdv)
 
 ## AfterEdit event
 

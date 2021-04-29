@@ -1,13 +1,13 @@
 ---
 layout: post
-title: events
-description: This section explains about the events in EditControl
+title: Events in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# EditControl Events
+# Events in Windows Forms Syntax Editor
 
 The `EditControl` is a powerful text editor control to create an interactive code editor applications with its unique feature set. It has many efficient features like editing, syntax highlighting, text indentation, intellisense, expand or collapse a block of code, custom language configuration etc. like in Microsoft Visual Studio Editor. It also provides programmatic access for most of the features like editing, intellisense, expand or collapse a block of code, and printing by raising various events.
 
@@ -1111,7 +1111,7 @@ End Sub
 
 {% endtabs %}
 
-![](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg)
+![Edit-Control-Events_img1](Edit-Control-Events_images/Edit-Control-Events_img1.jpeg)
 
 ## InsertModeChanged event
 
@@ -2439,7 +2439,7 @@ End Sub
 
 {% endtabs %}
 
-![](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)
+![Edit-Control-Events_img2](Edit-Control-Events_images/Edit-Control-Events_img2.jpeg)
 
 ## UpdateContextToolTip event
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing | Edit Control | Syntax Editor | Syncfusion
-description: This section explains about clipboard operations, unicode, comment and uncomment functionalities available in EditControl
+title: Editing in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Editing support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Editing
+# Editing in Windows Forms Syntax Editor
 
 The EditControl allows end users to modify and edit the text documents and source code files. Some of the important features are:
 

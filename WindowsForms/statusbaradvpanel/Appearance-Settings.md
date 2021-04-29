@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
-description: appearance settings
+title: Appearance Settings in Windows Forms statusbaradvpanel control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance Settings in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
 
 The appearance of the StatusBarAdvPanel control can be enhanced using the properties given below.
 
@@ -70,7 +70,7 @@ Me.statusBarAdvPanel1.BackgroundColor = New Syncfusion.Drawing.BrushInfo(Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img83.jpeg) 
+![Overview_img83](Overview_images/Overview_img83.jpeg) 
 
 ## Icon settings
 
@@ -103,4 +103,4 @@ Me.Icon = DirectCast((resources.GetObject("$this.Icon")), System.Drawing.Icon)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img84.jpeg) 
+![Overview_img84](Overview_images/Overview_img84.jpeg) 
