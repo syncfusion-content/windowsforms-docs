@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling | WindowsForms | Syncfusion
-description: styling
+title: Styling in Windows Forms Rating Control control | Syncfusion
+description: Learn about Styling support in Syncfusion Windows Forms Rating Control (Rating) control and more details.
 platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
 
-# Styling
+# Styling in Windows Forms Rating Control (Rating)
 
 Styling of shapes can be done either by using predefined visual styles or by [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackColor), BorderColor, HighlightColor, SelectionColor and GradientColor settings.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of ProgressBarAdv control | Windows Forms | Syncfusion
-description: ProgressBarAdv control notifies user about the progress of a task. It supports orientation, customization and progress animation.
+title: About Windows Forms Progress Bar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control, its elements and more details.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Progress Bar (ProgressBarAdv) Overview
 
 [ProgressBarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control helps to provide progress information during lengthy operations such as installation, copying, and printing. It also lets users know the time remaining to complete a lengthy operation. It is an advanced progressbar with a wide variety of following features.
 

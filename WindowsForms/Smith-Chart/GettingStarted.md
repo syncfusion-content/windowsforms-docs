@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Smith Chart control | Syncfusion
-description: This section provides a create a simple smith chart through the designer and through code in windowsforms platform.
+title: Getting Started with Windows Forms Smith Chart control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Smith Chart (SfSmithChart) control, its elements and more details.
 platform: WindowsForms
 control: SfSmithChart
 documentation: ug
@@ -14,7 +14,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 [How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
 
-# Configuring a smith chart control
+# Getting Started with Windows Forms Smith Chart (SfSmithChart)
 
 This section explains the steps required to build an application with Smith chart.
 

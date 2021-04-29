@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Assignment | Windows Forms | Syncfusion
-description: assignment
+title: Assignment in Windows Forms projio control | Syncfusion
+description: Learn about Assignment support in Syncfusion Windows Forms projio (ProjIO) control and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Assignment
+# Assignment in Windows Forms proj (ProjIO)
 
 Assignment class is used to bind resources to tasks. It can also be used to retrieve the details of the task and resource that are bound together.
 
@@ -480,4 +480,4 @@ project.Assignments.Add(assignment)
 
 The project created using the above code will look as shown in the following Microsoft Project screenshot.
 
-![](Assignment_images/Assignment_img1.jpeg)
+![Assignment_img1](Assignment_images/Assignment_img1.jpeg)

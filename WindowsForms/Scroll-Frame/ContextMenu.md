@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ContextMenu in Windows Forms ScrollFrame Control | Syncfusion
-description: Learn about the explains how to customize the context menu of the Syncfusion WinForms SfScrollFrame control and more details.
+title: Context Menu in Windows Forms Scroll Frame control | Syncfusion
+description: Learn about Context Menu support in Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug

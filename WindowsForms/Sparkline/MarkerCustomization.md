@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: MarkerCustomization
+title: Marker Customization in Windows Forms Sparkline control | Syncfusion
+description: Learn about Marker Customization support in Syncfusion Windows Forms Sparkline control and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
 ---
 
-# Marker Support
+# Marker Customization in Windows Forms Sparkline
 
 The markers are visual indicators to represent the location of data points in the Sparkline graph. The markers can support three types of sparklines.
 
@@ -94,7 +94,7 @@ Me.sparkLine1.Markers.ShowMarker  =True
 
 {% endtabs %}
 
-![](Marker_images/Line.png)
+![Line](Marker_images/Line.png)
 
 ## Markers Support for Column
 
@@ -145,7 +145,7 @@ Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagon
 
 {% endtabs %}
 
-![](Marker_images/Column.png)
+![Column](Marker_images/Column.png)
 
 ## Markers Support for WinLoss
 
@@ -197,4 +197,4 @@ Me.sparkLine1.Markers.LowPointColor = new BrushInfo(GradientStyle.BackwardDiagon
 
 {% endtabs %}
 
-![](Marker_images/Winloss.png)
+![Winloss](Marker_images/Winloss.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard-Support | WindowsForms | Syncfusion
-description: keyboard support
+title: Keyboard Support in Windows Forms Ribbon control | Syncfusion
+description: Learn about Keyboard Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Keyboard Support
+# Keyboard Support in Windows Forms Ribbon (RibbonControlAdv)
 
 To invoke any command using KeyBoard, RibbonControlAdv provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed.
 
@@ -17,23 +17,23 @@ Follow the steps below to add Super accelerator
 
 1.	Drag-and-drop the SuperAccelerator on your form.
 
-![](Keyboard_Support_Images/Keyboard-Support_img1.jpg)
+![Keyboard-Support_img1](Keyboard_Support_Images/Keyboard-Support_img1.jpg)
 
 2.	When the SuperAccelerator component is added to a form, an extended property will be added to the properties of every item in the RibbonControlAdv.
 
-![](Keyboard_Support_Images/Keyboard-Support_img2.jpg)
+![Keyboard-Support_img2](Keyboard_Support_Images/Keyboard-Support_img2.jpg)
 
 
 3.	In the appropriate item, use the Accelerator on SuperAccelerator property to set the string value.
 
 4.	To accelerate the item’s click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
 
-![](Keyboard_Support_Images/Keyboard-Support_img3.jpg)
+![Keyboard-Support_img3](Keyboard_Support_Images/Keyboard-Support_img3.jpg)
 
 
 5.	Press the string of any Tab and all the strings for the items in that tab will be displayed.
 
-![](Keyboard_Support_Images/Keyboard-Support_img4.jpg)
+![Keyboard-Support_img4](Keyboard_Support_Images/Keyboard-Support_img4.jpg)
 
 
 6.	Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Cut is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Cut item event will be triggered.)

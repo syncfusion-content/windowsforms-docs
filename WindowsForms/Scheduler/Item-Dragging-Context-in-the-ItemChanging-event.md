@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Item-Dragging-Context-in-the-ItemChanging-event | Windows Forms | Syncfusion
-description: item dragging context in the itemchanging event
+title: Item Dragging Context in the ItemChanging in Scheduler | Syncfusion
+description: Learn about Item Dragging Context in the ItemChanging event support in Syncfusion Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Item Dragging Context in the ItemChanging Event
+# Item Dragging Context in the ItemChanging event in Scheduler
 
 This feature provides support to detect the dragging context when an item is dropped in the schedule part or calendar part. It also enables you to cancel the needed items through the ItemChanging event.
 

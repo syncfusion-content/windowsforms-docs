@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Disable bar items | Windows Forms | Syncfusion
-description: Bar items can be enabled or disabled based on user requirement.
+title: Disable bar items in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Disable bar items support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Disable bar items
+# Disable bar items in Windows Forms PopupMenu
 
 >**NOTE**       
 1. This feature is not applicable for ListBarItem and StaticBarItem.             

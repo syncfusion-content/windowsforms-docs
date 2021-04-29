@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Task | Windows Forms | Syncfusion
-description: task
+title: Task in Windows Forms projio control | Syncfusion
+description: Learn about Task support in Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Task
+# Task in Windows Forms proj (ProjIO)
 
 Task class exposes ways to create a task for a Project. Task is useful in creating tasks and adding them to the Project. Using Task class, one can create, add and modify tasks. It can also be used to obtain task information.
 
@@ -578,7 +578,7 @@ task1.IsSummary = True
 
 The summary task created using the above code will look like as shown below when viewed in Microsoft Project.
 
-![](Task_images/Task_img1.jpeg)
+![Task_img1](Task_images/Task_img1.jpeg)
 
 
 
@@ -732,4 +732,4 @@ P.Save("ProjectWithTasks.xml")
 
 The project file created using above code will look as shown in the following screenshot.
 
-![](Task_images/Task_img2.jpeg)
+![Task_img2](Task_images/Task_img2.jpeg)

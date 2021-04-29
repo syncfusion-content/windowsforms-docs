@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Scheduler | Syncfusion
-description: This section explains about the how to add schedling support to your applications
+title: About Windows Forms Scheduler control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Scheduler (Schedule) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Scheduler (Schedule) Overview
 
 The Syncfusion Essential Schedule is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
 
