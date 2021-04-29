@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Rows | PivotGrid | Windows Forms | Syncfusion
-description: Pivot rows
+title: Pivot Rows in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Pivot Rows support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---
 
-# Pivot Rows
+# Pivot Rows in Windows Forms Pivot Grid
 
 Pivot rows are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for rows that appear in the pivot grid control.
 

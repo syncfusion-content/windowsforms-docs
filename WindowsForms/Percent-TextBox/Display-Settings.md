@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Settings | WindowsForms | Syncfusion
-description: Display Settings
+title: Display Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Display Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Display Settings
+# Display Settings in Windows Forms Percent TextBox
 
 This section discusses the display settings of the PercentTextBox control.
 

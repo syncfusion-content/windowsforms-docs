@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PDF Viewer Overview | PDF viewer | Windows Forms | Syncfusion
-description: Overview of PDF viewer for Windows Forms provides details about features supported and assembly requirements to use PDF viewer WF.
+title: About Windows Forms PDF Viewer control | Syncfusion
+description: Learn here all about Overview support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-# WinForms PDF Viewer Overview
+# Windows Forms PDF Viewer (PdfViewerControl) Overview
 
 The WinForms PDF Viewer control supports viewing and printing PDF files in WinForms applications. The hyperlink and table of contents support provides easy navigation within and outside the PDF files.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with Interaction Modes | Windows Forms | Syncfusion
-description: This section describes about how to work with various interaction modes that are supported in PDF Viewer.
+title: Working with Interaction Modes in WinForms PDF Viewer | Syncfusion
+description: Learn about Working with Interaction Modes support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PDF Viewer
 documentation: UG
 ---
 
-# Working with Interaction Modes
+# Working with Interaction Modes in Windows Forms PDF Viewer
 
 The PDF Viewer supports following cursor modes for easy interaction with the PDF documents: 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value Settings | WindowsForms | Syncfusion
-description: Value Settings
+title: Value Settings in Windows Forms Percent TextBox control | Syncfusion
+description: Learn about Value Settings support in Syncfusion Windows Forms Percent TextBox control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Value Settings
+# Value Settings in Windows Forms Percent TextBox
 
 The various values of the PercentTextBox control and their settings are given below.
 
