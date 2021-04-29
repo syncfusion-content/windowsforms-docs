@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Support in Windows Forms Ribbon control | Syncfusion
-description: Learn about Keyboard Support support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
+description: Learn about Keyboard Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
