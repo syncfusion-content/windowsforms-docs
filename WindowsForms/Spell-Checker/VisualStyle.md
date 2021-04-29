@@ -1,13 +1,13 @@
 ---
 layout: post
-title: VisualStyle | SpellCheckerAdv | WindowsForms | Syncfusion
-description: VisualStyle
+title: VisualStyle in Windows Forms Spell Checker control | Syncfusion
+description: Learn about VisualStyle support in Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
 platform: WindowsForms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# VisualStyle
+# VisualStyle in Windows Forms Spell Checker (SpellCheckerAdv)
 
 The SpellCheckerAdv control has rich set of themes for professional representation. You can easily modify the look and feel of the SpellCheckerAdv using the built-in themes.
 

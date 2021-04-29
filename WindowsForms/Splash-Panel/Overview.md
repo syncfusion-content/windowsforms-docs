@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Splash panel for Windows Forms
-description: An overview about SplashPanel control which allows the user to design a custom notification screen as like message window in the desktop
+title: About Windows Forms Splash Panel control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Splash Panel control, its elements and more details.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Splash Panel Overview
 
 The SplashPanel is a System.Windows.Forms panel-derived class that allows users to design custom splash screens within the form's designer. The SplashPanel can take multiple child controls that can be used to display information or collect information from the user.
 

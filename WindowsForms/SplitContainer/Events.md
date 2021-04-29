@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | WindowsForms | Syncfusion
-description: events
+title: Events in Windows Forms SplitContainer control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms SplitContainer (SplitContainerAdv)
 
 The events available for the SplitContainerAdv control are as follows.
 

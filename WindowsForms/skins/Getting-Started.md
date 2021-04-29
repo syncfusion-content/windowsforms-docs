@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WinForms Skin Manager | Themes | Windows Forms | Syncfusion
-description: Learn here about how to apply theme or skin for a control or application using Windows Forms skin manager.
+title: Getting Started with Windows Forms skins control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms skins (SkinManager) control, its elements and more details.
 platform: WindowsForms
 control: SkinManager
 documentation: ug
 ---
 
-# WinForms Skin Manager
+# Getting Started with Windows Forms skins (SkinManager)
 
 This section briefly describes how to create a new Windows Forms project in Visual Studio and apply themes using the **SkinManager** component.
 

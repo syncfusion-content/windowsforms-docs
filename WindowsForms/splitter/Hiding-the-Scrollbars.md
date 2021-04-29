@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hiding-the-Scrollbars | WindowsForms | Syncfusion
-description: hiding the scrollbars
+title: Hiding the Scrollbars in Windows Forms Splitter control | Syncfusion
+description: Learn about Hiding the Scrollbars support in Syncfusion Windows Forms Splitter control and more details.
 platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---
 
-# Hiding the scrollbars
+# Hiding the Scrollbars in Windows Forms Splitter
 
 The Horizontal and Vertical scrollbars in SplitterControl can be hidden by using the ShowHorizontalScrollBar and ShowVerticalScrollBar properties.
 

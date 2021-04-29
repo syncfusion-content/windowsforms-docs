@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UI Automation in Windows Forms ScrollFrame Control | Syncfusion
-description: This section explains on how to test the UI automation code UI test and QTP Syncfusion WinForms SfScrollFrame control and more details.
+title: UI Automation in Windows Forms Scroll Frame control | Syncfusion
+description: Learn about UI Automation support in Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug

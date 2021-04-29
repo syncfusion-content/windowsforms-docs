@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Host-Form-Settings | WindowsForms | Syncfusion
-description: host form settings
+title: Host Form Settings in Windows Forms Splash Screen control | Syncfusion
+description: Learn about Host Form Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
 ---
 
-# Host Form Settings
+# Host Form Settings in Windows Forms Splash Screen (Splash)
 
 The host form of a SplashControl application can be hidden or shown, when the splash image is displayed. The properties given below illustrate this.
 

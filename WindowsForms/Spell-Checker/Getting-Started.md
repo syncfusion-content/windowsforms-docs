@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in WinForms Spell Checker control | Syncfusion
-description: This section describes about how to create a WPF SpellCheckerAdv and how to spell check the text using it.
+title: Getting Started with Windows Forms Spell Checker control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its elements and more details.
 platform: WindowsForms
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Getting started with SpellCheckerAdv
+# Getting Started with Windows Forms Spell Checker (SpellCheckerAdv)
 
 This section describes how to add a [SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) control in a Windows Forms application and overview of its basic functionalities.
 

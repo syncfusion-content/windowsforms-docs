@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-Appearance | Windows Forms | Syncfusion
-description: customizing appearance
+title: Customizing Appearance in Windows Forms Scheduler control | Syncfusion
+description: Learn about Customizing Appearance support in Syncfusion Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Customizing Appearance
+# Customizing Appearance in Windows Forms Scheduler (Schedule)
 
 Appearance of any region of the ScheduleControl can be customized by using the ScheduleControl.Appearance property.
 

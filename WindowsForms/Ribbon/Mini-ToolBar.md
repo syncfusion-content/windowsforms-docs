@@ -1,29 +1,29 @@
 ---
 layout: post
-title: Mini-ToolBar | WindowsForms | Syncfusion
-description: mini toolBar
+title: MiniToolBar in Windows Forms Ribbon control | Syncfusion
+description: Learn about MiniToolBar support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Mini ToolBar
+# MiniToolBar in Windows Forms Ribbon (RibbonControlAdv)
 
 Essential Tools comes with MiniToolBar control with similar look and feel of Microsoft Office 2007. It appears when the user selects and right clicks on the text. It gives options to customize the selected text. It will look blurred in the beginning, but once the mouse is focused on it, it will be prominent to the users.
 
-![](Mini_Toolbar_Images/Mini-ToolBar_img1.jpg)
+![Mini-ToolBar_img1](Mini_Toolbar_Images/Mini-ToolBar_img1.jpg)
 
 ## Adding MiniToolBar
 
 Drag and drop a MiniToolBar from the toolbox.
 
-![](Mini_Toolbar_Images/Mini-ToolBar_img2.jpg)
+![Mini-ToolBar_img2](Mini_Toolbar_Images/Mini-ToolBar_img2.jpg)
 
 ## Assigning to the Control
 
 Set the MiniToolBar’s AssociatedControl property to the control to which this is to be associated.
 
-![](Mini_Toolbar_Images/Mini-ToolBar_img3.jpg)
+![Mini-ToolBar_img3](Mini_Toolbar_Images/Mini-ToolBar_img3.jpg)
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ Me.miniToolBar1.AssociatedControl = Me.richTextBox1
 
 Open the Items Collection Editor of the MiniToolBar and add the required items into the MiniToolBar and click OK.
 
-![](Mini_Toolbar_Images/Mini-ToolBar_img4.jpg)
+![Mini-ToolBar_img4](Mini_Toolbar_Images/Mini-ToolBar_img4.jpg)
 
 ## Adding Item through Code
 
@@ -235,7 +235,7 @@ Me.miniToolBar1.Style = ToolStripExStyle.Office2016Colorful
 
 {% endtabs %}
 
-![](Mini_Toolbar_Images/Mini-ToolBar_img5.jpg)
+![Mini-ToolBar_img5](Mini_Toolbar_Images/Mini-ToolBar_img5.jpg)
 
 ## Color Scheme
 

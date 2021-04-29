@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrollbar-customization | WindowsForms | Syncfusion
-description: scrollbar customization
+title: Scrollbar Customization in Windows Forms Splitter control | Syncfusion
+description: Learn about Scrollbar Customization support in Syncfusion Windows Forms Splitter control and more details.
 platform: WindowsForms
 control: Splitter  
 documentation: ug
 ---
 
-# Scrollbar customization
+# Scrollbar Customization in Windows Forms Splitter
 
 The appearance of the SplitterControl scrollbar can be customized by using the GridOfficeScrollBars property. The scrollbar can be customized to get the following style look and feel.
 

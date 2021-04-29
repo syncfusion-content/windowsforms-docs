@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Grouping Bar Items | Windows Forms | Syncfusion
-description: Group the required bar items
+title: Grouping Bar Items in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Grouping Bar Items support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Grouping of BarItems
+# Grouping Bar Items in Windows Forms PopupMenu
 
 Grouping allows to add separator between a collection of bar items which are relevant to one another. To group the required bar items, the [`SeparatorIndices`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_SeparatorIndices) property of the associated ParentBarItem is used.
 

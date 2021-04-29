@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: This section briefly describes the basic functions of Syncfusion's RibbonControlAdv for Windows Forms.
+title: Getting Started with Windows Forms Ribbon control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Ribbon (RibbonControlAdv) control, its elements and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Getting Started with WinForms RibbonControlAdv
+# Getting Started with Windows Forms Ribbon (RibbonControlAdv)
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Outlines Support in Spreadsheet | spreadsheet | Syncfusion
-description: This section explains that how to group/ungroup the rows and columns in Spreadsheet for Syncfusion Essential WindowsForms.
+title: Outline in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Outline support in Syncfusion Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Outline (Group)
+# Outline in Windows Forms Spreadsheet
 
 Spreadsheet provides support for outlines like in excel which makes your data easier to view. You can group or ungroup the data’s either by rows or columns.
 

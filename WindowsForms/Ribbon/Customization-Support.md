@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization-Support | WindowsForms | Syncfusion
-description: This section briefly describes the customization support in Syncfusion's RibbonControlAdv for Windows Forms.
+title: Customization Support in Windows Forms Ribbon control | Syncfusion
+description: Learn about Customization Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Customization Support
+# Customization Support in Windows Forms Ribbon (RibbonControlAdv)
 
 RibbonControlAdv allows to customize the Ribbon and quick access toolbar with the support to add and remove different items to QAT and to add new tabs and change the location of existing tabs and items in ribbon.
 

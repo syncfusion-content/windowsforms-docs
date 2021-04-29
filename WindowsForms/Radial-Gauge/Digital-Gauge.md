@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Digital-Gauge | WindowsForms | Syncfusion
-description: Digital Gauge is data visualization control used to display alphanumeric characters in digital mode. Supports different segment styles.
+title: Digital Gauge in Windows Forms Radial Gauge control | Syncfusion
+description: Learn about Digital Gauge support in Syncfusion Windows Forms Radial Gauge (Gauge) control and more details.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# DigitalGauge
+# Digital Gauge in Windows Forms Radial Gauge (Gauge)
 
 [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control is used to display alphanumeric characters in digital (LED Display) mode. It is used to display a range of values that uses character in combination with numbers.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | WindowsForms | Syncfusion
-description: events
+title: Events in Windows Forms Tab Splitter Container control | Syncfusion
+description: Learn about Events support in Syncfusion Windows Forms Tab Splitter Container control and more details.
 platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---
 
-# Events
+# Events in Windows Forms Tab Splitter Container
 
 This section comprises the below events:
 

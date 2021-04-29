@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Navigation | Syntax Editor | Syncfusion
-description: This section explains about navigating the text in EditControl through keyboard or programmatically
+title: Text Navigation in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Text Navigation support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Text Navigation
+# Text Navigation in Windows Forms Syntax Editor
 
 The EditControl offers extensive support for text navigation. You can perform navigation at the character, word, line, page, or entire document levels. This section briefly explains navigation of text in the EditControl.
 

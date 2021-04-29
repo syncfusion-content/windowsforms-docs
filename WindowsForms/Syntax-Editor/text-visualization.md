@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text Visualization in Windows Forms Syntax Editor | Syncfusion
-description: This section explains about the customizing the lines, collapse and expand the region, bookmark features in EditControl
+title: Text Visualization in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about Text Visualization support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug

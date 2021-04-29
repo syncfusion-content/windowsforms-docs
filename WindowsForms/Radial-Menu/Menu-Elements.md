@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Menu-Elements | WindowsForms | Syncfusion
-description: menu elements
+title: Menu Elements in Windows Forms Radial Menu control | Syncfusion
+description: Learn about Menu Elements support in Syncfusion Windows Forms Radial Menu control, its elements and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
 ---
 
-# Menu elements
+# Menu Elements in Windows Forms Radial Menu
 
 ## Radial Menu items
 

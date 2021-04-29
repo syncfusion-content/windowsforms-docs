@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shape-Element | WindowsForms | Syncfusion
-description: shape element
+title: Shape Element in Windows Forms Rating Control control | Syncfusion
+description: Learn about Shape Element support in Syncfusion Windows Forms Rating Control (Rating) control and more details.
 platform: WindowsForms
 control: Rating  
 documentation: ug
 ---
 
-# Shape Element
+# Shape Element in Windows Forms Rating Control (Rating)
 
 It acts like a core element in RatingControl, to illustrate rating values through visual representation.
 
