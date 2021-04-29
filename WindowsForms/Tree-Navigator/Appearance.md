@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Windows Forms Tree Navigator control | Syncfusion
-description: Learn about Appearance support in Syncfusion Windows Forms Tree Navigator control and more details.
+description: Learn about Appearance support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
@@ -125,7 +125,7 @@ this.treeNavigator1.ShowHeader = false;
 ![Noheader1](Concept-and-Features_images/Noheader1.png)
 
 
-# Appearance in Windows Forms Tree Navigator
+## Appearance in Windows Forms Tree Navigator
 
 Border color and Thickness of the TreeNavigator can be customized using properties BorderColor and BorderThickness.
 
@@ -181,7 +181,7 @@ ME.treeNavigator1.PadY = 10
 
 ![Pady](Concept-and-Features_images/Pady.png)
 
-# Appearance in Windows Forms Tree Navigator
+## Appearance in Windows Forms Tree Navigator
 In Tree Navigator you can customize the tree menu items with the help of properties such as ItemBackColor, ItemHoverColor, SelectedColor, SelectedItemForeColor.
 
 *	ItemBackColor – This property is used to set the back color for the tree menu item when it is in normal state. 
@@ -241,7 +241,7 @@ Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 ![TreemenuitemCustomize](Concept-and-Features_images/TreemenuitemCustomize.png)
 
 
-# Appearance in Windows Forms Tree Navigator
+## Appearance in Windows Forms Tree Navigator
 In Tree Navigator, TextAlign property is used to set the the Text alignment of the TreeMenuItem
 
 *	Center – This mode is used to align the text in the center of the tree menu item.	

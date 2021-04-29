@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
-# Getting Started in Windows Forms xp taskpane (XPTaskPane)
+# Getting Started in Windows Forms xp task pane (XPTaskPane)
 
 This section describes how to add [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) control in a Windows Forms application and overview of its basic functionalities.
 

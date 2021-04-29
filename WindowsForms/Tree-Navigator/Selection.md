@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in Windows Forms Tree Navigator control | Syncfusion
-description: Learn about Selection support in Syncfusion Windows Forms Tree Navigator control and more details.
+description: Learn about Selection support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
@@ -141,7 +141,7 @@ End Sub
 
 {% endtabs %}
 
-# Selection in Windows Forms Tree Navigator
+## Selection in Windows Forms Tree Navigator
 Scrolling can be customized by using Touch scroll. When you mouse over or touch near scroll bar area, the scroll bar will be visible and by default, the scroll will not be visible. This can be enabled by setting UseTouchScrollBehavior property to true.
 
 The following code examples allow you to enable touch scroll.

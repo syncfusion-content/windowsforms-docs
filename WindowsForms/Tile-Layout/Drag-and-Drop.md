@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and Drop in Windows Forms Tile Layout control | Syncfusion
-description: Learn about Drag and Drop support in Syncfusion Windows Forms Tile Layout control and more details.
+description: Learn about Drag and Drop support in Syncfusion Windows Forms Tile Layout control, its elements and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug

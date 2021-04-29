@@ -7,7 +7,7 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# Header Settings in Windows Forms xp taskpane (XPTaskPane)
+# Header Settings in Windows Forms xp task pane (XPTaskPane)
 
 ## Setting visibility of the ToolBar items
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chevron/Overflow Button in Windows Forms xptoolbar control | Syncfusion
+title: Chevron/Overflow Button in Windows Forms xptoolbar | Syncfusion
 description: Learn about Chevron/Overflow Button support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar

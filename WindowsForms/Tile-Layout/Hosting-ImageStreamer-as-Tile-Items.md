@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hosting ImageStreamer as Tile Items in Windows Forms Tile Layout control | Syncfusion
+title: Hosting ImageStreamer as Tile Items in Tile Layout | Syncfusion
 description: Learn about Hosting ImageStreamer as Tile Items support in Syncfusion Windows Forms Tile Layout control and more details.
 platform: WindowsForms
 control: TileLayout 

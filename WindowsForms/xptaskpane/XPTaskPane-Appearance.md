@@ -7,7 +7,7 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# XPTaskPane Appearance in Windows Forms xp taskpane (XPTaskPane)
+# XPTaskPane Appearance in Windows Forms xp task pane (XPTaskPane)
 
 This section comprises the below topics:
 

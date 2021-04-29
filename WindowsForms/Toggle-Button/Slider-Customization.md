@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider Customization in Windows Forms Toggle Button control | Syncfusion
+title: Slider Customization in Windows Forms Toggle Button | Syncfusion
 description: Learn about Slider Customization support in Syncfusion Windows Forms Toggle Button control and more details.
 platform: WindowsForms
 control: ToggleButton 

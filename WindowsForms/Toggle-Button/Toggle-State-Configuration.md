@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toggle State Configuration in Windows Forms Toggle Button control | Syncfusion
+title: Toggle State Configuration in Windows Forms Toggle Button | Syncfusion
 description: Learn about Toggle State Configuration support in Syncfusion Windows Forms Toggle Button control and more details.
 platform: WindowsForms
 control: ToggleButton 

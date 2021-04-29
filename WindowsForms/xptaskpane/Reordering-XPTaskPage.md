@@ -7,7 +7,7 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# Reordering-XPTaskPage in Windows Forms xp taskpane (XPTaskPane)
+# Reordering-XPTaskPage in Windows Forms xp task pane (XPTaskPane)
 
 When the end user adds a page to the XPTaskPane control, the order of the page is decided, as the page is added. They can be reordered using any one of the below methods in the designer.
 

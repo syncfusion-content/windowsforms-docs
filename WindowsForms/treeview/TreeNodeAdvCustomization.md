@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeNodeAdv Customization in Windows Forms TreeView control | Syncfusion
+title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion
 description: Learn about TreeNodeAdv Customization support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
@@ -319,7 +319,7 @@ To set the LabelPrimitive for an individual node follow the given steps.
 
 3. Now the `LabelPrimitive` is added to that selected node.
 
-   ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img6.jpg)
+   ![TreeNodeAdv_Customization_Images6](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img6.jpg)
 
 4. To save changes click the `OK` button.
 
