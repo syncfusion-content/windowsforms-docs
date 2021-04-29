@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Distance between the TabbedMDIManager | Syncfusion
-description: Learn about Customize the Distance between the Tab and the Control in TabbedMDIManager support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn about Customize the Distance between the Tab and the Control in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIManager
 documentation: ug

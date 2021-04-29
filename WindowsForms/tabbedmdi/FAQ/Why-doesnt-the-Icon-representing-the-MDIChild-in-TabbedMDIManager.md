@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why doesnt the Icon representing in TabbedMDIManager | Syncfusion
-description: Learn about Why doesnt the Icon representing the MDIChild in TabbedMDIManager support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn about Why doesnt the Icon representing the MDIChild in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
