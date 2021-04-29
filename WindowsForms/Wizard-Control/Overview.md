@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Windows Forms Wizard Control | Syncfusion
-description: Learn about Overview support in Syncfusion Windows Forms Wizard Control, its elements and more details.
+description: Learn here all about introduction of Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: WindowsForms
 control: WizardControl 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use of Undo/ Redo functionality in TreeViewAdv | Syncfusion
-description: Learn about What is the use of Undo/ Redo functionality in TreeViewAdv using HistoryManager property in Syncfusion Windows Forms TreeView and more details.
+description: Learn about What is the use of Undo/ Redo functionality using HistoryManager property in Syncfusion Windows Forms TreeView and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
