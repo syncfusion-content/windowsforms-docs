@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in PivotChart | Syncfusion
-description: Sorting operations in PivotChart
+title: Sorting in Windows Forms Pivot Chart control | Syncfusion
+description: Learn about Sorting support in Syncfusion Windows Forms Pivot Chart control, its elements and more details.
 platform: windowsforms
 control: PivotChart
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms Pivot Chart
 The pivot chart supports sorting of both `PivotAxis` and `PivotLegends` programmatically in the ascending and descending order. By default, the pivot chart populates the series in ascending order.
 
 ## Sort by pivot axis

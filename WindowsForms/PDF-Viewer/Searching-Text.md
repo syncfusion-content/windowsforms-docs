@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Searching Text | PDF Viewer | Windows Forms | Syncfusion
-description: Text search support allows user to search the text in the PDF document.
+title: Searching Text in Windows Forms PDF Viewer control | Syncfusion
+description: Learn about Searching Text support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-# Searching Text
+# Searching Text in Windows Forms PDF Viewer (PdfViewerControl)
 
 The Essential `PdfViewerControl` allows users to search a given text in the PDF document. The search box will appear when `Ctrl+F` is pressed and searches the text in the PDF document as shown in the following figure.
 

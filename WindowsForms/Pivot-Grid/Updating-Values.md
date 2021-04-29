@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Updating Values | PivotGrid | Windows Forms | Syncfusion
-description: Updating cell values in pivot grid
+title: Updating Values in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Updating Values support in Syncfusion Windows Forms Pivot Grid control and more details.
 platform: windowsforms
 control: Pivot Grid
 documentation: ug
 ---
 
-# Updating Values
+# Updating Values in Windows Forms Pivot Grid
 
 Pivot grid provides support to update the cell values in real time. This support is useful when users want to update the cell values in the underlying data source, thereby the changes will be reflected in the total cells based on the updated data.
 

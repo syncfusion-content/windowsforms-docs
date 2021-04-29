@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming | PivotGrid | Windows Forms | Syncfusion
-description: Themes of pivot grid control
+title: Theming in Windows Forms Pivot Grid control | Syncfusion
+description: Learn about Theming support in Syncfusion Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
 documentation: ug
 ---
 
-# Theming
+# Theming in Windows Forms Pivot Grid
 
 Pivot grid provides support for various built-in themes, using which the default look of visual elements in the pivot grid control can be customized. This support can be achieved by using the [GridVisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_GridVisualStyles) property of pivot grid control.
 
