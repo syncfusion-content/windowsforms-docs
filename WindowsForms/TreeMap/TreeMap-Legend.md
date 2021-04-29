@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Legend
+# TreeMap Legend in Windows Forms TreeMap control
 
 TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using RangeBrushColorMapping. The labels of the legend item can be customized by specifying LegendLabel of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 
@@ -93,7 +93,7 @@ RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Features_images12](Features_images/Features_img12.png)
 
 TreeMap with Legend
 {:.caption}
