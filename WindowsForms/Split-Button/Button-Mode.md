@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Button Mode in Windows Forms Split Button control | Syncfusion
-description: Learn about Button Mode support in Syncfusion Windows Forms Split Button control and more details.
+description: Learn about Button Mode support in Syncfusion Windows Forms Split Button control, its elements and more details.
 platform: WindowsForms
 control: SplitButton 
 documentation: ug

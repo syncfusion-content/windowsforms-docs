@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplashPanel Settings in Windows Forms Splash Screen control | Syncfusion
+title: SplashPanel Settings in Windows Forms Splash Screen | Syncfusion
 description: Learn about SplashPanel Settings support in Syncfusion Windows Forms Splash Screen (Splash) control and more details.
 platform: WindowsForms
 control: SplashControl
@@ -170,4 +170,4 @@ Me.Controls.Add(Me.SplashPanel1)
 {% endhighlight %}
 {% endtabs %}
 
-   ![](Overview_images/Overview_img37.jpeg) 
+   ![Overview_images37](Overview_images/Overview_img37.jpeg) 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working With Spreadsheet in Windows Forms Spreadsheet control | Syncfusion
+title: Working With Spreadsheet in Windows Forms Spreadsheet | Syncfusion
 description: Learn about Working With Spreadsheet support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet

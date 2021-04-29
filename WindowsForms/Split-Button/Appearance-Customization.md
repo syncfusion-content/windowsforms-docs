@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance Customization in Windows Forms Split Button control | Syncfusion
+title: Appearance Customization in Windows Forms Split Button | Syncfusion
 description: Learn about Appearance Customization support in Syncfusion Windows Forms Split Button control and more details.
 platform: WindowsForms
 control: SplitButton 
