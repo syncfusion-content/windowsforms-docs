@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# BarItem Types in Windows Forms xptoolbar (XPToolbar)
+# BarItem Types in Windows Forms xp toolbar
 
 The various types of BarItems supported by XPToolBar are,
 

@@ -70,19 +70,19 @@ Apart from the default style [Standard Style](#standard-style),we can also creat
 1. Clicking the Add Base Style button, will add a new BaseStyle whose properties can be edited.
 
 
-    ![](StyleArchitecture_images/StyleArchitecture_img3.jpg)
+    ![StyleArchitecture_images3](StyleArchitecture_images/StyleArchitecture_img3.jpg)
 
 
 2. This new base style can be applied to any of the nodes, using TreeNodeAdv.BaseStyle property of the respective nodes.
 
 
-    ![](StyleArchitecture_images/StyleArchitecture_img4.jpg)
+    ![StyleArchitecture_images4](StyleArchitecture_images/StyleArchitecture_img4.jpg)
 
 
 3. This overrides the [Standard Style](#standard-style) settings for the specified nodes and displays the image as follows.
 
 
-    ![](StyleArchitecture_images/StyleArchitecture_img5.jpg)
+    ![StyleArchitecture_images5](StyleArchitecture_images/StyleArchitecture_img5.jpg)
 
 
 ## Child Style

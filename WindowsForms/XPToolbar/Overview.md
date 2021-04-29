@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Windows Forms xptoolbar (XPToolbar) Overview
+# Windows Forms xp toolbar (XPToolbar) Overview
 
 The XPToolBar control is a Microsoft Visual Studio-inspired standalone toolbar control that can be used to load shortcut options and place them conveniently anywhere within the application for better access.
 

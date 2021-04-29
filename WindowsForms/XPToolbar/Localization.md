@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Localization in Windows Forms xptoolbar (XPToolbar)
+# Localization in Windows Forms xp toolbar (XPToolbar)
 
 Localization is the process of making application multilingual by formatting the content according to the cultures. This involves configuring the application for a specific language. Culture is the combination of language and location. For example, en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in Great Britain.
 

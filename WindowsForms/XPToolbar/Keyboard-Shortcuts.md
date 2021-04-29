@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Keyboard Shortcuts in Windows Forms xptoolbar (XPToolbar)
+# Keyboard Shortcuts in Windows Forms xp toolbar (XPToolbar)
 
 The bar items can be selected through keyboard operation by specifying the shortcuts via the [`Shortcut`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem__ctor_System_String_System_EventHandler_System_Windows_Forms_Shortcut_) property of each item.
 

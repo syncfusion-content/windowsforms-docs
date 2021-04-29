@@ -303,9 +303,9 @@ To open the primitive collection editor, follow steps given below
 
 2. In the property window of selected node has Primitives property. Click the Primitives property to open the Primitive Collection Editor
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img4.jpg)
+    ![TreeNodeAdv_Customization_Images4](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img4.jpg)
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img5.jpg)
+    ![TreeNodeAdv_Customization_Images5](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img5.jpg)
 
 ### LabelPrimitive
 
@@ -342,11 +342,11 @@ To set the `LeftImagePrimitive` for an individual node follow the given steps.
 
 3. Now the `LeftImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img8.jpg)
+    ![TreeNodeAdv_Customization_Images8](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img8.jpg)
  
 4. To save changes click the "OK" button.
  
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img9.jpg)
+    ![TreeNodeAdv_Customization_Images9](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img9.jpg)
 
 > Note: To set left image primitive the `LeftImageIndices` property of the node must be set. If we set LeftImage primitive alone then text of node will not be shown. So, we must set `LabelPrimitive` for that node.
 
@@ -362,11 +362,11 @@ To set the `RightImagePrimitive` for an individual node follow the given steps.
 
 3. Now the `RightImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img10.jpg)
+    ![TreeNodeAdv_Customization_Images10](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img10.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img11.jpg)
+    ![TreeNodeAdv_Customization_Images11](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img11.jpg)
 
 
 > Note: To set left image primitive the “RightImageIndices” property of the node must be set. If we set RightImage primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
@@ -383,11 +383,11 @@ To set the StateImagePrimitive for an individual node follow the given steps.
 
 3. Now the `StateImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img12.jpg)
+    ![TreeNodeAdv_Customization_Images12](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img12.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img13.jpg)
+    ![TreeNodeAdv_Customization_Images13](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img13.jpg)
 
 > Note: To set state image primitive, OpenImgIndex and ClosedImgIndex property of the node must be set.
 
@@ -404,11 +404,11 @@ To set the `CheckBoxPrimitive` for an individual node follow the given steps.
 
 3. Now the `CheckBoxPrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img14.jpg)
+    ![TreeNodeAdv_Customization_Images14](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img14.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img15.jpg)
+    ![TreeNodeAdv_Customization_Images15](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img15.jpg)
 
 > Note : To set check box primitive the “ShowCheckBox” property of the node must be set as true. If we set ShowCheckBox primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
 
@@ -425,11 +425,11 @@ To set the OptionButtonPrimitive for an individual node follow the given steps.
 
 3. Now the OptionButtonPrimitive is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img16.jpg)
+    ![TreeNodeAdv_Customization_Images16](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img16.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img17.jpg)
+    ![TreeNodeAdv_Customization_Images17](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img17.jpg)
 
 > Note : To set check box primitive the `ShowOptionButton` property of the node must be set as true. If we set `ShowOptionButton` primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
 
@@ -446,11 +446,11 @@ To set the CustomControlPrimitives for an individual node follow the given steps
 
 3. Now the `CustomControlPrimitives` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img18.jpg)
+    ![TreeNodeAdv_Customization_Images18](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img18.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img19.jpg)
+    ![TreeNodeAdv_Customization_Images19](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img19.jpg)
 
 ## Expander in TreeNode
 

@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 --- 
-# Padding in Windows Forms xptaskbar (XPTaskBar)
+# Padding in Windows Forms xp taskbar (XPTaskBar)
 
 ## Padding settings for XPTaskBar
 

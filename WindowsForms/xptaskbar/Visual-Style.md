@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Visual Style in Windows Forms xptaskbar (XPTaskBar)
+# Visual Style in Windows Forms xp taskbar (XPTaskBar)
 
  XPTaskBar offers various built in themes for its professional representation as follows
 

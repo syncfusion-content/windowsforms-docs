@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Getting Started in Windows Forms xptaskbar (XPTaskBar)
+# Getting Started in Windows Forms xp taskbar (XPTaskBar)
 
 This section describes how to add `XPTaskBar` control in a Windows Forms application and overview of its basic functionalities.
 

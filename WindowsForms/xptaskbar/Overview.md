@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Windows Forms xptaskbar (XPTaskBar) Overview
+# Windows Forms xp taskbar (XPTaskBar) Overview
 
 [XPTaskBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBar.html) represents a Windows XP like task menu panel. It helps display a set of command items ([XPTaskBarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarItem.html)) or frequently used features (like "Search", "Advanced Search", etc) in panels, that can be classified, contained and displayed within one or more command boxes ([XPTaskBarBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskBarBox.html)). 
 

@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar Settings in Windows Forms xptaskbar (XPTaskBar)
+# XPTaskBar Settings in Windows Forms xp taskbar (XPTaskBar)
 
 The behavior of the XPTaskBar can be controlled using the properties given below.
 

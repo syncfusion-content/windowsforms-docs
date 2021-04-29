@@ -6,7 +6,7 @@ platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# XPTaskBar  Image Settings in Windows Forms xptaskbar (XPTaskBar)
+# XPTaskBar  Image Settings in Windows Forms xp taskbar (XPTaskBar)
 
 This section discusses the image settings available in XPTaskBar.
 

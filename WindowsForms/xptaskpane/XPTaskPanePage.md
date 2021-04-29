@@ -7,7 +7,7 @@ control: XPTaskPane
 documentation: ug
 ---
 
-# XPTaskPanePage in Windows Forms xptaskpane (XPTaskPane)
+# XPTaskPanePage in Windows Forms xp taskpane (XPTaskPane)
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can added to the Task pages and can be customized. Properties which controls the appearance of the Task pages are discussed in this section.
 

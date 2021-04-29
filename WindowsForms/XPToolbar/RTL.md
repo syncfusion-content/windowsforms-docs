@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# RTL in Windows Forms xptoolbar (XPToolbar)
+# RTL in Windows Forms xp toolbar (XPToolbar)
 
 RTL is used to display the content from right to left by setting the [`RightToLeft`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to `Yes`.
 

@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Appearance in Windows Forms xptoolbar (XPToolbar)
+# Appearance in Windows Forms xp toolbar (XPToolbar)
 
 ## Background Color
 

@@ -7,7 +7,7 @@ control: XPToolBar
 documentation: ug
 ---
 
-# Trigger Bar Item in Windows Forms xptoolbar (XPToolbar)
+# Trigger Bar Item in Windows Forms xp toolbar (XPToolbar)
 
 On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event for further operations.
 

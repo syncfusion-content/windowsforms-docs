@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Sort all the Nodes in the TreeViewAdv
 
-This page exlains How to Sort all the Nodes in the TreeViewAdv and more details.
+This page explains How to Sort all the Nodes in the TreeViewAdv and more details.
 
 ## How to Sort all the Nodes in the TreeViewAdv Control
 
