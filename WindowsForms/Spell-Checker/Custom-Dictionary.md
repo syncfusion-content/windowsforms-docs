@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Dictionary in WPF SpellCheckerAdv | Syncfusion
-description: This section expalins how to create and add Custom Dictionary Supports for WPF SpellCheckerAdv control.
+title: Custom Dictionary in Windows Forms Spell Checker control | Syncfusion
+description: Learn about Custom Dictionary support in Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control and more details.
 platform: WPF
 control: SpellCheckerAdv
 documentation: ug
 ---
 
-# Dictionaries for SpellCheck
+# Custom Dictionary in Windows Forms Spell Checker (SpellCheckerAdv)
 
 You can use a default and custom dictionaries to spell check the document based on your need. You can also spell check for any culture and languages using various dictionaries.
 

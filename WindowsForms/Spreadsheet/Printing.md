@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing | Spreadsheet | Syncfusion
-description: This sections explains that how to print the workbooks and its sheets in Spreadsheet for Syncfusion Essential WindowsForms.
+title: Printing in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Printing support in Syncfusion Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Printing
+# Printing in Windows Forms Spreadsheet
 
 Spreadsheet control allows you to print the data in the workbook with the help of PDF Conversion. To provide the printing support in Spreadsheet, you need to convert the workbook into PDF document using ExcelToPdfConverter.
 
