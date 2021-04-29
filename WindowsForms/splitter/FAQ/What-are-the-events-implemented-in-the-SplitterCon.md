@@ -7,11 +7,7 @@ control: Splitter
 documentation: ug
 ---
 
-# Events implemented in the Windows Forms SplitterControl
-
-This page explains Events implemented in the Windows Forms SplitterControl and more details.
-
-## What are the events implemented in the Windows Forms SplitterControl
+# What are the events implemented in the Windows Forms SplitterControl
 
 The following listed events are implemented in the SplitterControl.
 
