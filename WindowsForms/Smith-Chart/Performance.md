@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance | WindowsForms | Syncfusion
-description: This section describes how to avoid the multiple time painting for each point in WindowsForms SfSmithChart control.
+title: Performance in Windows Forms Smith Chart control | Syncfusion
+description: Learn about Performance support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: WindowsForms
 control: SfSmithChart
 documentation: ug
 ---
 
-# Improve the performance for SfSmithChart control
+# Performance in Windows Forms Smith Chart (SfSmithChart)
 
 The performance of the SfSmithChart can be improved by using the following methods.
 

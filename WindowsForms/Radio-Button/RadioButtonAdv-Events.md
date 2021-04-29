@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RadioButtonAdv-Events | WindowsForms | Syncfusion
-description: radiobuttonadv events
+title: RadioButtonAdv Events in Windows Forms Radio Button control | Syncfusion
+description: Learn about RadioButtonAdv Events support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# RadioButtonAdv Events	
+# RadioButtonAdv Events in Windows Forms Radio Button (RadioButtonAdv)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

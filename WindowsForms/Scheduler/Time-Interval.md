@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time-Interval | Windows Forms | Syncfusion
-description: time interval
+title: Time Interval in Windows Forms Scheduler control | Syncfusion
+description: Learn about Time Interval support in Syncfusion Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Time Interval
+# Time Interval in Windows Forms Scheduler (Schedule)
 
 This topic illustrates the time interval format options for scheduling appointments.
 
@@ -86,7 +86,7 @@ Me.scheduleControl1.AllowSecondsInAppointment = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Time-Interval_images/Time-Interval_img1.png)
+![Time-Interval_img1](Time-Interval_images/Time-Interval_img1.png)
 
 
 ## Setting the recurrence appointments in seconds
@@ -151,4 +151,4 @@ End If
 
 The following screenshot displays appointments shown in the day view every 10 minutes from 1:00 AM to 2:00 AM.
 
-![](Time-Interval_images/Time-Interval_img4.png)
+![Time-Interval_img4](Time-Interval_images/Time-Interval_img4.png)

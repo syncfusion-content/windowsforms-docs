@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive-Features | WindowsForms | Syncfusion
-description: interactive features
+title: Interactive Features in Windows Forms Range Slider control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Windows Forms Range Slider control and more details.
 platform: WindowsForms
 control: RangeSlider 
 documentation: ug
 ---
 
-# Interactive features
+# Interactive Features in Windows Forms Range Slider
 
 The following are the key interactive features of the Range Slider:
 

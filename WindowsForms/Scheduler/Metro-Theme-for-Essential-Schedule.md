@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Metro-Theme-for-Essential-Schedule | Windows Forms | Syncfusion
-description: metro theme for essential schedule
+title: Metro Theme for Essential Schedule in Windows Forms Scheduler control | Syncfusion
+description: Learn about Metro Theme for Essential Schedule support in Syncfusion Windows Forms Scheduler (Schedule) control and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Metro Theme for Essential Schedule
+# Metro Theme for Essential Schedule in Windows Forms Scheduler (Schedule)
 
 This feature enables you to apply new Metro styles to the Schedule control. 
 
@@ -56,4 +56,4 @@ Me.scheduleControl1.GetScheduleHost().Schedule.Appearance.VisualStyle = Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![](Metro-Theme-for-Essential-Schedule_images/Metro-Theme-for-Essential-Schedule_img1.png)
+![Metro-Theme-for-Essential-Schedule_img1](Metro-Theme-for-Essential-Schedule_images/Metro-Theme-for-Essential-Schedule_img1.png)

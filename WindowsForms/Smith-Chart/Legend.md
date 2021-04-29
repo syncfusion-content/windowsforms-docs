@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Legend | WindowsForms | Syncfusion
-description: This section describes about legend, positioning the legend, customizing legend, smart view in windowsforms platform.
+title: Legend in Windows Forms Smith Chart control | Syncfusion
+description: Learn about Legend support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Legend support for SfSmithChart
+# Legend in Windows Forms Smith Chart (SfSmithChart)
 
 Legend contains a list of chart series that appears in Smith chart. It can be defined by using the following code example.
 

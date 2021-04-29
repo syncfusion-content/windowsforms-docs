@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch-Support | WindowsForms | Syncfusion
-description: touch support
+title: Touch Support in Windows Forms Ribbon control | Syncfusion
+description: Learn about Touch Support support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support in Windows Forms Ribbon (RibbonControlAdv)
 
 Ribbon control have touch support and it provides Touch UI which is easy to access the elements in Ribbon.
 
@@ -47,12 +47,12 @@ Me.ribbonControlAdv1.TouchMode = True
 
 {% endtabs %}
 
-![](Touch_Support_Images/Touch-Support_img1.jpg)
+![Touch-Support_img1](Touch_Support_Images/Touch-Support_img1.jpg)
 
 ## Switching between Touch and Mouse Mode
 
 During this mode, an extra dropdown button will be added in QAT. This dropdown contains two modes `Touch` and `Mouse`.
 
-![](Touch_Support_Images/Touch-Support_img2.jpg)
+![Touch-Support_img2](Touch_Support_Images/Touch-Support_img2.jpg)
 
 Selecting the touch will provide extra spaces between the elements for better touch support and Mouse mode will take back to standard ribbon size.

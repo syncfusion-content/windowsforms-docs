@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon-Designer | WindowsForms | Syncfusion
-description: ribbon designer
+title: Ribbon Designer in Windows Forms Ribbon control | Syncfusion
+description: Learn about Ribbon Designer support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Ribbon Designer
+# Ribbon Designer in Windows Forms Ribbon (RibbonControlAdv)
 
 Ribbon designer is the visual designer for the Ribbon control. It is used to add custom tabs, control and groups to the Ribbon without running the application.
 

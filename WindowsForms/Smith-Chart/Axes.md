@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Axes
-description: This section describes the axes and its customization
+title: Axes in Windows Forms Smith Chart control | Syncfusion
+description: Learn about Axes support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Axes
+# Axes in Windows Forms Smith Chart (SfSmithChart)
 
 Smith chart supports the following two axes for plotting:
 

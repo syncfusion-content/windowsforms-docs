@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Markers
-description: This section describes about data markers.
+title: Data Markers in Windows Forms Smith Chart control | Syncfusion
+description: Learn about Data Markers support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Data markers
+# Data Markers in Windows Forms Smith Chart (SfSmithChart)
 
 Data markers are used to provide information about data point to users. You can add shapes and labels to adorn each data point.
 

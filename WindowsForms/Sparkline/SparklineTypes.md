@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: SparklineTypes
+title: Sparkline Types in Windows Forms Sparkline control | Syncfusion
+description: Learn about Sparkline Types support in Syncfusion Windows Forms Sparkline control and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
 ---
 
-# Types of Sparklines
+# Sparkline Types in Windows Forms Sparkline
 
 SparkLine control supports three types of Sparklines and the sparkline control must be bound to a data source. It supports a variety of datasource such as DataTable and any component that implements the interface IEnumerable, ICollection, IList. 
 
@@ -49,7 +49,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType.Line
 
 {% endtabs %}
 
-![](SparklineTypes_images/Line.png)
+![Line](SparklineTypes_images/Line.png)
 
 ## Drawing Column Sparkline in an Application
 
@@ -84,7 +84,7 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. Column
 
 {% endtabs %}
 
-![](SparklineTypes_images/Column.png)
+![Column](SparklineTypes_images/Column.png)
 
 ## Drawing WinLoss Sparkline in an Application
 
@@ -119,4 +119,4 @@ Me.sparkLine1.Type = SparkLine.SparkLineType. WinLoss
 
 {% endtabs %}
 
-![](SparklineTypes_images/Winloss.png)
+![Winloss](SparklineTypes_images/Winloss.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization-Support | WindowsForms | Syncfusion
-description: localization support
+title: Localization Support in Windows Forms Ribbon control | Syncfusion
+description: Learn about Localization Support support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Localization Support
+# Localization Support in Windows Forms Ribbon (RibbonControlAdv)
 
 RibbonControlAdv now supports adaptation of its controls and its details to meet different languages and cultural requirements. This involves configuring the ribbon to a specific language.
 
@@ -253,7 +253,7 @@ End Class
 
 {% endtabs %}
 
-![](Localization_Support_Images/Localization-Support_img1.jpg)
+![Localization-Support_img1](Localization_Support_Images/Localization-Support_img1.jpg)
 
 ## Ribbon Resource Identifier
 
@@ -432,5 +432,5 @@ this.ribbonControlAdv1.RightToLeft = RightToLeft.Yes;
 
 {% endtabs %}
 
-![](Localization_Support_Images/Localization-Support_img2.jpg)
+![Localization-Support_img2](Localization_Support_Images/Localization-Support_img2.jpg)
 

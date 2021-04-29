@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance
-description: This section describes about the appearance of smith chart
+title: Appearance in Windows Forms Smith Chart control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Smith Chart (SfSmithChart) control and more details.
 platform: windowsforms
 control: SfSmithChart
 documentation: ug
 ---
-# Appearance
+# Appearance in Windows Forms Smith Chart (SfSmithChart)
 
 ## Chart palette
 

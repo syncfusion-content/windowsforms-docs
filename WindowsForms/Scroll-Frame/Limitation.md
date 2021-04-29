@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Limitation in Windows Forms ScrollFrame control | Syncfusion
-description: This section explains the scrollbar largechanges, applicable control for setting the Syncfusion WinForms SfScrollFrame control and more details.
+title: Limitation in Windows Forms Scroll Frame control | Syncfusion
+description: Learn about Limitation support in Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
