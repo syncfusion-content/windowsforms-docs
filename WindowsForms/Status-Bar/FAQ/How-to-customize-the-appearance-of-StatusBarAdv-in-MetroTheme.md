@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-customize-the-appearance-of-StatusBarAdv-in-MetroTheme | WindowsForms | Syncfusion
-description: how to customize the appearance of statusbaradv in metrotheme
+title: Customize the appearance of StatusBarAdv in MetroTheme | Syncfusion
+description: how to customize the appearance of statusbaradv in metrotheme in Syncfusion Windows Forms StatusBarAdv control and more details.
 platform: WindowsForms
 control: Notification Package 
 documentation: ug
 ---
 
-# How to Customize the Appearance of StatusBarAdv in MetroTheme?
+# Customize the appearance of StatusBarAdv in MetroTheme
+
+This page explains customize the appearance of StatusBarAdv in MetroTheme and more details.
+
+## How to Customize the Appearance of StatusBarAdv in MetroTheme?
 
 In MetroStyle, the back color and border color of StatusBarAdv can be changed by using its properties named “MetroColor” and “UseMetroColorAsBorder”. The following code example is to demonstrate the same.
 

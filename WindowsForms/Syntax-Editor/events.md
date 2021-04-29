@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms Syntax Editor control and more details.
+description: Learn about Events support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug

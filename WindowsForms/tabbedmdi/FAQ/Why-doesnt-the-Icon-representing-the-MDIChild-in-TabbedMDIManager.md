@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Why doesnt the Icon representing the MDIChild in TabbedMDIManager in Windows Forms TabbedMDI control | Syncfusion
+title: Why doesnt the Icon representing in TabbedMDIManager | Syncfusion
 description: Learn about Why doesnt the Icon representing the MDIChild in TabbedMDIManager support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Why doesnt the Icon representing the MDIChild in TabbedMDIManager in Windows Forms TabbedMDI
+# Why doesn't the Icon representing the MDIChild in TabbedMDIManager
 
 The form does not throw an event when the Icon gets updated. So, update the Icon in the TabbedMDIManager manually after updating the Icon in the form, as follows:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in Windows Forms Tab Splitter Container control | Syncfusion
-description: Learn about Orientation support in Syncfusion Windows Forms Tab Splitter Container control and more details.
+title: Orientation in Windows Forms Tab Splitter Container | Syncfusion
+description: Learn about Orientation support in Syncfusion Windows Forms Tab Splitter Container control, its elements and more details.
 platform: WindowsForms
 control: TabSplitterContainer
 documentation: ug

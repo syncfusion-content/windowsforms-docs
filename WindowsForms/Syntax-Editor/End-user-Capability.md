@@ -1,7 +1,7 @@
 ---
 layout: post
-title: End User Capability in Windows Forms Syntax Editor control | Syncfusion
-description: Learn about End User Capability support in Syncfusion Windows Forms Syntax Editor control and more details.
+title: End User Capability in Windows Forms Syntax Editor | Syncfusion
+description: Learn about End User Capability support in Syncfusion Windows Forms Syntax Editor control, its elements and more details.
 platform: WindowsForms
 control: Syntax Editor
 documentation: ug

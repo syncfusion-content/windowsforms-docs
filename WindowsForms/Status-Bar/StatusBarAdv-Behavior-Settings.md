@@ -1,13 +1,13 @@
 ---
 layout: post
-title: StatusBarAdv Behavior Settings in Windows Forms Status Bar control | Syncfusion
+title: StatusBarAdv Behavior Settings in WinForms Status Bar | Syncfusion
 description: Learn about StatusBarAdv Behavior Settings support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# StatusBarAdv Behavior Settings in Windows Forms Status Bar (StatusBarAdv)
+# StatusBarAdv Behavior Settings in Windows Forms Status Bar
 
 This section discusses the properties that determine the behavior of the StatusBarAdv control.
 

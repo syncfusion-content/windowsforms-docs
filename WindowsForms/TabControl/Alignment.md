@@ -9,7 +9,7 @@ documentation: ug
 
 # Alignment in Windows Forms TabControl (TabControlAdv)
 
-Alignment of the tabs can be set throgh the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) and [TabGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabGap) properties.
+Alignment of the tabs can be set through the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) and [TabGap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabGap) properties.
 
 ![Tabs alignment](Styles-Settings_images/Styles-Settings_img5.jpeg)
 

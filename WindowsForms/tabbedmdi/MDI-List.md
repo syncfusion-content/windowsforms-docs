@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MDI List in Windows Forms TabbedMDI control | Syncfusion
-description: Learn about MDI List support in Syncfusion Windows Forms TabbedMDI control and more details.
+description: Learn about MDI List support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug

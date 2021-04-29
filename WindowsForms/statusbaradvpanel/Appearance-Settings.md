@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings in Windows Forms statusbaradvpanel control | Syncfusion
+title: Appearance Settings in Windows Forms statusbaradvpanel | Syncfusion
 description: Learn about Appearance Settings support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Appearance Settings in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
+# Appearance Settings in Windows Forms statusbaradvpanel
 
 The appearance of the StatusBarAdvPanel control can be enhanced using the properties given below.
 

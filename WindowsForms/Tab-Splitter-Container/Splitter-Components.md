@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitter Components in Windows Forms Tab Splitter Container control | Syncfusion
+title: Splitter Components in Tab Splitter Container | Syncfusion
 description: Learn about Splitter Components support in Syncfusion Windows Forms Tab Splitter Container control and more details.
 platform: WindowsForms
 control: TabSplitterContainer 
