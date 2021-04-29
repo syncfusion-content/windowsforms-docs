@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display image in bar items in Windows Forms PopupMenu control | Syncfusion
+title: Display image in bar items in Windows Forms PopupMenu | Syncfusion
 description: Learn about Display image in bar items support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu

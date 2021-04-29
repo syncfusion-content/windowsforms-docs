@@ -7,7 +7,7 @@ control: ProjIO
 documentation: ug
 ---
 
-# Assignment in Windows Forms projio (ProjIO)
+# Assignment in Windows Forms proj (ProjIO)
 
 Assignment class is used to bind resources to tasks. It can also be used to retrieve the details of the task and resource that are bound together.
 

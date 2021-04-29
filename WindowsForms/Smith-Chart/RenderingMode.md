@@ -38,7 +38,7 @@ chart.RenderingMode = RenderingMode.Impedance
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Impedance.png](RenderingMode_images/RenderingMode_img1.jpeg)
+![RenderingMode_images1](RenderingMode_images/RenderingMode_img1.jpeg)
 
 
 ## Admittance Smith chart
@@ -67,6 +67,6 @@ chart.RenderingMode = RenderingMode.Admittance
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCache/Content.Word/Admittance.png](RenderingMode_images/RenderingMode_img2.jpeg)
+![RenderingMode_images2](RenderingMode_images/RenderingMode_img2.jpeg)
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sparkline Types in Windows Forms Sparkline control | Syncfusion
-description: Learn about Sparkline Types support in Syncfusion Windows Forms Sparkline control and more details.
+description: Learn about Sparkline Types support in Syncfusion Windows Forms Sparkline control, its elements and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
@@ -19,7 +19,7 @@ SparkLine control supports three types of Sparklines and the sparkline control m
 
 The line type of spark line represents a set of data points, connected by a line. 
 
-Refer to the following code samples to draw  the line sparline.
+Refer to the following code samples to draw  the line sparkline.
 
 {% tabs %}  
 

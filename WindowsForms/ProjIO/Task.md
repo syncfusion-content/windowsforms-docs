@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Task in Windows Forms projio control | Syncfusion
-description: Learn about Task support in Syncfusion Windows Forms projio (ProjIO) control and more details.
+description: Learn about Task support in Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Task in Windows Forms projio (ProjIO)
+# Task in Windows Forms proj (ProjIO)
 
 Task class exposes ways to create a task for a Project. Task is useful in creating tasks and adding them to the Project. Using Task class, one can create, add and modify tasks. It can also be used to obtain task information.
 

@@ -28,7 +28,7 @@ sfSmithChart1.ColorModel.Palette = ChartColorPalette.Nature
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Palette.png](Appearance_images/Appearance_img1.png)
+![Appearance_images1](Appearance_images/Appearance_img1.png)
 
 
 ## Series palette
@@ -63,7 +63,7 @@ sfSmithChart1.Series.Add(series)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/seriespallete.png](Appearance_images/Appearance_img2.png)
+![Appearance_images2](Appearance_images/Appearance_img2.png)
 
 
 ## Chart area customization
@@ -98,7 +98,7 @@ sfSmithChart1.Style.ChartAreaBorderWidth = 2
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/areacustomize.png](Appearance_images/Appearance_img3.png)
+![Appearance_images3](Appearance_images/Appearance_img3.png)
 
 
 ## Circle radius
@@ -121,4 +121,4 @@ sfSmithChart1.Radius = 0.6f
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/areacustomize.png](Appearance_images/Appearance_img4.png)
+![Appearance_images4](Appearance_images/Appearance_img4.png)

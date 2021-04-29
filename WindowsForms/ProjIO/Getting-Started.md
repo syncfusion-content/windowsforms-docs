@@ -7,7 +7,7 @@ control: ProjIO
 documentation: ug
 ---
 
-# Getting Started with Windows Forms projio (ProjIO)
+# Getting Started with Windows Forms proj (ProjIO)
 
 ## Feature Summary
 

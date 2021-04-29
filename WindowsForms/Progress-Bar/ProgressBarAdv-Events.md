@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ProgressBarAdv Events in Windows Forms Progress Bar control | Syncfusion
+title: ProgressBarAdv Events in Windows Forms Progress Bar | Syncfusion
 description: Learn about ProgressBarAdv Events support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv

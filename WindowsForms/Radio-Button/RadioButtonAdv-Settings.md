@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RadioButtonAdv Settings in Windows Forms Radio Button control | Syncfusion
+title: RadioButtonAdv Settings in Windows Forms Radio Button | Syncfusion
 description: Learn about RadioButtonAdv Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv

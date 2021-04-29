@@ -34,7 +34,7 @@ series.MarkerVisible = True
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/DefaultMarker.png](DataMarkers_images/DataMarkers_img1.PNG)
+![DataMarkers_images1](DataMarkers_images/DataMarkers_img1.PNG)
 
 
 ## Marker customization
@@ -69,7 +69,7 @@ sfSmithChart1.Series.Add(series)
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerCustomize.png](DataMarkers_images/DataMarkers_img2.PNG)
+![DataMarkers_images2](DataMarkers_images/DataMarkers_img2.PNG)
 
 ## Marker image
 
@@ -104,16 +104,16 @@ series.MarkerImage = My.Resources.Marker
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/MarkerImage.png](DataMarkers_images/DataMarkers_img3.png)
+![DataMarkers_images3](DataMarkers_images/DataMarkers_img3.png)
 
 
 ## Data labels 
 
 Data labels provide additional information about the data point. By default, the data labels are displayed at the top of the data point, and it will be automatically aligned smartly if it collides with the other label.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/Datalabel.png](DataMarkers_images/DataMarkers_img4.PNG)
+![DataMarkers_images4](DataMarkers_images/DataMarkers_img4.PNG)
 
 
 Connector line will be generated automatically if the data label collides with any other label. The following screenshot displays the smart alignment of data labels.
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/DataLabel1.png](DataMarkers_images/DataMarkers_img5.PNG)
+![DataMarkers_images5](DataMarkers_images/DataMarkers_img5.PNG)

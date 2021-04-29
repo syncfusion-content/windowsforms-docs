@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boundary Value Settings in Windows Forms Progress Bar control | Syncfusion
+title: Boundary Value Settings in Windows Forms Progress Bar | Syncfusion
 description: Learn about Boundary Value Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv

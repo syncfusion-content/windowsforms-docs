@@ -42,7 +42,7 @@ sfSmithChart1.HorizontalAxis.MajorGridlinesVisible = False
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/H_Major.png](Axes_images/Axes_img1.PNG)
+![Axes_images1](Axes_images/Axes_img1.PNG)
 
 
 ### Style
@@ -73,7 +73,7 @@ sfSmithChart1.HorizontalAxis.Style.MajorGridlinesWidth = 1
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/H_MajorStyle.png](Axes_images/Axes_img2.png)
+![Axes_images2](Axes_images/Axes_img2.png)
 
 
 ## Minor gridlines customization
@@ -98,7 +98,7 @@ sfSmithChart1.HorizontalAxis.MinorGridlinesVisible = True
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/H_Minor.png](Axes_images/Axes_img3.PNG)
+![Axes_images3](Axes_images/Axes_img3.PNG)
 
 
 ### Style
@@ -137,7 +137,7 @@ sfSmithChart1.HorizontalAxis.MinorGridlinesCount = 10
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/H_Minor.png](Axes_images/Axes_img13.png)
+![Axes_images13](Axes_images/Axes_img13.png)
 
 ## Axis line 
 
@@ -161,7 +161,7 @@ sfSmithChart1.HorizontalAxis.Style.AxisLineColor = Color.Red
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/H_axislineColor.png](Axes_images/Axes_img4.PNG)
+![Axes_images4](Axes_images/Axes_img4.PNG)
 
 
 ## Label Placement
@@ -184,7 +184,7 @@ sfSmithChart1.HorizontalAxis.LabelPlacement = LabelPlacement.Inside
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/h_LabelPlacement.png](Axes_images/Axes_img5.PNG)
+![Axes_images5](Axes_images/Axes_img5.PNG)
 
 
 ## Label intersect action
@@ -207,7 +207,7 @@ sfSmithChart1.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.Hide
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/IntersectHide.png](Axes_images/Axes_img6.png)
+![Axes_images6](Axes_images/Axes_img6.png)
 
 
 ## Radial Axis
@@ -236,7 +236,7 @@ sfSmithChart1.RadialAxis.MajorGridlinesVisible = False
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/R_major.png](Axes_images/Axes_img7.PNG)
+![Axes_images7](Axes_images/Axes_img7.PNG)
 
 
 ### Style
@@ -267,7 +267,7 @@ sfSmithChart1.RadialAxis.Style.MajorGridlinesWidth = 1
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/R_major.png](Axes_images/Axes_img14.png)
+![Axes_images14](Axes_images/Axes_img14.png)
 
 
 ## Minor gridlines customization
@@ -292,7 +292,7 @@ sfSmithChart1.RadialAxis.MinorGridlinesVisible = True
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/R_minor.png](Axes_images/Axes_img8.PNG)
+![Axes_images8](Axes_images/Axes_img8.PNG)
 
 
 ### Style
@@ -331,7 +331,7 @@ sfSmithChart1.RadialAxis.MinorGridlinesCount = 10
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/R_minor.png](Axes_images/Axes_img15.png)
+![Axes_images15](Axes_images/Axes_img15.png)
 
 ## Axis line 
 
@@ -355,7 +355,7 @@ sfSmithChart1.RadialAxis.Style.AxisLineColor = Color.Red
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/R_axisLineColor.png](Axes_images/Axes_img9.PNG)
+![Axes_images9](Axes_images/Axes_img9.PNG)
 
 
 ## Label Placement
@@ -378,7 +378,7 @@ sfSmithChart1.RadialAxis.LabelPlacement = LabelPlacement.Inside
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/RadialInside.png](Axes_images/Axes_img10.PNG)
+![Axes_images10](Axes_images/Axes_img10.PNG)
 
 
 ## Label intersect action
@@ -401,7 +401,7 @@ sfSmithChart1.RadialAxis.LabelIntersectAction = LabelIntersectActions.Hide
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/IntersectHide.png](Axes_images/Axes_img11.png)
+![Axes_images11](Axes_images/Axes_img11.png)
 
 
 ## Events
@@ -450,6 +450,6 @@ End Sub
 
 {% endtabs %}
 
-![C:/Users/yogapriya.shanmugam/AppData/Local/Microsoft/Windows/INetCacheContent.Word/LabelCreatedEvent.png](Axes_images/Axes_img12.png)
+![Axes_images12](Axes_images/Axes_img12.png)
 
 

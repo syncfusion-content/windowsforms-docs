@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation Settings in Windows Forms Progress Bar control | Syncfusion
+title: Orientation Settings in Windows Forms Progress Bar | Syncfusion
 description: Learn about Orientation Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv

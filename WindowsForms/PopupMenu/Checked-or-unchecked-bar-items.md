@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checked/unchecked bar items in Windows Forms PopupMenu control | Syncfusion
+title: Checked/unchecked bar items in Windows Forms PopupMenu | Syncfusion
 description: Learn about Checked/unchecked bar items support in Syncfusion Windows Forms PopupMenu control and more details.
 platform: WindowsForms
 control: PopupMenu

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Windows Forms PopupMenu control | Syncfusion
-description: Learn about Events support in Syncfusion Windows Forms PopupMenu control and more details.
+description: Learn about Events support in Syncfusion Windows Forms PopupMenu control, its elements and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug

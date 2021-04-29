@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slider Customization in Windows Forms Radial Slider control | Syncfusion
+title: Slider Customization in Windows Forms Radial Slider | Syncfusion
 description: Learn about Slider Customization support in Syncfusion Windows Forms Radial Slider control and more details.
 platform: WindowsForms
 control: RadialSlider 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in Windows Forms Radial Menu control | Syncfusion
-description: Learn about Style support in Syncfusion Windows Forms Radial Menu control and more details.
+description: Learn about Style support in Syncfusion Essential Studio Windows Forms Radial Menu control, its elements and more details.
 platform: WindowsForms
 control: RadialMenu 
 documentation: ug
