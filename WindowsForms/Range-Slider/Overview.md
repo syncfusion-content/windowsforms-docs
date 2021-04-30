@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of RangeSlider control | Windows Forms | Syncfusion
-description: RangeSlider control allows users to select the range of values between minimum and maximum range. It supports orientation, themes and much more.
+title: About Windows Forms Range Slider control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Range Slider control, its elements and more details.
 platform: WindowsForms
 control: RangeSlider 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Range Slider Overview
 
 The [RangeSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html) is a flexible UI component that allows value-range selection. It lets the user select from a range of values by moving  thumb controls along a Track.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Sparkline Control | Windows Forms | Syncfusion
-description: A Sparkline is a tiny chart in a worksheet cell that provides a visual representation of data
+title: About Windows Forms Sparkline control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Sparkline control, its elements and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Sparkline Overview
 
 A Sparkline control is a type of information graphic characterized by its small size, high data density and lightweight. It presents trends and variations in a very condensed fashion. The Sparkline does not contain an axis scale and is intended to give a high level overview of what happened to the data over time.
 

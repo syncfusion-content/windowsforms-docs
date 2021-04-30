@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms Scheduler control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Scheduler (Schedule) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Scheduler (Schedule)
 
 This section guides getting started with Windows application, controls, etc.
 

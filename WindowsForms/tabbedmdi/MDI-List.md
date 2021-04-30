@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MDI-List | TabbedMDIManager | WindowsForms | Syncfusion
-description: mdi list
+title: MDI List in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about MDI List support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
 
-# MDI list
+# MDI List in Windows Forms TabbedMDI
 
 By using the TabbedMDIManager Framework, you can make your MDI container form's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property obsolete. The value returned by this property will not be an accurate reflection of the MDIChildren. You should instead use the TabbedMDIManager's [MDIChildren](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_MdiChildren) property to get a list of the MDIChild forms.
 

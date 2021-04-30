@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Slider-customization | RadialSlider |  WindowsForms | Syncfusion
-description: This section explains the appearence customization of RadialSlider.
+title: Slider Customization in Windows Forms Radial Slider | Syncfusion
+description: Learn about Slider Customization support in Syncfusion Windows Forms Radial Slider control and more details.
 platform: WindowsForms
 control: RadialSlider 
 documentation: ug
 ---
 
-# Slider customization
+# Slider Customization in Windows Forms Radial Slider
 
 ## Slider background color
 

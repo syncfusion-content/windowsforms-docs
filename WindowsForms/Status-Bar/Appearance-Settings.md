@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
-description: appearance settings
+title: Appearance Settings in Windows Forms Status Bar control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Appearance Settings
+# Appearance Settings in Windows Forms Status Bar (StatusBarAdv)
 
 You can enhance the appearance of the StatusBarAdv control by using the following properties.
 
@@ -31,7 +31,7 @@ Me.statusBarAdv1.Style = Syncfusion.Windows.Forms.Tools.StatusbarStyle.Office201
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img117.png)
+![Overview_img117](Overview_images/Overview_img117.png)
 
 ## Background settings
 
@@ -118,9 +118,9 @@ Me.statusBarAdv1.UseMetroColorAsBorder = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img64.jpeg) 
+![Overview_img64](Overview_images/Overview_img64.jpeg) 
 
-![](Overview_images/Overview_img65.png) 
+![Overview_img65](Overview_images/Overview_img65.png) 
 
 ## Sizing grip
 
@@ -155,4 +155,4 @@ Me.statusBarAdv1.SizingGrip = True
 
 SizingGrip property when set will display a grip at the bottom right of the control as displayed in the below image.
 
-![](Overview_images/Overview_img66.jpeg) 
+![Overview_img66](Overview_images/Overview_img66.jpeg) 

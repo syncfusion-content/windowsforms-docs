@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Radial Menu control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control and more details.
+title: Getting Started with Windows Forms Radial Menu control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control, its elements and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug

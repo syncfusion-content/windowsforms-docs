@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Spreadsheet | Spreadsheet | Syncfusion
-description: This section provides an overview about spreadsheet and it's important key features for Syncfusion essential windows forms
+title: About Windows Forms Spreadsheet control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Spreadsheet Overview
 
 The Spreadsheet is an Excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without Excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. Spreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas.
 

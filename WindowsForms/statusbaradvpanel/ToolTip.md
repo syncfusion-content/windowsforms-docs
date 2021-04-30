@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip | WindowsForms | Syncfusion
-description: tooltip
+title: ToolTip in Windows Forms statusbaradvpanel control | Syncfusion
+description: Learn about ToolTip support in Syncfusion Windows Forms statusbaradvpanel (StatusBarAdvPanel) control and more details.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in Windows Forms statusbaradvpanel (StatusBarAdvPanel)
 
 ToolTip can be set for the StatusBarAdvPanel using the property given below.
 
@@ -41,4 +41,4 @@ Me.statusBarAdvPanel1.ToolTip = "Tooltip for StatusBarAdvPanel"
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img93.jpeg)
+![Overview_img93](Overview_images/Overview_img93.jpeg)

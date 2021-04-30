@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying-Themes | TabControlAdv | WindowsForms | Syncfusion
-description: This section explains the tab items closing, tooltip and scrolling functionality in WindowsForms TabControlAdv
+title: Interactive Features in Windows Forms TabControl control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Windows Forms TabControl (TabControlAdv) control and more details.
 platform: WindowsForms
 control: TabControlAdv 
 documentation: ug
 ---
 
-# Interactive features
+# Interactive Features in Windows Forms TabControl (TabControlAdv)
 
 ## CloseButton settings
 

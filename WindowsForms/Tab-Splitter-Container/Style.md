@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style | WindowsForms | Syncfusion
-description: Concepts and Features 
+title: Style in Windows Forms Tab Splitter Container control | Syncfusion
+description: Learn about Style support in Syncfusion Windows Forms Tab Splitter Container control and more details.
 platform: WindowsForms
 control: TabSplitterContainer 
 documentation: ug
 ---
 
-# Style
+# Style in Windows Forms Tab Splitter Container
 
 TabSplitterContainer offers various built in themes for its professional representation as follows
 

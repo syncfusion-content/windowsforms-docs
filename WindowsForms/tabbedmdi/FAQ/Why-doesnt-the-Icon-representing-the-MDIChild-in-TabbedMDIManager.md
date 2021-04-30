@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Why-doesnt-the-Icon-representing-the-MDIChild-in-TabbedMDIManager-change-when-the-form-icon-property-is-changed | WindowsForms | Syncfusion
-description: why doesn't the icon representing the mdichild in the tabbedmdimanager change when the form.icon property is changed?
+title: Why doesnt the Icon representing in TabbedMDIManager | Syncfusion
+description: Learn about Why doesnt the Icon representing the MDIChild in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIPackage
 documentation: ug
 ---
 
-# Why doesn't the icon representing the MDIChild in the TabbedMDIManager change when the Form.Icon property is changed?
+# Why doesn't the Icon representing the MDIChild in TabbedMDIManager
 
 The form does not throw an event when the Icon gets updated. So, update the Icon in the TabbedMDIManager manually after updating the Icon in the form, as follows:
 

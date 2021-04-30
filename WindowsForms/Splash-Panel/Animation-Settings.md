@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation-Settings | WindowsForms | Syncfusion
-description: animation settings
+title: Animation Settings in Windows Forms Splash Panel control | Syncfusion
+description: Learn about Animation Settings support in Syncfusion Windows Forms Splash Panel control and more details.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Animation Settings
+# Animation Settings in Windows Forms Splash Panel
 
 This section demonstrates how to display a splash image with animation.
 
@@ -255,9 +255,9 @@ Me.splashPanel1.TransparentColor = System.Drawing.Color.White
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img52.jpeg) 
+![Overview_img52](Overview_images/Overview_img52.jpeg) 
 
-![](Overview_images/Overview_img53.jpeg) 
+![Overview_img53](Overview_images/Overview_img53.jpeg) 
 
 N> The RefreshRegionFromImage() method can be used to refresh the region from the background image.
 
@@ -349,7 +349,7 @@ Me.splashPanel1.BorderType = Syncfusion.Windows.Forms.Tools.SplashBorderType.Bor
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img56.jpeg) 
+![Overview_img56](Overview_images/Overview_img56.jpeg) 
 
 ## Alignment settings
 
@@ -382,7 +382,7 @@ Me.splashPanel1.DesktopAlignment = Syncfusion.Windows.Forms.Tools.SplashAlignmen
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img57.jpeg) 
+![Overview_img57](Overview_images/Overview_img57.jpeg) 
 
 A Sample which demonstrates theDesktop Alignment options is available in the below sample installation path.
 
@@ -421,4 +421,4 @@ Me.toolTip1.SetToolTip(this.splashPanel1, "Splash Panel Tooltip")
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img58.jpeg) 
+![Overview_img58](Overview_images/Overview_img58.jpeg) 

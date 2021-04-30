@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: GettingStared
+title: Getting Started with Windows Forms Sparkline control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Sparkline control, its elements and more details.
 platform: windowsforms
 control: Sparkline
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Sparkline
 
 This section provides the details that you will need to know about getting started with our Sparkline control. 
 
@@ -28,7 +28,7 @@ To add sparkline to your form, follow the given steps:
 
 2.Drag the sparkline control from toolbox and drop into the form. The default appearance of sparkline will be rendered.
 
-![](GettingStarted_images/Form.jpg)
+![Form](GettingStarted_images/Form.jpg)
 
 ## Customizing sparkline appearance
 
@@ -50,7 +50,7 @@ Me.sparkLine1.LineStyle.LineColor = System.Drawing.Color.Maroon
 
 {% endtabs %}
 
-![](GettingStarted_images/Customization.jpg)
+![Customization](GettingStarted_images/Customization.jpg)
 
 ## Adding marker to sparkline
 
@@ -72,7 +72,7 @@ Me.sparkLine1.Markers.ShowMarker = true
 
 {% endtabs %}
 
-![](GettingStarted_images/Marker.jpg)
+![Marker](GettingStarted_images/Marker.jpg)
 
 ## Highlighting high/low values
 
@@ -130,7 +130,7 @@ Me.sparkLine1.Markers.NegativePointColor = New BrushInfo(Color.Red)
 
 {% endtabs %}
 
-![](GettingStarted_images/MarkerCustomization.jpg)
+![MarkerCustomization](GettingStarted_images/MarkerCustomization.jpg)
 
 You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
 
