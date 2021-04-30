@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
-description: appearance settings
+title: Appearance Settings in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TabbedMDI control and more details.
 platform: WindowsForms
 control: TabbedMDIPackage 
 documentation: ug
 ---
 
-# Appearance settings
+# Appearance Settings in Windows Forms TabbedMDI
 
 The variousAppearance Settings for TabbedMDIManager are discussed in this section.
 
@@ -74,7 +74,7 @@ Me.TabbedMDIManager1.ImageSize = New System.Drawing.Size(20, 20)
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
+![Appearance-Settings_img1](Appearance-Settings_images/Appearance-Settings_img1.jpeg)
 
 
 
@@ -98,7 +98,7 @@ Me.tabbedMDIManager1.ThemesEnabled = True
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
+![Appearance-Settings_img2](Appearance-Settings_images/Appearance-Settings_img2.jpeg)
 
 ## Customization
 
@@ -125,7 +125,7 @@ Me.tabbedMDIManager.ActiveTabBackColor = Color.Red
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img3.png)
+![Appearance-Settings_img3](Appearance-Settings_images/Appearance-Settings_img3.png)
 
 #### TabBackColor
 
@@ -148,7 +148,7 @@ Me.tabbedMDIManager.TabBackColor = Color.Green
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img4.png)
+![Appearance-Settings_img4](Appearance-Settings_images/Appearance-Settings_img4.png)
 
 #### ActiveTabForeColor
 
@@ -171,7 +171,7 @@ Me.tabbedMDIManager.ActiveTabForeColor = Color.Yellow
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img5.png)
+![Appearance-Settings_img5](Appearance-Settings_images/Appearance-Settings_img5.png)
 
 #### TabForeColor
 
@@ -194,7 +194,7 @@ Me.tabbedMDIManager.TabForeColor = Color.Violet
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img6.png)
+![Appearance-Settings_img6](Appearance-Settings_images/Appearance-Settings_img6.png)
 
 #### TabPanelBackColor
 
@@ -217,7 +217,7 @@ Me.tabbedMDIManager.TabPanelBackColor = Color.LightGreen
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img7.png)
+![Appearance-Settings_img7](Appearance-Settings_images/Appearance-Settings_img7.png)
 
 #### ActiveTabFont
 
@@ -240,7 +240,7 @@ Me.tabbedMDIManager.ActiveTabFont = new Font("Algerian", 10)
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img8.png)
+![Appearance-Settings_img8](Appearance-Settings_images/Appearance-Settings_img8.png)
 
 #### TabFont
 
@@ -263,7 +263,7 @@ Me.tabbedMDIManager.TabFont = new Font("Arial Black", 10)
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img9.png)
+![Appearance-Settings_img9](Appearance-Settings_images/Appearance-Settings_img9.png)
 
 #### TabPanelBorderColor
 
@@ -286,4 +286,4 @@ Me.tabbedMDIManager.TabPanelBorderColor = Color.Orange
 
 {% endtabs %}
 
-![](Appearance-Settings_images/Appearance-Settings_img10.png)
+![Appearance-Settings_img10](Appearance-Settings_images/Appearance-Settings_img10.png)

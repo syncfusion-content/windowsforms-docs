@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text-Settings | WindowsForms | Syncfusion
-description: text settings
+title: Text Settings in Windows Forms Progress Bar control | Syncfusion
+description: Learn about Text Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Text settings
+# Text Settings in Windows Forms Progress Bar (ProgressBarAdv)
 
 The below are ProgressBarAdv properties to customize the text and its alignment.
 
@@ -72,7 +72,7 @@ Me.progressBarAdv1.TextVisible = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img24.jpeg)
+![Overview_img24](Overview_images/Overview_img24.jpeg)
 
 
 

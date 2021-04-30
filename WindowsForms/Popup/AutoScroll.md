@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  AutoScroll | Windows Forms | Syncfusion
-description: AutoScroll of PopupControlContainer control
+title: Scroll Experience in Windows Forms Popup control | Syncfusion
+description: Learn about Scroll Experience support in Syncfusion Windows Forms Popup (PopupControlContainer) control and more details.
 platform: WindowsForms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# AutoScroll
+# Scroll Experience in Windows Forms Popup (PopupControlContainer)
 
 [AutoScroll](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscroll?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScroll) option is mainly used to improve the work experience of the control, especially when there are items present beyond its actual size, by enabling scrollbar automatically. We can enable scrollbars for the PopupContainer control by setting [`AutoScroll`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscroll?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScroll) property to `true`. When AutoScroll is enabled for the control, we can set the margin and logical size for the scroll region by [`AutoScrollMargin`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollmargin?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScrollMargin) and [`AutoScrollMinSize`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrollablecontrol.autoscrollminsize?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ScrollableControl_AutoScrollMinSize) properties.
 

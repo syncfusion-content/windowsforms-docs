@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  BarItems | Windows Forms | Syncfusion
-description: MenuItems of PopupMenu control
+title: BarItem Types in Windows Forms PopupMenu control | Syncfusion
+description: Learn about BarItem Types support in Syncfusion Windows Forms PopupMenu control, its elements and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# BarItem Types
+# BarItem Types in Windows Forms PopupMenu
 
 The various types of BarItems supported by PopupMenu are,
 

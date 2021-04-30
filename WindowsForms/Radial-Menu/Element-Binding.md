@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Element-Binding | WindowsForms | Syncfusion
-description: element binding
+title: Element Binding in Windows Forms Radial Menu control | Syncfusion
+description: Learn about Element Binding support in Syncfusion Windows Forms Radial Menu control and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
 ---
 
-# Element binding
+# Element Binding in Windows Forms Radial Menu
 
 ## Menu items
 
@@ -40,7 +40,7 @@ Me.radialMenu1.WedgeCount = 8
 {% endtabs %}
 
 
-![](Element-Binding_images/Element-Binding_img1.png)
+![Element-Binding_img1](Element-Binding_images/Element-Binding_img1.png)
 
 
 
@@ -66,7 +66,7 @@ Me.RadialMenu1.MenuVisibility = True
 
 {% endtabs %}
 
-![](Element-Binding_images/Element-Binding_img2.png)
+![Element-Binding_img2](Element-Binding_images/Element-Binding_img2.png)
 
 The current state of the menu displayed is maintained and restored back when the menu is initialized back dynamically.
 
@@ -144,7 +144,7 @@ Me.radialMenu1.UseIndexBasedOrder= true
 {% endtabs %}
 
 
-![](Element-Binding_images/Element-Binding_img3.png)
+![Element-Binding_img3](Element-Binding_images/Element-Binding_img3.png)
 
 
 
@@ -204,7 +204,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-![](Element-Binding_images/Element-Binding_img4.png)
+![Element-Binding_img4](Element-Binding_images/Element-Binding_img4.png)
 
 
 
@@ -265,7 +265,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 
 
 
-![](Element-Binding_images/Element-Binding_img5.png)
+![Element-Binding_img5](Element-Binding_images/Element-Binding_img5.png)
 
 
 
@@ -334,7 +334,7 @@ Me.radialMenu1.ImageList = Me.imageListAdv1
 {% endtabs %}
 
 
-![](Element-Binding_images/Element-Binding_img6.png)
+![Element-Binding_img6](Element-Binding_images/Element-Binding_img6.png)
 
 
 

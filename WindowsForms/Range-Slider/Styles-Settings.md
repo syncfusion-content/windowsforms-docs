@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles-Settings | WindowsForms | Syncfusion
-description: styles settings
+title: Styles Settings in Windows Forms Range Slider control | Syncfusion
+description: Learn about Styles Settings support in Syncfusion Windows Forms Range Slider control and more details.
 platform: WindowsForms
 control: RangeSlider
 documentation: ug
 ---
 
-# Style settings
+# Styles Settings in Windows Forms Range Slider
 
 Range Slider supports different visual styles for its appearance through the enumeration [RangeSliderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.RangeSliderStyle.html). Some of the available [VisualStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_VisualStyle) are as follows:
 

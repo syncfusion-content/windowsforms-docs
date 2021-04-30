@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Application-Menu | WindowsForms RibbonControlAdv| Syncfusion
-description: Learn here abouut how to add the item in the application menu and minimize the menu bar panel in Windows Forms RibbonControlAdv.
+title: Application Menu in Windows Forms Ribbon control | Syncfusion
+description: Learn about Application Menu support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Application Menu in WF RibbonControlAdv
+# Application Menu in Windows Forms Ribbon (RibbonControlAdv)
 
 The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer without a single piece of code.
 

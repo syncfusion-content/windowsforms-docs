@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: This topic showcases various visual styles and the customizations available in Syncfusion Windows Forms RibbonControlAdv.
+title: Appearance in Windows Forms Ribbon control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Appearance in Windows Forms Ribbon
+# Appearance in Windows Forms Ribbon (RibbonControlAdv)
 
 The Ribbon control ships with several built-in themes such as Office2007, Office2010, Office2013, TouchStyle and Office2016.
 All these themes can be applied with the ribbon property `RibbonStyle`.

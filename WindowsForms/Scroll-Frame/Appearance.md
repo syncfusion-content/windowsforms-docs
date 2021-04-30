@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in Windows Forms ScrollFrame Control | Syncfusion
-description: Learn about the theme support, load theme assembly and changing appearance in Syncfusion WinForms SfScrollFrame control and more details.
+title: Appearance in Windows Forms Scroll Frame control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
 ---
 
-# Appearance in ScrollFrame
+# Appearance in Windows Forms Scroll Frame (SfScrollFrame)
 
 This section explains how to customize the default appearance of the scrollbars using the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Style) properties. By default, the [SfScrollFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html) loads the scrollbars with default appearance. 
 

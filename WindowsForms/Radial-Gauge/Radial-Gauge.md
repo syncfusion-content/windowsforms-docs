@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Radial-Gauge | WindowsForms | Syncfusion
-description: Radial Gauge helps to visualize numerical values on a circular scale. It supports pointers, ranges, annotations, etc.
+title: Radial Gauge in Windows Forms Radial Gauge control | Syncfusion
+description: Learn about Radial Gauge support in Syncfusion Windows Forms Radial Gauge (Gauge) control and more details.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# RadialGauge
+# Radial Gauge in Windows Forms Radial Gauge (Gauge)
 
 [RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) enables you to see a single numerical value mapped against a range of colors that may have a particular business meaning or business logic. As the value changes over time, the gauge pointer changes position within this range.
 

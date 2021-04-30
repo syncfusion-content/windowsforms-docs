@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of PopupMenu | Windows Forms | Syncfusion
-description: Overview of PopupMenu control
+title: About Windows Forms PopupMenu control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms PopupMenu control, its elements and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Overview
+# Windows Forms PopupMenu Overview
 
 Popup menu represents a context menu, that will be hidden by default and shows over any control when user performs click operation. The menu holds important and frequently used commands for better access. 
 

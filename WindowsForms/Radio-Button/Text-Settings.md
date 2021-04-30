@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text-Settings | WindowsForms | Syncfusion
-description: text settins
+title: Text Settings in Windows Forms Radio Button control | Syncfusion
+description: Learn about Text Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Text Settings
+# Text Settings in Windows Forms Radio Button (RadioButtonAdv)
 
 This section discusses the text settings of the RadioButtonAdv.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Windows Forms ScrollFrame Control | Syncfusion
-description: Learn about the assembly deployment, how to attach the SfScrollFrame to a ListView Control in Syncfusion WinForms SfScrollFrame control and more details.
+title: Getting Started with Windows Forms Scroll Frame control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Scroll Frame (SfScrollFrame) control, its elements and more details.
 platform: WindowsForms
 control: SfScrollFrame
 documentation: ug
