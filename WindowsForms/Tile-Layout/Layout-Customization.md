@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layout Customization | WindowsForms | Syncfusion
-description: Layout Customization
+title: Layout Customization in Windows Forms Tile Layout control | Syncfusion
+description: Learn about Layout Customization support in Syncfusion Windows Forms Tile Layout control and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
 
-# Layout customization
+# Layout Customization in Windows Forms Tile Layout
 
 ## Alignment
 

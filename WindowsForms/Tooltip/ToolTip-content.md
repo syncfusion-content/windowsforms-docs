@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTipItems in ToolTip Control for Windows Forms | Syncfusion
-description: Learn about the how to add the ToolTipItems in Syncfusion WinForms SfToolTip control and more details.
+title: ToolTip Content in Windows Forms Tooltip control | Syncfusion
+description: Learn about ToolTip Content support in Syncfusion Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | TrackBarEx | WindowsForms | Syncfusion
-description: This section describes how to add track bar control into application and its basic features.
+title: Getting Started with Windows Forms TrackBar control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms TrackBar (TrackBarEx) control, its elements and more details.
 platform: WindowsForms
 control: TrackBarEx
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Windows Forms TrackBar
 
 This section describes how to add [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control in a Windows Forms application and overview of its basic functionalities.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: LoadOnDemand | WindowsForms | Syncfusion
-description: loadondemand
+title: History Manager in Windows Forms TreeView control | Syncfusion
+description: Learn about History Manager support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# History Manager
+# History Manager in Windows Forms TreeView
 
 ## Undo and Redo
 

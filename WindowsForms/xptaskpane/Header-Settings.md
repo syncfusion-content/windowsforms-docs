@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header-Settings | WindowsForms | Syncfusion
-description: header settings
+title: Header Settings in Windows Forms xptaskpane control | Syncfusion
+description: Learn about Header Settings support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
 platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
 
-# Header settings
+# Header Settings in Windows Forms xp task pane (XPTaskPane)
 
 ## Setting visibility of the ToolBar items
 
@@ -15,7 +15,7 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 
-![](Header-Settings_images/Header-Settings_img1.jpeg)
+![Header-Settings_img1](Header-Settings_images/Header-Settings_img1.jpeg)
 
 
 
@@ -25,7 +25,7 @@ The header section by default has four toolbar items. Left and right navigating 
 
 
 
-![](Header-Settings_images/Header-Settings_img2.jpeg)
+![Header-Settings_img2](Header-Settings_images/Header-Settings_img2.jpeg)
 
 
 
@@ -137,7 +137,7 @@ Me.xpTaskPane1.HeaderLeftToolbar.Items[0].ImageIndex = 1
 
 {% endtabs %}
 
-![](Header-Settings_images/Header-Settings_img3.jpeg)
+![Header-Settings_img3](Header-Settings_images/Header-Settings_img3.jpeg)
 
 
 
@@ -188,7 +188,7 @@ Me.xpTaskPane1.HeaderMenuItem.ImageIndex = 1
 
 {% endtabs %}
 
-![](Header-Settings_images/Header-Settings_img4.jpeg)
+![Header-Settings_img4](Header-Settings_images/Header-Settings_img4.jpeg)
 
 
 

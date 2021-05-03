@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of TileLayout control | Windows Forms | Syncfusion
-description: TileLayout control displays the child items in tile manner like windows 8 tile layout. It allows to maximize, minimize and drag the items.
+title: About Windows Forms Tile Layout control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Tile Layout control, its elements and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Tile Layout Overview
 
 [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control is Windows 8 Start screen inspired control . It acts as a container that holds a set of tile view items that can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout. 
 
