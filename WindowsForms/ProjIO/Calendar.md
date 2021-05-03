@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calendar | Windows Forms | Syncfusion
-description: calendar
+title: Calendar in Windows Forms projio control | Syncfusion
+description: Learn about Calendar support in Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Calendar
+# Calendar in Windows Forms proj (ProjIO)
 
 Calendar class is used to create calendars and add them to the project. Using the Calendar class, one can create calendar exceptions (holidays, different working times and working days), define working days, working times, and so on. It can also add a standard calendar to the project. Calendar class contains properties that can be used to retrieve information of all calendars present in a project.
 

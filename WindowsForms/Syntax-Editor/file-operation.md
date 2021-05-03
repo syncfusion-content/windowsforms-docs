@@ -1,13 +1,13 @@
 ---
 layout: post
-title: File operations in EditControl | Windows Forms | Syncfusion
-description: This section explains about the file operations like create, new, open, load, delete etc., in EditControl
+title: File Operation in Windows Forms Syntax Editor control | Syncfusion
+description: Learn about File Operation support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# File Operation
+# File Operation in Windows Forms Syntax Editor
 
 Supports all file operations like create new, open, or save.
 

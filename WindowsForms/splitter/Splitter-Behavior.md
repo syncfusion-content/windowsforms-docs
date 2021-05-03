@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Splitter-Behavior | WindowsForms | Syncfusion
-description: splitter behavior
+title: Splitter Behavior in Windows Forms Splitter control | Syncfusion
+description: Learn about Splitter Behavior support in Syncfusion Windows Forms Splitter control and more details.
 platform: WindowsForms
 control: Splitter
 documentation: ug
 ---
 
-# Splitter behavior
+# Splitter Behavior in Windows Forms Splitter
 
 The splitter in the SplitterControl can be supported with Row splitter and Column splitter or both.
 

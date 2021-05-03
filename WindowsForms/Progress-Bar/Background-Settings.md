@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Background-Settings | WindowsForms | Syncfusion
-description: background settings
+title: Background Settings in Windows Forms Progress Bar control | Syncfusion
+description: Learn about Background Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Background settings
+# Background Settings in Windows Forms Progress Bar (ProgressBarAdv)
 
 The ProgressBarAdv control consists of various properties to customize the background. These properties and their description are given below.
 
@@ -53,7 +53,7 @@ Me.progressBarAdv1.BackgroundFallbackStyle = Syncfusion.Windows.Forms.Tools.Prog
 
 {% endtabs %}
 
-![](Overview_images/Overview_img6.jpeg) 
+![Overview_img6](Overview_images/Overview_img6.jpeg) 
 
 **Office2016Colorful**
 
@@ -75,7 +75,7 @@ Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarB
 
 {% endtabs %}
 
-![](Overview_images/Overview_img117.png) 
+![Overview_img117](Overview_images/Overview_img117.png) 
 
 **Office2016White**
 
@@ -97,7 +97,7 @@ Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarB
 
 {% endtabs %}
 
-![](Overview_images/Overview_img118.png) 
+![Overview_img118](Overview_images/Overview_img118.png) 
 
 **Office2016DarkGray**
 
@@ -119,7 +119,7 @@ Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarB
 
 {% endtabs %}
 
-![](Overview_images/Overview_img119.png) 
+![Overview_img119](Overview_images/Overview_img119.png) 
 
 **Office2016Black**
 
@@ -141,7 +141,7 @@ Me.progressBarAdv1.BackgroundStyle = Syncfusion.Windows.Forms.Tools.ProgressBarB
 
 {% endtabs %}
 
-![](Overview_images/Overview_img120.png) 
+![Overview_img120](Overview_images/Overview_img120.png) 
 
 
 N> To display the above styles in different colors the BackGradientStartColor and BackGradientEndColor properties can be used.
@@ -180,7 +180,7 @@ Me.progressBarAdv1.BackSegments = True
 
 {% endtabs %}
 
-![](Overview_images/Overview_img8.jpeg)
+![Overview_img8](Overview_images/Overview_img8.jpeg)
 
 ## Background color settings
 
@@ -227,7 +227,7 @@ Me.progressBarAdv1.BackGradientStartColor = System.Drawing.Color.IndianRed
 
 {% endtabs %}
 
-![](Overview_images/Overview_img9.jpeg)
+![Overview_img9](Overview_images/Overview_img9.jpeg)
 
 
 The background gradient can be displayed with multiple colors using the property given below.
@@ -261,7 +261,7 @@ Me.progressBarAdv1.BackMultipleColors = New System.Drawing.Color[] {System.Drawi
 
 {% endtabs %}
 
-![](Overview_images/Overview_img10.jpeg) 
+![Overview_img10](Overview_images/Overview_img10.jpeg) 
 
 
 ### Tube color
@@ -305,6 +305,6 @@ Me.progressBarAdv1.BackTubeStartColor = System.Drawing.Color.Yellow
 
 {% endtabs %}
 
- ![](Overview_images/Overview_img11.jpeg) 
+ ![Overview_images11](Overview_images/Overview_img11.jpeg) 
 
 

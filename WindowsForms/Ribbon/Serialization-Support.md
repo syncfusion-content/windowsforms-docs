@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization-Support | WindowsForms | Syncfusion
-description: This section briefly describes the serialization support in Syncfusion's RibbonControlAdv for WinForms
+title: Serialization Support in Windows Forms Ribbon control | Syncfusion
+description: Learn about Serialization Support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Serialization Support
+# Serialization Support in Windows Forms Ribbon (RibbonControlAdv)
 
 The RibbonControlAdv has built-in serialization support to serialize the entire Ribbon control state and details of the layout mode. It also provides supports to save and load the Ribbon at any time while running the application, either with simplified or normal layout.
 

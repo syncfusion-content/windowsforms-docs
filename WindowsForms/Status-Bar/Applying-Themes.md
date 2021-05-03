@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying-Themes | WindowsForms | Syncfusion
-description: applying themes
+title: Applying Themes in Windows Forms Status Bar control | Syncfusion
+description: Learn about Applying Themes support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Applying Themes
+# Applying Themes in Windows Forms Status Bar (StatusBarAdv)
 
 The StatusBarAdv control can be provided with a themed look and feel using the properties given below.
 
@@ -44,4 +44,4 @@ Me.statusBarAdv1.ThemesEnabled = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img76.jpeg) 
+![Overview_img76](Overview_images/Overview_img76.jpeg) 

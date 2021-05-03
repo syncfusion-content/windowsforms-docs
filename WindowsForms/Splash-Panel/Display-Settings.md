@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display-Settings | WindowsForms | Syncfusion
-description: display settings
+title: Display Settings in Windows Forms Splash Panel control | Syncfusion
+description: Learn about Display Settings support in Syncfusion Windows Forms Splash Panel control and more details.
 platform: WindowsForms
 control: SplashPanel
 documentation: ug
 ---
 
-# Display Settings
+# Display Settings in Windows Forms Splash Panel
 
 The section illustrates the display settings available for the SplashPanel control.
 
@@ -269,7 +269,7 @@ Me.splashPanel1.Text = "Splash Panel"
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img50.jpeg) 
+![Overview_img50](Overview_images/Overview_img50.jpeg) 
 
 
 ## Time interval

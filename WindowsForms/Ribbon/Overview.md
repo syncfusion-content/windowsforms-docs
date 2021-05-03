@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Windows Forms RibbonControlAdv
-description: An overview of RibbonControlAdv with Ribbon items and Backstage to give a Ribbon like UI appearance with the updated Visual styles
+title: About Windows Forms Ribbon control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Ribbon (RibbonControlAdv) control, its elements and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Overview of WF RibbonControlAdv
+# Windows Forms Ribbon (RibbonControlAdv) Overview
 
 The WinForms [RibbonControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface like Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help to organize an application. It provides an application UI like Microsoft Office with a 2007 style that contains an application menu and 2016 style that contains a backstage view.
 

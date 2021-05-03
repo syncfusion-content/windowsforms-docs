@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-customize-the-appearance-of-ProgressBarAdv | WindowsForms | Syncfusion
-description: how to customize the appearance of progressbaradv
+title: How to customize the appearance of ProgressBarAdv | Syncfusion
+description: How to customize the appearance of Syncfusion Essential Studio ProgressBarAdv control, its elements and more details.
 platform: WindowsForms
 control: Notification Package 
 documentation: ug
 ---
 
-# How to customize the appearance of ProgressBarAdv?
+# customize the appearance of ProgressBarAdv
+
+This page explains How to customize the appearance of ProgressBarAdv and more details.
+
+## How to customize the appearance of ProgressBarAdv?
 
 The ProgressBarAdv control appearance can be customized as like in Win 8 application. You can achieve this using the following code example.
 
@@ -48,4 +52,4 @@ The ProgressBarAdv control appearance can be customized as like in Win 8 applica
 
 {% endtabs %}
 
-![](Overview_images/Overview_img29.png)
+![Overview_img29](Overview_images/Overview_img29.png)

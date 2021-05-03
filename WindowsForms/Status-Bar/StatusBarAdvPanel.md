@@ -1,13 +1,13 @@
 ---
 layout: post
-title: StatusBarAdvPanel | WindowsForms | Syncfusion
-description: statusbaradvpanel
+title: StatusBarAdvPanel in Windows Forms Status Bar control | Syncfusion
+description: Learn about StatusBarAdvPanel support in Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# StatusBarAdvPanel
+# StatusBarAdvPanel in Windows Forms Status Bar (StatusBarAdv)
 
 StatusBarAdvPanels can also be added to the StatusBarAdv control using the Panels property. On clicking the Panels property, the StatusBarAdvPanel Collection Editor pops up. Using this window, the user can add any number of panels to the control and customize them according to their requirements.
 
@@ -25,7 +25,7 @@ Indicates the StatusBarAdvPanel controls contained in the StatusBarAdv.</td></tr
 </table>
 
 
-![](Overview_images/Overview_img70.jpeg) 
+![Overview_img70](Overview_images/Overview_img70.jpeg) 
 
 ## Spacing
 
@@ -58,7 +58,7 @@ Me.statusBarAdv1.Spacing = New System.Drawing.Size(5, 5)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img71.jpeg) 
+![Overview_img71](Overview_images/Overview_img71.jpeg) 
 
 ## Panel size
 
@@ -94,4 +94,4 @@ Me.statusBarAdv1.CustomLayoutBounds = New System.Drawing.Rectangle(5, 2, 100, 20
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img72.jpeg) 
+![Overview_img72](Overview_images/Overview_img72.jpeg) 

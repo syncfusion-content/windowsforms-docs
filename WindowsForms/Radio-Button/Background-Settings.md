@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Background-Settings | WindowsForms | Syncfusion
-description: background settings
+title: Background Settings in Windows Forms Radio Button control | Syncfusion
+description: Learn about Background Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Background Settings
+# Background Settings in Windows Forms Radio Button (RadioButtonAdv)
 
 The background settings of the RadioButtonAdv are discussed below.
 

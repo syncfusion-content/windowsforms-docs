@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-and-Behavior-Settings | WindowsForms | Syncfusion
-description: appearance and behavior settings
+title: Appearance and Behavior Settings in WinForms Radio Button | Syncfusion
+description: Learn about Appearance and Behavior Settings support in Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
 documentation: ug
 ---
 
-# Appearance and Behavior Settings
+# Appearance and Behavior Settings in Windows Forms Radio Button
 
 This section discusses the appearance and behavior settings of the RadioButtonAdv control.
 

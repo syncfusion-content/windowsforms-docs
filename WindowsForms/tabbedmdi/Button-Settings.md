@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Button-Settings | TabbedMDIManager | WindowsForms | Syncfusion
-description: This section explains about various buttons available in TabbedMDIManager control and their customization
+title: Button Settings in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about Button Settings support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIManager 
 documentation: ug
 ---
 
-# Button settings
+# Button Settings in Windows Forms TabbedMDI
 
 This section discusses about the various buttons available in TabbedMDIManager control and their customization.
 

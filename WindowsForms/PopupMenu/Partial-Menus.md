@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Partial Menus | Windows Forms | Syncfusion
-description: The popup menu items can be prioritized to display the menu items 
+title: Partial Menus in Windows Forms PopupMenu control | Syncfusion
+description: Learn about Partial Menus support in Syncfusion Windows Forms PopupMenu control, its elements and more details.
 platform: WindowsForms
 control: PopupMenu
 documentation: ug
 ---
 
-# Partial Menus
+# Partial Menus in Windows Forms PopupMenu
 
 The popup menu items which are frequently used can be prioritized for display and rest can be temporarily hidden within the menu. [`UsePartialMenus`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_UsePartialMenus) property of the parent bar item associated with the popup menu is used to enable the partial menus option and the priority of the bar items can be set by using the property [`IsRecentlyUsedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.ParentBarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_ParentBarItem_IsRecentlyUsedItem). By default, its set to `true`.
 

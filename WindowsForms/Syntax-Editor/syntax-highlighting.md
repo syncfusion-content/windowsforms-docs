@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syntax Highlighting in Windows Forms Syntax Editor | Syncfusion
-description: This section provide details about syntax highlighting for programming, scripting and markup languages in EditControl
+description: Learn about Syntax Highlighting support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
 documentation: ug
 ---
 
-# Syntax Highlighting in EditControl 
+# Syntax Highlighting in Windows Forms Syntax Editor
 
 Provides built-in syntax highlighting support for popular languages like C#, VB.NET, XML, HTML, Java, SQL, PowerShell, C, JavaScript, VBScript, and Delphi.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tab-Alignment | TabbedMDIManager | WindowsForms | Syncfusion
-description: tab alignment
+title: Tab Alignment in Windows Forms TabbedMDI control | Syncfusion
+description: Learn about Tab Alignment support in Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIManager 
 documentation: ug
 ---
 
-# Tab alignment
+# Tab Alignment in Windows Forms TabbedMDI
 
 The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right, and Bottom of the form using the [Alignment](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Alignment) property. To access the Alignment property, you should use the TabControlAdded event. This event is fired to let the user configure the tab appearance and behavior.
 

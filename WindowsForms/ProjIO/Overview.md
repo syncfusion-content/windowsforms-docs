@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | Windows Forms | Syncfusion
-description: overview
+title: About Windows Forms projio control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Overview
+# Windows Forms proj (ProjIO) Overview
 
 ## Introduction to Essential ProjIo
 
@@ -78,7 +78,7 @@ Windows Forms-[drive:]\Program Files\Syncfusion\Essential Studio\x.x.x.x\Infrast
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.) {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
+Online{{ '<http://help.syncfusion.com/windowsforms/projio>' | markdownify }} (Navigate to the ProjIO User Guide.) {{ '![Overview_images1](Overview_images/Overview_img1.jpeg)' | markdownify }}
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>

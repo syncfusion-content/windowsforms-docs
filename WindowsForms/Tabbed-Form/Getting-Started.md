@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Tabbed Form | Syncfusion
-description: This section explains about the Tabbedform control for windows forms and assembly deployment, form converted into sftabbedform and more details.
+title: Getting Started with Windows Forms Tabbed Form control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Tabbed Form (SfTabbedForm) control, its elements and more details.
 platform: WindowsForms
 control: SfTabbedForm
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Find and Replace operation in Spreadsheet
-description: Find and Replace operation in Spreadsheet
+title: Find and Replace in Windows Forms Spreadsheet control | Syncfusion
+description: Learn about Find and Replace support in Syncfusion Windows Forms Spreadsheet control and more details.
 platform: windowsforms
 control: Spreadsheet
 documentation: ug
 ---
 
-# Find and Replace
+# Find and Replace in Windows Forms Spreadsheet
 
 This section explains about Find and Replace operations in Spreadsheet. 
 

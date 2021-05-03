@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Boundary-Value-Settings | WindowsForms | Syncfusion
-description: boundary value settings
+title: Boundary Value Settings in Windows Forms Progress Bar | Syncfusion
+description: Learn about Boundary Value Settings support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv
 documentation: ug
 ---
 
-# Boundary value settings
+# Boundary Value Settings in Windows Forms Progress Bar (ProgressBarAdv)
 
 The ProgressBarAdv during it's progressive operation indicates a minimum value and a maximum value for the process.
 
@@ -69,7 +69,7 @@ Me.progressBarAdv1.Value = 100
 
 {% endtabs %}
 
-![](Overview_images/Overview_img22.jpeg) 
+![Overview_img22](Overview_images/Overview_img22.jpeg) 
 
 
 The methods associated with the above properties are given below.

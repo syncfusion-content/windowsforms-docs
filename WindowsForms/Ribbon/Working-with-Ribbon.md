@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working-with-Ribbon | WindowsForms | Syncfusion
-description: This section briefly describes the various functionalities present in Syncfusion RibbonControlAdv control
+title: Working with Ribbon in Windows Forms Ribbon control | Syncfusion
+description: Learn about Working with Ribbon support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Working with WPF Ribbon
+# Working with Ribbon in Windows Forms Ribbon (RibbonControlAdv)
 
 ## Ribbon State
 

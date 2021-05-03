@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Working-with-Tabs | WindowsForms | Syncfusion
-description: working with tabs
+title: Working with Tabs in Windows Forms Ribbon control | Syncfusion
+description: Learn about Working with Tabs support in Syncfusion Windows Forms Ribbon (RibbonControlAdv) control and more details.
 platform: WindowsForms
 control: RibbonControlAdv 
 documentation: ug
 ---
 
-# Working with Tabs
+# Working with Tabs in Windows Forms Ribbon (RibbonControlAdv)
 
 Ribbon panels are represented as Tabs(ToolStripTabItem) with tab name above the panel, these panels are split into groups which are ‘ToolStripEx’, this ToolStripEx accepts to display various items like buttons, gallery items, labels and panels.
 
 The following image shows four tabs (**Home**, **Send/Receive**, **Folder** and **View**). The Home tab which is selected consists of six ‘ToolStripEx’ (**New**, **Delete**, **Respond**, **Move**, **Tags** and **Quick Steps** ).
 
-![](Working_with_Tabs_Images/Working-with-Tabs_img1.jpg)
+![Working-with-Tabs_img1](Working_with_Tabs_Images/Working-with-Tabs_img1.jpg)
 
 ## Tab Selection
 
@@ -46,11 +46,11 @@ Follow the steps below to customize the tab using color table.
 
 *	In the property window of the Ribbon, click the Office2016ColorTable property. The following window will be shown
 
-![](Working_with_Tabs_Images/Working-with-Tabs_img2.jpg)
+![Working-with-Tabs_img2](Working_with_Tabs_Images/Working-with-Tabs_img2.jpg)
 
 *	Click Add button to customize the RibbonControlAdv with the Office2016ColorTable property.
 
-![](Working_with_Tabs_Images/Working-with-Tabs_img3.jpg)
+![Working-with-Tabs_img3](Working_with_Tabs_Images/Working-with-Tabs_img3.jpg)
 
 *	Set the required colors for customizing the Tabs.
 
@@ -105,7 +105,7 @@ this.ribbonControlAdv1.Office2016ColorTable.Add(color);
 
 {% endtabs %}
 
-![](Working_with_Tabs_Images/Working-with-Tabs_img4.jpg)
+![Working-with-Tabs_img4](Working_with_Tabs_Images/Working-with-Tabs_img4.jpg)
 
 For Customization of all the remaining items in ribbon, please refer `Office2016 Color Table`.
 

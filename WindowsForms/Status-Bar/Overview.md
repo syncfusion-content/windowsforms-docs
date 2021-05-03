@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion StatusBarAdv for Windows Forms
-description: An overview about StatusBarAdv control which can display StatusBarPanels with enhanced backgrounds and appearances with the theme support
+title: About Windows Forms Status Bar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Status Bar (StatusBarAdv) Overview
 
 The StatusBarAdv is an advanced StatusBar control that can display StatusBarPanels with enhanced backgrounds and appearances. The StatusBarAdv control can be dragged and dropped from the toolbox onto a form during design time. Users can then drag and drop controls onto the StatusBarAdv control.
 
