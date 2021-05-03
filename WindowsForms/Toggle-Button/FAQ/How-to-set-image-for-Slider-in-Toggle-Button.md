@@ -1,17 +1,13 @@
 ---
 layout: post
-title: How to set image for Slider in Toggle Button | Syncfusion
-description: how to set image for slider in toggle button in Syncfusion Windows Forms HubTile control, its elements and more details.
+title: How to set image for Slider in HubTile | Syncfusion
+description: how to set image for slider in Syncfusion Windows Forms HubTile control, its elements and more details.
 platform: WindowsForms
 control: HubTile
 documentation: ug
 ---
 
-# How to set image for Slider in Toggle Button in Windows Forms
-
-This page explains How to set image for Slider in Toggle Button in Windows Forms and more details.
-
-## How to Set Image for Slider in Toggle Button
+# How to Set Image for Slider in HubTile
 
 You can set the image through the Image property. Following code example illustrates the same.
 

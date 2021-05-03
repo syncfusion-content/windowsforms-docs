@@ -7,9 +7,9 @@ control: TileLayout
 documentation: ug
 ---
 
-# What are the events available In TileLayout in WinForms Tile Layout
+# What are the events available In TileLayout in Windows Forms
 
-This page explains What are the events available In TileLayout in WinForms Tile Layout and more details.
+This page explains What are the events available In TileLayout in Windows Forms and more details.
 
 ## BeforeSliding
 

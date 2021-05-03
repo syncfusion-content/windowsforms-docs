@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Use of Undo/ Redo functionality in TreeViewAdv in Windows Forms
+# Use of Undo/ Redo functionality in Windows Forms TreeViewAdv 
 
 This page explains Use of Undo/ Redo functionality in TreeViewAdv in Windows Forms and more details.
 

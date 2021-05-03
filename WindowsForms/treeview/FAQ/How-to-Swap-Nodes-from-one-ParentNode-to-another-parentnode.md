@@ -7,11 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Swap Nodes from One ParentNode to Another ParentNode
-
-This page explains Swap Nodes from One ParentNode to Another ParentNode and more details.
-
-## How to Swap Nodes from One ParentNode to Another ParentNode
+# How to Swap Nodes from One ParentNode to Another ParentNode
 
 This can be done by using the following code.
 
