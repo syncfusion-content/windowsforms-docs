@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | WindowsForms | Syncfusion
-description: Appearance
+title: Appearance in Windows Forms Tree Navigator control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms
 control: TreeNavigator 
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Windows Forms Tree Navigator
 
 ## Style
 
@@ -39,7 +39,7 @@ Me.treeNavigator1.Style = Syncfusion.Windows.Forms.Tools.TreeNavigatorStyle.Offi
 {% endhighlight %}
 
 {% endtabs %}
-![](Concept-and-Features_images/Colorful.png)
+![Colorful](Concept-and-Features_images/Colorful.png)
 
 
 ## Header Customization
@@ -97,7 +97,7 @@ Me.treeNavigator1.Header.TextBounds = new Rectangle(40, 0, 30, 20)
 {% endhighlight %}
 
 {% endtabs %}
-![](Concept-and-Features_images/Header.png)
+![Header](Concept-and-Features_images/Header.png)
 
 
 The Visibility of the tree navigator header can be hidden by setting ShowHeader property to false.
@@ -122,10 +122,10 @@ this.treeNavigator1.ShowHeader = false;
 
 {% endtabs %}
 
-![](Concept-and-Features_images/Noheader1.png)
+![Noheader1](Concept-and-Features_images/Noheader1.png)
 
 
-# Border Customization
+## Appearance in Windows Forms Tree Navigator
 
 Border color and Thickness of the TreeNavigator can be customized using properties BorderColor and BorderThickness.
 
@@ -157,7 +157,7 @@ Me.treeNavigator1.BorderColor = Color.Black
 
 {% endtabs %}
 
-![](Concept-and-Features_images/Border.png)
+![Border](Concept-and-Features_images/Border.png)
 
 ## Margin between TreeMenuItems
 In Tree Navigator you can set the gap between items with the help of PadY property. This property can be set using following code
@@ -179,9 +179,9 @@ ME.treeNavigator1.PadY = 10
 
 {% endtabs %}
 
-![](Concept-and-Features_images/Pady.png)
+![Pady](Concept-and-Features_images/Pady.png)
 
-# Customize TreeMenuItem
+## Appearance in Windows Forms Tree Navigator
 In Tree Navigator you can customize the tree menu items with the help of properties such as ItemBackColor, ItemHoverColor, SelectedColor, SelectedItemForeColor.
 
 *	ItemBackColor – This property is used to set the back color for the tree menu item when it is in normal state. 
@@ -238,10 +238,10 @@ Me.treeMenuItem4.SelectedItemForeColor = Color.Blue
 
 {% endtabs %}
 
-![](Concept-and-Features_images/TreemenuitemCustomize.png)
+![TreemenuitemCustomize](Concept-and-Features_images/TreemenuitemCustomize.png)
 
 
-# Text Alignment in TreeMenuItem
+## Appearance in Windows Forms Tree Navigator
 In Tree Navigator, TextAlign property is used to set the the Text alignment of the TreeMenuItem
 
 *	Center – This mode is used to align the text in the center of the tree menu item.	
@@ -265,4 +265,4 @@ treeNavigator1.TextAlign = TextAlignment.Center
 {% endhighlight %}
 
 {% endtabs %}
-![](Concept-and-Features_images/TextAlign.png)
+![TextAlign](Concept-and-Features_images/TextAlign.png)

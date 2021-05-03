@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Headers-and-Labels | Windows Forms | Syncfusion
-description: headers and labels
+title: Headers and Labels in Windows Forms TreeMap control | Syncfusion
+description: Learn about Headers and Labels support in Syncfusion Windows Forms TreeMap control and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Headers and Labels
+# Headers and Labels in Windows Forms TreeMap
 
 Labels and headers in a tree map can be customized using the following properties available in the tree map control:
 
@@ -86,4 +86,4 @@ this.TreeMap1.LeafColorMapping = desaturationColorMapping;
 
 {% endtabs %}
 
-![](Features_images/Features_img12.png)
+![Features_img12](Features_images/Features_img12.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bar items of XPToolBar | Windows Forms | Syncfusion
-description: Provides rich set of built-in controls to be added as a BarItem of the XPToolbar.
+title: BarItem Types in Windows Forms xptoolbar control | Syncfusion
+description: Learn about BarItem Types support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# BarItem Types
+# BarItem Types in Windows Forms xp toolbar
 
 The various types of BarItems supported by XPToolBar are,
 

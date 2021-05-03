@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap-Layout | Windows Forms | Syncfusion
-description: treeMap layout
+title: TreeMap Layout in Windows Forms TreeMap control | Syncfusion
+description: Learn about TreeMap Layout support in Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Tree Map Layout
+# TreeMap Layout in Windows Forms TreeMap
 
 The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ItemsLayoutMode) of the tree map control specifies the mode in which the items should be laid out. This layout will be applied for all the tree map levels. It includes four different types of layout.
 
@@ -55,7 +55,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endtabs %}
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 ## SliceAndDiceAuto layout
 
@@ -99,7 +99,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endtabs %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)
 
 
 ## SliceAndDiceHorizontal layout
@@ -142,7 +142,7 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endtabs %}
 
-![](Features_images/Features_img5.png)
+![Features_img5](Features_images/Features_img5.png)
 
 
 ## SliceAndDiceVertical layout
@@ -187,4 +187,4 @@ TreeMap1.Levels.Add(treeMapFlatLevel2);
 
 {% endtabs %}
 
-![](Features_images/Features_img6.png)
+![Features_img6](Features_images/Features_img6.png)

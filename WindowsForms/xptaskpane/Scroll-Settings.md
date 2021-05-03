@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll-Settings | WindowsForms | Syncfusion
-description: scroll settings
+title: Scroll Settings in Windows Forms xptaskpane control | Syncfusion
+description: Learn about Scroll Settings support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
 platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
 
-# Scroll settings
+# Scroll Settings in Windows Forms xp task pane (XPTaskPane)
 
 [XPTaskPane](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html) Enables vertical scrolling for the pages using [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_VerticalScroll) property. On mouse hovering over the scroll bar, the task page automatically moves and show the hidden contents. Scrolling speed can be fixed using [ScrollSpeed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPTaskPane.html#Syncfusion_Windows_Forms_Tools_XPTaskPane_ScrollSpeed) property.
 

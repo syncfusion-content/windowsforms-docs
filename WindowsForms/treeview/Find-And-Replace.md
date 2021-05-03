@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Find and Replace | WindowsForms | Syncfusion
-description:  Find and Replace
+title: Find and Replace in Windows Forms TreeView control | Syncfusion
+description: Learn about Find and Replace support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Find and Replace
+# Find and Replace in Windows Forms TreeView
 
 ## TreeViewAdvFindReplaceDialog
 
@@ -460,5 +460,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](FindAndReplace_Images/FindAndReplace_Image1.jpg)
+![FindAndReplace_Image1](FindAndReplace_Images/FindAndReplace_Image1.jpg)
 

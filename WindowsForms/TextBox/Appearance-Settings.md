@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance-Settings | WindowsForms | Syncfusion
-description: Learn here about how to change the background, forecolor of the Syncfusion Windows Forms TextBoxExt control and its style.
+title: Appearance Settings in Windows Forms TextBox control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# Appearance Settings in TextBoxExt
+# Appearance Settings in Windows Forms TextBox (TextBoxExt)
 
 This section describes about background, foreground and visual style settings.
 

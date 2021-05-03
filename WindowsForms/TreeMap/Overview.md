@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion TreeMap control for WindowsForms
-description: This section explains the key features and quick overview about Syncfusion TreeMap control for WindowsForms.
+title: About Windows Forms TreeMap control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Overview
+# Windows Forms TreeMap Overview
 
 Tree maps are ideal for visualizing large amounts of data. The space in the visualization is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 

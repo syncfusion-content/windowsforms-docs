@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Border-Settings | WindowsForms | Syncfusion
-description: Learn here about how to set the border of the Syncfusion Windows Forms TextBoxExt control and its properties.
+title: Border Settings in Windows Forms TextBox control | Syncfusion
+description: Learn about Border Settings support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# Border Settings in TextBoxExt
+# Border Settings in Windows Forms TextBox (TextBoxExt)
 
 The border settings of the TextBoxExt control are discussed in this section.
 
