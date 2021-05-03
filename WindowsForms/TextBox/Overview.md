@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion TextBoxExt for Windows Forms
-description: An overview about enhanced TextBox control and its advanced features like Appearance, Border, themes and overflow indicators
+title: About Windows Forms TextBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms EditorsPackage control, its elements and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-# Overview
+# Windows Forms EditorsPackage Overview
 
 TextBoxExt is a textbox derived control that can display different border colors and styles.
 

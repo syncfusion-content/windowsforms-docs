@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Customization | Windows Forms | Syncfusion
-description: We can customize the Text, Background Color, Font Family, Foreground Color, etc..
+title: Appearance in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Appearance Customization
+# Appearance in Windows Forms xp toolbar (XPToolbar)
 
 ## Background Color
 

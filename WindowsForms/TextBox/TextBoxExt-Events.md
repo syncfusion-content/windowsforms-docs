@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TextBoxExt-Events | WindowsForms | Syncfusion
-description: Learn here about how to use the Syncfusion Windows Forms TextBoxExt events and different types of the events.
+title: TextboxExt Events in Windows Forms TextBox control | Syncfusion
+description: Learn about TextboxExt Events support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# TextBoxExt Events in TextBoxExt
+# TextboxExt Events in Windows Forms TextBox (TextBoxExt)
 
 The list of events and a detailed explanation about each of them is given in the following sections.
 

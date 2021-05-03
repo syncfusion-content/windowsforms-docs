@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in WinForms TreeView control | Syncfusion
-description: Learn about data binding to self-referencing data, database data and object-relational data in Syncfusion WinForms TreeView control and more details.
+title: Data Binding in Windows Forms TreeView control | Syncfusion
+description: Learn about Data Binding support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
