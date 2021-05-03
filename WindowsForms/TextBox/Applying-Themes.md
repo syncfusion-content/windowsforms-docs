@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Applying Themes in Windows Forms TextBox control | Syncfusion
-description: Learn about Applying Themes support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
+title: Applying Themes in Windows Forms EditorsPackage control | Syncfusion
+description: Learn about Applying Themes support in Syncfusion Windows Forms EditorsPackage control, its elements and more details.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug
 ---
 
-## Applying Themes in TextBoxExt
+## Applying Themes in EditorsPackage
 
 The [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property specifies whether XPThemes should be used or not when [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) is set to `Fixed3D`.
 
