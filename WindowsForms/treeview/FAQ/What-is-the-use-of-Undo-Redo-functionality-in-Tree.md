@@ -1,13 +1,17 @@
 ---
 layout: post
-title: What-is-the-use-of-Undo-Redo-functionality-in-TreeViewAdv-using-HistoryManager-property | WindowsForms | Syncfusion
-description: what is the use of undo/ redo functionality in treeviewadv using historymanager property?
+title: Use of Undo/ Redo functionality in TreeViewAdv | Syncfusion
+description: Learn about What is the use of Undo/ Redo functionality using HistoryManager property in Syncfusion Windows Forms TreeView and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# What is the Use of Undo/Redo Functionality in TreeViewAdv using HistoryManager Property
+# Use of Undo/ Redo functionality in Windows Forms TreeViewAdv 
+
+This page explains Use of Undo/ Redo functionality in TreeViewAdv in Windows Forms and more details.
+
+## What is the use of Undo/ Redo functionality in TreeViewAdv using HistoryManager property in Windows Forms TreeView
 
 The undo / redo functionality of a tree node lets you delete a node, add a node, edit a node's text and drag / drop a node using the HistoryManager.
 

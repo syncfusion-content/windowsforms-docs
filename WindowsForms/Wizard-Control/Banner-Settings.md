@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Banner-Settings | WindowsForms | Syncfusion
-description: banner settings
+title: Banner Settings in Windows Forms Wizard | Syncfusion
+description: Learn about Banner Settings support in Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
 
-# Banner settings
+# Banner Settings in Windows Forms Wizard
 
 The controls inside the Banner Control include Banner Panel, Title, description and a picture box. The section will walk you through the properties which customizes these controls.
 

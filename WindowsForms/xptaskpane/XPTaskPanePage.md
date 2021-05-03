@@ -1,13 +1,13 @@
 ---
 layout: post
-title: XPTaskPane | WindowsForms | Syncfusion
-description: xptaskpane
+title: XPTaskPanePage in Windows Forms xptaskpane control | Syncfusion
+description: Learn about XPTaskPanePage support in Syncfusion Windows Forms xptaskpane (XPTaskPane) control and more details.
 platform: WindowsForms
 control: XPTaskPane
 documentation: ug
 ---
 
-# XPTaskPane
+# XPTaskPanePage in Windows Forms xp task pane (XPTaskPane)
 
 XPTaskPane has a TaskPanePageContainer which hosts the Task pages. Any number of controls can added to the Task pages and can be customized. Properties which controls the appearance of the Task pages are discussed in this section.
 
@@ -59,7 +59,7 @@ Me.xpTaskPage1.LayoutName = "Card1"
 
 {% endtabs %}
 
-![](XPTaskPane-Control_images/XPTaskPane_img1.jpeg) 
+![XPTaskPane_img1](XPTaskPane-Control_images/XPTaskPane_img1.jpeg) 
 
 
 
@@ -120,7 +120,7 @@ Me.xpTaskPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 
 {% endtabs %}
 
-![](XPTaskPane-Control_images/XPTaskPane_img2.jpeg)
+![XPTaskPane_img2](XPTaskPane-Control_images/XPTaskPane_img2.jpeg)
 
 
 
@@ -152,7 +152,7 @@ Me.xpTaskPage1.ForeColor = System.Drawing.Color.SteelBlue
 
 {% endtabs %}
 
-![](XPTaskPane-Control_images/XPTaskPane_img3.jpeg)
+![XPTaskPane_img3](XPTaskPane-Control_images/XPTaskPane_img3.jpeg)
 
 
 

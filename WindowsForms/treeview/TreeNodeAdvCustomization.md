@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TreeNodeAdv-Customization | WindowsForms | Syncfusion
-description: TreeNodeAdv Customization
+title: TreeNodeAdv Customization in Windows Forms TreeView | Syncfusion
+description: Learn about TreeNodeAdv Customization support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# TreeNodeAdv Customization
+# TreeNodeAdv Customization in Windows Forms TreeView
 
 
 ## OptionButton
@@ -57,7 +57,7 @@ treeNode.Optioned = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
+![TreeNodeAdv_Customization_Img1](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
 
 
 ## CheckBox
@@ -156,7 +156,7 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
+![TreeNodeAdv_Customization_Img2](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
 
 ### Find CheckState changed
 
@@ -291,7 +291,7 @@ treeNode.CustomControl = this.comboBoxAdv;
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img3.jpg)
+![TreeNodeAdv_Customization_Img3](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img3.jpg)
 
 ## Primitives
 
@@ -303,9 +303,9 @@ To open the primitive collection editor, follow steps given below
 
 2. In the property window of selected node has Primitives property. Click the Primitives property to open the Primitive Collection Editor
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img4.jpg)
+    ![TreeNodeAdv_Customization_Images4](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img4.jpg)
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img5.jpg)
+    ![TreeNodeAdv_Customization_Images5](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img5.jpg)
 
 ### LabelPrimitive
 
@@ -319,11 +319,11 @@ To set the LabelPrimitive for an individual node follow the given steps.
 
 3. Now the `LabelPrimitive` is added to that selected node.
 
-   ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img6.jpg)
+   ![TreeNodeAdv_Customization_Images6](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img6.jpg)
 
 4. To save changes click the `OK` button.
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img7.jpg)
+![TreeNodeAdv_Customization_Img7](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img7.jpg)
 
 In the above image "Asia" node has label primitive. You can see the difference between "Asia" node and other parent nodes.
 
@@ -342,11 +342,11 @@ To set the `LeftImagePrimitive` for an individual node follow the given steps.
 
 3. Now the `LeftImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img8.jpg)
+    ![TreeNodeAdv_Customization_Images8](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img8.jpg)
  
 4. To save changes click the "OK" button.
  
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img9.jpg)
+    ![TreeNodeAdv_Customization_Images9](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img9.jpg)
 
 > Note: To set left image primitive the `LeftImageIndices` property of the node must be set. If we set LeftImage primitive alone then text of node will not be shown. So, we must set `LabelPrimitive` for that node.
 
@@ -362,11 +362,11 @@ To set the `RightImagePrimitive` for an individual node follow the given steps.
 
 3. Now the `RightImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img10.jpg)
+    ![TreeNodeAdv_Customization_Images10](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img10.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img11.jpg)
+    ![TreeNodeAdv_Customization_Images11](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img11.jpg)
 
 
 > Note: To set left image primitive the “RightImageIndices” property of the node must be set. If we set RightImage primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
@@ -383,11 +383,11 @@ To set the StateImagePrimitive for an individual node follow the given steps.
 
 3. Now the `StateImagePrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img12.jpg)
+    ![TreeNodeAdv_Customization_Images12](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img12.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img13.jpg)
+    ![TreeNodeAdv_Customization_Images13](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img13.jpg)
 
 > Note: To set state image primitive, OpenImgIndex and ClosedImgIndex property of the node must be set.
 
@@ -404,11 +404,11 @@ To set the `CheckBoxPrimitive` for an individual node follow the given steps.
 
 3. Now the `CheckBoxPrimitive` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img14.jpg)
+    ![TreeNodeAdv_Customization_Images14](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img14.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img15.jpg)
+    ![TreeNodeAdv_Customization_Images15](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img15.jpg)
 
 > Note : To set check box primitive the “ShowCheckBox” property of the node must be set as true. If we set ShowCheckBox primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
 
@@ -425,11 +425,11 @@ To set the OptionButtonPrimitive for an individual node follow the given steps.
 
 3. Now the OptionButtonPrimitive is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img16.jpg)
+    ![TreeNodeAdv_Customization_Images16](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img16.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img17.jpg)
+    ![TreeNodeAdv_Customization_Images17](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img17.jpg)
 
 > Note : To set check box primitive the `ShowOptionButton` property of the node must be set as true. If we set `ShowOptionButton` primitive alone then text of node will not be shown. So, we must set LabelPrimitive for that node.
 
@@ -446,11 +446,11 @@ To set the CustomControlPrimitives for an individual node follow the given steps
 
 3. Now the `CustomControlPrimitives` is added to that selected node.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img18.jpg)
+    ![TreeNodeAdv_Customization_Images18](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img18.jpg)
 
 4. To save changes click the "OK" button.
 
-    ![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img19.jpg)
+    ![TreeNodeAdv_Customization_Images19](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img19.jpg)
 
 ## Expander in TreeNode
 
@@ -479,7 +479,7 @@ Me.treeViewAdv1.ExpanderType = ExpanderType.Classic
 {% endhighlight %}		
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img20.jpg)
+![TreeNodeAdv_Customization_Img20](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img20.jpg)
 
 
 ### Detect Node Collapse/Expand
@@ -667,7 +667,7 @@ treeNodeAdv1.LeftImageIndices = new int[] {1};
 
 <b>Step 4</b>:. Repeat step 3 until  set `LeftImageIndices` for all the nodes in treeview
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
+![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Right Image
 
@@ -735,7 +735,7 @@ treeNodeAdv1.RightImageIndices = new int[] {1};
 
 <b>Step 4</b>: Repeat step 3 until  set `RightImageIndices` for all the nodes in treeview
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
+![TreeNodeAdv_Customization_Img22](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
 
 ### State Image
 
@@ -822,7 +822,7 @@ treeNodeAdv1.CloseImgIndex = 1;
 
 <b>Step 4</b>: Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in treeview
 			 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
+![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
 ### Customizing the Image Size
 
@@ -926,7 +926,7 @@ treeNodeAdv1. CollapseImageIndex = 0;
 
 <b>Step 4</b>: Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in treeview
 			 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
+![TreeNodeAdv_Customization_Img23](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
 
 ### Line Images
 
@@ -986,7 +986,7 @@ Me.treeViewAdv1.ShowRootLines = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img24.jpg)
+![TreeNodeAdv_Customization_Img24](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img24.jpg)
 
 >NOTE
 >
@@ -1045,7 +1045,7 @@ Me.treeViewadv1.LabelEdit = True
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img25.jpg)
+![TreeNodeAdv_Customization_Img25](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img25.jpg)
 
 ### Detect Node Editing
 
@@ -1464,7 +1464,7 @@ Me.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectSameLevel
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img26.jpg)
+![TreeNodeAdv_Customization_Img26](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img26.jpg)
 
 <b>Extending the Selection</b>
 
@@ -2131,4 +2131,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img27.jpg)
+![TreeNodeAdv_Customization_Img27](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img27.jpg)

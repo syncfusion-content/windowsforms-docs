@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-select-all-the-nodes-in-a-TreeViewAdv-Control | WindowsForms | Syncfusion
-description: how to select all the nodes in a treeviewadv control
+title: How to select all the nodes in a TreeViewAdv | Syncfusion
+description: how to select all the nodes in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
@@ -49,4 +49,4 @@ Next node
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_images/How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1.jpeg)
+![How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1](How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_images/How-to-select-all-the-nodes-in-a-TreeViewAdv-Contr_img1.jpeg)

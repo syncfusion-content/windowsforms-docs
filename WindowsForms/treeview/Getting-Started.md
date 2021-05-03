@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | WindowsForms | Syncfusion
-description: This section explains about the getting started with the important key features of TreeViewAdv control for windows forms.
+title: Getting Started with Windows Forms TreeView control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Getting Started with Windows Forms TreeView (TreeViewAdv)
+# Getting Started with Windows Forms TreeView
 
 This section provides a quick overview for working with the [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) for WinForms. Walk through the entire process of creating a real world TreeView.
 

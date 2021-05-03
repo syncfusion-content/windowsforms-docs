@@ -1,13 +1,13 @@
 ---
 layout: post
-title: LoadOnDemand | WindowsForms | Syncfusion
-description: loadondemand
+title: LoadOnDemand in Windows Forms TreeView control | Syncfusion
+description: Learn about LoadOnDemand support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# LoadOnDemand
+# LoadOnDemand in Windows Forms TreeView
 
 LoadOnDemand feature is to give a delay in loading nodes of the tree before the user initiates a node to expand.
 

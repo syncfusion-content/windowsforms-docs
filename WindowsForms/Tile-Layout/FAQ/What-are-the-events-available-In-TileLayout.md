@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Events in TileLayout | WindowsForms | Syncfusion
-description: What are the events available In TileLayout
+title: What are the events available in WinForms Tile Layout | Syncfusion
+description: Learn about What are the events available in Syncfusion Windows Forms Tile Layout control, its elements and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# What are the events available In TileLayout?
+# What are the events available In TileLayout in Windows Forms
+
+This page explains What are the events available In TileLayout in Windows Forms and more details.
 
 ## BeforeSliding
 

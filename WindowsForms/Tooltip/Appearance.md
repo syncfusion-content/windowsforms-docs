@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in ToolTip Control for Windows Forms | Syncfusion
-description: Learn about the Appearance of the SfToolTip in Syncfusion WinForms SfToolTip control and more details.
+title: Appearance in Windows Forms Tooltip control | Syncfusion
+description: Learn about Appearance support in Syncfusion Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug

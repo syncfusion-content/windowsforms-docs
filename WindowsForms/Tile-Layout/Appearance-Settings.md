@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Settings | WindowsForms | Syncfusion
-description: Appearance Settings
+title: Appearance Settings in Windows Forms Tile Layout control | Syncfusion
+description: Learn about Appearance Settings support in Syncfusion Windows Forms Tile Layout control and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Appearance settings
+# Appearance Settings in Windows Forms Tile Layout
 
 ## SetParentFormFlat
 

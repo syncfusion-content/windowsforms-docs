@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Performance | WindowsForms | Syncfusion
-description: performance 
+title: Performance in Windows Forms TreeView control | Syncfusion
+description: Learn about Performance support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
-# Performance
+# Performance in Windows Forms TreeView
 
 The TreeViewAdv performance can be improved by the following properties and methods.
 

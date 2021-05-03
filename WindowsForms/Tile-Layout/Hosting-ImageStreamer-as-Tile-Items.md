@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hosting ImageStreamer as Tile Items | WindowsForms | Syncfusion
-description: This section provide details about hosting ImageStreamer as tile items in TileLayout for Windows Forms
+title: Hosting ImageStreamer as Tile Items in Tile Layout | Syncfusion
+description: Learn about Hosting ImageStreamer as Tile Items support in Syncfusion Windows Forms Tile Layout control and more details.
 platform: WindowsForms
 control: TileLayout 
 documentation: ug
 ---
 
-# Hosting ImageStreamer as tile items
+# Hosting ImageStreamer as Tile Items in Windows Forms Tile Layout
 
 In [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html), [ImageStreamer control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) is used as an Item in [LayoutGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.LayoutGroup.html). To add the Images into the [ImageStreamer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html), [ImagesCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageCollection.html) property is used.
 
