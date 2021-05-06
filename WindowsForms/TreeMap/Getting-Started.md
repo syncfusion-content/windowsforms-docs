@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+title: Getting Started with Windows Forms TreeMap control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms TreeMap
 
 Tree maps are a growing trend in data visualization. They display hierarchical information in a series of clustered rectangles, which represent a whole rectangle. The size of each box represents a quantity. Tree maps can also use color to represent any number of values, but colors are often used to categorize the various boxes within the tree map.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
-description: event handling 
+title: Event Handling in Windows Forms Wizard | Syncfusion
+description: Learn about Event Handling support in Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: WindowsForms
 control: Wizard
 documentation: ug
 ---
 
-# Event handling
+# Event Handling in Windows Forms Wizard
 
 This section comprises the below events:
 

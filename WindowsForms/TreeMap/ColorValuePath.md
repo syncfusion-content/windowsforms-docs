@@ -1,13 +1,13 @@
 ---
 layout: post
-title: colorvaluepath | Windows Forms | Syncfusion
-description: ColorValuePath
+title: ColorValuePath in Windows Forms TreeMap control | Syncfusion
+description: Learn about ColorValuePath support in Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 
 documentation: ug
 ---
 
-# Color value path
+# ColorValuePath in Windows Forms TreeMap
 
 The [`ColorValuePath`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TreeMap.TreeMap.html#Syncfusion_Windows_Forms_TreeMap_TreeMap_ColorValuePath) of the tree map control is a path to a field on the source object that serves as the "color" of the object. 
 

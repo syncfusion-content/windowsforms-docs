@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chevron/Overflow Button  | Windows Forms | Syncfusion
-description: Used to indicates whether to show overflow button or not.
+title: Chevron/Overflow Button in Windows Forms xptoolbar | Syncfusion
+description: Learn about Chevron/Overflow Button support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Chevron/Overflow Button 
+# Chevron/Overflow Button in Windows Forms xp toolbar (XPToolbar)
 
 Overflow button is used to expand a toolbar and view other options that may not be currently visible. The [`ShowChevron`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html#Syncfusion_Windows_Forms_Tools_XPMenus_XPToolBar_ShowChevron) property is used to indicates whether to show overflow button or not.
 

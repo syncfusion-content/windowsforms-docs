@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing items in WinForms TreeView control | Syncfusion
-description: Learn about editing self-referencing data, database data and object-relational data in Syncfusion WinForms TreeView control and more details.
+title: Editing in Windows Forms TreeView control | Syncfusion
+description: Learn about Editing support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# Editing
+# Editing in Windows Forms TreeView
 
 TreeViewAdv supports dynamic update of the underlying changes in data source settings. So, whenever user does insert, delete, rename (aka, update), drag and drop operations, it should also be reflected in the TreeViewAdv and data source.
 

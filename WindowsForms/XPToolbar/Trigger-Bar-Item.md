@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Trigger Bar Items | Windows Forms | Syncfusion
-description: Bar items can be accessed by using click event
+title: Trigger Bar Item in Windows Forms xptoolbar control | Syncfusion
+description: Learn about Trigger Bar Item support in Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
 ---
 
-# Trigger Bar Items
+# Trigger Bar Item in Windows Forms xp toolbar (XPToolbar)
 
 On selection, the bar items functionality is handled through the [`Click`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) event for further operations.
 

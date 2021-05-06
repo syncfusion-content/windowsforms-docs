@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in ToolTip Control for Windows Forms | Syncfusion
-description: Learn about the how to customize the settings in Syncfusion WinForms SfToolTip control and more details.
+title: Working with SfToolTip in Windows Forms Tooltip control | Syncfusion
+description: Learn about Working with SfToolTip support in Syncfusion Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms
 control: SfToolTip
 documentation: ug
 
 ---
-# Working with SfToolTip
+# Working with SfToolTip in Windows Forms Tooltip (SfToolTip)
 
 ## Getting the ToolTip Text of a Control
 

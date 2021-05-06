@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text-Settings | WindowsForms | Syncfusion
-description: Learn here about how to change the text style and overflow settings of the Syncfusion Windows Forms TextBoxExt.
+title: Text Settings in Windows Forms TextBox control | Syncfusion
+description: Learn about Text Settings support in Syncfusion Windows Forms TextBox (TextBoxExt) control and more details.
 platform: WindowsForms
 control: TextBoxExt
 documentation: ug
 ---
 
-# Text Settings in TextBoxExt
+# Text Settings in Windows Forms TextBox (TextBoxExt)
 
 This section discusses the text settings of the TextBoxExt control.
 
