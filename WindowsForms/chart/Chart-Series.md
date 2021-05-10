@@ -8513,18 +8513,18 @@ Pixel</td><td>
 The coordinates are specified to be in pixels of the chart area.</td></tr>
 </table>
 
-![Chart Series](Chart-Series_images/Chart-Series_img151.jpeg)
+![Chart Series](Chart-Series_images/Chart-Series_img151.png)
 
 The custom point symbols in the above image represents following Custom Types respectively.
 
-1. Yellow “Circle” – PointFollow
-2. Orange “Star” - Pixel
-3. Pink “Pentagon” - Percent
-4. OrangeRed “Diamond” – ChartCoordinates
+1. OrangeRed  “Circle” – PointFollow
+2. Green “Triangle” - Pixel
+3. Blue “Pentagon” - Percent
+4. Yellow “InvertedTriangle” – ChartCoordinates
 
 A sample demonstrating all the custom point types is available in our installation at the following location:
 
-..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Chart.Windows\Samples\2.0\Chart Series\Chart Custom Points
+..\My Documents\Windows\Version Number\chart\Chart Series\Chart Custom Points
 
 ### Custom Point in Multiple Axes
 
