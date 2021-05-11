@@ -140,17 +140,9 @@ Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
         /// <summary>
         /// Gets or sets the current misspelled word.
         /// </summary>
-        public string CurrentWord
-        {
-            get
-            {
-                return textBox.Text;
-            }
-            set
-            {
-                textBox.Text = value;
-            }
-        }
+        
+	public string CurrentWord { get; set; }
+		
         /// <summary>
         /// Gets or sets the Text to be spell checked by the <see cref="SpellCheckerAdv"/>
         /// </summary>
