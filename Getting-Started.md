@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Creating simple application with SpellCheckerAdv
 
@@ -140,17 +140,9 @@ Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
         /// <summary>
         /// Gets or sets the current misspelled word.
         /// </summary>
-        public string CurrentWord
-        {
-            get
-            {
-                return textBox.Text;
-            }
-            set
-            {
-                textBox.Text = value;
-            }
-        }
+        
+	public string CurrentWord { get; set; }
+		
         /// <summary>
         /// Gets or sets the Text to be spell checked by the <see cref="SpellCheckerAdv"/>
         /// </summary>
