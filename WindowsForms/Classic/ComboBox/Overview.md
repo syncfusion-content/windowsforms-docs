@@ -23,10 +23,10 @@ Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its d
 
 ComboBoxAdv is an advanced ComboBox control that contains the following features.
 
-* You can set 3D [border styles](/windowsforms/ComboBoxAdv/ComboBoxAdv-appearancehtml#border-styles) and flat styles for ComboBoxAdv control.
-* You can set [images](https://help.syncfusion.com/windowsforms/comboboxadv/comboboxadv-appearance#image-settings) for ComboBoxAdv control items.
+* You can set 3D [border styles](https://help.syncfusion.com/windowsforms/classic/combobox/comboboxadv-appearance#border-styles) and flat styles for ComboBoxAdv control.
+* You can set [images](https://help.syncfusion.com/windowsforms/classic/combobox/comboboxadv-appearance#image-settings) for ComboBoxAdv control items.
 * [AutoComplete](/windowsforms/autocomplete/overview) functionality can be provided.
-* You can bind the ComboBoxAdv to any external datasource. See [DataBinding.](https://help.syncfusion.com/windowsforms/comboboxadv/advanced-features#data-binding)
+* You can bind the ComboBoxAdv to any external datasource. See [DataBinding.](https://help.syncfusion.com/windowsforms/classic/combobox/advanced-features#data-binding)
 * You can set visual styles to enrich your application.
 
 ## Choose between different combobox controls

@@ -28,6 +28,6 @@ documentation: ug
 
 * **Visual style** - Supports rich set of visual styles to customize the look and feel of MainFrameBarManager.
 
-* **MDI layout** - Supports MDI Layout, Learn more [MDIChildForms](https://help.syncfusion.com/windowsforms/mdichildforms/overview)
+* **MDI layout** - Supports MDI Layout, Learn more [MDIChildForms](https://help.syncfusion.com/windowsforms/menu/mdi-child-forms)
 
 * **ToolTip** - Provides options to set ToolTip for each BarItem.

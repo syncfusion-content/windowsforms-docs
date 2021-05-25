@@ -25,7 +25,7 @@ You can create the Windows Forms application with MonthCalendarAdv control as fo
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually using code](#adding-control-manually-using-code) 
-4. [Configure to allow multiple selection](configurate-to-allow-multiple-selection)
+4. [Configure to allow multiple selection](#configure-to-allow-multiple-selection)
 5. [Selection Date Range](#selection-date-range)
 
 ### Creating the project
