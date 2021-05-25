@@ -7,7 +7,7 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Overview
+# Windows Forms DateTimePicker (SfDateTimeEdit) Overview
 
 The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text or mask format with the support of minimum and maximum values validation, watermark, and globalization. It provides flexible options to display the date-time according to the required format.
 

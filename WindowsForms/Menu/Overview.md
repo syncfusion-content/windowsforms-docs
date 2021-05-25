@@ -7,7 +7,7 @@ control: MainFrameBarManager
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Menu (Menus) Overview
 
 [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows the hierarchal menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) or to perform a specific action when being clicked.
 
