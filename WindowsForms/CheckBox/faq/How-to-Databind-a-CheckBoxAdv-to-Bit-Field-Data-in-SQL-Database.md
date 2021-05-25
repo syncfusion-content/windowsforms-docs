@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Databind a CheckBoxAdv to Bit Field in SQL Database 
 
-The [CheckBoxAdv]([CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html)) [BoolValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_BoolValue) property can be used to data bind to bit values as illustrated below.
+The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) [BoolValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html#Syncfusion_Windows_Forms_Tools_CheckBoxAdv_BoolValue) property can be used to data bind to bit values as illustrated below.
 
 {% tabs %}
 {% highlight c# %}
