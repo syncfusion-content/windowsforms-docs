@@ -24,7 +24,7 @@ Following are the key features of the `SfToolTip` :
 Syncfusion WinForms suite comes up with following different tooltips namely :
 
 * [SfToolTip](https://www.syncfusion.com/products/windows-forms/tooltip)
-* [SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip)
+* [SuperToolTip](https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip)
 
 ### SfToolTip
 
@@ -32,7 +32,7 @@ Syncfusion WinForms suite comes up with following different tooltips namely :
 
 ### SuperToolTip
 
-[SuperToolTip](https://help.syncfusion.com/windowsforms/supertooltip/supertooltip) component is used to display text and image with various customization options. This also allows you to customize the back color, fore color, separator and html text.
+[SuperToolTip](https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip) component is used to display text and image with various customization options. This also allows you to customize the back color, fore color, separator and html text.
 
 ### SfToolTip vs SuperToolTip
 

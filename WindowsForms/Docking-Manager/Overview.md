@@ -26,6 +26,6 @@ The `DockingManager` control implements an architecture that allows panels to be
 * [Theming](https://help.syncfusion.com/windowsforms/dockingmanager/appearance#visual-styles): Supports several built-in themes such as Metro, Office2016, etc.
 * [Custom caption](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#add-custom-buttons-in-caption): Supports to add custom controls in the caption of dock panels.
 * [Customization](https://help.syncfusion.com/windowsforms/dockingmanager/appearance): Supports to customize the appearance of dock, float, auto hide, and tabbed windows.
-* [Design-time](https://help.syncfusion.com/windowsforms/dockingmanager/tabbed-window#tabbed-at-design-time): Supports to drag, drop, and float the windows in design time.
+* [Design-time](https://help.syncfusion.com/windowsforms/docking-manager/tabbed-window#tabbed-at-design-time): Supports to drag, drop, and float the windows in design time.
 * [Localization](https://help.syncfusion.com/windowsforms/dockingmanager/localization): Supports complete localization to any desired language of header and context menus of docking child windows.
 
