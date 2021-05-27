@@ -81,7 +81,7 @@ The [FilterBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data
 * **StringTyped** - Records are filtered without considering the type and it takes FilterValue type as string.
 * **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.
 
-N>When the[DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
+N>When the[DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) is used as a datasource, [IsCaseSensitive](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_IsCaseSensitive) property in FilterPredicate is not applicable, since `DataTable` does not support case sensitive filtering.
 
 ### Clear Filtering
 The Filters applied to the SfDataGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved by using the following methods, 

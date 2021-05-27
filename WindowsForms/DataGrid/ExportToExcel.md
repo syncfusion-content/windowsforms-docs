@@ -236,7 +236,7 @@ workBook.SaveAs(fileStream)
 Refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq) for further reference. 
 
 ### Save Using File Dialog
-After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx). 
+After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}

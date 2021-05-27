@@ -263,7 +263,7 @@ End Class
 ![Windows forms datagrid displays error message while validating the data in cell](DataValidation_images/DataValidation_img3.png)
 
 #### Row Validation
-The error message can be shown in a row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default error message “Row Containing Error” will be displayed as an error message. This can be modified by changing the `RowErrorMessage` in the resx file.
+The error message can be shown in a row header by setting [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?view=net-5.0). By default error message “Row Containing Error” will be displayed as an error message. This can be modified by changing the `RowErrorMessage` in the resx file.
 
 {% tabs %}
 {% highlight c# %}
@@ -333,7 +333,7 @@ N> The `INotifyDataErrorInfo` is available from the .NET framework 4.5.
 The SfDataGrid allows to validate the data using data annotation attributes by setting `SfDataGrid.ValidationMode` or `GridColumn.ValidationMode` property to `InEdit` or `InView`.
 
 #### Numeric Validation
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -381,7 +381,7 @@ End Property
 ![Windows forms datagrid displays validate the numeric value](DataValidation_images/DataValidation_img5.png)
 
 #### String Validation
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
+The string type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [String Length attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0)
 
 {% tabs %}
 {% highlight c# %}

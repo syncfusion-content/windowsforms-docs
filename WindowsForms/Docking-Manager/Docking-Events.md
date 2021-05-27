@@ -1623,7 +1623,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>
@@ -2287,6 +2287,6 @@ End Sub
 
 {% seealso %}
  
-[Context Menu](/windowsforms/dockingmanager/dealing-with-windows#applying-context-menu )
+[Context Menu](https://help.syncfusion.com/windowsforms/docking-manager/dock-window#enabledisable-the-context-menu)
 
 {% endseealso %}

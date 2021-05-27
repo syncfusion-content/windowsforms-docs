@@ -15,7 +15,7 @@ The SfDataGrid provides support to represent the hierarchical data in the form o
 
 ## Generating Master-Details view from IEnumerable
 
-The relation of Master-Details view can be generated for the properties of type [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable(v=vs.110).aspx) in the underlying data object.
+The relation of Master-Details view can be generated for the properties of type [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) in the underlying data object.
 
 Follow the steps to generate the Master-Details view for `IEnumerable`:
 
@@ -26,7 +26,7 @@ Follow the steps to generate the Master-Details view for `IEnumerable`:
 
 ### Create the data source with relations
 
-Create a `OrderInfo` class with `OrderDetails` property of type [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx) to form the relation. The `OrderDetails` property is defined as ObservableCollection<OrderDetails>.
+Create a `OrderInfo` class with `OrderDetails` property of type [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) to form the relation. The `OrderDetails` property is defined as ObservableCollection<OrderDetails>.
 
 {% tabs %}
 {% highlight c# %}

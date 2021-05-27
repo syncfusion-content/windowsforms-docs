@@ -47,6 +47,6 @@ Me.dockingManager1.UnlockHostFormUpdate()
 
 {% seealso %}
 
-[State Persistence](/windowsforms/dockingmanager/state-persistence)
+[State Persistence](https://help.syncfusion.com/windowsforms/docking-manager/serialization)
 
 {% endseealso %}
