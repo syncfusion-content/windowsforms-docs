@@ -21,11 +21,11 @@ Me.sfDataGrid1.DataSource = collection.OrdersListDetails
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared.
-When an item is added/removed in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared.
+When an item is added/removed in [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added/removed in [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0), SfDataGrid will not refresh the UI automatically.
 
 ## Binding to IEnumerable
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
+SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 SfDataGrid control supports to bind the DataTable. SfDataGrid control automatically refresh the UI when binding DataTable as `DataSource` when rows are added, removed or cleared.
@@ -47,13 +47,13 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.DataTableCollectionViewWrapper.html) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
 * [AddNewRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) is not support when filtering is enabled.
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [DataColumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
 
 ![SfDatagrid bounded with data table itemsSource in windowsforms](DataBinding_images/DataBinding_img1.jpeg)
 
 ## Binding to XML Data
-SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://msdn.microsoft.com/en-us/library/system.data.dataset(v=vs.110).aspx) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
+SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
 {% tabs %}
 {% highlight c# %}

@@ -267,7 +267,7 @@ Me.monthCalendarAdv1.HeaderHeight = 30
 
 ## Week numbers
 
-MonthCalendarAdv control can display unique [week numbers](/windowsforms/monthcalendaradv/overview#sections-of-monthcalendaradv-control) for all the weeks in a year. This section discusses the properties which can customize the appearance of the week numbers.
+MonthCalendarAdv control can display unique [week numbers](https://help.syncfusion.com/windowsforms/classic/month-calendar/customizing-sections-of-calendar#week-numbers) for all the weeks in a year. This section discusses the properties which can customize the appearance of the week numbers.
 
 ### Foreground settings
 
@@ -504,7 +504,7 @@ The MonthCalendarAdv control contains the below buttons.
 * Today button and
 * None button.
 
-To know about the placement of these buttons in the control, refer [MonthCalendarAdv](/windowsforms/monthcalendaradv/overview) topic. Left and Right scroll buttons at the top of the control can have custom images. See Scroll Buttons for details.
+To know about the placement of these buttons in the control, refer [MonthCalendarAdv](https://help.syncfusion.com/windowsforms/classic/month-calendar/overview) topic. Left and Right scroll buttons at the top of the control can have custom images. See Scroll Buttons for details.
 
 Today and None buttons are displayed at the bottom of the calendar and they can be customized to set background image and font styles. This section will discuss the properties which controls the appearance and behavior of the MonthCalendarAdv.
 
@@ -553,7 +553,7 @@ monthCalendarAdv1.NoneButton.Visible=False
 
 
 {% seealso %}
-[ButtonAdv](/windowsforms/buttonadv/overview)
+[ButtonAdv](https://help.syncfusion.com/windowsforms/classic/button/overview)
 {% endseealso %}
 
 ## Scroll buttons
