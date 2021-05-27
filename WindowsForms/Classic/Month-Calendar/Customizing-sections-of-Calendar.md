@@ -563,7 +563,7 @@ monthCalendarAdv1.NoneButton.Visible=False
 The default scroll button images can be replaced with custom images using the [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_LeftScrollButtonImage) and [RightScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_RightScrollButtonImage) properties. The properties related to scroll buttons are as follows.
 
 * [LeftScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_LeftScrollButtonImage)
-* [RightScrollButtonImage]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_RightScrollButtonImage)
+* [RightScrollButtonImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_RightScrollButtonImage)
 * [StretchScrollImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_StretchScrollImage)
 * [ScrollButtonSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_ScrollButtonSize)
 
