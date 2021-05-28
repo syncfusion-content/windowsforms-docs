@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive features in Menus | Windows Forms | Syncfusion
-description: Interactive features in MainFrameBarManager
+description: Learn about Interactive features in Syncfusion Windows Forms Menu control, its elements and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
