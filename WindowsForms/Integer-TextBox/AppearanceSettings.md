@@ -37,7 +37,7 @@ Me.integerTextBox1.ReadOnlyBackColor = System.Drawing.Color.LavenderBlush
 
 ![IntegerTextBox read only back color](Overview_images/Overview_img454.png) 
 
-N> The [ReadOnly](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.TextBoxBase.ReadOnly)&rd=true) property must be set to 'True' for the above setting to take effect.
+N> The [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?view=net-5.0) property must be set to 'True' for the above setting to take effect.
 
 The methods associated with the above properties are given below.
 

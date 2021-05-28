@@ -455,7 +455,7 @@ Private Sub SortedColumns_Changed(ByVal sender As Object, ByVal e As Syncfusion.
 {% endtabs %}
 
 ## Custom Sorting
-The custom sorting can be done by creating own custom comparer using the [IComparer](https://msdn.microsoft.com/en-us/library/system.collections.icomparer%28v=vs.110%29.aspx) interface and creating the custom comparer in the [Compare](https://msdn.microsoft.com/en-us/library/system.collections.icomparer.compare(v=vs.110).aspx) method.
+The custom sorting can be done by creating own custom comparer using the [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-5.0) interface and creating the custom comparer in the [Compare](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer.compare?view=net-5.0) method.
 
 The below example shows the `Description` column is sorted and `empty` cells in that column will be placed at bottom. The remaining value cells will be sorted at top. 
 
