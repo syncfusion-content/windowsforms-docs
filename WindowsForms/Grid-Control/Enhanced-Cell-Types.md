@@ -24,7 +24,7 @@ RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PercentTextBox)
 N> For using any Custom Cell type, register that particular cell type to the GridControl by using the above method. The above code shows how to register a `PercentTextBox` custom cell type to a GridControl.
 
 ## ButtonEdit cell type
-Initially register the `ButtonEdit` cell type to the GridControl. For setting a cell to `ButtonEdit` cell type assign the `CellType` property as [CustomCellTypes.ButtonEdit](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html). Convert to string while assigning because the `CellType` is of type [String](https://msdn.microsoft.com/en-us/library/system.string.aspx).
+Initially register the `ButtonEdit` cell type to the GridControl. For setting a cell to `ButtonEdit` cell type assign the `CellType` property as [CustomCellTypes.ButtonEdit](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html). Convert to string while assigning because the `CellType` is of type [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Printing in Windows Forms Grid Control
-The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx). 
+The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ gridPrintDocument.Print()
 ![Printing grid](Printing_images/Printing_img1.jpeg)
 
 ## Print Preview
-The [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printpreviewdialog.aspx) is used to preview the pages before printing the contents of the grid. 
+The [PrintPreviewDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=net-5.0) is used to preview the pages before printing the contents of the grid. 
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ Me.gridControl1.Model.Properties.PrintFrame = True
 {% endtabs %}
 
 ### Changing Orientation 
-The orientation of the printing layout can be changed to landscape by setting [LandScape](https://msdn.microsoft.com/en-us/library/system.drawing.printing.pagesettings.landscape.aspx) property to `true`.
+The orientation of the printing layout can be changed to landscape by setting [LandScape](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.landscape?view=net-5.0) property to `true`.
 {% tabs %}
 {% highlight c# %}
 //Create the Grid as printing document
@@ -576,7 +576,7 @@ End Sub
 {% endtabs %}
 
 ### Print the Selected Range of the Cells 
-To print only the selected range of cells from the grid, set the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
+To print only the selected range of cells from the grid, set the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
@@ -598,10 +598,10 @@ The `PrintRange` enumeration has the following printing options,
 **Selection –**Used to print the selected range of cells<br/>
 **SomePages –**Used to print particular range of pages.<br/>
 
-N> By default the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
+N> By default the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
 
 ### Printing Needed Pages alone
-The needed pages in the grid can only be printed by setting the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) property value as `SomePages`.
+The needed pages in the grid can only be printed by setting the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) property value as `SomePages`.
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
