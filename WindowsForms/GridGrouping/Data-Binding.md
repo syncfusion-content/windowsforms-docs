@@ -8,30 +8,30 @@ documentation: ug
 ---
 
 # Data Binding in Windows Forms GridGrouping control
-To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx), [DataSets](https://msdn.microsoft.com/en-in/library/system.data.dataset.aspx), or any component that implements interface [IList](https://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx), [IBindingList](https://msdn.microsoft.com/en-us/library/ms132679.aspx), [ITypedList](https://msdn.microsoft.com/en-us/library/system.componentmodel.itypedlist.aspx), or [IListSource](https://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
+To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0), [DataSets](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0), or any component that implements interface [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0), [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindinglist-1?view=net-5.0), [ITypedList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0), or [IListSource](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ilistsource?view=net-5.0). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
 
 ## Data binding using ADO.NET
-ADO.NET is an object-oriented set of libraries which is used to interact with different types of data sources and databases. These libraries are called[DataProviders](https://msdn.microsoft.com/en-us/library/a6cd7c08.aspx) and they allow a common way to interact with specific data sources or protocols. 
+ADO.NET is an object-oriented set of libraries which is used to interact with different types of data sources and databases. These libraries are called[DataProviders](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) and they allow a common way to interact with specific data sources or protocols. 
 
 The widely used data providers are,
 
-[Ole Db Data Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/ms709836.aspx)- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
-[SQL Data Provider](https://msdn.microsoft.com/en-in/library/system.data.sqlclient.aspx)- For interacting with Microsoft SQL Server.
+[Ole Db Data Provider](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms709836(v=vs.85))- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
+[SQL Data Provider](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-5.0)- For interacting with Microsoft SQL Server.
 
 ### ADO.Net Objects and its usages
-ADO.NET objects are used by ADO data model to support database interaction. These objects must be created to supply data-aware control like grid with database data. Data-aware controls possess two data binding properties,[DataSource](https://msdn.microsoft.com/en-in/library/system.windows.forms.bindingsource.datasource.aspx) and [DataMember](https://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.datamember.aspx). Any data source can be bound to the control by assigning it to `DataSource` and `DataMember` properties.
+ADO.NET objects are used by ADO data model to support database interaction. These objects must be created to supply data-aware control like grid with database data. Data-aware controls possess two data binding properties,[DataSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.bindingsource.datasource?view=net-5.0) and [DataMember](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.bindingsource.datamember?view=net-5.0). Any data source can be bound to the control by assigning it to `DataSource` and `DataMember` properties.
 
 #### Connection Object
-It is used for connection to database and managing transactions against database. Database location and access method will be specified through this connection object. The connection object should be a type of [OleDBConnection](https://msdn.microsoft.com/en-us/library/system.data.oledb.oledbconnection.aspx) in case of OLE DB data sources or should be a [SqlConnection](https://msdn.microsoft.com/en-in/library/system.data.sqlclient.sqlconnection.aspx) object for data sources provided by MS SQL Server.
+It is used for connection to database and managing transactions against database. Database location and access method will be specified through this connection object. The connection object should be a type of [OleDBConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbconnection?view=dotnet-plat-ext-5.0) in case of OLE DB data sources or should be a [SqlConnection](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection?view=dotnet-plat-ext-5.0) object for data sources provided by MS SQL Server.
 
 #### DataAdapter Object
-Data adapter acts like a bridge between dataset and data source. It is used to retrieve data from database and populate tables within a dataset. It uses connection object to connect database in order to fill dataset and update changes back to database. There are two adapter components supplied: [OleDBDataAdapter](https://msdn.microsoft.com/en-us/library/system.data.oledb.oledbdataadapter.aspx) and [SqlDataAdapter](https://msdn.microsoft.com/en-in/library/system.data.sqlclient.sqldataadapter.aspx). The former accesses data sources exposed using OLE DB and the latter is designed to work with data sources provided by MS SQL Server version 7.0 or later.
+Data adapter acts like a bridge between dataset and data source. It is used to retrieve data from database and populate tables within a dataset. It uses connection object to connect database in order to fill dataset and update changes back to database. There are two adapter components supplied: [OleDBDataAdapter](https://docs.microsoft.com/en-us/dotnet/api/system.data.oledb.oledbdataadapter?view=dotnet-plat-ext-5.0) and [SqlDataAdapter](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldataadapter?view=dotnet-plat-ext-5.0). The former accesses data sources exposed using OLE DB and the latter is designed to work with data sources provided by MS SQL Server version 7.0 or later.
 
 #### DataSet
 Dataset acts like a memory resident cache to hold data. It represents a complete set of data including tables that organize data and relationships between tables. Dataset is designed to help manage data in memory and to support disconnected operations on data. It can be populated by calling `Fill` method of the `DataAdapter`.
 
 #### Command Object
-Commands contain information that is submitted to database, and are represented by provider-specific classes such as [SQLCommand](https://msdn.microsoft.com/en-in/library/system.data.sqlclient.sqlcommand.aspx). A command can be a stored procedure call, an UPDATE statement, or a statement that returns results.
+Commands contain information that is submitted to database, and are represented by provider-specific classes such as [SQLCommand](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommand?view=dotnet-plat-ext-5.0). A command can be a stored procedure call, an UPDATE statement, or a statement that returns results.
 
 #### DataReader Object
 This is a suitable object when the user want to only get the stream of data for reading. The data returned from data reader is a fast forward-only stream of data. This means that, it can only pull data from the stream in a sequential manner. This is good for speed, but while manipulating the data, then [DataSet](#_DataSet "") is a better object to work with.
@@ -45,7 +45,7 @@ The following binding methods are available to bind the grid to a database,
 ## Binding to XML Data
 GridGroupingControl can be bound to data from XML files. This can be achieved by using the `DataSet` object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the grid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
-The following are the some of the important methods provided by dataset that are used to manipulate XML data. In this, the [XmlSchema](https://msdn.microsoft.com/en-us/library/system.xml.schema.xmlschema.aspx) represents the type of data stored in XML file.
+The following are the some of the important methods provided by dataset that are used to manipulate XML data. In this, the [XmlSchema](https://docs.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschema?view=net-5.0) represents the type of data stored in XML file.
 
 **ReadXml**- Reads XML Schema and data into dataset using the specified XML file.
 **ReadXmlSchema**- Reads XML Schema from the specified file into dataset.
@@ -78,7 +78,7 @@ gridGroupingControl1.DataMember = XmlData.Tables(0)
 {% endtabs %}
 
 ## Binding to Custom Collections
-Custom Collections provide a way to store arbitrary objects in a structured fashion that can be bound to GridGroupingControl. All the data binding is based on a set of interfaces that defines different capabilities of objects and collections within the context of accessing and navigating through data. These interfaces set up a two-way communication between bound grid and objects collection used by the same grid. Those collections may be custom business objects collection or may be the one provided by .NET Framework itself like [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
+Custom Collections provide a way to store arbitrary objects in a structured fashion that can be bound to GridGroupingControl. All the data binding is based on a set of interfaces that defines different capabilities of objects and collections within the context of accessing and navigating through data. These interfaces set up a two-way communication between bound grid and objects collection used by the same grid. Those collections may be custom business objects collection or may be the one provided by .NET Framework itself like [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?view=net-5.0).
 
 Data binding interfaces will allows the user to create collections of custom objects to present those collections through the grid or navigate through the objects to view them through the same grid and interact with them. Some of these interfaces are `IList`, `ITypedList`, and `IBindingList`.
 
@@ -95,7 +95,7 @@ In this case, it is not necessary to have any records for the rows to be created
 ### IBindingList Interface
 IBindingList interface is the most important data-binding interface that provides rich data binding support. Implementing this interface lets the user to control changes to the list, sorting and searching the list. One important benefit is support for providing change notifications to the collection subscribing to this interface.
 
-IBindingList interface overcomes shortcomings of other interfaces by declaring [ListChanged](https://msdn.microsoft.com/en-us/library/ms132742.aspx) event. Data sources referencing this interface will hook onto this event and so will be aware of items that are added or removed from the list. This makes bound grid update itself automatically.
+IBindingList interface overcomes shortcomings of other interfaces by declaring [ListChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindinglist-1.listchanged?view=net-5.0) event. Data sources referencing this interface will hook onto this event and so will be aware of items that are added or removed from the list. This makes bound grid update itself automatically.
 
 The chapters in this section will demonstrate how to create such collections by implementing collection interfaces and how to bind grouping grid to these collections.
 
@@ -212,7 +212,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-2.Create an instance of [ArrayList](https://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx) and add a list of Data type objects into it. This represents collection.
+2.Create an instance of [ArrayList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-5.0) and add a list of Data type objects into it. This represents collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -928,7 +928,7 @@ The Grid will be loaded with the data looks like the following screenshot,
 *&lt;Installed_Location&gt;\Syncfusion\EssentialStudio[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Data Sources\Generic Collection Demo*
 
 ### Dynamic Object Binding
-The grid can be bounded to the [DynamicObject](https://msdn.microsoft.com/en-in/library/system.dynamic.dynamicobject.aspx) by enabling the [IsDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_IsDynamicData) property. It will prepare the grid for the dynamic data source. This feature is only available for the .NET Framework 4.0 and above.
+The grid can be bounded to the [DynamicObject](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject?view=net-5.0) by enabling the [IsDynamicData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_IsDynamicData) property. It will prepare the grid for the dynamic data source. This feature is only available for the .NET Framework 4.0 and above.
 
 The following steps are used to have the dynamic object binding for the GridGroupingControl.
 
