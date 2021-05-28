@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to use a pushbutton in a cell and catch the user clicking it
+title: Cell Types in GridControl | WinForms | Syncfusion
+description: This section describes how to use a pushbutton in a cell and catch the user clicking it in WindowsForms platform.
 platform: windowsforms
 control: Grid
 documentation: ug

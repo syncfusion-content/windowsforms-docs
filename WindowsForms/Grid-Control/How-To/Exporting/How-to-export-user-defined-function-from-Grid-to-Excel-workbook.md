@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in GridControl
-description: how to export user-defined function from grid to excel workbook
+title: Exporting in GridControl | WinForms | Syncfusion
+description: This section describes how to export user-defined function from grid to excel workbook in WindowsForms platform.
 platform: windowsforms
 control: Grid
 documentation: ug
