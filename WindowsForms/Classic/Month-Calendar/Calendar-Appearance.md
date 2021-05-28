@@ -673,5 +673,5 @@ Me. monthCalendarAdv1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2
 
 ![Office2016White theme](CalendarDateTime_images/Overview_img228.jpeg)
 
-N> Visual styles of the Today and None button can be overridden by [MonthCalendarAdv.TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_TodayButton) and [MonthCalendarAdv.NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_NoneButton) respectively. See [Scroll Buttons](/windowsforms/monthcalendaradv/customizing-sections-of-calendar#scroll-buttons).
+N> Visual styles of the Today and None button can be overridden by [MonthCalendarAdv.TodayButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_TodayButton) and [MonthCalendarAdv.NoneButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html#Syncfusion_Windows_Forms_Tools_MonthCalendarAdv_NoneButton) respectively. See [Scroll Buttons](https://help.syncfusion.com/windowsforms/classic/month-calendar/customizing-sections-of-calendar#scroll-buttons).
 

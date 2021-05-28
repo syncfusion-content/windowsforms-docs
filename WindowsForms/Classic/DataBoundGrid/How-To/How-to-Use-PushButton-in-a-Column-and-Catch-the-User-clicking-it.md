@@ -13,7 +13,7 @@ This page explains How to Use PushButton in a Column and Catch the User Clicking
 
 ## How to Use PushButton in a Column and Catch the User Clicking it
 
-Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either [GridDataBoundGrid.GridBoundColumns](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format) or [GridDataBoundGrid.Binder.InternalColumn](/windowsforms/databoundgrid/gridboundcolumns-and-controlling-the-column-format#using-the-griddataboundgridbinder-class) depending upon whether you have explicitly added the GridBoundColumns or not.
+Set the [CellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableCellStyleInfo_CellType) property in column style to "PushButton" and handle grids CellButtonClicked event. Use Description property of the column style to specify the text that is displayed on the button. To access a column's style, use either [GridDataBoundGrid.GridBoundColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDataBoundGrid.html#Syncfusion_Windows_Forms_Grid_GridDataBoundGrid_GridBoundColumns) or [GridDataBoundGrid.Binder.InternalColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDataBoundGrid.html#Syncfusion_Windows_Forms_Grid_GridDataBoundGrid_Binder) depending upon whether you have explicitly added the GridBoundColumns or not.
 
 {% tabs %}
 {% highlight c# %}
