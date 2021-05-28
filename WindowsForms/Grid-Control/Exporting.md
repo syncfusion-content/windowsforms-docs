@@ -780,7 +780,7 @@ csvConverter.SelectedExport(Me.gridControl1.Model, "Sample.csv")
 {% endtabs %}
 
 ## HTML Exporting
-The GridControl don’t have built-in support for HTML exporting. The HTML exporting can be done by structuring the [StringBuilder](https://msdn.microsoft.com/en-us/library/system.text.stringbuilder(v=vs.110).aspx) and form the HTML Tag coding. 
+The GridControl don’t have built-in support for HTML exporting. The HTML exporting can be done by structuring the [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-5.0) and form the HTML Tag coding. 
 
 The following steps are used to convert the GridControl content to HTML Tags,
 

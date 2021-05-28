@@ -369,7 +369,7 @@ fileStream.Close()
 {% endtabs %}
 
 ### Save using File Dialog
-After exporting to PDF, save the exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
+After exporting to PDF, save the exported PDF file by opening [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}

@@ -71,7 +71,7 @@ Me.gridGroupingControl1.TableModel.CutPaste.CopyTextToClipboard(rangeList)
 {% endtabs %}
 
 ### Copy the Records of a Given Group
-The records of the given group can be copied to the clipboard by using the [Clipboard.SetText](https://msdn.microsoft.com/en-us/library/system.windows.forms.clipboard.settext.aspx) method. It will paste the given text to the clipboard data. The following code snippet is used to copy the current group of the GridGroupingControl to the clipboard.
+The records of the given group can be copied to the clipboard by using the [Clipboard.SetText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.clipboard.settext?view=net-5.0) method. It will paste the given text to the clipboard data. The following code snippet is used to copy the current group of the GridGroupingControl to the clipboard.
 
 {% tabs %}
 {% highlight c# %}

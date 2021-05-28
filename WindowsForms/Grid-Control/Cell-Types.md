@@ -226,7 +226,7 @@ There are two ways to assign data source to a Combobox
 * Using Choice List
 * Using DataSource
 
-The Combobox created using [ChoiceList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ChoiceList) shows that the items are been created by [StringCollection](https://msdn.microsoft.com/en-us/library/system.collections.specialized.stringcollection.aspx). The values can be customized in `StringCollection` and can be assigned to the Combobox.
+The Combobox created using [ChoiceList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ChoiceList) shows that the items are been created by [StringCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.stringcollection?view=net-5.0). The values can be customized in `StringCollection` and can be assigned to the Combobox.
 
 {% tabs %}
 {% highlight c# %}
@@ -918,7 +918,7 @@ maskStyleInfo2.CellValue = "10232015"
 ![Cell-Types_img24a](Cell-Types_images/Cell-Types_img24a.png)
 
 ## MonthCalendar cell type
-To display the calendar in a Grid cell make use of the `MonthCalendar` cell type. It will automatically display the Month calendar in the drop down grid while clicking on it. The cell value given for this cell has to be in [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime.aspx) format.
+To display the calendar in a Grid cell make use of the `MonthCalendar` cell type. It will automatically display the Month calendar in the drop down grid while clicking on it. The cell value given for this cell has to be in [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime?view=net-5.0) format.
 
 {% tabs %}
 {% highlight c# %}

@@ -355,7 +355,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-2.Create another class (`VirtualList`) by implementing[IList](https://msdn.microsoft.com/en-in/library/system.collections.ilist.aspx) and [ITypedList](https://msdn.microsoft.com/en-in/library/system.componentmodel.itypedlist.aspx) interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
+2.Create another class (`VirtualList`) by implementing[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) and [ITypedList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0) interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
 
 {% tabs %}
 {% highlight c# %}
@@ -2325,9 +2325,9 @@ The following is the list of the options used.
 After enabling the options required, click the `LoadGrid` button. This will then check for the options requested and apply those options before painting the grid. After loading, it also displays a log to print various performance measures like time taken to paint the grid, physical memory usage, etc. The log will continue to display these performance measure at every instant the grid options are changed.
 
 ## IList Grouping Performance
-The [IList](https://msdn.microsoft.com/en-in/library/system.collections.ilist.aspx) bound to GridGroupingControl has been implemented with an optimization process for grouping columns to improve performance. Grouping a column that has [IList](https://msdn.microsoft.com/en-in/library/system.collections.ilist.aspx) bound reduces the time taken to refresh the control after grouping. The grouping performance will improve with huge data loaded
+The [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) bound to GridGroupingControl has been implemented with an optimization process for grouping columns to improve performance. Grouping a column that has [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) bound reduces the time taken to refresh the control after grouping. The grouping performance will improve with huge data loaded
 
-Set [OptimizeIListGroupingPerformance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngineBase.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngineBase_OptimizeIListGroupingPerformance) to true to enable grouping optimization over the [IList](https://msdn.microsoft.com/en-in/library/system.collections.ilist.aspx) data source. The following code illustrates how to enable grouping optimization.
+Set [OptimizeIListGroupingPerformance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngineBase.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngineBase_OptimizeIListGroupingPerformance) to true to enable grouping optimization over the [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source. The following code illustrates how to enable grouping optimization.
 
 ### Enable Real Time Updates
 The `OptimizeIListGroupingPerformance` method has to be called to enable real time updates with data source from GridGroupingControl.

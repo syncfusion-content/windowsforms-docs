@@ -375,7 +375,7 @@ End Sub
 
 This event is fired on changing the configuration of the EditControl. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -420,7 +420,7 @@ This section explains the following collapse events.
 
 This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CollapseAll) function is called.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -471,7 +471,7 @@ End Sub
 
 This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CollapseAll) function is called.
 
-The event handler receives an argument of type [CancelEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.110).aspx). The following CancelEventArgs member provides specific information of this event.
+The event handler receives an argument of type [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0). The following CancelEventArgs member provides specific information of this event.
 
 <table>
 <tr>
@@ -480,7 +480,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 Specifies a value indicating whether the event should be canceled or not.</td></tr>
 </table>
 
@@ -742,7 +742,7 @@ These events are discussed in the Context Prompt topic.
 
 This event is raised when the current cursor position is changed.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -779,7 +779,7 @@ This section discusses the expand events as follows.
 
 This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ExpandAll) function is called.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -832,7 +832,7 @@ End Sub
 
 This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ExpandAll) function is called.
 
-The event handler receives an argument of type [CancelEventArgs](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs(v=vs.110).aspx). The following CancelableEventArgs member provides specific information of this event.
+The event handler receives an argument of type [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0). The following CancelableEventArgs member provides specific information of this event.
 
 <table>
 <tr>
@@ -841,7 +841,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 Specifies a value indicating whether the event should be canceled or not.</td></tr>
 </table>
 
@@ -1117,7 +1117,7 @@ End Sub
 
 This event is fired when the value of the InsertMode property changes. The InsertMode property specifies the insert mode state.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?redirectedfrom=MSDN&view=net-5.0).
 
 {% tabs %}
 
@@ -1170,7 +1170,7 @@ End Sub
 
 This event occurs when the current parser language is changed.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1665,7 +1665,7 @@ This event is discussed in the Printing topic.
 
 This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReadOnly) property is changed. The ReadOnly property specifies whether the EditControl is in the read-only mode or not.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1834,7 +1834,7 @@ This section discusses the following events that are generated when horizontal a
 
 This event is raised when user scrolls the window horizontally.
 
-The event handler receives an argument of type [ScrollEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs(v=vs.110).aspx). The following ScrollEventArgs members provide specific information of this event.
+The event handler receives an argument of type [ScrollEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs?view=net-5.0). The following ScrollEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1843,19 +1843,19 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[NewValue](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.newvalue(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[NewValue](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.newvalue?view=net-5.0)' | markdownify }}</td><td>
 Specifies the new System.Windows.Forms.ScrollBar.Value for the scrollbar.</td></tr>
 <tr>
 <td>
-{{ '[OldValue](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.oldvalue(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[OldValue](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.oldvalue?view=net-5.0)' | markdownify }}</td><td>
 Specifies the old System.Windows.Forms.ScrollBar.Value for the scrollbar.</td></tr>
 <tr>
 <td>
-{{ '[ScrollOrientation](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.scrollorientation(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[ScrollOrientation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.scrollorientation?view=net-5.0)' | markdownify }}</td><td>
 Gets the scrollbar orientation that raised the scroll event.</td></tr>
 <tr>
 <td>
-{{ '[Type](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.type(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Type](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.type?view=net-5.0)' | markdownify }}</td><td>
 Gets the type of scroll event that occurred.</td></tr>
 </table>
 
@@ -1890,7 +1890,7 @@ End Sub
 
 This event is raised when the user scrolls the window vertically.
 
-The event handler receives an argument of type [ScrollEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs(v=vs.110).aspx). The following ScrollEventArgs members provide specific information of this event.
+The event handler receives an argument of type [ScrollEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs?view=net-5.0). The following ScrollEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -1899,19 +1899,19 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[NewValue](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.newvalue(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[NewValue](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.newvalue?view=net-5.0)' | markdownify }}</td><td>
 Specifies the new System.Windows.Forms.ScrollBar.Value for the scrollbar.</td></tr>
 <tr>
 <td>
-{{ '[OldValue](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.oldvalue(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[OldValue](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.oldvalue?view=net-5.0)' | markdownify }}</td><td>
 Specifies the old System.Windows.Forms.ScrollBar.Value for the scrollbar.</td></tr>
 <tr>
 <td>
-{{ '[ScrollOrientation](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.scrollorientation(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[ScrollOrientation](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.scrollorientation?view=net-5.0)' | markdownify }}</td><td>
 Gets the scrollbar orientation that raised the scroll event.</td></tr>
 <tr>
 <td>
-{{ '[Type](https://msdn.microsoft.com/en-us/library/system.windows.forms.scrolleventargs.type(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Type](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.scrolleventargs.type?view=net-5.0)' | markdownify }}</td><td>
 Gets the type of scroll event that occurred.</td></tr>
 </table>
 
@@ -1946,7 +1946,7 @@ End Sub
 
 This event is raised when the text selection has been changed.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1979,7 +1979,7 @@ End Sub
 
 This event is fired when the value of the [SingleLineMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SingleLineMode) property is changed. The `SingleLineMode` property specifies whether the single line mode is enabled or not.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -2039,7 +2039,7 @@ This section discusses the following text events:
 
 This event is fired when the text in the EditControl is changed.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -2457,7 +2457,7 @@ This event is discussed in the User Margin topic.
 
 This event occurs when the user margin has to be painted. The user margin in EditControl can be enabled or disabled by using the [ShowUserMargin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowUserMargin) property. Its default value is `false`. To show the user margin, turn on its value to `true`.
 
-The event handler receives an argument of type [PaintEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.forms.painteventargs(v=vs.110).aspx). The following PaintEventArgs members provide specific information of this event.
+The event handler receives an argument of type [PaintEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=net-5.0). The following PaintEventArgs members provide specific information of this event.
 
 <table>
 <tr>
@@ -2466,11 +2466,11 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ClipRectangle](https://msdn.microsoft.com/en-us/library/system.windows.forms.painteventargs.cliprectangle(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[ClipRectangle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs.cliprectangle?view=net-5.0)' | markdownify }}</td><td>
 Gets the rectangle area to paint.</td></tr>
 <tr>
 <td>
-{{ '[Graphics](https://msdn.microsoft.com/en-us/library/system.windows.forms.painteventargs.graphics(v=vs.110).aspx)' | markdownify }}</td><td>
+{{ '[Graphics](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs.graphics?view=net-5.0)' | markdownify }}</td><td>
 Gets the graphics used to paint.</td></tr>
 </table>
 
@@ -2504,7 +2504,7 @@ End Sub
 
 This event is fired when the value of the [WordWrapMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrapMode) property is changed. The WordWrapMode property specifies the mode of word wrapping.
 
-The event handler receives an argument of type [EventArgs](https://msdn.microsoft.com/en-us/library/system.eventargs(v=vs.110).aspx).
+The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 

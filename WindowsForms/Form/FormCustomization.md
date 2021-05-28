@@ -15,7 +15,7 @@ A form icon designates the picture that represents the form in the taskbar as we
 
 ### Changing form icon
 
-The form icon displayed on the title bar and task bar can be changed by using the [Icon](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.icon(v=vs.110).aspx) property.
+The form icon displayed on the title bar and task bar can be changed by using the [Icon](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.icon?view=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
