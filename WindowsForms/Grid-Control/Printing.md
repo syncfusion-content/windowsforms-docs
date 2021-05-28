@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Printing in Windows Forms Grid Control
-The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printdialog.aspx). 
+The GridControl has in-built support for printing. To print the contents of the grid, convert the grid into the printable document using [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) and pass it to the [PrintDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -33,7 +33,7 @@ gridPrintDocument.Print()
 ![Printing grid](Printing_images/Printing_img1.jpeg)
 
 ## Print Preview
-The [PrintPreviewDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.printpreviewdialog.aspx) is used to preview the pages before printing the contents of the grid. 
+The [PrintPreviewDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=net-5.0) is used to preview the pages before printing the contents of the grid. 
 
 {% tabs %}
 {% highlight c# %}
