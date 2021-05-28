@@ -53,6 +53,6 @@ Me.mainFrameBarManager1.DetachedCommandBars.Add(Me.commandBar1);
 
 {% seealso %}
 
-[Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-child-controls)
+[Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-controls)
 
 {% endseealso %}

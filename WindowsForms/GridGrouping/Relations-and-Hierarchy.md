@@ -10,7 +10,7 @@ documentation: ug
 # Relations and Hierarchy in Windows Forms GridGrouping
 GridGroupingControl can display nested tables in a hierarchy using master-detail configuration. In a hierarchical view, all the tables in the data source are inter-connected via relations. Generally a relation between any two tables can take any of the following forms: `1:1`, `1:n`, `n:1` or `n:n`.
 
-A GridGroupingControl can automatically detect [DataRelations](https://msdn.microsoft.com/en-us/library/ay82azad.aspx) in a [dataset](https://msdn.microsoft.com/en-in/library/system.data.dataset.aspx) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
+A GridGroupingControl can automatically detect [DataRelations](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations) in a [dataset](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) for display. By default, `Relation` is created for each relation found in dataset. Hence, the data relations defined in a dataset are sufficient enough for the grid to form relations. No additional code is required in this case.
 
 With nested tables, each record in the parent table will have an associated set of records in the child table. Every record in the relation is provided with a `+/-` button called `RecordPlusMinus` that can be expanded (as well as collapsed) to bring the underlying records in the child table into view. The number of tables that can be nested with relations using a grid is `unlimited`.
 

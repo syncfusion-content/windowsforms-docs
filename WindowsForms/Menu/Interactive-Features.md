@@ -69,6 +69,6 @@ By default, the context menu appears while right-clicking of the desired tool ba
 
 {% seealso %}
 
-[Associate popup menu with menu control](https://help.syncfusion.com/windowsforms/popupmenu/faq/how-to-associate-popup-menu-with-barmanager)
+[Associate popup menu with menu control](https://help.syncfusion.com/windowsforms/popupmenu/how-to-associate-popup-menu-with-bar-manager)
 
 {% endseealso %}
