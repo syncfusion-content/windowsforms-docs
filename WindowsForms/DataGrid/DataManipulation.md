@@ -665,7 +665,7 @@ Me.sfDataGrid.DeleteSelectedRecords()
 ### Customizing the Delete Operations
 
 #### Conditionally Deleting Records
-[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
+[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.RecordDeleting += dataGrid_RecordDeleting;
