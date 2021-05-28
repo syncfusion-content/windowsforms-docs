@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Localization
+# Localization in DataGrid (SfDataGrid)
 Localization is the process of translating the application resources into different language for the specific cultures. The SfDataGrid can be localized by adding [resource](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)) file. Application culture can be changed by setting [CurrentUICulture ](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0)before `InitializeComponent` method.
 
 ## Localize at Sample Level

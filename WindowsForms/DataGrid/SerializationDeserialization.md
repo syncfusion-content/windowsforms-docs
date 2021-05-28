@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization and Deserialization
-description: This section explains about the Serialization and Deserialization in SfDataGrid.
+title: Serialization and Deserialization | WinForms | Syncfusion
+description: This section explains about the Serialization and Deserialization in the WindowsForms DataGrid (SfDataGrid).
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
