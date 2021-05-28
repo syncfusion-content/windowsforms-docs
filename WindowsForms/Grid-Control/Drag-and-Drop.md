@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Drag and Drop in Windows Forms Grid Control
 
-GridControl supports drag and drop functionality, which allows to drag and drop values from range of cells within a grid or multiple grids. It is required to set the [AllowDrop](https://msdn.microsoft.com/en-in/library/system.windows.uielement.allowdrop.aspx#) property to `true` for achieving this support. 
+GridControl supports drag and drop functionality, which allows to drag and drop values from range of cells within a grid or multiple grids. It is required to set the [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop?view=net-5.0) property to `true` for achieving this support. 
 
 {% tabs %}
 {% highlight c# %}
@@ -157,12 +157,12 @@ gridControl2.Model.Options.DragDropDropTargetFlags = GridDragDropFlags.Text Or G
 
 It is also possible to move or copy the contents from one grid to another by using events. There are three events related to Drag and Drop.
 
-* [DragOver](https://msdn.microsoft.com/en-in/library/system.windows.forms.control.dragover.aspx#) 
-* [DragEnter](https://msdn.microsoft.com/en-us/library/system.windows.forms.control.dragenter.aspx#)
-* [DragDrop](https://msdn.microsoft.com/en-us/library/system.windows.forms.control.dragdrop.aspx#) 
-* [DragLeave](https://msdn.microsoft.com/en-us/library/system.windows.forms.control.dragleave.aspx#)
+* [DragOver](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragover?view=net-5.0) 
+* [DragEnter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragenter?view=net-5.0)
+* [DragDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragdrop?view=net-5.0) 
+* [DragLeave](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragleave?view=net-5.0)
 
-To change the effects of the contents while dropping, [Effect](https://msdn.microsoft.com/en-us/library/system.windows.forms.drageventargs.effect.aspx#) property can be used. 
+To change the effects of the contents while dropping, [Effect](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.drageventargs.effect?view=net-5.0) property can be used. 
 
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +190,7 @@ End Sub
 
 ### Preventing drag and drop
 
-The contents alone can be prevented while dropping by setting the [Effect](https://msdn.microsoft.com/en-us/library/system.windows.forms.drageventargs.effect.aspx#) property as `None`.
+The contents alone can be prevented while dropping by setting the [Effect](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.drageventargs.effect?view=net-5.0) property as `None`.
 
 {% tabs %}
 {% highlight c# %}

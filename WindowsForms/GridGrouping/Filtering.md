@@ -339,7 +339,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer [http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx](http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx#) for detailed information.
+N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer [https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator](https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator) for detailed information.
 
 ### Removing record filters
 Record filter can be removed for a particular or range of columns by specifying the desired column name in the [RecordFilters.Remove](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_Remove_Syncfusion_Grouping_RecordFilterDescriptor_) method or by specifying the particular column index in the [RecordFilters.RemoveAt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html#Syncfusion_Grouping_RecordFilterDescriptorCollection_RemoveAt_System_Int32_) method.

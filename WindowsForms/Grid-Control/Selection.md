@@ -31,7 +31,7 @@ Me.gridControl1.AllowSelection = GridSelectionFlags.Any
 
 ## Record Selection
 
-The [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ListBoxSelectionMode) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://msdn.microsoft.com/en-us/library/system.windows.forms.selectionmode(v=vs.100).aspx#) enumeration has provide the options to set the type of selection mode. 
+The [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ListBoxSelectionMode) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.selectionmode?view=net-5.0) enumeration has provide the options to set the type of selection mode. 
 
 {% tabs %}
 {% highlight c# %}

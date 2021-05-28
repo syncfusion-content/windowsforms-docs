@@ -9,11 +9,11 @@ documentation: ug
 
 # MDI Customization in Windows Forms Form (SfForm)
 
-Multiple Document Interface applications allows displaying multiple documents (or forms) in an application at the same time. MDI parent is a form that contains MDI child windows which are the sub-windows. A form can be changed as MDI parent by enabling the [IsMDIContainer](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.ismdicontainer(v=vs.110).aspx) property.
+Multiple Document Interface applications allows displaying multiple documents (or forms) in an application at the same time. MDI parent is a form that contains MDI child windows which are the sub-windows. A form can be changed as MDI parent by enabling the [IsMDIContainer](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=net-5.0) property.
 
 ## Adding MDI child form
 
-MDI child forms can be added to the MDI parent by making it as parent for the child by using the [MDIParent](https://msdn.microsoft.com/en-us/library/system.windows.forms.form.mdiparent(v=vs.110).aspx) property.
+MDI child forms can be added to the MDI parent by making it as parent for the child by using the [MDIParent](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.mdiparent?view=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,7 +99,7 @@ child2.BackColor = ColorTranslator.FromHtml("#EDF3F3")
 
 ## Getting active MDI child
 
-The currently active MDI child form can be retrieved by using the [ActiveMDIChild](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.ActiveMdiChild)&rd=true) property.
+The currently active MDI child form can be retrieved by using the [ActiveMDIChild](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.activemdichild?view=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ Dim activeChild As SfForm = TryCast(Me.ActiveMdiChild, SfForm)
 
 ## Notifying the key events for MDI child
 
-By default, the MDI child form will not receive its key events when any control inside the form has focus. This can be changed by enabling the [KeyPreview](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.KeyPreview)&rd=true) property of the child form.
+By default, the MDI child form will not receive its key events when any control inside the form has focus. This can be changed by enabling the [KeyPreview](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.keypreview?view=net-5.0) property of the child form.
 
 When this property is set to `true`, the form will receive `KeyPress`, `KeyDown` and `KeyUp` events. Once the form event handlers have completed the keystroke processing, the keystroke is then assigned to the control with focus.
 

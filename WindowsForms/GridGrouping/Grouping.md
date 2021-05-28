@@ -536,7 +536,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.AddRange(New Syncfusion.G
 ![Grouping_img16](Grouping_images/Grouping_img16.jpeg)
 
 ## Custom Grouping
-Custom Grouping can be done in GridGroupingControl by using an own custom categorizer object to compare the records and then group them according to the condition given by the user. Create a custom comparer and categorizer using the [IComparer](https://msdn.microsoft.com/en-us/library/system.collections.icomparer%28v=vs.110%29.aspx) and [IGroupByColumnCategorizer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.IGroupByColumnCategorizer.html) interfaces and then assign them to the `SortColumnDescriptor`.
+Custom Grouping can be done in GridGroupingControl by using an own custom categorizer object to compare the records and then group them according to the condition given by the user. Create a custom comparer and categorizer using the [IComparer](https://docs.microsoft.com/en-us/dotnet/api/system.collections.icomparer?view=net-5.0) and [IGroupByColumnCategorizer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.IGroupByColumnCategorizer.html) interfaces and then assign them to the `SortColumnDescriptor`.
 
 When a column is grouped, it is sorted first hence the comparer will compare the objects and allow the control to sort for one of the columns. After values been sorted, the custom categorizer will determine the adjacent records in the sorted column to the same group. 
 
@@ -1115,7 +1115,7 @@ When grouping is applied, the grid will sort the records based on the values of 
 
 ![Grouping_img23](Grouping_images/Grouping_img23.jpeg)
 
-The sorting behavior of the columns when columns are grouped in `GridGroupDropArea` can be changed programmatically by adding the column in the `GroupedColumns` collection with [ListSortDirection](https://msdn.microsoft.com/en-us/library/system.componentmodel.listsortdirection%28v=vs.110%29.aspx).
+The sorting behavior of the columns when columns are grouped in `GridGroupDropArea` can be changed programmatically by adding the column in the `GroupedColumns` collection with [ListSortDirection](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.listsortdirection?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}

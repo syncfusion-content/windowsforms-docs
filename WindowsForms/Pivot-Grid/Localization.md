@@ -370,7 +370,7 @@ Rather than using hard coding strings in main application, it is easier to desig
 
 ### Requirements
 
-A resource file is required to create a satellite assembly. It can be created by using the tool provided by Microsoft Visual Studio.NET namely [resource editor](https://msdn.microsoft.com/en-us/library/feh4ww6k.aspx), which provides a graphic interface to construct resource files containing bitmaps, icons, and strings.
+A resource file is required to create a satellite assembly. It can be created by using the tool provided by Microsoft Visual Studio.NET namely [resource editor](https://docs.microsoft.com/en-us/cpp/windows/resource-editors?view=msvc-160), which provides a graphic interface to construct resource files containing bitmaps, icons, and strings.
 
 The resource file can also be created by using an empty text file (SR.txt). Then, enter the following command in the Visual Studio command prompt for creating resource file from the text file.
 
