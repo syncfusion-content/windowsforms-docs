@@ -341,7 +341,7 @@ Exported preview row in excel,
 ![Exporting_img8](Exporting_images/Exporting_img8.png)
 
 ### Exporting Sparkline Column
-The Sparkline column or cells in the GridGroupingControl can be exported to Excel by defining the spark line groups in the excel sheet. It can be achieved by using the [ISparklineGroups](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.excel.isparklinegroups.aspx) interface.
+The Sparkline column or cells in the GridGroupingControl can be exported to Excel by defining the spark line groups in the excel sheet. It can be achieved by using the [ISparklineGroups](https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel.isparklinegroups?view=excel-pia) interface.
 
 It caches the `SparklineGroup` that needs to be added to the Excel sheet. The spark lines will be appear once the user select the data range and the location range. Data range and reference range for the Sparkline in Excel can be determined and assigned in [QueryImportExportCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterBase.html) event.
 
@@ -1171,7 +1171,7 @@ End Sub
 
 #### QueryExportNestedTable
 This event will be triggered before exporting a nested table. By this event, you can get the `ExportingOptions`, `NestedTable` and `ParentRecord`.
-If you want to hide the empty child table, you can use the [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property the [QueryExportNestedTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) event of `GridGroupingExcelConverterControl` by checking the **Records** count.
+If you want to hide the empty child table, you can use the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property the [QueryExportNestedTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GroupingGridExcelConverter.GridGroupingExcelConverterControl.html) event of `GridGroupingExcelConverterControl` by checking the **Records** count.
 
 {% tabs %}
 {% highlight c# %}
@@ -1589,7 +1589,7 @@ csvConverter.GridToCSV(Me.gridGroupingControl1.TableModel, "Sample.csv")
 {% endtabs %}
 
 ### Exporting the Range of Cells
-The range of cells can be exported from the grid to excel as the [CSV](https://msdn.microsoft.com/en-us/library/azure/dn906002.aspx) format by using the [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_ExportRange_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method.
+The range of cells can be exported from the grid to excel as the [CSV](https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/convert-to-csv) format by using the [ExportRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_ExportRange_Syncfusion_Windows_Forms_Grid_GridRangeInfo_Syncfusion_Windows_Forms_Grid_GridModel_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}

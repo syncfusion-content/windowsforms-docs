@@ -9,7 +9,7 @@ documentation: ug
 
 # How to use a PushButton in a cell and catch the user clicking it
 
-Set the [CellType](/windowsforms/grid/feature-summary#cell-types) property in the cell style to "PushButton" and handle grids CellButtonClicked event. Use the Description property of the cell style to specify the text that is to be displayed on the button.
+Set the [CellType](https://help.syncfusion.com/windowsforms/grid-control/cell-types) property in the cell style to "PushButton" and handle grids CellButtonClicked event. Use the Description property of the cell style to specify the text that is to be displayed on the button.
 
 {% tabs %}
 {% highlight c# %}
