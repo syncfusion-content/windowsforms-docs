@@ -183,7 +183,7 @@ Me.gridControl1.Model.Properties.PrintFrame = True
 {% endtabs %}
 
 ### Changing Orientation 
-The orientation of the printing layout can be changed to landscape by setting [LandScape](https://msdn.microsoft.com/en-us/library/system.drawing.printing.pagesettings.landscape.aspx) property to `true`.
+The orientation of the printing layout can be changed to landscape by setting [LandScape](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.landscape?view=net-5.0) property to `true`.
 {% tabs %}
 {% highlight c# %}
 //Create the Grid as printing document
@@ -576,7 +576,7 @@ End Sub
 {% endtabs %}
 
 ### Print the Selected Range of the Cells 
-To print only the selected range of cells from the grid, set the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
+To print only the selected range of cells from the grid, set the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the GridControl. 
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
@@ -598,10 +598,10 @@ The `PrintRange` enumeration has the following printing options,
 **Selection –**Used to print the selected range of cells<br/>
 **SomePages –**Used to print particular range of pages.<br/>
 
-N> By default the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
+N> By default the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
 
 ### Printing Needed Pages alone
-The needed pages in the grid can only be printed by setting the [PrintRange](https://msdn.microsoft.com/en-us/library/system.drawing.printing.printrange.aspx) property value as `SomePages`.
+The needed pages in the grid can only be printed by setting the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) property value as `SomePages`.
 {% tabs %}
 {% highlight c# %}
 GridPrintDocument gridPrintDocument = new GridPrintDocument(this.gridControl1, true);
