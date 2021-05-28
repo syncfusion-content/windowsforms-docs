@@ -15,7 +15,7 @@ This section explains how to create a new Windows Forms project in Visual Studio
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonadv) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details about on how to install nuget packages in Windows Forms application. 
+[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about on how to install nuget packages in Windows Forms application. 
 
 ## Adding a ButtonAdv control through designer
 
