@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: search-functionality | WindowsForms | Syncfusion
 description: search functionality
 platform: WindowsForms

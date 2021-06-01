@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: DesignTime-Features | WindowsForms | Syncfusion
 description: designTime features
 platform: WindowsForms

@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Headers and Labels in Windows Forms TreeMap control | Syncfusion
 description: Learn about Headers and Labels support in Syncfusion Windows Forms TreeMap control and more details.
 platform: windowsforms

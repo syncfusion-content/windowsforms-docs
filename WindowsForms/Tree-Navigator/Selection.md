@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Selection in Windows Forms Tree Navigator control | Syncfusion
 description: Learn about Selection support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms

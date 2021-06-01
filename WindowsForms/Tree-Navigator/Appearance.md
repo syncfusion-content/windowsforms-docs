@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Appearance in Windows Forms Tree Navigator control | Syncfusion
 description: Learn about Appearance support in Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms

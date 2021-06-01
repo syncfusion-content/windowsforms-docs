@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Features | Windows Forms | Syncfusion
 description: features
 platform: windowsforms

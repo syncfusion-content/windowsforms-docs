@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: About Windows Forms Tree Navigator control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms

@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: How-to-prevent-a-node-from-being-selected | WindowsForms | Syncfusion
 description: how to prevent a node from being selected
 platform: WindowsForms
