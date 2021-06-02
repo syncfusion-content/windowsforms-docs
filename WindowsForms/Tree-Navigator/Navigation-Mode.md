@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Navigation Mode in Windows Forms Tree Navigator control | Syncfusion
 description: Learn about Navigation Mode support in Syncfusion Windows Forms Tree Navigator control and more details.
 platform: WindowsForms
