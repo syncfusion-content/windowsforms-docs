@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: features
+description: Learn here all about features of Syncfusion Essential Studio WindowsForms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# Features
+# Features of WindowsForms TreeMap control
 
 ## WeightValuePath
 
@@ -679,7 +679,7 @@ The following screen shot illustrates a squarified layout.
 
 
 
-![](Features_images/Features_img4.png)
+![Features_images4](Features_images/Features_img4.png)
 
 
 
@@ -741,7 +741,7 @@ The following screen shot illustrates a slice-and-dice layout.
 
 
 
-![](Features_images/Features_img5.png)
+![Features_images5](Features_images/Features_img5.png)
 
 
 
@@ -800,7 +800,7 @@ The following screen shot shows a Slice-and-dice treemap in horizontal layout.
 <table>
 <tr>
 <td>
-{{ ' ![](Features_images/Features_img6.png)' | markdownify }}
+{{ ' ![Features_images6](Features_images/Features_img6.png)' | markdownify }}
 
 {{ '_Figure_' | markdownify }}{{ '_3_' | markdownify }}{{ '_: Slice-and-dice treemap in horizontal layout_' | markdownify }}</td></tr>
 <tr>
@@ -862,7 +862,7 @@ The following screen shot shows a Slice-and-dice treemap in vertical layout.
 
 
 
-![](Features_images/Features_img7.png)
+![Features_images7](Features_images/Features_img7.png)
 
 
 
@@ -959,7 +959,7 @@ uniColorMapping.Color = Color.MediumSlateBlue;
 
 
 
-![](Features_images/Features_img8.png)
+![Features_images8](Features_images/Features_img8.png)
 
 
 
@@ -1053,7 +1053,7 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 
 
-![](Features_images/Features_img9.png)
+![Features_images9](Features_images/Features_img9.png)
 
 
 
@@ -1145,7 +1145,7 @@ public partial class Form1 : Form
 
 
 
-![](Features_images/Features_img10.png)
+![Features_images10](Features_images/Features_img10.png)
 
 
 
@@ -1233,7 +1233,7 @@ public partial class Form1 : Form
 
 
 
-![](Features_images/Features_img11.png)
+![Features_images11](Features_images/Features_img11.png)
 
 
 
@@ -1327,7 +1327,7 @@ RangeBrushColorMapping rangeBrushColorMapping = new RangeBrushColorMapping();
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Features_images12](Features_images/Features_img12.png)
 
 
 
@@ -1399,7 +1399,7 @@ public partial class Form1 : Form
 
 
 
-![](Features_images/Features_img13.png)
+![Features_images13](Features_images/Features_img13.png)
 
 
 
@@ -1469,7 +1469,7 @@ public partial class Form1 : Form
 {% endhighlight %}
 
 
-![](Features_images/Features_img14.png)
+![Features_images14](Features_images/Features_img14.png)
 
 
 
@@ -1575,7 +1575,7 @@ The following screen shot shows a tree map with a tool tip.
 
 
 
-![](Features_images/Features_img15.png)
+![Features_images15](Features_images/Features_img15.png)
 
 
 

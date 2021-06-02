@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Align the XPTaskBarItems in XPTaskBar | WindowsForms | Syncfusion
-description: Frequently Asked Questions
+description: Align the XPTaskBarItems in Syncfusion Essential Studio WPF XPTaskBar control, its elements, and more.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug

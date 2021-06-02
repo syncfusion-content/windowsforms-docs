@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: features
+description: Learn here all about ColorMapping of Syncfusion Essential Studio WindowsForms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# ColorMapping
+# ColorMapping in WindowsForms TreeMap control
 
 The ColorMapping is categorized into four different types such as,
 
@@ -92,7 +92,7 @@ uniColorMapping.Color = Color.MediumSlateBlue;
 
 
 
-![](Features_images/Features_img8.png)
+![Features_images8](Features_images/Features_img8.png)
 
 
 Leaf Nodes colored by using UniColorMapping
@@ -186,7 +186,7 @@ rangeBrushColorMapping.Brushes.Add(new RangeBrush() { Color = System.Drawing.Col
 
 
 
-![](Features_images/Features_img9.png)
+![Features_images9](Features_images/Features_img9.png)
 
 Leaf nodes colored by using RangeBrushColorMapping
 {:.caption}
@@ -277,7 +277,7 @@ public partial class Form1 : Form
 
 
 
-![](Features_images/Features_img10.png)
+![Features_images10](Features_images/Features_img10.png)
 
 Leaf nodes colored by using DesaturationColorMapping
 {:.caption}
@@ -364,7 +364,7 @@ public partial class Form1 : Form
 
 
 
-![](Features_images/Features_img11.png)
+![Features_images11](Features_images/Features_img11.png)
 
 
 Leaf nodes colored by using PaletteColorMapping
