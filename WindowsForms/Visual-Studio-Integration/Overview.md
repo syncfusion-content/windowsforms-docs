@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Overview
+# Syncfusion Windows Forms Extensions
 
 The Syncfusion WinForms Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio. The Syncfusion WinForms Extensions supports Microsoft Visual Studio 2013 or higher.
 
