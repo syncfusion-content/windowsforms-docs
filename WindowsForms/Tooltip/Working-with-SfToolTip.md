@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Working with SfToolTip in Windows Forms Tooltip control | Syncfusion
 description: Learn about Working with SfToolTip support in Syncfusion Windows Forms Tooltip (SfToolTip) control and more details.
 platform: windowsforms

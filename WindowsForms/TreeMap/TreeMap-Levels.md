@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Features of TreeMap control in Windows Forms | Syncfusion
 description: Learn about ToolTip support in Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms

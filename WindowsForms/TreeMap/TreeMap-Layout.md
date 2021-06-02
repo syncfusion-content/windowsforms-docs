@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: TreeMap Layout in Windows Forms TreeMap control | Syncfusion
 description: Learn about TreeMap Layout support in Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
