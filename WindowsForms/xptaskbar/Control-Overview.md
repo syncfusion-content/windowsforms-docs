@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Control-Overview | WindowsForms | Syncfusion
-description: Learn here about control overview of Syncfusion WindowsForms XPTaskBar control, its elements, and more.
+description: Learn here about control overview of Syncfusion Windows Forms XPTaskBar control, its elements, and more.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Control overview in WindowsForms XPTaskBar
+# Control overview in Windows Forms XPTaskBar
 
 The various sections of XPTaskBar and their descriptions are given below.
 

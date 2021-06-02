@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Custom paint the XPTaskBar background in WindowsForms | Syncfusion
-description: How to custom paint the XPTaskBar background to have a gradient look and feel in Syncfusion WindowsForms control, its elements, and more.
+description: How to custom paint the XPTaskBar background to have a gradient look and feel in Syncfusion Windows Forms control, its elements, and more.
 platform: WindowsForms
 control: XPTaskBar
 documentation: ug
 ---
-# Custom paint the XPTaskBar background in WindowsForms
+# Custom paint the XPTaskBar background in Windows Forms
 
 The XPTaskBar's Paint event can be handled to custom draw the background using the LinearGradientBrush as given below.
 

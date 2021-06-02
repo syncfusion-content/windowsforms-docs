@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Features | Windows Forms | Syncfusion
-description: Learn here all about features of Syncfusion Essential Studio WindowsForms TreeMap control, its elements, and more.
+description: Learn here all about features of Syncfusion Essential Studio Windows Forms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
 ---
 
-# Features of WindowsForms TreeMap control
+# Features of Windows Forms TreeMap control
 
 ## WeightValuePath
 
