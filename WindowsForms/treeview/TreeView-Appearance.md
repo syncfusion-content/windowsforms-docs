@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: TreeView-Appearance | WindowsForms | Syncfusion
 description: treeview appearance
 platform: WindowsForms
