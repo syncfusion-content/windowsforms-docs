@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Find and Replace in Windows Forms TreeView control | Syncfusion
 description: Learn about Find and Replace support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
