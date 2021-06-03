@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: How-to-Add--Remove-a-Node| WindowsForms | Syncfusion
 description: This section explains about how to add / remove a node to the treeviewadv in Syncfusion Windows Forms TreeViewAdv control.
 platform: WindowsForms
