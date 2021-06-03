@@ -1,5 +1,5 @@
 ---
-layout: post
+ layout: post
 title: Getting Started with Windows Forms TreeView control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
