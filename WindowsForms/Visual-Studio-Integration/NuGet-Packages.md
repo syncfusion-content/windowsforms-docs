@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Windows Forms NuGet Packages | Syncfusion
-description: NuGet Packages
+description: Learn here all about NuGet Packages of Syncfusion Essential Studio Windows Forms, its elements, and more.
 platform: windowsforms
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages of Syncfusion Essential Studio Windows Forms
 
 [NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Windows Forms NuGet packages without installing the Essential Studio or Windows Forms platform installation to development with the Syncfusion Windows Forms controls. 
 
