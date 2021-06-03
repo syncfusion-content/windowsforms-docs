@@ -343,8 +343,7 @@ In the above image we can show check box for India and china node.
 
 ### OptionButton
 
-The Option Buttons can be displayed for the nodes in the [TreeViewAdv](
-https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowOptionButtons) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowOptionButton) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
+The Option Buttons can be displayed for the nodes in the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) using the [TreeViewAdv.ShowOptionButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ShowOptionButtons) property. We can also show or hide the Option Button for individual nodes using [TreeNodeAdv.ShowOptionButton](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdv_ShowOptionButton) property in the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
 {% tabs %}
 {% highlight c# %}
