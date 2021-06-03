@@ -301,6 +301,68 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 {% endtabs %}
 
+### Menu Button Customization
+
+Appearance of the Menu button can be customized using the below properties. Menu button customization will be applicable only for Office2019, Office2016 and Office2013 themes.
+
+*  FileMenuBackColor
+*  FileMenuForeColor
+*  FileMenuHoverBackColor
+*  FileMenuHoverForeColor
+
+**Office2019**
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.ThemeStyle.FileMenuBackColor = Color.Red;
+this.ribbonControlAdv1.ThemeStyle.FileMenuForeColor = Color.Yellow;
+this.ribbonControlAdv1.ThemeStyle.FileMenuHoverBackColor = Color.LightGreen;
+this.ribbonControlAdv1.ThemeStyle.FileMenuHoverForeColor = Color.Brown;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WindowsForms Ribbon menu customization 2019](BackStage_Images/WindowsForms-Menu-2019.jpg)
+
+**Office2016**
+
+{% tabs %}
+
+{% highlight c# %}
+
+Office2016ColorTable office2016ColorTable = new Office2016ColorTable();
+office2016ColorTable.FileMenuForeColor = Color.Yellow;
+office2016ColorTable.FileMenuHoverForeColor = Color.Red;
+this.ribbonControlAdv1.Office2016ColorTable.Add(office2016ColorTable);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WindowsForms Ribbon menu customization 2016](BackStage_Images/WindowsForms-Menu-2016.jpg)
+
+**Office2013**
+
+{% tabs %}
+
+{% highlight c# %}
+
+Office2013ColorTable office2013ColorTable = new Office2013ColorTable();
+office2013ColorTable.FileMenuForeColor = Color.Yellow;
+office2013ColorTable.FileMenuHoverForeColor = Color.Red;
+this.ribbonControlAdv1.Office2013ColorTable = office2013ColorTable;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WindowsForms Ribbon menu customization 2013](BackStage_Images/WindowsForms-Menu-2013.jpg)
+
+N>  For both the Office2016 and Office2013 themes, the `FileMenuBackColor` and `FileMenuHoverBackColor` properties were not applicable.
+
 ### Menu Button Color
 
 To change the menu button color, use the ribbon property `MenuColor`.
