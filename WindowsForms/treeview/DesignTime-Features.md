@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: DesignTime-Features | WindowsForms | Syncfusion
 description: Learn about designTime features support in Syncfusion Windows Forms TreeView control and more details.
 platform: WindowsForms
@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# DesignTime Features in WindowsForms TreeView(SfTreeView)
+# DesignTime Features in Windows Forms TreeView(SfTreeView)
 
 TreeView provides the shortcuts to access various properties of the control.
 
