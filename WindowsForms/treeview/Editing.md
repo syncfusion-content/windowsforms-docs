@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Editing in Windows Forms TreeView control | Syncfusion
 description: Learn about Editing support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
