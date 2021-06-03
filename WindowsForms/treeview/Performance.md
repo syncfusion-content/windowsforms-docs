@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: Performance in Windows Forms TreeView control | Syncfusion
 description: Learn about Performance support in Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms

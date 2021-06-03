@@ -1,5 +1,5 @@
 ---
- layout: post
+layout: post
 title: RunTime-Features | WindowsForms | Syncfusion
 description: runTime features
 platform: WindowsForms
