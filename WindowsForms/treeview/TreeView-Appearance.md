@@ -464,7 +464,7 @@ Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![2D Border in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
+![Two Dimension Border in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
 
 
 ## Spacing
