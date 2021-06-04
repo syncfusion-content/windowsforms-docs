@@ -7,7 +7,7 @@ control: GridLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms GridLayout
 
 This section explains how to add the `GridLayout` control in a Windows Forms application and overview its basic functionalities.
 

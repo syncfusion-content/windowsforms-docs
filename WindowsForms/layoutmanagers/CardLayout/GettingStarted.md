@@ -7,7 +7,7 @@ control: CardLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms CardLayout
 
 This section explains how to add the `CardLayout` control in a Windows Forms application and overview its basic functionalities.
 

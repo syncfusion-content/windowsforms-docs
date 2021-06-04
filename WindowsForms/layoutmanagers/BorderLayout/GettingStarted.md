@@ -7,7 +7,7 @@ control: BorderLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms BorderLayout
 
 This section explains how to add the `BorderLayout` control in a Windows Forms application and overview its basic functionalities.
 

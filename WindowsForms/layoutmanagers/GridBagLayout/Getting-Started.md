@@ -7,7 +7,7 @@ control: GridBagLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms GridBagLayout
 
 This section explains how to add the `GridBagLayout` control in a Windows Forms application and overview its basic functionalities.
 
