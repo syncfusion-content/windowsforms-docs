@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to cancel the AutoLayout | WindowsForms | Syncfusion
-description: how to cancel the autolayout of the banner panel controls
+description: How to cancel the autolayout of Syncfusion Essential Studio WindowsForms Wizard Control, its elements, and more.
 platform: WindowsForms
 control: Wizard
 documentation: ug

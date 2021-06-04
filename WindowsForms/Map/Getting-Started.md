@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting-Started | Windows Forms | Syncfusion
-description: getting started
+description: Learn here all about getting started with Syncfusion Windows Forms Maps (SfMaps) control, its elements, and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Windows Forms Maps
 
 ## Assembly deployment
 
@@ -15,7 +15,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Key concepts
 
@@ -25,7 +25,7 @@ Map contains a set of elements, which includes shapes, bubbles, annotations, and
 
 Options such as zooming, panning, and map selection enable the effective interaction on map elements.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Windows Forms Maps Options](Getting-Started_images/Getting-Started_img1.png)
 
 ## Maps structure
 
@@ -33,7 +33,7 @@ Map control has the following structures:
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Windows Foms Maps Structure](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -87,7 +87,7 @@ Example :  ShapeFilename.shp
 
 Shape file added should set the properties as specified in the below image.
 
-![](Getting-Started_images/ShapeFile.png)
+![Windows Forms Maps Uri Property](Getting-Started_images/ShapeFile.png)
 
 The following code snippet explains adding shape files in maps control.
 
@@ -154,6 +154,6 @@ In the above snippet “world1” is a shapefile name.
 
 Screenshot:
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Windows Forms Maps Adding Shape Files](Getting-Started_images/Getting-Started_img3.png)
 
 

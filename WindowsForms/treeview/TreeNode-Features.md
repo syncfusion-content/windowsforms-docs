@@ -1,13 +1,13 @@
 ---
 layout: post
 title: TreeNode-Features | WindowsForms | Syncfusion
-description: treeNode features
+description: Learn here about TreeNode features of Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# TreeNode Features
+# TreeNode Features in WinForms TreeView (SfTreeView)
 
 This section discusses the following topics.
 
@@ -15,7 +15,7 @@ This section discusses the following topics.
 
 The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
 
-![](Concepts-and--Features_images/Concepts-and--Features_img1.jpeg)
+![TreeNode primitive collection editor](Concepts-and--Features_images/Concepts-and--Features_img1.jpeg)
 
 The types of primitives available are LabelPrimitive, LeftImagePrimitive, RightImagePrimitive, CheckBoxPrimitive, OptionButtonPrimitive and CustomControlPrimitive.
 
@@ -106,7 +106,7 @@ It is the space provided between the RightImage of the node and node.</td></tr>
 </table>
 
 
-![](Concepts-and--Features_images/Concepts-and--Features_img2.jpeg)
+![Adding Images to Node](Concepts-and--Features_images/Concepts-and--Features_img2.jpeg)
 
 Setting State Images
 
@@ -191,7 +191,7 @@ Me.stateImageList.ImageSize = New System.Drawing.Size(15, 15)
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img4.jpeg)
+![Customizing Image Size](Concepts-and--Features_images/Concepts-and--Features_img4.jpeg)
 
 {% seealso %}
 
@@ -255,9 +255,9 @@ ExpandImageIndex</td><td>
 It is the image index for expand button.</td></tr>
 </table>
 
-![](Concepts-and--Features_images/Concepts-and--Features_img5.jpeg)
+![Image Node Expand and Collapse](Concepts-and--Features_images/Concepts-and--Features_img5.jpeg)
 
-![](Concepts-and--Features_images/Concepts-and--Features_img6.jpeg)
+![Image Node Expand and Collapse](Concepts-and--Features_images/Concepts-and--Features_img6.jpeg)
 
 N> You can customize the background of the plus minus control. Click here to know more about this.
 
@@ -387,7 +387,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img9.jpeg)
+![Image Overlay in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img9.jpeg)
 
 A sample demonstrating this feature is available in the below sample installation location.
 
@@ -447,7 +447,7 @@ End Sub
 
 Given below is a screen shot of this.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img10.jpeg)
+![Show Plus Sign Expand in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img10.jpeg)
 
 
 
@@ -550,7 +550,7 @@ TreeNodeAdv8.Checked = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img12.jpeg)
+![Adding CheckBox to Nodes in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img12.jpeg)
 
 
 ### Adding Option Buttons
@@ -602,7 +602,7 @@ treeNodeAdv8.OptionButtonColor = System.Drawing.Color.MediumAquamarine
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img13.jpeg)
+![Adding Option Buttons in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img13.jpeg)
 
 
 Disabling a node's Checkbox or Option button
@@ -622,7 +622,7 @@ EnabledButtons</td><td>
 Indicates if the buttons that are displayed, are enabled for the particular node.</td></tr>
 </table>
 
-![](Concepts-and--Features_images/Concepts-and--Features_img14.jpeg)
+![Disable Node Checkbox in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img14.jpeg)
 
 ## Custom Controls
 
@@ -630,11 +630,11 @@ Tree Nodes can hold controls using this Custom Controls feature. This widens the
 
 Any custom control can be dragged and dropped to the form and selected using TreeNodeAdv.CustomControls property
 
-![](Concepts-and--Features_images/Concepts-and--Features_img15.jpeg)
+![Adding Custom Control in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img15.jpeg)
 
 We can also add functionality based on the changes made to the CustomControls.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img16.jpeg)
+![Add Functionality in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img16.jpeg)
 
 A sample which demonstrates Custom Controls feature is available in the below sample installation location. This sample illustrates adding functionality based on the changes to the custom controls.
 

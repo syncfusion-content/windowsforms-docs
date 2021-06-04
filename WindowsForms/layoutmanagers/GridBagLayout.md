@@ -7,7 +7,7 @@ control: Layout Managers Package
 documentation: ug
 ---
 
-# GridBagLayout
+# GridBagLayout in Windows Forms Layout Manager
 
 `GridBagLayout` is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows can vary and the Child controls may span more than one cell.
 
@@ -36,7 +36,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 
 **Creating simple application with GridBagLayout**
