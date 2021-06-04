@@ -7,7 +7,7 @@ control: .NET Core
 documentation: ug
 ---
 
-# Windows Forms Applications using .NET Core and Syncfusion Windows Forms Controls
+# WinForms Applications using .NET Core and Syncfusion WinForms Controls
 
 Syncfusion Essential Studio for Windows Forms suits .NET core assemblies for building Windows Forms .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion Windows Forms controls.
 
@@ -54,7 +54,7 @@ N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `ne
 
 ### Through NuGet Package
 
-[Click here](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details regarding how to install the NuGet packages in Windows Forms application.  
+[Check here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details regarding how to install the NuGet packages in Windows Forms application.  
 
 ### Example: Adding ButtonAdv control through code
 

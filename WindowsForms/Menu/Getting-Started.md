@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | WindowsForms | Syncfusion
-description: Getting Started
+description: Learn here about getting started with Syncfusion Windows Forms Menus control, its elements and more details.
 platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
 
-# Getting started
+# Windows Forms Menus Getting started
 
 This section provides a quick overview for working with the [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control for Windows Forms.
 
@@ -18,7 +18,7 @@ This section describes how to configure a [MainFrameBarManager](https://help.syn
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#mainframebarmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) in a windows form application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#mainframebarmanager) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) in a windows form application.
 
 ## Creating an application with menu
 
