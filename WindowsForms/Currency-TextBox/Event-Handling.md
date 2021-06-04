@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Event-Handling | CurrencyTextbox | WindowsForms | Syncfusion
-description: event handling
+description: Learn here about event handling with Syncfusion Windows Forms Currency TextBox control, its elements, and more.
 platform: WindowsForms
 control: CurrencyTextbox
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling with Windows Forms Currency TextBox(CurrencyTextbox)
 
 CurrencyTextBox fires events when 3D border style is changed, border color is changed, border sides are changed, decimal value property is changed and when Themes enabled property is changed. Also fires event when the input text is invalid.
 
