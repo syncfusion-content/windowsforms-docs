@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms LayoutManagers control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms LayoutManagers control and more details.
+title: Getting Started with Windows Forms GridBagLayout control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GridBagLayout control and more details.
 platform: windowsforms
 control: GridBagLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms GridBagLayout
 
 This section explains how to add the `GridBagLayout` control in a Windows Forms application and overview its basic functionalities.
 

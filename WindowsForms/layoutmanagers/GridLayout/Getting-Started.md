@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms LayoutManagers control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms LayoutManagers control and more details.
+title: Getting Started with Windows Forms GridLayout control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms GridLayout control and more details.
 platform: windowsforms
 control: GridLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms GridLayout
 
 This section explains how to add the `GridLayout` control in a Windows Forms application and overview its basic functionalities.
 
