@@ -18,7 +18,7 @@ This section describes how to add [CommandBar](https://help.syncfusion.com/cr/wi
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages) in windows form application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#commandbarcontroller) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. Please find more details regarding [installation of nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) in windows form application.
 
 ## Creating application with command bar
 
@@ -219,4 +219,4 @@ Me.commandBar1.Controls.Add(panel1)
 
 ## Adding menu items
 
-Menu items could be added to the command bar only via the [`XpToolBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. Refer [this topic](https://help.syncfusion.com/windowsforms/hosting-controls#integrating-xp-toolbar)
+Menu items could be added to the command bar only via the [`XpToolBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.XPToolBar.html) control. Refer [this topic](https://help.syncfusion.com/windowsforms/commandbar/hosting-controls#integrating-xp-toolbar)
