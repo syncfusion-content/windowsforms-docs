@@ -6,7 +6,7 @@ platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# FlowLayout in WindowsForms Layout Manager
+# FlowLayout in Windows Forms Layout Manager
 
 `FlowLayout` is a Layout Manager which allows us to arrange the Child components horizontally or vertically in a specific order, based on the settings. FlowLayout is one of the most commonly used Layout Managers. Deriving from the LayoutManager class, the FlowLayout component was created to support simple horizontal and vertical flow and complex constraint-based FlowLayouts.
 

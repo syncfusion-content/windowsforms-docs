@@ -7,7 +7,7 @@ control: Layout Managers Package
 documentation: ug
 ---
 
-# GridBagLayout
+# GridBagLayout in Windows Forms Layout Manager
 
 `GridBagLayout` is a Layout Manager which allows us to arrange the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows can vary and the Child controls may span more than one cell.
 
