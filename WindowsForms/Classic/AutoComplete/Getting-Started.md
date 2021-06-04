@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms xptoolbar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
+title: Getting Started with Windows Forms ComboBoxAutoComplete | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control, its elements, and more.
 platform: WindowsForms
 control: ComboBoxAutoComplete
 documentation: ug
