@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms ContextMenuStrip | Syncfusion
+title: Getting Started with Windows Forms CurrencyEdit control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms CurrencyEdit control and more details.
 platform: WindowsForms
 control: CurrencyEdit
