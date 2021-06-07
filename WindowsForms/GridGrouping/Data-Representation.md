@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Representation in Windows Forms GridGrouping control | Syncfusion
-description: Learn about Data Representation support in Syncfusion Windows Forms GridGrouping control, its elements and more.
+description: Learn about Data Representation support in Syncfusion Windows Forms GridGrouping control and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in Windows Forms DataGrid control | Syncfusion
-description: Learn about Data Virtualization support in Syncfusion Windows Forms DataGrid (SfDataGrid) control, its elements, and more.
+description: Learn about Data Virtualization support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
