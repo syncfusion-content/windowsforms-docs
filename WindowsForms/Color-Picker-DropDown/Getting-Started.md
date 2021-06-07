@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Color Picker DropDown | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control, its elements, and more.
 platform: WindowsForms
-control: ColorPickerButton
+control: ColorPickerDropDown
 documentation: ug
 ---
 # Getting Started with Windows Forms Color Picker DropDown
@@ -14,7 +14,7 @@ This section briefly describes how to create a new Windows Forms project in Visu
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#colorpickerbutton) section to get the list of assemblies or NuGet package details which needs to be added as reference to use the control in any application.
 
-[Click here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
+[Refer here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in Windows Forms application.
 
 
 ## Adding the ColorPickerButton control via designer

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms AutoComplete control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms AutoComplete control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms AutoComplete control, its elements, and more.
 platform: WindowsForms
 control: AutoComplete
 documentation: ug
@@ -15,7 +15,7 @@ This section provides a quick overview for working with the [AutoComplete](https
 
 Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autocomplete) section to get the list of assemblies or NuGet package that needs to be added as reference to use the component in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
 
 ## Creating Application with AutoComplete
 

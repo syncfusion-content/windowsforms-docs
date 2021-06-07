@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms xptoolbar control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms xptoolbar (XPToolbar) control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms xptoolbar (XPToolbar) control, its elements, and more.
 platform: WindowsForms
 control: XPToolBar
 documentation: ug
@@ -141,7 +141,7 @@ Me.Controls.Add(Me.panel1)
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#xptoolbar) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
 
-Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages).
+Find more details regarding how to install the NuGet packages in WinForms application in the following link: [Steps to install NuGet packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages).
 
 
 

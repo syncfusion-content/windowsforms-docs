@@ -22,7 +22,7 @@ With the ComboBoxBase, you can plug in any ListControl-derived class as the list
 This version of ComboBoxBase does not support any kind of owner drawing to customize painting. Note however that you could still use a ListControl that supports owner drawing. 
 
 {% seealso %}
-[ComboBoxAdv](/windowsforms/comboboxadv)
+[ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview)
 {% endseealso %}
 
 

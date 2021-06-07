@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spacing between the browsing buttons | WindowsForms | Syncfusion
-description: how to set spacing between the browsing buttons?
+description: How to set spacing between the browsing buttons in Syncfusion Essential Studio WindowsForms Wizard Control, its elements, and more.
 platform: WindowsForms
 control: Wizard
 documentation: ug

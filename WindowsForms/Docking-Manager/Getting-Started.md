@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Docking Manager | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Docking Manager control, its elements, and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Docking Manager control, its elements, and more.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -19,7 +19,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Find more details about how to install the nuget packages in Windows Forms application in the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 **Creating simple application with docking manager**
 

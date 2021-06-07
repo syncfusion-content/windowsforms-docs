@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: installation and deployment
+description: Installation and deployment of Syncfusion Essential Studio WindowsForms TreeMap control, its elements, and more.
 platform: windowsforms
 control: TreeMap
 documentation: ug
@@ -41,7 +41,7 @@ Use the following steps to view the samples:
 
    The Essential Studio Enterprise Edition window will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Installation-and-Deployment_images1](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
    Syncfusion Essential Studio Dashboard
    {:.caption}
@@ -58,14 +58,14 @@ Use the following steps to view the samples:
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
+   ![Installation-and-Deployment_images2](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
    UI Windows Forms Sample Browser
    {:.caption}
 
 3. Click the TreeMap under Data Visualization. The TreeMap samples will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![Installation-and-Deployment_images3](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
    Essential TreeMap WF Samples
    {:.caption}

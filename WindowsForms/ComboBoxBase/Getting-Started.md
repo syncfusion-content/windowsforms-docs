@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms ComboBoxBase control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ComboBoxBase control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms ComboBoxBase control, its elements, and more.
 platform: WindowsForms
 control: ComboBoxBase
 documentation: ug

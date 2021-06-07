@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: About Windows Forms ComboBoxAdv control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv (Classic) control and more details.
 platform: windowsforms
 control: ComboBoxAdv
 documentation: ug

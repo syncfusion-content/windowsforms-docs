@@ -1,13 +1,13 @@
 ---
 layout: post
 title: RunTime-Features | WindowsForms | Syncfusion
-description: runTime features
+description: Learn here about RunTime features of Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# RunTime Features
+# RunTime Features in WinForms TreeView(SfTreeView)
 
 This section will walk you through the following runtime features of TreeViewAdv Control.
 
@@ -134,7 +134,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
  
-![](Concepts-and--Features_images/Concepts-and--Features_img26.jpeg)
+![Edit Nodes in Menu Item WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img26.jpeg)
 
 Editing the nodes using "Edit" Menu Item
 
@@ -257,7 +257,7 @@ Me.treeViewAdv1.ScrollTipFormat = "Position {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img27.jpeg)
+![ScrollTip in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img27.jpeg)
 
 
 ### Scrolling using Mouse
@@ -311,7 +311,7 @@ Specifies if the sizing grip should be drawn at the bottom right corner when bot
 </table>
 
 
-![](Concepts-and--Features_images/Concepts-and--Features_img28.jpeg)
+![Sizing Grip in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img28.jpeg)
 
 
 
@@ -319,7 +319,7 @@ Specifies if the sizing grip should be drawn at the bottom right corner when bot
 
 TreeViewAdv provides support for Office2007Scrollbars with all three color schemes.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img29.jpeg)
+![Office2007 in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img29.jpeg)
 
 Color schemes can be selected using Office2007ScrollBarsColorScheme property.
 
@@ -367,7 +367,7 @@ Enabling the HotTracking property to true and when the mouse hovers over any nod
 * The fore color will change to blue and the text will be underlined with blue color, giving the node label a hyperlink appearance.
 * In the below image the node "France" is given a link approach by setting the HotTracking property to true and by moving the mouse over the node.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img30.jpeg)
+![Hot Tracking in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img30.jpeg)
 
 
 

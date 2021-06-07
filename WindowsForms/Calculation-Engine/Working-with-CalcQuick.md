@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with CalcQuickBase in WinForms Calculation Engine | Syncfusion
-description: Learn about Working with CalcQuickBase support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
+description: Learn about Working with CalcQuickBase support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug
