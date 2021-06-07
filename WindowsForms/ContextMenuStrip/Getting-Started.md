@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started in Windows Forms ContextMenuStrip control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control, its elements and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug

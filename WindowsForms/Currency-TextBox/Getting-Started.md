@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started in Windows Forms Currency TextBox | Syncfusion
-description: This section describes how to add syncfusion currency text box control into a windows forms application.
+description: Learn here about getting started with Syncfusion Windows Forms CurrencyTextBox control, its elements and more.
 platform: WindowsForms
 control: CurrencyTextBox
 documentation: ug

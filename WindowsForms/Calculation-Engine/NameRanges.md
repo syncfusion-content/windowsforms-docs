@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Named Ranges in Windows Forms Calculation Engine control | Syncfusion
-description: Learn about Named Ranges support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
+description: Learn about Named Ranges support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
 platform: windowsforms
 control: Calculate
 documentation: ug

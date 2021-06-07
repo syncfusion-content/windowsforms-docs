@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statistical in Windows Forms Calculation Engine control | Syncfusion
-description: Learn about Statistical support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
+description: Learn about Statistical support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
 platform: windowsforms
 control: Calculate
 documentation: ug

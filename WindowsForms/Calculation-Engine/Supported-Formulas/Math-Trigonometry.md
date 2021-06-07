@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Math Trigonometry in Windows Forms Calculation Engine | Syncfusion
-description: Learn about Math Trigonometry support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
+description: Learn about Math Trigonometry support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
 platform: windowsforms
 control: Calculate
 documentation: ug
