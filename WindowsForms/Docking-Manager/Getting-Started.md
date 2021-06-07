@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Docking Manager | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Docking Manager control, its elements, and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Docking Manager control, its elements, and more.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug

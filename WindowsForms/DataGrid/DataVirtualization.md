@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in WinForms DataGrid control | Syncfusion
-description: Learn about Data Virtualization support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more details.
+title: Data Virtualization in Windows Forms DataGrid control | Syncfusion
+description: Learn about Data Virtualization support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -21,4 +21,4 @@ Me.sfDataGrid1.EnableDataVirtualization = True
 {% endtabs %}
 
 ### Limitations
-1. Data update using [LiveDataUpdateMode](http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
+1. Data update using [LiveDataUpdateMode]("http://172.16.0.145:8093/Syncfusion.DataGrid.WinForms/api/Syncfusion.WinForms.DataGrid.SfDataGrid.html"#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Html Viewer control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Html Viewer (HTMLUI) control, its elements, and more.
 platform: WindowsForms
 control: HTMLUIControl
 documentation: ug
