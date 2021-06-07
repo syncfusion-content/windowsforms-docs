@@ -7,7 +7,7 @@ control: Diagram
 documentation: ug
 ---
 
-# How To Add a Custom Property To Diagram And Display It In the Property Editor
+# Add a Custom Property To Diagram And Display It In the Property Editor
 
 The below given code snippet illustrates how you can add a custom property to Diagram and display it in the Property Editor.
 
