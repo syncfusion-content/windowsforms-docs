@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with CalcEngine in WinForms Calculation Engine | Syncfusion
-description: Learn about Working with CalcEngine support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
+description: Learn about Working with CalcEngine support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug

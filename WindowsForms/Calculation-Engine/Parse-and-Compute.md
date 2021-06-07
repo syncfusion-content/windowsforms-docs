@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parse and Compute in Windows Forms Calculation Engine | Syncfusion
-description: Learn about Parse and Compute support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
+description: Learn about Parse and Compute support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug

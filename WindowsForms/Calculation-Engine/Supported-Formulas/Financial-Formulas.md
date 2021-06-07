@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Financial Formulas in Windows Forms Calculation Engine | Syncfusion
-description: Learn about Financial Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control, its elements, and more.
+description: Learn about Financial Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug
