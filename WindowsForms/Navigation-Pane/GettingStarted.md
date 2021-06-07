@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Navigation Pane | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Navigation Pane (GroupBar) control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Navigation Pane (GroupBar) control, its elements, and more.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
