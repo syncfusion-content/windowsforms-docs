@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Deployment
+# Assembly Deployment in Windows Forms
 
 ## Copy Local
 

@@ -7,7 +7,7 @@ control: ComboDropDown
 documentation: ug
 ---
 
-# Themes And Styles
+# Themes and Styles in Windows Forms ComboBox DropDown (ComboDropDown)
 
 The below given properties enhances the look and feel of the ComboDropDown.
 
