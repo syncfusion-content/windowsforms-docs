@@ -19,7 +19,7 @@ sfListView1.ShowCheckBoxes = True
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img10.png)
+![CheckBoxSelectionMode_images10](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img10.png)
 
 ## Check box selection mode
 The check box provides support to select in the context of state of the check box based on the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) property.                                                                        
@@ -37,7 +37,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.Default
 {% endhighlight %}
 {% endtabs %}         
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img1.png)
+![CheckBoxSelectionMode_images1](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img1.png)
 
 * SelectOnCheck: To select/deselect the items by using the CheckBox alone, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as SelectOnCheck. 
 Navigation, editing, and programmatic selection are not supported in this mode.
@@ -51,7 +51,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img2.png)
+![CheckBoxSelectionMode_images2](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img2.png)
 
 * SynchronizeSelection: To synchronize the selection with IsChecked state, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as SynchronizeSelection. In this mode, you can select an item by checking the check box or select/deselect the item will check/uncheck the corresponding item checkbox.
 
@@ -64,7 +64,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img3.png)
+![CheckBoxSelectionMode_images3](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img3.png)
 
 * CheckOnItemClick: To check or uncheck the item check box state by clicking the item, set the [SfListView.CheckBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckBoxSelectionMode) as CheckOnItemClick.
 `MultiSimple` and `MultiExtended` selection mode were not supported in this mode.
@@ -78,7 +78,7 @@ sfListView1.CheckBoxSelectionMode = CheckBoxSelectionMode.CheckOnItemClick
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img4.png)
+![CheckBoxSelectionMode_images4](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img4.png)
 
 ## TriState mode
 The SfListView allows you to enable or disable the indeterminate state for item check box by using the [SfListView.AllowTriStateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AllowTriStateMode) property. The tristate mode can only be supported in the data bound mode i.e. the [SfListView.CheckedMember](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_CheckedMember) property must have the underlying datasource property in type of `CheckState`.
@@ -145,7 +145,7 @@ sfListView1.CheckedMember = "CheckedState"
 {% endhighlight %}
 {% endtabs %} 
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img5.png)
+![CheckBoxSelectionMode_images5](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img5.png)
 
 ## Checked items
 
@@ -180,7 +180,7 @@ sfListView1.AllowSelectAll = true
 {% endhighlight %}
 {% endtabs %}
   
- ![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img6.png) 
+ ![CheckBoxSelectionMode_images6](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img6.png) 
   
 ## Recursive checking
 The SfListView provides support for recursive checking where the checked state of the group header item and group item are changed recursively based on the state of currently changed item.
@@ -204,7 +204,7 @@ sfListView1.AllowSelectAll = true
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img7.png)
+![CheckBoxSelectionMode_images7](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img7.png)
 
 ## Appearance
 The SfListView allows the item check box customization by using the `SfListView.Style.CheckBoxStyle` property.
@@ -222,7 +222,7 @@ sfListView1.Style.CheckBoxStyle.CheckedTickColor = Color.White
 {% endhighlight %}
 {% endtabs %}
  
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
+![CheckBoxSelectionMode_images8](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
  
 ## Conditional styling
 The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event.
@@ -252,7 +252,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img9.png)
+![CheckBoxSelectionMode_images9](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img9.png)
 
 ## Events 
 
