@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Event-Handling | WindowsForms | Syncfusion
-description: event handling
+description: Learn here about event handling in Syncfusion Essential Studio Windows Forms ComboDropDown control, and more.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling in Windows Forms ComboDropDown
 
 ## Events of ComboDropDown
 
