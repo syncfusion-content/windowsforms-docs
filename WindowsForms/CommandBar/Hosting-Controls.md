@@ -99,6 +99,6 @@ Me.commandBar1.Controls.Add(xpToolbar1)
 
 {% seealso %}
 
-[Adding menu items to XP tool bar](https://help.syncfusion.com/windowsforms/xptoolbar/adding-and-filling-the-xptoolbar)
+[Adding menu items to XP tool bar](https://help.syncfusion.com/windowsforms/xptoolbar/baritem-types)
 
 {% endseealso %}

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ComboDropDown-Text | WindowsForms | Syncfusion
-description: Learn about ComboDropDown Text support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, its elements, and more. 
+description: Learn here all about ComboDropDown Text support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, its elements, and more. 
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# ComboDropDown Text
+# ComboDropDown Text in Windows Forms ComboBox DropDown (ComboDropDown)
 
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 
