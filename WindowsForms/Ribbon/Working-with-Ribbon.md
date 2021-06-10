@@ -184,8 +184,6 @@ private void AboutItem_Click(object sender, EventArgs e)
 
 ![Ribbon ContextMenu Customization](Working_with_Ribbon_Images/ContextMenu-Customization.png)
 
-N>[View sample in GitHub]()
-
 ## Ribbon Items size
 
 *	`Size` property can be used to set the height and width of the item.
