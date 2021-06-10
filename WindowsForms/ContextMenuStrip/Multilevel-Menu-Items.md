@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multilevel Menu Items | Windows Forms | Syncfusion
-description: Add drop down items in the menu item
+title: Multilevel Menu Items in Windows Forms ContextMenuStrip | Syncfusion
+description: Learn here all about multilevel menu items feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Multi-level Menu Items
+# Multi-level Menu Items in Windows Forms ContextMenuStrip
 
 Multi-level menu items refers to adding submenu items or child items to the context menu. The [`DropDownItems`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdownitem.dropdownitems?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDownItem_DropDownItems) property of menu item is used to add child items.
 
