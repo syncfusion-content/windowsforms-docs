@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Event-Handling | WindowsForms | Syncfusion
-description: event handling
+description: Learn here about event handling in Syncfusion Essential Studio Windows Forms ComboDropDown control, and more.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling in Windows Forms ComboDropDown
 
 ## Events of ComboDropDown
 
@@ -135,7 +135,7 @@ End Sub
 4. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 5. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 
 
-   ![](Overview_images/Overview_img291.jpeg) 
+   ![Overview_images291](Overview_images/Overview_img291.jpeg) 
 
    N> We can also suppress the dropdown event from firing by setting SuppressDropDownEvent property to true.
 
@@ -177,5 +177,5 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img293.jpeg) 
+![Overview_images293](Overview_images/Overview_img293.jpeg) 
 

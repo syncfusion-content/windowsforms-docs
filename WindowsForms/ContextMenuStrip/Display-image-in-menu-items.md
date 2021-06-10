@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Image | Windows Forms | Syncfusion
-description: Display Image in the context menu items
+title: Display Image in Menu Items | Windows Forms | Syncfusion
+description: Learn here all about Display image in menu items feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Display image in menu items
+# Windows Forms ContextMenuStrip Display image in menu items
 
 Displaying an image besides each menu item helps users to easily identify the operation through iconic representation and also to improve the visual appearance of the context menu item. Images can be added directly via the [`Image`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.image?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_Image) property of each menu item. The size of the images can be adjusted by using the [`ImageScalingSize`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.imagescalingsize?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ImageScalingSize) property.
 
