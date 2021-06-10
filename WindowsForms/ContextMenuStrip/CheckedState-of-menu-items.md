@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Checked State | Windows Forms | Syncfusion
-description: Indicating whether a check mark appears before to the text of the selected menu item.
+title: Checked State in Windows Forms ContextMenuStrip Control | Syncfusion
+description: Learn here all about checked state feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Checked/unchecked menu items
+# Checked/unchecked menu items in Windows Forms ContextMenuStrip
 
 This support will help users to easily acknowledge the selected menu item by using the check mark. The [`Checked`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checked?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_Checked) property indicates whether a check mark should appear before the text of the menu item or not. The [`CheckState`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.checkstate?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_CheckState) property specifies the exact state - checked or unchecked which needs to be set either statically. On runtime, user need to toggle the state manually through the [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event of the menu item.
 
