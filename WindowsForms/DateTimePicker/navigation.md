@@ -7,7 +7,7 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Navigation
+# Navigation in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 The `SfDateTimeEdit` provides navigation and `Value` changes through the keyboard and mouse interaction in mask mode of the `DateTimeEditMode`, and also provides free style text editing support for date and time information. The `SfDateTimeEdit` allows you to change the [SelectedField](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_SelectedField) by using <kbd>Right</kbd> and <kbd>Left</kbd> arrows through keyboard interaction and this can be restricted by setting the [InterceptArrowKeys](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_InterceptArrowKeys) to `false`.
 

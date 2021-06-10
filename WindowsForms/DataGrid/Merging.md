@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merging
-description: This section explains about the Merging support in SfDataGrid.
+title: Merge Cells in Windows Forms DataGrid control | Syncfusion
+description: Learn here all about merging feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Merge Cells
+# Merge Cells in Windows Forms DataGrid (SfDataGrid)
 The SfDataGrid allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The merged cells can be exported and printed.
 
 `QueryCoveredRange` event is not fired for the cells that are not visible and also for the cells that are already in covered range. When scrolling the grid, the merged range will be added for newly added rows and columns through this event and removed for the rows and columns which are out of view.
