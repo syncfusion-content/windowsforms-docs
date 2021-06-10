@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Theming | WindowsForms | Syncfusion
-description: themes and visual styles
+description: Learn here all about themes and visual styles feature of Syncfusion Windows Forms CommandBars control and more.
 platform: WindowsForms
 control: CommandBars
 documentation: ug
 ---
 
-# Theming
+# Theming in Windows Forms CommandBars
 
 The command bar supports various built in themes via the `Style` property of the command bar controller instance that are discussed in this topic.
 
