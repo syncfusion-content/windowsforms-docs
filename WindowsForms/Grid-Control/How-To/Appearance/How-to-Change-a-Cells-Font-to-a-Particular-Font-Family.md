@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to change a cell's font to a particular font family
+title: How to change a cell's font to a particular font family | Syncfusion
+description: Learn here all about how to change a cell's font to a particular font family of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug

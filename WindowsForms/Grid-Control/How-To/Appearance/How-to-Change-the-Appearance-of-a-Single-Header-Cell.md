@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to change the appearance of a single header cell
+title: How to change the appearance of a single header cell | Syncfusion
+description: Learn here all about how to change the appearance of a single header cell of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug
