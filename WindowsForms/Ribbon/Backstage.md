@@ -303,14 +303,12 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 ### Menu Button Customization
 
-Appearance of the Menu button can be customized using the below properties. Menu button customization will be applicable only for Office2019, Office2016 and Office2013 themes.
+The appearance of the menu button can be customized in Office2019Theme and HighContrastTheme the below-listed properties,
 
 *  FileMenuBackColor
 *  FileMenuForeColor
 *  FileMenuHoverBackColor
 *  FileMenuHoverForeColor
-
-**Office2019**
 
 {% tabs %}
 
@@ -326,6 +324,11 @@ this.ribbonControlAdv1.ThemeStyle.FileMenuHoverForeColor = Color.Brown;
 {% endtabs %}
 
 ![WindowsForms Ribbon menu customization 2019](BackStage_Images/WindowsForms-Menu-2019.jpg)
+
+The appearance of the menu button can be customized in Office2016 and Office2013 themes the below-listed properties,
+
+*  FileMenuForeColor
+*  FileMenuHoverForeColor
 
 **Office2016**
 
@@ -360,8 +363,6 @@ this.ribbonControlAdv1.Office2013ColorTable = office2013ColorTable;
 {% endtabs %}
 
 ![WindowsForms Ribbon menu customization 2013](BackStage_Images/WindowsForms-Menu-2013.jpg)
-
-N>  For both the Office2016 and Office2013 themes, the `FileMenuBackColor` and `FileMenuHoverBackColor` properties were not applicable.
 
 ### Menu Button Color
 
