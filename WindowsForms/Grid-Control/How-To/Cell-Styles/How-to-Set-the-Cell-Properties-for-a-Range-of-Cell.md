@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Styles in GridControl
-description: how to set the cell properties for a range of cells
+title: How to set the cell properties for a range of cells | Syncfusion
+description: Learn here all about how to set the cell properties for a range of cells in Gridcontrol of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug

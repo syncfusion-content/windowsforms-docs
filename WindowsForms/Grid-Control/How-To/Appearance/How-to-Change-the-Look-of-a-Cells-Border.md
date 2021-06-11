@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to change the look of a cell's border
+title: How to change the look of a cell's border in GridControl | Syncfusion
+description: Learn here all about how to change the look of a cell's border of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug

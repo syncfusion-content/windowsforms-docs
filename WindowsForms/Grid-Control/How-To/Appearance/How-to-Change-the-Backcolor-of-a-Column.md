@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to change the backcolor of a column
+title: How to change the backcolor of a column in GridControl | Syncfusion
+description: Learn here all about how to change the backcolor of a column of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug

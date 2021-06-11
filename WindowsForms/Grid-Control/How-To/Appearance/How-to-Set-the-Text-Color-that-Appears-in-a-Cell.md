@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to set the text color that appears in a cell
+title: How to set the text color that appears in a cell | Syncfusion
+description: Learn here all about how to set the text color that appears in a cell of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug
