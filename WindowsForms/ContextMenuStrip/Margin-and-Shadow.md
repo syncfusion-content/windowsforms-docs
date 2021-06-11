@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Margin and Shadow | Windows Forms | Syncfusion
-description: Set margins and shadow for the context menu
+title: Margin and Shadow in WinForms ContextMenuStrip Control | Syncfusion
+description: Learn here all about margins and shadow feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Margin and Shadow
+# Margin and Shadow in WinForms ContextMenuStrip (ContextMenuStripEx)
 
 ## Margin Setting
 

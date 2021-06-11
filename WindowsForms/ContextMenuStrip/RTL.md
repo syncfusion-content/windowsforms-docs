@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RTL | Windows Forms | Syncfusion
-description: Display the content from right to left
+title: RTL in Windows Forms ContextMenuStrip control | Syncfusion
+description: Learn here all about right to left (RTL) feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# RTL
+# RTL in Windows Forms ContextMenuStrip (ContextMenuStripEx)
 
 RTL is used to display the content from right to left by setting the [`RightToLeft`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_RightToLeft) property to `Yes`.
 
