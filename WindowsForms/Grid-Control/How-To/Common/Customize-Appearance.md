@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize-Appearance | Windows Forms | Syncfusion
-description: customize appearance 
+title: Customize-Appearance in Windows Forms GridControl | Syncfusion
+description: Learn here all about customize appearance support of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Customize Appearance 
+# Customize Appearance in Windows Forms GridControl
 
 Essential Grid provides support to display horizontal and vertical lines and customize the grid line color. 
 

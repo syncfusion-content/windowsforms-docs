@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to show multiple images in a cell
+title: How to show multiple images in a cell in GridControl | Syncfusion
+description: Learn here all about how to show multiple images in a cell of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to show multiple images in a cell
+# How to show multiple images in a cell in Windows Forms GridControl
 
 To show multiple Images in a cell, you need to handle CellDrawn Event. Follow the steps that are given below to achieve this.
 

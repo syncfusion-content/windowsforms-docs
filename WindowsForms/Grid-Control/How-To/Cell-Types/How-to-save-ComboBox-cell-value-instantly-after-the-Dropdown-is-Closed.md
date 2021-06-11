@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to save combobox cell value instantly after the dropdown is closed?
+title: Save ComboBox cell value instantly after dropdown closed | Syncfusion
+description: Learn here all about how to save combobox cell value instantly after the dropdown is closed of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
