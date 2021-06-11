@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Preview rows | DataGrid | WinForms | Syncfusion
-description: This section explains about the preview rows in SfDataGrid.
+title: Preview rows in Windows Forms DataGrid control | Syncfusion
+description: Learn here all about preview rows feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Preview Rows
+# Preview Rows in Windows Forms DataGrid (SfDataGrid)
 The SfDataGrid provides support to display additional information of rows. This can be expanded or collapsed using an expander or programmatically.
 
 ## Show preview row

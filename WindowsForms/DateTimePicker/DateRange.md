@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Minimum and Maximum value | SfDateTimeEdit | WindowsForms | Syncfusion
-description: To describe Minimum and Maximum value of SfDateTimeEdit
+description: Learn here all about Date range feature of Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Date range
+# DateRange in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 Prevents user from setting a date and time within a specified range can be achieved by using [MinDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_MinDateTime) and [MaxDateTime](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_MaxDateTime) properties of the SfDateTimeEdit.
 
