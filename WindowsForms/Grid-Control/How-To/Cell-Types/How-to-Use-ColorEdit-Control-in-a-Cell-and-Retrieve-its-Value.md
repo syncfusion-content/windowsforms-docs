@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Types in GridControl | WinForms | Syncfusion
+title: Use ColorEdit control in a cell and retrieve its value | Syncfusion
 description: This section describes how to use coloredit control in a cell and retrieve its value in WindowsForms platform.
 platform: windowsforms
 control: Grid
