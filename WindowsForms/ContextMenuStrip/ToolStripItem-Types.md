@@ -7,7 +7,7 @@ control: ContextMenuStripEx
 documentation: ug
 ---
 
-# ToolStripItem Types
+# ToolStripItem Types in WinForms ContextMenuStrip (ContextMenuStripEx)
 
 The following are the ToolStripItems which can be added as menu items to the ContextMenuStripEx control.
 

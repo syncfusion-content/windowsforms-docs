@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip | Windows Forms | Syncfusion
-description: Provides options to set tooltip for each Menuitem.
+title: Tooltip in Windows Forms ContextMenuStrip Control | Syncfusion
+description: Learn here all about tooltip feature of Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Windows Forms ContextMenuStrip (ContextMenuStripEx)
 
 Tooltip is nothing but a hint, showing short format or customized text about the menu item, when mouse hover on it. It can be enabled using the [`ShowItemToolTips`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.showitemtooltips?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ShowItemToolTips) property. The [`ToolTipText`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.tooltiptext?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripItem_ToolTipText) property is used to set the short format or customized text for each menu item.
 
