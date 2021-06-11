@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization
+# Serialization and Deserialization in WinForms DataGrid (SfDataGrid)
 
 SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-5.0).
 
