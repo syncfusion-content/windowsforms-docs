@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Keyboard Shortcuts | Windows Forms | Syncfusion
-description: The menu items can be selected and the respective action can be done by specifying the shortcuts
+description: Learn here all about Keyboard Shortcuts feature in Syncfusion Windows Forms ContextMenuStrip (ContextMenuStripEx) control and more.
 platform: WindowsForms
 control: ContextMenuStripEx
 documentation: ug
 ---
 
-# Keyboard Shortcuts
+# Keyboard Shortcuts in WinForms ContextMenuStrip (ContextMenuStripEx)
 
 The menu items can be selected through keyboard operation by specifying the shortcuts via the [`ShortcutKeys`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.shortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShortcutKeys) property of the ContextMenu. The [`ShowShortcutKeys`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripmenuitem.showshortcutkeys?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripMenuItem_ShowShortcutKeys) property is used for display the shortcut key text in the menu item.
 

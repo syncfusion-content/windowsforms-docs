@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearanc in GridControl
-description: how to avoid a, b, c and / or 1, 2, 3 in the headers
+title: How to avoid a, b, c and / or 1, 2, 3 in the headers | Syncfusion
+description: Learn here all about how to avoid a, b, c and / or 1, 2, 3 in the headers of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug
