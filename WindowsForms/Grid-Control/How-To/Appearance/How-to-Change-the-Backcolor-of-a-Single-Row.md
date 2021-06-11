@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in GridControl
-description: how to change the backcolor of a single row
+title: How to change the BackColor of a single row in GridControl| Syncfusion
+description: Learn here all about how to change the backcolor of a single row of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug
