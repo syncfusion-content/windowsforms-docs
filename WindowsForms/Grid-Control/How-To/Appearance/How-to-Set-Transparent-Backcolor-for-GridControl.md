@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in GridControl
+title: How to set transparent BackColor for GridControl | Syncfusion
 description: Learn here all about how to set transparent backcolor for gridcontrol of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid

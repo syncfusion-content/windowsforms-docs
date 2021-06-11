@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to change the color of all headers in WinForms Gridcontrol
+# How to change the color of all headers in WinForms Grid control
 
 The styles of the Header cells are controlled by base styles. The "Header" base style will affect all column headers including cell 0,0. The "Column Header" base style will affect the column headers excluding cell 0,0. The "RowHeader" base style will affect all row headers excluding cell 0,0.
 

@@ -33,4 +33,4 @@ grid.Properties.BackgroundColor = Color.Orange
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-Set-the-Background-Color-for-a-Grid_images/How-to-Set-the-Background-Color-for-a-Grid_img1.jpeg)
+![Set background to grid cells](How-to-Set-the-Background-Color-for-a-Grid_images/How-to-Set-the-Background-Color-for-a-Grid_img1.jpeg)

@@ -39,7 +39,7 @@ GridControl1(0, 3).Text = "Sales"
 {% endhighlight  %}
 {% endtabs %}
 
-![](How-to-Change-the-Appearance-of-a-Single-Header-Ce_images/How-to-Change-the-Appearance-of-a-Single-Header-Ce_img1.jpeg)
+![Appearance change to individual cell](How-to-Change-the-Appearance-of-a-Single-Header-Ce_images/How-to-Change-the-Appearance-of-a-Single-Header-Ce_img1.jpeg)
 
 
 
