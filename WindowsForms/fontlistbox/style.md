@@ -7,7 +7,7 @@ control: FontListBox
 documentation: ug
 ---
 
-# Visual Style in WindowsForms FontListBox
+# Visual Style in Windows Forms FontListBox
 
 The style for FontListBox can be set using VisualStyle property. 
 The visual style includes
