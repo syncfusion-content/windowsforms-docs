@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-convert-the-contents-of-GridControl-or-GridControl-or-GridDataBoundGridControl-to-Excel | Windows Forms | Syncfusion
-description: how to convert the contents of gridcontrol or griddataboundgridcontrol to excel
+title: How to convert the contents of GridControl to Excel | Syncfusion
+description: Learn here all about how to convert the contents of gridcontrol to excel in Syncfusion Windows Forms gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to convert the contents of GridControl or GridDataBoundGridControl to Excel
+# How to convert the contents to Excel in Windows Forms GridControl
 
 The Contents of GridControl and GridDataBoundGrid can be transferred to Excel by using GridToExcel method of GridExcelConverter class. Here is the code snippet.
 

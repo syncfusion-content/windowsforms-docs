@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Get-Cell-Coordinates-Under-a-Given-Point | Windows Forms | Syncfusion
-description: how to get cell coordinates under a given point
+title: How to get cell coordinates under a given point | Syncfusion
+description: Learn here all about how to get cell coordinates under a given point in Syncfusion Windows Forms gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to get cell coordinates under a given point
+# How to get cell coordinates under a given point WinForms GridControl
 
 If the point is given as part of one of the grids mouse event arguments, e.X and e.Y members of the event args should give the point in the grids coordinates. If the point is obtained in some other manner, you will have to first change it to the grid's coordinates. Once you have the point in grid coordinates, you can call Grid.PointToRowCol method to get row and column under the point.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Common questions in Essential Grid
-description: how to have character casing settings for a cell
+title: How to have character casing settings for a cell | Syncfusion
+description: Learn here all about how to have character casing settings for a cell in Syncfusion Windows Forms gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug

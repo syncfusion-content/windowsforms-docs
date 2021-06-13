@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Validate-Changes-Made-to-a-Grid-Cell | Windows Forms | Syncfusion
-description: how to validate changes made to a grid cell
+title: Validate changes made to a Grid cell | Windows Forms | Syncfusion
+description: Learn here all about how to validate changes made to a grid cell of Syncfusion Windows Forms Gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to validate changes made to a Grid cell
+# How to validate changes made to a Grid cell in WinForms Gridcontrol
 
 There are two events that can be used to validate the changes that are made to a grid cell: CurrentCellValidateString and CurrentCellValidating. CurrentCellValidateString is fired every time a key is pressed and the current text is passed as part of EventArgs. CurrentCellValidating is only fired once when the user tries to leave the current cell. 
 

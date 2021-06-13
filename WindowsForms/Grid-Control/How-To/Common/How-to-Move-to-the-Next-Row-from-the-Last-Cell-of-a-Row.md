@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Move-to-the-Next-Row-from-the-Last-Cell-of- | Windows Forms | Syncfusion
-description: how to move to the next row from the last cell of a row
+title: How to Move to the Next Row from the Last Cell of a Row | Syncfusion
+description: Learn here all about how to move to the next row from the last cell of a row in Syncfusion Windows Forms Gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug

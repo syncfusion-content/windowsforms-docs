@@ -17,7 +17,7 @@ If the content of a grid cell exceeds the cell width, then characters can be dis
 * None
 N> When set to None, the original content will be displayed.
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
+![Display Placeholder in Windows Forms GridControl](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
 
 
 
@@ -126,7 +126,7 @@ Characters other than the number sign (#), the default, can be used to replace a
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
+![Set Custom Characters in Windows Forms Grid Control](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
 
 
 

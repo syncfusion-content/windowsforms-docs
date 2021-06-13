@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Suppress-KeyDown-Event | Windows Forms | Syncfusion
-description: how to suppress keydown event
+title: How to Suppress KeyDown Event in WinForms Gridcontrol | Syncfusion
+description: Learn here all about how to suppress keydown event of Syncfusion Windows Forms Gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Suppress KeyDown Event
+# How to Suppress KeyDown Event in Windows Forms Gridcontrol
 
 To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPress property in this event.  To get the Keys data, override the ProcessCmdKey() method. 
 

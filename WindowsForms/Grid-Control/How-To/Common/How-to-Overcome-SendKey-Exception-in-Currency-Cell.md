@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Overcome-SendKey-Exception-in-Currency-Cell
-description: how to overcome sendkey exception in currency cell
+title: How to overcome sendkey exception in currency cell | Syncfusion
+description:  Learn here all about how to overcome sendkey exception in currency cell of Syncfusion Windows Forms Gridcontrol control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
