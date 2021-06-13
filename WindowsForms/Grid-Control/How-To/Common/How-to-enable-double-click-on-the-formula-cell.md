@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to enable double-click on the formula cell in WinForms Gridcontrol
+# How to enable double-click on the formula cell in WinForms GridControl
 
 To enable double-click on the formula cell, set ForceEditWhenActivated property to _False_. ActivateCurrentCellBehavior property cannot be achieved in GridFormulaCellRender unless the property is set to _False_. 
 

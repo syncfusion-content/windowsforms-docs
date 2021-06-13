@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to validate changes made to a Grid cell in WinForms Gridcontrol
+# How to validate changes made to a Grid cell in WinForms GridControl
 
 There are two events that can be used to validate the changes that are made to a grid cell: CurrentCellValidateString and CurrentCellValidating. CurrentCellValidateString is fired every time a key is pressed and the current text is passed as part of EventArgs. CurrentCellValidating is only fired once when the user tries to leave the current cell. 
 

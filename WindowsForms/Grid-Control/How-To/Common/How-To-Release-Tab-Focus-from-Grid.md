@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Release Tab Focus from Grid in Windows Forms Gridcontrol
+# How to Release Tab Focus from Grid in Windows Forms GridControl
 
 When you set ActiveControl variable to Grid__control, focus will be on Grid control. This may not allow you to navigate to other controls in the form. To overcome this difficulty, set ActiveControl to Grid control. Then set WantTabKey property to false. This helps you navigate to other controls in the form.
 

@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to write syntax for Grid model properties in WinForms Gridcontrol
+# How to write syntax for Grid model properties in WinForms GridControl
 
 From Essential Studio 9.4.6.20, it is not mandatory to specify the complete network to utilize the GridModel properties. 
 

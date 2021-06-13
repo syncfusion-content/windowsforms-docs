@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-# How to Suppress KeyDown Event in Windows Forms Gridcontrol
+# How to Suppress KeyDown Event in Windows Forms GridControl
 
 To suppress the TableControlCurrentCellKeyDown event, enable the SuppressKeyPress property in this event.  To get the Keys data, override the ProcessCmdKey() method. 
 
