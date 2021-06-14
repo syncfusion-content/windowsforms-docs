@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting | DataGrid | WinForms | Syncfusion
-description: This section explains about the sorting support in SfDataGrid.
+title: Sorting in Windows Forms DataGrid control | Syncfusion
+description: Learn here all about sorting feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria.
 The data can be sorted by clicking on the column headers that needs to be sorted or it can be performed programmatically. Once sorting is applied, the grid will display a sort icon in the respected column headers showing the sort direction.
 The sorting can be performed by touching or clicking the column header. This can be enabled by setting [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowSorting) property to `true`.

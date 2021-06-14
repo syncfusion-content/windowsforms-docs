@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Serialization and Deserialization | WinForms | Syncfusion
-description: This section explains about the Serialization and Deserialization in the WindowsForms DataGrid (SfDataGrid).
+description: This section explains about the Serialization and Deserialization in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization
+# Serialization and Deserialization in WinForms DataGrid (SfDataGrid)
 
 SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-5.0).
 

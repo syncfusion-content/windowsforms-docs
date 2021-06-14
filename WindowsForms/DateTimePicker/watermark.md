@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Watermark support | SfDateTimeEdit | Windows Forms | Syncfusion
-description: How to change watermark on null value for SfDateTimeEdit
+title: Watermark in Windows Forms DateTimePicker Control | Syncfusion
+description: Learn here all about Watermark feature of Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Watermark
+# Watermark in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 The `SfDateTimeEdit` control allows you to set the [Value](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_Value) to null in the default mode of the [DateTimeEditingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_DateTimeEditingMode). The watermark can be shown on null value.
 

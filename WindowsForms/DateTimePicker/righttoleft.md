@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Right-To-Left Support | SfDateTimeEdit | WindowsForms | Syncfusion
-description: How to render SfDateTimeEdit in Right-To-Left
+description: Learn here all about Right-To-Left feature of Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Right-to-left
+# Right-to-left in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 `SfDateTimeEdit` control elements can be aligned in right-to-left layout. This control can be laid out from right to left when the [RightToLeft](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfDateTimeEdit.html#Syncfusion_WinForms_Input_SfDateTimeEdit_RightToLeft) value is set to `Yes`.
 

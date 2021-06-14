@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Unbound Column
-description: This section explains about the unbound column support in SfDataGrid.
+title: Unbound Column in Windows Forms DataGrid control | Syncfusion
+description: Learn here all about unbound column feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Unbound Column
+# Unbound Column in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid allows to add additional columns which are **not bound with data object** from underlying data source. The unbound column can add to SfDataGrid by using [GridUnboundColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping and exporting as normal columns.
 {% tabs %}
 {% highlight c# %}
@@ -20,7 +20,7 @@ Me.sfDataGrid.Columns.Add(New GridUnboundColumn() With {.HeaderText = "Total Pri
 
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img1.png)
+![Add Unbound Column in Windows Forms DataGrid](UnboundColumn_images/UnboundColumn_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -188,7 +188,7 @@ unboundColumn.Expression = "UnitPrice * Quantity < 5000" & ChrW(135) & "UnitPric
 Me.sfDataGrid.Columns.Add(unboundColumn)
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img2.png)
+![Apply logical operator in Unbound column Windows Forms DataGrid](UnboundColumn_images/UnboundColumn_img2.png)
 
 ### Using Format
 Format the values of other columns and display the formatted value in unbound column using `Format` property.
@@ -200,7 +200,7 @@ unboundColumn.Format = "{UnitPrice}% for {OrderID}";
 unboundColumn.Format = "{UnitPrice}% for {OrderID}"
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img3.png)
+![Using Format in Unbound Column WinForms DataGrid](UnboundColumn_images/UnboundColumn_img3.png)
 
 ### Using QueryUnboundColumnInfo Event
 The data for unbound column can populated by handling the [QueryUnboundColumnInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.[QueryUnboundColumnInfoArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.QueryUnboundColumnInfoArgs.html) of the `QueryUnboundColumnInfo` event provides the information about the cell triggered this event. 
@@ -237,7 +237,7 @@ Private Sub sfDataGrid_QueryUnboundColumnInfo(ByVal sender As Object, ByVal e As
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img4.png)
+![Using QueryUnboundColumnInfo Event in WinForms DataGrid](UnboundColumn_images/UnboundColumn_img4.png)
 
 ## Editing Unbound Column
 
@@ -325,7 +325,7 @@ unboundColumn.Expression = "UnitPrice * Quantity"
 Me.sfDataGrid.Columns.Add(unboundColumn)
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img5.png)
+![Appearance in Unbound Column Windows Forms DataGrid](UnboundColumn_images/UnboundColumn_img5.png)
 
 ## Customize the Unbound Column Behavior
 
@@ -372,5 +372,5 @@ public class CustomUnboundCellRenderer : GridUnboundCellRenderer
 		MyBase.OnRender(paint, cellRect, cellValue, style, column, rowColumnIndex)
 {% endhighlight %}
 {% endtabs %}
-![](UnboundColumn_images/UnboundColumn_img6.png)
+![Overriding Existing CellType in Unbound Windows Forms DataGird](UnboundColumn_images/UnboundColumn_img6.png)
 
