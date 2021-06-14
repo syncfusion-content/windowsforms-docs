@@ -1,13 +1,13 @@
 ---
 layout: post
 title: UI Automation with SfListView for Syncfusion Essential WindowsForms
-description: This section explains on how to test the UI of SfListView projects.
+description: Learn here all about UI Automation feature of Syncfusion Windows Forms ListView (SfListView) control and more.
 platform: WindowsForms
 control: SfListView
 documentation: ug
 ---
 
-# UI Automation
+# UI Automation in Windows Forms ListView (SfListView)
 
 Microsoft UI automation is a new accessibility Framework for Microsoft Windows available on all the operating systems that support Windows Forms. UI automation provides accessibility to most of the UI elements and provides information about the UI element to the end user. You can interact with UI by using automated test scripts. To learn more about UI Automation, refer to the [MSDN page](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 

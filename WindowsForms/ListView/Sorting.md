@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting
-description: This section explains about the Sorting support in SfListView.
+title: Sorting in Windows-Forms ListView Control | Syncfusion
+description: Learn here all about sorting feature of Syncfusion Windows Forms ListView (SfListView) control and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms ListView (SfListView)
 The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property and by using the custom logic.
 
 ## Programmatic sorting

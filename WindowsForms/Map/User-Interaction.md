@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip-Support | Windows Forms | Syncfusion
-description: tooltip support
+title: User interaction in Windows-Forms Map Control | Syncfusion
+description: Learn here all about Data Binding feature of Syncfusion Windows-Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# User interaction
+# User interaction in Windows Forms Map (Maps)
 
 Options such as zooming, selection, and tooltip enable effective interaction on map elements.
 

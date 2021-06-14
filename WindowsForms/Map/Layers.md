@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layers | Windows Forms | Syncfusion
-description: layers
+title: Layers in Windows-Forms Map Control | Syncfusion
+description: Learn here all about layers feature of Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Layers
+# Layers in Windows Forms Map (Maps)
 
 Map is maintained through layers, and it can accommodate one or more layers.
 

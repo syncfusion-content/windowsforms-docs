@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance Customization in Menus | Windows Forms | Syncfusion
-description: Appearance customization in menu control
+title: Appearance Customization in Windows Forms Menu control | Syncfusion
+description: Learn here all about appearance customization feature of Syncfusion Windows Forms Menu (Menus) control and more.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Appearance Customization
+# Appearance Customization in Windows Forms Menu (Menus)
 
 In this section the appearance customization of the menu and child menu items is discussed.
 

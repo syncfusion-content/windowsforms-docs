@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles | Windows Forms | Syncfusion
-description: bubbles
+title: Bubbles in Windows-Forms Map Control | Syncfusion
+description: Learn here all about Bubbles feature of Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Bubbles
+# Bubbles in Windows Forms Map (Maps)
 
 Bubbles in the maps control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes, which contain bound values.
 
