@@ -226,4 +226,4 @@ Me.pdfViewerControl1.ThemeName = "Default"
 {% endhighlight %}
 {% endtabs %}
 
-Find the sample from this [GitHub](https://github.com/syncfusion/file-formats-windows-forms-demos/tree/master/PdfViewer.Windows/Samples/Visual Styles/PDF Viewer Visual Styles) location.
+Find the sample from this [GitHub](https://github.com/syncfusion/file-formats-windows-forms-demos/tree/master/PdfViewer/Visual%20Styles/PDF%20Viewer%20Visual%20Styles) location.

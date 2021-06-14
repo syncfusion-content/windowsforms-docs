@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-List-control | Windows Forms | Syncfusion
-description: customizing list control
+title: Customizing-List-control in WinForms MultiColumn ListBox | Syncfusion
+description: Learn here all about the customizing list control of Syncfusion Windows Forms MultiColumn ListBox (GridListControl) control and more.
 platform: windowsforms
 control: GridList
 documentation: ug
 ---
 
-# Customizing List control
+# Customizing List control in Windows Forms MultiColumn ListBox
 
 Appearance of the GridList control can be customized by using the following properties:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: QTP/UFT for Syncfusion Essential WindowsForms
-description: This section explains about Configuring the swfconfig file for QTP/UFT.
+description: Learn here all about Configuring the swfconfig file for QTP/UFT of the Syncfusion Windows Forms control and more. 
 platform: WindowsForms
 control: Testing
 documentation: ug

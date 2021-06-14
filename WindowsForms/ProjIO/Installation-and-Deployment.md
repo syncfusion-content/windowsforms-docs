@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: installation and deployment
+title: Installation and Deployment in Windows Forms ProjIO | Syncfusion
+description: Learn here all about installation and deployment feature of Syncfusion Windows Forms ProjIO control and more.
 platform: windowsforms
 control: ProjIO
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms ProjIO
 
 ## Installation
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroupBar | WindowsForms | Syncfusion
-description: GroupBar
+title: About Windows Forms GroupBar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Navigation Pane (GroupBar) control, its features, and more.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# GroupBar
+# Windows Forms Navigation Pane (GroupBar) Control Overview
 
 The GroupBar and GroupView controls abide by the container-client model and are designed to work in perfect synchronization with each other.
 

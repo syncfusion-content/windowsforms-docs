@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features | WindowsForms | Syncfusion
-description: features
+title: Features in Windows Forms StatusBarAdvPanel control | Syncfusion
+description: Learn here all about the features of the Syncfusion Windows Forms StatusBarAdvPanel control and more.
 platform: WindowsForms
 control: StatusBarAdvPanel
 documentation: ug
 ---
 
-# Features
+# Features in Windows Forms StatusBarAdvPanel
 
 * Appearance Settings
 

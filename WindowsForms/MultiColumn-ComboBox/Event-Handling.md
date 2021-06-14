@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event-Handling | WindowsForms | Syncfusion
-description: event handling
+title: Event Handling in Windows Forms MultiColumn ComboBox | Syncfusion
+description: Learn here all about the event handling feature of Syncfusion Windows Forms MultiColumn ComboBox control and more.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
 ---
 
-# Event Handling
+# Event Handling in Windows Forms MultiColumn ComboBox
 
 The events of ComboBoxAdv present in the MultiColumnComboBox.
 
