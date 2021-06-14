@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Globalization support | SfDateTimeEdit | WindowsForms | Syncfusion
-description: Globalization support of SfDateTimeEdit
+title: Globalization in Windows Forms DateTimePicker Control | Syncfusion
+description: Learn here all about globalization feature of Syncfusion Windows Forms DateTimePicker (SfDateTimeEdit) control and more.
 platform: WindowsForms
 control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Globalization
+# Globalization in Windows Forms DateTimePicker (SfDateTimeEdit)
 
 The `SfDateTimeEdit` control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. Before beginning the design phase, determine the cultures that your application supports.
 
