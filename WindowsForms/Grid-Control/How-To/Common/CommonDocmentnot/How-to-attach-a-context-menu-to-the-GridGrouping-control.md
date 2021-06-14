@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to attach a context menu to the GridGrouping control | Windows Forms | Syncfusion
-description: how to attach a context menu to the gridgrouping control
+title: How to attach a context menu to the GridControl | Syncfusion
+description: Learn here all about how to attach a context menu to the Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to attach a context menu to the GridGrouping control
+# How to attach a context menu to the Windows Forms GridControl
 
 This can be done using the code snippet below.
 

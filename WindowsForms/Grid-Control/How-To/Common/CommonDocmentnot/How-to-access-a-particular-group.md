@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Common questions in Essential Grid
-description: how to access a particular group
+title: How to access a particular group in WinForms GridControl | Syncfusion
+description: Learn here all about how to access a particular group and the records categorized under it of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to access a particular group
+# How to access a particular group in Windows Forms GridControl
 
 To access a particular group and the records categorized under it, use the following code.
  
