@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to apply grouping properties for a particular column | Syncfusion
-description: Learn here all about how to apply grouping properties for a particular column of Syncfusion Windows Forms GridControl control and more.
+description: Learn here all about how to apply grouping properties for a particular column of Syncfusion Windows Forms GridGroupingControl control and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
