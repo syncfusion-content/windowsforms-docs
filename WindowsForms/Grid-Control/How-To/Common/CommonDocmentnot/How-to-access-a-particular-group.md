@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to access a particular group in WinForms GridControl | Syncfusion
+title: Access a particular group in WinForms GridGroupingControl | Syncfusion
 description: Learn here all about how to access a particular group and the records categorized under it of Syncfusion Windows Forms GridGroupingControl control and more.
 platform: windowsforms
 control: GridGrouping
