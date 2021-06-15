@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How-to-Display-Placeholder-Characters-when-Cell-Content-exceeds-cell-width | Windows Forms | Syncfusion
-description: how to display placeholder characters when cell content exceeds cell width
+title: Display Placeholder when Cell Content Exceeds Cell Width | Syncfusion
+description: Learn here all about how to display placeholder characters when cell content exceeds cell width of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Display Placeholder Characters when Cell Content Exceeds Cell Width
+# Display Placeholder Characters when Cell Content Exceeds Cell Width
+
+This page explains how to display placeholder characters when cell content exceeds cell width of Syncfusion Windows Forms GridControl and more details.
+
+## How to Display Placeholder Characters when Cell Content Exceeds Cell Width
 
 If the content of a grid cell exceeds the cell width, then characters can be displayed to act as placeholders instead of actual letters or numbers, indicating that the cell contains more content than can be shown within the cell. By default, the number sign (#) is used as the placeholder character, but you can specify custom characters.You can enable the following types of cell content to be converted to placeholder characters when content exceeds cell size:
 
@@ -17,7 +21,7 @@ If the content of a grid cell exceeds the cell width, then characters can be dis
 * None
 N> When set to None, the original content will be displayed.
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
+![Display Placeholder in Windows Forms GridControl](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img2.png)
 
 
 
@@ -126,7 +130,7 @@ Characters other than the number sign (#), the default, can be used to replace a
 {% endhighlight %}
 {% endtabs %}
 
-![](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
+![Set Custom Characters in Windows Forms Grid Control](How-to-Display-Placeholder-Characters-when-Cell-Co_images/How-to-Display-Placeholder-Characters-when-Cell-Co_img4.png)
 
 
 

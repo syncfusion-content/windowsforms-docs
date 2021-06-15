@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Set-the-Background-Color-for-a-Grid | Windows Forms | Syncfusion
-description: how to set the background color for a grid
+title: How to Set the Background Color for a Grid | Windows Forms |Syncfusion
+description: Learn here all about how to set the background color for a Grid in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Set the Background Color for a Grid
+# How to Set the Background Color for a Grid in WinForms GridControl
 
 ### Introduction
 
@@ -34,7 +34,7 @@ grid.Properties.BackgroundColor = Color.Orange
 
 {% endhighlight %}
 {% endtabs %}
-![](How-to-Set-the-Background-Color-for-a-Grid_images/How-to-Set-the-Background-Color-for-a-Grid_img1.jpeg)
+![Set Background in WinForms GridControl](How-to-Set-the-Background-Color-for-a-Grid_images/How-to-Set-the-Background-Color-for-a-Grid_img1.jpeg)
 
 
 
