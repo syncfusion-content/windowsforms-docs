@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# High DPI Support in Windows Forms
+# High DPI Support in Windows Forms Controls
 
 DPI stands for Dots Per Inch is the number of pixels or points rendered in one inch on the interface. The high DPI displays are displayed with an increased number of pixel density compared to the default or standard DPI screen.
 

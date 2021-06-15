@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assembly deployment in Windows Forms | Syncfusion
+title: Assembly deployment in Windows Forms Controls | Syncfusion
 description: Learn here about how to install and deploy the Syncfusion Essential Studio Windows Forms components.
 platform: WindowsForms
 control: Deployment
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Deployment in Windows Forms
+# Deployment in Windows Forms Controls
 
 ## Copy Local
 

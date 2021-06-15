@@ -214,7 +214,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Map-Selection_images/Map-Selection_img1.png)
+![Multi selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img1.png)
 
 Multiple selection can be performed by selecting the map shape and holding the ctrl key over the map.
 
