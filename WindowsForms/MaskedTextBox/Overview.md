@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview of Syncfusion MaskedEditBox for Windows Forms
+title: About Windows-Forms MaskedTextBox Control | Syncfusion
 description: An overview about the MaskedEditBox which provides visual cues about the type of data used with the help of Mask provided for the control
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Overview
+# Windows Forms MaskedTextBox (MaskedEditBox) Overview
 
 The MaskedEditBox control is an edit control that provides an easy and reliable way of collecting user input and displaying standard data in specific formats from any data source. Some of the common uses of the MaskedEditBox controls are IP Addressed it control, Phone Number edit control and Social Security edit control.
 

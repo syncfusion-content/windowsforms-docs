@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-List-control | Windows Forms | Syncfusion
-description: customizing list control
+title: Customizing-List-control in WinForms MultiColumn ListBox | Syncfusion
+description: Learn here all about the customizing list control of Syncfusion Windows Forms MultiColumn ListBox (GridListControl) control and more.
 platform: windowsforms
 control: GridList
 documentation: ug
 ---
 
-# Customizing List control
+# Customizing List control in Windows Forms MultiColumn ListBox
 
 Appearance of the GridList control can be customized by using the following properties:
 
@@ -22,7 +22,7 @@ Me.gridListControl1.TransparentBackground = True
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img1.jpeg) 
+![TransparentBackground in Windows Forms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img1.jpeg) 
 
 * DisplayVertLines or DisplayHorzLines: Specifies the display of vertical or horizontal line on the grid. Ensure the display of vertical or horizontal grid line when setting this true.
 
@@ -37,9 +37,9 @@ Me.gridListControl1.Properties.DisplayVertLines = True
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img2.jpeg) 
+![DisplayVertLines or DisplayHorzLines in WinForms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img2.jpeg) 
 
-![](Customizing-List-control_images/Customizing-List-control_img3.jpeg)
+![DisplayVertLines or DisplayHorzLines in WinForms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img3.jpeg)
 
 * Buttons3D: Specifies appearance of the row and column headers. Render a three-dimensional header that provides a raised look when setting this property to true. 
 
@@ -52,7 +52,7 @@ Me.gridListControl1.Properties.Buttons3D = True
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img4.jpeg) 
+![Appearance of row and column headers](Customizing-List-control_images/Customizing-List-control_img4.jpeg) 
 
 * GridLineColor: Allows you to specify a color for grid lines. Its value can be set to the required color.
 
@@ -65,7 +65,7 @@ Me.gridListControl1.Grid.Properties.GridLineColor = Color.Blue
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img5.jpeg) 
+![Grid Line Color in WinForms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img5.jpeg) 
 
 * BackColor: Allows you to specify the background color for the GridList control. It is mandatory to set the TransparentBackground to false.
 
@@ -78,7 +78,7 @@ Me.gridListControl1.BackColor = Color.Beige
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img6.jpeg) 
+![BackColor in WinForms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img6.jpeg) 
 
 * HeaderBackColor: Allows you to specify the background color of the headers.
 
@@ -115,4 +115,4 @@ Me.gridListControl1.BackgroundImage = Image.FromFile("Cloud.jpg")
 {% endhighlight  %}
 {% endtabs %}
 
-![](Customizing-List-control_images/Customizing-List-control_img7.jpeg)
+![BackgroundImage in Windows Forms MultiColumn ListBox](Customizing-List-control_images/Customizing-List-control_img7.jpeg)

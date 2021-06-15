@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming | WindowsForms | Syncfusion
-description: This section explains about the theming support in MessageBoxAdv
+title: Theming in Windows Forms MessageBox control | Syncfusion
+description: Learn here all about theming feature of Syncfusion Windows Forms MessageBox (MessageBoxAdv) control and more.
 platform: WindowsForms
 control: MessageBoxAdv
 documentation: ug
 ---
 
-# Style settings
+# Style settings in Windows Forms MessageBox (MessageBoxAdv)
 
 This section explains the visual styles and customization support in MessageBoxAdv.
 
@@ -46,7 +46,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img2.jpg) 
+![Default Style in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img2.jpg) 
 
 ### Office2007
 
@@ -83,7 +83,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img3.jpg) 
+![office2007 in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img3.jpg) 
  
 #### Blue
 
@@ -109,7 +109,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img4.jpg) 
+![ Blue Color theme in Office2007 theme](MessageBoxAdv_images/MessageBoxAdv_img4.jpg) 
 
 #### Silver
 
@@ -135,7 +135,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img5.jpg) 
+![Silver Color theme in Office2007 theme](MessageBoxAdv_images/MessageBoxAdv_img5.jpg) 
 
 #### Managed
 
@@ -165,7 +165,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img6.jpg) 
+![Custom theme in Office2007 theme](MessageBoxAdv_images/MessageBoxAdv_img6.jpg) 
 
 ### Office2010
 
@@ -204,7 +204,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
  
-![](MessageBoxAdv_images/MessageBoxAdv_img7.jpg) 
+![Black Color theme in Office2010](MessageBoxAdv_images/MessageBoxAdv_img7.jpg) 
 
 #### Blue
 
@@ -234,7 +234,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img8.jpg) 
+![Blue Color theme in Office2010](MessageBoxAdv_images/MessageBoxAdv_img8.jpg) 
 
 #### Silver
 
@@ -264,7 +264,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img9.jpg) 
+![Silver color theme in Office2010](MessageBoxAdv_images/MessageBoxAdv_img9.jpg) 
 
 #### Office2010 Managed
 
@@ -299,7 +299,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img10.jpg) 
+![Custom theme in Office2010](MessageBoxAdv_images/MessageBoxAdv_img10.jpg) 
 
 ### Metro
 
@@ -325,7 +325,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img1.jpg) 
+![Metro theme in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img1.jpg) 
 
 #### Customization
 
@@ -448,7 +448,7 @@ MessageBoxAdv.MetroColorTable.BorderColor = Color.FromArgb(24, 131, 215)
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img17.jpg) 
+![Customization in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img17.jpg) 
 
 ### Office2013
 
@@ -486,7 +486,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img11.jpg) 
+![DarkGrey theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img11.jpg) 
 
 #### LightGray
 
@@ -516,7 +516,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
  
-![](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
+![LightGray theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img12.jpg) 
 
 #### White theme
 
@@ -546,7 +546,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img13.jpg) 
+![white theme in Office2013](MessageBoxAdv_images/MessageBoxAdv_img13.jpg) 
 
 #### Office2016
 
@@ -584,7 +584,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img14.jpg) 
+![Colorful theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img14.jpg) 
 
 #### White
 
@@ -614,7 +614,7 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
  
-![](MessageBoxAdv_images/MessageBoxAdv_img16.jpg) 
+![White theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img16.jpg) 
 
 #### DarkGray
 
@@ -644,4 +644,4 @@ MessageBoxAdv.Show(Me,"Save changes?", "File Modified", MessageBoxButtons.YesNo,
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img15.jpg) 
+![DarkGray theme in Office2016](MessageBoxAdv_images/MessageBoxAdv_img15.jpg) 

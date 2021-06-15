@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting
-description: This section explains about the Sorting support in SfListView.
+title: Sorting in Windows Forms ListView Control | Syncfusion
+description: Learn here all about sorting feature of Syncfusion Windows Forms ListView (SfListView) control and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Sorting
+# Sorting in Windows Forms ListView (SfListView)
 The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property and by using the custom logic.
 
 ## Programmatic sorting
@@ -32,7 +32,7 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Co
 {% endhighlight %}
 {% endtabs %}
       
-![](Sorting_images/Sorting_img1.png)
+![Programmatic Sorting in Windows Forms ListView](Sorting_images/Sorting_img1.png)
                
 ## Custom sorting
 Sort the items based on the custom logic. It can be applied to the [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortComparer) or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html#Syncfusion_DataSource_SortDescriptor_Comparer) property added to the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) collection.
@@ -101,7 +101,7 @@ public class CustomSortComparer : IComparer(Of Object), ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img2.png)
+![ Custom Sorting in Windows Forms ListView](Sorting_images/Sorting_img2.png)
 
 ## Sort the items with grouping
 The SfListView allows sorting the items with grouping by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) with required property name.
@@ -124,4 +124,4 @@ listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = "Co
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img3.png)
+![Sort item with Grouping in Windows Forms ListView](Sorting_images/Sorting_img3.png)
