@@ -120,9 +120,9 @@ The below table discuss the image properties of customizing the selected state i
 | [`HighlightedImageLargeListAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) | Gets or sets the ImageList that contains the images to display in the disabled state, if the bar manager is loaded with large icons mode. |
 | [`HighlightedImageIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarItem_HighlightedImageIndex) | Gets or sets the index of the image collections. |
 
-![Before highlighting the menu item](Appearance-Customization-images\menuItem_non_HighlightedImage.png)
+![Before highlighting the menu item](Appearance-Customization-images/menuItem_non_HighlightedImage.png)
 
-![Before highlighting the menu item](Appearance-Customization-images\menuItem_HighlightedImage.png)
+![Before highlighting the menu item](Appearance-Customization-images/menuItem_HighlightedImage.png)
 
 N> By default, the `HighlightedImageIndex` is set to -1, the corresponding image in the list should be specified with a proper index value.
 

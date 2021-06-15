@@ -13,7 +13,7 @@ The menu control supports to touch mode to the menu items and other visual eleme
 
 By default, this property is set to `false`.
 
-![Menu disabled with touch mode](Touch-Support-images/menu_Touch_Disabled.png "Menu before enabling touch mode")
+![Menu disabled with touch mode](Touch-Support-images/menu_Touch_Disabled.png)
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.mainFrameBarManager1.EnableTouchMode = True
 
 {% endtabs %}
 
-![Menu enabled with touch mode](Touch-Support-images/menu_Touch_Enabled.png "Menu after enabling touch mode")
+![Menu enabled with touch mode](Touch-Support-images/menu_Touch_Enabled.png)
 
 ## Touch selection
 
