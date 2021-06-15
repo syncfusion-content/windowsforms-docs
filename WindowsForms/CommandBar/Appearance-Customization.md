@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance-Customization | WindowsForms | Syncfusion
-description: Learn here all about Appearance Customization support in Syncfusion Windows Forms CommandBar (CommandBars) control and more.
+description: appearance settings
 platform: WindowsForms
 control: CommandBars
 documentation: ug
 ---
 
-# Appearance Customization in Windows Forms CommandBar (CommandBars)
+# Appearance Customization
 
 In this topic the customization and enhancing the appearance of the command bar control is discussed
 
@@ -97,9 +97,9 @@ commandBar1.HideDropDownButton = True
 
 The below image shows the disabled close button in float state.
 
-![Drop down button hidden in float state](Appearance-Customization-images/dropDownButton_Float_hidden.png "Command bar in float state")
+![Drop down button hidden in float state](Appearance-Customization-images/dropDownButton_Float_hidden.png)
 
-![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png "Command bar in docked state")
+![Drop down button hidden in docked state](Appearance-Customization-images/dropDownButton_Dock_hidden.png)
 
 The drop down button state also can be retrieved from the [`GetDropDownState`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_GetDropDownState) method.
 
