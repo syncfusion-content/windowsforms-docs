@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data-binding-and-Selection-Modes | Windows Forms | Syncfusion
-description: data binding and selection modes
+description: Learn here all about data binding and selection modes feature of Syncfusion Windows Forms MultiColumn ListBox (GridListControl) control and more.
 platform: windowsforms
 control: GridList
 documentation: ug
 ---
 
-# Data Binding and Selection Modes
+# Data Binding and Selection Modes in Windows Forms MultiColumn ListBox
 
 ## Data Binding
 

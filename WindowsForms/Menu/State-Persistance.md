@@ -1,13 +1,13 @@
 ---
 layout: post
 title: State Persistence in Menus | Windows Forms | Syncfusion
-description: Serialization in menu control
+description: Learn here all about the serialization feature of Syncfusion Windows Forms Menu (Menus) control and more.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# State Persistence
+# State Persistence in Windows Forms Menu (Menus)
 
 The menu control supports serialization persisting the state of the toolbars and menu items state whenever the application is being used. In this topic the serialization of menu control is discussed.
 

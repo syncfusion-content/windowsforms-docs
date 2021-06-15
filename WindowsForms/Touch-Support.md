@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support in Windows Forms controls
 
 ## Gesture
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles | Windows Forms | Syncfusion
-description: bubbles
+title: Bubbles in Windows-Forms Map Control | Syncfusion
+description: Learn here all about the Bubbles feature of the Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Bubbles
+# Bubbles in Windows Forms Map (Maps)
 
 Bubbles in the maps control represent the under-bound data values of the map. Bubbles are scattered throughout the map shapes, which contain bound values.
 
@@ -171,7 +171,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Bubbles_images/Bubbles_img1.png)
+![Adding Bubble in Windows Forms Map](Bubbles_images/Bubbles_img1.png)
 
 
 ## Range color mapping
@@ -309,4 +309,4 @@ public partial class Form1 : Form
 
 Screenshot: 
 
-![](Bubbles_images/Bubbles_img2.png)
+![Range Color Mapping in Windows Forms Map](Bubbles_images/Bubbles_img2.png)
