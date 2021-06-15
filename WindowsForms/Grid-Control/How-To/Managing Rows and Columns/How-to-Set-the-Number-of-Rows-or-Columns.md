@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Rows and Columns in GridControl
-description: how to set the number of rows or columns
+title: Set the Number of Rows and Columns in WinForms GridControl| Syncfusion
+description: Learn here about how to set the Number of Rows and Columns in Syncfusion Essential Studio Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in GridControl
-description: how to print a grid
+title: How to Print a Grid in Windows Forms Grid Control | Syncfusion
+description: Learn here about how to print a grid in Syncfusion Essential Studio Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug

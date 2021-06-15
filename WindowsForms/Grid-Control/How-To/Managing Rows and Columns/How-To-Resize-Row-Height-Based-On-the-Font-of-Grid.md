@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Rows and Columns in GridControl 
-description: how to resize row height based on the font of grid cell content
+title: Resize Row Height Based on the Font in GridControl | Syncfusion
+description: How to resize row height based on the font of grid cell content in Syncfusion Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug
