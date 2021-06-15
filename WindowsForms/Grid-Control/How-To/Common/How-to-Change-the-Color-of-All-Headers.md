@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Change the Color of All Headers | Syncfusion
-description: Learn here all about how to change the color of all headers of Syncfusion Windows Forms GridControl control and more.
+description: Learn here all about how to change the color of all headers of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

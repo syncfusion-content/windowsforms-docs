@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive features in Menus | Windows Forms | Syncfusion
-description: Learn about Interactive features in Syncfusion Windows Forms Menu control, its elements and more details.
+title: Interactive features in Windows Forms Menus Control | Syncfusion
+description: Learn about Interactive features in Syncfusion Windows Forms Menu (Menus) control, its elements and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in Windows Forms Menu (Menus)
 
 Menu control supports interactive features like tooltip and context menu associated with specified menu items. In this page such interactive features are discussed.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to change the caption text | Windows Forms | Syncfusion
-description: How to change the caption text
+title: Change the caption text in WinForms GridGroupingControl | Syncfusion
+description: Learn here all about how to change the caption text of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to change the caption text
+# How to change the caption text in Windows Forms GridGroupingControl
 
 This can be done using the code below.
 

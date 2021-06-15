@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Control-Whether-OLE-Drag-and-Drop-is-Supported-in-the-grid | Windows Forms | Syncfusion
-description: how to control whether ole drag-and-drop is supported in the grid
+title: Control whether OLE Drag-and-Drop is supported in Grid | Syncfusion
+description: Learn here all about how to control whether ole drag-and-drop is supported in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Change-the-Mouse-Cursor-for-a-GridControl | Windows Forms | Syncfusion
-description: how to change the mouse cursor for a gridcontrol
+title: How to Change the Mouse Cursor for a WinForms GridControl | Syncfusion
+description: Learn here all about how to change the mouse cursor in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Change the Mouse Cursor for a GridControl
+# How to Change the Mouse Cursor in Windows Forms GridControl
 
 ### Introduction
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorPalettes | Windows Forms | Syncfusion
-description: colorpalettes
+title: ColorPalettes in Windows-Forms Map Control | Syncfusion
+description: Learn here all about the colorpalettes feature of Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Color Palettes
+# Color Palettes in Windows Forms Map (Maps)
 
 Color palette is a set of colors applied to the shapes.
 
@@ -106,4 +106,4 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](ColorPalettes_images/ColorPalettes_img1.png)
+![ColorPalette in Windows Forms Map](ColorPalettes_images/ColorPalettes_img1.png)

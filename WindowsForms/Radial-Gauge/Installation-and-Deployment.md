@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-and-Deployment | WindowsForms | Syncfusion
-description: installation and deployment
+title: Installation and deployment in Windows Forms Radial Gauge | Syncfusion
+description: Learn here all about installation and deployment of Syncfusion Windows Forms Radial Gauge control and more.
 platform: WindowsForms
 control: Gauge
 documentation: ug
 ---
 
-# Installation and deployment
+# Installation and deployment in Windows Forms Radial Gauge
 
 This section covers information on installation, the process of viewing samples through the sample browser, and the locations of samples and source code.
 
@@ -44,7 +44,7 @@ Use the following steps to view the samples
 
    The Essential Studio Enterprise Edition window will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Essential Studio Enterprise Edition window Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -62,7 +62,7 @@ Use the following steps to view the samples
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![click Run Samples](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 
@@ -72,7 +72,7 @@ Use the following steps to view the samples
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![Click Gauge tile under Data Visualization](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 

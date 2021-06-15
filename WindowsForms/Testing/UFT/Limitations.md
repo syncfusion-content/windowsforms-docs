@@ -1,13 +1,13 @@
 ---
 layout: post
 title: QTP/UFT for Syncfusion Essential WindowsForms
-description: This section explains about the Limitations for QTP/UFT.
+description: Learn here all about the limitations for QTP/UFT of the Syncfusion Essential Studio Windows Forms controls and more.
 platform: WindowsForms
 control: Testing
 documentation: ug
 ---
 
-# Limitations
+# Limitations in Windows Forms Controls
 
 The following are the limitations in various controls that are yet to be resolved.
 
