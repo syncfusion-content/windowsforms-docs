@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize-Appearance in Windows Forms GridControl | Syncfusion
-description: Learn here all about customize appearance support of Syncfusion Windows Forms GridControl control and more.
+description: Learn here all about customize appearance support of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

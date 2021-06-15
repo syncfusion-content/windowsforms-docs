@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to make resizing possible in additional row headers | Syncfusion
-description: Learn here all about how to make resizing possible in additional row headers in Syncfusion Windows Forms gridcontrol control and more.
+description: Learn here all about how to make resizing possible in additional row headers in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

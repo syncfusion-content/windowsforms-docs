@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to enable double-click on the formula cell | Syncfusion
-description: Learn here all about how to enable double-click on the formula cell in Syncfusion Windows Forms gridcontrol control and more.
+description: Learn here all about how to enable double-click on the formula cell in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

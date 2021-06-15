@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to get cell coordinates under a given point | Syncfusion
-description: Learn here all about how to get cell coordinates under a given point in Syncfusion Windows Forms gridcontrol control and more.
+description: Learn here all about how to get cell coordinates under a given point in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

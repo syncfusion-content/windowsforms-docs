@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Capture Mouse and Key Events in Windows Forms GridControl | Syncfusion
-description: Learn here all about how to capture mouse and key events when the text box cell is in an active state of Syncfusion Windows Forms GridControl control and more.
+description: Learn here all about how to capture mouse and key events when the text box cell is in an active state of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

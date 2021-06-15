@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Suppress KeyDown Event in WinForms Gridcontrol | Syncfusion
-description: Learn here all about how to suppress keydown event of Syncfusion Windows Forms Gridcontrol control and more.
+description: Learn here all about how to suppress keydown event of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

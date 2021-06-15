@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to write syntax for Grid model properties | WinForms | Syncfusion
-description: Learn here all about how to write syntax for grid model properties of Syncfusion Windows Forms Gridcontrol control and more.
+description: Learn here all about how to write syntax for grid model properties of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

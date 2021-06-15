@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validate changes made to a Grid cell | Windows Forms | Syncfusion
-description: Learn here all about how to validate changes made to a grid cell of Syncfusion Windows Forms Gridcontrol control and more.
+description: Learn here all about how to validate changes made to a grid cell of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

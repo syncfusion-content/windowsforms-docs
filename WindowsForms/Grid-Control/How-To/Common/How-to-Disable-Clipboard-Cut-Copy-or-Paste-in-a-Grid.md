@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to disable clipboard Cut, Copy, or Paste in a Grid | Syncfusion
-description: Learn here all about how to disable clipboard cut, copy, or paste in Syncfusion Windows Forms gridcontrol control and more.
+description: Learn here all about how to disable clipboard cut, copy, or paste in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

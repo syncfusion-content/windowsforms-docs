@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to convert the contents of GridControl to Excel | Syncfusion
-description: Learn here all about how to convert the contents of gridcontrol to excel in Syncfusion Windows Forms gridcontrol control and more.
+description: Learn here all about how to convert the contents of gridcontrol to excel in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
