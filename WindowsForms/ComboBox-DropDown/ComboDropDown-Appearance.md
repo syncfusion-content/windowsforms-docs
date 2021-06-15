@@ -55,7 +55,7 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img286.jpeg) 
+![Border styles in Windows Forms ComboDropDown](Overview_images/Overview_img286.jpeg) 
 
 
 
