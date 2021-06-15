@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Place-data-label-to-outside-chart | Windows Forms | Syncfusion
-description: How to place the data label outside the chart region
+description: How to place the data label text outside the chart region in Syncfusion Windows Forms Chart control
 platform: windowsforms
 control: chart
 documentation: ug
