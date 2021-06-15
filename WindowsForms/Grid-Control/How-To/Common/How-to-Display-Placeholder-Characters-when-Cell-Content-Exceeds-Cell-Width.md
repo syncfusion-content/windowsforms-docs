@@ -9,6 +9,8 @@ documentation: ug
 
 # Display Placeholder Characters when Cell Content Exceeds Cell Width
 
+This page explains how to display placeholder characters when cell content exceeds cell width of Syncfusion Windows Forms GridControl and more details.
+
 ## How to Display Placeholder Characters when Cell Content Exceeds Cell Width
 
 If the content of a grid cell exceeds the cell width, then characters can be displayed to act as placeholders instead of actual letters or numbers, indicating that the cell contains more content than can be shown within the cell. By default, the number sign (#) is used as the placeholder character, but you can specify custom characters.You can enable the following types of cell content to be converted to placeholder characters when content exceeds cell size:
