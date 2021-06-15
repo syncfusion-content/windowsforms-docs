@@ -115,7 +115,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Tooltip-Support_images/Tooltip-Support_img1.png)
+![Tooltip support in Windows Forms Map](Tooltip-Support_images/Tooltip-Support_img1.png)
 
 ## Map selection
 
@@ -220,7 +220,7 @@ Multiple selection can be performed by selecting the map shape and holding the c
 
 Screenshot:
 
-![](Map-Selection_images/Map-Selection_img2.png)
+![Map selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img2.png)
 
 ## Zooming
 
@@ -308,7 +308,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Zooming_images/Zooming_img1.png)
+![Zooming in Windows Forms Maps](Zooming_images/Zooming_img1.png)
 
 ### Zoom using ZoomLevel 
 
@@ -383,7 +383,7 @@ public partial class Form1 : Form
 {% endtabs %}
 
 Screenshot:
-![](Zooming_images/Zooming_img2.png)
+![Zoom level of image](Zooming_images/Zooming_img2.png)
 
 ## Events
 
@@ -417,4 +417,4 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![](Map-Selection_images/Event.png)
+![Events in Windows Forms Maps](Map-Selection_images/Event.png)

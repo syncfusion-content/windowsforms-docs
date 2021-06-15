@@ -176,4 +176,4 @@ public partial class Form1 : Form
 
 The following screenshot illustrate a map displaying default legend
 
-![](Legend_images/Legend_img1.png)
+![Map displaying default legend](Legend_images/Legend_img1.png)

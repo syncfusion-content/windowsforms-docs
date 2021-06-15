@@ -86,4 +86,4 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Map-Shape-Customization_images/Map-Shape-Customization_img1.png)
+![Shape Customization in Windows Forms Map](Map-Shape-Customization_images/Map-Shape-Customization_img1.png)

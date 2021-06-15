@@ -128,4 +128,4 @@ End Class
 
 {% endtabs %}
 
-![](MessageBoxAdv_images/MessageBoxAdv_img31.jpg)
+![Apply Localization in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img31.jpg)

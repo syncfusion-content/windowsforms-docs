@@ -112,4 +112,4 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-Screenshot:![](Annotations_images/Annotations_img1.png)
+Screenshot:![Annotation in Windows Forms Map](Annotations_images/Annotations_img1.png)

@@ -106,4 +106,4 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](ColorPalettes_images/ColorPalettes_img1.png)
+![ColorPalette in Windows Forms Map](ColorPalettes_images/ColorPalettes_img1.png)

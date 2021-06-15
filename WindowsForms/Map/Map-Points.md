@@ -96,7 +96,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Map-Points_images/Map-Points_img1.png)
+![Map point in Windows Forms Maps](Map-Points_images/Map-Points_img1.png)
 
 Map points
 {:.caption}

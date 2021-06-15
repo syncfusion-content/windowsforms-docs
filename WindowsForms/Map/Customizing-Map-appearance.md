@@ -98,4 +98,4 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)
+![Color Mapping in Windows Forms Map](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)

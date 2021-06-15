@@ -41,7 +41,7 @@ Use the following steps to view the samples:
 
       The Essential Studio Enterprise Edition window will be displayed.
 
-      ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)       
+      ![Displaying Essential Studio Enterprise Edition window](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)       
 	  
 	  Syncfusion Essential Studio Dashboard
       {:.caption}
@@ -55,13 +55,13 @@ Use the following steps to view the samples:
 	  
       The User Interface Edition panel will be displayed by default.
 	  
-	  ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
+	  ![UI Windows Forms Sample Browser window Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
       _Figure 2: UI Windows Forms Sample Browser_
 
 3. Click the Maps under Data Visualization. The Map samples will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![Click Maps under Data Visualization](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
    Essential Maps WF Samples
    {:.caption}

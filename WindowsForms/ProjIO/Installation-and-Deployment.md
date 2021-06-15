@@ -42,7 +42,7 @@ To view the samples:
 1. Click Start -> All Programs-> Syncfusion -> Essential Studio <x.x.x.x> -> Dashboard. The UI samples are displayed by default.
 2. Select Reporting.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Select Reportiong from Dashboard](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -52,13 +52,13 @@ The steps to view the ProjIO samples in various platforms are discussed below.
 
 1. In the Dashboard window, click Run Samples for Windows Forms under Reporting Edition Panel. The Windows Forms Sample Browser window is displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
+   ![Windows Forms Sample Browser window Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)
 
 
 
 2. Click ProjIO from the bottom-left pane. The ProjIO samples are displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![ProjIO samples Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 
@@ -68,19 +68,19 @@ The steps to view the ProjIO samples in various platforms are discussed below.
 
    1. In the dashboard window, click Run Samples for WPF under Reporting edition panel. The WPF Sample Browser window is displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![click Run Samples in Reporting edition panel](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 
    2. Select Run Samples. The default WPF sample will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
+   ![WPF Sample Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)
 
 
 
    3. Click ProjIO form the bottom-left pane and browse through the features.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
+   ![Click ProjIO form the bottom-left pane](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)
 
 
 

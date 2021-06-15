@@ -42,6 +42,6 @@ Me.maskedEditBox1.ThemesEnabled = true
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img19.png)
+![Theme applied in Masked TextBox](MaskedEditBox-images/MarkedEditBox-img19.png)
 
 

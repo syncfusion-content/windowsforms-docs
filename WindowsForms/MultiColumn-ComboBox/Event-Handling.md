@@ -136,7 +136,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img331.jpeg) 
+![Setting text according to selection in MultiColumn ComboBox](Overview_images/Overview_img331.jpeg) 
 
 ## SelectedIndexChanged event
 

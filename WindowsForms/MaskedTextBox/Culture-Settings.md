@@ -49,5 +49,5 @@ Me.maskedEditBox1.UseUserOverride = True
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img11.png)
+![Culture settings in Windows Forms MaskedTextBox](MaskedEditBox-images/MarkedEditBox-img11.png)
 

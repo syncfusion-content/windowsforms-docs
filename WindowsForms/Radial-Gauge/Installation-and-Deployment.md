@@ -44,7 +44,7 @@ Use the following steps to view the samples
 
    The Essential Studio Enterprise Edition window will be displayed.
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
+   ![Essential Studio Enterprise Edition window Displayed](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
 
 
@@ -62,7 +62,7 @@ Use the following steps to view the samples
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
+   ![click Run Samples](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)
 
 
 
@@ -72,7 +72,7 @@ Use the following steps to view the samples
 
 
 
-   ![](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
+   ![Click Gauge tile under Data Visualization](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)
 
 
 

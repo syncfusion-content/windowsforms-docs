@@ -171,7 +171,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Bubbles_images/Bubbles_img1.png)
+![Adding Bubble in Windows Forms Map](Bubbles_images/Bubbles_img1.png)
 
 
 ## Range color mapping
@@ -309,4 +309,4 @@ public partial class Form1 : Form
 
 Screenshot: 
 
-![](Bubbles_images/Bubbles_img2.png)
+![Range Color Mapping in Windows Forms Map](Bubbles_images/Bubbles_img2.png)

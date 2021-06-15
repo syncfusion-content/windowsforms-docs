@@ -134,7 +134,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Multilayer-Support_images/Multilayer-Support_img1.png)
+![SubShapeFileLayer in Windows Forms Maps](Multilayer-Support_images/Multilayer-Support_img1.png)
 
 MultiLayer
 {:.caption}
@@ -202,7 +202,7 @@ In `Tile` layout, maps scale value is maintained in every direction around a poi
 
 {% endtabs %}
 
-![](LayerImage/Tile.png)
+![Tile in Windows Forms Map](LayerImage/Tile.png)
 
 ## ItemSource
 

@@ -18,13 +18,13 @@ Caption label can be added to the MetroForm through designer or code.
 
 1) Labels can be added to the CaptionBar using `CaptionLabels` collection property.
 
-![](Customization_images/customization_img2.png)
+![Caption label With Designer](Customization_images/customization_img2.png)
 
 2) Add Labels through collection editor window.
 
-![](Customization_images/customization_img3.png)
+![Add Labels With collection editor window](Customization_images/customization_img3.png)
 
-![](Customization_images/CaptionLabel.png)
+![Caption label with collection editor window](Customization_images/CaptionLabel.png)
 
 ### Through code
 
@@ -78,17 +78,17 @@ Caption images can be added to the MetroForm through designer or code.
 
 1) Images can be added to the CaptionBar using CaptionImages collection property.
 
-![](Customization_images/Caption-Image-Customization_img1.jpeg)
+![Caption image added through CaptionBar](Customization_images/Caption-Image-Customization_img1.jpeg)
 
 
 2) Add images through collection editor window.
 
-![](Customization_images/Caption-Image-Customization_img2.jpeg)
+![Caption image added through collection editor window](Customization_images/Caption-Image-Customization_img2.jpeg)
 
 
 3) Image can be added to the CaptionImage using Image property in Collection Editor.
 
-![](Customization_images/Caption-Image-Customization_img3.jpeg)
+![Caption image added with Image property](Customization_images/Caption-Image-Customization_img3.jpeg)
 
 
 ### Through code
@@ -135,7 +135,7 @@ Me.CaptionImages.Add(captionImage1)
 
 {% endtabs %}
 
-![](Customization_images/Place-an-Image-in-the-Caption-Bar_img1.png)
+![Caption Image added through code](Customization_images/Place-an-Image-in-the-Caption-Bar_img1.png)
 
 
 ## Caption fore color
@@ -159,7 +159,7 @@ Caption fore color can be customized using `CaptionForeColor` property.
 
 {% endtabs %}
 
-![](Customization_images/Caption-Bar-Customization_img3.jpeg)
+![Customization of Caption fore color](Customization_images/Caption-Bar-Customization_img3.jpeg)
 
 
 ## Caption font
@@ -183,7 +183,7 @@ Me.CaptionFont = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.Fo
 
 {% endtabs %}
 
-![](Customization_images/Caption-Bar-Customization_img4.jpeg)
+![Customization of Caption font](Customization_images/Caption-Bar-Customization_img4.jpeg)
 
 
 ## Caption button color
@@ -207,7 +207,7 @@ Me.CaptionButtonColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![](Customization_images/Caption-Bar-Customization_img5.jpeg)
+![customization of caption button color in Windows Forms Metro Form](Customization_images/Caption-Bar-Customization_img5.jpeg)
 
 
 ## Caption button hover color
@@ -231,7 +231,7 @@ Me.CaptionButtonHoverColor = System.Drawing.Color.Lime
 
 {% endtabs %}
 
-![](Customization_images/Caption-Bar-Customization_img6.png)
+![customization of caption button hover color in Windows Forms Metro Form](Customization_images/Caption-Bar-Customization_img6.png)
 
 
 ## Caption bar background
@@ -276,7 +276,7 @@ End Sub
 
 {% endtabs %}
 
-![](Customization_images/Caption-Bar-Customization_img7.png)
+![Caption Bar Background in Windows Forms Metro Form](Customization_images/Caption-Bar-Customization_img7.png)
 
 ## Mouse events for caption image
 
