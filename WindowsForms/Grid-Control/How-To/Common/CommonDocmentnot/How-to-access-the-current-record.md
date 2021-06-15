@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to access the current record in GridGroupingControl | Syncfusion
-description: Learn here all about how to access the current record of Syncfusion Windows Forms GridGroupingControl control and more.
+description: Learn here all about how to access the current record of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

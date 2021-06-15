@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Place a UserControl in Header Cell | Windows Forms | Syncfusion
-description: Learn here all about how to Place a UserControl in a Header Cell of Syncfusion Windows Forms GridGroupingControl control and more.
+description: Learn here all about how to Place a UserControl in a Header Cell of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Place UserControl in a Header Cell in WinForms GridGroupingControl
 
-This page explains how to Place a UserControl in a Header Cell in Windows Forms GridGroupingControl control and more details.
+This page explains how to Place a UserControl in a Header Cell in Windows Forms GridGroupingControl and more details.
 
 ## How to Place UserControl in a Header Cell in Windows Forms GridGroupingControl
 

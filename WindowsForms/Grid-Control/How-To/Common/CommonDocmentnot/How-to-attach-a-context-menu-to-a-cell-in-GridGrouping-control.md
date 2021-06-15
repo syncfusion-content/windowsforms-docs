@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Attach a context menu to a cell in GridGroupingControl | Syncfusion
-description: Learn here all about how to attach a context menu to a cell of Syncfusion Windows Forms GridGroupingControl control and more.
+description: Learn here all about how to attach a context menu to a cell of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

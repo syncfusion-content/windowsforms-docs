@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Derive user defined groups in WinForms GridGroupingControl |Syncfusion
-description: Learn here all about how to derive user defined groups of Syncfusion Windows Forms GridGroupingControl control and more.
+description: Learn here all about how to derive user defined groups of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug

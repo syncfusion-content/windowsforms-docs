@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to group a column programmatically | Windows Forms | Syncfusion
-description: Learn here all about how to group a column programmatically of Syncfusion Windows Forms GridGroupingControl control and more.
+description: Learn here all about how to group a column programmatically of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
