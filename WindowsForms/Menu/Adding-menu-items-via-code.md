@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding Menu items via code | WindowsForms | Syncfusion
-description: Adding menu items via code
+title: Adding Menu items via code in Windows Forms Menu control | Syncfusion
+description: Learn here all about adding menu items via code feature of Syncfusion Windows Forms Menu (Menus) control and more.
 platform: WindowsForms
 control: Menus Package 
 documentation: ug
 ---
 
-# Adding Menu Items via Code
+# Adding Menu Items via Code in Windows Forms Menu (Menus)
 
 This section provides a quick overview to add the menu items to a [Menu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control through the code.
 

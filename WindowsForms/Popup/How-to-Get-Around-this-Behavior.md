@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  FAQ | Windows Forms | Syncfusion
-description:  How to Get Around this Behavior
+title: Get Around this Behavior in WinForms PopupControlContainer |Syncfusion
+description: Learn here all about how to Get Around this Behavior of Syncfusion Windows Forms PopupControlContainer and more.
 platform: WindowsForms
 control: PopupControlContainer
 documentation: ug
 ---
 
-# How to Get Around this Behavior
+# How to Get Around this Behavior in Windows Forms PopupControlContainer
 
 In order to work around this behavior, you can set a Boolean flag and cancel the [`BeforeCloseUp`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html) event as shown below.
 

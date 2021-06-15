@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layers | Windows Forms | Syncfusion
-description: layers
+title: Layers in Windows-Forms Map Control | Syncfusion
+description: Learn here all about the layers feature of the Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Layers
+# Layers in Windows Forms Map (Maps)
 
 Map is maintained through layers, and it can accommodate one or more layers.
 
@@ -134,7 +134,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Multilayer-Support_images/Multilayer-Support_img1.png)
+![SubShapeFileLayer in Windows Forms Maps](Multilayer-Support_images/Multilayer-Support_img1.png)
 
 MultiLayer
 {:.caption}
@@ -202,7 +202,7 @@ In `Tile` layout, maps scale value is maintained in every direction around a poi
 
 {% endtabs %}
 
-![](LayerImage/Tile.png)
+![Tile in Windows Forms Map](LayerImage/Tile.png)
 
 ## ItemSource
 

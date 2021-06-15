@@ -1,17 +1,17 @@
 ---
 layout: post
 title: ComboDropDown-Text | WindowsForms | Syncfusion
-description: combodropdown text
+description: Learn here all about ComboDropDown Text support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control, its elements, and more. 
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# ComboDropDown Text
+# ComboDropDown Text in Windows Forms ComboBox DropDown (ComboDropDown)
 
 ComboDropDown control supports the properties which can change the appearance and behavior of the control's edit portion.
 
-![](Overview_images/Overview_img284.jpeg) 
+![Overview of ComboDropDown control](Overview_images/Overview_img284.jpeg) 
 
 
 
@@ -60,7 +60,7 @@ Me.comboDropDown1.MatchFirstCharacterOnly = False
 
 We can set banner text for the ComboBoxDropDown control. Refer [BannerTextProvider](/windowsforms/bannertextprovider/overview) Component topic for more details.
 
-![](Overview_images/Overview_img285.jpeg) 
+![Banner Text Support for ComboBoxDropDown control](Overview_images/Overview_img285.jpeg) 
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Culture Settings | WindowsForms | Syncfusion
-description: Culture Settings
+title: Culture Settings in Windows-Forms MaskedTextBox Control | Syncfusion
+description: Learn here all about culture settings feature of Syncfusion Windows Forms MaskedTextBox (MaskedEditBox) control and more.
 platform: WindowsForms
 control: MaskedEditBox
 documentation: ug
 ---
-# Culture Settings
+# Culture Settings in Windows Forms MaskedTextBox (MaskedEditBox)
 
 This section discusses the culture settings of the MaskedEditBox control.
 
@@ -49,5 +49,5 @@ Me.maskedEditBox1.UseUserOverride = True
 
 {% endtabs %}
 
-![](MaskedEditBox-images/MarkedEditBox-img11.png)
+![Culture settings in Windows Forms MaskedTextBox](MaskedEditBox-images/MarkedEditBox-img11.png)
 
