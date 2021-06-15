@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to hide a row or column in Windows Forms GridControl | Syncfusion
-description: Learn here all about how to hide a row or column in Syncfusion Windows Forms GridControl and more.
+description: Learn here all about how to hide a row or column in the Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

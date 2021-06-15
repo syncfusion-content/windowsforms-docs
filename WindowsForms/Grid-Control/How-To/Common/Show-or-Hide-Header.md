@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show or Hide Header | Windows Forms | Syncfusion
-description: Learn here all about the show or hide header of Syncfusion Windows Forms GridControl and more.
+description: Learn here all about the show or hide header feature of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
