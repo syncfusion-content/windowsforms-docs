@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to control the number of visible items in a combo box cell
+title: Control the number of visible items in a Combobox cell | Syncfusion
+description: Learn here all about how to control the number of visible items in a combo box cell of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug

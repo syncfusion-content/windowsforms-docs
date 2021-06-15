@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# FilterRow
+# FilterRow in Windows Forms DataGrid (SfDataGrid)
 SfDataGrid provides built-in row (called FilterRow) to filter the records. This FilterRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_FilterRowPosition) property.
 
 {% tabs %}

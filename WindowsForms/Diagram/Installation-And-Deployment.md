@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation-And-Deployment | Windows Forms | Syncfusion
-description: installation and deployment
+title: Installation-And-Deployment in Windows Forms Diagram | Syncfusion
+description: Learn here all about installation and deployment of Syncfusion Windows Forms Diagram control and more.
 platform: windowsforms
 control: Diagram
 documentation: ug
 ---
 
-## Installation And Deployment
+## Installation And Deployment in Windows Forms Diagram
 
 This section covers information on the install location, samples, licensing, patches update and updation of the recent version of Essential Studio. It comprises the following sub-sections:
 
@@ -46,7 +46,7 @@ To view the samples, follow the steps below:
 
 
 
-   ![](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)
+   ![Viewing Sample Windows Forms Diagram](Installation-And-Deployment_images/Installation-And-Deployment_img1.png)
 
 
 
@@ -62,7 +62,7 @@ N> You can view the samples in any of the following three ways:
 
 
 
-![](Installation-And-Deployment_images/Installation-And-Deployment_img3.png)
+![Run Samples in Windows Forms Diagram](Installation-And-Deployment_images/Installation-And-Deployment_img3.png)
 
 
 
@@ -72,7 +72,7 @@ N> You can view the samples in any of the following three ways:
 
 
 
-![](Installation-And-Deployment_images/Installation-And-Deployment_img4.png)
+![View Sample in Windows Forms Diagram](Installation-And-Deployment_images/Installation-And-Deployment_img4.png)
 
 
 

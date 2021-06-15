@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to use a combo box in a cell
+title: How to use a combo box in a cell in GridControl | Syncfusion
+description: Learn here all about how to use a combo box in a cell of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to use a combo box in a cell
+# How to use a combo box in a cell in Windows Forms GridControl
 
 The control type of a cell is part of the cell style and is determined by GridStyleInfo.CellType property. The items shown in the dropdown list can be provided in two ways.
 

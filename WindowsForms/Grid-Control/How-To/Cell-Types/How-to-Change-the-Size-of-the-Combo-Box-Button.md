@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Change-the-Size-of-the-Combo-Box-Button | Windows Forms | Syncfusion
-description: how to change the size of the combo box button
+title: How to change the size of the combo box Button | Syncfusion
+description: Learn here all about how to change the size of the combo box button of Syncfusion Windows Forms GridControl control and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to change the size of the combo box Button
+# How to change the size of the combo box Button in WinForms GridControl
 
 Change the size of the combobox button by changing the ButtonBarSize in the CellModel for the control. 
 
