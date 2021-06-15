@@ -6,7 +6,7 @@ platform: WindowsForms
 control: DateTimePickerAdv 
 documentation: ug
 ---
-# DesignTime Features
+# DesignTime Features of Windows Forms DateTimePickerAdv control
 
 In the designer, DateTimePickerAdv control has shortcut for some property settings in its Task Window. Task Window is opened through the control's smart tag option.
 

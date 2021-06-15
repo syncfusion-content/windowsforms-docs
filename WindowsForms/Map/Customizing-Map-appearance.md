@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing-Map-appearance | Windows Forms | Syncfusion
-description: customizing map appearance
+title: Customizing-Map-appearance in Windows-Forms Map Control | Syncfusion
+description: Learn here all about customizing map appearance feature of Syncfusion Windows Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Color Mapping
+# Color Mapping in Windows Forms Map (Maps)
 
 The range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The [`From`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Maps.RangeColorMapping.html#Syncfusion_UI_Xaml_Maps_RangeColorMapping_From) and [`To`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Maps.RangeColorMapping.html#Syncfusion_UI_Xaml_Maps_RangeColorMapping_To) properties define the value ranges, and the [`Color`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.UI.Xaml.Maps.ColorMapping.html#Syncfusion_UI_Xaml_Maps_ColorMapping_Color) property defines the equivalent color.
 
@@ -98,4 +98,4 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)
+![Color Mapping in Windows Forms Map](Customizing-Map-appearance_images/Customizing-Map-appearance_img1.png)
