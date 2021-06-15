@@ -7,7 +7,7 @@ control: Featured Samples
 documentation: ug
 ---
 
-# Featured Samples in Syncfusion Windows Forms Controls
+# Featured Samples
 
 ## Syncfusion Windows Forms Controls Panel
 

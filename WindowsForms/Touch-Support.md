@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-# Touch Support in Syncfusion Windows Forms Controls
+# Touch Support
 
 ## Gesture
 
