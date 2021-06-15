@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ComboDropDown-Appearance | WindowsForms | Syncfusion
-description: combodropdown appearance
+description: Learn here all about the appearance settings of Syncfusion Windows Forms ComboDropDown control and more. 
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# ComboDropDown Appearance
+# Windows Forms ComboDropDown Appearance
 
 This section discusses the appearance settings for ComboDropDown control.
 
@@ -55,7 +55,7 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img286.jpeg) 
+![Border styles in Windows Forms ComboDropDown](Overview_images/Overview_img286.jpeg) 
 
 
 
