@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Rows and Columns in GridControl
-description: how to swap rows and columns
+title: Swap Rows and Columns in Windows Forms GridControl | Syncfusion
+description: Learn here about how to swap rows and columns in Syncfusion Essential Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug
