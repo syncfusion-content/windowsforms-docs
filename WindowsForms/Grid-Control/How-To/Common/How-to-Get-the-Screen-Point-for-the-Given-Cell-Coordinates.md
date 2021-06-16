@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Get-the-Screen-Point-for-the-Given-Cell-Coordinates | Windows Forms | Syncfusion
-description: how to get the screen point for the given cell coordinates
+title: How to get the screen point for the given cell coordinates |Syncfusion
+description: Learn here all about how to get the screen point for the given cell coordinates in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Creating GroupBar | WindowsForms | Syncfusion
-description:  Creating GroupBar
+title: Creating GroupBar | WindowsForms | Syncfusion
+description: Learn here all about the Creating GroupBar of Syncfusion Windows Forms Navigation Pane (GroupBar) control and more.
 platform: WindowsForms
 control: GroupBar
 documentation: ug
 ---
-# Creating GroupBar
+# Creating GroupBar in Windows Forms GroupBar
 
 This tutorial will show you how a GroupBar is created through the following ways.
 
@@ -18,29 +18,29 @@ To create a GroupBar through designer,
 
 * Drag-and-drop a GroupBar object from the controls toolbox onto your form.
 
- ![](Overview_images/Overview_img5.jpeg)
+ ![Drag-and-drop a GroupBar](Overview_images/Overview_img5.jpeg)
  
 
 
 * To add a GroupBar Item using design-time verbs, follow the given procedure.
 * To add a GroupBar Item using the design-time verbs, right-click on the GroupBar and select the Add Group option. This adds a GroupBar Item to the GroupBar control.
 
- ![](Overview_images/Overview_img6.jpeg)
+ ![Add a GroupBar](Overview_images/Overview_img6.jpeg)
  
  
 
 * To add a GroupBar Item using the property browser, follow the procedure given below.
 * In the Properties window, select the GroupBarItems property. The GroupBarItem Collection Editor will be opened. Click Add, a GroupBar Item will be added to the GroupBar control.
 
-![](Overview_images/Overview_img7.jpeg)
+![Add a GroupBar Item](Overview_images/Overview_img7.jpeg)
 
 
 
-![](Overview_images/Overview_img8.jpeg)
+![Select GroupBar Item](Overview_images/Overview_img8.jpeg)
 
 
 
-![](Overview_images/Overview_img9.jpeg)
+![GroupBar Item Added](Overview_images/Overview_img9.jpeg)
  
 
 
@@ -172,6 +172,6 @@ The following code shows how to create a GroupBar control and add GroupBar Items
 		
 	{% endtabs %}
 
- ![](Overview_images/Overview_img10.jpeg) 
+ ![GroupBar sample created in Windows Forms](Overview_images/Overview_img10.jpeg) 
  
 

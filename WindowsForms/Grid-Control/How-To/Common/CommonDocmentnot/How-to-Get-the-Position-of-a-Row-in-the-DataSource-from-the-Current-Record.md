@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Datasource | Windows Forms | Syncfusion
-description: datasource
+title: Get Position of a Row in DataSource from Current Record | Syncfusion
+description: Learn here all about how to get position of a row in the DataSource from the current record of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to Get the Position of a Row in the DataSource from the Current Record
+# How to Get Position of a Row in the DataSource from the Current Record
 
 From the row index, you can get the element displayed at that row. If it is a record row, then the element's parent record's unsorted position will give the underlying DataRow position. 
 

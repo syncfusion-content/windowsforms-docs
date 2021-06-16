@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Place-data-label-to-outside-chart | Windows Forms | Syncfusion
-description: How to place the data label outside the chart region
+description: How to place the callout data label text outside the chart region in Syncfusion Windows Forms Chart control
 platform: windowsforms
 control: chart
 documentation: ug
@@ -74,4 +74,4 @@ this.chartControl1.Series[0].Style.Callout.Font.Size = 11;
 {% endhighlight %}
 {% endtabs %}
 
-![Data label](How-to-place-the-data-label-outside-the-chart-region/How-to-place-the-data-label-outside-the-chart-region.png)
+![Data label](How-to-place-the-data-label-outside-the-chart-region_images/How-to-place-the-data-label-outside-the-chart-region.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Hosting-Controls | WindowsForms | Syncfusion
-description: hosting contols
+description: Learn here all about Hosting Controls support in Syncfusion Windows Forms CommandBar (CommandBars) control and more.
 platform: WindowsForms
 control: CommandBar
 documentation: ug
 ---
 
-# Hosting Controls
+# Hosting Controls in Windows Forms CommandBar (CommandBars)
 
 In this topic the integrating of controls with command bar is discussed.
 
@@ -99,6 +99,6 @@ Me.commandBar1.Controls.Add(xpToolbar1)
 
 {% seealso %}
 
-[Adding menu items to XP tool bar](https://help.syncfusion.com/windowsforms/xptoolbar/adding-and-filling-the-xptoolbar)
+[Adding menu items to XP tool bar](https://help.syncfusion.com/windowsforms/xptoolbar/baritem-types)
 
 {% endseealso %}
