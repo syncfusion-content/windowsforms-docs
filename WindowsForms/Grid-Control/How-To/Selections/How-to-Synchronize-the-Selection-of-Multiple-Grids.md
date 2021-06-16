@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in GridControl
-description: how to synchronize the selection of multiple grids
+title: Synchronize the Selection in Windows Forms GridControl | Syncfusion
+description: How to synchronize the selection of multiple grids in Syncfusion Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug
