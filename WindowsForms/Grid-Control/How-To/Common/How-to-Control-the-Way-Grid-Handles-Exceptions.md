@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-to-Control-the-Way-Grid-Handles-Exceptions | Windows Forms | Syncfusion
-description: how to control the way grid handles exceptions
+title: How to Control the Way Grid Handles Exceptions | Syncfusion
+description: Learn here all about how to control the way grid handles exceptions of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to Control the Way Grid Handles Exceptions
+# How to Control the Way Grid Handles Exceptions in WinForms GridControl
 
 ### Introduction
 

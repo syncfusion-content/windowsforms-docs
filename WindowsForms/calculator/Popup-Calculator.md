@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup-CalculatorControl | WindowsForms | Syncfusion
-description: popup calculatorControl
+description: Learn here all about the Syncfusion Essential Studio Windows Forms popup calculatorControl, its elements, and more.
 platform: WindowsForms
 control: Calculator
 documentation: ug

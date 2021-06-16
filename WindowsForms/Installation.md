@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation process for Syncfusion Essential Studio Windows Forms products
-description: Installation
+title: Installation in Windows Forms | Syncfusion
+description: Learn here all about the different installation support for Syncfusion Windows Forms controls and more.
 platform: WindowsForms
 control: Installation
 documentation: ug
 ---
 
 
-# Installation
+# Installation in Windows Forms controls
 
 ## Manual Installation
 

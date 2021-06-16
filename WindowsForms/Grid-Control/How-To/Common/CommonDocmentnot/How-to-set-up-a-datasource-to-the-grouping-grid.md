@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How to set up a datasource to the grouping grid | Windows Forms | Syncfusion
-description: How to set up a datasource to the grouping grid
+title: Set up a datasource to grouping grid in WinForms | Syncfusion
+description: Learn here all about how to set up a datasource to the grouping grid of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to set up a datasource to the grouping grid
+# Set up a datasource to grouping grid in WinForms GridGroupingControl
+
+This page explains how to Set up a datasource to grouping grid in Windows Forms GridGroupingControl and more details.
+
+## How to set up a datasource to grouping grid in Windows Forms GridGroupingControl
 
 You can set a datasource to GroupingGrid using the following code.
 

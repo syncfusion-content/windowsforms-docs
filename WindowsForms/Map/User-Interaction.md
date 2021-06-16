@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip-Support | Windows Forms | Syncfusion
-description: tooltip support
+title: User interaction in Windows-Forms Map Control | Syncfusion
+description: Learn here all about User interaction feature of Syncfusion Windows-Forms Map (Maps) control and more.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# User interaction
+# User interaction in Windows Forms Map (Maps)
 
 Options such as zooming, selection, and tooltip enable effective interaction on map elements.
 
@@ -115,7 +115,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Tooltip-Support_images/Tooltip-Support_img1.png)
+![Tooltip support in Windows Forms Map](Tooltip-Support_images/Tooltip-Support_img1.png)
 
 ## Map selection
 
@@ -214,13 +214,13 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Map-Selection_images/Map-Selection_img1.png)
+![Multi selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img1.png)
 
 Multiple selection can be performed by selecting the map shape and holding the ctrl key over the map.
 
 Screenshot:
 
-![](Map-Selection_images/Map-Selection_img2.png)
+![Map selection in Windows Forms Maps](Map-Selection_images/Map-Selection_img2.png)
 
 ## Zooming
 
@@ -308,7 +308,7 @@ public partial class Form1 : Form
 
 Screenshot:
 
-![](Zooming_images/Zooming_img1.png)
+![Zooming in Windows Forms Maps](Zooming_images/Zooming_img1.png)
 
 ### Zoom using ZoomLevel 
 
@@ -383,7 +383,7 @@ public partial class Form1 : Form
 {% endtabs %}
 
 Screenshot:
-![](Zooming_images/Zooming_img2.png)
+![Zoom level of image](Zooming_images/Zooming_img2.png)
 
 ## Events
 
@@ -417,4 +417,4 @@ public partial class Form1 : Form
 
 {% endtabs %}
 
-![](Map-Selection_images/Event.png)
+![Events in Windows Forms Maps](Map-Selection_images/Event.png)

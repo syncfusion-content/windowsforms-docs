@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Hold-the-Row-Selection-After-the-Cell-is-De | Windows Forms | Syncfusion
-description: how to hold the row selection after the cell is deactivated
+title: Hold the Row Selection After the Cell is Deactivated | Syncfusion
+description: Learn here all about how to hold the row selection after the cell is deactivated in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug

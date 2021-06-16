@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Maps control for WindowsForms
-description: This section explains the key features and quick overview about Syncfusion Maps control for WindowsForms
+title: About Windows Forms Map control | Syncfusion 
+description: This section explains the key features and quick overview about Syncfusion Maps control for WindowsForms.
 platform: windowsforms
 control: Maps
 documentation: ug
 ---
 
-# Overview
+# Overview in Windows Forms Map (Maps)
 
 Maps is a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on the earth. Using pan and zoom features, maps can be navigated.
 

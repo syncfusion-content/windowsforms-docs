@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid-Model-Options in Windows Forms GridControl | Syncfusion
-description: Learn here all about grid model options support of Syncfusion Windows Forms GridControl control and more.
+description: Learn here all about the grid model options support of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
