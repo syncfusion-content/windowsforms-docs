@@ -182,7 +182,7 @@ private void AboutItem_Click(object sender, EventArgs e)
 
 {% endtabs %}
 
-![WinForms RibbonControlAdv ContextMenu customization](Working_with_Ribbon_Images/winforms-ribboncontroladv-contextmenu-customization.png)
+![WinForms RibbonControlAdv Context menu customization](Working_with_Ribbon_Images/winforms-ribboncontroladv-context-menu-customization.png)
 
 ## Ribbon Items size
 
