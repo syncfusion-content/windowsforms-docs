@@ -157,7 +157,7 @@ Clicking the option will open the Customize Ribbon Editor dialog which lets you 
 
 ## Adding custom item to the ContextMenu
 
-Custom items can be added to the `ContextMenu` of the `Ribbon` by handle the [BeforeContextMenuOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_BeforeContextMenuOpen) event.
+Custom items can be added to the `ContextMenu` of the `RibbonControlAdv` by handle the [BeforeContextMenuOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_BeforeContextMenuOpen) event.
 
 {% tabs %}
 
