@@ -155,6 +155,35 @@ Clicking the option will open the Customize Ribbon Editor dialog which lets you 
 
 5. **Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
 
+## Adding custom item to the ContextMenu
+
+Custom items can be added to the `ContextMenu` of the `RibbonControlAdv` by handle the [BeforeContextMenuOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_BeforeContextMenuOpen) event.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.BeforeContextMenuOpen += RibbonControlAdv1_BeforeContextMenuOpen;
+
+private void RibbonControlAdv1_BeforeContextMenuOpen(object sender, ContextMenuEventArgs e)
+{
+    ToolStripItem aboutItem = new ToolStripMenuItem();
+    aboutItem.Text = "About";
+    aboutItem.Click += AboutItem_Click;
+    e.ContextMenuItems.Add(aboutItem);
+}
+
+private void AboutItem_Click(object sender, EventArgs e)
+{
+    System.Diagnostics.Process.Start("https://help.syncfusion.com/");       
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms RibbonControlAdv Context menu customization](Working_with_Ribbon_Images/winforms-ribboncontroladv-context-menu-customization.png)
+
 ## Ribbon Items size
 
 *	`Size` property can be used to set the height and width of the item.
