@@ -103,29 +103,3 @@ Controls.Add(pdfViewerControl1)
 {% endtabs %}
 
 Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
-
-## Appearance and Structure of the Control
-
-The following screenshot depicts different sections of the PdfViewerControl.
-
-![Windows forms pdfviewer displays different section of control](Getting-Started_images/Getting-Started_img3.png)
-
-
-### Toolbar
-
-![Windows forms pdfviewer displays the toolbar](Getting-Started_images/Getting-Started_img4.png)
-
-1. Open file
-2. Bookmark 
-3. Save document
-4. Print PDF
-5. Go to first page
-6. Go to previous page
-7. Page indicator
-8. Go to next page
-9. Go to last page
-10. Preset magnification
-11. Decrease magnification
-12. Increase magnification
-13. Fill window
-14. Fit page to window
