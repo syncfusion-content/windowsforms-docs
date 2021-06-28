@@ -138,9 +138,9 @@ ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripT
 
 2.**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
 
-    *	Add new items,
-    *	Remove the existing items or
-    *	Change the order of the items
+*	Add new items,
+*	Remove the existing items or
+*	Change the order of the items
 
 3.**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
 
@@ -148,10 +148,10 @@ ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripT
 
 Clicking the option will open the Customize Ribbon Editor dialog which lets you do the following.
 
-    *	Add new ToolStripTabItem to the Ribbon.
-    *	Rename existing ToolStripTabItem.
-    *	Reordering of the ToolStripTabItem.
-    *	Adding panel items to the ToolStripTabItem.
+*	Add new ToolStripTabItem to the Ribbon.
+*	Rename existing ToolStripTabItem.
+*	Reordering of the ToolStripTabItem.
+*	Adding panel items to the ToolStripTabItem.
 
 5.**Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
 
