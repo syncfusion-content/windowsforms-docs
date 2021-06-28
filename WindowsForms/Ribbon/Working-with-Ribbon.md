@@ -134,17 +134,17 @@ The [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsform
 
 ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripTabItem`.
 
-1.	**Add to Quick Access Toolbar** (This option will be available only with right click on `ToolStripItem`) – Adds that respective item to the Quick Access Toolbar.
+1.**Add to Quick Access Toolbar** (This option will be available only with right click on `ToolStripItem`) – Adds that respective item to the Quick Access Toolbar.
 
-2.	**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
+2.**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
 
     *	Add new items,
     *	Remove the existing items or
     *	Change the order of the items
 
-3.	**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
+3.**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
 
-4.	**Customize the Ribbon** – RibbonControlAdv Tab and TabItems can be customized in run time using Ribbon Customization window.
+4.**Customize the Ribbon** – RibbonControlAdv Tab and TabItems can be customized in run time using Ribbon Customization window.
 
 Clicking the option will open the Customize Ribbon Editor dialog which lets you do the following.
 
@@ -153,7 +153,7 @@ Clicking the option will open the Customize Ribbon Editor dialog which lets you 
     *	Reordering of the ToolStripTabItem.
     *	Adding panel items to the ToolStripTabItem.
 
-5. **Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
+5.**Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
 
 ## Adding custom item to the ContextMenu
 
