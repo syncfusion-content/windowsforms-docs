@@ -301,7 +301,7 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 {% endtabs %}
 
-### Menu Button Customization
+### Menu Button customization
 
 The appearance of the menu button can be customized in Office2019Theme and HighContrastTheme by using the below listed properties,
 
