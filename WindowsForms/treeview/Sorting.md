@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-## Sorting in Windows Forms TreeView
+# Sorting in Windows Forms TreeView
 
 Sorting can be performed on the tree nodes using the Sort function and specifying the function to be performed on either the checkbox or tag or text values in ascending or descending order.
 
