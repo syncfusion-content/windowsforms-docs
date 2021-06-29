@@ -134,17 +134,17 @@ The [`DisplayOptionChangedEventArgs`](https://help.syncfusion.com/cr/windowsform
 
 ContextMenu can be opened with right click on the `ToolStripItem` or `ToolStripTabItem`.
 
-1.	**Add to Quick Access Toolbar** (This option will be available only with right click on `ToolStripItem`) – Adds that respective item to the Quick Access Toolbar.
+1.**Add to Quick Access Toolbar** (This option will be available only with right click on `ToolStripItem`) – Adds that respective item to the Quick Access Toolbar.
 
-2.	**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
+2.**Customize Quick Access ToolBar** – Clicking the option will open the Customize Quick Access Toolbar Editor dialog which lets you do the following.
 
 *	Add new items,
 *	Remove the existing items or
 *	Change the order of the items
 
-3.	**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
+3.**Show Quick Access Toolbar Below the Ribbon** (or) **Show Quick Access Toolbar Above the Ribbon** – Allows to change the location of QAT.
 
-4.	**Customize the Ribbon** – RibbonControlAdv Tab and TabItems can be customized in run time using Ribbon Customization window.
+4.**Customize the Ribbon** – RibbonControlAdv Tab and TabItems can be customized in run time using Ribbon Customization window.
 
 Clicking the option will open the Customize Ribbon Editor dialog which lets you do the following.
 
@@ -153,7 +153,36 @@ Clicking the option will open the Customize Ribbon Editor dialog which lets you 
 *	Reordering of the ToolStripTabItem.
 *	Adding panel items to the ToolStripTabItem.
 
-5. **Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
+5.**Collapse the Ribbon** – If the ribbon is in maximized state this option will minimize the ribbon.
+
+## Adding custom item to the ContextMenu
+
+The custom items can be added to the `ContextMenu` of the `RibbonControlAdv` using the [BeforeContextMenuOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RibbonControlAdv.html#Syncfusion_Windows_Forms_Tools_RibbonControlAdv_BeforeContextMenuOpen) event.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.BeforeContextMenuOpen += RibbonControlAdv1_BeforeContextMenuOpen;
+
+private void RibbonControlAdv1_BeforeContextMenuOpen(object sender, ContextMenuEventArgs e)
+{
+    ToolStripItem aboutItem = new ToolStripMenuItem();
+    aboutItem.Text = "About";
+    aboutItem.Click += AboutItem_Click;
+    e.ContextMenuItems.Add(aboutItem);
+}
+
+private void AboutItem_Click(object sender, EventArgs e)
+{
+    System.Diagnostics.Process.Start("https://help.syncfusion.com/");       
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms RibbonControlAdv Context menu customization](Working_with_Ribbon_Images/winforms-ribboncontroladv-context-menu-customization.png)
 
 ## Ribbon Items size
 

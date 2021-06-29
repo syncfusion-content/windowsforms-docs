@@ -301,6 +301,69 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 {% endtabs %}
 
+### Menu Button customization
+
+The appearance of the menu button can be customized in Office2019Theme and HighContrastTheme by using the below listed properties,
+
+*  FileMenuBackColor 
+*  FileMenuForeColor
+*  FileMenuHoverBackColor
+*  FileMenuHoverForeColor
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.ThemeStyle.FileMenuBackColor = Color.Red;
+this.ribbonControlAdv1.ThemeStyle.FileMenuForeColor = Color.Yellow;
+this.ribbonControlAdv1.ThemeStyle.FileMenuHoverBackColor = Color.LightGreen;
+this.ribbonControlAdv1.ThemeStyle.FileMenuHoverForeColor = Color.Brown;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms RibbonControlAdv Menu customization 2019](BackStage_Images/winforms-ribboncontroladv-menu-customization-2019.jpg)
+
+The appearance of the menu button can be customized in Office2016 and Office2013 themes by using the below listed properties,
+
+*  FileMenuForeColor
+*  FileMenuHoverForeColor
+
+**Office2016**
+
+{% tabs %}
+
+{% highlight c# %}
+
+Office2016ColorTable office2016ColorTable = new Office2016ColorTable();
+office2016ColorTable.FileMenuForeColor = Color.Yellow;
+office2016ColorTable.FileMenuHoverForeColor = Color.Red;
+this.ribbonControlAdv1.Office2016ColorTable.Add(office2016ColorTable);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms RibbonControlAdv Menu customization 2016](BackStage_Images/winforms-ribboncontroladv-menu-customization-2016.jpg)
+
+**Office2013**
+
+{% tabs %}
+
+{% highlight c# %}
+
+Office2013ColorTable office2013ColorTable = new Office2013ColorTable();
+office2013ColorTable.FileMenuForeColor = Color.Yellow;
+office2013ColorTable.FileMenuHoverForeColor = Color.Red;
+this.ribbonControlAdv1.Office2013ColorTable = office2013ColorTable;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WinForms RibbonControlAdv Menu customization 2013](BackStage_Images/winforms-ribboncontroladv-menu-customization-2013.jpg)
+
 ### Menu Button Color
 
 To change the menu button color, use the ribbon property `MenuColor`.
