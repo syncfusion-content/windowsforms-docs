@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Detachable Control bar in Menus | Windows Forms | Syncfusion
-description: Control bar in menu control
+title: Detachable Control bar in Windows Forms Menus Control | Syncfusion
+description: Learn here all about the Control bar feature of Syncfusion Windows Forms Menu (Menus) control and more.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Detachable Control Bar
+# Detachable Control Bar in Windows Forms Menu (Menus)
 
 Control bars enables application developers to add dock-able / floatable controls to their form's toolbar layout. A common example of a control bar is the task pane window found in the Microsoft Office 2003 product suite.
 

@@ -1190,7 +1190,7 @@ Me.dockingManager1.ShowMetroCaptionDottedLines = False
 
 {% seealso %}
  
-[Visual Styles](/windowsforms/dockingmanager/styling)
+[Visual Styles](https://help.syncfusion.com/windowsforms/docking-manager/appearance#visual-styles)
 
 {% endseealso %}
 

@@ -7,7 +7,7 @@ control: SfDateTimeEdit
 documentation: ug
 ---
 
-# Overview
+# Windows Forms DateTimePicker (SfDateTimeEdit) Overview
 
 The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text or mask format with the support of minimum and maximum values validation, watermark, and globalization. It provides flexible options to display the date-time according to the required format.
 
@@ -35,7 +35,7 @@ The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text
 Syncfusion WinForms suite comes up with the following different DateTime controls:
 
 * [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview)
-* [DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv/overview)
+* [DateTimePickerAdv](https://help.syncfusion.com/windowsforms/classic/datetimepicker/overview)
 
 ### SfDateTimeEdit
 
@@ -43,7 +43,7 @@ The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/ove
 
 ### DateTimePickerAdv
 
-[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/datetimepickeradv/overview) is an advanced DateTimePicker control. Provides an easy way to implement a culture based DateTimePicker in an application. Support for a string to be displayed when the user does not want a specific date selected.
+[DateTimePickerAdv](https://help.syncfusion.com/windowsforms/classic/datetimepicker/overview) is an advanced DateTimePicker control. Provides an easy way to implement a culture based DateTimePicker in an application. Support for a string to be displayed when the user does not want a specific date selected.
 
 ### SfDateTimeEdit vs DateTimePickerAdv
 

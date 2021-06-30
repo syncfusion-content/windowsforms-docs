@@ -398,4 +398,4 @@ End Class
 
 ## ToolTips
 
-Tooltips can be set using [DateCellQueryInfo event](/windowsforms/monthcalendaradv/event-handling#datecellqueryinfo-event).
+Tooltips can be set using [DateCellQueryInfo event](https://help.syncfusion.com/windowsforms/classic/month-calendar/event-handling#datecellqueryinfo-event).

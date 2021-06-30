@@ -30,6 +30,6 @@ The AutoComplete class is implemented as an Extender Provider similar to the Too
 
 {% seealso %}
 
- [ComboBoxAutoComplete](/windowsforms/comboboxautocomplete/overview), [Auto Append](/windowsforms/comboboxautocomplete/autoappend)
+ [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview), [Auto Append](https://help.syncfusion.com/windowsforms/classic/autocomplete/autoappend)
 
 {% endseealso %}

@@ -1,13 +1,17 @@
 ---
 layout: post
-title: How to Place a Checkbox in a Header Cell | Windows Forms | Syncfusion
-description: How to Place a Checkbox in a Header Cell
+title: How to Place a UserControl in Header Cell | Windows Forms | Syncfusion
+description: Learn here all about how to Place a UserControl in a Header Cell of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to Place UserControl in a Header Cell
+# Place UserControl in a Header Cell in WinForms GridGroupingControl
+
+This page explains how to Place a UserControl in a Header Cell in Windows Forms GridGroupingControl and more details.
+
+## How to Place UserControl in a Header Cell in Windows Forms GridGroupingControl
 
 To have User Control in GridGroupingControl, GridGenericCellModel and GridGenericCellRenderer classes must be derived and User Control designed must be made as a CellModel in the GridGroupingControl using these derived classes.
 

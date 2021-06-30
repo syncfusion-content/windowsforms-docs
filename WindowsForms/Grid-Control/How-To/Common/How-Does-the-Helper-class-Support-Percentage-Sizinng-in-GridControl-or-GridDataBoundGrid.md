@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How-Does-the-Helper-class-Support-Percentage-Sizinng-in-GridControl-or-GridDataBoundGrid | Windows Forms | Syncfusion
-description: how does the helper class support percentage sizing in gridcontrol / griddataboundgrid
+title: Helper class support percentage sizing in GridControl | Syncfusion
+description: Learn here all about how does the helper class support percentage sizing in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How Does the Helper class Support Percentage Sizing in GridControl / GridDataBoundGrid
+# How does the helper class support percentage sizing in GridControl
 
 ### Introduction
 

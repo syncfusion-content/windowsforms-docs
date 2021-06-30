@@ -58,9 +58,3 @@ N> We can add custom text for the tabs of the Color groups. See [Tab Text] (/win
 
 N> The Custom Color Panels and User Color Panels can be stretched according to the size of the control. Refer_ ColorUIControl Appearance _for details.
 
-{% seealso %}
-
-[Runtime Settings](/windowsforms/colorui/runtime-settings)
-
-{% endseealso %}
-

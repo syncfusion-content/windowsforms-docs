@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Themes-And-Styles | WindowsForms | Syncfusion
-description: themes and styles
+description: Learn here all about Themes and Styles support in Syncfusion Windows Forms ComboBox DropDown (ComboDropDown) control and more.
 platform: WindowsForms
 control: ComboDropDown
 documentation: ug
 ---
 
-# Themes And Styles
+# Themes and Styles in Windows Forms ComboBox DropDown (ComboDropDown)
 
 The below given properties enhances the look and feel of the ComboDropDown.
 
@@ -47,7 +47,7 @@ Me.comboDropDown1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorfu
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img288.jpeg) 
+![Themes and Styles in Windows Forms ComboBox DropDown](Overview_images/Overview_img288.jpeg) 
 
 
 
@@ -83,7 +83,7 @@ Me.comboDropDown1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Them
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img289.jpeg) 
+![Office Themes in Windows Forms ComboBox DropDown](Overview_images/Overview_img289.jpeg) 
 
 
 
@@ -107,4 +107,4 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 {% endhighlight %}
 {% endtabs %}
 
-![](Overview_images/Overview_img290.jpeg) 
+![Custom Colors in Windows Forms ComboBox DropDown](Overview_images/Overview_img290.jpeg) 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: TreeView-Appearance | WindowsForms | Syncfusion
-description: treeview appearance
+description: Learn here about Treeview Appearance of Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# TreeView Appearance
+# TreeView Appearance in WinForms TreeView(SfTreeView)
 
 This section provides options to the customize the tree structure and the nodes.
 
@@ -90,7 +90,7 @@ Me.treeViewAdv1.TransparentControls = True
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img34.jpeg)
+![Customization in PlusMinus WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img34.jpeg)
 
 
 ### Themed TreeView Control
@@ -185,7 +185,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img35.jpeg)
+![Drawing Node BackGround in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img35.jpeg)
 
 
 ## Painting the Active and Inactive Nodes
@@ -229,7 +229,7 @@ Me.treeViewAdv1.InactiveSelectedNodeForeColor = System.Drawing.Color.SteelBlue
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img37.png)
+![Paint Active and Inactive Nodes](Concepts-and--Features_images/Concepts-and--Features_img37.png)
 
 ## Foreground Settings
 
@@ -276,7 +276,7 @@ Sets the color for the specific node text.</td></tr>
 
 N> When you set the ForeColor property for TreeViewAdv control, it will get reflected in the Node's TextColor property. User can change the color for specific nodes using TreeNodeAdv.TextColor property.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
+![ForeGround Settings in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
 
 ## Drawing Selected Node Foreground
 
@@ -340,7 +340,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img42.jpeg)
+![Drawing Selected Node Foreground in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img42.jpeg)
 
 Active Node Foreground Settings
 
@@ -419,7 +419,7 @@ Border3DStyle</td><td>
 Indicates the style of the 3D border when BorderStyle is set to Fixed3D.RaisedOuter<br>SunkenOuterRaisedInnerSunkenInnerRaisedEtchedBumpSunken (Default)Adjust Flat</td></tr>
 </table>
 
-![](Concepts-and--Features_images/Concepts-and--Features_img43.jpeg)
+![Border in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img43.jpeg)
 
 ## 2D Border for TreeView
 
@@ -464,7 +464,7 @@ Me.treeViewAdv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
+![Two Dimension Border in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img45.jpeg)
 
 
 ## Spacing
@@ -507,7 +507,7 @@ Me.treeViewAdv1.Indent = 21
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img46.jpeg)
+![Spacing in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img46.jpeg)
 
 ## Visual Style
 
@@ -543,4 +543,4 @@ Me.treeViewAdv1.Style = Syncfusion.Windows.Forms.Tools.TreeStyle.Office2016Color
 
 {% endtabs %}
 
-![](Getting-Started_images/Office2016Colorful.jpeg)
+![Visual Style in WinForms TreeView](Getting-Started_images/Office2016Colorful.jpeg)

@@ -273,4 +273,4 @@ End Sub
 
 ![Winforms showing the contextmenu in tabbed form](ContextMenu_Images/ContextMenu_Images_img1.png)
 
-You can download the sample from following link: [Sample](https://github.com/syncfusion/winforms-demos/tree/master/Core.WinForms/Samples/SfForm/TabbedForm/CS)
+You can download the sample from following link: [Sample](https://github.com/syncfusion/winforms-demos/tree/ba27b6748fa0723dcd42906ee58cb0e944291e51/dialogs/SfForm/TabbedForm/CS)

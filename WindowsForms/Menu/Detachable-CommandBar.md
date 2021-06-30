@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Detachable Command bar in Menus | Windows Forms | Syncfusion
-description: Command bar in menu control
+title: Detachable Command bar in Windows Forms Menu control | Syncfusion
+description: Learn about the Command bar in Syncfusion Windows Forms Menu control, its elements and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Detachable Command Bar
+# Detachable Command Bar in Windows Forms Menu (Menus)
 
 The [`CommandBar`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html) instance can be added to the menu bar and can be set to detach from the parent menu bar.
 
@@ -53,6 +53,6 @@ Me.mainFrameBarManager1.DetachedCommandBars.Add(Me.commandBar1);
 
 {% seealso %}
 
-[Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-child-controls)
+[Hosting controls in command bar](https://help.syncfusion.com/windowsforms/commandbar/hosting-controls)
 
 {% endseealso %}

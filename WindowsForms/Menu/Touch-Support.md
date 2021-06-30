@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Touch support in Menus | Windows Forms | Syncfusion
-description: Touch support in menu and menu items.
+title: Touch support in Windows Forms Menus Control | Syncfusion
+description: Learn here all about the touch support feature of Syncfusion Windows Forms Menu (Menus) control and more.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support in Windows Forms Menu (Menus)
 
 The menu control supports to touch mode to the menu items and other visual elements. The components are also scaled automatically to render the menu items. This can be done by using the [`EnableTouchMode`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarManager.html#Syncfusion_Windows_Forms_Tools_XPMenus_BarManager_EnableTouchMode) property or the menu instance. The below code snippet shows the touch mode is being enabled in the menu.
 
 By default, this property is set to `false`.
 
-![Menu disabled with touch mode](Touch-Support-images/menu_Touch_Disabled.png "Menu before enabling touch mode")
+![Menu disabled with touch mode](Touch-Support-images/menu_Touch_Disabled.png)
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.mainFrameBarManager1.EnableTouchMode = True
 
 {% endtabs %}
 
-![Menu enabled with touch mode](Touch-Support-images/menu_Touch_Enabled.png "Menu after enabling touch mode")
+![Menu enabled with touch mode](Touch-Support-images/menu_Touch_Enabled.png)
 
 ## Touch selection
 

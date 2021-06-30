@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in WinForms DataGrid control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more details.
+title: Interactive Features in Windows Forms DataGrid control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Context Menu
 
-SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://msdn.microsoft.com/en-us/library/system.windows.forms.contextmenustrip(v=vs.110).aspx). It allows to create context menus for different rows in an efficient manner.
+SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=net-5.0). It allows to create context menus for different rows in an efficient manner.
 
 ### ContextMenu for Records
 

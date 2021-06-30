@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DateTimePickerAdv in Windows Forms xptoolbar | Syncfusion
-description: Learn about Creating DateTimePickerAdv support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
+title: DateTimePickerAdv in Windows Forms DateTimePickerAdv | Syncfusion
+description: Learn about Creating DateTimePickerAdv support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control, its elements, and more.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ### Create a simple application with DateTimePickerAdv
 

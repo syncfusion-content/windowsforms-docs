@@ -7,7 +7,7 @@ control: MainFrameBarManager
 documentation: ug
 ---
 
-# Overview
+# Windows Forms Menu (Menus) Overview
 
 [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control allows the hierarchal menu model of elements that are associated with commands and toolbars. This control contains a collection of [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html), which can be expanded to display additional [BarItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.BarItem.html) or to perform a specific action when being clicked.
 
@@ -28,6 +28,6 @@ documentation: ug
 
 * **Visual style** - Supports rich set of visual styles to customize the look and feel of MainFrameBarManager.
 
-* **MDI layout** - Supports MDI Layout, Learn more [MDIChildForms](https://help.syncfusion.com/windowsforms/mdichildforms/overview)
+* **MDI layout** - Supports MDI Layout, Learn more [MDIChildForms](https://help.syncfusion.com/windowsforms/menu/mdi-child-forms)
 
 * **ToolTip** - Provides options to set ToolTip for each BarItem.

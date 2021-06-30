@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid-Model-Options | Windows Forms | Syncfusion
-description: grid model options 
+title: Grid-Model-Options in Windows Forms GridControl | Syncfusion
+description: Learn here all about the grid model options support of Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Grid Model Options 
+# Grid Model Options in Windows Forms GridControl
 
 This section provides information on how to write syntax for the following GridModel Options:
 

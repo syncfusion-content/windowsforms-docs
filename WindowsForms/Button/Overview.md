@@ -43,7 +43,7 @@ Syncfusion WinForms suite comes up with the following different buttons:
 
 ### ButtonAdv
 
-[ButtonAdv](https://help.syncfusion.com/windowsforms/buttonadv/overview) is an advanced button control capable of displaying images with different alignments and various border styles. This can be configured in any predefined [ButtonTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html#Syncfusion_Windows_Forms_ButtonAdv_ButtonType) such as Calculator, Up, Down, and so on. This can also afford XP or Office style.
+[ButtonAdv](https://help.syncfusion.com/windowsforms/classic/button/overview) is an advanced button control capable of displaying images with different alignments and various border styles. This can be configured in any predefined [ButtonTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html#Syncfusion_Windows_Forms_ButtonAdv_ButtonType) such as Calculator, Up, Down, and so on. This can also afford XP or Office style.
 
 ### ButtonEdit
 

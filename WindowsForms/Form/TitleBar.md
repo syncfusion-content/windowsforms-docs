@@ -88,7 +88,7 @@ Me.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico")
 
 ### Hiding the title bar buttons
 
-Buttons in the title bar can be hide by disabling the [MinimizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MinimizeBox)&rd=true), [MaximizeBox](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.MaximizeBox)&rd=true) and [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_CloseButtonVisible) properties.
+Buttons in the title bar can be hide by disabling the [MinimizeBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.minimizebox?view=net-5.0), [MaximizeBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.maximizebox?view=net-5.0) and [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_CloseButtonVisible) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ Me.MaximizeBox = False
 
 ## Rich text formatting
 
-Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText) property and adding the proper rich text to the [Text](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.Windows.Forms.Form.Text)&rd=true) property of the form.
+Rich text can be displayed inside the title bar by enabling the [Style.TitleBar.AllowRichText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.TitleBarStyleInfo.html#Syncfusion_WinForms_Controls_Styles_TitleBarStyleInfo_AllowRichText) property and adding the proper rich text to the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.text?view=net-5.0) property of the form.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Serialization and Deserialization
-description: This section explains about the Serialization and Deserialization in SfDataGrid.
+title: Serialization and Deserialization | WinForms | Syncfusion
+description: This section explains about the Serialization and Deserialization in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization
+# Serialization and Deserialization in WinForms DataGrid (SfDataGrid)
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-5.0).
 
 ## Serialization
 
@@ -31,7 +31,7 @@ End Using
 
 ### Serialize as Stream
 
-The SfDataGrid settings can be stored as [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Serialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
+The SfDataGrid settings can be stored as [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) using [Serialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Serialize_System_IO_Stream_) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +245,7 @@ End Using
 
 ### Deserialize from Stream
 
-The SfDataGrid settings can be deserialized from [Stream](https://msdn.microsoft.com/en-us/library/system.io.stream.aspx) using [Deserialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Deserialize_System_IO_Stream_) method.
+The SfDataGrid settings can be deserialized from [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) using [Deserialize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_Deserialize_System_IO_Stream_) method.
 
 {% tabs %}
 {% highlight c# %}

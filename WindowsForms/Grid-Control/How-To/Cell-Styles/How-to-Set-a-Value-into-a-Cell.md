@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Styles in GridControl
-description: how to set a value into a cell
+title: How to set a value into a cell in GridControl | Syncfusion
+description: Learn here all about how to set a value into a cell in GridControl of Syncfusion Windows Forms Gridcontrol and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to set a value into a cell
+# How to set a value into a cell in Windows Forms GridControl
 
 A style object holds all the information that affects cells appearance. One property contained in the style object is its CellValue. It is this property that you have to set in order to place a value in a cell. Another property called GridStyleInfo.Text will allow you to set the value of a cell using a string. Text and [CellValue](/windowsforms/Grid/Cell-Style-Architecture#text-and-cellvalue) are related properties and setting one of these properties will also set the other.
 

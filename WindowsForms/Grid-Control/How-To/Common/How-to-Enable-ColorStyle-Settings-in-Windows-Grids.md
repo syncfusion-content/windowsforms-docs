@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Enable-ColorStyle-Settings-in-Windows-Grids | Windows Forms | Syncfusion
-description: how to enable colorstyle settings in windows grids
+title: How to Enable ColorStyle Settings in Windows Grids | Syncfusion
+description: Learn here all about how to enable colorstyle settings in windows grids in Syncfusion Windows Forms GridControl and more.
 platform: windowsforms
 control: Grid
 documentation: ug
@@ -41,7 +41,7 @@ Boolean </td></tr>
 
 _{Installed Path}\Syncfusion\EssentialStudio\{Version}\Windows\Grid.Grouping.Windows\Samples\2.0\ Styling and Formatting\Skin Customization Demo\_
 
-![](How-to-Enable-ColorStyle-Settings-in-Windows-Grids_images/How-to-Enable-ColorStyle-Settings-in-Windows-Grids_img1.png)
+![ColorStyle settings in Windows Forms GridControl](How-to-Enable-ColorStyle-Settings-in-Windows-Grids_images/How-to-Enable-ColorStyle-Settings-in-Windows-Grids_img1.png)
 
 
 

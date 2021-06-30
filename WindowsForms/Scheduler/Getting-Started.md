@@ -96,7 +96,7 @@ Follow the steps to create an appointment:
 
 This file defines several classes that implements  the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
 
-Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Schedule sample](https://github.com/syncfusion/winforms-demos/tree/master/Schedule.Windows/Samples/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
+Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Schedule sample](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
 ![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img12.jpeg)
 

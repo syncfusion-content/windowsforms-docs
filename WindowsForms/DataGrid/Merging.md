@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merging
-description: This section explains about the Merging support in SfDataGrid.
+title: Merge Cells in Windows Forms DataGrid control | Syncfusion
+description: Learn here all about merging feature of Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
 ---
 
-# Merge Cells
+# Merge Cells in Windows Forms DataGrid (SfDataGrid)
 The SfDataGrid allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The merged cells can be exported and printed.
 
 `QueryCoveredRange` event is not fired for the cells that are not visible and also for the cells that are already in covered range. When scrolling the grid, the merged range will be added for newly added rows and columns through this event and removed for the rows and columns which are out of view.
@@ -70,7 +70,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Merging_images/Merging1.png)
+![Cells merged horizontally in Windows Forms DataGrid](Merging_images/Merging1.png)
 
 ### Merging cells vertically by fixed range
 A range of rows for a particular column can be merged by setting the row range using the [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
@@ -106,7 +106,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Merging_images/Merging2.png)
+![Cells merged Vertically in Windows Forms DataGrid](Merging_images/Merging2.png)
 
 ### Merging range of cells
 A range of rows and columns can be merged by using the [Left](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Left), [Right](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Right), [Top](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Top) and [Bottom](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html#Syncfusion_WinForms_DataGrid_CoveredCellInfo_Bottom) properties of [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.CoveredCellInfo.html).
@@ -138,7 +138,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Merging_images/Merging3.png)
+![Merging range of cells in Windows Forms DataGrid](Merging_images/Merging3.png)
 
 ## Merging cells based on the content
 The redundant data of adjacent cells in a row or a column can be merged by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
@@ -423,7 +423,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](Merging_images/Merging4.png)
+![Cells merged based on content](Merging_images/Merging4.png)
 
 ## Merge cells in Master-Details View
 Master- Details view allows merging the range of cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event of details view DataGrid. The [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html) triggered event can be get from the [QueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.GridEventArgs.html#Syncfusion_WinForms_DataGrid_Events_GridEventArgs_OriginalSender) of the `QueryCoveredRange` event.
@@ -460,7 +460,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Merging_images/Merging5.png)
+![Merge cells in Master-Details View Windows Forms DataGrid](Merging_images/Merging5.png)
 
 ## Exporting Merged Cells
 

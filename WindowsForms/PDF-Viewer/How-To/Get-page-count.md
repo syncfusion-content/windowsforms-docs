@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Get-page-count | Windows Forms | Syncfusion
-description: get page count?
+title: How to Get page count in Windows Forms PdfViewerControl | Syncfusion
+description: Learn here all about how to get the page count of Syncfusion Windows Forms PdfViewer Control and more.
 platform: windowsforms
 control: PdfViewerControl
 documentation: ug
 ---
 
-## Get page count
+# How to Get page count in Windows Forms PdfViewerControl
 
 The number of pages in the currently loaded PDF can be found by using PageCount property.
 

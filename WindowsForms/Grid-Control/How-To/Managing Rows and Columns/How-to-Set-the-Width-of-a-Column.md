@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Rows and Columns in GridControl
-description: how to set the width of a column
+title: Set the Width of a Column in Windows Forms GridControl | Syncfusion
+description: Learn here about how to set the width of a Column in Syncfusion Essential Studio Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug

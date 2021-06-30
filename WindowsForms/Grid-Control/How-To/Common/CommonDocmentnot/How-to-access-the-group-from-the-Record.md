@@ -1,13 +1,17 @@
 ---
 layout: post
 title: How to access the group from the Record | Windows Forms | Syncfusion
-description: how to access the group from the record
+description: Learn here all about how to access the group from the record of Syncfusion Windows Forms GridGroupingControl and more.
 platform: windowsforms
 control: GridGrouping
 documentation: ug
 ---
 
-# How to access the group from the Record
+# Access the group from the Record in Windows Forms GridGroupingControl
+
+This page explains how to access the group from the Record in Windows Forms GridGroupingControl and more details.
+
+## How to access the group from the Record in Windows Forms GridGroupingControl
 
 To access the group from the record, use the following code snippet.
 

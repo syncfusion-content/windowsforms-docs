@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive features in Menus | Windows Forms | Syncfusion
-description: Interactive features in MainFrameBarManager
+title: Interactive features in Windows Forms Menus Control | Syncfusion
+description: Learn about Interactive features in Syncfusion Windows Forms Menu (Menus) control, its elements and more details.
 platform: WindowsForms
 control: MainFrameBarManager 
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in Windows Forms Menu (Menus)
 
 Menu control supports interactive features like tooltip and context menu associated with specified menu items. In this page such interactive features are discussed.
 
@@ -69,6 +69,6 @@ By default, the context menu appears while right-clicking of the desired tool ba
 
 {% seealso %}
 
-[Associate popup menu with menu control](https://help.syncfusion.com/windowsforms/popupmenu/faq/how-to-associate-popup-menu-with-barmanager)
+[Associate popup menu with menu control](https://help.syncfusion.com/windowsforms/popupmenu/how-to-associate-popup-menu-with-bar-manager)
 
 {% endseealso %}

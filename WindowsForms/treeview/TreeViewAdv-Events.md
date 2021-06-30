@@ -1,13 +1,13 @@
 ---
 layout: post
 title: TreeViewAdv-Events | WindowsForms | Syncfusion
-description: treeviewadv events
+description: Learn here about TreeViewAdv events of Syncfusion Windows Forms TreeView control, its elements and more details.
 platform: WindowsForms
 control: TreeView 
 documentation: ug
 ---
 
-# TreeViewAdv Events
+# TreeViewAdv Events in WinForms TreeView(SfTreeView)
 
 This section covers the events related to the below concepts.
 
@@ -240,7 +240,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
+![Adding Nodes to Selected Node in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
 ### KeyDown Event
 
@@ -327,7 +327,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
  
-![](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
+![Adding Nodes using KeyBoard in WinForms TreeView](Concepts-and--Features_images/Concepts-and--Features_img64.jpeg)
 
 Nodes added using Keyboard
 {:.caption}
@@ -1006,9 +1006,9 @@ End Sub
 
 The following figure shows the color change for some of the nodes of the user that indicates the canceled Read/Write property for that node.
 
-![](Concepts-and--Features_images/Concepts-and--Features_img66.jpeg)
+![canceled Read/Write property for Node](Concepts-and--Features_images/Concepts-and--Features_img66.jpeg)
 
-![](Concepts-and--Features_images/Concepts-and--Features_img67.jpeg)
+![canceled Read/Write property for Node](Concepts-and--Features_images/Concepts-and--Features_img67.jpeg)
 
 ## Node Selection
 

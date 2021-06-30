@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Bullet Graph control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Bullet Graph control and more details.
+description: Learn here about getting started with Syncfusion Windows Forms Bullet Graph control, its elements, and more.
 platform: windowsforms
 control: Bullet Graph
 documentation: ug
@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Create the Bullet Graph Programmatically
 

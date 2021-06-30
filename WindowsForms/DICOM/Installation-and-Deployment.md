@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Installation-and-Deployment | Windows Forms | Syncfusion
-description: installation and deployment
+description: Learn here all about installation and deployment of Syncfusion Windows Forms DICOM control and more.
 platform: windowsforms
 control: DICOM 
 documentation: ug
 ---
 
-# Installation and Deployment
+# Installation and Deployment in Windows Forms Diagram
 
 ## Installation
 

@@ -11,7 +11,7 @@ documentation: ug
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 ## Localize at sample level
-To localize the SfListView based on the  [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture(v=vs.110).aspx) using resource files, follow the steps:
+To localize the SfListView based on the  [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) using resource files, follow the steps:
 
 1) Create a new folder and name it as Resources in your application.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Control dependencies | Windows Forms | Syncfusion
-description: Control Dependencies for Windows Forms 
+description: Learn here about Control Dependencies with Syncfusion Windows Forms control, its elements and more details.
 platform: WindowsForms
 control: Introduction
 documentation: ug
 ---
 
 
-# Control Dependencies
+# Windows Forms Control Dependencies
 
-This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/nuget-packages) section to know how to add NuGet reference.
+This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [deployment section](https://help.syncfusion.com/windowsforms/deployment) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
  
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) to learn how to add syncfusion control.
 

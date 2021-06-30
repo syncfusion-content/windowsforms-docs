@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in GridControl
-description: Printing options in GridControl
+title: Printing Options in Windows Forms GridControl | Syncfusion
+description: Learn here about printing options in Syncfusion Essential Studio Windows Forms Grid Control, and more.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# Printing Options 
+# Printing Options in Windows Forms GridControl
 
 Essential Grid provides support to print column and row header and horizontal and vertical lines. 
 

@@ -15,7 +15,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/con
 
 ### Installing NuGet packages
 
-Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/nuget-packages) section. 
+Adding reference to Syncfusion assemblies through NuGet packages is illustrated in the [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) section. 
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Windows Forms application to use our components.
 
@@ -103,29 +103,3 @@ Controls.Add(pdfViewerControl1)
 {% endtabs %}
 
 Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
-
-## Appearance and Structure of the Control
-
-The following screenshot depicts different sections of the PdfViewerControl.
-
-![Windows forms pdfviewer displays different section of control](Getting-Started_images/Getting-Started_img3.png)
-
-
-### Toolbar
-
-![Windows forms pdfviewer displays the toolbar](Getting-Started_images/Getting-Started_img4.png)
-
-1. Open file
-2. Bookmark 
-3. Save document
-4. Print PDF
-5. Go to first page
-6. Go to previous page
-7. Page indicator
-8. Go to next page
-9. Go to last page
-10. Preset magnification
-11. Decrease magnification
-12. Increase magnification
-13. Fill window
-14. Fit page to window
