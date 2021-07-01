@@ -184,6 +184,8 @@ private void AboutItem_Click(object sender, EventArgs e)
 
 ![WinForms RibbonControlAdv Context menu customization](Working_with_Ribbon_Images/winforms-ribboncontroladv-context-menu-customization.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/how-to-add-the-custom-items-to-the-context-menu-of-the-Ribbon)
+
 ## Ribbon Items size
 
 *	`Size` property can be used to set the height and width of the item.
