@@ -305,10 +305,10 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 The appearance of the menu button can be customized in Office2019Theme and HighContrastTheme by using the below listed properties,
 
-*  FileMenuBackColor 
-*  FileMenuForeColor
-*  FileMenuHoverBackColor
-*  FileMenuHoverForeColor
+*  [`FileMenuBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Ribbon.RibbonControlAdvVisualStyle.html#Syncfusion_Windows_Forms_Ribbon_RibbonControlAdvVisualStyle_FileMenuBackColor) 
+*  [`FileMenuForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Ribbon.RibbonControlAdvVisualStyle.html#Syncfusion_Windows_Forms_Ribbon_RibbonControlAdvVisualStyle_FileMenuForeColor)
+*  [`FileMenuHoverBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Ribbon.RibbonControlAdvVisualStyle.html#Syncfusion_Windows_Forms_Ribbon_RibbonControlAdvVisualStyle_FileMenuHoverBackColor)
+*  [`FileMenuHoverForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Ribbon.RibbonControlAdvVisualStyle.html#Syncfusion_Windows_Forms_Ribbon_RibbonControlAdvVisualStyle_FileMenuHoverForeColor)
 
 {% tabs %}
 
@@ -327,8 +327,8 @@ this.ribbonControlAdv1.ThemeStyle.FileMenuHoverForeColor = Color.Brown;
 
 The appearance of the menu button can be customized in Office2016 and Office2013 themes by using the below listed properties,
 
-*  FileMenuForeColor
-*  FileMenuHoverForeColor
+*  [`FileMenuForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Office2016ColorTable.html#Syncfusion_Windows_Forms_Tools_Office2016ColorTable_FileMenuForeColor)
+*  [`FileMenuHoverForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Office2016ColorTable.html#Syncfusion_Windows_Forms_Tools_Office2016ColorTable_FileMenuHoverForeColor)
 
 **Office2016**
 
