@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Engineering in Windows Forms Calculation Engine control | Syncfusion
+title: Engineering in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Engineering support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
