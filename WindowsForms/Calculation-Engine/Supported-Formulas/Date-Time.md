@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Time in Windows Forms Calculation Engine control | Syncfusion
+title: Date Time in Windows Forms Calculation Engine | Syncfusion
 description: Learn about Date Time support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
