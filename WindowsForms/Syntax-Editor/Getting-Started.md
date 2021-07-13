@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Syntax Editor control | Syncfusion
+title: Getting Started with Windows Forms Syntax Editor | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor

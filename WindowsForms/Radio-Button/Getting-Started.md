@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Radio Button control | Syncfusion
+title: Getting Started with Windows Forms Radio Button | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Radio Button (RadioButtonAdv) control and more details.
 platform: WindowsForms
 control: RadioButtonAdv
