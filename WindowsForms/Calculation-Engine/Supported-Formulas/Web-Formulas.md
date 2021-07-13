@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web Formulas in Windows Forms Calculation Engine control | Syncfusion
+title: Web Formulas in Windows Forms Calculation Engine| Syncfusion
 description: Learn about Web Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
