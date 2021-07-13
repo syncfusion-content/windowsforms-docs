@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Text Formulas in Windows Forms Calculation Engine control | Syncfusion
+title: Text Formulas in WinForms Calculation Engine | Syncfusion
 description: Learn about Text Formulas support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug
 ---
 
-# Text Formulas in Windows Forms Calculation Engine (Calculate)
+# Text Formulas in WinForms Calculation Engine (Calculate)
 
 
 
