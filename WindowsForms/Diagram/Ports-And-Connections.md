@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ports And Connections in Windows Forms Diagram control | Syncfusion
+title: Ports And Connections in Windows Forms Diagram | Syncfusion
 description: Learn about Ports And Connections support in Syncfusion Essential Studio Windows Forms Diagram control and more.
 platform: windowsforms
 control: Diagram
