@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Progress Bar control | Syncfusion
+title: Getting Started in Windows Forms Progress Bar | Syncfusion
 description: Learn about Getting Started support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Visualization in Windows Forms Syntax Editor control | Syncfusion
+title: Text Visualization in Windows Forms Syntax Editor | Syncfusion
 description: Learn about Text Visualization support in Syncfusion Windows Forms Syntax Editor control and more details.
 platform: WindowsForms
 control: SyntaxEditor
