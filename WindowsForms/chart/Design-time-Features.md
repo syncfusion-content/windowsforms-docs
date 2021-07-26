@@ -125,7 +125,7 @@ Select one column for XValue and another for YValue, between which you wanted to
 
 {% seealso %}
 
-[Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series)
+[Chart Series](https://help.syncfusion.com/windowsforms/chart/chart-series)
 
 {% endseealso %}
 
@@ -211,7 +211,7 @@ Toolbar's border, border style, border width and border color can be set through
 
 {% seealso %}
 
-[Chart Toolbar](http://help.syncfusion.com/windowsforms/chart/runtime-features#toolbars)
+[Chart Toolbar](https://help.syncfusion.com/windowsforms/chart/runtime-features#toolbars)
 
 {% endseealso %}
 

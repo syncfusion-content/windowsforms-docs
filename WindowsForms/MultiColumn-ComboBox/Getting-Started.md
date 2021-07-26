@@ -52,6 +52,6 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 {% endhighlight %}
 {% endtabs %}
 
-After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding).
+After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
 
 

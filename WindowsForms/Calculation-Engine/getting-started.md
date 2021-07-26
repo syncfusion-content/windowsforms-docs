@@ -302,7 +302,7 @@ To use Essential Calculate support, we need to derive the class from [ICalcData]
 To add calculation support to classes that represent data in a row/column format like a Data Grid, then you need to derive the classes inherited from `ICalcData` interface. Since `GetValueRowCol` and `SetValueRowCol` methods 
 of `ICalcData` interface is used to get and set the values of the variables at runtime for computation. `CalcEngine` listens to the `ValueChanged` event of `ICalcData` interface to tracks the dependencies and compute the formulas.
 
-For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculate/working-with-icalcdata)
+For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-icalcdata)
 
 N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
 

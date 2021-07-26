@@ -214,7 +214,7 @@ Below are the list of features in SfDataGrid over GridGroupingControl,
 Column auto sizing
 </td>
 <td>
-SfDataGrid enables fitting the width of the cell based on its content on demand for all columns or certain columns by using {{'[AutoSizeColumnsMode](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#column-sizing)'| markdownify }}.
+SfDataGrid enables fitting the width of the cell based on its content on demand for all columns or certain columns by using {{'[AutoSizeColumnsMode](https://help.syncfusion.com/windowsforms/datagrid/columns)'| markdownify }}.
 
 </td>
 </tr>
@@ -232,7 +232,7 @@ SfDataGrid supports to roll back the changes when you press Esc Key by implement
 Style customization
 </td>
 <td>
-SfDataGrid control provides extensive support to customize the styles of cells and rows. To know more about styling in SfDataGrid, refer {{'[here](https://help.syncfusion.com/windowsforms/sfdatagrid/styling)'| markdownify }}.
+SfDataGrid control provides extensive support to customize the styles of cells and rows. To know more about styling in SfDataGrid, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/styling)'| markdownify }}.
 
 </td>
 </tr>
@@ -241,7 +241,7 @@ SfDataGrid control provides extensive support to customize the styles of cells a
 Exporting to Excel
 </td>
 <td>
-SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported workbook. SfDataGrid Exporting is faster than GridGroupingControl. It takes very less time to export the huge amounts of data. To know more about exporting SfDataGrid to Excel, refer {{'[here](https://help.syncfusion.com/windowsforms/sfdatagrid/exporttoexcel)'| markdownify }}.
+SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported workbook. SfDataGrid Exporting is faster than GridGroupingControl. It takes very less time to export the huge amounts of data. To know more about exporting SfDataGrid to Excel, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttoexcel)'| markdownify }}.
 
 </td>
 </tr>
@@ -250,7 +250,7 @@ SfDataGrid control provides support to Export data to Excel and returns an Excel
 Exporting to PDF
 </td>
 <td>
-SfDataGrid control provides support for exporting the data into a PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to PDF file. To know more about exporting SfDataGrid to PDF, refer {{'[here](https://help.syncfusion.com/windowsforms/sfdatagrid/exporttopdf)'| markdownify }}.
+SfDataGrid control provides support for exporting the data into a PDF file. You can export Grouping, Filtering, Summaries and DetailsView, StackedHeaders in to PDF file. To know more about exporting SfDataGrid to PDF, refer {{'[here](https://help.syncfusion.com/windowsforms/datagrid/exporttopdf)'| markdownify }}.
 
 </td>
 </tr>

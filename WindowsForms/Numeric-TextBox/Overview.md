@@ -188,7 +188,7 @@ The list of features in SfNumericTextBox over existing numeric textbox controls 
 Different modes
 </td>
 <td>
-Supports specific modes like numeric, currency, and percent. To learn more about different modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
+Supports specific modes like numeric, currency, and percent. To learn more about different modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted#different-types-of-format-modes)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -196,7 +196,7 @@ Supports specific modes like numeric, currency, and percent. To learn more about
 Formatting
 </td>
 <td>
-Formats the value based on the user needs. To learn more about format modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#formatmode)'| markdownify }}.
+Formats the value based on the user needs. To learn more about format modes in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#formatmode)'| markdownify }}.
 </td>
 </tr>
 <tr>

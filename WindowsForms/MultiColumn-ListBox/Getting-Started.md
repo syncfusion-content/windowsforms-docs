@@ -109,4 +109,4 @@ gridListBox1.FillLastColumn = True
 
 ## Selection
 
-Selection for the GridListControl can be enabled by using the SelectionMode property. The `GridListControl` supports three types of selection behaviors based on the [SelectionMode](https://help.syncfusion.com/windowsforms/gridlist/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to one for selecting single row or multi-simple to select many rows.
+Selection for the GridListControl can be enabled by using the SelectionMode property. The `GridListControl` supports three types of selection behaviors based on the [SelectionMode](https://help.syncfusion.com/windowsforms/multicolumn-listbox/data-binding-and-selection-modes) option. The SelectionBehaviors can be specified to one for selecting single row or multi-simple to select many rows.

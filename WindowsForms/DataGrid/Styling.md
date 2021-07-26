@@ -81,7 +81,7 @@ N>[GridColumnBase.CellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 ## Styling Column Header
 Appearance of the column headers can be customized by using the [HeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_HeaderStyle) property.
-For more details, refer to `Appearance` in [Header Row](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#header-row ) section.
+For more details, refer to `Appearance` in [Header Row](https://help.syncfusion.com/windowsforms/datagrid/rows#header-row) section.
 
 ## Styling Stacked Header
 Appearance of the stacked headers can be customized by the [StackedHeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_StackedHeaderStyle) property.
@@ -89,15 +89,15 @@ For more details, refer to `Appearance` in [Stacked Headers](https://help.syncfu
 
 ## Styling CaptionSummary
 Appearance of the caption summary can be customized by using the [CaptionSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CaptionSummaryRowStyle) property.
-For more details, refer to `Appearance` in [Caption Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#caption-summary ) section.
+For more details, refer to `Appearance` in [Caption Summary](https://help.syncfusion.com/windowsforms/datagrid/summaries#caption-summary) section.
 
 ## Styling GroupSummary
 Appearance of the group summary can be customized by using the [GroupSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupSummaryRowStyle) property.
-For more details, refer to `Appearance` in [Group Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#group-summary ) section.
+For more details, refer to `Appearance` in [Group Summary](https://help.syncfusion.com/windowsforms/datagrid/summaries#group-summary) section.
 
 ## Styling TableSummary
 Appearance of the table summary can be customized by using the [TableSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_TableSummaryRowStyle) property.
-For more details, refer to `Appearance` in [Table Summary](https://help.syncfusion.com/windowsforms/sfdatagrid/summaries#table-summary ) section.
+For more details, refer to `Appearance` in [Table Summary](https://help.syncfusion.com/windowsforms/datagrid/summaries#table-summary) section.
 
 ## Gradient Background Style
 
@@ -166,19 +166,19 @@ Me.sfDataGrid1.Style.HeaderStyle.Interior = New Syncfusion.WinForms.Core.BrushIn
 
 ## Styling UnboundRows
 Appearance of the unbound rows can be customized by using the [UnboundRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_UnboundRowStyle) property.
-For more details, refer to `Appearance` in [Unbound Rows](https://help.syncfusion.com/windowsforms/sfdatagrid/unboundrow) section.
+For more details, refer to `Appearance` in [Unbound Rows](https://help.syncfusion.com/windowsforms/datagrid/unboundrow) section.
 
 ## Styling AddNewRow
 Appearance of the AddNewRow can be customized by using the [AddNewRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_AddNewRowStyle) property.
-For more details, refer to `Appearance` in [AddNewRow](https://help.syncfusion.com/windowsforms/sfdatagrid/datamanipulation#addnewrow ) section.
+For more details, refer to `Appearance` in [AddNewRow](https://help.syncfusion.com/windowsforms/datagrid/datamanipulation#addnewrow ) section.
 
 ## Styling RowHeader
 Appearance of a row header can be customized by using the [RowHeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_RowHeaderStyle) property.
-For more details, refer to `Appearance` in [Row Header](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#row-header ) section.
+For more details, refer to `Appearance` in [Row Header](https://help.syncfusion.com/windowsforms/datagrid/rows#row-header) section.
 
 ## Styling FilterRow
 Appearance of a filter row can be customized by using the [FilterRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_FilterRowStyle) property.
-For more details, refer to `Appearance` in [Filter Row](https://help.syncfusion.com/windowsforms/sfdatagrid/filterrow#appearance ) section.
+For more details, refer to `Appearance` in [Filter Row](https://help.syncfusion.com/windowsforms/datagrid/filterrow#appearance) section.
 
 ## Styling Scrollbars
 Appearance of the vertical scrollbar can be customized by using the [VerticalScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.Styles.ScrollerVisualStyle.html#Syncfusion_WinForms_Controls_Styles_ScrollerVisualStyle_VerticalScrollBar) property.
@@ -279,7 +279,7 @@ Me.sfDataGrid1.Style.HorizontalScrollBar.ScrollBarBackColor = Color.LightGray
 
 ## Styling GroupDropArea
 Appearance of the GroupDropArea can be customized by using the [GroupDropAreaStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaStyle)  property.
-For more details, refer to `Customizing GroupDropArea Appearance` in [Grouping](https://help.syncfusion.com/windowsforms/sfdatagrid/grouping#groupdroparea-customization ) section.
+For more details, refer to `Customizing GroupDropArea Appearance` in [Grouping](https://help.syncfusion.com/windowsforms/datagrid/grouping#groupdroparea-customization) section.
 
 ## Styling GroupDropAreaItem
 Appearance of the GroupDropAreaItem can be customized by using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaItemStyle) property.
@@ -287,11 +287,11 @@ For more details, refer to `Customizing GroupDropAreaItem` Appearance in [Groupi
 
 ## Styling Frozen Rows and Columns
 Appearance of the frozen rows and columns can be customized by using the [FreezePaneLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_FreezePaneLineStyle) property.
-For more details, refer to `Appearance` in [Freeze Panes](https://help.syncfusion.com/windowsforms/sfdatagrid/rows#freeze-panes ) section.
+For more details, refer to `Appearance` in [Freeze Panes](https://help.syncfusion.com/windowsforms/datagrid/rows#freeze-panes) section.
 
 ## Selection	
 Appearance of the selected rows and current cell can be customized by using the [SelectionStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_SelectionStyle) property.
-For more details, refer to `Appearance` in [Selection](https://help.syncfusion.com/windowsforms/sfdatagrid/selection#appearance ) section.
+For more details, refer to `Appearance` in [Selection](https://help.syncfusion.com/windowsforms/datagrid/selection#appearance) section.
 
 ## Changing the Color and Thickness of the Gridlines
 Color and thickness of the grid lines can be changed by using the [Borders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.CellStyleInfo.html#Syncfusion_WinForms_DataGrid_Styles_CellStyleInfo_Borders) property.

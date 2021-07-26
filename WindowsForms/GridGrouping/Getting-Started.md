@@ -154,7 +154,7 @@ Me.gridGroupingControl1.DataSource = Me.dataset11.Employees
 {% endhighlight %}
 {% endtabs %}
 
-Refer the [Data Binding](http://help.syncfusion.com/windowsforms/gridgrouping/data-binding) topic for more detailed explanation on how to bind data source to GridGroupingControl.
+Refer the [Data Binding](https://help.syncfusion.com/windowsforms/gridgrouping/data-binding) topic for more detailed explanation on how to bind data source to GridGroupingControl.
 
 ## Editing
 By default, GridGroupingControl is in editable state. Editing can be enabled/disabled by using the [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ActivateCurrentCellBehavior) property.

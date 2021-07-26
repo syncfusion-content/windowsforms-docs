@@ -15,13 +15,13 @@ This section will explain about creating simple GridControl and the overview of 
 
 Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
 
-[GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
+[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
 
 [GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid) such that, it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) such that, it can bind to any type of data source.
 
-[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Used to display collection of data in rows and columns.
+[SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Used to display collection of data in rows and columns.
 
 <table>
 <tr>
@@ -267,7 +267,7 @@ Final Look of the Grid:
 
 ## Cell Styles
 
-In GridControl, each cell contains distinct style information and can be displayed independently of other cells. GridControl uses [GridStyleInfo](http://help.syncfusion.com/windowsforms/grid/cell-style-architecture) objects to store state information about the appearance of a grid cell. So attributes like font, back color, cell value and cell types are all reflected in a single `GridStyleInfo` object.
+In GridControl, each cell contains distinct style information and can be displayed independently of other cells. GridControl uses [GridStyleInfo](https://help.syncfusion.com/windowsforms/grid-control/cell-style-architecture) objects to store state information about the appearance of a grid cell. So attributes like font, back color, cell value and cell types are all reflected in a single `GridStyleInfo` object.
 
 ### Modifying Cell Styles through Designer
 
@@ -367,7 +367,7 @@ Selection operation can be handled by using [SelectionChanging](https://help.syn
 
 ## Editing
 
-By default the GridControl is in editable state. [Editing](http://help.syncfusion.com/windowsforms/grid/editing) can be enabled or disabled by using the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. This property can be applied for whole grid as well as cell by cell basis.
+By default the GridControl is in editable state. [Editing](https://help.syncfusion.com/windowsforms/grid-control/editing) can be enabled or disabled by using the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. This property can be applied for whole grid as well as cell by cell basis.
 
 {% tabs %}
 {% highlight c# %}

@@ -137,4 +137,4 @@ Me.Controls.Add(Me.comboBoxBase1)
 
 
 
-Refer [Creating ListControl-Derived Controls](/windowsforms/ComboBoxBase/Creating-ListControl-Derived-Controls) about ListControl-Derived controls in detail.
+Refer [Creating ListControl-Derived Controls](https://help.syncfusion.com/windowsforms/comboboxbase/creating-listcontrol-derived-controls) about ListControl-Derived controls in detail.
