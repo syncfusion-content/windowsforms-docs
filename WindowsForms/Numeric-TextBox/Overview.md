@@ -39,7 +39,7 @@ Syncfusion WinForms suite comes up with the following different textboxes:
 
 ### SfNumericTextBox
 
-The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/sfnumerictextbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
+The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/numeric-textbox/overview) control is an advanced textbox that allows you to enter numeric values in a specific format such as value. The currency or percent value can also be displayed with custom units. Supports hiding trailing zeros and displaying values with custom units.
 
 ### CurrencyTextBox
 
@@ -204,7 +204,7 @@ Formats the value based on the user needs. To learn more about format modes in S
 Hide trailing zeros
 </td>
 <td>
-Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#hiding-trailing-zeros)'| markdownify }}.
+Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#hiding-trailing-zeros)'| markdownify }}.
 </td>
 </tr>
 <tr>
