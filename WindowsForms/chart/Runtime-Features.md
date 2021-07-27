@@ -289,7 +289,7 @@ A sample which demonstrates the zooming and scrolling features are available in 
 
 {% seealso %}
 
-[How to hide the Chart ZoomButton](/windowsforms/chart/faq/How-to-hide-the-Chart-ZoomButton)
+[How to hide the Chart ZoomButton](https://help.syncfusion.com/windowsforms/chart/faq/how-to-hide-the-chart-zoombutton)
 
 {% endseealso %}
 
@@ -1349,7 +1349,7 @@ series1.FancyToolTip.Alignment = TabAlignment.Top
 
 {% seealso %}
 
-[How to display tooltip over Histogram Chart columns](/windowsforms/chart/faq/How-to-display-custom-tooltip-over-Histogram-Chart)
+[How to display tooltip over Histogram Chart columns](https://help.syncfusion.com/windowsforms/chart/faq/how-to-display-custom-tooltip-over-histogram-chart)
 
 {% endseealso %}
 

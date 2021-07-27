@@ -452,7 +452,7 @@ Me.pivotGridControl1.ShowPivotTableFieldList = True
 
 {% endtabs %}
 
-For more information, refer the [pivot schema designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic.
+For more information, refer the [pivot schema designer](https://help.syncfusion.com/windowsforms/pivot-grid/pivot-schema-designer) topic.
 
 ![PivotTableFieldList](Getting-Started_images/PivotTableFieldList.jpeg)
 
@@ -480,7 +480,7 @@ Me.pivotGridControl1.ShowGroupBar = True
 
 ![GroupingBar](Getting-Started_images/GroupingBar.png)
 
-For more information, refer the [grouping bar](http://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar) topic.
+For more information, refer the [grouping bar](https://help.syncfusion.com/windowsforms/pivot-grid/grouping-bar) topic.
 
 ## Filtering
 
