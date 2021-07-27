@@ -115,7 +115,7 @@ Me.colorPickerButton1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelec
 
 {% seealso %}
  
-[Appearance and Behavior Settings](/windowsforms/colorpickerbutton/customization-settings)
+[Appearance and Behavior Settings](https://help.syncfusion.com/windowsforms/color-picker-dropdown/customization-settings)
 
 {% endseealso %}
  

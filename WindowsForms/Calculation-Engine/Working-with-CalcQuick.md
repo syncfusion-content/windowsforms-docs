@@ -111,7 +111,7 @@ calcQuick["result"]  = calcQuick.ParseAndCompute("SUM([A],[B])");
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding `ParseAndCompute` method, refer [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parse-and-compute).
+For more information regarding `ParseAndCompute` method, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-and-compute).
 
 ## Automatic calculations
 
