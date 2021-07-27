@@ -19,7 +19,7 @@ Essential Grid includes a trio of grid controls as well as many other controls t
 
 [GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) such that, it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) such that, it can bind to any type of data source.
 
 [SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Used to display collection of data in rows and columns.
 

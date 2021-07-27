@@ -18,9 +18,9 @@ Essential Grid includes a trio of grid controls as well as many other controls t
 
 [GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) such that, it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) such that, it can bind to any type of data source.
 
-[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Display collection of data in rows and columns.
+[SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Display collection of data in rows and columns.
 
 <table>
 <tr>
@@ -170,7 +170,7 @@ Me.gridGroupingControl1.ActivateCurrentCellBehavior = GridCellActivateAction.Non
 {% endhighlight %}
 {% endtabs %}
 
-Editing operations can be customized by using the [TableControlCurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [TableControlCurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) events. Check the[Editing](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for more information on methods and properties related to it.
+Editing operations can be customized by using the [TableControlCurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) and [TableControlCurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) events. Check the[Editing](https://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for more information on methods and properties related to it.
 
 ## Grouping
 GridGroupingControl allows to group data by one or more columns. Data will be organized into a hierarchical structure based on the matching field values. 

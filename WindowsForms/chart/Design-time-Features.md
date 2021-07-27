@@ -143,7 +143,7 @@ There are three tabs available in the wizard, for appearance settings.
 
  {% seealso %}
 
-[Appearance Settings](http://help.syncfusion.com/windowsforms/chart/chart-appearance)
+[Appearance Settings](https://help.syncfusion.com/windowsforms/chart/chart-appearance)
 
  {% endseealso %}
 
@@ -168,7 +168,7 @@ The below properties can be set separately for x-axis and y-axis.
 
 {% seealso %}
 
-[Chart Axes](http://help.syncfusion.com/windowsforms/chart/chart-axes)
+[Chart Axes](https://help.syncfusion.com/windowsforms/chart/chart-axes)
 
 {% endseealso %}
 

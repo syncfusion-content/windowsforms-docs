@@ -85,7 +85,7 @@ For more details, refer to `Appearance` in [Header Row](https://help.syncfusion.
 
 ## Styling Stacked Header
 Appearance of the stacked headers can be customized by the [StackedHeaderStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_StackedHeaderStyle) property.
-For more details, refer to `Appearance` in [Stacked Headers](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#stacked-headers ) section.
+For more details, refer to `Appearance` in [Stacked Headers](https://help.syncfusion.com/windowsforms/datagrid/columns#stacked-headers) section.
 
 ## Styling CaptionSummary
 Appearance of the caption summary can be customized by using the [CaptionSummaryRowStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_CaptionSummaryRowStyle) property.
@@ -283,7 +283,7 @@ For more details, refer to `Customizing GroupDropArea Appearance` in [Grouping](
 
 ## Styling GroupDropAreaItem
 Appearance of the GroupDropAreaItem can be customized by using the [GroupDropAreaItemStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_GroupDropAreaItemStyle) property.
-For more details, refer to `Customizing GroupDropAreaItem` Appearance in [Grouping](https://help.syncfusion.com/windowsforms/sfdatagrid/grouping#groupdroparea-customization ) section.
+For more details, refer to `Customizing GroupDropAreaItem` Appearance in [Grouping](https://help.syncfusion.com/windowsforms/datagrid/grouping#groupdroparea-customization) section.
 
 ## Styling Frozen Rows and Columns
 Appearance of the frozen rows and columns can be customized by using the [FreezePaneLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Styles.DataGridStyle.html#Syncfusion_WinForms_DataGrid_Styles_DataGridStyle_FreezePaneLineStyle) property.

@@ -39,7 +39,7 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 ### SfDataGrid
 
-[SfDataGrid](https://help.syncfusion.com/windowsforms/sfdatagrid/overview) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
+[SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
 
 ### GridGroupingControl
 
@@ -47,7 +47,7 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 ### GridControl
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid/overview) is a cell-oriented grid that contains own data and does not need to be bound to the data source. It can be easily customized down to the cell level. It supports frozen rows, columns, Excel-like formulas and covered cells. It can also be used in a virtual manner such that it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid-control/overview) is a cell-oriented grid that contains own data and does not need to be bound to the data source. It can be easily customized down to the cell level. It supports frozen rows, columns, Excel-like formulas and covered cells. It can also be used in a virtual manner such that it can bind to any type of data source.
 
 ### SfDataGrid vs GridGroupingControl
 

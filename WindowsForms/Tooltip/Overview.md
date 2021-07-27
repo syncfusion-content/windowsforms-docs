@@ -28,7 +28,7 @@ Syncfusion WinForms suite comes up with following different tooltips namely :
 
 ### SfToolTip
 
-[SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview) is a component that provides options to display multiple lines, multiple items, and balloon styles. This also provides support to load images and host any custom UI control.
+[SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview) is a component that provides options to display multiple lines, multiple items, and balloon styles. This also provides support to load images and host any custom UI control.
 
 ### SuperToolTip
 
@@ -134,7 +134,7 @@ Adds multiple items as tooltip. To learn more about adding control as a pop-up i
  custom user control
 </td>
 <td>
-Adds control as pop-up information. To learn more about custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
+Adds control as pop-up information. To learn more about custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/tooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
 
 </td>
 </tr>

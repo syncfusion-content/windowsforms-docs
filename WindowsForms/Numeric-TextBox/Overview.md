@@ -33,9 +33,9 @@ The **NumericTextBox** control is an advanced text box control that allows you t
 Syncfusion WinForms suite comes up with the following different textboxes:
 
 * [SfNumericTextBox](https://www.syncfusion.com/products/windows-forms/numeric-textbox)
-* [CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox/overview)
-* [PercentTextBox](https://help.syncfusion.com/windowsforms/percenttextbox/overview)
-* [IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview)
+* [CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview)
+* [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview)
+* [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview)
 
 ### SfNumericTextBox
 
@@ -43,15 +43,15 @@ The [SfNumericTextBox](https://help.syncfusion.com/windowsforms/sfnumerictextbox
 
 ### CurrencyTextBox
 
-[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currencytextbox/overview) is a textbox-derived control that implements all functionalities to format currency input and validation. Provides support for clipboard operations that are compatible with currency data.
+[CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview) is a textbox-derived control that implements all functionalities to format currency input and validation. Provides support for clipboard operations that are compatible with currency data.
 
 ### PercentTextBox
 
-[PercentTextBox](https://help.syncfusion.com/windowsforms/percenttextbox/overview) is a textbox-derived control that can display double data type values in percentage. It supports display and collection of percentage values.
+[PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview) is a textbox-derived control that can display double data type values in percentage. It supports display and collection of percentage values.
 
 ### IntegerTextBox
 
-[IntegerTextBox](https://help.syncfusion.com/windowsforms/integertextbox/overview) is derived from the Windows Forms Framework TextBox control. Displays integer data type values alone.
+[IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview) is derived from the Windows Forms Framework TextBox control. Displays integer data type values alone.
 
 ### SfNumericTextBox vs existing numeric textbox controls
 
@@ -212,7 +212,7 @@ Hides trailing zeros. To learn more about hiding zeros in SfNumericTextBox, refe
 Custom units
 </td>
 <td>
-Displays the values with custom units which can be appended prefix or suffix. To learn more about custom units in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfnumerictextbox/formatting#prefix-and-suffix)'| markdownify }}.
+Displays the values with custom units which can be appended prefix or suffix. To learn more about custom units in SfNumericTextBox, refer to {{'[here](https://help.syncfusion.com/windowsforms/numeric-textbox/formatting#prefix-and-suffix)'| markdownify }}.
 </td>
 </tr>
 </table>

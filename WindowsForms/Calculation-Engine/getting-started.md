@@ -292,7 +292,7 @@ A sample that demonstrates the computation of formula using ICalcData is availab
  
 The simplest way to use Essential Calculate is through an instance of its [CalcQuickBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html) class. This class provides options to directly parse and compute a formula, or register variable names that can later be used in more complex formulas involving these variables. But we cannot change the values of the variables at runtime for computation. Also by default, `CalcQuickBase` does not try to track any dependencies among the variables you set, hence to enable automatic recalculation of dependent variables, users need to set the [AutoCalc](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcQuickBase.html#Syncfusion_Calculate_CalcQuickBase_AutoCalc) property to `True`.
 
-For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculate/working-with-calcquick)
+For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
 N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
 
