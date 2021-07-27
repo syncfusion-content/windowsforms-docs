@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Pivot Grid control | Syncfusion
+title: Getting Started with Windows Forms Pivot Grid | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid
@@ -140,7 +140,7 @@ Syncfusion reference manager supports for specific framework which is shipped (a
 
 ## Binding data
 
-This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
+This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
 
 In this example, `IEnumerable` list is used as data source for the pivot grid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
 
@@ -337,7 +337,7 @@ N>
 
 The pivot grid control requires the following information in order to populate the data from the data source.
 
-* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) - The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) - The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
 * [PivotRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotRows) - Elements that need to be added in rows of pivot grid control.
 * [PivotColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotColumns) - Elements that need to be added in columns of pivot grid control.
 * [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotCalculations) - Calculation values that need to be added as value cells in pivot grid control.
@@ -452,7 +452,7 @@ Me.pivotGridControl1.ShowPivotTableFieldList = True
 
 {% endtabs %}
 
-For more information, refer the [pivot schema designer](http://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer) topic.
+For more information, refer the [pivot schema designer](https://help.syncfusion.com/windowsforms/pivot-grid/pivot-schema-designer) topic.
 
 ![PivotTableFieldList](Getting-Started_images/PivotTableFieldList.jpeg)
 
@@ -480,7 +480,7 @@ Me.pivotGridControl1.ShowGroupBar = True
 
 ![GroupingBar](Getting-Started_images/GroupingBar.png)
 
-For more information, refer the [grouping bar](http://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar) topic.
+For more information, refer the [grouping bar](https://help.syncfusion.com/windowsforms/pivot-grid/grouping-bar) topic.
 
 ## Filtering
 

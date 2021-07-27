@@ -494,4 +494,4 @@ N> Support has been given in source level.
 
 ## Choose between different tooltip controls
 
-You can refer to the different tooltip controls [here](https://help.syncfusion.com/windowsforms/sftooltip/overview#choose-between-different-tooltip-controls).
+You can refer to the different tooltip controls [here](https://help.syncfusion.com/windowsforms/tooltip/overview#choose-between-different-tooltip-controls).

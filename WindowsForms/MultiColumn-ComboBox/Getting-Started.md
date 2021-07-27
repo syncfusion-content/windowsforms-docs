@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinForms MultiColumn ComboBox | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms MultiColumn ComboBox control and more details.
+title: Getting Started | Windows Forms MultiColumn ComboBox | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms MultiColumn ComboBox control, its elements, and more.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -52,6 +52,6 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 {% endhighlight %}
 {% endtabs %}
 
-After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding).
+After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
 
 

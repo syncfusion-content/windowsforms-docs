@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 
 ## Adding chart to form
@@ -421,7 +421,7 @@ End Sub
 
 {% seealso %}
 
-[Binding a DataSet to a Chart](http://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](http://help.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
+[Binding a DataSet to a Chart](https://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](https://help.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
 
 {% endseealso %}
 

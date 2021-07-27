@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv(Classic) control and more details.
+title: About Windows Forms ComboBoxAdv control | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv (Classic) control and more details.
 platform: windowsforms
 control: ComboBoxAdv
 documentation: ug
@@ -31,4 +31,4 @@ ComboBoxAdv is an advanced ComboBox control that contains the following feature
 
 ## Choose between different combobox controls
 
-You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/combobox/overview#choose-between-different-combobox-controls).

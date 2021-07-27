@@ -28,7 +28,7 @@ Syncfusion WinForms suite comes up with following different tooltips namely :
 
 ### SfToolTip
 
-[SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview) is a component that provides options to display multiple lines, multiple items, and balloon styles. This also provides support to load images and host any custom UI control.
+[SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview) is a component that provides options to display multiple lines, multiple items, and balloon styles. This also provides support to load images and host any custom UI control.
 
 ### SuperToolTip
 
@@ -125,7 +125,7 @@ The following list of features are in SfToolTip over SuperToolTip.
 Multiple items
 </td>
 <td>
-Adds multiple items as tooltip. To learn more about adding control as a pop-up information, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-multiple-items-into-a-tooltip)'| markdownify }}.
+Adds multiple items as tooltip. To learn more about adding control as a pop-up information, refer to {{'[here](https://help.syncfusion.com/windowsforms/tooltip/tooltip-content#adding-multiple-items-into-a-tooltip)'| markdownify }}.
 
 </td>
 </tr>
@@ -134,7 +134,7 @@ Adds multiple items as tooltip. To learn more about adding control as a pop-up i
  custom user control
 </td>
 <td>
-Adds control as pop-up information. To learn more about custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
+Adds control as pop-up information. To learn more about custom user control, refer to {{'[here](https://help.syncfusion.com/windowsforms/tooltip/tooltip-content#adding-custom-user-control-into-a-tooltip)'| markdownify }}. 
 
 </td>
 </tr>
@@ -143,7 +143,7 @@ Adds control as pop-up information. To learn more about custom user control, ref
 Custom drawing
 </td>
 <td>
-Draws the custom tooltip item appearance. To learn more about drawing custom tooltip, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
+Draws the custom tooltip item appearance. To learn more about drawing custom tooltip, refer to {{'[here](https://help.syncfusion.com/windowsforms/tooltip/working-with-sftooltip#custom-drawing-of-tooltip)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ Draws the custom tooltip item appearance. To learn more about drawing custom too
 Appearance customization
 </td>
 <td>
-Individually customizes the appearance of tooltip item shown using SfToolTip, whereas all tooltip items shown using SuperToolTip can have the same appearance. To learn more about appearance customization, refer to {{'[here](https://help.syncfusion.com/windowsforms/sftooltip/appearance)'| markdownify }}.
+Individually customizes the appearance of tooltip item shown using SfToolTip, whereas all tooltip items shown using SuperToolTip can have the same appearance. To learn more about appearance customization, refer to {{'[here](https://help.syncfusion.com/windowsforms/tooltip/appearance)'| markdownify }}.
 </td>
 </tr>
 </table>

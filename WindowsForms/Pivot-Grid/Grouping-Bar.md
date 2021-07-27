@@ -34,7 +34,7 @@ Me.pivotGridControl1.ShowGroupBar = True
 {% endtabs %}
 
 N>
-If [row pivots only mode](https://help.syncfusion.com/windowsforms/pivotgrid/layouts#enabling-flat-layout) is enabled in the pivot grid control, then the grouping bar will be disabled automatically.
+If [row pivots only mode](https://help.syncfusion.com/windowsforms/pivot-grid/layouts#enabling-flat-layout) is enabled in the pivot grid control, then the grouping bar will be disabled automatically.
 
 ![Grouping-bar_img1](Grouping-Bar_images/Grouping-bar_img1.png)
 
