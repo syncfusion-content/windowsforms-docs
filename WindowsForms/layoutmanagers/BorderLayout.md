@@ -1,12 +1,12 @@
 ---
 layout: post
-title: BorderLayout | WindowsForms | Syncfusion
+title: BorderLayout in Windows Forms Layout Managers Package| Syncfusion
 description: BorderLayout allows user to arrange and layout the child controls along the borders similar to framework’s built-in docking support.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# BorderLayout
+# BorderLayout in Windows Forms Layout Manager
 
 `BorderLayout` is a Layout Manager which allows the user to arrange and layout the Child controls along the borders and at the center, just like the .NET framework's built-in docking support.
 
@@ -32,7 +32,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 **Creating simple application with BorderLayout**
 

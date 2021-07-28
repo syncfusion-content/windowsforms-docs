@@ -1,12 +1,12 @@
 ---
 layout: post
-title: FlowLayout | WindowsForms | Syncfusion
+title: FlowLayout in Windows Forms Layout Managers Package | Syncfusion
 description: FlowLayout allows user to arranges the items in horizontal or vertical flow direction. Supports reverse flow direction.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# FlowLayout
+# FlowLayout in Windows Forms Layout Manager
 
 `FlowLayout` is a Layout Manager which allows us to arrange the Child components horizontally or vertically in a specific order, based on the settings. FlowLayout is one of the most commonly used Layout Managers. Deriving from the LayoutManager class, the FlowLayout component was created to support simple horizontal and vertical flow and complex constraint-based FlowLayouts.
 
@@ -36,7 +36,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GridLayout | WindowsForms | Syncfusion
-description: GridLayout allows user to arrange the child controls in a virtual grid containing rows and columns. 
+title: GridLayout in Windows Forms Layout Managers Package | Syncfusion
+description: Layout Managers GridLayout allows user to arrange the child controls in a virtual grid containing rows and columns.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# GridLayout
+# GridLayout in Windows Forms Layout Manager
 
 `GridLayout` is a Layout Manager that allows us to arrange the Child controls as in a grid containing rows and columns. Deriving from the Layout Manager base, the GridLayout inherits all the functionality that the Layout Manager type exposes. In its simplest form, this Layout Manager can be used to automatically arrange the Child components in one or more rows, as illustrated below.
 
@@ -28,7 +28,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 
 **Creating simple application with GridLayout**

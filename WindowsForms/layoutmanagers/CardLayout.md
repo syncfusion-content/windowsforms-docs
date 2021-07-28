@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CardLayout | WindowsForms | Syncfusion
+title: CardLayout in Windows Forms Layout Managers Package | Syncfusion
 description: CardLayout is a layout manager that organizes the controls in stack of cards like appearance. It support different image settings and more.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-# CardLayout
+# CardLayout in Windows Forms Layout Manager
 
 `CardLayout` is a Layout Manager that is applied to a Container, and components are added to the layout in a particular form and not between different forms. It treats each component in the Container as a card. Only one card is visible at a time, and the Container acts as a stack of cards. The first component added to a CardLayout object is the visible component when the Container is first displayed.
 
@@ -40,7 +40,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 **Creating simple application with CardLayout**
 
