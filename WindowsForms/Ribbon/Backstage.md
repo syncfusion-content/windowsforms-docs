@@ -303,7 +303,7 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 ### Hide Menu Button
 
-To hide the menu button change the ribbon property `MenuButtonVisible` as False.The default value is True.
+The menu button can be hide by setting the `MenuButtonVisible` to `False`.The default value is `True`.
 
 {% tabs %}
 
