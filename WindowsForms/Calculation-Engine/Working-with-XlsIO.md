@@ -129,7 +129,7 @@ sheet.CalcEngine.CalculatingSuspended = false;
 ## To compute particular cell in the worksheet
 
 To compute particular cell in the worksheet, use [ParseAndComputeFormula](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ParseAndComputeFormula_System_String_) method of `CalcEngine`. For more details regarding 
-`ParseAndComputeFormula` method, refer [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parseandcomputeformula).
+`ParseAndComputeFormula` method, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-formula).
 
 {% tabs %}
 {% highlight c# %}
