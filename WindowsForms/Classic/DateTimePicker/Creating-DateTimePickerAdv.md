@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DateTimePickerAdv in Windows Forms DateTimePickerAdv | Syncfusion
+title: DateTimePickerAdv in Windows Forms | Syncfusion
 description: Learn about Creating DateTimePickerAdv support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control, its elements, and more.
 platform: WindowsForms
 control: DateTimePickerAdv
 documentation: ug
 ---
 
-# Creating DateTimePickerAdv in Windows Forms DateTimePickerAdv(Classic)
+# Creating DateTimePickerAdv in Windows Forms
 
 ## Assembly deployment
 

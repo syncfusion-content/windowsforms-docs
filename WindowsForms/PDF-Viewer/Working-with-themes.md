@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with themes in Windows Forms PDF Viewer control | Syncfusion
+title: Working with themes in Windows Forms PDF Viewer | Syncfusion
 description: Learn about Working with themes support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl

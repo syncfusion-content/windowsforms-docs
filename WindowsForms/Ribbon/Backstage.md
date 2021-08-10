@@ -301,6 +301,28 @@ Me.ribbonControlAdv1.MenuButtonWidth = 100
 
 {% endtabs %}
 
+### Hide Menu Button
+
+The menu button can be hide by setting the `MenuButtonVisible` to `False`.The default value is `True`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.ribbonControlAdv1.MenuButtonVisible = false;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.ribbonControlAdv1.MenuButtonVisible = false
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WindowsForms Ribbon Hide MenuButton](BackStage_Images/WindowsForms-Ribbon_MenuButton.png)
+
 ### Menu Button customization
 
 The appearance of the menu button can be customized in Office2019Theme and HighContrastTheme by using the below listed properties,

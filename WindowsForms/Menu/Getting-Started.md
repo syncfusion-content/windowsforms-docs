@@ -24,5 +24,5 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 You can create a Windows Forms application with menu control as either of the following ways.
 
-* [Adding menu items via designer](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-designer)
-* [Adding menu items via code](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code)
+* [Adding menu items via designer](https://help.syncfusion.com/windowsforms/menu/adding-menu-items-via-designer)
+* [Adding menu items via code](https://help.syncfusion.com/windowsforms/menu/adding-menu-items-via-code)

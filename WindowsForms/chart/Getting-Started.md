@@ -421,7 +421,7 @@ End Sub
 
 {% seealso %}
 
-[Binding a DataSet to a Chart](http://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](http://help.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
+[Binding a DataSet to a Chart](https://help.syncfusion.com/windowsforms/chart/chart-data#binding-a-dataset-to-the-chart), [Tasks Window](https://help.syncfusion.com/windowsforms/chart/design-time-features#tasks-window)
 
 {% endseealso %}
 

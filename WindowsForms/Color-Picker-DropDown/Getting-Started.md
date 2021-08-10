@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Color Picker DropDown | Syncfusion
+title: Getting Started | Windows Forms Color Picker DropDown | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Color Picker DropDown (ColorPickerButton) control, its elements, and more.
 platform: WindowsForms
 control: ColorPickerDropDown
@@ -115,7 +115,7 @@ Me.colorPickerButton1.SelectedColorGroup = Syncfusion.Windows.Forms.ColorUISelec
 
 {% seealso %}
  
-[Appearance and Behavior Settings](/windowsforms/colorpickerbutton/customization-settings)
+[Appearance and Behavior Settings](https://help.syncfusion.com/windowsforms/color-picker-dropdown/customization-settings)
 
 {% endseealso %}
  

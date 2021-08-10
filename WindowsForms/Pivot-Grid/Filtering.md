@@ -24,6 +24,8 @@ The [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pi
 * **Format** - Specifies the format of filter expression.
 * **Evaluator** - Evaluates the specified value.
 
+Set the FieldMappingName property value into the DimensionName and DimensionHeader properties. Because it must be in the ItemProperties collection. If the DimensionHeader value is not defined in the FilterExpression,the DimensionName value is assigned to the DimensionHeader property automatically.
+
 ### Defining filter expressions
 
 To define a filter, create an instance of [FilterExpression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.FilterExpression.html) class and add that instance to [Filters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_Filters) collection of pivot grid control.
@@ -61,6 +63,74 @@ pivotGridControl1.Filters.Add(filterExpression1)
 {% endtabs %}
 
 ![Filtering_img1](Filtering_images/Filtering_img1.png)
+
+Refer to the code sample to define a filter expression in the pivot grid control by using the 'OR' operator.
+
+{% tabs %}
+
+{% highlight C# %}
+
+FilterExpression filterExpression1 = new FilterExpression() 
+{ 
+    DimensionHeader = "Date", 
+    Name = "Date", 
+    DimensionName = "Date", 
+    Expression = "Date = FY 2007 OR Date = FY 2008" 
+}; 
+this.pivotGridControl1.Filters.Add(filterExpression1);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim m_FilterExpression As filterExpression1 = New FilterExpression() With
+{
+    .DimensionHeader = "Date",
+    .Name = "Date",
+    .DimensionName = "Date",
+    .Expression = "Date = FY 2007 OR Date = FY 2008"
+}
+pivotGridControl1.Filters.Add(filterExpression1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Filtering_img3](Filtering_images/Filtering_img3.png)
+
+Refer to the code sample to define a filter expression in the pivot grid control by using the 'IN' operator.
+
+{% tabs %}
+
+{% highlight C# %}
+
+FilterExpression filterExpression1 = new FilterExpression() 
+{ 
+    DimensionHeader = "Date", 
+    Name = "Date", 
+    DimensionName = "Date", 
+    Expression = "Date IN FY 2005,FY 2006,FY 2007" 
+}; 
+this.pivotGridControl1.Filters.Add(filterExpression1);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim m_FilterExpression As filterExpression1 = New FilterExpression() With
+{
+    .DimensionHeader = "Date",
+    .Name = "Date",
+    .DimensionName = "Date",
+    .Expression = "Date IN FY 2005,FY 2006,FY 2007"
+}
+pivotGridControl1.Filters.Add(filterExpression1)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Filtering_img4](Filtering_images/Filtering_img4.png)
 
 ## Using grouping bar's built-in popup
 

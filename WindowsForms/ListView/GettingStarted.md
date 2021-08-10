@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfListView | Windows Forms | Syncfusion
+title: Getting Started with Windows Forms ListView Control | Syncfusion
 description: This section explains how to add the SfListView control into windows forms application and how to perform grouping, sorting, filtering actions. 
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Windows Forms ListView (SfListView)
 This section provides a quick overview for getting started with SfListView for WinForms. Walk through the entire process of creating the real world SfListView. 
 
 ## Assembly Deployment

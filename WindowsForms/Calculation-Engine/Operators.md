@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Operators in Windows Forms Calculation Engine control | Syncfusion
+title: Operators in Windows Forms Calculate control | Syncfusion
 description: Learn about Operators support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

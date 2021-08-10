@@ -79,13 +79,13 @@ background-color:transparent!important;
 
 
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/sfdatagrid/gettingstarted">DataGrid</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/datagrid/gettingstarted">DataGrid</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/docking-manager/getting-started">Docking Manager</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tabcontrol/getting-started">TabControl</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/maskedtextbox/getting-started">MaskedTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/grid/getting-started">Grid Control</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/grid-control/getting-started">Grid Control</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/carousel/getting-started">Carousel</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/ribbon/getting-started">Ribbon</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/autocomplete/getting-started">AutoComplete</a> </td>
@@ -123,7 +123,7 @@ background-color:transparent!important;
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/chart/getting-started">Chart</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/tile-layout/getting-started">Tile Layout</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/groupbar/gettingstarted">Navigation Pane</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/navigation-pane/gettingstarted">Navigation Pane</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/integer-textbox/getting-started">IntegerTextBox</a> </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/percent-textbox/getting-started">PercentTextBox</a> </td>
   </tr>
   <tr>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/maps/getting-started">Maps</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/map/getting-started">Maps</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/popup/getting-started">Popup</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/scroll-frame/gettingstarted">Scroll Frame</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/numeric-textbox/gettingstarted">Numeric TextBox</a> </td>
@@ -142,7 +142,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/smith-chart/gettingstarted">Smith Chart</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/gradient-label/getting-started">Gradient Label</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/scrollersframe/getting-started">ScrollersFrame</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/currencyedit/getting-started">CurrencyEdit</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/classic/currency-edit/getting-started">CurrencyEdit</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge">Radial Gauge</a> </td>
@@ -178,7 +178,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/barcode/getting-started">Barcode</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started">PDF Viewer</a> </td>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/xptoolbar/getting-started">ToolBar</a> </td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/trackbarex/getting-started">TrackBar</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/trackbar/getting-started">TrackBar</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/sparkline/gettingstarted">Sparkline</a> </td>
@@ -250,7 +250,7 @@ background-color:transparent!important;
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/watermark-text-provider/getting-started">BannerTextProvider</a> </td>
    <td id="title">LISTS AND DROPDOWN </td>
     <td></td>
-    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/calculate/getting-started">Calculation Engine</a> </td>
+    <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/calculation-engine/getting-started">Calculation Engine</a> </td>
   </tr>
   <tr>
     <td> <a id="anchor" href="https://help.syncfusion.com/windowsforms/splash-screen/getting-started">Splash Screen</a> </td>

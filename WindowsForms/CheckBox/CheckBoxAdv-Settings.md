@@ -50,7 +50,7 @@ Me.checkBoxAdv1.Checked = True
 
 {% seealso %}
 
-[Image Settings of CheckBoxAdv](http://help.syncfusion.com/windowsforms/checkboxadv/image-settings)
+[Image Settings of CheckBoxAdv](https://help.syncfusion.com/windowsforms/checkbox/image-settings)
 
 {% endseealso %}
 
@@ -95,11 +95,11 @@ Gets or sets the string value.</td></tr>
 <tr>
 <td>
 BoolValue</td><td>
-Gets or sets a value indicating the check state. This property can be set to use bool values for data binding. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkboxadv/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-boolean)' | markdownify }}. </td></tr>
+Gets or sets a value indicating the check state. This property can be set to use bool values for data binding. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkbox/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-boolean)' | markdownify }}. </td></tr>
 <tr>
 <td>
 IntValue</td><td>
-Gets or sets the int value. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkboxadv/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-a-bit-field)' | markdownify }}</td></tr>
+Gets or sets the int value. Refer {{'[Frequently Asked Questions section](https://help.syncfusion.com/windowsforms/checkbox/faq/how-to-databind-a-checkboxadv-to-an-sql-database-if-the-corresponding-datatable-field-is-a-bit-field)' | markdownify }}</td></tr>
 </table>
 
 {% tabs %}
