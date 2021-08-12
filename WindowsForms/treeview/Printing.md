@@ -13,16 +13,43 @@ The TreeView Control has in-built support for printing. To print the content of 
 {% tabs %}
 {% highlight c# %}
 
-TreeViewPrintDocument printDocument = new TreeViewPrintDocument(this.treeViewAdv1);
-printDocument.Print();
+using Syncfusion.Windows.Forms.Tools;
+
+namespace WindowsFormsApp20
+
+{
+    
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            //Convert the Treeview as printing document
+            TreeViewPrintDocument printDocument = new TreeViewPrintDocument(this.treeViewAdv1);
+            //Print the contents of the Grid
+            printDocument.Print();
+        }   
+    }
+}
 
 {% endhighlight %}
 {% highlight vb %}
 
-'Convert the Treeview as printing document
-Dim printDocument As New TreeViewPrintDocument(Me.treeViewAdv1)
-'Print the contents of the Grid
-printDocument.Print()
+Imports Syncfusion.Windows.Forms.Tools
+
+Namespace WindowsFormsApp20
+    Public Partial Class Form1
+        Inherits Form
+
+        Public Sub New()
+            InitializeComponent()
+            'Convert the Treeview as printing document
+            Dim printDocument As TreeViewPrintDocument = New TreeViewPrintDocument(Me.treeViewAdv1)
+            'Print the contents of the Grid
+            printDocument.Print()
+        End Sub
+    End Class
+End Namespace
 
 {% endhighlight %}
 {% endtabs %}
