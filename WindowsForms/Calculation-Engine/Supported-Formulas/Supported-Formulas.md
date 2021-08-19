@@ -134,7 +134,7 @@ The following are the list of formulas supported in Calculate library,
 <th>.NET Core</th>
 <th>Reference</th></tr>
 <tr>
-<td>{{'[ABS](/windowsforms/calculation-engine/supported-formulas/statisticalgonometry#abs)'| markdownify }}</td>
+<td>{{'[ABS](/windowsforms/calculation-engine/supported-formulas/statistical#abs)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -780,7 +780,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[AVERAGEIFS](https://support.office.com/en-us/article/averageifs-function-48910c45-1fc0-4389-a028-f7c5c3001690)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[BETA.DIST](/windowsforms/calculate/supported-formulas/statistical#betadist-1)'| markdownify }}</td>
+<td>{{'[BETA.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#betadist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -789,7 +789,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[BETA.DIST](https://support.office.com/en-us/article/beta-dist-function-11188c9c-780a-42c7-ba43-9ecb5a878d31)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[BETADIST](/windowsforms/calculate/supported-formulas/statistical#betadist)'| markdownify }}</td>
+<td>{{'[BETADIST](/windowsforms/calculation-engine/supported-formulas/statistical#betadist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -798,7 +798,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[BETADIST](https://support.office.com/en-us/article/betadist-function-49f1b9a9-a5da-470f-8077-5f1730b5fd47)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[BINOM.DIST](/windowsforms/calculate/supported-formulas/statistical#binomdist)'| markdownify }}</td>
+<td>{{'[BINOM.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#binomdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -807,7 +807,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[BINOM.DIST](https://support.microsoft.com/en-us/office/binom-dist-function-c5ae37b6-f39c-4be2-94c2-509a1480770c)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[BINOMDIST](/windowsforms/calculate/supported-formulas/statistical#binomdist-1)'| markdownify }}</td>
+<td>{{'[BINOMDIST](/windowsforms/calculation-engine/supported-formulas/statistical#binomdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -816,7 +816,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[BINOMDIST](https://support.microsoft.com/en-us/office/binom-dist-function-c5ae37b6-f39c-4be2-94c2-509a1480770c)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[BINOM.INV](/windowsforms/calculate/supported-formulas/statistical#binominv)'| markdownify }}</td>
+<td>{{'[BINOM.INV](/windowsforms/calculation-engine/supported-formulas/statistical#binominv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -824,7 +824,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[BINOM.INV](https://support.office.com/en-us/article/binom-inv-function-80a0370c-ada6-49b4-83e7-05a91ba77ac9)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHITEST](/windowsforms/calculate/supported-formulas/statistical#chitest)'| markdownify }}</td>
+<td>{{'[CHITEST](/windowsforms/calculation-engine/supported-formulas/statistical#chitest)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -832,7 +832,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHITEST](https://support.microsoft.com/en-us/office/chitest-function-981ff871-b694-4134-848e-38ec704577ac)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHIDIST](/windowsforms/calculate/supported-formulas/statistical#chidist)'| markdownify }}</td>
+<td>{{'[CHIDIST](/windowsforms/calculation-engine/supported-formulas/statistical#chidist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -840,7 +840,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHIDIST](https://support.office.com/en-us/article/chidist-function-c90d0fbc-5b56-4f5f-ab57-34af1bf6897e)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHIINV](/windowsforms/calculate/supported-formulas/statistical#chiinv)'| markdownify }}</td>
+<td>{{'[CHIINV](/windowsforms/calculation-engine/supported-formulas/statistical#chiinv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -848,7 +848,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHIINV](https://support.office.com/en-us/article/chiinv-function-cfbea3f6-6e4f-40c9-a87f-20472e0512af)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHISQ.TEST](/windowsforms/calculate/supported-formulas/statistical#chisqtest)'| markdownify }}</td>
+<td>{{'[CHISQ.TEST](/windowsforms/calculation-engine/supported-formulas/statistical#chisqtest)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -856,7 +856,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHISQ.TEST](https://support.office.com/en-us/article/chidist-function-c90d0fbc-5b56-4f5f-ab57-34af1bf6897e)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHISQ.DIST](/windowsforms/calculate/supported-formulas/statistical#chisqdist)'| markdownify }}</td>
+<td>{{'[CHISQ.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#chisqdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -864,7 +864,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHISQ.DIST](https://support.office.com/en-us/article/chidist-function-c90d0fbc-5b56-4f5f-ab57-34af1bf6897e)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CONFIDENCE.NORM](/windowsforms/calculate/supported-formulas/statistical#confidencenorm)'| markdownify }}</td>
+<td>{{'[CONFIDENCE.NORM](/windowsforms/calculation-engine/supported-formulas/statistical#confidencenorm)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -872,7 +872,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CONFIDENCE.NORM](https://support.microsoft.com/en-us/office/confidence-norm-function-7cec58a6-85bb-488d-91c3-63828d4fbfd4)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CONFIDENCE.T](/windowsforms/calculate/supported-formulas/statistical#confidencet)'| markdownify }}</td>
+<td>{{'[CONFIDENCE.T](/windowsforms/calculation-engine/supported-formulas/statistical#confidencet)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -881,7 +881,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CONFIDENCE.T](https://support.microsoft.com/en-us/office/confidence-t-function-e8eca395-6c3a-4ba9-9003-79ccc61d3c53)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[COVAR](/windowsforms/calculate/supported-formulas/statistical#covar)'| markdownify }}</td>
+<td>{{'[COVAR](/windowsforms/calculation-engine/supported-formulas/statistical#covar)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -890,7 +890,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[COVAR](https://support.microsoft.com/en-us/office/covar-function-50479552-2c03-4daf-bd71-a5ab88b2db03)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[COVARIANCE.P](/windowsforms/calculate/supported-formulas/statistical#covariancep)'| markdownify }}</td>
+<td>{{'[COVARIANCE.P](/windowsforms/calculation-engine/supported-formulas/statistical#covariancep)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -899,7 +899,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[COCOVARIANCE.P](https://support.microsoft.com/en-us/office/covariance-p-function-6f0e1e6d-956d-4e4b-9943-cfef0bf9edfc)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[COVARIANCE.S](/windowsforms/calculate/supported-formulas/statistical#covariances)'| markdownify }}</td>
+<td>{{'[COVARIANCE.S](/windowsforms/calculation-engine/supported-formulas/statistical#covariances)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -908,7 +908,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[COCOVARIANCE.S](https://support.microsoft.com/en-us/office/covariance-s-function-0a539b74-7371-42aa-a18f-1f5320314977)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[CHISQ.INV](/windowsforms/calculate/supported-formulas/statistical#chisqinv)'| markdownify }}</td>
+<td>{{'[CHISQ.INV](/windowsforms/calculation-engine/supported-formulas/statistical#chisqinv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -916,7 +916,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHISQ.INV](https://support.office.com/en-us/article/chisq-inv-function-400db556-62b3-472d-80b3-254723e7092f)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHISQ.DIST.RT](/windowsforms/calculate/supported-formulas/statistical#chisqdistrt)'| markdownify }}</td>
+<td>{{'[CHISQ.DIST.RT](/windowsforms/calculation-engine/supported-formulas/statistical#chisqdistrt)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -925,7 +925,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CHISQ.DIST.RT](https://support.office.com/en-us/article/chisq-dist-rt-function-dc4832e8-ed2b-49ae-8d7c-b28d5804c0f2)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[CHISQ.INV.RT](/windowsforms/calculate/supported-formulas/statistical#chisqinvrt)'| markdownify }}</td>
+<td>{{'[CHISQ.INV.RT](/windowsforms/calculation-engine/supported-formulas/statistical#chisqinvrt)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -934,7 +934,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CHISQ.INV.RT](https://support.office.com/en-us/article/chisq-inv-rt-function-435b5ed8-98d5-4da6-823f-293e2cbc94fe)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[CONFIDENCE](/windowsforms/calculate/supported-formulas/statistical#confidence)'| markdownify }}</td>
+<td>{{'[CONFIDENCE](/windowsforms/calculation-engine/supported-formulas/statistical#confidence)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -943,7 +943,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CONFIDENCE](https://support.office.com/en-us/article/confidence-function-75ccc007-f77c-4343-bc14-673642091ad6)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[CORREL](/windowsforms/calculate/supported-formulas/statistical#correl)'| markdownify }}</td>
+<td>{{'[CORREL](/windowsforms/calculation-engine/supported-formulas/statistical#correl)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -951,7 +951,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CORREL](https://support.office.com/en-us/article/correl-function-995dcef7-0c0a-4bed-a3fb-239d7b68ca92)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[COUNT](/windowsforms/calculate/supported-formulas/statistical#count)'| markdownify }}</td>
+<td>{{'[COUNT](/windowsforms/calculation-engine/supported-formulas/statistical#count)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -959,7 +959,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[COUNT](https://support.office.com/en-us/article/count-function-a59cd7fc-b623-4d93-87a4-d23bf411294c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[COUNTA](/windowsforms/calculate/supported-formulas/statistical#counta)'| markdownify }}</td>
+<td>{{'[COUNTA](/windowsforms/calculation-engine/supported-formulas/statistical#counta)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -967,7 +967,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[COUNTA](https://support.office.com/en-us/article/counta-function-7dc98875-d5c1-46f1-9a82-53f3219e2509)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[COUNTBLANK](/windowsforms/calculate/supported-formulas/statistical#countblank)'| markdownify }}</td>
+<td>{{'[COUNTBLANK](/windowsforms/calculation-engine/supported-formulas/statistical#countblank)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -976,7 +976,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[COUNTBLANK](https://support.office.com/en-us/article/countblank-function-6a92d772-675c-4bee-b346-24af6bd3ac22)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[COUNTIF](/windowsforms/calculate/supported-formulas/statistical#countif)'| markdownify }}</td>
+<td>{{'[COUNTIF](/windowsforms/calculation-engine/supported-formulas/statistical#countif)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -984,7 +984,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[COUNTIF](https://support.office.com/en-us/article/countif-function-e0de10c6-f885-4e71-abb4-1f464816df34)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CRITBINOM](/windowsforms/calculate/supported-formulas/statistical#critbinom)'| markdownify }}</td>
+<td>{{'[CRITBINOM](/windowsforms/calculation-engine/supported-formulas/statistical#critbinom)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -992,7 +992,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CRITBINOM](https://support.office.com/en-us/article/critbinom-function-eb6b871d-796b-4d21-b69b-e4350d5f407b)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[DEVSQ](/windowsforms/calculate/supported-formulas/statistical#devsq)'| markdownify }}</td>
+<td>{{'[DEVSQ](/windowsforms/calculation-engine/supported-formulas/statistical#devsq)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1000,7 +1000,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[DEVSQ](https://support.microsoft.com/en-us/office/devsq-function-8b739616-8376-4df5-8bd0-cfe0a6caf444)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[EXPON.DIST](/windowsforms/calculate/supported-formulas/statistical#expondist)'| markdownify }}</td>
+<td>{{'[EXPON.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#expondist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1009,7 +1009,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[EXPON.DIST](https://support.office.com/en-us/article/expon-dist-function-4c12ae24-e563-4155-bf3e-8b78b6ae140e)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[EXPONDIST](/windowsforms/calculate/supported-formulas/statistical#expondist-1)'| markdownify }}</td>
+<td>{{'[EXPONDIST](/windowsforms/calculation-engine/supported-formulas/statistical#expondist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1018,7 +1018,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[EXPONDIST](https://support.office.com/en-us/article/expondist-function-68ab45fd-cd6d-4887-9770-9357eb8ee06a)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[F.DIST](/windowsforms/calculate/supported-formulas/statistical#fdist)'| markdownify }}</td>
+<td>{{'[F.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#fdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1026,7 +1026,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[F.DIST](https://support.office.com/en-us/article/f-dist-function-a887efdc-7c8e-46cb-a74a-f884cd29b25d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[F.DIST.RT](/windowsforms/calculate/supported-formulas/statistical#fdistrt)'| markdownify }}</td>
+<td>{{'[F.DIST.RT](/windowsforms/calculation-engine/supported-formulas/statistical#fdistrt)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1034,7 +1034,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[F.DIST.RT](https://support.office.com/en-us/article/f-dist-rt-function-d74cbb00-6017-4ac9-b7d7-6049badc0520)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[F.INV.RT](/windowsforms/calculate/supported-formulas/statistical#finvrt)'| markdownify }}</td>
+<td>{{'[F.INV.RT](/windowsforms/calculation-engine/supported-formulas/statistical#finvrt)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1042,7 +1042,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[F.INV.RT](https://support.office.com/en-us/article/f-inv-rt-function-d371aa8f-b0b1-40ef-9cc2-496f0693ac00)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FDIST](/windowsforms/calculate/supported-formulas/statistical#fdist-1)'| markdownify }}</td>
+<td>{{'[FDIST](/windowsforms/calculation-engine/supported-formulas/statistical#fdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1050,7 +1050,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FDIST](https://support.office.com/en-us/article/fdist-function-ecf76fba-b3f1-4e7d-a57e-6a5b7460b786)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FINV](/windowsforms/calculate/supported-formulas/statistical#finv)'| markdownify }}</td>
+<td>{{'[FINV](/windowsforms/calculation-engine/supported-formulas/statistical#finv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1058,7 +1058,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FINV](https://support.office.com/en-us/article/finv-function-4d46c97c-c368-4852-bc15-41e8e31140b1)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FISHER](/windowsforms/calculate/supported-formulas/statistical#fisher)'| markdownify }}</td>
+<td>{{'[FISHER](/windowsforms/calculation-engine/supported-formulas/statistical#fisher)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1066,7 +1066,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FISHER](https://support.office.com/en-us/article/fisher-function-d656523c-5076-4f95-b87b-7741bf236c69)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FISHERINV](/windowsforms/calculate/supported-formulas/statistical#fisherinv)'| markdownify }}</td>
+<td>{{'[FISHERINV](/windowsforms/calculation-engine/supported-formulas/statistical#fisherinv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1074,7 +1074,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FISHERINV](https://support.office.com/en-us/article/fisherinv-function-62504b39-415a-4284-a285-19c8e82f86bb)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FORECAST](/windowsforms/calculate/supported-formulas/statistical#forecast)'| markdownify }}</td>
+<td>{{'[FORECAST](/windowsforms/calculation-engine/supported-formulas/statistical#forecast)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1082,7 +1082,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FORECAST](https://support.office.com/en-us/article/forecast-and-forecast-linear-functions-50ca49c9-7b40-4892-94e4-7ad38bbeda99)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GEOMEAN](/windowsforms/calculate/supported-formulas/statistical#geomean)'| markdownify }}</td>
+<td>{{'[GEOMEAN](/windowsforms/calculation-engine/supported-formulas/statistical#geomean)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1090,7 +1090,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GEOMEAN](https://support.microsoft.com/en-us/office/geomean-function-db1ac48d-25a5-40a0-ab83-0b38980e40d5)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[HARMEAN](/windowsforms/calculate/supported-formulas/statistical#harmean)'| markdownify }}</td>
+<td>{{'[HARMEAN](/windowsforms/calculation-engine/supported-formulas/statistical#harmean)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1098,7 +1098,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[HARMEAN](https://support.office.com/en-us/article/harmean-function-5efd9184-fab5-42f9-b1d3-57883a1d3bc6)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[INTERCEPT](/windowsforms/calculate/supported-formulas/statistical#intercept)'| markdownify }}</td>
+<td>{{'[INTERCEPT](/windowsforms/calculation-engine/supported-formulas/statistical#intercept)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1107,7 +1107,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[INTERCEPT](https://support.microsoft.com/en-us/office/intercept-function-2a9b74e2-9d47-4772-b663-3bca70bf63ef)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[LARGE](/windowsforms/calculate/supported-formulas/statistical#large)'| markdownify }}</td>
+<td>{{'[LARGE](/windowsforms/calculation-engine/supported-formulas/statistical#large)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1115,7 +1115,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LARGE](https://support.office.com/en-us/article/large-function-3af0af19-1190-42bb-bb8b-01672ec00a64)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LINEST](/windowsforms/calculate/supported-formulas/statistical#linest)'| markdownify }}</td>
+<td>{{'[LINEST](/windowsforms/calculation-engine/supported-formulas/statistical#linest)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1123,7 +1123,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LINEST](https://support.office.com/en-us/article/linest-function-84d7d0d9-6e50-4101-977a-fa7abf772b6d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MAX](/windowsforms/calculate/supported-formulas/statistical#max)'| markdownify }}</td>
+<td>{{'[MAX](/windowsforms/calculation-engine/supported-formulas/statistical#max)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1131,7 +1131,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MAX](https://support.office.com/en-us/article/max-function-e0012414-9ac8-4b34-9a47-73e662c08098)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MAXA](/windowsforms/calculate/supported-formulas/statistical#maxa)'| markdownify }}</td>
+<td>{{'[MAXA](/windowsforms/calculation-engine/supported-formulas/statistical#maxa)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1139,7 +1139,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MAXA](https://support.microsoft.com/en-us/office/maxa-function-814bda1e-3840-4bff-9365-2f59ac2ee62d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MEDIAN](/windowsforms/calculate/supported-formulas/statistical#median)'| markdownify }}</td>
+<td>{{'[MEDIAN](/windowsforms/calculation-engine/supported-formulas/statistical#median)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1147,7 +1147,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MEDIAN](https://support.office.com/en-us/article/median-function-d0916313-4753-414c-8537-ce85bdd967d2)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MIN](/windowsforms/calculate/supported-formulas/statistical#min)'| markdownify }}</td>
+<td>{{'[MIN](/windowsforms/calculation-engine/supported-formulas/statistical#min)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1155,7 +1155,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MIN](https://support.office.com/en-us/article/min-function-61635d12-920f-4ce2-a70f-96f202dcc152)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MINA](/windowsforms/calculate/supported-formulas/statistical#mina)'| markdownify }}</td>
+<td>{{'[MINA](/windowsforms/calculation-engine/supported-formulas/statistical#mina)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1163,7 +1163,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MINA](https://support.office.com/en-us/article/mina-function-245a6f46-7ca5-4dc7-ab49-805341bc31d3)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GAMMA.DIST](/windowsforms/calculate/supported-formulas/statistical#gammadist)'| markdownify }}</td>
+<td>{{'[GAMMA.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#gammadist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1172,7 +1172,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[GAMMA.DIST](https://support.office.com/en-us/article/gamma-dist-function-9b6f1538-d11c-4d5f-8966-21f6a2201def)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[GAMMADIST](/windowsforms/calculate/supported-formulas/statistical#gammadist-1)'| markdownify }}</td>
+<td>{{'[GAMMADIST](/windowsforms/calculation-engine/supported-formulas/statistical#gammadist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1181,7 +1181,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[GAMMADIST](https://support.office.com/en-us/article/gammadist-function-7327c94d-0f05-4511-83df-1dd7ed23e19e)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[GAMMA.INV](/windowsforms/calculate/supported-formulas/statistical#gammainv)'| markdownify }}</td>
+<td>{{'[GAMMA.INV](/windowsforms/calculation-engine/supported-formulas/statistical#gammainv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1189,7 +1189,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GAMMA.INV](https://support.office.com/en-us/article/gamma-inv-function-74991443-c2b0-4be5-aaab-1aa4d71fbb18)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GAMMAINV](/windowsforms/calculate/supported-formulas/statistical#gammainv-1)'| markdownify }}</td>
+<td>{{'[GAMMAINV](/windowsforms/calculation-engine/supported-formulas/statistical#gammainv-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1197,7 +1197,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GAMMAINV](https://support.office.com/en-us/article/gammainv-function-06393558-37ab-47d0-aa63-432f99e7916d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GAMMALN](/windowsforms/calculate/supported-formulas/statistical#gammaln)'| markdownify }}</td>
+<td>{{'[GAMMALN](/windowsforms/calculation-engine/supported-formulas/statistical#gammaln)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1205,7 +1205,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GAMMALN](https://support.office.com/en-us/article/gammaln-function-b838c48b-c65f-484f-9e1d-141c55470eb9)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GAMMALN.PRECISE](/windowsforms/calculate/supported-formulas/statistical#gammalnprecise)'| markdownify }}</td>
+<td>{{'[GAMMALN.PRECISE](/windowsforms/calculation-engine/supported-formulas/statistical#gammalnprecise)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1213,7 +1213,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GAMMALN.PRECISE](https://support.office.com/en-us/article/gammaln-precise-function-5cdfe601-4e1e-4189-9d74-241ef1caa599)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[GROWTH](/windowsforms/calculate/supported-formulas/statistical#growth)'| markdownify }}</td>
+<td>{{'[GROWTH](/windowsforms/calculation-engine/supported-formulas/statistical#growth)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1221,7 +1221,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[GROWTH](https://support.microsoft.com/en-us/office/growth-function-541a91dc-3d5e-437d-b156-21324e68b80d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[HYPGEOMDIST](/windowsforms/calculate/supported-formulas/statistical#hypgeomdist)'| markdownify }}</td>
+<td>{{'[HYPGEOMDIST](/windowsforms/calculation-engine/supported-formulas/statistical#hypgeomdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1230,7 +1230,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[HYPGEOMDIST](https://support.office.com/en-us/article/hypgeomdist-function-23e37961-2871-4195-9629-d0b2c108a12e)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[HYPGEOM.DIST](/windowsforms/calculate/supported-formulas/statistical#hypgeomdist-1)'| markdownify }}</td>
+<td>{{'[HYPGEOM.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#hypgeomdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1239,7 +1239,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[HYPGEOM.DIST](https://support.office.com/en-us/article/hypgeom-dist-function-6dbd547f-1d12-4b1f-8ae5-b0d9e3d22fbf)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[KURT](/windowsforms/calculate/supported-formulas/statistical#kurt)'| markdownify }}</td>
+<td>{{'[KURT](/windowsforms/calculation-engine/supported-formulas/statistical#kurt)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1248,7 +1248,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[KURT](https://support.microsoft.com/en-us/office/kurt-function-bc3a265c-5da4-4dcb-b7fd-c237789095ab)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[LOGEST](/windowsforms/calculate/supported-formulas/statistical#logest)'| markdownify }}</td>
+<td>{{'[LOGEST](/windowsforms/calculation-engine/supported-formulas/statistical#logest)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1257,7 +1257,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[LOGEST](https://support.microsoft.com/en-us/office/logest-function-f27462d8-3657-4030-866b-a272c1d18b4b)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[LOGINV](/windowsforms/calculate/supported-formulas/statistical#loginv)'| markdownify }}</td>
+<td>{{'[LOGINV](/windowsforms/calculation-engine/supported-formulas/statistical#loginv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1266,7 +1266,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[LOGINV](https://support.office.com/en-us/article/loginv-function-0bd7631a-2725-482b-afb4-de23df77acfe)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[LOGNORMDIST](/windowsforms/calculate/supported-formulas/statistical#lognormdist)'| markdownify }}</td>
+<td>{{'[LOGNORMDIST](/windowsforms/calculation-engine/supported-formulas/statistical#lognormdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1275,7 +1275,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[LOGNORMDIST](https://support.office.com/en-us/article/lognormdist-function-f8d194cb-9ee3-4034-8c75-1bdb3884100b)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[LOGNORM.DIST](/windowsforms/calculate/supported-formulas/statistical#lognormdist-1)'| markdownify }}</td>
+<td>{{'[LOGNORM.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#lognormdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1284,7 +1284,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[LOGNORM.DIST](https://support.microsoft.com/en-us/office/lognorm-dist-function-eb60d00b-48a9-4217-be2b-6074aee6b070)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[LOGNORM.INV](/windowsforms/calculate/supported-formulas/statistical#lognorminv)'| markdownify }}</td>
+<td>{{'[LOGNORM.INV](/windowsforms/calculation-engine/supported-formulas/statistical#lognorminv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1293,7 +1293,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[LOGNORM.INV](https://support.office.com/en-us/article/lognorm-inv-function-fe79751a-f1f2-4af8-a0a1-e151b2d4f600)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[MAXIFS](/windowsforms/calculate/supported-formulas/statistical#maxifs)'| markdownify }}</td>
+<td>{{'[MAXIFS](/windowsforms/calculation-engine/supported-formulas/statistical#maxifs)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1302,7 +1302,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[MAXIFS](https://support.office.com/en-us/article/maxifs-function-dfd611e6-da2c-488a-919b-9b6376b28883)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[MINIFS](/windowsforms/calculate/supported-formulas/statistical#minifs)'| markdownify }}</td>
+<td>{{'[MINIFS](/windowsforms/calculation-engine/supported-formulas/statistical#minifs)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1311,7 +1311,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[MINIFS](https://support.office.com/en-us/article/minifs-function-6ca1ddaa-079b-4e74-80cc-72eef32e6599)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[MODE](/windowsforms/calculate/supported-formulas/statistical#mode)'| markdownify }}</td>
+<td>{{'[MODE](/windowsforms/calculation-engine/supported-formulas/statistical#mode)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1320,7 +1320,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[MODE](https://support.office.com/en-us/article/mode-function-e45192ce-9122-4980-82ed-4bdc34973120)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[MODE.MULT](/windowsforms/calculate/supported-formulas/statistical#modemult)'| markdownify }}</td>
+<td>{{'[MODE.MULT](/windowsforms/calculation-engine/supported-formulas/statistical#modemult)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1329,7 +1329,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[MODE.MULT](https://support.microsoft.com/en-us/office/mode-mult-function-50fd9464-b2ba-4191-b57a-39446689ae8c)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[MODE.SNGL](/windowsforms/calculate/supported-formulas/statistical#modesngl)'| markdownify }}</td>
+<td>{{'[MODE.SNGL](/windowsforms/calculation-engine/supported-formulas/statistical#modesngl)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1338,7 +1338,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[MODE.SNGL](https://support.microsoft.com/en-us/office/mode-sngl-function-f1267c16-66c6-4386-959f-8fba5f8bb7f8)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[NORM.DIST](/windowsforms/calculate/supported-formulas/statistical#normdist)'| markdownify }}</td>
+<td>{{'[NORM.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#normdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1346,7 +1346,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[NORM.DIST](https://support.office.com/en-us/article/norm-dist-function-edb1cc14-a21c-4e53-839d-8082074c9f8d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[NORMDIST](/windowsforms/calculate/supported-formulas/statistical#normdist-1)'| markdownify }}</td>
+<td>{{'[NORMDIST](/windowsforms/calculation-engine/supported-formulas/statistical#normdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1354,7 +1354,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[NORMDIST](https://support.office.com/en-us/article/normdist-function-126db625-c53e-4591-9a22-c9ff422d6d58)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[NORMINV](/windowsforms/calculate/supported-formulas/statistical#norminv)'| markdownify }}</td>
+<td>{{'[NORMINV](/windowsforms/calculation-engine/supported-formulas/statistical#norminv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1362,7 +1362,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[NORMINV](https://support.microsoft.com/en-us/office/norminv-function-87981ab8-2de0-4cb0-b1aa-e21d4cb879b8)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[NORM.INV](/windowsforms/calculate/supported-formulas/statistical#norminv-1)'| markdownify }}</td>
+<td>{{'[NORM.INV](/windowsforms/calculation-engine/supported-formulas/statistical#norminv-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1370,7 +1370,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[NORM.INV](https://support.microsoft.com/en-us/office/norm-inv-function-54b30935-fee7-493c-bedb-2278a9db7e13)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[NORMSDIST](/windowsforms/calculate/supported-formulas/statistical#normsdist)'| markdownify }}</td>
+<td>{{'[NORMSDIST](/windowsforms/calculation-engine/supported-formulas/statistical#normsdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1379,7 +1379,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NORMSDIST](https://support.microsoft.com/en-us/office/normsdist-function-463369ea-0345-445d-802a-4ff0d6ce7cac)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[NORM.S.DIST](/windowsforms/calculate/supported-formulas/statistical#normsdist-1)'| markdownify }}</td>
+<td>{{'[NORM.S.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#normsdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1388,7 +1388,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NORM.S.DIST](https://support.microsoft.com/en-us/office/norm-s-dist-function-1e787282-3832-4520-a9ae-bd2a8d99ba88)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[NORMSINV](/windowsforms/calculate/supported-formulas/statistical#normsinv)'| markdownify }}</td>
+<td>{{'[NORMSINV](/windowsforms/calculation-engine/supported-formulas/statistical#normsinv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1397,7 +1397,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NORMSINV](https://support.microsoft.com/en-us/office/normsinv-function-8d1bce66-8e4d-4f3b-967c-30eed61f019d)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[NORM.S.INV](/windowsforms/calculate/supported-formulas/statistical#normsinv-1)'| markdownify }}</td>
+<td>{{'[NORM.S.INV](/windowsforms/calculation-engine/supported-formulas/statistical#normsinv-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1406,7 +1406,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NORM.S.INV](https://support.microsoft.com/en-us/office/norm-s-inv-function-d6d556b4-ab7f-49cd-b526-5a20918452b1)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[NEGBINOMDIST](/windowsforms/calculate/supported-formulas/statistical#negbinomdist)'| markdownify }}</td>
+<td>{{'[NEGBINOMDIST](/windowsforms/calculation-engine/supported-formulas/statistical#negbinomdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1415,7 +1415,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NEGBINOMDIST](https://support.office.com/en-us/article/negbinomdist-function-f59b0a37-bae2-408d-b115-a315609ba714)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[NEGBINOM.DIST](/windowsforms/calculate/supported-formulas/statistical#negbinomdist-1)'| markdownify }}</td>
+<td>{{'[NEGBINOM.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#negbinomdist-1)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1424,7 +1424,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NEGBINOM.DIST](https://support.office.com/en-us/article/negbinom-dist-function-c8239f89-c2d0-45bd-b6af-172e570f8599)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[PEARSON](/windowsforms/calculate/supported-formulas/statistical#pearson)'| markdownify }}</td>
+<td>{{'[PEARSON](/windowsforms/calculation-engine/supported-formulas/statistical#pearson)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1433,7 +1433,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PEARSON](https://support.microsoft.com/en-us/office/pearson-function-0c3e30fc-e5af-49c4-808a-3ef66e034c18)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[PERCENTILE](/windowsforms/calculate/supported-formulas/statistical#percentile)'| markdownify }}</td>
+<td>{{'[PERCENTILE](/windowsforms/calculation-engine/supported-formulas/statistical#percentile)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1442,7 +1442,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PERCENTILE](https://support.office.com/en-us/article/percentile-function-91b43a53-543c-4708-93de-d626debdddca)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[PERCENTILE.EXC](/windowsforms/calculate/supported-formulas/statistical#percentileexc)'| markdownify }}</td>
+<td>{{'[PERCENTILE.EXC](/windowsforms/calculation-engine/supported-formulas/statistical#percentileexc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1450,7 +1450,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PERCENTILE.EXC](https://support.microsoft.com/en-us/office/percentile-exc-function-bbaa7204-e9e1-4010-85bf-c31dc5dce4ba)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[PERCENTILE.INC](/windowsforms/calculate/supported-formulas/statistical#percentileinc)'| markdownify }}</td>
+<td>{{'[PERCENTILE.INC](/windowsforms/calculation-engine/supported-formulas/statistical#percentileinc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1458,7 +1458,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PERCENTILE.INC](https://support.microsoft.com/en-us/office/percentile-inc-function-680f9539-45eb-410b-9a5e-c1355e5fe2ed)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[PERCENTILE.RANK](/windowsforms/calculate/supported-formulas/statistical#percentilerank)'| markdownify }}</td>
+<td>{{'[PERCENTILE.RANK](/windowsforms/calculation-engine/supported-formulas/statistical#percentilerank)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1467,7 +1467,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PERCENTILE.RANK](https://support.office.com/en-us/article/percentrank-function-f1b5836c-9619-4847-9fc9-080ec9024442)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[PERCENTRANK.INC](/windowsforms/calculate/supported-formulas/statistical#percentrankinc)'| markdownify }}</td>
+<td>{{'[PERCENTRANK.INC](/windowsforms/calculation-engine/supported-formulas/statistical#percentrankinc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1475,7 +1475,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PERCENTRANK.INC](https://support.office.com/en-us/article/percentrank-inc-function-149592c9-00c0-49ba-86c1-c1f45b80463a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[PERCENTRANK.EXC](/windowsforms/calculate/supported-formulas/statistical#percentrankexc)'| markdownify }}</td>
+<td>{{'[PERCENTRANK.EXC](/windowsforms/calculation-engine/supported-formulas/statistical#percentrankexc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1483,7 +1483,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PERCENTRANK.EXC](https://support.microsoft.com/en-us/office/percentrank-exc-function-d8afee96-b7e2-4a2f-8c01-8fcdedaa6314)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[PERMUT](/windowsforms/calculate/supported-formulas/statistical#permut)'| markdownify }}</td>
+<td>{{'[PERMUT](/windowsforms/calculation-engine/supported-formulas/statistical#permut)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1491,7 +1491,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PERMUT](https://support.office.com/en-us/article/permut-function-3bd1cb9a-2880-41ab-a197-f246a7a602d3)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[PERMUTATIONA](/windowsforms/calculate/supported-formulas/statistical#permutationa)'| markdownify }}</td>
+<td>{{'[PERMUTATIONA](/windowsforms/calculation-engine/supported-formulas/statistical#permutationa)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1500,7 +1500,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PERMUTATIONA](https://support.office.com/en-us/article/permutationa-function-6c7d7fdc-d657-44e6-aa19-2857b25cae4e)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[POISSON](/windowsforms/calculate/supported-formulas/statistical#poisson)'| markdownify }}</td>
+<td>{{'[POISSON](/windowsforms/calculation-engine/supported-formulas/statistical#poisson)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1509,7 +1509,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[POISSON](https://support.microsoft.com/en-us/office/poisson-function-d81f7294-9d7c-4f75-bc23-80aa8624173a)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[POISSON.DIST](/windowsforms/calculate/supported-formulas/statistical#poissondist)'| markdownify }}</td>
+<td>{{'[POISSON.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#poissondist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1518,7 +1518,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[POISSON.DIST](https://support.microsoft.com/en-us/office/poisson-dist-function-8fe148ff-39a2-46cb-abf3-7772695d9636)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[PROB](/windowsforms/calculate/supported-formulas/statistical#prob)'| markdownify }}</td>
+<td>{{'[PROB](/windowsforms/calculation-engine/supported-formulas/statistical#prob)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1527,7 +1527,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[PROB](https://support.microsoft.com/en-us/office/prob-function-9ac30561-c81c-4259-8253-34f0a238fc49)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[QUARTILE](/windowsforms/calculate/supported-formulas/statistical#quartile)'| markdownify }}</td>
+<td>{{'[QUARTILE](/windowsforms/calculation-engine/supported-formulas/statistical#quartile)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1536,7 +1536,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[QUARTILE](https://support.office.com/en-us/article/quartile-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[QUARTILE.EXC](/windowsforms/calculate/supported-formulas/statistical#quartileexc)'| markdownify }}</td>
+<td>{{'[QUARTILE.EXC](/windowsforms/calculation-engine/supported-formulas/statistical#quartileexc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1545,7 +1545,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[QUARTILE.EXC](https://support.microsoft.com/en-us/office/quartile-exc-function-5a355b7a-840b-4a01-b0f1-f538c2864cad)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[QUARTILE.INC](/windowsforms/calculate/supported-formulas/statistical#quartileinc)'| markdownify }}</td>
+<td>{{'[QUARTILE.INC](/windowsforms/calculation-engine/supported-formulas/statistical#quartileinc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1554,7 +1554,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[QUARTILE.INC](https://support.microsoft.com/en-us/office/quartile-inc-function-1bbacc80-5075-42f1-aed6-47d735c4819d)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[RANK](/windowsforms/calculate/supported-formulas/statistical#rank)'| markdownify }}</td>
+<td>{{'[RANK](/windowsforms/calculation-engine/supported-formulas/statistical#rank)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1562,7 +1562,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RANK](https://support.office.com/en-us/article/rank-function-6a2fc49d-1831-4a03-9d8c-c279cf99f723)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RANK.EQ](/windowsforms/calculate/supported-formulas/statistical#rankeq)'| markdownify }}</td>
+<td>{{'[RANK.EQ](/windowsforms/calculation-engine/supported-formulas/statistical#rankeq)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1570,7 +1570,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RANK.EQ](https://support.office.com/en-us/article/rank-eq-function-284858ce-8ef6-450e-b662-26245be04a40)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RANK.AVG](/windowsforms/calculate/supported-formulas/statistical#rankavg)'| markdownify }}</td>
+<td>{{'[RANK.AVG](/windowsforms/calculation-engine/supported-formulas/statistical#rankavg)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1578,7 +1578,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RANK.AVG](https://support.microsoft.com/en-us/office/rank-avg-function-bd406a6f-eb38-4d73-aa8e-6d1c3c72e83a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RSQ](/windowsforms/calculate/supported-formulas/statistical#rsq)'| markdownify }}</td>
+<td>{{'[RSQ](/windowsforms/calculation-engine/supported-formulas/statistical#rsq)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1586,7 +1586,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RSQ](https://support.microsoft.com/en-us/office/rsq-function-d7161715-250d-4a01-b80d-a8364f2be08f)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[SKEW](/windowsforms/calculate/supported-formulas/statistical#skew)'| markdownify }}</td>
+<td>{{'[SKEW](/windowsforms/calculation-engine/supported-formulas/statistical#skew)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1594,7 +1594,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[SKEW](https://support.microsoft.com/en-us/office/skew-function-bdf49d86-b1ef-4804-a046-28eaea69c9fa)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[SKEW.P](/windowsforms/calculate/supported-formulas/statistical#skewp)'| markdownify }}</td>
+<td>{{'[SKEW.P](/windowsforms/calculation-engine/supported-formulas/statistical#skewp)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1602,7 +1602,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[SKEW.P](https://support.office.com/en-us/article/skew-p-function-76530a5c-99b9-48a1-8392-26632d542fcb)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[SLOPE](/windowsforms/calculate/supported-formulas/statistical#slope)'| markdownify }}</td>
+<td>{{'[SLOPE](/windowsforms/calculation-engine/supported-formulas/statistical#slope)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1610,7 +1610,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[SLOPE](https://support.office.com/en-us/article/slope-function-11fb8f97-3117-4813-98aa-61d7e01276b9)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[SMALL](/windowsforms/calculate/supported-formulas/statistical#small)'| markdownify }}</td>
+<td>{{'[SMALL](/windowsforms/calculation-engine/supported-formulas/statistical#small)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1618,7 +1618,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[SMALL](https://support.office.com/en-us/article/small-function-17da8222-7c82-42b2-961b-14c45384df07)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STANDARDIZE](/windowsforms/calculate/supported-formulas/statistical#standardize)'| markdownify }}</td>
+<td>{{'[STANDARDIZE](/windowsforms/calculation-engine/supported-formulas/statistical#standardize)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1627,7 +1627,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[STANDARDIZE](https://support.microsoft.com/en-us/office/standardize-function-81d66554-2d54-40ec-ba83-6437108ee775)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[STDEV](/windowsforms/calculate/supported-formulas/statistical#stdev)'| markdownify }}</td>
+<td>{{'[STDEV](/windowsforms/calculation-engine/supported-formulas/statistical#stdev)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1635,7 +1635,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STDEV](https://support.office.com/en-us/article/stdev-function-51fecaaa-231e-4bbb-9230-33650a72c9b0)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STDEV.P](/windowsforms/calculate/supported-formulas/statistical#stdevp)'| markdownify }}</td>
+<td>{{'[STDEV.P](/windowsforms/calculation-engine/supported-formulas/statistical#stdevp)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1643,7 +1643,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STDEV.P](https://support.office.com/en-us/article/stdev-p-function-6e917c05-31a0-496f-ade7-4f4e7462f285)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STDEV.S](/windowsforms/calculate/supported-formulas/statistical#stdevs)'| markdownify }}</td>
+<td>{{'[STDEV.S](/windowsforms/calculation-engine/supported-formulas/statistical#stdevs)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1651,7 +1651,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STDEV.S](https://support.office.com/en-us/article/stdev-s-function-7d69cf97-0c1f-4acf-be27-f3e83904cc23)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STDEVA](/windowsforms/calculate/supported-formulas/statistical#stdeva)'| markdownify }}</td>
+<td>{{'[STDEVA](/windowsforms/calculation-engine/supported-formulas/statistical#stdeva)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1659,7 +1659,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STDEVA](https://support.office.com/en-us/article/stdeva-function-5ff38888-7ea5-48de-9a6d-11ed73b29e9d)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STDEVPA](/windowsforms/calculate/supported-formulas/statistical#stdevpa)'| markdownify }}</td>
+<td>{{'[STDEVPA](/windowsforms/calculation-engine/supported-formulas/statistical#stdevpa)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1667,7 +1667,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STDEVPA](https://support.microsoft.com/en-us/office/stdevpa-function-5578d4d6-455a-4308-9991-d405afe2c28c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[STEYX](/windowsforms/calculate/supported-formulas/statistical#steyx)'| markdownify }}</td>
+<td>{{'[STEYX](/windowsforms/calculation-engine/supported-formulas/statistical#steyx)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1675,7 +1675,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[STEYX](https://support.microsoft.com/en-us/office/steyx-function-6ce74b2c-449d-4a6e-b9ac-f9cef5ba48ab)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[T.DIST](/windowsforms/calculate/supported-formulas/statistical#tdist)'| markdownify }}</td>
+<td>{{'[T.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#tdist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1683,7 +1683,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[T.DIST](https://support.microsoft.com/en-us/office/t-dist-function-4329459f-ae91-48c2-bba8-1ead1c6c21b2)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[T.INV](/windowsforms/calculate/supported-formulas/statistical#tinv)'| markdownify }}</td>
+<td>{{'[T.INV](/windowsforms/calculation-engine/supported-formulas/statistical#tinv)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1691,7 +1691,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[T.INV](https://support.microsoft.com/en-us/office/t-inv-function-2908272b-4e61-4942-9df9-a25fec9b0e2e)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[TRIMMEAN](/windowsforms/calculate/supported-formulas/statistical#trimmean)'| markdownify }}</td>
+<td>{{'[TRIMMEAN](/windowsforms/calculation-engine/supported-formulas/statistical#trimmean)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1699,7 +1699,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[TRIMMEAN](https://support.microsoft.com/en-us/office/trimmean-function-d90c9878-a119-4746-88fa-63d988f511d3)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[VAR](/windowsforms/calculate/supported-formulas/statistical#var)'| markdownify }}</td>
+<td>{{'[VAR](/windowsforms/calculation-engine/supported-formulas/statistical#var)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1707,7 +1707,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[VAR](https://support.microsoft.com/en-us/office/var-function-1f2b7ab2-954d-4e17-ba2c-9e58b15a7da2)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[VAR.P](/windowsforms/calculate/supported-formulas/statistical#varp)'| markdownify }}</td>
+<td>{{'[VAR.P](/windowsforms/calculation-engine/supported-formulas/statistical#varp)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1715,7 +1715,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[VAR.P](https://support.microsoft.com/en-us/office/var-p-function-73d1285c-108c-4843-ba5d-a51f90656f3a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[VARA](/windowsforms/calculate/supported-formulas/statistical#vara)'| markdownify }}</td>
+<td>{{'[VARA](/windowsforms/calculation-engine/supported-formulas/statistical#vara)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1723,7 +1723,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[VARA](https://support.office.com/en-us/article/vara-function-3de77469-fa3a-47b4-85fd-81758a1e1d07)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[VARPA](/windowsforms/calculate/supported-formulas/statistical#varpa)'| markdownify }}</td>
+<td>{{'[VARPA](/windowsforms/calculation-engine/supported-formulas/statistical#varpa)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1731,7 +1731,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[VARPA](https://support.office.com/en-us/article/varpa-function-59a62635-4e89-4fad-88ac-ce4dc0513b96)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[WEIBULL.DIST](/windowsforms/calculate/supported-formulas/statistical#weibulldist)'| markdownify }}</td>
+<td>{{'[WEIBULL.DIST](/windowsforms/calculation-engine/supported-formulas/statistical#weibulldist)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1740,7 +1740,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[WEIBULL.DIST](https://support.office.com/en-us/article/weibull-dist-function-4e783c39-9325-49be-bbc9-a83ef82b45db)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[ZTEST](/windowsforms/calculate/supported-formulas/statistical#ztest)'| markdownify }}</td>
+<td>{{'[ZTEST](/windowsforms/calculation-engine/supported-formulas/statistical#ztest)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1748,7 +1748,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[ZTEST](https://support.office.com/en-us/article/ztest-function-8f33be8a-6bd6-4ecc-8e3a-d9a4420c4a6a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[Z.TEST](/windowsforms/calculate/supported-formulas/statistical#z.test)'| markdownify }}</td>
+<td>{{'[Z.TEST](/windowsforms/calculation-engine/supported-formulas/statistical#z.test)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2421,7 +2421,7 @@ The following are the list of formulas supported in Calculate library,
 <th>.NET Core</th>
 <th>Reference</th></tr>
 <tr>
-<td>{{'[ASC](/windowsforms/calculate/supported-formulas/text-formulas#asc)'| markdownify }}</td>
+<td>{{'[ASC](/windowsforms/calculation-engine/supported-formulas/text-formulas#asc)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2429,7 +2429,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[ASC](https://support.microsoft.com/en-us/office/asc-function-0b6abf1c-c663-4004-a964-ebc00b723266)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CHAR](/windowsforms/calculate/supported-formulas/text-formulas#char)'| markdownify }}</td>
+<td>{{'[CHAR](/windowsforms/calculation-engine/supported-formulas/text-formulas#char)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2437,7 +2437,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CHAR](https://support.office.com/en-us/article/char-function-bbd249c8-b36e-4a91-8017-1c133f9b837a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CLEAN](/windowsforms/calculate/supported-formulas/text-formulas#clean)'| markdownify }}</td>
+<td>{{'[CLEAN](/windowsforms/calculation-engine/supported-formulas/text-formulas#clean)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2445,7 +2445,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CLEAN](https://support.office.com/en-us/article/clean-function-26f3d7c5-475f-4a9c-90e5-4b8ba987ba41)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CODE](/windowsforms/calculate/supported-formulas/text-formulas#code)'| markdownify }}</td>
+<td>{{'[CODE](/windowsforms/calculation-engine/supported-formulas/text-formulas#code)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2453,7 +2453,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[CODE](https://support.microsoft.com/en-us/office/code-function-c32b692b-2ed0-4a04-bdd9-75640144b928)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[CONCAT](/windowsforms/calculate/supported-formulas/text-formulas#concat)'| markdownify }}</td>
+<td>{{'[CONCAT](/windowsforms/calculation-engine/supported-formulas/text-formulas#concat)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2462,7 +2462,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CONCAT](https://support.office.com/en-us/article/concat-function-9b1a9a3f-94ff-41af-9736-694cbd6b4ca2)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[CONCATENATE](/windowsforms/calculate/supported-formulas/text-formulas#concatenate)'| markdownify }}</td>
+<td>{{'[CONCATENATE](/windowsforms/calculation-engine/supported-formulas/text-formulas#concatenate)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2471,7 +2471,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[CONCATENATE](https://support.office.com/en-us/article/concatenate-function-8f8ae884-2ca8-4f7a-b093-75d702bea31d)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[EXACT](/windowsforms/calculate/supported-formulas/text-formulas#exact)'| markdownify }}</td>
+<td>{{'[EXACT](/windowsforms/calculation-engine/supported-formulas/text-formulas#exact)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2479,7 +2479,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[EXACT](https://support.office.com/en-us/article/exact-function-d3087698-fc15-4a15-9631-12575cf29926)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FIND](/windowsforms/calculate/supported-formulas/text-formulas#find)'| markdownify }}</td>
+<td>{{'[FIND](/windowsforms/calculation-engine/supported-formulas/text-formulas#find)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2487,7 +2487,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FIND](https://support.office.com/en-us/article/find-findb-functions-c7912941-af2a-4bdf-a553-d0d89b0a0628)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FINDB](/windowsforms/calculate/supported-formulas/text-formulas#findB)'| markdownify }}</td>
+<td>{{'[FINDB](/windowsforms/calculation-engine/supported-formulas/text-formulas#findB)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2495,7 +2495,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FINDB](https://support.office.com/en-us/article/find-findb-functions-c7912941-af2a-4bdf-a553-d0d89b0a0628)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[FIXED](/windowsforms/calculate/supported-formulas/text-formulas#fixed)'| markdownify }}</td>
+<td>{{'[FIXED](/windowsforms/calculation-engine/supported-formulas/text-formulas#fixed)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2503,7 +2503,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[FIXED](https://support.microsoft.com/en-us/office/fixed-function-ffd5723c-324c-45e9-8b96-e41be2a8274a)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[JIS](/windowsforms/calculate/supported-formulas/text-formulas#jis)'| markdownify }}</td>
+<td>{{'[JIS](/windowsforms/calculation-engine/supported-formulas/text-formulas#jis)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2511,7 +2511,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[JIS](https://support.office.com/en-us/article/jis-function-b72fb1a7-ba52-448a-b7d3-d2610868b7e2)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LEFT](/windowsforms/calculate/supported-formulas/text-formulas#left)'| markdownify }}</td>
+<td>{{'[LEFT](/windowsforms/calculation-engine/supported-formulas/text-formulas#left)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2519,7 +2519,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LEFT](https://support.office.com/en-us/article/left-leftb-functions-9203d2d2-7960-479b-84c6-1ea52b99640c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LEFTB](/windowsforms/calculate/supported-formulas/text-formulas#leftb)'| markdownify }}</td>
+<td>{{'[LEFTB](/windowsforms/calculation-engine/supported-formulas/text-formulas#leftb)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2527,7 +2527,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LEFTB](https://support.office.com/en-us/article/left-leftb-functions-9203d2d2-7960-479b-84c6-1ea52b99640c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LEN](/windowsforms/calculate/supported-formulas/text-formulas#len)'| markdownify }}</td>
+<td>{{'[LEN](/windowsforms/calculation-engine/supported-formulas/text-formulas#len)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2535,7 +2535,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LEN](https://support.office.com/en-us/article/len-lenb-functions-29236f94-cedc-429d-affd-b5e33d2c67cb)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LENB](/windowsforms/calculate/supported-formulas/text-formulas#lenb)'| markdownify }}</td>
+<td>{{'[LENB](/windowsforms/calculation-engine/supported-formulas/text-formulas#lenb)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2543,7 +2543,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LENB](https://support.office.com/en-us/article/len-lenb-functions-29236f94-cedc-429d-affd-b5e33d2c67cb)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[LOWER](/windowsforms/calculate/supported-formulas/text-formulas#lower)'| markdownify }}</td>
+<td>{{'[LOWER](/windowsforms/calculation-engine/supported-formulas/text-formulas#lower)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2551,7 +2551,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[LOWER](https://support.microsoft.com/en-us/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MID](/windowsforms/calculate/supported-formulas/text-formulas#mid)'| markdownify }}</td>
+<td>{{'[MID](/windowsforms/calculation-engine/supported-formulas/text-formulas#mid)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2559,7 +2559,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MID](https://support.office.com/en-us/article/mid-midb-functions-d5f9e25c-d7d6-472e-b568-4ecb12433028)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[MIDB](/windowsforms/calculate/supported-formulas/text-formulas#midb)'| markdownify }}</td>
+<td>{{'[MIDB](/windowsforms/calculation-engine/supported-formulas/text-formulas#midb)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2567,7 +2567,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[MIDB](https://support.office.com/en-us/article/mid-midb-functions-d5f9e25c-d7d6-472e-b568-4ecb12433028)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[NUMBERVALUE](/windowsforms/calculate/supported-formulas/text-formulas#numbervalue)'| markdownify }}</td>
+<td>{{'[NUMBERVALUE](/windowsforms/calculation-engine/supported-formulas/text-formulas#numbervalue)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2576,7 +2576,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[NUMBERVALUE](https://support.office.com/en-us/article/numbervalue-function-1b05c8cf-2bfa-4437-af70-596c7ea7d879)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[PROPER](/windowsforms/calculate/supported-formulas/text-formulas#proper)'| markdownify }}</td>
+<td>{{'[PROPER](/windowsforms/calculation-engine/supported-formulas/text-formulas#proper)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2584,7 +2584,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[PROPER](https://support.office.com/en-us/article/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[REPLACE](/windowsforms/calculate/supported-formulas/text-formulas#replace)'| markdownify }}</td>
+<td>{{'[REPLACE](/windowsforms/calculation-engine/supported-formulas/text-formulas#replace)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2593,7 +2593,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[REPLACE](https://support.office.com/en-us/article/replace-replaceb-functions-8d799074-2425-4a8a-84bc-82472868878a)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[REPLACEB](/windowsforms/calculate/supported-formulas/text-formulas#REPLACEB)'| markdownify }}</td>
+<td>{{'[REPLACEB](/windowsforms/calculation-engine/supported-formulas/text-formulas#REPLACEB)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2602,7 +2602,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[REPLACEB](https://support.office.com/en-us/article/replace-replaceb-functions-8d799074-2425-4a8a-84bc-82472868878a)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[REPT](/windowsforms/calculate/supported-formulas/text-formulas#rept)'| markdownify }}</td>
+<td>{{'[REPT](/windowsforms/calculation-engine/supported-formulas/text-formulas#rept)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2610,7 +2610,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[REPT](https://support.microsoft.com/en-us/office/rept-function-04c4d778-e712-43b4-9c15-d656582bb061)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RIGHT](/windowsforms/calculate/supported-formulas/text-formulas#right)'| markdownify }}</td>
+<td>{{'[RIGHT](/windowsforms/calculation-engine/supported-formulas/text-formulas#right)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2618,7 +2618,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[RIGHT](https://support.office.com/en-us/article/right-rightb-functions-240267ee-9afa-4639-a02b-f19e1786cf2f)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[RIGHTB](/windowsforms/calculate/supported-formulas/text-formulas#rightb)'| markdownify }}</td>
+<td>{{'[RIGHTB](/windowsforms/calculation-engine/supported-formulas/text-formulas#rightb)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2627,7 +2627,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[RIGHTB](https://support.office.com/en-us/article/right-rightb-functions-240267ee-9afa-4639-a02b-f19e1786cf2f)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[SEARCH](/windowsforms/calculate/supported-formulas/text-formulas#search)'| markdownify }}</td>
+<td>{{'[SEARCH](/windowsforms/calculation-engine/supported-formulas/text-formulas#search)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2636,7 +2636,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[SEARCH](https://support.office.com/en-us/article/search-searchb-functions-9ab04538-0e55-4719-a72e-b6f54513b495)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[SEARCHB](/windowsforms/calculate/supported-formulas/text-formulas#searchb)'| markdownify }}</td>
+<td>{{'[SEARCHB](/windowsforms/calculation-engine/supported-formulas/text-formulas#searchb)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2645,7 +2645,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[SEARCHB](https://support.office.com/en-us/article/search-searchb-functions-9ab04538-0e55-4719-a72e-b6f54513b495)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[SUBSTITUTE](/windowsforms/calculate/supported-formulas/text-formulas#substitute)'| markdownify }}</td>
+<td>{{'[SUBSTITUTE](/windowsforms/calculation-engine/supported-formulas/text-formulas#substitute)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2654,7 +2654,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[SUBSTITUTE](https://support.office.com/en-us/article/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[T](/windowsforms/calculate/supported-formulas/text-formulas#t)'| markdownify }}</td>
+<td>{{'[T](/windowsforms/calculation-engine/supported-formulas/text-formulas#t)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2662,7 +2662,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[T](https://support.microsoft.com/en-us/office/t-function-fb83aeec-45e7-4924-af95-53e073541228)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[TEXT](/windowsforms/calculate/supported-formulas/text-formulas#text)'| markdownify }}</td>
+<td>{{'[TEXT](/windowsforms/calculation-engine/supported-formulas/text-formulas#text)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2670,7 +2670,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[TEXT](https://support.office.com/en-us/article/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[TEXTJOIN](/windowsforms/calculate/supported-formulas/text-formulas#textjoin)'| markdownify }}</td>
+<td>{{'[TEXTJOIN](/windowsforms/calculation-engine/supported-formulas/text-formulas#textjoin)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2678,7 +2678,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[TEXTJOIN](https://support.office.com/en-us/article/textjoin-function-357b449a-ec91-49d0-80c3-0e8fc845691c)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[TRIM](/windowsforms/calculate/supported-formulas/text-formulas#trim)'| markdownify }}</td>
+<td>{{'[TRIM](/windowsforms/calculation-engine/supported-formulas/text-formulas#trim)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2686,7 +2686,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[TRIM](https://support.office.com/en-us/article/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[UNICHAR](/windowsforms/calculate/supported-formulas/text-formulas#unichar)'| markdownify }}</td>
+<td>{{'[UNICHAR](/windowsforms/calculation-engine/supported-formulas/text-formulas#unichar)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2694,7 +2694,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[UNICHAR](https://support.office.com/en-us/article/unichar-function-ffeb64f5-f131-44c6-b332-5cd72f0659b8)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[UNICODE](/windowsforms/calculate/supported-formulas/text-formulas#unicode)'| markdownify }}</td>
+<td>{{'[UNICODE](/windowsforms/calculation-engine/supported-formulas/text-formulas#unicode)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2702,7 +2702,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[UNICODE](https://support.office.com/en-us/article/unicode-function-adb74aaa-a2a5-4dde-aff6-966e4e81f16f)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[UPPER](/windowsforms/calculate/supported-formulas/text-formulas#upper)'| markdownify }}</td>
+<td>{{'[UPPER](/windowsforms/calculation-engine/supported-formulas/text-formulas#upper)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -2710,7 +2710,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[UPPER](https://support.office.com/en-us/article/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[VALUE](/windowsforms/calculate/supported-formulas/text-formulas#value)'| markdownify }}</td>
+<td>{{'[VALUE](/windowsforms/calculation-engine/supported-formulas/text-formulas#value)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3149,7 +3149,7 @@ The following are the list of formulas supported in Calculate library,
 <th>.NET Core</th>
 <th>Reference</th></tr>
 <tr>
-<td>{{'[EncodeURL](/windowsforms/calculate/supported-formulas/web-formulas#encodeurl)'| markdownify }}</td>
+<td>{{'[EncodeURL](/windowsforms/calculation-engine/supported-formulas/web-formulas#encodeurl)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3158,7 +3158,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[EncodeURL](https://support.microsoft.com/en-us/office/encodeurl-function-07c7fb90-7c60-4bff-8687-fac50fe33d0e)'| markdownify }}</td>
 </tr>
 <tr>
-<td>{{'[WEBSERVICE](/windowsforms/calculate/supported-formulas/web-formulas#webservice)'| markdownify }}</td>
+<td>{{'[WEBSERVICE](/windowsforms/calculation-engine/supported-formulas/web-formulas#webservice)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3167,7 +3167,7 @@ The following are the list of formulas supported in Calculate library,
 <td>{{'[WEBSERVICE](https://support.microsoft.com/en-us/office/webservice-function-0546a35a-ecc6-4739-aed7-c0b7ce1562c4)'| markdownify }}
 </td></tr>
 <tr>
-<td>{{'[FILTERXML](/windowsforms/calculate/supported-formulas/web-formulas#filterxml)'| markdownify }}</td>
+<td>{{'[FILTERXML](/windowsforms/calculation-engine/supported-formulas/web-formulas#filterxml)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3245,7 +3245,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[DISC](https://support.office.com/en-us/article/disc-function-71fce9f3-3f05-4acf-a5a3-eac6ef4daa53)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[DOLLAR](/windowsforms/calculate/supported-formulas/text-formulas#dollar)'| markdownify }}</td>
+<td>{{'[DOLLAR](/windowsforms/calculation-engine/supported-formulas/text-formulas#dollar)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3253,7 +3253,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[DOLLAR](https://support.microsoft.com/en-us/office/dollar-function-a6cd05d9-9740-4ad3-a469-8109d18ff611)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[DOLLARFR](/windowsforms/calculate/supported-formulas/text-formulas#dollarfr)'| markdownify }}</td>
+<td>{{'[DOLLARFR](/windowsforms/calculation-engine/supported-formulas/text-formulas#dollarfr)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -3261,7 +3261,7 @@ The following are the list of formulas supported in Calculate library,
 <td>yes</td>
 <td>{{'[DOLLARFR](https://support.office.com/en-us/article/dollarfr-function-0835d163-3023-4a33-9824-3042c5d4f495)'| markdownify }}</td></tr>
 <tr>
-<td>{{'[DURATION](/windowsforms/calculate/supported-formulas/text-formulas#duration)'| markdownify }}</td>
+<td>{{'[DURATION](/windowsforms/calculation-engine/supported-formulas/text-formulas#duration)'| markdownify }}</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
