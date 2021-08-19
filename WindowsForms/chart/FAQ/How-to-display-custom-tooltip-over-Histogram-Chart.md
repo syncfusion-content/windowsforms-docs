@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How-to-display-custom-tooltip-over-Histogram-Chart | Windows Forms | Syncfusion
+title: Display custom tooltip over Histogram Chart | WinForms | Syncfusion
 description: Learn here how to display custom tooltip over histogram chart columns of Syncfusion WindowsForms Chart (Sfchart) control and more.
 platform: windowsforms
 control: chart
