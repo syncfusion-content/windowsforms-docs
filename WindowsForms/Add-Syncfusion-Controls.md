@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-# Add Syncfusion Controls 
+# Add WindowsForms Syncfusion Controls 
 
 The Syncfusion Windows Forms controls can be added in a Visual Studio projects by using either of the following ways,
 
