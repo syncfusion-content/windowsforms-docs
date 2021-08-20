@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How-to-hide-the-Chart-ZoomButton | Windows Forms | Syncfusion
-description: how to hide the chart zoombutton
+description: Learn here how to hide the chart zoombutton of Syncfusion WindowsForms Chart (Sfchart) control and more.
 platform: windowsforms
 control: chart
 documentation: ug
