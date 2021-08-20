@@ -102,4 +102,4 @@ Controls.Add(pdfViewerControl1)
 {% endhighlight %}
 {% endtabs %}
 
-Refer to [Viewing PDF files](/windowsforms/pdfviewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
+Refer to [Viewing PDF files](/windowsforms/pdf-viewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
