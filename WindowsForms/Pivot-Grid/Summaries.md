@@ -64,7 +64,7 @@ Specifies that you are using a custom SummaryBase object to define the calculati
 
 ### Customizing summary type at run time
 
-Summary type of pivot calculation values can be customized by using the pivot computation information dialog. While double clicking on a calculation item in the value layout section of [pivot schema designer](https://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer), the pivot computation information dialog will be displayed. The summary type of pivot calculation item can be changed by using the "Summarize Value By" combo box resides in the pivot computation information dialog as specified below.
+Summary type of pivot calculation values can be customized by using the pivot computation information dialog. While double clicking on a calculation item in the value layout section of [pivot schema designer](https://help.syncfusion.com/windowsforms/pivot-grid/pivot-schema-designer), the pivot computation information dialog will be displayed. The summary type of pivot calculation item can be changed by using the "Summarize Value By" combo box resides in the pivot computation information dialog as specified below.
 
 ![Summaries_img1](Summaries_images/Summaries_img1.png)
 

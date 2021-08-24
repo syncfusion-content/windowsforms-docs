@@ -92,7 +92,7 @@ End Class
 
 ## Using grouping bar
 
-The sorting operation can also be performed by clicking on the header item of required pivot field present in row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
+The sorting operation can also be performed by clicking on the header item of required pivot field present in row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivot-grid/grouping-bar).
 
 By default, the pivot field values are sorted in the ascending order. On clicking the same header item once again will reverse the sorting direction. The sort indicator present at the right corner of the header item denotes the type of sorting applied to the pivot field such as ascending order or descending order.
 
