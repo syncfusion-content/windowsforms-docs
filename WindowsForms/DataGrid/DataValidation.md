@@ -21,7 +21,7 @@ Built-in validations through[IDataErrorInfo](https://docs.microsoft.com/en-us/do
 ### Using IDataErrorInfo
 
 #### Cell Validation
-SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0). This can be enabled by setting the [SfDataGrid.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.SfDataGrid~ValidationMode.html) or [GridColumn.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.SfDataGrid.WinForms~Syncfusion.WinForms.DataGrid.GridColumnBase~ValidationMode.html) property to `InEdit` or `InView`.
+SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.idataerrorinfo?view=net-5.0). This can be enabled by setting the [SfDataGrid.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) or [GridColumn.ValidationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html) property to `InEdit` or `InView`.
 
 {% tabs %}
 {% highlight c# %}

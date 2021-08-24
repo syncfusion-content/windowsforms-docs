@@ -77,7 +77,7 @@ Now run the sample,
 ![Winforms datagrid shown with modified resources](Localization_images/Localization_img8.png)
 
 ## Localize Resource File with Different Assembly or Namespace
-By default, SfDataGrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=net-5.0) method. When the resource file is located at different assembly or namespace, then it can be set to the SfDataGrid by using [SR.SetResources](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SR.html#Syncfusion_WinForms_DataGrid_SR_SetResources_System_Reflection_Assembly_System_String_) method.
+By default, SfDataGrid try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=net-5.0) method. When the resource file is located at different assembly or namespace, then it can be set to the SfDataGrid by using SR.SetResources method.
 
 {% tabs %}
 {% highlight c# %}
