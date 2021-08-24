@@ -1657,7 +1657,7 @@ N> FrozenRowCount, FooterRowCount, FooterColumnCount, and FrozenColumnCount prop
 
 ## Defining columns for DetailsViewDataGrid
 
-The GridViewDefinition.DataGrid columns can be generated either automatically or manually like parent DataGrid. You can refer to here to know more about [columns](https://help.syncfusion.com/windowsforms/sfdatagrid/columns).
+The GridViewDefinition.DataGrid columns can be generated either automatically or manually like parent DataGrid. You can refer to here to know more about [columns](https://help.syncfusion.com/windowsforms/datagrid/columns).
 
 ### Auto generating columns
 
@@ -2064,7 +2064,7 @@ Here, the sender is [GridViewDefinition.DataGrid](https://help.syncfusion.com/cr
 
 ## Column sizing
 
-The SfDataGrid allows you to apply column sizing to the [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html) by setting the [GridViewDefinition.DataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoSizeColumnsMode) like parent DataGrid. For more information, refer to the [Column Sizing](https://help.syncfusion.com/windowsforms/sfdatagrid/columns#column-sizing) section.
+The SfDataGrid allows you to apply column sizing to the [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html) by setting the [GridViewDefinition.DataGrid.AutoSizeColumnsMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoSizeColumnsMode) like parent DataGrid. For more information, refer to the [Column Sizing](https://help.syncfusion.com/windowsforms/datagrid/columns#column-sizing) section.
 
 ### Resizing parent DataGrid and DetailsViewDataGrid simultaneously
 

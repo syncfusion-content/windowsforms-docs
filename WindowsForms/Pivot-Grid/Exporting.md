@@ -24,7 +24,7 @@ The following references need to be added to the application to achieve this sup
 * Syncfusion.PivotConverter.Windows
 * Syncfusion.XlsIO.Base
 
-N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating the pivot grid control.
+N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivot-grid/getting-started) section of the documentation for creating the pivot grid control.
 
 The [ExcelExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotConverter.ExcelExport.html) class is a helper class that provides the support for exporting the data from the pivot grid control to the Excel document.
 
@@ -116,7 +116,7 @@ The following reference needs to be added to the application to achieve this sup
 
 * Syncfusion.PivotConverter.Windows
 
-N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating the pivot grid control.
+N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivot-grid/getting-started) section of the documentation for creating the pivot grid control.
 
 The [PivotWordExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotConverter.PivotWordExport.html) class is a helper class that provides the support for exporting the data from the pivot grid control to the Word document.
 
@@ -150,7 +150,7 @@ The following reference needs to be added to the application to achieve this sup
 
 * Syncfusion.PivotConverter.Windows
 
-N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivotgrid/getting-started) section of the documentation for creating the pivot grid control.
+N> Refer the [Getting Started](https://help.syncfusion.com/windowsforms/pivot-grid/getting-started) section of the documentation for creating the pivot grid control.
 
 The [PivotPdfExport](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotConverter.PivotPdfExport.html) class is a helper class that provides the support for exporting the data from the pivot grid control to the PDF document.
 

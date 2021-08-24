@@ -457,6 +457,6 @@ Context menu items in the dock window caption can be customized using the [DockC
 
 {% seealso %}
  
-[Removed menu button from caption in particular dock window](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#remove-specific-default-menu-item-from-context-menu)
+[Removed menu button from caption in particular dock window](https://help.syncfusion.com/windowsforms/docking-manager/dock-window#remove-specific-default-menu-item-from-context-menu)
 
 {% endseealso %}
