@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcEngine in WinForms Calculation Engine | Syncfusion
-description: Learn about Working with CalcEngine support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
+title: Working with CalcEngine in Windows Forms Calculate | Syncfusion
+description: Learn about Working with CalcEngine support in Syncfusion Windows Forms Calculation Engine (Calculate) control and more.
 platform: windowsforms
 control: Calculate
 documentation: ug
@@ -292,11 +292,11 @@ CalcEngine.ParseDateTimeSeparator = '-';
 
 ### RethrowLibraryComputationExceptions
 
-Gets or sets whether the `CalcEngine` throws any exception that occurs during the computation of a library function. It throws an error message from FormulaErrorStrings collection. The default value of  of `RethrowLibraryComputationExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) values.
+Gets or sets whether the `CalcEngine` throws any exception that occurs during the computation of a library function. It throws an error message from FormulaErrorStrings collection. The default value of  of `RethrowLibraryComputationExceptions` is false.The following page demonstrates the [ErrorString and FormulaErrorString](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) values.
 
 ### RethrowParseExceptions
 
-The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings]((https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#error-messages))collection without throwing exception.
+The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings]((https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages))collection without throwing exception.
 
 ### SupportLogicalOperators
 
@@ -457,19 +457,19 @@ N> [GetValueFromParentObject](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 ### ParseAndComputeFormula
 
-A method that parses and computes the string formula passed in. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parseandcomputeformula).
+A method that parses and computes the string formula passed in. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parseandcomputeformula).
 
 ### ParseFormula
 
-A method that parses the string formula passed in. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parse-formula).
+A method that parses the string formula passed in. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-formula).
 
 ### ComputeFormula
 
-A method that computes a parsed formula. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#computeformula).
+A method that computes a parsed formula. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#computeformula).
 
 ### RegisterGridAsSheet
 
- A method that registers an `ICalcData` object so it can be referenced in a formula from another `ICalcData` object. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculate/getting-started#cross-sheet-reference).
+ A method that registers an `ICalcData` object so it can be referenced in a formula from another `ICalcData` object. For more reference, see [here](https://help.syncfusion.com/windowsforms/calculation-engine/getting-started#cross-sheet-reference).
 
 ### UpdateCalcID
 

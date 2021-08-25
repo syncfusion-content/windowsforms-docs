@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with docking child in WinForms Docking Manager | Syncfusion
-description: Learn about Dealing with docking child support in Syncfusion Windows Forms Docking Manager control and more details.
+title: Dealing with docking child | WinForms Docking Manager| Syncfusion
+description: Learn about Dealing with docking child support in Syncfusion Windows Forms Docking Manager control and more.
 platform: WindowsForms
 control: DockingManager 
 documentation: ug
@@ -457,6 +457,6 @@ Context menu items in the dock window caption can be customized using the [DockC
 
 {% seealso %}
  
-[Removed menu button from caption in particular dock window](https://help.syncfusion.com/windowsforms/dockingmanager/dock-window#remove-specific-default-menu-item-from-context-menu)
+[Removed menu button from caption in particular dock window](https://help.syncfusion.com/windowsforms/docking-manager/dock-window#remove-specific-default-menu-item-from-context-menu)
 
 {% endseealso %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in WinForms DataGrid control | Syncfusion
-description: Learn about Interactive Features support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more details.
+title: Interactive Features in Windows Forms DataGrid | Syncfusion
+description: Learn about Interactive Features support in Syncfusion Windows Forms DataGrid (SfDataGrid) control and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -628,7 +628,7 @@ You can download the custom column chooser sample [here](http://www.syncfusion.c
 
 ## ToolTip
 
-SfDataGrid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview). The ToolTip for the SfDataGrid can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) property to true.
+SfDataGrid provides the support to show the pop-up window that displays the information when the mouse hover on the cells by using [SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview). The ToolTip for the SfDataGrid can be enabled by setting the[SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -921,5 +921,5 @@ End Sub
 
 ![Windows forms datagrid displays the tooltip for a empty cell](InteractiveFeatures_Images/ToolTip9.png)
 
-N> SfToolTip has used for the ToolTip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/sftooltip/overview) of SfToolTip for more customizations options.
+N> SfToolTip has used for the ToolTip support in the SfDataGrid. Refer [user guide](https://help.syncfusion.com/windowsforms/tooltip/overview) of SfToolTip for more customizations options.
 
