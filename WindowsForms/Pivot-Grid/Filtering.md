@@ -134,7 +134,7 @@ pivotGridControl1.Filters.Add(filterExpression1)
 
 ## Using grouping bar's built-in popup
 
-The filtering operation can also be performed by using the built-in popup integrated with the filter, row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivotgrid/grouping-bar).
+The filtering operation can also be performed by using the built-in popup integrated with the filter, row and column header areas of [grouping bar](https://help.syncfusion.com/windowsforms/pivot-grid/grouping-bar).
 
 While clicking on the filter icon present in the header item of row or column or filter header area, a filter popup will be opened by displaying its corresponding list of values. By selecting and unselecting the required values in the list, filtering will be applied to particular header item.
 
