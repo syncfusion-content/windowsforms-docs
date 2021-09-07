@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Upgrading Syncfusion WinForms Extensions| Windows Forms | Syncfusion
-description: this section provides the information about upgrading the Syncfusion Windows Forms extensions
+description: this section provides the information about upgrading the Syncfusion Windows Forms extensions in extension manager UI.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinForms Extensions (Essential JS2)
+# Upgrading Syncfusion WinForms Extensions
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for this volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

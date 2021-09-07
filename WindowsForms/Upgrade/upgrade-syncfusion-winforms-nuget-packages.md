@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrading Syncfusion WinForms NuGet packages| Windows Forms | Syncfusion
-description: this section provides the information about upgrading the Syncfusion Windows Forms NuGet packages.
+title: Upgrade Syncfusion WinForms NuGet packages| Windows Forms | Syncfusion
+description: this section provides the information about upgrading the Syncfusion Windows Forms NuGet packages by using Package Manager UI, .NET CLI, and Package Manager Console.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug

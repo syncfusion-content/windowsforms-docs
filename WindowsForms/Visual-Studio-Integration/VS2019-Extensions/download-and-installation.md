@@ -1,3 +1,12 @@
+---
+layout: post
+title: Downloand and Installation | WinForms | Syncfusion
+description: this section provide the information about how to download and install the extensions in Visual Studio.
+platform: windowsforms
+control: Syncfusion Extensions
+documentation: ug
+---
+
 # Download and Installation
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions). You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
