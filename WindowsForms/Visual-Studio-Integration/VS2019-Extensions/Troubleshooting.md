@@ -18,7 +18,7 @@ Troubleshoot the project with the Syncfusion configuration and apply the fix lik
 
 The following steps help you to utilize the Syncfusion Troubleshooter by Visual Studio. 
 
-> Before use the Syncfusion Troubleshooter for WinForms, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion Troubleshooter for WinForms, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/vs2019-extensions/download-and-installation/) help topic.
 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    

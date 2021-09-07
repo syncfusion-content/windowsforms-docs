@@ -15,7 +15,7 @@ N> This Reference Manager can be applied to a project for Syncfusion assembly ve
 
 Follow the given steps to add the Syncfusion references in Visual Studio:
 
-> Before use the Syncfusion WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/vs2019-extensions/download-and-installation/) help topic.
 
 1. Open a new or existing **WinForms** application.
 
