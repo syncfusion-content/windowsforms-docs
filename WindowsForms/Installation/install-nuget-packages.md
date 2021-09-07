@@ -1,3 +1,13 @@
+---
+layout: post
+title: Install Syncfusion WinForms NuGet packages
+description: Learn here about how to install  Syncfusion NuGet packages
+platform: WindowsForms
+control: Installation
+documentation: ug
+
+---
+
 # Install Syncfusion WinForms NuGet packages
 
 ## Overview
