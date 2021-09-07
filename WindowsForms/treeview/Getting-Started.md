@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with Windows Forms TreeView
 
-This section provides a quick overview for working with the [TreeViewAdv](https://help.syncfusion.com/windowsforms/treeview/overview) for WinForms. Walk through the entire process of creating a real world TreeView.
+This section provides a quick overview for working with the [Windows Forms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) (TreeViewAdv) for WinForms. Walk through the entire process of creating a real world TreeView.
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) section to get the list of assemblies or NuGet package needs to be added as reference to use the TreeViewAdv control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#treeviewadv) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) needs to be added as reference to use the TreeViewAdv control in any application.
 
 ## Creating Application with TreeViewAdv
 
@@ -121,7 +121,7 @@ You can also open this editor using task window or by right clicking the control
 
 Tree nodes can be added to the control programmatically as follows.
 
-Create the TreeViewAdv control instance and add newly created instance of TreeNodeAdv as child of TreeViewAdv control as follows.
+Create the Windows Forms TreeView (TreeViewAdv) control instance and add newly created instance of TreeNodeAdv as child of TreeViewAdv control as follows.
 
 {% tabs %}
 

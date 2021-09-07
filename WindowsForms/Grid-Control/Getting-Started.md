@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Getting Started with Windows Forms Grid Control
 
-This section will explain about creating simple GridControl and the overview of its basic functionalities.
+This section will explain about creating simple [Windows Forms GridControl](https://www.syncfusion.com/winforms-ui-controls/grid-control) and the overview of its basic functionalities.
 
 ## Choosing the Best Grid 
 
@@ -75,7 +75,7 @@ If the user wants the support for filtering, sorting, grouping, summary calculat
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridcontrol) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) needs to be added as reference to use the control in any application. 
 
 ## Configuring a Simple GridControl
 
@@ -83,7 +83,7 @@ This section explains about creating Simple GridControl with some basic function
 
 ### Adding GridControl through Designer
 
-Grid Control can be added through designer by following the below steps.
+Windows Forms Grid Control can be added through designer by following the below steps.
 
 1. Create a new **Windows** **Form** **Application**.
 2. Drag and Drop GridControl from the toolbox into the designer page. 
@@ -103,7 +103,7 @@ Grid Control can be added through designer by following the below steps.
 
 ### Adding GridControl through Code
 
-GridControl can be added through code-behind by following the below steps.
+Windows Forms GridControl can be added through code-behind by following the below steps.
 
 1.Create a new Windows Form Application.
 
@@ -148,7 +148,7 @@ Me.Controls.Add(Me.gridControl1)
 
 ## Populating Data
 
-GridControl is a cell based control and hence to populate the GridControl, [RowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_RowCount) and [ColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_ColCount) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
+Windows Forms GridControl is a cell based control and hence to populate the GridControl, [RowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_RowCount) and [ColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_ColCount) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
 
 1.Populate data by looping through cells in GridControl. 
 
@@ -267,7 +267,7 @@ Final Look of the Grid:
 
 ## Cell Styles
 
-In GridControl, each cell contains distinct style information and can be displayed independently of other cells. GridControl uses [GridStyleInfo](https://help.syncfusion.com/windowsforms/grid-control/cell-style-architecture) objects to store state information about the appearance of a grid cell. So attributes like font, back color, cell value and cell types are all reflected in a single `GridStyleInfo` object.
+In Windows Forms GridControl, each cell contains distinct style information and can be displayed independently of other cells. GridControl uses [GridStyleInfo](https://help.syncfusion.com/windowsforms/grid-control/cell-style-architecture) objects to store state information about the appearance of a grid cell. So attributes like font, back color, cell value and cell types are all reflected in a single `GridStyleInfo` object.
 
 ### Modifying Cell Styles through Designer
 
@@ -338,7 +338,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style)
 
 ## Selection
 
-GridControl provides two types of selection namely Range selection and Record selection. Range selection also known as cell based selection is used to select a range of cells, rows and columns in grid. Record selection which is also known as record based selection is used to select a single record or a range of records at a time in a grid.
+Windows Forms GridControl provides two types of selection namely Range selection and Record selection. Range selection also known as cell based selection is used to select a range of cells, rows and columns in grid. Record selection which is also known as record based selection is used to select a single record or a range of records at a time in a grid.
 
 For selecting single row or multiple range of rows in GridControl, set the [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode) property value as `Single`, `MultiSimple` or `MultiExtended` respectively. By default the value is `None`.
 
