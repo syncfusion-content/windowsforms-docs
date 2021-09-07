@@ -9,11 +9,11 @@ documentation: ug
 
 # Working with PdfViewerControl in Windows Forms PDF Viewer
 
-Essential PdfViewerControl can display and print PDF files and export the pages as raster images and meta files.
+Essential [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) can display and print PDF files and export the pages as raster images and meta files.
 
 ## Viewing PDF Files 
 
-A PDF can be loaded into the PdfViewerControl either through the open file button available in the toolbar or through the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_) method. It also requests passwords to open encrypted documents.
+A PDF can be loaded into the WinForms PDF Viewer either through the open file button available in the toolbar or through the [Load](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_Load_System_String_) method. It also requests passwords to open encrypted documents.
 
 {% tabs %}
 {%highlight c#%}

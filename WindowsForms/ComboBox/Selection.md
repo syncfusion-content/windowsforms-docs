@@ -136,7 +136,7 @@ The checked items can be retrieved by using the `CheckedItems` property. The ite
 
 Multi-select combo box supports to show the whole text in the editor portion by using the tooltip when hovering the mouse on the editor portion of the control. Tooltip can be enabled by setting the `ShowToolTip` property to `true`.
  
-N> The [SfToolTip](https://help.syncfusion.com/windowsforms/sftooltip/overview) control is used for the tooltip support.
+N> The [SfToolTip](https://help.syncfusion.com/windowsforms/tooltip/overview) control is used for the tooltip support.
 
 {% tabs %}
 {% highlight c# %}
