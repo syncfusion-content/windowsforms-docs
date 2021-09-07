@@ -26,9 +26,9 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
     ![Winform NuGet Upgrade](images/MultipleNuGetUpgrade.png)
 
-## Upgrade NuGet packages through Dotnet (.NET) CLI
+## Upgrade NuGet packages through .NET CLI
 
-There is no distinct command for the update procedure in the Dotnet CLI. Unless you specify the package version, Dotnet CLI installs the latest version of the Syncfusion WinForms NuGet packages when you use the dotnet add package command.
+There is no distinct command for the update procedure in the .NET CLI. Unless you specify the package version, .NET CLI installs the latest version of the Syncfusion WinForms NuGet packages when you use the dotnet add package command.
 
 To specify a version, add the -v parameter:
 
