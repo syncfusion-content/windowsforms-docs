@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms DataGrid Control | Syncfusion
+title: Windows Forms DataGrid Control | Syncfusion
 description: This section explains about the datagrid control for windows forms and it's important key features such as data binding, selection and etc
 platform: windowsforms
 control: SfDataGrid
@@ -39,7 +39,7 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 ### SfDataGrid
 
-[Windows Forms DataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview) (SfDataGrid) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
+Windows Forms DataGrid (SfDataGrid) is designed based on column-oriented architecture that provides support to customize the grid easily. It is used to display collection of data in rows and columns. The SfDataGrid control includes editing and data shaping features (sorting, grouping, filtering, etc.,) that allows the end users to easily manage the data. It also supports printing and exporting to Excel and PDF file formats.
 
 ### GridGroupingControl
 
