@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Calendar (SfCalendar)
 
-This section briefly describes how to create a new Windows Forms project in Visual Studio and add the **SfCalendar** control with its basic functionalities.
+This section briefly describes how to create a new Windows Forms project in Visual Studio and add the [WinForms Calendar](https://www.syncfusion.com/winforms-ui-controls/calendar) (SfCalendar) control with its basic functionalities.
 
 ## Assembly deployment
 
@@ -19,7 +19,7 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
  
 ## Adding the SfCalendar control via designer
 
-The following steps describe how to create an **SfCalendar** control via designer.
+The following steps describe how to create an WinForms Calendar (SfCalendar) control via designer.
 
 1) Create a new Windows Forms application in Visual Studio.
 
@@ -33,7 +33,7 @@ The following steps describe how to create an **SfCalendar** control via designe
 
 ## Adding the SfCalendar control via code
 
-The following steps describe how to create an **SfCalendar** control programmatically:
+The following steps describe how to create an WinForms Calendar (SfCalendar) control programmatically:
 
 1) Create a C# or VB application via Visual Studio.
 
@@ -61,7 +61,7 @@ Imports Syncfusion.WinForms.Input
 
 {% endtabs %} 
 
-4) Create an instance of the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control instance, and then add it to the form.
+4) Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control instance, and then add it to the form.
 
 {% tabs %}
 
@@ -107,7 +107,7 @@ calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 
 ### Selection change event
 
-The SfCalendar control notifies the date changes using the `SelectionChanging` and `SelectionChanged` events. You can use the `NewValue` and `OldValue` properties to get the old and new dates in the `SelectionChanged` event. In the `SelectionChanging` event, you can use the `Cancel` property in event argument to avoid the date changes or mentioned date in SfCalendar.
+The WinForms Calendar (SfCalendar) control notifies the date changes using the `SelectionChanging` and `SelectionChanged` events. You can use the `NewValue` and `OldValue` properties to get the old and new dates in the `SelectionChanged` event. In the `SelectionChanging` event, you can use the `Cancel` property in event argument to avoid the date changes or mentioned date in SfCalendar.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ End Sub
 
 ## Date range
 
-The [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
+The [WinForms Calendar]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html)) (SfCalendar) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ calendar.BlackoutDates.Add(New System.DateTime(2018, 1, 20))
 
 ## Special dates
 
-The **SfCalendar** allows you to highlight special dates with icons and descriptions. Special dates can be added to the calendar using the [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) collection.
+The WinForms Calendar (SfCalendar) allows you to highlight special dates with icons and descriptions. Special dates can be added to the calendar using the [SpecialDates](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_SpecialDates) collection.
 
 The following code sample demonstrates how to add special dates to the calendar.
 
@@ -288,7 +288,7 @@ calendar.SpecialDates = SpecialDates
 
 ## Allow multiple selection
 
-The **SfCalendar** control allows you to select multiple dates by setting the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_AllowMultipleSelection) property to true.
+The WinForms Calendar (SfCalendar) control allows you to select multiple dates by setting the [AllowMultipleSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_AllowMultipleSelection) property to true.
 
 {% tabs %}
 
@@ -360,7 +360,7 @@ calendar.ShowWeekNumber = True
 
 ## Configure the calculation of week number based on culture
 
-You can get the current week number in `SfCalendar` control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
+You can get the current week number in WinForms Calendar (SfCalendar) control by changing the `CalendarWeekRule` property value of date time format in `CultureInfo`. The default value of `CalendarWeekRule` property is `FirstDay`.
 
 {% tabs %}
 
