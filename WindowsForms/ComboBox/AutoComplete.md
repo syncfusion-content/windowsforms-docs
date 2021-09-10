@@ -34,7 +34,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 
 ### Append
 
-The closest match will be added to the editor portion of the [SfComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
+The closest match will be added to the editor portion of the [WinForms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) control with partial string selection in the drop-down list. This mode can be enabled by setting the [AutoCompleteMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_AutoCompleteMode) property as `Append`.
 
 {% tabs %}
 {% highlight c# %}
