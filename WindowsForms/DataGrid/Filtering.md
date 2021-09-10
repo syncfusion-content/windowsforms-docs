@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Filtering with Windows Forms DataGrid
-Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
+Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic Filtering
 The programmatic filtering can be applied to the SfDataGrid by using the following methods,
@@ -165,7 +165,7 @@ Next record
 {% endtabs %}
 
 ## UI Filtering 
-SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowFiltering) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
+The WinForms DataGrid (SfDataGrid) provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowFiltering) property to `true`. This allows to open the filter UI by clicking on the filter icon in column header to filter the records.
 The filtering can be enabled or disabled for the particular column by setting [GridColumn.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowFiltering) property.
 
 {% tabs %}
