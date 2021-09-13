@@ -20,7 +20,7 @@ See our "[**Upgrade Guide**](https://help.syncfusion.com/upgrade-guide/winforms-
 
 The most recent version of Syncfusion Windows Forms can be downloaded and installed by clicking on the "Latest Version: {Version}" link at the top of the Syncfusion Windows Forms Control Panel.
 
-![Control Panel](Upgrade-images/upgrade-control-panel.png)
+![Control Panel](images/upgrade-control-panel.png)
 
 You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/downloads/latest-version) link. The existing installed versions are not required to be uninstalled. 
 

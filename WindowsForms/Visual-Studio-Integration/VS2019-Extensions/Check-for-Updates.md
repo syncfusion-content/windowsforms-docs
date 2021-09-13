@@ -25,4 +25,4 @@ You can check updates availability in Visual Studio, and then install the update
 
    ![Syncfusion check for updates wizard](Check-for-Updates_images/Check-for-Updates_images-img2.png)
 
-3. You can download the Syncfusion Essential Studio from the Syncfusion website by selecting **Download**.
+3. You can download the latest Syncfusion Essential Studio from the Syncfusion website by selecting **Download**.

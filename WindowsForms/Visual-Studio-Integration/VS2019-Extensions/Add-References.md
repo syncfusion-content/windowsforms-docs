@@ -9,13 +9,13 @@ documentation: ug
 
 # Add Reference for WinForms
 
-Syncfusion Reference Manager is the Visual Studio Add-In for WinForms platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or from where Essential Studio is installed. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2013 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
+Syncfusion Reference Manager is the Visual Studio Add-In for WinForms platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or Essential Studio WinForms installed location. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2013 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
 
 N> This Reference Manager can be applied to a project for Syncfusion assembly versions 10.4.0.71 and later.
 
 Follow the given steps to add the Syncfusion references in Visual Studio:
 
-> Before use the Syncfusion WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion WinForms Reference Manager, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/vs2019-extensions/download-and-installation/) help topic.
 
 1. Open a new or existing **WinForms** application.
 
