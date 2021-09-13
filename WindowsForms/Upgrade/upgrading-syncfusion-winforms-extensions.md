@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrading Syncfusion WinForms Extensions| Windows Forms | Syncfusion
-description: this section provides the information about upgrading the Syncfusion Windows Forms extensions in extension manager UI.
+description: This section provides the information about upgrading the Syncfusion Windows Forms extensions in extension manager UI.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug

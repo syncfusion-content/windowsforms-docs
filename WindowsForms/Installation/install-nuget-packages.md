@@ -3,7 +3,7 @@ layout: post
 title: Install Syncfusion WinForms NuGet packages| Windows Forms | Syncfusion
 description: Learn here about how to install  Syncfusion NuGet packages by using Package Manager UI, .NET CLI, and Package Manager Console.
 platform: WindowsForms
-control: Installation
+control: Extension
 documentation: ug
 
 ---
@@ -12,15 +12,15 @@ documentation: ug
 
 ## Overview
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all WinForms  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion). The Syncfusion WinForms NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion WinForms NuGet packages in WinForms application to develop with the Syncfusion WinForms components.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all WinForms  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22Winforms%22+syncfusion). The Syncfusion WinForms NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion WinForms NuGet packages in WinForms application to develop with the Syncfusion WinForms components.
 
 > From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion WinForms components are available as NuGet packages at nuget.org.
 
 ## Installation using Package Manager UI
 
-The NuGet **Package Manager UI** allows you to search, install, uninstall, and update Syncfusion WinForms NuGet packages in your applications and solutions. You can find and install the Syncfusion WinForms NuGet packages in your Visual Studio WinForms web application and this process is easy with the steps below:
+The NuGet **Package Manager UI** allows you to search, install, uninstall, and update Syncfusion WinForms NuGet packages in your applications and solutions. You can find and install the Syncfusion WinForms NuGet packages in your Visual Studio WinForms application and this process is easy with the steps below:
 
-1. Right-click on the WinForms web application or solution in the Solution Explorer, and choose **Manage NuGet Packages...**
+1. Right-click on the WinForms application or solution in the Solution Explorer, and choose **Manage NuGet Packages...**
 
     ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
 
@@ -90,7 +90,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     The below command will install the Syncfusion WinForms NuGet package in the given WinForms application.
 
-    ```Install-Package <Package Name> - ProjectName <Project Name>```
+    ```Install-Package <Package Name> -ProjectName <Project Name>```
 
     **For example:** Install-Package Syncfusion.Grid.Windows -ProjectName SyncfusionWinformsApp
 

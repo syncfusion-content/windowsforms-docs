@@ -36,7 +36,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose Syncfusion Windows Forms Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery-1.png)
 
-2. Name the **Project**, choose the destination location when required, and set the .NET Framework of the project, then click **OK**.  
+2. Name the **Project**, choose the destination location when required, select the project type, and choose the reference from where the assembly is added to the project then click **OK**.  
 
    N> Minimum target Framework is 3.5 for Syncfusion WinForms project templates. 
 
