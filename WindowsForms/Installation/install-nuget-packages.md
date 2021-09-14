@@ -24,7 +24,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
     ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
 
-    As an alternative, after opening the WinForms web application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
+    As an alternative, after opening the WinForms application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion WinForms NuGet packages using a term like **"Syncfusion.WinForms"** and select the appropriate Syncfusion WinForms NuGet package for your development.
 
