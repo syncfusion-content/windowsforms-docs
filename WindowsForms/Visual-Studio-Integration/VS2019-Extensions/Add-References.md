@@ -41,8 +41,6 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
 
-   N> Platform selection option will be appeared only if Essential Studio for Enterprise Edition with the platforms WPF and Windows Forms has been installed or both Essential Studio for WPF and WinForms has been installed.
-
    **Assembly From:** Choose the assembly location, from where the assembly is added to the project.
 
    ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
