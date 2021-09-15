@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all WinForms  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22Winforms%22+syncfusion). The Syncfusion WinForms NuGet packages can be used without installing the Syncfusion installation. You can simply exploit the Syncfusion WinForms NuGet packages in WinForms application to develop with the Syncfusion WinForms components.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all WinForms  NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22Winforms%22+syncfusion). The Syncfusion WinForms NuGet packages can be used without installing the Syncfusion Essential Studio setup. You can simply exploit the Syncfusion WinForms NuGet packages in WinForms application to develop with the Syncfusion WinForms components.
 
 > From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion WinForms components are available as NuGet packages at nuget.org.
 
@@ -24,7 +24,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
     ![Manage NuGet Packages add-in](Platform_images/manage-nuget.png)
 
-    As an alternative, after opening the WinForms web application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
+    As an alternative, after opening the WinForms application in Visual Studio, go to the **Tools** menu and after hovering **NuGet Package Manager**, select **Manage NuGet Packages for Solution...**
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion WinForms NuGet packages using a term like **"Syncfusion.WinForms"** and select the appropriate Syncfusion WinForms NuGet package for your development.
 
@@ -98,7 +98,7 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
     ```Install-Package Syncfusion.Grid.Windows -Version 19.2.0.59```
 
-    ![Package Manager Console Output ](Platform_images/ConsoleInstallationOutput.PNG)
+    ![Package Manager Console Output ](Platform_images/ConsoleInstallationOutput.png)
 
 4. The NuGet package manager console will install the Syncfusion WinForms NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion WinForms package has been successfully added to the application.
 

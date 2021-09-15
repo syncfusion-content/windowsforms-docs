@@ -9,7 +9,7 @@ documentation: ug
 
 # Item Template Extension
 
-The Syncfusion Item Templates extensions provides a predefined form for the Windows Forms. 
+The Syncfusion Item Templates extensions provides support to add a predefined form for the Windows Forms applications. 
 
 I> The Syncfusion Windows Forms item templates are available from v13.1.0.21.
 
@@ -17,20 +17,20 @@ I> The Syncfusion Windows Forms item templates are available from v13.1.0.21.
 
 Follow the given steps to add the Syncfusion item in Visual Studio.
 
-> Before use the Syncfusion WinForms Item Template, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/vs2019-extensions/download-and-installation/) help topic.
+> Before use the Syncfusion WinForms Item Template, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/vs2019-extensions/download-and-installation/) help topic.
 
 1. Open a new or existing **WinForms** application.
 2. Right-click the WinForms Project from the Solution Explorer. Select the Add Syncfusion Item New Item… option.
 
    ![Syncfusion Item Template add-in](Item-Template-images\Syncfusion-Item-Template-Gallery-1.png)
 
-3. Now, the Syncfusion Item Template Gallery window will open.
+3. Now, the Syncfusion Item Template Gallery window will be open.
 
    ![Syncfusion Item Template wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-2.png)
    
-4. Select the required assembly location, version, and themes or Form from the Syncfusion Item Template Gallery. 
+4. Select the required assembly location, version, and Form from the Syncfusion Item Template Gallery. 
 
-   ![Select the required themes or Form from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-3.png)
+   ![Select the Form from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-3.png)
 
    **Assembly From:**  Choose the assembly location, from where the assembly is added to the project.
 
@@ -38,7 +38,7 @@ Follow the given steps to add the Syncfusion item in Visual Studio.
 
    N> Installed location and GAC option will be available only when the Syncfusion Essential WinForms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. If you add the Syncfusion item files in .NET Core Windows Forms application, GAC option will not be listed in the Assembly From option.
 
-   **Version:** Choose the build version to add the corresponding version assemblies to the project.
+   **Version:** Choose the Essential Studio version to add the corresponding version assemblies to the project.
 
    ![Select the required ES version from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-4.png)
 

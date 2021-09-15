@@ -29,7 +29,7 @@ The steps below assist you to how to install the Syncfusion WinForms extensions 
 
     ![Online-Manage-Extension-window](Download-Installation-Images/Online-Manage-Extension-window.png)
 
-4. Click the **Download** button in the **“Syncfusion ASP.NET MVC Extension”**.
+4. Click the **Download** button in the **“WinForms Extensions - Syncfusion”**.
 
 5. Close all Visual Studio instances after downloading the extensions to begin the installation process. You will see the following VSIX installation prompt.
 
