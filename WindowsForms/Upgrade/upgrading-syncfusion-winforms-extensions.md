@@ -13,8 +13,6 @@ Syncfusion publishes the Visual Studio extension in the [Visual Studio marketpla
 
 You can upgrade to our latest version from any installed Syncfusion version.
 
-See our “Upgrade Guide” for WinForms to learn more about the “Breaking Changes, Bug Fixes, Features and Knows Issues” between your current version and the latest version you are trying to upgrade.
-
 ## Upgrading to the latest version
 
 1.  In Visual Studio go to Extensions -> Manage Extensions -> Updates and find the Syncfusion WinForms extension.
