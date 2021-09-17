@@ -9,7 +9,7 @@ documentation: ug
 
 # Themes in Windows Forms Form (SfForm)
 
-SfForm offers the following six built-in themes for professional representation:
+[Windows Forms Form](https://www.syncfusion.com/winforms-ui-controls/form) (SfForm) offers the following six built-in themes for professional representation:
 
 * Office2016Colorful
 * Office2016White
