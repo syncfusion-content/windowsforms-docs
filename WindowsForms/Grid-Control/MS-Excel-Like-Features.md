@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Microsoft Excel Like Features in Windows Forms Grid Control
-The GridControl provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
+The [Windows Forms Grid](https://www.syncfusion.com/winforms-ui-controls/grid-control) Control provides some of the functionalities of Microsoft Excel as the features. This section will walk through the implementation of these features. 
 
 ## Excel Like Selection Frame
 To enable excel like selection frame in the grid, the [ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDataBoundGrid.html#Syncfusion_Windows_Forms_Grid_GridDataBoundGrid_ExcelLikeSelectionFrame) property can be used. This enables the selected cells in a frame to be highlighted. 
@@ -94,7 +94,7 @@ Me.gridControl1.Model.Options.SelectionFrameOption = SelectionFrameOption.Excel2
 ![CellGrid_img4](Excel-Like-Features_images/CellGrid_img4.png)
 
 ## Excel-like Current Cell
-To have the Excel-Like current cell in the GridControl, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ExcelLikeCurrentCell) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
+To have the Excel-Like current cell in the Windows Forms GridControl, set the [ExcelLikeCurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ExcelLikeCurrentCell) property to `true`. When the current cell moves out of a selected range, then the range will be cleared. Whereas the current cell can be moved inside a selected range, the range will be stayed.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +125,7 @@ Me.gridControl1.ExcelLikeAlignment = True
 ![Excel-Like-Features_img3](Excel-Like-Features_images/Excel-Like-Features_img3.jpeg)
 
 ## Work Book
-The GridControl can be used like workbook in Excel. This can be achieved by adding the [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html) to the form. In this control, add the number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) (work sheets) to be shown in the workbook. Fill each page with the GridControl to look like the work sheets in excel. The following code snippet will perform the above process,
+The Windows Forms GridControl can be used like workbook in Excel. This can be achieved by adding the [TabBarSplitterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarSplitterControl.html) to the form. In this control, add the number of [TabBarPage](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.TabBarPage.html) (work sheets) to be shown in the workbook. Fill each page with the GridControl to look like the work sheets in excel. The following code snippet will perform the above process,
 
 {% tabs %}
 {% highlight c# %}
@@ -253,7 +253,7 @@ End Sub
 ![Excel-Like-Features_img6](Excel-Like-Features_images/Excel-Like-Features_img6.jpeg)
 
 ## Freeze Pane
-The GridControl supports Microsoft Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property.
+The Windows Forms GridControl supports Microsoft Excel-like Freeze Pane feature. In a large worksheet, it is often required that column or row labels remain in view. This feature enables to freeze either columns or rows in the grid, so that they may remain visible while scrolling. The number of rows to be frozen can be specified by using [Model.Rows.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property and the number of columns to be frozen can be specified by using [Model.Cols.FrozenCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelRowColOperations.html#Syncfusion_Windows_Forms_Grid_GridModelRowColOperations_FrozenCount) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -307,7 +307,7 @@ Me.gridControl1.Model.Properties.FixedLinesColor = Color.Green
 ![Excel-Like-Features_img8](Excel-Like-Features_images/Excel-Like-Features_img8.jpeg)
 
 ## Copy/Fill Series
-The GridControl can have the copy/fill series like Excel. The copy series is used to copy the content of the current cell to the entire selection whereas the fill series is used to fill the selection with the increment of the current cell. 
+The Windows Forms GridControl can have the copy/fill series like Excel. The copy series is used to copy the content of the current cell to the entire selection whereas the fill series is used to fill the selection with the increment of the current cell. 
 
 An [ExcelSelectionMarkerMouseController](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ExcelSelectionMarkerMouseController.html) helper class that implements the behavior of `Copy/Fill` series in the GridControl. This class is available in the `Syncfusion.GridHelperClasses.Windows` assembly. 
 
@@ -517,7 +517,7 @@ Me.gridControl1.CommandStack.Redo()
 For more information about the `Undo-Redo`, See [Undo - Redo](/windowsforms/grid/undo-redo)
 
 ## Find and Replace
-The GridControl provides the support to search and replace the text and numbers like the Find and Replace feature of Excel. This feature can be added to the GridControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
+The Windows Forms GridControl provides the support to search and replace the text and numbers like the Find and Replace feature of Excel. This feature can be added to the GridControl by including the `Syncfusion.GridHelperClasses.Windows.dll` to the assembly reference. The following classes are used to implement the `Find and Replace` technique in GridControl. 
 
 * [GridFindReplaceDialogSink](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialogSink.html)<br/>
 * [GridFindReplaceDialog](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFindReplaceDialog.html)<br/>
