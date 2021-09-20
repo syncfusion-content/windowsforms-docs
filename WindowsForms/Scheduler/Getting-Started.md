@@ -13,15 +13,15 @@ This section guides getting started with Windows application, controls, etc.
 
 ## Assembly deployment
 
-Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or NuGet package that should be added as reference to use the control in any application. 
+Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) that should be added as reference to use the control in any application. 
 
 ## Creating application with the ScheduleControl
 
-In this walkthrough, user will create a WinForms application that contains the Schedule control.
+In this walkthrough, user will create a WinForms application that contains the [Windows Forms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) (Schedule) control.
 
 ### Creating the project
 
-Create a new Windows Forms project in Visual Studio to display the Schedule control with data objects.
+Create a new Windows Forms project in Visual Studio to display the Windows Forms Scheduler (Schedule) control with data objects.
 
 ### Adding control via designer
 

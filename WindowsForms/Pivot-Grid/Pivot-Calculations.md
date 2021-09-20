@@ -205,6 +205,6 @@ To synchronize the newly added or modified pivot calculation items with the pivo
 
 ## Pivot computation information dialog
 
-The pivot computation information dialog is used to view the information about particular pivot calculation item. It is also used to edit the header, description, value format, and calculation type of the pivot calculation item at run time. While double clicking on a calculation item in the value layout section of [pivot schema designer](https://help.syncfusion.com/windowsforms/pivotgrid/pivot-schema-designer), pivot computation information dialog containing the details of clicked pivot calculation item will be displayed.
+The pivot computation information dialog is used to view the information about particular pivot calculation item. It is also used to edit the header, description, value format, and calculation type of the pivot calculation item at run time. While double clicking on a calculation item in the value layout section of [pivot schema designer](https://help.syncfusion.com/windowsforms/pivot-grid/pivot-schema-designer), pivot computation information dialog containing the details of clicked pivot calculation item will be displayed.
 
 ![Pivot-Calculation_img4](Pivot-Calculations_images/Pivot-Calculation_img4.png)

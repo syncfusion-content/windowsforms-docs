@@ -15,7 +15,7 @@ To get start quickly with WinForms DataGrid, you can check on this video:
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfDataGrid control in any application.
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) needs to be added as reference to use the SfDataGrid control in any application.
 
 ## Creating Application with SfDataGrid
 In this walk through, users will create WinForms application that contains SfDataGrid control.
