@@ -83,7 +83,7 @@ End Sub
 
 ## How to retrieve the Hyperlink details from PDF Viewer?
 
-We can retrieve the hyperlink details from PDF viewer using `HyperlinkClickedEventArgs` when the hyperlink is clicked and `HperlinkMouseOverEventArgs` when the mouse is over the hyperlink.
+We can retrieve the hyperlink details from PDF Viewer using `HyperlinkClickedEventArgs` when the hyperlink is clicked and using `HyperlinkMouseOverEventArgs` when the mouse is over the hyperlink.
 
 ### HyperlinkClicked Event
 
