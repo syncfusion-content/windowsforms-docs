@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation Settings in Windows Forms Progress Bar (ProgressBarAdv)
 
-The direction of display of the ProgressBarAdv control can be changed using the property given below.
+The direction of display of the [Windows Forms Progress Bar](https://www.syncfusion.com/winforms-ui-controls/progress-bar) (ProgressBarAdv) control can be changed using the property given below.
 
 Property table
 
