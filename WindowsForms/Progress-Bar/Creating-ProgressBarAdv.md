@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started in Windows Forms Progress Bar (ProgressBarAdv)
 
-This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [Windows Forms Progress Bar]((https://www.syncfusion.com/winforms-ui-controls/progress-bar)) (ProgressBarAdv) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -35,7 +35,7 @@ Create a new Windows Forms project in the Visual Studio to display the [Progress
 
 ## Adding control via designer
 
-The [ProgressBarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [Windows Forms Progress Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) (ProgressBarAdv) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 

@@ -27,7 +27,7 @@ The following assemblies needs to be added as reference to use the control in an
 
 ## Adding a context menu through designer
 
-The ContextMenuStripEx control can be added through designer by following the below steps.
+The [Windows Forms ContextMenuStrip](https://www.syncfusion.com/winforms-ui-controls/contextmenustrip) (ContextMenuStripEx) control can be added through designer by following the below steps.
 
 1. Drag and drop the ContextMenuStripEx control from the toolbox (under the section "Syncfusion Windows **Visual Studio Version** Toolbox **Essential Studio Version**") into the designer page.
 
