@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Windows Forms Progress Bar control | Syncfusion
+title: Getting Started in Windows Forms Progress Bar | Syncfusion
 description: Learn about Getting Started support in Syncfusion Windows Forms Progress Bar (ProgressBarAdv) control and more details.
 platform: WindowsForms
 control: ProgressBarAdv 
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started in Windows Forms Progress Bar (ProgressBarAdv)
 
-This section describes how to add [ProgressBarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [Windows Forms Progress Bar]((https://www.syncfusion.com/winforms-ui-controls/progress-bar)) (ProgressBarAdv) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -16,7 +16,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
  
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 
 ## Creating simple application with ProgressBarAdv
@@ -35,7 +35,7 @@ Create a new Windows Forms project in the Visual Studio to display the [Progress
 
 ## Adding control via designer
 
-The [ProgressBarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The [Windows Forms Progress Bar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ProgressBarAdv.html) (ProgressBarAdv) control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Shared.Base.dll
 
