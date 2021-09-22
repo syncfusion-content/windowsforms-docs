@@ -9,7 +9,7 @@ documentation: ug
 
 # Border Settings in Windows Forms Gradient Panel
 
-GradientPanel can have 2D and 3D borders. The properties which sets the border style are as follows.
+[Windows Forms Gradient Panel](https://www.syncfusion.com/winforms-ui-controls/gradient-panel) can have 2D and 3D borders. The properties which sets the border style are as follows.
 
 <table>
 <tr>
