@@ -9,7 +9,7 @@ documentation: ug
 
 # Chart Series in Windows Forms Chart
 
-Provide data for the chart through the ChartSeries. ChartSeries acts as a wrapper around data that is to be displayed, and associates styles with the data. The data that is to be displayed is contained in either the IChartSeriesModel or the IEditableChartSeriesModel implementation. The style used to display the points is stored in a contained implementation of IChartSeriesStylesModel.
+Provide data for the [Windows Forms chart](https://www.syncfusion.com/winforms-ui-controls/chart) through the ChartSeries. ChartSeries acts as a wrapper around data that is to be displayed, and associates styles with the data. The data that is to be displayed is contained in either the IChartSeriesModel or the IEditableChartSeriesModel implementation. The style used to display the points is stored in a contained implementation of IChartSeriesStylesModel.
 
 Here is some sample code to create a new series and add it to the chart.
 
