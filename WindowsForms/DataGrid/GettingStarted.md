@@ -24,7 +24,7 @@ In this walk through, users will create WinForms application that contains SfDat
 Create new Windows Forms Project in Visual Studio to display SfDataGrid with data objects.
 
 ### Adding Control via Designer
-SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
+Windows Forms DataGrid (SfDataGrid) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 ![Windows forms datagrid is dragged from toolbox](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding Control in Code
