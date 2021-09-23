@@ -19,7 +19,7 @@ You can find more details about installing the NuGet packages in a Windows Forms
 
 ### Create a simple application with TabControlAdv
 
-You can create a Windows Forms application with [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) using the following steps:
+You can create a Windows Forms application with [Windows Forms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (TabControlAdv) using the following steps:
 
 ### Create a project
 

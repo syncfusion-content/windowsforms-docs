@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Merge Cells in Windows Forms DataGrid (SfDataGrid)
-The SfDataGrid allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The merged cells can be exported and printed.
+The [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows merging a range of adjacent cells by using the [QueryCoveredRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The merged cells can be exported and printed.
 
 `QueryCoveredRange` event is not fired for the cells that are not visible and also for the cells that are already in covered range. When scrolling the grid, the merged range will be added for newly added rows and columns through this event and removed for the rows and columns which are out of view.
 
@@ -501,7 +501,7 @@ Limitations when using cell merging in the SfDataGrid are:
 * With `DetailsViewDefinition`, cell merging is not supported if [HideEmptyGridViewDefinition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HideEmptyGridViewDefinition) is false or record has [DetailsViewDataGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DetailsViewDataGrid.html).
 
 ## How to enable merging with selection
-The SfDataGrid does not allow cell merging when the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode) is set other than `None`. This behavior can be overcome by setting the [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ExternalExceptionThrownEventArgs.html#Syncfusion_WinForms_DataGrid_Events_ExternalExceptionThrownEventArgs_Handled) to true by using the [ExternalExceptionThrown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The Windows Forms DataGrid (SfDataGrid) does not allow cell merging when the [SelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionMode) is set other than `None`. This behavior can be overcome by setting the [ExternalExceptionThrownEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ExternalExceptionThrownEventArgs.html#Syncfusion_WinForms_DataGrid_Events_ExternalExceptionThrownEventArgs_Handled) to true by using the [ExternalExceptionThrown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
