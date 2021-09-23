@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with Hyperlinks in Windows Forms PDF Viewer (PdfViewerControl)
 
-PDF Viewer provides support for URLs (hyperlinks) in the PDF document that enables the navigation to the destination by opening it in the default browser just by clicking on it. This also supports a few events that are listed in the below table.
+The WPF PDF Viewer supports URLs (hyperlinks) in the PDF document, which allows you to navigate to the destination just by clicking on it and by opening it in the default browser. This also supports a few events that are listed in the following table.
 
 ### Events Table
 
@@ -32,10 +32,10 @@ Arguments </th></tr>
 </table>
 
 
-## How to disable hyperlink navigation in PDF Viewer?
+## How to disable hyperlink navigation in PDF Viewer
 
-We can disable the hyperlink navigation in PDF viewer control by setting the value of `Handled` in the `HyperlinkClickedEventArgs` parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
-Please refer the below example for more details.
+You can disable the hyperlink navigation in PDF viewer control by setting the value of `Handled` in the `HyperlinkClickedEventArgs` parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
+Please refer to the following example for more details.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,14 +81,14 @@ End Sub
 {% endtabs %}
 
 
-## How to retrieve the Hyperlink details from PDF Viewer?
+## How to retrieve the hyperlink details from PDF Viewer
 
-We can retrieve the hyperlink details from PDF Viewer using `HyperlinkClickedEventArgs` when the hyperlink is clicked and using `HyperlinkMouseOverEventArgs` when the mouse is over the hyperlink.
+You can retrieve the hyperlink details from PDF Viewer by using `HyperlinkClickedEventArgs` when the hyperlink is clicked and by using `HyperlinkMouseOverEventArgs` when the mouse is over the hyperlink.
 
 ### HyperlinkClicked Event
 
-We can acquire the details of the hyperlink which is clicked in the PDF file using the `HyperlinkClickedEventArgs` in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event.
-Please refer the below example for more details.
+You can acquire the details of the hyperlink which is clicked in the PDF file by using the `HyperlinkClickedEventArgs` in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event.
+Please refer to the following example for more details.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,8 +123,8 @@ End Sub
 
 ### HyperlinkMouseOver Event
 
-We can acquire the details of the hyperlink which is hovered in the PDF file using the `HyperlinkMouseOverEventArgs` in the `HyperlinkMouseOver` event. 
-Please refer the below example for more details.
+You can acquire the details of the hyperlink which is hovered in the PDF file by using the `HyperlinkMouseOverEventArgs` in the `HyperlinkMouseOver` event. 
+Please refer to the below example for more details.
 
 {% tabs %}
 {% highlight c# %}
@@ -145,8 +145,8 @@ string URI = e.Uri;
 
 ## Redirecting to a different Hyperlink
 
-We can navigate to different hyperlink irrespective of the hyperlink clicked. In order to redirect a hyperlink, we need to pass the value of `Handled` parameter as true to stop the navigation of the hyperlink clicked. Then open the desired hyperlink that you want to navigate instead of the hyperlink clicked. 
-Please refer the below example for more details.
+You can navigate to different hyperlink irrespective of the hyperlink clicked. To redirect a hyperlink, you need to pass the value of `Handled` parameter as true to stop the navigation of the hyperlink clicked. Then open the desired hyperlink that you want to navigate instead of the hyperlink clicked. 
+Please refer to the following example for more details.
 
 {% tabs %}
 {% highlight c# %}
