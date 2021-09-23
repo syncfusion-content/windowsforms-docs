@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in Windows Forms SplitContainer (SplitContainerAdv)
 
-The below image illustrates the components of a SplitContainerAdv control. It has two panels separated by a splitter, which has arrows and a grip for the splitter.
+The below image illustrates the components of a [Windows Forms SplitContainer](https://www.syncfusion.com/winforms-ui-controls/splitcontainer) (SplitContainerAdv) control. It has two panels separated by a splitter, which has arrows and a grip for the splitter.
 
 
 
@@ -17,7 +17,7 @@ The below image illustrates the components of a SplitContainerAdv control. It ha
 
 
 
-A sample which demonstrates the SplitContainerAdv control is available in the below sample installation location.
+A sample which demonstrates the Windows Forms SplitContainer (SplitContainerAdv) control is available in the below sample installation location.
 
 ..\My Documents\Syncfusion\EssentialStudio\Version Number\Windows\Tools.Windows\Samples\2.0\Editors Package\Container controls\SplitContainerAdv
 

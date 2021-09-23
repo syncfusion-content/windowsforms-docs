@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started in Windows Forms Progress Bar (ProgressBarAdv)
 
-This section describes how to add [Windows Forms Progress Bar]((https://www.syncfusion.com/winforms-ui-controls/progress-bar)) (ProgressBarAdv) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [Windows Forms Progress Bar](https://www.syncfusion.com/winforms-ui-controls/progress-bar) (ProgressBarAdv) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 

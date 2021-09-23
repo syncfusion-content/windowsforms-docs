@@ -21,7 +21,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ### Adding from the installed location
 
-The PdfViewerControl and dependent assemblies can be found from the below location in your machine. 
+The Windows Forms PDF Viewer (PdfViewerControl) and dependent assemblies can be found from the below location in your machine. 
 
 system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\
 
