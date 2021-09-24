@@ -589,6 +589,16 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## HoverColor
+
+The hover color of CheckBox is now displayed for all nodes in TreeViewAdv and also for individual nodes in TreeNodeAdv.
+
+![CheckBox hover color](Appearence_images/Appearence_img15.jpg)
+
+The hover color of OptionButton is now displayed for all nodes in TreeViewAdv and also for individual nodes in TreeNodeAdv.
+
+![OptionButton hover color](Appearence_images/Appearence_img16.jpg)
+
 ## Paint TreeNodeAdv
 
 ### OwnerDrawn 
