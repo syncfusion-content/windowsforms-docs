@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Radial Menu | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control, its elements and more details.
+title: Getting Started with Windows Forms RadialMenu | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms RadialMenu control, its elements and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
 ---
 
-# Keyboard Support in Windows Forms Radial Menu
+# Keyboard Support in Windows Forms RadialMenu
 
-To invoke any command using KeyBoard, Radial Menu provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RadialMenuitem gets displayed.
+To invoke any command using KeyBoard, RadialMenu provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RadialMenuitem gets displayed.
 
 ## Add Super Accelerator
 
@@ -18,7 +18,7 @@ To invoke any command using KeyBoard, Radial Menu provides KeyTip support throug
 
 {% highlight c# %}
 
-SuperAccelerator superAccelerator1 = new SuperAccelerator(this);
+    SuperAccelerator superAccelerator1 = new SuperAccelerator(this);
 
     this.superAccelerator1.SetAccelerator(radialMenuItem1, "E");
 
@@ -32,14 +32,14 @@ SuperAccelerator superAccelerator1 = new SuperAccelerator(this);
 
 {% highlight c# %}
 
-Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
+    Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
 
     Me.superAccelerator1.SetAccelerator(radialMenuItem1, "E")
     
     Me.superAccelerator1.SetAccelerator(radialMenuItem2, "C")
 
     Me.superAccelerator1.SetAccelerator(radialMenuItem3, "X")
-    
+
     Me.superAccelerator1.SetAccelerator(radialMenuItem4, "P")
 
 {% endhighlight %}
