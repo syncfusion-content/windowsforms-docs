@@ -1,0 +1,127 @@
+---
+layout: post
+title: Getting Started with Windows Forms Radial Menu | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Radial Menu control, its elements and more details.
+platform: WindowsForms
+control: RadialMenu
+documentation: ug
+---
+
+# Keyboard Support in Windows Forms Radial Menu
+
+To invoke any command using KeyBoard, Radial Menu provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding RadialMenuitem gets displayed.
+
+## Add Super Accelerator
+
+**Through Coding**
+{% tabs %}
+
+{% highlight c# %}
+
+SuperAccelerator superAccelerator1 = new SuperAccelerator(this);
+
+    this.superAccelerator1.SetAccelerator(radialMenuItem1, "E");
+
+    this.superAccelerator1.SetAccelerator(radialMenuItem2, "C");
+
+    this.superAccelerator1.SetAccelerator(radialMenuItem3, "X");
+
+    this.superAccelerator1.SetAccelerator(radialMenuItem4, "P");
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
+
+    Me.superAccelerator1.SetAccelerator(radialMenuItem1, "E")
+    
+    Me.superAccelerator1.SetAccelerator(radialMenuItem2, "C")
+
+    Me.superAccelerator1.SetAccelerator(radialMenuItem3, "X")
+    
+    Me.superAccelerator1.SetAccelerator(radialMenuItem4, "P")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
+
+## Rule to set Accelerator
+
+*	Do not set same string value to multiple items
+
+## Super Accelerator Appearance
+
+This section discusses the appearance settings of a Super Accelerator.
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+BackColor</td><td>
+Gets / sets the back color for the accelerator key.</td></tr>
+<tr>
+<td>
+Font</td><td>
+Sets the Font Style for the accelerator key.</td></tr>
+<tr>
+<td>
+ForeColor</td><td>
+Sets the ForeColor for the accelerator key.</td></tr>
+</table>
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.superAccelerator1.BackColor = Color.Red;
+this.superAccelerator1.ForeColor = Color.White;
+this.superAccelerator1.Font = new System.Drawing.Font("Arial", 8F, FontStyle.Italic);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.superAccelerator1.BackColor = Color.Red
+Me.superAccelerator1.ForeColor = Color.White
+Me.superAccelerator1.Font = New System.Drawing.Font("Arial", 8F, FontStyle.Italic)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Style
+
+SuperAccelerator supports visual styles such as Default, Office2016. The style can be set using `Appearance` property.
+
+*	Default
+*	Advanced
+*	Office2016Colorful
+*	Office2016White
+*	Office2016DarkGray
+*	Office2016Black
+
+{% tabs %}
+
+{% highlight c# %}
+
+this.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Office2016Colorful;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Office2016Colorful
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+
