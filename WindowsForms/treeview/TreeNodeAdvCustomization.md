@@ -1431,6 +1431,38 @@ If the SelectionMode is single, then SelectedNode and SelectedNodes holds the sa
 
 > Note : This Property will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll
 
+### SelectedItem
+
+The `SelectedItem` property holds the individual selected item and the user can only select one item at a time.
+
+{% tabs %}
+{% highlight c# %}
+
+treeViewAdv1.SelectedItem = dataTable1.Rows[3];
+
+{% endhighlight %}
+{% endtabs %}
+
+![TreeNodeAdv_Customization_Img28](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img28.jpg)
+
+### SelectedItems
+
+The `SelectedItems` property holds the collection of selected items and the user can select multiple items at a time.
+
+{% tabs %}
+{% highlight c# %}
+
+BindingList<object> rows = new BindingList<object>();
+rows.Add(dataTable1.Rows[0]);
+rows.Add(dataTable1.Rows[1]);
+rows.Add(dataTable1.Rows[13]);
+treeViewAdv1.SelectedItems = rows;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TreeNodeAdv_Customization_Img29](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img29.jpg)
+
 <b>Property Table</b>
 
 <b>TreeViewAdv Property</b>
