@@ -193,7 +193,7 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 
 ## Image Size
 
-The Image size of radial menu item is customized by using the MenuItemImageSize property.
+* The Image size of all the radial menu items is customized by using the `MenuItemImageSize` property.
 
 {% tabs %}
 
@@ -230,9 +230,11 @@ this.radialMenu.Items.Add(this.radialMenuItem3);
 this.radialMenu.Items.Add(this.radialMenuItem4);
 this.radialMenu.Items.Add(this.radialMenuItem5);
 
-// Customize the image size of radialMenu
+// Customize all the image size of radialMenu items
 this.radialMenu.MenuItemImageSize = new Size(28, 28);
 
+this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
+this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
 this.radialMenu.Size = new System.Drawing.Size(280, 280);
 this.radialMenu.Location = new System.Drawing.Point(339, 97);
 this.radialMenu.OuterRimThickness = 28;
@@ -243,5 +245,59 @@ this.Controls.Add(this.radialMenu);
 
 {% endtabs %}
 
+![Image Size](Styling-and-Customization_images/Styling-and-Customization_img8.png)
 
+* The Image size of individual radial menu item is customized by using the `ImageSize` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private RadialMenu radialMenu;
+
+RadialMenuItem radialMenuItem1 = new RadialMenuItem();
+RadialMenuItem radialMenuItem2 = new RadialMenuItem();
+RadialMenuItem radialMenuItem3 = new RadialMenuItem();
+RadialMenuItem radialMenuItem4 = new RadialMenuItem();
+RadialMenuItem radialMenuItem5 = new RadialMenuItem();
+RadialMenuItem radialMenuItem6 = new RadialMenuItem();
+
+this.radialMenu.Style =RadialMenuStyle.Office2016Colorful;
+this.radialMenu.DisplayStyle = DisplayStyle.ImageAboveText;
+this.radialMenu.WedgeCount = 4;
+
+this.radialMenuItem1.ImageIndex = 7;
+this.radialMenuItem1.Text = "Edit";
+
+this.radialMenuItem2.ImageIndex = 2;
+this.radialMenuItem2.Text = "Cut";
+
+this.radialMenuItem3.ImageIndex = 1;
+this.radialMenuItem3.Text = "Copy";
+
+this.radialMenuItem4.ImageIndex = 4;
+this.radialMenuItem4.Text = "Paste";
+
+this.radialMenu.Items.Add(this.radialMenuItem1);
+this.radialMenu.Items.Add(this.radialMenuItem2);
+this.radialMenu.Items.Add(this.radialMenuItem3);
+this.radialMenu.Items.Add(this.radialMenuItem4);
+this.radialMenu.Items.Add(this.radialMenuItem5);
+
+// Customize the image size of individual radialMenu item
+this.radialMenuItem3.ImageSize = new Size(50, 50);
+
+this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
+this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
+this.radialMenu.Size = new System.Drawing.Size(280, 280);
+this.radialMenu.Location = new System.Drawing.Point(339, 97);
+this.radialMenu.OuterRimThickness = 28;
+this.radialMenu.Visible = true;
+this.Controls.Add(this.radialMenu);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image Size](Styling-and-Customization_images/Styling-and-Customization_img9.png)
 
