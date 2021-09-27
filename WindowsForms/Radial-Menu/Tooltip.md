@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in Windows Forms RadialMenu control | Syncfusion
-description: Learn about Tooltip support in Syncfusion Windows Forms RadialMenu control and more details.
+description: Learn about Tooltip support in Syncfusion Windows Forms RadialMenu (RadialMenu) control and more details.
 platform: WindowsForms
 control: RadialMenu
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip in Windows Forms RadialMenu
 
-Tooltip is nothing but a hint, showing short format text about the radial menu item, when mouse hover on it. By enabling [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_ShowToolTip) property of each radialmenu, we can display tooltip while hovering. It will display the exact text set in the Text property of each radialmenu item.
+Tooltip is nothing but a hint, showing short format text about the radial menu item, when mouse hover on it. By enabling [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_ShowToolTip) property of each radial menu, we can display tooltip while hovering. It will display the exact text set in the Text property of each radial menu item.
 
 >**NOTE**       
  The [`ShowTooltip`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_ShowToolTip) property is set as false by default.          
