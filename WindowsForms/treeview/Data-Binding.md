@@ -215,3 +215,88 @@ treeViewAdv1.ChildMember = "Continent\\Country\\State"
 [How to get value specified by ValueMember path for CheckedNodes?](https://www.syncfusion.com/forums/154006/get-value-of-nodes-after-checking)
 
 
+## Binding Data from Microsoft Access
+
+The [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+
+### Importing Microsoft Access Database
+
+To load the data from Microsoft Access database, follow the below steps.
+
+1) On the **View** menu, select **Other Windows > Data Sources**.
+
+2) In the **Data Sources** window, click **Add New Data Source**, the DataSource configuration wizard will be opened.
+
+![WinForms TreeViewAdv Datasource type choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-Datasource-type-choosing-through-the-visual-studio.jpeg)
+
+3) Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
+
+![WinForms TreeViewAdv Datasource model choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-Datasource-model-choosing-through-the-visual-studio.jpeg)
+
+4) On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection and Change the **Data source** to **.NET Framework Data Provider for OLE DB**.
+
+![WinForms TreeViewAdv data connection choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-data-connection-choosing-through-the-visual-studio.jpeg)
+
+5) In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**. In **Server or file name**, specify the path and name of the .accdb file to which want to connect, and then select **OK**.
+
+![WinForms TreeViewAdv data provider choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-data-provider-choosing-through-the-visual-studio.jpeg)
+
+6) Select **Next** on the **Choose your Data Connection** page.
+
+7) Select **Next** on the **Save connection string to the Application Configuration file** page.
+
+8) Expand the **Tables** node on the **Choose your Database Objects** page.
+
+![WinForms TreeViewAdv data base objects choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-choose-database-objects.png)
+
+9) Select whatever tables or views in the dataset, and then select **Finish**.
+
+### Loading Data from Microsoft Access Database
+
+To access the Microsoft Access database, follow the below steps.
+
+1) The [`DataSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) property can be customized at designer level like below,
+
+![WinForms TreeViewAdv Datasource choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-datasource-choosing-through-the-visual-studio.png)
+
+2) The value for [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties can be selected as like below, 
+
+![WinForms TreeViewAdv display member choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-display-member-choosing-through-the-visual-studio.png)
+
+![WinForms TreeViewAdv value member choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-value-member-choosing-through-the-visual-studio.png)
+
+![WinForms TreeViewAdv parent member choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-parent-member-choosing-through-the-visual-studio.png)
+
+3) Based on the [`DataSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) binding with the [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember) and [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) properties.
+
+![WinForms TreeViewAdv items displayed using Datasource binding through the visual studio](DataBinding_images/WinForms-TreeViewAdv-items-displayed-using-Datasource-binding-through-the-visual-studio.png)
+
+## DataRelations
+
+1) The [`DataRelations`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) property can be customized at designer level like below,
+
+![WinForms TreeViewAdv DataRelations choosing through the visual studio](DataBinding_images/WinForms-TreeViewAdv-datarelation-choosing-through-the-visual-studio.png)
+
+2) Click **Add** to create new data relation in the DataRelations Collection Editor.
+
+![WinForms TreeViewAdv add new DataRelations](DataBinding_images/WinForms-TreeViewAdv-add-new-datarelation.png)
+
+3) Choose the [`DataSource`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataSource) in the DataRelations Collection Editor like below,
+
+![WinForms TreeViewAdv Datasource choosing through the DataRelations collection editor](DataBinding_images/WinForms-TreeViewAdv-choosing-datasource-through-the-datarelation-editor.png)
+
+4) The value for [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember), [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [`ChildMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties can be selected as like below,
+
+![WinForms TreeViewAdv display member choosing through the DataRelations collection editor](DataBinding_images/WinForms-TreeViewAdv-display-member-choosing-through-the-datarelation-editor.png)
+
+![WinForms TreeViewAdv value member choosing through the DataRelations collection editor](DataBinding_images/WinForms-TreeViewAdv-value-member-choosing-through-the-datarelation-editor.png)
+
+![WinForms TreeViewAdv parent member choosing through the DataRelations collection editor](DataBinding_images/WinForms-TreeViewAdv-parent-member-choosing-through-the-datarelation-editor.png)
+
+![WinForms TreeViewAdv child member choosing through the DataRelations collection editor](DataBinding_images/WinForms-TreeViewAdv-child-member-choosing-through-the-datarelation-editor.png)
+
+![WinForms TreeViewAdv add DataRelations](DataBinding_images/WinForms-TreeViewAdv-add-datarelation.png)
+
+5) Based on the [`DataRelations`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) binding with the [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control, the items can be displayed by using [`DisplayMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DisplayMember), [`ValueMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ValueMember), [`ParentMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ParentMember) and [`ChildMember`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ChildMember) properties.
+
+![WinForms TreeViewAdv items displayed using DataRelations binding through the visual studio](DataBinding_images/WinForms-TreeViweAdv-items-displayed-using-DataRelations-binding-through-the-visual-studio.png)
