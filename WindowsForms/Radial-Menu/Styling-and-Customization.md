@@ -231,7 +231,7 @@ this.radialMenu.Items.Add(this.radialMenuItem4);
 this.radialMenu.Items.Add(this.radialMenuItem5);
 
 // Customize all the image size of radialMenu items
-this.radialMenu.MenuItemImageSize = new Size(28, 28);
+this.radialMenu.MenuItemImageSize = new Size(24, 24);
 
 this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
 this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
@@ -285,7 +285,7 @@ this.radialMenu.Items.Add(this.radialMenuItem4);
 this.radialMenu.Items.Add(this.radialMenuItem5);
 
 // Customize the image size of individual radialMenu item
-this.radialMenuItem3.ImageSize = new Size(50, 50);
+this.radialMenuItem3.ImageSize = new Size(44, 44);
 
 this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
 this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
