@@ -1043,7 +1043,7 @@ radialGauge1.Renderer = custom
 ![Customized Radial Gauge for Windows Forms](Radial-Gauge_images/custom.jpeg)
 
 ## Improve performance
-When a large range of values is assigned to the RadialGauge controls at run time, the layout will take some time to render the changes in the UI. By associating the values to the RadialGauge control after suspending the layout and resuming it after the values have been updated, the layout rendering time can be reduced. This can be acheived by using the `SuspendLayout` and `ResumeLayout` methods.
+When a large range of values is assigned to the RadialGauge controls at run time, the layout will take some time to render the changes in the UI. By associating the values to the RadialGauge control after suspending the layout and resuming it after the values have been updated, the layout rendering time can be reduced. This can be achieved by using the `SuspendLayout` and `ResumeLayout` methods.
 
 {% tabs %}
 {% highlight C# %}
