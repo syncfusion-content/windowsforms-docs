@@ -13,12 +13,39 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 
 ## Add Super Accelerator
 
+Follow the steps below to add Super accelerator
+
+1. Drag-and-drop the SuperAccelerator on your form or creating superaccelerator instance through codeing
+
+![Keyboard-Support_img2](Keyboard-Support_images/Keyboard-Support_img2.jpg)
+
 **Through Coding**
 {% tabs %}
 
 {% highlight c# %}
 
     SuperAccelerator superAccelerator1 = new SuperAccelerator(this);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+{% endhighlight %}
+
+    Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
+
+{% endtabs %}
+
+2. To accelerate the item’s click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
+
+![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
+
+3. 	Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
+
+**Through Coding**
+{% tabs %}
+
+{% highlight c# %}
 
     this.superAccelerator1.SetAccelerator(radialMenuItem1, "E");
 
@@ -30,7 +57,7 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight vb %}
 
     Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
 
@@ -45,8 +72,6 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 {% endhighlight %}
 
 {% endtabs %}
-
-![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
 
 ## Rule to set Accelerator
 
@@ -121,7 +146,3 @@ Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Offi
 {% endhighlight %}
 
 {% endtabs %}
-
-
-
-
