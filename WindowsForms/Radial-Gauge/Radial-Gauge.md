@@ -1042,6 +1042,40 @@ radialGauge1.Renderer = custom
 
 ![Customized Radial Gauge for Windows Forms](Radial-Gauge_images/custom.jpeg)
 
+## Improve performance
+When a large range of values is assigned to the RadialGauge controls at run time, the layout will take some time to render the changes in the UI. By associating the values to the RadialGauge control after suspending the layout and resuming it after the values have been updated, the layout rendering time can be reduced. This can be acheived by using the `SuspendLayout` and `ResumeLayout` methods.
+
+{% tabs %}
+{% highlight C# %}
+
+this.radialGauge1.SuspendLayout();
+this.radialGauge1.MajorDifference = 3000F;
+this.radialGauge1.MaximumValue = 3200F;
+this.radialGauge1.MinimumValue = 1000F;
+this.radialGauge1.MinorDifference = 250F;
+this.radialGauge1.ResumeLayout(true);
+
+{% endhighlight %}
+{% highlight VB %}
+
+Me.radialGauge1.SuspendLayout()
+Me.radialGauge1.MajorDifference = 3000F
+Me.radialGauge1.MaximumValue = 3200F
+Me.radialGauge1.MinimumValue = 1000F
+Me.radialGauge1.MinorDifference = 250F
+Me.radialGauge1.ResumeLayout(True)
+
+{% endhighlight %}
+{% endtabs %}
+
+Performance of the RadialGauge control without suspending and resuming layout layout logic of the control.
+
+![RadialGauge performance by default.](Radial-Gauge_images/Radial-Gauge-Performance-Default.gif)
+
+Performance of the RadialGauge control after suspending and resuming the layout logic of the control.
+
+![RadialGauge performance by default.](Radial-Gauge_images/Radial-Gauge-Performance-Improved.gif)
+
 ## Frequently asked questions
 
 ### How to enable multiple needles to RadialGauge
