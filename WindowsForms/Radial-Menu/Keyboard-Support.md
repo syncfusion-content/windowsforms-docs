@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Support in Windows Forms RadialMenu
 
-To invoke any command using KeyBoard, RadialMenu provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding radial menu item gets displayed.
+To invoke any command using KeyBoard, RadialMenu provides KeyTip support through Super Accelerator. On pressing Alt key, KeyTips for the corresponding radial menu item gets displayed and clicked Alt + corresponding key to click event triggered.
 
 ## Add Super Accelerator
 
