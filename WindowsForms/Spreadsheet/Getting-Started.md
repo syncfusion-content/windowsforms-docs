@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Spreadsheet control | Syncfusion
+title: Getting Started with WinForms Spreadsheet control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Spreadsheet control, its elements and more details.
 platform: windowsforms
 control: Spreadsheet
@@ -13,7 +13,7 @@ This section helps you to get started with the Spreadsheet
 
 ## Assemblies deployment
 
-Below table describes, list of assemblies required to be added in project when the Spreadsheet control is used in your application.
+Below table describes, list of assemblies required to be added in project when the [WinForms Spreadsheet](https://www.syncfusion.com/winforms-ui-controls/spreadsheet) control is used in your application.
 
 <table>
 <tr>
@@ -72,7 +72,7 @@ Contains the base and fundamental classes for creating PDF.</td></tr>
 
 ## Create a simple application with Spreadsheet
 
-Spreadsheet control can be added into the application either via designer or via coding. 
+WinForms Spreadsheet control can be added into the application either via designer or via coding. 
 
 ### Adding a control via designer
 
