@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Chart
 
-This section provides the details that you will need to know about getting started with our Chart control. 
+This section provides the details that you will need to know about getting started with our [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control. 
 
 ## Assembly deployment
 
