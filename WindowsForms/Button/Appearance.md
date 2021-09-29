@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Windows Forms Button (SfButton)
 
-This section describes how to customize the appearance of the SfButton control.
+This section describes how to customize the appearance of the [Windows Forms Button](https://www.syncfusion.com/winforms-ui-controls/button) (SfButton) control.
 
 ## Background
 
