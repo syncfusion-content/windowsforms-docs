@@ -1433,11 +1433,11 @@ If the SelectionMode is single, then SelectedNode and SelectedNodes holds the sa
 
 ## Programmatic selection
 
-TreeViewAdv allows to select the items programmatically using both `SelectedItem` and `SelectedItems` property.
+TreeViewAdv allows to select the items programmatically using both [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) and [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
 
 ### SelectedItem
 
-When the selection mode is `Single`, programmatically select an item by setting the underlying object to the `SelectedItem` property.
+When the selection mode is `Single`, programmatically select an item by setting the underlying object to the [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1516,7 +1516,7 @@ public partial class Form2 : Form
 
 ### SelectedItems
 
-When the selection mode is `MultiSelectSameLevel` or `MultiSelectAll`, programmatically select more than one item by adding the underlying object to the `SelectedItems` property.
+When the selection mode is `MultiSelectSameLevel` or `MultiSelectAll`, programmatically select more than one item by adding the underlying object to the [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
 
 {% tabs %}
 {% highlight c# %}
