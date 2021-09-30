@@ -61,7 +61,7 @@ treeNode.Optioned = True
 
 ### Customizing the hover appearance
 
-Hover effect of the option button can be customized using the below properties,
+Hover state appearance of the option button can be customized using the below properties,
 
 <table>
 <tr>
@@ -264,7 +264,7 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Customizing the hover appearance
 
-The hover effect will appearance in `CheckBox` which displayed inside the `TreeViewAdv`. Hover appearance can be customized using the below properties.
+The hover state appearance of the checkBox which displayed inside the `TreeViewAdv` can be customized using the below properties,
 
 <table>
 <tr>
