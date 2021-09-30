@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Selection in Windows Forms ListView (SfListView)
-This section explains how to perform selection and its related operations in the SfListView.
+This section explains how to perform selection and its related operations in the [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView).
 
 ## UI Selection
 The control has different selection modes to perform selection operations as listed as follows:
@@ -84,7 +84,7 @@ Next item
 
 ### Get selected items
 
-The SfListView gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property and gets single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.                              
+The Windows Forms ListView (SfListView) gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItems) property and gets single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedItem) or [SfListView.SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_SelectedIndex) property.                              
 
 ### Clear selected items
 
@@ -100,7 +100,7 @@ sfListView1.SelectedItems.Clear()
 {% endtabs %}
 
 ### Getting row index
-SfListView allows you to get item row index based on provided point. You can use the [GetRowIndexAtPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GetRowIndexAtPoint_System_Drawing_Point_) method to get a row index based on the bounds value.
+Windows Forms ListView (SfListView) allows you to get item row index based on provided point. You can use the [GetRowIndexAtPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_GetRowIndexAtPoint_System_Drawing_Point_) method to get a row index based on the bounds value.
 
 {% tabs %}
 {% highlight c# %}

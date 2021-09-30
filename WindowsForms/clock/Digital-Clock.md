@@ -9,7 +9,7 @@ documentation: ug
 
 # Digital Clock in Windows Forms Clock
 
-The DigitalClock is implemented as an extension to the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
+The DigitalClock is implemented as an extension to the existing [Windows Forms Clock](https://www.syncfusion.com/winforms-ui-controls/clock) control in the UI controls, but offers a richer UI experience than the existing clock and is capable of displaying the time as digital text.
 
 You can use the DigitalClock in your application by simply switching the [ClockType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html#Syncfusion_Windows_Forms_Tools_Clock_ClockType) of the existing [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control as described in the following sample code:
 
