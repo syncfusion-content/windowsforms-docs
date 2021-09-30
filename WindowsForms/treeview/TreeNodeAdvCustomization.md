@@ -59,9 +59,9 @@ treeNode.Optioned = True
 
 ![TreeNodeAdv_Customization_Img1](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
 
-### Customize hover color
+### Customizing the hover appearance
 
-The hover color of OptionButton is now displayed for all nodes in TreeViewAdv and also for individual nodes in TreeNodeAdv. Hover color can be customized using the below properties.
+Hover effect of the option button can be customized using the below properties,
 
 * OptionButtonHoverBackColor,
 * OptionButtonHoverBorderColor,
@@ -146,7 +146,7 @@ public partial class Form2 : Form
 
 ![OptionButton hover color](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img31.jpg)
 
-> Note: Customization of hover color applicable only for both `Office2019Colorful` and `HighContrastTheme`.
+> Note: The above properties are applicable only when setting the `ThemeName` to `Office2019Colorful` or `HighContrastTheme`.
 
 
 ## CheckBox
@@ -247,9 +247,9 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ![TreeNodeAdv_Customization_Img2](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
 
-### Customize hover color
+### Customizing the hover appearance
 
-The hover color of CheckBox is now displayed for all nodes in TreeViewAdv and also for individual nodes in TreeNodeAdv. Hover color can be customized using the below properties.
+The hover effect will appearance in `CheckBox` which displayed inside the `TreeViewAdv`. Hover appearance can be customized using the below properties.
 
 * CheckBoxHoverBackColor,
 * CheckBoxHoverBorderColor,
@@ -334,7 +334,7 @@ public partial class Form2 : Form
 
 ![CheckBox hover color](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img30.jpg)
 
-> Note: Customization of hover color applicable only for both `Office2019Colorful` and `HighContrastTheme`.
+> Note: The above properties are applicable only when setting the `ThemeName` to `Office2019Colorful` or `HighContrastTheme`.
 
 ### Find CheckState changed
 
