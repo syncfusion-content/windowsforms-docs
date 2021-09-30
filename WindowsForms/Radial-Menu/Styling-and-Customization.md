@@ -301,5 +301,5 @@ this.Controls.Add(this.radialMenu);
 
 ![Image Size](Styling-and-Customization_images/Styling-and-Customization_img9.png)
 
-N> If the `ImageSize` is defined, setting the property has no effect for particular radial menu item.
+N> If the `ImageSize` is defined, setting the `MenuItemImageSize` property has no effect for particular radial menu item.
 
