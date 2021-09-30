@@ -70,15 +70,15 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-OptionButtonHoverBackColor</td><td>
+{{'[OptionButtonHoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBackColor)'|markdownify }}</td><td>
 Used to customize the hover background of the option button.</td></tr>
 <tr>
 <td>
-OptionButtonHoverBorderColor</td><td>
+{{'[OptionButtonHoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBorderColor)'|markdownify }}</td><td>
 Used to customize the hover border of the option button.</td></tr>
 <tr>
 <td>
-OptionButtonHoverColor</td><td>
+{{'[OptionButtonHoverColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverColor)'|markdownify }}</td><td>
 Used to customize the checked hover of the option button.</td></tr>
 </table>
 
@@ -273,15 +273,15 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-CheckBoxHoverBackColor</td><td>
+{{'[CheckBoxHoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_CheckBoxHoverBackColor)'| markdownify }}</td><td>
 Used to customize the hover background of the checkbox.</td></tr>
 <tr>
 <td>
-CheckBoxHoverBorderColor</td><td>
+{{'[CheckBoxHoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_CheckBoxHoverBorderColor)'| markdownify }}</td><td>
 Used to customize the hover border of the checkbox.</td></tr>
 <tr>
 <td>
-HoverCheckedTickColor</td><td>
+{{'[HoverCheckedTickColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_HoverCheckedTickColor)'| markdownify }}</td><td>
 Used to customize the checked hover of the checkbox.</td></tr>
 </table>
 
