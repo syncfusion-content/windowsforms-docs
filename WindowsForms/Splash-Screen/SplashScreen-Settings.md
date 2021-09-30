@@ -9,11 +9,11 @@ documentation: ug
 
 # SplashScreen Settings in Windows Forms Splash Screen (Splash)
 
-The following are the splash settings available for the SplashControl.
+The following are the splash settings available for the [Windows Forms Splash Screen](https://www.syncfusion.com/winforms-ui-controls/splash-screen) (Splash) Control.
 
 ## Automatic launching
 
-The properties given below describe the AutoMode features of the SplashControl.
+The properties given below describe the AutoMode features of the Windows Forms Splash Screen (Splash) Control.
 
 Property Table
 
