@@ -215,9 +215,9 @@ treeViewAdv1.ChildMember = "Continent\\Country\\State"
 [How to get value specified by ValueMember path for CheckedNodes?](https://www.syncfusion.com/forums/154006/get-value-of-nodes-after-checking)
 
 
-## Binding Data from Microsoft Access
+## Binding data through designer
 
-The [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
+The [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) control supports to bind data from Microsoft Access database through designer. This section describes about how to bind the data from Microsoft Access database to [`TreeViewAdv`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html).
 
 ### Importing Microsoft Access Database
 
@@ -271,7 +271,9 @@ To access the Microsoft Access database, follow the below steps.
 
 ![WinForms TreeViewAdv items displayed using Datasource binding through the visual studio](DataBinding_images/WinForms-TreeViewAdv-items-displayed-using-Datasource-binding-through-the-visual-studio.png)
 
-## DataRelations
+### Creating the DataRelations through designer
+
+To create the `DataRelations` through designer follow the below steps,
 
 1) The [`DataRelations`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DataRelations) property can be customized at designer level like below,
 
