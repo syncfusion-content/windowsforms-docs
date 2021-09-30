@@ -13,9 +13,9 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 
 ## Add Super Accelerator
 
-Follow the steps below to add Super accelerator
+Follow the steps below to add the `SuperAccelerator`
 
-1. Drag-and-drop the SuperAccelerator on your form or creating super accelerator instance through code.
+1. Drag-and-drop the `SuperAccelerator` on your form or creating the `SuperAccelerator` instance through code.
 
 ![Keyboard-Support_img2](Keyboard-Support_images/Keyboard-Support_img2.jpg)
 
@@ -77,9 +77,9 @@ Follow the steps below to add Super accelerator
 
 *	Do not set same string value to multiple items
 
-## Super Accelerator Appearance
+## SuperAccelerator appearance
 
-This section discusses the appearance settings of a Super Accelerator.
+This section discusses the appearance settings of a `SuperAccelerator`.
 
 <table>
 <tr>
