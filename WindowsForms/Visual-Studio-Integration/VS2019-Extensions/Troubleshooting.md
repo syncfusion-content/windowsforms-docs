@@ -9,16 +9,16 @@ documentation: ug
 
 # Troubleshoot the project
 
-Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong .NET Framework version of added Syncfusion assembly to the project or missing any Syncfusion dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
+Troubleshoot the project with the Syncfusion configuration and apply the fix, such as adding a Syncfusion assembly to the project with the wrong .NET Framework version or missing any Syncfusion dependent assembly of a referred assembly. The Syncfusion Troubleshooter is capable of performing the following tasks:
 
 * Report the Configuration issues.  
-* Apply the solution
+* Apply the solution.
 
 ## Report the Configuration issues
 
 The following steps help you to utilize the Syncfusion Troubleshooter by Visual Studio. 
 
-> Before use the Syncfusion Troubleshooter for WinForms, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion Troubleshooter for WinForms, check whether the **WinForms Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.If this extension not installed, please install the extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/vs2019-extensions/download-and-installation/) help topic.
 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
@@ -34,7 +34,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1.jpeg)
 
-2. Now, analyze the project and it will report the project configuration issues of Syncfusion controls in the Troubleshooter dialog if any issues found. If the project does not have any configuration issues, the dialog box will show there is no configuration changes required in following areas:
+2. Analyze the project now, and if any Syncfusion controls project configuration errors are discovered, they will be reported in the Troubleshooter dialog.  If there are no configuration issues with the project, the dialog box will indicate that no modifications are required in the following areas:
 
 * Syncfusion assembly references.
 * Syncfusion NuGet Packages. 
@@ -42,7 +42,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
-I> The Syncfusion Troubleshooter command will be visible only for Syncfusion projects that means the project should contain Syncfusion assemblies or Syncfusion NuGet packages referred.
+I> The Syncfusion Troubleshooter command will be visible only for Syncfusion projects that means Syncfusion assemblies or Syncfusion NuGet packages should be referred in to the project.
 
 The Syncfusion Troubleshooter handles the following project configuration issues: 
 
