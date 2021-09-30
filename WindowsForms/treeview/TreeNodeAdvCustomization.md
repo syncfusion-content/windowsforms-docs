@@ -63,9 +63,24 @@ treeNode.Optioned = True
 
 Hover effect of the option button can be customized using the below properties,
 
-* OptionButtonHoverBackColor,
-* OptionButtonHoverBorderColor,
-* OptionButtonHoverColor.
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+OptionButtonHoverBackColor</td><td>
+Used to customize the hover background of the option button.</td></tr>
+<tr>
+<td>
+OptionButtonHoverBorderColor</td><td>
+Used to customize the hover border of the option button.</td></tr>
+<tr>
+<td>
+OptionButtonHoverColor</td><td>
+Used to customize the checked hover of the option button.</td></tr>
+</table>
 
 This example illustrates how to customize the OptionButton hover color.
 
@@ -251,9 +266,24 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 The hover effect will appearance in `CheckBox` which displayed inside the `TreeViewAdv`. Hover appearance can be customized using the below properties.
 
-* CheckBoxHoverBackColor,
-* CheckBoxHoverBorderColor,
-* HoverCheckedTickColor.
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+CheckBoxHoverBackColor</td><td>
+Used to customize the hover background of the checkbox.</td></tr>
+<tr>
+<td>
+CheckBoxHoverBorderColor</td><td>
+Used to customize the hover border of the checkbox.</td></tr>
+<tr>
+<td>
+HoverCheckedTickColor</td><td>
+Used to customize the checked hover of the checkbox.</td></tr>
+</table>
 
 This example illustrates how to customize the CheckBox hover color.
 
