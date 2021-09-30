@@ -52,43 +52,6 @@ this.radialMenuItem4.Text = "Paste";
 
 {% endhighlight %}
 
-{% highlight vb %}
-
- Dim radialMenu1 As RadialMenu = New RadialMenu()
-
-Me.radialMenu1.Visible = True
-
-Me.radialMenu1.Style = RadialMenuStyle.Office2016Colorful
-
-Dim radialMenuItem1 As RadialMenuItem = New RadialMenuItem()
-
-Dim radialMenuItem2 As RadialMenuItem = New RadialMenuItem()
-
-Dim radialMenuItem3 As RadialMenuItem = New RadialMenuItem()
-
-Dim radialMenuItem4 As RadialMenuItem = New RadialMenuItem()
-
-Me.radialMenuItem1.Text = "Edit"
-
-Me.radialMenuItem2.Text = "Cut"
-
-Me.radialMenuItem3.Text = "Copy"
-
-Me.radialMenuItem4.Text = "Paste"
-
-Me.radialMenu1.Items.Add(Me.radialMenuItem1)
-
-Me.radialMenu1.Items.Add(Me.radialMenuItem2)
-
-Me.radialMenu1.Items.Add(Me.radialMenuItem3)
-
-Me.radialMenu1.Items.Add(Me.radialMenuItem4)
-
-Me.radialMenu1.Items.Add(Me.radialMenuItem5)
-
-Me.Controls.Add(radialMenu1)
-
-{% endhighlight %}
 {% endtabs %}
 
 ![Tooltip](ToolTip-Support_images/Tooltip.jpg)

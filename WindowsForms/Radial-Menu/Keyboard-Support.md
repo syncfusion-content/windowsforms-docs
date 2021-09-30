@@ -28,19 +28,9 @@ Follow the steps below to add the `SuperAccelerator`
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-{% endhighlight %}
-
-    Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
-
 {% endtabs %}
 
-2. To accelerate the item’s click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
-
-![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
-
-3. 	Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
+2. To set a `SuperAccelerator` on use a SetAccelerator method to set the string value in radial menu item.
 
 **Through Coding**
 {% tabs %}
@@ -57,48 +47,21 @@ Follow the steps below to add the `SuperAccelerator`
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-    Dim superAccelerator1 As SuperAccelerator = New SuperAccelerator(Me)
-
-    Me.superAccelerator1.SetAccelerator(radialMenuItem1, "E")
-    
-    Me.superAccelerator1.SetAccelerator(radialMenuItem2, "C")
-
-    Me.superAccelerator1.SetAccelerator(radialMenuItem3, "X")
-
-    Me.superAccelerator1.SetAccelerator(radialMenuItem4, "P")
-
-{% endhighlight %}
-
 {% endtabs %}
 
-## Rule to set Accelerator
+3. To accelerate the item’s click event at run time, Press the ALT key. All the specified accelerator strings will be displayed below the items.
 
+![Keyboard-Support_img1](Keyboard-Support_images/Keyboard-Support_img1.jpg)
+
+4. Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
+
+
+**NOTE** 
 *	Do not set same string value to multiple items
 
 ## SuperAccelerator appearance
 
-This section discusses the appearance settings of a `SuperAccelerator`.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-BackColor</td><td>
-Gets / sets the back color for the accelerator key.</td></tr>
-<tr>
-<td>
-Font</td><td>
-Sets the Font Style for the accelerator key.</td></tr>
-<tr>
-<td>
-ForeColor</td><td>
-Sets the ForeColor for the accelerator key.</td></tr>
-</table>
+This section discusses the appearance settings of a `SuperAccelerator`. customizing a `SuperAccelerator` using a property of BackColor,Font and ForeColor.
 
 {% tabs %}
 
@@ -110,17 +73,9 @@ this.superAccelerator1.Font = new System.Drawing.Font("Arial", 8F, FontStyle.Ita
 
 {% endhighlight %}
 
-{% highlight vb %}
-
-Me.superAccelerator1.BackColor = Color.Red
-Me.superAccelerator1.ForeColor = Color.White
-Me.superAccelerator1.Font = New System.Drawing.Font("Arial", 8F, FontStyle.Italic)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-## Style
+### Style
 
 SuperAccelerator supports visual styles such as Default, Office2016. The style can be set using `Appearance` property.
 
@@ -136,12 +91,6 @@ SuperAccelerator supports visual styles such as Default, Office2016. The style c
 {% highlight c# %}
 
 this.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Office2016Colorful;
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Office2016Colorful
 
 {% endhighlight %}
 
