@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Check Box Selection in Windows Forms ListView (SfListView)
-The SfListView supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowCheckBoxes) property to true.
+The [Windows Forms ListView](https://www.syncfusion.com/winforms-ui-controls/listview) (SfListView) supports loading the checkBox to each item that allows the user to check or uncheck the corresponding item. You can display the check box in each item by setting the [SfListView.ShowCheckBoxes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowCheckBoxes) property to true.
 
 {% tabs %}
 {% highlight c# %}
