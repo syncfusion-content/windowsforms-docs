@@ -193,7 +193,7 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 
 ## Image Size
 
-* `RadialMenu` control allows to change the size of the radial menu items images. The `MenuItemImageSize` property is used to change the image size of all radial menu items.
+`RadialMenu` control allows to change the size of the radial menu items images. The `MenuItemImageSize` property is used to change the image size of all radial menu items.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ this.Controls.Add(this.radialMenu);
 
 ![Image Size](Styling-and-Customization_images/Styling-and-Customization_img8.png)
 
-* The `ImageSize` property is used to change the image size of each radial menu item.
+The `ImageSize` property is used to change the image size of each radial menu item.
 
 {% tabs %}
 
