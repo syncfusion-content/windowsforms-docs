@@ -1435,11 +1435,9 @@ If the SelectionMode is single, then SelectedNode and SelectedNodes holds the sa
 
 The TreeViewAdv allows to select the items programmatically using both `SelectedItem` and `SelectedItems` property.
 
-> Note: The programmatic selection applicable only for business objects.
-
 ### SelectedItem
 
-The `SelectedItem` property holds the individual selected item and the user can only select one item at a time.
+When the selection mode is `Single`, programmatically select an item by setting the underlying object to the `SelectedItem` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1518,7 +1516,7 @@ public partial class Form2 : Form
 
 ### SelectedItems
 
-The `SelectedItems` property holds the collection of selected items and the user can select multiple items at a time.
+When the selection mode is `MultiSelectSameLevel` or `MultiSelectAll`, programmatically select more than one item by adding the underlying object to the `SelectedItems` property.
 
 {% tabs %}
 {% highlight c# %}
