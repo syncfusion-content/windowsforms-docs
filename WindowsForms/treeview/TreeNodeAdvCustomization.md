@@ -1433,7 +1433,7 @@ If the SelectionMode is single, then SelectedNode and SelectedNodes holds the sa
 
 ## Programmatic selection
 
-The TreeViewAdv allows to select the items programmatically using both `SelectedItem` and `SelectedItems` property.
+TreeViewAdv allows to select the items programmatically using both `SelectedItem` and `SelectedItems` property.
 
 ### SelectedItem
 
