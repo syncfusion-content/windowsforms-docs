@@ -13,7 +13,7 @@ The RadialMenu control supports key tips for radial menu items, letting users qu
 
 ## Add Super Accelerator
 
-Follow the steps below to add the `SuperAccelerator`
+Follow the steps below to add the [`SuperAccelerator`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html)
 
 1. Drag-and-drop the `SuperAccelerator` on your form or creating the `SuperAccelerator` instance through code.
 
@@ -56,12 +56,11 @@ Follow the steps below to add the `SuperAccelerator`
 4. Press the string in the keyboard and the corresponding item’s click event will be triggered. (Eg. If the accelerator string of Copy is X key, Press ALT key. Once all the accelerator strings are displayed, press X key the Copy item event will be triggered.)
 
 
-**NOTE** 
-*	Do not set same string value to multiple items
+> Note: Do not set same string value to multiple radial menu items.
 
 ## SuperAccelerator appearance
 
-This section discusses the appearance settings of a `SuperAccelerator`. customizing a `SuperAccelerator` using a property of BackColor,Font and ForeColor.
+This section discusses the appearance settings of a `SuperAccelerator`. customizing a `SuperAccelerator` using a property of [`BackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_BackColor),[`Font`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_Font) and [`ForeColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SuperAccelerator.html#Syncfusion_Windows_Forms_Tools_SuperAccelerator_ForeColor).
 
 {% tabs %}
 
