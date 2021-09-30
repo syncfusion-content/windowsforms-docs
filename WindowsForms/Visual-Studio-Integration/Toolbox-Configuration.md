@@ -9,13 +9,13 @@ documentation: ug
 
 # Toolbox Configuration
 
-The Syncfusion Toolbox Installer utility adds the Syncfusion WinForms controls into the Visual Studio .NET toolbox.
+The Syncfusion Toolbox utility adds the Syncfusion WinForms controls into the Visual Studio .NET toolbox.
 
-N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
+N> Visual Studio Express Edition does not support toolbox configuration. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
 Syncfusion controls will be automatically configured in the Visual Studio toolbox, while installing the Syncfusion Windows Forms installer, if the <b>“Configure Syncfusion Controls in Visual Studio”</b> checkbox is selected from installer UI.
 
-Use the following steps to adds the Syncfusion WinForms controls through the Syncfusion Toolbox Installer:
+Use the following steps to add the Syncfusion WinForms controls through the Syncfusion Toolbox Installer:
 
 1. To launch Toolbox configuration utility, follow either one of the options below:
 
@@ -48,7 +48,7 @@ Use the following steps to adds the Syncfusion WinForms controls through the Syn
    
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
-3. An Information message is displayed indicating the successful configuration of Toolbox. Click **OK**.
+3. The successful configuration of Toolbox is indicated by an Information message. Click **OK**.
 
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    

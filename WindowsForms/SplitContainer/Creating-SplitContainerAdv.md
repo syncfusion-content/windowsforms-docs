@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started in Windows Forms SplitContainer control | Syncfusion
+title: Getting Started in Windows Forms SplitContainer | Syncfusion
 description: Learn about Getting Started support in Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control and more details.
 platform: WindowsForms
 control: Editors Package
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started in Windows Forms SplitContainer (SplitContainerAdv)
 
-This section describes how to add [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) control in a Windows Forms application.
+This section describes how to add [Windows Forms SplitContainer](https://www.syncfusion.com/winforms-ui-controls/splitcontainer) (SplitContainerAdv) control in a Windows Forms application.
 
 ## Assembly deployment
 
@@ -17,7 +17,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Create a simple application with SplitContainerAdv
 
@@ -27,7 +27,7 @@ Create a new Windows Forms project in Visual Studio to display the [SplitContain
 
 ## Adding control via designer
 
-The SplitContainerAdv control can be added to the application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The Windows Forms SplitContainer (SplitContainerAdv) control can be added to the application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll

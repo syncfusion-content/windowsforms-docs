@@ -7,11 +7,11 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Overview
+# Syncfusion Windows Forms Extensions
 
 The Syncfusion WinForms Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio. The Syncfusion WinForms Extensions supports Microsoft Visual Studio 2013 or higher.
 
-N> Syncfusion Extension is published in Visual Studio Marketplace. You can download WinForms Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions).
+N> Syncfusion Extension is published in Visual Studio Marketplace. You can download WinForms Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions). Kindly install this extension by follow the steps from the [download and installation](https://help.syncfusion.com/windowsforms/visual-studio-integration/visual-studio-extensions/vs2019-extensions/download-and-installation/) help topic.
 
 I> The Syncfusion WinForms menu option is available from v17.1.0.32.
 
