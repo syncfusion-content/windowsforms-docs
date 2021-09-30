@@ -11,7 +11,7 @@ documentation: ug
 
 The data source can be bound by using the [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_DataSource) property. The following properties controls the data binding:
 
-* `DisplayMember`: To display the underlying datasource for [SfComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html).
+* `DisplayMember`: To display the underlying datasource for [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox).
 * `ValueMember`: To use as the actual value for the items. 
 
 {% tabs %}
@@ -100,7 +100,7 @@ End Class
 
 ## Binding Data from Microsoft Access
 
-The [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html).
+The [WinForms ComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html) (SfComboBox) control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to [`SfComboBox`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html).
 
 ### Importing Microsoft Access Database
 To load the data from Microsoft Access database, follow the below steps.

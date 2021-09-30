@@ -27,7 +27,7 @@ Create a new Windows Forms project in Visual Studio to display the [TabControlAd
 
 ## Add control through designer
 
-The [Windows Forms TabControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) (TabControlAdv) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The [Windows Forms TabControl](https://www.syncfusion.com/winforms-ui-controls/tabcontrol) (TabControlAdv) control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
