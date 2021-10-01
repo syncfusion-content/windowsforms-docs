@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Search in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid provides the support for search the specific string in the SfDataGrid. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_Search_System_String_) method. The founded matches will be highlighted in the SfDataGrid.
+[Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides the support for search the specific string in the SfDataGrid. This can be achieved by using the [SearchController.Search](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SearchController.html#Syncfusion_WinForms_DataGrid_SearchController_Search_System_String_) method. The founded matches will be highlighted in the SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
