@@ -191,3 +191,115 @@ Me.radialMenu1.DisplayStyle = Syncfusion.Windows.Forms.Tools.DisplayStyle. Image
 
 
 
+## Image size customization
+
+The `RadialMenu` control allows to change the size of the radial menu items images. The [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property is used to change the image size of all radial menu items.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private RadialMenu radialMenu;
+
+RadialMenuItem radialMenuItem1 = new RadialMenuItem();
+RadialMenuItem radialMenuItem2 = new RadialMenuItem();
+RadialMenuItem radialMenuItem3 = new RadialMenuItem();
+RadialMenuItem radialMenuItem4 = new RadialMenuItem();
+RadialMenuItem radialMenuItem5 = new RadialMenuItem();
+RadialMenuItem radialMenuItem6 = new RadialMenuItem();
+
+this.radialMenu.Style =RadialMenuStyle.Office2016Colorful;
+this.radialMenu.DisplayStyle = DisplayStyle.ImageAboveText;
+this.radialMenu.WedgeCount = 4;
+
+this.radialMenuItem1.ImageIndex = 7;
+this.radialMenuItem1.Text = "Edit";
+
+this.radialMenuItem2.ImageIndex = 2;
+this.radialMenuItem2.Text = "Cut";
+
+this.radialMenuItem3.ImageIndex = 1;
+this.radialMenuItem3.Text = "Copy";
+
+this.radialMenuItem4.ImageIndex = 4;
+this.radialMenuItem4.Text = "Paste";
+
+this.radialMenu.Items.Add(this.radialMenuItem1);
+this.radialMenu.Items.Add(this.radialMenuItem2);
+this.radialMenu.Items.Add(this.radialMenuItem3);
+this.radialMenu.Items.Add(this.radialMenuItem4);
+this.radialMenu.Items.Add(this.radialMenuItem5);
+
+// Customize all the image size of radialMenu items
+this.radialMenu.MenuItemImageSize = new Size(24, 24);
+
+this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
+this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
+this.radialMenu.Size = new System.Drawing.Size(280, 280);
+this.radialMenu.Location = new System.Drawing.Point(339, 97);
+this.radialMenu.OuterRimThickness = 28;
+this.radialMenu.Visible = true;
+this.Controls.Add(this.radialMenu);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image Size](Styling-and-Customization_images/Styling-and-Customization_img8.png)
+
+The [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) property of `RadialMenuItem` is used to change the image size of each radial menu item.
+
+{% tabs %}
+
+{% highlight C# %}
+
+private RadialMenu radialMenu;
+
+RadialMenuItem radialMenuItem1 = new RadialMenuItem();
+RadialMenuItem radialMenuItem2 = new RadialMenuItem();
+RadialMenuItem radialMenuItem3 = new RadialMenuItem();
+RadialMenuItem radialMenuItem4 = new RadialMenuItem();
+RadialMenuItem radialMenuItem5 = new RadialMenuItem();
+RadialMenuItem radialMenuItem6 = new RadialMenuItem();
+
+this.radialMenu.Style =RadialMenuStyle.Office2016Colorful;
+this.radialMenu.DisplayStyle = DisplayStyle.ImageAboveText;
+this.radialMenu.WedgeCount = 4;
+
+this.radialMenuItem1.ImageIndex = 7;
+this.radialMenuItem1.Text = "Edit";
+
+this.radialMenuItem2.ImageIndex = 2;
+this.radialMenuItem2.Text = "Cut";
+
+this.radialMenuItem3.ImageIndex = 1;
+this.radialMenuItem3.Text = "Copy";
+
+this.radialMenuItem4.ImageIndex = 4;
+this.radialMenuItem4.Text = "Paste";
+
+this.radialMenu.Items.Add(this.radialMenuItem1);
+this.radialMenu.Items.Add(this.radialMenuItem2);
+this.radialMenu.Items.Add(this.radialMenuItem3);
+this.radialMenu.Items.Add(this.radialMenuItem4);
+this.radialMenu.Items.Add(this.radialMenuItem5);
+
+// Customize the image size of individual radialMenu item
+this.radialMenuItem3.ImageSize = new Size(44, 44);
+
+this.radialMenu.Icon = global::GettingStartedDemo.Properties.Resources.A_Colorful;
+this.radialMenu.MenuIcon = global::GettingStartedDemo.Properties.Resources.Arrow_Colorful;
+this.radialMenu.Size = new System.Drawing.Size(280, 280);
+this.radialMenu.Location = new System.Drawing.Point(339, 97);
+this.radialMenu.OuterRimThickness = 28;
+this.radialMenu.Visible = true;
+this.Controls.Add(this.radialMenu);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Image Size](Styling-and-Customization_images/Styling-and-Customization_img9.png)
+
+N> If the [`ImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenuItem.html#Syncfusion_Windows_Forms_Tools_RadialMenuItem_ImageSize) is defined, setting the [`MenuItemImageSize`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialMenu.html#Syncfusion_Windows_Forms_Tools_RadialMenu_MenuItemImageSize) property has no effect for particular radial menu item.
+
