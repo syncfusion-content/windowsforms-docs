@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started in Windows Forms MultiColumn ListBox (GridListControl)
 
-This section explains creating a simple application with GridListControl and its functionalities.
+This section explains creating a simple application with [WinForms MultiColumn ListBox](https://www.syncfusion.com/winforms-ui-controls/multicolumn-listbox) Control and its functionalities.
 
 ## Assembly Deployment
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridlistcontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
