@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Windows Forms LayoutManagers control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms LayoutManagers control and more details.
+title: Getting Started with Windows Forms FlowLayout | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms FlowLayout control, its elements, and more.
 platform: windowsforms
 control: FlowLayout
 documentation: ug
 ---
 
-# Getting Started with Windows Forms LayoutManagers
+# Getting Started with Windows Forms FlowLayout
 
 This section explains how to add the FlowLayout control in a Windows Forms application and overview its basic functionalities.
 

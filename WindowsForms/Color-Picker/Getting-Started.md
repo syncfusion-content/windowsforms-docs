@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Color Picker control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
+title: Getting Started with Windows Forms Color Picker | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control, its elements, and more.
 platform: WindowsForms
 control: ColorPickerUIAdv
 documentation: ug

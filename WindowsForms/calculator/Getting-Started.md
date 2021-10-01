@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Calculator control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Calculator control and more details.
+title: Getting Started with Windows Forms Calculator | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Windows Forms Calculator control, its elements, and more.
 platform: WindowsForms
 control: Calculator
 documentation: ug
@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet package in a Windows Forms application in the following link: 
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Create a simple application with Calculator
 

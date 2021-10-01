@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Office2007Form control | Syncfusion
+title: Getting Started with WinForms Office2007Form | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms Office2007Form control, its elements and more details.
 platform: WindowsForms
 control: Office2007 Form
@@ -17,7 +17,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Please find more details regarding how to install the nuget packages in windows form application in the below link:
  
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
 
 ## Creating simple application with Office2007Form
 
