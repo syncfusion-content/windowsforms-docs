@@ -94,3 +94,5 @@ this.superAccelerator1.Appearance = Syncfusion.Windows.Forms.Tools.Appearance.Of
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The complete sample project of the Keyboard Support is available in the [GitHub](https://github.com/SyncfusionExamples/syncfusion-winforms-radialmenu-examples/tree/main/Samples/Keyboard-Support).
