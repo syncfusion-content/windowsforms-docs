@@ -59,6 +59,110 @@ treeNode.Optioned = True
 
 ![TreeNodeAdv_Customization_Img1](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img1.jpg)
 
+### Customizing the hover appearance
+
+Hover state appearance of the option button can be customized using the below properties,
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{'[OptionButtonHoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBackColor)'|markdownify }}</td><td>
+Used to customize the hover background of the option button.</td></tr>
+<tr>
+<td>
+{{'[OptionButtonHoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverBorderColor)'|markdownify }}</td><td>
+Used to customize the hover border of the option button.</td></tr>
+<tr>
+<td>
+{{'[OptionButtonHoverColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_OptionButtonHoverColor)'|markdownify }}</td><td>
+Used to customize the checked hover of the option button.</td></tr>
+</table>
+
+This example illustrates how to customize the OptionButton hover color.
+
+{% tabs %}
+{% highlight c# %}
+
+public partial class Form2 : Form
+{
+    private TreeViewAdv treeViewAdv1;
+
+    public Form2()
+    {
+        InitializeComponent();
+        this.treeViewAdv1 = new TreeViewAdv();
+        this.treeViewAdv1.ItemHeight = 25;
+        this.treeViewAdv1.Location = new Point(100, 100);
+        this.treeViewAdv1.Size = new Size(270, 300);
+        this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
+        this.treeViewAdv1.SelfRelationRootValue = "";
+        this.treeViewAdv1.ShowOptionButtons = true;
+        this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ThemeName = "Office2019Colorful";
+
+        DataTable dataTable1 = new DataTable("Continent");
+        dataTable1.Columns.Add("Name", typeof(string));
+        dataTable1.Columns.Add("CountryID", typeof(string));
+        dataTable1.Columns.Add("ContinentID", typeof(string));
+        dataTable1.Columns.Add("Capital", typeof(string));
+        dataTable1.Columns.Add("IsActive", typeof(bool));
+        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
+        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
+        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
+        dataTable1.Rows.Add("North America", "4", "", "USA", false);
+        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
+        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
+        dataTable1.Rows.Add("UK", "8", "7", "London", false);
+        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
+        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
+        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
+        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
+        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
+        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
+        dataTable1.Rows.Add("London", "22", "21", "UK", false);
+        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
+        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
+        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
+        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
+        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
+        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
+
+        this.treeViewAdv1.DataMember = "Continent";
+        this.treeViewAdv1.DisplayMember = "Name";
+        this.treeViewAdv1.ParentMember = "ContinentID";
+        this.treeViewAdv1.ChildMember = "CountryID";
+        this.treeViewAdv1.ValueMember = "Capital";
+        this.treeViewAdv1.CheckedMember = "IsActive";
+        this.treeViewAdv1.DataSource = dataTable1;
+
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.OptionButtonHoverBackColor = Color.LightYellow;
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.OptionButtonHoverBorderColor = Color.Red;
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.OptionButtonHoverColor = Color.DarkRed;
+        this.Controls.Add(treeViewAdv1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![OptionButton hover color](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img31.jpg)
+
+> Note: The above properties are applicable only when setting the `ThemeName` to `Office2019Colorful` or `HighContrastTheme`.
+
 
 ## CheckBox
 We can display CheckBox for all nodes in `TreeViewAdv` by setting `ShowCheckBoxes`  property to True. The CheckBox for individual nodes can also be shown or hidden using `ShowCheckBox` property in `TreeNodeAdv`. 
@@ -157,6 +261,110 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 {% endtabs %}
 
 ![TreeNodeAdv_Customization_Img2](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
+
+### Customizing the hover appearance
+
+The hover state appearance of the checkBox which displayed inside the `TreeViewAdv` can be customized using the below properties,
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+{{'[CheckBoxHoverBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_CheckBoxHoverBackColor)'| markdownify }}</td><td>
+Used to customize the hover background of the checkbox.</td></tr>
+<tr>
+<td>
+{{'[CheckBoxHoverBorderColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_CheckBoxHoverBorderColor)'| markdownify }}</td><td>
+Used to customize the hover border of the checkbox.</td></tr>
+<tr>
+<td>
+{{'[HoverCheckedTickColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdvStyleInfo.html#Syncfusion_Windows_Forms_Tools_TreeNodeAdvStyleInfo_HoverCheckedTickColor)'| markdownify }}</td><td>
+Used to customize the checked hover of the checkbox.</td></tr>
+</table>
+
+This example illustrates how to customize the CheckBox hover color.
+
+{% tabs %}
+{% highlight c# %}
+
+public partial class Form2 : Form
+{
+    private TreeViewAdv treeViewAdv1;
+
+    public Form2()
+    {
+        InitializeComponent();
+        this.treeViewAdv1 = new TreeViewAdv();
+        this.treeViewAdv1.ItemHeight = 25;
+        this.treeViewAdv1.Location = new Point(100, 100);
+        this.treeViewAdv1.Size = new Size(270, 300);
+        this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
+        this.treeViewAdv1.SelfRelationRootValue = "";
+        this.treeViewAdv1.ShowCheckBoxes = true;
+        this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ThemeName = "Office2019Colorful";
+
+        DataTable dataTable1 = new DataTable("Continent");
+        dataTable1.Columns.Add("Name", typeof(string));
+        dataTable1.Columns.Add("CountryID", typeof(string));
+        dataTable1.Columns.Add("ContinentID", typeof(string));
+        dataTable1.Columns.Add("Capital", typeof(string));
+        dataTable1.Columns.Add("IsActive", typeof(bool));
+        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
+        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
+        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
+        dataTable1.Rows.Add("North America", "4", "", "USA", false);
+        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
+        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
+        dataTable1.Rows.Add("UK", "8", "7", "London", false);
+        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
+        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
+        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
+        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
+        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
+        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
+        dataTable1.Rows.Add("London", "22", "21", "UK", false);
+        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
+        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
+        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
+        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
+        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
+        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
+
+        this.treeViewAdv1.DataMember = "Continent";
+        this.treeViewAdv1.DisplayMember = "Name";
+        this.treeViewAdv1.ParentMember = "ContinentID";
+        this.treeViewAdv1.ChildMember = "CountryID";
+        this.treeViewAdv1.ValueMember = "Capital";
+        this.treeViewAdv1.CheckedMember = "IsActive";
+        this.treeViewAdv1.DataSource = dataTable1;
+
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.CheckBoxHoverBackColor = Color.LightYellow;
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.CheckBoxHoverBorderColor = Color.Red;
+        this.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.HoverCheckedTickColor = Color.DarkRed;
+        this.Controls.Add(treeViewAdv1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![CheckBox hover color](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img30.jpg)
+
+> Note: The above properties are applicable only when setting the `ThemeName` to `Office2019Colorful` or `HighContrastTheme`.
 
 ### Find CheckState changed
 
@@ -1430,6 +1638,172 @@ We can select nodes by three modes, which are
 If the SelectionMode is single, then SelectedNode and SelectedNodes holds the same node.
 
 > Note : This Property will be effective only when the SelectionMode is MultiSelectSameLevel or MultiSelectAll
+
+## Programmatic selection
+
+TreeViewAdv allows to select the items programmatically using both [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) and [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
+
+### SelectedItem
+
+When the selection mode is `Single`, programmatically select an item by setting the underlying object to the [`SelectedItem`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItem) property.
+
+{% tabs %}
+{% highlight c# %}
+
+public partial class Form2 : Form
+{
+    private TreeViewAdv treeViewAdv1;
+
+    public Form2()
+    {
+        InitializeComponent();
+        this.treeViewAdv1 = new TreeViewAdv();
+        this.treeViewAdv1.ItemHeight = 25;
+        this.treeViewAdv1.Location = new Point(100, 100);
+        this.treeViewAdv1.Size = new Size(270, 300);
+        this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
+        this.treeViewAdv1.SelfRelationRootValue = "";
+        this.treeViewAdv1.ShowCheckBoxes = true;
+        this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ThemeName = "Office2019Colorful";
+
+        DataTable dataTable1 = new DataTable("Continent");
+        dataTable1.Columns.Add("Name", typeof(string));
+        dataTable1.Columns.Add("CountryID", typeof(string));
+        dataTable1.Columns.Add("ContinentID", typeof(string));
+        dataTable1.Columns.Add("Capital", typeof(string));
+        dataTable1.Columns.Add("IsActive", typeof(bool));
+        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
+        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
+        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
+        dataTable1.Rows.Add("North America", "4", "", "USA", false);
+        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
+        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
+        dataTable1.Rows.Add("UK", "8", "7", "London", false);
+        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
+        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
+        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
+        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
+        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
+        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
+        dataTable1.Rows.Add("London", "22", "21", "UK", false);
+        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
+        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
+        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
+        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
+        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
+        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
+
+        this.treeViewAdv1.DataMember = "Continent";
+        this.treeViewAdv1.DisplayMember = "Name";
+        this.treeViewAdv1.ParentMember = "ContinentID";
+        this.treeViewAdv1.ChildMember = "CountryID";
+        this.treeViewAdv1.ValueMember = "Capital";
+        this.treeViewAdv1.CheckedMember = "IsActive";
+        this.treeViewAdv1.DataSource = dataTable1;
+
+        this.treeViewAdv1.SelectedItem = dataTable1.Rows[3];
+        this.Controls.Add(treeViewAdv1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![TreeNodeAdv_Customization_Img28](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img28.jpg)
+
+### SelectedItems
+
+When the selection mode is `MultiSelectSameLevel` or `MultiSelectAll`, programmatically select more than one item by adding the underlying object to the [`SelectedItems`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_SelectedItems) property.
+
+{% tabs %}
+{% highlight c# %}
+
+public partial class Form2 : Form
+{
+    private TreeViewAdv treeViewAdv1;
+
+    public Form2()
+    {
+        InitializeComponent();
+        this.treeViewAdv1 = new TreeViewAdv();
+        this.treeViewAdv1.ItemHeight = 25;
+        this.treeViewAdv1.Location = new Point(100, 100);
+        this.treeViewAdv1.Size = new Size(270, 300);
+        this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
+        this.treeViewAdv1.SelfRelationRootValue = "";
+        this.treeViewAdv1.ShowCheckBoxes = true;
+        this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ThemeName = "Office2019Colorful";
+
+        DataTable dataTable1 = new DataTable("Continent");
+        dataTable1.Columns.Add("Name", typeof(string));
+        dataTable1.Columns.Add("CountryID", typeof(string));
+        dataTable1.Columns.Add("ContinentID", typeof(string));
+        dataTable1.Columns.Add("Capital", typeof(string));
+        dataTable1.Columns.Add("IsActive", typeof(bool));
+        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
+        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
+        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
+        dataTable1.Rows.Add("North America", "4", "", "USA", false);
+        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
+        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
+        dataTable1.Rows.Add("UK", "8", "7", "London", false);
+        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
+        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
+        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
+        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
+        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
+        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
+        dataTable1.Rows.Add("London", "22", "21", "UK", false);
+        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
+        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
+        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
+        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
+        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
+        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
+
+        this.treeViewAdv1.DataMember = "Continent";
+        this.treeViewAdv1.DisplayMember = "Name";
+        this.treeViewAdv1.ParentMember = "ContinentID";
+        this.treeViewAdv1.ChildMember = "CountryID";
+        this.treeViewAdv1.ValueMember = "Capital";
+        this.treeViewAdv1.CheckedMember = "IsActive";
+        this.treeViewAdv1.DataSource = dataTable1;
+
+        BindingList<object> rows = new BindingList<object>();
+        rows.Add(dataTable1.Rows[0]);
+        rows.Add(dataTable1.Rows[1]);
+        rows.Add(dataTable1.Rows[13]);
+        treeViewAdv1.SelectedItems = rows;
+        this.Controls.Add(treeViewAdv1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![TreeNodeAdv_Customization_Img29](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img29.jpg)
 
 <b>Property Table</b>
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms TrackBar
 
-This section describes how to add [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control in a Windows Forms application and overview of its basic functionalities.
+This section describes how to add [Windows Forms TrackBar](https://www.syncfusion.com/winforms-ui-controls/trackbar) control in a Windows Forms application and overview of its basic functionalities.
 
 ## Assembly deployment
 

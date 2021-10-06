@@ -55,7 +55,7 @@ The **Package Manager Console** saves NuGet packages upgrade time since you don'
 
     ***Update specified Syncfusion WinForms NuGet package***
 
-    The below command will update the Syncfusion WinForms NuGet package in the default ASP.NET Core application
+    The below command will update the Syncfusion WinForms NuGet package in the default WinForms application
 
     ```Update-Package <Package Name>```
 

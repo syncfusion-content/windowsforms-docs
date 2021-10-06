@@ -34,7 +34,7 @@ Arguments </th></tr>
 
 ## How to disable hyperlink navigation in PDF Viewer
 
-You can disable the hyperlink navigation in PDF viewer control by setting the value of `Handled` in the `HyperlinkClickedEventArgs` parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
+You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
 Please refer to the following example for more details.
 
 {% tabs %}
@@ -83,11 +83,11 @@ End Sub
 
 ## How to retrieve the hyperlink details from PDF Viewer
 
-You can retrieve the hyperlink details from PDF Viewer by using `HyperlinkClickedEventArgs` when the hyperlink is clicked and by using `HyperlinkMouseOverEventArgs` when the mouse is over the hyperlink.
+You can retrieve the hyperlink details from PDF Viewer by using [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) when the hyperlink is clicked and by using [HyperlinkMouseOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs.html) when the mouse is over the hyperlink.
 
 ### HyperlinkClicked Event
 
-You can acquire the details of the hyperlink which is clicked in the PDF file by using the `HyperlinkClickedEventArgs` in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event.
+You can acquire the details of the hyperlink which is clicked in the PDF file by using the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) event.
 Please refer to the following example for more details.
 
 {% tabs %}
@@ -123,7 +123,7 @@ End Sub
 
 ### HyperlinkMouseOver Event
 
-You can acquire the details of the hyperlink which is hovered in the PDF file by using the `HyperlinkMouseOverEventArgs` in the `HyperlinkMouseOver` event. 
+You can acquire the details of the hyperlink which is hovered in the PDF file by using the [HyperlinkMouseOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs.html) in the [HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkMouseOver) event. 
 Please refer to the below example for more details.
 
 {% tabs %}
@@ -145,7 +145,7 @@ string URI = e.Uri;
 
 ## Redirecting to a different Hyperlink
 
-You can navigate to different hyperlink irrespective of the hyperlink clicked. To redirect a hyperlink, you need to pass the value of `Handled` parameter as true to stop the navigation of the hyperlink clicked. Then open the desired hyperlink that you want to navigate instead of the hyperlink clicked. 
+You can navigate to different hyperlink irrespective of the hyperlink clicked. To redirect a hyperlink, you need to pass the value of [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) parameter as true to stop the navigation of the hyperlink clicked. Then open the desired hyperlink that you want to navigate instead of the hyperlink clicked. 
 Please refer to the following example for more details.
 
 {% tabs %}
