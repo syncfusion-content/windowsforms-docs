@@ -31,6 +31,7 @@ Arguments </th></tr>
 </tr>
 </table>
 
+N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html). Also, We have renamed the `HyperLinkClicked` and `HyperLinkMouseOver` events to [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) and [HyperlinkMouseOver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_HyperlinkMouseOver) respectively. Also, We have introduced [HyperlinkMouseOverEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs.html) to view the details of hyperlink when mouse is over.
 
 ## How to disable hyperlink navigation in PDF Viewer
 
