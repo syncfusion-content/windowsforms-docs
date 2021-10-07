@@ -38,6 +38,8 @@ N> From the version 19.3, The `HyperLinkClickedEventArgs` is renamed to [Hyperli
 You can disable the hyperlink navigation in PDF viewer control by setting the value of [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) in the [HyperlinkClickedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html) parameter as true in the [HyperlinkClicked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.HyperLinkClickedEventHandler.html) Event which is available in the PdfViewerControl and PdfDocumentView class. 
 Please refer to the following example for more details.
 
+N> From the version 19.3, We have introduced [Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs.html#Syncfusion_Windows_Forms_PdfViewer_HyperlinkClickedEventArgs_Handled) property to diable the navigation of hyperlink.
+
 {% tabs %}
 {% highlight c# %}
 
