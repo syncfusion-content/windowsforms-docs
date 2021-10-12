@@ -37,7 +37,7 @@ public Boolean CustomFilter(Object obj)
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img1.png)
+![ListView Filtering1](Filtering_images/Filtering_img1.png)
 
 ## Filter based on multiple criteria
 The SfListView allows filtering the items based on multiple criteria.
@@ -64,7 +64,7 @@ public Boolean FilterOnMultipleCriteria (Object obj)
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img2.png)
+![ListView Filtering2](Filtering_images/Filtering_img2.png)
 
 ## Getting the filtered data                                                                                         
 You can get the filtered items from the view and modify it in the [SfListView.View.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event. When filter is applied, the filtered items are available in the [SfListView.View.DisplayItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems).
@@ -142,4 +142,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img3.png)
+![ListView Filtering3](Filtering_images/Filtering_img3.png)
