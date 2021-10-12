@@ -27,19 +27,19 @@ You can navigate to the desired bookmark destination using the [GoToBookmark](ht
 {% tabs %}
 {% highlight c# %}
 
-        void GoToBookmark()
-        {
-            PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
+void GoToBookmark()
+{
+	PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
 
-            //Get the complete bookmarks in the PDF.
-            PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
+	//Get the complete bookmarks in the PDF.
+	PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
 
-            //In this example, we get the first bookmark in the PDF.
-            PdfBookmark firstBookmark = bookmarks[0];
+	//In this example, we get the first bookmark in the PDF.
+	PdfBookmark firstBookmark = bookmarks[0];
 
-            //Navigates to the first bookmark present in the PDF.
-            pdfViewer.GoToBookmark(firstBookmark);
-        }
+	//Navigates to the first bookmark present in the PDF.
+	pdfViewer.GoToBookmark(firstBookmark);
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -49,23 +49,23 @@ You can also navigate to the child bookmarks. Refer to the following code sample
 {% tabs %}
 {% highlight c# %}
 
-        void GoToChildBookmark()
-        {
-            PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
+void GoToChildBookmark()
+{
+	PdfLoadedDocument pdfLoadedDocument = pdfViewer.LoadedDocument;
 
-            //Get the complete bookmarks in the PDF.
-            PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
+	//Get the complete bookmarks in the PDF.
+	PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
 
-            //Gets the fourth bookmark in the PDF.
-            PdfBookmark thirdBookmark = bookmarks[3];
+	//Gets the fourth bookmark in the PDF.
+	PdfBookmark thirdBookmark = bookmarks[3];
 
-            //Check whether it has child bookmarks.
-            if (thirdBookmark.Count > 0)
-            {
-                //Navigates to the first child of the fourth bookmark in the PDF.
-                pdfViewer.GoToBookmark(bookmarks[3][0]);
-            }
-        }
+	//Check whether it has child bookmarks.
+	if (thirdBookmark.Count > 0)
+	{
+		//Navigates to the first child of the fourth bookmark in the PDF.
+		pdfViewer.GoToBookmark(bookmarks[3][0]);
+	}
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -75,11 +75,11 @@ You need to call the above methods after the document is loaded. The [DocumentLo
 {% tabs %}
 {% highlight c# %}
 
-            // wire the document loaded event.
-            pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+// wire the document loaded event.
+pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
 
-            // load the PDF.
-            pdfViewer.Load("../../Data/C_Sharp_Succinctly.pdf");
+// load the PDF.
+pdfViewer.Load("../../Data/C_Sharp_Succinctly.pdf");
 
 {% endhighlight %}
 {% endtabs %}
@@ -89,11 +89,11 @@ After the document is loaded, you can execute the bookmark navigation logic as s
 {% tabs %}
 {% highlight c# %}
 
-        private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
-        {
-            //Call the logic to go to bookmark
-            GoToBookmark();
-        }
+private void PdfViewer_DocumentLoaded(object sender, EventArgs args)
+{
+	//Call the logic to go to bookmark
+	GoToBookmark();
+}
 
 {% endhighlight %}
 {% endtabs %}
