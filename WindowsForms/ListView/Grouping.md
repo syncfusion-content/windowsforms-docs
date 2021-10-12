@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping
-description: This section explains about the Grouping support in SfListView.
+title: Grouping in Windows Forms ListView Control | Syncfusion
+description: This section explains about the Grouping support in Syncfusion Windows Forms ListView (SfListView) Control, its elements, and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Grouping
+# Grouping in Windows Forms ListView
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic grouping
