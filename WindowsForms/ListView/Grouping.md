@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping
-description: This section explains about the Grouping support in SfListView.
+title: Grouping in Windows Forms ListView Control | Syncfusion
+description: This section explains about the Grouping support in Syncfusion Windows Forms ListView (SfListView) Control, its elements, and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Grouping
+# Grouping in Windows Forms ListView
 A group represents collection of items belongs to a category. When grouping is applied, the data will be organized into different groups based on the key values. Each group is identified by its `Key` by which you can get the underlying data in the group.
 
 ## Programmatic grouping
@@ -29,7 +29,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img1.png)
+![ListView Grouping1](Grouping_images/Grouping_img1.png)
 
 ## Custom grouping             
 The SfListView supports grouping the items based on custom logic applied to the [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupComparer) or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_Comparer) property added to the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) collection.
@@ -107,7 +107,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img2.png)
+![ListView Grouping2](Grouping_images/Grouping_img2.png)
 
 ## Grouping based on first character
 The SfListView supports grouping the items based on first character of the value assigned to the property name in [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) by using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector).
@@ -137,7 +137,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img3.png)
+![ListView Grouping3](Grouping_images/Grouping_img3.png)
 
 ## Grouping based on more than one property in the data object
 Group the items by binding multiple properties to the property name of [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html) using [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector) in which the group header items can be created with multiple data model object effectively.
@@ -167,7 +167,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img4.png)
+![ListView Grouping4](Grouping_images/Grouping_img4.png)
 
 ## Grouping by ignoring case sensitivity
 Group the items by ignoring case sensitivity using the [KeySelector](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector) property in the [GroupDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.GroupDescriptor.html). While returning the KeySelector, convert the required property name in the data model to group either as upper or lower case. The items will be grouped based on the KeySelector with returned case sensitive.
@@ -189,7 +189,7 @@ sfListView1.View.GroupDescriptors.Add(New Syncfusion.DataSource.GroupDescriptor(
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img5.png)
+![ListView Grouping5](Grouping_images/Grouping_img5.png)
 
 ## Group Expand and Collapse                 
 By default, the groups will be in expanded state in the SfListView. You can expand or collapse the group at runtime by tapping the group header, the group gets collapse if the group is in expand state and vice-versa.
@@ -307,4 +307,4 @@ sfListView1.View.SortDescriptors.Add(New Syncfusion.DataSource.SortDescriptor() 
 {% endhighlight %}
 {% endtabs %}
 
-![](Grouping_images/Grouping_img6.png)
+![ListView Grouping6](Grouping_images/Grouping_img6.png)
