@@ -25,7 +25,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    ![Choose Syncfusion Windows Forms Application via Syncfusion menu](Project-Template-images\Syncfusion_Menu_ProjectTemplate.png)
 
-   N> In Visual Studio 2017 or lower, the Syncfusion menu is available in the Visual Studio menu.
+   N> In Visual Studio 2017 or lower, you can see the Syncfusion menu directly in the Visual Studio menu.
 
    **Option 2:**  
     Choose **File -> New -> Project**. Opens a new dialog to create a new project. You can obtain the templates provided by Syncfusion for WinForms by filtering the project type with Syncfusion or by using the Syncfusion keyword in the search option
@@ -52,11 +52,11 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    **Project Type:** Select the project type, either .NET Framework or .NET Core.
 
-   N> Project type selection option will be available only in Visual Studio 2019 Syncfusion Windows Forms Project template configuration. The .NET Core 3.1 and .NET 5.0 option will be listed in project type only when the .NET Core 3.1 and .NET 5.0 setup has been installed.
+   N> Project type selection option will be available only from Visual Studio 2019 and later in Syncfusion Windows Forms Project template configuration. The .NET Core 3.1 and .NET 5.0 option will be listed in project type only when the .NET Core 3.1 and .NET 5.0 setup has been installed.
 
    **Language:** Select the language, either CSharp or VB.
 
-   **Reference From:** Choose the assembly location from where it is going to be added to the project.
+   **Reference From:** Choose the assembly location such as NuGet, GAC Location, or Essential Studio installed location, from where the assembly is added to the project.
 
    N> Installed location and GAC option will be available only when the Syncfusion Essential Windows Forms setup has been installed. You can use NuGet option without installing the Syncfusion Essential Windows Forms setup. Also, the GAC option will not be available when you choose .NET 5.0 and .NET Core 3.1 from project type option in Visual Studio 2019.
 

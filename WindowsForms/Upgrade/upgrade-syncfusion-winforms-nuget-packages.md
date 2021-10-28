@@ -41,7 +41,7 @@ There is no distinct command for the update procedure in the .NET CLI. Unless yo
 
 To specify a version, add the -v parameter:
 
-```dotnet add package Syncfusion.Grid.Windows -v 19.2.0.59.```
+```dotnet add package Syncfusion.Grid.Windows -v 19.2.0.59```
 
 ## Upgrade NuGet packages through Package Manager Console
 

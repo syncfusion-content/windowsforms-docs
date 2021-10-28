@@ -23,6 +23,8 @@ The steps below assist you to how to install the Syncfusion WinForms extensions 
 
 1. Open the Visual Studio 2019.
 
+    N>  In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates
+
 2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
 
 3. On the left, click the **Online** tab and type **"Syncfusion Windows"** in the **search box**.
