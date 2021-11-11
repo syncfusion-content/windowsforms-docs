@@ -192,7 +192,7 @@ public Form1()
     var data = new OrderInfoCollection();
     sfDataGrid.DataSource = data.OrdersListDetails;
     
-    sfDataGrid.Columns["OrderDate"].Format = "dd/mm/yyyy";
+    sfDataGrid.Columns["OrderDate"].Format = "dd/MM/yyyy";
     sfDataGrid.Columns["OrderDate"].FormatProvider = new CustomFormatter();
 }
 
