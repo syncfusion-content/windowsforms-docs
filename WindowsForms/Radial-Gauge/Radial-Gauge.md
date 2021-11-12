@@ -1049,20 +1049,20 @@ When a large range of values is assigned to the RadialGauge controls at run time
 {% highlight C# %}
 
 this.radialGauge1.SuspendLayout();
-this.radialGauge1.MajorDifference = 3000F;
-this.radialGauge1.MaximumValue = 3200F;
-this.radialGauge1.MinimumValue = 1000F;
-this.radialGauge1.MinorDifference = 250F;
+this.radialGauge1.MaximumValue = 50000F;
+this.radialGauge1.MinimumValue = 0F;
+this.radialGauge1.MajorDifference = 5000F;
+this.radialGauge1.MinorDifference = 500F;
 this.radialGauge1.ResumeLayout(true);
 
 {% endhighlight %}
 {% highlight VB %}
 
 Me.radialGauge1.SuspendLayout()
-Me.radialGauge1.MajorDifference = 3000F
-Me.radialGauge1.MaximumValue = 3200F
-Me.radialGauge1.MinimumValue = 1000F
-Me.radialGauge1.MinorDifference = 250F
+Me.radialGauge1.MaximumValue = 50000F
+Me.radialGauge1.MinimumValue = 0F
+Me.radialGauge1.MajorDifference = 5000F
+Me.radialGauge1.MinorDifference = 500F
 Me.radialGauge1.ResumeLayout(True)
 
 {% endhighlight %}
