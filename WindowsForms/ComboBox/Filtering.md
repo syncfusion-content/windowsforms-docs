@@ -198,3 +198,5 @@ N> The [RefreshFilter()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 {% endtabs %}
 
 ![Filtering_img1](Filtering_images/Filtering_img1.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-filter-the-dropdown-items-in-Winforms-SfComboBox) 
