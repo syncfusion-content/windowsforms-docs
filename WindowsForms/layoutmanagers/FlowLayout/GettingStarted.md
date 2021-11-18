@@ -15,7 +15,7 @@ This section explains how to add the FlowLayout control in a Windows Forms appli
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#flowlayout) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in a Windows Forms application.
 
 ## Adding the FlowLayout control via designer
 

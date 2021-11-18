@@ -17,7 +17,7 @@ Refer [Control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ## Creating Application with FontComboBox
 

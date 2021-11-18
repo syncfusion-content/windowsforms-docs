@@ -15,7 +15,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 You can find more details about installing the NuGet packages in a Windows Forms application in the following link: 
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 ### Create a simple application with DoubleTextBox
 
