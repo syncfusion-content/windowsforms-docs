@@ -19,7 +19,7 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 Find more details about how to install the nuget packages in Windows Forms application in the following link:
 
-[How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages)
+[How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages)
 
 **Creating simple application with docking manager**
 

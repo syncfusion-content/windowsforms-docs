@@ -14,7 +14,7 @@ This section describes how to add [GroupView](https://help.syncfusion.com/cr/win
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#groupview) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding GroupView control via designer
 

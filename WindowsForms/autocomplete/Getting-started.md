@@ -15,7 +15,7 @@ This section provides a quick overview for working with the [AutoComplete](https
 
 Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#autocomplete) section to get the list of assemblies or NuGet package that needs to be added as reference to use the component in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing nuget packages in a Windows Forms application.
 
 ## Creating Application with AutoComplete
 
