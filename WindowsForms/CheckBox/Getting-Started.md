@@ -15,7 +15,7 @@ This section gives detailed description on Getting Started of [CheckBoxAdv](http
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#checkboxadv) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding CheckBoxAdv control via designer
 

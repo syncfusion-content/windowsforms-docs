@@ -15,7 +15,7 @@ This section explains how to add `SplashPanel` in a Windows Forms and overview o
 
 Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#splashpanel) section to get the assemblies or NuGet package needs to be added as reference to use the control in any application.
 
-Find more details about installing the nuget packages in a Windows Forms application in the following link [How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages).
+Find more details about installing the nuget packages in a Windows Forms application in the following link [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages).
 
 ## Creating the project
 

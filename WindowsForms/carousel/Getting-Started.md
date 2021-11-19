@@ -15,7 +15,7 @@ This section briefly describes how to create a Windows Forms project in Visual S
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#carousel) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application. 
 
-Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details about installing NuGet packages in an application.
+Refer to this [documentation](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details about installing NuGet packages in an application.
 
 ## Adding Carousel control via designer
 

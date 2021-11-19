@@ -15,7 +15,7 @@ This section describes how to configure a `HTMLUIControl` in a Windows Forms app
 
 Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#htmluicontrol) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application. 
 
-Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) link.
+Get more details regarding how to install the nuget packages in windows form application in the [How to install nuget packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) link.
 
 ## Creating simple application with HTMLUIControl
 
