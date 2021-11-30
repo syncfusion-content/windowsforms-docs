@@ -64,7 +64,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderFooterText.png)
+![WinForms Listview Header footer Text](HeaderFooter_images/HeaderFooterText.png)
 
 ## Header and footer height
 
@@ -81,7 +81,7 @@ Me.sfListView1.FooterHeight = 30
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderFooterHeight.png)
+![WinForms Listview Header Footer Height](HeaderFooter_images/HeaderFooterHeight.png)
 
 ## Load custom control in header and footer
 
@@ -342,7 +342,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Winforms listview Header CustomControl](HeaderFooter_images/HeaderCustomControl.png)
+![WinForms Listview Header Custom Control](HeaderFooter_images/HeaderCustomControl.png)
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfListView\Header Footer
