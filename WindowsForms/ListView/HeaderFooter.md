@@ -458,7 +458,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/FooterWithImage.png)
+![WinForm Listview FooterWithImage](HeaderFooter_images/FooterWithImage.png)
 
 ## Showing summary in footer
 
