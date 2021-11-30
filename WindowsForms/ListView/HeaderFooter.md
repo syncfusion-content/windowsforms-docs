@@ -422,7 +422,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderWithImage.png)
+![WinForms Listview Header with Image](HeaderFooter_images/HeaderWithImage.png)
 
 ## Loading image for footer
 
