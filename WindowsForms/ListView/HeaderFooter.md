@@ -486,4 +486,4 @@ Private Sub sfListView1_DrawItem(ByVal sender As Object, ByVal e As Syncfusion.W
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](HeaderFooter_images/SummaryText.png)
+![WinForms Listview Summary Text](HeaderFooter_images/SummaryText.png)
