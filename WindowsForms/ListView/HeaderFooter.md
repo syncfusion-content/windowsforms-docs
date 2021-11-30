@@ -1,4 +1,4 @@
----
+F---
 layout: post
 title: Header and footer support | ListView for Windows Forms | Syncfusion
 description: This section explains about the Header and Footer support in SfListView.
@@ -342,7 +342,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderCustomControl.png)
+![Winforms listview Header CustomControl](HeaderFooter_images/HeaderCustomControl.png)
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfListView\Header Footer
