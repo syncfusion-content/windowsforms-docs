@@ -1,7 +1,7 @@
 F---
 layout: post
-title: Header and footer support | ListView for Windows Forms | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion SfListView.its element and more.
+title: Header and footer in WinForms Listview  | Syncfusion
+description: Learn here all about Header and Footer support in Syncfusion WinForms Listview (SfListView) control.its element and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
