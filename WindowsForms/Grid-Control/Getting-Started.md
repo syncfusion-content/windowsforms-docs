@@ -75,7 +75,7 @@ If the user wants the support for filtering, sorting, grouping, summary calculat
 
 ## Assembly Deployment
 
-Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridcontrol) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) needs to be added as reference to use the control in any application. 
+Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#gridcontrol) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) needs to be added as reference to use the control in any application. 
 
 ## Configuring a Simple GridControl
 

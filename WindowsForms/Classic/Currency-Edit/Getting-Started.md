@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#currencyedit) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application.
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding the CurrencyEdit control via designer
 

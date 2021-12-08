@@ -54,7 +54,7 @@ N> You can get Syncfusion Windows Forms (.NET Core) controls assemblies from `ne
 
 ### Through NuGet Package
 
-[Check here](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to find more details regarding how to install the NuGet packages in Windows Forms application.  
+[Check here](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to find more details regarding how to install the NuGet packages in Windows Forms application.  
 
 ### Example: Adding ButtonAdv control through code
 

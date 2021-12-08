@@ -14,7 +14,7 @@ This section provides a quick overview for working with the [Clock](https://help
 
 Refer to the [Control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#clock) section to get the list of assemblies or details of NuGet package that needs to be added as a reference to use the control in any application. 
 
-Click [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Creating Application with Clock
 In this walk through, users will create WinForms application that contains [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control.

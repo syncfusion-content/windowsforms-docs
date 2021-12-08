@@ -13,7 +13,7 @@ This section guides getting started with Windows application, controls, etc.
 
 ## Assembly deployment
 
-Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) that should be added as reference to use the control in any application. 
+Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#schedule) section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) that should be added as reference to use the control in any application. 
 
 ## Creating application with the ScheduleControl
 

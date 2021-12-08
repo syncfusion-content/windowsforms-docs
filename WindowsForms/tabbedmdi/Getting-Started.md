@@ -15,7 +15,7 @@ This section explains how to design a **TabbedMDIManager** control in a Windows 
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/windowsforms/control-dependencies#tabbedmdimanger) section to get the list of assemblies or details of NuGet package that needs to be added as reference to use the control in any application.
 
-Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/visual-studio-integration/nuget-packages) to learn how to install nuget packages in a Windows Forms application.
+Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/install-nuget-packages) to learn how to install nuget packages in a Windows Forms application.
 
 ## Adding TabbedMDIManger control via designer
 
