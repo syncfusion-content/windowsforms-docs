@@ -32,7 +32,7 @@ Follow the given steps to add the Syncfusion item in Visual Studio.
 
    ![Select the Form from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-3.png)
 
-   **Assembly From:**  Choose the assembly location, from where the assembly is added to the project.
+   **Assembly From:**  Choose an assembly reference option such as GAC location, Essential Studio installed location, or NuGet packages, to specify where from the required Syncfusion assemblies are added to the project.
 
    ![Select the required assembly location from the Syncfusion Item Template Wizard](Item-Template-images\Syncfusion-Item-Template-Gallery-5.png)
 
@@ -63,7 +63,7 @@ Syncfusion Project Template can also be added from the Visual Studio Item Templa
 
    ![Syncfusion Project Template can be also add from the Visual Studio Item Template via Syncfusion Menu](Item-Template-images\Syncfusion_Menu_ItemTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+   N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2**
    Right-click the Windows Forms Project, select **Add > New Item**, and then navigate to **Visual C# Items or VB Items > Syncfusion > Windows**. Refer to the following screenshot for more information.

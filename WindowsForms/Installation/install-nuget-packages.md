@@ -54,7 +54,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
     **For Example:**
     dotnet add package Syncfusion.Grid.Windows
 
-    > If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.Grid.Windows -v 19.2.0.57.
+    > If you don’t provide a version flag, this command will be upgrading to the latest version by default. To specify a version, add the -v parameter: dotnet add package Syncfusion.Grid.Windows -v 19.2.0.57
 
 3. Examine the Syncfusion WinForms project file after the command has completed to ensure that the Syncfusion WinForms package was installed. To see the added reference, open the .csproj file.
 
