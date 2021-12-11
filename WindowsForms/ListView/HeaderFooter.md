@@ -366,7 +366,7 @@ sfListView1.Style.HeaderItemStyle.Font = New Font("Segoe UI Semibold", 11)
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderAppearance.png)
+![WinForm ListView Header Appearance](HeaderFooter_images/HeaderAppearance.png)
 
 ## Footer appearance customization
 
@@ -387,7 +387,7 @@ sfListView1.Style.FooterItemStyle.Font = New Font("Segoe UI Semibold", 11)
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/FooterAppearance.png)
+![WinForm Listview Footer Appearance](HeaderFooter_images/FooterAppearance.png)
 
 ## Loading image for header
 
@@ -458,7 +458,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/FooterWithImage.png)
+![WinForm Listview Footer with image](HeaderFooter_images/FooterWithImage.png)
 
 ## Showing summary in footer
 
