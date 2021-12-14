@@ -17,8 +17,6 @@ You can upgrade to our latest version from any installed Syncfusion version.
 
 1.  In Visual Studio go to Extensions -> Manage Extensions -> Updates and find the Syncfusion WinForms extension.
 
-    N> In Visual Studio 2017 or lower, go to Tools -> Extensions and Updates.
-
 2.  Then, click on the Update button to update the extension.
 
     ![Update WinForms Extensions](images/UpdateExtensionUI.png)
