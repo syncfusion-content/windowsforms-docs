@@ -25,8 +25,8 @@ Our 30-day trial can be downloaded in two ways.
 ### Download Free Trial Setup
 
 1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the Windows Forms platform.
-2. After completing the required form or logging in with your registered Syncfusion account, you can download the Windows Forms trial installer from the confirmation page. (See the screenshot below.) 
-   as shown in below screenshot
+2. After completing the required form or logging in with your registered Syncfusion account, you can download the Windows Forms trial installer from the confirmation page. (as shown in below screenshot.)
+
    ![Trial and downloads of Syncfusion Essential Studio](download-images/trial-confirmation.png)
    
 3. With a trial license, only the latest version’s trial installer can be downloaded.
