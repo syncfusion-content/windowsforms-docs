@@ -57,6 +57,6 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
    N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox. 
    * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}.
    
-## Configuring toolbox in Visual Studio 2022   
+## Configuring toolbox .NET Framework in Visual Studio 2022   
 
-From 2021 Volume 3, Syncfusion started providing toolbox support for .NET framework in Visual Studio 2022 Toolbox. After installing the Syncfusion Windows Forms installer, Syncfusion controls will be automatically configured in the Visual Studio 2022 toolbox for Windows Forms projects.
+From 2021 Volume 4, Syncfusion started providing toolbox support for .NET Framework in Visual Studio 2022 Toolbox. After installing the Syncfusion Windows Forms installer, Syncfusion controls will be automatically configured in the Visual Studio 2022 toolbox for Windows Forms .NET Framework projects.
