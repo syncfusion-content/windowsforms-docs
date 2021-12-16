@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms xptoolbar control | Syncfusion
+title: Getting Started with WinForms ButtonAdv (Classic) control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: ButtonAdv
