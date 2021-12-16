@@ -29,7 +29,7 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+   N> From Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
 2. Toolbox Installer will be opened.
 
@@ -45,6 +45,7 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
    * Install VS2015 – Configures Framework 4.6 Syncfusion controls in VS 2015 toolbox.
    * Install VS2017 – Configures Framework 4.6 Syncfusion controls in VS 2017 toolbox.
    * Install VS2019 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
+   * Install VS2022 – Configures Framework 4.6 Syncfusion controls in VS 2019 toolbox
    
     N> You can also configure Syncfusion controls from a lower version Framework assembly to higher version of Visual Studio.
    
@@ -53,7 +54,8 @@ Use the following steps to add the Syncfusion WinForms controls through the Sync
    ![Toolbox Installer](Toolbox-Configuration_images/Toolbox-Configuration_img3.png)
    
    
-   N> * You must reset the toolbox, when the installed controls are not reflected properly in the Toolbox. * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}.
+   N> * If your installed controls are not reflected properly in the Visual Studio Toolbox, you'll have to reset the Toolbox. 
+   * This tool configures only the controls that are located under {Installed Location}\Assemblies\{Framework version}.
    
 ## Configuring toolbox in Visual Studio 2022   
 
