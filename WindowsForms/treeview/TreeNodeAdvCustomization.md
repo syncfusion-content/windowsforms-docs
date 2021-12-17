@@ -176,6 +176,8 @@ public partial class Form2 : Form
 
 ![Draw custom option button](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-option-button.png)
 
+> Note: [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-draw-custom-checkbox-and-radio-button-in-Winforms-TreeViewAdv)
+
 ### Customizing the hover appearance
 
 Hover state appearance of the option button can be customized using the below properties,
@@ -520,6 +522,8 @@ public partial class Form2 : Form
 {% endtabs %}
 
 ![Draw custom checkbox](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-checkbox.png)
+
+> Note: [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-draw-custom-checkbox-and-radio-button-in-Winforms-TreeViewAdv)
 
 ### Customizing the hover appearance
 
