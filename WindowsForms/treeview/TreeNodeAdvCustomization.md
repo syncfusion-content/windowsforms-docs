@@ -61,7 +61,9 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to `true` while drawing the custom option button.
+The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option buttons inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the [DrawTreeViewAdvNodeEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) property to `true` while drawing the custom option button.
+
+> Note:  If [DrawTreeViewAdvNodeEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) property is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual radio button of the node.       
 
 This example illustrates how to draw the custom option button.
 
@@ -85,50 +87,49 @@ public partial class Form2 : Form
         this.treeViewAdv1.ShowOptionButtons = true;
         this.treeViewAdv1.ThemeName = "Office2019Colorful";
 
-        DataTable dataTable1 = new DataTable("Continent");
-        dataTable1.Columns.Add("Name", typeof(string));
-        dataTable1.Columns.Add("CountryID", typeof(string));
-        dataTable1.Columns.Add("ContinentID", typeof(string));
-        dataTable1.Columns.Add("Capital", typeof(string));
-        dataTable1.Columns.Add("IsActive", typeof(bool));
-        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
-        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
-        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
-        dataTable1.Rows.Add("North America", "4", "", "USA", false);
-        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
-        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
-        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
-        dataTable1.Rows.Add("UK", "8", "7", "London", false);
-        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
-        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
-        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
-        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
-        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
-        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
-        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
-        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
-        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
-        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
-        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
-        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
-        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
-        dataTable1.Rows.Add("London", "22", "21", "UK", false);
-        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
-        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
-        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
-        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
-        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
-        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
-        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
-        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
-
+        DataTable continentTable = new DataTable("Continent");
+        continentTable.Columns.Add("Name", typeof(string));
+        continentTable.Columns.Add("CountryID", typeof(string));
+        continentTable.Columns.Add("ContinentID", typeof(string));
+        continentTable.Columns.Add("Capital", typeof(string));
+        continentTable.Columns.Add("IsActive", typeof(bool));
+        continentTable.Rows.Add("Asia", "1", "", "Asia", true);
+        continentTable.Rows.Add("India", "2", "1", "Delhi", false);
+        continentTable.Rows.Add("China", "3", "1", "Beijing", true);
+        continentTable.Rows.Add("North America", "4", "", "USA", false);
+        continentTable.Rows.Add("United States", "5", "4", "New York", true);
+        continentTable.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        continentTable.Rows.Add("Europe", "7", "", "EU", true);
+        continentTable.Rows.Add("UK", "8", "7", "London", false);
+        continentTable.Rows.Add("Russia", "9", "7", "Moscow", true);
+        continentTable.Rows.Add("Africa", "10", "", "SA", false);
+        continentTable.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        continentTable.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        continentTable.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        continentTable.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        continentTable.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        continentTable.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        continentTable.Rows.Add("New York", "17", "5", "NY", true);
+        continentTable.Rows.Add("Albany", "18", "17", "AL", false);
+        continentTable.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        continentTable.Rows.Add("CapeTown", "20", "19", "Town", false);
+        continentTable.Rows.Add("England", "21", "8", "ENG", true);
+        continentTable.Rows.Add("London", "22", "21", "UK", false);
+        continentTable.Rows.Add("Shanghai", "23", "3", "SH", true);
+        continentTable.Rows.Add("Republics", "24", "9", "Repb", false);
+        continentTable.Rows.Add("Kazan", "25", "24", "Kz", true);
+        continentTable.Rows.Add("Victoria", "26", "12", "VC", false);
+        continentTable.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        continentTable.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        continentTable.Rows.Add("Ontario", "29", "6", "Ont", true);
+        continentTable.Rows.Add("Toronto", "30", "29", "TR", true);
         this.treeViewAdv1.DataMember = "Continent";
         this.treeViewAdv1.DisplayMember = "Name";
         this.treeViewAdv1.ParentMember = "ContinentID";
         this.treeViewAdv1.ChildMember = "CountryID";
         this.treeViewAdv1.ValueMember = "Capital";
         this.treeViewAdv1.CheckedMember = "IsActive";
-        this.treeViewAdv1.DataSource = dataTable1;
+        this.treeViewAdv1.DataSource = continentTable;
 
         this.treeViewAdv1.DrawNodeCheckBox += treeViewAdv1_DrawCustomCheckBox;
         this.Controls.Add(treeViewAdv1);
@@ -139,8 +140,8 @@ public partial class Form2 : Form
         if (e.Node.CheckBox != null && e.Node.OptionButton.Visible)
         {
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            Rectangle rectangle = e.Bounds;
-            rectangle.Inflate(-1, -1);
+            Rectangle checkboxBounds = e.Bounds;
+            checkboxBounds.Inflate(-1, -1);
             Pen outerCircle = new Pen(Color.Red);
             SolidBrush innerCircle = new SolidBrush(Color.Red);
 
@@ -155,14 +156,14 @@ public partial class Form2 : Form
                 innerCircle = new SolidBrush(Color.DarkBlue);
             }
 
-            e.Graphics.FillEllipse(new SolidBrush(Color.White), rectangle);
-            e.Graphics.DrawEllipse(outerCircle, rectangle);
-            rectangle.Inflate(-1, -1);
+            e.Graphics.FillEllipse(new SolidBrush(Color.White), checkboxBounds);
+            e.Graphics.DrawEllipse(outerCircle, checkboxBounds);
+            checkboxBounds.Inflate(-1, -1);
             outerCircle.Dispose();
             if (e.State == ButtonState.Checked)
             {
-                rectangle.Inflate(-2, -2);
-                e.Graphics.FillEllipse(innerCircle, rectangle);
+                checkboxBounds.Inflate(-2, -2);
+                e.Graphics.FillEllipse(innerCircle, checkboxBounds);
                 innerCircle.Dispose();
             }
         }
@@ -174,8 +175,6 @@ public partial class Form2 : Form
 {% endtabs %}
 
 ![Draw custom option button](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-option-button.png)
-
-> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is `false`, then the `TreeViewAdv` will automatically draw the usual radio button of the node.       
 
 ### Customizing the hover appearance
 
@@ -380,9 +379,11 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ![TreeNodeAdv_Customization_Img2](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img2.jpg)
 
-### Custom checkbox
+### Draw custom checkbox
 
-The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to `true` while drawing the custom checkbox.
+The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option buttons inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the [DrawTreeViewAdvNodeEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) property to `true` while drawing the custom checkbox.
+
+> Note:  If [DrawTreeViewAdvNodeEventArgs.Handled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) property is `false`, then the `TreeViewAdv` will automatically draw the usual checkbox of the node.     
 
 This example illustrates how to draw the custom checkbox.
 
@@ -406,42 +407,42 @@ public partial class Form2 : Form
         this.treeViewAdv1.ShowCheckBoxes = true;
         this.treeViewAdv1.ThemeName = "Office2019Colorful";
 
-        DataTable dataTable1 = new DataTable("Continent");
-        dataTable1.Columns.Add("Name", typeof(string));
-        dataTable1.Columns.Add("CountryID", typeof(string));
-        dataTable1.Columns.Add("ContinentID", typeof(string));
-        dataTable1.Columns.Add("Capital", typeof(string));
-        dataTable1.Columns.Add("IsActive", typeof(bool));
-        dataTable1.Rows.Add("Asia", "1", "", "Asia", true);
-        dataTable1.Rows.Add("India", "2", "1", "Delhi", false);
-        dataTable1.Rows.Add("China", "3", "1", "Beijing", true);
-        dataTable1.Rows.Add("North America", "4", "", "USA", false);
-        dataTable1.Rows.Add("United States", "5", "4", "New York", true);
-        dataTable1.Rows.Add("Canada", "6", "4", "Ottawa", false);
-        dataTable1.Rows.Add("Europe", "7", "", "EU", true);
-        dataTable1.Rows.Add("UK", "8", "7", "London", false);
-        dataTable1.Rows.Add("Russia", "9", "7", "Moscow", true);
-        dataTable1.Rows.Add("Africa", "10", "", "SA", false);
-        dataTable1.Rows.Add("South Africa", "11", "10", "Cape Town", true);
-        dataTable1.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
-        dataTable1.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
-        dataTable1.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
-        dataTable1.Rows.Add("Mumbai", "15", "13", "Borivali", true);
-        dataTable1.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
-        dataTable1.Rows.Add("New York", "17", "5", "NY", true);
-        dataTable1.Rows.Add("Albany", "18", "17", "AL", false);
-        dataTable1.Rows.Add("Northen Cape", "19", "11", "NC", true);
-        dataTable1.Rows.Add("CapeTown", "20", "19", "Town", false);
-        dataTable1.Rows.Add("England", "21", "8", "ENG", true);
-        dataTable1.Rows.Add("London", "22", "21", "UK", false);
-        dataTable1.Rows.Add("Shanghai", "23", "3", "SH", true);
-        dataTable1.Rows.Add("Republics", "24", "9", "Repb", false);
-        dataTable1.Rows.Add("Kazan", "25", "24", "Kz", true);
-        dataTable1.Rows.Add("Victoria", "26", "12", "VC", false);
-        dataTable1.Rows.Add("Masvingo", "27", "26", "Mas", true);
-        dataTable1.Rows.Add("Chengudu", "28", "23", "Chen", false);
-        dataTable1.Rows.Add("Ontario", "29", "6", "Ont", true);
-        dataTable1.Rows.Add("Toronto", "30", "29", "TR", true);
+        DataTable continentTable = new DataTable("Continent");
+        continentTable.Columns.Add("Name", typeof(string));
+        continentTable.Columns.Add("CountryID", typeof(string));
+        continentTable.Columns.Add("ContinentID", typeof(string));
+        continentTable.Columns.Add("Capital", typeof(string));
+        continentTable.Columns.Add("IsActive", typeof(bool));
+        continentTable.Rows.Add("Asia", "1", "", "Asia", true);
+        continentTable.Rows.Add("India", "2", "1", "Delhi", false);
+        continentTable.Rows.Add("China", "3", "1", "Beijing", true);
+        continentTable.Rows.Add("North America", "4", "", "USA", false);
+        continentTable.Rows.Add("United States", "5", "4", "New York", true);
+        continentTable.Rows.Add("Canada", "6", "4", "Ottawa", false);
+        continentTable.Rows.Add("Europe", "7", "", "EU", true);
+        continentTable.Rows.Add("UK", "8", "7", "London", false);
+        continentTable.Rows.Add("Russia", "9", "7", "Moscow", true);
+        continentTable.Rows.Add("Africa", "10", "", "SA", false);
+        continentTable.Rows.Add("South Africa", "11", "10", "Cape Town", true);
+        continentTable.Rows.Add("Zimbabwe", "12", "10", "Harare", false);
+        continentTable.Rows.Add("Maharashtra", "13", "2", "Bombay", true);
+        continentTable.Rows.Add("Tamil Nadu", "14", "2", "Madras", false);
+        continentTable.Rows.Add("Mumbai", "15", "13", "Borivali", true);
+        continentTable.Rows.Add("Chennai", "16", "14", "Koyambedu", false);
+        continentTable.Rows.Add("New York", "17", "5", "NY", true);
+        continentTable.Rows.Add("Albany", "18", "17", "AL", false);
+        continentTable.Rows.Add("Northen Cape", "19", "11", "NC", true);
+        continentTable.Rows.Add("CapeTown", "20", "19", "Town", false);
+        continentTable.Rows.Add("England", "21", "8", "ENG", true);
+        continentTable.Rows.Add("London", "22", "21", "UK", false);
+        continentTable.Rows.Add("Shanghai", "23", "3", "SH", true);
+        continentTable.Rows.Add("Republics", "24", "9", "Repb", false);
+        continentTable.Rows.Add("Kazan", "25", "24", "Kz", true);
+        continentTable.Rows.Add("Victoria", "26", "12", "VC", false);
+        continentTable.Rows.Add("Masvingo", "27", "26", "Mas", true);
+        continentTable.Rows.Add("Chengudu", "28", "23", "Chen", false);
+        continentTable.Rows.Add("Ontario", "29", "6", "Ont", true);
+        continentTable.Rows.Add("Toronto", "30", "29", "TR", true);
 
         this.treeViewAdv1.DataMember = "Continent";
         this.treeViewAdv1.DisplayMember = "Name";
@@ -449,7 +450,7 @@ public partial class Form2 : Form
         this.treeViewAdv1.ChildMember = "CountryID";
         this.treeViewAdv1.ValueMember = "Capital";
         this.treeViewAdv1.CheckedMember = "IsActive";
-        this.treeViewAdv1.DataSource = dataTable1;
+        this.treeViewAdv1.DataSource = continentTable;
 
         this.treeViewAdv1.DrawNodeCheckBox += treeViewAdv1_DrawCustomCheckBox;
         this.Controls.Add(treeViewAdv1);
@@ -519,8 +520,6 @@ public partial class Form2 : Form
 {% endtabs %}
 
 ![Draw custom checkbox](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-checkbox.png)
-
-> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is `false`, then the `TreeViewAdv` will automatically draw the usual checkbox of the node.     
 
 ### Customizing the hover appearance
 
