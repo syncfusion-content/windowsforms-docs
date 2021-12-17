@@ -173,7 +173,7 @@ public partial class Form2 : Form
 {% endhighlight %}
 {% endtabs %}
 
-![Draw custom option button](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-option-button.jpg)
+![Draw custom option button](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-option-button.png)
 
 > Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is false, then the `TreeViewAdv` will automatically draw the usual radio button of the node.       
 
@@ -518,7 +518,7 @@ public partial class Form2 : Form
 {% endhighlight %}
 {% endtabs %}
 
-![Draw custom checkbox](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-checkbox.jpg)
+![Draw custom checkbox](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-checkbox.png)
 
 > Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is false, then the `TreeViewAdv` will automatically draw the usual checkbox of the node.     
 
