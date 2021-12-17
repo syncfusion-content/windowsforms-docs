@@ -1,7 +1,7 @@
-F---
+---
 layout: post
-title: Header and footer in WinForms Listview  | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion WinForms Listview (SfListView) control.its element and more.
+title:  Header and footer in WinForms Listview  | Syncfusion
+description: Learn here all about Header and Footer support in Syncfusion WinForms Listview (SfListView) control,its element, and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
@@ -366,7 +366,7 @@ sfListView1.Style.HeaderItemStyle.Font = New Font("Segoe UI Semibold", 11)
 {% endhighlight %}
 {% endtabs %}
 
-![Header footer in WinForms Listview](HeaderFooter_images/HeaderAppearance.png)
+![Header Appearance in WinForms Listview](HeaderFooter_images/HeaderAppearance.png)
 
 ## Footer appearance customization
 
