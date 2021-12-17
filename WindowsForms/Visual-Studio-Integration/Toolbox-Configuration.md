@@ -63,4 +63,6 @@ From 2021 Volume 3, Syncfusion started providing toolbox support for .NET Framew
 
 ## Configuring toolbox for Windows Forms .NET 5.0\6.0 projects from NuGet packages
 
-From 2021 Volume 3, Syncfusion started providing toolbox support for Windows Forms .NET 5.0\6.0 projects. Please Install the respective Syncfusion WinForms NuGet packages in .NET 5.0\6.0 project to get the Syncfusion WinForms controls in the .NET 5.0\6.0 Toolbox. After installing the NuGet packages, our WinForms controls will be populated in the Visual Studio toolbox for .NET 5.0\6.0 WinForms project.
+From 2021 Volume 3, Syncfusion started providing toolbox support for Windows Forms .NET 5.0\6.0 projects. Please install the respective Syncfusion WinForms NuGet packages in .NET 5.0\6.0 project to get the Syncfusion WinForms controls in the .NET 5.0\6.0 Toolbox. After installing the NuGet packages, our WinForms controls will be populated in the Visual Studio toolbox for .NET 5.0\6.0 WinForms project.
+
+Refer [this](https://help.syncfusion.com/windowsforms/add-syncfusion-controls) documentation link to find Syncfusion WinForms nuget packages for the required controls.
