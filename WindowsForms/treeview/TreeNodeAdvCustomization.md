@@ -61,7 +61,7 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom option button.
+The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to `true` while drawing the custom option button.
 
 This example illustrates how to draw the custom option button.
 
@@ -175,7 +175,7 @@ public partial class Form2 : Form
 
 ![Draw custom option button](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-option-button.png)
 
-> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is false, then the `TreeViewAdv` will automatically draw the usual radio button of the node.       
+> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is `false`, then the `TreeViewAdv` will automatically draw the usual radio button of the node.       
 
 ### Customizing the hover appearance
 
@@ -382,7 +382,7 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Custom checkbox
 
-The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom checkbox.
+The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to `true` while drawing the custom checkbox.
 
 This example illustrates how to draw the custom checkbox.
 
@@ -520,7 +520,7 @@ public partial class Form2 : Form
 
 ![Draw custom checkbox](TreeNodeAdv_Customization_Images/winforms-treeviewadv-custom-checkbox.png)
 
-> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is false, then the `TreeViewAdv` will automatically draw the usual checkbox of the node.     
+> Note:  If `DrawTreeViewAdvNodeEventArgs.Handled` property is `false`, then the `TreeViewAdv` will automatically draw the usual checkbox of the node.     
 
 ### Customizing the hover appearance
 
