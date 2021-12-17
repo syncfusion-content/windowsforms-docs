@@ -140,8 +140,8 @@ public partial class Form2 : Form
         if (e.Node.CheckBox != null && e.Node.OptionButton.Visible)
         {
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            Rectangle checkboxBounds = e.Bounds;
-            checkboxBounds.Inflate(-1, -1);
+            Rectangle optionButtonBounds = e.Bounds;
+            optionButtonBounds.Inflate(-1, -1);
             Pen outerCircle = new Pen(Color.Red);
             SolidBrush innerCircle = new SolidBrush(Color.Red);
 
@@ -156,14 +156,14 @@ public partial class Form2 : Form
                 innerCircle = new SolidBrush(Color.DarkBlue);
             }
 
-            e.Graphics.FillEllipse(new SolidBrush(Color.White), checkboxBounds);
-            e.Graphics.DrawEllipse(outerCircle, checkboxBounds);
-            checkboxBounds.Inflate(-1, -1);
+            e.Graphics.FillEllipse(new SolidBrush(Color.White), optionButtonBounds);
+            e.Graphics.DrawEllipse(outerCircle, optionButtonBounds);
+            optionButtonBounds.Inflate(-1, -1);
             outerCircle.Dispose();
             if (e.State == ButtonState.Checked)
             {
-                checkboxBounds.Inflate(-2, -2);
-                e.Graphics.FillEllipse(innerCircle, checkboxBounds);
+                optionButtonBounds.Inflate(-2, -2);
+                e.Graphics.FillEllipse(innerCircle, optionButtonBounds);
                 innerCircle.Dispose();
             }
         }
