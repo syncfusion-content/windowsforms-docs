@@ -61,7 +61,7 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The TreeViewAv allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom option button.
+The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom option button.
 
 This example illustrates how to draw the custom option button.
 
@@ -382,7 +382,7 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Custom checkbox
 
-The TreeViewAv allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom checkbox.
+The `TreeViewAv` allows to draw the custom option buttons inside a tree node using the `DrawNodeCheckBox` event. Set the `DrawTreeViewAdvNodeEventArgs.Handled` property to true while drawing the custom checkbox.
 
 This example illustrates how to draw the custom checkbox.
 
