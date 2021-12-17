@@ -81,8 +81,8 @@ public partial class Form2 : Form
         this.treeViewAdv1.Location = new Point(100, 100);
         this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
         this.treeViewAdv1.SelfRelationRootValue = "";
-        this.treeViewAdv1.ShowOptionButtons = true;
         this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ShowOptionButtons = true;
         this.treeViewAdv1.ThemeName = "Office2019Colorful";
 
         DataTable dataTable1 = new DataTable("Continent");
@@ -130,12 +130,11 @@ public partial class Form2 : Form
         this.treeViewAdv1.CheckedMember = "IsActive";
         this.treeViewAdv1.DataSource = dataTable1;
 
-        this.treeViewAdv1.DrawNodeCheckBox += treeViewAdv2_DrawCustomCheckBox;
-        this.treeViewAdv1.ShowOptionButtons = true;
+        this.treeViewAdv1.DrawNodeCheckBox += treeViewAdv1_DrawCustomCheckBox;
         this.Controls.Add(treeViewAdv1);
     }
 
-    void treeViewAdv2_DrawCustomCheckBox(object sender, DrawTreeViewAdvNodeEventArgs e)
+    void treeViewAdv1_DrawCustomCheckBox(object sender, DrawTreeViewAdvNodeEventArgs e)
     {
         if (e.Node.CheckBox != null && e.Node.OptionButton.Visible)
         {
@@ -403,8 +402,8 @@ public partial class Form2 : Form
         this.treeViewAdv1.Location = new Point(100, 100);
         this.treeViewAdv1.SelectionMode = TreeSelectionMode.MultiSelectAll;
         this.treeViewAdv1.SelfRelationRootValue = "";
-        this.treeViewAdv1.ShowOptionButtons = true;
         this.treeViewAdv1.ShowLines = false;
+        this.treeViewAdv1.ShowCheckBoxes = true;
         this.treeViewAdv1.ThemeName = "Office2019Colorful";
 
         DataTable dataTable1 = new DataTable("Continent");
@@ -453,7 +452,6 @@ public partial class Form2 : Form
         this.treeViewAdv1.DataSource = dataTable1;
 
         this.treeViewAdv1.DrawNodeCheckBox += treeViewAdv1_DrawCustomCheckBox;
-        this.treeViewAdv1.ShowCheckBoxes = true;
         this.Controls.Add(treeViewAdv1);
     }
 
