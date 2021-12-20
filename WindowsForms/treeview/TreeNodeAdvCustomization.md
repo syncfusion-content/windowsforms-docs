@@ -61,9 +61,9 @@ treeNode.Optioned = True
 
 ### Draw custom option button
 
-The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option buttons inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
+The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option button inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event. Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom option button.
 
-> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual radio button of the node.       
+> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual radio button of the node.       
 
 This example illustrates how to draw the custom option button.
 
@@ -383,9 +383,9 @@ treeNode3.CheckState = System.Windows.Forms.CheckState.Unchecked
 
 ### Draw custom checkbox
 
-The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom option buttons inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event.  Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
+The [TreeViewAv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) allows to draw the custom checkbox inside a tree node using the [DrawNodeCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_DrawNodeCheckBox) event.  Set the `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `true` while drawing the custom checkbox.
 
-> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) to `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual checkbox of the node.     
+> Note:  If `Handled` property of the [DrawTreeViewAdvNodeEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTreeViewAdvNodeEventArgs.html) is `false`, then the [TreeViewAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html) will automatically draw the usual checkbox of the node.     
 
 This example illustrates how to draw the custom checkbox.
 
