@@ -2224,7 +2224,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ### Changing the ​default new line style
 
-The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is used to apply the [NewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Base.NewLineStyle.html) when loading an existing document or creating a new document in the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The default value of the [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is [Control].
+The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is used to apply the [NewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Base.NewLineStyle.html) when loading an existing document or creating a new document in the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The default value of the [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is `Control`.
 
 {% tabs %}
 
@@ -2233,9 +2233,10 @@ The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion
  this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
  this.editControl1.Location = new Point(0, 100);
  this.editControl1.BorderStyle = BorderStyle.Fixed3D;
+ this.editControl1.ShowVerticalSplitters = false;
+ this.editControl1.ShowHorizontalSplitters = false;
  this.editControl1.ShowEndOfLine = true;
  this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
  this.Controls.Add(editcontrol1);
  this.editControl1.LoadFile();
 
@@ -2246,7 +2247,7 @@ The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 ![DefaultNewLineStyle](NewLineStyle-Features_images/NewlineStyle-Features_img1.png)
 
 
-### Changeing new line style at runtime
+### Changing new line style at runtime
 
 The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to change the new line style at run time by using the [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method.
 
@@ -2257,9 +2258,10 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
  this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
  this.editControl1.Location = new Point(0, 100);
  this.editControl1.BorderStyle = BorderStyle.Fixed3D;
+ this.editControl1.ShowVerticalSplitters = false;
+ this.editControl1.ShowHorizontalSplitters = false;
  this.editControl1.ShowEndOfLine = true;
  this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
  this.Controls.Add(editcontrol1);
  this.editControl1.LoadFile();
 
@@ -2286,7 +2288,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ### Show or hide the end of line
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to show or hide the new line style characters by using the [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property. The default value of [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property is false
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to show or hide the new line style characters by using the [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property. The default value of [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property is `false`
 
 {% tabs %}
 
@@ -2295,7 +2297,9 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
  this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
  this.editControl1.Location = new Point(0, 100);
  this.editControl1.BorderStyle = BorderStyle.Fixed3D;
- this.editControl1.ShowEndOfLine = False;
+ this.editControl1.ShowVerticalSplitters = false;
+ this.editControl1.ShowHorizontalSplitters = false;
+ this.editControl1.ShowEndOfLine = true;
  this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
  this.editControl1.LoadFile();
 
@@ -2317,7 +2321,8 @@ The background and foreground of the new line style characters can be customized
  this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
  this.editControl1.Location = new Point(0, 100);
  this.editControl1.BorderStyle = BorderStyle.Fixed3D;
- this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
+ this.editControl1.ShowVerticalSplitters = false;
+ this.editControl1.ShowHorizontalSplitters = false;
  this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
  this.editControl1.EndOfLineBackColor = Color.Red;
  this.editControl1.EndOfLineForeColor = Color.White;
