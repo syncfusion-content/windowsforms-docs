@@ -44,6 +44,8 @@ Use the following steps to create the Syncfusion Windows Forms project through t
   
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery2019-2.png)
 
+   N> Project Type NET 6.0 was available from V19.4.0.38. 
+
    In Visual Studio 2017 or lower, Syncfusion Windows Forms Application project configuration wizard.
 
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery-2.png)
