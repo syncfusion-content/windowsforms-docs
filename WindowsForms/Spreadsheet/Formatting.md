@@ -163,6 +163,24 @@ spreadsheet.ActiveGrid.InvalidateCell(4, 3);
 {% endhighlight %}
 {% endtabs %}
 
+## Text Rotation
+
+Spreadsheet provides support to rotate the text in specified cell with Orientation options through Ribbon menu.
+
+![Text rotation in Spreadsheet](Conditional-Formatting_images/TextRotation.png)
+
+Text rotation for cells can be updated programmatically using Rotation property.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.ActiveSheet.Range["C4"].Text = "90 degree";
+spreadsheet.ActiveSheet.Range["C4"].CellStyle.Rotation = 90;
+spreadsheet.ActiveGrid.InvalidateCell(4, 3);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Merge Cells
 
 ### Merge
