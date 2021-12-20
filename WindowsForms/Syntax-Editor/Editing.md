@@ -2219,13 +2219,12 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 ## New line styles
 
-The EditControl allows you to specify a new line style, or get the currently used new line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current new line style in the EditControl. The SetNewLineStyle function accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix, and Control. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) function returns a NewLineStyle enumerator value which indicates the currently used new line style in the [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html).
+The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows you to specify a new line style, or get the currently used new line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current new line style in the [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The SetNewLineStyle function accepts values from the NewLineStyle enumerator which has values like Windows, Mac, Unix, and Control. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) function returns a NewLineStyle enumerator value which indicates the currently used new line style in the [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html).
 
 
-### Set a defult new line style
+### Set a default new line style
 
-The default new line style value is ‘Control’ and can be change the default new line style value of lines used to [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property.
-
+The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is used to apply the new line style when loading an existing document or creating a new document in the [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The default value of the [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is Control.
 
 {% tabs %}
 
@@ -2249,7 +2248,7 @@ The default new line style value is ‘Control’ and can be change the default 
 
 ### Change new line style at runtime
 
-The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to change the line style in run time. can be change the default new line style or the current new line style at runtime, use the [SetNewLineStyle][SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method and Following that, save a document with the current new line style.
+The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to change the new line style at run time by using the [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method.
 
 {% tabs %}
 
@@ -2287,7 +2286,7 @@ The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ### Show or hide the end of line
 
-The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) provides support to make the show or hiding end of line style used to [ShowEndOfLine] property.
+The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to show or hide the new line style characters by using the [ShowEndOfLine] property. The default value of [ShowEndOfLine] property is false
 
 {% tabs %}
 
@@ -2297,7 +2296,6 @@ The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
  this.editControl1.Location = new Point(0, 100);
  this.editControl1.BorderStyle = BorderStyle.Fixed3D;
  this.editControl1.ShowEndOfLine = False;
- this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
  this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
  this.editControl1.LoadFile();
 
@@ -2307,9 +2305,9 @@ The [Editcontrol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ![Show or hide the end of line](Newlinestyle-Features_images/NewLineStyle-Features_img3.png)
 
-### customization
+### Customization
 
-The appearance of the new line style can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) property.
+The background and foreground of the new line style characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) property.
 
 {% tabs %}
 
