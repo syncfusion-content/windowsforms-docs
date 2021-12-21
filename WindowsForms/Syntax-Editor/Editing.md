@@ -2219,23 +2219,41 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 ## New line styles
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows you to specify a new line style, or get the currently used new line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current new line style in the `EditControl` The `SetNewLineStyle` function accepts values from the `NewLineStyle` enumerator which has values like Windows, Mac, Unix, and Control. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) function returns a `NewLineStyle` enumerator value which indicates the currently used new line style in the `EditControl`.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows you to specify a end of line style, or get the currently used end of line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current end of line style in the `EditControl` The `SetNewLineStyle` method accepts values from the `NewLineStyle` enumerator which has values like `Windows`, `Mac`, `Unix`, and `Control`. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) method returns a `NewLineStyle` enumerator value which indicates the currently used end of line style in the `EditControl`.
 
 
-### Changing the ​default new line style
+### Changing the ​default end of line style
 
-The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is used to apply the [NewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.HTMLUI.Base.NewLineStyle.html) when loading an existing document or creating a new document in the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The default value of the `DefaultNewLineStyle` property is `Control`.
+The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_DefaultNewLineStyle) property is used to apply the end of line style when loading an existing document or creating a new document in the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html). The default value of the `DefaultNewLineStyle` property is `Control`.
 
 {% tabs %}
 
 {% highlight C# %}
 
- this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
- this.editControl1.Location = new Point(0, 100);
- this.editControl1.ShowEndOfLine = true;
- this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.Controls.Add(editcontrol1);
- this.editControl1.LoadFile();
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
+
+namespace Edit_demos
+{  
+    public partial class Form1 : Form
+    {
+        private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+        public Form1()
+        {
+            InitializeComponent();
+            this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();          
+            this.editControl1.Location = new Point(20, 100);
+            this.editControl1.Size = new Size(600, 400);
+            this.editControl1.ShowEndOfLine = true;
+            this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
+            this.editControl1.LoadFile();
+            this.Controls.Add(editControl1);
+        }
+    }
+}
+
 
 {% endhighlight %}
 
@@ -2243,38 +2261,59 @@ The [DefaultNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion
 
 ![DefaultNewLineStyle](NewLineStyle-Features_images/NewlineStyle-Features_img1.png)
 
-### Changing new line style at runtime
+### Changing end of line style at runtime
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to change the new line style at run time by using the [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to change the end of line style at run time by using the [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method.
 
 {% tabs %}
 
 {% highlight C# %}
 
- this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
- this.editControl1.Location = new Point(0, 100);
- this.editControl1.BorderStyle = BorderStyle.Fixed3D;
- this.editControl1.ShowVerticalSplitters = false;
- this.editControl1.ShowHorizontalSplitters = false;
- this.editControl1.ShowEndOfLine = true;
- this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.Controls.Add(editcontrol1);
- this.editControl1.LoadFile();
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
-// Creating the Button instance for change the new line style at button click.
+namespace Edit_demos
+{  
+    public partial class Form1 : Form
+    {
+        private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+        private Syncfusion.Windows.Forms.Tools.ComboBoxAdv comboboxAdv1;
+        public Form1()
+        {
+            InitializeComponent();
+            this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();          
+            this.editControl1.Location = new Point(20, 100);
+            this.editControl1.Size = new Size(600, 400);
+            this.editControl1.ShowEndOfLine = true;
+            this.editControl1.LoadFile();
+            this.Controls.Add(editControl1);
 
- this.button1 = new Button();
- this.button1.Text = "load";
- this.button1.Location = new Point(150, 20);
- this.button1.Click += Button1_Click;
- this.Controls.Add(button1);
+            comboboxAdv1 = new Syncfusion.Windows.Forms.Tools.ComboBoxAdv();
+            this.comboboxAdv1.Location = new System.Drawing.Point(24, 118);
+            this.comboboxAdv1.Size = new Size(120, 80);
+            this.comboboxAdv1.Items.Add("Windows");
+            this.comboboxAdv1.Items.Add("Mac");
+            this.comboboxAdv1.Items.Add("Unix");
+            this.comboboxAdv1.Items.Add("Control");
+            this.comboboxAdv1.SelectedIndexChanged += ComboboxAdv1_SelectedIndexChanged;
+            this.Controls.Add(this.comboboxAdv1);
+        }
 
- //Button Click event
-
- private void Button1_Click(object sender, EventArgs e)
- {
-     editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Mac);
- }
+        private void ComboboxAdv1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if((sender as ComboBoxAdv).SelectedIndex == 0)
+                editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Windows);
+            else if ((sender as ComboBoxAdv).SelectedIndex == 1)
+                editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Mac);
+            else if ((sender as ComboBoxAdv).SelectedIndex == 2)
+                editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Unix);
+            else if ((sender as ComboBoxAdv).SelectedIndex == 3)
+                editControl1.SetNewLineStyle(Syncfusion.IO.NewLineStyle.Control);
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -2284,20 +2323,34 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ### Show or hide the end of line
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to show or hide the new line style characters by using the [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property. The default value of `ShowEndOfLine` property is `false`
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows to show or hide the end of line style characters by using the [ShowEndOfLine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ShowEndOfLine) property. The default value of `ShowEndOfLine` property is `false`
 
 {% tabs %}
 
 {% highlight C# %}
 
- this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
- this.editControl1.Location = new Point(0, 100);
- this.editControl1.BorderStyle = BorderStyle.Fixed3D;
- this.editControl1.ShowVerticalSplitters = false;
- this.editControl1.ShowHorizontalSplitters = false;
- this.editControl1.ShowEndOfLine = true;
- this.editControl1.Style = Syncfusion.Windows.Forms.Edit.EditControlStyle.Office2016White;
- this.editControl1.LoadFile();
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
+
+namespace Edit_demos
+{  
+    public partial class Form1 : Form
+    {
+        private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+        public Form1()
+        {
+            InitializeComponent();
+            this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();          
+            this.editControl1.Location = new Point(20, 100);
+            this.editControl1.Size = new Size(600, 400);
+            this.editControl1.ShowEndOfLine = true;
+            this.editControl1.LoadFile();
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -2305,25 +2358,39 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 ![Show or hide the end of line](Newlinestyle-Features_images/NewLineStyle-Features_img3.png)
 
-### Customization
+### Appearance customization
 
-The background and foreground of the new line style characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) property.
+The background and foreground of the end of line characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) property.
 
 {% tabs %}
 
 {% highlight C# %}
 
- this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();
- this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.editControl1.Location = new Point(0, 100);
- this.editControl1.BorderStyle = BorderStyle.Fixed3D;
- this.editControl1.ShowVerticalSplitters = false;
- this.editControl1.ShowHorizontalSplitters = false;
- this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
- this.editControl1.EndOfLineBackColor = Color.Red;
- this.editControl1.EndOfLineForeColor = Color.White;
- this.editControl1.LoadFile();
- this.editControl1.ShowEndOfLine = true;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
+
+namespace Edit_demos
+{  
+    public partial class Form1 : Form
+    {
+        private Syncfusion.Windows.Forms.Edit.EditControl editControl1;
+        public Form1()
+        {
+            InitializeComponent();
+            this.editControl1 = new Syncfusion.Windows.Forms.Edit.EditControl();          
+            this.editControl1.Location = new Point(20, 100);
+            this.editControl1.Size = new Size(600, 400);
+            this.editControl1.ShowEndOfLine = true;
+            this.editControl1.DefaultNewLineStyle = Syncfusion.IO.NewLineStyle.Windows;
+            this.editControl1.EndOfLineBackColor = Color.Red;
+            this.editControl1.EndOfLineForeColor = Color.White;
+            this.editControl1.LoadFile();
+            this.Controls.Add(editControl1);
+        }
+    }
+}
 
 {% endhighlight %}
 
