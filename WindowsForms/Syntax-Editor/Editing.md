@@ -2259,7 +2259,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![Changing the ​default end of line style](NewLineStyle-Features_images/DefaultEndOfLineStyle.png)
+![Ddefault end of line style](NewLineStyle-Features_images/DefaultEndOfLineStyle.png)
 
 ### Changing end of line style at runtime
 
@@ -2360,7 +2360,7 @@ namespace Edit_demos
 
 ### Appearance customization
 
-The `backcolor` and `forecolor` of the end of line characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) properties.
+The backcolor and fore color of the end of line characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) properties.
 
 {% tabs %}
 
