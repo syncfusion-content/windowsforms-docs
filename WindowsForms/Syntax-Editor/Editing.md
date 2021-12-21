@@ -2219,7 +2219,7 @@ Me.editControl1.UncommentText(New Point(1, 1), New Point(7, 7))))
 
 ## New line styles
 
-The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows you to specify a end of line style, or get the currently used end of line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current end of line style in the `EditControl` The `SetNewLineStyle` method accepts values from the [NewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.IO.NewLineStyle.html) enumerator which has values like `Windows`, `Mac`, `Unix`, and `Control`. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) method returns a `NewLineStyle` enumerator value which indicates the currently used end of line style in the `EditControl`.
+The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) allows you to specify a end of line style, or get the currently used end of line style in the text. The [SetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SetNewLineStyle_Syncfusion_IO_NewLineStyle_) method sets the current end of line style in the `EditControl`. The `SetNewLineStyle` method accepts values from the [NewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.IO.NewLineStyle.html) enumerator which has values like `Windows`, `Mac`, `Unix`, and `Control`. Similarly, the [GetNewLineStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_GetNewLineStyle) method returns a `NewLineStyle` enumerator value which indicates the currently used end of line style in the `EditControl`.
 
 
 ### Changing the ​default end of line style
@@ -2259,7 +2259,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![Changing the ​default end of line style](NewLineStyle-Features_images/Changing-the-​default-end-of-line-style.png)
+![Changing the ​default end of line style](NewLineStyle-Features_images/DefaultEndOfLineStyle.png)
 
 ### Changing end of line style at runtime
 
@@ -2319,7 +2319,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![Changing end of line style at runtime](NewLineStyle-Features_images/Changing-end-of-line-style-at-runtime.png)
+![Changing end of line style at runtime](NewLineStyle-Features_images/Changing_endofline_runtime.png)
 
 ### Show or hide the end of line
 
@@ -2360,7 +2360,7 @@ namespace Edit_demos
 
 ### Appearance customization
 
-The backcolor and fore color of the end of line characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) properties.
+The backcolor and forecolor of the end of line characters can be customized by using the [EndOfLineBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineBackColor) and [EndOfLineForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_EndOfLineForeColor) properties.
 
 {% tabs %}
 
