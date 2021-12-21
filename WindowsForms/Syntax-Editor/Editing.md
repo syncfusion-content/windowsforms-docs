@@ -2259,7 +2259,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![DefaultNewLineStyle](NewLineStyle-Features_images/NewlineStyle-Features_img1.png)
+![Changing the ​default end of line style](NewLineStyle-Features_images/Changing-the-​default-end-of-line-style.png)
 
 ### Changing end of line style at runtime
 
@@ -2319,7 +2319,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![Load the document](NewLineStyle-Features_images/Newlinestyle-Features_img2.png)
+![Changing end of line style at runtime](NewLineStyle-Features_images/Changing-end-of-line-style-at-runtime.png)
 
 ### Show or hide the end of line
 
@@ -2356,7 +2356,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![Show or hide the end of line](Newlinestyle-Features_images/NewLineStyle-Features_img3.png)
+![Show or hide the end of line](Newlinestyle-Features_images/Show-or-hide-the-end-of-line.png)
 
 ### Appearance customization
 
@@ -2396,7 +2396,7 @@ namespace Edit_demos
 
 {% endtabs %}
 
-![customization](Newlinestyle-Features_images/NewLineStyle-Features_img4.png)
+![Customizing end of line appearance](Newlinestyle-Features_images/Customizing-end-of-line-appearance.png)
 
 > Note: [View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-end-of-line-style-in-Winforms-EditControl)
 
