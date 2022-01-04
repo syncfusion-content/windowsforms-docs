@@ -21,7 +21,7 @@ Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
-Sets the appearance of the form. The values are,Normal andOffice2007 (Default)Office 2010</td></tr>
+Sets the appearance of the form. The values are Normal and Office2007</td></tr>
 <tr>
 <td>
 ColorScheme</td><td>
@@ -63,16 +63,17 @@ Me.EnableAeroTheme = True
 
 {% endtabs %}
 
-`IsFormManager` property can be used to remove the form title bar and replace it with the RibbonControlAdv built-in system buttons.
+`Appearance` property can be used to remove the form title bar and replace it with the RibbonControlAdv built-in system buttons.
 
-*	Default Theme
+*	Normal
 
-![IsFormManager enabled](Ribbon_Form_Images/Ribbon-Form_img1.jpg)
+![Appearance Normal](Ribbon_Form_Images/RibbonForm-Appearance-Normal.png)
 
-*	Aero Theme
+*	Office2007
 
-![Aero Theme enabled](Ribbon_Form_Images/Ribbon-Form_img2.jpg)
+![Appearance Office2007](Ribbon_Form_Images/RibbonForm-Appearance-Office2007.png)
 
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-set-appearance-in-RibbonForm)
 
 ## Customization
 
@@ -102,6 +103,7 @@ Me.Borders = New System.Windows.Forms.Padding(10)
 
 {% endhighlight %}
 
+![Customizing Borders](Ribbon_Form_Images/RibbonForm-Customization-Borders.png)
 
 ### Customizing the Top Left Edge
 
@@ -118,6 +120,10 @@ this.TopLeftRadius = 20;
 Me.TopLeftRadius = 20
 
 {% endhighlight %}
+
+![Customizing TopLeftRadius](Ribbon_Form_Images/RibbonForm-Customization-TopLeftRadius.png)
+
+N> The Borders and TopLeftRadius reflect in UI when the EnableAeroTheme is set to false and Appearance to Normal.
 
 ## Adding user control to the title bar
 
