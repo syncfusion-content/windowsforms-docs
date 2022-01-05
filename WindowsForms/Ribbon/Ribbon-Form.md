@@ -73,7 +73,7 @@ Me.EnableAeroTheme = True
 
 ![Appearance Office2007](Ribbon_Form_Images/RibbonForm-Appearance-Office2007.png)
 
-N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-set-appearance-in-RibbonForm)
+N>[View sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-appearance-of-the-RibbonForm)
 
 ## Customization
 
