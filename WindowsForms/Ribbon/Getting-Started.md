@@ -155,6 +155,8 @@ this.ribbonControlAdv1.Header.AddMainItem(this.sendTabItem);
 this.ribbonControlAdv1.Header.AddMainItem(this.folderTabItem);
 this.ribbonControlAdv1.Header.AddMainItem(this.viewTabItem);
 
+// Set a name to the menu button
+this.ribbonControlAdv1.MenuButtonText = "File";
 
 {% endhighlight %}
 
@@ -179,6 +181,9 @@ Me.ribbonControlAdv1.Header.AddMainItem(Me.homeTabItem)
 Me.ribbonControlAdv1.Header.AddMainItem(Me.sendTabItem)
 Me.ribbonControlAdv1.Header.AddMainItem(Me.folderTabItem)
 Me.ribbonControlAdv1.Header.AddMainItem(Me.viewTabItem)
+
+' Set a name to the menu button
+Me.ribbonControlAdv1.MenuButtonText = "File"
 
 {% endhighlight %}
 
