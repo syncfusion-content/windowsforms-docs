@@ -14,11 +14,11 @@ This section will explain about creating simple GridGroupingControl and the over
 
 Essential Grid includes a trio of grid controls as well as many other controls that are used in conjunction with these three grids. Essential Grid works similar to Microsoft Excel and allows extremely detailed customization down to the cell level. Multi-level Undo / Redo, Shared Scrollbar support, Data / View separation, floating cells, more than 15 cell types, and unmatched extensibility are the unique features of the Essential Grid.
 
-[GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
+[GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started): A high performance grouping grid that offers very flexible support for grouping flat data sources as well as hierarchical data sources. This grid supports expressions fields, filters, multi-column sorting, grouping, nested tables/hierarchies, and custom summaries. It can use any [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) data source including [ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/) [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) and [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist?view=net-5.0) objects.
 
 [GridDataBoundGrid](https://help.syncfusion.com/windowsforms/classic/databoundgrid/getting-started): A column oriented grid best suited for use with ADO.NET [DataSet](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0)/[DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0) data sources. If you are looking to bind with the `ADO.NET` data source without the grouping and hierarchical support then you can use GridDataBoundGrid. GridDataBoundGrid is marked as classic because all the features mentioned in this are available in `GridGroupingControl` with more efficiency and features.
 
-[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](http://help.syncfusion.com/windowsforms/grid/virtual-grid#) such that, it can bind to any type of data source.
+[GridControl](https://help.syncfusion.com/windowsforms/grid-control/getting-started): A cell oriented grid that contain its own data. Does not need to be bound to a data source. Easily customize down to the cell level. Used in a [virtual manner](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid#) such that, it can bind to any type of data source.
 
 [SfDataGrid](https://help.syncfusion.com/windowsforms/datagrid/overview): Designed based on column-oriented architecture that provides support to customize the grid easily. Display collection of data in rows and columns.
 
@@ -190,10 +190,10 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 
 ![windows forms gridgroupingcontrol showing grouping options](Getting-Started_images/Getting-Started_img3.png)
 
-Check the [Grouping](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic, to know more information regarding grouping.
+Check the [Grouping](https://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic, to know more information regarding grouping.
 
 ## Sorting
-Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSortColumns) property. By default, sorting will be enabled in GridGroupingControl. Refer the [Sorting](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+Sorting can be done in GridGroupingControl by just clicking the column header of the grid. It can be configured by using the [AllowSortColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSortColumns) property. By default, sorting will be enabled in GridGroupingControl. Refer the [Sorting](https://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ Me.gridGroupingControl1.TableOptions.AllowSortColumns = True
 ![windows forms gridgroupingcontrol showing sorting options](Getting-Started_images/Getting-Started_img4.png)
 
 ## Filtering
-GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowFilter) property. Refer the [Filtering](http://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
+GridGroupingControl is specially designed for supporting the filtering options. It supports three types of filtering namely Normal Filter, Excel-Like Filter and Dynamic Filter. To enable the Filter in GridGroupingControl make use of the [AllowFilter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowFilter) property. Refer the [Filtering](https://help.syncfusion.com/windowsforms/gridgrouping/data-representation) topic for detailed explanation.
 
 {% tabs %}
 {% highlight c# %}
