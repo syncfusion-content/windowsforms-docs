@@ -130,7 +130,7 @@ Syncfusion reference manager supports for specific framework that is shipped (as
 
 ## Binding data
 
-This section guides you how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to pivot chart control should be an [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataView](https://msdn.microsoft.com/en-us/library/system.data.dataview.aspx).
+This section guides you how to bind the data source and its appropriate fields to a pivot chart control. The data source assigned to pivot chart control should be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataView](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-6.0).
 
 In this example, the `IEnumerable` list is used as data source for the pivot chart control and the sample data source contains properties such as Product, Date, Country, State, Quantity, Amount, UnitPrice, and TotalPrice for demonstration purpose.
 
@@ -309,7 +309,7 @@ N>
 
 The pivot chart control requires the following information to populate the data from the data source.
 
-* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://msdn.microsoft.com/en-us/library/9eekhta0.aspx) list or a [DataTable](https://msdn.microsoft.com/en-in/library/system.data.datatable.aspx).
+* [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_ItemSource): The data source for the pivot table. This object should be either an    [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-6.0) list or a [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?redirectedfrom=MSDN&view=net-6.0).
 * [PivotAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotAxis): Elements that should be added to the axis of pivot chart control.
 * [PivotLegend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotLegend): Elements that should be added to legend of pivot chart control.
 * [PivotCalculations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotChart.PivotChart.html#Syncfusion_Windows_Forms_PivotChart_PivotChart_PivotCalculations): Calculation values that should be added as data points to the pivot chart control.
