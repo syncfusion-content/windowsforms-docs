@@ -348,7 +348,7 @@ document.Save("Sample.pdf")
 {% endhighlight %}
 {% endtabs %}
 
-Refer the [PDF documentation](http://help.syncfusion.com/file-formats/pdf/loading-and-saving-document#saving-a-pdf-document-to-file-system) for more information.
+Refer the [PDF documentation](https://help.syncfusion.com/#saving-a-pdf-document-to-file-system) for more information.
 
 ### Save as Stream
 After exporting to PDF, the exported PDF file can be saved to a stream by using [Save](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Save_System_IO_Stream_) method.

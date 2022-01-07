@@ -48,7 +48,7 @@ Me.gridControl1(2, 2).CellType = GridCellTypeName.Static
 {% endhighlight %}
 {% endtabs %}
 
-N> Editing can also be done in Virtual Grid, please check the detailed description on Editing in our [Virtual Grid topic](http://help.syncfusion.com/windowsforms/grid/virtual-grid).
+N> Editing can also be done in Virtual Grid, please check the detailed description on Editing in our [Virtual Grid topic](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid).
 
 ## Programmatic Editing
 
@@ -131,7 +131,7 @@ Me.gridControl1.ReadOnly = False
 
 ### Enabling Read Only for a Particular Cell
 
-For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. `GridStyleInfo` object will be available for each cell in the GridControl.
+For preventing the editing in cell by cell basis, make use of the [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) object’s [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ReadOnly) property. `GridStyleInfo` object will be available for each cell in the GridControl.
 
 {% tabs %}
 {% highlight c# %}
