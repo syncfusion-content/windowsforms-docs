@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataBind-CheckBoxAdv-To-Int-Field-SQLDatabase|WindowsForms|Syncfusion
-description: description: This section gives detailed description on how to databind a CheckBoxAdv to Integer Field in SQL Database.
+title: DataBind CheckBoxAdv To Int Field SQLDatabase|WindowsForms| Syncfusion
+description: This section gives detailed description on how to databind a CheckBoxAdv to Integer Field in SQL Database.
 platform: WindowsForms
 control: EditorsPackage
 documentation: ug

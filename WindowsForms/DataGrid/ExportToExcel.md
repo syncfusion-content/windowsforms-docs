@@ -36,7 +36,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to excel by using `XlsIO`. You can refer[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets.
+N> SfDataGrid exports data to excel by using `XlsIO`. You can refer[XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets.
 
 ## Exporting Options
 By default, actual value only will be exported to excel. This can be changed to export the display text by setting the [ExportMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGridConverter.ExcelExportingOptions.html#Syncfusion_WinForms_DataGridConverter_ExcelExportingOptions_ExportMode) property as `Text`.
@@ -353,7 +353,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default)
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. Also refer the[XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
+It is also possible to save worksheet as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_SaveAsHtml_System_IO_Stream_) method. Also refer the[XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
 ## Export to Mail
 The SfDataGrid can be exported to mail by converting it into Excel and save exported worksheet as HTML. Then exported HTML contents is embedded in mail body.
@@ -800,7 +800,7 @@ End Sub
 ![Windows forms datagrid displays applied border color of the cell when exporting to excel](ExportToExcel_images/ExportToExcel_img12.jpg)
 
 ## Customize Exported Workbook and Worksheet
-SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.
+SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview). The [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) can also referred for manipulating workbook and sheet after exporting.
 
 ### Workbook
 SfDataGrid provides option to return ExcelEngine for getting the exported workbook. This allows to protect, encrypt and add worksheet before saving.
@@ -842,7 +842,7 @@ workBook.SaveAs("Sample.xlsx")
 {% endhighlight %}
 {% endtabs %}
 
-Before saving workbook, set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. Also, refer[here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information about the worksheet customization.
+Before saving workbook, set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, you can directly manipulate the data in the worksheet. Also, refer[here](https://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information about the worksheet customization.
 
 #### Setting Borders
 The borders of the excel cells can be set by directly accessing worksheet after exporting data.
@@ -1055,7 +1055,7 @@ workBook.SaveAs("Sample.xlsx")
 
 ![Windows forms datagrid displays applied colors based on row index using conditional format](ExportToExcel_images/ExportToExcel_img11.jpeg)
 
-Refer the [XlsIO document](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting) for the conditional customization.
+Refer the [XlsIO document](https://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting) for the conditional customization.
 
 ## See also
 
