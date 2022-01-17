@@ -21,7 +21,7 @@ Please find more details regarding how to install the nuget packages in windows 
 
 Maps are visualized through layers. A map can accommodate one or more layers. ShapeFileLayer is one of the layers that can be used to generate map shapes and bind business objects with them.
 
-Map contains a set of elements, which includes shapes, bubbles, annotations, and data items. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding. Annotation and tooltip shows additional information on the map.
+[WinForms Map](https://www.syncfusion.com/winforms-ui-controls/map) contains a set of elements, which includes shapes, bubbles, annotations, and data items. Bubbles and MapItems enhance the data visualization capabilities of the map with data binding. Annotation and tooltip shows additional information on the map.
 
 Options such as zooming, panning, and map selection enable the effective interaction on map elements.
 
@@ -157,3 +157,4 @@ Screenshot:
 ![Windows Forms Maps Adding Shape Files](Getting-Started_images/Getting-Started_img3.png)
 
 
+N> You can also explore our [WinForms Map example](https://github.com/syncfusion/winforms-demos/tree/master/map) that shows you how to render and configure the Map.
