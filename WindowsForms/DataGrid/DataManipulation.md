@@ -604,7 +604,7 @@ For manually defined relations, the `AddNewRowPosition` can be directly initiali
 GridViewDefinition firstLevelGridViewDefinition = new GridViewDefinition();
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails";
 SfDataGrid firstLevelNestedGrid = new SfDataGrid(); 
-firstLevelSourceDataGrid.AddNewRowPosition = RowPosition.Top;
+firstLevelNestedGrid.AddNewRowPosition = RowPosition.Top;
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid;
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 {% endhighlight %}
@@ -612,7 +612,7 @@ sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition);
 Dim firstLevelGridViewDefinition As New GridViewDefinition() 
 firstLevelGridViewDefinition.RelationalColumn = "OrderDetails" 
 Dim firstLevelNestedGrid As New SfDataGrid() 
-firstLevelSourceDataGrid.AddNewRowPosition = RowPosition.Top
+firstLevelNestedGrid.AddNewRowPosition = RowPosition.Top
 firstLevelGridViewDefinition.DataGrid = firstLevelNestedGrid 
 sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 {% endhighlight %}
