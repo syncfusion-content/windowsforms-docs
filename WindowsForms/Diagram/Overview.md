@@ -155,3 +155,4 @@ Online{{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} (Naviga
 </table>
 
 
+N> You can refer to our [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
