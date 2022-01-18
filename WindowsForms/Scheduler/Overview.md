@@ -1,21 +1,21 @@
 ---
 layout: post
-title: About Windows Forms Scheduler control | Syncfusion
-description: Learn here all about introduction of Syncfusion Windows Forms Scheduler (Schedule) control, its elements and more details.
+title: About Windows Forms Scheduler control (Event Calendar) | Syncfusion
+description: Learn here all about introduction of Syncfusion Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Windows Forms Scheduler (Schedule) Overview
+# Windows Forms Scheduler (Event Calendar) Overview
 
-The Syncfusion Essential Schedule is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
+The Syncfusion Scheduler is a Windows Forms class library built around the functionalities found in the Windows Forms Grid control. The control allows you to add scheduling support to your applications. 
 
-The scheduling support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
+The most popular WinForms Scheduler support includes creating new appointments, displaying those appointments in a variety of views, including Monthly, Daily, Weekly, Work Week, and multiple days. In the daily formats, you can use the UI to drag appointments to another time slot and to extend appointments. A flexible navigation calendar lets you easily home on the dates you would like to see in the Schedule control. 
 
 ![windows forms schedule showing month view](Overview_images/Overview_img1.png)
 
-The Scheduler control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
+The [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) control finds a wide variety of applications such as Time Tables, Calendars, Event Scheduling, Sequences, Activities, Project Management, Reservations, Resource Usage Planners, and so on.
 
 ## Key features
 
@@ -30,3 +30,5 @@ The Scheduler control finds a wide variety of applications such as Time Tables, 
 * Globalization and localization: Supports localized static text, day, and month names based on the culture.
 * Recurrence appointment: Supports schedule recurring appointments to repeat daily, weekly, monthly, or yearly.
 * Touch support: Completely supports swiping, panning, zooming, and more.
+
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.

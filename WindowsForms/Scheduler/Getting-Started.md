@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Windows Forms Scheduler control | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Scheduler (Schedule) control, its elements and more details.
+title: Getting Started with Windows Forms Scheduler (Event Calendar) control | Syncfusion
+description: Learn here about getting started with Syncfusion Windows Forms Scheduler (Event Calendar) control, its elements and more details.
 platform: windowsforms
 control: Schedule
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Scheduler (Schedule)
+# Getting Started with Windows Forms Scheduler (Event Calendar)
 
-This section guides getting started with Windows application, controls, etc.
+This section provides the details that you will need to know about getting started with our [WinForms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) control. 
 
 ## Assembly deployment
 
@@ -17,7 +17,7 @@ Refer to [control dependencies](https://help.syncfusion.com/windowsforms/control
 
 ## Creating application with the ScheduleControl
 
-In this walkthrough, user will create a WinForms application that contains the [Windows Forms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) (Schedule) control.
+In this walkthrough, user will create a WinForms application that contains the [Windows Forms Scheduler](https://www.syncfusion.com/winforms-ui-controls/scheduler) (Event Calendar) control.
 
 ### Creating the project
 
@@ -27,11 +27,11 @@ Create a new Windows Forms project in Visual Studio to display the Windows Forms
 
 1. The Schedule control can be added to the application by dragging it from the Toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-   ![Adding schedule control through designer](Getting-Started_images/Getting-Started_img9.jpeg)
+   ![Adding WinForms schedule control through designer](Getting-Started_images/Getting-Started_img9.jpeg)
 
 2. The ScheduleControl will be shown on the design surface. Following screenshot is a typical display of this. Notice the Appearance property in the property grid. This object has many properties that affects the appearance of the ScheduleControl.
 
-   ![Adding schedule control through designer](Getting-Started_images/Getting-Started_img10.png)
+   ![Adding WinForms schedule control through designer](Getting-Started_images/Getting-Started_img10.png)
 	
 ### Adding control by code
 
@@ -94,15 +94,15 @@ Follow the steps to create an appointment:
 
 1. Add an existing file to the SimpleScheduleDataProvider.cs (add  SimpleScheduleDataProvider.vb if you are using VB.NET) project.
 
-This file defines several classes that implements  the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
+This file defines several classes that implements the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
 
-Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Schedule sample](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
+Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [winforms scheduler sample](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
-![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img12.jpeg)
+![Adding appointment in winforms scheduler control](Getting-Started_images/Getting-Started_img12.jpeg)
 
 2. You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
-![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img13.jpeg)
+![Adding appointment in winforms scheduler control](Getting-Started_images/Getting-Started_img13.jpeg)
 
 3. After adding the `SimpleScheduleDataProvider.cs` code file, add some code to your Form.cs to provide data support to your ScheduleControl.
 
@@ -179,11 +179,11 @@ End Namespace
 
 4. Press `F5` key to compile and run your application. 
 
-![Adding appointment in schedule control](Getting-Started_images/Getting-Started_img14.jpeg)
+![Adding appointment in WinForms schedule control](Getting-Started_images/Getting-Started_img14.jpeg)
  
 ## Changing views
 
-The ScheduleControl supports for five schedule view types:
+The customized WinForms Scheduler supports for five schedule view types:
 
 * Month
 * Day
@@ -193,47 +193,47 @@ The ScheduleControl supports for five schedule view types:
 
 To change month view to day view, right-click the ScheduleGrid area of the ScheduleControl to display a ContextMenu and select a day.
 
-![Changing view in Scheduler](Getting-Started_images/Getting-Started_img15.jpeg)
+![Changing view in WinForms Scheduler](Getting-Started_images/Getting-Started_img15.jpeg)
 	
 You can also change to other schedule views using this ContextMenu. 
 
-![Changing view in Scheduler](Getting-Started_images/Getting-Started_img16.jpeg)
+![Changing view in WinForms Scheduler](Getting-Started_images/Getting-Started_img16.jpeg)
 	
 ## Appointments
 
-The Schedule control supports to insert, remove, modify, and save all the appointment details.
+The WinForms appointment Scheduler control supports to insert, remove, modify, and save all the appointment details.
 
 ### Insert
 
 Double-click one of the timeslots on the ScheduleGrid. This action will display a new appointment screen where you can enter a new schedule item.
 
-![Adding appointment in Scheduler](Getting-Started_images/Getting-Started_img17.jpeg)
+![Adding appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img17.jpeg)
 
 Clicking the Save and Close button on the Appointment, the screen will re-display the `Day view` ScheduleControl with a new appointment. If you hover over the appointment in the ScheduleGrid, a tooltip will display.
 
-![Adding appointment in Scheduler](Getting-Started_images/Getting-Started_img18.jpeg)
+![Adding appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img18.jpeg)
 
 ### Remove
 
 Right click on the appointment and select the Delete Item from the context menu to remove the selected appointment.
 
-![Deleting appointment in Schedule Control](Getting-Started_images/Getting-Started_img19.jpeg)
+![Deleting appointment in WinForms Schedule Control](Getting-Started_images/Getting-Started_img19.jpeg)
 
 ### Modify
 
 Double-click on the appointment or right-click and choose the Edit Item from context menu.
 
-![Modifying appointment in Scheduler](Getting-Started_images/Getting-Started_img20.jpeg)
+![Modifying appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img20.jpeg)
 
 This action will display an appointment form with appointment details to modify the appointment then, click on Save and Close button.
 
-![Modifying appointment in Scheduler](Getting-Started_images/Getting-Started_img21.jpg)
+![Modifying appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img21.jpg)
 
 ### Save all the appointment
 
 Click the Close button on the form system menu on the upper-right corner of the form. Because, the data has been modified in this ScheduleControl. A dialog will appear as follows, click Yes to save the changes to a disk file.
 
-![Saving all appointment in Scheduler](Getting-Started_images/Getting-Started_img22.jpg)
+![Saving all appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img22.jpg)
 	
 Then modify our `Form_Load` code to conditionally reload the saved data if the file is present on the disk. Copy this code to your Form1.cs file. Notice that you have added a `using` statement to reference the `System.IO namespace` to the new code in the Form1_Load.
 
@@ -324,7 +324,7 @@ End Namespace
 
 Compile and run the application again. The Month view should reappear but this time the added appointment will appear.
 
-![Saving appointment in Scheduler](Getting-Started_images/Getting-Started_img23.jpg)
+![Saving appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img23.jpg)
 
 ### TextColor
 
@@ -351,7 +351,7 @@ masterList.Add(item)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing appointment forecolor in Scheduler](Getting-Started_images/Getting-Started_img24.png)
+![Changing appointment forecolor in WinForms Scheduler](Getting-Started_images/Getting-Started_img24.png)
 
 ### Schedule appointment
 
@@ -748,6 +748,8 @@ End Property
 {% endtabs %}
 ## Recurrence appointment
 
-The Schedule control supports creating the recurring appointment. By this recurrence appointment, you can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
+The C# WinForms Calendar Scheduler control supports creating the recurring appointment. By this recurrence appointment, you can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
 
-[Create the recurrence appointment](time-interval)
+[Create the recurrence appointment in WinForms Calendar Scheduler control ](time-interval)
+
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
