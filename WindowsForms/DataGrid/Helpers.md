@@ -68,10 +68,6 @@ GetHeaderIndex()</td><td>
 Returns the header row index.</td></tr>
 <tr>
 <td>
-IsInDetailsViewIndex(int rowIndex)</td><td>
-Decides whether the given row index is <code>DetailsView</code> index or not.</td></tr>
-<tr>
-<td>
 IsAddNewIndex(int rowIndex)</td><td>
 Decides whether the given row index is <code>AddNewRow</code> index or not.</td></tr>
 <tr>
