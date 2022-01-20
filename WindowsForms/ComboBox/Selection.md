@@ -70,7 +70,7 @@ End Sub
 
 ## Multi-selection
 
-The SfComboBox allows you to select multiple values from the drop-down list. The multi-select combo box mode can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property as `MultiSelection`.
+The SfComboBox allows you to select multiple values from the drop-down list. The [multi-select combo box](https://www.syncfusion.com/winforms-ui-controls/combobox/multiselect-combobox) mode can be enabled by setting the [ComboBoxMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfComboBox.html#Syncfusion_WinForms_ListView_SfComboBox_ComboBoxMode) property as `MultiSelection`.
 
 {% tabs %}
 {% highlight c# %}
