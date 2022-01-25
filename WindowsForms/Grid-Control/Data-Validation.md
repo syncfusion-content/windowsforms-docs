@@ -95,10 +95,6 @@ private void button1_Click(object sender, EventArgs e)
     this.gridControl1[3, 3].CellValue = "Hello";
     this.gridControl1.CurrentCell.MoveTo(3, 3);
     this.gridControl1.CurrentCell.Validate();
-
-this.gridControl1.CurrentCell.MoveTo(3, 3);
-this.gridControl1.CurrentCell.Validate();
-
 }
 {% endhighlight %}
 
