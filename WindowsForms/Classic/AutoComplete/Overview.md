@@ -18,4 +18,4 @@ The ComboBoxAutoComplete control fulfills this need. It derives from the Windows
 
 ## Choose between different combobox controls
 
-You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/combobox/overview#choose-between-different-combobox-controls).

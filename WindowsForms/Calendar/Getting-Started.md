@@ -164,7 +164,7 @@ End Sub
 
 ## Date range
 
-The [WinForms Calendar]((https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html)) (SfCalendar) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
+The [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) prevents users from selecting dates within specified minimum and maximum ranges. To specify a range, set the start date and end date to the [MinDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_MaxDate) properties, respectively.
 
 {% tabs %}
 

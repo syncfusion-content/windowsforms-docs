@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header and footer support | ListView for Windows Forms | Syncfusion
-description: This section explains about the Header and Footer support in SfListView.
+title: Header and footer in WinForms Listview  | Syncfusion
+description: Learn here all about Header and Footer support in Syncfusion WinForms Listview (SfListView) control,its element, and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Header and Footer
+# Header and Footer in WinForms Listview 
 
 SfListView allows you to show or hide the header and footer items through the [SfListView.ShowHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowHeader) and [SfListView.ShowFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ShowFooter) properties. By default, the header and footer items will stick on the top and bottom of the view.
 
@@ -64,7 +64,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderFooterText.png)
+![Header footer Text in WinForms Listview](HeaderFooter_images/HeaderFooterText.png)
 
 ## Header and footer height
 
@@ -81,7 +81,7 @@ Me.sfListView1.FooterHeight = 30
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderFooterHeight.png)
+![Header Footer Height in WinForms Listview](HeaderFooter_images/HeaderFooterHeight.png)
 
 ## Load custom control in header and footer
 
@@ -342,7 +342,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderCustomControl.png)
+![Header Custom Control in WinForms Listview](HeaderFooter_images/HeaderCustomControl.png)
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfListView\Header Footer
@@ -366,7 +366,7 @@ sfListView1.Style.HeaderItemStyle.Font = New Font("Segoe UI Semibold", 11)
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderAppearance.png)
+![Header Appearance in WinForms Listview](HeaderFooter_images/HeaderAppearance.png)
 
 ## Footer appearance customization
 
@@ -387,7 +387,7 @@ sfListView1.Style.FooterItemStyle.Font = New Font("Segoe UI Semibold", 11)
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/FooterAppearance.png)
+![Footer Appearance in WinForms Listview](HeaderFooter_images/FooterAppearance.png)
 
 ## Loading image for header
 
@@ -422,7 +422,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/HeaderWithImage.png)
+![Header with Image in WinForms Listview](HeaderFooter_images/HeaderWithImage.png)
 
 ## Loading image for footer
 
@@ -458,7 +458,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](HeaderFooter_images/FooterWithImage.png)
+![Footer with Image in WinForms Listview](HeaderFooter_images/FooterWithImage.png)
 
 ## Showing summary in footer
 
@@ -486,4 +486,4 @@ Private Sub sfListView1_DrawItem(ByVal sender As Object, ByVal e As Syncfusion.W
 End Sub
 {% endhighlight %}
 {% endtabs %}
-![](HeaderFooter_images/SummaryText.png)
+![Summary Text in WinForms Listview](HeaderFooter_images/SummaryText.png)
