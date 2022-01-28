@@ -70,7 +70,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
 
    **Select Window:** Choose the window as required for application.
       
-4. After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion WinForms project is created with the necessary assembly references, XAML files and required Syncfusion WinForms assemblies/NuGet packages. 
+4. After choosing above project configuration options in the Project Configuration Wizard, click the create button then Syncfusion WinForms project is created with the necessary XAML files and required Syncfusion WinForms assemblies/NuGet packages. 
 
    ![Syncfusion Windows Forms project created with required references](Project-Template-images\Syncfusion-Project-Template-Gallery-6.png)
 
