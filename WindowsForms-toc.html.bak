@@ -3691,7 +3691,7 @@
 						<a href="/windowsforms/PDF-Viewer/how-to/get-page-count">Get page count?</a>
 					</li>
 					<li>
-						<a href="/windowsforms/PDF-Viewer/how-to/page-navigation">Navigate between pages programmatically?</a>
+						<a href="/windowsforms/PDF-Viewer/how-to/load-a-specific-page">Navigate to a specific page?</a>
 					</li>
 					<li>
 						<a href="/windowsforms/PDF-Viewer/how-to/load-pdf-without-toolstrip-in-viewer">Load PDF without Toolbar?</a>
