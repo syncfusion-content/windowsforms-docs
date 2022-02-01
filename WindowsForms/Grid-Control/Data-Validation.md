@@ -77,20 +77,14 @@ void gridControl1_CurrentCellValidating(object sender, CancelEventArgs e)
 {
     if (this.gridControl1.CurrentCell.ColIndex == 3)
     {
-        int val;
-        GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
+       int val;
+       GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
 
-    if (this.gridControl1.CurrentCell.ColIndex == 3)
-    {
-    int val;
-    GridTextBoxCellRenderer renderer = this.gridControl1.CurrentCell.Renderer as GridTextBoxCellRenderer;
-
-    if (renderer != null && !int.TryParse(renderer.ControlText, out val))
-        {
-
-        //Display custom error provider.
-        this.gridControl1.CurrentCell.SetError("Please enter the valid input");
-        }
+       if (renderer != null && !int.TryParse(renderer.ControlText, out val))
+       {
+          //Display custom error provider.
+          this.gridControl1.CurrentCell.SetError("Please enter the valid input");
+       }
     }
 }
 
@@ -100,10 +94,6 @@ private void button1_Click(object sender, EventArgs e)
     this.gridControl1[3, 3].CellValue = "Hello";
     this.gridControl1.CurrentCell.MoveTo(3, 3);
     this.gridControl1.CurrentCell.Validate();
-
-this.gridControl1.CurrentCell.MoveTo(3, 3);
-this.gridControl1.CurrentCell.Validate();
-
 }
 {% endhighlight %}
 
@@ -235,4 +225,3 @@ e.Cancel = True
 End Sub
 {% endhighlight %}
 {% endtabs %}
-
