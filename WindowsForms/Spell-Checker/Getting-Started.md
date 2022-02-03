@@ -398,3 +398,5 @@ Me.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful
 {% endtabs %}
 
 ![SpellCheckerAdv style](Getting-Started_images/GettingStarted2.png)
+
+N> You can refer to our [WinForms Spell checker](https://www.syncfusion.com/winforms-ui-controls/spellchecker) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Spell checker example](https://github.com/syncfusion/winforms-demos/tree/master/spellchecker) that shows you how to render and configure the Spreadsheet.
