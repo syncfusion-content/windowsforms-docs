@@ -23,5 +23,3 @@ SpellCheckerAdv control offers Microsoft Office style spell checking capabilitie
 * **Ignores special expressions** - Provides options to ignore e-mail, URL, numbers, mixed case words and much more.
 
 * **Visual style** - Provide rich set of visual style to customize the look and feel of SpellCheckerAdv.
- 
-
