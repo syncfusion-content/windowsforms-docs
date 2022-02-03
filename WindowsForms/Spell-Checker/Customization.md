@@ -70,7 +70,7 @@ These options are accessible at runtime through the Spell Checker Options dialog
 
 ## Getting suggestions for wrong word
 
-SpellCheckerAdv provides support to get suggestion list by passing the wrong word in the below methods.
+[WinFormsSpellCheckerAdv](https://www.syncfusion.com/winforms-ui-controls/spell-checker) provides support to get suggestion list by passing the wrong word in the below methods.
 
 * [GetSuggestions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetSuggestions_System_String_)
 * [GetPhoneticWords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetPhoneticWords_System_String_)
