@@ -13,7 +13,7 @@ This section discusses the following topics.
 
 ## Primitives
 
-The TreeViewAdv control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
+[WinForms TreeViewAdv](https://www.syncfusion.com/winforms-ui-controls/treeview) control supports a set of primitive collections, that can be set through the Primitives Collection Editor available with each node in the TreeViewAdv controls. 
 
 ![TreeNode primitive collection editor](Concepts-and--Features_images/Concepts-and--Features_img1.jpeg)
 
@@ -41,7 +41,7 @@ CustomControls
 
 ## Node Images
 
-TreeViewAdv control can be customized with images for each of its actions for example collapse / expand state, plus / minus of the tree etc., This section discusses about the below topics.
+[WinForms TreeViewAdv](https://www.syncfusion.com/winforms-ui-controls/treeview) control can be customized with images for each of its actions for example collapse / expand state, plus / minus of the tree etc., This section discusses about the below topics.
 
 * Left, Right and State Images
 * Expand and Collapse Image

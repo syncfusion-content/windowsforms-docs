@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Performance in Windows Forms TreeView
 
-The TreeViewAdv performance can be improved by the following properties and methods.
+[WinForms TreeViewAdv](https://www.syncfusion.com/winforms-ui-controls/treeview) performance can be improved by the following properties and methods.
 
 ## EnableVirtualization
 
