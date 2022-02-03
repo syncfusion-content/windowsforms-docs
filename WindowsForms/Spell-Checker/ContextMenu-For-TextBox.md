@@ -183,7 +183,7 @@ Me.spellCheckerAdv1.PerformSpellCheckUsingContextMenu(SpellEditor)
 
 {% endtabs %}
 
- ![](ContextMenu_images/ContextMenu.png)
+ ![ContextMenu in spellCheckerAdv](ContextMenu_images/ContextMenu.png)
 
 
 
