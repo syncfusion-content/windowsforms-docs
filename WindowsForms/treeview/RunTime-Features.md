@@ -13,7 +13,7 @@ This section will walk you through the following runtime features of TreeViewAdv
 
 ## Context Menu
 
-[WinForms TreeViewAdv](https://www.syncfusion.com/winforms-ui-controls/treeview) control provides option for displaying context menu on right clicking on any node in the TreeViewAdv control. It also let users add custom menu items.
+WinForms TreeViewAdv control provides option for displaying context menu on right clicking on any node in the TreeViewAdv control. It also let users add custom menu items.
 
 ### Adding Custom Menu Items
 
