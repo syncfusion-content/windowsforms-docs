@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting in Windows Forms Pivot Grid
 
-Pivot grid provides support to export its data into following formats.
+WinForms Pivot Grid provides support to export its data into following formats.
 
 1. Excel
 2. Word
