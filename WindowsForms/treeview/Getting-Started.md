@@ -370,4 +370,4 @@ In the above image we can show option button for India and china node.
     
 [TreeViewAdv.ActiveNode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeViewAdv.html#Syncfusion_Windows_Forms_Tools_TreeViewAdv_ActiveNode) holds  a currently selected node. By default, it is null.
 
-N> You can refer to our [WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Treeview example](https://github.com/syncfusion/winforms-demos/tree/master/treeview) that shows you how to render and configure the TreeView.
+N> You can refer to our [WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) feature tour page for its groundbreaking feature representations. You can also explore our [WinForms TreeView examples](https://github.com/syncfusion/winforms-demos/tree/master/treeview) to know how to present and manipulate data.
