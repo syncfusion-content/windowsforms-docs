@@ -24,7 +24,7 @@ This section explains how to add the pivot grid control in Windows Forms applica
 
 ### Adding control via designer
 
-The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control can be added through designer by following the below steps.
+The pivot grid control can be added through designer by following the below steps.
 
 1.Create a new **Windows Forms Application** in Visual Studio.
 
@@ -529,5 +529,3 @@ Me.pivotGridControl1.AllowSorting = True
 {% endtabs %}
 
 ![Sorting](Getting-Started_images/Sorting.png)
-
-N> You can also explore our [WinForms Pivot Grid example](https://github.com/syncfusion/winforms-demos/tree/master/pivotgrid) that shows you how to render and configure the pivot grid.

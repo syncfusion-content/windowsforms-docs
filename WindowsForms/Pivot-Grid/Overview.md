@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Pivot Grid Overview
 
-The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control is a powerful cell-oriented, extensible grid control that simulates the pivot table feature of Excel. The pivot grid, as the name implies, pivots data to be organized in a cross-tabulated form. The major advantage of pivot grid is that you can extract the desired information from a large list within seconds. Along with presenting the data, the pivot grid also enables you to summarize and group the data.
+The pivot grid control is a powerful cell-oriented, extensible grid control that simulates the pivot table feature of Excel. The pivot grid, as the name implies, pivots data to be organized in a cross-tabulated form. The major advantage of pivot grid is that you can extract the desired information from a large list within seconds. Along with presenting the data, the pivot grid also enables you to summarize and group the data.
 
 ## Key features
 
@@ -27,5 +27,3 @@ The important features of the pivot grid control are listed below:
 * **Exporting** - Allows to export the pivot grid control into various formats such as PDF, word and excel formats.
 * **Printing** - Allows to print the pivot grid control.
 * **Tooltip** - Displays row and column values of respective grid cells on mouse hovering.
-
-N> You can also explore our [WinForms Pivot Grid example](https://github.com/syncfusion/winforms-demos/tree/master/pivotgrid) that shows you how to render and configure the pivot grid.

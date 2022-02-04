@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing Values in Windows Forms Pivot Grid
 
-[WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) provides support to edit the values of both value cells and total cells. This support is useful when users need to edit the cell values at run time and save their changes to the underlying data source, thereby the changes will be reflected in the total cells based on the modified data.
+Pivot grid provides support to edit the values of both value cells and total cells. This support is useful when users need to edit the cell values at run time and save their changes to the underlying data source, thereby the changes will be reflected in the total cells based on the modified data.
 
 ## Editing value cells
 
