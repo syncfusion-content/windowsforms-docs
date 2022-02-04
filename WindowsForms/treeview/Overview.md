@@ -35,4 +35,4 @@ documentation: ug
 
 *	Add images as left, right and state image sources to the [TreeNodeAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TreeNodeAdv.html).
 
-N> You can also explore our [WinForms TreeView example](https://github.com/syncfusion/winforms-demos/tree/master/TreeView) that shows you how to render and configure the TreeView.
+N> You can also explore our [WinForms TreeView example](https://github.com/syncfusion/winforms-demos/tree/master/treeview) that shows you how to render and configure the TreeView.
