@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Navigation Drawer Overview
 
-`NavigationDrawer` is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
+[WinForms Navigation Drawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) is a sliding panel menu that comes out from the edge of the window and allows to have the contents in a hidden panel. It can be shown by swiping from any of the four screen edges or by demand.
 
 ![NavigationDrawer for Windows Forms providing sliding panel](Concepts-And-Features_images/navigationdrawer_img2.png)
 
