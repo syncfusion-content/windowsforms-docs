@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Docking Manager
 
-This section explains how to design a `DockingManager` control in a Windows Forms application and overview of its basic functionalities.
+This section explains how to design a [Docking Manager in Windows Forms](https://www.syncfusion.com/winforms-ui-controls/docking-manager) application and overview of its basic functionalities.
 
 ## Assembly deployment
 
@@ -36,7 +36,7 @@ You can create the Windows Forms application with docking manager control as fol
 
 **Creating the project**
 
-Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using the docking manager.
+Create a new Windows Forms project in the Visual Studio to [dock panels](https://www.syncfusion.com/winforms-ui-controls/docking-manager) as like Visual Studio using the docking manager.
 
 ## Adding control via designer
 
@@ -493,3 +493,5 @@ Me.dockingManager.LoadDockState(serializer, this.listBox1)
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can explore our [WinForms Docking Manager example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to render the Docking Manager in Windows Forms.
