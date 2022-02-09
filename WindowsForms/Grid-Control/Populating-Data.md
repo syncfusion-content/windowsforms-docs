@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Populating Data in Windows Forms Grid Control
 
-There are two ways to populate data into a GridControl. One way is to move the data directly into the GridControl and let the underlying grid manage the data. Another method is to use GridControl in a virtual mode whereby need to handle certain events to provide data to the grid whenever it is in demand.
+There are two ways to populate data into a Grid Control. One way is to move the data directly into the GridControl and let the underlying grid manage the data. Another method is to use GridControl in a virtual mode whereby need to handle certain events to provide data to the grid whenever it is in demand.
 
 The virtual method for providing data to a GridControl will be discussed in [Virtual Grid](http://help.syncfusion.com/windowsforms/grid/virtual-grid) section with more details. This section will walk through the different method used to store data directly into the GridControl’s internal storage. 
 
@@ -238,3 +238,5 @@ Me.gridControl1.ColStyles(3).CellValue = "Red"
 {% endtabs %}
 
 ![CellGrid_PopulatingData_img10](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img10.jpeg)
+
+N> You can explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.

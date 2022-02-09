@@ -557,3 +557,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+N> You can explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
