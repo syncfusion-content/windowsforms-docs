@@ -9,7 +9,7 @@ documentation: ug
 
 # Ribbon Form in Windows Forms Ribbon (RibbonControlAdv)
 
-`RibbonForm` is an extension that replaces the default form to enable different Visual styles to the ribbon. This RibbonForm now gives similar look and feel of Microsoft office, to its controls.
+`RibbonForm` is an extension that replaces the default form to enable different Visual styles to the [WinForms Ribbon](https://www.syncfusion.com/winforms-ui-controls/ribbon). This RibbonForm now gives similar look and feel of Microsoft office, to its controls.
 
 ## Appearance Settings
 
