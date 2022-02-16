@@ -154,8 +154,6 @@ series1.SeriesModel = New NonIndexedModel(New Double() {2, 5, 3, 4, 6}, New Doub
 
 {% endtabs %}	
 
-You can find the complete sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Chart-CustomDataPoints215363699).
-
 {% seealso %}
 
 [Populating Data in Windows Forms Chart](/WindowsForms/chart/chart-data)
