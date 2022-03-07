@@ -13,7 +13,7 @@ This section explains how to implement a similar UI as Microsoft Outlook using R
 
 ## Add RibbonControlAdv in Designer
 
-Add the below required assembly reference to the project. Then, We could Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. It will generate the Ribbon as shown below.
+Add the below required assembly reference to the project. Then, We could Drag and drop the ‘RibbonControlAdv’ from toolbox to designer window. It will generate the Ribbon control as shown below.
 
 * Syncfusion.Grid.Base.dll
 * Syncfusion.Grid.Windows.dll
