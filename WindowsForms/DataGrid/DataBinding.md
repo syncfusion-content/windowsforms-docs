@@ -547,4 +547,4 @@ Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endtabs %}
 
 ![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
-N> You can explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
+N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.

@@ -239,4 +239,4 @@ Me.gridControl1.ColStyles(3).CellValue = "Red"
 
 ![CellGrid_PopulatingData_img10](CellGrid_PopulatingData_images/CellGrid_PopulatingData_img10.jpeg)
 
-N> You can explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.
+N> You can also explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.

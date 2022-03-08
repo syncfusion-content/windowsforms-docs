@@ -393,4 +393,4 @@ style.ReadOnly = False
 
 Editing operation can be customized by using [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) and [CurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. 
 
-N> You can explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.
+N> You can also explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.
