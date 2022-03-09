@@ -27,11 +27,11 @@ Create a new Windows Forms project in Visual Studio to display the Windows Forms
 
 1. The Schedule control can be added to the application by dragging it from the Toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-   ![Adding WinForms schedule control through designer](Getting-Started_images/Getting-Started_img9.jpeg)
+   ![Adding WinForms Scheduler through designer](Getting-Started_images/Getting-Started_img9.jpeg)
 
 2. The ScheduleControl will be shown on the design surface. Following screenshot is a typical display of this. Notice the Appearance property in the property grid. This object has many properties that affects the appearance of the ScheduleControl.
 
-   ![Adding WinForms schedule control through designer](Getting-Started_images/Getting-Started_img10.png)
+   ![Adding WinForms Scheduler through designer](Getting-Started_images/Getting-Started_img10.png)
 	
 ### Adding control by code
 
@@ -96,13 +96,13 @@ Follow the steps to create an appointment:
 
 This file defines several classes that implements the ScheduleControl interfaces that manages the data associated with appointments appeared in the calendar. These interfaces are discussed in detail later in this UserGuide. 
 
-Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [winforms scheduler sample](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
+Use the implementation provided in the `SimpleScheduleDataProvider.cs` file. This file ships as part of the [Winforms Scheduler sample](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol/Scheduler%20Demo/CS). Drill down to this folder and add this file to your project by using the Solution Explorer window.
 
-![Adding appointment in winforms scheduler control](Getting-Started_images/Getting-Started_img12.jpeg)
+![Adding appointment in Winforms Scheduler](Getting-Started_images/Getting-Started_img12.jpeg)
 
 2. You can find the `SimpleScheduleDataProvider.cs` file in the [Syncfuion_build_installed_location]\Syncfusion\Essential Studio\&lt;Product_version&gt;\Windows\Schedule.Windows\ Samples\&lt;Framework_version&gt;\ScheduleSample\CS_ folder. Drill down to this folder and add this file to our project.
 
-![Adding appointment in winforms scheduler control](Getting-Started_images/Getting-Started_img13.jpeg)
+![Adding appointment in Winforms Scheduler](Getting-Started_images/Getting-Started_img13.jpeg)
 
 3. After adding the `SimpleScheduleDataProvider.cs` code file, add some code to your Form.cs to provide data support to your ScheduleControl.
 
@@ -179,7 +179,7 @@ End Namespace
 
 4. Press `F5` key to compile and run your application. 
 
-![Adding appointment in WinForms schedule control](Getting-Started_images/Getting-Started_img14.jpeg)
+![Adding appointment in WinForms Scheduler](Getting-Started_images/Getting-Started_img14.jpeg)
  
 ## Changing views
 
@@ -217,7 +217,7 @@ Clicking the Save and Close button on the Appointment, the screen will re-displa
 
 Right click on the appointment and select the Delete Item from the context menu to remove the selected appointment.
 
-![Deleting appointment in WinForms Schedule Control](Getting-Started_images/Getting-Started_img19.jpeg)
+![Deleting appointment in WinForms Scheduler Control](Getting-Started_images/Getting-Started_img19.jpeg)
 
 ### Modify
 
@@ -746,10 +746,11 @@ Protected Property OwnerList As ListObjectList
 End Property
 {% endhighlight %}
 {% endtabs %}
+
 ## Recurrence appointment
 
 The C# WinForms Calendar Scheduler control supports creating the recurring appointment. By this recurrence appointment, you can process on the daily, weekly, monthly, or yearly view to create the recurrence rule with or without end date. Details are explained in the following link:
 
 [Create the recurrence appointment in WinForms Calendar Scheduler control ](time-interval)
 
-N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) to know how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
+N> You can also explore our [WinForms Scheduler example](https://github.com/syncfusion/winforms-demos/tree/master/schedulecontrol) that shows how to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
