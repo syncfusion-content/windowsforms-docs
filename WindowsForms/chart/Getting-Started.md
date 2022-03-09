@@ -426,3 +426,5 @@ End Sub
 {% endseealso %}
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/winforms-chart-getting-started).
+
+N> You can also explore our [WinForms Chart example](https://github.com/syncfusion/winforms-demos/tree/master/chart) that shows how to render various chart types as well as how to easily configure with built-in support for creating stunning visual effects.
