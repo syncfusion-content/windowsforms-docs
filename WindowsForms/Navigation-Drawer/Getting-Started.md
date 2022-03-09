@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with Windows Forms Navigation Drawer
 
-This section explains how to display the items and adjust the image positions using Windows Forms NavigationDrawer control.
+This section explains how to display the items and adjust the image positions using [Windows Forms NavigationDrawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control.
 
 ## Assembly deployment
 
@@ -225,3 +225,5 @@ Me.drawerMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
 {% endtabs %}
 
 ![Setting TextImageRelation to an item](Getting-Started_images/positioning_text_and_image.png)
+
+N> You can also explore our [WinForms Navigation Drawer example](https://github.com/syncfusion/winforms-demos/tree/master/navigation/NavigationDrawer) that shows you how to render and configure the navigation drawer.
