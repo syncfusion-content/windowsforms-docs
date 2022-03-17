@@ -36,7 +36,7 @@ You can create the Windows Forms application with docking manager control as fol
 
 **Creating the project**
 
-Create a new Windows Forms project in the Visual Studio to [dock panels](https://www.syncfusion.com/winforms-ui-controls/docking-manager) as like Visual Studio using the docking manager.
+Create a new Windows Forms project in the Visual Studio to dock panels as like Visual Studio using the docking manager.
 
 ## Adding control via designer
 
