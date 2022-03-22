@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Windows Forms PDF Viewer | Syncfusion
+title: Getting Started with Windows Forms PDF Viewer Control | Syncfusion
 description: Learn here about getting started with Syncfusion Windows Forms PDF Viewer control, its elements and more details.
 platform: windowsforms
 control: PdfViewerControl
@@ -21,7 +21,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ### Adding from the installed location
 
-The Windows Forms PDF Viewer (PdfViewerControl) and dependent assemblies can be found from the below location in your machine. 
+The [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) (PdfViewerControl) and dependent assemblies can be found from the below location in your machine. 
 
 system drive:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\precompiledassemblies\{{ site.releaseversion }}\
 
@@ -103,3 +103,5 @@ Controls.Add(pdfViewerControl1)
 {% endtabs %}
 
 Refer to [Viewing PDF files](/windowsforms/pdf-viewer/working-with-pdf-viewer#viewing-pdf-files) for more information.
+
+N> You can also explore our [WinForms PDF Viewer example](https://github.com/syncfusion/winforms-demos/tree/master/pdfviewer) that shows you how to render and configure the PDF Viewer.
