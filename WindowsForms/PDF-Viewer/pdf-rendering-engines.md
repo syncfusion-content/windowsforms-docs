@@ -9,7 +9,7 @@ documentation: ug
 
 # PDF Rendering Engines in Windows Forms PDF Viewer (PdfViewerControl)
 
-Syncfusion WinForms PDF Viewer renders the PDF pages through 2 different rendering engines.
+Syncfusion [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) renders the PDF pages through 2 different rendering engines.
 
 * PDFium (Google Chrome’s PDF rendering engine)
 * SfPdf (Syncfusion’s Own PDF rendering engine)
