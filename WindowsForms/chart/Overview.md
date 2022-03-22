@@ -179,3 +179,5 @@ Select Chart from the second text box. Namespaces will be listed out at the left
 </td>
 </tr>
 </table>
+
+N> You can refer to our [WinForms Chart](https://www.syncfusion.com/winforms-ui-controls/chart) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Chart example](https://github.com/syncfusion/winforms-demos/tree/master/chart) that shows how to render various chart types as well as how to easily configure with built-in support for creating stunning visual effects.
