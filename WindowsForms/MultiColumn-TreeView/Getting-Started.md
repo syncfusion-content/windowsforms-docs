@@ -96,7 +96,7 @@ Me.Controls.Add(Me.multiColumnTreeView1)
 
 ### Adding Columns
 
-This section explains about how to add the columns into the **"MultiColumnTreeView"** control.
+This section explains about how to add the columns into the **"MultiColumnTreeView"** control using C# code.
 
 {% tabs %}
 
@@ -568,5 +568,6 @@ Me.multiColumnTreeView1.ActiveNode = Me.multiColumnTreeView1.Nodes(0)
 
 {% endtabs %}
 
+N> You can also explore our [WinForms MultiColumn TreeView example](https://github.com/syncfusion/winforms-demos/tree/master/multicolumntreeview) that shows how to render the MultiColumn TreeView in Windows Forms.
 
 
