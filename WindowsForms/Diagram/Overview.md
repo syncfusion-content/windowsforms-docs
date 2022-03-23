@@ -154,5 +154,4 @@ Class Reference</td><td>
 Online{{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
-
 N> You can refer to our [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
