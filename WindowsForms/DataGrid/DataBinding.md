@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Data Binding in Windows Forms DataGrid (SfDataGrid)
-SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property.
+[WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -547,4 +547,4 @@ Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endtabs %}
 
 ![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
-
+N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
