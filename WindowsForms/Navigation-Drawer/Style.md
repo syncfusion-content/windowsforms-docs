@@ -9,7 +9,7 @@ documentation: ug
 
 # Style in Windows Forms Navigation Drawer
 
-NavigationDrawer control has rich set of themes for professional representation. You can easily modify the look and feel of the NavigationDrawer using the built-in themes.
+[Windows Forms Navigation Drawer](https://www.syncfusion.com/winforms-ui-controls/navigation-drawer) control has rich set of themes for professional representation. You can easily modify the look and feel of the NavigationDrawer using the built-in themes.
 
 It has the below themes.
 
