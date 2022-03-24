@@ -32,7 +32,6 @@ Options such as zooming, panning, and map selection enable the effective interac
 Map control has the following structures:
 
 
-
 ![Windows Foms Maps Structure](Getting-Started_images/Getting-Started_img2.png)
 
 
