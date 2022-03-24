@@ -276,13 +276,21 @@ Title is added to chart to provide quick information to users about the data bei
 
 {% highlight c# %}
   
-this.chartControl1.Title.Text = "Product Sales";
+ChartTitle title = new ChartTitle();
+
+title.Text = "Product Sales";
+
+this.chartControl1.Titles.Add(title);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.chartControl1.Title.Text = "Product Sales"
+Dim title As ChartTitle = New ChartTitle("Sales")
+
+title.Text = "Product Sales"
+
+Me.chartControl1.Titles.Add(title);
 
 {% endhighlight %}
 
@@ -298,7 +306,7 @@ The [Legend](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Form
 
 {% highlight c# %}
   
-ChartSeries chartSeries1 = new ChartSeries("Sales");
+ChartSeries chartSeries = new ChartSeries("Sales");
 
 this.chartControl1.Legend.Visible = true;
 
@@ -312,7 +320,7 @@ this.chartControl1.LegendsPlacement = ChartPlacement.Outside;
 
 {% highlight vb %}
 
-Dim chartSeries1 As ChartSeries = New ChartSeries("Sales")
+Dim chartSeries As ChartSeries = New ChartSeries("Sales")
 
 Me.chartControl1.Legend.Visible = true
 
@@ -336,17 +344,17 @@ You can add data labels to chart to improve readability by enabling the [Display
 
 {% highlight c# %}
   
-chartSeries1.Style.DisplayText = true;
+chartSeries.Style.DisplayText = true;
 
-chartSeries1.Style.TextOrientation = ChartTextOrientation.Up;
+chartSeries.Style.TextOrientation = ChartTextOrientation.Up;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-chartSeries1.Style.DisplayText = true
+chartSeries.Style.DisplayText = true
 
-chartSeries1.Style.TextOrientation = ChartTextOrientation.Up
+chartSeries.Style.TextOrientation = ChartTextOrientation.Up
 
 {% endhighlight %}
 
@@ -370,11 +378,9 @@ this.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle;
 
 this.chartControl1.Tooltip.Font = new Font("Segoe UI", 10);
 
-chartSeries1.PointsToolTipFormat = "{2}";
+chartSeries.PrepareStyle += ChartSeries_PrepareStyle;
 
-chartSeries1.PrepareStyle += ChartSeries1_PrepareStyle;
-
-private void ChartSeries1_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
+private void ChartSeries_PrepareStyle(object sender, ChartPrepareStyleInfoEventArgs args)
 {
      ChartSeries series = sender as ChartSeries;
 
@@ -383,6 +389,8 @@ private void ChartSeries1_PrepareStyle(object sender, ChartPrepareStyleInfoEvent
      ChartPoint point = series.Points[index];
 
      args.Style.ToolTip = "Product : " + point.Category + "\nSales : " + point.YValues[0];
+	 
+	 args.Handled = true;
 }
 
 {% endhighlight %}
@@ -397,11 +405,9 @@ Me.chartControl1.Tooltip.BorderStyle = BorderStyle.FixedSingle
 
 Me.chartControl1.Tooltip.Font = New Font("Segoe UI", 10)
 
-chartSeries1.PointsToolTipFormat = "{2}"
+chartSeries.PrepareStyle = (chartSeries1.PrepareStyle + ChartSeries_PrepareStyle)
 
-chartSeries1.PrepareStyle = (chartSeries1.PrepareStyle + ChartSeries1_PrepareStyle)
-
-Private Sub ChartSeries1_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
+Private Sub ChartSeries_PrepareStyle(ByVal sender As Object, ByVal args As ChartPrepareStyleInfoEventArgs)
 
         Dim series As ChartSeries = CType(sender,ChartSeries)
 
@@ -410,6 +416,8 @@ Private Sub ChartSeries1_PrepareStyle(ByVal sender As Object, ByVal args As Char
         Dim point As ChartPoint = series.Points(index)
 
         args.Style.ToolTip = ("Product : " _ + (point.Category + (""& vbLf&"Sales : " + point.YValues(0))))
+		
+		args.Handled = true;
 
 End Sub
 
