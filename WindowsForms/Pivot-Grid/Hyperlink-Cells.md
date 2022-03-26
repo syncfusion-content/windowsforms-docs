@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink Cells in Windows Forms Pivot Grid
 
-Pivot grid allows hyperlinking of cells to retrieve a detailed information about a particular cell. Hyperlink cell can be enabled to the following types of cells.
+[WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) allows hyperlinking of cells to retrieve a detailed information about a particular cell. Hyperlink cell can be enabled to the following types of cells.
 
 * Row header cells
 * Column header cells

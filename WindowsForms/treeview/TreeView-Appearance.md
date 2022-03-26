@@ -13,7 +13,7 @@ This section provides options to the customize the tree structure and the nodes.
 
 ## Background Settings
 
-TreeView control lets you customize its background with colors and image.
+[WinForms TreeView](https://www.syncfusion.com/winforms-ui-controls/treeview) control lets you customize its background with colors and image.
 
 ### Background Colors
 

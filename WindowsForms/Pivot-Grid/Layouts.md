@@ -9,7 +9,7 @@ documentation: ug
 
 # Layouts in Windows Forms Pivot Grid
 
-Pivot grid provides support for the following types of layout in order to display the values of pivot fields.
+[Windows Forms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) provides support for the following types of layout in order to display the values of pivot fields.
 
 * Normal Layout
 * Flat Layout
