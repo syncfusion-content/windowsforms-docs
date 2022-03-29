@@ -260,3 +260,5 @@ Me.editControl1.ApplyConfiguration("LISP")
 {% endtabs %}
 
 ![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
+
+N> You can refer to our [WinForms Syntax Editor](https://www.syncfusion.com/winforms-ui-controls/syntax-editor) feature tour page for its unique feature sets. You can also explore our [WinForms Syntax Editor example](https://github.com/syncfusion/winforms-demos/tree/master/edit) that shows how to create interactive code editor applications with syntax highlighting, text indentation, intellisense, etc,.
