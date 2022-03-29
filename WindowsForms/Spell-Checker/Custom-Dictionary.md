@@ -71,7 +71,7 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> You can add multiple `HunspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `Spell CheckerAdv.Culture` respective `HunspellDictionary` is used for spell check.
+N> You can add multiple `HunspellDictionary` with various culture files into the `SpellCheckerAdv.Dictionaries` collection. Based on the `SpellCheckerAdv.Culture` respective `HunspellDictionary` is used for spell check.
 
 ![SpellCheck using Hunspell dictionary](Custom-Dictionary_images/HunSpell.png)
 
@@ -96,7 +96,7 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
-N> The following code snippets only explain the insertion of the Ispell dictionary to the `Spell Checker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
+N> The following code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
 {% tabs %}
 {% highlight C# %}
@@ -148,7 +148,7 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 3.Add the  `OpenOfficeDictionary` into the `SpellCheckerAdv.Dictionaries` collection
 
-4.Setting the required culture to the `Spell CheckerAdv.Culture` property.
+4.Setting the required culture to the `SpellCheckerAdv.Culture` property.
 
 N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SpellCheckerAdv to RichTextBox control](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#configuring-spellcheckeradv-into-richtextbox-control) topic.
 
