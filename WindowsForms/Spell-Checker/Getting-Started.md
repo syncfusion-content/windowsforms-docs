@@ -397,4 +397,4 @@ Me.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful
 
 {% endtabs %}
 
-![WinForms Spell CheckerAdv style](Getting-Started_images/GettingStarted2.png)
+![SpellCheckerAdv style](Getting-Started_images/GettingStarted2.png)

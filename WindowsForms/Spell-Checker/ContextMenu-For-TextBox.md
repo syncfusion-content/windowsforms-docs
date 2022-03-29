@@ -9,7 +9,7 @@ documentation: ug
 
 # Context menu for TextBox
 
-[WinForms SpellCheckerAdv](https://www.syncfusion.com/winforms-ui-controls/spell-checker) offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
+[WinForms Spell Checker](https://www.syncfusion.com/winforms-ui-controls/spell-checker) offers Microsoft Office application like context menu suggestions and helps user to correct spell errors by choosing correct option from the listed suggestions.
 
 
 The following steps helps to add context menu support in the TextBox control through code.
@@ -18,7 +18,7 @@ The following steps helps to add context menu support in the TextBox control thr
 1) Create a Windows Forms project in Visual Studio.
 
 
-2) Inherit Spell CheckerAdvEditorTools interface of Spell CheckerAdv and Initialize all the methods and properties in interface.
+2) Inherit ISpellCheckerAdvEditorTools interface of SpellCheckerAdv and Initialize all the methods and properties in interface.
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ Me.spellCheckerAdv1.PerformSpellCheckUsingContextMenu(SpellEditor)
 
 {% endtabs %}
 
- ![ContextMenu in spell CheckerAdv](ContextMenu_images/ContextMenu.png)
+ ![ContextMenu in WinForms Spell CheckerAdv](ContextMenu_images/ContextMenu.png)
 
 
 
