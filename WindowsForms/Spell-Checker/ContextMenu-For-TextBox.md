@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context-Menu-For-TextBox | WindowsForms | Syncfusion
-description:  Learn here all about how to set context menu for textbox in Syncfusion WinForms Spell Checker its elements and more
+description: Learn here all about how to set context menu for textbox in Syncfusion WinForms Spell Checker its elements and more
 platform: WindowsForms
 control: SpellCheckerAdv
 documentation: ug
