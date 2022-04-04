@@ -1,4 +1,4 @@
-﻿# Syncfusion WinForms Documentation
+# Syncfusion WinForms Documentation
 
 This is the GitHub repository for the technical product documentation for Syncfusion WinForms components. This documentation is published to http://help.syncfusion.com/windowsforms 
 
