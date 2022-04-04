@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms Spreadsheet Overview
 
-The Spreadsheet is an Excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without Excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. Spreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas.
+The [WinForms Spreadsheet](https://www.syncfusion.com/winforms-ui-controls/spreadsheet) is an Excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without Excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. Spreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas.
 
 Spreadsheet includes several advanced features like 
 
@@ -58,3 +58,5 @@ Spreadsheet includes several advanced features like
 * **Localization** - Provides support to localize all the static text in a Ribbon and all dialogs to any desired language.
 
 * **Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma delimited) respectively.
+
+N> You can also explore our [WinForms Spreadsheet example](https://github.com/syncfusion/winforms-demos/tree/master/spreadsheet) that shows you how to render and configure the Spreadsheet.

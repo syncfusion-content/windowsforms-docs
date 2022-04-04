@@ -11,7 +11,7 @@ documentation: ug
 
 [WinForms Pdf Viewer](https://www.syncfusion.com/winforms-ui-controls/pdf-viewer) Control allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog will be opened upon clicking the Print button.
 
-![PrintDialog Window](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
+![Windows Forms PDF Viewer Printing PDF Files](Working-with-PDF-Viewer_images/Working-with-PDF-Viewer_img1.png)
 
 ## Silent Printing
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms MultiColumn TreeView Overview
 
-MultiColumnTreeView is an advanced treeview control with multiple columns. This control displays the contents in the form of tree with additional columns displaying related data for the tree nodes and with its robust features, it gives a visually appealing tree structure. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
+[WinForms MultiColumn TreeView](https://www.syncfusion.com/winforms-ui-controls/multicolumn-treeview) is an advanced treeview control with multiple columns. This control displays the contents in the form of tree with additional columns displaying related data for the tree nodes and with its robust features, it gives a visually appealing tree structure. The Styles Architecture for the control lets the users to define styles for nodes at different levels of the tree and columns style for individual columns.
 
 
 ![Overview of MultiColumnTreeView](Overview_Images/overview.png)
