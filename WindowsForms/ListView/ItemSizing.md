@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Item Sizing
-description: This section explains about the Item Sizing support in SfListView.
+title: Item Sizing in WinForms ListView Control | Syncfusion
+description: Learn here about Item Sizing in Syncfusion Essential WinForms ListView (SfListView) Control, its elements, and more.
 platform: windowsforms
 control: SfListView
 documentation: ug
 ---
 
-# Item Sizing
+# Item Sizing in WinForms ListView (SfListView)
 This section explains how to customize the item size in the SfListView.
 
 ## Customizing item and group height
@@ -24,7 +24,7 @@ sfListView1.GroupHeaderHeight = 50
 {% endhighlight %}
 {% endtabs %}
 
-![](Item Sizing_images/ItemSizing_img1.png)
+![WinForms ListView Item Sizing](Item Sizing_images/ItemSizing_img1.png)
 
 ## Customize item size of an item on-demand
 The SfListView allows customizing the height of an item on-demand by the [SfListView.QueryItemHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event using the item index. This event is raised whenever items come to view and triggered with [QueryItemHeightEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.QueryItemHeightEventArgs.html).
@@ -60,7 +60,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![](Item Sizing_images/ItemSizing_img2.png)
+![WinForms ListView item size of an item on-demand](Item Sizing_images/ItemSizing_img2.png)
 
 ## Auto fit the items based on content
 The SfListView allows dynamically adjusting size of the items based on the loaded content by defining the [SfListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of auto fit modes as listed as follows:
