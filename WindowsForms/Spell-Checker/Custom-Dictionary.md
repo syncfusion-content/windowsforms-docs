@@ -13,7 +13,7 @@ You can use a default and custom dictionaries to spell check the document based 
 
 ## Default SpellCheck Dictionary
 
-[SpellCheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
+[WinForms Spell CheckerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
 
 ## Load your own dictionaries for any language
 
