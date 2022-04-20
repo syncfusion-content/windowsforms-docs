@@ -26,7 +26,7 @@ sfComboBox1.DropDownListView.ItemHeight = 40
 
 ## Auto fit the items based on content
 
-The SfComboBox allows dynamically adjusting size of the items based on the loaded content by defining the [sfComboBox1.DropDownListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of `AutoFitMode` as listed as follows:
+The [Windows Forms ComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox) (SfComboBox) allows dynamically adjusting size of the items based on the loaded content by defining the [sfComboBox1.DropDownListView.AutoFitMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_AutoFitMode) property. The control has two types of `AutoFitMode` as listed as follows:
 
 * Height: Auto fits the items based on the content. It considers height of the item when the orientation is vertical.
 * None: Layouts the items by `ItemHeight`.
