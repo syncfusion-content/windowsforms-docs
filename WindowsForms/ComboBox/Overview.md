@@ -9,7 +9,7 @@ documentation: ug
 
 # Windows Forms ComboBox (SfComboBox) Overview
 
-Combo box is a text box component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, filtering, UI customization, accessibility, and more.
+[WinForms Combo box](https://www.syncfusion.com/winforms-ui-controls/combobox) is a text box component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, filtering, UI customization, accessibility, and more.
 
 Key features are:
 
@@ -29,7 +29,7 @@ Key features are:
 
 Syncfusion WinForms suite comes up with the following different combobox:
 
-* [SfComboBox](https://www.syncfusion.com/products/windows-forms/combobox )
+* [SfComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox)
 * [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview )
 * [MultiSelectionComboBox](https://www.syncfusion.com/products/windows-forms/multiselection-combobox)
 * [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview )
