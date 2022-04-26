@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Performance in Windows Forms Grid Control
-GridControl has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without its performance being affected.
+[WinForms Grid Control](https://www.syncfusion.com/winforms-ui-controls/grid-control) has an extremely high performance standard. It can handle high frequency updates and work with large amounts of data without its performance being affected.
 
 ## High Frequency Real Time Updates
 GridControl supports frequent updates that occur in random cells across the grid while keeping CPU usage to a minimum level.

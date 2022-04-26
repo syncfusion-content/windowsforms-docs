@@ -47,12 +47,12 @@ Me.ribbonControlAdv1.TouchMode = True
 
 {% endtabs %}
 
-![Touch-Support_img1](Touch_Support_Images/Touch-Support_img1.jpg)
+![Windows Forms Ribbon Touch Support](Touch_Support_Images/Touch-Support_img1.jpg)
 
 ## Switching between Touch and Mouse Mode
 
 During this mode, an extra dropdown button will be added in QAT. This dropdown contains two modes `Touch` and `Mouse`.
 
-![Touch-Support_img2](Touch_Support_Images/Touch-Support_img2.jpg)
+![Windows Forms Ribbon Touch and Mouse Mode](Touch_Support_Images/Touch-Support_img2.jpg)
 
 Selecting the touch will provide extra spaces between the elements for better touch support and Mouse mode will take back to standard ribbon size.

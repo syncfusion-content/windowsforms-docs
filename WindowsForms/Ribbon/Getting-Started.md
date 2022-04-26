@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Windows Forms Ribbon (RibbonControlAdv)
 
-This section explains how to implement a similar UI as Microsoft Outlook using Ribbon.
+This section explains how to implement a similar UI as Microsoft Outlook using [WinForms Ribbon](https://www.syncfusion.com/winforms-ui-controls/ribbon).
 
 ## Add RibbonControlAdv in Designer
 
@@ -1807,4 +1807,4 @@ N> ApplicationMenu can be accessed only when ribbon style is Office2007
 
 The simplified layout is designed to display the most commonly used Ribbon commands in a single line interface, allowing more screen space for compact content viewing, while other commands are placed inside the overflow menu. To know more about the simplified layout, refer [here](https://help.syncfusion.com/windowsforms/ribbon/simplifiedlayout).
 
-
+N> You can also explore our [WinForms Ribbon example](https://github.com/syncfusion/winforms-demos/tree/master/ribbon) that shows how to accommodates all the tools required for an application in a single, easy-to-navigate user interface similar to Microsoft Office. 

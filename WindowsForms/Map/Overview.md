@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview in Windows Forms Map (Maps)
 
-Maps is a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on the earth. Using pan and zoom features, maps can be navigated.
+[WinForms Maps](https://www.syncfusion.com/winforms-ui-controls/map) is a graphical representation of geographical data. This is used to represent the statistical data of a particular geographical area on the earth. Using pan and zoom features, maps can be navigated.
 
 Maps control is used for users who want to build a Windows application that can be used in any .NET environment including C#, VB.NET, and C++ to develop the geographical projects.  
 
@@ -117,3 +117,5 @@ Online{{ '<http://help.syncfusion.com/windowsforms/maps/overview>' | markdownify
 Class Reference</td><td>
 Online{{ '<http://help.syncfusion.com/windowsforms/overview>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Maps_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
+
+N> You can also explore our [WinForms Map example](https://github.com/syncfusion/winforms-demos/tree/master/map) that shows you how to render and configure the Map.
