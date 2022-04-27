@@ -321,10 +321,10 @@ The GetColor() function of ColorModel can be used to acquire a list of colors fo
 
     . . .
     
-    int numberOfPaletteColor = this.chartControl1.Palette == ChartColorPalette.Metro ? ChartColorModel.NumColorsInMetroPalette : ChartColorModel.NumColorsInPalette;
+    int numberOfPaletteColors = this.chartControl1.Palette == ChartColorPalette.Metro ? ChartColorModel.NumColorsInMetroPalette : ChartColorModel.NumColorsInPalette;
     
     List<Color> paletteColors = new List<Color>();
-    for (int i = 0; i < numberOfPaletteColor; i++)
+    for (int i = 0; i < numberOfPaletteColors; i++)
     {
         paletteColors.Add(this.chartControl1.Model.ColorModel.GetColor(i));
     }
