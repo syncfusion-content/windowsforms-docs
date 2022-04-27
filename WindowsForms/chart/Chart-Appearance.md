@@ -313,7 +313,7 @@ You can set the individual color for each segment of the series by using the Int
 
 ### Getting chart palette colors
 
-The GetColor() function of ColorModel can be used to acquire a list of colors for the palette in the chart control. The following code example demonstrates how to obtain the chart palette color list..
+The GetColor() function of ColorModel can be used to acquire a list of colors for the palette in the chart control. The following code example demonstrates how to obtain the chart palette color list.
 
 {% highlight c# %}
 
