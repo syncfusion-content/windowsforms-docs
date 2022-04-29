@@ -10,10 +10,7 @@ documentation: ug
 
 # Installation using Offline Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/windowsforms/installation/download) section to learn how to get the Windows Forms installer.
-
-I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
-For more information, please see [this](https://help.syncfusion.com/windowsforms/licensing/licensing) help topic.
+You can refer to the [**Download**](https://help.syncfusion.com/windowsforms/installation/download) section to learn how to get the Windows Forms trial or licensed installer.
 
 ## Installing with UI   
 
