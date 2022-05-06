@@ -311,6 +311,25 @@ You can set the individual color for each segment of the series by using the Int
 
 ![Predefined palettes in Winforms Chart series](Chart-Appearance_images/Series_Palette.PNG)
 
+### Getting chart palette colors
+
+The GetColor() function of ColorModel can be used to acquire a list of colors for the palette in the chart control. The following code example demonstrates how to obtain the chart palette color list.
+
+{% highlight c# %}
+
+    this.chartControl1 = new ChartControl();
+
+    . . .
+    
+    int numberOfPaletteColors = this.chartControl1.Palette == ChartColorPalette.Metro ? ChartColorModel.NumColorsInMetroPalette : ChartColorModel.NumColorsInPalette;
+    
+    List<Color> paletteColors = new List<Color>();
+    for (int i = 0; i < numberOfPaletteColors; i++)
+    {
+        paletteColors.Add(this.chartControl1.Model.ColorModel.GetColor(i));
+    }
+	
+{% endhighlight %}
 
 ## Custom Palette
 
