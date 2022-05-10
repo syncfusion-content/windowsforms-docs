@@ -7,7 +7,7 @@ control: Office2010 Form
 documentation: ug
 ---
 
-## Caption alignment
+# Caption alignment in WinForms Office2010Form
 
 The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property.
 
