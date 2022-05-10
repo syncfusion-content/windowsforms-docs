@@ -87,7 +87,7 @@ partial class Form1
 
 Screenshot:
 
-![Equal Color Mapping in Windows Forms Map](Customizing-Map-appearance_images/Customizing-Map-appearance_img2.png)
+![Equal Color Mapping in Windows Forms Map](Customizing-Map-appearance_images/customizing-map-appearance-with-equal-color-mapping.png)
 
 ## Range color mapping
 
