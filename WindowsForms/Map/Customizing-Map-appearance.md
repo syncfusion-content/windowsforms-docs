@@ -73,9 +73,9 @@ partial class Form1
             shapeLayer.ShapeIDTableField = "STATE_NAME";
             shapeLayer.ShapeSetting.ShapeColorValuePath = "Candidate";
             shapeLayer.ShapeSetting.ShapeStrokeThickness = 1.5;
-            shapeLayer.ShapeSetting.FillSetting.ColorMappings = new System.Collections.ObjectModel.ObservableCollection<ColorMapping>();
-            shapeLayer.ShapeSetting.FillSetting.ColorMappings.Add(new EqualColorMapping { Color = Color.Red, Value= "Romney" });
-            shapeLayer.ShapeSetting.FillSetting.ColorMappings.Add(new EqualColorMapping { Color = Color.Blue, Value = "Obama" });
+            shapeLayer.ShapeSetting.FillSetting.ColorMappings = new System.Collections.ObjectModel.ObservableCollection<ColorMapping>();            
+            shapeLayer.ShapeSetting.FillSetting.ColorMappings.Add(new EqualColorMapping { Color = Color.FromArgb(1, 216, 68, 68), Value = "Romney" });
+            shapeLayer.ShapeSetting.FillSetting.ColorMappings.Add(new EqualColorMapping { Color = Color.FromArgb(1, 49, 109, 181), Value = "Obama" });
             this.mapsControl1.Layers.Add(shapeLayer);
          }
 } 
