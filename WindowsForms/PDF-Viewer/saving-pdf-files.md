@@ -21,7 +21,7 @@ Save can be performed using the following steps.
 
 ## Programmatically Save the Loaded PDF Document
 
-WinForms PDFViewer allows a user to save the loaded PDF file to a specific location using the PDF Viewer LoadedDocument object. Refer to the following code sample.  
+WinForms PDFViewer allows a user to save the loaded PDF file to a specific location using the PDF Viewer [LoadedDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html#Syncfusion_Windows_Forms_PdfViewer_PdfViewerControl_LoadedDocument) object. Refer to the following code sample.  
 
 {% tabs %}
 {% highlight c# %}
