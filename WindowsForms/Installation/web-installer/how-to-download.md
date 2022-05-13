@@ -73,4 +73,4 @@ You should initiate an evaluation if you have already obtained our components th
   
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
 
-You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/web-installer/how-to-install) links for step-by-step installation guidelines.	
+You can also refer to the [**web installer**](https://help.syncfusion.com/windowsforms/installation/install-using-the-web-installer) links for step-by-step installation guidelines.	
