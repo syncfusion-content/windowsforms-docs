@@ -70,7 +70,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/AddNewRowIcon.png"/>
+<img src= "Rows_images/AddNewRowIcon.png" alt="WinForms DataGrid AddNewRowIcon"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -78,7 +78,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/rowError.png"/>
+<img src= "Rows_images/rowError.png" alt="WinForms DataGrid rowError"/>
 </td>
 <td>
 Denotes that the current row which has errors.
