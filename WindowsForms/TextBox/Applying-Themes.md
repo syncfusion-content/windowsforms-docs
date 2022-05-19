@@ -7,7 +7,7 @@ control: EditorsPackage
 documentation: ug
 ---
 
-## Applying Themes in EditorsPackage
+# Applying Themes in EditorsPackage
 
 The [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property specifies whether XPThemes should be used or not when [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) is set to `Fixed3D`.
 
