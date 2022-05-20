@@ -2432,8 +2432,7 @@ private void SfDataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndU
 
 {% endhighlight %}
 {% highlight vb %}
-
-Private Me.sfDataGrid.DetailsViewLoading += AddressOf SfDataGrid_DetailsViewLoading
+AddHandler Me.sfDataGrid1.DetailsViewLoading, AddressOf SfDataGrid_DetailsViewLoading
 
 Private Sub SfDataGrid_DetailsViewLoading(ByVal sender As Object, ByVal e As DetailsViewLoadingAndUnloadingEventArgs)
     Dim record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1)

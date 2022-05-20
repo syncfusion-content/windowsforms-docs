@@ -305,11 +305,12 @@ private void SfDataGrid_PreviewRowExpanding(object sender, PreviewRowExpandingEv
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.PreviewRowExpanding += AddressOf SfDataGrid_PreviewRowExpanding
+AddHandler sfDataGrid1.PreviewRowExpanding, AddressOf SfDataGrid_PreviewRowExpanding
 
 Private Sub SfDataGrid_PreviewRowExpanding(ByVal sender As Object, ByVal e As PreviewRowExpandingEventArgs)
-	e.Cancel = True
+    e.Cancel = True
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -325,11 +326,12 @@ private void SfDataGrid_PreviewRowCollapsing(object sender, PreviewRowCollapsing
 }   
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.PreviewRowCollapsing += AddressOf SfDataGrid_PreviewRowCollapsing
+AddHandler sfDataGrid1.PreviewRowCollapsing, AddressOf SfDataGrid_PreviewRowCollapsing
 
 Private Sub SfDataGrid_PreviewRowCollapsing(ByVal sender As Object, ByVal e As PreviewRowCollapsingEventArgs)
-	e.Cancel = True
+    e.Cancel = True
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 

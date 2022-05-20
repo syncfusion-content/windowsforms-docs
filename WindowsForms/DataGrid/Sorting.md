@@ -389,35 +389,36 @@ private object GetOrderSource(OrderInfo source, string name)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.dataGrid.SortColumnsChanged += AddressOf dataGrid_SortColumnsChanged
+AddHandler Me.sfDataGrid1.SortColumnsChanged, AddressOf dataGrid_SortColumnsChanged
 
 Private Sub dataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
-	Dim viewModel = TryCast(Me.DataContext, ViewModel)
+    Dim viewModel = TryCast(Me.DataContext, ViewModel)
 
-	Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
+    Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
-	For Each sortColumn In Me.dataGrid.View.SortDescriptions
-		Dim columnName = sortColumn.PropertyName
+    For Each sortColumn In Me.sfDataGrid1.View.SortDescriptions
+        Dim columnName = sortColumn.PropertyName
 
-		If sortColumn.Direction = ListSortDirection.Ascending Then
-			OrderedSource = OrderedSource.OrderBy(Function(source) GetOrderSource(source, columnName))
+        If sortColumn.Direction = ListSortDirection.Ascending Then
+            OrderedSource = OrderedSource.OrderBy(Function(source) GetOrderSource(source, columnName))
 
-		Else
-			OrderedSource = OrderedSource.OrderByDescending(Function(source) GetOrderSource(source, columnName))
-		End If
-	Next sortColumn
+        Else
+            OrderedSource = OrderedSource.OrderByDescending(Function(source) GetOrderSource(source, columnName))
+        End If
+    Next sortColumn
 End Sub
 
 Private Function GetOrderSource(ByVal source As OrderInfo, ByVal name As String) As Object
-	Dim propInfo = source.GetType().GetRuntimeProperty(name)
+    Dim propInfo = source.GetType().GetRuntimeProperty(name)
 
-	If propInfo IsNot Nothing Then
+    If propInfo IsNot Nothing Then
 
-		' get the current sort column value
-		Return propInfo.GetValue(source)
-	End If
+        ' get the current sort column value
+        Return propInfo.GetValue(source)
+    End If
 
-	Return Nothing
+    Return Nothing
 End Function
+
 {% endhighlight %}
 {% endtabs %}

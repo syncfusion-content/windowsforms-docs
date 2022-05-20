@@ -260,18 +260,19 @@ void options_HeaderFooterExporting(object sender, Syncfusion.WinForms.DataGridCo
 }
 {% endhighlight %}
 {% highlight vb %}
-Private options As New PdfExportingOptions()
-Private options.HeaderFooterExporting += AddressOf options_HeaderFooterExporting
-Private document = sfDataGrid.ExportToPdf(options)
+Dim options As New PdfExportingOptions()
+AddHandler options.HeaderFooterExporting, AddressOf options_HeaderFooterExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub options_HeaderFooterExporting(ByVal sender As Object, ByVal e As Syncfusion.WinForms.DataGridConverter.Events.PdfHeaderFooterEventArgs)
-	Dim font As PdfFont = New PdfStandardFont(PdfFontFamily.TimesRoman, 20f, PdfFontStyle.Bold)
-	Dim width = e.PdfPage.GetClientSize().Width
-	Dim header As New PdfPageTemplateElement(width, 38)
-	header.Graphics.DrawString("Order Details", font, PdfPens.Black, 70, 3)
-	e.PdfDocumentTemplate.Top = header
+    Dim font As PdfFont = New PdfStandardFont(PdfFontFamily.TimesRoman, 20.0F, PdfFontStyle.Bold)
+    Dim width = e.PdfPage.GetClientSize().Width
+    Dim header As New PdfPageTemplateElement(width, 38)
+    header.Graphics.DrawString("Order Details", font, PdfPens.Black, 70, 3)
+    e.PdfDocumentTemplate.Top = header
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,22 +422,23 @@ void options_Exporting(object sender, DataGridPdfExportingEventArgs e)
 
 {% endhighlight %}
 {% highlight vb %}
-Private options As New PdfExportingOptions()
-options.Exporting += options_Exporting;
-Private document = sfDataGrid.ExportToPdf(options)
+Dim options As New PdfExportingOptions()
+AddHandler options.Exporting, AddressOf options_Exporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub options_Exporting(ByVal sender As Object, ByVal e As DataGridPdfExportingEventArgs)
-	If e.CellType Is ExportCellType.HeaderCell Then
-		e.CellStyle.BackgroundBrush = PdfBrushes.LightSteelBlue
+    If e.CellType = ExportCellType.HeaderCell Then
+        e.CellStyle.BackgroundBrush = PdfBrushes.LightSteelBlue
 
-	ElseIf e.CellType Is ExportCellType.GroupCaptionCell Then
-		e.CellStyle.BackgroundBrush = PdfBrushes.LightGray
+    ElseIf e.CellType = ExportCellType.GroupCaptionCell Then
+        e.CellStyle.BackgroundBrush = PdfBrushes.LightGray
 
-	ElseIf e.CellType Is ExportCellType.RecordCell Then
-		e.CellStyle.BackgroundBrush = PdfBrushes.Wheat
-	End If
+    ElseIf e.CellType = ExportCellType.RecordCell Then
+        e.CellStyle.BackgroundBrush = PdfBrushes.Wheat
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -461,20 +463,21 @@ private void OnPdfExporting(object sender, DataGridPdfExportingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private options As New PdfExportingOptions()
-Private options.Exporting += AddressOf OnPdfExporting
-Private document = sfDataGrid.ExportToPdf(options)
+Dim options As New PdfExportingOptions()
+AddHandler options.Exporting, AddressOf OnPdfExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub OnPdfExporting(ByVal sender As Object, ByVal e As DataGridPdfExportingEventArgs)
-	If e.CellType IsNot ExportCellType.RecordCell Then
-		Return
-	End If
+    If e.CellType <> ExportCellType.RecordCell Then
+        Return
+    End If
 
-	'creates a new font from the font file.                
-	Dim font = New PdfTrueTypeFont("..\..\Resources\SegoeUI.ttf", 9f, PdfFontStyle.Regular)
-	e.CellStyle.Font = font
+    'creates a new font from the font file.                
+    Dim font = New PdfTrueTypeFont("..\..\Resources\SegoeUI.ttf", 9.0F, PdfFontStyle.Regular)
+    e.CellStyle.Font = font
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -562,20 +565,20 @@ void OnCellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Dim options As New PdfExportingOptions()
-options.CellExporting += OnCellExporting
-Dim document = sfDataGrid.ExportToPdf(options)
+AddHandler options.CellExporting, AddressOf OnCellExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub OnCellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-	' Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
-	If e.CellType Is ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
-		'if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
-		If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then
-			e.CellValue = "Even"
-		Else
-			e.CellValue = "Odd"
-		End If
-	End If
+    ' Based on the column mapping name and the cell type, we can change the cell values while exporting to excel.
+    If e.CellType = ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
+        'if the cell value is Odd, "Odd" will be displayed else "Even" will be displayed.
+        If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then
+            e.CellValue = "Even"
+        Else
+            e.CellValue = "Odd"
+        End If
+    End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -609,22 +612,23 @@ void options_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Dim options As New PdfExportingOptions()
-options.CellExporting += options_CellExporting
-Dim document = sfDataGrid.ExportToPdf(options)
+AddHandler options.CellExporting, AddressOf options_CellExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub options_CellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-	If Not(TypeOf e.NodeEntry Is OrderInfo) Then
-		Return
-	End If
+    If Not (TypeOf e.NodeEntry Is OrderInfo) Then
+        Return
+    End If
 
-	If (TryCast(e.NodeEntry, OrderInfo)).CustomerID = "MEREP" Then
-		Dim cellStyle = New PdfGridCellStyle()
-		cellStyle.BackgroundBrush = PdfBrushes.LightPink
-		cellStyle.Borders.All = New PdfPen(PdfBrushes.DarkGray, 0.2f)
-		e.PdfGridCell.Style = cellStyle
-	End If
+    If (TryCast(e.NodeEntry, OrderInfo)).CustomerID = "MEREP" Then
+        Dim cellStyle = New PdfGridCellStyle()
+        cellStyle.BackgroundBrush = PdfBrushes.LightPink
+        cellStyle.Borders.All = New PdfPen(PdfBrushes.DarkGray, 0.2F)
+        e.PdfGridCell.Style = cellStyle
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -688,22 +692,23 @@ void options_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {% endhighlight %}
 {% highlight vb %}
 Dim options As New PdfExportingOptions()
-options.CellExporting += options_CellExporting
-Dim document = sfDataGrid.ExportToPdf(options)
+AddHandler options.CellExporting, AddressOf options_CellExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
 Private Sub options_CellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-	If e.CellType IsNot ExportCellType.RecordCell Then
-		Return
-	End If
+    If e.CellType <> ExportCellType.RecordCell Then
+        Return
+    End If
 
-	Dim format As New PdfStringFormat()
+    Dim format As New PdfStringFormat()
 
-	'format the string from right to left.
-	format.TextDirection = PdfTextDirection.RightToLeft
+    'format the string from right to left.
+    format.TextDirection = PdfTextDirection.RightToLeft
     format.Alignment = PdfTextAlignment.Right
-	e.PdfGridCell.StringFormat = format
+    e.PdfGridCell.StringFormat = format
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -740,35 +745,36 @@ private void cellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-Private options As New PdfExportingOptions()
-Private options.CellExporting += AddressOf cellExporting
-Private document = sfDataGrid.ExportToPdf(options)
+Dim options As New PdfExportingOptions()
+AddHandler options.CellExporting, AddressOf OnCellExporting
+Dim document = sfDataGrid1.ExportToPdf(options)
 document.Save("Sample.pdf")
 
-Private Sub cellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
-	If e.CellType Is ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
-		Dim style = New PdfGridCellStyle()
-		Dim normalBorder As New PdfPen(PdfBrushes.DarkGray, 0.2f)
-		Dim image As System.Drawing.Image = Nothing
+Private Sub OnCellExporting(ByVal sender As Object, ByVal e As DataGridCellPdfExportingEventArgs)
+    If e.CellType = ExportCellType.RecordCell AndAlso e.ColumnName = "OrderID" Then
+        Dim style = New PdfGridCellStyle()
+        Dim normalBorder As New PdfPen(PdfBrushes.DarkGray, 0.2F)
+        Dim image As System.Drawing.Image = Nothing
 
-		'Images are exported based on the CellValue 
-		If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then
-			'Access the image from the specified path 
-			image = SystemIcons.Information.ToBitmap()
-		Else
-			image = SystemIcons.Shield.ToBitmap()
-		End If
+        'Images are exported based on the CellValue 
+        If Convert.ToInt16(e.CellValue) Mod 2 = 0 Then
+            'Access the image from the specified path 
+            image = SystemIcons.Information.ToBitmap()
+        Else
+            image = SystemIcons.Shield.ToBitmap()
+        End If
 
-		'Create the PDFImage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
-		style.BackgroundImage = PdfImage.FromImage(image)
-		e.PdfGridCell.ImagePosition = PdfGridImagePosition.Center
-		e.PdfGridCell.Style = style
+        'Create the PDFImage for the specified image and assigned to BackgroundImage of the PdfGridCellStyle
+        style.BackgroundImage = PdfImage.FromImage(image)
+        e.PdfGridCell.ImagePosition = PdfGridImagePosition.Center
+        e.PdfGridCell.Style = style
 
-		'customize the Border color of PdfGridCell
-		e.PdfGridCell.Style.Borders.All = normalBorder
-		e.CellValue = String.Empty
-	End If
+        'customize the Border color of PdfGridCell
+        e.PdfGridCell.Style.Borders.All = normalBorder
+        e.CellValue = String.Empty
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
