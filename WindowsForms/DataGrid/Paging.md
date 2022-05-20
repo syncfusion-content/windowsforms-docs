@@ -426,11 +426,12 @@ sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRow
 {% highlight vb %}
 Private employeeCollection As List(Of Employees)
 
-AddHandler Me.sfDataPager1.OnDemandLoading += AddressOf OnDemandLoading
+AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
-sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
+    sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -492,15 +493,16 @@ private void OnDemandLoading(object sender, OnDemandLoadingEventArgs e)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler Me.sfDataPager1.OnDemandLoading += AddressOf OnDemandLoading
+AddHandler Me.sfDataPager1.OnDemandLoading, AddressOf OnDemandLoading
 
 Private Sub OnDemandLoading(ByVal sender As Object, ByVal e As OnDemandLoadingEventArgs)
-	sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
+    sfDataPager1.LoadDynamicData(e.StartRowIndex, employeeCollection.Skip(e.StartRowIndex).Take(e.PageSize))
 
-      'resetting cache for all pages.
+    'resetting cache for all pages.
 
-	TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCache()
+    TryCast(sfDataPager1.PagedSource, PagedCollectionView).ResetCache()
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
