@@ -1807,15 +1807,16 @@ e.Style.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler sfDataGrid.QueryProgressBarCellStyle += AddressOf SfDataGrid_QueryProgressBarCellStyle
+AddHandler sfDataGrid1.QueryProgressBarCellStyle, AddressOf SfDataGrid_QueryProgressBarCellStyle
 
 Private Sub SfDataGrid_QueryProgressBarCellStyle(ByVal sender As Object, ByVal e As QueryProgressBarCellStyleEventArgs)
-If e.ColumnIndex = 10 AndAlso e.RowIndex Mod 2 = 0 Then
-e.Style.TextColor = Color.Blue
-e.Style.ForegroundColor = Color.Yellow
-e.Style.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
-End If
+    If e.ColumnIndex = 10 AndAlso e.RowIndex Mod 2 = 0 Then
+        e.Style.TextColor = Color.Blue
+        e.Style.ForegroundColor = Color.Yellow
+        e.Style.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 

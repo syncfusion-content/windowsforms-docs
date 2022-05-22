@@ -505,11 +505,12 @@ void sfDataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArg
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.sfDataGrid.CurrentCellValidated += AddressOf sfDataGrid_CurrentCellValidated
+AddHandler Me.sfDataGrid1.CurrentCellValidated, AddressOf sfDataGrid_CurrentCellValidated
 
 Private Sub sfDataGrid_CurrentCellValidated(ByVal sender As Object, ByVal e As CurrentCellValidatedEventArgs)
-	MessageBox.Show("Cell validation is passed.")
+    MessageBox.Show("Cell validation is passed.")
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 

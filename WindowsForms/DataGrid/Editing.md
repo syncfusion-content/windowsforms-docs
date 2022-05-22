@@ -89,14 +89,15 @@ void sfDataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 }
 {% endhighlight %}
 {% highlight vb %}
-Private Me.sfDataGrid.CurrentCellBeginEdit += AddressOf sfDataGrid_CurrentCellBeginEdit
+AddHandler Me.sfDataGrid1.CurrentCellBeginEdit, AddressOf sfDataGrid_CurrentCellBeginEdit
 
 Private Sub sfDataGrid_CurrentCellBeginEdit(ByVal sender As Object, ByVal e As CurrentCellBeginEditEventArgs)
-	'Cancel the editing of the particular column.
-	If e.DataColumn.GridColumn.MappingName = "ProductName" Then
-		e.Cancel = True
-	End If
+    'Cancel the editing of the particular column.
+    If e.DataColumn.GridColumn.MappingName = "ProductName" Then
+        e.Cancel = True
+    End If
 End Sub
+
 {% endhighlight %}
 {% endtabs %}
 
