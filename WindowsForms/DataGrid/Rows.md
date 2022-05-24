@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows in WinForms DataGrid Control | Syncfusion
-description: This section explains about the rows related customization such as row header, header row, freeze panes in datagrid control for windows forms
+title: Rows | DataGrid | WinForms | Syncfusion
+description: Learn about Easy Customization support in Syncfusion Windows Forms DataGrid control, its elements, and more
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -70,7 +70,7 @@ Me.sfDataGrid1.Style.RowHeaderStyle.SelectionBackColor = Color.White
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/AddNewRowIcon.png" alt="WinForms DataGrid AddNewRowIcon"/>
+<img src= "Rows_images/AddNewRowIcon.png"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -78,7 +78,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src= "Rows_images/rowError.png" alt="WinForms DataGrid rowError"/>
+<img src= "Rows_images/rowError.png"/>
 </td>
 <td>
 Denotes that the current row which has errors.
