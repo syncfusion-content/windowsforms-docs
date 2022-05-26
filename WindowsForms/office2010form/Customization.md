@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in Windows Forms Office2010Form control | Syncfusion
-description: Learn about Customization support in Syncfusion Windows Forms Office2010Form control and more details.
+title: Customization in Windows Forms Office2010Form | Syncfusion
+description: Learn about Customization support in Syncfusion Windows Forms Office2010Form control, its elements and more.
 platform: WindowsForms
 control: Office2010 Form
 documentation: ug
 ---
 
-# Caption alignment in WinForms Office2010Form
+# Caption alignment in Windows Forms Office2010Form 
 
 The Form caption can be aligned to the left, right or center by using the [CaptionAlign](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2010Form.html#Syncfusion_Windows_Forms_Office2010Form_CaptionAlign) property.
 
