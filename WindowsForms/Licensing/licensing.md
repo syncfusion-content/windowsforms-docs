@@ -32,7 +32,9 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 </div>
 
+
 ## See Also
 
 * [How to Generate Syncfusion WindowsForms License Key?](https://help.syncfusion.com/windowsforms/licensing/generating-license-keys)
 * [How to Register Syncfusion License Key in WindowsForms Application?](https://help.syncfusion.com/windowsforms/licensing/registering-license-keys)
+
