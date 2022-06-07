@@ -176,51 +176,32 @@ The EditControl provides supports custom language configuration. You can plug-in
 
 {% highlight xaml %}
 
-<ConfigLanguage name="LISP">
-
-        <formats>
-
-                <format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
-
-                <format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
-
-                <format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
-
-                <format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
-
-        </formats>
-
-        <extensions>
-
-                <extension>lsp</extension>
-
-        </extensions>
-
-        <lexems>
-
-                <lexem BeginBlock="(" Type="Operator" />
-
-                <lexem BeginBlock=")" Type="Operator" />
-
-                <lexem BeginBlock="'" Type="Operator" />
-
-                <lexem BeginBlock="car" Type="KeyWord" />
-
-                <lexem BeginBlock="cdr" Type="KeyWord" />
-
-                <lexem BeginBlock="cons" Type="KeyWord" />
-
-        </lexems>
-
-        <splits>
-
-                <split>#Region</split>
-
-                <split>#End Region</split>
-
-        </splits>
-
-</ConfigLanguage>
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfConfigLanguage>
+	<ConfigLanguage name="LISP">
+			<format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
+		<formats>
+			<format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
+			<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
+			<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
+		</formats>
+		<extensions>
+			<extension>lsp</extension>
+		</extensions>
+		<lexems>
+			<lexem BeginBlock="(" Type="Operator" />
+			<lexem BeginBlock=")" Type="Operator" />
+			<lexem BeginBlock="'" Type="Operator" />
+			<lexem BeginBlock="car" Type="KeyWord" />
+			<lexem BeginBlock="cdr" Type="KeyWord" />
+			<lexem BeginBlock="cons" Type="KeyWord" />
+		</lexems>
+		<splits>
+			<split>#Region</split>
+			<split>#End Region</split>
+		</splits>
+	</ConfigLanguage>
+</ArrayOfConfigLanguage>
 
 {% endhighlight %}
 
