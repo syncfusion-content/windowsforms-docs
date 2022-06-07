@@ -37,7 +37,7 @@ End users can sort the column by clicking column header cell. Once the columns g
 
 ![UI Sorting in SfDataGrid windowsforms](Sorting_images/Sorting_Image1.png)
 
-### Adding Sort Columns
+## Adding Sort Columns
 
 The sorting can be applied programmatically by adding or removing the `SortColumnDescription` in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnDescriptions) collection.
 {% tabs %}
@@ -59,7 +59,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Add(sortColumnDescription)
 
 ![Programmatic sorting in SfDataGrid WinForms](Sorting_images/Sorting_Image5.png)
 
-### Removing Sort Columns
+## Removing Sort Columns
 The sorted column data can be unsorted by removing the corresponding `SortColumnDescription` from the `SfDataGrid.SortColumnDescriptions` collection.
 
 {% tabs %}
@@ -78,7 +78,7 @@ End If
 {% endhighlight %}
 {% endtabs %}
 
-### Clear Sorting
+## Clear Sorting
 The sorting can be cleared by clearing the `SfDataGrid.SortColumnDescriptions`.
 
 {% tabs %}
@@ -90,7 +90,7 @@ Me.sfDataGrid1.SortColumnDescriptions.Clear()
 {% endhighlight %}
 {% endtabs %}
 
-### Disable Sorting
+## Disable Sorting
 The sorting functionality of the SfDataGrid can be disabled by setting the `AllowSorting` property to false.
 
 {% tabs %}
