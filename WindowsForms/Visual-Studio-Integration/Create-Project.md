@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Templates in WindowsForms Syncfusion Extensions control | Syncfusion
+title: Project Templates in WindowsForms Syncfusion Extensions | Syncfusion
 description: Learn about Syncfusion Project Templates Extension in Windowsforms Syncfusion Extensions control, its elements, and more.
 platform: windowsforms
 control: Syncfusion Extensions
