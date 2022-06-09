@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Project Templates for Windows Forms | WinForms | Syncfusion
-description: Syncfusion Project Templates Extension creates the Syncfusion Windows Forms Application by adding the required assemblies.
+title: Project Templates in WindowsForms Syncfusion Extensions | Syncfusion
+description: Learn about Syncfusion Project Templates Extension in Windowsforms Syncfusion Extensions control, its elements, and more.
 platform: windowsforms
 control: Syncfusion Extensions
 documentation: ug
 ---
 
 
-# Create WinForms application
+# Create WinForms application in windowsforms Syncfusion Extensions
 
 Syncfusion provides the Visual Studio Project Template for the Syncfusion WinForms platform to create the Syncfusion WinForms Application by adding the required Syncfusion assemblies and forms. 
 
