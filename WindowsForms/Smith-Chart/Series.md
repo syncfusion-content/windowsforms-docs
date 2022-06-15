@@ -152,4 +152,35 @@ sfSmithChart1.Series.Add(series1)
 
 ![Series visibility](Series_images/Series_img3.PNG)
 
+## Customizing Series Data
+
+The property *ArrangeByIndex* value is indicating whether to render the data based on the provided index order. the data points are rendered based on the provided index when it is true otherwise, the data points are rendered by sorting based on its resistance value.
+The default value is false.
+
+{% tabs %}
+
+{% highlight c# %}
+
+LineSeries series = new LineSeries();
+
+series.ArrangeByIndex = false; 
+
+sfSmithChart1.Series.Add(series);
+
+{% endhighlight %}
+
+{% highlight vb.net %}
+
+Dim series As New LineSeries() 
+
+series.ArrangeByIndex = false
+
+sfSmithChart1.Series.Add(series)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing Series Data](Series_images/SmithChart_Series_Image.PNG)
+
 
