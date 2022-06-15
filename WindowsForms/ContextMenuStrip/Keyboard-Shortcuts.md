@@ -14,6 +14,7 @@ The menu items can be selected through keyboard operation by specifying the shor
 >**NOTE**:        
 > 1. This feature is not applicable for combobox and textbox.           
 > 2. By using this keyboard shortcuts we can access the menu items through [`Click`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripitem.click?view=netframework-4.7.2) event.
+> 3. To learn more about the list of Keys Enum, go to ['link'](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.keys?view=net-5.0).
 
 
 The below code snippet shows how shortcut is assigned to the menu item.
