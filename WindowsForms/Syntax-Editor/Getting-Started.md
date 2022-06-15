@@ -179,8 +179,8 @@ The EditControl provides supports custom language configuration. You can plug-in
 <?xml version="1.0" encoding="utf-8" ?>
 <ArrayOfConfigLanguage>
 	<ConfigLanguage name="LISP">
-			<format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
 		<formats>
+			<format name="Text" Font="Courier New, 10pt" FontColor="Salmon" />
 			<format name="KeyWord" Font="Courier New, 10pt" FontColor="Blue" />
 			<format name="String" Font="Courier New, 10pt, style=Bold" FontColor="Red" />
 			<format name="Operator" Font="Courier New, 10pt" FontColor="DarkCyan" />
