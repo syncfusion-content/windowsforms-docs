@@ -154,7 +154,7 @@ sfSmithChart1.Series.Add(series1)
 
 ## Customizing Series Data
 
-The property *ArrangeByIndex* value is indicating whether to render the data based on the provided index order. the data points are rendered based on the provided index when it is true otherwise, the data points are rendered by sorting based on its resistance value.
+The property [`ArrangeByIndex`]() value is indicating whether to render the data based on the provided index order. the data points are rendered based on the provided index when it is true otherwise, the data points are rendered by sorting based on its resistance value.
 The default value is false.
 
 {% tabs %}
