@@ -172,7 +172,7 @@ sfSmithChart1.Series.Add(series);
 
 Dim series As New LineSeries() 
 
-series.ArrangeByIndex = true
+series.ArrangeByIndex = True
 
 sfSmithChart1.Series.Add(series)
 
