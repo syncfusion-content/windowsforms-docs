@@ -152,7 +152,7 @@ sfSmithChart1.Series.Add(series1)
 
 ![Series visibility](Series_images/Series_img3.PNG)
 
-## Customizing data plotting
+## Data plotting customization
 
 By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
 
@@ -161,9 +161,7 @@ By default, the data points are plotted by sorting them based on the resistance 
 {% highlight c# %}
 
 LineSeries series = new LineSeries();
-
 series.ArrangeByIndex = true; 
-
 sfSmithChart1.Series.Add(series);
 
 {% endhighlight %}
@@ -171,15 +169,11 @@ sfSmithChart1.Series.Add(series);
 {% highlight vb.net %}
 
 Dim series As New LineSeries() 
-
 series.ArrangeByIndex = True
-
 sfSmithChart1.Series.Add(series)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customizing Series Data](Series_images/SmithChartWF_ArrangeByIndex.PNG)
-
-
+![Series data plotting customization](Series_images/SmithChartWF_ArrangeByIndex.PNG)
