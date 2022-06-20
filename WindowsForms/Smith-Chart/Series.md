@@ -154,7 +154,7 @@ sfSmithChart1.Series.Add(series1)
 
 ## Customizing data plotting
 
-By default, the data points are plotted by sorting them based on the resistance values and it can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
+By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
 
 {% tabs %}
 
