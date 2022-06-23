@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-## Fore color for positive, negative and zero color
+# Fore color for positive, negative and zero color
 
 SfNumericTextBox UI can be customized with the following properties. It helps in differentiating the values easily.
 
