@@ -154,6 +154,30 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ![Winforms showing RTL applied in office2010form](Caption-Settings_images/rtlsupport.png)
 
+## Rounded corner
+
+Rounded corners for `Office2010Form` can be enabled by using `AllowRoundedCorners` property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
+When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.AllowRoundedCorners = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Me.AllowRoundedCorners = true
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![Office2010Form with rounded corners](Creating-Office2010-Form_images/RoundedCorners.png)
+
 ## Disabling Office2010Style
 
 Office2010 look and feel can be disabled using `DisableOffice2010Style` property.
