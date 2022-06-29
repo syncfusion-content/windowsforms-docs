@@ -73,7 +73,7 @@ You should initiate an evaluation if you have already obtained our components th
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    
-8. After downloading, the Syncfusion WindowsForms web installer can be unlocked using Syncfusion registered login credential.
+8. After downloading, the Syncfusion Windows Forms web installer can be unlocked using Syncfusion registered login credential.
 
    N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
 
