@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation for Syncfusion Essential Studio Windows Forms products
-description: Learn how to install Syncfusion Windows Forms components and deploy the Syncfusion Windows Forms component
+title: Installation Errors in Windows Forms - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion Windows Forms Components installation.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
