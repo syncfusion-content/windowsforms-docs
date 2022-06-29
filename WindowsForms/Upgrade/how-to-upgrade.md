@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion Windows Forms installer to a latest version
+# Upgrading Syncfusion WinForms installer to a latest version
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
