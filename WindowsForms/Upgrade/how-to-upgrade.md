@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrading Syncfusion WindowsForms installer to a latest version - Syncfusion
-description: Learn here about the how upgrade Syncfusion WindowsForms installer to a latest version from website and control panel.
+title: Upgrading Syncfusion Windows Forms installer to a latest version - Syncfusion
+description: Learn here about the how upgrade Syncfusion Windows Forms installer to a latest version from website and control panel.
 platform: WindowsForms
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WindowsForms installer to a latest version
+# Upgrading Syncfusion Windows Forms installer to a latest version
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
