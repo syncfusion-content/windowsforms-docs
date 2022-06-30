@@ -1,7 +1,7 @@
 ---
 layout: post
-title: System requirements needed to use Syncfusion Windows Forms control
-description: Learn here all about the system requirement details to use Syncfusion Windows Forms controls and more.
+title: System Requirements in Windows Forms - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion Windows Forms Components.
 platform: WindowsForms
 control: General
 documentation: ug
@@ -12,28 +12,27 @@ documentation: ug
 
 This section describes the system requirements to use Syncfusion Windows Forms Controls for development.
 
-## Framework
+### Operating Systems
 
-Following frameworks are supported:
+* Windows 2000
+* Windows XP
+* Windows Vista
+* Windows 7
+* Windows 8
+* Windows 10
+* Windows Server (from 2003 to latest)
 
-* Microsoft .NET Framework 2.0
-* Microsoft .NET Framework 3.5
-* Microsoft .NET Framework 4.0
-* Microsoft .NET Framework 4.5
-* Microsoft .NET Framework 4.5.1
-* Microsoft .NET Framework 4.6 & above
-* Microsoft .NET Core 3.0
 
-## Development Environments
+### Hardware Environment
 
-Following IDEs can be used for development that can [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx) with Microsoft Windows both 32bit and 64 bit Operating System (From XP)  
+* Processor: x86 or x64
+* RAM : 512 MB (minimum), 1 GB (recommended)
+* Hard disk: up to 4 GB of space may be required. However, even if you install in a different drive, 400 MB of free space is required in the boot drive.
 
-* Microsoft Visual Studio 2005
-* Microsoft Visual Studio 2008
-* Microsoft Visual Studio 2010
-* Microsoft Visual Studio 2012
-* Microsoft Visual Studio 2013
-* Microsoft Visual Studio 2015
-* Microsoft Visual Studio 2017
-* Microsoft Visual Studio 2019
+### Development Environment
+
+* Microsoft Visual Studio 2008/2010/2012/2013/2015/2017/2019/2022
+* .NET Framework 2.0/3.5/4.0/4.5/4.5.1/4.6
+* Lower Syncfusion .NET frameworks can be used in applications because they are compatible with .NET 4.7, .NET 4.7.1, .NET 4.7.2, and .NET 4.8. For example, in the application, the Syncfusion 4.6 .NET framework assembly can be referred to as 4.7 or higher target versions.
+* .NET Core supported from [2019 Volume 1 release](https://help.syncfusion.com/windowsforms/release-notes) (17.1.0.32).
 
