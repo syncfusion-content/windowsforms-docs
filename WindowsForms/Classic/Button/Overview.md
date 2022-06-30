@@ -25,4 +25,4 @@ ButtonAdv is an advanced button control capable of displaying  images with diffe
 
 ### Choose between different button controls
 
-You can refer to the different button controls [here](https://help.syncfusion.com/windowsforms/sfbutton/overview#choose-between-different-button-controls).
+You can refer to the different button controls [here](https://help.syncfusion.com/windowsforms/button/overview#choose-between-different-button-controls).
