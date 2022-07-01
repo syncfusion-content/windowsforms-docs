@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors in WindowsForms - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion WindowsForms Components installation.
+title: Installation Errors in Windows Forms - Syncfusion
+description: Learn here about the common installation errors and solution to those errors in Syncfusion Windows Forms Components installation.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug

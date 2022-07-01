@@ -152,4 +152,28 @@ sfSmithChart1.Series.Add(series1)
 
 ![Series visibility](Series_images/Series_img3.PNG)
 
+## Data plotting customization
 
+By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_ArrangeByIndex) property as true.
+
+{% tabs %}
+
+{% highlight c# %}
+
+LineSeries series = new LineSeries();
+series.ArrangeByIndex = true; 
+sfSmithChart1.Series.Add(series);
+
+{% endhighlight %}
+
+{% highlight vb.net %}
+
+Dim series As New LineSeries() 
+series.ArrangeByIndex = True
+sfSmithChart1.Series.Add(series)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Series data plotting customization](Series_images/SmithChartWF_ArrangeByIndex.PNG)

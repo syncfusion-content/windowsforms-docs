@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Downloading Syncfusion WindowsForms web installer - Syncfusion
-description: Learn here about how to download Syncfusion WindowsForms web installer from our Syncfusion website with license.
+title: Downloading Syncfusion Windows Forms web installer - Syncfusion
+description: Learn here about how to download Syncfusion Windows Forms web installer from our Syncfusion website with license.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
@@ -62,7 +62,7 @@ You should initiate an evaluation if you have already obtained our components th
 
 1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
-3. Click the Download (element 1 in the screenshot below) button to download the WindowsForms web installer.
+3. Click the Download (element 1 in the screenshot below) button to download the Windows Forms web installer.
 4. The most recent version of the installer will be downloaded from this page.
 5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
 6. You can download other platform\add-on installers by going to More Downloads Options (element 3 in the screenshot below).
@@ -73,7 +73,7 @@ You should initiate an evaluation if you have already obtained our components th
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    
-8. After downloading, the Syncfusion WindowsForms web installer can be unlocked using Syncfusion registered login credential.
+8. After downloading, the Syncfusion Windows Forms web installer can be unlocked using Syncfusion registered login credential.
 
    N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
 

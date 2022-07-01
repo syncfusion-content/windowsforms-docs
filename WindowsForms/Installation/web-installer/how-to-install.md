@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installing Syncfusion WindowsForms web installer - Syncfusion
-description: Learn here about how to install Syncfusion WindowsForms web installer after downloading from our Syncfusion website.
+title: Installing Syncfusion Windows Forms web installer - Syncfusion
+description: Learn here about how to install Syncfusion Windows Forms web installer after downloading from our Syncfusion website.
 platform: WindowsForms
 control: Installation and Deployment
 documentation: ug
 ---
 
-# Installaing Syncfusion WindowsForms Web Installer
+# Installaing Syncfusion Windows Forms Web Installer
 
 
 ## Overview
@@ -24,7 +24,7 @@ The steps below show how to install Essential Studio Windows Forms Web Installer
     ![Installer Extraction Wizard](images/Step-by-Step-Installation_img1.png)
 
     
-    N> The installer wizard extracts the syncfusionessentialwpfimages_{version}.exe dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the syncfusionessentialwpfwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion Windows Forms Web Installer's welcome wizard will be displayed. Click the Next button.
 

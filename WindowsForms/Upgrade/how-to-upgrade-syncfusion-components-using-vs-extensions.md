@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WindowsForms components to latest version
+# Upgrading Syncfusion Windows Forms components to latest version
 
 Syncfusion publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.Windows-Extensions) for every Syncfusion Volume releases, with exciting new features and Service Pack release with  major bug fixes in the volume releases.
 
