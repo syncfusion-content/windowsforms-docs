@@ -95,7 +95,7 @@ N> Shadow can be disabled by setting the `ShadowOpacity` property as zero.
 
 ## Rounded corner
 
-Rounded corners for `SfForm` can be enabled by using `AllowRoundedCorners` property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
+Rounded corners for `SfForm` can be enabled by using [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
 When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 
 {% tabs %}

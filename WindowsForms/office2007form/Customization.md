@@ -175,7 +175,7 @@ Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
 
 ## Rounded corner
 
-Rounded corners for `Office2007Form` can be enabled by using `AllowRoundedCorners` property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
+Rounded corners for `Office2007Form` can be enabled by using [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Office2007Form.html#Syncfusion_Windows_Forms_Office2007Form_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
 When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 
 {% tabs %}
