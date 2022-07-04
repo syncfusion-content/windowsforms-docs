@@ -84,3 +84,5 @@ Dim filePath As String = pdfViewer.DocumentInformation.FilePath
 {%endhighlight%}
 
 {% endtabs %}
+
+N> The sample project to get document information is available in the [GitHub](https://github.com/SyncfusionExamples/WinForms-PDFViewer-Examples/tree/master/How-to/Get-Document-information) link.
