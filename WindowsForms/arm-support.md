@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ARM support | Windows Forms | Syncfusion
-description: Learn here about the details of ARM64 support for Syncfusion Windows Forms controls
+description: Learn here about the details of ARM64 devices compatibility support for Syncfusion Windows Forms controls.
 platform: windowsforms
 control: ARM support
 documentation: ug
 ---
 
-# ARM support
+# ARM support in Windows Forms Controls
 
 The Syncfusion WinForms components are compatible with ARM64 devices. You can build the application with our components. The following components/features are alone yet to be supported for ARM64 device compatibility. Based on the feasibility, we will provide the support for the below components/features soon,
 
