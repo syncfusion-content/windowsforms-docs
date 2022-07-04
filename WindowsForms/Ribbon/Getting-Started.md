@@ -13,7 +13,15 @@ This section explains how to implement a similar UI as Microsoft Outlook using [
 
 ## Add RibbonControlAdv in Designer
 
-*	Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
+Add the below required assembly reference to the project. Then, We could Drag and drop the ‘RibbonControlAdv’ from toolbox to designer window. It will generate the Ribbon control as shown below.
+
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.SpellChecker.Base.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
 
 ![Adding RibbonControlAdv from Toolbox](Getting_Started_Images/Getting-Started_img1.jpg)
 
@@ -23,8 +31,13 @@ To add the RibbonControlAdv manually through code, follow the below steps.
 
 1. Add the below required assembly reference to the project,
 
-*	Syncfusion.Shared.Base
-*	Syncfusion.Tools.Windows
+   * Syncfusion.Grid.Base.dll
+   * Syncfusion.Grid.Windows.dll
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Shared.Windows.dll
+   * Syncfusion.SpellChecker.Base.dll
+   * Syncfusion.Tools.Base.dll
+   * Syncfusion.Tools.Windows.dll
 
 2. New ‘RibbonControlAdv’ can be added to the forms using the `Controls.Add` method.   Create a new Ribbon control and initialize the ribbon and then add it to the Controls using below code.
 
