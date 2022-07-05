@@ -441,7 +441,7 @@ End Sub
 
 ### Customize the appearance of TabControlAdv while HotTracking
 
-You can customize the appearance of the TabControlAdv while HotTracking. This can be achieved by handling the event, DrawItem in the TabControlAdv. The argument, DrawTabEventArgs gets the data for the Syncfusion.Windows.Forms.Tools.TabControlAdv.DrawItem event handler in the TabControlAdv. Within this event handler, check whether the TabItem is being HotTracked, and when it is, set the desired forecolor and backcolor to the DrawTabEventArgs object.
+You can customize the appearance of the `TabControlAdv` while `HotTracking`. This can be achieved by handling the event, `DrawItem` in the `TabControlAdv`. The argument, `DrawTabEventArgs` gets the data for the `Syncfusion.Windows.Forms.Tools.TabControlAdv.DrawItem` event handler in the `TabControlAdv`. Within this event handler, check whether the TabItem is being HotTracked, and when it is, set the desired forecolor and backcolor to the `DrawTabEventArgs` object.
 
 <table>
 <tr>
@@ -500,6 +500,8 @@ Draws the borders within the bounds specified.</td></tr>
 DrawInterior  </td><td>
 Draws the text and image within the bounds specified.</td></tr>
 </table>
+
+N> Download demo application from [GitHub]
 
 {% tabs %}
 
