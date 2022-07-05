@@ -154,7 +154,7 @@ sfSmithChart1.Series.Add(series1)
 
 ## Data plotting customization
 
-By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
+By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.ChartSeries.html#Syncfusion_WinForms_SmithChart_ChartSeries_ArrangeByIndex) property as true.
 
 {% tabs %}
 
