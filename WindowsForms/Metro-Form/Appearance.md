@@ -197,8 +197,9 @@ this.IconAlign = System.Windows.Forms.HorizontalAlignment.Right;
  
 ## Rounded corner
 
-Rounded corners for `MetroForm` can be enabled by using [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect in those operating systems. 
-When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
+Rounded corners for `MetroForm` can be enabled by using the [AllowRoundedCorners](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroForm.html#Syncfusion_Windows_Forms_MetroForm_AllowRoundedCorners) property. Rounded corners are not supported in OS versions lower than Windows 11. Enabling `AllowRoundedCorners` property will have no effect on those operating systems. 
+
+N> When the rounded corners are enabled, the border and shadow of the Form are drawn by the operating system.
 
 {% tabs %}
 
