@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrading Syncfusion Windows Forms installer to a latest version - Syncfusion
+title: Upgrading Syncfusion Windows Forms installer to latest version
 description: Learn here about the how upgrade Syncfusion Windows Forms installer to a latest version from website and control panel.
 platform: WindowsForms
 control: Essential Studio
