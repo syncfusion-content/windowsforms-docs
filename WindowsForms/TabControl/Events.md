@@ -439,9 +439,13 @@ End Sub
 
 {% endtabs %}
 
+### HotTracking
+
+When the mouse pointer is over a tabitem's text, a HotTracking event is triggered, changing the text's appearance. HotTrack is utilized to create unique and different styling experience in the TabItems.  `True` if the tabs change in appearance when the mouse pointer over it; otherwise, `False`. The default is `False`.
+
 ### Customize the appearance of TabControlAdv while HotTracking
 
-You can customize the appearance of the `TabControlAdv` while `HotTracking`. This can be achieved by handling the event, `DrawItem` in the `TabControlAdv`. The argument, `DrawTabEventArgs` gets the data for the `Syncfusion.Windows.Forms.Tools.TabControlAdv.DrawItem` event handler in the `TabControlAdv`. Within this event handler, check whether the TabItem is being HotTracked, and when it is, set the desired forecolor and backcolor to the `DrawTabEventArgs` object.
+You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). The argument, [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) gets the data for the [Syncfusion.Windows.Forms.Tools.TabControlAdv.DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) event handler in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). Within this event handler, check whether the TabItem is being HotTracked, and when it is, set the desired forecolor and backcolor to the [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) object.
 
 <table>
 <tr>
@@ -501,13 +505,9 @@ DrawInterior  </td><td>
 Draws the text and image within the bounds specified.</td></tr>
 </table>
 
-N> Download demo application from [GitHub]
-
 {% tabs %}
 
 {% highlight C# %}
-
-
 
 //Enables the HotTrack. It helps to change the appearance of the TabControlAdv on mouse hover.
 
@@ -516,71 +516,53 @@ this.tabControlAdv1.HotTrack = true;
 //Draws the Tab item.
 
 this.tabControlAdv1.DrawItem += new DrawTabEventHandler(tabControlAdv1_DrawItem);
-
 void tabControlAdv1_DrawItem(object sender, DrawTabEventArgs drawItemInfo)
-
 {
 
     //Checks whether the HotTracking is in progress.
 
     if ((drawItemInfo.State & DrawItemState.HotLight) > 0)
     {
-
         drawItemInfo.ForeColor = Color.Red;
-
-        drawItemInfo.BackColor = Color.Khaki;
-
+   ``   drawItemInfo.BackColor = Color.Khaki;
         drawItemInfo.Font = new Font("Segoe Marker", 12.0F, FontStyle.Italic);
-
     }
 
     //Draws the default background and interior.
 
     drawItemInfo.DrawBackground();
-
     drawItemInfo.DrawInterior();
-
 }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-
-
 'Enables the HotTrack. It helps to change the appearance of the TabControlAdv on mouse hover.
-
 Me.tabControlAdv1.HotTrack = True
-
 'Draws the Tab item.
-
 AddHandler tabControlAdv1.DrawItem, AddressOf tabControlAdv1_DrawItem
-
 Private Sub tabControlAdv1_DrawItem(ByVal sender As Object, ByVal drawItemInfo As DrawTabEventArgs)
-
    'Checks whether the HotTracking is in progress.
-
    If (drawItemInfo.State And DrawItemState.HotLight) > 0 Then
-
      drawItemInfo.ForeColor = Color.Red
-
      drawItemInfo.BackColor = Color.Khaki
-
      drawItemInfo.Font = New Font("Segoe Marker", 12.0F, FontStyle.Italic)
-
    End If
-
    'Draws the default background and interior.
-
    drawItemInfo.DrawBackground()
-
    drawItemInfo.DrawInterior()
-   
 End Sub
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Before enabling the HotTrack property](TabControlAdv-Events_images/TabControlAdv-Events_img6.png)
+
+![After enabling the HotTrack Property](TabControlAdv-Events_images/TabControlAdv-Events_img7.png)
+
+N> Download demo application from [GitHub]
 
 ## ForeColorChanged event
 
