@@ -439,7 +439,7 @@ End Sub
 
 {% endtabs %}
 
-### HotTracking
+### HotTrack
 
 When the mouse pointer is over a tabitem's text, a HotTracking event is triggered, changing the text's appearance. HotTrack is utilized to create unique and different styling experience in the TabItems.  `True` if the tabs change in appearance when the mouse pointer over it; otherwise, `False`. The default is `False`.
 
