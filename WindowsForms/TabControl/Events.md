@@ -441,7 +441,7 @@ End Sub
 
 ### Customize the appearance of TabControlAdv Using HotTracking
 
-HotTrack is used to change the appearance of the TabItem when the mouse pointer is over it. Set the HotTrack property    to `True` to enable the HotTrack feature. The HotTrack property's default value is `false`. You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+HotTrack is used to change the appearance of the TabItem when the mouse pointer is over it. Set the HotTrack property to `True` to enable the HotTrack feature. The HotTrack property's default value is `false`. You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 <table>
 <tr>
