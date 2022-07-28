@@ -439,13 +439,9 @@ End Sub
 
 {% endtabs %}
 
-### HotTrack
+### Customize the appearance of TabControlAdv Using HotTracking
 
-When the mouse pointer is over a tabitem's text, a HotTracking event is triggered, changing the text's appearance. HotTrack is utilized to create unique and different styling experience in the TabItems.  `True` if the tabs change in appearance when the mouse pointer over it; otherwise, `False`. The default is `False`.
-
-### Customize the appearance of TabControlAdv while HotTracking
-
-You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). The argument, [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) gets the data for the [Syncfusion.Windows.Forms.Tools.TabControlAdv.DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) event handler in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html). Within this event handler, check whether the TabItem is being HotTracked, and when it is, set the desired forecolor and backcolor to the [DrawTabEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawTabEventArgs.html) object.
+HotTrack is used to change the appearance of the TabItem when the mouse pointer is over it. Set the HotTrack property    to `True` to enable the HotTrack feature. The HotTrack property's default value is `false`. You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 <table>
 <tr>
@@ -557,6 +553,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+
+![On Mouse Over the TabItem](TabControlAdv-Events_images/TabControlAdv-Events_gif1.gif)
 
 ![Before enabling the HotTrack property](TabControlAdv-Events_images/TabControlAdv-Events_img6.png)
 
