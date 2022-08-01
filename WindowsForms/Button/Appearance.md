@@ -207,7 +207,7 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 
 Refer to the following sample shows how to implement the rounded rectangle in the SfButton control.
 
-[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP#)
+[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/SFBUTT~1449710690.ZIP)
 
 **Note**: When using the previous implementation to draw the rounded rectangle, the border customization properties like Border, HoverBorder, PressedBorder, FocusedBorder, and DisabledBorder does not work.
 
