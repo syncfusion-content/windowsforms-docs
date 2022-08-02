@@ -140,4 +140,4 @@ End Sub
 
 ## SelectedIndexChanged event
 
-This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-change-the-back-color-and-text-color-of-the-selected-item) topic.
+This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members) topic.
