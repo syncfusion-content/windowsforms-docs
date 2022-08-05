@@ -439,6 +439,129 @@ End Sub
 
 {% endtabs %}
 
+### Customize the appearance of TabControlAdv Using HotTracking
+
+HotTrack is used to change the appearance of the TabItem when the mouse pointer is over it. Set the HotTrack property to `True` to enable the HotTrack feature. The HotTrack property's default value is `false`. You can customize the appearance of the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) while `HotTracking`. This can be achieved by handling the event, [DrawItem](https://help.syncfusion.com/windowsforms/tabcontrol/events#drawitem-event) in the TabControlAdv. 
+
+![Default appearance](TabControlAdv-Events_images/TabControlAdv-Events_img6.jpg)
+
+<table>
+<tr>
+<th>
+Properties</th><th>
+Description</th></tr>
+<tr>
+<td>
+ForeColor </td><td>
+Gets or sets the forecolor of the specified tab item text.</td></tr>
+<tr>
+<td>
+Font </td><td>
+Gets or sets the font of the specified tab item.</td></tr>
+<tr>
+<td>
+Bounds</td><td>
+Gets or sets the bounds of the specified tab item. They include the space for the border.</td></tr>
+<tr>
+<td>
+BoundsInterior </td><td>
+Gets or sets the bounds of the specified tab item without having space for the borders.</td></tr>
+<tr>
+<td>
+Graphics </td><td>
+Returns the graphics surface to draw the tab item.</td></tr>
+<tr>
+<td>
+Index </td><td>
+Returns the index value of the tab item.</td></tr>
+<tr>
+<td>
+DrawItemState </td><td>
+Gets or sets the item state.</td></tr>
+<tr>
+<td>
+TextBrush </td><td>
+Gets or sets the brush to draw the text.</td></tr>
+</table>
+
+![Before and After Mouse Hover](TabControlAdv-Events_images/TabControlAdv-Events_img7.jpg)
+
+<table>
+<tr>
+<th>
+Function</th><th>
+Description</th></tr>
+<tr>
+<td>
+DrawBackground </td><td>
+Draws the background.</td></tr>
+<tr>
+<td>
+DrawBorders  </td><td>
+Draws the borders within the bounds specified.</td></tr>
+<tr>
+<td>
+DrawInterior  </td><td>
+Draws the text and image within the bounds specified.</td></tr>
+</table>
+
+![On Mouse Over the TabItem](TabControlAdv-Events_images/TabControlAdv-Events_gif1.gif)
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Enables the HotTrack. It helps to change the appearance of the TabControlAdv on mouse hover.
+
+this.tabControlAdv1.HotTrack = true;
+
+//Draws the Tab item.
+
+this.tabControlAdv1.DrawItem += new DrawTabEventHandler(tabControlAdv1_DrawItem);
+void tabControlAdv1_DrawItem(object sender, DrawTabEventArgs drawItemInfo)
+{
+
+    //Checks whether the HotTracking is in progress.
+
+    if ((drawItemInfo.State & DrawItemState.HotLight) > 0)
+    {
+        drawItemInfo.ForeColor = Color.Red;
+   ``   drawItemInfo.BackColor = Color.Khaki;
+        drawItemInfo.Font = new Font("Segoe Marker", 12.0F, FontStyle.Italic);
+    }
+
+    //Draws the default background and interior.
+
+    drawItemInfo.DrawBackground();
+    drawItemInfo.DrawInterior();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+'Enables the HotTrack. It helps to change the appearance of the TabControlAdv on mouse hover.
+Me.tabControlAdv1.HotTrack = True
+'Draws the Tab item.
+AddHandler tabControlAdv1.DrawItem, AddressOf tabControlAdv1_DrawItem
+Private Sub tabControlAdv1_DrawItem(ByVal sender As Object, ByVal drawItemInfo As DrawTabEventArgs)
+   'Checks whether the HotTracking is in progress.
+   If (drawItemInfo.State And DrawItemState.HotLight) > 0 Then
+     drawItemInfo.ForeColor = Color.Red
+     drawItemInfo.BackColor = Color.Khaki
+     drawItemInfo.Font = New Font("Segoe Marker", 12.0F, FontStyle.Italic)
+   End If
+   'Draws the default background and interior.
+   drawItemInfo.DrawBackground()
+   drawItemInfo.DrawInterior()
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Download demo application from [GitHub]
+
 ## ForeColorChanged event
 
 This [ForeColorChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolorchanged?view=netframework-4.7.2) event is raised when the value of the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property is changed on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
