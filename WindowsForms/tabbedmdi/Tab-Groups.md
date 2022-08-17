@@ -7,7 +7,7 @@ control: TabbedMDIManager
 documentation: ug
 ---
 
-#  Tab groups in Windows Forms TabbedMDI control
+# Tab groups in Windows Forms TabbedMDI control
 
 TabbedMDIManager supports multiple TabGroups which can be resizable. It allows users to programmatically control and restrict the number and layout of the tab groups and also lets users to associate a form with a specific tab group. This way users can provide a custom tabbed layout for the end users of the TabbedMDI application. The MDI Children can arranged horizontally or vertically.
 
