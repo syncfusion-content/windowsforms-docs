@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SplashControl-Overview | WindowsForms | Syncfusion
-description: splashcontrol overview
+description: Learn here about overview of Syncfusion Essential WindowsForms Splash Control, its elements, and more.
 platform: WindowsForms
 control: SplashControl
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The various sections of SplashControl and their descriptions are given below.
 
-![](Overview_images/Overview_img35.jpeg) 
+![WindowsForms Splash overview](Overview_images/Overview_img35.jpeg) 
 
 
 ## SplashControl
