@@ -51,6 +51,7 @@ Drag and drop the TreeView control which will be used in the drop-down portion o
 
 1. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -64,9 +65,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create an instance of the ComboDropDown control class.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -82,9 +86,12 @@ Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_2 }}
 
 3. Add TreeView in the drop-down portion of ComboDropDown. Finally add ComboDropDown to the Form.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -100,6 +107,9 @@ Me.Controls.Add(Me.comboDropDown1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_3 }}
+
 
 N> Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.
 
