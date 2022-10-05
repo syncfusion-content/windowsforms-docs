@@ -37,13 +37,13 @@ Create new Windows Forms Project in Visual Studio to display [AutoComplete](http
 
 1. Create a new Windows Forms application in Visual Studio. Add the following required assembly references:
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.SpellChecker.Base
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.SpellChecker.Base
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
 
 2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) and TextBox controls.
 
