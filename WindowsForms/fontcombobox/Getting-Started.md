@@ -41,8 +41,8 @@ In order to add FontComboBox control manually, do the below steps,
 
 2) Create the FontComboBox control instance and add it to the form.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 FontComboBox fontComboBox = new FontComboBox();
@@ -60,8 +60,9 @@ fontComboBox.Location = New Point(100, 100)
 Me.Controls.Add(fontComboBox)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ![Default initialization of WF FontComboBox control](GettingStarted_images/wf-fontcombobox-control.png)
 

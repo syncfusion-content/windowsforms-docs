@@ -87,7 +87,7 @@ Me.comboDropDown1 = New Syncfusion.Windows.Forms.Tools.ComboDropDown()
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_2 }}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Add TreeView in the drop-down portion of ComboDropDown. Finally add ComboDropDown to the Form.
 
@@ -108,7 +108,7 @@ Me.Controls.Add(Me.comboDropDown1)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_3 }}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 N> Refer Setting Interaction between ComboDropDown and TreeView to set the interaction between the ComboDropDown and Treeview.

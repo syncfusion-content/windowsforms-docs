@@ -45,6 +45,7 @@ In order to add control manually, do the below steps,
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -58,9 +59,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Set the following properties and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -98,6 +102,8 @@ Me.Controls.Add(Me.autoLabel1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ## Labeling a control
@@ -106,8 +112,8 @@ Me.Controls.Add(Me.autoLabel1)
 
 2) Right-click on the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Choose **Properties**  and select `LabeledControl` property. Now, you can choose newly added **TextBoxExt** control.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight C# %}
 
 this.autoLabel1.LabeledControl = this.textBoxExt1;
@@ -119,8 +125,9 @@ this.autoLabel1.LabeledControl = this.textBoxExt1;
 Me.autoLabel1.LabeledControl = Me.textBoxExt1
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms AutoLabel showing add the labeled control](AutoLabel-Images/AutoLabel_addcontrol.jpg)
 

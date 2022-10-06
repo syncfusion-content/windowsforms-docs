@@ -36,10 +36,11 @@ The following steps describe how to create a **ColorUI** control programmaticall
 
 2. Add the following assembly reference to the project:
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
 3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -53,9 +54,12 @@ Imports Syncfusion.Windows.Forms
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Create an instance of the **ColorUI** control, specify its size, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -84,6 +88,8 @@ Me.Controls.Add(Me.colorUIControl1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
    ![ColorUIControl](ColorUI_images/ColorUI_design.png)
 

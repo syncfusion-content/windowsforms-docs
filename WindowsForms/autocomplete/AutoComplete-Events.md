@@ -91,7 +91,6 @@ It is the System.Data.DataRow object that contains the value that is to be added
 private void autoComplete1_BeforeAddItem(object sender, AutoCompleteAddItemCancelEventArgs e)
 
 {
-
    // Cancels the item that is going to be added.
 
     e.Cancel = true;
@@ -150,7 +149,6 @@ When you select an item from the list of possible matches when AutoComplete is s
 private void autoComplete1_AutoCompleteItemBrowsed(object sender, Syncfusion.Windows.Forms.Tools.AutoCompleteItemEventArgs args)
 
 {
-
    string itemText = args.ItemArray[0].ToString();
 
    string eventlogmessage = String.Format("Event: {0} Item: {1}\r\n", "AutoCompleteItemSelected", itemText);
@@ -209,7 +207,6 @@ Returns the possible match value that needs to be compared against AutoCompleteM
 private void autoComplete1_MatchItem(object sender, AutoCompleteMatchItemEventArgs args)
 
 {
-
    // Cancels the match operation.
 
    e.Cancel = true;

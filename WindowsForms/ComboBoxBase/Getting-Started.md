@@ -33,6 +33,7 @@ It can be created through code by following the below steps.
 
 1. Added Shared.Base to the reference folder through solution explorer and include the below namespace in the code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -46,9 +47,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create an instance of the ComboBoxBase control and ListBox.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -68,9 +72,12 @@ Me.listBox1 = New ListBox()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
  
 3. Set the ListControl that will be used in the dropdown portion of ComboBoxBase and specify the size of ComboBoxBase. 
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -86,9 +93,12 @@ Me.comboBoxBase1.Size = New Size(120,20)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Specify the datasource. 
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -114,9 +124,12 @@ ListBox1.DataSource = USStates
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 5. Finally add ComboBoxBase and Listbox to the Form.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -132,6 +145,8 @@ Me.Controls.Add(Me.comboBoxBase1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![Add ComboBoxBase and Listbox to Form](Overview_images/Overview_img319.png) 
 
