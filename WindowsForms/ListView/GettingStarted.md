@@ -245,7 +245,7 @@ SortDescriptor object holds the following three properties:
 
     •	`Comparer`: Describes a comparer to be applied when sorting takes place.
 
-{% capture codesnippet5 %} 
+
 {% tabs %}
 {% highlight c# %}
 listView.View.SortDescriptors.Add(new SortDescriptor()
@@ -258,8 +258,7 @@ listView.View.SortDescriptors.Add(new SortDescriptor()
 listView.View.SortDescriptors.Add(New SortDescriptor() With {.PropertyName = “Continent”, .Direction = ListSortDirection.Descending})
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }}
+
 
 ![Sorting in WF SfListView Control](GettingStarted_images/GettingStarted_img4.png)
 
