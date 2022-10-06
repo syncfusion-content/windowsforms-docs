@@ -114,7 +114,7 @@ The [PredicateType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.
 * Or: Performs Or operation in filters.
 * OrElse: Performs OrElse operation in filters.
 
-{% capture codesnippet2 %}​
+
 {% tabs %}
 {% highlight c# %}
 //Filter the CustomerID column with values "FRANS" or "MEREP"
@@ -127,8 +127,7 @@ sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With
 sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "MEREP", .PredicateType = PredicateType.Or})
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 ![Adding multiple FilterPredicates for a column](Filtering_images/Filtering_img20.png)
 
