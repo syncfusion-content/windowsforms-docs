@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using-ComboBoxes-inside-ComboDropDown | WindowsForms | Syncfusion
-description: using comboboxes inside combodropdown
+description: Learn here all about to using comboboxes inside combodropdown with Syncfusion Essential Studio Windows Forms ComboBox DropDown control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -78,6 +78,6 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-    ![](Overview_images/Overview_img294.png) 
+![adding combobox inside combodropdown](faq\Overview_images\Overview_img294.png) 
 
    
