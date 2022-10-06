@@ -90,7 +90,7 @@ The Filters applied to the SfDataGrid can be removed by clearing the `FilterPred
 * [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_System_String_) - Clears the filter for particular column that has the columnName as MappingName.
 * [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_Syncfusion_WinForms_DataGrid_GridColumn_) - Clears the filter for particular column alone.
 
-{% capture codesnippet1 %}​
+
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.ClearFilters();
@@ -103,8 +103,7 @@ sfDataGrid1.ClearFilter("OrderID")
 sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 ### Adding multiple FilterPredicates for a column
 
