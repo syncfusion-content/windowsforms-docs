@@ -14,7 +14,7 @@ The [SfComboBox.DropDownStyle](https://help.syncfusion.com/cr/windowsforms/Syncf
 * DropDown: Editor portion is editable.
 * DropDownList: Editor portion is non-editable.
 
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 sfComboBox1.DropDownStyle = DropDownStyle.DropDownList;
@@ -23,7 +23,6 @@ sfComboBox1.DropDownStyle = DropDownStyle.DropDownList;
 sfComboBox1.DropDownStyle = DropDownStyle.DropDownList
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 ![Editing_img1](Editing_images/Editing_img1.png)
