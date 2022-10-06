@@ -27,8 +27,8 @@ The `SplashControl` provides full support for the Windows Forms designer.
 
 **Step 1**: Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form. The following required assembly reference will be added automatically.
 
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Tools.Windows.dll
+         * Syncfusion.Shared.Base.dll
+         * Syncfusion.Tools.Windows.dll
 
    ![Drag and drop the SplashControl from toolbox](Overview_images/splash_img1.jpeg) 
 
@@ -58,12 +58,13 @@ A SplashControl can be created through code by following the below steps.
 
 **Step 2**: Add the required assembly references.
 
-	1. Syncfusion.Shared.Base.dll
+	   1. Syncfusion.Shared.Base.dll
 	
-	2. Syncfusion.Tools.Windows.dll
+	   2. Syncfusion.Tools.Windows.dll
 
 **Step 3**: Declare and initialize a `SplashControl` using the below code.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -81,9 +82,12 @@ Me.SuspendLayout()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **Step 4**: Set the following properties.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -103,6 +107,8 @@ Me.SplashControl1.TimerInterval = 3000
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Step 5**: Run the application.
 

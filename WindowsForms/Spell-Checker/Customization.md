@@ -76,6 +76,7 @@ SpellCheckerAdv provides support to get suggestion list by passing the wrong wor
 * [GetPhoneticWords](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetPhoneticWords_System_String_)
 * [GetAnagrams](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_GetAnagrams_System_String_)
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -99,3 +100,5 @@ Me.spellCheckerAdv1.GetAnagrams("Textbox")
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

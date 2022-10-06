@@ -13,8 +13,8 @@ Microsoft UI automation is a new accessibility Framework for Microsoft Windows a
 
 SfDataGrid supports the following types of UI automations:
 
-1.Coded UI test
-2.Quick test professional
+    1.Coded UI test
+    2.Quick test professional
 
 ## Coded UI test
 

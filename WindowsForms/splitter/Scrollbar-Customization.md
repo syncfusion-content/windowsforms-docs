@@ -16,6 +16,7 @@ The appearance of the SplitterControl scrollbar can be customized by using the G
 * Metro
 * None
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -35,3 +36,5 @@ Me.splitterControl1.GridOfficeScrollBars= OfficeScrollBars.Office2007
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

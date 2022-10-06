@@ -22,12 +22,12 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ToggleButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
 ![Drag and drop ToggleButton from toolbox](Getting-Started_images/Getting-Started_dragdropimage.png)
 
@@ -46,13 +46,14 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -68,6 +69,8 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
    

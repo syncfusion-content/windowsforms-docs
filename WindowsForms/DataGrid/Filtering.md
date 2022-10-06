@@ -90,6 +90,7 @@ The Filters applied to the SfDataGrid can be removed by clearing the `FilterPred
 * [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_System_String_) - Clears the filter for particular column that has the columnName as MappingName.
 * [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ClearFilter_Syncfusion_WinForms_DataGrid_GridColumn_) - Clears the filter for particular column alone.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 sfDataGrid1.ClearFilters();
@@ -102,6 +103,8 @@ sfDataGrid1.ClearFilter("OrderID")
 sfDataGrid1.ClearFilter(sfDataGrid1.Columns(0))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding multiple FilterPredicates for a column
 
@@ -112,6 +115,7 @@ The [PredicateType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.
 * Or: Performs Or operation in filters.
 * OrElse: Performs OrElse operation in filters.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Filter the CustomerID column with values "FRANS" or "MEREP"
@@ -124,6 +128,8 @@ sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With
 sfDataGrid.Columns("CustomerID").FilterPredicates.Add(New FilterPredicate() With {.FilterType = FilterType.Equals, .FilterValue = "MEREP", .PredicateType = PredicateType.Or})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Adding multiple FilterPredicates for a column](Filtering_images/Filtering_img20.png)
 

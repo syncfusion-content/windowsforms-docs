@@ -53,6 +53,7 @@ To add the control manually in C#, follow the given steps:
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -65,9 +66,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of [TabSplitterContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html), and add it to the form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -84,9 +88,12 @@ Me.Controls.Add(tabSplitterContainer1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5) Add tab pages into the control. First, create an instance of the required pages, and add primary and secondary pages to TabSplitterContainer using the [PrimaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_PrimaryPages) and [SecondaryPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabSplitterContainer.html#Syncfusion_Windows_Forms_Tools_TabSplitterContainer_SecondaryPages) collections, respectively.
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -139,11 +146,14 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![TabSplitterContainer control](GettingStarted-images/wf-tabsplitter-container-control.png)
 
 6) Add any one of the controls to the tabSplitterPage (e.g., AutoLabel).
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -203,6 +213,8 @@ tabSplitterContainer1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 {% endhighlight  %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **Vertical**
 

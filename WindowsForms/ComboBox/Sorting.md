@@ -19,6 +19,7 @@ You can sort the data by creating the `SortDescriptor` with required name and di
 * `Direction`: Describes an object of type `ListSortDirection` that defines the sorting direction.
 * `Comparer`: Describes the comparer to be applied when sorting the items.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 sfComboBox1.DropDownListView.View.SortDescriptors.Add(new Syncfusion.DataSource.SortDescriptor() { PropertyName = "LongName", Direction = Syncfusion.DataSource.ListSortDirection.Descending });
@@ -27,5 +28,7 @@ sfComboBox1.DropDownListView.View.SortDescriptors.Add(new Syncfusion.DataSource.
 sfComboBox1.DropDownListView.View.SortDescriptors.Add(New Syncfusion.DataSource.SortDescriptor() With {.PropertyName = "LongName", .Direction = Syncfusion.DataSource.ListSortDirection.Descending})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Sorted items of the drop-down](Sorting_images/Sorting_img1.png)

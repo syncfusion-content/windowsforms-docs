@@ -23,6 +23,7 @@ The below topics will guide you on how to create tab groups and set borders for 
 * Add 2 more forms and rename them as TabGroup1_Form and TabGroup2_Form. (The application now contains three forms (i.e.) Form1, TabGroup1_Form and TabGroup2_Form).
 * In Form1, add the namespace Syncfusion.Windows.Forms.Tools.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -38,9 +39,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Declare the TabbedMDIManager in your form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -56,10 +60,13 @@ Private TabbedGroupedMDIManager As TabbedMDIManager
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Set the form's [IsMdiContainer](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
 * Initialize the TabbedMDIManager and set the required properties.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -112,9 +119,12 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * Attach the TabbedMDIManager to your form and specify the Tab Groups.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -156,9 +166,12 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * Add 2 bar items (or buttons can also be used) to add the tab groups. In the barItem_click event, add the below given code.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -234,6 +247,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 
 ![Tab groups created by code](Tab-Groups_images/Tab-Groups_img2.jpeg)

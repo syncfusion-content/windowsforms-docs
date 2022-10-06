@@ -29,6 +29,7 @@ To add SplitterControl to the Windows Forms Application through the following co
 
 1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools.
 
+   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -53,10 +54,13 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 2. Create an instance of the SplitterControl and add it to the Form.
 
+   {% capture codesnippet2 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -82,6 +86,8 @@ To add SplitterControl to the Windows Forms Application through the following co
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 

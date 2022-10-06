@@ -16,6 +16,7 @@ The splitter in the SplitterControl can be supported with Row splitter and Colum
 * SplitRows
 * Both
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -32,3 +33,5 @@ Me.splitterControl1.SplitBars = DynamicSplitBars.SplitColumns
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

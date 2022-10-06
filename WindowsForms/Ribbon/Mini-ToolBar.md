@@ -54,6 +54,7 @@ This section guides you with the steps to add a MiniToolbar and associating with
 
 *	Add the given namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -73,6 +74,8 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 *	Declare and initialize the MiniToolBar control. Also declare the controls to be added to the MiniToolBar, and the control, in this case RichTextBow, to which MiniToolBar is to be associated.
 

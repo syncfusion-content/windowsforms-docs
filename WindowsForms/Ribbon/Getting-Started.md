@@ -23,11 +23,12 @@ To add the RibbonControlAdv manually through code, follow the below steps.
 
 1. Add the below required assembly reference to the project,
 
-*	Syncfusion.Shared.Base
-*	Syncfusion.Tools.Windows
+    *	Syncfusion.Shared.Base
+    *	Syncfusion.Tools.Windows
 
 2. New ‘RibbonControlAdv’ can be added to the forms using the `Controls.Add` method.   Create a new Ribbon control and initialize the ribbon and then add it to the Controls using below code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -54,6 +55,8 @@ Me.Controls.Add(ribbonControlAdv1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Configure RibbonForm
 
