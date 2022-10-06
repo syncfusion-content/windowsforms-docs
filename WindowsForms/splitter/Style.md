@@ -14,7 +14,7 @@ SplitterControl supports visual styles such as Default and Metro. The styles can
 * Default
 * Metro
 
-{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -30,7 +30,6 @@ Me.splitterControl1.Style = Syncfusion.Windows.Forms.Appearance.Metro
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
  ![Concept-and-Features_images1](Concept-and-Features_images/Concept-and-Features_img1.png)
