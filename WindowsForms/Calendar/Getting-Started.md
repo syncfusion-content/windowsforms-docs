@@ -45,6 +45,7 @@ The following steps describe how to create an WinForms Calendar (SfCalendar) con
 
 3) Include the required namespaces.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -60,9 +61,12 @@ Imports Syncfusion.WinForms.Input
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control instance, and then add it to the form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -82,6 +86,8 @@ Me.Controls.Add(calendar)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Select a date
 

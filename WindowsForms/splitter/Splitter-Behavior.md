@@ -16,6 +16,7 @@ The splitter in the SplitterControl can be supported with Row splitter and Colum
 * SplitRows
 * Both
 
+
 {% tabs %}
 
 {% highlight C# %}

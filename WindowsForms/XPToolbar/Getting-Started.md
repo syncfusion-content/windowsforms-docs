@@ -79,7 +79,7 @@ The XPToolbar control can be added through code by following the below steps.
    {System Drive}: \Program Files (x86) \ Syncfusion\Essential Studio\ {Platform} \ {Build Version Number} \ precompiledassemblies \ {Framework Version Number}
 
 2. The below code snippets adds a XPToolbar control to the application.
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -133,7 +133,8 @@ Me.Controls.Add(Me.panel1)
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Add the Toolbar](GettingStarted_Images/XPToolbar6.png)
 

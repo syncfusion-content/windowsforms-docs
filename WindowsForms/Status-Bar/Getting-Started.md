@@ -34,6 +34,7 @@ To create a StatusBarAdv control programmatically,
 2. Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
 3. Declare the StatusBarAdv and StatusBarAdvPanel controls.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -53,9 +54,12 @@ Private statusBarAdvPanel3 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Initialize the controls.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -75,9 +79,12 @@ Me.statusBarAdvPanel3 = New Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. Set the properties to customize the control's appearance, and add the control to the form.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -123,7 +130,8 @@ Me.Controls.Add(Me.statusBarAdv1)
 
 {% endhighlight %}
 {% endtabs %}
-   
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}  
 6. Run the application. You will see the StatusBarAdv control docked to the bottom of the form. By default it will be docked to 'Bottom'.
 
    ![Create Status Bar Through Code](Overview_images/Overview_img62.jpeg) 

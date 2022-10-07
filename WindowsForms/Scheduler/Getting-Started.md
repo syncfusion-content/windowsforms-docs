@@ -48,6 +48,7 @@ To add the control manually, follow the steps:
 
 2.Create the ScheduleControl instance in the application form constructor.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight  c# %}
 using Syncfusion.Windows.Forms.Schedule;
@@ -83,6 +84,8 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Binding data to the ScheduleControl
 

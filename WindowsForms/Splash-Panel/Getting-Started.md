@@ -47,12 +47,13 @@ To create a SplashPanel programmatically, with a user control in it, follow the 
 
 **Step 2**: Add the required assembly reference.
 	
-	1. Syncfusion.Shared.Base.dll
+		1. Syncfusion.Shared.Base.dll
 
-	2. Syncfusion.Tools.Windows.dll
+		2. Syncfusion.Tools.Windows.dll
 
 **Step 3**: Add the namespaces given below to your form.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -74,9 +75,12 @@ Imports System.Reflection
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **Step 4**: Declare the SplashPanel and Button control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -92,9 +96,12 @@ Friend WithEvents button1 As System.Windows.Forms.Button
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Step 5**: Initialize the controls and make it visible.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -112,9 +119,12 @@ Me.splashPanel1.SuspendLayout()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 **Step 6**: Set the properties for the SplashPanel and Button control.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -176,9 +186,12 @@ Me.Controls.Add(Me.splashPanel1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 **Step 7**: Call and define the ShowSplash() method as follows.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -219,6 +232,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 **Step 8**: Run the application.
 

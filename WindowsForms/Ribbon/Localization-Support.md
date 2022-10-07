@@ -21,6 +21,7 @@ RibbonControlAdv now supports adaptation of its controls and its details to meet
 
 4.	String identifiers are defined in the `ToolsResourceIdentifier` classes in Syncfusion.Tools.Windows
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -36,11 +37,14 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 5.	 Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.
 
 6.	Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -56,6 +60,8 @@ LocalizationProvider.Provider = New localization()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 7.	The Following is an example for localization
 

@@ -21,6 +21,7 @@ The default form can be changed into `SfTabbedForm` by following the given steps
 
 2) Include the following namespaces to the directives list.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Windows.Forms.Tools;
@@ -29,11 +30,12 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3) Change the base class of your form from `System.Windows.Forms.Form` to `SfTabbedForm`.
 
-
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 public partial class Form1 : SfTabbedForm
@@ -53,7 +55,8 @@ Partial Public Class Form1
 End Class
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Loading TabbedFormControl to TabbedForm
 

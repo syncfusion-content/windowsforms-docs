@@ -70,7 +70,7 @@ To add the control manually in C#, follow the given steps:
   * Syncfusion.Tools.Windows.dll
 
 **2.** Include the **Syncfusion.Windows.Forms.Tools namespace**.
-
+  {% capture codesnippet1 %}
   {% tabs %}
   {% highlight C# %}
   using Syncfusion.Windows.Forms.Tools;
@@ -79,9 +79,12 @@ To add the control manually in C#, follow the given steps:
   Imports Syncfusion.Windows.Forms.Tools
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **3.** Create a [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) instance, and add it to the window.
 
+  {% capture codesnippet2 %}
   {% tabs %}
   {% highlight C# %}
   TabControlAdv tabControlAdv1 = new TabControlAdv();
@@ -92,6 +95,8 @@ To add the control manually in C#, follow the given steps:
   Me.Controls.Add(tabControlAdv1)
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Add tabs
 

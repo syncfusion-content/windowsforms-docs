@@ -461,6 +461,7 @@ To access the data from data source using `ADO.NET`, follow the below steps.
 
 3) Set the `DataSource` as **Suppliers** table from the data set.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 DataSet dataSet = new DataSet();
@@ -479,6 +480,8 @@ sqlAdapter.Fill(dataSet, "Suppliers")
 Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![SfDataGrid bounded with SQL Client in windowsforms](DataBinding_images/DataBinding_img20.jpeg)
 
@@ -525,6 +528,7 @@ To access the Microsoft Access database, follow the below steps.
 
 3) Set the `DataSource` as **Employees** table from the data set.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 OleDbConnection oleConnection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\SfWinforms\SfDataGrid_UserGuide\Sample\DataBinding\Data\Employees.accdb;Persist Security Info=True");
@@ -545,6 +549,8 @@ oleConnection.Close()
 Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
 N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.

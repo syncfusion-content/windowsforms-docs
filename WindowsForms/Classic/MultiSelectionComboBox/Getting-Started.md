@@ -33,6 +33,7 @@ To add MultiSelectionComboBox control to a Windows Forms application through cod
 
 * Include the namespaces “Syncfusion.Windows.Forms” and “Syncfusion.Windows.Forms.Tools”.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -50,9 +51,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create an instance of the MultiSelectionComboBox control and add it to the Form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -73,3 +77,5 @@ Me.Controls.Add(Me.MultiSelectionComboBox1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
