@@ -60,8 +60,8 @@ The following step by step procedure helps you to save and load the layout state
 
 3. Include the required namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 using Syncfusion.Runtime.Serialization;
@@ -81,13 +81,14 @@ Imports Microsoft.Win32
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Declare instances of RegistryKey and MemoryStream classes.
 
+{% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight C# %}
 
 RegistryKey rootKey;
@@ -103,13 +104,14 @@ Private selRad As String
 Private memory As MemoryStream
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. In the Form Load event, use the following code snippet.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private void Form1_Load(object sender, System.EventArgs e)
@@ -147,13 +149,14 @@ Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 End Sub
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 6. Serialization can be accomplished using the AppStateSerializer class.
 
+{% capture codesnippet4 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private AppStateSerializer GetSerializer(string str)
@@ -220,13 +223,14 @@ Private Function GetSerializer(ByVal str As String) As AppStateSerializer
 End Function
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 7. In the Form Closing event, use the following code snippet.
 
+{% capture codesnippet5 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private void Form1_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -278,13 +282,14 @@ Private Function getSelRad() As String
     Return(radReturn.Text)
 End Function
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 8. Add the following code for each CheckedChanged event of the Radio Button.
 
+{% capture codesnippet6 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private void radXML_CheckedChanged(object sender, System.EventArgs e)
@@ -346,8 +351,9 @@ Private Sub radXMLFmt_CheckedChanged(ByVal sender As Object, ByVal e As System.E
 End Sub
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 Run the sample, dock the CommandBars to any target location and save it's state using any storage technique before closing the application.
 

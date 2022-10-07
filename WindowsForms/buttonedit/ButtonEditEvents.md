@@ -133,6 +133,7 @@ You can display CalendarPopup on [ButtonEdit](https://help.syncfusion.com/cr/win
 3. Create an instance of [CalendarPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalendarPopup.html) and [MonthCalendarAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MonthCalendarAdv.html) control and add MonthCalendarAdv in CalendarPopup.
 4. Add the CalendarPopup control in second row.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -196,9 +197,12 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
+5. Handle the Click event of buttonEditChildButton1 to display the Calendar as follows.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -216,10 +220,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
+6. The event DateSelected can also be handled to display the selected date in the textbox of ButtonEdit control.
    
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -240,6 +246,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![MonthCalendar in ButtonEdit](ButtonEditEvents_images/ButtonEditEvents_img1.png)
 

@@ -51,8 +51,8 @@ The following steps describe how to create a **Carousel** control programmatical
 
 3) Include the required namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 using Syncfusion.Windows.Forms.Tools;
@@ -64,13 +64,14 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of the [Carousel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Carousel.html) control, and then add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight C# %}
 
 Carousel carousel1 = new Carousel();
@@ -84,8 +85,9 @@ Dim carousel1 As Carousel = New Carousel
 Me.Controls.Add(carousel1)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding controls into Carousel
 

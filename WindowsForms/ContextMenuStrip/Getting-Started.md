@@ -93,6 +93,7 @@ The ContextMenuStripEx control can be added through code by following the below 
 
 2. The below code snippets adds a ContextMenuStripEx control to the application.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -154,6 +155,8 @@ Me.Controls.Add(Me.richTextBox1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ![Add a Context Menu](GettingStarted_Images/Associate.png)
