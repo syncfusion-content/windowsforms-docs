@@ -11,15 +11,15 @@ documentation: ug
 
 TabSplitterContainer offers various built in themes for its professional representation as follows
 
-•	Default
+    •	Default
 
-•	Office2016Colorful
+    •	Office2016Colorful
 
-•	Office2016White
+    •	Office2016White
 
-•	Office2016DarkGray
+    •	Office2016DarkGray
 
-•	Office2016Black
+    •	Office2016Black
 
 **Default**
 

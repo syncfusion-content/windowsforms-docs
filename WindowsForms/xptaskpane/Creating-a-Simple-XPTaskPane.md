@@ -105,7 +105,7 @@ Me.Controls.Add(xpTaskPane1)
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_2 }}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![XPTaskPane control added by code](Creating-a-Simple-XPTaskPane_images/XPTaskPane-img3.png)
 

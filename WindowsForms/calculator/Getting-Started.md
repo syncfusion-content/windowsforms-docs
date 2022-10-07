@@ -53,6 +53,7 @@ To add the control manually in C#, follow the given steps:
 
 **2.** Include the [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) namespace **Syncfusion.Windows.Forms.Tools;**.
 
+  {% capture codesnippet1 %}
   {% tabs %}
   {% highlight C# %}
   using Syncfusion.Windows.Forms.Tools;
@@ -61,9 +62,12 @@ To add the control manually in C#, follow the given steps:
   Imports Syncfusion.Windows.Forms.Tools
   {% endhighlight %}
   {% endtabs %} 
+  {% endcapture %}
+  {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **3.** Create a [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CalculatorControl.html) instance, and add it to the form.
 
+  {% capture codesnippet2 %}
   {% tabs %}
   {% highlight C# %}
   CalculatorControl calculatorControl = new CalculatorControl();
@@ -76,6 +80,8 @@ To add the control manually in C#, follow the given steps:
   Me.Controls.Add(calculatorControl)
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wf calculator control](Overview_images/Overview_img112.jpeg) 
 

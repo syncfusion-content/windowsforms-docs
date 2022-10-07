@@ -51,6 +51,7 @@ The following steps describe how to create a FontListBox control programmaticall
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -64,11 +65,13 @@ Imports Syncfusion.Windows.Forms.Tools
  
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 4) Create an instance of the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) control, specify its size, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight c# %}
 
 FontListBox fontListBox1 = new FontListBox();
@@ -84,8 +87,9 @@ fontListBox1.Size = New System.Drawing.Size(160, 94)
 Me.Controls.Add(fontListBox1)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![Windows Forms FontListBox](Overview_images/Overview_img578.jpeg)
 

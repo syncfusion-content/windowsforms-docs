@@ -34,6 +34,7 @@ In order to add control manually, do the below steps,
 
 2)	Create the SfDataGrid control instance and add it to the Form
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.DataGrid;
@@ -70,6 +71,8 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Creating Data for Sample Application
 
@@ -77,6 +80,7 @@ SfDataGrid is a data-bound control. So data must be created for application.
 
 1)	Create data object class named “OrderInfo” and declare properties as shown below,
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfo
@@ -184,10 +188,12 @@ Public Class OrderInfo
 End Class
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 2)	Create an **OrderInfoCollection** class with Orders property and Orders property is initialized with several data objects in constructor.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 public class OrderInfoCollection
@@ -250,6 +256,8 @@ Public Class OrderInfoCollection
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ### Binding to Data
 To bind the SfDataGrid to data, set the [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property to an IEnumerable implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.

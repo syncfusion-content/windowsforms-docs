@@ -437,8 +437,6 @@ The following code sample can be utilized for applying a custom renderer to the 
 
   this.clock1.DigitalRenderer = render;
 
-
-
    public class DigitalRenderer : DigitalClockRenderer
 
     {
@@ -449,18 +447,13 @@ The following code sample can be utilized for applying a custom renderer to the 
 
             Image image =Image.FromFile(@"D:\CustomClock.PNG");
 
-
-
             base.DrawDigitalClockFrame(g, image, clock);
 
         }
 
     }
 
-
 {% endhighlight %}
-
-
 {% highlight VB %}
 
 Dim render As DigitalRenderer = New DigitalRenderer

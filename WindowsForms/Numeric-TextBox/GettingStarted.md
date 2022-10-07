@@ -43,6 +43,7 @@ The following steps describe how to create a **SfNumericTextBox** control via de
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -58,9 +59,12 @@ Imports Syncfusion.WinForms.Input
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html), and then add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -80,6 +84,8 @@ Me.Controls.Add(Me.numericTextBox)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Value
 

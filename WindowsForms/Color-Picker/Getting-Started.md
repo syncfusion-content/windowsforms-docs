@@ -51,6 +51,7 @@ It can be added programmatically by performing the following steps.
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -64,9 +65,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of [ColorPickerUIAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ColorPickerUIAdv.html), and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -86,6 +90,8 @@ Me.Controls.Add(cpa)
  
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
    ![ColorPickerUIAdv for Windows Forms](ColorPickerUIAdv_Images/ColorPickerUIAdv.jpeg) 
 

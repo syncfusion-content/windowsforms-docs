@@ -45,8 +45,8 @@ In order to add [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 2)	Create the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control instance and add it to the Form.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight c# %}
 
 using Syncfusion.Windows.Forms.Tools;
@@ -58,11 +58,12 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}   
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
    
+{% capture codesnippet2 %}   
 {% tabs %}
-
 {% highlight c# %}
 
 public Form1()
@@ -95,6 +96,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![ButtonEdit added by code](GettingStarted_images/GettingStarted_img2.png)
 

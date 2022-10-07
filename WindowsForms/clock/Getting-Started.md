@@ -54,6 +54,7 @@ To add the control manually in C#, follow the given steps:
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
   
@@ -66,9 +67,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of the [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control instance, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -83,6 +87,8 @@ Me.Controls.Add(clock1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wf clock control](Getting-Started_images/wf-clock-control.png) 
 

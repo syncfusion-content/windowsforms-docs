@@ -53,6 +53,7 @@ The SfButton allows adding the click event in two ways:
 1. Adding the click event by double clicking the SfButton in designer.
 2. Programmatically raises the clicking event of the SfButton.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //Raises the click event of SfButton
@@ -65,3 +66,5 @@ private void sfButton1_Click(object sender, EventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

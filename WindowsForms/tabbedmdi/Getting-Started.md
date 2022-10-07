@@ -53,6 +53,7 @@ To add the control manually in C#, follow the given steps:
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -68,9 +69,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of the [TabbedMDIManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) control. 
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -86,6 +90,8 @@ Dim tabbedMDIManager As TabbedMDIManager = New TabbedMDIManager()
 {% endhighlight  %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Add Form as Tabbed MDI child
 
