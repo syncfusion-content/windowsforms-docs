@@ -13,6 +13,7 @@ The tabs in the TabbedMDI layout can be aligned to the Top, Left, Right, and Bot
 
 **1.** Call the TabControlAdded event in the form's constructor.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -29,9 +30,12 @@ AddHandler tabbedMDIManager.TabControlAdded, AddressOf tabbedMDIManager_TabContr
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **2.** Set the Alignment property of Tab Control using the TabbedMDITabControlEventArgs.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -58,6 +62,8 @@ Private Sub tabbedMDIManager_TabControlAdded(ByVal sender As Object, ByVal args 
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ![Tabs alignment](Tab-Alignment_images/Tab-Alignment_img1.jpeg)

@@ -252,6 +252,7 @@ Follow the below steps to provide separate QAT image for the ToolstripItems.
 
 1.	Create an instance for the QATImageProvider
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -268,9 +269,12 @@ Dim qatImageProvider As QATImageProvider = New QATImageProvider(Me.ribbonControl
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2.	Set the image for the ToolstripItems.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -292,6 +296,8 @@ qatImageProvider.SetQATImage(Me.newToolStripButton, img)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Shows the QAT with different icons of ToolStripItem](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img8.jpg)
 

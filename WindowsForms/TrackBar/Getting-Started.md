@@ -49,6 +49,7 @@ To add the control manually in C#, follow the given steps:
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -61,9 +62,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -82,6 +86,8 @@ Me.Controls.Add(tabSplitterContainer1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![TrackBarEx control added via code](TrackBarEx-Getting-Started_images/trackbar-control-added-by-code.png)
 

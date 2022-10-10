@@ -39,6 +39,7 @@ The following steps illustrate how to create an **ColorPickerButton** control pr
 
 3) Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -52,9 +53,13 @@ Imports Syncfusion.Windows.Forms
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+
 
 4) Create an instance of the **ColorPickerButton** control and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -74,6 +79,9 @@ Me.Controls.Add(Me.colorPickerButton1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
+
 
 5) Clicking this button at runtime will display the ColorUIControl.
 

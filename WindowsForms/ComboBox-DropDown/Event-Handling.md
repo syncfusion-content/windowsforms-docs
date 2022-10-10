@@ -24,6 +24,7 @@ ComboDropDown.PopupContainer.Popup: It occurs after the popup has been dropped d
 
 1. Create a handler for the ComboDrop-Down's Drop-Down event and the TreeView's DoubleClick event. In the DoubleClick event, set the combo's text based on the selected node as follows.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -59,9 +60,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Simply traverses the tree structure recursively to find the matching node using the FindNode method discussed below.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
  
@@ -100,9 +104,12 @@ End Function
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. In the drop-down event, find the node whose text matches the text in the combo and make that the selected node, using the following code.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -131,6 +138,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. At run time, when the user double on a node, the node text will appears in the ComboDropDown. 
 5. Also when the user edits the text, the corresponding node will be selected in the tree in the drop down. 

@@ -42,6 +42,7 @@ To add FontSelected event, derive the classes as shown below.
 
 1. Add an event in the derived class.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -57,9 +58,12 @@ Public Event FontSelected As System.EventHandler
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 2. Override the OnSelectedIndexChanged method and fire the event there.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -83,3 +87,5 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 

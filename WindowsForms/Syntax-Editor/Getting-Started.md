@@ -43,8 +43,8 @@ To add the control manually in C#, follow the given steps:
 
 3) Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
 
+{% capture codesnippet1 %}
 {% tabs %}
-
 {% highlight C# %}
 
 // Create the EditControl instance.
@@ -97,8 +97,9 @@ editControl1.BorderStyle = BorderStyle.Fixed3D
 Me.Controls.Add(editControl1)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ![Windows Forms showing EditControl](Getting-Started_images/Getting-Started_img3.png)
 
@@ -174,6 +175,7 @@ The EditControl provides supports custom language configuration. You can plug-in
 
 1) Create a configuration file.
 
+{% capture codesnippet2 %}
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -204,11 +206,13 @@ The EditControl provides supports custom language configuration. You can plug-in
 </ArrayOfConfigLanguage>
 
 {% endhighlight %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 2) Apply the configuration file into the EditControl.
 
+{% capture codesnippet3 %}
 {% tabs %}
-
 {% highlight C# %}
 
 private string configFile = Path.GetDirectoryName(Application.ExecutablePath) + @"\..\..\config.xml";
@@ -237,8 +241,9 @@ Me.editControl1.Configurator.Open(configFile)
 Me.editControl1.ApplyConfiguration("LISP")
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
 ![Windows Forms EditControl configured for custom language](Getting-Started_images/Getting-Started_img5.png)
 

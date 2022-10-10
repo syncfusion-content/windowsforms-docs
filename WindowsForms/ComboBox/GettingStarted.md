@@ -40,6 +40,7 @@ To add control manually, follow the steps:
 
 2.Create the SfComboBox control instance and add it to the control collection of Form.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.ListView;
@@ -74,6 +75,8 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Binding to data
 

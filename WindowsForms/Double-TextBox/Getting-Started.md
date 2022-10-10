@@ -39,6 +39,7 @@ To add the control manually in C#, follow the given steps:
  
 **2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Forms.Tools;
@@ -47,9 +48,12 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 **3.**	Create a DoubleTextBox instance, and add it to the window.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 DoubleTextBox doubleTextBox1= new DoubleTextBox ();
@@ -60,6 +64,8 @@ Dim doubleTextBox1As DoubleTextBox = New DoubleTextBox ()
 Me.Controls.Add(doubleTextBox1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![DoubleTextBox control added by code](DoubleTextBox-images/wf-double-text-box-control.png) 
 

@@ -34,6 +34,7 @@ To create a StatusBarAdvPanel programmatically,
 * Add the Syncfusion assemblies Shared.Base and Tool.Windows to your application.
 * Declare the StatusBarAdvPanel control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -47,9 +48,12 @@ Private statusBarAdvPanel1 As Syncfusion.Windows.Forms.Tools.StatusBarAdvPanel
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Initialize the control and add it to your form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -67,9 +71,12 @@ Me.Controls.Add(Me.statusBarAdvPanel1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Customize the control's look and feel using the properties given below.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -93,6 +100,8 @@ Me.statusBarAdvPanel1.Size = New System.Drawing.Size(216, 48)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * Run the application. You will see the StatusBarAdvPanel with the date text displayed at the bottom right of the application.
 

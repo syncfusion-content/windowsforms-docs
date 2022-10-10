@@ -39,6 +39,7 @@ In order to add control manually, do the below steps,
 
 2)	Create the SfBarcode control instance and add it to the Form
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Windows.Forms.Barcode;
@@ -73,3 +74,5 @@ Namespace WindowsFormsApplication1
 End Namespace
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}

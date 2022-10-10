@@ -53,6 +53,7 @@ To add the control manually in C#, follow the given steps:
 
 **2.** Include the DomainUpDownExt control namespace **Syncfusion.Windows.Forms.Tools;**.
 
+  {% capture codesnippet1 %}
   {% tabs %}
   {% highlight C# %}
   using Syncfusion.Windows.Forms.Tools;
@@ -60,10 +61,13 @@ To add the control manually in C#, follow the given steps:
   {% highlight VB %}
   Imports Syncfusion.Windows.Forms.Tools
   {% endhighlight %}
-  {% endtabs %} 
+  {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 **3.** Create a DomainUpDownExt control instance, and add it to the form.
 
+ {% capture codesnippet2 %}
  {% tabs %}
  {% highlight C# %}
  DomainUpDownExt domainUpDownExt1=new DomainUpDownExt();
@@ -74,6 +78,8 @@ To add the control manually in C#, follow the given steps:
  Me.Controls.Add(domainUpDownExt1)
  {% endhighlight %}
  {% endtabs %}
+ {% endcapture %}
+ {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding items
 

@@ -21,12 +21,12 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
 ![Windows forms SplitButton drag and drop from toolbox](Getting-Started_images/SplitButton_Images.png)
 
@@ -49,13 +49,14 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C#%}
@@ -71,12 +72,15 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Windows forms SplitButton](Getting-Started_images/SplitButton_imagereference.png)
 
 
 **Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -114,6 +118,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Step 3**: Run the application and the following output will be shown.
 

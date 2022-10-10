@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using-ComboBoxes-inside-ComboDropDown | WindowsForms | Syncfusion
-description: using comboboxes inside combodropdown
+description: Learn here all about to using comboboxes inside combodropdown with Syncfusion Essential Studio Windows Forms ComboBox DropDown control and more details.
 platform: WindowsForms
 control: Editors Package
 documentation: ug
@@ -19,6 +19,7 @@ The steps are as follows.
 4. Set the PopupControl property of the ComboDropDown to the same Panel.
 5. To avoid closing the ComboDropDown after selecting the item in ComboBox, handle the SelectedIndexChanged event of both ComboBoxes and keep the DropDown showing.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -46,9 +47,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 6. In the button click event of the Button inside the panel, insert these codes to close DropDown and to change text of ComboDropDown.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -71,7 +75,9 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-    ![](Overview_images/Overview_img294.png) 
+![adding combobox inside combodropdown](faq\Overview_images\Overview_img294.png) 
 
    

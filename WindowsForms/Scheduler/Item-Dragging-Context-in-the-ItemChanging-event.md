@@ -59,6 +59,7 @@ The following steps help you to get the target part in the Schedule control whil
 2. Add appointments in that schedule grid.
 3. Hook the `ItemChanging` event.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandler(scheduleControl1_ItemChanging);
@@ -67,6 +68,8 @@ this.scheduleControl1.ItemChanging += new ScheduleAppointmentChangingEventHandle
 AddHandler scheduleControl1.ItemChanging, AddressOf scheduleControl1_ItemChanging
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 Get the drag hit context with the following code.
 
