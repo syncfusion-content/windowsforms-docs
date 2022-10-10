@@ -44,15 +44,16 @@ The pivot chart control can be added through code-behind by following the given 
 
 2. Add the following assembly references to the project.
 
-* Syncfusion.Chart.Windows.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.PivotAnalysis.Base.dll
-* Syncfusion.PivotAnalysis.Windows.dll
-* Syncfusion.PivotChart.Windows.dll
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Chart.Windows.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.PivotAnalysis.Base.dll
+    * Syncfusion.PivotAnalysis.Windows.dll
+    * Syncfusion.PivotChart.Windows.dll
+    * Syncfusion.Shared.Base.dll
 
 3. Then, initialize the pivot chart control by creating an instance and adding it to the form using the following specified code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -76,6 +77,8 @@ Me.Controls.Add(pivotChart1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control via Syncfusion reference manager
 
@@ -85,19 +88,19 @@ Me.Controls.Add(pivotChart1)
 
 2. Then, right-click the project and select Syncfusion Reference Manager.
 
-![GettingStarted_img3](Getting-Started_images/GettingStarted_img3.png)
+    ![GettingStarted_img3](Getting-Started_images/GettingStarted_img3.png)
 
 3. The Syncfusion Reference Manager wizard will be opened as follows.
 
-![GettingStarted_img4](Getting-Started_images/GettingStarted_img4.png)
+    ![GettingStarted_img4](Getting-Started_images/GettingStarted_img4.png)
 
 4. Select the pivot chart control by searching it through the search box. Then, click the done button to add the selected pivot chart control.
 
-![GettingStarted_img5](Getting-Started_images/GettingStarted_img5.png)
+    ![GettingStarted_img5](Getting-Started_images/GettingStarted_img5.png)
 
-5. The required assemblies will be automatically added to the project by clicking OK.
+5.  The required assemblies will be automatically added to the project by clicking OK.
 
-![GettingStarted_img6](Getting-Started_images/GettingStarted_img6.png)
+    ![GettingStarted_img6](Getting-Started_images/GettingStarted_img6.png)
 
 6. Add the following code snippet in code behind to create a simple pivot chart control.
 

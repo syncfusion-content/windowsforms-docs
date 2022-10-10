@@ -72,13 +72,14 @@ The RadialGauge control can be added to the application by dragging it from the 
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
-	* Syncfusion.Gauge.Windows.dll
-	* Syncfusion.Shared.Base.dll
+	    * Syncfusion.Gauge.Windows.dll
+	    * Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -94,9 +95,12 @@ Imports Syncfusion.Windows.Forms.Gauge
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** - Create [RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control instance and add it to the form.
+Step 3. Create [RadialGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) control instance and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -120,6 +124,8 @@ Me.Controls.Add(radialGauge1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Radial Gauge for Windows Forms](Radial-Gauge_images/RadialGauge_img2.png)
 
@@ -928,16 +934,16 @@ Me.radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
  Steps to Customize the theme in Design time.
 
- **Step 1:**  Need to add RadialGauge control to Form Designer.
+ Step 1. Need to add RadialGauge control to Form Designer.
 
 
 ![Radial Gauge in designer](Radial-Gauge_images/Radial-Gauge_img22.png)
 
- **Step 2:** Set the VisualStyle as Custom.
+ Step 2. Set the VisualStyle as Custom.
 
 ![Customized Radial Gauge with smart tag](Radial-Gauge_images/Radial-Gauge_img23.png)
 
- **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in RadialGauge control.
+ Step 3. Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in RadialGauge control.
 
 ![Customized Radial Gauge in designer](Radial-Gauge_images/Radial-Gauge_img24.png)
 
@@ -1020,6 +1026,7 @@ To customize the appearance,
 1. Create a new custom renderer class and implement each of the members defined in [IRadialGaugeRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.IRadialGaugeRenderer.html).
 2. Assign instance of your custom renderer to the [Renderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_Renderer) property of RadialGauge. By default, RadialGauge is painted by using its default renderer.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -1039,6 +1046,8 @@ radialGauge1.Renderer = custom
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Customized Radial Gauge for Windows Forms](Radial-Gauge_images/custom.jpeg)
 

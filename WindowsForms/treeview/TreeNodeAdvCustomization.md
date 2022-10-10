@@ -729,7 +729,7 @@ Any custom control can be dragged and dropped to the form and selected using `Tr
 
 To Add the custom control to a node as follows
 
-<b>Step 1</b>: Create the instance of custom control and customize location and size of the custom control.
+Step 1. Create the instance of custom control and customize location and size of the custom control.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -744,7 +744,7 @@ this.comboBoxAdv.Location = new System.Drawing.Point(83, 75);
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-<b>Step 2</b>: Add primitive to the node using TreeNode Primitive Collection Editor
+Step 2. Add primitive to the node using TreeNode Primitive Collection Editor
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -758,7 +758,7 @@ treeNode.Primitives.AddRange(new Syncfusion.Windows.Forms.Tools.TreeNodePrimitiv
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-<b>Step 3</b>:. Add the custom control to the node using TreeNodeAdv.CustomControl property
+Step 3. Add the custom control to the node using TreeNodeAdv.CustomControl property
 
 {% capture codesnippet3 %}​
 {% tabs %}
@@ -1118,9 +1118,9 @@ It is the space provided between, the LeftStateImage of the node and node.</td><
 
 To set the left images for all the nodes in treeview follow the below steps 
 
-<b>Step 1</b>: Create image list and add images in it.
+Step 1. Create image list and add images in it.
 
-<b>Step 2</b>: Set `treeViewAdv1.LeftImageList` as newly created image list;
+Step 2. Set `treeViewAdv1.LeftImageList` as newly created image list;
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -1138,7 +1138,7 @@ Me.treeViewAdv1.LeftImageList = Me.leftImageList
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 			
-<b>Step 3</b>: Now set the `LeftImageIndices` for each node in TreeViewAdv.
+Step 3. Now set the `LeftImageIndices` for each node in TreeViewAdv.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -1151,7 +1151,7 @@ treeNodeAdv1.LeftImageIndices = new int[] {1};
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>:. Repeat step 3 until  set `LeftImageIndices` for all the nodes in treeview
+Step 4. Repeat step 3 until  set `LeftImageIndices` for all the nodes in treeview
 
 ![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
@@ -1192,9 +1192,9 @@ RightStateImagePadding</td><td>	It is the space provided between, the RightState
 
 To set the Right images for all the nodes in treeview follow the below steps 
 
-<b>Step 1</b>: Create image list and add images in it.
+Step 1. Create image list and add images in it.
 
-<b>Step 2</b>: Set `treeViewAdv1.RightImageList` as newly created image list;
+Step 2. Set `treeViewAdv1.RightImageList` as newly created image list;
 
 {% capture codesnippet6 %}
 {% tabs %}
@@ -1212,7 +1212,7 @@ Me.treeViewAdv1.RightImageList = Me.rightImageList
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 			
-<b>Step 3</b>: Now set the `RightImageIndices` for each node in TreeViewAdv.
+Step 3. Now set the `RightImageIndices` for each node in TreeViewAdv.
 
 {% capture codesnippet7 %}
 {% tabs %}
@@ -1225,7 +1225,7 @@ treeNodeAdv1.RightImageIndices = new int[] {1};
 {% endcapture %}
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set `RightImageIndices` for all the nodes in treeview
+Step 4. Repeat step 3 until  set `RightImageIndices` for all the nodes in treeview
 
 ![TreeNodeAdv_Customization_Img22](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img22.jpg)
 
@@ -1279,9 +1279,9 @@ It is the image index in StateImageList where the node is expanded.</td></tr>
 
 To set the state images for all the nodes in treeview follow the below steps  
 
-<b>Step 1</b>: Create image list and add images in it.
+Step 1. Create image list and add images in it.
 
-<b>Step 2</b>: Set "treeViewAdv1.StateImageList" as newly created image list;
+Step 2. Set "treeViewAdv1.StateImageList" as newly created image list;
 
 {% capture codesnippet8 %}
 {% tabs %}
@@ -1302,7 +1302,7 @@ Me.treeViewAdv1. StateImageList = Me.stateImageList
 {% endcapture %}
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-<b>Step 3</b>: Now set the OpenImgIndex and ClosedImgIndex for each node in TreeViewAdv.
+Step 3. Now set the OpenImgIndex and ClosedImgIndex for each node in TreeViewAdv.
 
 {% capture codesnippet9 %}
 {% tabs %}
@@ -1318,7 +1318,7 @@ treeNodeAdv1.CloseImgIndex = 1;
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in treeview
+Step 4. Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in treeview
 			 
 ![TreeNodeAdv_Customization_Img21](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img21.jpg)
 
@@ -1389,9 +1389,9 @@ It is the image index for expand button.</td></tr>
 
 To set the expander images for all the nodes in treeview follow the below steps
 
-<b>Step 1</b>: Create image list and add images in it.
+Step 1. Create image list and add images in it.
 
-<b>Step 2</b>: Set “treeViewAdv1.NodeStateImageList “ as newly created image list;
+Step 2. Set “treeViewAdv1.NodeStateImageList “ as newly created image list;
 
 {% capture codesnippet10 %}
 {% tabs %}
@@ -1412,7 +1412,7 @@ Me.treeViewAdv1. NodeStateImageList = Me.nodeStateImageList
 {% endcapture %}
 {{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-<b>Step 3</b>: Now set the ExpandImageIndex and CollapseImageIndex for each node in TreeViewAdv.
+Step 3. Now set the ExpandImageIndex and CollapseImageIndex for each node in TreeViewAdv.
 
 {% capture codesnippet11 %}
 {% tabs %}
@@ -1428,7 +1428,7 @@ treeNodeAdv1. CollapseImageIndex = 0;
 {% endcapture %}
 {{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-<b>Step 4</b>: Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in treeview
+Step 4. Repeat step 3 until  set the ExpandImageIndex and CollapseImageIndex  for all the nodes in treeview
 			 
 ![TreeNodeAdv_Customization_Img23](TreeNodeAdv_Customization_Images/TreeNodeAdv_Customization_Img23.jpg)
 

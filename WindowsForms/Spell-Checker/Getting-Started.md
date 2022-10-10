@@ -55,7 +55,7 @@ SpellCheckerAdv control can be added to the application by dragging it from the 
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** : Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
         * Syncfusion.Tools.Base.dll
         * Syncfusion.Tools.Windows.dll
@@ -65,7 +65,7 @@ To add control manually in C#, follow the given steps:
         * Syncfusion.Grid.Base.dll
         * Syncfusion.Grid.Windows.dll
 
-**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -86,7 +86,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** :  Create `SpellCheckerAdv` control instance.
+Step 3. Create `SpellCheckerAdv` control instance.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -109,7 +109,7 @@ Dim spellCheckerAdv1 As SpellCheckerAdv = New SpellCheckerAdv
 
 ## Configuring SpellCheckerAdv into RichTextBox control
 
-**Step 1** : Create a class implementing [ISpellCheckerAdvEditorTools](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ISpellCheckerAdvEditorTools.html) interface as shown below.
+Step 1. Create a class implementing [ISpellCheckerAdvEditorTools](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ISpellCheckerAdvEditorTools.html) interface as shown below.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -266,7 +266,7 @@ End Class
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-**Step 2** - Create instances `RichTextBox` (Editor Control to be spell checked) and `Button` and add it to the form.
+Step 2. Create instances `RichTextBox` (Editor Control to be spell checked) and `Button` and add it to the form.
 
 {% capture codesnippet4 %}​
 {% tabs %}
@@ -303,7 +303,7 @@ Me.Controls.Add(Me.richTextBox1)
 
 ![Spell checker](Getting-Started_images/SpellCheckerAdv-img1.png)
 
-**Step 3** - Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `SpellCheckerAdv` using [PerformSpellCheckForControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_PerformSpellCheckForControl_Syncfusion_Windows_Forms_Tools_ISpellCheckerAdvEditorTools_) method.
+Step 3. Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `SpellCheckerAdv` using [PerformSpellCheckForControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_PerformSpellCheckForControl_Syncfusion_Windows_Forms_Tools_ISpellCheckerAdvEditorTools_) method.
 
 {% capture codesnippet5 %}​
 {% tabs %}
@@ -328,7 +328,7 @@ Me.spellCheckerAdv1.PerformSpellCheckForControl(TextEditor)
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-**Step 4** - Finally trigger `SpellCheckerAdv` through an event such as `Click` of the button as given below.
+Step 4. Finally trigger `SpellCheckerAdv` through an event such as `Click` of the button as given below.
 
 {% capture codesnippet6 %}​
 {% tabs %}

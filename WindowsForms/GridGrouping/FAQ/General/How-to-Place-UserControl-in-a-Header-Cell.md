@@ -13,10 +13,10 @@ To have User Control in GridGroupingControl, GridGenericCellModel and GridGeneri
 
 The following are the steps that need to be followed to do this.
 
-Step 1: The UserControl form is added to the project and the required controls are dropped into it.
+Step 1. The UserControl form is added to the project and the required controls are dropped into it.
 
-Step 2: The GridGenericCellModel and GridGenericCellRenderer classes are derived and the UserControl is drawn accordingly to fit into the required cell header.
-
+Step 2. The GridGenericCellModel and GridGenericCellRenderer classes are derived and the UserControl is drawn accordingly to fit into the required cell header.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -66,9 +66,11 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }
 
-Step 3: A new CellType is created by adding the instance of derived generic cell model class into the GridGroupingControl's CellModels.
-
+Step 3. A new CellType is created by adding the instance of derived generic cell model class into the GridGroupingControl's CellModels.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -84,3 +86,5 @@ Me.gridGroupingControl1.Table.TableModel.CellModels.Add("UserControl", New Custo
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }

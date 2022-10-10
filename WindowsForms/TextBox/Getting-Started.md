@@ -35,11 +35,11 @@ The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 In order to add control manually, do the below steps,
 
-1) Add the following assembly reference to the project.
+1. Add the following assembly reference to the project.
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-2) Include the required namespace.
+2. Include the required namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -60,7 +60,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3) Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
+3. Create the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control instance, and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}

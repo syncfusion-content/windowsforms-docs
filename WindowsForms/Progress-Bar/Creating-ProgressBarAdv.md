@@ -47,12 +47,13 @@ The [Windows Forms Progress Bar](https://help.syncfusion.com/cr/windowsforms/Syn
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
-	* Syncfusion.Shared.Base.dll
+		* Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -67,10 +68,13 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight  %}
 
-{% endtabs %} 
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-**Step 3** - Create `ProgressBarAdv` control instance and add it to the form.
+Step 3. Create `ProgressBarAdv` control instance and add it to the form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -98,6 +102,8 @@ Me.Controls.Add(progressBarAdv1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Adding control manually in windows forms progress bar](GettingStarted-images/GettingStarted-img2.png)
 

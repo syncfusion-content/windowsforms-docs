@@ -64,13 +64,14 @@ The [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** : Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
-* Syncfusion.Gauge.Windows.dll
-* Syncfusion.Shared.Base.dll
+        * Syncfusion.Gauge.Windows.dll
+        * Syncfusion.Shared.Base.dll
 
-**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -86,9 +87,12 @@ Imports Syncfusion.Windows.Forms.Gauge
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** : Create [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control instance and add it to the form.
+Step 3. Create [DigitalGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.DigitalGauge.html) control instance and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -108,6 +112,8 @@ Me.Controls.Add(digitalGauge1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Digital Gauge for Windows Forms](Digital-Gauge_images/DigitalGauge_img1.png)
 
@@ -341,16 +347,16 @@ Me.digitalGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2
 
  **Steps to customize the theme in design time**
 
- **Step 1:**  Need to add DigitalGauge control to Form Designer.
+ Step 1. Need to add DigitalGauge control to Form Designer.
 
 
 ![Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img17.png)
 
- **Step 2:** Set the VisualStyle as Custom.
+ Step 2. Set the VisualStyle as Custom.
 
 ![Customized Digital Gauge with smart tag](Digital-Gauge_images/Digital-Gauge_img18.png)
 
- **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in DigitalGauge control.
+ Step 3. Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in DigitalGauge control.
 
 ![Customized Digital Gauge in designer](Digital-Gauge_images/Digital-Gauge_img19.png)
 

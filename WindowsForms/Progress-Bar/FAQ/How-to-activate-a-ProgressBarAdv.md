@@ -19,6 +19,7 @@ This section will give you a brief description on how to use the ProgressBarAdv 
 
 3. Double-click the timer and add the below given code in the timer_Tick event.
 
+   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -58,9 +59,12 @@ This section will give you a brief description on how to use the ProgressBarAdv 
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Enable the timer in the button_Click event.
 
+   {% capture codesnippet2 %}​
    {% tabs %}
 
    {% highlight C# %}
@@ -87,6 +91,8 @@ This section will give you a brief description on how to use the ProgressBarAdv 
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. Run the application.
 

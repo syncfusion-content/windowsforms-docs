@@ -30,9 +30,9 @@ Windows Forms DataGrid (SfDataGrid) control can be added to the application by d
 ### Adding Control in Code
 In order to add control manually, do the below steps,
 
-1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project
+1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#sfdatagrid) to the project
 
-2)	Create the SfDataGrid control instance and add it to the Form
+2. Create the SfDataGrid control instance and add it to the Form
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -78,7 +78,7 @@ End Namespace
 
 SfDataGrid is a data-bound control. So data must be created for application.
 
-1)	Create data object class named “OrderInfo” and declare properties as shown below,
+1. Create data object class named “OrderInfo” and declare properties as shown below,
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -191,7 +191,7 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-2)	Create an **OrderInfoCollection** class with Orders property and Orders property is initialized with several data objects in constructor.
+2. Create an **OrderInfoCollection** class with Orders property and Orders property is initialized with several data objects in constructor.
 
 {% capture codesnippet3 %}
 {% tabs %}

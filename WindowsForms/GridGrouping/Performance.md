@@ -246,8 +246,9 @@ All the optimizations are enabled by setting [AllowedOptimizations](https://help
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Engine Optimization Demo\CS
 
 Use the following steps to experiment different engine optimizations.
-1.Create a class (`VirtualItem`) that represents the record structure. Its data members form the record fields.
+1. Create a class (`VirtualItem`) that represents the record structure. Its data members form the record fields.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class VirtualItem
@@ -354,9 +355,12 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Create another class (`VirtualList`) by implementing[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) and [ITypedList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0) interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
+2. Create another class (`VirtualList`) by implementing[IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0) and [ITypedList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0) interfaces. This class represents your collection that serves as data source for grid grouping control. Refer to CustomCollections under the DataBinding topic to know how to implement these interfaces.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public class VirtualList : IList, ITypedList
@@ -617,12 +621,15 @@ Public Class VirtualList
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Add a button and ListBox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein user will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. The form will be look like the one below at design time.
+3. Add a button and ListBox to the main form. Clicking the button will create a grid grouping control and load it with Virtual List. ListBox serves as Log Window wherein user will display the log messages like time elapsed for loading the grid, list of optimizations applied, and so on. The form will be look like the one below at design time.
 ![Performance_img2](Performance_images/Performance_img2.png)
 
-4.Set up a new engine and specify the optimizations settings required.
+4. Set up a new engine and specify the optimizations settings required.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 GridEngine schema = new GridEngine();
@@ -657,9 +664,12 @@ schema.Reset()
 schema.TableDescriptor.Columns("Index").MaxLength = 10
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-5.Define a method `LogMemoryUsage` that calculates the amount of memory consumed and displays various optimizations applied to the grouping engine.
+5. Define a method `LogMemoryUsage` that calculates the amount of memory consumed and displays various optimizations applied to the grouping engine.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 void LogMemoryUsage()
@@ -703,9 +713,12 @@ Private Sub LogMemoryUsage()
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-6.Handle the `ButtonClick` event in order to populate the grid when the button is clicked. It also calls `LogMemoryUsage` method to display initial optimization settings for the grid - the optimizations for an ungrouped and unsorted grid.
+6. Handle the `ButtonClick` event in order to populate the grid when the button is clicked. It also calls `LogMemoryUsage` method to display initial optimization settings for the grid - the optimizations for an ungrouped and unsorted grid.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 this.buttonLoadGrid.Click += new System.EventHandler(this.LoadGridLoadGrid_Click);
@@ -772,9 +785,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-7.Handle `PropertyChanging` event to display log for every property that is being changed in the grid. This will be raised when you group or sort the grid grouping control and hence you could track the results of these operations (especially the current optimizations) here.
+7. Handle `PropertyChanging` event to display log for every property that is being changed in the grid. This will be raised when you group or sort the grid grouping control and hence you could track the results of these operations (especially the current optimizations) here.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 gridGroupingControl1.PropertyChanging += new DescriptorPropertyChangedEventHandler(gridGroupingControl1_PropertyChanging);
@@ -828,6 +844,8 @@ Private Sub t_Tick(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 ![Performance_img3](Performance_images/Performance_img3.png)
 
 ## Record ListChanged Performance
@@ -847,8 +865,9 @@ The implementation uses custom summary class named `ManualTotalSummary`. This is
 **Sample Location:**<br/>
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Manual Total Summary Demo
 
-Use the following steps to improve the performance,
+1. Use the following steps to improve the performance,
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 public class ManualTotalSummary 
@@ -1131,9 +1150,12 @@ Public Class ManualTotalSummary
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2.`ManualTotalSummary` class makes use of `ManualTotalSummaryTable` class, which derives `GridTable` to calculate the new total. `ManualTotalSummaryTable` class overrides `OnRecordChanged` event in order to track record changes and keeps track of old and new values of the `ChangedField`. For each entry in `ManualTotalSummaryTable.TotalSummaries`, a `ManualTotalSummary` will be created.
+2. `ManualTotalSummary` class makes use of `ManualTotalSummaryTable` class, which derives `GridTable` to calculate the new total. `ManualTotalSummaryTable` class overrides `OnRecordChanged` event in order to track record changes and keeps track of old and new values of the `ChangedField`. For each entry in `ManualTotalSummaryTable.TotalSummaries`, a `ManualTotalSummary` will be created.
 
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
 public class ManualTotalSummaryTable : GridTable
@@ -1329,9 +1351,12 @@ Public Class ManualTotalSummaryTable
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.A Grid Grouping control is setup with options to display the summary cells in caption and enable the optimizations required. Use `InvalidateAll` option for `InsertRemoveBehavior` and `SortPositionChangedBehavior` properties when many records change sort position for a short time. Use `ScrollWithImmediateUpdate` if `ScrollWindow` should be called to minimize painting when sort position of limited number of records is changed. GridGroupingControl will be detached from `CurrencyManager`, and then access the list directly to solely rely on `ListChanged` events.
+3. A Grid Grouping control is setup with options to display the summary cells in caption and enable the optimizations required. Use `InvalidateAll` option for `InsertRemoveBehavior` and `SortPositionChangedBehavior` properties when many records change sort position for a short time. Use `ScrollWithImmediateUpdate` if `ScrollWindow` should be called to minimize painting when sort position of limited number of records is changed. GridGroupingControl will be detached from `CurrencyManager`, and then access the list directly to solely rely on `ListChanged` events.
 
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.UpdateDisplayFrequency = 0; // 0 if manual updates only from timer_tick
@@ -1361,9 +1386,12 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = True
 Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.CaptionSummaryRow = "Caption"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-4.Setup ManualTotalSummary for the columns Freight and EmployeeID. The ManualTotalSummary.Total value will be retrieved and displayed in summary or caption cell in QueryCellStyleInfo event handler. It tracks the changes in sort positions of columns Freight and EmployeeID by handling PropertyChanged event.
+4. Setup ManualTotalSummary for the columns Freight and EmployeeID. The ManualTotalSummary.Total value will be retrieved and displayed in summary or caption cell in QueryCellStyleInfo event handler. It tracks the changes in sort positions of columns Freight and EmployeeID by handling PropertyChanged event.
 
+{% capture codesnippet10 %}​
 {% tabs %}
 {% highlight c# %}
 ManualTotalSummaryTable tbs = (ManualTotalSummaryTable)this.gridGroupingControl1.Table;
@@ -1498,9 +1526,12 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-5.Enable highlighting the cells changed in all the columns.
+5. Enable highlighting the cells changed in all the columns.
 
+{% capture codesnippet11 %}​
 {% tabs %}
 {% highlight c# %}
 for (int c = 0; c < gridGroupingControl1.TableDescriptor.Columns.Count; c++)
@@ -1514,8 +1545,11 @@ Next c
 Me.gridGroupingControl1.BlinkTime = 100
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
-6.To optimize performance, grid is updated manually (UpdateDisplayFrequency = 0) at regular intervals. A timer is used to keep track of the duration of time periods. The code to track the changes in Freight and `EmployeeID` columns and to update the grid rows is written inside the `timer_tick` event handler where the update is done manually by making a call to[Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Update) method. Timer interval is set to `100`, which means that there would be an update for every `100 ms`. This implementation pushes in the pending updates every `100 ms` and updates `1000 records` each time.
+6. To optimize performance, grid is updated manually (UpdateDisplayFrequency = 0) at regular intervals. A timer is used to keep track of the duration of time periods. The code to track the changes in Freight and `EmployeeID` columns and to update the grid rows is written inside the `timer_tick` event handler where the update is done manually by making a call to[Update](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_Update) method. Timer interval is set to `100`, which means that there would be an update for every `100 ms`. This implementation pushes in the pending updates every `100 ms` and updates `1000 records` each time.
+{% capture codesnippet12 %}​
 {% tabs %}
 {% highlight c# %}
 void timer_tick(object sender, EventArgs e)
@@ -1703,9 +1737,12 @@ End Using
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
-7.It should also take care of `UnboundFields` whose values are usually dependent on changes to other fields. If unbound fields are used, user can tell the engine the fields that the unbound field is dependent on, by setting the[ReferencedFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FieldDescriptor.html#Syncfusion_Grouping_FieldDescriptor_ReferencedFields) property. When `ReferencedFields` is set and the engine detects changes to the unbound field, it will then automatically mark the field as changed. This subsequently can affect sort order, group attachment, and so on.
+7. It should also take care of `UnboundFields` whose values are usually dependent on changes to other fields. If unbound fields are used, user can tell the engine the fields that the unbound field is dependent on, by setting the[ReferencedFields](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FieldDescriptor.html#Syncfusion_Grouping_FieldDescriptor_ReferencedFields) property. When `ReferencedFields` is set and the engine detects changes to the unbound field, it will then automatically mark the field as changed. This subsequently can affect sort order, group attachment, and so on.
 
+{% capture codesnippet13 %}​
 {% tabs %}
 {% highlight c# %}
 //Adds Unbound field 'ShipVia_CompanyName'.
@@ -1722,6 +1759,8 @@ gridGroupingControl1.TableDescriptor.UnboundFields.Add("ShipVia_CompanyName")
 gridGroupingControl1.TableDescriptor.UnboundFields("ShipVia_CompanyName").ReferencedFields = "ShipVia"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 The grid will be looks like the following while updating.
 ![Performance_img4](Performance_images/Performance_img4.png)
 
@@ -1738,8 +1777,8 @@ This example demonstrates the frequent updates that occur in random cells across
 **Sample Location:**<br/>
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\Grid.Grouping.Windows\Samples\Performance\Grouping Trader Grid Test Demo
 
-1.Set up GridGroupingControl and load it with some random data. Enable the optimizations as required.
-
+1. Set up GridGroupingControl and load it with some random data. Enable the optimizations as required.
+{% capture codesnippet14 %}​
 {% tabs %}
 {% highlight c# %}
 GridGroupingControl gridGroupingControl1 = new GridGroupingControl();
@@ -1799,9 +1838,11 @@ gridGroupingControl1.InvalidateAllWhenListChanged = False
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
-2.Set [AllowBlink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowBlink) to true for all the columns in order to enable highlighting cells for a short period of time when a change is detected. [Engine.AddBaseStylesForBlinking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngine_AddBaseStylesForBlinking) method is used to add base styles for customization of the appearance of blink cells. Initialize base styles for various blink states. `PrepareViewStyleInfo` is handled to set custom base style for a newly added record. A cell change is highlighted by checking its [BlinkState](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.BlinkState.html). `BlinkState` indicates whether the cell’s value is increased or reduced or if the record has been recently added. If its state is either Increased or Reduced, its back color and text colors are changed.
-
+2. Set [AllowBlink](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_AllowBlink) to true for all the columns in order to enable highlighting cells for a short period of time when a change is detected. [Engine.AddBaseStylesForBlinking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html#Syncfusion_Windows_Forms_Grid_Grouping_GridEngine_AddBaseStylesForBlinking) method is used to add base styles for customization of the appearance of blink cells. Initialize base styles for various blink states. `PrepareViewStyleInfo` is handled to set custom base style for a newly added record. A cell change is highlighted by checking its [BlinkState](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.BlinkState.html). `BlinkState` indicates whether the cell’s value is increased or reduced or if the record has been recently added. If its state is either Increased or Reduced, its back color and text colors are changed.
+{% capture codesnippet15 %}​
 {% tabs %}
 {% highlight c# %}
 void gridGroupingControl1_TableControlPrepareViewStyleInfo(object sender, GridTableControlPrepareViewStyleInfoEventArgs e)
@@ -1834,8 +1875,11 @@ Private Sub gridGroupingControl1_TableControlPrepareViewStyleInfo(ByVal sender A
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
-3.A timer event is handled to insert and remove the records. This results in frequent list changes at regular intervals.
+3. A timer event is handled to insert and remove the records. This results in frequent list changes at regular intervals.
+{% capture codesnippet16 %}​
 {% tabs %}
 {% highlight c# %}
     bool skipTimer = false;
@@ -1993,9 +2037,11 @@ Private Sub timer_Tick(ByVal sender As Object, ByVal e As EventArgs)
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet16 | OrderList_Indent_Level_1 }}
 
-4.`QueryCellStyleInfo` is handled to enable coloring of the cells. The background colors of the cells in the records are dependent on the column 1 values. This dependency is specified using Referenced Fields property. To make it user friendly, you can use CheckBox control to enable or disable this coloring. Hook this event if the checked state of the CheckBox is true; unhook otherwise.
-
+4. `QueryCellStyleInfo` is handled to enable coloring of the cells. The background colors of the cells in the records are dependent on the column 1 values. This dependency is specified using Referenced Fields property. To make it user friendly, you can use CheckBox control to enable or disable this coloring. Hook this event if the checked state of the CheckBox is true; unhook otherwise.
+{% capture codesnippet17 %}​
 {% tabs %}
 {% highlight c# %}
 Color[] colors = new Color[] {          
@@ -2123,9 +2169,11 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet17 | OrderList_Indent_Level_1 }}
 
-5.Add three more CheckBoxes to include options to enable or disable Grouping, Sorting, and Filtering at runtime. Handle their checked changed events to add the code for adding and removing groups, sorted columns and record filters. For example, if the checked state of the check box is `true` then group the table against a column. When its checked state is turned to false, simply ungroup the table.
-
+5. Add three more CheckBoxes to include options to enable or disable Grouping, Sorting, and Filtering at runtime. Handle their checked changed events to add the code for adding and removing groups, sorted columns and record filters. For example, if the checked state of the check box is `true` then group the table against a column. When its checked state is turned to false, simply ungroup the table.
+{% capture codesnippet18 %}​
 {% tabs %}
 {% highlight c# %}
 //Sorts Option.
@@ -2234,9 +2282,11 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet18 | OrderList_Indent_Level_1 }}
 
-6.Two `TrackBar` controls are used to change the frequencies of the Timer and `BlinkTime`. The frequencies that are set by the end user are integrated into the grid grouping control in their respective `TrackBarScroll` event handlers.
-
+6. Two `TrackBar` controls are used to change the frequencies of the Timer and `BlinkTime`. The frequencies that are set by the end user are integrated into the grid grouping control in their respective `TrackBarScroll` event handlers.
+{% capture codesnippet19 %}​
 {% tabs %}
 {% highlight c# %}
 //Changes the Blink Time Frequency.
@@ -2299,6 +2349,8 @@ Private Sub trackBarTimer_Scroll(ByVal sender As Object, ByVal e As System.Event
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet19 | OrderList_Indent_Level_1 }}
 Given below is a sample screen shot. While running the sample, apply grouping, sorting and filtering, and then check for the CPU time usage in TaskManager to detect grid performance.
 
 ![Performance_img5](Performance_images/Performance_img5.png)

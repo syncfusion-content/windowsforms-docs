@@ -19,6 +19,7 @@ The tri-state sort behavior is accomplished by storing sort indicator, which is 
 
 1. There are a couple of problems that you will have to work around. One is that the standard column header cell uses Tag for its sort header and it explicitly sets the non-sorted header's Tag to ascending/descending only. It does not support none option for unsort GridDataBoundGridControl. So, you need to hide HeaderCell and add the New Header.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -60,9 +61,12 @@ Me.gridDataBoundGrid1(1, col).CellType = "ColumnHeaderCell"
 Next
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
    
 2. In the CellClick Event perform the sorting.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -137,3 +141,5 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

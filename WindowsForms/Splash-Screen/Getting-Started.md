@@ -25,44 +25,44 @@ Create a new Windows Forms project in Visual Studio to display the `SplashContro
 
 The `SplashControl` provides full support for the Windows Forms designer.
 
-**Step 1**: Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form. The following required assembly reference will be added automatically.
+Step 1. Drag and drop the SplashControl from the toolbox onto the form. The SplashControl will be created in the components area of the form. The following required assembly reference will be added automatically.
 
          * Syncfusion.Shared.Base.dll
          * Syncfusion.Tools.Windows.dll
 
    ![Drag and drop the SplashControl from toolbox](Overview_images/splash_img1.jpeg) 
 
-**Step 2**: Set the SplashImage and the TimerInterval properties through the property grid.
+Step 2. Set the SplashImage and the TimerInterval properties through the property grid.
 
-**Step 3**: Set the AutoMode property. This property controls how the SplashControl will be invoked. If the AutoMode property is set to 'True', the SplashControl will automatically launch itself during the parent form's load event.
+Step 3. Set the AutoMode property. This property controls how the SplashControl will be invoked. If the AutoMode property is set to 'True', the SplashControl will automatically launch itself during the parent form's load event.
 
-**Step 4**: The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
+Step 4. The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
 
    ![Windows forms splashcontrol showing in designer page](Overview_images/splash_img2.jpeg) 
 
-**Step 5**: Now run the application.
+Step 5. Now run the application.
 
-**Step 6**: If the AutoMode property is set to 'False', the splash screen will have to be invoked explicitly by calling the ShowSplash() method.
+Step 6. If the AutoMode property is set to 'False', the splash screen will have to be invoked explicitly by calling the ShowSplash() method.
 
-**Step 7**: Handle the SplashClosed event to do your processing after the splash screen is closed.
+Step 7. Handle the SplashClosed event to do your processing after the splash screen is closed.
 
    ![Windows forms splashcontrol showing splash screen at run time](Overview_images/splash_img3.jpeg) 
 
-**Step 8**: You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
+Step 8. You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
 
 ## Through code
 
 A SplashControl can be created through code by following the below steps.
 
-**Step 1**: Create a C# or VB.NET application though Visual Studio.
+Step 1. Create a C# or VB.NET application though Visual Studio.
 
-**Step 2**: Add the required assembly references.
+Step 2. Add the required assembly references.
 
-	   1. Syncfusion.Shared.Base.dll
+         1. Syncfusion.Shared.Base.dll
 	
-	   2. Syncfusion.Tools.Windows.dll
+         2. Syncfusion.Tools.Windows.dll
 
-**Step 3**: Declare and initialize a `SplashControl` using the below code.
+Step 3. Declare and initialize a `SplashControl` using the below code.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -85,7 +85,7 @@ Me.SuspendLayout()
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 4**: Set the following properties.
+Step 4. Set the following properties.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -110,6 +110,6 @@ Me.SplashControl1.TimerInterval = 3000
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**Step 5**: Run the application.
+Step 5. Run the application.
 
    ![Windows forms splashcontrol showing splash screen at run time](Overview_images/splash_img4.jpeg) 

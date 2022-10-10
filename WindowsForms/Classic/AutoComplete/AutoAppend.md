@@ -31,6 +31,7 @@ We can associate AutoAppend class to a ComboBox control by following the below s
 
 1. Open a Visual Studio project and include the required namespace. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -44,10 +45,13 @@ Imports Syncfusion.Windows.Forms.Tools
 		
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Drag and drop a ComboBox control from the Toolbox onto the form. 
 3. Create and instance of the AutoAppend class as follows.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -65,6 +69,8 @@ Private autoappend1 = New AutoAppend()
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 4. After creating the AutoAppend instance we need to associate it with an edit control. To achieve this use the AutoAppend.SetAutoAppend method. This method takes an object of AutoAppendInfo class which is used to hold the details of the data associated. 
 
@@ -111,6 +117,7 @@ autoappend1.SetAutoAppend(cmbBox,New AutoAppendInfo(True, "category name", al, 1
 1. To add or move an item to the top of controls' AutoAppend list, call the method InsertOrMoveToTop. If the item is already present, it will be moved to the first place otherwise it will be added.
 2. It takes 2 arguments. First one is the associated control and the second is the value in string.
 
+{% capture codesnippet3 %}
 {% tabs %}   
 {% highlight c# %}
    
@@ -124,6 +131,8 @@ Me.autoAppend1.InsertOrMoveToTop(Me.comboBox1,"www.syncfusion.com")
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
  ![Adding New Entries Programmatically](ComboBoxAutoComplete-Images/Overview_img55.jpeg) 
 

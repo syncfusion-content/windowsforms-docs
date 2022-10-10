@@ -27,18 +27,18 @@ The SfCombobox control can be added to the application by dragging it from the t
 ### Adding Control in Code
 To add control manually, follow the steps:
 
-1.Add the below required assembly references to the project,
+1. Add the below required assembly references to the project,
 
-* 	Syncfusion.Core.WinForms
+    * 	Syncfusion.Core.WinForms
 
-*	Syncfusion.DataSource.WinForms
+    *	Syncfusion.DataSource.WinForms
 
-* 	Syncfusion.GridCommon.WinForms
+    * 	Syncfusion.GridCommon.WinForms
 
-*   Syncfusion.SfListView.WinForms
+    *   Syncfusion.SfListView.WinForms
 
 
-2.Create the SfComboBox control instance and add it to the control collection of Form.
+2. Create the SfComboBox control instance and add it to the control collection of Form.
 
 {% capture codesnippet1 %}
 {% tabs %}

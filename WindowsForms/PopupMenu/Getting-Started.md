@@ -107,6 +107,7 @@ The PopupMenu control can be added through code by following the below steps.
 
 2. The below code snippets adds a PopupMenu control to the application.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}
 
@@ -218,6 +219,8 @@ Me.ResumeLayout(False)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 ![Add the PopupMenu](GettingStarted_Images/PopupMenu13.png)

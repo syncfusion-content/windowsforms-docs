@@ -22,35 +22,36 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The **"MultiColumnTreeView"** control can be added through designer by following steps.
 
-**Step 1**: The **"MultiColumnTreeView"** control can be added to an application by dragging it from toolbox to design view. The following dependent assemblies will be added automatically.
+Step 1. The **"MultiColumnTreeView"** control can be added to an application by dragging it from toolbox to design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
 ![Windows Forms MultiColumnTreeView drag and drop from toolbox](Getting-Started_Images/GettingStarted_toolbox.png) 
 
-**Step 2**: Set the desired properties for **"MultiColumnTreeView"** control through the **"Properties"** dialog.
+Step 2. Set the desired properties for **"MultiColumnTreeView"** control through the **"Properties"** dialog.
 
 
 ## Adding a MultiColumnTreeView control through code
 
-**Step 1**: Create C# or VB application through Visual Studio.
+Step 1. Create C# or VB application through Visual Studio.
 
-**Step 2**: Add the following reference to the project.
+Step 2. Add the following reference to the project.
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+        * Syncfusion.Grid.Base
+        * Syncfusion.Grid.Windows
+        * Syncfusion.Shared.Base
+        * Syncfusion.Shared.Windows
+        * Syncfusion.Tools.Base
+        * Syncfusion.Tools.Windows
 
-**Step 3**: Include the required namespace.
+Step 3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -64,9 +65,12 @@ Imports Syncfusion.Windows.Forms.Tools.MultiColumnTreeView
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 4**: Create an instance of the **"MultiColumnTreeView"** and add it to the form.
+Step 4. Create an instance of the **"MultiColumnTreeView"** and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -90,6 +94,8 @@ Me.Controls.Add(Me.multiColumnTreeView1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ## Customize Columns

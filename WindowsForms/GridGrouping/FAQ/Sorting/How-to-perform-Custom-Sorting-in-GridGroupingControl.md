@@ -14,7 +14,7 @@ To use custom sorting in GridGroupingControl, you need to disable default sortin
 The following are the steps to disable default sorting and use custom sorting:
 
 1. Set AllowSort property of TableControlQueryAllowSortColumn event to false to disable default sorting. The following code illustrates this:
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -39,9 +39,11 @@ Private Sub gridGroupingControl1_TableControlQueryAllowSortColumn(ByVal sender A
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Ensure that the CellType is ColumnHeaderCell in TableControlCellClick event and then call your sorting method. The following code illustrates this:
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -71,6 +73,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 In the preceding code example CustomSorting_()_ is the user defined method. In this method, the values from the grid are added to an ArrayList and sorted, and then the sorted values are stored back into the grid. The following code illustrates this:
 

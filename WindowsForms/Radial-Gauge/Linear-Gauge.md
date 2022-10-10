@@ -66,13 +66,14 @@ The LinearGauge control can be added to the application by dragging it from the 
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
-	* Syncfusion.Gauge.Windows.dll
-	* Syncfusion.Shared.Base.dll
+	    * Syncfusion.Gauge.Windows.dll
+	    * Syncfusion.Shared.Base.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Gauge**.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -88,9 +89,12 @@ Imports Syncfusion.Windows.Forms.Gauge
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** - Create [LinearGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.LinearGauge.html) control instance and add it to the form.
+Step 3. Create [LinearGauge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.LinearGauge.html) control instance and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -110,6 +114,8 @@ Me.Controls.Add(linearGauge1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Linear Gauge for Windows Forms](Linear-Gauge_images/LinearGauge_img2.png)
 
@@ -622,15 +628,15 @@ Me.linearGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office20
 
  **Steps to customize the theme in design time**
 
- **Step 1:**  Need to add Linear Gauge control to Form Designer.
+ Step 1. Need to add Linear Gauge control to Form Designer.
 
 ![Linear Gauge in designer](Linear-Gauge_images/Linear-Gauge_img15.png)
 
- **Step 2:** Set the VisualStyle as Custom.
+ Step 2. Set the VisualStyle as Custom.
 
 ![Customized Linear Gauge with smart tag](Linear-Gauge_images/Linear-Gauge_img16.png)
 
- **Step 3:** Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in LinearGauge control.
+ Step 3. Need to add necessary Theme combination in ThemeBrush collection and it will update the Color customization details in LinearGauge control.
 
 ![Customized Linear Gauge in designer](Linear-Gauge_images/Linear-Gauge_img18.png)
 

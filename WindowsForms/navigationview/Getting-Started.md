@@ -41,17 +41,18 @@ The NavigationView control can be added to an application by dragging it from th
 
 To add the control manually in C#, follow the given steps:
 
-**1.**	Add the following required assembly references to the project: 
+1. Add the following required assembly references to the project: 
 
-  * Syncfusion.Grid.Base.dll
-  * Syncfusion.Grid.Windows.dll
-  * Syncfusion.Shared.Base.dll
-  * Syncfusion.Shared.Windows.dll
-  * Syncfusion.Tools.Base.dll
-  * Syncfusion.Tools.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
+    * Syncfusion.Tools.Base.dll
+    * Syncfusion.Tools.Windows.dll
 
-**2.** Include the **Syncfusion.Windows.Forms.Tools namespace**. 
+2. Include the **Syncfusion.Windows.Forms.Tools namespace**. 
 
+  {% capture codesnippet1 %}
   {% tabs %}
   {% highlight C# %}
   using Syncfusion.Windows.Forms.Tools;
@@ -60,9 +61,12 @@ To add the control manually in C#, follow the given steps:
   Imports Syncfusion.Windows.Forms.Tools
   {% endhighlight %}
   {% endtabs %} 
+  {% endcapture %}
+  {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a NavigationView instance, and add it to the window.
+3. Create a NavigationView instance, and add it to the window.
 
+  {% capture codesnippet2 %}
   {% tabs %}
   {% highlight C# %}
   NavigationView navigationView1 = new NavigationView();
@@ -77,6 +81,8 @@ To add the control manually in C#, follow the given steps:
   Me.Controls.Add(navigationView1)
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![wf navigation view control](Getting-Started_images/wf-navigation-view-control.png)
 

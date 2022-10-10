@@ -19,7 +19,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a SplitButton control through designer
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
+Step 1. Create a new Windows Forms application in Visual Studio. Drag and drop the SplitButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
         * Syncfusion.Grid.Base
         * Syncfusion.Grid.Windows
@@ -32,7 +32,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ![Windows forms SplitButton dependency assembly reference](Getting-Started_images/SplitButton_reference.png)
 
-**Step 2**: Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
+Step 2. Set the desired properties for **"SplitButton"** control using the **"Properties"** dialog window. Similarly you can add the items for the SplitButton dropdown using **"DropDownItem"** property. Here, we have illustrated a simple example, in which we are adding countries names as dropdown items to the control.
 
 ![Windows forms SplitButton properties pane](Getting-Started_images/SplitButtonItem_collection2.png)
 
@@ -40,14 +40,14 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 ![Windows forms SplitButton toolbox customization](Getting-Started_images/SplitButton_itemeditor.png)
 
 
-**Step 3**: Run the application and the following output will be shown.
+Step 3. Run the application and the following output will be shown.
 
 ![Windows forms SplitButton through designer](Getting-Started_images/SplitButtonitems_throughdesigner.png)
 
 
 ## Adding a SplitButton control through code
 
-**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
+Step 1. Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.  
 
         * Syncfusion.Grid.Base
         * Syncfusion.Grid.Windows
@@ -73,12 +73,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
+{{ codesnippet1 | OrderList_Indent_Level_2 }}
 
 ![Windows forms SplitButton](Getting-Started_images/SplitButton_imagereference.png)
 
 
-**Step 2**: In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
+Step 2. In Form1.cs, create an instance of **"SplitButton"** control and add in to the form. Also you can customize the SplitButton properties using the following code.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -121,7 +121,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**Step 3**: Run the application and the following output will be shown.
+Step 3. Run the application and the following output will be shown.
 
 ![Windows forms SplitButton through code](Getting-Started_images/SplitButton_Imagethroughcode.png)
 

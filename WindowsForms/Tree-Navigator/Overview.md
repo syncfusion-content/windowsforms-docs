@@ -16,7 +16,7 @@ The Tree Navigator control provides a unique interface that can expand a tree st
 
 ## Key Features
 
-•	Navigation Mode – Two types of navigation mode (Default and Extended) support. It is used to navigate from parent to child items and child to parent item in different styles with the help of Back button.
+    •	Navigation Mode – Two types of navigation mode (Default and Extended) support. It is used to navigate from parent to child items and child to parent item in different styles with the help of Back button.
 
-•	Customization – Every part in the tree navigator can be customized using respective properties. 
+    •	Customization – Every part in the tree navigator can be customized using respective properties. 
 

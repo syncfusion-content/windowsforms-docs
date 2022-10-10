@@ -388,7 +388,8 @@ The custom functions which can be any mathematical formulas or calculation metho
 
 The following steps are used to add the custom function in ExpressionFields,
 
-1.Create the custom function with return type string,
+1. Create the custom function with return type string,
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 // Define ComputeAbsoluteValue that returns the absolute value of the 1st argument minus 2 * the 2nd argument.
@@ -448,9 +449,11 @@ End Function
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method and use that custom function in the Expressions
-
+2. Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method and use that custom function in the Expressions
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 // Add function named ComputeAbsoluteValue that uses a delegate named ABSOLUTEVALUE to define a custom calculation.
@@ -461,9 +464,11 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("
 Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("ABSOLUTEVALUE", New ExpressionFieldEvaluator.LibraryFunction(ComputeAbsoluteValue))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Use the custom function named `ABSOLUTEVALUE` in the Expression,
-
+3. Use the custom function named `ABSOLUTEVALUE` in the Expression,
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Expressions using ComputeAbsoluteValue function.
@@ -478,6 +483,8 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "ABSOLUTEVALUE([wins]
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img6](Expression-Fields_images/Expression-Fields_img6.png)
 
@@ -490,8 +497,8 @@ Please refer the below dashboard sample to create the [CalcEngine](http://help.s
 
 The following steps are used to add the calculate function in the Expression Fields,
 
-1.Initialize the `CalcEngine` with `ICalcData`,
-
+1. Initialize the `CalcEngine` with `ICalcData`,
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 // Initializing CalcEngine.
@@ -502,9 +509,11 @@ CalcEngine engine = new CalcEngine(data);
 Dim engine As CalcEngine = New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
-
+2. Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+{% capture codesnippet5 %}​
 {% tabs %}
 {% highlight c# %}
 // Add CalcEngine function named ComputeIf that uses a delegate named IF to define a custom calculation.
@@ -515,9 +524,11 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("
 Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("IF", New ExpressionFieldEvaluator.LibraryFunction(engine.ComputeIf))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.Use that calculate function named `IF` in the Expression,
-
+3. Use that calculate function named `IF` in the Expression,
+{% capture codesnippet6 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Expressions using ComputeIfFunction.
@@ -532,6 +543,8 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,[win
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1,expField2})
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img7](Expression-Fields_images/Expression-Fields_img7.png)
 
@@ -546,8 +559,8 @@ The [calculate functions](#adding-calculate-engine-formulas) can be added as nes
 
 The following steps are used to add the nested functions,
 
-1.Initialize the `CalcEngine` with `ICalcData`,
-
+1. Initialize the `CalcEngine` with `ICalcData`,
+{% capture codesnippet7 %}​
 {% tabs %}
 {% highlight c# %}
 // Initializing CalcEngine.
@@ -558,9 +571,11 @@ CalcEngine engine = new CalcEngine(data);
 Dim engine As New CalcEngine(data)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
-2.Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
-
+2. Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
 // Add CalcEngine function named ComputeIf and ComputeMax that uses a delegate named IF to define a custom calculation.
@@ -574,9 +589,11 @@ evaluator.AddFunction("IF", New ExpressionFieldEvaluator.LibraryFunction(engine.
 evaluator.AddFunction("MAX", New ExpressionFieldEvaluator.LibraryFunction(engine.ComputeMax))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.Use that nested functions named `IF` and `MAX` in the Expressions,
-
+3. Use that nested functions named `IF` and `MAX` in the Expressions,
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}
 // Adding the Nested Expressions.
@@ -591,6 +608,8 @@ Dim expField2 As New ExpressionFieldDescriptor("Losing %", "IF([losses]<100,MAX(
 Me.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New ExpressionFieldDescriptor() { expField1
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 ![Expression-Fields_img8](Expression-Fields_images/Expression-Fields_img8.png)
 

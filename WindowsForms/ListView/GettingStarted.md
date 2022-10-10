@@ -27,18 +27,18 @@ The SfListView control can be added to the application by dragging it from the t
 ### Adding Control in Code
 To add control manually, follow the steps:
 
-1.Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
 
-* 	Syncfusion.Core.WinForms
+    * 	Syncfusion.Core.WinForms
 
-*	Syncfusion.DataSource.WinForms
+    *	Syncfusion.DataSource.WinForms
 
-* 	Syncfusion.GridCommon.WinForms
+    * 	Syncfusion.GridCommon.WinForms
 
-*   Syncfusion.SfListView.WinForms
+    *   Syncfusion.SfListView.WinForms
 
 
-2.Create the SfListView control instance and add it to the form.   
+2.  Create the SfListView control instance and add it to the form.   
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -84,7 +84,7 @@ End Namespace
 
 To create the data for sample application, follow the steps:
 
-1.Create a data object class, name it as “CountryInfo” and declare the properties.
+1. Create a data object class, name it as “CountryInfo” and declare the properties.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -107,7 +107,7 @@ Public Class CountryInfo
  {% endcapture %}
  {{ codesnippet2 | OrderList_Indent_Level_1 }}
  
-2.Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
+2. Create a List<CountryInfo> collection initialized in GetDataSource method to add several data objects.
 
  {% capture codesnippet3 %}    
 {% tabs %}
