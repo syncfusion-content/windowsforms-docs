@@ -52,17 +52,18 @@ The HubTile control can be added to the application by dragging it from the tool
 
 To add the control manually in C#, follow the given steps:
 
-**Step 1** - Add the following required assembly references to the project:
+Step 1. Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
+        * Syncfusion.Grid.Base.dll
+        * Syncfusion.Grid.Windows.dll
+        * Syncfusion.Shared.Base.dll
+        * Syncfusion.Shared.Windows.dll
+        * Syncfusion.Tools.Base.dll
+        * Syncfusion.Tools.Windows.dll
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+Step 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -78,9 +79,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 3** - Create `HubTile` control instance and add it to the form.
+Step 3. Create `HubTile` control instance and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -100,6 +104,8 @@ Me.Controls.Add(hubTile1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Change tile 
 

@@ -21,17 +21,17 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 The following steps describe how to create the **GradientPanelExt** control via designer.
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) Add the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. Add the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
 ![Drag and drop GradientPanelExt from toolbox](GradientPanelExt_images/Overview_img373.png)
 
-3) Set the Gradient colors to the panel by defining gradient styles and colors.
+3. Set the Gradient colors to the panel by defining gradient styles and colors.
 
-4) Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html#Syncfusion_Windows_Forms_Tools_GradientPanelExt_Primitives) property. Refer to the following screenshot.
+4. Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html#Syncfusion_Windows_Forms_Tools_GradientPanelExt_Primitives) property. Refer to the following screenshot.
 
 ![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
 
@@ -41,14 +41,15 @@ The following steps describe how to create the **GradientPanelExt** control via 
 
 The following steps describe how to create the **GradientPanelExt** control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following reference to the project:
+2. Add the following reference to the project:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -62,11 +63,13 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
+4. Create an instance of the [GradientPanelExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html), and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
-
 {% highlight C# %}
 
 GradientPanelExt gradientPanelExt = new GradientPanelExt();
@@ -80,11 +83,13 @@ Private gradientPanelExt As GradientPanelExt = New GradientPanelExt()
 Me.Controls.Add(gradientPanelExt)
 
 {% endhighlight %}
-
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5) Set the following properties and add primitives to the gradient panel.
+5. Set the following properties and add primitives to the gradient panel.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -238,5 +243,7 @@ gradientPanelExt.Controls.Add(textBoxExt2)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms GradientPanelExt shows added primitives and other controls](GradientPanelExt_images\GradientPanelExt_addcontrols.png)

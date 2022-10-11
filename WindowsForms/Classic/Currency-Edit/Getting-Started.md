@@ -17,16 +17,16 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding the CurrencyEdit control via designer
 
-1) Create a new Windows Forms project in Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
-2) The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
 
 ![CurrencyEdit control added by designer](Overview_images/wf-currency-edit-control-added-designer.png) 
 
@@ -34,19 +34,20 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application using Visual Studio.
+1. Create a C# or VB application using Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -59,9 +60,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control, and add it to form.
+4. Create an instance of the [CurrencyEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html) control, and add it to form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -76,11 +80,14 @@ Me.Controls.Add(currencyEdit1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![CurrencyEdit control](Overview_images/wf-currency-edit-control.png) 
 
-5) Set the currency value using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_Text) property, and change the culture using the `Culture` property of currency symbol.
+5. Set the currency value using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_Text) property, and change the culture using the `Culture` property of currency symbol.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -101,6 +108,8 @@ currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("ksh-DE")
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms CurrencyEdit showing changed value and currency symbol](Overview_images/CurrencyEdit_value.png)
 

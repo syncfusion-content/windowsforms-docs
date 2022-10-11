@@ -34,6 +34,7 @@ Dim dockHost As Syncfusion.Windows.Forms.Tools.DockHost = Me.listView1.Parent as
 
 * Access the DockHost's InternalController and get its current serialization information through the GetSerCurrInfo() method.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -51,9 +52,12 @@ Dim dockHostController As Syncfusion.Windows.Forms.Tools.DockHostController = do
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * This returns an object of type Syncfusion.Windows.Forms.Tools.DockInfo. The DockInfo.DockingStyle member gives the dock position of the control with respect to the host form and the DockInfo.rcDockArea.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -71,6 +75,8 @@ Dim dockInfo As Syncfusion.Windows.Forms.Tools.DockInfo = dockHostController.Get
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * You can serialize this information against the control’s name, and later upon loading, appropriately use either the DockingManager.DockControl() /  FloatControl() method based on the serialized DockingStyle and control's bounds values, to set the control’s dock state.
 

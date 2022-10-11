@@ -178,6 +178,7 @@ For example, create a ‘User Info entry’ panel with auto labels, text boxes, 
 
 1. Place five text boxes and one combobox to represent different data input controls in the panel.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -246,8 +247,12 @@ Me.panel1.Controls.Add(Me.comboBox1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Add one auto label for each control, and set the auto label’s LabeledControl property to the corresponding control. Then, change the Text property of the auto label control, and then set the AutoSize property to `true`.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -342,10 +347,14 @@ Me.autoLabel6.Text = "Zip"
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Now, add the FlowLayout component, and set the panel to its container control. The FlowLayout will layout the controls in an order, in which they were added to the panel. Use the Bring To Front and Send To Back design time options to move the controls to the front or back to the layout order.
 
 N> The FlowLayout treats each control and its auto label pair as a single unit during layout.
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -378,6 +387,8 @@ Me.flowLayout1.ContainerControl = Me.panel1
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Now, set some appropriate constraints on the input controls as follows.
 
@@ -390,6 +401,8 @@ Me.flowLayout1.ContainerControl = Me.panel1
 * The Address text box should always begin in a new row, so set the NewLine property to `true` in its constraints. Then, set the HAlign property to ‘Justify’, and provide a preferred size.
 
 * The State combobox and Zip text box controls can also be left with the default constraints.
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -430,8 +443,12 @@ Me.flowLayout1.SetPreferredSize(Me.textBox4, New System.Drawing.Size(100, 20))
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 5. The panel itself should be increased or decreased in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout’s AutoHeight property to `true`.
+
+{% capture codesnippet5 %}
 
 {% tabs %}
 
@@ -452,6 +469,8 @@ Me.flowLayout1.AutoHeight = True
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 N> During run time, the input controls are resized and repositioned appropriately based on the constraints provided.
 
@@ -478,11 +497,11 @@ The FlowLayout manager arranges the controls in a way it is added into the conta
 
 ### Through Designer
 
-**Step 1**: Rearrange the controls laid out by FlowLayout by right-clicking the control and selecting the Bring To Front or Send To Back options in the designer.
+Step 1. Rearrange the controls laid out by FlowLayout by right-clicking the control and selecting the Bring To Front or Send To Back options in the designer.
 
 ![Rearranging the child controls in designer using context menu](Configuringchildcontrols_images/Configuringchildcontrols_img8.jpeg)
 
-**Step 2**: Rearrange the child controls of the FlowLayout by dragging and dropping them at design time.
+Step 2. Rearrange the child controls of the FlowLayout by dragging and dropping them at design time.
 
 ![Rearranging the child controls in designer by drag and drop child controls](Configuringchildcontrols_images/Configuringchildcontrols_img9.jpeg)
 
@@ -490,15 +509,17 @@ The FlowLayout manager arranges the controls in a way it is added into the conta
 
 You can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the following method.
 
-**Step 1**: Set up a form with Panel1 and drag the FlowLayout to the Panel1, which would act as the container control.
+Step 1. Set up a form with Panel1 and drag the FlowLayout to the Panel1, which would act as the container control.
 
 ![Alert to add Flow Layout as container control to form](Configuringchildcontrols_images/Configuringchildcontrols_img10.jpeg)
 
-**Step 2**: Drag another three Panels to the Panel1. The flow layout automatically arranges the child controls.
+Step 2. Drag another three Panels to the Panel1. The flow layout automatically arranges the child controls.
 
 ![Arranged child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img11.jpeg)
 
-**Step 3**: Add the Button control for recording the child controls of Panel1, and in the Button_Click event, give data as in the following code snippet.
+Step 3. Add the Button control for recording the child controls of Panel1, and in the Button_Click event, give data as in the following code snippet.
+
+{% capture codesnippet6 %}
 
 {% tabs %}
 
@@ -567,9 +588,11 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Arranged child controls in single row in flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img12.jpeg)
 
-**Step 4**: At run time, when clicking the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
+Step 4. At run time, when clicking the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
 
 ![Reorder child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img13.jpeg)

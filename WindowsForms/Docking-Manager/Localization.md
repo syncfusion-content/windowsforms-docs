@@ -13,8 +13,9 @@ Localization is the process of translating the application resources into differ
 
 The following steps help to localize the header and context menus of docking child windows in the docking manager:
 
-**Step 1:** Include the required namespaces at the beginning of the file.
+Step 1. Include the required namespaces at the beginning of the file.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -32,9 +33,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 2:** Initialize the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface before the InitializeComponent is called in the constructor of an application.
+Step 2. Initialize the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class inherited from the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface before the InitializeComponent is called in the constructor of an application.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -49,9 +53,11 @@ LocalizationProvider.Provider = New Localizer()
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which the localization content is provided for required components that are used in the docking manager.
+Step 3. Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which the localization content is provided for required components that are used in the docking manager.
 
 For example: Header and ContextMenu of docking child windows are localized in Chinese Language.
 
@@ -59,6 +65,7 @@ For example: Header and ContextMenu of docking child windows are localized in Ch
 
 [SetDockLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockLabel_System_Windows_Forms_Control_System_String_) helps to localize the label for a child window. 
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -91,6 +98,8 @@ Me.dockingManager.SetDockLabel(panel4, "产量");
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Localization_img1](Localization_images/Localization_img1.png) 
 

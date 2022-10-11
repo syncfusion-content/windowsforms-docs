@@ -45,14 +45,15 @@ The child controls can be added to the layout by dragging it from the toolbox to
 
 To add the control manually in C#, follow the given steps:
 
-**Step 1**: Create a C# or VB application through Visual Studio.
+Step 1. Create a C# or VB application through Visual Studio.
 
-**Step 2**: Add the following required assembly reference to the project: 
+Step 2. Add the following required assembly reference to the project: 
 
-	Syncfusion.Shared.Base.dll
+		Syncfusion.Shared.Base.dll
 
-**Step 3**: Include the required namespace.
+Step 3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -68,9 +69,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**Step 4**: Create a `GridBagLayout` control instance, and set `ContainerControl` as form.
+Step 4. Create a `GridBagLayout` control instance, and set `ContainerControl` as form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -90,6 +94,8 @@ Me.gridBagLayout1.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Adding layout components through code
 

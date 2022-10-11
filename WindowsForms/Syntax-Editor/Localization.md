@@ -13,7 +13,7 @@ Localization is the process of translating the application resources into differ
 
 Follow the steps to localize the dialog boxes in the EditControl:
 
-1. Include the required namespaces at the beginning of the file.
+1. Include the required namespaces at the beginning of the file.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -38,7 +38,7 @@ Imports Syncfusion.Windows.Forms.Edit
 
 3. Return the localized versions of the string corresponding to the string identifiers.
 
-4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
+4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
 {% capture codesnippet2 %}
 {% tabs %}

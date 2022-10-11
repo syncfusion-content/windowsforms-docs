@@ -11,8 +11,9 @@ documentation: ug
 
 We can save and load the background color information in an XML file to persist the color state of a GradientLabel. The XmlSerializer Class can be used for providing serialization support.
 
-*  First include the required namespaces.
+*	First include the required namespaces.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
   
@@ -32,9 +33,12 @@ Imports System.IO
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 *  The below code snippet saves the information in a file called the color.xml.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -65,5 +69,7 @@ End Sub
 		
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
  ![Windows Forms GradientLabel Image605](GradientLabel-Images/Overview_img605.jpeg) 

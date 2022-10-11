@@ -252,6 +252,7 @@ To load an HTML file as an embedded resource, follow the given steps:
 2. Set its BuildAction as Embedded Resource.
 3. Include the following code snippet.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -277,6 +278,8 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 N> The string entered inside the GetManifestResourceStream method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 

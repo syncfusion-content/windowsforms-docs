@@ -41,7 +41,7 @@ _AREAS(reference)_
 
 **where:**
 
-reference is an input argument. 
+* reference is an input argument. 
 
 ## CHOOSE
 
@@ -67,7 +67,7 @@ _COLUMN(range)_
 
 **where:**
 
-range is to provide the column in range.
+* range is to provide the column in range.
 
 ## COLUMNS
 
@@ -79,7 +79,7 @@ _COLUMNS(array)_
 
 **where:**
 
-array argument is the range of the number of columns. 
+* array argument is the range of the number of columns. 
 
 ## FORMULATEXT
 
@@ -91,7 +91,7 @@ _FORMULATEXT (reference)_
 
 **where:**
 
-reference is the reference to a cell or range of cells.
+* reference is the reference to a cell or range of cells.
 
 **Remarks:**
 
@@ -165,7 +165,7 @@ _INDIRECT(content)_
 
 **where:**
 
-content is the string that provides the textual representation of the cell.
+* content is the string that provides the textual representation of the cell.
 
 ##   OFFSET
 
@@ -229,7 +229,7 @@ _TRANSPOSE(array)_
 
 **where:**
 
-array argument is a range of spreadsheet cells.
+* array argument is a range of spreadsheet cells.
 
 ## VLOOKUP
 
@@ -294,7 +294,7 @@ _ROWS(array)_
 
 **where:**
 
-array denotes an array, an array formula, or a reference to a range of cells for which you want the number of rows.
+* array denotes an array, an array formula, or a reference to a range of cells for which you want the number of rows.
 
 ## SHEET
 
@@ -306,11 +306,11 @@ _SHEET(value)_
 
 **where:**
 
-value is the name of a sheet or a reference for which you want the sheet number. If value is omitted, SHEET returns the number of the sheet that contains the function.
+* value is the name of a sheet or a reference for which you want the sheet number. If value is omitted, SHEET returns the number of the sheet that contains the function.
 
 **Remarks:**
 
-SHEET includes all worksheets (visible, hidden, or very hidden) in addition to all other sheet types (macro, chart, or dialog sheets).
+* SHEET includes all worksheets (visible, hidden, or very hidden) in addition to all other sheet types (macro, chart, or dialog sheets).
 
 ## SHEETS
 

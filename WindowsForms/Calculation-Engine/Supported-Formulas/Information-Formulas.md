@@ -375,7 +375,7 @@ _ISFORMULA (reference)_
 
 
 
-`#VALUE!`-occurs when reference is not a valid data type.
+`* #VALUE!`-occurs when reference is not a valid data type.
 
 
 

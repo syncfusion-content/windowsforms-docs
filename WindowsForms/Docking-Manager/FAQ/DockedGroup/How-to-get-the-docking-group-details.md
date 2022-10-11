@@ -19,7 +19,8 @@ Follow the given steps to get the docking group.
 2. Set the EnableDocking on Docking Manager property to `true`.
 3. Add the namespace Syncfusion.Windows.Forms.Tools in your application.
    
- {% tabs %}
+{% capture codesnippet1 %}   
+{% tabs %}
 
 {% highlight C# %}
 
@@ -37,14 +38,15 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}	
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 4. Tab the controls as shown below. 
 
-
-
 Add the code given below in the button click event.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -118,5 +120,7 @@ End If
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
