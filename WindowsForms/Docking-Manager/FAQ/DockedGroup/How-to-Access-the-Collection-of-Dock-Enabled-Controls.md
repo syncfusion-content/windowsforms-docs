@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing the Collection of DockEnabled Controls | WindowsForms | Syncfusion
+title: Access the Collection of DockEnabled Controls | WindowsForms | Syncfusion
 description: Learn about How to Access the Collection of Dock-Enabled Controls, with Syncfusion Essential Studio Windows Forms
 platform: WindowsForms
 control: DockingManager
