@@ -1,16 +1,16 @@
 ---
 layout: post
-title: How to serialize or deserialize the docking state for a docked control on loading the application | WindowsForms | Syncfusion
-description: How to serialize or deserialize the docking state for a docked control on loading the application
+title: Serialize or deserialize the docking state for a docked control | WindowsForms | Syncfusion
+description: Learn here about How to serialize or deserialize the docking state for a docked control on loading the application with Syncfusion Essential Studio Windows Forms
 platform: WindowsForms
 control: DockingManager
 documentation: ug
 ---
 
 
-# How to serialize or deserialize the docking state for a docked control on loading the application?
+# Serialize or deserialize the docking state for a docked control 
 
-To serialize or deserialize the docking state, follow the below steps.
+To serialize or deserialize the docking state on loading the application?  follow the below steps.
 
 Before closing the docked/floating control, access the control's parent and cast this to type Syncfusion.Windows.Forms.Tools.DockHost.
 
