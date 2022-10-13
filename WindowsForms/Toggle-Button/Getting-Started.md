@@ -20,7 +20,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a WinForms ToggleButton control through designer
 
-Step 1. Create a new Windows Forms application in Visual Studio. Drag and drop the ToggleButton from toolbox into form design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ToggleButton from toolbox into form design view. The following dependent assemblies will be added automatically.
 
         * Syncfusion.Grid.Base
         * Syncfusion.Grid.Windows
@@ -33,18 +33,18 @@ Step 1. Create a new Windows Forms application in Visual Studio. Drag and drop t
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/Getting-Started_reference.png)
 
-Step 2. You can customize the properties of ToggleButton using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the ToggleButton as shown as follows.
+**Step 2**: You can customize the properties of ToggleButton using the properties panel. Here we have illustrated an example on how to edit the ToggleState property of the ToggleButton as shown as follows.
 
 ![Windows Form ToggleButton dependency Assembly reference](Getting-Started_images/ToggleButton_designercustomization.png)
 
-Step 3. Run the application and the following output will be shown.
+**Step 3**:Run the application and the following output will be shown.
 
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButton_throughdesigner1.png)
 
 
 ## Adding a WinForms ToggleButton control through code
 
-Step 1. Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project.
 
         * Syncfusion.Grid.Base
         * Syncfusion.Grid.Windows
@@ -70,11 +70,11 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_2 }}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Windows Form ToggleButton through designer](Getting-Started_images/ToggleButtonimagereference.png)
    
-Step 2. In Form1.cs, create an instance of **"ToggleButton"** control and add in to the form. Also you can customize the ToggleButton properties using the following code.
+**Step 2**:  In Form1.cs, create an instance of **"ToggleButton"** control and add in to the form. Also you can customize the ToggleButton properties using the following code.
 {% capture codesnippet2 %}
 {% tabs %}
 
@@ -114,6 +114,6 @@ End Sub
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
-Step 3. Run the application and the following output will be shown.
+**Step 3**: Run the application and the following output will be shown.
 
 ![Windows form ToggleButton through code](Getting-Started_images/ToggleButton_throughdesigner1.png)

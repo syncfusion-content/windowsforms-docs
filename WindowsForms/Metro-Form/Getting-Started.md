@@ -36,13 +36,12 @@ Create a new Windows Forms project in the Visual Studio to change the default fo
 
 `MetroForm` is an advanced standard Form, we can configure it by following the given steps:
 
-Step 1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
-		* Syncfusion.Shared.Base.dll	
+	* Syncfusion.Shared.Base.dll	
 
-Step 2. Include the namespaces **Syncfusion.Windows.Forms**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms**.
 
-{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -58,12 +57,9 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight  %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
    
-Step 3. Change the class to inherit MetroForm instead of the default Form as follows.
+**Step 3** - Change the class to inherit MetroForm instead of the default Form as follows.
 
-{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -79,8 +75,6 @@ Partial Public Class MetroForm Inherits MetroForm
 {% endhighlight %}
 
 {% endtabs %} 
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
    
 ![Metro form in windows forms](Getting-Started_images/MetroForm.png)
 

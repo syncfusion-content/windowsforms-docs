@@ -19,31 +19,30 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 ## Adding a ButtonAdv control through designer
 
-**Step 1**. Create a new Windows Forms application in Visual Studio. Drag and drop the ButtonAdv from toolbox into form design view. The following dependent assemblies will be added automatically.
+**Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the ButtonAdv from toolbox into form design view. The following dependent assemblies will be added automatically.
 
-        * Syncfusion.Shared.Base
+* Syncfusion.Shared.Base
 
 ![Windows forms ButtonAdv drag and drop from toolbox](Overview_images/ButtonAdv_dragdrop.png)
 
 ![Windows forms ButtonAdv Assembly reference](Overview_images/ButtonAdv_reference.png)
 
-**Step 2**. Set the desired properties for **"ButtonAdv"** control through the **"Properties"** dialog window. Here we have illustrated an example of how to add image and customize its properties. 
+**Step 2**: Set the desired properties for **"ButtonAdv"** control through the **"Properties"** dialog window. Here we have illustrated an example of how to add image and customize its properties. 
 
 ![Windows forms ButtonAdv customizing Image property](Overview_images/ButtonAdv_image.png)
 
 ![Windows forms ButtonAdv TextImage relation property](Overview_images/ButtonAdv_textimage.png)
 
-**Step 3**. Run the application and the following output will be shown:
+**Step 3**: Run the application and the following output will be shown:
 
 ![Windows forms ButtonAdv through designer](Overview_images/ButtonAdvoutputdesigner_office2019theme.png)
 
 ## Adding a ButtonAdv control through code
 
-**Step 1**. Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project. 
+**Step 1**: Create a new Windows Forms application in Visual Studio. Add the following required assembly references and namespace to the project. 
 
-        * Syncfusion.Shared.Base
+* Syncfusion.Shared.Base
 
-{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -59,14 +58,11 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Windows forms ButtonAdv dependency assembly reference](Overview_images/ButtonAdvimagereference.png)
  
-**Step 2**. In Form1.cs, create an instance of **"ButtonAdv"** control and add in to the form. Also you can customize the ButtonAdv properties using the following code.
+**Step 2**: In Form1.cs, create an instance of **"ButtonAdv"** control and add in to the form. Also you can customize the ButtonAdv properties using the following code.
 
-{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -106,10 +102,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**Step 3**. Run the application and the following output will be shown.
+**Step 3**: Run the application and the following output will be shown.
 
 ![Windows forms ButtonAdv through code](Overview_images/ButtonAdvoutputthroughcode.png)
 

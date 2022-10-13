@@ -25,17 +25,17 @@ Create a new Windows Forms project in Visual Studio to display the `SplashPanel`
 
 The `SplashPanel` control provides full support for the Windows Forms designer.
 
-Step 1. Drag-and-drop the SplashPanel control from the toolbox onto the form.
+**Step 1**: Drag-and-drop the SplashPanel control from the toolbox onto the form.
 
    ![Drag and drop the Splash panel from toolbox](Overview_images/splash_img5.jpeg) 
 
-Step 2. Set the properties for the SplashPanel control and also drag and drop any child controls you want to add to the panel. Set the TimerInterval property to specify the period of time, the SplashPanel needs to be visible.
+**Step 2**: Set the properties for the SplashPanel control and also drag and drop any child controls you want to add to the panel. Set the TimerInterval property to specify the period of time, the SplashPanel needs to be visible.
 
-Step 3. Specify the startup location of the SplashPanel using the DesktopAlignment property.
+**Step 3**: Specify the startup location of the SplashPanel using the DesktopAlignment property.
 
-Step 4. Launch the SplashPanel control by calling the ShowSplash() method.
+**Step 4**: Launch the SplashPanel control by calling the ShowSplash() method.
 
-Step 5. You can cancel the SplashPanel by calling the HideSplash() method.
+**Step 5** You can cancel the SplashPanel by calling the HideSplash() method.
 
    ![Windows forms splashpanel showing in designer page](Overview_images/splash_img2.jpeg) 
 
@@ -43,15 +43,15 @@ Step 5. You can cancel the SplashPanel by calling the HideSplash() method.
 
 To create a SplashPanel programmatically, with a user control in it, follow the below steps.
 
-Step 1. Create a new Visual C# or VB.NET application in Visual Studio .NET.
+**Step 1**: Create a new Visual C# or VB.NET application in Visual Studio .NET.
 
-Step 2. Add the required assembly reference.
+**Step 2**: Add the required assembly reference.
 	
 		1. Syncfusion.Shared.Base.dll
 
 		2. Syncfusion.Tools.Windows.dll
 
-Step 3. Add the namespaces given below to your form.
+**Step 3**: Add the namespaces given below to your form.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -78,7 +78,7 @@ Imports System.Reflection
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 4. Declare the SplashPanel and Button control.
+**Step 4**: Declare the SplashPanel and Button control.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -99,7 +99,7 @@ Friend WithEvents button1 As System.Windows.Forms.Button
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-Step 5. Initialize the controls and make it visible.
+**Step 5**: Initialize the controls and make it visible.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -122,7 +122,7 @@ Me.splashPanel1.SuspendLayout()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-Step 6. Set the properties for the SplashPanel and Button control.
+**Step 6**: Set the properties for the SplashPanel and Button control.
 
 {% capture codesnippet4 %}
 {% tabs %}
@@ -189,7 +189,7 @@ Me.Controls.Add(Me.splashPanel1)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-Step 7. Call and define the ShowSplash() method as follows.
+**Step 7**: Call and define the ShowSplash() method as follows.
 
 {% capture codesnippet5 %}
 {% tabs %}
@@ -235,6 +235,6 @@ End Sub
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-Step 8. Run the application.
+**Step 8**: Run the application.
 
    ![Windows forms splashpanel showing at run time](Overview_images/splash_img3.jpeg) 

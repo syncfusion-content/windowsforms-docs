@@ -61,7 +61,7 @@ The [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.
 
 To add control manually in C#, follow the given steps:
 
-Step 1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
         * Syncfusion.Grid.Base.dll
         * Syncfusion.Grid.Windows.dll
@@ -70,7 +70,7 @@ Step 1. Add the following required assembly references to the project:
         * Syncfusion.Tools.Base.dll
         * Syncfusion.Tools.Windows.dll
 
-Step 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -91,7 +91,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 3. Create [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
+**Step 3** - Create [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control instance and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}

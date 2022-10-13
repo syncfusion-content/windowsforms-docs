@@ -13,20 +13,19 @@ This section provides a quick overview to add the menu items to a [Menu](https:/
 
 To add control manually in C# or VB, follow the below steps initially.
 
-Step 1. Add the following required assembly references to the project:
+**Step 1** : Add the following required assembly references to the project:
 
-        * Syncfusion.Tools.Base.dll
-        * Syncfusion.Tools.Windows.dll
-        * Syncfusion.Shared.Base.dll
-        * Syncfusion.Shared.Windows.dll
-        * Syncfusion.Grid.Base.dll
-        * Syncfusion.Grid.Windows.dll
-        * Syncfusion.Licensing.dll
-        * Syncfusion.SpellChecker.Base.dll
+* Syncfusion.Tools.Base.dll
+* Syncfusion.Tools.Windows.dll
+* Syncfusion.Shared.Base.dll
+* Syncfusion.Shared.Windows.dll
+* Syncfusion.Grid.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.Licensing.dll
+* Syncfusion.SpellChecker.Base.dll
 
-Step 2. Include the namespace **Syncfusion.Windows.Forms.Tools**.
+**Step 2** : Include the namespace **Syncfusion.Windows.Forms.Tools**.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -42,12 +41,9 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 3. Create [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
+**Step 3** : Create [MainFrameBarManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.XPMenus.MainFrameBarManager.html) control instance and add it to the form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -71,8 +67,6 @@ Me.mainFrameBarManager1.Form = Me;
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Adding main bar
 

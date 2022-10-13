@@ -13,9 +13,8 @@ Localization is the process of translating the application resources into differ
 
 The following steps helps to localize the text in MessageBoxAdv:
 
-Step 1. Include the required namespaces at the beginning of the file.
+**Step 1:** Include the required namespaces at the beginning of the file.
 
-{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -31,12 +30,9 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 2. Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the ILocalizationProvider interface, before the InitializeComponent call in the constructor of an application.
+**Step 2:** Need to initialize the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class, inherited from the ILocalizationProvider interface, before the InitializeComponent call in the constructor of an application.
 
-{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -52,15 +48,12 @@ LocalizationProvider.Provider = New Localizer()
 {% endhighlight %}
 
 {% endtabs %}  
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-Step 3. Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBoxAdv.
+**Step 3:** Add the GetLocalizedString function in the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class in which provide the Localization content, for the required components used in MessageBoxAdv.
 
-        For example:
-        Here, MessageBoxAdv is localized in German Language.
+For example:
+Here, MessageBoxAdv is localized in German Language.
 
-{% capture codesnippet3 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -134,7 +127,5 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Apply Localization in Windows Forms MessageBox](MessageBoxAdv_images/MessageBoxAdv_img31.jpg)
