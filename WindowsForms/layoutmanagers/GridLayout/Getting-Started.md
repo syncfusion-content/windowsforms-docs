@@ -43,15 +43,14 @@ The child controls can be added to the layout by dragging it from the toolbox to
 
 The `GridLayout` control can be created programmatically using the following steps:
 
-Step 1. Create a C# or VB.NET application through Visual Studio.
+**Step 1**: Create a C# or VB.NET application through Visual Studio.
 
-Step 2. Add the following required assembly reference to the project: 
+**Step 2**: Add the following required assembly reference to the project: 
 
-		Syncfusion.Shared.Base.dll
+	Syncfusion.Shared.Base.dll
 
-Step 3. Include the required namespace.
+**Step 3**: Include the required namespace.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -67,12 +66,9 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 4. Create a `GridLayout` control instance, and get the `ContainerControl` as form.
+**Step 4**: Create a `GridLayout` control instance, and get the `ContainerControl` as form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -92,8 +88,6 @@ Me.gridLayout1.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Adding layout components through code
 

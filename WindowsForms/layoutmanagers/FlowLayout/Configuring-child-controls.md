@@ -253,7 +253,6 @@ Me.panel1.Controls.Add(Me.comboBox1)
 2. Add one auto label for each control, and set the auto label’s LabeledControl property to the corresponding control. Then, change the Text property of the auto label control, and then set the AutoSize property to `true`.
 
 {% capture codesnippet2 %}
-
 {% tabs %}
 
 {% highlight c# %}
@@ -355,7 +354,6 @@ Me.autoLabel6.Text = "Zip"
 N> The FlowLayout treats each control and its auto label pair as a single unit during layout.
 
 {% capture codesnippet3 %}
-
 {% tabs %}
 
 {% highlight c# %}
@@ -403,7 +401,6 @@ Me.flowLayout1.ContainerControl = Me.panel1
 * The State combobox and Zip text box controls can also be left with the default constraints.
 
 {% capture codesnippet4 %}
-
 {% tabs %}
 
 {% highlight c# %}
@@ -449,7 +446,6 @@ Me.flowLayout1.SetPreferredSize(Me.textBox4, New System.Drawing.Size(100, 20))
 5. The panel itself should be increased or decreased in width when the number of rows in the layout increases or decreases. To get this behavior, set the FlowLayout’s AutoHeight property to `true`.
 
 {% capture codesnippet5 %}
-
 {% tabs %}
 
 {% highlight c# %}
@@ -497,11 +493,11 @@ The FlowLayout manager arranges the controls in a way it is added into the conta
 
 ### Through Designer
 
-Step 1. Rearrange the controls laid out by FlowLayout by right-clicking the control and selecting the Bring To Front or Send To Back options in the designer.
+**Step 1**: Rearrange the controls laid out by FlowLayout by right-clicking the control and selecting the Bring To Front or Send To Back options in the designer.
 
 ![Rearranging the child controls in designer using context menu](Configuringchildcontrols_images/Configuringchildcontrols_img8.jpeg)
 
-Step 2. Rearrange the child controls of the FlowLayout by dragging and dropping them at design time.
+**Step 2**: Rearrange the child controls of the FlowLayout by dragging and dropping them at design time.
 
 ![Rearranging the child controls in designer by drag and drop child controls](Configuringchildcontrols_images/Configuringchildcontrols_img9.jpeg)
 
@@ -509,17 +505,15 @@ Step 2. Rearrange the child controls of the FlowLayout by dragging and dropping 
 
 You can also programmatically change the order of the controls laid out by the Flow layout. This can be done using the following method.
 
-Step 1. Set up a form with Panel1 and drag the FlowLayout to the Panel1, which would act as the container control.
+**Step 1**: Set up a form with Panel1 and drag the FlowLayout to the Panel1, which would act as the container control.
 
 ![Alert to add Flow Layout as container control to form](Configuringchildcontrols_images/Configuringchildcontrols_img10.jpeg)
 
-Step 2. Drag another three Panels to the Panel1. The flow layout automatically arranges the child controls.
+**Step 2**: Drag another three Panels to the Panel1. The flow layout automatically arranges the child controls.
 
 ![Arranged child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img11.jpeg)
 
-Step 3. Add the Button control for recording the child controls of Panel1, and in the Button_Click event, give data as in the following code snippet.
-
-{% capture codesnippet6 %}
+**Step 3**: Add the Button control for recording the child controls of Panel1, and in the Button_Click event, give data as in the following code snippet.
 
 {% tabs %}
 
@@ -588,11 +582,9 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Arranged child controls in single row in flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img12.jpeg)
 
-Step 4. At run time, when clicking the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
+**Step 4**: At run time, when clicking the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
 
 ![Reorder child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img13.jpeg)

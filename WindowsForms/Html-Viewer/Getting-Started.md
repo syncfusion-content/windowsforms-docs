@@ -53,16 +53,15 @@ Title text can be set using `Title` property. The visibility of the title can be
 
 To add the control manually in C#, follow the steps:
 
-Step 1. Add the following required assembly references to the project:
+**Step 1** : Add the following required assembly references to the project:
 
       * Syncfusion.HTMLUI.Base.dll
       * Syncfusion.HTMLUI.Windows.dll
       * Syncfusion.Scripting.Base.dll
       * Syncfusion.Shared.Base
 
-Step 2. Include the namespaces **Syncfusion.Windows.Forms.HTMLUI**.
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.HTMLUI**.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -78,12 +77,9 @@ Imports Syncfusion.Windows.Forms.HTMLUI
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 3. Create the HTMLUIControl instance and add it to the form.
+**Step 3** : Create the HTMLUIControl instance and add it to the form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -112,9 +108,6 @@ Me.Controls.Add(Me.htmluiControl1)
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
-
 
 ![HTMLUIControl added using code](Getting-Started_images/GettingStarted-img2.png)
 
