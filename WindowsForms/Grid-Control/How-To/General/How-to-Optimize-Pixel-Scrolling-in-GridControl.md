@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Optimize-Pixel-Scrolling-in-GridControl | Windows Forms | Syncfusion
-description: how to optimize pixel scrolling in gridcontrol
+title: Optimize-Pixel-Scrolling-in-GridControl | Windows Forms | Syncfusion
+description: Learn here all about how to optimize pixel scrolling in gridcontrol using Syncfusion Windows Forms and more.
 platform: windowsforms
 control: Grid
 documentation: ug

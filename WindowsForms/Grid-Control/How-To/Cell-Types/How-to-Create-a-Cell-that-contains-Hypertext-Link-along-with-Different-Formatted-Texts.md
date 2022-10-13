@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in GridControl
-description: how to create a cell that contains hypertext link along with different formatted texts
+title: How to Create Cell Types in Windows Forms GridControl | Syncfusion
+description: Learn here all about how to create cell that contains hyperlink along with different formatted texts using Syncfusion Windows Forms GridControl.
 platform: windowsforms
 control: Grid
 documentation: ug
 ---
 
-# How to create a cell that contains Hypertext link along with different formatted texts
+# Create cell that contains Hyperlink with different formatted texts
 
 To create a cell that contains a hypertext link along with different formatted texts ,you will need to handle the derived class called InPlaceRTB, follow the steps that are given below:
 
