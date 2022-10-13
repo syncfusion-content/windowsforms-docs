@@ -12,12 +12,12 @@ documentation: ug
 
 The DockingManager.Controls property returns an enumerator that may be used for accessing the controls that are currently associated with the DockingManager. To access and modify the DockingManager’s control, the contents of the enumerator should first be copied to a temporary collection.
 
-Step 1. Create the respective controls and dock the control through design by setting `EnableDocking on dockingManager` property to `true` and follow the below given steps to enable, access, and modify the docked controls.
+Step 1: Create the respective controls and dock the control through design by setting `EnableDocking on dockingManager` property to `true` and follow the below given steps to enable, access, and modify the docked controls.
 
  ![Enable Docking on DockingManager](Docked-Group_images/Docked-Group_img4.jpeg)
 
 
-Step 2. Access and modify the dockable controls.
+Step 2: Access and modify the dockable controls.
 
 The following given code snippet accesses the docked controls, disables docking, and then disposes the dockable controls.
 
