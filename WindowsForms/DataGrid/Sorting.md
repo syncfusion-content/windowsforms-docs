@@ -361,7 +361,7 @@ If you want to sort the underlying collection when sorting takes place, this can
 ViewModel viewModel = new ViewModel();
 this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 
-private void dataGrid_SortColumnsChanged(object sender, Syncfusion.WinForms.dataGrid.Events.SortColumnsChangedEventArgs e)
+private void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
 {
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
