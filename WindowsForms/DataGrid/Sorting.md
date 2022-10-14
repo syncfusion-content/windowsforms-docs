@@ -357,15 +357,15 @@ If you want to sort the underlying collection when sorting takes place, this can
 
 {% tabs %}
 {% highlight c# %}
-this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 
-void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
+ViewModel viewModel = new ViewModel();
+this.SfDataGrid1.SortColumnsChanged += dataGrid_SortColumnsChanged;
+
+private void SfDataGrid1_SortColumnsChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SortColumnsChangedEventArgs e)
 {
-    var viewModel = this.DataContext as ViewModel;
-    
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
-    foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
+    foreach (var sortColumn in this.sfDataGrid1.View.SortDescriptions)
     {
         var columnName = sortColumn.PropertyName;
         
