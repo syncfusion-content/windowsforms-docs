@@ -357,12 +357,12 @@ If you want to sort the underlying collection when sorting takes place, this can
 
 {% tabs %}
 {% highlight c# %}
+
+ViewModel viewModel = new ViewModel();
 this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 
-void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
+private void dataGrid_SortColumnsChanged(object sender, SortColumnsChangedEventArgs e)
 {
-    var viewModel = this.DataContext as ViewModel;
-    
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
     foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
@@ -389,14 +389,13 @@ private object GetOrderSource(OrderInfo source, string name)
 }
 {% endhighlight %}
 {% highlight vb %}
-AddHandler Me.sfDataGrid1.SortColumnsChanged, AddressOf dataGrid_SortColumnsChanged
+Dim viewModel As ViewModel = New ViewModel()
+AddHandler Me.dataGrid.SortColumnsChanged, AddressOf dataGrid_SortColumnsChanged
 
 Private Sub dataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
-    Dim viewModel = TryCast(Me.DataContext, ViewModel)
-
     Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
-    For Each sortColumn In Me.sfDataGrid1.View.SortDescriptions
+    For Each sortColumn In Me.dataGrid.View.SortDescriptions
         Dim columnName = sortColumn.PropertyName
 
         If sortColumn.Direction = ListSortDirection.Ascending Then
