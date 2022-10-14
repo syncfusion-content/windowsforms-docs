@@ -359,13 +359,13 @@ If you want to sort the underlying collection when sorting takes place, this can
 {% highlight c# %}
 
 ViewModel viewModel = new ViewModel();
-this.SfDataGrid1.SortColumnsChanged += SfDataGrid1_SortColumnsChanged;
+this.DataGrid.SortColumnsChanged += DataGrid_SortColumnsChanged;
 
-private void SfDataGrid1_SortColumnsChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SortColumnsChangedEventArgs e)
+private void DataGrid_SortColumnsChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SortColumnsChangedEventArgs e)
 {
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
-    foreach (var sortColumn in this.sfDataGrid1.View.SortDescriptions)
+    foreach (var sortColumn in this.DataGrid.View.SortDescriptions)
     {
         var columnName = sortColumn.PropertyName;
         
@@ -390,12 +390,12 @@ private object GetOrderSource(OrderInfo source, string name)
 {% endhighlight %}
 {% highlight vb %}
 Dim viewModel As ViewModel = New ViewModel()
-AddHandler Me.sfDataGrid1.SortColumnsChanged, AddressOf sfDataGrid1_SortColumnsChanged
+AddHandler Me.DataGrid.SortColumnsChanged, AddressOf DataGrid_SortColumnsChanged
 
-Private Sub sfDataGrid1_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
+Private Sub DataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
     Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
-    For Each sortColumn In Me.sfDataGrid1.View.SortDescriptions
+    For Each sortColumn In Me.DataGrid.View.SortDescriptions
         Dim columnName = sortColumn.PropertyName
 
         If sortColumn.Direction = ListSortDirection.Ascending Then
