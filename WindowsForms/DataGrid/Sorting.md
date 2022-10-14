@@ -365,7 +365,7 @@ private void DataGrid_SortColumnsChanged(object sender, Syncfusion.WinForms.Data
 {
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
-    foreach (var sortColumn in this.DataGrid.View.SortDescriptions)
+    foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
     {
         var columnName = sortColumn.PropertyName;
         
@@ -395,7 +395,7 @@ AddHandler Me.DataGrid.SortColumnsChanged, AddressOf DataGrid_SortColumnsChanged
 Private Sub DataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
     Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
-    For Each sortColumn In Me.DataGrid.View.SortDescriptions
+    For Each sortColumn In Me.dataGrid.View.SortDescriptions
         Dim columnName = sortColumn.PropertyName
 
         If sortColumn.Direction = ListSortDirection.Ascending Then
