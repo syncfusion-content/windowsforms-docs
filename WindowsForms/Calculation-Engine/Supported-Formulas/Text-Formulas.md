@@ -570,7 +570,7 @@ _SEARCH(findText,withinText, startNum )_
 
 
 
-**Remark:**
+Remark:
 
 
 
@@ -1115,7 +1115,7 @@ SEARCHB(findText,withinText, startNum)_
 
 
 
-**Remark:**
+Remark:
 
 
 

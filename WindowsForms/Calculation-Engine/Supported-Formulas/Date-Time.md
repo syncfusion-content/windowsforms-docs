@@ -132,7 +132,7 @@ _DATEVALUE(date_text)_
 
 
 
-* date_text is the text that represents a date as a formatted string. For example, 11/12/2002 or 12-Nov-2002 are text strings within quotation marks that represent dates. When the year portion of the date_text is omitted, DateValue uses the current year from your computer's built-in clock. The time information in the date_text is ignored.
+date_text is the text that represents a date as a formatted string. For example, 11/12/2002 or 12-Nov-2002 are text strings within quotation marks that represent dates. When the year portion of the date_text is omitted, DateValue uses the current year from your computer's built-in clock. The time information in the date_text is ignored.
 
 
 
@@ -168,7 +168,7 @@ _DAY(serial_number)_
 
 
 
-* serial_number is the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,4,23) for the 23rd day of April, 2002.
+serial_number is the date of the day you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,4,23) for the 23rd day of April, 2002.
 
 
 
@@ -228,7 +228,7 @@ _DAYS(endDate, startDate)_
 
 
 
-* endDate and startDate are the two dates between which you want to know the number of days.
+endDate and startDate are the two dates between which you want to know the number of days.
 
 
 
@@ -336,7 +336,7 @@ _HOUR(serial_number)_
 
 
 
-* serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
+serial_number is the time that contains the hour you want to find. Times may be entered as text strings within quotation marks for example, "6:00 PM", as decimal numbers for example, 0.75, that represents 6:00 PM, or as results of other formulas or functions for example, TimeValue"6:00 PM".
 
 
 
@@ -360,7 +360,7 @@ _ISOWEEKNUM( DateTime)_
 
 
 
-* DateTime is used for date and time calculation.
+DateTime is used for date and time calculation.
 
 
 
@@ -396,7 +396,7 @@ _MINUTE(serial_number)_
 
 
 
-* serial_number is the time that contains the minute you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TIMEVALUE ("6:00 PM")). 
+serial_number is the time that contains the minute you want to find. Times may be entered as text strings within quotation marks (for example, "6:00 PM"), as decimal numbers (for example, 0.75, that represents 6:00 PM), or as results of other formulas or functions (for example, TIMEVALUE ("6:00 PM")). 
 
 
 
@@ -428,7 +428,7 @@ _MONTH(serial_number)_
 
 
 
-* serial_number is the date of the month you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,11,12) for the 12th day of November, 2002.
+serial_number is the date of the month you are trying to find. Dates should be entered by using the `Date` function or as results of other formulas or functions. For example, use Date(2002,11,12) for the 12th day of November, 2002.
 
 
 
@@ -436,7 +436,7 @@ _MONTH(serial_number)_
 
 
 
-* Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 
 
 
@@ -475,7 +475,7 @@ _NETWORKDAYS( start_date, end_date, [holidays] )_
 **Remarks:**
 
 
-* If any argument is not a valid date, NETWORKDAYS returns the `#VALUE!` error value.
+• If any argument is not a valid date, NETWORKDAYS returns the `#VALUE!` error value.
 
 
 
@@ -561,13 +561,13 @@ _SECOND(serial_number)_
 
 **where:**
 
-* serial_number is the time that contains the seconds you want to find.
+serial_number is the time that contains the seconds you want to find.
 
 
 
 **Remarks:**
 
-* Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).
+Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).
 
 
 
@@ -631,7 +631,7 @@ _TIMEVALUE(time_text)_
 
 
 
-* Date information in time_text is ignored.
+Date information in time_text is ignored.
 
 
 
@@ -655,7 +655,7 @@ _TODAY( )_
 
 
 
-* Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 
 
 
@@ -903,14 +903,14 @@ _YEAR(serial_number)_
 
 
 
-* serial_number is the date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002.
+serial_number is the date of the year you want to find. Dates should be entered by using the DATE function or as results of other formulas or functions. For example, use DATE(2002,11,12) for the 12th day of November 2002.
 
 
 
 **Remarks:**
 
 
-* Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
 
 
 

@@ -422,7 +422,7 @@ _CORREL(array1, array2)_
 
 **Remarks:**
 
-* array1 and array2 must have the same number of data points.
+array1 and array2 must have the same number of data points.
 
 ## COUNT
 
@@ -434,7 +434,7 @@ _COUNT(value1, value2,...)_
 
 **where:**
 
-* value1, value2, ... are arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
+value1, value2, ... are arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
 
 **Remarks:**
 
@@ -464,11 +464,11 @@ _COUNTBLANK(range)_
 
 **where:**
 
-* range is the range from which you want to count the blank cells.
+range is the range from which you want to count the blank cells.
 
 **Remarks:**
 
-* Cells with formulas that return "" (empty text) are also counted. Cells with zero values are not counted.
+Cells with formulas that return "" (empty text) are also counted. Cells with zero values are not counted.
 
 ## COUNTIF
 
@@ -588,11 +588,11 @@ _DEVSQ(number1, number2,...)_
 
 **where:**
 
-* number1, number2, ... are arguments for which, you want to calculate the sum of squared deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
+number1, number2, ... are arguments for which, you want to calculate the sum of squared deviations. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 **Remarks:**
 
-* The arguments must be numbers or names, arrays or references that contain numbers.
+The arguments must be numbers or names, arrays or references that contain numbers.
 
 ## EXPON.DIST
 
@@ -758,11 +758,11 @@ _FISHER(x)_
 
 **where:**
 
-* x is a numeric value for which you want the transformation.
+x is a numeric value for which you want the transformation.
 
 **Remarks:**
 
-* x must be > -1 and < 1.
+x must be > -1 and < 1.
 
 ## FISHERInv
 
@@ -774,7 +774,7 @@ _FISHERINV(y)_
 
 **where:**
 
-* y is the value for which you want to perform the inverse of the transformation.
+y is the value for which you want to perform the inverse of the transformation.
 
 ## FORECAST
 
@@ -824,7 +824,7 @@ _GEOMEAN(number1, number2,...)_
 
 **where:**
 
-* number1, number2, ... are arguments for which you want to calculate the mean.
+number1, number2, ... are arguments for which you want to calculate the mean.
 
 **Remarks:**
 
@@ -842,7 +842,7 @@ _HARMEAN(number1, number2,...)_
 
 **where:**
 
-* number1, number2, ... are arguments for which you want to calculate the mean.
+number1, number2, ... are arguments for which you want to calculate the mean.
 
 **Remarks:**
 
@@ -880,7 +880,7 @@ _LARGE(array, k)_
 
 **Remarks:**
 
-* If n is the number of data points in a range, then LARGE(array,1) returns the largest value, and `LARGE(array,n)` returns the smallest value.
+If n is the number of data points in a range, then LARGE(array,1) returns the largest value, and `LARGE(array,n)` returns the smallest value.
 
 ## MAX
 
@@ -892,7 +892,7 @@ _MAX(number1, number2, ...)_
 
 **where:**
 
-* number1, number2, ... are numbers for which you want to find the maximum value.
+number1, number2, ... are numbers for which you want to find the maximum value.
 
 ## MAXA
 
@@ -926,11 +926,11 @@ _MEDIAN(number1, number2, ...)_
 
 **where:**
 
-* number1, number2, ... are numbers for which you want the median.
+number1, number2, ... are numbers for which you want the median.
 
 **Remarks:**
 
-* If there is an even number of numbers in the set, then MEDIAN calculates the average of the two numbers in the middle.
+If there is an even number of numbers in the set, then MEDIAN calculates the average of the two numbers in the middle.
 
 ## MIN
 
@@ -942,11 +942,11 @@ _MIN(number1, number2, ...)_
 
 **where:** 
 
-* number1, number2, ... are numbers for which you want to find the minimum value.
+number1, number2, ... are numbers for which you want to find the minimum value.
 
 **Remarks:**
 
-* If an argument is an array or reference, only numbers in that array or reference are used. Empty cells, logical values or text in the array or reference are ignored. If logical values and text should not be ignored, use MINA.
+If an argument is an array or reference, only numbers in that array or reference are used. Empty cells, logical values or text in the array or reference are ignored. If logical values and text should not be ignored, use MINA.
 
 ## MINA
 
@@ -959,11 +959,11 @@ _MINA(value1, value2, ...)_
 
 **where:**
 
-* value1, value2, ... are values for which, you want to find the smallest value.
+value1, value2, ... are values for which, you want to find the smallest value.
 
 **Remarks:**
 
-* Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
+Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 
 ## NORM.DIST
 
@@ -1125,7 +1125,7 @@ _GAMMALN(x)_
 
 **Where:**
 
-* x denotes the value for which you want to calculate `GAMMALN`.
+x denotes the value for which you want to calculate `GAMMALN`.
 
 ## GAMMALN.PRECISE
 
@@ -1556,7 +1556,7 @@ _NORM.S.INV(probability)_
 
 **where:**
 
-* probability is a probability that corresponds to the normal distribution.
+probability is a probability that corresponds to the normal distribution.
 
 ## NEGBINOM.DIST
 
@@ -2003,7 +2003,7 @@ _SKEW(number1, [number2], ...)_
 
 **Where:**
 
-* number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 arguments for which you want to calculate skewness. You can also use a single array or a reference to an array instead of arguments separated by commas.
+number1, number2, ...    Number1 is required, subsequent numbers are optional. 1 to 255 arguments for which you want to calculate skewness. You can also use a single array or a reference to an array instead of arguments separated by commas.
 
 ## SKEW.P
 
@@ -2015,7 +2015,7 @@ _SKEW.P(number 1, [number 2],…)_
 
 **Where:**
 
-* number 1, number 2,…    Number 1 is required, subsequent numbers are optional. Number 1, number 2,… are 1 to 254 numbers or names, arrays, or reference that contain numbers for which you want the population skewness.
+number 1, number 2,…    Number 1 is required, subsequent numbers are optional. Number 1, number 2,… are 1 to 254 numbers or names, arrays, or reference that contain numbers for which you want the population skewness.
 
 **Remarks:**
 

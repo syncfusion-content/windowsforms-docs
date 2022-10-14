@@ -259,13 +259,13 @@ _BIN2DEC(num)_
 **where:**
 
 
-* num is the binary number that you want to convert.
+num is the binary number that you want to convert.
 
 
 
 **Remarks:**
 
-*  #NUM!` occurs when number is not a valid binary number or when number contains more than 10 characters.
+ `#NUM!` occurs when number is not a valid binary number or when number contains more than 10 characters.
 
 
 
@@ -285,7 +285,7 @@ _BITAND(num1,num2)_
 **Where:**
 
 
-* num1 and num2 should be in decimal format.
+num1 and num2 should be in decimal format.
 
 
 
@@ -361,7 +361,7 @@ _BITOR(num1, num2)_
 
 
 
-* num1 and num2 should be in decimal format.
+num1 and num2 should be in decimal format.
 
 
 
@@ -414,7 +414,7 @@ _BITXOR(num1, num2)_
 
 **Where:**
 
-* num1 and num2 should be in decimal format.
+num1 and num2 should be in decimal format.
 
 **Remarks:**
 
@@ -516,7 +516,7 @@ _OCT2BIN(number, [places])_
 
 **Remarks:**
 
-* If number is not a valid octal number, OCT2BIN returns the #NUM! error value.
+If number is not a valid octal number, OCT2BIN returns the #NUM! error value.
 
 ## OCT2DEC
 
@@ -528,11 +528,11 @@ _OCT2DEC(number)_
 
 **Where:** 
 
-* number denotes the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+number denotes the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits). The most significant bit of number is the sign bit. The remaining 29 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
 
 **Remark:**
 
-* If number is not a valid octal number, OCT2DEC returns the #NUM! error value.
+If number is not a valid octal number, OCT2DEC returns the #NUM! error value.
 
 ## OCT2HEX
 
@@ -590,11 +590,11 @@ _HEX2DEC(number)_
 
 **Where:**
 
-* Number denotes the hexadecimal number you want to convert. Number cannot contain more than 10 characters (40 bits). The most significant bit of number is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
+Number denotes the hexadecimal number you want to convert. Number cannot contain more than 10 characters (40 bits). The most significant bit of number is the sign bit. The remaining 39 bits are magnitude bits. Negative numbers are represented using two's-complement notation.
 
 **Remark**
 
-* If number is not a valid hexadecimal number, HEX2DEC returns the #NUM! error value.
+If number is not a valid hexadecimal number, HEX2DEC returns the #NUM! error value.
 
 ## HEX2OCT
 
@@ -629,7 +629,7 @@ _IMABS(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the absolute value.
+inumber denotes a complex number for which you want the absolute value.
 
 ## IMAGINARY
 
@@ -642,11 +642,11 @@ _IMAGINARY(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the imaginary coefficient.
+inumber denotes a complex number for which you want the imaginary coefficient.
 
 **Remark:**
 
-* Use COMPLEX to convert real and imaginary coefficients into a complex number.
+Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
 ## IMREAL
 
@@ -658,11 +658,11 @@ _IMREAL(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the real coefficient.
+inumber denotes a complex number for which you want the real coefficient.
 
 **Remark:**
 
-* Use COMPLEX to convert real and imaginary coefficients into a complex number.
+Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
 
 ## COMPLEX
@@ -693,7 +693,7 @@ _IMSUM(inumber1, [inumber2], ...)_
 
 **Where:**
 
-* Inumber1, [inumber2], ...    Inumber1 is  subsequent numbers are not. 1 to 255 complex numbers to add.
+Inumber1, [inumber2], ...    Inumber1 is  subsequent numbers are not. 1 to 255 complex numbers to add.
 
 ## IMSUB
 
@@ -720,7 +720,7 @@ IMPRODUCT(inumber1, [inumber2], ...)
 
 **Where:**
 
-* inumber1, [inumber2], …     Inumber1 is required, subsequent inumber are not. 1 to 255 complex numbers to multiply.
+inumber1, [inumber2], …     Inumber1 is required, subsequent inumber are not. 1 to 255 complex numbers to multiply.
 
 
 ## IMDIV
@@ -748,7 +748,7 @@ _IMCONJUGATE(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the conjugate.
+inumber denotes a complex number for which you want the conjugate.
 
 
 ## IMSQRT
@@ -761,7 +761,7 @@ _IMSQRT(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the square root.
+inumber denotes a complex number for which you want the square root.
 
 
 ## IMARGUMENT
@@ -774,7 +774,7 @@ _IMARGUMENT(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the argument  Theta ..
+inumber denotes a complex number for which you want the argument  Theta ..
 
 ## IMSIN
 
@@ -785,7 +785,7 @@ _IMSIN(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the sine.
+inumber denotes a complex number for which you want the sine.
 
 
 ## IMCSC
@@ -798,7 +798,7 @@ _IMCSC(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the cosecant.
+inumber denotes a complex number for which you want the cosecant.
 
 **Remarks:**
 
@@ -819,7 +819,7 @@ _IMCOS(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the cosine.
+inumber denotes a complex number for which you want the cosine.
 
 
 ## IMSEC
@@ -831,11 +831,11 @@ _IMSEC(inumber)_
 
 **Where:**
 
-* inumber denotes ACOT complex number for which you want the secant.
+inumber denotes ACOT complex number for which you want the secant.
 
 **Remark:**
 
-* Use COMPLEX to convert real and imaginary coefficients into a complex number.
+Use COMPLEX to convert real and imaginary coefficients into a complex number.
 
 ## IMTAN
 
@@ -846,7 +846,7 @@ _IMTAN(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the tangent.
+inumber denotes a complex number for which you want the tangent.
 
 **Remarks:**
 
@@ -866,7 +866,7 @@ IMCOT(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the cotangent.
+inumber denotes a complex number for which you want the cotangent.
 
 **Remarks:**
 
@@ -886,7 +886,7 @@ _IMSINH(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the hyperbolic sine.
+inumber denotes a complex number for which you want the hyperbolic sine.
 
 **Remarks:**
 
@@ -904,7 +904,7 @@ The function `IMCSCH` returns the hyperbolic cosecant of a complex number.
 _IMCSCH(inumber)_
 
 **Where:**
-* inumber denotes a complex number for which you want the hyperbolic cosecant
+inumber denotes a complex number for which you want the hyperbolic cosecant
 
 **Remarks:**
 
@@ -923,7 +923,7 @@ _IMCOSH(inumber)_
 
 **Where:**
 
-* inumber denotes complex number for which you want the hyperbolic cosine.
+inumber denotes complex number for which you want the hyperbolic cosine.
 
 **Remarks:**
 
@@ -944,7 +944,7 @@ _IMSECH(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the hyperbolic secant.
+inumber denotes a complex number for which you want the hyperbolic secant.
 
 **Remarks:**
 
@@ -963,7 +963,7 @@ The function `IMLOG10` returns the base-10 logarithm of a complex number.
 _IMLOG10(inumber)_
 
 **Where:**
-* inumber denotes a complex number for which you want the common logarithm.
+inumber denotes a complex number for which you want the common logarithm.
 
 
 ## IMLOG2
@@ -976,7 +976,7 @@ _IMLOG2(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the base-2 logarithm.
+inumber denotes a complex number for which you want the base-2 logarithm.
 
 ## IMLN
 
@@ -988,7 +988,7 @@ _IMLN(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the natural logarithm.
+inumber denotes a complex number for which you want the natural logarithm.
 
 ## IMEXP
 
@@ -1001,7 +1001,7 @@ _IMEXP(inumber)_
 
 **Where:**
 
-* inumber denotes a complex number for which you want the exponential.
+inumber denotes a complex number for which you want the exponential.
 
 
 ## IMPOWER
@@ -1034,7 +1034,7 @@ _GESTEP(number, [step])_
 
 **Remark:**
 
-* If any argument is non-numeric, GESTEP returns the #VALUE! error value.
+If any argument is non-numeric, GESTEP returns the #VALUE! error value.
 
 
 ## DELTA
@@ -1088,11 +1088,11 @@ _ERF.PRECISE(x)_
 
 **Where:**
 
-* x denotes the lower bound for integrating ERF.PRECISE.
+x denotes the lower bound for integrating ERF.PRECISE.
 
 **Remark:**
 
-* If lower_limit is non-numeric, ERF.PRECISE returns the #VALUE! error value.
+If lower_limit is non-numeric, ERF.PRECISE returns the #VALUE! error value.
 
 
 ## ERFC.PRECISE
@@ -1105,11 +1105,11 @@ _ERFC.PRECISE(x)_
 
 **Where:**
 
-* x denotes the lower bound for integrating ERFC.PRECISE.
+x denotes the lower bound for integrating ERFC.PRECISE.
 
 **Remarks:**
 
-* If x is non-numeric, ERFC.PRECISE returns the #VALUE! error value.
+If x is non-numeric, ERFC.PRECISE returns the #VALUE! error value.
 
 ## CONVERT
 
