@@ -81,13 +81,12 @@ The child controls can be added to the layout by dragging it from the toolbox an
 
 To add control manually in C#, follow the given steps:
 
-Step 1. Add the following required assembly references to the project:
+**Step 1** - Add the following required assembly references to the project:
 
-		* Syncfusion.Shared.Base.dll
+	* Syncfusion.Shared.Base.dll
 
-Step 2. Include the namespaces **Syncfusion.Windows.Forms.Tools**.
+**Step 2**  Include the namespaces **Syncfusion.Windows.Forms.Tools**.
 
-{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -103,12 +102,9 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 
 {% endtabs %} 
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-Step 3. Create `FlowLayout` control instance and set `ContainerControl` as form.
+**Step 3**  Create `FlowLayout` control instance and set `ContainerControl` as form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -128,8 +124,6 @@ Me.flowLayout1.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 **Adding layout components**
 
