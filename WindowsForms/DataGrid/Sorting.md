@@ -359,9 +359,9 @@ If you want to sort the underlying collection when sorting takes place, this can
 {% highlight c# %}
 
 ViewModel viewModel = new ViewModel();
-this.DataGrid.SortColumnsChanged += DataGrid_SortColumnsChanged;
+this.dataGrid.SortColumnsChanged += dataGrid_SortColumnsChanged;
 
-private void DataGrid_SortColumnsChanged(object sender, Syncfusion.WinForms.DataGrid.Events.SortColumnsChangedEventArgs e)
+private void dataGrid_SortColumnsChanged(object sender, Syncfusion.WinForms.dataGrid.Events.SortColumnsChangedEventArgs e)
 {
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
     
@@ -390,9 +390,9 @@ private object GetOrderSource(OrderInfo source, string name)
 {% endhighlight %}
 {% highlight vb %}
 Dim viewModel As ViewModel = New ViewModel()
-AddHandler Me.DataGrid.SortColumnsChanged, AddressOf DataGrid_SortColumnsChanged
+AddHandler Me.dataGrid.SortColumnsChanged, AddressOf dataGrid_SortColumnsChanged
 
-Private Sub DataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
+Private Sub dataGrid_SortColumnsChanged(ByVal sender As Object, ByVal e As SortColumnsChangedEventArgs)
     Dim OrderedSource As IEnumerable(Of OrderInfo) = viewModel.Orders
 
     For Each sortColumn In Me.dataGrid.View.SortDescriptions
