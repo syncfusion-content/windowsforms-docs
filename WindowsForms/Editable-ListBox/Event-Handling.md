@@ -31,7 +31,7 @@ documentation: ug
 
 DragDrop and DragEnter events can be handled to drag and drop the external objects into the EditableList control.
 
-1.DragEnter event can be handled to drag the file into the text area of EditableList control. The following code illustrates this.
+1. DragEnter event can be handled to drag the file into the text area of EditableList control. The following code illustrates this.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -62,7 +62,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-2.DragDrop event can be handled to drop the files at any location into the EditableList control. The following code illustrates this.
+2. DragDrop event can be handled to drop the files at any location into the EditableList control. The following code illustrates this.
 
 {% capture codesnippet2 %}
 {% tabs %}

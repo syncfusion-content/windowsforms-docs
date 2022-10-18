@@ -56,18 +56,17 @@ To add command bar in C#, follow the given steps:
 
 **Step 1** - Add the following required assembly references to the project:
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Licensing.dll
-* Syncfusion.SpellChecked.Base.dll
+        * Syncfusion.Grid.Base.dll
+        * Syncfusion.Grid.Windows.dll
+        * Syncfusion.Shared.Base.dll
+        * Syncfusion.Shared.Windows.dll
+        * Syncfusion.Tools.Base.dll
+        * Syncfusion.Tools.Windows.dll
+        * Syncfusion.Licensing.dll
+        * Syncfusion.SpellChecked.Base.dll
 
 **Step 2** - Include the namespace **Syncfusion.Windows.Forms.Tools**
 
-{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -81,12 +80,9 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 **Step 3** - Create a [CommandBarController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html) instance and set the [HostForm](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBarController.html#Syncfusion_Windows_Forms_Tools_CommandBarController_HostForm) property to be the current form.
 
-{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -108,8 +104,6 @@ Me.commandBarController1.HostForm = Me;
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 #### **Adding command bar**
 

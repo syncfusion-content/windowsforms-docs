@@ -15,6 +15,6 @@ The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Window
 
 ## Key features
 
-**Editing** - Provides support to edit the selected item at run time.
+* **Editing** - Provides support to edit the selected item at run time.
 
-**Embedded controls** - The EditableList control contains embedded controls such as ListBox, Button, and TextBox.
+* **Embedded controls** - The EditableList control contains embedded controls such as ListBox, Button, and TextBox.

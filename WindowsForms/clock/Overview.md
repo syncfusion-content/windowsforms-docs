@@ -15,10 +15,10 @@ Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/c
 
 ## Key features
 
-**Clock types** - Provide different types of clock. The types are Analog and Digital.
+* **Clock types** - Provide different types of clock. The types are Analog and Digital.
 
-**Shapes** - Provide different shapes of clock. The shapes are Rectangle, RoundedRectangle, Circle, Square, and RoundedSquare.
+* **Shapes** - Provide different shapes of clock. The shapes are Rectangle, RoundedRectangle, Circle, Square, and RoundedSquare.
 
-**Custom time** - Enables custom time. The control should be enabled by setting the `ShowCustomTimeClock` property to `true`.
+* **Custom time** - Enables custom time. The control should be enabled by setting the `ShowCustomTimeClock` property to `true`.
 
-**Frames** - Provide different set of frames. The frames are, RectangularFrame, CircleFrame, and SquareFrame.
+* **Frames** - Provide different set of frames. The frames are, RectangularFrame, CircleFrame, and SquareFrame.

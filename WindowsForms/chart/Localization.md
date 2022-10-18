@@ -55,6 +55,7 @@ NA</td></tr>
 
 3. Specify the culture using the [Localize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_Localize) property as given in the following code.
 
+{% capture codesnippet1 %}
 {% tabs %}  
 
 {% highlight c# %}
@@ -70,6 +71,8 @@ Me.chartControl1.Localize=”de-DE”
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Chart Localization](Localization_images/Localization_img5.png)
 

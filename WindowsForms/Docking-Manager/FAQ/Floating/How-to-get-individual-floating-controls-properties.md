@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to get individual floating controls properties | WindowsForms | Syncfusion
-description: How to get individual floating controls properties
+title: Individual floating controls properties | WindowsForms | Syncfusion
+description: Learn here about How to get individual floating controls properties with Syncfusion Essential Studio Windows Forms DockingManager Control
 platform: WindowsForms
 control: DockingManager
 documentation: ug
@@ -14,7 +14,8 @@ To get the x,y coordinates of the control if it is in floating state,
 1. Add a list view and a docking manager to your form.
 2. Enable the list view as a dock control.
 
- {% tabs %}
+{% capture codesnippet1 %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -29,11 +30,13 @@ Me.dockingManager1.SetEnableDocking(Me.listView1, True)
 {% endhighlight %}
 
 {% endtabs %}
-	
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}	
 
 3. Set the control as a non-dockable floating window.
 
- {% tabs %}
+{% capture codesnippet2 %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -48,13 +51,16 @@ Me.dockingManager1.SetFloatOnly(Me.listView1,True)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
   
 
 4. Determine whether the control is floating using the `IsFloating()` method. 
 * If `true`, then the control is being hosted in a subclass of the Form type and this host form can be retrieved through the control’s `TopLevelControl` property.
 * Once, we have the top level form,  x and y co-ordinates can be retrieved using Control.Location property of that form.
 
- {% tabs %}
+{% capture codesnippet3 %}
+{% tabs %}
  
 {% highlight C# %}
 
@@ -82,4 +88,5 @@ MessageBox.Show(floatForm.Location.ToString())
 {% endhighlight %}
 
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}

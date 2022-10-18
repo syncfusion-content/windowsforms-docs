@@ -35,23 +35,23 @@ The FolderBrowser control can be added to an application by dragging it from the
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project.
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-**2.** Include the FolderBrowser control namespace **Syncfusion.Windows.Forms;**.
+2. Include the FolderBrowser control namespace **Syncfusion.Windows.Forms;**.
 
-  {% capture codesnippet1 %}
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight %}
-  {% endtabs %} 
-  {% endcapture %}
-  {{ codesnippet1 | OrderList_Indent_Level_1 }} 
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-**3.** Create a FolderBrowser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_ShowDialog().html) method to display the FolderBrowser dialog.
+3. Create a FolderBrowser control instance, and invoke the [FolderBrowser.ShowDialog()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.FolderBrowser.html#Syncfusion_Windows_Forms_FolderBrowser_ShowDialog().html) method to display the FolderBrowser dialog.
 
 {% capture codesnippet2 %}
 {% tabs %}

@@ -35,21 +35,25 @@ The GroupBar control can be added to an application by dragging it from the tool
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the **Syncfusion.Shared.Base** assembly reference to the project.
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project.
 
-**2.** Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
+2. Include the GroupBar control namespace **Syncfusion.Windows.Forms.Tools;**.
 
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight  %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight  %}
-  {% endtabs %} 
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight  %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight  %}
+{% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a GroupBar control instance, and add it to the form.
+3. Create a GroupBar control instance, and add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}
 GroupBar groupBar1 = new GroupBar();
@@ -60,6 +64,8 @@ Dim groupBar1 As GroupBar = New GroupBar()
 Me.Controls.Add(groupBar1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Add group bar items
 

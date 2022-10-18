@@ -17,8 +17,8 @@ N> `BorderLayout` does not arrange the child components automatically like other
 
 ## Key features
 
-**Spacing**: Provides an option to customize horizontal and vertical gaps between child controls.
+* **Spacing**: Provides an option to customize horizontal and vertical gaps between child controls.
 
-**Position**: Provides an option to set direction (North, South, East, West, or Center) to child controls.
+* **Position**: Provides an option to set direction (North, South, East, West, or Center) to child controls.
 
-**Size**: Provides an option to customize the size of the child controls in BorderLayout.
+* **Size**: Provides an option to customize the size of the child controls in BorderLayout.

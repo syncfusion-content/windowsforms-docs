@@ -18,15 +18,15 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 ## Adding GroupView control via designer
 
-1) Create a new Windows Forms project in the Visual Studio.
+1. Create a new Windows Forms project in the Visual Studio.
 
-2) Add the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
+2. Add the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control to an application by dragging it from the toolbox to a designer view. The following dependent assembly will be added automatically:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
 ![Windows Forms GroupView drag and drop from toolbox](Overview_images/GroupView_img1.png)
 
-3) Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
+3. Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
 
 ![Windows Forms GroupView showing collection editor of item](GettingStarted_images/GroupView_collectioneditor.png)
 
@@ -34,14 +34,15 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 To add the control manually in C#, follow the given steps:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project:
+2. Add the following assembly reference to the project:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -57,9 +58,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight  %}
 
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control, and then add it to the form.
+4. Create an instance of the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control, and then add it to the form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -79,9 +83,12 @@ Me.Controls.Add(groupView1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-5) Add items to GroupView container using the [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems) collection property.
+5. Add items to GroupView container using the [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems) collection property.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -105,6 +112,8 @@ Me.groupView1.FlatLook = True
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Windows Forms GroupView showing added items](GettingStarted_images/GroupView_items.png)
 
