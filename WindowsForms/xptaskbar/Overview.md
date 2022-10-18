@@ -15,10 +15,10 @@ documentation: ug
 
 ## Key features
 
-**Header settings** - Provides options to customize the text, appearance, font and size of the XPTaskBarBox header.
+    .Header settings- Provides options to customize the text, appearance, font and size of the XPTaskBarBox header.
 
-**Layout orientation** - Provides options to customize the layout to be horizontal or vertical.
+    .Layout orientation- Provides options to customize the layout to be horizontal or vertical.
 
-**Padding** - Provides options to customize interior spacing, horizontal and vertical padding using integer values.
+    .Padding- Provides options to customize interior spacing, horizontal and vertical padding using integer values.
 
-**Visual style** - Provides rich set of style to customize the look and feel of XPTaskBar.
+    .Visual style- Provides rich set of style to customize the look and feel of XPTaskBar.

@@ -35,10 +35,11 @@ The PercentTextBox control can be added to an application by dragging it from th
 
 To add the control manually in C#, follow the given steps:
 
-**1.**	Add the **Syncfusion.Shared.Base** assembly reference to the project: 
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project: 
  
-**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}
 using Syncfusion.Windows.Forms.Tools;
@@ -47,9 +48,12 @@ using Syncfusion.Windows.Forms.Tools;
 Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.**	Create a PercentTextBox instance, and add it to the window.
+3. Create a PercentTextBox instance, and add it to the window.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight C# %}
 PercentTextBox currencyTextBox1= new PercentTextBox();
@@ -60,6 +64,8 @@ Dim currencyTextBox1 As PercentTextBox = New PercentTextBox()
 Me.Controls.Add(currencyTextBox1) 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![PercentTextBox control added by code](PercentTextBox-Images/wf-percent-text-box-control.png) 
 

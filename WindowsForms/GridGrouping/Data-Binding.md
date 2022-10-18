@@ -105,7 +105,8 @@ This section demonstrates implementation of a collection using `ArrayList` and s
 #### Implementation 
 Follow these steps to bind an array of custom objects to a GridGroupingControl.
 
-1.Create a class (Data) whose instances represent records and properties represent record fields.
+1. Create a class (Data) whose instances represent records and properties represent record fields.
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 public class Data
@@ -211,9 +212,12 @@ Public Class Data
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Create an instance of [ArrayList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-5.0) and add a list of Data type objects into it. This represents collection.
+2. Create an instance of [ArrayList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.arraylist?view=net-5.0) and add a list of Data type objects into it. This represents collection.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 using System;
@@ -240,9 +244,12 @@ al.Add(New Data("Produce", "Mayumi Ohno", "Mayumi's"))
 al.Add(New Data("Seafood", "Robb Merchant", "New England Seafood Cannery"))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Assign this array list to the grid’s `DataSource` and run the sample.
+3. Assign this array list to the grid’s `DataSource` and run the sample.
 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = al;
@@ -251,6 +258,8 @@ this.gridGroupingControl1.DataSource = al;
 Me.gridGroupingControl1.DataSource = al
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 The Grid will be populated as follows,
 
@@ -288,6 +297,7 @@ Follow the steps below to create a collection (Books Collection) that implements
 
 1. Create a class Book that represents the structure of the record.
 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 class Book
@@ -361,9 +371,12 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-2.Create another class Books that inherits `ArrayList` class and implements `ITypedList`. A list of its instances will act as data store for GridGroupingControl. Implement `GetItemProperties` and `GetListName` methods.
+2. Create another class Books that inherits `ArrayList` class and implements `ITypedList`. A list of its instances will act as data store for GridGroupingControl. Implement `GetItemProperties` and `GetListName` methods.
 
+{% capture codesnippet5 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -396,8 +409,11 @@ Public Class Books
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.Create an instance of Books and add a few records into it.
+3. Create an instance of Books and add a few records into it.
+{% capture codesnippet6 %}​
 {% tabs %}
 {% highlight c# %}
 Books MyBooks = new Books();
@@ -412,7 +428,11 @@ MyBooks.Add(New Book("Data Structures", "Tremblay and Sorenson"))
 MyBooks.Add(New Book("Database Management", "Alexis Leon"))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
+
 4. Assign this list to the grouping grid’s DataSource. Run the sample.
+{% capture codesnippet7 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = MyBooks;
@@ -421,6 +441,8 @@ this.gridGroupingControl1.DataSource = MyBooks;
 Me.gridGroupingControl1.DataSource = MyBooks
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ![Data-Binding_img2](Data-Binding_images/Data-Binding_img2.jpeg)
 
@@ -489,8 +511,8 @@ While writing the code to manage collection items, user can perform any other op
 ### Collection Base
 Strongly Typed collection can be created by inheriting from the `System.Collections.CollectionBase` class. `CollectionBase` class implements IList, IListSource, and IEnumerable. These interfaces enable the users to implement methods and properties that support binding, enumerating, and looping using ForEach construct. The result is that your strongly typed collections can be bound directly to our grid grouping control as data source.
 
-1.Create a class Product whose instances represent the records and properties represent the record fields.
-
+1. Create a class Product whose instances represent the records and properties represent the record fields.
+{% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
 class Product
@@ -558,9 +580,12 @@ Friend Class Product
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-2.Create another class Product that derives the `CollectionBase` class. To make it Strongly Typed, add a default property that will return a typed object. Also, implement an ADD method.
+2. Create another class Product that derives the `CollectionBase` class. To make it Strongly Typed, add a default property that will return a typed object. Also, implement an ADD method.
 
+{% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}
 using System;
@@ -607,9 +632,11 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-3.Create Products Collection by instantiating Products class and adding few records to it.
-
+3. Create Products Collection by instantiating Products class and adding few records to it.
+{% capture codesnippet10 %}​
 {% tabs %}
 {% highlight c# %}
 Products MyProducts = new Products();
@@ -624,8 +651,11 @@ MyProducts.Add(New Product("Aniseed Syrup", "12 - 550 ml bottles"))
 MyProducts.Add(New Product("Sir Rodney's Marmalade", "30 gift boxes"))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
-4.Finally assign this collection to the `DataSource` property of the GridGroupingControl and run the sample.
+4. Finally assign this collection to the `DataSource` property of the GridGroupingControl and run the sample.
+{% capture codesnippet11 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = MyProducts;
@@ -634,6 +664,8 @@ this.gridGroupingControl1.DataSource = MyProducts;
 Me.gridGroupingControl1.DataSource = MyProducts
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 ![Data-Binding_img3](Data-Binding_images/Data-Binding_img3.jpeg)
 
 **Sample Location:**
@@ -656,7 +688,8 @@ Off these classes, IBindingList implementation has some specialties. BindingList
 #### Implementation
 Follow the steps below to implement generic collection and bind it to grid. This implementation uses `BindingList` class.
 
-1.Create a class (CustomClass) whose objects represent records, and properties represent the record fields. This class implements `INotifyPropertyChanged` interface in order to trigger the grid to react to changes in the list.
+1. Create a class (CustomClass) whose objects represent records, and properties represent the record fields. This class implements `INotifyPropertyChanged` interface in order to trigger the grid to react to changes in the list.
+{% capture codesnippet12 %}​
 {% tabs %}
 {% highlight c# %}
 class Products : CollectionBase
@@ -884,8 +917,11 @@ Public Class CustomClass
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
-2.Instantiate BindingList &lt;T&gt; class by specifying the type of collection as `CustomClass` and add few records to it. This will create a collection of `CustomClass` type objects.
+2. Instantiate BindingList &lt;T&gt; class by specifying the type of collection as `CustomClass` and add few records to it. This will create a collection of `CustomClass` type objects.
+{% capture codesnippet13 %}​
 {% tabs %}
 {% highlight c# %}
 using System.Collections.Generic;
@@ -909,8 +945,11 @@ bl.Add(New CustomClass(0105, "Mayumi", "Ohno", "Calle del Rosal 4", "Oviedo"))
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 
-3.Assign this list to the grouping grid’s DataSource and run this sample.
+3. Assign this list to the grouping grid’s DataSource and run this sample.
+{% capture codesnippet14 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = bl;
@@ -919,6 +958,8 @@ this.gridGroupingControl1.DataSource = bl;
 Me.gridGroupingControl1.DataSource = bl
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
 The Grid will be loaded with the data looks like the following screenshot,
 
@@ -932,8 +973,8 @@ The grid can be bounded to the [DynamicObject](https://docs.microsoft.com/en-us/
 
 The following steps are used to have the dynamic object binding for the GridGroupingControl.
 
-1.Derive the `DynamicDictionary` class by deriving it from the `DynamicObject`.
-
+1. Derive the `DynamicDictionary` class by deriving it from the `DynamicObject`.
+{% capture codesnippet15 %}​
 {% tabs %}
 {% highlight c# %}
 // The class derived from DynamicObject.  
@@ -1272,8 +1313,11 @@ Public Class DynamicDictionary
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
-2.Create the `DynamicOrders` collection for to store the dynamic objects.
+2. Create the `DynamicOrders` collection for to store the dynamic objects.
+{% capture codesnippet16 %}​
 {% tabs %}
 {% highlight c# %}
 public class DynamicOrders : List<dynamic>
@@ -1337,8 +1381,11 @@ Public Class DynamicOrders
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet16 | OrderList_Indent_Level_1 }}
 
-3.Create a DynamicList collection for the type of `DynamicDictionary` by deriving it from the `IBindingList`.
+3. Create a DynamicList collection for the type of `DynamicDictionary` by deriving it from the `IBindingList`.
+{% capture codesnippet17 %}​
 {% tabs %}
 {% highlight c# %}
 public class DynamicList:BindingList<DynamicDictionary>
@@ -1406,8 +1453,11 @@ Public Class DynamicList
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet17 | OrderList_Indent_Level_1 }}
 
-4.Create the `NorthwindOrders` data model class.
+4. Create the `NorthwindOrders` data model class.
+{% capture codesnippet18 %}​
 {% tabs %}
 {% highlight c# %}
 public class NorthwindOrders : List<Orders>
@@ -1878,9 +1928,11 @@ Public Event PropertyChanged As PropertyChangedEventHandler
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet18 | OrderList_Indent_Level_1 }}
 
-5.Assign the dynamic binding source as the DataSource for the GridGroupingControl.
-
+5. Assign the dynamic binding source as the DataSource for the GridGroupingControl.
+{% capture codesnippet19 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.DataSource = new DynamicList(true);
@@ -1889,6 +1941,8 @@ this.gridGroupingControl1.DataSource = new DynamicList(true);
 Me.gridGroupingControl1.DataSource = New DynamicList(True)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet19 | OrderList_Indent_Level_1 }}
 The dashboard sample given below has the Dynamic data source for having the dynamic DataBinding in GridGroupingControl.
 
 **Sample Location**
@@ -1902,7 +1956,8 @@ This section demonstrates how to add custom columns to a GridGroupingControl. Th
 
 The values of the unbound columns must be saved somewhere because the grid does not maintain any data structure to store cell values. Since values are unbound, they cannot be stored into bound data source too. In this example, a `HashTable` is used to save the values of unbound column. The example displays an unbound CheckBox column along with other bound columns using GridGroupingControl.
 
-1.Create a GridGroupingControl and bind it to data store.
+1. Create a GridGroupingControl and bind it to data store.
+{% capture codesnippet20 %}​
 {% tabs %}
 {% highlight c# %}
 private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
@@ -1958,8 +2013,11 @@ Next i
 Me.gridGroupingControl1.DataSource = dataTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet20 | OrderList_Indent_Level_1 }}
 
-2.Create `FieldDescriptor` to describes the custom column and adds it to `UnboundFieldDescriptor` collection of GridGroupingControl.
+2. Create `FieldDescriptor` to describes the custom column and adds it to `UnboundFieldDescriptor` collection of GridGroupingControl.
+{% capture codesnippet21 %}​
 {% tabs %}
 {% highlight c# %}
 FieldDescriptor unboundField = new FieldDescriptor("CheckboxCol", "", false, "");
@@ -1972,8 +2030,11 @@ unboundField.ReadOnly = False
 Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add(unboundField)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet21 | OrderList_Indent_Level_1 }}
 
-3.Setup check boxes in the unbound column. The unbound cells can be customized through the `Appearance` property.
+3. Setup check boxes in the unbound column. The unbound cells can be customized through the `Appearance` property.
+{% capture codesnippet22 %}​
 {% tabs %}
 {% highlight c# %}
 gridGroupingControl1.TableDescriptor.Columns["CheckboxCol"].Appearance.AnyRecordFieldCell.CellType = "CheckBox";
@@ -1991,8 +2052,11 @@ gridGroupingControl1.TableDescriptor.Columns("CheckboxCol").Appearance.AnyRecord
 gridGroupingControl1.TableDescriptor.Columns("CheckboxCol").Appearance.AnyRecordFieldCell.VerticalAlignment = GridVerticalAlignment.Middle
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet22 | OrderList_Indent_Level_1 }}
 
-4.Handle `QueryValue` and `SaveValue` events to set and save the unbound values. Define a `HashTable` to store unbound values.
+4. Handle `QueryValue` and `SaveValue` events to set and save the unbound values. Define a `HashTable` to store unbound values.
+{% capture codesnippet23 %}​
 {% tabs %}
 {% highlight c# %}
 Hashtable unboundValues = new Hashtable();
@@ -2054,8 +2118,11 @@ Private Sub gridGroupingControl1_SaveValue(ByVal sender As Object, ByVal e As Fi
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet23 | OrderList_Indent_Level_1 }}
 
-5.Customize the unbound cells by handling the `QueryCellStyleInfo` event.
+5. Customize the unbound cells by handling the `QueryCellStyleInfo` event.
+{% capture codesnippet24 %}​
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.QueryCellStyleInfo += new Syncfusion.Windows.Forms.Grid.Grouping.GridTableCellStyleInfoEventHandler(gridGroupingControl1_QueryCellStyleInfo);
@@ -2092,6 +2159,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet24 | OrderList_Indent_Level_1 }}
 
 After finishing the above steps run the sample, the Grid will be loaded with the unbound column as shown in the following screenshot,
 
@@ -2106,8 +2175,8 @@ This section will explain about the MDB file can be bounded to the GridGroupingC
 #### Binding MDB File by using Visual Studio 2005
 The following steps are to be used with Visual Studio 2005 and .NET 2.0. Smart Tags that are available in the .NET 2.0 Designer to hook into your MDB file. This process of binding is fully designer based, user do not need to write even a single line of code.
 
-1.From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto the form.
-2.In the GridGroupingControl smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
+1. From the Syncfusion tab in the toolbox, drag a GridGroupingControl onto the form.
+2. In the GridGroupingControl smart tag, click the Choose Data Source drop down. Then click the Add Project Data Source link in the drop down.
 
 ![Data-Binding_img6](Data-Binding_images/Data-Binding_img6.jpeg)
 
@@ -2268,8 +2337,8 @@ The steps in this lesson are for use with Visual Studio 2010 and .NET 4.0. You c
 #### Binding MDB File by using Visual Studio 2012
 The following steps are intended for use with Visual Studio 2012 and .NET 4.5. You can use **Smart Tags** that are available in the .NET 4.5 designer to hook into your MDB file. This tutorial is strictly a designer tutorial. You do not have to write a single line of code. 
 
-1.From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form.
-2.In the Grid Grouping control smart tag, click Choose Data Source drop-down list. Then click Add Project Data Source link.
+1. From the Syncfusion tab in the toolbox, drag a Grid Grouping control onto your form.
+2. In the Grid Grouping control smart tag, click Choose Data Source drop-down list. Then click Add Project Data Source link.
 
 ![Data-Binding_img41](Data-Binding_images/Data-Binding_img41.jpeg)
 
@@ -2289,11 +2358,11 @@ Click **New Connection**. **Choose** **Data Source** dialog box will be displa
 
 ![Data-Binding_img45](Data-Binding_images/Data-Binding_img45.jpeg)
 
-3.In the Change Data Source dialog box, select the Microsoft Access Database File option, and then click Continue. Add Connection dialog box will be displayed.
+3. In the Change Data Source dialog box, select the Microsoft Access Database File option, and then click Continue. Add Connection dialog box will be displayed.
 
 ![Data-Binding_img46](Data-Binding_images/Data-Binding_img46.jpeg)
 
-4.Add Connection dialog box will be opened without the Database file name entry set. Click Browse and browse to the following path: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to your installation location). Click OK.
+4. Add Connection dialog box will be opened without the Database file name entry set. Click Browse and browse to the following path: C:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version number&gt;\Common\Data\NWIND.mdb (this path will vary according to your installation location). Click OK.
 
 ![Data-Binding_img47](Data-Binding_images/Data-Binding_img47.jpeg)
 
@@ -2301,7 +2370,7 @@ Now the **Data Source Configuration Wizard** will open, along with the connectio
 
 ![Data-Binding_img48](Data-Binding_images/Data-Binding_img48.jpeg)
 
-5.Click **No** to indicate that you do not want to save the MDB in the project.
+5. Click **No** to indicate that you do not want to save the MDB in the project.
 
 ![Data-Binding_img49](Data-Binding_images/Data-Binding_img49.jpeg)
 
@@ -2309,7 +2378,7 @@ The following screen will appear:
 
 ![Data-Binding_img50](Data-Binding_images/Data-Binding_img50.jpeg)
 
-6.Click Next to choose your Database Objects. Select the tables that you want. Click Finish.
+6. Click Next to choose your Database Objects. Select the tables that you want. Click Finish.
 
 ![Data-Binding_img51](Data-Binding_images/Data-Binding_img51.jpeg)
 
@@ -2617,7 +2686,7 @@ The steps given below is used to bind the SQL server database with Visual Studio
 #### Binding SQL server by using VS 2012
 The steps given below is used to bind the SQL server database with Visual Studio 2012 and .NET 4.5. The **Smart Tags which are available in the .NET 4.5 Designer** can be used to hook into the SQL server database.
 
-1.  From the **Syncfusion** tab in the **Toolbox**, drag a GridGroupingControl onto your form. 
+1. From the **Syncfusion** tab in the **Toolbox**, drag a GridGroupingControl onto your form. 
 
 2. In the GridGroupingControl smart tag, click the Choose Data Source drop-down list. Then click the Add Project Data Source link.
 
@@ -2786,8 +2855,9 @@ The steps given below is used to bind the SQL server database with Visual Studio
 This section explains about the programmatic binding of GridGroupingControl to the MDB file and a manual data source. 
 
 ### Programmatic Binding of MDB file 
-1. Include the required name space to the file.
 
+1. Include the required name space to the file.
+{% capture codesnippet25 %}​
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Grouping;
@@ -2798,8 +2868,11 @@ Imports Syncfusion.Grouping
 Imports System.Data.OleDb
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet25 | OrderList_Indent_Level_1 }}
 
-2.Create the object for the GridGroupingControl and initialize with the size and other properties.
+2. Create the object for the GridGroupingControl and initialize with the size and other properties.
+{% capture codesnippet26 %}​
 {% tabs %}
 {% highlight c# %}
 private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingControl1;
@@ -2816,8 +2889,11 @@ Me.gridGroupingControl1 = New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupin
 Me.gridGroupingControl1.Size = New System.Drawing.Size(500, 350)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet26 | OrderList_Indent_Level_1 }}
 
-3.Create the Database connection for binding the MDB file.
+3. Create the Database connection for binding the MDB file.
+{% capture codesnippet27 %}​
 {% tabs %}
 {% highlight c# %}
 //Creates Connection Object. 
@@ -2842,8 +2918,11 @@ Dim dataSet As New DataSet()
 adapter.Fill(dataSet)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet27 | OrderList_Indent_Level_1 }}
 
-4.Bind the GridGroupingControl to the dataset by using the `DataSource` property.
+4. Bind the GridGroupingControl to the dataset by using the `DataSource` property.
+{% capture codesnippet28 %}​
 {% tabs %}
 {% highlight c# %}
 //Bind the dataset to the grid's data source 
@@ -2854,8 +2933,11 @@ this.gridGroupingControl1.DataSource = dataSet.Tables[0];
 Me.gridGroupingControl1.DataSource = dataSet.Tables(0)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet28 | OrderList_Indent_Level_1 }}
 
-5.Now add the GridGroupingControl to the ‘Form’ and run the project,
+5. Now add the GridGroupingControl to the ‘Form’ and run the project,
+{% capture codesnippet29 %}​
 {% tabs %}
 {% highlight c# %}
 //Add the GridGroupingControl to the form
@@ -2866,6 +2948,8 @@ this.Controls.Add(this.gridGroupingControl1);
 Me.Controls.Add(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet29 | OrderList_Indent_Level_1 }}
 
 The GridGroupingControl will be populated with the table specified in the dataset as of follows,
 
@@ -2876,7 +2960,8 @@ The `DataTable` can be created manually and bounded to the GridGroupingControl. 
 
 The following steps are used to create the DataTable and binding to the GridGroupingControl,
 
-1.Include the following namespace.
+1. Include the following namespace.
+{% capture codesnippet30 %}​
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Grouping;
@@ -2885,8 +2970,11 @@ using Syncfusion.Grouping;
 Imports Syncfusion.Grouping
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet30 | OrderList_Indent_Level_1 }}
 
-2.Create an instance for the GridGroupingControl and specify the size of it,
+2. Create an instance for the GridGroupingControl and specify the size of it,
+{% capture codesnippet31 %}​
 {% tabs %}
 {% highlight c# %}
 //Initializing the GridGroupingControl 
@@ -2907,8 +2995,11 @@ Me.gridGroupingControl1.ThemesEnabled = True
 Me.gridGroupingControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet31 | OrderList_Indent_Level_1 }}
 
-3.Create a DataTable for populate the GridGroupingControl.
+3. Create a DataTable for populate the GridGroupingControl.
+{% capture codesnippet32 %}​
 {% tabs %}
 {% highlight c# %}
 DataTable myDataTable = new DataTable("MyDataTable");
@@ -2968,8 +3059,11 @@ Next i
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet32 | OrderList_Indent_Level_1 }}
 
-4.Bind the GridGroupingControl to the data table by using the `DataSource` property.
+4. Bind the GridGroupingControl to the data table by using the `DataSource` property.
+{% capture codesnippet33 %}​
 {% tabs %}
 {% highlight c# %}
 //Binding the data table to the grid
@@ -2980,9 +3074,11 @@ this.gridGroupingControl1.DataSource = myDataTable;
 Me.gridGroupingControl1.DataSource = myDataTable
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet33 | OrderList_Indent_Level_1 }}
 
-5.Now add the GridGroupingControl to the form and run the project,
-
+5. Now add the GridGroupingControl to the form and run the project,
+{% capture codesnippet34 %}​
 {% tabs %}
 {% highlight c#%}
 //Add the GridGroupingControl to the form
@@ -2993,6 +3089,8 @@ this.Controls.Add(this.gridGroupingControl1);
 Me.Controls.Add(Me.gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet34 | OrderList_Indent_Level_1 }}
 
 The grid will be populated with the data present in the data table as of follows,
 

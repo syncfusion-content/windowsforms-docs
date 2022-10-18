@@ -49,17 +49,18 @@ The header and menu items can be added to drawer using the [Items](https://help.
 
 To add the control manually in C#, follow the given steps:
 
-**1.** Add the following required assembly references to the project: 
+1. Add the following required assembly references to the project: 
 
-  * Syncfusion.Grid.Base.dll
-  * Syncfusion.Grid.Windows.dll
-  * Syncfusion.Shared.Base.dll
-  * Syncfusion.Shared.Windows.dll
-  * Syncfusion.Tools.Base.dll
-  * Syncfusion.Tools.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
+    * Syncfusion.Tools.Base.dll
+    * Syncfusion.Tools.Windows.dll
 
-**2.** Include the **Syncfusion.Windows.Forms.Tools** namespace. 
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace. 
 
+  {% capture codesnippet1 %}​
   {% tabs %}
   {% highlight C# %}
   using Syncfusion.Windows.Forms.Tools;
@@ -68,9 +69,12 @@ To add the control manually in C#, follow the given steps:
   Imports Syncfusion.Windows.Forms.Tools
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-**3.** Create a NavigationDrawer instance, and add it to the window.
+3. Create a NavigationDrawer instance, and add it to the window.
 
+  {% capture codesnippet2 %}​
   {% tabs %}
   {% highlight C# %}
   NavigationDrawer navigationDrawer1 = new NavigationDrawer();
@@ -81,9 +85,12 @@ To add the control manually in C#, follow the given steps:
   Me.Controls.Add(navigationDrawer1)
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-**4.** Set the width and height to the drawer view.
+4. Set the width and height to the drawer view.
 
+  {% capture codesnippet3 %}​
   {% tabs %}
   {% highlight C# %}
   this.navigationDrawer1.DrawerWidth = this.Width/4;
@@ -94,11 +101,14 @@ To add the control manually in C#, follow the given steps:
   Me.navigationDrawer1.DrawerHeight = Me.Height
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-**5.** Add header to the NavigationDrawer.
+5. Add header to the NavigationDrawer.
 
  Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer.
 
+  {% capture codesnippet4 %}​
   {% tabs %}
   {% highlight C# %}
   DrawerHeader drawerHeader1 = new DrawerHeader();
@@ -109,12 +119,15 @@ To add the control manually in C#, follow the given steps:
   Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
   {% endhighlight %}
   {% endtabs %}
+  {% endcapture %}
+  {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
  ![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
 
-**6.** Add MenuItems to NavigationDrawer.
+6. Add MenuItems to NavigationDrawer.
 
 Create a [DrawerMenuItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerMenuItem.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in the NavigationDrawer class.
+
 
 {% tabs %}
 {% highlight C# %}
@@ -142,6 +155,7 @@ Me.navigationDrawer1.Items.Add(Me.drawerMenuItem3)
 Me.navigationDrawer1.Items.Add(Me.drawerMenuItem4)
 {% endhighlight %}
 {% endtabs %}
+
 
 ![wf naigation drawer menu items added](Getting-Started_images/wf-navigation-drawer-menuitems-added-by-code.png)
 

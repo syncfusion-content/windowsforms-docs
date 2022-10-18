@@ -20,11 +20,11 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding the ColorUI control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [ColorUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ColorUIControl.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. The [ColorUI](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ColorUIControl.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.Base
+   * Syncfusion.Shared.Base
 
 ![Drag and drop ColorUI from toolbox](ColorUI_images/ColorUI_toolbox.png)
 

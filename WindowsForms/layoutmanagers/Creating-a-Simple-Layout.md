@@ -72,7 +72,7 @@ The following steps will help you to create a simple layout for button controls,
 * Add the Syncfusion.Shared.Base and Syncfusion.Tools.Windows assemblies to your application.
 * Include the required namespace.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -89,10 +89,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Create variables for the Child controls (Buttons) and Layout Manager (Border Layout).
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -130,9 +132,12 @@ Private layout As Syncfusion.Windows.Forms.Tools.BorderLayout
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Declare instances for the Child controls (Buttons).
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -166,9 +171,12 @@ btn5 = New Button()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 * Add the Child controls (Buttons) to the form.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -187,9 +195,12 @@ Me.Controls.AddRange(New Button() {btn1,btn2,btn3,btn4,btn5})
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * Declare an instance for the Layout Manager (Border Layout).
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -207,9 +218,12 @@ layout = New Syncfusion.Windows.Forms.Tools.BorderLayout()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 * Set the Container control for the Layout Manager (Border Layout).
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -235,9 +249,12 @@ Me.layout.ContainerControl = Me
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 * Set the margin between the client rectangle and the layout rectangle.
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -268,9 +285,12 @@ Me.layout.TopMargin = 20
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 * Set the spacing between the layout border and the components.
 
+{% capture codesnippet8 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -292,9 +312,12 @@ Me.layout.VGap = 20
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 * Set the text and border position for the Child controls (Buttons).
 
+{% capture codesnippet9 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -348,6 +371,8 @@ Me.layout.SetPosition(Me.btn5,Syncfusion.Windows.Forms.Tools.BorderPosition.Cent
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 ![Aligning child controls at different sides](Overview_images/Overview_img7.jpeg) 
 

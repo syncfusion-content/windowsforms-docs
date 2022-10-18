@@ -42,14 +42,14 @@ We can Implement Tree navigator in Two ways they are,
 
 ## Adding Control Via Designer
 
-1.	Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
-2.	Then Drag and Drop the TreeNavigator control from the toolbox into the designer page.
+1. Create a new Windows Forms Application Project in VS IDE through New Project Wizard.
+2. Then Drag and Drop the TreeNavigator control from the toolbox into the designer page.
 
 
 ![Adding Tree Navigator Control Via Designer](Getting-Started_images/DragDrop.png)
 
 
-3.	Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application with the required libraries.
+3. Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application with the required libraries.
 
 
 ![Drag Drop the TreeNavigator](Getting-Started_images/AfterDragDrop.png)
@@ -59,7 +59,7 @@ We can Implement Tree navigator in Two ways they are,
 ## Adding control manually in C#
 TreeNavigator can be added through code-behind by following the below steps.
 
-1.	Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools which are needed for the Control.
+1. Include the namespaces Syncfusion.Windows.Forms and Syncfusion.Windows.Forms.Tools which are needed for the Control.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ TreeNavigator can be added through code-behind by following the below steps.
 {% endhighlight %}
 {% endtabs %}
 
-2.	To add TreeNavigator Control to a Windows Forms Application through code, Create an instance of the TreeNavigator control and add it to the Form.
+2. To add TreeNavigator Control to a Windows Forms Application through code, Create an instance of the TreeNavigator control and add it to the Form.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,13 +155,13 @@ treemenuitem3.Text = "Downloads"
 
 
 The following steps allows you to add TreeMenuItem to the TreeNavigator through Designer,
-1.	Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application, you can see the Smart Tag on the top right corner.
+1. Once you drag drop the TreeNavigator into the designer page, the TreeNavigator will be added successfully into the application, you can see the Smart Tag on the top right corner.
 
-2.	Click the Smart Tag button and select the items property from the listed properties.
+2. Click the Smart Tag button and select the items property from the listed properties.
 
 ![Click Smart Tag button](Getting-Started_images/ThroughDesigner.png)
 
-3.	Then add  items as shown below.
+3. Then add  items as shown below.
    
 ![Adding the Items](Getting-Started_images/ThroughDesigner2.png)
 

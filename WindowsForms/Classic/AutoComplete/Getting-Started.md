@@ -53,7 +53,7 @@ The embedded AutoComplete control in a ComboBoxAutoComplete control is exposed t
 
 1. Include the required namespace.
  
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -67,9 +67,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %} 
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create an instance of the ComboBoxAutoComplete control class.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -85,9 +88,12 @@ Me.comboBoxAutoComplete1 = New Syncfusion.Windows.Forms.Tools.ComboBoxAutoComple
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Set data source and add the control to the form.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -107,6 +113,9 @@ Me.Controls.Add(Me.comboBoxAutoComplete1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
+
 
 4. Run the application.
 

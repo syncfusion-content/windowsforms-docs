@@ -569,7 +569,8 @@ End Sub
 ### Printing the Client Area in Form
 The GridGroupingControl does not have built-in support for printing the client application form. It can be done by using the `PrintDocument` class and following customization,
 
-1.Call the [BitBlt](https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function i.e. unmanaged code in a managed application. 
+1. Call the [BitBlt](https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function   ie. unmanaged code in a managed application. 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using System.Runtime.InteropServices;
@@ -588,9 +589,12 @@ Private Shared Function BitBlt(ByVal hdc As IntPtr, ByVal nX As Integer, ByVal n
 End Function
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Draw an image of application form using the [PrintPage](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=net-5.0) event.
+2. Draw an image of application form using the [PrintPage](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=net-5.0) event.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 PrintDocument printDocument = new PrintDocument();
@@ -631,6 +635,8 @@ void printDocument_PrintPage(Object sender, PrintPageEventArgs e)
    e.Graphics.DrawImage(image, 0, 0)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Printing_img9](Printing_images/Printing_img9.png)
 

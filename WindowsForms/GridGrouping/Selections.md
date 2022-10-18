@@ -379,13 +379,13 @@ Disables the cell selection.</td></tr>
 
 Follow the steps below to create a sample that shows the above selections.
 
-1.Create a grid grouping control and bind it to any data table. This example uses the grouping grid that has been bound to the Statistics Table from Northwind.MDB.
+1. Create a grid grouping control and bind it to any data table. This example uses the grouping grid that has been bound to the Statistics Table from Northwind.MDB.
 
-2.Setup the designer to add options for different selection types. Add six radio buttons to the form to enable selection options Cell Only, Row Only, Column Only, Row and Column, Default and None.
+2. Setup the designer to add options for different selection types. Add six radio buttons to the form to enable selection options Cell Only, Row Only, Column Only, Row and Column, Default and None.
 
-3.Set the required flags with respect to the current cell.
+3. Set the required flags with respect to the current cell.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.TableModel.Options.RefreshCurrentCellBehavior = GridRefreshCurrentCellBehavior.RefreshCell;
@@ -396,9 +396,11 @@ Me.gridGroupingControl1.TableModel.Options.RefreshCurrentCellBehavior = GridRefr
 Me.gridGroupingControl1.TableModel.Options.ShowCurrentCellBorderBehavior = GridShowCurrentCellBorder.GrayWhenLostFocus
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Handle PrepareViewStyleInfo event to focus the current selection according to the chosen selection type. It also includes the code to highlight the current selection. This works for CellOnly, RowOnly, ColumnOnly, and Row and Column types.
-
+4. Handle PrepareViewStyleInfo event to focus the current selection according to the chosen selection type. It also includes the code to highlight the current selection. This works for CellOnly, RowOnly, ColumnOnly, and Row and Column types.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.TableControl.PrepareViewStyleInfo += new GridPrepareViewStyleInfoEventHandler(TableControl_PrepareViewStyleInfo);
@@ -531,6 +533,8 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 Enable ListBoxSelection mode to expose the default selection.
 
@@ -831,7 +835,7 @@ This example shows how to loop through SelectedRanges collection to retrieve inf
 
 1. Turn on the model-based selection. It is enabled by setting AllowSelection property to a value other than None. You could set the selection colors as well.
 
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}  
 this.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBlend | GridSelectionFlags.Row;
@@ -842,9 +846,11 @@ Me.gridGroupingControl1.TableOptions.AllowSelection = GridSelectionFlags.AlphaBl
 Me.gridGroupingControl1.TableModel.Options.AlphaBlendSelectionColor = Color.Red
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.The code below loops through the ranges of all the selections and writes the record values that have been selected to a listbox control. 
-
+2. The code below loops through the ranges of all the selections and writes the record values that have been selected to a listbox control. 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %} 
 
@@ -878,8 +884,10 @@ End If
 Next range
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.Here is a sample screenshot.
+3. Here is a sample screenshot.
 
 ![Selections_img21](Selections_images/Selections_img21.jpeg)
 

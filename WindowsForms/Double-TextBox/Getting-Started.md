@@ -35,9 +35,9 @@ The DoubleTextBox control can be added to an application by dragging it from the
 
 To add the control manually in C#, follow the given steps:
 
-**1.**	Add the **Syncfusion.Shared.Base** assembly reference to the project: 
+1. Add the **Syncfusion.Shared.Base** assembly reference to the project: 
  
-**2.**	Include the **Syncfusion.Windows.Forms.Tools** namespace.
+2. Include the **Syncfusion.Windows.Forms.Tools** namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -51,7 +51,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-**3.**	Create a DoubleTextBox instance, and add it to the window.
+3. Create a DoubleTextBox instance, and add it to the window.
 
 {% capture codesnippet2 %}
 {% tabs %}

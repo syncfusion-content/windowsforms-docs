@@ -25,15 +25,15 @@ To create MDI parent form and MDI child form follow the below steps
 1. Set up an MDIParent form by setting Form.IsMdIContainer property to true.
 2. Add menu items, 'Open' and 'Exit', under File menu bar using MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-code) to add menu items to the menu.
 
-![Menu item with simple menu items](MDI-Child-Forms-images/form_with_menu_items.jpeg)
+   ![Menu item with simple menu items](MDI-Child-Forms-images/form_with_menu_items.jpeg)
 
 3. Create a new form named TextEditor, with the controls FontListBox and ColorUIControl. We will consider this form as the MDIChildForm.
 
-![Child form with controls](MDI-Child-Forms-images/MDI_child_form.jpeg)
+   ![Child form with controls](MDI-Child-Forms-images/MDI_child_form.jpeg)
 
 4. Drag-and-Drop ChildFrameBarManager to the child form and add necessary menu items. Adding menu items to ChildFrameBarManager is similar to MainFrameBarManager. You can refer [this topic](https://help.syncfusion.com/windowsforms/menus/adding-menu-items-via-designer) to add menu items to the menu.
 
-![Child form with menu items](MDI-Child-Forms-images/child_form_with_menu_items.jpeg)
+   ![Child form with menu items](MDI-Child-Forms-images/child_form_with_menu_items.jpeg)
 
 ## MDI merging
 

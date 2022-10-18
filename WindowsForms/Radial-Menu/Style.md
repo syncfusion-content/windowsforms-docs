@@ -12,15 +12,15 @@ The RadialMenu control has rich set of themes for professional representation. Y
 
 It has the below themes.
 
-•	Default
+    •	Default
 
-•	Office2016Colorful
+    •	Office2016Colorful
 
-•	Office2016White
+    •	Office2016White
 
-•	Office2016DarkGray
+    •	Office2016DarkGray
 
-•	Office2016Black
+    •	Office2016Black
 
 The following code example allows you to set the style for the RadialMenu.
 

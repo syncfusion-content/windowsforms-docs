@@ -43,7 +43,7 @@ N> In normal scrolling, the hidden rows and columns are considered as existing r
 ### Optimized Pixel Scrolling
 The pixel scrolling is not optimized for large row scenarios. To optimize the pixel scrolling set create the derived GridControl and override a couple of virtual methods to make it perform well. Also use the binary tree structures to quickly get the row index for an absolute pixel position and vice versa.
 
-The following methods are need to be override in the derived GridControl for Optimized Vertical scrolling,
+1. The following methods are need to be override in the derived GridControl for Optimized Vertical scrolling,
 
 * [RowIndexToVScrollPixelPos](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_RowIndexToVScrollPixelPos_System_Int32_)(int rowIndex)
 * [VScrollPixelPosToRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_VScrollPixelPosToRowIndex_System_Int32_System_Int32__System_Int32__)(int pixelPos, out int rowIndex, out int pixelDelta)
@@ -128,8 +128,8 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-2.Assign the New custom control to the GridControl.
-
+2. Assign the New custom control to the GridControl.
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 //Sets the derived GridControl to the grid.
@@ -140,9 +140,11 @@ this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 Me.gridControl1 = New VerticalScrollOptimization.DerivedGridControl()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3. Set the `VScrollPixel` property to true.
-
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Enables pixel scrolling.
@@ -153,6 +155,8 @@ this.gridControl1.VScrollPixel = true;
 Me.gridControl1.VScrollPixel = True
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Scrolling Options
 This topic will discuss about the properties and methods available for scrolling in GridControl. 

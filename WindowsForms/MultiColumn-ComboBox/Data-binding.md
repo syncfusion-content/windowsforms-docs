@@ -135,6 +135,7 @@ This section deals with populating [MultiColumnComboBox](https://help.syncfusion
 3. Select DataSet from templates pane, give the name (Say new dataset.XSD) and click Open. This will add file by name new dataset.XSD to the solution. 
 4. Add the XML Schema as shown below. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight xaml %}
 
@@ -163,10 +164,13 @@ This section deals with populating [MultiColumnComboBox](https://help.syncfusion
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 5. Validate the written Schema. 
 6. Add an XML file (Say new dataset.xml) with the following data. 
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight xaml %}
  
@@ -212,9 +216,12 @@ This section deals with populating [MultiColumnComboBox](https://help.syncfusion
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 7. Write a method to load data from XML file. 
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -255,9 +262,12 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 8. Load the values in the Form's Load event.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -276,6 +286,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![Populating MultiColumnComboBox](Overview_images/Overview_img327.jpeg)
 

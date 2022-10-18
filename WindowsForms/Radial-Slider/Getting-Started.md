@@ -21,9 +21,9 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/visual-st
 
 The following steps describe how to create an **RadialSlider** control via the designer.
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
+2. Add the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -34,15 +34,15 @@ The following steps describe how to create an **RadialSlider** control via the d
 
 ![Search RadialSlider in ToolBox](Getting-Started_images/RadialSlider-img1.png) 
 
-3) Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
+3. Set the desired properties for [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control using the **Properties** dialog.
 
 ## Adding the RadialSlider control via code
 
 The following steps explain how to create a **RadialSlider** control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Grid.Base
 * Syncfusion.Grid.Windows
@@ -51,8 +51,9 @@ The following steps explain how to create a **RadialSlider** control programmati
 * Syncfusion.Tools.Base
 * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -68,9 +69,12 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
+4. Create an instance of the [RadialSlider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RadialSlider.html) control, and then add it to the form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight C# %}
@@ -90,6 +94,8 @@ Me.Controls.Add(radialSlider1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![RadialSlider Control added in form](Getting-Started_images/RadialSlider-img2.png)
 

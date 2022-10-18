@@ -6754,6 +6754,7 @@ This section illustrates how to group the stacking series with another stacking 
 
 The below example demonstrates the code on setting the StackingGroup for the series in the Chart control.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -6812,6 +6813,8 @@ ser3.StackingGroup = "FirstGroup"
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Chart Series](Chart-Series_images/Chart-Series_img119.png)
 
@@ -8370,6 +8373,7 @@ You can set the co-ordinates (XValue and the YValue property), symbols and their
 
 * Creating and Customizing the Custom Point.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -8464,11 +8468,14 @@ chartCustomPoint1.Font.Size = 10F
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> You can also customize a custom point symbol using Symbol property.
 
 * Adding Custom Point to the Chart.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -8487,6 +8494,8 @@ Me.chartControl1.CustomPoints.Add(cp)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 _Custom point types_
 

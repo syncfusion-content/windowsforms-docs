@@ -759,8 +759,8 @@ To customize the filter icon for column headers, the cell model and cell rendere
 
 The following is the process of creating cell model and cell renderer for customizing the column headers filter icon,
 
-*	Creating cell model.
-
+* Creating cell model.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c#%}
 
@@ -798,10 +798,12 @@ Public Class GridExcelFilterCellModelAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 * Creating cell renderer.
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c#%}
 class GridExcelFilterCellRendererAdv : GridExcelFilterCellRenderer
@@ -829,10 +831,11 @@ Friend Class GridExcelFilterCellRendererAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * Replacing the cell renderer for default `ColumnHeaderCell`.
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c#%}
 //To enable the custom ColumnHeaderCell cell type.
@@ -843,6 +846,8 @@ gridGroupingControl1.TableControl.CellRenderers["ColumnHeaderCell"] = new GridEx
 gridGroupingControl1.TableControl.CellRenderers("ColumnHeaderCell") = New GridExcelFilterCellRendererAdv(gridGroupingControl1.TableControl, New GridExcelFilterCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
  
 ![Customizing Filter Icon for Column Headers](Filtering_images/Filtering_img27.png)
  
@@ -855,8 +860,8 @@ To customize the filter icon for stacked headers, the cell model and cell render
  
 The following is the process of creating custom cell model and cell renderer for customizing the stacked headers filter icon,
 
-*	Creating cell model.
-
+* Creating cell model.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellModelAdv : StackedHeaderCellModel
@@ -893,9 +898,11 @@ Public Class StackedHeaderCellModelAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 * Creating cell renderer.
-
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c#%}
 public class StackedHeaderCellRendererAdv : StackedHeaderCellRenderer
@@ -929,9 +936,11 @@ Public Class StackedHeaderCellRendererAdv
 End Class
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 * Replacing the cell renderer for `CustomStackedHeaderCell`.
-
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c#%}
 //To enable the custom StackedHeaderCell cell type.
@@ -942,6 +951,8 @@ gridGroupingControl1.TableControl.CellRenderers["CustomStackedHeaderCell"] = new
 gridGroupingControl1.TableControl.CellRenderers("CustomStackedHeaderCell") = New StackedHeaderCellRendererAdv(Me.gridGroupingControl1.TableControl, New StackedHeaderCellModelAdv(gridGroupingControl1.TableModel, excelFilter), excelFilter)
 {% endhighlight%}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Customizing Filter Icon for StackedHeaders](Filtering_images/Filtering_img28.png)
 

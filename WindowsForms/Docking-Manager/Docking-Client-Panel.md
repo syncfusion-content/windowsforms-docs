@@ -48,6 +48,7 @@ Indicates the border style of the control.</td></tr>
 
 8. The docking client panel control can be added to the non-MDI forms using the following code snippet.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -143,6 +144,8 @@ Me.dockingClientPanel1.ResumeLayout(False)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![DockingClientPanel1](DockingClientPanel_images/DockingClientPanel1.png) 
 

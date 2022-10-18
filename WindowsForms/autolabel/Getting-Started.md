@@ -24,26 +24,26 @@ In this walk through, users will create WinForms application that contains [Auto
 Create new Windows Forms Project in Visual Studio to display [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) Control.
 
 ### Adding the AutoLabel control via designer
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
+2. The [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control can be added to an application by dragging it from the toolbox to the design view. The following dependent assemblies will be added automatically.
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
   ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/Overview_img5.jpg) 
 
-3) Set the desired properties for the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control using the **Properties** dialog.
+3. Set the desired properties for the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control using the **Properties** dialog.
 
 ### Adding the AutoLabel control in Code
 In order to add control manually, do the below steps,
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly reference to the project.
+2. Add the following assembly reference to the project.
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -62,7 +62,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Set the following properties and add it to the form.
+4. Create an instance of the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Set the following properties and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -108,9 +108,9 @@ Me.Controls.Add(Me.autoLabel1)
 
 ## Labeling a control
 
-1) Add one control to the form. For example, [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html).
+1. Add one control to the form. For example, [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html).
 
-2) Right-click on the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Choose **Properties**  and select `LabeledControl` property. Now, you can choose newly added **TextBoxExt** control.
+2. Right-click on the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control. Choose **Properties**  and select `LabeledControl` property. Now, you can choose newly added **TextBoxExt** control.
 
 {% capture codesnippet3 %}
 {% tabs %}

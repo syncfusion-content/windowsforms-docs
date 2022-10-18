@@ -16,13 +16,13 @@ The [WizardControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windo
 
 ## Key features
 
-**Extensive design-time support** - Provides rich Design-Time features for code less configuration.
+    .Extensive design-time support - Provides rich Design-Time features for code less configuration.
 
-**Right-to-left** - Supports to align all the control elements in right-to-left layout.
+    .Right-to-left - Supports to align all the control elements in right-to-left layout.
 
-**Validation** - Provides option to set page processing validation for wizard pages.
+    .Validation - Provides option to set page processing validation for wizard pages.
 
-**Search engine friendly** - Provides a consistent look and feel across all major browsers.
+    .Search engine friendly - Provides a consistent look and feel across all major browsers.
 
-**Events** - Provides handful events which helps you to follow the state of the control at run time and implement custom pages sequence.
+    .Events- Provides handful events which helps you to follow the state of the control at run time and implement custom pages sequence.
 

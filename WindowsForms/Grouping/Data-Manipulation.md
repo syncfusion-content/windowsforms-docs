@@ -19,6 +19,7 @@ Another collection that is part of the schema information in the Engine.TableDes
 
 1. In the Console Application used in lessons 1 and 2, comment out all the code that is in the Main method and add the following code to create a data object and set it into the Grouping Engine.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 static void Main(string[] args)
@@ -61,7 +62,8 @@ groupingEngine.SetSourceList(list)
 End Sub 
 {% endhighlight %}
 {% endtabs %}
-  
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}  
 
 2. You are now ready to apply a filter to the data. Say for example you want to see only those items whose property D has the value d1. You must observe that D is a string that has non-numeric values. So, in this case you will need to use one of the string comparison operators (LIKE or MATCH) in your filter condition.
 3. To add a filter condition, you will need to add a RecordFilterDescriptor to the Engine.TableDescriptor.RecordFilters collection. 
@@ -81,6 +83,7 @@ Do the following steps:
 
 5. Note that the constructor on theRecordFilterDescription takes an expression, "[D] LIKE 'd1'". This expression will be _True_ only for those items in the list where property D has the value d1.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 // Display the data before filtering.
@@ -152,12 +155,14 @@ Next rec
 Console.ReadLine() 
 {% endhighlight %}
 {% endtabs %}
- 
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
    ![Data-Manipulation_images2](Data-Manipulation_images/Data-Manipulation_img2.png)
+
 6. You can apply more complex filters. Here is the code that will remove any existing filters and filter the property D being d1 or property b equal 2. Note here that since you expect property B to display only numeric data you must use the = operator in the comparison.
 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %} 
 groupingEngine.TableDescriptor.RecordFilters.Clear();
@@ -199,10 +204,10 @@ Next rec
 Console.ReadLine() 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
    ![Data-Manipulation_images3](Data-Manipulation_images/Data-Manipulation_img3.png)
-
 
 Filtering is applied to the data displayed in the console.
 
@@ -214,6 +219,7 @@ To add an expression, you need to create an ExpressionFieldDescriptor and add it
 
 1. In the Console Application, comment out all the code that is in the Main method and add this code to create a data object and set it into the GroupingEngine.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 // Create an array list of random MyObjects.
@@ -249,10 +255,12 @@ Dim groupingEngine As New Engine()
 groupingEngine.SetSourceList(list)
 {% endhighlight %}
 {% endtabs %}
- 
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
 2. Now you must add code to list the data, add an expression property and then display the value of the expression. To retrieve the value, you must use the Record.GetValue method by passing it as the name of the expression that you had assigned when it was created.
 
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 // Display the data before filtering.
@@ -311,6 +319,8 @@ Console.WriteLine(rec.GetValue("MultipleOfB"))
 Next rec
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
    ![Data-Manipulation_images4](Data-Manipulation_images/Data-Manipulation_img4.png)
 
@@ -454,8 +464,10 @@ N> We are going to use the third function in this section to perform custom sort
 The following steps illustrate how to do custom sorting using the IComparer property:
 
 1. Here, you must create a class that implements IComparer which can accept value such as ax, where x is a digit which is used to do the comparison. This leads to numerical sorting, ignoring the leading character.
+
 2. Add this code immediately following the end of the Class1 code.
 
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 public class AComparer : IComparer
@@ -537,11 +549,12 @@ End Function
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
  
-
-
 3. Add this code to the Main method to use this custom comparer to sort column A.
 
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 // Create an array list of random MyObjects.
@@ -650,6 +663,8 @@ Next rec
 Console.ReadLine() 
 {% endhighlight %}   
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
    ![Data-Manipulation_images7](Data-Manipulation_images/Data-Manipulation_img7.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How-to-Optimize-Pixel-Scrolling-in-GridControl | Windows Forms | Syncfusion
-description: how to optimize pixel scrolling in gridcontrol
+title: Optimize-Pixel-Scrolling-in-GridControl | Windows Forms | Syncfusion
+description: Learn here all about how to optimize pixel scrolling in gridcontrol using Syncfusion Windows Forms and more.
 platform: windowsforms
 control: Grid
 documentation: ug
@@ -18,7 +18,7 @@ Follow the steps that are given below to do this.
    * RowIndexToVScrollPixelPos(int rowIndex)
    * VScrollPixelPosToRowIndex(int pixelPos, out int rowIndex, out int pixelDelta)
    * GetVScrollPixelHeight()
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public class DerivedGridControl : GridControl 
@@ -106,9 +106,11 @@ End Sub
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Assign the new custom control to the GridControl.
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 				
@@ -122,9 +124,11 @@ this.gridControl1 = new VerticalScrollOptimization.DerivedGridControl();
 Me.GridControl1 = New VerticalScrollOptimization.DerivedGridControl
 {% endhighlight %} 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Set the VScrollPixel property to TRUE.
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -138,4 +142,6 @@ this.gridControl1.VScrollPixel = true;
 Me.GridControl1.VScrollPixel = True
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
    

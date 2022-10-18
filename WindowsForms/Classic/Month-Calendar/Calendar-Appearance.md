@@ -175,23 +175,23 @@ The MonthCalenderAdv control for Windows Forms Supports for below listed Visual 
 
 The styles are built in for MonthCalenderAdv.
 
-•	Default
+    •	Default
 
-•	Office2007
+    •	Office2007
 
-•	Office2007Outlook
+    •	Office2007Outlook
 
-•	Office2010
+    •	Office2010
 
-•	Metro
+    •	Metro
 
-•	Office2016Colorful
+    •	Office2016Colorful
 
-•	Office2016DarkGray
+    •	Office2016DarkGray
 
-•	Office2016Black
+    •	Office2016Black
 
-•	Office2016White
+    •	Office2016White
 
 **Default**
 

@@ -27,7 +27,7 @@ The following sample displays DataBound Grid within Grid Record Navigation contr
 
    
 
-   N> A DataSet is generated.
+         N> A DataSet is generated.
 
 2. Step 2: Drag Grid Record Navigation control onto the form.
 
