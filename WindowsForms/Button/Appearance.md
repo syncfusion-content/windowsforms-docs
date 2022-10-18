@@ -175,16 +175,19 @@ The SfButton with rounded rectangle shape can be implemented programmatically by
 To draw the rounded rectangle shape for the SfButton follow the steps:
 
 1. Raise the Paint event of the SfButton.
-
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 //Raises the paint event of the SfButton
 sfButton1.Paint += sfButton1_Paint;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Calculate the rounded rectangle area for the client area of the button, and set to the region of the SfButton. Draw the border with calculated rounded rectangle area. The Paint event method is as follows.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 private void sfButton1_Paint(object sender, PaintEventArgs e)
@@ -202,6 +205,8 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![SfButton_img17](SfButton_images/SfButton_img17.jpeg)
 

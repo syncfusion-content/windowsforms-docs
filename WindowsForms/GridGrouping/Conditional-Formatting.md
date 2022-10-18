@@ -16,11 +16,17 @@ The following steps are used to add the conditional formatting through the edito
   
   ![Conditional-Formatting_img1](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
-2. Click the `Add` button of the editor. It will add a new conditional format to the collection![Conditional-Formatting_img2](Conditional-Formatting_images/Conditional-Formatting_img2.png)
+2. Click the `Add` button of the editor. It will add a new conditional format to the collection
+   
+    ![Conditional-Formatting_img2](Conditional-Formatting_images/Conditional-Formatting_img2.png)
 
-3. Add the expression to the Expression filed option. (Ex: [ColumnName] like ‘A*’) ![Conditional-Formatting_img3](Conditional-Formatting_images/Conditional-Formatting_img3.png)
+3. Add the expression to the Expression filed option. (Ex: [ColumnName] like ‘A*’) 
+    
+    ![Conditional-Formatting_img3](Conditional-Formatting_images/Conditional-Formatting_img3.png)
 
-4. Set the style for the records that satisfies the filter criteria by using the Appearance option![Conditional-Formatting_img4](Conditional-Formatting_images/Conditional-Formatting_img4.png)
+4. Set the style for the records that satisfies the filter criteria by using the Appearance option
+
+    ![Conditional-Formatting_img4](Conditional-Formatting_images/Conditional-Formatting_img4.png)
 
 5.  Click the `OK` button and run the application. The conditional formatting will be applied to the records as of follows,
 

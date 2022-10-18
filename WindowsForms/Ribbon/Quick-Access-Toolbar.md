@@ -250,7 +250,7 @@ Like MS Outlook we can now give separate icons for the Items added in QuickAcces
 
 Follow the below steps to provide separate QAT image for the ToolstripItems.
 
-1.	Create an instance for the QATImageProvider
+1. Create an instance for the QATImageProvider
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -272,7 +272,7 @@ Dim qatImageProvider As QATImageProvider = New QATImageProvider(Me.ribbonControl
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.	Set the image for the ToolstripItems.
+2. Set the image for the ToolstripItems.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -301,7 +301,7 @@ qatImageProvider.SetQATImage(Me.newToolStripButton, img)
 
 ![Shows the QAT with different icons of ToolStripItem](Quick_Access_Toolbar_Images/Quick-Access-Toolbar_img8.jpg)
 
-3.	To remove the QAT image set for the ToolstripItems, set null for the image in the QATImageProvider.
+3. To remove the QAT image set for the ToolstripItems, set null for the image in the QATImageProvider.
 
 When no separate icon is added to the ribbon item, the default icon of that ribbon item will be added in QAT.
 

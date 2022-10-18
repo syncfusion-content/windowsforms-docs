@@ -11,8 +11,8 @@ documentation: ug
 
 To show multiple Images in a cell, you need to handle CellDrawn Event. Follow the steps that are given below to achieve this.
 
-1.Sets the CellType to GridCellTypeName.Image.
-
+1. Sets the CellType to GridCellTypeName.Image.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -28,9 +28,11 @@ Me.gridControl1(3,3).CellType = GridCellTypeName.Image
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.In the CellDrawn EventHandler, draw the combined bitmap using DrawImage function.
-
+2. In the CellDrawn EventHandler, draw the combined bitmap using DrawImage function.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -58,3 +60,5 @@ End Sub
 
 {% endhighlight  %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}

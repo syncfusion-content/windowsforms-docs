@@ -13,29 +13,30 @@ Localization is the process of translating the application resources into differ
 ## Localize at Sample Level
 To localize the SfForm based on `CurrentUICulture` using resource files, follow the below steps.
 
-1) Create new folder and named as Resources in your application.
+1. Create new folder and named as Resources in your application.
 
-2) Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
+2. Add the default resource file of SfForm into Resources folder. You can download the `Syncfusion.Shared.Base.resx` [here](https://github.com/syncfusion/winforms-controls-localization-resx-files/blob/master/Syncfusion.Shared.Base/Syncfusion.Shared.Base.resx).
 
 ![Added default resource file of winforms sfform shown in solution explorer](Localization_images/Localization_img1.png) 
 
-3) Right-click on the Resources folder, select **Add** and then **NewItem**.
+3. Right-click on the Resources folder, select **Add** and then **NewItem**.
 
-4) In Add New Item wizard, select the **Resource File** option and name the filename as Syncfusion.Shared.Base.&lt;culture name&gt;.resx. For example, have to give name as Syncfusion.Shared.Base.de-DE.resx for German culture.
+4. In Add New Item wizard, select the **Resource File** option and name the filename as Syncfusion.Shared.Base.&lt;culture name&gt;.resx. For example, have to give name as Syncfusion.Shared.Base.de-DE.resx for German culture.
 
 ![Adding new resource file through Add New Item wizard](Localization_images/Localization_img2.png)
 
-5) The culture name that indicates the name of language and country.
-6) Now, select `Add` option to add the resource file in **Resources** folder.
+5. The culture name that indicates the name of language and country.
+6. Now, select `Add` option to add the resource file in **Resources** folder.
 
 ![Added resource file shown in solution explorer](Localization_images/Localization_img3.png) 
 
-7) Add the Name/Value pair in Resource Designer of Syncfusion.Shared.Base.de-DE.resx file and change its corresponding value to corresponding culture.
+7. Add the Name/Value pair in Resource Designer of Syncfusion.Shared.Base.de-DE.resx file and change its corresponding value to corresponding culture.
 
 ![Modifying the resources based on culture for localizing winforms sfform](Localization_images/Localization_img4.png) 
 
-8) Now, set the `CurrentCulture` of the Application before the `InitializeComponent` method and Run the sample.
+8. Now, set the `CurrentCulture` of the Application before the `InitializeComponent` method and Run the sample.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 public Form1()
@@ -53,6 +54,8 @@ Public Sub New()
 End Sub  
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Winforms sfform localized with modified resources](Localization_images/Localization_img5.png)
 

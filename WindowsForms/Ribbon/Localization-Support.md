@@ -13,13 +13,13 @@ RibbonControlAdv now supports adaptation of its controls and its details to meet
 
 ## Adding ILocalizationProvider
 
-1.	Include the required namespaces at the beginning of the source file.
+1. Include the required namespaces at the beginning of the source file.
 
-2.	Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
+2. Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.Windows.Forms namespace in the Syncfusion.Shared.Base.dll.
 
-3.	Return the localized versions of the strings corresponding to the string identifiers.
+3. Return the localized versions of the strings corresponding to the string identifiers.
 
-4.	String identifiers are defined in the `ToolsResourceIdentifier` classes in Syncfusion.Tools.Windows
+4. String identifiers are defined in the `ToolsResourceIdentifier` classes in Syncfusion.Tools.Windows
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -40,9 +40,9 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-5.	 Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.
+5. Leave an empty string for the rest of the identifiers that are not involved in the localization. These identifiers are loaded with a default value.
 
-6.	Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
+6. Assign this instance to the Provider property of the LocalizationProvider class before the InitializeComponent call in the constructor of the application.
 
 {% capture codesnippet2 %}​
 {% tabs %}
@@ -63,7 +63,7 @@ LocalizationProvider.Provider = New localization()
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-7.	The Following is an example for localization
+7. The Following is an example for localization
 
 {% tabs %}
 

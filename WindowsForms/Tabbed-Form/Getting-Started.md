@@ -17,9 +17,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/windowsforms/con
 
 The default form can be changed into `SfTabbedForm` by following the given steps:
 
-1) Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.WinForms` assembly.
+1. Create a new Windows Forms application in Visual Studio and refer to the `Syncfusion.Tools.WinForms` assembly.
 
-2) Include the following namespaces to the directives list.
+2. Include the following namespaces to the directives list.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -33,7 +33,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3) Change the base class of your form from `System.Windows.Forms.Form` to `SfTabbedForm`.
+3. Change the base class of your form from `System.Windows.Forms.Form` to `SfTabbedForm`.
 
 {% capture codesnippet2 %}​
 {% tabs %}

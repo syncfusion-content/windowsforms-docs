@@ -286,7 +286,8 @@ N> A foreign-key reference relation allows the user to look up values in a relat
 
 The following code example illustrates the usage of foreign-key relation:
 
-1.Save the location of the `mainTable.Customer` column, it can be swapped after foreign table reference has been set.
+1. Save the location of the `mainTable.Customer` column, it can be swapped after foreign table reference has been set.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //Remember the location of lookup col so it can be swapped out later
@@ -301,8 +302,11 @@ td.VisibleColumns.LoadDefault()
 Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Add foreign table to the Engine's source list.
+2. Add foreign table to the Engine's source list.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView);
@@ -311,8 +315,11 @@ this.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTabl
 Me.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.DefaultView)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Create and setup `RelationKind.ForeignKeyReference` relation. 
+3. Create and setup `RelationKind.ForeignKeyReference` relation. 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 //Set up relation descriptor that defines mapping between main table and foreign table
@@ -329,8 +336,11 @@ rd.RelationKind = RelationKind.ForeignKeyReference 'Foreign key look up
 rd.ChildTableName = lookUpDataTable.TableName ' SourceListSet name for lookup
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Set any optional properties on the relation. 
+4. Set any optional properties on the relation. 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 //Displays column.     
@@ -347,8 +357,11 @@ rd.ChildTableDescriptor.VisibleColumns.Add("CustomerName")
 rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-5.Add relation descriptor to `MainTableDescriptor`.
+5. Add relation descriptor to `MainTableDescriptor`.
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 //Add relation descriptor to MainTableDescriptor
@@ -359,7 +372,11 @@ td.Relations.Add(rd);
 td.Relations.Add(rd)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
+
 6. Replace mainTable.Customer with `foreignTable.CustomerName`
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 string foreignCustomerColInMainTable = rd.Name + "_" + "CustomerName"; 
@@ -370,6 +387,8 @@ Dim foreignCustomerColInMainTable As String = rd.Name & "_" & "CustomerName"
 td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 ![Sorting_img8](Sorting_images/Sorting_img8.jpeg)
 
 **Sample Location**<br/>
