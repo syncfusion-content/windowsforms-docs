@@ -15,7 +15,7 @@ documentation: ug
 
 ## Key features
 
-**Rows and Columns**: Provide an option to customize row and column span of the child controls.
+* **Rows and Columns**: Provide an option to customize row and column span of the child controls.
 
-**HGap and VGap**: Provide an option to set the gaps between child controls such as horizontal and vertical direction.
+* **HGap and VGap**: Provide an option to set the gaps between child controls such as horizontal and vertical direction.
 

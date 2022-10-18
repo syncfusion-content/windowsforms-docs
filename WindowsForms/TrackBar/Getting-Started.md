@@ -19,16 +19,16 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding TrackBarEx control via designer
 
-1) Create a new Windows Forms project in Visual Studio.
+1. Create a new Windows Forms project in Visual Studio.
 
-2) The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
+2. The [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control can be added to an application by dragging it from the toolbox to a design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
 
 ![TrackBarEx control added via designer](TrackBarEx-Getting-Started_images/trackbar-control-added-by-designer.png)
 
@@ -36,18 +36,18 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 To add the control manually in C#, follow the given steps:
 
-1) Create C# or VB application via Visual Studio.
+1. Create C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project: 
+2. Add the following assembly references to the project: 
 
-* Syncfusion.Grid.Base
-* Syncfusion.Grid.Windows
-* Syncfusion.Shared.Base
-* Syncfusion.Shared.Windows
-* Syncfusion.Tools.Base
-* Syncfusion.Tools.Windows
+    * Syncfusion.Grid.Base
+    * Syncfusion.Grid.Windows
+    * Syncfusion.Shared.Base
+    * Syncfusion.Shared.Windows 
+    * Syncfusion.Tools.Base
+    * Syncfusion.Tools.Windows
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -65,7 +65,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
+4. Create an instance of [TrackBarEx](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TrackBarEx.html) control, and add it to the window.
 
 {% capture codesnippet2 %}​
 {% tabs %}

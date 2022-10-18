@@ -51,7 +51,7 @@ To create a node in the Diagram control:
 1. Drag the Diagram control to the windows form.
 2. Press the F7 key to open the *.cs file and enter the following code in the Page_Load function.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -71,6 +71,8 @@ End Sub
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ![Nodes-or-Shapes_img1](Nodes-or-Shapes_images/Nodes-or-Shapes_img1.jpeg)
 

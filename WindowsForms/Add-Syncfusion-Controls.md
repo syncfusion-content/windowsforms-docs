@@ -34,16 +34,16 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 Syncfusion UI for Windows Forms can added at runtime using C# / VB. The following steps helps to add required Essential Windows Forms control through code. For example: **TextBoxExt**.
 
-1.Create a Windows Forms project in Visual Studio and refer to the following assemblies.
+1. Create a Windows Forms project in Visual Studio and refer to the following assemblies.
 
-* Syncfusion.Tools.Base.dll
-* Syncfusion.Tools.Windows.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
+   * Syncfusion.Tools.Base.dll
+   * Syncfusion.Tools.Windows.dll
+   * Syncfusion.Shared.Base.dll
+   * Syncfusion.Shared.Windows.dll
 
-2.Create an instance of **TextBoxExt** using it namespace
+2. Create an instance of **TextBoxExt** using it namespace
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -59,9 +59,12 @@ Dim textBoxExt1 As New Syncfusion.Windows.Forms.Tools.TextBoxExt()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Set Location and Size of the control with require value. Here, set its location as (100,100) and Size as (200,25) through its `Location` and ‘Size’ property respectively.
+3. Set Location and Size of the control with require value. Here, set its location as (100,100) and Size as (200,25) through its `Location` and ‘Size’ property respectively.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -81,8 +84,12 @@ Me.textBoxExt1.Size = New System.Drawing.Size(200, 25)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-4.Add the created instance to the parent form (or the needed layout panels) through its child collection property that named as `Controls`.
+4. Add the created instance to the parent form (or the needed layout panels) through its child collection property that named as `Controls`.
+
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -102,6 +109,8 @@ Me.Controls.Add(Me.textBoxExt1)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images/AddSyncfusionControls_img3.jpeg)
 

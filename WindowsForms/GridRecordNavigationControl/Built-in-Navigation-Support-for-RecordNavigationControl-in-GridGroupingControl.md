@@ -72,6 +72,7 @@ Follow the steps to add navigation bar:
 
 1. Enable navigation bar by setting the ShowNavigationBar property to true. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
  this.gridGroupingControl1.ShowNavigationBar = true;
@@ -81,9 +82,12 @@ Follow the steps to add navigation bar:
 Me.gridGroupingControl1.ShowNavigationBar = True
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Call the methods for navigation bar i.e. MoveFirst(), MoveLast(), MoveNext(), and MovePrevious() methods.  
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 //This property should set to true to show navigation bar.      
@@ -108,5 +112,7 @@ Me.gridGroupingControl1.RecordNavigationBar.MoveNext()'This method is used to na
 Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
    
    ![Builtin_images1](Builtin_images/Builtin_img1.png)

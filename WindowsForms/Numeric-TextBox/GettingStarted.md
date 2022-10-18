@@ -21,27 +21,27 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 The following steps describe how to create a **SfNumericTextBox** control via designer:
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) Add the [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. Add the [SfNumericTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfNumericTextBox.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Core.WinForms
-* Syncfusion.SfInput.WinForms
-* Syncfusion.Shared.Base
+    * Syncfusion.Core.WinForms
+    * Syncfusion.SfInput.WinForms
+    * Syncfusion.Shared.Base
 
 ![Drag and drop the SfNumericTextBox control to form](Gettingstarted_images/SfNumericTextBoxAdd.png)
 
 ## Adding SfNumericTextBox control via code
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
-* Syncfusion.Core.WinForms
-* Syncfusion.SfInput.WinForms
-* Syncfusion.Shared.Base
+    * Syncfusion.Core.WinForms
+    * Syncfusion.SfInput.WinForms
+    * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}

@@ -288,11 +288,11 @@ Apart from the Standard styles, you can create custom base styles for nodes, col
 
 For creating base styles follow the below steps,
 
-1.	Open the Base Style Collection Editor by clicking the BaseStyles property in property window.
+1. Open the Base Style Collection Editor by clicking the BaseStyles property in property window.
 
 ![Appearance_img7](Appearance_Images/Appearance_img7.jpg)
 
-2.	By default, there will be three standard styles, for applying new base styles select for which you need to apply the styles in dropdown arrow and click the Add button .
+2. By default, there will be three standard styles, for applying new base styles select for which you need to apply the styles in dropdown arrow and click the Add button .
 
 ![Appearance_img8](Appearance_Images/Appearance_img8.jpg)
 In the image Node Level 1, Node Level 2 and SubItem Style Base style has been added.
@@ -643,12 +643,13 @@ It is the space provided between, the LeftStateImage of the node and node.</td><
 
 To set the left images for all the nodes in MultiColumnTreeView follow the below steps
 
-1.	Create image list and add images in it.
+1. Create image list and add images in it.
 
-2.	Set the newly created image list to the LeftImageList property.
+2. Set the newly created image list to the LeftImageList property.
 
-Through code:
+    Through code:
 
+{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -664,9 +665,12 @@ Me.multiColumnTreeView1.LeftImageList = Me.leftImageList
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.	Now set the LeftImageIndices for each node in MultiColumnTreeView.
+3. Now set the LeftImageIndices for each node in MultiColumnTreeView.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -682,6 +686,8 @@ multiColumnTreeView1.LeftImageIndices = New Integer() {1}
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ![Appearance_img18](Appearance_Images/Appearance_img18.jpg)
 
@@ -728,12 +734,13 @@ It is the space provided between, the RightStateImage of the node and node.</td>
 
 To set the right images for all the nodes in MultiColumnTreeView follow the below steps
 
-1.	Create image list and add images in it.
+1. Create image list and add images in it.
 
-2.	Set the newly created image list to the RightImageList property.
+2. Set the newly created image list to the RightImageList property.
 
-Through code:
+    Through code:
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -749,9 +756,13 @@ Me.multiColumnTreeView1.RightImageList = Me.rightImageList
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-3.	Now set the RightImageIndices for each node in MultiColumnTreeView.
 
+3. Now set the RightImageIndices for each node in MultiColumnTreeView.
+
+{% capture codesnippet4 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -767,6 +778,8 @@ multiColumnTreeView1.RightImageIndices = New Integer() {1}
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![Appearance_img19](Appearance_Images/Appearance_img19.jpg)
 
@@ -826,12 +839,12 @@ It is the image index in StateImageList where the node is expanded.</td></tr>
 
 To set the state images for all the nodes in MultiColumnTreeView follow the below steps
 
-1.	Create image list and add images in it.
+1. Create image list and add images in it.
 
-2.	Set the newly created image list to the property `StateImageList`.
+2. Set the newly created image list to the property `StateImageList`.
 
-Through code:
-
+    Through code:
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -847,9 +860,12 @@ Me.multiColumnTreeView1.StateImageList = Me.stateImageList
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-3.	Now set the OpenImgIndex and ClosedImgIndex for each node in MultiColumnTreeView.
+3. Now set the OpenImgIndex and ClosedImgIndex for each node in MultiColumnTreeView.
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -869,7 +885,9 @@ treeNodeAdv1.CloseImgIndex = 2
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-4.	Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in MultiColumnTreeView.
+4. Repeat step 3 until  set OpenImgIndex and ClosedImgIndex for all the nodes in MultiColumnTreeView.
 
 ![Appearance_img20](Appearance_Images/Appearance_img20.jpg)

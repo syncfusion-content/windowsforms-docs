@@ -61,7 +61,8 @@ Output
 You can set the required height of the channel over which the slider moves using the [ChannelHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ChannelHeight) property. In the following example illustrates the change in height of the channel from 4 to 6. It is measured in pixels.
 
 1. When the Channel height is set to 4 pixels.
-
+   
+   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -71,7 +72,8 @@ You can set the required height of the channel over which the slider moves using
    {% endhighlight %}
 
    {% endtabs %}
-
+   {% endcapture %}
+   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
 
@@ -84,6 +86,7 @@ You can set the required height of the channel over which the slider moves using
 
 2. When the Channel height is set to 6 pixels.
 
+  {% capture codesnippet2 %}
   {% tabs %}
 
    {% highlight C# %}
@@ -95,6 +98,8 @@ You can set the required height of the channel over which the slider moves using
   {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ![channel height](Interactive-Features_images/Interactive-Features_img5.jpeg)
@@ -133,6 +138,7 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
 
 1. When the property is set to No.
 
+   {% capture codesnippet3 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -142,6 +148,8 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
    ![Reversing range slider](Interactive-Features_images/Interactive-Features_img9.jpeg)
@@ -154,6 +162,7 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
 
 2. When the property is set to Yes.
 
+   {% capture codesnippet4 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -165,7 +174,8 @@ The position of the thumbs on the RangeSlider can be reversed by setting the [Ri
    {% endhighlight %}
 
    {% endtabs %}
-
+   {% endcapture %}
+   {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
     ![Reversing range slider](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
@@ -181,6 +191,7 @@ You can set the required size for the slider using the [SliderSize](https://help
 
 1. When the slider is set to 11, 14.
    
+   {% capture codesnippet5 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -192,6 +203,8 @@ You can set the required size for the slider using the [SliderSize](https://help
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 
    ![Slider size](Interactive-Features_images/Interactive-Features_img13.jpeg)
@@ -204,6 +217,7 @@ You can set the required size for the slider using the [SliderSize](https://help
 
 2. When the slider is set to 11,18.
 
+   {% capture codesnippet6 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -215,6 +229,8 @@ You can set the required size for the slider using the [SliderSize](https://help
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 
 ![Slider size](Interactive-Features_images/Interactive-Features_img15.jpeg)
@@ -257,6 +273,7 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
 1. When the [ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ShowTicks) property is set to `true`.
    
+   {% capture codesnippet7 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -266,6 +283,8 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
    {% endhighlight %}
    
    {% endtabs %}
+    {% endcapture %}
+   {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 
    ![Show ticks](Interactive-Features_images/Interactive-Features_img19.jpeg)
@@ -280,6 +299,7 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
 
 2. When the [ShowTicks]([ShowTicks](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.RangeSlider.html#Syncfusion_Windows_Forms_Tools_RangeSlider_ShowTicks)) property is set to `false`.
 
+   {% capture codesnippet8 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -291,6 +311,8 @@ Ticks are indicators placed at regular intervals on the slider for a range defin
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 
 ![Ticks hidden](Interactive-Features_images/Interactive-Features_img21.jpeg)
@@ -329,6 +351,7 @@ The layout of the range slider can be defined using the [Orientation](https://he
 
 1. When Orientation is set to Horizontal.
 
+   {% capture codesnippet9 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -338,6 +361,8 @@ The layout of the range slider can be defined using the [Orientation](https://he
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 
    ![orientation](Interactive-Features_images/Interactive-Features_img25.jpeg)
@@ -352,6 +377,7 @@ The layout of the range slider can be defined using the [Orientation](https://he
 
 2. When Orientation is set to vertical.
 
+   {% capture codesnippet10 %}
    {% tabs %}
 
    {% highlight C# %}
@@ -363,6 +389,8 @@ The layout of the range slider can be defined using the [Orientation](https://he
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 ![Orientation](Interactive-Features_images/Interactive-Features_img27.jpeg)
 

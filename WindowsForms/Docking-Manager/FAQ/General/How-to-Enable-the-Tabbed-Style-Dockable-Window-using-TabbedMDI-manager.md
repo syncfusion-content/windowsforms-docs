@@ -17,6 +17,7 @@ We can enable and attach the dockable window into the Tabbed MDI manager during 
 * Add 4 panels and the DockingManager to your application.
 * Declare the TabbedMDIManager.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -33,11 +34,13 @@ Private tabbedMDIManager As Syncfusion.Windows.Forms.Tools.TabbedMDIManager
 {% endhighlight %}
 
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 * Set the form's IsMDIContainer property to `true`. Add a form, form2 to the project.
 * In the form constructor, you have to enable the dockable window into an MDIChild by calling the SetAsMDIChild method. This has to be done before calling the AttachToMdIContainer method. It will give the look and feel of the VS. NET editor with dockable tabbed window appearance.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -141,9 +144,12 @@ Me.dockingManager1.VisualStyle = Syncfusion.Windows.Forms.VisualStyle.Office2003
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 * You can also change the appearance of the tabs by applying the TabStyle in the TabControlAdded event.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -177,7 +183,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
  ![WinForms DockingManager General](General_images/General_img1.jpeg) 
 

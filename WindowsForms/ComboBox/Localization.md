@@ -16,20 +16,20 @@ Localization is a process of translating the application resources into differen
 To localize the SfComboBox based on the `CurrentUICulture` by using the resource files, follow the steps:
 
 1. Create a new folder and name it as Resources in your application.
-2. Add the default resource file of the SfListView into Resources folder. You can download the `Syncfusion.SfListView.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2. Add the default resource file of the SfListView into Resources folder. You can download the `Syncfusion.   SfListView.WinForms.resx` [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
-![Folder in which the resource file to be added](Localization_images/Localization_img1.png)
+  ![Folder in which the resource file to be added](Localization_images/Localization_img1.png)
 3. Right click on the Resources folder, select Add then NewItem.
 4. In the Add New Item wizard, select the Resource file option and name the filename as Syncfusion.SfListView.WinForms.<culture name>.resx. For example, give name as Syncfusion.SfListView.WinForms.de-DE.resx for German culture.
     
-![Custom resource file](Localization_images/Localization_img2.png)
+  ![Custom resource file](Localization_images/Localization_img2.png)
 5. The culture name that indicates the name of the language and country.
 6. Now, select Add option to add the resource file in Resources folder.
 
-![Newly added resource file](Localization_images/Localization_img3.png)
+  ![Newly added resource file](Localization_images/Localization_img3.png)
 7. Add the Name or Value pair in the Resource Designer of Syncfusion.SfListView.WinForms.de-DE.resx file and change its corresponding value to the corresponding culture.
 
-![Editing the default strings](Localization_images/Localization_img4.png)
+  ![Editing the default strings](Localization_images/Localization_img4.png)
 8. Now, set the `CurrentCulture` of the Application before the `InitializeComponent` method and run the sample.
 
 {% tabs %}

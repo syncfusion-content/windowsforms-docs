@@ -17,13 +17,13 @@ In its simplest form, this Layout Manager can be used to automatically arrange t
 
 ## Key features
 
-**Spacing**: Provides an option to customize the horizontal and vertical gaps between the child controls.
+* **Spacing**: Provides an option to customize the horizontal and vertical gaps between the child controls.
 
-**Layout mode**: Provides an option to set the mode of arrangement of child controls such as horizontal or vertical.
+* **Layout mode**: Provides an option to set the mode of arrangement of child controls such as horizontal or vertical.
 
-**Direction**: Provides an option to reverse the direction of the flow arrangement of the child controls.
+* **Direction**: Provides an option to reverse the direction of the flow arrangement of the child controls.
 
-**AutoHeight**: Provides an option to set AutoHeight if the child controls exceed the given space in horizontal layout mode.
+* **AutoHeight**: Provides an option to set AutoHeight if the child controls exceed the given space in horizontal layout mode.
 
-**Alignment**: Provides an option to customize the alignment such as Center, Near, Far, and ChildConstraints.
+* **Alignment**: Provides an option to customize the alignment such as Center, Near, Far, and ChildConstraints.
 

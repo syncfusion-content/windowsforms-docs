@@ -18,6 +18,7 @@ The MultiColumnComboBox can be created programmatically through code as detailed
 
 1. Include the required namespace.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -31,9 +32,12 @@ Imports Syncfusion.Windows.Forms.Tools
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Create an instance of MultiColumnComboBox. Add that instance to the Form.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 
@@ -51,6 +55,8 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 After creating MultiColumnComboBox, you can bound them using data source. Refer [DataBinding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding).
 

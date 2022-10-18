@@ -17,20 +17,22 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 The default form can be changed into SfForm by the following steps:
 
-1) Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
+1. Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
 
-2) Include the following namespace to the directives list.
+2. Include the following namespace to the directives list.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.Controls;
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
+3. Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
 
-3) Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
-
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 public partial class Form1 : SfForm
@@ -42,6 +44,8 @@ public partial class Form1 : SfForm
 }
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ![Winforms showing the form from the sfform](Getting-Started_images/Getting-Started_img1.png)

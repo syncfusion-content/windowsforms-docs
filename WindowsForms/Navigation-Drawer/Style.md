@@ -13,15 +13,15 @@ documentation: ug
 
 It has the below themes.
 
-•	Default
+    •	Default
 
-•	Office2016Colorful
+    •	Office2016Colorful
 
-•	Office2016White
+    •	Office2016White
 
-•	Office2016DarkGray
+    •	Office2016DarkGray
 
-•	Office2016Black
+    •	Office2016Black
 
 The following code example allows you to set the [style](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Style) for the NavigationDrawer.
 

@@ -55,12 +55,12 @@ To add the control manually in C#, follow the steps:
 
 **Step 1** : Add the following required assembly references to the project:
 
-   * Syncfusion.HTMLUI.Base.dll
-   * Syncfusion.HTMLUI.Windows.dll
-   * Syncfusion.Scripting.Base.dll
-   * Syncfusion.Shared.Base
+      * Syncfusion.HTMLUI.Base.dll
+      * Syncfusion.HTMLUI.Windows.dll
+      * Syncfusion.Scripting.Base.dll
+      * Syncfusion.Shared.Base
 
-**Step 2** - Include the namespaces **Syncfusion.Windows.Forms.HTMLUI**.
+**Step 2** : Include the namespaces **Syncfusion.Windows.Forms.HTMLUI**.
 
 {% tabs %}
 
@@ -108,7 +108,6 @@ Me.Controls.Add(Me.htmluiControl1)
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![HTMLUIControl added using code](Getting-Started_images/GettingStarted-img2.png)
 

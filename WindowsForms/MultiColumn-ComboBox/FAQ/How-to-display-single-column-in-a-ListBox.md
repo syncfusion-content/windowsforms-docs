@@ -13,6 +13,7 @@ To turn off showing multiple columns in a ListBox, follow the below given steps.
 
 1. Access the GridListControl and set its MultiColumn property to False.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -28,6 +29,8 @@ Me.multiColumnBoundCombo.ListBox.MultiColumn = False
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. The dropdown will then simply show the first column in the bound datasource (the combo's DisplayMember property will not be consulted here). Make sure that in your SQL query, the desired column to be shown in the drop-down is the first one.
 

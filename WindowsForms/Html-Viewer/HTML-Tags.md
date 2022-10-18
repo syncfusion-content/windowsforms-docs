@@ -1380,6 +1380,7 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
 
 1. By specifying the Tag Names: Specifies styles by writing CSS styles with the tag name inside the Style tag.
 
+   {% capture codesnippet1 %}
    {% tabs %}
 
    {% highlight VB %}
@@ -1391,9 +1392,12 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. By specifying the Class Names to the Styles: Specifies styles with the help of the class names inside the Style tag.
 
+   {% capture codesnippet2 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1405,9 +1409,12 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. By specifying ID Class Selectors: Specifies styles by writing styles with the unique id inside the Style tag, and assigning them to the HTML elements by using the id attribute.
 
+   {% capture codesnippet3 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1419,6 +1426,8 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
    Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
 

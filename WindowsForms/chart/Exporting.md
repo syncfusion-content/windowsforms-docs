@@ -159,10 +159,11 @@ The chart control can be exported to a Word doc file as an image using Essential
 
 Given below are the steps that will guide you through this process.
 
-1.Add the **Syncfusion.DocIO.Base and Syncfusion.DocIO.Windows** assemblies.
+1. Add the **Syncfusion.DocIO.Base and Syncfusion.DocIO.Windows** assemblies.
 
-2.Add the namespace **Syncfusion.DocIO and Syncfusion.DocIO.DLS** in your form.
+2. Add the namespace **Syncfusion.DocIO and Syncfusion.DocIO.DLS** in your form.
 
+{% capture codesnippet1 %}
 {% tabs %}
    
 {% highlight c# %}
@@ -182,9 +183,12 @@ Imports Syncfusion.DocIO.DLS
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3.Add the code snippet that is given below in your form.
+3. Add the code snippet that is given below in your form.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -280,6 +284,8 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 A sample demonstrating the above is available in our installation at the following location:
 
@@ -293,14 +299,15 @@ The chart control can be exported into a grid cell (in Essential Grid) as an ima
 
 The steps that are given below will guide you through the process.
 
-1.Add the **Syncfusion.Grid.Base and Syncfusion.Grid.Windows** assemblies.
+1. Add the **Syncfusion.Grid.Base and Syncfusion.Grid.Windows** assemblies.
 
-2.Add a form (Form2) to hold the Grid control in which the chart is to be exported.
+2. Add a form (Form2) to hold the Grid control in which the chart is to be exported.
 
-3.Drag a grid control onto the Form2.
+3. Drag a grid control onto the Form2.
 
-4.Add the namespace **Syncfusion.Windows.forms.Grid** in Form2.
+4. Add the namespace **Syncfusion.Windows.forms.Grid** in Form2.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -316,9 +323,12 @@ Imports Syncfusion.Windows.Forms.Grid
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-5.Add the code snippet that is given below in Form2 to get the chart data into the grid.
+5. Add the code snippet that is given below in Form2 to get the chart data into the grid.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -389,9 +399,12 @@ Me.gridControl1(1, 1).ImageSizeMode = GridImageSizeMode.CenterImage
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-6.Add the code that is given below in the form with the chart control to be exported.
+6. Add the code that is given below in the form with the chart control to be exported.
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -445,6 +458,8 @@ gridForm.ShowDialog()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 A sample demonstrating the above is available in our installation at the following location.
 
@@ -458,10 +473,11 @@ EssentialChart data can be exported into an Excel document and an Excel chart ca
 
 Given below are the steps that will guide you through this process.
 
-1.Add the **Syncfusion.XLsIO.Base and Syncfusion.XLsIO.Windows** assemblies.
+1. Add the **Syncfusion.XLsIO.Base and Syncfusion.XLsIO.Windows** assemblies.
 
-2.Add the namespace **Syncfusion.XLsIO** in your form.
+2. Add the namespace **Syncfusion.XLsIO** in your form.
 
+{% capture codesnippet6 %}
 {% tabs %}
   
 {% highlight c# %}
@@ -477,9 +493,12 @@ Imports Syncfusion.XlsIO
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-3.Add the code snippet that is given below in your form.
+3. Add the code snippet that is given below in your form.
 
+{% capture codesnippet7 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -617,6 +636,8 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ### Sample
 
@@ -630,10 +651,11 @@ The chart control can be exported into a PDF file as an image using EssentialPDF
 
 ![Chart Export](Exporting_images/Exporting_img6.jpeg)
 
-1.Add the **Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows** assemblies.
+1. Add the **Syncfusion.Pdf.Base and Syncfusion.Pdf.Windows** assemblies.
 
-2.Add the namespace **Syncfusion.Pdf** in your form.
+2. Add the namespace **Syncfusion.Pdf** in your form.
 
+{% capture codesnippet8 %}
 {% tabs %}
   
 {% highlight C# %}
@@ -653,9 +675,12 @@ Imports Syncfusion.Pdf.Graphics
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
-3.Add the code snippet that is given below in your form.
+3. Add the code snippet that is given below in your form.
 
+{% capture codesnippet9 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -723,6 +748,8 @@ System.Diagnostics.Process.Start(exportFileName)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 A sample demonstrating the above is available in our installation at the following location.
 

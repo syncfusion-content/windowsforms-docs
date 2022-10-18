@@ -82,38 +82,39 @@ This section will explain how to create a simple GridGroupingControl in Windows 
 ### Adding GridGroupingControl through Designer
 GridGroupingControl can be added through designer by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Drag and Drop GridGroupingControl from the toolbox into the designer page. 
+2. Drag and Drop GridGroupingControl from the toolbox into the designer page. 
 
 ![windows forms gridgroupingcontrol is dragged from toolbox](Getting-Started_images/Getting-Started_img1.png)
 
-3.Once drag drop the GridGroupingControl into the designer page, the GridGroupingControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
+3. Once drag drop the GridGroupingControl into the designer page, the GridGroupingControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
-* Syncfusion.Grid.Base.dll
-* Syncfusion.Grid.Grouping.Base.dll
-* Syncfusion.Grid.Grouping.Windows.dll
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Grouping.Base.dll
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * Syncfusion.Grid.Grouping.Base.dll
+    * Syncfusion.Grid.Grouping.Windows.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grouping.Base.dll
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
 
 ![windows forms gridgroupingcontrol is dragged to designer page](Getting-Started_images/Getting-Started_img2.png)
 
 ### Adding GridGroupingControl through Code
 GridGroupingControl can be added through code-behind by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Add the below assemblies into the project file
+2. Add the below assemblies into the project file
 
-* Syncfusion.Grid.Windows.dll
-* Syncfusion.Grid.Grouping.Windows.dll
-* Syncfusion.Grouping.Base.dll
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grid.Grouping.Windows.dll
+    * Syncfusion.Grouping.Base.dll
+    * Syncfusion.Shared.Base.dll
 
-3.Initialize a GridGroupingControl by using the below code in code behind.
+3. Initialize a GridGroupingControl by using the below code in code behind.
 
+{% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
 //Initializing a new GridGroupingControl.
@@ -124,9 +125,12 @@ private Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl gridGroupingC
 Private gridGroupingControl1 As New Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Use the below code for adding the initialized GridGroupingControl to the application.
+4. Use the below code for adding the initialized GridGroupingControl to the application.
 
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Add required size for the Grid.
@@ -139,6 +143,8 @@ Me.gridGroupingControl1.Size = New System.Drawing.Size(130, 80)
 Me.Controls.Add(Me. gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating Data
 GridGroupingControl supports variety of data sources such as DataTables, DataSets, or any component that implement interfaces like IList, IBindingList, ITypedList, or IListSource. The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. For assigning the data source to GridGroupingControl, [DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_DataSource) property needs to be used.

@@ -29,27 +29,27 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 
 ![Generate code for coded ui test](CodedUI_images/RecordingOption.png)
 
-1) After choosing the option, Coded UI Test Builder UIMap is shown at the BottomRight of the window.
+1. After choosing the option, Coded UI Test Builder UIMap is shown at the BottomRight of the window.
 
-2) Choose the Start recording option from the UI Map to record the testing and it is also possible to pause the recording while testing the application.
+2. Choose the Start recording option from the UI Map to record the testing and it is also possible to pause the recording while testing the application.
 
 ![Recording the actions using coded ui test builder](CodedUI_images/RecordingFromUIMap.png)
 
 ![Pausing the actions using coded ui test builder](CodedUI_images/PauseRecordingFromUIMap.png)
 
-3) The recorded steps can be viewed by using the UIMap or by pressing “Alt + S” key.
+3. The recorded steps can be viewed by using the UIMap or by pressing “Alt + S” key.
 
-4) To delete actions that was recorded by mistake, choose “Edit” Actions.
+4. To delete actions that was recorded by mistake, choose “Edit” Actions.
 
-5) To generate code that replicates performed actions, choose the Generate Code icon and type a name and description for CUIT method.
+5. To generate code that replicates performed actions, choose the Generate Code icon and type a name and description for CUIT method.
 
 ![Recorded steps in coded ui test builder](CodedUI_images/RecordedSteps.png)
 
-6) After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates performed actions.
+6. After completion of the testing process, choose the Generate code option from the UI Map to generate the code in the test project. The generated code replicates performed actions.
 
 ![Generate code for recorded coded ui test](CodedUI_images/GenerateCodedUIMap.png)
 
-7) Choose the required method and description for code generation.
+7. Choose the required method and description for code generation.
 
 ![Adding method description and name for record coded ui test](CodedUI_images/GenerateCodeWindowForUIMap.png)
 
@@ -57,9 +57,9 @@ While generating code for Coded UI Test dialog box, choose the Record actions�
 
 The Application can be tested with the generated CUIT Method. 
 
-1) Add a TestMethod named `CodedUITestMethod1`.
+1. Add a TestMethod named `CodedUITestMethod1`.
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -82,17 +82,19 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 
-2) **Build** and **Run** the application that has already been configured. 
+2. **Build** and **Run** the application that has already been configured. 
 
-3) Right click the body of the CodedUITestMethod and then select Generate Code for Coded UI Test -> Use CUIT builder as shown in the following screenshots.
+3. Right click the body of the CodedUITestMethod and then select Generate Code for Coded UI Test -> Use CUIT builder as shown in the following screenshots.
 
 ![Run the record coded ui test](CodedUI_images/OpeningCodedUITestBuilder.png)
 
 ![UIMap coded ui test builder windows](CodedUI_images/CodedUIMap.png)
 
-4) Now CUIT performs Recorded testing process.
+4. Now CUIT performs Recorded testing process.
 
 ![Asset window for treeviewadv](CodedUI_images/AssetWindowForTreeViewAdv.png)
 

@@ -17,7 +17,7 @@ There are two ways available to add a Group in diagram control:
 1. Add the children to the group manually with the help of Group class methods. The below code snippet creates a group with two nodes.
 
 
-
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -47,12 +47,14 @@ this.DiagramWebControl1.Model.AppendChild(grp);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Diagram control support two direct methods for Grouping and UnGrouping as follows.
 
 
 
-
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -61,6 +63,8 @@ this.diagram1.Controller.UnGroup();   //Method to UnGroup the nodes
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ### Access, Delete or Remove the child nodes in a Group
 

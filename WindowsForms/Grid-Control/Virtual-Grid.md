@@ -124,12 +124,12 @@ End Class
 
 To add and initialize the virtual grid in an application, below steps need to be followed.
 
-1.Drag GridControl from toolbox into the application. 
+1. Drag GridControl from toolbox into the application. 
 
-2.Customize properties like `BorderStyle` etc., if needed. But don’t change the `RowCount` and `ColCount` values. These values will be provided dynamically as part of the virtual grid implementation.
+2. Customize properties like `BorderStyle` etc., if needed. But don’t change the `RowCount` and `ColCount` values. These values will be provided dynamically as part of the virtual grid implementation.
 
-3.Add the `ExternalData` member to the application.
-   
+3. Add the `ExternalData` member to the application.
+ {% capture codesnippet1 %}  
 {% tabs %}
 {% highlight c# %}
 //Adds an external data member.
@@ -141,9 +141,11 @@ private ExternalData _extData;
 Private _extData As ExternalData
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Initialize a new external data source with required number of rows and columns.  
-   
+4. Initialize a new external data source with required number of rows and columns.  
+ {% capture codesnippet2 %}  
 {% tabs %}
 {% highlight c# %}
 //Creates a new external data source with 100 rows and 20 columns.
@@ -161,11 +163,13 @@ Me._extData = New ExternalData(100, 20)
 gridControl1.ResetVolatileData()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 N> The call to [ResetVolatileData](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResetVolatileData) tells the grid that it needs to reset properties like `RowCount` and `ColCount` the next time when they are needed. This will allow the event handlers to set these values.
 
-5.For setting the number of rows and columns in the Virtual Grid, [QueryRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [QueryColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event has to be used respectively. 
-
+5. For setting the number of rows and columns in the Virtual Grid, [QueryRowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [QueryColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event has to be used respectively. 
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 gridControl1.QueryRowCount += gridControl1_QueryRowCount;
@@ -208,10 +212,12 @@ e.Handled = True
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-6.To add data in a Virtual Grid, [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event has to be used. This event is used to provide `GridStyleInfo` object for a given cell. 
+6. To add data in a Virtual Grid, [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event has to be used. This event is used to provide `GridStyleInfo` object for a given cell. 
   The [CellValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_CellValue) property of the `GridStyleInfo` object holds the data. All the changes made in this event is done in on-demand basis and not stored in any internal storage.
-
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 void gridControl1_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
@@ -237,6 +243,8 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 ![CellGrid_VirtualGrid_img1](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img1.jpeg)
 

@@ -15,6 +15,6 @@ The **FontListBox** is a list box derived control that can be populated automati
 
 ## Key features
 
-**Selection mode** - Provides different modes of selection. They are One, MultiSimple, and MultiExtended.
+* **Selection mode** - Provides different modes of selection. They are One, MultiSimple, and MultiExtended.
 
-**Themes** - Supports a set of visual styles to customize the look and feel of the FontListBox control.
+* **Themes** - Supports a set of visual styles to customize the look and feel of the FontListBox control.

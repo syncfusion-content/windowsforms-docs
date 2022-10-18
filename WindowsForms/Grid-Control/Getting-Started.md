@@ -93,10 +93,10 @@ Windows Forms Grid Control can be added through designer by following the below 
 
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
 
-* Syncfusion.Grid.Base.dll
-* [Syncfusion.Grid.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)
-* Syncfusion.Shared.Base.dll
-* Syncfusion.Shared.Windows.dll
+    * Syncfusion.Grid.Base.dll
+    * [Syncfusion.Grid.Windows.dll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.html)
+    * Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Windows.dll
 
   ![windows forms grid control showing collection of rows and columns](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
 
@@ -105,19 +105,19 @@ Windows Forms Grid Control can be added through designer by following the below 
 
 Windows Forms GridControl can be added through code-behind by following the below steps.
 
-1.Create a new Windows Form Application.
+1. Create a new Windows Form Application.
 
-2.Add the below assemblies into the project file
+2. Add the below assemblies into the project file
 
-* Syncfusion.Grid.Windows.dll
+    * Syncfusion.Grid.Windows.dll
 
-* Syncfusion.Shared.Base.dll
+    * Syncfusion.Shared.Base.dll
 
    ![windows forms grid control showing assemblies](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img3.jpeg)
 
 
-3.Initialize a `GridControl` by using the below code in code behind.
-   
+3. Initialize a `GridControl` by using the below code in code behind.
+ {% capture codesnippet1 %}​  
 {% tabs %}
 {% highlight c# %}
 //Initializing a new Grid.
@@ -128,9 +128,11 @@ Windows Forms GridControl can be added through code-behind by following the belo
 Private gridControl1 As New Syncfusion.Windows.Forms.Grid.GridControl()
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4.Use the below code for adding the initialized GridControl to the application.
-
+4. Use the below code for adding the initialized GridControl to the application.
+{% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
 //Add required size for the Grid.
@@ -145,13 +147,15 @@ Me.gridControl1.Size = New System.Drawing.Size(344, 250)
 Me.Controls.Add(Me.gridControl1)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Populating Data
 
 Windows Forms GridControl is a cell based control and hence to populate the GridControl, [RowCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_RowCount) and [ColCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.IGridVolatileData.html#Syncfusion_Windows_Forms_Grid_IGridVolatileData_ColCount) are necessary. By default the `RowCount` and `ColCount` values are 10. Data can be populated by any one of the following methods.
 
-1.Populate data by looping through cells in GridControl. 
-
+1. Populate data by looping through cells in GridControl. 
+{% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -182,9 +186,11 @@ Next col
 Next row
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2.Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type **object**. 
-
+2. Populate data by using [PopulateValues](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_PopulateValues_Syncfusion_Windows_Forms_Grid_GridRangeInfo_System_Object_) method. This method will allow you to pass in a range of cells of type [GridRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfo.html#) and data source of type **object**. 
+{% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -224,9 +230,11 @@ gridControl1.ColCount = 4
 Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCount, Me.gridControl1.ColCount), table)
 {% endhighlight %}	
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3.Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
-    
+3. Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
+ {% capture codesnippet5 %}​   
 {% tabs %}
 {% highlight c# %}
 //Specifying row and column count
@@ -259,6 +267,8 @@ e.Style.CellValue = String.Format("{0}/{1}", e.RowIndex, e.ColIndex)
 End If
 {% endhighlight %}	   
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 Final Look of the Grid:
 

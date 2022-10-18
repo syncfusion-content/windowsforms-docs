@@ -37,9 +37,9 @@ The FontComboBox control can be added to the application by dragging it from Too
 
 In order to add FontComboBox control manually, do the below steps,
 
-1) Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#fontcombobox) to the project.
+1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#fontcombobox) to the project.
 
-2) Create the FontComboBox control instance and add it to the form.
+2. Create the FontComboBox control instance and add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}

@@ -17,9 +17,9 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding EditableList control via designer
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+2. The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
@@ -27,13 +27,13 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 ## Adding EditableList control via code
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following reference to the project:
+2. Add the following reference to the project:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
-3) Include the required namespace.
+3. Include the required namespace.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -51,7 +51,7 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-4) Create an instance of [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html), and add it to the form.
+4. Create an instance of [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html), and add it to the form.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -72,7 +72,7 @@ Me.Controls.Add(Me.editableList1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
  
-5) Associate Button, TextBox, and ListBox with the EditableList control.
+5. Associate Button, TextBox, and ListBox with the EditableList control.
 
 {% capture codesnippet3 %}
 {% tabs %}

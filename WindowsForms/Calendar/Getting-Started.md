@@ -21,9 +21,9 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
 The following steps describe how to create an WinForms Calendar (SfCalendar) control via designer.
 
-1) Create a new Windows Forms application in Visual Studio.
+1. Create a new Windows Forms application in Visual Studio.
 
-2) Add the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
+2. Add the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
@@ -35,15 +35,15 @@ The following steps describe how to create an WinForms Calendar (SfCalendar) con
 
 The following steps describe how to create an WinForms Calendar (SfCalendar) control programmatically:
 
-1) Create a C# or VB application via Visual Studio.
+1. Create a C# or VB application via Visual Studio.
 
-2) Add the following assembly references to the project:
+2. Add the following assembly references to the project:
 
 * Syncfusion.Core.WinForms
 * Syncfusion.SfInput.WinForms
 * Syncfusion.Shared.Base
 
-3) Include the required namespaces.
+3. Include the required namespaces.
 
 {% capture codesnippet1 %}​
 {% tabs %}
@@ -64,7 +64,7 @@ Imports Syncfusion.WinForms.Input
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-4) Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control instance, and then add it to the form.
+4. Create an instance of the [WinForms Calendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) (SfCalendar) control instance, and then add it to the form.
 
 {% capture codesnippet2 %}​
 {% tabs %}

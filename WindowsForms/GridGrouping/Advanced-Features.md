@@ -19,8 +19,8 @@ Custom Grouping can be achieved by adding a custom Categorizer object to SortCol
 
 Say you have a column with values for 0 to 50, and you want to have them grouped so that values less than 10 are in one group, values 10-20 are in another, values 20-30 in another, and so on. The following code example illustrates how to achieve this by using Custom Categorizer.
 
-1.Create a datasource and bind it to a grid grouping control.
-
+1. Create a datasource and bind it to a grid grouping control.
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight C# %}  
 //Creates the data source.
@@ -176,9 +176,11 @@ End Class
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2.Define a custom Comparer to ensure that the integer values are sorted as integers instead of strings.
-
+2. Define a custom Comparer to ensure that the integer values are sorted as integers instead of strings.
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight C# %} 
 
@@ -224,10 +226,12 @@ Public Class CustomComparer Implements IComparer
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-3.Group the column Col2 using a custom categorizer and comparer.
+3. Group the column Col2 using a custom categorizer and comparer.
 
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -246,9 +250,11 @@ columnDescriptor.Comparer = New CustomComparer()
 Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(columnDescriptor)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-4.Handle QueryCellStyleInfo event to display custom group caption.
-
+4. Handle QueryCellStyleInfo event to display custom group caption.
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %} 
 
@@ -329,6 +335,8 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 Given below is a sample screen shot.
 
@@ -348,8 +356,8 @@ Consider a scenario where one of the data columns of your datasource consists of
 
 The example illustrates this process in a step-by-step manner.
 
-1.Setup a datasource and bind it to a grid grouping control.
-
+1. Setup a datasource and bind it to a grid grouping control.
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -409,9 +417,11 @@ Loop
 Me.gridGroupingControl1.DataSource = New DataView(dataTable)
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }
 
-2.Define a Custom Comparer by implementing IComparer interface.
-
+2. Define a Custom Comparer by implementing IComparer interface.
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -495,9 +505,11 @@ End Function
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }
 
-3.Handle SortColumnsChanging event to make the grid use custom comparer.
-
+3. Handle SortColumnsChanging event to make the grid use custom comparer.
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -539,8 +551,10 @@ End If
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }
 
-4.When you run the sample, click on Col3 to sort it. You will see the effect of the custom sorting logic. The screen shot given below shows the sorted grid with and without Custom Comparer.
+4. When you run the sample, click on Col3 to sort it. You will see the effect of the custom sorting logic. The screen shot given below shows the sorted grid with and without Custom Comparer.
 
 
 
@@ -601,8 +615,8 @@ End Function
 
 The following are the classes and events used to create date summary field.
 
-1.Creating GridSummaryColumnDescriptor instance.
-
+1. Creating GridSummaryColumnDescriptor instance.
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight C# %}  
 GridSummaryColumnDescriptor sd1 = new GridSummaryColumnDescriptor();
@@ -623,9 +637,11 @@ sd1.SummaryType = SummaryType.Custom
 Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(New GridSummaryRowDescriptor("Row 1", "Max", sd1))
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }
 
-2.Using QueryCustomSummary event to instantiate custom summary for maximum and minimum date.
-
+2. Using QueryCustomSummary event to instantiate custom summary for maximum and minimum date.
+{% capture codesnippet9 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -666,9 +682,11 @@ End Select
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }
 
-3.The CurrentRecordContextChange event is used to refresh the grid so that new values will be updated in the summary row.
-
+3. The CurrentRecordContextChange event is used to refresh the grid so that new values will be updated in the summary row.
+{% capture codesnippet10 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -693,6 +711,8 @@ End If
 End Sub
  {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }
 
 ## Custom Summary row with Custom Function
 
@@ -748,8 +768,8 @@ For our FilterBarCell, we have to create the model and renderer classes by inher
 
 Following steps illustrate how to add a custom filter dialog.
 
-1.Set up a grouping grid and bind a data source into it. Enable the grid filter bar to show filter options for all the columns.
-
+1. Set up a grouping grid and bind a data source into it. Enable the grid filter bar to show filter options for all the columns.
+{% capture codesnippet11 %}
 {% tabs %}
 {% highlight C# %}  
 
@@ -820,8 +840,10 @@ i += 1
 Loop
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }
 
-2.Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two combo boxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
+2. Add another form, say FilterDialog to the project. This form will accept two filter conditions combined by a logical operator. Add a label to display the name of the filter column, two combo boxes to display the compare operator choices and two text boxes to accept the compare values, two radio buttons to determine logical combination of the filter conditions, and two buttons 'Ok' to pass the filter string to the parent grid and 'Cancel' to cancel the filter action. Here is a sample image of the form's designer.
 
 ![Advanced-Features_img4](Advanced-Features_images/Advanced-Features_img4.jpeg) 
 
@@ -831,8 +853,8 @@ Loop
 
 
 
-3.Add a method SetupOptions to fill the combo boxes with the operator choices. Inside the Ok_Button_Click event handler, form the filter string by writing the extracted values from the form in a valid syntax. Then close the form. The CancelButton would simply close the form.
-
+3. Add a method SetupOptions to fill the combo boxes with the operator choices. Inside the Ok_Button_Click event handler, form the filter string by writing the extracted values from the form in a valid syntax. Then close the form. The CancelButton would simply close the form.
+{% capture codesnippet12 %}
 {% tabs %}
 {% highlight C# %} 
 internal FilterString = "";
@@ -971,9 +993,11 @@ Me.Close()
 End Sub
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }
 
-4.Once a filter dialog has been designed, our next step is to create the required model and renderer classes in order to adopt the custom filter dialog. Inside the renderer, override the ListBoxMouseUp event to make the custom filter dialog to pop up. When the dialog is closed, add the filter string into the RecordFilters collection to set up the filter.
-
+4. Once a filter dialog has been designed, our next step is to create the required model and renderer classes in order to adopt the custom filter dialog. Inside the renderer, override the ListBoxMouseUp event to make the custom filter dialog to pop up. When the dialog is closed, add the filter string into the RecordFilters collection to set up the filter.
+{% capture codesnippet13 %}
 {% tabs %}
 {% highlight C# %} 
 
@@ -1100,9 +1124,11 @@ End Sub
 End Class
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet13 | OrderList_Indent_Level_1 }
 
-5.Our final step is to replace the default filter bar cell with our custom filter bar cell. This can be done by registering our new cell model class into the existing cell model's collection by specifying a name for the new cell type. Then set the cell type of the FilterBarCell to this new cell type.
-
+5. Our final step is to replace the default filter bar cell with our custom filter bar cell. This can be done by registering our new cell model class into the existing cell model's collection by specifying a name for the new cell type. Then set the cell type of the FilterBarCell to this new cell type.
+{% capture codesnippet14 %}
 {% tabs %}
 {% highlight C# %} 
 this.gridGroupingControl1.TableModel.CellModels.Add("MyFilterCell", new CustomFilterCellModel(this.gridGroupingControl1.TableModel));
@@ -1113,8 +1139,10 @@ Me.gridGroupingControl1.TableModel.CellModels.Add("MyFilterCell", New CustomFilt
 Me.gridGroupingControl1.Appearance.FilterBarCell.CellType = "MyFilterCell"
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
-6.When you run the sample, click the filter drop down and then select custom option to show up our filter dialog. This is shown in the screenshots below.
+6. When you run the sample, click the filter drop down and then select custom option to show up our filter dialog. This is shown in the screenshots below.
 
  ![Advanced-Features_img5](Advanced-Features_images/Advanced-Features_img5.jpeg) 
 

@@ -18,10 +18,11 @@ N> Always use [BindableValue](https://help.syncfusion.com/cr/windowsforms/Syncfu
 
 To bind a DateTimePickerAdv, perform the following steps.
 
-1) Add a DateTimePickerAdv and a DataGrid controls to the form.
+1. Add a DateTimePickerAdv and a DataGrid controls to the form.
 
-2) Create a dataset using the code below.
+2. Create a dataset using the code below.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -61,9 +62,12 @@ table.Rows.Add(New Object(){DBNull.Value})
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3) Assign the dataset to the DataGrid control using its DataSource property. Set the control's DataMember property to the member that must be bound.
+3. Assign the dataset to the DataGrid control using its DataSource property. Set the control's DataMember property to the member that must be bound.
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -81,10 +85,13 @@ Private dataGrid1.DataMember = "Table"
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
-4) Bind the datasource with the DateTimePickerAdv control.
+4. Bind the datasource with the DateTimePickerAdv control.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -104,8 +111,10 @@ dateTimePickerAdv1.Focus()
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-5) Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
+5. Run the application. Select a data in the datagrid and DateTimePicker will display the corresponding date value (The DateTimePickerAdv is bound to the datasource using BindableValue property as datasource contains Null value. Selecting in the datagrid will automatically position the datasource to the related row which will update the DateTimePickerAdv with the appropriate data).
 
 ![DateTimePicker calendar](Calendar_Images/Overview_img219.jpeg) 
 
@@ -174,12 +183,13 @@ This section deals with creating a custom popup window for the DateTimePickerAdv
 
 Follow the below steps to add a Windows [MonthCalendar](https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/monthcalendar-control-windows-forms) control as the Popup for the [DateTimePickerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html), using [PopupControlContainer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html).
 
-1) Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
+1. Drag a DateTimePickerAdv, PopupControlContainer and a button onto the form designer from the toolbox. 
 
 ![Drag a date time picker and popup control](Calendar_Images/Overview_img221.jpeg) 
 
-2) Create a control that implements the [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface using the below code.
+2. Create a control that implements the [IDateTimePickerAdvCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html) interface using the below code.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -348,9 +358,12 @@ End Class
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3) Set the [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Active) property of the MonthCalendar to True. Set the DateTimePickerAdv's [CustomPopupWindow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomPopupWindow) property to the PopupControlContainer control. Set the DateTimePickerAdv's [CustomDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomDrop) property to theTrue. 
+3. Set the [Active](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.IDateTimePickerAdvCalendar.html#Syncfusion_Windows_Forms_Tools_IDateTimePickerAdvCalendar_Active) property of the MonthCalendar to True. Set the DateTimePickerAdv's [CustomPopupWindow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomPopupWindow) property to the PopupControlContainer control. Set the DateTimePickerAdv's [CustomDrop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_CustomDrop) property to theTrue. 
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -380,9 +393,12 @@ Me.popupControlContainer1.Controls.Add(Me.MonthCalendar)
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-4) In the button click event, call the MyCustomCalendar's [FireNullEvent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdvCalendarAdapter.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdvCalendarAdapter_FireNullEvent) method. 
+4. In the button click event, call the MyCustomCalendar's [FireNullEvent](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdvCalendarAdapter.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdvCalendarAdapter_FireNullEvent) method. 
 
+{% capture codesnippet6 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -405,12 +421,14 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-5) Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
+5. Run the application and click the dropdown button of the DateTimePickerAdv control to display the custom popup. 
 
 ![Custom popu up](Calendar_Images/Overview_img222.jpeg) 
 
-6) When you click the button, the DateTimePickerAdv will display the [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) specified in [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) property.
+6. When you click the button, the DateTimePickerAdv will display the [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) specified in [NullString](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DateTimePickerAdv.html#Syncfusion_Windows_Forms_Tools_DateTimePickerAdv_NullString) property.
 
 ![Null string](Calendar_Images/Overview_img223.jpeg) 
 
