@@ -180,7 +180,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Manually set up relationships between tables and add relation to the parent and child tables.
 {% capture codesnippet2 %}
@@ -234,7 +234,7 @@ parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandC
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Register the data tables with[Engine.SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) so that [RelationDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridRelationDescriptor.html) can resolve the name. 
 {% capture codesnippet3 %}
@@ -253,7 +253,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("MyGrandChildTable", grandChild
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Finally, bind hierarchical data source, which has been created through the above steps to a grid by assigning parent table to the data source.
 {% capture codesnippet4 %}
@@ -266,7 +266,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 While running the sample the tables are connected with Master-Details relation as of follows,
 
@@ -484,7 +484,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 2. Create an object of `USStates` and add this object into the[SourceListSet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridEngine.html) with a lookup name.
 {% capture codesnippet6 %}
@@ -499,7 +499,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 3. Creates a DataTable with the Key from USState as one of the columns.
 {% capture codesnippet7 %}
@@ -533,7 +533,7 @@ Next i
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet7 | OrderList_Indent_Level_1 }
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 4. Establish Foreign key Reference relationship.
 {% capture codesnippet8 %}
@@ -593,7 +593,7 @@ mainTd.Name = "ForeignKeyReference"
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet8 | OrderList_Indent_Level_1 }
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 ![Relations-and-Hierarchy_img3](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img3.png)
 
@@ -709,7 +709,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet9 | OrderList_Indent_Level_1 }
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 2. Register the child table (Items) into the `SourceListSet` of the grouping engine.
 {% capture codesnippet10 %}
@@ -726,7 +726,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet10 | OrderList_Indent_Level_1 }
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 3. Assign the data source for the GridGroupingControl.
 {% capture codesnippet11 %}
@@ -739,7 +739,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet11 | OrderList_Indent_Level_1 }
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
 4. Establish `ForeignKeyKeyWords` relationship between the tables.
 {% capture codesnippet12 %}
@@ -768,7 +768,7 @@ Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet12 | OrderList_Indent_Level_1 }
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 ![Relations-and-Hierarchy_img4](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img4.png)
 
 **Sample Location:**
@@ -975,7 +975,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet13 | OrderList_Indent_Level_1 }
+{{ codesnippet13 | OrderList_Indent_Level_1 }}
 
 2. Create an object of `USStates` and add this object into the `SourceListSet` with a lookup name.
 {% capture codesnippet14 %}
@@ -990,7 +990,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet14 | OrderList_Indent_Level_1 }
+{{ codesnippet14 | OrderList_Indent_Level_1 }}
 
 3. Create a data table with one of the columns type as Country.
 {% capture codesnippet15 %}
@@ -1022,7 +1022,7 @@ Next i
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet15 | OrderList_Indent_Level_1 }
+{{ codesnippet15 | OrderList_Indent_Level_1 }}
 
 4. Establish the `ForeignKeyReference` relationship.
 {% capture codesnippet16 %}
@@ -1081,7 +1081,7 @@ mainTd.Name = "ListItemReference"
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet16 | OrderList_Indent_Level_1 }
+{{ codesnippet16 | OrderList_Indent_Level_1 }}
 
 ![Relations-and-Hierarchy_img5](Relations-and-Hierarchy_images/Relations-and-Hierarchy_img5.png)
 
@@ -1217,7 +1217,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet17 | OrderList_Indent_Level_1 }
+{{ codesnippet17 | OrderList_Indent_Level_1 }}
 
 2. Create another class (ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement `INotifyPropertyChanged` interface in order to get notified of any property changes.
 {% capture codesnippet18 %}
@@ -1368,7 +1368,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet18 | OrderList_Indent_Level_1 }
+{{ codesnippet18 | OrderList_Indent_Level_1 }}
 
 3. Generate the collection using `BindingList` class, which implements [ListChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Collections.DataTableWrapperList.html) events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
 {% capture codesnippet19 %}
@@ -1409,7 +1409,7 @@ Next i
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet19 | OrderList_Indent_Level_1 }
+{{ codesnippet19 | OrderList_Indent_Level_1 }}
 
 4. Assign the above collection to the data source of GridGroupingControl.
 {% capture codesnippet20 %}
@@ -1422,7 +1422,7 @@ Me.gridGroupingControl1.DataSource = topList
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet20 | OrderList_Indent_Level_1 }
+{{ codesnippet20 | OrderList_Indent_Level_1 }}
 
 5. Establish UniformChildList relation kind.
 {% capture codesnippet21 %}
@@ -1453,7 +1453,7 @@ childTable.TableDescriptor.GroupedColumns.Add("Field1")
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet21 | OrderList_Indent_Level_1 }
+{{ codesnippet21 | OrderList_Indent_Level_1 }}
 
 The following screenshot will be the outcome of the above steps,
 
