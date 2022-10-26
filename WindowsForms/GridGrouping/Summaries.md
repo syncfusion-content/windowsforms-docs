@@ -66,7 +66,7 @@ summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.Fr
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Finally add summary row to the grid.
 {% capture codesnippet3 %}​
@@ -79,7 +79,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet3 | OrderList_Indent_Level_1 }
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Run the sample. The grid will shows the summaries at the end of the records as follows,
 
@@ -226,7 +226,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Sport")
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet4 | OrderList_Indent_Level_1 }
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Enable Caption Summaries by setting[ShowCaptionSummaryCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowCaptionSummaryCells) to true and by turning off [ShowSummaries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowSummaries) property that will disable creation of additional summary rows.
 
@@ -244,7 +244,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet5 | OrderList_Indent_Level_1 }
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 3. Once caption summaries are enabled, the next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to[CaptionSummaryRow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_CaptionSummaryRow) property. Optionally the caption text can customized as per need.
 
@@ -260,7 +260,7 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet6 | OrderList_Indent_Level_1 }
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 4. Finally, format the caption rows to improve the look and feel.
 
@@ -280,7 +280,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet7 | OrderList_Indent_Level_1 }
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 The following screenshot shows the grid with caption summaries,
 
@@ -312,7 +312,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet8 | OrderList_Indent_Level_1 }
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 2. Trigger caption summaries by setting appropriate properties.
 
@@ -331,7 +331,7 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet9 | OrderList_Indent_Level_1 }
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 3. Create[SortColumnDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html) for the field `ShipCountry`. Change default group order by using [SetGroupSummarySortOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptor.html#Syncfusion_Grouping_SortColumnDescriptor_SetGroupSummarySortOrder_System_String_System_String_) method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
 
@@ -357,7 +357,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet10 | OrderList_Indent_Level_1 }
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 4. While running the sample, the groups are sorted against summary values of Freight. Here is a sample screen shot.
 
