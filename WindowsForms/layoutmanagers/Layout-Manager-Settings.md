@@ -191,7 +191,7 @@ Me.borderLayout1.BottomMargin = 20
 
 {% seealso %}
 
-[Configuring BorderLayout](/windowsforms/layoutmanagers/borderlayout#configuring-borderlayout), [Configuring FlowLayout](/windowsforms/layoutmanagers/flowlayout#configuring-flowlayout), [Configuring GridLayout.](/https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout/overview)
+[Configuring BorderLayout](/windowsforms/layoutmanagers/borderlayout#configuring-borderlayout), [Configuring FlowLayout](/windowsforms/layoutmanagers/flowlayout#configuring-flowlayout), [Configuring GridLayout.](https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout/overview)
 
 {% endseealso %}
 
