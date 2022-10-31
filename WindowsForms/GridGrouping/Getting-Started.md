@@ -65,7 +65,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
 
-N> The `*` denotes that by default, support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454) and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control) functionalities can be added to the `GridControl` by doing some customizations. 
+N> The `*` denotes that by default, support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454/how-to-implement-the-custom-icomparer-to-sort-a-column-in-the-gridcontrol) and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control) functionalities can be added to the `GridControl` by doing some customizations. 
 
 For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
 
