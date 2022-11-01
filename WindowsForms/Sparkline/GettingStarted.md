@@ -132,6 +132,6 @@ Me.sparkLine1.Markers.NegativePointColor = New BrushInfo(Color.Red)
 
 ![MarkerCustomization](GettingStarted_images/MarkerCustomization.jpg)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
 
 
