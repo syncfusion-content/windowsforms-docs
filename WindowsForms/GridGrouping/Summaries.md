@@ -52,6 +52,7 @@ summaryColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Define a summary row and add the summary column into it.
+
 {% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
@@ -69,6 +70,7 @@ summaryRowDescriptor.Appearance.AnySummaryCell.Interior = New BrushInfo(Color.Fr
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Finally add summary row to the grid.
+
 {% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
