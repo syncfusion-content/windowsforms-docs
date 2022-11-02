@@ -34,9 +34,9 @@ Imports Syncfusion.Windows.Forms.Edit
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
+2. Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ILocalizationProvider.html) interface defined in the Syncfusion.Windows.Forms namespace.
 
-3. Return the localized versions of the string corresponding to the string identifiers.
+3. Return the localized versions of the string corresponding to the string identifiers.
 
 4. String identifiers are defined in the [ResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ResourceIdentifiers.html) and the [EditResourceIdentifiers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Localization.Localizer.EditResourceIdentifiers.html) classes in Syncfusion.Shared.Base and Syncfusion.Edit.Windows assemblies respectively.
 
@@ -59,7 +59,7 @@ Imports Syncfusion.Windows.Forms.ResourceIdentifiers
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html#Syncfusion_Windows_Forms_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
+5. Assign this instance to the [Provider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html#Syncfusion_Windows_Forms_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.LocalizationProvider.html) class before the InitializeComponent call in the constructor of the application. 
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -78,7 +78,7 @@ LocalizationProvider.Provider = New Localizer()
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}  
 
-6. The following code example demonstrates localizing various dialog boxes in the EditControl.
+6. The following code example demonstrates localizing various dialog boxes in the EditControl.
 
 **Find Dialog Box**
 

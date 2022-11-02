@@ -41,7 +41,7 @@ To add the control manually in C#, follow the given steps:
 	* Syncfusion.Tools.Windows
 	* Syncfusion.Edit.Windows
 
-3) Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
+3. Create an instance of the [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html), and then add it to the form.
 
 {% capture codesnippet1 %}
 {% tabs %}

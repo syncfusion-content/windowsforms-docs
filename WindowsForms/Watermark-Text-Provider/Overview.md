@@ -17,7 +17,7 @@ Syncfusion introduces a [BannerTextProvider](https://help.syncfusion.com/cr/wind
 
 The [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) contains the following features:
 
-**Text Mode** - Allows you to control visibility of the banner text using FocusMode and EditMode.
+* **Text Mode** - Allows you to control visibility of the banner text using FocusMode and EditMode.
 
-**Text color** - Allows you to set color to the BannerText in the BannerTextProvider control.
+* **Text color** - Allows you to set color to the BannerText in the BannerTextProvider control.
 

@@ -23,6 +23,7 @@ It is possible to layout the Child controls programmatically using Multiple Layo
 
 * Include the required namespace.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -41,10 +42,13 @@ Imports Syncfusion.Windows.Forms.Tools
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 
 * Declare instances for FlowLayout and GridBagLayout Managers. FlowLayout is used for aligning the Child components of Panel2 (which contains button4 to button8) and GridBagLayout for aligning the Child components of Panel1 (which contains button1, button2, button3 and Panel2).
 
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -81,9 +85,12 @@ Me.gridBagLayout1 = New Syncfusion.Windows.Forms.Tools.GridBagLayout(Me.componen
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
 * Set the Container control and constraints for the GridBagLayout. All the Child controls of this Container control are automatically registered as children with the GridBagLayout Manager.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -118,9 +125,12 @@ Me.gridBagLayout1.SetConstraints(Me.button3, New GridBagConstraints(-1, -1, 1, 1
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
 * Set the Container control, horizontal spacing between the components and alignment for the FlowLayout Manager.
 
+{% capture codesnippet4 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -146,9 +156,12 @@ Me.flowLayout1.Alignment = FlowAlignment.Near
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
 * Handle the Layout event of the form to reposition it's Child controls (Panels).
 
+{% capture codesnippet5 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -181,6 +194,8 @@ End Sub
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
 
 ![Overview_img78](Overview_images/Overview_img78.jpeg)
