@@ -419,4 +419,4 @@ Use Step 1 to Step 5 in Form_Load event,
 {% endcapture %}
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-   ![](Overview_images/Overview_img76.jpeg)
+   ![Laying out Non Control derived Component ](Overview_images/Overview_img76.jpeg)
