@@ -223,6 +223,8 @@ margin-top: 50px;
 		<div id="anchor"><a  href="https://help.syncfusion.com/windowsforms/tile-layout/getting-started">Tile Layout</a> </div>
 		<div id="anchor"><a  href="https://help.syncfusion.com/windowsforms/gradient-panel/getting-started">GradientPanel</a> </div>
 		<div id="anchor"><a  href="https://help.syncfusion.com/windowsforms/popup/getting-started">Popup</a> </div>
+		<div id="anchor"><a href="https://help.syncfusion.com/windowsforms/gradient-label/getting-started">Gradient Label</a> </div>
+		<div id="anchor"><a href="https://help.syncfusion.com/windowsforms/popupmenu/getting-started">PopupMenu</a> </div>
 		<div id="anchor"><a  href="https://help.syncfusion.com/windowsforms/splitcontainer/creating-splitcontaineradv">SplitContainer</a> </div>
 		<div id="anchor"><a  href="https://help.syncfusion.com/windowsforms/gradientpanelext/getting-started">GradientPanelExt</a></div>
 	</td>
