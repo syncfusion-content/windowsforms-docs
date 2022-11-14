@@ -21,7 +21,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
 2. The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html) control can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Shared.Base
+    * Syncfusion.Shared.Base
 
 ![Windows Forms EditableList drag and drop from toolbox](Creating-Editable-List_images/Creating-Editable-List_img1.png)
 

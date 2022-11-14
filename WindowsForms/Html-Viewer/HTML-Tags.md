@@ -1429,8 +1429,9 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endcapture %}
    {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-   Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
+4. Style tag in HTMLUI also supports the type attribute. The type attribute is optional and it specifies the type of the content in the HTML document.
 
+   {% capture codesnippet4 %}
    {% tabs %}
 
    {% highlight HTML %}
@@ -1470,6 +1471,10 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet4 | OrderList_Indent_Level_1 }}
+
+   {% capture codesnippet5 %}
 
    {% tabs %}
 
@@ -1487,6 +1492,8 @@ The Style tag is used to apply styles to the HTML elements in the HTML document.
    {% endhighlight %}
 
    {% endtabs %}
+   {% endcapture %}
+   {{ codesnippet5 | OrderList_Indent_Level_2 }}
 
 
 ## SUB - Subscript tag
