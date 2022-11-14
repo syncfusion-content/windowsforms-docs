@@ -129,6 +129,7 @@ End Class
 {% endtabs %}
 
 2. Assign the New custom control to the GridControl.
+
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
@@ -144,6 +145,7 @@ Me.gridControl1 = New VerticalScrollOptimization.DerivedGridControl()
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3. Set the `VScrollPixel` property to true.
+
 {% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
