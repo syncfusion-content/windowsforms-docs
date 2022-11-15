@@ -44,18 +44,14 @@ N> From the version 19.3, we have introduced [Handled](https://help.syncfusion.c
 {% highlight c# %}
 
 //Initialize PDF Viewer.
-
 PdfViewerControl pdfViewerControl = new PdfViewerControl();
-
 // Wires the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void PdfViewerControl_HyperlinkClicked(object sender, Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs args)
 {
-
-  // Gets or sets the value to handle the navigation of hyperlink.
-  args.Handled = true;
-            
+    // Gets or sets the value to handle the navigation of hyperlink.
+    args.Handled = true;
 }
 
 {% endhighlight %}
@@ -63,21 +59,15 @@ private void PdfViewerControl_HyperlinkClicked(object sender, Syncfusion.Windows
 {% highlight vbnet %}
 
 ' Hooks the event handler for `HyperlinkClicked` event
-
 'Initialize PDF Viewer.
-
 Private pdfViewerControl As New PdfViewerControl()
-
 'Load the PDF.
-
 pdfViewerControl.Load("Sample.pdf")
 
 AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
-
-'Your code here...
-
+    'Your code here...
 End Sub
 
 {% endhighlight %}
@@ -101,10 +91,8 @@ pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void PdfViewerControl_HyperlinkClicked(object sender, Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs args)
 {
-  
- //Returns the URI clicked in the PDF viewer control.
- string URI = args.Uri; 
-            
+    //Returns the URI clicked in the PDF viewer control.
+    string URI = args.Uri; 
 }
 
 {% endhighlight %}
@@ -115,10 +103,8 @@ private void PdfViewerControl_HyperlinkClicked(object sender, Syncfusion.Windows
 AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
-
-' Returns the URI clicked in the PDF viewer control.
-Dim uri As String = args.URI
-
+    ' Returns the URI clicked in the PDF viewer control.
+    Dim uri As String = args.URI
 End Sub
 
 {% endhighlight %}
@@ -137,10 +123,8 @@ pdfViewerControl.HyperlinkMouseOver += PdfViewerControl_HyperlinkMouseOver;
 
 private void PdfViewerControl_HyperlinkMouseOver(object sender, Syncfusion.Windows.Forms.PdfViewer.HyperlinkMouseOverEventArgs e)
 {
-
-//Returns the URI hovered in the PDF viewer control.
-string URI = e.Uri;
-            
+    //Returns the URI hovered in the PDF viewer control.
+    string URI = e.Uri;
 }
 
 {% endhighlight %}
@@ -159,13 +143,10 @@ pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
 private void PdfViewerControl_HyperlinkClicked(object sender, Syncfusion.Windows.Forms.PdfViewer.HyperlinkClickedEventArgs args)
 {
- 
- // Gets or sets the value to handle the navigation of hyperlink. 
-args.Handled = true;
-
- // Opens the URI (www.google.com) in a default browser.
- System.Diagnostics.Process.Start("www.google.com");
-             
+    // Gets or sets the value to handle the navigation of hyperlink. 
+    args.Handled = true;
+    // Opens the URI (www.google.com) in a default browser.
+    System.Diagnostics.Process.Start("www.google.com");
 }
 
 {% endhighlight %}
@@ -176,10 +157,8 @@ args.Handled = true;
 AddHandler pdfViewerControl.HyperlinkClicked, AddressOf PdfViewerControl_HyperlinkClicked
 
 Private Sub PdfViewerControl_HyperlinkClicked(obj As Object, args As Syncfusion.Windows.PdfViewer.AnnotEventArgs)
-
-' Opens the URI (www.google.com) in a default browser.
-System.Diagnostics.Process.Start("www.google.com")
-
+    ' Opens the URI (www.google.com) in a default browser.
+    System.Diagnostics.Process.Start("www.google.com")
 End Sub
 
 {% endhighlight %}
