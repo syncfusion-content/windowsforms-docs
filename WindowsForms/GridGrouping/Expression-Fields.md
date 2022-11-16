@@ -389,6 +389,7 @@ The custom functions which can be any mathematical formulas or calculation metho
 The following steps are used to add the custom function in ExpressionFields,
 
 1. Create the custom function with return type string,
+
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}
@@ -453,6 +454,7 @@ End Function
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Add the custom function in the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method and use that custom function in the Expressions
+
 {% capture codesnippet2 %}​
 {% tabs %}
 {% highlight c# %}
@@ -468,6 +470,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("AB
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Use the custom function named `ABSOLUTEVALUE` in the Expression,
+
 {% capture codesnippet3 %}​
 {% tabs %}
 {% highlight c# %}
@@ -498,6 +501,7 @@ Please refer the below dashboard sample to create the [CalcEngine](http://help.s
 The following steps are used to add the calculate function in the Expression Fields,
 
 1. Initialize the `CalcEngine` with `ICalcData`,
+
 {% capture codesnippet4 %}​
 {% tabs %}
 {% highlight c# %}
@@ -513,6 +517,7 @@ Dim engine As CalcEngine = New CalcEngine(data)
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 2. Add the calculate function to the ` ExpressionFieldEvaluator using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+
 {% capture codesnippet5 %}​
 {% tabs %}
 {% highlight c# %}
@@ -528,6 +533,7 @@ Me.gridGroupingControl1.TableDescriptor.ExpressionFieldEvaluator.AddFunction("IF
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 3. Use that calculate function named `IF` in the Expression,
+
 {% capture codesnippet6 %}​
 {% tabs %}
 {% highlight c# %}
@@ -560,6 +566,7 @@ The [calculate functions](#adding-calculate-engine-formulas) can be added as nes
 The following steps are used to add the nested functions,
 
 1. Initialize the `CalcEngine` with `ICalcData`,
+
 {% capture codesnippet7 %}​
 {% tabs %}
 {% highlight c# %}
@@ -575,6 +582,7 @@ Dim engine As New CalcEngine(data)
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 2. Add the calculate function to the ` ExpressionFieldEvaluator ` using [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.ExpressionFieldEvaluator.html#Syncfusion_Grouping_ExpressionFieldEvaluator_AddFunction_System_String_Syncfusion_Grouping_ExpressionFieldEvaluator_LibraryFunction_) method,
+
 {% capture codesnippet8 %}​
 {% tabs %}
 {% highlight c# %}
@@ -593,6 +601,7 @@ evaluator.AddFunction("MAX", New ExpressionFieldEvaluator.LibraryFunction(engine
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 3. Use that nested functions named `IF` and `MAX` in the Expressions,
+
 {% capture codesnippet9 %}​
 {% tabs %}
 {% highlight c# %}

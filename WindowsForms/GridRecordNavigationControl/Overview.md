@@ -13,6 +13,6 @@ The GridRecordNavigation control allows you to navigate between records by using
 
 ## Key features
 
-* Localization: Supports localizing the content of navigation bar.
-* Navigation: Supports navigating to the records dynamically and programmatically.
+* **Localization** - Supports localizing the content of navigation bar.
+* **Navigation** - Supports navigating to the records dynamically and programmatically.
 

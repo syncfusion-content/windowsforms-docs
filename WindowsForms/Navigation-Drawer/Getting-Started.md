@@ -60,67 +60,67 @@ To add the control manually in C#, follow the given steps:
 
 2. Include the **Syncfusion.Windows.Forms.Tools** namespace. 
 
-  {% capture codesnippet1 %}​
-  {% tabs %}
-  {% highlight C# %}
-  using Syncfusion.Windows.Forms.Tools;
-  {% endhighlight %}
-  {% highlight VB %}
-  Imports Syncfusion.Windows.Forms.Tools
-  {% endhighlight %}
-  {% endtabs %}
-  {% endcapture %}
-  {{ codesnippet1 | OrderList_Indent_Level_1 }}
+{% capture codesnippet1 %}​
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Forms.Tools;
+{% endhighlight %}
+{% highlight VB %}
+Imports Syncfusion.Windows.Forms.Tools
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 3. Create a NavigationDrawer instance, and add it to the window.
 
-  {% capture codesnippet2 %}​
-  {% tabs %}
-  {% highlight C# %}
-  NavigationDrawer navigationDrawer1 = new NavigationDrawer();
-  this.Controls.Add(navigationDrawer1);
-  {% endhighlight %}
-  {% highlight VB %}
-  Dim navigationDrawer1 As NavigationDrawer = New NavigationDrawer
-  Me.Controls.Add(navigationDrawer1)
-  {% endhighlight %}
-  {% endtabs %}
-  {% endcapture %}
-  {{ codesnippet2 | OrderList_Indent_Level_1 }}
+{% capture codesnippet2 %}​
+{% tabs %}
+{% highlight C# %}
+NavigationDrawer navigationDrawer1 = new NavigationDrawer();
+this.Controls.Add(navigationDrawer1);
+{% endhighlight %}
+{% highlight VB %}
+Dim navigationDrawer1 As NavigationDrawer = New NavigationDrawer
+Me.Controls.Add(navigationDrawer1)
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 4. Set the width and height to the drawer view.
 
-  {% capture codesnippet3 %}​
-  {% tabs %}
-  {% highlight C# %}
-  this.navigationDrawer1.DrawerWidth = this.Width/4;
-  this.navigationDrawer1.DrawerHeight = this.Height;
-  {% endhighlight %}
-  {% highlight VB %}
-  Me.navigationDrawer1.DrawerWidth = Me.Width/4
-  Me.navigationDrawer1.DrawerHeight = Me.Height
-  {% endhighlight %}
-  {% endtabs %}
-  {% endcapture %}
-  {{ codesnippet3 | OrderList_Indent_Level_1 }}
+{% capture codesnippet3 %}​
+{% tabs %}
+{% highlight C# %}
+this.navigationDrawer1.DrawerWidth = this.Width/4;
+this.navigationDrawer1.DrawerHeight = this.Height;
+{% endhighlight %}
+{% highlight VB %}
+Me.navigationDrawer1.DrawerWidth = Me.Width/4
+Me.navigationDrawer1.DrawerHeight = Me.Height
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 5. Add header to the NavigationDrawer.
 
  Create a [DrawerHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DrawerHeader.html) instance, and add it to the [Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.NavigationDrawer.html#Syncfusion_Windows_Forms_Tools_NavigationDrawer_Items) collection in NavigationDrawer.
 
-  {% capture codesnippet4 %}​
-  {% tabs %}
-  {% highlight C# %}
-  DrawerHeader drawerHeader1 = new DrawerHeader();
-  this.navigationDrawer1.Items.Add(this.drawerHeader1);
-  {% endhighlight %}
-  {% highlight VB %}
-  Dim drawerHeader1 As DrawerHeader = New DrawerHeader
-  Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
-  {% endhighlight %}
-  {% endtabs %}
-  {% endcapture %}
-  {{ codesnippet4 | OrderList_Indent_Level_1 }}
+{% capture codesnippet4 %}​
+{% tabs %}
+{% highlight C# %}
+DrawerHeader drawerHeader1 = new DrawerHeader();
+this.navigationDrawer1.Items.Add(this.drawerHeader1);
+{% endhighlight %}
+{% highlight VB %}
+Dim drawerHeader1 As DrawerHeader = New DrawerHeader
+Me.navigationDrawer1.Items.Add(Me.drawerHeader1)
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
  ![wf navigation drawer header item added](Getting-Started_images/wf-navigation-drawer-header-added-by-code.png)
 

@@ -175,6 +175,7 @@ The SfButton with rounded rectangle shape can be implemented programmatically by
 To draw the rounded rectangle shape for the SfButton follow the steps:
 
 1. Raise the Paint event of the SfButton.
+
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight c# %}

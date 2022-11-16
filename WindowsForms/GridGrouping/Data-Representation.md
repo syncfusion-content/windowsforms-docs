@@ -267,6 +267,7 @@ Provides splitter related properties.</td></tr>
 In this example, grouping grid is built with hierarchical dataset created at runtime. The formatting of Group Drop Area can be controlled by handling PrepareViewStyleInfo event for each of the grids in Group Drop Panel.
 
 1. Formatting Splitter and GroupDropPanel.
+
 {% capture codesnippet1 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -292,6 +293,7 @@ Private Me.gridGroupingControl1.GroupDropPanel.BackColor = Color.YellowGreen
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. PrepareViewStyleInfo event for each of the grids can be hooked by looping through controls in the panel.
+
 {% capture codesnippet2 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -339,6 +341,7 @@ Next ctrl
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Setting the style properties in PrepareViewStyleInfo event.
+
 {% capture codesnippet3 %}​
 {% tabs %}
 {% highlight C# %} 
@@ -892,6 +895,7 @@ Here is a sample implementation that illustrates usage of the above properties.
 
 1. Set up a Grid Grouping control and bind a data source into it.
 2. Setup the necessary Group Options as required.
+
 {% capture codesnippet4 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -931,6 +935,7 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "There are {RecordCount}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 3. Handle the QueryCellStyleInfo event to manipulate the group elements.
+
 {% capture codesnippet5 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -983,6 +988,7 @@ End Sub
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 4. You can control the appearance of different group elements by using Appearance property.
+
 {% capture codesnippet6 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1430,6 +1436,7 @@ N> A foreign-key reference relation allows the user to look up values in a relat
 The following code example illustrates the usage of foreign-key relation:
 
 1. Save the location of the mainTable.Customer column, so that it can be swapped after foreign table reference has been set.
+
 {% capture codesnippet7 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1446,6 +1453,7 @@ Dim lookUpIndex As Integer = td.VisibleColumns.IndexOf("Customer")
 {{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 2. Add foreign table to the Engine's source list.
+
 {% capture codesnippet8 %}​
 {% tabs %}
 {% highlight C# %} 
@@ -1459,6 +1467,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add(ForeignTableName, ForeignTable.
 {{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 3. Create and setup RelationKind.ForeignKeyReference relation. 
+
 {% capture codesnippet9 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1478,6 +1487,7 @@ rd.ChildTableName = ForeignTableName
 {{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 4. Set any optional properties on the relation. 
+
 {% capture codesnippet10 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1500,6 +1510,7 @@ rd.ChildTableDescriptor.SortedColumns.Add("CustomerName")
 {{ codesnippet10 | OrderList_Indent_Level_1 }}
 
 5. Add relation descriptor to MainTableDescriptor. 
+
 {% capture codesnippet11 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1513,6 +1524,7 @@ td.Relations.Add(rd)
 {{ codesnippet11 | OrderList_Indent_Level_1 }}
 
 6. Replace mainTable.Customer with foreignTable.CustomerName.    
+
 {% capture codesnippet12 %}​
 {% tabs %}
 {% highlight C# %} 
@@ -1621,6 +1633,7 @@ Summaries can be set at design time itself through property window of the grid g
 This example shows a grouping grid bound with Statistics table whose columns are ID, School, Sport, wins, losses, ties and year. Follow the steps below to create a summary for wins column that displays the sum of wins's values.
 
 1. Setup a SummaryColumn by instantiating GridSummaryColumnDescriptor specifying the SummaryType and format.
+
 {% capture codesnippet13 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1644,6 +1657,7 @@ sortColumnDescriptor.SummaryType = SummaryType.Int32Aggregate
 {{ codesnippet13 | OrderList_Indent_Level_1 }}
 
 2. Define a SummaryRow and add SummaryColumn into it.
+
 {% capture codesnippet14 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1661,6 +1675,7 @@ summaryRowDescriptor.Appearance.AnySummaryCell.Interior = new BrushInfo(Color.Fr
 {{ codesnippet14 | OrderList_Indent_Level_1 }}
 
 3. Finally add Summary Row into the grouping grid.
+
 {% capture codesnippet15 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1854,6 +1869,7 @@ Lets you control the caption text to be displayed.</td></tr>
 
 
 1. First, define a summary for the grid table. Then group the table against a data column.
+
 {% capture codesnippet16 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1883,6 +1899,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("RequiredDate")
 {{ codesnippet16 | OrderList_Indent_Level_1 }}
 
 2. Enable Caption Summaries by setting ShowCaptionSummaryCells to True and by turning off ShowSummaries property that will disable creation of additional summary rows.
+
 {% capture codesnippet17 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1902,6 +1919,7 @@ Me.gridGroupingControl1.ChildGroupOptions.ShowSummaries = False
 {{ codesnippet17 | OrderList_Indent_Level_1 }}
 
 3. Once caption summaries are enabled, your next step is to specify a summary to be displayed in the Caption Rows. This is done by assigning summary name to CaptionSummaryRow property. Optionally you can customize caption text in the way you need.
+
 {% capture codesnippet18 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1917,6 +1935,7 @@ Me.gridGroupingControl1.ChildGroupOptions.CaptionText = "{RecordCount} Items"
 {{ codesnippet18 | OrderList_Indent_Level_1 }}
 
 4. Finally, format the caption rows to improve the look and feel.
+
 {% capture codesnippet19 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1970,6 +1989,7 @@ This example uses an Orders Table bound to a grouping grid. Summaries are create
 Follow these steps to sort groups by summary values.
 
 6. Define Summary Column Descriptor for column Freight and add it to SummaryRow of Orders table.
+
 {% capture codesnippet20 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -1991,6 +2011,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRow1)
 {{ codesnippet20 | OrderList_Indent_Level_1 }}
 
 7. Trigger caption summaries by setting appropriate properties.
+
 {% capture codesnippet21 %}​
 {% tabs %}
 {% highlight C# %} 
@@ -2008,6 +2029,7 @@ Me.gridGroupingControl1.TableDescriptor.ChildGroupOptions.ShowSummaries = False
 {{ codesnippet21 | OrderList_Indent_Level_1 }}
 
 8. Create SortColumnDescriptor for the field ShipCountry. Change default group order by using SetGroupSummaryOrder method with its parameters conveying summary name and property in the summary. Then group the grid against this column.
+
 {% capture codesnippet22 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3219,6 +3241,7 @@ This section demonstrates how to manually specify master-detail relations betwee
 #### Steps to setup RelatedMasterDetails relation
 
 1. Setup three data tables that have primary and foreign key columns in common.
+
 {% capture codesnippet23 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3352,6 +3375,7 @@ End Function
 {{ codesnippet23 | OrderList_Indent_Level_1 }}
 
 2. Manually set up relationships between tables and add relation to the parent and child tables.
+
 {% capture codesnippet24 %}​
 {% tabs %}
 {% highlight C# %} 
@@ -3403,6 +3427,7 @@ parentToChildRelationDescriptor.ChildTableDescriptor.Relations.Add(childToGrandC
 3. Register the data tables with Engine.SourceListSet so that RelationDescriptor can resolve the name.
 
 4. Finally, bind hierarchical data source, which has been created through the above steps to a grouping grid by assigning parent table to the datasource.
+
 {% capture codesnippet25 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3438,6 +3463,7 @@ A foreign key reference relation can be set up between the lists by defining a r
 The following steps demonstrate this process.
 
 1. Create a collection named USStates in which each entry stores USState object.
+
 {% capture codesnippet26 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3643,6 +3669,7 @@ End Class
 {{ codesnippet26 | OrderList_Indent_Level_1 }}
 
 2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
+
 {% capture codesnippet27 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3658,6 +3685,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("USStates", usStates)
 {{ codesnippet27 | OrderList_Indent_Level_1 }}
 
 3. Creates a DataTable with the Key from USState as one of the columns.
+
 {% capture codesnippet28 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3694,6 +3722,7 @@ Next i
 {{ codesnippet28 | OrderList_Indent_Level_1 }}
 
 4. Establish ForeignKeyReference relationship.
+
 {% capture codesnippet29 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3791,6 +3820,7 @@ Say you have a Customers table where each customer can have a list of purchased 
 The following example illustrates creation of ForeignKeyKeyWords relation.
 
 1. Create two data tables, Customers and Items, and add a list of records into them.
+
 {% capture codesnippet30 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3885,6 +3915,7 @@ End Function
 {{ codesnippet30 | OrderList_Indent_Level_1 }}
 
 2. Register the child table (Items) into the SourceListSet of the grouping engine.
+
 {% capture codesnippet31 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3902,6 +3933,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("Items", childTable)
 {{ codesnippet31 | OrderList_Indent_Level_1 }}
 
 3. Assign the datasource to the grid.
+
 {% capture codesnippet32 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3915,6 +3947,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 {{ codesnippet32 | OrderList_Indent_Level_1 }}
 
 4. Establish ForeignKeyKeyWords relationship between the tables.
+
 {% capture codesnippet33 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -3966,6 +3999,7 @@ This relation kind can be set up by defining a relation descriptor with its attr
 The following steps demonstrate this process.
 
 1. Create a collection named Countries in which each entry stores a Country object.
+
 {% capture codesnippet34 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4175,6 +4209,7 @@ End Class
 {{ codesnippet34 | OrderList_Indent_Level_1 }}
 
 2. Create an object of USStates and add this object into the SourceListSet with a lookup name.
+
 {% capture codesnippet35 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4190,6 +4225,7 @@ Me.gridGroupingControl1.Engine.SourceListSet.Add("Countries", countries)
 {{ codesnippet35 | OrderList_Indent_Level_1 }}
 
 3. Create a DataTable with one of the columns type as Country.
+
 {% capture codesnippet36 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4225,6 +4261,7 @@ Next i
 {{ codesnippet36 | OrderList_Indent_Level_1 }}
 
 4. Establish the ForeignKeyReference relationship.
+
 {% capture codesnippet37 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4429,6 +4466,7 @@ End Class
 {{ codesnippet38 | OrderList_Indent_Level_1 }}
 
 2. Create another class(ParentObj) that contains a reference to the above class (ChildObj). The instances of this class make the parent records. Both the classes implement INotifyPropertyChanged interface in order to get notified of any property changes.
+
 {% capture codesnippet39 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4575,6 +4613,7 @@ End Class
 {{ codesnippet39 | OrderList_Indent_Level_1 }}
 
 3. Generate the collection using BindingList class, which implements ListChanged events in itself so that the grid can listen to those events when the list is changed. Add few items into the collection.
+
 {% capture codesnippet40 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4619,6 +4658,7 @@ Next i
 {{ codesnippet40 | OrderList_Indent_Level_1 }}
 
 4. Assign the above collection to the datasource of grouping grid.
+
 {% capture codesnippet41 %}​
 {% tabs %}
 {% highlight C# %}  
@@ -4632,6 +4672,7 @@ GridGroupingControl1.DataSource = topList
 {{ codesnippet41 | OrderList_Indent_Level_1 }}
 
 5. Establish UniformChildList relation kind.
+
 {% capture codesnippet42 %}​
 {% tabs %}
 {% highlight C# %} 

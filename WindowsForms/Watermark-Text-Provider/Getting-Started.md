@@ -22,13 +22,13 @@ Create new Windows Forms Project in Visual Studio to display watermark for edito
 
 ## Adding BannerTextProvider control via designer
 
-1) Create a new Windows Forms application using Visual Studio.
+1. Create a new Windows Forms application using Visual Studio.
 
-2) Add the the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) will be added automatically.
+2. Add the the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control to an application by dragging it from the toolbox to Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) will be added automatically.
 
 ![Drag and drop BannerTextProvider from toolbox](GettingStarted_images/GettingStarted_img1.png) 
 
-3) Drag the required control from toolbox and add to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and get an extender provider property as illustrated in the following sample.
+3. Drag the required control from toolbox and add to the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control and get an extender provider property as illustrated in the following sample.
 
 ![BannerTextProvider in Properties window of TextBoxExt control](GettingStarted_images/GettingStarted_img3.png) 
 
@@ -38,10 +38,11 @@ Create new Windows Forms Project in Visual Studio to display watermark for edito
 
 In order to add [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control manually, do the below steps,
 
-1) 	Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) to the project.
+1. Add the required [assembly references](https://help.syncfusion.com/windowsforms/control-dependencies#bannertextprovider) to the project.
 
-2) Add the required namespace and create the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control instance then add it to the Form.
+2. Add the required namespace and create the [BannerTextProvider](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextProvider.html) control instance then add it to the Form.
 
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -57,7 +58,11 @@ Imports Syncfusion.Windows.Forms
 {% endhighlight vb %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
+
+{% capture codesnippet2 %}
 {% tabs %}
 
 {% highlight C# %}
@@ -73,12 +78,16 @@ Dim bannerTextProvider As bannerTextProvider1 = New BannerTextProvider(Me.compon
 {% endhighlight %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_2 }}
+
 
 
 ## Assigning banner text to a control
 
-1) Add the control to which you want to set BannerText in the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) and add it to the form.
+1. Add the control to which you want to set BannerText in the form. For example, you can choose [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) and add it to the form.
 
+{% capture codesnippet3 %}
 {% tabs %}
 
 {% highlight c# %}
@@ -106,9 +115,12 @@ Me.Controls.Add(textBoxExt)
 {% endhighlight vb %}
 
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-2) Assign the banner text to the control.
+2. Assign the banner text to the control.
 
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight C# %}
 
@@ -134,6 +146,8 @@ bannerTextProvider1.SetBannerText(textBoxExt, bannerTextInfo)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 N> Make sure to clear the default value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.BannerTextInfo.html#Syncfusion_Windows_Forms_BannerTextInfo_Text) property of the control before setting the banner text.
 

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: How to layout non-control based Child components | WindowsForms | Syncfusion
-description: how to layout non-control based child components
+title: Non-control based Child components | WindowsForms | Syncfusion
+description: how to layout non-control based child components in Syncfusion Windows Forms Layout Managers Package control and more details.
 platform: WindowsForms
 control: Layout Managers Package
 documentation: ug
 ---
-## How to layout non-control based Child components
+
+# How to layout non-control based Child components
 
 The Layout Manager architecture seamlessly lets you use non-control derived Child-instances as the layout's Child controls. You can easily accomplish this by deriving your Child-types from the LayoutItemBase type and implementing methods. These instances can be used in any of the Layout Manager methods in the place of a Child control (for ex: SetConstraints, SetPreferredSize). This is feasible because the LayoutItemBase class has an implicit type-conversion operator that can convert itself to a control (use LayoutItemBase.ToControl method in VB.NET).
 
@@ -18,11 +19,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 1. Declare variables representing the Child control (non-control based components).
 
-
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet1 %}
+{% tabs %}
+{% highlight C# %}
 
 		private MyRectangle myRect1;
 
@@ -34,9 +33,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 		private MyPanel panel1;
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 		Private WithEvents myRect1 As MyRectangle
 
@@ -48,16 +47,16 @@ Use Step 1 to Step 5 in Form_Load event,
 
 		Private panel1 As MyPanel ;
 
-    {% endhighlight %}
-
-	{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 2. Set the Container control, color, and text for the above variables (non-control based components).
 
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet2 %}
+{% tabs %}
+{% highlight C# %}
 
 
 			// Layout Component 1
@@ -89,9 +88,9 @@ Use Step 1 to Step 5 in Form_Load event,
 			this.myRect3.Visible = true;
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 
 			' Layout Component 1
@@ -122,17 +121,17 @@ Use Step 1 to Step 5 in Form_Load event,
 
 			Me.myRect3.Visible = True
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
-
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 3. Declare instances for the GridBagConstraints which specifies how the components will be positioned inside a Container managed by the GridBagLayout control.
 
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet3 %}
+{% tabs %}
+{% highlight C# %}
 
 		GridBagConstraints gbc1 = new GridBagConstraints();
 
@@ -140,9 +139,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 		GridBagConstraints gbc3 = new GridBagConstraints();
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 		Dim gbc1 As GridBagConstraints
 
@@ -156,17 +155,18 @@ Use Step 1 to Step 5 in Form_Load event,
 
 		gbc3 = New GridBagConstraints()
 
-   {% endhighlight %}
+{% endhighlight %}
 
-   {% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 4. Set the FillType, WeightX, WeightY, GridPostX and GridPostY properties for the components.
 
+{% capture codesnippet4 %}
+{% tabs %}
 
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% highlight C# %}
 
 			gbc1.Fill = FillType.Both;
 
@@ -205,9 +205,9 @@ Use Step 1 to Step 5 in Form_Load event,
 			gbc3.CellSpanX = 2;
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 
 			gbc1.Fill = FillType.Both
@@ -246,17 +246,17 @@ Use Step 1 to Step 5 in Form_Load event,
 
 			gbc3.CellSpanX = 2
 			
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
-
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 5. Associate non-control based components with the constraints.
 
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet5 %}
+{% tabs %}
+{% highlight C# %}
 
    
 		this.gridBagLayout1.SetConstraints(this.myRect1.ToControl(), gbc1);
@@ -267,9 +267,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
    
 		Me.gridBagLayout1.SetConstraints(Me.myRect1.ToControl, gbc1)
 
@@ -277,18 +277,19 @@ Use Step 1 to Step 5 in Form_Load event,
 
 		Me.gridBagLayout1.SetConstraints(Me.myRect3.ToControl, gbc3)
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 6. Define the class for 'MyRectangle' that implements the LayoutItemBase.
 7. Use Step 6 to Step 9 inside the MyRectangle class that implements the LayoutItemBase.
 8. Declare variables for the size, color and base class of the control.
 
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet6 %}
+{% tabs %}
+{% highlight C# %}
 
 
 			public class MyRectangle : LayoutItemBase
@@ -307,9 +308,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
    
 			Public Class MyRectangle Inherits LayoutItemBase
 
@@ -321,17 +322,17 @@ Use Step 1 to Step 5 in Form_Load event,
 
 			Public Shared PrefSize As System.Drawing.Size
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 9. Set the variables declared in step 6 in the constructor.
 
-
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet7 %}
+{% tabs %}
+{% highlight C# %}
 
 				public MyRectangle(Control parent, Color color, string text)
 
@@ -346,9 +347,9 @@ Use Step 1 to Step 5 in Form_Load event,
 				}
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 				Public Sub New(ByVal parent As Control, ByVal color As color, ByVal [text] As String)
 
@@ -362,38 +363,38 @@ Use Step 1 to Step 5 in Form_Load event,
 
 				End Sub
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 10. Fill the interior of the rectangle specified by a pair of coordinates, width and a height using OnPaint event of LayoutItemBase.
 
-
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet8 %}
+{% tabs %}
+{% highlight C# %}
 
 		e.Graphics.FillRectangle(new SolidBrush(color), this.Bounds);
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 
 				e.Graphics.FillRectangle(new SolidBrush(color), this.Bounds)
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
  
 11. Invalidate the Child controls assigned to the control in the OnBoundsChanged event of the LayoutItemBase.
 
-
-
-   {% tabs %}
-
-   {% highlight C# %}
+{% capture codesnippet9 %}
+{% tabs %}
+{% highlight C# %}
 
 				protected override void OnBoundsChanged()
 
@@ -403,9 +404,9 @@ Use Step 1 to Step 5 in Form_Load event,
 
 				}
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight VB %}
+{% highlight VB %}
 	
 				Protected Overloads Overrides Sub OnBoundsChanged()
 
@@ -413,8 +414,10 @@ Use Step 1 to Step 5 in Form_Load event,
 
 				End Sub
 
-    {% endhighlight %}
+{% endhighlight %}
 
-	{% endtabs %}
+{% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
-   ![](Overview_images/Overview_img76.jpeg)
+   ![Laying out Non Control derived Component ](Overview_images/Overview_img76.jpeg)

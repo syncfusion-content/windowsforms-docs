@@ -25,9 +25,9 @@ The following steps describe how to create an WinForms Calendar (SfCalendar) con
 
 2. Add the [SfCalendar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html) control to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically:
 
-* Syncfusion.Core.WinForms
-* Syncfusion.SfInput.WinForms
-* Syncfusion.Shared.Base
+	* Syncfusion.Core.WinForms
+	* Syncfusion.SfInput.WinForms
+	* Syncfusion.Shared.Base
 
 ![Drag and drop the sfcalendar to form](getting-started-images/gettingstarted.png) 
 
@@ -39,9 +39,9 @@ The following steps describe how to create an WinForms Calendar (SfCalendar) con
 
 2. Add the following assembly references to the project:
 
-* Syncfusion.Core.WinForms
-* Syncfusion.SfInput.WinForms
-* Syncfusion.Shared.Base
+	* Syncfusion.Core.WinForms
+	* Syncfusion.SfInput.WinForms
+	* Syncfusion.Shared.Base
 
 3. Include the required namespaces.
 

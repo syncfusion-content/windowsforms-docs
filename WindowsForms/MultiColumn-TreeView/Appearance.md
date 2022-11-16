@@ -649,7 +649,7 @@ To set the left images for all the nodes in MultiColumnTreeView follow the below
 
     Through code:
 
-{% capture codesnippet1 %}​
+{% capture codesnippet1 %}
 {% tabs %}
 
 {% highlight c# %}
