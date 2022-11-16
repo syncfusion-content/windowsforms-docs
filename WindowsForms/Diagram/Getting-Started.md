@@ -130,6 +130,7 @@ To create a Diagram control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a Diagram control using the following code.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -173,11 +174,12 @@ diagram.Location = New Point(20, 5)
 
 {% endhighlight %}
 {% endtabs %}
-
-
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 4. Add a model to the Diagram control.
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -198,12 +200,12 @@ diagram.Model = model
 
 {% endhighlight %}
 {% endtabs %}
-
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 5. Add the Diagram control to the Diagram Form window.
 
-
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -218,6 +220,8 @@ Me.Controls.Add(diagram)
             
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 ![Diagram](Getting-Started_images/Getting-Started_img8.png)
 
@@ -516,8 +520,7 @@ To create a PaletteGroupBar control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupBar control using the following code.
 
-
-
+{% capture codesnippet4 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -566,7 +569,8 @@ Me.Controls.Add(paletteBar)
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 
 ![PaletteGroupBar through code](Getting-Started_images/Getting-Started_img13.png)
@@ -615,7 +619,7 @@ To create a PaletteGroupView control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PaletteGroupView control using the following code.
 
-
+{% capture codesnippet5 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -660,6 +664,8 @@ Me.Controls.Add(paletteView)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet5 | OrderList_Indent_Level_1 }}
 
 ![PaletteGroupView Control through Code](Getting-Started_images/Getting-Started_img16.png)
 
@@ -707,7 +713,7 @@ To create an Overview control using code:
    * Syncfusion.Shared.Base.dll
 3. Create an Overview control using the following code.
 
-
+{% capture codesnippet6 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -742,6 +748,8 @@ Me.Controls.Add(overviewControl)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet6 | OrderList_Indent_Level_1 }}
 
 ![Creating an Overview Control through Code](Getting-Started_images/Getting-Started_img19.png)
 
@@ -789,7 +797,7 @@ To create a PropertyEditor control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a PropertyEditor control using the following code.
 
-
+{% capture codesnippet7 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -826,6 +834,8 @@ Me.Controls.Add(propertyEditor)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet7 | OrderList_Indent_Level_1 }}
 
 ![PropertyEditor Control through Code](Getting-Started_images/Getting-Started_img22.png)
 
@@ -873,7 +883,7 @@ To create a DocumentExplorer control using code:
    * Syncfusion.Shared.Base.dll
 3. Create a DocumentExplorer control using the following code.
 
-
+{% capture codesnippet8 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -908,6 +918,8 @@ Me.Controls.Add(documentExplorer)
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet8 | OrderList_Indent_Level_1 }}
 
 ![DocumentExplorer Control through Code](Getting-Started_images/Getting-Started_img25.png)
 
@@ -957,11 +969,11 @@ Diagram Builder Functionalities
 
 Follow the below steps in order to open an existing diagram document
 
-1.  Add OpenFileDialog control to the Form. 
-2.  Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
-3.  Add the below code snippet in your button click event.
+1. Add OpenFileDialog control to the Form. 
+2. Set the Filter property of OpenFileDialog as Essential Diagram Palettes|*.edp|Visio Stencils|*.vss; *.vsx|Visio    Drawings(Shapes only)|*.vsd; *.vdx|All files|*.*. 
+3. Add the below code snippet in your button click event.
 
-
+{% capture codesnippet9 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -975,6 +987,8 @@ this.diagram1.Refresh();
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet9 | OrderList_Indent_Level_1 }}
 
 The diagram1.LoadBinary() method loads the selected diagram file into diagram document.
 
@@ -994,8 +1008,7 @@ The diagram1.LoadBinary() method loads the selected diagram file into diagram do
    2.  Set the Filter property of SaveFileDialog as  Essential Diagram Files|*.edd|All files|*.*.
    3.  Add the following code snippet in your button click event.
 
-
-
+{% capture codesnippet10 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -1008,6 +1021,8 @@ this.diagram1.SaveBinary(this.FileName);
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet10 | OrderList_Indent_Level_1 }}
 
    The diagram1.SaveBinary() method saves the diagram file in the given filename.
 
@@ -2091,6 +2106,7 @@ diagram.Location = new Point(20, 5);
 
 2. You can populate Nodes and Connectors in diagram automatically based on content from database by using binding APIs. To achieve this, you need a table in a database that have 2 columns, one representing ‘Id’ to uniquely identify objects, and one ‘ParentId’ representing relationship with the parent object. The following code example explains how to bind diagram with data from database by initializing the binding properties.
 
+{% capture codesnippet11 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -2129,11 +2145,12 @@ diagram1.EndUpdate();
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet11 | OrderList_Indent_Level_1 }}
 
 3. Use the following code example to establish the connection with the Database and retrieve the data in the form of DataTable.
 
-
+{% capture codesnippet12 %}
 {% tabs %}
 {% highlight vb %}
 
@@ -2151,7 +2168,8 @@ return dataTable;
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet12 | OrderList_Indent_Level_1 }}
 
 The following code example explains how to apply the layout for the data retrieved from the Database.
 
