@@ -154,11 +154,12 @@ To turn your desktop application into DPI-aware and add `app.manifest` file, fol
 
 5. Most of the Syncfusion controls support high DPI through manifest file. But, the following Syncfusion controls provides the high DPI support by adding both manifest file and enabling the [DpiAware](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_DpiAware) property.
 
-* GridControl
-* GridGroupingControl
-* GridDataBoundGrid
-* GridListControl
+  * GridControl
+  * GridGroupingControl
+  * GridDataBoundGrid
+  * GridListControl
 
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -191,7 +192,8 @@ gridListControl1.Grid.DpiAware = True
 
 {% endhighlight %}
 {% endtabs %}
-
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 
 ## Automatically change images based on DPI through ImageListAdv component
@@ -239,7 +241,7 @@ The steps below illustrate the setting of image for a ButtonAdv using ImageListA
 
 8. Now map the desired image from the [`Images`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageListAdv.html#Syncfusion_Windows_Forms_Tools_ImageListAdv_Images) collection to the ButtonAdv control using its [`Image`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ButtonAdv.html) property.
 
-{% capture codesnippet2 %}
+{% capture codesnippet3 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -254,7 +256,7 @@ buttonAdv1.Image = imageListAdv1.Images(0)
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
-{{ codesnippet2 | OrderList_Indent_Level_1 }}
+{{ codesnippet3 | OrderList_Indent_Level_1 }}
 
 
 9. Run the application and the image for the ButtonAdv will be displayed as per the image set for different DPI scaling as shown below.
