@@ -146,7 +146,7 @@ The following table shows the default values for the common text used in the [Pd
 ## Adding Resource file
 
 * Create a folder with name `Resources` in your application.
-* Add default English (“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.Windows-165170116) (resource) file of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) in the `Resources` folder named as Syncfusion.PdfViewer.Windows.resx.
+* Add default English (“en-US”) [Resx](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.Windows-165170116) (resource) file of [PdfViewerControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfViewerControl.html) in the `Resources` folder named as Syncfusion.PdfViewer.Windows.resx.
 * Create Resx (resource) file and named as Syncfusion.PdfViewer.Windows.[Culture name].resx.For example, Syncfusion.PdfViewer.Windows.fr.resx for French culture. 
 * Add the resource key such as `OpenDocument` and its corresponding localized value in Syncfusion.PdfViewer.Windows.fr.resx file. Refer the below screenshot for the same.
 * Execute the application in the French culture to see the changes.
