@@ -11,7 +11,7 @@ documentation: ug
 
 We can save and load the background color information in an XML file to persist the color state of a GradientLabel. The XmlSerializer Class can be used for providing serialization support.
 
-*	First include the required namespaces.
+* First include the required namespaces.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -36,7 +36,7 @@ Imports System.IO
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-*  The below code snippet saves the information in a file called the color.xml.
+* The below code snippet saves the information in a file called the color.xml.
 
 {% capture codesnippet2 %}
 {% tabs %}
