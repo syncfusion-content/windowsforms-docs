@@ -18,8 +18,8 @@ Syncfusion [WinForms PDF Viewer](https://www.syncfusion.com/winforms-ui-controls
 
 PDFium is used in Google Chrome for rendering PDF files. It provides accurate and robust PDF rendering. It is the recommended PDF rendering engine. 
 
-N> From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WinForms PDF Viewer.
-N> From v20.1.0.x onwards, Pdfium is upgraded to the new version which was built with the branch [chromium/4880](https://pdfium.googlesource.com/pdfium/+/refs/heads/chromium/4880).
+N>* From v16.3.0.x onwards, this PDFium rendering engine is the default rendering engine of Syncfusion WinForms PDF Viewer.
+N>* From v20.1.0.x onwards, Pdfium is upgraded to the new version which was built with the branch [chromium/4880](https://pdfium.googlesource.com/pdfium/+/refs/heads/chromium/4880).
 
 ### How PDFium works with Syncfusion’s PDF Viewer
 
@@ -55,7 +55,6 @@ namespace PdfViewerDemo
         {
             //Set the reference path.
             pdfViewer.ReferencePath = @"D:\ThirdPartyBinaries\";
-
             //Load the PDF.
             pdfViewer.Load("Sample.pdf");
         }
@@ -92,7 +91,6 @@ namespace PdfViewerDemo
         {
             //Set the rendering engine as `SfPdf`.
             pdfViewer.RenderingEngine = PdfRenderingEngine.SfPdf;
-
             //Load the PDF.
             pdfViewer.Load("Sample.pdf");
         }

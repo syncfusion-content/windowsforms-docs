@@ -90,7 +90,6 @@ PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
 //Loading the document in the PdfViewerControl
 pdfViewerControl1.Load("Sample.pdf");
-
 //Add PdfViewerControl to the Form
 Controls.Add(pdfViewerControl1);
 
@@ -102,7 +101,6 @@ Dim pdfViewerControl1 As PdfViewerControl = New PdfViewerControl()
 
 'Loading the document in the PdfViewerControl
 pdfViewerControl1.Load("Sample.pdf")
-
 'Add PdfViewerControl to the Form
 Controls.Add(pdfViewerControl1)
 

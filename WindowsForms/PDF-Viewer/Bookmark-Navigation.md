@@ -33,10 +33,8 @@ void GoToBookmark()
 
 	//Get the complete bookmarks in the PDF.
 	PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
-
 	//In this example, we get the first bookmark in the PDF bookmarks collection at the index of 0.
 	PdfBookmark firstBookmark = bookmarks[0];
-
 	//Navigates to the first bookmark present in the PDF.
 	pdfViewer.GoToBookmark(firstBookmark);
 }
@@ -55,10 +53,8 @@ void GoToChildBookmark()
 
 	//Get the complete bookmarks in the PDF.
 	PdfBookmarkBase bookmarks = pdfLoadedDocument.Bookmarks;
-
 	//Gets the fourth bookmark in the PDF bookmarks collection at the index of 3.
 	PdfBookmark fourthBookmark = bookmarks[3];
-
 	//Check whether it has child bookmarks.
 	if (fourthBookmark.Count > 0)
 	{
@@ -77,7 +73,6 @@ You need to call the above methods after the document is loaded. The [DocumentLo
 
 // wire the document loaded event.
 pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
-
 // load the PDF.
 pdfViewer.Load("../../Data/C_Sharp_Succinctly.pdf");
 
