@@ -547,12 +547,12 @@ Indicates if the toolbar can be resized automatically. Default value is true.</t
 Indicates back color of the toolbar.</td></tr>
 <tr>
 <td>
-{{'[Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Border)'| markdownify }}
+{{'[Border](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Buttons)'| markdownify }}
 </td><td>
 Specifies the border style.</td></tr>
 <tr>
 <td>
-Buttons
+{{'[Buttons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartToolBarInfo.html#Syncfusion_Windows_Forms_Chart_ChartToolBarInfo_Border)'| markdownify }}
 </td><td>
 List of buttons to which you can add new Buttons or delete existing ones.</td></tr>
 <tr>
@@ -774,7 +774,7 @@ Description</th></tr>
 Sets the highlight color for the series.</td></tr>
 <tr>
 <td>
-HiddenInterior
+{{'[DimmedInterior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStyleInfo.html#Syncfusion_Windows_Forms_Chart_ChartStyleInfo_DimmedInterior)'| markdownify }}
 </td><td>
 Controls the transparency of the non-highlighted series. While mouse hovering on a particular series, all other series will be set with the color, specified in this property.</td></tr>
 <tr>
@@ -856,7 +856,7 @@ Specifies the color, which is to be used when Vertical  Interactive Cursor is dr
 Color</td></tr>
 <tr>
 <td>
-{{'[Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor__ctor_Syncfusion_Windows_Forms_Chart_ChartSeries_System_Drawing_Color_)'| markdownify }}
+{{'[Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Color)'| markdownify }}
 </td><td>
 Specifies the base color, which is to be used other than the default color. This acts as a parent color.</td><td>
 Color</td></tr>
@@ -920,7 +920,7 @@ cursor1.CursorOrientation = InteractiveCursorOrientation.Horizontal
 
 The same step is repeated for **vertical** and **both** cursor orientations except for the naming **Vertical** and **Both** respectively.
 
-You can also add color(s) to individual interactive cursor. The default color (base color) is **Red**. You can change the default color by using [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor__ctor_Syncfusion_Windows_Forms_Chart_ChartSeries_System_Drawing_Color_), [HorizontalCursorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_HorizontalCursorColor), and [VerticalCursorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_VerticalCursorColor) properties. When you use the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor__ctor_Syncfusion_Windows_Forms_Chart_ChartSeries_System_Drawing_Color_) property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets.
+You can also add color(s) to individual interactive cursor. The default color (base color) is **Red**. You can change the default color by using [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Color), [HorizontalCursorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_HorizontalCursorColor), and [VerticalCursorColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_VerticalCursorColor) properties. When you use the [Color](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartInteractiveCursor.html#Syncfusion_Windows_Forms_Chart_ChartInteractiveCursor_Color) property, the interactive cursor will be drawn based on the color specified by the Color property (assuming this as base/parent color) regardless of the colors specified for Horizontal and Vertical cursor orientations. This is shown in the following code snippets.
 
 {% tabs %}  {% highlight c# %}
 
@@ -1171,7 +1171,7 @@ series1.PointsToolTipFormat = "Sales:{4}K"
 
 ![Chart Runtime](Runtime-Features_images/Runtime-Features_img27.jpeg)
 
-You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the [ChartSeries.PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) event as shown below.
+You can also customize the tooltip for individual data points by setting the ToolTip style for each data point. This is best accomplished by listening to the [ChartSeries.PrepareStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html#Syncfusion_Windows_Forms_Chart_ChartSeries_PrepareStyle) event as shown below.
 
 {% tabs %}  
 
@@ -1306,7 +1306,7 @@ Specifies the tooltip style. Possible values:EllipseRectangleSmoothRectangle - D
 Specifies the symbol shape to use.</td></tr>
 <tr>
 <td>
-SymbolColor
+{{'[SymbolColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartFancyToolTipInfo.html#Syncfusion_Windows_Forms_Chart_ChartFancyToolTipInfo_SymbolColor)'| markdownify }}
 </td><td>
 Specifies the inner color of the symbol.</td></tr>
 <tr>
@@ -1471,7 +1471,7 @@ Type
 <tr>
 <td>
 
-{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html)'| markdownify }}
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_AxisTooltipRendering)'| markdownify }}
 </td>
 <td>
 This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }}  can be customized using this event.
@@ -1482,7 +1482,7 @@ This event is triggered once for each axis. The appearance of individual {{'[Axi
 </tr>
 <tr>
 <td>
-{{'[TrackballTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html)'| markdownify }}
+{{'[TrackballTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html#Syncfusion_Windows_Forms_Chart_ChartTrackball_TrackballTooltipRendering)'| markdownify }}
 </td>
 <td>
 This event is triggered once for each series. The appearance of individual {{'[TrackballTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.TrackballTooltip.html)'| markdownify }} of {{'[ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html)'| markdownify }} can be customized using this event.
@@ -1634,7 +1634,7 @@ Type
 <tr>
 <td>
 
-{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTrackball.html)'| markdownify }} 
+{{'[AxisTooltipRendering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltipRendering)'| markdownify }} 
 </td>
 <td>
 This event is triggered once for each axis. The appearance of individual {{'[AxisTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartCrosshair.html#Syncfusion_Windows_Forms_Chart_ChartCrosshair_AxisTooltip)'| markdownify }} of {{'[ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }} can be customized using this event.

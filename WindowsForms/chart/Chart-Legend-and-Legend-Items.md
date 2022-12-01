@@ -198,7 +198,7 @@ When docked to a side, this property specifies how the legend should be aligned 
 <tr>
 <td>
 
-{{'[LegendPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LegendsPlacement)'| markdownify }}
+{{'[LegendsPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_LegendsPlacement)'| markdownify }}
 </td><td>
 Specifies the placement of a legend in a chart. It can be placed Inside or Outside the chart area using ChartPlacement enum.</td></tr>
 <tr>
@@ -336,7 +336,7 @@ Me.chartControl1.Legends[1].CustomItems = New ChartLegendItem() {legendItem1}
 
 There is also a way to specify custom legend item via events right before they get rendered. 
 
-In this example, we reverse the order in which the legend items are rendered through the [FilterItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html) event.
+In this example, we reverse the order in which the legend items are rendered through the [FilterItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_FilterItems) event.
 
 {% tabs %}  
 
@@ -494,7 +494,7 @@ Reference links </th></tr>
 <tr>
 <td>
 
-{{'[MinSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html)'| markdownify }}
+{{'[MinSize](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_MinSize)'| markdownify }}
 </td><td>
 Used to specify a minimum rectangular size for the legend item.</td><td>
 object sender, ChartLegendMinSizeEventArgs e</td><td>
@@ -503,7 +503,7 @@ NA</td></tr>
 <tr>
 <td>
 
-{{'[DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html)'| markdownify }}
+{{'[DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_DrawItem)'| markdownify }}
 </td><td>
 Used to customize the rendering of the legend.</td><td>
 object sender, ChartLegendDrawItemEventArgs e</td><td>
@@ -512,7 +512,7 @@ NA</td></tr>
 <tr>
 <td>
 
-{{'[DrawItemText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html)'| markdownify }}
+{{'[DrawItemText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_DrawItemText)'| markdownify }}
 </td><td>
 Used to customize the rendering of the legend item text.</td><td>
 object sender, ChartLegendDrawItemTextEventArgs e</td><td>
@@ -521,7 +521,7 @@ NA</td></tr>
 <tr>
 <td>
 
-{{'[FilterItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html)'| markdownify }}
+{{'[FilterItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_FilterItems)'| markdownify }}
 </td><td>
 Used to dynamically provide a list of legend items during runtime. </td><td>
 object sender, ChartLegendFilterItemsEventArgs e</td><td>
@@ -538,7 +538,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[GetItemBy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html)'| markdownify }}
+{{'[GetItemBy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartLegend.html#Syncfusion_Windows_Forms_Chart_ChartLegend_GetItemBy_System_Drawing_Point_)'| markdownify }}
 </td><td>
 Gets the legend item at the specified coordinates.</td></tr>
 </table>

@@ -260,9 +260,9 @@ By default, this additional axis will be rendered right next to the correspondin
 
 ### Stacked or SideBySide Position
 
-By default, the secondary axes are rendered stacked over, or parallel, to the corresponding primary axis. And also sometimes it is rendered in a position opposite to the primary axis as shown in the above screenshots. This is because the [XAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) and [YAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) properties are set to Stacking by default.
+By default, the secondary axes are rendered stacked over, or parallel, to the corresponding primary axis. And also sometimes it is rendered in a position opposite to the primary axis as shown in the above screenshots. This is because the [XAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) and [YAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_YAxesLayoutMode) properties are set to Stacking by default.
 
-However, you might want the secondary axis to be rendered in-line, side-by-side to the primary axis. You can do by setting the [XAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) and [YAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) properties to SideBySide.
+However, you might want the secondary axis to be rendered in-line, side-by-side to the primary axis. You can do by setting the [XAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_XAxesLayoutMode) and [YAxisLayoutMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html#Syncfusion_Windows_Forms_Chart_ChartArea_YAxesLayoutMode) properties to SideBySide.
 
 Here is a code sample.
 
@@ -712,7 +712,7 @@ Affects the labels and other text colors that gets rendered in the axis.</td></t
 Specifies the font to use for label and other texts that get rendered in the axis. By default it is set to Trebuchet, 9, regular.</td></tr>
 <tr>
 <td>
-ScaleLabels
+{{'[ScaleLabels](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_ScaleLabels)'| markdownify }}
 </td><td>
 Setting this to true will automatically resize the text if the chart size is expanded by the user.</td></tr>
 <tr>
@@ -823,7 +823,7 @@ Description</th></tr>
 <tr>
 <td>
 
-{{'[ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html)'| markdownify }}
+{{'[FormatAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel)'| markdownify }}
 </td><td>
 The event that gets raised for each label before getting rendered. This is a good place to customize the label text.</td></tr>
 </table>
@@ -1192,7 +1192,7 @@ If a [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Win
 
 ##### Adding Tooltip for ChartAxisLabel
 
-To add a tooltip for chart, set the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property to true. By default [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html) content will be taken as tooltip content.  You can also customize the tooltip content using the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) event.
+To add a tooltip for chart, set the [ShowToolTips](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ShowToolTips) property to true. By default [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html) content will be taken as tooltip content.  You can also customize the tooltip content using the [FormatLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel) event.
 
 The following code illustrates how to add a customized tooltip for [ChartAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxisLabel.html):
 
@@ -1349,7 +1349,7 @@ End Sub
 
 {% seealso %}
 
-[Customizing Label Text](#Customizing Label Text) and [ToolTip](/windowsforms/chart/chart-series#tooltip)
+[Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text) and [ToolTip](https://help.syncfusion.com/windowsforms/chart/chart-series#tooltip)
 
 {% endseealso %}
 
@@ -1375,7 +1375,7 @@ Sets the color for the title text of the axis.</td></tr>
 Sets the font style for the title text.</td></tr>
 <tr>
 <td>
-'TitleRotationAngle'
+{{'[TitleRotationAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleRotationAngle)'| markdownify }}
 </td><td>
 Sets angle to rotate the title text.</td></tr>
 </table>
@@ -1413,7 +1413,7 @@ Me.chartControl1.PrimaryXAxis.TitleFont = New Font("Arial", 10)
 
 ### Rotating Axis Title
 
-You can now rotate the titles of axes to 0, 90, 180, and 270 degrees using the 'TitleRotationAngle' property of 'ChartAxis'.
+You can now rotate the titles of axes to 0, 90, 180, and 270 degrees using the [TitleRotationAngle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_TitleRotationAngle) property of [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html).
 
 {% tabs %}
 
@@ -1960,7 +1960,7 @@ Gets / sets the period (time span) over which the stripline appears if the value
 Gets / sets the start of the stripline. Also see End.</td></tr>
 <tr>
 <td>
-{{'[StartAtAxisPositionStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_StartAtAxisPosition)'| markdownify }}
+{{'[StartAtAxisPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_StartAtAxisPosition)'| markdownify }}
 </td><td>
 Indicates whether the Stripline will start at the start of the axis range.</td></tr>
 <tr>
@@ -2287,7 +2287,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 
 Essential Chart supports customizing the individual axis label position to the right or left side of the axis for a horizontal axis and to the top or bottom for a vertical axis based on the user's needs.
 
-This feature can be achieved by using the [ChartFormatAxisLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event) event of the chart axis. The following code illustrates customizing the individual label position by using [AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartPlacement.html) in the [ChartFormatAxisLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) event.
+This feature can be achieved by using the [FormatLabel](/windowsforms/chart/chart-control-events#chartformataxislabel-event) event of the chart axis. The following code illustrates customizing the individual label position by using [AxisLabelPlacement](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_AxisLabelPlacement) in the [FormatLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_FormatLabel) event.
 
 {% tabs %}
 

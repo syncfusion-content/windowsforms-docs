@@ -268,7 +268,7 @@ Essential Chart is now associated with the creation and loading of chart templat
 
 The appearance settings for various components of a Chart like [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html), [ChartArea](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartArea.html), Series properties and Point properties can be stored in a template, which can be loaded into new [Chart Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) when needed.
 
-A chart template can contain the properties of more than one data series. When such templates are loaded into a destination [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html), the appearance settings of the data series will be applied in a sequential order, i.e., the first set of appearance settings of a data series will be applied to the destination Chart's first series and the second set of appearance properties of the data series will be applied to the destination Chart's second series and so on. 
+A chart template can contain the properties of more than one data series. When such templates are loaded into a destination [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html), the appearance settings of the data series will be applied in a sequential order, i.e., the first set of appearance settings of a data series will be applied to the destination Chart's first series and the second set of appearance properties of the data series will be applied to the destination Chart's second series and so on. 
 
 If the destination collection's length is larger than the source collection, then the settings will repeat itself for these additional entries in the destination collection.
 
@@ -296,12 +296,12 @@ ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
 ### Load Template
 
-EssentialChart provides support to load the saved [Chart Template](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) into a new chart control. This loads the series properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
+EssentialChart provides support to load the saved [Chart Template](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTemplate.html) into a new chart control. This loads the series properties and the point properties, which was saved in a XML file and applies these properties into the new chart control.
 
 * Selecting the **Load Template** from the context menu at the design time.
 * By clicking the **Load Template** designer verb in the Visual Studio property browser. 
 
-[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) has static method to load the template data programmatically. We need to pass the ChartControl which will be applied with the loaded template data.
+[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTemplate.html) has static method to load the template data programmatically. We need to pass the ChartControl which will be applied with the loaded template data.
 
 ### Saving chart series data
 
@@ -347,12 +347,12 @@ ChartTemplate.Save(Me.chartControl1, "TemplateName.xml")
 
 ### Reset Template
 
-The [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html), which when loaded with a template will be applied with the appearance and other settings that were stored in the template. These settings can be reset and the Chart can be reverted back to its original appearance by using the below two methods.
+The [ChartControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html), which when loaded with a template will be applied with the appearance and other settings that were stored in the template. These settings can be reset and the Chart can be reverted back to its original appearance by using the below two methods.
 
 * Selecting the **Reset Template** from the context menu at the design time.
 * By clicking the **Reset Template** link in the Visual Studio property browser.
 
-[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) can be reset using the following simple statements,
+[ChartTemplate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartTemplate.html) can be reset using the following simple statements,
 
 {% tabs %}  
 

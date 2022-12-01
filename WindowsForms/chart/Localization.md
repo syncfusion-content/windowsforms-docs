@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Windows Forms Chart
 
-[Localization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) allows chart to display data according to the language and culture specific to a particular country or region.
+[Localization](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.LocalizationBase.html) allows chart to display data according to the language and culture specific to a particular country or region.
 
 EssentialChart now supports localization; built-in resource files for specific languages can be easily added.  Context menu items, exception messages, and some of the toolbar items can be localized.
 
