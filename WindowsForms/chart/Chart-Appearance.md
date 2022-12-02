@@ -728,7 +728,7 @@ Specifies how chart elements should be rendered. Possible values:<ul><li>AntiAli
 
 Essential Chart lets you render any data on the chart area. If the built-in features and functionality are not sufficient you can simply draw whatever you want on the chart surface.
 
-You can do so by listening to the [ChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
+You can do so by listening to the [ChartAreaPaint](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_ChartAreaPaint) event. This event is raised both when a chart is painted as well as when the chart is exported to other image formats, SVG, etc. Remember to do your custom drawing in this event instead of in the Paint event (which will not be called during chart export).
 
 {% tabs %}
 {% highlight c# %}
@@ -845,7 +845,7 @@ Below are the WaterMark properties with descriptions.
 <table>
 <tr>
 <th>
-ChartAxis Property</th><th>
+Watermark Property</th><th>
 Description</th></tr>
 <tr>
 <td>
@@ -875,7 +875,7 @@ Sets watermark horizontally in the chart area.</td></tr>
 Sets watermark vertically in the chart area.</td></tr>
 <tr>
 <td>
-ZOrder</td><td>
+{{'[ZOrder](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartWatermark.html#Syncfusion_Windows_Forms_Chart_ChartWatermark_ZOrder)'| markdownify }}</td><td>
 Used to specify whether watermark should be shown on top of the chart.</td></tr>
 </table>
 
