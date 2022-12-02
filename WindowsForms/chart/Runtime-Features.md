@@ -1025,25 +1025,6 @@ Server Side</td><td>
 Double</td></tr>
 </table>
 
-**Methods**
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
-<tr>
-<td>
-SetSeriesSymbolForCursor</td><td>
-Used to customize the symbol which will be displayed at the intersection between the series point and interactive cursor.  </td><td>
-ChartSymbolInfo</td><td>
-Server Side</td><td>
-Void </td></tr>
-</table>
-
 ### Existing Features
 
 We can move the interactive cursor for series points only (i.e., the interactive cursor can be moved from one data point to another by dragging). Users cannot move the interactive cursor over the whole chart area.

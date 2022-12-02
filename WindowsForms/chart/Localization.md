@@ -85,6 +85,6 @@ To view a sample,
 3. Click Run Samples.
 4. Navigate to Culture Localization > Localization sample.
 
-You can find the resource file for the localization in English at the following location.
+You can find the resource file for the localization in English at the .../bin/Debug location of the sample file.
 
-[ChartControl_Resource](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=ChartControl_Resource-1347262360.zip)
+[Chart_Localization Sample](https://github.com/syncfusion/winforms-demos/tree/master/chart/Culture%20Localization)
