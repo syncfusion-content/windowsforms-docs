@@ -88,11 +88,12 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 //Initializing the PdfViewerControl
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
 
+//Add PdfViewerControl to the Form
+Controls.Add(pdfViewerControl1);
+
 //Loading the document in the PdfViewerControl
 pdfViewerControl1.Load("Sample.pdf");
 
-//Add PdfViewerControl to the Form
-Controls.Add(pdfViewerControl1);
 
 {% endhighlight %}
 {% highlight vb %}
@@ -100,11 +101,12 @@ Controls.Add(pdfViewerControl1);
 'Initializing the PdfViewerControl
 Dim pdfViewerControl1 As PdfViewerControl = New PdfViewerControl()
 
+'Add PdfViewerControl to the Form
+Controls.Add(pdfViewerControl1)
+
 'Loading the document in the PdfViewerControl
 pdfViewerControl1.Load("Sample.pdf")
 
-'Add PdfViewerControl to the Form
-Controls.Add(pdfViewerControl1)
 
 {% endhighlight %}
 {% endtabs %}
