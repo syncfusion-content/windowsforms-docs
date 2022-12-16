@@ -44,7 +44,7 @@ Use the following steps to create the Syncfusion Windows Forms project through t
   
    ![Syncfusion Windows Forms project configuration wizard](Project-Template-images\Syncfusion-Project-Template-Gallery2019-2.png)
 
-   N> .NET 6.0 version is available from v19.4.0.38 and support from Visual Studio 2022. 
+   N> .NET 6.0 and .NET 7.0 version is available from v19.4.0.38 and support from Visual Studio 2022. 
 
    In Visual Studio 2017 or lower, Syncfusion Windows Forms Application project configuration wizard.
 
