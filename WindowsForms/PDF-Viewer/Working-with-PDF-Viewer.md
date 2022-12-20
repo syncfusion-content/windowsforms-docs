@@ -19,11 +19,8 @@ A PDF can be loaded into the WinForms PDF Viewer either through the open file bu
 {%highlight c#%}
 
 //Initialize PdfViewerControl.
-
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
-
 //Load the PDF.
-
 pdfViewerControl1.Load("Sample.pdf");
 
 {%endhighlight%}
@@ -32,11 +29,8 @@ pdfViewerControl1.Load("Sample.pdf");
 {%highlight vb%}
 
 'Initialize PdfViewerControl.
-
 Private pdfViewerControl1 As New PdfViewerControl()
-
 'Load the PDF.
-
 pdfViewerControl1.Load("Sample.pdf")
 
 {%endhighlight%}
@@ -48,11 +42,8 @@ You can load an encrypted document by using the overload in the [Load](https://h
 {%highlight c#%}
 
 //Initialize PdfViewerControl.
-
 PdfViewerControl pdfViewerControl1 = new PdfViewerControl();
-
 //Load the PDF.
-
 pdfViewerControl1.Load("Sample.pdf", "password");
 
 {%endhighlight%}
@@ -60,11 +51,8 @@ pdfViewerControl1.Load("Sample.pdf", "password");
 {%highlight vb%}
 
 'Initialize PdfViewerControl.
-
 Private pdfViewerControl1 As New PdfViewerControl()
-
 'Load the PDF.
-
 pdfViewerControl1.Load("Sample.pdf", "password")
 
 {%endhighlight%}
@@ -79,11 +67,8 @@ Essential PdfViewerControl allows selected pages to be exported as raster images
 {% tabs %}
 {%highlight c#%}
 
-
 Bitmap image = pdfViewerControl1.ExportAsImage(0);
-
 // Save the image.
-
 image.Save("Sample.png", ImageFormat.Png);
 
 {%endhighlight%}
@@ -91,9 +76,7 @@ image.Save("Sample.png", ImageFormat.Png);
 {%highlight vb%}
 
 Dim image As Bitmap = pdfViewerControl1.ExportAsImage(0)
-
 'Save the image.
-
 image.Save("Sample.png", ImageFormat.Png)
 
 {%endhighlight%}
@@ -123,9 +106,7 @@ Exporting pages of PDF document as vector images can be done using the [ExportAs
 {%highlight c#%}
 
 Metafile image = pdfViewerControl1.ExportAsMetafile(0);
-
 // Save the image
-
 image.Save("Sample.emf", ImageFormat.Emf);
 
 {%endhighlight%}
@@ -133,9 +114,7 @@ image.Save("Sample.emf", ImageFormat.Emf);
 {%highlight vb%}
 
 Dim image As Metafile = pdfViewerControl1.ExportAsMetafile(0)
-
 ' Save the image
-
 image.Save("Sample.emf", ImageFormat.Emf)
 
 {%endhighlight%}
@@ -172,7 +151,6 @@ private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionComple
 {
     //Get the whole selected text
     string selectedText = args.SelectedText;
-
     //Get the selected text and its rectangular bounds for each page separately if the selection is made on multiple pages
     Dictionary<int, Dictionary<string, Rectangle>> selectedTextInformation = args.SelectedTextInformation;
 }
