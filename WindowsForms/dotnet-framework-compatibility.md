@@ -95,7 +95,7 @@ No</td></tr>
 
 <tr>
 <td>
-From 20.4.4 (2022 Vol4)</td><td>
+From 20.4 (2022 Vol4)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
