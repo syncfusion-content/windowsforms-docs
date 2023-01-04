@@ -24,9 +24,8 @@ Syncfusion Version </th>
 .NET 4.0</th><th>
 .NET 4.5</th><th>
 .NET 4.6 & above</th><th>
-.NET Core 3.1</th><th>
-.NET 5.0</th><th>
-.NET 6.0</th></tr>
+.NET 6.0</th><th>
+.NET 7.0</th><</tr>
 
 <tr>
 <td>
@@ -34,7 +33,6 @@ Earlier Version</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-No</td><td>
 No</td><td>
 No</td><td>
 No</td><td>
@@ -49,7 +47,6 @@ Yes</td><td>
 Yes</td><td>
 No</td><td>
 No</td><td>
-No</td><td>
 No</td></tr>
 
 <tr>
@@ -61,13 +58,11 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 No</td><td>
-No</td><td>
 No</td></tr>
 
 <tr>
 <td>
 From 17.2 (2019 Vol2)</td><td>
-Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -84,14 +79,23 @@ Yes</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
-Yes</td><td>
-Yes</td><td>
+No</td><td>
 No</td></tr>
 
 <tr>
 <td>
 From 19.4 (2021 Vol4)</td><td>
 Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td></tr>
+
+<tr>
+<td>
+From 20.4 (2022 Vol4)</td><td>
 Yes</td><td>
 Yes</td><td>
 Yes</td><td>
@@ -115,13 +119,12 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <th>.NET 4.5</th>
 <th>.NET 4.5.1</th>
 <th>.NET 4.6 & above</th>
-<th>.NET Core 3.1</th>
-<th>.NET 5.0</th>
 <th>.NET 6.0</th>
+<th>.NET 7.0</th>
 </tr>
 
 <tr>
-<td colspan="7"><b>GRIDS</b></td>
+<td colspan="9"><b>GRIDS</b></td>
 </tr>
 <tr>
 <td>SfDataGrid</td>
@@ -133,12 +136,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>GridControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -159,13 +160,11 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 
 <tr>
 <td>GridGroupingControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -186,16 +185,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>DATA VISUALIZATION</b></td>
+<td colspan="9"><b>DATA VISUALIZATION</b></td>
 </tr>
 
 <tr>
 <td>Chart</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -216,13 +213,11 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Maps</td>
 <td>No</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -242,13 +237,11 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Radial Gauge</td>
 <td>No</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -268,13 +261,11 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Digital Gauge</td>
 <td>No</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -294,7 +285,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -307,12 +297,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Barcode</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -333,7 +321,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -346,12 +333,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>SkinManager</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -372,16 +357,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>LAYOUT</b></td>
+<td colspan="9"><b>LAYOUT</b></td>
 </tr>
 
 <tr>
 <td>DockingManager</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -402,12 +385,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Carousel</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -428,12 +409,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>CardLayout</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -454,12 +433,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>GridLayout</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -480,12 +457,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>TileLayout</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -506,12 +481,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>GradientPanelExt</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -532,12 +505,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>PopupMenu</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -558,12 +529,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>SplitContainerAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -584,7 +553,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -597,16 +565,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>FILE VIEWERS & EDITORS</b></td>
+<td colspan="9"><b>FILE VIEWERS & EDITORS</b></td>
 </tr>
 
 <tr>
 <td>PDF Viewer</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -627,12 +593,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Syntax Editor</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -653,7 +617,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -666,16 +629,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>NAVIGATION</b></td>
+<td colspan="9"><b>NAVIGATION</b></td>
 </tr>
 
 <tr>
 <td>TabControlAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -696,12 +657,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>RibbonPanelMergeContainer</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -722,12 +681,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>MiniToolBar</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -748,12 +705,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>NavigationView</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -774,12 +729,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>NavigationDrawer</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -800,12 +753,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>ChildFrame barManager</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -826,12 +777,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>MultiColumnTreeview</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -852,7 +801,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -865,12 +813,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>RecordNavigationControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -891,12 +837,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>SplitterControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -917,12 +861,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>TabBarSplitterControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -943,12 +885,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>RadialMenu</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -969,12 +909,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>ToolStripEx</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -995,12 +933,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>BackStageView</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1021,12 +957,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>WizardControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1047,7 +981,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1060,16 +993,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>INPUT CONTROLS</b></td>
+<td colspan="9"><b>INPUT CONTROLS</b></td>
 </tr>
 
 <tr>
 <td>MaskedEditBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1090,12 +1021,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>CheckBoxAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1116,12 +1045,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>ColorPickerUIAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1142,12 +1069,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>CurrencyTextBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1168,12 +1093,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>DoubleTextBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1194,12 +1117,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>CurrencyEdit</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1220,11 +1141,12 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>NumericUpDownExt</td>
+<td>Yes</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1241,6 +1163,8 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 
 <tr>
@@ -1251,11 +1175,12 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>SpellChecker</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1276,12 +1201,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>RadialSlider</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1302,7 +1225,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1315,11 +1237,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>DIALOGS AND NOTIFICATION</b></td>
+<td colspan="9"><b>DIALOGS AND NOTIFICATION</b></td>
 </tr>
 
 <tr>
@@ -1332,12 +1253,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>HubTile</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1358,12 +1277,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>MetroForm</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1384,12 +1301,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>SplashControl</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1410,12 +1325,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Office2007Form</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1436,12 +1349,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>StatusBarAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1462,12 +1373,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>StatusBarExt</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1488,7 +1397,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1501,12 +1409,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>TabbedMDIManger</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1527,7 +1433,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1540,18 +1445,16 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>LISTS AND DROPDOWN</b></td>
+<td colspan="9"><b>LISTS AND DROPDOWN</b></td>
 </tr>
 
 <tr>
 <td>SfComboBox</td>
 <td>No</td>
 <td>No</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1570,12 +1473,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>AutoLabel</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1596,12 +1497,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>MultiColumnComboBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1622,12 +1521,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>MultiSelectionComboBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1648,12 +1545,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>FontListBox</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1674,7 +1569,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1687,11 +1581,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>BUTTONS</b></td>
+<td colspan="9"><b>BUTTONS</b></td>
 </tr>
 
 <tr>
@@ -1704,12 +1597,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>ButtonEdit</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1730,7 +1621,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1743,11 +1633,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>CALENDAR</b></td>
+<td colspan="9"><b>CALENDAR</b></td>
 </tr>
 
 <tr>
@@ -1760,12 +1649,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Schedule</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1786,16 +1673,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>MISCELLEANEOUS</b></td>
+<td colspan="9"><b>MISCELLEANEOUS</b></td>
 </tr>
 
 <tr>
 <td>Calculate</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1816,12 +1701,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>Clock</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1842,7 +1725,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1855,16 +1737,14 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
-<td colspan="7"><b>CLASSIC CONTROLS</b></td>
+<td colspan="9"><b>CLASSIC CONTROLS</b></td>
 </tr>
 
 <tr>
 <td>ButtonAdv</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1885,12 +1765,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>ComboBoxAutoComplete</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -1911,7 +1789,6 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
@@ -1924,12 +1801,10 @@ Below table represents the supported Syncfusion Essential Studio controls for .N
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 
 <tr>
 <td>SuperToolTip</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
