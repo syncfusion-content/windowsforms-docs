@@ -47,7 +47,6 @@ If the Syncfusion account is not associated with a trial, license, or expired tr
 
 ![No Trial or No License](licensing-images/no-active-trial-or-license.png)
 
-
 ## See Also
 
 * [How to Register Syncfusion License Key in WindowsForms Application?](https://github.com/syncfusion-content/windowsforms-docs/blob/master/WindowsForms/Licensing/how-to-register-in-an-application.md)
