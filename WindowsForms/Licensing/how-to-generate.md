@@ -49,4 +49,4 @@ If the Syncfusion account is not associated with a trial, license, or expired tr
 
 ## See Also
 
-* [How to Register Syncfusion License Key in WindowsForms Application?](https://github.com/syncfusion-content/windowsforms-docs/blob/master/WindowsForms/Licensing/how-to-register-in-an-application.md)
+* [How to Register Syncfusion License Key in Windows Forms Application?](https://github.com/syncfusion-content/windowsforms-docs/blob/master/WindowsForms/Licensing/how-to-register-in-an-application.md)
