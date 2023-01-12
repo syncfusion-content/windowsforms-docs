@@ -132,7 +132,7 @@ Data Files-If you have .xml, .MDB, or other data files, ensure that they have su
 
 Refer to the document in the following path, for step by step process of Syncfusion assemblies’ deployment in ASP.NET.
 
-[http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](http://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
+[https://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf](https://www.syncfusion.com/support/user/uploads/webdeployment_c883f681.pdf)
 
 N> Application with Essential Grouping needs the following dependent assemblies for deployment.
 
