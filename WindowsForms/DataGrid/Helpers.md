@@ -260,7 +260,7 @@ This will return the index of the header row in the SfDataGrid.
 
 ## IsAddNewIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid represents the `AddNewRow`, you can use the `IsAddNewIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `AddNewRow`.
+To determine if a specific row index in a SfDataGrid is associated with the `AddNewRow`, you can use the `IsAddNewIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `AddNewRow`.
 
 Here is an example of how you can use this method to determine if a row is the `AddNewRow` :
 
@@ -272,11 +272,11 @@ bool isAddNewRow = this.sfDataGrid1.IsAddNewRowIndex(rowIndex);
 {% endhighlight %}
 {% endtabs %}
 
-This will return `true` if the specified rowIndex represents the `AddNewRow`, and `false` otherwise.
+This will return `true` if the specified rowIndex is associated with the `AddNewRow`, and `false` otherwise.
 
 ## IsTableSummaryIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid represents the `TableSummaryRow` you can use the `IsTableSummaryIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is a `TableSummaryRow`.
+To determine if a specific row index in a SfDataGrid is associated with the `TableSummaryRow` you can use the `IsTableSummaryIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is a `TableSummaryRow`.
 
 Here is an example of how you can use this method to determine if a row is a `TableSummaryRow` :
 
@@ -288,11 +288,11 @@ bool isTableSummaryRow = this.sfDataGrid1.TableControl.IsTableSummaryIndex(rowIn
 {% endhighlight %}
 {% endtabs %}
 
-This will return `true` if the specified rowIndex represents the `TableSummaryRow`, and `false` otherwise.
+This will return `true` if the specified rowIndex is associated with the `TableSummaryRow`, and `false` otherwise.
 
 ## IsFilterRowIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid represents the `FilterRow`, you can use the `IsFilterRowIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `FilterRow`.
+To determine if a specific row index in a SfDataGrid is associated with the `FilterRow`, you can use the `IsFilterRowIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `FilterRow`.
 
 Here is an example of how you can use this method to determine if a row is a filter row:
 
@@ -304,7 +304,7 @@ bool isFilterRow = this.sfDataGrid1.IsFilterRowIndex(rowIndex);
 {% endhighlight %}
 {% endtabs %}
 
-This will return `true` if the specified rowIndex represents the `FilterRow`, and `false` otherwise.
+This will return `true` if the specified rowIndex is associated with the `FilterRow`, and `false` otherwise.
 
 ## Dispose
 
