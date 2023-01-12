@@ -80,59 +80,60 @@ IsFilterRowIndex(int rowIndex)</td><td>
 Decides whether the given row index is <code>FilterRow</code> index or not.</td></tr>
 </table>
 
-ResolveToRecordIndex(int rowIndex)
+## ResolveToRecordIndex(int rowIndex)
 
-To get the record index of a row in a SfDataGrid, you can use the `ResolveToRecordIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns the corresponding record index.
+In order to obtain the record index of a specific row in an SfDataGrid control, you can make use the `ResolveToRecordIndex` method of the `DataGridIndexResolver` class. This method takes an integer parameter, which represents the row index, and returns the corresponding record index.
 
 Here is an example of how you can use this method to get the record index of a row:
 
 {% tabs %}
 {% highlight C# %}
-
-int recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex)
+int rowIndex = 5;
+int recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
 
 {% endhighlight %}
 {% endtabs %}
 
-If this method does not find any record with the specified rowIndex, it will return a value of -1. Otherwise it will return the record index of the specified `rowIndex`.
+If the record with the specified rowIndex is not available, it will return a value of -1. Otherwise it will return the record index of the specified `rowIndex`.
 
-ResolveToRowIndex(int recordIndex)
+## ResolveToRowIndex(int recordIndex)
 
-To get the row index of a record in a SfDataGrid, you can use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes the record index as a parameter and returns the corresponding row index.
+In order to obtain the row index of a record in an SfDataGrid control, you can make use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes an integer parameter, which represents the record index, and returns the corresponding row index.
 
 Here is an example of how you can use this method to get the row index of a record:
 
 {% tabs %}
 {% highlight C# %}
 
-int rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(recordIndex)
+int recordIndex = 2;
+int rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(recordIndex);
 
 {% endhighlight %}
 {% endtabs %}
 
-If you pass a negative record index to this method, it will return a value of -1. Otherwise it will return the row index of the specified `recordIndex`.
+If the specified record index is less than 0, it will return a value of -1. Otherwise it will return the row index of the specified `recordIndex`.
 
-ResolveToRowIndex(object recordItem)
+## ResolveToRowIndex(object recordItem)
 
-To get the row index of a specific record in a SfDataGrid, you can use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes the record as a parameter and returns the corresponding row index.
+In order to obtain the row index of a specific record in an SfDataGrid control, you can make use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes record as a parameter and returns the corresponding row index.
 
 Here is an example of how you can use this method to get the row index of a specific record:
 
 {% tabs %}
 {% highlight C# %}
 
-int rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(record)
+int rowIndex = this.sfDataGrid1.TableControl.ResolveToRowIndex(record);
 
 {% endhighlight %}
 {% endtabs %}
 
-If this method is unable to find the specified record in the grid's data source, it will return a value of -1.Otherwise it will return the row index of the specified `record`.
+If the specified record is not available, it will return a value of -1. Otherwise it will return the row index of the specified `record`.
 
-ResolveStartIndexOfGroup(Group group)
+## ResolveStartIndexOfGroup(Group group)
 
-To get the group index of a specific group in a SfDataGrid, you can use the `ResolveStartIndexOfGroup` method of the `DataGridIndexResolver` class. This method takes the group as a parameter and returns the corresponding group index.
+In order to obtain the start index of a specific group in an SfDataGrid control, you can make use the `ResolveStartIndexOfGroup` method of the `DataGridIndexResolver` class. This method takes a Group object as a parameter and returns the corresponding group start index.
 
-Here is an example of how you can use this method to get the group index of a specific group:
+Here is an example of how you can use this method to get the start index of a specific group:
 
 {% tabs %}
 {% highlight C# %}
@@ -143,11 +144,11 @@ int groupIndex = this.sfDataGrid1.TableControl.ResolveStartIndexOfGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
-If this method is unable to find the specified group in the list of groups in the grid, it will return a value of -1.Otherwise it will return the group index of the specified `group`.
+If the specified group is not available in the list of groups in the grid, it will return a value of -1. Otherwise it will return the start index of the specified `group`.
 
-ResolveToGridVisibleColumnIndex(int visibleColumnIndex)
+## ResolveToGridVisibleColumnIndex(int visibleColumnIndex)
 
-To get the GridColumn index based on the visible column index in a SfDataGrid, you can use the `ResolveToGridVisibleColumnIndex` method of the `DataGridIndexResolver` class. This method takes the visible column index as a parameter and returns the corresponding GridColumn index.
+In order to obtain the GridColumn index for the specified visible column index in an SfDataGrid control, you can make use the `ResolveToGridVisibleColumnIndex` method of the `DataGridIndexResolver` class. This method takes the visible column index as a parameter and returns the corresponding GridColumn index.
 
 Here is an example of how you can use this method to get the GridColumn index of a visible column:
 
@@ -159,13 +160,14 @@ int columnIndex = this.sfDataGrid1.TableControl.ResolveToGridVisibleColumnIndex(
 {% endhighlight %}
 {% endtabs %}
 
-This method excludes the row header and indent column when determining the GridColumn index.And it will return the GridColumn index based on the specified `visibleColumnIndex`.
+This method excludes the row header and indent column when determining the GridColumn index. And it will return the GridColumn index based on the specified `visibleColumnIndex`.
 
-ResolveStartIndexBasedOnPosition()
+## ResolveStartIndexBasedOnPosition()
 
-To get the data row starting index based on the positions of other rows such as the `AddNewRow`, `FilterRow`, and `UnBoundRow` in a SfDataGrid, you can use the `ResolveStartIndexBasedOnPosition` method of the `DataGridIndexResolver` class.
+In order to obtain the starting index of a data row based on the positions of other rows such as the `AddNewRow`, `FilterRow`, and `UnBoundRow`, you can make use the `ResolveStartIndexBasedOnPosition` method of the `DataGridIndexResolver` class.
 
 Here is an example of how you can use this method to get the data row starting index:
+
 {% tabs %}
 {% highlight C# %}
 
@@ -174,13 +176,13 @@ int startColumnIndex = this.sfDataGrid1.TableControl.ResolveStartIndexBasedOnPos
 {% endhighlight %}
 {% endtabs %}
 
-This method returns the index of the first data row in the grid ans it includes the stacked header row (if present) when determining the data row starting index. By default, this method returns 0 if the grid does not have any other rows such as such as the `AddNewRow`, `FilterRow`, and `UnBoundRow`.
+The method will return an index of the first data row in the grid and it includes the stacked header row (if present) when determining the data row starting index. By default, the method returns 1 if the grid does not have any other rows such as such as the `AddNewRow`, `FilterRow`, and `UnBoundRow`.
 
-ResolveToScrollColumnIndex(int gridColumnIndex)
+## ResolveToScrollColumnIndex(int gridColumnIndex)
 
-To get the visible column index based on the GridColumn index in a SfDataGrid, you can use the `ResolveToGridVisibleColumnIndex` method of the `DataGridIndexResolver` class. This method takes the GridColumn index as a parameter and returns the corresponding visible column index.
+In order to obtain the visible column index for the specified GridColumn index in an SfDataGrid control, you can make use the `ResolveToScrollColumnIndex` method of the `DataGridIndexResolver` class. This method takes the column index as a parameter and returns the corresponding visible column index.
 
-Here is an example of how you can use this method to get the visible column index based on the GridColumn index:
+Here is an example of how you can use this method to get the visible column index based on the specific GridColumn index:
 
 {% tabs %}
 {% highlight C# %}
@@ -190,11 +192,27 @@ int columnIndex = this.sfDataGrid1.TableControl.ResolveToScrollColumnIndex(gridC
 {% endhighlight %}
 {% endtabs %}
 
-This method includes the row header and indent column when determining the VisibleColumn index. And it will return the VisibleColumn index based on the `gridColumnIndex`.
+This method includes the row header and indent column when determining the visible column index. And it will return the visible column index based on the `gridColumnIndex`.
 
-GetDetailsViewDataGridRowIndex(DetailsViewDataGrid detailsViewDataGrid)
+## ResolveToStartColumnIndex()
 
-To get the details view row index of a DetailsViewDataGrid in a SfDataGrid, you can use the `GetDetailsViewDataGridRowIndex` method of the `SDataGrid` class. This method takes the DetailsViewDataGrid as a parameter and returns the corresponding details view row index.
+In order to obtain the start column index in an SfDataGrid control, you can make use the `ResolveToStartColumnIndex` method of the `DataGridIndexResolver` class.
+
+Here is an example of how you can use this method to get the start column index:
+
+{% tabs %}
+{% highlight C# %}
+
+int startColumnIndex = this.sfDataGrid1.TableControl.ResolveToStartColumnIndex();
+   
+{% endhighlight %}
+{% endtabs %}
+
+This method will return an index of the start column index in the grid. By default, the method returns 0 if the grid does not have any column.
+
+## GetDetailsViewDataGridRowIndex(DetailsViewDataGrid detailsViewDataGrid)
+
+In order to obtain the details view row index of a DetailsViewDataGrid in an SfDataGrid control, you can make use the `GetDetailsViewDataGridRowIndex` method of the `DataGridIndexResolver` class. This method takes the DetailsViewDataGrid as a parameter and returns the corresponding details view row index.
 
 Here is an example of how you can use this method to get the details view row index of a DetailsViewDataGrid:
 
@@ -206,13 +224,13 @@ int detailsViewRowIndex = this.sfDataGrid1.GetDetailsViewDataGridRowIndex(detail
 {% endhighlight %}
 {% endtabs %}
 
-If the specified DetailsViewDataGrid does not match with in the DetailsViewDataRow.DetailsViewDataGrid then it will return a value of -1. Otherwise will return the details view row index of the `detailsViewDataGrid`.
+If the specified DetailsViewDataGrid does not match with in the DetailsViewDataRow.DetailsViewDataGrid then it will return a value of -1. Otherwise, it will return the details view row index of the `DetailsViewDataGrid`.
 
-GetTableSummaryCount(VerticalPosition position)
+## GetTableSummaryCount(VerticalPosition position)
 
-To get the total number of table summary rows in a specific position (e.g. top or bottom) in a SfDataGrid, you can use the `GetTableSummaryCount` method of the `DataGridIndexResolver` class. This method takes a VerticalPosition enum value as a parameter and returns the number of table summary rows in the specified position.
+In order to obtain the total number of table summary rows in a specific position (e.g. top or bottom) in a SfDataGrid, you can use the `GetTableSummaryCount` method of the `DataGridIndexResolver` class. This method takes a VerticalPosition enum value as a parameter and returns the number of table summary rows in the specified position.
 
-Here is an example of how you can use this method to get the total number of top table summary rows in the grid:
+Here is an example of how you can use this method to get the total number of table summary rows in in the grid in top position:
 
 {% tabs %}
 {% highlight C# %}
@@ -222,11 +240,11 @@ int tableSummaryCount = this.sfDataGrid1.TableControl.GetTableSummaryCount(Verti
 {% endhighlight %}
 {% endtabs %}
 
-This will return the total number of top table summary rows in the grid.
+This will return the total number of table summary rows in the grid. By default, the method returns 0 if the grid does not have any table summary row.
 
-GetHeaderIndex()
+## GetHeaderIndex()
 
-To get the header row index of a SfDataGrid control, you can use the `GetHeaderIndex` method of the `DataGridIndexResolver` class. This method returns the index of the header row in the grid.
+In order to obtain the header row index of a SfDataGrid control, you can use the `GetHeaderIndex` method of the `DataGridIndexResolver` class. This method returns the index of the header row in the grid.
 
 Here is an example of how you can use this method to get the header row index in the grid:
 
@@ -240,7 +258,7 @@ int headerRowIndex = this.sfDataGrid1.TableControl.GetHeaderIndex();
 
 This will return the index of the header row in the grid.
 
-IsAddNewIndex(int rowIndex)
+## IsAddNewIndex(int rowIndex)
 
 To determine if a specific row index in a SfDataGrid represents the `AddNewRow`, you can use the `IsAddNewIndex` method of the `SfDataGrid` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `AddNewRow`.
 
@@ -256,7 +274,7 @@ bool isAddNewRow = this.sfDataGrid1.IsAddNewRowIndex(rowIndex);
 
 This will return `true` if the specified rowIndex is the `AddNewRow`, and `false` otherwise.
 
-IsTableSummaryIndex(int rowIndex)
+## IsTableSummaryIndex(int rowIndex)
 
 To determine if a specific row index in a SfDataGrid represents the `TableSummaryRow` you can use the `IsTableSummaryIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is a `TableSummaryRow`.
 
@@ -272,11 +290,11 @@ bool isTableSummaryRow = this.sfDataGrid1.TableControl.IsTableSummaryIndex(rowIn
 
 This will return `true` if the specified rowIndex is the `TableSummaryRow`, and `false` otherwise.
 
-IsFilterRowIndex(int rowIndex)
+## IsFilterRowIndex(int rowIndex)
 
 To determine if a specific row index in a SfDataGrid represents the `FilterRow`, you can use the `IsFilterRowIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `FilterRow`.
 
-Here is an example of how you can use this method to determine if a row is the filter row:
+Here is an example of how you can use this method to determine if a row is a filter row:
 
 {% tabs %}
 {% highlight C# %}
