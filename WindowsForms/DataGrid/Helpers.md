@@ -115,7 +115,7 @@ If the specified record index is less than 0, it will return a value of -1. Othe
 
 ## ResolveToRowIndex(object recordItem)
 
-In order to obtain the row index of a specific record in an SfDataGrid control, you can make use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes record as a parameter and returns the corresponding row index.
+In order to obtain the row index of a specific record in an SfDataGrid control, you can make use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes record object as a parameter and returns the corresponding row index.
 
 Here is an example of how you can use this method to get the row index of a specific record:
 
@@ -131,7 +131,7 @@ If the specified record is not available, it will return a value of -1. Otherwis
 
 ## ResolveStartIndexOfGroup(Group group)
 
-In order to obtain the start index of a specific group in an SfDataGrid control, you can make use the `ResolveStartIndexOfGroup` method of the `DataGridIndexResolver` class. This method takes a Group object as a parameter and returns the corresponding group start index.
+In order to obtain the start index of a specific group in an SfDataGrid control, you can make use the `ResolveStartIndexOfGroup` method of the `DataGridIndexResolver` class. This method takes a group object as a parameter and returns the corresponding group start index.
 
 Here is an example of how you can use this method to get the start index of a specific group:
 
@@ -176,7 +176,7 @@ int startColumnIndex = this.sfDataGrid1.TableControl.ResolveStartIndexBasedOnPos
 {% endhighlight %}
 {% endtabs %}
 
-The method will return an index of the first data row in the SfDataGrid and it includes the stacked header row (if present) when determining the data row starting index. By default, the method returns 1 if the SfDataGrid does not have any other rows such as such as the `AddNewRow`, `FilterRow`, and `UnBoundRow`.
+The method will return an index of the first data row in the SfDataGrid and it includes the stacked header row, if present, when determining the data row starting index. By default, the method returns 1 if the SfDataGrid does not have any other rows such as such as the `AddNewRow`, `FilterRow`, and `UnBoundRow`.
 
 ## ResolveToScrollColumnIndex(int gridColumnIndex)
 
@@ -228,7 +228,7 @@ If the specified DetailsViewDataGrid is not available in the SfDataGrid, then it
 
 ## GetTableSummaryCount(VerticalPosition position)
 
-In order to obtain the total number of table summary rows in a specific position (e.g. top or bottom) in a SfDataGrid, you can use the `GetTableSummaryCount` method of the `DataGridIndexResolver` class. This method takes a VerticalPosition enum value as a parameter and returns the number of table summary rows in the specified position.
+In order to obtain the total number of table summary rows in a specific position, e.g., top or bottom, in a SfDataGrid, you can use the `GetTableSummaryCount` method of the `DataGridIndexResolver` class. This method takes a `VerticalPosition` enum value as a parameter and returns the number of table summary rows in the specified position.
 
 Here is an example of how you can use this method to get the total number of table summary rows in in the SfDataGrid in top position:
 
