@@ -88,6 +88,7 @@ Here is an example of how you can use this method to get the record index of a r
 
 {% tabs %}
 {% highlight C# %}
+
 int rowIndex = 5;
 int recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
 
