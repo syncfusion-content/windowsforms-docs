@@ -82,7 +82,7 @@ Decides whether the given row index is <code>FilterRow</code> index or not.</td>
 
 ## ResolveToRecordIndex(int rowIndex)
 
-To obtain the record index of a specific row in a SfDataGrid control, use the `ResolveToRecordIndex` method of the `DataGridIndexResolver` class. This method takes an integer parameter representing the row index and returns the corresponding record index.
+To obtain the record index of a specific row in a SfDataGrid control, use the [ResolveToRecordIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToRecordIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method of the `DataGridIndexResolver` class. This method takes an integer parameter representing the row index and returns the corresponding record index.
 
 Here is an example of how you can use this method to get the record index of a row:
 
@@ -94,11 +94,22 @@ int recordIndex = this.sfDataGrid1.TableControl.ResolveToRecordIndex(rowIndex);
 {% endhighlight %}
 {% endtabs %}
 
+You can also achieve this by directly accessing the method from [DataGridIndexResolver](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html) as shown below :
+
+{% tabs %}
+{% highlight C# %}
+
+int rowIndex = 5;
+int recordIndex = DataGridIndexResolver.ResolveToRecordIndex(this.sfDataGrid1.TableControl, rowIndex);
+
+{% endhighlight %}
+{% endtabs %}
+
 If the record with the specified row index is unavailable, it will return a value of -1. Otherwise, it will return the record index of the specified `rowIndex.`
 
 ## ResolveToRowIndex(int recordIndex)
 
-To obtain the row index of a record in a SfDataGrid control, use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes an integer parameter representing the record index and returns the corresponding row index.
+To obtain the row index of a record in a SfDataGrid control, use the [ResolveToRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToRowIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method of the `DataGridIndexResolver` class. This method takes an integer parameter representing the record index and returns the corresponding row index.
 
 Here is an example of how you can use this method to get the row index of a record:
 
@@ -115,7 +126,7 @@ If the specified record index is less than 0, it will return a value of -1. Othe
 
 ## ResolveToRowIndex(object recordItem)
 
-To obtain the row index of a specific record in a SfDataGrid control, use the `ResolveToRowIndex` method of the `DataGridIndexResolver` class. This method takes the record object as a parameter and returns the corresponding row index.
+To obtain the row index of a specific record in a SfDataGrid control, use the [ResolveToRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToRowIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Object_) method of the `DataGridIndexResolver` class. This method takes the record object as a parameter and returns the corresponding row index.
 
 Here is an example of how you can use this method to get the row index of a specific record:
 
@@ -131,7 +142,7 @@ If the specified record is unavailable, it will return a value of -1. Otherwise,
 
 ## ResolveStartIndexOfGroup(Group group)
 
-To obtain the start index of a specific group in a SfDataGrid control, use the `ResolveStartIndexOfGroup` method of the `DataGridIndexResolver` class. This method takes a group object as a parameter and returns the corresponding group start index.
+To obtain the start index of a specific group in a SfDataGrid control, use the [ResolveStartIndexOfGroup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveStartIndexOfGroup_Syncfusion_WinForms_DataGrid_TableControl_Syncfusion_Data_Group_) method of the `DataGridIndexResolver` class. This method takes a group object as a parameter and returns the corresponding group start index.
 
 Here is an example of how you can use this method to get the start index of a specific group:
 
@@ -148,7 +159,7 @@ If the specified group is unavailable in the SfDataGrid, it will return a value 
 
 ## ResolveToGridVisibleColumnIndex(int visibleColumnIndex)
 
-To obtain the GridColumn index for the specified visible column index in a SfDataGrid control, use the `ResolveToGridVisibleColumnIndex` method of the `DataGridIndexResolver` class. This method takes the visible column index as a parameter and returns the corresponding GridColumn index.
+To obtain the GridColumn index for the specified visible column index in a SfDataGrid control, use the [ResolveToGridVisibleColumnIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToGridVisibleColumnIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method of the `DataGridIndexResolver` class. This method takes the visible column index as a parameter and returns the corresponding GridColumn index.
 
 Here is an example of how you can use this method to get the GridColumn index of a visible column:
 
@@ -164,7 +175,7 @@ This method excludes the row header and indent column when determining the GridC
 
 ## ResolveStartIndexBasedOnPosition()
 
-To obtain the starting index of a data row based on the positions of other rows such as the `AddNewRow,` `FilterRow,` and `UnBoundRow,` use the `ResolveStartIndexBasedOnPosition` method of the `DataGridIndexResolver` class.
+To obtain the starting index of a data row based on the positions of other rows such as the `AddNewRow,` `FilterRow,` and `UnBoundRow,` use the [ResolveStartIndexBasedOnPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveStartIndexBasedOnPosition_Syncfusion_WinForms_DataGrid_TableControl_) method of the `DataGridIndexResolver` class.
 
 Here is an example of how you can use this method to get the data row starting index:
 
@@ -180,7 +191,7 @@ The method will return an index of the first data row in the SfDataGrid and incl
 
 ## ResolveToScrollColumnIndex(int gridColumnIndex)
 
-To obtain the visible column index for the specified GridColumn index in a SfDataGrid control, use the `ResolveToScrollColumnIndex` method of the `DataGridIndexResolver class`. This method takes the GridColumn index as a parameter and returns the corresponding visible column index.
+To obtain the visible column index for the specified GridColumn index in a SfDataGrid control, use the [ResolveToScrollColumnIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToScrollColumnIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method of the `DataGridIndexResolver class`. This method takes the GridColumn index as a parameter and returns the corresponding visible column index.
 
 Here is an example of how you can use this method to get the visible column index based on the specific GridColumn index:
 
@@ -196,7 +207,7 @@ This method includes the row header and indent column when determining the visib
 
 ## ResolveToStartColumnIndex()
 
-To obtain the start column index in a SfDataGrid control, use the `ResolveToStartColumnIndex` method of the `DataGridIndexResolver` class.
+To obtain the start column index in a SfDataGrid control, use the [ResolveToStartColumnIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_ResolveToStartColumnIndex_Syncfusion_WinForms_DataGrid_TableControl_) method of the `DataGridIndexResolver` class.
 
 Here is an example of how you can use this method to get the start column index:
 
@@ -212,7 +223,7 @@ This method will return an index of the start column index in the SfDataGrid.
 
 ## GetDetailsViewDataGridRowIndex(DetailsViewDataGrid detailsViewDataGrid)
 
-To obtain the row index of a DetailsViewDataGrid in a SfDataGrid control, use the `GetDetailsViewDataGridRowIndex` method of the `DataGridIndexResolver` class. This method takes the DetailsViewDataGrid as a parameter and returns the corresponding details view row index.
+To obtain the row index of a DetailsViewDataGrid in a SfDataGrid control, use the [GetDetailsViewDataGridRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_GetDetailsViewDataGridRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_Syncfusion_WinForms_DataGrid_DetailsViewDataGrid_) method of the `DataGridIndexResolver` class. This method takes the DetailsViewDataGrid as a parameter and returns the corresponding details view row index.
 
 Here is an example of how you can use this method to get the details view row index of a DetailsViewDataGrid:
 
@@ -228,7 +239,7 @@ If the specified DetailsViewDataGrid is unavailable in the SfDataGrid, it will r
 
 ## GetTableSummaryCount(VerticalPosition position)
 
-To obtain the total number of table summary rows in a specific position, for example, top or bottom in a SfDataGrid, use the `GetTableSummaryCount` method of the `DataGridIndexResolver` class. This method takes a `VerticalPosition` enum value as a parameter and returns the number of table summary rows in the specified position.
+To obtain the total number of table summary rows in a specific position, for example, top or bottom in a SfDataGrid, use the [GetTableSummaryCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_GetTableSummaryCount_Syncfusion_WinForms_DataGrid_TableControl_Syncfusion_WinForms_DataGrid_Enums_VerticalPosition_) method of the `DataGridIndexResolver` class. This method takes a `VerticalPosition` enum value as a parameter and returns the number of table summary rows in the specified position.
 
 Here is an example of how you can use this method to get the total number of table summary rows in the SfDataGrid in the top position:
 
@@ -244,7 +255,7 @@ This will return the total number of table summary rows in the SfDataGrid. By de
 
 ## GetHeaderIndex()
 
-To obtain the header row index of a SfDataGrid control, use the `GetHeaderIndex` method of the `DataGridIndexResolver` class. This method returns the index of the header row in the SfDataGrid.
+To obtain the header row index of a SfDataGrid control, use the [GetHeaderIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_GetHeaderIndex_Syncfusion_WinForms_DataGrid_TableControl_) method of the `DataGridIndexResolver` class. This method returns the index of the header row in the SfDataGrid.
 
 Here is an example of how you can use this method to get the header row index in the SfDataGrid:
 
@@ -260,7 +271,7 @@ This will return the index of the header row in the SfDataGrid.
 
 ## IsAddNewIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid is associated with the `AddNewRow,` use the `IsAddNewIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `AddNewRow.`
+To determine if a specific row index in a SfDataGrid is associated with the `AddNewRow,` use the [IsAddNewIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsAddNewRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_) method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `AddNewRow.`
 
 Here is an example of how you can use this method to determine if a row is the `AddNewRow:`
 
@@ -276,7 +287,7 @@ This will return `true` if the specified rowIndex is associated with the `AddNew
 
 ## IsTableSummaryIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid is associated with the `TableSummaryRow,` use the `IsTableSummaryIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is a `TableSummaryRow.`
+To determine if a specific row index in a SfDataGrid is associated with the `TableSummaryRow,` use the [IsTableSummaryIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsTableSummaryIndex_Syncfusion_WinForms_DataGrid_TableControl_System_Int32_) method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is a `TableSummaryRow.`
 
 Here is an example of how you can use this method to determine if a row is a `TableSummaryRow:`
 
@@ -292,7 +303,7 @@ This will return `true` if the specified rowIndex is associated with the `TableS
 
 ## IsFilterRowIndex(int rowIndex)
 
-To determine if a specific row index in a SfDataGrid is associated with the `FilterRow,` use the `IsFilterRowIndex` method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `FilterRow.`
+To determine if a specific row index in a SfDataGrid is associated with the `FilterRow,` use the [IsFilterRowIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.DataGridIndexResolver.html#Syncfusion_WinForms_DataGrid_DataGridIndexResolver_IsFilterRowIndex_Syncfusion_WinForms_DataGrid_SfDataGrid_System_Int32_) method of the `DataGridIndexResolver` class. This method takes the row index as a parameter and returns a boolean value indicating whether the specified row is the `FilterRow.`
 
 Here is an example of how you can use this method to determine if a row is a `FilterRow:`
 
