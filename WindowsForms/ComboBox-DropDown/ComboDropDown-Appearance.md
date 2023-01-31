@@ -62,5 +62,5 @@ Me.comboDropDown1.BorderSides = System.Windows.Forms.Border3DSide.All
 N> ComboDropDown.Style property should be set to Default to effect the above settings. 
 
 {% seealso %}
-[Themes and Styles](/windowsforms/combodropdown/themes-and-styles) topic.
+[Themes and Styles](/windowsforms/combobox-dropdown/themes-and-styles) topic.
 {% endseealso %} 
