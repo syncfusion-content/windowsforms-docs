@@ -1241,7 +1241,7 @@ End Sub
 
 {% seealso %}
 
-[Creating a simple Layout](https://help.syncfusion.com/windowsforms/layoutmanagers/creating-a-simple-layout), [Child Control Settings](https://help.syncfusion.com/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings),[Centering the Child Controls Horizontally and Vertically](https://help.syncfusion.com/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Rearranging the Controls laid out by GridLayout](https://help.syncfusion.com/windowsforms/layoutmanagers/gridlayout/overview), [Rearranging the Controls laid out by GridBagLayout.](https://help.syncfusion.com/windowsforms/layoutmanagers/gridbaglayout/overview)
+[Creating a simple Layout](/windowsforms/layoutmanagers/creating-a-simple-layout), [Child Control Settings](https://help.syncfusion.com/windowsforms/layoutmanagers/layout-manager-settings#child-control-settings),[Centering the Child Controls Horizontally and Vertically](/windowsforms/layoutmanagers/centering-the-child-controls-horizontally-and-vertically), [Rearranging the Controls laid out by GridLayout](/windowsforms/layoutmanagers/gridlayout/overview), [Rearranging the Controls laid out by GridBagLayout.](/windowsforms/layoutmanagers/gridbaglayout/overview)
 
 {% endseealso %}
 
