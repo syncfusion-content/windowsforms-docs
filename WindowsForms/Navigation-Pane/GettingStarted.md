@@ -67,60 +67,105 @@ Me.Controls.Add(groupBar1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Add group bar items
+## Add child items in group bar
 
 You can add the group bar items inside the Groupbar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property.
 
 {% tabs %}
 {% highlight C# %}
+
 GroupBarItem groupBarItem0 = new GroupBarItem();
 GroupBarItem groupBarItem1 = new GroupBarItem();
 GroupBarItem groupBarItem2 = new GroupBarItem();
-GroupBarItem groupBarItem3 = new GroupBarItem();
-GroupBarItem groupBarItem4 = new GroupBarItem();
-GroupBarItem groupBarItem5 = new GroupBarItem();
 
-this.groupBarItem0.Text = "GroupBarItem0";
-this.groupBarItem1.Text = "GroupBarItem1";
-this.groupBarItem2.Text = "GroupBarItem2";
-this.groupBarItem3.Text = "GroupBarItem3";
-this.groupBarItem4.Text = "GroupBarItem4";
-this.groupBarItem5.Text = "GroupBarItem5";
+this.groupBarItem0.Text = "Windows Forms";
+this.groupBarItem1.Text = "Component";
+this.groupBarItem2.Text = "General";
 
 this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
-            this.groupBarItem0,
-            this.groupBarItem1,
-            this.groupBarItem2,
-            this.groupBarItem3,
-            this.groupBarItem4,
-            this.groupBarItem5});
+this.groupBarItem0,
+this.groupBarItem1,
+this.groupBarItem2});
+
 {% endhighlight %}
 {% highlight VB %}
 Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
-Dim groupBarItem3 As GroupBarItem = New GroupBarItem()
-Dim groupBarItem4 As GroupBarItem = New GroupBarItem()
-Dim groupBarItem5 As GroupBarItem = New GroupBarItem()
 
-Me.groupBarItem0.Text = "GroupBarItem0"
-Me.groupBarItem1.Text = "GroupBarItem1"
-Me.groupBarItem2.Text = "GroupBarItem2"
-Me.groupBarItem3.Text = "GroupBarItem3"
-Me.groupBarItem4.Text = "GroupBarItem4"
-Me.groupBarItem5.Text = "GroupBarItem5"
+Me.groupBarItem0.Text = "Windows Forms"
+Me.groupBarItem1.Text = "Component"
+Me.groupBarItem2.Text = "General"
 
 Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
             Me.groupBarItem0,
             Me.groupBarItem1,
-            Me.groupBarItem2,
-            Me.groupBarItem3,
-            Me.groupBarItem4,
-            Me.groupBarItem5})
+            Me.groupBarItem2})
 {% endhighlight %}
 {% endtabs %}
 
 ![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control.png)
+
+## Add sub child items in group bar
+You can add the sub child items in group bar inside the GroupbarItems.
+
+{% tabs %}
+{% highlight C# %}
+
+GroupBarItem groupBarItem0 = new GroupBarItem();
+GroupBarItem groupBarItem1 = new GroupBarItem();
+GroupBarItem groupBarItem2 = new GroupBarItem();
+GroupView groupview0 = new GroupView();
+
+this.groupBarItem0.Text = "Windows Forms";
+this.groupBarItem0.Client = this.groupview0;
+this.groupBarItem1.Text = "Component";
+this.groupBarItem2.Text = "General";
+
+this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
+this.groupBarItem0,
+this.groupBarItem1,
+this.groupBarItem2});
+
+this.groupview0.Name = "Windows Forms";
+this.groupBar1.Controls.Add(this.groupview0);
+this.groupview0.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Grid", 11, true, null, "Grid"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Data Visualization", 11, true, null, "Data Visualization"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Editor", 11, true, null, "Editor"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Navigation", 11, true, null, "Navigation"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Notification", 11, true, null, "Notification"));
+
+{% endhighlight %}
+{% highlight VB %}
+Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
+Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
+Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
+Dim groupview0 As GroupView = New GroupView()
+
+Me.groupBarItem0.Text = "Windows Forms"
+Me.groupBarItem0.Client = this.groupview0;
+Me.groupBarItem1.Text = "Component"
+Me.groupBarItem2.Text = "General"
+
+Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
+            Me.groupBarItem0,
+            Me.groupBarItem1,
+            Me.groupBarItem2})
+
+
+Me.groupBar1.Controls.Add(this.groupview0);
+Me.groupview0.Name = "Windows Forms";
+Me.groupview0.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Grid", 11, true, null, "Grid"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Data Visualization", 11, true, null, "Data Visualization"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Editor", 11, true, null, "Editor"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Navigation", 11, true, null, "Navigation"),
+new Syncfusion.Windows.Forms.Tools.GroupViewItem("Notification", 11, true, null, "Notification"))
+{% endhighlight %}
+{% endtabs %}
+
+![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-default-mode.png)
 
 ## Display mode
 
