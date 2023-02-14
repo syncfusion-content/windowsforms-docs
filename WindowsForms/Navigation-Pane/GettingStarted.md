@@ -97,7 +97,7 @@ Me.groupBarItem0.Text = "Windows Forms"
 Me.groupBarItem1.Text = "Component"
 Me.groupBarItem2.Text = "General"
 
-Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
+Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem[] {
             Me.groupBarItem0,
             Me.groupBarItem1,
             Me.groupBarItem2})
@@ -181,42 +181,42 @@ Me.groupBarItem0.Text = "Windows Forms"
 Me.groupBarItem1.Text = "Component"
 Me.groupBarItem2.Text = "General"
 
-Dim GroupView groupView0 = new GroupView()
+Dim groupView0 As GroupView = New GroupView()
 Me.groupView0.Name = "Windows Forms"
-Me.groupView0.GroupViewItems.AddRange(new GroupViewItem[] 
+Me.groupView0.GroupViewItems.AddRange(New GroupViewItem[] 
 {
-    new GroupViewItem("Grid", 11, true, null, "Grid"),
-    new GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
-    new GroupViewItem("Editor", 11, true, null, "EventLog"),
-    new GroupViewItem("Navigation", 11, true, null, "DirectoryEntry"),
-    new GroupViewItem("Notification", 11, true, null, "DirectorySearcher"),
-    new GroupViewItem("MessageQueue", 11, true, null, "MessageQueue")
+    New GroupViewItem("Grid", 11, true, null, "Grid"),
+    New GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
+    New GroupViewItem("Editor", 11, true, null, "EventLog"),
+    New GroupViewItem("Navigation", 11, true, null, "DirectoryEntry"),
+    New GroupViewItem("Notification", 11, true, null, "DirectorySearcher"),
+    New GroupViewItem("MessageQueue", 11, true, null, "MessageQueue")
 })
 
-Dim GroupView groupView1 = new GroupView()
+Dim groupView1 As GroupView = New GroupView()
 Me.groupView1.Name = "Component"
-Me.groupView1.GroupViewItems.AddRange(new GroupViewItem[] 
+Me.groupView1.GroupViewItems.AddRange(New GroupViewItem[] 
 {
-    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
-    new GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
-    new GroupViewItem("EventLog", 23, true, null, "EventLog"),
-    new GroupViewItem("DirectoryEntry", 24, true, null, "DirectoryEntry"),
-    new GroupViewItem("DirectorySearcher", 25, true, null, "DirectorySearcher"),
-    new GroupViewItem("MessageQueue", 26, true, null, "MessageQueue")
+    New GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    New GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
+    New GroupViewItem("EventLog", 23, true, null, "EventLog"),
+    New GroupViewItem("DirectoryEntry", 24, true, null, "DirectoryEntry"),
+    New GroupViewItem("DirectorySearcher", 25, true, null, "DirectorySearcher"),
+    New GroupViewItem("MessageQueue", 26, true, null, "MessageQueue")
 })
 
-Dim GroupView groupView2 = new GroupView()
+Dim groupView2 As GroupView = New GroupView()
 Me.groupView2.Name = "General"
-Me.groupView2.GroupViewItems.AddRange(new GroupViewItem[] 
+Me.groupView2.GroupViewItems.AddRange(New GroupViewItem[] 
 {
-    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
-    new GroupViewItem("Label", 12, true, null, "Label"),
-    new GroupViewItem("LinkLabel", 13, true, null, "LinkLabel"),
-    new GroupViewItem("Button", 14, true, null, "Button"),
-    new GroupViewItem("TextBox", 15, true, null, "TextBox"),
-    new GroupViewItem("MainMenu", 16, true, null, "MainMenu"),
-    new GroupViewItem("CheckBox", 17, true, null, "CheckBox"),
-    new GroupViewItem("RadioButton", 18, true, null, "RadioButton")
+    New GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    New GroupViewItem("Label", 12, true, null, "Label"),
+    New GroupViewItem("LinkLabel", 13, true, null, "LinkLabel"),
+    New GroupViewItem("Button", 14, true, null, "Button"),
+    New GroupViewItem("TextBox", 15, true, null, "TextBox"),
+    New GroupViewItem("MainMenu", 16, true, null, "MainMenu"),
+    New GroupViewItem("CheckBox", 17, true, null, "CheckBox"),
+    New GroupViewItem("RadioButton", 18, true, null, "RadioButton")
 })
 
 Me.groupBarItem0.Client = Me.groupView0
