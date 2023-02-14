@@ -108,7 +108,7 @@ Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem[] {
 
 ## Add child items to the group bar items
 
-You can add the child items to the GroupBarItems by using the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html). The following code snippet will show you how to add the child items using groupview.
+You can add the child items to the GroupBarItems by using the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html). The following code snippet will show you how to add the child items using GroupView.
 
 {% tabs %}
 {% highlight C# %}
