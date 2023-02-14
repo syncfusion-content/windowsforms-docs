@@ -67,7 +67,7 @@ Me.Controls.Add(groupBar1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-## Add child items in group bar
+## Add group bar items
 
 You can add the group bar items inside the Groupbar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property.
 
@@ -104,10 +104,10 @@ Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control.png)
+![wf group bar control](Getting-Started_images/wf-group-bar-control.png)
 
-## Add sub child items in group bar
-You can add the sub child items in group bar inside the GroupbarItems.
+## Add child items to the group bar items.
+You can add the child items to the GroupbarItems. The following code snippet illustrates how to add the child items to the GroupbarItems.
 
 {% tabs %}
 {% highlight C# %}
@@ -115,57 +115,127 @@ You can add the sub child items in group bar inside the GroupbarItems.
 GroupBarItem groupBarItem0 = new GroupBarItem();
 GroupBarItem groupBarItem1 = new GroupBarItem();
 GroupBarItem groupBarItem2 = new GroupBarItem();
-GroupView groupview0 = new GroupView();
 
 this.groupBarItem0.Text = "Windows Forms";
-this.groupBarItem0.Client = this.groupview0;
 this.groupBarItem1.Text = "Component";
 this.groupBarItem2.Text = "General";
+
+GroupView groupView0 = new GroupView();
+this.groupView0.Name = "Windows Forms";
+this.groupView0.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Grid", 11, true, null, "Grid"),
+    new GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
+    new GroupViewItem("Editor", 11, true, null, "EventLog"),
+    new GroupViewItem("Navigation", 11, true, null, "DirectoryEntry"),
+    new GroupViewItem("Notification", 11, true, null, "DirectorySearcher"),
+    new GroupViewItem("MessageQueue", 11, true, null, "MessageQueue")
+});
+
+GroupView groupView1 = new GroupView();
+this.groupView1.Name = "Component";
+this.groupView1.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    new GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
+    new GroupViewItem("EventLog", 23, true, null, "EventLog"),
+    new GroupViewItem("DirectoryEntry", 24, true, null, "DirectoryEntry"),
+    new GroupViewItem("DirectorySearcher", 25, true, null, "DirectorySearcher"),
+    new GroupViewItem("MessageQueue", 26, true, null, "MessageQueue")
+});
+
+GroupView groupView2 = new GroupView();
+this.groupView2.Name = "General";
+this.groupView2.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    new GroupViewItem("Label", 12, true, null, "Label"),
+    new GroupViewItem("LinkLabel", 13, true, null, "LinkLabel"),
+    new GroupViewItem("Button", 14, true, null, "Button"),
+    new GroupViewItem("TextBox", 15, true, null, "TextBox"),
+    new GroupViewItem("MainMenu", 16, true, null, "MainMenu"),
+    new GroupViewItem("CheckBox", 17, true, null, "CheckBox"),
+    new GroupViewItem("RadioButton", 18, true, null, "RadioButton")
+});
+
+this.groupBarItem0.Client = this.groupView0;
+this.groupBarItem1.Client = this.groupView1;
+this.groupBarItem2.Client = this.groupView2;
+
+this.groupBar1.Controls.Add(this.groupView0);
+this.groupBar1.Controls.Add(this.groupView1);
+this.groupBar1.Controls.Add(this.groupView2);
 
 this.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
 this.groupBarItem0,
 this.groupBarItem1,
 this.groupBarItem2});
 
-this.groupview0.Name = "Windows Forms";
-this.groupBar1.Controls.Add(this.groupview0);
-this.groupview0.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Grid", 11, true, null, "Grid"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Data Visualization", 11, true, null, "Data Visualization"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Editor", 11, true, null, "Editor"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Navigation", 11, true, null, "Navigation"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Notification", 11, true, null, "Notification"));
-
 {% endhighlight %}
 {% highlight VB %}
 Dim groupBarItem0 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem1 As GroupBarItem = New GroupBarItem()
 Dim groupBarItem2 As GroupBarItem = New GroupBarItem()
-Dim groupview0 As GroupView = New GroupView()
 
 Me.groupBarItem0.Text = "Windows Forms"
-Me.groupBarItem0.Client = this.groupview0;
 Me.groupBarItem1.Text = "Component"
 Me.groupBarItem2.Text = "General"
+
+Dim GroupView groupView0 = new GroupView()
+Me.groupView0.Name = "Windows Forms"
+Me.groupView0.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Grid", 11, true, null, "Grid"),
+    new GroupViewItem("Data Visualization", 11, true, null, "FileSystemWatcher"),
+    new GroupViewItem("Editor", 11, true, null, "EventLog"),
+    new GroupViewItem("Navigation", 11, true, null, "DirectoryEntry"),
+    new GroupViewItem("Notification", 11, true, null, "DirectorySearcher"),
+    new GroupViewItem("MessageQueue", 11, true, null, "MessageQueue")
+})
+
+Dim GroupView groupView1 = new GroupView()
+Me.groupView1.Name = "Component"
+Me.groupView1.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    new GroupViewItem("FileSystemWatcher", 22, true, null, "FileSystemWatcher"),
+    new GroupViewItem("EventLog", 23, true, null, "EventLog"),
+    new GroupViewItem("DirectoryEntry", 24, true, null, "DirectoryEntry"),
+    new GroupViewItem("DirectorySearcher", 25, true, null, "DirectorySearcher"),
+    new GroupViewItem("MessageQueue", 26, true, null, "MessageQueue")
+})
+
+Dim GroupView groupView2 = new GroupView()
+Me.groupView2.Name = "General"
+Me.groupView2.GroupViewItems.AddRange(new GroupViewItem[] 
+{
+    new GroupViewItem("Pointer", 11, true, null, "Pointer"),
+    new GroupViewItem("Label", 12, true, null, "Label"),
+    new GroupViewItem("LinkLabel", 13, true, null, "LinkLabel"),
+    new GroupViewItem("Button", 14, true, null, "Button"),
+    new GroupViewItem("TextBox", 15, true, null, "TextBox"),
+    new GroupViewItem("MainMenu", 16, true, null, "MainMenu"),
+    new GroupViewItem("CheckBox", 17, true, null, "CheckBox"),
+    new GroupViewItem("RadioButton", 18, true, null, "RadioButton")
+})
+
+Me.groupBarItem0.Client = Me.groupView0
+Me.groupBarItem1.Client = Me.groupView1
+Me.groupBarItem2.Client = Me.groupView2
+
+Me.groupBar1.Controls.Add(Me.groupView0)
+Me.groupBar1.Controls.Add(Me.groupView1)
+Me.groupBar1.Controls.Add(Me.groupView2)
 
 Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
             Me.groupBarItem0,
             Me.groupBarItem1,
             Me.groupBarItem2})
 
-
-Me.groupBar1.Controls.Add(this.groupview0);
-Me.groupview0.Name = "Windows Forms";
-Me.groupview0.GroupViewItems.AddRange(new Syncfusion.Windows.Forms.Tools.GroupViewItem[] {
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Grid", 11, true, null, "Grid"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Data Visualization", 11, true, null, "Data Visualization"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Editor", 11, true, null, "Editor"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Navigation", 11, true, null, "Navigation"),
-new Syncfusion.Windows.Forms.Tools.GroupViewItem("Notification", 11, true, null, "Notification"))
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-default-mode.png)
+![wf group bar control in default mode](Getting-Started_images/wf-group-bar-control-default-mode.png)
 
 ## Display mode
 
@@ -180,5 +250,5 @@ Me.groupBar1.StackedMode = True
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-display-mode.png)
+![wf group bar control in display mode](Getting-Started_images/wf-group-bar-control-display-mode.png)
 
