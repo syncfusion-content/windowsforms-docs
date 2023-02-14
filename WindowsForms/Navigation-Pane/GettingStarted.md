@@ -29,7 +29,7 @@ Create a new Windows Forms project in Visual Studio to display the GroupBar cont
 
 The GroupBar control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.Base assembly reference will be added automatically.
 
-![wf group bar control added in designer](Getting-Started_images/wf-group-bar-control-added-by-designer.png) 
+![WinForms GroupBar control added in designer](Getting-Started_images/WinForms-GroupBar-control-added-by-designer.png) 
 
 ## Add control manually in code
 
@@ -69,7 +69,7 @@ Me.Controls.Add(groupBar1)
 
 ## Add group bar items
 
-You can add the group bar items inside the Groupbar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property.
+You can add the group bar items inside the GroupBar control using the [GroupBarItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupBar.html#Syncfusion_Windows_Forms_Tools_GroupBar_GroupBarItems) collection property.
 
 {% tabs %}
 {% highlight C# %}
@@ -104,10 +104,11 @@ Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem[] {
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control](Getting-Started_images/wf-group-bar-control.png)
+![WinForms GroupBar control](Getting-Started_images/WinForms-GroupBar-control.png)
 
-## Add child items to the group bar items.
-You can add the child items to the GroupbarItems. The following code snippet illustrates how to add the child items to the GroupbarItems.
+## Add child items to the group bar items
+
+You can add the child items to the GroupBarItems by using the [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html). The following code snippet will show you how to add the child items using groupview.
 
 {% tabs %}
 {% highlight C# %}
@@ -235,7 +236,7 @@ Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control in default mode](Getting-Started_images/wf-group-bar-control-default-mode.png)
+![WinForms GroupBar control with group bar items](Getting-Started_images/WinForms-GroupBar-control-with-group-bar-items.png)
 
 ## Display mode
 
@@ -250,5 +251,4 @@ Me.groupBar1.StackedMode = True
 {% endhighlight %}
 {% endtabs %}
 
-![wf group bar control in display mode](Getting-Started_images/wf-group-bar-control-display-mode.png)
-
+![WinForms GroupBar control in stack mode](Getting-Started_images/WinForms-GroupBar-control-in-stack-mode.png)
