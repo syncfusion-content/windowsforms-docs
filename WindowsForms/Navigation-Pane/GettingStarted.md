@@ -29,7 +29,7 @@ Create a new Windows Forms project in Visual Studio to display the GroupBar cont
 
 The GroupBar control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.Base assembly reference will be added automatically.
 
-![WinForms GroupBar control added in designer](Getting-Started_images/WinForms-GroupBar-control-added-by-designer.png) 
+![WinForms GroupBar control added in designer](Getting-Started_images/winforms-groupbar-control-added-by-designer.png) 
 
 ## Add control manually in code
 
@@ -104,7 +104,7 @@ Me.groupBar1.GroupBarItems.AddRange(New GroupBarItem[] {
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms GroupBar control](Getting-Started_images/WinForms-GroupBar-control.png)
+![WinForms GroupBar control](Getting-Started_images/winforms-groupbar-control.png)
 
 ## Add child items to the group bar items
 
@@ -236,7 +236,7 @@ Me.groupBar1.GroupBarItems.AddRange(new GroupBarItem[] {
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms GroupBar control with group bar items](Getting-Started_images/WinForms-GroupBar-control-with-group-bar-items.png)
+![WinForms GroupBar control with group bar items](Getting-Started_images/winforms-groupbar-control-with-group-bar-items.png)
 
 ## Display mode
 
@@ -251,4 +251,4 @@ Me.groupBar1.StackedMode = True
 {% endhighlight %}
 {% endtabs %}
 
-![WinForms GroupBar control in stack mode](Getting-Started_images/WinForms-GroupBar-control-in-stack-mode.png)
+![WinForms GroupBar control in stack mode](Getting-Started_images/winforms-groupbar-control-in-stack-mode.png)
