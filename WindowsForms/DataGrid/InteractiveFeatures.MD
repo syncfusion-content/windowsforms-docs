@@ -624,7 +624,7 @@ Me.Controls.Add(columnChooser)
 
 ![Windows forms datagrid displays custom column chooser control](InteractiveFeatures_Images/ColumnChooser4.png)
 
-You can download the custom column chooser sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample-1194097955).
+You can download the custom column chooser sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomColumnChooser_Sample-1194097955).
 
 ## ToolTip
 
