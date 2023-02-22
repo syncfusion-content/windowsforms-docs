@@ -304,7 +304,7 @@ of `ICalcData` interface is used to get and set the values of the variables at r
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-icalcdata)
 
-N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
+N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
 
 ## Cross Sheet Reference
 
