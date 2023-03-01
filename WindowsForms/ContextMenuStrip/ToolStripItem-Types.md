@@ -21,7 +21,7 @@ The following are the ToolStripItems which can be added as menu items to the Con
 Represents a selectable option displayed on a MenuStrip or ContextMenuStrip. The MenuItem supports all the general properties of a ToolStripItems. 
 
 >**NOTE** :  
-Please refer the link ["Getting Started"](https://help.syncfusion.com/windowsforms/contextmenustripex/getting-started) section for adding MenuItem to the ContextMenuStripEx control.
+Please refer the link ["Getting Started"](https://help.syncfusion.com/windowsforms/contextmenustrip/getting-started) section for adding MenuItem to the ContextMenuStripEx control.
 
 The below table will explain the properties of menu item,
 

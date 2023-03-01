@@ -51,7 +51,7 @@ The [Button Edit](https://help.syncfusion.com/windowsforms/buttonedit/overview) 
 
 ### ToggleButton
 
-The [ToggleButton](https://help.syncfusion.com/windowsforms/togglebutton/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
+The [ToggleButton](https://help.syncfusion.com/windowsforms/toggle-button/overview) control allows you to toggle between two states (active and inactive) opposite to each other in terms of behavior.
 
 ### SplitButton
 
