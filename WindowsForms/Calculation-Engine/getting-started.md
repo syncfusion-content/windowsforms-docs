@@ -294,7 +294,7 @@ The simplest way to use Essential Calculate is through an instance of its [CalcQ
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
-N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
+N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
 
 ### ICalcData
 
