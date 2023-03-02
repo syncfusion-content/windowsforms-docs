@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# How to keep highlighting selected node when TreeViewAdv loses Focus
+# How to keep highlighting selected node when TreeViewAdv loses focus
 
 By setting the **HideSelection** property to **false**, you can keep the currently selected node highlighted in the TreeViewAdv control even when the control loses focus.  
 
