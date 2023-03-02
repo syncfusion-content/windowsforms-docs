@@ -17,22 +17,19 @@ N> All Syncfusion Windows Forms controls supports .NET Core Framework except the
 
 **Step 1**: Open Visual Studio, go to **File > New > Project...** and you can now see **Create a new project** dialog. Here, select **Windows Forms App (.NET Core)** template and click **Next**. 
 
-![NETcore showing create the project](NETcore_images/NETcore_createproject.jpeg)
+<img src="NETcore_images/NETcore_createproject.png" alt="NETcore showing create the project" width="100%" Height="Auto"/>
 
-**Step 2**: You will now see **Configure your new project** dialog. Here, fill in the necessary details and click **Create**.
+**Step 2**: You will now see **Configure your new project** dialog. Here, fill in the necessary details and click **Next**.
 
- ![NETcore showing configure the project](NETcore_images/NETcore_configureproject.jpeg)
+<img src="NETcore_images/NETcore_configureproject.png" alt="NETcore showing configure the project" width="100%" Height="Auto"/>
 
-**Step 3**: Finally, Windows Forms (.NET Core) sample project is created.
+**Step 3**: In the Additional information window, select .NET 6.0 (Long-term support) for the Framework setting, and then click **Create**.
 
-![NETcore application output](NETcore_images/NETcore_sample.jpeg)
+<img src="NETcore_images/NETcore_selectedversion.png" alt="NETcore showing the Framework setting selected version" width="100%" Height="Auto"/>
 
-**Step 4**: Before adding your controls into the application, first you need to remove the default template like in the below screenshot. 
+**Step 4**: Finally, Windows Forms (.NET Core) sample project is created.
 
-![NETcore showing hide the code](NETcore_images/NETcore_hidecode.jpeg)
-
-
-N> If you do not remove the default template, you cannot see your control in the output form.
+<img src="NETcore_images/NETcore_sample.png" alt="NETcore application output" width="100%" Height="Auto"/>
 
 **Step 5**: Now, you can add your controls. To do so, follow the immediate section **Adding controls in Windows Forms (.NET Core) application** for more details. 
 
