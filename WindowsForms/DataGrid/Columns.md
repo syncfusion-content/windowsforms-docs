@@ -1416,7 +1416,7 @@ foreach (var column in this.sfDataGrid.Columns)
     if (column.Width != 0)
         column.Width = -1;
 }
-this.sfDataGrid1.ColumnSizer.Refresh();
+this.sfDataGrid1.AutoSizeController.Refresh();
 {% endhighlight %}
 {% highlight vb %}
 For Each column In Me.sfDataGrid.Columns
@@ -1424,7 +1424,7 @@ For Each column In Me.sfDataGrid.Columns
 		column.Width = -1
 	End If
 Next column
-Me.sfDataGrid1.ColumnSizer.Refresh()
+Me.sfDataGrid1.AutoSizeController.Refresh()
 {% endhighlight %}
 {% endtabs %}
 

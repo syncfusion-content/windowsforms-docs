@@ -242,7 +242,7 @@ Me.gridControl1.VScrollPixel = True
 {% endhighlight %}
 {% endtabs %}
 
-For sample and other information, refer the KB article over [here](https://www.syncfusion.com/kb/663/how-can-i-optimize-pixel-scrolling-in-the-gridcontrol).
+For sample and other information, refer the KB article over [here](https://www.syncfusion.com/kb/663/how-to-optimize-pixel-scrolling-in-the-winforms-gridcontrol).
 
 GridControl provides a property named [UseOldHiddenScrollLogic](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_UseOldHiddenScrollLogic) which increases the performance while scrolling when huge number of rows are hidden. If this property is set to true then it will switch back to the old logic for scrolling while rows or columns are hidden.
 
@@ -291,4 +291,4 @@ excelConverter.ImportStyles = False
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more how to use virtual import, refer our [Importing](http://help.syncfusion.com/windowsforms/grid/importing#virtual-importing) topic
+N> To know more how to use virtual import, refer our [Importing](https://help.syncfusion.com/windowsforms/grid-control/importing#virtual-importing) topic
