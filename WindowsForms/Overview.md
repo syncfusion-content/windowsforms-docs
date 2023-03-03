@@ -337,7 +337,7 @@ background-color:transparent!important;
 
 ## Licensing
 
-Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/license-key) documentation to learn about registering syncfusion license key in your Windows Forms application to use syncfusion controls without license message dialog at runtime.
+Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/overview) documentation to learn about registering syncfusion license key in your Windows Forms application to use syncfusion controls without license message dialog at runtime.
 
 ## Additional help resources
 
@@ -347,6 +347,6 @@ Similar to the [Knowledge Base](https://www.syncfusion.com/kb/windowsforms), the
 
 ## Support and feedback
 
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://internalsupport.bolddesk.com/agent/tickets/create).
 
 Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winforms).
