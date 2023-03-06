@@ -145,7 +145,7 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
+Online{{ '<https://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
