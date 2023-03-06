@@ -173,7 +173,7 @@ Release Notes
 <td>Class Reference
 </td>
 <td>
-Click on this {{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} link.
+Click on this {{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} link.
 
 Select Chart from the second text box. Namespaces will be listed out at the left side of the page.
 </td>
