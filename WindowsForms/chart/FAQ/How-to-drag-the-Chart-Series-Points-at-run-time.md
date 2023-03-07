@@ -17,96 +17,111 @@ The following code snippet must be given under the mouse event handler of the Ch
 
 {% highlight c# %}
 
-private void chartControl1_ChartRegionMouseUp(object sender, Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs e)
-
+public class Form1 : MetroForm
 {
+    #region Private Members
+    private int seriesIndex = -1;
+    private int selectedIndex = -1;
+    private bool isSelected = false;
 
-Cursor = Cursors.SizeAll;
+    private void InitializeComponent()
+    {
+        //
+        // Chart definition
+        //
+        this.chartControl1.ChartRegionMouseDown += ChartControl1_ChartRegionMouseDown;
+        this.chartControl1.ChartRegionMouseMove += ChartControl1_ChartRegionMouseMove;
+        this.chartControl1.ChartRegionMouseUp += ChartControl1_ChartRegionMouseUp;
+    }
 
-if (this.isDragging)
+    private void ChartControl1_ChartRegionMouseUp(object sender, ChartRegionMouseEventArgs e) 
+    {
+        if(isSelected) 
+        { 
+            isSelected = false;
+            selectedIndex = -1;
+            seriesIndex = -1;
+        }
+    }
 
-{
+    private void ChartControl1_ChartRegionMouseMove(object sender, ChartRegionMouseEventArgs e) 
+    {
+        if(isSelected)
+        {
+            double newY = Math.Floor(this.chartControl1.ChartArea.GetValueByPoint(e.Point).YValues[0]);
+            double newX = this.chartControl1.ChartArea.GetValueByPoint(e.Point).X;
 
-double newY = Math.Floor(this.chartControl1.ChartArea.GetValueByPoint(e.Point).YValues[0]);
+            if (seriesIndex != -1 && selectedIndex != -1) 
+            {
+                this.chartControl1.Series[seriesIndex].Points[selectedIndex].X = newX;
+                this.chartControl1.Series[seriesIndex].Points[selectedIndex].YValues[0] = newY;
+            }
+        }
+    }
 
-double newX = this.chartControl1.ChartArea.GetValueByPoint(e.Point).X;
-
-if (newY &lt; 0 || newY &gt;= 50 || newX &lt; 0 || newX &gt; 7)
-
-MessageBox.Show("Cannot drag outside chart bounds");
-
-else
-
-{
-
-this.NewYValue(newY);
-
-this.NewXValue(newX);
-
-}
-
-this.isDragging = false;
-
-this.currentRegion = null;
-
-this.selectedDataPoint.Y = 0;
-
-this.selectedDataPoint.X = 0;
-
-this.chartControl1.Redraw(true);
-
-}
-
-this.chartControl1.Series[0].Style.TextFormat = "{0}";
-
-this.chartControl1.Refresh();
-
+    private void ChartControl1_ChartRegionMouseDown(object sender, ChartRegionMouseEventArgs e) 
+    {
+        if(e.Region != null && isSelected == false) 
+        {
+            seriesIndex = e.Region.SeriesIndex;
+            selectedIndex = e.Region.PointIndex;
+            isSelected = true;
+        }
+    }
 }
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Private Sub chartControl1_ChartRegionMouseUp(ByVal sender As Object, ByVal e As Syncfusion.Windows.Forms.Chart.ChartRegionMouseEventArgs) Handles chartControl1.ChartRegionMouseUp
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
 
-Cursor = Cursors.SizeAll
+    Private seriesIndex As Integer = -1
+    Private selectedIndex As Integer = -1
+    Private isSelected As Boolean = False
 
-If Me.isDragging Then
+    Private Sub InitializeComponent()
+        '
+        ' Chart Definition
+        '
+        AddHandler Me.ChartControl1.ChartRegionMouseUp, AddressOf Me.ChartControl1_ChartRegionMouseUp
+        AddHandler Me.ChartControl1.ChartRegionMouseDown, AddressOf Me.ChartControl1_ChartRegionMouseDown
+        AddHandler Me.ChartControl1.ChartRegionMouseMove, AddressOf Me.ChartControl1_ChartRegionMouseMove
+    End Sub
 
-Dim newY As Double = Math.Floor(Me.ChartControl1.ChartArea.GetValueByPoint(e.Point).YValues(0))
+    Private Sub ChartControl1_ChartRegionMouseMove(sender As Object, e As ChartRegionMouseEventArgs)
+        If isSelected = True Then
+            Dim newY As Double = Math.Floor(Me.ChartControl1.ChartArea.GetValueByPoint(e.Point).YValues(0))
+            Dim newX As Double = Me.ChartControl1.ChartArea.GetValueByPoint(e.Point).X
 
-Dim newX As Double = Me.ChartControl1.ChartArea.GetValueByPoint(e.Point).X
+            If seriesIndex <> -1 AndAlso selectedIndex <> -1 Then
+                Me.ChartControl1.Series(seriesIndex).Points(selectedIndex).X = newX
+                Me.ChartControl1.Series(seriesIndex).Points(selectedIndex).YValues(0) = newY
+            End If
+        End If
+    End Sub
 
-If newY &lt; 0 OrElse newY &gt;= 50 OrElse newX &lt; 0 OrElse newX &gt; 7 Then
+    Private Sub ChartControl1_ChartRegionMouseDown(sender As Object, e As ChartRegionMouseEventArgs)
+        If e.Region IsNot Nothing AndAlso isSelected = False Then
+            seriesIndex = e.Region.SeriesIndex
+            selectedIndex = e.Region.PointIndex
+            isSelected = True
+        End If
+    End Sub
 
-MessageBox.Show("Cannot drag outside chart bounds")
+    Private Sub ChartControl1_ChartRegionMouseUp(sender As Object, e As ChartRegionMouseEventArgs)
+        If isSelected Then
+            isSelected = False
+            selectedIndex = -1
+            seriesIndex = -1
+        End If
+    End Sub
 
-Else
-
-Me.NewYValue(newY)
-
-Me.NewXValue(newX)
-
-End If
-
-Me.selectedDataPoint.Y = 0
-
-Me.selectedDataPoint.X = 0
-
-Me.isDragging = False
-
-Me.currentRegion = Nothing
-
-Me.ChartControl1.Redraw(True)
-
-End If
-
-Me.ChartControl1.Series(0).Style.TextFormat = "{0}"
-
-Me.ChartControl1.Refresh()
-
-End Sub
+End Class
 
 {% endhighlight %}
 
-{% endtabs %}	
+{% endtabs %}
+
+![Chart Segmen Dragging](How-to-drag-chart-series-points-in-runtime/how-to-drag-chart-series-points-in-runtime.gif)
