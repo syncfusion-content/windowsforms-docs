@@ -109,13 +109,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/maps/overview>' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)
+Online{{ '<https://help.syncfusion.com/windowsforms/map/overview>' | markdownify }} (Navigate to the Maps for Windows Forms User Guide.)
 
 {{ 'Note: Click Download as PDF to access a PDF version.' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/overview>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Maps_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<https://help.syncfusion.com/windowsforms/overview>' | markdownify }}(Navigate to the Windows Forms User Guide. Select {{ '_Maps_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 N> You can also explore our [WinForms Map example](https://github.com/syncfusion/winforms-demos/tree/master/map) that shows you how to render and configure the Map.
