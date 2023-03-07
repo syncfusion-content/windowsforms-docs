@@ -435,7 +435,7 @@ Private )
 {% endtabs %}
 
 Download sample from below location,
-**Sample** - [Custom Grouping](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
+**Sample** - [Custom Grouping](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
 
 
 ### Cancel Expanding of Groups
