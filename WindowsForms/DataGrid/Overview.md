@@ -223,7 +223,7 @@ SfDataGrid enables fitting the width of the cell based on its content on demand 
 IEditableObjectSupport
 </td>
 <td>
-Windows Forms DataGrid (SfDataGrid) supports to roll back the changes when you press Esc Key by implementing IEditableObject interface. For more information about IEditableObject, refer {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=netframework-4.7.2)'| markdownify }}.
+Windows Forms DataGrid (SfDataGrid) supports to roll back the changes when you press Esc Key by implementing IEditableObject interface. For more information about IEditableObject, refer {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=netframework-4.7.2)'| markdownify }}.
 
 </td>
 </tr>
