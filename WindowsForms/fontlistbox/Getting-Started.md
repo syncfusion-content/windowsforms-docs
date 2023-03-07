@@ -157,7 +157,7 @@ private void FontListBox1_SelectedIndexChanged(Object sender, System.EventArgs e
 
 ## Selection mode
 
-At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected based on the selection mode specified in the [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
+At run time, the items in the [FontListBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.FontListBox.html) can be selected based on the selection mode specified in the [SelectionMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.listbox.selectionmode?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Forms_ListBox_SelectionMode) property. Selection can be made using mouse and keyboard.
 
 The following options are available in the FontListBox control.
 
