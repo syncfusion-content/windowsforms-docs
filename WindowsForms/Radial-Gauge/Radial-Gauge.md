@@ -541,7 +541,7 @@ Me.radialGauge1.MinorDifference = 2F
 
 ### FrameThickness
 
-The `FrameThickness` property of RadialGauge is used to specify the thickness of the frame. By default, the value of this property is 12. For [Fill frame type](https://help.syncfusion.com/windowsforms/gauge/radial-gauge#fillcircle), the default value of the `FrameThickness` is 20.
+The `FrameThickness` property of RadialGauge is used to specify the thickness of the frame. By default, the value of this property is 12. For [Fill frame type](https://help.syncfusion.com/windowsforms/radial-gauge/radial-gauge#fillcircle), the default value of the `FrameThickness` is 20.
 
 The following code and screenshot illustrates the RadialGauge with different FrameThickness,
 

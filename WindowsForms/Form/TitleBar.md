@@ -88,7 +88,7 @@ Me.Style.TitleBar.MinimizeButtonPressedImage = Image.FromFile("pressedMin.ico")
 
 ### Hiding the title bar buttons
 
-Buttons in the title bar can be hide by disabling the [MinimizeBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.minimizebox?view=net-5.0), [MaximizeBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.maximizebox?view=net-5.0) and [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_CloseButtonVisible) properties.
+Buttons in the title bar can be hide by disabling the [MinimizeBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.minimizebox?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0), [MaximizeBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.maximizebox?view=net-5.0) and [CloseButtonVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfForm.html#Syncfusion_WinForms_Controls_SfForm_CloseButtonVisible) properties.
 
 {% tabs %}
 {% highlight c# %}

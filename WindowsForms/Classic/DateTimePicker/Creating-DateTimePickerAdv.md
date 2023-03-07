@@ -124,7 +124,7 @@ Me.dateTimePickerAdv1.CustomFormat = "MMMM/yyyy"
 
 ![DateTimePickerAdv date format](DateTimePicker_images/CustomFormat.png) 
 
-N> The DateTimePickerAdv control supports all custom date-time formats string of .NetFramework. Refer to this [documentation](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) for more information.
+N> The DateTimePickerAdv control supports all custom date-time formats string of .NetFramework. Refer to this [documentation](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) for more information.
 
 ## Editing modes
 
