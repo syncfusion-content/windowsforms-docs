@@ -28,7 +28,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion WinForms NuGet packages using a term like **"Syncfusion.WinForms"** and select the appropriate Syncfusion WinForms NuGet package for your development.
 
-    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    > The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) to set up the nuget.org feed URL.
 
     ![WinForms NuGet Packages Search](Platform_images/NuGetsearch.png)
 
@@ -42,7 +42,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 ## Installation using Dotnet (.NET) CLI
 
-The [dotnet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [Dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
+The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli), allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [Dotnet add package](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
 
 Follow the below instructions to use the dotnet CLI command to install the Syncfusion WinForms NuGet packages.
 

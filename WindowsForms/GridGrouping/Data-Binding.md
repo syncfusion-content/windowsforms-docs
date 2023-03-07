@@ -11,11 +11,11 @@ documentation: ug
 To display data in GridGroupingControl, it must be bound to the data source. GridGroupingControl supports variety of data sources such as [DataTables](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0), [DataSets](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0), or any component that implements interface [IList](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ilist?view=net-5.0), [IBindingList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindinglist-1?view=net-5.0), [ITypedList](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist?view=net-5.0), or [IListSource](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ilistsource?view=net-5.0). The data source can have multiple nested tables, which will be displayed hierarchically by GridGroupingControl. This section explains about the different types of data binding mechanisms supported by GridGroupingControl.
 
 ## Data binding using ADO.NET
-ADO.NET is an object-oriented set of libraries which is used to interact with different types of data sources and databases. These libraries are called[DataProviders](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) and they allow a common way to interact with specific data sources or protocols. 
+ADO.NET is an object-oriented set of libraries which is used to interact with different types of data sources and databases. These libraries are called[DataProviders](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/data-providers) and they allow a common way to interact with specific data sources or protocols. 
 
 The widely used data providers are,
 
-[Ole Db Data Provider](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms709836(v=vs.85))- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
+[Ole Db Data Provider](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ms709836(v=vs.85))- Data Sources that expose an OLEDB interface, i.e. Access or Excel.
 [SQL Data Provider](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=net-5.0)- For interacting with Microsoft SQL Server.
 
 ### ADO.Net Objects and its usages
@@ -45,7 +45,7 @@ The following binding methods are available to bind the grid to a database,
 ## Binding to XML Data
 GridGroupingControl can be bound to data from XML files. This can be achieved by using the `DataSet` object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the grid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
 
-The following are the some of the important methods provided by dataset that are used to manipulate XML data. In this, the [XmlSchema](https://docs.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschema?view=net-5.0) represents the type of data stored in XML file.
+The following are the some of the important methods provided by dataset that are used to manipulate XML data. In this, the [XmlSchema](https://learn.microsoft.com/en-us/dotnet/api/system.xml.schema.xmlschema?view=net-5.0) represents the type of data stored in XML file.
 
 **ReadXml**- Reads XML Schema and data into dataset using the specified XML file.
 **ReadXmlSchema**- Reads XML Schema from the specified file into dataset.
