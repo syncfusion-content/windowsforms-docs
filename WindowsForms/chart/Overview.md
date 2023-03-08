@@ -144,7 +144,7 @@ Chart Area Shadow indicates the shadow of the chart area.
 
 {% seealso %}
 
-[Text](http://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](http://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](http://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](http://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](https://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting-appearance-and-positioning), [Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance), [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](http://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
+[Text](https://help.syncfusion.com/windowsforms/chart/chart-appearance#foreground-settings), [Chart Legend](https://help.syncfusion.com/windowsforms/chart/chart-legend-and-legend-items), [Chart Series](https://help.syncfusion.com/windowsforms/chart/chart-series), [Chart Area](https://help.syncfusion.com/windowsforms/chart/chart-area), [Axis Label Text Formatting](https://help.syncfusion.com/windowsforms/chart/chart-axes#axis-label-text-formatting-appearance-and-positioning), [Appearance and Positioning](https://help.syncfusion.com/windowsforms/chart/chart-appearance), [Customizing Label Text](https://help.syncfusion.com/windowsforms/chart/chart-axes#customizing-label-text), [Intersecting Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#intersecting-labels), [Grouping Labels](https://help.syncfusion.com/windowsforms/chart/chart-axes#grouping-labels)
 
 {% endseealso %}
 
@@ -173,7 +173,7 @@ Release Notes
 <td>Class Reference
 </td>
 <td>
-Click on this {{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} link.
+Click on this {{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} link.
 
 Select Chart from the second text box. Namespaces will be listed out at the left side of the page.
 </td>
