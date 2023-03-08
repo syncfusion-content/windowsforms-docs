@@ -145,13 +145,13 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{{ '<http://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
+Online{{ '<https://help.syncfusion.com/windowsforms/diagram/overview>' | markdownify }} (Navigate to the Diagram for Windows Forms User Guide.)> ![User Guide](Overview_images/Overview_img5.jpeg)
 
 {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{{ '<http://help.syncfusion.com/cr/windowsforms>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '<https://help.syncfusion.com/cr/windowsforms/Syncfusion.html>' | markdownify }} (Navigate to the Windows Forms User Guide. Select {{ '_Diagram_' | markdownify }} in the second text box, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 N> You can refer to our [WinForms Diagram](https://www.syncfusion.com/winforms-ui-controls/diagram) control feature tour page for its groundbreaking feature representations. You can also explore our [WinForms Diagram example](https://github.com/syncfusion/winforms-demos/tree/master/diagram) that shows you how to render and configure the Diagram.
