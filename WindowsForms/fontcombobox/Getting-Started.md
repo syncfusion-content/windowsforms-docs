@@ -90,7 +90,7 @@ fontComboBox.UseAutoComplete = True
 
 ## Selection
 
-You can programmatically select the item or index by using the [SelectedItem](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selecteditem?view=netcore-3.1) or [SelectedIndex](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selectedindex?view=netcore-3.1) properties in FontComboBox control.
+You can programmatically select the item or index by using the [SelectedItem](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selecteditem?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) or [SelectedIndex](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.combobox.selectedindex?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) properties in FontComboBox control.
 
 {% tabs %}
 
