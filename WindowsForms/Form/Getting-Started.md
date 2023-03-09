@@ -17,20 +17,28 @@ Refer [control dependencies](https://help.syncfusion.com/windowsforms/control-de
 
 The default form can be changed into SfForm by the following steps:
 
-1. Create a new Windows Forms Application in Visual Studio and refer to the `Syncfusion.Core.WinForms` assembly.
+**Step 1:** Create a new Windows Forms Application in Visual Studio.
 
-2. Include the following namespace to the directives list.
+**Step 2:** Add the following required assembly references to the project:
+
+* Syncfusion.Core.WinForms.dll
+* Syncfusion.Shared.Base.dll
+
+**Step 3:** Include the following namespace to the directives list.
 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.WinForms.Controls;
 {% endhighlight %}
+{% highlight vb %}
+Imports Syncfusion.WinForms.Controls
+{% endhighlight %}
 {% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-3. Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
+**Step 4:** Change the base class of your form from `System.Windows.Forms.Form` to `SfForm`.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -42,6 +50,14 @@ public partial class Form1 : SfForm
         InitializeComponent();
     }
 }
+{% endhighlight %}
+{% highlight vb %}
+Partial Public Class Form1
+    Inherits SfForm
+    Public Sub New()
+	    InitializeComponent()
+    End Sub
+End Class
 {% endhighlight %}
 {% endtabs %}
 {% endcapture %}
@@ -76,6 +92,26 @@ this.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray;
 this.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray;
 this.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray;
 {% endhighlight %}
+{% highlight vb %}
+'Sets the back color and fore color of the title bar.
+Me.Style.TitleBar.BackColor = Color.Black
+Me.Style.TitleBar.ForeColor = Color.White
+
+'Sets the fore color of the title bar buttons
+Me.Style.TitleBar.CloseButtonForeColor = Color.White
+Me.Style.TitleBar.MinimizeButtonForeColor = Color.White
+Me.Style.TitleBar.MaximizeButtonForeColor = Color.White
+
+'Sets the hover state back color of the title bar buttons
+Me.Style.TitleBar.CloseButtonHoverBackColor = Color.DarkGray
+Me.Style.TitleBar.MinimizeButtonHoverBackColor = Color.DarkGray
+Me.Style.TitleBar.MaximizeButtonHoverBackColor = Color.DarkGray
+
+'Sets the pressed state back color of the title bar buttons
+Me.Style.TitleBar.CloseButtonPressedBackColor = Color.Gray
+Me.Style.TitleBar.MaximizeButtonPressedBackColor = Color.Gray
+Me.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray
+{% endhighlight %}
 {% endtabs %}
 
 
@@ -90,6 +126,10 @@ The borders of the form can be customized by using the [Style.Border](https://he
 {% highlight c# %}
 this.Style.Border = new Pen(Color.Black, 5);
 this.Style.InactiveBorder = new Pen(Color.Gray, 5);
+{% endhighlight %}
+{% highlight vb %}
+Me.Style.Border = New Pen(Color.Black, 5)
+Me.Style.InactiveBorder = New Pen(Color.Gray, 5)
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,6 +152,17 @@ searchPanel.Controls.Add(searchBox);
 
 //Loads the searchPanel to the title bar.
 this.TitleBarTextControl = searchPanel;
+{% endhighlight %}
+{% highlight vb %}
+Dim searchPanel As FlowLayoutPanel = New FlowLayoutPanel()
+Dim searchingLabel As Label = New Label()
+searchingLabel.Text = "Searching"
+Dim searchBox As TextBox = New TextBox()
+searchPanel.Controls.Add(searchingLabel)
+searchPanel.Controls.Add(searchBox)
+
+'Loads the searchPanel to the title bar.
+Me.TitleBarTextControl = searchPanel
 {% endhighlight %}
 {% endtabs %}
 

@@ -21,19 +21,39 @@ The following code snippet illustrates how to add a image in menu item.
 {% tabs %}
 {% highlight c# %}
 
-this.contextMenuStripEx.ShowImageMargin = true;
-this.contextMenuStripEx.ImageScalingSize = new System.Drawing.Size(24, 24);
-this.toolStripMenuItem1.Image = System.Drawing.Image.FromFile(@"..\..\..\new.png");
-this.toolStripMenuItem2.Image = System.Drawing.Image.FromFile(@"..\..\..\copy.png");
+ContextMenuStripEx contextMenuStripEx = new ContextMenuStripEx();
+ToolStripMenuItem toolStripMenuItem1 = new ToolStripMenuItem();
+ToolStripMenuItem toolStripMenuItem2 = new ToolStripMenuItem();
+RichTextBox richTextBox1  = new RichTextBox();
+
+contextMenuStripEx.ShowImageMargin = true;
+contextMenuStripEx.ImageScalingSize = new System.Drawing.Size(24, 24);
+toolStripMenuItem1.Image = System.Drawing.Image.FromFile(@"..\..\..\new.png");
+toolStripMenuItem2.Image = System.Drawing.Image.FromFile(@"..\..\..\copy.png");
+toolStripMenuItem1.Text = "New";
+toolStripMenuItem2.Text = "Copy";
+contextMenuStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.toolStripMenuItem1, this.toolStripMenuItem2, });
+contextMenuStripEx.ResumeLayout(false);
+richTextBox1.ContextMenuStrip = this.contextMenuStripEx;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.contextMenuStripEx.ShowImageMargin = True
-Me.contextMenuStripEx.ImageScalingSize = New System.Drawing.Size(24, 24)
-Me.toolStripMenuItem1.Image = System.Drawing.Image.FromFile("..\..\..\new.png")
-Me.toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
+contextMenuStripEx As New ContextMenuStripEx()
+toolStripMenuItem1 As New ToolStripMenuItem()
+toolStripMenuItem2 As New ToolStripMenuItem()
+richTextBox1 As New RichTextBox()
+
+contextMenuStripEx.ShowImageMargin = True
+contextMenuStripEx.ImageScalingSize = New System.Drawing.Size(24, 24)
+toolStripMenuItem1.Image = System.Drawing.Image.FromFile("..\..\..\new.png")
+toolStripMenuItem2.Image = System.Drawing.Image.FromFile("..\..\..\copy.png")
+toolStripMenuItem1.Text = "New"
+toolStripMenuItem2.Text = "Copy"
+contextMenuStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.toolStripMenuItem1, Me.toolStripMenuItem2})
+contextMenuStripEx.ResumeLayout(False)
+richTextBox1.ContextMenuStrip = Me.contextMenuStripEx
 
 {% endhighlight %}
 {% endtabs %}
