@@ -124,4 +124,4 @@ End Class
 
 {% endtabs %}
 
-![Chart Segmen Dragging](How-to-drag-chart-series-points-in-runtime/how-to-drag-chart-series-points-in-runtime.gif)
+![Chart Segment Dragging](How-to-drag-chart-series-points-in-runtime/how-to-drag-chart-series-points-in-runtime.gif)
