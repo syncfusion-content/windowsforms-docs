@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to Clear a Filter | WindowsForms | Syncfusion
-description: How to Clear a Filter
+title: How to Clear a Filter in WindowsForms Grouping Control | Syncfusion
+description: Learn here about how to clear a filter in Syncfusion Essential WindowsForms Grouping Control, its elements, and more.
 platform: WindowsForms
 control: Grouping
 documentation: ug
 ---
-# How to Clear Filtering
+# How to Clear Filtering in Windows Forms Grouping
 To clear all filters, call the groupingEngine.TableDescriptor.RecordFilters.Clear method.
 
 {% tabs %}
