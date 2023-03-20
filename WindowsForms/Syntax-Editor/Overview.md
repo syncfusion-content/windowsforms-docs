@@ -71,6 +71,6 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Print](https://help.syncfusion.com/windowsforms/syntax-editor/printing): Supports Print option to print the loaded contents.
 
-[Export](https://help.syncfusion.com/windowsforms/syntax-editor/editing): Supports option to export contents in XML, RFT, and HTML formats.
+[Export](https://help.syncfusion.com/windowsforms/syntax-editor/export): Supports option to export contents in XML, RFT, and HTML formats.
 
 [Scrolling](https://help.syncfusion.com/windowsforms/syntax-editor/appearance#scrollbar): Provides extremely a smooth scrolling behavior even when large files are loaded in the EditControl.
