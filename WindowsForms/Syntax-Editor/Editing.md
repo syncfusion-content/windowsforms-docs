@@ -1940,7 +1940,7 @@ End Sub
 
 {% endtabs %}
 
-N> Refer to the respective command string in the [Commands](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#commands) section.
+N> Refer to the respective command string in the [Commands](https://help.syncfusion.com/windowsforms/syntax-editor/editing#commands) section.
 
 ### Add custom context menu item
 
