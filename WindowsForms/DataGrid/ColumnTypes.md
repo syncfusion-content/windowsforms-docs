@@ -2781,7 +2781,7 @@ Here, a rating column has been created as a custom column. The sample for this c
 
 [How to suspend the PING sound when perform the Tab operation in DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11242)
 
-[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://www.syncfusion.com/kb/10013)
+[How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://www.syncfusion.com/kb/10013/how-to-differentiate-combobox-column-from-other-columns-in-non-editable-display-mode-in)
 
 [How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978)
 
