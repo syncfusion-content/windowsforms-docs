@@ -1026,12 +1026,12 @@ Me.sfDataGrid1.Style.CurrentCellStyle.BorderThickness = GridBorderWeight.Thick
 
 ## See also
 
-[How to select the entire column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9776)
+[How to select the entire column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9776/how-to-select-the-entire-column-in-winforms-datagrid-sfdatagrid)
 
-[How to change the Enter key behavior in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9774)
+[How to change the Enter key behavior in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9774/how-to-change-the-enter-key-behavior-in-winforms-datagrid-sfdatagrid)
 
-[How to skip selection for summary rows in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9665)
+[How to skip selection for summary rows in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9665/how-to-skip-selection-for-summary-rows-in-winforms-datagrid-sfdatagrid)
 
-[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638)
+[How to search and select record in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9638/how-to-search-and-select-record-in-winforms-datagrid-sfdatagrid)
 
-[How to scroll to a specific record programmatically in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9605)
+[How to scroll to a specific record programmatically in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9605/how-to-scroll-to-a-specific-record-programmatically-in-winforms-datagrid-sfdatagrid)
