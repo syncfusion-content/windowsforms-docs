@@ -2269,7 +2269,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Parent_ChildResizing-459909318).
+You can get the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Parent_ChildResizing-459909318).
 
 N> To display the parent and DetailsViewDataGrid in the same line, set the DetailsViewPadding as Zero for top, bottom, right sides and the expander column width as left, because we have started rendering the grid inside the Expander column itself.
 
