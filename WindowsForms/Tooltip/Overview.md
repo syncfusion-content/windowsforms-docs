@@ -23,7 +23,7 @@ Following are the key features of the `SfToolTip` :
 
 Syncfusion WinForms suite comes up with following different tooltips namely :
 
-* [SfToolTip](https://www.syncfusion.com/products/windows-forms/tooltip)
+* [SfToolTip](https://www.syncfusion.com/winforms-ui-controls/tooltip)
 * [SuperToolTip](https://help.syncfusion.com/windowsforms/classic/tooltip/supertooltip)
 
 ### SfToolTip

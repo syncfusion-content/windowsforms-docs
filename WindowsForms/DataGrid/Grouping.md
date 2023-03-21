@@ -491,4 +491,4 @@ End Sub
 
 [How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
 
-[How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9384)
+[How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9384/how-to-customize-the-group-caption-text-in-winforms-datagrid-sfdatagrid)

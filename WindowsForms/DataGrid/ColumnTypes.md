@@ -2783,8 +2783,8 @@ Here, a rating column has been created as a custom column. The sample for this c
 
 [How to differentiate combobox column from other columns in non-editable display mode in WinForms DataGrid](https://www.syncfusion.com/kb/10013)
 
-[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978)
+[How to change value of other columns while changing the value in a combobox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9978/how-to-change-value-of-other-columns-while-changing-the-value-in-a-combobox-column-in)
 
-[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9775)
+[How to set checkbox value based on the value change on another checkbox column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9775/how-to-set-checkbox-value-based-on-the-value-change-on-another-checkbox-column-in-winforms)
 
-[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323)
+[How to change the ValidationMode of the GridNumericColumn in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9323/how-to-change-the-validationmode-of-the-gridnumericcolumn-in-winforms-datagrid-sfdatagrid)

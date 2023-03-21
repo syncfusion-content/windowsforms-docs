@@ -32,7 +32,7 @@ The **NumericTextBox** control is an advanced text box control that allows you t
 
 Syncfusion WinForms suite comes up with the following different textboxes:
 
-* [SfNumericTextBox](https://www.syncfusion.com/products/windows-forms/numeric-textbox)
+* [SfNumericTextBox](https://www.syncfusion.com/winforms-ui-controls/numeric-textbox)
 * [CurrencyTextBox](https://help.syncfusion.com/windowsforms/currency-textbox/overview)
 * [PercentTextBox](https://help.syncfusion.com/windowsforms/percent-textbox/overview)
 * [IntegerTextBox](https://help.syncfusion.com/windowsforms/integer-textbox/overview)

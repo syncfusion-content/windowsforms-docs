@@ -1069,4 +1069,4 @@ Refer the [XlsIO document](https://help.syncfusion.com/file-formats/xlsio/workin
 
 ## See also
 
-[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603)
+[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603/how-to-change-the-row-height-for-the-exported-excel-sheet-in-winforms-datagrid-sfdatagrid)
