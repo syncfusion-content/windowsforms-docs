@@ -713,7 +713,7 @@ End Class
 {% endtabs %}
 
 Download sample from below location,
-[Sample location](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1502467420)
+[Sample location](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Sample1502467420)
 
 N> The copied row can be pasted only after initiating the AddNewRow by editing.
 
