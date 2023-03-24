@@ -48,7 +48,7 @@ textBoxVale.Text = "180000";
 
 dbl = Int64.Parse(textBoxValue.Text);
 
-int index = 0;
+int index = 2;
 
 int startIndex = 2;
 
