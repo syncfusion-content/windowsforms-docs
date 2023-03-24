@@ -47,13 +47,15 @@ It should return the chart point with the specified X or Y-value, and should sta
 textBoxVale.Text = "40";
 dbl = Int64.Parse(textBoxValue.Text);
 
-ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue(dbl);
+ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue();
 
-ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindValue(50, 'Y');
+ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindValue(dbl);
+
+ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindValue(50, 'Y');
 
 int index = 2;
 
-ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindValue(22, 'Y', ref index);
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindValue(22, 'Y', ref index);
 
 
 {% endhighlight %}
@@ -64,13 +66,15 @@ textBoxValue = "40";
 
 dbl = Int64.Parse(textBoxValue.Text)
 
-Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl)
+Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue()
 
-Dim dp2 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y');
+Dim dp2 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl)
+
+Dim dp3 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y');
 
 Dim index As Int16 = 3
 
-Dim dp2 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y', ref index);
+Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y', ref index);
 
 {% endhighlight %}
 
@@ -120,10 +124,9 @@ ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindMaxValue("Y");
 
 int endIndex1 = 4;
 
-// Here index of the maximum value is stored in the endIndex1
 ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindMaxValue("Y", ref endIndex1);
 
-ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindMaxValue("Y", ref startIndex, endIndex);
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue("Y", ref startIndex, endIndex);
 
 {% endhighlight %}
 
@@ -141,10 +144,9 @@ Dim dp2 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMaxValue("Y");
 
 int endIndex1 = 4;
 
-// Here index of the maximum value is stored in the endIndex1
 Dim dp3 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMaxValue("Y", ref endIndex1);
 
-Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMaxValue("Y", ref startIndex, endIndex)
+Dim dp4 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMaxValue("Y", ref startIndex, endIndex)
 
 {% endhighlight %}
 
@@ -193,10 +195,9 @@ ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindMinValue("Y");
 
 int endIndex1 = 4;
 
-// Here index of the minimum value is stored in the endIndex1
 ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindMinValue("Y", ref endIndex1);
 
-ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindMinValue("Y", ref startIndex, endIndex);
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue("Y", ref startIndex, endIndex);
 
 {% endhighlight %}
 
@@ -214,10 +215,9 @@ Dim dp2 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMinValue("Y");
 
 int endIndex1 = 4;
 
-// Here index of the minimum value is stored in the endIndex1
 Dim dp3 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMinValue("Y", ref endIndex1);
 
-Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindMinValue("Y", ref startIndex, endIndex)
+Dim dp4 As ChartPoint = Me.chartControl1.Series[0].Summary.FindMinValue("Y", ref startIndex, endIndex)
 
 {% endhighlight %}
 
