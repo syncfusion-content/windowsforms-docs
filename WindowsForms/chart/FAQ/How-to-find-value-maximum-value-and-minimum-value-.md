@@ -44,37 +44,51 @@ It should return the chart point with the specified X or Y-value, and should sta
 {% tabs %}
 
 {% highlight c# %}
-textBoxVale.Text = "40";
+textBoxVale.Text = "180000";
+
 dbl = Int64.Parse(textBoxValue.Text);
 
-ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue();
+int index = 0;
 
-ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindValue(dbl);
+int startIndex = 2;
 
-ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindValue(50, 'Y');
+int endIndex = 4;
 
-int index = 2;
+ChartPoint dp1 = this.chartControl1.Series[0].Summary.FindValue(dbl);
 
-ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindValue(22, 'Y', ref index);
+ChartPoint dp2 = this.chartControl1.Series[0].Summary.FindValue(120000,"Y");
 
+ChartPoint dp3 = this.chartControl1.Series[0].Summary.FindValue(500000, "Y",ref index);
+
+//The chart point returns its points within the range of the specified index.
+
+ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindValue(70000, "Y", ref startIndex, endIndex);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-textBoxValue = "40";
+textBoxValue = "180000";
 
 dbl = Int64.Parse(textBoxValue.Text)
 
-Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue()
+Dim index As Int16 = 0
 
-Dim dp2 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl)
+Dim startIndex As Int16 = 2
 
-Dim dp3 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y');
+Dim endIndex As Int16 = 4
 
-Dim index As Int16 = 3
+dbl = Int64.Parse(textBoxValue.Text)
 
-Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(dbl, 'Y', ref index);
+Dim dp1 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(db1)
+
+Dim dp2 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(120000,"Y")
+
+Dim dp3 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(500000, "Y",ref index);
+
+//The chart point returns its points within the range of the specified index.
+
+Dim dp4 As ChartPoint = Me.chartControl1.Series(0).Summary.FindValue(70000, "Y", ref startIndex, endIndex);
 
 {% endhighlight %}
 
@@ -112,8 +126,6 @@ It should return the chart point with a maximum value. The search should start a
 
 {% highlight c# %}
 
-String str = textBoxString.Text;
-
 startIndex = Int32.Parse(textBoxIndex.Text);
 
 endIndex = Int32.Parse(textBox1.Text);
@@ -131,8 +143,6 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMaxValue("Y", ref star
 {% endhighlight %}
 
 {% highlight vb %}
-
-Dim str As String = textBoxString.Text
 
 startIndex = Int32.Parse(textBoxIndex.Text)
 
@@ -183,8 +193,6 @@ It should return the first Chart point with a minimum value. The search should s
 
 {% highlight c# %}
 
-String str = textBoxString.Text;
-
 startIndex = Int32.Parse(textBoxIndex.Text);
 
 endIndex = Int32.Parse(textBox1.Text);
@@ -202,8 +210,6 @@ ChartPoint dp4 = this.chartControl1.Series[0].Summary.FindMinValue("Y", ref star
 {% endhighlight %}
 
 {% highlight vb %}
-
-Dim str As String = textBoxString.Text
 
 startIndex = Int32.Parse(textBoxIndex.Text)
 
