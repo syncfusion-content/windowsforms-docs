@@ -55,10 +55,10 @@ End Sub
 
 {% endtabs %}
 
-By default, when converting a C# file to a VB file, a program.vb file is generated. If you choose to set the entry point in the program.vb file, it is mandatory to register the license key in the same file.
+By default, when converting a C# project to a VB project, a program.vb file is generated. If you choose to set the entry point in the program.vb file, it is mandatory to register the license key in the same file.
 
 {% tabs %}
-{% highlight vb %}
+{% highlight Program.vb %}
 Public Sub Main()
 	    'Register Syncfusion License key
         Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")
