@@ -55,7 +55,7 @@ End Sub
 
 {% endtabs %}
 
-By default, when converting a C# file to a VB file, a program.vb file is generated. If you choose to set the entry point in program.vb file, it is necessary to register the license key in Program.vb file.
+By default, when converting a C# file to a VB file, a program.vb file is generated. If you choose to set the entry point in the program.vb file, it is mandatory to register the license key in the same file.
 
 {% tabs %}
 {% highlight vb %}
