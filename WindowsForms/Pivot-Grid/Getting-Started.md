@@ -24,15 +24,15 @@ This section explains how to add the pivot grid control in Windows Forms applica
 
 ### Adding control via designer
 
-The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control can be added through designer by following the below steps.
+The pivot grid control can be added through designer by following the below steps.
 
-1. Create a new **Windows Forms Application** in Visual Studio.
+1.Create a new **Windows Forms Application** in Visual Studio.
 
-2. Drag and drop the pivot grid control from the toolbox into the designer page.
+2.Drag and drop the pivot grid control from the toolbox into the designer page.
 
 ![GettingStarted_img1](Getting-Started_images/GettingStarted_img1.png)
 
-3. Then, the pivot grid control will be successfully added into the application along with the required libraries.
+3.Then, the pivot grid control will be successfully added into the application along with the required libraries.
 
 ![GettingStarted_img2](Getting-Started_images/GettingStarted_img2.png)
 
@@ -40,18 +40,17 @@ The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-
 
 The pivot grid control can be added through code-behind by following the below steps.
 
-1. Create a new **Windows Forms Application** in Visual Studio.
+1.Create a new **Windows Forms Application** in Visual Studio.
 
-2. Add the following assembly references to the project.
+2.Add the following assembly references to the project.
 
-    * Syncfusion.Grid.Windows.dll
-    * Syncfusion.PivotAnalysis.Base.dll
-    * Syncfusion.PivotAnalysis.Windows.dll
-    * Syncfusion.Shared.Base.dll
+* Syncfusion.Grid.Windows.dll
+* Syncfusion.PivotAnalysis.Base.dll
+* Syncfusion.PivotAnalysis.Windows.dll
+* Syncfusion.Shared.Base.dll
 
-3. Then initialize the pivot grid control by creating an instance and add it to the form using the code specified below.
+3.Then initialize the pivot grid control by creating an instance and add it to the form using the code specified below.
 
-{% capture codesnippet1 %}​
 {% tabs %}
 
 {% highlight c# %}
@@ -81,32 +80,30 @@ Me.Controls.Add(pivotGridControl1)
 {% endhighlight %}
 
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ### Adding control via Syncfusion reference manager
 
 [Syncfusion reference manager](https://help.syncfusion.com/extension/syncfusion-reference-manager/overview) is a Visual Studio Add-In that helps to add Syncfusion controls. The pivot grid control can be added through Syncfusion reference manager by following the below steps.
 
-1. Create a new **Windows Forms Application** in Visual Studio.
+1.Create a new **Windows Forms Application** in Visual Studio.
 
-2. Then right-click on the project and select Syncfusion Reference Manager.
+2.Then right-click on the project and select Syncfusion Reference Manager.
 
 ![GettingStarted_img7](Getting-Started_images/GettingStarted_img7.png)
 
-3. The Syncfusion Reference Manager wizard will be opened as shown below.
+3.The Syncfusion Reference Manager wizard will be opened as shown below.
 
 ![GettingStarted_img8](Getting-Started_images/GettingStarted_img8.png)
 
-4. Select the pivot grid control by searching it using search box. Then click on done button to add the selected pivot grid control.
+4.Select the pivot grid control by searching it using search box. Then click on done button to add the selected pivot grid control.
 
 ![GettingStarted_img9](Getting-Started_images/GettingStarted_img9.png)
 
-5. The required assemblies will be automatically added to the project by clicking ok button.
+5.The required assemblies will be automatically added to the project by clicking ok button.
 
 ![GettingStarted_img10](Getting-Started_images/GettingStarted_img10.png)
 
-6. Add the following code sample in code behind to create a simple pivot grid control.
+6.Add the following code sample in code behind to create a simple pivot grid control.
 
 {% tabs %}
 
@@ -532,5 +529,3 @@ Me.pivotGridControl1.AllowSorting = True
 {% endtabs %}
 
 ![Sorting](Getting-Started_images/Sorting.png)
-
-N> You can also explore our [WinForms Pivot Grid example](https://github.com/syncfusion/winforms-demos/tree/master/pivotgrid) that shows you how to render and configure the pivot grid.

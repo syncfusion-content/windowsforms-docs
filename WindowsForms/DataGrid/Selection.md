@@ -11,7 +11,7 @@ documentation: ug
 
 [Windows Forms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to select one or more rows or cells. For selecting a specific row or group of rows, set the [SelectionUnit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SelectionUnit) as row. For selecting a specific cell or group of cells, set the SelectionUnit as cell or Any.In SelectionUnit.Any option. A row can be selected by clicking its row header.
 
-## Current cell navigation
+### Current cell navigation
 
 Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_NavigationMode) property. The NavigationMode.Cell allows you to navigate between the cells in a row and between the rows. The NavigationMode.Row allows you to navigate between the rows. It is not possible to set the NavigationMode.Row when the cell selection is enabled (SelectionUnit is cell or any).
 
@@ -828,7 +828,7 @@ public class CustomSelectionController : RowSelectionController
 
 ![Selection using custom selection controller in windows forms datagrid](Selection_images/selection12.png)
 
-Samples Link: [SelectAllRows ](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
+Samples Link: [SelectAllRows ](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Select_all_the_default_rows1173780600.zip)
 
 ### Change Enter key behavior
 
