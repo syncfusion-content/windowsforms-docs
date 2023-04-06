@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Enhanced Cell Types in Windows Forms Grid Control
-GridControl supports more than 10 built in custom cell types. All the related cell types will be found in the [CustomCellTypes](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html) enum which can be found in [Syncfusion.GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
+GridControl supports more than 10 built in custom cell types. All the related cell types will be found in the [CustomCellTypes](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html) enum which can be found in [Syncfusion.GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library.
 
 ## Registering custom cell types
-Before adding any custom cell type, initially it is needed to register that particular custom cell type in the GridControl. For achieving this make use of the static method [GridCellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html#Syncfusion_GridHelperClasses_RegisterCellModel_GridCellType_Syncfusion_Windows_Forms_Grid_GridControl_Syncfusion_GridHelperClasses_CustomCellTypes_) which is available under the [RegisterCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html) class.
+Before adding any custom cell type, initially it is needed to register that particular custom cell type in the GridControl. For achieving this make use of the static method [GridCellType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html#Syncfusion_GridHelperClasses_RegisterCellModel_GridCellType_Syncfusion_Windows_Forms_Grid_GridControl_Syncfusion_GridHelperClasses_CustomCellTypes_) which is available under the [RegisterCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.RegisterCellModel.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ RegisterCellModel.GridCellType(gridControl1, CustomCellTypes.PercentTextBox)
 N> For using any Custom Cell type, register that particular cell type to the GridControl by using the above method. The above code shows how to register a `PercentTextBox` custom cell type to a GridControl.
 
 ## ButtonEdit cell type
-Initially register the `ButtonEdit` cell type to the GridControl. For setting a cell to `ButtonEdit` cell type assign the `CellType` property as [CustomCellTypes.ButtonEdit](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html). Convert to string while assigning because the `CellType` is of type [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
+Initially register the `ButtonEdit` cell type to the GridControl. For setting a cell to `ButtonEdit` cell type assign the `CellType` property as [CustomCellTypes.ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CustomCellTypes.html). Convert to string while assigning because the `CellType` is of type [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0).
 
 {% tabs %}
 {% highlight c# %}
@@ -39,11 +39,11 @@ Me.gridControl1(2, 2).CellType = CustomCellTypes.ButtonEdit.ToString()
 ![Cell-Types_img32](Cell-Types_images/Cell-Types_img32.png)
 
 ### ButtonEdit Style properties 
-The style properties related to the `ButtonEdit` are maintained in [ButtonEditStyleProperties](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditStyleProperties.html) class. This class consists of two main properties [ButtonEditInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditInfo.html) and `StyleInfo`.
+The style properties related to the `ButtonEdit` are maintained in [ButtonEditStyleProperties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditStyleProperties.html) class. This class consists of two main properties [ButtonEditInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonEditInfo.html) and `StyleInfo`.
 
 `ButtonEditInfo` property consists of style properties that are related to the `ButtonEdit`. `StyleInfo` property consists of all the style properties that belongs to the cell in which the `ButtonEdit` cell type is added.
 
-There are few custom button edit types already given by GridControl. These can be accessed by the [ButtonEditType](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonType.html) property. Following are the list of Button Edit types given by GridControl.
+There are few custom button edit types already given by GridControl. These can be accessed by the [ButtonEditType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.ButtonType.html) property. Following are the list of Button Edit types given by GridControl.
 
 * Browse
 * Check
@@ -231,7 +231,7 @@ Me.gridControl1(2, 2).Format = "MM/dd/yyyy hh:mm"
 
 ## NumericUpDown cell type
 
-Numeric Up/Down cell type has been enhanced to provide more styles and properties that can be added to the numeric up down control by using [FloatNumericUpDownStyleProperties](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FloatNumericUpDownStyleProperties.html) class. It enables to set the limitations of the numeric values and several other properties.
+Numeric Up/Down cell type has been enhanced to provide more styles and properties that can be added to the numeric up down control by using [FloatNumericUpDownStyleProperties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FloatNumericUpDownStyleProperties.html) class. It enables to set the limitations of the numeric values and several other properties.
 
 ### FloatNumericUpDown Style properties
 
@@ -317,7 +317,7 @@ The bool value, which allows to separate thousand basis.
 </td>
 </tr>
 </table>
-The following code explains some of the style properties available in [FloatNumericUpDownStyleProperties](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FloatNumericUpDownStyleProperties.html) class.
+The following code explains some of the style properties available in [FloatNumericUpDownStyleProperties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FloatNumericUpDownStyleProperties.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ sp.FloatNumericUpDownProperties.DecimalPlaces = 1
 ## GridInCell cell type
 `GridInCell` cell type provide covered range of cells which embeds a GridControl i.e.., a GridControl within a cell of a GridControl.
 
-Add a GridControl in this cell by using the `Control` property. The size of this GridControl will be calculated by the range of that particular cell. Styles and other properties can be added to this control within this range. While initializing the grid, create an instance with [CellEmbeddedGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CellEmbeddedGrid.html)**.** The following code will explain this.
+Add a GridControl in this cell by using the `Control` property. The size of this GridControl will be calculated by the range of that particular cell. Styles and other properties can be added to this control within this range. While initializing the grid, create an instance with [CellEmbeddedGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.CellEmbeddedGrid.html)**.** The following code will explain this.
 
 {% tabs %}
 {% highlight c# %}
@@ -453,7 +453,7 @@ gridControl1(2, 2).Tag = "http://www.syncfusion.com"
 ![Cell-Types_img40](Cell-Types_images/Cell-Types_img40.png)
 
 ### Changing the color of the link while mouse hovering
-It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html#Syncfusion_GridHelperClasses_LinkLabelCellRenderer_ActiveLinkColor) property. This property can be accessed from the [LinkLabelCellRenderer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
+It is possible to change the color of the link while mouse hover by using of the [ActiveLinkColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html#Syncfusion_GridHelperClasses_LinkLabelCellRenderer_ActiveLinkColor) property. This property can be accessed from the [LinkLabelCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LinkLabelCellRenderer.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -469,7 +469,7 @@ rend.ActiveLinkColor = Color.Green
 N> For more details and sample, check the KB link over [here](https://www.syncfusion.com/kb/4505/how-to-change-the-color-of-the-linklabel-mousehover).
 
 ## PictureBox cell type
-Picture Box cell type can be embedded into a cell by calculating the size of the picture and extending the width and height of the cell accordingly. [PictureBoxStyleProperties](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PictureBoxStyleProperties.html) class provides the style where it holds the information of the picture that has to be added. The following code examples illustrate how to set the cell type to PictureBox.
+Picture Box cell type can be embedded into a cell by calculating the size of the picture and extending the width and height of the cell accordingly. [PictureBoxStyleProperties](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.PictureBoxStyleProperties.html) class provides the style where it holds the information of the picture that has to be added. The following code examples illustrate how to set the cell type to PictureBox.
 
 {% tabs %}
 {% highlight c# %}
