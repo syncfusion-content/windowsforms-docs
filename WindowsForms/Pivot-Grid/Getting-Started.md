@@ -143,7 +143,7 @@ Syncfusion reference manager supports for specific framework which is shipped (a
 
 ## Binding data
 
-This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
+This section guides you on how to bind data source and its appropriate fields to a pivot grid control. The data source assigned to the pivot grid control should either be an [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?redirectedfrom=MSDN&view=net-5.0) list or a [DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview?redirectedfrom=MSDN&view=net-5.0).
 
 In this example, `IEnumerable` list is used as data source for the pivot grid control and the sample data source contains properties like Product, Date, Country, State, Quantity, Amount, UnitPrice and TotalPrice for demonstration purpose.
 
