@@ -415,7 +415,7 @@ Me.gridControl.RowStyles(3).Font.Italic= True
 N> The same row or column styles can also be set using [QueryCellInfo](/windowsforms/grid/appearance-and-formatting#querycellinfo-event) event.
 
 ## Controlling the Resize Behavior
-The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeColsBehavior) and [ResizeRowsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeRowsBehavior) properties. The [GridResizeCellsBehavior](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
+The resizing behavior of columns and rows can be customized by using the [ResizeColsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeColsBehavior) and [ResizeRowsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ResizeRowsBehavior) properties. The [GridResizeCellsBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeCellsBehavior.html) enumeration has provide the following options to control resizing behavior,
 
 * **AllowDragOutside** - Allows the user to drag the cell boundary outside the grid client area and resize specific row or column.
 * **IgnoreHeaders** –Do not allow the users to resize the rows or columns by moving the divider between rows or column headers.
@@ -484,7 +484,7 @@ Me.gridControl.RowHeights.ResizeToFitOptimized(GridRangeInfo.Rows(1, 8), GridRes
 {% endhighlight %}
 {% endtabs %}
 
-N> The [ResizeToFitOption](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeToFitOptions.html) enumeration has provided the options to resize the grid cells such as IncludeHeaders, None and NoShrinkSize.
+N> The [ResizeToFitOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridResizeToFitOptions.html) enumeration has provided the options to resize the grid cells such as IncludeHeaders, None and NoShrinkSize.
 
 ![working-with-rows-and-columns_img17](working-with-rows-and-columns_images/working-with-rows-and-columns_img17.png)
 
@@ -584,7 +584,7 @@ Me.gridControl1.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionTy
 ## Setting the Wrap Cell Behavior 
 The `EnterKeyBehavior` is worked based on the [WrapCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_WrapCellBehavior). Go to first column in next row or last column in previous row when at end or beginning of a row and moving based on Enter key behavior.
 
-The [GridWrapCellBehavior](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) has the following list of options,
+The [GridWrapCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridWrapCellBehavior.html) has the following list of options,
 
 * **WrapRow** – It will move the cell selection to the leftmost cell of the next row or right most cell of the previous row according to the `EnterKeyBehavior`.
 * **WrapGrid** – It includes the WrapRow behavior additionally it will navigate the selection to the topmost left cell when it reaches the bottommost right cell.
@@ -633,7 +633,7 @@ The below screenshot shows column width after using `AllowProportionalColumnSizi
 ![working-with-rows-and-columns_img21](working-with-rows-and-columns_images/working-with-rows-and-columns_img21.png)
 
 ## Getting the Size of the Range of Cells
-To calculate the display area for a given range of cells, use the [RangeInfoToRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_RangeInfoToRectangle_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method. This method takes two argument such as range and [GridRangeOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeOptions.html).
+To calculate the display area for a given range of cells, use the [RangeInfoToRectangle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_RangeInfoToRectangle_Syncfusion_Windows_Forms_Grid_GridRangeInfo_) method. This method takes two argument such as range and [GridRangeOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -681,7 +681,7 @@ Me.gridControl1.PointToRowCol(New Point(100, 100),a,b)
 N> The row and column indexes can be calculated based on the given point with respect to the grid view layout by using the [PointToClientRowCol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridViewLayout.html#Syncfusion_Windows_Forms_Grid_GridViewLayout_PointToClientRowCol_System_Drawing_Point_System_Int32__System_Int32__System_Boolean_) method. It will return row and column position of mentioned point through the `out` variables.
 
 ## Finding Covered range, Floating range or Merged range of a cell
-The [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CoveredRanges) , [FloatingCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_FloatingCells), and [MergeCells](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html)  range collection have the separate `FindRange` method to find the range of covered or floated range. These ranges can be get using [GetSpannedRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GetSpannedRangeInfo_System_Int32_System_Int32_Syncfusion_Windows_Forms_Grid_GridRangeInfo__) method.
+The [CoveredRanges](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CoveredRanges) , [FloatingCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_FloatingCells), and [MergeCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelMergeCells.html)  range collection have the separate `FindRange` method to find the range of covered or floated range. These ranges can be get using [GetSpannedRangeInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_GetSpannedRangeInfo_System_Int32_System_Int32_Syncfusion_Windows_Forms_Grid_GridRangeInfo__) method.
 
 This method is a Boolean method, so it will return `true` if the specified cell is inside the `CoveredRange` , `FloatingCell` or `MergeCell`otherwise it will return `false`. 
 
