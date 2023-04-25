@@ -63,7 +63,7 @@ N> OLE Drag Drop operation is also possible between GridControl and any other te
 
 ## Column ordering
 
-In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControllerOptions.html#) property as `DragColumnHeader`.
+In GridControl, the drag drop functionality is available in between the columns of the Grid. This can be achieved by setting the [ControllerOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControllerOptions.html) property as `DragColumnHeader`.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,7 +121,7 @@ End Sub
 
 ## Customizing drag and drop
 
-It is possible to control the clipboard format of the data that is being be dragged by using the [Model.Options.DragDropDropTargetFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_DragDropDropTargetFlags). Check the enumeration [GridDragDropFlags](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDragDropFlags.html#) to see the full set of options that are supported.
+It is possible to control the clipboard format of the data that is being be dragged by using the [Model.Options.DragDropDropTargetFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelOptions.html#Syncfusion_Windows_Forms_Grid_GridModelOptions_DragDropDropTargetFlags). Check the enumeration [GridDragDropFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridDragDropFlags.html) to see the full set of options that are supported.
 
 {% tabs %}
 {% highlight c# %}
