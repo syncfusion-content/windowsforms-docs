@@ -20,7 +20,7 @@ GridGroupingControl offers in-built support for Stacked Multi-Headers. This feat
 
 Stacked Header rows for a given grid are gathered under [TableDescriptor.StackedHeaderRows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_StackedHeaderRows) collection. This contains property definitions that control the behavior and appearance of stacked headers.
 
-Every header in a Stacked Header Row is defined by [GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html). All the headers for a given stacked header row is managed by `GridStackedHeaderRowDescriptor`. [GridStackedHeaderRowDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection.html), which is returned by `TableDescriptor.StackedHeaderRows` property manages the collection of `GridStackedHeaderRowDescriptor` for a given table.
+Every header in a Stacked Header Row is defined by [GridStackedHeaderDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html). All the headers for a given stacked header row is managed by `GridStackedHeaderRowDescriptor`. [GridStackedHeaderRowDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptorCollection.html), which is returned by `TableDescriptor.StackedHeaderRows` property manages the collection of `GridStackedHeaderRowDescriptor` for a given table.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,9 +88,9 @@ To add the stacked headers in GridGroupingControl in designer mode, follow the b
 ### Adding Stacked Headers through Code
 The stacked headers can be added through code by using the below method,
 
-1. Need to create an object of[GridStackedHeaderDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
+1. Need to create an object of[GridStackedHeaderDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderDescriptor.html) for adding the stacked column header.
 2. Add the visible columns that needs to be under the `GridStackedHeaderDescriptor` object.
-3. Add the `GridStackedHeaderDescriptor` collection to the[GridStackedHeaderRowDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
+3. Add the `GridStackedHeaderDescriptor` collection to the[GridStackedHeaderRowDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridStackedHeaderRowDescriptor.html) collection.
 4. Add the `GridStackedHeaderRowDescriptor` collection to the `StackedHeaderRows` collection of the grid.
 5. Finally, display the stacked headers in grid by using the[TopLevelGroupOptions.ShowStackedHeaders](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupOptionsStyleInfo_ShowStackedHeaders) property.
 
@@ -461,14 +461,14 @@ GridGroupingControl offers built-in support for Multi-Row Records. Using this su
 `ColumnSets` act as superset of [TableDescriptor.Columns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowGroupByColumnEventArgs.html#Syncfusion_Windows_Forms_Grid_Grouping_GridQueryAllowGroupByColumnEventArgs_Column) collection. Once `ColumnSets` are defined, the grid will loop through the collection and organize data display accordingly.
 
 ### Adding Column Spans through Designer
-To create `ColumnSets` that defines [ColumnSpans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnSetDescriptor_ColumnSpans) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
+To create `ColumnSets` that defines [ColumnSpans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnSetDescriptor_ColumnSpans) for a grid, select `TableDescriptor.ColumnSets` property in the property window. This will open [GridColumnSetDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) collection editor that will let you specify the columns to span and the range for each of the columns.
 
 ![Grid-Layout_img16](Grid-Layout_images/Grid-Layout_img16.png)
 
 ### Adding Column Spans through Code
 The below steps needs to be followed for spanning the records across multiple rows.
 
-1.Define [GridColumnSpanDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSpanDescriptor.html) for each column to be spanned across grid rows or columns. Specify the range that the column spans. Rows and Columns are zero-based.
+1.Define [GridColumnSpanDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSpanDescriptor.html) for each column to be spanned across grid rows or columns. Specify the range that the column spans. Rows and Columns are zero-based.
 
 {% tabs %}
 {% highlight c# %}
@@ -499,7 +499,7 @@ columnSpanDescriptor3.Range = GridRangeInfo.Cells(1, 2, 1, 2)
 {% endhighlight %}
 {% endtabs %}
 
-2.Create a [GridColumnSetDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) whose [ColumnSpans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnSetDescriptor_ColumnSpans) property stores information about columns that needs to be spanned. Hence, it is necessary to initialize `ColumnSpans` property with columns that needs to be spread.
+2.Create a [GridColumnSetDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html) whose [ColumnSpans](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnSetDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnSetDescriptor_ColumnSpans) property stores information about columns that needs to be spanned. Hence, it is necessary to initialize `ColumnSpans` property with columns that needs to be spread.
 
 {% tabs %}
 {% highlight c# %}
@@ -575,7 +575,7 @@ Me.gridGroupingControl1.TableDescriptor.ColumnSets.RemoveAt(1)
 {% endtabs %}
 
 ## Field Chooser
-User can handle the visibility of columns through `FieldChooser dialog`. It can be done by initializing [FieldChooser](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FieldChooser.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly provide this support.
+User can handle the visibility of columns through `FieldChooser dialog`. It can be done by initializing [FieldChooser](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.FieldChooser.html) class where the constructor takes a parameter as a GridGroupingControl object. The [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly provide this support.
 
 On enabling the FieldChooser, a dialog box will be opened when right clicked on column headers. This dialog box will list all the column names with check boxes beside them. The required columns can be made visible in the grid by selecting the check box adjacent to the required column.
 
@@ -706,7 +706,7 @@ End Sub
 N> FieldChooser support can also be added in [StackedHeaders](#stacked-headers). 
 
 ### Remove Hidden Columns from FieldChooser Dialog
-To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDescriptorCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
+To remove the hidden columns from the FieldChooser dialog, it is necessary to bypass the original column collection in the FieldChooser with a cloned [GridColumnDescriptorCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptorCollection.html). The following steps illustrates how to do this:
 
 1. Get the collection of the visible columns that are removed from the column collection.
 2. Create a cloned column collection `GridColumnDescriptorCollection` from the[TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridColumnDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridColumnDescriptor_TableDescriptor).

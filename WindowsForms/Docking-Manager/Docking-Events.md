@@ -1623,7 +1623,7 @@ Members</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
+{{ '[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 This property gets/sets the value indicating whether the event should be canceled.</td></tr>
 <tr>
 <td>

@@ -14,7 +14,7 @@ An Event is a message that is triggered to notify an object or a class of the oc
 This section explains all the events that are related to the cells.
 
 ### CellClick 
-This will occur when the user clicks inside a cell. The event handler receives an argument of type ‘[GridCellClickEventArgs’](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html).
+This will occur when the user clicks inside a cell. The event handler receives an argument of type ‘[GridCellClickEventArgs’](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellClickEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -231,7 +231,7 @@ End Sub
 {% endtabs %}
 
 ### CurrentCellControlGotFocus 
-It will occur when the current cell switches to in-place editing and the control associated with the current cell receives the focus. The event handler receives an argument of type [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=net-5.0) containing data related to this event. 
+It will occur when the current cell switches to in-place editing and the control associated with the current cell receives the focus. The event handler receives an argument of type [ControlEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) containing data related to this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -289,7 +289,7 @@ End Sub
 {% endtabs %}
 
 ### CurrentCellStartEditing
-It will occur while current cell enters to the edit mode. The event handler receives an argument of type [CancelEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0) containing data related to this event. The [e.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property will decide whether the event should be canceled or not.
+It will occur while current cell enters to the edit mode. The event handler receives an argument of type [CancelEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?view=net-5.0) containing data related to this event. The [e.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) property will decide whether the event should be canceled or not.
 
 {% tabs %}
 {% highlight c# %}
@@ -526,7 +526,7 @@ End Sub
 This section will explains the key related events of GridGroupingControl.
 
 ### KeyDown 
-This event will occur when any key is pressed at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=net-5.0) containing data related to this event. 
+This event will occur when any key is pressed at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) containing data related to this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -547,7 +547,7 @@ End Sub
 {% endtabs %}
 
 ### KeyPress
-This event will occur when any key is pressed at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=net-5.0) containing data related to this event. 
+This event will occur when any key is pressed at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) containing data related to this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -568,7 +568,7 @@ End Sub
 {% endtabs %}
 
 ### KeyUp
-This event will occur when any key is released at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=net-5.0) containing data related to this event. 
+This event will occur when any key is released at the time of GridGroupingControl in focus. The event handler receives an argument of type [KeyEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.keyeventargs?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) containing data related to this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1073,7 +1073,7 @@ End Sub
 {% endtabs %}
 
 ### SourceListListChanged 
-This occurs before the table processes [System.ComponentModel.IBindingList.ListChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist.listchanged?view=net-5.0) event of attached source list. The event handler receives an argument of type [TableListChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableListChangedEventArgs.html) containing data related to this event.
+This occurs before the table processes [System.ComponentModel.IBindingList.ListChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ibindinglist.listchanged?view=net-5.0) event of attached source list. The event handler receives an argument of type [TableListChangedEventArgs](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableListChangedEventArgs.html) containing data related to this event.
 
 {% tabs %}
 {% highlight c# %}
