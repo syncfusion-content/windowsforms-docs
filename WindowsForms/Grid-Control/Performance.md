@@ -43,7 +43,7 @@ Next i
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more about the indexer technique, refer the link over [here](http://help.syncfusion.com/windowsforms/grid/populating-data#indexer-technique).
+N> To know more about the indexer technique, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/populating-data#indexer-technique).
 
 ### Populating Values
 `PopulateValues` method is used to move values from a given data source into the specified grid range. The first parameter specifies range of destination cells where data is to be copied and the second parameter specifies data source to the destination cells.
@@ -57,7 +57,7 @@ gridControl1.Model.PopulateValues(GridRangeInfo .Cells(top, left, bottom, right)
 {% endhighlight %}
 {% endtabs %}
 
-N> To know more about PopulateValues method, refer the link over [here](http://help.syncfusion.com/windowsforms/grid/populating-data#populatevalues-method).
+N> To know more about PopulateValues method, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/populating-data#populatevalues-method).
 
 ### Implementing Virtual Mode
 Three events need to be handled in order to implement a virtual mode in GridControl. They perform the following actions:
@@ -125,7 +125,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> To know about the Virtual mode in GridControl, refer the link over [here](http://help.syncfusion.com/windowsforms/grid/virtual-grid).
+N> To know about the Virtual mode in GridControl, refer the link over [here](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid).
 
 ![Performance_img2](Performance_images/Performance_img2.png)
 
