@@ -684,7 +684,7 @@ This section talks about the customization of axis labels in the following topic
 
 By default, the label texts are automatically determined based on the axis data points and the generated intervals. 
 
-If you want to hide the axis label, you can set the [IsVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_IsVisible) property to `false`.
+If you want to hide the axis label, you can set the [IsVisible](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_IsVisible) property to `false` in chart [PrimaryXAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryXAxis) and [PrimaryYAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#Syncfusion_Windows_Forms_Chart_ChartControl_PrimaryYAxis).
 
 You can better the format, look and positioning of the labels using the properties listed below.
 
