@@ -390,7 +390,6 @@ For more details about the hiding columns and rows, refer the link over [here](/
 
 ## FormatCell Dialog
 The Format Cell Dialog is used to dynamically format the contents of the cell or range of cells in the GridControl. This can be enabled in the GridControl by using the [GridFormatCellsDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridFormatCellDialog.html) class.
-
 {% tabs %}
 {% highlight c# %}
 // Add the format Cells dialog into the GridControl
