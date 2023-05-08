@@ -10,7 +10,7 @@ documentation: ug
 
 ## Context Menu
 
-SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=net-5.0). It allows to create context menus for different rows in an efficient manner.
+SfDataGrid provides an entirely customizable menu to expose the functionality on user interface by using [ContextMenuStrip](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.contextmenustrip?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). It allows to create context menus for different rows in an efficient manner.
 
 ### ContextMenu for Records
 
@@ -136,7 +136,7 @@ Me.sfDataGrid1.GroupCaptionContextMenu.Items.Add("Collapse", Nothing, OnCollapse
 
 ### ContextMenu for GroupSummaryRow
 
-The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupSummaryContextMenu) property.
+The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupCaptionContextMenu) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -650,7 +650,7 @@ Me.sfDataGrid1.Columns("OrderID").ShowToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowToolTip) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip).
+N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowToolTip).
 
 
 ![Windows forms datagrid displays tooltip when the mouse hover the cell](InteractiveFeatures_Images/ToolTip1.png)
