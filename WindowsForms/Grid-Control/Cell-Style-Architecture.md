@@ -85,7 +85,7 @@ Me.gridControl1(3,2).CellValue = obj
 
 ### ImageList
 
-[ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageList) property holds [Systems.Windows.Forms.ImageList](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.imagelist?view=net-5.0). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property and can set on cell-by-cell basis.
+[ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageList) property holds [Systems.Windows.Forms.ImageList](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.imagelist?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property and can set on cell-by-cell basis.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 ### Format
 
-The formats of a cell value can be changed by using [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Format) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types)
+The formats of a cell value can be changed by using [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Format) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types)
 {% tabs %}
 {% highlight c# %}
 gridControl1[2, 2].CellValue = 31456;
@@ -326,7 +326,7 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 
 ### Custom BaseStyles
 
-Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) property in the `GridStyleInfo`.
+Custom BaseStyles can be defined in GridControl by using the [GridBaseStyle](hhttps://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStyle.html). After defining a BaseStyle, it has to be added to the [BaseStylesMap](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridBaseStylesMap.html) so that it can be accessed in `GridStyleInfo` objects. Assign the defined base style to the desired cells by using the [BaseStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BaseStyle) property in the `GridStyleInfo`.
 
 {% tabs %} {% highlight c# %}
 //Adds a new base style.
@@ -612,7 +612,7 @@ N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the se
 
 ### Clearing Only the Data
 
-For clearing only the selected range of cells, make use of the [Model.Clear](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_Clear_System_Boolean_) method. This method clears only the cells that are selected. 
+For clearing only the selected range of cells, make use of the [Model.Clear](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ModifyStyle_Syncfusion_Styles_IStyleInfo_Syncfusion_Styles_StyleModifyType_) method. This method clears only the cells that are selected. 
 
 {% tabs %}{% highlight c# %}
 // Will clear the selected contents.
