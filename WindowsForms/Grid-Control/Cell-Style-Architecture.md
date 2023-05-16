@@ -612,7 +612,7 @@ N> <kbd>Ctrl</kbd>+<kbd>Delete</kbd> key combination can be used to clear the se
 
 ### Clearing Only the Data
 
-For clearing only the selected range of cells, make use of the [Model.Clear](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ModifyStyle_Syncfusion_Styles_IStyleInfo_Syncfusion_Styles_StyleModifyType_) method. This method clears only the cells that are selected. 
+For clearing only the selected range of cells, make use of the [Model.Clear](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_Clear_System_Boolean_) method. This method clears only the cells that are selected. 
 
 {% tabs %}{% highlight c# %}
 // Will clear the selected contents.
