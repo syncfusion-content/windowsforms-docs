@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 
 ---
-# irtual Grid in Windows Forms Grid Control
+# Virtual Grid in Windows Forms Grid Control
 
 Virtual Grid is designed to display very large amount of data extremely fast. In a virtual grid, no cell data is stored in [GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#) objects or any other internal grid storage. All information is provided on demand through handled events. This walkthrough will explain how to create a virtual grid and all the events that are required to accomplish it, in `GridControl`.
 
