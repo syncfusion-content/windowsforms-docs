@@ -136,7 +136,7 @@ Me.sfDataGrid1.GroupCaptionContextMenu.Items.Add("Collapse", Nothing, OnCollapse
 
 ### ContextMenu for GroupSummaryRow
 
-The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupCaptionContextMenu) property.
+The context menu for the group summary can be set by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_GroupSummaryContextMenu) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -650,7 +650,7 @@ Me.sfDataGrid1.Columns("OrderID").ShowToolTip = True
 {% endhighlight %}
 {% endtabs %}
 
-N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowToolTip).
+N>[GridColumnBase.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_ShowToolTip) takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ShowToolTip).
 
 
 ![Windows forms datagrid displays tooltip when the mouse hover the cell](InteractiveFeatures_Images/ToolTip1.png)
