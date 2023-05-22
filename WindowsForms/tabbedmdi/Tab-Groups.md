@@ -63,7 +63,7 @@ Private TabbedGroupedMDIManager As TabbedMDIManager
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-* Set the form's [IsMdiContainer](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
+* Set the form's [IsMdiContainer](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.ismdicontainer?view=netframework-4.7.2) property to `true`.
 * Initialize the TabbedMDIManager and set the required properties.
 
 {% capture codesnippet3 %}
