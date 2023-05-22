@@ -38,7 +38,7 @@ Syncfusion WinForms suite comes up with following different calendars namely:
 
 ### SfCalendar
 
-The [SfCalendar](https://help.syncfusion.com/windowsforms/sfcalendar/overview) control provides multiple views of month, year, decade, and century: the dates will be selected easily. This provides easy date selection using keyboard, mouse, and touch interactions. This also supports selecting multiple date, highlighting special dates, and complete customization options.
+The [SfCalendar](https://help.syncfusion.com/windowsforms/calendar/overview) control provides multiple views of month, year, decade, and century: the dates will be selected easily. This provides easy date selection using keyboard, mouse, and touch interactions. This also supports selecting multiple date, highlighting special dates, and complete customization options.
 
 ### MonthCalendarAdv 
 
