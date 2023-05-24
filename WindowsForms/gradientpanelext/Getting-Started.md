@@ -27,13 +27,13 @@ The following steps describe how to create the **GradientPanelExt** control via 
 
     * Syncfusion.Shared.Base
 
-![Drag and drop GradientPanelExt from toolbox](GradientPanelExt_images/Overview_img373.png)
+![Drag and drop GradientPanelExt from toolbox](gradientpanelext_images/windowsforms-gradientpanelext-toolbox.png)
 
 3. Set the Gradient colors to the panel by defining gradient styles and colors.
 
 4. Add the primitives to the control using **GradientPanelExt PrimitiveCollection Editor**, which is displayed using the [Primitives](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GradientPanelExt.html#Syncfusion_Windows_Forms_Tools_GradientPanelExt_Primitives) property. Refer to the following screenshot.
 
-![Windows Forms GradientPanelExt showing primitive collection editor](GradientPanelExt_images/Overview_img374.png)
+![Windows Forms GradientPanelExt showing primitive collection editor](gradientpanelext_images/windowsforms-gradientpanelext-collection-editor.png)
 
 5. Set the primitive alignment and position.
 
@@ -246,4 +246,4 @@ gradientPanelExt.Controls.Add(textBoxExt2)
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Windows Forms GradientPanelExt shows added primitives and other controls](GradientPanelExt_images\GradientPanelExt_addcontrols.png)
+![Windows Forms GradientPanelExt shows added primitives and other controls](gradientpanelext_images\windowsforms-gradientpanelext-_addcontrols.png)
