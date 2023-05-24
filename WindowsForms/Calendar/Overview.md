@@ -33,12 +33,12 @@ The **SfCalendar** is a control that allows you to select a date from calendar, 
 
 Syncfusion WinForms suite comes up with following different calendars namely:
 
-* [SfCalendar](https://www.syncfusion.com/products/windows-forms/calendar)
+* [SfCalendar](https://www.syncfusion.com/winforms-ui-controls/calendar)
 * [MonthCalendarAdv](https://help.syncfusion.com/windowsforms/classic/month-calendar/overview)
 
 ### SfCalendar
 
-The [SfCalendar](https://help.syncfusion.com/windowsforms/sfcalendar/overview) control provides multiple views of month, year, decade, and century: the dates will be selected easily. This provides easy date selection using keyboard, mouse, and touch interactions. This also supports selecting multiple date, highlighting special dates, and complete customization options.
+The [SfCalendar](https://help.syncfusion.com/windowsforms/calendar/overview) control provides multiple views of month, year, decade, and century: the dates will be selected easily. This provides easy date selection using keyboard, mouse, and touch interactions. This also supports selecting multiple date, highlighting special dates, and complete customization options.
 
 ### MonthCalendarAdv 
 
@@ -136,7 +136,7 @@ Description
 Special dates
 </td>
 <td>
-Highlights the {{'[special date](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization#special-dates)'| markdownify }} with icons and descriptions. Customizes the position of icon and text.
+Highlights the {{'[special date](https://help.syncfusion.com/windowsforms/calendar/cell-customization#special-dates)'| markdownify }} with icons and descriptions. Customizes the position of icon and text.
 
 </td>
 </tr>
@@ -145,7 +145,7 @@ Highlights the {{'[special date](https://help.syncfusion.com/windowsforms/sfcale
 Blackout dates
 </td>
 <td>
-Blocks certain dates from selection and user interaction. Applies separate style for {{'[Blackout dates](https://help.syncfusion.com/windowsforms/sfcalendar/selection#disable-selection)'| markdownify }}.
+Blocks certain dates from selection and user interaction. Applies separate style for {{'[Blackout dates](https://help.syncfusion.com/windowsforms/calendar/selection#disable-selection)'| markdownify }}.
 
 </td>
 </tr>
@@ -154,7 +154,7 @@ Blocks certain dates from selection and user interaction. Applies separate style
 Cell customization
 </td>
 <td>
-Each individual cell appearance in SfCalendar can be {{'[customized](https://help.syncfusion.com/windowsforms/sfcalendar/cell-customization)'| markdownify }} by changing font, background, foreground, and border color.
+Each individual cell appearance in SfCalendar can be {{'[customized](https://help.syncfusion.com/windowsforms/calendar/cell-customization)'| markdownify }} by changing font, background, foreground, and border color.
 
 </td>
 </tr>
@@ -163,7 +163,7 @@ Each individual cell appearance in SfCalendar can be {{'[customized](https://hel
 Appearance customization
 </td>
 <td>
-Customizes each individual cell {{'[appearance](https://help.syncfusion.com/windowsforms/sfcalendar/appearance)'| markdownify }}. Changes the text and appearance of a date cell on-demand.
+Customizes each individual cell {{'[appearance](https://help.syncfusion.com/windowsforms/calendar/appearance)'| markdownify }}. Changes the text and appearance of a date cell on-demand.
 
 </td>
 </tr>
@@ -172,7 +172,7 @@ Customizes each individual cell {{'[appearance](https://help.syncfusion.com/wind
 Navigation
 </td>
 <td>
-SfCalendar provides {{'[navigation](https://help.syncfusion.com/windowsforms/sfcalendar/navigation)'| markdownify }} support for different set of dates and different views through scrolling, clicking or touching the calendar header.
+SfCalendar provides {{'[navigation](https://help.syncfusion.com/windowsforms/calendar/navigation)'| markdownify }} support for different set of dates and different views through scrolling, clicking or touching the calendar header.
 
 </td>
 </tr>
