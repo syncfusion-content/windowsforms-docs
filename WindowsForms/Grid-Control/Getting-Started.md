@@ -65,7 +65,7 @@ Yes<br/><br/></td><td>
 Yes<br/><br/></td><td>
 Yes<br/><br/></td></tr>
 </table>
-N> The ‘*’ is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://www.syncfusion.com/kb/454# "") and [Filtering](https://www.syncfusion.com/kb/4409/how-to-add-filter-in-grid-control# "") supports can be added to the `GridControl` using the customizations. 
+N> The ‘*’ is denotes that by default the support is not provided to the Control. It will be added by having some customizations. The [Sorting](https://support.syncfusion.com/kb/article/1515/how-to-implement-the-custom-icomparer-to-sort-a-column-in-the-gridcontrol) and [Filtering](https://support.syncfusion.com/kb/article/4292/how-to-add-filter-in-winforms-gridcontrol) supports can be added to the `GridControl` using the customizations. 
 
 For binding the different kind of data sources and support for filtering, sorting, grouping for flat and hierarchical data sources make use of the `GridGroupingControl`.
 
@@ -88,7 +88,7 @@ Windows Forms Grid Control can be added through designer by following the below 
 1. Create a new **Windows** **Form** **Application**.
 2. Drag and Drop GridControl from the toolbox into the designer page. 
 
-   ![windows forms grid control is dragged from toolbox](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img1.jpeg)
+   ![windows forms grid control is dragged from toolbox](cellgrid_gettingstarted_images/windowsforms-grid-control-toolbox.jpeg)
 
 
 3. Once you drag drop the GridControl into the designer page, the GridControl will be added successfully into the application with the required libraries. The below mentioned assemblies will be added automatically into the application.
@@ -98,7 +98,7 @@ Windows Forms Grid Control can be added through designer by following the below 
     * Syncfusion.Shared.Base.dll
     * Syncfusion.Shared.Windows.dll
 
-  ![windows forms grid control showing collection of rows and columns](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img2.jpeg)
+  ![windows forms grid control showing collection of rows and columns](cellgrid_gettingstarted_images/windowsforms-grid-control-rows-columns.jpeg)
 
 
 ### Adding GridControl through Code
@@ -113,7 +113,7 @@ Windows Forms GridControl can be added through code-behind by following the belo
 
     * Syncfusion.Shared.Base.dll
 
-   ![windows forms grid control showing assemblies](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img3.jpeg)
+   ![windows forms grid control showing assemblies](cellgrid_gettingstarted_images/windowsforms-grid-control-assemblies.jpeg)
 
 
 3. Initialize a `GridControl` by using the below code in code behind.
@@ -277,7 +277,7 @@ End If
 
 Final Look of the Grid:
 
-![windows forms grid control showing collection of data](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img4.jpeg)
+![windows forms grid control showing collection of data](cellgrid_gettingstarted_images/windowsforms-grid-control-data-collection.jpeg)
 
 
 ## Cell Styles
@@ -288,10 +288,10 @@ In Windows Forms GridControl, each cell contains distinct style information and 
 
 To edit the cell styles in `Designer mode`, the grid has to be selected in the designer mode and `Edit` option has to be clicked. This will allow the grid to be edited in the designer surface. Style settings also can be changed by using the `PropertyGrid` which is visible in the right side.
 
-![windows forms grid control showing edit option](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img5.jpeg)
+![windows forms grid control showing edit option](cellgrid_gettingstarted_images/windowsforms-grid-control-edit-option.jpeg)
 
 
-![windows forms grid control showing edited page](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img6.jpeg)
+![windows forms grid control showing edited page](cellgrid_gettingstarted_images/windowsforms-grid-control-edit-page.jpeg)
 
 
 In property grid, there are two tabs mainly.
@@ -303,14 +303,14 @@ In property grid, there are two tabs mainly.
 
 All the style related properties for the whole grid will be displayed in this tab. If back color of the whole grid needs to be changed, then the [BackColor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_BackColor) property listed under the heading `Appearance` can be used and required color can be chosen.
 
-![windows forms grid control applying backcolor of whole grid](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img7.jpeg)
+![windows forms grid control applying backcolor of whole grid](cellgrid_gettingstarted_images/windowsforms-grid-control-backcolor-whole-grid.jpeg)
 
 
 `Selected Range` tab consists of all the properties related to a particular cell or selected range of cells. The style and format related properties can be changed for the desired range of cells.
 
 When you need to change the back color for the selected range of cells, then select the required cells and use the `BackColor` property listed under the heading `StyleCategoryAppearance` and required color can be chosen.
 
-![windows forms grid control applying backcolor of selected range](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img8.jpeg)
+![windows forms grid control applying backcolor of selected range](cellgrid_gettingstarted_images/windowsforms-grid-control-backcolor-selected-range.jpeg)
 
 
 ### Modifying Cell Styles through Code
@@ -348,7 +348,7 @@ Me.gridControl1.ChangeCells(GridRangeInfo.Cells(2, 2, 4, 2), style)
 {% endhighlight %}
 {% endtabs %}
 
-![windows forms grid control showing modified cell styles](CellGrid_GettingStarted_images/CellGrid_GettingStarted_img9.jpeg)
+![windows forms grid control showing modified cell styles](cellgrid_gettingstarted_images/windowsforms-grid-control-modified-cell-styles.jpeg)
 
 
 ## Selection

@@ -246,7 +246,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![CellGrid_VirtualGrid_img1](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img1.jpeg)
+![CellGrid_VirtualGrid_img1](cellgrid_virtualgrid_images/windowsforms-grid-control-cellgrid.jpeg)
 
 
 ## Editing and Updating
@@ -319,7 +319,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![CellGrid_VirtualGrid_img2](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img2.jpeg)
+![CellGrid_VirtualGrid_img2](cellgrid_virtualgrid_images/windowsforms-grid-control-cellgrid-row-height.jpeg)
 
 
 ## Column Width
@@ -360,7 +360,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![CellGrid_VirtualGrid_img3](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img3.jpeg)
+![CellGrid_VirtualGrid_img3](cellgrid_virtualgrid_images/windowsforms-grid-control-cellgrid-column-width.jpeg)
 
 
 ## Covered Ranges
@@ -397,7 +397,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![CellGrid_VirtualGrid_img4](CellGrid_VirtualGrid_images/CellGrid_VirtualGrid_img4.jpeg)
+![CellGrid_VirtualGrid_img4](cellgrid_virtualgrid_images/windowsforms-grid-control-cellgrid-covered-range.jpeg)
 
 ## Refreshing the Grid
 
