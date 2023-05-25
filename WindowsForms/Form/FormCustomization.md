@@ -26,7 +26,7 @@ Me.Icon = New Icon("sfIcon.ico")
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm shows icon](FormCustomization_images/Form_Image1.png)
+![WindowsForms Form shows icon](formcustomization_images/windowsforms-form-shows-icon.png)
 
 ### Form icon alignment
 
@@ -43,7 +43,7 @@ Me.Style.TitleBar.IconHorizontalAlignment = HorizontalAlignment.Right
 {% endhighlight %}
 {% endtabs %}
 
-![Form icon is aligned in sfform](FormCustomization_images/Form_Image2.png)
+![WindowsForms Form icon is alignment](formcustomization_images/windowsforms-form-icon-alignment.png)
 
 ## Form border
 
@@ -66,7 +66,7 @@ Me.Style.InactiveBorder = New Pen(Color.LightGray, 2)
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm with customized border color](FormCustomization_images/Form_Image3.png)
+![WindowsForms Form with customized border color](formcustomization_images/windowsforms-form-border.png)
 
 ## Shadow effect
 
@@ -89,7 +89,7 @@ Me.Style.InactiveShadowOpacity = 100
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm with shadow effect](FormCustomization_images/Form_Image4.png)
+![WindowsForms Form with shadow effect](formcustomization_images/windowsforms-form-shadow-effect.png)
 
 N> Shadow can be disabled by setting the `ShadowOpacity` property as zero.
 
@@ -116,5 +116,5 @@ Me.AllowRoundedCorners = true
 {% endtabs %}
 
 
-![SfForm with rounded corners](FormCustomization_Images/Form_Image5.png)
+![WindowsForms Form with rounded corners](formcustomization_Images/windowsforms-form-rounded-corner.png)
 
