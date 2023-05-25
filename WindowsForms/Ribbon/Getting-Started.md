@@ -15,7 +15,7 @@ This section explains how to implement a similar UI as Microsoft Outlook using [
 
 *	Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
 
-![Designer in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-designer.jpg)
+![Add Ribbon control from toolbox in WindowsForms application](getting_started_images/windowsforms-ribbon-toolbox-.jpg)
 
 ## Add RibbonControlAdv in Code
 
