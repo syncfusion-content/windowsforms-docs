@@ -25,11 +25,11 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
     * Syncfusion.Shared.Base
 
-![Windows Forms GradientPanel drag and drop from toolbox](gradientpanel-images/windowsforms-gradientpanel_toolbox.png)
+![Windows Forms GradientPanel drag and drop from toolbox](gradient-panel-images/windowsforms-gradient-panel-toolbox.png)
 
 3. Set background color to GradientPanel through property grid.
 
-![Windows Forms GradientPanel shows changing background style](gradientpanel-images/windowsforms-gradientpanel_style.png) 
+![Windows Forms GradientPanel shows changing background style](gradient-panel-images/windowsforms-gradient-panel-style.png) 
 
 ## Adding GradientPanel control via code
 
@@ -105,7 +105,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms GradientPanel shows solid style of background](gradientpanel-images/windowsforms-gradientpanel_solid.png)
+![Windows Forms GradientPanel shows solid style of background](gradient-panel-images/windowsforms-gradient-panel-solid.png)
 
 ### Pattern
 
@@ -126,7 +126,7 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms GradientPanel shows pattern style of background](gradientpanel-images/windowsforms-gradientpanel_pattern.png)
+![Windows Forms GradientPanel shows pattern style of background](gradient-panel-images/windowsforms-gradient-panel-pattern.png)
 
 ### Gradient
 
@@ -147,4 +147,4 @@ Me.gradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms GradientPanel shows gradient style of background](gradientpanel-images/windowsforms-gradientpanel_gradient.png)
+![Windows Forms GradientPanel shows gradient style of background](gradient-panel-images/windowsforms-gradient-panel-background-style.png)

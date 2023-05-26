@@ -11,7 +11,7 @@ documentation: ug
 
 The GradientPanel is a panel-derived control that acts as a container for other controls. It is used to group a collection of controls, and it has the ability to have a custom background gradient using an array of colors. 
 
-![Overview of Syncfusion GradientPanel](gradientpanel-images/windowsforms-gradientpanel_overview.png)
+![Overview of Syncfusion GradientPanel](gradient-panel-images/windowsforms-gradient-panel-overview.png)
 
 ## Key features
 
