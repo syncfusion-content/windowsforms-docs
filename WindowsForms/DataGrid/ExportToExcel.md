@@ -236,7 +236,7 @@ workBook.SaveAs(fileStream)
 Refer to the [XlsIO documentation](https://help.syncfusion.com/file-formats/xlsio/faq) for further reference. 
 
 ### Save Using File Dialog
-After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=net-5.0). 
+After exporting the SfDataGrid to excel, the exported workbook can be saved by opening the [FileDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.filedialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). 
 
 {% tabs %}
 {% highlight c# %}
@@ -1069,4 +1069,4 @@ Refer the [XlsIO document](https://help.syncfusion.com/file-formats/xlsio/workin
 
 ## See also
 
-[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9603)
+[How to change the row height for the exported excel sheet in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8529/how-to-change-the-row-height-for-the-exported-excel-sheet-in-winforms-datagrid-sfdatagrid)
