@@ -86,7 +86,7 @@ The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
-![ToolBox in WinForms skin manager](skin_images/winforms-skin-manager-toolbox.png)
+![ToolBox in WinForms Skin Manager](skin_images/winforms-skin-manager-toolbox.png)
 
 ### Applying theme
 
