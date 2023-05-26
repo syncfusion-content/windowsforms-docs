@@ -11,7 +11,7 @@ documentation: ug
 
 The [WinForms Ribbon Control](https://help.syncfusion.com/windowsforms/ribbon/overview) (ribbon menu) accommodates all the tools required for an application in a single, easy-to-navigate user interface like Microsoft Office. Its dynamic resizing, keyboard accessibility, and complete customization options help to organize an application. It provides an application UI like Microsoft Office with a 2007 style that contains an application menu and 2016 style that contains a backstage view.
 
-![Overview of Syncfusion RibbonControlAdv](OverView_Images/OverView_img1.jpg)
+![Overview of Syncfusion in WindowsForms Ribbon Control](overview_images/windowsforms-ribbon-overview.jpg)
 
 ## Key Features
 
