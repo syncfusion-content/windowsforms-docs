@@ -1859,4 +1859,4 @@ End If
 
 ## See Also
 
-[How to programmatically configure syntax highlighting in WinForms SyntaxEditor?](https://www.syncfusion.com/kb/11105/how-to-programmatically-configure-syntax-highlighting-in-winforms-syntaxeditor)
+[How to programmatically configure syntax highlighting in WinForms SyntaxEditor?](https://support.syncfusion.com/kb/article/9735/how-to-programmatically-configure-syntax-highlighting-in-winforms-syntaxeditor)

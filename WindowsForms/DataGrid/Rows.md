@@ -581,6 +581,6 @@ Next record
 
 ## See also
 
-[How to freeze particular column in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9396)
+[How to freeze particular column in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8318/how-to-freeze-particular-column-in-winforms-datagrid-sfdatagrid)
 
-[How to disable the scroll bars in the WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9269)
+[How to disable the scroll bars in the WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8119/how-to-disable-the-scroll-bars-in-the-winforms-datagrid-sfdatagrid)

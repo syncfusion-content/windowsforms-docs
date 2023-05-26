@@ -435,7 +435,7 @@ Private )
 {% endtabs %}
 
 Download sample from below location,
-**Sample** - [Custom Grouping](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
+**Sample** - [Custom Grouping](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Custom_Grouping640245417.zip#)
 
 
 ### Cancel Expanding of Groups
@@ -487,8 +487,8 @@ End Sub
 
 ## See also
 
-[How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11232/)
+[How to create the single group for null and empty value in Windows Forms DataGrid(SfDataGrid)](https://support.syncfusion.com/kb/article/9810/how-to-create-the-single-group-for-null-and-empty-value-in-windows-forms-datagridsfdatagrid)
 
-[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid-sfdatagrid)
 
-[How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/9384)
+[How to customize the group caption text in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/8205/how-to-customize-the-group-caption-text-in-winforms-datagrid-sfdatagrid)
