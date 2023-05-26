@@ -293,7 +293,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Spline chart in WindowsForms](chart-types_images/windowsforms-spline-chart.jpeg)
+![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.jpeg)
 
 #### Chart Details
 
