@@ -86,7 +86,7 @@ Me.scheduleControl1.AllowSecondsInAppointment = True
 {% endhighlight %}
 {% endtabs %}
 
-![Time interval in WindowsForms Scheduler](time-interval_images/windowsforms-scheduler-time-interval.png)
+![Time-Interval_img1](Time-Interval_images/Time-Interval_img1.png)
 
 
 ## Setting the recurrence appointments in seconds
@@ -101,11 +101,11 @@ Recurrence appointments can be added by using the Appointment Recurrence dialog 
 2. Uncheck the All Day event.
 3. Enter the Start Time and End Time values.
 
-   ![Appointment steps in WindowsForms Scheduler](time-interval_images/windowsforms-scheduler-appointment-steps.png)
+   ![Time-Interval_img2](Time-Interval_images/Time-Interval_img2.png)
 
 4. Click the Make Recurring button to open the Appointment Recurrence Dialog.
 
-   ![Appointment recurrence dialog in WindowsForms Scheduler](time-interval_images/windowsforms-scheduler-appointment-recurrence-dialog.jpeg)
+   ![Time-Interval_img3](Time-Interval_images/Time-Interval_img3.jpeg)
 
 5. The highlighted area above is the newly implemented recurrence settings.
 6. Choose the desired option to make the recurrence appointment in the schedule control and press OK.
@@ -151,4 +151,4 @@ End If
 
 The following screenshot displays appointments shown in the day view every 10 minutes from 1:00 AM to 2:00 AM.
 
-![Recurrence rule in WindowsForms Scheduler](time-interval_images/windowsforms-scheduler-recurrence-rule.png)
+![Time-Interval_img4](Time-Interval_images/Time-Interval_img4.png)
