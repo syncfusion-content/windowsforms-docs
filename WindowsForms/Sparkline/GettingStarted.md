@@ -50,7 +50,7 @@ Me.sparkLine1.LineStyle.LineColor = System.Drawing.Color.Maroon
 
 {% endtabs %}
 
-![Customize Sparkline appearance in WindowsForms](gettingstarted_images/windowsforms-sparkline-customization.jpg)
+![Customize Sparkline appearance in WindowsForms application](gettingstarted_images/windowsforms-sparkline-customization.jpg)
 
 ## Adding marker to sparkline
 
@@ -130,7 +130,7 @@ Me.sparkLine1.Markers.NegativePointColor = New BrushInfo(Color.Red)
 
 {% endtabs %}
 
-![Marker customization in WindowsForms Sparkline](GettingStarted_images/windowsforms-sparkline-marker-customization.jpg)
+![Marker customization in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-marker-customization.jpg)
 
 You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SparklineGettingStarted-1907776967).
 
