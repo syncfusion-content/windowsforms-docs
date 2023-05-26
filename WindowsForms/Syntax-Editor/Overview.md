@@ -17,19 +17,19 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Custom language support](https://help.syncfusion.com/windowsforms/syntax-editor/syntax-highlighting#custom-language-using-xml) - Supports to user defined language configurations. Custom language configurations can be created easily and applied to the content in the EditControl.
 
-[Editing support](https://help.syncfusion.com/windowsforms/syntaxeditor/editing) - Allows end users to modify and edit the text documents and source code files. This includes clipboard support, unlimited undo and redo, drag and drop, block indent and outdent, and so on.
+[Editing support](https://help.syncfusion.com/windowsforms/syntax-editor/editing) - Allows end users to modify and edit the text documents and source code files. This includes clipboard support, unlimited undo and redo, drag and drop, block indent and outdent, and so on.
 
 [Code outlining](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#outlining): Sections of code from the outlining blocks can be specified using the Configuration Settings. The EditControl defines different brackets for highlighting different languages.
 
-[Clipboard operations](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#clipboard-operations): Provides keyboard and programmatic support to Cut, Copy, and Paste.
+[Clipboard operations](https://help.syncfusion.com/windowsforms/syntax-editor/editing#clipboard-operations): Provides keyboard and programmatic support to Cut, Copy, and Paste.
 
-[Selection mode](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#selection-modes): Supports normal selection and rectangular block selection to select lines from specific columns like Microsoft Visual Studio Text Editor.
+[Selection mode](https://help.syncfusion.com/windowsforms/syntax-editor/editing#selection-modes): Supports normal selection and rectangular block selection to select lines from specific columns like Microsoft Visual Studio Text Editor.
 
-[Change tracking](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#line-modification-marker): Provides extensive support to track the changed lines by displaying markers at the beginning of lines after the last file save operation.
+[Change tracking](https://help.syncfusion.com/windowsforms/syntax-editor/editing#line-modification-marker): Provides extensive support to track the changed lines by displaying markers at the beginning of lines after the last file save operation.
 
 [Line number](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#line-number): Supports to display line number at the starting position of text.
 
-[Indentation support](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#indent-or-outdent): Supports text indent and outdent options like Microsoft Visual Studio Text Editor.
+[Indentation support](https://help.syncfusion.com/windowsforms/syntax-editor/editing#indent-or-outdent): Supports text indent and outdent options like Microsoft Visual Studio Text Editor.
 
 [Word wrap](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#word-wrap): Supports text wrapping to next line when it exceeds the control bound.  
 
@@ -37,7 +37,7 @@ The [EditControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows
 
 [Auto correct](https://help.syncfusion.com/windowsforms/syntax-editor/intellisense#auto-correct): Supports AutoCorrect option that automatically corrects misspellings and common typos.
 
-[Fully functional Context menu](https://help.syncfusion.com/windowsforms/syntaxeditor/editing#context-menu-options): Provides a built-in context menu with options to perform editing operations such as Undo, Redo, Cut, Copy, Paste, Select All, and so on. The EditControl also contains options to enable or disable the built-in context menu.
+[Fully functional Context menu](https://help.syncfusion.com/windowsforms/syntax-editor/editing#context-menu-options): Provides a built-in context menu with options to perform editing operations such as Undo, Redo, Cut, Copy, Paste, Select All, and so on. The EditControl also contains options to enable or disable the built-in context menu.
 
 [Content dividers](https://help.syncfusion.com/windowsforms/syntax-editor/text-visualization#content-dividers): Clearly distinguishes content sections with line dividers similar to Visual Basic to improve code readability.
 
