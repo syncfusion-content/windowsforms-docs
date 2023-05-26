@@ -86,13 +86,13 @@ The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.Base
 
-![WinForms skin manager from toolbox](skin_images/SkinManager_toolbox.png)
+![ToolBox in WinForms skin manager](skin_images/winforms-skin-manager-toolbox.png)
 
 ### Applying theme
 
 After the SkinManager component has been added into the designer, select the SkinManager component, and go to properties window. Here, you can apply theme for a control or form using the `Controls` property.
 
-![WinForms skin manager apply theme in designer](skin_images/SkinManager_root.png)
+![Root in WinForms Skin Manager](skin_images/winforms-skin-manager-root.png)
 
 N> SkinManager does not support the custom themes ( themes generated using ThemeStudio). It works only with predefined themes.
 
@@ -100,7 +100,7 @@ N> SkinManager does not support the custom themes ( themes generated using Theme
 
 Skin manager supports to apply theme for all the control in the form or a container by applying theme to the form or container. So, you do not need to apply theme for each control.
 
-![WinForms skin manager apply theme to entire form](skin_images/SkinManager_form.png)
+![WinForms Skin Manager apply theme to entire form](skin_images/winforms-skin-manager-apply-theme-to-the-entire-form.png)
 
 ## Through code
 
@@ -152,7 +152,7 @@ skinManager1.VisualTheme = VisualTheme.Office2016Black
 
 {% endtabs %}
 
-![WinForms SkinManager shows theme applied to entire form](skin_images/SkinManager_form_code.png)
+![WinForms Skin Manager shows theme applied to entire form code](skin_images/winforms-skin-manager-shows-theme-applied-to-entire-form-code.png)
 
 ## Apply Themes to entire application
 
@@ -194,7 +194,7 @@ Me.treeViewAdv1.ThemeName = "Office2019Colorful"
 
 {% endtabs %}
 
-![WinForms shows themes applied to a control](skin_images/SkinManager_theme.png)
+![WinForms Skin Manager theme](skin_images/winforms-skin-manager-theme.png)
 
 ## Theme studio based themes
 
@@ -224,7 +224,7 @@ FontHelper.FontFamily = New FontFamily("Algerian")
 
 {% endtabs %}
 
-![WinForms SkinManager shows applied font style to entire application](skin_images/SkinManager_font.png)
+![WinForms Skin Manager shows applied font style to entire application](skin_images/winforms-skin-manager-shows-applied-font-style-to-entire-application.png)
 
 ### Styles
 
@@ -258,7 +258,7 @@ Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![WinForms SkinManager showing applied different style to the control](skin_images/SkinManager_style.png)
+![Styles in WinForms Skin Manager](skin_images/winforms-skin-manager-style.png)
 
 ### Overriding user customization when applying theme
 
@@ -286,4 +286,4 @@ Me.treeViewAdv1.ThemeStyle.TreeNodeAdvStyle.TextColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![WinForms SkinManager shows Office2019 theme applied in control](skin_images/SkinManager_office2019.png)
+![WinForms Skin Manager shows Office2019 theme applied in control](skin_images/winforms-skin-manager-shows-office2019-theme.png)
