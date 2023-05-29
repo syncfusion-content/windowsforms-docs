@@ -30,7 +30,7 @@ The `SplashControl` provides full support for the Windows Forms designer.
          * Syncfusion.Shared.Base.dll
          * Syncfusion.Tools.Windows.dll
 
-   ![Drag and drop the SplashControl from toolbox](Overview_images/splash_img1.jpeg) 
+   ![Drag and drop the Splash Screen from toolbox in Windowsforms application](overview_images/windowsforms-splash-screen-drag-and-drop.jpeg) 
 
 **Step 2**: Set the SplashImage and the TimerInterval properties through the property grid.
 
@@ -38,7 +38,7 @@ The `SplashControl` provides full support for the Windows Forms designer.
 
 **Step 4**: The SplashPanel can also be viewed at design time using the Preview Splash option by clicking the smart tag as shown below.
 
-   ![Windows forms splashcontrol showing in designer page](Overview_images/splash_img2.jpeg) 
+   ![Windowsforms Splash Screen showing in designer page](overview_images/windowsforms-splash-screen-showing-in-designer-page.jpeg) 
 
 **Step 5**: Now run the application.
 
@@ -46,7 +46,7 @@ The `SplashControl` provides full support for the Windows Forms designer.
 
 **Step 7**: Handle the SplashClosed event to do your processing after the splash screen is closed.
 
-   ![Windows forms splashcontrol showing splash screen at run time](Overview_images/splash_img3.jpeg) 
+   ![Showing Splash Screen at run time in WindowsForms](overview_images/windowsforms-splash-screen-at-run-time.jpeg) 
 
 **Step 8**: You can cancel the SplashControl while it is displaying the splash screen by calling the HideSplash() method.
 
@@ -112,4 +112,4 @@ Me.SplashControl1.TimerInterval = 3000
 
 **Step 5**: Run the application.
 
-   ![Windows forms splashcontrol showing splash screen at run time](Overview_images/splash_img4.jpeg) 
+   ![Windowsforms Splash Screen displayed at run time](overview_images/windowsforms-splash-screen-displayed-at-run-time.jpeg) 
