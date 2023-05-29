@@ -37,7 +37,7 @@ The `SplashPanel` control provides full support for the Windows Forms designer.
 
 **Step 5** You can cancel the SplashPanel by calling the HideSplash() method.
 
-   ![Windowsforms Splash Panel showing in designer page](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg) 
+   ![WindowsForms Splash Panel showing in designer page](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg) 
 
 ## Through code
 
@@ -237,4 +237,4 @@ End Sub
 
 **Step 8**: Run the application.
 
-   ![Windowsforms Splash Panel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg) 
+   ![WindowsForms Splash Panel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg) 
