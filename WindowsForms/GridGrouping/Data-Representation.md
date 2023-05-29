@@ -38,8 +38,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title")
 
 The grid below displays data columns from the Employees Table grouped by the values of Title field.
 
- ![Simple Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img1.jpeg) 
-
+ ![Simple Grouping in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-simple-grouping.jpeg) 
 
 
 
@@ -57,7 +56,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 
 The screenshot below reflects this process.
 
- ![Sort Order While Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img2.jpeg) 
+ ![Sort Order While Grouping in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-sort-order.jpeg) 
 
 
 
@@ -84,7 +83,7 @@ N> For more details, refer to the following browser sample:
 
 Grid Grouping control provides built-in support to group the data by more than one column. It is as simple as adding the column names to the GroupedColumns collection. With multicolumn grouping, grouping grid organizes data in a hierarchical structure showing groups in different levels. In the image below, you see Employees data grouped by Title and Country columns.
 
- ![Multi Column Grouping in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img4.jpeg)
+ ![Multi Column Grouping in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-multi-column.jpeg)
 
 
 
@@ -98,7 +97,7 @@ Grouping can also be done at design time. After binding dataset to the grouping 
 
 The image below depicts this process.
 
- ![Grouping Through Designer in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img6.jpeg) 
+ ![Grouping Through Designer in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-designer.jpeg) 
 
 
 
@@ -173,29 +172,29 @@ Me.gridGroupingControl1.ShowGroupDropArea = True
 
 Here are runtime screens showing the effect of setting ShowGroupDropArea property.
 
- ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img7.jpeg) 
+ ![GroupDropArea Runtime Screens in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-runtime-screens.jpeg) 
 
 
 
 
 
- ![Drag and Drop the column header with Drop Panelin GridGrouping Control](Data-Representation_images/Data-Representation_img8.jpeg) 
+ ![Drag and Drop the column header with Drop Panelin GridGrouping Control](data-representation_images/windowsforms-grid-grouping-drag-drop.jpeg) 
 
 
 
 
 
- ![visibility control by ShowGroupDropArea property GridGrouping Control](Data-Representation_images/Data-Representation_img9.jpeg) 
+ ![visibility control by ShowGroupDropArea property GridGrouping Control](data-representation_images/windowsforms-grid-grouping-visibility.jpeg) 
 
 
 
 
 
- ![Drop Panel will be added at the top of Grouping Grid](Data-Representation_images/Data-Representation_img10.jpeg) 
+ ![Drop Panel will be added at the top of Grouping Grid](data-representation_images/windowsforms-grid-grouping-drop-panel.jpeg) 
 
 
 
- ![Drop Panel Enabled Grid Grouping ](Data-Representation_images/Data-Representation_img11.jpeg) 
+ ![Drop Panel Enabled Grid Grouping ](data-representation_images/windowsforms-grid-grouping-enable-drop-panel.jpeg) 
 
 
 
@@ -229,7 +228,7 @@ Me.gridGroupingControl1.AddGroupDropArea("OrderDetails")
 
 Given below is a sample screenshot.
 
- ![Adding GroupDropArea in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img12.jpeg) 
+ ![Adding GroupDropArea in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-add-group-drop-area.jpeg) 
 
 
 
@@ -500,7 +499,7 @@ End Sub
 
 4. Here is a sample output.
 
- ![Customizing GroupDropArea in Data Representation for GridGrouping Control](Data-Representation_images/Data-Representation_img13.jpeg) 
+ ![Customizing GroupDropArea in Data Representation for GridGrouping Control](data-representation_images/windowsforms-grid-grouping-customize-group-drop-area.jpeg) 
 
 
 
@@ -609,7 +608,7 @@ Me.gridGroupingControl1.GridGroupDropArea.TreeLineColor = Color.Red
 {% endhighlight %} 
 {% endtabs %}
 
-![Adding Hierarchical GroupDropArea to an Application](Data-Representation_images/Data-Representation_img14.png) 
+![Adding Hierarchical GroupDropArea to an Application](data-representation_images/windowsforms-grid-grouping-hierarchical-group-drop-area.png) 
 
 
 
@@ -654,13 +653,13 @@ Me.gridGroupingControl1.GroupDropAreaAlignment = GridGroupDropAreaAlignment.Righ
 
 The following screen shot shows GroupDropArea positioned at the top of Grid Grouping control.
 
-![GroupDropArea positioned at the top of Grid Grouping control](Data-Representation_images/Data-Representation_img16.png) 
+![GroupDropArea positioned at the top of Grid Grouping control](data-representation_images/windowsforms-grid-grouping-positioned-group-drop-area.png) 
 
 
 
 The following screen shot shows GroupDropArea positioned at the left of Grid Grouping control.
 
- ![GroupDropArea positioned at the left of Grid Grouping control](Data-Representation_images/Data-Representation_img17.png) 
+ ![GroupDropArea positioned at the left of Grid Grouping control](data-representation_images/windowsforms-grid-grouping-left-positioned-group-drop-area.png) 
 
  GroupDropArea aligned at the Left
  {:.caption}
@@ -669,13 +668,13 @@ The following screen shot shows GroupDropArea positioned at the left of Grid Gro
 
 The following screen shot shows GroupDropArea positioned at the bottom of Grid Grouping control.
 
-![GroupDropArea positioned at the bottom of Grid Grouping control](Data-Representation_images/Data-Representation_img18.png) 
+![GroupDropArea positioned at the bottom of Grid Grouping control](data-representation_images/windowsforms-grid-grouping-bottom-positioned-group-drop-area.png) 
 
 
 
 The following screen shot shows GroupDropArea positioned at the right of Grid Grouping control.
 
- ![GroupDropArea positioned at the right of Grid Grouping control](Data-Representation_images/Data-Representation_img19.png) 
+ ![GroupDropArea positioned at the right of Grid Grouping control](data-representation_images/windowsforms-grid-grouping-right-positioned-group-drop-area.png) 
 
 
 
@@ -813,7 +812,7 @@ You can also set header and footer attributes such as HeaderSectionHeight and Fo
 
 Group headers and footers can be populated by handling QueryCellStyleInfo event wherein you can check Header and Footer cell types and provide the data.
 
-![Group Headers and Footers in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img20.jpeg) 
+![Group Headers and Footers in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-group-headers-footers.jpeg) 
 
 
 
@@ -821,7 +820,7 @@ Group headers and footers can be populated by handling QueryCellStyleInfo event 
 
 GroupPreviewSection is the suitable place when you want to display memo fields or add custom notes for a given group. It can be enabled by setting &lt;GroupOptions&gt;.ShowGroupPreview property to True. You can adjust the size of preview row through TableOptions.GroupPreviewSectionHeight property. QueryCellStyleInfo event can be used to populate preview rows.
 
- ![GroupPreviewRows in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img21.jpeg) 
+ ![Group Preview Rows in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-group-preview-rows.jpeg) 
 
 
 
@@ -832,7 +831,7 @@ Each group can optionally have an AddNew row where you can provide the values fo
 * &lt;GroupOptions&gt;.ShowAddNewRecordBeforeDetails - adds the AddNew row at the top of a group.
 * &lt;GroupOptions&gt;.ShowAddNewRecordAfterDetails - adds the AddNew row at the bottom of a group.
 
- ![AddNew Records in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img22.jpeg) 
+ ![AddNew Records in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-add-new-records.jpeg) 
 
 
 
@@ -843,7 +842,7 @@ This is the first section within a group that provides a caption bar above colum
 * &lt;GroupOptions&gt;.ShowCaption - enables the display of caption section; True by default. 
 * &lt;GroupOptions&gt;.CaptionText - used to get and set caption text.
 
- ![GroupCaptionSection in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img23.jpeg) 
+ ![Group Caption Section in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-group-caption-section.jpeg) 
 
 
 
@@ -1017,7 +1016,7 @@ Me.gridGroupingControl1.Appearance.GroupPreviewCell.Interior = New BrushInfo(Col
 
 
 
-![Custom Summary Tokens in Data Presentation for Grid Grouping control](Data-Representation_images/Data-Representation_img24.png) 
+![Custom Summary Tokens in Data Presentation for Grid Grouping control](data-representation_images/windowsforms-grid-grouping-custom-summary-tokens.png) 
 
 
 
@@ -1351,13 +1350,13 @@ Me.gridGroupingControl.FreezeCaption = True
 {% endhighlight %}
 {% endtabs %}
 
-![Caption cell text can be changed and Freeze Caption Row](Data-Representation_images/Data-Representation_img26.png) 
+![Caption cell text can be changed and Freeze Caption Row](data-representation_images/windowsforms-grid-grouping-changed-freeze-caption-row.png) 
 
 
 
 
 
- ![Caption cell text can be changed and UnFreeze Caption Row](Data-Representation_images/Data-Representation_img27.png) 
+ ![Caption cell text can be changed and UnFreeze Caption Row](data-representation_images/windowsforms-grid-grouping-changed-unfreeze-caption-row) 
 
 
 
@@ -1383,7 +1382,7 @@ There are multiple ways to sort table data. A simple one is to click the desired
 
 At design time, data can be sorted by accessing SortedColumns property under TableDescriptor section in the property grid of Grid Grouping control. This will open SortColumnDescriptorCollection Editor. In that Editor, clicking Add button will add existing columns into the collection. Name and SortDirection in the property window of the editor will let you specify your desired field name to sort and the sort order. The image given below illustrates this process.
 
- ![Sorting through designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img28.jpeg) 
+ ![Sorting through designer in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-designer-sort.jpeg) 
 
 
 
@@ -1419,7 +1418,7 @@ Me.gridGroupingControl1.TableDescriptor.SortedColumns.Add("UnitPrice", ListSortD
 
 Here is a sample output. To indicate sort direction, a sort icon will be displayed in the column headers. When multicolumn sorting is applied, an index number will be displayed in the column headers along with sort icon that facilitates sort order. In the example below, the order of sorting would be ProductName(0), Quantity(1) and then UnitPrice(2). 
 
- ![Programmatic Sorting in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img29.jpeg) 
+ ![Programmatic Sorting in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-programmatic-sorting.jpeg) 
 
 
 
@@ -1541,7 +1540,7 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 
 7. Run the application. The following output is generated.
 
- ![Sorting By Display Member in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img32.jpeg) 
+ ![Sorting By Display Member in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-display-member-sorting.jpeg) 
 
 
 
@@ -1557,7 +1556,7 @@ By default, Grouping Grid supports automatic sorting. When you want to disable t
 
 Sorting on the grid data can be controlled by two boolean properties under TableOptions: AllowSortColumns and AllowMultiColumnSort. These properties are used to enable and disable sorting action. They are set to True by default. To prevent sorting against multiple columns, you should set AllowMultiColumnSort to False whereas the AllowSortColumns property should be set to True to allow single column sorting. The screenshot given below highlights these properties in the property window.
 
-![Enable Or Disable Sorting](Data-Representation_images/Data-Representation_img34.jpeg) 
+![Enable Or Disable Sorting](data-representation_images/windowsforms-grid-grouping-enable-disable-sorting.jpeg) 
 
 
 
@@ -1622,7 +1621,7 @@ It is the SummaryDescriptorCollection that manages summaries for a given table c
 
 Summaries can be set at design time itself through property window of the grid grouping control. In the property window, SummaryRows under TableDescriptor node will let you manage summaries for a grouping grid. Accessing SummaryRows property will the GridSummaryRowDescriptor collection editor. The editor contains a list of properties such as Title, SummaryColumn, Appearance, etc. that allows you to define summaries for the desired columns and to control the appearance of these summaries.
 
- ![Summaries Through Designer in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img36.jpeg) 
+ ![Summaries Through Designer in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-designer-summaries.jpeg) 
 
 
 
@@ -1690,7 +1689,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 4. Run the sample. The grid will look like this.
 
- ![Summaries features through code in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img37.jpeg) 
+ ![Summaries features through code in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-features-summaries.jpeg) 
 
 
 
@@ -1735,7 +1734,7 @@ Me.gridGroupingControl1.TableDescriptor.SummaryRows.Add(summaryRowDescriptor)
 
 Here is a sample screenshot displaying the summaries for the columns wins and losses.
 
- ![Multi Column Summaries in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img39.jpeg) 
+ ![Multi Column Summaries in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-multi-column-summaries.jpeg) 
 
 
 
@@ -1782,7 +1781,7 @@ Given below is a sample screenshot.
 
 
 
- ![Multi Row Summaries in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img40.jpeg) 
+ ![Multi Row Summaries in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-multi-row-summaries.jpeg) 
 
 
 
@@ -1826,7 +1825,7 @@ Me.gridGroupingControl1.GetTableDescriptor("Order Details").SummaryRows.Add(summ
 
 Here is a sample screen shot.
 
-![ Summaries for Nested Tables and Groups in Data Representation for Grid Grouping Control](Data-Representation_images/Data-Representation_img41.jpeg) 
+![ Summaries for Nested Tables and Groups in Data Representation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-nested-tables-summaries.jpeg) 
 
 
 
@@ -1958,7 +1957,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 5. When you run the sample, your grid will look similar to this.
 
- ![create Caption Summaries in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img43.jpeg) 
+ ![Create Caption Summaries in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-create-caption-summaries.jpeg) 
 
 
 
@@ -1966,7 +1965,7 @@ Me.gridGroupingControl1.Appearance.GroupCaptionCell.CellType = "Static"
 
 Here is another screenshot that shows the grouping grid with Caption Summaries disabled.
 
- ![Disabled Caption Summaries in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img44.jpeg) 
+ ![Disabled Caption Summaries in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-disabled-caption-summaries.jpeg) 
 
 
 
@@ -2058,7 +2057,7 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add(sortColumnDescriptor1
 
 9. When you run the sample, you will see the groups sorted against summary values of Freight. Here is a sample screen shot.
 
- ![Sort By Summary In Caption in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img46.jpeg) 
+ ![Sort By Summary In Caption in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-sort-caption-summaries.jpeg) 
 
 
 
@@ -2116,7 +2115,7 @@ Saves a list of referenced field names used in the expression. Use semicolon as 
 
 You can add any number of expression fields to the table. The following image depicts this.
 
-![Adding Expression Fields Through Designer in Grid Grouping control](Data-Representation_images/Data-Representation_img48.jpeg) 
+![Adding Expression Fields Through Designer in Grid Grouping control](data-representation_images/windowsforms-grid-grouping-adding-expression.jpeg) 
 
 
 
@@ -2150,7 +2149,7 @@ this.gridGroupingControl1.TableDescriptor.ExpressionFields.AddRange(New Syncfusi
 
 The screen shot given below highlights these expression fields.
 
-![Programmatically Adding Expression Fields in Grid Grouping control](Data-Representation_images/Data-Representation_img49.jpeg) 
+![Programmatically Adding Expression Fields in Grid Grouping control](data-representation_images/windowsforms-grid-grouping-programmatically-adding-expression.jpeg) 
 
 
 N> For more details, refer to the following browser sample:
@@ -2204,7 +2203,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("ExpCol2").Appearance.AnyRecordF
 
 Here is a sample screen shot showing two expression fields ExpCol1 and ExpCol2 where ExpCol2 is referencing ExpCol1.
 
- ![Nested Expression Field in Data Presentation for Grid Grouping Control](Data-Representation_images/Data-Representation_img51.jpeg) 
+ ![Nested Expression Field in Data Presentation for Grid Grouping Control](data-representation_images/windowsforms-grid-grouping-nested-expression-field.jpeg) 
 
 
 
@@ -2337,7 +2336,7 @@ RecordFilters collection defines filter criteria for showing or hiding records. 
 
 Record Filters can easily be added through the designer. Opening TableDescriptor.RecordFilters property in the property window will display RecordFilterDescriptor Collection Editor that allows you to define record filters. The designer settings shown in the image below will setup a record filter for the field 'wins', to display only records with wins > 20.
 
- ![Adding Filters Through Designer](Data-Representation_images/Data-Representation_img52.jpeg) 
+ ![Adding Filters Through Designer](data-representation_images/windowsforms-grid-grouping-adding-filters.jpeg) 
 
 
 
@@ -2391,7 +2390,7 @@ Me.gridGroupingControl1.TableDescriptor.RecordFilters.Add(filter)
 
 Given below is a sample screen shot showing the grid filtered with wins > 20.
 
- ![Programmatically Adding Filters ](Data-Representation_images/Data-Representation_img53.jpeg)
+ ![Programmatically Adding Filters ](data-representation_images/windowsforms-grid-grouping-programmatically-adding-filters.jpeg)
 
 
 
@@ -2499,7 +2498,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer http://msdn.microsoft.com/en-us/library/swf8kaxw.aspx for detailed information.
+N> The 'Like' operator here is implemented similar to the ‘Like’ operator in VB.NET, where “#” character is considered as a character in patterns. Refer (https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/like-operator?redirectedfrom=MSDN) for detailed information.
 
 Clearing Filters
 
@@ -2566,11 +2565,11 @@ Loop
 
 A filter bar can also be added at design time by setting the above properties through property window of the grouping grid. The designer settings shown below adds the filter for columns CompanyName and ContactTitle.
 
-![Set ShowFilterBar in GridGrouping control through designer](Data-Representation_images/Data-Representation_img57.jpeg) 
+![Set Show Filter Bar in GridGrouping control through designer](data-representation_images/windowsforms-grid-grouping-set-show-filter-bar.jpeg) 
 
 
 
-![Set Filter to the CompanyName column through designer](Data-Representation_images/Data-Representation_img58.jpeg) 
+![Set Filter to the CompanyName column through designer](data-representation_images/windowsforms-grid-grouping-designer-set-filter.jpeg) 
 
 
 
@@ -2579,7 +2578,7 @@ A filter bar can also be added at design time by setting the above properties th
 
 Here is a sample screen shot that shows the filter bar with filters enabled for columns CompanyName and ContactTitle. The records are filtered against filter condition ContactTitle = 'Sales Representative'. The image also shows filter options for the column CompanyName.
 
- ![Setting AllowFilter property](Data-Representation_images/Data-Representation_img59.jpeg) 
+ ![Setting Allow Filter property in WindowsForms](data-representation_images/windowsforms-grid-grouping-set-allow-filter.jpeg) 
 
 
 
@@ -2587,7 +2586,7 @@ Here is a sample screen shot that shows the filter bar with filters enabled for 
 
 While enabling FilterBar, it automatically adds up an option for showing All records and Custom option. Clicking the Custom option will open the RecordFilterDescriptor collection editor wherein you can edit the filter conditions or add any more filters you want. The following screen shot illustrates this process.
 
- ![Setting AllowFilter property](Data-Representation_images/Data-Representation_img60.jpeg) 
+ ![Enable Filter Bar in WindowsForms](data-representation_images/windowsforms-grid-grouping-enable-filter-bar.jpeg) 
 
 
 
@@ -2657,7 +2656,7 @@ Sample Output
 
 Below image illustrates a sample output.
 
- ![Dynamic Filter](Data-Representation_images/Data-Representation_img62.jpeg) 
+ ![Dynamic Filter in WindowsForms](data-representation_images/windowsforms-grid-grouping-dynamic-filter.jpeg) 
 
 
 
@@ -2880,7 +2879,7 @@ End Function
 {% endtabs %}
 
 
-![Localization support in Grid Grouping](Data-Representation_images/Data-Representation_img64.png)
+![Localization support in Grid Grouping](data-representation_images/windowsforms-grid-grouping-localization.png)
 
 
 
@@ -3016,7 +3015,7 @@ gGCFilter.UnwireGrid(gridGroupingControl1)
 {% endhighlight %}
 {% endtabs %}
 
- ![Filter By DisplayMember](Data-Representation_images/Data-Representation_img65.jpeg) 
+ ![Filter By DisplayMember](data-representation_images/windowsforms-grid-grouping-display-member-filter.jpeg) 
 
 
 
@@ -3150,7 +3149,7 @@ Setting Up Relations Through Designer
 
 After binding an hierarchical dataset to the grouping grid, you could find TableDescriptor.Relations collection populated with values. These values represent the relationship between the parent and child tables. 
 
-![Relations and Hierarchy](Data-Representation_images/Data-Representation_img67.png) 
+![Relations and Hierarchy in WindowsForms](data-representation_images/windowsforms-grid-grouping-relations-hierarchy.png) 
 
 
 Setting Up Relations by using GridRelationDescriptor Collection Editor
@@ -3220,7 +3219,7 @@ When a Foreign Key relation (a relation for looking up values into a related chi
 
 ForeignKey DropDown showing Edit Button (button with Pencil Icon) clicking which allows you to edit the list
 
- ![ForeignKey DropDown showing Edit Button](Data-Representation_images/Data-Representation_img68.jpeg) 
+ ![Foreign Key DropDown showing Edit Button in WindowsForms](data-representation_images/windowsforms-grid-grouping-foreign-key-drop-down.jpeg) 
 
 
 
@@ -3228,7 +3227,7 @@ ForeignKey DropDown showing Edit Button (button with Pencil Icon) clicking which
 
 The image below shows the state after clicking Edit button.
 
- ![Showing the State After Clicking Edit Button](Data-Representation_images/Data-Representation_img69.jpeg) 
+ ![Showing the State After Clicking Edit Button](data-representation_images/windowsforms-grid-grouping-edit-button-state.jpeg) 
 
 
 
@@ -3442,7 +3441,7 @@ Me.gridGroupingControl1.DataSource = parentTable
 
 5. When you run the sample, you could find the tables connected with Master-Details relation.
 
- ![RelatedMasterDetails relation](Data-Representation_images/Data-Representation_img70.jpeg) 
+ ![Related Master Details relation in WindowsForms](data-representation_images/windowsforms-grid-grouping-related-master-details.jpeg) 
 
 
 
@@ -3783,7 +3782,7 @@ mainTd.Name = "ForeignKeyReference"
 
 5. Here is a sample output that displays a look up child list for data column State with value Georgia.
 
-![Setup ForeignKeyReference Relation](Data-Representation_images/Data-Representation_img72.jpeg) 
+![Setup Foreign Key Reference Relation in WindowsForms](data-representation_images/windowsforms-grid-grouping-set-foreign-key.jpeg) 
 
 
 
@@ -3978,7 +3977,7 @@ Me.gridGroupingControl1.TableDescriptor.Relations.Add(childRelation)
 
 5. Here is a sample output.
 
-![Foreign Key KeyWords Relation](Data-Representation_images/Data-Representation_img74.jpeg) 
+![Foreign Key KeyWords Relation](data-representation_images/windowsforms-grid-grouping-foreign-key-relation.jpeg) 
 
 
 
@@ -4323,7 +4322,7 @@ mainTd.Name = “ListItemReference”
 
 
 
-![Setup ListItemReference Relation](Data-Representation_images/Data-Representation_img76.jpeg) 
+![Setup ListItemReference Relation](data-representation_images/windowsforms-grid-grouping-list-item-reference.jpeg) 
 
 
 
@@ -4705,7 +4704,7 @@ childTable.TableDescriptor.GroupedColumns.Add("Field1")
 
 6. Here is a sample output.
 
-![Uniform Child List Relation](Data-Representation_images/Data-Representation_img78.jpeg) 
+![Uniform Child List Relation in WindowsForms](data-representation_images/windowsforms-grid-grouping-uniform-child.jpeg) 
 
 
 

@@ -40,20 +40,20 @@ You can drag both Grid Record Navigation control and Grid control (either Grid c
 
 1. Drag the GridRecordNavigationControl object from your toolbox and drop it on the form.
 
-   ![Grid-Record-Navigation-Control_images1](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img1.jpeg)
+   ![Drag and Drop Toolbox in WindowsForms](creating-grid-record-navigation-control_images/windowsforms-drag-drop-toolbox.jpeg)
 
 2. Size and position it.
 3. Drag the GridDataBoundGrid object from your toolbox and drop it on Grid Record Navigation control (and not the form itself).
 
-   ![Grid-Record-Navigation-Control_images2](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img2.jpeg)
+   ![Positon Toolbox in WindowsForms](creating-grid-record-navigation-control_images/windowsforms-position-toolbox.jpeg)
 
 4. Set the GridDataBoundGrid.DataSource property to an appropriate object.
 
-   ![Grid-Record-Navigation-Control_images3](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img3.jpeg)
+   ![Setting Toolbox in WindowsForms](creating-grid-record-navigation-control_images/windowsforms-setting-toolbox.jpeg)
 
 5. Run the application. A GridRecordNavigation control will be created.
 
-   ![Grid-Record-Navigation-Control_images4](Creating-Grid-Record-Navigation-Control_images/Creating-Grid-Record-Navigation-Control_img4.jpeg)
+   ![Run Application Toolbox in WindowsForms](creating-grid-record-navigation-control_images/windowsforms-run-application-toolbox.jpeg)
 
 ### Through code
 
