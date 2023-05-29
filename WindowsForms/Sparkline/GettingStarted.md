@@ -28,7 +28,7 @@ To add sparkline to your form, follow the given steps:
 
 2.Drag the sparkline control from toolbox and drop into the form. The default appearance of sparkline will be rendered.
 
-![Drag toolbox in to WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-drag-toolbox.jpg)
+![Drag toolbox in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-drag-toolbox.jpg)
 
 ## Customizing sparkline appearance
 
@@ -72,7 +72,7 @@ Me.sparkLine1.Markers.ShowMarker = true
 
 {% endtabs %}
 
-![Adding marker in to WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-adding-marker.jpg)
+![Adding marker in WindowsForms Sparkline](gettingstarted_images/windowsforms-sparkline-adding-marker.jpg)
 
 ## Highlighting high/low values
 
