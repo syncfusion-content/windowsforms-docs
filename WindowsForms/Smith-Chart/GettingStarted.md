@@ -25,7 +25,7 @@ Smith chart control can be added through designer by following the below steps.
 * Create a new **Windows** **Form** **Application****.**
 * Drag and drop the smith chart control from the toolbox into the designer.
 
-![Drag and drop the smith chart control from the toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop the Smith Chart control from the toolbox in WindowsForms application](gettingstarted_images/windowsforms-smith-chart-drag-drop.jpeg)
 
 
 * Once you drop the control into the designer page, smith chart control will be added successfully along with the required assemblies. The below mentioned assemblies will be added automatically into the application.
@@ -33,14 +33,14 @@ Smith chart control can be added through designer by following the below steps.
     1. Syncfusion.SfSmithChart.WinForms
     2. Syncfusion.Core.WinForms.
 
-![Assmblies added image](GettingStarted_images/GettingStarted_img2.jpeg)
+![Assemblies added image in WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-assemblies-added-image.jpeg)
 
 
 Appearance and behavior related aspects of the smith chart can be controlled by setting the appropriate properties through the properties grid.
 
 For example, in the below image [`MinorGridlinesVisible`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.ChartAxis.html#Syncfusion_WinForms_SmithChart_ChartAxis_MinorGridlinesVisible) property of radial axis is modified via property grid.
 
-![Property grid image](GettingStarted_images/GettingStarted_img3.jpeg)
+![Property grid image in WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-property-grid-image.jpeg)
 
 
 ## Creating a simple smith chart through code
@@ -73,7 +73,7 @@ Imports Syncfusion.WinForms.SmithChart
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Add the assemblies for render the smith chart control](GettingStarted_images/GettingStarted_img4.jpeg)
+![Add the assemblies for render the Smith Chart control in WindowsForms application](gettingstarted_images/windowsforms-smith-chart-adding-assemblies.jpeg)
 
 
 ## Populating data
@@ -331,7 +331,7 @@ Me.Controls.Add(chart)
 
 As a result of above steps, the following output will be reproduced.
 
-![Smith chart image](GettingStarted_images/GettingStarted_img5.PNG)
+![WindowsForms Smith Chart image](gettingstarted_images/windowsforms-smith-chart-image.PNG)
 
 
 ### Adding header to the smith chart
@@ -382,7 +382,7 @@ chart.RadialAxis.MinorGridlinesVisible = True
 
 As a result of adding text and axes to the control, the following output is produced.
 
-![Adding Axes to the smith chart](GettingStarted_images/GettingStarted_img6.PNG)
+![Adding axes to the WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-axes.PNG)
 
 ### Adding Series
 
@@ -450,7 +450,7 @@ chart.Series.Add(series)
 
 After adding the series, the following output is produced.
 
-![Adding Series to the smith chart](GettingStarted_images/GettingStarted_img7.PNG)
+![Adding series to the WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-series.PNG)
 
 
 ### Adding legends to the chart
@@ -491,7 +491,7 @@ series.LegendText = "Transmission1"
 
 {% endtabs %}
 
-![Adding legends to the smith chart](GettingStarted_images/GettingStarted_img9.PNG)
+![Adding legends to the WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-adding-legend.PNG)
 
 The following code example demonstrates the complete code for creating a smith chart.
 
@@ -569,6 +569,6 @@ Me.Controls.Add(chart)
 
 Now, run the application to produce the following output.
 
-![Adding legends, series, axes to the smith chart](GettingStarted_images/GettingStarted_img8.PNG)
+![Complete code application in WindowsForms Smith Chart](gettingstarted_images/windowsforms-smith-chart-code-application.PNG)
 
 
