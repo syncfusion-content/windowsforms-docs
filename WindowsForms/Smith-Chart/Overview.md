@@ -21,4 +21,4 @@ Smith chart provides a perfect way to visualize the data with a high level of us
 * Interactive legend.
 * Customizable colors.
 
-![WindowsForms SmithChart Overview Image](Overview_images/Overview_img1.png)
+![WindowsForms Smith Chart overview image](overview_images/windowsforms-smith-chart-overview-image.png)
