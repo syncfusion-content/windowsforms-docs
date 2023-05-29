@@ -25,17 +25,17 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
     * Syncfusion.Shared.Base
 
-![Drag and drop CardLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop CardLayout from toolbox in WindowsForms](getting-started_images/windowsforms-drag-drop-card-layout.jpeg)
 
 3. To add the form as a container control of `CardLayout`, click `Yes` in popup, from which it appears automatically before the CardLayout is added.
 
-![Alert to add CardLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
+![Alert to add CardLayout to form in WindowsForms](getting-started_images/windowsforms-alert-card-layout.jpeg)
 
 ### Adding layout components
 
 The child controls can be added to layout by dragging it from the toolbox to designer view.
 
-![Adding controls into CardLayout](GettingStarted_images/CardLayout_panel.png)
+![Adding controls into Card Layout in WindowsForms](getting-started_images/windowsforms-card-layout_panel.png)
 
 ## Adding the CardLayout control via code
 
@@ -235,5 +235,5 @@ Me.cardLayout1.SelectedCard = "image1"
 {% endcapture %}
 {{ codesnippet5 | OrderList_Indent_Level_1 }}
 
-![Shows the selected card in Windows Forms CardLayout](GettingStarted_images/card.png)
+![Shows the selected card in Windows Forms Card Layout](getting-started_images/windowsforms-selected-card-layout.png)
 

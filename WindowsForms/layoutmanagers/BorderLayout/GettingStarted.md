@@ -27,18 +27,18 @@ The `BorderLayout` control can be added to an application by dragging it from th
 
 * Syncfusion.Shared.Base.dll
 
-![Drag and drop BorderLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop BorderLayout from toolbox in WindowsForms](getting-started_images/windowsforms-drag-drop-border-layout.jpeg)
 
 To add the form as a container control of the `BorderLayout`, click `Yes` in pop up, from which it appears automatically before BorderLayout is added.
 
-![Alert to add BorderLayout to form](GettingStarted_images/GettingStarted_img2.jpeg)
+![Alert to add BorderLayout to form in WindowsForms](getting-started_images/windowsforms-alert-border-layout.jpeg)
 
 
 ### Adding layout components
 
 The child controls can be added to layout by dragging it from the toolbox to designer view.
 
-![Adding controls into BorderLayout](GettingStarted_images/GettingStarted_img3.jpeg)
+![Adding controls into BorderLayout in WindowsForms](getting-started_images/windowsforms-add-control-border-layout.jpeg)
 
 ## Adding the BorderLayout control through code
 
@@ -134,4 +134,4 @@ Me.Controls.Add(this.buttonAdv3)
 {% endhighlight %}
 {% endtabs %}
 
-![Applying dock style to the controls](GettingStarted_images/GettingStarted_img4.jpeg)
+![Applying dock style to the controls in WindowsForms](getting-started_images/windowsforms-applying-dock-style.jpeg)
