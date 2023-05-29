@@ -28,7 +28,7 @@ Refer to [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/
 
 3. Right-click the control, click **Properties**, and then select [GroupViewItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html#Syncfusion_Windows_Forms_Tools_GroupView_GroupViewItems). Now, the **GroupViewItem Collection Editor** will be opened. Click **Add** to add group view items to the control.
 
-![Windows Forms GroupView showing collection editor of item](GettingStarted_images/GroupView_collectioneditor.png)
+![WindowsForms Group View showing collection editor of item](GettingStarted_images/windowsforms-group-view-collection-editor.png)
 
 ## Adding GroupView control via code
 
@@ -115,7 +115,7 @@ Me.groupView1.FlatLook = True
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Windows Forms GroupView showing added items](GettingStarted_images/GroupView_items.png)
+![WindowsForms Group View showing added items](GettingStarted_images/windowsforms-group-view-items.png)
 
 ## Adding images
 
@@ -159,7 +159,7 @@ groupView1.SmallImageView = True
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms GroupView showing added images](GettingStarted_images/GroupView_images.png)
+![WindowsForms Group View showing added images](GettingStarted_images/windowsforms-group-view-showing-added-images.png)
 
 ## Selected item
 
@@ -178,5 +178,5 @@ groupView1.SelectedItem = 1
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms GroupView showing selected item](GettingStarted_images/GroupView_selectitem.png)
+![WindowsForms Group View showing selected item](GettingStarted_images/windows-forms-group-view-select-item.png)
 

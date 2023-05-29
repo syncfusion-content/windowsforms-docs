@@ -21,7 +21,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select Windows Forms Application template, name the project and click OK. 
 
-   ![WindowsForms Grouping Creating a Windows Application](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![WindowsForms Grouping Creating a Windows Application](getting-started_images/windowsforms-create-windows-application.jpeg)
 
 
 
@@ -41,7 +41,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 
 
-   ![WindowsForms Grouping Creating an ASP.NET Application](Getting-Started_images/Getting-Started_img2.jpeg)
+   ![WindowsForms Grouping Creating an ASP.NET Application](getting-started_images/windowsforms-create-aspnet-application.jpeg)
 
 
 
@@ -55,7 +55,7 @@ To know how to deploy a web application, refer the _ASP.NET Behind the scenes_ s
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
-   ![Getting-Started_images3](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![WindowsForms Grouping Creating an WPF Application](getting-started_images/windowsforms-create-wpf-application.jpeg)
 
 2. A WPF application is created.
 3. Now you need to deploy Essential Grouping into this WPF application. Refer Windows / WPF topic for detailed info.
