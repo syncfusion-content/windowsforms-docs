@@ -575,7 +575,7 @@ this.sfDataGrid.CellCheckBoxClick += SfDataGrid_CellCheckBoxClick;
 private void SfDataGrid_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
 {
     if(e.Column.CellType == "CheckBox")
-        this.sfDataGrid1.SetCurrentCellValidated(false);
+        this.sfDataGrid.SetCurrentCellValidated(false);
 }
 {% endhighlight %}
 {% highlight vb %}
