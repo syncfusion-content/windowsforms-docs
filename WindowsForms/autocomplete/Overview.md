@@ -13,13 +13,13 @@ The AutoComplete control is an extender control that provides AutoCompletion ser
 
 AutoCompletion can be defined as prompting you with probable matches during data entry. This feature is similar to the AutoCompletion of the web addresses in the Internet Explorer address box.
 
-![Overview for Autocomplete](Overview_images/Overview_image1.png) 
+![Overview for Autocomplete](Overview_images/windowsforms-autocomplete-overview.png) 
 
 
 
 AutoCompletion is a feature enhancement for edit controls. It expands strings that have been partially entered in an edit control into complete strings based on a list of previously specified strings.
 
-![Overview for Autocomplete with previously specified strings](Overview_images/Overview_image2.png)
+![Overview for Autocomplete with previously specified strings](Overview_images/winforms-autocomplete-overview-with-previously-specified-strings.png)
 
 
 For example, when you start to enter an URL in theAddress edit control that is embedded in the Microsoft Internet Explorer navigation toolbar, autocompletion expands the string into one or more complete URLs that are consistent with the existing partial string. A partial URL string such as "sync" might be expanded to "http://www.syncfusion.com" or "http://www.syncfusion.com/faq/winforms". This feature is useful in windows applications that require collecting frequently repeated input from the user. 

@@ -7,7 +7,7 @@ control: Maps
 documentation: ug
 ---
 
-# Getting Started with Windows Forms Map (Maps)
+# How to get Started with Windows Forms Map (Maps)
 
 ## Assembly deployment
 

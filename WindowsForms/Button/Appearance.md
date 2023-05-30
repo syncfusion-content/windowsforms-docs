@@ -39,7 +39,7 @@ sfButton1.Style.GradientBrush = new BrushInfo(GradientStyle.ForwardDiagonal, Col
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img9](SfButton_images/SfButton_img9.jpeg)
+![SfButton_img9](SfButton_images/windowsforms-button-gradient-back-color.jpeg)
 
 ### Background Image
 
@@ -57,7 +57,7 @@ this.sfButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img10](SfButton_images/SfButton_img10.jpeg)
+![SfButton_img10](SfButton_images/windowsforms-button-gradient-back-ground-image.jpeg)
 
 ## Customizing Appearance based on Button State
 
@@ -90,7 +90,7 @@ sfButton1.Style.FocusedForeColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img11](SfButton_images/SfButton_img11.jpeg)
+![SfButton_img11](SfButton_images/windowsforms-customize-back-color.jpeg)
 
 ### Image
 
@@ -116,9 +116,9 @@ sfButton1.Style.DisabledImage = Image.FromFile(@"..\..\Data\DisabledImage.png");
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img12](SfButton_images/SfButton_img12.jpeg)
+![SfButton_img12](SfButton_images/windowsforms-button-customize-appearance-of-hover-image.jpeg)
 
-![SfButton_img13](SfButton_images/SfButton_img13.jpeg)
+![SfButton_img13](SfButton_images/windowsforms-button-hover-image.jpeg)
 
 ### Border
 
@@ -131,7 +131,7 @@ sfButton6.Style.HoverBorder = new Pen(Color.DarkGray, 2);
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img14](SfButton_images/SfButton_img14.jpeg)
+![SfButton_img14](SfButton_images/windowsforms-button-border.jpeg)
 
 ## Animating the Image
 
@@ -149,7 +149,7 @@ sfButton1.Style.Image = Image.FromFile(@"..\..\Data\animationImage.gif");
 {% endtabs %}
 
 
-![SfButton_img15](SfButton_images/SfButton_img15.jpeg)
+![SfButton_img15](SfButton_images/windowsforms-button-animate-the-image.jpeg)
 
 **Note**: The SfButton does not allow you to animate the image, if the animated image set as FocusedImage, HoverImage, or PressedImage so, to show the animation image inside the button, initialize the animation image (gif image) using the Image property.
 
@@ -166,7 +166,7 @@ sfButton1.FocusRectangleVisible = true;
 {% endtabs %}
 
 
-![SfButton_img16](SfButton_images/SfButton_img16.jpeg)
+![SfButton_img16](SfButton_images/windowsforms-button-focus-rectangle.jpeg)
 
 ## Rounded Rectangle Button
 
@@ -209,7 +209,7 @@ private void sfButton1_Paint(object sender, PaintEventArgs e)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfButton_img17](SfButton_images/SfButton_img17.jpeg)
+![SfButton_img17](SfButton_images/windowsforms-button-rounded-rectangle-shape.jpeg)
 
 Refer to the following sample shows how to implement the rounded rectangle in the SfButton control.
 
@@ -308,7 +308,7 @@ Me.sfButton.ThemeName = "Office2016Colorful"
 
 {% endtabs %}
 
-![SfButton_o16_colorful](SfButton_images/SfButton_o16_colorful.jpg)
+![SfButton_o16_colorful](SfButton_images/windowsforms-button-colorful.jpg)
 
 #### Office2016White
 
@@ -334,7 +334,7 @@ Me.sfButton.ThemeName = "Office2016White"
 
 {% endtabs %}
 
-![SfButton_o16_white](SfButton_images/SfButton_o16_white.jpg)
+![SfButton_o16_white](SfButton_images/windowsforms-button-white.jpg)
 
 #### Office2016DarkGray
 
@@ -360,7 +360,7 @@ Me.sfButton.ThemeName = "Office2016DarkGray"
 
 {% endtabs %}
 
-![SfButton_o16_darkGray](SfButton_images/SfButton_o16_darkGray.jpg)
+![SfButton_o16_darkGray](SfButton_images/windowsforms-button-darkGray.jpg)
 
 #### Office2016Black
 
@@ -386,4 +386,4 @@ Me.sfButton.ThemeName = "Office2016Black"
 
 {% endtabs %}
 
-![SfButton_o16_black](SfButton_images/SfButton_o16_black.jpg)
+![SfButton_o16_black](SfButton_images/windowsforms-button-black.jpg)

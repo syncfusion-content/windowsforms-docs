@@ -117,13 +117,13 @@ Me.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.History
 
 {% endtabs %}
 
-![Windows Forms AutoComplete History List in datasource](DataSource_images/AutoComplete_Historylist.png)
+![Windows Forms AutoComplete History List in datasource](DataSource_images/windowsforms-autocomplete-history-list-in-datasource.png)
 
 ## Custom source
 
 The AutoComplete component allows you add a set of text using `String Collection Editor`, and this editor window will be shown by clicking the `AutoCompleteCustomSource` property in property window of the editor control. The `AutoCompleteSource` property should be set to `CustomSource` for using custom items added through String Collection Editor.
 
-![Windows Forms AutoComplete Customsource datasource](DataSource_images/AutoComplete_Customsource.png) 
+![Windows Forms AutoComplete Customsource datasource](DataSource_images/windowsforms-autocomplete-customsource.png) 
 
 {% tabs %}
 {% highlight C# %}
@@ -148,7 +148,7 @@ The AutoComplete component allows you add a set of text using `String Collection
 
 {% endtabs %}
 
-![Windows Forms AutoComplete Customsource datasource](DataSource_images/AutoComplete_Customsourcecode.png) 
+![Windows Forms AutoComplete Customsource datasource](DataSource_images/windowsforms-autocomplete-custom-source-code.png) 
 
 ## Binding custom collections 
 

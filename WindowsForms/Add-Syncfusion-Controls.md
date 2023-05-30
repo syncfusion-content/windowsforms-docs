@@ -24,11 +24,11 @@ Syncfusion UI for Windows Forms are added automatically to the Visual Studio Too
 
 2.Find **TextBoxExt** by typing the name of the “TextBoxExt” in the search box.
 
-![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images/AddSyncfusionControls_img1.jpeg)
+![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images/windowsforms-add-syncfusion-control-via-designer.jpeg)
 
 3.Drag **TextBoxExt** and drop it in the designer.
 
-![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images/AddSyncfusionControls_img2.jpeg)
+![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images/windowsforms-add-syncfusion-control.jpeg)
 
 ## Through Code-Behind
 
@@ -112,7 +112,7 @@ Me.Controls.Add(Me.textBoxExt1)
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images/AddSyncfusionControls_img3.jpeg)
+![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images/windowsforms-add-syncfusion-control-via-code.jpeg)
 
 ## Through Project Template
 
@@ -158,7 +158,7 @@ The following steps direct you to create the Syncfusion Windows Forms project th
 
 5. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
-   ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)   
+   ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-license.png)   
 
 ## Through Item Template
 
@@ -173,17 +173,17 @@ Follow the given steps to add the Syncfusion item in Visual Studio.
 2. Right-click on the Windows Forms Project from the Solution Explorer. Select the Add Syncfusion Item  New Item... option. Refer to the following screenshot
    for more information.
 
-   ![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-1.png)
+   ![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-using-item-template-gallery.png)
 
 3. Now the Syncfusion Item Template Gallery window will open.
 
-   ![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-2.png)
+   ![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-using-item-template-gallery-window.png)
    
 4. Select the required version and themes or Form from the Syncfusion Item Template Gallery. 
 
-   ![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-3.png)
+   ![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-using-item-template-gallery-select-version.png)
    
-   ![Add-Syncfusion-Control_images4](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-4.png)
+   ![Add-Syncfusion-Control_images4](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-select-item-template.png)
 
 #### Platform
 
@@ -199,27 +199,27 @@ This part contains a set of Syncfusion Item Templates, and you can choose the It
 
 When Add button is clicked, then the selected item template is added to the project.
 
-![Add-Syncfusion-Control_images5](Add-Syncfusion-Control_images\Syncfusion-Item-Template-Gallery-5.png)
+![Add-Syncfusion-Control_images5](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-item-template-added.png)
 
 5.Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
-   ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\Syncfusion-Project-Template-Gallery-8.png)
+   ![Add-Syncfusion-Control_images8](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-license.png)
 
 ### Using Visual Studio Add new Item
 
 Syncfusion Project Template can be also add from the Visual Studio Item Template. Right-click on the Windows Forms Project Add ->New Item. You can refer to the following screenshot for more information.
 
-![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-1.png)
+![Add-Syncfusion-Control_images1](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-using-visual-studio.png)
 
 1. The Syncfusion Item Templates are available under the Syncfusion tab. It is available for both C# Items and VB Items. 
 
-   ![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-2.png)
+   ![Add-Syncfusion-Control_images2](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-using-c#.png)
 
 2. Now the selected template is added to the project along with Syncfusion references.
 
-   ![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-3.png)
+   ![Add-Syncfusion-Control_images3](Add-Syncfusion-Control_images\windowsforms-add-syncfusion-control-selected-template-added.png)
 
-   ![Add-Syncfusion-Control_images4](Add-Syncfusion-Control_images\Syncfusion-Add-New-Item-4.png)
+   ![Add-Syncfusion-Control_images4](Add-Syncfusion-Control_images/windoesforms-add-syncfusion-control-new-item-using-visual-code-.png)
 
 3. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
