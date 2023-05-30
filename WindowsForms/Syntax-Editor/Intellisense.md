@@ -15,7 +15,7 @@ The EditControl provides Intellisense pop-up capabilities to add content easily 
 
 The [ContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) helps to display intellisense pop-up in the EditControl. You can also autocomplete the word by using the UP or DOWN arrow key to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
-![Intellisense to choose items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-to-choose-items.png)
+![Intellisense to choose items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-to-choose-items-intellisense.png)
 
 The ContextChoice displaying characters are specified in the configuration file by using the `DropContextChoiceList` field in the lexem for the corresponding character. To display the ContextChoice drop-down in response to the period (".") or comma (",") being typed, use the following XML code.
 
@@ -469,7 +469,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 {% endtabs %}
 
-![Decrease intellisense size in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-decrease-size.png)
+![Decrease intellisense size in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-decrease-size-intellisense.png)
 
 ### Background
 
@@ -496,7 +496,7 @@ The [ContextChoiceBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 {% endtabs %}
 
-![ContextChoice popup back color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-contextChoice-popup-back-color-customized.png)
+![Context Choice popup back color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-popup-back-color-customized.png)
 
 ### Foreground
 
@@ -559,7 +559,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 Support provided for displaying function overloading the information as in Microsoft Visual Studio text editor. It also allows user to navigate between defined functions by using <kbd>UP</kbd> or <kbd>DOWN</kbd> arrow key.
 
-![ContextChoice to display different messages in single popup in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-contextchoice.png)
+![ContextChoice to display different messages in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-to-display-different-massages.png)
 
 The following code snippet demonstrates the context prompt displaying characters specified in the configuration file by using the DropContextPrompt field in the lexem for the corresponding character. To display the ContextPrompt pop-up in response to the opening brace - "(" or opening curly brace -"{" being typed, use the following XML code.
 
@@ -1342,7 +1342,7 @@ End Sub
 
 Provides `AutoReplaceTriggers` option to automatically auto correct the predefined typo errors. Auto Replace Triggers can be enabled or disabled by using the [UseAutoreplaceTriggers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseAutoreplaceTriggers) property.
 
-![Typed incorrect word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-typed-incorrect-word.jpeg)
+![Typed incorrect word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-autocorect-word.jpeg)
 
 ![Auto corrects the word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-auto-corrects-the-word.jpg)
 
