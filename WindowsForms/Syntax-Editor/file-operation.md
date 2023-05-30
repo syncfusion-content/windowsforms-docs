@@ -314,7 +314,7 @@ Me.editControl1.[New](config)
 
 {% endtabs %}
 
-![Import new file content into syntax editor](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img4.jpg)
+![Import new file content in WindowForms Syntax Editor](file-sharing-and-stream-handling-images/windowforms-syntax-editor-file-sharing-and-stream-handling-mode.jpg)
 
 ## Discard changes
 
@@ -462,7 +462,7 @@ Me.editControl1.SaveOnClose = False
 
 {% endtabs %}
 
-![Dialog window to discard or save modified changes in syntax editor](File-Sharing-and-Stream-Handling_images/File-Sharing-and-Stream-Handling_img2.jpeg)
+![Dialog window to discard or save modified changes in WindowsForms Syntax Editor](file-sharing-and-stream-sandling_images/windowsforms-syntax-editor-file-sharing-and-stream-handling-mode.jpeg)
 
 ### Auto Save file on close
 
