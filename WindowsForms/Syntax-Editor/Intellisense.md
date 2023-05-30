@@ -1342,7 +1342,7 @@ End Sub
 
 Provides `AutoReplaceTriggers` option to automatically auto correct the predefined typo errors. Auto Replace Triggers can be enabled or disabled by using the [UseAutoreplaceTriggers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseAutoreplaceTriggers) property.
 
-![Typed incorrect word in WindowsForms syntax editor which can be corrected by auto correct support](intellisense-images/windowsforms-syntax-editor-autocorrect-support.jpeg)
+![Typed incorrect word in WindowsForms Syntax Editor which can be corrected by auto correct support](intellisense-images/windowsforms-syntax-editor-autocorrect-support.jpeg)
 
 ![Auto corrects the word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-autocorrect-the-word.jpg)
 
