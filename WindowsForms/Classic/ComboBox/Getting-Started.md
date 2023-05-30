@@ -23,7 +23,7 @@ This section briefly describes how to design a ComboBoxAdv Control in a Windows 
 
 
 
-![Windows Forms ComboBoxAdv Overview Image296](Overview_images/Overview_img296.png) 
+![Overview of WindowsForms ComboBox](overview_images/windowsforms-combobox-overview.png) 
 
 
 
@@ -33,7 +33,7 @@ The most commonly used settings of the ComboBoxAdv control can be configured eit
 
 
 
-![Windows Forms ComboBoxAdv Overview Image297](Overview_images/Overview_img297.png) 
+![Configuring ComboBox in WindowsForms](overview_images/windowsforms-combobox-configuring.png) 
 
 
 
@@ -142,5 +142,5 @@ Me.Controls.Add(Me.comboBoxAdv1)
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
 
-![Windows Forms ComboBoxAdv Overview Image298](Overview_images/Overview_img298.png)
+![Adding ComboBox to form in WindowsForms](overview_images/windowsforms-combobox-add-form.png)
 

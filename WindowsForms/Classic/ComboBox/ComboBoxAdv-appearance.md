@@ -61,7 +61,7 @@ Me.comboBoxAdv1.FlatBorderColor = System.Drawing.Color.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance of ComboBoxAdv](Overview_images/Overview_img307.jpeg) 
+![Appearance of ComboBox in Windowsforms](overview_images/windowsforms-combobox-appearance.jpeg) 
 
 
 
@@ -87,7 +87,7 @@ Me.comboBoxAdv1.Style = Syncfusion.Windows.Forms.VisualStyle.Office2016Colorful
 {% endhighlight %}
 {% endtabs %}
 
-![Visual Styles](Overview_images/Overview_img308.png) 
+![Visual styles in WindowsForms ComboBox](overview_images/windowsforms-combobox-visual-styles.png) 
 
 ### Office Color Schemes
 
@@ -121,7 +121,7 @@ Me.comboBoxAdv1.Office2007ColorTheme = Syncfusion.Windows.Forms.Office2007Theme.
 {% endhighlight %}
 {% endtabs %}
 
-![Office Color Schemes](Overview_images/Overview_img309.png)
+![Office color schemes in WindowsForms ComboBox](overview_images/windowsforms-combobox-office-color-schemes.png)
 
 
 
@@ -145,7 +145,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.Orchid)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom Colors](Overview_images/Overview_img310.png) 
+![Custom colors in WindowsForms ComboBox](overview_images/windowsforms-combobox-custom-colors.png) 
 
 
 
@@ -171,7 +171,7 @@ Me.comboBoxAdv1.IgnoreThemeBackground = True
 {% endhighlight %}
 {% endtabs %}
 
-![Background Settings](Overview_images/Overview_img311.jpeg) 
+![Background settings in WindowsForms ComboBox](overview_images/windowsforms-combobox-background-settings.jpeg) 
 
 
 
@@ -237,7 +237,7 @@ Me.comboBoxAdv1.ShowImageInTextBox = True
 {% endhighlight %}
 {% endtabs %}
 
-![Image Settings](Overview_images/Overview_img312.jpeg)
+![Image settings in WindowsForms ComboBox](overview_images/windowsforms-combobox-image-settings.jpeg)
 
 
 
