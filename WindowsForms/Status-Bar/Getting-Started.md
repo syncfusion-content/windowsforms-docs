@@ -17,13 +17,13 @@ To create a StatusBarAdv control through designer,
 
 1. Drag and drop a StatusBarAdv control from the toolbox onto the form.
 
-   ![Create Status Bar Through designer](Overview_images/Overview_img60.jpeg) 
+   ![Create Status Bar through designer in WindowsForms application](overview_images/windowsforms-status-bar-designer.jpeg) 
 
 2. Set the desired background for the StatusBarAdv control by setting the desired values for properties that control the background in the properties window.
 3. Drag and drop controls onto the StatusBarAdv control. Add the StatusBarAdvPanel control to it. Set the PanelType property to the desired value, for all the StatusBarAdvPanel controls.
 4. Build and run the application.
 
-   ![Run the Application](Overview_images/Overview_img61.jpeg) 
+   ![Run the application in WindowsForms-Status Bar](overview_images/windowsforms-status-bar-run-application.jpeg) 
    
    
 ## Through code
