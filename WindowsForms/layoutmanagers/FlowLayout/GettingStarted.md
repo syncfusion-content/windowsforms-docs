@@ -25,17 +25,17 @@ Refer to this [documentation](https://help.syncfusion.com/windowsforms/installat
 
     * Syncfusion.Shared.Base
 
-![Drag and drop flow layout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop flow layout from toolbox in WindowsForms](getting-started_images/windowsforms-drag-drop-flow-layout.jpeg)
 
 3. To add the form as a container control of the FlowLayout, click **Yes** in a popup, from which it appears automatically when FlowLayout is added.
 
-![Alert message to add Flow layout as container control of form](GettingStarted_images/GettingStarted_img2.jpeg)
+![Alert message to add Flow layout as container control of form in WindowsForms](getting-started_images/windowsforms-alert-message.jpeg)
 
 ### Adding layout components
 
 The child controls can be added to layout by dragging it from the toolbox to design view.
 
-![Adding child controls to flow layout](GettingStarted_images/GettingStarted_img3.jpeg)
+![Adding child controls to flow layout in WindowsForms](getting-started_images/windowsforms-adding-child-controls.jpeg)
 
 ## Adding the FlowLayout control via code
 
@@ -139,7 +139,7 @@ Me.Controls.Add(this.buttonAdv4)
 
 {% endtabs %}
 
-![Adding child controls to flow layout](GettingStarted_images/childcontrol.png)
+![Adding child controls to flow layout in WindowsForms](getting-started_images/windowsforms-child-control.png)
 
 ## Layout mode
 
@@ -163,7 +163,7 @@ flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Horizonta
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Windows Forms FlowLayout shows the child control in horizontal mode](GettingStarted_images/horizontal.gif)
+![WindowsForms FlowLayout shows the child control in horizontal mode](getting-started_images/windowsforms-horizontal.gif)
 
 * Vertical
 
@@ -183,4 +183,4 @@ flowLayout1.LayoutMode = Syncfusion.Windows.Forms.Tools.FlowLayoutMode.Vertical
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![Windows Forms FlowLayout](GettingStarted_images/Flowlayout_vertical.png)
+![WindowsForms Flow Layout Vertical](getting-started_images/windowsforms-flow-layout-vertical.png)

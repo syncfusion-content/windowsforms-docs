@@ -11,7 +11,7 @@ documentation: ug
 
 `GridLayout` is a layout manager. It allows you arrange the child controls in a grid that contains rows and columns. By deriving from the layout manager base, the GridLayout inherits all the functionalities that the LayoutManager type exposes. In its simplest form, this layout manager can be used to automatically arrange the child components in one or more rows.
 
-![GridLayout for Windows Forms allows to arrange child controls in a grid containing rows and columns](Overview_images/Overview_img1.jpeg)
+![GridLayout for Windows Forms allows to arrange child controls in a grid containing rows and columns](overview_images/windowsforms-arrange-child-controls.jpeg)
 
 ## Key features
 
