@@ -21,7 +21,7 @@ This section describes how to add the SfButton to a form.
 
 To add the SfButton to form, drag and drop the SfButton from the toolbox to the surface of the form designer.
 
-![SfButton_img1](SfButton_images/SfButton_img1.jpeg)
+![SfButton_img1](SfButton_images/windowsforms-button-add-control-via-designer.jpeg)
 
 ### Through Code
 

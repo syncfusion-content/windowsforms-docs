@@ -109,7 +109,7 @@ calendar.SelectedDate = New System.DateTime(2019, 08, 12)
 
 {% endtabs %}
 
-![Select the date in WF SfCalendar](Getting-Started-images/selecteddate.png)
+![Select the date in WF SfCalendar](Getting-Started-images/windowsforms-calendar-select-date.png)
 
 ### Selection change event
 

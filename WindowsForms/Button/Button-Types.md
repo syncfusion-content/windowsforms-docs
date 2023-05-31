@@ -24,9 +24,9 @@ this.sfButton1.Text = Print;
 this.sfButton1.Image = Image.FromFile(@"..\..\Data\Image1.png");
 
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %}d
 
-![SfButton_img2](SfButton_images/SfButton_img2.jpeg)
+![SfButton_img2](SfButton_images/windowsforms-button-text-and-image.jpeg)
 
 ### Positioning Text and Image
 
@@ -40,7 +40,7 @@ sfButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton_img3](SfButton_images/SfButton_img3.jpeg)
+![SfButton_img3](SfButton_images/windowsforms-button-positioning-text-and-image.jpeg)
 
 ### Spacing between Text and Image
 
@@ -61,7 +61,7 @@ sfButton1.ImageMargin = new Padding(3, 3, 3, 3);
 
 The SfButton can be displayed only with the image by setting the empty string value to the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Text) property and initialize the image value to the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfButton.html#Syncfusion_WinForms_Controls_SfButton_Image) property. The size of the image can be changed by using the ImageSize property.
 
-![SfButton_img4](SfButton_images/SfButton_img4.jpeg)
+![SfButton_img4](SfButton_images/windowsforms-button-image.jpeg)
 
 ## Icon Button
 
@@ -84,4 +84,4 @@ IconButton2.Style.PressedBorder = null;
 
 {% endhighlight %}
 {% endtabs %}
-![SfButton_img5](SfButton_images/SfButton_img5.jpeg)
+![SfButton_img5](SfButton_images/windowsforms-button-icon.jpeg)

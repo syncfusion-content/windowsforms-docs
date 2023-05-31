@@ -11,7 +11,7 @@ documentation: ug
 
 The [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control embeds a text box control with a collection of button controls that can be customized to create many commonly used interfaces such as a file / folder browser or a drop-down text control.
 
-![Overview of ButtonEdit](Overview_images/OVerview.png) 
+![Overview of ButtonEdit](Overview_images/windowsforms-buttonedit-overview.png) 
 
 
 ## Key Features

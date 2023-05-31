@@ -36,7 +36,7 @@ The [Calculator control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-![wf calculator control added by designer ](Getting-Started_images/wf-calculator-control-added-by-designer.png) 
+![wf calculator control added by designer ](Getting-Started_images/windowsforms-calculator-cotrol-added-by-designer.png) 
 
 ## Add control manually in code
 

@@ -32,7 +32,7 @@ The following steps describe how to create a **Carousel** control via designer.
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-![Search Carousel control in toolbox](Getting-Started_images/Carousel_Toolbox1.png) 
+![Search Carousel control in toolbox](Getting-Started_images/windowsforms-carousel-search-control-in-toolbox.png) 
 
 ## Adding Carousel control via code
 
@@ -195,7 +195,7 @@ carousel1.Items.Add(buttonAdv6)
 
 {% endtabs %}
 
-![Button controls added in Carousel through code](Getting-Started_images/Carousel_item.gif) 
+![Button controls added in Carousel through code](Getting-Started_images/windowsforms-carousel-add-control-via-code.gif) 
 
 ## Adding images into Carousel
 
@@ -267,4 +267,4 @@ Me.carousel1.ImageListCollection.Add(carouselImage6)
 
 {% endtabs %}
 
-![Images are added in Carusel via code](Getting-Started_images/Carousel_image.gif)
+![Images are added in Carusel via code](Getting-Started_images/windowsforms-carousel-add-images-via-code.gif)
