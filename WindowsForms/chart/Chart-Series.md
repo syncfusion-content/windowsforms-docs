@@ -1137,7 +1137,7 @@ Me.chartControl1.ColumnDrawMode = ChartColumnDrawMode.PlaneMode
 
 ![Chart Series](Chart-Series_images/Chart-Series_img9.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img10.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-column-draw-mode.jpeg)
 
 {% seealso %}
 
@@ -4618,7 +4618,7 @@ Private Me.chartControl1.Series(1).ConfigItems.ColumnItem.LightColor = Color.Gre
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img71.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-light-color.jpeg)
 
 {% seealso %}
 
@@ -4710,7 +4710,7 @@ Me.chartControl1.Series["Product1"].Style.Symbol.Color = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img72.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-name.jpeg)
 
 {% seealso %}
 
@@ -4772,7 +4772,7 @@ series.ConfigItems.HistogramItem.NumberOfIntervals = 20
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img73.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-number-of-intervals.jpeg)
 
 {% seealso %}
 
@@ -4862,9 +4862,9 @@ CS1.ConfigItems.HiLoOpenCloseItem.DrawMode = ChartOpenCloseDrawMode.Open
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img74.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-open-close-draw-mode.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img75.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labes-peak-average-network-loads.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img76.jpeg)
 
@@ -5092,7 +5092,7 @@ The following screen shots depict these types.
 
 ![Chart Series](Chart-Series_images/Chart-Series_img84.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img85.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-pie-type.jpeg)
 
 {% seealso %}
 
@@ -5214,7 +5214,7 @@ Private ganttSeries.Style.PointWidth = 0.25f
 
 ![Chart Series](Chart-Series_images/Chart-Series_img86.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img87.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-point-width.jpeg)
 
 Specific Data Point Setting
 
@@ -5299,7 +5299,7 @@ series7.PriceUpColor = Color.Orange
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img88.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-price-down-color.jpeg)
 
 {% seealso %}
 
@@ -5361,7 +5361,7 @@ series.PriceDownColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img89.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-price-up-color.jpeg)
 
 {% seealso %}
 
@@ -5882,7 +5882,7 @@ series.ScatterSplineTension = 1 ' Default is 0
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img100.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-scatter-spline-chart.jpeg)
 
 {% seealso %}
 
@@ -5943,7 +5943,7 @@ Private Me.chartControl1.Series(i).ScatterSplineTension =3
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img101.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-scatter-spline-tension.jpeg)
 
 {% seealso %}
 
@@ -6001,7 +6001,7 @@ Private Me.chartControl1.Series(1).SeriesToolTipFormat="{0}"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img102.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-tooltip-format.jpeg)
 
 {% seealso %}
 
@@ -6059,9 +6059,9 @@ Private Me.chartControl1.Series(0).ConfigItems.ColumnItem.ShadingMode = ChartCol
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img103.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-shading-mode.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img104.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-column-shading-mode.jpeg)
 
 {% seealso %}
 
@@ -6129,7 +6129,7 @@ Private Me.chartControl1.Series(0).Style.ShadowInterior = New BrushInfo(Gradient
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img105.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-column-shadow-interior.jpeg)
 
 ### Specific Data Point Setting
 
@@ -6232,7 +6232,7 @@ Private series.Styles(2).ShadowOffset = New Size(6, 6)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img106.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-column-setting-specific-data-point.jpeg)
 
 Specific Data Point Setting
 
@@ -6339,11 +6339,11 @@ Me.chartControl.Series(0).ConfigItems.PyramidItem.ShowDataBindLabels = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img107.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-show-databind-labels-pie-chart.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img108.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-show-databind-labels-funnel-chart.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img109.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-show-databind-labels-pyramid-chart.jpeg)
 
 {% seealso %}
 
@@ -6401,9 +6401,9 @@ Private Me.chartControl1.Series(0).ShowHistogramDataPoints =True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img110.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-histogram-data-points.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img111.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-show-histogram-data-points.jpeg)
 
 {% seealso %}
 
@@ -6465,9 +6465,9 @@ Private Me.chartControl1.Series(0).ShowTicks = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img112.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-show-ticks.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img113.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-hide-ticks.jpeg)
 
 {% seealso %}
 
@@ -6533,9 +6533,9 @@ Private Me.chartControl1.Series(0).SmartLabels = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img114.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-smart-labels.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img115.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-smart-labels-in-column-chart.jpeg)
 
 ### Custom borders for smart Labels
 
@@ -6622,7 +6622,7 @@ Me.chartControl1.Spacing = 50
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img116.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-spaicng.jpeg)
 
 {% seealso %}
 
@@ -6682,9 +6682,9 @@ Me.chartControl1.SpacingBetweenSeries = 20
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img117.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-spacing-between-series.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img118.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-spacing-between-individual-series.jpeg)
 
 {% seealso %}
 
@@ -6816,9 +6816,9 @@ ser3.StackingGroup = "FirstGroup"
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![Chart Series](Chart-Series_images/Chart-Series_img119.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-spacing-stacking-group.png)
 
-![Chart Series](Chart-Series_images/Chart-Series_img120.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-spacing-stacking-group-column.png)
 
 ### StepItem.Inverted
 
@@ -6870,7 +6870,7 @@ Private Me.chartControl1.Series(0).ConfigItems.StepItem.Inverted=True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img121.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-stepitem-inverted.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img122.jpeg)
 
@@ -6950,7 +6950,7 @@ this.chartControl1.Series[0].Summary.GetYPercentage(1, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img123.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-summary.jpeg)
 
 {% seealso %}
 
@@ -7054,7 +7054,7 @@ Private Me.chartControl1.Series(0).Style.Symbol.Border.Alignment = PenAlignment.
 
 Private Me.chartControl1.Series0).Style.Symbol.Border.DashStyle = DashStyle.Solid
 
-![Chart Series](Chart-Series_images/Chart-Series_img124.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-symbol.jpeg)
 
 Specific Data Point Setting
 
@@ -7219,7 +7219,7 @@ series2.Text = "JuneSales"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img125.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text.jpeg)
 
 {% seealso %}
 
@@ -7256,7 +7256,7 @@ chartControl1.Series(0).Style.Text = "Series1 Point"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img126.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text-style.jpeg)
 
 Specific Data Point Setting
 
@@ -7293,7 +7293,7 @@ chartControl1.Series(0).Styles(2).Text = "Third Point"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img127.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-setting-data-point.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img128.jpeg)
 
@@ -7367,7 +7367,7 @@ Private Me.chartControl1.Series(2).Style.TextColor = Color.Green
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img129.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text-color.jpeg)
 
 Specific Data Point Setting
 
@@ -7458,7 +7458,7 @@ Me.chartControl1.Series(0).Style.TextFormat = "T = {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img130.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text-format.jpeg)
 
 Specific Data Point Setting
 
@@ -7541,7 +7541,7 @@ Me.chartControl1.Series(0).Style.TextOffset = 10.0F
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img131.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text-offset.jpeg)
 
 Specific Data Point Setting
 
@@ -7652,7 +7652,7 @@ Private Me.chartControl1.Series(1).Style.TextColor=Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img132.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-text-orientation.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7788,7 +7788,7 @@ series1.Style.ToolTip = "Tooltip of Series1"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img133.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-tooltip.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7820,7 +7820,7 @@ Loop
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img134.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-tooltip-specific-data-point-setting.jpeg)
 
 {% seealso %}
 
@@ -7884,7 +7884,7 @@ Me.chartControl1.Series[1].Style.ToolTipFormat = "Y = {0}"
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img135.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-tooltip-format-wide-setting.jpeg)
 
 #### Specific Data Point Setting
 
@@ -7916,7 +7916,7 @@ Loop
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img136.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-tooltip-format-data-point-setting.jpeg)
 
 {% seealso %}
 
@@ -7982,7 +7982,7 @@ Private Me.chartControl1.Series(1).Visible = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img137.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-visible.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img138.jpeg)
 
@@ -8046,7 +8046,7 @@ chartControl1.Legend.RowsCount = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img139.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-visible-all-pies.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img140.jpeg)
 
@@ -8106,7 +8106,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).XType.ToString()
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img141.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-pie-chart-x-type.jpeg)
 
 {% seealso %}
 
@@ -8164,7 +8164,7 @@ Private autoLabel1.Text = Me.chartControl1.Series(0).YType.ToString()
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img142.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-pie-chart-y-type.jpeg)
 
 {% seealso %}
 
@@ -8226,9 +8226,9 @@ Private Me.chartControl1.Series(1).ZOrder = 1
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img143.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-z-oder.jpeg)
 
-![Chart Series](Chart-Series_images/Chart-Series_img144.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-z-oder-type.jpeg)
 
 #### Rearranging the Series using ZOrder property
 
@@ -8265,7 +8265,7 @@ Me.chartControl1.EndUpdate()
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img145.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-callout-labels-z-order-rearranging-the-series.jpeg)
 
 {% seealso %}
 
@@ -8281,7 +8281,7 @@ Data Points in a series can be adorned with text labels as well as custom symbol
 
 Text labels can be rendered at the data points using the [DisplayText](/windowsforms/chart/chart-series#displaytext), [Text](/windowsforms/chart/chart-series#text-series) and [TextFormat](/windowsforms/chart/chart-series#textformat) settings. They can further be customized using the [TextColor](/windowsforms/chart/chart-series#textcolor), [TextOffset](/windowsforms/chart/chart-series#textoffset) and [TextOrientation](/windowsforms/chart/chart-series#textorientation) settings.
 
-![Chart Series](Chart-Series_images/Chart-Series_img146.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-data-point-labels.jpeg)
 
 ### Tooltips
 
@@ -8291,7 +8291,7 @@ Refer the Tooltips topic for more information on this.
 
 Built-in or custom symbols can be rendered at the data points to emphasize importance of certain data points. See Symbol setting for more information.
 
-![Chart Series](Chart-Series_images/Chart-Series_img147.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-symbols.jpeg)
 
 **Shape**:
 
@@ -8322,7 +8322,7 @@ series1.Style.Symbol.Shape = ChartSymbolShape.Circle;
 
 The following screenshot illustrates a chart with different chart symbols.
 
-![Chart Series](Chart-Series_images/Chart-Series_img178.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-symbols-shape.png)
 
 **Customization**:
 
@@ -8355,7 +8355,7 @@ The following code sample demonstrates how to customize the color and border for
 
 The following screenshot illustrates a chart with color and border customization of chart symbols.
 
-![Chart Series](Chart-Series_images/Chart-Series_img179.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-symbols-customization.png)
 
 ## Custom Points
 
@@ -8365,7 +8365,7 @@ Through Designer the Custom Points can be set using the CustomPoints property. C
 
 You can set the co-ordinates (XValue and the YValue property), symbols and their customization, using the Symbols property, text, using the Text property, alignment of the text, using the Alignment property and so on.
 
-![Chart Series](Chart-Series_images/Chart-Series_img148.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-custom-points.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img149.jpeg)
 
@@ -8522,7 +8522,7 @@ Pixel</td><td>
 The coordinates are specified to be in pixels of the chart area.</td></tr>
 </table>
 
-![Chart Series](Chart-Series_images/Chart-Series_img151.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-creating-custom-points-programmatically.jpeg)
 
 The custom point symbols in the above image represents following Custom Types respectively.
 
@@ -8608,7 +8608,7 @@ Me.ChartWebControl1.CustomPoints.Add(cp)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img152.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-custom-points-in-multiple-axes.png)
 
 ## Empty Points
 
@@ -8637,7 +8637,7 @@ Me.chartControl1.Series[1].Points[0].IsEmpty = True
 
 The following images illustrate the same. The second image displays after setting Point1 as an empty point.
 
-![Chart Series](Chart-Series_images/Chart-Series_img153.jpeg)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-empty-points.jpeg)
 
 ![Chart Series](Chart-Series_images/Chart-Series_img154.jpeg)
 
@@ -8826,7 +8826,7 @@ Me.chartControl1.Series[0].Trendlines.Add(trendline)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img159.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-trendlines.png)
 
 ### Trendline Types
 
@@ -8858,7 +8858,7 @@ trendline.Type = TrendlineType.Linear
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img159.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-linear-trendlines.png)
 
 ### Exponential Trendline
 
@@ -8879,7 +8879,7 @@ trendline.Type = TrendlineType.Exponential
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img160.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-exponential-trendlines.png)
 
 N> This trendline cannot be used for negative values and values containing zero
 
@@ -8902,7 +8902,7 @@ trendline.Type = TrendlineType.Power
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img161.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-power-trendlines.png)
 
 ### Logarithmic Trendline
 
@@ -8921,7 +8921,7 @@ trendline.Type = TrendlineType.Logarithmic
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img162.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-logarithmic-trendlines.png)
 
 ### Polynomial Trendline
 
@@ -8942,7 +8942,7 @@ trendline.Type = TrendlineType.Polynomial
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img163.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-polynomial-trendlines.png)
 
 ### Polynomial Order
 
@@ -8965,7 +8965,7 @@ trendline.PolynomialOrder = 4
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img164.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-polynomial-order.png)
 
 ### Moving Average Trendline
 
@@ -8986,7 +8986,7 @@ trendline.Type = TrendlineType.MovingAverage
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img165.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-moving-average-trendline.png)
 
 ### Period
 
@@ -9009,7 +9009,7 @@ trendline.Period = 3
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img166.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-period.png)
 
 ### Forecasting
 
@@ -9040,7 +9040,7 @@ trendline.ForwardForecast = 10
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img167.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-forward-forecasting.png)
 
 ### Backward Forecasting
 
@@ -9061,13 +9061,13 @@ trendline.BackwardForecast = 10
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img168.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-backward-forecasting.png)
 
 ### Trendline Legends
 
 The visibility of the trendline can also be checked using the checkboxes in the legend. When the legend checkbox is unchecked, the trendline is hidden.
 
-![Chart Series](Chart-Series_images/Chart-Series_img169.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-trendline-legends.png)
 
 N> In order to enable the checkboxes in the trendline legend ,**VisibleCheckBox** property should be enabled in the legend.
 
@@ -9094,5 +9094,5 @@ trendline.Color = Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Series](Chart-Series_images/Chart-Series_img170.png)
+![Chart Series](Chart-Series_images/windowsforms-chart-series-customized-trendline.png)
 
