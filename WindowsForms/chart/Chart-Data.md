@@ -27,7 +27,7 @@ N> One important reason you might want to use either of the above two approaches
 
 The following sample code illustrates how a custom DataSet can be bound to a [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) to provide data points and to a [ChartAxis](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html) to provide label names. Note that the DataSet can easily be replaced with a DataTable or DataView.
 
-![Chart Data](Chart-Data_images/Chart-Data_img2.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-a-dataset.jpeg)
 
 {% tabs %}  
 
@@ -124,7 +124,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Custom
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/Chart-Data_img3.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-dataset-binding.jpeg)
 
 ## Implementing Custom Data Binding Interfaces
 
@@ -278,7 +278,7 @@ Me.chartControl1.Series.Add(series1)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/Chart-Data_img4.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-chart-series.jpeg)
 
 ### Indexed data
 
@@ -447,7 +447,7 @@ chartControl1.PrimaryXAxis.LabelsImpl = dataLabelsModel
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Data](Chart-Data_images/Chart-Data_img5.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-with-ienumerable.jpeg)
 
 ## Data Binding in Chart Through Chart Wizard
 
@@ -457,59 +457,59 @@ The below steps lets you bind a database table with the [ChartControl](https://h
 
 1.Open the Chart Wizard tool, Click Series button and go to the Data Source tab as shown in the image below.
 
-![Chart Data](Chart-Data_images/Chart-Data_img6.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-through-wizard.png)
 
 2.First step is to select the chart data source from the drop-down list. All data sources available with the form will be shown in the list. If there is no data source in the list, click the new BindingSource option from the drop-down list.
    
-![Chart Data](Chart-Data_images/Chart-Data_img7.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-through-wizard-select-data-source.png)
 
 3.This opens a Data Source Configuration Wizard. Choose the Data source Type as Database, and click Next.
 
-![Chart Data](Chart-Data_images/Chart-Data_img8.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-through-wizard-data-source-configuration.jpeg)
 
 4.Then click New Connection.
 
-![Chart Data](Chart-Data_images/Chart-Data_img9.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-through-wizard-new-data-source-configuration.jpeg)
 
 5.In the Choose Data Source dialog box, select the data source as MS SQL server database or Microsoft Access database, and then click Continue button.
    
-![Chart Data](Chart-Data_images/Chart-Data_img10.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-source-through-source-confifguration.jpeg)
 
 6.This opens the Add Connection dialog box. Click the Browse button and select the database file from any location. Click OK to make this connection available to the Data source Configuration Wizard.
 
-![Chart Data](Chart-Data_images/Chart-Data_img11.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-add-connection.jpeg)
 
 7.You will be directed to the Data Source Configuration Wizard after completing the above steps. Click Next.
    
-![Chart Data](Chart-Data_images/Chart-Data_img12.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-source-configuration-wizard.jpeg)
 
 8.Tables and Views that are available in the selected database will be listed in the Wizard. Select the appropriate table, required columns and then click Finish.
    
-![Chart Data](Chart-Data_images/Chart-Data_img13.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-source-configuration-wizard-finish.jpeg)
    
 9.You will be directed back to the Chart Wizard now. Select the database from the Data Source list as shown in the image below.
 
-![Chart Data](Chart-Data_images/Chart-Data_img14.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-select-data-source.png)
    
 10.Once the source is selected, the selected table will be visible as in the below image.
 
-![Chart Data](Chart-Data_images/Chart-Data_img15.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-data-source.png)
 
 ## Binding the Table Data with ChartSeries
 
 1.Click the 'Series Data' option in the wizard to select the series to which the data is to be bound. In 'Series Data' page, select the series using the Series Data box.
 
-![Chart Data](Chart-Data_images/Chart-Data_img16.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-with-chart-series.png)
 
 2.To assign the retrieved database column to X and Y values of the series, use X Value box and Y Value box as shown in the below screen shots.
 
-![Chart Data](Chart-Data_images/Chart-Data_img17.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-with-chart-series-x-value.png)
 
-![Chart Data](Chart-Data_images/Chart-Data_img18.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-with-chart-series-y-value.png)
 
 3.Click Finish to apply these data binding settings to the Chart. The below image illustrates the Chart bound with custom data.
 
-![Chart Data](Chart-Data_images/Chart-Data_img19.jpeg)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-chart-bound-with-custom-data.jpeg)
 
 ## Binding Chart with a BindingSource
 
@@ -523,15 +523,15 @@ Follow the steps to bind the Chart with a BindingSource by using the Chart Wizar
 
 Open the Chart Wizard in designer. Chart wizard can be opened either by right-clicking the [Chart control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html) and choosing the Chart Wizard option in context menu or by clicking Chart Wizard option in smart tag of the Chart control. Chart wizard appears as follows.
 
-![Chart Data](Chart-Data_images/Chart-Data_img20.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-chart-with-binding-source.png)
 
-![Chart Data](Chart-Data_images/Chart-Data_img21.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-source-with-wizard-in-designer.png)
 
 **Step-2:**
 
 In Chart Wizard, click Series button and click Data Source tab to choose the data source.
 
-![Chart Data](Chart-Data_images/Chart-Data_img22.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-choose-data-source-in-designer.png)
 
 **Step-3:**
 
@@ -539,17 +539,17 @@ The combo box displays all the available binding sources in the Form. Choose the
 
 N> When Form does not contain any binding source, then only [none] and [new Binding Source…] options are present in the combo box.
 
-![Chart Data](Chart-Data_images/Chart-Data_img24.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-select-data-source-in-designer..png)
 
 Here, MyBindingSource is a binding source present in the form.
 
-![Chart Data](Chart-Data_images/Chart-Data_img25.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-choose-binding-source-in-designer.png)
 
 **Step-4:**
 
 Click Series Data tab to map the binding source fields with X and Y values of the Chart. Select a series in the combo box and other fields in this tab are enabled.
 
-![Chart Data](Chart-Data_images/Chart-Data_img26.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-choose-x-and-y-value-in-designer.png)
 
 **Step-5:**
 
@@ -557,7 +557,7 @@ In the X Value combo box, choose the field that should be bound with the X value
 
 N> You can also change series Type and Name here.
 
-![Chart Data](Chart-Data_images/Chart-Data_img28.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-choose-field-in-designer..png)
 
 Designer displays default chart with random values but you can see the series bounded with binding source after running the application.
 
@@ -705,7 +705,7 @@ model.YNames = new string[] { "Field2" };
 
 The following screenshot displays a Chart bounded with binding source in code behind.
 
-![Chart Data](Chart-Data_images/Chart-Data_img29.png)
+![Chart Data](Chart-Data_images/windowsforms-chart-data-binding-with-a-binding-soruce-in-code.png)
 
 ## Data Manipulation
 
@@ -719,13 +719,13 @@ The following image displays stock data that is grouped by symbol to calculate t
 
 The following image displays the same data with data from transactions that occurred in the morning filtered out. Filtering is done entirely in the grouping engine and the data changes are reflected in the chart. You will never be looking at data that is a filtered and grouped copy. Instead, you are always working with live data with the grouping layer provided by the grouping engine. Any changes made in the underlying data will be immediately reflected in the chart. 
 
-![Chart Data](Data-Manipulation_images/Data-Manipulation_img1.png)
+![Chart Data](Data-Manipulation_images/windowsforms-chart-data-manipulation.png)
 
 ### Essential Grid Interaction
 
 Essential Chart offers great interaction capabilities with Essential Grid. You can use a common data model for the grid and chart. The grid can also serve as a data model for the chart, as shown in the following image. Selected columns are automatically mapped into the chart. All it takes few lines of code to implement a model that adapts the data in question (in this case grid cells) for display in the chart.
 
-![Chart Data](Data-Manipulation_images/Data-Manipulation_img2.png)
+![Chart Data](Data-Manipulation_images/windowsforms-chart-data-essential-grid-interaction.png)
 
 ## Real time
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Chart by default displays a legend with information on each series that has been plotted on the chart.
 
-![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img1.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/windowsforms-chart-legend-and-legend-items.jpeg)
 
 1. **Legend** - The rectangular region that lists one or more legend items.
 2. **Legend Item** - Represented by an icon or image and a text; this usually gets rendered automatically corresponding to each [ChartSeries](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartSeries.html) in the chart. You can also add custom legend items to a Legend.
@@ -860,7 +860,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.None
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img10.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/windowsforms-chart-legend-and-legend-items-series-symbol.jpeg)
 
 ### Custom Representation Icon
 
@@ -884,7 +884,7 @@ Me.chartControl1.Legend.RepresentationType = ChartLegendRepresentationType.Diamo
 
 {% endtabs %}
 
-![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img11.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/windowsforms-chart-legend-and-legend-items-custom-representaion-icon.jpeg)
 
 To do the above only on specific legend items, use the ChartLegendItem.Type property.
 
@@ -952,7 +952,7 @@ chartControl1.Legend.Items[0].Symbol.Color = Color.Yellow
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img12.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/windowsforms-chart-legend-and-legend-items-more-symbol-shapes.jpeg)
 
 ### Custom Images
 
@@ -1001,7 +1001,7 @@ Me.chartControl1.Legend.Items(0).ImageList = New ChartImageCollection(this.image
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Legend](Chart-Legend-and-Legend-Items_images/Chart-Legend-and-Legend-Items_img13.jpeg)
+![Chart Legend](Chart-Legend-and-Legend-Items_images/windowsforms-chart-legend-and-legend-items-custom-images.jpeg)
 
 
 ### Hiding icons
