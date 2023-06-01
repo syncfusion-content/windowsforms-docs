@@ -12,7 +12,7 @@ documentation: ug
 
 SpellCheckerAdv control offers Microsoft Office style spell checking capabilities to your Windows Application. This component is completely customizable and can be attached to any text-editing controls. End users can also use it together with the standard Microsoft text-editing controls.
 
-![Spell Checker dialog to correct error words](Overview_images/Overview-2.png)
+![Spell Checker dialog to correct error words in WindowsForms application](overview_images/windowsforms-spellchecker-dialog-to-correct-error-words.png)
 
 ## Key features
 
