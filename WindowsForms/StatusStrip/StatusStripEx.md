@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools has come up with StatusStripEx control which can be added to the bottom of the Ribbon. It can hold controls like TrackBarEx, ProgressBar, StatusStripButtons, and so on.
 
-![StatusStripEx control for Windows Forms](StatusStripEx_images/StatusStripEx_img1.jpeg)
+![WindowsForms Status Strip added to bottom of the ribbon](statusstripex_images/windowsforms-status-strip-added-to-bottom-of-the-ribbon.jpeg)
 
 ## Creating a StatusStripEx
 
@@ -207,11 +207,11 @@ Me.statusStripEx1.OfficeColorScheme = Syncfusion.Windows.Forms.Tools.ToolStripEx
 {% endhighlight %}
 {% endtabs %}
 
-![Silver color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img7.jpeg)
+![Silver color scheme for WindowsForms Status Strip](statustripex_images/windowsforms-status-strip-silver-color-scheme.jpeg)
 
-![Blue color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img8.jpeg)
+![Blue color scheme for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-blue-color-scheme.jpeg)
 
-![Black color scheme for StatustStripEx](StatusStripEx_images/StatusStripEx_img9.jpeg)
+![Black color scheme for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-black-color-scheme.jpeg)
 
 
 ### Visual style
@@ -257,7 +257,7 @@ Office2007Colors.ApplyManagedColors(Me, Color.DarkGreen)
 {% endhighlight %}
 {% endtabs %}
 
-![Custom colors for StatusStripEx](StatusStripEx_images/StatusStripEx_img10.jpeg)
+![Custom colors for WindowsForms Status Strip](statusstripex_images/windowsforms-status-strip-custom-color.jpeg)
 
 ## Custom context Menu
 
