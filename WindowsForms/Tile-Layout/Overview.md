@@ -11,7 +11,7 @@ documentation: ug
 
 [TileLayout](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TileLayout.html) control is Windows 8 Start screen inspired control . It acts as a container that holds a set of tile view items that can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout. 
 
-![TileLayout like Windows start screen](Overview_images/Overviewimg2.jpg)
+![WindowsForms Tile Layout Overview](overview_images/windowsforms-tile-layout-overview.jpg)
 
 ## Key features
 
