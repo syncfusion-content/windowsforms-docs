@@ -36,11 +36,11 @@ The Windows Forms SplitContainer (SplitContainerAdv) control can be added to the
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search SplitContainerAdv in toolbox ](GettingStarted-images/GettingStarted-img1.png)
+![Search WindowsForms Split Container in toolbox ](gettingstarted-images/windowsforms-split-container-toolbar.png)
 
 Child controls can be added to the SplitContainerAdv by dragging it from the toolbox and dropping it in desired panel. Here labels are added into SplitContainerAdv Panels.
 
-![Drag and drop the SplitContainerAdv to form](GettingStarted-images/GettingStarted-img2.png)
+![Drag and drop the Split Container to form in WindowsForms application](gettingstarted-images/windowsforms-split-container-drag-and-drop.png)
 
 ## Adding control manually using code
 
@@ -109,7 +109,7 @@ Me.Controls.Add(SplitContainerAdv1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SplitContainerAdv control added by code](GettingStarted-images/GettingStarted-img4.png)
+![WindowsForms Split Container control added by code](gettingstarted-images/windowsforms-split-container-added-by-code.png)
 
 **Add controls to SplitContainerAdv**
 
@@ -156,7 +156,7 @@ Me.splitContainerAdv1.Panel2.Controls.Add(Me.label2)
 
 {% endtabs %}
 
-![Panels controls added](GettingStarted-images/GettingStarted-img3.png)
+![Panels controls added in WindowsForms Split Container](gettingstarted-images/windowsforms-split-container-panel.png)
 
 ## Splitter orientation
 
@@ -175,8 +175,8 @@ Me.splitContainerAdv1.Orientation = System.Windows.Forms.Orientation.Vertical
 
 * **Horizontal**
 
-![Horizontal orientation](GettingStarted-images/horizontal-orientation.png)
+![Horizontal orientation in WindowsForms Split Container](gettingstarted-images/windowsforms-split-container-horizontal-orientation.png)
 
 * **Vertical**
 
-![Vertical orientation](GettingStarted-images/vertical-orientation.png)
+![Vertical orientation in WindowsForms Split Container](gettingstarted-images/windowsforms-split-container-vertical-orientation.png)
