@@ -45,7 +45,7 @@ Me.chartControl1.PrimaryXAxis.ValueType = ChartValueType.Category
 
 **Chart displaying categorical values in x-axis**
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img39.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-categorical-axis.png)
 
 ## Indexed X Values
 
@@ -53,9 +53,9 @@ By default points in a series are plotted against their x and y values. However 
 
 In the figure below, the first chart shows a line chart that is not-indexed while the second chart shows a line chart whose x-axis is indexed.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img1.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-indexed-x-values.jpeg)
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img2.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-indexed-y-values.jpeg)
 
 N> Indexing is supported only on the x-axis in Essential Chart.
 
@@ -119,7 +119,7 @@ Me.chartControl1.PrimaryYAxis.Inversed = True
 
 The following image shows a chart whose x and y axes have been reversed.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img4.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-inverted-axis.jpeg)
 
 ## Opposed Axis
 
@@ -154,7 +154,7 @@ Me.chartControl1.PrimaryYAxis.OpposedPosition = True
 
 The above code snippet will place both the x and y-axes in the position opposite to their default implied position.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img5.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-opposed-axis.jpeg)
 
 You can similarly set this property on any custom ChartAxis that you might add to the chart.
 
@@ -201,7 +201,7 @@ Me.chartControl1.Series(1).XAxis = Me.secXAxis
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img6.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-multiple-x-axes.jpeg)
 
 And for multiple y axis, you can set the orientation for axis.
 
@@ -250,13 +250,13 @@ Me.chartControl1.Series(1).YAxis = Me.secYAxis
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img6_1.jpg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-multiple-y-axes.jpg)
 
 ### Opposed Position
 
 By default, this additional axis will be rendered right next to the corresponding primary axis as seen above. This might be undesirable and you would instead want it to be rendered at the opposite side of the primary axis. This is done by setting the [OpposedPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_OpposedPosition) property to true.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img7.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-opposed-position.jpeg)
 
 ### Stacked or SideBySide Position
 
@@ -281,13 +281,13 @@ Me.ChartControl1.ChartArea.XAxesLayoutMode = ChartAxesLayoutMode.SideBySide;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img8.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-stacked-position.jpeg)
 
 ### ChartAxesLayouts
 
 You can now combine the stacking and side-by-side chart axes layouts when multiple Axes are used, as shown in the below image. Using this feature, it is possible to position the three Y axis, as one on right side and the second one on the same side and third one on the opposite side.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img9.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-layouts.jpeg)
 
 {% tabs %}
 
@@ -630,7 +630,7 @@ Specifies the rectangle that includes the axis and it's labels. This provides gr
 
 ### Illustrating Custom Axis Location
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img11.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-custom-axis-location.jpeg)
 
 {% tabs %}
 
@@ -653,9 +653,9 @@ Me.ChartControl1.PrimaryYAxis.Location = New PointF(15, 200)
 
 ### Illustrating Custom Axis Size
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img12.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-custom-axis-size.jpeg)
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img13.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-custom-x-axis-size.jpeg)
 
 {% tabs %}
 
@@ -732,7 +732,7 @@ Specifies whether or not labels should be rotated. Use the LabelRotateAngle to s
 If LabelRotate is true, this property specifies the angle of rotation.</td></tr>
 </table>
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img14.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-axis-labels.jpeg)
 
 {% tabs %}
 
@@ -958,7 +958,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img15.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-customize-label-text.jpeg)
 
 Specify a set of custom labels thereby dictating the intervals as well
 
@@ -1016,7 +1016,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("Q2 Mid Point", Colo
 
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img16.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-add-custom-labels.jpeg)
 
 2.Using Formatted Text
 
@@ -1056,7 +1056,7 @@ Me.chartControl1.PrimaryXAxis.Labels.Add(New ChartAxisLabel("", Color.Maroon, Ne
 
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img17.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-formatted-text.jpeg)
 
 ### Intersecting Labels
 
@@ -1108,7 +1108,7 @@ Me.ChartWebControl1.PrimaryXAxis.LabelIntersectAction = ChartLabelIntersectActio
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img18.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-intersecting-labels.png)
 
 ## Grouping Labels
 
@@ -1180,7 +1180,7 @@ Me.chartControl1.PrimaryXAxis.DrawTickLabelGrid = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img19.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grouping-labels.jpeg)
 
 ### Tooltip Support for ChartAxisLabels
 
@@ -1345,7 +1345,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img20.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-adding-tooltip.png)
 
 {% seealso %}
 
@@ -1445,11 +1445,11 @@ The following screenshot shows how to rotate x-axis title by 270 degrees without
 
 You can now wrap the axes titles and display them as multiline text. Set multiline title text in [Axis.Title](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartAxis.html#Syncfusion_Windows_Forms_Chart_ChartAxis_Title) property through designer as follows. Press ENTER key to begin a new line. Press CTRL+ENTER to set the text entered.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img21.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-charts-axes-multiline-title.jpeg)
 
 The below screenshot illustrates a chart with multiline axes titles.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img22.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-title.jpeg)
 
 ### Drawing Mode of Title Text
 
@@ -1495,7 +1495,7 @@ Me.secYAxis.TitleDrawMode = ChartTitleDrawMode.Wrap
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img23.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-drawing-mode-of-title-text.png)
 
 ## Axis Ticks
 
@@ -1532,7 +1532,7 @@ The padding between the tick mark in the axis and the label. Default is 5.</td><
 Defines the number of ticks to render while zooming.<ul><li>NumberOfIntervalsFixed - When you zoom, the number of visible intervals will be constant. So, as you zoom in, the total number of intervals will increase.</li><li>IntervalFixed - The number of intervals will be constant. So, as you zoom in, fewer intervals will be visible at a time.</li></ul></td></tr>
 </table>
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img24.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-major-ticks.jpeg)
 
 {% tabs %}
 
@@ -1579,7 +1579,7 @@ Specifies if and how many minor ticks, which are tick marks drawn on the axis be
 Specifies the size of the tick rectangle.</td></tr>
 </table>
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img25.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-minor-ticks.jpeg)
 
 {% tabs %}
 
@@ -1679,7 +1679,7 @@ Me.chartControl1.Rotation = 60
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img26.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-3d-mode-sample.jpeg)
 
 ### Real 3D Mode sample
 
@@ -1714,7 +1714,7 @@ Me.chartControl1.RealMode3D = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img27.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-real-3d-mode-sample.jpeg)
 
 ### Rotating Chart
 
@@ -1741,7 +1741,7 @@ Me.chartControl1.EnableMouseRotation = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img29.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-rotating-chart.jpeg)
 
 ### Rendering Chart in 3-D Style
 
@@ -1777,7 +1777,7 @@ Me.chartControl1.Style3D=True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img30.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-rendering-chart-in-3d-style.png)
 
 ## Chart Grid Lines
 
@@ -1823,7 +1823,7 @@ The PenType to use for drawing the line.</td></tr>
 The thickness of the lines.</td></tr>
 </table>
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img31.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-lines.jpeg)
 
 The following code snippet illustrates how to show the gridlines on both axes and how to customize them.
 
@@ -2077,11 +2077,11 @@ Me.chartControl1.PrimaryXAxis.StripLines.Add(stripLine)
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img32.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-charts-axes-striplines.jpeg)
 
 Use an image as StripLine by setting through [StripLine.BackImage](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartStripLine.html#Syncfusion_Windows_Forms_Chart_ChartStripLine_BackImage) property.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img33.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-charts-axes-stripline-back-image.jpeg)
 
 ## Chart Breaks
 
@@ -2101,7 +2101,7 @@ There are three possible modes. They are,
 
 All breaks work only with Cartesian axes.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img34.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-charts-break.png)
 
 {% tabs %}  {% highlight c# %}
 
@@ -2156,7 +2156,7 @@ Me.chartControl1.PrimaryYAxis.BreakRanges.BreakAmount = 0.5
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img35.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-breaks.jpeg)
 
 ## Axis Crossing Support
 
@@ -2222,7 +2222,7 @@ Me.chartControl1.Series3D = True
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img36.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-crossing-support.png)
 
 ## Axis Label Placement
 
@@ -2281,7 +2281,7 @@ Me.chartControl1.PrimaryXAxis.AxisLabelPlacement = ChartPlacement.Inside
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img37.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-label-placment.png)
 
 ### Positioning Individual Axis Labels
 
@@ -2448,7 +2448,7 @@ Private Sub chartControl1_ChartFormatAxisLabel(ByVal sender As Object, ByVal e A
 
 The following screenshot illustrates the customization options for individual label positions on the y-axis to the right or left side based on the y value of the data points. If the export value is positive, the label is rendered to the left side of the axis, and if it is negative, the label is rendered on the right side of the axis.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img38.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-positioning-individual-axis-labels.png)
 
 ## ZoomFactor and ZoomPosition
 
@@ -2477,7 +2477,7 @@ For example, when zoomFactor and zoomPosition are set to 0.5 for the chart with 
 
 The following screenshot illustrates a chart whose x-axis has been zoomed by setting zoomFactor and zoomPosition.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img40.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-zoom-factor-and-position.png)
 
 ## Exclude Invisible Series Range
 
@@ -2506,7 +2506,7 @@ For example, when hidden the any of the series and set the ExcludeInvisibleSerie
 
 The following screenshot illustrates a chart whose x-axis and y-axis range exclude the invisible series by setting ExcludeInvisibleSeriesRange as true for corresponding axis.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img41.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-exclude-invisible-series-range.png)
 
 ## RoundingPlaces in Axis
 
@@ -2531,7 +2531,7 @@ Me.chartControl1.PrimaryYAxis.RoundingPlaces = 3;
 
 The following screenshot illustrates a chart whose y-axis labels rendered with three decimal places.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img42.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-rounding-places-in-axis.png)
 
 ## Custom Labels Parameter
 
@@ -2581,7 +2581,7 @@ chart.PrimaryXAxis.CustomLabelsParameter = ChartCustomLabelsParameter.Position;
 
 The following screenshot illustrates a chart whose x-axis labels rendered with CustomLabelsParameter as position.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img43.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-custom-labels-parameter.png)
 
 ## ChartAxisEdgeLabelsDrawingMode
 
@@ -2612,7 +2612,7 @@ chart.PrimaryXAxis.EdgeLabelsDrawingMode = ChartAxisEdgeLabelsDrawingMode.Shift;
 
 The following screenshot illustrates the chart whose x-axis labels are rendered with EdgeLabelsDrawingMode as Shift.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img44.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-edge-labels-drawing-mode.png)
 
 ## PointOffset in axis
 
@@ -2637,7 +2637,7 @@ For example, when you set PointOffset to 1, chart will leave one interval space 
 
 The following screenshot illustrates the chart whose x-axis labels are rendered with PointOffset as 1.
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img45.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-point-offset-in-axis.png)
 
 ## RangePaddingTypes
 
@@ -2665,7 +2665,7 @@ chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.None;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img46.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-range-padding-types.png)
 
 **Calculate**
 
@@ -2686,7 +2686,7 @@ chart.PrimaryXAxis.RangePaddingType = ChartAxisRangePaddingType.Calculate;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img47.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-range-padding-type-calculate.png)
 
 ## Axis line type
 
@@ -2711,7 +2711,7 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img48.png)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-line-type.png)
 
 **Width**
 
@@ -2732,7 +2732,7 @@ chart.PrimaryXAxis.LineType.Width = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img49.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-line-type-width.jpeg)
 
 **DashStyle**
 
@@ -2760,7 +2760,7 @@ chart.PrimaryXAxis.LineType.DashStyle = System.Drawing.Drawing2D.DashStyle.DashD
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img50.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-line-type-dash-style.jpeg)
 
 **BackColor**
 
@@ -2785,7 +2785,7 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img54.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-line-type-back-color.jpeg)
 
 ### Axis Gridline LineType
 
@@ -2810,7 +2810,7 @@ chart.PrimaryXAxis.LineType.ForeColor = Color.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img51.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-line-type.jpeg)
 
 **Width**
 
@@ -2831,7 +2831,7 @@ chart.PrimaryXAxis.GridLineType.Width = 4;
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img53.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-line-type-width.jpeg)
 
 **DashStyle**
 
@@ -2859,7 +2859,7 @@ chart.PrimaryXAxis.GridLineType.DashStyle = System.Drawing.Drawing2D.DashStyle.D
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img52.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-line-type-dashstyle.jpeg)
 
 **BackColor**
 
@@ -2884,7 +2884,7 @@ chart.PrimaryXAxis.LineType.PenType = System.Drawing.Drawing2D.PenType.LinearGra
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img55.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-line-type-back-color.jpeg)
 
 ### Axis GetVisibleValue
 
@@ -2925,4 +2925,4 @@ Private Sub Chart_ChartRegionMouseMove(ByVal sender As Object, ByVal e As MouseE
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Axes](Chart-Axes_images/Chart-Axes_img56.jpeg)
+![Chart Axes](Chart-Axes_images/windowsforms-chart-axes-grid-line-type-visible-value.jpeg)
