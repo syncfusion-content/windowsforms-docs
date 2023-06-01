@@ -564,6 +564,52 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+### Validation for GridCheckboxColumn
+Since the [GridCheckBoxColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridCheckBoxColumn.html) is a non-editable column, the validation can be achieved by using the `SetCurrentCellValidated` and `SetCurrentRowValidated` methods.
+
+Cell validation can be achieved by calling the `SetCurrentCellValidated` method with a `false` value as a parameter inside the corresponding [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellCheckBoxClick) event. The [CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidating) event will be triggered when attempting to navigate the current cell.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellCheckBoxClick += SfDataGrid_CellCheckBoxClick;
+private void SfDataGrid_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    if(e.Column.CellType == "CheckBox")
+        this.sfDataGrid.SetCurrentCellValidated(false);
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CellCheckBoxClick, AddressOf sfDataGrid_CellCheckBoxClick
+Private Sub sfDataGrid_CellCheckBoxClick(sender As Object, e As CellCheckBoxClickEventArgs)
+    If e.Column.CellType = "CheckBox" Then
+        sfDataGrid.SetCurrentCellValidated(False)
+    End If
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid displays error icon while validating the cell in grid](DataValidation_images/DataValidation_img12.png)
+
+Row validation can be achieved by calling the `SetCurrentRowValidated` method with a `false` value as a parameter inside the corresponding [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellCheckBoxClick) event. The [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) event will be triggered when attempting to navigate the current cell to another row.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.CellCheckBoxClick += SfDataGrid_CellCheckBoxClick;
+private void SfDataGrid_CellCheckBoxClick(object sender, CellCheckBoxClickEventArgs e)
+{
+    this.sfDataGrid.SetCurrentRowValidated(false);
+}
+{% endhighlight %}
+{% highlight vb %}
+AddHandler sfDataGrid.CellCheckBoxClick, AddressOf sfDataGrid_CellCheckBoxClick
+Private Sub sfDataGrid_CellCheckBoxClick(sender As Object, e As CellCheckBoxClickEventArgs)
+    sfDataGrid.SetCurrentRowValidated(False)
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+![Windows forms datagrid displays error icon while validating the row in grid](DataValidation_images/DataValidation_img13.png)
+
 ## Customizing Error Icon and ToolTip
 
 ### Error Icon Customization
