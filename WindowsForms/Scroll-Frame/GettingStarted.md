@@ -42,7 +42,7 @@ This section describes how to attach the `SfScrollFrame` to a `ListView` Control
 
 The `SfScrollFrame` can be attached to any control through designer by assigning the [Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Controls.SfScrollFrame.html#Syncfusion_WinForms_Controls_SfScrollFrame_Control) property.
 
-![ScrollFrame to a control attached through designer in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img1.jpg)
+![Scroll Frame control attached through designer in Winforms application](sfscrollframe_images/winforms-scroll-frame-attached-through-designer.jpg)
 
 #### Designer generated code
 
@@ -100,7 +100,7 @@ this.sfScrollFrame1.VerticalScrollBar.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![ScrollFrame to a control attached through code in winforms scrollframe](SfScrollFrame_images/SfScrollFrame_img2.jpg)
+![Scroll Frame control attached through code in Winforms application](sfscrollframe_images/winforms-scroll-frame-attached-throug-code.jpg)
 
 ### Changing the SmallChange value
 
