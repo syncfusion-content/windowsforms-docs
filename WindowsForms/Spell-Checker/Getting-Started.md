@@ -47,9 +47,9 @@ SpellCheckerAdv control can be added to the application by dragging it from the 
 * Syncfusion.Tools.Base.dll
 * Syncfusion.Tools.Windows.dll
 
-![Search SpellCheckerAdv in Toolbox](Getting-Started_images/ToolBox.png)
+![Search WindowsForms Spell Checker in Toolbox](getting-started_images/windowsforms-spellchecker-toolbox.png)
 
-![SpellCheckerAdv control added in designer](Getting-Started_images/SpellCheckerAdv-img2.png)
+![WindowsForms Spell Checker control added in designer](getting-started_images/windowsforms-spellchecker-designer.png)
 
 ## Add control manually using Code
 
@@ -301,7 +301,7 @@ Me.Controls.Add(Me.richTextBox1)
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-![Spell checker](Getting-Started_images/SpellCheckerAdv-img1.png)
+![Configure WindowsForms Spell Checker into RichTextBox control](getting-started_images/windowsforms-spellchecker-configuring-richtextbox.png)
 
 **Step 3** - Create an instance of the `TextBoxSpellEditor` class by having `RichTextBox` as its Control and it to `SpellCheckerAdv` using [PerformSpellCheckForControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SpellCheckerAdv.html#Syncfusion_Windows_Forms_Tools_SpellCheckerAdv_PerformSpellCheckForControl_Syncfusion_Windows_Forms_Tools_ISpellCheckerAdvEditorTools_) method.
 
@@ -354,7 +354,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet6 | OrderList_Indent_Level_1 }}
 
-![SpellChecking for loaded text](Getting-Started_images/GettingStarted2.png)
+![Spell Checker for loaded text in WindowsForms](getting-started_images/windowsforms-spellchecker-loaded-text.png)
 
 ## Applying dictionary
 
@@ -415,4 +415,5 @@ Me.spellCheckerAdv1.VisualStyle = SpellCheckerAdvStyle.Office2016Colorful
 
 {% endtabs %}
 
-![SpellCheckerAdv style](Getting-Started_images/GettingStarted2.png)
+![Spell Checker style in WindowsForms application](getting-started_images/windowsforms-spellchecker-style.png)
+

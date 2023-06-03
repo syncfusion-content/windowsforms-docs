@@ -12,7 +12,7 @@ documentation: ug
 
 [SplitContainerAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) is a container control which allows you to add controls into panels ([Panel1](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel1) and [Panel2](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_Panel2)) to a form, separated by splitters. 
 
- ![Splitter control for Windows forms to resize docked controls](GettingStarted-images/Overview-img1.png)
+ ![WindowsForms Split Container resize docked controls](gettingstarted-images/windowsforms-split-container-resize-docked.png)
 
 ## Key Features
 

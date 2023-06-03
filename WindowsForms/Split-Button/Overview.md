@@ -11,7 +11,7 @@ documentation: ug
 
 The **"SplitButton"** control is like a combination of control that behaves like a Button and dropdown menu which provide access to create a dropdown button-like interface. Using this control, you can perform different operations with dropdown items as like menu hierarchy. 
 
-![Overview of SplitButton](Overview_images/SplitButton_removeitemthroughcode.png)
+![WindowsForms Split Button Overview](overview_images/windowsforms-split-button-overview.png)
 
 ## Features
 
