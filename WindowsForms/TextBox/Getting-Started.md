@@ -29,7 +29,7 @@ Create new Windows Forms Project in Visual Studio to display TextBoxExt with dif
 
 The [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control can be added to the application by dragging it from the toolbox and dropping it in designer. The required assembly references will be added automatically.
 
-![Drag and drop TextBoxExt from toolbox in WindowsForms application](Creating-TextBoxExt_images/windowsforms-textbox-drag-and-drop.png)
+![Drag and drop TextBoxExt from toolbox in WindowsForms application](creating-textboxext_images/windowsforms-textbox-drag-and-drop.png)
 
 ## Adding the TextBoxExt control via code
 
