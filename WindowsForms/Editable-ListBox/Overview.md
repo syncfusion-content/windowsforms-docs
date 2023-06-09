@@ -11,7 +11,7 @@ documentation: ug
 
 The [EditableList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.EditableList.html) control provides an editable Windows Forms list box with a Windows Forms text box and button on the current row to facilitate in-place editing. The events present in the Textbox, Button and ListBox are applicable for EditableList control.
 
-![Overview of EditableList](EditableList_images/Overview.png)
+![Overview of EditableList in WindowsForms](editablelist_images/windowsforms-editable-list-overview.png)
 
 ## Key features
 

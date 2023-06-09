@@ -63,8 +63,8 @@ End Class
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
+![Converting standard form in Winforms Form](getting-started_images/winforms-form-converting-standard-form.png)
 
-![Winforms showing the form from the sfform](Getting-Started_images/Getting-Started_img1.png)
 
 ## Title Bar Customization
 
@@ -115,7 +115,7 @@ Me.Style.TitleBar.MinimizeButtonPressedBackColor = Color.Gray
 {% endtabs %}
 
 
-![Winforms showing the titlebar customization form](Getting-Started_images/Getting-Started_img2.png)
+![Winforms showing the titlebar customization form](getting-started_images/winforms-form-title-bar-customization.png)
 
 ## Border Customization
 
@@ -134,7 +134,7 @@ Me.Style.InactiveBorder = New Pen(Color.Gray, 5)
 {% endtabs %}
 
 
-![Winforms showing the border customization form](Getting-Started_images/Getting-Started_img3.png)
+![Winforms showing the border customization form](getting-started_images/winforms-form-border-customization.png)
 
 ## Loading User Control to the Title Bar
 
@@ -167,5 +167,5 @@ Me.TitleBarTextControl = searchPanel
 {% endtabs %}
 
 
-![Winforms showing the loaded user control to the title bar form](Getting-Started_images/Getting-Started_img4.png)
+![Winforms showing the loaded user control to the title bar form](getting-started_images/winforms-form-loading-user-control-to-the-title-bar.png)
 
