@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Tools for Windows Forms supports [Clock](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.Clock.html) control in an application. This feature enables you to add customizable analog clocks in the application.
 
-![Overview of the Clock control](Overview_images/overview.png)
+![Overview of the Clock control in WindowsForms](overview_images/windowsforms-clock-overview.png)
 
 ## Key features
 

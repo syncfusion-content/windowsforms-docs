@@ -35,7 +35,7 @@ Create new Windows Forms Project in Visual Studio to display [Clock](https://hel
     * Syncfusion.Tools.Base 
     * Syncfusion.Tools.Windows
 
-![Windows Forms clock control added by designer](Getting-Started_images/wf-clock-control-added-by-designer.png) 
+![WindowsForms Clock control added by designer](getting-started_images/windowsforms-clock-control-added-by-designer.png) 
 
 ### Adding Clock control via code
 
@@ -90,7 +90,7 @@ Me.Controls.Add(clock1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![wf clock control](Getting-Started_images/wf-clock-control.png) 
+![WindowsForms Clock control added by code](getting-started_images/windowsforms-clock-control-added-by-code.png) 
 
 ## Clock type
 
@@ -112,7 +112,7 @@ clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital
 
 {% endtabs %}
 
-![Windows Forms Clock shows digital clock](Getting-Started_images/wf-digital-clock.png)
+![WindowsForms Clock shows digital clock](getting-started_images/windowsforms-digital-clock.png)
 
 For Analog Clock,
 
@@ -132,7 +132,7 @@ clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Analog
 
 {% endtabs %}
 
-![Windows Forms clock shows analog clock](Getting-Started_images/wf-analog-clock.png)
+![WindowsForms Clock shows analog clock](getting-started_images/windowsforms-analog-clock.png)
 
 ## Change date and time
 
@@ -153,4 +153,4 @@ clock1.CustomTime = New System.DateTime(2019, 7, 3, 16, 50, 1, 0)
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms Clock shows customized time](Getting-Started_images/Clock_customtime.png)
+![WindowsForms Clock shows customized time](getting-started_images/windowsforms-clock-custom-time.png)
