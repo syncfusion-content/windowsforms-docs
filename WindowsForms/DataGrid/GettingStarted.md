@@ -25,7 +25,7 @@ Create new Windows Forms Project in Visual Studio to display SfDataGrid with dat
 
 ### Adding Control via Designer
 Windows Forms DataGrid (SfDataGrid) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![Windows forms datagrid is dragged from toolbox](GettingStarted_images/GettingStarted_img1.png)
+![WindowsForms DataGrid is dragged from toolbox](gettingstarted_images/windowsforms-datagrid-dragged-from-toolbox.png)
 
 ### Adding Control in Code
 In order to add control manually, do the below steps,
@@ -274,7 +274,7 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 
 Now, run the application, the below output will occur.
 
-![Windows forms datagrid showing collection of data](GettingStarted_images/GettingStarted_img2.png)
+![WindowsForms DataGrid showing collection of data](gettingstarted_images/windowsforms-datagrid-collection-of-data.png)
 
 ## Defining Columns
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.DataSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DataSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
@@ -445,7 +445,7 @@ sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode
 sfDataGrid1.SelectionMode = Syncfusion.WinForms.DataGrid.Enums.GridSelectionMode.Extended
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing selection](GettingStarted_images/GettingStarted_img3.png)
+![WindowsForms DataGrid showing selection](gettingstarted_images/windowsforms-datagrid-selection.png)
 
 The selection operations can be handled with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) events of SfDataGrid.
 
@@ -465,7 +465,7 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.SortColumnDescriptions.Add(New SortColumnDescription() With {.ColumnName = "Country"})
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing sorting the columns](GettingStarted_images/GettingStarted_img4.png)
+![WindowsForms DataGrid showing sorting the columns](gettingstarted_images/windowsforms-datagrid-sorting-the-columns.png)
 
 The sorting can be customized by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event.
 {% tabs %}
@@ -503,7 +503,7 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.GroupColumnDescriptions.Add(New GroupColumnDescription() With {.ColumnName = "CustomerName"})
 {% endhighlight %}
 {% endtabs %}
-![Windows forms datagrid showing grouped data](GettingStarted_images/GettingStarted_img5.png)
+![WindowsForms DataGrid showing grouped data](gettingstarted_images/windowsforms-datagrid-grouped-data.png)
 
 ### Filtering
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowFiltering) property to true, where advanced filter UI can be  opened by clicking the Filter icon in column header and filter the SfDataGrid. The filtering operations ca be customized by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) events.
@@ -519,7 +519,7 @@ sfDataGrid1.DataSource = orderInfoCollection.Orders
 sfDataGrid1.AllowFiltering = True
 {% endhighlight %}
 {% endtabs %}
-![Windows form datagrid showing filter control](GettingStarted_images/GettingStarted_img6.png)
+![WindowsForms DataGrid showing filter control](gettingstarted_images/windowsforms-datagrid-filtering.png)
 
 ## Editing
 Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowEditing) property to true. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AllowDeleting) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key.
