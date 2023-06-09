@@ -11,7 +11,7 @@ documentation: ug
 
 The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) is an advanced CheckBox control that supports themes, gradient colors, border settings, and shadow text with various alignment options for both the text and check box. It provides options to display images and gradient backgrounds.
 
-![Windows forms CheckBoxAdv Overview](Overview_images/CheckBoxAdv.jpeg)
+![Overview of WindowsForms CheckBox](overview_images/windowsforms-checkbox-overview.jpeg)
 
 The [CheckBoxAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CheckBoxAdv.html) control can replace the CheckBox control provided in Windows Forms. This type of control can be defined as consisting of a graphic and associated text that the user clicks to select or deselect an option. A check mark in the check box graphic indicates the option selected. In the CheckBoxAdv control, the graphic can be changed to an image that indicates a selected or deselected state.
 
