@@ -21,7 +21,7 @@ this.Style.TitleBar.Height = 45;
 Me.Style.TitleBar.Height = 45
 {% endhighlight %}
 {% endtabs %}
-![Form titlebar shown with custom height](TitleBar_images/TitleBar_Image1.png)
+![WindowsForms Form titlebar shown with custom height](titlebar_images/windowsforms-form-title-bar-height.png)
 
 ## Text alignment
 
@@ -37,7 +37,7 @@ Me.Style.TitleBar.TextHorizontalAlignment = HorizontalAlignment.Center
 Me.Style.TitleBar.TextVerticalAlignment = VerticalAlignment.Top
 {% endhighlight %}
 {% endtabs %}
-![Form titlebar shown with text alignment](TitleBar_images/TitleBar_Image2.png)
+![WindowsForms Form shown with text alignment](titlebar_images/windowsforms-form-text-alignment.png)
 
 ## Customization of title bar buttons
 
@@ -101,7 +101,7 @@ Me.MaximizeBox = False
 {% endhighlight %}
 {% endtabs %}
 
-![Hiding title bar buttons](TitleBar_images/TitleBar_Image3.png)
+![Hiding title bar buttons in WindowsForms Form](titlebar_images/windowsforms-form-hiding-title-bar-buttons.png)
 
 ## Rich text formatting
 
@@ -122,7 +122,7 @@ Me.Style.TitleBar.AllowRichText = True
 Me.Text = "{\\rtf1\\ansi\\deff0{\\colortbl;\\red150\\green0\\blue20;\\red100\\green0\\blue150;}" + "{\\fonttbl{\\f0 Segoe UI;\r\n}}\\qc\\f0\\fs23 {\\cf1 Untitled* \\cf2 - \\b Custom Text Editor}}"
 {% endhighlight %}
 {% endtabs %}
-![Rich text formatting in SfForm](TitleBar_images/TitleBar_Image4.png)
+![Rich text formatting in WindowsForms Form](titlebar_images/windowsforms-form-rich-text-formatting.png)
 
 N> Adding rich text to the `Text` property will have no effect, if the `AllowRichText` property is `false`.
 
@@ -159,7 +159,7 @@ Me.TitleBarTextControl = searchPanel
 {% endhighlight %}
 {% endtabs %}
 
-![SfForm shows control in TitleBar](TitleBar_images/TitleBar_Image5.png)
+![WindowsForms Form shows control in Title Bar](titlebar_images/windowsforms-form-shows-control-in-title-bar.png)
 
 The following sample shows how to load user control to the title bar:
 
@@ -219,7 +219,7 @@ Me.Style.BackColor = Color.DarkGray
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance customization in SfFrom](TitleBar_images/TitleBar_Image6.png)
+![Appearance customization in WindowsForms Form](titlebar_images/windowsforms-form-appearance.png)
 
 ### Icon backcolor
 
@@ -240,7 +240,7 @@ Me.Style.TitleBar.IconBackColor = Color.Olive
 {% endhighlight %}
 {% endtabs %}
 
-![Back color of icon in title bar is changed for windows forms SfForm](TitleBar_images/TitleBar_Image7.png)
+![Back color of icon in title bar is changed for WindowsForms Form](titlebar_images/windowsforms-form-icon-back-color.png)
 
 ### Caption image
 
@@ -261,7 +261,7 @@ Me.Style.TitleBar.CaptionImage = SystemIcons.Error.ToBitmap()
 {% endhighlight %}
 {% endtabs %}
 
-![Caption image in titlebar is changed for windows forms SfFrom](TitleBar_images/TitleBar_Image8.png)
+![Caption image in titlebar is changed for WindowsForms Form](titlebar_images/windowsforms-form-caption-image.png)
 
 ### Caption image location
 

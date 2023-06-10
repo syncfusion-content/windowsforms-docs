@@ -23,7 +23,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
 
     * Syncfusion.Shared.Base
 
-![Windows Forms EditableList drag and drop from toolbox](Creating-Editable-List_images/Creating-Editable-List_img1.png)
+![Windows Forms EditableList drag and drop from toolbox](creating-editable-list_images/windowsforms-editable-list-drag-and-drop-from-toolbox.png)
 
 ## Adding EditableList control via code
 
@@ -107,7 +107,7 @@ editableList.ListBox.Items.AddRange(New Object() { "Button", "Text", "Image", "F
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms EditableList shows added item into the list box](Creating-Editable-List_images/EditableList_addingitem.png)
+![Windows Forms EditableList shows added item into the list box](creating-editable-list_images/windowsforms-editable-list-adding-item.png)
 
 ## Select and edit item
 
@@ -130,10 +130,10 @@ editableList.ListBox.SelectedItem = "Text"
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms EditableList shows selected item](Creating-Editable-List_images/EditableList_selecteditem.png)
+![Windows Forms EditableList shows selected item](creating-editable-list_images/windowsforms-editable-list-selected-item.png)
 
 ### Editing item
 
 At run time, select text, and double click the text or press F2 button. Now, you can edit the text.
 
-![Windows Forms EditableList shows edited item](Creating-Editable-List_images/EditableList_edititem.png)
+![Windows Forms EditableList shows edited item](creating-editable-list_images/windowsforms-editable-list-edit-item.png)

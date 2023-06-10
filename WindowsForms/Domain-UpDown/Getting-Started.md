@@ -36,7 +36,7 @@ The DomainUpDownExt control can be added to an application by dragging it from t
 * Syncfusion.Tools.Base 
 * Syncfusion.Tools.Windows
 
-![wf domain up down control added by designer](Getting-Started_images/wf-domain-up-down-ext-control.png) 
+![WindowsForms Domain Up Down control added by designer](getting-started_images/windowsforms-domain-up-down-added-by-designer.png) 
 
 ## Add control manually in code
 
@@ -104,4 +104,4 @@ Me.domainUpDownExt1.Items.Add("Five")
 {% endhighlight %}
 {% endtabs %}
 
-![wf domain up down control](Getting-Started_images/wf-domain-up-down-control.png) 
+![Adding items in WindowsForms Domain Up Down](getting-started_images/windowsforms-domain-up-down-adding-items.png) 

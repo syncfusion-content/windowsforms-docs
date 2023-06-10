@@ -28,7 +28,7 @@ Click [NuGet Packages](https://help.syncfusion.com/windowsforms/installation/ins
     * Syncfusion.Shared.Base
     * Syncfusion.Shared.Windows
 
-![CurrencyEdit control added by designer](Overview_images/wf-currency-edit-control-added-designer.png) 
+![Currency Edit control added by designer in WindowsForms](overview_images/windowsforms-currency-edit-control-added-designer.png) 
 
 ## Adding CurrencyEdit control via code
 
@@ -83,7 +83,7 @@ Me.Controls.Add(currencyEdit1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![CurrencyEdit control](Overview_images/wf-currency-edit-control.png) 
+![WindowsForms Currency Edit control](overview_images/windowsforms-currency-edit-control.png) 
 
 5. Set the currency value using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CurrencyEdit.html#Syncfusion_Windows_Forms_Tools_CurrencyEdit_Text) property, and change the culture using the `Culture` property of currency symbol.
 
@@ -111,7 +111,7 @@ currencyEdit1.TextBox.Culture = New System.Globalization.CultureInfo("ksh-DE")
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Windows Forms CurrencyEdit showing changed value and currency symbol](Overview_images/CurrencyEdit_value.png)
+![WindowsForms Currency Edit showing changed value and currency symbol](overview_images/windowsforms-currency-edit-value.png)
 
 ## Show or hide the drop-down calculator
 
@@ -132,5 +132,5 @@ currencyEdit1.ShowCalculator = False
 {% endhighlight %}
 {% endtabs %}
 
-![CurrencyEdit control calculator is disabled](Overview_images/wf-currency-edit-control-calculator-button-disable.png)
+![Currency Edit control calculator is disabled in WindowsForms](overview_images/windowsforms-currency-edit-control-calculator-button-disable.png)
 
