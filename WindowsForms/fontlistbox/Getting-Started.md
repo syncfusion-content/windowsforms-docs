@@ -32,7 +32,7 @@ The FontListBox control can be added via designer using the following steps:
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-![Drag and drop FontListBox from toolbox](Overview_images/Overview_img577.jpeg) 
+![Drag and drop FontListBox from toolbox in WindowsForms](overview_images/windowsforms-font-list-box-drag-and-drop-from-toolbox.jpeg) 
 
 ## Adding the FontListBox control via code
 
@@ -91,7 +91,7 @@ Me.Controls.Add(fontListBox1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-![Windows Forms FontListBox](Overview_images/Overview_img578.jpeg)
+![Adding FontListBox control via code in WindowsForms](overview_images/windowsforms-font-list-box-adding-code.jpeg)
 
 ## Selected items
 
@@ -153,7 +153,7 @@ private void FontListBox1_SelectedIndexChanged(Object sender, System.EventArgs e
 
 {% endtabs %}
 
-![Windows Forms FontListBox showing change the text style](Overview_images/FontListBox_selecteditems.png)
+![WindowsForms FontListBox showing change the text style](overview_images/windowsforms-font-list-box-selected-items.png)
 
 ## Selection mode
 
@@ -184,4 +184,4 @@ fontListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
 
 {% endtabs %}
 
-![Windows Forms FontListBox shows different selection of font list](Overview_images/Overview_img579.jpeg)
+![Windows Forms FontListBox shows different selection of font list](overview_images/windowsforms-font-list-box-selection-mode.jpeg)

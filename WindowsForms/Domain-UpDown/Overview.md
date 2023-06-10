@@ -10,5 +10,5 @@ documentation: ug
 
 DomainUpDownExt is an advanced version of the standard windows DomainUpDown control. Syncfusion DomainUpDownExt supports themes and comes with Office2007 look and feel. It also provides options to apply custom colors to the control. It enables spin button orientation and alignment.
 
-![Overview of DomainUpDownExt](DomainUpdownExt_images/Overview_img419.png)
+![Overview of DomainUpDownExt in WindowsForms](domainupdownext_images/windowsforms-domain-up-down-overview.png)
 

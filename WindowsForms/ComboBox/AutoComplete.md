@@ -30,7 +30,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Suggest
 {% endhighlight %}
 {% endtabs %}
 
-![AutoCompleteMode as suggest](AutoComplete_images/AutoComplete_img1.png)
+![Suggest in WindowsForms AutComplete](autocomplete_images/windowsforms-autocomplete-suggest.png)
 
 ### Append
 
@@ -45,7 +45,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.Append
 {% endhighlight %}
 {% endtabs %}
 
-![AutoCompleteMode as Append](AutoComplete_images/AutoComplete_img2.png)
+![Append in WindowsForms AutoComplete](autocomplete_images/windowsforms-autocomplete-append.png)
 
 ### Suggest append
 
@@ -60,7 +60,7 @@ sfComboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend
 {% endhighlight %}
 {% endtabs %}
 
-![AutoCompleteMode as SuggestAppend](AutoComplete_images/AutoComplete_img3.png)
+![Suggest append in WindowsForms AutoComplete](autocomplete_images/windowsforms-autocomplete-suggest-append.png)
 
 ## Auto complete by case sensitive
 
@@ -75,7 +75,7 @@ sfComboBox1.AllowCaseSensitiveOnAutoComplete = True
 {% endhighlight %}
 {% endtabs %}
 
-![Filter drop-down items with case sensitive](AutoComplete_images/AutoComplete_img4.png)
+![Filter drop-down items with case sensitive in WindowsForms AutoComplete](autocomplete_images/windowsforms-autocomplete-case-sensitive.png)
 
 ## Different modes for suggesting items
 
@@ -90,7 +90,7 @@ sfComboBox1.AutoCompleteSuggestMode = AutoCompleteSuggestMode.Contains
 {% endhighlight %}
 {% endtabs %}
 
-![AutoCompleteSuggestion option as contains](AutoComplete_images/AutoComplete_img5.png)
+![Suggestion option as contains in WindowsForms AutoComplete](autocomplete_images/windowsforms-autocomplete-suggestion-items.png)
 
 ## Setting delay for auto complete
 

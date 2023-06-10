@@ -15,7 +15,7 @@ The EditControl provides Intellisense pop-up capabilities to add content easily 
 
 The [ContextChoiceController](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.Interfaces.IContextChoiceController.html) helps to display intellisense pop-up in the EditControl. You can also autocomplete the word by using the UP or DOWN arrow key to choose the Context Choice item and pressing the <kbd>Tab</kbd> key. The ContextChoice pop-up can be dismissed by pressing the <kbd>ESC</kbd> key.
 
-![Intellisense to choose items in syntax editor](Intellisense-images/Intellisense_img1.png)
+![Intellisense to choose items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-intellisense-to-choose-items.png)
 
 The ContextChoice displaying characters are specified in the configuration file by using the `DropContextChoiceList` field in the lexem for the corresponding character. To display the ContextChoice drop-down in response to the period (".") or comma (",") being typed, use the following XML code.
 
@@ -363,7 +363,7 @@ The EditControl provides an option to filter context choice items while typing b
 
 When the FilterAutoCompleteItems property is set to `true`, it filters the item in the AutoComplete Context Choice and the filtered item alone will be visible. When set to `false`, all the items will be visible and the selection will be navigated to the item.
 
-![Autocomplete items filtered based on types character](Intellisense-images/Intellisense_img2.png)
+![Context choice border color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-border-color-customized.png)
 
 **Showing or hiding ContextChoice pop-up**
 
@@ -446,7 +446,7 @@ Me.editControl1.ContextChoiceBorderColor = System.Drawing.Color.Red
 
 {% endtabs %}
 
-![Context choice border color customized in syntax editor](Intellisense-images/Intellisense_img6.png)
+![Context choice border color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-border-color-customized.png)
 
 ### Size
 
@@ -469,7 +469,7 @@ Me.editControl1.ContextChoiceSize = New System.Drawing.Size(100, 100)
 
 {% endtabs %}
 
-![Decrease Intellisense size in syntax editor](Intellisense-images/Intellisense_img7.png)
+![Decrease intellisense size in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-decrease-intellisense-size.png)
 
 ### Background
 
@@ -496,7 +496,7 @@ The [ContextChoiceBackColor](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 {% endtabs %}
 
-![ContextChoice popup back color customized in syntax editor](Intellisense-images/Intellisense_img8.png)
+![Context Choice popup back color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-popup-back-color-customized.png)
 
 ### Foreground
 
@@ -523,7 +523,7 @@ The [ContextChoiceForeColor](https://help.syncfusion.com/cr/windowsforms/Syncfus
 
 {% endtabs %}
 
-![Forecolor of items in ContextChoice customized in syntax editor](Intellisense-images/Intellisense_img9.png)
+![WindowsForms Syntax Editor forecolor of items in ContextChoice customized](intellisense-images/windowsforms-syntax-editor-forecolor-of-items-in-context-choise-customized.png)
 
 ### Font
 
@@ -550,7 +550,7 @@ The [ContextChoiceFont](https://help.syncfusion.com/cr/windowsforms/Syncfusion.W
 
 {% endtabs %}
 
-![Font of items in ContextChoice customized in syntax editor](Intellisense-images/Intellisense_img10.png)
+![Font of items in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-font-of-items.png)
 
 N> Refer to the following sample link that demonstrates the `Intellisense` functionalities of EditControl:
 C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Windows\Edit.Windows\Samples\Intellisense Functions\Context Choices
@@ -559,7 +559,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 Support provided for displaying function overloading the information as in Microsoft Visual Studio text editor. It also allows user to navigate between defined functions by using <kbd>UP</kbd> or <kbd>DOWN</kbd> arrow key.
 
-![ContextChoice to display different messages in single popup](Intellisense-images/Intellisense_img4.png)
+![ContextChoice to display different messages in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-choice-to-display-different-massages.png)
 
 The following code snippet demonstrates the context prompt displaying characters specified in the configuration file by using the DropContextPrompt field in the lexem for the corresponding character. To display the ContextPrompt pop-up in response to the opening brace - "(" or opening curly brace -"{" being typed, use the following XML code.
 
@@ -882,7 +882,7 @@ Me.editControl1.ContextPromptBackgroundBrush = New Syncfusion.Drawing.BrushInfo(
 
 {% endtabs %}
 
-![Gradient backcolor context prompt in syntax editor](Intellisense-images/Intellisense_img11.png)
+![Gradient backcolor context prompt in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-gradient-backcolor-context-prompt.png)
 
 ### Border
 
@@ -905,7 +905,7 @@ Me.editControl1.ContextPromptBorderColor = System.Drawing.Color.Pink
 
 {% endtabs %}
 
-![Context choice border color customized in syntax editor](Intellisense-images/Intellisense_img12.png)
+![Context Prompt border color in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-context-prompt-border-color.png)
 
 ### Size
 
@@ -932,7 +932,7 @@ Me.editControl1.UseCustomSizeContextPrompt = True
 
 {% endtabs %}
 
-![Custom size context prompt for syntax editor](Intellisense-images/Intellisense_img13.png)
+![Custom size context prompt in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-custom-size-context-prompt.png)
 
 ### Advanced customizations
 
@@ -1145,7 +1145,7 @@ C:\Users\&lt;User&gt;\AppData\Local\Syncfusion\EssentialStudio\Version Number\Wi
 
 Supports built-in tooltip that appears when the mouse pointer is placed over text information.  
 
-![Tooltip for text in syntax editor](Intellisense-images/Intellisense_img5.png)
+![Tooltip for text in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-tooltip-for-text.png)
 
 Context tooltip can be populated with additional information on the corresponding lexem by handling the [UpdateContextTooltip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in the EditControl.
 
@@ -1252,7 +1252,7 @@ Me.editControl1.ContextTooltipBorderColor = System.Drawing.Color.Orange
 
 {% endtabs %}
 
-![Tooltip border color customized in syntax editor](Intellisense-images/Intellisense_img14.png)
+![Tooltip border color customized in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-tooltip-border-color-customized.png)
 
 It is also possible to specify the time delay after which the tooltip should be displayed by using the [ToolTipDelay](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ToolTipDelay) property.
 
@@ -1336,15 +1336,15 @@ End Sub
 
 {% endtabs %}
 
-![Autocomplete the typed text based on items added in context choice](Intellisense-images/Intellisense_img2.png)
+![Autocomplete the typed text based on items added in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-autocomplete-the-typed-text-based-on-items-added.png)
 
 ## Auto correct
 
 Provides `AutoReplaceTriggers` option to automatically auto correct the predefined typo errors. Auto Replace Triggers can be enabled or disabled by using the [UseAutoreplaceTriggers](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_UseAutoreplaceTriggers) property.
 
-![Typed incorrect word in syntax editor which can be corrected by auto correct support](Intellisense-images/Intellisense_img6.jpeg)
+![Typed incorrect word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-typed-autocorect-word.jpeg)
 
-![Auto corrects the word in syntax editor](Intellisense-images/Intellisense_img7.jpg)
+![Auto corrects the word in WindowsForms Syntax Editor](intellisense-images/windowsforms-syntax-editor-autocorrects-the-word.jpg)
 
 {% tabs %}
 

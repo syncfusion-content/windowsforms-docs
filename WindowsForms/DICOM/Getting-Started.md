@@ -17,7 +17,7 @@ The following image shows the converted DICOM Image using Essential DICOM.
 
 
 
-![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
+![Getting Started with WindowsForms Dicom](getting-started_images/windowsforms-dicom-getting-started.png)
 
 
 
@@ -36,7 +36,7 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select Windows Forms Application template, name the project and click OK. 
 
-![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.png)
+![windows application in WindowsForms Dicom](getting-started_images/windowsforms-dicom-windows-application.png)
 
 
 
@@ -57,7 +57,7 @@ A windows application is created.
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-   ![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.png)
+   ![WPF application in WindowsForms Dicom](getting-started_images/windowsforms-dicom-wpf-application.png)
    A new WPF application is created.
 
 2. Open the main form of the application in the designer. 
