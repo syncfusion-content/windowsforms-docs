@@ -134,4 +134,4 @@ ChartSeries chartSeries;
 
 {% endtabs %}	
 
-![Adding an image on chart area](How-to-add-image-on-chart-area/How-to-add-image-on-chart-area.png)
+![Adding an image on chart area in WindowsForms application](how-to-add-image-on-chart-area/adding-image-on-windowsforms-chart-area.png)

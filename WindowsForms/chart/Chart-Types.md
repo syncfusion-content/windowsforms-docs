@@ -230,7 +230,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Chart Types](Chart-Types_images/Chart-Types_img1.jpeg)
+![Line chart in WindowsForms](chart-types_images/windowsforms-line-chart.jpeg)
 
 #### Chart Details
 
@@ -293,7 +293,7 @@ When rendered in 3D, the plot looks like a ribbon and hence such types are also 
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed.
 
-![Chart Types](Chart-Types_images/Chart-Types_img2.jpeg)
+![Spline Charts in WindowsForms](chart-types_images/windowsforms-spline-chart.jpeg)
 
 #### Chart Details
 
@@ -368,7 +368,7 @@ A Rotated Spline Chart is similar to an ordinary Spline Chart. The only differen
 
 The following image shows a sample Rotated Spline Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img3.jpeg)
+![Rotated spline chart in WindowsForms](chart-types_images/windowsforms-rotated-spline-chart.jpeg)
 
 #### Chart Details
 
@@ -433,7 +433,7 @@ Me.chartControl1.Series.Add(series1)
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-![Chart Types](Chart-Types_images/Chart-Types_img4.jpeg)
+![Step line chart in WindowsForms](chart-types_images/windowsforms-step-line-chart.jpeg)
 
 ### Chart Details
 
@@ -879,7 +879,7 @@ Me.chartControl1.Series.Add(series)
 
 The Tornado chart is a bar chart which shows the variability of an output to several different inputs. Variability is displayed using relative lengths of bars across a range. It is mainly used in sensitivity analysis. It shows how different random factors can influence the prognostic outcome.
 
-![Chart Types](Chart-Types_images/Chart-Types_img10.jpeg)
+![Tornado chart in WindowsForms](chart-types_images/windowsforms-tornado-chart.jpeg)
 
 #### Chart Details
 
@@ -988,7 +988,7 @@ It is used for comparing the frequency, count, total or average of data in diffe
 
 The following image shows a multi series Column Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img11.jpeg)
+![Column chart in WindowsForms](chart-types_images/windowsforms-column-chart.jpeg)
 
 #### Chart Details
 
@@ -1052,7 +1052,7 @@ Column Range Chart is similar to the Column Chart except that each column is ren
 
 The following figure shows a Column Range Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img12.jpeg)
+![Column range chart in WindowsForms](chart-types_images/windowsforms-column-range-chart.jpeg)
 
 #### Chart Details
 
@@ -1116,7 +1116,7 @@ Stacking Column Charts are similar to regular column charts except that the y va
 
 The following image shows a sample Stacking Column Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img13.jpeg)
+![Stacking column chart in WindowsForms](chart-types_images/windowsforms-stacking-column-chart.jpeg)
 
 #### Chart Details
 
@@ -1202,7 +1202,7 @@ Me.chartControl1.Series.Add(series2)
 
 This chart type displays multiple series of data as stacked Columns ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y-axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/Chart-Types_img14.jpeg)
+![Stacked column100 chart in WindowForms](chart-types_images/windowsforms-stacked-column100-chart.jpeg)
 
 #### Chart Details
 
@@ -1284,7 +1284,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img15.jpeg)
+![Area chart in WindowsForms](chart-types_images/windowsforms-area-chart.jpeg)
 
 #### Chart Details
 
@@ -1355,7 +1355,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Spline Area Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img16.jpeg)
+![Spline area chart in WindowsForms](chart-types_images/windowsforms-spline-area-chart.jpeg)
 
 #### Chart Details
 
@@ -1424,7 +1424,7 @@ Stacking Area Charts are similar to regular area charts except that the y values
 
 The following image shows a sample Stacking Area Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img17.jpeg)
+![Stacking area chart in WindowsForms](chart-types_images/windowsforms-stacking-area-chart.jpeg)
 
 #### Chart Details
 
@@ -1513,7 +1513,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 This chart type displays multiple series of data as stacked areas ensuring that the cumulative proportion of each stacked element always totals 100 percent. The y axis will hence always be rendered with the range 0 - 100.
 
-![Chart Types](Chart-Types_images/Chart-Types_img18.jpeg)
+![StackedArea100 chart in WindowsForms](chart-types_images/windowsforms-stackedarea100-chart.jpeg)
 
 #### Chart Details
 
@@ -1638,7 +1638,7 @@ Step Area Charts are similar to regular area chart except that instead of a stra
 
 The following image shows a sample Step Area Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img19.jpeg)
+![Step area chart in WindowsForms](chart-types_images/windowsforms-step-area-chart.jpeg)
 
 #### Chart Details
 
@@ -1709,7 +1709,7 @@ This chart type gives a clear look and it may be used in cases, where we have to
 
 For ex: if we have to display the range of temperature per day in a chart, RangeArea Chart will be the most convenient type of chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img20.jpeg)
+![Range area chart in WindowsForms](chart-types_images/windowsforms-range-area-chart.jpeg)
 
 #### Chart Details
 
@@ -1792,13 +1792,13 @@ Funnel charts are often used to represent stages in a sales process and show the
 
 The following images are some sample Funnel Charts.
 
-![Chart Types](Chart-Types_images/Chart-Types_img21.jpeg)
+![Trapezoid funnel chart in Windowsforms](chart-types_images/windowsforms-trapezoid-funnel-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img22.jpeg)
+![3D circular funnel chart in Windowsforms](chart-types_images/windowsforms-3d-circular-funnel-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img23.jpeg)
+![3D square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-square-funnel-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img24.jpeg)
+![3D segmented square funnel chart in Windowsforms](chart-types_images/windowsforms-3d-segmented-square-funnel-chart.jpeg)
 
 #### Chart Details
 
@@ -1861,13 +1861,13 @@ Pyramid chart is similar to the funnel chart. It's often used for geographical p
 
 The following images are some sample Pyramid Charts.
 
-![Chart Types](Chart-Types_images/Chart-Types_img25.jpeg)
+![Pyramid chart in WindowsForms](chart-types_images/windowsforms-pyramid-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img26.jpeg)
+![3D circular pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-circular-pyramid-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img27.jpeg)
+![3D flat pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-pyramid-chart.jpeg)
 
-![Chart Types](Chart-Types_images/Chart-Types_img28.jpeg)
+![3D flat segmented pyramid chart in WindowsForms](chart-types_images/windowsforms-3d-flat-segmented-pyramid-chart.jpeg)
 
 #### Chart Details
 
@@ -1940,7 +1940,7 @@ It is used to display numerical data, either discrete or continuous. Scatter cha
 
 The following image shows a multi series Scatter Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img29.jpeg)
+![Scatter chart in WindowsForms](chart-types_images/windowsforms-scatter-chart.jpeg)
 
 #### Chart Details
 
@@ -2056,7 +2056,7 @@ Though it's called a bubble chart, the data marker can be rendered as either a c
 
 The following image shows a multi series Bubble Chart.
 
-![Chart Types](Chart-Types_images/Chart-Types_img30.jpeg)
+![Bubble chart in WindowsForms](chart-types_images/windowsforms-bubble-chart.jpeg)
 
 #### Chart Details
 
@@ -2140,7 +2140,7 @@ series.ConfigItems.BubbleItem.MinBounds = new RectangleF(0, 0, 10, 10);       se
 
 The following screenshot illustrates changing the min and max bounds from the default value.
 
-![Chart Types](Chart-Types_images/Chart-Types_img48.jpeg)
+![MinBounds and maxbounds in WindowsForms Chart](chart-types_images/windowsforms-chart-minbounds-and-maxbounds.jpeg)
 
 ### Customization Options
 
@@ -2164,7 +2164,7 @@ A Candle chart displays stock information using the **High, Low, Open and Close 
 
 The following image shows a CandleChart displaying a single series.
 
-![Chart Types](Chart-Types_images/Chart-Types_img31.jpeg)
+![Candle chart in WindowsForms](chart-types_images/windowsforms-candle-chart.jpeg)
 
 ### Chart Details
 
@@ -2233,7 +2233,7 @@ HiLo Chart is a special kind of chart that is normally used in stock analysis. T
 
 The Hi Lo Chart expects two y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
-![Chart Types](Chart-Types_images/Chart-Types_img32.jpeg)
+![HiLo chart in WindowsForms](chart-types_images/windowsforms-hilo-chart.jpeg)
 
 #### Chart Details
 
@@ -2292,7 +2292,7 @@ DisplayText, DrawErrorBars, DrawSeriesNameInDepth, ErrorBarsSymbolShape, PhongAl
 
 HiLo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects four y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-![Chart Types](Chart-Types_images/Chart-Types_img33.jpeg)
+![HiLo open close chart in WindowsForms](chart-types_images/windowsforms-hilo-open-close-chart.jpeg)
 
 #### Chart Details
 
@@ -2357,7 +2357,7 @@ Kagi Charts are a Japanese invention and date since the late 1870's, but were po
 
 The penetration of a prior column's high or low, by the latest closing price, alters the colors of the lines. These colors depict either a bullish or bearish pattern. Use the PriceUpColor and PriceDownColor properties to specify the colors for these two patterns. The wider the columns, the stronger the patterns are.
 
-![Chart Types](Chart-Types_images/Chart-Types_img34.jpeg)
+![Kagi chart in WindowsForms](chart-types_images/windowsforms-kagi-chart.jpeg)
 
 #### Chart Details
 
@@ -2454,7 +2454,7 @@ Me.chartControl1.Series.Add (series)
 
 If the ReversalAmount is 0.0 instead of 1.0 which is the default value, then the Kagi chart will look like the below image.
 
-![Chart Types](Chart-Types_images/Chart-Types_img35.jpeg)
+![Kagi chart details in WindowsForms](chart-types_images/windowsforms-kagi-chart-details.jpeg)
 
 ### Customization Options
 
@@ -2470,7 +2470,7 @@ This is a chart that plots the day-to-day increment and decrement in price. It u
 
 This chart requires two y values, the high value and the low value for the specified period.
 
-![Chart Types](Chart-Types_images/Chart-Types_img36.jpeg)
+![Point and figure chart in WindowsForms](chart-types_images/windowsforms-point-and-figure-chart.jpeg)
 
 #### Chart Details
 
@@ -2543,7 +2543,7 @@ If the new closing price penetrates the previous bricks closing price in the opp
 
 Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.
 
-![Chart Types](Chart-Types_images/Chart-Types_img37.jpeg)
+![Renko chart in WindowsForms](chart-types_images/windowsforms-renko-chart.jpeg)
 
 #### Chart Details
 
@@ -2611,7 +2611,7 @@ The three-line break chart looks like a series of rising and falling lines of va
 
 The ReversalAmount specifies the threshold amount by which the price should change to begin rendering a new vertical box in the appropriate direction.
 
-![Chart Types](Chart-Types_images/Chart-Types_img38.jpeg)
+![Three line break chart in WindowsForms](chart-types_images/windowsforms-three-line-break-chart.jpeg)
 
 #### Chart Details
 
@@ -2678,7 +2678,7 @@ In 1977, John Tukey published an efficient method for displaying a five-number d
 
 The following is an example of a Box and Whisker plot.
 
-![Chart Types](Chart-Types_images/Chart-Types_img39.jpeg)
+![Box and whisker chart in WindowsForms](chart-types_images/windowsforms-box-and-whisker-chart.jpeg)
 
 The Box and Whisker plot is interpreted as follows.
 
@@ -2783,7 +2783,7 @@ Summary, Text, TextColor, TextFormat, TextOffset, TextOrientation, Visible.
 
 A Pie Chart renders y values as slices in a pie. These slices are rendered in proportion to the whole, which is simply the sum of all the y values in the series. Consequently, Pie Charts are used to visualize the proportional contribution (in terms of percentage or fraction) of categories of data to the whole data set. The x values in the data series will only be treated as nominal (categorical, qualitative) data. The Pie Chart can display only one Data Series at a time.
 
-![Chart Types](Chart-Types_images/Chart-Types_img41.jpeg)
+![Pie chart in WindowsForms](chart-types_images/windowsforms-pie-chart.jpeg)
 
 #### Chart Details
 
@@ -2862,7 +2862,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.DoughnutCoefficient=0.5f
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Types](Chart-Types_images/Chart-Types_img42.jpeg)
+![Doughnut coefficient in WindowsForms Chart](chart-types_images/windowsforms-chart-doughnut-coefficient.jpeg)
 
 #### HeightCoefficient
 
@@ -2887,7 +2887,7 @@ Me.chartControl1.Series(0).ConfigItems.PieItem.HeightCoefficient=0.1f
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Types](Chart-Types_images/Chart-Types_img43.jpeg)
+![Height coefficient in WindowsForms Chart](chart-types_images/windowsforms-chart-height-coefficient.jpeg)
 
 ### Customization Options
 
@@ -2911,7 +2911,7 @@ It is a form of graph that allows a visual comparison between several quantitati
 
 Polar charts supports plotting the axis values in the reverse direction / clockwise direction also, by setting the Inversed property of axis to _true_.
 
-![Chart Types](Chart-Types_images/Chart-Types_img44.jpeg)
+![polar chart in WindowsForms](chart-types_images/windowsforms-polar-chart.jpeg)
 
 #### Chart Details
 
@@ -2981,7 +2981,7 @@ Some scenarios where this chart type could be used
 * This is also an ideal chart to use when the categories have a natural cyclic order, for example, seasons of the year.
 * Radar charts supports plotting the axis values in the reverse direction / clockwise direction also, by setting the Inversed property of axis to _true_.
 
-![Chart Types](Chart-Types_images/Chart-Types_img45.jpeg)
+![Radar chart in WindowsForms](chart-types_images/windowsforms-radar-chart.jpeg)
 
 #### Chart Details
 
@@ -3056,7 +3056,7 @@ Typically it is a combination of a Line chart and a Column chart, sharing a comm
 
 One can change an existing chart to a combination chart by selecting the data series you want to change and then changing the chart type for that series.
 
-![Chart Types](Chart-Types_images/Chart-Types_img46.jpeg)
+![Combination chart in WindowsForms](chart-types_images/windowsforms-combination-chart.jpeg)
 
 #### Chart Details
 
@@ -3133,7 +3133,7 @@ Border, DisplayShadow, DisplayText, DrawColumnSeparatingLines, ElementBorders, I
 
 A heat map chart is a graphical representation of data where the values taken by a variable in two-dimensional map are represented as colors.
 
-![Chart Types](Chart-Types_images/Chart-Types_img47.jpeg)
+![Heat map charts in WindowsForms](chart-types_images/windowsforms-heat-map-charts.jpeg)
 
 #### Chart Details
 

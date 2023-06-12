@@ -63,7 +63,7 @@ End Sub
 
 {% endtabs %}	
 
-![Chart Histogram](How-to-display-custom-tooltip-over-Histogram-Chart_images/How-to-display-custom-tooltip-over-Histogram-Chart_img1.jpeg)
+![Chart Histogram in WindowsForms application](how-to-display-custom-tooltip-over-histogram-chart_images/windowsforms-histogram-chart.jpeg)
 
 {% seealso %}
 
