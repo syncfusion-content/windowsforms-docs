@@ -19,7 +19,7 @@ Using the [GetValueByPoint](https://help.syncfusion.com/cr/windowsforms/Syncfusi
 
 The below figure shows a chart where the tooltip text for each point shows the corresponding x, y value at that position. 
 
-![Chart Hittest](Hit-Testing_images/Hit-Testing_img1.jpeg)
+![Get value by point in WindowsForm Chart](hit-testing_images/windowsforms-chart-get-value-by-point.jpeg)
 
 Code snippet for the above sample.
 
@@ -119,7 +119,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Hittest](Hit-Testing_images/Hit-Testing_img2.jpeg)
+![Legend item by point in WindowsForms Chart](hit-testing_images/windowsforms-chart-legend-item-by-point.jpeg)
 
 ## Chart Area Bounds
 
@@ -165,7 +165,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Hittest](Hit-Testing_images/Hit-Testing_img3.jpeg)
+![Full chart area bounds in WindowsForms application](hit-testing_images/windowsforms-chart-full-chart-area-bounds.jpeg)
 
 ### Chart Plot Area Bounds
 
@@ -208,4 +208,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-![Chart Hittest](Hit-Testing_images/Hit-Testing_img4.jpeg)
+![Chart plot area bounds in WindowsForms application](hit-testing_images/windowsforms-chart-plot-area-bounds.jpeg)

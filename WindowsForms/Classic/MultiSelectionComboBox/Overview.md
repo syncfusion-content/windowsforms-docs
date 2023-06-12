@@ -29,4 +29,4 @@ The MultiSelectionComboBox is a type of ComboBox Control with multiple item sele
 
 ## Choose between different combobox controls
 
-You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/sfcombobox/overview#choose-between-different-combobox-controls).
+You can refer to the different combobox controls [here](https://help.syncfusion.com/windowsforms/combobox/overview#choose-between-different-combobox-controls).

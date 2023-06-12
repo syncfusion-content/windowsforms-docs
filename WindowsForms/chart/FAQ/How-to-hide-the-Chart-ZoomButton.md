@@ -31,7 +31,7 @@ Me.chartControl1.GetHScrollBar(Me.chartControl1.PrimaryXAxis).ZoomButton.Size = 
 
 {% endtabs %}
 
-![Chart Zoom](How-to-hide-the-Chart-ZoomButton_images/How-to-hide-the-Chart-ZoomButton_img1.jpeg)
+![Chart Zoom in WindowsForms application](how-to-hide-the-chart-zoombutton_images/windowsforms-chart-zoom.jpeg)
 
 This setting will be useful, if you need to display the scrollbar, without ZoomingCancel operation, or if you need to change the back color and other properties, as ZoomButton is derived from the Button control.
 
