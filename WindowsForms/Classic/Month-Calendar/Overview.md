@@ -30,4 +30,4 @@ documentation: ug
 
 ## Choose between different calendar controls
 
-You can refer to the different calendar controls [here](https://help.syncfusion.com/windowsforms/sfcalendar/overview#choose-between-different-calendar-controls).
+You can refer to the different calendar controls [here](https://help.syncfusion.com/windowsforms/calendar/overview#choose-between-different-calendar-controls).

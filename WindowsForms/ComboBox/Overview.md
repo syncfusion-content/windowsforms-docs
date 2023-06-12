@@ -32,7 +32,7 @@ Syncfusion WinForms suite comes up with the following different combobox:
 * [SfComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox)
 * [ComboBoxAdv](https://help.syncfusion.com/windowsforms/classic/combobox/overview )
 * [MultiSelectionComboBox](https://www.syncfusion.com/winforms-ui-controls/combobox/multiselect-combobox)
-* [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview )
+* [ComboBoxAutoComplete](https://help.syncfusion.com/windowsforms/classic/autocomplete/overview)
 * [MultiColumnComboBox](https://www.syncfusion.com/winforms-ui-controls/multicolumn-combobox)
 
 ### SfComboBox
