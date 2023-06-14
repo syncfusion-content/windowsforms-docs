@@ -15,6 +15,6 @@ The `SplashControl` is a control that makes creating a splash screen easy. You j
 
 This is the area over which the splash image is displayed.
 
-![Overview of Syncfusion SplashControl ](Overview_images/Overview_img35.jpeg) 
+![WindowsForms Splash Screen overview ](overview_images/windowsforms-splash-screen-overview.jpeg) 
 
 

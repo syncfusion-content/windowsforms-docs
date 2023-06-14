@@ -27,7 +27,7 @@ The `SplashPanel` control provides full support for the Windows Forms designer.
 
 **Step 1**: Drag-and-drop the SplashPanel control from the toolbox onto the form.
 
-   ![Drag and drop the Splash panel from toolbox](Overview_images/splash_img5.jpeg) 
+   ![Drag and drop the Splash Panel from toolbox in WindowsForms application](overview_images/windowsforms-splash-panel-drag-and-drop.jpeg) 
 
 **Step 2**: Set the properties for the SplashPanel control and also drag and drop any child controls you want to add to the panel. Set the TimerInterval property to specify the period of time, the SplashPanel needs to be visible.
 
@@ -37,7 +37,7 @@ The `SplashPanel` control provides full support for the Windows Forms designer.
 
 **Step 5** You can cancel the SplashPanel by calling the HideSplash() method.
 
-   ![Windows forms splashpanel showing in designer page](Overview_images/splash_img2.jpeg) 
+   ![WindowsForms Splash Panel showing in designer page](overview_images/windowsforms-splash-panel-showing-in-designer-page.jpeg) 
 
 ## Through code
 
@@ -237,4 +237,4 @@ End Sub
 
 **Step 8**: Run the application.
 
-   ![Windows forms splashpanel showing at run time](Overview_images/splash_img3.jpeg) 
+   ![WindowsForms Splash Panel showing at run time](overview_images/windowsforms-splash-panel-showing-at-run-time.jpeg) 

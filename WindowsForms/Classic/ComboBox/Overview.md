@@ -15,7 +15,7 @@ Based on the ComboBoxBase control, the ComboBoxAdv pre-binds a list box in its d
 
 
 
-![Overview of ComboBoxAdv control](Overview_images/Overview_img295.png) 
+![Overview of ComboBox control in WindowsForms](overview_images/windowsforms-conbobox-overview.png) 
 
 
 

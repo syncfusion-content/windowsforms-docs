@@ -76,7 +76,7 @@ Me.checkBoxAdv1.StretchImage = False
 {% endhighlight %}
 {% endtabs %}
 
-![Windows forms CheckBoxAdv images displayed in control when it is in checked](Overview_images/CheckBoxAdv_image.jpeg)
+![WindowsForms CheckBox images displayed in control when it is in checked](overview_images/windowsforms-checkbox-images-displayed-when-checked.jpeg)
 
 ## Images displayed during Mouse Hover
 
@@ -119,5 +119,5 @@ Me.checkBoxAdv1.MouseOverUncheckedImage = (CType(Resources.GetObject("checkBoxAd
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows forms CheckBoxAdv images displayed during Mouse hovered on control](Overview_images/CheckBoxAdv_changeimage.jpeg)
+ ![WindowsForms CheckBox images displayed during Mouse hovered on control](overview_images/windowsforms-checkbox-images-displayed-during-mouse-hover.jpeg)
 

@@ -34,12 +34,12 @@ The **SfDateTimeEdit** is a control that allows you to edit DateTime in the text
 
 Syncfusion WinForms suite comes up with the following different DateTime controls:
 
-* [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview)
+* [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/overview)
 * [DateTimePickerAdv](https://help.syncfusion.com/windowsforms/classic/datetimepicker/overview)
 
 ### SfDateTimeEdit
 
-The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/sfdatetimeedit/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
+The [SfDateTimeEdit](https://help.syncfusion.com/windowsforms/datetimepicker/overview) control allows you to edit date-time in the text or mask format with minimum and maximum values validation, watermark, and globalization support. Provides flexible options to display date-time according to the required format.
 
 ### DateTimePickerAdv
 
@@ -136,7 +136,7 @@ Description
 DateTimeEditingMode
 </td>
 <td>
-Support for free style editing with different {{'[mode](https://help.syncfusion.com/windowsforms/sfdatetimeedit/editing-support)'| markdownify }} (mask and default text edit modes).
+Support for free style editing with different {{'[mode](https://help.syncfusion.com/windowsforms/datetimepicker/editing-support)'| markdownify }} (mask and default text edit modes).
 </td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@ Support for free style editing with different {{'[mode](https://help.syncfusion.
 Date validation
 </td>
 <td>
-Shows error messages on the invalid dates or when date-range constraints are met. To learn more about date validation in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/validation)'| markdownify }}.
+Shows error messages on the invalid dates or when date-range constraints are met. To learn more about date validation in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/datetimepicker/validation)'| markdownify }}.
 </td>
 </tr>
 <tr>
@@ -152,7 +152,7 @@ Shows error messages on the invalid dates or when date-range constraints are met
 Value change by mouse wheel
 </td>
 <td>
-Changes the value by mouse wheel action. To learn more about value changes by mouse wheel in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/sfdatetimeedit/navigation#change-value-by-mouse)'| markdownify }}.
+Changes the value by mouse wheel action. To learn more about value changes by mouse wheel in SfDateTimeEdit, refer to {{'[here](https://help.syncfusion.com/windowsforms/datetimepicker/navigation#change-value-by-mouse)'| markdownify }}.
 </td>
 </tr>
 </table>

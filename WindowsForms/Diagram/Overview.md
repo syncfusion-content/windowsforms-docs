@@ -18,7 +18,7 @@ Essential Diagram is an extensible and high-performance .NET Diagramming Framewo
 Essential Diagram lets users create interactive diagrams easily using the Diagram Builder utility included with the Diagram. It explicitly lays out diagram objects, or allows our built-in layout managers to handle the job, making complex layout diagrams a snap. Using the Symbol Designer utility, you can create domain or business specific symbols by using custom shapes and images.
 
 
-![Wireless Network Flow Diagram](Overview_images/Overview_img1.png)
+![Overview of WindowsForms Diagram](overview_images/windowsforms-diagram-overview.png)
 
 
 
@@ -64,7 +64,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-{{ '![Note](Overview_images/Overview_img2.jpeg)' | markdownify }}
+{{ '![Note in WindowsForms Diagram](overview_images/windowsforms-diagram-note.jpeg)' | markdownify }}
 
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
@@ -76,14 +76,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-{{ '![Tip](Overview_images/Overview_img3.jpeg)' | markdownify }}
+{{ '![Tip in WindowsForms Diagram](overview_images/windowsforms-diagram-tip.jpeg)' | markdownify }}
 
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-{{ '![Additional Information](Overview_images/Overview_img4.jpeg)' | markdownify }}
+{{ '![Additional Information in WindowsForms Diagram](overview_images/windowsforms-diagram-additional-information.jpeg)' | markdownify }}
 
 </td><td>
 Represents additional information on the topic</td></tr>

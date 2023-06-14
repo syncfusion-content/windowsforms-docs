@@ -35,7 +35,7 @@ Syncfusion WinForms suite comes up with following different grid namely,
 
 * [SfDataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid)
 * [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/overview)
-* [GridControl](https://www.syncfusion.com/winforms-ui-controls/excel-like-grid)
+* [GridControl](https://www.syncfusion.com/winforms-ui-controls/grid-control)
 
 ### SfDataGrid
 
@@ -267,6 +267,6 @@ Large amount of data can be loaded in less time by setting {{'[EnableDataVirtual
 
 ## Additional Help Resources
 
-The [`Windows Forms SfDataGrid`](https://www.syncfusion.com/kb/windowsforms/sfdatagrid) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+The [`Windows Forms SfDataGrid`](https://support.syncfusion.com/kb/desktop/section/952) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
 
-Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/windowsforms/sfdatagrid), the [`forum`](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.
+Similar to the [`Knowledge Base`](https://support.syncfusion.com/kb/desktop/section/952), the [`forum`](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers have asked us in the past.

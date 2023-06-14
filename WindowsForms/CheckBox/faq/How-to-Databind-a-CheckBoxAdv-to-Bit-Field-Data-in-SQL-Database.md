@@ -64,6 +64,6 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![CheckBoxAdv binding to Database](FAQ_images/FAQ_img1.png)
+![CheckBox binding to Database in WindowsForms](faq_images/windowsforms-checkbox-binding-to-database.png)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-bind-a-winforms-checkboxadv-to-an-sql-database)

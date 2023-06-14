@@ -349,7 +349,7 @@ This support is used to display additional information such as text or image abo
 
 * **Note**: This event fires only when [ShowToolTip](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.Input.SfCalendar.html#Syncfusion_WinForms_Input_SfCalendar_ShowToolTip) property value is true.
 
-![Tooltip option](cell-customization-images/ToolTip.png)
+![Tooltip option in WindowsForms Calendar](cell-customization-images/windowsforms-calendar-tooltip-option.png)
 
 ## Render cell on-demand
 
@@ -482,4 +482,4 @@ Me.SfCalendar1.DrawCell = (Me.SfCalendar1.DrawCell + SfCalendar1_DrawCell)
 
 {% endtabs %} 
 
-![Cell customization](cell-customization-images/CellCustomization.png)
+![Cell customization in WindowsForms Calendar](cell-customization-images/windowsforms-calendar-cell-customization.png)
