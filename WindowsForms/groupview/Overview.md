@@ -10,7 +10,7 @@ documentation: ug
 
 The [GroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.GroupView.html) control implements a selectable list that can display a collection of items, where each item is represented by an image and a descriptor. It is capable of displaying items with large or small icons in various combinable styles such as the default selectable style, button-type selection, full-item select and an icon-only flow view mode. 
 
-![Overview of Group View in WindowsForms](overview_images/windowsforms-overview-group-view.png)
+![Overview of Group View in WindowsForms](overview_images/windowsforms-group-viewoverview.png)
 
 ## Key features 
 
