@@ -27,17 +27,17 @@ The `GridLayout` control can be added to an application by dragging it from the 
 
 * Syncfusion.Shared.Base.dll
 
-![Drag and drop GridLayout from toolbox](getting-started_images/windowsforms-arange-drag-drop-layout.jpeg)
+![Drag and drop GridLayout from toolbox](getting-started_images/windowsforms-grid-layout-arange-drag-drop-layout.jpeg)
 
 A pop-up will appear automatically to add the form as a container control of the `GridLayout`.
 
-![Alert message to add GridLayout as Container control to form](getting-started_images/windowsforms-alert-message.jpeg)
+![Alert message to add GridLayout as Container control to form](getting-started_images/windowsforms-grid-layout-alert-message.jpeg)
 
 ### Adding layout components through designer
 
 The child controls can be added to the layout by dragging it from the toolbox to designer view.
 
-![Adding child controls in GridLayout](getting-started_images/windowsforms-adding-child-controls.jpeg)
+![Adding child controls in GridLayout](getting-started_images/windowsforms-grid-layout-adding-child-controls.jpeg)
 
 ## Through code
 
@@ -145,5 +145,5 @@ Me.gridLayout1.SetParticipateInLayout(Me.buttonAdv4, true)
 
 {% endtabs %}
 
-![Adding Layout controls in GridLayout](getting-started_images/windowsforms-adding-layout-controls.jpeg)
+![Adding Layout controls in GridLayout](getting-started_images/windowsforms-grid-layout-adding-layout-controls.jpeg)
 
