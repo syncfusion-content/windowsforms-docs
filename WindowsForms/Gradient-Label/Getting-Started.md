@@ -32,7 +32,7 @@ The following steps describe how to create a **GradientLabel** control via desig
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-![Drag and drop GradientLabel from toolbox](GradientLabel-Images/Overview_img600.jpeg) 
+![Drag and drop GradientLabel from toolbox](gradient-label_images/windowsforms-gradient-label-toolbox.jpeg) 
 
 ## Adding the GradientLabel control via code
 
@@ -116,4 +116,4 @@ Me.gradientLabel1.ForeColor = System.Drawing.Color.SeaShell
 
 {% endtabs %}
 
-![Windows Forms GradientLabel shows grdient style](GradientLabel-Images\gradientlabel_style.jpeg)
+![Windows Forms GradientLabel shows grdient style](gradient-label_images/windowsforms-gradient-label-style.jpeg)
