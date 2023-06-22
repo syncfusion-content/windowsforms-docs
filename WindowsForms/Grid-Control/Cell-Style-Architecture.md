@@ -32,7 +32,8 @@ Me.gridControl1(3, 3).BackColor = Color.LightCoral
 Me.gridControl1(4, 4).BackColor = Color.LightPink
 {% endhighlight %}
 
-{% endtabs %} ![BackColor in WinForms Grid](CellStyles_images/CellStyles_img1.png)
+{% endtabs %} 
+![BackColor in WinForms Grid](cell-styles_images/windowsforms-grid-control-backcolor.png)
 
 ### Font
 
@@ -60,7 +61,7 @@ Me.gridControl1(3, 3).Font.Strikeout = True
 
 {% endtabs %}
 
-![Font in WinForms Grid](CellStyles_images/CellStyles_img2.png)
+![Font in WinForms Grid](cell-styles_images/windowsforms-grid-control-font.png)
 
 ### Text and CellValue
 
@@ -81,7 +82,7 @@ obj = "Essential Grid"
 Me.gridControl1(3,2).CellValue = obj
 {% endhighlight %}
 
-{% endtabs %} ![Text and CellValue in WinForms Grid](CellStyles_images/CellStyles_img3.png)
+{% endtabs %} ![Text and CellValue in WinForms Grid](cell-styles_images/windowsforms-grid-control-text-cellvalue.png)
 
 ### ImageList
 
@@ -116,7 +117,7 @@ Me.gridControl1(3, 2).ImageIndex = 1
 
 {% endtabs %}
 
-![ImageList in WinForms Grid](CellStyles_images/CellStyles_img4.png)
+![ImageList in WinForms Grid](cell-styles_images/windowsforms-grid-control-imagelist.png)
 
 ### Interior
 
@@ -135,7 +136,7 @@ gridControl1(3, 2).Interior = New BrushInfo(PatternStyle.DashedHorizontal, Color
 
 {% endtabs %}
 
-![Interior Styles in WinForms Grid](CellStyles_images/CellStyles_img5.png)
+![Interior Styles in WinForms Grid](cell-styles_images/windowsforms-grid-control-interior.png)
 
 ### TextColor
 
@@ -154,7 +155,7 @@ gridControl1(2, 2).TextColor = Color.Red
 
 {% endtabs %}
 
-![TextColor in WinForms Grid](CellStyles_images/CellStyles_img6.png)
+![TextColor in WinForms Grid](cell-styles_images/windowsforms-grid-control-textcolor.png)
 
 ### Borders
 
@@ -172,7 +173,7 @@ gridControl1(2, 2).Borders.All = New GridBorder(GridBorderStyle.Solid, Color.Red
 {% endhighlight %}
 {% endtabs %}
 
-![Borders in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img7.png)
+![Borders in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-borders.png)
 
 ### Orientation
 
@@ -190,7 +191,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 {% endtabs %}
 
-![Orientation in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img8.png)
+![Orientation in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-orientation.png)
 
 ### Format
 
@@ -208,7 +209,7 @@ Me.gridControl1(2, 2).Format = "C"
 
 {% endtabs %}
 
-![Format in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img9.png)
+![Format in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-cell-styles.png)
 
 ### CellTipText
 
@@ -231,7 +232,7 @@ Me.gridControl1(2, 2).CellTipText = "TipText for cell 2,2"
 
 {% endtabs %}
 
-![CellTipText in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img10.png)
+![CellTipText in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-celltiptext.png)
 
 ## BaseStyles
 
@@ -250,11 +251,11 @@ Base styles that used in GridControl are,
 
 To work with `BaseStyles` from within the Visual Studio designer, make use of the Edit base styles verb that appears at the bottom of the GridControl’s property grid.
 
-![BaseStyles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img11.png)
+![BaseStyles in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-basestyles.png)
 
 When `Edit base styles` verb is clicked, then `GridBaseStyleCollectionEditor` dialog box will be displayed. This editor dialog box can be used to edit existing `BaseStyles` or add new ones.
 
-![Edit base styles in BaseStyles Editor](CellStyles_images/CellStyles_img12.png)
+![Edit base styles in BaseStyles Editor](cell-styles_images/windowsforms-grid-control-edit-base.png)
 
 N> It is also possible to add a new BaseStyle or remove an existing BaseStyle using the `GridBaseStyleCollectionEditor` dialog box. 
 
@@ -273,7 +274,7 @@ gridControl1.BaseStylesMap("Standard").StyleInfo.BackColor = Color.Aqua
 
 {% endtabs %}
 
-![Standard BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img13.png)
+![Standard BaseStyle Editor in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-standard-basestyle.png)
 
 ### Header
 
@@ -290,7 +291,7 @@ gridControl1.BaseStylesMap("Header").StyleInfo.TextColor = Color.Red
 
 {% endtabs %}
 
-![Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img14.png)
+![Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-header-basestyle.png)
 
 ### Column Header
 
@@ -306,7 +307,7 @@ gridControl1.BaseStylesMap("Column Header").StyleInfo.TextColor = Color.DarkGree
 
 {% endtabs %}
 
-![Column Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img15.png)
+![Column Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-column-header-basestyle.png)
 
 ### Row Header
 
@@ -322,7 +323,7 @@ gridControl1.BaseStylesMap("Row Header").StyleInfo.TextColor = Color.Orange
 
 {% endtabs %}
 
-![Row Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img16.png)
+![Row Header BaseStyle Editor in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-row-header-basestyle.png)
 
 ### Custom BaseStyles
 
@@ -354,7 +355,7 @@ gridControl1(3, 2).BaseStyle = "BaseStyleTest"
 
 {% endtabs %} 
 
-![Custom BaseStyle Editor in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img17.png)
+![Custom BaseStyle Editor in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-custom-basestyle.png)
 
 ## Assigning Styles in Cells
 
@@ -404,7 +405,8 @@ style.Font.Italic = True
 Me.gridControl1.ChangeCells(GridRangeInfo.Cells(3, 2, 4, 3), style, StyleModifyType.Override)
 {% endhighlight %}
 
-{% endtabs %}![ChangeCells method in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img18.png)
+{% endtabs %}
+![ChangeCells method in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-changecells.png)
 
 ### Table Styles
 
@@ -448,7 +450,8 @@ style.Font.Italic = True
 Me.gridControl1.TableStyle = style
 {% endhighlight %}
 
-{% endtabs %}![Table Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img19.png)
+{% endtabs %}
+![Table Styles in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-table-styles.png)
 
 ### Row Styles
 
@@ -497,7 +500,7 @@ Me.gridControl1.RowStyles(4) = style
 
 {% endtabs %}
 
-![Row Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img20.png)
+![Row Styles in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-row-styles.png)
 
 ### Column Styles
 
@@ -543,7 +546,8 @@ Me.gridControl1.ColStyles(3) = style
 Me.gridControl1.ColStyles(4) = style
 {% endhighlight %}
 
-{% endtabs %}![Column Styles in Cell Style Architecture for WinForms Grid](CellStyles_images/CellStyles_img21.png)
+{% endtabs %}
+![Column Styles in Cell Style Architecture for WinForms Grid](cell-styles_images/windowsforms-grid-control-column-styles.png)
 
 ## Removing styles
 

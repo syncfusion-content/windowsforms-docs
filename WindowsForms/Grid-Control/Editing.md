@@ -513,7 +513,7 @@ Me.gridControl1.ColStyles[2].AutoFitChar = '#’
 {% endhighlight %}
 {% endtabs %}
 
-![Editing_img1](Editing_images/Editing_img1.jpeg)
+![Editing in WindowsForms](editing_images/windowsforms-grid-control-editing.jpeg)
 
 
 ### Applying trimming when cell content exceed its size	
@@ -532,7 +532,7 @@ Me.gridControl1.ColStyles[2].Trimming = StringTrimming.EllipsisWord
 {% endhighlight %}
 {% endtabs %}
 
-![Editing_img2](Editing_images/Editing_img2.jpeg)
+![Trimming in WindowsForms](editing_images/windowsforms-grid-control-trimming.jpeg)
 
 
 N> For applying the trimming functionality, make sure that the `WrapText` property is set to `false`.
