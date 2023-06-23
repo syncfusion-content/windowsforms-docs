@@ -17,4 +17,4 @@ The IntegerTextBox is derived from the Windows Forms Framework TextBox control
 
 You can refer to the different textbox controls [here](https://help.syncfusion.com/windowsforms/numeric-textbox/overview#choose-between-different-textbox-controls).
 
-N> You can refer to our [Winforms Integer Textbox feature tour](https://www.syncfusion.com/winforms-ui-controls/integertextbox) page to know about its other groundbreaking feature representations. You can also explore our [Winforms Integer Textbox example](https://github.com/syncfusion/winforms-demos) to understand how to present and manipulate data.
+N> You can refer to our [Winforms Integer Textbox](https://www.syncfusion.com/winforms-ui-controls/integertextbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [Winforms Integer Textbox example](https://github.com/syncfusion/winforms-demos) that shows you how to render and configure the Integer Textbox in WindowsForms.
