@@ -11,7 +11,7 @@ documentation: ug
 
 HubTile is a content control that functions as live tiles in an application for user interface. Its content updates are shown by a variety of animations, similar to the live tile updates of Windows 8 and Windows Phone. A HubTile can have an image, title, body and footer for updation in the tile.
 
- ![loadimage](Overview_images/Overview_img1.png)
+ ![Load Image in WindowsForms](overview_images/windowsforms-hub-tile-load-image.png)
  
 ## Key features
 

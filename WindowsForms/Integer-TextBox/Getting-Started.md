@@ -29,7 +29,7 @@ Create a new Windows Forms project in Visual Studio to display the IntegerTextBo
 
 The IntegerTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically:
 
-![IntegerTextBox control added by designer](Overview_images/wf-integer-text-box-control-added-designer.png) 
+![Integer Text Box control added by designer in WindowsForms](overview_images/windowsforms-integer-text-box-control-added-designer.png) 
 
 ## Add control manually in code
 
@@ -68,7 +68,7 @@ Me.Controls.Add(integerTextBox1)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![IntegerTextBox control added by code](Overview_images/wf-integer-text-box-control.png) 
+![Integer Text Box control added by code in WindowsForms](overview_images/windowsforms-integer-text-box-control.png) 
 
 ## Maximum and minimum value constraints
 
@@ -102,4 +102,4 @@ Me.integerTextBox1.NumberGroupSizes = New Integer() { 5 }
 {% endhighlight %}
 {% endtabs %}
 
-![IntegerTextBox format](Overview_images/wf-integer-text-box-control-format.png) 
+![Integer Text Box format in WindowsForms](overview_images/windowsforms-integer-text-box-control-format.png) 
