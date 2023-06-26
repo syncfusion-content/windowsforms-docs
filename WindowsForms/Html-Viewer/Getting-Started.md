@@ -39,15 +39,15 @@ The HTMLUIControl can be added to the application by dragging it from the toolbo
    * Syncfusion.Scripting.Base.dll
    * Syncfusion.Shared.Base
 
-![Search html ui control in toolbox](Getting-Started_images/GettingStarted-img1.png)
+![Search WindowsForms HTML UI control in toolbox in WindowsForms](getting-started_images/windowsforms-html-viewer-search-html-ui-control-toolbox.png)
 
-![Drag an drop the html ui control in application](Getting-Started_images/GettingStarted-img5.png)
+![Drag an drop the WindowsForms HTML UI  control in WindowsForms application](getting-started_images/windowsforms-adding-html-viewer-control-through-designer.png)
 
 **Configure Title**
 
 Title text can be set using `Title` property. The visibility of the title can be customized using `ShowTitle` property.
 
-![Setting tile for html ui control](Getting-Started_images/GettingStarted-img4.png)
+![Setting tile for WindowsForms HTMLUI control](getting-started_images/windowsforms-html-viewer-setting-tile.png)
 
 ## Adding control manually using code
 
@@ -109,7 +109,7 @@ Me.Controls.Add(Me.htmluiControl1)
 
 {% endtabs %}
 
-![HTMLUIControl added using code](Getting-Started_images/GettingStarted-img2.png)
+![WindowsForms HTMLUI Control added using code](getting-started_images/windowsforms-html-viewer-adding-code.png)
 
 **Configure Title**
 
@@ -134,7 +134,7 @@ Me.htmluiControl1.Title = "StartUp Document"
 
 {% endtabs %}
 
-![Setting title for HTMLUIControl](Getting-Started_images/GettingStarted-img6.png)
+![Setting title for WindowsForms HTMLUI Control](getting-started_images/windowsforms-html-viewer-setting-title.png)
 
 
 ## Loading a file into document
@@ -158,4 +158,4 @@ Me.htmluiControl1.LoadHTML(Path.GetDirectoryName(Application.ExecutablePath) + @
 
 {% endtabs %}
 
-![HTMLUI control loads the given input file](Getting-Started_images/GettingStarted-img3.png)
+![WindowsForms HTMLUI control loads the given input file](getting-started_images/windowsforms-html-viewer-loading-html.png)
