@@ -26,15 +26,15 @@ The following steps describe how to create the **MaskedEditBox** control via des
 
     * Syncfusion.Shared.Base
 
-![Drag and drop MaskedEditBox from toolbox](MaskedEditBox-images/WF-maskededitbox-toolbox.png)
+![Drag and drop Masked Edit Box from toolbox in WindowsForms](masked-edit-box-images/windowsforms-masked-edit-box-toolbox.png)
 
 3. Set the symbols in the [Mask](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Mask) property for the control. This property controls the behavior of control at run time.
 
-![Mask format of Windows Forms MaskedEditBox](MaskedEditBox-images/MarkedEditBox_mask.png)
+![Mask format of WindowsForms MaskedEditBox](masked-edit-box-images/windowsforms-masked-edit-box_mask.png)
 
 If no mask is specified, the control will behave the same as a standard Windows Forms TextBox control.
 
-![Windows Forms MaskedEditBox showing default textbox](MaskedEditBox-images/MarkedEditBox_edittextbox.png)
+![WindowsForms MaskedEditBox showing default textbox](masked-edit-box-images/windowsforms-masked-edit-box_edit-text-box.png)
 
 ## Adding the MaskedEditBox control via code
 
@@ -147,5 +147,5 @@ Me.maskedEditBox1.Location = New System.Drawing.Point(70, 29);
 
 {% endtabs %}
 
-![Windows Forms MaskedEditBox showing string format of mask](MaskedEditBox-images/MarkedEditBox-img4.png)
+![WindowsForms MaskedEditBox showing string format of mask](masked-edit-box-images/windowsforms-masked-edit-box-string-format.png)
 

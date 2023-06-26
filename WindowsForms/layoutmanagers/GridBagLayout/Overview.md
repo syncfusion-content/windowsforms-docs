@@ -11,7 +11,7 @@ documentation: ug
 
 `GridBagLayout` is a layout manager. It allows you arrange the child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns/rows varies, and the child controls may span to more than one cell.
 
-![GridBagLayout for Windows forms allows to arrange child controls in row and columns like grid](Overview_images/Overview_img1.jpeg)
+![GridBagLayout for Windows forms allows to arrange child controls in row and columns like grid](overview_images/windowsforms-grid-bag-layout-arange-child-controls.jpeg)
 
 `GridBagLayout` is also used to layout the following controls:
 

@@ -29,17 +29,17 @@ The following required assembly reference will be added automatically.
 
 * Syncfusion.Shared.Base.dll
 
-![Drag and drop GridBagLayout from toolbox](GettingStarted_images/GettingStarted_img1.jpeg)
+![Drag and drop GridBagLayout from toolbox in WindowsForms](getting-started_images/windowsforms-grid-bag-layout-drag-drop.jpeg)
 
 A pop-up will appear automatically to add the form as a container control of the `GridBagLayout`.
 
-![Alert to add GridBagLayout as container control to form](GettingStarted_images/GettingStarted_img4.jpeg)
+![Alert to add GridBagLayout as container control to form in WindowsForms](getting-started_images/windowsforms-grid-bag-layout-alert-container.jpeg)
 
 ### Adding Layout components through designer
 
 The child controls can be added to the layout by dragging it from the toolbox to designer view.
 
-![Adding child controls to GridBagLayout](GettingStarted_images/GettingStarted_img2.jpeg)
+![Adding child controls to GridBagLayout in WindowsForms](getting-started_images/windowsforms-grid-bag-layout-adding-child.jpeg)
 
 ## Through code
 
@@ -131,5 +131,5 @@ Me.Controls.Add(this.buttonAdv3)
 
 {% endtabs %}
 
-![Adding child controls to GridBagLayout](GettingStarted_images/GettingStarted_img3.jpeg)
+![Adding Layout controls to GridBagLayout in WindowsForms](getting-started_images/windowsforms-grid-bag-layout-adding-layout.jpeg)
 

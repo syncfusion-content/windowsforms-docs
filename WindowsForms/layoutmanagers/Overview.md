@@ -32,7 +32,7 @@ This Layout Manager will layout Child controls in the form of a grid containing 
 
 This Layout Manager will layout the Child controls in a virtual grid of rows and columns. But, unlike the GridLayout, the size of the columns / rows can be varied and the children may span more than one cell.
 
-![Layout manager components for Windows Forms](Overview_images/Overview_img1.jpeg)
+![Layout manager components for Windows Forms](overview_images/windowsforms-layout-manager.jpeg)
 
 ## Container control
 

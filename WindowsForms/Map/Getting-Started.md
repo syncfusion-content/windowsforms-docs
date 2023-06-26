@@ -25,14 +25,14 @@ Maps are visualized through layers. A map can accommodate one or more layers. Sh
 
 Options such as zooming, panning, and map selection enable the effective interaction on map elements.
 
-![Windows Forms Maps Options](Getting-Started_images/Getting-Started_img1.png)
+![WindowsForms Maps Options](getting-started_images/windowsforms-map-options.png)
 
 ## Maps structure
 
 Map control has the following structures:
 
 
-![Windows Foms Maps Structure](Getting-Started_images/Getting-Started_img2.png)
+![WindowsForms Maps Structure](getting-started_images/windowsforms-map-structure.png)
 
 
 
@@ -86,7 +86,7 @@ Example :  ShapeFilename.shp
 
 Shape file added should set the properties as specified in the below image.
 
-![Windows Forms Maps Uri Property](Getting-Started_images/ShapeFile.png)
+![WindowsForms Maps Uri Property](getting-started_images/windowsforms-map-shape-file.png)
 
 The following code snippet explains adding shape files in maps control.
 
@@ -153,7 +153,7 @@ In the above snippet “world1” is a shapefile name.
 
 Screenshot:
 
-![Windows Forms Maps Adding Shape Files](Getting-Started_images/Getting-Started_img3.png)
+![WindowsForms Maps Adding Shape Files](getting-started_images/windowsforms-map-adding.png)
 
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Winforms-map-getting-started).
