@@ -86,7 +86,7 @@ Me.gridControl1(3,2).CellValue = obj
 
 ### ImageList
 
-[ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageList) property holds [Systems.Windows.Forms.ImageList](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.imagelist?view=net-5.0). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property and can set on cell-by-cell basis.
+[ImageList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageList) property holds [Systems.Windows.Forms.ImageList](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.imagelist?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0). Generally the whole grid will store the ImageList in the parent `GridStyleInfo`. The images can be retrieved by using [ImageIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_ImageIndex) property and can set on cell-by-cell basis.
 
 {% tabs %}
 {% highlight c# %}
@@ -195,7 +195,7 @@ gridControl1(2, 2).Font.Orientation = 180
 
 ### Format
 
-The formats of a cell value can be changed by using [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Format) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types)
+The formats of a cell value can be changed by using [Format](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Format) property. For more details on the different types of formatting types, please check the MSDN link over [here.](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types)
 {% tabs %}
 {% highlight c# %}
 gridControl1[2, 2].CellValue = 31456;
