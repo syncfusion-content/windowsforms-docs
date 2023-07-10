@@ -29,9 +29,9 @@ Create new Windows Forms Project in Visual Studio to display [AutoComplete](http
 
 [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
 
-![Windows forms AutoComplete drag and drop from toolbox](GettingStarted_images/AutoComplete_Toolbox.png)
+![Windows forms AutoComplete drag and drop from toolbox](GettingStarted_images/windowsforms-autocomplete-toolbox.png)
 
-![Windows forms AutoComplete and Textbox with component tray](GettingStarted_images/AutoComplete_Inform.png)
+![Windows forms AutoComplete and Textbox with component tray](GettingStarted_images/windowsforms-autocomplete-adding-control-via-designer.png)
 
 ### Adding control in code
 
@@ -45,7 +45,7 @@ Create new Windows Forms Project in Visual Studio to display [AutoComplete](http
     * Syncfusion.Tools.Base
     * Syncfusion.Tools.Windows
 
-2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoComplete.html) and TextBox controls.
+2. Add the required namespace and create an instance for [AutoComplete](https://help.syncfusion.com/cr/windowsforms/windowsforms-autocomplete-adding-control-via-code.html) and TextBox controls.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -83,7 +83,7 @@ End Sub
 
 Set the **AutoComplete on autoComplete1** property as AutoSuggest using the drop-down provided in the TextBox properties dialog window. The Default value is `Disabled`.
 
-![Windows forms AutoComplete toolbox customization](GettingStarted_images/Autocomplete_Propertywindow.png)
+![Windows forms AutoComplete toolbox customization](GettingStarted_images/windowsforms-autocomplete-toolbox-customization.png)
 
 ### Enabling via Code
 
@@ -172,4 +172,4 @@ End Sub
 
 {% endtabs %}
 
-![Windows forms AutoComplete with binding data source](GettingStarted_images/AutoComplete_datasourceform.png)
+![Windows forms AutoComplete with binding data source](GettingStarted_images/windowsforms-autocomplete-creating-datasource.png)

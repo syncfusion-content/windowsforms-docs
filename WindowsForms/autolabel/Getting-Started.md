@@ -30,7 +30,7 @@ Create new Windows Forms Project in Visual Studio to display [AutoLabel](https:/
 
     * Syncfusion.Shared.Base
 
-  ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/Overview_img5.jpg) 
+  ![Drag and drop AutoLabel from toolbox.](AutoLabel-Images/windowsforms-autolabel-add-control-via-designer.jpg) 
 
 3. Set the desired properties for the [AutoLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.AutoLabel.html) control using the **Properties** dialog.
 
@@ -129,7 +129,7 @@ Me.autoLabel1.LabeledControl = Me.textBoxExt1
 {% endcapture %}
 {{ codesnippet3 | OrderList_Indent_Level_1 }}
 
-![Windows Forms AutoLabel showing add the labeled control](AutoLabel-Images/AutoLabel_addcontrol.jpg)
+![Windows Forms AutoLabel showing add the labeled control](AutoLabel-Images/windowsforms-autolabel-labeling-a-control.jpg)
 
 
 ## Spacing
@@ -173,7 +173,7 @@ Me.autoLabel1.Gap = 10
 {% endhighlight %}
 {% endtabs %}
 
- ![Windows Forms AutoLabel showing space between the contols](AutoLabel-Images/AutoLabel_spacing.jpg) 
+ ![Windows Forms AutoLabel showing space between the contols](AutoLabel-Images/windowsforms-autolabel-spacing.jpg) 
 
 
 ## Position
@@ -207,7 +207,7 @@ Me.autoLabel1.Position = Syncfusion.Windows.Forms.Tools.AutoLabelPosition.Side
 {% endhighlight %}
 {% endtabs %}
 
-![Windows Forms AutoLabel showing control position](AutoLabel-Images/AutoLabel_position.jpg)
+![Windows Forms AutoLabel showing control position](AutoLabel-Images/windowsforms-autolabel-position.jpg)
 
 ## Size
 
@@ -262,6 +262,6 @@ SkinManager.SetVisualStyle(Me.autoLabel1, VisualTheme.Office2016Colorful)
 
 {% endtabs %}
 
-![Windows Forms AutoLabel showing applied theme](AutoLabel-Images/AutoLabel_themecolor.jpg)
+![Windows Forms AutoLabel showing applied theme](AutoLabel-Images/windowsforms-autolabel-theme-color.jpg)
 
 N> This control supports only Office2016Colorful, Office2016Black, Office2016DarkGray, and Office2016White styles using SkinManager.

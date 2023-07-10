@@ -11,7 +11,7 @@ documentation: ug
 
 The **Carousel** control is a circular conveyor in which the objects are displayed and rotated. It provides 3-D interface for displaying objects with interactive navigation.
 
-![Overview of Carousel](Getting-Started_images/Carousel_overview.gif)
+![Overview of Carousel](Getting-Started_images/windowsforms-carousel-overview.gif)
 
 ## Key features
 

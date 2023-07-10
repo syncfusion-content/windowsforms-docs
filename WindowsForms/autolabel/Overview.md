@@ -12,7 +12,7 @@ documentation: ug
 
 The **AutoLabel** control is a Label-inspired control that lets you pair a label with any other control. Once paired, the AutoLabel is automatically repositioned as the labeled control's position changes.
 
-![Overview of AutoLabel](AutoLabel-Images/overview.jpg)
+![Overview of AutoLabel](AutoLabel-Images/windowsforms-autolabel-overview.jpg)
 
 
 

@@ -27,15 +27,15 @@ Create new Windows Forms Project in Visual Studio to display [ButtonEdit](https:
 
 **Step 1**: Create a new Windows Forms application in Visual Studio. Drag and drop the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) from toolbox in Form designer window. The [dependent assemblies](https://help.syncfusion.com/windowsforms/control-dependencies#buttonedit) will be added automatically.
 
-![ButtonEdit control from toolbox](GettingStarted_images/GettingStarted_img1.png) 
+![ButtonEdit control from toolbox](GettingStarted_images/windowsforms-buttonedit-add-control-via-designer.png) 
 
 **Step 2**: Set the desired properties for [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) control using the **"Properties"** dialog window. 
 
-![Showing properties pane customizing ButtonEdit control](GettingStarted_images/GettingStarted_img4.png)
+![Showing properties pane customizing ButtonEdit control](GettingStarted_images/windowsforms-buttonedit-customizing-the-control.png)
 
 **Step 3**: You can add the child buttons for the [ButtonEdit](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ButtonEdit.html) using **ButtonEditChildButton Collection Editor"** dialog box.
 
-![Showing Button child buttons collection editor](GettingStarted_images/GettingStarted_img5.png)
+![Showing Button child buttons collection editor](GettingStarted_images/windowsforms-buttonedit-child-buttons-editor.png)
 
 ### Adding ButtonEdit control through Code
 
@@ -99,7 +99,7 @@ End Sub
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![ButtonEdit added by code](GettingStarted_images/GettingStarted_img2.png)
+![ButtonEdit added by code](GettingStarted_images/windowsforms-buttonedit-add-control-via-code.png)
 
 ## Embed the TextBox and ChildButtons in ButtonEdit control
 
@@ -188,4 +188,4 @@ End Sub
 
 {% endtabs %}
 
-![ButtonEdit with Text and child buttons](GettingStarted_images/GettingStarted_img3.png)
+![ButtonEdit with Text and child buttons](GettingStarted_images/windowsforms-buttonedit-textbox-and-child-buttons.png)

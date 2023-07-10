@@ -28,7 +28,7 @@ Create new Windows Forms Project in Visual Studio to display SfBarcode.
 
 ### Adding control via Designer
 SfBarcode control can be added to the application by dragging it from Toolbox and dropping it in Designer. The required assembly references will be added automatically.
-![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_img1](Getting-Started_images/windowsforms-barcode-add-control-via-designer.png)
 
 ### Adding control in Code
 In order to add control manually, do the below steps,
