@@ -13,7 +13,7 @@ This section describes about background, foreground and visual style settings.
 
 ## Background settings
 
-You can set the background color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using the [BackColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.backcolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BackColor) property.
+You can set the background color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using the [BackColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.backcolor?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_BackColor) property.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ Me.textBoxExt1.BackColor = System.Drawing.Color.Moccasin
 
 ## Foreground settings
 
-You can set the foreground color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ForeColor) property.
+You can set the foreground color of the [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.forecolor?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_ForeColor) property.
 
 {% tabs %}
 

@@ -375,7 +375,7 @@ End Sub
 
 This event is fired on changing the configuration of the EditControl. The configuration can be set by using the [ApplyConfiguration](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ApplyConfiguration_Syncfusion_Windows_Forms_Edit_Enums_KnownLanguages_) function.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -420,7 +420,7 @@ This section explains the following collapse events.
 
 This event is raised when the [CollapseAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_CollapseAll) function is called.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -742,7 +742,7 @@ These events are discussed in the Context Prompt topic.
 
 This event is raised when the current cursor position is changed.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -779,7 +779,7 @@ This section discusses the expand events as follows.
 
 This event is raised when the [ExpandAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ExpandAll) function is called.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1170,7 +1170,7 @@ End Sub
 
 This event occurs when the current parser language is changed.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1665,7 +1665,7 @@ This event is discussed in the Printing topic.
 
 This event occurs when the [ReadOnly](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ReadOnly) property is changed. The ReadOnly property specifies whether the EditControl is in the read-only mode or not.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1946,7 +1946,7 @@ End Sub
 
 This event is raised when the text selection has been changed.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -1979,7 +1979,7 @@ End Sub
 
 This event is fired when the value of the [SingleLineMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_SingleLineMode) property is changed. The `SingleLineMode` property specifies whether the single line mode is enabled or not.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -2039,7 +2039,7 @@ This section discusses the following text events:
 
 This event is fired when the text in the EditControl is changed.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 
@@ -2504,7 +2504,7 @@ End Sub
 
 This event is fired when the value of the [WordWrapMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_WordWrapMode) property is changed. The WordWrapMode property specifies the mode of word wrapping.
 
-The event handler receives an argument of type [EventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
+The event handler receives an argument of type [EventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.eventargs?view=net-5.0).
 
 {% tabs %}
 

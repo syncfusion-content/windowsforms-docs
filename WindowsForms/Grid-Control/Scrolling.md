@@ -278,7 +278,7 @@ Me.gridControl1.ScrollFrozen = True
 {% endtabs %}
 
 ### Scroll Current Cell into View when its Activated
-The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowScrollCurrentCellInView) property to desired [GridScrollCurrentCellReason](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
+The current cell can be scrolled to the view when it is activated by setting the [AllowScrollCurrentCellInView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowScrollCurrentCellInView) property to desired [GridScrollCurrentCellReason](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridScrollCurrentCellReason.html) enumeration.
 {% tabs %}
 {% highlight c# %}
 //Get the current cell scroll into the view when its activated
@@ -586,7 +586,7 @@ End Sub
 {% endtabs %}
 
 ## Custom Scrollbar
-For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
+For customizing the appearance of the Scrollbars, need to add the [ScrollersFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) control into the grid. It can be drag and drop to the application from the Toolbox window.
 {% tabs %}
 {% highlight c# %}
 //Attach the scroll Frame to the Grid control
@@ -599,7 +599,7 @@ Me.scrollersFrame1.AttachedTo = Me.gridControl1
 {% endtabs %}
 ![Windows forms grid displays applied custom appearance to scrollbar](Scrolling_images/Scrolling_img10.jpeg)
 
-The [ScrollersFrame](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
+The [ScrollersFrame](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollersFrame.html) can be applied with the different visual styles as of follows,
 
 * Office2007
 * Office2010
