@@ -9,7 +9,7 @@ documentation: ug
 
 # Render Mode to customize appearance of ContextMenuStrip
 
-Render mode is used to customize the appearance of the ContextMenu either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems needs to use. The [`RenderMode`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property is used to provides different painting styles like:
+Render mode is used to customize the appearance of the ContextMenu either through predefined or custom standards. It also refers to what kind of visual style the ToolStripItems needs to use. The [`RenderMode`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.rendermode?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_RenderMode) property is used to provides different painting styles like:
 
 * Professional
 * System
@@ -82,7 +82,7 @@ Me.contextMenuStripEx1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Man
 
 ## Custom
 
-The RenderMode property cannot be directly set to **Custom** enumeration. To use a custom ToolStripRenderer, set the [`Renderer`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer) property directly instead. Here we have set the [`Renderer`]((https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer)) property to Office12ToolStripRenderer or Office2016ToolStripRenderer class object, which is used to change the appearance of the ContextMenuStripEx control.
+The RenderMode property cannot be directly set to **Custom** enumeration. To use a custom ToolStripRenderer, set the [`Renderer`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer) property directly instead. Here we have set the [`Renderer`]((https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.renderer?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_Renderer)) property to Office12ToolStripRenderer or Office2016ToolStripRenderer class object, which is used to change the appearance of the ContextMenuStripEx control.
 
 In the form load event, add one of the below code to change the appearance.
 
@@ -122,5 +122,5 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 
 ## See also
 
-[How to add an icon in a header of WinForms ContextMenuStripEx using CustomRenderer class](https://www.syncfusion.com/kb/11927)
+[How to add an icon in a header of WinForms ContextMenuStripEx using CustomRenderer class](https://support.syncfusion.com/kb/article/10354/how-to-add-an-icon-in-a-header-of-winforms-contextmenustripex)
 
