@@ -12,7 +12,7 @@ The selection is the process of highlighting. This section will explain about th
 
 ## Range Selection
 
-The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowSelection) property to the appropriate [GridSelectionFlags](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html#) enumeration. 
+The particular range of cells/rows/columns/table in the grid can be selected by setting the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_AllowSelection) property to the appropriate [GridSelectionFlags](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridSelectionFlags.html) enumeration. 
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ Me.gridControl1.AllowSelection = GridSelectionFlags.Any
 
 ## Record Selection
 
-The [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ListBoxSelectionMode) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.selectionmode?view=net-5.0) enumeration has provide the options to set the type of selection mode. 
+The [ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_ListBoxSelectionMode) is used to select the range of rows on clicking the cells inside the grid. The [SelectionMode](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.selectionmode?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) enumeration has provide the options to set the type of selection mode. 
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ Me.gridControl1.Selections.Add(GridRangeInfo.Cells(2, 2, 5, 4))
 
 ### Adding Multiple Selected Ranges
 
-To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html#) collection. 
+To have the multiple selected ranges in the GirdControl, add the list of ranges into the [GridRangeInfoList](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRangeInfoList.html) collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -327,7 +327,7 @@ The selected values are printed in the output screen as of follows,
 
 ## Cell Text Selection
 
-The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html#)**,** it will selects all the text in the cell when the cell is activated.
+The current cell activation behavior is controlled by the grid’s [ActivateCurrentCellBehavior](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_ActivateCurrentCellBehavior) property. When the property is set to [SelectAll](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridCellActivateAction.html)**,** it will selects all the text in the cell when the cell is activated.
 
 {% tabs %}
 {% highlight c# %}
