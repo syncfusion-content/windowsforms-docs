@@ -107,7 +107,7 @@ Me.tabControlAdv1.KeepSelectedTabInFrontRow = True
 
 ## RTL support
 
-[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) allows the TabItems to be drawn from right to left. This can be done by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to Yes.
+[TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html) allows the TabItems to be drawn from right to left. This can be done by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) property to Yes.
 
 This property aligns the tabs and the text from right to left which proves to be helpful for the Right-To-Left languages.
 
@@ -117,7 +117,7 @@ This property aligns the tabs and the text from right to left which proves to be
 
 The [RotateTabsWhenRTL](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_RotateTabsWhenRTL) property can be used to rotate the tabs which are aligned to the left and right of the [TabPages](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_TabPages). This specifies whether a tab should be drawn from left to right or from right to left. The default value is `false`.
 
-When the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) mode is activated and [RotateTabsWhenRTL](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_RotateTabsWhenRTL) property is enabled, tab rotation is allowed.
+When the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_RightToLeft) mode is activated and [RotateTabsWhenRTL](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_RotateTabsWhenRTL) property is enabled, tab rotation is allowed.
 
 ![Rotating tabs](RTL-Support_images/RTL-Support_img2.jpeg)
 

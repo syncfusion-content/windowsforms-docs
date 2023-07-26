@@ -482,13 +482,13 @@ diagram.Model.AppendChild(link)
 
 #### Creating a PaletteGroupBar Control through Designer
 
-This section depicts the step-by-step procedure to create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) control through the designer:
+To create a [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) control through the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html#) from Toolbox and drop it to the Designer Form window.
+3. Drag [PaletteGroupBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupBar.html) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -581,13 +581,13 @@ Me.Controls.Add(paletteBar)
 
 #### Creating a PaletteGroupView Control through Designer
 
-This section depicts the step-by-step procedure to create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) control using the designer:
+To create a [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html#) from Toolbox and drop it to the Designer Form window.
+3. Drag [PaletteGroupView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PaletteGroupView.html) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -675,13 +675,13 @@ Me.Controls.Add(paletteView)
 
 #### Creating an Overview Control through Designer
 
-This section depicts the step-by-step procedure to create an [Overview control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create an [Overview control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html) through the Visual Studio designer in a .NET Windows Forms application.
 
 To create an Overview control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [OverviewControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html#) from Toolbox and drop it to the Designer Form window.
+3. Drag [OverviewControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.OverviewControl.html) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -759,13 +759,13 @@ Me.Controls.Add(overviewControl)
 
 #### Creating a PropertyEditor Control through Designer
 
-This section depicts the step-by-step procedure to create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) control using code:
+To create a [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) control using code:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html#) from Toolbox and drop it to the Designer Form window.
+3. Drag [PropertyEditor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.PropertyEditor.html) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -845,13 +845,13 @@ Me.Controls.Add(propertyEditor)
 
 #### Creating a DocumentExplorer Control through Designer
 
-This section depicts the step-by-step procedure to create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) control through the Visual Studio designer in a .NET Windows Forms application.
+This section depicts the step-by-step procedure to create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) control through the Visual Studio designer in a .NET Windows Forms application.
 
-To create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) control using the designer:
+To create a [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) control using the designer:
 
 1. Create a new Windows Forms application.
 2. Open the Designer Form window.
-3. Drag [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html#) from Toolbox and drop it to the Designer Form window.
+3. Drag [DocumentExplorer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Controls.DocumentExplorer.html) from Toolbox and drop it to the Designer Form window.
 
 
 
@@ -959,7 +959,7 @@ Document Explorer allows you to visualize the details of the various objects tha
 
 5. Diagram Document
 
-The [DiagramDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramDocument.html#) is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
+The [DiagramDocument](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DiagramDocument.html) is a serializable document type that encapsulates the model and view data for the diagram. The grid area of the diagram document is the diagram view object area. The nodes dragged from the PaletteGroupBar will be dropped here.
 
 For more details, see Diagram Grid topic.
 
@@ -1099,9 +1099,9 @@ if (diagram1 != null && diagram1.Model != null)
 
 3. Header and Footers
 
-   The [Header](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Header.html#) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Footer.html#) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
+   The [Header](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Header.html) and [Footer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.Footer.html) dialog provides an interactive form-based interface for initializing the Header and Footer settings of a diagram. 
 
-   The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html#). 
+   The following code snippet can be used for creating the [Header and Footer dialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.HeaderFooterDialog.html). 
 
 
 
@@ -1761,7 +1761,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.LineConnectorTool)
 
 #### Orthogonal Connector Tool
 
-Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by providing its start point and end point. It creates the Orthogonal Line Shape node. The name of the Orthogonal Connector Tool is [OrthogonalLinkTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrthogonalLinkTool.html#). The below table lists the properties of the tool.
+Orthogonal Connector Tool is used to connect nodes in an orthogonal manner by providing its start point and end point. It creates the Orthogonal Line Shape node. The name of the Orthogonal Connector Tool is [OrthogonalLinkTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.OrthogonalLinkTool.html). The below table lists the properties of the tool.
 
 
 
@@ -1810,7 +1810,7 @@ if (t is Syncfusion.Windows.Forms.Diagram.OrthogonalConnectorTool)
 
 #### DirectedLineConnector Tool
 
-DirectedLineConnector Tool is used to connect the nodes in a directed line. It creates the directed line shape node. The name of the [DirectedLineConnectorTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool.html#) is [DirectedLineLinkTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DirectedLineLinkTool.html#). The below table lists the properties of the tool.
+DirectedLineConnector Tool is used to connect the nodes in a directed line. It creates the directed line shape node. The name of the [DirectedLineConnectorTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DirectedLineConnectorTool.html) is [DirectedLineLinkTool](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Diagram.DirectedLineLinkTool.html). The below table lists the properties of the tool.
 
 
 <table>
