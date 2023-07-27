@@ -15,3 +15,4 @@ The DoubleTextBox is derived from Windows Forms Framework text box control. The 
 
 ![Overview of DoubleTextBox](DoubleTextBox-images/DoubleTextBox_img1.png)
 
+N> You can refer to our [Winforms Double Textbox](https://www.syncfusion.com/winforms-ui-controls/doubletextbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [Winforms Double Textbox example](https://github.com/syncfusion/winforms-demos) that shows you how to render and configure the Double Textbox in WindowsForms.
