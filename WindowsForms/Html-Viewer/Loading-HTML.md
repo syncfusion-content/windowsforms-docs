@@ -444,11 +444,11 @@ Me.HtmluiControl1.LoadHTML(htmlStream)
 
 It is necessary to invoke the System.IO and System.Reflection namespaces to use the classes and their methods used in the code above.
 
-The [GetExecutingAssembly](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=netframework-4.7.2) method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
+The [GetExecutingAssembly](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getexecutingassembly?view=netframework-4.7.2) method gets the assembly from which the code is currently running from and the GetManifestResourceStream method of the same class loads the specified manifest resource from the assembly.
 
 The System.IO.Stream is used to provide a generic view of sequence of bytes when the IO in the assembly is referred.
 
-N> The string entered inside the [GetManifestResourceStream](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getmanifestresourcestream?view=netframework-4.7.2) method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
+N> The string entered inside the [GetManifestResourceStream](https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assembly.getmanifestresourcestream?view=netframework-4.7.2) method is in reference to the Default namespace found in the Properties window of the C# file in the Solution Explorer. This may vary for the users.
 
 The following image shows file loaded from an embedded resource.
 
