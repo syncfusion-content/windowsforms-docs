@@ -9,13 +9,13 @@ documentation: ug
 ---
 # Undo Redo in Windows Forms Grid Control
 
-GridControl gives support for Undo/Redo functionality. GridControl keeps a track on all the operations undergone, in a particular class [GridModelCommandManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#). The Undo/Redo operations can be done by using commands, methods and keyboard shortcuts. 
+GridControl gives support for Undo/Redo functionality. GridControl keeps a track on all the operations undergone, in a particular class [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#). The Undo/Redo operations can be done by using commands, methods and keyboard shortcuts. 
 
 ## Basic Commands
 
-GridControl has [GridModelCommandManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#) class that implements support for the Undo/Redo commands in a grid. If an operation in a GridControl is done then the changes made will get tracked and stored in stack structures which will be stored in this class.
+GridControl has [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#) class that implements support for the Undo/Redo commands in a grid. If an operation in a GridControl is done then the changes made will get tracked and stored in stack structures which will be stored in this class.
 
-GridControl has a property [CommandStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CommandStack) which will return a reference to [GridModelCommandManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#). Undo/Redo operations can be enabled/disabled through this property.
+GridControl has a property [CommandStack](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CommandStack) which will return a reference to [GridModelCommandManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommandManager.html#). Undo/Redo operations can be enabled/disabled through this property.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Me.gridControl1.CommandStack.Rollback()
 
 ## Custom Commands
 
-Undo/Redo methods can be handled manually and not the standard implementation used in Undo/Redo architecture, by using the derived custom commands from the [GridModelCommand](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommand.html#) abstract class. In the derived class, add necessary members to track the Undo/Redo actions.
+Undo/Redo methods can be handled manually and not the standard implementation used in Undo/Redo architecture, by using the derived custom commands from the [GridModelCommand](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCommand.html#) abstract class. In the derived class, add necessary members to track the Undo/Redo actions.
 
 {% tabs %}
 {% highlight c# %}
