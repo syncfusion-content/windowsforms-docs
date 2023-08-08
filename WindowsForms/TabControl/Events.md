@@ -119,7 +119,7 @@ End Sub
 
 ## BackgroundImageChanged event
 
-This [BackgroundImageChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagechanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImage` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [BackgroundImageChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagechanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImage` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ End Sub
 
 ## BackgroundImageLayoutChanged event
 
-This [BackgroundImageLayoutChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayoutchanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImageLayout` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [BackgroundImageLayoutChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimagelayoutchanged?view=netframework-4.7.2) event is fired when the value of the `BackgroundImageLayout` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ End Sub
 
 ## BackColorChanged event
 
-This [BackColorChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?view=netframework-4.7.2) event is fired when the value of the `BackColor` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [BackColorChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?view=netframework-4.7.2) event is fired when the value of the `BackColor` property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -248,11 +248,11 @@ End Sub
 
 ## ControlAdded event
 
-This [ControlAdded](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controladded?view=netframework-4.7.2) event occurs when a new control is added to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [ControlAdded](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controladded?view=netframework-4.7.2) event occurs when a new control is added to the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
+This Event Handler receives an argument of type [ControlEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
 
 
 <table>
@@ -307,11 +307,11 @@ End Sub
 
 ## ControlRemoved event
 
-This [ControlRemoved](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controlremoved?view=netframework-4.7.2) event occurs when a new control is removed from this [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [ControlRemoved](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.controlremoved?view=netframework-4.7.2) event occurs when a new control is removed from this [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
+This Event Handler receives an argument of type [ControlEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) containing data related to this event. The following [ControlEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.controleventargs?view=netframework-4.7.2) property provides information specific to this event.
 
 <table>
 <tr>
@@ -441,7 +441,7 @@ End Sub
 
 ## ForeColorChanged event
 
-This [ForeColorChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolorchanged?view=netframework-4.7.2) event is raised when the value of the [ForeColor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property is changed on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [ForeColorChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolorchanged?view=netframework-4.7.2) event is raised when the value of the [ForeColor](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.forecolor?view=netframework-4.7.2) property is changed on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -608,7 +608,7 @@ End Sub
 
 ## PaddingChanged event
 
-This [PaddingChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paddingchanged?view=netframework-4.7.2) event occurs when the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Padding) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [PaddingChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paddingchanged?view=netframework-4.7.2) event occurs when the [Padding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Padding) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -645,11 +645,11 @@ End Sub
 
 ## Paint event
 
-This [Paint](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paint?view=netframework-4.7.2) event occurs when a TabControlAdv needs re-painting.
+This [Paint](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.paint?view=netframework-4.7.2) event occurs when a TabControlAdv needs re-painting.
 
 ### Event data
 
-This Event Handler receives an argument of type [PaintEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2) containing data related to this event. The [PaintEventArgs property](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2#properties) provides information specific to this event.
+This Event Handler receives an argument of type [PaintEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2) containing data related to this event. The [PaintEventArgs property](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.painteventargs?view=netframework-4.7.2#properties) provides information specific to this event.
 
 {% tabs %}
 
@@ -693,11 +693,11 @@ End Sub
 
 ## PreviewKeyDown event
 
-This [PreviewKeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.previewkeydown?view=netframework-4.7.2) event occurs before the [KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=netframework-4.7.2) event when a key is pressed, while focus is on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [PreviewKeyDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.previewkeydown?view=netframework-4.7.2) event occurs before the [KeyDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=netframework-4.7.2) event when a key is pressed, while focus is on the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 ### Event data
 
-This Event Handler receives an argument of type [PreviewKeyDownEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2) containing data related to this event. The following [PreviewKeyDownEventArgs properties](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2#properties) provide information specific to this event.
+This Event Handler receives an argument of type [PreviewKeyDownEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2) containing data related to this event. The following [PreviewKeyDownEventArgs properties](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.previewkeydowneventargs?view=netframework-4.7.2#properties) provide information specific to this event.
 
 {% tabs %}
 
@@ -741,7 +741,7 @@ End Sub
 
 ## RegionChanged event
 
-This [RegionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.regionchanged?view=netframework-4.7.2) event is raised when the value of the [Region](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.region?view=netframework-4.7.2#System_Windows_Forms_Control_Region) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
+This [RegionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.regionchanged?view=netframework-4.7.2) event is raised when the value of the [Region](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.region?view=netframework-4.7.2#System_Windows_Forms_Control_Region) property is changed in the [TabControlAdv](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html).
 
 {% tabs %}
 
@@ -1000,7 +1000,7 @@ N> The [TabControlAdv.OnTabsOrderChanged](https://help.syncfusion.com/cr/windows
 
 ## TextChanged event
 
-This [TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.textchanged?view=netframework-4.7.2) event occurs when the value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Text) property is changed.
+This [TextChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.textchanged?view=netframework-4.7.2) event occurs when the value of the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabControlAdv.html#Syncfusion_Windows_Forms_Tools_TabControlAdv_Text) property is changed.
 
 {% tabs %}
 
@@ -1082,7 +1082,7 @@ End Sub
 
 ## Closing event
 
-The [Closing](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.closing?view=netframework-4.7.2) event is raised when a Tab page is closed.
+The [Closing](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.closing?view=netframework-4.7.2) event is raised when a Tab page is closed.
 
 {% tabs %}
 
