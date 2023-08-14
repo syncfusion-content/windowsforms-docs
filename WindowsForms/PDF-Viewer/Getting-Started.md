@@ -169,7 +169,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% tabs %}
 {% highlight c# %}
 
-//Initializing the PdfViewerControl
+//Initializing the PdfDocumentView
 PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
 
 //Loading the document in the PdfDocumentView
@@ -180,7 +180,7 @@ Controls.Add(pdfDocumentView1);
 {% endhighlight %}
 {% highlight vb %}
 
-'Initializing the PdfViewerControl
+'Initializing the PdfDocumentView
 Dim pdfDocumentView1 As PdfDocumentView = New PdfDocumentView()
 
 'Loading the document in the PdfDocumentView
