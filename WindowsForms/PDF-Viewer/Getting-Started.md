@@ -79,7 +79,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-2. Create PdfViewerControl instance and load the PDF
+2. Create PdfViewerControl instance and load the PDF.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -129,13 +129,13 @@ The [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Win
 {% tabs %}
 {% highlight c# %}
 
-//Loading the document in the PdfViewerControl
+//Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf");
 
 {% endhighlight %}
 {% highlight vb %}
 
-'Loading the document in the PdfViewerControl
+'Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf")
 
 {% endhighlight %}
@@ -163,7 +163,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-2. Create PdfDocumentView instance and load the PDF
+2. Create PdfDocumentView instance and load the PDF.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -172,9 +172,9 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 //Initializing the PdfViewerControl
 PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
 
-//Loading the document in the PdfViewerControl
+//Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf");
-//Add PdfViewerControl to the Form
+//Add PdfDocumentView to the Form
 Controls.Add(pdfDocumentView1);
 
 {% endhighlight %}
@@ -183,9 +183,9 @@ Controls.Add(pdfDocumentView1);
 'Initializing the PdfViewerControl
 Dim pdfDocumentView1 As PdfDocumentView = New PdfDocumentView()
 
-'Loading the document in the PdfViewerControl
+'Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf")
-'Add PdfViewerControl to the Form
+'Add PdfDocumentView to the Form
 Controls.Add(pdfDocumentView1)
 
 {% endhighlight %}
