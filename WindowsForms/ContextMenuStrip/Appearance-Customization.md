@@ -11,7 +11,7 @@ documentation: ug
 
 ## Background Color
 
-The [`BackColor`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_BackColor) property is to set the background color of ContextMenuStrip control. Background color is used to improve the visual appearance of the ContextMenu.
+The [`BackColor`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.backcolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_BackColor) property is to set the background color of ContextMenuStrip control. Background color is used to improve the visual appearance of the ContextMenu.
 
 
 The below code snippet will explain how to set background color of ContextMenuStrip control.
@@ -34,7 +34,7 @@ Me.contextMenuStripEx.BackColor = System.Drawing.Color.SkyBlue
 
 ## Font
 
-The [`Font`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_Font) property is to set the "FontFamily" and "FontStyle" of ContextMenuStrip control.
+The [`Font`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.font?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_Font) property is to set the "FontFamily" and "FontStyle" of ContextMenuStrip control.
 
 
 The below code snippet will explain the procedure to set font for menu items.
@@ -57,7 +57,7 @@ Me.contextMenuStripEx.Font = New System.Drawing.Font("Courier New", 9F, System.D
 
 ## Foreground Color
 
-The [`ForeColor`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ForeColor) property is to set foreground color for menu items. 
+The [`ForeColor`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstrip.forecolor?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStrip_ForeColor) property is to set foreground color for menu items. 
 
 {% tabs %}
 {% highlight c# %}
@@ -77,10 +77,10 @@ Me.contextMenuStripEx.ForeColor = System.Drawing.Color.Red
 
 ## Size
 
-The [`Size`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.size?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Size) property is to set the height and width of context menu items.
+The [`Size`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.size?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Size) property is to set the height and width of context menu items.
 
 >**NOTE**:
-In-order to set size for context menu, set [`AutoSize`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.autosize?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_AutoSize) property to false.
+In-order to set size for context menu, set [`AutoSize`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.toolstripdropdown.autosize?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_ToolStripDropDown_AutoSize) property to false.
 
 
 The below code snippet is to set the size of context menu.
@@ -105,7 +105,7 @@ Me.contextMenuStripEx.Size = New System.Drawing.Size(200, 250)
 
 ## Text
 
-The [`Text`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Text) property is used to set the caption of ContextMenuStripEx control.
+The [`Text`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_Text) property is used to set the caption of ContextMenuStripEx control.
 
 
 The below code snippet will explain how to set text for ContextMenu.
@@ -128,7 +128,7 @@ Me.contextMenuStripEx.Text = "Context Menu"
 
 ## Background Image
 
-The [`BackgroundImage`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage) property is to set the background image of ContextMenuStripEx control.
+The [`BackgroundImage`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backgroundimage?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_Control_BackgroundImage) property is to set the background image of ContextMenuStripEx control.
 
 
 The below code snippet is to set the background image of ContextMenu.
