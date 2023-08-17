@@ -65,10 +65,10 @@ background-color:transparent!important;
 <table id="table">
 <tbody>
 <colgroup>
-<col style="width: 200px">
-<col style="width: 260px">
-<col style="width: 220px">
-<col style="width: 220px">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
   <tr>
     <th id="title">GRIDS</th>
