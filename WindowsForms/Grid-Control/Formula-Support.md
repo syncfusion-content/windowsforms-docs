@@ -191,11 +191,11 @@ E1+E2, Cos(2)<A4, or Abs(A1-A5).
 </table>
 
 ## Architecture
-Formula Cell control is implemented with four classes. [GridFormulaCellModel](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaCellModel.html), [GridFormulaCellRenderer](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaCellRenderer.html), [GridFormulaEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) and [GridFormulaTag](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaTag.html).
+Formula Cell control is implemented with four classes. [GridFormulaCellModel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaCellModel.html), [GridFormulaCellRenderer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaCellRenderer.html), [GridFormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) and [GridFormulaTag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaTag.html).
 `GridFormulaCellModel` class does some significant work in its[GetFormattedText](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaCellModel.html#Syncfusion_Windows_Forms_Grid_GridFormulaCellModel_GetFormattedText_Syncfusion_Windows_Forms_Grid_GridStyleInfo_System_Object_System_Int32_) method override where calculations and formula parsing are initiated dynamically.
 `GridFormulaCellRenderer` class handles a couple of activation methods that are specific for displaying formulas when a formula cell is activated.
 `GridFormulaEngine` class does the actual parsing and calculation that is required to evaluate a formula in a cell. This class also maintains Formula Library.
-`GridFormulaTag` class is used in conjunction with[GridStyleInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) class that has a property of this type. `GridFormulaTag` tracks computed value of the cell in its Text property.
+`GridFormulaTag` class is used in conjunction with[GridStyleInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html) class that has a property of this type. `GridFormulaTag` tracks computed value of the cell in its Text property.
 
 ## Supported Functions
 This section explains the list of library functions that are shipped in the `GridFormulaEngine`.
@@ -455,7 +455,7 @@ BASE(Number, Radix [Min_length])
 * **Min_length** is the minimum length of the returned string. Min_length is optional.
 
 ### BESSELI
-The BESSELI function calculates the [modified Bessel functions](http://en.wikipedia.org/wiki/Bessel_function). These functions are the equivalent of the [Bessel functions](http://en.wikipedia.org/wiki/Bessel_function), evaluated for purely imaginary arguments.
+The BESSELI function calculates the [modified Bessel functions](https://en.wikipedia.org/wiki/Bessel_function). These functions are the equivalent of the [Bessel functions](https://en.wikipedia.org/wiki/Bessel_function), evaluated for purely imaginary arguments.
 
 #### Syntax
 BESSELI(a,n)
@@ -469,7 +469,7 @@ BESSELI(a,n)
 `#NUM!` - occurs if n < 0
 
 ### BESSELJ
-The `BESSELJ` function calculates the [Bessel function](http://en.wikipedia.org/wiki/Bessel_function), Jn(x), for a specified order and a given value of x.
+The `BESSELJ` function calculates the [Bessel function](https://en.wikipedia.org/wiki/Bessel_function), Jn(x), for a specified order and a given value of x.
 
 #### Syntax
 BESSELJ(a,n)
@@ -736,7 +736,7 @@ CHIINV(probability, degrees_freedom)
 * **degrees_freedom** is the number of degrees of freedom.
 
 ### CHISQ.DIST
-The `CHISQ.DIST` function calculates the Probability Density Function or the Cumulative Distribution Function for the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `CHISQ.DIST` function calculates the Probability Density Function or the Cumulative Distribution Function for the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-squared_distribution).
 
 #### Syntax
 CHISQ.DIST(x,degFreedom,cumulative)
@@ -751,7 +751,7 @@ CHISQ.DIST(x,degFreedom,cumulative)
 `#NUM!`- occurs if x is negative and if f degFreedom &lt; 1 or degFreedom &gt; 10^10.
 
 ### CHISQ.DIST.RT
-The `CHISQ.DIST.RT` function calculates the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `CHISQ.DIST.RT` function calculates the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-squared_distribution).
 
 #### Syntax
 CHISQ.DIST.RT(x,degFreedom)
@@ -780,7 +780,7 @@ CHISQ.INV(probability,degFreedom)
 `#VALUE!` - occurs if probability or degFreedom is non-numeric.
 
 ### CHISQ.INV.RT
-The `CHISQ.INV.RT` function calculates the inverse of the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
+The `CHISQ.INV.RT` function calculates the inverse of the right-tailed probability of the [chi-square distribution](https://en.wikipedia.org/wiki/Chi-squared_distribution).
 
 #### Syntax
 CHISQ.INV.RT(probability, degFreedom)
@@ -913,7 +913,7 @@ CONFIDENCE(alpha, standard_deviation, size)
 * **size** is the sample size.
 
 ### CONFIDENCE.NORM
-The `CONFIDENCE.NORM` function uses a [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability and sample size.
+The `CONFIDENCE.NORM` function uses a [Normal Distribution](https://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability and sample size.
 
 #### Syntax
 CONFIDENCE.NORM(alpha,standard_deviation,size)
@@ -1314,7 +1314,7 @@ DEGREES(angle)
 * **angle** is the angle in radians that you want to convert.
 
 ### DELTA
-The `DELTA` function tests two numbers for equality and returns the [Kronecker Delta](http://en.wikipedia.org/wiki/Kronecker_delta). Returns 1 if a =b; returns 0 otherwise.
+The `DELTA` function tests two numbers for equality and returns the [Kronecker Delta](https://en.wikipedia.org/wiki/Kronecker_delta). Returns 1 if a =b; returns 0 otherwise.
 
 #### Syntax
 DELTA(num1,num2)
@@ -4796,7 +4796,7 @@ End Function
 {% endtabs %}
 Here `MyLibraryFormulaName` must be a name that has not already been used in Function Library and must include only letters and digits. Write the required implementation in this method.
 
-The below code is used to implement a function that will sum only positive numbers that are passed in as either a range like `A1:A5` or a list such as `A1`, `A4`, `A10`. The code uses the [FormulaEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) helper method to extract these values from the cells. 
+The below code is used to implement a function that will sum only positive numbers that are passed in as either a range like `A1:A5` or a list such as `A1`, `A4`, `A10`. The code uses the [FormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) helper method to extract these values from the cells. 
 
 The [GetCellsFromArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_GetCellsFromArgs_System_String_) method will return an array of cells from a range such as `A1:A5`, and [GetValueFromArg](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_GetValueFromArg_System_String_) method will take cells such as `A3` and return a value.
 
@@ -4989,7 +4989,7 @@ New functions can be added after clearing all the functions from the function li
 ## Cross Sheet Reference
 A formula cell can be defined with values from another grid by using cross sheet references. In this case, multiple grids can either be in worksheet format or multiple grids can be laid out in a form. This section explains on how to apply cross reference support between two grids.
 
-Initially, register both the grids by using the static[RegisterGridAsSheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_RegisterGridAsSheet_System_String_Syncfusion_Windows_Forms_Grid_GridModel_System_Int32_) method. This method can be seen in the[GridFormulaEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) class. Registering both the grids can be referenced in a formula from each other.
+Initially, register both the grids by using the static[RegisterGridAsSheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_RegisterGridAsSheet_System_String_Syncfusion_Windows_Forms_Grid_GridModel_System_Int32_) method. This method can be seen in the[GridFormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) class. Registering both the grids can be referenced in a formula from each other.
 
 {% tabs %}
 {% highlight c# %}
@@ -5087,7 +5087,7 @@ Me.gridControl2(5, 3).Text = "=" & Me.gridControl1.Text & "!C3 + C4"
 ## Named Ranges
 GridControl supports named ranges along with Grid Formula Engine. Named ranges let the users to set up names for expressions or ranges, and then use these names in formulas. For example, if the name of the range, `B4:B12` is `Expenses`, then the formula `=Sum(Expenses)` can be used instead of `=Sum(B4:B12)`.
 
-For adding the custom name for a particular range, [AddNamedRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_AddNamedRange_System_String_System_String_) property under the [GridFormulaEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) has to be used. 
+For adding the custom name for a particular range, [AddNamedRange](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html#Syncfusion_Windows_Forms_Grid_GridFormulaEngine_AddNamedRange_System_String_System_String_) property under the [GridFormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridFormulaEngine.html) has to be used. 
 
 {% tabs %}
 {% highlight c# %}

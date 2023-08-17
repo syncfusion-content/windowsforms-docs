@@ -11,7 +11,7 @@ documentation: ug
 The columns and rows of the grid can be exported to the Excel, PDF and word documents. This section will explain about the properties, methods and events available for exporting the GridControl.
 
 ## Excel Export
-The GridControl has in-built support to export the contents of the GridControl to Excel. The class [GridExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support for exporting the GridControl to Excel. 
+The GridControl has in-built support to export the contents of the GridControl to Excel. The class [GridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support for exporting the GridControl to Excel. 
 
 The following assembly files should be added to the application reference folder,
 
@@ -20,7 +20,7 @@ The following assembly files should be added to the application reference folder
 
 N> **Syncfusion.XlsIO.Base** libraries are used to support conversion of the grid contents to Excel. 
 
-The [GridToExcel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_GridToExcel_Syncfusion_Windows_Forms_Grid_GridControl_Syncfusion_XlsIO_IWorksheet_) method is used to export the grid to an excel sheet. The exported file behavior can be set by specifying the [ConverterOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) to this method (i.e., it will include or exclude the column and row headers). 
+The [GridToExcel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html#Syncfusion_GridExcelConverter_GridExcelConverterControl_GridToExcel_Syncfusion_Windows_Forms_Grid_GridControl_Syncfusion_XlsIO_IWorksheet_) method is used to export the grid to an excel sheet. The exported file behavior can be set by specifying the [ConverterOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) to this method (i.e., it will include or exclude the column and row headers). 
 
 The following example shows the GridControl is exported to the Excel sheet,
 
@@ -40,7 +40,7 @@ excelConverter.GridToExcel(Me.gridControl1.Model, "Sample.xlsx")
 ### Exporting Options
 There are several options available for customizing the exporting. 
 
-The [ConverterOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) is used to set the conditions for exporting the grid. It has the following enumerations, 
+The [ConverterOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.ConverterOptions.html) is used to set the conditions for exporting the grid. It has the following enumerations, 
 
 * **ColumnHeaders** – Export the grid with the column headers
 * **RowHeaders** – Export the grid with the Row Headers
@@ -48,7 +48,7 @@ The [ConverterOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Gri
 * **Visible** – To Export only the visible columns to the Excel. i.e. the hidden columns will be skipped.
 
 ### Exporting with Row and Column Headers
-By default, [GridExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
+By default, [GridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) exports all elements in the grid. The following code example illustrates how to include both row and column headers during the export.
 {% tabs %}
 {% highlight c# %}
 //Converter to export the contents of the Grid to Excel.
@@ -388,7 +388,7 @@ The following example shows the row back color is changed to pink color in Excel
 ![Exporting_img10](Exporting_images/Exporting_img10.jpeg)
 
 ## PDF Exporting
-To Export the contents of the grid to PDF file, use the [GridPDFConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To have this class, refer the `Syncfusion.PDF.Base.dll` and `GridHelperClasses.Windows.dll` to the application. The[ExportToPDF](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdf_Syncfusion_Pdf_PdfDocument_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of this converter is used to export the content of grid to the PDF. 
+To Export the contents of the grid to PDF file, use the [GridPDFConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html) class. To have this class, refer the `Syncfusion.PDF.Base.dll` and `GridHelperClasses.Windows.dll` to the application. The[ExportToPDF](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPDFConverter.html#Syncfusion_GridHelperClasses_GridPDFConverter_ExportToPdf_Syncfusion_Pdf_PdfDocument_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of this converter is used to export the content of grid to the PDF. 
 {% tabs %}
 {% highlight c# %}
 
@@ -657,7 +657,7 @@ N>
 N> &lt;Installation Location&gt;\Syncfusion\EssentialStudio\&lt;Product Version&gt;\Windows\Grid.Windows\Samples\Exporting\Exporting Demo
 
 ## Word Exporting
-To export the contents of the grid to word, use the [GridToWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverter.html#Syncfusion_GridHelperClasses_GridWordConverter_GridToWord_System_String_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of the [GridWordConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverter.html) class which is derived from [GridWordConverterBase](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverterBase.html). This method does the conversion of grid content in a tabular format to the word file.
+To export the contents of the grid to word, use the [GridToWord](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverter.html#Syncfusion_GridHelperClasses_GridWordConverter_GridToWord_System_String_Syncfusion_Windows_Forms_Grid_GridControlBase_) method of the [GridWordConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverter.html) class which is derived from [GridWordConverterBase](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridWordConverterBase.html). This method does the conversion of grid content in a tabular format to the word file.
 {% tabs %}
 {% highlight c# %}
 //Create Converter to export the contents of Grid to Excel.
@@ -713,7 +713,7 @@ void converter_DrawHeader(Object sender, DocHeaderFooterEventArgs e)
 ![Exporting_img13](Exporting_images/Exporting_img13.jpg)
  
 ## CSV Exporting
-The [GridCSVConverter](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html) lets you export the GridControl content to `CSV` format by using [GridToCSV](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_GridToCSV_Syncfusion_Windows_Forms_Grid_GridControlBase_System_String_) method. In this technique, the content only will be exported without any styles.
+The [GridCSVConverter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html) lets you export the GridControl content to `CSV` format by using [GridToCSV](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCSVConverter.html#Syncfusion_GridHelperClasses_GridCSVConverter_GridToCSV_Syncfusion_Windows_Forms_Grid_GridControlBase_System_String_) method. In this technique, the content only will be exported without any styles.
 
 A delimiter is used for separating the columns when exporting. The columns will be separated based on `,` character. The delimiter can be set using [ExportTabDelim](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelTextDataExchange.html#Syncfusion_Windows_Forms_Grid_GridModelTextDataExchange_ExportTabDelim) property.
 
@@ -780,7 +780,7 @@ csvConverter.SelectedExport(Me.gridControl1.Model, "Sample.csv")
 {% endtabs %}
 
 ## HTML Exporting
-The GridControl don’t have built-in support for HTML exporting. The HTML exporting can be done by structuring the [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-5.0) and form the HTML Tag coding. 
+The GridControl don’t have built-in support for HTML exporting. The HTML exporting can be done by structuring the [StringBuilder](https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-5.0) and form the HTML Tag coding. 
 
 The following steps are used to convert the GridControl content to HTML Tags,
 
