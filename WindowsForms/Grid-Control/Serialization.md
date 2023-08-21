@@ -9,15 +9,15 @@ documentation: ug
 
 # Serialization in Windows Forms Grid Control
 
-GridControl provide the support for [serialization](https://docs.microsoft.com/en-us/previous-versions/ms233843(v=vs.140)) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://docs.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
+GridControl provide the support for [serialization](https://learn.microsoft.com/en-us/previous-versions/ms233843(v=vs.140)) and load the serialized grid’s schema information. Serialization is the process of saving the state of an object as a stream of bytes. The reverse of this process is called [de-serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-deserialize-an-object).
 
 GridControl has the different types of serialization techniques as follows,
 
-[SOAP](https://docs.microsoft.com/en-us/dotnet/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream) - Helps convert the grid schema information to SOAP format.
+[SOAP](https://learn.microsoft.com/en-us/dotnet/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream) - Helps convert the grid schema information to SOAP format.
 
-[Binary](https://docs.microsoft.com/en-us/dotnet/standard/serialization/binary-serialization) - Helps convert the grid schema information to binary format.
+[Binary](https://learn.microsoft.com/en-us/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization) - Helps convert the grid schema information to binary format.
 
-[XML](https://docs.microsoft.com/en-us/previous-versions/ms172873(v=vs.140)) - Helps convert the grid schema information to XML format.
+[XML](https://learn.microsoft.com/en-us/previous-versions/ms172873(v=vs.140)) - Helps convert the grid schema information to XML format.
 
 ## Binary 
 
@@ -99,7 +99,7 @@ Me.gridControl1.Refresh()
 
 ### Saving Grid Data using XML Serialization 
 
-The grid data (schema) can alone serialize without the style information (Look and Feel) by using the [XmlSerializer](https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=net-5.0) method. 
+The grid data (schema) can alone serialize without the style information (Look and Feel) by using the [XmlSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=net-5.0) method. 
 
 {% tabs %} 
 {% highlight c# %}

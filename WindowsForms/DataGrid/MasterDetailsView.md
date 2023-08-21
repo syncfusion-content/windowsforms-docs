@@ -15,7 +15,7 @@ The SfDataGrid provides support to represent the hierarchical data in the form o
 
 ## Generating Master-Details view from IEnumerable
 
-The relation of Master-Details view can be generated for the properties of type [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) in the underlying data object.
+The relation of Master-Details view can be generated for the properties of type [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) in the underlying data object.
 
 Follow the steps to generate the Master-Details view for `IEnumerable`:
 
@@ -26,7 +26,7 @@ Follow the steps to generate the Master-Details view for `IEnumerable`:
 
 ### Create the data source with relations
 
-Create a `OrderInfo` class with `OrderDetails` property of type [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) to form the relation. The `OrderDetails` property is defined as ObservableCollection<OrderDetails>.
+Create a `OrderInfo` class with `OrderDetails` property of type [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) to form the relation. The `OrderDetails` property is defined as ObservableCollection<OrderDetails>.
 
 {% tabs %}
 {% highlight c# %}
@@ -2269,7 +2269,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Parent_ChildResizing-459909318).
+You can get the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Parent_ChildResizing-459909318).
 
 N> To display the parent and DetailsViewDataGrid in the same line, set the DetailsViewPadding as Zero for top, bottom, right sides and the expander column width as left, because we have started rendering the grid inside the Expander column itself.
 
@@ -2878,6 +2878,6 @@ Limitations are:
 
 ## See also
 
-[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11052)
+[How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid-sfdatagrid)
 
-[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/10221)
+[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
