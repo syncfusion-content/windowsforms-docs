@@ -111,7 +111,7 @@ Controls.Add(pdfViewerControl1)
 
 ## Adding PdfDocumentView to an Application
 
-The [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) control allows you to view the PDF files without toolbar. Other features are similar to PdfViewerControl.
+The [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) control allows you to view PDF files without a toolbar. Other features are similar to the PdfViewerControl.
 
 ### Adding in designer
 
@@ -163,7 +163,7 @@ Imports Syncfusion.Windows.Forms.PdfViewer
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-2. Create PdfDocumentView instance and load the PDF.
+2. Create a PdfDocumentView instance and load the PDF.
 
 {% capture codesnippet3 %}
 {% tabs %}
@@ -174,7 +174,7 @@ PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
 
 //Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf");
-//Add PdfDocumentView to the Form
+//Add the PdfDocumentView to the Form
 Controls.Add(pdfDocumentView1);
 
 {% endhighlight %}
@@ -185,7 +185,7 @@ Dim pdfDocumentView1 As PdfDocumentView = New PdfDocumentView()
 
 'Loading the document in the PdfDocumentView
 pdfDocumentView1.Load("Sample.pdf")
-'Add PdfDocumentView to the Form
+'Add the PdfDocumentView to the Form
 Controls.Add(pdfDocumentView1)
 
 {% endhighlight %}

@@ -9,8 +9,7 @@ documentation: ug
 
 # Load PDF without Toolbar
 
-In order to view PDF without the toolbar, make use of [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) control instead of PdfViewerControl as described in the [section](https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started#adding-pdfdocumentview-to-an-application). Other features are similar to PdfViewerControl.
-
+In order to view the PDF without the toolbar, make use of the [PdfDocumentView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PdfViewer.PdfDocumentView.html) control instead of the PdfViewerControl as described in the [section](https://help.syncfusion.com/windowsforms/pdf-viewer/getting-started#adding-pdfdocumentview-to-an-application). Other features are similar to the PdfViewerControl.
 
 {% tabs %}
 {%highlight c#%}
