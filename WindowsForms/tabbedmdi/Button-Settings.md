@@ -35,7 +35,7 @@ Me.tabbedMDIManager.DropDownButtonVisible = True
 
 {% endtabs %}
 
-The visual drop-down styles can be set by handling the [BeforeDropDownPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html) event using the below code snippet.
+The visual drop-down styles can be set by handling the [BeforeDropDownPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TabbedMDIManager.html#Syncfusion_Windows_Forms_Tools_TabbedMDIManager_BeforeDropDownPopup) event using the below code snippet.
 
 {% tabs %}
 
