@@ -831,7 +831,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.DarkSlateGray
 
 #### Conditional Styling
 
-SfDataGrid allows to customize the appearance of the check box column based on conditions through [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+SfDataGrid allows to customize the appearance of the check box column based on conditions through [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryCheckBoxCellStyle) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -864,7 +864,7 @@ End Sub
 
 ### Canceling the check box state change
 
-Changing the check box state can be canceled by setting the [CellCheckBoxClickEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellCheckBoxClickEventArgs.html) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+Changing the check box state can be canceled by setting the [CellCheckBoxClickEventArgs.Cancel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellCheckBoxClickEventArgs.html) to true in the [SfDataGrid.CellCheckBoxClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellCheckBoxClick) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -903,7 +903,7 @@ TryCast(Me.sfDataGrid.Columns("ShipCity"), GridComboBoxColumn).DataSource = orde
 {% endhighlight %}
 {% endtabs %}
 
-The SfDataGrid triggers the [CellComboBoxSelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event when the `SelectedValue` is changed. The [CellComboBoxSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html) of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
+The SfDataGrid triggers the [CellComboBoxSelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CellComboBoxSelectionChanged) event when the `SelectedValue` is changed. The [CellComboBoxSelectionChangedEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html) of CellComboBoxSelectionChanged event provides the information of the changed cell value. Properties to get the selected item and index are as follows:
 
 *	[SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_CellComboBoxSelectionChangedEventArgs_SelectedIndex) : Returns the index of selected item.
 *	[SelectedItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.CellComboBoxSelectionChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_CellComboBoxSelectionChangedEventArgs_SelectedItem)	: Returns the selected item from drop-down list.
@@ -1262,7 +1262,7 @@ Me.sfDataGrid1.Style.HyperlinkStyle.HoveredLinkColor = Color.Red
 
 ### Canceling the Navigation
 
-Navigation to the hyperlinks can be canceled within the [HyperlinkOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event by setting the `CellHyperlinkOpeningEventArgs.Cancel` to true.
+Navigation to the hyperlinks can be canceled within the [HyperlinkOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HyperlinkOpening) event by setting the `CellHyperlinkOpeningEventArgs.Cancel` to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1285,11 +1285,11 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-[HyperlinkOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs after the hyperlink is opened. It does not occur if the `HyperlinkOpening` event is canceled.
+[HyperlinkOpened](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HyperlinkOpened) event occurs after the hyperlink is opened. It does not occur if the `HyperlinkOpening` event is canceled.
 
 ### Changing the Browser to Open the Hyperlink
 
-By default, [GridHyperlinkColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) opens the hyperlink in system default browser. This can be changed by handling the [HyperlinkOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+By default, [GridHyperlinkColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridHyperlinkColumn.html) opens the hyperlink in system default browser. This can be changed by handling the [HyperlinkOpening](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_HyperlinkOpening) event.
 
 The below code shows how to open the hyperlink in Internet Explorer.
 
@@ -1420,7 +1420,7 @@ The `TextImageRelation` property will not work if [ImageLayout](https://help.syn
 
 ### Appearance
 
-SfDataGrid allows to customize the appearance of the image column based on conditions through [QueryImageCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+SfDataGrid allows to customize the appearance of the image column based on conditions through [QueryImageCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryImageCellStyle) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -1790,7 +1790,7 @@ Me.sfDataGrid.Style.ProgressBarStyle.FitImageToProgressBar = true
 
 ### Conditional styling
 
-SfDataGrid allows to customize the appearance of the ProgressBar column based on conditions using the [QueryProgressBarCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+SfDataGrid allows to customize the appearance of the ProgressBar column based on conditions using the [QueryProgressBarCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryProgressBarCellStyle) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -2084,7 +2084,7 @@ Me.sfDataGrid1.Style.CheckBoxStyle.UncheckedBorderColor = Color.Red
 
 ![Winforms datagrid shows that GridCheckBoxSelectorColumn styling](ColumnTypes_images/ColumnTypes_img48.png)
 
-The style of the header checkbox can be customized through the [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The style of the header checkbox can be customized through the [QueryCheckBoxCellStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_QueryCheckBoxCellStyle) event.
 
 {% tabs %}
 {% highlight c# %}
