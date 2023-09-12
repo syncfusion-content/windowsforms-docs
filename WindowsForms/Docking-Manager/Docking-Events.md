@@ -153,7 +153,7 @@ This section describes the events that are raised while activating and deactivat
 
 ### DockControlActivated event
 
-The [DockControlActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when a dockable control gets activated. When the user clicks the dockable control or the docked control, this event will be triggered. It can display the control name which has been activated currently.
+The [DockControlActivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControlActivated) event occurs when a dockable control gets activated. When the user clicks the dockable control or the docked control, this event will be triggered. It can display the control name which has been activated currently.
 
 #### Event data
 
@@ -210,7 +210,7 @@ End Sub
 
 ### DockControlDeactivated event
 
-The [DockControlDeactivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event is occurred whenever a dockable control or a docked control loses its focus. In other words, when a dockable control is deactivated, this event will be fired. This event can display the deactivated control name.
+The [DockControlDeactivated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockControlDeactivated) event is occurred whenever a dockable control or a docked control loses its focus. In other words, when a dockable control is deactivated, this event will be fired. This event can display the deactivated control name.
 
 #### Event data
 
@@ -272,7 +272,7 @@ End Sub
 
 ### DockAllow event
 
-The [DockAllow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when a docking window is dragged over a potential dock target. This event helps to cancel the operation that is performed during the docking of windows.
+The [DockAllow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockAllow) event occurs when a docking window is dragged over a potential dock target. This event helps to cancel the operation that is performed during the docking of windows.
 
 {% tabs %}
 
@@ -304,7 +304,7 @@ This section describes events that are raised at starting and ending of auto hid
 
 ### AutoHideAnimationStart event
 
-The [AutoHideAnimationStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs before starting an auto hide animation. When users try to click the auto hide button to hide the docked control, this event will be triggered.
+The [AutoHideAnimationStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AutoHideAnimationStart) event occurs before starting an auto hide animation. When users try to click the auto hide button to hide the docked control, this event will be triggered.
 
 #### Event data
 
@@ -386,7 +386,7 @@ End Sub
 
 ### AutoHideAnimationStop event
 
-The [AutoHideAnimationStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs immediately after the auto hide animation ends. When users click the auto hide button, the docked control will be hidden and this event will be triggered.
+The [AutoHideAnimationStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AutoHideAnimationStop) event occurs immediately after the auto hide animation ends. When users click the auto hide button, the docked control will be hidden and this event will be triggered.
 
 #### Event data
 
@@ -468,7 +468,7 @@ End Sub
 
 ## Caption double-click
 
-The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property is set to `false`. It displays the currently active control name.
+The [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_OnCaptionDoubleClick) event occurs when you double-click a dockable control or a docked control caption. This event is triggered when the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property is set to `false`. It displays the currently active control name.
 
 ### Event data
 
@@ -535,7 +535,7 @@ This section discusses the following events that are related to the ContextMenu:
 
 ### AutoHideTabContextMenu event
 
-The [AutoHideTabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be triggered when users click the right mouse button over an auto hidden tab control. The AutoHide window ContextMenu can be enabled or disabled by using the [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableAutoHideTabContextMenu) property. Its default value is `true`.
+The [AutoHideTabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_AutoHideTabContextMenu) event will be triggered when users click the right mouse button over an auto hidden tab control. The AutoHide window ContextMenu can be enabled or disabled by using the [EnableAutoHideTabContextMenu](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableAutoHideTabContextMenu) property. Its default value is `true`.
 
 #### Event data
 
@@ -682,7 +682,7 @@ End Sub
 
 ### DockMenuClick event
 
-[DockMenuClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event gets fired, when the re-dock context menu item has been clicked. The menu button of docked controls provide options to change the docking position. Whenever users try to re-dock the control to some other position, the DockMenuClick event will be triggered. The provided options are left, top, right, and bottom. These re-dock context menu item option is available only in `VS2008` Docking Style. The re-dock style can be displayed using the below code.
+[DockMenuClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockMenuClick) event gets fired, when the re-dock context menu item has been clicked. The menu button of docked controls provide options to change the docking position. Whenever users try to re-dock the control to some other position, the DockMenuClick event will be triggered. The provided options are left, top, right, and bottom. These re-dock context menu item option is available only in `VS2008` Docking Style. The re-dock style can be displayed using the below code.
 
 #### Event data
 
@@ -739,11 +739,11 @@ End Sub
 
 ## Notify maximize dock control
 
-[ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) and [ControlMaximized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) events of docking manager get triggered while maximizing the docked control.
+[ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ControlMaximizing) and [ControlMaximized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ControlMaximized) events of docking manager get triggered while maximizing the docked control.
 
 ### ControlMaximizing event
 
-The [ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be raised, when users click the maximize button in the docked controls or when the control will be maximized.
+The [ControlMaximizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ControlMaximizing) event will be raised, when users click the maximize button in the docked controls or when the control will be maximized.
 
 #### Event data
 
@@ -863,7 +863,7 @@ End Sub
 
 ## Notify restore
 
-The [ControlRestored](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
+The [ControlRestored](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ControlRestored) event gets fired after the docked control is restored to its original position. This event can give the previous state of the control using the PreviousSizeState property of the handler.
 
 #### Event data
 
@@ -919,7 +919,7 @@ End Sub
 
 ## Notify minimize dock control
 
-The [ControlMinimized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event is fired after the control is minimized using the minimize option of the docked control. This event can display the control name using the control parameter in the ControlMinimizedEventArgs(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ControlMinimizedEventArgs.html).
+The [ControlMinimized](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ControlMinimized) event is fired after the control is minimized using the minimize option of the docked control. This event can display the control name using the control parameter in the ControlMinimizedEventArgs(https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ControlMinimizedEventArgs.html).
 
 <table>
 <tr>
@@ -1204,7 +1204,7 @@ End Sub
 
 ### DockStateUnavailable event
 
-The [DockStateUnavailable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be triggered if serialized information is not available for a dockable control while loading a persisted dock state.
+The [DockStateUnavailable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockStateUnavailable) event will be triggered if serialized information is not available for a dockable control while loading a persisted dock state.
 
 #### Event data
 
@@ -1258,7 +1258,7 @@ End Sub
 
 ### NewDockStateBeginLoad event
 
-The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs before loading a new dock state of the particular control. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
+The [NewDockStateBeginLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_NewDockStateBeginLoad) event occurs before loading a new dock state of the particular control. Whenever an application with one or more docked controls is going to be loaded, this event will be triggered.
 
 {% tabs %}
 
@@ -1303,7 +1303,7 @@ End Sub
 
 ### NewDockStateEndLoad event
 
-The [NewDockStateEndLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
+The [NewDockStateEndLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_NewDockStateEndLoad) event occurs immediately after a new dock state has been loaded. Whenever an application with one or more docked controls is loaded, this event will be triggered.
 
 {% tabs %}
 
@@ -1350,11 +1350,11 @@ End Sub
 
 ### Change docking side of the dragged window using event
 
-You can restrict the docking sides of the dragged window by handling the [PreviewDockHints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event and setting the dockable sides to the [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs__ctor_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_System_Boolean_) property . You can also allow the particular target window to restrict it's sides to dock the dragged window. This event invoked before displaying the dock hints when drag the windows. 
+You can restrict the docking sides of the dragged window by handling the [PreviewDockHints](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_PreviewDockHints) event and setting the dockable sides to the [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DockAbility) property . You can also allow the particular target window to restrict it's sides to dock the dragged window. This event invoked before displaying the dock hints when drag the windows. 
 
 The [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html) provides the following event data for the `PreviewDockHints` event in `DockingManager`.
 
-* [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs__ctor_System_Windows_Forms_Control_System_Windows_Forms_Control_Syncfusion_Windows_Forms_Tools_DockAbility_System_Boolean_) : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
+* [DockAbility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DockAbility) : Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.  
 
 * [DraggingSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.PreviewDockHintsEventArgs.html#Syncfusion_Windows_Forms_Tools_PreviewDockHintsEventArgs_DraggingSource) : Gets or sets the dragging element of DockingManager that raises the PreviewDockHints event.
 
@@ -1393,7 +1393,7 @@ End Sub
 
 ## TabGroupCreating event
 
-The [TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides the following event data for the `TabGroupCreating` event of docking manager. 
+The [TabGroupCreating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_TabGroupCreating) event occurs before creating a new document tab group. The `TabGroupCreatingEventArgs` provides the following event data for the `TabGroupCreating` event of docking manager. 
 
 * TargetItem : Gets the target item which added as new document tab group.
 
@@ -1433,7 +1433,7 @@ Private Sub DockingManager1_TabGroupCreating1(ByVal sender As Object, ByVal arg 
 
 ## TabGroupCreated event
 
-The [TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides the following event data for the `TabGroupCreated` event of docking manager. You can customize the appearance and behavior of document tab groups using the tab group instance provided by the `TabGroupCreated `event.
+The [TabGroupCreated](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_TabGroupCreated) event occurs after creating a new document tab group. The `TabGroupCreatedEventArgs` provides the following event data for the `TabGroupCreated` event of docking manager. You can customize the appearance and behavior of document tab groups using the tab group instance provided by the `TabGroupCreated `event.
 
 * CurrentTabGroup : Gets the current document tab group of tab item that triggers tab group creation.
 
@@ -1505,7 +1505,7 @@ This section covers the following events:
 
 ### DockVisibilityChanged event
 
-This event occurs after the DockVisibility state of a control has been changed. When users click the close button, the control visibility changes, and the [DockVisibilityChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be handled. You can also use the [DockingManager.GetDockVisibility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetDockVisibility_System_Windows_Forms_Control_) function to learn the current status of the docking window.
+This event occurs after the DockVisibility state of a control has been changed. When users click the close button, the control visibility changes, and the [DockVisibilityChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DockVisibilityChanged) event will be handled. You can also use the [DockingManager.GetDockVisibility](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_GetDockVisibility_System_Windows_Forms_Control_) function to learn the current status of the docking window.
 
 #### Event data
 
@@ -1610,7 +1610,7 @@ This section covers the events which occurs while performing the dragging operat
 
 ### DragAllow event
 
-The [DragAllow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event is triggered when a docking window is dragged. If users want to dock a control, drag the control to dock it to a particular target. This event will be triggered, when the dragging process starts.
+The [DragAllow](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragAllow) event is triggered when a docking window is dragged. If users want to dock a control, drag the control to dock it to a particular target. This event will be triggered, when the dragging process starts.
 
 #### Event data
 
@@ -1685,7 +1685,7 @@ End Sub
 
 ### DragFeedbackStart event
 
-The [DragFeedbackStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event is fired before starting the feedback of a drag operation. When the docked control is dragged from its current position to another position, this event will be raised. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackEventsOnSplitters) property. The default value is `true`.
+The [DragFeedbackStart](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackStart) event is fired before starting the feedback of a drag operation. When the docked control is dragged from its current position to another position, this event will be raised. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackEventsOnSplitters) property. The default value is `true`.
 
 {% tabs %}
 
@@ -1759,7 +1759,7 @@ End Sub
 
 ### DragFeedbackStop event
 
-The [DragFeedbackStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position to another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback will be stopped and the DragFeedbackStop event will be triggered. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackEventsOnSplitters) property. The default value of this property is `true`.
+The [DragFeedbackStop](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackStop) event occurs immediately after the end of the feedback of a drag operation. When the docked control is dragged from its position to another position, this event will be raised. Whenever the mouse click is released from dragging, the drag feedback will be stopped and the DragFeedbackStop event will be triggered. You can restrict invoking this event by using the [DragFeedbackEventsOnSplitters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_DragFeedbackEventsOnSplitters) property. The default value of this property is `true`.
 
 {% tabs %}
 
@@ -1799,7 +1799,7 @@ This section discusses the following LinkedManager events:
 
 ### TransferredToManager event
 
-The [TransferredToManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when the dockable control that previously belonged to some other docking manager has been transferred to the docking layout hosted by the current docking manager.
+The [TransferredToManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_TransferredToManager) event occurs when the dockable control that previously belonged to some other docking manager has been transferred to the docking layout hosted by the current docking manager.
 
 #### Event data
 
@@ -1861,7 +1861,7 @@ End Sub
 
 ### TransferringFromManager event
 
-The [TransferringFromManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be raised when a dockable control hosted by the docking manager is transferred to the docking layout hosted by some other docking manager.
+The [TransferringFromManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_TransferringFromManager) event will be raised when a dockable control hosted by the docking manager is transferred to the docking layout hosted by some other docking manager.
 
 #### Event data
 
@@ -1923,7 +1923,7 @@ End Sub
 
 ## InitializeControlOnLoad event
 
-The [InitializeControlOnLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event occurs when the docking manager is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) call.
+The [InitializeControlOnLoad](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_InitializeControlOnLoad) event occurs when the docking manager is not able to locate a control during the [LoadDockState](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_LoadDockState) call.
 
 ### Event data
 
@@ -2055,7 +2055,7 @@ End Sub
 
 ## ImageListChanged event
 
-When the image list property is changed, the [ImageListChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event will be raised. Every docked control has [SetDockIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockIcon_System_Windows_Forms_Control_System_Drawing_Icon_) property to set icons for the control. When this property is changed, the above event will be triggered.
+When the image list property is changed, the [ImageListChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ImageListChanged) event will be raised. Every docked control has [SetDockIcon](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_SetDockIcon_System_Windows_Forms_Control_System_Drawing_Icon_) property to set icons for the control. When this property is changed, the above event will be triggered.
 
 {% tabs %}
 
@@ -2101,7 +2101,7 @@ End Sub
 
 ## ProvideGraphicsItems event
 
-The [ProvideGraphicsItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event is raised whenever a dockable control caption needs to be painted. The background, foreground, and font of the docked control caption can be customized by using this event. The docked control name, which is to be painted can be displayed using the control property.
+The [ProvideGraphicsItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_ProvideGraphicsItems) event is raised whenever a dockable control caption needs to be painted. The background, foreground, and font of the docked control caption can be customized by using this event. The docked control name, which is to be painted can be displayed using the control property.
 
 ### Event data
 

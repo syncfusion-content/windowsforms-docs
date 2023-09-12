@@ -30,7 +30,7 @@ sfListView1.ShowFooter = True
 
 ## Show text in header and footer
 
-SfListView allows you to customize the header and footer items text by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event. A text can be set to an item by using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Text) property.
+SfListView allows you to customize the header and footer items text by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event. A text can be set to an item by using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Text) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -391,7 +391,7 @@ sfListView1.Style.FooterItemStyle.Font = New Font("Segoe UI Semibold", 11)
 
 ## Loading image for header
 
-SfListView allows you to load an image in the header item by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event. An image can be set to an item by using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs__ctor_System_Drawing_Graphics_System_Drawing_Rectangle_System_String_System_Object_System_Object_Syncfusion_WinForms_ListView_Enums_ItemType_System_Int32_Syncfusion_WinForms_ListView_Styles_ListViewItemStyleInfo_System_Drawing_Image_System_Drawing_ContentAlignment_System_Windows_Forms_TextImageRelation_System_Boolean_) property.
+SfListView allows you to load an image in the header item by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event. An image can be set to an item by using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Image) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -426,7 +426,7 @@ End Sub
 
 ## Loading image for footer
 
-SfListView allows loading an image in the footer item by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event. An image can be set to an item by using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs__ctor_System_Drawing_Graphics_System_Drawing_Rectangle_System_String_System_Object_System_Object_Syncfusion_WinForms_ListView_Enums_ItemType_System_Int32_Syncfusion_WinForms_ListView_Styles_ListViewItemStyleInfo_System_Drawing_Image_System_Drawing_ContentAlignment_System_Windows_Forms_TextImageRelation_System_Boolean_) property.
+SfListView allows loading an image in the footer item by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawItem) event. An image can be set to an item by using the [Image](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Image) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -462,7 +462,7 @@ End Sub
 
 ## Showing summary in footer
 
-SfListView allows you to show the summary text at the footer by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event. A text can be set to an item by using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Text) property.
+SfListView allows you to show the summary text at the footer by using the [DrawItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#events) event. A text can be set to an item by using the [Text](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.Events.DrawItemEventArgs.html#Syncfusion_WinForms_ListView_Events_DrawItemEventArgs_Text) property.
 
 {% tabs %}
 {% highlight c# %}

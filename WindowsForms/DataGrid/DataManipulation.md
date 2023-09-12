@@ -262,7 +262,7 @@ Updated
 SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. AddNewRow can be enabled by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowPosition) property.
 When start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
-N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling [AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling [AddNewRowInitiating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AddNewRowInitiating) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,7 +332,7 @@ End Sub
 ![Windows forms datagrid showing the values for addnewrow](DataManipulation_images/AddNewRow_img7.png)
 
 ### Validating the AddNewRow
-The data in AddNewRow can validate like other data rows through built-in validation or custom validation. Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event by setting [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RowValidatingEventArgs_IsValid) to false which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
+The data in AddNewRow can validate like other data rows through built-in validation or custom validation. Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) event by setting [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RowValidatingEventArgs_IsValid) to false which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.RowValidating += dataGrid_RowValidating;
@@ -367,11 +367,11 @@ End Sub
 {% endtabs %}
 ![Windows forms datagrid showing validate the cell in addnewrow](DataManipulation_images/AddNewRow_img3.png)
 
-Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+Similarly, the cells can validate in AddNewRow by using the[CurrentCellValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_CurrentCellValidating) event.
 
 ### Prevent adding empty records
 
-Adding empty record using AddNewRow can be prevented by setting the [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RowValidatingEventArgs_IsValid) property to false in [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+Adding empty record using AddNewRow can be prevented by setting the [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RowValidatingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RowValidatingEventArgs_IsValid) property to false in [RowValidating](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RowValidating) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -619,7 +619,7 @@ sfDataGrid.DetailsViewDefinitions.Add(firstLevelGridViewDefinition)
 {% endtabs %}
 
 #### Enabling AddNewRow when auto-generating relations
-When relation is auto-generated, you can initialize the `AddNewRowPosition` for `GridViewDefinition.DataGrid` in the [AutoGeneratingRelations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+When relation is auto-generated, you can initialize the `AddNewRowPosition` for `GridViewDefinition.DataGrid` in the [AutoGeneratingRelations](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingRelations) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -665,7 +665,7 @@ Me.sfDataGrid.DeleteSelectedRecords()
 ### Customizing the Delete Operations
 
 #### Conditionally Deleting Records
-[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
+[RecordDeleting](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RecordDeleting) event occurs when the record is being deleted from SfDataGrid. The record deletion can be cancel by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) of `RecordDeleting` event. The certain records can be skipped when deleting more than one record by removing items from [RecordDeletingEventArgs.Items](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletingEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletingEventArgs_Items).
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.RecordDeleting += dataGrid_RecordDeleting;
@@ -697,7 +697,7 @@ End Sub
 
 #### Handling Selection after Deleting the Record
 
-[RecordDeleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs after the record is deleted. The selection can be changed after remove the records through [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletedEventArgs_SelectedIndex) property of `RecordDeleted` event.
+[RecordDeleted](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_RecordDeleted) event occurs after the record is deleted. The selection can be changed after remove the records through [SelectedIndex](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.RecordDeletedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_RecordDeletedEventArgs_SelectedIndex) property of `RecordDeleted` event.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid.RecordDeleted += dataGrid_RecordDeleted;
