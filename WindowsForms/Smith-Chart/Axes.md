@@ -406,7 +406,7 @@ sfSmithChart1.RadialAxis.LabelIntersectAction = LabelIntersectActions.Hide
 
 ## Events
 
-[`LabelCreated`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.ChartAxis.html) : Occurs when the axis labels are created.
+[`LabelCreated`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.SmithChart.ChartAxis.html#Syncfusion_WinForms_SmithChart_ChartAxis_LabelCreated) : Occurs when the axis labels are created.
 
 Supports for both the axes.
 
