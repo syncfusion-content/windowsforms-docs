@@ -11,11 +11,11 @@ documentation: ug
 Localization is a process of translating the application resources into different languages for some specific cultures. The SfListView can be localized by adding the resource file. The application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 ## Localize at sample level
-To localize the SfListView based on the  [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) using resource files, follow the steps:
+To localize the SfListView based on the  [CurrentUICulture](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=net-5.0) using resource files, follow the steps:
 
 1) Create a new folder and name it as Resources in your application.
 
-2) Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+2) Add the default resource file of the SfListView into Resources folder.You can download the Syncfusion.SfListView.WinForms.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![WindowsForms ListView Localization Image1](Localization_images/Localization_img1.png)
                      
@@ -57,7 +57,7 @@ End Sub
  
 ## Editing default resource file
 The default resource file can be edited by adding it to Resources folder of the application where the SfListView reads the static texts here.
-The default resource file can be download from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
+The default resource file can be download from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ResourceFile1283641291).
 
 ![WindowsForms ListView Localization Image6](Localization_images/Localization_img6.png)
 

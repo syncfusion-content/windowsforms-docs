@@ -84,7 +84,7 @@ Dim frEvents As New GridFindReplaceEventArgs(Me.txtSearchText.Text, "", options,
 {% endtabs %}
 
 ### Find and Replace using Keyboard Shortcut
-The Find and Replace dialog can be shown in GridControl as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd> shortcut key.  This can be done by using the [CurrentCellKeyDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) event as like below example,
+The Find and Replace dialog can be shown in GridControl as like Excel while pressing <kbd>CTRL</kbd> + <kbd>F</kbd> shortcut key.  This can be done by using the [CurrentCellKeyDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellKeyDown) event as like below example,
 
 {% tabs %}
 {% highlight c# %}

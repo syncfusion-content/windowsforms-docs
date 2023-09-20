@@ -337,7 +337,7 @@ End Sub
 
 #### Cancel Column Generation for Particular Property
 
-The auto generation of the specific column can be canceled by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The column generation can be canceled by setting the `Cancel` property to `true`.
+The auto generation of the specific column can be canceled by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingColumn) event. The column generation can be canceled by setting the `Cancel` property to `true`.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingColumn += SfDataGrid1_AutoGeneratingColumn;
@@ -360,7 +360,7 @@ End Sub
 
 #### Changing Column Type
 
-The type of column adding to SfDataGrid can be changed by setting the instance of column that has to be added in [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The type of column adding to SfDataGrid can be changed by setting the instance of column that has to be added in [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingColumn) event.
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
 {% tabs %}
 {% highlight c# %}
@@ -390,7 +390,7 @@ End Sub
 
 #### Changing Property Settings
 
-The properties of the auto generating column can be changed by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+The properties of the auto generating column can be changed by handling the [AutoGeneratingColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_AutoGeneratingColumn) event.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.AutoGeneratingColumn += SfDataGrid1_AutoGeneratingColumn;
@@ -770,7 +770,7 @@ SfDataGrid shows indication for hidden columns in column header and also allows 
 ### Disable Resizing
 Resizing of particular column can be canceled by setting [GridColumnBase.AllowResizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowResizing) property to false. 
 
-In another way, the resizing can be canceled by handling [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. The `ColumnResizing` event occurs when start dragging by resizing cursor on headers.
+In another way, the resizing can be canceled by handling [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ColumnResizing) event. The `ColumnResizing` event occurs when start dragging by resizing cursor on headers.
 [ColumnResizingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ColumnResizingEventArgs.html) of `ColumnResizing` provides information about the column’s index and width.
 {% tabs %}
 {% highlight c# %}
@@ -829,7 +829,7 @@ sfDataGrid.Columns(0).AllowDragging = False
 {% endtabs %}
 
 ### Disable Column Reordering
-The [ColumnDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event occurs when start dragging the column header. The dragging operation of the particular column can canceled by handling the `ColumnDragging` event. [ColumnDraggingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event.
+The [ColumnDragging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_ColumnDragging) event occurs when start dragging the column header. The dragging operation of the particular column can canceled by handling the `ColumnDragging` event. [ColumnDraggingEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.ColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event.
 
 #### Cancel Dragging Operation
 SfDataGrid allow to cancel dragging operation for particular column by handling the `ColumnDragging` event when the `e.Reason` is `ColumnDraggingAction.DragStarting`.
@@ -1156,7 +1156,7 @@ Me.sfDataGrid.Style.StackedHeaderStyle.TextColor = Color.White
 ![Windows form datagrid showing stacked header row appearance](Columns_images/StackedHeader_img8.png)
 
 ### Changing the Stacked Header Appearance based on Column
-An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
+An appearance of the stacked header row can be customized by using [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event. SfDataGrid allow to check the row type for stacked header row by getting the property from `(e.DataRow as DataRowBase).RowType` of [DrawCellEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs.html). 
  SfDataGrid allows to check the stacked column by its cell value which is available in `DrawCellEventArgs `​and apply styling using ‘e.Style’ property of `DrawCellEventArgs` 
 {% tabs %}
 {% highlight c# %}

@@ -303,7 +303,7 @@ While performing the Sorting, the ProductName column sorts the data using custom
 ![SfDataGrid sorting with custom compararer in windowsforms](Sorting_images/Sorting_Image9.png)
 
 ### Canceling Sorting for a Specific Column
-The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event through `Cancel` property.
+The sorting for a particular column can be canceled by using the [SortColumnsChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanging) event through `Cancel` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -353,7 +353,7 @@ End Sub
 ### Sorting the Underlying Collection
 `SfDataGrid` sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection.
 You can get sorted data from `SfDataGrid.View.Records` when groups is not in place and [SfDataGrid.View.TopLevelGroup.DisplayElements](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.TopLevelGroup.html#Syncfusion_Data_TopLevelGroup_DisplayElements) when grouping in place.
-If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html) event.
+If you want to sort the underlying collection when sorting takes place, this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_SortColumnsChanged) event.
 
 {% tabs %}
 {% highlight c# %}
