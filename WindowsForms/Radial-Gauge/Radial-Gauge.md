@@ -569,7 +569,7 @@ this.radialGauge1.Value = 60
 
 Appearance and text of Scale labels in `FullCircle`, `HalfCircle` and `QuarterCircle` frame types and Value label of `Fill` frame type can customized using `DrawLabelEventArgs` event.
 
-The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html) event of the RadialGauge.
+The `DrawLabelEventArgs` provides the following data for the [DrawLabel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Gauge.RadialGauge.html#Syncfusion_Windows_Forms_Gauge_RadialGauge_DrawLabel) event of the RadialGauge.
 
 <table>
 <tr>

@@ -8,11 +8,11 @@ documentation: ug
 ---
 
 # Record Navigation Control in Windows Forms Grid Control
-The [GridRecordNavigationControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html) is used to navigate between records using a navigation bar at the bottom of the grid. 
+The [GridRecordNavigationControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html) is used to navigate between records using a navigation bar at the bottom of the grid. 
 ## Adding Record Navigation
 The record navigation control can be added throw the designer as well as the code. 
 
-N> The [GridGroupingControl](http://help.syncfusion.com/windowsforms/gridgrouping/navigation-bar) has the built-in support for Record Navigation control.
+N> The [GridGroupingControl](https://help.syncfusion.com/windowsforms/gridgrouping/navigation-bar) has the built-in support for Record Navigation control.
 
 ### Through Designer
 It can be drag and drop from the Toolbox window from the designer along with the GridControl. The step-by-step procedure to create GridRecordNavigationControl through designer is given below,
@@ -273,7 +273,7 @@ Me.gridRecordNavigationControl1.NavigationBar.MovePrevious()
 {% endtabs %}
 
 ### Changing the Visibility of the Arrow Buttons
-The visibility of the arrow buttons can be changed by setting the [NavigationButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_NavigationButtons) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration such as,
+The visibility of the arrow buttons can be changed by setting the [NavigationButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_NavigationButtons) property appropriate value from the [DisplayArrowButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration such as,
 
 **Single** – Used to show only the next and previous buttons in the navigation bar.<br/>
 **All** – Used to show all the buttons from the navigation bar. This is the default option.<br/>
