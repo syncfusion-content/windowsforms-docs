@@ -1058,8 +1058,8 @@ The below shows the filter dialog box is shown for `ID` column,
 ### Events
 The `GridExcelFilter` has two events that are raised when a column is filtered.
  
-* [RecordFiltersItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) – This event will be raised before the filter is applied to the GridGroupingControl.
-* [RecordFiltersItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html) – This event will be raised after the filter is applied to the GridGroupingControl.
+* [RecordFiltersItemChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_RecordFiltersItemChanging) – This event will be raised before the filter is applied to the GridGroupingControl.
+* [RecordFiltersItemChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridExcelFilter.html#Syncfusion_GridHelperClasses_GridExcelFilter_RecordFiltersItemChanged) – This event will be raised after the filter is applied to the GridGroupingControl.
 
 {% tabs %}
 {% highlight c# %}
