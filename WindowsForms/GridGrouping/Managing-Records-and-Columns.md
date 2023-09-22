@@ -130,7 +130,7 @@ The hidden row by resizing is showing in the following screen shot
 The hidden columns by resizing can be unhide by performing the double click between the column headers![Managing-Records-and-Columns_images5](Managing-Records-and-Columns_images/Managing-Records-and-Columns_img5.jpeg)
 
 ### Prevent Column from Hiding 
-The columns can be prevent from hiding on resizing by canceling the [ColsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) event.
+The columns can be prevent from hiding on resizing by canceling the [ColsHiding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_ColsHiding) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -226,7 +226,7 @@ Me.gridGroupingControl1.TableDescriptor.UnboundFields.Add("UnboundField")
 {% endhighlight %}
 {% endtabs %}
 
-Since the unbound fields are working independently, it has to be manually populated with the [TableDescriptor.QueryValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event and store the edited value by using the [TableDescriptor.SaveValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) events.
+Since the unbound fields are working independently, it has to be manually populated with the [TableDescriptor.QueryValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_QueryValue) event and store the edited value by using the [TableDescriptor.SaveValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_SaveValue) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ The unbound field added to the GridGroupingControl is shown in the following scr
 The column width and row height of the GridGroupingControl can be set dynamically by resizing using the mouse controller. 
 
 ### Setting Default Row Heights
-Default row heights can be set by using the [DefaultRecordRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableBase.html) property
+Default row heights can be set by using the [DefaultRecordRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTable.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTable_DefaultRecordRowHeight) property
 {% tabs %}
 {% highlight c# %}
 //Setting Default row heights.
@@ -412,7 +412,7 @@ Me.gridGroupingControl1.TableOptions.ColumnsMaxLengthStrategy = Syncfusion.Windo
 {% endtabs %}
 
 ### Setting Column Styles 
-The styles can be applied for the particular column by using the [Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Appearance) properties of the [TableDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html).
+The styles can be applied for the particular column by using the [Appearance](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableDescriptor_Appearance) properties of the [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html).
 
 {% tabs %}
 {% highlight c# %}

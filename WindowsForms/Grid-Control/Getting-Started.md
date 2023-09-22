@@ -237,7 +237,7 @@ Me.gridControl1.PopulateValues(GridRangeInfo.Cells(1, 1, Me.gridControl1.RowCoun
 {% endcapture %}
 {{ codesnippet4 | OrderList_Indent_Level_1 }}
 
-3. Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
+3. Populate Data using [QueryCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_QueryCellInfo) event of the GridControl. This will load the data virtually ensuring the optimized performance. The data will be loaded in an on-demand basis. This will be discussed briefly in the [Virtual Grid](https://help.syncfusion.com/windowsforms/grid-control/virtual-grid) section.
 
 {% capture codesnippet5 %}​   
 {% tabs %}
@@ -378,7 +378,7 @@ Me.gridControl1.AllowSelection = Syncfusion.Windows.Forms.Grid.GridSelectionFlag
 {% endhighlight %}
 {% endtabs %}
 
-Selection operation can be handled by using [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) events.
+Selection operation can be handled by using [SelectionChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_SelectionChanged) events.
 
 ## Editing
 
@@ -406,6 +406,6 @@ style.ReadOnly = False
 {% endhighlight %}
 {% endtabs %}
 
-Editing operation can be customized by using [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html) and [CurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events. 
+Editing operation can be customized by using [CurrentCellStartEditing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridCardView.html#Syncfusion_GridHelperClasses_GridCardView_CurrentCellStartEditing) and [CurrentCellEditingComplete](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_CurrentCellEditingComplete) events. 
 
 N> You can also explore our [WinForms Grid control example](https://github.com/syncfusion/winforms-demos/tree/master/gridcontrol) that shows how to render the Grid control in Windows Forms.

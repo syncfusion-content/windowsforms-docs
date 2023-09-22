@@ -10,7 +10,7 @@ documentation: ug
 # Printing in Windows Forms GridGrouping control
 GridGroupingControl supports printing and previewing the printing document in dialog box. A derived [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html), which represents the print document is passed to these classes. This `GridPrintDocument` implements printing logic that is needed to print multi page grids. 
 
-For printing the grid make use of the [PrintDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=net-5.0) class. For printing the document get the grid as document with the help of `GridPrintDocument` class, then assign this document to the property [Document](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog.document?view=net-5.0) of the `PrintDialog` object. It also supports hierarchical grid printing.
+For printing the grid make use of the [PrintDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) class. For printing the document get the grid as document with the help of `GridPrintDocument` class, then assign this document to the property [Document](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printdialog.document?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) of the `PrintDialog` object. It also supports hierarchical grid printing.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,7 +34,7 @@ End If
 ![Printing_img1](Printing_images/Printing_img1.png)
 
 ## Print Preview
-Printing gives support for showing a print preview dialog. To access it, [PrintPreviewDialog](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=net-5.0) class has to be used and [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) has to be assigned to Document property of its object.
+Printing gives support for showing a print preview dialog. To access it, [PrintPreviewDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) class has to be used and [GridPrintDocument](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridPrintDocument.html) has to be assigned to Document property of its object.
 
 {% tabs %}
 {% highlight c# %}
@@ -53,7 +53,7 @@ printPreviewDialog.ShowDialog()
 ![Printing_img2](Printing_images/Printing_img2.png)
 
 ### Printing using Keyboard shortcut
-There is no direct support for printing the grid using <kbd>Ctrl</kbd>+<kbd>P</kbd> key combination but this can be achieved by handling the [TableControl.KeyDown](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=net-5.0) event of the grid.
+There is no direct support for printing the grid using <kbd>Ctrl</kbd>+<kbd>P</kbd> key combination but this can be achieved by handling the [TableControl.KeyDown](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) event of the grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ Me.gridGroupingControl1.TableModel.Properties.PrintFrame = True
 ![Printing_img4](Printing_images/Printing_img4.png)
 
 ### Page Orientation
-The orientation of the printing layout can be changed to landscape by setting [LandScape](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.landscape?view=net-5.0) property to `true`.
+The orientation of the printing layout can be changed to landscape by setting [LandScape](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.landscape?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -345,7 +345,7 @@ printPreviewDialog.ShowDialog()
 ![Printing_img6](Printing_images/Printing_img6.png)
 
 ## Customizing Header and Footer
-The header and footer can be customized as per user need by handling the [DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) and [DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html) event.
+The header and footer can be customized as per user need by handling the [DrawGridPrintHeader](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_DrawGridPrintHeader) and [DrawGridPrintFooter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridPrintDocumentAdv.html#Syncfusion_GridHelperClasses_GridPrintDocumentAdv_DrawGridPrintFooter) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -505,13 +505,13 @@ End Sub
 ![Printing_img7](Printing_images/Printing_img7.png)
 
 ## Printing with Application Form
-The printing with application forms can be done in the following ways by handling the [PrintDocument](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument?view=net-5.0) class.
+The printing with application forms can be done in the following ways by handling the [PrintDocument](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) class.
 
 * Printing the whole application form
 * Printing the client area in form
 
 ### Printing the whole application form
-The whole application form can be printed by handling the [PrintPage](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=net-5.0) in the `PrintDocument` class. 
+The whole application form can be printed by handling the [PrintPage](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) in the `PrintDocument` class. 
 
 {% tabs %}
 {% highlight c# %}
@@ -569,7 +569,7 @@ End Sub
 ### Printing the Client Area in Form
 The GridGroupingControl does not have built-in support for printing the client application form. It can be done by using the `PrintDocument` class and following customization,
 
-1. Call the [BitBlt](https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function   ie. unmanaged code in a managed application. 
+1. Call the [BitBlt](https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-bitblt) function   ie. unmanaged code in a managed application. 
 {% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
@@ -592,7 +592,7 @@ End Function
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Draw an image of application form using the [PrintPage](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=net-5.0) event.
+2. Draw an image of application form using the [PrintPage](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printdocument.printpage?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) event.
 
 {% capture codesnippet2 %}
 {% tabs %}
@@ -813,7 +813,7 @@ End Sub
 ![Printing_img14](Printing_images/Printing_img14.png)
 
 ### Preventing Page Number Being Displayed
-To prevent the page number is being displayed from the print page layout, the [DrawPageNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html) event can be used. 
+To prevent the page number is being displayed from the print page layout, the [DrawPageNumber](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.LayoutSupportHelper.html#Syncfusion_GridHelperClasses_LayoutSupportHelper_DrawPageNumber) event can be used. 
 {% tabs %}
 {% highlight c# %}
 LayoutSupportHelper helper = new LayoutSupportHelper(this.gridGroupingControl1.TableControl);
@@ -910,7 +910,7 @@ Me.gridGroupingControl1.TableModel.Properties.PrintColHeader = False
 ### Customizing the Print Alignment
 The grid can be centered vertically while printing by setting the [CenterVertical](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_CenterVertical) property to `true`. The grid can be printed with centered horizontally by enabling the [CenterHorizontal](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridProperties.html#Syncfusion_Windows_Forms_Grid_GridProperties_CenterHorizontal) property.
 
-This property will disable the default alignment and the alignments can be determined by setting the margins using the [Margins](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.margins?view=net-5.0) property.
+This property will disable the default alignment and the alignments can be determined by setting the margins using the [Margins](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.pagesettings.margins?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -959,7 +959,7 @@ Me. gridGroupingControl1.PrintVerticalLines = False
 {% endhighlight %}
 {% endtabs %}
 ### Hiding the Row/columns using Events
-To hide some of the rows and columns while printing the grid, set the size of the row height and column width value as zero at the [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) and [QueryColWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html) events while the grid entered into the [PrintingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PrintingMode).
+To hide some of the rows and columns while printing the grid, set the size of the row height and column width value as zero at the [QueryRowHeight](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_QueryRowHeight) and [QueryColWidth](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_QueryColWidth) events while the grid entered into the [PrintingMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_PrintingMode).
 {% tabs %}
 {% highlight c# %}
 // Triggering the QueryRowHeight event
@@ -1047,7 +1047,7 @@ End Sub
 {% endtabs %}
 
 ### Print the selected range of the cells 
-To print only the selected range of cells from the grid, set the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the GridGroupingControl. 
+To print only the selected range of cells from the grid, set the [PrintRange](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) value as `Selection`. It will print the selected range of cells or the selected page from the GridGroupingControl. 
 
 This will only print the selected range which is enabled by the [AllowSelection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_AllowSelection) property. So It will not print the selected ranges which is enabled by the[ListBoxSelectionMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableOptionsStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableOptionsStyleInfo_ListBoxSelectionMode) selection.
 
@@ -1077,10 +1077,10 @@ The `PrintRange` enumeration has the following printing options,
 **Selection –**Used to print the selected range of cells<br/>
 **SomePages –**Used to print particular range of pages.<br/>
 
-N> By default the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
+N> By default the [PrintRange](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) will be pointed to `AllPages`, so that the print method will print all the pages of the grid.
 
 ### Printing needed pages alone
-The needed pages in the grid can only be printed by setting the [PrintRange](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=net-5.0) property value as `SomePages`.
+The needed pages in the grid can only be printed by setting the [PrintRange](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.printrange?view=dotnet-plat-ext-7.0&viewFallbackFrom=net-5.0) property value as `SomePages`.
 
 {% tabs %}
 {% highlight c# %}
