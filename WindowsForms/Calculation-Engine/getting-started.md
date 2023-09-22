@@ -149,9 +149,9 @@ The methods and events used in `ICalcData` interface are
 
 * [SetValueRowCol](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html#Syncfusion_Calculate_ICalcData_SetValueRowCol_System_Object_System_Int32_System_Int32_)       - A method that is used to set the value to mentioned row and column index.
 
-* [WireParentObject](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html#Syncfusion_Calculate_ICalcData_WireParentObject)   - A method that wires the ParentObject after the `CalcEngine` object is created or when a `RegisterGridAsSheet` call is made.
+* [WireParentObject](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html#Syncfusion_Calculate_ICalcData_WireParentObject) - A method that wires the ParentObject after the `CalcEngine` object is created or when a `RegisterGridAsSheet` call is made.
 
-* [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html)        - An event that occurs when the value is changed.
+* [ValueChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.ICalcData.html#Syncfusion_Calculate_ICalcData_ValueChanged) - An event that occurs when the value is changed.
 
 Below example shows the computation of formula using `ICalcData` interface.
 
