@@ -13,7 +13,7 @@ This section discusses the text settings of the TextBoxExt control.
 
 ## Text
 
-You can specifies the text in [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Text) property.
+You can specifies the text in [TextBoxExt](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) control by using [Text](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.text?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_Text) property.
 
 {% tabs %}
 
@@ -33,7 +33,7 @@ Me.textBoxExt1.SelectedText = "textBoxExt1"
 
 ![Set the text to WF TextBoxExt](Text-Settings_images/wf-textboxext-text.png)
 
-N> You can get the selected text in TextBoxExt control by using [SelectedText](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.selectedtext?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_SelectedText) property.
+N> You can get the selected text in TextBoxExt control by using [SelectedText](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.selectedtext?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_SelectedText) property.
 
 ## CharacterCasing
 
@@ -59,7 +59,7 @@ Me.textBoxExt1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
 
 ## TextAlign
 
-You can the alignment of text for `TextBoxExt` control by using [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property.
+You can the alignment of text for `TextBoxExt` control by using [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_TextAlign) property.
 
 {% tabs %}
 
@@ -81,7 +81,7 @@ Me.textBoxExt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 
 ## Right to Left
 
-The `TextBoxExt` control can be laid out from right to left when the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_Control_RightToLeft) property value is set to `Yes`.
+The `TextBoxExt` control can be laid out from right to left when the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_Control_RightToLeft) property value is set to `Yes`.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ Selects all text in the TextBox.</td></tr>
 
 ### Multiline text settings
 
-You can display the multiple line text by using the [MultiLine](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Multiline) property. If you want to show the text move to next line, you need to set the [WordWrap](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_WordWrap) property to `true`. You can also show the horizontal or vertical bar in `TextBoxExt` control by using [ScrollBars](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.scrollbars?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_ScrollBars) property.
+You can display the multiple line text by using the [MultiLine](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_Multiline) property. If you want to show the text move to next line, you need to set the [WordWrap](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.wordwrap?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_WordWrap) property to `true`. You can also show the horizontal or vertical bar in `TextBoxExt` control by using [ScrollBars](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.scrollbars?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_ScrollBars) property.
 
 {% tabs %}
 
@@ -198,7 +198,7 @@ Me.textBoxExt1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
 
 ![Show the multiline text in WF TextBoxExt](Text-Settings_images/wf-textboxext-multiline.png)
 
-N> The [ScrollToCaret()](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.scrolltocaret?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ScrollToCaret) method can be used to scroll the contents of the control to the current caret position.
+N> The [ScrollToCaret()](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.scrolltocaret?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_ScrollToCaret) method can be used to scroll the contents of the control to the current caret position.
 
 ## Tooltip
 
