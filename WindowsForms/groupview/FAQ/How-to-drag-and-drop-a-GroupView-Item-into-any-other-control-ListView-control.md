@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to drag-and-drop a GroupView Item into any other control (ListView control)?
 
-You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's [DragEnter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragenter?redirectedfrom=MSDN&view=netframework-4.7.2) and [DragDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragdrop?redirectedfrom=MSDN&view=netframework-4.7.2) events to drop the selected GroupView Item as a ListView item in the ListView control.
+You can handle the GroupView's DragOver Event to get the selected GroupView Item and then handle the ListView control's [DragEnter](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragenter?redirectedfrom=MSDN&view=netframework-4.7.2) and [DragDrop](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.dragdrop?redirectedfrom=MSDN&view=netframework-4.7.2) events to drop the selected GroupView Item as a ListView item in the ListView control.
 
 {% tabs %}
 
