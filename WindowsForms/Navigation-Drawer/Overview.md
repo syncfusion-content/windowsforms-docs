@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Navigation Drawer control | Syncfusion
+title: Overview of Windows Forms Navigation Drawer control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Navigation Drawer control, its elements and more details.
 platform: WindowsForms
 control: NavigtaionDrawer 

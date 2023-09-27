@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms dicom control | Syncfusion
+title: Overview of Windows Forms Dicom control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms dicom (DICOM) control, its elements, and more details.
 platform: windowsforms
 control: DICOM 

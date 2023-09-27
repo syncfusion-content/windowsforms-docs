@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Wizard Control | Syncfusion
+title: Overview of Windows Forms Wizard Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Wizard Control, its elements and more details.
 platform: WindowsForms
 control: WizardControl 
