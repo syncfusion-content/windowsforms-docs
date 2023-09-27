@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Calculator control | Syncfusion
+title: Overview of Windows Forms Calculator control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio Windows Forms Calculator control and more details.
 platform: WindowsForms
 control: Calculator

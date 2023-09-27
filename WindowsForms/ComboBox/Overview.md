@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms ComboBox control | Syncfusion
+title: Overview of Windows Forms ComboBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
 platform: windowsforms
 control: SfComboBox

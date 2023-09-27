@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Tile Layout control | Syncfusion
+title: Overview of Windows Forms Tile Layout control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Tile Layout control, its elements and more details.
 platform: WindowsForms
 control: TileLayout 

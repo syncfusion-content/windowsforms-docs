@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Form control | Syncfusion
+title: Overview of Windows Forms Form control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Form (SfForm) control, its elements, and more details.
 platform: WindowsForms
 control: SfForm

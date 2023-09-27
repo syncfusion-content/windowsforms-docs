@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms ComboBoxBase control | Syncfusion
+title: Overview of Windows Forms ComboBoxBase control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxBase control and more details.
 platform: WindowsForms
 control: ComboBoxBase

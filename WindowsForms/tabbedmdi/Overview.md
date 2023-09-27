@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms TabbedMDI control | Syncfusion
+title: Overview of Windows Forms TabbedMDI control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms TabbedMDI control, its elements and more details.
 platform: WindowsForms
 control: TabbedMDIManager
