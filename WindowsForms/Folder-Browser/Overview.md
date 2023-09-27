@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Folder Browser control | Syncfusion
+title: Overview of Windows Forms Folder Browser control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Folder Browser control, its elements, and more details.
 platform: WindowsForms
 control: Tools
