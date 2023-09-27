@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
+title: Overview of Windows Forms Month Calendar control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
 platform: WindowsForms
 control: CalendarDateTime

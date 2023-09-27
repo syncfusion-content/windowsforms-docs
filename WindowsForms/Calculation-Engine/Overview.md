@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Calculation Engine control | Syncfusion
+title: Overview of Windows Forms Calculation Engine control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Calculation Engine (Calculate) control and more details.
 platform: windowsforms
 control: Calculate

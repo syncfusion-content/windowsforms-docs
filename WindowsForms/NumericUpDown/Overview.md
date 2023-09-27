@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms NumericUpDown control | Syncfusion
+title: Overview of Windows Forms NumericUpDown control | Syncfusion
 description: Learn here all about Overview support in Syncfusion Windows Forms NumericUpDown (NumericUpDownExt) control, its elements and more details.
 platform: WindowsForms
 control: NumericUpDownExt

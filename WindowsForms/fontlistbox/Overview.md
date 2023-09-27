@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms FontListBox control | Syncfusion
+title: Overview of Windows Forms FontListBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms FontListBox control, its elements, and more details.
 platform: WindowsForms
 control: FontListBox
