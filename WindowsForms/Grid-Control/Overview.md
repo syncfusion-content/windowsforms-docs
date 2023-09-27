@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Grid Control | Syncfusion
+title: Overview of Windows Forms Grid Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Grid Control, its elements, and more details.
 platform: windowsforms
 control: GridControl

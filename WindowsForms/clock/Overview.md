@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Clock control | Syncfusion
+title: Overview of Windows Forms Clock control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Clock control, its elements and more details.
 platform: WindowsForms
 control: Clock-Control-for-Windows-Forms
