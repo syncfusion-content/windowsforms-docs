@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Rating Control control | Syncfusion
+title: Overview of Windows Forms Rating Control control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Rating Control, its elements and more details.
 platform: WindowsForms
 control: Rating  

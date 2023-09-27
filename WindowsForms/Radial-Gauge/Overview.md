@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Radial Gauge control | Syncfusion
+title: Overview of Windows Forms Radial Gauge control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Radial Gauge control, its elements and more details.
 platform: WindowsForms
 control: Gauge

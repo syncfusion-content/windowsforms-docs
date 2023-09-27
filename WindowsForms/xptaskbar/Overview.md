@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms xptaskbar control | Syncfusion
+title: Overview of Windows Forms xptaskbar control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms xptaskbar (XPTaskBar) control, its elements and more details.
 platform: WindowsForms
 control: XPTaskBar

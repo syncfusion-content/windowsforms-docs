@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Docking Manager control | Syncfusion
+title: Overview of Windows Forms Docking Manager control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Docking Manager control and more details.
 platform: WindowsForms
 control: DockingManager 

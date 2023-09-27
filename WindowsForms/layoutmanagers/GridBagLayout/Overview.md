@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms LayoutManagers control | Syncfusion
+title: Overview of Windows Forms GridBagLayout control | Syncfusion
 description: Learn about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: GridBagLayout
