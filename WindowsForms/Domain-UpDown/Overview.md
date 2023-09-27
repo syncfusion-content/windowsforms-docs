@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Domain UpDown control | Syncfusion
+title: Overview of Windows Forms Domain UpDown control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Domain UpDown (DomainUpdownExt) control, its elements, and more details.
 platform: WindowsForms
 control: DomainUpdownExt 

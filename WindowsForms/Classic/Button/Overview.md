@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
+title: Overview of Windows Forms Buttons control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms ButtonAdv(Classic) control and more details.
 platform: WindowsForms
 control: ButtonAdv

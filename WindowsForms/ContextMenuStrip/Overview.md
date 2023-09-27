@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms ContextMenuStripEx control | Syncfusion 
+title: Overview of Windows Forms ContextMenuStripEx control | Syncfusion 
 description: Learn here all about introduction of Syncfusion Windows Forms of ContextMenuStrip control, its features, and more.
 platform: WindowsForms
 control: ContextMenuStripEx

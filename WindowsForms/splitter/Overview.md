@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Splitter control | Syncfusion
+title: Overview of Windows Forms Splitter control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Splitter control, its elements and more details.
 platform: WindowsForms
 control: Splitter  
