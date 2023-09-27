@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms AutoLabel control | Syncfusion
+title: Overview of Windows Forms AutoLabel control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms AutoLabel control and more details.
 platform: WindowsForms
 control: AutoLabel

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Navigation Pane control | Syncfusion
+title: Overview of Windows Forms Navigation Pane control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Navigation Pane (GroupBar) control, its elements and more details.
 platform: WindowsForms
 control: GroupBar

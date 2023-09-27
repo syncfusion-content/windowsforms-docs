@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms FontComboBox control | Syncfusion
+title: Overview of Windows Forms FontComboBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms FontComboBox control, its elements, and more details.
 platform: WindowsForms
 control: Editors Package

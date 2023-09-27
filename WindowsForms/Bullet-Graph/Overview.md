@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Bullet Graph control | Syncfusion
+title: Overview of Windows Forms Bullet Graph control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Bullet Graph control and more details.
 platform: windowsforms
 control: Bullet Graph
