@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms skins control | Syncfusion
+title: Overview of Windows Forms skins control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms skins (SkinManager) control, its elements and more details.
 platform: WindowsForms
 control: SkinManager 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms projio control | Syncfusion
+title: Overview of Windows Forms projIO control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms projio (ProjIO) control, its elements and more details.
 platform: windowsforms
 control: ProjIO
