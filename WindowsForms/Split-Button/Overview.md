@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Split Button control | Syncfusion
+title: Overview of Windows Forms Split Button control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Split Button control, its elements and more details.
 platform: WindowsForms
 control: SplitButton 

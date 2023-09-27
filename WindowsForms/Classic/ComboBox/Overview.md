@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms ComboBoxAdv control | Syncfusion
+title: Overview of Windows Forms ComboBoxAdv control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAdv (Classic) control and more details.
 platform: windowsforms
 control: ComboBoxAdv

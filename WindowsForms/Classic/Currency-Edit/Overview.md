@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms ContextMenuStrip control | Syncfusion
+title: Overview of Windows Forms CurrencyEdit control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio Windows Forms CurrencyEdit control and more details.
 platform: WindowsForms
 control: CurrencyEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms Status Bar control | Syncfusion
+title: Overview of Windows Forms Status Bar control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Status Bar (StatusBarAdv) control and more details.
 platform: WindowsForms
 control: StatusBarAdv
