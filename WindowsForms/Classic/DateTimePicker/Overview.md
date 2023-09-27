@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms xptoolbar control | Syncfusion
+title: Overview of Windows Forms DateTimePicker control | Syncfusion
 description: Learn about Overview support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePicker

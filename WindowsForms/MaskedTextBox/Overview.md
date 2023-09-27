@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows-Forms MaskedTextBox Control | Syncfusion
+title: Overview of Windows Forms MaskedTextBox Control | Syncfusion
 description: An overview about the MaskedEditBox which provides visual cues about the type of data used with the help of Mask provided for the control
 platform: WindowsForms
 control: MaskedEditBox

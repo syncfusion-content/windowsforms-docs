@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms TextBox control | Syncfusion
+title: Overview of Windows Forms TextBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms EditorsPackage control, its elements and more details.
 platform: WindowsForms
 control: EditorsPackage

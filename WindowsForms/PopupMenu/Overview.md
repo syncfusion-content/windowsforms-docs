@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Windows Forms PopupMenu control | Syncfusion
+title: Overview of Windows Forms PopupMenu control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms PopupMenu control, its elements and more details.
 platform: WindowsForms
 control: PopupMenu

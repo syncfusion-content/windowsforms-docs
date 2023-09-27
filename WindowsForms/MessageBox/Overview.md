@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of MessageBoxAdv control | Windows Forms | Syncfusion
+title: Overview of Windows Forms MessageBoxAdv control | Syncfusion
 description: MessageBoxAdv displays message to user in a modal window. It provides details view, themes, localization, shadow effects and etc.
 platform: WindowsForms
 control: MessageBoxAdv
