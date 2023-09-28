@@ -86,9 +86,9 @@ Me.gridGroupingControl1.TableDescriptor.Columns(1).FilterRowOptions.AllowEmptyFi
 N> The removing of `Custom` and `Empty` text from the filter dropdown is also applicable for the [dynamic filter](#dynamic-filter).
 
 ## Record filters
-The [RecordFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptorCollection.html) otherwise known as `RowFilters` will allow users to restrict displayed records to those that satisfy logical condition that user specify with `FilterRowDescriptor`.
+The [RecordFilters](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_RecordFilters) otherwise known as `RowFilters` will allow users to restrict displayed records to those that satisfy logical condition that user specify with `FilterRowDescriptor`.
 
-`RecordFilters` can be added to GridGroupingControl at design time. The[RecordFilterDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html) is available in the [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableDescriptor.html) section of the property window. The `RecordFilters` can be added by using the `RecordFilterDescriptor` collection editor. 
+`RecordFilters` can be added to GridGroupingControl at design time. The[RecordFilterDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html) is available in the [TableDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html) section of the property window. The `RecordFilters` can be added by using the `RecordFilterDescriptor` collection editor. 
 ![Filtering using Record filters](Filtering_images/Filtering_img4.png)
 
 The record filter can be applied with the different compare operators by using the [FilterCompareOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterCompareOperator.html) enumeration in the `FilterCondition` and also it can be applied with multiple filter conditions, by specifying the [LogicalOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.RecordFilterDescriptor.html#Syncfusion_Grouping_RecordFilterDescriptor_LogicalOperator) value as `And/Or` from [FilterLogicalOperator](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.FilterLogicalOperator.html) enum.
@@ -535,7 +535,7 @@ filter.WireGrid(Me.gridGroupingControl1)
 {% endtabs %}
 
 ### Events
-The custom dialog of the dynamic filter can be customized by using the [ShowingCustomFilterDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableFilterBarCellModel.html) event. This event will be raised before the custom dialog is displayed. 
+The custom dialog of the dynamic filter can be customized by using the [ShowingCustomFilterDialog](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableFilterBarCellModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableFilterBarCellModel_ShowingCustomFilterDialog) event. This event will be raised before the custom dialog is displayed. 
 {% tabs %}
 {% highlight c# %}
 //Triggering an event
