@@ -206,4 +206,4 @@ The data from the defined data model of the LINQ to SQL classes can be loaded as
 
 ## See Also
 
-[How to disable some items WinForms ComboBox dropdown?](https://www.syncfusion.com/kb/11254/how-to-disable-some-items-winforms-combobox-dropdown)
+[How to disable some items WinForms ComboBox dropdown?](https://support.syncfusion.com/kb/article/9692/how-to-disable-some-items-winforms-combobox-dropdown)
