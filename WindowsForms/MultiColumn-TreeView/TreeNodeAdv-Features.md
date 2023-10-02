@@ -201,7 +201,7 @@ TreeNodeAdv can hold controls using custom control feature. This increases the f
 ### LabelEdit
 
 Indicates whether the label text of the tree nodes can be edited. By default, it is false . To edit the node,LabelEdit property must be set as true. BeforeEdit event occurs before a node gets into edit node.
-For further details refer [editing event] (https://help.syncfusion.com/windowsforms/multicolumntreeview/multicolumntreeview-events#node-editing). 
+For further details refer [editing event](https://help.syncfusion.com/windowsforms/multicolumn-treeview/multicolumntreeview-events#node-editing). 
 
 
 

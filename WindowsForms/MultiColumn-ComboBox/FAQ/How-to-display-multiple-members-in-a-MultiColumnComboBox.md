@@ -35,7 +35,7 @@ Me.Controls.Add(Me.multiColumnComboBox1)
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-2. Populate the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) with data. Refer [Data Binding](https://help.syncfusion.com/windowsforms/multicolumncombobox/data-binding) topic.
+2. Populate the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) with data. Refer [Data Binding](https://help.syncfusion.com/windowsforms/multicolumn-combobox/data-binding) topic.
 
 3. In order to display the contents of the entire row in the [MultiColumnComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.html) instead of the using `DisplayMember` property, can achieve by handling the [MultiColumnComboBox.SelectedIndexChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.html) and [MultiColumnComboBox.DropDown](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ComboDropDown.html) events as shown below.
 
