@@ -268,4 +268,4 @@ N> View sample in [GitHub](https://github.com/SyncfusionExamples/windows-forms-e
 
 ## See also
 
-[How to show on screen keyboard in tablet device while editing a cell in WinForms DataGrid](https://www.syncfusion.com/kb/9906)
+[How to show on screen keyboard in tablet device while editing a cell in WinForms DataGrid](https://support.syncfusion.com/kb/article/8781/how-to-show-onscreen-keyboard-in-tablet-device-while-editing-a-cell-in-winforms-datagrid)
