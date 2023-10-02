@@ -122,7 +122,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/GettingStarted-
 
 ## RTL support
 
-RTL is used to display the content from right to left by setting the [RightToLeft](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=netcore-3.1) property to `Yes`.
+RTL is used to display the content from right to left by setting the [RightToLeft](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.righttoleft?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1) property to `Yes`.
 
 {% tabs %}
 
