@@ -294,7 +294,7 @@ The simplest way to use Essential Calculate is through an instance of its [CalcQ
 
 For more information regarding calculating with `CalcQuickBase`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
-N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CalcQuickBaseWFSample1022512026)
+N> Please find the sample which uses `CalcQuickBase` class for computations, [CalcQuick_Sample](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-calcquick)
 
 ### ICalcData
 
@@ -304,7 +304,7 @@ of `ICalcData` interface is used to get and set the values of the variables at r
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/windowsforms/calculation-engine/working-with-icalcdata)
 
-N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ICalcDataWFSample101764257)
+N> Please find the sample which uses `ICalcData` interface for computations, [ICalcData_Sample](https://files2.syncfusion.com/login?ReturnUrl=%2Fdtsupport%2Fdirecttrac%2Fgen%2F.png%3Ftoken%3D06f7jKUAjdjuymFoCKo9GQ%3D%3D)
 
 ## Cross Sheet Reference
 

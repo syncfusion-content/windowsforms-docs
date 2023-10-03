@@ -22,7 +22,7 @@ AutoCompletion is a feature enhancement for edit controls. It expands strings th
 ![Overview for Autocomplete with previously specified strings](Overview_images/Overview_image2.png)
 
 
-For example, when you start to enter an URL in theAddress edit control that is embedded in the Microsoft Internet Explorer navigation toolbar, autocompletion expands the string into one or more complete URLs that are consistent with the existing partial string. A partial URL string such as "sync" might be expanded to "http://www.syncfusion.com" or "http://www.syncfusion.com/faq/winforms". This feature is useful in windows applications that require collecting frequently repeated input from the user. 
+For example, when you start to enter an URL in theAddress edit control that is embedded in the Microsoft Internet Explorer navigation toolbar, autocompletion expands the string into one or more complete URLs that are consistent with the existing partial string. A partial URL string such as "sync" might be expanded to "https://www.syncfusion.com/" or "https://www.syncfusion.com/faq/windowsforms/general". This feature is useful in windows applications that require collecting frequently repeated input from the user. 
 
 The .NET Framework does not provide any built-in support for providing autocompletion in the System.Windows.Forms.Textbox or System.Windows.Forms.Combobox classes. The Essential Tools AutoComplete class provides an easy way of adding autocompletion to edit controls in an application. Autocompletion is typically used with edit controls (text box controls) or with controls that have an embedded edit control (such as combo box controls). 
 

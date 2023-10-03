@@ -33,9 +33,9 @@ return the formula value stored in [FormulaInfoTable](https://help.syncfusion.co
 
 **Parse Formula and Compute Formula**
 
-[ParseFormula](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#parse-formula) method in `CalcEngine` parses the formula in the cell and user can 
+[ParseFormula](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#parse-formula) method in `CalcEngine` parses the formula in the cell and user can 
 reset the value of variables or dependent cell values of formula cell at runtime and get the updated result by computing the parsed formula using 
-[ComputeFormula](https://help.syncfusion.com/windowsforms/calculate/parse-and-compute#computeformula) method which avoids the repeated parsing of formula.
+[ComputeFormula](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#computeformula) method which avoids the repeated parsing of formula.
 
 **For Example:**
 
