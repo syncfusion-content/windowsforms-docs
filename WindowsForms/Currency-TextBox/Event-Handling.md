@@ -13,7 +13,7 @@ CurrencyTextBox fires events when 3D border style is changed, border color is ch
 
 **KeyDown:**
 
-The [KeyDown event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=net-5.0) occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the CurrencyTextBox. Refer [Adding the Key Support for Mega and Kilo](https://help.syncfusion.com/windowsforms/currency-textbox/event-handling#adding-key-support).
+The [KeyDown event](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.keydown?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) occurs when a key is pressed while the control has a focus. The event handler receives an argument of type KeyEventArgs. We can handle this event to add keyboard support to the CurrencyTextBox. Refer [Adding the Key Support for Mega and Kilo](https://help.syncfusion.com/windowsforms/currency-textbox/event-handling#adding-key-support).
 
 ValidationError: It occurs when an inappropriate character is encountered. The event handler receives an argument of type ValidationErrorArgs.
 
