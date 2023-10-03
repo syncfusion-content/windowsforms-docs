@@ -44,13 +44,13 @@ The PopupControlContainer control can be added through designer by following the
 
 ![Adding rich text box control to the PopupControlContainer](GettingStarted_Images/PopupControl4.png)
 
-4. Associate the [RichTextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
+4. Associate the [RichTextBox](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.richtextbox?view=netframework-4.7.2) instance in the Properties panel of PopupControlContainer under the [ParentControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ParentControl).
 
 ![Selecting properties of PopupControlContainer](GettingStarted_Images/PopupControl5.png)
 
 ![Setting rich text box control as parent of PopupControlContainer](GettingStarted_Images/PopupControl6.png)
 
-5. Handle the [Click event](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
+5. Handle the [Click event](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.click?view=netframework-4.7.2) of RichTextBox and call [ShowPopup](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PopupControlContainer.html#Syncfusion_Windows_Forms_PopupControlContainer_ShowPopup_System_Drawing_Point_) method of PopupControlContainer to display the pop-up at a desired location. The appropriate code to do this is given in the following section.
 
 ## Add control manually in code
 
