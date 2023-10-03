@@ -202,7 +202,7 @@ Me.commandBar1.BackColor = Color.Green
 
 ![Dock bar back color customized](Appearance-Customization-images/commandbar_backColor_Modified.png)
 
-The default back color of the command bar can be applied by reseting the command bar back color via the [`ResetBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_ResetBackColor). Once the default back color gets modified the [`BackColorChanged`](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs.
+The default back color of the command bar can be applied by reseting the command bar back color via the [`ResetBackColor`](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.CommandBar.html#Syncfusion_Windows_Forms_Tools_CommandBar_ResetBackColor). Once the default back color gets modified the [`BackColorChanged`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.backcolorchanged?redirectedfrom=MSDN&view=netframework-4.7.2) event occurs.
 
 ## Command bar text
 

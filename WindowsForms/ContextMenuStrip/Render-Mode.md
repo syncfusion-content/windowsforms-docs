@@ -122,5 +122,5 @@ Me.contextMenuStripEx1.Renderer = New Office12ToolStripRenderer(New Office12Colo
 
 ## See also
 
-[How to add an icon in a header of WinForms ContextMenuStripEx using CustomRenderer class](https://support.syncfusion.com/kb/article/10354/how-to-add-an-icon-in-a-header-of-winforms-contextmenustripex)
+[How to add an icon in a header of WinForms ContextMenuStripEx using CustomRenderer class](https://www.syncfusion.com/kb/11927)
 
