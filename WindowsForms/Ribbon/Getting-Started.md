@@ -15,7 +15,7 @@ This section explains how to implement a similar UI as Microsoft Outlook using [
 
 *	Drag and drop the ‘RibbonControlAdv’ from toolbox to designer. The required assembly references will be added automatically. It will generate the Ribbon as shown below:
 
-![Adding RibbonControlAdv from Toolbox](Getting_Started_Images/Getting-Started_img1.jpg)
+![Add Ribbon control from toolbox in WindowsForms application](getting_started_images/windowsforms-ribbon-toolbox-.jpg)
 
 ## Add RibbonControlAdv in Code
 
@@ -116,17 +116,17 @@ Me.ribbonControlAdv1.RibbonStyle = RibbonStyle.Office2016
 
 {% endtabs %}
 
-![VIsual styles in RibbonControlAdv](Getting_Started_Images/Getting-Started_img2.jpg)
+![Applying visual styles in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-applying-visual-style.jpg)
 
 ## Add Tabs to Ribbon
 
 RibbonControlAdv lets you to create ToolStripTabItems easily using the smart tag. It also adds a RibbonPanel to which ToolStripItems can be added.
 
-![Adding Tabs through designer](Getting_Started_Images/Getting-Started_img3.jpg)
+![Adding tabs through designer in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tabs-through-designer.jpg)
 
 Customize the Tab item using the property grid.
 
-![Customizing the Tab items](Getting_Started_Images/Getting-Started_img4.jpg)
+![Customizing the tab items in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-customizing-the-tab-items.jpg)
 
 A new TabItem can be added to the RibbonControlAdv programmatically using the `AddMainItem` method. Create a ToolStripTabItem and then add it to the RibbonControlAdv using the below method.
 
@@ -192,13 +192,13 @@ Me.ribbonControlAdv1.MenuButtonText = "File"
 
 {% endtabs %}
 
-![Adding tabs through code](Getting_Started_Images/Getting-Started_img5.jpg)
+![Adding tabs through code in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tabs-through-code.jpg)
 
 ## Adding groups inside Tab
 
 ToolStripEx is used to create groups inside a Tab, it can be added to the Ribbon panel using its smart tag or using `Add ToolStrip` verb in the property grid.
 
-![Adding tabs through designer](Getting_Started_Images/Getting-Started_img6.jpg)
+![Adding groups inside tab in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-groups-inside-tab.jpg)
 
 {% tabs %}
 
@@ -301,7 +301,7 @@ this.viewTabItem.Panel.Controls.AddRange(new Control[] { currentViewToolStripEx,
 
 To add controls to the ToolStripEx, click the button  in it, as in the image below.
 
-![Adding ToolStripEx inside the tab through code](Getting_Started_Images/Getting-Started_img7.jpg)
+![Adding tool strip inside the tab through code in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-inside-the-tab-through-code.jpg)
 
 ## Add Button Controls
 
@@ -391,7 +391,7 @@ this.forwardButton});
 
 {% endtabs %}
 
-![Adding ToolStripButton](Getting_Started_Images/Getting-Started_img14.jpg)
+![Adding tool strip button in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-button.jpg)
 
 #### Adding ToolStripButton to simplified layout
 
@@ -430,7 +430,7 @@ toolStripExImageProvider1.SetMediumItemImage(formatButton, 2);
 
 {% endtabs %}
 
-![Adding ToolStripButton to simplified layout](Getting_Started_Images/ToolStripButton_SimplifiedLayout.png)
+![Adding tool strip button to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-tool-strip-button-simplified-layout.png)
 
 #### Holding the Selection of ToolStripButton
 
@@ -503,7 +503,7 @@ this.tagsToolStripEx.Items.AddRange(new ToolStripItem[] { readUnreadPanel });
 
 {% endtabs %}
 
-![Adding Radio button in the ToolStripEx](Getting_Started_Images/Getting-Started_img16.jpg)
+![Adding tool strip radio button in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-radio-button.jpg)
 
 #### Adding ToolStripRadioButton to simplified layout
 
@@ -522,7 +522,7 @@ toolStripEx1.Items.Add(radioButton);
 
 {% endtabs %}
 
-![Adding ToolStripRadioButton to simplified layout](Getting_Started_Images/ToolStripRadioButton_SimplifiedLayout.png)
+![Adding tool strip radio button to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-tool-strip-radio-button-simplified-layout.png)
 
 ### ToolStripDropDownButton
 
@@ -532,7 +532,7 @@ DropDownButton appears like normal button with an extra drop arrow. It accepts D
 
 Click the button inside the ToolStripEx panel and select DropDownButton from the controls grid.
 
-![Adding ToolStripDropDownButton to the ToolStripEx](Getting_Started_Images/Getting-Started_img8.jpg)
+![Adding tool strip dropdownbutton in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-dropdown-button.jpg)
 
 Through code
 
@@ -609,7 +609,7 @@ this.tagsToolStripEx.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 
 {% endtabs %}
 
-![Adding ToolStripDropDownButton through code](Getting_Started_Images/Getting-Started_img9.jpg)
+![Adding tool strip dropdownbutton through code in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-dropdown-button-through-code.jpg)
 
 #### Adding ToolStripDropDownButton to simplified layout
 
@@ -636,19 +636,19 @@ toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
 
 {% endtabs %}
 
-![Adding ToolStripDropDownButton to simplified layout](Getting_Started_Images/ToolStripDropDownButton_SimplifiedLayout.png)
+![Adding tool strip dropdownbutton to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-tool-strip-dropdownbutton-simplified-layout.png)
 
 #### Adding DropDownMenuItems
 
 DropDownMenuItems can be added through the button property `DropDownItems`, this will invoke an Item Collection editor and items can be added through this editor.
 
-![Adding menu items through Properties](Getting_Started_Images/Getting-Started_img10.jpg)
+![Adding menu items through properties in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-menu-items-through-properties.jpg)
 
-![Adding menu items through collection editor](Getting_Started_Images/Getting-Started_img11.jpg)
+![Adding menu items through collection editor in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-menu-items-through-editor.jpg)
 
 Items can also be added to the dropdown by clicking on the dropdown button and click the small arrow as shown in the image
 
-![Adding menu items through designer](Getting_Started_Images/Getting-Started_img12.jpg)
+![Adding menu items through designer in WindowsForms](getting_started_images/windowsforms-ribbon-adding-menu-items-through-designer.jpg)
 
 Through code
 
@@ -704,7 +704,7 @@ Me.toolStripDropDownButton.DropDownItems.AddRange(New System.Windows.Forms.ToolS
 
 {% endtabs %}
 
-![Adding menu items through code](Getting_Started_Images/Getting-Started_img13.jpg)
+![Adding menu items through code in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-menu-items-through-code.jpg)
 
 #### Properties of ToolStripDropDownButton
 
@@ -913,7 +913,7 @@ toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
 
 {% endtabs %}
 
-![Adding ToolStripSplitButtonEx to simplified layout](Getting_Started_Images/ToolStripSplitButtonEx_SimplifiedLayout.png)
+![Adding tool strip split button to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-adding-ribbon-tool-strip-split-button-simplified-layout.png)
 
 ### ToolStripSplitButton
 
@@ -952,7 +952,7 @@ Me.moveToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.r
 
 {% endtabs %}
 
-![Adding ToolStripSplitButton](Getting_Started_Images/Getting-Started_img15.jpg)
+![Adding tool strip split button in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-split-button.jpg)
 
 #### Adding ToolStripSplitButton to simplified layout
 
@@ -979,7 +979,7 @@ toolStripExImageProvider1.SetMediumItemImage(pasteButton, 0);
 
 {% endtabs %}
 
-![Adding ToolStripSplitButton to simplified layout](Getting_Started_Images/ToolStripSplitButton_SimplifiedLayout.png)
+![Adding tool strip split button to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-tool-strip-split-button-to-simplified-layout.png)
 
 ### Text alignment for DropDownMenuItems and SplitButtonMenuItems
 
@@ -1015,7 +1015,7 @@ setDefaultPasteToolStripMenuItem.TextAlign = ContentAlignment.MiddleRight
 {% endhighlight %}
 {% endtabs %}
 
-![Text alignmnet of ToolStripMenuItem](Getting_Started_Images/MenuItemTextAlignment.png)
+![Menu item text alignment in WindowsForms Ribbon](getting_started_images/windosforms-ribbon-menu-item-text-alignment.png)
 
 ## Add ToolStripComboBoxEx
 
@@ -1060,7 +1060,7 @@ this.colorSchemeToolStripEx.Items.AddRange(new ToolStripItem[] { visualstyleComb
 
 {% endtabs %}
 
-![Adding ToolStripComboBoxEx](Getting_Started_Images/Getting-Started_img17.jpg)
+![Adding control manually in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-control-manually.jpg)
 
 ### DropDownStyle
 
@@ -1086,7 +1086,7 @@ toolStripEx1.Items.Add(comboBoxEx);
 
 {% endtabs %}
 
-![Adding ToolStripComboBoxEx to simplified layout](Getting_Started_Images/ToolStripComboBoxEx_SimplifiedLayout.png)
+![Adding tool strip combobox to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-combobox-simplified-layout.png)
 
 ### ToolStripComboBox
 
@@ -1098,7 +1098,7 @@ RibbonControlAdv provides options to add a collection of items and store them in
 
 Gallery Items can be added through the Items Collection Editor from the Property grid of ToolStripGallery.
 
-![Adding ToolStripGallery](Getting_Started_Images/Getting-Started_img18.jpg)
+![Adding tool strip gallery in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-gallery.jpg)
 
 ### Scroller Settings
 
@@ -1192,7 +1192,7 @@ this.quickGallery});
 
 {% endtabs %}
 
-![Adding Gallery to ToolStripEx through code](Getting_Started_Images/Getting-Started_img19.jpg)
+![Scroller setting in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-scroller-setting.jpg)
 
 ### Adding ToolStripGallery to simplified layout
 
@@ -1226,7 +1226,7 @@ toolStripEx1.Items.Add(quickGallery);
 
 {% endtabs %}
 
-![Adding ToolStripGallery to simplified layout](Getting_Started_Images/ToolStripGallery_SimplifiedLayout.png)
+![Adding tool strip gallery to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-gallery-to-simplified-layout.png)
  
 ## Add ToolStripCheckBox
 
@@ -1262,7 +1262,7 @@ Me.messagesToolStripEx.Items.Add(showAsConversationCheckBox)
 
 {% endtabs %}
 
-![Adding ToolStripCheckBox](Getting_Started_Images/Getting-Started_img20.jpg)
+![Adding tool strip checkbox in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-checkbox.jpg)
 
 ### Adding ToolStripCheckBox to simplified layout
 
@@ -1281,7 +1281,7 @@ toolStripEx1.Items.Add(checkBox);
 
 {% endtabs %}
 
-![Adding ToolStripCheckBox to simplified layout](Getting_Started_Images/ToolStripCheckBox_SimplifiedLayout.png)
+![Adding tool strip checkbox to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-checkbox-to-simplified-layout.png)
 
 ## Add ToolStripTextBox
 
@@ -1328,7 +1328,7 @@ Me.peopleToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me
 
 In the code, the text box will be added to a panel and the panel will be added to the ToolStripEx. (For more details about panel refer `Arrange items using ToolStripPanelItem`)
 
-![Adding ToolStripTextBox](Getting_Started_Images/Getting-Started_img21.jpg)
+![Adding tool strip textbox in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-textbox.jpg)
 
 ### Adding ToolStripTextBox to simplified layout
 
@@ -1347,7 +1347,7 @@ toolStripEx1.Items.Add(textBox);
 
 {% endtabs %}
 
-![Adding ToolStripTextBox to simplified layout](Getting_Started_Images/ToolStripTextBox_SimplifiedLayout.png)
+![Adding tool strip textbox to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-textbox-to-simplified-layout.png)
 
 ## Add ToolStripProgressBar
 
@@ -1393,7 +1393,7 @@ Me.layoutToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me
 
 {% endtabs %}
 
-![Adding ToolStripProgressBar](Getting_Started_Images/Getting-Started_img22.jpg)
+![Adding tool strip progressbar in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-progressbar.jpg)
 
 ### Adding ToolStripProgressBar to simplified layout
 
@@ -1412,7 +1412,7 @@ toolStripEx1.Items.Add(progressBar);
 
 {% endtabs %}
 
-![Adding ToolStripProgressBar to simplified layout](Getting_Started_Images/ToolStripProgressBar_SimplifiedLayout.png)
+![Adding tool strip progressbar to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-progressbar-to-simplified-layout.png)
 
 ## Add ToolStripLabel
 
@@ -1454,7 +1454,7 @@ Me.progressbarPanelItem.Items.Add(Me.loadingToolStripLabel)
 
 {% endtabs %}
 
-![Adding ToolStripLabel](Getting_Started_Images/Getting-Started_img23.jpg)
+![Adding tool strip label in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-label.jpg)
 
 ### Adding ToolStripLabel to simplified layout
 
@@ -1473,7 +1473,7 @@ toolStripEx1.Items.Add(toolStripLabel);
 
 {% endtabs %}
 
-![Adding ToolStripLabel to simplified layout](Getting_Started_Images/ToolStripLabel_SimplifiedLayout.png)
+![Adding tool strip label to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-label-simplified-layout.png)
 
 ## Add ToolStripSeparator
 
@@ -1506,7 +1506,7 @@ Me.tagsToolStripEx.Items.Add(toolStripSeparator)
 
 {% endtabs %}
 
-![Adding ToolStripSeparator](Getting_Started_Images/Getting-Started_img24.jpg)
+![Adding tool strip separator in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-separator.jpg)
 
 ### Adding ToolStripSeparator to simplified layout
 
@@ -1542,7 +1542,7 @@ toolStripExImageProvider1.SetMediumItemImage(copyButton, 1);
 
 {% endtabs %}
 
-![Adding ToolStripSeparator to simplified layout](Getting_Started_Images/ToolStripSeparator_SimplifiedLayout.png)
+![Adding tool strip separator to simplified layout in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-tool-strip-separator-to-simplified-layout.png)
 
 ## Arrange item using ToolStripPanelItem
 
@@ -1550,7 +1550,7 @@ ToolStripPanelItem provides support for aligning the controls in multiple lines.
 
 Using the `RowCount` property of ToolStripPanelItem, controls can be arranged in any number of rows inside a ToolStripPanelItem.
 
-![Arranging items using ToolStripPanelItem](Getting_Started_Images/Getting-Started_img25.jpg)
+![Arranging items using tool strip panel in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-arranging-items-using-tooltip-strip-panel.jpg)
 
 ### Adding Controls to Panel Item
 
@@ -1613,7 +1613,7 @@ Me.currentViewToolStripEx.Items.AddRange(New System.Windows.Forms.ToolStripItem(
 
 {% endtabs %}
 
-![Adding ToolStripItems to the Panel](Getting_Started_Images/Getting-Started_img26.jpg)
+![Adding controls to the panel items in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-controls-to-the-panel-items.jpg)
 
 ## Add QAT
 
@@ -1626,7 +1626,7 @@ By default, the location of QAT will be above the Ribbon, its location can be ch
 
 QAT item can be added by right clicking the ribbon item and choosing `Add to Quick Access Toolbar` from the context menu.
 
-![Adding items to QAT](Getting_Started_Images/Getting-Started_img27.jpg)
+![Adding items to QAT in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-items-to-qat.jpg)
 
 ## Add BackStage
 
@@ -1636,15 +1636,15 @@ The following are steps to create a BackStageView:
 
 1. Drag and drop the BackStageView from the Toolbox.
 
-![Adding BackStageView through ToolBox](Getting_Started_Images/Getting-Started_img28.jpg)
+![Adding back stage in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-back-stage.jpg)
 
 2. Select the backStageView control below the designer and click the smart tag from the focus rectangle and then click `ShowBackstage`.
 
-![Navigating to BackStage](Getting_Started_Images/Getting-Started_img29.jpg)
+![Navigating to back stage in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-navigating-to-back-stage.jpg)
 
 3. Set BackStageView to RibbonControlAdv
 
-![Setting BackStageView to the Ribbon](Getting_Started_Images/Getting-Started_img30.jpg)
+![Setting back stage view to the WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-setting-back-stage-view.jpg)
 
 Set a name to the menu button with the property `MenuButtonText` 
 
@@ -1666,13 +1666,13 @@ Me.ribbonControlAdv1.MenuButtonText = "File"
 
 4. An Empty BackStage will be created. By clicking the File menu button, BackStage will be shown.
 
-![Creating BackStage](Getting_Started_Images/Getting-Started_img31.jpg)
+![Creating back stage in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-creating-back-stage.jpg)
 
 ### Add BackStage Tab
 
 BackStage Tab can be added through Smart tag of backstage view.
 
-![Adding Tab in the BackStage through designer](Getting_Started_Images/Getting-Started_img32.jpg)
+![Adding back stage tab in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-back-stage-tab.jpg)
 
 **Through Coding**
 
@@ -1743,7 +1743,7 @@ this.backStage1.Controls.Add(printBackStageTab);
 
 BackStage Button can be added through Smart tag of backstage view.
 
-![Adding BackStageButton](Getting_Started_Images/Getting-Started_img33.jpg)
+![Adding back stage button in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-back-stage-button.jpg)
 
 **Through Coding**
 
@@ -1795,14 +1795,14 @@ this.backStage1.Controls.Add(exitBackStageButton);
 `BackStageSeparator` – a thin line that separates the neighboring items.
 Separator can be added through Smart tag as explained in adding backstage button and tab.
 
-![Addings tabs, button and separator in the BackStage](Getting_Started_Images/Getting-Started_img34.jpg)
+![Addings tabs, button and separator in WindowsForms Ribbon Back Stage](getting_started_images/windowsforms-ribbon-adding-tabs-button-and-separator-in-the-back-stage.jpg)
 
 
 ## Add ApplicationMenu
 
 The RibbonControlAdv has the office menu button at the top left corner of the form. Controls can be added to the panels of the office menu button dropdown through designer.
 
-![Adding Application Menu](Getting_Started_Images/Getting-Started_img35.jpg)
+![Adding application menu in WindowsForms Ribbon](getting_started_images/windowsforms-ribbon-adding-application-menu.jpg)
 
 N> ApplicationMenu can be accessed only when ribbon style is Office2007
 
