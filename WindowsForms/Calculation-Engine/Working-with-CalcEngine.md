@@ -230,7 +230,7 @@ string result = engine.GetValueFromArg("A1")
 ### IterationMaxCount
 
 Gets or sets the maximum number of iterative calls that can be made on a cell to avoid circular exception. The default value is 0 indicating that iterative 
-calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ThrowCircularException) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_IterationMaxCount).
+calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ThrowCircularException) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_IterationMaxTolerance).
 
 ### IterationMaxTolerance
 
@@ -296,7 +296,7 @@ Gets or sets whether the `CalcEngine` throws any exception that occurs during th
 
 ### RethrowParseExceptions
 
-The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings]((https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages))collection without throwing exception.
+The default value of `RethrowParseExceptions` is false.If the value is set as true, CalcEngine throws an exception from [FormulaErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages) collection. If the value is set as false, and the parsed formula is not a valid one,it returns error message  from [ErrorStrings](https://help.syncfusion.com/windowsforms/calculation-engine/parse-and-compute#error-messages)collection without throwing exception.
 
 ### SupportLogicalOperators
 
