@@ -649,7 +649,7 @@ Specifies the position of the chart. Possible values are,<ul><li>Top</li><li>Bot
 Specifies the alignment of the title with respect to the chart borders. Possible values:<ul><li>Near</li><li>Center</li><li>Far</li></ul></td></tr>
 <tr>
 <td>
-{{'[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html#)'| markdownify }}
+{{'[Font](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Chart.ChartControl.html)'| markdownify }}
 </td><td>
 Indicates the font style of the title.</td></tr>
 <tr>
