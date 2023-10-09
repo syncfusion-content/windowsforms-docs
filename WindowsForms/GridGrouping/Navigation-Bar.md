@@ -183,7 +183,7 @@ Me.gridGroupingControl1.RecordNavigationControl.ForeColor = Color.White
 ![Navigation-Bar_img8](Navigation-Bar_images/Navigation-Bar_img8.png)
 
 ## VisualStyles
-The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GridOfficeScrollBars) property which automatically changes the visual style. Check [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/getting-started) topic for more information on this.
+The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GridOfficeScrollBars) property which automatically changes the visual style. Check [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started) topic for more information on this.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +239,7 @@ Me.gridGroupingControl1.RecordNavigationBar.MovePrevious()
 For more information, refer our dashboard sample which is located in this path &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Installed_Version&gt;\Windows\Grid.Grouping.Windows\Samples\Selection\Record Range Selection Demo\
 
 ## Visibility of Arrow Buttons
-The visibility of the arrow buttons can be changed by setting the [NavigationButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_NavigationButtons) property appropriate value from the [DisplayArrowButtons](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration.
+The visibility of the arrow buttons can be changed by setting the [NavigationButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridRecordNavigationControl.html#Syncfusion_Windows_Forms_Grid_GridRecordNavigationControl_NavigationButtons) property appropriate value from the [DisplayArrowButtons](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.DisplayArrowButtons.html) enumeration.
 
 {% tabs %}
 {% highlight c# %}
