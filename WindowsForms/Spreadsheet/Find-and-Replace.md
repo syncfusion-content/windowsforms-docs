@@ -24,10 +24,10 @@ Searches for specific data such as particular number or text according to specif
 
 The common parameters to be passed in Find functions are,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html)).
+* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html)).
 * The text to be searched.
-* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchBy.html) enum.
-* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelFindType.html) enum.
+* The option to specify the direction whether the search can be done either by row wise or column wise using [SearchBy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchBy.html) enum.
+* The type to specify whether the search can be done either in formulas or values using [ExcelFindType](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.ExcelFindType.html) enum.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
 * For matching the entire cell content with the search text, pass the parameter as true otherwise you can pass the parameter as false.
 
@@ -169,7 +169,7 @@ Searches and replaces all the texts either in the workbook or worksheet based on
 
 The parameters to be passed in [ReplaceAll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Commands.SearchManager.html#Syncfusion_Windows_Forms_Spreadsheet_Commands_SearchManager_ReplaceAll_Syncfusion_XlsIO_IWorkbook_System_String_System_String_System_Boolean_System_Boolean_) function is,
 
-* The option to specify whether the search can be done within the Workbook([IWorkbook](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html)) in Spreadsheet.
+* The option to specify whether the search can be done within the Workbook([IWorkbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html)) or Worksheet([IWorksheet](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorksheet.html)) in Spreadsheet.
 * The text to be searched.
 * The text to be replaced.
 * For a case sensitive search, pass the parameter as true otherwise you can pass the parameter as false.
