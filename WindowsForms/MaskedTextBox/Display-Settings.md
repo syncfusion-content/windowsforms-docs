@@ -241,7 +241,7 @@ Indicates the character to display for password input for single-line edit contr
 </table>
 
 
-The [MaskedEditBox.Sequentially](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Sequentially) property indicates whether the control can sequentially display mask characters. After setting the `Sequentially` property to 'True', you can use the [PasswordChar](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.passwordchar?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_PasswordChar) property in order to set the character, that is to be displayed as a substitute for the user input.
+The [MaskedEditBox.Sequentially](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.MaskedEditBox.html#Syncfusion_Windows_Forms_Tools_MaskedEditBox_Sequentially) property indicates whether the control can sequentially display mask characters. After setting the `Sequentially` property to 'True', you can use the [PasswordChar](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.passwordchar?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_PasswordChar) property in order to set the character, that is to be displayed as a substitute for the user input.
 
 {% tabs %}
 
