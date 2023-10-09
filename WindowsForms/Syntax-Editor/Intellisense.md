@@ -575,7 +575,7 @@ The preceding code has to be placed within the <lexems> section of the configura
 
 ### Populate context prompt 
 
-Context Prompt is populated by handling the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) event in EditControl, and adding new prompts by using the AddPrompt function.
+Context Prompt is populated by handling the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptOpen) event in EditControl, and adding new prompts by using the AddPrompt function.
 
 {% tabs %}
 
@@ -626,15 +626,15 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[ContextPromptBeforeOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html)' | markdownify }}</td><td>
+{{ '[ContextPromptBeforeOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptBeforeOpen)' | markdownify }}</td><td>
 Occurs when the Context Prompt window is about to open. User can cancel it.</td></tr>
 <tr>
 <td>
-{{ '[ContextPromptClose](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html)' | markdownify }}</td><td>
+{{ '[ContextPromptClose](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptClose)' | markdownify }}</td><td>
 Occurs when the Context Prompt window has been closed.</td></tr>
 <tr>
 <td>
-{{ '[ContextPromptSelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html)' | markdownify }}</td><td>
+{{ '[ContextPromptSelectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptSelectionChanged)' | markdownify }}</td><td>
 Occurs when a Context Prompt item has been selected.</td></tr>
 </table>
 
@@ -936,7 +936,7 @@ Me.editControl1.UseCustomSizeContextPrompt = True
 
 ### Advanced customizations
 
-To do some advanced customizations in the Context Prompt feature like highlighting the current parameter to be input in bold, you can use the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) and [ContextPromptUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html) events.
+To do some advanced customizations in the Context Prompt feature like highlighting the current parameter to be input in bold, you can use the [ContextPromptOpen](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptOpen) and [ContextPromptUpdate](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Edit.EditControl.html#Syncfusion_Windows_Forms_Edit_EditControl_ContextPromptUpdate) events.
 
 For example, add the bold items in the ContextPromptOpen event handler. The indices for the exact position of the text should be manually calculated as bold and specified along with some text information associated with that particular argument.
 

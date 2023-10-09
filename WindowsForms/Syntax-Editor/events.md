@@ -480,7 +480,7 @@ Member</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{ '[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
+{{ '[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0)' | markdownify }}</td><td>
 Specifies a value indicating whether the event should be canceled or not.</td></tr>
 </table>
 
