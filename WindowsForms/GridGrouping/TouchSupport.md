@@ -27,8 +27,8 @@ GridGroupingControl provides the swipe scrolling support in both horizontal and 
 N> To have the proper horizontal and vertical pixel touch scrolling, the [HScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixel) and [VScrollPixel](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_VScrollPixel) properties should be set to `true`. By default the `HScrollPixel` and `VScrollPixel` properties is `true`. 
 
 ## Touch Zooming
-The GridGroupingControl allows to perform the touch zoom in or out operations to the entire grid by initialize the [ZoomGroupingGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html#) class where the constructor takes a parameter as a `GridGroupingControl` object.
-To have this touch zooming support in grid, the [GridHelperClasses.Windows](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html#) assembly needs to be added into the assembly reference.
+The GridGroupingControl allows to perform the touch zoom in or out operations to the entire grid by initialize the [ZoomGroupingGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.Zoom.ZoomGroupingGrid.html) class where the constructor takes a parameter as a `GridGroupingControl` object.
+To have this touch zooming support in grid, the [GridHelperClasses.Windows](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) assembly needs to be added into the assembly reference.
 {% tabs %}
 {% highlight c# %}
 // Initialize the Zooming to GridGroupingControl   

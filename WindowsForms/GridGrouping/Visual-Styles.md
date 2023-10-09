@@ -39,7 +39,7 @@ Me.gridGroupingControl1.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualSt
 
 N> To apply the enhanced themes to the GridGroupingControl, set [EnableLegacyStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableModel.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableModel_EnableLegacyStyle) property to `false`. 
 
-Along with the basic themes defined by `GridVisualStyles`, you can also apply themes by using [GridSkins](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library. Currently, it comes with `Vista` skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html#Syncfusion_GridHelperClasses_GridSkins_ApplySkin_Syncfusion_Windows_Forms_Grid_GridModel_Syncfusion_GridHelperClasses_Skins_) method.
+Along with the basic themes defined by `GridVisualStyles`, you can also apply themes by using [GridSkins](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html). It is available as an add-on feature in the [GridHelperClasses](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.html) library. Currently, it comes with `Vista` skin that makes the grid components appear in vista-like look and feel. This can be set to the grid by using the [ApplySkin](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridHelperClasses.GridSkins.html#Syncfusion_GridHelperClasses_GridSkins_ApplySkin_Syncfusion_Windows_Forms_Grid_GridModel_Syncfusion_GridHelperClasses_Skins_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ Me.gridGroupingControl1.ThemesEnabled = True
 {% endtabs %}
 
 ## Applying themes for ComboBox Cell
-There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to `false`. It will add the [GridListControl](http://help.syncfusion.com/windowsforms/gridlist/creating-grid-list-control) to the ComboBox drop down and the visual style of the grid will be applied. 
+There will be no themes applied to the ComboBox cell by default. If you want to enable the theme, set [EnableGridListControlInComboBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModel.html#Syncfusion_Windows_Forms_Grid_GridModel_EnableGridListControlInComboBox)  property to `false`. It will add the [GridListControl](https://help.syncfusion.com/windowsforms/multicolumn-listbox/getting-started#creating-application-with-gridlistcontrol) to the ComboBox drop down and the visual style of the grid will be applied. 
 
 {% tabs %}
 {% highlight c# %}
@@ -135,7 +135,7 @@ Me.gridGroupingControl1.SetMetroStyle(metroColor)
 ![Visual-Style_img3](Visual-Style_images/Visual-Style_img3.jpeg)
 
 ## Modifying Metro Scrollbar Colors
-The scrollbars of the metro visual style can be customized by setting the [MetroColorTable](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroColorTable.html) property as of follows. 
+The scrollbars of the metro visual style can be customized by setting the [MetroColorTable](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.MetroColorTable.html) property as of follows. 
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ThumbNormal = Color.ForestG
 {% endtabs %}
 ![Visual-Style_img4](Visual-Style_images/Visual-Style_img4.jpeg)
 
-N> The scrollbar customization is briefly discussed in the [Scrolling](http://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
+N> The scrollbar customization is briefly discussed in the [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
 
 ## Modifying Office2016 colors
 
@@ -222,7 +222,7 @@ Me.gridGroupingControl1.TableControl.Office2016ColorfulColorTable.ThumbNormal = 
 ![Visual-Style_img8](Visual-Style_images/Visual-Style_img8.jpeg)
 
 ## Skin Manager
-Theme can also be applied to the GridGroupingControl by using [SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IContextMenuProvider.html#Syncfusion_Windows_Forms_IContextMenuProvider_SetVisualStyle_Syncfusion_Windows_Forms_VisualStyle_) method of [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
+Theme can also be applied to the GridGroupingControl by using [SetVisualStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IContextMenuProvider.html#Syncfusion_Windows_Forms_IContextMenuProvider_SetVisualStyle_Syncfusion_Windows_Forms_VisualStyle_) method of [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -234,7 +234,7 @@ SkinManager.SetVisualStyle(this.gridGroupingControl1, VisualTheme.Office2010Blue
 SkinManager.SetVisualStyle(Me.gridGroupingControl1, VisualTheme.Office2010Blue)
 {% endhighlight %}
 {% endtabs %}
-The [SkinManager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridGroupingControl. It is also used to apply the same visual style for all the Syncfusion controls in the form.
+The [SkinManager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.SkinManager.html) provides the supports for all the [VisualTheme](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.VisualTheme.html) available in GridGroupingControl. It is also used to apply the same visual style for all the Syncfusion controls in the form.
 {% tabs %}
 {% highlight c# %}
 // Code for applying visual theme for the whole form.
@@ -249,10 +249,10 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 ![Visual-Style_img5](Visual-Style_images/Visual-Style_img5.jpeg)
 
 ## Customizing Visual Styles
-All the elements of the GridGroupingControl appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
+All the elements of the GridGroupingControl appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
 
 ### Customization Using IVisualStylesDrawing
-The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
+The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
 
 {% tabs %}
 {% highlight c# %}

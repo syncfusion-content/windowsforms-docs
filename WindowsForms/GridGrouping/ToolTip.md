@@ -122,10 +122,10 @@ Me.gridGroupingControl1.TableControl.CellToolTip.Active = False
 
 The below properties are used to set the ToolTip delay time.
 
-* [AutoPopDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=net-5.0)
-* [InitialDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=net-5.0)
-* [ReshowDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=net-5.0)
-* [AutomaticDelay](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=net-5.0)
+* [AutoPopDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.autopopdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [InitialDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.initialdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [ReshowDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.reshowdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
+* [AutomaticDelay](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.tooltip.automaticdelay?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0)
 
 ### AutoPopDelay
 
@@ -210,7 +210,7 @@ Me.gridGroupingControl1.TableControl.CellToolTip.AutomaticDelay = 1000
 {% endhighlight %}
 {% endtabs %}
 
-N> The [CellToolTip  ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_CellToolTip) property can be accessed through [TableControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#) . The ToolTip delay time can be assigned to Nested tables by using the [GetTableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GetTableControl_System_String_) method.
+N> The [CellToolTip  ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridTableControl_CellToolTip) property can be accessed through [TableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridTableControl.html#) . The ToolTip delay time can be assigned to Nested tables by using the [GetTableControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GetTableControl_System_String_) method.
 
 ## Event
 
