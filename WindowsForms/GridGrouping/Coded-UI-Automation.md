@@ -385,7 +385,7 @@ To enable the Coded UI support for grid, the following steps has to be implement
 * Deploying Extensions Assemblies
 * Preparing Grid sample application
 
-The assemblies and copydrop.bat file can be downloaded from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Coded_UI_Assemblies-378283712.zip) link.
+The assemblies and copydrop.bat file can be downloaded from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Coded_UI_Assemblies-378283712.zip) link.
 
 #### Deploying Extensions Assemblies
 This section explains about deploying the external assemblies through batch file or manual deployment. 

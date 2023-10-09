@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Conditional Formatting in Windows Forms GridGrouping
-GridGroupingControl provides built-in support for Conditional Formatting. It is used to format grid cells based on a certain conditions. The conditional formatting can be added to the GridGroupingControl by defining the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). This descriptor is used to specify the filter criteria for the cells and the style to be applied for filtered cells.  
+GridGroupingControl provides built-in support for Conditional Formatting. It is used to format grid cells based on a certain conditions. The conditional formatting can be added to the GridGroupingControl by defining the [GridConditionalFormatDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). This descriptor is used to specify the filter criteria for the cells and the style to be applied for filtered cells.  
 
 The following steps are used to add the conditional formatting through the editor,
 
@@ -89,7 +89,7 @@ N> The conditional formatting is implemented in the following dashboard sample,
 &lt;Install_Location&gt;\Syncfusion\EssentialStudio\[Version_Number]\Windows\Grid.Grouping.Windows\Samples\Styling and Formatting\Conditional Formatting Demo
 
 ## Formatting Preview Rows
-The appearance of the record [preview ](http://help.syncfusion.com/windowsforms/gridgrouping/faq/layout-and-appearance/how-to-set-texts-in-the-preview-record)row can be customized by using the conditional formatting.
+The appearance of the record [preview ](https://help.syncfusion.com/windowsforms/gridgrouping/faq/layout-and-appearance/how-to-set-texts-in-the-preview-record)row can be customized by using the conditional formatting.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ Data bar is an Excel Inspired Data bar which is used to visualize the negative a
 ![Data-Bar_img1](Data-Bar_images/Data-Bar_img1.png)
 
 The following steps can be followed to add the data bar through the editor,
-1.Navigate the Property window of GridGroupingControl to the **TableDescriptor** -> **ConditionalFormats** and click the browse button to open the [GridConditionalFormatDescriptor](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) collection editor.
+1.Navigate the Property window of GridGroupingControl to the **TableDescriptor** -> **ConditionalFormats** and click the browse button to open the [GridConditionalFormatDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html) collection editor.
 
 ![Data-Bar_img2](Data-Bar_images/Data-Bar_img2.png)
 
@@ -210,7 +210,7 @@ Then, Navigate into the `GridConditionalFormatDescriptor` collection editor wind
 
 N> Data bar can also be drawn without expression.
 
-3.Choose the rule type as `DataBar` and click `Add` button, it will add a new[ConditionalFormatDataBarRule](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html) to the [ConditionalFormatRuleBaseCollection](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatRuleBaseCollection.html). Set the column name and style for data bar rule.
+3.Choose the rule type as `DataBar` and click `Add` button, it will add a new[ConditionalFormatDataBarRule](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.ConditionalFormatDataBarRule.html) to the [ConditionalFormatRuleBaseCollection](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridConditionalFormatDescriptor.html). Set the column name and style for data bar rule.
 
 ![Data-Bar_img4](Data-Bar_images/Data-Bar_img4.png)
 
@@ -331,7 +331,7 @@ dataBarRule.NegativeBar.BorderColor = Color.Red
 The border color, fill color and fill style can be changed for positive and negative bars. The fill style can be `Solid` or `Gradient`.
 
 #### Applying Solid color
-To apply solid fill color for data bars, it is necessary to choose [ConditionalFormatDataBarRule.FillStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.BarStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_BarStyleInfo_FillStyle) as `Solid` from [FillStyle](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FillStyle.html) option.
+To apply solid fill color for data bars, it is necessary to choose [ConditionalFormatDataBarRule.FillStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.BarStyleInfo.html#Syncfusion_Windows_Forms_Grid_Grouping_BarStyleInfo_FillStyle) as `Solid` from [FillStyle](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.FillStyle.html) option.
 
 {% tabs %}
 {% highlight c# %}
