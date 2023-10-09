@@ -131,7 +131,7 @@ In docking manager, you can maximize the float window by double-clicking its cap
 
 ### Maximize the float window on double-click caption
 
-By using the [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html) event, you can maximize the float window while double-clicking the CaptionBar. Use the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property to enable or disable the state transition while double-clicking the CaptionBar.
+By using the [OnCaptionDoubleClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_OnCaptionDoubleClick) event, you can maximize the float window while double-clicking the CaptionBar. Use the [EnableDoubleClickOnCaption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.DockingManager.html#Syncfusion_Windows_Forms_Tools_DockingManager_EnableDoubleClickOnCaption) property to enable or disable the state transition while double-clicking the CaptionBar.
 
 {% tabs %}
 
