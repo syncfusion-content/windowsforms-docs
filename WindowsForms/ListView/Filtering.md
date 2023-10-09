@@ -11,9 +11,9 @@ documentation: ug
 This section explains how to filter the data and its related operations in the SfListView.
 
 ## Programmatic Filtering
-The SfListView supports to filter the data by setting the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. You have to call the [SfListView.View.RefreshFilter()](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.WinForms~Syncfusion.DataSource.DataSource~RefreshFilter.html) method after assigning the Filter Property for refreshing the view.
+The SfListView supports to filter the data by setting the [SfListView.View.Filter](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Filter) property. You have to call the [SfListView.View.RefreshFilter()](//help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_RefreshFilter) method after assigning the Filter Property for refreshing the view.
 
-The [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event is raised once filtering is applied to the [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html).                                   
+The [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event is raised once filtering is applied to the [SfListView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html).                                   
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ public Boolean FilterOnMultipleCriteria (Object obj)
 ![ListView Filtering2](Filtering_images/Filtering_img2.png)
 
 ## Getting the filtered data                                                                                         
-You can get the filtered items from the view and modify it in the [SfListView.View.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event. When filter is applied, the filtered items are available in the [SfListView.View.DisplayItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems).
+You can get the filtered items from the view and modify it in the [SfListView.View.FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event. When filter is applied, the filtered items are available in the [SfListView.View.DisplayItems](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems).
 
 {% tabs %}
 {% highlight c# %}
@@ -108,7 +108,7 @@ sfListView1.View.RefreshFilter()
 {% endtabs %}
 
 ## Sort the filtered items                  
-Order of the filtered items can be rearranged in the [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html) event by adding [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html).
+Order of the filtered items can be rearranged in the [FilterChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_FilterChanged) event by adding [SortDescriptor](https://help.syncfusion.com/cr/windowsforms/Syncfusion.DataSource.SortDescriptor.html).
 
 {% tabs %}
 {% highlight c# %}

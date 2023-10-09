@@ -237,7 +237,7 @@ sfListView1.Style.CheckBoxStyle.CheckedTickColor = Color.White
 ![CheckBoxSelectionMode_images8](CheckBoxSelectionMode_images/CheckBoxSelectionMode_img8.png) 
  
 ## Conditional styling
-The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event.
+The SfListView allows the item check box customization by using [SfListView.DrawCheckBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_DrawCheckBox) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -270,7 +270,7 @@ End Sub
 
 ### ItemChecking event
 
-The [ItemChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event is raised while checking an item at the execution time by using ItemChecking event as follows:
+The [ItemChecking](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ItemChecking) event is raised while checking an item at the execution time by using ItemChecking event as follows:
 
 *	`ItemData`: Gets the checked item data object.
 *	`ItemIndex`: Gets an index of checked item.
@@ -302,7 +302,7 @@ End Sub
 {% endtabs %}
 
 ### ItemChecked event
-The [ItemChecked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html) event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
+The [ItemChecked](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.ListView.SfListView.html#Syncfusion_WinForms_ListView_SfListView_ItemChecked) event will occur once checking process is completed for the checked item in the SfListView by using ItemChecked event.
 
 The ItemChecked event used for the following use cases:
 
