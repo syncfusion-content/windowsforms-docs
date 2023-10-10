@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Percent TextBox control | Syncfusion
+title: Overview of Windows Forms Percent TextBox Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Percent TextBox control, its elements and more details.
 platform: WindowsForms
 control: Editors Package

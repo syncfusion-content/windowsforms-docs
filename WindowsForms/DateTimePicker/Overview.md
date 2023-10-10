@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms DateTimePicker control | Syncfusion
+title: Overview of Windows Forms DateTimePicker Control | Syncfusion
 description: SfDateTimeEdit allows user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
 platform: WindowsForms
 control: SfDateTimeEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Radio Button control | Syncfusion
+title: Overview of Windows Forms Radio Button Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Radio Button (RadioButtonAdv) control, its elements and more details.
 platform: WindowsForms
 control: RadioButtonAdv
