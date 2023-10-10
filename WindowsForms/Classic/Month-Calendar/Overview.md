@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Month Calendar control | Syncfusion
+title: Overview of Windows Forms CalendarDateTime Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms MonthCalendarAdv(Classic) control and more details.
 platform: WindowsForms
 control: CalendarDateTime

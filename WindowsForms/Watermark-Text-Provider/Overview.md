@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms WatermarkTextProvider control | Syncfusion
+title: Overview of Windows Forms Watermark Text Provider Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Watermark Text Provider (BannerText) control and more details.
 platform: WindowsForms
 control: BannerTextProvider
