@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Chart control | Syncfusion
+title: Overview of Windows Forms Chart Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio Windows Forms Chart control and more details.
 platform: windowsforms
 control: Chart

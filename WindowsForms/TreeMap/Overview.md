@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms TreeMap control | Syncfusion
+title: Overview of Windows Forms TreeMap Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms TreeMap control, its elements and more details.
 platform: windowsforms
 control: TreeMap 

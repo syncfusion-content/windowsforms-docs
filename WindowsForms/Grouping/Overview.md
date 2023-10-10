@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Grouping control | Syncfusion
+title: Overview of Windows Forms Grouping Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Grouping control, its elements, and more details.
 platform: WindowsForms
 control: Grouping

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Smith Chart control | Syncfusion
+title: Overview of Windows Forms Smith Chart Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Smith Chart (SfSmithChart) control, its elements and more details.
 platform: windowsforms
 control: SfSmithChart
