@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Map control | Syncfusion 
+title: Overview of Windows Forms Map Control | Syncfusion 
 description: This section explains the key features and quick overview about Syncfusion Maps control for WindowsForms.
 platform: windowsforms
 control: Maps
