@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms LayoutManagers Control | Syncfusion
+title: Overview of Windows Forms FlowLayout Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms LayoutManagers control, its elements and more details.
 platform: windowsforms
 control: FlowLayout
