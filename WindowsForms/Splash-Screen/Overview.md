@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Splash Screen control | Syncfusion
+title: Overview of Windows Forms Splash Screen Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Splash Screen (Splash) control, its elements and more details.
 platform: WindowsForms
 control: SplashControl

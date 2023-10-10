@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Splash Panel control | Syncfusion
+title: Overview of Windows Forms Splash Panel Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Splash Panel control, its elements and more details.
 platform: WindowsForms
 control: SplashPanel

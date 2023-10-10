@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms GridRecordNavigationControl | Syncfusion
+title: Overview of Windows Forms Grid Record Navigation Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms GridRecordNavigationControl, its elements, and more details.
 platform: windowsforms
 control: GridRecordNavigationControl

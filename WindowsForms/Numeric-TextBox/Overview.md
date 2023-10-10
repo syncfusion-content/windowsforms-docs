@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Numeric TextBox control | Syncfusion
+title: Overview of Windows Forms Numeric TextBox Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Numeric TextBox (SfNumericTextBox) control and more details.
 platform: WindowsForms
 control: SfNumericTextBox

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms GradientPanelExt control | Syncfusion
+title: Overview of Windows Forms GradientPanelExt Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms GradientPanelExt control, its elements, and more details.
 platform: WindowsForms
 control: GradientPanelExt
