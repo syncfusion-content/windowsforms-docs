@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Calendar control | Syncfusion
+title: Overview of Windows Forms Calendar Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Calendar (SfCalendar) control and more details.
 platform: WindowsForms
 control: SfCalendar

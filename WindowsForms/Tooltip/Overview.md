@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Tooltip control | Syncfusion
+title: Overview of Windows Forms Tooltip Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Tooltip (SfToolTip) control, its elements and more details.
 platform: windowsforms
 control: SfToolTip

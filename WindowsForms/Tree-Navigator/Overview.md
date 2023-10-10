@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Tree Navigator control | Syncfusion
+title: Overview of Windows Forms Tree Navigator Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Tree Navigator control, its elements and more details.
 platform: WindowsForms
 control: TreeNavigator 
