@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Pivot Grid control | Syncfusion
+title: Overview of Windows Forms Pivot Grid Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Pivot Grid control, its elements and more details.
 platform: windowsforms
 control: PivotGrid

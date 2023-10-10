@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms xptoolbar control | Syncfusion
+title: Overview of Windows Forms xptoolbar Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms xptoolbar (XPToolbar) control, its elements and more details.
 platform: WindowsForms
 control: XPToolBar

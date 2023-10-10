@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Editable ListBox control | Syncfusion
+title: Overview of Windows Forms Editable ListBox Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Editable ListBox (EditableList) control and more details.
 platform: WindowsForms
 control: EditableList

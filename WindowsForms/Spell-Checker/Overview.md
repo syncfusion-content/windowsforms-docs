@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Spell Checker control | Syncfusion
+title: Overview of Windows Forms Spell Checker Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Spell Checker (SpellCheckerAdv) control, its elements and more details.
 platform: WindowsForms
 control: SpellCheckerAdv
