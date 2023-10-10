@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms DateTimePicker control | Syncfusion
+title: Overview of Windows Forms DateTimePicker Control | Syncfusion
 description: Learn about Overview support in Syncfusion Windows Forms DateTimePickerAdv(Classic) control and more details.
 platform: WindowsForms
 control: DateTimePicker
