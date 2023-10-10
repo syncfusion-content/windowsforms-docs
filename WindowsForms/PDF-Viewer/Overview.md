@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms PDF Viewer control | Syncfusion
+title: Overview of Windows Forms PDF Viewer Control | Syncfusion
 description: Learn here all about Overview support in Syncfusion Windows Forms PDF Viewer (PdfViewerControl) control and more details.
 platform: windowsforms
 control: PdfViewerControl

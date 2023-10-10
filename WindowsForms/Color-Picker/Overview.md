@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Color Picker control | Syncfusion
+title: Overview of Windows Forms Color Picker Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Color Picker (ColorPickerUIAdv) control and more details.
 platform: WindowsForms
 control: ColorPickerUIAdv

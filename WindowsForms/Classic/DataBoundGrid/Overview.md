@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms DataBoundGrid control | Syncfusion
+title: Overview of Windows Forms DataBoundGrid Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms GridDataBoundGrid(Classic) control and more details.
 platform: windowsforms
 control: GridDataBoundGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Double TextBox control | Syncfusion
+title: Overview of Windows Forms Double TextBox Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms Double TextBox control, its elements, and more details.
 platform: WindowsForms
 control: DoubleTextBox

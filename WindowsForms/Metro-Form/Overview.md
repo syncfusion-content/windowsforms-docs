@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms MetroForm control | Syncfusion
+title: Overview of Windows Forms Metro Form Control | Syncfusion
 description: MetroForm provides modern metro UI style with flat appearance to your form. It supports title bar height, appearance customization, etc.,
 platform: WindowsForms
 control: MetroForm

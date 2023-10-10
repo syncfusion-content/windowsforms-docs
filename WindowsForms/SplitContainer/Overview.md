@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms SplitContainer control | Syncfusion
+title: Overview of Windows Forms SplitContainer Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms SplitContainer (SplitContainerAdv) control, its elements and more details.
 platform: WindowsForms
 control: Editors Package
