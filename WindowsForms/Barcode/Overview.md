@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms Barcode control | Syncfusion
+title: Overview of Windows Forms Barcode Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio Windows Forms Barcode control and more details.
 platform: windowsforms
 control: SfBarcode

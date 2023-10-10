@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms AutoComplete control | Syncfusion
+title: Overview of Windows Forms AutoComplete Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms ComboBoxAutoComplete(Classic) control and more details.
 platform: WindowsForms
 control: ComboBoxAutoComplete
