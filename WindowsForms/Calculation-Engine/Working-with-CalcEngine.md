@@ -230,7 +230,7 @@ string result = engine.GetValueFromArg("A1")
 ### IterationMaxCount
 
 Gets or sets the maximum number of iterative calls that can be made on a cell to avoid circular exception. The default value is 0 indicating that iterative 
-calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ThrowCircularException) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_IterationMaxTolerance).
+calculation support is turned off. [ThrowCircularException](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_ThrowCircularException) property will be automatically set to true when you set a non-zero value to [IterationMaxCount](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_IterationMaxCount).
 
 ### IterationMaxTolerance
 

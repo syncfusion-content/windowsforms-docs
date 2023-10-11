@@ -81,7 +81,7 @@ sheet.DisableSheetCalculations();
 ## Set and Compute the values at runtime in the Worksheet
 
 At runtime, user can set the values in the particular `IWorksheet` by indexing the worksheet with the sheet name or id
-and then use the appropriate row and column indexes. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_UpdateCalcID) and [PullUpdatedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_PullUpdatedValue_System_Int32_System_Int32_System_Int32__) method of `CalcEngine` 
+and then use the appropriate row and column indexes. Invoking [UpdateCalcID](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_UpdateCalcID) and [PullUpdatedValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_PullUpdatedValue_System_Int32_System_Int32_System_Int32_) method of `CalcEngine` 
 guarantees the current/updated values in the workbook.
 
 [CalculatingSuspended](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Calculate.CalcEngine.html#Syncfusion_Calculate_CalcEngine_CalculatingSuspended) method of `CalcEngine`  is to suspend calculations while a series of changes are made to dependent cells 
