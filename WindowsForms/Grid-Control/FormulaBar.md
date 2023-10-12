@@ -11,7 +11,7 @@ documentation: ug
 
 The formula bar is derived from the [TextBox](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox?view=net-5.0) control which is used to bind to the [CurrentCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridNestedTableControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridNestedTableControl_CurrentCell) of GridControl. This is similar to the formula bar in Excel. It will allow to view and edit the formula and values of the current cell.  
 
-To have the formula bar in the form, open the designer and drag and drop the [GridAwareTextBox](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridAwareTextBox.html#) from the toolbox along with the GridControl.
+To have the formula bar in the form, open the designer and drag and drop the [GridAwareTextBox](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridAwareTextBox.html) from the toolbox along with the GridControl.
 
 The `GridAwareTextBox` can be synchronized with GridControl using [WireGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridAwareTextBox.html#Syncfusion_Windows_Forms_Grid_GridAwareTextBox_WireGrid_Syncfusion_Windows_Forms_Grid_GridControlBase_) method. 
 

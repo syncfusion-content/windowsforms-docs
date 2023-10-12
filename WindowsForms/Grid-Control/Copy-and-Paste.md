@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 # Clipboard Support in Windows Forms Grid Control
-All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste_methods.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CutPaste) property. It will provide the list of properties and methods for performing the clipboard operation.
+All the clipboard operations such as cut, copy and paste are supported in GridControl. The [GridModelCutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste.html) class manages the cut, copy and paste operations of the GridControl. This class can be accessed from a grid with the [Model.CutPaste](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControl.html#Syncfusion_Windows_Forms_Grid_GridControl_CutPaste) property. It will provide the list of properties and methods for performing the clipboard operation.
 
 ## Copy 
 The selected range of cells or data can be copied to the Clipboard by using the [Copy](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridModelCutPaste.html#Syncfusion_Windows_Forms_Grid_GridModelCutPaste_Copy) method. The keyboard keys <kbd>Ctrl</kbd> +<kbd> C</kbd> combination is used to perform the Copy operation.
