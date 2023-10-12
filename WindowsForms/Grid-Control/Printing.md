@@ -33,7 +33,7 @@ gridPrintDocument.Print()
 ![Printing grid](Printing_images/Printing_img1.jpeg)
 
 ## Print Preview
-The [PrintPreviewDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) is used to preview the pages before printing the contents of the grid. 
+The [PrintPreviewDialog](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.printpreviewdialog?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) is used to preview the pages before printing the contents of the grid.
 
 {% tabs %}
 {% highlight c# %}
