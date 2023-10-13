@@ -19,7 +19,7 @@ Say you have a three page wizard and there is a checkbox on the first page. If t
 
 ### Controlling page sequence with the Wizard control
 
-* In the [BeforeNext](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html) event handler, implement the below code, which will control the page sequence with the wizard control.
+* In the [BeforeNext](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControl.html#Syncfusion_Windows_Forms_Tools_WizardControl_BeforeNext) event handler, implement the below code, which will control the page sequence with the wizard control.
 
 {% tabs %}
 
@@ -115,10 +115,10 @@ With those two events in place on the wizard, the wizard can now skip the middle
 
 ### Controlling page sequence with a Wizard page
 
-Page sequencing may also be controlled in the [NextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) and [BackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) events of Wizard Control Page.
+Page sequencing may also be controlled in the [NextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextClick) and [BackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackClick) events of Wizard Control Page.
 
 * When one of the above events is implemented for a Wizard Control Page, the associated event in the Wizard control will not fire if the WizardPage is currently selected.
-* In the [NextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) event handler, you implement this code:
+* In the [NextClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_NextClick) event handler, you implement this code:
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ End Sub
 
 {% endtabs %}
 
-* In the [BackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html) event handler, implement this code.
+* In the [BackClick](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.WizardControlPage.html#Syncfusion_Windows_Forms_Tools_WizardControlPage_BackClick) event handler, implement this code.
 
 {% tabs %}
 
