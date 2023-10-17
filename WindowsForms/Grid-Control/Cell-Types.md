@@ -560,7 +560,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-N> For sample and more information check the KB link over [here](https://www.syncfusion.com/kb/5708/how-to-customize-the-tab-name-of-the-coloruicontrol-cell-dropdown).
+N> For sample and more information check the KB link over [here](https://support.syncfusion.com/kb/article/5348/how-to-customize-the-tab-name-of-the-coloruicontrol-cell-dropdown-in-winforms-gridcontrol).
 
 ## Control cell type
 It is possible to add an arbitrary control in a grid cell through `Control` cell type. Each cells using this cell type requires to instantiate a control object and that object has to be assigned to the [style.Control](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Control) property. The following code illustrates how to set a cell type as `Control`.
