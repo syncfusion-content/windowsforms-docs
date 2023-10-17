@@ -341,9 +341,9 @@ Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/
 
 ## Additional help resources
 
-The [Knowledge Base](https://www.syncfusion.com/kb/windowsforms) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
+The [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82) section contains responses to most of the common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the User Guide.
 
-Similar to the [Knowledge Base](https://www.syncfusion.com/kb/windowsforms), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
+Similar to the [Knowledge Base](https://support.syncfusion.com/kb/desktop/category/82), the [Forum](https://www.syncfusion.com/forums/windowsforms) section also contains responses to questions that other customers has asked us in the past.
 
 ## Support and feedback
 
