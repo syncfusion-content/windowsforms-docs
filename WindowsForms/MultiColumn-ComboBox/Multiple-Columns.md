@@ -13,7 +13,7 @@ MultiColumnComboBox control is a [ComboBoxAdv](https://help.syncfusion.com/windo
 
 ![Multiple Columns](Overview_images/Overview_img325.jpeg) 
 
-We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumncombobox/data-binding) topic to know more.
+We can bind external data to the MultiColumnComboBox control. Refer [DataBinding](/windowsforms/multicolumn-combobox/data-binding) topic to know more.
 
 ## Selection color
 
