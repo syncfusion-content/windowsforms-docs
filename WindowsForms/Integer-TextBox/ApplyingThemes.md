@@ -11,7 +11,7 @@ documentation: ug
 
 Themes can be applied to the IntegerTextBox control using the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property given below.
 
-N> Refer [Border Settings](/windowsforms/integertextbox/bordersettings) topic to know about the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property.
+N> Refer [Border Settings](/windowsforms/integertextbox/bordersettings) topic to know about the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Forms_TextBoxBase_BorderStyle) property.
 
 {% tabs %}
 {% highlight C# %}

@@ -93,8 +93,8 @@ No</td></tr>
 
 You can refer the following topics which gives you an idea on implementing the above events.
 
-* [How to display multiple members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-display-multiple-members-in-a-multicolumncombobox)
-* [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members)
+* [How to display multiple members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-display-multiple-members-in-a-multicolumncombobox)
+* [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members)
 
 ## SelectedValueChanged event
 
@@ -140,4 +140,4 @@ End Sub
 
 ## SelectedIndexChanged event
 
-This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumncombobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members) topic.
+This event is illustrated in [How to retrieve the columns other than Display and Value members in a MultiColumnComboBox?](/windowsforms/multicolumn-combobox/faq/how-to-retrieve-the-columns-other-than-display-and-value-members) topic.
