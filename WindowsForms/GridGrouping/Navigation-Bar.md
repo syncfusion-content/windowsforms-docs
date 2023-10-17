@@ -183,7 +183,7 @@ Me.gridGroupingControl1.RecordNavigationControl.ForeColor = Color.White
 ![Navigation-Bar_img8](Navigation-Bar_images/Navigation-Bar_img8.png)
 
 ## VisualStyles
-The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GridOfficeScrollBars) property which automatically changes the visual style. Check [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/getting-started) topic for more information on this.
+The style of the `NavigationBar` can be changed by using the [GridOfficeScrollBar](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GridOfficeScrollBars) property which automatically changes the visual style. Check [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/scrolling) topic for more information on this.
 
 {% tabs %}
 {% highlight c# %}

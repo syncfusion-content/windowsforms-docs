@@ -1131,12 +1131,12 @@ Me.gridGroupingControl1.TableDescriptor.GroupedColumns.Add("Title", ListSortDire
 ## Grouping Events
 The following events are used to customize the grouping in GridGroupingControl. 
 
-* [GroupedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) - Occurs before a property in the collection is changed.
-* [GroupedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) - Occurs after a property in the collection is changed.
-* [GroupExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs before a group is expanded.
-* [GroupExpanded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs after a group is expanded.
-* [GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs before a group is collapsed.
-* [GroupCollapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) - Occurs after a group is collapsed.
+* [GroupedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changing) - Occurs before a property in the collection is changed.
+* [GroupedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changed) - Occurs after a property in the collection is changed.
+* [GroupExpanding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupExpanding) - Occurs before a group is expanded.
+* [GroupExpanded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupExpanded) - Occurs after a group is expanded.
+* [GroupCollapsing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupCollapsing) - Occurs before a group is collapsed.
+* [GroupCollapsed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_GroupCollapsed) - Occurs after a group is collapsed.
 
 N> The detailed information about the `Events` of the GridGroupingControl has been discussed in [Events](https://help.syncfusion.com/windowsforms/gridgrouping/events) section.
 
