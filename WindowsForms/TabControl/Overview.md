@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Windows Forms TabControl | Syncfusion
+title: Overview of Windows Forms TabControl Control | Syncfusion
 description: Learn here all about introduction of Syncfusion Windows Forms TabControl (TabControlAdv) control, its elements and more details.
 platform: WindowsForms
 control: TabControlAdv 
