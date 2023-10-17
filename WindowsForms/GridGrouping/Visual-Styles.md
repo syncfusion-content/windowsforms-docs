@@ -153,7 +153,7 @@ Me.gridGroupingControl1.TableControl.MetroColorTable.ThumbNormal = Color.ForestG
 {% endtabs %}
 ![Visual-Style_img4](Visual-Style_images/Visual-Style_img4.jpeg)
 
-N> The scrollbar customization is briefly discussed in the [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/sorting) section.
+N> The scrollbar customization is briefly discussed in the [Scrolling](https://help.syncfusion.com/windowsforms/gridgrouping/scrolling) section.
 
 ## Modifying Office2016 colors
 
@@ -252,7 +252,7 @@ SkinManager.SetVisualStyle(Me, VisualTheme.Office2010Blue)
 All the elements of the GridGroupingControl appearance can be customized. This section will explain about the customization of the themes using [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html). 
 
 ### Customization Using IVisualStylesDrawing
-The grid can be applied with the [custom visual styles](https://www.syncfusion.com/kb/760/how-can-i-create-the-custom-themes-and-apply-to-the-gridcontrol) by implementing the [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
+The grid can be applied with the [custom visual styles](https://support.syncfusion.com/kb/article/1732/how-to-create-the-custom-themes-and-apply-to-the-winforms-gridcontrol) by implementing the [IVisualStylesDrawing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.IVisualStylesDrawing.html) interface. This interface provides the list of methods for drawing the icons and header colors of the grid.
 
 {% tabs %}
 {% highlight c# %}

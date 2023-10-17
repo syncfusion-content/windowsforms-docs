@@ -201,7 +201,7 @@ Me.gridGroupingControl1.TableControl.VScrollBar.InnerScrollBar = vScrollBar1
 ![Scrolling_img7](Scrolling_images/Scrolling_img7.png)
 
 ## Scrolling Events
-[HorizontalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) and [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) are the events that gets fired each time when scroll bar is moved respectively. The [e.NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) will get the value of the scroll bar for each changes done in the Horizontal and Vertical scroll bar respectively. To know more on events, check the [Scrolling Events](https://help.syncfusion.com/windowsforms/grid-control/scrolling#scrolling-events) topic in GridControl.
+[HorizontalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_HorizontalScroll) and [VerticalScroll](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html#Syncfusion_Windows_Forms_ScrollControl_VerticalScroll) are the events that gets fired each time when scroll bar is moved respectively. The [e.NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.ScrollControl.html) will get the value of the scroll bar for each changes done in the Horizontal and Vertical scroll bar respectively. To know more on events, check the [Scrolling Events](https://help.syncfusion.com/windowsforms/grid-control/scrolling#scrolling-events) topic in GridControl.
 
 {% tabs %}
 {% highlight c# %}

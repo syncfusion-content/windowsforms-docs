@@ -19,7 +19,7 @@ In that Editor, clicking `Add` button will add existing columns into the collect
 ![Sorting_img1](Sorting_images/Sorting_img1.jpeg)
 
 ## Programmatic Sorting
-The [SortedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html) collection is used to define the sort order for records with groups. Multiple entries can be added with the first entry having precedence while sorting records. The properties and methods in this collection lets users manage elements in the collection.
+The [SortedColumns](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.TableDescriptor.html#Syncfusion_Grouping_TableDescriptor_SortedColumns) collection is used to define the sort order for records with groups. Multiple entries can be added with the first entry having precedence while sorting records. The properties and methods in this collection lets users manage elements in the collection.
 
 Sorting can be applied to the grid data by specifying the desired field name to the [TableDescriptor.SortedColumns.Add()](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Add_Syncfusion_Grouping_SortColumnDescriptor_).
 
@@ -85,7 +85,7 @@ Me.gridGroupingControl1.TableDescriptor.Columns("CompanyName").AllowSort = False
 {% endtabs %}
 
 ## Preventing Column from being Sorted using Event
-Sorting specified columns can also be controlled by handling [TableControlQueryAllowSortColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html) event. The event accepts an instance of[GridQueryAllowSortColumnEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs.html) as a parameter that contains details of the column being affected. Using this instance, user can check for a particular column and cancel sorting behavior.
+Sorting specified columns can also be controlled by handling [TableControlQueryAllowSortColumn](hhttps://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_TableControlQueryAllowSortColumn) event. The event accepts an instance of[GridQueryAllowSortColumnEventArgs](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridQueryAllowSortColumnEventArgs.html) as a parameter that contains details of the column being affected. Using this instance, user can check for a particular column and cancel sorting behavior.
 
 {% tabs %}
 {% highlight c# %}
@@ -397,9 +397,9 @@ td.VisibleColumns.Insert(CustomerColIndex, foreignCustomerColInMainTable)
 ## Events
 The followings events will be raised when the column is sorted in the GridGroupingControl. 
 
-* [SortedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html)                      -        This event will be raised before the collection is modified.
-* [SortedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html)                       -        This event will be raised after the collection was modified.
-* [TableControlQueryAllowSortColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html)  -         This event will be raised when the user hovers the mouse over a column header or clicks on it.
+* [SortedColumns.Changing](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changing)                      -        This event will be raised before the collection is modified.
+* [SortedColumns.Changed](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Grouping.SortColumnDescriptorCollection.html#Syncfusion_Grouping_SortColumnDescriptorCollection_Changed)                       -        This event will be raised after the collection was modified.
+* [TableControlQueryAllowSortColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.Grouping.GridGroupingControl.html#Syncfusion_Windows_Forms_Grid_Grouping_GridGroupingControl_TableControlQueryAllowSortColumn)  -         This event will be raised when the user hovers the mouse over a column header or clicks on it.
 
 N> The detailed information about the `Events` of GridGroupingControl has been discussed in [Events](https://help.syncfusion.com/windowsforms/gridgrouping/events) section.
 
