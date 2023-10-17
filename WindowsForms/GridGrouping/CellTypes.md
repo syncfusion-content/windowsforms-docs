@@ -409,7 +409,7 @@ Me.gridGroupingControl1.TableModel.CellModels.Add("LinkLabelCell", New LinkLabel
 {% endtabs %}
 
 ### Assigning cell type
-Assign the registered cell type to a GridGroupingControl like a normal cell type. The custom cell type `LinkLabelCell` acts as a hyperlink. The link for the [LinkLabelCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridGenericControlCellModel.html) will be assigned in the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of that cell. This cell displays the ordinary text, but on clicking it will relocate to the link given in the Tag. 
+Assign the registered cell type to a GridGroupingControl like a normal cell type. The custom cell type `LinkLabelCell` acts as a hyperlink. The link for the [LinkLabelCell](https://www.syncfusion.com/downloads/support/forum/119834/ze/CellTypes402757381#) will be assigned in the [Tag](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridStyleInfo.html#Syncfusion_Windows_Forms_Grid_GridStyleInfo_Tag) property of that cell. This cell displays the ordinary text, but on clicking it will relocate to the link given in the Tag. 
 {% tabs %}
 {% highlight c# %}
 //Setting Custom cell types as the CellType for the column
