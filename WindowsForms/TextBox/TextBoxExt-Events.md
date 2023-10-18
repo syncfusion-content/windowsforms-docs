@@ -143,7 +143,7 @@ End Sub
 
 ## BorderStyleChanged
 
-The [BorderStyleChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The `BorderStyle` property indicates whether the edit control should have a border.
+The [BorderStyleChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstylechanged?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN) event occurs when the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_BorderStyle) property is changed. The `BorderStyle` property indicates whether the edit control should have a border.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -193,7 +193,7 @@ End Sub
 
 ## HideSelectionChanged
 
-The [HideSelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [HideSelection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The `HideSelection` property indicates that the selection should be hidden when the edit control loses focus.
+The [HideSelectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselectionchanged?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN) event occurs when the [HideSelection](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.hideselection?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_HideSelection) property is changed. The `HideSelection` property indicates that the selection should be hidden when the edit control loses focus.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -268,7 +268,7 @@ End Sub
 
 ## MultilineChanged 
 
-The [MultilineChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [Multiline](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_Multiline) property is changed. The `Multiline` property controls whether the text of the edit control can span more than one line.
+The [MultilineChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.multilinechanged?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN) event occurs when the [Multiline](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.multiline?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_Multiline) property is changed. The `Multiline` property controls whether the text of the edit control can span more than one line.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -293,7 +293,7 @@ End Sub
 
 ## ReadOnlyChanged 
 
-The [ReadOnlyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The `ReadOnly` property controls whether the text in the edit control can be changed or not.
+The [ReadOnlyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonlychanged?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN) event occurs when the [ReadOnly](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.readonly?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_ReadOnly) property is changed. The `ReadOnly` property controls whether the text in the edit control can be changed or not.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -318,7 +318,7 @@ End Sub
 
 ## TextAlignChanged 
 
-The [TextAlignChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?redirectedfrom=MSDN&view=netcore-3.1) event occurs when the [TextAlign](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBox_TextAlign) property is changed. The `TextAlign` property indicates how the text should be aligned in TextBoxExt control.
+The [TextAlignChanged](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalignchanged?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN) event occurs when the [TextAlign](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox.textalign?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBox_TextAlign) property is changed. The `TextAlign` property indicates how the text should be aligned in TextBoxExt control.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
@@ -343,7 +343,7 @@ End Sub
 
 ## ThemesEnabledChanged
 
-The [ThemesEnabledChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property is changed. The `ThemesEnabled` property specifies whether or not to use XP Themes when the [BorderStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?redirectedfrom=MSDN&view=netcore-3.1#System_Windows_Forms_TextBoxBase_BorderStyle) property is set to `Fixed3D`.
+The [ThemesEnabledChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html) event occurs when the [ThemesEnabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.TextBoxExt.html#Syncfusion_Windows_Forms_Tools_TextBoxExt_ThemesEnabled) property is changed. The `ThemesEnabled` property specifies whether or not to use XP Themes when the [BorderStyle](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.textboxbase.borderstyle?view=windowsdesktop-7.0&viewFallbackFrom=netcore-3.1&redirectedfrom=MSDN#System_Windows_Forms_TextBoxBase_BorderStyle) property is set to `Fixed3D`.
 
 The event handler receives an argument of type EventArgs containing data related to this event.
 
