@@ -838,7 +838,7 @@ N> To view a sample on Freezing the Caption Row, refer the dashboard sample whic
 ![Grid-Layout_img24](Grid-Layout_images/Grid-Layout_img24.png)
 
 ### Enabling ScrollBar when the Freeze Columns exceeds the Client Area
-In GridGroupingControl, if freeze columns exceed client area then the horizontal scroll bar will become invisible. To overcome this some of the customizations has to be done. You have to make use of the [ResizeEnd](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.resizeend?view=net-5.0) and [HScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html) events and need to check certain conditions in it.
+In GridGroupingControl, if freeze columns exceed client area then the horizontal scroll bar will become invisible. To overcome this some of the customizations has to be done. You have to make use of the [ResizeEnd](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.resizeend?view=windowsdesktop-7.0&viewFallbackFrom=net-5.0) and [HScrollPixelPosChanging](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Grid.GridControlBase.html#Syncfusion_Windows_Forms_Grid_GridControlBase_HScrollPixelPosChanging) events and need to check certain conditions in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -970,4 +970,4 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-To know in detail with sample, refer the KB [article](https://www.syncfusion.com/kb/5941/how-to-set-the-scrollbar-when-the-freeze-columns-exceeds-the-client-area) which explains about this.
+To know in detail with sample, refer the KB [article](https://support.syncfusion.com/kb/article/5601/how-to-set-the-scrollbar-in-winforms-gridgroupingcontrol) which explains about this.
