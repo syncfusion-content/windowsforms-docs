@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Formula in Windows Forms Spreadsheet
 
-Spreadsheet allows you to add custom formulas into its function library. You can add the custom formula into the Spreadsheet by using the [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.FormulaEngine.html#Syncfusion_Windows_Forms_CellGrid_FormulaEngine_AddFunction_System_String_Syncfusion_Windows_Forms_CellGrid_FormulaEngine_LibraryFunction_) method of [FormulaEngine](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.FormulaEngine.html),
+Spreadsheet allows you to add custom formulas into its function library. You can add the custom formula into the Spreadsheet by using the [AddFunction](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.FormulaEngine.html#Syncfusion_Windows_Forms_CellGrid_FormulaEngine_AddFunction_System_String_Syncfusion_Windows_Forms_CellGrid_FormulaEngine_LibraryFunction_) method of [FormulaEngine](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.FormulaEngine.html),
 
 {% tabs %}
 {% highlight c# %}
