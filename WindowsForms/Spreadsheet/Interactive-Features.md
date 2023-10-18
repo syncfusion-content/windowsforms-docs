@@ -116,7 +116,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-T> Users can also set their default [PasteOptions](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.html) while pasting in Spreadsheet, by using [DefaultPasteOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetCopyPaste_DefaultPasteOption) property.
+T> Users can also set their default [PasteOptions](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.PasteOptions.html) while pasting in Spreadsheet, by using [DefaultPasteOption](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetCopyPaste.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetCopyPaste_DefaultPasteOption) property.
 
 ## Undo or Redo
 
@@ -139,9 +139,9 @@ Redo</td><td>
 Ctrl + Y</td></tr>
 </table>
 
-Spreadsheet has [History Manager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
+Spreadsheet has [History Manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) class that supports the implementation of undo/ redo operations
 
-By default, Undo/Redo operations in Spreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html#Syncfusion_Windows_Forms_Spreadsheet_History_HistoryManager_Enabled) property of [History Manager](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) to be false.  
+By default, Undo/Redo operations in Spreadsheet is enabled. To disable the Undo/Redo operations, set the [Enabled](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html#Syncfusion_Windows_Forms_Spreadsheet_History_HistoryManager_Enabled) property of [History Manager](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.History.HistoryManager.html) to be false.  
 
 {% tabs %}
 {% highlight c# %}
