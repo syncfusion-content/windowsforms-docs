@@ -11,7 +11,7 @@ documentation: ug
 
 The events available for the SplitContainerAdv control are as follows.
 
-* [SplitterMoved Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) - This event is handled when the splitter is moved to a new position.
+* [SplitterMoved Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_SplitterMoved) - This event is handled when the splitter is moved to a new position.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ End Sub
  ![Use of splitter moved event](SplitContainerAdv-Images/Overview_img403.jpeg)
 
 
-* [SplitterMoving Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html) - This event is handled while the splitter is moving.
+* [SplitterMoving Event](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.SplitContainerAdv.html#Syncfusion_Windows_Forms_Tools_SplitContainerAdv_SplitterMoving) - This event is handled while the splitter is moving.
 
 {% tabs %}
 

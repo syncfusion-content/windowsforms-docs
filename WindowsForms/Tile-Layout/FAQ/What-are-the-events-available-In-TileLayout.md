@@ -13,7 +13,7 @@ This page explains What are the events available In TileLayout in Windows Forms 
 
 ## BeforeSliding
 
-This [BeforeSliding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) event is triggered before the Slide is moving.
+This [BeforeSliding](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html#Syncfusion_Windows_Forms_Tools_ImageStreamer_BeforeSliding) event is triggered before the Slide is moving.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ End Sub
 
 ## AfterSlided
 
-This [AfterSlided](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html) event is triggered after the Side has moved.
+This [AfterSlided](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Tools.ImageStreamer.html#Syncfusion_Windows_Forms_Tools_ImageStreamer_AfterSlided) event is triggered after the Side has moved.
 
 
 {% tabs %}
