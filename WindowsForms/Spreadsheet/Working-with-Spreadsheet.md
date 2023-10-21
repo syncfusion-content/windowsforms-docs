@@ -12,7 +12,7 @@ documentation: ug
 
 ## Accessing the worksheet
 
-A __workbook__ is an excel document in the Spreadsheet. It is an object that exposes the [IWorkbook](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_Workbook) property of Spreadsheet.
+A __workbook__ is an excel document in the Spreadsheet. It is an object that exposes the [IWorkbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IWorkbook.html) interface. Currently loaded workbook in the Spreadsheet can be accessed by using the [Workbook](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html#Syncfusion_Windows_Forms_Spreadsheet_Spreadsheet_Workbook) property of Spreadsheet.
 
 A workbook consists of one or more worksheets stored within the worksheet collection. Accessing the worksheets in the collection, can be done by the following ways,
 
@@ -31,13 +31,13 @@ spreadsheet.ActiveSheet
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding working with worksheets, you can refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/overview) link
+For more information regarding working with worksheets, you can refer the [XlsIO UG](https://help.syncfusion.com/file-formats/xlsio/overview) link
 
 N> `ActiveGrid` and `ActiveSheet` property can be accessed only after the `WorkbookLoaded` Event of `Spreadsheet` is triggered
 
 ## Accessing the Grid
 
-Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) in  `Spreadsheet`.
+Each worksheet in the workbook is loaded into the view as [SpreadsheetGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) in  `Spreadsheet`.
 
 When the workbook is loaded in the Spreadsheet, the [WorkbookLoaded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html) Event is invoked and when the workbook is removed from Spreadsheet, the [WorkbookUnloaded](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.Spreadsheet.html) Event is invoked. 
 
@@ -157,9 +157,9 @@ var cell4 = spreadsheet.Workbook.Worksheets[0].Range[15, 1, 15, 3];
 {% endhighlight %}
 {% endtabs %}
 
-For more reference regarding accessing the range, refer [XlsIO](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#accessing-a-cell-or-a-range) UG.
+For more reference regarding accessing the range, refer [XlsIO](https://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#accessing-a-cell-or-a-range) UG.
 
-N>  If the user has made any modifications with XlsIO range in Spreadsheet, then they should [refresh the view](http://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) to update the modifications in `SpreadsheetGrid`.
+N>  If the user has made any modifications with XlsIO range in Spreadsheet, then they should [refresh the view](https://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) to update the modifications in `SpreadsheetGrid`.
 
 ## Accessing the value of a cell
 
@@ -179,7 +179,7 @@ var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
 
 ## Setting the value or formula to a cell
 
-In Spreadsheet, to update the cell value and formula programmatically, [SetCellValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetGrid_SetCellValue_Syncfusion_XlsIO_IRange_System_String_) method of [SpreadsheetGrid](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
+In Spreadsheet, to update the cell value and formula programmatically, [SetCellValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html#Syncfusion_Windows_Forms_Spreadsheet_SpreadsheetGrid_SetCellValue_Syncfusion_XlsIO_IRange_System_String_) method of [SpreadsheetGrid](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.Spreadsheet.SpreadsheetGrid.html) should be invoked and then invalidate that cell to update the view.
 
 {% tabs %}
 {% highlight c# %}
@@ -212,7 +212,7 @@ spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearData
 {% endhighlight %}
 {% endtabs %}
 
-N> [ExcelClearOptions](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+N> [ExcelClearOptions](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 ## Refreshing the view
 

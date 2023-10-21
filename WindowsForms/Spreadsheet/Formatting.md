@@ -169,7 +169,7 @@ spreadsheet.ActiveGrid.InvalidateCell(4, 3);
 
 Spreadsheet provides support to merge two or more cells. When a group of cells is merged, the contents of the upper-left cell will be taken as the content of the merged cell, rest will be deleted.
 
-For merging the cells in Spreadsheet, you need to add the [CoveredCellInfo](http://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.CoveredCellInfo.html) into [CoveredCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.SfCellGrid.html#Syncfusion_Windows_Forms_CellGrid_SfCellGrid_CoveredCells) collection of SpreadsheetGrid and merge the range using [Merge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_Merge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
+For merging the cells in Spreadsheet, you need to add the [CoveredCellInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.CoveredCellInfo.html) into [CoveredCells](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.CellGrid.SfCellGrid.html#Syncfusion_Windows_Forms_CellGrid_SfCellGrid_CoveredCells) collection of SpreadsheetGrid and merge the range using [Merge](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.IRange.html#Syncfusion_XlsIO_IRange_Merge) method in XlsIO. Also to update the view, you need to invalidate the cells in the SpreadsheetGrid
 
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ m/d/yyyy</td></tr>
 
 ## Built-in Styles
 
-Spreadsheet supports some predefined built in styles of XlsIO. [BuiltInStyles](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.BuiltInStyles.html) is an enum which contains different styles for formatting a cell or range of cells.
+Spreadsheet supports some predefined built in styles of XlsIO. [BuiltInStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.BuiltInStyles.html) is an enum which contains different styles for formatting a cell or range of cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -290,7 +290,7 @@ spreadsheet.ActiveGrid.InvalidateCell(3, 1);
 
 ## Format as Table
 
-Spreadsheet allows the users to format a table with built in styles of table (i.e.) [TableBuiltInStyles](http://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.TableBuiltInStyles.html) of XlsIO
+Spreadsheet allows the users to format a table with built in styles of table (i.e.) [TableBuiltInStyles](https://help.syncfusion.com/cr/windowsforms/Syncfusion.XlsIO.TableBuiltInStyles.html) of XlsIO
 
 {% tabs %}
 {% highlight c# %}
@@ -305,13 +305,13 @@ spreadsheet.ActiveGrid.InvalidateCells();
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding formatting options, please go through [XlsIO](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+For more information regarding formatting options, please go through [XlsIO](https://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
 
-N> Users need to [refresh the view](http://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) after the formatting is applied on the XlsIO range to update the styles in `SpreadsheetGrid`.
+N> Users need to [refresh the view](https://help.syncfusion.com/windowsforms/spreadsheet/working-with-spreadsheet#refreshing-the-view) after the formatting is applied on the XlsIO range to update the styles in `SpreadsheetGrid`.
 
 ## Clear formatting
 
-Spreadsheet provides support to clear the contents of a cell along with its formatting or by specifying the required clear options using [ExcelClearOptions](http://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+Spreadsheet provides support to clear the contents of a cell along with its formatting or by specifying the required clear options using [ExcelClearOptions](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelClearOptions.html) enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 {% tabs %}
 {% highlight c# %}
