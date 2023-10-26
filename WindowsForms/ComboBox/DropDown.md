@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drop-Down in Windows Forms ComboBox control | Syncfusion
-description: Learn about Drop-Down support in Syncfusion Windows Forms ComboBox (SfComboBox) control and more details.
+title: DropDown in Windows Forms ComboBox Control | Syncfusion
+description: Learn here all about DropDown support in Syncfusion Essential Windows Forms ComboBox (SfComboBox) control, it's element and more.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
 ---
 
-# Drop-Down in Windows Forms ComboBox (SfComboBox)
+# DropDown in Windows Forms ComboBox (SfComboBox)
 
 ## Setting maximum drop-down items
 
@@ -22,7 +22,7 @@ sfComboBox1.MaxDropDownItems = 4
 {% endhighlight %}
 {% endtabs %}
 
-![Maximum number of items in drop-down](DropDown_images/DropDown_img1.png)
+![Maximum number of dropdown items in Windows Forms ComboBox](dropdown_images/winforms-combobox-maximum-number-of-dropdown-items.png)
 
 ## Disabling the drop-down resizing
 
@@ -37,7 +37,7 @@ sfComboBox1.AllowDropDownResize = False
 {% endhighlight %}
 {% endtabs %}
 
-![Drop-Down size as fixed](DropDown_images/DropDown_img2.png)
+![DropDown size as fixed in Windows Forms ComboBox](dropdown_images/winforms-combobox-dropdown-size-as-fixed.png)
 
 ## Cancel the drop-down opening
 
@@ -93,7 +93,7 @@ sfComboBox1.DropDownPosition = Syncfusion.WinForms.Core.Enums.PopupRelativeAlign
 
 {% endtabs %}
 
-![WinForms SfComboBox Dropdown position](DropDown_images/WinForms-SfComboBox-Dropdown-position.png)
+![WinForms ComboBox Dropdown position](dropdown_images/winforms-combobox-dropdown-position.png)
 
 ## Load custom control in drop-down
 
@@ -371,7 +371,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-![Adding custom control in drop-down](DropDown_images/DropDown_img3.png)
+![WinForms ComboBox adding custom control in dropdown](dropdown_images/winforms-combobox-adding-custom-control-in-dropdown.png)
 
 **Sample location:** 
 &lt;Installed_Location&gt;\Syncfusion\EssentialStudio\&lt;Version_Number&gt;\Windows\ListView.WinForms\Samples\SfComboBox\MultiSelection

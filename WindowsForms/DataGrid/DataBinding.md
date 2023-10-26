@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | DataGrid | WinForms | Syncfusion
-description: Learn about data binding (IEnumerable, DataTable and so on) support in Syncfusion WinForms DataGrid (SfDataGrid) control and more details.
+title: Data Binding in WinForms DataGrid Control | Syncfusion
+description: Learn here all about data binding (IEnumerable, DataTable and so on) support in Syncfusion Essential WinForms DataGrid (SfDataGrid) control, it's element and more.
 platform: windowsforms
 control: SfDataGrid
 documentation: ug
@@ -50,7 +50,7 @@ Below are the limitations when binding DataTable as `DataSource` to SfDataGrid.
 * [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridUnboundColumn.html#Syncfusion_WinForms_DataGrid_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn?view=net-5.0) of DataTable by setting [DataColumn.Expression](https://learn.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?view=net-5.0) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_LiveDataUpdateMode) is not supported.
 
-![SfDatagrid bounded with data table itemsSource in windowsforms](DataBinding_images/DataBinding_img1.jpeg)
+![SfDatagrid bounded with data table itemsSource in windowsforms](databinding_images/winforms-datagrid-bounded-with-data-table-item-source.jpeg)
 
 ## Binding to XML Data
 SfDataGrid can be bound to data from XML files. This can be achieved by using the [DataSet](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-5.0) object which provides the necessary methods that is used to read XML data into dataset. After loading the data, the SfDataGrid can be bind to this dataset by setting data binding properties such as `DataSource` and `DataMember` to the dataset and table name respectively. It is also possible to save the changes back to XML file.
@@ -67,7 +67,7 @@ dataSet.ReadXml("..\\..\\Data\\Datasource.xml")
 Me.sfDataGrid1.DataSource = dataSet.Tables(0)
 {% endhighlight %}
 {% endtabs %}
-![SfDataGrid bounded with DataSet itemsSource in WinForms](DataBinding_images/DataBinding_img2.jpeg)
+![SfDataGrid bounded with DataSet itemsSource in WinForms](databinding_images/winforms-datagrid-bounded-with-dataset-item-source.jpeg)
 
 ## Binding Complex Properties
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_MappingName).
@@ -109,7 +109,7 @@ This event receives two arguments namely sender that handles SfDataGrid and [Dat
 The `DataSourceChangedEventArgs` object contains the following properties:
 
 * [OldValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_OldValue) - Gets the value of old data source
-* [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_NewValue)  - Get the value of new data source
+* [NewValue](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_NewValue) - Get the value of new data source
 * [OldView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_OldView) – Gets the old view of the data grid.
 * [NewView](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Events.DataSourceChangedEventArgs.html#Syncfusion_WinForms_DataGrid_Events_DataSourceChangedEventArgs_NewView) – Gets the new view of the data grid.
 
@@ -281,7 +281,7 @@ The following events are associated with `View`.
 * [OldStartingIndex](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?redirectedfrom=MSDN&view=netframework-4.8#System_Collections_Specialized_NotifyCollectionChangedEventArgs_OldStartingIndex) - It contains the index at which the Action occurred.
 
 #### SourceCollectionChanged
-[SourceCollectionChanged ](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object.
+[SourceCollectionChanged](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Data.ICollectionViewAdv.html)event is raised when source collection is changed for example add or remove the collection. The event receives two arguments namely sender that handles [QueryableCollectionViewWrapper](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.Data.QueryableCollectionViewWrapper.html) object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as object.
 `NotifyCollectionChangedEventArgs` has below properties,
 * [Action](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0) - It contains the current action. (i.e.) Add, Remove, Move, Replace and Reset.
 
@@ -335,25 +335,25 @@ To create Data Model using Entity Framework in Windows Forms application, follow
 
 2. The **Add New Item** wizard appears, select “**ADO.NET Entity Data Mode**” from the Data node. 
 
-3. Name the file as **Model1.edmx** and then select **Add** button.  
-![Choose the the ADO.Net entity model application from visual studio](DataBinding_images/DataBinding_img3.jpeg)
+3. Name the file as **Model1.edmx** and then select **Add** button.
+![Choose the ADO.Net entity model application from visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-ado-net-entity-model-application.jpeg)
 
 4. The Entity Data Model Wizard appears. In the **Choose Model Contents**, select **EF Designer from database** option and then click **Next**.
 
-![Choose the model contents from visual studio](DataBinding_images/DataBinding_img4.jpeg)
+![Choose the model contents from visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-model-contents.jpeg)
 
 5. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, refer: [How to: Create Connections to SQL Server Databases](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)).
 
-![Choose the Northwind database from visual studio](DataBinding_images/DataBinding_img5.jpeg)
+![Choose the Northwind database from visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-northwind-database.jpeg)
 
 6. Enable the **Save entity connection settings in App.config** as check box and then click **Next**.
 7. In the **Choose Your Database** Objects and Settings, expand the Tables node and select the **Order Details** table.
 
-![Choose the database objects and setting from Northwind database through the visual studio](DataBinding_images/DataBinding_img6.jpeg)
+![Choose the database objects and setting from Northwind database through the visual studio](databinding_images/winforms-datagrid-choose-the-database-objects-and-setting-from-northwind.jpeg)
 
 8. Click **Finish** button to add the **Model1.edmx** file to the application. The Entity diagram for the **Order Detail** table is opened.
 
-![To show the entity diagram of database](DataBinding_images/DataBinding_img7.jpeg)
+![To show the entity diagram of database in WinForms DataGrid](databinding_images/winforms-datagrid-to-show-the-entity-diagram-of-database.jpeg)
 
 ### Loading Data from Entity Framework Data Service
 The data from the defined entity model can be loaded as a data source to the SfDataGrid by loading the **Order Details** table by the created entity for the **Northwnd** database.
@@ -372,7 +372,7 @@ Me.sfDataGrid1.DataSource = northWind.Order_Details
 Now, run the application. The following screenshot shows the SfDataGrid control populated with data from Entity Framework data service.
 
 
-![SfDataGrid bounded with Entity framework model in windowsforms](DataBinding_images/DataBinding_img8.jpeg)
+![SfDataGrid bounded with Entity framework model in windowsforms](databinding_images/winforms-datagrid-bounded-with-entity-framework-model.jpeg)
 
 ## Binding Data from LINQ to SQL
 SfDataGrid control supports to bind data from LINQ to SQL. This walkthrough, describes about binding data from LINQ to SQL and save back the changes to the Database.
@@ -383,29 +383,29 @@ To create data model using LINQ to SQL in WF project follow the below steps.
 2. The Add New Item wizard appears, Select **LINQ to SQL Classes** from the **Visual C#**.
 3. Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in the project.
 
-![Choose the data  model from LINQ to SQL from the visual studio](DataBinding_images/DataBinding_img9.jpeg)
+![Choose the data model from LINQ to SQL from the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-model-from-linq-to-sql.jpeg)
 
 4. Once the **Northwind.dbml** is added in the project, then the design view is opened.
 
-![Connect the database through the visual studio](DataBinding_images/DataBinding_img10.jpeg)
+![Connect the database through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-connect-the-database-through-visual-studio.jpeg)
 
 5. New Database connection can be added by clicking add icon button in Server Explorer. 
 
 6. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient**).
 
-![Connect the database through the visual studio](DataBinding_images/DataBinding_img11.jpeg)
+![Add connection through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-add-connection.jpeg)
 
 7. Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
-![Change the database through the visual studio](DataBinding_images/DataBinding_img12.jpeg)
+![Change the database through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-change-the-database.jpeg)
 
 8. Select the Database file name and click on **Test Connection** to check the connection with the database.
 
-![Choose the database through the visual studio](DataBinding_images/DataBinding_img13.jpeg)
+![Choose the database through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-database.jpeg)
 
 9. Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
-![Connected databases in the projects](DataBinding_images/DataBinding_img14.jpeg)
+![WinFoms DataGrid connected databases in the projects](databinding_images/winforms-datagrid-connected-databases-in-the-project.jpeg)
 
 10. Drag **Shippers** table in to design view of **Northwind.dbml**. The Entity model diagram for **Shippers** table is generated once it is dropped in to design view.
 
@@ -423,7 +423,7 @@ Dim northWindDataContext As New NorthwindDataContext()
 Me.sfDataGrid1.DataSource = northWindDataContext.Shippers
 {% endhighlight %}
 {% endtabs %}
-![SfDataGrid with LinQ to SQL in windowsforms](DataBinding_images/DataBinding_img15.jpeg)
+![SfDataGrid with LinQ to SQL in windowsforms](databinding_images/winforms-datagrid-linq-to-sql.jpeg)
 
 ## Binding Data from ADO.NET
 SfDataGrid control supports to load the data using ADO.NET. This walk-through, describe about binding data from ADO.NET service
@@ -436,19 +436,19 @@ To connect SQL database to WinForms application, refer the below MSDN link or fo
 
 2. The Add Connection wizard appeared with the default data source as Microsoft SQL Server (SqlClient).
 
-![Choose the SqlClient to the prjoect through the visual studio](DataBinding_images/DataBinding_img16.jpeg)
+![Choose the SqlClient to the prjoect through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-sqlclient-to-the-project.jpeg)
 
 3. Click **Change** to open the **Change Data Source** dialog box and select the type of data source as **Microsoft SQL Server Database File (SqlClient).**
 
-![Change the SqlClient for the prjoect through the visual studio](DataBinding_images/DataBinding_img17.jpeg)
+![Change the SqlClient for the prjoect through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-change-the-sqlclient-for-the-project.jpeg)
 
 4. Select the Database file name and click on **Test Connection** to check the connection with the database.
 
-![Test the database connection through the visual studio](DataBinding_images/DataBinding_img18.jpeg)
+![Test the database connection through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-test-the-data-base-connection.jpeg)
 
 5. Once the connection is succeeded, click **OK** button to add database in the server explorer.
 
-![Connected databases in the projects](DataBinding_images/DataBinding_img19.jpeg)
+![WinForms DataGrid connected databases in the projects](databinding_images/winforms-datagrid-connected-data-bases-in-the-project.jpeg)
 
 6. To get connection string for the database, right-click on the database and then click **Properties** option.
 
@@ -483,7 +483,7 @@ Me.sfDataGrid1.DataSource = dataSet.Tables("Suppliers")
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![SfDataGrid bounded with SQL Client in windowsforms](DataBinding_images/DataBinding_img20.jpeg)
+![SfDataGrid bounded with SQL Client in windowsforms](databinding_images/winforms-datagrid-bounded-with-sql-client.jpeg)
 
 ## Binding Data from Microsoft Access
 SfDataGrid control supports to bind data from Microsoft Access database. This section describes about how to bind the data from Microsoft Access database to SfDataGrid.
@@ -495,19 +495,19 @@ To load the data from Microsoft Access database, follow the below steps.
 
 2. In the **Data Sources** window, click **Add New Data Source**, the DataSource configuration wizard will be opened.
 
-![Choose the datasource type through the visual studio](DataBinding_images/DataBinding_img21.jpeg)
+![Choose the datasource type through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-source-type.jpeg)
 
 3. Select **Database** on the **Choose a Data Source Type** page, and then select **Next**.
 
-![Choose the datasource model through the visual studio](DataBinding_images/DataBinding_img22.jpeg)
+![Choose the datasource model through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-source-model.jpeg)
 
 4. On the **Choose your Data Connection** page, select **New Connection** to configure a new data connection and Change the **Data source** to **.NET Framework Data Provider for OLE DB**.
 
-![Choose the data connetion through the visual studio](DataBinding_images/DataBinding_img23.jpeg)
+![Choose the data connection through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-connection.jpeg)
 
 5. In **OLE DB Provider**, select **Microsoft Office 12.0 Access Database Engine OLE DB Provider**. In **Server or file name**, specify the path and name of the .accdb file to which want to connect, and then select **OK**.
 
-![Choose the data provider through the visual studio](DataBinding_images/DataBinding_img24.jpeg)
+![Choose the data provider through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-provider.jpeg)
 
 6. Select **Next** on the **Choose your Data Connection** page.
 
@@ -515,7 +515,7 @@ To load the data from Microsoft Access database, follow the below steps.
 
 8. Expand the **Tables** node on the **Choose your Database Objects** page.
 
-![Choose the data base objects through the visual studio](DataBinding_images/DataBinding_img25.jpeg)
+![Choose the data base objects through the visual studio in WinForms DataGrid](databinding_images/winforms-datagrid-choose-the-data-base-objects-through-visual-studio.jpeg)
 
 9. Select whatever tables or views in the dataset, and then select **Finish**.
 
@@ -552,5 +552,5 @@ Me.sfDataGrid1.DataSource = employeeDataSet.Tables(“Employees”)
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![SfDataGrid bounded with MS Access in windowsforms](DataBinding_images/DataBinding_img26.jpeg)
+![SfDataGrid bounded with MS Access in windowsforms](databinding_images/winforms-datagrid-bounded-with-ms-access.jpeg)
 N> You can also explore our [WinForms DataGrid example](https://github.com/syncfusion/winforms-demos/tree/master/datagrid) that shows how to render the DataGrid in Windows Forms.
