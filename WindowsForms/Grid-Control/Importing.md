@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Importing in Windows Forms Grid Control
-The [GridExcelConverterControl](http://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to GridControl. 
+The [GridExcelConverterControl](https://help.syncfusion.com/cr/windowsforms/Syncfusion.GridExcelConverter.GridExcelConverterControl.html) provides support to import the content from Excel sheet to GridControl. 
 
 The following assembly files should be added to the application reference folder,
 
