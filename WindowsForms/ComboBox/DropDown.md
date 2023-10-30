@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DropDown in Windows Forms ComboBox Control | Syncfusion
-description: Learn here all about DropDown support in Syncfusion Essential Windows Forms ComboBox (SfComboBox) control, it's element and more.
+description: Learn here all about dropDown support in Syncfusion Essential Windows Forms ComboBox (SfComboBox) control, it's element and more.
 platform: windowsforms
 control: SfComboBox
 documentation: ug
