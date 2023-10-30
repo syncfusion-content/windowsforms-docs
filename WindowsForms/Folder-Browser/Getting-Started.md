@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Windows Forms Folder Browser | Syncfusion
-description: Learn here about getting started with Syncfusion Windows Forms Folder Browser control, its elements, and more.
+description: Learn here about getting started with Syncfusion Windows Forms Folder Browser control, its elements and more.
 platform: WindowsForms
 control: Tools
 documentation: ug
@@ -29,7 +29,7 @@ Create a new Windows Forms project in Visual Studio to select the a folder using
 
 The FolderBrowser control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.Base** assembly reference will be added automatically to the project.
 
-![wf domain up down control added by designer](Getting-Started_images/wf-folder-browser-control-added-by-designer.png) 
+![WinForms Folder Browser added by designer](getting-started_images/winforms-folder-browser-added-by-designer.png) 
 
 ## Add control manually in code
 
@@ -89,7 +89,7 @@ Me.folderBrowser1.ShowDialog()
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}  
 
-![wf folder browser](Getting-Started_images/wf-folder-browser-control.png) 
+![WinForms Folder Browser control](getting-started_images/winforms-folder-browser-control.png) 
 
 ## Auto complete file path
 
@@ -104,5 +104,5 @@ Me.folderBrowser1.Style = Syncfusion.Windows.Forms.FolderBrowserStyles.ShowTextB
 {% endhighlight %}
 {% endtabs %} 
 
-![wf folder browser auto complete path](Getting-Started_images/wf-folder-browser-control-auto-complete-path.png) 
+![WinForms Folder Browser auto complete path](getting-started_images/winforms-folder-browser-auto-complete-path.png) 
 
