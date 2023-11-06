@@ -38,7 +38,7 @@ When the alignment is set to `Justify`, extra space will be equally distributed 
 
 N> The Alignment property should be set to `true` for the above properties to take effect.
 
-![Child controls with different horizontal alignment settings](Configuringchildcontrols_images/Configuringchildcontrols_img1.jpeg)
+![Child controls with different horizontal alignment settings](Configuringchildcontrols_images/configuringchildcontrols-horizontal-alignment.jpeg)
 
 N> In the above screenshot, the text boxes have auto labels associated with them.
 
@@ -91,7 +91,7 @@ ProportionalRowHeight</td><td>
 Specifies if proportional row height should be used in the horizontal layout. The default value is set to `false`.</td></tr>
 </table>
 
-![Two proportionally aligned rows split the extra horizontal space between them](Configuringchildcontrols_images/Configuringchildcontrols_img2.jpeg)
+![Two proportionally aligned rows split the extra horizontal space between them](Configuringchildcontrols_images/configuringchildcontrols-horizontal-space.jpeg)
 
 The method associated with the above properties are given in the following table.
 
@@ -160,13 +160,13 @@ Me.flowLayout1.SetConstraints(Me.textBox1, New Syncfusion.Windows.Forms.Tools.Fl
 
 {% endtabs %}
 
-![Horizontally and vertically centered aligned child controls](Configuringchildcontrols_images/Configuringchildcontrols_img3.jpeg)
+![Horizontally and vertically centered aligned child controls](Configuringchildcontrols_images/configuringchildcontrols-centered-aligned.jpeg)
 
 When the proportionalRowHeight property is set to `true`, extra space at the bottom will be equally distributed among all the available rows by increasing the logical height of the rows. The child controls within these rows will be vertically aligned to the center of the row (since the VAlign property is set to `center`, by default).
 
 When resizing to a smaller width, two rows are created.
 
-![New rows created on demand while resize container](Configuringchildcontrols_images/Configuringchildcontrols_img4.jpeg)
+![New rows created on demand while resize container](Configuringchildcontrols_images/configuringchildcontrols-resize-container-jpeg)
 
 ## Enabling constrained FlowLayout on a container
 
@@ -470,16 +470,16 @@ Me.flowLayout1.AutoHeight = True
 
 N> During run time, the input controls are resized and repositioned appropriately based on the constraints provided.
 
-![Child controls repositioned based on container resize](Configuringchildcontrols_images/Configuringchildcontrols_img5.jpeg)
+![Child controls repositioned based on container resize](Configuringchildcontrols_images/configuringchildcontrols-repositioned.jpeg)
 
 
-![Multiple rows created to repositioned child controls based on container resize](Configuringchildcontrols_images/Configuringchildcontrols_img6.jpeg)
+![Multiple rows created to repositioned child controls based on container resize](Configuringchildcontrols_images/configuringchildcontrols-multiple-rows.jpeg)
 
 ### AutoLabel Control
 
 The AutoLabel control is a label-derived control; it allows you pair a label with any other control. After it has been paired, the AutoLabel will be automatically repositioned as the labeled control’s position changes.
 
-![Auto label control to reposition based on resize](Configuringchildcontrols_images/Configuringchildcontrols_img7.jpeg)
+![Auto label control to reposition based on resize](Configuringchildcontrols_images/configuringchildcontrols-auto-label.jpeg)
 
 The AutoLabel control can be positioned relative to the top, left, bottom, or right of the labeled control. It can also be positioned at a custom distance from the labeled control specified via its DX and DY properties. When using relative positioning, you can also specify the gap between the label and the control.
 
@@ -495,11 +495,11 @@ The FlowLayout manager arranges the controls in a way it is added into the conta
 
 **Step 1**: Rearrange the controls laid out by FlowLayout by right-clicking the control and selecting the Bring To Front or Send To Back options in the designer.
 
-![Rearranging the child controls in designer using context menu](Configuringchildcontrols_images/Configuringchildcontrols_img8.jpeg)
+![Rearranging the child controls in designer using context menu](Configuringchildcontrols_images/configuringchildcontrols-rearranging.jpeg)
 
 **Step 2**: Rearrange the child controls of the FlowLayout by dragging and dropping them at design time.
 
-![Rearranging the child controls in designer by drag and drop child controls](Configuringchildcontrols_images/Configuringchildcontrols_img9.jpeg)
+![Rearranging the child controls in designer by drag and drop child controls](Configuringchildcontrols_images/configuringchildcontrols-drag-drop.jpeg)
 
 ### Through Code
 
@@ -507,11 +507,11 @@ You can also programmatically change the order of the controls laid out by the F
 
 **Step 1**: Set up a form with Panel1 and drag the FlowLayout to the Panel1, which would act as the container control.
 
-![Alert to add Flow Layout as container control to form](Configuringchildcontrols_images/Configuringchildcontrols_img10.jpeg)
+![Alert to add Flow Layout as container control to form](Configuringchildcontrols_images/configuringchildcontrols-add-flow-layout.jpeg)
 
 **Step 2**: Drag another three Panels to the Panel1. The flow layout automatically arranges the child controls.
 
-![Arranged child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img11.jpeg)
+![Arranged child controls in Flow layout](Configuringchildcontrols_images/configuringchildcontrols-arranged.jpeg)
 
 **Step 3**: Add the Button control for recording the child controls of Panel1, and in the Button_Click event, give data as in the following code snippet.
 
@@ -583,8 +583,8 @@ End Sub
 
 {% endtabs %}
 
-![Arranged child controls in single row in flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img12.jpeg)
+![Arranged child controls in single row in flow layout](Configuringchildcontrols_images/configuringchildcontrols-arranged-in-single-row.jpeg)
 
 **Step 4**: At run time, when clicking the Reorder button, the Panels 2, 3, and 4 will be rearranged in a different order.
 
-![Reorder child controls in Flow layout](Configuringchildcontrols_images/Configuringchildcontrols_img13.jpeg)
+![Reorder child controls in Flow layout](Configuringchildcontrols_images/configuringchildcontrols-reorder.jpeg)
